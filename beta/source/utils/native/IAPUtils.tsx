@@ -1,10 +1,10 @@
-// Module ID: 13684
-// Function ID: 13685
+// Module ID: 13913
+// Function ID: 13914
 // Name: IAPUtils
-// Dependencies: [5, 17, 5190, 6167, 1392, 7403, 1087, 1394, 1384, 13685, 13686, 3, 38, 13705, 7398, 12, 1281, 4879, 558, 576, 504, 13706, 1383, 5167, 13707, 2]
+// Dependencies: [5, 17, 5237, 5646, 1392, 7524, 1087, 1394, 1384, 13914, 13915, 3, 38, 13934, 7519, 12, 1281, 4787, 558, 576, 504, 13935, 1383, 4928, 13936, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 13684 (IAPUtils)
+// Module 13913 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -12,29 +12,29 @@ import _modDef38 from "module_38" /* 38 */;
 import v1 from "v1" /* 1281 */;
 import react_nativeAll from "react-native" /* 1383 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import DeviceUtils from "DeviceUtils" /* 5167 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 6167 */;
-import react_native2 from "react-native" /* 13685 */;
-import _mod13686 from "module_13686" /* 13686 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 13705 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 13706 */;
-import iapProducts from "iapProducts" /* 13707 */;
+import DeviceUtils from "DeviceUtils" /* 4928 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5646 */;
+import react_native2 from "react-native" /* 13914 */;
+import _mod13915 from "module_13915" /* 13915 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 13934 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 13935 */;
+import iapProducts from "iapProducts" /* 13936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5190 */;
+import DevSettingsStore from "DevSettingsStore" /* 5237 */;
 import UserStore from "UserStore" /* 1392 */;
-import IAPStore from "IAPStore" /* 7403 */;
+import IAPStore from "IAPStore" /* 7524 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, appAccountToken, arr4, c4, closure_3, closure_4, code, currentUser, useACOM;
+let _require, arr4, c4, closure_3, closure_4, closure_5;
 
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(7398);
+const ProductIds = tmp(7519);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -51,7 +51,205 @@ function convertToUUID(id) {
   obj = v1;
   return obj.v5(id, NAMESPACE_SNOWFLAKE_UUID);
 }
-let obj = function _restorePurchases() {
+let obj = function _makeIAPRequest() {
+  obj = _asyncToGenerator(async (arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let code = arg1;
+    let closure_2 = arg2;
+    let c7 = 0;
+    let c8 = 0;
+    let c6 = 0;
+    return (async function(arg0, value, arg2) {
+      let first;
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp;
+              closure_3 = tmp4;
+              closure_0 = undefined;
+              currentUser = currentUser.getCurrentUser();
+              const tmp45 = closure_0;
+              const tmp46 = code;
+              const tmp47 = closure_2;
+              if (null == currentUser) {
+                const _Error2 = Error;
+                const self3 = this;
+                const self4 = this;
+                const error = new Error("purchaseProduct: no valid user");
+                throw error;
+              } else {
+                c6 = 1;
+                const obj5 = { requestJSONString: tmp45, sku: tmp46, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: tmp47 };
+                const requestPurchase = require("module_13915").requestPurchase;
+                require("module_13915");
+                c7 = 2;
+                c8 = 1;
+                const obj6 = { value: requestPurchase(obj5), done: false };
+                return obj6;
+              }
+            }
+          } else if (1 === c7) {
+            c6 = 0;
+            code = closure_5;
+            if (!closure_132_13.has(code.code)) {
+              const obj4 = closure_132_0(closure_132_3[17]);
+              const result = obj4.captureBillingException(code);
+            }
+            throw code;
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            return { value, done: true };
+          } else {
+            closure_0 = value;
+            const _Object = Object;
+            if (closure_0 instanceof Object) {
+              const _Array = Array;
+              obj = { purchaseResponse: closure_132_14(closure_0), originalPurchase: first };
+              if (Array.isArray(closure_0)) {
+                first = tmp13[0];
+              } else {
+                first = tmp13;
+              }
+              c6 = 0;
+              c8 = 3;
+              return { value: obj, done: true };
+            } else {
+              const _Error = Error;
+              const self = this;
+              const self2 = this;
+              const error1 = new Error("Unable to select a platform, no request was made");
+              throw error1;
+            }
+          }
+        } catch (tmp35) {
+          closure_5 = tmp35;
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp35;
+          } else {
+            c7 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _purchaseProduct() {
+  let currentUser;
+  obj = _asyncToGenerator(async (sku, withOffer, appAccountToken) => {
+    let c5 = 0;
+    let c6 = 0;
+    return (async function(arg0, value, arg2) {
+      let obj3;
+      let obj7;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp4;
+              closure_3 = undefined;
+              if (null == currentUser.getCurrentUser()) {
+                const _Error2 = Error;
+                const self3 = this;
+                const self4 = this;
+                const error = new Error("purchaseProduct: no valid user");
+                throw error;
+              } else {
+                c5 = 1;
+                c6 = 1;
+                const obj5 = { value: obj7.clearTransactionIOS(), done: false };
+                obj7 = require("module_13915");
+                return obj5;
+              }
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c5 = 2;
+              c6 = 1;
+              const obj8 = { sku, appAccountToken, withOffer };
+              const obj9 = { value: obj3.requestPurchase(obj8), done: false };
+              obj3 = closure_132_0(closure_132_3[10]);
+              return obj9;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            closure_3 = value;
+            const _Object = Object;
+            if (closure_3 instanceof Object) {
+              c6 = 3;
+              obj = { value: closure_132_14(closure_3), done: true };
+              return obj;
+            } else {
+              const _Error = Error;
+              const self = this;
+              const self2 = this;
+              const error1 = new Error("Unable to select a platform, no request was made");
+              throw error1;
+            }
+          }
+        } catch (tmp26) {
+          c6 = 3;
+          throw tmp26;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _restorePurchases() {
   obj = _asyncToGenerator(async (arg0) => {
     let arr2;
     let fullRestore = arg0;
@@ -102,7 +300,7 @@ let obj = function _restorePurchases() {
             } else if (arg0 === 2) {
               c8 = 3;
               return { value, done: true };
-            } else if (closure_131_17()) {
+            } else if (closure_131_19()) {
               if (fullRestore) {
                 c7 = 2;
                 c8 = 1;
@@ -291,7 +489,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_13686");
+              obj4 = require("module_13915");
               return obj6;
             } else {
               c5 = 3;
@@ -317,7 +515,7 @@ obj = function _fetchStoreFront() {
           let tmp8;
           closure_0 = value;
           if (null != closure_0) {
-            tmp8 = closure_129_18(closure_0);
+            tmp8 = closure_129_20(closure_0);
           } else {
             tmp8 = closure_0;
           }
@@ -350,7 +548,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod13686.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod13686.ErrorCode.E_UNKNOWN];
+let items = [_mod13915.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod13915.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {
@@ -390,114 +588,8 @@ obj = {
     }
     return nextPromise;
   },
-  purchaseProduct(arg0, arg1, arg2) {
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let closure_0 = _asyncToGenerator(async (sku, withOffer) => {
-      let c6 = 0;
-      let c7 = 0;
-      let c5 = 0;
-      return (async function(arg0, value) {
-        let obj2;
-        let obj6;
-        if (c7 === 2) {
-          c7 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            return { value, done: true };
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            c7 = 2;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              } else {
-                closure_3 = tmp;
-                appAccountToken = undefined;
-                const tmp40 = withOffer;
-                if (null != currentUser.getCurrentUser()) {
-                  c5 = 1;
-                  c6 = 2;
-                  c7 = 1;
-                  const obj5 = { value: obj6.clearTransactionIOS(), done: false };
-                  obj6 = sku(closure_2_3[10]);
-                  return obj5;
-                } else {
-                  const _Error2 = Error;
-                  const self3 = this;
-                  const self4 = this;
-                  const error = new Error("purchaseProduct: no valid user");
-                  tmp40(error);
-                }
-              }
-            } else if (1 === c6) {
-              c5 = 0;
-              withOffer(closure_4);
-            } else if (2 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                c7 = 3;
-                return { value, done: true };
-              } else {
-                c6 = 3;
-                c7 = 1;
-                const obj8 = { sku, appAccountToken, withOffer };
-                const obj9 = { value: obj2.requestPurchase(obj8), done: false };
-                obj2 = sku(closure_2_3[10]);
-                return obj9;
-              }
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              appAccountToken = value;
-              const _Object = Object;
-              if (appAccountToken instanceof Object) {
-                sku(closure_2_14(appAccountToken));
-                c5 = 0;
-              } else {
-                const _Error = Error;
-                const self = this;
-                const self2 = this;
-                const error1 = new Error("Unable to select a platform, no request was made");
-                throw error1;
-              }
-            }
-            c7 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp31) {
-            closure_4 = tmp31;
-            if (0 === c5) {
-              c7 = 3;
-              throw tmp31;
-            } else {
-              c6 = 1;
-            }
-          }
-        }
-      })();
-    });
-    const promise = new Promise(function() {
-      return closure_0(...arguments);
-    });
-    return promise;
+  purchaseProduct() {
+    return obj(...arguments);
   },
   canMakePayments() {
     const promise = new Promise((arg0, arg1) => {
@@ -676,113 +768,8 @@ let result = size.fileFinishedImporting("utils/native/IAPUtils.tsx");
 
 export default obj;
 export { convertToUUID };
-export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  let closure_0 = _asyncToGenerator(async (requestJSONString, sku) => {
-    let c6 = 0;
-    let c7 = 0;
-    let c5 = 0;
-    return (async function(arg0, value) {
-      let first;
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              code = tmp;
-              useACOM = undefined;
-              currentUser = currentUser.getCurrentUser();
-              const tmp54 = sku;
-              if (null != currentUser) {
-                c5 = 1;
-                const obj5 = { requestJSONString, sku, appAccountToken: closure_2_15(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM };
-                const requestPurchase = requestJSONString(closure_2_3[10]).requestPurchase;
-                requestJSONString(closure_2_3[10]);
-                c6 = 2;
-                c7 = 1;
-                const obj6 = { value: requestPurchase(obj5), done: false };
-                return obj6;
-              } else {
-                const _Error2 = Error;
-                const self3 = this;
-                const self4 = this;
-                const error = new Error("purchaseProduct: no valid user");
-                tmp54(error);
-              }
-            }
-          } else if (1 === c6) {
-            c5 = 0;
-            code = closure_4;
-            if (!set.has(code.code)) {
-              const obj3 = requestJSONString(closure_2_3[17]);
-              const result = obj3.captureBillingException(code);
-            }
-            sku(code);
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            return { value, done: true };
-          } else {
-            useACOM = value;
-            const _Object = Object;
-            if (useACOM instanceof Object) {
-              const _Array = Array;
-              obj = { purchaseResponse: closure_2_14(useACOM), originalPurchase: first };
-              const tmp9 = requestJSONString;
-              if (Array.isArray(useACOM)) {
-                first = tmp14[0];
-              } else {
-                first = tmp14;
-              }
-              tmp9(obj);
-              c5 = 0;
-            } else {
-              const _Error = Error;
-              const self = this;
-              const self2 = this;
-              const error1 = new Error("Unable to select a platform, no request was made");
-              throw error1;
-            }
-          }
-          c7 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp43) {
-          closure_4 = tmp43;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp43;
-          } else {
-            c6 = 1;
-          }
-        }
-      }
-    })();
-  });
-  const promise = new Promise(function() {
-    return closure_0(...arguments);
-  });
-  return promise;
+export const makeIAPRequest = function makeIAPRequest() {
+  return obj(...arguments);
 };
 export const useCanPurchaseIAP = tmp6;
 export { isStorekit2Available };

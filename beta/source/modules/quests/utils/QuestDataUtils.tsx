@@ -1,20 +1,20 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7772
+// Function ID: 7773
 // Name: QuestDataUtils
-// Dependencies: [7653, 2132, 7655, 7656, 6228, 6231, 1405, 7662, 7654, 1257, 2]
+// Dependencies: [7773, 2068, 7775, 7776, 6710, 6713, 1405, 7782, 7774, 1257, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible
 
-// Module 7652 (QuestDataUtils)
+// Module 7772 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import QuestTypes from "QuestTypes" /* 6231 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7654 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7662 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7653 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import BountyStore from "BountyStore" /* 7655 */;
-import QuestStore from "QuestStore" /* 7656 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
+import QuestTypes from "QuestTypes" /* 6713 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7774 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7782 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7773 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import BountyStore from "BountyStore" /* 7775 */;
+import QuestStore from "QuestStore" /* 7776 */;
+import QuestConstants from "QuestConstants" /* 6710 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -234,8 +234,8 @@ export const getBountyByPlacementAndId = function getBountyByPlacementAndId(ques
   }
   return tmp13;
 };
-export const getAdDecisionData = function getAdDecisionData(adContentId, sourceQuestContent) {
-  if (null == obj[sourceQuestContent]) {
+export const getAdDecisionData = function getAdDecisionData(adContentId, questContent) {
+  if (null == obj[questContent]) {
     return authStore;
   } else {
     let tmp6;

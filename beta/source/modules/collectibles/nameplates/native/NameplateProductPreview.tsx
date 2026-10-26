@@ -1,9 +1,9 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 14456
+// Function ID: 14457
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 8569, 1992, 1128, 5187, 5491, 8576, 8564, 8657, 504, 5057, 5884, 10565, 10566, 1202, 10590, 6457, 2]
+// Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 8660, 1992, 1128, 5234, 5258, 8667, 8655, 8748, 504, 5025, 6367, 10661, 10662, 1202, 10686, 6903, 2]
 
-// Module 14220 (NameplateProductPreview)
+// Module 14456 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,22 +11,22 @@ import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import utils from "utils" /* 1992 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import LinearGradientDefault from "LinearGradient" /* 5491 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5884 */;
-import TableRow2 from "TableRow" /* 6457 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8564 */;
-import useShopProductItems from "useShopProductItems" /* 8569 */;
-import useCurrentUser from "useCurrentUser" /* 8576 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8657 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
-import types from "types" /* 10566 */;
-import UserNameplateRow from "UserNameplateRow" /* 10590 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import LinearGradientDefault from "LinearGradient" /* 5258 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6367 */;
+import TableRow2 from "TableRow" /* 6903 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8655 */;
+import useShopProductItems from "useShopProductItems" /* 8660 */;
+import useCurrentUser from "useCurrentUser" /* 8667 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8748 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
+import types from "types" /* 10662 */;
+import UserNameplateRow from "UserNameplateRow" /* 10686 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -388,7 +388,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePro
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(closure_10, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5187).Text;
+    const Text = tmp2(5234).Text;
     const intl2 = tmp2(1128).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -399,7 +399,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePro
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(closure_10, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5187).Text;
+    const Text2 = tmp2(5234).Text;
     const intl3 = tmp2(1128).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

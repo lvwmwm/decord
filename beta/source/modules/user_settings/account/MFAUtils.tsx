@@ -1,15 +1,15 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 16060
+// Function ID: 16061
 // Name: account/MFAUtils
-// Dependencies: [2090, 4845, 1392, 1087, 1128, 558, 576, 573, 6910, 2]
+// Dependencies: [4845, 4903, 1392, 1087, 1128, 558, 576, 573, 7044, 2]
 // Exports: getSMSBackupDisabledMessage
 
-// Module 15814 (account/MFAUtils)
+// Module 16060 (account/MFAUtils)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import MFAUtils from "MFAUtils" /* 6910 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import MFAUtils from "MFAUtils" /* 7044 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F149310 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F152264 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F149310 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F152264 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;

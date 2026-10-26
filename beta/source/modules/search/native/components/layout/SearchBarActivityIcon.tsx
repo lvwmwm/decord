@@ -1,20 +1,20 @@
-// Module ID: 17758
-// Function ID: 17759
+// Module ID: 18064
+// Function ID: 18065
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 6340, 12997, 9614, 21, 5191, 587, 558, 576, 12990, 573, 4945, 5192, 7017, 1384, 2]
+// Dependencies: [19, 17, 6792, 13237, 9714, 21, 4971, 587, 558, 576, 13230, 573, 5052, 5206, 7146, 1384, 2]
 
-// Module 17758 (SearchBarActivityIcon)
+// Module 18064 (SearchBarActivityIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
-import SearchUtils from "SearchUtils" /* 12990 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import timing from "timing" /* 5206 */;
+import SearchConstants from "SearchConstants" /* 9714 */;
+import SearchUtils from "SearchUtils" /* 13230 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchQueryStore from "SearchQueryStore" /* 12997 */;
+import SearchMessageStore from "SearchMessageStore" /* 6792 */;
+import SearchQueryStore from "SearchQueryStore" /* 13237 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

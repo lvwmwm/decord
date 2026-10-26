@@ -1,18 +1,18 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7960
+// Function ID: 7961
 // Name: BaseIconButton
-// Dependencies: [109, 19, 21, 5191, 5484, 4945, 5481, 558, 576, 5485, 5487, 5489, 2]
+// Dependencies: [109, 19, 21, 4971, 5250, 5052, 5246, 558, 576, 5251, 5254, 5256, 2]
 
-// Module 7841 (BaseIconButton)
+// Module 7960 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
-import IconDefault from "Icon" /* 5481 */;
-import ButtonConstants from "ButtonConstants" /* 5484 */;
-import ButtonHooks from "ButtonHooks" /* 5485 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
+import IconDefault from "Icon" /* 5246 */;
+import ButtonConstants from "ButtonConstants" /* 5250 */;
+import ButtonHooks from "ButtonHooks" /* 5251 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconBu
     str = variant;
   }
   if (undefined === size) {
-    size = tmp(5484).DEFAULT_BUTTON_SIZE;
+    size = tmp(5250).DEFAULT_BUTTON_SIZE;
   }
   let num = 4;
   if (undefined !== scaleAmountInPx) {
@@ -77,26 +77,26 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconBu
   const tmpResult4 = ButtonHooks;
   const iconSizeStyles = tmpResult4.useIconSizeStyles(size, true, maxFontSizeMultiplier);
   if (cResult[0] !== size) {
-    let MEDIUM_BUTTON_HEIGHT = tmp(5484).LARGE_BUTTON_HEIGHT;
+    let MEDIUM_BUTTON_HEIGHT = tmp(5250).LARGE_BUTTON_HEIGHT;
     if ("sm" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5484).SMALL_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5250).SMALL_BUTTON_HEIGHT;
     } else if ("md" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5484).MEDIUM_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5250).MEDIUM_BUTTON_HEIGHT;
     }
     const _Math = Math;
-    const bound = Math.max((tmp(5484).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+    const bound = Math.max((tmp(5250).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
     cResult[0] = size;
     cResult[1] = bound;
     tmp9 = bound;
   } else {
     tmp9 = cResult[1];
   }
-  const BaseButton = tmp(5487).BaseButton;
+  const BaseButton = tmp(5254).BaseButton;
   const merged = Object.assign(tmp4);
   const items = [tmp5.button, style];
   const items1 = [tmp5.pill, pillStyle];
   let str4 = "xs";
-  const ButtonPill = tmp(5489).ButtonPill;
+  const ButtonPill = tmp(5256).ButtonPill;
   if ("lg" === size) {
     str4 = "sm";
   }
@@ -142,17 +142,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconBu
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5484).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5250).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5484).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5250).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp5(5484).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp5(5487).BaseButton;
+  const bound = Math.max((tmp5(5250).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp5(5254).BaseButton;
   const merged1 = Object.assign(merged);
   const items = [tmp4.button, style];
   const items1 = [tmp4.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp5(5489).ButtonPill;
+  const ButtonPill = tmp5(5256).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }

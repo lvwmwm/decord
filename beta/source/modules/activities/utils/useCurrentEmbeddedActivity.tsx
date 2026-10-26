@@ -1,11 +1,11 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11454
+// Function ID: 11455
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [2067, 558, 576, 504, 2]
+// Dependencies: [4822, 558, 576, 504, 2]
 
-// Module 11314 (useCurrentEmbeddedActivity)
+// Module 11454 (useCurrentEmbeddedActivity)
 import react from "react" /* 576 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

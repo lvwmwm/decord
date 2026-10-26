@@ -1,18 +1,19 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 10813
+// Function ID: 10814
 // Name: conjureProjectConnection
-// Dependencies: [6293, 584, 10999, 2]
+// Dependencies: [6773, 584, 10720, 2]
 
-// Module 11072 (conjureProjectConnection)
+// Module 10813 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   project_named(name, projectId) {
     let obj2;
-    const project = ConjureProjectStore.getProject(projectId.projectId);
+    projectId = projectId.projectId;
+    const project = ConjureProjectStore.getProject(projectId);
     const tmp2 = null != project && null != name.name;
     if (tmp2) {
       const obj = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: obj2 };
@@ -22,42 +23,21 @@ let obj = {
       const merged = Object.assign(project);
       dispatch(obj);
     }
-  },
-  app_icon_set(icon, ws) {
-    ws = ws.ws;
-    let attachment_id;
-    icon = icon.icon;
-    if (null != icon) {
-      if ("" !== icon) {
-        attachment_id = icon.attachment_id;
-        let tmp2 = require;
-        const obj = ConjureActionCreators;
-        const setProjectIconResult = obj.setProjectIcon(tmp, icon);
-        const nextPromise = setProjectIconResult.then(() => {
-          const tmp2 = null != attachment_id && "" !== tmp;
-          if (tmp2) {
-            ws.sendAppIconAck(attachment_id, "applied");
-          }
-        });
-        nextPromise.catch(() => {
-          const tmp2 = null != attachment_id && "" !== tmp;
-          if (tmp2) {
-            ws.sendAppIconAck(attachment_id, "failed");
-          }
-        });
-      }
-    }
-  },
-  app_cover_set(cover_image, arg1) {
-    if (undefined !== cover_image.cover_image) {
-      const obj = ConjureActionCreators;
-      const setProjectCoverResult = obj.setProjectCover(tmp, cover_image.cover_image);
-      setProjectCoverResult.catch(() => {
+    const obj3 = ConjureActionCreators;
+    const result = obj3.refreshPreviewApplication(projectId);
+    result.catch(() => {
 
-      });
-    }
+    });
+  },
+  app_profile_updated(arg0, projectId) {
+    projectId = projectId.projectId;
+    const obj = ConjureActionCreators;
+    const result = obj.refreshPreviewApplication(projectId);
+    result.catch(() => {
+
+    });
   }
 };
-const result = size.fileFinishedImporting("modules/conjure/projects/conjureProjectConnection.tsx");
+let result = size.fileFinishedImporting("modules/conjure/projects/conjureProjectConnection.tsx");
 
 export const projectStepHandlers = obj;

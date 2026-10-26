@@ -1,15 +1,15 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 15039
+// Function ID: 15040
 // Name: ProgramRewardsUtils
-// Dependencies: [1392, 1394, 4638, 14806, 14807, 4864, 2]
+// Dependencies: [1392, 1394, 4598, 15040, 15041, 2053, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isProgramRewardStale
 
-// Module 14805 (ProgramRewardsUtils)
+// Module 15039 (ProgramRewardsUtils)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import isPastDefault from "isPast" /* 4638 */;
-import PremiumUtils from "PremiumUtils" /* 4864 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 14806 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14807 */;
+import PremiumUtils from "PremiumUtils" /* 2053 */;
+import isPastDefault from "isPast" /* 4598 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 15040 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15041 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -59,9 +59,8 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward() {
   }
   return false;
 };
-export const hasNecessaryPremiumSubscriptionStatus = function hasNecessaryPremiumSubscriptionStatus(stateFromStores) {
-  let currentUser = stateFromStores;
-  if (stateFromStores == null) {
+export const hasNecessaryPremiumSubscriptionStatus = function hasNecessaryPremiumSubscriptionStatus(currentUser) {
+  if (currentUser == null) {
     currentUser = UserStore.getCurrentUser();
   }
   const obj = PremiumUtils;

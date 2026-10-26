@@ -1,17 +1,17 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 11826
+// Function ID: 11827
 // Name: conjureFileMentions
 // Dependencies: [19, 1951, 2]
 // Exports: conjureFileMentionIds, createConjureFileMentionRule, filterConjureFileCandidates, hasConjureFileMentions, withoutInlineFileMentions
 
-// Module 12119 (conjureFileMentions)
+// Module 11826 (conjureFileMentions)
 import _modDef1951 from "module_1951" /* 1951 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const f112012 = (arg0) => arg0[1];
+const f111688 = (arg0) => arg0[1];
 let c2 = "<file:(\\d{16}-[a-z0-9]{6})>";
 let regExp = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>", "g");
 const regExp1 = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>");
@@ -24,8 +24,8 @@ export const hasConjureFileMentions = function hasConjureFileMentions(arg0) {
   return regExp1.test(arg0);
 };
 export const conjureFileMentionIds = function conjureFileMentionIds(str) {
-  const items = [...new Set(Array.from(str.matchAll(regExp), f112012))];
-  new Set(Array.from(str.matchAll(regExp), f112012));
+  const items = [...new Set(Array.from(str.matchAll(regExp), f111688))];
+  new Set(Array.from(str.matchAll(regExp), f111688));
   return items;
 };
 export const filterConjureFileCandidates = function filterConjureFileCandidates(arr, text) {
@@ -61,7 +61,7 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
       const self = this;
       const self2 = this;
       const items = [];
-      set = new Set(Array.from(content.matchAll(regExp), f112012));
+      set = new Set(Array.from(content.matchAll(regExp), f111688));
       HermesBuiltin.arraySpread(items, set, 0);
       const self3 = this;
       const self4 = this;

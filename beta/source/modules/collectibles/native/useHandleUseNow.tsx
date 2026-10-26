@@ -1,13 +1,13 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 11182
+// Function ID: 11183
 // Name: useHandleUseNow
-// Dependencies: [19, 10963, 558, 576, 5155, 6190, 5073, 4904, 1128, 10964, 10967, 2]
+// Dependencies: [19, 11183, 558, 576, 5210, 6672, 5151, 5663, 1128, 11184, 11187, 2]
 
-// Module 10962 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 5073 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import MainTabsConstants from "MainTabsConstants" /* 10963 */;
+// Module 11182 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import MainTabsConstants from "MainTabsConstants" /* 11183 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

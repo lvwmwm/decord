@@ -1,14 +1,14 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5850
+// Function ID: 5851
 // Name: NativeMuteManager
-// Dependencies: [5231, 2014, 3, 2063, 584, 5343, 2016, 2]
+// Dependencies: [5734, 2014, 3, 4818, 584, 5851, 2016, 2]
 
-// Module 5342 (NativeMuteManager)
+// Module 5850 (NativeMuteManager)
 import LoggerDefault from "Logger" /* 3 */;
 import inject from "inject" /* 2016 */;
-import Timers from "Timers" /* 2063 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5343 */;
-import AudioRouteStore from "AudioRouteStore" /* 5231 */;
+import Timers from "Timers" /* 4818 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5851 */;
+import AudioRouteStore from "AudioRouteStore" /* 5734 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ class NativeMuteManager {
     return obj2;
   }
   nativeMuteChanged() {
-    if (!MediaEngineStore.hasActiveCallKitCall()) {
+    if (!MediaEngineStore.hasActiveSystemTelecomCall()) {
       const self = this;
       if (this.ignoreForNativeUnmute) {
         self.ignoreForNativeUnmute = false;
@@ -57,7 +57,7 @@ class NativeMuteManager {
     }
   }
   updateNativeMute() {
-    if (!MediaEngineStore.hasActiveCallKitCall()) {
+    if (!MediaEngineStore.hasActiveSystemTelecomCall()) {
       const self = this;
       if (this.needToUnmuteNative) {
         self.needToUnmuteNative = false;

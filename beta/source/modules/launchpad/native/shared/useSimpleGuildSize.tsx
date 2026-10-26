@@ -1,9 +1,9 @@
-// Module ID: 18384
-// Function ID: 18385
+// Module ID: 18685
+// Function ID: 18686
 // Name: useSimpleGuildSize
 // Dependencies: [19, 558, 576, 2]
 
-// Module 18384 (useSimpleGuildSize)
+// Module 18685 (useSimpleGuildSize)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

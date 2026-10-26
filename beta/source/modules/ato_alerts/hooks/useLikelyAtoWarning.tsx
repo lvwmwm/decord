@@ -1,15 +1,15 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10936
+// Function ID: 10937
 // Name: useLikelyAtoWarning
-// Dependencies: [10597, 558, 10708, 10709, 10710, 10711, 10707, 2]
+// Dependencies: [10693, 558, 10928, 10929, 10930, 10931, 10927, 2]
 
-// Module 10716 (useLikelyAtoWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10597 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10707 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10708 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10709 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10710 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10711 */;
+// Module 10936 (useLikelyAtoWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10927 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10928 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10929 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10930 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10931 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

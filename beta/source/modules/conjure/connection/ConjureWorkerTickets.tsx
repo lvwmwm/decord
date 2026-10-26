@@ -1,13 +1,13 @@
-// Module ID: 11004
-// Function ID: 11005
+// Module ID: 10725
+// Function ID: 10726
 // Name: ConjureWorkerTickets
-// Dependencies: [5, 1087, 1297, 11005, 2]
+// Dependencies: [5, 1087, 1297, 10726, 2]
 // Exports: forgetEarlyTicket, forgetEarlyTickets, mintRemixTicket, mintWorkerTicket, prefetchWorkerTicket, rememberCreatedProjectTicket
 
-// Module 11004 (ConjureWorkerTickets)
+// Module 10725 (ConjureWorkerTickets)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import conjureLocalDev from "conjureLocalDev" /* 11005 */;
+import conjureLocalDev from "conjureLocalDev" /* 10726 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -93,8 +93,8 @@ export const prefetchWorkerTicket = function prefetchWorkerTicket(projectId) {
     }
   }
 };
-export const forgetEarlyTicket = function forgetEarlyTicket(arg0) {
-  map.delete(arg0);
+export const forgetEarlyTicket = function forgetEarlyTicket(id) {
+  map.delete(id);
 };
 export const forgetEarlyTickets = function forgetEarlyTickets() {
   map.clear();

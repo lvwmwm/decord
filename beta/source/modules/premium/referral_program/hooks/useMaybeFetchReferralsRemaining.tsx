@@ -1,24 +1,19 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8428
+// Function ID: 8429
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1392, 7441, 1394, 558, 576, 504, 8357, 8358, 7385, 1991, 2]
+// Dependencies: [19, 1392, 7562, 558, 576, 504, 8429, 8430, 2]
 
-// Module 8356 (useMaybeFetchReferralsRemaining)
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7385 */;
+// Module 8428 (useMaybeFetchReferralsRemaining)
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7562 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, dependencyMap;
 
-let metroImportDefault;
-let metroRequire;
-({ PremiumTypes: metroRequire, FractionalPremiumStates: metroImportDefault } = PremiumConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchReferralsRemaining(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchReferralsRemaining(arg0) {
   let closure_0;
   let closure_1;
   let currentUser;
@@ -26,11 +21,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   let tmp6;
   let tmp = _require;
   const obj = require("react");
-  const cResult = obj.c(11);
+  const cResult = obj.c(10);
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function f() {
+    const fn = function o() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -42,121 +37,75 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = tmp(8357);
-  const hasDiscountApplied = tmpResult4.useHasDiscountApplied();
-  const tmpResult5 = tmp(8358);
-  const hasActiveTrial = tmpResult5.useHasActiveTrial();
-  const tmp11 = useFractionalPremiumInfoDefault();
+  const tmpResult3 = tmp(8429);
+  const hasDiscountApplied = tmpResult3.useHasDiscountApplied();
+  const tmpResult4 = tmp(8430);
+  const hasActiveTrial = tmpResult4.useHasActiveTrial();
   if (cResult[2] === stateFromStores) {
-    if (cResult[3] === tmp11) {
-      if (cResult[4] === hasActiveTrial) {
-        let tmp12;
-        if (cResult[5] === hasDiscountApplied) {
-          tmp12 = cResult[6];
-        }
-        importDefault = tmp12;
-        if (cResult[7] === (undefined !== arg0 && arg0)) {
-          let tmp16;
-          let tmp17;
-          if (cResult[8] === tmp12) {
-            tmp16 = cResult[9];
-            tmp17 = cResult[10];
-          }
-          const effect = react.useEffect(tmp16, tmp17);
-          class S {
-            constructor() {
-              const tmp = closure_1 && !closure_0;
-              if (tmp) {
-                const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
-              }
-            }
-          }
-        }
-        class S {
-          constructor() {
-            const tmp = closure_1 && !closure_0;
-            if (tmp) {
-              const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
-            }
-          }
-        }
-        const items1 = [tmp12, undefined !== arg0 && arg0];
-        cResult[7] = undefined !== arg0 && arg0;
-        cResult[8] = tmp12;
-        cResult[9] = S;
-        cResult[10] = items1;
-        tmp17 = items1;
-        tmp16 = S;
+    if (cResult[3] === hasActiveTrial) {
+      let tmp10;
+      if (cResult[4] === hasDiscountApplied) {
+        tmp10 = cResult[5];
       }
+      dependencyMap = tmp10;
+      if (cResult[6] === (undefined !== arg0 && arg0)) {
+        let tmp13;
+        let tmp14;
+        if (cResult[7] === tmp10) {
+          tmp13 = cResult[8];
+          tmp14 = cResult[9];
+        }
+        const effect = react.useEffect(tmp13, tmp14);
+      }
+      const fn2 = function b() {
+        const tmp = closure_1 && !closure_0;
+        if (tmp) {
+          const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
+        }
+      };
+      const items1 = [tmp10, undefined !== arg0 && arg0];
+      cResult[6] = undefined !== arg0 && arg0;
+      cResult[7] = tmp10;
+      cResult[8] = fn2;
+      cResult[9] = items1;
+      tmp14 = items1;
+      tmp13 = fn2;
     }
   }
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
-  let fetched = true === verified;
-  if (fetched) {
-    const tmpResult6 = tmp(1991);
-    fetched = tmpResult6.isPremiumExactly(stateFromStores, closure_6.TIER_2);
-  }
-  if (fetched) {
-    fetched = tmp11.fetched;
-  }
-  if (fetched) {
-    fetched = tmp11.fractionalState !== constants.FP_ONLY;
-  }
-  if (fetched) {
-    fetched = !hasDiscountApplied;
-  }
-  if (fetched) {
-    fetched = !hasActiveTrial;
-  }
+  const tmp12 = true === verified && stateFromStores.hasPaidTier2Subscription() && !hasDiscountApplied && !hasActiveTrial;
   cResult[2] = stateFromStores;
-  cResult[3] = tmp11;
-  cResult[4] = hasActiveTrial;
-  cResult[5] = hasDiscountApplied;
-  cResult[6] = fetched;
-  tmp12 = fetched;
+  cResult[3] = hasActiveTrial;
+  cResult[4] = hasDiscountApplied;
+  cResult[5] = tmp12;
+  tmp10 = tmp12;
 }) : (function useMaybeFetchReferralsRemaining() {
+  let closure_1;
   let currentUser;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
-  let fetched;
-  let tmp = flag;
+  dependencyMap = undefined;
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = flag(8357);
-  const hasDiscountApplied = obj2.useHasDiscountApplied();
-  const obj3 = flag(8358);
-  const hasActiveTrial = obj3.useHasActiveTrial();
-  const tmp6 = fetched(7385)();
+  const obj3 = flag(8429);
+  const hasDiscountApplied = obj3.useHasDiscountApplied();
   let verified;
+  const obj4 = flag(8430);
+  const hasActiveTrial = obj4.useHasActiveTrial();
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
-  fetched = true === verified;
-  if (fetched) {
-    const tmpResult = tmp(1991);
-    fetched = tmpResult.isPremiumExactly(stateFromStores, closure_6.TIER_2);
-  }
-  if (fetched) {
-    fetched = tmp6.fetched;
-  }
-  if (fetched) {
-    fetched = tmp6.fractionalState !== constants.FP_ONLY;
-  }
-  if (fetched) {
-    fetched = !hasDiscountApplied;
-  }
-  if (fetched) {
-    fetched = !hasActiveTrial;
-  }
-  const items1 = [fetched, flag];
+  const tmp4 = true === verified && stateFromStores.hasPaidTier2Subscription() && !hasDiscountApplied && !hasActiveTrial;
+  dependencyMap = tmp4;
+  const items1 = [tmp4, flag];
   const effect = react.useEffect(() => {
-    const tmp = fetched && !flag;
+    const tmp = closure_1 && !flag;
     if (tmp) {
       const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
     }
@@ -164,4 +113,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
 });
 let result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
 
-export const useMaybeFetchReferralsRemaining = tmp3;
+export const useMaybeFetchReferralsRemaining = tmp2;

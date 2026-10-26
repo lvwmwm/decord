@@ -1,18 +1,18 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 9536
+// Function ID: 9537
 // Name: gift_plan_selection_card_banner
-// Dependencies: [32, 1212, 9436, 9434, 9426, 2]
+// Dependencies: [32, 1212, 9535, 9533, 9525, 2]
 
-// Module 9437 (gift_plan_selection_card_banner)
+// Module 9536 (gift_plan_selection_card_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9426 */;
-import gradient2 from "gradient" /* 9434 */;
-import theme_aware_asset from "theme_aware_asset" /* 9436 */;
+import localized_string from "localized_string" /* 9525 */;
+import gradient2 from "gradient" /* 9533 */;
+import theme_aware_asset from "theme_aware_asset" /* 9535 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 const GiftPlanSelectionCardBanner_AssetVariant = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", NORMAL: 1, [1]: "NORMAL", LARGE_TILTED: 2, [2]: "LARGE_TILTED" };
 const MessageType = _mod1212.MessageType;
@@ -225,7 +225,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
     }
     if (header.mobileBodyLocalized) {
       const LocalizedString3 = localized_string.LocalizedString;
-      const internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
+      internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
       const mobileBodyLocalized = header.mobileBodyLocalized;
       const tagResult14 = tag.tag(15, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(mobileBodyLocalized, tagResult14.fork(), writeUnknownFields);

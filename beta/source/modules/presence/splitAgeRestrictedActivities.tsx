@@ -1,45 +1,39 @@
-// Module ID: 14838
-// Function ID: 14839
+// Module ID: 15072
+// Function ID: 15073
 // Name: splitAgeRestrictedActivities
-// Dependencies: [14839, 6318, 2]
+// Dependencies: [5611, 2]
 // Exports: default
 
-// Module 14838 (splitAgeRestrictedActivities)
-import ContentClassificationReference from "ContentClassificationReference" /* 6318 */;
-import ContentClassificationPresenceFilterExperiment2 from "ContentClassificationPresenceFilterExperiment" /* 14839 */;
+// Module 15072 (splitAgeRestrictedActivities)
+import ContentClassificationReference from "ContentClassificationReference" /* 5611 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/presence/splitAgeRestrictedActivities.tsx");
 
 export default function splitAgeRestrictedActivities(activities, hiddenActivities) {
   let items2;
-  const ContentClassificationPresenceFilterExperiment = ContentClassificationPresenceFilterExperiment2.ContentClassificationPresenceFilterExperiment;
-  if (ContentClassificationPresenceFilterExperiment.getConfig({ location: "presence_filtering" }).enabled) {
-    let obj4;
-    const items = [];
-    const items1 = [];
-    const iter = activities[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp6 = nextResult;
-      let obj2 = ContentClassificationReference;
-      if (obj2.isAgeRestrictedClassificationReference(nextResult.content_classification)) {
-        let arr = items1.push(tmp6);
-      } else {
-        let arr2 = items.push(tmp6);
-      }
-      continue;
-    }
-    if (0 === items1.length) {
-      obj4 = { activities, hiddenActivities };
-      const obj3 = { activities, hiddenActivities };
+  let obj3;
+  const items = [];
+  const items1 = [];
+  const iter = activities[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    let obj = ContentClassificationReference;
+    if (obj.isAgeRestrictedClassificationReference(nextResult.content_classification)) {
+      let arr = items1.push(tmp3);
     } else {
-      obj4 = { activities: items, hiddenActivities: items2 };
-      items2 = [];
-      HermesBuiltin.arraySpread(items2, items1, HermesBuiltin.arraySpread(items2, hiddenActivities, 0));
+      let arr2 = items.push(tmp3);
     }
-    return obj4;
-  } else {
-    return { activities, hiddenActivities };
+    continue;
   }
+  if (0 === items1.length) {
+    obj3 = { activities, hiddenActivities };
+    const obj2 = { activities, hiddenActivities };
+  } else {
+    obj3 = { activities: items, hiddenActivities: items2 };
+    items2 = [];
+    HermesBuiltin.arraySpread(items2, items1, HermesBuiltin.arraySpread(items2, hiddenActivities, 0));
+  }
+  return obj3;
 };

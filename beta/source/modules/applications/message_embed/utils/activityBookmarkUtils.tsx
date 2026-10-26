@@ -1,18 +1,27 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7765
+// Function ID: 7766
 // Name: activityBookmarkUtils
 // Dependencies: [1386, 2]
-// Exports: extractActivityBookmarkParams
+// Exports: extractActivityBookmarkParams, getLinkChannelId
 
-// Module 7645 (activityBookmarkUtils)
+// Module 7765 (activityBookmarkUtils)
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 
+export const getLinkChannelId = function getLinkChannelId(toURLSafeResult) {
+  let value;
+  if (toURLSafeResult != null) {
+    const searchParams = toURLSafeResult.searchParams;
+    value = searchParams.get("channel_id");
+  }
+  return value;
+};
 export const extractActivityBookmarkParams = function extractActivityBookmarkParams(url) {
-  let value3;
   let value4;
+  let value5;
+  let value6;
   const obj = URLUtilsDefault;
   const toURLSafeResult = obj.toURLSafe(url);
   let value;
@@ -20,16 +29,21 @@ export const extractActivityBookmarkParams = function extractActivityBookmarkPar
     const searchParams = toURLSafeResult.searchParams;
     value = searchParams.get("referrer_id");
   }
-  const obj2 = { referrerId: value, customId: value3, linkId: value4 };
-  value3 = undefined;
-  if (toURLSafeResult != null) {
-    const searchParams2 = toURLSafeResult.searchParams;
-    value3 = searchParams2.get("custom_id");
-  }
+  const obj2 = { referrerId: value, customId: value4, linkId: value5, channelId: value6 };
   value4 = undefined;
   if (toURLSafeResult != null) {
+    const searchParams2 = toURLSafeResult.searchParams;
+    value4 = searchParams2.get("custom_id");
+  }
+  value5 = undefined;
+  if (toURLSafeResult != null) {
     const searchParams3 = toURLSafeResult.searchParams;
-    value4 = searchParams3.get("link_id");
+    value5 = searchParams3.get("link_id");
+  }
+  value6 = undefined;
+  if (toURLSafeResult != null) {
+    const searchParams4 = toURLSafeResult.searchParams;
+    value6 = searchParams4.get("channel_id");
   }
   return obj2;
 };

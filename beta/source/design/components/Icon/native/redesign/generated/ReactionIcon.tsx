@@ -1,14 +1,14 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9350
+// Function ID: 9351
 // Name: ReactionIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9253, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9351, 5668, 2]
 
-// Module 9252 (ReactionIcon)
+// Module 9350 (ReactionIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 9253 */;
+import BaseIconImage2 from "BaseIconImage" /* 5668 */;
+import AssetRegistry from "AssetRegistry" /* 9351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionIc
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5668).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

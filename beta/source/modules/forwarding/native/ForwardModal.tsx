@@ -1,37 +1,37 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12903
+// Function ID: 12904
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7580, 7584, 8727, 2068, 5532, 8754, 12687, 10520, 21, 5191, 587, 558, 576, 1499, 12688, 504, 12684, 12683, 6484, 12690, 4904, 1128, 1388, 12692, 5401, 12693, 9618, 5202, 12694, 12695, 5514, 5156, 5157, 4903, 7162, 7365, 5137, 1384, 12698, 10529, 12699, 12708, 12720, 2]
+// Dependencies: [5, 32, 19, 17, 7697, 7701, 8823, 4823, 6010, 8850, 12904, 10616, 21, 4971, 587, 558, 576, 1499, 12905, 504, 12901, 12900, 6930, 12907, 5663, 1128, 1388, 12909, 5910, 12910, 9717, 5707, 12911, 12912, 5994, 5212, 5213, 5662, 7285, 7485, 5678, 1384, 12915, 10625, 12916, 12925, 12937, 2]
 
-// Module 12686 (ForwardModal)
+// Module 12903 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import LinkIcon from "LinkIcon" /* 5137 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
-import ChannelUtils from "ChannelUtils" /* 5514 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
-import UserRowConstants from "UserRowConstants" /* 10520 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12683 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12684 */;
-import ForwardConstants from "ForwardConstants" /* 12687 */;
-import formatResults from "formatResults" /* 12688 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12690 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import LinkIcon from "LinkIcon" /* 5678 */;
+import ChannelUtils from "ChannelUtils" /* 5994 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
+import UserRowConstants from "UserRowConstants" /* 10616 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12900 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12901 */;
+import ForwardConstants from "ForwardConstants" /* 12904 */;
+import formatResults from "formatResults" /* 12905 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7580 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8727 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8754 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7697 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7701 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8823 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import MessageStore from "MessageStore" /* 6010 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -603,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         const merged = Object.assign(arg0);
         intl = intl7.intl;
-        tmp = authStore3(HeaderActionButton, obj);
+        tmp = first(HeaderActionButton, obj);
       }
       return tmp;
     },

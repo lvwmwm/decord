@@ -1,15 +1,16 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 12951
+// Function ID: 12952
 // Name: onTapCheckpointCard
-// Dependencies: [2068, 1087, 5560, 1267, 5206, 12735, 2]
+// Dependencies: [4823, 1087, 6037, 1267, 5711, 12952, 2]
 // Exports: onTapCheckpointCard
 
-// Module 12734 (onTapCheckpointCard)
+// Module 12951 (onTapCheckpointCard)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 5560 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6037 */;
+import openCheckpoint from "openCheckpoint" /* 12952 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -31,12 +32,12 @@ export const onTapCheckpointCard = function onTapCheckpointCard(arg0) {
     let guild_id;
     const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
     AppAnalyticsUtils;
-    const tmp5 = importDefault;
     if (channel != null) {
       guild_id = channel.guild_id;
     }
     const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
     track(CHECKPOINT_CARD_CLICKED, obj2);
-    tmp5(12735)("message_component");
+    const tmpResult4 = openCheckpoint;
+    tmpResult4.openCheckpoint("message_component");
   }
 };

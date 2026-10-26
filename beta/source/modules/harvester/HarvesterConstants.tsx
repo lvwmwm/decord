@@ -1,9 +1,9 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 16152
+// Function ID: 16153
 // Name: HarvesterConstants
 // Dependencies: [2]
 
-// Module 15906 (HarvesterConstants)
+// Module 16152 (HarvesterConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/harvester/HarvesterConstants.tsx");

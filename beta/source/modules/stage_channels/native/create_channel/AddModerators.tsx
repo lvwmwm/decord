@@ -1,19 +1,19 @@
-// Module ID: 8906
-// Function ID: 8907
+// Module ID: 9001
+// Function ID: 9002
 // Name: AddModerators
-// Dependencies: [32, 109, 19, 17, 2090, 7756, 21, 5191, 587, 558, 576, 1505, 38, 8875, 6149, 2000, 1128, 6478, 7365, 5187, 7834, 8907, 2076, 2]
+// Dependencies: [32, 109, 19, 17, 4845, 7875, 21, 4971, 587, 558, 576, 1505, 38, 8970, 6638, 2000, 1128, 6924, 7485, 5234, 7953, 9002, 4831, 2]
 
-// Module 8906 (AddModerators)
+// Module 9001 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HeaderActionButton from "HeaderActionButton" /* 7365 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7756 */;
+import HeaderActionButton from "HeaderActionButton" /* 7485 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7875 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

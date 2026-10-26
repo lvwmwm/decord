@@ -1,12 +1,12 @@
-// Module ID: 5009
-// Function ID: 5010
+// Module ID: 5117
+// Function ID: 5118
 // Name: CheckpointNumbersRive
-// Dependencies: [109, 19, 21, 558, 4939, 576, 5010, 4992, 2]
+// Dependencies: [109, 19, 21, 558, 5046, 576, 5118, 5100, 2]
 
-// Module 5009 (CheckpointNumbersRive)
+// Module 5117 (CheckpointNumbersRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4939 */;
+import BaseRive2 from "BaseRive" /* 5046 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,12 +16,12 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4992);
+const RiveErrorBoundary2 = tmp(5100);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
-const artboardProperties = { Artboard: { TextColor: "color", "Fire CountUp": "trigger", DisplayValue: "number" } };
-const artboardViewModelInstances = { Artboard: ["Instance"] };
+const artboardProperties = { Artboard: { DisplayValueString: "string", reducedMotion: "boolean", TextColor: "color", "Fire CountUp": "trigger", DisplayValue: "number" } };
+const artboardViewModelInstances = { Artboard: ["default", "reducedMotion"] };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let obj = {
   Artboard: ReactCompilerGating.isReactCompilerEnabled() ? (function ArtboardBindings(arg0) {
@@ -29,7 +29,21 @@ let obj = {
     let instance;
     let onDataBindingChange;
     let playIfNeeded;
-    ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
+    let reducedMotionEnabled;
+    ({ instance, reducedMotionEnabled, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
+    let DisplayValueString;
+    const useStringBinding = BaseRive2.useStringBinding;
+    BaseRive2;
+    if (dataBinding != null) {
+      DisplayValueString = dataBinding.DisplayValueString;
+    }
+    let DisplayValueString1;
+    if (onDataBindingChange != null) {
+      DisplayValueString1 = onDataBindingChange.DisplayValueString;
+    }
+    const stringBinding = useStringBinding("DisplayValueString", instance, DisplayValueString, DisplayValueString1, playIfNeeded);
+    const tmpResult = BaseRive2;
+    const booleanBinding = tmpResult.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     let TextColor;
     const useColorBinding = BaseRive2.useColorBinding;
     BaseRive2;
@@ -69,7 +83,21 @@ let obj = {
     let instance;
     let onDataBindingChange;
     let playIfNeeded;
-    ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
+    let reducedMotionEnabled;
+    ({ instance, reducedMotionEnabled, dataBinding, onDataBindingChange, playIfNeeded } = arg0);
+    let DisplayValueString;
+    const useStringBinding = BaseRive2.useStringBinding;
+    BaseRive2;
+    if (dataBinding != null) {
+      DisplayValueString = dataBinding.DisplayValueString;
+    }
+    let DisplayValueString1;
+    if (onDataBindingChange != null) {
+      DisplayValueString1 = onDataBindingChange.DisplayValueString;
+    }
+    const stringBinding = useStringBinding("DisplayValueString", instance, DisplayValueString, DisplayValueString1, playIfNeeded);
+    const tmpResult = BaseRive2;
+    const booleanBinding = tmpResult.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     let TextColor;
     const useColorBinding = BaseRive2.useColorBinding;
     BaseRive2;
@@ -156,7 +184,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkp
   if (undefined !== tmp9) {
     str = tmp9;
   }
-  let str2 = "Instance";
+  let str2 = "default";
   if (undefined !== tmp10) {
     str2 = tmp10;
   }
@@ -183,7 +211,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkp
       }
       const BaseRive = tmp(tmp2[4]).BaseRive;
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_5010")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_5118")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;
@@ -217,7 +245,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkp
     str = artboard;
   }
   const defaultViewModelInstance = ref.defaultViewModelInstance;
-  let str2 = "Instance";
+  let str2 = "default";
   const stateMachine = ref.stateMachine;
   if (undefined !== defaultViewModelInstance) {
     str2 = defaultViewModelInstance;

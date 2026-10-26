@@ -1,20 +1,20 @@
-// Module ID: 5212
-// Function ID: 5213
+// Module ID: 5630
+// Function ID: 5631
 // Name: VoiceStateStore
-// Dependencies: [32, 5213, 1087, 5214, 12, 504, 1630, 584, 2]
+// Dependencies: [32, 5631, 1087, 5632, 12, 504, 1630, 584, 2]
 
-// Module 5212 (VoiceStateStore)
+// Module 5630 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import CallConstants from "CallConstants" /* 5632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5213 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5631 */;
 import size from "module_2" /* 2 */;
 
-let closure_14, closure_15, closure_16, closure_9, sessionId, set2, set3;
+let closure_14, closure_16, closure_9, sessionId, set2, set3;
 
 function updateVoiceState(arg0, arg1, fn) {
   let items1;
@@ -180,8 +180,8 @@ let closure_11 = {};
 let set = new Set();
 const map = new Map();
 const syncedClientThemes = {};
+let closure_15 = {};
 const authStore3 = {};
-const authStore4 = {};
 let closure_17 = {};
 const Store = get_initializedDefault.Store;
 class VoiceStateStore extends Store {
@@ -253,12 +253,12 @@ class VoiceStateStore extends Store {
     }
     return tmp4;
   }
-  getVoiceStateForUser(userId) {
-    let tmp2 = closure_16[userId];
+  getVoiceStateForUser(id) {
+    let tmp2 = closure_16[id];
     const _Object = Object;
     if (null == tmp2) {
       const obj = {};
-      tmp[userId] = obj;
+      tmp[id] = obj;
       tmp2 = obj;
     }
     return values(tmp2)[0];

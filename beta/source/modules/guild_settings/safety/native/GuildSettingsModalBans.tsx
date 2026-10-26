@@ -1,25 +1,25 @@
-// Module ID: 18851
-// Function ID: 18852
+// Module ID: 19153
+// Function ID: 19154
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 2090, 4845, 1392, 8911, 1087, 21, 5191, 587, 504, 7015, 2044, 6374, 6377, 8910, 6457, 1202, 6466, 1128, 7162, 4903, 7167, 7004, 18852, 7016, 8632, 7021, 7005, 2]
+// Dependencies: [32, 19, 17, 4845, 4903, 1392, 9006, 1087, 21, 4971, 587, 504, 7144, 4799, 6827, 6830, 9005, 6903, 1202, 6912, 1128, 7285, 5662, 7290, 7134, 19154, 7145, 8723, 7150, 5592, 2]
 // Exports: default
 
-// Module 18851 (GuildSettingsModalBans)
+// Module 19153 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6374 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7167 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7290 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;
@@ -273,7 +273,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     }
     const obj5 = { style: tmp.containerInner, children: null };
     tmp19 = closure_12;
-    const obj6 = { style: tmp.searchField, children: closure_12(tmp2(tmp3[26]).SearchField, obj7) };
+    const obj6 = { style: tmp.searchField, children: closure_12(tmp2(tmp3[26]).SearchBar, obj7) };
     obj7 = { size: "md", onChange: tmp15 };
     const items7 = [closure_12(setting, obj6), ];
     const tmp18 = setting;

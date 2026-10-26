@@ -1,28 +1,28 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10418
+// Function ID: 10419
 // Name: MediaKeyboardUtils
-// Dependencies: [5, 1209, 2068, 7510, 2119, 8175, 1629, 1087, 7749, 8024, 9564, 8033, 8035, 7766, 1267, 8036, 8025, 1384, 5167, 8038, 10323, 1123, 10350, 5471, 13109, 11599, 12, 2]
+// Dependencies: [5, 1209, 4823, 7631, 4874, 8293, 1629, 1087, 7868, 8144, 9665, 8152, 8154, 7885, 1267, 8155, 8145, 1384, 4928, 8157, 10419, 1123, 10446, 5971, 13347, 11762, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
-// Module 10322 (MediaKeyboardUtils)
+// Module 10418 (MediaKeyboardUtils)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_native from "react-native" /* 5471 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7766 */;
-import Upload from "Upload" /* 8024 */;
-import UploadPlatform from "UploadPlatform" /* 8025 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8033 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9564 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10323 */;
+import react_native from "react-native" /* 5971 */;
+import DraftStore from "DraftStore" /* 7631 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7885 */;
+import Upload from "Upload" /* 8144 */;
+import UploadPlatform from "UploadPlatform" /* 8145 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8152 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
@@ -41,8 +41,8 @@ let closure_18;
 let map1;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(5167);
-const f105168 = (item) => {
+const DeviceUtils = tmp(4928);
+const f106985 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -311,7 +311,7 @@ function handleSelectKeyboardItem(channelId, node, isIncluded, createdUsingInApp
     if (uri == null) {
       uri = image.uri;
     }
-    size = { id: uri, origin: image(8024).UploadOrigin.IMAGE_PICKER, uri: null, originalUri: null, mimeType: null, width: null, height: null, filename: null, playableDuration: null, platform: image(8025).UploadPlatform.REACT_NATIVE };
+    size = { id: uri, origin: image(8144).UploadOrigin.IMAGE_PICKER, uri: null, originalUri: null, mimeType: null, width: null, height: null, filename: null, playableDuration: null, platform: image(8145).UploadPlatform.REACT_NATIVE };
     ({ uri: obj2.uri, uri: obj2.originalUri, mimeType: obj2.mimeType, width: obj2.width, height: obj2.height, filename: obj2.filename, playableDuration: obj2.playableDuration } = image);
     let tmp8 = null != createdUsingInAppCamera;
     if (tmp8) {
@@ -399,7 +399,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f105168);
+            const mapped = found.map(f106985);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -456,7 +456,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f105168);
+            const mapped = found.map(f106985);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -610,7 +610,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f105168);
+            const mapped = found.map(f106985);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -777,7 +777,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
       }
       return tmp2;
     });
-    const mapped = found.map(f105168);
+    const mapped = found.map(f106985);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);
@@ -1051,7 +1051,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
   }
   track(CHAT_INPUT_COMPONENT_VIEWED, obj2);
   let recipientId;
-  const openGiftModal = tmp3(10350).openGiftModal;
+  const openGiftModal = tmp3(10446).openGiftModal;
   require("utils/openGiftModal");
   if (null != channel) {
     if (channel.isDM()) {
@@ -1093,7 +1093,7 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
       const current2 = chatInput.current;
       current2.blur();
     }
-    const tmp7Result = tmp7(13109);
+    const tmp7Result = tmp7(13347);
     const result = tmp7Result.navigateToThreadCreation(channel, "Plus Button");
   }
 };

@@ -1,31 +1,31 @@
-// Module ID: 6339
-// Function ID: 6340
+// Module ID: 6791
+// Function ID: 6792
 // Name: ChannelSectionStore
-// Dependencies: [5540, 5112, 6340, 2068, 2090, 4845, 2119, 5034, 1392, 1087, 2075, 1098, 6341, 6342, 6343, 1123, 11, 5394, 504, 1455, 584, 2]
+// Dependencies: [2045, 5190, 6792, 4823, 4845, 4903, 4874, 5002, 1392, 1087, 4830, 1098, 6793, 6794, 6795, 1123, 11, 5902, 504, 1455, 584, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6339 (ChannelSectionStore)
+// Module 6791 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1098 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5394 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6341 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6342 */;
-import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6343 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import ExperimentStore from "ExperimentStore" /* 5112 */;
-import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5902 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6793 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6794 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6795 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ExperimentStore from "ExperimentStore" /* 5190 */;
+import SearchMessageStore from "SearchMessageStore" /* 6792 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -81,7 +81,7 @@ function toggleSection(c17, arg1) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp6 = null;
       if (null != guildId) {
-        tmp6 = authStore3(channelId, guildId);
+        tmp6 = closure_15(channelId, guildId);
       }
       tmp2 = tmp6;
     }
@@ -150,7 +150,7 @@ function handlePermissionsChange() {
 ({ isStaticChannelRoute: closure_14, buildGuildStaticChannelId: closure_15 } = ChannelConstants);
 const Permissions = Constants2.Permissions;
 let c17 = false;
-const authStore5 = false;
+const authStore4 = false;
 let c19 = false;
 const isProfileOpen = true;
 let flag4 = true;
@@ -216,7 +216,7 @@ class ChannelSectionStore extends PersistedStore {
           const guildId = SelectedGuildStore.getGuildId();
           let tmp8 = null;
           if (null != guildId) {
-            tmp8 = authStore3(arg0, guildId);
+            tmp8 = closure_15(arg0, guildId);
           }
           tmp4 = tmp8;
         }
@@ -230,7 +230,7 @@ class ChannelSectionStore extends PersistedStore {
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
       if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
-        const tmp11Result = tmp11(6342);
+        const tmp11Result = tmp11(6794);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
           MEMBERS = constants.FRIENDS;
         }
@@ -264,7 +264,7 @@ class ChannelSectionStore extends PersistedStore {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(channelId, guildId);
+          tmp5 = closure_15(channelId, guildId);
         }
         tmp = tmp5;
       }
@@ -293,7 +293,7 @@ class ChannelSectionStore extends PersistedStore {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(channelId, guildId);
+          tmp5 = closure_15(channelId, guildId);
         }
         tmp = tmp5;
       }
@@ -326,7 +326,7 @@ class ChannelSectionStore extends PersistedStore {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(channelId, guildId);
+          tmp5 = closure_15(channelId, guildId);
         }
         tmp = tmp5;
       }
@@ -512,7 +512,7 @@ let obj = {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(baseChannelId, guildId);
+          tmp5 = closure_15(baseChannelId, guildId);
         }
         tmp = tmp5;
       }
@@ -546,7 +546,7 @@ let obj = {
         const guildId1 = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId1) {
-          tmp5 = authStore3(baseChannelId, guildId1);
+          tmp5 = closure_15(baseChannelId, guildId1);
         }
         tmp = tmp5;
       }
@@ -572,7 +572,7 @@ let obj = {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(parentChannelId, guildId);
+          tmp5 = closure_15(parentChannelId, guildId);
         }
         tmp = tmp5;
       }
@@ -591,7 +591,7 @@ let obj = {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
-          tmp5 = authStore3(baseChannelId, guildId);
+          tmp5 = closure_15(baseChannelId, guildId);
         }
         tmp = tmp5;
       }

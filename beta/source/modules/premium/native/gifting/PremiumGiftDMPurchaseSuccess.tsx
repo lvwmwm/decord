@@ -1,20 +1,20 @@
-// Module ID: 13712
-// Function ID: 13713
+// Module ID: 13941
+// Function ID: 13942
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10354, 1505, 10400, 10351, 1128, 2653, 5479, 10490, 5187, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10450, 1505, 10496, 10447, 1128, 2600, 5244, 10586, 5234, 2]
 
-// Module 13712 (PremiumGiftDMPurchaseSuccess)
+// Module 13941 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10351 */;
-import NativeGiftContext from "NativeGiftContext" /* 10354 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10490 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10447 */;
+import NativeGiftContext from "NativeGiftContext" /* 10450 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10586 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

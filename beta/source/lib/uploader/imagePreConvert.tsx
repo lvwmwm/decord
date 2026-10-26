@@ -1,13 +1,13 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9666
+// Function ID: 9667
 // Name: imagePreConvert
-// Dependencies: [32, 5, 8025, 8055, 8148, 2002, 6950, 2]
+// Dependencies: [32, 5, 8145, 8174, 8267, 2002, 7080, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9565 (imagePreConvert)
+// Module 9666 (imagePreConvert)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import UploadPlatform from "UploadPlatform" /* 8025 */;
-import imageFilename from "imageFilename" /* 8055 */;
+import UploadPlatform from "UploadPlatform" /* 8145 */;
+import imageFilename from "imageFilename" /* 8174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;

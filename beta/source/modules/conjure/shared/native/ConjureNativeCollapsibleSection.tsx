@@ -1,15 +1,15 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 12442
+// Function ID: 12443
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 10859, 7182, 8817, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 11079, 7305, 8913, 2]
 
-// Module 12257 (ConjureNativeCollapsibleSection)
+// Module 12442 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(5187);
+const Text_Text = tmp(5234);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -87,9 +87,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
   }
   const tmp7 = closure_6();
   if (undefined === expanded || expanded) {
-    ChevronSmallRightIcon = tmp(10859).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(11079).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp(7182).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp(7305).ChevronSmallRightIcon;
   }
   if (cResult[0] === ChevronSmallRightIcon) {
     if (cResult[1] === (undefined === expanded || expanded)) {
@@ -150,7 +150,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
         const obj6 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj7, accessibilityLabel: tmp15, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj8) };
         tmp15 = showLabel;
         obj7 = { expanded: undefined === expanded || expanded };
-        const PressableScale = tmp(8817).PressableScale;
+        const PressableScale = tmp(8913).PressableScale;
         if (undefined === expanded || expanded) {
           tmp15 = hideLabel;
         }
@@ -206,10 +206,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(10859).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(11079).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
-    ChevronSmallRightIcon = tmp2(7182).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp2(7305).ChevronSmallRightIcon;
     tmp4 = tmp2;
   }
   let tmp6Result = null;
@@ -217,7 +217,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
   if (flag) {
     const obj2 = { style: tmp.header, children: items };
     const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: title };
-    items = [React3(tmp4(5187).Text, obj3), ];
+    items = [React3(tmp4(5234).Text, obj3), ];
     const obj4 = { style: tmp.headerTrailing, children: items1 };
     items1 = [meta, ];
     let tmp9Result = null;
@@ -226,7 +226,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNat
       if (null != onToggleExpanded) {
         const obj5 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj6, accessibilityLabel: showLabel, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
         obj6 = { expanded: flag3 };
-        const PressableScale = tmp4(8817).PressableScale;
+        const PressableScale = tmp4(8913).PressableScale;
         if (flag3) {
           showLabel = hideLabel;
         }

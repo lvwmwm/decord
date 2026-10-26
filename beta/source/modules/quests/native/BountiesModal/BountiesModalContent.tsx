@@ -1,9 +1,9 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16349
+// Function ID: 16350
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7655, 6228, 16052, 1087, 1098, 21, 558, 576, 1499, 1633, 5191, 587, 1384, 13729, 5158, 504, 9352, 16061, 13904, 16066, 9484, 16068, 16064, 7672, 6235, 7681, 6233, 13897, 16048, 13914, 16105, 16076, 16102, 16075, 7092, 4945, 5192, 5195, 13875, 1123, 16101, 16062, 7652, 4922, 2]
+// Dependencies: [5, 32, 19, 17, 7775, 6710, 16298, 1087, 1098, 21, 558, 576, 1499, 1633, 4971, 587, 1384, 13958, 5214, 504, 9450, 16307, 14134, 16312, 9580, 16314, 16310, 7792, 6717, 7801, 6715, 14127, 16294, 14142, 16350, 16322, 16348, 16321, 7221, 5052, 5206, 5209, 14105, 1123, 16347, 16308, 7772, 5037, 2]
 
-// Module 16104 (BountiesModalContent)
+// Module 16349 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,28 +12,28 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import timing from "timing" /* 5192 */;
-import timingPresets from "timingPresets" /* 5195 */;
-import QuestContent from "QuestContent" /* 6233 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import QuestDataUtils from "QuestDataUtils" /* 7652 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
-import AnimationUtils from "AnimationUtils" /* 13729 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 13875 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13897 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13914 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16048 */;
+import timing from "timing" /* 5206 */;
+import timingPresets from "timingPresets" /* 5209 */;
+import QuestContent from "QuestContent" /* 6715 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
+import QuestDataUtils from "QuestDataUtils" /* 7772 */;
+import AnalyticsActions from "AnalyticsActions" /* 7792 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
+import AnimationUtils from "AnimationUtils" /* 13958 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14105 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14127 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14142 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7655 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 16052 */;
+import BountyStore from "BountyStore" /* 7775 */;
+import QuestConstants from "QuestConstants" /* 6710 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 16298 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function doRewardEarnedHapticFeedback() {
   } while (num3 < 6);
   const obj3 = { time: sum + 100, type: "transient", intensity: 1, sharpness: 0.95 };
   items.push(obj3);
-  const tmp7Result = tmp7(5158);
+  const tmp7Result = tmp7(5214);
   tmp7Result.triggerPattern(items);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -232,7 +232,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
                         }
                         const tmpResult = tmp(504);
                         const stateFromStores = tmpResult.useStateFromStores(tmp18, tmp20);
-                        const tmpResult2 = tmp(9352);
+                        const tmpResult2 = tmp(9450);
                         const balance = tmpResult2.useFetchVirtualCurrencyBalance().balance;
                         let obj7 = react;
                         const tmp24 = _slicedToArray(react.useState(null), 2);
@@ -741,7 +741,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
         }
       };
       const QuestContentImpressionTrackerNative = QuestContentImpressionTracker.QuestContentImpressionTrackerNative;
-      return authStore3(QuestContentImpressionTrackerNative, obj);
+      return closure_15(QuestContentImpressionTrackerNative, obj);
     }
   };
   BountyVideo = bounty(dismissVideoEndAppStoreOverlay[35]).BountyVideo;
@@ -778,7 +778,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   ({ bounty, sourceQuestContent } = arg0);
   const height = useWindowDimensionsDefault().height;
   size = closure_20();
-  let obj2 = sharedValue(4945);
+  let obj2 = sharedValue(5052);
   sharedValue = obj2.useSharedValue(0);
   [tmp4, importDefault] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
@@ -1082,7 +1082,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
               class C {
                 constructor() {
                   const obj = { bounty, sourceQuestContent };
-                  return authStore3(closure_24, obj);
+                  return closure_15(closure_24, obj);
                 }
               }
               let obj3 = { theme: ThemeTypes.DARK, children: closure_15(BillableAdPlacementImpressionTrackerNative, obj4) };
@@ -1098,7 +1098,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
             class C {
               constructor() {
                 const obj = { bounty, sourceQuestContent };
-                return authStore3(closure_24, obj);
+                return closure_15(closure_24, obj);
               }
             }
             cResult[9] = bounty;
@@ -1210,7 +1210,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
       overrideVisibility: true,
       children() {
           const obj = { bounty, sourceQuestContent };
-          return authStore3(closure_24, obj);
+          return closure_15(closure_24, obj);
         }
     };
     BillableAdPlacementImpressionTrackerNative = bountyId(bounty[33]).BillableAdPlacementImpressionTrackerNative;

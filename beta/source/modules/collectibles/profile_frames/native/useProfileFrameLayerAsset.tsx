@@ -1,12 +1,12 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8713
+// Function ID: 8714
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 7181, 1989, 558, 576, 1901, 8623, 8624, 2]
+// Dependencies: [5, 32, 19, 17, 7304, 1989, 558, 576, 1901, 8714, 8715, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 8622 (useProfileFrameLayerAsset)
+// Module 8713 (useProfileFrameLayerAsset)
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1989 */;
-import Constants from "Constants" /* 7181 */;
+import Constants from "Constants" /* 7304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -18,7 +18,7 @@ let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f99647 = (arg0) => {
+const f101433 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f99647);
+      const promise = new Promise(f101433);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -255,7 +255,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f99647);
+              const promise = new Promise(f101433);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               const result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -325,7 +325,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f99647);
+              const promise = new Promise(f101433);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

@@ -1,23 +1,23 @@
-// Module ID: 14541
-// Function ID: 14542
+// Module ID: 14776
+// Function ID: 14777
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1087, 2065, 1394, 21, 5191, 587, 6225, 558, 576, 14534, 14535, 1505, 7130, 14536, 1633, 14542, 4945, 14496, 10399, 5033, 2052, 2053, 1267, 14385, 1128, 12931, 4864, 7385, 6963, 14543, 14499, 9694, 14546, 14551, 14568, 14571, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 4820, 21, 4971, 587, 6707, 558, 576, 14769, 14770, 1505, 7253, 14771, 1633, 14777, 5052, 14731, 10495, 5001, 4807, 4808, 1267, 14620, 1128, 13171, 2053, 504, 7093, 14778, 14734, 9793, 14781, 14786, 14803, 14806, 2]
 
-// Module 14541 (PremiumMarketingPage)
+// Module 14776 (PremiumMarketingPage)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import LegacyTokens from "LegacyTokens" /* 6225 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
+import LegacyTokens from "LegacyTokens" /* 6707 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,6 @@ let react = react_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { display: "flex" }, scrollContainer: { flexDirection: "column", alignItems: "center", marginTop: 16 }, arrowIcon: obj2, backButton: obj3, sectionWithTopMargin: { marginTop: 48 }, sectionWithPadding: { paddingHorizontal: 12 }, sectionWidth: { maxWidth: 464 }, accountCreditContainer: { width: "100%" }, accountCreditContainerWithSpacing: { marginTop: 24, marginBottom: 20 }, themedBackground: obj4, backButtonBackground: obj5 };
@@ -70,7 +69,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   const tmp = userHasSubscription;
   let tmp2 = analyticsLocations;
   let obj = userHasSubscription(analyticsLocations[11]);
-  const cResult = obj.c(105);
+  const cResult = obj.c(108);
   userHasSubscription = userHasSubscription.userHasSubscription;
   ({ subscriptionDetails, billingInfo, accountCredit, applicationId, onClose, premiumFeatureCardOrder, entitlements, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = userHasSubscription);
   const tmp4 = undefined !== isFullScreenPresentation && isFullScreenPresentation;
@@ -255,17 +254,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   let isFullScreenPresentation;
   let items10;
   let items11;
+  let items12;
   let items2;
-  let items4;
   let items5;
-  let items7;
+  let items6;
   let items8;
   let items9;
   let onClose;
   let onPaymentDismiss;
   let onPaymentSuccess;
   let premiumFeatureCardOrder;
-  let ref3;
   let subscriptionDetails;
   userHasSubscription = userHasSubscription.userHasSubscription;
   ({ onClose, entitlements, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = userHasSubscription);
@@ -280,7 +278,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   let closure_6;
   let ref;
   let ref2;
-  FractionalPremiumStates = undefined;
+  let ref3;
   let sharedValue;
   let promotionMarketingComponent;
   onClose = undefined;
@@ -308,7 +306,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   closure_6 = tmp9;
   ref = obj3.useRef(0);
   ref2 = obj3.useRef(0);
-  FractionalPremiumStates = obj3.useRef(0);
+  ref3 = obj3.useRef(0);
   const tmpResult = tmp(tmp2[19]);
   sharedValue = tmpResult.useSharedValue(false);
   const callback = obj3.useCallback((nativeEvent) => {
@@ -325,8 +323,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
     const obj = { headerShown: userHasSubscription };
     navigation.setOptions(obj);
   }, items);
-  const tmpResult3 = tmp(tmp2[20]);
-  promotionMarketingComponent = tmpResult3.usePromotionMarketingComponent(tmp(tmp2[21]).MarketingComponentType.PREMIUM_TAB);
+  const tmpResult4 = tmp(tmp2[20]);
+  promotionMarketingComponent = tmpResult4.usePromotionMarketingComponent(tmp(tmp2[21]).MarketingComponentType.PREMIUM_TAB);
   const items1 = [promotionMarketingComponent];
   const effect = obj3.useEffect(() => {
     let isDismissed = null == promotionMarketingComponent || "premiumTab" !== tmp.properties.properties.oneofKind;
@@ -366,18 +364,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
     const tmp6Result4 = navigation(tmp2[29]);
     hasAccountCreditResult = tmp6Result4.hasAccountCredit(entitlements);
   }
-  const tmp19 = navigation(tmp2[30])({ forceFetch: true });
-  const tmpResult4 = tmp(tmp2[20]);
-  const promotionMarketingComponent1 = tmpResult4.usePromotionMarketingComponent(tmp(tmp2[21]).MarketingComponentType.MARKETING_PAGE_BANNER);
-  const items3 = [, , ];
-  ({ container: arr4[0], themedBackground: arr4[1] } = tmp4);
+  const items3 = [ref];
+  const tmpResult5 = tmp(tmp2[30]);
+  const stateFromStores = tmpResult5.useStateFromStores(items3, () => ref.getCurrentUser());
+  let flag;
+  if (stateFromStores != null) {
+    flag = stateFromStores.isFractionalPremiumWithNoStandardSub();
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  const tmpResult6 = tmp(tmp2[20]);
+  const promotionMarketingComponent1 = tmpResult6.usePromotionMarketingComponent(tmp(tmp2[21]).MarketingComponentType.MARKETING_PAGE_BANNER);
+  const items4 = [, , ];
+  ({ container: arr5[0], themedBackground: arr5[1] } = tmp4);
   let num = 0;
   if (!userHasSubscription) {
     num = top;
   }
-  const obj6 = { style: items3, children: items4 };
-  items3[2] = { paddingTop: num };
-  items4 = [sharedValue(tmp6(tmp2[31]), {}), , ];
+  const obj6 = { style: items4, children: items5 };
+  items4[2] = { paddingTop: num };
+  items5 = [sharedValue(tmp6(tmp2[31]), {}), , ];
   const obj7 = {
     contentContainerStyle: tmp4.scrollContainer,
     onScroll: function handleScroll(nativeEvent) {
@@ -409,67 +416,67 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
     },
     scrollEventThrottle: 0,
     showsVerticalScrollIndicator: false,
-    children: items5
+    children: items6
   };
-  items5 = [tmp16, subscriptionDetails, billingInfo, , , , , , , ];
-  let tmp23Result = null;
-  const tmp24 = closure_6;
+  items6 = [tmp16, subscriptionDetails, billingInfo, , , , , , , ];
+  let tmp22Result = null;
+  const tmp23 = closure_6;
   if (hasAccountCreditResult) {
-    const items6 = [tmp4.accountCreditContainer, ];
-    const obj8 = { style: items6, children: accountCredit };
-    items6[1] = userHasSubscription ? {} : tmp4.accountCreditContainerWithSpacing;
-    tmp23Result = tmp23(tmp22, obj8);
+    const items7 = [tmp4.accountCreditContainer, ];
+    const obj8 = { style: items7, children: accountCredit };
+    items7[1] = userHasSubscription ? {} : tmp4.accountCreditContainerWithSpacing;
+    tmp22Result = tmp22(tmp21, obj8);
   }
-  items5[3] = tmp23Result;
-  const obj9 = { style: items7 };
-  items7 = [userHasSubscription ? tmp4.sectionWithTopMargin : {}, tmp4.sectionWidth];
-  items5[4] = sharedValue(navigation(tmp2[32]), obj9);
-  let tmp23Result3 = null != promotionMarketingComponent1;
-  if (tmp23Result3) {
-    tmp23Result3 = "marketingPageBanner" === promotionMarketingComponent1.properties.properties.oneofKind;
+  items6[3] = tmp22Result;
+  const obj9 = { style: items8 };
+  items8 = [userHasSubscription ? tmp4.sectionWithTopMargin : {}, tmp4.sectionWidth];
+  items6[4] = sharedValue(navigation(tmp2[32]), obj9);
+  let tmp22Result3 = null != promotionMarketingComponent1;
+  if (tmp22Result3) {
+    tmp22Result3 = "marketingPageBanner" === promotionMarketingComponent1.properties.properties.oneofKind;
   }
-  if (tmp23Result3) {
-    const obj10 = { style: items8, bannerFields: promotionMarketingComponent1.properties.properties.marketingPageBanner, analyticsPage: "Marketing Page Banner Tile", onPaymentSuccess, onPaymentDismiss, componentId: null, promotionId: null };
-    items8 = [, , ];
-    ({ sectionWithPadding: arr9[0], sectionWidth: arr9[1] } = tmp4);
+  if (tmp22Result3) {
+    const obj10 = { style: items9, bannerFields: promotionMarketingComponent1.properties.properties.marketingPageBanner, analyticsPage: "Marketing Page Banner Tile", onPaymentSuccess, onPaymentDismiss, componentId: null, promotionId: null };
+    items9 = [, , ];
+    ({ sectionWithPadding: arr10[0], sectionWidth: arr10[1] } = tmp4);
     const obj11 = { marginBottom: navigation(tmp2[8]).space.PX_24 };
-    items8[2] = obj11;
-    ({ id: obj15.componentId, promotionId: obj15.promotionId } = promotionMarketingComponent1);
+    items9[2] = obj11;
+    ({ id: obj17.componentId, promotionId: obj17.promotionId } = promotionMarketingComponent1);
     const tmp6Result5 = navigation(tmp2[33]);
-    tmp23Result3 = tmp23(tmp6Result5, obj10);
+    tmp22Result3 = tmp22(tmp6Result5, obj10);
   }
-  items5[5] = tmp23Result3;
-  const obj12 = { style: items9, order: premiumFeatureCardOrder, applicationId, onPaymentSuccess, onPaymentDismiss, onLayout: callback, onFirstCardLayout: callback1 };
-  items9 = [, ];
-  ({ sectionWithPadding: arr10[0], sectionWidth: arr10[1] } = tmp4);
-  items5[6] = sharedValue(navigation(tmp2[34]), obj12);
-  const obj13 = { style: items10 };
+  items6[5] = tmp22Result3;
+  const obj12 = { style: items10, order: premiumFeatureCardOrder, applicationId, onPaymentSuccess, onPaymentDismiss, onLayout: callback, onFirstCardLayout: callback1 };
   items10 = [, ];
-  ({ sectionWithTopMargin: arr11[0], sectionWidth: arr11[1] } = tmp4);
-  items5[7] = sharedValue(navigation(tmp2[35]), obj13);
-  const obj14 = { style: items11, isFractionalOnly: tmp19.fractionalState === FractionalPremiumStates.FP_ONLY };
-  items11 = [, , ];
-  ({ sectionWithTopMargin: arr12[0], sectionWithPadding: arr12[1], sectionWidth: arr12[2] } = tmp4);
-  items5[8] = sharedValue(navigation(tmp2[36]), obj14);
-  const items12 = [, , , ];
+  ({ sectionWithPadding: arr11[0], sectionWidth: arr11[1] } = tmp4);
+  items6[6] = sharedValue(navigation(tmp2[34]), obj12);
+  const obj13 = { style: items11 };
+  items11 = [, ];
+  ({ sectionWithTopMargin: arr12[0], sectionWidth: arr12[1] } = tmp4);
+  items6[7] = sharedValue(navigation(tmp2[35]), obj13);
+  const obj14 = { style: items12, isFractionalOnly: flag };
+  items12 = [, , ];
   ({ sectionWithTopMargin: arr13[0], sectionWithPadding: arr13[1], sectionWidth: arr13[2] } = tmp4);
-  let tmp29 = null;
+  items6[8] = sharedValue(navigation(tmp2[36]), obj14);
+  const items13 = [, , , ];
+  ({ sectionWithTopMargin: arr14[0], sectionWithPadding: arr14[1], sectionWidth: arr14[2] } = tmp4);
+  let tmp28 = null;
   const tmp6Result6 = navigation(tmp2[37]);
   if (!userHasSubscription && enabled) {
     const _Math = Math;
-    tmp29 = { marginBottom: Math.max(bottom, navigation(tmp2[8]).space.PX_16) + 48 };
-    const obj16 = { marginBottom: Math.max(bottom, navigation(tmp2[8]).space.PX_16) + 48 };
+    tmp28 = { marginBottom: Math.max(bottom, navigation(tmp2[8]).space.PX_16) + 48 };
+    const obj15 = { marginBottom: Math.max(bottom, navigation(tmp2[8]).space.PX_16) + 48 };
   }
-  const obj17 = { style: items12, showSubscribeButton: !userHasSubscription && !enabled };
-  items12[3] = tmp29;
-  items5[9] = sharedValue(tmp6Result6, obj17);
-  items4[1] = promotionMarketingComponent(tmp24, obj7);
-  let tmp23Result4 = null;
+  const obj16 = { style: items13, showSubscribeButton: !userHasSubscription && !enabled };
+  items13[3] = tmp28;
+  items6[9] = sharedValue(tmp6Result6, obj16);
+  items5[1] = promotionMarketingComponent(tmp23, obj7);
+  let tmp22Result4 = null;
   if (!userHasSubscription && enabled) {
     const obj18 = { style: tmp4.sectionWidth, isVisible: sharedValue, backgroundColor: tmp4.themedBackground.backgroundColor };
-    tmp23Result4 = tmp23(tmp6(tmp2[38]), obj18);
+    tmp22Result4 = tmp22(tmp6(tmp2[38]), obj18);
   }
-  items4[2] = tmp23Result4;
+  items5[2] = tmp22Result4;
   return promotionMarketingComponent(c5, obj6);
 });
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

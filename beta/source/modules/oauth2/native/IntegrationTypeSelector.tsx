@@ -1,19 +1,19 @@
-// Module ID: 9544
-// Function ID: 9545
+// Module ID: 9645
+// Function ID: 9646
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1417, 9536, 5131, 1128, 9545, 5128, 5187, 9547, 6542, 6457, 1202, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1417, 5603, 5672, 1128, 9646, 5669, 5234, 9648, 6987, 6903, 1202, 2]
 
-// Module 9544 (IntegrationTypeSelector)
+// Module 9645 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserPlusIcon from "UserPlusIcon" /* 5131 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9536 */;
-import ServerIcon from "ServerIcon" /* 9545 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5603 */;
+import UserPlusIcon from "UserPlusIcon" /* 5672 */;
+import ServerIcon from "ServerIcon" /* 9646 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

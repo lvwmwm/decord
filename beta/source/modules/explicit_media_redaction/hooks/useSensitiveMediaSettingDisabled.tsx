@@ -1,11 +1,11 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 16120
+// Function ID: 16121
 // Name: useSensitiveMediaSettingDisabled
-// Dependencies: [558, 15863, 2]
+// Dependencies: [558, 16109, 2]
 // Exports: useSensitiveMediaSettingDisabled
 
-// Module 15874 (useSensitiveMediaSettingDisabled)
-import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+// Module 16120 (useSensitiveMediaSettingDisabled)
+import useParentalControlSettings from "useParentalControlSettings" /* 16109 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

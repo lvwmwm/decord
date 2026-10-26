@@ -1,24 +1,25 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 10718
+// Function ID: 10719
 // Name: ConjureAnalytics
-// Dependencies: [6293, 1087, 7222, 5206, 2]
-// Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
+// Dependencies: [6773, 1087, 7345, 5711, 1384, 2]
+// Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
 
-// Module 10997 (ConjureAnalytics)
+// Module 10718 (ConjureAnalytics)
 import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import ConjureUtils from "ConjureUtils" /* 7222 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
-function projectFields(project_id) {
+function projectFields(projectId) {
   let application_id;
   let install_scope;
   let prop;
   let substr;
-  const project = ConjureProjectStore.getProject(project_id);
+  const project = ConjureProjectStore.getProject(projectId);
   let name;
-  const obj = { project_id, project_name: substr, application_id, preview_application_id: prop, install_scope };
+  const obj = { project_id: projectId, project_name: substr, application_id, preview_application_id: prop, install_scope };
   if (project != null) {
     name = project.name;
   }
@@ -52,11 +53,11 @@ function projectFields(project_id) {
   }
   return obj;
 }
-function conjureLocation(project_id, isPreview) {
+function conjureLocation(projectId, isPreview) {
   let application_id;
   let findConjureChannelIdResult;
   let guild_id;
-  const project = ConjureProjectStore.getProject(project_id);
+  const project = ConjureProjectStore.getProject(projectId);
   if (isPreview) {
     let preview_guild_id;
     if (project != null) {
@@ -189,17 +190,19 @@ export const trackConjureErrored = function trackConjureErrored(projectId, turnI
   }
   trackWithMetadata(CONJURE_ERRORED, obj);
 };
-export const trackConjurePublishActionClicked = function trackConjurePublishActionClicked(project_id, installScope) {
+export const trackConjurePublishActionClicked = function trackConjurePublishActionClicked(project_id, arg1) {
   let action;
   let application_id;
   let entryPoint;
+  let installScope;
   let obj2;
   let publishState;
   let surface;
-  installScope = installScope.installScope;
-  ({ entryPoint, publishState, surface, action } = installScope);
+  let tmp6;
+  ({ publishState, installScope } = arg1);
+  ({ entryPoint, surface, action } = arg1);
   const project = ConjureProjectStore.getProject(project_id);
-  const obj = { project_id, application_id, entry_point: entryPoint, publish_state: publishState, surface, install_scope: installScope, action };
+  const obj = { project_id, application_id, entry_point: entryPoint, publish_state: tmp6, surface, install_scope: installScope, action };
   application_id = undefined;
   const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
   const CONJURE_PUBLISH_ACTION_CLICKED = AnalyticEvents.CONJURE_PUBLISH_ACTION_CLICKED;
@@ -216,5 +219,84 @@ export const trackConjurePublishActionClicked = function trackConjurePublishActi
     obj2 = conjureLocation(project_id, false);
   }
   const merged = Object.assign(obj2);
+  tmp6 = null;
+  if (null != publishState) {
+    let str3 = "unpublished";
+    if ("nothing_built" !== publishState) {
+      str3 = "unpublished";
+      if ("not_live" !== publishState) {
+        let str5 = "up_to_date";
+        if ("live_outdated" === publishState) {
+          str5 = "changes";
+        }
+        str3 = str5;
+      }
+    }
+    tmp6 = str3;
+  }
   trackWithMetadata(CONJURE_PUBLISH_ACTION_CLICKED, obj);
+};
+export const trackConjureRatingSubmitted = function trackConjureRatingSubmitted(projectId) {
+  let publishReason;
+  let rating;
+  let str;
+  let surface;
+  let turnId;
+  projectId = projectId.projectId;
+  const obj = { turn_id: turnId, rating, publish_reason: publishReason, surface, client_platform: str };
+  const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
+  const CONJURE_RATING_SUBMITTED = AnalyticEvents.CONJURE_RATING_SUBMITTED;
+  ({ turnId, rating, publishReason, surface } = projectId);
+  AppAnalyticsUtils;
+  const merged = Object.assign(projectFields(projectId));
+  const merged1 = Object.assign(conjureLocation(projectId, true));
+  str = "android";
+  const obj2 = PlatformUtils;
+  if (!obj2.isAndroid()) {
+    let str2 = "ios";
+    const tmpResult = PlatformUtils;
+    if (!tmpResult.isIOS()) {
+      let str3 = "web";
+      const tmpResult2 = PlatformUtils;
+      if (tmpResult2.isDesktop()) {
+        str3 = "desktop";
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  trackWithMetadata(CONJURE_RATING_SUBMITTED, obj);
+};
+export const trackConjureRatingFeedbackSubmitted = function trackConjureRatingFeedbackSubmitted(projectId, substr) {
+  let publishReason;
+  let rating;
+  let str;
+  let surface;
+  let turnId;
+  projectId = projectId.projectId;
+  const obj = { turn_id: turnId, rating, publish_reason: publishReason, surface, client_platform: str };
+  const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
+  const CONJURE_RATING_FEEDBACK_SUBMITTED = AnalyticEvents.CONJURE_RATING_FEEDBACK_SUBMITTED;
+  ({ turnId, rating, publishReason, surface } = projectId);
+  AppAnalyticsUtils;
+  const merged = Object.assign(projectFields(projectId));
+  const merged1 = Object.assign(conjureLocation(projectId, true));
+  str = "android";
+  const obj2 = PlatformUtils;
+  if (!obj2.isAndroid()) {
+    let str2 = "ios";
+    const tmpResult = PlatformUtils;
+    if (!tmpResult.isIOS()) {
+      let str3 = "web";
+      const tmpResult2 = PlatformUtils;
+      if (tmpResult2.isDesktop()) {
+        str3 = "desktop";
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  const obj3 = { feedback_text: substr };
+  const merged2 = Object.assign(obj);
+  trackWithMetadata(CONJURE_RATING_FEEDBACK_SUBMITTED, obj3);
 };

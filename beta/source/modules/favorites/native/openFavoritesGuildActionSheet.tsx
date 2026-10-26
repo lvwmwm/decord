@@ -1,12 +1,12 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17563
+// Function ID: 17564
 // Name: openFavoritesGuildActionSheet
-// Dependencies: [5155, 17267, 2002, 2]
+// Dependencies: [5210, 17564, 2002, 2]
 // Exports: default
 
-// Module 17266 (openFavoritesGuildActionSheet)
+// Module 17563 (openFavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildActionSheet = "FavoritesGuildActionSheet";
@@ -20,5 +20,5 @@ export default function openFavoritesGuildActionSheet() {
       obj.hideActionSheet(FavoritesGuildActionSheet);
     }
   };
-  obj.openLazy(asyncRequire(17267, dependencyMap.paths), FavoritesGuildActionSheet, obj2);
+  obj.openLazy(asyncRequire(17564, dependencyMap.paths), FavoritesGuildActionSheet, obj2);
 };

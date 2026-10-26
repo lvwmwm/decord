@@ -1,16 +1,16 @@
-// Module ID: 2055
-// Function ID: 2056
+// Module ID: 4810
+// Function ID: 4811
 // Name: DismissibleContentFrameworkStore
-// Dependencies: [1087, 3, 2056, 2059, 1267, 504, 584, 2]
+// Dependencies: [1087, 3, 4811, 4814, 1267, 504, 584, 2]
 
-// Module 2055 (DismissibleContentFrameworkStore)
+// Module 4810 (DismissibleContentFrameworkStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2056 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2059 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4811 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4814 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -20,7 +20,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let tmp2 = new LoggerDefault("DCF");
 const React3 = tmp2;
 let c5 = false;
-let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: set, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, upsellBackoffOverridden: false, renderedAtTimestamps: map, lastDismissed: null, seenForGuildId: map1 };
+let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: set, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, upsellBackoffOverridden: false, shownContent: map, lastDismissed: null, seenForGuildId: map1 };
 set = new Set();
 map = new Map();
 map1 = new Map();
@@ -64,8 +64,25 @@ class DismissibleContentFrameworkStore extends PersistedStore {
     return obj;
   }
   getRenderedAtTimestamp(content) {
-    const renderedAtTimestamps = obj.renderedAtTimestamps;
-    return renderedAtTimestamps.get(content);
+    const shownContent = obj.shownContent;
+    const value = shownContent.get(content);
+    let renderedAt;
+    if (value != null) {
+      renderedAt = value.renderedAt;
+    }
+    return renderedAt;
+  }
+  hasTrackedActionedEvent(content) {
+    const shownContent = obj.shownContent;
+    const value = shownContent.get(content);
+    let flag;
+    if (value != null) {
+      flag = value.actionTracked;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }
   hasUserHitDCCap(PASSWORDLESS_UPSELL, guildId) {
     if (null != PASSWORDLESS_UPSELL) {
@@ -150,7 +167,7 @@ DismissibleContentFrameworkStore.migrations = items;
 let obj2 = {
   LOGOUT: function handleLogout() {
     c5 = false;
-    obj = { dismissibleContentSeenDuringSession: new Set(), renderedAtTimestamps: new Map(), seenForGuildId: new Map() };
+    obj = { dismissibleContentSeenDuringSession: new Set(), shownContent: new Map(), seenForGuildId: new Map() };
     const merged = Object.assign(obj);
     new Set();
     new Map();
@@ -169,9 +186,9 @@ let obj2 = {
     let dismissibleContent;
     let guildId;
     ({ dismissibleContent, guildId } = arg0);
-    const renderedAtTimestamps = obj.renderedAtTimestamps;
-    const date = new Date();
-    const result = renderedAtTimestamps.set(dismissibleContent, date.getTime());
+    const shownContent = obj.shownContent;
+    obj = { renderedAt: Date.now(), actionTracked: false };
+    const result = shownContent.set(dismissibleContent, obj);
     const obj2 = DismissibleContentFatigueConfig;
     if (!obj2.bypassesFatigue(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
@@ -199,19 +216,19 @@ let obj2 = {
               const _Date = Date;
               const self3 = this;
               const self4 = this;
-              const date1 = new Date();
-              date1.setHours(0, 0, 0, 0);
-              obj.dailyCapPeriodStart = date1.getTime();
+              const date = new Date();
+              date.setHours(0, 0, 0, 0);
+              obj.dailyCapPeriodStart = date.getTime();
             }
             obj.numberOfDCsShownToday = obj.numberOfDCsShownToday + 1;
             if (3 === obj.numberOfDCsShownToday) {
-              obj = { dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
-              logger.info("Daily cap reached", obj);
+              const obj3 = { dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
+              logger.info("Daily cap reached", obj3);
             }
             if (obj.numberOfDCsShownToday > 3) {
-              const obj3 = { cap_type: "daily_cap", dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
+              const obj4 = { cap_type: "daily_cap", dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
               const obj8 = AnalyticsUtilsDefault;
-              obj8.track(AnalyticEvents.DCF_CAP_EXCEEDED, obj3);
+              obj8.track(AnalyticEvents.DCF_CAP_EXCEEDED, obj4);
             }
           } else {
             const seenForGuildId = obj.seenForGuildId;
@@ -227,8 +244,18 @@ let obj2 = {
   DCF_HANDLE_DC_DISMISSED: function handleDCDismissed(dismissibleContent) {
     dismissibleContent = dismissibleContent.dismissibleContent;
     obj.lastDismissed = { content: dismissibleContent, guildId: dismissibleContent.guildId };
-    const renderedAtTimestamps = obj.renderedAtTimestamps;
-    renderedAtTimestamps.delete(dismissibleContent);
+    const shownContent = obj.shownContent;
+    shownContent.delete(dismissibleContent);
+  },
+  DCF_HANDLE_DC_ACTIONED: function handleDCActioned(dismissibleContent) {
+    const shownContent = obj.shownContent;
+    const value = shownContent.get(dismissibleContent.dismissibleContent);
+    if (null != value) {
+      if (!value.actionTracked) {
+        value.actionTracked = true;
+      }
+    }
+    return false;
   },
   DCF_OVERRIDE_LAST_DC_DISMISSED: function handleResetLastDCDismissed(dismissibleContent) {
     dismissibleContent = dismissibleContent.dismissibleContent;

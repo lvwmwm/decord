@@ -1,10 +1,10 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17379
+// Function ID: 17380
 // Name: useAuthFlowBackHandler
-// Dependencies: [19, 17066, 558, 576, 17062, 6484, 2]
+// Dependencies: [19, 17363, 558, 576, 17359, 6930, 2]
 
-// Module 17082 (useAuthFlowBackHandler)
-import RegistrationConstants from "RegistrationConstants" /* 17066 */;
+// Module 17379 (useAuthFlowBackHandler)
+import RegistrationConstants from "RegistrationConstants" /* 17363 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
 // Module ID: 2020
 // Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8029, 1087, 5311, 4826, 15076, 1405, 15077, 15079, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 8148, 1087, 5814, 4785, 15298, 1405, 15299, 15301, 504, 584, 2]
 
 // Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import DiscordNativeDefault from "DiscordNative" /* 4826 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15077 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15079 */;
+import DiscordNativeDefault from "DiscordNative" /* 4785 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15299 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8029 */;
+import ClipsConstants from "ClipsConstants" /* 8148 */;
 import Constants from "Constants" /* 1087 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -286,7 +286,7 @@ function trackClipMessage(message) {
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
 let c16 = "default";
 let c17 = "Discord Clips";
-const authStore5 = {};
+const authStore4 = {};
 let closure_19 = {};
 let closure_20 = [];
 let closure_21 = 0;

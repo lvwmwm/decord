@@ -1,12 +1,12 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 17144
+// Function ID: 17145
 // Name: DesignSystemsBackgroundBlurViewSetting
-// Dependencies: [8260, 1087, 11084, 16847, 2]
+// Dependencies: [8332, 1087, 11208, 17143, 2]
 
-// Module 16848 (DesignSystemsBackgroundBlurViewSetting)
+// Module 17144 (DesignSystemsBackgroundBlurViewSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

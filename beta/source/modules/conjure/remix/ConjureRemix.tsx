@@ -1,162 +1,289 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 10697
+// Function ID: 10698
 // Name: ConjureRemix
-// Dependencies: [5, 10978, 1128, 3883, 11004, 10999, 11068, 2]
+// Dependencies: [5, 10698, 584, 1128, 3830, 10725, 10808, 10203, 10720, 2]
 // Exports: remixConjureProjectInto
 
-// Module 11628 (ConjureRemix)
-import intl3 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+// Module 10697 (ConjureRemix)
+import _modDef3830 from "module_3830" /* 3830 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10725 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10808 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
+import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, closure_3, projectId;
+const require = globalThis.__r;
+let _require, c3, c4, c7, closure_2, dependencyMap, importDefault;
 
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-let obj = function _remixConjureProjectInto() {
-  obj = _asyncToGenerator(async (projectId, guild_id) => {
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
-    return (async (arg0, value) => {
-      let acceptRemixResult;
+function prepareConjureRemix(project, currentGuildId, arg2) {
+  let closure_1;
+  let name;
+  const f147446 = () => "rejected";
+  _require = currentGuildId;
+  importDefault = arg2;
+  function accept(comma) {
+    hasOwnProperty(comma);
+    if (hasOwnProperty == null) {
+      obj = conjureRemixConnection;
+      const acceptRemixResult = obj.acceptRemix(_asyncToGenerator, comma);
+      hasOwnProperty = acceptRemixResult.catch(f147446);
+    }
+    return hasOwnProperty;
+  }
+  let obj = function _open() {
+    let value;
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
       let deleteProjectResult;
-      let intl2;
-      let name;
-      if (c6 === 2) {
-        c6 = 3;
+      let v3;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          return { value, done: true };
+          const obj3 = { value, done: true };
+          return obj3;
         } else {
           return { value: "IconComponent", done: null };
         }
       } else {
         try {
-          let obj5;
-          let c2;
-          c6 = 2;
-          if (0 === c5) {
+          let user;
+          c4 = 2;
+          if (0 === c3) {
             if (arg0 === 1) {
-              c6 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
             } else {
-              closure_2 = tmp4;
-              projectId = undefined;
-              closure_3 = undefined;
-              obj5 = { ok: false, message: intl2.string(_modDef3883.Cn8H0Y) };
-              intl2 = intl3.intl;
-              const obj15 = ConjureWorkerTickets;
-              const mintRemixTicketResult = obj15.mintRemixTicket(projectId.id);
-              c2 = mintRemixTicketResult;
-              mintRemixTicketResult.catch(() => {
-
-              });
+              let c1 = 0;
+              user = undefined;
+              closure_2 = undefined;
+              c7 = true;
+              c3 = 1;
               c4 = 1;
-              const obj6 = { name: "" + name.slice(0, 120) + closure_2_7, guild_id, install_scope: projectId.install_scope };
-              name = projectId.name;
-              const createProject = ConjureActionCreators.createProject;
-              const _HermesInternal = HermesInternal;
-              ConjureActionCreators;
-              c5 = 3;
-              c6 = 1;
-              const obj8 = { value: createProject(obj6), done: false };
-              return obj8;
+              const obj5 = { value, done: false };
+              return obj5;
             }
-          } else if (1 === c5) {
-            c4 = 0;
-            c6 = 3;
-            return { value: obj5, done: true };
-          } else {
-            if (2 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              user = value;
+              if (null == user) {
+                const obj7 = { ok: false, message, kept: false };
+                c4 = 3;
+                const obj8 = { value: obj7, done: true };
+                return obj8;
               } else {
-                let obj12;
-                closure_3 = value;
-                if ("accepted" !== closure_3) {
-                  closure_131_4(projectId);
-                  if ("rejected" === closure_3) {
-                    c5 = 4;
-                    c6 = 1;
-                    const obj7 = closure_131_0(closure_131_2[5]);
-                    const obj11 = {
-                      value: deleteProjectResult.catch(() => {
-
-                                    }),
-                      done: false
-                    };
-                    deleteProjectResult = obj7.deleteProject(projectId);
-                    return obj11;
-                  }
-                } else {
-                  const intl = closure_131_0(closure_131_2[2]).intl;
-                  closure_131_6(projectId, intl.string(closure_131_1(closure_131_2[3]).jviD6Y), undefined, { remix: true });
-                  obj12 = { ok: true, projectId };
-                }
-                c6 = 3;
-                return { value: obj12, done: true };
+                c3 = 2;
+                c4 = 1;
+                const obj10 = { value: closure_130_8(user.id), done: false };
+                return obj10;
               }
-            } else if (3 === c5) {
+            }
+          } else {
+            let obj19;
+            if (2 === c3) {
               if (arg0 === 1) {
-                c6 = 3;
+                c4 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c4 = 0;
-                c6 = 3;
-                return { value, done: true };
+                c4 = 3;
+                const obj11 = { value, done: true };
+                return obj11;
               } else {
-                projectId = value;
-                c4 = 0;
-                closure_131_5(projectId);
-                c5 = 2;
-                c6 = 1;
-                const obj2 = closure_131_0(closure_131_2[6]);
-                const obj16 = { value: acceptRemixResult.catch(() => "rejected"), done: false };
-                acceptRemixResult = obj2.acceptRemix(c2, projectId);
-                return obj16;
+                closure_2 = value;
+                if ("unreachable" === closure_2) {
+                  let c5 = null;
+                  c7 = false;
+                  const obj12 = { ok: false, message, kept: true };
+                  obj19 = obj12;
+                } else if ("rejected" === closure_2) {
+                  if (closure_130_4 != null) {
+                    tmp31();
+                  }
+                  c4(user.id);
+                  const obj9 = guildId(closure_2[8]);
+                  c3 = 3;
+                  c4 = 1;
+                  const obj13 = {
+                    value: deleteProjectResult.catch(() => {
+
+                                }),
+                    done: false
+                  };
+                  deleteProjectResult = obj9.deleteProject(user.id);
+                  return obj13;
+                } else if (guildId === guildId) {
+                  const obj14 = { ok: true, projectId: user.id, guildId };
+                  obj = obj14;
+                  obj19 = obj;
+                } else {
+                  const obj15 = { guild_id: guildId, preview_guild_id: guildId };
+                  const obj21 = guildId(closure_2[8]);
+                  const result = obj21.updateProjectSettings(user.id, obj15);
+                  c3 = 4;
+                  c4 = 1;
+                  const obj16 = { value: result.then(() => true, () => false), done: false };
+                  return obj16;
+                }
+                c4 = 3;
+                const obj17 = { value: obj19, done: true };
+                return obj17;
+              }
+            } else if (3 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj18 = { value, done: true };
+                return obj18;
+              } else {
+                obj19 = { ok: false, message, kept: false };
               }
             } else if (arg0 === 1) {
-              c6 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
+              c4 = 3;
+              const obj20 = { value, done: true };
+              return obj20;
+            } else if (value) {
+              if (closure_130_4 != null) {
+                tmp9();
+              }
+              const obj2 = guildId(closure_2[5]);
+              obj2.forgetEarlyTicket(user.id);
+              c4(user.id);
+              closure_1_5(user.id);
+              const obj22 = { ok: true, projectId: user.id, guildId };
+              obj = obj22;
+            } else {
+              obj = { ok: true, projectId: user.id, guildId };
             }
-            obj12 = obj5;
           }
-        } catch (tmp36) {
-          if (0 === c4) {
-            c6 = 3;
-            throw tmp36;
-          } else {
-            c5 = 1;
-          }
+        } catch (tmp55) {
+          c4 = 3;
+          throw tmp55;
         }
       }
-    })();
-  });
-  return obj(...arguments);
-};
-({ closeConnection: closure_4, ensureConnection: hasOwnProperty, sendUserMessage: metroRequire } = ConjureConnectionStore);
-let c7 = " (Remix)";
-const result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx");
+    });
+    return obj(...arguments);
+  };
+  const intl = require("intl").intl;
+  dependencyMap = intl.string(_modDef3830.Cn8H0Y);
+  obj = require("ConjureWorkerTickets");
+  const mintRemixTicketResult = obj.mintRemixTicket(project.id);
+  _asyncToGenerator = mintRemixTicketResult;
+  mintRemixTicketResult.catch(() => {
 
-export const remixConjureProjectInto = function remixConjureProjectInto() {
-  return obj(...arguments);
+  });
+  let closure_5 = null;
+  c6 = null;
+  map = false;
+  let obj2 = require("createNonce");
+  const nonce = obj2.createNonce();
+  let result = map.set(nonce, (id, ws_ticket) => {
+    map.delete(nonce);
+    c6 = id;
+    obj = ConjureWorkerTickets;
+    const result = obj.rememberCreatedProjectTicket(id, ws_ticket);
+    hasOwnProperty(id);
+    if (hasOwnProperty == null) {
+      const tmp2Result = conjureRemixConnection;
+      const acceptRemixResult = tmp2Result.acceptRemix(_asyncToGenerator, id);
+      hasOwnProperty = acceptRemixResult.catch(f147446);
+    }
+  });
+  const tmp4 = require("ConjureActionCreators");
+  let obj3 = { name: "" + name.slice(0, 120) + c6, guild_id: currentGuildId, install_scope: project.install_scope, remix_source_project_id: project.id, nonce };
+  name = project.name;
+  const createRemix = tmp4.createRemix;
+  const remix = createRemix(obj3);
+  let nextPromise = remix.then((remix_preview) => {
+    map.delete(nonce);
+    if (null != remix_preview.remix_preview) {
+      obj = ConjureActionCreators;
+      obj.applyRemixPreview(remix_preview.id, remix_preview.remix_preview);
+      const tmp5 = c7;
+      if (!tmp5) {
+        let tmp6;
+        if (closure_1 != null) {
+          tmp6 = closure_1(remix_preview);
+        }
+        closure_4 = tmp6;
+      }
+    }
+    const id = remix_preview.id;
+    hasOwnProperty(id);
+    if (hasOwnProperty == null) {
+      const obj2 = conjureRemixConnection;
+      const acceptRemixResult = obj2.acceptRemix(_asyncToGenerator, id);
+      hasOwnProperty = acceptRemixResult.catch(f147446);
+    }
+    return remix_preview;
+  }, () => {
+    map.delete(nonce);
+    if (null != c6) {
+      React3(c6);
+    }
+    return null;
+  });
+  let obj4 = {
+    created: nextPromise,
+    open(arg0) {
+      return obj(...arguments);
+    },
+    dismiss() {
+      const tmp = c7;
+      if (!tmp) {
+        c7 = true;
+        nextPromise = nextPromise.then((id) => {
+          if (closure_1_4 != null) {
+            tmp();
+          }
+          if (null != id) {
+            closure_4(id.id);
+          }
+        });
+      }
+    }
+  };
+  return obj4;
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+({ closeConnection: closure_4, ensureConnection: hasOwnProperty } = ConjureConnectionStore);
+let c6 = " (Remix)";
+let map = new Map();
+const subscription = Dispatcher.subscribe("CONJURE_PROJECT_CREATE_PROGRESS", (nonce) => {
+  let projectId;
+  let wsTicket;
+  ({ projectId, wsTicket } = nonce);
+  const value = map.get(nonce.nonce);
+  if (value != null) {
+    value(projectId, wsTicket);
+  }
+});
+let result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx");
+
+export { prepareConjureRemix };
+export const remixConjureProjectInto = function remixConjureProjectInto(project, currentGuildId) {
+  const obj = prepareConjureRemix(project, currentGuildId);
+  return obj.open(currentGuildId);
 };

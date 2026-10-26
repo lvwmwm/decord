@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/AngryIcon", width: 60, height: 60, scales: [2, 3], hash: "f576bb59fd8aa7b768b785da00a17a1a", name: "AngryIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "bb53327d21615c77cfbccb9f06aeb711", name: "wumpus-link", type: "png" });

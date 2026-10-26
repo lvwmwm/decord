@@ -1,19 +1,27 @@
-// Module ID: 10995
-// Function ID: 10996
+// Module ID: 10716
+// Function ID: 10717
 // Name: ConjureSettingsStore
 // Dependencies: [504, 584, 2]
 
-// Module 10995 (ConjureSettingsStore)
+// Module 10716 (ConjureSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
-let closure_1 = [];
+const map1 = new Map();
+let closure_2 = [];
 const Store = get_initializedDefault.Store;
 class ConjureSettingsStore extends Store {
   getSettings(arg0) {
     let value = map.get(arg0);
+    if (value == null) {
+      value = null;
+    }
+    return value;
+  }
+  getLoadState(arg0) {
+    let value = map1.get(arg0);
     if (value == null) {
       value = null;
     }
@@ -26,15 +34,28 @@ class ConjureSettingsStore extends Store {
       connections = value.connections;
     }
     if (connections == null) {
-      connections = closure_1;
+      connections = closure_2;
     }
     return connections;
   }
 }
 const prototype = ConjureSettingsStore.prototype;
-const obj = {
+let obj = {
   CONJURE_SETTINGS_SET: function handleSettingsSet(projectId) {
-    const result = map.set(projectId.projectId, projectId.settings);
+    projectId = projectId.projectId;
+    const result = map.set(projectId, projectId.settings);
+    const result1 = map1.set(projectId, "loaded");
+  },
+  CONJURE_SETTINGS_LOAD_STATE_SET: function handleLoadStateSet(arg0) {
+    let projectId;
+    let state;
+    ({ projectId, state } = arg0);
+    const value = map1.get(projectId);
+    const obj = map1;
+    if (value !== state) {
+      const result = obj.set(projectId, state);
+    }
+    return false;
   }
 };
 const conjureSettingsStore = new ConjureSettingsStore(DispatcherDefault, obj);

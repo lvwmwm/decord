@@ -1,18 +1,18 @@
-// Module ID: 7491
-// Function ID: 7492
+// Module ID: 7612
+// Function ID: 7613
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 6017, 1392, 1087, 7492, 1104, 558, 576, 504, 7494, 12, 6019, 2]
+// Dependencies: [32, 19, 6500, 1392, 1087, 7613, 1104, 558, 576, 504, 7615, 12, 6502, 2]
 // Exports: useLegacyPlatformType
 
-// Module 7491 (ConnectionsHooks)
+// Module 7612 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
-import KeyboardConstants from "KeyboardConstants" /* 7492 */;
+import PlatformsDefault from "Platforms" /* 6502 */;
+import KeyboardConstants from "KeyboardConstants" /* 7613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -39,22 +39,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatformA
   let tmp4;
   let tmp5;
   let tmp8;
+  const tmp = forUserProfile;
+  let tmp2 = allowPlayStationStaging;
   const obj = forUserProfile(allowPlayStationStaging[8]);
   const cResult = obj.c(7);
   forUserProfile = forUserProfile.forUserProfile;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = UserStore;
     const items = [UserStore];
     const fn = function n() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp5 = fn;
     tmp4 = items;
+    tmp5 = fn;
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const tmpResult = forUserProfile(allowPlayStationStaging[9]);
+  const tmpResult = tmp(tmp2[9]);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { location: "f2f7ef_1" };
@@ -75,33 +78,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatformA
     }
   }
   const fn2 = function p(type) {
-    let tmp5;
+    let tmp6;
     if (type.type === PlatformTypes.PLAYSTATION_STAGING) {
-      tmp5 = allowPlayStationStaging;
+      tmp6 = allowPlayStationStaging;
     } else {
-      let tmp4 = undefined === stateFromStores;
-      if (!tmp4) {
+      let tmp2 = undefined === stateFromStores;
+      if (!tmp2) {
         let hasItem;
         if (closure_10[type.type] != null) {
-          hasItem = obj.includes(tmp11.id);
+          hasItem = obj.includes(tmp.id);
         }
-        tmp4 = !hasItem;
+        tmp2 = !hasItem;
       }
-      tmp5 = !tmp4;
-      if (tmp4) {
-        let tmp7 = forUserProfile;
-        if (!tmp7) {
-          const migrationData = type.migrationData;
-          let migrationExperimentEnabled;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("ConnectionsHooks");
-          }
-          tmp7 = !migrationExperimentEnabled && type.enabled;
+      tmp6 = !tmp2;
+      if (tmp2) {
+        let tmp8 = forUserProfile;
+        if (!tmp8) {
+          tmp8 = null == type.migrationData && type.enabled;
         }
-        tmp5 = tmp7;
+        tmp6 = tmp8;
       }
     }
-    return tmp5;
+    return tmp6;
   };
   cResult[3] = allowPlayStationStaging;
   cResult[4] = stateFromStores;
@@ -118,33 +116,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatformA
   const PlayStationVoiceExperiment = forUserProfile(allowPlayStationStaging[10]).PlayStationVoiceExperiment;
   allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   return (type) => {
-    let tmp5;
+    let tmp6;
     if (type.type === PlatformTypes.PLAYSTATION_STAGING) {
-      tmp5 = allowPlayStationStaging;
+      tmp6 = allowPlayStationStaging;
     } else {
-      let tmp4 = undefined === closure_1;
-      if (!tmp4) {
+      let tmp2 = undefined === closure_1;
+      if (!tmp2) {
         let hasItem;
         if (closure_10[type.type] != null) {
-          hasItem = obj.includes(tmp11.id);
+          hasItem = obj.includes(tmp.id);
         }
-        tmp4 = !hasItem;
+        tmp2 = !hasItem;
       }
-      tmp5 = !tmp4;
-      if (tmp4) {
-        let tmp7 = forUserProfile;
-        if (!tmp7) {
-          const migrationData = type.migrationData;
-          let migrationExperimentEnabled;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("ConnectionsHooks");
-          }
-          tmp7 = !migrationExperimentEnabled && type.enabled;
+      tmp6 = !tmp2;
+      if (tmp2) {
+        let tmp8 = forUserProfile;
+        if (!tmp8) {
+          tmp8 = null == type.migrationData && type.enabled;
         }
-        tmp5 = tmp7;
+        tmp6 = tmp8;
       }
     }
-    return tmp5;
+    return tmp6;
   };
 });
 let closure_13 = tmp4;
@@ -252,21 +245,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatforms
     const fn5 = function v(type) {
       return !set2.has(type.type);
     };
-    class E {
+    class A {
       constructor(name) {
         return name.name;
       }
     }
     cResult[11] = fn4;
     cResult[12] = fn5;
-    cResult[13] = E;
+    cResult[13] = A;
     tmp17 = fn5;
     tmp16 = fn4;
-    tmp18 = E;
+    tmp18 = A;
   } else {
     tmp16 = cResult[11];
     tmp17 = cResult[12];
-    class E {
+    class A {
       constructor(name) {
         return name.name;
       }
@@ -275,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatforms
   const sortBy = set(12).sortBy;
   set(12);
   const items1 = [tmp14, tmp15, tmp16, tmp17, tmp18];
-  const arr3 = set(6019);
+  const arr3 = set(6502);
   const sortByResult = sortBy(arr3.filter(tmp8), items1);
   cResult[5] = tmp9;
   cResult[6] = tmp8;

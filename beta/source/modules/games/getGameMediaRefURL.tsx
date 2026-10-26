@@ -1,49 +1,47 @@
-// Module ID: 2033
-// Function ID: 2034
+// Module ID: 2032
+// Function ID: 2033
 // Name: getGameMediaRefURL
-// Dependencies: [2034, 1417, 2038, 2]
-// Exports: default
+// Dependencies: [2033, 1417, 2037, 2]
+// Exports: default, hasGameMediaRef
 
-// Module 2033 (getGameMediaRefURL)
+// Module 2032 (getGameMediaRefURL)
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import StringUtils from "StringUtils" /* 2034 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2038 */;
+import StringUtils from "StringUtils" /* 2033 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2037 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 
-export default function getGameMediaRefURL(id, type, size) {
+export default function getGameMediaRefURL(id, value, size) {
   let format;
   let keepAspectRatio;
-  if (null == type) {
-    return null;
-  } else {
-    type = type.type;
+  let tmp = null != value;
+  if (tmp) {
+    const obj = StringUtils;
+    tmp = !obj.isNullOrEmpty(value.value);
+  }
+  if (tmp) {
+    const type = value.type;
     if ("hash" === type) {
-      let tmp9 = null;
-      const obj2 = StringUtils;
-      if (!obj2.isNullOrEmpty(type.value)) {
-        const obj3 = { id, hash: type.value };
-        const getGameAssetURL = AvatarUtilsDefault.getGameAssetURL;
-        AvatarUtilsDefault;
-        const merged = Object.assign(size);
-        let gameAssetURL = getGameAssetURL(obj3);
-        if (gameAssetURL == null) {
-          gameAssetURL = null;
-        }
-        tmp9 = gameAssetURL;
+      const obj2 = { id, hash: value.value };
+      const getGameAssetURL = AvatarUtilsDefault.getGameAssetURL;
+      AvatarUtilsDefault;
+      const merged = Object.assign(size);
+      let gameAssetURL = getGameAssetURL(obj2);
+      if (gameAssetURL == null) {
+        gameAssetURL = null;
       }
-      return tmp9;
+      return gameAssetURL;
     } else if ("url" === type) {
       size = undefined;
       const getSizedImageAssetURL = ImageProxyUtils.getSizedImageAssetURL;
-      const value = type.value;
+      value = value.value;
       ImageProxyUtils;
       if (size != null) {
         size = size.size;
       }
-      const obj = { size, keepAspectRatio, format };
+      const obj3 = { size, keepAspectRatio, format };
       keepAspectRatio = undefined;
       if (size != null) {
         keepAspectRatio = size.keepAspectRatio;
@@ -52,9 +50,19 @@ export default function getGameMediaRefURL(id, type, size) {
       if (size != null) {
         format = size.format;
       }
-      return getSizedImageAssetURL(value, obj);
+      return getSizedImageAssetURL(value, obj3);
     } else {
       return null;
     }
+  } else {
+    return null;
   }
+};
+export const hasGameMediaRef = function hasGameMediaRef(cover) {
+  let tmp = null != cover;
+  if (tmp) {
+    const obj = StringUtils;
+    tmp = !obj.isNullOrEmpty(cover.value);
+  }
+  return tmp;
 };

@@ -1,16 +1,16 @@
-// Module ID: 18150
-// Function ID: 18151
+// Module ID: 18458
+// Function ID: 18459
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 6298, 21, 18151, 18157, 558, 576, 18171, 4922, 7124, 18172, 18149, 2]
+// Dependencies: [19, 17, 5609, 21, 18459, 18464, 558, 576, 18477, 5037, 5597, 18478, 18457, 2]
 
-// Module 18150 (ActivityPanelUI)
+// Module 18458 (ActivityPanelUI)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4922 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
-import LayerScope2 from "LayerScope" /* 7124 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18149 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18171 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 18172 */;
+import native from "native" /* 5037 */;
+import LayerScope2 from "LayerScope" /* 5597 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18457 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18477 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 18478 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,9 +28,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 18151;
+    tmp4 = 18459;
   } else {
-    tmp4 = 18157;
+    tmp4 = 18464;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -118,10 +118,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivity
     tmp4 = closure_12;
   }, items);
   const obj = { children: items1 };
-  const LayerScope = mode(7124).LayerScope;
+  const LayerScope = mode(5597).LayerScope;
   items1 = [renderActivityPanelSystemUIManager(), ];
   const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-  items1[1] = closure_7(mode(4922).TransitionGroup, obj2);
+  items1[1] = closure_7(mode(5037).TransitionGroup, obj2);
   return closure_8(LayerScope, obj);
 });
 let closure_15 = tmp4;

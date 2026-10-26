@@ -1,26 +1,26 @@
-// Module ID: 17686
-// Function ID: 17687
+// Module ID: 17988
+// Function ID: 17989
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1207, 2068, 2090, 1087, 21, 5191, 587, 558, 576, 5187, 1128, 1202, 11410, 6940, 16268, 16270, 16271, 573, 17687, 5521, 17689, 17690, 17691, 8431, 5128, 6436, 17692, 9859, 17694, 17695, 4901, 17696, 2]
+// Dependencies: [19, 17, 1207, 4823, 4845, 1087, 21, 4971, 587, 558, 576, 5234, 1128, 1202, 11563, 7074, 16567, 16569, 16570, 573, 17989, 5604, 17991, 17992, 17993, 8502, 5669, 6883, 17994, 9957, 17996, 17997, 5660, 17998, 2]
 
-// Module 17686 (GuildRoleSubscriptionPurchasePage)
+// Module 17988 (GuildRoleSubscriptionPurchasePage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11410 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17696 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import LinkingDefault from "Linking" /* 5660 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11563 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17998 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj5) };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     obj5 = { termsURL: null, paidURL: null };
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = map1);
@@ -160,7 +160,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       }
       const obj3 = { style: tmp4.socialBadge, activeOpacity: num, onPress, children: items };
       items = [tmp6, tmp8, tmp11];
-      const tmp18 = authStore3(hasOwnProperty, obj3);
+      const tmp18 = closure_15(hasOwnProperty, obj3);
       cResult[8] = onPress;
       cResult[9] = tmp4.socialBadge;
       cResult[10] = num;
@@ -198,7 +198,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp5Result = null != onPress;
   const obj = { style: tmp.socialBadge, activeOpacity: num, onPress, children: items };
   num = 1;
-  const tmp3 = authStore3;
+  const tmp3 = closure_15;
   const tmp4 = hasOwnProperty;
   if (tmp5Result) {
     num = 0.5;
@@ -573,7 +573,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               items[2] = syncedClientThemes(native.Spacer, { size: 3 });
                               const obj4 = { variant: "text-xs/semibold", color: "text-default", children };
                               items[3] = syncedClientThemes(Text_Text.Text, obj4);
-                              return authStore3(metroRequire, obj);
+                              return closure_15(metroRequire, obj);
                             }
               };
               formatResult = intl2.format(tmp(tmp2[12]).t.A1L1hU, obj7);

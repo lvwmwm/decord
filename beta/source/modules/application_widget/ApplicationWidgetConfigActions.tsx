@@ -1,15 +1,15 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 10787
+// Function ID: 10788
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 11059, 1087, 11060, 569, 1104, 584, 1297, 1257, 2]
+// Dependencies: [5, 10788, 1087, 10789, 569, 1104, 584, 1297, 1257, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 11058 (ApplicationWidgetConfigActions)
+// Module 10787 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11059 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 11060 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10788 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 10789 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 569 */;
 import Dispatcher from "Dispatcher" /* 584 */;

@@ -1,10 +1,10 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 12097
+// Function ID: 12098
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11930, 9548, 11931, 7513, 558, 576, 6466, 5479, 1128, 5139, 2]
+// Dependencies: [5, 32, 19, 21, 12098, 9649, 12099, 5634, 558, 576, 6912, 5244, 1128, 5680, 2]
 // Exports: useCommandRowSend
 
-// Module 11929 (CommandRowButton)
+// Module 12097 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -36,10 +36,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6466).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6912).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5479).Button;
+    const Button = tmp(5244).Button;
     intl = tmp(1128).intl;
     tmp5Result = tmp5(Button, obj2);
   }
@@ -52,10 +52,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6466).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6912).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5479).Button;
+    const Button = tmp4(5244).Button;
     intl = tmp4(1128).intl;
     tmp3Result = tmp3(Button, obj);
   }

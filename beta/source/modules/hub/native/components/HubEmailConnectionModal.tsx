@@ -1,28 +1,28 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13671
+// Function ID: 13672
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 13423, 21, 5191, 6536, 6478, 13433, 1275, 13436, 13443, 13445, 13446, 13447, 13450, 558, 576, 7092, 1505, 13452, 6447, 1128, 6965, 2]
+// Dependencies: [19, 13662, 21, 4971, 5268, 6924, 13672, 1275, 13675, 13682, 13684, 13685, 13686, 13689, 558, 576, 7221, 1505, 13691, 5599, 1128, 7095, 2]
 
-// Module 13432 (HubEmailConnectionModal)
+// Module 13671 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import useInitialValueDefault from "useInitialValue" /* 6447 */;
-import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import Navigator2 from "Navigator" /* 6965 */;
-import HubConstants from "HubConstants" /* 13423 */;
-import HubEmailConnectionStudentPromptDefault from "HubEmailConnectionStudentPrompt" /* 13433 */;
-import HubEmailConnectionContentDefault from "HubEmailConnectionContent" /* 13436 */;
-import HubEmailConnectionWaitlistDefault from "HubEmailConnectionWaitlist" /* 13443 */;
-import HubEmailConnectionSubmitSchoolDefault from "HubEmailConnectionSubmitSchool" /* 13445 */;
-import HubEmailConnectionGuildSelectDefault from "HubEmailConnectionGuildSelect" /* 13446 */;
-import HubEmailConnectionPinVerifyDefault from "HubEmailConnectionPinVerify" /* 13447 */;
-import HubEmailConnectionGuildSelectSearchDefault from "HubEmailConnectionGuildSelectSearch" /* 13450 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13452 */;
+import NavigatorConstants from "NavigatorConstants" /* 5268 */;
+import useInitialValueDefault from "useInitialValue" /* 5599 */;
+import NavigatorHeader from "NavigatorHeader" /* 6924 */;
+import Navigator2 from "Navigator" /* 7095 */;
+import HubConstants from "HubConstants" /* 13662 */;
+import HubEmailConnectionStudentPromptDefault from "HubEmailConnectionStudentPrompt" /* 13672 */;
+import HubEmailConnectionContentDefault from "HubEmailConnectionContent" /* 13675 */;
+import HubEmailConnectionWaitlistDefault from "HubEmailConnectionWaitlist" /* 13682 */;
+import HubEmailConnectionSubmitSchoolDefault from "HubEmailConnectionSubmitSchool" /* 13684 */;
+import HubEmailConnectionGuildSelectDefault from "HubEmailConnectionGuildSelect" /* 13685 */;
+import HubEmailConnectionPinVerifyDefault from "HubEmailConnectionPinVerify" /* 13686 */;
+import HubEmailConnectionGuildSelectSearchDefault from "HubEmailConnectionGuildSelectSearch" /* 13689 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13691 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let navigation;
 
 let obj2;
 let tmp;
-const common_SafeAreaView = tmp(7092);
+const common_SafeAreaView = tmp(7221);
 function getScreens(pop, arg1) {
   let headerBackButton;
   let obj3;

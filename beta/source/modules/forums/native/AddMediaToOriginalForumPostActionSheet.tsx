@@ -1,25 +1,25 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 13095
+// Function ID: 13096
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2068, 7510, 2090, 5532, 1087, 21, 5191, 587, 9999, 8031, 8047, 5155, 9567, 9564, 11, 8026, 9566, 8169, 1297, 12856, 7445, 8515, 5400, 1128, 558, 576, 504, 7130, 8171, 8035, 12857, 5187, 5480, 7118, 2]
+// Dependencies: [32, 5, 19, 17, 4823, 7631, 4845, 6010, 1087, 21, 4971, 587, 10096, 8150, 8166, 5210, 9668, 9665, 11, 8146, 9667, 8287, 1297, 13096, 7566, 8586, 5909, 1128, 558, 576, 504, 7253, 8289, 8154, 13097, 5234, 5245, 5265, 2]
 
-// Module 12855 (AddMediaToOriginalForumPostActionSheet)
+// Module 13095 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
-import Tracking from "Tracking" /* 8171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import DraftStore from "DraftStore" /* 7631 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
+import Tracking from "Tracking" /* 8289 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import MessageStore from "MessageStore" /* 6010 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

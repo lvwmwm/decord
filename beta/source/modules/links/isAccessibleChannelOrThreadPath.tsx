@@ -1,17 +1,17 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 7349
+// Function ID: 7350
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7062, 2068, 2122, 2090, 1087, 2075, 7222, 7227, 7236, 7207, 7239, 7241, 7201, 7242, 7243, 5122, 7244, 7205, 1388, 7289, 7290, 7307, 2]
+// Dependencies: [5, 7191, 4823, 4877, 4845, 1087, 4830, 7345, 7350, 7359, 7330, 7362, 7364, 7324, 7365, 7366, 5200, 7367, 7328, 1388, 7410, 7411, 5605, 2]
 // Exports: default
 
-// Module 7226 (isAccessibleChannelOrThreadPath)
+// Module 7349 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7062 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7191 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 let id, obj13;

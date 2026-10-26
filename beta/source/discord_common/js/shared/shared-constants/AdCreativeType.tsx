@@ -1,11 +1,11 @@
-// Module ID: 6235
-// Function ID: 6236
+// Module ID: 6717
+// Function ID: 6718
 // Name: AdCreativeType
 // Dependencies: [2]
 
-// Module 6235 (AdCreativeType)
+// Module 6717 (AdCreativeType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdCreativeType.tsx");
 
-export const AdCreativeType = { INVALID: 0, [0]: "INVALID", QUEST: 1, [1]: "QUEST", QUEST_HOME_HERO: 2, [2]: "QUEST_HOME_HERO", BOUNTY: 3, [3]: "BOUNTY", NO_FILL: 4, [4]: "NO_FILL" };
+export const AdCreativeType = { INVALID: 0, [0]: "INVALID", QUEST: 1, [1]: "QUEST", QUEST_HOME_HERO: 2, [2]: "QUEST_HOME_HERO", BOUNTY: 3, [3]: "BOUNTY", NO_FILL: 4, [4]: "NO_FILL", PLAYABLE: 5, [5]: "PLAYABLE" };

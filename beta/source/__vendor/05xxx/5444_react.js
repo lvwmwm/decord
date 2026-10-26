@@ -1,19 +1,38 @@
 // Module ID: 5444
 // Function ID: 5445
 // Name: react
-// Dependencies: [19, 21]
+// Dependencies: [19]
+// Exports: useStableCallback
 
 // Module 5444 (react)
 import react from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
+
+let current;
 
 let _window;
+let c2;
+let c3;
 let map;
-({ Fragment: _window, jsx: map } = Fragment);
-const context = react.createContext((children) => {
-  const obj = { children: children.children };
-  return map(React, obj);
-});
+({ useCallback: _window, useEffect: map, useLayoutEffect: c2, useRef: c3 } = react);
 
-export const GHContext = context;
-export const RNSScreensRefContext = react.createContext(null);
+export const useStableCallback = function useStableCallback(arg0) {
+  const _window = arg0;
+  map = _false(undefined);
+  React2(() => {
+    ref.current = current;
+  });
+  const tmp2 = map(() => () => {
+    ref.current = undefined;
+  }, []);
+  return React(() => {
+    const items = [...arguments];
+    current = ref.current;
+    let applyResult;
+    if (current != null) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, items, 0);
+      applyResult = HermesBuiltin.apply(current, items1, tmp2);
+    }
+    return applyResult;
+  }, []);
+};

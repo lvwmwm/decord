@@ -1,20 +1,20 @@
-// Module ID: 18501
-// Function ID: 18502
+// Module ID: 18807
+// Function ID: 18808
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 1087, 9948, 21, 558, 576, 18502, 1267, 18503, 9951, 4903, 18504, 1128, 9969, 2]
+// Dependencies: [19, 1087, 10045, 21, 558, 576, 18808, 1267, 18809, 10048, 5662, 18810, 1128, 10066, 2]
 
-// Module 18501 (InAppReportsFeedbackActionSheet)
+// Module 18807 (InAppReportsFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import Constants2 from "Constants" /* 9948 */;
-import FeedbackUtils from "FeedbackUtils" /* 9951 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 9969 */;
-import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 18502 */;
-import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 18503 */;
-import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 18504 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import Constants2 from "Constants" /* 10045 */;
+import FeedbackUtils from "FeedbackUtils" /* 10048 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10066 */;
+import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 18808 */;
+import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 18809 */;
+import improperGetEnglishIntlMessageText from "improperGetEnglishIntlMessageText" /* 18810 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
   reportId = reportId.reportId;
   const reportType = reportId.reportType;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = reportType(18502)();
+    const tmp6 = reportType(18808)();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = reportId(18504);
+        const tmpResult = reportId(18810);
         const result = tmpResult.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
         cResult[7] = result;
         tmp9 = result;
@@ -97,7 +97,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReports
         }
         return tmp18;
       }
-      const tmp21 = jsx(reportType(9969), { headerLabel: tmp11, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: first, feedbackReasons: tmp17, otherKey: tmp9, trackOpen: tmp7, trackReport: tmp8 });
+      const tmp21 = jsx(reportType(10066), { headerLabel: tmp11, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: first, feedbackReasons: tmp17, otherKey: tmp9, trackOpen: tmp7, trackReport: tmp8 });
       cResult[12] = tmp7;
       cResult[13] = tmp8;
       cResult[14] = tmp21;

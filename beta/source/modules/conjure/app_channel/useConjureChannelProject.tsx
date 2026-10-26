@@ -1,16 +1,16 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 13862
+// Function ID: 13863
 // Name: useConjureChannelProject
-// Dependencies: [19, 2128, 2090, 4845, 6293, 1087, 558, 576, 7222, 504, 10999, 11, 6294, 2]
+// Dependencies: [19, 4883, 4845, 4903, 6773, 1087, 558, 576, 7345, 504, 10720, 11, 6774, 2]
 
-// Module 13640 (useConjureChannelProject)
+// Module 13862 (useConjureChannelProject)
 import Constants from "Constants" /* 1087 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6293 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6773 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 7012
-// Function ID: 7013
+// Module ID: 7141
+// Function ID: 7142
 // Name: FormPhoneOrEmail
-// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 1128, 5187, 6462, 6922, 6896, 6897, 6899, 2]
+// Dependencies: [109, 19, 17, 21, 4971, 587, 558, 576, 1128, 5234, 6908, 7056, 7030, 7031, 7033, 2]
 
-// Module 7012 (FormPhoneOrEmail)
+// Module 7141 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6896 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6922 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Pressables from "Pressables" /* 6908 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 7030 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7056 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -370,7 +370,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormPhoneOrE
     cResult[20] = handleChangeText;
     tmp23 = handleChangeText;
   }
-  const tmpResult = tmp(6922);
+  const tmpResult = tmp(7056);
   const result = tmpResult.shouldShowCountryCodeSelector(tmp7, tmp16);
   cResult[14] = tmp7;
   cResult[15] = tmp16;

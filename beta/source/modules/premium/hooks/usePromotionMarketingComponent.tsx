@@ -1,14 +1,14 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 14731
+// Function ID: 14732
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 7439, 9421, 558, 576, 9460, 9457, 504, 2]
+// Dependencies: [32, 19, 7560, 9520, 558, 576, 9561, 9558, 504, 2]
 
-// Module 14496 (usePromotionMarketingComponent)
-import promotions_constants from "promotions/constants" /* 9457 */;
+// Module 14731 (usePromotionMarketingComponent)
+import constants from "constants" /* 9558 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserOfferStore_mod from "UserOfferStore" /* 7439 */;
-import PromotionsStore from "PromotionsStore" /* 9421 */;
+import UserOfferStore_mod from "UserOfferStore" /* 7560 */;
+import PromotionsStore from "PromotionsStore" /* 9520 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoti
       if (null == marketingComponentByType) {
         return null;
       } else {
-        const promotionByTypeAndId = obj.getPromotionByTypeAndId(promotions_constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
+        const promotionByTypeAndId = obj.getPromotionByTypeAndId(constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
         let trialId;
         if (promotionByTypeAndId != null) {
           trialId = promotionByTypeAndId.trialId;
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoti
       constructor() {
         const getPromotionByTypeAndId = PromotionsStore.getPromotionByTypeAndId;
         let str;
-        const MARKETING_MOMENT = promotions_constants.PromotionTypes.MARKETING_MOMENT;
+        const MARKETING_MOMENT = constants.PromotionTypes.MARKETING_MOMENT;
         if (stateFromStores != null) {
           str = stateFromStores.promotionId;
         }
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoti
       constructor() {
         const getPromotionByTypeAndId = PromotionsStore.getPromotionByTypeAndId;
         let str;
-        const MARKETING_MOMENT = promotions_constants.PromotionTypes.MARKETING_MOMENT;
+        const MARKETING_MOMENT = constants.PromotionTypes.MARKETING_MOMENT;
         if (stateFromStores != null) {
           str = stateFromStores.promotionId;
         }
@@ -311,7 +311,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoti
     if (null == marketingComponentByType) {
       return null;
     } else {
-      const promotionByTypeAndId = obj.getPromotionByTypeAndId(promotions_constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
+      const promotionByTypeAndId = obj.getPromotionByTypeAndId(constants.PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
       let trialId;
       if (promotionByTypeAndId != null) {
         trialId = promotionByTypeAndId.trialId;
@@ -328,7 +328,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoti
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     const getPromotionByTypeAndId = PromotionsStore.getPromotionByTypeAndId;
     let str;
-    const MARKETING_MOMENT = promotions_constants.PromotionTypes.MARKETING_MOMENT;
+    const MARKETING_MOMENT = constants.PromotionTypes.MARKETING_MOMENT;
     if (stateFromStores != null) {
       str = stateFromStores.promotionId;
     }

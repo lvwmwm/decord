@@ -1,11 +1,11 @@
-// Module ID: 11905
-// Function ID: 11906
+// Module ID: 12073
+// Function ID: 12074
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1104, 558, 576, 4797, 8428, 2]
+// Dependencies: [32, 19, 1104, 558, 576, 2049, 8499, 2]
 
-// Module 11905 (useFormattedTimestamp)
+// Module 12073 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1104 */;
-import _modDef4797 from "module_4797" /* 4797 */;
+import _modDef2049 from "module_2049" /* 2049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
         cResult[6] = formatted2;
         tmp9 = formatted2;
       }
-      let TIMESTAMP_FORMATS = tmp(8428).TIMESTAMP_FORMATS;
+      let TIMESTAMP_FORMATS = tmp(8499).TIMESTAMP_FORMATS;
       formatted2 = TIMESTAMP_FORMATS.R(format.parsed);
     } else {
       formatted = format.formatted;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
       let result = 1000 * closure_1_6;
       const _Math = Math;
       const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(_modDef4797()));
+      const absolute = Math.abs(parsed.diff(_modDef2049()));
       let obj = items1[Symbol.iterator]();
       while (obj !== undefined) {
         let tmp14 = _slicedToArray(tmp11, 2);
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
       let result = 1000 * closure_1_6;
       const _Math = Math;
       const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(_modDef4797()));
+      const absolute = Math.abs(parsed.diff(_modDef2049()));
       let obj = items1[Symbol.iterator]();
       while (obj !== undefined) {
         let tmp14 = _slicedToArray(tmp11, 2);

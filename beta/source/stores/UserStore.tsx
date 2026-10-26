@@ -142,11 +142,6 @@ function transformUser(mfa_enabled) {
     mfa_enabled.typingIndicatorStyle = tmp2Result9.parseServerTypingIndicatorStyle(typing_indicator_style);
     delete mfa_enabled["typing_indicator_style"];
   }
-  const vad_colors = mfa_enabled.vad_colors;
-  if (undefined !== vad_colors) {
-    mfa_enabled.vadColors = vad_colors;
-    delete mfa_enabled["vad_colors"];
-  }
   const premium_state = mfa_enabled.premium_state;
   if (undefined !== premium_state) {
     const tmp2Result10 = PremiumStateUtils;

@@ -1,22 +1,23 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18351
+// Function ID: 18352
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2068, 5532, 1392, 21, 5191, 587, 558, 576, 1633, 504, 18046, 18048, 13110, 2]
+// Dependencies: [32, 19, 17, 4823, 6010, 1392, 21, 4971, 587, 558, 576, 1633, 13530, 504, 18352, 18354, 13556, 13348, 2]
 
-// Module 18045 (RestrictedMessageRequestPreview)
+// Module 18351 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13530 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import MessageStore from "MessageStore" /* 6010 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, num;
+let c7, dependencyMap, num, tmp3;
 
 let c10;
 let hasOwnProperty;
@@ -29,7 +30,7 @@ let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, scroll: { flex: 1 }, hidden: { opacity: 0 }, scrollContent: obj3, footer: obj4 };
+let obj = { container: obj2, scroll: { flex: 1 }, hidden: { opacity: 0 }, scrollContent: obj3, scrollContentEmpty: { flexGrow: 1 }, emptyChat: { flex: 1, justifyContent: "center" }, footer: obj4 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
@@ -43,24 +44,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
   let tmp10;
   let tmp11;
   let tmp13;
+  let tmp14;
   let tmp15;
-  let tmp16;
-  let tmp19;
+  let tmp20;
   let tmp21;
   let tmp22;
   let tmp24;
   let tmp25;
   const tmp = channelId;
-  const obj = channelId(576);
-  const cResult = obj.c(47);
+  let obj = channelId(576);
+  const cResult = obj.c(55);
   channelId = channelId.channelId;
   let tmp4 = closure_12();
+  let obj2 = react;
   const bottom = ref(1633)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
-  const tmp6 = first(react.useState(false), 2);
+  let tmp6 = first(react.useState(false), 2);
   first = tmp6[0];
-  const obj2 = react;
   react = tmp6[1];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MessageStore];
@@ -70,70 +71,151 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
     first1 = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function v() {
-      return MessageStore.getMessages(channelId).length > 0;
-    };
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
     const items1 = [channelId];
     cResult[1] = channelId;
-    cResult[2] = fn;
+    cResult[2] = S;
     cResult[3] = items1;
     tmp11 = items1;
-    tmp10 = fn;
+    tmp10 = S;
   } else {
-    tmp10 = cResult[2];
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
     tmp11 = cResult[3];
   }
   const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first1, tmp10, tmp11);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first1, tmp10, tmp11);
+  const hasMessages = stateFromStoresObject.hasMessages;
+  const isEmpty = stateFromStoresObject.isEmpty;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ChannelStore];
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
+    const items2 = [c7];
     cResult[4] = items2;
     tmp13 = items2;
   } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] !== channelId) {
-    const fn2 = function w() {
-      return ChannelStore.getChannel(channelId);
-    };
-    const items3 = [channelId];
-    cResult[5] = channelId;
-    cResult[6] = fn2;
-    cResult[7] = items3;
-    tmp16 = items3;
-    tmp15 = fn2;
-  } else {
-    tmp15 = cResult[6];
-    tmp16 = cResult[7];
-  }
-  const tmpResult3 = tmp(504);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp13, tmp15, tmp16);
-  let first2;
-  if (stateFromStores1 != null) {
-    const recipients = stateFromStores1.recipients;
-    if (recipients != null) {
-      first2 = recipients[0];
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
     }
   }
+  if (cResult[5] !== channelId) {
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
+    const items3 = [channelId];
+    cResult[5] = channelId;
+    cResult[6] = tmp16;
+    cResult[7] = items3;
+    tmp15 = items3;
+    tmp14 = tmp16;
+  } else {
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
+    tmp15 = cResult[7];
+  }
+  const tmpResult3 = tmp(504);
+  const stateFromStores = tmpResult3.useStateFromStores(tmp13, tmp14, tmp15);
+  if (stateFromStores != null) {
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
+    if (tmp19 != null) {
+      class S {
+        constructor() {
+          messages = closure_8.getMessages(channelId);
+          obj = { hasMessages: messages.length > 0, isEmpty: null };
+          obj2 = closure_0(closure_2[12]);
+          obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+          return obj;
+        }
+      }
+    }
+  }
+  c7 = tmp18;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
     const items4 = [UserStore];
     cResult[8] = items4;
-    tmp19 = items4;
+    tmp20 = items4;
   } else {
-    tmp19 = cResult[8];
+    class S {
+      constructor() {
+        messages = closure_8.getMessages(channelId);
+        obj = { hasMessages: messages.length > 0, isEmpty: null };
+        obj2 = closure_0(closure_2[12]);
+        obj.isEmpty = obj2.isEmptyLoadedChat(messages);
+        return obj;
+      }
+    }
   }
-  if (cResult[9] !== first2) {
+  if (cResult[9] !== undefined) {
     class A {
       constructor() {
-        let user;
-        if (null != first2) {
-          user = UserStore.getUser(tmp);
+        user = undefined;
+        if (null != closure_7) {
+          tmp3 = closure_9;
+          user = closure_9.getUser(tmp);
         }
         return user;
       }
     }
-    const items5 = [first2];
-    cResult[9] = first2;
+    const items5 = [undefined];
+    cResult[9] = undefined;
     cResult[10] = A;
     cResult[11] = items5;
     tmp22 = items5;
@@ -141,9 +223,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
   } else {
     class A {
       constructor() {
-        let user;
-        if (null != first2) {
-          user = UserStore.getUser(tmp);
+        user = undefined;
+        if (null != closure_7) {
+          tmp3 = closure_9;
+          user = closure_9.getUser(tmp);
         }
         return user;
       }
@@ -151,9 +234,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
     tmp22 = cResult[11];
   }
   const tmpResult4 = tmp(504);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp19, tmp21, tmp22);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp20, tmp21, tmp22);
   if (cResult[12] !== first) {
-    class U {
+    class G {
       constructor() {
         if (closure_3) {
           return;
@@ -161,19 +244,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => closure_1_4(true), 1000);
-          return () => clearTimeout(closure_0);
+          closure_0 = setTimeout(() => { /* body not rendered: F155742 */ }, 1000);
+          return () => { /* body not rendered: F155743 */ };
         }
       }
     }
     const items6 = [first];
     cResult[12] = first;
-    cResult[13] = U;
+    cResult[13] = G;
     cResult[14] = items6;
     tmp25 = items6;
-    tmp24 = U;
+    tmp24 = G;
   } else {
-    class U {
+    class G {
       constructor() {
         if (closure_3) {
           return;
@@ -181,16 +264,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => closure_1_4(true), 1000);
-          return () => clearTimeout(closure_0);
+          closure_0 = setTimeout(() => { /* body not rendered: F155742 */ }, 1000);
+          return () => { /* body not rendered: F155743 */ };
         }
       }
     }
     tmp25 = cResult[14];
   }
   const effect = obj2.useEffect(tmp24, tmp25);
-  if (null != stateFromStores1) {
-    class U {
+  if (null != stateFromStores) {
+    class G {
       constructor() {
         if (closure_3) {
           return;
@@ -198,41 +281,54 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => closure_1_4(true), 1000);
-          return () => clearTimeout(closure_0);
+          closure_0 = setTimeout(() => { /* body not rendered: F155742 */ }, 1000);
+          return () => { /* body not rendered: F155743 */ };
         }
       }
     }
   }
   return null;
 }) : (function RestrictedMessageRequestPreview(channelId) {
+  let c5;
   let closure_4;
+  let isEmpty;
   let items10;
+  let items11;
   let items7;
   let items8;
   let items9;
-  let obj10;
+  let obj11;
   channelId = channelId.channelId;
   let ref;
   let first;
   react = undefined;
+  c5 = undefined;
+  isEmpty = undefined;
+  let first1;
   const tmp = closure_12();
+  let obj = react;
   const bottom = ref(1633)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
   first = tmp5[0];
-  const obj = react;
   react = tmp5[1];
+  let obj2 = channelId(504);
   const items = [MessageStore];
   const items1 = [channelId];
-  const obj2 = channelId(504);
-  let closure_5 = obj2.useStateFromStores(items, () => MessageStore.getMessages(channelId).length > 0, items1);
-  const items2 = [ChannelStore];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    let obj2;
+    const messages = MessageStore.getMessages(channelId);
+    const obj = { hasMessages: messages.length > 0, isEmpty: obj2.isEmptyLoadedChat(messages) };
+    obj2 = useIsEmptyMessageRequestChat;
+    return obj;
+  }, items1);
+  ({ hasMessages: c5, isEmpty } = stateFromStoresObject);
+  const items2 = [first1];
   const items3 = [channelId];
   const obj3 = channelId(504);
   const stateFromStores = obj3.useStateFromStores(items2, () => ChannelStore.getChannel(channelId), items3);
-  let first1;
+  first1 = undefined;
   const tmp7 = channelId;
   if (stateFromStores != null) {
     const recipients = stateFromStores.recipients;
@@ -259,14 +355,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       return () => clearTimeout(closure_0);
     }
   }, items6);
-  let tmp13Result = null;
+  let tmp14Result = null;
   if (null != stateFromStores) {
-    tmp13Result = null;
+    tmp14Result = null;
     if (null != stateFromStores1) {
       const obj5 = {
         ref,
         style: items7,
-        contentContainerStyle: tmp.scrollContent,
+        contentContainerStyle: items8,
         onScrollBeginDrag() {
               ref.current = true;
             },
@@ -277,37 +373,56 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
                   current.scrollToEnd({ animated: false });
                 }
               }
-              const tmp4 = !first && closure_5;
-              if (tmp4) {
+              let tmp4 = first;
+              if (!tmp4) {
+                tmp4 = !c5 && !isEmpty;
+                const tmp6 = !c5 && !isEmpty;
+              }
+              if (!tmp4) {
                 const _requestAnimationFrame = requestAnimationFrame;
                 const animationFrame = requestAnimationFrame(() => closure_1_4(true));
               }
             },
-        children: items8
+        children: items9
       };
       items7 = [tmp.scroll, ];
       let hidden = null;
-      const obj4 = { style: tmp.container, children: items9 };
-      const tmp15 = closure_5;
+      const obj4 = { style: tmp.container, children: items10 };
+      const tmp16 = c5;
       if (!first) {
-        hidden = tmp.hidden;
+        hidden = null;
+        if (!isEmpty) {
+          hidden = tmp.hidden;
+        }
       }
       items7[1] = hidden;
+      items8 = [tmp.scrollContent, ];
+      let scrollContentEmpty = null;
+      if (isEmpty) {
+        scrollContentEmpty = tmp.scrollContentEmpty;
+      }
+      items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(18046), obj6), ];
+      items9 = [closure_10(tmp2(18352), obj6), , ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(18048), obj7);
-      items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(13110), obj10) };
-      items10 = [tmp.footer, ];
-      items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
-      obj10 = { channel: stateFromStores };
-      const obj9 = { paddingBottom: ref(587).space.PX_8 + bottom };
-      items9[1] = closure_10(first1, obj8);
-      tmp13Result = tmp13(tmp14, obj4);
+      items9[1] = closure_10(ref(18354), obj7);
+      let tmp19Result = null;
+      if (isEmpty) {
+        const obj8 = { style: tmp.emptyChat };
+        tmp19Result = tmp19(tmp2(13556), obj8);
+      }
+      items9[2] = tmp19Result;
+      items10 = [closure_11(tmp16, obj5), ];
+      const obj9 = { style: items11, children: closure_10(ref(13348), obj11) };
+      items11 = [tmp.footer, ];
+      items11[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
+      const obj10 = { paddingBottom: ref(587).space.PX_8 + bottom };
+      obj11 = { channel: stateFromStores };
+      items10[1] = closure_10(isEmpty, obj9);
+      tmp14Result = tmp14(tmp15, obj4);
     }
   }
-  return tmp13Result;
+  return tmp14Result;
 });
 const result = size.fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
 

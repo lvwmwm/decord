@@ -1,18 +1,18 @@
-// Module ID: 10611
-// Function ID: 10612
+// Module ID: 10831
+// Function ID: 10832
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 5191, 558, 576, 1202, 10612, 5477, 587, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 1202, 10832, 5977, 587, 2]
 
-// Module 10611 (InstantInviteCreator)
+// Module 10831 (InstantInviteCreator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Stack_Stack from "Stack/Stack" /* 5477 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10612 */;
+import Stack_Stack from "Stack/Stack" /* 5977 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10832 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp5 = tmp18;
           }
           const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_8, children: items };
-          const Stack = tmp(5477).Stack;
+          const Stack = tmp(5977).Stack;
           items = [tmp8, tmp14];
           const tmp21 = hasOwnProperty(Stack, obj3);
           cResult[11] = tmp8;

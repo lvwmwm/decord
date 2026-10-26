@@ -1,13 +1,13 @@
-// Module ID: 11970
-// Function ID: 11971
+// Module ID: 12138
+// Function ID: 12139
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [558, 576, 11260, 11971, 11220, 2]
+// Dependencies: [558, 576, 11403, 12139, 11394, 2]
 
-// Module 11970 (useShowTryItOutButtonInAppLauncher)
+// Module 12138 (useShowTryItOutButtonInAppLauncher)
 import react from "react" /* 576 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11220 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11260 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11971 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11394 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11403 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12139 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

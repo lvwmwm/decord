@@ -1,24 +1,24 @@
-// Module ID: 10453
-// Function ID: 10454
+// Module ID: 10549
+// Function ID: 10550
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7208, 1394, 1087, 1089, 8581, 21, 587, 5191, 558, 576, 9259, 9271, 10454, 10458, 7130, 7155, 1267, 8577, 10402, 10459, 5073, 4904, 1128, 7529, 13646, 5057, 5187, 13671, 13676, 2]
+// Dependencies: [5, 19, 17, 7331, 1394, 1087, 1089, 8672, 21, 587, 4971, 558, 576, 9357, 9369, 10550, 10554, 7253, 7278, 1267, 8668, 10498, 10555, 5151, 5663, 1128, 7649, 13875, 5025, 5234, 13900, 13905, 2]
 
-// Module 10453 (PremiumGiftWishlistBanner)
+// Module 10549 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7208 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import Constants2 from "Constants" /* 8581 */;
-import useWishlistHooks from "useWishlistHooks" /* 9271 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10458 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7331 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import Constants2 from "Constants" /* 8672 */;
+import useWishlistHooks from "useWishlistHooks" /* 9369 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10554 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -366,7 +366,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                             cResult[40] = tmp40;
                             tmp37 = tmp40;
                           }
-                          const obj14 = { style: tmp27.title, variant: "text-lg/semibold", children: tmp23 };
+                          const obj14 = { style: tmp27.title, variant: "text-lg/semibold", accessibilityRole: "header", children: tmp23 };
                           const tmp36 = closure_14(tmp(tmp2[29]).Text, obj14);
                           cResult[35] = tmp27.title;
                           cResult[36] = tmp23;
@@ -848,7 +848,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
       tmp16 = memo[WISHLIST_IN_DM_LENGTH_MOBILE - 1];
     }
     closure_15 = tmp16;
-    let obj6 = { style: tmp12.title, variant: "text-lg/semibold", children: title };
+    let obj6 = { style: tmp12.title, variant: "text-lg/semibold", accessibilityRole: "header", children: title };
     const items5 = [closure_14(tmp(tmp2[29]).Text, obj6), , ];
     let obj7 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-muted", children: subtitle };
     items5[1] = closure_14(tmp(tmp2[29]).Text, obj7);

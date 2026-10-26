@@ -1,17 +1,17 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15838
+// Function ID: 15839
 // Name: useOpenChangeBannerActionSheet
-// Dependencies: [19, 5155, 15610, 2002, 8565, 8562, 15621, 15621, 2]
+// Dependencies: [19, 5210, 15839, 2002, 8656, 8653, 15850, 15850, 2]
 // Exports: default
 
-// Module 15609 (useOpenChangeBannerActionSheet)
+// Module 15838 (useOpenChangeBannerActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const UserProfileActionCreators = tmp3(8565);
+const UserProfileActionCreators = tmp3(8656);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useOpenChangeBannerActionSheet.tsx");
 
 export default function useOpenChangeBannerActionSheet(user) {
@@ -51,7 +51,7 @@ export default function useOpenChangeBannerActionSheet(user) {
       }
     };
     items = analyticsLocations;
-    const tmp4 = asyncRequire(15610, dependencyMap.paths);
+    const tmp4 = asyncRequire(15839, dependencyMap.paths);
     if (analyticsLocations == null) {
       items = [];
     }

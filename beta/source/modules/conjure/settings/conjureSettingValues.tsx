@@ -1,10 +1,11 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 10810
+// Function ID: 10811
 // Name: conjureSettingValues
-// Dependencies: [2]
-// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual
+// Dependencies: [32, 2]
+// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual, mergeSubmittedSettingValues
 
-// Module 11664 (conjureSettingValues)
+// Module 10810 (conjureSettingValues)
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingValues.tsx");
@@ -15,19 +16,19 @@ export const conjureSettingSubmitValue = function conjureSettingSubmitValue(foun
       return num;
     } else {
       const _String2 = String;
-      const str5 = String(num);
-      const str6 = str5.trim();
-      if ("" === str6) {
+      const str6 = String(num);
+      const str7 = str6.trim();
+      if ("" === str7) {
         return null;
       } else {
         const _Number = Number;
-        const NumberResult = Number(str6.replace(",", "."));
+        const NumberResult = Number(str7.replace(",", "."));
         const _Number2 = Number;
-        let tmp5;
+        let tmp4;
         if (Number.isFinite(NumberResult)) {
-          tmp5 = NumberResult;
+          tmp4 = NumberResult;
         }
-        return tmp5;
+        return tmp4;
       }
     }
   } else if (true === found.multiple) {
@@ -39,11 +40,18 @@ export const conjureSettingSubmitValue = function conjureSettingSubmitValue(foun
       const parts = str.split(/[\s,]+/);
       found = parts.filter((item) => "" !== item);
     }
-    let tmp3 = null;
-    if (0 !== found.length) {
-      tmp3 = found;
+    if (0 === found.length) {
+      let items = null;
+      if ("game" === found.type) {
+        const _Array2 = Array;
+        items = null;
+        if (Array.isArray(num)) {
+          items = [];
+        }
+      }
+      found = items;
     }
-    return tmp3;
+    return found;
   } else {
     let tmp;
     if (typeof num !== "string") {
@@ -101,4 +109,28 @@ export const conjureSecretsSubmission = function conjureSecretsSubmission(memo, 
     const merged = Object.assign(obj4);
     return obj;
   }
+};
+export const mergeSubmittedSettingValues = function mergeSubmittedSettingValues(values, values2) {
+  let tmp7;
+  let tmp8;
+  let obj = values2;
+  const obj3 = {};
+  const merged = Object.assign(values);
+  const _Object = Object;
+  if (values2 == null) {
+    obj = {};
+  }
+  const entries1 = entries(obj);
+  const tmp3 = entries1[Symbol.iterator]();
+  while (tmp3 !== undefined) {
+    let tmp6 = _slicedToArray(tmp4, 2);
+    [tmp7, tmp8] = tmp6;
+    if (null == tmp8) {
+      delete obj2[tmp7];
+    } else {
+      obj3[tmp7] = tmp9;
+    }
+    continue;
+  }
+  return obj3;
 };

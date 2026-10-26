@@ -1,10 +1,10 @@
-// Module ID: 10892
-// Function ID: 10893
+// Module ID: 11112
+// Function ID: 11113
 // Name: TenureBadgeWithheldStateExperiment
 // Dependencies: [1455, 2]
 // Exports: shouldShowWithheldTenureBadge
 
-// Module 10892 (TenureBadgeWithheldStateExperiment)
+// Module 11112 (TenureBadgeWithheldStateExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

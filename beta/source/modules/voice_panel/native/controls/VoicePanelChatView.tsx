@@ -1,26 +1,26 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 13163
+// Function ID: 13164
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 10678, 1087, 21, 5191, 5205, 558, 576, 1123, 12921, 1128, 10562, 10679, 4945, 10529, 7039, 9608, 1499, 1633, 12924, 7290, 5068, 12925, 10671, 5459, 4922, 11101, 2]
+// Dependencies: [19, 17, 10898, 1087, 21, 4971, 5710, 558, 576, 1123, 13161, 1128, 10658, 10899, 5052, 10625, 7168, 9708, 1499, 1633, 13164, 7411, 5146, 13165, 10891, 5968, 5037, 11225, 2]
 
-// Module 12923 (VoicePanelChatView)
+// Module 13163 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7039 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10529 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10562 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12921 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7168 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10658 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10899 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13161 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,44 +1,47 @@
 // Module ID: 5924
 // Function ID: 5925
-// Dependencies: [1341, 1311, 1468]
+// Dependencies: [19, 17, 5922]
+// Exports: useRenderDebugInfo
 
 // Module 5924
-import hasNativeSymbols from "hasNativeSymbols" /* 1311 */;
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1341 */;
-import regexTester from "regexTester" /* 1468 */;
+import react_native from "react-native" /* 17 */;
+import _mod5922 from "module_5922" /* 5922 */;
+import react from "react" /* 19 */;
 
-let closure_0 = callBoundIntrinsic("Object.prototype.toString");
-if (hasNativeSymbols()) {
-  let closure_1 = callBoundIntrinsic("Symbol.prototype.toString");
-  let closure_2 = regexTester(/^Symbol\(.*\)$/);
-  module.exports = function isSymbol(obj) {
-    function isRealSymbolObject(arg0) {
-      const valueOfResult = arg0.valueOf();
-      let tmp2 = typeof valueOfResult === "symbol";
-      if (typeof valueOfResult === "symbol") {
-        tmp2 = closure_1_2(closure_1_1(arg0));
+const require = globalThis.__r;
+let _require;
+
+const findNodeHandle = react_native.findNodeHandle;
+
+export const useRenderDebugInfo = function useRenderDebugInfo(arg0) {
+  let closure_0;
+  let ref1;
+  _require = arg0;
+  const ref = ref1.useRef(null);
+  ref1 = ref1.useRef(-1);
+  let closure_3 = ref1.useEffectEvent((arg0) => {
+    const current = ref1.current;
+    const RNSLog = _mod5922.RNSLog;
+    RNSLog.log("" + closure_0 + " [" + current + "] " + arg0);
+  });
+  const effect = ref1.useEffect(() => {
+    if (null != ref.current) {
+      let num = findNodeHandle(tmp.current);
+      if (num == null) {
+        num = -1;
       }
-      return tmp2;
-    }
-    if (typeof obj === "symbol") {
-      return true;
-    } else {
-      if (obj) {
-        if (typeof obj === "object") {
-          if ("[object Symbol]" === closure_0(obj)) {
-            try {
-              return isRealSymbolObject(obj);
-            } catch (err) {
-              return false;
-            }
-          }
-        }
+      ref1.current = num;
+      if (-1 === ref1.current) {
+        closure_3("failed to find node handle");
       }
-      return false;
     }
-  };
-} else {
-  module.exports = function isSymbol(arg0) {
-    return false;
-  };
-}
+    closure_3("mounted");
+    return () => {
+      closure_1_3("unmounted");
+    };
+  }, []);
+  let current = ref1.current;
+  let RNSLog = require("module_5922").RNSLog;
+  RNSLog.log("" + arg0 + " [" + current + "] " + "rendered");
+  return ref;
+};

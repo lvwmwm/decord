@@ -1,17 +1,17 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16522
+// Function ID: 16523
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 16141, 16224, 16225, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 16445, 16523, 16524, 2]
 
-// Module 16223 (QuestBarPreview)
+// Module 16522 (QuestBarPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16141 */;
-import reactDefault from "react" /* 16224 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16445 */;
+import reactDefault from "react" /* 16523 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBarPr
     if (isVisible) {
       let tmp6;
       if (cResult[0] !== quest) {
-        const QuestDockExternalCoordinationContextProvider = tmp(16141).QuestDockExternalCoordinationContextProvider;
+        const QuestDockExternalCoordinationContextProvider = tmp(16445).QuestDockExternalCoordinationContextProvider;
         const Provider = reactDefault.Provider;
         const tmp10 = <QuestDockExternalCoordinationContextProvider>{null}</QuestDockExternalCoordinationContextProvider>;
         cResult[0] = quest;

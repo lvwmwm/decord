@@ -1,10 +1,10 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9753
+// Function ID: 9754
 // Name: useSelectedConversation
-// Dependencies: [9638, 558, 576, 504, 2]
+// Dependencies: [9737, 558, 576, 504, 2]
 
-// Module 9654 (useSelectedConversation)
-import SelectedConversationStore from "SelectedConversationStore" /* 9638 */;
+// Module 9753 (useSelectedConversation)
+import SelectedConversationStore from "SelectedConversationStore" /* 9737 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

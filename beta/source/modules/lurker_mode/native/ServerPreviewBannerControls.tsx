@@ -1,21 +1,21 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17606
+// Function ID: 17607
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7329, 7840, 6483, 1128, 17306, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 7449, 7959, 6929, 1128, 17607, 2]
 
-// Module 17305 (ServerPreviewBannerControls)
+// Module 17606 (ServerPreviewBannerControls)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6483 */;
-import transitionToGuild from "transitionToGuild" /* 7329 */;
-import IconButton2 from "IconButton" /* 7840 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 17306 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6929 */;
+import transitionToGuild from "transitionToGuild" /* 7449 */;
+import IconButton2 from "IconButton" /* 7959 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 17607 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerPrev
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "md", variant: "secondary-overlay", icon: AssetRegistryDefault, onPress: first, accessibilityLabel: intl.string(intl2.t["13/7kX"]), maxFontSizeMultiplier: 1.5 };
-    const IconButton = tmp(7840).IconButton;
+    const IconButton = tmp(7959).IconButton;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(IconButton, obj2);
     const tmp11 = metroRequire(ServerPreviewPillDefault, {});

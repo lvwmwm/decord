@@ -1,14 +1,14 @@
-// Module ID: 18375
-// Function ID: 18376
+// Module ID: 18676
+// Function ID: 18677
 // Name: useLaunchPadAnimatedStyles
-// Dependencies: [11080, 1384, 5191, 558, 576, 11699, 12340, 1633, 4945, 5478, 2]
+// Dependencies: [11204, 1384, 4971, 558, 576, 11864, 12536, 1633, 5052, 5247, 2]
 
-// Module 18375 (useLaunchPadAnimatedStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import spring from "spring" /* 5478 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11080 */;
+// Module 18676 (useLaunchPadAnimatedStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import spring from "spring" /* 5247 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11204 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

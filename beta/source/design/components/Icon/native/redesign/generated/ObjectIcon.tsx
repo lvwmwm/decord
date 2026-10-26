@@ -1,14 +1,14 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9969
+// Function ID: 9970
 // Name: ObjectIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9872, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9970, 5668, 2]
 
-// Module 9871 (ObjectIcon)
+// Module 9969 (ObjectIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 9872 */;
+import BaseIconImage2 from "BaseIconImage" /* 5668 */;
+import AssetRegistry from "AssetRegistry" /* 9970 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObjectIcon
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5668).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

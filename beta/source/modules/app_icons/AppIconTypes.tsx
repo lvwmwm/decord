@@ -1,14 +1,14 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9866
+// Function ID: 9867
 // Name: AppIconTypes
 // Dependencies: [2]
 
-// Module 9768 (AppIconTypes)
+// Module 9866 (AppIconTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { DEFAULT: "AppIcon" };
 const obj2 = { BRAND_DARK: "BrandDarkIcon", BRAND_INVERTED: "BrandInvertedIcon", MATTE_LIGHT: "MatteLightIcon", MATTE_DARK: "MatteDarkIcon", PASTEL: "PastelIcon", PIRATE: "PirateIcon", CAMO: "CamoIcon", SUNSET: "SunsetIcon", GALAXY: "GalaxyIcon", Y2K: "Y2KIcon", CHERRY_BLOSSOM: "CherryBlossomIcon", BEANIE: "BeanieIcon", GAMING: "GamingIcon", CIRCUIT: "CircuitIcon", HOLO_WAVES: "HoloWavesIcon", BLUSH: "BlushIcon", ANGRY: "AngryIcon", MANGA: "MangaIcon", CONTROLLER: "ControllerIcon", MUSHROOM: "MushroomIcon", BLURPLE_TWILIGHT: "BlurpleTwilightIcon", IN_RAINBOWS: "InRainbowsIcon", COLOR_WAVE: "ColorWaveIcon", MIDNIGHT_PRISM: "MidnightPrismIcon" };
-const obj3 = { DRIP: "DripIcon", SLIMY: "SlimyIcon", ZOMBIE: "ZombieIcon", CLYDE_STEIN: "ClydeSteinIcon" };
+const obj3 = { DRIP: "DripIcon", SLIMY: "SlimyIcon", ZOMBIE: "ZombieIcon", CLYDE_STEIN: "ClydeSteinIcon", HEXAGON: "HexagonIcon" };
 const obj4 = {};
 const merged = Object.assign(obj);
 const merged1 = Object.assign(obj2);

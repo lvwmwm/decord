@@ -1,12 +1,12 @@
-// Module ID: 11012
-// Function ID: 11013
+// Module ID: 10737
+// Function ID: 10738
 // Name: conjureLiveReloadConnection
-// Dependencies: [584, 10998, 2]
+// Dependencies: [584, 10719, 2]
 // Exports: sendLiveReload
 
-// Module 11012 (conjureLiveReloadConnection)
+// Module 10737 (conjureLiveReloadConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,7 +15,7 @@ let obj = {
     let phase;
     let step;
     projectId = projectId.projectId;
-    const obj = { type: "CONJURE_LIVE_RELOAD_SET", projectId, enabled: enabled.enabled, error, phase, step };
+    const obj = { type: "CONJURE_LIVE_RELOAD_SET", projectId, enabled: enabled.enabled, error, phase, step, background: true === enabled.background };
     error = enabled.error;
     const dispatch = DispatcherDefault.dispatch;
     DispatcherDefault;

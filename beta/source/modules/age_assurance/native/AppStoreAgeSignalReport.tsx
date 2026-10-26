@@ -1,21 +1,21 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 8086
+// Function ID: 8087
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1392, 2001, 1087, 7963, 7812, 1257, 1384, 7959, 7960, 1267, 6177, 5220, 2]
-// Exports: beginAppStoreAgeSignalReport, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
+// Dependencies: [32, 5, 1392, 2001, 1087, 8082, 7931, 1257, 1384, 8078, 8079, 1267, 5644, 5722, 2]
+// Exports: beginAppStoreAgeSignalReport, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 18613 (AppStoreAgeSignalReport)
+// Module 8086 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7812 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7931 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c5, c6, closure_12, dependencyMap, importDefault;
+let _require, c0, c1, c2, c5, c6, closure_12, dependencyMap, importDefault;
 
 let metroImportAll;
 let metroImportDefault;
@@ -308,6 +308,7 @@ obj = function _settleAppStoreAgeSignalReport() {
   });
   return obj(...arguments);
 };
+let _asyncToGenerator = _asyncToGenerator_mod;
 ({ AnalyticEvents: metroImportDefault, AppStates: metroImportAll } = Constants);
 let c9 = false;
 let c10 = null;
@@ -316,6 +317,138 @@ let c12 = null;
 let c13 = 0;
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalReport.tsx");
 
+export const queueAppStoreAgeSignalSubmit = function queueAppStoreAgeSignalSubmit(arg0) {
+  let closure_4;
+  function settle() {
+    return obj(...arguments);
+  }
+  let closure_0 = arg0;
+  obj = function _settle() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c2 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_0 = tmp3;
+              const items = [closure_2_2];
+              c1 = 1;
+              c2 = 1;
+              const obj4 = { value: Promise.allSettled(items), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            if (c12 === closure_128_4) {
+              c12 = null;
+            }
+            c2 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp10) {
+          c2 = 3;
+          throw tmp10;
+        }
+      }
+    });
+    return obj(...arguments);
+  };
+  let closure_1 = closure_12;
+  const tmp = (async (arg0, value) => {
+    if (c2 === 2) {
+      c2 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_0 = tmp3;
+            if (null != closure_1) {
+              c1 = 1;
+              c2 = 1;
+              const obj4 = { value: tmp4, done: false };
+              return obj4;
+            }
+          }
+        } else if (1 === c1) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c2 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          c2 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c1 = 2;
+        c2 = 1;
+        const obj7 = { value: closure_128_0(), done: false };
+        return obj7;
+      } catch (tmp8) {
+        c2 = 3;
+        throw tmp8;
+      }
+    }
+  })();
+  let closure_2 = tmp;
+  const tmp2 = settle();
+  _asyncToGenerator = tmp2;
+  closure_12 = tmp2;
+  return tmp;
+};
 export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalReport() {
   let closure_0;
   let closure_2;
@@ -330,7 +463,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp4 = _require;
     if (result) {
-      const tmp4Result = tmp4(6177);
+      const tmp4Result = tmp4(5644);
       result = tmp4Result.shouldCollectAppStoreSignal();
     }
     tmp3 = result;
@@ -475,7 +608,7 @@ export const resumeAppStoreAgeSignalReport = function resumeAppStoreAgeSignalRep
       let result = obj.isAppStoreAgeSignalSupported();
       const tmp2 = require;
       if (result) {
-        const tmp2Result = tmp2(6177);
+        const tmp2Result = tmp2(5644);
         result = tmp2Result.shouldCollectAppStoreSignal();
       }
       tmp5 = result;

@@ -1,17 +1,17 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16442
+// Function ID: 16443
 // Name: QuestDockGestureContext
-// Dependencies: [19, 16135, 6228, 16137, 21, 7040, 1499, 4945, 16139, 16136, 12341, 2]
+// Dependencies: [19, 16439, 6710, 16441, 21, 7169, 1499, 5052, 16443, 1633, 16440, 12537, 2]
 
-// Module 16138 (QuestDockGestureContext)
+// Module 16442 (QuestDockGestureContext)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12341 */;
-import QuestDockConstants from "QuestDockConstants" /* 16137 */;
+import QuestConstants from "QuestConstants" /* 6710 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12537 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16135 */;
+import QuestDockStore from "QuestDockStore" /* 16439 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7040 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7169 */;
 import size_mod from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;
@@ -23,7 +23,9 @@ const createContext = react.createContext;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = createContext(obj);
 const memoResult = react.memo(function QuestDockGestureContextProviderInner(children) {
-  let obj6;
+  let left;
+  let obj7;
+  let right;
   let sharedValue;
   let sharedValue2;
   let sharedValue3;
@@ -35,16 +37,19 @@ const memoResult = react.memo(function QuestDockGestureContextProviderInner(chil
   sharedValue = obj2.useSharedValue(size1);
   const obj4 = sharedValue(sharedValue2[8]);
   const youBarHorizontalMargin = obj4.useYouBarHorizontalMargin();
-  const size2 = { width: obj6.getQuestDockCollapsedWidth(size.width, youBarHorizontalMargin, youBarHorizontalMargin), height, x: 0, y: -8, prevDeltaY: 0 };
+  const obj5 = sharedValue(sharedValue2[9]);
+  const safeAreaInsets = obj5.getSafeAreaInsets();
+  ({ left, right } = safeAreaInsets);
+  const size2 = { width: obj7.getQuestDockCollapsedWidth(size.width, left, right, youBarHorizontalMargin), height, x: 0, y: -8, prevDeltaY: 0 };
   const useSharedValue = sharedValue(sharedValue2[7]).useSharedValue;
   sharedValue(sharedValue2[7]);
-  obj6 = sharedValue(sharedValue2[9]);
+  obj7 = sharedValue(sharedValue2[10]);
   const sharedValue1 = useSharedValue(size2);
   const useSharedValue2 = sharedValue(sharedValue2[7]).useSharedValue;
   sharedValue(sharedValue2[7]);
-  const obj7 = sharedValue(sharedValue2[9]);
+  const obj8 = sharedValue(sharedValue2[10]);
   const tmp2 = sharedValue2;
-  sharedValue2 = useSharedValue2(obj7.isSoftDismissed(QuestDockStore.questDockSoftDismissedAt) ? tmp8.SOFT_DISMISSED : tmp8.COLLAPSED);
+  sharedValue2 = useSharedValue2(obj8.isSoftDismissed(QuestDockStore.questDockSoftDismissedAt) ? tmp9.SOFT_DISMISSED : tmp9.COLLAPSED);
   const tmpResult = tmp(tmp2[7]);
   sharedValue3 = tmpResult.useSharedValue(expandedHeight);
   const items = [sharedValue];

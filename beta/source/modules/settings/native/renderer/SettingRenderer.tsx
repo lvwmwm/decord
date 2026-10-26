@@ -1,39 +1,39 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15981
+// Function ID: 15982
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2132, 15734, 2090, 11085, 21, 5191, 587, 1202, 6457, 504, 1505, 15736, 558, 576, 1128, 10475, 6436, 15738, 15739, 5187, 7173, 7172, 4929, 6540, 6539, 7162, 4903, 11469, 5156, 5157, 6459, 5477, 1903, 1384, 15065, 6462, 5479, 4913, 15740, 1896, 2]
+// Dependencies: [32, 109, 19, 17, 2068, 15980, 4845, 11209, 21, 4971, 587, 1202, 6903, 504, 1505, 15982, 558, 576, 1128, 10571, 6883, 15984, 15985, 5234, 7296, 7295, 4985, 6985, 6984, 7285, 5662, 11622, 5212, 5213, 6905, 5977, 1903, 1384, 15278, 6908, 5244, 5252, 15986, 1896, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 15735 (SettingRenderer)
+// Module 15981 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import useToken from "useToken" /* 4913 */;
-import react3 from "react" /* 4929 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import GuildIcon from "GuildIcon" /* 6436 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import FormSwitch from "FormSwitch" /* 7173 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11469 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15736 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 15738 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 15739 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15740 */;
+import react3 from "react" /* 4985 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useToken from "useToken" /* 5252 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import GuildIcon from "GuildIcon" /* 6883 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import FormSwitch from "FormSwitch" /* 7296 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11622 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15982 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 15984 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 15985 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 15986 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15734 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11085 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15980 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11209 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,10 +52,9 @@ let obj4;
 let size;
 let tmp;
 let tmp2;
-const TableRow2 = tmp(6457);
-const TableRadioGroup2 = tmp2(6540);
-const ClydeIcon = tmp(10475);
-const f122858 = () => _undefined.locale;
+const TableRow2 = tmp(6903);
+const TableRadioGroup2 = tmp2(6985);
+const ClydeIcon = tmp(10571);
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -133,7 +132,7 @@ function StaticSettingSearchResult(title) {
   }
   return closure_14(TableRow, obj);
 }
-let closure_3 = ["onSlidingComplete", "step", "startIcon", "endIcon", "minimumValue", "maximumValue", "valueLabel", "defaultValue", "onValueChange"];
+let closure_3 = ["onChangeEnd", "step", "startIcon", "endIcon", "minValue", "maxValue", "valueLabel", "defaultValue", "onChange"];
 let closure_4 = ["settingData"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 const View = react_native.View;
@@ -170,7 +169,7 @@ let closure_18 = react.memo(function RouteSetting(arg0) {
   const stackNavigation = obj.useStackNavigation();
   let obj2 = screen(preNavigationAction[13]);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   preNavigationAction = undefined;
   const title = useTitle();
   if (usePreNavigationAction != null) {
@@ -444,7 +443,7 @@ let closure_22 = react.memo(function PressableSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   let description;
   const title = useTitle();
   if (useDescription != null) {
@@ -460,19 +459,19 @@ let closure_22 = react.memo(function PressableSetting(arg0) {
   }
   const obj3 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp11Result, onPress, disabled: true === isDisabled, trailing: tmp13, start, end };
   tmp11Result = null;
-  const TableRow = tmp(6457).TableRow;
-  const tmp10 = authStore3;
-  const tmp9 = authStore4;
+  const TableRow = tmp(6903).TableRow;
+  const tmp10 = closure_15;
+  const tmp9 = authStore3;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(6457).TableRow.Icon, obj4);
+    tmp11Result = tmp11(tmp(6903).TableRow.Icon, obj4);
   }
   tmp13 = undefined;
   if (null != trailing) {
     let tmp11Result2 = trailing;
     if (typeof trailing === "string") {
       const obj5 = { text: trailing };
-      tmp11Result2 = tmp11(tmp(6457).TableRow.TrailingText, obj5);
+      tmp11Result2 = tmp11(tmp(6903).TableRow.TrailingText, obj5);
     }
     tmp13 = tmp11Result2;
   }
@@ -523,7 +522,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disabl
         }
         const obj3 = { children: items };
         items = [tmp4, tmp7];
-        const tmp14 = authStore4(View, obj3);
+        const tmp14 = authStore3(View, obj3);
         cResult[6] = tmp7;
         cResult[7] = tmp4;
         cResult[8] = tmp14;
@@ -533,7 +532,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disabl
     let tmp10Result = description;
     if (!react.isValidElement(description)) {
       let str = descriptionVariant;
-      const Text = tmp(5187).Text;
+      const Text = tmp(5234).Text;
       const tmp10 = syncedClientThemes;
       if (descriptionVariant == null) {
         str = "text-xs/medium";
@@ -576,7 +575,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disabl
     }
     const obj2 = { children: items };
     items = [tmp4, tmpResult];
-    return authStore4(View, obj2);
+    return authStore3(View, obj2);
   }
 });
 let closure_24 = react.memo(function ToggleSetting(arg0) {
@@ -603,7 +602,7 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   const title = useTitle();
   const value = useValue();
   let description;
@@ -618,11 +617,11 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
   tmp9 = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp9 = syncedClientThemes(tmp(6457).TableRow.Icon, obj4);
+    tmp9 = syncedClientThemes(tmp(6903).TableRow.Icon, obj4);
   }
   if (typeof isDisabled === "object") {
     const obj6 = { subLabel: syncedClientThemes(closure_23, obj7), accessible: true, trailing: syncedClientThemes(View, obj8) };
-    const TableRow = tmp(6457).TableRow;
+    const TableRow = tmp(6903).TableRow;
     const merged = Object.assign(obj3);
     obj7 = { disabledActionLabel: isDisabled.label, description, descriptionVariant: "text-md/semibold", descriptionColor: "mobile-text-heading-primary" };
     ({ accessibilityHint: obj5.accessibilityHint, onPress: obj5.onPress } = isDisabled);
@@ -632,14 +631,14 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
     tmp18 = syncedClientThemes;
   } else {
     const obj10 = { disabled: isDisabled, onValueChange, value };
-    const TableSwitchRow = tmp(7172).TableSwitchRow;
+    const TableSwitchRow = tmp(7295).TableSwitchRow;
     const merged1 = Object.assign(obj3);
     tmp17 = syncedClientThemes(TableSwitchRow, obj10);
     tmp18 = syncedClientThemes;
   }
   let tmp18Result = tmp17;
-  const tmp19 = authStore4;
-  const tmp20 = authStore3;
+  const tmp19 = authStore3;
+  const tmp20 = closure_15;
   if (true === hasIcon) {
     const obj11 = { children: tmp17 };
     tmp18Result = tmp18(closure_25, obj11);
@@ -703,7 +702,7 @@ let closure_26 = react.memo(function RadioSetting(arg0) {
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   const items = [LocaleStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   const title = useTitle();
   const value = useValue();
   const options = useOptions();
@@ -731,8 +730,8 @@ let closure_26 = react.memo(function RadioSetting(arg0) {
   };
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
   const children = [syncedClientThemes(TableRadioGroup, obj3, combined), ];
-  const tmp10 = authStore4;
-  const tmp11 = authStore3;
+  const tmp10 = authStore3;
+  const tmp11 = closure_15;
   const tmp12 = syncedClientThemes;
   if (highlightSettingItem) {
     const obj4 = { start: true, end: true, style: tmp.radioSettingHighlight };
@@ -758,11 +757,11 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(15738);
+  let obj = trailing(15984);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {
@@ -787,7 +786,7 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   }, items1);
   const obj3 = { label: title, subLabel: description, onPress: tmp13, variant, disabled: isDisabled, icon: tmp12Result, trailing: tmp12Result2, start, end };
   tmp13 = null;
-  const TableRow = tmp(6457).TableRow;
+  const TableRow = tmp(6903).TableRow;
   const tmp10 = closure_16;
   const tmp11 = closure_15;
   if (null != trailing) {
@@ -796,12 +795,12 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   tmp12Result = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp12Result = tmp12(tmp(6457).TableRow.Icon, obj4);
+    tmp12Result = tmp12(tmp(6903).TableRow.Icon, obj4);
   }
   tmp12Result2 = null;
   if (null != trailing) {
     const obj5 = { text: trailing };
-    tmp12Result2 = tmp12(tmp(6457).TableRow.TrailingText, obj5);
+    tmp12Result2 = tmp12(tmp(6903).TableRow.TrailingText, obj5);
   }
   const children = [closure_14(TableRow, obj3), ];
   if (highlightSettingItem) {
@@ -827,7 +826,7 @@ let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
   const items = [LocaleStore];
   const tmp4 = closure_17();
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f122858);
+  const stateFromStores = obj2.useStateFromStores(items, () => callback.locale);
   const title = useTitle();
   let value;
   if (useValue != null) {
@@ -838,8 +837,8 @@ let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
   const TableRow = TableRow2.TableRow;
   const children = [syncedClientThemes(TableRow, obj3), ];
   const tmp10 = syncedClientThemes;
-  const tmp8 = authStore4;
-  const tmp9 = authStore3;
+  const tmp8 = authStore3;
+  const tmp9 = closure_15;
   if (highlightSettingItem) {
     const obj5 = { start, end };
     highlightSettingItem = tmp10(SettingListItemHighlightDefault, obj5);
@@ -850,72 +849,66 @@ let closure_28 = react.memo(function VolumeSliderSetting(arg0) {
 let closure_29 = react.memo(function SliderSetting(useTrailing) {
   let Slider;
   let Stack;
-  let _undefined;
-  let c9;
   let defaultValue;
   let end;
   let endIcon;
   let formatPercentResult;
   let intl;
-  let items8;
-  let obj6;
+  let items7;
+  let obj5;
   let obj7;
   let start;
   let startIcon;
-  let tmp13;
   let useProps;
   let useTitle;
   let valueLabel;
   useTrailing = useTrailing.useTrailing;
-  let onSlidingComplete;
+  let onChangeEnd;
   let num2;
   let num4;
   let num3;
-  let onValueChange;
   _objectWithoutProperties = undefined;
   let value;
   let closure_8;
-  c9 = undefined;
+  let onChange;
   let callback1;
-  let callback3;
-  const tmp2 = num2;
   ({ useTitle, start, end, useProps } = useTrailing);
-  let obj = onSlidingComplete(num2[13]);
-  const items = [c9];
-  const stateFromStores = obj.useStateFromStores(items, f122858);
+  let obj = onChangeEnd(num2[13]);
+  const items = [onChange];
+  const stateFromStores = obj.useStateFromStores(items, () => callback.locale);
   const title = useTitle();
   const props = useProps();
-  onSlidingComplete = props.onSlidingComplete;
+  onChangeEnd = props.onChangeEnd;
   const step = props.step;
   let num = 0.1;
-  const tmp3 = c9;
+  const tmp3 = onChange;
   if (undefined !== step) {
     num = step;
   }
-  const minimumValue = props.minimumValue;
+  const minValue = props.minValue;
   num2 = 0;
   ({ startIcon, endIcon } = props);
-  if (undefined !== minimumValue) {
-    num2 = minimumValue;
+  if (undefined !== minValue) {
+    num2 = minValue;
   }
-  const maximumValue = props.maximumValue;
+  const maxValue = props.maxValue;
   num3 = 1;
   num4 = 1;
-  if (undefined !== maximumValue) {
-    num4 = maximumValue;
+  if (undefined !== maxValue) {
+    num4 = maxValue;
   }
   ({ valueLabel, defaultValue } = props);
   if (undefined !== defaultValue) {
     num3 = defaultValue;
   }
-  onValueChange = props.onValueChange;
+  onChange = props.onChange;
   const tmp7 = _objectWithoutProperties(props, num4);
   _objectWithoutProperties = tmp7;
   const tmp8 = closure_17();
   const items1 = [tmp3];
-  const tmpResult = onSlidingComplete(tmp2[13]);
-  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => _undefined.locale);
-  const tmp10 = onValueChange(value.useState(() => {
+  const tmpResult = onChangeEnd(num2[13]);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => callback.locale);
+  const tmp10 = onChange(value.useState(() => {
     value = value.value;
     if (value == null) {
       value = num3;
@@ -924,89 +917,73 @@ let closure_29 = react.memo(function SliderSetting(useTrailing) {
   }), 2);
   value = tmp10[0];
   closure_8 = tmp10[1];
-  [tmp13, c9] = onValueChange(value.useState(false), 2);
-  const items2 = [onValueChange];
-  onValueChange(value.useState(false), 2);
-  const callback = value.useCallback(() => {
-    _undefined(true);
-  }, []);
-  callback1 = value.useCallback((arg0) => {
+  const items2 = [onChange];
+  onChange = value.useCallback((arg0) => {
     closure_8(arg0);
-    if (onValueChange != null) {
-      onValueChange(arg0);
+    if (onChange != null) {
+      onChange(arg0);
     }
   }, items2);
-  const items3 = [onSlidingComplete];
-  const items4 = [callback1, onSlidingComplete];
-  const callback2 = value.useCallback((arg0) => {
-    _undefined(false);
-    if (onSlidingComplete != null) {
-      tmp2(arg0);
+  const items3 = [onChange, onChangeEnd];
+  callback1 = value.useCallback((arg0) => {
+    callback(arg0);
+    if (onChangeEnd != null) {
+      onChangeEnd(arg0);
     }
   }, items3);
-  callback3 = value.useCallback((arg0) => {
-    callback1(arg0);
-    if (onSlidingComplete != null) {
-      onSlidingComplete(arg0);
-    }
-  }, items4);
-  const items5 = [num3, callback3];
-  const items6 = [callback3, num4, num, value];
-  const callback4 = value.useCallback(() => callback3(num3), items5);
-  const items7 = [callback3, num2, num, value];
-  const callback5 = value.useCallback(() => {
-    callback3(Math.min(num4, first + num));
+  const items4 = [num3, callback1];
+  const items5 = [callback1, num4, num, value];
+  const callback2 = value.useCallback(() => callback1(num3), items4);
+  const items6 = [callback1, num2, num, value];
+  const callback3 = value.useCallback(() => {
+    callback1(Math.min(num4, first + num));
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+  }, items5);
+  let trailing;
+  const callback4 = value.useCallback(() => {
+    callback1(Math.max(num2, first - num));
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
   }, items6);
-  let trailing;
-  const callback6 = value.useCallback(() => {
-    callback3(Math.max(num2, first - num));
-    const obj = HapticUtils;
-    const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-  }, items7);
   if (useTrailing != null) {
     trailing = useTrailing();
   }
-  const obj2 = { start, end, shadow: "none", border: "none", children: closure_16(Stack, obj7) };
+  const obj2 = { start, end, shadow: "none", border: "none", children: closure_16(Stack, obj5) };
   const Card = tmp(tmp2[34]).Card;
   Stack = tmp(tmp2[35]).Stack;
-  const obj3 = { style: tmp8.sliderTitle, children: items8 };
+  const obj3 = { style: tmp8.sliderTitle, children: items7 };
   const Stack2 = tmp(tmp2[35]).Stack;
-  items8 = [closure_14(tmp(tmp2[23]).Text, { variant: "text-md/semibold", children: title }), trailing];
-  const items9 = [closure_16(closure_8, obj3), ];
-  let tmp22Result = null != value;
-  const tmp24 = closure_8;
-  if (tmp22Result) {
+  items7 = [closure_14(tmp(tmp2[23]).Text, { variant: "text-md/semibold", children: title }), trailing];
+  const items8 = [closure_16(closure_8, obj3), ];
+  let tmp18Result = null != value;
+  const tmp20 = closure_8;
+  if (tmp18Result) {
     const Text = tmp(tmp2[23]).Text;
     if (formatPercentResult == null) {
-      const tmpResult3 = onSlidingComplete(tmp2[36]);
+      const tmpResult3 = onChangeEnd(num2[36]);
       formatPercentResult = tmpResult3.formatPercent(stateFromStores1, value);
     }
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: formatPercentResult };
-    tmp22Result = tmp22(Text, obj4);
+    tmp18Result = tmp18(Text, obj4);
   }
-  items9[1] = tmp22Result;
-  const items10 = [closure_16(Stack2, { direction: "horizontal", justify: "space-between", children: items9 }), , ];
+  items8[1] = tmp18Result;
+  const items9 = [closure_16(Stack2, { direction: "horizontal", justify: "space-between", children: items8 }), , ];
   let slider;
-  const tmpResult4 = onSlidingComplete(tmp2[37]);
+  const tmpResult4 = onChangeEnd(num2[37]);
   if (tmpResult4.isAndroid()) {
     slider = tmp8.slider;
   }
-  const obj5 = { style: slider, children: closure_14(Slider, obj6) };
-  obj6 = { accessibilityLabel: title, step: num, onValueChange: callback1, value, minimumValue: num2, maximumValue: num4, onSlidingStart: callback, onSlidingComplete: callback2, startIcon: closure_14(onSlidingComplete(tmp2[39]).PressableOpacity, { accessible: false, onPress: callback6, children: startIcon }), endIcon: closure_14(onSlidingComplete(tmp2[39]).PressableOpacity, { accessible: false, onPress: callback5, children: endIcon }) };
+  obj5 = { children: items9 };
+  const obj6 = { style: slider, children: closure_14(Slider, obj7) };
+  obj7 = { accessibilityLabel: title, step: num, onChange, value, minValue: num2, maxValue: num4, onChangeEnd, startIcon: closure_14(onChangeEnd(num2[39]).PressableOpacity, { accessible: false, onPress: callback4, children: startIcon }), endIcon: closure_14(onChangeEnd(num2[39]).PressableOpacity, { accessible: false, onPress: callback3, children: endIcon }) };
   Slider = tmp(tmp2[38]).Slider;
   const merged = Object.assign(tmp7);
-  items10[1] = closure_14(tmp24, obj5);
-  let tmp28 = !tmp13;
+  items9[1] = closure_14(tmp20, obj6);
+  const obj8 = { disabled: value === num3, variant: "secondary", text: intl.string(onChangeEnd(num2[18]).t["3b//lO"]), onPress: callback2 };
   const Button = tmp(tmp2[40]).Button;
-  if (!tmp13) {
-    tmp28 = value === num3;
-  }
-  obj7 = { children: items10 };
-  const obj8 = { disabled: tmp28, variant: "secondary", text: intl.string(onSlidingComplete(tmp2[18]).t["3b//lO"]), onPress: callback4 };
   intl = tmp(tmp2[18]).intl;
-  items10[2] = closure_14(Button, obj8);
+  items9[2] = closure_14(Button, obj8);
   return closure_14(Card, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

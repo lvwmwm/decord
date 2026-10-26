@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "30252dd38aca1d861a91a71b38c8a502", name: "AccessibilityIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hexagon_campaign/images", width: 448, height: 448, scales: [1, 2, 3], hash: "2cafb0515248fbc81635d5ff7a9836f9", name: "hexagon_campaign_hero_background", type: "webp" });

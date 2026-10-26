@@ -1,23 +1,43 @@
 // Module ID: 5451
 // Function ID: 5452
-// Dependencies: [19, 17, 21, 5452]
-// Exports: SafeAreaView
+// Dependencies: [19, 21, 5274, 1658, 5270, 5280]
+// Exports: default
 
 // Module 5451
-import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import react_nativeDefault from "react-native" /* 5452 */;
-import react from "react" /* 19 */;
+import _mod1658 from "module_1658" /* 1658 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5270 */;
+import _mod5274 from "module_5274" /* 5274 */;
+import BottomSheetContext from "BottomSheetContext" /* 5280 */;
 
-const StyleSheet = react_native.StyleSheet;
+const useMemo = react2.useMemo;
 const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export const SafeAreaView = function SafeAreaView(style) {
-  react_nativeDefault;
-  const merged = Object.assign(style);
-  const items = [styles.flex, style.style];
-  const rect = { top: false, bottom: false, left: false, right: false };
-  const merged1 = Object.assign(style.edges);
-  return <tmp style={items} edges={rect} />;
+export default function _default(gestureEventsHandlersHook) {
+  let animatedContentGestureState;
+  let animatedHandleGestureState;
+  let handleOnChange;
+  let handleOnEnd;
+  let handleOnFinalize;
+  let handleOnStart;
+  let useGestureEventsHandlersDefault = gestureEventsHandlersHook.gestureEventsHandlersHook;
+  if (useGestureEventsHandlersDefault === undefined) {
+    useGestureEventsHandlersDefault = _mod5274.useGestureEventsHandlersDefault;
+  }
+  const children = gestureEventsHandlersHook.children;
+  const obj = _mod1658;
+  const sharedValue = obj.useSharedValue(GESTURE_SOURCE.GESTURE_SOURCE.UNDETERMINED);
+  const obj2 = _mod5274;
+  const bottomSheetInternal = obj2.useBottomSheetInternal();
+  ({ animatedHandleGestureState, animatedContentGestureState } = bottomSheetInternal);
+  ({ handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize } = useGestureEventsHandlersDefault());
+  useGestureEventsHandlersDefault();
+  const obj3 = _mod5274;
+  const gestureHandler = obj3.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.CONTENT, animatedContentGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const obj4 = _mod5274;
+  const gestureHandler1 = obj4.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.HANDLE, animatedHandleGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const items = [gestureHandler, gestureHandler1, sharedValue];
+  const value = useMemo(() => ({ contentPanGestureHandler: gestureHandler, handlePanGestureHandler: gestureHandler1, animatedGestureSource: sharedValue }), items);
+  return jsx(BottomSheetContext.BottomSheetGestureHandlersContext.Provider, { value, children });
 };

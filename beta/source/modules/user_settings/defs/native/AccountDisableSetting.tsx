@@ -1,13 +1,13 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 16102
+// Function ID: 16103
 // Name: AccountDisableSetting
-// Dependencies: [8260, 15855, 11084, 1128, 2]
+// Dependencies: [8332, 16101, 11208, 1128, 2]
 
-// Module 15856 (AccountDisableSetting)
+// Module 16102 (AccountDisableSetting)
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15855 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 16101 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

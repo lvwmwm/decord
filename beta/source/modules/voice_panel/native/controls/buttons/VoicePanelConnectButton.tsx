@@ -1,22 +1,22 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 18617
+// Function ID: 18618
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 2068, 21, 5191, 587, 558, 576, 10679, 18245, 504, 1128, 6180, 6200, 7759, 6145, 5401, 18317, 18320, 18321, 13959, 5187, 18315, 2]
+// Dependencies: [19, 4823, 21, 4971, 587, 558, 576, 10899, 18549, 504, 1128, 6662, 6682, 7878, 6634, 5910, 18618, 18621, 18622, 14186, 5234, 18616, 2]
 
-// Module 18316 (VoicePanelConnectButton)
+// Module 18617 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useAlertStore from "useAlertStore" /* 5401 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7759 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13959 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 18317 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 18320 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 18321 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useAlertStore from "useAlertStore" /* 5910 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14186 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 18618 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 18621 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 18622 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import createStyles from "createStyles" /* 5191 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

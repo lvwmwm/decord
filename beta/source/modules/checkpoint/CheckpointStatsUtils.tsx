@@ -1,19 +1,156 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12957
+// Function ID: 12958
 // Name: CheckpointStatsUtils
-// Dependencies: [1406, 2082, 11, 2]
-// Exports: statsFromServer
+// Dependencies: [1406, 4837, 11, 2]
+// Exports: getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 12740 (CheckpointStatsUtils)
+// Module 12957 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
-let game;
+let game, guild;
 
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointStatsUtils.tsx");
 
+export const getCheckpointTopPercent = function getCheckpointTopPercent(prop) {
+  let bound = null;
+  if (null != prop) {
+    bound = null;
+    if (prop >= 50) {
+      const _Math = Math;
+      const _Math2 = Math;
+      bound = Math.max(1, Math.ceil(100 - prop));
+    }
+  }
+  return bound;
+};
+export const hasCheckpointSidekick = function hasCheckpointSidekick(sidekick) {
+  sidekick = undefined;
+  if (sidekick != null) {
+    sidekick = sidekick.sidekick;
+  }
+  return null != sidekick;
+};
+export const hasCheckpointSquad = function hasCheckpointSquad(sidekick) {
+  sidekick = undefined;
+  if (sidekick != null) {
+    sidekick = sidekick.sidekick;
+  }
+  let tmp2 = null != sidekick;
+  if (tmp2) {
+    let num;
+    if (sidekick != null) {
+      const users = sidekick.users;
+      if (users != null) {
+        num = users.length;
+      }
+    }
+    if (num == null) {
+      num = 0;
+    }
+    tmp2 = num > 0;
+  }
+  return tmp2;
+};
+export const hasCheckpointVoiceMinutes = function hasCheckpointVoiceMinutes(voice) {
+  let num;
+  const _Math = Math;
+  if (voice != null) {
+    voice = voice.voice;
+    if (voice != null) {
+      num = voice.totalVoiceMinutes;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return round(num) > 0;
+};
+export const hasCheckpointMessages = function hasCheckpointMessages(messages) {
+  let num;
+  const _Math = Math;
+  if (messages != null) {
+    messages = messages.messages;
+    if (messages != null) {
+      num = messages.numMessagesSent;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return round(num) > 0;
+};
+export const hasCheckpointGuilds = function hasCheckpointGuilds(guilds) {
+  let num;
+  if (guilds != null) {
+    guilds = guilds.guilds;
+    if (guilds != null) {
+      num = guilds.guilds.length;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num > 0;
+};
+export const hasCheckpointEmojis = function hasCheckpointEmojis(stats) {
+  let num;
+  const _Math = Math;
+  if (stats != null) {
+    const emojis = stats.emojis;
+    if (emojis != null) {
+      num = emojis.numEmojisSent;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  let tmp = round(num) > 0;
+  if (tmp) {
+    let num2;
+    if (stats != null) {
+      const emojis2 = stats.emojis;
+      if (emojis2 != null) {
+        num2 = emojis2.emojis.length;
+      }
+    }
+    if (num2 == null) {
+      num2 = 0;
+    }
+    tmp = num2 > 0;
+  }
+  return tmp;
+};
+export const hasCheckpointGames = function hasCheckpointGames(stats) {
+  let num;
+  const _Math = Math;
+  if (stats != null) {
+    const games = stats.games;
+    if (games != null) {
+      num = games.totalGamesPlayed;
+    }
+  }
+  if (num == null) {
+    num = 0;
+  }
+  let tmp = round(num) > 0;
+  if (tmp) {
+    let num2;
+    if (stats != null) {
+      const games2 = stats.games;
+      if (games2 != null) {
+        num2 = games2.games.length;
+      }
+    }
+    if (num2 == null) {
+      num2 = 0;
+    }
+    tmp = num2 > 0;
+  }
+  return tmp;
+};
 export const statsFromServer = function statsFromServer(stats) {
   let arr2;
   let emojis;
@@ -82,5 +219,105 @@ export const statsFromServer = function statsFromServer(stats) {
     tmp = obj7;
     tmp3 = new UserRecord(sidekick.user);
   }
+  return obj;
+};
+export const globalStatsFromServer = function globalStatsFromServer(global_stats) {
+  let arr2;
+  let emojis;
+  let games;
+  let games_by_players;
+  let guilds_by_members;
+  let new_games_by_players;
+  let obj2;
+  let obj3;
+  let obj4;
+  let prop;
+  let prop1;
+  let prop2;
+  ({ emojis, games } = global_stats);
+  let obj = { voice: { peakHourUtc: global_stats.voice.peak_hour_utc }, messages: { numWordsSent: global_stats.messages.num_words_sent }, guilds: obj2, emojis: obj3, games: obj4 };
+  obj2 = {
+    guildsByMembers: guilds_by_members.map((guild) => {
+      guild = guild.guild;
+      const obj = GuildRecordUtils;
+      return obj.fromGuildBasic(guild);
+    })
+  };
+  guilds_by_members = global_stats.guilds.guilds_by_members;
+  obj3 = { numEmojisSent: emojis.num_emojis_sent, numReactionsAdded: emojis.num_reactions_added, emojis: arr2.map((emoji) => emoji.emoji) };
+  arr2 = emojis.emojis;
+  obj4 = {
+    gamesByPlayers: games_by_players.map((game) => {
+      let banner_hash;
+      let cover_image_hash;
+      let icon_hash;
+      let obj2;
+      game = game.game;
+      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
+      ({ name: obj.name, icon_hash } = game);
+      banner_hash = game.banner_hash;
+      cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
+      return obj;
+    }),
+    newGamesByPlayers: new_games_by_players.map((game) => {
+      let banner_hash;
+      let cover_image_hash;
+      let icon_hash;
+      let obj2;
+      game = game.game;
+      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
+      ({ name: obj.name, icon_hash } = game);
+      banner_hash = game.banner_hash;
+      cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
+      return obj;
+    }),
+    indieGamesByPlayers: prop.map((game) => {
+      let banner_hash;
+      let cover_image_hash;
+      let icon_hash;
+      let obj2;
+      game = game.game;
+      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
+      ({ name: obj.name, icon_hash } = game);
+      banner_hash = game.banner_hash;
+      cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
+      return obj;
+    }),
+    gamesByStreamWatchMinutes: prop1.map((game) => {
+      let banner_hash;
+      let cover_image_hash;
+      let icon_hash;
+      let obj2;
+      game = game.game;
+      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
+      ({ name: obj.name, icon_hash } = game);
+      banner_hash = game.banner_hash;
+      cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
+      return obj;
+    }),
+    gamesByCoplayUsers: prop2.map((game) => {
+      let banner_hash;
+      let cover_image_hash;
+      let icon_hash;
+      let obj2;
+      game = game.game;
+      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
+      ({ name: obj.name, icon_hash } = game);
+      banner_hash = game.banner_hash;
+      cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
+      return obj;
+    }),
+    numUsersPlayedEveryDay: games.num_users_played_every_day
+  };
+  games_by_players = games.games_by_players;
+  new_games_by_players = games.new_games_by_players;
+  prop = games.indie_games_by_players;
+  prop1 = games.games_by_stream_watch_minutes;
+  prop2 = games.games_by_coplay_users;
   return obj;
 };

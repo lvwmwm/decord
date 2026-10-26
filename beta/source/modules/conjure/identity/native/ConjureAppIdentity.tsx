@@ -1,18 +1,18 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11814
+// Function ID: 11815
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 587, 5191, 8026, 8036, 11611, 1128, 3883, 1496, 11652, 558, 576, 11657, 5128, 6459, 11659, 6563, 6294, 5187, 5477, 7051, 2]
+// Dependencies: [32, 5, 19, 17, 21, 587, 4971, 8146, 8155, 11760, 1128, 3830, 1496, 11810, 558, 576, 11815, 5669, 6905, 11817, 7008, 6774, 5234, 5977, 7180, 2]
 
-// Module 11656 (ConjureAppIdentity)
+// Module 11814 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import ImagePickerDefault from "ImagePicker" /* 8036 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ImagePickerDefault from "ImagePicker" /* 8155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -173,22 +173,28 @@ const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 const PX_4 = nativeDefault.space.PX_4;
 let createStyles = createStyles_mod;
-value = { nameRow: obj2, tile: { padding: 0, alignItems: "center", justifyContent: "center", overflow: "hidden" }, tileEmpty: { borderStyle: "dashed" }, tileImage: { width: "100%", height: "100%" }, editIcon: rect, nameField: { flex: 1 } };
+value = { nameRow: obj2, tileFrame: { alignSelf: "flex-start" }, tile: { padding: 0, alignItems: "center", justifyContent: "center", overflow: "hidden" }, tileEmpty: { borderStyle: "dashed" }, tileImage: { width: "100%", height: "100%" }, editIcon: rect, nameField: { flex: 1 } };
 obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", top: -nativeDefault.space.PX_4, right: -nativeDefault.space.PX_4, pointerEvents: "none" };
 let closure_11 = createStyles(value);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppIconTile(onError) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppIconTile(onError) {
   let disabled;
   let iconURL;
   let items;
   let obj7;
   let onChange;
-  const obj = onChange(576);
-  const cResult = obj.c(29);
-  ({ iconURL, size, disabled, onChange } = onError);
+  let radius;
+  const tmp = onChange;
+  let obj = onChange(576);
+  const cResult = obj.c(31);
+  ({ iconURL, size, radius, disabled, onChange } = onError);
   onError = onError.onError;
+  let num = 16;
+  if (undefined !== radius) {
+    num = radius;
+  }
   const tmp4 = closure_11();
   if (cResult[0] === onChange) {
     let tmp6;
@@ -197,6 +203,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       tmp6 = cResult[2];
     }
     let str = "subtle";
+    const tileFrame = tmp4.tileFrame;
     if (null == iconURL) {
       str = "strong";
     }
@@ -235,73 +242,79 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             }
             if (cResult[15] === disabled) {
               if (cResult[16] === tmp6) {
-                if (cResult[17] === str) {
-                  if (cResult[18] === tmp9) {
-                    if (cResult[19] === tmp10) {
-                      let tmp17;
-                      if (cResult[20] === tmp12) {
-                        tmp17 = cResult[21];
-                      }
-                      if (cResult[22] === disabled) {
-                        if (cResult[23] === null == iconURL) {
-                          let tmp20;
-                          if (cResult[24] === tmp4.editIcon) {
-                            tmp20 = cResult[25];
-                          }
-                          if (cResult[26] === tmp17) {
-                            let tmp24;
-                            if (cResult[27] === tmp20) {
-                              tmp24 = cResult[28];
+                if (cResult[17] === num) {
+                  if (cResult[18] === str) {
+                    if (cResult[19] === tmp9) {
+                      if (cResult[20] === tmp10) {
+                        let tmp17;
+                        if (cResult[21] === tmp12) {
+                          tmp17 = cResult[22];
+                        }
+                        if (cResult[23] === disabled) {
+                          if (cResult[24] === null == iconURL) {
+                            let tmp20;
+                            if (cResult[25] === tmp4.editIcon) {
+                              tmp20 = cResult[26];
                             }
-                            return tmp24;
+                            if (cResult[27] === tmp4.tileFrame) {
+                              if (cResult[28] === tmp17) {
+                                let tmp24;
+                                if (cResult[29] === tmp20) {
+                                  tmp24 = cResult[30];
+                                }
+                                return tmp24;
+                              }
+                            }
+                            let obj2 = { style: tileFrame, children: items };
+                            items = [tmp17, tmp20];
+                            const tmp27 = closure_8(View, obj2);
+                            cResult[27] = tmp4.tileFrame;
+                            cResult[28] = tmp17;
+                            cResult[29] = tmp20;
+                            cResult[30] = tmp27;
+                            tmp24 = tmp27;
                           }
-                          const obj2 = { children: items };
-                          items = [tmp17, tmp20];
-                          const tmp27 = closure_8(View, obj2);
-                          cResult[26] = tmp17;
-                          cResult[27] = tmp20;
-                          cResult[28] = tmp27;
-                          tmp24 = tmp27;
                         }
-                      }
-                      let tmp21 = null;
-                      if (null != iconURL) {
-                        tmp21 = null;
-                        if (!disabled) {
-                          const obj3 = { style: tmp4.editIcon };
-                          tmp21 = closure_7(onError(11659), obj3);
+                        let tmp21 = null;
+                        if (null != iconURL) {
+                          tmp21 = null;
+                          if (!disabled) {
+                            let obj3 = { style: tmp4.editIcon };
+                            tmp21 = closure_7(onError(11817), obj3);
+                          }
                         }
+                        cResult[23] = disabled;
+                        cResult[24] = null == iconURL;
+                        cResult[25] = tmp4.editIcon;
+                        cResult[26] = tmp21;
+                        tmp20 = tmp21;
                       }
-                      cResult[22] = disabled;
-                      cResult[23] = null == iconURL;
-                      cResult[24] = tmp4.editIcon;
-                      cResult[25] = tmp21;
-                      tmp20 = tmp21;
                     }
                   }
                 }
               }
             }
-            const obj4 = { variant: "secondary", border: str, radius: 16, style: tmp9, accessibilityLabel: tmp10, disabled, onPress: tmp6, children: tmp12 };
-            const tmp19 = closure_7(onChange(6459).Card, obj4);
+            let obj4 = { variant: "secondary", border: str, radius: num, style: tmp9, accessibilityLabel: tmp10, disabled, onPress: tmp6, children: tmp12 };
+            const tmp19 = closure_7(tmp(6905).Card, obj4);
             cResult[15] = disabled;
             cResult[16] = tmp6;
-            cResult[17] = str;
-            cResult[18] = tmp9;
-            cResult[19] = tmp10;
-            cResult[20] = tmp12;
-            cResult[21] = tmp19;
+            cResult[17] = num;
+            cResult[18] = str;
+            cResult[19] = tmp9;
+            cResult[20] = tmp10;
+            cResult[21] = tmp12;
+            cResult[22] = tmp19;
             tmp17 = tmp19;
           }
         }
         if (null == iconURL) {
           const obj5 = { size: "md", color: onError(587).colors.ICON_MUTED };
-          const ImagePlusIcon = tmp(11657).ImagePlusIcon;
+          const ImagePlusIcon = tmp(11815).ImagePlusIcon;
           tmp13Result = tmp13(ImagePlusIcon, obj5);
         } else {
           const obj6 = { source: obj7, style: tmp4.tileImage, resizeMode: "cover" };
           obj7 = { uri: iconURL };
-          tmp13Result = tmp13(onError(5128), obj6);
+          tmp13Result = tmp13(onError(5669), obj6);
         }
         cResult[11] = null == iconURL;
         cResult[12] = iconURL;
@@ -310,100 +323,221 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         tmp12 = tmp13Result;
       }
     }
-    const items1 = [tmp4.tile, tmp7, null == iconURL && tmp4.tileEmpty];
+    const items1 = [tmp4.tile, tmp7, tmp8];
     cResult[5] = tmp4.tile;
     cResult[6] = tmp7;
     cResult[7] = null == iconURL && tmp4.tileEmpty;
     cResult[8] = items1;
     tmp9 = items1;
   }
-  const fn = function t() {
-    const promise = pickConjureAppIcon();
-    const nextPromise = promise.then((error) => {
-      if (null != error) {
-        if ("error" in error) {
-          onError(error.error);
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c2;
+      try {
+        let closure_1;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_1 = tmp;
+            closure_0 = undefined;
+            c2 = 1;
+            c3 = 2;
+            c4 = 1;
+            const obj4 = { value: pickConjureAppIcon(), done: false };
+            return obj4;
+          }
+        } else if (1 === c3) {
+          c2 = 0;
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c4 = 3;
+          const obj = { value, done: true };
+          return obj;
         } else {
-          onError(null);
-          onChange(error.icon);
+          closure_0 = value;
+          c2 = 0;
+          if (null != closure_0) {
+            if ("error" in closure_0) {
+              closure_1(closure_0.error);
+            } else {
+              closure_1(null);
+              closure_0(closure_0.icon);
+            }
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp19) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp19;
+        } else {
+          c3 = 1;
         }
       }
-    });
-    nextPromise.catch(() => {
-
-    });
-  };
+    }
+  });
+  function t2() {
+    return closure_0(...arguments);
+  }
   cResult[0] = onChange;
   cResult[1] = onError;
-  cResult[2] = fn;
-  tmp6 = fn;
+  cResult[2] = t2;
+  tmp6 = t2;
 }) : (function ConjureAppIconTile(onError) {
   let disabled;
   let iconURL;
   let items1;
-  let obj4;
+  let items2;
+  let obj5;
   let onChange;
+  let radius;
   let string;
   let t;
   let tmp6Result;
   let tmp9;
-  ({ iconURL, size, disabled, onChange } = onError);
+  ({ iconURL, size, radius } = onError);
+  if (radius === undefined) {
+    radius = 16;
+  }
+  ({ disabled, onChange } = onError);
   onError = onError.onError;
   const tmp = closure_11();
   const items = [onChange, onError];
-  const callback = react.useCallback(() => {
-    const promise = pickConjureAppIcon();
-    const nextPromise = promise.then((error) => {
-      if (null != error) {
-        if ("error" in error) {
-          onError(error.error);
+  let obj = { style: tmp.tileFrame, children: items2 };
+  const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c2;
+      try {
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            onChange = undefined;
+            c2 = 1;
+            c3 = 2;
+            c4 = 1;
+            const obj4 = { value: pickConjureAppIcon(), done: false };
+            return obj4;
+          }
+        } else if (1 === c3) {
+          c2 = 0;
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c4 = 3;
+          const obj = { value, done: true };
+          return obj;
         } else {
-          onError(null);
-          onChange(error.icon);
+          onChange = value;
+          c2 = 0;
+          if (null != onChange) {
+            if ("error" in onChange) {
+              closure_129_1(onChange.error);
+            } else {
+              closure_129_1(null);
+              closure_129_0(onChange.icon);
+            }
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp19) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp19;
+        } else {
+          c3 = 1;
         }
       }
-    });
-    nextPromise.catch(() => {
-
-    });
-  }, items);
-  let str = "subtle";
-  const Card = onChange(6459).Card;
+    }
+  }), items);
   const tmp4 = closure_8;
+  let str = "subtle";
+  const Card = onChange(6905).Card;
   const tmp5 = View;
   if (null == iconURL) {
     str = "strong";
   }
-  const obj = { variant: "secondary", border: str, radius: 16, style: items1, accessibilityLabel: string(null == iconURL ? t["MsUY/S"] : t.VATxfe), disabled, onPress: callback, children: tmp6Result };
-  items1 = [tmp.tile, { width: size, height: size }, null == iconURL && tmp.tileEmpty];
+  let obj2 = { variant: "secondary", border: str, radius, style: items1, accessibilityLabel: string(tmp2 ? t["MsUY/S"] : t.VATxfe), disabled, onPress: callback, children: tmp6Result };
+  items1 = [tmp.tile, { width: size, height: size }, tmp2 && tmp.tileEmpty];
   const intl = tmp7(1128).intl;
   string = intl.string;
   t = tmp7(1128).t;
   if (null == iconURL) {
-    const obj2 = { size: "md", color: onError(587).colors.ICON_MUTED };
-    const ImagePlusIcon = tmp7(11657).ImagePlusIcon;
-    tmp6Result = tmp6(ImagePlusIcon, obj2);
+    let obj3 = { size: "md", color: onError(587).colors.ICON_MUTED };
+    const ImagePlusIcon = tmp7(11815).ImagePlusIcon;
+    tmp6Result = tmp6(ImagePlusIcon, obj3);
     tmp9 = onError;
   } else {
     tmp9 = onError;
-    const obj3 = { source: obj4, style: tmp.tileImage, resizeMode: "cover" };
-    obj4 = { uri: iconURL };
-    tmp6Result = tmp6(onError(5128), obj3);
+    let obj4 = { source: obj5, style: tmp.tileImage, resizeMode: "cover" };
+    obj5 = { uri: iconURL };
+    tmp6Result = tmp6(onError(5669), obj4);
   }
-  const children = [closure_7(Card, obj), ];
+  items2 = [tmp6(Card, obj2), ];
   let tmp6Result2 = null;
   if (null != iconURL) {
     tmp6Result2 = null;
     if (!disabled) {
-      const obj5 = { style: tmp.editIcon };
-      tmp6Result2 = tmp6(tmp9(11659), obj5);
+      const obj6 = { style: tmp.editIcon };
+      tmp6Result2 = tmp6(tmp9(11817), obj6);
     }
   }
-  children[1] = tmp6Result2;
-  return tmp4(tmp5, { children });
+  items2[1] = tmp6Result2;
+  return tmp4(tmp5, obj);
 });
+let closure_14 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppIdentitySection(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppIdentitySection(arg0) {
   let description;
   let disabled;
   let first;
@@ -453,7 +587,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
         const nameField = tmp5.nameField;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1128).intl;
-          const stringResult = intl.string(_modDef3883.GWBCF9);
+          const stringResult = intl.string(_modDef3830.GWBCF9);
           cResult[7] = stringResult;
           tmp16 = stringResult;
         } else {
@@ -482,7 +616,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
                       if (cResult[21] !== first) {
                         let tmp31 = null;
                         if (null != first) {
-                          const obj2 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5187).Text, obj3) };
+                          const obj2 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5234).Text, obj3) };
                           obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: first };
                           tmp31 = closure_7(View, obj2);
                         }
@@ -502,9 +636,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
                         const _Symbol2 = Symbol;
                         if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
                           const intl2 = tmp(1128).intl;
-                          const stringResult1 = intl2.string(_modDef3883.ynaGa1);
+                          const stringResult1 = intl2.string(_modDef3830.ynaGa1);
                           const intl3 = tmp(1128).intl;
-                          const stringResult2 = intl3.string(_modDef3883["I+3UTL"]);
+                          const stringResult2 = intl3.string(_modDef3830["I+3UTL"]);
                           cResult[26] = stringResult1;
                           cResult[27] = stringResult2;
                           tmp39 = stringResult2;
@@ -535,8 +669,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
                             tmp46 = tmp49;
                           }
                         }
-                        const obj5 = { label: tmp38, placeholder: tmp39, value: description, onChange: onDescriptionChange, maxLength: nameError(6294).MAX_APP_DESCRIPTION_LENGTH, disabled: undefined !== disabled && disabled };
-                        const TextArea = tmp(7051).TextArea;
+                        const obj5 = { label: tmp38, placeholder: tmp39, value: description, onChange: onDescriptionChange, maxLength: nameError(6774).MAX_APP_DESCRIPTION_LENGTH, disabled: undefined !== disabled && disabled };
+                        const TextArea = tmp(7180).TextArea;
                         const tmp45 = closure_7(TextArea, obj5);
                         cResult[28] = description;
                         cResult[29] = undefined !== disabled && disabled;
@@ -545,7 +679,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
                         tmp43 = tmp45;
                       }
                       const obj6 = { spacing: nativeDefault.space.PX_8, children: items1 };
-                      const Stack = tmp(5477).Stack;
+                      const Stack = tmp(5977).Stack;
                       items1 = [tmp26, tmp30];
                       const tmp37 = closure_8(Stack, obj6);
                       cResult[23] = tmp26;
@@ -574,8 +708,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
             }
           }
         }
-        const obj9 = { label: tmp16, value: name, onChange: onNameChange, maxLength: nameError(6294).MAX_PROJECT_NAME_LENGTH, disabled: undefined !== disabled && disabled, errorMessage: nameError };
-        const TextInput = tmp(6563).TextInput;
+        const obj9 = { label: tmp16, value: name, onChange: onNameChange, maxLength: nameError(6774).MAX_PROJECT_NAME_LENGTH, disabled: undefined !== disabled && disabled, errorMessage: nameError };
+        const TextInput = tmp(7008).TextInput;
         const tmp21 = closure_7(TextInput, obj9);
         cResult[8] = undefined !== disabled && disabled;
         cResult[9] = name;
@@ -631,27 +765,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
     }
   }, items);
   const obj = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack = nameError(5477).Stack;
+  const Stack = nameError(5977).Stack;
   const obj2 = { style: tmp.nameRow, children: items1 };
   items1 = [closure_7(closure_14, { iconURL, size: first1, disabled: flag, onChange: onIconChange, onError: tmp4 }), ];
   const obj3 = { style: tmp.nameField, onLayout: callback, children: closure_7(TextInput, obj4) };
-  obj4 = { label: intl.string(_modDef3883.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6294).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
-  TextInput = nameError(6563).TextInput;
+  obj4 = { label: intl.string(_modDef3830.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6774).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
+  TextInput = nameError(7008).TextInput;
   intl = nameError(1128).intl;
   items1[1] = closure_7(View, obj3);
   items2 = [closure_8(View, obj2), ];
   let tmp14Result = null;
   const tmp9 = closure_9;
   if (null != first) {
-    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5187).Text, obj6) };
+    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5234).Text, obj6) };
     obj6 = { variant: "text-xs/normal", color: "text-feedback-critical", children: first };
     tmp14Result = tmp14(tmp13, obj5);
   }
   const obj7 = { children: items3 };
   items2[1] = tmp14Result;
   items3 = [closure_8(Stack, obj), ];
-  const obj8 = { label: intl2.string(_modDef3883.ynaGa1), placeholder: intl3.string(_modDef3883["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6294).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
-  const TextArea = tmp10(7051).TextArea;
+  const obj8 = { label: intl2.string(_modDef3830.ynaGa1), placeholder: intl3.string(_modDef3830["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6774).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
+  const TextArea = tmp10(7180).TextArea;
   intl2 = tmp10(1128).intl;
   intl3 = tmp10(1128).intl;
   items3[1] = closure_7(TextArea, obj8);
@@ -659,4 +793,5 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAppId
 });
 const result = size.fileFinishedImporting("modules/conjure/identity/native/ConjureAppIdentity.tsx");
 
-export const ConjureAppIdentitySection = tmp4;
+export const ConjureAppIconTile = tmp4;
+export const ConjureAppIdentitySection = tmp5;

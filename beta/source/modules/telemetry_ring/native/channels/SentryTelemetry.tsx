@@ -1,9 +1,9 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15381
+// Function ID: 15382
 // Name: SentryTelemetry
 // Dependencies: [2008, 2009, 2]
 
-// Module 15160 (SentryTelemetry)
+// Module 15381 (SentryTelemetry)
 import TelemetryRingNative2 from "TelemetryRingNative" /* 2009 */;
 import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2008 */;
 import size from "module_2" /* 2 */;

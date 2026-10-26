@@ -1,14 +1,16 @@
 // Module ID: 5454
 // Function ID: 5455
 // Name: react-native
-// Dependencies: [17, 65]
+// Dependencies: [17]
 
 // Module 5454 (react-native)
 import react_native from "react-native" /* 17 */;
-import module_65 from "module_65" /* 65 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenFooter", validAttributes: {} };
+let obj2;
+const StyleSheet = react_native.StyleSheet;
+const obj = { container: obj2 };
+const create = StyleSheet.create;
+obj2 = { pointerEvents: "box-none" };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 
-export default module_65.get("RNSScreenFooter", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const styles = create(obj);

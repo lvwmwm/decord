@@ -1,11 +1,11 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 10793
+// Function ID: 10794
 // Name: conjureMediaTickets
-// Dependencies: [11004, 2]
+// Dependencies: [10725, 2]
 // Exports: clearMediaTickets, getMediaTicket, retireMediaTicket
 
-// Module 11062 (conjureMediaTickets)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
+// Module 10793 (conjureMediaTickets)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,10 +68,10 @@ export const getMediaTicket = function getMediaTicket(projectId) {
     return cleanupPromise;
   }
 };
-export const retireMediaTicket = function retireMediaTicket(arg0) {
-  map.delete(arg0);
+export const retireMediaTicket = function retireMediaTicket(id) {
+  map.delete(id);
   const obj = ConjureWorkerTickets;
-  obj.forgetEarlyTicket(arg0);
+  obj.forgetEarlyTicket(id);
 };
 export const clearMediaTickets = function clearMediaTickets() {
   map.clear();

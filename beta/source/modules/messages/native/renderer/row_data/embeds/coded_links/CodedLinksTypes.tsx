@@ -1,9 +1,9 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 13041
+// Function ID: 13042
 // Name: CodedLinksTypes
 // Dependencies: [2]
 
-// Module 12798 (CodedLinksTypes)
+// Module 13041 (CodedLinksTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksTypes.tsx");

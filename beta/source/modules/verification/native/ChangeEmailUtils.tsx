@@ -1,14 +1,14 @@
-// Module ID: 6947
-// Function ID: 6948
+// Module ID: 7077
+// Function ID: 7078
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 6477, 6948, 6958, 1107, 2]
+// Dependencies: [5, 6923, 7078, 7088, 1107, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 6947 (verification/ChangeEmailUtils)
+// Module 7077 (verification/ChangeEmailUtils)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6948 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6477 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

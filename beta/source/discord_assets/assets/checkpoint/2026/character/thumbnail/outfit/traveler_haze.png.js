@@ -1,8 +1,8 @@
-// Module ID: 5661
-// Function ID: 5662
+// Module ID: 6139
+// Function ID: 6140
 // Dependencies: [2]
 
-// Module 5661
+// Module 6139
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/traveler_haze.png.js");

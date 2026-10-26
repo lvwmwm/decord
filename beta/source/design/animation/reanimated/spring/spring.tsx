@@ -1,13 +1,13 @@
-// Module ID: 5478
-// Function ID: 5479
+// Module ID: 5247
+// Function ID: 5248
 // Name: spring
-// Dependencies: [5193, 5194, 4945, 2]
+// Dependencies: [5207, 5208, 5052, 2]
 // Exports: withSpring
 
-// Module 5478 (spring)
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5193 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5194 */;
+// Module 5247 (spring)
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5207 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5208 */;
 import size from "module_2" /* 2 */;
 
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;

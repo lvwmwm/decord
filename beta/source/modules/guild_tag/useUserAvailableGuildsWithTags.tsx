@@ -1,12 +1,12 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15907
+// Function ID: 15908
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2128, 2090, 558, 576, 8563, 504, 2]
+// Dependencies: [4883, 4845, 558, 576, 8654, 504, 2]
 
-// Module 15667 (useUserAvailableGuildsWithTags)
+// Module 15907 (useUserAvailableGuildsWithTags)
 import react from "react" /* 576 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

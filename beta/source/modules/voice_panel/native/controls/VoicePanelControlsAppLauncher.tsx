@@ -1,16 +1,16 @@
-// Module ID: 18351
-// Function ID: 18352
+// Module ID: 18652
+// Function ID: 18653
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 2068, 10678, 1087, 21, 5191, 558, 576, 9608, 10679, 8668, 504, 38, 12924, 1123, 10948, 10949, 4945, 11891, 12925, 1128, 2]
+// Dependencies: [19, 4823, 10898, 1087, 21, 4971, 558, 576, 9708, 10899, 8759, 504, 38, 13164, 1123, 11168, 11169, 5052, 12059, 13165, 1128, 2]
 
-// Module 18351 (VoicePanelControlsAppLauncher)
+// Module 18652 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,20 +207,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   let derivedValue1;
   const tmp = closure_10();
-  let obj = gestureSpecs(9608);
+  let obj = gestureSpecs(9708);
   const gradientTop = obj.useGradientTop();
-  const context = react.useContext(setControlsMode(10679));
+  const context = react.useContext(setControlsMode(10899));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8668)(windowDimensions);
+  const tmp4 = setControlsMode(8759)(windowDimensions);
   react = tmp4;
-  const rect = setControlsMode(8668)(safeArea);
+  const rect = setControlsMode(8759)(safeArea);
   const items = [rect];
   const obj2 = gestureSpecs(504);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(12924);
+  const obj3 = gestureSpecs(13164);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -228,14 +228,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = gestureSpecs(10948);
+  const obj4 = gestureSpecs(11168);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = gestureSpecs(10949).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(gestureSpecs(10948).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = gestureSpecs(11169).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(gestureSpecs(11168).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
-  const obj5 = gestureSpecs(4945);
+  const obj5 = gestureSpecs(5052);
   const sharedValue = obj5.useSharedValue(0);
-  const obj6 = gestureSpecs(4945);
+  const obj6 = gestureSpecs(5052);
   const sharedValue1 = obj6.useSharedValue(0);
   const fn = function x() {
     return gestureSpecs.get().active;
@@ -243,9 +243,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__closure = { gestureSpecs };
   fn.__workletHash = 5978423252544;
   fn.__initData = __initData4;
-  const obj7 = gestureSpecs(4945);
+  const obj7 = gestureSpecs(5052);
   const derivedValue = obj7.useDerivedValue(fn);
-  const obj8 = gestureSpecs(4945);
+  const obj8 = gestureSpecs(5052);
   class E {
     constructor() {
       return gestureSpecs.get().isDrawer;
@@ -255,7 +255,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   E.__workletHash = 1602221389280;
   E.__initData = __initData5;
   derivedValue1 = obj8.useDerivedValue(E);
-  const obj9 = gestureSpecs(4945);
+  const obj9 = gestureSpecs(5052);
   class L {
     constructor() {
       let height;
@@ -274,12 +274,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const animatedStyle = obj9.useAnimatedStyle(L);
   obj11 = { style: items2, children: items3 };
   items2 = [tmp.container, gradientTop, animatedStyle];
-  View = setControlsMode(4945).View;
+  View = setControlsMode(5052).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(11891), obj12);
+  items3[0] = closure_7(setControlsMode(12059), obj12);
   const obj13 = { title: intl.string(gestureSpecs(1128).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(12925);
+  const tmp17 = setControlsMode(13165);
   intl = gestureSpecs(1128).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);

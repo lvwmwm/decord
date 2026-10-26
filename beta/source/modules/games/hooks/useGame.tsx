@@ -1,12 +1,12 @@
-// Module ID: 7285
-// Function ID: 7286
+// Module ID: 7406
+// Function ID: 7407
 // Name: useGame
-// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7286, 558, 576, 2]
+// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7407, 558, 576, 2]
 
-// Module 7285 (useGame)
+// Module 7406 (useGame)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import GameActionCreators from "GameActionCreators" /* 7286 */;
+import GameActionCreators from "GameActionCreators" /* 7407 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2022 */;
@@ -21,15 +21,15 @@ const QueryIds = Constants.QueryIds;
 let obj = {
   getQueryId: QueryIds.GAME,
   failureStaleAfter: 15 * DurationsDefault.Seconds.SECOND,
-  get(gameId) {
+  get(item) {
     let tmp = null;
-    if (null != gameId) {
+    if (null != item) {
       let NO_DATA;
       const obj = GameStore;
-      if (GameStore.hasNoData(gameId)) {
+      if (GameStore.hasNoData(item)) {
         NO_DATA = require("get initialized").NO_DATA;
       } else {
-        NO_DATA = obj.getGame(gameId);
+        NO_DATA = obj.getGame(item);
         if (NO_DATA == null) {
           NO_DATA = null;
         }

@@ -1,16 +1,16 @@
-// Module ID: 12336
-// Function ID: 12337
+// Module ID: 12532
+// Function ID: 12533
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5191, 587, 558, 576, 6542, 1128, 3883, 6457, 1202, 5057, 12183, 2]
+// Dependencies: [19, 21, 4971, 587, 558, 576, 6987, 1128, 3830, 6903, 1202, 5025, 11830, 2]
 
-// Module 12336 (ConjureMentionSuggestions)
+// Module 12532 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import TableRowGroup3 from "TableRowGroup" /* 6542 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import TableRowGroup3 from "TableRowGroup" /* 6987 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
         }
       }
       let obj3 = {
-        title: intl.string(onSelect(3883).Vb3sUg),
+        title: intl.string(onSelect(3830).Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -131,13 +131,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = projectId(fileThumbnail[9]).TableRow;
-              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: projectId(fileThumbnail[10]).AvatarSizes.XSMALL, guildId: "r" };
               Avatar = projectId(fileThumbnail[10]).Avatar;
               obj3 = projectId(fileThumbnail[11]);
               return closure_1_3(TableRow, obj, user.user.id);
             })
       };
-      const TableRowGroup = tmp(6542).TableRowGroup;
+      const TableRowGroup = tmp(6987).TableRowGroup;
       intl = tmp(1128).intl;
       tmp15 = closure_3(TableRowGroup, obj3);
     }
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
         }
       }
       const obj4 = {
-        title: intl2.string(onSelect(3883).zA5KLM),
+        title: intl2.string(onSelect(3830).zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
               return closure_1_3(TableRow, obj, file.file.id);
             })
       };
-      const TableRowGroup2 = tmp(6542).TableRowGroup;
+      const TableRowGroup2 = tmp(6987).TableRowGroup;
       intl2 = tmp(1128).intl;
       tmp16 = closure_3(TableRowGroup2, obj4);
     }
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     const tmp13 = closure_4;
     if (found.length > 0) {
       let obj = {
-        title: intl.string(_modDef3883.Vb3sUg),
+        title: intl.string(_modDef3830.Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);
@@ -231,7 +231,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMenti
     let tmp7 = null;
     if (found1.length > 0) {
       let obj2 = {
-        title: intl2.string(_modDef3883.zA5KLM),
+        title: intl2.string(_modDef3830.zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;

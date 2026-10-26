@@ -1,9 +1,9 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13332
+// Function ID: 13333
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 2065, 21, 558, 576, 1647, 6945, 5083, 1633, 4913, 587, 1384, 1631, 2052, 7376, 12822, 1128, 13093, 9742, 2]
+// Dependencies: [32, 19, 4820, 21, 558, 576, 1647, 5596, 5161, 1633, 5252, 587, 1384, 1631, 4807, 7496, 13062, 1128, 7233, 9840, 2]
 
-// Module 13092 (useEmojiSuggestionNuxCoachmark)
+// Module 13332 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1647 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import useToken from "useToken" /* 4913 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5083 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6945 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12822 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5161 */;
+import useToken from "useToken" /* 5252 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5596 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   if (cResult[0] !== tmp7) {
     let items1;
     if (tmp7) {
-      const items = [tmp2(2052).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
+      const items = [tmp2(4807).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
       items1 = items;
     } else {
       items1 = [];

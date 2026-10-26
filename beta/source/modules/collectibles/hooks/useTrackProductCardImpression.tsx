@@ -1,19 +1,19 @@
-// Module ID: 16914
-// Function ID: 16915
+// Module ID: 17210
+// Function ID: 17211
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 7530, 1087, 558, 576, 9262, 504, 8576, 4864, 7542, 1267, 2]
+// Dependencies: [19, 7650, 1087, 558, 576, 9360, 504, 8667, 2053, 7662, 1267, 2]
 
-// Module 16914 (useTrackProductCardImpression)
+// Module 17210 (useTrackProductCardImpression)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let clearTimeoutResult, importDefault, num, tmp3, tmp5;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProductCardImpression(sku_id, page_type, arg2) {
@@ -54,12 +54,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
   const tmpResult3 = tmp(tmp2[6]);
   stateFromStores = tmpResult3.useStateFromStores(first, tmp7);
   const tmpResult4 = tmp(tmp2[7]);
-  const currentUser = tmpResult4.useCurrentUser();
-  if (cResult[3] !== currentUser) {
+  const currentUserIfAvailable = tmpResult4.useCurrentUserIfAvailable();
+  if (cResult[3] !== currentUserIfAvailable) {
     const tmp11 = importDefault;
     const obj5 = require("PremiumUtils");
-    const canUseShopDiscountsResult = obj5.canUseShopDiscounts(currentUser);
-    cResult[3] = currentUser;
+    const canUseShopDiscountsResult = obj5.canUseShopDiscounts(currentUserIfAvailable);
+    cResult[3] = currentUserIfAvailable;
     cResult[4] = canUseShopDiscountsResult;
     tmp10 = canUseShopDiscountsResult;
   } else {
@@ -75,11 +75,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
   }
   if (tmp13 === categoryPosition) {
     let pageCategory;
-    const tmp33 = cResult[6];
+    const tmp31 = cResult[6];
     if (collectiblesAnalyticsContext != null) {
       pageCategory = collectiblesAnalyticsContext.pageCategory;
     }
-    if (tmp33 === pageCategory) {
+    if (tmp31 === pageCategory) {
       let pageSection;
       const tmp16 = cResult[7];
       if (collectiblesAnalyticsContext != null) {
@@ -103,72 +103,232 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
                 if (cResult[12] === stateFromStores) {
                   if (cResult[13] === sku_id) {
                     let tmp22;
-                    let tmp28;
+                    let tmp24;
+                    let tmp26;
                     let tmp29;
-                    let tmp30;
-                    let tmp32;
                     if (cResult[14] === str) {
                       tmp22 = cResult[15];
                     }
                     let closure_7 = tmp22;
                     if (cResult[16] !== tmp22) {
-                      const fn2 = function k(arg0) {
-                        const current = ref.current;
-                        const tmp2 = arg0;
-                        if (tmp2) {
-                          if (null === current) {
-                            const _setTimeout = setTimeout;
-                            ref.current = setTimeout(() => {
-                              closure_1_7();
-                              ref.current = null;
-                            }, 1000);
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
                           }
-                        } else if (null !== current) {
-                          const _clearTimeout = clearTimeout;
-                          clearTimeout(ref.current);
-                          ref.current = null;
+                          return;
                         }
-                      };
+                      }
                       cResult[16] = tmp22;
-                      cResult[17] = fn2;
-                      tmp28 = fn2;
+                      cResult[17] = T;
                     } else {
-                      tmp28 = cResult[17];
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
                     }
                     const _Symbol = Symbol;
                     if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                      const fn3 = function f() {
-                        return () => {
-                          if (null !== ref.current) {
-                            const _clearTimeout = clearTimeout;
-                            clearTimeout(ref.current);
-                            ref.current = null;
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
                           }
-                        };
-                      };
-                      cResult[18] = fn3;
-                      tmp29 = fn3;
+                          return;
+                        }
+                      }
+                      cResult[18] = tmp25;
+                      tmp24 = tmp25;
                     } else {
-                      tmp29 = cResult[18];
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
                     }
                     if (cResult[19] !== sku_id) {
-                      const items1 = [sku_id];
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      tmp27[0] = sku_id;
                       cResult[19] = sku_id;
-                      cResult[20] = items1;
-                      tmp30 = items1;
+                      cResult[20] = tmp27;
+                      tmp26 = tmp27;
                     } else {
-                      tmp30 = cResult[20];
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
                     }
-                    const effect = obj6.useEffect(tmp29, tmp30);
-                    if (cResult[21] !== tmp28) {
-                      let obj2 = { handleCardVisibilityChange: tmp28 };
-                      cResult[21] = tmp28;
-                      cResult[22] = obj2;
-                      tmp32 = obj2;
+                    const effect = obj6.useEffect(tmp24, tmp26);
+                    if (cResult[21] !== tmp23) {
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
+                      tmp30[0] = tmp23;
+                      cResult[21] = tmp23;
+                      cResult[22] = tmp30;
+                      tmp29 = tmp30;
                     } else {
-                      tmp32 = cResult[22];
+                      class T {
+                        constructor(arg0) {
+                          tmp = closure_6;
+                          current = closure_6.current;
+                          tmp2 = sku_id;
+                          if (tmp2) {
+                            if (null === current) {
+                              tmp5 = globalThis;
+                              _setTimeout = setTimeout;
+                              num = 1000;
+                              tmp.current = setTimeout(() => {
+                                closure_1_7();
+                                ref.current = null;
+                              }, 1000);
+                            }
+                          } else if (null !== current) {
+                            tmp3 = globalThis;
+                            _clearTimeout = clearTimeout;
+                            clearTimeoutResult = clearTimeout(tmp.current);
+                            tmp.current = null;
+                          }
+                          return;
+                        }
+                      }
                     }
-                    return tmp32;
+                    return tmp29;
                   }
                 }
               }
@@ -178,29 +338,139 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
       }
     }
   }
-  let categoryPosition1;
   if (collectiblesAnalyticsContext != null) {
-    categoryPosition1 = collectiblesAnalyticsContext.categoryPosition;
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
   }
-  cResult[5] = categoryPosition1;
-  let pageCategory1;
+  cResult[5] = undefined;
   if (collectiblesAnalyticsContext != null) {
-    pageCategory1 = collectiblesAnalyticsContext.pageCategory;
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
   }
-  cResult[6] = pageCategory1;
-  let pageSection1;
+  cResult[6] = undefined;
   if (collectiblesAnalyticsContext != null) {
-    pageSection1 = collectiblesAnalyticsContext.pageSection;
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
   }
-  cResult[7] = pageSection1;
-  let sessionId1;
+  cResult[7] = undefined;
   if (collectiblesAnalyticsContext != null) {
-    sessionId1 = collectiblesAnalyticsContext.sessionId;
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
   }
-  cResult[8] = sessionId1;
-  let tilePosition1;
+  cResult[8] = undefined;
   if (collectiblesAnalyticsContext != null) {
-    tilePosition1 = collectiblesAnalyticsContext.tilePosition;
+    class T {
+      constructor(arg0) {
+        tmp = closure_6;
+        current = closure_6.current;
+        tmp2 = sku_id;
+        if (tmp2) {
+          if (null === current) {
+            tmp5 = globalThis;
+            _setTimeout = setTimeout;
+            num = 1000;
+            tmp.current = setTimeout(() => {
+              closure_1_7();
+              ref.current = null;
+            }, 1000);
+          }
+        } else if (null !== current) {
+          tmp3 = globalThis;
+          _clearTimeout = clearTimeout;
+          clearTimeoutResult = clearTimeout(tmp.current);
+          tmp.current = null;
+        }
+        return;
+      }
+    }
   }
   class I {
     constructor() {
@@ -255,7 +525,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
       track(COLLECTIBLES_TILE_IMPRESSION, obj3);
     }
   }
-  cResult[9] = tilePosition1;
+  cResult[9] = undefined;
   cResult[10] = tmp10;
   cResult[11] = page_type;
   cResult[12] = stateFromStores;
@@ -278,9 +548,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackProd
   const items = [stateFromStores];
   stateFromStores = obj2.useStateFromStores(items, () => CollectiblesCategoryStore.getProduct(sku_id));
   let obj3 = require("useCurrentUser");
-  const currentUser = obj3.useCurrentUser();
+  const currentUserIfAvailable = obj3.useCurrentUserIfAvailable();
   const obj4 = require("PremiumUtils");
-  const canUseShopDiscountsResult = obj4.canUseShopDiscounts(currentUser);
+  const canUseShopDiscountsResult = obj4.canUseShopDiscounts(currentUserIfAvailable);
   let c5 = canUseShopDiscountsResult;
   const ref = collectiblesAnalyticsContext.useRef(null);
   let sessionId;

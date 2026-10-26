@@ -1,19 +1,19 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13720
+// Function ID: 13721
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 10974, 6015, 7640, 1087, 2075, 558, 576, 7256, 13482, 11215, 504, 9562, 7641, 2]
+// Dependencies: [5, 32, 19, 11194, 6498, 7760, 1087, 4830, 558, 576, 7379, 13721, 11355, 504, 9663, 7761, 2]
 
-// Module 13481 (useCreateGameInvitePost)
+// Module 13720 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7256 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7640 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11215 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7379 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7760 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 10974 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
+import LocalActivityStore from "LocalActivityStore" /* 11194 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

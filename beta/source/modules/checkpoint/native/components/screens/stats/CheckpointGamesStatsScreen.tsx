@@ -1,72 +1,98 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 13012
+// Function ID: 13013
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 2022, 12737, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3141, 12761, 9514, 12759, 12765, 1417, 5128, 7955, 12770, 5187, 2]
+// Dependencies: [17, 2022, 12954, 6015, 21, 3088, 4971, 587, 558, 576, 504, 12957, 1128, 12977, 12983, 12984, 12990, 12972, 12974, 9616, 12982, 1417, 5669, 8074, 12992, 5234, 2]
 
-// Module 12773 (CheckpointGamesStatsScreen)
+// Module 13012 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
-import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import _modDef3141 from "module_3141" /* 3141 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import GameControllerIcon from "GameControllerIcon" /* 9514 */;
-import CheckpointTextDefault from "CheckpointText" /* 12759 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12761 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12765 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12770 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import CheckpointTextDefault from "CheckpointText" /* 12972 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12974 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12977 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12982 */;
+import _modDef12983 from "module_12983" /* 12983 */;
+import _modDef12984 from "module_12984" /* 12984 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12990 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12992 */;
 import GameStore from "GameStore" /* 2022 */;
-import CheckpointStore from "CheckpointStore" /* 12737 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointStore from "CheckpointStore" /* 12954 */;
+import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let stats;
+let list;
 
 let metroImportAll;
 let metroImportDefault;
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj16;
 let obj7;
 let obj8;
+let obj9;
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const CHECKPOINT_WHITE = CheckpointConstants.CHECKPOINT_WHITE;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { list: "gamesByPlayers", label: _modDef3088.b4s18j };
+let items = [obj, , , , ];
+let obj2 = { list: "newGamesByPlayers", label: _modDef3088.DcxpNj };
+items[1] = obj2;
+let obj3 = { list: "indieGamesByPlayers", label: _modDef3088.OAUTki };
+items[2] = obj3;
+let obj4 = { list: "gamesByCoplayUsers", label: _modDef3088.ioC4Qg };
+items[3] = obj4;
+let obj5 = { list: "gamesByStreamWatchMinutes", label: _modDef3088.M1L00s };
+items[4] = obj5;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, title: obj3, titleText: { flexShrink: 1 }, number: obj4, games: obj5, game: obj6, cover: { width: "87.5%", aspectRatio: 0.75 }, coverImage: { width: "100%", height: "100%", borderWidth: 1, borderColor: CHECKPOINT_PRIMARY }, unknownCover: obj7, rank: { position: "absolute", bottom: 0, left: 0 }, gameText: obj8, gameName: { color: CHECKPOINT_WHITE }, gameSessions: { fontSize: 14, lineHeight: 18 } };
-obj2 = { width: "100%", flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
+let obj6 = { container: obj7, globalContainer: obj8, header: obj9, globalHeading: obj10, globe: { width: 75, height: 56 }, title: obj11, titleText: { flexShrink: 1 }, number: obj12, games: obj13, game: obj14, cover: { width: "87.5%", aspectRatio: 0.75 }, coverImage: { width: "100%", height: "100%", borderWidth: 1, borderColor: CHECKPOINT_PRIMARY }, unknownCover: obj15, rank: { position: "absolute", bottom: 0, left: 0 }, gameText: obj16, gameName: { color: CHECKPOINT_WHITE }, gameLabel: { fontSize: 14, lineHeight: 18 } };
+obj7 = { width: "100%", flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj4 = { marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_4 };
-obj5 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_12 };
-obj6 = { width: "30%", gap: nativeDefault.space.PX_8 };
-obj7 = { backgroundColor: nativeDefault.colors.BLACK, alignItems: "center", justifyContent: "center" };
-obj8 = { gap: nativeDefault.space.PX_4 };
-let closure_9 = createStyles(obj);
+obj8 = { gap: nativeDefault.space.PX_32 };
+obj9 = { gap: nativeDefault.space.PX_12 };
+obj10 = { alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
+obj11 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj12 = { marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_4 };
+obj13 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_16, rowGap: nativeDefault.space.PX_12 };
+obj14 = { width: "30%", gap: nativeDefault.space.PX_8 };
+obj15 = { backgroundColor: nativeDefault.colors.BLACK, alignItems: "center", justifyContent: "center" };
+obj16 = { gap: nativeDefault.space.PX_4 };
+let closure_10 = createStyles(obj6);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGamesStatsScreen() {
-  let arr2;
-  let items1;
-  let items2;
   let items3;
-  let tmp11;
-  let tmp28;
+  let items4;
+  let items6;
+  let stateFromStores1;
+  let stringResult1;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp20;
   let tmp5;
   let tmp6;
-  let obj = react;
-  const cResult = obj.c(51);
-  const tmp4 = closure_9();
+  let tmp69;
+  let tmp76;
+  let tmp9;
+  let toLocaleLowerCaseResult;
+  const tmp = stateFromStores1;
+  let obj = stateFromStores1(576);
+  const cResult = obj.c(86);
+  const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CheckpointStore];
-    const fn = function o() {
-      stats = stats.stats;
+    items = [CheckpointStore];
+    const fn = function s() {
+      const stats = CheckpointStore.stats;
       let games;
       if (stats != null) {
         games = stats.games;
@@ -80,290 +106,414 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = get_initialized;
+  const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [CheckpointStore];
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = S;
+    tmp10 = S;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult3 = tmp(504);
+  stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [CheckpointStore];
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
+      }
+    }
+    cResult[4] = items2;
+    cResult[5] = tmp16;
+    tmp14 = tmp16;
+    tmp13 = items2;
+  } else {
+    tmp13 = cResult[4];
+    tmp14 = cResult[5];
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp14);
   let totalGamesPlayed;
-  const tmp9 = cResult[2];
+  const tmp18 = cResult[6];
   if (stateFromStores != null) {
     totalGamesPlayed = stateFromStores.totalGamesPlayed;
   }
-  if (tmp9 !== totalGamesPlayed) {
-    let num3;
+  if (tmp18 !== totalGamesPlayed) {
+    let num7;
     const _Math = Math;
-    if (stateFromStores != null) {
-      num3 = stateFromStores.totalGamesPlayed;
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
+      }
     }
-    if (num3 == null) {
-      num3 = 0;
+    if (num7 == null) {
+      num7 = 0;
     }
-    const roundResult = round(num3);
+    const roundResult = round(num7);
     let totalGamesPlayed1;
     if (stateFromStores != null) {
       totalGamesPlayed1 = stateFromStores.totalGamesPlayed;
     }
-    cResult[2] = totalGamesPlayed1;
-    cResult[3] = roundResult;
-    tmp11 = roundResult;
+    cResult[6] = totalGamesPlayed1;
+    cResult[7] = roundResult;
+    tmp20 = roundResult;
   } else {
-    tmp11 = cResult[3];
+    tmp20 = cResult[7];
   }
   let games1;
-  const tmp14 = cResult[4];
+  const tmp23 = cResult[8];
   if (stateFromStores != null) {
     games1 = stateFromStores.games;
   }
-  if (tmp14 !== games1) {
-    let games2;
-    if (stateFromStores != null) {
-      games2 = stateFromStores.games;
-    }
-    if (games2 == null) {
-      games2 = [];
-    }
+  if (tmp23 !== games1) {
+    let games;
     let games3;
     if (stateFromStores != null) {
       games3 = stateFromStores.games;
     }
-    cResult[4] = games3;
-    cResult[5] = games2;
-    arr2 = games2;
-  } else {
-    arr2 = cResult[5];
+    if (games3 == null) {
+      games3 = [];
+    }
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
+      }
+    }
+    if (stateFromStores != null) {
+      games = stateFromStores.games;
+    }
+    cResult[8] = games;
+    cResult[9] = games3;
   }
-  if (cResult[6] === tmp11) {
-    if (cResult[7] === tmp4.container) {
-      if (cResult[8] === tmp4.title) {
-        let tmp17;
-        let tmp18;
-        let tmp19;
-        let tmp21;
-        let tmp22;
-        let flag;
-        let tmp23;
-        let tmp24;
-        let tmp35;
-        if (cResult[9] === tmp4.titleText) {
-          tmp17 = cResult[10];
-          tmp18 = cResult[11];
-          tmp19 = cResult[12];
-          tmp21 = cResult[14];
-          tmp22 = cResult[15];
-          flag = cResult[16];
-          tmp23 = cResult[17];
-          tmp24 = cResult[18];
-        }
-        const _HermesInternal = HermesInternal;
-        const combined = "" + tmp21 + " " + tmp22;
-        if (cResult[20] !== tmp11) {
-          const obj2 = { end: tmp11 };
-          const tmp38 = metroImportDefault(NumberAnimationDefault, obj2);
-          cResult[20] = tmp11;
-          cResult[21] = tmp38;
-          tmp35 = tmp38;
-        } else {
-          tmp35 = cResult[21];
-        }
-        if (cResult[22] === tmp17) {
-          if (cResult[23] === tmp4.number) {
-            if (cResult[24] === tmp35) {
-              if (cResult[25] === flag) {
-                let tmp39;
-                let tmp42;
-                let tmp45;
-                if (cResult[26] === combined) {
-                  tmp39 = cResult[27];
-                }
-                if (cResult[28] !== tmp11) {
-                  const intl2 = tmp(1128).intl;
-                  const obj3 = { numGames: tmp11 };
-                  const formatResult = intl2.format(_modDef3141.aJMJ6b, obj3);
-                  cResult[28] = tmp11;
-                  cResult[29] = formatResult;
-                  tmp42 = formatResult;
-                } else {
-                  tmp42 = cResult[29];
-                }
-                if (cResult[30] !== tmp42) {
-                  const obj4 = { variant: "heading-lg/medium", children: tmp42 };
-                  const tmp48 = metroImportDefault(CheckpointTextDefault, obj4);
-                  cResult[30] = tmp42;
-                  cResult[31] = tmp48;
-                  tmp45 = tmp48;
-                } else {
-                  tmp45 = cResult[31];
-                }
-                if (cResult[32] === tmp18) {
-                  if (cResult[33] === tmp39) {
-                    if (cResult[34] === tmp45) {
-                      let tmp49;
-                      if (cResult[35] === tmp23) {
-                        tmp49 = cResult[36];
-                      }
-                      let games = tmp4.games;
-                      if (cResult[37] !== arr2) {
-                        let tmp53;
-                        const _Symbol = Symbol;
-                        if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
-                          class F {
-                            constructor(game, arg1) {
-                              game = game.game;
-                              const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-                              return closure_1_7(closure_1_10, obj, game.id);
+  if (cResult[10] === stateFromStores1) {
+    if (cResult[11] === stateFromStores2) {
+      if (cResult[12] === tmp20) {
+        if (cResult[13] === tmp4.container) {
+          if (cResult[14] === tmp4.games) {
+            if (cResult[15] === tmp4.globalContainer) {
+              if (cResult[16] === tmp4.globalHeading) {
+                if (cResult[17] === tmp4.globe) {
+                  if (cResult[18] === tmp4.header) {
+                    if (cResult[19] === tmp4.title) {
+                      if (cResult[20] === tmp4.titleText) {
+                        class S {
+                          constructor() {
+                            const globalStats = CheckpointStore.globalStats;
+                            let games;
+                            if (globalStats != null) {
+                              games = globalStats.games;
                             }
-                          }
-                          cResult[39] = F;
-                          tmp53 = F;
-                        } else {
-                          class F {
-                            constructor(game, arg1) {
-                              game = game.game;
-                              const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-                              return closure_1_7(closure_1_10, obj, game.id);
-                            }
-                          }
-                        }
-                        const mapped = arr2.map(tmp53);
-                        cResult[37] = arr2;
-                        cResult[38] = mapped;
-                      } else {
-                        class F {
-                          constructor(game, arg1) {
-                            game = game.game;
-                            const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-                            return closure_1_7(closure_1_10, obj, game.id);
+                            return games;
                           }
                         }
                       }
-                      if (cResult[40] === tmp4.games) {
-                        class F {
-                          constructor(game, arg1) {
-                            game = game.game;
-                            const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-                            return closure_1_7(closure_1_10, obj, game.id);
+                      const _Symbol3 = Symbol;
+                      class S {
+                        constructor() {
+                          const globalStats = CheckpointStore.globalStats;
+                          let games;
+                          if (globalStats != null) {
+                            games = globalStats.games;
                           }
+                          return games;
                         }
-                        if (cResult[43] === tmp19) {
-                          class F {
-                            constructor(game, arg1) {
-                              game = game.game;
-                              const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-                              return closure_1_7(closure_1_10, obj, game.id);
-                            }
-                          }
-                        }
-                        const obj5 = { style: tmp24, children: items1 };
-                        items1 = [tmp49, tmp55];
-                        cResult[43] = tmp19;
-                        cResult[44] = tmp49;
-                        cResult[45] = tmp55;
-                        cResult[46] = tmp24;
-                        cResult[47] = metroImportAll(tmp19, obj5);
-                        const tmp61 = metroImportAll(tmp19, obj5);
                       }
-                      const obj6 = { style: games, children: tmp52 };
-                      cResult[40] = tmp4.games;
-                      cResult[41] = tmp52;
-                      cResult[42] = metroImportDefault(View, obj6);
-                      const tmp58 = metroImportDefault(View, obj6);
                     }
                   }
                 }
-                const obj7 = { children: items2 };
-                items2 = [tmp23, tmp39, tmp45];
-                const tmp51 = metroImportAll(tmp18, obj7);
-                cResult[32] = tmp18;
-                cResult[33] = tmp39;
-                cResult[34] = tmp45;
-                cResult[35] = tmp23;
-                cResult[36] = tmp51;
-                tmp49 = tmp51;
               }
             }
           }
         }
-        const obj8 = { accessible: flag, accessibilityLabel: combined, style: tmp4.number, children: tmp35 };
-        const tmp41 = metroImportDefault(tmp17, obj8);
-        cResult[22] = tmp17;
-        cResult[23] = tmp4.number;
-        cResult[24] = tmp35;
-        cResult[25] = flag;
-        cResult[26] = combined;
-        cResult[27] = tmp41;
-        tmp39 = tmp41;
       }
     }
   }
-  const intl = tmp(1128).intl;
-  const stringResult = intl.string(_modDef3141.HM2fjf);
+  Symbol.for("react.early_return_sentinel");
+  let intl = tmp(1128).intl;
+  let stringResult = intl.string(_modDef3088.HM2fjf);
+  if (!stateFromStores2) {
+    if (null != stateFromStores1) {
+      if (cResult[31] === tmp4.container) {
+        let tmp39;
+        let tmp44;
+        if (cResult[34] !== tmp4.globe) {
+          let obj2 = { animatedUri: null, staticUri: _modDef12984, style: tmp4.globe };
+          const tmp37Result = CheckpointApngPlayerDefault;
+          class S {
+            constructor() {
+              const globalStats = CheckpointStore.globalStats;
+              let games;
+              if (globalStats != null) {
+                games = globalStats.games;
+              }
+              return games;
+            }
+          }
+          const tmp42 = closure_7(tmp37Result, obj2);
+          cResult[34] = tmp4.globe;
+          cResult[35] = tmp42;
+          tmp39 = tmp42;
+        } else {
+          tmp39 = cResult[35];
+        }
+        const _Symbol = Symbol;
+        class S {
+          constructor() {
+            const globalStats = CheckpointStore.globalStats;
+            let games;
+            if (globalStats != null) {
+              games = globalStats.games;
+            }
+            return games;
+          }
+        }
+        if (tmp43 === Symbol.for("react.memo_cache_sentinel")) {
+          const obj3 = { children: stringResult1.toLocaleUpperCase() };
+          const tmp37Result4 = CheckpointDisplayTextDefault;
+          class S {
+            constructor() {
+              const globalStats = CheckpointStore.globalStats;
+              let games;
+              if (globalStats != null) {
+                games = globalStats.games;
+              }
+              return games;
+            }
+          }
+          stringResult1 = obj8.string(_modDef3088.qbCgI7);
+          const tmp47 = closure_7(tmp37Result4, obj3);
+          cResult[36] = tmp47;
+          tmp44 = tmp47;
+        } else {
+          tmp44 = cResult[36];
+        }
+        if (cResult[37] === tmp4.globalHeading) {
+          if (cResult[38] === tmp39) {
+            let tmp48;
+            if (cResult[39] === tmp44) {
+              tmp48 = cResult[40];
+            }
+            const _Symbol2 = Symbol;
+            class S {
+              constructor() {
+                const globalStats = CheckpointStore.globalStats;
+                let games;
+                if (globalStats != null) {
+                  games = globalStats.games;
+                }
+                return games;
+              }
+            }
+            if (cResult[42] === tmp4.header) {
+              let tmp58;
+              const games2 = tmp4.games;
+              if (cResult[45] !== stateFromStores1) {
+                const mapped = items.map((list) => {
+                  list = list.list;
+                  const first = stateFromStores1[list][0];
+                  if (null == first) {
+                    return null;
+                  } else {
+                    const intl = intl5.intl;
+                    const stringResult = intl.string(tmp);
+                    const _HermesInternal = HermesInternal;
+                    const obj = { game: first, label: stringResult.toLocaleUpperCase(), accessibilityLabel: "" + first.name + ", " + stringResult };
+                    return metroImportDefault(closure_11, obj, list);
+                  }
+                });
+                class S {
+                  constructor() {
+                    const globalStats = CheckpointStore.globalStats;
+                    let games;
+                    if (globalStats != null) {
+                      games = globalStats.games;
+                    }
+                    return games;
+                  }
+                }
+                cResult[46] = mapped;
+                tmp58 = mapped;
+              } else {
+                tmp58 = cResult[46];
+              }
+              class S {
+                constructor() {
+                  const globalStats = CheckpointStore.globalStats;
+                  let games;
+                  if (globalStats != null) {
+                    games = globalStats.games;
+                  }
+                  return games;
+                }
+              }
+              const obj4 = { style: games2, children: tmp58 };
+              cResult[47] = tmp4.games;
+              cResult[48] = tmp58;
+              cResult[49] = closure_7(View, obj4);
+              const tmp64 = closure_7(View, obj4);
+            }
+            const obj5 = { style: tmp4.header, children: items3 };
+            items3 = [tmp48, tmp53];
+            cResult[42] = tmp4.header;
+            cResult[43] = tmp48;
+            cResult[44] = closure_8(View, obj5);
+            const tmp57 = closure_8(View, obj5);
+          }
+        }
+        const obj6 = { style: tmp4.globalHeading, children: items4 };
+        items4 = [tmp39, tmp44];
+        const tmp51 = closure_8(View, obj6);
+        cResult[37] = tmp4.globalHeading;
+        cResult[38] = tmp39;
+        cResult[39] = tmp44;
+        cResult[40] = tmp51;
+        tmp48 = tmp51;
+      }
+      const items5 = [tmp4.container, ];
+      class S {
+        constructor() {
+          const globalStats = CheckpointStore.globalStats;
+          let games;
+          if (globalStats != null) {
+            games = globalStats.games;
+          }
+          return games;
+        }
+      }
+      cResult[31] = tmp4.container;
+      cResult[32] = tmp4.globalContainer;
+      cResult[33] = items5;
+    }
+    cResult[10] = stateFromStores1;
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
+      }
+    }
+    cResult[11] = stateFromStores2;
+    cResult[12] = tmp20;
+    cResult[13] = tmp4.container;
+    cResult[14] = tmp4.games;
+    cResult[15] = tmp4.globalContainer;
+    cResult[16] = tmp4.globalHeading;
+    cResult[17] = tmp4.globe;
+    cResult[18] = tmp4.header;
+    cResult[19] = tmp4.title;
+    cResult[20] = tmp4.titleText;
+    cResult[21] = tmp73;
+    cResult[22] = tmp72;
+    cResult[23] = tmp71;
+    cResult[24] = tmp70;
+    cResult[25] = flag;
+    cResult[26] = tmp69;
+    cResult[27] = tmp68;
+    cResult[28] = tmp65;
+    cResult[29] = tmp67;
+    cResult[30] = toLocaleLowerCaseResult;
+  }
   const container = tmp4.container;
-  const tmp26 = CheckpointScreenDefault;
-  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor(game, arg1) {
-        game = game.game;
-        const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-        return closure_1_7(closure_1_10, obj, game.id);
+  CheckpointScreenDefault;
+  if (cResult[54] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj7 = { size: "refresh_sm", color: null };
+    class S {
+      constructor() {
+        const globalStats = CheckpointStore.globalStats;
+        let games;
+        if (globalStats != null) {
+          games = globalStats.games;
+        }
+        return games;
       }
     }
-    const obj9 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-    const tmp30 = metroImportDefault(GameControllerIcon.GameControllerIcon, obj9);
-    cResult[19] = tmp30;
-    tmp28 = tmp30;
+    const tmp79 = closure_7(tmp(9616).GameControllerIcon, obj7);
+    cResult[54] = tmp79;
+    tmp76 = tmp79;
   } else {
-    class F {
-      constructor(game, arg1) {
-        game = game.game;
-        const obj = { game, rank: arg1 + 1, numSessions: game.numSessions };
-        return closure_1_7(closure_1_10, obj, game.id);
-      }
-    }
+    tmp76 = cResult[54];
   }
-  const obj10 = { style: tmp4.title, children: items3 };
-  items3 = [tmp28, ];
-  const obj11 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp25Result = CheckpointTextDefault;
-  items3[1] = metroImportDefault(tmp25Result, obj11);
-  const tmp32 = metroImportAll(View, obj10);
-  const toLocaleLowerCaseResult = stringResult.toLocaleLowerCase();
-  cResult[6] = tmp11;
-  cResult[7] = tmp4.container;
-  cResult[8] = tmp4.title;
-  cResult[9] = tmp4.titleText;
-  cResult[10] = View;
-  cResult[11] = View;
-  cResult[12] = View;
-  cResult[13] = tmp26;
-  cResult[14] = tmp11;
-  cResult[15] = toLocaleLowerCaseResult;
-  cResult[16] = true;
-  cResult[17] = tmp32;
-  cResult[18] = container;
-  tmp24 = container;
-  tmp23 = tmp32;
-  flag = true;
-  tmp22 = toLocaleLowerCaseResult;
-  tmp21 = tmp11;
-  tmp19 = tmp27;
-  tmp18 = tmp27;
-  tmp17 = tmp27;
+  const obj9 = { style: tmp4.title, children: items6 };
+  items6 = [tmp76, ];
+  const obj10 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
+  const tmp37Result6 = CheckpointTextDefault;
+  items6[1] = closure_7(tmp37Result6, obj10);
+  tmp69 = closure_8(View, obj9);
+  toLocaleLowerCaseResult = stringResult.toLocaleLowerCase();
 }) : (function CheckpointGamesStatsScreen() {
   let intl2;
-  let items1;
-  let items2;
+  let intl4;
   let items3;
-  let obj3;
-  const tmp = closure_9();
-  let obj = get_initialized;
-  const items = [CheckpointStore];
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
+  let items9;
+  let obj13;
+  let obj5;
+  let stateFromStores1;
+  let stringResult1;
+  const tmp = closure_10();
+  let obj = stateFromStores1(504);
+  items = [CheckpointStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    stats = stats.stats;
+    const stats = CheckpointStore.stats;
     let games;
     if (stats != null) {
       games = stats.games;
     }
     return games;
   });
+  let obj2 = stateFromStores1(504);
+  const items1 = [CheckpointStore];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const globalStats = CheckpointStore.globalStats;
+    let games;
+    if (globalStats != null) {
+      games = globalStats.games;
+    }
+    return games;
+  });
+  const items2 = [CheckpointStore];
   let num;
+  const obj3 = stateFromStores1(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => {
+    const obj = stateFromStores1(dependencyMap[11]);
+    return obj.hasCheckpointGames(CheckpointStore.stats);
+  });
   const _Math = Math;
   if (stateFromStores != null) {
     num = stateFromStores.totalGamesPlayed;
@@ -379,40 +529,89 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   if (games == null) {
     games = [];
   }
-  const intl = tmp2(1128).intl;
-  const stringResult = intl.string(_modDef3141.HM2fjf);
-  const obj2 = { children: metroImportAll(View, obj3) };
-  const obj5 = { style: tmp.title, children: items1 };
-  items1 = [, ];
-  obj3 = { style: tmp.container, children: items3 };
-  const obj4 = { children: items2 };
-  const obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-  const tmp6 = CheckpointScreenDefault;
-  items1[0] = metroImportDefault(GameControllerIcon.GameControllerIcon, obj6);
-  const obj7 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp7 = CheckpointTextDefault;
-  items1[1] = metroImportDefault(tmp7, obj7);
-  items2 = [metroImportAll(View, obj5), , ];
-  const obj8 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroImportDefault(NumberAnimationDefault, { end: roundResult }) };
-  items2[1] = metroImportDefault(View, obj8);
-  const obj9 = { variant: "heading-lg/medium", children: intl2.format(_modDef3141.aJMJ6b, { numGames: roundResult }) };
-  const tmp8 = CheckpointTextDefault;
+  let intl = tmp2(1128).intl;
+  let stringResult = intl.string(_modDef3088.HM2fjf);
+  if (!stateFromStores2) {
+    let obj4;
+    if (null != stateFromStores1) {
+      obj4 = { children: closure_8(View, obj5) };
+      obj5 = { style: items3, children: items6 };
+      items3 = [, ];
+      ({ container: arr8[0], globalContainer: arr8[1] } = tmp);
+      const obj6 = { style: tmp.header, children: items5 };
+      const obj7 = { style: tmp.globalHeading, children: items4 };
+      const obj8 = { animatedUri: _modDef12983, staticUri: _modDef12984, style: tmp.globe };
+      const tmp8Result = CheckpointApngPlayerDefault;
+      items4 = [closure_7(tmp8Result, obj8), ];
+      const obj9 = { children: stringResult1.toLocaleUpperCase() };
+      const tmp8Result5 = CheckpointDisplayTextDefault;
+      const intl3 = tmp2(1128).intl;
+      stringResult1 = intl3.string(_modDef3088.qbCgI7);
+      items4[1] = closure_7(tmp8Result5, obj9);
+      items5 = [closure_8(View, obj7), ];
+      const obj10 = { variant: "heading-lg/medium", children: intl4.string(_modDef3088["0oDeiM"]) };
+      const tmp8Result6 = CheckpointTextDefault;
+      intl4 = tmp2(1128).intl;
+      items5[1] = closure_7(tmp8Result6, obj10);
+      items6 = [closure_8(View, obj6), ];
+      const obj11 = {
+        style: tmp.games,
+        children: items.map((list) => {
+              list = list.list;
+              const first = stateFromStores1[list][0];
+              if (null == first) {
+                return null;
+              } else {
+                const intl = intl5.intl;
+                const stringResult = intl.string(tmp);
+                const _HermesInternal = HermesInternal;
+                const obj = { game: first, label: stringResult.toLocaleUpperCase(), accessibilityLabel: "" + first.name + ", " + stringResult };
+                return metroImportDefault(closure_11, obj, list);
+              }
+            })
+      };
+      items6[1] = closure_7(View, obj11);
+    }
+    return closure_7(tmp10, obj4);
+  }
+  const obj12 = { children: closure_8(View, obj13) };
+  const obj15 = { style: tmp.title, children: items7 };
+  items7 = [, ];
+  obj13 = { style: tmp.container, children: items9 };
+  const obj14 = { children: items8 };
+  const obj16 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
+  items7[0] = closure_7(stateFromStores1(9616).GameControllerIcon, obj16);
+  const obj17 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const tmp8Result7 = CheckpointTextDefault;
+  items7[1] = closure_7(tmp8Result7, obj17);
+  items8 = [closure_8(View, obj15), , ];
+  const obj18 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: closure_7(CheckpointCountUpStatNumberDefault, { end: roundResult }) };
+  items8[1] = closure_7(View, obj18);
+  const obj19 = { variant: "heading-lg/medium", children: intl2.format(_modDef3088.aJMJ6b, { numGames: roundResult }) };
+  const tmp8Result8 = CheckpointTextDefault;
   intl2 = tmp2(1128).intl;
-  items2[2] = metroImportDefault(tmp8, obj9);
-  items3 = [metroImportAll(View, obj4), ];
-  const obj10 = {
+  items8[2] = closure_7(tmp8Result8, obj19);
+  items9 = [closure_8(View, obj14), ];
+  const obj20 = {
     style: tmp.games,
     children: games.map((game, index) => {
+      let intl;
+      let obj2;
       game = game.game;
-      const obj = { game, rank: index + 1, numSessions: game.numSessions };
-      return closure_1_7(closure_1_10, obj, game.id);
+      const sum = index + 1;
+      const rounded = Math.round(game.numSessions);
+      const obj = { game, rank: sum, label: rounded, accessibilityLabel: intl.formatToPlainString(_modDef3088.mqdLhl, obj2) };
+      intl = stateFromStores1(dependencyMap[12]).intl;
+      obj2 = { gameName: game.name, rank: sum, numSessions: rounded };
+      return closure_1_7(closure_1_11, obj, game.id);
     })
   };
-  items3[1] = metroImportDefault(View, obj10);
-  return metroImportDefault(tmp6, obj2);
+  items9[1] = closure_7(View, obj20);
+  obj4 = obj12;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCard(arg0) {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCard(arg0) {
+  let accessibilityLabel;
   let coverImageHash;
   let first;
   let game;
@@ -422,27 +621,27 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
   let items2;
   let items3;
   let items4;
+  let label;
   let name;
-  let numSessions;
-  let obj7;
+  let obj6;
   let rank;
   let tmp13;
   let tmp7;
   const obj = id(576);
-  const cResult = obj.c(43);
-  ({ game, rank, numSessions } = arg0);
+  const cResult = obj.c(34);
+  ({ game, rank, label, accessibilityLabel } = arg0);
   id = game.id;
   ({ name, iconHash, coverImageHash } = game);
-  const tmp4 = closure_9();
+  const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameStore];
+    items = [GameStore];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== id) {
-    const fn = function l() {
+    const fn = function o() {
       return GameStore.getCoverImageUrl(id);
     };
     cResult[1] = id;
@@ -457,171 +656,138 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     if (cResult[4] === stateFromStores) {
       if (cResult[5] === iconHash) {
         let tmp9;
+        let tmp18;
         if (cResult[6] === id) {
           tmp9 = cResult[7];
         }
-        if (cResult[8] === name) {
-          if (cResult[9] === numSessions) {
+        if (cResult[8] === tmp9) {
+          if (cResult[9] === tmp4.coverImage) {
             let tmp14;
-            let tmp15;
-            let flag;
-            let tmp16;
-            let tmp25;
-            if (cResult[10] === rank) {
+            if (cResult[10] === tmp4.unknownCover) {
               tmp14 = cResult[11];
-              tmp15 = cResult[12];
-              flag = cResult[13];
-              tmp16 = cResult[14];
             }
-            if (cResult[15] === tmp9) {
-              if (cResult[16] === tmp4.coverImage) {
-                let tmp21;
-                if (cResult[17] === tmp4.unknownCover) {
-                  tmp21 = cResult[18];
-                }
-                if (cResult[19] === rank) {
-                  let tmp29;
-                  if (cResult[20] === tmp4.rank) {
-                    tmp29 = cResult[21];
+            if (cResult[12] === rank) {
+              let tmp22;
+              if (cResult[13] === tmp4.rank) {
+                tmp22 = cResult[14];
+              }
+              if (cResult[15] === tmp4.cover) {
+                if (cResult[16] === tmp14) {
+                  let tmp27;
+                  if (cResult[17] === tmp22) {
+                    tmp27 = cResult[18];
                   }
-                  if (cResult[22] === tmp4.cover) {
-                    if (cResult[23] === tmp21) {
-                      let tmp33;
-                      if (cResult[24] === tmp29) {
-                        tmp33 = cResult[25];
+                  if (cResult[19] === name) {
+                    let tmp31;
+                    if (cResult[20] === tmp4.gameName) {
+                      tmp31 = cResult[21];
+                    }
+                    if (cResult[22] === label) {
+                      let tmp34;
+                      if (cResult[23] === tmp4.gameLabel) {
+                        tmp34 = cResult[24];
                       }
-                      if (cResult[26] === name) {
-                        let tmp37;
-                        if (cResult[27] === tmp4.gameName) {
-                          tmp37 = cResult[28];
-                        }
-                        if (cResult[29] === tmp15) {
-                          let tmp40;
-                          if (cResult[30] === tmp4.gameSessions) {
-                            tmp40 = cResult[31];
+                      if (cResult[25] === tmp4.gameText) {
+                        if (cResult[26] === tmp31) {
+                          let tmp38;
+                          if (cResult[27] === tmp34) {
+                            tmp38 = cResult[28];
                           }
-                          if (cResult[32] === tmp4.gameText) {
-                            if (cResult[33] === tmp37) {
-                              let tmp44;
-                              if (cResult[34] === tmp40) {
-                                tmp44 = cResult[35];
-                              }
-                              if (cResult[36] === tmp14) {
-                                if (cResult[37] === tmp4.game) {
-                                  if (cResult[38] === tmp44) {
-                                    if (cResult[39] === flag) {
-                                      if (cResult[40] === tmp16) {
-                                        let tmp48;
-                                        if (cResult[41] === tmp33) {
-                                          tmp48 = cResult[42];
-                                        }
-                                        return tmp48;
-                                      }
-                                    }
-                                  }
+                          if (cResult[29] === accessibilityLabel) {
+                            if (cResult[30] === tmp4.game) {
+                              if (cResult[31] === tmp38) {
+                                let tmp42;
+                                if (cResult[32] === tmp27) {
+                                  tmp42 = cResult[33];
                                 }
+                                return tmp42;
                               }
-                              const obj2 = { accessible: flag, accessibilityLabel: tmp16, style: tmp4.game, children: items1 };
-                              items1 = [tmp33, tmp44];
-                              const tmp50 = closure_8(tmp14, obj2);
-                              cResult[36] = tmp14;
-                              cResult[37] = tmp4.game;
-                              cResult[38] = tmp44;
-                              cResult[39] = flag;
-                              cResult[40] = tmp16;
-                              cResult[41] = tmp33;
-                              cResult[42] = tmp50;
-                              tmp48 = tmp50;
                             }
                           }
-                          const obj3 = { style: tmp4.gameText, children: items2 };
-                          items2 = [tmp37, tmp40];
-                          const tmp47 = closure_8(View, obj3);
-                          cResult[32] = tmp4.gameText;
-                          cResult[33] = tmp37;
-                          cResult[34] = tmp40;
-                          cResult[35] = tmp47;
-                          tmp44 = tmp47;
+                          const obj2 = { accessible: true, accessibilityLabel, style: tmp4.game, children: items1 };
+                          items1 = [tmp27, tmp38];
+                          const tmp45 = closure_8(View, obj2);
+                          cResult[29] = accessibilityLabel;
+                          cResult[30] = tmp4.game;
+                          cResult[31] = tmp38;
+                          cResult[32] = tmp27;
+                          cResult[33] = tmp45;
+                          tmp42 = tmp45;
                         }
-                        const obj4 = { variant: "experimental/mono-md/bold", style: tmp4.gameSessions, children: tmp15 };
-                        const tmp43 = closure_7(CheckpointTextDefault, obj4);
-                        cResult[29] = tmp15;
-                        cResult[30] = tmp4.gameSessions;
-                        cResult[31] = tmp43;
-                        tmp40 = tmp43;
                       }
-                      const obj5 = { variant: "text-md/semibold", style: tmp4.gameName, lineClamp: 2, children: name };
-                      const tmp39 = closure_7(id(5187).Text, obj5);
-                      cResult[26] = name;
-                      cResult[27] = tmp4.gameName;
-                      cResult[28] = tmp39;
-                      tmp37 = tmp39;
+                      const obj3 = { style: tmp4.gameText, children: items2 };
+                      items2 = [tmp31, tmp34];
+                      const tmp41 = closure_8(View, obj3);
+                      cResult[25] = tmp4.gameText;
+                      cResult[26] = tmp31;
+                      cResult[27] = tmp34;
+                      cResult[28] = tmp41;
+                      tmp38 = tmp41;
                     }
+                    const obj4 = { variant: "experimental/mono-md/bold", style: tmp4.gameLabel, children: label };
+                    const tmp37 = closure_7(CheckpointTextDefault, obj4);
+                    cResult[22] = label;
+                    cResult[23] = tmp4.gameLabel;
+                    cResult[24] = tmp37;
+                    tmp34 = tmp37;
                   }
-                  const obj6 = { style: tmp4.cover, children: items3 };
-                  items3 = [tmp21, tmp29];
-                  const tmp36 = closure_8(View, obj6);
-                  cResult[22] = tmp4.cover;
-                  cResult[23] = tmp21;
-                  cResult[24] = tmp29;
-                  cResult[25] = tmp36;
-                  tmp33 = tmp36;
+                  const obj5 = { variant: "text-md/semibold", style: tmp4.gameName, lineClamp: 2, children: name };
+                  const tmp33 = closure_7(id(5234).Text, obj5);
+                  cResult[19] = name;
+                  cResult[20] = tmp4.gameName;
+                  cResult[21] = tmp33;
+                  tmp31 = tmp33;
                 }
-                const obj8 = { rank, style: tmp4.rank };
-                const tmp32 = closure_7(CheckpointRankTagDefault, obj8);
-                cResult[19] = rank;
-                cResult[20] = tmp4.rank;
-                cResult[21] = tmp32;
-                tmp29 = tmp32;
               }
+              const obj7 = { style: tmp4.cover, children: items3 };
+              items3 = [tmp14, tmp22];
+              const tmp30 = closure_8(View, obj7);
+              cResult[15] = tmp4.cover;
+              cResult[16] = tmp14;
+              cResult[17] = tmp22;
+              cResult[18] = tmp30;
+              tmp27 = tmp30;
             }
-            if (null != tmp9) {
-              const obj9 = { source: obj7.makeSource(tmp9), style: tmp4.coverImage, resizeMode: "cover" };
-              const tmp28 = FastImageDefault;
-              obj7 = AvatarUtilsDefault;
-              tmp25 = closure_7(tmp28, obj9);
-            } else {
-              const obj10 = { style: items4, children: closure_7(id(7955).UnknownGameIcon, { size: "lg" }) };
-              items4 = [, ];
-              ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp4);
-              tmp25 = closure_7(View, obj10);
+            let tmp24 = null != rank;
+            if (tmp24) {
+              const obj8 = { rank, style: tmp4.rank };
+              tmp24 = closure_7(CheckpointRankTagDefault, obj8);
             }
-            cResult[15] = tmp9;
-            cResult[16] = tmp4.coverImage;
-            cResult[17] = tmp4.unknownCover;
-            cResult[18] = tmp25;
-            tmp21 = tmp25;
+            cResult[12] = rank;
+            cResult[13] = tmp4.rank;
+            cResult[14] = tmp24;
+            tmp22 = tmp24;
           }
         }
-        const _Math = Math;
-        const rounded = Math.round(numSessions);
-        const intl = tmp(1128).intl;
-        const obj11 = { gameName: name, rank, numSessions: rounded };
-        const formatToPlainStringResult = intl.formatToPlainString(_modDef3141.mqdLhl, obj11);
-        cResult[8] = name;
-        cResult[9] = numSessions;
-        cResult[10] = rank;
-        cResult[11] = View;
-        cResult[12] = rounded;
-        cResult[13] = true;
-        cResult[14] = formatToPlainStringResult;
-        tmp16 = formatToPlainStringResult;
-        flag = true;
-        tmp15 = rounded;
-        tmp14 = View;
+        if (null != tmp9) {
+          const obj9 = { source: obj6.makeSource(tmp9), style: tmp4.coverImage, resizeMode: "cover" };
+          const tmp21 = FastImageDefault;
+          obj6 = AvatarUtilsDefault;
+          tmp18 = closure_7(tmp21, obj9);
+        } else {
+          const obj10 = { style: items4, children: closure_7(id(8074).UnknownGameIcon, { size: "lg" }) };
+          items4 = [, ];
+          ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp4);
+          tmp18 = closure_7(View, obj10);
+        }
+        cResult[8] = tmp9;
+        cResult[9] = tmp4.coverImage;
+        cResult[10] = tmp4.unknownCover;
+        cResult[11] = tmp18;
+        tmp14 = tmp18;
       }
     }
   }
   let applicationIconURL = stateFromStores;
   if (stateFromStores == null) {
-    const obj12 = { id, icon: tmp13, fallbackAvatar: false };
+    const obj11 = { id, icon: tmp13, fallbackAvatar: false };
     tmp13 = coverImageHash;
     const getApplicationIconURL = AvatarUtilsDefault.getApplicationIconURL;
     AvatarUtilsDefault;
     if (coverImageHash == null) {
       tmp13 = iconHash;
     }
-    applicationIconURL = getApplicationIconURL(obj12);
+    applicationIconURL = getApplicationIconURL(obj11);
   }
   cResult[3] = coverImageHash;
   cResult[4] = stateFromStores;
@@ -630,24 +796,25 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
   cResult[7] = applicationIconURL;
   tmp9 = applicationIconURL;
 }) : (function GameCard(game) {
-  let coverImageHash;
-  let intl;
+  let accessibilityLabel;
+  let iconHash;
   let items1;
   let items2;
   let items3;
   let items4;
+  let label;
   let name;
-  let tmp10Result2;
+  let obj7;
+  let tmp10;
   let tmp11;
-  let tmp12;
   game = game.game;
   const id = game.id;
-  ({ name, coverImageHash } = game);
+  let coverImageHash = game.coverImageHash;
   const rank = game.rank;
-  const iconHash = game.iconHash;
-  const numSessions = game.numSessions;
-  const tmp = closure_9();
-  const items = [GameStore];
+  ({ name, iconHash } = game);
+  ({ label, accessibilityLabel } = game);
+  const tmp = closure_10();
+  items = [GameStore];
   const obj = id(504);
   let stateFromStores = obj.useStateFromStores(items, () => GameStore.getCoverImageUrl(id));
   if (stateFromStores == null) {
@@ -659,34 +826,36 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     }
     stateFromStores = getApplicationIconURL(obj2);
   }
-  const rounded = Math.round(numSessions);
-  const obj3 = { accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef3141.mqdLhl, { gameName: name, rank, numSessions: rounded }), style: tmp.game, children: items3 };
-  intl = tmp2(1128).intl;
+  const obj3 = { accessible: true, accessibilityLabel, style: tmp.game, children: items3 };
   const obj4 = { style: tmp.cover, children: items2 };
   if (null != stateFromStores) {
-    const obj5 = { source: tmp10Result2.makeSource(stateFromStores), style: tmp.coverImage, resizeMode: "cover" };
-    const tmp10Result = FastImageDefault;
-    tmp10Result2 = AvatarUtilsDefault;
-    tmp12 = closure_7(tmp10Result, obj5);
-    tmp11 = closure_7;
+    const obj5 = { source: obj7.makeSource(stateFromStores), style: tmp.coverImage, resizeMode: "cover" };
+    const tmp14 = FastImageDefault;
+    obj7 = AvatarUtilsDefault;
+    tmp11 = closure_7(tmp14, obj5);
+    tmp10 = closure_7;
   } else {
-    tmp11 = closure_7;
-    const obj6 = { style: items1, children: closure_7(id(7955).UnknownGameIcon, { size: "lg" }) };
+    const obj6 = { style: items1, children: closure_7(id(8074).UnknownGameIcon, { size: "lg" }) };
     items1 = [, ];
     ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp);
-    tmp12 = closure_7(tmp9, obj6);
+    tmp10 = closure_7;
+    tmp11 = closure_7(tmp8, obj6);
   }
-  items2 = [tmp12, ];
-  const obj7 = { rank, style: tmp.rank };
-  items2[1] = tmp11(CheckpointRankTagDefault, obj7);
+  items2 = [tmp11, ];
+  let tmp10Result = null != rank;
+  if (tmp10Result) {
+    const obj8 = { rank, style: tmp.rank };
+    tmp10Result = tmp10(CheckpointRankTagDefault, obj8);
+  }
+  items2[1] = tmp10Result;
   items3 = [closure_8(View, obj4), ];
-  const obj8 = { style: tmp.gameText, children: items4 };
+  const obj9 = { style: tmp.gameText, children: items4 };
   items4 = [, ];
-  const obj9 = { variant: "text-md/semibold", style: tmp.gameName, lineClamp: 2, children: name };
-  items4[0] = tmp11(id(5187).Text, obj9);
-  const obj10 = { variant: "experimental/mono-md/bold", style: tmp.gameSessions, children: rounded };
-  items4[1] = tmp11(CheckpointTextDefault, obj10);
-  items3[1] = closure_8(View, obj8);
+  const obj10 = { variant: "text-md/semibold", style: tmp.gameName, lineClamp: 2, children: name };
+  items4[0] = tmp10(id(5234).Text, obj10);
+  const obj11 = { variant: "experimental/mono-md/bold", style: tmp.gameLabel, children: label };
+  items4[1] = tmp10(CheckpointTextDefault, obj11);
+  items3[1] = closure_8(View, obj9);
   return closure_8(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointGamesStatsScreen.tsx");

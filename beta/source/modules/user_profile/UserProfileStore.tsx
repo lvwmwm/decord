@@ -1,24 +1,24 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7703
+// Function ID: 7704
 // Name: UserProfileStore
-// Dependencies: [2132, 1406, 502, 2090, 1086, 5207, 6219, 1087, 7587, 12, 7588, 7591, 7592, 7594, 1388, 2063, 1995, 1988, 7595, 1128, 7596, 6019, 2]
+// Dependencies: [2068, 1406, 502, 4845, 1086, 5712, 6701, 1087, 7704, 12, 7705, 7708, 7709, 7711, 1388, 4818, 1995, 1988, 7712, 1128, 7713, 6502, 7714, 2]
 
-// Module 7586 (UserProfileStore)
+// Module 7703 (UserProfileStore)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import Timers from "Timers" /* 2063 */;
-import WidgetType from "WidgetType" /* 7587 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7595 */;
-import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7596 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import Timers from "Timers" /* 4818 */;
+import WidgetType from "WidgetType" /* 7704 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7712 */;
+import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7713 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1086 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import PresenceStore from "PresenceStore" /* 5712 */;
+import SortedGuildStore from "SortedGuildStore" /* 6701 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,15 +26,15 @@ let _require, c24, set2, set3;
 
 let tmp;
 const GlobalUtils = tmp(1388);
-const UserProfileGameWidgetTypes = tmp(7588);
-const UserProfileApplicationWidgetTypes = tmp(7591);
-const UserProfilePersonalWidget2 = tmp(7592);
-const UserProfileClipsGalleryWidgetTypes = tmp(7594);
-const f97616 = (user) => {
+const UserProfileGameWidgetTypes = tmp(7705);
+const UserProfileApplicationWidgetTypes = tmp(7708);
+const UserProfilePersonalWidget2 = tmp(7709);
+const UserProfileClipsGalleryWidgetTypes = tmp(7711);
+const f99410 = (user) => {
   const str = user.user.username;
   return str.toLowerCase();
 };
-const f97622 = (id) => id.id;
+const f99416 = (id) => id.id;
 function createUserWidgetFromServer(data) {
   let mapped;
   let str;
@@ -120,21 +120,21 @@ function createUserWidgetFromSnapshot(type) {
             const self5 = this;
             const self6 = this;
             const obj2 = { id: id3, applicationId };
-            const applicationWidget = new tmp(7591).ApplicationWidget(obj2);
+            const applicationWidget = new tmp(7708).ApplicationWidget(obj2);
             return applicationWidget;
           } else if (WidgetType.WidgetType.PERSONAL === type) {
             ({ id: id2, header, sections } = type);
             const self3 = this;
             const self4 = this;
             const obj3 = { id: id2, header, sections };
-            const userProfilePersonalWidget = new tmp(7592).UserProfilePersonalWidget(obj3);
+            const userProfilePersonalWidget = new tmp(7709).UserProfilePersonalWidget(obj3);
             return userProfilePersonalWidget;
           } else if (WidgetType.WidgetType.CLIPS_GALLERY === type) {
             ({ id, clips } = type);
             const self = this;
             const self2 = this;
             obj = { id, clips };
-            const clipsGalleryWidget = new tmp(7594).ClipsGalleryWidget(obj);
+            const clipsGalleryWidget = new tmp(7711).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           } else {
             const type2 = type.type;
@@ -145,7 +145,7 @@ function createUserWidgetFromSnapshot(type) {
   }
   ({ id: id4, type: type3, games } = type);
   const obj4 = { id: id4, type: type3, games };
-  const baseGameWidget = new tmp(7588).BaseGameWidget(obj4);
+  const baseGameWidget = new tmp(7705).BaseGameWidget(obj4);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -294,7 +294,7 @@ function handleMutualFriendsFetchSuccess(userId) {
     new UserRecord(obj2);
     return obj;
   });
-  const iter = mapped.sortBy(f97616);
+  const iter = mapped.sortBy(f99410);
   const result = set(userId, iter.value());
   const result1 = map4.set(userId.userId, userId.mutualFriends.length);
 }
@@ -307,6 +307,7 @@ function handleProfileFetch(arg0) {
   let found3;
   let guildId;
   let mapped1;
+  let obj4;
   let prop;
   let prop1;
   let prop2;
@@ -376,7 +377,7 @@ function handleProfileFetch(arg0) {
       new UserRecord(obj2);
       return obj;
     });
-    const iter = mapped.sortBy(f97616);
+    const iter = mapped.sortBy(f99410);
     set3(id3, iter.value());
     const result3 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
@@ -443,7 +444,7 @@ function handleProfileFetch(arg0) {
       const _Set = Set;
       const self7 = this;
       const self8 = this;
-      new Set(mapped1.map(f97622));
+      new Set(mapped1.map(f99416));
       let found1;
       if (c24 != null) {
         const badges1 = tmp58.badges;
@@ -458,7 +459,7 @@ function handleProfileFetch(arg0) {
     }
   }
   const timestamp = Date.now();
-  obj = { userId: userProfile.user.id, banner, accentColor: accent_color, themeColors: theme_colors, popoutAnimationParticleType: prop, bio: str, pronouns: str2, connectedAccounts: found2, applicationRoleConnections: prop1, premiumSince: date, premiumType: userProfile.premium_type, premiumGuildSince: date1, fetchStartedAt, fetchEndedAt: timestamp, legacyUsername: userProfile.legacy_username, application: tmp38, badges: mapped1, widgets: found3 };
+  obj = { userId: userProfile.user.id, banner, accentColor: accent_color, themeColors: theme_colors, popoutAnimationParticleType: prop, bio: str, pronouns: str2, connectedAccounts: found2, applicationRoleConnections: prop1, premiumSince: date, premiumType: userProfile.premium_type, premiumGuildSince: date1, fetchStartedAt, fetchEndedAt: timestamp, legacyUsername: userProfile.legacy_username, application: tmp38, badges: mapped1, widgets: found3, wishlistSettings: userProfile.wishlist_settings, profileReadState: obj4.parseProfileReadState(userProfile.profile_read_state), private: userProfile.private };
   const id2 = userProfile.user.id;
   set2 = map1.set;
   let merged = Object.assign(date(date1[20])(userProfile.user_profile));
@@ -513,9 +514,9 @@ function handleProfileFetch(arg0) {
   }
   tmp38 = null;
   if (null != application) {
-    let obj5 = { id: null, primarySkuId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, flags: null, embeddedSurfaces: null, popularApplicationCommandIds: null, storefront_available: null, name: null, termsOfServiceUrl: null, privacyPolicyUrl: null };
+    let obj2 = { id: null, primarySkuId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, flags: null, embeddedSurfaces: null, popularApplicationCommandIds: null, storefront_available: null, name: null, termsOfServiceUrl: null, privacyPolicyUrl: null };
     ({ id: obj3.id, primary_sku_id: obj3.primarySkuId, custom_install_url: obj3.customInstallUrl, install_params: obj3.installParams, integration_types_config: obj3.integrationTypesConfig, flags: obj3.flags, embedded_surfaces: obj3.embeddedSurfaces, popular_application_command_ids: obj3.popularApplicationCommandIds, storefront_available: obj3.storefront_available, name: obj3.name, terms_of_service_url: obj3.termsOfServiceUrl, privacy_policy_url: obj3.privacyPolicyUrl } = application);
-    tmp38 = obj5;
+    tmp38 = obj2;
   }
   const widgets = userProfile.widgets;
   found3 = undefined;
@@ -523,7 +524,7 @@ function handleProfileFetch(arg0) {
     const mapped2 = widgets.map(createUserWidgetFromServer);
     found3 = mapped2.filter(require("GlobalUtils").isNotNullish);
   }
-  ({ wishlist_settings: obj2.wishlistSettings, private: obj2.private } = userProfile);
+  obj4 = require("ProfileReadStateUtils");
   set2(id2, obj);
   checkUserProfileCollectiblesExpiration(userProfile.user.id);
   const tmp43 = checkUserProfileCollectiblesExpiration;
@@ -540,7 +541,7 @@ function handleProfileFetch(arg0) {
     if (guild_member_profile2 != null) {
       prop2 = guild_member_profile2.popout_animation_particle_type;
     }
-    let obj4 = map2;
+    let obj5 = map2;
     const value2 = map2.get(userProfile.user.id);
     if (null != value2) {
       const result4 = value2.set(userProfile.guild_member_profile.guild_id, obj6);
@@ -550,7 +551,7 @@ function handleProfileFetch(arg0) {
       const self6 = this;
       map = new Map();
       const result5 = map.set(userProfile.guild_member_profile.guild_id, obj6);
-      const result6 = obj4.set(userProfile.user.id, map);
+      const result6 = obj5.set(userProfile.user.id, map);
     }
     tmp43(userProfile.user.id, userProfile.guild_member_profile.guild_id);
   }
@@ -717,7 +718,7 @@ function handlePinBadgesToProfile(badges) {
       let found;
       const self = this;
       const self2 = this;
-      const set1 = new Set(badges.map(f97622));
+      const set1 = new Set(badges.map(f99416));
       if (obj != null) {
         const badges1 = tmp3.badges;
         found = badges1.filter((id) => !set1.has(id.id));
@@ -955,6 +956,20 @@ class UserProfileStore extends MobileCacheSnapshotStore {
       const wishlistSettings = value.wishlistSettings;
       if (wishlistSettings != null) {
         tmp2 = wishlistSettings[wishlistId];
+      }
+    }
+    if (tmp2 == null) {
+      tmp2 = null;
+    }
+    return tmp2;
+  }
+  getProfileReadStateSectionAckedAt(arg0, arg1) {
+    const value = map1.get(arg0);
+    let tmp2;
+    if (value != null) {
+      const profileReadState = value.profileReadState;
+      if (profileReadState != null) {
+        tmp2 = profileReadState[arg1];
       }
     }
     if (tmp2 == null) {

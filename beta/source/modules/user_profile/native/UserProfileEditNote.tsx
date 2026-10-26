@@ -1,17 +1,17 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 14342
+// Function ID: 14343
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1087, 21, 5191, 558, 576, 1505, 14102, 14107, 6478, 10851, 9599, 1128, 5187, 7051, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 1505, 14338, 14343, 6924, 11071, 7485, 1128, 5234, 7180, 2]
 
-// Module 14106 (UserProfileEditNote)
+// Module 14342 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
-import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 14107 */;
+import NavigatorHeader from "NavigatorHeader" /* 6924 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 14343 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,22 +81,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             setOptions = closure_4.setOptions;
             obj2 = closure_0(closure_2[11]);
             obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-              const promise = new Promise(() => { /* body not rendered: F157726 */ });
+              const promise = new Promise(() => { /* body not rendered: F160779 */ });
               return promise;
             });
-            obj.headerRight = function headerRight(arg0) {
+            obj.headerRight = function headerRight() {
               let intl;
               let str;
-              const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157727 */ } };
-              const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
-              const merged = Object.assign(arg0);
+              const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160780 */ } };
+              const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
               intl = userId(onClose[14]).intl;
               str = note;
               const tmp = closure_7;
               if (note == null) {
                 str = "";
               }
-              return tmp(HeaderTextButton, obj);
+              return tmp(HeaderActionButton, obj);
             };
             setOptionsResult = setOptions(obj);
             return;
@@ -139,22 +138,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           setOptions = closure_4.setOptions;
           obj2 = closure_0(closure_2[11]);
           obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-            const promise = new Promise(() => { /* body not rendered: F157726 */ });
+            const promise = new Promise(() => { /* body not rendered: F160779 */ });
             return promise;
           });
-          obj.headerRight = function headerRight(arg0) {
+          obj.headerRight = function headerRight() {
             let intl;
             let str;
-            const obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F157727 */ } };
-            const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
-            const merged = Object.assign(arg0);
+            const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F160780 */ } };
+            const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
             intl = userId(onClose[14]).intl;
             str = note;
             const tmp = closure_7;
             if (note == null) {
               str = "";
             }
-            return tmp(HeaderTextButton, obj);
+            return tmp(HeaderActionButton, obj);
           };
           setOptionsResult = setOptions(obj);
           return;
@@ -268,11 +266,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         });
         return promise;
       }),
-      headerRight(arg0) {
+      headerRight() {
         let intl;
         let str;
         const obj = {
-          label: intl.string(userId(onClose[14]).t["R3BPH+"]),
+          text: intl.string(userId(onClose[14]).t["R3BPH+"]),
           disabled: str === first,
           onPress() {
             closure_1_8();
@@ -281,15 +279,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             }
           }
         };
-        const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
-        const merged = Object.assign(arg0);
+        const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
         intl = userId(onClose[14]).intl;
         str = note;
         const tmp = closure_7;
         if (note == null) {
           str = "";
         }
-        return tmp(HeaderTextButton, obj);
+        return tmp(HeaderActionButton, obj);
       }
     };
     const setOptions = navigation.setOptions;

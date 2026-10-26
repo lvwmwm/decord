@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "99ca2b0cb6c6ab32f98726cbd8d2cd48", name: "pl.messages.99ca2b0cb6c6ab32f98726cbd8d2cd48.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce6df62bb592b89e09867505a632d8fe", name: "EyeDropperIcon", type: "png" });

@@ -1,14 +1,14 @@
-// Module ID: 14835
-// Function ID: 14836
+// Module ID: 15069
+// Function ID: 15070
 // Name: HubLinkNoticeStore
-// Dependencies: [7186, 2090, 1087, 504, 584, 2]
+// Dependencies: [7309, 4845, 1087, 504, 584, 2]
 
-// Module 14835 (HubLinkNoticeStore)
+// Module 15069 (HubLinkNoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import HotspotStore from "hotspot/HotspotStore" /* 7186 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import HotspotStore from "hotspot/HotspotStore" /* 7309 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 function checkGuildIsHub(id) {

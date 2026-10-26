@@ -1,16 +1,16 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 17137
+// Function ID: 17138
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 558, 576, 8855, 5477, 587, 5187, 8857, 7369, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8951, 5977, 587, 5234, 8953, 7489, 2]
 
-// Module 16841 (UserSettingsDesignSystemRowButton)
+// Module 17137 (UserSettingsDesignSystemRowButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Stack_Stack from "Stack/Stack" /* 5477 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7369 */;
-import Form from "Form" /* 8855 */;
-import RowButton8 from "RowButton" /* 8857 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import Stack_Stack from "Stack/Stack" /* 5977 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7489 */;
+import Form from "Form" /* 8951 */;
+import RowButton8 from "RowButton" /* 8953 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,10 +46,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: "Row Buttons", description: metroRequire(Stack, obj3), children: hasOwnProperty(_false, {}) };
-    const FormSection = tmp(8855).FormSection;
+    const FormSection = tmp(8951).FormSection;
     obj3 = { style: obj4, children: items };
     obj4 = { padding: nativeDefault.space.PX_16 };
-    Stack = tmp(5477).Stack;
+    Stack = tmp(5977).Stack;
     items = [hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
     const tmp9 = hasOwnProperty(FormSection, obj2);
     cResult[0] = tmp9;
@@ -73,7 +73,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
 
         }
     };
-    const RowButton = tmp(8857).RowButton;
+    const RowButton = tmp(8953).RowButton;
     const tmp14 = hasOwnProperty(RowButton, obj6);
     cResult[2] = tmp14;
     tmp11 = tmp14;
@@ -90,7 +90,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
 
         }
     };
-    const RowButton2 = tmp(8857).RowButton;
+    const RowButton2 = tmp(8953).RowButton;
     const tmp18 = hasOwnProperty(RowButton2, obj7);
     cResult[3] = tmp18;
     tmp15 = tmp18;
@@ -106,7 +106,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
 
         }
     };
-    const RowButton3 = tmp(8857).RowButton;
+    const RowButton3 = tmp(8953).RowButton;
     const tmp22 = hasOwnProperty(RowButton3, obj8);
     cResult[4] = tmp22;
     tmp19 = tmp22;
@@ -122,7 +122,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
 
         }
     };
-    const RowButton4 = tmp(8857).RowButton;
+    const RowButton4 = tmp(8953).RowButton;
     const tmp26 = hasOwnProperty(RowButton4, obj9);
     cResult[5] = tmp26;
     tmp23 = tmp26;
@@ -138,7 +138,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
 
         }
     };
-    const RowButton5 = tmp(8857).RowButton;
+    const RowButton5 = tmp(8953).RowButton;
     const tmp30 = hasOwnProperty(RowButton5, obj10);
     cResult[6] = tmp30;
     tmp27 = tmp30;
@@ -147,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj11 = { source: AssetRegistryDefault };
-    const Icon = tmp(8857).RowButton.Icon;
+    const Icon = tmp(8953).RowButton.Icon;
     const tmp34 = hasOwnProperty(Icon, obj11);
     cResult[7] = tmp34;
     tmp31 = tmp34;
@@ -175,7 +175,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const obj14 = { style: tmp10, children: metroRequire(Stack2, obj15) };
     obj15 = { children: items2 };
     items2 = [tmp11, tmp15, tmp19, tmp23, tmp27, tmp35, ];
-    Stack2 = tmp(5477).Stack;
+    Stack2 = tmp(5977).Stack;
     const obj16 = {
       icon: AssetRegistryDefault,
       label: "Row Button",
@@ -185,7 +185,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         },
       disabled: true
     };
-    const RowButton6 = tmp(8857).RowButton;
+    const RowButton6 = tmp(8953).RowButton;
     items2[6] = hasOwnProperty(RowButton6, obj16);
     items1[1] = hasOwnProperty(_false, obj14);
     const tmp44 = metroRequire(React3, obj13);

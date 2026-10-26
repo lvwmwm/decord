@@ -1,16 +1,16 @@
-// Module ID: 13541
-// Function ID: 13542
+// Module ID: 19338
+// Function ID: 19339
 // Name: notificationSettingsGuildFlagUtils
-// Dependencies: [6222, 1087, 1097, 8181, 7086, 10772, 7081, 558, 576, 573, 2]
+// Dependencies: [6704, 1087, 1097, 8299, 7215, 10992, 7210, 558, 576, 573, 2]
 // Exports: updateGuildPreset
 
-// Module 13541 (notificationSettingsGuildFlagUtils)
+// Module 19338 (notificationSettingsGuildFlagUtils)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8181 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10772 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7215 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8299 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10992 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -109,36 +109,36 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPr
 });
 let result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsGuildFlagUtils.tsx");
 
-export const updateGuildPreset = function updateGuildPreset(guildId, arg1) {
+export const updateGuildPreset = function updateGuildPreset(guildId, MENTIONS) {
   let tmp2Result;
   let tmp2Result4;
   let tmp2Result5;
   let tmp2Result6;
   const guildFlags = UserGuildSettingsStore.getGuildFlags(guildId);
-  if (arg1 === notificationSettingsPresetUtils.Presets.ALL_MESSAGES) {
+  if (MENTIONS === notificationSettingsPresetUtils.Presets.ALL_MESSAGES) {
     const obj2 = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: tmp2Result.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES) };
     const updateGuildNotificationSettings3 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result = notificationSettingsFlagUtils;
-    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7081).NotificationLabels.PresetAll);
-  } else if (arg1 === notificationSettingsPresetUtils.Presets.HYBRID) {
+    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7210).NotificationLabels.PresetAll);
+  } else if (MENTIONS === notificationSettingsPresetUtils.Presets.HYBRID) {
     const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result4.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES) };
     const updateGuildNotificationSettings2 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result4 = notificationSettingsFlagUtils;
-    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7081).NotificationLabels.PresetHybrid);
-  } else if (arg1 === notificationSettingsPresetUtils.Presets.MENTIONS) {
+    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7210).NotificationLabels.PresetHybrid);
+  } else if (MENTIONS === notificationSettingsPresetUtils.Presets.MENTIONS) {
     const obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result5.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result5 = notificationSettingsFlagUtils;
-    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7081).NotificationLabels.PresetMentions);
-  } else if (arg1 === notificationSettingsPresetUtils.Presets.NOTHING) {
+    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7210).NotificationLabels.PresetMentions);
+  } else if (MENTIONS === notificationSettingsPresetUtils.Presets.NOTHING) {
     const obj4 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: tmp2Result6.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings4 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result6 = notificationSettingsFlagUtils;
-    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7081).NotificationLabels.PresetNothing);
+    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7210).NotificationLabels.PresetNothing);
   }
 };
 export const useGuildPresetSettings = tmp2;

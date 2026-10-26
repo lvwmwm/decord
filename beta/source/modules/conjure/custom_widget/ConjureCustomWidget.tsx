@@ -1,11 +1,12 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14377
+// Function ID: 14378
 // Name: ConjureCustomWidget
-// Dependencies: [2090, 558, 576, 1455, 7222, 504, 2]
+// Dependencies: [4845, 558, 576, 1455, 7345, 504, 2]
 // Exports: composeConjureCustomWidgetPrompt
 
-// Module 14141 (ConjureCustomWidget)
-import GuildStore from "GuildStore" /* 2090 */;
+// Module 14377 (ConjureCustomWidget)
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,17 +39,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConj
     return tmpResult.useStateFromStores(first, tmp7, tmp8);
   }
   const fn = function s() {
-    let someResult = closure_1;
-    if (someResult) {
-      const guildsArray = GuildStore.getGuildsArray();
-      someResult = guildsArray.some((item) => {
-        const obj = closure_0(closure_1[4]);
-        return obj.isConjureGuildEligible(item, closure_1_0);
-      });
+    let result = closure_1;
+    if (result) {
+      const obj = ConjureUtils;
+      result = obj.hasEligibleConjureGuild(GuildStore.getGuildsArray(), closure_0);
     }
-    return someResult;
+    return result;
   };
-  const items1 = [arg0, undefined === arg1 || arg1];
+  const items1 = [arg0, tmp4];
   cResult[1] = undefined === arg1 || arg1;
   cResult[2] = arg0;
   cResult[3] = fn;
@@ -68,18 +66,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConj
   items[1] = require("ApexExperiment").ApexExperimentStore;
   const items1 = [arg0, flag];
   return useStateFromStores(items, () => {
-    let someResult = flag;
-    if (someResult) {
-      const guildsArray = GuildStore.getGuildsArray();
-      someResult = guildsArray.some((item) => {
-        const obj = closure_0(flag[4]);
-        return obj.isConjureGuildEligible(item, closure_1_0);
-      });
+    let result = flag;
+    if (result) {
+      const obj = ConjureUtils;
+      result = obj.hasEligibleConjureGuild(GuildStore.getGuildsArray(), closure_0);
     }
-    return someResult;
+    return result;
   }, items1);
 });
-const result = size.fileFinishedImporting("modules/conjure/custom_widget/ConjureCustomWidget.tsx");
+let result = size.fileFinishedImporting("modules/conjure/custom_widget/ConjureCustomWidget.tsx");
 
 export const CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
 export const useCanConjureCustomWidget = tmp2;

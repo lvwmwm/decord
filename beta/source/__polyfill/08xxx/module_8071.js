@@ -1,54 +1,122 @@
 // Module ID: 8071
 // Function ID: 8072
-// Dependencies: [8067, 8068]
-// Exports: isAAC, isAMR, isFLAC, isM4A, isMP3, isWAV
+// Dependencies: [5, 17, 1278]
+// Exports: fetchText
 
 // Module 8071
-import _mod8067 from "module_8067" /* 8067 */;
-import _mod8068 from "module_8068" /* 8068 */;
+import react_native from "react-native" /* 17 */;
+import Buffer from "Buffer" /* 1278 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
+let c1;
 
-export const isAAC = function isAAC(fileChunk, excludeSimilarTypes) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  let checkByFileTypeResult1 = FileTypes.checkByFileType(fileChunk, "aac");
-  if (!checkByFileTypeResult1) {
-    excludeSimilarTypes = undefined;
-    if (null != excludeSimilarTypes) {
-      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
+let obj = function _fetchText() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    function dataUriToXml(arg0) {
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        const str = decodeURIComponent(arg0);
+        const parts = str.split(",");
+        const substr = parts.slice(1);
+        return substr.join(",");
+      } catch (tmp2) {
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Decoding " + arg0 + " failed with error: " + tmp2);
+        throw error;
+      }
     }
-    let checkByFileTypeResult = !excludeSimilarTypes;
-    if (checkByFileTypeResult) {
-      const fileChunk1 = tmp(8067).getFileChunk(fileChunk);
-      const FileTypes2 = tmp(8068).FileTypes;
-      checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");
+    function fetchUriData(arg0) {
+      return closure_1_5(...arguments);
     }
-    checkByFileTypeResult1 = checkByFileTypeResult;
-  }
-  return checkByFileTypeResult1;
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      const str3 = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let tmp5 = null;
+          if (closure_0) {
+            let tmp3;
+            let str = "data:image/svg+xml;utf8";
+            if (closure_0.startsWith("data:image/svg+xml;utf8")) {
+              tmp3 = dataUriToXml(obj4);
+            } else {
+              const str2 = "data:image/svg+xml;base64";
+              if (closure_0.startsWith("data:image/svg+xml;base64")) {
+                tmp3 = decodeBase64Image(obj4);
+              } else {
+                tmp3 = fetchUriData(obj4);
+              }
+            }
+            tmp5 = tmp3;
+          }
+          c1 = 3;
+          obj = { value: tmp5, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  return obj(...arguments);
 };
-export const isAMR = function isAMR(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "amr");
+obj = function _fetchUriData() {
+  obj = _asyncToGenerator(async function(arg0) {
+    let c2;
+    let c3;
+    let closure_0 = arg0;
+    const _fetch = fetch;
+    let closure_1 = await fetch(closure_0);
+    if (!closure_1.ok) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Fetching " + closure_0 + " failed with status " + closure_1.status);
+      throw error;
+    }
+    await closure_1.text();
+    return arg1;
+  });
+  return obj(...arguments);
 };
-export const isFLAC = function isFLAC(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "flac");
-};
-export const isM4A = function isM4A(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "m4a");
-};
-export const isMP3 = function isMP3(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "mp3");
-};
-export const isWAV = function isWAV(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "wav");
+const Platform = react_native.Platform;
+function decodeBase64Image(arg0) {
+  const str = decodeURIComponent(arg0);
+  const str2 = str.split(";")[1];
+  const parts = str2.split(",");
+  const first = parts[0];
+  const substr = parts.slice(1);
+  const joined = substr.join(",");
+  const _Buffer = Buffer.Buffer;
+  const str3 = _Buffer.from(joined, first);
+  return str3.toString("utf-8");
+}
+
+export const fetchText = function fetchText(arg0) {
+  return obj(...arguments);
 };

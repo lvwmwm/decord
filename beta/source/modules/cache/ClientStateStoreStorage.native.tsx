@@ -1,11 +1,11 @@
-// Module ID: 15219
-// Function ID: 15220
+// Module ID: 15440
+// Function ID: 15441
 // Name: react-native
-// Dependencies: [15220, 2]
+// Dependencies: [15441, 2]
 // Exports: setClientState
 
-// Module 15219 (react-native)
-import react_nativeDefault from "react-native" /* 15220 */;
+// Module 15440 (react-native)
+import react_nativeDefault from "react-native" /* 15441 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");

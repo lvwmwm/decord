@@ -1,20 +1,20 @@
-// Module ID: 18691
-// Function ID: 18692
+// Module ID: 18993
+// Function ID: 18994
 // Name: ServerHubAnalytics
-// Dependencies: [1087, 1267, 18692, 2]
+// Dependencies: [1087, 1267, 18994, 2]
 // Exports: trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked
 
-// Module 18691 (ServerHubAnalytics)
+// Module 18993 (ServerHubAnalytics)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import editorUtils from "editorUtils" /* 18692 */;
+import editorUtils from "editorUtils" /* 18994 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_space/ServerHubAnalytics.tsx");
 
 export const ServerHubSettingType = { ALL_SYSTEM_MESSAGES: "all_system_messages", LEADERBOARD_SYSTEM_MESSAGES: "leaderboard_system_messages", WHITEBOARD_SYSTEM_MESSAGES: "whiteboard_system_messages", MUSIC_SYSTEM_MESSAGES: "music_system_messages" };
-export const ServerHubVisitSource = { WINNER_BADGE: "winner_badge", LEADER_BADGE: "leader_badge", LEADERBOARD_SYSTEM_MESSAGE: "leaderboard_system_message" };
+export const ServerHubVisitSource = { WINNER_BADGE: "winner_badge", LEADER_BADGE: "leader_badge", LEADERBOARD_SYSTEM_MESSAGE: "leaderboard_system_message", MUSIC_SYSTEM_MESSAGE: "music_system_message" };
 export const trackServerHubToggleSetting = function trackServerHubToggleSetting(id, settingType, value) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { guild_id: id, type: settingType, value };

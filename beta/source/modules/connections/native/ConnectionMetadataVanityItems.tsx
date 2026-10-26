@@ -1,10 +1,10 @@
-// Module ID: 11147
-// Function ID: 11148
+// Module ID: 11270
+// Function ID: 11271
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7153, 21, 5191, 587, 1128, 11148, 11149, 558, 576, 12, 1903, 5187, 1202, 7152, 2]
-// Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
+// Dependencies: [19, 17, 7276, 21, 4971, 587, 1128, 11271, 11272, 558, 576, 12, 1903, 5234, 1202, 7275, 2]
+// Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11147 (ConnectionMetadataVanityItems)
+// Module 11270 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -12,14 +12,14 @@ import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7152 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11148 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11149 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7275 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11271 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11272 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7153 */;
+import Constants from "Constants" /* 7276 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -504,6 +504,32 @@ export const generateBlueskyMetadataItems = function generateBlueskyMetadataItem
     const push2 = items.push;
     const obj2 = { style, count: _Number2Result, label: intl5.t.RQath2 };
     push2(metroRequire(closure_10, obj2, constants.BLUESKY_FOLLOWERS_COUNT));
+  }
+  return items;
+};
+export const generateLetterboxdMetadataItems = function generateLetterboxdMetadataItems(metadata, metadataItem) {
+  let num = metadata[constants.LETTERBOXD_WATCHES];
+  const _Number = Number;
+  if (num == null) {
+    num = -1;
+  }
+  const _NumberResult = _Number(num);
+  let num2 = metadata[tmp2.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR];
+  const _Number2 = Number;
+  if (num2 == null) {
+    num2 = -1;
+  }
+  const items = [];
+  const _Number2Result = _Number2(num2);
+  if (_NumberResult > -1) {
+    const push = items.push;
+    const obj = { style: metadataItem, count: _NumberResult, label: intl5.t.wvFh8m };
+    push(metroRequire(closure_10, obj, constants.LETTERBOXD_WATCHES));
+  }
+  if (_Number2Result > -1) {
+    const push2 = items.push;
+    const obj2 = { style: metadataItem, count: _Number2Result, label: intl5.t.heUoTj };
+    push2(metroRequire(closure_10, obj2, constants.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR));
   }
   return items;
 };

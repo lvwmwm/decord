@@ -1,15 +1,15 @@
-// Module ID: 14920
-// Function ID: 14921
+// Module ID: 15153
+// Function ID: 15154
 // Name: ShareScreenFooter
-// Dependencies: [19, 21, 558, 576, 12709, 5479, 12718, 12719, 2]
+// Dependencies: [19, 21, 558, 576, 12926, 5244, 12935, 12936, 2]
 
-// Module 14920 (ShareScreenFooter)
+// Module 15153 (ShareScreenFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 12709 */;
-import ShareChatInputDefault from "ShareChatInput" /* 12718 */;
-import ShareFooterLayoutDefault from "ShareFooterLayout" /* 12719 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 12926 */;
+import ShareChatInputDefault from "ShareChatInput" /* 12935 */;
+import ShareFooterLayoutDefault from "ShareFooterLayout" /* 12936 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

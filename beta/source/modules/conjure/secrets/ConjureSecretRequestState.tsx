@@ -1,14 +1,14 @@
-// Module ID: 12127
-// Function ID: 12128
+// Module ID: 12313
+// Function ID: 12314
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1128, 3883, 10980, 558, 576, 2]
+// Dependencies: [32, 19, 1128, 3830, 10700, 558, 576, 2]
 // Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved
 
-// Module 12127 (ConjureSecretRequestState)
+// Module 12313 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import conjureChatTurns from "conjureChatTurns" /* 10980 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import conjureChatTurns from "conjureChatTurns" /* 10700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,10 +20,10 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3883.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3830.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3883.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3830.sMQt5O);
   }
   return tmp5;
 }
@@ -131,11 +131,11 @@ export const unmarkMcpSecretRequestSaved = function unmarkMcpSecretRequestSaved(
     set.delete(request_id);
   }
 };
-export const secretRequestStatuses = function secretRequestStatuses(memo, stateFromStores11) {
+export const secretRequestStatuses = function secretRequestStatuses(memo, secrets) {
   let set1 = null;
-  if (null != stateFromStores11) {
+  if (null != secrets) {
     const _Set = Set;
-    const found = stateFromStores11.filter((set) => set.set);
+    const found = secrets.filter((set) => set.set);
     const self = this;
     const self2 = this;
     set1 = new Set(found.map((name) => name.name));

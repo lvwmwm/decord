@@ -1,9 +1,9 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16715
+// Function ID: 16716
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5191, 587, 1400, 1128, 3885, 558, 576, 1506, 7130, 1505, 504, 4864, 7155, 1267, 12828, 1413, 5301, 5155, 16420, 2002, 16421, 8565, 8562, 6948, 5891, 15626, 12829, 9693, 12840, 5509, 5187, 16422, 6542, 6457, 2131, 5477, 5479, 9328, 9671, 16467, 10081, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4971, 587, 1400, 1128, 3832, 558, 576, 1506, 7253, 1505, 504, 2053, 7278, 1267, 13068, 1413, 5804, 5210, 16716, 2002, 16717, 8656, 8653, 7078, 6374, 15858, 13069, 9792, 13080, 5989, 5234, 16718, 6987, 6903, 2067, 5977, 5244, 9426, 9770, 16763, 10178, 2]
 
-// Module 16419 (CustomTypingIndicatorEditScreen)
+// Module 16715 (CustomTypingIndicatorEditScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -11,10 +11,10 @@ import user from "user" /* 1400 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1413 */;
 import Link from "Link" /* 1506 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7130 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12828 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7253 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13068 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,12 +146,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(16420, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16716, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(16421, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16717, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];
@@ -484,7 +484,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7130).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7253).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

@@ -1,11 +1,11 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12355
+// Function ID: 12356
 // Name: conjureNativeChatLayout
-// Dependencies: [587, 12157, 2]
+// Dependencies: [587, 12344, 2]
 
-// Module 12166 (conjureNativeChatLayout)
+// Module 12355 (conjureNativeChatLayout)
 import nativeDefault from "native" /* 587 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12157 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12344 */;
 import size from "module_2" /* 2 */;
 
 const PX_8 = nativeDefault.space.PX_8;

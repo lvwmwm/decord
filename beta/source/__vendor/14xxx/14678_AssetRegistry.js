@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 26, height: 23, scales: [2, 3], hash: "003a42f0642dbbdd7138be5c1629ced9", name: "support", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 185, height: 32, scales: [2, 3], hash: "e0f9d218f8abae1fb9b3c6aeee68fd32", name: "img_logo_bundle_horizontal", type: "png" });

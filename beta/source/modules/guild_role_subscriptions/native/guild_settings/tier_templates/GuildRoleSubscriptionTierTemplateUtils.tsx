@@ -1,17 +1,17 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19331
+// Function ID: 19332
 // Name: GuildRoleSubscriptionTierTemplateUtils
-// Dependencies: [1108, 8478, 8498, 8496, 8486, 8485, 8493, 2]
+// Dependencies: [1108, 8549, 8569, 8567, 8557, 8556, 8564, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 19009 (GuildRoleSubscriptionTierTemplateUtils)
+// Module 19331 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import TextLockIcon from "TextLockIcon" /* 8478 */;
-import ImageLockIcon from "ImageLockIcon" /* 8485 */;
-import ForumLockIcon from "ForumLockIcon" /* 8486 */;
-import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8493 */;
-import StageLockIcon from "StageLockIcon" /* 8496 */;
-import VoiceLockIcon from "VoiceLockIcon" /* 8498 */;
+import TextLockIcon from "TextLockIcon" /* 8549 */;
+import ImageLockIcon from "ImageLockIcon" /* 8556 */;
+import ForumLockIcon from "ForumLockIcon" /* 8557 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8564 */;
+import StageLockIcon from "StageLockIcon" /* 8567 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 8569 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");

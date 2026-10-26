@@ -1,34 +1,31 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 10729
+// Function ID: 10730
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [6297, 6294, 2]
-// Exports: declaresPreviewFrame, isConjurePreviewFrameSurfaceType, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
+// Dependencies: [5626, 6774, 2]
+// Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 11033 (conjurePreviewFrameSurfaces)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
+// Module 10729 (conjurePreviewFrameSurfaces)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import size from "module_2" /* 2 */;
 
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };
 const items = [obj, { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL }, ];
 ({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL });
 items[2] = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY };
+const items1 = [, ];
 ({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY });
-let mapped = items.map((type) => type.type);
-const items1 = [EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL];
+items1[0] = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
+items1[1] = EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
 const items2 = [EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL];
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewFrameSurfaces.tsx");
 
-export const CONJURE_PREVIEW_FRAME_SURFACE_TYPES = mapped;
 export const CONJURE_PREVIEW_LAUNCH_SURFACE_TYPES = items1;
 export const previewFrameLaunchType = function previewFrameLaunchType(APP_CHANNEL) {
   if (APP_CHANNEL === EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN) {
     APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
   }
   return APP_CHANNEL;
-};
-export const isConjurePreviewFrameSurfaceType = function isConjurePreviewFrameSurfaceType(arg0) {
-  return mapped.includes(arg0);
 };
 export const declaresPreviewFrame = function declaresPreviewFrame(previewSupportedSurfaces) {
   let closure_0 = previewSupportedSurfaces;
@@ -44,7 +41,7 @@ export const previewFrameSurfaceOptions = function previewFrameSurfaceOptions(pr
     }
     return true === hasItem;
   });
-  mapped = found.map((type) => type.type);
+  let mapped = found.map((type) => type.type);
   if (mapped.length <= 0) {
     mapped = items2;
   }

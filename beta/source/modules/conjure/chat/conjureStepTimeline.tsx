@@ -1,10 +1,10 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 10701
+// Function ID: 10702
 // Name: conjureStepTimeline
 // Dependencies: [32, 2]
 // Exports: hasTerminalStep, recordStep, replayTimeline
 
-// Module 10981 (conjureStepTimeline)
+// Module 10701 (conjureStepTimeline)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -16,26 +16,26 @@ function pushStep(items, todosAt, turn_seq) {
           todosAt.todosAt = items.length;
           items.push(turn_seq);
           if (null != turn_seq.turn_seq) {
-            const seenSeq4 = todosAt.seenSeq;
-            seenSeq4.add(turn_seq.turn_seq);
-          }
-        } else {
-          if (null != items[todosAt.todosAt].turn_seq) {
-            const seenSeq2 = todosAt.seenSeq;
-            seenSeq2.delete(items[todosAt.todosAt].turn_seq);
-          }
-          items[todosAt.todosAt] = turn_seq;
-          if (null != turn_seq.turn_seq) {
             const seenSeq3 = todosAt.seenSeq;
             seenSeq3.add(turn_seq.turn_seq);
+          }
+        } else {
+          if (null != turn_seq.turn_seq) {
+            const seenSeq2 = todosAt.seenSeq;
+            seenSeq2.add(turn_seq.turn_seq);
+          }
+          turn_seq = items[todosAt.todosAt].turn_seq;
+          const tmp3 = null != turn_seq.turn_seq && null != turn_seq && turn_seq.turn_seq < turn_seq;
+          if (!tmp3) {
+            items[todosAt.todosAt] = turn_seq;
           }
         }
       }
     }
     items.push(turn_seq);
     if (null != turn_seq.turn_seq) {
-      const seenSeq5 = todosAt.seenSeq;
-      seenSeq5.add(turn_seq.turn_seq);
+      const seenSeq4 = todosAt.seenSeq;
+      seenSeq4.add(turn_seq.turn_seq);
     }
   } else {
     const seenSeq = todosAt.seenSeq;

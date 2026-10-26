@@ -1,205 +1,125 @@
 // Module ID: 5446
 // Function ID: 5447
-// Dependencies: [109, 19, 17, 21, 5434, 5444, 5443, 5447, 5448, 5451, 5433, 5453, 5424]
+// Dependencies: [1658, 5273, 5286]
+// Exports: useAnimatedSnapPoints
 
 // Module 5446
-import InnerScreenDefault from "InnerScreen" /* 5424 */;
-import warnOnceDefault from "warnOnce" /* 5443 */;
-import _modDef5448 from "module_5448" /* 5448 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import DEFAULT_HANDLE_HEIGHT from "DEFAULT_HANDLE_HEIGHT" /* 5273 */;
 
-let dependencyMap, importDefault;
+const require = globalThis.__r;
+let _Math, _require, arr1, dependencyMap, diff, flag, items2, items3, iter, iter2, iter3, iter4, length, mapped, min, sorted, str, sum, tmp, tmp2, tmp3, tmp4, tmp8, value, value1, value4;
 
-let Platform;
-let StyleSheet;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ Platform, StyleSheet } = react_native);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const forwardRefResult = react.forwardRef(function ScreenStackItem(arg0, ref) {
-  let activityState;
-  let children;
-  let container;
-  let contentStyle;
-  let flag6;
-  let headerConfig;
-  let items2;
-  let obj3;
-  let onHeaderHeightChange;
-  let ref2;
-  let screenId;
-  let scrollEdgeEffects;
-  let sheetAllowedDetents;
-  let shouldFreeze;
-  let stackPresentation;
-  let style;
-  let tmp12Result;
-  let tmp18Result;
-  let tmp20Result;
-  let unstable_sheetFooter;
-  ({ children, headerConfig, stackPresentation, sheetAllowedDetents, screenId } = arg0);
-  ({ scrollEdgeEffects, unstable_sheetFooter } = arg0);
-  ({ activityState, shouldFreeze, contentStyle, style, onHeaderHeightChange } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ children: 0, headerConfig: 0, activityState: 0, shouldFreeze: 0, stackPresentation: 0, sheetAllowedDetents: 0, contentStyle: 0, style: 0, screenId: 0, onHeaderHeightChange: 0, scrollEdgeEffects: 0, unstable_sheetFooter: 0 }));
-  importDefault = undefined;
-  dependencyMap = undefined;
-  let flag5;
-  let closure_4;
-  let hidden;
-  if (headerConfig != null) {
-    hidden = headerConfig.hidden;
-  }
-  let flag;
-  const tmp3 = !hidden;
-  const useEdgeInsetApplication = screenId(5434).useEdgeInsetApplication;
-  screenId(5434);
-  if (headerConfig != null) {
-    flag = headerConfig.disableTopInsetApplication;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  let flag2;
-  if (headerConfig != null) {
-    flag2 = headerConfig.disableLeftInsetApplication;
-  }
-  if (flag2 == null) {
-    flag2 = false;
-  }
-  let flag3;
-  if (headerConfig != null) {
-    flag3 = headerConfig.disableRightInsetApplication;
-  }
-  if (flag3 == null) {
-    flag3 = false;
-  }
-  let flag4;
-  if (headerConfig != null) {
-    flag4 = headerConfig.disableBottomInsetApplication;
-  }
-  if (flag4 == null) {
-    flag4 = false;
-  }
-  let obj = flag5;
-  const nextContextValue = useEdgeInsetApplication(tmp3, flag, flag2, flag3, flag4).nextContextValue;
-  importDefault = flag5.useRef(null);
-  dependencyMap = flag5.useContext(tmp4(5444).RNSScreensRefContext);
-  const imperativeHandle = flag5.useImperativeHandle(ref, () => ref.current);
-  if (stackPresentation == null) {
-    stackPresentation = "push";
-  }
-  flag5 = undefined;
-  if (headerConfig != null) {
-    flag5 = headerConfig.hidden;
-  }
-  if (flag5 == null) {
-    flag5 = false;
-  }
-  closure_4 = obj.useRef(flag5);
-  const items = [flag5, stackPresentation];
-  const effect = obj.useEffect(() => {
-    warnOnceDefault(false, "Dynamically changing header's visibility in modals will result in remounting the screen and losing all local state.");
-    closure_4.current = flag5;
-  }, items);
-  let isIOS26OrHigher = undefined === scrollEdgeEffects;
-  if (!isIOS26OrHigher) {
-    const _Object = Object;
-    const values = Object.values(scrollEdgeEffects);
-    isIOS26OrHigher = values.some((item) => "hidden" !== item);
-  }
-  let blurEffect;
-  if (headerConfig != null) {
-    blurEffect = headerConfig.blurEffect;
-  }
-  let tmp11 = undefined !== blurEffect;
-  if (tmp11) {
-    tmp11 = "none" !== headerConfig.blurEffect;
-  }
-  const tmp13 = warnOnceDefault;
-  if (isIOS26OrHigher) {
-    isIOS26OrHigher = tmp11;
-  }
-  if (isIOS26OrHigher) {
-    isIOS26OrHigher = tmp4(5447).isIOS26OrHigher;
-  }
-  tmp13(isIOS26OrHigher, "[RNScreens] Using both `blurEffect` and `scrollEdgeEffects` simultaneously may cause overlapping effects.");
-  if ("formSheet" !== stackPresentation) {
-    container = closure_7.container;
-  } else if ("fitToContents" === sheetAllowedDetents) {
-    container = closure_7.absoluteWithNoBottom;
-  } else {
-    container = closure_7.container;
-  }
-  const isIOS26OrHigher2 = tmp4(5447).isIOS26OrHigher;
-  const obj2 = { value: nextContextValue, children: closure_4(tmp12Result, obj3) };
-  const Provider = tmp4(5434).EdgeInsetApplicationContext.Provider;
-  obj3 = { contentStyle, style: container, stackPresentation, children: tmp20Result };
-  tmp20Result = children;
-  tmp12Result = _modDef5448;
-  const tmp18 = closure_6;
-  const tmp19 = closure_5;
-  if (isIOS26OrHigher2) {
-    const obj4 = { edges: {}, children };
-    tmp20Result = tmp20(tmp4(5451).SafeAreaView, obj4);
-  }
-  const items1 = [closure_4(Provider, obj2), , ];
-  const obj5 = {};
-  const ScreenStackHeaderConfig = tmp4(5433).ScreenStackHeaderConfig;
-  const merged1 = Object.assign(headerConfig);
-  items1[1] = closure_4(ScreenStackHeaderConfig, obj5);
-  let tmp20Result2 = "formSheet" === stackPresentation && unstable_sheetFooter;
-  if (tmp20Result2) {
-    const obj6 = { children: unstable_sheetFooter() };
-    const FooterComponent = tmp4(5453).FooterComponent;
-    tmp20Result2 = tmp20(FooterComponent, obj6);
-  }
-  items1[2] = tmp20Result2;
-  const obj7 = {
-    ref(current) {
-      ref.current = current;
-      if (null !== ref2) {
-        current = ref2.current;
-        if (null === current) {
-          delete current[screenId];
-        } else {
-          const obj = { current };
-          current[screenId] = obj;
-        }
+let __initData = { code: "function pnpm_useAnimatedSnapPointsTs1(){const{containerHeight,INITIAL_CONTAINER_HEIGHT,INITIAL_SNAP_POINT,snapPoints,normalizeSnapPoint,enableDynamicSizing,handleHeight,INITIAL_HANDLE_HEIGHT,contentHeight,maxDynamicContentSize,dynamicSnapPointIndex}=this.__closure;const isContainerLayoutReady=containerHeight.value!==INITIAL_CONTAINER_HEIGHT;if(!isContainerLayoutReady){return[INITIAL_SNAP_POINT];}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];let _normalizedSnapPoints=_snapPoints.map(function(snapPoint){return normalizeSnapPoint(snapPoint,containerHeight.value);});if(!enableDynamicSizing){return _normalizedSnapPoints;}if(handleHeight.value===INITIAL_HANDLE_HEIGHT){return[INITIAL_SNAP_POINT];}if(contentHeight.value===INITIAL_CONTAINER_HEIGHT){return[INITIAL_SNAP_POINT];}const dynamicSnapPoint=containerHeight.value-Math.min(contentHeight.value+handleHeight.value,maxDynamicContentSize!==undefined?maxDynamicContentSize:containerHeight.value);if(!_normalizedSnapPoints.includes(dynamicSnapPoint)){_normalizedSnapPoints.push(dynamicSnapPoint);}_normalizedSnapPoints=_normalizedSnapPoints.sort(function(a,b){return b-a;});dynamicSnapPointIndex.value=_normalizedSnapPoints.indexOf(dynamicSnapPoint);return _normalizedSnapPoints;}" };
+let __initData2 = { code: "function pnpm_useAnimatedSnapPointsTs2(){const{enableDynamicSizing,snapPoints}=this.__closure;if(enableDynamicSizing){return true;}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];if(_snapPoints.length&&_snapPoints.find(function(snapPoint){return typeof snapPoint==='string';})){return true;}return false;}" };
+
+export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handleHeight, arg4, enableDynamicSizing, maxDynamicContentSize) => {
+  _require = snapPoints;
+  dependencyMap = containerHeight;
+  __initData = contentHeight;
+  __initData2 = handleHeight;
+  let closure_4 = enableDynamicSizing;
+  let closure_5 = maxDynamicContentSize;
+  let obj = require("module_1658");
+  const sharedValue = obj.useSharedValue(-1);
+  const obj2 = require("module_1658");
+  class P {
+    constructor() {
+      iter = closure_1;
+      tmp = closure_0;
+      tmp2 = closure_1;
+      if (closure_1.value === closure_0(closure_1[1]).INITIAL_CONTAINER_HEIGHT) {
+        items = [];
+        items[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+        return items;
       } else {
-        const _console = console;
-        console.warn("Looks like RNSScreensRefContext is missing. Make sure the ScreenStack component is wrapped in it");
+        iter3 = closure_0;
+        if (iter3) {
+          str = "value";
+          value = iter3;
+          if ("value" in iter3) {
+            value = iter3.value;
+          }
+          items1 = value;
+        } else {
+          items1 = [];
+        }
+        mapped = items1.map(() => { /* body not rendered: F143743 */ });
+        tmp3 = closure_4;
+        if (tmp3) {
+          iter2 = closure_3;
+          if (closure_3.value === tmp(tmp2[1]).INITIAL_HANDLE_HEIGHT) {
+            items2 = [];
+            items2[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+            return items2;
+          } else {
+            iter4 = closure_2;
+            if (closure_2.value === tmp(tmp2[1]).INITIAL_CONTAINER_HEIGHT) {
+              items3 = [];
+              items3[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+              return items3;
+            } else {
+              tmp4 = globalThis;
+              value4 = closure_5;
+              value1 = iter.value;
+              _Math = Math;
+              min = Math.min;
+              sum = iter4.value + iter2.value;
+              if (undefined === closure_5) {
+                value4 = iter.value;
+              }
+              diff = value1 - min(sum, value4);
+              if (!mapped.includes(diff)) {
+                arr1 = mapped.push(diff);
+              }
+              sorted = mapped.sort(() => { /* body not rendered: F143744 */ });
+              tmp8 = closure_6;
+              closure_6.value = sorted.indexOf(diff);
+              return sorted;
+            }
+          }
+        } else {
+          return mapped;
+        }
       }
-    },
-    enabled: true,
-    isNativeStack: true,
-    activityState,
-    shouldFreeze,
-    screenId,
-    stackPresentation,
-    hasLargeHeader: flag6,
-    sheetAllowedDetents,
-    style: items2,
-    scrollEdgeEffects,
-    onHeaderHeightChange,
-    children: tmp18Result
-  };
-  flag6 = undefined;
-  tmp18Result = tmp18(tmp19, { children: items1 });
-  const tmp12Result2 = InnerScreenDefault;
-  if (headerConfig != null) {
-    flag6 = headerConfig.largeTitle;
+    }
   }
-  if (flag6 == null) {
-    flag6 = false;
+  P.__closure = { containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue };
+  P.__workletHash = 15015207820492;
+  P.__initData = __initData;
+  let items = [snapPoints, containerHeight, handleHeight, contentHeight, arg4, enableDynamicSizing, maxDynamicContentSize, sharedValue];
+  ({ containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue });
+  const derivedValue = obj2.useDerivedValue(P, items);
+  const obj4 = require("module_1658");
+  class N {
+    constructor() {
+      tmp = closure_4;
+      if (tmp) {
+        flag = true;
+        return true;
+      } else {
+        iter = closure_0;
+        if (iter) {
+          str = "value";
+          value = iter;
+          if ("value" in iter) {
+            value = iter.value;
+          }
+          items = value;
+        } else {
+          items = [];
+        }
+        length = items.length;
+        tmp2 = !length;
+        if (length) {
+          tmp2 = !items.find(function() { /* body not rendered: F143745 */ });
+        }
+        return !tmp2;
+      }
+    }
   }
-  items2 = [style, undefined];
-  const merged2 = Object.assign(merged);
-  return closure_4(tmp12Result2, obj7);
-});
-const styles = StyleSheet.create({ container: { flex: 1 }, absoluteWithNoBottom: { position: "absolute", top: 0, start: 0, end: 0 } });
-
-export default forwardRefResult;
+  N.__closure = { enableDynamicSizing, snapPoints };
+  N.__workletHash = 4816362093278;
+  N.__initData = __initData2;
+  let items1 = [derivedValue, sharedValue, obj4.useDerivedValue(N)];
+  return items1;
+};

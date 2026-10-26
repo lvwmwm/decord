@@ -1,44 +1,39 @@
-// Module ID: 11677
-// Function ID: 11678
+// Module ID: 11851
+// Function ID: 11852
 // Name: ConjureModelSettingsSheet
-// Dependencies: [19, 17, 10978, 10991, 21, 558, 576, 504, 11013, 11613, 1128, 3883, 5187, 5477, 587, 7117, 7175, 2]
+// Dependencies: [32, 19, 17, 10698, 10712, 21, 558, 576, 504, 10738, 11852, 11774, 1128, 3830, 5234, 5977, 587, 7248, 7298, 2]
 
-// Module 11677 (ConjureModelSettingsSheet)
+// Module 11851 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
-import ActionSheet2 from "ActionSheet" /* 7175 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 11013 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11613 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
+import ActionSheet2 from "ActionSheet" /* 7298 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10738 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 11774 */;
+import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 11852 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10991 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10712 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let c9;
 let metroImportAll;
-let metroImportDefault;
 const View = react_native.View;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureModelSettingsContent(projectId) {
-  let choices;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureModelSettingsContent(projectId) {
   let first;
-  let items4;
-  let tierSettings;
-  let tiers;
-  let tmp11;
-  let tmp12;
-  let tmp14;
   let tmp6;
   let tmp7;
-  let tmp9;
-  let obj = projectId(576);
-  const cResult = obj.c(23);
+  const obj = projectId(576);
+  const cResult = obj.c(7);
+  const tmp = projectId;
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureModelSettingsStore];
@@ -48,8 +43,84 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
     first = cResult[0];
   }
   if (cResult[1] !== projectId) {
-    const fn = function c() {
+    const fn = function o() {
       return ConjureModelSettingsStore.getModelSettings(projectId);
+    };
+    const items1 = [projectId];
+    cResult[1] = projectId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  let tierSettings;
+  if (stateFromStores != null) {
+    tierSettings = stateFromStores.tierSettings;
+  }
+  let tmp10 = null;
+  if (null != tierSettings) {
+    if (cResult[4] === stateFromStores) {
+      let tmp11;
+      if (cResult[5] === projectId) {
+        tmp11 = cResult[6];
+      }
+      tmp10 = tmp11;
+    }
+    const obj2 = { projectId, modelSettings: stateFromStores, tierSettings: stateFromStores.tierSettings };
+    const tmp14 = closure_8(closure_11, obj2);
+    cResult[4] = stateFromStores;
+    cResult[5] = projectId;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  return tmp10;
+}) : (function ConjureModelSettingsContent(projectId) {
+  projectId = projectId.projectId;
+  const items = [ConjureModelSettingsStore];
+  const items1 = [projectId];
+  const obj = projectId(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ConjureModelSettingsStore.getModelSettings(projectId), items1);
+  let tierSettings;
+  if (stateFromStores != null) {
+    tierSettings = stateFromStores.tierSettings;
+  }
+  let tmp3 = null;
+  if (null != tierSettings) {
+    const obj2 = { projectId, modelSettings: stateFromStores, tierSettings: stateFromStores.tierSettings };
+    tmp3 = closure_8(closure_11, obj2);
+  }
+  return tmp3;
+});
+let closure_10 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModelSettingsPicker(projectId) {
+  let first;
+  let items2;
+  let tmp13;
+  let tmp14;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  let obj = projectId(576);
+  const cResult = obj.c(19);
+  projectId = projectId.projectId;
+  const modelSettings = projectId.modelSettings;
+  const tierSettings = projectId.tierSettings;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConjureConnectionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== projectId) {
+    const fn = function c() {
+      return ConjureConnectionStore.getConnState(projectId);
     };
     const items1 = [projectId];
     cResult[1] = projectId;
@@ -63,167 +134,120 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   }
   const tmpResult = projectId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ConjureConnectionStore];
-    cResult[4] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== projectId) {
-    const fn2 = function j() {
-      return ConjureConnectionStore.getConnState(projectId);
+  if (cResult[4] !== projectId) {
+    const fn2 = function _(arg0) {
+      const obj = conjureModelSettingsConnection;
+      return obj.sendModelSettings(projectId, arg0);
     };
-    const items3 = [projectId];
-    cResult[5] = projectId;
-    cResult[6] = fn2;
-    cResult[7] = items3;
-    tmp12 = items3;
-    tmp11 = fn2;
+    cResult[4] = projectId;
+    cResult[5] = fn2;
+    tmp9 = fn2;
   } else {
-    tmp11 = cResult[6];
-    tmp12 = cResult[7];
+    tmp9 = cResult[5];
   }
-  const tmpResult2 = projectId(504);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
-  if (cResult[8] !== projectId) {
-    const fn3 = function f(arg0) {
-      try {
-        const obj = conjureModelSettingsConnection;
-        obj.sendModelSettings(projectId, arg0);
-      } catch (err) {
-      }
-    };
-    cResult[8] = projectId;
-    cResult[9] = fn3;
-    tmp14 = fn3;
-  } else {
-    tmp14 = cResult[9];
-  }
-  let tierSettings1;
-  if (stateFromStores != null) {
-    tierSettings1 = stateFromStores.tierSettings;
-  }
-  if (null == tierSettings1) {
-    return null;
-  } else {
-    ({ tierSettings, tiers, choices } = stateFromStores);
-    if (cResult[10] === choices) {
-      if (cResult[11] === "open" !== stateFromStores1) {
-        if (cResult[12] === tmp14) {
-          if (cResult[13] === tierSettings) {
-            let tmp16;
-            let tmp20;
-            let tmp24;
-            if (cResult[14] === tiers) {
-              tmp16 = cResult[15];
-            }
-            if (cResult[16] !== ("open" !== stateFromStores1)) {
-              let stringResult;
-              const intl = tmp(1128).intl;
-              const string = intl.string;
-              const tmp22 = _modDef3883;
-              if ("open" !== stateFromStores1) {
-                stringResult = string(tmp22.GxpdUR);
-              } else {
-                stringResult = string(tmp22["/rJzr6"]);
-              }
-              cResult[16] = "open" !== stateFromStores1;
-              cResult[17] = stringResult;
-              tmp20 = stringResult;
-            } else {
-              tmp20 = cResult[17];
-            }
-            if (cResult[18] !== tmp20) {
-              const obj2 = { variant: "text-xs/normal", color: "text-muted", children: tmp20 };
-              const tmp26 = closure_7(projectId(5187).Text, obj2);
-              cResult[18] = tmp20;
-              cResult[19] = tmp26;
-              tmp24 = tmp26;
-            } else {
-              tmp24 = cResult[19];
-            }
-            if (cResult[20] === tmp24) {
-              let tmp27;
-              if (cResult[21] === tmp16) {
-                tmp27 = cResult[22];
-              }
-              return tmp27;
-            }
-            const obj3 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items4 };
-            const Stack = tmp(5477).Stack;
-            items4 = [tmp16, tmp24];
-            const tmp30 = closure_8(Stack, obj3);
-            cResult[20] = tmp24;
-            cResult[21] = tmp16;
-            cResult[22] = tmp30;
-            tmp27 = tmp30;
+  [tmp13, tmp14] = useConjureModelSettingsDraftDefault(tierSettings, tmp9);
+  _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, tmp9), 2);
+  if (cResult[6] === tmp13) {
+    if (cResult[7] === "open" !== stateFromStores) {
+      if (cResult[8] === modelSettings.choices) {
+        if (cResult[9] === modelSettings.tiers) {
+          let tmp15;
+          let tmp17;
+          let tmp20;
+          if (cResult[10] === tmp14) {
+            tmp15 = cResult[11];
           }
+          if (cResult[12] !== ("open" !== stateFromStores)) {
+            let stringResult;
+            const intl = tmp(1128).intl;
+            const string = intl.string;
+            const tmp11Result = _modDef3830;
+            if ("open" !== stateFromStores) {
+              stringResult = string(tmp11Result.GxpdUR);
+            } else {
+              stringResult = string(tmp11Result["/rJzr6"]);
+            }
+            cResult[12] = "open" !== stateFromStores;
+            cResult[13] = stringResult;
+            tmp17 = stringResult;
+          } else {
+            tmp17 = cResult[13];
+          }
+          if (cResult[14] !== tmp17) {
+            const obj2 = { variant: "text-xs/normal", color: "text-muted", children: tmp17 };
+            const tmp22 = closure_8(projectId(5234).Text, obj2);
+            cResult[14] = tmp17;
+            cResult[15] = tmp22;
+            tmp20 = tmp22;
+          } else {
+            tmp20 = cResult[15];
+          }
+          if (cResult[16] === tmp15) {
+            let tmp23;
+            if (cResult[17] === tmp20) {
+              tmp23 = cResult[18];
+            }
+            return tmp23;
+          }
+          const obj3 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items2 };
+          const Stack = tmp(5977).Stack;
+          items2 = [tmp15, tmp20];
+          const tmp25 = closure_9(Stack, obj3);
+          cResult[16] = tmp15;
+          cResult[17] = tmp20;
+          cResult[18] = tmp25;
+          tmp23 = tmp25;
         }
       }
     }
-    const obj4 = { settings: tierSettings, tiers, choices, disabled: "open" !== stateFromStores1, onChange: tmp14 };
-    const tmp19 = closure_7(ConjureEffortPickerDefault, obj4);
-    cResult[10] = choices;
-    cResult[11] = "open" !== stateFromStores1;
-    cResult[12] = tmp14;
-    cResult[13] = tierSettings;
-    cResult[14] = tiers;
-    cResult[15] = tmp19;
-    tmp16 = tmp19;
   }
-}) : (function ConjureModelSettingsContent(projectId) {
-  let choices;
-  let items5;
-  let tierSettings;
-  let tiers;
+  const obj4 = { settings: tmp13, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: "open" !== stateFromStores, onChange: tmp14 };
+  const tmp16 = closure_8(ConjureEffortPickerDefault, obj4);
+  cResult[6] = tmp13;
+  cResult[7] = "open" !== stateFromStores;
+  cResult[8] = modelSettings.choices;
+  cResult[9] = modelSettings.tiers;
+  cResult[10] = tmp14;
+  cResult[11] = tmp16;
+  tmp15 = tmp16;
+}) : (function ModelSettingsPicker(projectId) {
+  let items3;
+  let stringResult;
+  let tmp4;
+  let tmp5;
   projectId = projectId.projectId;
+  const modelSettings = projectId.modelSettings;
+  const tierSettings = projectId.tierSettings;
   let obj = projectId(504);
-  const items = [ConjureModelSettingsStore];
+  const items = [ConjureConnectionStore];
   const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, () => ConjureModelSettingsStore.getModelSettings(projectId), items1);
-  const items2 = [ConjureConnectionStore];
-  const items3 = [projectId];
-  const items4 = [projectId];
-  const obj2 = projectId(504);
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => ConjureConnectionStore.getConnState(projectId), items3);
-  let tierSettings1;
+  const tmp = "open" !== obj.useStateFromStores(items, () => ConjureConnectionStore.getConnState(projectId), items1);
+  const items2 = [projectId];
   const callback = react.useCallback((arg0) => {
-    try {
-      const obj = conjureModelSettingsConnection;
-      obj.sendModelSettings(projectId, arg0);
-    } catch (err) {
-    }
-  }, items4);
-  if (stateFromStores != null) {
-    tierSettings1 = stateFromStores.tierSettings;
-  }
-  if (null == tierSettings1) {
-    return null;
+    const obj = conjureModelSettingsConnection;
+    return obj.sendModelSettings(projectId, arg0);
+  }, items2);
+  [tmp4, tmp5] = useConjureModelSettingsDraftDefault(tierSettings, callback);
+  const obj2 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items3 };
+  _slicedToArray(useConjureModelSettingsDraftDefault(tierSettings, callback), 2);
+  const Stack = projectId(5977).Stack;
+  items3 = [, ];
+  const obj3 = { settings: tmp4, tiers: modelSettings.tiers, choices: modelSettings.choices, disabled: tmp, onChange: tmp5 };
+  items3[0] = closure_8(ConjureEffortPickerDefault, obj3);
+  const Text = projectId(5234).Text;
+  const intl = projectId(1128).intl;
+  const string = intl.string;
+  const tmp8 = _modDef3830;
+  const tmp6 = closure_9;
+  const tmp7 = closure_8;
+  if (tmp) {
+    stringResult = string(tmp8.GxpdUR);
   } else {
-    let stringResult;
-    ({ tierSettings, tiers, choices } = stateFromStores);
-    const obj3 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items5 };
-    const Stack = tmp(5477).Stack;
-    const obj4 = { settings: tierSettings, tiers, choices, disabled: "open" !== stateFromStores1, onChange: callback };
-    items5 = [closure_7(ConjureEffortPickerDefault, obj4), ];
-    const Text = tmp(5187).Text;
-    const intl = tmp(1128).intl;
-    const string = intl.string;
-    const tmp12 = _modDef3883;
-    const tmp11 = closure_7;
-    const tmp9 = closure_8;
-    if ("open" !== stateFromStores1) {
-      stringResult = string(tmp12.GxpdUR);
-    } else {
-      stringResult = string(tmp12["/rJzr6"]);
-    }
-    const obj5 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
-    items5[1] = tmp11(Text, obj5);
-    return tmp9(Stack, obj3);
+    stringResult = string(tmp8["/rJzr6"]);
   }
+  items3[1] = tmp7(Text, { variant: "text-xs/normal", color: "text-muted", children: stringResult });
+  return tmp6(Stack, obj2);
 });
-let closure_9 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureModelSettingsSheet(projectId) {
   let first;
@@ -235,21 +259,21 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   const cResult = obj.c(3);
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef3883["3E7Yc0"]) };
-    const BottomSheetTitleHeader = tmp(7117).BottomSheetTitleHeader;
+    const obj2 = { title: intl.string(_modDef3830["3E7Yc0"]) };
+    const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
-    const tmp7 = metroImportDefault(BottomSheetTitleHeader, obj2);
+    const tmp7 = metroImportAll(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     first = tmp7;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== projectId) {
-    const obj3 = { header: first, children: metroImportDefault(View, obj4) };
-    obj4 = { children: metroImportDefault(closure_9, obj5) };
+    const obj3 = { header: first, children: metroImportAll(View, obj4) };
+    obj4 = { children: metroImportAll(closure_10, obj5) };
     obj5 = { projectId };
-    const ActionSheet = tmp(7175).ActionSheet;
-    const tmp12 = metroImportDefault(ActionSheet, obj3);
+    const ActionSheet = tmp(7298).ActionSheet;
+    const tmp12 = metroImportAll(ActionSheet, obj3);
     cResult[1] = projectId;
     cResult[2] = tmp12;
     tmp8 = tmp12;
@@ -263,13 +287,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMod
   let obj2;
   let obj3;
   projectId = projectId.projectId;
-  const obj = { header: metroImportDefault(BottomSheetTitleHeader, obj2), children: metroImportDefault(View, obj3) };
+  const obj = { header: metroImportAll(BottomSheetTitleHeader, obj2), children: metroImportAll(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3883["3E7Yc0"]) };
+  obj2 = { title: intl.string(_modDef3830["3E7Yc0"]) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
-  obj3 = { children: metroImportDefault(closure_9, { projectId }) };
-  return metroImportDefault(ActionSheet, obj);
+  obj3 = { children: metroImportAll(closure_10, { projectId }) };
+  return metroImportAll(ActionSheet, obj);
 });
 const result = size.fileFinishedImporting("modules/conjure/model_settings/native/ConjureModelSettingsSheet.tsx");
 

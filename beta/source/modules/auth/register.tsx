@@ -1,21 +1,21 @@
-// Module ID: 17076
-// Function ID: 17077
+// Module ID: 17373
+// Function ID: 17374
 // Name: register
-// Dependencies: [5, 17077, 502, 1087, 1112, 4797, 1267, 6194, 1275, 5892, 5983, 584, 17078, 17079, 17080, 2]
+// Dependencies: [5, 17374, 502, 1087, 1112, 2049, 1267, 6676, 1275, 6375, 6466, 584, 17375, 17376, 17377, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17076 (register)
+// Module 17373 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import APIErrorDefault from "APIError" /* 5892 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5983 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17078 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17080 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import APIErrorDefault from "APIError" /* 6375 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6466 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6676 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17375 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17377 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17077 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17374 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef4797();
+    const obj10 = _modDef2049();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17079)(birthday);
+    tmp9 = tmp4(17376)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

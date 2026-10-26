@@ -1,17 +1,17 @@
-// Module ID: 16006
-// Function ID: 16007
+// Module ID: 16252
+// Function ID: 16253
 // Name: AddConnectionActionSheet
-// Dependencies: [1087, 2029, 21, 5191, 1202, 558, 576, 5127, 1633, 7491, 7134, 7118, 7117, 1128, 6584, 6457, 5155, 9507, 1417, 5065, 7131, 7130, 7155, 2]
+// Dependencies: [1087, 2029, 21, 4971, 1202, 558, 576, 5205, 1633, 7612, 7257, 5265, 7248, 1128, 5269, 6903, 5210, 9609, 1417, 4978, 7254, 7253, 7278, 2]
 
-// Module 16006 (AddConnectionActionSheet)
+// Module 16252 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2029 */;
-import shared from "shared" /* 5065 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import TableRow2 from "TableRow" /* 6457 */;
+import shared from "shared" /* 4978 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import TableRow2 from "TableRow" /* 6903 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import native_mod from "native" /* 1202 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,8 +41,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
   let intl;
   let items;
   let tmp10;
-  let tmp11;
-  let tmp14;
   let tmp7;
   let tmp = _require;
   let tmp2 = found1;
@@ -54,12 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
   const tmp5 = found;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o(migrationData) {
-      let tmp = null == migrationData.migrationData;
-      if (!tmp) {
-        migrationData = migrationData.migrationData;
-        tmp = !migrationData.getMigrationExperimentEnabled("AddConnectionActionSheet");
-      }
-      return tmp;
+      return null == migrationData.migrationData;
     };
     cResult[0] = fn;
     first = fn;
@@ -70,43 +63,65 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
   const platforms = tmpResult.usePlatforms();
   found = platforms.filter(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_4("AddConnectionActionSheet");
+    const tmp9 = closure_4();
     cResult[1] = tmp9;
     tmp7 = tmp9;
   } else {
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function b(arg0) {
-      return null != arg0;
-    };
-    cResult[2] = fn2;
-    tmp10 = fn2;
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
+    cResult[2] = A;
+    tmp10 = A;
   } else {
-    tmp10 = cResult[2];
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
   }
   const arr3 = tmp5(tmp2[10])(tmp7);
   found1 = arr3.filter(tmp10);
   BottomSheet = tmp(tmp2[11]).BottomSheet;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
     let obj2 = { title: intl.string(tmp(tmp2[13]).t.Zhcj9X) };
     const BottomSheetTitleHeader = tmp(tmp2[12]).BottomSheetTitleHeader;
     intl = tmp(tmp2[13]).intl;
-    const tmp13 = closure_5(BottomSheetTitleHeader, obj2);
-    cResult[3] = tmp13;
-    tmp11 = tmp13;
+    cResult[3] = closure_5(BottomSheetTitleHeader, obj2);
+    const tmp12 = closure_5(BottomSheetTitleHeader, obj2);
   } else {
-    tmp11 = cResult[3];
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
   }
   const BottomSheetScrollView = tmp(tmp2[14]).BottomSheetScrollView;
   const list = tmp4.list;
   if (cResult[4] !== bottom) {
-    const obj3 = { paddingBottom: bottom };
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
+    tmp14[0] = bottom;
     cResult[4] = bottom;
-    cResult[5] = obj3;
-    tmp14 = obj3;
+    cResult[5] = tmp14;
   } else {
-    tmp14 = cResult[5];
+    class A {
+      constructor(arg0) {
+        return null != arg0;
+      }
+    }
   }
   const mapped = found1.map((application, index) => {
     let tmp3;
@@ -141,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
         found(found1[17])(obj2);
       },
       icon: hasOwnProperty(Icon, obj2),
-      trailing: hasOwnProperty(tmp2(6457).TableRow.Arrow, {})
+      trailing: hasOwnProperty(tmp2(6903).TableRow.Arrow, {})
     };
     Icon = tmp2(1202).Icon;
     const makeSource = tmp2(1417).makeSource;
@@ -151,43 +166,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
     return hasOwnProperty(TableRow, obj, type);
   });
   if (cResult[6] === BottomSheetScrollView) {
-    if (cResult[7] === tmp4.list) {
-      if (cResult[8] === mapped1) {
-        if (cResult[9] === tmp14) {
-          let tmp17;
-          if (cResult[10] === mapped) {
-            tmp17 = cResult[11];
-          }
-          if (cResult[12] === BottomSheet) {
-            if (cResult[13] === tmp17) {
-              let tmp19;
-              if (cResult[14] === tmp11) {
-                tmp19 = cResult[15];
-              }
-              return tmp19;
-            }
-          }
-          const obj4 = { scrollable: true, startExpanded: true, header: tmp11, children: tmp17 };
-          const tmp21 = closure_5(BottomSheet, obj4);
-          cResult[12] = BottomSheet;
-          cResult[13] = tmp17;
-          cResult[14] = tmp11;
-          cResult[15] = tmp21;
-          tmp19 = tmp21;
-        }
+    class A {
+      constructor(arg0) {
+        return null != arg0;
       }
     }
   }
-  const obj5 = { style: list, contentContainerStyle: tmp14, children: items };
+  const obj3 = { style: list, contentContainerStyle: tmp13, children: items };
   items = [mapped, mapped1];
-  const tmp18 = closure_6(BottomSheetScrollView, obj5);
   cResult[6] = BottomSheetScrollView;
   cResult[7] = tmp4.list;
   cResult[8] = mapped1;
-  cResult[9] = tmp14;
+  cResult[9] = tmp13;
   cResult[10] = mapped;
-  cResult[11] = tmp18;
-  tmp17 = tmp18;
+  cResult[11] = closure_6(BottomSheetScrollView, obj3);
+  closure_6(BottomSheetScrollView, obj3);
 }) : (function AddConnectionActionSheet() {
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
@@ -203,16 +196,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
   const bottom = found(found1[8])().bottom;
   let obj = require("ConnectionsHooks");
   const platforms = obj.usePlatforms();
-  found = platforms.filter((migrationData) => {
-    let tmp = null == migrationData.migrationData;
-    if (!tmp) {
-      migrationData = migrationData.migrationData;
-      tmp = !migrationData.getMigrationExperimentEnabled("AddConnectionActionSheet");
-    }
-    return tmp;
-  });
+  found = platforms.filter((migrationData) => null == migrationData.migrationData);
   let tmp2 = found(found1[10]);
-  const tmp2Result = tmp2(closure_4("AddConnectionActionSheet"));
+  const tmp2Result = tmp2(closure_4());
   found1 = tmp2Result.filter((item) => null != item);
   let obj2 = { scrollable: true, startExpanded: true, header: closure_5(BottomSheetTitleHeader, obj3), children: closure_6(BottomSheetScrollView, obj4) };
   BottomSheet = require("Sheet/BottomSheet").BottomSheet;
@@ -255,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
           found(found1[17])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(6457).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6903).TableRow.Arrow, {})
       };
       Icon = tmp2(1202).Icon;
       const makeSource = tmp2(1417).makeSource;
@@ -278,11 +264,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   let obj = startAuthorization(576);
   const cResult = obj.c(17);
   ({ application, start, end } = arg0);
-  const tmp4 = analyticsLocations(7131)(application);
+  const tmp4 = analyticsLocations(7254)(application);
   startAuthorization = tmp4.startAuthorization;
   const canStartAuthorization = tmp4.canStartAuthorization;
-  const tmp5 = analyticsLocations(7130);
-  analyticsLocations = tmp5(analyticsLocations(7155).ACTION_SHEET).analyticsLocations;
+  const tmp5 = analyticsLocations(7253);
+  analyticsLocations = tmp5(analyticsLocations(7278).ACTION_SHEET).analyticsLocations;
   const tmp6 = closure_7();
   if (cResult[0] !== application) {
     const getIconSource = application.getIconSource;
@@ -307,7 +293,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_5(startAuthorization(6457).TableRow.Arrow, {});
+        const tmp16 = closure_5(startAuthorization(6903).TableRow.Arrow, {});
         cResult[8] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -331,7 +317,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
         }
       }
       let obj2 = { start, end, label: application.name, onPress: tmp9, icon: tmp10, trailing: tmp14, disabled: !canStartAuthorization };
-      const tmp20 = closure_5(startAuthorization(6457).TableRow, obj2, application.id);
+      const tmp20 = closure_5(startAuthorization(6903).TableRow, obj2, application.id);
       cResult[9] = application.id;
       cResult[10] = application.name;
       cResult[11] = end;
@@ -373,10 +359,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7131)(application));
-  const tmp2 = analyticsLocations(7131)(application);
-  const tmp3 = analyticsLocations(7130);
-  analyticsLocations = tmp3(analyticsLocations(7155).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7254)(application));
+  const tmp2 = analyticsLocations(7254)(application);
+  const tmp3 = analyticsLocations(7253);
+  analyticsLocations = tmp3(analyticsLocations(7278).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");

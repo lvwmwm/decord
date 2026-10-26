@@ -1,14 +1,15 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11879
+// Function ID: 11880
 // Name: conjurePublishAction
-// Dependencies: [1128, 3883, 11696, 11698, 2]
+// Dependencies: [10805, 1128, 3830, 11871, 11880, 2]
 // Exports: conjurePublishTooltip, resolveConjurePublishAction
 
-// Module 11695 (conjurePublishAction)
+// Module 11879 (conjurePublishAction)
 import intl5 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11696 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11698 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11871 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11880 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -24,19 +25,19 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
   let prop;
   let prop1;
   let status;
-  let tmp21;
-  let tmp26;
+  let tmp24;
+  let tmp29;
   ({ integrationStatus, status } = input);
   const installScope = input.installScope;
   if (status == null) {
-    status = { state: "unpublished", surface: null, previewAppChannels: [] };
-    const obj = { state: "unpublished", surface: null, previewAppChannels: [] };
+    status = { publishState: "not_live", surface: null, previewAppChannels: [] };
+    const obj = { publishState: "not_live", surface: null, previewAppChannels: [] };
   }
   let tmp = status;
-  if ("up_to_date" === status.state) {
+  if ("live_current" === status.publishState) {
     tmp = status;
     if (input.liveNameOutdated) {
-      const obj2 = { state: "changes" };
+      const obj2 = { publishState: "live_outdated" };
       const merged = Object.assign(status);
       tmp = obj2;
     }
@@ -44,40 +45,42 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
   const obj3 = { status: tmp };
   const merged1 = Object.assign(input);
   const status2 = obj3.status;
-  let tmp6 = "guild" === obj3.installScope;
+  let tmp6 = "guild" !== obj3.installScope;
   ({ appChannelName, appChannelPending, botInGuild } = obj3);
-  if (tmp6) {
-    tmp6 = null != status2;
+  if (!tmp6) {
+    tmp6 = null == status2;
   }
-  if (tmp6) {
-    tmp6 = "unpublished" !== status2.state;
+  if (!tmp6) {
+    const obj4 = ConjurePublishTypes;
+    tmp6 = !obj4.isConjureLive(status2.publishState);
   }
-  if (tmp6) {
-    let tmp7;
+  let tmp9 = !tmp6;
+  if (tmp9) {
+    let tmp10;
     if ("activity" === status2.surface) {
-      tmp7 = null == appChannelName && true !== appChannelPending;
-      const tmp8 = null == appChannelName && true !== appChannelPending;
+      tmp10 = null == appChannelName && true !== appChannelPending;
+      const tmp11 = null == appChannelName && true !== appChannelPending;
     } else {
-      tmp7 = "bot" === status2.surface && false === botInGuild;
+      tmp10 = "bot" === status2.surface && false === botInGuild;
     }
-    tmp6 = tmp7;
+    tmp9 = tmp10;
   }
-  let str5 = input.guildName;
+  let str4 = input.guildName;
   let formatResult = null;
   if ("guild" === input.installScope) {
     formatResult = null;
-    if (false === tmp9) {
+    if (false === tmp12) {
       const intl = intl5.intl;
       const format = intl.format;
-      const N4NkyR = _modDef3883.N4NkyR;
-      if (str5 == null) {
-        str5 = "";
+      const N4NkyR = _modDef3830.N4NkyR;
+      if (str4 == null) {
+        str4 = "";
       }
-      const obj4 = { server: str5 };
-      formatResult = format(N4NkyR, obj4);
+      const obj5 = { server: str4 };
+      formatResult = format(N4NkyR, obj5);
     }
   }
-  const obj5 = { installScope, previewReady: true === preview_ready, integrationInstalled: prop, botPermissionsChanged: true === prop1 };
+  const obj6 = { installScope, previewReady: true === preview_ready, integrationInstalled: prop, botPermissionsChanged: true === prop1 };
   preview_ready = undefined;
   const requiresPermissionReview = conjurePreviewModes.requiresPermissionReview;
   conjurePreviewModes;
@@ -95,63 +98,63 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
   if (integrationStatus != null) {
     prop1 = integrationStatus.bot_permissions_changed;
   }
-  const result = requiresPermissionReview(obj5);
-  let str6 = "publish";
+  const result = requiresPermissionReview(obj6);
+  let str5 = "publish";
   if (result) {
-    str6 = "consent_then_publish";
+    str5 = "consent_then_publish";
   }
-  const obj6 = { intent: str6, isUpdate: "changes" === tmp.state && !tmp6, disabledReason: formatResult, confirmReason: tmp21, missingSurface: tmp26 };
-  tmp21 = null;
+  const obj7 = { intent: str5, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: "live_current" === tmp.publishState && !tmp9, disabledReason: formatResult, confirmReason: tmp24, missingSurface: tmp29 };
+  tmp24 = null;
   if (null == formatResult) {
-    let str7 = input.guildName;
+    let str6 = input.guildName;
     let format2Result = null;
     if ("guild" === input.installScope) {
       format2Result = null;
-      if (tmp23) {
+      if (tmp26) {
         format2Result = null;
-        if (false === tmp22) {
-          const intl2 = tmp14(1128).intl;
+        if (false === tmp25) {
+          const intl2 = tmp17(1128).intl;
           const format2 = intl2.format;
-          const eHYXFg = _modDef3883.eHYXFg;
-          if (str7 == null) {
-            str7 = "";
+          const eHYXFg = _modDef3830.eHYXFg;
+          if (str6 == null) {
+            str6 = "";
           }
-          const obj7 = { server: str7 };
-          format2Result = format2(eHYXFg, obj7);
+          const obj8 = { server: str6 };
+          format2Result = format2(eHYXFg, obj8);
         }
       }
     }
-    tmp21 = format2Result;
+    tmp24 = format2Result;
   }
-  tmp26 = null;
-  if (tmp6) {
-    let str8 = "bot";
+  tmp29 = null;
+  if (tmp9) {
+    let str7 = "bot";
     if ("activity" === tmp.surface) {
-      str8 = "channel";
+      str7 = "channel";
     }
-    tmp26 = str8;
+    tmp29 = str7;
   }
   if (result) {
-    let obj9;
+    let obj10;
     let prop2;
     if (integrationStatus != null) {
       prop2 = integrationStatus.bot_permissions_changed;
     }
     if (true === prop2) {
-      const obj8 = { label: intl4.string(_modDef3883["tUeY/h"]), action: "review_permissions" };
-      const merged2 = Object.assign(obj6);
-      intl4 = tmp14(1128).intl;
-      obj9 = obj8;
+      const obj9 = { label: intl4.string(_modDef3830["tUeY/h"]), action: "review_permissions" };
+      const merged2 = Object.assign(obj7);
+      intl4 = tmp17(1128).intl;
+      obj10 = obj9;
     }
-    return obj9;
+    return obj10;
   }
-  obj9 = { label: intl3.string(_modDef3883["120EFN"]), action: "publish" };
-  const merged3 = Object.assign(obj6);
-  intl3 = tmp14(1128).intl;
+  obj10 = { label: intl3.string(_modDef3830["120EFN"]), action: "publish" };
+  const merged3 = Object.assign(obj7);
+  intl3 = tmp17(1128).intl;
 };
 export const conjurePublishTooltip = function conjurePublishTooltip(status) {
-  let obj3;
   let publishedRevision;
+  let tmp6Result;
   let publishedAt;
   if (status != null) {
     publishedAt = status.publishedAt;
@@ -164,22 +167,22 @@ export const conjurePublishTooltip = function conjurePublishTooltip(status) {
   if (status != null) {
     publishedRevision = status.publishedRevision;
   }
-  let state;
-  if (status != null) {
-    state = status.state;
-  }
   let formatToPlainStringResult = null;
-  if ("unpublished" !== state) {
+  if (null != status) {
     formatToPlainStringResult = null;
-    if (null != parseTimestampMsResult) {
+    const obj2 = ConjurePublishTypes;
+    if (obj2.isConjureLive(status.publishState)) {
       formatToPlainStringResult = null;
-      if (null != publishedRevision) {
-        const intl = intl5.intl;
-        const formatToPlainString = intl.formatToPlainString;
-        const obj2 = { time: obj3.formatHistoryDateTime(parseTimestampMsResult), version: publishedRevision };
-        const D9erxW = _modDef3883.D9erxW;
-        obj3 = ConjureHistoryFormat;
-        formatToPlainStringResult = formatToPlainString(D9erxW, obj2);
+      if (null != parseTimestampMsResult) {
+        formatToPlainStringResult = null;
+        if (null != publishedRevision) {
+          const intl = tmp6(1128).intl;
+          const formatToPlainString = intl.formatToPlainString;
+          const obj3 = { time: tmp6Result.formatHistoryDateTime(parseTimestampMsResult), version: publishedRevision };
+          const D9erxW = _modDef3830.D9erxW;
+          tmp6Result = ConjureHistoryFormat;
+          formatToPlainStringResult = formatToPlainString(D9erxW, obj3);
+        }
       }
     }
   }

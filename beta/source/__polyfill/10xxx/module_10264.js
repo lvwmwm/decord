@@ -1,9 +1,9 @@
 // Module ID: 10264
 // Function ID: 10265
-// Dependencies: [41, 42, 93, 95, 98, 10133]
+// Dependencies: [41, 42, 93, 95, 98, 10236]
 
 // Module 10264
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10133 */;
+import _mod10236 from "module_10236" /* 10236 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,12 +25,29 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ESTimeExpressionParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class DEMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESTimeExpressionParser);
-    const obj = _getPrototypeOf(ESTimeExpressionParser);
+    _classCallCheck(this, DEMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(DEMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -42,21 +59,14 @@ class ESTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(DEMergeDateTimeRefiner, fn(_mod10236).default);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:aslas|deslas|las?|al?|de|del)\\s*)?";
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|um|am|,|-)?\\s*$");
+    return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:l)?|\\?)\\s*";
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(ESTimeExpressionParser, items);
+export default _createClass(DEMergeDateTimeRefiner, items);

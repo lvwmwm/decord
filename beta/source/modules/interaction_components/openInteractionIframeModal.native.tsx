@@ -1,11 +1,11 @@
-// Module ID: 18538
-// Function ID: 18539
+// Module ID: 18844
+// Function ID: 18845
 // Name: openInteractionIframeModal
-// Dependencies: [5, 18539, 6190, 18540, 2002, 2]
+// Dependencies: [5, 18845, 6672, 18846, 2002, 2]
 // Exports: default
 
-// Module 18538 (openInteractionIframeModal)
-import InteractionIframeConstants from "InteractionIframeConstants" /* 18539 */;
+// Module 18844 (openInteractionIframeModal)
+import InteractionIframeConstants from "InteractionIframeConstants" /* 18845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

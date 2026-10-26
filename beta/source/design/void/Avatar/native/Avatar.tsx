@@ -1,27 +1,27 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15415
+// Function ID: 15416
 // Name: Avatar
-// Dependencies: [19, 17, 1087, 1203, 21, 5191, 587, 14078, 15183, 15184, 9308, 8555, 558, 576, 9307, 15185, 5481, 11307, 11308, 15195, 2]
+// Dependencies: [19, 17, 1087, 1203, 21, 4971, 587, 14314, 15404, 15405, 9406, 8646, 558, 576, 9405, 15406, 5246, 11447, 11448, 15416, 2]
 
-// Module 15194 (Avatar)
+// Module 15415 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import IconDefault from "Icon" /* 5481 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8555 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9307 */;
-import ClipView from "ClipView" /* 9308 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11307 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11308 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14078 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15183 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15184 */;
-import Status from "Status" /* 15185 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 15195 */;
+import IconDefault from "Icon" /* 5246 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8646 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9405 */;
+import ClipView from "ClipView" /* 9406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11447 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11448 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14314 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15404 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15405 */;
+import Status from "Status" /* 15406 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 15416 */;
 import react from "react" /* 19 */;
 import StatusConstants from "StatusConstants" /* 1203 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -157,14 +157,16 @@ let closure_10 = createStyles.createStyles((NORMAL) => {
   let decorationSizeForAvatarSize1;
   let rect;
   let rect1;
-  const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: rect, stageSpeaking: { position: "absolute", right: -2, bottom: -2 }, voiceStatus: size, decoration: rect1, container: { position: "relative" } };
+  let rect2;
+  const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: rect, soundboard: rect1, stageSpeaking: { position: "absolute", right: -2, bottom: -2 }, voiceStatus: size, decoration: rect2, container: { position: "relative" } };
   rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
+  rect1 = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED };
   size = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, borderRadius: nativeDefault.radii.md, right: 0, bottom: 0 };
-  rect1 = { position: "absolute", top: -(decorationSizeForAvatarSize - CutoutableAvatarImage.styles[NORMAL].width) / 2, left: -(decorationSizeForAvatarSize1 - CutoutableAvatarImage.styles[NORMAL].width) / 2 };
-  const obj5 = avatar_decorations_AvatarDecorationUtils;
-  decorationSizeForAvatarSize = obj5.getDecorationSizeForAvatarSize(NORMAL);
+  rect2 = { position: "absolute", top: -(decorationSizeForAvatarSize - CutoutableAvatarImage.styles[NORMAL].width) / 2, left: -(decorationSizeForAvatarSize1 - CutoutableAvatarImage.styles[NORMAL].width) / 2 };
   const obj6 = avatar_decorations_AvatarDecorationUtils;
-  decorationSizeForAvatarSize1 = obj6.getDecorationSizeForAvatarSize(NORMAL);
+  decorationSizeForAvatarSize = obj6.getDecorationSizeForAvatarSize(NORMAL);
+  const obj7 = avatar_decorations_AvatarDecorationUtils;
+  decorationSizeForAvatarSize1 = obj7.getDecorationSizeForAvatarSize(NORMAL);
   return obj;
 });
 let memo = react.memo;
@@ -173,28 +175,28 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let accessible;
   let animate;
   let autoStatusCutout;
+  let avatarDecoration;
   let cutout;
   let isMobileOnline;
   let isStageCall;
   let isVROnline;
   let items;
   let needsOffscreenAlphaCompositing;
+  let playingSoundboard;
   let source;
   let speaking;
-  let speakingColor;
   let status;
   let statusSizeOverride;
   let streaming;
   let style;
   let typing;
   let tmp = channel;
-  let tmp2 = speakingColor;
-  let obj = channel(speakingColor[13]);
-  const cResult = obj.c(78);
+  let tmp2 = avatarDecoration;
+  let obj = channel(avatarDecoration[13]);
+  const cResult = obj.c(79);
   channel = channel.channel;
   ({ streaming, isMobileOnline, isVROnline, status } = channel);
-  ({ size, animate, speaking, speakingColor } = channel);
-  const avatarDecoration = channel.avatarDecoration;
+  ({ size, animate, speaking, playingSoundboard, avatarDecoration } = channel);
   const mute = channel.mute;
   const deaf = channel.deaf;
   const statusStyle = channel.statusStyle;
@@ -205,7 +207,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const disablePlaceholder = channel.disablePlaceholder;
   ({ needsOffscreenAlphaCompositing, accessible, accessibilityLabel, typing, statusSizeOverride } = channel);
   let tmp4 = undefined !== streaming && streaming;
-  streaming = tmp4;
+  getAvatarStatusCutout = tmp4;
   let tmp5 = undefined !== isMobileOnline && isMobileOnline;
   isMobileOnline = tmp5;
   let tmp6 = undefined !== isVROnline && isVROnline;
@@ -214,15 +216,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     size = tmp(tmp2[7]).AvatarSizes.NORMAL;
   }
   animate = tmp7;
-  const tmp8 = undefined !== speaking && speaking;
-  let closure_18 = tmp8;
-  let tmp9 = undefined !== isStageCall && isStageCall;
-  let closure_19 = tmp9;
-  let tmp10 = undefined !== needsOffscreenAlphaCompositing && needsOffscreenAlphaCompositing;
-  let tmp11 = undefined !== typing && typing;
-  let closure_20 = tmp11;
-  let tmp12 = guildId(size);
-  let closure_21 = tmp12;
+  let closure_17 = tmp8;
+  let closure_18 = tmp9;
+  let tmp10 = undefined !== isStageCall && isStageCall;
+  let closure_19 = tmp10;
+  let tmp11 = undefined !== needsOffscreenAlphaCompositing && needsOffscreenAlphaCompositing;
+  const tmp12 = undefined !== typing && typing;
+  let closure_20 = tmp12;
+  const tmp13 = disablePlaceholder(size);
+  let closure_21 = tmp13;
   if (cResult[0] === cutout) {
     if (cResult[1] === autoStatusCutout) {
       if (cResult[2] === tmp5) {
@@ -230,22 +232,22 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if (cResult[4] === size) {
             if (cResult[5] === status) {
               if (cResult[6] === statusSizeOverride) {
-                let tmp13;
-                if (cResult[7] === tmp11) {
-                  tmp13 = cResult[8];
+                let tmp14;
+                if (cResult[7] === tmp12) {
+                  tmp14 = cResult[8];
                 }
-                if (cResult[9] === tmp13) {
-                  let tmp16;
-                  if (cResult[10] === -tmp12.decoration.top) {
-                    tmp16 = cResult[11];
+                if (cResult[9] === tmp14) {
+                  let tmp17;
+                  if (cResult[10] === -tmp13.decoration.top) {
+                    tmp17 = cResult[11];
                   }
-                  if (cResult[12] === tmp16) {
-                    let tmp18;
-                    if (cResult[13] === tmp13) {
-                      tmp18 = cResult[14];
+                  if (cResult[12] === tmp17) {
+                    let tmp19;
+                    if (cResult[13] === tmp14) {
+                      tmp19 = cResult[14];
                     }
-                    const cutout2 = tmp18.cutout;
-                    const decorationCutout = tmp18.decorationCutout;
+                    const cutout2 = tmp19.cutout;
+                    const decorationCutout = tmp19.decorationCutout;
                     if (cResult[15] === (undefined !== animate && animate)) {
                       if (cResult[16] === avatarStyle) {
                         if (cResult[17] === channel) {
@@ -254,17 +256,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               if (cResult[20] === guildId) {
                                 if (cResult[21] === size) {
                                   if (cResult[22] === source) {
-                                    let tmp19;
+                                    let tmp20;
                                     if (cResult[23] === user) {
-                                      tmp19 = cResult[24];
+                                      tmp20 = cResult[24];
                                     }
                                     if (cResult[25] === (undefined !== animate && animate)) {
                                       if (cResult[26] === avatarDecoration) {
                                         if (cResult[27] === decorationCutout) {
                                           if (cResult[28] === size) {
-                                            let tmp20;
-                                            if (cResult[29] === tmp12.decoration) {
-                                              tmp20 = cResult[30];
+                                            let tmp21;
+                                            if (cResult[29] === tmp13.decoration) {
+                                              tmp21 = cResult[30];
                                             }
                                             if (cResult[31] === tmp5) {
                                               if (cResult[32] === tmp6) {
@@ -273,93 +275,95 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (cResult[35] === statusSizeOverride) {
                                                       if (cResult[36] === statusStyle) {
                                                         if (cResult[37] === tmp4) {
-                                                          if (cResult[38] === tmp12.status) {
-                                                            if (cResult[39] === tmp11) {
-                                                              let tmp21;
+                                                          if (cResult[38] === tmp13.status) {
+                                                            if (cResult[39] === tmp12) {
+                                                              let tmp22;
                                                               if (cResult[40] === user) {
-                                                                tmp21 = cResult[41];
+                                                                tmp22 = cResult[41];
                                                               }
                                                               if (cResult[42] === deaf) {
                                                                 if (cResult[43] === mute) {
-                                                                  if (cResult[44] === tmp12.status) {
-                                                                    let tmp22;
-                                                                    if (cResult[45] === tmp12.voiceStatus) {
-                                                                      tmp22 = cResult[46];
+                                                                  if (cResult[44] === tmp13.status) {
+                                                                    let tmp23;
+                                                                    if (cResult[45] === tmp13.voiceStatus) {
+                                                                      tmp23 = cResult[46];
                                                                     }
-                                                                    if (cResult[47] === tmp9) {
-                                                                      if (cResult[48] === size) {
-                                                                        if (cResult[49] === tmp8) {
-                                                                          if (cResult[50] === speakingColor) {
-                                                                            if (cResult[51] === tmp12.speaking) {
-                                                                              let tmp23;
-                                                                              if (cResult[52] === tmp12.stageSpeaking) {
-                                                                                tmp23 = cResult[53];
-                                                                              }
-                                                                              const tmp24 = tmp(tmp2[7]).styles[size];
-                                                                              if (cResult[54] === style) {
-                                                                                if (cResult[55] === tmp12.container) {
-                                                                                  let tmp25;
-                                                                                  let tmp26;
-                                                                                  let tmp28;
-                                                                                  let tmp30;
-                                                                                  let tmp32;
-                                                                                  let tmp34;
-                                                                                  if (cResult[56] === tmp24) {
-                                                                                    tmp25 = cResult[57];
-                                                                                  }
-                                                                                  if (cResult[58] !== tmp23) {
-                                                                                    const tmp23Result = tmp23();
-                                                                                    cResult[58] = tmp23;
-                                                                                    cResult[59] = tmp23Result;
-                                                                                    tmp26 = tmp23Result;
-                                                                                  } else {
-                                                                                    tmp26 = cResult[59];
-                                                                                  }
-                                                                                  if (cResult[60] !== tmp19) {
-                                                                                    const tmp19Result = tmp19();
-                                                                                    cResult[60] = tmp19;
-                                                                                    cResult[61] = tmp19Result;
-                                                                                    tmp28 = tmp19Result;
-                                                                                  } else {
-                                                                                    tmp28 = cResult[61];
-                                                                                  }
-                                                                                  if (cResult[62] !== tmp20) {
-                                                                                    const tmp20Result = tmp20();
-                                                                                    cResult[62] = tmp20;
-                                                                                    cResult[63] = tmp20Result;
-                                                                                    tmp30 = tmp20Result;
-                                                                                  } else {
-                                                                                    tmp30 = cResult[63];
-                                                                                  }
-                                                                                  if (cResult[64] !== tmp21) {
-                                                                                    const tmp21Result = tmp21();
-                                                                                    cResult[64] = tmp21;
-                                                                                    cResult[65] = tmp21Result;
-                                                                                    tmp32 = tmp21Result;
-                                                                                  } else {
-                                                                                    tmp32 = cResult[65];
-                                                                                  }
-                                                                                  if (cResult[66] !== tmp22) {
-                                                                                    const tmp22Result = tmp22();
-                                                                                    cResult[66] = tmp22;
-                                                                                    cResult[67] = tmp22Result;
-                                                                                    tmp34 = tmp22Result;
-                                                                                  } else {
-                                                                                    tmp34 = cResult[67];
-                                                                                  }
-                                                                                  if (cResult[68] === accessibilityLabel) {
-                                                                                    if (cResult[69] === accessible) {
-                                                                                      if (cResult[70] === tmp10) {
-                                                                                        if (cResult[71] === tmp25) {
+                                                                    if (cResult[47] === tmp10) {
+                                                                      if (cResult[48] === (undefined !== playingSoundboard && playingSoundboard)) {
+                                                                        if (cResult[49] === size) {
+                                                                          if (cResult[50] === (undefined !== speaking && speaking)) {
+                                                                            if (cResult[51] === tmp13.soundboard) {
+                                                                              if (cResult[52] === tmp13.speaking) {
+                                                                                let tmp24;
+                                                                                if (cResult[53] === tmp13.stageSpeaking) {
+                                                                                  tmp24 = cResult[54];
+                                                                                }
+                                                                                const tmp25 = tmp(tmp2[7]).styles[size];
+                                                                                if (cResult[55] === style) {
+                                                                                  if (cResult[56] === tmp13.container) {
+                                                                                    let tmp26;
+                                                                                    let tmp27;
+                                                                                    let tmp29;
+                                                                                    let tmp31;
+                                                                                    let tmp33;
+                                                                                    let tmp35;
+                                                                                    if (cResult[57] === tmp25) {
+                                                                                      tmp26 = cResult[58];
+                                                                                    }
+                                                                                    if (cResult[59] !== tmp24) {
+                                                                                      const tmp24Result = tmp24();
+                                                                                      cResult[59] = tmp24;
+                                                                                      cResult[60] = tmp24Result;
+                                                                                      tmp27 = tmp24Result;
+                                                                                    } else {
+                                                                                      tmp27 = cResult[60];
+                                                                                    }
+                                                                                    if (cResult[61] !== tmp20) {
+                                                                                      const tmp20Result = tmp20();
+                                                                                      cResult[61] = tmp20;
+                                                                                      cResult[62] = tmp20Result;
+                                                                                      tmp29 = tmp20Result;
+                                                                                    } else {
+                                                                                      tmp29 = cResult[62];
+                                                                                    }
+                                                                                    if (cResult[63] !== tmp21) {
+                                                                                      const tmp21Result = tmp21();
+                                                                                      cResult[63] = tmp21;
+                                                                                      cResult[64] = tmp21Result;
+                                                                                      tmp31 = tmp21Result;
+                                                                                    } else {
+                                                                                      tmp31 = cResult[64];
+                                                                                    }
+                                                                                    if (cResult[65] !== tmp22) {
+                                                                                      const tmp22Result = tmp22();
+                                                                                      cResult[65] = tmp22;
+                                                                                      cResult[66] = tmp22Result;
+                                                                                      tmp33 = tmp22Result;
+                                                                                    } else {
+                                                                                      tmp33 = cResult[66];
+                                                                                    }
+                                                                                    if (cResult[67] !== tmp23) {
+                                                                                      const tmp23Result = tmp23();
+                                                                                      cResult[67] = tmp23;
+                                                                                      cResult[68] = tmp23Result;
+                                                                                      tmp35 = tmp23Result;
+                                                                                    } else {
+                                                                                      tmp35 = cResult[68];
+                                                                                    }
+                                                                                    if (cResult[69] === accessibilityLabel) {
+                                                                                      if (cResult[70] === accessible) {
+                                                                                        if (cResult[71] === tmp11) {
                                                                                           if (cResult[72] === tmp26) {
-                                                                                            if (cResult[73] === tmp28) {
-                                                                                              if (cResult[74] === tmp30) {
-                                                                                                if (cResult[75] === tmp32) {
-                                                                                                  let tmp36;
-                                                                                                  if (cResult[76] === tmp34) {
-                                                                                                    tmp36 = cResult[77];
+                                                                                            if (cResult[73] === tmp27) {
+                                                                                              if (cResult[74] === tmp29) {
+                                                                                                if (cResult[75] === tmp31) {
+                                                                                                  if (cResult[76] === tmp33) {
+                                                                                                    let tmp37;
+                                                                                                    if (cResult[77] === tmp35) {
+                                                                                                      tmp37 = cResult[78];
+                                                                                                    }
+                                                                                                    return tmp37;
                                                                                                   }
-                                                                                                  return tmp36;
                                                                                                 }
                                                                                               }
                                                                                             }
@@ -367,29 +371,29 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                    let obj2 = { style: tmp26, needsOffscreenAlphaCompositing: tmp11, accessible, accessibilityLabel, children: items };
+                                                                                    items = [tmp27, tmp29, tmp31, tmp33, tmp35];
+                                                                                    const tmp40 = guildId(deaf, obj2);
+                                                                                    cResult[69] = accessibilityLabel;
+                                                                                    cResult[70] = accessible;
+                                                                                    cResult[71] = tmp11;
+                                                                                    cResult[72] = tmp26;
+                                                                                    cResult[73] = tmp27;
+                                                                                    cResult[74] = tmp29;
+                                                                                    cResult[75] = tmp31;
+                                                                                    cResult[76] = tmp33;
+                                                                                    cResult[77] = tmp35;
+                                                                                    cResult[78] = tmp40;
+                                                                                    tmp37 = tmp40;
                                                                                   }
-                                                                                  let obj2 = { style: tmp25, needsOffscreenAlphaCompositing: tmp10, accessible, accessibilityLabel, children: items };
-                                                                                  items = [tmp26, tmp28, tmp30, tmp32, tmp34];
-                                                                                  const tmp39 = user(mute, obj2);
-                                                                                  cResult[68] = accessibilityLabel;
-                                                                                  cResult[69] = accessible;
-                                                                                  cResult[70] = tmp10;
-                                                                                  cResult[71] = tmp25;
-                                                                                  cResult[72] = tmp26;
-                                                                                  cResult[73] = tmp28;
-                                                                                  cResult[74] = tmp30;
-                                                                                  cResult[75] = tmp32;
-                                                                                  cResult[76] = tmp34;
-                                                                                  cResult[77] = tmp39;
-                                                                                  tmp36 = tmp39;
                                                                                 }
+                                                                                let items1 = [tmp25, tmp13.container, style];
+                                                                                cResult[55] = style;
+                                                                                cResult[56] = tmp13.container;
+                                                                                cResult[57] = tmp25;
+                                                                                cResult[58] = items1;
+                                                                                tmp26 = items1;
                                                                               }
-                                                                              let items1 = [tmp24, tmp12.container, style];
-                                                                              cResult[54] = style;
-                                                                              cResult[55] = tmp12.container;
-                                                                              cResult[56] = tmp24;
-                                                                              cResult[57] = items1;
-                                                                              tmp25 = items1;
                                                                             }
                                                                           }
                                                                         }
@@ -397,43 +401,40 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                     }
                                                                     function renderSpeakingIndicator() {
                                                                       let items;
-                                                                      const tmp = closure_18;
-                                                                      if (tmp) {
-                                                                        let tmp8Result;
-                                                                        const sum = CutoutableAvatarImage.AVATAR_SIZE_MAP[size] + 4;
-                                                                        if (closure_19) {
-                                                                          const obj = { color: speakingColor, style: items };
-                                                                          items = [closure_21.stageSpeaking, ];
-                                                                          size = { width: sum, height: sum, borderRadius: sum / 2 };
-                                                                          items[1] = size;
-                                                                          tmp8Result = tmp8(SpeakerPulseDefault, obj);
-                                                                        } else {
-                                                                          const items1 = [closure_21.speaking, , ];
-                                                                          const size1 = { width: sum, height: sum, borderRadius: sum / 2 };
-                                                                          items1[1] = size1;
-                                                                          let tmp12 = null;
-                                                                          const tmp9 = View;
-                                                                          if (null != speakingColor) {
-                                                                            tmp12 = { borderColor: tmp11 };
-                                                                            const obj2 = { borderColor: tmp11 };
-                                                                          }
-                                                                          const obj3 = { style: items1 };
-                                                                          items1[2] = tmp12;
-                                                                          tmp8Result = tmp8(tmp9, obj3);
+                                                                      let items1;
+                                                                      let tmp6Result;
+                                                                      const tmp = closure_17;
+                                                                      if (!tmp) {
+                                                                        const tmp2 = closure_18;
+                                                                        if (!tmp2) {
+                                                                          return null;
                                                                         }
-                                                                        return tmp8Result;
-                                                                      } else {
-                                                                        return null;
                                                                       }
+                                                                      const sum = CutoutableAvatarImage.AVATAR_SIZE_MAP[size] + 4;
+                                                                      if (closure_19) {
+                                                                        const obj2 = { style: items };
+                                                                        items = [closure_21.stageSpeaking, ];
+                                                                        size = { width: sum, height: sum, borderRadius: sum / 2 };
+                                                                        items[1] = size;
+                                                                        tmp6Result = tmp6(SpeakerPulseDefault, obj2);
+                                                                      } else {
+                                                                        const obj = { style: items1 };
+                                                                        items1 = [closure_18 ? closure_21.soundboard : closure_21.speaking, ];
+                                                                        const size1 = { width: sum, height: sum, borderRadius: sum / 2 };
+                                                                        items1[1] = size1;
+                                                                        tmp6Result = tmp6(View, obj);
+                                                                      }
+                                                                      return tmp6Result;
                                                                     }
-                                                                    cResult[47] = tmp9;
-                                                                    cResult[48] = size;
-                                                                    cResult[49] = tmp8;
-                                                                    cResult[50] = speakingColor;
-                                                                    cResult[51] = tmp12.speaking;
-                                                                    cResult[52] = tmp12.stageSpeaking;
-                                                                    cResult[53] = renderSpeakingIndicator;
-                                                                    tmp23 = renderSpeakingIndicator;
+                                                                    cResult[47] = tmp10;
+                                                                    cResult[48] = undefined !== playingSoundboard && playingSoundboard;
+                                                                    cResult[49] = size;
+                                                                    cResult[50] = undefined !== speaking && speaking;
+                                                                    cResult[51] = tmp13.soundboard;
+                                                                    cResult[52] = tmp13.speaking;
+                                                                    cResult[53] = tmp13.stageSpeaking;
+                                                                    cResult[54] = renderSpeakingIndicator;
+                                                                    tmp24 = renderSpeakingIndicator;
                                                                   }
                                                                 }
                                                               }
@@ -465,10 +466,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                               }
                                                               cResult[42] = deaf;
                                                               cResult[43] = mute;
-                                                              cResult[44] = tmp12.status;
-                                                              cResult[45] = tmp12.voiceStatus;
+                                                              cResult[44] = tmp13.status;
+                                                              cResult[45] = tmp13.voiceStatus;
                                                               cResult[46] = renderVoiceStatus;
-                                                              tmp22 = renderVoiceStatus;
+                                                              tmp23 = renderVoiceStatus;
                                                             }
                                                           }
                                                         }
@@ -521,11 +522,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                             cResult[35] = statusSizeOverride;
                                             cResult[36] = statusStyle;
                                             cResult[37] = tmp4;
-                                            cResult[38] = tmp12.status;
-                                            cResult[39] = tmp11;
+                                            cResult[38] = tmp13.status;
+                                            cResult[39] = tmp12;
                                             cResult[40] = user;
                                             cResult[41] = renderStatus;
-                                            tmp21 = renderStatus;
+                                            tmp22 = renderStatus;
                                           }
                                         }
                                       }
@@ -545,9 +546,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                     cResult[26] = avatarDecoration;
                                     cResult[27] = decorationCutout;
                                     cResult[28] = size;
-                                    cResult[29] = tmp12.decoration;
+                                    cResult[29] = tmp13.decoration;
                                     cResult[30] = renderDecorations;
-                                    tmp20 = renderDecorations;
+                                    tmp21 = renderDecorations;
                                   }
                                 }
                               }
@@ -594,20 +595,20 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     cResult[22] = source;
                     cResult[23] = user;
                     cResult[24] = renderImage;
-                    tmp19 = renderImage;
+                    tmp20 = renderImage;
                   }
-                  let obj3 = { cutout: tmp13, decorationCutout: tmp16 };
-                  cResult[12] = tmp16;
-                  cResult[13] = tmp13;
+                  let obj3 = { cutout: tmp14, decorationCutout: tmp17 };
+                  cResult[12] = tmp17;
+                  cResult[13] = tmp14;
                   cResult[14] = obj3;
-                  tmp18 = obj3;
+                  tmp19 = obj3;
                 }
                 const tmpResult = tmp(tmp2[11]);
-                const decorationCutoutForAvatarCutout = tmpResult.getDecorationCutoutForAvatarCutout(tmp13, tmp15);
-                cResult[9] = tmp13;
-                cResult[10] = -tmp12.decoration.top;
+                const decorationCutoutForAvatarCutout = tmpResult.getDecorationCutoutForAvatarCutout(tmp14, tmp16);
+                cResult[9] = tmp14;
+                cResult[10] = -tmp13.decoration.top;
                 cResult[11] = decorationCutoutForAvatarCutout;
-                tmp16 = decorationCutoutForAvatarCutout;
+                tmp17 = decorationCutoutForAvatarCutout;
               }
             }
           }
@@ -615,10 +616,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  let tmp14 = cutout;
+  let tmp15 = cutout;
   if (null != autoStatusCutout) {
-    let obj4 = { avatarSize: size, userStatus: status, isMobileOnline: tmp5, isVROnline: tmp6, padding: true === autoStatusCutout ? statusStyle : autoStatusCutout.padding, typing: tmp11, statusSizeOverride };
-    tmp14 = statusSizeOverride(obj4);
+    let obj4 = { avatarSize: size, userStatus: status, isMobileOnline: tmp5, isVROnline: tmp6, padding: true === autoStatusCutout ? avatarStyle : autoStatusCutout.padding, typing: tmp12, statusSizeOverride };
+    tmp15 = getAvatarStatusCutout(obj4);
   }
   cResult[0] = cutout;
   cResult[1] = autoStatusCutout;
@@ -627,9 +628,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[4] = size;
   cResult[5] = status;
   cResult[6] = statusSizeOverride;
-  cResult[7] = tmp11;
-  cResult[8] = tmp14;
-  tmp13 = tmp14;
+  cResult[7] = tmp12;
+  cResult[8] = tmp15;
+  tmp14 = tmp15;
 }) : (function Avatar(isMobileOnline) {
   let accessibilityLabel;
   let accessible;
@@ -644,23 +645,22 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let guildId;
   let isStageCall;
   let items1;
-  let items2;
   let items5;
   let items6;
   let items7;
   let mute;
   let needsOffscreenAlphaCompositing;
   let obj11;
-  let obj13;
+  let obj9;
   let source;
-  let speakingColor;
   let statusStyle;
   let streaming;
   let style;
-  let tmp16;
-  let tmp58;
-  let tmp61;
+  let tmp15;
+  let tmp57;
+  let tmp60;
   let tmp7Result;
+  let tmp9;
   let typing;
   let user;
   ({ channel, streaming } = isMobileOnline);
@@ -689,7 +689,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (flag4 === undefined) {
     flag4 = false;
   }
-  ({ speakingColor, avatarDecoration, cutout } = isMobileOnline);
+  let flag5 = isMobileOnline.playingSoundboard;
+  if (flag5 === undefined) {
+    flag5 = false;
+  }
+  ({ avatarDecoration, cutout } = isMobileOnline);
   const autoStatusCutout = isMobileOnline.autoStatusCutout;
   ({ isStageCall, mute, deaf, statusStyle, avatarStyle, style } = isMobileOnline);
   if (isStageCall === undefined) {
@@ -723,119 +727,115 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj = { style: items1, needsOffscreenAlphaCompositing, accessible, accessibilityLabel, children: null };
   ({ cutout: cutout2, decorationCutout } = memo);
   items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
-  let tmp9 = null;
   const tmp5 = closure_9;
   if (flag4) {
     let tmp11Result;
     const sum = tmp7(tmp8[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+    let obj2 = { style: null };
     if (isStageCall) {
-      let obj2 = { color: speakingColor, style: items2 };
-      items2 = [tmp3.stageSpeaking, ];
+      const items2 = [tmp3.stageSpeaking, ];
       size = { width: sum, height: sum, borderRadius: sum / 2 };
       items2[1] = size;
+      obj2.style = items2;
       tmp11Result = tmp11(flag2(tmp8[19]), obj2);
     } else {
-      const items3 = [tmp3.speaking, , ];
+      const items3 = [flag5 ? tmp3.soundboard : tmp3.speaking, ];
       const size1 = { width: sum, height: sum, borderRadius: sum / 2 };
       items3[1] = size1;
-      let tmp12 = null;
-      if (null != speakingColor) {
-        let obj3 = { borderColor: speakingColor };
-        tmp12 = obj3;
-      }
-      const obj4 = { style: items3 };
-      items3[2] = tmp12;
-      tmp11Result = tmp11(tmp6, obj4);
+      obj2.style = items3;
+      tmp11Result = tmp11(tmp6, obj2);
     }
     tmp9 = tmp11Result;
+  } else {
+    tmp9 = null;
   }
   const items4 = [tmp9, , , , ];
-  const obj5 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
+  let obj3 = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
   if (null == source) {
-    let tmp15;
-    let tmp55;
+    let tmp14;
+    let tmp54;
     if (null == user) {
-      tmp15 = null;
+      tmp14 = null;
     }
-    items4[1] = tmp15;
-    let tmp35 = null;
+    items4[1] = tmp14;
+    let tmp34 = null;
     if (null != avatarDecoration) {
-      const obj6 = { size: tmp7Result.getDecorationSizeForAvatarSize(NORMAL), avatarDecoration, decorationStyle: tmp3.decoration, animate: flag3, cutout: decorationCutout };
-      const tmp38 = flag2(status[14]);
+      const obj4 = { size: tmp7Result.getDecorationSizeForAvatarSize(NORMAL), avatarDecoration, decorationStyle: tmp3.decoration, animate: flag3, cutout: decorationCutout };
+      const tmp37 = flag2(status[14]);
       tmp7Result = flag(status[11]);
-      tmp35 = decoration(tmp38, obj6, avatarDecoration.asset);
+      tmp34 = decoration(tmp37, obj4, avatarDecoration.asset);
     }
-    items4[2] = tmp35;
-    let tmp39 = null;
+    items4[2] = tmp34;
+    let tmp38 = null;
     if (null != status) {
-      tmp39 = null;
+      tmp38 = null;
       if (status !== autoStatusCutout.UNKNOWN) {
         if (statusSizeOverride == null) {
           statusSizeOverride = getStatusSize(NORMAL);
         }
-        let tmp42 = null;
+        let tmp41 = null;
         if (null != statusSizeOverride) {
-          const obj7 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: items5 };
+          const obj5 = { size: statusSizeOverride, isMobileOnline: flag, isVROnline: flag2, status, streaming, style: items5 };
           items5 = [tmp3.status, statusStyle];
-          tmp42 = obj7;
+          tmp41 = obj5;
         }
-        let tmp43 = null;
-        if (null != tmp42) {
+        let tmp42 = null;
+        if (null != tmp41) {
           if (typing) {
-            let tmp50;
+            let tmp49;
             if (null != user) {
-              const obj8 = { typing, userId: user.id };
+              const obj6 = { typing, userId: user.id };
               const StatusWithTyping = tmp7(tmp8[15]).StatusWithTyping;
-              const merged = Object.assign(tmp42);
-              tmp50 = decoration(StatusWithTyping, obj8);
+              const merged = Object.assign(tmp41);
+              tmp49 = decoration(StatusWithTyping, obj6);
             }
-            tmp43 = tmp50;
+            tmp42 = tmp49;
           }
-          const obj9 = {};
-          const tmp46 = flag2(status[15]);
-          const merged1 = Object.assign(tmp42);
-          tmp50 = decoration(tmp46, obj9);
+          const obj7 = {};
+          const tmp45 = flag2(status[15]);
+          const merged1 = Object.assign(tmp41);
+          tmp49 = decoration(tmp45, obj7);
         }
-        tmp39 = tmp43;
+        tmp38 = tmp42;
       }
     }
-    items4[3] = tmp39;
+    items4[3] = tmp38;
     if (deaf) {
-      const obj10 = { style: items6, children: decoration(tmp61, obj11) };
+      const obj8 = { style: items6, children: decoration(tmp60, obj9) };
       items6 = [, ];
       ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
-      obj11 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-      tmp61 = flag2(status[16]);
-      tmp55 = decoration(tmp6, obj10);
+      obj9 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp60 = flag2(status[16]);
+      tmp54 = decoration(tmp6, obj8);
     } else if (mute) {
-      const obj12 = { style: items7, children: decoration(tmp58, obj13) };
+      const obj10 = { style: items7, children: decoration(tmp57, obj11) };
       items7 = [, ];
       ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
-      obj13 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[18]), color: flag2(status[6]).unsafe_rawColors.WHITE };
-      tmp58 = flag2(status[16]);
-      tmp55 = decoration(tmp6, obj12);
+      obj11 = { size: flag2(status[16]).Sizes.REFRESH_SMALL_16, source: flag2(status[18]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+      tmp57 = flag2(status[16]);
+      tmp54 = decoration(tmp6, obj10);
     }
-    items4[4] = tmp55;
+    items4[4] = tmp54;
     obj.children = items4;
     return tmp5(cutout, obj);
   }
   if (null != source) {
-    const obj14 = { source, size: NORMAL, animate: flag3 };
-    const tmp31 = flag2(status[7]);
-    const merged2 = Object.assign(obj5);
-    tmp16 = decoration(tmp31, obj14);
+    const obj12 = { source, size: NORMAL, animate: flag3 };
+    const tmp30 = flag2(status[7]);
+    const merged2 = Object.assign(obj3);
+    tmp15 = decoration(tmp30, obj12);
   } else if (null != user) {
-    const obj15 = { user, guildId, size: NORMAL, animate: flag3 };
-    const tmp25 = flag2(status[7]);
-    const merged3 = Object.assign(obj5);
-    tmp16 = decoration(tmp25, obj15);
+    const obj13 = { user, guildId, size: NORMAL, animate: flag3 };
+    const tmp24 = flag2(status[7]);
+    const merged3 = Object.assign(obj3);
+    tmp15 = decoration(tmp24, obj13);
   } else if (null != channel) {
-    const obj16 = { channel, size: NORMAL, animate: flag3 };
-    const tmp19 = flag2(status[7]);
-    const merged4 = Object.assign(obj5);
-    tmp16 = decoration(tmp19, obj16);
+    const obj14 = { channel, size: NORMAL, animate: flag3 };
+    const tmp18 = flag2(status[7]);
+    const merged4 = Object.assign(obj3);
+    tmp15 = decoration(tmp18, obj14);
   }
-  tmp15 = tmp16;
+  tmp14 = tmp15;
 }));
 let size = size_mod;
 let result = size.fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");

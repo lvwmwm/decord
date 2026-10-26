@@ -1,16 +1,16 @@
-// Module ID: 5111
-// Function ID: 5112
+// Module ID: 5189
+// Function ID: 5190
 // Name: createExperiment
-// Dependencies: [32, 19, 502, 5112, 5113, 5117, 5118, 5119, 2]
+// Dependencies: [32, 19, 502, 5190, 5191, 5195, 5196, 5197, 2]
 // Exports: default
 
-// Module 5111 (createExperiment)
-import ExperimentManager from "ExperimentManager" /* 5117 */;
+// Module 5189 (createExperiment)
+import ExperimentManager from "ExperimentManager" /* 5195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExperimentStore from "ExperimentStore" /* 5112 */;
-import ExperimentConstants from "ExperimentConstants" /* 5113 */;
+import ExperimentStore from "ExperimentStore" /* 5190 */;
+import ExperimentConstants from "ExperimentConstants" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14645
+// Function ID: 14646
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8154, 9999, 5534, 584, 2]
+// Dependencies: [5, 8273, 10096, 6012, 584, 2]
 // Exports: uploadMessageAttachments
 
-// Module 14410 (uploadMessageAttachments)
+// Module 14645 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 8154 */;
+import UploadStore from "UploadStore" /* 8273 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;

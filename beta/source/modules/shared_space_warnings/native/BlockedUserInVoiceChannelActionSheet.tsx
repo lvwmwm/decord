@@ -1,23 +1,23 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 15049
+// Function ID: 15050
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2068, 4855, 1392, 14812, 14814, 1087, 21, 5191, 587, 558, 576, 504, 5155, 1267, 6145, 1128, 7175, 5128, 10725, 5187, 6542, 6457, 1202, 11671, 11492, 5479, 2]
+// Dependencies: [19, 17, 4823, 4913, 1392, 15046, 15048, 1087, 21, 4971, 587, 558, 576, 504, 5210, 1267, 6634, 1128, 7298, 5669, 10945, 5234, 6987, 6903, 1202, 11841, 11645, 5244, 2]
 
-// Module 14815 (BlockedUserInVoiceChannelActionSheet)
+// Module 15049 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14812 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15046 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14814 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15048 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

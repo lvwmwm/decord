@@ -1,12 +1,12 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14437
+// Function ID: 14438
 // Name: HideFriendRequestNotesUtils
-// Dependencies: [4855, 558, 2044, 8004, 576, 504, 2]
+// Dependencies: [4913, 558, 4799, 8124, 576, 504, 2]
 
-// Module 14201 (HideFriendRequestNotesUtils)
-import UserSettings from "UserSettings" /* 2044 */;
-import useUserIsTeen from "useUserIsTeen" /* 8004 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+// Module 14437 (HideFriendRequestNotesUtils)
+import UserSettings from "UserSettings" /* 4799 */;
+import useUserIsTeen from "useUserIsTeen" /* 8124 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

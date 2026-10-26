@@ -1,13 +1,13 @@
-// Module ID: 5241
-// Function ID: 5242
+// Module ID: 5744
+// Function ID: 5745
 // Name: DirectVideo
-// Dependencies: [19, 21, 4, 5242, 5243, 2]
+// Dependencies: [19, 21, 4, 5745, 5746, 2]
 // Exports: default
 
-// Module 5241 (DirectVideo)
+// Module 5744 (DirectVideo)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Fragment from "Fragment" /* 21 */;
-import DirectVideoStream from "DirectVideoStream" /* 5242 */;
+import DirectVideoStream from "DirectVideoStream" /* 5745 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,18 @@ export default function DirectVideo(streamId, onContainerResized) {
   const layoutEffect = onResize.useLayoutEffect(() => {
     let ref2;
     let current = ref.current;
-    const resizeObserver = new globalThis.ResizeObserver((arg0) => {
+    let defaultView;
+    if (current != null) {
+      const ownerDocument = current.ownerDocument;
+      if (ownerDocument != null) {
+        defaultView = ownerDocument.defaultView;
+      }
+    }
+    if (defaultView == null) {
+      let tmp2 = globalThis;
+      defaultView = window;
+    }
+    const resizeObserver = new defaultView.ResizeObserver((arg0) => {
       const tmp = flag2;
       if (tmp) {
         const iter = arg0[Symbol.iterator]();
@@ -63,6 +74,7 @@ export default function DirectVideo(streamId, onContainerResized) {
       }
     });
     if (null != current) {
+      let tmp9 = globalThis;
       const _document = document;
       const element = <video />;
       element.style.display = "block";
@@ -119,15 +131,14 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
       });
       const _HermesInternal2 = HermesInternal;
-      let tmp10 = closure_8;
       logger.info("create video element for " + closure_8.current.streamId + ", readyState=" + element.readyState);
       let num = 3;
       const obj3 = logger;
+      const tmp13 = closure_8;
       if (element.readyState > 3) {
         const _HermesInternal = HermesInternal;
-        obj3.error("video element for " + tmp10.current.streamId + " was ready before attached");
+        obj3.error("video element for " + tmp13.current.streamId + " was ready before attached");
       }
-      let tmp2 = resizeObserver;
       current.appendChild(element);
       resizeObserver.disconnect();
       resizeObserver.observe(element);

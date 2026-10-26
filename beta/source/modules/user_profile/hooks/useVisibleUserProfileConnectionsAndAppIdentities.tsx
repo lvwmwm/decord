@@ -1,12 +1,12 @@
-// Module ID: 14183
-// Function ID: 14184
+// Module ID: 14418
+// Function ID: 14419
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 14184, 14185, 7134, 1388, 6019, 2]
+// Dependencies: [19, 558, 576, 14419, 14420, 7257, 1388, 6502, 2]
 
-// Module 14183 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 6019 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14184 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14185 */;
+// Module 14418 (useVisibleUserProfileConnectionsAndAppIdentities)
+import PlatformsDefault from "Platforms" /* 6502 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14419 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14420 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const useGetOrFetchApplicationsDefault = tmp4(7134);
+const useGetOrFetchApplicationsDefault = tmp4(7257);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let tmp11;
@@ -91,20 +91,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
       tmp24 = obj2;
     }
     if (cResult[15] !== tmp5) {
-      const fn3 = function y(type) {
+      const fn3 = function h(type) {
         const obj = PlatformsDefault;
         const value = obj.get(type.type);
-        let migrationExperimentEnabled;
+        let migrationData;
         if (value != null) {
-          const migrationData = value.migrationData;
-          if (migrationData != null) {
-            migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-          }
+          migrationData = value.migrationData;
         }
-        let tmp3 = !migrationExperimentEnabled;
-        if (migrationExperimentEnabled) {
-          tmp3 = !set.has(value.migrationData.replacedBy);
-        }
+        const tmp3 = null == migrationData || !set.has(value.migrationData.replacedBy);
         return tmp3;
       };
       cResult[15] = tmp5;
@@ -120,7 +114,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
     tmp21 = found1;
   }
   if (cResult[9] !== tmp15) {
-    const fn = function v(identity) {
+    const fn = function _(identity) {
       let closure_0 = identity;
       const obj = { identity, application: closure_1.find((id) => id.id === application_id.application_id) };
       return obj;
@@ -132,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
     tmp18 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _(application) {
+    const fn2 = function y(application) {
       return null != application.application;
     };
     cResult[11] = fn2;
@@ -186,17 +180,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
     connections: found.useMemo(() => closure_1.filter((type) => {
       const obj = closure_1(memo[7]);
       const value = obj.get(type.type);
-      let migrationExperimentEnabled;
+      let migrationData;
       if (value != null) {
-        const migrationData = value.migrationData;
-        if (migrationData != null) {
-          migrationExperimentEnabled = migrationData.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
-        }
+        migrationData = value.migrationData;
       }
-      let tmp3 = !migrationExperimentEnabled;
-      if (migrationExperimentEnabled) {
-        tmp3 = !set.has(value.migrationData.replacedBy);
-      }
+      const tmp3 = null == migrationData || !set.has(value.migrationData.replacedBy);
       return tmp3;
     }), items3)
   };

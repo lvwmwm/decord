@@ -1,38 +1,38 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17530
+// Function ID: 17531
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 5181, 7515, 17147, 2090, 2119, 5215, 1087, 21, 558, 576, 1508, 5072, 10952, 17234, 17235, 17262, 17307, 17308, 16141, 17152, 17309, 17263, 17311, 7524, 504, 6361, 17312, 17316, 7517, 17317, 11906, 17132, 16142, 17370, 17382, 17385, 17387, 12817, 7124, 17231, 17389, 17145, 17390, 17396, 17400, 17413, 2093, 17418, 9760, 17426, 12637, 2]
+// Dependencies: [109, 32, 19, 17, 4972, 7635, 17444, 4845, 4874, 5717, 1087, 21, 558, 576, 1508, 5150, 11172, 17531, 17532, 17559, 17608, 17609, 16445, 17449, 17610, 17560, 17612, 7644, 504, 6813, 17613, 17617, 7637, 17618, 12074, 17429, 16446, 17672, 17684, 17687, 17689, 13057, 5597, 17528, 17691, 17442, 17692, 17698, 17702, 17715, 4848, 17720, 9858, 17728, 12855, 2]
 
-// Module 17233 (RedesignChannelList)
+// Module 17530 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ChannelListState from "ChannelListState" /* 7517 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 17263 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17308 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 17309 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 17317 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17389 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 17400 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 17413 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 17426 */;
+import ChannelListState from "ChannelListState" /* 7637 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12074 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17449 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 17560 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17609 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 17610 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 17618 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17691 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 17702 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 17715 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 17728 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import ChannelListStore from "ChannelListStore" /* 7515 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 17147 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import ChannelListStore from "ChannelListStore" /* 7635 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 17444 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, navigation;
+let _require, importDefault, navigation, noteInteractionResult;
 
 let closure_15;
 let closure_16;
@@ -40,8 +40,8 @@ let closure_17;
 let closure_18;
 let closure_19;
 let tmp;
-const TTIFirstContentfulPaint = tmp(12637);
-const GuildsRenderExperiment2 = tmp(17145);
+const TTIFirstContentfulPaint = tmp(12855);
+const GuildsRenderExperiment2 = tmp(17442);
 let closure_3 = ["shouldRender"];
 let closure_4 = ["selectedGuildId", "selectedChannelId"];
 const View = react_native.View;
@@ -171,10 +171,12 @@ ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelList(guild) {
   let applicationAccountLinkMarkAsDismissed;
   let contentInset;
+  let drawDistance;
   let first;
   let gameClaimMarkAsDismissed;
   let guildChannels;
   let items;
+  let list;
   let listBottom;
   let listPaddingBottom;
   let listTop;
@@ -182,11 +184,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let liveChannelNoticeHeight;
   let optInChannelsEnabled;
   let style;
-  let tmp9;
+  let tmp10;
   let voiceStates;
   let tmp2 = guildChannels;
   let obj = gameClaimMarkAsDismissed(guildChannels[13]);
-  const cResult = obj.c(112);
+  const cResult = obj.c(113);
   ({ contentInset, gameClaimMarkAsDismissed } = guild);
   guild = guild.guild;
   guildChannels = guild.guildChannels;
@@ -216,7 +218,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     first = cResult[0];
   }
   const tmp5Result = tmp5(tmp2[20]);
-  const list = tmp5Result.useConfig(first).list;
+  const config = tmp5Result.useConfig(first);
+  ({ list, drawDistance } = config);
   if (cResult[1] !== guildChannels) {
     class P {
       constructor() {
@@ -227,7 +230,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     cResult[1] = guildChannels;
     cResult[2] = P;
-    tmp9 = P;
+    tmp10 = P;
   } else {
     class P {
       constructor() {
@@ -238,8 +241,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   }
   if (cResult[3] === guildChannels) {
-    let tmp11;
-    let tmp13;
+    let tmp12;
+    let tmp14;
     class P {
       constructor() {
         obj = closure_0(closure_2[21]);
@@ -247,7 +250,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         return;
       }
     }
-    const effect = obj3.useEffect(tmp9, items);
+    const effect = obj3.useEffect(tmp10, items);
     if (cResult[6] !== guildChannels) {
       class P {
         constructor() {
@@ -259,7 +262,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let sections = guildChannels.getSections(false);
       cResult[6] = guildChannels;
       cResult[7] = sections;
-      tmp11 = sections;
+      tmp12 = sections;
     } else {
       class P {
         constructor() {
@@ -269,7 +272,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       }
     }
-    sections = tmp11;
+    sections = tmp12;
     const id = guild.id;
     if (cResult[8] !== id) {
       class P {
@@ -279,10 +282,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return;
         }
       }
-      tmp14[0] = id;
+      tmp15[0] = id;
       cResult[8] = id;
-      cResult[9] = tmp14;
-      tmp13 = tmp14;
+      cResult[9] = tmp15;
+      tmp14 = tmp15;
     } else {
       class P {
         constructor() {
@@ -293,38 +296,38 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
     const tmpResult = gameClaimMarkAsDismissed(tmp2[22]);
-    tmpResult.useExternalScrollEventHandler(tmp13);
+    tmpResult.useExternalScrollEventHandler(tmp14);
     const _Symbol = Symbol;
     const tmpResult2 = gameClaimMarkAsDismissed(tmp2[23]);
     const isHomeDrawerEnabled = tmpResult2.useIsHomeDrawerEnabled();
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class P {
+      class U {
         constructor() {
-          obj = closure_0(closure_2[21]);
-          result = obj.registerFastListChannelVisibilityMethod(closure_15, guildChannels);
+          state = bannerWidth.getState();
+          noteInteractionResult = state.noteInteraction();
           return;
         }
       }
-      cResult[10] = tmp18;
+      cResult[10] = U;
     } else {
-      class P {
+      class U {
         constructor() {
-          obj = closure_0(closure_2[21]);
-          result = obj.registerFastListChannelVisibilityMethod(closure_15, guildChannels);
+          state = bannerWidth.getState();
+          noteInteractionResult = state.noteInteraction();
           return;
         }
       }
     }
     if (cResult[11] === guild) {
-      class P {
+      class U {
         constructor() {
-          obj = closure_0(closure_2[21]);
-          result = obj.registerFastListChannelVisibilityMethod(closure_15, guildChannels);
+          state = bannerWidth.getState();
+          noteInteractionResult = state.noteInteraction();
           return;
         }
       }
     }
-    class X {
+    class J {
       constructor(arg0) {
         obj = { fastList: guild, guildChannels, guild, headerHeight };
         return jsx(closure_1(closure_2[24]), obj);
@@ -333,7 +336,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     cResult[11] = guild;
     cResult[12] = guildChannels;
     cResult[13] = headerHeight;
-    cResult[14] = X;
+    cResult[14] = J;
   }
   items = [ref, guildChannels, list];
   cResult[3] = guildChannels;
@@ -350,8 +353,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let row;
   let section;
   let style;
-  let tmp39;
-  let tmp40Result;
+  let tmp40;
+  let tmp41Result;
   let youBarTotalHeight1;
   gameClaimMarkAsDismissed = gameClaimMarkAsDismissed.gameClaimMarkAsDismissed;
   const guild = gameClaimMarkAsDismissed.guild;
@@ -376,8 +379,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ listTop, listBottom, listPaddingBottom } = tmp5);
   const ref = accountLinkApplication.useRef(null);
   let obj2 = guild(guildChannels[20]);
-  const list = obj2.useConfig({ location: "Channel List" }).list;
+  const config = obj2.useConfig({ location: "Channel List" });
+  const list = config.list;
   const items = [ref, guildChannels, list];
+  const drawDistance = config.drawDistance;
   const effect = accountLinkApplication.useEffect(() => {
     const obj = registerSidebarVisibilityMethods;
     const result = obj.registerFastListChannelVisibilityMethod(ref, guildChannels);
@@ -504,7 +509,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const context = accountLinkApplication.useContext(guild(guildChannels[35]));
   const obj10 = gameClaimMarkAsDismissed(guildChannels[36]);
   const youBarTotalHeight = obj10.useYouBarTotalHeight(16);
-  const obj12 = { endReachedThreshold: listBottom + listPaddingBottom, getItemSize: callback5, getRecyclerKey: callback11, getSectionFooterSize: callback9, getSectionHeaderSize: callback7, headerSize: listTop, initialScrollItem: row, initialScrollSection: section, insetEnd: youBarTotalHeight, listViewportHeight, onEndReached: callback3, onScroll: tmp39, onScrollWorklet: externalScrollEventHandler, renderAccessory: callback1, renderHeader: callback2, renderItem: callback6, renderSectionFooter: callback10, renderSectionHeader: callback8, scrollIndicatorInsetBottom: youBarTotalHeight1, sections, waitFor: context };
+  const obj12 = { endReachedThreshold: listBottom + listPaddingBottom, getItemSize: callback5, getRecyclerKey: callback11, getSectionFooterSize: callback9, getSectionHeaderSize: callback7, headerSize: listTop, initialScrollItem: row, initialScrollSection: section, insetEnd: youBarTotalHeight, listViewportHeight, onEndReached: callback3, onScroll: tmp40, onScrollWorklet: externalScrollEventHandler, renderAccessory: callback1, renderHeader: callback2, renderItem: callback6, renderSectionFooter: callback10, renderSectionHeader: callback8, scrollIndicatorInsetBottom: youBarTotalHeight1, sections, waitFor: context };
   const obj11 = gameClaimMarkAsDismissed(guildChannels[36]);
   youBarTotalHeight1 = obj11.useYouBarTotalHeight(-16);
   row = undefined;
@@ -535,9 +540,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  tmp39 = undefined;
+  tmp40 = undefined;
   if (isHomeDrawerEnabled) {
-    tmp39 = callback;
+    tmp40 = callback;
   }
   const obj14 = { profile: gameClaimMarkAsDismissed(tmp2[41]).Profiles.Channels, children: recentlyActiveChannelsEnabled(LayerScope, obj18) };
   const tmp4Result = tmp4(tmp2[41]);
@@ -546,18 +551,18 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   items14 = [, ];
   const tmp4Result3 = tmp4(tmp2[43]);
   items14[0] = recentlyActiveChannelsEnabled(tmp4(tmp2[37]), { guild });
-  const tmp42 = stateFromStores;
+  const tmp43 = stateFromStores;
   if (memo) {
     const obj16 = { guild };
-    tmp40Result = tmp40(tmp4(tmp2[38]), obj16);
+    tmp41Result = tmp41(tmp4(tmp2[38]), obj16);
   } else {
-    const obj17 = { ref };
+    const obj17 = { ref, drawDistanceMode: drawDistance };
     const tmp4Result4 = tmp4("legend" === list ? tmp2[39] : tmp2[40]);
     const merged = Object.assign(obj12);
-    tmp40Result = tmp40(tmp4Result4, obj17, guild.id);
+    tmp41Result = tmp41(tmp4Result4, obj17, guild.id);
   }
-  items14[1] = tmp40Result;
-  obj18 = { children: tmp42(tmp4Result3, obj15) };
+  items14[1] = tmp41Result;
+  obj18 = { children: tmp43(tmp4Result3, obj15) };
   return recentlyActiveChannelsEnabled(tmp4Result, obj14);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -944,15 +949,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_15) {
-        const tmp2Result = selectedGuildId(2093);
+        const tmp2Result = selectedGuildId(4848);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           const obj4 = { guild: stateFromStores, selectedChannelId, selectedVoiceChannelId: stateFromStores1 };
-          const _default = selectedGuildId(17418).default;
+          const _default = selectedGuildId(17720).default;
           const merged1 = Object.assign(merged);
           return closure_17(_default, obj4);
         } else {
           let tmp6Result;
-          const tmp2Result2 = selectedGuildId(9760);
+          const tmp2Result2 = selectedGuildId(9858);
           if (tmp2Result2.shouldNSFWGateGuild(selectedGuildId)) {
             const obj5 = { style: merged.style, guildId: selectedGuildId };
             tmp6Result = tmp6(NsfwGateGuildSidebarDefault, obj5);
@@ -1009,7 +1014,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   }
   const obj4 = { children: items };
   items = [tmp5, tmp12];
-  const tmp16 = authStore5(closure_19, obj4);
+  const tmp16 = authStore4(closure_19, obj4);
   cResult[4] = tmp5;
   cResult[5] = tmp12;
   cResult[6] = tmp16;
@@ -1021,7 +1026,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const merged = Object.assign(arg0);
   const children = [closure_17(closure_24, obj2), ];
   let tmp6Result = null;
-  const tmp4 = authStore5;
+  const tmp4 = authStore4;
   const tmp5 = closure_19;
   const tmp6 = closure_17;
   if (!doesLandOnHomeDrawer) {

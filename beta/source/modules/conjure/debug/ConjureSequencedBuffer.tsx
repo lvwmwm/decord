@@ -1,9 +1,9 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 10710
+// Function ID: 10711
 // Name: ConjureSequencedBuffer
 // Dependencies: [2]
 
-// Module 10989 (ConjureSequencedBuffer)
+// Module 10710 (ConjureSequencedBuffer)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureSequencedBuffer.tsx");
@@ -13,14 +13,6 @@ class ConjureSequencedBuffer {
     merged[0] = [];
     merged.seqOf = seqOf;
     return merged;
-  }
-  at(arg0) {
-    const items = this.items;
-    return items.at(arg0);
-  }
-  findIndex(arg0) {
-    const items = this.items;
-    return items.findIndex(arg0);
   }
   indexOfSeq(seq) {
     const self = this;
@@ -67,27 +59,6 @@ class ConjureSequencedBuffer {
     items.splice(tmp2, 0, arg0);
     self.cached = null;
   }
-  replace(arg0, arg1) {
-    const self = this;
-    const keyOfResult = this.keyOf(this.items[arg0]);
-    if (keyOfResult === this.keyOf(arg1)) {
-      self.items[arg0] = arg1;
-      self.cached = null;
-    } else {
-      const items = self.items;
-      items.splice(arg0, 1);
-      self.insert(arg1);
-    }
-  }
-  retain(arg0) {
-    const self = this;
-    const items = this.items;
-    const found = items.filter(arg0);
-    if (found.length !== this.items.length) {
-      self.items = found;
-      self.cached = null;
-    }
-  }
   trim(arg0) {
     const self = this;
     if (this.items.length > arg0) {
@@ -95,9 +66,6 @@ class ConjureSequencedBuffer {
       items.splice(0, self.items.length - arg0);
       self.cached = null;
     }
-  }
-  values() {
-    return this.items;
   }
   snapshot() {
     const self = this;

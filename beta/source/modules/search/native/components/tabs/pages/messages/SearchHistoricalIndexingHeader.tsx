@@ -1,15 +1,15 @@
-// Module ID: 17854
-// Function ID: 17855
+// Module ID: 18160
+// Function ID: 18161
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2132, 9614, 21, 5191, 558, 576, 13004, 1128, 5187, 6459, 2]
+// Dependencies: [19, 2068, 9714, 21, 4971, 558, 576, 13244, 1128, 5234, 6905, 2]
 
-// Module 17854 (SearchHistoricalIndexingHeader)
+// Module 18160 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13244 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
-import createStyles from "createStyles" /* 5191 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import SearchConstants from "SearchConstants" /* 9714 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp14) {
-        const tmp18 = jsx(searchContext(5187).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        const tmp18 = jsx(searchContext(5234).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
         cResult[11] = tmp14;
         cResult[12] = tmp18;
         tmp16 = tmp18;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6459).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6905).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;

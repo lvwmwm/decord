@@ -1,9 +1,9 @@
-// Module ID: 14769
-// Function ID: 14770
+// Module ID: 15004
+// Function ID: 15005
 // Name: DebugExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 14769 (DebugExperiment)
+// Module 15004 (DebugExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

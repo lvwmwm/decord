@@ -1,12 +1,12 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 13793
+// Function ID: 13794
 // Name: serializeAppStartLogs
-// Dependencies: [10, 12, 8190, 2]
+// Dependencies: [10, 12, 8308, 2]
 // Exports: default
 
-// Module 13571 (serializeAppStartLogs)
+// Module 13793 (serializeAppStartLogs)
 import _modDef12 from "module_12" /* 12 */;
-import ThreadUtils from "ThreadUtils" /* 8190 */;
+import ThreadUtils from "ThreadUtils" /* 8308 */;
 import size from "module_2" /* 2 */;
 
 let item, prefix, set;

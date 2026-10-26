@@ -1,21 +1,24 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17689
+// Function ID: 17690
 // Name: ChannelListFastList
-// Dependencies: [32, 19, 21, 558, 576, 17388, 7038, 2]
+// Dependencies: [32, 19, 21, 558, 576, 17690, 7167, 2]
 
-// Module 17387 (ChannelListFastList)
+// Module 17689 (ChannelListFastList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import reactDefault from "react" /* 17388 */;
+import reactDefault from "react" /* 17690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp3;
-const FastListDefault = tmp3(7038);
+let tmp;
+let tmp4;
+const FastList = tmp(7167);
+const FastListDefault = tmp4(7167);
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListFastList(arg0) {
+  let drawDistanceMode;
   let endReachedThreshold;
   let getItemSize;
   let getRecyclerKey;
@@ -37,19 +40,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let renderSectionHeader;
   let scrollIndicatorInsetBottom;
   let sections;
-  let tmp5;
+  let tmp6;
   let waitFor;
   const obj = react2;
-  const cResult = obj.c(25);
-  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, headerSize, initialScrollItem, initialScrollSection, insetEnd, listViewportHeight, onEndReached, onScroll, onScrollWorklet, renderAccessory, renderHeader, renderItem, renderSectionFooter, renderSectionHeader, scrollIndicatorInsetBottom, sections, waitFor, ref } = arg0);
-  const tmp4 = _slicedToArray(reactDefault(ref), 2)[1];
+  const cResult = obj.c(26);
+  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, headerSize, initialScrollItem, initialScrollSection, insetEnd, listViewportHeight, onEndReached, onScroll, onScrollWorklet, renderAccessory, renderHeader, renderItem, renderSectionFooter, renderSectionHeader, scrollIndicatorInsetBottom, sections, waitFor, drawDistanceMode, ref } = arg0);
+  const tmp5 = _slicedToArray(reactDefault(ref), 2)[1];
   if (cResult[0] !== scrollIndicatorInsetBottom) {
     const obj2 = { bottom: scrollIndicatorInsetBottom };
     cResult[0] = scrollIndicatorInsetBottom;
     cResult[1] = obj2;
-    tmp5 = obj2;
+    tmp6 = obj2;
   } else {
-    tmp5 = cResult[1];
+    tmp6 = cResult[1];
+  }
+  let num3 = 6;
+  if ("viewport" === drawDistanceMode) {
+    num3 = FastList.DEFAULT_BATCHES_TO_RENDER;
   }
   if (cResult[2] === endReachedThreshold) {
     if (cResult[3] === getItemSize) {
@@ -69,14 +76,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                 if (cResult[17] === renderItem) {
                                   if (cResult[18] === renderSectionFooter) {
                                     if (cResult[19] === renderSectionHeader) {
-                                      if (cResult[20] === tmp5) {
+                                      if (cResult[20] === tmp6) {
                                         if (cResult[21] === sections) {
-                                          if (cResult[22] === tmp4) {
-                                            let tmp6;
-                                            if (cResult[23] === waitFor) {
-                                              tmp6 = cResult[24];
+                                          if (cResult[22] === tmp5) {
+                                            if (cResult[23] === num3) {
+                                              let tmp7;
+                                              if (cResult[24] === waitFor) {
+                                                tmp7 = cResult[25];
+                                              }
+                                              return tmp7;
                                             }
-                                            return tmp6;
                                           }
                                         }
                                       }
@@ -98,7 +107,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  const tmp7 = jsx(FastListDefault, { insetEnd, scrollIndicatorInsets: tmp5, waitFor, ref: tmp4, chunkBase: listViewportHeight, stickyHeaderFooter: true, renderHeader, headerSize, endReachedThreshold, onEndReached, renderAccessory, disableContentWrappers: true, sections, stickySectionsVariant: "disabled", renderSection: renderSectionHeader, sectionSize: getSectionHeaderSize, renderItem, itemSize: getItemSize, renderSectionFooter, sectionFooterSize: getSectionFooterSize, optimizeListItemRender: true, getRecyclerKey, initialScrollSection, initialScrollItem, initialScrollOrientation: "center", onScroll, onScrollWorklet });
+  const tmp8 = jsx(FastListDefault, { insetEnd, scrollIndicatorInsets: tmp6, waitFor, ref: tmp5, chunkBase: listViewportHeight, batchesToRender: num3, stickyHeaderFooter: true, renderHeader, headerSize, endReachedThreshold, onEndReached, renderAccessory, disableContentWrappers: true, sections, stickySectionsVariant: "disabled", renderSection: renderSectionHeader, sectionSize: getSectionHeaderSize, renderItem, itemSize: getItemSize, renderSectionFooter, sectionFooterSize: getSectionFooterSize, optimizeListItemRender: true, getRecyclerKey, initialScrollSection, initialScrollItem, initialScrollOrientation: "center", onScroll, onScrollWorklet });
   cResult[2] = endReachedThreshold;
   cResult[3] = getItemSize;
   cResult[4] = getRecyclerKey;
@@ -117,13 +126,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[17] = renderItem;
   cResult[18] = renderSectionFooter;
   cResult[19] = renderSectionHeader;
-  cResult[20] = tmp5;
+  cResult[20] = tmp6;
   cResult[21] = sections;
-  cResult[22] = tmp4;
-  cResult[23] = waitFor;
-  cResult[24] = tmp7;
-  tmp6 = tmp7;
+  cResult[22] = tmp5;
+  cResult[23] = num3;
+  cResult[24] = waitFor;
+  cResult[25] = tmp8;
+  tmp7 = tmp8;
 }) : (function ChannelListFastList(scrollIndicatorInsetBottom) {
+  let drawDistanceMode;
   let endReachedThreshold;
   let getItemSize;
   let getRecyclerKey;
@@ -134,6 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let initialScrollSection;
   let insetEnd;
   let listViewportHeight;
+  let num;
   let onEndReached;
   let onScroll;
   let onScrollWorklet;
@@ -146,11 +158,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let sections;
   let waitFor;
   scrollIndicatorInsetBottom = scrollIndicatorInsetBottom.scrollIndicatorInsetBottom;
-  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, headerSize, initialScrollItem, initialScrollSection, insetEnd, listViewportHeight, onEndReached, onScroll, onScrollWorklet, renderAccessory, renderHeader, renderItem, renderSectionFooter, renderSectionHeader, sections, waitFor, ref } = scrollIndicatorInsetBottom);
+  ({ endReachedThreshold, getItemSize, getRecyclerKey, getSectionFooterSize, getSectionHeaderSize, headerSize, initialScrollItem, initialScrollSection, insetEnd, listViewportHeight, onEndReached, onScroll, onScrollWorklet, renderAccessory, renderHeader, renderItem, renderSectionFooter, renderSectionHeader, sections, waitFor, drawDistanceMode, ref } = scrollIndicatorInsetBottom);
   const items = [scrollIndicatorInsetBottom];
-  const ref2 = _slicedToArray(reactDefault(ref), 2)[1];
-  const scrollIndicatorInsets = react.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items);
-  return jsx(FastListDefault, { insetEnd, scrollIndicatorInsets, waitFor, ref: ref2, chunkBase, stickyHeaderFooter: true, renderHeader, headerSize, endReachedThreshold, onEndReached, renderAccessory, disableContentWrappers: true, sections, stickySectionsVariant: "disabled", renderSection, sectionSize, renderItem, itemSize, renderSectionFooter, sectionFooterSize, optimizeListItemRender: true, getRecyclerKey, initialScrollSection, initialScrollItem, initialScrollOrientation: "center", onScroll, onScrollWorklet });
+  const tmp2 = _slicedToArray(reactDefault(ref), 2)[1];
+  const memo = react.useMemo(() => ({ bottom: scrollIndicatorInsetBottom }), items);
+  const obj = { insetEnd, scrollIndicatorInsets: memo, waitFor, ref: tmp2, chunkBase: listViewportHeight, batchesToRender: num, stickyHeaderFooter: true, renderHeader, headerSize, endReachedThreshold, onEndReached, renderAccessory, disableContentWrappers: true, sections, stickySectionsVariant: "disabled", renderSection: renderSectionHeader, sectionSize: getSectionHeaderSize, renderItem, itemSize: getItemSize, renderSectionFooter, sectionFooterSize: getSectionFooterSize, optimizeListItemRender: true, getRecyclerKey, initialScrollSection, initialScrollItem, initialScrollOrientation: "center", onScroll, onScrollWorklet };
+  num = 6;
+  const tmp4 = jsx;
+  const tmp5 = FastListDefault;
+  if ("viewport" === drawDistanceMode) {
+    num = FastList.DEFAULT_BATCHES_TO_RENDER;
+  }
+  return tmp4(tmp5, obj);
 }));
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/ChannelListFastList.tsx");
 

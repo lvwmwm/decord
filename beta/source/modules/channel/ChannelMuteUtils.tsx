@@ -1,11 +1,11 @@
-// Module ID: 10722
-// Function ID: 10723
+// Module ID: 10942
+// Function ID: 10943
 // Name: ChannelMuteUtils
-// Dependencies: [4797, 2]
+// Dependencies: [2049, 2]
 // Exports: getMuteSettings
 
-// Module 10722 (ChannelMuteUtils)
-import _modDef4797 from "module_4797" /* 4797 */;
+// Module 10942 (ChannelMuteUtils)
+import _modDef2049 from "module_2049" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/ChannelMuteUtils.tsx");
@@ -15,7 +15,7 @@ export const getMuteSettings = function getMuteSettings(selected_time_window) {
   const mute_config = { selected_time_window, end_time: toISOStringResult };
   toISOStringResult = null;
   if (selected_time_window > 0) {
-    const obj2 = _modDef4797();
+    const obj2 = _modDef2049();
     const addResult = obj2.add(selected_time_window, "second");
     toISOStringResult = addResult.toISOString();
   }

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/game_pass_perks", scales: [1], hash: "0ed18d802f39ad8ae58ce024ccbaa690", name: "XboxGamePassPerks.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "777c31fcd6f474daa998e0d6d7c1c656", name: "pl.messages.777c31fcd6f474daa998e0d6d7c1c656.compiled.messages", type: "jsona" });

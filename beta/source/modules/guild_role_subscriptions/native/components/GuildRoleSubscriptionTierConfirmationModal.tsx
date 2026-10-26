@@ -1,23 +1,23 @@
-// Module ID: 18986
-// Function ID: 18987
+// Module ID: 19310
+// Function ID: 19311
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 18953, 21, 5191, 587, 14912, 18971, 18955, 1128, 8949, 5128, 5187, 18987, 2]
+// Dependencies: [5, 32, 19, 17, 19279, 21, 4971, 587, 15145, 19296, 19281, 1128, 9044, 5669, 5234, 19311, 2]
 // Exports: default
 
-// Module 18986 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 19310 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import FormStylesDefault from "FormStyles" /* 14912 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18955 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18971 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import FormStylesDefault from "FormStyles" /* 15145 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19281 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19296 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18953 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19279 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, c4, closure_2;
@@ -27,8 +27,8 @@ let c9;
 let metroImportAll;
 let size;
 let tmp3;
-const FastImageDefault = tmp3(5128);
-const FormHeaderDefault = tmp3(8949);
+const FastImageDefault = tmp3(5669);
+const FormHeaderDefault = tmp3(9044);
 const View = react_native.View;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let obj = { description: { paddingHorizontal: 16 }, coverPhotoContainer: { marginHorizontal: 16 }, coverPhoto: size };
@@ -163,6 +163,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[2] = metroImportAll(Text_Text.Text, obj9);
     flag = tmp14(tmp17, obj7);
   }
-  items3 = [flag, metroImportAll(tmp6(18987).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items3 = [flag, metroImportAll(tmp6(19311).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return authStore(tmp15, obj2);
 };

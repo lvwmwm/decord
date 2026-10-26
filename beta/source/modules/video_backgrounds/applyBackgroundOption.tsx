@@ -1,22 +1,22 @@
-// Module ID: 5353
-// Function ID: 5354
+// Module ID: 5861
+// Function ID: 5862
 // Name: applyBackgroundOption
-// Dependencies: [5, 1392, 5354, 5355, 1087, 5356, 5236, 5361, 1417, 5366, 5359, 5358, 5367, 2]
+// Dependencies: [5, 1392, 5862, 5863, 1087, 5864, 5739, 5869, 1417, 5874, 5867, 5866, 5875, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5353 (applyBackgroundOption)
+// Module 5861 (applyBackgroundOption)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5356 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5358 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5361 */;
-import getFilterImageDefault from "getFilterImage" /* 5366 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5367 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5739 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5864 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5866 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5869 */;
+import getFilterImageDefault from "getFilterImage" /* 5874 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5354 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5355 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5862 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5863 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;

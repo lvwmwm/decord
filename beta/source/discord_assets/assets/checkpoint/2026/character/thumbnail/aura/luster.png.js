@@ -1,8 +1,8 @@
-// Module ID: 5865
-// Function ID: 5866
+// Module ID: 6343
+// Function ID: 6344
 // Dependencies: [2]
 
-// Module 5865
+// Module 6343
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/aura/luster.png.js");

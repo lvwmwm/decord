@@ -1,36 +1,36 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12172
+// Function ID: 12173
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 5191, 587, 12006, 12007, 12008, 12009, 12010, 12011, 12012, 12013, 12014, 12015, 12016, 12017, 12018, 12019, 558, 576, 8031, 5128, 5187, 1384, 1202, 9215, 8699, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 12173, 12174, 12175, 12176, 12177, 12178, 12179, 12180, 12181, 12182, 12183, 12184, 12185, 12186, 558, 576, 8150, 5669, 5234, 1384, 1202, 9312, 8790, 2]
 // Exports: default
 
-// Module 12005 (AttachmentPreview)
+// Module 12172 (AttachmentPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import FileUtils from "FileUtils" /* 8031 */;
-import common_Video from "common/Video" /* 8699 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12006 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12007 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12008 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12009 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12010 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12011 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 12012 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 12013 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 12014 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 12015 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 12016 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 12017 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 12018 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 12019 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import FileUtils from "FileUtils" /* 8150 */;
+import common_Video from "common/Video" /* 8790 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12173 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12174 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12175 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12176 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12177 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12178 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 12179 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 12180 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 12181 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 12182 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 12183 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 12184 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 12185 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 12186 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -169,9 +169,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Filena
   let tmp13 = null != fileName && "" !== fileName;
   if (tmp13) {
     const obj4 = { style: tmp4.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp13 = hasOwnProperty(tmp(5187).Text, obj4);
+    tmp13 = hasOwnProperty(tmp(5234).Text, obj4);
   }
-  const Text = tmp(5187).Text;
+  const Text = tmp(5234).Text;
   const attachmentFileName = tmp4.attachmentFileName;
   let str5 = "UNKNOWN";
   if (null != match) {
@@ -605,7 +605,7 @@ export default function AttachmentPreview(isImage) {
       const size2 = { uri, width, height: num, borderRadius, style, fileName };
       const obj7 = { style, children: items };
       items = [hasOwnProperty(closure_12, size2), ];
-      const obj8 = { style: tmp5.videoIcon, children: hasOwnProperty(tmp8(9215).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
+      const obj8 = { style: tmp5.videoIcon, children: hasOwnProperty(tmp8(9312).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
       items[1] = hasOwnProperty(View, obj8);
       tmp16 = metroRequire(View, obj7);
     } else {

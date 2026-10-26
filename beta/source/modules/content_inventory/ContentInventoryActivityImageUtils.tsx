@@ -1,28 +1,28 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14281
+// Function ID: 14282
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5540, 1087, 2026, 8733, 8547, 1128, 558, 576, 14046, 7285, 14048, 10556, 1417, 14052, 6019, 14053, 10550, 7134, 504, 1267, 8736, 2]
+// Dependencies: [19, 2045, 1087, 2026, 8829, 8620, 1128, 558, 576, 14282, 7406, 14284, 10652, 1417, 14288, 6502, 14289, 10646, 7257, 504, 1267, 8832, 2]
 // Exports: getApplicationImage
 
-// Module 14045 (ContentInventoryActivityImageUtils)
+// Module 14281 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Constants2 from "Constants" /* 2026 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7134 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8547 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8733 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8736 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10550 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10556 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14046 */;
-import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14048 */;
-import isOnXboxDefault from "isOnXbox" /* 14052 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14053 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import PlatformsDefault from "Platforms" /* 6502 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7257 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8620 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8829 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8832 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10646 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10652 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14282 */;
+import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14284 */;
+import isOnXboxDefault from "isOnXbox" /* 14288 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14289 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const useGame2 = tmp(7285);
+const useGame2 = tmp(7406);
 function getMediaImage(entry) {
   let tmp3;
   let tmpResult3;

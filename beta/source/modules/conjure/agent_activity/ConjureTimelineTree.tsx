@@ -1,12 +1,12 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 12312
+// Function ID: 12313
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3883, 1128, 2]
-// Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
+// Dependencies: [32, 3830, 1128, 2]
+// Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12126 (ConjureTimelineTree)
-import intl6 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
+// Module 12312 (ConjureTimelineTree)
+import intl2 from "intl" /* 1128 */;
+import _modDef3830 from "module_3830" /* 3830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -177,6 +177,21 @@ function buildTimelineTree(steps, arg1) {
       }
       return hasItem;
     }
+    function errorLabelKey(c12) {
+      let str = "error";
+      let str2;
+      if ("error" === c12.kind) {
+        str2 = c12.failure_kind;
+      }
+      if (str2 == null) {
+        str2 = "unknown";
+      }
+      const combined = "error_" + str2;
+      if (combined in map2) {
+        str = combined;
+      }
+      return str;
+    }
     if (isSuppressedLaneFrame(_undefined, closure_9)) {
       return 0;
     } else if (isLegacyControlLineFrame(_undefined, closure_10)) {
@@ -187,6 +202,7 @@ function buildTimelineTree(steps, arg1) {
       if (num == null) {
         num = 0;
       }
+      let str = "node";
       if ("node" === _undefined.kind) {
         if (null != _undefined.node) {
           ({ node, task_id } = _undefined);
@@ -251,10 +267,10 @@ function buildTimelineTree(steps, arg1) {
             }
             const result2 = obj2.set(tmp13Result, value2);
             const lines = node.lines;
-            for (const item10114 of lines) {
+            for (const item10116 of lines) {
               let tmp42;
-              let tmp38 = item10114;
-              let set1 = item10114.set;
+              let tmp38 = item10116;
+              let set1 = item10116.set;
               if (set1 == null) {
                 set1 = value2.get(tmp38.key);
               }
@@ -292,12 +308,13 @@ function buildTimelineTree(steps, arg1) {
           return 0;
         }
       }
+      let str2 = "error";
       if ("error" === _undefined.kind) {
         const _HermesInternal = HermesInternal;
         const tmp9 = ensure(undefined, "" + _undefined.kind + "-" + tmp4, "step", num);
         sum1 = sum1 + 1;
         tmp9.touched = sum1;
-        tmp9.labelKey = "error";
+        tmp9.labelKey = errorLabelKey(_undefined);
         tmp9.status = "failed";
         const tmp12 = null != _undefined.message && "" !== _undefined.message;
         if (tmp12) {
@@ -576,7 +593,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3883.iwOTgo, preview_ready: _modDef3883.okkgSB, working: _modDef3883.t8skVB, error: _modDef3883.avt0ax };
+let obj = { healthcheck_failed: _modDef3830.iwOTgo, preview_ready: _modDef3830.okkgSB, working: _modDef3830.t8skVB, error: _modDef3830.avt0ax, error_service_unavailable: _modDef3830.yreXyD, error_rate_limited: _modDef3830.d8lNBq, error_timeout: _modDef3830.t1R7Rt };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -591,30 +608,12 @@ export const describeNode = function describeNode(currentStepResult) {
   if (null != currentStepResult.labelKey) {
     t8skVB = obj[currentStepResult.labelKey];
   }
-  const intl = intl6.intl;
+  const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3883.t8skVB;
+    t8skVB = _modDef3830.t8skVB;
   }
   return string(t8skVB);
-};
-export const describeTaskStatus = function describeTaskStatus(arg0) {
-  if ("running" === arg0) {
-    const intl5 = intl6.intl;
-    return intl5.string(_modDef3883.jTwZFY);
-  } else if ("done" === arg0) {
-    const intl4 = intl6.intl;
-    return intl4.string(_modDef3883.keYz9o);
-  } else if ("failed" === arg0) {
-    const intl3 = intl6.intl;
-    return intl3.string(_modDef3883["RoY/lg"]);
-  } else if ("cancelled" === arg0) {
-    const intl2 = intl6.intl;
-    return intl2.string(_modDef3883["HZw/I/"]);
-  } else if ("incomplete" === arg0) {
-    const intl = intl6.intl;
-    return intl.string(_modDef3883.sf2UHL);
-  }
 };
 export { buildTimelineTree };
 export const currentStep = function currentStep(productId) {
@@ -639,8 +638,8 @@ export const streamedContent = function streamedContent(steps) {
 export { segmentDurations };
 export { sharedTimelineTree };
 export const turnSegments = function turnSegments(steps, arg1) {
-  let items3;
-  let num;
+  let items4;
+  let num2;
   function sharedScan(steps) {
     let value = weakMap.get(steps);
     obj = weakMap;
@@ -672,6 +671,7 @@ export const turnSegments = function turnSegments(steps, arg1) {
     }
     continue;
   }
+  const self = this;
   set = new Set();
   steps = tmp.steps;
   for (const item10041 of steps) {
@@ -688,41 +688,50 @@ export const turnSegments = function turnSegments(steps, arg1) {
   if (found != null) {
     segment = found.segment;
   }
-  const _Math = Math;
-  const items1 = [0, ...set];
+  let applyResult;
   if (null != segment) {
-    const items2 = [segment];
-    items3 = items2;
-  } else {
-    items3 = [];
+    const _Math = Math;
+    const items1 = [segment];
+    HermesBuiltin.arraySpread(items1, set, 1);
+    const _Math2 = Math;
+    applyResult = HermesBuiltin.apply(max, items1, Math);
   }
-  HermesBuiltin.arraySpread(items1, items3, tmp10);
-  const items4 = [];
-  const applyResult = max.apply(items1);
-  for (let num = 0; num <= applyResult; num = num + 1) {
-    let value = map.get(num);
-    let hasItem = set.has(num);
-    let tmp15 = null != value;
-    if (!tmp15) {
-      tmp15 = hasItem;
+  const _Math3 = Math;
+  const max2 = Math.max;
+  const items2 = [0, ...tmp6];
+  if (null != applyResult) {
+    const items3 = [applyResult];
+    items4 = items3;
+  } else {
+    items4 = [];
+  }
+  HermesBuiltin.arraySpread(items2, items4, tmp17);
+  const items5 = [];
+  const applyResult1 = max2.apply(items2);
+  for (let num2 = 0; num2 <= applyResult1; num2 = num2 + 1) {
+    let value = map.get(num2);
+    let hasItem = set.has(num2);
+    let tmp22 = null != value;
+    if (!tmp22) {
+      tmp22 = hasItem;
     }
-    let tmp17 = segment === num;
-    if (!tmp15) {
-      tmp15 = tmp17;
+    let tmp24 = applyResult === num2;
+    if (!tmp22) {
+      tmp22 = tmp24;
     }
-    if (tmp15) {
+    if (tmp22) {
       let obj5;
       let obj7;
       let key;
-      let push = items4.push;
+      let push = items5.push;
       if (value != null) {
         key = value.key;
       }
       if (key == null) {
         let _HermesInternal = HermesInternal;
-        key = "work-" + num;
+        key = "work-" + num2;
       }
-      let obj3 = { key, index: num, hasWork: hasItem, hasTodos: tmp17 };
+      let obj3 = { key, index: num2, hasWork: hasItem, hasTodos: tmp24 };
       if (null != value) {
         let obj4 = { prose: value };
         obj5 = obj4;
@@ -730,8 +739,8 @@ export const turnSegments = function turnSegments(steps, arg1) {
         obj5 = {};
       }
       let merged = Object.assign(obj5);
-      if (obj2.has(num)) {
-        let obj6 = { durationMs: obj2.get(num) };
+      if (obj2.has(num2)) {
+        let obj6 = { durationMs: obj2.get(num2) };
         obj7 = obj6;
       } else {
         obj7 = {};
@@ -740,20 +749,20 @@ export const turnSegments = function turnSegments(steps, arg1) {
       let arr = push(obj3);
     }
   }
-  return items4;
+  return items5;
 };
-export const turnLifecycle = function turnLifecycle(memo1, turnActive) {
+export const turnLifecycle = function turnLifecycle(arr, turnActive) {
   let index;
   let obj2;
   let obj5;
   turnActive = turnActive.turnActive;
-  const found = memo1.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
+  const found = arr.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
   const atResult = found.at(-1);
   let index1;
   if (atResult != null) {
     index1 = atResult.index;
   }
-  const atResult1 = memo1.at(-1);
+  const atResult1 = arr.at(-1);
   if (atResult1 != null) {
     index = atResult1.index;
   }

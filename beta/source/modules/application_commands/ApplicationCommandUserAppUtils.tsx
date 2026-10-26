@@ -1,11 +1,11 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8455
+// Function ID: 8456
 // Name: ApplicationCommandUserAppUtils
-// Dependencies: [8384, 1128, 2]
+// Dependencies: [8456, 1128, 2]
 // Exports: getEphemeralReasonMessage
 
-// Module 8383 (ApplicationCommandUserAppUtils)
-import EphemeralMessageReason from "EphemeralMessageReason" /* 8384 */;
+// Module 8455 (ApplicationCommandUserAppUtils)
+import EphemeralMessageReason from "EphemeralMessageReason" /* 8456 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

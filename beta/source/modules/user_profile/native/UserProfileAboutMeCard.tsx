@@ -1,9 +1,9 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 11159
+// Function ID: 11160
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2132, 2128, 2090, 7181, 1087, 1504, 21, 5191, 558, 576, 4913, 587, 5187, 8588, 1128, 10940, 504, 7152, 11, 10475, 6436, 10942, 8764, 1202, 7130, 10943, 5155, 5073, 1114, 7003, 5081, 1631, 8577, 10944, 5479, 7180, 2]
+// Dependencies: [19, 17, 2068, 4883, 4845, 7304, 1087, 1504, 21, 4971, 558, 576, 5252, 587, 5234, 8679, 1128, 11160, 504, 7275, 11, 10571, 6883, 11162, 8860, 1202, 7253, 11163, 5210, 5151, 1114, 7133, 5159, 1631, 8668, 11164, 5244, 7303, 2]
 
-// Module 10939 (UserProfileAboutMeCard)
+// Module 11159 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -12,22 +12,22 @@ import Constants2 from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import useToken from "useToken" /* 4913 */;
-import ChatInputUtils from "ChatInputUtils" /* 5081 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7180 */;
-import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8588 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
-import BioTextDefault from "BioText" /* 10940 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 10942 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10944 */;
+import ChatInputUtils from "ChatInputUtils" /* 5159 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import useToken from "useToken" /* 5252 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7303 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8679 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8860 */;
+import BioTextDefault from "BioText" /* 11160 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11162 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11164 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import Constants from "Constants" /* 7181 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import Constants from "Constants" /* 7304 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp;
 let tmp10;
 let unpackModuleId;
 const KeyboardTypes = tmp(1631);
-const GuildIconDefault = tmp10(6436);
+const GuildIconDefault = tmp10(6883);
 const View = react_native.View;
 ({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = Constants);
 const Routes = Constants2.Routes;
@@ -525,12 +525,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         return closure_1_5.locale;
       }
     }
-    const getCreatedAtDate = tmp(7152).getCreatedAtDate;
-    tmp(7152);
+    const getCreatedAtDate = tmp(7275).getCreatedAtDate;
+    tmp(7275);
     const obj5 = guildId(11);
     const createdAtDate = getCreatedAtDate(obj5.extractTimestamp(userId), stateFromStores);
-    const getCreatedAtDate2 = tmp(7152).getCreatedAtDate;
-    tmp(7152);
+    const getCreatedAtDate2 = tmp(7275).getCreatedAtDate;
+    tmp(7275);
     if (stateFromStores2 != null) {
       class R {
         constructor() {
@@ -742,13 +742,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     }
     return member;
   });
-  const getCreatedAtDate = userId(7152).getCreatedAtDate;
-  userId(7152);
+  const getCreatedAtDate = userId(7275).getCreatedAtDate;
+  userId(7275);
   const obj4 = SnowflakeUtilsDefault;
   const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
-  const getCreatedAtDate2 = userId(7152).getCreatedAtDate;
-  userId(7152);
+  const getCreatedAtDate2 = userId(7275).getCreatedAtDate;
+  userId(7275);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
@@ -758,7 +758,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   const items3 = [closure_11(closure_17, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(10475).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1128).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  const obj7 = { themeType, icon: closure_11(userId(10571).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1128).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
   intl2 = tmp4(1128).intl;
   items5 = [closure_11(closure_18, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
@@ -766,9 +766,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5187).Text, obj9), ];
+    items6 = [closure_11(tmp4(5234).Text, obj9), ];
     const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1128).t.FdLNDK, obj12), children: createdAtDate2 };
-    obj11 = { guild: stateFromStores1, size: userId(6436).GuildIconSizes.XXSMALL };
+    obj11 = { guild: stateFromStores1, size: userId(6883).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;
     intl3 = tmp4(1128).intl;
     obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };
@@ -1077,7 +1077,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     cResult[9] = tmp13;
     tmp11 = tmp13;
   }
-  const tmp10 = closure_11(url(5187).Text, { variant: textVariant, color: "text-link", children: label });
+  const tmp10 = closure_11(url(5234).Text, { variant: textVariant, color: "text-link", children: label });
   cResult[4] = label;
   cResult[5] = textVariant;
   cResult[6] = tmp10;

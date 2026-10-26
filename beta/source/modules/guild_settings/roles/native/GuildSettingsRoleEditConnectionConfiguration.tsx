@@ -1,9 +1,9 @@
-// Module ID: 18834
-// Function ID: 18835
+// Module ID: 19136
+// Function ID: 19137
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1087, 7153, 21, 5191, 587, 558, 576, 5127, 11133, 1202, 5065, 1417, 1128, 6485, 6462, 6457, 7172, 18835, 1384, 5187, 6019, 6542, 2]
+// Dependencies: [32, 19, 17, 1087, 7276, 21, 4971, 587, 558, 576, 5205, 11256, 1202, 4978, 1417, 1128, 6931, 6908, 6903, 7295, 19137, 1384, 5234, 6502, 6987, 2]
 
-// Module 18834 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 19136 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,20 +11,20 @@ import Constants2 from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import shared from "shared" /* 5065 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
-import TableRow2 from "TableRow" /* 6457 */;
-import Pressables from "Pressables" /* 6462 */;
-import XSmallIcon from "XSmallIcon" /* 6485 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11133 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18835 */;
+import shared from "shared" /* 4978 */;
+import useThemeDefault from "useTheme" /* 5205 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import PlatformsDefault from "Platforms" /* 6502 */;
+import TableRow2 from "TableRow" /* 6903 */;
+import Pressables from "Pressables" /* 6908 */;
+import XSmallIcon from "XSmallIcon" /* 6931 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11256 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 19137 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 7153 */;
+import Constants from "Constants" /* 7276 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const TableRowGroup3 = tmp(6542);
+const TableRowGroup3 = tmp(6987);
 function ApplicationMetadataRules(arg0) {
   let integration;
   let locked;
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
       const Avatar2 = tmp(1202).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
@@ -197,7 +197,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
           const Avatar = tmp(1202).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
@@ -353,7 +353,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
     const Avatar2 = tmp3(1202).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
         const Avatar = tmp3(1202).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
@@ -396,7 +396,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     tmp9Result = onChangeText(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: onChangeText(PressableOpacity, obj5) };
-  const TableRow = tmp3(6457).TableRow;
+  const TableRow = tmp3(6903).TableRow;
   const intl = tmp3(1128).intl;
   format = intl.format;
   name2 = undefined;
@@ -408,7 +408,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: onChangeText(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(6462).PressableOpacity;
+  PressableOpacity = tmp3(6908).PressableOpacity;
   intl2 = tmp3(1128).intl;
   return onChangeText(TableRow, obj4);
 });
@@ -564,7 +564,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Boolea
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(7172).TableSwitchRow;
+  const TableSwitchRow = metadataField(7295).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -579,7 +579,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   let fieldTextHook;
   let locked;
   let metadataField;
-  let obj6;
+  let obj5;
   let require;
   let tmp = require;
   let tmp2 = existingPendingConfiguration;
@@ -615,79 +615,68 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       tmp9 = cResult[4];
     }
     let closure_8 = tmp9;
-    const tmp16 = platform(onConfigurationChange.useState(tmp9), 2);
-    const first1 = tmp16[0];
-    let closure_10 = tmp18;
-    let tmp19 = null != tmp8;
-    const tmp14 = onConfigurationChange;
-    if (tmp19) {
-      tmp19 = "" !== first1;
+    const tmp18 = platform(onConfigurationChange.useState(tmp9), 2);
+    const first1 = tmp18[0];
+    let closure_10 = tmp20;
+    let tmp21 = null != tmp8;
+    const tmp16 = onConfigurationChange;
+    if (tmp21) {
+      tmp21 = "" !== first1;
     }
-    if (tmp19) {
-      tmp19 = first1 !== tmp9;
+    if (tmp21) {
+      tmp21 = first1 !== tmp9;
     }
-    if (tmp19) {
-      tmp16[1](tmp9);
+    if (tmp21) {
+      tmp18[1](tmp9);
     }
     let configuration;
     if (existingPendingConfiguration != null) {
       configuration = existingPendingConfiguration.configuration;
     }
-    let closure_11 = tmp23;
+    let closure_11 = tmp25;
     if (cResult[5] === applicationId) {
       if (cResult[6] === existingPendingConfiguration) {
         if (cResult[7] === num) {
           if (cResult[8] === metadataField) {
             if (cResult[9] === onConfigurationChange) {
               let type;
-              const tmp24 = cResult[10];
+              const tmp26 = cResult[10];
               if (platform != null) {
                 type = platform.type;
               }
-              if (tmp24 === type) {
-                let tmp26;
-                let closure_13;
-                let tmp42;
+              if (tmp26 === type) {
+                let tmp28;
                 if (cResult[11] === tmp7) {
-                  tmp26 = cResult[12];
+                  tmp28 = cResult[12];
                 }
-                onChangeText = tmp26;
+                onChangeText = tmp28;
                 if (undefined !== fieldTextHook) {
                   if (cResult[13] === tmp4.numericalInputContainerAndroidInline) {
-                    let tmp43;
-                    let tmp47;
-                    let tmp46;
-                    let tmp45;
+                    let tmp37;
+                    let tmp41;
+                    let tmp40;
+                    let tmp39;
                     if (cResult[14] === tmp4.numericalInputContainerIOSInline) {
-                      tmp43 = cResult[15];
+                      tmp37 = cResult[15];
                     }
-                    closure_13 = tmp43;
+                    let closure_13 = tmp37;
                     if (cResult[16] === fieldTextHook) {
-                      if (cResult[17] === tmp43) {
+                      if (cResult[17] === tmp37) {
                         if (cResult[18] === (locked || null == configuration)) {
                           if (cResult[19] === first1) {
                             if (cResult[20] === metadataField) {
-                              if (cResult[21] === tmp26) {
+                              if (cResult[21] === tmp28) {
                                 if (cResult[22] === tmp4.metadataRow) {
                                   if (cResult[23] === tmp4.metadataRowText) {
                                     if (cResult[24] === tmp4.numericalInput) {
                                       if (cResult[25] === tmp4.numericalInputContainerBase) {
                                         if (cResult[26] === tmp4.numericalInputDisabled) {
-                                          tmp45 = cResult[27];
-                                          tmp46 = cResult[28];
-                                          tmp47 = cResult[29];
+                                          tmp39 = cResult[27];
+                                          tmp40 = cResult[28];
+                                          tmp41 = cResult[29];
                                         }
-                                        if (cResult[41] === tmp45) {
-                                          if (cResult[42] === tmp46) {
-                                            let tmp53;
-                                            if (cResult[43] === tmp47) {
-                                              tmp53 = cResult[44];
-                                            }
-                                            tmp42 = tmp53;
-                                          }
-                                        }
-                                        let obj2 = { style: null, children: tmp47 };
-                                        class Z {
+                                        let obj2 = { style: null, children: tmp41 };
+                                        class X {
                                           constructor() {
                                             let TextInput;
                                             let items;
@@ -707,12 +696,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                                             return onChangeText(tmp2, obj, "_numericalInputContainer");
                                           }
                                         }
-                                        const tmp55 = onChangeText(tmp45, obj2);
-                                        cResult[41] = tmp45;
-                                        cResult[42] = tmp46;
-                                        cResult[43] = tmp47;
-                                        cResult[44] = tmp55;
-                                        tmp53 = tmp55;
+                                        const tmp49 = onChangeText(tmp39, obj2);
+                                        cResult[41] = tmp39;
+                                        cResult[42] = tmp40;
+                                        cResult[43] = tmp41;
+                                        cResult[44] = tmp49;
                                       }
                                     }
                                   }
@@ -723,21 +711,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                         }
                       }
                     }
-                    if (cResult[30] === tmp43) {
+                    if (cResult[30] === tmp37) {
                       if (cResult[31] === (locked || null == configuration)) {
                         if (cResult[32] === first1) {
                           if (cResult[33] === metadataField) {
-                            if (cResult[34] === tmp26) {
+                            if (cResult[34] === tmp28) {
                               if (cResult[35] === tmp4.numericalInput) {
                                 if (cResult[36] === tmp4.numericalInputContainerBase) {
-                                  let tmp48;
-                                  let tmp51;
+                                  let tmp42;
+                                  let tmp45;
                                   if (cResult[37] === tmp4.numericalInputDisabled) {
-                                    tmp48 = cResult[38];
+                                    tmp42 = cResult[38];
                                   }
                                   const intl = tmp(tmp2[15]).intl;
-                                  const obj3 = { metadataHook: tmp48 };
-                                  class Z {
+                                  const obj3 = { metadataHook: tmp42 };
+                                  class X {
                                     constructor() {
                                       let TextInput;
                                       let items;
@@ -760,17 +748,19 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                                   const metadataRow = tmp4.metadataRow;
                                   const formatResult = intl.format(fieldTextHook, obj3);
                                   if (cResult[39] !== tmp4.metadataRowText) {
-                                    const fn = function z(children, arg1) {
-                                      let tmp = children;
-                                      if (typeof children === "string") {
-                                        const _HermesInternal = HermesInternal;
-                                        const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
-                                        tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
-                                      }
-                                      return tmp;
-                                    };
-                                    cResult[39] = tmp4.metadataRowText;
                                     class Z {
+                                      constructor(children, arg1) {
+                                        let tmp = children;
+                                        if (typeof children === "string") {
+                                          const _HermesInternal = HermesInternal;
+                                          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                                          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                                        }
+                                        return tmp;
+                                      }
+                                    }
+                                    cResult[39] = tmp4.metadataRowText;
+                                    class X {
                                       constructor() {
                                         let TextInput;
                                         let items;
@@ -790,14 +780,24 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                                         return onChangeText(tmp2, obj, "_numericalInputContainer");
                                       }
                                     }
-                                    tmp51 = fn;
+                                    tmp45 = Z;
                                   } else {
-                                    tmp51 = cResult[40];
+                                    class Z {
+                                      constructor(children, arg1) {
+                                        let tmp = children;
+                                        if (typeof children === "string") {
+                                          const _HermesInternal = HermesInternal;
+                                          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                                          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                                        }
+                                        return tmp;
+                                      }
+                                    }
                                   }
-                                  const Children = tmp14.Children;
-                                  const mapped = Children.map(formatResult, tmp51);
+                                  const Children = tmp16.Children;
+                                  const mapped = Children.map(formatResult, tmp45);
                                   cResult[16] = fieldTextHook;
-                                  cResult[17] = tmp43;
+                                  cResult[17] = tmp37;
                                   cResult[18] = locked || null == configuration;
                                   cResult[19] = first1;
                                   class K {
@@ -833,18 +833,18 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                                     }
                                   }
                                   cResult[20] = metadataField;
-                                  cResult[21] = tmp26;
+                                  cResult[21] = tmp28;
                                   cResult[22] = tmp4.metadataRow;
                                   cResult[23] = tmp4.metadataRowText;
                                   cResult[24] = tmp4.numericalInput;
                                   cResult[25] = tmp4.numericalInputContainerBase;
                                   cResult[26] = tmp4.numericalInputDisabled;
-                                  cResult[27] = tmp50;
+                                  cResult[27] = tmp44;
                                   cResult[28] = metadataRow;
                                   cResult[29] = mapped;
-                                  tmp47 = mapped;
-                                  tmp46 = metadataRow;
-                                  tmp45 = tmp50;
+                                  tmp41 = mapped;
+                                  tmp40 = metadataRow;
+                                  tmp39 = tmp44;
                                 }
                               }
                             }
@@ -852,7 +852,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                         }
                       }
                     }
-                    class Z {
+                    class X {
                       constructor() {
                         let TextInput;
                         let items;
@@ -872,11 +872,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                         return onChangeText(tmp2, obj, "_numericalInputContainer");
                       }
                     }
-                    cResult[30] = tmp43;
+                    cResult[30] = tmp37;
                     cResult[31] = locked || null == configuration;
                     cResult[32] = first1;
                     cResult[33] = metadataField;
-                    cResult[34] = tmp26;
+                    cResult[34] = tmp28;
                     cResult[35] = tmp4.numericalInput;
                     class K {
                       constructor(arg0) {
@@ -911,134 +911,127 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                       }
                     }
                     cResult[37] = tmp4.numericalInputDisabled;
-                    cResult[38] = Z;
-                    tmp48 = Z;
+                    cResult[38] = X;
+                    tmp42 = X;
                   }
                   const tmpResult = tmp(tmp2[21]);
-                  const tmp44 = tmpResult.isIOS() ? tmp4.numericalInputContainerIOSInline : tmp4.numericalInputContainerAndroidInline;
+                  const tmp38 = tmpResult.isIOS() ? tmp4.numericalInputContainerIOSInline : tmp4.numericalInputContainerAndroidInline;
                   cResult[14] = tmp4.numericalInputContainerIOSInline;
-                  cResult[15] = tmp44;
-                  tmp43 = tmp44;
-                } else if (undefined !== fieldText) {
-                  if (cResult[45] === tmp4.appNumericalInput) {
-                    let tmp29;
-                    if (cResult[46] === ((locked || null == configuration) && tmp4.numericalInputDisabled)) {
-                      tmp29 = cResult[47];
+                  cResult[15] = tmp38;
+                  tmp37 = tmp38;
+                } else {
+                  class Z {
+                    constructor(children, arg1) {
+                      let tmp = children;
+                      if (typeof children === "string") {
+                        const _HermesInternal = HermesInternal;
+                        const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                        tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                      }
+                      return tmp;
                     }
-                    if (cResult[48] === first1) {
-                      if (cResult[49] === metadataField) {
-                        if (cResult[50] === tmp26) {
-                          if (cResult[51] === tmp29) {
-                            let tmp31;
-                            if (cResult[52] === !(locked || null == configuration)) {
-                              tmp31 = cResult[53];
+                  }
+                  if (undefined !== fieldText) {
+                    class Z {
+                      constructor(children, arg1) {
+                        let tmp = children;
+                        if (typeof children === "string") {
+                          const _HermesInternal = HermesInternal;
+                          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                        }
+                        return tmp;
+                      }
+                    }
+                    if (cResult[45] === tmp4.appNumericalInput) {
+                      class Z {
+                        constructor(children, arg1) {
+                          let tmp = children;
+                          if (typeof children === "string") {
+                            const _HermesInternal = HermesInternal;
+                            const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                            tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                          }
+                          return tmp;
+                        }
+                      }
+                      if (cResult[48] === first1) {
+                        class Z {
+                          constructor(children, arg1) {
+                            let tmp = children;
+                            if (typeof children === "string") {
+                              const _HermesInternal = HermesInternal;
+                              const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                              tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
                             }
-                            if (cResult[54] === fieldText) {
-                              let tmp34;
-                              if (cResult[55] === tmp4.appNumericalInputText) {
-                                tmp34 = cResult[56];
-                              }
-                              if (cResult[57] === tmp4.appNumericalInputContainer) {
-                                if (cResult[58] === tmp31) {
-                                  let tmp37;
-                                  if (cResult[59] === tmp34) {
-                                    tmp37 = cResult[60];
-                                  }
-                                  tmp42 = tmp37;
-                                }
-                              }
-                              class Z {
-                                constructor() {
-                                  let TextInput;
-                                  let items;
-                                  let obj2;
-                                  const obj = { style: items, children: onChangeText(TextInput, obj2, metadataField) };
-                                  items = [closure_13, closure_6.numericalInputContainerBase];
-                                  const items1 = [closure_6.numericalInput, ];
-                                  let numericalInputDisabled = closure_11;
-                                  TextInput = native.TextInput;
-                                  const tmp2 = View;
-                                  const tmp3 = closure_6;
-                                  if (closure_11) {
-                                    numericalInputDisabled = tmp3.numericalInputDisabled;
-                                  }
-                                  obj2 = { keyboardType: "number-pad", style: items1, editable: !closure_11, value: first1, onChangeText, hitSlop: 8 };
-                                  items1[1] = numericalInputDisabled;
-                                  return onChangeText(tmp2, obj, "_numericalInputContainer");
-                                }
-                              }
-                              tmp40[0] = tmp4.appNumericalInputContainer;
-                              let items = [tmp31, tmp34];
-                              tmp40[1] = items;
-                              cResult[57] = tmp4.appNumericalInputContainer;
-                              cResult[58] = tmp31;
-                              cResult[59] = tmp34;
-                              const tmp41 = closure_13(applicationId, tmp40);
-                              class K {
-                                constructor(arg0) {
-                                  let obj2;
-                                  let tmp = first1;
-                                  if ("" === first1) {
-                                    tmp = closure_8;
-                                  }
-                                  c10(tmp);
-                                  let tmp3 = null;
-                                  if (arg0) {
-                                    let type;
-                                    if (platform != null) {
-                                      type = platform.type;
-                                    }
-                                    if (type == null) {
-                                      type = authStore;
-                                    }
-                                    const obj = { connectionType: type, applicationId, connectionMetadataField: metadataField, operator: require, value: obj2.storedValueFor(tmp, require) };
-                                    tmp3 = obj;
-                                    obj2 = RoleConnectionRequirementUtils;
-                                  }
-                                  num = undefined;
-                                  const tmp10 = onConfigurationChange;
-                                  if (existingPendingConfiguration != null) {
-                                    num = existingPendingConfiguration.index;
-                                  }
-                                  if (num == null) {
-                                    num = -1;
-                                  }
-                                  tmp10(tmp3, num);
-                                }
-                              }
-                              tmp37 = tmp41;
-                            }
-                            const obj4 = { variant: "text-md/semibold", style: null, children: fieldText };
-                            class Z {
-                              constructor() {
-                                let TextInput;
-                                let items;
-                                let obj2;
-                                const obj = { style: items, children: onChangeText(TextInput, obj2, metadataField) };
-                                items = [closure_13, closure_6.numericalInputContainerBase];
-                                const items1 = [closure_6.numericalInput, ];
-                                let numericalInputDisabled = closure_11;
-                                TextInput = native.TextInput;
-                                const tmp2 = View;
-                                const tmp3 = closure_6;
-                                if (closure_11) {
-                                  numericalInputDisabled = tmp3.numericalInputDisabled;
-                                }
-                                obj2 = { keyboardType: "number-pad", style: items1, editable: !closure_11, value: first1, onChangeText, hitSlop: 8 };
-                                items1[1] = numericalInputDisabled;
-                                return onChangeText(tmp2, obj, "_numericalInputContainer");
-                              }
-                            }
-                            const tmp36 = onChangeText(tmp(tmp2[22]).Text, obj4);
-                            cResult[54] = fieldText;
-                            cResult[55] = tmp4.appNumericalInputText;
-                            cResult[56] = tmp36;
-                            tmp34 = tmp36;
+                            return tmp;
                           }
                         }
                       }
+                      class X {
+                        constructor() {
+                          let TextInput;
+                          let items;
+                          let obj2;
+                          const obj = { style: items, children: onChangeText(TextInput, obj2, metadataField) };
+                          items = [closure_13, closure_6.numericalInputContainerBase];
+                          const items1 = [closure_6.numericalInput, ];
+                          let numericalInputDisabled = closure_11;
+                          TextInput = native.TextInput;
+                          const tmp2 = View;
+                          const tmp3 = closure_6;
+                          if (closure_11) {
+                            numericalInputDisabled = tmp3.numericalInputDisabled;
+                          }
+                          obj2 = { keyboardType: "number-pad", style: items1, editable: !closure_11, value: first1, onChangeText, hitSlop: 8 };
+                          items1[1] = numericalInputDisabled;
+                          return onChangeText(tmp2, obj, "_numericalInputContainer");
+                        }
+                      }
+                      const obj4 = { children: onChangeText(tmp(tmp2[12]).TextInput, obj5, metadataField) };
+                      obj5 = { keyboardType: "number-pad", style: tmp31, editable: !(locked || null == configuration), value: first1, onChangeText: tmp28 };
+                      cResult[48] = first1;
+                      cResult[49] = metadataField;
+                      const tmp35 = onChangeText(applicationId, obj4, "_numericalInputContainer");
+                      class K {
+                        constructor(arg0) {
+                          let obj2;
+                          let tmp = first1;
+                          if ("" === first1) {
+                            tmp = closure_8;
+                          }
+                          c10(tmp);
+                          let tmp3 = null;
+                          if (arg0) {
+                            let type;
+                            if (platform != null) {
+                              type = platform.type;
+                            }
+                            if (type == null) {
+                              type = authStore;
+                            }
+                            const obj = { connectionType: type, applicationId, connectionMetadataField: metadataField, operator: require, value: obj2.storedValueFor(tmp, require) };
+                            tmp3 = obj;
+                            obj2 = RoleConnectionRequirementUtils;
+                          }
+                          num = undefined;
+                          const tmp10 = onConfigurationChange;
+                          if (existingPendingConfiguration != null) {
+                            num = existingPendingConfiguration.index;
+                          }
+                          if (num == null) {
+                            num = -1;
+                          }
+                          tmp10(tmp3, num);
+                        }
+                      }
+                      cResult[50] = tmp28;
+                      cResult[51] = tmp31;
+                      cResult[52] = !(locked || null == configuration);
+                      cResult[53] = tmp35;
                     }
-                    class Z {
+                    let items = [tmp4.appNumericalInput, ];
+                    class X {
                       constructor() {
                         let TextInput;
                         let items;
@@ -1058,188 +1051,81 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                         return onChangeText(tmp2, obj, "_numericalInputContainer");
                       }
                     }
-                    const obj5 = { children: onChangeText(tmp(tmp2[12]).TextInput, obj6, metadataField) };
-                    obj6 = { keyboardType: "number-pad", style: tmp29, editable: !(locked || null == configuration), value: first1, onChangeText: tmp26 };
-                    const tmp33 = onChangeText(applicationId, obj5, "_numericalInputContainer");
-                    cResult[48] = first1;
-                    cResult[49] = metadataField;
-                    class K {
-                      constructor(arg0) {
-                        let obj2;
-                        let tmp = first1;
-                        if ("" === first1) {
-                          tmp = closure_8;
-                        }
-                        c10(tmp);
-                        let tmp3 = null;
-                        if (arg0) {
-                          let type;
-                          if (platform != null) {
-                            type = platform.type;
-                          }
-                          if (type == null) {
-                            type = authStore;
-                          }
-                          const obj = { connectionType: type, applicationId, connectionMetadataField: metadataField, operator: require, value: obj2.storedValueFor(tmp, require) };
-                          tmp3 = obj;
-                          obj2 = RoleConnectionRequirementUtils;
-                        }
-                        num = undefined;
-                        const tmp10 = onConfigurationChange;
-                        if (existingPendingConfiguration != null) {
-                          num = existingPendingConfiguration.index;
-                        }
-                        if (num == null) {
-                          num = -1;
-                        }
-                        tmp10(tmp3, num);
-                      }
-                    }
-                    cResult[50] = tmp26;
-                    cResult[51] = tmp29;
-                    cResult[52] = !(locked || null == configuration);
-                    cResult[53] = tmp33;
-                    tmp31 = tmp33;
+                    cResult[45] = tmp4.appNumericalInput;
+                    cResult[46] = tmp30;
+                    cResult[47] = items;
                   }
-                  let items1 = [tmp4.appNumericalInput, ];
-                  class Z {
-                    constructor() {
-                      let TextInput;
-                      let items;
-                      let obj2;
-                      const obj = { style: items, children: onChangeText(TextInput, obj2, metadataField) };
-                      items = [closure_13, closure_6.numericalInputContainerBase];
-                      const items1 = [closure_6.numericalInput, ];
-                      let numericalInputDisabled = closure_11;
-                      TextInput = native.TextInput;
-                      const tmp2 = View;
-                      const tmp3 = closure_6;
-                      if (closure_11) {
-                        numericalInputDisabled = tmp3.numericalInputDisabled;
-                      }
-                      obj2 = { keyboardType: "number-pad", style: items1, editable: !closure_11, value: first1, onChangeText, hitSlop: 8 };
-                      items1[1] = numericalInputDisabled;
-                      return onChangeText(tmp2, obj, "_numericalInputContainer");
-                    }
-                  }
-                  cResult[45] = tmp4.appNumericalInput;
-                  cResult[46] = (locked || null == configuration) && tmp4.numericalInputDisabled;
-                  cResult[47] = items1;
-                  tmp29 = items1;
                 }
                 if (cResult[61] === applicationId) {
-                  let index;
-                  const tmp56 = cResult[62];
-                  if (existingPendingConfiguration != null) {
-                    index = existingPendingConfiguration.index;
+                  class Z {
+                    constructor(children, arg1) {
+                      let tmp = children;
+                      if (typeof children === "string") {
+                        const _HermesInternal = HermesInternal;
+                        const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                        tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                      }
+                      return tmp;
+                    }
                   }
-                  if (tmp56 === index) {
-                    if (cResult[63] === first1) {
-                      if (cResult[64] === metadataField) {
-                        if (cResult[65] === onConfigurationChange) {
-                          let type1;
-                          const tmp58 = cResult[66];
-                          if (platform != null) {
-                            type1 = platform.type;
-                          }
-                          if (tmp58 === type1) {
-                            if (cResult[67] === tmp7) {
-                              let tmp60;
-                              if (cResult[68] === tmp9) {
-                                tmp60 = cResult[69];
-                              }
-                              if (cResult[70] === null != configuration) {
-                                if (cResult[71] === tmp42) {
-                                  if (cResult[72] === locked) {
-                                    if (cResult[73] === metadataField) {
-                                      let tmp63;
-                                      if (cResult[74] === tmp60) {
-                                        tmp63 = cResult[75];
-                                      }
-                                      return tmp63;
-                                    }
-                                  }
-                                }
-                              }
-                              const obj7 = { label: null, value: null != configuration, disabled: locked, onValueChange: tmp60 };
-                              class Z {
-                                constructor() {
-                                  let TextInput;
-                                  let items;
-                                  let obj2;
-                                  const obj = { style: items, children: onChangeText(TextInput, obj2, metadataField) };
-                                  items = [closure_13, closure_6.numericalInputContainerBase];
-                                  const items1 = [closure_6.numericalInput, ];
-                                  let numericalInputDisabled = closure_11;
-                                  TextInput = native.TextInput;
-                                  const tmp2 = View;
-                                  const tmp3 = closure_6;
-                                  if (closure_11) {
-                                    numericalInputDisabled = tmp3.numericalInputDisabled;
-                                  }
-                                  obj2 = { keyboardType: "number-pad", style: items1, editable: !closure_11, value: first1, onChangeText, hitSlop: 8 };
-                                  items1[1] = numericalInputDisabled;
-                                  return onChangeText(tmp2, obj, "_numericalInputContainer");
-                                }
-                              }
-                              const tmp65 = onChangeText(tmp(tmp2[19]).TableSwitchRow, obj7, metadataField);
-                              cResult[70] = null != configuration;
-                              cResult[71] = tmp42;
-                              cResult[72] = locked;
-                              cResult[73] = metadataField;
-                              class K {
-                                constructor(arg0) {
-                                  let obj2;
-                                  let tmp = first1;
-                                  if ("" === first1) {
-                                    tmp = closure_8;
-                                  }
-                                  c10(tmp);
-                                  let tmp3 = null;
-                                  if (arg0) {
-                                    let type;
-                                    if (platform != null) {
-                                      type = platform.type;
-                                    }
-                                    if (type == null) {
-                                      type = authStore;
-                                    }
-                                    const obj = { connectionType: type, applicationId, connectionMetadataField: metadataField, operator: require, value: obj2.storedValueFor(tmp, require) };
-                                    tmp3 = obj;
-                                    obj2 = RoleConnectionRequirementUtils;
-                                  }
-                                  num = undefined;
-                                  const tmp10 = onConfigurationChange;
-                                  if (existingPendingConfiguration != null) {
-                                    num = existingPendingConfiguration.index;
-                                  }
-                                  if (num == null) {
-                                    num = -1;
-                                  }
-                                  tmp10(tmp3, num);
-                                }
-                              }
-                              cResult[75] = tmp65;
-                              tmp63 = tmp65;
-                            }
-                          }
+                  const tmp50 = cResult[62];
+                  if (existingPendingConfiguration != null) {
+                    class Z {
+                      constructor(children, arg1) {
+                        let tmp = children;
+                        if (typeof children === "string") {
+                          const _HermesInternal = HermesInternal;
+                          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
                         }
+                        return tmp;
+                      }
+                    }
+                  }
+                  if (tmp50 === tmp51) {
+                    class Z {
+                      constructor(children, arg1) {
+                        let tmp = children;
+                        if (typeof children === "string") {
+                          const _HermesInternal = HermesInternal;
+                          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                        }
+                        return tmp;
                       }
                     }
                   }
                 }
                 cResult[61] = applicationId;
-                let index1;
                 if (existingPendingConfiguration != null) {
-                  index1 = existingPendingConfiguration.index;
+                  class Z {
+                    constructor(children, arg1) {
+                      let tmp = children;
+                      if (typeof children === "string") {
+                        const _HermesInternal = HermesInternal;
+                        const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                        tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                      }
+                      return tmp;
+                    }
+                  }
                 }
-                cResult[62] = index1;
+                cResult[62] = undefined;
                 cResult[63] = first1;
                 cResult[64] = metadataField;
                 cResult[65] = onConfigurationChange;
-                let type2;
                 if (platform != null) {
-                  type2 = platform.type;
+                  class Z {
+                    constructor(children, arg1) {
+                      let tmp = children;
+                      if (typeof children === "string") {
+                        const _HermesInternal = HermesInternal;
+                        const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+                        tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+                      }
+                      return tmp;
+                    }
+                  }
                 }
                 class K {
                   constructor(arg0) {
@@ -1273,11 +1159,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
                     tmp10(tmp3, num);
                   }
                 }
-                cResult[66] = type2;
+                cResult[66] = undefined;
                 cResult[67] = tmp7;
                 cResult[68] = tmp9;
                 cResult[69] = K;
-                tmp60 = K;
               }
             }
           }
@@ -1289,9 +1174,18 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
     cResult[7] = num;
     cResult[8] = metadataField;
     cResult[9] = onConfigurationChange;
-    let type3;
     if (platform != null) {
-      type3 = platform.type;
+      class Z {
+        constructor(children, arg1) {
+          let tmp = children;
+          if (typeof children === "string") {
+            const _HermesInternal = HermesInternal;
+            const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+            tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+          }
+          return tmp;
+        }
+      }
     }
     function onInputValueChange(TableSwitchRow) {
       let obj2;
@@ -1316,36 +1210,76 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
         tmp4(obj, num);
       }
     }
-    cResult[10] = type3;
+    cResult[10] = undefined;
     cResult[11] = tmp7;
     cResult[12] = onInputValueChange;
-    tmp26 = onInputValueChange;
+    tmp28 = onInputValueChange;
   }
   const tmpResult3 = tmp(tmp2[20]);
   const realizedOperatorForResult = tmpResult3.realizedOperatorFor(operator);
   require = realizedOperatorForResult;
-  let value3;
   if (existingPendingConfiguration != null) {
-    if (existingPendingConfiguration.configuration != null) {
-      value3 = iter2.value;
+    class Z {
+      constructor(children, arg1) {
+        let tmp = children;
+        if (typeof children === "string") {
+          const _HermesInternal = HermesInternal;
+          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+        }
+        return tmp;
+      }
+    }
+    if (tmp12 != null) {
+      class Z {
+        constructor(children, arg1) {
+          let tmp = children;
+          if (typeof children === "string") {
+            const _HermesInternal = HermesInternal;
+            const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+            tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+          }
+          return tmp;
+        }
+      }
     }
   }
   const tmpResult4 = tmp(tmp2[20]);
-  const str = tmpResult4.displayedValueFor(value3, realizedOperatorForResult);
+  const str = tmpResult4.displayedValueFor(undefined, realizedOperatorForResult);
   const str1 = str.toString();
-  let value4;
   if (existingPendingConfiguration != null) {
-    if (existingPendingConfiguration.configuration != null) {
-      value4 = iter3.value;
+    class Z {
+      constructor(children, arg1) {
+        let tmp = children;
+        if (typeof children === "string") {
+          const _HermesInternal = HermesInternal;
+          const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+          tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+        }
+        return tmp;
+      }
+    }
+    if (tmp15 != null) {
+      class Z {
+        constructor(children, arg1) {
+          let tmp = children;
+          if (typeof children === "string") {
+            const _HermesInternal = HermesInternal;
+            const obj = { variant: "text-md/semibold", style: closure_6.metadataRowText, children };
+            tmp = onChangeText(Text_Text.Text, obj, "t-" + arg1);
+          }
+          return tmp;
+        }
+      }
     }
   }
-  cResult[0] = value4;
+  cResult[0] = undefined;
   cResult[1] = operator;
   cResult[2] = realizedOperatorForResult;
-  cResult[3] = value3;
+  cResult[3] = undefined;
   cResult[4] = str1;
   tmp9 = str1;
-  tmp8 = value3;
+  tmp8 = tmp11;
 }) : (function NumericalConfigRule(existingPendingConfiguration) {
   let Children;
   let applicationId;
@@ -1401,7 +1335,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(18835);
+  let obj = metadataField(19137);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1344,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(18835);
+  const tmp2Result = tmp2(19137);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -1477,7 +1411,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "text-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5187).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5234).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {
@@ -1515,7 +1449,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(7172).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(7295).TableSwitchRow, obj8, metadataField);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlueskyMetadataRules(arg0) {
@@ -1643,7 +1577,103 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bluesk
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamMetadataRules(arg0) {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function LetterboxdMetadataRules(arg0) {
+  let configMetadataMap;
+  let first;
+  let items;
+  let locked;
+  let onConfigurationChange;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(16);
+  ({ configMetadataMap, onConfigurationChange, locked } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = PlatformsDefault;
+    value = obj2.get(PlatformTypes.LETTERBOXD);
+    cResult[0] = value;
+    first = value;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== configMetadataMap) {
+    const value3 = configMetadataMap.get(metroImportDefault.LETTERBOXD_WATCHES);
+    cResult[1] = configMetadataMap;
+    cResult[2] = value3;
+    tmp8 = value3;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === locked) {
+    if (cResult[4] === onConfigurationChange) {
+      let tmp11;
+      let tmp13;
+      if (cResult[5] === tmp8) {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] !== configMetadataMap) {
+        const value4 = configMetadataMap.get(metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR);
+        cResult[7] = configMetadataMap;
+        cResult[8] = value4;
+        tmp13 = value4;
+      } else {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === locked) {
+        if (cResult[10] === onConfigurationChange) {
+          let tmp16;
+          if (cResult[11] === tmp13) {
+            tmp16 = cResult[12];
+          }
+          if (cResult[13] === tmp11) {
+            let tmp21;
+            if (cResult[14] === tmp16) {
+              tmp21 = cResult[15];
+            }
+            return tmp21;
+          }
+          const obj3 = { children: items };
+          items = [tmp11, tmp16];
+          const tmp24 = map1(syncedClientThemes, obj3);
+          cResult[13] = tmp11;
+          cResult[14] = tmp16;
+          cResult[15] = tmp24;
+          tmp21 = tmp24;
+        }
+      }
+      const obj4 = { fieldTextHook: intl3.t["6wOYUY"], metadataField: metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR, existingPendingConfiguration: tmp13, platform: first, onConfigurationChange, locked };
+      const tmp20 = onChangeText(closure_18, obj4);
+      cResult[9] = locked;
+      cResult[10] = onConfigurationChange;
+      cResult[11] = tmp13;
+      cResult[12] = tmp20;
+      tmp16 = tmp20;
+    }
+  }
+  const obj5 = { fieldTextHook: intl3.t["4hoFk3"], metadataField: metroImportDefault.LETTERBOXD_WATCHES, existingPendingConfiguration: tmp8, platform: first, onConfigurationChange, locked };
+  const tmp12 = onChangeText(closure_18, obj5);
+  cResult[3] = locked;
+  cResult[4] = onConfigurationChange;
+  cResult[5] = tmp8;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : (function LetterboxdMetadataRules(arg0) {
+  let configMetadataMap;
+  let items;
+  let locked;
+  let onConfigurationChange;
+  ({ configMetadataMap, onConfigurationChange, locked } = arg0);
+  const obj = PlatformsDefault;
+  value = obj.get(PlatformTypes.LETTERBOXD);
+  const obj2 = { children: items };
+  items = [, ];
+  const obj3 = { fieldTextHook: intl3.t["4hoFk3"], metadataField: metroImportDefault.LETTERBOXD_WATCHES, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.LETTERBOXD_WATCHES), platform: value, onConfigurationChange, locked };
+  items[0] = onChangeText(closure_18, obj3);
+  const obj4 = { fieldTextHook: intl3.t["6wOYUY"], metadataField: metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR), platform: value, onConfigurationChange, locked };
+  items[1] = onChangeText(closure_18, obj4);
+  return map1(syncedClientThemes, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -1797,7 +1827,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamM
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwitterMetadataRules(arg0) {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwitterMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -1963,7 +1993,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Twitte
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedditMetadataRules(arg0) {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedditMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -2141,7 +2171,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reddit
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalMetadataRules(arg0) {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -2249,7 +2279,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Paypal
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMetadataRules(arg0) {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -2444,7 +2474,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMe
   return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTokMetadataRules(arg0) {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTokMetadataRules(arg0) {
   let configMetadataMap;
   let first;
   let items;
@@ -2613,7 +2643,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let obj3;
   let tmp = require;
   const obj = react2;
-  const cResult = obj.c(48);
+  const cResult = obj.c(50);
   configurationItems = configurationItems.configurationItems;
   const onConfigurationChange = configurationItems.onConfigurationChange;
   ({ locked, integrations } = configurationItems);
@@ -2636,9 +2666,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         }
         if (configurationItems[0].configuration.connectionType === unpackModuleId) {
           if (cResult[4] === configurationItems[0].index) {
-            let tmp74;
+            let tmp80;
             if (cResult[5] === onConfigurationChange) {
-              tmp74 = cResult[6];
+              tmp80 = cResult[6];
             }
             class I {
               constructor() {
@@ -2646,13 +2676,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               }
             }
             const obj2 = { hasIcons: true, children: onChangeText(closure_16, obj3) };
-            obj3 = { platform: null, integration: "a", applicationId, onRemove: tmp74, locked };
+            obj3 = { platform: null, integration: "a", applicationId, onRemove: tmp80, locked };
             const TableRowGroup = TableRowGroup3.TableRowGroup;
             cResult[7] = applicationId;
             cResult[8] = locked;
-            cResult[9] = tmp74;
+            cResult[9] = tmp80;
             cResult[10] = onChangeText(TableRowGroup, obj2);
-            const tmp78 = onChangeText(TableRowGroup, obj2);
+            const tmp84 = onChangeText(TableRowGroup, obj2);
           }
           class I {
             constructor() {
@@ -2662,7 +2692,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           cResult[4] = configurationItems[0].index;
           cResult[5] = onConfigurationChange;
           cResult[6] = I;
-          tmp74 = I;
+          tmp80 = I;
         } else {
           let tmp9;
           class I {
@@ -2726,9 +2756,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj4 = {};
                   const merged = Object.assign(tmp15);
+                  const tmp71 = onChangeText(closure_21, obj4);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[20] = tmp15;
-                  cResult[21] = onChangeText(closure_20, obj4);
-                  const tmp65 = onChangeText(closure_20, obj4);
+                  cResult[21] = tmp71;
                 }
                 class I {
                   constructor() {
@@ -2744,9 +2779,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj5 = {};
                   const merged1 = Object.assign(tmp15);
+                  const tmp65 = onChangeText(closure_22, obj5);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[22] = tmp15;
-                  cResult[23] = onChangeText(closure_21, obj5);
-                  const tmp59 = onChangeText(closure_21, obj5);
+                  cResult[23] = tmp65;
                 }
                 class I {
                   constructor() {
@@ -2762,9 +2802,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj6 = {};
                   const merged2 = Object.assign(tmp15);
+                  const tmp59 = onChangeText(closure_23, obj6);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[24] = tmp15;
-                  cResult[25] = onChangeText(closure_22, obj6);
-                  const tmp53 = onChangeText(closure_22, obj6);
+                  cResult[25] = tmp59;
                 }
                 class I {
                   constructor() {
@@ -2780,16 +2825,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj7 = {};
                   const merged3 = Object.assign(tmp15);
+                  const tmp53 = onChangeText(closure_19, obj7);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[26] = tmp15;
-                  cResult[27] = onChangeText(closure_19, obj7);
-                  const tmp47 = onChangeText(closure_19, obj7);
+                  cResult[27] = tmp53;
                 }
                 class I {
                   constructor() {
                     return onConfigurationChange(null, configurationItems[0].index);
                   }
                 }
-              } else if (PlatformTypes.PAYPAL === type) {
+              } else if (PlatformTypes.LETTERBOXD === type) {
                 if (cResult[28] !== tmp15) {
                   class I {
                     constructor() {
@@ -2798,16 +2848,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj8 = {};
                   const merged4 = Object.assign(tmp15);
+                  const tmp47 = onChangeText(closure_20, obj8);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[28] = tmp15;
-                  cResult[29] = onChangeText(closure_23, obj8);
-                  const tmp41 = onChangeText(closure_23, obj8);
+                  cResult[29] = tmp47;
                 }
                 class I {
                   constructor() {
                     return onConfigurationChange(null, configurationItems[0].index);
                   }
                 }
-              } else if (PlatformTypes.EBAY === type) {
+              } else if (PlatformTypes.PAYPAL === type) {
                 if (cResult[30] !== tmp15) {
                   class I {
                     constructor() {
@@ -2816,16 +2871,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj9 = {};
                   const merged5 = Object.assign(tmp15);
+                  const tmp41 = onChangeText(closure_24, obj9);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[30] = tmp15;
-                  cResult[31] = onChangeText(closure_24, obj9);
-                  const tmp35 = onChangeText(closure_24, obj9);
+                  cResult[31] = tmp41;
                 }
                 class I {
                   constructor() {
                     return onConfigurationChange(null, configurationItems[0].index);
                   }
                 }
-              } else if (PlatformTypes.TIKTOK === type) {
+              } else if (PlatformTypes.EBAY === type) {
                 if (cResult[32] !== tmp15) {
                   class I {
                     constructor() {
@@ -2834,9 +2894,37 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj10 = {};
                   const merged6 = Object.assign(tmp15);
+                  const tmp35 = onChangeText(closure_25, obj10);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
                   cResult[32] = tmp15;
-                  cResult[33] = onChangeText(closure_25, obj10);
-                  const tmp29 = onChangeText(closure_25, obj10);
+                  cResult[33] = tmp35;
+                }
+                class I {
+                  constructor() {
+                    return onConfigurationChange(null, configurationItems[0].index);
+                  }
+                }
+              } else if (PlatformTypes.TIKTOK === type) {
+                if (cResult[34] !== tmp15) {
+                  class I {
+                    constructor() {
+                      return onConfigurationChange(null, configurationItems[0].index);
+                    }
+                  }
+                  const obj11 = {};
+                  const merged7 = Object.assign(tmp15);
+                  const tmp29 = onChangeText(closure_26, obj11);
+                  class K {
+                    constructor() {
+                      return onConfigurationChange(null, index.index);
+                    }
+                  }
+                  cResult[34] = tmp15;
+                  cResult[35] = tmp29;
                 }
                 class I {
                   constructor() {
@@ -2849,21 +2937,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                     return onConfigurationChange(null, configurationItems[0].index);
                   }
                 }
-                const obj11 = { integration: tmp4 };
-                const merged7 = Object.assign(tmp15);
-                cResult[34] = tmp15;
-                cResult[35] = tmp4;
-                cResult[36] = onChangeText(ApplicationMetadataRules, obj11);
-                const tmp23 = onChangeText(ApplicationMetadataRules, obj11);
+                const obj12 = {};
+                const merged8 = Object.assign(tmp15);
+                class K {
+                  constructor() {
+                    return onConfigurationChange(null, index.index);
+                  }
+                }
+                cResult[36] = tmp15;
+                cResult[37] = tmp4;
+                cResult[38] = onChangeText(ApplicationMetadataRules, obj12);
+                const tmp23 = onChangeText(ApplicationMetadataRules, obj12);
               }
-              if (cResult[37] === onConfigurationChange) {
+              if (cResult[39] === onConfigurationChange) {
                 class I {
                   constructor() {
                     return onConfigurationChange(null, configurationItems[0].index);
                   }
                 }
-                if (cResult[40] === tmp4) {
-                  if (cResult[41] === locked) {
+                if (cResult[42] === tmp4) {
+                  if (cResult[43] === locked) {
                     class I {
                       constructor() {
                         return onConfigurationChange(null, configurationItems[0].index);
@@ -2871,35 +2964,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                     }
                   }
                 }
-                const obj12 = { platform: null, integration: tmp4, onRemove: tmp67, locked };
-                cResult[40] = tmp4;
-                cResult[41] = locked;
-                cResult[42] = null;
-                cResult[43] = tmp67;
-                cResult[44] = onChangeText(closure_16, obj12);
-                const tmp73 = onChangeText(closure_16, obj12);
+                const obj13 = { platform: null, integration: null, onRemove: tmp73, locked };
+                class K {
+                  constructor() {
+                    return onConfigurationChange(null, index.index);
+                  }
+                }
+                cResult[42] = tmp4;
+                cResult[43] = locked;
+                cResult[44] = null;
+                cResult[45] = tmp73;
+                cResult[46] = onChangeText(closure_16, obj13);
+                const tmp79 = onChangeText(closure_16, obj13);
               }
-              const fn = function y() {
-                return onConfigurationChange(null, index.index);
-              };
-              cResult[37] = onConfigurationChange;
-              cResult[38] = react.index;
-              cResult[39] = fn;
+              class K {
+                constructor() {
+                  return onConfigurationChange(null, index.index);
+                }
+              }
+              cResult[39] = onConfigurationChange;
+              cResult[40] = react.index;
+              cResult[41] = K;
             }
           }
-          const obj13 = { configMetadataMap: tmp9, onConfigurationChange, locked };
+          const obj14 = { configMetadataMap: tmp9, onConfigurationChange, locked: null };
           cResult[16] = tmp9;
           cResult[17] = locked;
           cResult[18] = onConfigurationChange;
-          cResult[19] = obj13;
-          tmp15 = obj13;
-        }
-      }
-    }
-    if (null != applicationId) {
-      class I {
-        constructor() {
-          return onConfigurationChange(null, configurationItems[0].index);
+          cResult[19] = obj14;
+          tmp15 = obj14;
         }
       }
     }
@@ -2991,46 +3084,51 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       if (PlatformTypes.STEAM === type) {
         const obj5 = {};
         const merged = Object.assign(obj4);
-        tmp18 = onChangeText(closure_20, obj5);
+        tmp18 = onChangeText(closure_21, obj5);
         tmp19 = onChangeText;
       } else if (PlatformTypes.TWITTER === type) {
         const obj6 = {};
         const merged1 = Object.assign(obj4);
-        tmp18 = onChangeText(closure_21, obj6);
+        tmp18 = onChangeText(closure_22, obj6);
         tmp19 = onChangeText;
       } else if (PlatformTypes.REDDIT === type) {
         const obj7 = {};
         const merged2 = Object.assign(obj4);
-        tmp18 = onChangeText(closure_22, obj7);
+        tmp18 = onChangeText(closure_23, obj7);
         tmp19 = onChangeText;
       } else if (PlatformTypes.BLUESKY === type) {
         const obj8 = {};
         const merged3 = Object.assign(obj4);
         tmp18 = onChangeText(closure_19, obj8);
         tmp19 = onChangeText;
-      } else if (PlatformTypes.PAYPAL === type) {
+      } else if (PlatformTypes.LETTERBOXD === type) {
         const obj9 = {};
         const merged4 = Object.assign(obj4);
-        tmp18 = onChangeText(closure_23, obj9);
+        tmp18 = onChangeText(closure_20, obj9);
         tmp19 = onChangeText;
-      } else if (PlatformTypes.EBAY === type) {
+      } else if (PlatformTypes.PAYPAL === type) {
         const obj10 = {};
         const merged5 = Object.assign(obj4);
         tmp18 = onChangeText(closure_24, obj10);
         tmp19 = onChangeText;
-      } else if (PlatformTypes.TIKTOK === type) {
+      } else if (PlatformTypes.EBAY === type) {
         const obj11 = {};
         const merged6 = Object.assign(obj4);
         tmp18 = onChangeText(closure_25, obj11);
         tmp19 = onChangeText;
-      } else {
-        const obj12 = { integration: tmp };
+      } else if (PlatformTypes.TIKTOK === type) {
+        const obj12 = {};
         const merged7 = Object.assign(obj4);
-        tmp18 = onChangeText(ApplicationMetadataRules, obj12);
+        tmp18 = onChangeText(closure_26, obj12);
+        tmp19 = onChangeText;
+      } else {
+        const obj13 = { integration: tmp };
+        const merged8 = Object.assign(obj4);
+        tmp18 = onChangeText(ApplicationMetadataRules, obj13);
         tmp19 = onChangeText;
       }
-      const obj13 = { hasIcons: true, children: items };
-      const obj14 = {
+      const obj14 = { hasIcons: true, children: items };
+      const obj15 = {
         platform: value,
         integration: tmp,
         onRemove() {
@@ -3039,8 +3137,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         locked
       };
       const TableRowGroup = TableRowGroup3.TableRowGroup;
-      items = [tmp19(closure_16, obj14), tmp18];
-      return map1(TableRowGroup, obj13);
+      items = [tmp19(closure_16, obj15), tmp18];
+      return map1(TableRowGroup, obj14);
     }
   }
 });

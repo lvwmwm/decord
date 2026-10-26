@@ -1,10 +1,10 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11812
+// Function ID: 11813
 // Name: ConjureRoleIds
 // Dependencies: [2]
 // Exports: haveSameRoleIds
 
-// Module 11654 (ConjureRoleIds)
+// Module 11812 (ConjureRoleIds)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -12,13 +12,7 @@ let set;
 const result = size.fileFinishedImporting("modules/conjure/settings/ConjureRoleIds.tsx");
 
 export const haveSameRoleIds = function haveSameRoleIds(first1, roleIds) {
-  set = first1;
-  if (!(first1 instanceof Set)) {
-    const _Set = Set;
-    const self = this;
-    const self2 = this;
-    set = new Set(first1);
-  }
-  const tmp3 = set.size === roleIds.length && roleIds.every((item) => set.has(item));
-  return tmp3;
+  set = new Set(first1);
+  const tmp2 = set.size === roleIds.length && roleIds.every((item) => set.has(item));
+  return tmp2;
 };

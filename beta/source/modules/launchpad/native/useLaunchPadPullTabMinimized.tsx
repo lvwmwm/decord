@@ -1,11 +1,11 @@
-// Module ID: 18377
-// Function ID: 18378
+// Module ID: 18678
+// Function ID: 18679
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 558, 576, 4945, 11418, 2]
+// Dependencies: [19, 17, 558, 576, 5052, 11571, 2]
 
-// Module 18377 (useLaunchPadPullTabMinimized)
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 11418 */;
+// Module 18678 (useLaunchPadPullTabMinimized)
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 11571 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMi
   let tmp4;
   let obj = sharedValue(576);
   const cResult = obj.c(3);
-  const obj2 = sharedValue(4945);
+  const obj2 = sharedValue(5052);
   sharedValue = obj2.useSharedValue(false);
   if (cResult[0] !== sharedValue) {
     const fn = function t() {
@@ -74,7 +74,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMi
   return sharedValue;
 }) : (function useIsMinimizedDuringScroll() {
   let sharedValue;
-  let obj = sharedValue(4945);
+  let obj = sharedValue(5052);
   sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
   const effect = react.useEffect(() => {

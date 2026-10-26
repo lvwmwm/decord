@@ -1,16 +1,16 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 18143
+// Function ID: 18144
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5191, 558, 576, 17836, 10859, 14650, 5156, 1128, 4127, 2]
+// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 18142, 11079, 14885, 5212, 1128, 4085, 2]
 
-// Module 17837 (SmartSearchExpandButton)
+// Module 18143 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 587 */;
-import _modDef4127 from "module_4127" /* 4127 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
+import _modDef4085 from "module_4085" /* 4085 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,12 +45,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj = onPress(576);
   const cResult = obj.c(17);
   ({ isCollapsed, onPress } = arg0);
-  const obj2 = onPress(17836);
+  const obj2 = onPress(18142);
   const tmp4 = closure_10(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10859).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11079).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14650).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14885).ChevronSmallUpIcon;
   }
   if (cResult[0] !== onPress) {
     const fn = function l() {
@@ -68,7 +68,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[2] !== isCollapsed) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    const tmp8 = _modDef4127;
+    const tmp8 = _modDef4085;
     const stringResult = string(isCollapsed ? tmp8.NuTbB9 : tmp8.FKLBbW);
     cResult[2] = isCollapsed;
     cResult[3] = stringResult;
@@ -142,12 +142,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7;
   let tmp8;
   ({ isCollapsed, onPress } = arg0);
-  let obj = onPress(17836);
+  let obj = onPress(18142);
   const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10859).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11079).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14650).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14885).ChevronSmallUpIcon;
   }
   const items = [onPress];
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };
@@ -159,7 +159,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items);
   const intl = tmp(1128).intl;
   string = intl.string;
-  const tmp10 = _modDef4127;
+  const tmp10 = _modDef4085;
   tmp7 = closure_8;
   tmp8 = closure_4;
   if (isCollapsed) {

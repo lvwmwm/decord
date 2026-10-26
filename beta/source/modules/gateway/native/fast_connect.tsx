@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1275, 10003, 14749, 15220, 7603, 14731, 14718, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1275, 10100, 14984, 15441, 7722, 14966, 14953, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -12,46 +12,55 @@ import react_native from "react-native" /* 17 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import QosToken from "QosToken" /* 500 */;
 import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1275 */;
-import isCacheEnabled from "isCacheEnabled" /* 7603 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10003 */;
-import GatewayCapabilities from "GatewayCapabilities" /* 14749 */;
-import react_nativeDefault from "react-native" /* 15220 */;
+import isCacheEnabled from "isCacheEnabled" /* 7722 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10100 */;
+import GatewayCapabilities from "GatewayCapabilities" /* 14984 */;
+import react_nativeDefault from "react-native" /* 15441 */;
 import checkEnv from "checkEnv" /* 16 */;
 import size from "module_2" /* 2 */;
+
+let constants;
 
 function createFastConnectSocket() {
   let obj;
   let obj3;
   if (null != window.WebSocket) {
-    obj = obj3(14731);
-    const supportsZstd = obj.getConstants().supportsZstd;
+    obj = obj3(14966);
+    constants = obj.getConstants();
+    let flag;
+    if (constants != null) {
+      flag = constants.supportsZstd;
+    }
+    if (flag == null) {
+      flag = false;
+    }
     let str2 = "zlib-stream";
-    if (supportsZstd) {
+    if (flag) {
       str2 = "zstd-stream";
     }
     const _window = window;
     const _window2 = window;
     const _HermesInternal = HermesInternal;
     const combined = "" + window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=json&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=" + str2;
-    obj.log(`[FAST CONNECT] ${tmp6}`);
+    obj.log(`[FAST CONNECT] ${tmp7}`);
     const _Date = Date;
     let closure_0 = Date.now();
-    const tmp8 = obj3(14718)(combined);
+    const tmp9 = obj3(14953)(combined);
     const _parseFloat = parseFloat;
-    const parsed = parseFloat(tmp8._socketId);
+    const parsed = parseFloat(tmp9._socketId);
     const _isNaN = isNaN;
     const obj2 = obj;
     if (isNaN(parsed)) {
-      obj2.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp8._socketId);
+      obj2.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp9._socketId);
     } else {
-      const tmp3Result = obj3(14731);
-      if (supportsZstd) {
+      const tmp3Result = obj3(14966);
+      if (flag) {
         const result = tmp3Result.enableZstdStreamSupport(parsed);
       } else {
         const result1 = tmp3Result.enableZlibStreamSupport(parsed);
       }
       obj3 = { open: false, gateway: combined, identify: false, messages: [], clientState: null, userId: null };
-      tmp8.onopen = () => {
+      tmp9.onopen = () => {
         const obj = AppStartPerformanceDefault;
         obj.mark("\u{1F310}", "Fastconnect socket opened");
         obj.log("connected and identified in " + Date.now() - closure_0 + "ms didIdentify:" + obj3.identify);
@@ -62,16 +71,16 @@ function createFastConnectSocket() {
         obj.mark("\u{1F310}", "Fastconnect socket close");
         window._ws = null;
       };
-      tmp8.onerror = fn;
-      tmp8.onclose = fn;
-      tmp8.onmessage = (arg0) => {
+      tmp9.onerror = fn;
+      tmp9.onclose = fn;
+      tmp9.onmessage = (arg0) => {
         const obj = AppStartPerformanceDefault;
         obj.mark("\u{1F310}", "Fastconnect socket message");
         const messages = obj3.messages;
         messages.push(arg0);
       };
       const _window3 = window;
-      const obj4 = { ws: tmp8, state: obj3 };
+      const obj4 = { ws: tmp9, state: obj3 };
       window._ws = obj4;
       const tmp3Result2 = obj3(10);
       tmp3Result2.mark("\u{1F310}", "Fastconnect socket created");

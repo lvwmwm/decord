@@ -1,15 +1,15 @@
-// Module ID: 8178
-// Function ID: 8179
+// Module ID: 8296
+// Function ID: 8297
 // Name: ForumPostAnalyticsManager
-// Dependencies: [6338, 502, 2068, 7085, 11, 7283, 2]
+// Dependencies: [6790, 502, 4823, 7214, 11, 7404, 2]
 
-// Module 8178 (ForumPostAnalyticsManager)
+// Module 8296 (ForumPostAnalyticsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ForumUtils from "ForumUtils" /* 7283 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6338 */;
+import ForumUtils from "ForumUtils" /* 7404 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6790 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 class ForumPostAnalyticsManager extends AutomaticLifecycleManager {

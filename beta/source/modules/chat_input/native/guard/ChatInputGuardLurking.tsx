@@ -1,22 +1,22 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13363
+// Function ID: 13364
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4846, 2068, 12334, 1087, 21, 558, 576, 504, 1114, 5206, 13126, 8967, 1211, 7328, 6377, 7196, 1128, 13118, 2]
+// Dependencies: [19, 4904, 4823, 12530, 1087, 21, 558, 576, 504, 1114, 5711, 13364, 9062, 1211, 7448, 6830, 7319, 1128, 13356, 2]
 
-// Module 13125 (ChatInputGuardLurking)
+// Module 13363 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7196 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7328 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8967 */;
-import ChatInputConstants from "ChatInputConstants" /* 12334 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13118 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13126 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7319 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7448 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9062 */;
+import ChatInputConstants from "ChatInputConstants" /* 12530 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13356 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13364 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4846 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import LurkingStore from "LurkingStore" /* 4904 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -574,7 +574,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13118);
+    guildId(13356);
     const intl9 = tmp2(1128).intl;
     const intl10 = tmp2(1128).intl;
     const intl11 = tmp2(1128).intl;
@@ -582,7 +582,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13118);
+    const tmp17 = guildId(13356);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1128).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1128).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1128).intl;

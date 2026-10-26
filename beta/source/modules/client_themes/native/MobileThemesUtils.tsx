@@ -1,36 +1,45 @@
-// Module ID: 5124
-// Function ID: 5125
+// Module ID: 5202
+// Function ID: 5203
 // Name: MobileThemesUtils
-// Dependencies: [1207, 5125, 1253, 1255, 1128, 2821, 1256, 558, 576, 5126, 504, 2]
-// Exports: getAllMobileThemes, getCustomBackgroundGradient
+// Dependencies: [1207, 4995, 5203, 1253, 1255, 4996, 1256, 4998, 4999, 1128, 2768, 558, 576, 5204, 504, 2]
+// Exports: getAllMobileThemes, getCustomBackgroundGradient, isHexagonCampaignMobileTheme, isNitroGatedMobileTheme
 
-// Module 5124 (MobileThemesUtils)
+// Module 5202 (MobileThemesUtils)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import _modDef2821 from "module_2821" /* 2821 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5126 */;
+import _modDef2768 from "module_2768" /* 2768 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4999 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5204 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5125 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5203 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let c10;
+let c9;
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let tmp;
+let unpackModuleId;
 const get_initialized = tmp(504);
+const HexagonCampaignUtils = tmp(4998);
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2821.yl1iMm);
+  return intl.string(_modDef2768.yl1iMm);
 }
-({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportDefault } = ClientThemesConstants);
+({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroImportDefault, HEXAGON_GRADIENT_PRESET: metroImportAll, REFRESH_STANDARD_BACKGROUND_THEMES: c9 } = ClientThemesConstants);
+({ HexagonCampaignPerk: c10, HexagonCampaignPerkAvailability: unpackModuleId } = HexagonCampaignConstants);
+const MobileThemesUtils = "MobileThemesUtils";
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomBackgroundGradient(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomBackgroundGradient(arg0) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useCustomThemeDisplaySettings;
@@ -63,9 +72,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomBac
   }
   return tmp4;
 });
-let closure_9 = tmp3;
+let closure_14 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePerModeCustomBackgroundGradient(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePerModeCustomBackgroundGradient(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -81,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePerModeCu
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function o() {
       if (null == closure_0) {
         return null;
       } else {
@@ -137,55 +146,141 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePerModeCu
     }
   });
 });
-let closure_10 = tmp4;
+let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllMobileThemes(arg0) {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  let tmp3 = closure_9(closure_11());
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllMobileThemes(arg0) {
+  let closure_0;
+  let first;
+  let items4;
+  let tmp11;
+  let tmp18;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(7);
+  let tmp5 = closure_14(closure_16());
   if (null != arg0) {
-    tmp3 = closure_10(arg0);
+    tmp5 = closure_15(arg0);
   }
-  if (cResult[0] !== tmp3) {
-    let items1;
-    if (null != tmp3) {
-      const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(items, metroImportDefault, 0);
-      items[arraySpreadResult] = tmp3;
-      HermesBuiltin.arraySpread(items, metroRequire, arraySpreadResult + 1);
-      items1 = items;
-    } else {
-      items1 = [];
-      HermesBuiltin.arraySpread(items1, metroRequire, HermesBuiltin.arraySpread(items1, metroImportDefault, 0));
-    }
-    cResult[0] = tmp3;
-    cResult[1] = items1;
-    tmp4 = items1;
+  const tmp2Result = require("HexagonCampaignPerkAvailability");
+  const hexagonCampaignPerkAvailability = tmp2Result.useHexagonCampaignPerkAvailability(constants.CLIENT_THEME, MobileThemesUtils);
+  const tmp6 = constants;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ClientThemesBackgroundStore, ThemeStore];
+    cResult[0] = items;
+    first = items;
   } else {
-    tmp4 = cResult[1];
+    first = cResult[0];
   }
-  return tmp4;
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let id;
+      if (null != closure_0) {
+        const syncedClientTheme = ThemeStore.getSyncedClientTheme(tmp);
+        let prop;
+        if (syncedClientTheme != null) {
+          prop = syncedClientTheme.backgroundGradientPresetId;
+        }
+        id = prop;
+      } else {
+        const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
+        if (gradientPreset != null) {
+          id = gradientPreset.id;
+        }
+      }
+      return id;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[2];
+  }
+  const tmp2Result4 = require("get initialized");
+  const stateFromStores = tmp2Result4.useStateFromStores(first, tmp11);
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === hexagonCampaignPerkAvailability) {
+      let tmp13;
+      if (cResult[5] === tmp5) {
+        tmp13 = cResult[6];
+      }
+      return tmp13;
+    }
+  }
+  if (hexagonCampaignPerkAvailability !== constants2.HIDDEN) {
+    const items1 = [closure_8];
+    HermesBuiltin.arraySpread(items1, closure_7, 1);
+    tmp18 = items1;
+  } else {
+    const tmp2Result5 = require("HexagonCampaignUtils");
+    if (tmp2Result5.isHexagonCampaignClientThemePreset(stateFromStores)) {
+      const tmp2Result6 = require("HexagonCampaignPerkAvailability");
+      if (!tmp2Result6.isHexagonCampaignPerkExpiredForCurrentUser(tmp6.CLIENT_THEME)) {
+        const items2 = [closure_8];
+        HermesBuiltin.arraySpread(items2, closure_7, 1);
+        tmp18 = items2;
+      }
+    }
+    tmp18 = closure_7;
+  }
+  if (null != tmp5) {
+    const items3 = [];
+    const arraySpreadResult6 = HermesBuiltin.arraySpread(items3, closure_9, 0);
+    items3[arraySpreadResult6] = tmp5;
+    HermesBuiltin.arraySpread(items3, tmp18, arraySpreadResult6 + 1);
+    items4 = items3;
+  } else {
+    items4 = [];
+    HermesBuiltin.arraySpread(items4, tmp18, HermesBuiltin.arraySpread(items4, closure_9, 0));
+  }
+  cResult[3] = stateFromStores;
+  cResult[4] = hexagonCampaignPerkAvailability;
+  cResult[5] = tmp5;
+  cResult[6] = items4;
+  tmp13 = items4;
 }) : (function useAllMobileThemes(arg0) {
-  let items1;
-  let tmp2 = closure_9(closure_11());
+  let closure_0;
+  let items4;
+  let tmp13;
+  _require = arg0;
+  let tmp2 = closure_14(closure_16());
   if (null != arg0) {
-    tmp2 = closure_10(arg0);
+    tmp2 = closure_15(arg0);
+  }
+  const obj = require("HexagonCampaignPerkAvailability");
+  const hexagonCampaignPerkAvailability = obj.useHexagonCampaignPerkAvailability(constants.CLIENT_THEME, MobileThemesUtils);
+  require("get initialized");
+  const items = [ClientThemesBackgroundStore, ThemeStore];
+  const tmp5 = constants;
+  if (hexagonCampaignPerkAvailability !== constants2.HIDDEN) {
+    const items1 = [closure_8];
+    HermesBuiltin.arraySpread(items1, closure_7, 1);
+    tmp13 = items1;
+  } else {
+    const tmp3Result = require("HexagonCampaignUtils");
+    if (tmp3Result.isHexagonCampaignClientThemePreset(tmp8)) {
+      const tmp3Result2 = require("HexagonCampaignPerkAvailability");
+      if (!tmp3Result2.isHexagonCampaignPerkExpiredForCurrentUser(tmp5.CLIENT_THEME)) {
+        const items2 = [closure_8];
+        HermesBuiltin.arraySpread(items2, closure_7, 1);
+        tmp13 = items2;
+      }
+    }
+    tmp13 = closure_7;
   }
   if (null != tmp2) {
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, metroImportDefault, 0);
-    items[arraySpreadResult] = tmp2;
-    HermesBuiltin.arraySpread(items, metroRequire, arraySpreadResult + 1);
-    items1 = items;
+    const items3 = [];
+    const arraySpreadResult6 = HermesBuiltin.arraySpread(items3, closure_9, 0);
+    items3[arraySpreadResult6] = tmp2;
+    HermesBuiltin.arraySpread(items3, tmp13, arraySpreadResult6 + 1);
+    items4 = items3;
   } else {
-    items1 = [];
-    HermesBuiltin.arraySpread(items1, metroRequire, HermesBuiltin.arraySpread(items1, metroImportDefault, 0));
+    items4 = [];
+    HermesBuiltin.arraySpread(items4, tmp13, HermesBuiltin.arraySpread(items4, closure_9, 0));
   }
-  return items1;
+  return items4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedCustomTheme() {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedCustomTheme() {
   let savedCustomTheme;
   let tmp4;
   let tmp5;
@@ -221,7 +316,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedCust
   }
   return tmp2;
 });
-let closure_11 = tmp6;
+let closure_16 = tmp7;
+function isHexagonCampaignMobileTheme(themes) {
+  let result = themes.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET;
+  if (result) {
+    const tmpResult = HexagonCampaignUtils;
+    result = tmpResult.isHexagonCampaignClientThemePreset(themes.id);
+  }
+  return result;
+}
 function getCustomBackgroundGradient() {
   const customThemeDisplaySettings = CustomThemeMobileStore.getCustomThemeDisplaySettings();
   let tmp2 = null;
@@ -232,13 +335,33 @@ function getCustomBackgroundGradient() {
   }
   return tmp2;
 }
-const result = size.fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
+let result = size.fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
 
+export { isHexagonCampaignMobileTheme };
+export const isNitroGatedMobileTheme = function isNitroGatedMobileTheme(themes) {
+  let tmp3 = themes.type !== ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME;
+  if (tmp3) {
+    let result = themes.type === tmp(1256).ClientThemeType.BACKGROUND_GRADIENT_PRESET;
+    if (result) {
+      const tmpResult = HexagonCampaignUtils;
+      result = tmpResult.isHexagonCampaignClientThemePreset(themes.id);
+    }
+    let tmp5 = !result;
+    if (result) {
+      const tmpResult2 = HexagonCampaignPerkAvailability;
+      tmp5 = tmpResult2.getHexagonCampaignPerkAvailabilityForCurrentUser(constants.CLIENT_THEME, MobileThemesUtils) !== unpackModuleId.SELECTABLE;
+    }
+    tmp3 = tmp5;
+  }
+  return tmp3;
+};
 export { getCustomBackgroundGradient };
-export const useCustomBackgroundGradient = tmp3;
-export const usePerModeCustomBackgroundGradient = tmp4;
+export const useCustomBackgroundGradient = tmp4;
+export const usePerModeCustomBackgroundGradient = tmp5;
 export const getAllMobileThemes = function getAllMobileThemes() {
-  let items1;
+  let id;
+  let items3;
+  let tmp15;
   const customThemeDisplaySettings = CustomThemeMobileStore.getCustomThemeDisplaySettings();
   let tmp3 = null;
   if (undefined !== customThemeDisplaySettings) {
@@ -246,17 +369,40 @@ export const getAllMobileThemes = function getAllMobileThemes() {
     ({ baseTheme: obj.theme, customTheme: obj.customThemeSettings } = customThemeDisplaySettings);
     tmp3 = obj;
   }
-  if (null != tmp3) {
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, metroImportDefault, 0);
-    items[arraySpreadResult] = tmp3;
-    HermesBuiltin.arraySpread(items, metroRequire, arraySpreadResult + 1);
-    items1 = items;
-  } else {
-    items1 = [];
-    HermesBuiltin.arraySpread(items1, metroRequire, HermesBuiltin.arraySpread(items1, metroImportDefault, 0));
+  const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
+  const obj2 = HexagonCampaignPerkAvailability;
+  const hexagonCampaignPerkAvailabilityForCurrentUser = obj2.getHexagonCampaignPerkAvailabilityForCurrentUser(constants.CLIENT_THEME, MobileThemesUtils);
+  const tmp9 = constants;
+  if (gradientPreset != null) {
+    id = gradientPreset.id;
   }
-  return items1;
+  if (hexagonCampaignPerkAvailabilityForCurrentUser !== unpackModuleId.HIDDEN) {
+    const items = [metroImportAll];
+    HermesBuiltin.arraySpread(items, metroImportDefault, 1);
+    tmp15 = items;
+  } else {
+    const tmp7Result = HexagonCampaignUtils;
+    if (tmp7Result.isHexagonCampaignClientThemePreset(id)) {
+      const tmp7Result2 = HexagonCampaignPerkAvailability;
+      if (!tmp7Result2.isHexagonCampaignPerkExpiredForCurrentUser(tmp9.CLIENT_THEME)) {
+        const items1 = [metroImportAll];
+        HermesBuiltin.arraySpread(items1, metroImportDefault, 1);
+        tmp15 = items1;
+      }
+    }
+    tmp15 = metroImportDefault;
+  }
+  if (null != tmp3) {
+    const items2 = [];
+    const arraySpreadResult6 = HermesBuiltin.arraySpread(items2, React4, 0);
+    items2[arraySpreadResult6] = tmp3;
+    HermesBuiltin.arraySpread(items2, tmp15, arraySpreadResult6 + 1);
+    items3 = items2;
+  } else {
+    items3 = [];
+    HermesBuiltin.arraySpread(items3, tmp15, HermesBuiltin.arraySpread(items3, React4, 0));
+  }
+  return items3;
 };
-export const useAllMobileThemes = tmp5;
-export const useSavedCustomTheme = tmp6;
+export const useAllMobileThemes = tmp6;
+export const useSavedCustomTheme = tmp7;

@@ -1,13 +1,13 @@
-// Module ID: 7834
-// Function ID: 7835
+// Module ID: 7953
+// Function ID: 7954
 // Name: InlineNotice
-// Dependencies: [19, 21, 7835, 558, 576, 7836, 7837, 5479, 5187, 2]
+// Dependencies: [19, 21, 7954, 558, 576, 7955, 7956, 5244, 5234, 2]
 
-// Module 7834 (InlineNotice)
+// Module 7953 (InlineNotice)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import HelpMessage from "HelpMessage" /* 7835 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7836 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import HelpMessage from "HelpMessage" /* 7954 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7955 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,125 +15,167 @@ import size from "module_2" /* 2 */;
 
 const HelpMessageDefault = HelpMessage;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
+let metroRequire;
+({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 const InlineNotice_str = "InlineNotice";
 let obj = { critical: HelpMessage.HelpMessageTypes.ERROR, warning: HelpMessage.HelpMessageTypes.WARNING, info: HelpMessage.HelpMessageTypes.INFO, positive: HelpMessage.HelpMessageTypes.SUCCESS };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNotice(hidden) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNotice(hidden) {
   let action;
   let items;
+  let items1;
   let message;
+  let messageList;
   let title;
   obj = react2;
-  const cResult = obj.c(11);
+  const cResult = obj.c(14);
   const obj2 = DesignSystemsNotificationComponentsExperiment;
   if (obj2.useDesignSystemsNotificationComponents(InlineNotice_str)) {
-    let tmp20;
+    let tmp27;
     if (cResult[0] !== hidden) {
-      const obj4 = {};
-      const NewInlineNotice = tmp(7837).NewInlineNotice;
+      const obj3 = {};
+      const NewInlineNotice = tmp(7956).NewInlineNotice;
       const merged = Object.assign(hidden);
-      const tmp25 = _false(NewInlineNotice, obj4);
+      const tmp32 = React3(NewInlineNotice, obj3);
       cResult[0] = hidden;
-      cResult[1] = tmp25;
-      tmp20 = tmp25;
+      cResult[1] = tmp32;
+      tmp27 = tmp32;
     } else {
-      tmp20 = cResult[1];
+      tmp27 = cResult[1];
     }
-    return tmp20;
+    return tmp27;
   } else {
-    ({ title, message, action } = hidden);
+    ({ title, message, messageList, action } = hidden);
     if (true === hidden.hidden) {
       return null;
     } else {
-      let tmp5;
-      if (cResult[2] !== action) {
-        let tmp7;
-        if (null != action) {
-          const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
-          ({ text: obj3.text, onPress: obj3.onPress, loading: obj3.loading } = action);
-          tmp7 = _false(tmp(5479).Button, obj5);
+      if (cResult[2] === message) {
+        let tmp5;
+        let tmp12;
+        if (cResult[3] === messageList) {
+          tmp5 = cResult[4];
         }
-        cResult[2] = action;
-        cResult[3] = tmp7;
-        tmp5 = tmp7;
-      } else {
-        tmp5 = cResult[3];
-      }
-      if (cResult[4] === message) {
-        let tmp9;
-        if (cResult[5] === title) {
-          tmp9 = cResult[6];
-        }
-        if (cResult[7] === obj[tmp4]) {
-          if (cResult[8] === tmp5) {
-            let tmp15;
-            if (cResult[9] === tmp9) {
-              tmp15 = cResult[10];
-            }
-            return tmp15;
+        if (cResult[5] !== action) {
+          let tmp14;
+          if (null != action) {
+            const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
+            ({ text: obj4.text, onPress: obj4.onPress, loading: obj4.loading } = action);
+            tmp14 = React3(tmp(5244).Button, obj5);
           }
+          cResult[5] = action;
+          cResult[6] = tmp14;
+          tmp12 = tmp14;
+        } else {
+          tmp12 = cResult[6];
         }
-        const obj6 = { messageType: obj[tmp4], button: tmp5, children: tmp9 };
-        const tmp18 = _false(HelpMessageDefault, obj6);
-        cResult[7] = obj[tmp4];
-        cResult[8] = tmp5;
-        cResult[9] = tmp9;
-        cResult[10] = tmp18;
-        tmp15 = tmp18;
+        if (cResult[7] === tmp5) {
+          let tmp16;
+          if (cResult[8] === title) {
+            tmp16 = cResult[9];
+          }
+          if (cResult[10] === obj[tmp4]) {
+            if (cResult[11] === tmp12) {
+              let tmp22;
+              if (cResult[12] === tmp16) {
+                tmp22 = cResult[13];
+              }
+              return tmp22;
+            }
+          }
+          const obj6 = { messageType: obj[tmp4], button: tmp12, children: tmp16 };
+          const tmp25 = React3(HelpMessageDefault, obj6);
+          cResult[10] = obj[tmp4];
+          cResult[11] = tmp12;
+          cResult[12] = tmp16;
+          cResult[13] = tmp25;
+          tmp22 = tmp25;
+        }
+        let tmp18 = tmp5;
+        if (null != title) {
+          const obj7 = { children: items };
+          const obj8 = { variant: "text-sm/semibold", children: title };
+          items = [React3(Text_Text.Text, obj8), "\n", tmp5];
+          tmp18 = hasOwnProperty(metroRequire, obj7);
+        }
+        cResult[7] = tmp5;
+        cResult[8] = title;
+        cResult[9] = tmp18;
+        tmp16 = tmp18;
       }
-      let tmp11 = message;
-      if (null != title) {
-        const obj12 = { variant: "text-sm/semibold", children: title };
-        const obj7 = { children: items };
-        items = [_false(Text_Text.Text, obj12), "\n", message];
-        tmp11 = hasOwnProperty(React3, obj7);
+      let tmp7 = message;
+      if (null != messageList) {
+        const obj14 = { children: items1 };
+        items1 = [
+          message,
+          messageList.map((item, index) => {
+                  let items;
+                  obj = { children: items };
+                  items = ["\n\u2022 ", item];
+                  return closure_1_5(React.Fragment, obj, index);
+                })
+        ];
+        tmp7 = hasOwnProperty(metroRequire, obj14);
       }
-      cResult[4] = message;
-      cResult[5] = title;
-      cResult[6] = tmp11;
-      tmp9 = tmp11;
+      cResult[2] = message;
+      cResult[3] = messageList;
+      cResult[4] = tmp7;
+      tmp5 = tmp7;
     }
   }
 }) : (function InlineNotice(hidden) {
   let action;
   let items;
+  let items1;
   let message;
+  let messageList;
   let title;
-  let tmp14Result;
-  let tmp7;
+  let tmp12;
+  let tmp7Result;
   obj = DesignSystemsNotificationComponentsExperiment;
   if (obj.useDesignSystemsNotificationComponents(InlineNotice_str)) {
-    const obj3 = {};
-    const NewInlineNotice = tmp(7837).NewInlineNotice;
+    const obj2 = {};
+    const NewInlineNotice = tmp(7956).NewInlineNotice;
     const merged = Object.assign(hidden);
-    return _false(NewInlineNotice, obj3);
+    return React3(NewInlineNotice, obj2);
   } else {
-    ({ title, message, action } = hidden);
-    let tmp14Result2 = null;
-    if (true !== hidden.hidden) {
-      const obj4 = { messageType: obj[tmp3], button: tmp14Result, children: tmp7 };
-      tmp14Result = undefined;
-      const tmp16 = HelpMessageDefault;
+    ({ title, message, messageList, action } = hidden);
+    if (true === hidden.hidden) {
+      return null;
+    } else {
+      let tmp6 = message;
+      if (null != messageList) {
+        const obj3 = { children: items };
+        items = [
+          message,
+          messageList.map((item, index) => {
+                  let items;
+                  obj = { children: items };
+                  items = ["\n\u2022 ", item];
+                  return closure_1_5(React.Fragment, obj, index);
+                })
+        ];
+        tmp6 = hasOwnProperty(metroRequire, obj3);
+      }
+      const obj5 = { messageType: obj[tmp3], button: tmp7Result, children: tmp12 };
+      tmp7Result = undefined;
+      const tmp9 = HelpMessageDefault;
       if (null != action) {
-        const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
-        ({ text: obj2.text, onPress: obj2.onPress, loading: obj2.loading } = action);
-        tmp14Result = tmp14(tmp(5479).Button, obj5);
+        const obj6 = { variant: "secondary", size: "sm", text: null, onPress: null, loading: null };
+        ({ text: obj4.text, onPress: obj4.onPress, loading: obj4.loading } = action);
+        tmp7Result = tmp7(tmp(5244).Button, obj6);
       }
-      tmp7 = message;
+      tmp12 = tmp6;
       if (null != title) {
-        const obj11 = { variant: "text-sm/semibold", children: title };
-        const obj6 = { children: items };
-        items = [_false(Text_Text.Text, obj11), "\n", message];
-        tmp7 = hasOwnProperty(React3, obj6);
+        const obj13 = { variant: "text-sm/semibold", children: title };
+        const obj7 = { children: items1 };
+        items1 = [React3(Text_Text.Text, obj13), "\n", tmp6];
+        tmp12 = hasOwnProperty(metroRequire, obj7);
       }
-      tmp14Result2 = tmp14(tmp16, obj4);
+      return React3(tmp9, obj5);
     }
-    return tmp14Result2;
   }
 });
 const result = size.fileFinishedImporting("design/mana/components/InlineNotice/InlineNotice.native.tsx");
 
-export const InlineNotice = tmp4;
+export const InlineNotice = tmp3;

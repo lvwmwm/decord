@@ -1,17 +1,17 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9733
+// Function ID: 9734
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7580, 5169, 9635, 1108, 9636, 9637, 504, 9641, 9640, 9643, 1128, 2]
+// Dependencies: [5, 19, 7697, 5607, 9734, 1108, 9735, 9736, 504, 9740, 9739, 9742, 1128, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9634 (useConversationsHeaderButton)
+// Module 9733 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1128 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9637 */;
-import PaperIcon from "PaperIcon" /* 9641 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9736 */;
+import PaperIcon from "PaperIcon" /* 9740 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7580 */;
-import ConversationConstants from "ConversationConstants" /* 5169 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7697 */;
+import ConversationConstants from "ConversationConstants" /* 5607 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

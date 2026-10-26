@@ -1,11 +1,11 @@
-// Module ID: 13195
-// Function ID: 13196
+// Module ID: 13433
+// Function ID: 13434
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 2065, 558, 576, 13196, 7376, 13198, 5155, 2]
+// Dependencies: [32, 19, 4820, 558, 576, 13434, 7496, 13436, 5210, 2]
 
-// Module 13195 (useShowGuildPowerupRollbackSheet)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13198 */;
+// Module 13433 (useShowGuildPowerupRollbackSheet)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13436 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,15 +24,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuild
   let tmp = modalConfig;
   let obj = modalConfig(576);
   const cResult = obj.c(9);
-  ({ shouldShow, modalConfig } = first(13196)(arg0, arg1));
-  const tmp5 = first(13196)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13434)(arg0, arg1));
+  const tmp5 = first(13434)(arg0, arg1);
   if (cResult[0] === modalConfig) {
     if (cResult[1] === shouldShow) {
       let tmp6;
       if (cResult[2] === (undefined !== arg2 && arg2)) {
         tmp6 = cResult[3];
       }
-      const tmpResult = tmp(7376);
+      const tmpResult = tmp(7496);
       const tmp11 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp6), 2);
       first = tmp11[0];
       dependencyMap = tmp13;
@@ -127,8 +127,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuild
   dependencyMap = undefined;
   _slicedToArray = undefined;
   let tmp = dependencyMap;
-  ({ shouldShow, modalConfig } = first(13196)(arg0, arg1));
-  const tmp2 = first(13196)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13434)(arg0, arg1));
+  const tmp2 = first(13434)(arg0, arg1);
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowGuild
   if (shouldShow) {
     items.push(modalConfig.dismissibleContent);
   }
-  let obj = modalConfig(7376);
+  let obj = modalConfig(7496);
   [first, tmp7] = obj.useSelectedDismissibleContent(items);
   dependencyMap = tmp7;
   _slicedToArray = react.useRef(false);

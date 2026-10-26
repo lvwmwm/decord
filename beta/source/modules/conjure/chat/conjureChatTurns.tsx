@@ -1,24 +1,24 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 10700
+// Function ID: 10701
 // Name: conjureChatTurns
-// Dependencies: [10981, 10982, 2]
-// Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, openTurnRequesterId, replaceAt, resolveTurnIndex, stoppable, turnSettled
+// Dependencies: [10701, 10702, 2]
+// Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
 
-// Module 10980 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10981 */;
-import conjureChatHistory from "conjureChatHistory" /* 10982 */;
+// Module 10700 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10701 */;
+import conjureChatHistory from "conjureChatHistory" /* 10702 */;
 import size from "module_2" /* 2 */;
 
-function findOpenTurn(arr) {
+function findOpenTurn(map) {
   let tmp;
-  if (null == arr) {
+  if (null == map) {
     return null;
   } else {
-    let diff = arr.length - 1;
+    let diff = map.length - 1;
     let flag2 = false;
     if (0 <= diff) {
       while (true) {
-        tmp = arr[diff];
+        tmp = map[diff];
         let tmp4 = flag2;
         if ("assistant" === tmp.role) {
           let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind || "project_event" === tmp.kind || "context_boundary" === tmp.kind;
@@ -69,26 +69,6 @@ export const turnSettled = function turnSettled(message) {
   return hasTerminalStepResult;
 };
 export { findOpenTurn };
-export const openTurnRequesterId = function openTurnRequesterId(arr) {
-  const tmp = findOpenTurn(arr);
-  if (null != arr) {
-    if (null != tmp) {
-      let diff = arr.indexOf(tmp) - 1;
-      if (0 <= diff) {
-        while ("user" !== arr[diff].role) {
-          diff = diff - 1;
-        }
-        let user_id = arr[diff].user_id;
-        if (user_id == null) {
-          user_id = null;
-        }
-        return user_id;
-      }
-      return null;
-    }
-  }
-  return null;
-};
 export const hasOpenTurn = function hasOpenTurn(map) {
   return null != findOpenTurn(map);
 };
@@ -147,6 +127,21 @@ export const isSegmentOfTurn = function isSegmentOfTurn(value, turnId) {
   }
   return tmp;
 };
+export const turnIdOfSegment = function turnIdOfSegment(message) {
+  let turn_id;
+  if (null != message.turn_id) {
+    turn_id = message.turn_id;
+  } else {
+    const id = message.id;
+    turn_id = null;
+    const tmp = require;
+    if (id.startsWith(conjureChatHistory.TURN_ENTRY_PREFIX)) {
+      const id1 = message.id;
+      turn_id = id1.slice(tmp(10702).TURN_ENTRY_PREFIX.length);
+    }
+  }
+  return turn_id;
+};
 export const findTurnSegment = function findTurnSegment(arr3, activeTurnId) {
   if (null == activeTurnId) {
     return -1;
@@ -171,14 +166,14 @@ export const findTurnSegment = function findTurnSegment(arr3, activeTurnId) {
     return -1;
   }
 };
-export const resolveTurnIndex = function resolveTurnIndex(arr3, activeTurnId) {
+export const resolveTurnIndex = function resolveTurnIndex(value, activeTurnId) {
   let num = -1;
   if (null != activeTurnId) {
-    let diff = arr3.length - 1;
+    let diff = value.length - 1;
     num = -1;
     if (0 <= diff) {
       while (true) {
-        let tmp3 = arr3[diff];
+        let tmp3 = value[diff];
         let tmp4 = tmp3.turn_id === activeTurnId;
         if (!tmp4) {
           let _HermesInternal = HermesInternal;
@@ -200,10 +195,10 @@ export const resolveTurnIndex = function resolveTurnIndex(arr3, activeTurnId) {
   if (-1 !== num) {
     return num;
   } else {
-    let diff1 = arr3.length - 1;
+    let diff1 = value.length - 1;
     if (0 <= diff1) {
       while (true) {
-        let tmp8 = arr3[diff1];
+        let tmp8 = value[diff1];
         if ("assistant" === tmp8.role) {
           let hasTerminalStepResult = true === tmp8.finished || true === tmp8.continued || "" !== tmp8.content || null != tmp8.proposal || null != tmp8.clarification || null != tmp8.intake;
           if (!hasTerminalStepResult) {

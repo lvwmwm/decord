@@ -1,44 +1,114 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15747
+// Function ID: 15748
 // Name: providers
-// Dependencies: [5, 6017, 5895, 1087, 2026, 1098, 11330, 11335, 6019, 9169, 584, 1123, 9507, 7151, 2]
+// Dependencies: [5, 6500, 6378, 1087, 2026, 1098, 7274, 9264, 11475, 11478, 6502, 584, 1123, 9609, 2]
 
-// Module 15524 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11330 */;
+// Module 15747 (providers)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7274 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11475 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
-import Constants_mod from "Constants" /* 5895 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
+import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Constants_mod3 from "Constants" /* 2026 */;
 import Constants_mod4 from "Constants" /* 1098 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, account, c4, c6, c7, closure_4;
+let _require, closure_3;
 
 let AM_HARMONY_PRD_APPLICATION_ID;
 let AM_HARMONY_STG_APPLICATION_ID;
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_SCOPE_CONFIG;
-let c9;
+let hasOwnProperty;
 let items1;
 let items2;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let value = function _refreshProviderAccessToken() {
+  const obj = _asyncToGenerator(async (access_token, arg1) => {
+    let closure_1 = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (async function(arg0, value) {
+      let obj5;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              closure_2 = tmp;
+              access_token = undefined;
+              c4 = 1;
+              c5 = 1;
+              const obj4 = { value: obj5.refreshAccessToken(access_token, closure_1), done: false };
+              obj5 = ConnectedAccountsActionCreatorsDefault;
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            access_token = value;
+            if (null == access_token) {
+              const self = this;
+              const self2 = this;
+              const obj7 = { errorCode: closure_131_8.OAUTH2_ERROR };
+              const tmp12 = new closure_131_1(closure_131_2[7])(obj7, "Refreshing access token did not return a new access token");
+              throw tmp12;
+            } else {
+              value = { access_token };
+              c5 = 3;
+              return { value, done: true };
+            }
+          }
+        } catch (tmp18) {
+          c5 = 3;
+          throw tmp18;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;
-({ AnalyticsLocations: metroRequire, ComponentActions: metroImportDefault, PlatformTypes: metroImportAll } = Constants);
+({ AnalyticsLocations: hasOwnProperty, ComponentActions: metroRequire, PlatformTypes: metroImportDefault } = Constants);
 Constants = Constants_mod2;
 ({ AM_HARMONY_PRD_APPLICATION_ID, AM_HARMONY_STG_APPLICATION_ID } = Constants);
 Constants = Constants_mod2;
-({ RPCCommands, RPCErrors: c9 } = Constants);
+({ RPCCommands, RPCErrors: metroImportAll } = Constants);
 const items = [AM_HARMONY_PRD_APPLICATION_ID, AM_HARMONY_STG_APPLICATION_ID];
 const set = new Set(items);
-let obj = { [RPCCommands.GET_PROVIDER_ACCESS_TOKEN]: obj2 };
+value = { [RPCCommands.GET_PROVIDER_ACCESS_TOKEN]: obj2 };
 obj2 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items1 },
   validation(string) {
@@ -54,6 +124,9 @@ obj2 = {
     let args;
     let require;
     let socket;
+    function refreshProviderAccessToken() {
+      return closure_1_10(...arguments);
+    }
     ({ signal: require, socket, args } = arg0);
     const provider = args.provider;
     const connection_redirect = args.connection_redirect;
@@ -63,185 +136,100 @@ obj2 = {
     let obj2 = require("RPCHelpers");
     const tmp4 = provider;
     const validateApplicationResult = obj2.validateApplication(socket.application);
-    let obj3 = provider(connection_redirect[8]);
-    const value = obj3.get(provider);
+    let obj3 = provider(connection_redirect[10]);
+    value = obj3.get(provider);
     let c3 = value;
     if (null == value) {
-      let obj4 = { errorCode: constants2.INVALID_PROVIDER };
       const _HermesInternal = HermesInternal;
       const self7 = this;
       const self8 = this;
-      const tmp4Result = tmp4(tmp[9]);
+      const obj4 = { errorCode: constants.INVALID_PROVIDER };
+      const tmp4Result = tmp4(tmp[7]);
       const tmp4Result1 = new tmp4Result(obj4, "Platform not found for provider \"" + provider + "\"");
       throw tmp4Result1;
-    } else if (provider !== constants.AMAZON_MUSIC) {
-      let obj5 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      let tmp14 = constants2;
+    } else if (provider !== constants2.AMAZON_MUSIC) {
       const self5 = this;
-      let str2 = "Command not available for this application";
+      const str2 = "Command not available for this application";
       const self6 = this;
-      let tmp15 = obj5;
-      const tmp16 = new tmp4(tmp[9])(obj5, "Command not available for this application");
+      const obj5 = { errorCode: constants.UNAUTHORIZED_FOR_APPLICATION };
+      const tmp16 = new tmp4(tmp[7])(obj5, "Command not available for this application");
       throw tmp16;
     } else if (set.has(validateApplicationResult)) {
-      let tmp10 = globalThis;
-      let closure_0 = _asyncToGenerator(async function(arg0, value) {
-        let obj4;
-        let tmp;
-        closure_0 = arg0;
-        let closure_1 = value;
-        if (c7 === 2) {
-          c7 = 3;
-          const str2 = "Generator functions may not be called on executing generators";
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
+      let promise;
+      const account = ConnectedAccountsStore.getAccount(null, provider);
+      if (null != account) {
+        promise = refreshProviderAccessToken(value.type, account.id);
+      } else {
+        const self3 = this;
+        const self4 = this;
+        promise = new Promise((arg0, arg1) => {
+          let closure_0;
+          const require = arg0;
+          let closure_1 = arg1;
+          function handleConnectionsUpdate(accounts) {
+            let type;
+            if (null != c3) {
+              accounts = accounts.accounts;
+              if (accounts == null) {
+                accounts = [];
+              }
+              const found = accounts.find((type) => type.type === type.type);
+              if (null != found) {
+                const obj = { access_token: found.access_token };
+                closure_0(obj);
+                const removed = require.removeEventListener("abort", handleSocketDisconnected);
+                const obj2 = DispatcherDefault;
+                obj2.unsubscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
+                const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+                ComponentDispatch.unsubscribe(metroRequire.CONNECTIONS_CALLBACK_ERROR, handleConnectionsCallbackError);
+              }
+            }
+          }
+          function handleConnectionsCallbackError() {
+            const obj = { errorCode: metroImportAll.OAUTH2_ERROR };
+            const tmp = RPCErrorDefault;
+            const tmp2 = new tmp(obj, "OAuth2 setup for \"" + provider + "\" failed");
+            closure_1(tmp2);
+            const removed = require.removeEventListener("abort", handleSocketDisconnected);
+            const obj2 = DispatcherDefault;
+            obj2.unsubscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
+            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+            ComponentDispatch.unsubscribe(metroRequire.CONNECTIONS_CALLBACK_ERROR, handleConnectionsCallbackError);
+          }
+          function handleSocketDisconnected() {
+            const obj = { errorCode: metroImportAll.OAUTH2_ERROR };
+            const tmp = RPCErrorDefault;
+            const tmp2 = new tmp(obj, "OAuth2 setup for \"" + provider + "\" was abandoned");
+            closure_1(tmp2);
+            const removed = require.removeEventListener("abort", handleSocketDisconnected);
+            const obj2 = DispatcherDefault;
+            obj2.unsubscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
+            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+            ComponentDispatch.unsubscribe(metroRequire.CONNECTIONS_CALLBACK_ERROR, handleConnectionsCallbackError);
+          }
+          let obj = require;
+          if (require.aborted) {
+            const result = handleSocketDisconnected();
           } else {
-            return { value: "IconComponent", done: null };
+            let tmp = provider;
+            let tmp2 = connection_redirect;
+            let obj2 = provider(connection_redirect[11]);
+            const subscription = obj2.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
+            let ComponentDispatch = require("ComponentDispatchUtils").ComponentDispatch;
+            const subscription1 = ComponentDispatch.subscribe(constants2.CONNECTIONS_CALLBACK_ERROR, handleConnectionsCallbackError);
+            const listener = obj.addEventListener("abort", handleSocketDisconnected, { once: true });
+            const obj3 = { platformType: handleConnectionsCallbackError.type, location: constants.ACTIVITY_RPC, successRedirect: handleConnectionsUpdate };
+            provider(connection_redirect[13])(obj3);
           }
-        } else {
-          let c5;
-          try {
-            let access_token;
-            let self;
-            c7 = 2;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                access_token = undefined;
-                account = account.getAccount(null, closure_1);
-                if (null == account) {
-                  function handleConnectionsUpdate(accounts) {
-                    let type;
-                    if (null != closure_2_3) {
-                      accounts = accounts.accounts;
-                      if (accounts == null) {
-                        accounts = [];
-                      }
-                      const found = accounts.find((type) => type.type === type.type);
-                      if (null != found) {
-                        const obj = { access_token: found.access_token };
-                        closure_1_0(obj);
-                        const removed = closure_2_0.removeEventListener("abort", closure_1_5);
-                        const obj2 = closure_1(self[10]);
-                        obj2.unsubscribe("USER_CONNECTIONS_UPDATE", closure_1_3);
-                        const ComponentDispatch = closure_0(self[11]).ComponentDispatch;
-                        ComponentDispatch.unsubscribe(constants.CONNECTIONS_CALLBACK_ERROR, closure_1_4);
-                      }
-                    }
-                  }
-                  function handleConnectionsCallbackError() {
-                    const obj = { errorCode: OAUTH2_ERROR.OAUTH2_ERROR };
-                    const tmp = closure_1(self[9]);
-                    const tmp2 = new tmp(obj, "OAuth2 setup for \"" + closure_2_1 + "\" failed");
-                    closure_1_1(tmp2);
-                    const removed = closure_2_0.removeEventListener("abort", closure_1_5);
-                    const obj2 = closure_1(self[10]);
-                    obj2.unsubscribe("USER_CONNECTIONS_UPDATE", closure_1_3);
-                    const ComponentDispatch = closure_0(self[11]).ComponentDispatch;
-                    ComponentDispatch.unsubscribe(constants.CONNECTIONS_CALLBACK_ERROR, closure_1_4);
-                  }
-                  function handleSocketDisconnected() {
-                    const obj = { errorCode: OAUTH2_ERROR.OAUTH2_ERROR };
-                    const tmp = closure_1(self[9]);
-                    const tmp2 = new tmp(obj, "OAuth2 setup for \"" + closure_2_1 + "\" was abandoned");
-                    closure_1_1(tmp2);
-                    const removed = closure_2_0.removeEventListener("abort", closure_1_5);
-                    const obj2 = closure_1(self[10]);
-                    obj2.unsubscribe("USER_CONNECTIONS_UPDATE", closure_1_3);
-                    const ComponentDispatch = closure_0(self[11]).ComponentDispatch;
-                    ComponentDispatch.unsubscribe(constants.CONNECTIONS_CALLBACK_ERROR, closure_1_4);
-                  }
-                  self = closure_0.aborted;
-                  const obj6 = closure_0;
-                  if (self) {
-                    const result = handleSocketDisconnected();
-                    c7 = 3;
-                    return { value: "IconComponent", done: null };
-                  } else {
-                    const obj7 = provider(connection_redirect[10]);
-                    const subscription = obj7.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
-                    let ComponentDispatch = closure_0(connection_redirect[11]).ComponentDispatch;
-                    const subscription1 = ComponentDispatch.subscribe(constants2.CONNECTIONS_CALLBACK_ERROR, handleConnectionsCallbackError);
-                    const listener = obj6.addEventListener("abort", handleSocketDisconnected, { once: true });
-                    const obj5 = { platformType: tmp.type, location: constants.ACTIVITY_RPC, successRedirect: self };
-                    self = provider(connection_redirect[12])(obj5);
-                  }
-                } else {
-                  c5 = 1;
-                  c6 = 2;
-                  c7 = 1;
-                  const obj8 = { value: obj4.refreshAccessToken(tmp.type, account.id), done: false };
-                  obj4 = provider(connection_redirect[13]);
-                  return obj8;
-                }
-              }
-            } else if (1 === tmp4) {
-              self = closure_4;
-              c5 = 0;
-              closure_1(closure_4);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              access_token = value;
-              if (null == access_token) {
-                const obj10 = { errorCode: OAUTH2_ERROR.OAUTH2_ERROR };
-                self = this;
-                const self2 = this;
-                const str = "Refreshing access token did not return a new access token";
-                const tmp15 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-                throw tmp15;
-              } else {
-                self = closure_0;
-                let obj = { access_token };
-                const tmp9 = closure_0(obj);
-                c5 = 0;
-              }
-            }
-            c7 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp38) {
-            closure_4 = tmp38;
-            if (0 === c5) {
-              c7 = 3;
-              throw tmp38;
-            } else {
-              c6 = 1;
-            }
-          }
-        }
-      });
-      const self3 = this;
-      const self4 = this;
-      const promise = new Promise(function() {
-        return closure_0(...arguments);
-      });
-      let tmp13 = promise;
+        });
+      }
       return promise;
     } else {
-      let obj6 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      let tmp6 = constants2;
-      let self = this;
-      let str = "Command not available for this application";
-      let self2 = this;
-      let tmp8 = new tmp4(tmp[9])(obj6, "Command not available for this application");
-      let tmp9 = tmp8;
+      const self = this;
+      const str = "Command not available for this application";
+      const self2 = this;
+      const obj6 = { errorCode: constants.UNAUTHORIZED_FOR_APPLICATION };
+      const tmp8 = new tmp4(tmp[7])(obj6, "Command not available for this application");
       throw tmp8;
     }
   }
@@ -259,12 +247,12 @@ let obj3 = {
     return keys(obj2);
   },
   handler() {
-    return closure_3(...arguments);
+    return closure_11(...arguments);
   }
 };
 items2 = [RPC_AUTHENTICATED_SCOPE];
 const MAYBE_GET_PROVIDER_ACCESS_TOKEN = RPCCommands.MAYBE_GET_PROVIDER_ACCESS_TOKEN;
-let closure_3 = _asyncToGenerator(async function(arg0, value) {
+let closure_11 = _asyncToGenerator(async function(arg0, value) {
   let closure_0;
   let obj6;
   _require = arg0;
@@ -318,46 +306,46 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          const obj14 = closure_130_0(closure_130_2[7]);
+          const obj14 = closure_130_0(closure_130_2[9]);
           const result = obj14.validatePostMessageTransport(socket.transport);
-          const obj15 = closure_130_0(closure_130_2[7]);
+          const obj15 = closure_130_0(closure_130_2[9]);
           closure_2 = obj15.validateApplication(socket.application);
-          const obj16 = closure_130_1(closure_130_2[8]);
+          const obj16 = closure_130_1(closure_130_2[10]);
           type = obj16.get(provider);
           if (null == type) {
-            const obj5 = { errorCode: closure_130_9.INVALID_PROVIDER };
+            const obj5 = { errorCode: closure_130_8.INVALID_PROVIDER };
             const _HermesInternal = HermesInternal;
             const self9 = this;
             const self10 = this;
-            const tmp50 = closure_130_1(closure_130_2[9]);
+            const tmp50 = closure_130_1(closure_130_2[7]);
             const tmp502 = new tmp50(obj5, "Platform not found for provider \"" + provider + "\"");
             throw tmp502;
-          } else if (provider !== closure_130_8.AMAZON_MUSIC) {
-            const obj7 = { errorCode: closure_130_9.UNAUTHORIZED_FOR_APPLICATION };
+          } else if (provider !== closure_130_7.AMAZON_MUSIC) {
+            const obj7 = { errorCode: closure_130_8.UNAUTHORIZED_FOR_APPLICATION };
             const self7 = this;
             const self8 = this;
-            const tmp44 = new closure_130_1(closure_130_2[9])(obj7, "Command not available for this application");
+            const tmp44 = new closure_130_1(closure_130_2[7])(obj7, "Command not available for this application");
             throw tmp44;
-          } else if (closure_130_10.has(closure_2)) {
-            id = closure_130_5.getAccount(null, provider);
+          } else if (closure_130_9.has(closure_2)) {
+            id = closure_130_4.getAccount(null, provider);
             if (null == id) {
-              const obj8 = { errorCode: closure_130_9.NO_CONNECTION_FOUND };
+              const obj8 = { errorCode: closure_130_8.NO_CONNECTION_FOUND };
               const self5 = this;
               const self6 = this;
-              const tmp37 = new closure_130_1(closure_130_2[9])(obj8, "No connection found");
+              const tmp37 = new closure_130_1(closure_130_2[7])(obj8, "No connection found");
               throw tmp37;
             } else {
               c3 = 2;
               c4 = 1;
               const obj9 = { value: obj6.refreshAccessToken(type.type, id.id), done: false };
-              obj6 = closure_130_1(closure_130_2[13]);
+              obj6 = closure_130_1(closure_130_2[6]);
               return obj9;
             }
           } else {
-            const obj10 = { errorCode: closure_130_9.UNAUTHORIZED_FOR_APPLICATION };
+            const obj10 = { errorCode: closure_130_8.UNAUTHORIZED_FOR_APPLICATION };
             const self3 = this;
             const self4 = this;
-            const tmp19 = new closure_130_1(closure_130_2[9])(obj10, "Command not available for this application");
+            const tmp19 = new closure_130_1(closure_130_2[7])(obj10, "Command not available for this application");
             throw tmp19;
           }
         }
@@ -371,15 +359,15 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
       } else {
         access_token = value;
         if (null == access_token) {
-          const obj12 = { errorCode: closure_130_9.OAUTH2_ERROR };
+          const obj12 = { errorCode: closure_130_8.OAUTH2_ERROR };
           const self = this;
           const self2 = this;
-          const tmp12 = new closure_130_1(closure_130_2[9])(obj12, "Refreshing access token did not return a new access token");
+          const tmp12 = new closure_130_1(closure_130_2[7])(obj12, "Refreshing access token did not return a new access token");
           throw tmp12;
         } else {
-          const obj = { access_token };
+          value = { access_token };
           c4 = 3;
-          const obj13 = { value: obj, done: true };
+          const obj13 = { value, done: true };
           return obj13;
         }
       }
@@ -389,7 +377,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
     }
   }
 });
-obj[MAYBE_GET_PROVIDER_ACCESS_TOKEN] = obj3;
+value[MAYBE_GET_PROVIDER_ACCESS_TOKEN] = obj3;
 let result = size.fileFinishedImporting("modules/rpc/server/commands/providers.tsx");
 
-export default obj;
+export default value;

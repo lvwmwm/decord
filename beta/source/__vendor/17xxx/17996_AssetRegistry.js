@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 292, height: 182, scales: [2, 3], hash: "f94bdada98ce42ab7be865282d2b8eba", name: "webhook_empty_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "e831387e9387034c87c9b5bc784cf6eb", name: "partner_icon", type: "png" });

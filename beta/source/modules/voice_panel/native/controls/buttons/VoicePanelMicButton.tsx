@@ -1,35 +1,35 @@
-// Module ID: 18313
-// Function ID: 18314
+// Module ID: 18614
+// Function ID: 18615
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5210, 2121, 502, 2068, 2014, 4845, 1392, 5212, 21, 3, 5191, 558, 576, 7333, 11490, 504, 11523, 10679, 4945, 18184, 5156, 11427, 6612, 18314, 18315, 1128, 11492, 5187, 9076, 11491, 2]
+// Dependencies: [32, 19, 5715, 4876, 502, 4823, 2014, 4903, 1392, 5630, 21, 3, 4971, 558, 576, 7453, 11643, 504, 11676, 10899, 5052, 18490, 5212, 11580, 5297, 18615, 18616, 1128, 11645, 5234, 9171, 11644, 2]
 // Exports: PTTButton
 
-// Module 18313 (VoicePanelMicButton)
+// Module 18614 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
-import useMuteStates from "useMuteStates" /* 7333 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9076 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11427 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11490 */;
-import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 11491 */;
-import useDeafStates from "useDeafStates" /* 11523 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 18314 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
+import useMuteStates from "useMuteStates" /* 7453 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9171 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10899 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11580 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11643 */;
+import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 11644 */;
+import useDeafStates from "useDeafStates" /* 11676 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 18615 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5210 */;
-import ImpersonateStore from "ImpersonateStore" /* 2121 */;
+import GameConsoleStore from "GameConsoleStore" /* 5715 */;
+import ImpersonateStore from "ImpersonateStore" /* 4876 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(18315);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(18616);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
@@ -336,10 +336,10 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MicButton(props)
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(9076).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9171).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(11491).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(11644).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

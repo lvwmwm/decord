@@ -1,15 +1,15 @@
-// Module ID: 12616
-// Function ID: 12617
+// Module ID: 12834
+// Function ID: 12835
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 7803, 7779, 558, 576, 504, 11, 7778, 7780, 12617, 2]
+// Dependencies: [19, 7922, 7898, 558, 576, 504, 11, 7897, 7899, 12835, 2]
 
-// Module 12616 (useSafetyHubClassifications)
+// Module 12834 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12617 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7898 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12835 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7803 */;
+import SafetyHubStore from "SafetyHubStore" /* 7922 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let tmp;
 const get_initialized = tmp(504);
 const ViolationType = SafetyHubConstants.ViolationType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubClassifications() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubClassifications() {
   let classifications;
   let tmp4;
   let tmp5;
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
   }
   const tmpResult7 = tmp(504);
   const stateFromStores3 = tmpResult7.useStateFromStores(tmp16, tmp17);
-  const tmpResult8 = tmp(7778);
+  const tmpResult8 = tmp(7897);
   if (tmpResult8.isGuildClassification(stateFromStores)) {
     let GUILD_MEMBER;
     const guild_metadata = stateFromStores.guild_metadata;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
         return SafetyHubStore.getIsAppealEligible();
       }
     }
-    if (undefined === tmp(7780).MemberType.OWNER) {
+    if (undefined === tmp(7899).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -267,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyH
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(7780).MemberType.OWNER) {
+    if (member_type === tmp(7899).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;

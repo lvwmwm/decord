@@ -1,18 +1,18 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 13198
+// Function ID: 13199
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [109, 19, 21, 558, 576, 12952, 12959, 5400, 1128, 12961, 1202, 7988, 10023, 5148, 9873, 7840, 9543, 587, 9662, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13192, 13199, 5909, 1128, 13201, 1202, 8108, 10120, 5689, 9971, 7959, 9644, 587, 9761, 2]
 
-// Module 12958 (GuildDirectoryMoreMenu)
+// Module 13198 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import ReportModals from "ReportModals" /* 7988 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12952 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12959 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12961 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
+import ReportModals from "ReportModals" /* 8108 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 13192 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13199 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13201 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -148,7 +148,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
                     return <IconButton ref={ref} size="sm" variant="secondary" accessibilityLabel={intl.string(entry(dependencyMap[8]).t.PdRCRg)} icon={<MoreHorizontalIcon size="sm" color={nativeDefault.colors.WHITE} />} />;
                   }
                 }
-                const tmp26 = jsx(tmp(9662).ContextMenu, { items: arr, children: tmp24 });
+                const tmp26 = jsx(tmp(9761).ContextMenu, { items: arr, children: tmp24 });
                 cResult[23] = arr;
                 cResult[24] = tmp26;
                 tmp25 = tmp26;
@@ -230,7 +230,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp11[0] = tmp8;
-      tmp11[1] = tmp(10023).PencilIcon;
+      tmp11[1] = tmp(10120).PencilIcon;
       tmp11[2] = tmp5;
       cResult[14] = tmp5;
       cResult[15] = tmp11;
@@ -306,7 +306,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp16[0] = tmp13;
-      tmp16[1] = tmp(5148).TrashIcon;
+      tmp16[1] = tmp(5689).TrashIcon;
       tmp16[3] = tmp6;
       cResult[17] = tmp6;
       cResult[18] = tmp16;
@@ -382,7 +382,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
         }
       }
       tmp21[0] = tmp18;
-      tmp21[1] = tmp(9873).FlagIcon;
+      tmp21[1] = tmp(9971).FlagIcon;
       tmp21[3] = tmp7;
       cResult[20] = tmp7;
       cResult[21] = tmp21;
@@ -423,7 +423,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   if (tmp2.canEdit) {
     let obj = {
       label: intl.string(entry(1128).t.XnuOvN),
-      IconComponent: entry(10023).PencilIcon,
+      IconComponent: entry(10120).PencilIcon,
       action: function handleEdit() {
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           const obj2 = { entry };
@@ -437,7 +437,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   if (canRemove) {
     let obj2 = {
       label: intl2.string(entry(1128).t.KUxYWH),
-      IconComponent: entry(5148).TrashIcon,
+      IconComponent: entry(5689).TrashIcon,
       variant: "destructive",
       action: function handleRemove() {
           let intl;
@@ -479,7 +479,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
     const push3 = items.push;
     const obj3 = {
       label: intl3.string(entry(1128).t.Aen9eh),
-      IconComponent: entry(9873).FlagIcon,
+      IconComponent: entry(9971).FlagIcon,
       variant: "destructive",
       action: function handleReport() {
           const obj = ReportModals;
@@ -491,7 +491,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   }
   let tmp9 = null;
   if (0 !== items.length) {
-    tmp9 = jsx(entry(9662).ContextMenu, {
+    tmp9 = jsx(entry(9761).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

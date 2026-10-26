@@ -1,16 +1,16 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 6486
+// Function ID: 6487
 // Name: EmbedUtils
-// Dependencies: [1087, 6004, 11, 1405, 12, 4797, 5536, 2]
+// Dependencies: [1087, 6487, 11, 1405, 12, 2049, 6014, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6003 (EmbedUtils)
+// Module 6486 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5536 */;
-import EmbedConstants from "EmbedConstants" /* 6004 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6014 */;
+import EmbedConstants from "EmbedConstants" /* 6487 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,15 +19,15 @@ let map;
 let c3;
 let closure_4;
 let hasOwnProperty;
-function getEffectiveVideoProvider(name, url) {
+function getEffectiveVideoProvider(name, url1) {
   if ("YouTube" !== name) {
     if ("TikTok" !== name) {
-      if (null != url) {
+      if (null != url1) {
         try {
           const _URL = URL;
           const self = this;
           const self2 = this;
-          const uRL = new URL(url);
+          const uRL = new URL(url1);
           const hostname = uRL.hostname;
           if ("www.youtube.com" === hostname) {
             return "YouTube";
@@ -64,6 +64,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   let content_type2;
   let content_type3;
   let content_type4;
+  let content_type5;
   let flags;
   let flags2;
   let flags3;
@@ -101,7 +102,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const tmpResult = _modDef4797;
+    const tmpResult = _modDef2049;
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -118,7 +119,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
           const thumbnail3 = footer.thumbnail;
           ({ flags, content_type } = thumbnail3);
           size = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag4(num, constants.IS_ANIMATED), flags, contentType: content_type };
-          ({ url: obj14.url, proxy_url: obj14.proxyURL, width: obj14.width, height: obj14.height, placeholder: obj14.placeholder, placeholder_version: obj14.placeholderVersion, description: obj14.description } = thumbnail3);
+          ({ url: obj15.url, proxy_url: obj15.proxyURL, width: obj15.width, height: obj15.height, placeholder: obj15.placeholder, placeholder_version: obj15.placeholderVersion, description: obj15.description } = thumbnail3);
           num = flags;
           hasFlag4 = FlagUtils.hasFlag;
           FlagUtils;
@@ -239,6 +240,12 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
       obj.video = size4;
     }
   }
+  const tmp37 = null != footer.audio && null != footer.audio.proxy_url;
+  if (tmp37) {
+    const obj9 = { url: footer.audio.url, proxyURL: footer.audio.proxy_url, contentType: content_type5, description: footer.audio.description };
+    content_type5 = footer.audio.content_type;
+    obj.audio = obj9;
+  }
   if (set.has(obj.type)) {
     let fields = footer.fields;
     if (fields == null) {
@@ -249,13 +256,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const obj13 = InteractionComponentUtils;
-    const transformComponentsResult = obj13.transformComponents(footer.components);
-    let tmp38;
+    const obj14 = InteractionComponentUtils;
+    const transformComponentsResult = obj14.transformComponents(footer.components);
+    let tmp39;
     if (transformComponentsResult.length > 0) {
-      tmp38 = transformComponentsResult;
+      tmp39 = transformComponentsResult;
     }
-    obj.components = tmp38;
+    obj.components = tmp39;
   }
   return obj;
 };

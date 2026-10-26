@@ -1,17 +1,17 @@
-// Module ID: 17795
-// Function ID: 17796
+// Module ID: 18101
+// Function ID: 18102
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 6223, 21, 5191, 587, 558, 576, 11896, 5187, 2]
+// Dependencies: [19, 6705, 21, 4971, 587, 558, 576, 12064, 5234, 2]
 
-// Module 17795 (guild_channels/ChannelTitle)
+// Module 18101 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import ChannelListLayout from "ChannelListLayout" /* 11896 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import ReadStateConstants from "ReadStateConstants" /* 6705 */;
+import ChannelListLayout from "ChannelListLayout" /* 12064 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

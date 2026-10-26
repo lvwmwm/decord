@@ -1,37 +1,41 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11391
+// Function ID: 11392
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 5400, 11253, 2002, 2]
+// Dependencies: [5, 19, 21, 5909, 11392, 2002, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 11252 (openIgnoreThermalStateAlert)
+// Module 11391 (openIgnoreThermalStateAlert)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let IgnoreThermalStateAlert;
+let importDefault;
 
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/activities/native/openIgnoreThermalStateAlert.tsx");
 
 export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(arg0) {
+  let closure_1;
+  let paths;
   let closure_0 = arg0;
-  const obj = actions_AlertActionCreatorsDefault;
-  const obj2 = {
+  const tmp = actions_AlertActionCreatorsDefault;
+  const obj = {
     importer() {
-      let onConfirm;
-      const promise = asyncRequire(11253, dependencyMap.paths);
-      return promise.then((IgnoreThermalStateAlert) => {
-        IgnoreThermalStateAlert = IgnoreThermalStateAlert.IgnoreThermalStateAlert;
-        return (arg0) => {
-          const merged = Object.assign(arg0);
-          return <IgnoreThermalStateAlert onConfirm={onConfirm} />;
-        };
-      });
+      return closure_1(...arguments);
     },
     isDismissable: false
   };
-  obj.openLazy(obj2);
+  const openLazy = tmp.openLazy;
+  importDefault = _asyncToGenerator(async () => {
+    let c1;
+    await tmp(c2[5])(c2[4], c2.paths);
+    const IgnoreThermalStateAlert = arg1.IgnoreThermalStateAlert;
+    return (arg0) => {
+      const merged = Object.assign(arg0);
+      return <closure_1_0 onConfirm={onConfirm} />;
+    };
+  });
+  openLazy(obj);
 };

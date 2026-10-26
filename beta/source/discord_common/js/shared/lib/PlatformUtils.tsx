@@ -1,9 +1,9 @@
-// Module ID: 5394
-// Function ID: 5395
+// Module ID: 5902
+// Function ID: 5903
 // Name: shared/PlatformUtils
 // Dependencies: [1367, 2]
 
-// Module 5394 (shared/PlatformUtils)
+// Module 5902 (shared/PlatformUtils)
 import module_1367_mod from "module_1367" /* 1367 */;
 import size from "module_2" /* 2 */;
 

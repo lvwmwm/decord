@@ -1,13 +1,13 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 13497
+// Function ID: 13498
 // Name: useMultiPerkStatusValues
-// Dependencies: [5104, 558, 576, 13186, 1128, 2621, 2]
+// Dependencies: [5182, 558, 576, 13424, 1128, 2568, 2]
 
-// Module 13259 (useMultiPerkStatusValues)
+// Module 13497 (useMultiPerkStatusValues)
 import react from "react" /* 576 */;
-import _modDef2621 from "module_2621" /* 2621 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13186 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5182 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13424 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerk
       let tmp15;
       const _Symbol3 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { type: "active", statusText: intl.string(_modDef2621.FFLkmx) };
+        const obj4 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
         intl = intl2.intl;
         cResult[8] = obj4;
         tmp15 = obj4;
@@ -374,7 +374,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerk
       tmp4 = { type: "expiring", expiringAt: reduced };
       const obj2 = { type: "expiring", expiringAt: reduced };
     } else if (someResult) {
-      const obj3 = { type: "active", statusText: intl.string(_modDef2621.FFLkmx) };
+      const obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
       intl = intl2.intl;
       tmp4 = obj3;
     }

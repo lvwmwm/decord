@@ -1,17 +1,17 @@
-// Module ID: 6396
-// Function ID: 6397
+// Module ID: 6843
+// Function ID: 6844
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2072, 6397, 5035, 1087, 5037, 584, 1297, 6398, 5399, 1128, 6145, 2]
+// Dependencies: [5, 4827, 6844, 5003, 1087, 5005, 584, 1297, 6845, 5908, 1128, 6634, 2]
 
-// Module 6396 (GuildJoinRequestActionCreators)
+// Module 6843 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6398 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5003 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6397 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6844 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,6 @@ obj = function _removeGuildJoinRequest() {
     let c4 = 0;
     return (async (arg0, value) => {
       let obj9;
-      let tmp;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -460,6 +459,7 @@ obj = function _resetGuildJoinRequest() {
     let c4 = 0;
     return (async (arg0, value) => {
       let obj9;
+      let tmp;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");

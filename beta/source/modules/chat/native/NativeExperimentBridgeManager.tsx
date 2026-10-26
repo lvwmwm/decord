@@ -1,24 +1,25 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19373
+// Function ID: 19374
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2132, 502, 1384, 19039, 6011, 11113, 19040, 1267, 19041, 1297, 7085, 2]
+// Dependencies: [17, 2068, 502, 8792, 1384, 19374, 6494, 7748, 19375, 1267, 19376, 1297, 7214, 2]
 
-// Module 19038 (NativeExperimentBridgeManager)
+// Module 19373 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6011 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
-import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19040 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19041 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6494 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7748 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19375 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19376 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 8792 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(19039);
+const YYTextReplacementExperiment = tmp(19374);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {
@@ -91,6 +92,8 @@ function updateAndroidExperiments() {
   }
 }
 const NativeModules = react_native.NativeModules;
+let MediaPlaybackExperiment = MediaPlaybackExperiment_mod;
+MediaPlaybackExperiment = MediaPlaybackExperiment.initializeMediaPlaybackExperiment();
 class NativeExperimentBridgeManager extends AutomaticLifecycleManager {
   constructor() {
     let tmp5;
@@ -111,6 +114,6 @@ class NativeExperimentBridgeManager extends AutomaticLifecycleManager {
   }
 }
 const nativeExperimentBridgeManager = new NativeExperimentBridgeManager();
-let result = size.fileFinishedImporting("modules/chat/native/NativeExperimentBridgeManager.tsx");
+let result1 = size.fileFinishedImporting("modules/chat/native/NativeExperimentBridgeManager.tsx");
 
 export default nativeExperimentBridgeManager;

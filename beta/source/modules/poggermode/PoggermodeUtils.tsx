@@ -1,12 +1,12 @@
-// Module ID: 14408
-// Function ID: 14409
+// Module ID: 14643
+// Function ID: 14644
 // Name: PoggermodeUtils
-// Dependencies: [7632, 586, 2]
+// Dependencies: [7752, 586, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 14408 (PoggermodeUtils)
+// Module 14643 (PoggermodeUtils)
 import shims from "shims" /* 586 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7632 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7752 */;
 import size from "module_2" /* 2 */;
 
 let LEVEL_3;

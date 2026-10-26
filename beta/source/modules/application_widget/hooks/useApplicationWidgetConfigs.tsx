@@ -1,12 +1,12 @@
-// Module ID: 11706
-// Function ID: 11707
+// Module ID: 11870
+// Function ID: 11871
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 11059, 558, 576, 2044, 504, 1388, 11058, 2]
+// Dependencies: [19, 10788, 558, 576, 4799, 504, 1388, 10787, 2]
 
-// Module 11706 (useApplicationWidgetConfigs)
+// Module 11870 (useApplicationWidgetConfigs)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11058 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11059 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10787 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10788 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

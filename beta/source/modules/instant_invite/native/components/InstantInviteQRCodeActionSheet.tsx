@@ -1,26 +1,26 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9100
+// Function ID: 9101
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 2090, 1392, 1087, 21, 5191, 587, 6436, 558, 576, 504, 1128, 584, 4903, 7117, 9006, 5187, 7175, 2]
+// Dependencies: [19, 17, 4845, 1392, 1087, 21, 4971, 587, 6883, 558, 576, 504, 1128, 584, 5662, 7248, 9101, 5234, 7298, 2]
 
-// Module 9005 (InstantInviteQRCodeActionSheet)
+// Module 9100 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import GuildIcon from "GuildIcon" /* 6436 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7117 */;
-import ActionSheet2 from "ActionSheet" /* 7175 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 9006 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import GuildIcon from "GuildIcon" /* 6883 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7248 */;
+import ActionSheet2 from "ActionSheet" /* 7298 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 9101 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -308,7 +308,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
               let tmp31 = null != tmp8;
               if (tmp31) {
                 const obj5 = { variant: "text-md/normal", children: tmp8.visible };
-                tmp31 = React4(tmp(5187).Text, obj5);
+                tmp31 = React4(tmp(5234).Text, obj5);
               }
               cResult[17] = tmp8;
               cResult[18] = tmp31;
@@ -400,14 +400,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     tmp9 = null;
     const obj = GuildStore;
     if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6436).GuildIconSizes.LARGE };
+      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6883).GuildIconSizes.LARGE };
       const tmp12 = GuildIconDefault;
       tmp9 = React4(tmp12, obj2);
     }
   }
-  closure_13(tmp5(4903).presentFriendRequestAcceptedToast);
-  const obj3 = { header: React4(tmp5(7117).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
-  const ActionSheet = tmp5(7175).ActionSheet;
+  closure_13(tmp5(5662).presentFriendRequestAcceptedToast);
+  const obj3 = { header: React4(tmp5(7248).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
+  const ActionSheet = tmp5(7298).ActionSheet;
   const obj5 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
   plainText = undefined;
   obj4 = { style: tmp.container, children: items1 };
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   let tmp14Result2 = null != tmp8;
   if (tmp14Result2) {
     const obj8 = { variant: "text-md/normal", children: tmp8.visible };
-    tmp14Result2 = tmp14(tmp5(5187).Text, obj8);
+    tmp14Result2 = tmp14(tmp5(5234).Text, obj8);
   }
   items1[1] = tmp14Result2;
   return React4(ActionSheet, obj3);

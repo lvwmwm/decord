@@ -1,10 +1,10 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8845
+// Function ID: 8846
 // Name: useLabFeature
-// Dependencies: [8747, 558, 576, 504, 2]
+// Dependencies: [8843, 558, 576, 504, 2]
 
-// Module 8749 (useLabFeature)
-import LabFeatureStore from "LabFeatureStore" /* 8747 */;
+// Module 8845 (useLabFeature)
+import LabFeatureStore from "LabFeatureStore" /* 8843 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5994
-// Function ID: 5995
+// Module ID: 6477
+// Function ID: 6478
 // Name: StripeActionCreators
 // Dependencies: [5, 1087, 1297, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 5994 (StripeActionCreators)
+// Module 6477 (StripeActionCreators)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

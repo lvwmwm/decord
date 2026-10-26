@@ -1,31 +1,94 @@
 // Module ID: 6967
 // Function ID: 6968
-// Dependencies: [6968, 6975, 6969, 6982, 6974, 6980, 6981, 6992, 6972, 6998, 6999]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21]
 
 // Module 6967
-import _mod6968 from "module_6968" /* 6968 */;
-import StackView from "StackView" /* 6969 */;
-import react from "react" /* 6972 */;
-import react_nativeAll from "react-native" /* 6974 */;
-import _mod6975 from "module_6975" /* 6975 */;
-import SlideFromRightIOSAll from "SlideFromRightIOS" /* 6980 */;
-import TransitionIOSSpecAll from "TransitionIOSSpec" /* 6981 */;
-import forHorizontalIOSAll from "forHorizontalIOS" /* 6982 */;
-import react2 from "react" /* 6992 */;
-import react3 from "react" /* 6998 */;
-import react4 from "react" /* 6999 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-const StackView_export = StackView.StackView;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let requireNativeComponent;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const createStackNavigator = _mod6968.createStackNavigator;
-export const createStackScreen = _mod6968.createStackScreen;
-export const Header = _mod6975.Header;
-export { StackView_export as StackView };
-export const CardStyleInterpolators = forHorizontalIOSAll;
-export const HeaderStyleInterpolators = react_nativeAll;
-export const TransitionPresets = SlideFromRightIOSAll;
-export const TransitionSpecs = TransitionIOSSpecAll;
-export const CardAnimationContext = react2.CardAnimationContext;
-export const GestureHandlerRefContext = react.GestureHandlerRefContext;
-export const useCardAnimation = react3.useCardAnimation;
-export const useGestureHandlerRef = react4.useGestureHandlerRef;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_0 = ["maskElement", "children"];
+({ View: metroRequire, StyleSheet: metroImportDefault, requireNativeComponent } = react_native);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let closure_11 = requireNativeComponent("RNCMaskedView");
+class MaskedView {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    _classCallCheck(this, MaskedView);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(MaskedView);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result._hasWarnedInvalidRenderMask = false;
+    return tmp3Result;
+  }
+}
+_inherits(MaskedView, react.Component);
+const entry = {
+  key: "render",
+  value: function render() {
+    let children;
+    let items;
+    let maskElement;
+    let tmp9;
+    const self = this;
+    const props = this.props;
+    ({ maskElement, children } = props);
+    const tmp = _objectWithoutProperties(props, closure_0);
+    if (react.isValidElement(maskElement)) {
+      const obj2 = { children: items };
+      const merged = Object.assign(tmp);
+      const obj3 = { pointerEvents: "none", style: metroImportDefault.absoluteFill, children: maskElement };
+      items = [metroImportAll(metroRequire, obj3), children];
+      tmp9 = React4(closure_11, obj2);
+    } else {
+      if (!self._hasWarnedInvalidRenderMask) {
+        const _console = console;
+        console.warn("MaskedView: Invalid `maskElement` prop was passed to MaskedView. Expected a React Element. No mask will render.");
+        self._hasWarnedInvalidRenderMask = true;
+      }
+      const obj = { children };
+      const merged1 = Object.assign(tmp);
+      tmp9 = metroImportAll(metroRequire, obj);
+    }
+    return tmp9;
+  }
+};
+let items = [entry];
+
+export default _createClass(MaskedView, items);

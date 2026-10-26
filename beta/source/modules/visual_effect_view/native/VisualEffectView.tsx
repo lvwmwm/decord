@@ -1,19 +1,19 @@
-// Module ID: 5465
-// Function ID: 5466
+// Module ID: 5586
+// Function ID: 5587
 // Name: VisualEffectView
-// Dependencies: [109, 19, 17, 5466, 1087, 21, 1384, 5467, 558, 576, 4913, 587, 5470, 2]
+// Dependencies: [109, 19, 17, 5587, 1087, 21, 1384, 5588, 558, 576, 5252, 587, 5591, 2]
 // Exports: isBlurDisabled, isBlurThemeLight, normalizeBlurTheme
 
-// Module 5465 (VisualEffectView)
+// Module 5586 (VisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import useToken from "useToken" /* 4913 */;
-import VEVOOStore from "VEVOOStore" /* 5466 */;
-import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5467 */;
-import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5470 */;
+import useToken from "useToken" /* 5252 */;
+import VEVOOStore from "VEVOOStore" /* 5587 */;
+import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5588 */;
+import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5591 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

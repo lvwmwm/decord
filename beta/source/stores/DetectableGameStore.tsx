@@ -1,12 +1,11 @@
-// Module ID: 2040
-// Function ID: 2041
+// Module ID: 2039
+// Function ID: 2040
 // Name: DetectableGameStore
-// Dependencies: [2024, 1087, 1375, 1104, 2041, 510, 1384, 2043, 504, 11, 1388, 2000, 1267, 2044, 584, 2]
+// Dependencies: [2024, 1087, 1375, 1104, 2040, 1384, 2042, 504, 11, 1388, 2000, 1267, 584, 2]
 
-// Module 2040 (DetectableGameStore)
+// Module 2039 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -14,14 +13,13 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2041 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2043 */;
-import UserSettings from "UserSettings" /* 2044 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2040 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2042 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, closure_18;
 
 function gameFromServer(id) {
   let aliases;
@@ -29,19 +27,19 @@ function gameFromServer(id) {
   let mapped;
   let third_party_skus;
   ({ executables, aliases, third_party_skus } = id);
-  obj = { id: id.id, name: id.name, executables: mapped, aliases, thirdPartySkus: third_party_skus };
+  const obj = { id: id.id, name: id.name, executables: mapped, aliases, thirdPartySkus: third_party_skus };
   mapped = undefined;
   if (executables != null) {
     mapped = executables.map(createExecutable);
   }
   if (null == mapped) {
-    mapped = closure_26;
+    mapped = closure_24;
   }
   if (null == aliases) {
-    aliases = closure_26;
+    aliases = closure_24;
   }
   if (null == third_party_skus) {
-    third_party_skus = closure_26;
+    third_party_skus = closure_24;
   }
   return obj;
 }
@@ -50,15 +48,15 @@ function convertGameRecordToGame(id) {
   let executables;
   let thirdPartySkus;
   ({ executables, aliases, thirdPartySkus } = id);
-  obj = { id: id.id, name: id.name, executables, aliases, thirdPartySkus };
+  const obj = { id: id.id, name: id.name, executables, aliases, thirdPartySkus };
   if (null == executables) {
-    executables = closure_26;
+    executables = closure_24;
   }
   if (null == aliases) {
-    aliases = closure_26;
+    aliases = closure_24;
   }
   if (null == thirdPartySkus) {
-    thirdPartySkus = closure_26;
+    thirdPartySkus = closure_24;
   }
   return obj;
 }
@@ -85,14 +83,14 @@ function addDetectableGame(id) {
   if (id instanceof GameDetectionTypes.DetectableGameRecord) {
     tmp = convertGameRecordToGame(id);
   }
-  const result = closure_8.set(id.id, tmp);
+  const result = closure_7.set(id.id, tmp);
   addGameIdToNameCache(tmp.id, toNameKey(tmp.name));
   const aliases = id.aliases;
   for (const item10026 of aliases) {
     let tmp7 = addGameIdToNameCache(tmp.id, toNameKey(item10026));
     continue;
   }
-  obj = PlatformUtils;
+  const obj = PlatformUtils;
   if (obj.isDesktop()) {
     const executables = id.executables;
     for (const item10044 of executables) {
@@ -104,27 +102,20 @@ function addDetectableGame(id) {
 const createExecutable = ApplicationRecord.createExecutable;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
-const GameStoreReportedGames = "GameStoreReportedGames";
 const DAY = DurationsDefault.Millis.DAY;
 let tmp2 = new CachedEntriesMapDefault();
-const metroImportAll = tmp2;
+const metroImportDefault = tmp2;
 const map = new Map();
 const map1 = new Map();
-let Storage = Storage2.Storage;
-let obj = Storage.get("GameStoreReportedGames");
-if (obj == null) {
-  const _Object = Object;
-  obj = Object.create(null);
-}
 let etag = "";
-let c13;
+let c11;
+let closure_12 = null;
+let c13 = false;
 let closure_14 = null;
 let c15 = false;
-let closure_16 = null;
-let c17 = false;
 etag = "";
 let blocklistExecutables = [];
-let closure_20 = [];
+const authStore4 = [];
 const map2 = new Map();
 const HOUR = DurationsDefault.Millis.HOUR;
 const set = new Set();
@@ -143,7 +134,7 @@ if (!PlatformUtils.isWindows()) {
   }
   str = str2;
 }
-let closure_26 = Object.freeze([]);
+let closure_24 = Object.freeze([]);
 const PersistedStore = get_initializedDefault.PersistedStore;
 class DetectableGameStore extends PersistedStore {
   initialize(detectableGamesEtag) {
@@ -159,7 +150,7 @@ class DetectableGameStore extends PersistedStore {
       }
       if (null != detectableGamesEtag.blocklistPatterns) {
         const blocklistPatterns = detectableGamesEtag.blocklistPatterns;
-        closure_20 = blocklistPatterns.map((item) => {
+        closure_18 = blocklistPatterns.map((item) => {
           const regExp = new RegExp(item, "i");
           return regExp;
         });
@@ -174,19 +165,19 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f88487 = (source) => source.source;
-    obj = PlatformUtils;
+    const f90210 = (source) => source.source;
+    const obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f88487) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f88487) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f90210) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f90210) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }
     return obj3;
   }
   getDetectableGame(id) {
-    const get = closure_8.get;
-    obj = SnowflakeUtilsDefault;
+    const get = closure_7.get;
+    const obj = SnowflakeUtilsDefault;
     return get(obj.cast(id));
   }
   searchGamesByName(name) {
@@ -267,7 +258,7 @@ class DetectableGameStore extends PersistedStore {
         } else {
           const str3 = nextResult.exePath;
           const parts1 = str3.split("/");
-          const found1 = parts1.filter(tmp15(tmp16[10]).isNotNullish);
+          const found1 = parts1.filter(tmp15(tmp16[9]).isNotNullish);
           const substr = found1.slice(-2);
           const gameByExecutable1 = self.getGameByExecutable(substr.join("/"));
           if (null != gameByExecutable1) {
@@ -348,24 +339,24 @@ class DetectableGameStore extends PersistedStore {
     return tmp;
   }
   canFetchDetectableGames() {
-    let tmp = true !== c13;
+    let tmp = true !== c11;
     if (tmp) {
-      let tmp4 = null == closure_14;
+      let tmp4 = null == closure_12;
       if (!tmp4) {
         const _Date = Date;
-        tmp4 = Date.now() >= closure_14 + DAY;
+        tmp4 = Date.now() >= closure_12 + DAY;
       }
       tmp = tmp4;
     }
     return tmp;
   }
   canFetchExecutableBlocklist() {
-    let tmp = !c17;
+    let tmp = !c15;
     if (tmp) {
-      let tmp4 = null == closure_16;
+      let tmp4 = null == closure_14;
       if (!tmp4) {
         const _Date = Date;
-        tmp4 = Date.now() >= closure_16 + DAY;
+        tmp4 = Date.now() >= closure_14 + DAY;
       }
       tmp = tmp4;
     }
@@ -402,7 +393,7 @@ class DetectableGameStore extends PersistedStore {
           self.maybeTrackBlock(exePath, "explicit_list", found);
           return true;
         } else {
-          const found1 = closure_20.find((test) => test.test(exePath.exePath));
+          const found1 = closure_18.find((test) => test.test(exePath.exePath));
           let flag = null != found1;
           if (flag) {
             str = "pattern_match";
@@ -425,11 +416,11 @@ class DetectableGameStore extends PersistedStore {
         if (null != found) {
           return { matchedExe: found, matchedPattern: null };
         } else {
-          const found1 = closure_20.find((test) => test.test(exePath.exePath));
+          const found1 = closure_18.find((test) => test.test(exePath.exePath));
           let tmp5 = null;
           if (null != found1) {
             tmp5 = { matchedExe: null, matchedPattern: found1.source };
-            obj = { matchedExe: null, matchedPattern: found1.source };
+            const obj = { matchedExe: null, matchedPattern: found1.source };
           }
           return tmp5;
         }
@@ -441,7 +432,7 @@ class DetectableGameStore extends PersistedStore {
     let id1;
     let name1;
     id = id.id;
-    obj = set;
+    const obj = set;
     if (!set.has(id)) {
       obj.add(id);
       const obj2 = { application_id: id, application_name: name, match_type: name, matched_game_id: id1, matched_game_name: name1 };
@@ -472,7 +463,7 @@ class DetectableGameStore extends PersistedStore {
   trackNameMatchFallback(name, detectableGame, exePath) {
     let tmp11;
     const formatted = name.toLowerCase();
-    obj = set1;
+    const obj = set1;
     if (!set1.has(formatted)) {
       obj.add(formatted);
       const obj2 = { matched_name: name, matched_game_id: detectableGame.id, exe_name: tmp11, had_exe_path: null != exePath && "" !== exePath };
@@ -502,7 +493,7 @@ class DetectableGameStore extends PersistedStore {
     const value = map2.get(str2);
     const timestamp = Date.now();
     let tmp3 = null == value;
-    obj = map2;
+    const obj = map2;
     if (!tmp3) {
       tmp3 = timestamp - value >= HOUR;
     }
@@ -519,40 +510,17 @@ class DetectableGameStore extends PersistedStore {
       track(GAME_BLOCKLIST_TRIGGERED, obj2);
     }
   }
-  shouldReport(name) {
-    const self = this;
-    if (this.shouldBlock(name)) {
-      return false;
-    } else {
-      let tmp2 = null != self.findGame(name);
-      const tmp3 = null != name.name && null != obj[name.name];
-      const ShowCurrentGame = UserSettings.ShowCurrentGame;
-      let setting = ShowCurrentGame.getSetting() && !c13;
-      if (setting) {
-        if (!tmp2) {
-          tmp2 = tmp3;
-        }
-        setting = !tmp2;
-      }
-      return setting;
-    }
-  }
-  markGameReported(arg0) {
-    obj[arg0] = true;
-    const Storage = Storage2.Storage;
-    const result = Storage.set(GameStoreReportedGames, obj);
-  }
 }
 const prototype = DetectableGameStore.prototype;
 Object.defineProperty(prototype, "games", {
   get: function games() {
-    return closure_8.values();
+    return closure_7.values();
   },
   set: undefined
 });
 Object.defineProperty(prototype, "fetching", {
   get: function fetching() {
-    return true === c13;
+    return true === c11;
   },
   set: undefined
 });
@@ -570,13 +538,13 @@ Object.defineProperty(prototype, "blocklistEtag", {
 });
 Object.defineProperty(prototype, "lastFetched", {
   get: function lastFetched() {
-    return closure_14;
+    return closure_12;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "hasAttemptedFetch", {
   get: function hasAttemptedFetch() {
-    return c15;
+    return c13;
   },
   set: undefined
 });
@@ -592,6 +560,7 @@ let items = [
   (arg0) => {
     let detectableGames;
     let mapped;
+    let obj;
     if (null != arg0) {
       const obj3 = { detectableGamesEtag: null, detectableGames: mapped };
       ({ detectableGamesEtag: obj2.detectableGamesEtag, detectableGames } = arg0);
@@ -603,15 +572,15 @@ let items = [
           let thirdPartySkus;
           const detectableGameRecord = new require("GameDetectionTypes").DetectableGameRecord(item);
           ({ executables, aliases, thirdPartySkus } = detectableGameRecord);
-          obj = { id: detectableGameRecord.id, name: detectableGameRecord.name, executables, aliases, thirdPartySkus };
+          const obj = { id: detectableGameRecord.id, name: detectableGameRecord.name, executables, aliases, thirdPartySkus };
           if (null == executables) {
-            executables = closure_1_26;
+            executables = closure_1_24;
           }
           if (null == aliases) {
-            aliases = closure_1_26;
+            aliases = closure_1_24;
           }
           if (null == thirdPartySkus) {
-            thirdPartySkus = closure_1_26;
+            thirdPartySkus = closure_1_24;
           }
           return obj;
         });
@@ -627,7 +596,7 @@ let items = [
   },
   (arg0) => {
     let tmp = arg0;
-    obj = PlatformUtils;
+    const obj = PlatformUtils;
     if (!obj.isDesktop()) {
       tmp = { detectableGamesEtag: "", detectableGames: [] };
       const obj2 = { detectableGamesEtag: "", detectableGames: [] };
@@ -637,7 +606,7 @@ let items = [
   () => ({ detectableGamesEtag: "", detectableGames: [] }),
   (blocklistEtag) => {
     let blocklistPatterns;
-    obj = { blocklistEtag: str, blocklistExecutables, blocklistPatterns };
+    const obj = { blocklistEtag: str, blocklistExecutables, blocklistPatterns };
     const merged = Object.assign(blocklistEtag);
     str = blocklistEtag.blocklistEtag;
     if (str == null) {
@@ -655,10 +624,10 @@ let items = [
   }
 ];
 DetectableGameStore.migrations = items;
-let obj2 = {
+let obj = {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(detectableApplications) {
     detectableApplications = detectableApplications.detectableApplications;
-    closure_8.clear();
+    closure_7.clear();
     map.clear();
     map1.clear();
     const tmp4 = detectableApplications[Symbol.iterator]();
@@ -668,18 +637,18 @@ let obj2 = {
     }
   },
   GAMES_DATABASE_FETCH: function handleApplicationsFetch() {
-    c13 = true;
+    c11 = true;
   },
   GAMES_DATABASE_FETCH_FAIL: function handleApplicationsFetchFail() {
-    c13 = false;
-    c15 = true;
+    c11 = false;
+    c13 = true;
   },
   GAMES_DATABASE_UPDATE: function handleDetectableGamesUpdated(arg0) {
     let games;
     ({ games, etag } = arg0);
     const tmp = null != etag && etag !== etag;
     if (tmp) {
-      closure_8.clear();
+      closure_7.clear();
       map.clear();
       map1.clear();
     }
@@ -688,15 +657,15 @@ let obj2 = {
       let tmp13 = addDetectableGame(gameFromServer(tmp10));
       continue;
     }
-    c13 = undefined;
-    closure_14 = Date.now();
-    c15 = true;
+    c11 = undefined;
+    closure_12 = Date.now();
+    c13 = true;
   },
   GAMES_BLOCKLIST_FETCH: function handleGamesBlocklistFetch() {
-    c17 = true;
+    c15 = true;
   },
   GAMES_BLOCKLIST_FETCH_FAIL: function handleGamesBlocklistFetchFail() {
-    c17 = false;
+    c15 = false;
   },
   GAMES_BLOCKLIST_UPDATE: function handleGamesBlocklistUpdated(arg0) {
     let executables;
@@ -704,17 +673,17 @@ let obj2 = {
     ({ executables, patterns, etag } = arg0);
     const tmp = null != etag && etag !== etag;
     if (tmp) {
-      let closure_19 = executables.map((item) => item.toLowerCase());
-      closure_20 = patterns.map((item) => {
+      let closure_17 = executables.map((item) => item.toLowerCase());
+      closure_18 = patterns.map((item) => {
         const regExp = new RegExp(item, "i");
         return regExp;
       });
     }
-    c17 = false;
-    closure_16 = Date.now();
+    c15 = false;
+    closure_14 = Date.now();
   }
 };
-const detectableGameStore = new DetectableGameStore(DispatcherDefault, obj2);
+const detectableGameStore = new DetectableGameStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("stores/DetectableGameStore.tsx");
 
 export default detectableGameStore;

@@ -1,21 +1,22 @@
-// Module ID: 18292
-// Function ID: 18293
+// Module ID: 18593
+// Function ID: 18594
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 558, 576, 1633, 11717, 6297, 17742, 11718, 11719, 11724, 17748, 1128, 3981, 2]
+// Dependencies: [19, 21, 558, 576, 1633, 11889, 5626, 18044, 18047, 11890, 11891, 11895, 18054, 1128, 3928, 2]
 
-// Module 18292 (VoiceChannelAppSurface)
+// Module 18593 (VoiceChannelAppSurface)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef3981 from "module_3981" /* 3981 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11717 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11718 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11719 */;
-import FrameStackLevel from "FrameStackLevel" /* 11724 */;
-import useFrameLifecycle from "useFrameLifecycle" /* 17742 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 17748 */;
+import _modDef3928 from "module_3928" /* 3928 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11889 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11890 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11891 */;
+import FrameStackLevel from "FrameStackLevel" /* 11895 */;
+import useFrameLifecycle from "useFrameLifecycle" /* 18044 */;
+import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 18047 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18054 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -50,91 +51,92 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
           tmp9 = cResult[8];
         }
         const tmp10 = useFrameLifecycleDefault(tmp9);
-        let tmp12 = null;
+        conjureBackgroundFramesDefault(applicationId, tmp8);
+        let tmp13 = null;
         const tmp4Result = useInlineFrameOAuthNavigationDefault;
         if (tmp10.state === useFrameLifecycle.FrameLifecycleState.Launched) {
-          tmp12 = applicationId;
+          tmp13 = applicationId;
         }
-        tmp4Result(tmp12);
+        tmp4Result(tmp13);
         const state = tmp10.state;
         if (useFrameLifecycle.FrameLifecycleState.Launched === state) {
           if (cResult[9] === tmp10.frame.id) {
-            let tmp34;
+            let tmp35;
             if (cResult[10] === tmp6) {
-              tmp34 = cResult[11];
+              tmp35 = cResult[11];
             }
-            return tmp34;
+            return tmp35;
           }
           FrameRenderTargetDefault;
-          const tmp37 = <tmp4Result2 frameId={tmp10.frame.id} level={FrameStackLevel.FrameStackLevel.WithinCallContent} presentation={tmp6} />;
+          const tmp38 = <tmp4Result2 frameId={tmp10.frame.id} level={FrameStackLevel.FrameStackLevel.WithinCallContent} presentation={tmp6} />;
           cResult[9] = tmp10.frame.id;
           cResult[10] = tmp6;
-          cResult[11] = tmp37;
-          tmp34 = tmp37;
+          cResult[11] = tmp38;
+          tmp35 = tmp38;
         } else if (useFrameLifecycle.FrameLifecycleState.RenderingElsewhere === state) {
-          let tmp31;
+          let tmp32;
           const _Symbol5 = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation4 = tmp(17748).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation4 = tmp(18054).FrameSurfaceExplanation;
             const intl5 = tmp(1128).intl;
-            const tmp33 = <FrameSurfaceExplanation4 description={intl5.string(intl6.t["2KIDX+"])} />;
-            cResult[12] = tmp33;
-            tmp31 = tmp33;
+            const tmp34 = <FrameSurfaceExplanation4 description={intl5.string(intl6.t["2KIDX+"])} />;
+            cResult[12] = tmp34;
+            tmp32 = tmp34;
           } else {
-            tmp31 = cResult[12];
+            tmp32 = cResult[12];
           }
-          return tmp31;
+          return tmp32;
         } else if (useFrameLifecycle.FrameLifecycleState.NoApplication === state) {
-          let tmp27;
+          let tmp28;
           const _Symbol4 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation3 = tmp(17748).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation3 = tmp(18054).FrameSurfaceExplanation;
             const intl4 = tmp(1128).intl;
-            const tmp29 = <FrameSurfaceExplanation3 description={intl4.string(_modDef3981.TQptZV)} />;
-            cResult[13] = tmp29;
-            tmp27 = tmp29;
+            const tmp30 = <FrameSurfaceExplanation3 description={intl4.string(_modDef3928.TQptZV)} />;
+            cResult[13] = tmp30;
+            tmp28 = tmp30;
           } else {
-            tmp27 = cResult[13];
+            tmp28 = cResult[13];
           }
-          return tmp27;
+          return tmp28;
         } else if (useFrameLifecycle.FrameLifecycleState.DoesNotSupportSurface === state) {
-          let tmp23;
+          let tmp24;
           const _Symbol3 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation2 = tmp(17748).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation2 = tmp(18054).FrameSurfaceExplanation;
             const intl3 = tmp(1128).intl;
-            const tmp25 = <FrameSurfaceExplanation2 description={intl3.string(_modDef3981["13FYwI"])} />;
-            cResult[14] = tmp25;
-            tmp23 = tmp25;
+            const tmp26 = <FrameSurfaceExplanation2 description={intl3.string(_modDef3928["13FYwI"])} />;
+            cResult[14] = tmp26;
+            tmp24 = tmp26;
           } else {
-            tmp23 = cResult[14];
+            tmp24 = cResult[14];
           }
-          return tmp23;
+          return tmp24;
         } else if (useFrameLifecycle.FrameLifecycleState.Error === state) {
-          let tmp19;
+          let tmp20;
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation = tmp(17748).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation = tmp(18054).FrameSurfaceExplanation;
             const intl = tmp(1128).intl;
             const intl2 = tmp(1128).intl;
-            const tmp21 = <FrameSurfaceExplanation heading={intl.string(intl6.t.VquUff)} error={intl2.string(intl6.t["Sd9D/R"])} />;
-            cResult[15] = tmp21;
-            tmp19 = tmp21;
+            const tmp22 = <FrameSurfaceExplanation heading={intl.string(intl6.t.VquUff)} error={intl2.string(intl6.t["Sd9D/R"])} />;
+            cResult[15] = tmp22;
+            tmp20 = tmp22;
           } else {
-            tmp19 = cResult[15];
+            tmp20 = cResult[15];
           }
-          return tmp19;
+          return tmp20;
         } else {
-          let tmp15;
+          let tmp16;
           const _Symbol = Symbol;
           if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp17 = jsx(FrameSurfaceState.FrameSurfaceLoading, {});
-            cResult[16] = tmp17;
-            tmp15 = tmp17;
+            const tmp18 = jsx(FrameSurfaceState.FrameSurfaceLoading, {});
+            cResult[16] = tmp18;
+            tmp16 = tmp18;
           } else {
-            tmp15 = cResult[16];
+            tmp16 = cResult[16];
           }
-          return tmp15;
+          return tmp16;
         }
       }
       const obj7 = { applicationId, surface: tmp8 };
@@ -174,35 +176,36 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
     return obj;
   }, items1);
   const tmp5 = guildId(left[7])({ applicationId, surface: memo1 });
-  let tmp8 = null;
-  const tmp6 = guildId(left[8]);
+  guildId(left[8])(applicationId, memo1);
+  let tmp9 = null;
+  const tmp7 = guildId(left[9]);
   if (tmp5.state === channelId(left[7]).FrameLifecycleState.Launched) {
-    tmp8 = applicationId;
+    tmp9 = applicationId;
   }
-  tmp6(tmp8);
+  tmp7(tmp9);
   const state = tmp5.state;
   if (channelId(left[7]).FrameLifecycleState.Launched === state) {
-    guildId(left[9]);
-    return <tmpResult frameId={tmp5.frame.id} level={channelId(left[10]).FrameStackLevel.WithinCallContent} presentation={memo} />;
+    guildId(left[10]);
+    return <tmpResult frameId={tmp5.frame.id} level={channelId(left[11]).FrameStackLevel.WithinCallContent} presentation={memo} />;
   } else if (channelId(left[7]).FrameLifecycleState.RenderingElsewhere === state) {
-    const FrameSurfaceExplanation4 = tmp7(tmp2[11]).FrameSurfaceExplanation;
-    const intl5 = tmp7(tmp2[12]).intl;
-    return <FrameSurfaceExplanation4 description={intl5.string(channelId(left[12]).t["2KIDX+"])} />;
+    const FrameSurfaceExplanation4 = tmp8(tmp2[12]).FrameSurfaceExplanation;
+    const intl5 = tmp8(tmp2[13]).intl;
+    return <FrameSurfaceExplanation4 description={intl5.string(channelId(left[13]).t["2KIDX+"])} />;
   } else if (channelId(left[7]).FrameLifecycleState.NoApplication === state) {
-    const FrameSurfaceExplanation3 = tmp7(tmp2[11]).FrameSurfaceExplanation;
-    const intl4 = tmp7(tmp2[12]).intl;
-    return <FrameSurfaceExplanation3 description={intl4.string(guildId(left[13]).TQptZV)} />;
+    const FrameSurfaceExplanation3 = tmp8(tmp2[12]).FrameSurfaceExplanation;
+    const intl4 = tmp8(tmp2[13]).intl;
+    return <FrameSurfaceExplanation3 description={intl4.string(guildId(left[14]).TQptZV)} />;
   } else if (channelId(left[7]).FrameLifecycleState.DoesNotSupportSurface === state) {
-    const FrameSurfaceExplanation2 = tmp7(tmp2[11]).FrameSurfaceExplanation;
-    const intl3 = tmp7(tmp2[12]).intl;
-    return <FrameSurfaceExplanation2 description={intl3.string(guildId(left[13])["13FYwI"])} />;
+    const FrameSurfaceExplanation2 = tmp8(tmp2[12]).FrameSurfaceExplanation;
+    const intl3 = tmp8(tmp2[13]).intl;
+    return <FrameSurfaceExplanation2 description={intl3.string(guildId(left[14])["13FYwI"])} />;
   } else if (channelId(left[7]).FrameLifecycleState.Error === state) {
-    const FrameSurfaceExplanation = tmp7(tmp2[11]).FrameSurfaceExplanation;
-    const intl = tmp7(tmp2[12]).intl;
-    const intl2 = tmp7(tmp2[12]).intl;
-    return <FrameSurfaceExplanation heading={intl.string(channelId(left[12]).t.VquUff)} error={intl2.string(channelId(left[12]).t["Sd9D/R"])} />;
+    const FrameSurfaceExplanation = tmp8(tmp2[12]).FrameSurfaceExplanation;
+    const intl = tmp8(tmp2[13]).intl;
+    const intl2 = tmp8(tmp2[13]).intl;
+    return <FrameSurfaceExplanation heading={intl.string(channelId(left[13]).t.VquUff)} error={intl2.string(channelId(left[13]).t["Sd9D/R"])} />;
   } else {
-    return jsx(channelId(left[11]).FrameSurfaceLoading, {});
+    return jsx(channelId(left[12]).FrameSurfaceLoading, {});
   }
 });
 const result = size.fileFinishedImporting("modules/voice_channel_apps/native/VoiceChannelAppSurface.tsx");

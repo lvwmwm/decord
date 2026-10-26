@@ -1,31 +1,31 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 18072
+// Function ID: 18073
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 6340, 12997, 13009, 9614, 1087, 21, 5191, 12, 13004, 558, 576, 504, 12986, 17767, 17768, 17773, 1128, 12990, 17774, 13005, 13007, 12983, 17869, 13095, 6612, 4945, 13008, 13017, 13018, 1123, 17870, 17871, 10927, 17872, 17873, 17874, 17875, 2]
+// Dependencies: [19, 17, 6792, 13237, 13249, 9714, 1087, 21, 4971, 12, 13244, 558, 576, 504, 13226, 18073, 18074, 18079, 1128, 13230, 18080, 13245, 13247, 13223, 18175, 13333, 5297, 5052, 13248, 13257, 13258, 1123, 18176, 18177, 11147, 18178, 18179, 18180, 18181, 2]
 
-// Module 17766 (SearchTabsLayout)
+// Module 18072 (SearchTabsLayout)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12986 */;
-import SearchUtils from "SearchUtils" /* 12990 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13005 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13007 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13008 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13017 */;
-import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 13018 */;
-import SmartSearchEmptyScreenDefault from "SmartSearchEmptyScreen" /* 17768 */;
-import ErrorScreenDefault from "ErrorScreen" /* 17773 */;
-import SearchTabsPageDefault from "SearchTabsPage" /* 17774 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13226 */;
+import SearchUtils from "SearchUtils" /* 13230 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13244 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13245 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13247 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13248 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13257 */;
+import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 13258 */;
+import SmartSearchEmptyScreenDefault from "SmartSearchEmptyScreen" /* 18074 */;
+import ErrorScreenDefault from "ErrorScreen" /* 18079 */;
+import SearchTabsPageDefault from "SearchTabsPage" /* 18080 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchQueryStore from "SearchQueryStore" /* 12997 */;
-import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 13009 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
+import SearchMessageStore from "SearchMessageStore" /* 6792 */;
+import SearchQueryStore from "SearchQueryStore" /* 13237 */;
+import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 13249 */;
+import SearchConstants from "SearchConstants" /* 9714 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp;
-const SearchPlatformUtilsDefault = tmp(12983);
+const SearchPlatformUtilsDefault = tmp(13223);
 const View = react_native.View;
 ({ MESSAGE_SEARCH_RESULT_TABS_SET: metroImportAll, SEARCH_MESSAGE_TAB_SENTINEL: c9, SearchTabs: c10 } = SearchConstants);
 const ComponentActions = Constants.ComponentActions;
@@ -165,7 +165,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
     if (cResult[5] === stateFromStores) {
       tmp9 = cResult[6];
     }
-    const tmpResult4 = searchContext(17767);
+    const tmpResult4 = searchContext(18073);
     const smartSearchStatus = tmpResult4.useSmartSearchStatus(tmp9);
     if (cResult[7] !== searchContext) {
       const fn2 = function f() {
@@ -185,7 +185,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
     }
     const effect = react.useEffect(tmp12, tmp13);
     if (null != tmp9) {
-      const tmpResult5 = searchContext(12986);
+      const tmpResult5 = searchContext(13226);
       if (tmpResult5.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
         let tmp22;
         if (cResult[10] !== tmp9) {
@@ -213,7 +213,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
       tmp17 = cResult[12];
     }
   }
-  const tmpResult6 = searchContext(12986);
+  const tmpResult6 = searchContext(13226);
   const smartSearchQuery = tmpResult6.getSmartSearchQuery(searchContext, stateFromStores);
   cResult[4] = searchContext;
   cResult[5] = stateFromStores;
@@ -231,7 +231,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
     const obj = SmartSearchUtils;
     return obj.getSmartSearchQuery(searchContext, stateFromStores);
   }, items2);
-  let obj2 = searchContext(17767);
+  let obj2 = searchContext(18073);
   const items3 = [searchContext];
   const smartSearchStatus = obj2.useSmartSearchStatus(memo);
   const effect = react.useEffect(() => {
@@ -241,15 +241,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoSear
   }, items3);
   if (null != memo) {
     let tmp8;
-    const tmpResult = searchContext(12986);
+    const tmpResult = searchContext(13226);
     if (tmpResult.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
       const obj3 = { smartSearchQuery: memo };
-      tmp8 = closure_12(stateFromStores(17768), obj3);
+      tmp8 = closure_12(stateFromStores(18074), obj3);
     }
     return tmp8;
   }
   const obj4 = { text: intl.string(searchContext(1128).t.V6nAfF) };
-  const tmp7 = stateFromStores(17773);
+  const tmp7 = stateFromStores(18079);
   intl = tmp(1128).intl;
   tmp8 = closure_12(tmp7, obj4);
 });
@@ -945,11 +945,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedS
   } else {
     obj3 = cResult[5];
   }
-  const tmpResult5 = searchContext(17872);
+  const tmpResult5 = searchContext(18178);
   const autoSearchGuildChannelTab = tmpResult5.useAutoSearchGuildChannelTab(searchContext, !obj3.has(constants.GUILD_CHANNELS));
-  const tmpResult6 = searchContext(17873);
+  const tmpResult6 = searchContext(18179);
   const autoSearchMembersTab = tmpResult6.useAutoSearchMembersTab(searchContext, !obj3.has(constants.MEMBERS));
-  const tmpResult7 = searchContext(17874);
+  const tmpResult7 = searchContext(18180);
   const autoSearchPeopleTab = tmpResult7.useAutoSearchPeopleTab(searchContext, !obj3.has(constants.PEOPLE));
   if (cResult[6] === searchContext) {
     if (cResult[7] === visibleTabCounts) {
@@ -957,7 +957,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedS
       if (cResult[8] === visibleTabs) {
         tmp15 = cResult[9];
       }
-      const tmpResult8 = searchContext(17875);
+      const tmpResult8 = searchContext(18181);
       const autoTrackSearchTabCountsViewedAnalytics = tmpResult8.useAutoTrackSearchTabCountsViewedAnalytics(tmp15);
       if (cResult[10] === searchContext) {
         if (cResult[11] === visibleTabCounts) {
@@ -1006,13 +1006,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedS
     set = new Set(candidateTabs);
     return set;
   }, items2);
-  const obj3 = searchContext(17872);
+  const obj3 = searchContext(18178);
   const autoSearchGuildChannelTab = obj3.useAutoSearchGuildChannelTab(searchContext, !memo.has(constants.GUILD_CHANNELS));
-  const obj4 = searchContext(17873);
+  const obj4 = searchContext(18179);
   const autoSearchMembersTab = obj4.useAutoSearchMembersTab(searchContext, !memo.has(constants.MEMBERS));
-  const obj5 = searchContext(17874);
+  const obj5 = searchContext(18180);
   const autoSearchPeopleTab = obj5.useAutoSearchPeopleTab(searchContext, !memo.has(constants.PEOPLE));
-  const obj6 = searchContext(17875);
+  const obj6 = searchContext(18181);
   const autoTrackSearchTabCountsViewedAnalytics = obj6.useAutoTrackSearchTabCountsViewedAnalytics({ searchContext, visibleTabCounts, visibleTabs });
   return closure_12(closure_25, { searchContext, visibleTabs, visibleTabCounts, width });
 });

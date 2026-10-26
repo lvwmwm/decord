@@ -1,11 +1,11 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 12008
+// Function ID: 12009
 // Name: useApplicationWidgetRefresh
-// Dependencies: [32, 19, 558, 576, 11837, 11838, 2]
+// Dependencies: [32, 19, 558, 576, 12009, 12010, 2]
 
-// Module 11836 (useApplicationWidgetRefresh)
-import refreshApplicationWidget from "refreshApplicationWidget" /* 11837 */;
-import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 11838 */;
+// Module 12008 (useApplicationWidgetRefresh)
+import refreshApplicationWidget from "refreshApplicationWidget" /* 12009 */;
+import presentApplicationWidgetRefreshOutcomeDefault from "presentApplicationWidgetRefreshOutcome" /* 12010 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

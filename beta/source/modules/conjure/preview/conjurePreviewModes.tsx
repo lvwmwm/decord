@@ -1,11 +1,11 @@
-// Module ID: 11696
-// Function ID: 11697
+// Module ID: 11871
+// Function ID: 11872
 // Name: conjurePreviewModes
-// Dependencies: [11033, 6294, 11697, 2]
+// Dependencies: [10729, 6774, 11872, 2]
 // Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 11696 (conjurePreviewModes)
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11033 */;
+// Module 11871 (conjurePreviewModes)
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,10 +40,10 @@ export const previewCapabilitiesFromSurfaces = function previewCapabilitiesFromS
       obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
       obj2 = conjurePreviewFrameSurfaces;
       if (widgetResolvable) {
-        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6294).ConjureSupportedSurface.PROFILE_WIDGET);
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6774).ConjureSupportedSurface.PROFILE_WIDGET);
       }
       if (botDmResolvable) {
-        const hasItem = previewSupportedSurfaces.includes(tmp3(6294).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6294).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6774).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6774).ConjureSupportedSurface.APPLICATION_COMMANDS);
         botDmResolvable = hasItem;
       }
       tmp = obj;
@@ -131,6 +131,21 @@ export const requiresPermissionReview = function requiresPermissionReview(arg0) 
   }
   return tmp3;
 };
-export function permissionReviewBlocksMode(activeMode, result) {
-  return result && "bot" === activeMode;
-}
+export const permissionReviewBlocksMode = function permissionReviewBlocksMode(activeMode, result, arg2) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  let tmp = result;
+  if (tmp) {
+    let tmp3 = "bot" === activeMode;
+    if (!tmp3) {
+      if (flag) {
+        flag = "frame" === activeMode;
+      }
+      tmp3 = flag;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};

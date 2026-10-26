@@ -1,93 +1,71 @@
 // Module ID: 5089
 // Function ID: 5090
-// Dependencies: [19, 5090, 1514]
+// Dependencies: [32, 19, 576, 5084, 5079]
+// Exports: useRiveColor
 
 // Module 5089
-import nanoid from "nanoid" /* 1514 */;
 import react from "react" /* 19 */;
+import react2 from "react" /* 576 */;
+import _mod5084 from "module_5084" /* 5084 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let name;
+let tmp;
+const RiveColor2 = tmp(5079);
+react.useCallback;
+const f33561 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
 
-let c2;
-let c3;
-let closure_4;
-let hasOwnProperty;
-({ useCallback: c2, useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
-const memoResult = react.memo((name) => {
-  name = name.name;
-  const handleOnMount = name.handleOnMount;
-  const handleOnUnmount = name.handleOnUnmount;
-  const handleOnUpdate = name.handleOnUpdate;
-  const children = name.children;
-  const hostName = name.hostName;
-  let obj = name(handleOnMount[1]);
-  const portal = obj.usePortal(hostName);
-  const addPortal = portal.addPortal;
-  const removePortal = portal.removePortal;
-  const items = [name];
-  let closure_7 = children(() => {
-    let nanoidResult = name;
-    if (!nanoidResult) {
-      const obj = nanoid;
-      nanoidResult = obj.nanoid();
+export const useRiveColor = function useRiveColor(arg0, arg1) {
+  let closure_0;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(8);
+  const obj2 = _mod5084;
+  const tmp4 = _slicedToArray(obj2.useRiveProperty(arg1, arg0, f33561), 3);
+  [tmp5, tmp6] = tmp4;
+  require = tmp6;
+  if (cResult[0] !== tmp5) {
+    let fromIntResult;
+    if (undefined !== tmp5) {
+      let RiveColor = RiveColor2.RiveColor;
+      fromIntResult = RiveColor.fromInt(tmp5);
     }
-    return nanoidResult;
-  }, items);
-  const tmp2 = addPortal();
-  const ref = tmp2;
-  const tmp3 = addPortal();
-  let closure_9 = tmp3;
-  const tmp4 = addPortal();
-  const ref2 = tmp4;
-  const items1 = [handleOnMount, addPortal];
-  tmp2.current = handleOnUnmount(() => {
-    if (handleOnMount) {
-      tmp(() => addPortal(closure_1_7, children));
-    } else {
-      addPortal(closure_7, children);
-    }
-  }, items1);
-  const items2 = [handleOnUnmount, removePortal];
-  tmp3.current = handleOnUnmount(() => {
-    if (handleOnUnmount) {
-      tmp(() => removePortal(closure_1_7));
-    } else {
-      removePortal(closure_7);
-    }
-  }, items2);
-  const items3 = [handleOnUpdate, addPortal, children];
-  tmp4.current = handleOnUnmount(() => {
-    if (handleOnUpdate) {
-      tmp(() => addPortal(closure_1_7, children));
-    } else {
-      addPortal(closure_7, children);
-    }
-  }, items3);
-  handleOnUpdate(() => {
-    let current = ref.current;
-    if (current != null) {
-      current();
-    }
-    return () => {
-      const current = ref.current;
-      const tmp = ref;
-      if (current != null) {
-        current();
+    cResult[0] = tmp5;
+    cResult[1] = fromIntResult;
+    tmp8 = fromIntResult;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== tmp6) {
+    const fn = function p(str) {
+      let fromHexStringResult = str;
+      if (typeof str === "string") {
+        const RiveColor = RiveColor2.RiveColor;
+        fromHexStringResult = RiveColor.fromHexString(str);
       }
-      closure_1_8.current = undefined;
-      tmp.current = undefined;
-      ref2.current = undefined;
+      tmp6(fromHexStringResult.toInt());
     };
-  }, []);
-  const items4 = [children];
-  handleOnUpdate(() => {
-    const current = ref2.current;
-    if (current != null) {
-      current();
+    cResult[2] = tmp6;
+    cResult[3] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === tmp4[2]) {
+    if (cResult[5] === tmp10) {
+      let tmp11;
+      if (cResult[6] === tmp8) {
+        tmp11 = cResult[7];
+      }
+      return tmp11;
     }
-  }, items4);
-  return null;
-});
-memoResult.displayName = "Portal";
-
-export const Portal = memoResult;
+  }
+  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
+  cResult[4] = tmp4[2];
+  cResult[5] = tmp10;
+  cResult[6] = tmp8;
+  cResult[7] = obj3;
+  tmp11 = obj3;
+};

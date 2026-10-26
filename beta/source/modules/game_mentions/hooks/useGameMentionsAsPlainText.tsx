@@ -1,14 +1,14 @@
-// Module ID: 10542
-// Function ID: 10543
+// Module ID: 10638
+// Function ID: 10639
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2022, 1392, 5504, 558, 576, 7285, 2034, 8510, 1128, 504, 2]
+// Dependencies: [19, 2022, 1392, 5984, 558, 576, 7406, 2033, 8581, 1128, 504, 2]
 
-// Module 10542 (useGameMentionsAsPlainText)
-import StringUtils from "StringUtils" /* 2034 */;
+// Module 10638 (useGameMentionsAsPlainText)
+import StringUtils from "StringUtils" /* 2033 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2022 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5504 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5984 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,9 +69,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return closure_0.replace(metroRequire, (arg0, gameId) => {
+        return closure_0.replace(metroRequire, (arg0, arg1) => {
           let stringResult;
-          game = game.getGame(gameId);
+          game = game.getGame(arg1);
           const obj = closure_2_0(length[8]);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[9]).intl;
@@ -126,9 +126,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return closure_0.replace(metroRequire, (arg0, gameId) => {
+        return closure_0.replace(metroRequire, (arg0, arg1) => {
           let stringResult;
-          game = game.getGame(gameId);
+          game = game.getGame(arg1);
           const obj = closure_2_0(memo[8]);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[9]).intl;

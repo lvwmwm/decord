@@ -1,9 +1,9 @@
-// Module ID: 8186
-// Function ID: 8187
+// Module ID: 8304
+// Function ID: 8305
 // Name: DraftActionCreators
 // Dependencies: [584, 2]
 
-// Module 8186 (DraftActionCreators)
+// Module 8304 (DraftActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

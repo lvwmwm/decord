@@ -1,48 +1,45 @@
-// Module ID: 18114
-// Function ID: 18115
+// Module ID: 18420
+// Function ID: 18421
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1261, 7441, 18084, 9421, 1246, 2062, 1087, 1394, 1097, 558, 576, 504, 18115, 1630, 8359, 18116, 8355, 7436, 18117, 14496, 10399, 10398, 10406, 5033, 2052, 18118, 18119, 18082, 18096, 15636, 12826, 2]
+// Dependencies: [32, 1261, 7562, 18394, 9520, 1246, 4817, 1394, 1097, 558, 576, 504, 18421, 1630, 8431, 18422, 8427, 7557, 18423, 14731, 10495, 10494, 10502, 5001, 4807, 18424, 18425, 18392, 15865, 13066, 2]
 
-// Module 18114 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 18420 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8355 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10406 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12826 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14496 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15636 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18082 */;
-import ConnectionDeprecationBottomSheet from "ConnectionDeprecationBottomSheet" /* 18096 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18115 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18119 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7557 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8427 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8431 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10502 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13066 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 14731 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15865 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 18392 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 18421 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 18425 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18084 */;
-import PromotionsStore from "PromotionsStore" /* 9421 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7562 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18394 */;
+import PromotionsStore from "PromotionsStore" /* 9520 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import UserRequiredActionStore_mod from "UserRequiredActionStore" /* 2062 */;
+import UserRequiredActionStore_mod from "UserRequiredActionStore" /* 4817 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _location, importDefault;
+let importDefault;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_REACTIVATION_TRIAL_ID;
 let tmp4;
-const useGiftingPromotionAssetsReadyDefault = tmp4(18118);
+const useGiftingPromotionAssetsReadyDefault = tmp4(18424);
 let UserRequiredActionStore = UserRequiredActionStore_mod;
-const PlatformTypes = Constants.PlatformTypes;
 ({ PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID } = PremiumConstants);
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
 const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
@@ -54,7 +51,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let enabled;
   let enabled2;
   let first;
-  let items9;
+  let isGiftReminderAssetReady;
   let mobileBottomSheet;
   let premiumDiscountOffer;
   let premiumTrialOffer;
@@ -64,70 +61,67 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp11;
   let tmp15;
   let tmp16;
-  let tmp23;
   let tmp24;
-  let tmp28;
+  let tmp25;
   let tmp29;
-  let tmp32;
+  let tmp30;
   let tmp33;
-  let tmp38;
+  let tmp34;
+  let tmp39;
   let tmp4;
-  let tmp42;
   let tmp43;
+  let tmp44;
   let tmp47;
   let tmp48;
   let tmp5;
+  let tmp51;
   let tmp52;
-  let tmp53;
+  let tmp56;
   let tmp57;
-  let tmp58;
-  let tmp60;
-  let tmp68;
-  let tmp70;
-  let tmp72;
+  let tmp59;
   let tmp = first;
-  let obj = first(premiumDiscountOffer[11]);
-  const cResult = obj.c(149);
+  let obj = first(premiumDiscountOffer[10]);
+  const cResult = obj.c(138);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp6 = enabled2;
     let items = [enabled2];
-    class I {
+    class S {
       constructor() {
-        return enabled2.hasLoaded(isGiftReminderAssetReady.PRELOADED_USER_SETTINGS);
+        return enabled2.hasLoaded(isGiftCoachmarkAssetReady.PRELOADED_USER_SETTINGS);
       }
     }
     cResult[0] = items;
-    cResult[1] = I;
+    cResult[1] = S;
     tmp4 = items;
-    tmp5 = I;
+    tmp5 = S;
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const tmpResult = tmp(premiumDiscountOffer[12]);
+  const tmpResult = tmp(premiumDiscountOffer[11]);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   let tmp8 = importDefault;
-  let tmp9 = _location;
-  const obj2 = { location: _location };
+  let tmp9 = isGiftReminderAssetReady;
+  const obj2 = { location: isGiftReminderAssetReady };
   const obj3 = require("MainViewTooltipActionSheetsDisabledExperiment");
   const disabled = obj3.getConfig(obj2).disabled;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [UserRequiredActionStore];
-    class T {
+    class C {
       constructor() {
         return closure_9.hasAction();
       }
     }
     cResult[2] = items1;
-    cResult[3] = T;
-    tmp11 = T;
+    cResult[3] = C;
+    tmp11 = C;
     tmp10 = items1;
   } else {
     tmp10 = cResult[2];
     tmp11 = cResult[3];
   }
   let tmp14 = stateFromStores;
-  const tmpResult23 = tmp(premiumDiscountOffer[12]);
-  const stateFromStores1 = tmpResult23.useStateFromStores(tmp10, tmp11);
+  const tmpResult21 = tmp(premiumDiscountOffer[11]);
+  const stateFromStores1 = tmpResult21.useStateFromStores(tmp10, tmp11);
   if (stateFromStores) {
     tmp14 = !disabled;
   }
@@ -135,100 +129,98 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     tmp14 = !stateFromStores1;
   }
   if (tmp14) {
-    const tmpResult24 = tmp(premiumDiscountOffer[14]);
-    tmp14 = !tmpResult24.isMetaQuest();
+    const tmpResult22 = tmp(premiumDiscountOffer[13]);
+    tmp14 = !tmpResult22.isMetaQuest();
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [stateFromStores3];
-    class N {
+    class C {
       constructor() {
-        const items = [, ];
-        ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = stateFromStores3);
-        return items;
+        return closure_9.hasAction();
       }
     }
     cResult[4] = items2;
-    cResult[5] = N;
-    tmp16 = N;
+    cResult[5] = tmp18;
+    tmp16 = tmp18;
     tmp15 = items2;
   } else {
     tmp15 = cResult[4];
     tmp16 = cResult[5];
   }
-  const tmpResult25 = tmp(premiumDiscountOffer[12]);
-  const tmp19 = premiumTrialOffer(tmpResult25.useStateFromStoresArray(tmp15, tmp16), 2);
-  first = tmp19[0];
-  importDefault = tmp21;
-  const tmpResult26 = tmp(premiumDiscountOffer[15]);
-  premiumDiscountOffer = tmpResult26.usePremiumDiscountOffer();
+  const tmpResult23 = tmp(premiumDiscountOffer[11]);
+  const tmp20 = premiumTrialOffer(tmpResult23.useStateFromStoresArray(tmp15, tmp16), 2);
+  first = tmp20[0];
+  importDefault = tmp22;
+  const tmpResult24 = tmp(premiumDiscountOffer[14]);
+  premiumDiscountOffer = tmpResult24.usePremiumDiscountOffer();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [enabled];
-    class D {
+    class A {
       constructor() {
-        const RecurringReferralReminderExperiment = first(premiumDiscountOffer[16]).RecurringReferralReminderExperiment;
-        const obj = { location: _location };
+        const RecurringReferralReminderExperiment = first(premiumDiscountOffer[15]).RecurringReferralReminderExperiment;
+        const obj = { location: isGiftReminderAssetReady };
         return RecurringReferralReminderExperiment.getConfig(obj, { autoTrackExposure: false }).bottomSheetEnabled;
       }
     }
     cResult[6] = items3;
-    cResult[7] = D;
-    tmp24 = D;
-    tmp23 = items3;
+    cResult[7] = A;
+    tmp25 = A;
+    tmp24 = items3;
   } else {
-    tmp23 = cResult[6];
-    tmp24 = cResult[7];
+    tmp24 = cResult[6];
+    tmp25 = cResult[7];
   }
-  const tmpResult27 = tmp(premiumDiscountOffer[12]);
-  const stateFromStores2 = tmpResult27.useStateFromStores(tmp23, tmp24);
-  const tmpResult28 = tmp(premiumDiscountOffer[17]);
-  const isEligibleSenderForReferralProgram = tmpResult28.useIsEligibleSenderForReferralProgram(!stateFromStores2);
+  const tmpResult25 = tmp(premiumDiscountOffer[11]);
+  const stateFromStores2 = tmpResult25.useStateFromStores(tmp24, tmp25);
+  const tmpResult26 = tmp(premiumDiscountOffer[16]);
+  const isEligibleSenderForReferralProgram = tmpResult26.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [mobileBottomSheet];
-    class B {
+    class U {
       constructor() {
         const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
         return items;
       }
     }
     cResult[8] = items4;
-    cResult[9] = B;
-    tmp29 = B;
-    tmp28 = items4;
+    cResult[9] = U;
+    tmp30 = U;
+    tmp29 = items4;
   } else {
-    tmp28 = cResult[8];
-    tmp29 = cResult[9];
+    tmp29 = cResult[8];
+    tmp30 = cResult[9];
   }
-  const tmpResult29 = tmp(premiumDiscountOffer[12]);
-  [tmp32, tmp33] = premiumTrialOffer(tmpResult29.useStateFromStoresArray(tmp28, tmp29), 2);
-  let tmp34 = stateFromStores2 && isEligibleSenderForReferralProgram;
-  premiumTrialOffer(tmpResult29.useStateFromStoresArray(tmp28, tmp29), 2);
-  if (tmp34) {
-    tmp34 = null != tmp32;
+  const tmpResult27 = tmp(premiumDiscountOffer[11]);
+  [tmp33, tmp34] = premiumTrialOffer(tmpResult27.useStateFromStoresArray(tmp29, tmp30), 2);
+  let tmp35 = stateFromStores2 && isEligibleSenderForReferralProgram;
+  premiumTrialOffer(tmpResult27.useStateFromStoresArray(tmp29, tmp30), 2);
+  if (tmp35) {
+    tmp35 = null != tmp33;
   }
-  if (tmp34) {
-    tmp34 = tmp32 > 0;
+  if (tmp35) {
+    tmp35 = tmp33 > 0;
   }
-  if (tmp34) {
-    tmp34 = null != tmp33;
+  if (tmp35) {
+    tmp35 = null != tmp34;
   }
-  const tmpResult30 = tmp(premiumDiscountOffer[18]);
-  premiumTrialOffer = tmpResult30.usePremiumTrialOffer();
+  const tmpResult28 = tmp(premiumDiscountOffer[17]);
+  premiumTrialOffer = tmpResult28.usePremiumTrialOffer();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { location: tmp9 };
-    class B {
+    class U {
       constructor() {
         const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
         return items;
       }
     }
-    tmp38 = obj4;
+    tmp39 = obj4;
   } else {
-    tmp38 = cResult[10];
+    tmp39 = cResult[10];
   }
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(tmp2[19]).PremiumTrialOfferActionSheetKillSwitchExperiment;
-  enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig(tmp38).enabled;
-  const tmpResult31 = tmp(premiumDiscountOffer[20]);
-  const promotionMarketingComponent = tmpResult31.usePromotionMarketingComponent(tmp(tmp2[21]).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(tmp2[18]).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig(tmp39).enabled;
+  const tmpResult29 = tmp(premiumDiscountOffer[19]);
+  const promotionMarketingComponent = tmpResult29.usePromotionMarketingComponent(tmp(tmp2[20]).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -239,211 +231,221 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     const items5 = [stateFromStores5];
-    class B {
+    class X {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const giftPromotion = stateFromStores5.getGiftPromotion();
+        let id;
+        if (giftPromotion != null) {
+          id = giftPromotion.id;
+        }
+        return id;
       }
     }
     cResult[11] = items5;
-    cResult[12] = tmp45;
-    tmp43 = tmp45;
-    tmp42 = items5;
+    cResult[12] = X;
+    tmp44 = X;
+    tmp43 = items5;
   } else {
-    tmp42 = cResult[11];
-    tmp43 = cResult[12];
+    tmp43 = cResult[11];
+    tmp44 = cResult[12];
   }
-  const tmpResult32 = tmp(premiumDiscountOffer[12]);
-  stateFromStores3 = tmpResult32.useStateFromStores(tmp42, tmp43);
+  const tmpResult30 = tmp(premiumDiscountOffer[11]);
+  stateFromStores3 = tmpResult30.useStateFromStores(tmp43, tmp44);
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const items6 = [stateFromStores5];
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
     cResult[13] = items6;
-    cResult[14] = tmp50;
-    tmp48 = tmp50;
+    cResult[14] = Z;
+    tmp48 = Z;
     tmp47 = items6;
   } else {
     tmp47 = cResult[13];
     tmp48 = cResult[14];
   }
-  const tmpResult33 = tmp(premiumDiscountOffer[12]);
-  const stateFromStores4 = tmpResult33.useStateFromStores(tmp47, tmp48);
+  const tmpResult31 = tmp(premiumDiscountOffer[11]);
+  const stateFromStores4 = tmpResult31.useStateFromStores(tmp47, tmp48);
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const items7 = [stateFromStores5];
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
     cResult[15] = items7;
-    cResult[16] = tmp55;
-    tmp53 = tmp55;
-    tmp52 = items7;
+    cResult[16] = tmp54;
+    tmp52 = tmp54;
+    tmp51 = items7;
   } else {
-    tmp52 = cResult[15];
-    tmp53 = cResult[16];
+    tmp51 = cResult[15];
+    tmp52 = cResult[16];
   }
-  const tmpResult34 = tmp(premiumDiscountOffer[12]);
-  stateFromStores5 = tmpResult34.useStateFromStores(tmp52, tmp53);
+  const tmpResult32 = tmp(premiumDiscountOffer[11]);
+  stateFromStores5 = tmpResult32.useStateFromStores(tmp51, tmp52);
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { location: tmp9 };
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
-    tmp57 = obj5;
+    tmp56 = obj5;
   } else {
-    tmp57 = cResult[17];
+    tmp56 = cResult[17];
   }
-  const GiftPromotionReminderExperiment = tmp(tmp2[22]).GiftPromotionReminderExperiment;
-  enabled2 = GiftPromotionReminderExperiment.useConfig(tmp57).enabled;
+  const GiftPromotionReminderExperiment = tmp(tmp2[21]).GiftPromotionReminderExperiment;
+  enabled2 = GiftPromotionReminderExperiment.useConfig(tmp56).enabled;
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { platform: "native", location: tmp9 };
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
-    tmp58 = obj6;
+    tmp57 = obj6;
   } else {
-    tmp58 = cResult[18];
+    tmp57 = cResult[18];
   }
-  const tmpResult35 = tmp(premiumDiscountOffer[23]);
-  const giftingBadgeCoachmarkVariant = tmpResult35.useGiftingBadgeCoachmarkVariant(tmp58);
+  const tmpResult33 = tmp(premiumDiscountOffer[22]);
+  const giftingBadgeCoachmarkVariant = tmpResult33.useGiftingBadgeCoachmarkVariant(tmp57);
   if (cResult[19] !== stateFromStores3) {
     let isDismissed = null != stateFromStores3;
     if (isDismissed) {
-      const tmpResult36 = tmp(premiumDiscountOffer[24]);
-      isDismissed = tmpResult36.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(tmp2[25]).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
+      const tmpResult34 = tmp(premiumDiscountOffer[23]);
+      isDismissed = tmpResult34.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(tmp2[24]).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
     }
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
     cResult[20] = isDismissed;
-    tmp60 = isDismissed;
+    tmp59 = isDismissed;
   } else {
-    tmp60 = cResult[20];
+    tmp59 = cResult[20];
   }
-  UserRequiredActionStore = tmp60;
+  UserRequiredActionStore = tmp59;
   let isDismissed2 = null != stateFromStores3;
   if (isDismissed2) {
-    const tmpResult37 = tmp(premiumDiscountOffer[24]);
-    isDismissed2 = tmpResult37.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(tmp2[25]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
+    const tmpResult35 = tmp(premiumDiscountOffer[23]);
+    isDismissed2 = tmpResult35.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(tmp2[24]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
+  }
+  let tmp61 = null;
+  const tmp8Result = tmp8(premiumDiscountOffer[25]);
+  if (!tmp59) {
+    tmp61 = stateFromStores4;
   }
   let tmp62 = null;
-  const tmp8Result = tmp8(premiumDiscountOffer[26]);
-  if (!tmp60) {
-    tmp62 = stateFromStores4;
-  }
-  let tmp63 = null;
   if (!isDismissed2) {
-    tmp63 = stateFromStores5;
+    tmp62 = stateFromStores5;
   }
-  const tmp8ResultResult = tmp8Result(tmp62, tmp63);
+  const tmp8ResultResult = tmp8Result(tmp61, tmp62);
   const isGiftCoachmarkAssetReady = tmp8ResultResult.isGiftCoachmarkAssetReady;
-  const isGiftReminderAssetReady = tmp8ResultResult.isGiftReminderAssetReady;
+  isGiftReminderAssetReady = tmp8ResultResult.isGiftReminderAssetReady;
+  const tmpResult36 = tmp(premiumDiscountOffer[26]);
+  const nitroFileUploadAnnouncementEligible = tmpResult36.useNitroFileUploadAnnouncementEligible(tmp9);
+  const tmpResult37 = tmp(premiumDiscountOffer[26]);
+  const nitroFileUploadUpsellEligible = tmpResult37.useNitroFileUploadUpsellEligible(tmp9);
   const tmpResult38 = tmp(premiumDiscountOffer[27]);
-  const nitroFileUploadAnnouncementEligible = tmpResult38.useNitroFileUploadAnnouncementEligible(tmp9);
-  const tmpResult39 = tmp(premiumDiscountOffer[27]);
-  const nitroFileUploadUpsellEligible = tmpResult39.useNitroFileUploadUpsellEligible(tmp9);
-  const tmpResult40 = tmp(premiumDiscountOffer[28]);
-  const shouldShowRobloxConnectionCoachmark = tmpResult40.useShouldShowRobloxConnectionCoachmark();
-  if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-    const items8 = [isGiftCoachmarkAssetReady.LEAGUE_OF_LEGENDS, ];
-    class B {
-      constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
-      }
+  const shouldShowRobloxConnectionCoachmark = tmpResult38.useShouldShowRobloxConnectionCoachmark();
+  const tmpResult39 = tmp(premiumDiscountOffer[28]);
+  const isDisplayNameStylesFlywheelSettersEnabled = tmpResult39.useIsDisplayNameStylesFlywheelSettersEnabled(tmp9);
+  const tmpResult40 = tmp(premiumDiscountOffer[29]);
+  const canSet = tmpResult40.useCustomTypingIndicatorConfig(tmp9).canSet;
+  if (cResult[21] === tmp20[1]) {
+    let tmp68;
+    let tmp69;
+    if (cResult[22] === first) {
+      tmp68 = cResult[23];
     }
-    cResult[21] = items8;
-    tmp68 = items8;
-  } else {
-    tmp68 = cResult[21];
-  }
-  if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { deprecatedPlatformTypes: tmp68 };
-    class B {
-      constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
-      }
-    }
-    tmp70 = obj7;
-  } else {
-    tmp70 = cResult[22];
-  }
-  const tmpResult41 = tmp(premiumDiscountOffer[29]);
-  const shouldShowConnectionDeprecationBottomSheet = tmpResult41.useShouldShowConnectionDeprecationBottomSheet(tmp70);
-  if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { deprecatedPlatformTypes: items9 };
-    items9 = [];
-    class B {
-      constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
-      }
-    }
-    cResult[23] = obj8;
-    tmp72 = obj8;
-  } else {
-    tmp72 = cResult[23];
-  }
-  const tmpResult42 = tmp(premiumDiscountOffer[29]);
-  const shouldShowConnectionDeprecationBottomSheet1 = tmpResult42.useShouldShowConnectionDeprecationBottomSheet(tmp72);
-  const tmpResult43 = tmp(premiumDiscountOffer[30]);
-  const isDisplayNameStylesFlywheelSettersEnabled = tmpResult43.useIsDisplayNameStylesFlywheelSettersEnabled(tmp9);
-  const tmpResult44 = tmp(premiumDiscountOffer[31]);
-  const canSet = tmpResult44.useCustomTypingIndicatorConfig(tmp9).canSet;
-  if (cResult[24] === tmp19[1]) {
-    let tmp76;
-    let tmp77;
-    if (cResult[25] === first) {
-      tmp76 = cResult[26];
-    }
-    if (cResult[27] !== premiumDiscountOffer) {
+    if (cResult[24] !== premiumDiscountOffer) {
       function isDiscountOfferEligible() {
         return null != premiumDiscountOffer && null == premiumDiscountOffer.expiresAt;
       }
-      cResult[27] = premiumDiscountOffer;
-      class B {
+      cResult[24] = premiumDiscountOffer;
+      class Z {
         constructor() {
-          const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-          return items;
+          const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+          let giftIconCoachmark = null;
+          if (null != marketingComponentByType) {
+            giftIconCoachmark = null;
+            if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+              giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+            }
+          }
+          return giftIconCoachmark;
         }
       }
-      cResult[28] = isDiscountOfferEligible;
-      tmp77 = isDiscountOfferEligible;
+      cResult[25] = isDiscountOfferEligible;
+      tmp69 = isDiscountOfferEligible;
     } else {
-      tmp77 = cResult[28];
+      tmp69 = cResult[25];
     }
-    if (cResult[29] === enabled) {
+    if (cResult[26] === enabled) {
+      let tmp70;
+      let tmp74;
       let tmp78;
-      let tmp82;
-      let tmp86;
-      if (cResult[30] === premiumTrialOffer) {
-        tmp78 = cResult[31];
+      if (cResult[27] === premiumTrialOffer) {
+        tmp70 = cResult[28];
       }
-      const tmp80 = cResult[32];
-      class B {
+      const tmp72 = cResult[29];
+      class Z {
         constructor() {
-          const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-          return items;
+          const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+          let giftIconCoachmark = null;
+          if (null != marketingComponentByType) {
+            giftIconCoachmark = null;
+            if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+              giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+            }
+          }
+          return giftIconCoachmark;
         }
       }
-      if (tmp80 !== undefined) {
+      if (tmp72 !== undefined) {
         let dismissibleContent;
         if (mobileBottomSheet != null) {
           dismissibleContent = mobileBottomSheet.dismissibleContent;
@@ -455,24 +457,31 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
           }
           return dismissibleContent === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
         }
-        class B {
+        class Z {
           constructor() {
-            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-            return items;
+            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+            let giftIconCoachmark = null;
+            if (null != marketingComponentByType) {
+              giftIconCoachmark = null;
+              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+              }
+            }
+            return giftIconCoachmark;
           }
         }
-        cResult[32] = dismissibleContent;
-        cResult[33] = isPremiumMarketingMomentAnnouncementEligible;
-        tmp82 = isPremiumMarketingMomentAnnouncementEligible;
+        cResult[29] = dismissibleContent;
+        cResult[30] = isPremiumMarketingMomentAnnouncementEligible;
+        tmp74 = isPremiumMarketingMomentAnnouncementEligible;
       } else {
-        tmp82 = cResult[33];
+        tmp74 = cResult[30];
       }
       let dismissibleContent1;
-      const tmp84 = cResult[34];
+      const tmp76 = cResult[31];
       if (mobileBottomSheet != null) {
         dismissibleContent1 = mobileBottomSheet.dismissibleContent;
       }
-      if (tmp84 !== dismissibleContent1) {
+      if (tmp76 !== dismissibleContent1) {
         let dismissibleContent2;
         if (mobileBottomSheet != null) {
           dismissibleContent2 = mobileBottomSheet.dismissibleContent;
@@ -484,150 +493,220 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
           }
           return dismissibleContent === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
         }
-        class B {
+        class Z {
           constructor() {
-            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-            return items;
+            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+            let giftIconCoachmark = null;
+            if (null != marketingComponentByType) {
+              giftIconCoachmark = null;
+              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+              }
+            }
+            return giftIconCoachmark;
           }
         }
-        cResult[34] = dismissibleContent2;
-        cResult[35] = isPremiumMarketingMomentReminderEligible;
-        tmp86 = isPremiumMarketingMomentReminderEligible;
+        cResult[31] = dismissibleContent2;
+        cResult[32] = isPremiumMarketingMomentReminderEligible;
+        tmp78 = isPremiumMarketingMomentReminderEligible;
       } else {
-        tmp86 = cResult[35];
+        tmp78 = cResult[32];
       }
-      _location = tmp88;
-      let closure_13 = tmp89;
-      if (cResult[36] === null != stateFromStores4) {
-        let tmp90;
-        if (cResult[37] === isGiftCoachmarkAssetReady) {
-          tmp90 = cResult[38];
+      let closure_12 = tmp80;
+      let closure_13 = tmp81;
+      if (cResult[33] === null != stateFromStores4) {
+        let tmp82;
+        if (cResult[34] === isGiftCoachmarkAssetReady) {
+          tmp82 = cResult[35];
         }
-        if (cResult[39] === stateFromStores3) {
-          if (cResult[40] === enabled2) {
-            if (cResult[41] === stateFromStores5) {
-              if (cResult[42] === null != stateFromStores4) {
-                if (cResult[43] === null != stateFromStores5) {
-                  if (cResult[44] === tmp60) {
+        if (cResult[36] === stateFromStores3) {
+          if (cResult[37] === enabled2) {
+            if (cResult[38] === stateFromStores5) {
+              if (cResult[39] === null != stateFromStores4) {
+                if (cResult[40] === null != stateFromStores5) {
+                  if (cResult[41] === tmp59) {
                     if (tmp14) {
-                      let tmp93;
-                      let tmp96;
-                      if (cResult[48] !== tmp76) {
-                        const tmp76Result = tmp76();
-                        cResult[48] = tmp76;
-                        class B {
+                      let tmp85;
+                      let tmp88;
+                      if (cResult[45] !== tmp68) {
+                        const tmp68Result = tmp68();
+                        cResult[45] = tmp68;
+                        class Z {
                           constructor() {
-                            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                            return items;
+                            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                            let giftIconCoachmark = null;
+                            if (null != marketingComponentByType) {
+                              giftIconCoachmark = null;
+                              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                              }
+                            }
+                            return giftIconCoachmark;
                           }
                         }
-                        cResult[49] = tmp76Result;
-                        tmp93 = tmp76Result;
+                        cResult[46] = tmp68Result;
+                        tmp85 = tmp68Result;
                       } else {
-                        tmp93 = cResult[49];
+                        tmp85 = cResult[46];
                       }
                       let priceChangeId;
-                      if (tmp19[1] != null) {
-                        priceChangeId = tmp21.priceChangeId;
+                      if (tmp20[1] != null) {
+                        priceChangeId = tmp22.priceChangeId;
                       }
-                      class B {
+                      class Z {
                         constructor() {
-                          const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                          return items;
+                          const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                          let giftIconCoachmark = null;
+                          if (null != marketingComponentByType) {
+                            giftIconCoachmark = null;
+                            if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                              giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                            }
+                          }
+                          return giftIconCoachmark;
                         }
                       }
-                      if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
-                        const obj9 = {};
-                        cResult[50] = obj9;
-                        class B {
+                      if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
+                        const obj7 = {};
+                        cResult[47] = obj7;
+                        class Z {
                           constructor() {
-                            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                            return items;
+                            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                            let giftIconCoachmark = null;
+                            if (null != marketingComponentByType) {
+                              giftIconCoachmark = null;
+                              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                              }
+                            }
+                            return giftIconCoachmark;
                           }
                         }
                       } else {
-                        tmp96 = cResult[50];
+                        tmp88 = cResult[47];
                       }
-                      if (cResult[51] === tmp93) {
-                        let tmp100;
-                        const tmp77Result = tmp77();
-                        class B {
+                      if (cResult[48] === tmp85) {
+                        let tmp92;
+                        const tmp69Result = tmp69();
+                        class Z {
                           constructor() {
-                            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                            return items;
+                            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                            let giftIconCoachmark = null;
+                            if (null != marketingComponentByType) {
+                              giftIconCoachmark = null;
+                              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                              }
+                            }
+                            return giftIconCoachmark;
                           }
                         }
-                        if (cResult[54] !== premiumDiscountOffer) {
-                          let obj11;
+                        if (cResult[51] !== premiumDiscountOffer) {
+                          let obj9;
                           if (null != premiumDiscountOffer) {
-                            obj11 = { userDiscountOffer: premiumDiscountOffer };
-                            const obj10 = { userDiscountOffer: premiumDiscountOffer };
+                            obj9 = { userDiscountOffer: premiumDiscountOffer };
+                            const obj8 = { userDiscountOffer: premiumDiscountOffer };
                           } else {
-                            obj11 = {};
+                            obj9 = {};
                           }
-                          cResult[54] = premiumDiscountOffer;
-                          class B {
+                          cResult[51] = premiumDiscountOffer;
+                          class Z {
                             constructor() {
-                              const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                              return items;
+                              const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                              let giftIconCoachmark = null;
+                              if (null != marketingComponentByType) {
+                                giftIconCoachmark = null;
+                                if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                  giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                }
+                              }
+                              return giftIconCoachmark;
                             }
                           }
-                          cResult[55] = obj11;
-                          tmp100 = obj11;
+                          cResult[52] = obj9;
+                          tmp92 = obj9;
                         } else {
-                          tmp100 = cResult[55];
+                          tmp92 = cResult[52];
                         }
-                        if (cResult[56] === tmp77Result) {
-                          if (cResult[57] === undefined) {
-                            let tmp102;
-                            let tmp105;
-                            if (cResult[60] !== tmp78) {
-                              const tmp78Result = tmp78();
-                              cResult[60] = tmp78;
-                              class B {
+                        if (cResult[53] === tmp69Result) {
+                          if (cResult[54] === undefined) {
+                            let tmp94;
+                            let tmp97;
+                            if (cResult[57] !== tmp70) {
+                              const tmp70Result = tmp70();
+                              cResult[57] = tmp70;
+                              class Z {
                                 constructor() {
-                                  const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                  return items;
+                                  const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                  let giftIconCoachmark = null;
+                                  if (null != marketingComponentByType) {
+                                    giftIconCoachmark = null;
+                                    if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                      giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                    }
+                                  }
+                                  return giftIconCoachmark;
                                 }
                               }
-                              cResult[61] = tmp78Result;
-                              tmp102 = tmp78Result;
+                              cResult[58] = tmp70Result;
+                              tmp94 = tmp70Result;
                             } else {
-                              tmp102 = cResult[61];
+                              tmp94 = cResult[58];
                             }
-                            class B {
+                            class Z {
                               constructor() {
-                                const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                return items;
+                                const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                let giftIconCoachmark = null;
+                                if (null != marketingComponentByType) {
+                                  giftIconCoachmark = null;
+                                  if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                    giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                  }
+                                }
+                                return giftIconCoachmark;
                               }
                             }
-                            if (cResult[62] !== premiumTrialOffer) {
-                              let obj13;
+                            if (cResult[59] !== premiumTrialOffer) {
+                              let obj11;
                               if (null != premiumTrialOffer) {
-                                obj13 = { userTrialOffer: premiumTrialOffer };
-                                const obj12 = { userTrialOffer: premiumTrialOffer };
+                                obj11 = { userTrialOffer: premiumTrialOffer };
+                                const obj10 = { userTrialOffer: premiumTrialOffer };
                               } else {
-                                obj13 = {};
+                                obj11 = {};
                               }
-                              cResult[62] = premiumTrialOffer;
-                              class B {
+                              cResult[59] = premiumTrialOffer;
+                              class Z {
                                 constructor() {
-                                  const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                  return items;
+                                  const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                  let giftIconCoachmark = null;
+                                  if (null != marketingComponentByType) {
+                                    giftIconCoachmark = null;
+                                    if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                      giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                    }
+                                  }
+                                  return giftIconCoachmark;
                                 }
                               }
-                              cResult[63] = obj13;
-                              tmp105 = obj13;
+                              cResult[60] = obj11;
+                              tmp97 = obj11;
                             } else {
-                              tmp105 = cResult[63];
+                              tmp97 = cResult[60];
                             }
-                            if (cResult[64] === tmp102) {
-                              if (cResult[65] === undefined) {
-                                const tmp82Result = tmp82();
-                                class B {
+                            if (cResult[61] === tmp94) {
+                              if (cResult[62] === undefined) {
+                                const tmp74Result = tmp74();
+                                class Z {
                                   constructor() {
-                                    const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                    return items;
+                                    const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                    let giftIconCoachmark = null;
+                                    if (null != marketingComponentByType) {
+                                      giftIconCoachmark = null;
+                                      if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                        giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                      }
+                                    }
+                                    return giftIconCoachmark;
                                   }
                                 }
                                 let id;
@@ -638,19 +717,26 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
                                 if (promotionMarketingComponent != null) {
                                   promotionId = promotionMarketingComponent.promotionId;
                                 }
-                                if (cResult[68] === mobileBottomSheet) {
-                                  if (cResult[69] === id) {
-                                    let tmp111;
-                                    if (cResult[70] === promotionId) {
-                                      tmp111 = cResult[71];
+                                if (cResult[65] === mobileBottomSheet) {
+                                  if (cResult[66] === id) {
+                                    let tmp103;
+                                    if (cResult[67] === promotionId) {
+                                      tmp103 = cResult[68];
                                     }
-                                    if (cResult[72] === tmp82Result) {
-                                      if (cResult[73] === tmp108) {
-                                        const tmp86Result = tmp86();
-                                        class B {
+                                    if (cResult[69] === tmp74Result) {
+                                      if (cResult[70] === tmp100) {
+                                        const tmp78Result = tmp78();
+                                        class Z {
                                           constructor() {
-                                            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                            return items;
+                                            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                            let giftIconCoachmark = null;
+                                            if (null != marketingComponentByType) {
+                                              giftIconCoachmark = null;
+                                              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                              }
+                                            }
+                                            return giftIconCoachmark;
                                           }
                                         }
                                         let id1;
@@ -661,131 +747,180 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
                                         if (promotionMarketingComponent != null) {
                                           promotionId1 = promotionMarketingComponent.promotionId;
                                         }
-                                        if (cResult[76] === mobileBottomSheet) {
-                                          if (cResult[77] === id1) {
-                                            let tmp117;
-                                            if (cResult[78] === promotionId1) {
-                                              tmp117 = cResult[79];
+                                        if (cResult[73] === mobileBottomSheet) {
+                                          if (cResult[74] === id1) {
+                                            let tmp109;
+                                            if (cResult[75] === promotionId1) {
+                                              tmp109 = cResult[76];
                                             }
-                                            if (cResult[80] === tmp86Result) {
-                                              if (cResult[81] === tmp114) {
-                                                let tmp119;
-                                                let tmp121;
-                                                if (cResult[84] !== tmp90) {
-                                                  const tmp90Result = tmp90();
-                                                  cResult[84] = tmp90;
-                                                  class B {
+                                            if (cResult[77] === tmp78Result) {
+                                              if (cResult[78] === tmp106) {
+                                                let tmp111;
+                                                let tmp113;
+                                                if (cResult[81] !== tmp82) {
+                                                  const tmp82Result = tmp82();
+                                                  cResult[81] = tmp82;
+                                                  class Z {
                                                     constructor() {
-                                                      const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                                      return items;
+                                                      const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                                      let giftIconCoachmark = null;
+                                                      if (null != marketingComponentByType) {
+                                                        giftIconCoachmark = null;
+                                                        if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                                          giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                                        }
+                                                      }
+                                                      return giftIconCoachmark;
                                                     }
                                                   }
-                                                  cResult[85] = tmp90Result;
-                                                  tmp119 = tmp90Result;
+                                                  cResult[82] = tmp82Result;
+                                                  tmp111 = tmp82Result;
                                                 } else {
-                                                  tmp119 = cResult[85];
+                                                  tmp111 = cResult[82];
                                                 }
-                                                if (cResult[86] !== stateFromStores4) {
-                                                  const obj14 = { coachmarkComponent: stateFromStores4 };
-                                                  class B {
+                                                if (cResult[83] !== stateFromStores4) {
+                                                  const obj12 = { coachmarkComponent: stateFromStores4 };
+                                                  class Z {
                                                     constructor() {
-                                                      const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                                      return items;
+                                                      const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                                      let giftIconCoachmark = null;
+                                                      if (null != marketingComponentByType) {
+                                                        giftIconCoachmark = null;
+                                                        if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                                          giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                                        }
+                                                      }
+                                                      return giftIconCoachmark;
                                                     }
                                                   }
-                                                  cResult[87] = obj14;
-                                                  tmp121 = obj14;
+                                                  cResult[84] = obj12;
+                                                  tmp113 = obj12;
                                                 } else {
-                                                  tmp121 = cResult[87];
+                                                  tmp113 = cResult[84];
                                                 }
-                                                class B {
+                                                class Z {
                                                   constructor() {
-                                                    const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                                    return items;
+                                                    const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                                    let giftIconCoachmark = null;
+                                                    if (null != marketingComponentByType) {
+                                                      giftIconCoachmark = null;
+                                                      if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                                        giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                                      }
+                                                    }
+                                                    return giftIconCoachmark;
                                                   }
                                                 }
-                                                const obj15 = { isEligible: tmp119, newSnowflakeId: stateFromStores3, actionSheetProperties: tmp121 };
-                                                cResult[88] = stateFromStores3;
-                                                cResult[89] = tmp119;
-                                                cResult[90] = tmp121;
-                                                cResult[91] = obj15;
+                                                const obj13 = { isEligible: tmp111, newSnowflakeId: stateFromStores3, actionSheetProperties: tmp113 };
+                                                cResult[85] = stateFromStores3;
+                                                cResult[86] = tmp111;
+                                                cResult[87] = tmp113;
+                                                cResult[88] = obj13;
                                               }
                                             }
-                                            const obj16 = { isEligible: null, newSnowflakeId: tmp114, actionSheetProperties: tmp117 };
-                                            class B {
+                                            const obj14 = { isEligible: null, newSnowflakeId: tmp106, actionSheetProperties: tmp109 };
+                                            class Z {
                                               constructor() {
-                                                const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                                return items;
+                                                const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                                let giftIconCoachmark = null;
+                                                if (null != marketingComponentByType) {
+                                                  giftIconCoachmark = null;
+                                                  if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                                    giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                                  }
+                                                }
+                                                return giftIconCoachmark;
                                               }
                                             }
-                                            cResult[80] = tmp86Result;
-                                            cResult[81] = tmp114;
-                                            cResult[82] = tmp117;
-                                            cResult[83] = obj16;
+                                            cResult[77] = tmp78Result;
+                                            cResult[78] = tmp106;
+                                            cResult[79] = tmp109;
+                                            cResult[80] = obj14;
                                           }
                                         }
-                                        const obj17 = { bottomSheetData: mobileBottomSheet, componentId: id1, promotionId: promotionId1 };
-                                        cResult[76] = mobileBottomSheet;
-                                        cResult[77] = id1;
-                                        cResult[78] = promotionId1;
-                                        cResult[79] = obj17;
-                                        tmp117 = obj17;
+                                        const obj15 = { bottomSheetData: mobileBottomSheet, componentId: id1, promotionId: promotionId1 };
+                                        cResult[73] = mobileBottomSheet;
+                                        cResult[74] = id1;
+                                        cResult[75] = promotionId1;
+                                        cResult[76] = obj15;
+                                        tmp109 = obj15;
                                       }
                                     }
-                                    const obj18 = { isEligible: null, newSnowflakeId: tmp108, actionSheetProperties: tmp111 };
-                                    class B {
+                                    const obj16 = { isEligible: null, newSnowflakeId: tmp100, actionSheetProperties: tmp103 };
+                                    class Z {
                                       constructor() {
-                                        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                                        return items;
+                                        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                                        let giftIconCoachmark = null;
+                                        if (null != marketingComponentByType) {
+                                          giftIconCoachmark = null;
+                                          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                                          }
+                                        }
+                                        return giftIconCoachmark;
                                       }
                                     }
-                                    cResult[72] = tmp82Result;
-                                    cResult[73] = tmp108;
-                                    cResult[74] = tmp111;
-                                    cResult[75] = obj18;
+                                    cResult[69] = tmp74Result;
+                                    cResult[70] = tmp100;
+                                    cResult[71] = tmp103;
+                                    cResult[72] = obj16;
                                   }
                                 }
-                                const obj19 = { bottomSheetData: mobileBottomSheet, componentId: id, promotionId };
-                                cResult[68] = mobileBottomSheet;
-                                cResult[69] = id;
-                                cResult[70] = promotionId;
-                                cResult[71] = obj19;
-                                tmp111 = obj19;
+                                const obj17 = { bottomSheetData: mobileBottomSheet, componentId: id, promotionId };
+                                cResult[65] = mobileBottomSheet;
+                                cResult[66] = id;
+                                cResult[67] = promotionId;
+                                cResult[68] = obj17;
+                                tmp103 = obj17;
                               }
                             }
-                            const obj20 = { isEligible: tmp102, newSnowflakeId: undefined, actionSheetProperties: tmp105 };
-                            cResult[64] = tmp102;
-                            cResult[65] = undefined;
-                            cResult[66] = tmp105;
-                            cResult[67] = obj20;
+                            const obj18 = { isEligible: tmp94, newSnowflakeId: undefined, actionSheetProperties: tmp97 };
+                            cResult[61] = tmp94;
+                            cResult[62] = undefined;
+                            cResult[63] = tmp97;
+                            cResult[64] = obj18;
                           }
                         }
-                        const obj21 = { isEligible: tmp77Result, newSnowflakeId: undefined, actionSheetProperties: tmp100 };
-                        cResult[56] = tmp77Result;
-                        cResult[57] = undefined;
-                        cResult[58] = tmp100;
-                        cResult[59] = obj21;
+                        const obj19 = { isEligible: tmp69Result, newSnowflakeId: undefined, actionSheetProperties: tmp92 };
+                        cResult[53] = tmp69Result;
+                        cResult[54] = undefined;
+                        cResult[55] = tmp92;
+                        cResult[56] = obj19;
                       }
-                      const obj22 = { isEligible: tmp93, newSnowflakeId: priceChangeId, actionSheetProperties: tmp96 };
-                      cResult[51] = tmp93;
-                      cResult[52] = priceChangeId;
-                      cResult[53] = obj22;
+                      const obj20 = { isEligible: tmp85, newSnowflakeId: priceChangeId, actionSheetProperties: tmp88 };
+                      cResult[48] = tmp85;
+                      cResult[49] = priceChangeId;
+                      cResult[50] = obj20;
                     } else {
                       const _Symbol = Symbol;
-                      if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
-                        const obj23 = {};
-                        cResult[47] = obj23;
-                        class B {
+                      if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
+                        const obj21 = {};
+                        cResult[44] = obj21;
+                        class Z {
                           constructor() {
-                            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                            return items;
+                            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                            let giftIconCoachmark = null;
+                            if (null != marketingComponentByType) {
+                              giftIconCoachmark = null;
+                              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                              }
+                            }
+                            return giftIconCoachmark;
                           }
                         }
                       }
-                      class B {
+                      class Z {
                         constructor() {
-                          const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-                          return items;
+                          const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+                          let giftIconCoachmark = null;
+                          if (null != marketingComponentByType) {
+                            giftIconCoachmark = null;
+                            if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                              giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+                            }
+                          }
+                          return giftIconCoachmark;
                         }
                       }
                     }
@@ -796,8 +931,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
           }
         }
         function isGiftingPromotionReminderEligible() {
-          let tmp = !_location;
-          if (_location) {
+          let tmp = !closure_12;
+          if (closure_12) {
             tmp = !closure_13;
           }
           let tmp3 = !tmp;
@@ -815,65 +950,76 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
           }
           return tmp3;
         }
-        class B {
+        class Z {
           constructor() {
-            const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-            return items;
+            const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+            let giftIconCoachmark = null;
+            if (null != marketingComponentByType) {
+              giftIconCoachmark = null;
+              if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+                giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+              }
+            }
+            return giftIconCoachmark;
           }
         }
-        cResult[39] = stateFromStores3;
-        cResult[40] = enabled2;
-        cResult[41] = stateFromStores5;
-        cResult[42] = null != stateFromStores4;
-        cResult[43] = null != stateFromStores5;
-        cResult[44] = tmp60;
-        cResult[45] = isGiftReminderAssetReady;
-        cResult[46] = isGiftingPromotionReminderEligible;
+        cResult[36] = stateFromStores3;
+        cResult[37] = enabled2;
+        cResult[38] = stateFromStores5;
+        cResult[39] = null != stateFromStores4;
+        cResult[40] = null != stateFromStores5;
+        cResult[41] = tmp59;
+        cResult[42] = isGiftReminderAssetReady;
+        cResult[43] = isGiftingPromotionReminderEligible;
       }
       function isGiftingPromotionFirstTimeEligible() {
-        return _location && isGiftCoachmarkAssetReady;
+        return closure_12 && isGiftCoachmarkAssetReady;
       }
-      cResult[36] = null != stateFromStores4;
-      cResult[37] = isGiftCoachmarkAssetReady;
-      cResult[38] = isGiftingPromotionFirstTimeEligible;
-      tmp90 = isGiftingPromotionFirstTimeEligible;
+      cResult[33] = null != stateFromStores4;
+      cResult[34] = isGiftCoachmarkAssetReady;
+      cResult[35] = isGiftingPromotionFirstTimeEligible;
+      tmp82 = isGiftingPromotionFirstTimeEligible;
     }
-    class B {
+    class Z {
       constructor() {
-        const items = [mobileBottomSheet.getReferralsRemaining({ bypassFetch: true }), mobileBottomSheet.getRecurringReminderStateId()];
-        return items;
+        const marketingComponentByType = stateFromStores5.getMarketingComponentByType(first(premiumDiscountOffer[20]).MarketingComponentType.GIFT_ICON_COACHMARK);
+        let giftIconCoachmark = null;
+        if (null != marketingComponentByType) {
+          giftIconCoachmark = null;
+          if ("giftIconCoachmark" === marketingComponentByType.properties.properties.oneofKind) {
+            giftIconCoachmark = marketingComponentByType.properties.properties.giftIconCoachmark;
+          }
+        }
+        return giftIconCoachmark;
       }
     }
-    cResult[29] = enabled;
-    cResult[30] = premiumTrialOffer;
-    cResult[31] = tmp79;
-    tmp78 = tmp79;
+    cResult[26] = enabled;
+    cResult[27] = premiumTrialOffer;
+    cResult[28] = tmp71;
+    tmp70 = tmp71;
   }
   function isGooglePlayPriceChangeEligible() {
     return first && null != closure_1;
   }
-  cResult[24] = tmp19[1];
-  cResult[25] = first;
-  cResult[26] = isGooglePlayPriceChangeEligible;
-  tmp76 = isGooglePlayPriceChangeEligible;
+  cResult[21] = tmp20[1];
+  cResult[22] = first;
+  cResult[23] = isGooglePlayPriceChangeEligible;
+  tmp68 = isGooglePlayPriceChangeEligible;
 }) : (function useMainViewTooltipActionSheetMap() {
+  let _location;
   let id;
   let id1;
   let id2;
   let id3;
   let isGiftCoachmarkAssetReady;
   let isGiftReminderAssetReady;
-  let items10;
-  let items9;
-  let obj10;
-  let obj13;
-  let obj15;
-  let obj17;
-  let obj19;
-  let obj21;
-  let obj23;
-  let obj28;
-  let obj30;
+  let obj12;
+  let obj14;
+  let obj16;
+  let obj18;
+  let obj20;
+  let obj22;
+  let obj9;
   let priceChangeId;
   let promotionId;
   let promotionId1;
@@ -881,15 +1027,15 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let promotionId3;
   let tmp14;
   let tmp15;
-  let tmp38;
+  let tmp35;
   let tmp8;
   let tmp9;
-  const f133068 = () => {
+  const f135689 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f133070 = () => {
+  const f135691 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -913,30 +1059,30 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     stateFromStores = !tmpResult.isMetaQuest();
   }
   const items2 = [GooglePlayPriceChangeStore];
-  const tmpResult21 = get_initialized;
-  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133068);
-  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133068), 2);
-  const tmpResult22 = usePremiumDiscountOffer;
-  const premiumDiscountOffer = tmpResult22.usePremiumDiscountOffer();
+  const tmpResult19 = get_initialized;
+  [tmp8, tmp9] = tmpResult19.useStateFromStoresArray(items2, f135689);
+  _slicedToArray(tmpResult19.useStateFromStoresArray(items2, f135689), 2);
+  const tmpResult20 = usePremiumDiscountOffer;
+  const premiumDiscountOffer = tmpResult20.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
-  const tmpResult23 = get_initialized;
-  let stateFromStores2 = tmpResult23.useStateFromStores(items3, () => {
+  const tmpResult21 = get_initialized;
+  let stateFromStores2 = tmpResult21.useStateFromStores(items3, () => {
     const RecurringReferralReminderExperiment = require("RecurringReferralReminderExperiment").RecurringReferralReminderExperiment;
     const obj = { location: _location };
     return RecurringReferralReminderExperiment.getConfig(obj, { autoTrackExposure: false }).bottomSheetEnabled;
   });
-  const tmpResult24 = useIsEligibleSenderForReferralProgram;
-  const isEligibleSenderForReferralProgram = tmpResult24.useIsEligibleSenderForReferralProgram(!stateFromStores2);
+  const tmpResult22 = useIsEligibleSenderForReferralProgram;
+  const isEligibleSenderForReferralProgram = tmpResult22.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
-  const tmpResult25 = get_initialized;
-  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133070);
-  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133070), 2);
-  const tmpResult26 = usePremiumTrialOffer;
-  const premiumTrialOffer = tmpResult26.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18117).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const tmpResult23 = get_initialized;
+  [tmp14, tmp15] = tmpResult23.useStateFromStoresArray(items4, f135691);
+  _slicedToArray(tmpResult23.useStateFromStoresArray(items4, f135691), 2);
+  const tmpResult24 = usePremiumTrialOffer;
+  const premiumTrialOffer = tmpResult24.usePremiumTrialOffer();
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18423).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig({ location: tmp5 }).enabled;
-  const tmpResult27 = usePromotionMarketingComponent;
-  const promotionMarketingComponent = tmpResult27.usePromotionMarketingComponent(tmp(10399).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const tmpResult25 = usePromotionMarketingComponent;
+  const promotionMarketingComponent = tmpResult25.usePromotionMarketingComponent(tmp(10495).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -946,8 +1092,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     mobileBottomSheet = promotionMarketingComponent.properties.properties.mobileBottomSheet;
   }
   const items5 = [PromotionsStore];
-  const tmpResult28 = get_initialized;
-  const stateFromStores3 = tmpResult28.useStateFromStores(items5, () => {
+  const tmpResult26 = get_initialized;
+  const stateFromStores3 = tmpResult26.useStateFromStores(items5, () => {
     const giftPromotion = PromotionsStore.getGiftPromotion();
     let id;
     if (giftPromotion != null) {
@@ -956,8 +1102,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     return id;
   });
   const items6 = [PromotionsStore];
-  const tmpResult29 = get_initialized;
-  const stateFromStores4 = tmpResult29.useStateFromStores(items6, () => {
+  const tmpResult27 = get_initialized;
+  const stateFromStores4 = tmpResult27.useStateFromStores(items6, () => {
     const marketingComponentByType = PromotionsStore.getMarketingComponentByType(require("MarketingComponentType").MarketingComponentType.GIFT_ICON_COACHMARK);
     let giftIconCoachmark = null;
     if (null != marketingComponentByType) {
@@ -969,8 +1115,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     return giftIconCoachmark;
   });
   const items7 = [PromotionsStore];
-  const tmpResult30 = get_initialized;
-  const stateFromStores5 = tmpResult30.useStateFromStores(items7, () => {
+  const tmpResult28 = get_initialized;
+  const stateFromStores5 = tmpResult28.useStateFromStores(items7, () => {
     const marketingComponentByType = PromotionsStore.getMarketingComponentByType(require("MarketingComponentType").MarketingComponentType.GIFT_REMINDER_COACHMARK);
     let prop = null;
     if (null != marketingComponentByType) {
@@ -981,19 +1127,19 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10398).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10494).GiftPromotionReminderExperiment;
   let enabled2 = GiftPromotionReminderExperiment.useConfig({ location: tmp5 }).enabled;
-  const tmpResult31 = GiftingBadgesUtils;
-  const giftingBadgeCoachmarkVariant = tmpResult31.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });
+  const tmpResult29 = GiftingBadgesUtils;
+  const giftingBadgeCoachmarkVariant = tmpResult29.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });
   let isDismissed = null != stateFromStores3;
   if (isDismissed) {
-    const tmpResult32 = DismissibleContentUnsafeUtils;
-    isDismissed = tmpResult32.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2052).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
+    const tmpResult30 = DismissibleContentUnsafeUtils;
+    isDismissed = tmpResult30.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4807).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
   }
   let isDismissed2 = null != stateFromStores3;
   if (isDismissed2) {
-    const tmpResult33 = DismissibleContentUnsafeUtils;
-    isDismissed2 = tmpResult33.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2052).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
+    const tmpResult31 = DismissibleContentUnsafeUtils;
+    isDismissed2 = tmpResult31.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4807).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
   }
   let tmp25 = null;
   const tmp4Result = useGiftingPromotionAssetsReadyDefault;
@@ -1006,52 +1152,43 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   ({ isGiftCoachmarkAssetReady, isGiftReminderAssetReady } = tmp4Result(tmp25, tmp26));
   tmp4Result(tmp25, tmp26);
-  const tmpResult34 = useNitroFileUploadMarketingEligible;
-  const nitroFileUploadAnnouncementEligible = tmpResult34.useNitroFileUploadAnnouncementEligible(tmp5);
-  const tmpResult35 = useNitroFileUploadMarketingEligible;
-  const nitroFileUploadUpsellEligible = tmpResult35.useNitroFileUploadUpsellEligible(tmp5);
-  const items8 = [, ];
-  ({ LEAGUE_OF_LEGENDS: arr9[0], RIOT_GAMES: arr9[1] } = PlatformTypes);
-  const tmpResult36 = RobloxConnectionCoachmark;
-  const shouldShowRobloxConnectionCoachmark = tmpResult36.useShouldShowRobloxConnectionCoachmark();
-  const tmpResult37 = ConnectionDeprecationBottomSheet;
-  const shouldShowConnectionDeprecationBottomSheet = tmpResult37.useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
-  const obj5 = { deprecatedPlatformTypes: items9 };
-  items9 = [PlatformTypes.BATTLENET];
-  const tmpResult38 = ConnectionDeprecationBottomSheet;
-  const shouldShowConnectionDeprecationBottomSheet1 = tmpResult38.useShouldShowConnectionDeprecationBottomSheet(obj5);
-  const tmpResult39 = DisplayNameStylesFlywheelExperiment;
-  const isDisplayNameStylesFlywheelSettersEnabled = tmpResult39.useIsDisplayNameStylesFlywheelSettersEnabled(tmp5);
+  const tmpResult32 = useNitroFileUploadMarketingEligible;
+  const nitroFileUploadAnnouncementEligible = tmpResult32.useNitroFileUploadAnnouncementEligible(tmp5);
+  const tmpResult33 = useNitroFileUploadMarketingEligible;
+  const nitroFileUploadUpsellEligible = tmpResult33.useNitroFileUploadUpsellEligible(tmp5);
+  const tmpResult34 = RobloxConnectionCoachmark;
+  const shouldShowRobloxConnectionCoachmark = tmpResult34.useShouldShowRobloxConnectionCoachmark();
+  const tmpResult35 = DisplayNameStylesFlywheelExperiment;
+  const isDisplayNameStylesFlywheelSettersEnabled = tmpResult35.useIsDisplayNameStylesFlywheelSettersEnabled(tmp5);
   CustomTypingIndicatorExperiment;
-  const obj6 = {};
-  const tmp31 = PlatformTypes;
+  const obj5 = {};
   if (stateFromStores) {
-    const GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET = tmp(2052).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET;
-    const obj7 = { isEligible: tmp8, newSnowflakeId: priceChangeId, actionSheetProperties: {} };
+    const GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET = tmp(4807).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET;
+    const obj6 = { isEligible: tmp8, newSnowflakeId: priceChangeId, actionSheetProperties: {} };
     priceChangeId = undefined;
     if (tmp9 != null) {
       priceChangeId = tmp9.priceChangeId;
     }
-    obj6[GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj7;
-    let tmp40 = null != premiumDiscountOffer;
-    const DISCOUNT_OFFER_ACTION_SHEET = tmp(2052).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET;
-    if (tmp40) {
-      tmp40 = null == premiumDiscountOffer.expiresAt;
+    obj5[GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj6;
+    let tmp37 = null != premiumDiscountOffer;
+    const DISCOUNT_OFFER_ACTION_SHEET = tmp(4807).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET;
+    if (tmp37) {
+      tmp37 = null == premiumDiscountOffer.expiresAt;
     }
-    const obj8 = { isEligible: tmp40, newSnowflakeId: id, actionSheetProperties: obj10 };
+    const obj7 = { isEligible: tmp37, newSnowflakeId: id, actionSheetProperties: obj9 };
     id = undefined;
     if (premiumDiscountOffer != null) {
       id = premiumDiscountOffer.id;
     }
     if (null != premiumDiscountOffer) {
-      obj10 = { userDiscountOffer: premiumDiscountOffer };
-      const obj9 = { userDiscountOffer: premiumDiscountOffer };
+      obj9 = { userDiscountOffer: premiumDiscountOffer };
+      const obj8 = { userDiscountOffer: premiumDiscountOffer };
     } else {
-      obj10 = {};
+      obj9 = {};
     }
-    obj6[DISCOUNT_OFFER_ACTION_SHEET] = obj8;
+    obj5[DISCOUNT_OFFER_ACTION_SHEET] = obj7;
     let hasItem = null != premiumTrialOffer;
-    const MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET = tmp(2052).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET;
+    const MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET = tmp(4807).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET;
     if (hasItem) {
       hasItem = null == premiumTrialOffer.expiresAt;
     }
@@ -1061,29 +1198,29 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     if (hasItem) {
       hasItem = set.has(premiumTrialOffer.trialId);
     }
-    const obj11 = { isEligible: hasItem, newSnowflakeId: id1, actionSheetProperties: obj13 };
+    const obj10 = { isEligible: hasItem, newSnowflakeId: id1, actionSheetProperties: obj12 };
     id1 = undefined;
     if (premiumTrialOffer != null) {
       id1 = premiumTrialOffer.id;
     }
     if (null != premiumTrialOffer) {
-      obj13 = { userTrialOffer: premiumTrialOffer };
-      const obj12 = { userTrialOffer: premiumTrialOffer };
+      obj12 = { userTrialOffer: premiumTrialOffer };
+      const obj11 = { userTrialOffer: premiumTrialOffer };
     } else {
-      obj13 = {};
+      obj12 = {};
     }
-    obj6[MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj11;
+    obj5[MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj10;
     let dismissibleContent;
-    const PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL = tmp(2052).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
+    const PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL = tmp(4807).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
     if (mobileBottomSheet != null) {
       dismissibleContent = mobileBottomSheet.dismissibleContent;
     }
-    const obj14 = { isEligible: dismissibleContent === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, newSnowflakeId: promotionId, actionSheetProperties: obj15 };
+    const obj13 = { isEligible: dismissibleContent === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, newSnowflakeId: promotionId, actionSheetProperties: obj14 };
     promotionId = undefined;
     if (promotionMarketingComponent != null) {
       promotionId = promotionMarketingComponent.promotionId;
     }
-    obj15 = { bottomSheetData: mobileBottomSheet, componentId: id2, promotionId: promotionId1 };
+    obj14 = { bottomSheetData: mobileBottomSheet, componentId: id2, promotionId: promotionId1 };
     id2 = undefined;
     if (promotionMarketingComponent != null) {
       id2 = promotionMarketingComponent.id;
@@ -1092,18 +1229,18 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     if (promotionMarketingComponent != null) {
       promotionId1 = promotionMarketingComponent.promotionId;
     }
-    obj6[PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj14;
+    obj5[PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj13;
     let dismissibleContent1;
-    const PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL = tmp(2052).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
+    const PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL = tmp(4807).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
     if (mobileBottomSheet != null) {
       dismissibleContent1 = mobileBottomSheet.dismissibleContent;
     }
-    const obj16 = { isEligible: dismissibleContent1 === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, newSnowflakeId: promotionId2, actionSheetProperties: obj17 };
+    const obj15 = { isEligible: dismissibleContent1 === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL, newSnowflakeId: promotionId2, actionSheetProperties: obj16 };
     promotionId2 = undefined;
     if (promotionMarketingComponent != null) {
       promotionId2 = promotionMarketingComponent.promotionId;
     }
-    obj17 = { bottomSheetData: mobileBottomSheet, componentId: id3, promotionId: promotionId3 };
+    obj16 = { bottomSheetData: mobileBottomSheet, componentId: id3, promotionId: promotionId3 };
     id3 = undefined;
     if (promotionMarketingComponent != null) {
       id3 = promotionMarketingComponent.id;
@@ -1112,66 +1249,59 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     if (promotionMarketingComponent != null) {
       promotionId3 = promotionMarketingComponent.promotionId;
     }
-    obj6[PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj16;
-    let tmp53 = tmp37;
-    const GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET = tmp(2052).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET;
+    obj5[PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj15;
+    let tmp50 = tmp34;
+    const GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET = tmp(4807).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET;
     if (null != stateFromStores4) {
-      tmp53 = isGiftCoachmarkAssetReady;
+      tmp50 = isGiftCoachmarkAssetReady;
     }
-    const obj18 = { isEligible: tmp53, newSnowflakeId: stateFromStores3, actionSheetProperties: obj19 };
-    obj19 = { coachmarkComponent: stateFromStores4 };
-    obj6[GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj18;
-    let tmp54 = !tmp37;
-    const GIFTING_PROMOTION_REMINDER = tmp(2052).DismissibleContent.GIFTING_PROMOTION_REMINDER;
+    const obj17 = { isEligible: tmp50, newSnowflakeId: stateFromStores3, actionSheetProperties: obj18 };
+    obj18 = { coachmarkComponent: stateFromStores4 };
+    obj5[GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj17;
+    let tmp51 = !tmp34;
+    const GIFTING_PROMOTION_REMINDER = tmp(4807).DismissibleContent.GIFTING_PROMOTION_REMINDER;
     if (null != stateFromStores4) {
-      tmp54 = null == stateFromStores5;
+      tmp51 = null == stateFromStores5;
     }
-    let tmp55 = !tmp54;
-    if (tmp55) {
-      let tmp56 = null != stateFromStores3;
-      if (tmp56) {
-        let tmp57 = isDismissed;
-        if (tmp57) {
+    let tmp52 = !tmp51;
+    if (tmp52) {
+      let tmp53 = null != stateFromStores3;
+      if (tmp53) {
+        let tmp54 = isDismissed;
+        if (tmp54) {
           if (enabled2) {
             enabled2 = null != stateFromStores5;
           }
           if (enabled2) {
             enabled2 = isGiftReminderAssetReady;
           }
-          tmp57 = enabled2;
+          tmp54 = enabled2;
         }
-        tmp56 = tmp57;
+        tmp53 = tmp54;
       }
-      tmp55 = tmp56;
+      tmp52 = tmp53;
     }
-    const obj20 = { isEligible: tmp55, newSnowflakeId: stateFromStores3, actionSheetProperties: obj21 };
-    obj21 = { coachmarkComponent: stateFromStores5 };
-    obj6[GIFTING_PROMOTION_REMINDER] = obj20;
-    const obj22 = { isEligible: null != giftingBadgeCoachmarkVariant, actionSheetProperties: obj23 };
-    obj23 = { variant: giftingBadgeCoachmarkVariant };
-    obj6[dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj22;
-    const obj24 = { isEligible: true, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj24;
-    const obj25 = { isEligible: shouldShowRobloxConnectionCoachmark, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj25;
-    const obj26 = { isEligible: isDisplayNameStylesFlywheelSettersEnabled, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj26;
-    const obj27 = { isEligible: shouldShowConnectionDeprecationBottomSheet, actionSheetProperties: obj28 };
-    obj28 = { platformTypes: items8 };
-    obj6[dismissible_content.DismissibleContent.RIOT_CONNECTION_DEPRECATION_DISABLE] = obj27;
-    const obj29 = { isEligible: shouldShowConnectionDeprecationBottomSheet1, actionSheetProperties: obj30 };
-    obj30 = { platformTypes: items10 };
-    items10 = [tmp31.BATTLENET];
-    obj6[dismissible_content.DismissibleContent.BATTLENET_CONNECTION_DEPRECATION_DISABLE] = obj29;
-    const obj31 = { isEligible: true, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj31;
-    const obj32 = { isEligible: nitroFileUploadAnnouncementEligible, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT] = obj32;
-    const obj33 = { isEligible: nitroFileUploadUpsellEligible, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL] = obj33;
-    const obj34 = { isEligible: tmp36, actionSheetProperties: {} };
-    obj6[dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj34;
-    const MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT = tmp(2052).DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT;
+    const obj19 = { isEligible: tmp52, newSnowflakeId: stateFromStores3, actionSheetProperties: obj20 };
+    obj20 = { coachmarkComponent: stateFromStores5 };
+    obj5[GIFTING_PROMOTION_REMINDER] = obj19;
+    const obj21 = { isEligible: null != giftingBadgeCoachmarkVariant, actionSheetProperties: obj22 };
+    obj22 = { variant: giftingBadgeCoachmarkVariant };
+    obj5[dismissible_content.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK] = obj21;
+    const obj23 = { isEligible: true, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.CUSTOM_APP_ICONS_COACHMARK] = obj23;
+    const obj24 = { isEligible: shouldShowRobloxConnectionCoachmark, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.ROBLOX_CONNECTION_COACHMARK] = obj24;
+    const obj25 = { isEligible: isDisplayNameStylesFlywheelSettersEnabled, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_COACHMARK] = obj25;
+    const obj26 = { isEligible: true, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.COLLECTIBLES_PROFILE_FRAMES_ANNOUNCEMENT] = obj26;
+    const obj27 = { isEligible: nitroFileUploadAnnouncementEligible, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_ANNOUNCEMENT] = obj27;
+    const obj28 = { isEligible: nitroFileUploadUpsellEligible, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL] = obj28;
+    const obj29 = { isEligible: tmp33, actionSheetProperties: {} };
+    obj5[dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj29;
+    const MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT = tmp(4807).DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT;
     if (stateFromStores2) {
       stateFromStores2 = isEligibleSenderForReferralProgram;
     }
@@ -1184,13 +1314,13 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
     if (stateFromStores2) {
       stateFromStores2 = null != tmp15;
     }
-    const obj35 = { isEligible: stateFromStores2, newSnowflakeId: tmp15, actionSheetProperties: {} };
-    obj6[MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT] = obj35;
-    tmp38 = obj6;
+    const obj30 = { isEligible: stateFromStores2, newSnowflakeId: tmp15, actionSheetProperties: {} };
+    obj5[MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT] = obj30;
+    tmp35 = obj5;
   } else {
-    tmp38 = obj6;
+    tmp35 = obj5;
   }
-  return tmp38;
+  return tmp35;
 });
 const result = size.fileFinishedImporting("modules/upsell_tooltip/native/useMainViewTooltipActionSheetEligibilityMap.tsx");
 

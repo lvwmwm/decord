@@ -1,28 +1,29 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16632
+// Function ID: 16633
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1207, 16332, 1098, 21, 5191, 587, 5064, 558, 576, 4920, 10529, 1202, 16334, 573, 4913, 16335, 1256, 4927, 1128, 6462, 2]
+// Dependencies: [19, 17, 1207, 16631, 1098, 21, 4971, 587, 4969, 558, 576, 4993, 10625, 1202, 16633, 573, 5252, 16634, 5202, 1256, 5039, 1128, 6908, 2]
 
-// Module 16333 (SettingsAppearanceThemeSelectorItem)
+// Module 16632 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import useToken from "useToken" /* 4913 */;
-import themes from "themes" /* 4920 */;
-import react_native2 from "react-native" /* 4927 */;
-import utils_ColorDefault from "utils/Color" /* 5064 */;
-import Pressables from "Pressables" /* 6462 */;
-import ThemedGradient from "ThemedGradient" /* 10529 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16334 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16335 */;
+import utils_ColorDefault from "utils/Color" /* 4969 */;
+import themes from "themes" /* 4993 */;
+import react_native2 from "react-native" /* 5039 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5202 */;
+import useToken from "useToken" /* 5252 */;
+import Pressables from "Pressables" /* 6908 */;
+import ThemedGradient from "ThemedGradient" /* 10625 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16633 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16634 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16332 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16631 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Defaul
   item = item.item;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ThemeStore];
-    const fn = function n() {
+    const fn = function c() {
       return systemTheme.systemTheme;
     };
     cResult[0] = items;
@@ -416,7 +417,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(10529).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10625).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
@@ -438,136 +439,148 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   let rippleColor;
   let themePreset;
   let themeSelectorItemContainer;
-  let tmp8;
   const obj = react2;
-  const cResult = obj.c(27);
+  const cResult = obj.c(30);
   ({ themePreset, isPreview, isSelected, onPress, isNew } = arg0);
   const tmp4 = closure_8();
-  if (isPreview) {
-    isPreview = themePreset.type !== tmp(1256).ClientThemeType.STANDARD_BACKGROUND_THEME;
-  }
   if (cResult[0] === isPreview) {
     let tmp5;
+    let tmp10;
     if (cResult[1] === themePreset) {
       tmp5 = cResult[2];
     }
-    if (cResult[3] === isSelected) {
-      let tmp13;
-      let tmp15;
-      let tmp17;
-      if (cResult[4] === isPreview) {
-        tmp13 = cResult[5];
+    if (cResult[3] === tmp5) {
+      let tmp7;
+      if (cResult[4] === themePreset) {
+        tmp7 = cResult[5];
       }
-      const tmpResult = react_native2;
-      const radioA11yNative = tmpResult.useRadioA11yNative(tmp13);
-      ({ accessibilityRole, accessibilityState } = radioA11yNative);
-      ({ themeSelectorItemContainer, rippleColor } = tmp4);
-      if (cResult[6] !== themePreset) {
-        const name = themePreset.getName();
-        cResult[6] = themePreset;
-        cResult[7] = name;
-        tmp15 = name;
-      } else {
-        tmp15 = cResult[7];
-      }
-      if (cResult[8] !== isPreview) {
-        let stringResult;
-        if (isPreview) {
-          const intl = tmp(1128).intl;
-          stringResult = intl.string(tmp(1128).t.VqGKm0);
+      if (cResult[6] === isSelected) {
+        let tmp15;
+        let tmp17;
+        let tmp19;
+        if (cResult[7] === tmp5) {
+          tmp15 = cResult[8];
         }
-        cResult[8] = isPreview;
-        cResult[9] = stringResult;
-        tmp17 = stringResult;
-      } else {
-        tmp17 = cResult[9];
-      }
-      if (cResult[10] === isNew) {
-        if (cResult[11] === isSelected) {
-          let tmp19;
-          if (cResult[12] === tmp4.newRedCircle) {
-            tmp19 = cResult[13];
+        const tmpResult = react_native2;
+        const radioA11yNative = tmpResult.useRadioA11yNative(tmp15);
+        ({ accessibilityRole, accessibilityState } = radioA11yNative);
+        ({ themeSelectorItemContainer, rippleColor } = tmp4);
+        if (cResult[9] !== themePreset) {
+          const name = themePreset.getName();
+          cResult[9] = themePreset;
+          cResult[10] = name;
+          tmp17 = name;
+        } else {
+          tmp17 = cResult[10];
+        }
+        if (cResult[11] !== tmp5) {
+          let stringResult;
+          if (tmp5) {
+            const intl = tmp(1128).intl;
+            stringResult = intl.string(tmp(1128).t.VqGKm0);
           }
-          if (cResult[14] === tmp5) {
-            if (cResult[15] === tmp4.themeSelectorItem) {
-              let tmp23;
-              if (cResult[16] === tmp19) {
-                tmp23 = cResult[17];
-              }
-              if (cResult[18] === accessibilityRole) {
-                if (cResult[19] === accessibilityState) {
-                  if (cResult[20] === onPress) {
-                    if (cResult[21] === tmp4.rippleColor) {
-                      if (cResult[22] === tmp4.themeSelectorItemContainer) {
-                        if (cResult[23] === tmp15) {
-                          if (cResult[24] === tmp17) {
-                            let tmp27;
-                            if (cResult[25] === tmp23) {
-                              tmp27 = cResult[26];
+          cResult[11] = tmp5;
+          cResult[12] = stringResult;
+          tmp19 = stringResult;
+        } else {
+          tmp19 = cResult[12];
+        }
+        if (cResult[13] === isNew) {
+          if (cResult[14] === isSelected) {
+            let tmp21;
+            if (cResult[15] === tmp4.newRedCircle) {
+              tmp21 = cResult[16];
+            }
+            if (cResult[17] === tmp7) {
+              if (cResult[18] === tmp4.themeSelectorItem) {
+                let tmp25;
+                if (cResult[19] === tmp21) {
+                  tmp25 = cResult[20];
+                }
+                if (cResult[21] === accessibilityRole) {
+                  if (cResult[22] === accessibilityState) {
+                    if (cResult[23] === onPress) {
+                      if (cResult[24] === tmp4.rippleColor) {
+                        if (cResult[25] === tmp4.themeSelectorItemContainer) {
+                          if (cResult[26] === tmp17) {
+                            if (cResult[27] === tmp19) {
+                              let tmp29;
+                              if (cResult[28] === tmp25) {
+                                tmp29 = cResult[29];
+                              }
+                              return tmp29;
                             }
-                            return tmp27;
                           }
                         }
                       }
                     }
                   }
                 }
+                const obj2 = { style: themeSelectorItemContainer, androidRippleConfig: rippleColor, onPress, accessibilityRole, accessibilityLabel: tmp17, accessibilityState, accessibilityHint: tmp19, children: tmp25 };
+                const tmp31 = metroRequire(Pressables.PressableOpacity, obj2);
+                cResult[21] = accessibilityRole;
+                cResult[22] = accessibilityState;
+                cResult[23] = onPress;
+                cResult[24] = tmp4.rippleColor;
+                cResult[25] = tmp4.themeSelectorItemContainer;
+                cResult[26] = tmp17;
+                cResult[27] = tmp19;
+                cResult[28] = tmp25;
+                cResult[29] = tmp31;
+                tmp29 = tmp31;
               }
-              const obj2 = { style: themeSelectorItemContainer, androidRippleConfig: rippleColor, onPress, accessibilityRole, accessibilityLabel: tmp15, accessibilityState, accessibilityHint: tmp17, children: tmp23 };
-              const tmp29 = metroRequire(Pressables.PressableOpacity, obj2);
-              cResult[18] = accessibilityRole;
-              cResult[19] = accessibilityState;
-              cResult[20] = onPress;
-              cResult[21] = tmp4.rippleColor;
-              cResult[22] = tmp4.themeSelectorItemContainer;
-              cResult[23] = tmp15;
-              cResult[24] = tmp17;
-              cResult[25] = tmp23;
-              cResult[26] = tmp29;
-              tmp27 = tmp29;
             }
+            const obj3 = { style: tmp4.themeSelectorItem, children: items };
+            items = [tmp7, tmp21];
+            const tmp28 = metroImportDefault(View, obj3);
+            cResult[17] = tmp7;
+            cResult[18] = tmp4.themeSelectorItem;
+            cResult[19] = tmp21;
+            cResult[20] = tmp28;
+            tmp25 = tmp28;
           }
-          const obj3 = { style: tmp4.themeSelectorItem, children: items };
-          items = [tmp5, tmp19];
-          const tmp26 = metroImportDefault(View, obj3);
-          cResult[14] = tmp5;
-          cResult[15] = tmp4.themeSelectorItem;
-          cResult[16] = tmp19;
-          cResult[17] = tmp26;
-          tmp23 = tmp26;
         }
+        let tmp22 = isNew && !isSelected;
+        if (tmp22) {
+          const obj4 = { style: tmp4.newRedCircle };
+          tmp22 = metroRequire(View, obj4);
+        }
+        cResult[13] = isNew;
+        cResult[14] = isSelected;
+        cResult[15] = tmp4.newRedCircle;
+        cResult[16] = tmp22;
+        tmp21 = tmp22;
       }
-      let tmp20 = isNew && !isSelected;
-      if (tmp20) {
-        const obj4 = { style: tmp4.newRedCircle };
-        tmp20 = metroRequire(View, obj4);
-      }
-      cResult[10] = isNew;
-      cResult[11] = isSelected;
-      cResult[12] = tmp4.newRedCircle;
-      cResult[13] = tmp20;
-      tmp19 = tmp20;
+      const obj5 = { selected: isSelected, disabled: tmp5 };
+      cResult[6] = isSelected;
+      cResult[7] = tmp5;
+      cResult[8] = obj5;
+      tmp15 = obj5;
     }
-    const obj5 = { selected: isSelected, disabled: isPreview };
-    cResult[3] = isSelected;
-    cResult[4] = isPreview;
-    cResult[5] = obj5;
-    tmp13 = obj5;
+    if (themePreset.type === ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME) {
+      const obj6 = { item: themePreset };
+      tmp10 = metroRequire(closure_13, obj6);
+    } else if (themePreset.type === ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+      const obj7 = { item: themePreset, isThemeLocked: tmp5 };
+      tmp10 = metroRequire(closure_14, obj7);
+    } else {
+      const obj8 = { isThemeLocked: tmp5, item: themePreset };
+      tmp10 = metroRequire(closure_12, obj8);
+    }
+    cResult[3] = tmp5;
+    cResult[4] = themePreset;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
   }
-  if (themePreset.type === ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME) {
-    const obj6 = { item: themePreset };
-    tmp8 = metroRequire(closure_13, obj6);
-  } else if (themePreset.type === ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
-    const obj7 = { item: themePreset, isThemeLocked: isPreview };
-    tmp8 = metroRequire(closure_14, obj7);
-  } else {
-    const obj8 = { isThemeLocked: isPreview, item: themePreset };
-    tmp8 = metroRequire(closure_12, obj8);
+  let result = isPreview;
+  if (result) {
+    const tmpResult2 = MobileThemesUtils;
+    result = tmpResult2.isNitroGatedMobileTheme(themePreset);
   }
   cResult[0] = isPreview;
   cResult[1] = themePreset;
-  cResult[2] = tmp8;
-  tmp5 = tmp8;
+  cResult[2] = result;
+  tmp5 = result;
 }) : (function ThemeSelectorItem(onPress) {
   let accessibilityRole;
   let accessibilityState;
@@ -575,7 +588,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   let isPreview;
   let isSelected;
   let items;
-  let obj5;
+  let obj6;
   let stringResult;
   let themePreset;
   let tmp16;
@@ -585,7 +598,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   onPress = onPress.onPress;
   const tmp = closure_8();
   if (isPreview) {
-    isPreview = themePreset.type !== ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME;
+    const obj = MobileThemesUtils;
+    isPreview = obj.isNitroGatedMobileTheme(themePreset);
   }
   if (themePreset.type === ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     const obj2 = { item: themePreset };
@@ -596,34 +610,34 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
     tmp8 = metroRequire(closure_14, obj3);
     tmp9 = metroRequire;
   } else {
-    const obj = { isThemeLocked: isPreview, item: themePreset };
-    tmp8 = metroRequire(closure_12, obj);
+    const obj4 = { isThemeLocked: isPreview, item: themePreset };
+    tmp8 = metroRequire(closure_12, obj4);
     tmp9 = metroRequire;
   }
   const tmp4Result = react_native2;
   const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj5) };
-  const PressableOpacity = tmp4(6462).PressableOpacity;
+  const obj5 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj6) };
+  const PressableOpacity = tmp4(6908).PressableOpacity;
   stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1128).intl;
     stringResult = intl.string(tmp4(1128).t.VqGKm0);
   }
-  obj5 = { style: tmp.themeSelectorItem, children: items };
+  obj6 = { style: tmp.themeSelectorItem, children: items };
   items = [tmp8, ];
   tmp16 = metroImportDefault;
   if (isNew) {
     isNew = !isSelected;
   }
   if (isNew) {
-    const obj6 = { style: tmp.newRedCircle };
-    isNew = tmp9(tmp17, obj6);
+    const obj7 = { style: tmp.newRedCircle };
+    isNew = tmp9(tmp17, obj7);
   }
   items[1] = isNew;
-  return tmp9(PressableOpacity, obj4);
+  return tmp9(PressableOpacity, obj5);
 });
 size = size_mod;
-const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
+let result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
 
 export default tmp8;

@@ -1,21 +1,19 @@
 // Module ID: 5287
 // Function ID: 5288
-// Dependencies: [680, 549, 5288]
+// Dependencies: []
+// Exports: normalizeSnapPoint
 
 // Module 5287
-import identity from "identity" /* 549 */;
-import getNative from "getNative" /* 680 */;
-import constant from "constant" /* 5288 */;
+const fn = function n(str, arg1) {
+  let result = str;
+  if (typeof str === "string") {
+    const _Number = Number;
+    result = Number(str.split("%")[0]) * arg1 / 100;
+  }
+  return Math.max(0, arg1 - result);
+};
+fn.__closure = {};
+fn.__workletHash = 14612470006791;
+fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
 
-let fn;
-if (getNative) {
-  fn = (arg0, arg1) => {
-    const obj = { configurable: true, enumerable: false, value: constant(arg1), writable: true };
-    const tmp = getNative;
-    return tmp(arg0, "toString", obj);
-  };
-} else {
-  fn = identity;
-}
-
-export default fn;
+export const normalizeSnapPoint = fn;

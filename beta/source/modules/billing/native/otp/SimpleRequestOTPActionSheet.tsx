@@ -1,9 +1,9 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 17067
+// Function ID: 17068
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1392, 6310, 1087, 1394, 21, 3, 1633, 10354, 504, 10831, 7529, 1991, 9699, 13653, 5155, 5400, 7542, 5477, 5187, 6459, 5479, 10489, 558, 576, 1281, 10352, 7118, 10479, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 6824, 1087, 1394, 21, 3, 1633, 10450, 504, 11051, 7649, 1991, 9798, 13882, 5210, 5909, 7662, 5977, 5234, 6905, 5244, 10585, 558, 576, 1281, 10448, 5265, 10575, 2]
 
-// Module 16771 (SimpleRequestOTPActionSheet)
+// Module 17067 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,15 +11,15 @@ import Constants from "Constants" /* 1087 */;
 import v1 from "v1" /* 1281 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10352 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import SKUStore from "SKUStore" /* 6310 */;
+import SKUStore from "SKUStore" /* 6824 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let _require, c4, dependencyMap, ref;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NativePaymentContext = tmp(10479);
+const NativePaymentContext = tmp(10575);
 function GiftPurchaseSKUView(selectedSkuId) {
   let _undefined;
   let closure_2;
@@ -46,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f126400 = () => {
+  const f129001 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -129,12 +129,12 @@ function GiftPurchaseSKUView(selectedSkuId) {
   [first, dependencyMap] = react.useState(false);
   const currentUser = memo1.getCurrentUser();
   _slicedToArray = react.useRef({});
-  let obj2 = selectedSkuId(10354);
+  let obj2 = selectedSkuId(10450);
   const giftStyle = obj2.useNativeGiftContext().giftStyle;
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(10831);
+  let obj4 = selectedSkuId(11051);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -284,10 +284,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(13653)(obj6);
+  closure_8 = tmp(13882)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f126400, items5), 2);
-  tmp3(obj.useMemo(f126400, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f129001, items5), 2);
+  tmp3(obj.useMemo(f129001, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }
@@ -295,9 +295,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
     isFetching = null == product;
   }
   const obj8 = { spacing: 24, style: { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 }, children: items7 };
-  const Stack = tmp7(5477).Stack;
+  const Stack = tmp7(5977).Stack;
   let name;
-  const Text = tmp7(5187).Text;
+  const Text = tmp7(5234).Text;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
@@ -312,9 +312,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
   }
   items6[14] = str;
   items7 = [tmp18(Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
-  const Card = tmp7(6459).Card;
+  const Card = tmp7(6905).Card;
   let str4 = "Send Gift";
-  const Button = tmp7(5479).Button;
+  const Button = tmp7(5244).Button;
   if (isFetching) {
     str4 = "Loading...";
   }
@@ -329,10 +329,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
   };
   items7[1] = closure_12(Card, obj9);
   const obj11 = { children: items9 };
-  const Card2 = tmp7(6459).Card;
+  const Card2 = tmp7(6905).Card;
   const obj12 = { variant: "text-md/medium", color: "text-overlay-light", children: items8 };
   items8 = ["Select style: ", giftStyle];
-  items9 = [tmp18(tmp7(5187).Text, obj12), tmp21(tmp(10489), {})];
+  items9 = [tmp18(tmp7(5234).Text, obj12), tmp21(tmp(10585), {})];
   items7[2] = closure_11(Card2, obj11);
   return closure_11(Stack, obj8);
 }
@@ -414,7 +414,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Simple
         }
         const obj3 = { basePurchaseAnalytics: tmp6, onClose: tmp15, setCurrentAnalyticsStep: tmp16, children: authStore2(GiftPurchaseSKUView, obj4) };
         obj4 = { selectedSkuId, giftRecipientId, giftMessage };
-        const NativeGiftContextProvider = tmp(10354).NativeGiftContextProvider;
+        const NativeGiftContextProvider = tmp(10450).NativeGiftContextProvider;
         cResult[4] = giftMessage;
         cResult[5] = giftRecipientId;
         cResult[6] = selectedSkuId;
@@ -484,7 +484,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Simple
           children: closure_12(GiftPurchaseSKUView, obj3)
         };
         obj3 = { selectedSkuId, giftRecipientId, giftMessage };
-        const NativeGiftContextProvider = tmp(10354).NativeGiftContextProvider;
+        const NativeGiftContextProvider = tmp(10450).NativeGiftContextProvider;
         tmp6Result = closure_12(NativeGiftContextProvider, obj2);
         tmp8 = closure_12;
       }
@@ -495,7 +495,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Simple
   tmp8 = closure_12;
   const items = [closure_12(require("Text/Text").Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
-  const Text = tmp(5187).Text;
+  const Text = tmp(5234).Text;
   const tmp7 = View;
   if (null != requestType) {
     str = requestType;

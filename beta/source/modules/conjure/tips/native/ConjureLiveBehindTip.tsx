@@ -1,34 +1,83 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12349
+// Function ID: 12350
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 12144, 12155, 9705, 1128, 3883, 2]
+// Dependencies: [19, 21, 558, 576, 11877, 1128, 3830, 12290, 12342, 9804, 12333, 2]
 
-// Module 12154 (ConjureLiveBehindTip)
+// Module 12349 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import UploadIcon from "UploadIcon" /* 9705 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12144 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12155 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12290 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12333 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12342 */;
 import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let importDefault;
+
 const jsx = Fragment.jsx;
-const obj = {
-  render(arg0, context) {
-    const publish = context.context.publish;
-    let tmp2 = null;
-    if (null != publish) {
-      ConjureTipHintDefault;
-      const intl = intl2.intl;
-      const obj2 = {
-        onPublish() {
-            return publish.run("outdated_notice");
-          }
-      };
-      tmp2 = <tmp6 icon={UploadIcon.UploadIcon} onDismiss={tmp}>{intl.format(_modDef3883.fWfeZ8, obj2)}</tmp6>;
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBehindHint(projectId) {
+  const tmp = projectId;
+  const obj = projectId(576);
+  const cResult = obj.c(6);
+  projectId = projectId.projectId;
+  const onDismiss = projectId.onDismiss;
+  const context = react.useContext(projectId(11877).ConjurePublishActionContext);
+  if (cResult[0] === context) {
+    let tmp5;
+    if (cResult[1] === projectId) {
+      tmp5 = cResult[2];
     }
-    return tmp2;
+    if (cResult[3] === onDismiss) {
+      let tmp7;
+      if (cResult[4] === tmp5) {
+        tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    context(12342);
+    const tmp11 = <tmp10 icon={tmp(9804).UploadIcon} onDismiss={onDismiss}>{tmp5}</tmp10>;
+    cResult[3] = onDismiss;
+    cResult[4] = tmp5;
+    cResult[5] = tmp11;
+    tmp7 = tmp11;
+  }
+  const intl = tmp(1128).intl;
+  const obj3 = {
+    onPublish() {
+      if (null != context) {
+        ConjurePublishSheetDefault(projectId, tmp.guildId, "outdated_notice");
+      }
+    }
+  };
+  const formatResult = intl.format(context(3830).fWfeZ8, obj3);
+  cResult[0] = context;
+  cResult[1] = projectId;
+  cResult[2] = formatResult;
+  tmp5 = formatResult;
+}) : (function LiveBehindHint(projectId) {
+  let closure_1;
+  projectId = projectId.projectId;
+  const onDismiss = projectId.onDismiss;
+  importDefault = react.useContext(projectId(11877).ConjurePublishActionContext);
+  const tmp = ConjureTipHintDefault;
+  const intl = projectId(1128).intl;
+  const obj2 = {
+    onPublish() {
+      if (null != closure_1) {
+        ConjurePublishSheetDefault(projectId, tmp.guildId, "outdated_notice");
+      }
+    }
+  };
+  return <tmp icon={projectId(9804).UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3830.fWfeZ8, obj2)}</tmp>;
+});
+let obj = {
+  render(arg0, context) {
+    let tmp3 = null;
+    if (null != context.context.publish) {
+      tmp3 = <closure_5 projectId={tmp} onDismiss={tmp2} />;
+    }
+    return tmp3;
   }
 };
 const merged = Object.assign(conjureLiveBehindTip.CONJURE_LIVE_BEHIND_TIP_BASE);

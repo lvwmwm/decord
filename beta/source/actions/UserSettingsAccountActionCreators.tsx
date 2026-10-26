@@ -1,19 +1,19 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 7078
+// Function ID: 7079
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1087, 6189, 584, 1297, 6186, 1114, 1413, 510, 6949, 6953, 6955, 6957, 2]
+// Dependencies: [5, 1087, 6671, 584, 1297, 6668, 1114, 1413, 510, 7079, 7083, 7085, 7087, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6948 (UserSettingsAccountActionCreators)
+// Module 7078 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6186 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6955 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6957 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6668 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7085 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6189 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6671 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -165,7 +165,7 @@ export const disableAccount = function disableAccount(password, arg1) {
   });
 };
 export { saveProfileAndAccountRequest };
-export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(accountUpdateForUpdateRequest) {
+export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(avatar) {
   let avatarDecoration;
   let avatarDescription;
   let avatarOriginalMd5;
@@ -182,11 +182,10 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
   let tmpResult;
   let typingIndicatorStyle;
   let username;
-  let vadColors;
-  const avatar = accountUpdateForUpdateRequest.avatar;
-  const avatarId = accountUpdateForUpdateRequest.avatarId;
-  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, vadColors, typingIndicatorStyle } = accountUpdateForUpdateRequest);
-  ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = accountUpdateForUpdateRequest);
+  avatar = avatar.avatar;
+  const avatarId = avatar.avatarId;
+  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, typingIndicatorStyle } = avatar);
+  ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = avatar);
   let tmp = avatarId;
   let obj = avatarId(584);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
@@ -222,9 +221,6 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.display_name_effect_id = null;
     user.display_name_colors = null;
   }
-  if (undefined !== vadColors) {
-    user.vad_colors = vadColors;
-  }
   if (undefined !== typingIndicatorStyle) {
     let result = null;
     if (null != typingIndicatorStyle) {
@@ -252,8 +248,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6953).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(6949);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7083).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(7079);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

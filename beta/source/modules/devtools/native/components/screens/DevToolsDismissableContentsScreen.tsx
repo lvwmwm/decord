@@ -1,31 +1,31 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 16978
+// Function ID: 16979
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 2055, 21, 5191, 587, 558, 576, 2052, 16683, 7172, 10637, 6542, 6457, 2049, 5148, 6466, 16684, 7016, 5187, 9822, 6374, 1633, 11401, 504, 7091, 2]
+// Dependencies: [32, 19, 17, 4810, 21, 4971, 587, 558, 576, 4807, 16979, 7295, 5641, 6987, 6903, 4804, 5689, 6912, 16980, 7145, 5234, 9920, 6827, 1633, 11554, 504, 7220, 2]
 
-// Module 16682 (DevToolsDismissableContentsScreen)
+// Module 16978 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import TrashIcon from "TrashIcon" /* 5148 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6374 */;
-import TableRow4 from "TableRow" /* 6457 */;
-import TableRowArrow from "TableRowArrow" /* 6466 */;
-import TableRowGroup3 from "TableRowGroup" /* 6542 */;
-import SearchField from "SearchField" /* 7016 */;
-import SearchEmpty from "SearchEmpty" /* 9822 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10637 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16683 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 16684 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5641 */;
+import TrashIcon from "TrashIcon" /* 5689 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
+import TableRow4 from "TableRow" /* 6903 */;
+import TableRowArrow from "TableRowArrow" /* 6912 */;
+import TableRowGroup3 from "TableRowGroup" /* 6987 */;
+import SearchBar from "SearchBar" /* 7145 */;
+import SearchEmpty from "SearchEmpty" /* 9920 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16979 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 16980 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentFrameworkStore_mod from "DismissibleContentFrameworkStore" /* 2055 */;
+import DismissibleContentFrameworkStore_mod from "DismissibleContentFrameworkStore" /* 4810 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const TableSwitchRow3 = tmp(7172);
-const f126068 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+const TableSwitchRow3 = tmp(7295);
+const f128665 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 let DismissibleContentFrameworkStore = DismissibleContentFrameworkStore_mod;
@@ -130,7 +130,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   const tmp4 = closure_10();
   if (cResult[0] !== dailyCapOverridden) {
     const obj2 = { onValueChange: DismissibleContentFrameworkActionCreators.overrideDismissibleContentFramework, value: dailyCapOverridden, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
-    const TableSwitchRow = tmp(7172).TableSwitchRow;
+    const TableSwitchRow = tmp(7295).TableSwitchRow;
     const tmp7 = metroImportDefault(TableSwitchRow, obj2);
     cResult[0] = dailyCapOverridden;
     cResult[1] = tmp7;
@@ -140,7 +140,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   }
   if (cResult[2] !== newUserMinAgeRequiredOverridden) {
     const obj3 = { onValueChange: DismissibleContentFrameworkActionCreators.overrideNewUserMinAgeRequired, value: newUserMinAgeRequiredOverridden, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
-    const TableSwitchRow2 = tmp(7172).TableSwitchRow;
+    const TableSwitchRow2 = tmp(7295).TableSwitchRow;
     const tmp10 = metroImportDefault(TableSwitchRow2, obj3);
     cResult[2] = newUserMinAgeRequiredOverridden;
     cResult[3] = tmp10;
@@ -165,7 +165,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { label: "Clear all dismissed dismissible contents", onPress: UserSettingsProtoActionCreators.clearDismissedContents, icon: metroImportDefault(TrashIcon.TrashIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
-        const TableRow = tmp(6457).TableRow;
+        const TableRow = tmp(6903).TableRow;
         const tmp20 = metroImportDefault(TableRow, obj4);
         cResult[10] = tmp20;
         tmp18 = tmp20;
@@ -175,7 +175,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { label: "Clear all guild dismissed dismissible contents", onPress: UserSettingsProtoActionCreators.clearGuildDismissedContents, icon: metroImportDefault(TrashIcon.TrashIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
-        const TableRow2 = tmp(6457).TableRow;
+        const TableRow2 = tmp(6903).TableRow;
         const tmp23 = metroImportDefault(TableRow2, obj5);
         cResult[11] = tmp23;
         tmp21 = tmp23;
@@ -186,9 +186,9 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { title: "Bulk actions", hasIcons: true, children: items };
         items = [tmp18, tmp21, ];
-        const TableRowGroup = tmp(6542).TableRowGroup;
+        const TableRowGroup = tmp(6987).TableRowGroup;
         const obj7 = { label: "Dismiss all dismissible contents", onPress: UserSettingsProtoActionCreators.checkAllDismissedContents, icon: metroImportDefault(DoubleCheckmarkIcon.DoubleCheckmarkIcon, {}), trailing: metroImportDefault(TableRowArrow.TableRowArrow, {}) };
-        const TableRow3 = tmp(6457).TableRow;
+        const TableRow3 = tmp(6903).TableRow;
         items[2] = metroImportDefault(TableRow3, obj7);
         const tmp27 = metroImportAll(TableRowGroup, obj6);
         cResult[12] = tmp27;
@@ -254,7 +254,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         tmp35 = tmp38;
       }
       const obj12 = { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange };
-      const tmp34 = metroImportDefault(SearchField.SearchField, obj12);
+      const tmp34 = metroImportDefault(SearchBar.SearchBar, obj12);
       cResult[15] = initialSearchQuery;
       cResult[16] = onSearchChange;
       cResult[17] = tmp34;
@@ -312,7 +312,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   const TableRow3 = TableRow4.TableRow;
   items2[2] = metroImportDefault(TableRow3, obj10);
   items1[1] = metroImportDefault(View, obj6);
-  const obj11 = { style: tmp.search, children: metroImportDefault(SearchField.SearchField, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) };
+  const obj11 = { style: tmp.search, children: metroImportDefault(SearchBar.SearchBar, { size: "md", defaultValue: initialSearchQuery, onChange: onSearchChange }) };
   items1[2] = metroImportDefault(View, obj11);
   const obj12 = { style: tmp.sectionHeader, variant: "text-sm/semibold", color: "text-default", children: "Dismissible Contents" };
   items1[3] = metroImportDefault(Text_Text.Text, obj12);
@@ -331,7 +331,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { style: obj3, variant: "heading-lg/semibold", children: "No results found" };
     obj3 = { marginBottom: nativeDefault.space.PX_16 };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5234).Text;
     const tmp9 = metroImportDefault(Text, obj2);
     const tmp10 = metroImportDefault(SearchEmpty.SearchEmpty, {});
     cResult[0] = tmp9;
@@ -433,7 +433,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
@@ -545,7 +545,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
@@ -583,7 +583,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
@@ -618,14 +618,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         return items;
       }
     }
   }
   DismissibleContentFrameworkStore = tmp18;
   if (cResult[7] !== tmp8[1]) {
-    class F {
+    class U {
       constructor(str) {
         closure_3(str);
         const items = [];
@@ -651,15 +651,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         tmp2(items);
         tmp19();
       }
     }
     cResult[7] = tmp8[1];
-    cResult[8] = F;
+    cResult[8] = U;
   } else {
-    class F {
+    class U {
       constructor(str) {
         closure_3(str);
         const items = [];
@@ -685,7 +685,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
           }
           continue;
         }
-        const sorted = items.sort(f126068);
+        const sorted = items.sort(f128665);
         tmp2(items);
         tmp19();
       }
@@ -732,7 +732,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
   importDefault = initialSearchQuery.useRef(0);
-  let obj = ref(11401);
+  let obj = ref(11554);
   let tmp4 = _slicedToArray(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   [dependencyMap, tmp5] = tmp4;
   _slicedToArray = tmp5;
@@ -770,7 +770,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
       }
       continue;
     }
-    const sorted = items.sort(f126068);
+    const sorted = items.sort(f128665);
     return items;
   });
   let items = [closure_6];
@@ -816,7 +816,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
       }
       continue;
     }
-    const sorted = items.sort(f126068);
+    const sorted = items.sort(f128665);
     tmp2(items);
     callback();
   }, items1);
@@ -853,7 +853,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDism
   };
   items4 = [tmp.contentContainer, ];
   const obj5 = { paddingBottom: tmp2.bottom + nativeDefault.space.PX_16 };
-  FlashList = ref(7091).FlashList;
+  FlashList = ref(7220).FlashList;
   items4[1] = obj5;
   return dailyCapOverridden(first1, obj3);
 });

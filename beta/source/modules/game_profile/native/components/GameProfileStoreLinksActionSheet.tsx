@@ -1,23 +1,23 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9296
+// Function ID: 9297
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 9159, 4901, 1633, 1128, 5187, 5479, 5155, 7175, 6584, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9254, 5660, 1633, 1128, 5234, 5244, 5210, 7298, 5269, 2]
 
-// Module 9201 (GameProfileStoreLinksActionSheet)
+// Module 9296 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import BottomSheetModal from "BottomSheetModal" /* 6584 */;
-import ActionSheet2 from "ActionSheet" /* 7175 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import BottomSheetModal from "BottomSheetModal" /* 5269 */;
+import LinkingDefault from "Linking" /* 5660 */;
+import ActionSheet2 from "ActionSheet" /* 7298 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
   }
   if (cResult[3] !== tmp4.headerText) {
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp9 };
-    const tmp13 = closure_4(trackAction(5187).Text, obj3);
+    const tmp13 = closure_4(trackAction(5234).Text, obj3);
     cResult[3] = tmp4.headerText;
     cResult[4] = tmp13;
     tmp11 = tmp13;
@@ -126,8 +126,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
                   return tmp30;
                 }
               }
-              const obj5 = { children: closure_5(trackAction(6584).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(7175).ActionSheet;
+              const obj5 = { children: closure_5(trackAction(5269).BottomSheetScrollView, obj6) };
+              const ActionSheet = tmp(7298).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
     cResult[13] = tmp21;
     tmp18 = tmp21;
   }
-  const tmp17 = closure_4(trackAction(5187).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
+  const tmp17 = closure_4(trackAction(5234).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
   cResult[7] = tmp4.headerText;
   cResult[8] = tmp14;
   cResult[9] = tmp17;

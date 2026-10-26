@@ -1,13 +1,13 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7156
+// Function ID: 7157
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7028, 5063, 558, 576, 2]
+// Dependencies: [19, 17, 7157, 4968, 558, 576, 2]
 
-// Module 7027 (useFastestListPropsPlaceholder)
+// Module 7156 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 5063 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7028 */;
+import ColorUtils from "ColorUtils" /* 4968 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7157 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "application", borderBottomLeftRadius: "space", borderBottomRightRadius: "toCharArray$esjava$1", divider: "Array", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "ix", dividerPaddingRight: "user", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "r", placeholderShapeCount: "__initData", placeholderShapeGap: "Icon", placeholderShapePaddingHorizontal: "content", placeholderShapePaddingVertical: "accessible", placeholderFeedBackgroundColor: "mn", placeholderFeedColor: "push", placeholderFeedLabelPadding: "o", placeholderFeedLabelPaddingInnerRatio: "body", placeholderFeedLabelSize: "ao", placeholderFeedLabelSecondarySize: "Array", placeholderFeedPadding: "ix", placeholderFeedShape: "transform", placeholderFeedShapeSize: "value", placeholderType: NONE, width: null, height: 8, verticalAlignment: "button", horizontalAlignment: null };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "ti", borderBottomRightRadius: "ks", divider: "cursor", dividerColor: "color", dividerPaddingLeft: "flags", dividerPaddingRight: "Button", placeholderShape: "channel", placeholderShapeColor: "index", placeholderShapeCount: "flexDirection", placeholderShapeGap: "resizeMode", placeholderShapePaddingHorizontal: "o", placeholderShapePaddingVertical: "transform", placeholderFeedBackgroundColor: "ix", placeholderFeedColor: "flags", placeholderFeedLabelPadding: "Button", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "ix", placeholderFeedLabelSecondarySize: "url", placeholderFeedPadding: "width", placeholderFeedShape: "enabled", placeholderFeedShapeSize: "o", placeholderType: NONE, width: null, height: null, verticalAlignment: 1518500249, horizontalAlignment: 1859775393 };
   if (null == listFooter) {
     return size;
   } else {

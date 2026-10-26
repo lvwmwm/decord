@@ -1,27 +1,27 @@
-// Module ID: 13325
-// Function ID: 13326
+// Module ID: 13564
+// Function ID: 13565
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9683, 21, 5191, 587, 558, 576, 1633, 6942, 1499, 13326, 13327, 13328, 4945, 2]
+// Dependencies: [19, 17, 9782, 21, 4971, 587, 558, 576, 1633, 5593, 1499, 13565, 13566, 13567, 5052, 2]
 
-// Module 13325 (ChatPlaceholder)
+// Module 13564 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9683 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13326 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13327 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13328 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9782 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13565 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13566 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13567 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp3;
-const useSafeAreaInsetsKeyboardAwareDefault = tmp3(6942);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp3(5593);
 const StyleSheet = react_native.StyleSheet;
 let closure_4 = useChatBottomManagerUIStore.useChatInputContainerHeight;
 const jsx = Fragment.jsx;
@@ -168,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                   return tmp24;
                 }
-                const tmp26 = jsx(tmp14(4945).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
+                const tmp26 = jsx(tmp14(5052).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
                 cResult[15] = tmp12;
                 cResult[16] = tmp23;
                 cResult[17] = tmp26;

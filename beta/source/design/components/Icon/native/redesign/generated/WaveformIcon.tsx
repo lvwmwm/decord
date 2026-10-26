@@ -1,14 +1,14 @@
-// Module ID: 13531
-// Function ID: 13532
+// Module ID: 13770
+// Function ID: 13771
 // Name: WaveformIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13532, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13771, 5668, 2]
 
-// Module 13531 (WaveformIcon)
+// Module 13770 (WaveformIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 13532 */;
+import BaseIconImage2 from "BaseIconImage" /* 5668 */;
+import AssetRegistry from "AssetRegistry" /* 13771 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WaveformIc
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5668).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

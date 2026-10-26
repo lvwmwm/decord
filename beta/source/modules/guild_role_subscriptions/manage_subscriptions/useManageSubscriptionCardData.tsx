@@ -1,17 +1,17 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16580
+// Function ID: 16581
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2090, 4838, 1087, 4797, 7216, 1128, 558, 576, 16272, 504, 16270, 2]
+// Dependencies: [32, 19, 4845, 4896, 1087, 2049, 7339, 1128, 558, 576, 16571, 504, 16569, 2]
 
-// Module 16281 (useManageSubscriptionCardData)
+// Module 16580 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import PriceUtils from "PriceUtils" /* 7216 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import PriceUtils from "PriceUtils" /* 7339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildStore_mod from "GuildStore" /* 4845 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ function computeSubscriptionInfo(subscription) {
   let stringResult;
   subscription = subscription.subscription;
   let str = "";
-  const obj = _modDef4797(subscription.currentPeriodEnd);
+  const obj = _modDef2049(subscription.currentPeriodEnd);
   const formatResult = obj.format("M/D/YY");
   if (null != subscription.price) {
     const obj2 = PriceUtils;
     str = obj2.formatPrice(subscription.price, subscription.currency);
   }
-  const obj3 = _modDef4797(subscription.createdAt);
+  const obj3 = _modDef2049(subscription.createdAt);
   const obj4 = { memberSince: obj3.format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: stringResult, subscriptionPrice: str, isCancelled: subscription.status === SubscriptionStatusTypes.CANCELED, isPastDue: status === PAST_DUE, isTrial: hasActiveTrial };
   status = subscription.status;
   PAST_DUE = SubscriptionStatusTypes.PAST_DUE;

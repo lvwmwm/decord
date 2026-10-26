@@ -1,28 +1,166 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7878
+// Function ID: 7879
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 6153, 2068, 2090, 4845, 2119, 2076, 7750, 7315, 6377, 7760, 6145, 6156, 7710, 7761, 2]
+// Dependencies: [5, 6642, 4823, 4845, 4903, 4874, 4831, 7869, 7435, 6830, 7879, 6634, 6645, 7829, 7880, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7759 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7750 */;
+// Module 7878 (StageChannelModalActionCreators)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c3, c4, isStreamMarkedFull;
+let _require, c5, c6, isStreamMarkedFull;
 
+let obj = function _connectOrLurkStage() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj6;
+    let obj9;
+    function waitForChannel(arg0) {
+      closure_0 = arg0;
+      const promise = new Promise((arg0) => {
+        closure_0 = arg0;
+        const result = closure_1_7.addConditionalChangeListener(() => {
+          channel = channel.getChannel(closure_0);
+          let flag = null == channel;
+          if (!flag) {
+            closure_0(channel);
+            flag = false;
+          }
+          return flag;
+        });
+      });
+      return promise;
+    }
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let value2;
+        let flag;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            value2 = tmp4;
+            value = tmp;
+            flag = closure_2;
+            if (closure_2 === undefined) {
+              flag = false;
+            }
+            value = undefined;
+            value2 = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Reflect", done: true };
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            value = closure_132_6.getChannel(closure_1);
+            if (null != value) {
+              closure_132_11(value, flag);
+              c6 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              const items = [closure_0];
+              c5 = 2;
+              c6 = 1;
+              const obj7 = { value: obj9.stopLurkingAll(items), done: false };
+              obj9 = closure_132_0(closure_132_3[8]);
+              return obj7;
+            }
+          }
+        } else if (2 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            c5 = 3;
+            c6 = 1;
+            const obj10 = { value: obj6.joinGuild(closure_0, { lurker: true }), done: false };
+            obj6 = closure_132_1(closure_132_3[9]);
+            return obj10;
+          }
+        } else if (3 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
+          } else {
+            c5 = 4;
+            c6 = 1;
+            const obj12 = { value: waitForChannel(closure_1), done: false };
+            return obj12;
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          const obj13 = { value, done: true };
+          return obj13;
+        } else {
+          value2 = value;
+          closure_132_11(value2);
+          obj = closure_132_1(closure_132_3[10]);
+          obj.initialize();
+          c6 = 3;
+          const obj14 = { value: value2, done: true };
+          return obj14;
+        }
+      } catch (tmp33) {
+        c6 = 3;
+        throw tmp33;
+      }
+    }
+  });
+  return obj(...arguments);
+};
 function connectToStage(channel, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = SelectedChannelStore;
+  obj = SelectedChannelStore;
   if (!flag) {
     _require = channel;
     const canResult = PermissionStore.can(require("StageChannelPermissions").JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
@@ -32,7 +170,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(7750);
+        const tmp7Result = tmp7(7869);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -52,7 +190,7 @@ function connectToStage(channel, flag) {
     const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((item) => {
       isStreamMarkedFull = isStreamMarkedFull.isStreamMarkedFull;
-      const obj = channel(dependencyMap[12]);
+      obj = channel(dependencyMap[12]);
       return !isStreamMarkedFull(obj.encodeStreamKey(item));
     });
     if (null != found) {
@@ -77,134 +215,34 @@ function connectAndOpen(channel, flag, flag2, arg3) {
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
   let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    const obj = require("shouldShowVoiceChannelChangeConfirmation");
+    obj = require("shouldShowVoiceChannelChangeConfirmation");
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(7750);
+    const obj2 = flag2(7869);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(7750);
+      const obj3 = flag2(7869);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }
 }
 let result = size.fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
-export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let obj2;
-    let obj5;
-    closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        const tmp4 = c3;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_2 = tmp4;
-            closure_1 = tmp;
-            channel = channel.getChannel(closure_1);
-            const tmp23 = closure_0;
-            if (null != channel) {
-              connectToStage(channel, closure_2);
-              c4 = 3;
-              const obj6 = { value: tmp23(channel), done: true };
-              return obj6;
-            } else {
-              const items = [closure_0];
-              c3 = 1;
-              c4 = 1;
-              const obj7 = { value: obj5.stopLurkingAll(items), done: false };
-              obj5 = closure_0(dependencyMap[8]);
-              return obj7;
-            }
-          }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            c3 = 2;
-            c4 = 1;
-            const obj9 = { value: obj2.joinGuild(closure_0, { lurker: true }), done: false };
-            obj2 = closure_2_1(dependencyMap[9]);
-            return obj9;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          let obj = { value, done: true };
-          return obj;
-        } else {
-          const result = GuildStore.addConditionalChangeListener(() => {
-            channel = channel.getChannel(closure_1);
-            flag = null == channel;
-            if (!flag) {
-              closure_3_10(channel);
-              const obj = closure_3_1(closure_3_3[10]);
-              obj.initialize();
-              closure_1_0(channel);
-              flag = false;
-            }
-            return flag;
-          });
-          c4 = 3;
-          return { value: "IconComponent", done: null };
-        }
-      } catch (tmp19) {
-        c4 = 3;
-        throw tmp19;
-      }
-    }
-  });
-  const promise = new Promise(function() {
-    return closure_0(...arguments);
-  });
-  return promise;
+export const connectOrLurkStage = function connectOrLurkStage() {
+  return obj(...arguments);
 };
 export { connectToStage };
 export { connectAndOpen };
 export const navigateToStage = function navigateToStage(arg0, arg1) {
-  const obj = StageChannelActionCreatorExtrasAll;
+  obj = StageChannelActionCreatorExtrasAll;
   obj.navigateToStage(arg0, arg1);
 };
 export const showUserProfile = function showUserProfile(arg0) {
-  const obj = StageChannelActionCreatorExtrasAll;
+  obj = StageChannelActionCreatorExtrasAll;
   const result = obj.showPlatformUserProfile(arg0);
 };

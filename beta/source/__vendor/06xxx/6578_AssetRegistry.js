@@ -1,0 +1,10 @@
+// Module ID: 6578
+// Function ID: 6579
+// Name: AssetRegistry
+// Dependencies: [1134]
+
+// Module 6578 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1134 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "8e2bbfe1d3e4356ba435a2b178386105", name: "img_account_sync_epic_light", type: "svg" });

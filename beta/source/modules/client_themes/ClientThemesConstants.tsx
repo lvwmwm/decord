@@ -1,7 +1,7 @@
 // Module ID: 1255
 // Function ID: 1256
 // Name: ClientThemesConstants
-// Dependencies: [1098, 1211, 1256, 1128, 12, 2]
+// Dependencies: [1098, 1211, 1256, 1128, 4247, 12, 2]
 // Exports: isSelectableGradientPreset
 
 // Module 1255 (ClientThemesConstants)
@@ -9,6 +9,7 @@ import Constants from "Constants" /* 1098 */;
 import intl2 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
+import _modDef4247 from "module_4247" /* 4247 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -28,6 +29,7 @@ let items22;
 let items23;
 let items24;
 let items25;
+let items26;
 let items3;
 let items4;
 let items5;
@@ -395,28 +397,44 @@ const obj23 = {
   midpointPercentage: 50
 };
 items25 = [{ token: "BG_GRADIENT_EASTER_EGG_1", stop: 4 }, { token: "BG_GRADIENT_EASTER_EGG_2", stop: 96 }];
-const items26 = [...items11, obj22, obj23];
-const items27 = [obj22, ];
-items27[HermesBuiltin.arraySpread(items27, items2, HermesBuiltin.arraySpread(items27, items11, 1))] = obj23;
-const items28 = [{ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: DARK, getName }, , , ];
+const obj24 = {
+  type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
+  id: preloaded_user_settings.BackgroundGradientPresetId.HEXAGON,
+  theme: DARK,
+  colors: items26,
+  angle: 135,
+  getName() {
+    const intl = intl2.intl;
+    return intl.string(_modDef4247["+xs8ZP"]);
+  },
+  midpointPercentage: 35,
+  unsupported_overlayOpacityMultiplier: 0.8
+};
+items26 = [{ token: "BG_GRADIENT_HEXAGON_4", stop: 0 }, { token: "BG_GRADIENT_HEXAGON_3", stop: 33.33 }, { token: "BG_GRADIENT_HEXAGON_2", stop: 66.67 }, { token: "BG_GRADIENT_HEXAGON_1", stop: 100 }];
+const items27 = [...items11, obj22, obj23];
+const items28 = [obj22, ];
+items28[HermesBuiltin.arraySpread(items28, items2, HermesBuiltin.arraySpread(items28, items11, 1))] = obj23;
+const items29 = [{ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: DARK, getName }, , , ];
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: DARK, getName });
-items28[1] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName2 };
+items29[1] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName2 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName2 });
-items28[2] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName3 };
+items29[2] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName3 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName3 });
-items28[3] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName4 };
+items29[3] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName4 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName4 });
-const items29 = [{ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName5 }, , , , ];
+const items30 = [{ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName5 }, , , , ];
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.LIGHT, getName: getName5 });
-items29[1] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ASH, getName: getName6 };
+items30[1] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ASH, getName: getName6 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ASH, getName: getName6 });
-items29[2] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.DARK, getName: getName7 };
+items30[2] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.DARK, getName: getName7 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.DARK, getName: getName7 });
-items29[3] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName8 };
+items30[3] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName8 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: ThemeTypes.ONYX, getName: getName8 });
-items29[4] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName9 };
+items30[4] = { type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName9 };
 ({ type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME, theme: "system", getName: getName9 });
-const keyByResult = module_12.keyBy(items26, "id");
+const items31 = [];
+items31[HermesBuiltin.arraySpread(items31, items27, 0)] = obj24;
+const keyByResult = module_12.keyBy(items31, "id");
 const result = size.fileFinishedImporting("modules/client_themes/ClientThemesConstants.tsx");
 
 export const BASIC_DARK_THEMES = items;
@@ -425,10 +443,11 @@ export const isSelectableGradientPreset = function isSelectableGradientPreset(id
 };
 export const LIGHT_BACKGROUND_GRADIENT_PRESETS = items2;
 export const DARK_BACKGROUND_GRADIENT_PRESETS = items11;
-export const BACKGROUND_GRADIENT_PRESETS = items26;
-export const BACKGROUND_GRADIENT_PRESETS_MOBILE = items27;
+export const HEXAGON_GRADIENT_PRESET = obj24;
+export const BACKGROUND_GRADIENT_PRESETS = items27;
+export const BACKGROUND_GRADIENT_PRESETS_MOBILE = items28;
 export const StandardBackgroundThemeIndex = { DARK: 0, [0]: "DARK", LIGHT: 1, [1]: "LIGHT", SYSTEM: 2, [2]: "SYSTEM" };
-export const LEGACY_STANDARD_BACKGROUND_THEMES = items28;
-export const REFRESH_STANDARD_BACKGROUND_THEMES = items29;
+export const LEGACY_STANDARD_BACKGROUND_THEMES = items29;
+export const REFRESH_STANDARD_BACKGROUND_THEMES = items30;
 export const BACKGROUND_GRADIENT_PRESETS_MAP = keyByResult;
 export const ThemeIconSizes = { SIZE_48: 48, [48]: "SIZE_48", SIZE_60: 60, [60]: "SIZE_60" };

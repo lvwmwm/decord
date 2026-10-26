@@ -1,15 +1,15 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14385
+// Function ID: 14386
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 7285, 1128, 2]
+// Dependencies: [558, 576, 7406, 1128, 2]
 
-// Module 14149 (useGameNameAndCoverImage)
+// Module 14385 (useGameNameAndCoverImage)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 7285 */;
+import useGame from "useGame" /* 7406 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNameAndCoverImage(arg0, arg1, c8) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNameAndCoverImage(arg0, arg1, coverImageSize) {
   let data;
   let isLoading;
   const obj = react;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   ({ data, isLoading } = game);
   if (cResult[0] === data) {
     let tmp5;
-    if (cResult[1] === c8) {
+    if (cResult[1] === coverImageSize) {
       tmp5 = cResult[2];
     }
     let name;
@@ -70,13 +70,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   }
   let coverURL;
   if (data != null) {
-    coverURL = data.getCoverURL(c8);
+    coverURL = data.getCoverURL(coverImageSize);
   }
   cResult[0] = data;
-  cResult[1] = c8;
+  cResult[1] = coverImageSize;
   cResult[2] = coverURL;
   tmp5 = coverURL;
-}) : (function useGameNameAndCoverImage(arg0, arg1, c8) {
+}) : (function useGameNameAndCoverImage(arg0, arg1, coverImageSize) {
   let name;
   const obj = useGame;
   const game = obj.useGame(arg0);
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   let coverURL;
   const isLoading = game.isLoading;
   if (data != null) {
-    coverURL = data.getCoverURL(c8);
+    coverURL = data.getCoverURL(coverImageSize);
   }
   const obj2 = { coverImageUrl: coverURL, gameName: name, isLoading };
   name = undefined;

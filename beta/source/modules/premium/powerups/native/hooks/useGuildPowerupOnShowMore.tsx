@@ -1,10 +1,10 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 13490
+// Function ID: 13491
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [19, 558, 576, 13201, 2]
+// Dependencies: [19, 558, 576, 13439, 2]
 
-// Module 13252 (useGuildPowerupOnShowMore)
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 13201 */;
+// Module 13490 (useGuildPowerupOnShowMore)
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 13439 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

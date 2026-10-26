@@ -1,17 +1,17 @@
-// Module ID: 6295
-// Function ID: 6296
+// Module ID: 6775
+// Function ID: 6776
 // Name: FramesStore
-// Dependencies: [6296, 6298, 1098, 6299, 504, 6312, 6313, 584, 2]
+// Dependencies: [6776, 5609, 1098, 5623, 504, 6777, 6778, 584, 2]
 
-// Module 6295 (FramesStore)
+// Module 6775 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1098 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6312 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
-import FramesConstants from "FramesConstants" /* 6296 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5623 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6777 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
+import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -22,10 +22,24 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+function findFrameByIframeId(iframeId) {
+  const values = map.values();
+  for (const item10009 of values) {
+    let tmp2 = item10009;
+    if (metroImportDefault(item10009)) {
+      if (tmp2.data.iframeId === iframeId) {
+        obj.return();
+        return item10009;
+      }
+    }
+    continue;
+  }
+}
 ({ asLaunched: c3, FrameIntent: closure_4, FrameLayoutModes: hasOwnProperty, getFrameIntentForSurface: metroRequire, isLaunched: metroImportDefault, makeFrameId: metroImportAll } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const NOOP_TRUE = Constants.NOOP_TRUE;
 const map = new Map();
+let closure_12 = { audible: false };
 let frameId = null;
 const Store = get_initializedDefault.Store;
 class FramesStoreClass extends Store {
@@ -33,6 +47,23 @@ class FramesStoreClass extends Store {
     if (null != frameId) {
       return map.get(frameId);
     }
+  }
+  isFramePooled(frameId) {
+    const value = map.get(frameId);
+    const tmp2 = metroImportDefault(value) && "unpooled" !== value.data.poolVisibility;
+    return tmp2;
+  }
+  isFrameVisible(frameId) {
+    const value = map.get(frameId);
+    const tmp2 = metroImportDefault(value);
+    let tmp3 = !tmp2;
+    if (tmp2) {
+      tmp3 = "hidden" !== value.data.poolVisibility;
+    }
+    return tmp3;
+  }
+  getFrameByIframeId(iframeId) {
+    return findFrameByIframeId(iframeId);
   }
   getMainFrame() {
     let tmp = null;
@@ -61,10 +92,10 @@ class FramesStoreClass extends Store {
   getFrameBySurface(arg0, arg1) {
     return map.get(metroImportAll(arg0, arg1));
   }
-  getFramesForSurface(arg0) {
-    let closure_0 = arg0;
+  getFramesForSurface(frameSurfaceForChannel) {
+    let closure_0 = frameSurfaceForChannel;
     const arr = Array.from(map.values());
-    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, closure_0) === applicationId.id);
+    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, frameSurfaceForChannel) === applicationId.id);
   }
   getFramesForChannel(id) {
     let closure_0 = id;
@@ -78,12 +109,13 @@ let obj = {
   FRAME_LAUNCH_START: function handleFrameLaunchStart(arg0) {
     let applicationId;
     let hostWindowKey;
+    let invite;
     let launch;
     let launchRequestId;
     let surface;
     ({ frameId, surface, hostWindowKey } = arg0);
-    ({ applicationId, launch, launchRequestId } = arg0);
-    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, launchRequestId };
+    ({ applicationId, launch, invite, launchRequestId } = arg0);
+    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, invite, launchRequestId };
     set = map.set;
     if (hostWindowKey == null) {
       hostWindowKey = null;
@@ -92,12 +124,13 @@ let obj = {
   },
   FRAME_LAUNCH: function handleFrameLaunch(arg0) {
     let hostWindowKey;
+    let invite;
     let launch;
     let launchRequestId;
     let obj5;
     let proxyTicket;
     ({ frameId, hostWindowKey, launchRequestId } = arg0);
-    ({ proxyTicket, launch } = arg0);
+    ({ proxyTicket, launch, invite } = arg0);
     const value = map.get(frameId);
     if (null != value) {
       const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
@@ -112,8 +145,9 @@ let obj = {
           const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
           ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
           const _Date = Date;
-          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, iframeId: null, hostWindowKey, launch };
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted: false, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
           set = map.set;
+          const merged = Object.assign(closure_12);
           if (hostWindowKey == null) {
             hostWindowKey = null;
           }
@@ -318,10 +352,10 @@ let obj = {
     }
     return flag;
   },
-  FRAME_IFRAME_MOUNT: function handleFrameIframeMount(arg0) {
-    let iframeId;
+  FRAME_POOL_VISIBILITY_UPDATE: function handleFramePoolVisibilityUpdate(arg0) {
     let obj2;
-    ({ frameId, iframeId } = arg0);
+    let poolVisibility;
+    ({ frameId, poolVisibility } = arg0);
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
@@ -334,7 +368,7 @@ let obj = {
           set = tmp2.set;
           const merged = Object.assign(value);
           const data = value.data;
-          obj2 = { iframeId, runsInBackground: data.iframeId === iframeId && data.runsInBackground };
+          obj2 = { poolVisibility, muted: "hidden" === poolVisibility || data.userMuted };
           const merged1 = Object.assign(data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -342,6 +376,122 @@ let obj = {
         tmp5 = flag2;
       }
       flag = tmp5;
+    }
+    return flag;
+  },
+  FRAME_SET_USER_MUTED: function handleSetUserMuted(arg0) {
+    let muted;
+    let obj2;
+    ({ frameId, muted } = arg0);
+    let flag = false;
+    if (null != frameId) {
+      const value = map.get(frameId);
+      let tmp4 = metroImportDefault(value);
+      const tmp = map;
+      if (tmp4) {
+        let flag2 = value.data.userMuted !== muted;
+        if (flag2) {
+          const obj = { data: obj2 };
+          set = tmp.set;
+          const merged = Object.assign(value);
+          const data = value.data;
+          obj2 = { userMuted: muted, muted: "hidden" === data.poolVisibility || muted };
+          const merged1 = Object.assign(data);
+          const result = set(frameId, obj);
+          flag2 = true;
+        }
+        tmp4 = flag2;
+      }
+      flag = tmp4;
+    }
+    return flag;
+  },
+  EMBEDDED_APP_SHIM_STATE_UPDATE: function handleEmbeddedAppShimStateUpdate(state) {
+    let obj2;
+    state = state.state;
+    const tmp = findFrameByIframeId(state.iframeId);
+    let tmp2 = null != tmp;
+    if (tmp2) {
+      const id = tmp.id;
+      let flag = false;
+      if (null != id) {
+        const value = map.get(id);
+        let tmp7 = metroImportDefault(value);
+        const tmp4 = map;
+        if (tmp7) {
+          let flag2 = tmp3(value.data);
+          if (flag2) {
+            const obj = { data: obj2 };
+            set = tmp4.set;
+            const merged = Object.assign(value);
+            obj2 = { audible: state.audible };
+            const merged1 = Object.assign(value.data);
+            const result = set(id, obj);
+            flag2 = true;
+          }
+          tmp7 = flag2;
+        }
+        flag = tmp7;
+      }
+      tmp2 = flag;
+    }
+    return tmp2;
+  },
+  EMBEDDED_APP_SHIM_DISCONNECT: function handleEmbeddedAppShimDisconnect(iframeId) {
+    let obj2;
+    const tmp = findFrameByIframeId(iframeId.iframeId);
+    let tmp2 = null != tmp;
+    if (tmp2) {
+      const id = tmp.id;
+      let flag = false;
+      if (null != id) {
+        const value = map.get(id);
+        let tmp7 = metroImportDefault(value);
+        const tmp4 = map;
+        if (tmp7) {
+          let flag2 = tmp3(value.data);
+          if (flag2) {
+            const obj = { data: obj2 };
+            set = tmp4.set;
+            const merged = Object.assign(value);
+            obj2 = {};
+            const merged1 = Object.assign(value.data);
+            const merged2 = Object.assign(closure_12);
+            const result = set(id, obj);
+            flag2 = true;
+          }
+          tmp7 = flag2;
+        }
+        flag = tmp7;
+      }
+      tmp2 = flag;
+    }
+    return tmp2;
+  },
+  FRAME_IFRAME_MOUNT: function handleFrameIframeMount(arg0) {
+    let iframeId;
+    let obj2;
+    ({ frameId, iframeId } = arg0);
+    let flag = false;
+    if (null != frameId) {
+      const value = map.get(frameId);
+      let tmp4 = metroImportDefault(value);
+      const tmp = map;
+      if (tmp4) {
+        let flag2 = value.data.iframeId !== iframeId;
+        if (flag2) {
+          const obj = { data: obj2 };
+          set = tmp.set;
+          const merged = Object.assign(value);
+          obj2 = { iframeId, runsInBackground: false };
+          const merged1 = Object.assign(value.data);
+          const merged2 = Object.assign(closure_12);
+          const result = set(frameId, obj);
+          flag2 = true;
+        }
+        tmp4 = flag2;
+      }
+      flag = tmp4;
     }
     return flag;
   },
@@ -361,6 +511,7 @@ let obj = {
           const merged = Object.assign(value);
           obj2 = { iframeId: null, runsInBackground: false };
           const merged1 = Object.assign(value.data);
+          const merged2 = Object.assign(closure_12);
           const result = set(frameId, obj);
           flag2 = true;
         }

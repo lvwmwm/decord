@@ -1,11 +1,11 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12382
+// Function ID: 12383
 // Name: useConjurePublishedServerName
-// Dependencies: [2090, 6293, 558, 576, 504, 2]
+// Dependencies: [4845, 6773, 558, 576, 504, 2]
 
-// Module 12191 (useConjurePublishedServerName)
-import GuildStore from "GuildStore" /* 2090 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+// Module 12382 (useConjurePublishedServerName)
+import GuildStore from "GuildStore" /* 4845 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

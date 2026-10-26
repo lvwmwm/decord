@@ -1,16 +1,16 @@
-// Module ID: 13873
-// Function ID: 13874
+// Module ID: 14103
+// Function ID: 14104
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1087, 21, 5191, 6019, 1128, 7151, 4901, 13874, 7092, 5187, 6562, 1202, 5479, 558, 576, 6478, 6965, 2]
+// Dependencies: [5, 32, 19, 1087, 21, 4971, 6502, 1128, 7274, 5660, 14104, 7221, 5234, 7007, 1202, 5244, 558, 576, 6924, 7095, 2]
 
-// Module 13873 (FederatedSocialModal)
+// Module 14103 (FederatedSocialModal)
 import Constants from "Constants" /* 1087 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
+import PlatformsDefault from "Platforms" /* 6502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FederatedS
   let tmp10;
   let tmp4;
   _require = platformType;
-  const obj = require("react");
+  let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== platformType.platformType) {
     const obj2 = PlatformsDefault;
@@ -222,7 +222,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FederatedS
       headerTitle: tmp4,
       headerLeft: tmp10,
       render() {
-        return FederatedSocialModalScreen(platformType);
+        const obj = {};
+        const merged = Object.assign(platformType);
+        return metroImportDefault(FederatedSocialModalScreen, obj);
       }
     }
   };
@@ -237,7 +239,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FederatedS
   let obj3;
   let obj4;
   _require = platformType;
-  const obj = PlatformsDefault;
+  let obj = PlatformsDefault;
   const value = obj.get(platformType.platformType);
   let name;
   if (value != null) {
@@ -252,7 +254,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FederatedS
     headerTitle: intl2.formatToPlainString(require("intl").t["ImMhq+"], { serviceName: name }),
     headerLeft: obj4.getHeaderBackButton(platformType.onClose),
     render() {
-      return FederatedSocialModalScreen(platformType);
+      const obj = {};
+      const merged = Object.assign(platformType);
+      return metroImportDefault(FederatedSocialModalScreen, obj);
     }
   };
   intl2 = require("intl").intl;

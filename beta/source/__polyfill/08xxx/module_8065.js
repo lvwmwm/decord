@@ -1,93 +1,16 @@
 // Module ID: 8065
 // Function ID: 8066
-// Dependencies: [8066, 8070]
+// Dependencies: [26, 106, 65]
 
 // Module 8065
-import detectFile2 from "detectFile" /* 8066 */;
-import validateFileType2 from "validateFileType" /* 8070 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let hasOwnProperty;
+let point;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGTextPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: point };
+point = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, dx: true, dy: true, x: true, y: true, rotate: true, inlineSize: true, textLength: true, baselineShift: true, lengthAdjust: true, alignmentBaseline: true, verticalAlign: true, href: true, side: true, method: true, midLine: true, spacing: true, startOffset: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
-  const _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_1 = tmp3;
-let tmp5 = self && self.__importStar || ((__esModule) => {
-  const tmp = __esModule;
-  if (tmp) {
-    if (__esModule.__esModule) {
-      return __esModule;
-    }
-  }
-  const obj = {};
-  if (null != __esModule) {
-    for (const key10009 in __esModule) {
-      let callResult = "default" !== key10009;
-      if (callResult) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        callResult = hasOwnProperty.call(__esModule, key10009);
-      }
-      if (!callResult) {
-        continue;
-      } else {
-        let tmp6 = closure_0(obj, __esModule, key10009);
-        continue;
-      }
-      continue;
-    }
-  }
-  closure_1(obj, __esModule);
-  return obj;
-});
-const detectFile = tmp5(detectFile2);
-const validateFileType = tmp5(validateFileType2);
-
-export default Object.assign(Object.assign({}, detectFile), validateFileType);
+export default module_65.get("RNSVGTextPath", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

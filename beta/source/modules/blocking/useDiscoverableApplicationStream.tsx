@@ -1,12 +1,12 @@
-// Module ID: 10540
-// Function ID: 10541
+// Module ID: 10636
+// Function ID: 10637
 // Name: useDiscoverableApplicationStream
-// Dependencies: [6153, 4855, 1087, 558, 576, 504, 2]
+// Dependencies: [6642, 4913, 1087, 558, 576, 504, 2]
 
-// Module 10540 (useDiscoverableApplicationStream)
+// Module 10636 (useDiscoverableApplicationStream)
 import Constants from "Constants" /* 1087 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

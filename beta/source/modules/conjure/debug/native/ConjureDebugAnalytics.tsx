@@ -1,15 +1,15 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12557
+// Function ID: 12558
 // Name: ConjureDebugAnalytics
-// Dependencies: [19, 21, 558, 576, 1128, 3883, 12355, 12358, 12356, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3830, 12552, 12555, 12553, 2]
 
-// Module 12360 (ConjureDebugAnalytics)
+// Module 12557 (ConjureDebugAnalytics)
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 12355 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12356 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 12358 */;
+import _modDef3830 from "module_3830" /* 3830 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 12552 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12553 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 12555 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -37,9 +37,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
     const _Symbol5 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1128).intl;
-      const stringResult = intl5.string(_modDef3883.SXP7pD);
+      const stringResult = intl5.string(_modDef3830.SXP7pD);
       const intl6 = tmp(1128).intl;
-      const stringResult1 = intl6.string(_modDef3883.E5hKVi);
+      const stringResult1 = intl6.string(_modDef3830.E5hKVi);
       cResult[0] = stringResult;
       cResult[1] = stringResult1;
       tmp41 = stringResult;
@@ -86,10 +86,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const _Symbol3 = Symbol;
         const tmpResult3 = ConjureDebugLabels;
         tmpResult3.analyticsMemoryValue(found);
-        const DebugStatRow2 = tmp(12358).DebugStatRow;
+        const DebugStatRow2 = tmp(12555).DebugStatRow;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp(1128).intl;
-          const stringResult2 = intl3.string(_modDef3883["H/X+FI"]);
+          const stringResult2 = intl3.string(_modDef3830["H/X+FI"]);
           cResult[14] = stringResult2;
         }
         const tmpResult4 = ConjureDebugFormat;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const _Symbol6 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1128).intl;
-          const stringResult3 = intl.string(_modDef3883.SXP7pD);
+          const stringResult3 = intl.string(_modDef3830.SXP7pD);
           cResult[12] = stringResult3;
           tmp13 = stringResult3;
         } else {
@@ -108,8 +108,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         }
         const _Symbol2 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { label: tmp13, value: "\u2014", hint: intl2.string(_modDef3883.AGvoMJ) };
-          const DebugStatRow = tmp(12358).DebugStatRow;
+          const obj3 = { label: tmp13, value: "\u2014", hint: intl2.string(_modDef3830.AGvoMJ) };
+          const DebugStatRow = tmp(12555).DebugStatRow;
           intl2 = tmp(1128).intl;
           const tmp19 = _false(DebugStatRow, obj3);
           cResult[13] = tmp19;
@@ -148,8 +148,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
           if (cResult[19] !== tmp5) {
             let tmp33 = null;
             if (null != tmp5) {
-              const obj4 = { label: intl4.string(_modDef3883.lmFmMO), value: tmp5 };
-              const DebugStatRow3 = tmp(12358).DebugStatRow;
+              const obj4 = { label: intl4.string(_modDef3830.lmFmMO), value: tmp5 };
+              const DebugStatRow3 = tmp(12555).DebugStatRow;
               intl4 = tmp(1128).intl;
               tmp33 = _false(DebugStatRow3, obj4);
             }
@@ -196,7 +196,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   let obj8;
   analytics = analytics.analytics;
   if ("ok" !== analytics.status) {
-    const obj2 = { label: intl4.string(_modDef3883.SXP7pD), value: intl5.string(_modDef3883.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
+    const obj2 = { label: intl4.string(_modDef3830.SXP7pD), value: intl5.string(_modDef3830.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
     const DebugStatRow3 = ConjureDebugPrimitives.DebugStatRow;
     intl4 = intl7.intl;
     intl5 = intl7.intl;
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       found = objects.find((role) => "agent" === role.role);
     }
     if (null == found) {
-      const obj3 = { label: intl2.string(_modDef3883.SXP7pD), value: "\u2014", hint: intl3.string(_modDef3883.AGvoMJ) };
+      const obj3 = { label: intl2.string(_modDef3830.SXP7pD), value: "\u2014", hint: intl3.string(_modDef3830.AGvoMJ) };
       const DebugStatRow2 = ConjureDebugPrimitives.DebugStatRow;
       intl2 = intl7.intl;
       intl3 = intl7.intl;
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
     } else {
       const obj6 = ConjureDebugLabels;
       const analyticsMemoryValueResult = obj6.analyticsMemoryValue(found);
-      const obj4 = { label: intl6.string(_modDef3883["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
+      const obj4 = { label: intl6.string(_modDef3830["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
       const DebugStatRow4 = ConjureDebugPrimitives.DebugStatRow;
       intl6 = intl7.intl;
       obj8 = ConjureDebugFormat;
@@ -228,8 +228,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       const tmp17 = _false;
       const tmp18 = importDefault;
       if (null != analyticsMemoryValueResult) {
-        const obj = { label: intl.string(tmp18(3883).lmFmMO), value: analyticsMemoryValueResult };
-        const DebugStatRow = tmp12(12358).DebugStatRow;
+        const obj = { label: intl.string(tmp18(3830).lmFmMO), value: analyticsMemoryValueResult };
+        const DebugStatRow = tmp12(12555).DebugStatRow;
         intl = tmp12(1128).intl;
         tmp17Result = tmp17(DebugStatRow, obj);
       }
@@ -249,7 +249,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   analytics = analytics.analytics;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = intl7.intl;
-    const stringResult = intl.string(_modDef3883.LoZwWn);
+    const stringResult = intl.string(_modDef3830.LoZwWn);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -353,7 +353,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
             return obj;
           }
         }
-        let obj4 = { children: intl2.string(_modDef3883.AGvoMJ) };
+        let obj4 = { children: intl2.string(_modDef3830.AGvoMJ) };
         const DebugNote = ConjureDebugPrimitives.DebugNote;
         intl2 = intl7.intl;
         tmp14 = _false(DebugNote, obj4);
@@ -410,7 +410,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   let tmpResult;
   analytics = analytics.analytics;
   let intl = intl7.intl;
-  const stringResult = intl.string(_modDef3883.LoZwWn);
+  const stringResult = intl.string(_modDef3830.LoZwWn);
   if ("ok" !== analytics.status) {
     let obj2 = { title: stringResult, children: _false(DebugNote2, obj3) };
     const DebugSection2 = ConjureDebugPrimitives.DebugSection;
@@ -433,7 +433,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
     let obj = { title: stringResult, children: mapped1 };
     const DebugSection = ConjureDebugPrimitives.DebugSection;
     if (0 === found.length) {
-      let obj4 = { children: intl2.string(_modDef3883.AGvoMJ) };
+      let obj4 = { children: intl2.string(_modDef3830.AGvoMJ) };
       const DebugNote = ConjureDebugPrimitives.DebugNote;
       intl2 = intl7.intl;
       mapped1 = tmp5(DebugNote, obj4);
@@ -450,7 +450,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const intl = require("intl").intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { cpu: obj3.formatMs(object.cpu_ms) };
-        prop = _modDef3883["w/2voO"];
+        prop = _modDef3830["w/2voO"];
         obj3 = require("ConjureDebugFormat");
         const obj4 = require("ConjureDebugLabels");
         analyticsMemoryValueResult = obj4.analyticsMemoryValue(object);

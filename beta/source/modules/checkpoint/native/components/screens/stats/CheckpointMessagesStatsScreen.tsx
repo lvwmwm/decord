@@ -1,30 +1,22 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 12986
+// Function ID: 12987
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 12737, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3109, 3141, 12761, 12763, 12768, 8471, 12759, 12765, 12766, 2]
+// Dependencies: [17, 12954, 6015, 21, 4971, 587, 558, 576, 504, 12957, 1128, 3088, 3056, 12974, 12977, 12987, 12988, 8542, 12972, 12980, 12982, 12985, 2]
 
-// Module 12767 (CheckpointMessagesStatsScreen)
+// Module 12986 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3109 from "module_3109" /* 3109 */;
-import _modDef3141 from "module_3141" /* 3141 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
-import ChatIcon from "ChatIcon" /* 8471 */;
-import CheckpointTextDefault from "CheckpointText" /* 12759 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12761 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12763 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12765 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12766 */;
-import _modDef12768 from "module_12768" /* 12768 */;
-import CheckpointStore from "CheckpointStore" /* 12737 */;
+import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import ChatIcon from "ChatIcon" /* 8542 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12957 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12985 */;
+import CheckpointStore from "CheckpointStore" /* 12954 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let stats;
 
 let metroImportDefault;
 let metroRequire;
@@ -35,24 +27,21 @@ const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, title: obj3, titleText: { flexShrink: 1 }, imageContainer: { flexGrow: 1, height: "50%", justifyContent: "center", alignItems: "center" }, image: { height: "100%", aspectRatio: 0.75 }, copy: { flexShrink: 1 }, number: obj4 };
+let obj = { container: obj2, title: obj3, titleText: { flexShrink: 1 }, imageContainer: { flexGrow: 1, height: "50%", justifyContent: "center", alignItems: "center" }, image: { height: "100%", aspectRatio: 0.6498194945848376 }, copy: { flexShrink: 1 }, number: obj4 };
 obj2 = { width: "100%", flexGrow: 1, gap: nativeDefault.space.PX_40, paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 obj4 = { marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_4 };
 let closure_8 = createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMessagesStatsScreen() {
-  let copy;
   let formatToPlainStringResult;
-  let items1;
   let items2;
   let items3;
+  let items4;
+  let numberFormat;
+  let obj11;
   let str;
-  let title;
-  let tmp12;
-  let tmp13;
-  let tmp14;
-  let tmp15;
+  let tmp10;
   let tmp16;
   let tmp17;
   let tmp18;
@@ -64,17 +53,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   let tmp24;
   let tmp25;
   let tmp26;
-  let tmp27;
-  let tmp35;
+  let tmp33;
+  let tmp37;
   let tmp5;
   let tmp6;
+  let tmp9;
+  let wWKySP;
   let obj = react;
-  const cResult = obj.c(69);
+  const cResult = obj.c(57);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CheckpointStore];
-    const fn = function h() {
-      stats = stats.stats;
+    const fn = function p() {
+      const stats = CheckpointStore.stats;
       let messages;
       if (stats != null) {
         messages = stats.messages;
@@ -90,199 +81,136 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   }
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [CheckpointStore];
+    const fn2 = function b() {
+      const globalStats = CheckpointStore.globalStats;
+      let numWordsSent;
+      if (globalStats != null) {
+        const messages = globalStats.messages;
+        if (messages != null) {
+          numWordsSent = messages.numWordsSent;
+        }
+      }
+      return numWordsSent;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp10 = fn2;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult3 = get_initialized;
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
   let numMessagesSent;
-  const tmp9 = cResult[2];
+  const tmp13 = cResult[4];
   if (stateFromStores != null) {
     numMessagesSent = stateFromStores.numMessagesSent;
   }
-  if (tmp9 === numMessagesSent) {
+  if (tmp13 === numMessagesSent) {
     let prop;
-    const tmp81 = cResult[3];
+    const tmp73 = cResult[5];
     if (stateFromStores != null) {
       prop = stateFromStores.numMessagesSentPercentile;
     }
-    if (tmp81 === prop) {
-      if (cResult[4] === tmp4.container) {
-        if (cResult[5] === tmp4.copy) {
-          if (cResult[6] === tmp4.image) {
-            if (cResult[7] === tmp4.imageContainer) {
-              if (cResult[8] === tmp4.title) {
-                if (cResult[9] === tmp4.titleText) {
-                  tmp12 = cResult[10];
-                  tmp13 = cResult[11];
-                  tmp14 = cResult[12];
-                  tmp15 = cResult[13];
-                  tmp16 = cResult[14];
-                  tmp17 = cResult[15];
-                  tmp18 = cResult[16];
-                  str = cResult[17];
-                  tmp19 = cResult[18];
-                  tmp20 = cResult[19];
-                  tmp21 = cResult[20];
-                  tmp22 = cResult[21];
-                  tmp23 = cResult[22];
-                  tmp24 = cResult[23];
-                  tmp25 = cResult[24];
-                  tmp26 = cResult[25];
-                  tmp27 = cResult[26];
-                }
-                if (cResult[33] === tmp12) {
-                  if (cResult[34] === str) {
-                    if (cResult[35] === tmp19) {
-                      let tmp49;
-                      if (cResult[36] === tmp20) {
-                        tmp49 = cResult[37];
-                      }
-                      if (cResult[38] === tmp13) {
-                        if (cResult[39] === tmp49) {
-                          if (cResult[40] === tmp21) {
-                            let tmp52;
-                            let tmp56;
-                            if (cResult[41] === tmp22) {
-                              tmp52 = cResult[42];
-                            }
-                            const _HermesInternal = HermesInternal;
-                            const combined = "" + tmp17 + " " + tmp26;
-                            if (cResult[43] !== tmp17) {
-                              const obj2 = { end: tmp17 };
-                              const tmp59 = metroRequire(NumberAnimationDefault, obj2);
-                              cResult[43] = tmp17;
-                              cResult[44] = tmp59;
-                              tmp56 = tmp59;
-                            } else {
-                              tmp56 = cResult[44];
-                            }
-                            if (cResult[45] === tmp4.number) {
-                              if (cResult[46] === combined) {
-                                let tmp60;
-                                let formatResult;
-                                if (cResult[47] === tmp56) {
-                                  tmp60 = cResult[48];
-                                }
-                                if (cResult[49] === tmp17) {
+    if (tmp73 === prop) {
+      if (cResult[6] === stateFromStores1) {
+        if (cResult[7] === tmp4.container) {
+          if (cResult[8] === tmp4.copy) {
+            if (cResult[9] === tmp4.image) {
+              if (cResult[10] === tmp4.imageContainer) {
+                if (cResult[11] === tmp4.number) {
+                  if (cResult[12] === tmp4.title) {
+                    if (cResult[13] === tmp4.titleText) {
+                      tmp16 = cResult[14];
+                      tmp17 = cResult[15];
+                      tmp18 = cResult[16];
+                      tmp19 = cResult[17];
+                      tmp20 = cResult[18];
+                      tmp21 = cResult[19];
+                      str = cResult[20];
+                      tmp22 = cResult[21];
+                      tmp23 = cResult[22];
+                      tmp24 = cResult[23];
+                      tmp25 = cResult[24];
+                      tmp26 = cResult[25];
+                    }
+                    if (cResult[38] === tmp16) {
+                      if (cResult[39] === str) {
+                        if (cResult[40] === tmp22) {
+                          let tmp61;
+                          if (cResult[41] === tmp23) {
+                            tmp61 = cResult[42];
+                          }
+                          if (cResult[43] === tmp17) {
+                            if (cResult[44] === tmp61) {
+                              if (cResult[45] === tmp24) {
+                                if (cResult[46] === tmp25) {
                                   let tmp64;
-                                  if (cResult[50] === tmp27) {
-                                    tmp64 = cResult[51];
+                                  if (cResult[47] === tmp26) {
+                                    tmp64 = cResult[48];
                                   }
-                                  if (cResult[52] === tmp18) {
-                                    let tmp68;
-                                    if (cResult[53] === tmp64) {
-                                      tmp68 = cResult[54];
-                                    }
-                                    if (cResult[55] === tmp14) {
-                                      if (cResult[56] === tmp52) {
-                                        if (cResult[57] === tmp60) {
-                                          if (cResult[58] === tmp68) {
-                                            let tmp72;
-                                            if (cResult[59] === tmp23) {
-                                              tmp72 = cResult[60];
-                                            }
-                                            if (cResult[61] === tmp15) {
-                                              if (cResult[62] === tmp72) {
-                                                if (cResult[63] === tmp24) {
-                                                  let tmp75;
-                                                  if (cResult[64] === tmp25) {
-                                                    tmp75 = cResult[65];
-                                                  }
-                                                  if (cResult[66] === tmp16) {
-                                                    let tmp78;
-                                                    if (cResult[67] === tmp75) {
-                                                      tmp78 = cResult[68];
-                                                    }
-                                                    return tmp78;
-                                                  }
-                                                  const obj3 = { children: tmp75 };
-                                                  const tmp80 = metroRequire(tmp16, obj3);
-                                                  cResult[66] = tmp16;
-                                                  cResult[67] = tmp75;
-                                                  cResult[68] = tmp80;
-                                                  tmp78 = tmp80;
-                                                }
-                                              }
-                                            }
-                                            const obj4 = { style: tmp24, children: items1 };
-                                            items1 = [tmp25, tmp72];
-                                            const tmp77 = metroImportDefault(tmp15, obj4);
-                                            cResult[61] = tmp15;
-                                            cResult[62] = tmp72;
-                                            cResult[63] = tmp24;
-                                            cResult[64] = tmp25;
-                                            cResult[65] = tmp77;
-                                            tmp75 = tmp77;
-                                          }
+                                  if (cResult[49] === tmp18) {
+                                    if (cResult[50] === tmp20) {
+                                      if (cResult[51] === tmp21) {
+                                        let tmp67;
+                                        if (cResult[52] === tmp64) {
+                                          tmp67 = cResult[53];
                                         }
+                                        if (cResult[54] === tmp19) {
+                                          let tmp70;
+                                          if (cResult[55] === tmp67) {
+                                            tmp70 = cResult[56];
+                                          }
+                                          return tmp70;
+                                        }
+                                        const obj2 = { children: tmp67 };
+                                        const tmp72 = metroRequire(tmp19, obj2);
+                                        cResult[54] = tmp19;
+                                        cResult[55] = tmp67;
+                                        cResult[56] = tmp72;
+                                        tmp70 = tmp72;
                                       }
                                     }
-                                    const obj5 = { style: tmp23, children: items2 };
-                                    items2 = [tmp52, tmp60, tmp68];
-                                    const tmp74 = metroImportDefault(tmp14, obj5);
-                                    cResult[55] = tmp14;
-                                    cResult[56] = tmp52;
-                                    cResult[57] = tmp60;
-                                    cResult[58] = tmp68;
-                                    cResult[59] = tmp23;
-                                    cResult[60] = tmp74;
-                                    tmp72 = tmp74;
                                   }
-                                  const obj6 = { variant: "heading-lg/medium", accessibilityLabel: tmp18, children: tmp64 };
-                                  const tmp71 = metroRequire(CheckpointTextDefault, obj6);
-                                  cResult[52] = tmp18;
-                                  cResult[53] = tmp64;
-                                  cResult[54] = tmp71;
-                                  tmp68 = tmp71;
+                                  const obj3 = { style: tmp20, children: items2 };
+                                  items2 = [tmp21, tmp64];
+                                  const tmp69 = metroImportDefault(tmp18, obj3);
+                                  cResult[49] = tmp18;
+                                  cResult[50] = tmp20;
+                                  cResult[51] = tmp21;
+                                  cResult[52] = tmp64;
+                                  cResult[53] = tmp69;
+                                  tmp67 = tmp69;
                                 }
-                                if (null != tmp27) {
-                                  const intl4 = tmp(1128).intl;
-                                  const obj7 = {
-                                    numMessages: tmp17,
-                                    percent: tmp27,
-                                    percentHook(children, arg1) {
-                                                                      const obj = { children };
-                                                                      return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
-                                                                    }
-                                  };
-                                  formatResult = intl4.format(_modDef3141.TOMBAW, obj7);
-                                } else {
-                                  const intl3 = tmp(1128).intl;
-                                  const obj8 = { numMessages: tmp17 };
-                                  formatResult = intl3.format(_modDef3141.cYCqz8, obj8);
-                                }
-                                cResult[49] = tmp17;
-                                cResult[50] = tmp27;
-                                cResult[51] = formatResult;
-                                tmp64 = formatResult;
                               }
                             }
-                            const obj9 = { accessible: true, accessibilityLabel: combined, style: tmp4.number, children: tmp56 };
-                            const tmp63 = metroRequire(View, obj9);
-                            cResult[45] = tmp4.number;
-                            cResult[46] = combined;
-                            cResult[47] = tmp56;
-                            cResult[48] = tmp63;
-                            tmp60 = tmp63;
                           }
+                          const obj4 = { style: tmp24, children: items3 };
+                          items3 = [tmp25, tmp26, tmp61];
+                          const tmp66 = metroImportDefault(tmp17, obj4);
+                          cResult[43] = tmp17;
+                          cResult[44] = tmp61;
+                          cResult[45] = tmp24;
+                          cResult[46] = tmp25;
+                          cResult[47] = tmp26;
+                          cResult[48] = tmp66;
+                          tmp64 = tmp66;
                         }
                       }
-                      const obj10 = { style: tmp21, children: items3 };
-                      items3 = [tmp22, tmp49];
-                      const tmp54 = metroImportDefault(tmp13, obj10);
-                      cResult[38] = tmp13;
-                      cResult[39] = tmp49;
-                      cResult[40] = tmp21;
-                      cResult[41] = tmp22;
-                      cResult[42] = tmp54;
-                      tmp52 = tmp54;
                     }
+                    const obj5 = { variant: str, accessibilityLabel: tmp22, children: tmp23 };
+                    const tmp63 = metroRequire(tmp16, obj5);
+                    cResult[38] = tmp16;
+                    cResult[39] = str;
+                    cResult[40] = tmp22;
+                    cResult[41] = tmp23;
+                    cResult[42] = tmp63;
+                    tmp61 = tmp63;
                   }
                 }
-                const obj11 = { variant: str, style: tmp19, children: tmp20 };
-                const tmp51 = metroRequire(tmp12, obj11);
-                cResult[33] = tmp12;
-                cResult[34] = str;
-                cResult[35] = tmp19;
-                cResult[36] = tmp20;
-                cResult[37] = tmp51;
-                tmp49 = tmp51;
               }
             }
           }
@@ -290,146 +218,223 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
       }
     }
   }
-  let num3;
+  let num5;
   const _Math = Math;
   if (stateFromStores != null) {
-    num3 = stateFromStores.numMessagesSent;
+    num5 = stateFromStores.numMessagesSent;
   }
-  if (num3 == null) {
-    num3 = 0;
+  if (num5 == null) {
+    num5 = 0;
   }
-  const roundResult = round(num3);
+  const roundResult = round(num5);
   let prop1;
+  const getCheckpointTopPercent = CheckpointStatsUtils.getCheckpointTopPercent;
+  CheckpointStatsUtils;
   if (stateFromStores != null) {
     prop1 = stateFromStores.numMessagesSentPercentile;
   }
-  let bound = null;
-  if (null != prop1) {
-    bound = null;
-    if (prop1 >= 50) {
-      const _Math2 = Math;
-      const _Math3 = Math;
-      bound = Math.max(1, Math.ceil(100 - prop1));
-    }
-  }
+  const checkpointTopPercent = getCheckpointTopPercent(prop1);
   const intl = tmp(1128).intl;
-  const stringResult = intl.string(_modDef3109.wWKySP);
-  if (null != bound) {
-    const intl2 = tmp(1128).intl;
-    const obj12 = {
-      numMessages: roundResult,
-      percent: bound,
-      percentHook(arg0) {
-          return arg0;
-        }
-    };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef3141.TOMBAW, obj12);
-  }
-  const tmp31Result = CheckpointScreenDefault;
-  const container = tmp4.container;
-  if (cResult[27] !== tmp4.image) {
-    const obj13 = { uri: _modDef12768, style: tmp4.image };
-    const tmp31Result3 = CheckpointApngPlayerDefault;
-    const tmp38 = metroRequire(tmp31Result3, obj13);
-    cResult[27] = tmp4.image;
-    cResult[28] = tmp38;
-    tmp35 = tmp38;
+  const string = intl.string;
+  if (roundResult <= 0 && null != stateFromStores1) {
+    wWKySP = tmp32(3088)["2BuyVC"];
+    tmp33 = tmp32;
   } else {
-    tmp35 = cResult[28];
+    wWKySP = tmp32(3056).wWKySP;
+    tmp33 = tmp32;
   }
-  if (cResult[29] === tmp4.imageContainer) {
-    let tmp39;
+  const stringResult = string(wWKySP);
+  if (!(roundResult <= 0 && null != stateFromStores1)) {
+    if (null != checkpointTopPercent) {
+      const intl2 = tmp(1128).intl;
+      const obj6 = {
+        numMessages: roundResult,
+        percent: checkpointTopPercent,
+        percentHook(arg0) {
+              return arg0;
+            }
+      };
+      formatToPlainStringResult = intl2.formatToPlainString(tmp33(3088).TOMBAW, obj6);
+    }
+  }
+  const tmp33Result = tmp33(12974);
+  const container = tmp4.container;
+  if (cResult[26] !== tmp4.image) {
+    const obj7 = { animatedUri: tmp33(12987), staticUri: tmp33(12988), style: tmp4.image };
+    const tmp33Result3 = tmp33(12977);
+    const tmp40 = metroRequire(tmp33Result3, obj7);
+    cResult[26] = tmp4.image;
+    cResult[27] = tmp40;
+    tmp37 = tmp40;
+  } else {
+    tmp37 = cResult[27];
+  }
+  if (cResult[28] === tmp4.imageContainer) {
     let tmp41;
-    if (cResult[30] === tmp35) {
-      tmp39 = cResult[31];
+    let tmp43;
+    if (cResult[29] === tmp37) {
+      tmp41 = cResult[30];
     }
-    ({ copy, title } = tmp4);
+    const copy = tmp4.copy;
     const _Symbol = Symbol;
-    if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj14 = { size: "xs", color: CHECKPOINT_PRIMARY };
-      const tmp44 = metroRequire(ChatIcon.ChatIcon, obj14);
-      cResult[32] = tmp44;
-      tmp41 = tmp44;
+    const title = tmp4.title;
+    if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj8 = { size: "xs", color: CHECKPOINT_PRIMARY };
+      const tmp46 = metroRequire(ChatIcon.ChatIcon, obj8);
+      cResult[31] = tmp46;
+      tmp43 = tmp46;
     } else {
-      tmp41 = cResult[32];
+      tmp43 = cResult[31];
     }
-    const tmp31Result4 = CheckpointTextDefault;
     const titleText = tmp4.titleText;
     const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
-    let numMessagesSent1;
-    if (stateFromStores != null) {
-      numMessagesSent1 = stateFromStores.numMessagesSent;
+    if (cResult[32] === tmp4.titleText) {
+      let tmp48;
+      if (cResult[33] === toLocaleUpperCaseResult) {
+        tmp48 = cResult[34];
+      }
+      if (cResult[35] === tmp4.title) {
+        let tmp51;
+        let tmp54Result;
+        let formatToPlainStringResult1;
+        if (cResult[36] === tmp48) {
+          tmp51 = cResult[37];
+        }
+        if (roundResult <= 0 && null != stateFromStores1) {
+          const obj9 = { value: stateFromStores1 };
+          tmp54Result = tmp54(tmp33(12980), obj9);
+        } else {
+          const _HermesInternal = HermesInternal;
+          const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp4.number, children: metroRequire(tmp33(12982), obj11) };
+          obj11 = { end: roundResult };
+          tmp54Result = tmp54(tmp36, obj10);
+        }
+        const tmp33Result4 = tmp33(12972);
+        if (roundResult <= 0 && null != stateFromStores1) {
+          const intl5 = tmp(1128).intl;
+          const formatToPlainString = intl5.formatToPlainString;
+          const _Intl = Intl;
+          const obj12 = { numWords: numberFormat.format(stateFromStores1) };
+          const bAxEs2 = tmp33(3088).bAxEs2;
+          const self = this;
+          const self2 = this;
+          numberFormat = new Intl.NumberFormat(tmp(1128).intl.currentLocale, { notation: "compact", compactDisplay: "long" });
+          formatToPlainStringResult1 = formatToPlainString(bAxEs2, obj12);
+        } else if (null != checkpointTopPercent) {
+          const intl4 = tmp(1128).intl;
+          const obj13 = {
+            numMessages: roundResult,
+            percent: checkpointTopPercent,
+            percentHook(children, arg1) {
+                      const obj = { children };
+                      return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
+                    }
+          };
+          formatToPlainStringResult1 = intl4.format(tmp33(3088).TOMBAW, obj13);
+        } else {
+          const intl3 = tmp(1128).intl;
+          const obj14 = { numMessages: roundResult };
+          formatToPlainStringResult1 = intl3.format(tmp33(3088).cYCqz8, obj14);
+        }
+        let numMessagesSent1;
+        if (stateFromStores != null) {
+          numMessagesSent1 = stateFromStores.numMessagesSent;
+        }
+        cResult[4] = numMessagesSent1;
+        let prop2;
+        if (stateFromStores != null) {
+          prop2 = stateFromStores.numMessagesSentPercentile;
+        }
+        cResult[5] = prop2;
+        cResult[6] = stateFromStores1;
+        cResult[7] = tmp4.container;
+        cResult[8] = tmp4.copy;
+        cResult[9] = tmp4.image;
+        cResult[10] = tmp4.imageContainer;
+        cResult[11] = tmp4.number;
+        cResult[12] = tmp4.title;
+        cResult[13] = tmp4.titleText;
+        cResult[14] = tmp33Result4;
+        cResult[15] = View;
+        cResult[16] = View;
+        cResult[17] = tmp33Result;
+        cResult[18] = container;
+        cResult[19] = tmp41;
+        cResult[20] = "heading-lg/medium";
+        cResult[21] = formatToPlainStringResult;
+        cResult[22] = formatToPlainStringResult1;
+        cResult[23] = copy;
+        cResult[24] = tmp51;
+        cResult[25] = tmp54Result;
+        tmp26 = tmp54Result;
+        tmp25 = tmp51;
+        tmp24 = copy;
+        tmp23 = formatToPlainStringResult1;
+        tmp22 = formatToPlainStringResult;
+        str = "heading-lg/medium";
+        tmp21 = tmp41;
+        tmp20 = container;
+        tmp19 = tmp33Result;
+        tmp18 = tmp36;
+        tmp17 = tmp36;
+        tmp16 = tmp33Result4;
+      }
+      const obj15 = { style: title, children: items4 };
+      items4 = [tmp43, tmp48];
+      const tmp53 = metroImportDefault(View, obj15);
+      cResult[35] = tmp4.title;
+      cResult[36] = tmp48;
+      cResult[37] = tmp53;
+      tmp51 = tmp53;
     }
-    cResult[2] = numMessagesSent1;
-    let prop2;
-    if (stateFromStores != null) {
-      prop2 = stateFromStores.numMessagesSentPercentile;
-    }
-    cResult[3] = prop2;
-    cResult[4] = tmp4.container;
-    cResult[5] = tmp4.copy;
-    cResult[6] = tmp4.image;
-    cResult[7] = tmp4.imageContainer;
-    cResult[8] = tmp4.title;
-    cResult[9] = tmp4.titleText;
-    cResult[10] = tmp31Result4;
-    cResult[11] = View;
-    cResult[12] = View;
-    cResult[13] = View;
-    cResult[14] = tmp31Result;
-    cResult[15] = roundResult;
-    cResult[16] = formatToPlainStringResult;
-    cResult[17] = "heading-md/extrabold";
-    cResult[18] = titleText;
-    cResult[19] = toLocaleUpperCaseResult;
-    cResult[20] = title;
-    cResult[21] = tmp41;
-    cResult[22] = copy;
-    cResult[23] = container;
-    cResult[24] = tmp39;
-    cResult[25] = stringResult;
-    cResult[26] = bound;
-    tmp27 = bound;
-    tmp26 = stringResult;
-    tmp25 = tmp39;
-    tmp24 = container;
-    tmp23 = copy;
-    tmp22 = tmp41;
-    tmp21 = title;
-    tmp20 = toLocaleUpperCaseResult;
-    tmp19 = titleText;
-    str = "heading-md/extrabold";
-    tmp18 = formatToPlainStringResult;
-    tmp17 = roundResult;
-    tmp16 = tmp31Result;
-    tmp15 = tmp34;
-    tmp14 = tmp34;
-    tmp13 = tmp34;
-    tmp12 = tmp31Result4;
+    const obj16 = { variant: "heading-md/extrabold", style: titleText, children: toLocaleUpperCaseResult };
+    const tmp50 = metroRequire(tmp33(12972), obj16);
+    cResult[32] = tmp4.titleText;
+    cResult[33] = toLocaleUpperCaseResult;
+    cResult[34] = tmp50;
+    tmp48 = tmp50;
   }
-  const obj15 = { style: tmp4.imageContainer, children: tmp35 };
-  const tmp40 = metroRequire(View, obj15);
-  cResult[29] = tmp4.imageContainer;
-  cResult[30] = tmp35;
-  cResult[31] = tmp40;
-  tmp39 = tmp40;
+  const obj17 = { style: tmp4.imageContainer, children: tmp37 };
+  const tmp42 = metroRequire(View, obj17);
+  cResult[28] = tmp4.imageContainer;
+  cResult[29] = tmp37;
+  cResult[30] = tmp42;
+  tmp41 = tmp42;
 }) : (function CheckpointMessagesStatsScreen() {
-  let formatResult;
-  let items1;
+  let formatToPlainStringResult1;
   let items2;
   let items3;
-  let obj5;
-  let tmp8Result4;
+  let items4;
+  let numberFormat;
+  let obj13;
+  let obj6;
+  let tmp12;
+  let tmp12Result4;
+  let tmp14Result;
+  let wWKySP;
   const tmp = closure_8();
   let obj = get_initialized;
   const items = [CheckpointStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    stats = stats.stats;
+    const stats = CheckpointStore.stats;
     let messages;
     if (stats != null) {
       messages = stats.messages;
     }
     return messages;
+  });
+  const items1 = [CheckpointStore];
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const globalStats = CheckpointStore.globalStats;
+    let numWordsSent;
+    if (globalStats != null) {
+      const messages = globalStats.messages;
+      if (messages != null) {
+        numWordsSent = messages.numWordsSent;
+      }
+    }
+    return numWordsSent;
   });
   let num;
   const _Math = Math;
@@ -441,71 +446,93 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   }
   const roundResult = round(num);
   let prop;
+  const getCheckpointTopPercent = CheckpointStatsUtils.getCheckpointTopPercent;
+  CheckpointStatsUtils;
   if (stateFromStores != null) {
     prop = stateFromStores.numMessagesSentPercentile;
   }
-  let bound = null;
-  if (null != prop) {
-    bound = null;
-    if (prop >= 50) {
-      const _Math2 = Math;
-      const _Math3 = Math;
-      bound = Math.max(1, Math.ceil(100 - prop));
+  const checkpointTopPercent = getCheckpointTopPercent(prop);
+  const intl = tmp2(1128).intl;
+  const string = intl.string;
+  if (roundResult <= 0 && null != stateFromStores1) {
+    wWKySP = tmp11(3088)["2BuyVC"];
+    tmp12 = tmp11;
+  } else {
+    wWKySP = tmp11(3056).wWKySP;
+    tmp12 = tmp11;
+  }
+  const stringResult = string(wWKySP);
+  let formatToPlainStringResult;
+  if (!(roundResult <= 0 && null != stateFromStores1)) {
+    if (null != checkpointTopPercent) {
+      const intl2 = tmp2(1128).intl;
+      const obj3 = {
+        numMessages: roundResult,
+        percent: checkpointTopPercent,
+        percentHook(arg0) {
+              return arg0;
+            }
+      };
+      formatToPlainStringResult = intl2.formatToPlainString(tmp12(3088).TOMBAW, obj3);
     }
   }
-  const intl = tmp2(1128).intl;
-  const stringResult = intl.string(_modDef3109.wWKySP);
-  let formatToPlainStringResult;
-  if (null != bound) {
-    const intl2 = tmp2(1128).intl;
-    const obj2 = {
-      numMessages: roundResult,
-      percent: bound,
-      percentHook(arg0) {
-          return arg0;
-        }
-    };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp8(3141).TOMBAW, obj2);
+  const obj4 = { style: tmp.container, children: items2 };
+  const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp12Result4, obj6) };
+  obj6 = { animatedUri: tmp12(12987), staticUri: tmp12(12988), style: tmp.image };
+  const tmp12Result = tmp12(12974);
+  tmp12Result4 = tmp12(12977);
+  items2 = [metroRequire(View, obj5), ];
+  const obj8 = { style: tmp.title, children: items3 };
+  items3 = [, ];
+  const obj7 = { style: tmp.copy, children: items4 };
+  const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
+  items3[0] = metroRequire(ChatIcon.ChatIcon, obj9);
+  const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const tmp12Result5 = tmp12(12972);
+  items3[1] = metroRequire(tmp12Result5, obj10);
+  items4 = [metroImportDefault(View, obj8), , ];
+  if (roundResult <= 0 && null != stateFromStores1) {
+    const obj11 = { value: stateFromStores1 };
+    tmp14Result = tmp14(tmp12(12980), obj11);
+  } else {
+    const _HermesInternal = HermesInternal;
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp12(12982), obj13) };
+    obj13 = { end: roundResult };
+    tmp14Result = tmp14(tmp17, obj12);
   }
-  const obj3 = { style: tmp.container, children: items1 };
-  const obj4 = { style: tmp.imageContainer, children: metroRequire(tmp8Result4, obj5) };
-  obj5 = { uri: _modDef12768, style: tmp.image };
-  const tmp8Result = CheckpointScreenDefault;
-  tmp8Result4 = CheckpointApngPlayerDefault;
-  items1 = [metroRequire(View, obj4), ];
-  const obj7 = { style: tmp.title, children: items2 };
-  items2 = [, ];
-  const obj6 = { style: tmp.copy, children: items3 };
-  const obj8 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items2[0] = metroRequire(ChatIcon.ChatIcon, obj8);
-  const obj9 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp8Result5 = CheckpointTextDefault;
-  items2[1] = metroRequire(tmp8Result5, obj9);
-  items3 = [metroImportDefault(View, obj7), , ];
-  const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(NumberAnimationDefault, { end: roundResult }) };
-  items3[1] = metroRequire(View, obj10);
-  const obj11 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatResult };
-  const tmp8Result6 = CheckpointTextDefault;
-  if (null != bound) {
+  items4[1] = tmp14Result;
+  const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
+  const tmp12Result6 = tmp12(12972);
+  if (roundResult <= 0 && null != stateFromStores1) {
+    const intl5 = tmp2(1128).intl;
+    const formatToPlainString = intl5.formatToPlainString;
+    const _Intl = Intl;
+    const obj15 = { numWords: numberFormat.format(stateFromStores1) };
+    const bAxEs2 = tmp12(3088).bAxEs2;
+    const self = this;
+    const self2 = this;
+    numberFormat = new Intl.NumberFormat(tmp2(1128).intl.currentLocale, { notation: "compact", compactDisplay: "long" });
+    formatToPlainStringResult1 = formatToPlainString(bAxEs2, obj15);
+  } else if (null != checkpointTopPercent) {
     const intl4 = tmp2(1128).intl;
-    const obj12 = {
+    const obj16 = {
       numMessages: roundResult,
-      percent: bound,
+      percent: checkpointTopPercent,
       percentHook(children, arg1) {
           const obj = { children };
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatResult = intl4.format(tmp8(3141).TOMBAW, obj12);
+    formatToPlainStringResult1 = intl4.format(tmp12(3088).TOMBAW, obj16);
   } else {
     const intl3 = tmp2(1128).intl;
-    const obj13 = { numMessages: roundResult };
-    formatResult = intl3.format(tmp8(3141).cYCqz8, obj13);
+    const obj17 = { numMessages: roundResult };
+    formatToPlainStringResult1 = intl3.format(tmp12(3088).cYCqz8, obj17);
   }
-  const obj14 = { children: metroImportDefault(View, obj3) };
-  items3[2] = metroRequire(tmp8Result6, obj11);
-  items1[1] = metroImportDefault(View, obj6);
-  return metroRequire(tmp8Result, obj14);
+  const obj18 = { children: metroImportDefault(View, obj4) };
+  items4[2] = metroRequire(tmp12Result6, obj14);
+  items2[1] = metroImportDefault(View, obj7);
+  return metroRequire(tmp12Result, obj18);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointMessagesStatsScreen.tsx");
 

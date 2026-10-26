@@ -1,23 +1,23 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18283
+// Function ID: 18284
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 2068, 2128, 2122, 1392, 1087, 21, 5191, 587, 558, 576, 504, 6374, 1505, 1633, 7015, 7290, 4850, 6457, 10024, 2000, 10612, 7016, 1128, 7021, 1202, 8632, 2]
+// Dependencies: [32, 19, 17, 4823, 4883, 4877, 1392, 1087, 21, 4971, 587, 558, 576, 504, 6827, 1505, 1633, 7144, 7411, 4908, 6903, 10121, 2000, 10832, 7145, 1128, 7150, 1202, 8723, 2]
 
-// Module 17977 (ChannelSettingsPermissionsList)
+// Module 18283 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6374 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -382,7 +382,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -398,12 +398,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const items2 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = B;
+    cResult[5] = G;
     cResult[6] = items2;
     tmp15 = items2;
-    tmp14 = B;
+    tmp14 = G;
   } else {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -424,7 +424,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   guildId = stateFromStoresObject.guildId;
   const MEMBER = constants.MEMBER;
   if (stateFromStores != null) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (cResult[7] === guildId) {
-    class B {
+    class G {
       constructor() {
         guildId = undefined;
         const obj = stateFromStores;
@@ -462,7 +462,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[10] = undefined;
   cResult[11] = obj3;
 }) : (function ChannelSettingsPermissionsList(channelId) {
-  let SearchField;
+  let SearchBar;
   let intl;
   let items5;
   let obj9;
@@ -538,7 +538,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items3);
   const items4 = [guildId, rows, rows1, callback, type, rowContentHeight];
   const obj7 = { style: tmp.container, children: items5 };
-  const obj8 = { style: tmp.containerSearchBar, children: closure_13(SearchField, obj9) };
+  const obj8 = { style: tmp.containerSearchBar, children: closure_13(SearchBar, obj9) };
   const callback1 = obj2.useCallback((arg0, arg1) => {
     let id;
     let obj5;
@@ -578,7 +578,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, items4);
   obj9 = { size: "md", placeholder: intl.string(channelId(stateFromStores[25]).t["5h0QOP"]), onChange: tmp7, round: true };
-  SearchField = tmp2(tmp3[24]).SearchField;
+  SearchBar = tmp2(tmp3[24]).SearchBar;
   intl = tmp2(tmp3[25]).intl;
   items5 = [closure_13(rows1, obj8), ];
   const tmp19 = closure_14;

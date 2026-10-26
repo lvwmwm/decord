@@ -1,10 +1,10 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8166
+// Function ID: 8167
 // Name: UploadLimits
 // Dependencies: [2]
 // Exports: getEffectiveUploadLimit
 
-// Module 8047 (UploadLimits)
+// Module 8166 (UploadLimits)
 import size from "module_2" /* 2 */;
 
 let c0 = 20971520;

@@ -1,31 +1,32 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15736
+// Function ID: 15737
 // Name: links
-// Dependencies: [5, 2067, 5540, 5895, 1087, 2026, 4834, 1384, 15515, 15488, 15516, 5186, 1267, 15517, 4895, 8764, 15518, 9169, 15503, 11335, 11330, 7370, 2032, 15519, 2]
+// Dependencies: [5, 4822, 2045, 6378, 1087, 2026, 1267, 4892, 1384, 15737, 15710, 15738, 4977, 15739, 5656, 8860, 15740, 9264, 15725, 11478, 11475, 7490, 2031, 15741, 15744, 2]
 
-// Module 15514 (links)
+// Module 15736 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5186 */;
-import RPCErrorDefault from "RPCError" /* 9169 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11330 */;
-import RPCHelpers from "RPCHelpers" /* 11335 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15488 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15515 */;
-import internalDeepLinks from "internalDeepLinks" /* 15516 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15517 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15519 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4977 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11475 */;
+import RPCHelpers from "RPCHelpers" /* 11478 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15710 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15737 */;
+import internalDeepLinks from "internalDeepLinks" /* 15738 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15739 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15741 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 15744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import Constants_mod from "Constants" /* 5895 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Constants_mod3 from "Constants" /* 2026 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
 import size from "module_2" /* 2 */;
 
-let c2, c6, c7, currentEmbeddedActivity, getApplication;
+let c2, currentEmbeddedActivity, getApplication;
 
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
@@ -38,205 +39,237 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const EmbeddedSurfaceUtils = tmp(2032);
-const openUserSettings = tmp(7370);
+const openUserSettings = tmp(7490);
+function trackExternalLink(application, arg1, arg2) {
+  const str = new URL(arg1);
+  const tmp = "client.vibeyard.tools" === str.hostname && "/link" === str.pathname;
+  if (tmp) {
+    str.search = "";
+    str.hash = "";
+    str.username = "";
+    str.password = "";
+  }
+  application = application.application;
+  let id;
+  const track = AnalyticsUtilsDefault.track;
+  const RPC_OPEN_EXTERNAL_LINK_CALLED = metroImportAll.RPC_OPEN_EXTERNAL_LINK_CALLED;
+  AnalyticsUtilsDefault;
+  if (application != null) {
+    id = application.id;
+  }
+  obj = { application_id: id, url: str.toString(), opened: true };
+  track(RPC_OPEN_EXTERNAL_LINK_CALLED, obj);
+}
 let obj = function _openExternalLink() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let closure_1;
+  obj = _asyncToGenerator(async (arg0, arg1) => {
+    let closure_2;
     let closure_3;
-    let tmp;
-    let closure_0 = arg0;
-    url = value;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
+    let closure_4;
+    let application = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (async function(arg0, value) {
+      let tmp;
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          let obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
       } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c5;
-      try {
-        let str1;
-        let self3;
-        c7 = 2;
-        if (0 === c6) {
-          if (arg0 === 1) {
+        try {
+          let str1;
+          c7 = 2;
+          let tmp4 = c6;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              let obj3 = { value, done: true };
+              return obj3;
+            } else {
+              const channelId = tmp;
+              application = tmp4;
+              let application1;
+              let embeddedActivityLocationChannelId;
+              str1 = undefined;
+              application = application.application;
+              let id;
+              getApplication = getApplication.getApplication;
+              if (application != null) {
+                id = application.id;
+              }
+              application1 = getApplication(id);
+              const getEmbeddedActivityLocationChannelId = embeddedActivityLocationUtils.getEmbeddedActivityLocationChannelId;
+              embeddedActivityLocationUtils;
+              currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
+              let _location;
+              if (currentEmbeddedActivity != null) {
+                _location = currentEmbeddedActivity.location;
+              }
+              embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
+              let tmp36;
+              if (PlatformUtils.isPlatformEmbedded) {
+                const obj4 = { application: application1, channelId: embeddedActivityLocationChannelId };
+                tmp36 = getEmbeddedActivityPopoutWindowKeyDefault(obj4);
+              }
+              let internalDeepLink = null;
+              const tmp28Result = validateEmbeddedAppFrame;
+              if (null != tmp28Result.tryValidateEmbeddedAppFrame(application)) {
+                const tmp28Result4 = internalDeepLinks;
+                internalDeepLink = tmp28Result4.resolveInternalDeepLink(tmp67);
+              }
+              if (null != internalDeepLink) {
+                if (null != tmp36) {
+                  const obj7 = CrossPlatformNativeUtilsDefault;
+                  obj7.focus(null, true);
+                }
+                const tmp28Result5 = internalDeepLinks;
+                if (tmp28Result5.openInternalDeepLink(internalDeepLink)) {
+                  trackExternalLink(application, closure_1, true);
+                  c7 = 3;
+                  return { value: { opened: true }, done: true };
+                }
+              }
+              c5 = 1;
+              const _URL = URL;
+              const self5 = this;
+              const self6 = this;
+              let str = new URL(tmp67);
+              str1 = str.toString();
+              if (null != tmp36) {
+                const obj9 = CrossPlatformNativeUtilsDefault;
+                obj9.focus(tmp36, true);
+              }
+              let id1;
+              const fetchIsLinkTrusted = fetchIsLinkTrusted2.fetchIsLinkTrusted;
+              fetchIsLinkTrusted2;
+              if (application1 != null) {
+                id1 = application1.id;
+              }
+              c6 = 2;
+              c7 = 1;
+              const obj6 = { value: fetchIsLinkTrusted(id1, str1), done: false };
+              return obj6;
+            }
+          } else if (1 === tmp4) {
+            c5 = 0;
+            const _HermesInternal = HermesInternal;
+            const self3 = this;
+            const self4 = this;
+            const obj8 = { errorCode: closure_131_6.INVALID_COMMAND };
+            const tmp20 = closure_131_1(closure_131_2[17]);
+            const tmp202 = new tmp20(obj8, "Invalid URL: " + closure_1);
+            throw tmp202;
+          } else if (arg0 === 1) {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c5 = 0;
             c7 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
+            return { value, done: true };
           } else {
-            const channelId = tmp;
-            let application1;
-            let embeddedActivityLocationChannelId;
-            str1 = undefined;
-            const application3 = closure_0.application;
-            let id;
-            getApplication = getApplication.getApplication;
-            if (application3 != null) {
-              id = application3.id;
+            let resolved;
+            if (value) {
+              closure_131_1(closure_131_2[14])(str1);
+              closure_131_11(application, str1, true);
+              resolved = Promise.resolve({ opened: true });
+            } else {
+              const self = this;
+              const self2 = this;
+              resolved = new Promise((arg0) => {
+                let closure_0 = arg0;
+                let tmp = closure_1_0(application[15]);
+                obj = {
+                  href,
+                  shouldConfirm: true,
+                  onClick() {
+                    return false;
+                  },
+                  onConfirm() {
+                    closure_1(closure_2[14])(href);
+                    const str = new URL(href);
+                    let tmp5 = "client.vibeyard.tools" === str.hostname;
+                    const tmp4 = closure_2_0;
+                    if (tmp5) {
+                      tmp5 = "/link" === str.pathname;
+                    }
+                    if (tmp5) {
+                      str.search = "";
+                      str.hash = "";
+                      str.username = "";
+                      str.password = "";
+                    }
+                    application = tmp4.application;
+                    let id;
+                    const track = tmp(tmp2[6]).track;
+                    const RPC_OPEN_EXTERNAL_LINK_CALLED = constants.RPC_OPEN_EXTERNAL_LINK_CALLED;
+                    closure_1(closure_2[6]);
+                    if (application != null) {
+                      id = application.id;
+                    }
+                    obj = { application_id: id, url: str.toString(), opened: true };
+                    track(RPC_OPEN_EXTERNAL_LINK_CALLED, obj);
+                    closure_0({ opened: true });
+                  },
+                  onCancel() {
+                    const str = new URL(href);
+                    let tmp2 = "client.vibeyard.tools" === str.hostname;
+                    const tmp = closure_2_0;
+                    if (tmp2) {
+                      tmp2 = "/link" === str.pathname;
+                    }
+                    if (tmp2) {
+                      str.search = "";
+                      str.hash = "";
+                      str.username = "";
+                      str.password = "";
+                    }
+                    application = tmp.application;
+                    let id;
+                    const track = closure_1(closure_2[6]).track;
+                    const RPC_OPEN_EXTERNAL_LINK_CALLED = constants.RPC_OPEN_EXTERNAL_LINK_CALLED;
+                    closure_1(closure_2[6]);
+                    if (application != null) {
+                      id = application.id;
+                    }
+                    obj = { application_id: id, url: str.toString(), opened: false };
+                    track(RPC_OPEN_EXTERNAL_LINK_CALLED, obj);
+                    closure_0({ opened: false });
+                  }
+                };
+                const handleClick = tmp.handleClick;
+                const obj2 = closure_1_0(application[16]);
+                const obj3 = { application, channelId };
+                return handleClick(obj, undefined, undefined, obj2.getActivitiesModalContextKey(obj3));
+              });
             }
-            application1 = getApplication(id);
-            const getEmbeddedActivityLocationChannelId = embeddedActivityLocationUtils.getEmbeddedActivityLocationChannelId;
-            currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-            let _location;
-            if (currentEmbeddedActivity != null) {
-              _location = currentEmbeddedActivity.location;
-            }
-            embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-            let tmp40;
-            if (PlatformUtils.isPlatformEmbedded) {
-              const obj4 = { application: application1, channelId: embeddedActivityLocationChannelId };
-              tmp40 = getEmbeddedActivityPopoutWindowKeyDefault(obj4);
-            }
-            let internalDeepLink = null;
-            const tmp32Result = validateEmbeddedAppFrame;
-            if (null != tmp32Result.tryValidateEmbeddedAppFrame(closure_0)) {
-              const tmp32Result4 = internalDeepLinks;
-              internalDeepLink = tmp32Result4.resolveInternalDeepLink(tmp73);
-            }
-            if (null != internalDeepLink) {
-              if (null != tmp40) {
-                const obj8 = CrossPlatformNativeUtilsDefault;
-                obj8.focus(null, true);
-              }
-              const tmp32Result5 = internalDeepLinks;
-              if (tmp32Result5.openInternalDeepLink(internalDeepLink)) {
-                self3 = constants.RPC_OPEN_EXTERNAL_LINK_CALLED;
-                const application2 = tmp72.application;
-                let id1;
-                const track2 = AnalyticsUtilsDefault.track;
-                if (application2 != null) {
-                  id1 = application2.id;
-                }
-                const obj5 = { application_id: id1, url, opened: true };
-                track2(self3, obj5);
-                c7 = 3;
-                const obj6 = { value: { opened: true }, done: true };
-                return obj6;
-              }
-            }
-            c5 = 1;
-            const _URL = URL;
-            const self5 = this;
-            const self6 = this;
-            const str = new URL(url);
-            str1 = str.toString();
-            if (null != tmp40) {
-              const obj10 = CrossPlatformNativeUtilsDefault;
-              self3 = obj10.focus(tmp40, true);
-            }
-            self3 = undefined;
-            const fetchIsLinkTrusted = fetchIsLinkTrusted2.fetchIsLinkTrusted;
-            const tmp32Result6 = fetchIsLinkTrusted2;
-            if (application1 != null) {
-              self3 = application1.id;
-            }
-            c6 = 2;
-            c7 = 1;
-            const obj7 = { value: fetchIsLinkTrusted(self3, str1), done: false };
-            return obj7;
+            c5 = 0;
+            c7 = 3;
+            obj = { value: resolved, done: true };
+            return obj;
           }
-        } else if (1 === tmp4) {
-          c5 = 0;
-          const obj9 = { errorCode: closure_131_6.INVALID_COMMAND };
-          const _HermesInternal = HermesInternal;
-          self3 = this;
-          const self4 = this;
-          const tmp24 = closure_131_1(closure_131_2[17]);
-          const tmp242 = new tmp24(obj9, "Invalid URL: " + url);
-          throw tmp242;
-        } else if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          c7 = 3;
-          const obj11 = { value, done: true };
-          return obj11;
-        } else {
-          if (value) {
-            closure_131_1(closure_131_2[14])(str1);
-            let application = closure_0.application;
-            let id2;
-            let track = closure_131_1(closure_131_2[12]).track;
-            let RPC_OPEN_EXTERNAL_LINK_CALLED = closure_131_8.RPC_OPEN_EXTERNAL_LINK_CALLED;
-            const tmp12 = closure_131_1(closure_131_2[12]);
-            if (application != null) {
-              id2 = application.id;
-            }
-            obj = { application_id: id2, url: str1, opened: true };
-            const trackResult = track(RPC_OPEN_EXTERNAL_LINK_CALLED, obj);
-            self3 = Promise.resolve({ opened: true });
+        } catch (tmp57) {
+          const href = tmp57;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp57;
           } else {
-            const self = this;
-            const self2 = this;
-            self3 = new Promise((arg0) => {
-              closure_0 = arg0;
-              let tmp = closure_1_0(application[15]);
-              obj = {
-                href,
-                shouldConfirm: true,
-                onClick() {
-                  return false;
-                },
-                onConfirm() {
-                  closure_1(self3[14])(closure_2_4);
-                  application = closure_2_0.application;
-                  let id;
-                  const track = closure_1(self3[12]).track;
-                  const RPC_OPEN_EXTERNAL_LINK_CALLED = constants.RPC_OPEN_EXTERNAL_LINK_CALLED;
-                  closure_1(self3[12]);
-                  const tmp = closure_2_4;
-                  if (application != null) {
-                    id = application.id;
-                  }
-                  track(RPC_OPEN_EXTERNAL_LINK_CALLED, { application_id: id, url: tmp, opened: true });
-                  closure_0({ opened: true });
-                },
-                onCancel() {
-                  application = closure_2_0.application;
-                  let id;
-                  const track = closure_1(self3[12]).track;
-                  const RPC_OPEN_EXTERNAL_LINK_CALLED = constants.RPC_OPEN_EXTERNAL_LINK_CALLED;
-                  closure_1(self3[12]);
-                  if (application != null) {
-                    id = application.id;
-                  }
-                  obj = { application_id: id, url, opened: false };
-                  track(RPC_OPEN_EXTERNAL_LINK_CALLED, obj);
-                  closure_0({ opened: false });
-                }
-              };
-              const handleClick = tmp.handleClick;
-              const obj2 = closure_1_0(application[16]);
-              const obj3 = { application, channelId };
-              return handleClick(obj, undefined, undefined, obj2.getActivitiesModalContextKey(obj3));
-            });
+            c6 = 1;
           }
-          c5 = 0;
-          c7 = 3;
-          const obj12 = { value: self3, done: true };
-          return obj12;
-        }
-      } catch (tmp63) {
-        let closure_4 = tmp63;
-        if (0 === c5) {
-          c7 = 3;
-          throw tmp63;
-        } else {
-          c6 = 1;
         }
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -260,7 +293,7 @@ let obj2 = {
     return (async (arg0, value) => {
       let closure_0;
       function openExternalLink() {
-        return closure_1_11(...arguments);
+        return closure_1_12(...arguments);
       }
       if (c5 === 2) {
         c5 = 3;
@@ -382,22 +415,20 @@ const SHARE_LINK = RPCCommands.SHARE_LINK;
 CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
 let obj4 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items3 },
-  handler(arg0) {
+  handler(socket) {
     let applicationId;
-    let args;
     let customId;
     let linkId;
     let message;
-    let socket;
-    ({ socket, args } = arg0);
-    ({ custom_id: require, message: importDefault, link_id: dependencyMap } = args);
+    socket = socket.socket;
+    ({ custom_id: importDefault, message: dependencyMap, link_id: _asyncToGenerator } = socket.args);
     let tmp2 = dependencyMap;
-    let tmp = require;
-    obj = RPCHelpers;
+    let tmp = socket;
+    obj = socket(11478);
     let result = obj.validatePostMessageTransport(socket.transport);
-    let obj2 = RPCHelpers;
+    let obj2 = socket(11478);
     const validateApplicationResult = obj2.validateApplication(socket.application);
-    let c3 = validateApplicationResult;
+    let c4 = validateApplicationResult;
     if (null == validateApplicationResult) {
       const self5 = this;
       const self6 = this;
@@ -405,29 +436,35 @@ let obj4 = {
       const tmp16 = new RPCErrorDefault(obj3, "No application.");
       throw tmp16;
     } else {
-      const tmpResult = EmbeddedSurfaceUtils;
+      const tmpResult = tmp(2031);
       if (tmpResult.isEmbeddedApplication(socket.application)) {
         const self3 = this;
         const self4 = this;
         const promise = new Promise((arg0) => {
+          let obj2;
+          let tmp2;
           let closure_0 = arg0;
-          obj = openActivityShareLinkModal;
-          const obj2 = {
+          let tmp = openActivityShareLinkModal2;
+          obj = {
             applicationId,
-            customId: require,
-            linkId: dependencyMap,
-            message: importDefault,
-            onShare(stateFromStores, didCopyLink) {
+            customId: importDefault,
+            linkId: _asyncToGenerator,
+            channelId: tmp2(obj2.tryValidateEmbeddedAppFrame(socket)),
+            message: dependencyMap,
+            onShare(didSendMessage, didCopyLink) {
               let tmp2 = didCopyLink;
               const tmp = closure_0;
               if (!didCopyLink) {
-                tmp2 = stateFromStores;
+                tmp2 = didSendMessage;
               }
-              obj = { success: tmp2, didCopyLink, didSendMessage: stateFromStores };
+              obj = { success: tmp2, didCopyLink, didSendMessage };
               tmp(obj);
             }
           };
-          const result = obj.openActivityShareLinkModal(obj2);
+          const openActivityShareLinkModal = tmp.openActivityShareLinkModal;
+          tmp2 = getFrameChannelIdDefault;
+          obj2 = validateEmbeddedAppFrame;
+          const result = openActivityShareLinkModal(obj);
         });
         return promise;
       } else {

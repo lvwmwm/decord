@@ -1,28 +1,100 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 10739
+// Function ID: 10740
 // Name: conjurePreviewConnection
-// Dependencies: [5, 11015, 11017, 11056, 11037, 584, 10996, 10999, 11057, 10998, 11062, 11063, 11064, 2]
+// Dependencies: [5, 1392, 6773, 10740, 10742, 10785, 10762, 584, 10786, 10727, 10717, 10720, 10791, 10719, 10793, 10794, 10795, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 11014 (conjurePreviewConnection)
+// Module 10739 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10996 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11015 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11017 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11037 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 11056 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11057 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 11062 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11064 */;
+import conjureChatConnection from "conjureChatConnection" /* 10717 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10740 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10742 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10762 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10785 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10786 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 10791 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10793 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import UserStore from "UserStore" /* 1392 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
-let c2, closure_3;
+let c0, closure_3, currentUser;
 
-let obj = function _getPreviewScreenshotUrl() {
+let obj = function _refetchWidgetData() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj2;
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c2;
+      try {
+        c0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            currentUser = currentUser.getCurrentUser();
+            let id;
+            if (currentUser != null) {
+              id = currentUser.id;
+            }
+            if (null != id) {
+              c2 = 1;
+              c1 = 2;
+              c0 = 1;
+              const obj5 = { value: obj2.fetchUserApplicationIdentitiesWithProfiles(id), done: false };
+              obj2 = UserApplicationIdentityActionCreatorsDefault;
+              return obj5;
+            }
+          }
+        } else if (1 === tmp3) {
+          c2 = 0;
+        } else if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c0 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          c2 = 0;
+        }
+        c0 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp9) {
+        if (0 === c2) {
+          c0 = 3;
+          throw tmp9;
+        } else {
+          c1 = 1;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
+obj = function _getPreviewScreenshotUrl() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj3;
     let closure_0 = arg0;
@@ -367,13 +439,13 @@ obj = function _relayCaptureRequest() {
                 let c1;
                 let v3;
                 closure_2_1.sendCaptureAck(user.id, "accepted");
-                const obj3 = c0(closure_1_2[3]);
+                const obj3 = c0(closure_1_2[5]);
                 await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                 return arg1;
               });
               resolveUploadUrl = function resolveUploadUrl() {
                 function getClientCaptureUploadUrl() {
-                  return closure_1_10(...arguments);
+                  return closure_1_13(...arguments);
                 }
                 return getClientCaptureUploadUrl(closure_1_0);
               };
@@ -465,7 +537,7 @@ obj = function _relayControlRequest() {
                           let c1;
                           let v3;
                           closure_2_1.sendControlAck(user.id, "accepted");
-                          const obj3 = c0(closure_1_2[3]);
+                          const obj3 = c0(closure_1_2[5]);
                           await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                           return null != arg1;
                         })),
@@ -649,6 +721,12 @@ obj = {
       obj2.endPreviewOperation(projectId);
     }
   },
+  widget_refreshed() {
+    function refetchWidgetData() {
+      return obj(...arguments);
+    }
+    !refetchWidgetData();
+  },
   overlay_background(blur, projectId) {
     projectId = projectId.projectId;
     obj = DispatcherDefault;
@@ -657,6 +735,26 @@ obj = {
   }
 };
 let obj2 = {
+  preview_app_published(has_activity, projectId) {
+    projectId = projectId.projectId;
+    const project = ConjureProjectStore.getProject(projectId);
+    let prop;
+    if (project != null) {
+      prop = project.preview_application_id;
+    }
+    if (null != prop) {
+      obj = ConjurePublishActionCreators;
+      const result = obj.refreshPreviewApplication(prop);
+      result.catch(() => {
+
+      });
+      const tmp4 = require;
+      if (true === has_activity.has_activity) {
+        const tmp4Result = tmp4(10727);
+        const result1 = tmp4Result.prefetchConjurePreviewTicket(projectId, { known: true });
+      }
+    }
+  },
   preview_ready(integration_installed, projectId) {
     projectId = projectId.projectId;
     obj = conjureChatConnection;

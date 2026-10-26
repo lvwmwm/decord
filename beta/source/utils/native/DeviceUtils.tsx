@@ -1,10 +1,10 @@
-// Module ID: 5167
-// Function ID: 5168
+// Module ID: 4928
+// Function ID: 4929
 // Name: DeviceUtils
 // Dependencies: [1364, 1384, 510, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 5167 (DeviceUtils)
+// Module 4928 (DeviceUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import react_native from "react-native" /* 1364 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const mediaPerformanceClass = "mediaPerformanceClass";
 let result = size.fileFinishedImporting("utils/native/DeviceUtils.tsx");
 
 export const isIpadOS = function isIpadOS() {
-  return "iPad" === closure_3.deviceModel;
+  return "iPad" === closure_3.deviceModel || "iPhone19,4" === closure_3.deviceProduct;
 };
 export const isGestureNavigationEnabled = function isGestureNavigationEnabled() {
   return closure_3.isGestureNavigationEnabled;

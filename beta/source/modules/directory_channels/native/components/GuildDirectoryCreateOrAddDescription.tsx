@@ -1,16 +1,16 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 13204
+// Function ID: 13205
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 5191, 12965, 2082, 12966, 12953, 12954, 5187, 1128, 12962, 2]
+// Dependencies: [5, 19, 17, 21, 4971, 13205, 4837, 13206, 13193, 13194, 5234, 1128, 13202, 2]
 // Exports: default
 
-// Module 12964 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12962 */;
+// Module 13204 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, guild;
@@ -120,13 +120,13 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(12954).GuildDirectoryAddModalScreen;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13194).GuildDirectoryAddModalScreen;
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1128).t["5bQcoa"]) };
-  const Text = directoryChannelId(5187).Text;
+  const Text = directoryChannelId(5234).Text;
   intl = directoryChannelId(1128).intl;
   items = [closure_6(Text, obj4), ];
   let obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1128).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5187).Text;
+  const Text2 = directoryChannelId(5234).Text;
   intl2 = directoryChannelId(1128).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];

@@ -1,8 +1,8 @@
-// Module ID: 5741
-// Function ID: 5742
+// Module ID: 6219
+// Function ID: 6220
 // Dependencies: [2]
 
-// Module 5741
+// Module 6219
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/mech_aero.png.js");

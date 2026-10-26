@@ -1,15 +1,15 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9363
+// Function ID: 9364
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7586, 502, 2065, 558, 576, 504, 5033, 2052, 2053, 5155, 9266, 2002, 2]
+// Dependencies: [19, 7703, 502, 4820, 558, 576, 504, 5001, 4807, 4808, 5210, 9364, 2002, 2]
 // Exports: default
 
-// Module 9265 (useWishlistNUXActionSheet)
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
+// Module 9363 (useWishlistNUXActionSheet)
+import dismissible_content from "dismissible_content" /* 4807 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
+import UserProfileStore from "UserProfileStore" /* 7703 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

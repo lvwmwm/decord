@@ -1,15 +1,15 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14641
+// Function ID: 14642
 // Name: PoggermodeActionCreators
-// Dependencies: [502, 7631, 14407, 584, 14409, 2]
+// Dependencies: [502, 7751, 14642, 584, 14644, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 14406 (PoggermodeActionCreators)
+// Module 14641 (PoggermodeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import trackPoggermodeSettingsUpdatedDefault from "trackPoggermodeSettingsUpdated" /* 14409 */;
+import trackPoggermodeSettingsUpdatedDefault from "trackPoggermodeSettingsUpdated" /* 14644 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7631 */;
-import PoggermodeStore from "PoggermodeStore" /* 14407 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7751 */;
+import PoggermodeStore from "PoggermodeStore" /* 14642 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/poggermode/PoggermodeActionCreators.tsx");

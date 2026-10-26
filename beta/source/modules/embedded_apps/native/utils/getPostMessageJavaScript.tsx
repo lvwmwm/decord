@@ -1,16 +1,19 @@
-// Module ID: 11035
-// Function ID: 11036
+// Module ID: 10759
+// Function ID: 10760
 // Name: getPostMessageJavaScript
-// Dependencies: [2]
+// Dependencies: [10760, 2]
 // Exports: default
 
-// Module 11035 (getPostMessageJavaScript)
+// Module 10759 (getPostMessageJavaScript)
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10760 */;
 import size from "module_2" /* 2 */;
 
+let closure_0 = EmbeddedAppConstants.EMBEDDED_APP_FRAME_ELEMENT_ID;
 const result = size.fileFinishedImporting("modules/embedded_apps/native/utils/getPostMessageJavaScript.tsx");
 
 export default function getPostMessageJavaScript(arg0, arg1) {
-  const json = JSON.stringify(arg0);
-  return "\n    (function() {\n      const iFrame = document.getElementById('activityFrame');\n      iFrame.contentWindow.postMessage(" + json + ", " + JSON.stringify(arg1) + ");\n    })()\n  ";
+  const json = JSON.stringify(closure_0);
+  const json1 = JSON.stringify(arg0);
+  return "\n    (function() {\n      const iFrame = document.getElementById(" + json + ");\n      iFrame.contentWindow.postMessage(" + json1 + ", " + JSON.stringify(arg1) + ");\n    })()\n  ";
 };
 export const ANY_ORIGIN = "*";

@@ -1,35 +1,35 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 18280
+// Function ID: 18281
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2123, 2068, 2122, 2090, 4855, 1392, 1087, 21, 5191, 587, 558, 576, 5399, 1128, 5521, 4850, 11185, 8879, 9996, 12, 6542, 11630, 6457, 1505, 10931, 10024, 16372, 504, 2000, 10612, 17975, 6944, 9599, 7290, 2]
+// Dependencies: [32, 5, 19, 17, 4878, 4823, 4877, 4845, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 5908, 1128, 5604, 4908, 11311, 8974, 10093, 12, 6987, 11789, 6903, 1505, 11151, 10121, 16671, 504, 2000, 10832, 18281, 5595, 9699, 7411, 2]
 
-// Module 17974 (ChannelSettingsPermissionsOverview)
+// Module 18280 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2123 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import TableRow3 from "TableRow" /* 6457 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6944 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import RoleLabel from "RoleLabel" /* 10024 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10612 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 16372 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17975 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4878 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5595 */;
+import TableRow3 from "TableRow" /* 6903 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import RoleLabel from "RoleLabel" /* 10121 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10832 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 16671 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18281 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         const tmp15 = globalThis;
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp19 = closure_16(tmp(11630).RefreshIcon, {});
+          const tmp19 = closure_16(tmp(11789).RefreshIcon, {});
           let intl2 = tmp(1128).intl;
           const stringResult = intl2.string(tmp(1128).t.NVwuHq);
           cResult[10] = tmp19;
@@ -100,7 +100,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         if (cResult[12] !== tmp5) {
           let tmp22 = closure_16;
           let obj2 = { icon: tmp16, label: tmp17, onPress: tmp5 };
-          const tmp23 = closure_16(tmp(6457).TableRow, obj2);
+          const tmp23 = closure_16(tmp(6903).TableRow, obj2);
           cResult[12] = tmp5;
           cResult[13] = tmp23;
           tmp21 = tmp23;
@@ -140,10 +140,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         tmp24 = tmp26;
       }
     }
-    const tmpResult = tmp(5521);
+    const tmpResult = tmp(5604);
     const channelName = tmpResult.computeChannelName(category, UserStore, RelationshipStore);
     const tableRowGroupContainer = tmp4.tableRowGroupContainer;
-    const TableRowGroup = tmp(6542).TableRowGroup;
+    const TableRowGroup = tmp(6987).TableRowGroup;
     let intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
     const t = tmp(1128).t;
@@ -374,10 +374,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     });
     show(obj);
   }, items);
-  let obj = channel(5521);
+  let obj = channel(5604);
   const channelName = obj.computeChannelName(category, UserStore, RelationshipStore);
   let obj2 = { style: tmp.tableRowGroupContainer, children: tmp6(TableRowGroup, obj5) };
-  TableRowGroup = channel(6542).TableRowGroup;
+  TableRowGroup = channel(6987).TableRowGroup;
   let intl = channel(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = channel(1128).t;
@@ -390,8 +390,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(11630).RefreshIcon, {}), label: intl2.string(tmp3(1128).t.NVwuHq), onPress: callback };
-  TableRow = tmp3(6457).TableRow;
+  obj6 = { icon: tmp6(tmp3(11789).RefreshIcon, {}), label: intl2.string(tmp3(1128).t.NVwuHq), onPress: callback };
+  TableRow = tmp3(6903).TableRow;
   intl2 = tmp3(1128).intl;
   return closure_16(tmp7, obj2);
 });
@@ -417,7 +417,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Catego
         }
       }
       const obj2 = { channel, category, locked };
-      const tmp7 = authStore4(closure_19, obj2);
+      const tmp7 = authStore3(closure_19, obj2);
       cResult[0] = category;
       cResult[1] = channel;
       cResult[2] = locked;
@@ -433,7 +433,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Catego
     tmp4 = null;
     if (!tmp2) {
       const obj = { channel: tmp, category, locked: tmp3 };
-      tmp4 = authStore4(closure_19, obj);
+      tmp4 = authStore3(closure_19, obj);
     }
   }
   return tmp4;
@@ -482,7 +482,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
     }
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_16(navigation(10931).PlusMediumIcon, {});
+      const tmp13 = closure_16(navigation(11151).PlusMediumIcon, {});
       const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(navigation(1128).t.fVWxvT);
       cResult[3] = tmp13;
@@ -501,7 +501,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
               return closure_1(constants.ROLE);
             }
       };
-      const tmp17 = closure_16(navigation(6457).TableRow, obj3);
+      const tmp17 = closure_16(navigation(6903).TableRow, obj3);
       cResult[5] = tmp6;
       cResult[6] = tmp17;
       tmp15 = tmp17;
@@ -510,7 +510,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_16(navigation(10931).PlusMediumIcon, {});
+      const tmp21 = closure_16(navigation(11151).PlusMediumIcon, {});
       const intl3 = tmp(1128).intl;
       const stringResult2 = intl3.string(navigation(1128).t.riesLt);
       cResult[7] = tmp21;
@@ -529,7 +529,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
               return closure_1(constants.MEMBER);
             }
       };
-      const tmp25 = closure_16(navigation(6457).TableRow, obj4);
+      const tmp25 = closure_16(navigation(6903).TableRow, obj4);
       cResult[9] = tmp6;
       cResult[10] = tmp25;
       tmp23 = tmp25;
@@ -557,7 +557,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
     }
     const obj6 = { title: tmp8, hasIcons: true, children: items };
     items = [tmp15, tmp23];
-    const tmp28 = closure_17(navigation(6542).TableRowGroup, obj6);
+    const tmp28 = closure_17(navigation(6987).TableRowGroup, obj6);
     cResult[11] = tmp15;
     cResult[12] = tmp23;
     cResult[13] = tmp28;
@@ -581,7 +581,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
   } else {
     const obj2 = { style: tmp.tableRowGroupContainer, children: closure_17(TableRowGroup, obj3) };
     obj3 = { title: intl.string(require("intl").t.vPHdP5), hasIcons: true, children: items };
-    TableRowGroup = tmp2(6542).TableRowGroup;
+    TableRowGroup = tmp2(6987).TableRowGroup;
     intl = tmp2(1128).intl;
     const obj4 = {
       icon: closure_16(require("PlusMediumIcon").PlusMediumIcon, {}),
@@ -591,7 +591,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
           closure_0.push(constants2.NEW_PERMISSION, obj);
         }
     };
-    const TableRow = tmp2(6457).TableRow;
+    const TableRow = tmp2(6903).TableRow;
     intl2 = tmp2(1128).intl;
     items = [closure_16(TableRow, obj4), ];
     const obj5 = {
@@ -602,7 +602,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPer
           closure_0.push(constants2.NEW_PERMISSION, obj);
         }
     };
-    const TableRow2 = tmp2(6457).TableRow;
+    const TableRow2 = tmp2(6903).TableRow;
     intl3 = tmp2(1128).intl;
     items[1] = closure_16(TableRow2, obj5);
     return closure_16(View, obj2);
@@ -660,7 +660,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
           }
         }
         const obj2 = { label: tmp7, arrow: !isEditing, icon: tmp10, onPress: tmp14 };
-        const tmp17 = authStore4(TableRow3.TableRow, obj2);
+        const tmp17 = authStore3(TableRow3.TableRow, obj2);
         cResult[9] = tmp7;
         cResult[10] = !isEditing;
         cResult[11] = tmp10;
@@ -673,9 +673,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
         tmp11 = null;
         if (!tmp4) {
           const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-          const CircleMinusIcon = tmp(16372).CircleMinusIcon;
+          const CircleMinusIcon = tmp(16671).CircleMinusIcon;
           intl = tmp(1128).intl;
-          tmp11 = authStore4(CircleMinusIcon, obj3);
+          tmp11 = authStore3(CircleMinusIcon, obj3);
         }
       }
       cResult[6] = isEditing;
@@ -684,7 +684,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
       tmp10 = tmp11;
     }
   }
-  const tmp8 = authStore4(RoleLabel.RoleLabel, { name, color: colorString, colors: colorStrings });
+  const tmp8 = authStore3(RoleLabel.RoleLabel, { name, color: colorString, colors: colorStrings });
   cResult[2] = colorString;
   cResult[3] = colorStrings;
   cResult[4] = name;
@@ -703,14 +703,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
   onDelete = onDelete.onDelete;
   ({ name, colorString, colorStrings } = role);
   const tmp = isEveryoneRole(role);
-  const obj = { label: authStore4(RoleLabel.RoleLabel, { name, color: colorString, colors: colorStrings }), arrow: !isEditing, icon: tmp2Result, onPress: tmp7 };
+  const obj = { label: authStore3(RoleLabel.RoleLabel, { name, color: colorString, colors: colorStrings }), arrow: !isEditing, icon: tmp2Result, onPress: tmp7 };
   const TableRow = TableRow3.TableRow;
   tmp2Result = null;
   if (isEditing) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(16372).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(16671).CircleMinusIcon;
       intl = tmp3(1128).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -722,7 +722,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
       tmp7 = onDelete;
     }
   }
-  return authStore4(TableRow, obj);
+  return authStore3(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleOverwrites(guild) {
@@ -981,7 +981,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleOv
       return closure_1_16(closure_1_22, obj, role.id);
     })
   };
-  TableRowGroup = tmp2(6542).TableRowGroup;
+  TableRowGroup = tmp2(6987).TableRowGroup;
   intl = tmp2(1128).intl;
   return closure_16(View, obj4);
 });
@@ -1002,9 +1002,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     let tmp6 = null;
     if (isEditing) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp(16372).CircleMinusIcon;
+      const CircleMinusIcon = tmp(16671).CircleMinusIcon;
       intl = tmp(1128).intl;
-      tmp6 = authStore4(CircleMinusIcon, obj2);
+      tmp6 = authStore3(CircleMinusIcon, obj2);
     }
     cResult[0] = isEditing;
     cResult[1] = tmp6;
@@ -1026,7 +1026,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     }
   }
   const obj3 = { userId: user.id, guildId, onPress: onSelect, arrow: !isEditing, leading: tmp5 };
-  const tmp10 = authStore4(DetailedGuildIdentityUserRowDefault, obj3);
+  const tmp10 = authStore3(DetailedGuildIdentityUserRowDefault, obj3);
   cResult[2] = guildId;
   cResult[3] = onSelect;
   cResult[4] = !isEditing;
@@ -1055,7 +1055,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     intl = intl5.intl;
     tmpResult = tmp(CircleMinusIcon, obj2);
   }
-  return authStore4(tmp4, obj);
+  return authStore3(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberOverwrites(onSelectRow) {
@@ -1196,7 +1196,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     class N {
       constructor(arg0) {
         closure_0 = onSelectRow;
-        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F152631 */ }, onDelete() { /* body not rendered: F152632 */ } };
+        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F155634 */ }, onDelete() { /* body not rendered: F155635 */ } };
         return closure_1_16(closure_1_24, obj, onSelectRow.id);
       }
     }
@@ -1264,7 +1264,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
           return closure_1_16(closure_1_24, obj, user.id);
         })
     };
-    TableRowGroup = guild_id(6542).TableRowGroup;
+    TableRowGroup = guild_id(6987).TableRowGroup;
     intl = guild_id(1128).intl;
     tmp4 = closure_16(View, obj2);
   }

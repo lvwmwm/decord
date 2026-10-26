@@ -1,11 +1,11 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12336
+// Function ID: 12337
 // Name: conjureTipTurn
-// Dependencies: [10980, 2]
-// Exports: entryActivityAt, hasOpenAsk, newestSettledTurn
+// Dependencies: [10700, 2]
+// Exports: entryActivityAt, hasNoTurns, hasOpenAsk, newestPublish, newestSettledTurn
 
-// Module 12149 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 10980 */;
+// Module 12336 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 10700 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
@@ -26,7 +26,7 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(10980);
+                let tmp4Result = tmp4(10700);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }
@@ -40,6 +40,31 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
     return null;
   }
   return null;
+};
+export const newestPublish = function newestPublish(arr) {
+  let tmp2;
+  let diff = arr.length - 1;
+  if (0 <= diff) {
+    while (true) {
+      tmp2 = arr[diff];
+      if ("publish_notice" === tmp2.kind) {
+        let publishNotice = tmp2.publishNotice;
+        let commands_failed;
+        if (publishNotice != null) {
+          commands_failed = publishNotice.commands_failed;
+        }
+        if (true !== commands_failed) {
+          break;
+        }
+      }
+      diff = diff - 1;
+    }
+    return tmp2;
+  }
+  return null;
+};
+export const hasNoTurns = function hasNoTurns(arr) {
+  return arr.every((kind) => "publish_notice" === kind.kind || "project_event" === kind.kind || "context_boundary" === kind.kind);
 };
 export const hasOpenAsk = function hasOpenAsk(newestSettledTurnResult) {
   let tmp = null != newestSettledTurnResult.awaitingUser || null != newestSettledTurnResult.secretRequest || null != newestSettledTurnResult.settingsRequest;

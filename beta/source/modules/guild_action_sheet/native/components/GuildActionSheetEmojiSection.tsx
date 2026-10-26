@@ -1,25 +1,25 @@
-// Module ID: 14998
-// Function ID: 14999
+// Module ID: 15229
+// Function ID: 15230
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6243, 1207, 1392, 1087, 21, 5191, 587, 558, 576, 504, 1499, 4913, 4864, 7130, 7155, 5155, 9571, 5065, 14999, 1128, 6462, 1202, 15000, 5156, 5157, 4903, 5128, 7099, 7100, 1417, 2]
+// Dependencies: [32, 19, 17, 6725, 1207, 1392, 1087, 21, 4971, 587, 558, 576, 504, 1499, 5252, 2053, 7253, 7278, 5210, 9672, 4978, 15230, 1128, 6908, 1202, 15231, 5212, 5213, 5662, 5669, 7228, 7229, 1417, 2]
 
-// Module 14998 (GuildActionSheetEmojiSection)
+// Module 15229 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9672 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6243 */;
+import EmojiStore from "EmojiStore" /* 6725 */;
 import ThemeStore_mod from "ThemeStore" /* 1207 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,14 +54,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let first;
   let first1;
   let intl;
-  let intl2;
   let items4;
   let items5;
   let items6;
   let items7;
   let num8;
+  let obj10;
   let obj6;
-  let obj9;
   let stateFromStores;
   let tmp10;
   let tmp13;
@@ -69,8 +68,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let tmp15;
   let tmp26;
   let tmp30Result;
+  let tmp34;
   let tmp35;
-  let tmp36;
   let tmp9;
   const tmp2 = first;
   let obj = guildId(first[11]);
@@ -118,15 +117,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       }
     }
     const items2 = [UserStore];
-    const fn = function f() {
-      return currentUser.getCurrentUser();
-    };
+    class U {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     const items3 = [];
     cResult[4] = items2;
-    cResult[5] = fn;
+    cResult[5] = U;
     cResult[6] = items3;
     tmp15 = items3;
-    tmp14 = fn;
+    tmp14 = U;
     tmp13 = items2;
   } else {
     class E {
@@ -194,13 +195,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     }
     diff1 = tmp22 - 1;
     const _Math = Math;
+    class U {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     bound = Math.min(num8 + 1, 99);
   }
   const substr = stateFromStoresArray.slice(0, diff1);
   const tmp11Result2 = require("useAnalyticsLocations");
   analyticsLocations = tmp11Result2(tmp11(tmp2[17]).EMOJI_PICKER).analyticsLocations;
   if (cResult[7] !== analyticsLocations) {
-    class K {
+    class J {
       constructor(arg0, currentUser) {
         let obj5;
         let result = null == currentUser;
@@ -220,10 +226,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       }
     }
     cResult[7] = analyticsLocations;
-    cResult[8] = K;
-    tmp26 = K;
+    class U {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[8] = J;
+    tmp26 = J;
   } else {
-    class K {
+    class J {
       constructor(arg0, currentUser) {
         let obj5;
         let result = null == currentUser;
@@ -243,14 +254,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       }
     }
   }
-  K = tmp26;
+  J = tmp26;
   const tmpResult6 = guildId(tmp2[20]);
-  const isThemeDarkResult = tmpResult6.isThemeDark(K.theme);
+  const isThemeDarkResult = tmpResult6.isThemeDark(J.theme);
   const unsafe_rawColors = tmp11(tmp2[9]).unsafe_rawColors;
   const tmp28 = isThemeDarkResult ? unsafe_rawColors.PREMIUM_TIER_2_PURPLE : unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS;
   let tmp30Result4 = null;
   if (substr.length > 0) {
-    class K {
+    class J {
       constructor(arg0, currentUser) {
         let obj5;
         let result = null == currentUser;
@@ -269,12 +280,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
         }
       }
     }
-    let obj2 = { title: intl.string(tmp(tmp2[22]).t.Q60n1E), trailing: tmp30Result, children: tmp35(tmp36, obj9) };
+    let obj2 = { title: obj9.string(tmp(tmp2[22]).t.Q60n1E), trailing: tmp30Result, children: tmp34(tmp35, obj10) };
     const RowGroup = tmp(tmp2[21]).RowGroup;
-    intl = tmp(tmp2[22]).intl;
+    class U {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     tmp30Result = null;
     if (tmp18) {
-      class K {
+      class J {
         constructor(arg0, currentUser) {
           let obj5;
           let result = null == currentUser;
@@ -294,8 +309,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
         }
       }
       tmp32[1] = function onPress() {
-        return K(guildId, stateFromStores);
+        return J(guildId, stateFromStores);
       };
+      class U {
+        constructor() {
+          return currentUser.getCurrentUser();
+        }
+      }
       let obj3 = { style: tmp4.header, children: items4 };
       let obj4 = { style: tmp4.dotSeparator };
       let PressableOpacity = tmp(tmp2[23]).PressableOpacity;
@@ -303,17 +323,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       let obj5 = { source: tmp11(tmp2[25]), color: tmp28, size: tmp(tmp2[24]).Icon.Sizes.SMALL };
       const Icon = tmp(tmp2[24]).Icon;
       items4[1] = tmp30(Icon, obj5);
-      const obj7 = { style: items5, children: intl2.string(guildId(tmp2[22]).t.p1j56s) };
+      const obj7 = { style: items5, children: intl.string(guildId(tmp2[22]).t.p1j56s) };
       items5 = [tmp4.premiumTitle, ];
       const obj8 = { color: tmp28 };
       items5[1] = obj8;
       const LegacyText = tmp(tmp2[24]).LegacyText;
-      intl2 = tmp(tmp2[22]).intl;
+      intl = tmp(tmp2[22]).intl;
       items4[2] = tmp30(LegacyText, obj7);
       tmp32[2] = closure_12(num7, obj3);
       tmp30Result = tmp30(PressableOpacity, tmp32);
     }
-    obj9 = { style: tmp4.emojiContainer, children: items6 };
+    obj10 = { style: tmp4.emojiContainer, children: items6 };
     items6 = [
       substr.map((accessibilityLabel) => {
           let items;
@@ -347,7 +367,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
           items[1] = obj3;
           tmp4 = closure_1(first[29]);
           const obj4 = guildId(first[20]);
-          if (obj4.isThemeDark(K.theme)) {
+          if (obj4.isThemeDark(J.theme)) {
             tmp3Result = tmp3(tmp2[30]);
           } else {
             tmp3Result = tmp3(tmp2[31]);
@@ -360,10 +380,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
 
     ];
     let tmp30Result3 = null;
-    tmp35 = closure_12;
-    tmp36 = num7;
+    tmp34 = closure_12;
+    tmp35 = num7;
     if (bound > 0) {
-      class K {
+      class J {
         constructor(arg0, currentUser) {
           let obj5;
           let result = null == currentUser;
@@ -383,22 +403,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
         }
       }
       const PressableOpacity2 = tmp(tmp2[23]).PressableOpacity;
-      const intl3 = tmp(tmp2[22]).intl;
-      tmp38[1] = intl3.string(guildId(tmp2[22]).t["UKOtz+"]);
-      tmp38[2] = function onPress() {
+      const intl2 = tmp(tmp2[22]).intl;
+      class U {
+        constructor() {
+          return currentUser.getCurrentUser();
+        }
+      }
+      const obj11 = { count: bound };
+      tmp37[1] = tmp38(guildId(tmp2[22]).t["3Ng/um"], obj11);
+      tmp37[2] = function onPress() {
         const obj = HapticUtils;
         const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         closure_3(true);
       };
-      const obj10 = { style: items7, children: "+" + bound };
+      const obj12 = { style: items7, children: "+" + bound };
       items7 = [, , ];
       ({ emoji: arr10[0], emojiCount: arr10[1] } = tmp4);
-      const obj11 = { margin: num7 };
-      items7[2] = obj11;
+      const obj13 = { margin: num7 };
+      items7[2] = obj13;
       let _HermesInternal = HermesInternal;
       const LegacyText2 = tmp(tmp2[24]).LegacyText;
-      tmp38[3] = tmp30(LegacyText2, obj10);
-      tmp30Result3 = tmp30(PressableOpacity2, tmp38, -1);
+      tmp37[3] = tmp30(LegacyText2, obj12);
+      tmp30Result3 = tmp30(PressableOpacity2, tmp37, -1);
     }
     items6[1] = tmp30Result3;
     tmp30Result4 = tmp30(RowGroup, obj2);
@@ -422,6 +448,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let num3;
   let obj13;
   let obj15;
+  let obj16;
   let obj8;
   let tmp20Result;
   let tmp24;
@@ -586,21 +613,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     if (bound > 0) {
       const obj14 = {
         accessibilityRole: "button",
-        accessibilityLabel: intl3.string(tmp4(first[22]).t["UKOtz+"]),
+        accessibilityLabel: intl3.formatToPlainString(tmp4(first[22]).t["3Ng/um"], obj15),
         onPress() {
               const obj = HapticUtils;
               const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
               closure_3(true);
             },
-        children: closure_11(LegacyText2, obj15)
+        children: closure_11(LegacyText2, obj16)
       };
       const PressableOpacity2 = tmp4(tmp5[23]).PressableOpacity;
       intl3 = tmp4(tmp5[22]).intl;
-      obj15 = { style: items7, children: "+" + bound };
+      obj15 = { count: bound };
+      obj16 = { style: items7, children: "+" + bound };
       items7 = [, , ];
       ({ emoji: arr10[0], emojiCount: arr10[1] } = tmp);
-      const obj16 = { margin: num };
-      items7[2] = obj16;
+      const obj17 = { margin: num };
+      items7[2] = obj17;
       let _HermesInternal = HermesInternal;
       LegacyText2 = tmp4(tmp5[24]).LegacyText;
       tmp20Result3 = tmp20(PressableOpacity2, obj14, -1);

@@ -1,18 +1,16 @@
-// Module ID: 16153
-// Function ID: 16154
+// Module ID: 16457
+// Function ID: 16458
 // Name: QuestDisclosureModalActionCreators
-// Dependencies: [6235, 7678, 16144, 9476, 9477, 9480, 7672, 6190, 16154, 2002, 2]
+// Dependencies: [6717, 7798, 9573, 9576, 16448, 6672, 16458, 2002, 2]
 
-// Module 16153 (QuestDisclosureModalActionCreators)
+// Module 16457 (QuestDisclosureModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7678 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9476 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 16144 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9573 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 16448 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
@@ -22,61 +20,45 @@ let obj = {
     let gamePublisher;
     let gameTitle;
     let name;
-    let tmp13;
-    let tmpResult6;
+    let tmp8;
+    let tmpResult;
     let trackingCtx;
     ({ creative, trackingCtx } = isTargetedDisclosure);
     isTargetedDisclosure = isTargetedDisclosure.isTargetedDisclosure;
-    const obj = AdCreativeUtils;
-    const creativeAnalyticsParams = obj.getCreativeAnalyticsParams(creative);
-    const obj2 = AdAnalyticsInterfaceExperiment;
-    const tmp2 = dependencyMap;
-    if (obj2.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_disclosure_modal")) {
-      const obj3 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL };
-      const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-      captureAdUserAction2;
-      const merged = Object.assign(creativeAnalyticsParams);
-      ({ ctaContent: obj7.questContentCTA, content: obj7.surfaceId, sourceQuestContent: obj7.sourceQuestContent, position: obj7.questContentPosition } = trackingCtx);
-      captureAdUserAction(obj3);
-    } else if (creativeAnalyticsParams.adCreativeType === AdCreativeType.AdCreativeType.QUEST) {
-      const obj5 = { questId: creativeAnalyticsParams.adCreativeId, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
-      ({ content: obj6.questContent, ctaContent: obj6.questContentCTA, position: obj6.questContentPosition, sourceQuestContent: obj6.sourceQuestContent } = trackingCtx);
-      const tmpResult4 = AnalyticsActions;
-      const result = tmpResult4.trackQuestContentClicked(obj5);
-    } else {
-      const obj8 = { adContentId: null, adCreativeType: null, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
-      ({ adCreativeId: obj4.adContentId, adCreativeType: obj4.adCreativeType } = creativeAnalyticsParams);
-      ({ content: obj4.questContent, ctaContent: obj4.questContentCTA, position: obj4.questContentPosition, sourceQuestContent: obj4.sourceQuestContent } = trackingCtx);
-      const tmpResult5 = AnalyticsActions;
-      const result1 = tmpResult5.trackAdContentClicked(obj8);
-    }
+    const tmp3 = captureAdUserAction2;
+    const obj = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL };
+    const captureAdUserAction = tmp3.captureAdUserAction;
+    const obj2 = AdCreativeUtils;
+    const merged = Object.assign(obj2.getCreativeAnalyticsParams(creative));
+    ({ ctaContent: obj.questContentCTA, content: obj.surfaceId, sourceQuestContent: obj.sourceQuestContent, position: obj.questContentPosition } = trackingCtx);
+    captureAdUserAction(obj);
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
     ModalActionCreatorsDefault;
-    const tmp12 = asyncRequire(16154, tmp2.paths);
+    const tmp7 = asyncRequire(16458, dependencyMap.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
-      const obj9 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult6.hasWatchVideoTasks(creative.quest) };
+      const obj3 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);
       const cosponsorMetadata = creative.quest.config.cosponsorMetadata;
       name = undefined;
       if (cosponsorMetadata != null) {
         name = cosponsorMetadata.name;
       }
-      tmp13 = obj9;
-      tmpResult6 = QuestTaskUtils;
+      tmp8 = obj3;
+      tmpResult = QuestTaskUtils;
     } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
-      tmp13 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
-      const obj10 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
+      tmp8 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
+      const obj4 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, gamePublisher: creative.bounty.advertiserName };
     }
-    const obj11 = { isTargetedDisclosure };
-    const merged1 = Object.assign(tmp13);
-    pushLazy(tmp12, obj11, QUEST_DISCLOSURE_MODAL);
+    const obj5 = { isTargetedDisclosure };
+    const merged1 = Object.assign(tmp8);
+    pushLazy(tmp7, obj5, QUEST_DISCLOSURE_MODAL);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;
     obj.popWithKey(QUEST_DISCLOSURE_MODAL);
   }
 };
-let result = size.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
+const result = size.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
 
 export default obj;

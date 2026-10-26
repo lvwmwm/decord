@@ -1,10 +1,10 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 8901
+// Function ID: 8902
 // Name: SegmentedControlState
-// Dependencies: [19, 558, 576, 587, 4929, 4945, 5156, 5462, 2]
+// Dependencies: [19, 558, 576, 587, 4985, 5052, 5212, 5267, 2]
 
-// Module 8805 (SegmentedControlState)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
+// Module 8901 (SegmentedControlState)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

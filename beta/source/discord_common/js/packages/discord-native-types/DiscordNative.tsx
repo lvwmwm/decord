@@ -1,9 +1,9 @@
-// Module ID: 5217
-// Function ID: 5218
+// Module ID: 5719
+// Function ID: 5720
 // Name: discord_common/DiscordNative
 // Dependencies: [2]
 
-// Module 5217 (discord_common/DiscordNative)
+// Module 5719 (discord_common/DiscordNative)
 import size from "module_2" /* 2 */;
 
 class SystemServiceNotAvailableError extends Error {
@@ -16,7 +16,7 @@ class SystemServiceNotAvailableError extends Error {
 const result = size.fileFinishedImporting("../discord_common/js/packages/discord-native-types/DiscordNative.tsx");
 
 export { SystemServiceNotAvailableError };
-export const StoredCrashInformation = { HasRTCConnection: 0, [0]: "HasRTCConnection", IsSendingVideo: 1, [1]: "IsSendingVideo", IsSendingStream: 2, [2]: "IsSendingStream", IsReceivingVideo: 3, [3]: "IsReceivingVideo", IsReceivingStream: 4, [4]: "IsReceivingStream", VideoMediaSessionId: 5, [5]: "VideoMediaSessionId", StreamMediaSessionId: 6, [6]: "StreamMediaSessionId", IntentionalCrashReason: 7, [7]: "IntentionalCrashReason" };
+export const StoredCrashInformation = { HasRTCConnection: 0, [0]: "HasRTCConnection", IsSendingVideo: 1, [1]: "IsSendingVideo", IsSendingStream: 2, [2]: "IsSendingStream", IsReceivingVideo: 3, [3]: "IsReceivingVideo", IsReceivingStream: 4, [4]: "IsReceivingStream", VideoMediaSessionId: 5, [5]: "VideoMediaSessionId", StreamMediaSessionId: 6, [6]: "StreamMediaSessionId", IntentionalCrashReason: 7, [7]: "IntentionalCrashReason", BuildNumber: 8, [8]: "BuildNumber" };
 export const JSExceptionLocation = { RendererProcessDelayed: 0, [0]: "RendererProcessDelayed", RendererProcess: 1, [1]: "RendererProcess", MainProcess: 2, [2]: "MainProcess" };
 export const DesktopSources = { WINDOW: "window", SCREEN: "screen", CAMERA: "camera", ACTIVITY: "activity" };
 export const ThumbarButtonName = { VIDEO: "VIDEO", MUTE: "MUTE", DEAFEN: "DEAFEN", DISCONNECT: "DISCONNECT" };

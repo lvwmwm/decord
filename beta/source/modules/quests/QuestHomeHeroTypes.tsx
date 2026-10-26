@@ -1,12 +1,12 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9600
+// Function ID: 9601
 // Name: QuestHomeHeroTypes
-// Dependencies: [9487, 9502, 2]
+// Dependencies: [9584, 9601, 2]
 // Exports: questHomeHeroFromServer
 
-// Module 9501 (QuestHomeHeroTypes)
-import AssetUtils from "AssetUtils" /* 9487 */;
-import QuestHomeHeroCta from "QuestHomeHeroCta" /* 9502 */;
+// Module 9600 (QuestHomeHeroTypes)
+import AssetUtils from "AssetUtils" /* 9584 */;
+import QuestHomeHeroCta from "QuestHomeHeroCta" /* 9601 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/QuestHomeHeroTypes.tsx");

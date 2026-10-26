@@ -1,9 +1,9 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12530
+// Function ID: 12531
 // Name: ChatInputConstants
 // Dependencies: [1202, 2]
 
-// Module 12334 (ChatInputConstants)
+// Module 12530 (ChatInputConstants)
 import native from "native" /* 1202 */;
 import size from "module_2" /* 2 */;
 

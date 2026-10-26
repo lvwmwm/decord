@@ -1,9 +1,9 @@
 // Module ID: 1996
 // Function ID: 1997
-// Name: nameplates/constants
+// Name: constants
 // Dependencies: [1997, 2]
 
-// Module 1996 (nameplates/constants)
+// Module 1996 (constants)
 import types from "types" /* 1997 */;
 import size from "module_2" /* 2 */;
 

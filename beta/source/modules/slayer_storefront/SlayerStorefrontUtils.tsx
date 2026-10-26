@@ -1,24 +1,24 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7330
+// Function ID: 7331
 // Name: SlayerStorefrontUtils
-// Dependencies: [5540, 7208, 2024, 2090, 5034, 7209, 7210, 1087, 1089, 5900, 7211, 12, 7212, 1386, 6240, 558, 576, 504, 7134, 2]
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer
+// Dependencies: [2045, 7331, 2024, 4845, 5002, 7332, 7333, 1087, 1089, 6383, 7334, 12, 7335, 1386, 6722, 558, 576, 504, 7257, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer
 
-// Module 7207 (SlayerStorefrontUtils)
+// Module 7330 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import StoreUtils from "StoreUtils" /* 5900 */;
-import _mod6240 from "module_6240" /* 6240 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7208 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7211 */;
-import StorefrontUtils from "StorefrontUtils" /* 7212 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import StoreUtils from "StoreUtils" /* 6383 */;
+import _mod6722 from "module_6722" /* 6722 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7331 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7334 */;
+import StorefrontUtils from "StorefrontUtils" /* 7335 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7209 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7210 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7332 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7333 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -71,25 +71,35 @@ function hasSocialLayerStorefront(guild) {
 }
 function transformRewardRequirementServer(type) {
   let progress;
-  let tmp = null;
-  if (type.type === SocialLayerStorefrontTypes.RewardRequirementType.SUBSCRIPTION) {
-    const obj = { type: null, planIds: null, progress };
-    ({ type: obj.type, plan_ids: obj.planIds, progress } = type);
+  let progress2;
+  type = type.type;
+  if (SocialLayerStorefrontTypes.RewardRequirementType.SUBSCRIPTION === type) {
+    const obj3 = { type: null, planIds: null, progress: progress2 };
+    ({ type: obj2.type, plan_ids: obj2.planIds, progress: progress2 } = type);
+    if (progress2 == null) {
+      progress2 = null;
+    }
+    return obj3;
+  } else if (SocialLayerStorefrontTypes.RewardRequirementType.OWNS_MIN_SKUS === type) {
+    const obj = { type: null, applicationId: null, skuIds: null, minCount: null, progress };
+    ({ type: obj.type, application_id: obj.applicationId, sku_ids: obj.skuIds, min_count: obj.minCount, progress } = type);
     if (progress == null) {
       progress = null;
     }
-    tmp = obj;
+    return obj;
+  } else {
+    return null;
   }
-  return tmp;
 }
 function transformSlayerStorefrontPromotionServer(id) {
   let ends_at;
   let mapped;
+  let reward_status;
   let tmp2;
   let tmp3;
   let tmp4;
   let tmp5;
-  const obj = { id: id.id, endsAt: ends_at, flavor: str, pdp: tmp2, storefront: tmp3, checkout: tmp4, vcStream: tmp5, rewardRequirements: mapped.filter((item) => null != item) };
+  const obj = { id: id.id, endsAt: ends_at, flavor: str, pdp: tmp2, storefront: tmp3, checkout: tmp4, vcStream: tmp5, rewardStatus: reward_status, rewardRequirements: mapped.filter((item) => null != item) };
   ends_at = id.ends_at;
   if (ends_at == null) {
     ends_at = null;
@@ -124,6 +134,10 @@ function transformSlayerStorefrontPromotionServer(id) {
     ({ label: obj5.label, tooltip: obj5.tooltip, icon: obj5.icon } = vc_stream);
     tmp5 = obj11;
   }
+  reward_status = id.reward_status;
+  if (reward_status == null) {
+    reward_status = null;
+  }
   let reward_requirements = id.reward_requirements;
   if (reward_requirements == null) {
     reward_requirements = [];
@@ -142,7 +156,7 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6240;
+    const obj = _mod6722;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
@@ -356,7 +370,7 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6240;
+  const obj = _mod6722;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
@@ -460,6 +474,9 @@ export const transformStorefrontMetadataServer = function transformStorefrontMet
   return obj;
 };
 export { getRequiredSubscriptionPlanIds };
+export const isOwnsMinSkusRewardRequirement = function isOwnsMinSkusRewardRequirement(type) {
+  return type.type === SocialLayerStorefrontTypes.RewardRequirementType.OWNS_MIN_SKUS;
+};
 export const getRewardRequirementPlanTargetingParams = function getRewardRequirementPlanTargetingParams(arr) {
   const found = arr.find(isSubscriptionRewardRequirement);
   let planIds = null;
@@ -786,7 +803,7 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
 export const isOnSocialLayerStorefrontPage = function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6240;
+  const obj = _mod6722;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(map1.COLLECTIBLES_SHOP) >= 0;
@@ -815,7 +832,7 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6240;
+  const obj = _mod6722;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(map1.COLLECTIBLES_SHOP) >= 0;

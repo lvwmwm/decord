@@ -1,9 +1,9 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 17036
+// Function ID: 17037
 // Name: button
-// Dependencies: [19, 21, 558, 576, 5479, 2]
+// Dependencies: [19, 21, 558, 576, 5244, 2]
 
-// Module 16740 (button)
+// Module 17036 (button)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const components_Button_Button = tmp(5479);
+const components_Button_Button = tmp(5244);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAButton(arg0) {
   let tmp4;

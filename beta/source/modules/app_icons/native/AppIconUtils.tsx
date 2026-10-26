@@ -1,34 +1,35 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14767
+// Function ID: 14768
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9767, 1087, 1394, 3, 14533, 9768, 558, 576, 584, 5496, 1267, 4904, 1128, 7370, 1630, 2]
+// Dependencies: [32, 5, 19, 9865, 1087, 1394, 3, 14768, 9866, 558, 576, 584, 5263, 1267, 5663, 1128, 7490, 1630, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 14532 (AppIconUtils)
+// Module 14767 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import useMountEffectDefault from "useMountEffect" /* 5496 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
-import react_nativeDefault from "react-native" /* 14533 */;
+import useMountEffectDefault from "useMountEffect" /* 5263 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
+import react_nativeDefault from "react-native" /* 14768 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 9767 */;
+import AppIconConstants from "AppIconConstants" /* 9865 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let APP_ICON_UPDATED, _require, c2, closure_4, dependencyMap, importDefault;
+let APP_ICON_UPDATED, _require, c2, c5, closure_4, closure_5, dependencyMap, importDefault;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let unpackModuleId;
 function fetchCurrentAppIcon() {
   return obj(...arguments);
 }
@@ -74,7 +75,7 @@ let obj = function _fetchCurrentAppIcon() {
           c3 = 0;
           closure_0 = closure_2;
           const _HermesInternal = HermesInternal;
-          closure_129_12.warn("Error fetching current app icon: " + closure_0);
+          closure_129_13.warn("Error fetching current app icon: " + closure_0);
           c5 = 3;
           const obj6 = { value: closure_129_0(closure_129_2[8]).FreemiumAppIconIds.DEFAULT, done: true };
           return obj6;
@@ -107,14 +108,15 @@ let obj = function _fetchCurrentAppIcon() {
 };
 obj = function _setAppIcon() {
   obj = _asyncToGenerator(async (icon_id, user_premium_tier) => {
-    let c6 = 0;
+    let closure_2 = arg2;
     let c7 = 0;
-    let c5 = 0;
-    return (async (arg0, value) => {
+    let c8 = 0;
+    let c6 = 0;
+    const iter = (async (arg0, value) => {
       let TIER_2;
       let intl;
-      if (c7 === 2) {
-        c7 = 3;
+      if (c8 === 2) {
+        c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -126,77 +128,103 @@ obj = function _setAppIcon() {
         }
       } else {
         try {
-          c7 = 2;
-          if (0 === c6) {
+          let flag;
+          c8 = 2;
+          if (0 === c7) {
             if (arg0 === 1) {
-              c7 = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c7 = 3;
+              c8 = 3;
               return { value, done: true };
             } else {
-              closure_3 = tmp;
-              c5 = 1;
-              const obj3 = react_nativeDefault;
-              APP_ICON_UPDATED = obj3.setIcon(icon_id);
-              c6 = 2;
+              closure_4 = tmp;
+              flag = undefined;
+              let obj5 = closure_2;
+              if (closure_2 === undefined) {
+                obj5 = {};
+              }
+              flag = obj5.showErrorToast ?? true;
               c7 = 1;
+              c8 = 1;
+              return { value: "Reflect", done: true };
+            }
+          } else if (1 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              c6 = 1;
+              const obj3 = closure_132_1(closure_132_2[7]);
+              APP_ICON_UPDATED = obj3.setIcon(icon_id);
+              c7 = 3;
+              c8 = 1;
               return { value: APP_ICON_UPDATED, done: false };
             }
-          } else {
-            if (1 === tmp4) {
-              c5 = 0;
-              let closure_2 = closure_4;
-              const obj6 = { text: intl.string(closure_131_0(closure_131_2[15]).t["c76eo/"]) };
-              const open = closure_131_1(closure_131_2[14]).open;
-              closure_131_1(closure_131_2[14]);
-              intl = closure_131_0(closure_131_2[15]).intl;
-              open("APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", obj6);
-              const _HermesInternal = HermesInternal;
-              closure_131_12.warn("Error changing users app icon: " + closure_2);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              const obj7 = closure_131_1(closure_131_2[11]);
-              obj7.dispatch({ type: "APP_ICON_UPDATED" });
-              APP_ICON_UPDATED = closure_131_9.APP_ICON_UPDATED;
-              const obj8 = { icon_id, user_premium_tier, icon_premium_tier: TIER_2 };
-              const track = closure_131_1(closure_131_2[13]).track;
-              TIER_2 = null;
-              closure_131_1(closure_131_2[13]);
-              if (icon_id !== closure_131_0(closure_131_2[8]).FreemiumAppIconIds.DEFAULT) {
-                TIER_2 = closure_131_11.TIER_2;
-              }
-              track(APP_ICON_UPDATED, obj8);
-              c5 = 0;
+          } else if (2 === c7) {
+            APP_ICON_UPDATED = closure_5;
+            c6 = 0;
+            let closure_3 = closure_5;
+            const tmp11 = flag;
+            if (tmp11) {
+              APP_ICON_UPDATED = closure_132_1(closure_132_2[14]).open;
+              const obj8 = { text: intl.string(closure_132_0(closure_132_2[15]).t["c76eo/"]) };
+              closure_132_1(closure_132_2[14]);
+              intl = closure_132_0(closure_132_2[15]).intl;
+              APP_ICON_UPDATED("APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", obj8);
             }
-            c7 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp28) {
-          closure_4 = tmp28;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp28;
+            APP_ICON_UPDATED = closure_132_13.warn;
+            const _HermesInternal = HermesInternal;
+            APP_ICON_UPDATED("Error changing users app icon: " + closure_3);
+            c8 = 3;
+            return { value: false, done: true };
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 0;
+            c8 = 3;
+            return { value, done: true };
           } else {
-            c6 = 1;
+            const obj9 = closure_132_1(closure_132_2[11]);
+            obj9.dispatch({ type: "APP_ICON_UPDATED" });
+            APP_ICON_UPDATED = closure_132_10.APP_ICON_UPDATED;
+            const obj10 = { icon_id, user_premium_tier, icon_premium_tier: TIER_2 };
+            const track = closure_132_1(closure_132_2[13]).track;
+            TIER_2 = null;
+            closure_132_1(closure_132_2[13]);
+            if (closure_132_7(icon_id).isPremium) {
+              TIER_2 = closure_132_12.TIER_2;
+            }
+            track(APP_ICON_UPDATED, obj10);
+            c6 = 0;
+            c8 = 3;
+            return { value: true, done: true };
+          }
+        } catch (tmp32) {
+          closure_5 = tmp32;
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp32;
+          } else {
+            c7 = 2;
           }
         }
       }
     })();
+    iter.next();
+    return iter;
   });
   return obj(...arguments);
 };
-({ getDefaultIcon: metroRequire, getOfficialAlternateIcons: metroImportDefault, getLimitedAlternateIcons: metroImportAll } = AppIconConstants);
-({ AnalyticEvents: c9, UserSettingsSections: c10 } = Constants);
+({ getDefaultIcon: metroRequire, getIconById: metroImportDefault, getLimitedAlternateIcons: metroImportAll, getOfficialAlternateIcons: c9 } = AppIconConstants);
+({ AnalyticEvents: c10, UserSettingsSections: unpackModuleId } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const tmp4 = new LoggerDefault("AppIconUtils");
-let closure_12 = tmp4;
+let closure_13 = tmp4;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAppIcon() {
   let closure_0;
@@ -283,7 +311,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
   } else {
     tmp7 = cResult[1];
   }
-  first1(5496)(tmp7);
+  first1(5263)(tmp7);
   return first;
 }) : (function useCurrentAppIcon() {
   let first;
@@ -350,7 +378,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
   });
   return first;
 });
-let closure_15 = tmp5;
+let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons() {
   let first;
@@ -363,7 +391,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
   const tmp = dependencyMap;
   obj = react2;
   const cResult = obj.c(8);
-  const tmp3 = closure_15();
+  const tmp3 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [];
     cResult[0] = items;
@@ -447,7 +475,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
               return obj;
             } else {
               value.map((id) => id.id);
-              const arr = closure_2_7();
+              const arr = closure_2_9();
               closure_1 = arr.filter((id) => closure_1_0.includes(id.id));
               const arr2 = closure_2_8();
               closure_2 = arr2.filter((id) => closure_1_0.includes(id.id));
@@ -532,7 +560,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
   let limitedTimeAppIcons;
   let require;
   let tmp3;
-  const currentAppIcon = closure_15();
+  const currentAppIcon = closure_16();
   [tmp3, require] = react.useState([]);
   _slicedToArray(react.useState([]), 2);
   [limitedTimeAppIcons, importDefault] = react.useState([]);
@@ -596,7 +624,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
             return obj;
           } else {
             value.map((id) => id.id);
-            const arr = closure_1_7();
+            const arr = closure_1_9();
             closure_1 = arr.filter((id) => closure_1_0.includes(id.id));
             const arr2 = closure_1_8();
             closure_2 = arr2.filter((id) => closure_1_0.includes(id.id));
@@ -643,7 +671,7 @@ export const setAppIcon = function setAppIcon() {
 export const useAppIcons = tmp6;
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
   obj = openUserSettings;
-  const obj2 = { screen: constants.APP_ICONS };
+  const obj2 = { screen: unpackModuleId.APP_ICONS };
   obj.openUserSettings(obj2);
 };
 export const isAppIconsSupported = function isAppIconsSupported() {

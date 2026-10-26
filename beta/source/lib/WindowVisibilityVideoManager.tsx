@@ -1,15 +1,16 @@
-// Module ID: 5319
-// Function ID: 5320
+// Module ID: 5823
+// Function ID: 5824
 // Name: WindowVisibilityVideoManager
-// Dependencies: [5239, 2063, 3, 1104, 584, 5320, 5321, 2]
+// Dependencies: [5742, 4818, 3, 1104, 584, 5824, 5827, 5828, 2]
 
-// Module 5319 (WindowVisibilityVideoManager)
+// Module 5823 (WindowVisibilityVideoManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import ExternalPipDefault from "ExternalPip" /* 5320 */;
-import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5321 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5239 */;
+import ExternalPipDefault from "ExternalPip" /* 5824 */;
+import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5827 */;
+import DesktopGamePerfExperiment from "DesktopGamePerfExperiment" /* 5828 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5742 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,28 +31,40 @@ class WindowVisibilityVideoManager extends TypedEventEmitter {
     tmp6.logger = new LoggerDefault("WindowVisibilityVideoManager");
     new LoggerDefault("WindowVisibilityVideoManager");
     tmp6.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS = 30 * DurationsDefault.Millis.SECOND;
+    tmp6.handleWindowInit = function handleWindowInit() {
+      let isFullscreenPopupOcclusionEnabled = discordVisible.discordVisible !== WindowVisibilityUtilsDefault();
+      const obj = discordVisible;
+      if (isFullscreenPopupOcclusionEnabled) {
+        const obj2 = DesktopGamePerfExperiment;
+        isFullscreenPopupOcclusionEnabled = obj2.getIsFullscreenPopupOcclusionEnabled("window_visibility_video_manager");
+      }
+      if (isFullscreenPopupOcclusionEnabled) {
+        obj.update();
+      }
+    };
     tmp6.update = function update() {
-      let incomingVideoEnabled;
-      if (discordVisible.discordVisible !== WindowVisibilityUtilsDefault()) {
-        discordVisible.discordVisible = WindowVisibilityUtilsDefault();
-        discordVisible.emit(discordVisible.WindowVisibilityChanged, discordVisible.discordVisible);
+      if (incomingVideoEnabled.discordVisible !== WindowVisibilityUtilsDefault()) {
+        incomingVideoEnabled.discordVisible = WindowVisibilityUtilsDefault();
+        incomingVideoEnabled.emit(incomingVideoEnabled.WindowVisibilityChanged, incomingVideoEnabled.discordVisible);
         const disableVideoTimer = obj.disableVideoTimer;
-        if (discordVisible.discordVisible) {
+        if (incomingVideoEnabled.discordVisible) {
           disableVideoTimer.stop();
           let result = obj.setIncomingVideoEnabled(true);
         } else {
-          disableVideoTimer.start(discordVisible.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
+          disableVideoTimer.start(incomingVideoEnabled.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
             const result = incomingVideoEnabled.setIncomingVideoEnabled(false);
           });
         }
       }
     };
-    const obj = DispatcherDefault;
+    let obj = DispatcherDefault;
     const subscription = obj.subscribe("WINDOW_VISIBILITY_CHANGE", tmp6.update);
-    const obj2 = DispatcherDefault;
-    const subscription1 = obj2.subscribe("APP_STATE_UPDATE", tmp6.update);
-    const obj3 = ExternalPipDefault;
-    let result = obj3.addOnPipModeChangedListener(tmp6.update);
+    let obj2 = DispatcherDefault;
+    const subscription1 = obj2.subscribe("WINDOW_INIT", tmp6.handleWindowInit);
+    const obj3 = DispatcherDefault;
+    const subscription2 = obj3.subscribe("APP_STATE_UPDATE", tmp6.update);
+    const obj4 = ExternalPipDefault;
+    let result = obj4.addOnPipModeChangedListener(tmp6.update);
     return tmp6;
   }
   isIncomingVideoEnabled() {

@@ -1,15 +1,15 @@
-// Module ID: 18766
-// Function ID: 18767
+// Module ID: 19068
+// Function ID: 19069
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 21, 8633, 18767, 18768, 18769, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8724, 19069, 19070, 19071, 558, 576, 4978, 5669, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 18766 (EmptyServerSettingsEmoji)
+// Module 19068 (EmptyServerSettingsEmoji)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import _mod8633 from "module_8633" /* 8633 */;
+import shared from "shared" /* 4978 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8633;
+    const tmpResult = _mod8724;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
 }) : (function useEmptyServerSettingsEmojiSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8633;
+  const obj2 = _mod8724;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyServerS
   return <tmp2 source={tmp} />;
 });
 function getEmptyServerSettingsEmojiSource(theme) {
-  const obj = _mod8633;
+  const obj = _mod8724;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

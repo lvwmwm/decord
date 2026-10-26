@@ -1,16 +1,16 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8974
+// Function ID: 8975
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 2090, 7066, 7067, 1087, 7065, 7072, 1099, 5399, 1128, 2]
+// Dependencies: [5, 4845, 7195, 7196, 1087, 7194, 7201, 1099, 5908, 1128, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8879 (DefaultChannelThresholdUtils)
+// Module 8974 (DefaultChannelThresholdUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7065 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7067 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7194 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7066 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7195 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9541
+// Function ID: 9542
 // Name: premium_tab_tooltip
-// Dependencies: [32, 1212, 9436, 9426, 2]
+// Dependencies: [32, 1212, 9535, 9525, 2]
 
-// Module 9442 (premium_tab_tooltip)
+// Module 9541 (premium_tab_tooltip)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9426 */;
-import theme_aware_asset from "theme_aware_asset" /* 9436 */;
+import localized_string from "localized_string" /* 9525 */;
+import theme_aware_asset from "theme_aware_asset" /* 9535 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 13190
+// Function ID: 13191
 // Name: GuildDirectoryConstants
-// Dependencies: [1087, 1128, 4850, 1099, 2]
+// Dependencies: [1087, 1128, 4908, 1099, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 12950 (GuildDirectoryConstants)
+// Module 13190 (GuildDirectoryConstants)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import intl72 from "intl" /* 1128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

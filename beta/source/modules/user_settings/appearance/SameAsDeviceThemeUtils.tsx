@@ -1,15 +1,16 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16383
+// Function ID: 16384
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [5032, 1207, 1210, 5360, 1254, 5065, 5061, 2]
+// Dependencies: [4995, 1207, 1210, 5868, 1254, 4978, 4998, 5036, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 16221 (SameAsDeviceThemeUtils)
+// Module 16383 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5061 */;
-import shared from "shared" /* 5065 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import shared from "shared" /* 4978 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4998 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5036 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5868 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import size from "module_2" /* 2 */;
@@ -32,36 +33,37 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
       }
       const obj4 = shared;
       const tmp8 = obj4.isThemeDark(customThemeBaseTheme) ? hasOwnProperty.DARK : hasOwnProperty.LIGHT;
-      if (!ClientThemesBackgroundStore.isPreview) {
-        const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
-        let id;
-        if (gradientPreset != null) {
-          id = gradientPreset.id;
-        }
+      const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
+      const tmp9 = ClientThemesBackgroundStore;
+      if (gradientPreset != null) {
+        const id = gradientPreset.id;
+      }
+      if (tmp9.isPreview) {
+        HexagonCampaignUtils;
       }
       const obj5 = {};
       obj5[tmp8] = customThemeBaseTheme;
-      const tmp6Result = ThemeActionCreators;
-      const result1 = tmp6Result.updateThemePreferences(obj5);
+      const tmp6Result5 = ThemeActionCreators;
+      const result1 = tmp6Result5.updateThemePreferences(obj5);
       if (null != customUserThemeSettings) {
         const obj6 = { customUserThemeSettings };
-        const tmp6Result4 = ThemeActionCreators;
-        const result2 = tmp6Result4.updateSyncedClientTheme(tmp8, obj6);
-      } else if (null != tmp9) {
-        const obj7 = { backgroundGradientPresetId: tmp9 };
-        const tmp6Result5 = ThemeActionCreators;
-        const result3 = tmp6Result5.updateSyncedClientTheme(tmp8, obj7);
+        const tmp6Result6 = ThemeActionCreators;
+        const result2 = tmp6Result6.updateSyncedClientTheme(tmp8, obj6);
+      } else if (null != tmp10) {
+        const obj7 = { backgroundGradientPresetId: tmp10 };
+        const tmp6Result7 = ThemeActionCreators;
+        const result3 = tmp6Result7.updateSyncedClientTheme(tmp8, obj7);
       } else {
         const obj8 = { theme: customThemeBaseTheme };
-        const tmp6Result6 = ThemeActionCreators;
-        const result4 = tmp6Result6.updateSyncedClientTheme(tmp8, obj8);
+        const tmp6Result8 = ThemeActionCreators;
+        const result4 = tmp6Result8.updateSyncedClientTheme(tmp8, obj8);
       }
     }
   }
-  const obj13 = ThemeActionCreators;
-  const result5 = obj13.setSameAsDeviceThemeEnabled(true);
   const obj14 = ThemeActionCreators;
-  obj14.setUseSystemTheme(metroRequire.ON);
+  const result5 = obj14.setSameAsDeviceThemeEnabled(true);
+  const obj15 = ThemeActionCreators;
+  obj15.setUseSystemTheme(metroRequire.ON);
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
   const obj = ThemeActionCreators;

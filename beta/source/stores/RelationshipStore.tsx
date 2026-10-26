@@ -1,15 +1,15 @@
-// Module ID: 4855
-// Function ID: 4856
+// Module ID: 4913
+// Function ID: 4914
 // Name: RelationshipStore
-// Dependencies: [32, 4856, 1392, 1087, 584, 504, 4833, 2]
+// Dependencies: [32, 4914, 1392, 1087, 584, 504, 4891, 2]
 
-// Module 4855 (RelationshipStore)
+// Module 4913 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4856 */;
+import MessageRecord from "MessageRecord" /* 4914 */;
 import UserStore from "UserStore" /* 1392 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -110,10 +110,10 @@ let set1 = new Set();
 const set2 = new Set();
 let obj12 = {};
 let closure_15 = 0;
-const authStore4 = {};
+const authStore3 = {};
 let closure_17 = 0;
 let size = 0;
-let closure_20 = { friends: "enabled", blocked: "Date", ignored: "toCharArray$esjava$1", blockedOrIgnored: "toCharArray$esjava$1" };
+let closure_20 = { friends: "Array", blocked: "test", ignored: "unicodeVersion", blockedOrIgnored: "gap" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

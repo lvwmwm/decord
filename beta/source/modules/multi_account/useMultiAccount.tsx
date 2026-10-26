@@ -1,12 +1,12 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17367
+// Function ID: 17368
 // Name: useMultiAccount
-// Dependencies: [19, 1392, 13074, 558, 576, 504, 13078, 2]
+// Dependencies: [19, 1392, 13314, 558, 576, 504, 13318, 2]
 
-// Module 17070 (useMultiAccount)
+// Module 17367 (useMultiAccount)
 import react2 from "react" /* 576 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13074 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13078 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13314 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13318 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

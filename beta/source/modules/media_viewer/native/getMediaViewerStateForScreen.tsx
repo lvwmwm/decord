@@ -1,19 +1,19 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14242
+// Function ID: 14243
 // Name: getMediaViewerStateForScreen
-// Dependencies: [8666, 2]
+// Dependencies: [8757, 2]
 // Exports: default
 
-// Module 14010 (getMediaViewerStateForScreen)
-import MediaSourceUtil from "MediaSourceUtil" /* 8666 */;
+// Module 14242 (getMediaViewerStateForScreen)
+import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 
-export default function getMediaViewerStateForScreen(width, height, cResult) {
+export default function getMediaViewerStateForScreen(width, height, sources) {
   const obj = MediaSourceUtil;
-  size = obj.flattenSource(cResult, true);
+  size = obj.flattenSource(sources, true);
   if (null == size) {
     const size1 = { maximumZoomScale: 1, width, height };
     return size1;

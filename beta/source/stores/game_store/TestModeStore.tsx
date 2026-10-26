@@ -1,15 +1,15 @@
-// Module ID: 6300
-// Function ID: 6301
+// Module ID: 5624
+// Function ID: 5625
 // Name: TestModeStore
-// Dependencies: [1208, 1246, 6301, 504, 2044, 584, 2]
+// Dependencies: [1208, 1246, 2043, 504, 4799, 584, 2]
 
-// Module 6300 (TestModeStore)
+// Module 5624 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettings from "UserSettings" /* 2044 */;
+import UserSettings from "UserSettings" /* 4799 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6301 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 let originURL;

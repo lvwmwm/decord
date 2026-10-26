@@ -1,20 +1,20 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13336
+// Function ID: 13337
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 2065, 21, 558, 576, 1128, 13099, 9742, 2]
+// Dependencies: [109, 19, 4820, 21, 558, 576, 1128, 13337, 9840, 2]
 
-// Module 13098 (ScheduledMessageDraftCoachmark)
+// Module 13336 (ScheduledMessageDraftCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useCoachmark = tmp(9742);
+const useCoachmark = tmp(9840);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;

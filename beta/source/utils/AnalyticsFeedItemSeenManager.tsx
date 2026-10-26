@@ -1,15 +1,15 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9730
+// Function ID: 9731
 // Name: AnalyticsFeedItemSeenManager
-// Dependencies: [5, 38, 584, 2]
+// Dependencies: [5, 38, 584, 5722, 2]
 
-// Module 9631 (AnalyticsFeedItemSeenManager)
+// Module 9730 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c3, set;
+let c1, c2, set;
 
 const ForceFlushType = { IMMEDIATE: 0, [0]: "IMMEDIATE", IMMEDIATE_WITH_COOLDOWN: 1, [1]: "IMMEDIATE_WITH_COOLDOWN", IMMEDIATE_WITH_DELAY: 2, [2]: "IMMEDIATE_WITH_DELAY" };
 class TrackedFeedItem {
@@ -253,145 +253,103 @@ class AnalyticsFeedItemSeenManager {
     return obj;
   }
   maybeFlushSeenItems(IMMEDIATE) {
-    let obj;
-    let resolved;
+    let closure_0 = IMMEDIATE;
     const self = this;
-    if (null == IMMEDIATE) {
-      const tmp = globalThis;
-      const _Date = Date;
-      if (Date.now() - self._lastFlushTimeMillis < 60000) {
-        return Promise.resolve();
-      }
-    }
-    const tmp2 = obj;
-    if (IMMEDIATE === obj.IMMEDIATE_WITH_COOLDOWN) {
-      const tmp3 = globalThis;
-      const _Date2 = Date;
-      if (Date.now() - self._lastFlushTimeMillis < 3000) {
-        return Promise.resolve();
-      }
-    }
-    const flushSeenItemsFunction = self.createFlushSeenItemsFunction(IMMEDIATE);
-    if (null == flushSeenItemsFunction) {
-      resolved = Promise.resolve();
-    } else {
-      const tmp8 = globalThis;
-      const _Date3 = Date;
-      self._lastFlushTimeMillis = Date.now();
-      if (IMMEDIATE !== tmp2.IMMEDIATE) {
-        if (IMMEDIATE !== tmp2.IMMEDIATE_WITH_COOLDOWN) {
-          const self2 = this;
-          const self3 = this;
-          resolved = new Promise((arg0) => {
-            let closure_0 = arg0;
-            const timerId = setTimeout(_asyncToGenerator(async (arg0, value) => {
-              if (c2 === 2) {
-                c2 = 3;
-                throw new TypeError("Generator functions may not be called on executing generators");
-              } else if (tmp2 === 3) {
-                if (arg0 === 1) {
-                  throw value;
-                } else if (arg0 === 2) {
-                  const obj2 = { value, done: true };
-                  return obj2;
-                } else {
-                  return { value: "IconComponent", done: null };
-                }
-              } else {
-                try {
-                  c2 = 2;
-                  if (0 === c1) {
-                    if (arg0 === 1) {
-                      c2 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c2 = 3;
-                      const obj3 = { value, done: true };
-                      return obj3;
-                    } else {
-                      c1 = 1;
-                      c2 = 1;
-                      const obj4 = { value: tmp3(), done: false };
-                      return obj4;
-                    }
-                  } else if (arg0 === 1) {
-                    c2 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c2 = 3;
-                    const obj = { value, done: true };
-                    return obj;
-                  } else {
-                    closure_128_0();
-                    c2 = 3;
-                    return { value: "IconComponent", done: null };
-                  }
-                } catch (tmp8) {
-                  c2 = 3;
-                  throw tmp8;
-                }
-              }
-            }), 100);
-          });
-        }
-      }
-      let closure_0 = _asyncToGenerator(async (arg0, value) => {
-        closure_0 = arg0;
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
+    return (async (arg0, value) => {
+      let closure_0;
+      if (c2 === 2) {
+        c2 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                let closure_1 = tmp;
-                c2 = 1;
-                c3 = 1;
-                const obj4 = { value: closure_0(), done: false };
-                return obj4;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let flushSeenItemsFunction;
+          c2 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 3;
-              const obj = { value, done: true };
-              return obj;
+              c2 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              closure_0();
-              c3 = 3;
-              return { value: "IconComponent", done: null };
+              flushSeenItemsFunction = undefined;
+              if (null != tmp) {
+                if (tmp !== constants.IMMEDIATE_WITH_COOLDOWN) {
+                  flushSeenItemsFunction = self.createFlushSeenItemsFunction(tmp20);
+                  const tmp12 = self;
+                  if (null != flushSeenItemsFunction) {
+                    const _Date3 = Date;
+                    tmp12._lastFlushTimeMillis = Date.now();
+                    if (tmp !== constants.IMMEDIATE) {
+                      if (tmp !== constants.IMMEDIATE_WITH_COOLDOWN) {
+                        c1 = 2;
+                        const obj6 = tmp(c2[3]);
+                        c2 = 1;
+                        const obj4 = { value: obj6.sleep(100), done: false };
+                        return obj4;
+                      }
+                    }
+                    c1 = 1;
+                    c2 = 1;
+                    const obj5 = { value: flushSeenItemsFunction(), done: false };
+                    return obj5;
+                  }
+                } else {
+                  const _Date2 = Date;
+                }
+              } else {
+                const _Date = Date;
+              }
             }
-          } catch (tmp10) {
-            c3 = 3;
-            throw tmp10;
+          } else if (1 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            }
+          } else if (2 === c1) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
+            } else {
+              c1 = 3;
+              c2 = 1;
+              const obj9 = { value: flushSeenItemsFunction(), done: false };
+              return obj9;
+            }
+          } else if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj = { value, done: true };
+            return obj;
           }
+          c2 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp16) {
+          c2 = 3;
+          throw tmp16;
         }
-      });
-      const self4 = this;
-      const self5 = this;
-      resolved = new Promise(function() {
-        return closure_0(...arguments);
-      });
-    }
-    return resolved;
+      }
+    })();
   }
 }
 const prototype2 = AnalyticsFeedItemSeenManager.prototype;

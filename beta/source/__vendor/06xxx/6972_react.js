@@ -1,10 +1,10 @@
 // Module ID: 6972
 // Function ID: 6973
 // Name: react
-// Dependencies: [19]
+// Dependencies: [6958]
 
 // Module 6972 (react)
-import react from "react" /* 19 */;
+import react from "react" /* 6958 */;
 
 
-export const GestureHandlerRefContext = react.createContext(null);
+export const HeaderBackContext = react.getNamedContext("HeaderBackContext", undefined);

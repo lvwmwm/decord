@@ -1,18 +1,18 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10833
+// Function ID: 10834
 // Name: guild_instant_invites/InstantInviteUtils
-// Dependencies: [5, 2068, 1392, 1087, 1128, 10606, 10614, 8755, 8966, 7162, 4903, 8955, 8770, 4904, 2]
+// Dependencies: [5, 4823, 1392, 1087, 1128, 10826, 10834, 8851, 9061, 7285, 5662, 9050, 8866, 5663, 2]
 // Exports: useInviteActions
 
-// Module 10613 (guild_instant_invites/InstantInviteUtils)
+// Module 10833 (guild_instant_invites/InstantInviteUtils)
 import Constants from "Constants" /* 1087 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import getInviteURLDefault from "getInviteURL" /* 8966 */;
-import baseRestDefault from "baseRest" /* 10614 */;
+import ToastUtils from "ToastUtils" /* 5662 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
+import getInviteURLDefault from "getInviteURL" /* 9061 */;
+import baseRestDefault from "baseRest" /* 10834 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export const useInviteActions = function useInviteActions(invite) {
   _asyncToGenerator = isPrivateResult;
   let obj = {
     label: intl.string(invite(1128).t.RDE0Sc),
-    iconSource: onInviteRevoked(10606).share,
+    iconSource: onInviteRevoked(10826).share,
     action() {
       const tmp = baseRestDefault(() => {
         let formatToPlainStringResult;
@@ -77,7 +77,7 @@ export const useInviteActions = function useInviteActions(invite) {
   const items = [obj, , ];
   let obj2 = {
     label: intl2.string(invite(1128).t.OpuAlK),
-    iconSource: onInviteRevoked(10606).copy,
+    iconSource: onInviteRevoked(10826).copy,
     action() {
       if (c3) {
         const tmpResult = instant_invite_InstantInviteUtils;
@@ -94,7 +94,7 @@ export const useInviteActions = function useInviteActions(invite) {
   items[1] = obj2;
   let obj3 = {
     label: intl3.string(invite(1128).t.v6Yazx),
-    iconSource: onInviteRevoked(10606).revoke,
+    iconSource: onInviteRevoked(10826).revoke,
     variant: "destructive",
     action() {
       return closure_2(...arguments);

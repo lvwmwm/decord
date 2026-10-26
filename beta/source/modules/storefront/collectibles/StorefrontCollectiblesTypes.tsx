@@ -1,9 +1,9 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9383
+// Function ID: 9384
 // Name: StorefrontCollectiblesTypes
 // Dependencies: [2]
 
-// Module 9285 (StorefrontCollectiblesTypes)
+// Module 9383 (StorefrontCollectiblesTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/storefront/collectibles/StorefrontCollectiblesTypes.tsx");
@@ -11,5 +11,5 @@ const result = size.fileFinishedImporting("modules/storefront/collectibles/Store
 export const StorefrontPromotionCollectiblesIcon = { TAG: "TAG", NITRO: "NITRO" };
 export const StorefrontPromotionCollectiblesFlavor = { DEFAULT: "default", NITRO: "nitro" };
 export const StorefrontPromotionCollectiblesType = { TARGETED_OFFER: "TARGETED_OFFER", COLLECT_AND_CLAIM: "COLLECT_AND_CLAIM" };
-export const StorefrontPromotionCollectAndClaimSubtype = { TAKEOVER: "TAKEOVER" };
+export const StorefrontPromotionCollectAndClaimSubtype = { TAKEOVER: "TAKEOVER", BASIC: "BASIC" };
 export const StorefrontPromotionCollectiblesContentTheme = { LIGHT: "light", DARK: "dark" };

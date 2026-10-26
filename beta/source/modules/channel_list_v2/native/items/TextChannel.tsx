@@ -1,27 +1,27 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17656
+// Function ID: 17657
 // Name: TextChannel
-// Dependencies: [19, 17, 2067, 2120, 2068, 4845, 6291, 6222, 11895, 21, 5191, 587, 17259, 8475, 8431, 13034, 558, 576, 5513, 504, 7290, 13627, 5202, 1126, 10595, 17258, 8786, 5521, 5187, 13035, 8923, 17356, 17357, 8817, 6439, 2]
+// Dependencies: [19, 17, 4822, 4875, 4823, 4903, 6771, 6704, 12063, 21, 4971, 587, 17556, 8546, 8502, 13274, 558, 576, 5993, 504, 7411, 17657, 5707, 1126, 10691, 17555, 8882, 13863, 5604, 9018, 5234, 13275, 17658, 17659, 8913, 6886, 2]
 
-// Module 17355 (TextChannel)
+// Module 17656 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1126 */;
-import transitionToChannel2 from "transitionToChannel" /* 5202 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5513 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13627 */;
+import transitionToChannel2 from "transitionToChannel" /* 5707 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5993 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 17657 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import GatedChannelStore from "GatedChannelStore" /* 2120 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import ReadStateStore from "ReadStateStore" /* 6291 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import GatedChannelStore from "GatedChannelStore" /* 4875 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
+import ReadStateStore from "ReadStateStore" /* 6771 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,8 +92,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     ({ hasUnread, mentionCount, isSubscriptionGated, needSubscriptionToAccess, resolvedUnreadSetting } = stateFromStoresObject);
     if (cResult[5] === id) {
       if (cResult[8] === id) {
-        let channelIcon;
         let BookCheckIcon;
+        let channelIcon;
         if (cResult[11] !== id) {
           class O {
             constructor() {
@@ -113,7 +113,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         let obj2 = { muted, selected, unread: hasUnread && !muted, resolvedUnreadSetting, mentionCount: null, locked: false, channel };
         const tmp18 = hasUnread && !muted;
-        const tmpResult6 = channel(tmp2[25]);
+        const tmpResult5 = channel(tmp2[25]);
         class R {
           constructor() {
             const obj = ChannelActionCreatorsDefault;
@@ -122,9 +122,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             const result = obj2.preloadChannelAppFrame(id);
           }
         }
-        const channelMode = tmpResult6.getChannelMode(obj2);
-        const tmpResult7 = channel(tmp2[26]);
-        const isActivitiesInTextEnabled = tmpResult7.useIsActivitiesInTextEnabled(id);
+        const channelMode = tmpResult5.getChannelMode(obj2);
+        const tmpResult6 = channel(tmp2[26]);
+        const isActivitiesInTextEnabled = tmpResult6.useIsActivitiesInTextEnabled(id);
+        const tmp23 = null != isSuggestedSection(tmp2[27])(channel).runningLabel;
         if (isRulesChannel) {
           class O {
             constructor() {
@@ -132,7 +133,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               const result = obj.openChannelLongPressActionSheet(id);
             }
           }
-          channelIcon = isSuggestedSection(tmp2[12]);
           BookCheckIcon = tmp(tmp2[13]).BookCheckIcon;
         } else {
           class O {
@@ -142,24 +142,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
           channelIcon = obj6.getChannelIcon(channel, { isRulesChannel: false });
-          const tmpResult8 = channel(tmp2[14]);
-          BookCheckIcon = tmpResult8.getChannelIconComponent(channel, { isRulesChannel: false });
+          const tmpResult7 = channel(tmp2[14]);
+          BookCheckIcon = tmpResult7.getChannelIconComponent(channel, { isRulesChannel: false });
         }
-        const obj3 = { mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon };
-        const tmpResult9 = channel(tmp2[15]);
-        tmpResult9.BaseChannelIcon(obj3);
-        const tmp24 = isSuggestedSection(tmp2[27])(channel);
-        const channelLabelText = tmp4.channelLabelText;
-        const tmpResult10 = channel(tmp2[15]);
-        const channelNameTextProps = tmpResult10.useChannelNameTextProps(channelMode);
-        if (cResult[13] === tmp24) {
-          class O {
-            constructor() {
-              const obj = openChannelLongPressActionSheet;
-              const result = obj.openChannelLongPressActionSheet(id);
-            }
-          }
-        }
+        const obj3 = { mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon, isChannelLive: tmp23 };
+        const tmpResult8 = channel(tmp2[15]);
+        tmpResult8.BaseChannelIcon(obj3);
+        isSuggestedSection(tmp2[28])(channel);
         class C {
           constructor() {
             let isSubscriptionGated;
@@ -190,14 +179,31 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             return obj2;
           }
         }
-        const obj4 = { experimental_useNativeText: true, lineClamp: 1, style: channelLabelText, children: tmp24 };
-        const Text = tmp(tmp2[28]).Text;
-        const merged = Object.assign(channelNameTextProps);
-        cResult[13] = tmp24;
-        cResult[14] = tmp4.channelLabelText;
-        cResult[15] = channelNameTextProps;
-        cResult[16] = closure_13(Text, obj4);
-        const tmp30 = closure_13(Text, obj4);
+        if (isActivitiesInTextEnabled) {
+          class O {
+            constructor() {
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
+            }
+          }
+        }
+        if (cResult[13] === channel) {
+          class O {
+            constructor() {
+              const obj = openChannelLongPressActionSheet;
+              const result = obj.openChannelLongPressActionSheet(id);
+            }
+          }
+        }
+        const obj4 = { channel, unread: hasUnread, mentionCount, embeddedActivitiesCount: tmp27, isSubscriptionGated, needSubscriptionToAccess };
+        cResult[13] = channel;
+        cResult[14] = hasUnread;
+        cResult[15] = isSubscriptionGated;
+        cResult[16] = mentionCount;
+        cResult[17] = needSubscriptionToAccess;
+        cResult[18] = tmp27;
+        cResult[19] = isSuggestedSection(tmp2[29])(obj4);
+        const tmp29 = isSuggestedSection(tmp2[29])(obj4);
       }
       const fn = function k() {
         let tmp4;
@@ -275,6 +281,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 }) : (function TextChannel(channel) {
   let BookCheckIcon;
   let channelIcon;
+  let combined;
   let hasUnread;
   let isSubscriptionGated;
   let isSuggestedSection;
@@ -286,12 +293,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let muted;
   let needSubscriptionToAccess;
   let num;
-  let obj4;
   let resolvedUnreadSetting;
   let selected;
   let subtitle;
-  let tmp14Result;
-  let tmp15;
   let tmp2Result14;
   channel = channel.channel;
   ({ muted, selected, subtitle, isSuggestedSection } = channel);
@@ -366,8 +370,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const channelMode = tmp2Result.getChannelMode({ muted, selected, unread: tmp8, resolvedUnreadSetting, mentionCount, locked: false, channel });
   const tmp2Result8 = tmp2(tmp3[26]);
   const isActivitiesInTextEnabled = tmp2Result8.useIsActivitiesInTextEnabled(id);
+  const runningLabel = isSuggestedSection(tmp3[27])(channel).runningLabel;
+  const tmp12 = null != runningLabel;
   if (isRulesChannel) {
-    channelIcon = isSuggestedSection(tmp3[12]);
+    channelIcon = tmp11(tmp3[12]);
     BookCheckIcon = tmp2(tmp3[13]).BookCheckIcon;
   } else {
     const tmp2Result9 = tmp2(tmp3[14]);
@@ -376,56 +382,62 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     BookCheckIcon = tmp2Result10.getChannelIconComponent(channel, { isRulesChannel: false });
   }
   const tmp2Result11 = tmp2(tmp3[15]);
-  let obj2 = { experimental_useNativeText: true, lineClamp: 1, style: tmp.channelLabelText, children: tmp15 };
-  const BaseChannelIconResult = tmp2Result11.BaseChannelIcon({ mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon });
-  tmp15 = isSuggestedSection(tmp3[27])(channel);
-  const Text = tmp2(tmp3[28]).Text;
-  const tmp2Result12 = tmp2(tmp3[15]);
-  const merged = Object.assign(tmp2Result12.useChannelNameTextProps(channelMode));
-  const tmp18 = closure_13(Text, obj2);
-  const items5 = [, ];
-  const tmp20 = isSuggestedSection(tmp3[34]);
-  items5[0] = closure_13(isSuggestedSection(tmp3[29]), { unread: tmp8, resolvedUnreadSetting });
-  const obj3 = { onPressIn: callback, onPress: callback1, onLongPress: callback2, style: items6, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp14Result(obj4), accessibilityState: { selected }, children: items7 };
-  items6 = [tmp.container, ];
-  const AnimatedPressableHighlight = tmp2(tmp3[33]).AnimatedPressableHighlight;
-  items6[1] = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
-  obj4 = { channel, unread: hasUnread, mentionCount, embeddedActivitiesCount: num, isSubscriptionGated, needSubscriptionToAccess };
+  let obj2 = { channel, unread: hasUnread, mentionCount, embeddedActivitiesCount: num, isSubscriptionGated, needSubscriptionToAccess };
   num = 0;
-  channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
-  tmp14Result = isSuggestedSection(tmp3[30]);
+  const BaseChannelIconResult = tmp2Result11.BaseChannelIcon({ mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon, isChannelLive: tmp12 });
+  const tmp15 = isSuggestedSection(tmp3[28])(channel);
+  const tmp11Result3 = isSuggestedSection(tmp3[29]);
   if (isActivitiesInTextEnabled) {
     num = embeddedActivitiesCount;
   }
-  let tmp16Result = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED;
-  if (tmp16Result) {
-    const obj5 = { style: tmp.selectedBorder };
-    tmp16Result = tmp16(View, obj5);
+  const tmp11Result1Result = tmp11Result3(obj2);
+  const obj3 = { experimental_useNativeText: true, lineClamp: 1, style: tmp.channelLabelText, children: tmp15 };
+  const Text = tmp2(tmp3[30]).Text;
+  const tmp2Result12 = tmp2(tmp3[15]);
+  const merged = Object.assign(tmp2Result12.useChannelNameTextProps(channelMode));
+  const tmp20 = closure_13(Text, obj3);
+  const items5 = [, ];
+  const tmp11Result4 = isSuggestedSection(tmp3[35]);
+  items5[0] = closure_13(isSuggestedSection(tmp3[31]), { unread: tmp8, resolvedUnreadSetting });
+  const obj4 = { onPressIn: callback, onPress: callback1, onLongPress: callback2, style: items6, accessible: true, accessibilityRole: "button", accessibilityLabel: combined, accessibilityState: { selected }, children: items7 };
+  items6 = [tmp.container, ];
+  const AnimatedPressableHighlight = tmp2(tmp3[34]).AnimatedPressableHighlight;
+  items6[1] = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
+  combined = tmp11Result1Result;
+  channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED && tmp.selected;
+  if (null != runningLabel) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + tmp11Result1Result + ", " + runningLabel;
   }
-  items7 = [tmp16Result, ];
+  let tmp18Result = channelMode === tmp2(tmp3[15]).ChannelModes.SELECTED;
+  if (tmp18Result) {
+    const obj5 = { style: tmp.selectedBorder };
+    tmp18Result = tmp18(View, obj5);
+  }
+  items7 = [tmp18Result, ];
   const items8 = [tmp.row, ];
   const obj6 = { style: items8, children: items9 };
-  const tmp26 = null != subtitle && tmp.rowWithSubtitle;
-  items8[1] = tmp26;
+  const tmp29 = null != subtitle && tmp.rowWithSubtitle;
+  items8[1] = tmp29;
   items9 = [BaseChannelIconResult, , ];
-  let tmp19Result = tmp18;
+  let tmp21Result = tmp20;
   if (null != subtitle) {
     const obj7 = { style: tmp.channelLabel, children: items10 };
-    items10 = [tmp18, ];
+    items10 = [tmp20, ];
     const obj8 = { experimental_useNativeText: true, lineClamp: 1, children: tmp2Result14.getChannelSubtitleData(subtitle).subtitle };
-    const Text2 = tmp2(tmp3[28]).Text;
+    const Text2 = tmp2(tmp3[30]).Text;
     const tmp2Result13 = tmp2(tmp3[15]);
     const merged1 = Object.assign(tmp2Result13.getChannelSubtitleTextProps(channelMode));
-    tmp2Result14 = tmp2(tmp3[31]);
+    tmp2Result14 = tmp2(tmp3[32]);
     items10[1] = closure_13(Text2, obj8);
-    tmp19Result = tmp19(tmp25, obj7);
+    tmp21Result = tmp21(tmp28, obj7);
   }
   const obj9 = { children: items5 };
-  items9[1] = tmp19Result;
-  items9[2] = closure_13(isSuggestedSection(tmp3[32]), { channel, isChannelSelected: selected, muted, isSubscriptionGated, needSubscriptionToAccess, enableActivities: isActivitiesInTextEnabled });
+  items9[1] = tmp21Result;
+  items9[2] = closure_13(isSuggestedSection(tmp3[33]), { channel, isChannelSelected: selected, muted, isSubscriptionGated, needSubscriptionToAccess, enableActivities: isActivitiesInTextEnabled });
   items7[1] = closure_14(View, obj6);
-  items5[1] = closure_14(AnimatedPressableHighlight, obj3);
-  return closure_14(tmp20, obj9);
+  items5[1] = closure_14(AnimatedPressableHighlight, obj4);
+  return closure_14(tmp11Result4, obj9);
 }));
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/TextChannel.tsx");
 

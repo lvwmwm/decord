@@ -1,12 +1,12 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 17140
+// Function ID: 17141
 // Name: DesignSystemsTableRowSetting
-// Dependencies: [8260, 1087, 11084, 16845, 2]
+// Dependencies: [8332, 1087, 11208, 17141, 2]
 
-// Module 16844 (DesignSystemsTableRowSetting)
+// Module 17140 (DesignSystemsTableRowSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

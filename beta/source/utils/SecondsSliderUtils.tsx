@@ -1,17 +1,17 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 18261
+// Function ID: 18262
 // Name: SecondsSliderUtils
-// Dependencies: [1128, 4797, 2]
+// Dependencies: [1128, 2049, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 17956 (SecondsSliderUtils)
+// Module 18261 (SecondsSliderUtils)
 import intl7 from "intl" /* 1128 */;
-import _modDef4797 from "module_4797" /* 4797 */;
+import _modDef2049 from "module_2049" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 
-export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPerUser, arg1, intl) {
+export const getSecondsSliderLabel = function getSecondsSliderLabel(arg0, arg1, intl) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -21,8 +21,8 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPer
     intl = intl7.intl;
     stringResult = intl.string(intl7.t.Yl1D84);
   }
-  const obj = _modDef4797;
-  const time = obj.duration(rateLimitPerUser, "seconds");
+  const obj = _modDef2049;
+  const time = obj.duration(arg0, "seconds");
   if (time.days() > 0) {
     const intl6 = intl7.intl;
     const formatToPlainString4 = intl6.formatToPlainString;
@@ -44,7 +44,7 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPer
     const obj4 = { minutes: time.minutes() };
     const tmp9 = flag ? t2["XIGt+W"] : t2.iXLF9W;
     stringResult = formatToPlainString2(tmp9, obj4);
-  } else if (rateLimitPerUser > 0) {
+  } else if (arg0 > 0) {
     const intl3 = intl7.intl;
     const formatToPlainString = intl3.formatToPlainString;
     const t = intl7.t;

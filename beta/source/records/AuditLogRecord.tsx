@@ -1,13 +1,13 @@
-// Module ID: 18739
-// Function ID: 18740
+// Module ID: 19041
+// Function ID: 19042
 // Name: AuditLogRecord
-// Dependencies: [1407, 1087, 1257, 4797, 11, 2]
+// Dependencies: [1407, 1087, 1257, 2049, 11, 2]
 // Exports: AuditLogChange
 
-// Module 18739 (AuditLogRecord)
+// Module 19041 (AuditLogRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import _modDef4797 from "module_4797" /* 4797 */;
+import _modDef2049 from "module_2049" /* 2049 */;
 import Record from "Record" /* 1407 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -288,7 +288,7 @@ class AuditLogRecord extends Record {
     tmp5.actionType = getActionType(tmp5.action);
     ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
     if (timestampStart == null) {
-      const tmp8 = _modDef4797;
+      const tmp8 = _modDef2049;
       const obj = SnowflakeUtilsDefault;
       timestampStart = tmp8(obj.extractTimestamp(tmp5.id));
     }

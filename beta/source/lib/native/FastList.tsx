@@ -1,17 +1,17 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7167
+// Function ID: 7168
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5187, 6439, 1384, 4945, 7039, 7040, 6584, 7041, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5234, 6886, 1384, 5052, 7168, 7169, 5269, 7170, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7038 (FastList)
+// Module 7167 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
-import NativeViewDefault from "NativeView" /* 6439 */;
-import BottomSheetModal from "BottomSheetModal" /* 6584 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7041 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
+import BottomSheetModal from "BottomSheetModal" /* 5269 */;
+import NativeViewDefault from "NativeView" /* 6886 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7170 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -2009,7 +2009,7 @@ class FastList extends PureComponent {
     const fastListComputer = this.state.fastListComputer;
     return fastListComputer.computeScrollPosition(false, arg0, arg1);
   }
-  getInitialState(endImportTime, setInfo, isFirstLayout) {
+  getInitialState(containerSize, setInfo, isFirstLayout) {
     let batchSize;
     let batchesToRender;
     let blockEnd;
@@ -2045,7 +2045,7 @@ class FastList extends PureComponent {
     const horizontal = props.horizontal;
     const scrollPosValue = props.scrollPosValue;
     const tmp = undefined !== horizontal && horizontal;
-    setInfo.setInfo(endImportTime);
+    setInfo.setInfo(containerSize);
     let num2 = initialScrollStart;
     if (initialScrollStart == null) {
       num2 = 0;
@@ -2055,7 +2055,7 @@ class FastList extends PureComponent {
       tmp3 = num2;
     } else if (num > 0) {
       tmp3 = num2;
-      if (endImportTime > 0) {
+      if (containerSize > 0) {
         const scrollPosition = setInfo.computeScrollPosition("default" === str2, num, initialScrollItem);
         tmp3 = num2;
         if (null != scrollPosition) {
@@ -2079,13 +2079,13 @@ class FastList extends PureComponent {
     const tmp7 = isFirstLayout;
     if (tmp7) {
       let computeResult;
-      if (endImportTime > 0) {
+      if (containerSize > 0) {
         let obj2;
-        if (0 === endImportTime) {
+        if (0 === containerSize) {
           obj2 = { batchSize: 0, blockStart: 0, blockEnd: 0 };
         } else {
           const _Math = Math;
-          const rounded = Math.ceil(endImportTime);
+          const rounded = Math.ceil(containerSize);
           const _Math2 = Math;
           const _Math3 = Math;
           const rounded1 = Math.floor(tmp3);
@@ -2109,7 +2109,7 @@ class FastList extends PureComponent {
         const obj3 = ReanimatedRexport2;
         self.scrollPosValue = obj3.makeMutable(tmp8);
       }
-      if (endImportTime > 0) {
+      if (containerSize > 0) {
         computeResult = setInfo.compute(blockStart, blockEnd, items, true);
       } else {
         computeResult = { size: 0, items: [] };
@@ -2118,8 +2118,8 @@ class FastList extends PureComponent {
       const merged = Object.assign(computeResult);
       return obj4;
     }
-    batchSize = Math.ceil(endImportTime / 4);
-    blockEnd = tmp3 + endImportTime;
+    batchSize = Math.ceil(containerSize / 4);
+    blockEnd = tmp3 + containerSize;
     blockStart = tmp3;
   }
   componentDidMount() {

@@ -1,11 +1,11 @@
-// Module ID: 18568
-// Function ID: 18569
+// Module ID: 18873
+// Function ID: 18874
 // Name: MessageQueueManager
-// Dependencies: [7085, 8020, 2]
+// Dependencies: [7214, 8140, 2]
 
-// Module 18568 (MessageQueueManager)
-import MessageQueueDefault from "MessageQueue" /* 8020 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+// Module 18873 (MessageQueueManager)
+import MessageQueueDefault from "MessageQueue" /* 8140 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 class MessageQueueManager extends AutomaticLifecycleManager {

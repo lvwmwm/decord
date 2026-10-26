@@ -1,15 +1,15 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 15052
+// Function ID: 15053
 // Name: PIPSpeakerStore
-// Dependencies: [6292, 5209, 6203, 550, 504, 584, 2]
+// Dependencies: [6772, 5714, 6685, 550, 504, 584, 2]
 
-// Module 14818 (PIPSpeakerStore)
+// Module 15052 (PIPSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import throttleDefault from "throttle" /* 550 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6203 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import SpeakingStore from "SpeakingStore" /* 6685 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -72,10 +72,10 @@ class PIPSpeakerStore extends Store {
   initialize() {
     this.waitFor(RTCConnectionStore, SpeakingStore, ChannelRTCStore);
   }
-  getSpeakerId(channelId) {
+  getSpeakerId(batchedStoreListener) {
     let tmp;
-    if (null != channelId) {
-      if (channelId === c4) {
+    if (null != batchedStoreListener) {
+      if (batchedStoreListener === c4) {
         tmp = c0;
       }
     }

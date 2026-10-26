@@ -1,26 +1,27 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 8587
+// Function ID: 8588
 // Name: transformEmbeds
-// Dependencies: [17, 1087, 8517, 8518, 6003, 8519, 1384, 8158, 5519, 1128, 1105, 8391, 4888, 7266, 7272, 6165, 2]
+// Dependencies: [17, 1087, 8588, 8589, 6486, 8590, 1384, 8277, 5999, 1128, 1105, 8463, 4796, 7389, 7395, 6654, 8591, 2]
 // Exports: default
 
-// Module 8516 (transformEmbeds)
+// Module 8587 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl6 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DateUtils from "DateUtils" /* 4888 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5519 */;
-import EmbedUtils from "EmbedUtils" /* 6003 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6165 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7266 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7272 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8158 */;
-import MarkupParsers from "MarkupParsers" /* 8391 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8517 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8518 */;
-import utils from "utils" /* 8519 */;
+import DateUtils from "DateUtils" /* 4796 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5999 */;
+import EmbedUtils from "EmbedUtils" /* 6486 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6654 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7389 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7395 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
+import MarkupParsers from "MarkupParsers" /* 8463 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8588 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8589 */;
+import utils from "utils" /* 8590 */;
+import NativeChatCapabilities from "NativeChatCapabilities" /* 8591 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -73,6 +74,8 @@ export default function transformEmbeds(arg0) {
     return obj;
   }
   return embeds.flatMap((type) => {
+    let RICH;
+    let audio;
     let getImageSrc;
     let height;
     let imageSrc;
@@ -91,9 +94,8 @@ export default function transformEmbeds(arg0) {
     let tmp35;
     let tmp3Result17;
     let tmp3Result18;
-    let tmp44;
-    let tmp50;
-    let type2;
+    let tmp42;
+    let tmp48;
     let url2;
     let url3;
     let url4;
@@ -169,98 +171,88 @@ export default function transformEmbeds(arg0) {
                       if (null != tmp8) {
                         tmp32 = tmp8;
                         if (null != type.video) {
+                          let isWebviewVideoResult = type.type === tmp.VIDEO || type.type === tmp.RICH || type.type === tmp.ARTICLE;
                           if (type.type !== MessageEmbedTypes.GIFV) {
-                            if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
-                              let tmp46 = tmp35;
-                              const tmp45 = type.type !== MessageEmbedTypes.GIFV || importDefault;
-                              if (!tmp45) {
-                                let obj3 = { gifvUrlForPortal: tmp50 };
+                            if (isWebviewVideoResult) {
+                              let tmp44 = tmp35;
+                              const tmp43 = type.type !== MessageEmbedTypes.GIFV || importDefault;
+                              if (!tmp43) {
+                                let obj3 = { gifvUrlForPortal: tmp48 };
                                 const merged1 = Object.assign(tmp35);
                                 ({ proxyURL: proxyURL3, url: url3 } = type.video);
-                                tmp50 = url3;
+                                tmp48 = url3;
                                 if (null != proxyURL3) {
-                                  tmp50 = url3;
+                                  tmp48 = url3;
                                   if ("" !== proxyURL3) {
-                                    tmp50 = proxyURL3;
+                                    tmp48 = proxyURL3;
                                   }
                                 }
-                                tmp46 = obj3;
+                                tmp44 = obj3;
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
-                              let tmp52 = url4;
-                              const isWebPlayerVideoUrl = tmp3(5519).isWebPlayerVideoUrl;
+                              let tmp50 = url4;
+                              const isWebPlayerVideoUrl = tmp3(5999).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
-                                tmp52 = url4;
+                                tmp50 = url4;
                                 if ("" !== proxyURL4) {
-                                  tmp52 = proxyURL4;
+                                  tmp50 = proxyURL4;
                                 }
                               }
-                              tmp32 = tmp46;
-                              if (isWebPlayerVideoUrl(tmp52)) {
+                              tmp32 = tmp44;
+                              if (isWebPlayerVideoUrl(tmp50)) {
                                 let obj4 = { inlinePlaybackDisabled: true };
-                                const merged2 = Object.assign(tmp46);
+                                const merged2 = Object.assign(tmp44);
                                 tmp32 = obj4;
                               }
                             }
+                            if (isWebviewVideoResult) {
+                              const tmp3Result20 = renderer_EmbedUtils;
+                              isWebviewVideoResult = tmp3Result20.isWebviewVideo(type);
+                            }
                             tmp35 = tmp8;
-                            if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
-                              tmp35 = tmp8;
-                              if (null == type.video.proxyURL) {
-                                const provider2 = type.provider;
-                                let name;
-                                const getEffectiveVideoProvider = tmp3(6003).getEffectiveVideoProvider;
-                                EmbedUtils;
-                                if (provider2 != null) {
-                                  name = provider2.name;
-                                }
-                                const effectiveVideoProvider = getEffectiveVideoProvider(name, type.video.url);
-                                tmp35 = tmp8;
-                                const tmp3Result21 = renderer_EmbedUtils;
-                                if (tmp3Result21.shouldPlayVideoInline(effectiveVideoProvider)) {
-                                  const obj5 = { showPlayButton: true };
-                                  const merged3 = Object.assign(tmp8);
-                                  tmp35 = obj5;
-                                }
-                              }
+                            if (isWebviewVideoResult) {
+                              const obj5 = { showPlayButton: true };
+                              const merged3 = Object.assign(tmp8);
+                              tmp35 = obj5;
                             }
                           }
-                          const obj6 = { gifv: type.type === MessageEmbedTypes.GIFV, videoUrl: tmp44 };
+                          const obj6 = { gifv: type.type === MessageEmbedTypes.GIFV, videoUrl: tmp42 };
                           const merged4 = Object.assign(tmp8);
                           ({ proxyURL: proxyURL2, url: url2 } = type.video);
-                          tmp44 = url2;
+                          tmp42 = url2;
                           if (null != proxyURL2) {
-                            tmp44 = url2;
+                            tmp42 = url2;
                             if ("" !== proxyURL2) {
-                              tmp44 = proxyURL2;
+                              tmp42 = proxyURL2;
                             }
                           }
                           tmp35 = obj6;
                         }
                       }
-                      let tmp57 = tmp32;
-                      const tmp56 = null != tmp32 && type.type === MessageEmbedTypes.GIFV;
-                      if (tmp56) {
+                      let tmp55 = tmp32;
+                      const tmp54 = null != tmp32 && type.type === MessageEmbedTypes.GIFV;
+                      if (tmp54) {
                         const obj8 = { role: intl.string(intl6.t.OBp3V3), hint: intl2.string(intl6.t.IPzNKE) };
                         const merged5 = Object.assign(tmp32);
                         intl = tmp3(1128).intl;
                         intl2 = tmp3(1128).intl;
-                        tmp57 = obj8;
+                        tmp55 = obj8;
                       }
-                      const tmp61 = borderLeftColor;
+                      const tmp59 = borderLeftColor;
                       borderLeftColor = borderLeftColor.embedBorderLeftColor;
                       if (null != type.color) {
-                        const tmp3Result22 = utils_ColorUtils;
-                        borderLeftColor = processColor(tmp3Result22.int2hsl(type.color));
+                        const tmp3Result21 = utils_ColorUtils;
+                        borderLeftColor = processColor(tmp3Result21.int2hsl(type.color));
                       }
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8391).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8463).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
-                          let tmp71;
+                          let tmp69;
                           if (null != type.rawTitle) {
                             rawTitle = parseEmbedTitleMarkup(type.rawTitle, require);
                           }
@@ -272,8 +264,8 @@ export default function transformEmbeds(arg0) {
                                 if (MessageEmbedTypes.RICH === type) {
                                   if (null != type.rawDescription) {
                                     const obj9 = { description: type.rawDescription, channelId: require, isField: false, ignoreCache: processColor, showListsAndHeaders, showMaskedLinks };
-                                    const tmp3Result23 = MarkupParsers;
-                                    result = tmp3Result23.parseEmbedDescriptionMarkup(obj9);
+                                    const tmp3Result22 = MarkupParsers;
+                                    result = tmp3Result22.parseEmbedDescriptionMarkup(obj9);
                                   }
                                 } else {
                                   result = type.rawDescription;
@@ -303,8 +295,8 @@ export default function transformEmbeds(arg0) {
                           });
                           let calendarFormatResult = null;
                           if (null != type.timestamp) {
-                            const tmp3Result24 = DateUtils;
-                            calendarFormatResult = tmp3Result24.calendarFormat(type.timestamp);
+                            const tmp3Result23 = DateUtils;
+                            calendarFormatResult = tmp3Result23.calendarFormat(type.timestamp);
                           }
                           if (null != type.footer) {
                             const text = type.footer.text;
@@ -320,19 +312,19 @@ export default function transformEmbeds(arg0) {
                               if ("" !== type.footer.iconProxyURL) {
                                 iconURL = type.footer.iconProxyURL;
                               }
-                              tmp71 = obj10;
+                              tmp69 = obj10;
                               if (null != iconURL) {
                                 const obj21 = RowGeneratorUtilsDefault;
                                 obj10.iconURL = obj21.getImageSrc(iconURL, 16, 16, !importDefault);
-                                tmp71 = obj10;
+                                tmp69 = obj10;
                               }
                             }
                             iconURL = type.footer.iconURL;
                           } else if (null != calendarFormatResult) {
-                            tmp71 = { content: calendarFormatResult, text: "" };
+                            tmp69 = { content: calendarFormatResult, text: "" };
                             const obj11 = { content: calendarFormatResult, text: "" };
                           }
-                          let tmp80;
+                          let tmp78;
                           if (null != type.author) {
                             if (null != type.author.iconProxyURL) {
                               let iconURL2;
@@ -348,11 +340,11 @@ export default function transformEmbeds(arg0) {
                               } else {
                                 author = type.author;
                               }
-                              tmp80 = author;
+                              tmp78 = author;
                             }
                             iconURL2 = type.author.iconURL;
                           }
-                          let tmp87;
+                          let tmp85;
                           if (type.type === MessageEmbedTypes.COMPONENTS) {
                             let mapped2;
                             const components = type.components;
@@ -365,31 +357,38 @@ export default function transformEmbeds(arg0) {
                             } else {
                               mapped2 = components;
                             }
-                            tmp87 = closure_13(mapped2);
+                            tmp85 = closure_13(mapped2);
                           }
                           const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(7266).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(7389).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
-                          const tmp92 = closure_9;
+                          const tmp90 = closure_9;
                           if (!closure_10) {
                             const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(7266).isMediaScanPending;
+                            const isMediaScanPending = tmp3(7389).isMediaScanPending;
                             ObscuredMediaUtils;
-                            isMediaScanPendingResult = isMediaScanPending(obj14, tmp92);
+                            isMediaScanPendingResult = isMediaScanPending(obj14, tmp90);
                           }
-                          let isVerifiedTeenResult = tmp96;
+                          let isVerifiedTeenResult = tmp94;
                           if (isVerifiedTeenResult) {
-                            const tmp3Result27 = AgeVerificationUtils;
-                            isVerifiedTeenResult = tmp3Result27.isVerifiedTeen();
+                            const tmp3Result26 = AgeVerificationUtils;
+                            isVerifiedTeenResult = tmp3Result26.isVerifiedTeen();
+                          }
+                          let tmp96 = type.type === tmp.AUDIO;
+                          if (tmp96) {
+                            const tmp3Result27 = NativeChatCapabilities;
+                            tmp96 = !tmp3Result27.nativeChatSupportsAudioEmbeds();
                           }
                           let str9 = type.id;
                           if (str9 == null) {
                             str9 = "";
                           }
-                          const obj15 = { id: str9, type: type2, spoiler: str11, obscure: stringResult, obscureAwaitingScan: str10, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp80, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp87, footer: tmp71, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
-                          type2 = type.type;
+                          const obj15 = { id: str9, type: RICH, spoiler: str11, obscure: stringResult, obscureAwaitingScan: str10, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp78, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp55, image: tmp26, images: mapped, fields: mapped1, components: tmp85, footer: tmp69, video, audio, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
+                          if (tmp96) {
+                            RICH = tmp.RICH;
+                          }
                           str10 = "";
                           str11 = "";
                           if (dependencyMap) {
@@ -409,13 +408,17 @@ export default function transformEmbeds(arg0) {
                           provider = type.provider;
                           url5 = type.url;
                           video = type.video;
-                          ({ embedProviderColor: obj27.providerColor, embedHeaderTextColor: obj27.headerTextColor, embedBodyTextColor: obj27.bodyTextColor } = tmp61);
+                          audio = undefined;
+                          if (!tmp96) {
+                            audio = type.audio;
+                          }
+                          ({ embedProviderColor: obj28.providerColor, embedHeaderTextColor: obj28.headerTextColor, embedBodyTextColor: obj28.bodyTextColor } = tmp59);
                           referenceId = type.referenceId;
                           return obj15;
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8391).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8463).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {

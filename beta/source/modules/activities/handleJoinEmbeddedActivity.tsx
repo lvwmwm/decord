@@ -1,17 +1,17 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11363
+// Function ID: 11364
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11224, 4834, 11225, 11264, 11263, 10805, 11274, 8786, 12512, 11254, 2]
+// Dependencies: [5, 2045, 4823, 4874, 1392, 4822, 2026, 5628, 4892, 11364, 11407, 11406, 5629, 11417, 8882, 12710, 11393, 2]
 // Exports: default
 
-// Module 11223 (handleJoinEmbeddedActivity)
+// Module 11363 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import UserStore from "UserStore" /* 1392 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

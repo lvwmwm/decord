@@ -1,19 +1,19 @@
-// Module ID: 7152
-// Function ID: 7153
+// Module ID: 7275
+// Function ID: 7276
 // Name: ConnectionsUtils
-// Dependencies: [2122, 2090, 7153, 1087, 1386, 38, 1128, 12, 7154, 2]
+// Dependencies: [4877, 4845, 7276, 1087, 1386, 38, 1128, 12, 7277, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 7152 (ConnectionsUtils)
+// Module 7275 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1087 */;
-import intl27 from "intl" /* 1128 */;
+import intl29 from "intl" /* 1128 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7154 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import Constants from "Constants" /* 7153 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7277 */;
+import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import Constants from "Constants" /* 7276 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,280 +101,304 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     if (null != operator) {
       if (PlatformTypes.REDDIT === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl26 = require("intl").intl;
+          const intl28 = require("intl").intl;
           const obj2 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl26.format(prop, obj2);
+          formatResult = intl28.format(prop, obj2);
         } else if (constants.REDDIT_TOTAL_KARMA === connectionMetadataField) {
-          const intl25 = require("intl").intl;
+          const intl27 = require("intl").intl;
           const obj3 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { karma };
-                      return intl.formatToPlainString(intl27.t.P2JAEc, obj);
+                      return intl.formatToPlainString(intl29.t.P2JAEc, obj);
                     }
           };
-          formatResult = intl25.format(prop, obj3);
+          formatResult = intl27.format(prop, obj3);
         } else if (constants.REDDIT_GOLD === connectionMetadataField) {
-          const intl24 = require("intl").intl;
+          const intl26 = require("intl").intl;
           const obj4 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t["+/5TCx"]);
                     }
           };
-          formatResult = intl24.format(prop, obj4);
+          formatResult = intl26.format(prop, obj4);
         } else if (constants.REDDIT_MOD === connectionMetadataField) {
-          const intl23 = require("intl").intl;
+          const intl25 = require("intl").intl;
           const obj5 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t["9rPbEs"]);
                     }
           };
-          formatResult = intl23.format(prop, obj5);
+          formatResult = intl25.format(prop, obj5);
         } else {
           return null;
         }
       } else if (PlatformTypes.STEAM === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl22 = require("intl").intl;
+          const intl24 = require("intl").intl;
           const obj6 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl22.format(prop, obj6);
+          formatResult = intl24.format(prop, obj6);
         } else if (constants.STEAM_GAME_COUNT === connectionMetadataField) {
-          const intl21 = require("intl").intl;
+          const intl23 = require("intl").intl;
           const obj7 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.H9eLoe, obj);
+                      return intl.formatToPlainString(intl29.t.H9eLoe, obj);
                     }
           };
-          formatResult = intl21.format(prop, obj7);
+          formatResult = intl23.format(prop, obj7);
         } else if (constants.STEAM_ITEM_COUNT_TF2 === connectionMetadataField) {
-          const intl20 = require("intl").intl;
+          const intl22 = require("intl").intl;
           const obj8 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.MceZJ6, obj);
+                      return intl.formatToPlainString(intl29.t.MceZJ6, obj);
                     }
           };
-          formatResult = intl20.format(prop, obj8);
+          formatResult = intl22.format(prop, obj8);
         } else if (constants.STEAM_ITEM_COUNT_DOTA2 === connectionMetadataField) {
-          const intl19 = require("intl").intl;
+          const intl21 = require("intl").intl;
           const obj9 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.dMnRar, obj);
+                      return intl.formatToPlainString(intl29.t.dMnRar, obj);
                     }
           };
-          formatResult = intl19.format(prop, obj9);
+          formatResult = intl21.format(prop, obj9);
         } else {
           return null;
         }
       } else if (PlatformTypes.BLUESKY === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
-          const intl18 = require("intl").intl;
+          const intl20 = require("intl").intl;
           const obj10 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl18.format(prop, obj10);
+          formatResult = intl20.format(prop, obj10);
         } else if (constants.BLUESKY_FOLLOWERS_COUNT === connectionMetadataField) {
-          const intl17 = require("intl").intl;
+          const intl19 = require("intl").intl;
           const obj11 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.xIdKU8, obj);
+                      return intl.formatToPlainString(intl29.t.xIdKU8, obj);
                     }
           };
-          formatResult = intl17.format(prop, obj11);
+          formatResult = intl19.format(prop, obj11);
         } else if (constants.BLUESKY_STATUSES_COUNT === connectionMetadataField) {
-          const intl16 = require("intl").intl;
+          const intl18 = require("intl").intl;
           const obj12 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t["dy3+NR"], obj);
+                      return intl.formatToPlainString(intl29.t["dy3+NR"], obj);
                     }
           };
-          formatResult = intl16.format(prop, obj12);
+          formatResult = intl18.format(prop, obj12);
+        } else {
+          return null;
+        }
+      } else if (PlatformTypes.LETTERBOXD === connectionType) {
+        if (constants.LETTERBOXD_WATCHES === connectionMetadataField) {
+          const intl17 = require("intl").intl;
+          const obj13 = {
+            platformQuantityHook() {
+                      const intl = intl29.intl;
+                      const obj = { count };
+                      return intl.formatToPlainString(intl29.t.szM3Fw, obj);
+                    }
+          };
+          formatResult = intl17.format(prop, obj13);
+        } else if (tmp51.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR === connectionMetadataField) {
+          const intl16 = require("intl").intl;
+          const obj14 = {
+            platformQuantityHook() {
+                      const intl = intl29.intl;
+                      const obj = { count };
+                      return intl.formatToPlainString(intl29.t["6SIEpt"], obj);
+                    }
+          };
+          formatResult = intl16.format(prop, obj14);
         } else {
           return null;
         }
       } else if (PlatformTypes.TWITTER === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
           const intl15 = require("intl").intl;
-          const obj13 = {
+          const obj15 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl15.format(prop, obj13);
+          formatResult = intl15.format(prop, obj15);
         } else if (constants.TWITTER_VERIFIED === connectionMetadataField) {
           const intl14 = require("intl").intl;
-          const obj14 = {
+          const obj16 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t.xRygZL);
                     }
           };
-          formatResult = intl14.format(prop, obj14);
+          formatResult = intl14.format(prop, obj16);
         } else if (constants.TWITTER_FOLLOWERS_COUNT === connectionMetadataField) {
           const intl13 = require("intl").intl;
-          const obj15 = {
+          const obj17 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.bkajar, obj);
+                      return intl.formatToPlainString(intl29.t.bkajar, obj);
                     }
           };
-          formatResult = intl13.format(prop, obj15);
+          formatResult = intl13.format(prop, obj17);
         } else if (constants.TWITTER_STATUSES_COUNT === connectionMetadataField) {
           const intl12 = require("intl").intl;
-          const obj16 = {
+          const obj18 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.MI7NKi, obj);
+                      return intl.formatToPlainString(intl29.t.MI7NKi, obj);
                     }
           };
-          formatResult = intl12.format(prop, obj16);
+          formatResult = intl12.format(prop, obj18);
         } else {
           return null;
         }
       } else if (PlatformTypes.PAYPAL === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
           const intl11 = require("intl").intl;
-          const obj17 = {
+          const obj19 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl11.format(prop, obj17);
+          formatResult = intl11.format(prop, obj19);
         } else if (tmp37.PAYPAL_VERIFIED === connectionMetadataField) {
           const intl10 = require("intl").intl;
-          const obj18 = {
+          const obj20 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t.slSQuB);
                     }
           };
-          formatResult = intl10.format(prop, obj18);
+          formatResult = intl10.format(prop, obj20);
         } else {
           return null;
         }
       } else if (PlatformTypes.EBAY === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
           const intl9 = require("intl").intl;
-          const obj19 = {
+          const obj21 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { days };
-                      return intl.formatToPlainString(intl27.t.TPbtEu, obj);
+                      return intl.formatToPlainString(intl29.t.TPbtEu, obj);
                     }
           };
-          formatResult = intl9.format(prop, obj19);
+          formatResult = intl9.format(prop, obj21);
         } else if (constants.EBAY_TOP_RATED_SELLER === connectionMetadataField) {
           const intl8 = require("intl").intl;
-          const obj20 = {
+          const obj22 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t.TEEYwa);
                     }
           };
-          formatResult = intl8.format(prop, obj20);
+          formatResult = intl8.format(prop, obj22);
         } else if (constants.EBAY_POSITIVE_FEEDBACK_PERCENTAGE === connectionMetadataField) {
           const intl7 = require("intl").intl;
-          const obj21 = {
-            platformQuantityHook() {
-                      const intl = intl27.intl;
-                      const obj = { value };
-                      return intl.formatToPlainString(intl27.t.rl9Vgy, obj);
-                    }
-          };
-          formatResult = intl7.format(prop, obj21);
-        } else if (constants.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT === connectionMetadataField) {
-          const intl6 = require("intl").intl;
-          const obj22 = {
-            platformQuantityHook() {
-                      const intl = intl27.intl;
-                      const obj = { count };
-                      return intl.formatToPlainString(intl27.t.QP5W1R, obj);
-                    }
-          };
-          formatResult = intl6.format(prop, obj22);
-        } else if (constants.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT === connectionMetadataField) {
-          const intl5 = require("intl").intl;
           const obj23 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
-                      const obj = { count };
-                      return intl.formatToPlainString(intl27.t["6ZFYdK"], obj);
+                      const intl = intl29.intl;
+                      const obj = { value };
+                      return intl.formatToPlainString(intl29.t.rl9Vgy, obj);
                     }
           };
-          formatResult = intl5.format(prop, obj23);
+          formatResult = intl7.format(prop, obj23);
+        } else if (constants.EBAY_UNIQUE_POSITIVE_FEEDBACK_COUNT === connectionMetadataField) {
+          const intl6 = require("intl").intl;
+          const obj24 = {
+            platformQuantityHook() {
+                      const intl = intl29.intl;
+                      const obj = { count };
+                      return intl.formatToPlainString(intl29.t.QP5W1R, obj);
+                    }
+          };
+          formatResult = intl6.format(prop, obj24);
+        } else if (constants.EBAY_UNIQUE_NEGATIVE_FEEDBACK_COUNT === connectionMetadataField) {
+          const intl5 = require("intl").intl;
+          const obj25 = {
+            platformQuantityHook() {
+                      const intl = intl29.intl;
+                      const obj = { count };
+                      return intl.formatToPlainString(intl29.t["6ZFYdK"], obj);
+                    }
+          };
+          formatResult = intl5.format(prop, obj25);
         } else {
           return null;
         }
       } else if (PlatformTypes.TIKTOK === connectionType) {
         if (constants.TIKTOK_VERIFIED === connectionMetadataField) {
           const intl4 = require("intl").intl;
-          const obj24 = {
+          const obj26 = {
             platformQuantityHook() {
                       const intl = closure_0(dependencyMap[6]).intl;
                       return intl.string(closure_0(dependencyMap[6]).t.uv7ety);
                     }
           };
-          formatResult = intl4.format(prop, obj24);
+          formatResult = intl4.format(prop, obj26);
         } else if (constants.TIKTOK_FOLLOWER_COUNT === connectionMetadataField) {
           const intl3 = require("intl").intl;
-          const obj25 = {
+          const obj27 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.qIPDRy, obj);
+                      return intl.formatToPlainString(intl29.t.qIPDRy, obj);
                     }
           };
-          formatResult = intl3.format(prop, obj25);
+          formatResult = intl3.format(prop, obj27);
         } else if (constants.TIKTOK_FOLLOWING_COUNT === connectionMetadataField) {
           const intl2 = require("intl").intl;
-          const obj26 = {
+          const obj28 = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t.zRta4X, obj);
+                      return intl.formatToPlainString(intl29.t.zRta4X, obj);
                     }
           };
-          formatResult = intl2.format(prop, obj26);
+          formatResult = intl2.format(prop, obj28);
         } else if (constants.TIKTOK_LIKES_COUNT === connectionMetadataField) {
           let intl = require("intl").intl;
           let obj = {
             platformQuantityHook() {
-                      const intl = intl27.intl;
+                      const intl = intl29.intl;
                       const obj = { count };
-                      return intl.formatToPlainString(intl27.t["ar0WW+"], obj);
+                      return intl.formatToPlainString(intl29.t["ar0WW+"], obj);
                     }
           };
           formatResult = intl.format(prop, obj);

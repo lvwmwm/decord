@@ -1,37 +1,37 @@
-// Module ID: 11335
-// Function ID: 11336
+// Module ID: 11478
+// Function ID: 11479
 // Name: RPCHelpers
-// Dependencies: [5, 5540, 2024, 2072, 2090, 2014, 5532, 5207, 1392, 5212, 5895, 1087, 1386, 5176, 1104, 12, 9168, 7445, 11336, 5509, 9167, 1389, 8731, 1297, 9169, 6299, 11338, 2]
+// Dependencies: [5, 2045, 2024, 4827, 4845, 2014, 6010, 5712, 1392, 5630, 6378, 1087, 1386, 5608, 1104, 12, 9263, 7566, 11479, 5989, 9262, 1389, 8827, 1297, 9264, 5623, 11481, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformBigFlag, transformChannel, transformGuildMember, transformRole, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 11335 (RPCHelpers)
+// Module 11478 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import urlParseDefault from "urlParse" /* 1389 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
-import transformUserDefault from "transformUser" /* 9167 */;
-import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9168 */;
-import RPCErrorDefault from "RPCError" /* 9169 */;
-import transformMessage from "transformMessage" /* 11336 */;
-import LeakyBucketDefault from "LeakyBucket" /* 11338 */;
+import ChannelRecord from "ChannelRecord" /* 4827 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5623 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
+import transformUserDefault from "transformUser" /* 9262 */;
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9263 */;
+import RPCErrorDefault from "RPCError" /* 9264 */;
+import transformMessage from "transformMessage" /* 11479 */;
+import LeakyBucketDefault from "LeakyBucket" /* 11481 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
+import MessageStore from "MessageStore" /* 6010 */;
+import PresenceStore from "PresenceStore" /* 5712 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import Constants_mod from "Constants" /* 5895 */;
+import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import URLUtils from "URLUtils" /* 1386 */;
-import RegexUtils_mod from "RegexUtils" /* 5176 */;
+import RegexUtils_mod from "RegexUtils" /* 5608 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -603,18 +603,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f145346 = (index, index2) => index.index - index2.index;
-  const f145347 = (id) => ({ id: id.id, name: id.name });
+  const f148124 = (index, index2) => index.index - index2.index;
+  const f148125 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f145347), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f148125), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f145346);
+  sorted = values.sort(f148124);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f145347), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f148125), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f145346);
+  sorted1 = values2.sort(f148124);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

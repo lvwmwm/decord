@@ -1,34 +1,34 @@
-// Module ID: 13559
-// Function ID: 13560
+// Module ID: 13781
+// Function ID: 13782
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 5181, 13519, 21, 5191, 587, 558, 576, 8674, 5187, 4913, 1384, 5465, 8481, 6929, 573, 8515, 12610, 13530, 8535, 8666, 1498, 5128, 7266, 7272, 8699, 10073, 1202, 9308, 2]
+// Dependencies: [19, 17, 4972, 13758, 21, 4971, 587, 558, 576, 8765, 5234, 5252, 1384, 5586, 8552, 7063, 573, 8586, 12828, 13769, 8608, 8757, 1498, 5669, 7389, 7395, 8790, 10170, 1202, 9406, 2]
 
-// Module 13559 (MediaPreviewRightAccessory)
+// Module 13781 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1498 */;
-import useToken from "useToken" /* 4913 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import EyeIcon from "EyeIcon" /* 6929 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7266 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7272 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8515 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8535 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8666 */;
-import common_VideoDefault from "common/Video" /* 8699 */;
-import ClipViewDefault from "ClipView" /* 9308 */;
-import StickerDefault from "Sticker" /* 10073 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 12610 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13519 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 13530 */;
+import useToken from "useToken" /* 5252 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import EyeIcon from "EyeIcon" /* 7063 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7389 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7395 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8586 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8608 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
+import common_VideoDefault from "common/Video" /* 8790 */;
+import ClipViewDefault from "ClipView" /* 9406 */;
+import StickerDefault from "Sticker" /* 10170 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 12828 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13758 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13769 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5187);
-const VisualEffectViewDefault = tmp5(5465);
-const PlayIcon = tmp(8674);
-const ClipView = tmp(9308);
+const Text_Text = tmp(5234);
+const VisualEffectViewDefault = tmp5(5586);
+const PlayIcon = tmp(8765);
+const ClipView = tmp(9406);
 ({ PixelRatio: closure_4, StyleSheet } = react_native);
 const View = react_native.View;
 const RIGHT_ACCESSORY_LEFT_MARGIN = InAppNotificationConstants.RIGHT_ACCESSORY_LEFT_MARGIN;
@@ -219,7 +219,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Obscur
         tmp19 = tmp22;
       }
       if (isObscured) {
-        tmp16Result = tmp16(tmp(8481).ImageWarningIcon, { size: "sm", color: "white" });
+        tmp16Result = tmp16(tmp(8552).ImageWarningIcon, { size: "sm", color: "white" });
       } else {
         const obj5 = { style: tmp4.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
         tmp16Result = tmp16(View, obj5);
@@ -284,7 +284,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Obscur
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: tmp14Result };
   if (isObscured) {
-    tmp14Result = tmp14(tmp2(8481).ImageWarningIcon, { size: "sm", color: "white" });
+    tmp14Result = tmp14(tmp2(8552).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
     const obj5 = { style: tmp.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);

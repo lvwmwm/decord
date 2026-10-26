@@ -1,10 +1,10 @@
-// Module ID: 8875
-// Function ID: 8876
+// Module ID: 8970
+// Function ID: 8971
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1087, 2000, 1099, 8876, 5065, 1128, 2]
+// Dependencies: [5, 32, 19, 1087, 2000, 1099, 8971, 4978, 1128, 2]
 // Exports: default
 
-// Module 8875 (useCreateChannelSubmit)
+// Module 8970 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

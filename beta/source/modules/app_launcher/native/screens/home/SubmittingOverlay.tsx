@@ -1,14 +1,14 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 12041
+// Function ID: 12042
 // Name: SubmittingOverlay
-// Dependencies: [21, 5191, 587, 558, 576, 4945, 5478, 5482, 5495, 2]
+// Dependencies: [21, 4971, 587, 558, 576, 5052, 5247, 5248, 5262, 2]
 
-// Module 11873 (SubmittingOverlay)
+// Module 12041 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
-import spring from "spring" /* 5478 */;
-import createStyles from "createStyles" /* 5191 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
+import spring from "spring" /* 5247 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let tmp3;
 
 let obj2;
 let tmp;
-const springPresets = tmp(5482);
+const springPresets = tmp(5248);
 const jsx = Fragment.jsx;
 let obj = { ellipsis: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
@@ -30,7 +30,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
   submitting = submitting.submitting;
   const style = submitting.style;
   const tmp4 = closure_4();
-  const obj2 = submitting(4945);
+  const obj2 = submitting(5052);
   class S {
     constructor() {
       tmp = closure_0;
@@ -45,10 +45,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
       return obj;
     }
   }
-  S.__closure = { withSpring: submitting(5478).withSpring, submitting, SUBTLE_SPRING: submitting(5482).SUBTLE_SPRING };
+  S.__closure = { withSpring: submitting(5247).withSpring, submitting, SUBTLE_SPRING: submitting(5248).SUBTLE_SPRING };
   S.__workletHash = 17050905766844;
   S.__initData = __initData;
-  ({ withSpring: submitting(5478).withSpring, submitting, SUBTLE_SPRING: submitting(5482).SUBTLE_SPRING });
+  ({ withSpring: submitting(5247).withSpring, submitting, SUBTLE_SPRING: submitting(5248).SUBTLE_SPRING });
   const animatedStyle = obj2.useAnimatedStyle(S);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
         tmp6 = cResult[3];
       }
       if (cResult[4] !== submitting) {
-        const tmp8 = submitting && jsx(tmp(5495).Ellipsis, { variant: "active", size: "md" });
+        const tmp8 = submitting && jsx(tmp(5262).Ellipsis, { variant: "active", size: "md" });
         let num = 4;
         cResult[4] = submitting;
         cResult[5] = tmp8;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
   submitting = submitting.submitting;
   const style = submitting.style;
   let tmp = closure_4();
-  let obj = submitting(4945);
+  let obj = submitting(5052);
   const fn = function u() {
     let num = 0;
     const withSpring = spring.withSpring;
@@ -115,16 +115,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubmittingOv
     const obj = { opacity: withSpring(num, springPresets.SUBTLE_SPRING, "animate-always") };
     return obj;
   };
-  fn.__closure = { withSpring: submitting(5478).withSpring, submitting, SUBTLE_SPRING: submitting(5482).SUBTLE_SPRING };
+  fn.__closure = { withSpring: submitting(5247).withSpring, submitting, SUBTLE_SPRING: submitting(5248).SUBTLE_SPRING };
   fn.__workletHash = 15672049349439;
   fn.__initData = __initData2;
-  ({ withSpring: submitting(5478).withSpring, submitting, SUBTLE_SPRING: submitting(5482).SUBTLE_SPRING });
+  ({ withSpring: submitting(5247).withSpring, submitting, SUBTLE_SPRING: submitting(5248).SUBTLE_SPRING });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [style, tmp.ellipsis, animatedStyle];
   const View = ReanimatedRexportDefault.View;
   const tmp2 = submitting;
   if (submitting) {
-    submitting = tmp5(tmp2(5495).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(tmp2(5262).Ellipsis, { variant: "active", size: "md" });
   }
   return <View style={items}>{submitting}</View>;
 });

@@ -1,16 +1,16 @@
-// Module ID: 13883
-// Function ID: 13884
+// Module ID: 14113
+// Function ID: 14114
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 9849, 9851, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9947, 9949, 2]
 
-// Module 13883 (AppStoreOverlayStarRating)
+// Module 14113 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9849 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let rect;
 let size;
 let size1;
 let tmp5;
-const StarIcon2 = tmp5(9851);
+const StarIcon2 = tmp5(9949);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -43,7 +43,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractio
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.starIcon) {
     const obj2 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    const StarOutlineIcon = tmp(9849).StarOutlineIcon;
+    const StarOutlineIcon = tmp(9947).StarOutlineIcon;
     const tmp8 = React3(StarOutlineIcon, obj2);
     cResult[0] = tmp4.starIcon;
     cResult[1] = tmp8;
@@ -83,7 +83,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractio
     items1[1] = { width: nativeDefault.space.PX_10 * fillAmount };
     const obj5 = { width: nativeDefault.space.PX_10 * fillAmount };
     obj6 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    StarIcon = tmp(9851).StarIcon;
+    StarIcon = tmp(9949).StarIcon;
     tmp10 = React3(View, obj4);
   }
   cResult[2] = fillAmount;

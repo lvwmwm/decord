@@ -1,19 +1,19 @@
-// Module ID: 18950
-// Function ID: 18951
+// Module ID: 19277
+// Function ID: 19278
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4927, 1202, 5187, 8946, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 2]
 
-// Module 18950 (FormBigRadioBox)
+// Module 19277 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import react_native2 from "react-native" /* 4927 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8946 */;
+import react_native2 from "react-native" /* 5039 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,8 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
                 tmp15 = cResult[13];
               }
               if (cResult[14] !== icon) {
-                const obj2 = { source: icon };
-                const tmp18 = React3(native.Icon, obj2);
+                const tmp18 = React3(icon, { size: "md" });
                 cResult[14] = icon;
                 cResult[15] = tmp18;
                 tmp16 = tmp18;
@@ -102,8 +101,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
                     tmp23 = cResult[21];
                   }
                   if (cResult[22] !== description) {
-                    const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-                    const tmp28 = React3(Text_Text.Text, obj3);
+                    const obj2 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
+                    const tmp28 = React3(Text_Text.Text, obj2);
                     cResult[22] = description;
                     cResult[23] = tmp28;
                     tmp26 = tmp28;
@@ -129,9 +128,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
                       }
                     }
                   }
-                  const obj4 = { style: tmp10, accessibilityRole, accessibilityState, onPress: tmp11, children: items };
+                  const obj3 = { style: tmp10, accessibilityRole, accessibilityState, onPress: tmp11, children: items };
                   items = [tmp12, tmp19, tmp23, tmp26];
-                  const tmp32 = hasOwnProperty(TouchableHitBoxDefault, obj4);
+                  const tmp32 = hasOwnProperty(TouchableHitBoxDefault, obj3);
                   cResult[24] = accessibilityRole;
                   cResult[25] = accessibilityState;
                   cResult[26] = tmp19;
@@ -143,15 +142,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
                   cResult[32] = tmp32;
                   tmp29 = tmp32;
                 }
-                const obj5 = { style: tmp5.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
-                const tmp25 = React3(Text_Text.Text, obj5);
+                const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
+                const tmp25 = React3(Text_Text.Text, obj4);
                 cResult[19] = tmp5.title;
                 cResult[20] = title;
                 cResult[21] = tmp25;
                 tmp23 = tmp25;
               }
-              const obj6 = { style: tmp15, children: tmp16 };
-              const tmp22 = React3(View, obj6);
+              const obj5 = { style: tmp15, children: tmp16 };
+              const tmp22 = React3(View, obj5);
               cResult[16] = tmp16;
               cResult[17] = tmp15;
               cResult[18] = tmp22;
@@ -163,8 +162,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
             cResult[13] = items1;
             tmp15 = items1;
           }
-          const obj7 = { style: tmp5.indicator, active: selected };
-          const tmp14 = React3(native.RadioIndicator, obj7);
+          const obj6 = { style: tmp5.indicator, active: selected };
+          const tmp14 = React3(native.RadioIndicator, obj6);
           cResult[8] = selected;
           cResult[9] = tmp5.indicator;
           cResult[10] = tmp14;
@@ -180,11 +179,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
     cResult[7] = items2;
     tmp10 = items2;
   }
-  const obj8 = { selected, disabled: tmp4 };
+  const obj7 = { selected, disabled: tmp4 };
   cResult[0] = tmp4;
   cResult[1] = selected;
-  cResult[2] = obj8;
-  tmp6 = obj8;
+  cResult[2] = obj7;
+  tmp6 = obj7;
 }) : (function FormBigRadioBox(arg0) {
   let accessibilityRole;
   let accessibilityState;
@@ -231,7 +230,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormBigRadio
     selected = tmp.iconContainerSelected;
   }
   items2[1] = selected;
-  const obj4 = { style: items2, children: React3(native.Icon, { source: icon }) };
+  const obj4 = { style: items2, children: React3(icon, { size: "md" }) };
   items1[1] = React3(tmp10, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
   items1[2] = React3(Text_Text.Text, obj5);

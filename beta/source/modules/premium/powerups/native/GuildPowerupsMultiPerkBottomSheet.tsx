@@ -1,30 +1,30 @@
-// Module ID: 13233
-// Function ID: 13234
+// Module ID: 13471
+// Function ID: 13472
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 5191, 587, 683, 558, 576, 5127, 4920, 13197, 13186, 13182, 13203, 13234, 13204, 13220, 13221, 13225, 13207, 1202, 1128, 5187, 13208, 5479, 2621, 1633, 13235, 13238, 13231, 6584, 7118, 2]
+// Dependencies: [17, 21, 4971, 587, 683, 558, 576, 5205, 4993, 13435, 13424, 13420, 13441, 13472, 13442, 13458, 13459, 13463, 13445, 1202, 1128, 5234, 13446, 5244, 2568, 1633, 13473, 13476, 13469, 5269, 5265, 2]
 
-// Module 13233 (GuildPowerupsMultiPerkBottomSheet)
+// Module 13471 (GuildPowerupsMultiPerkBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef2621 from "module_2621" /* 2621 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13182 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13186 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13197 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13204 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13207 */;
-import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 13220 */;
-import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 13221 */;
-import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 13225 */;
-import GuildPowerupsDisabledWarningDefault from "GuildPowerupsDisabledWarning" /* 13231 */;
-import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 13234 */;
-import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 13235 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13238 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import useThemeDefault from "useTheme" /* 5205 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13420 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13424 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13435 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13442 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13445 */;
+import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 13458 */;
+import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 13459 */;
+import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 13463 */;
+import GuildPowerupsDisabledWarningDefault from "GuildPowerupsDisabledWarning" /* 13469 */;
+import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 13472 */;
+import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 13473 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13476 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,12 +37,12 @@ let obj3;
 let tmp;
 const intl3 = tmp(1128);
 const native = tmp(1202);
-const themes = tmp(4920);
-const Text_Text = tmp(5187);
-const components_Button_Button = tmp(5479);
-const usePowerupActiveStatus = tmp(13186);
-const useCalculatePowerupCardStatus = tmp(13203);
-const GuildPowerupsCardFooter = tmp(13208);
+const themes = tmp(4993);
+const Text_Text = tmp(5234);
+const components_Button_Button = tmp(5244);
+const usePowerupActiveStatus = tmp(13424);
+const useCalculatePowerupCardStatus = tmp(13441);
+const GuildPowerupsCardFooter = tmp(13446);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -134,9 +134,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     tmp13 = cResult[3];
   }
   let closure_0 = tmp13;
-  const textColor = tmp4(13234)(tmp13).textColor;
-  let str = tmp4(13204)(powerup, true, forceStaticImage);
-  const disabled = tmp4(13220)(guildId, powerup, tmp13).disabled;
+  const textColor = tmp4(13472)(tmp13).textColor;
+  let str = tmp4(13442)(powerup, true, forceStaticImage);
+  const disabled = tmp4(13458)(guildId, powerup, tmp13).disabled;
   const tmp15 = useGuildPowerupOnActivateDefault(guildId, powerup);
   const onActivate = tmp15.onActivate;
   const isLoading = tmp15.isLoading;
@@ -274,7 +274,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
                               }
                               const intl2 = intl3.intl;
                               string = intl2.string;
-                              tmp4Result = _modDef2621;
+                              tmp4Result = _modDef2568;
                               tmp51Result = tmp51(Button, obj4);
                             }
                             cResult[33] = tmp9;
@@ -470,7 +470,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     }
     const intl2 = intl3.intl;
     string = intl2.string;
-    tmp3Result2 = _modDef2621;
+    tmp3Result2 = _modDef2568;
     tmp19Result2 = tmp19(Button, obj13);
   }
   items5[1] = tmp19Result2;
@@ -540,7 +540,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
                       return tmp26;
                     }
                     const obj4 = { scrollable: true, startExpanded: true, onDismiss, children: tmp23 };
-                    const tmp28 = closure_4(guildId(7118).BottomSheet, obj4);
+                    const tmp28 = closure_4(guildId(5265).BottomSheet, obj4);
                     cResult[23] = onDismiss;
                     cResult[24] = tmp23;
                     cResult[25] = tmp28;
@@ -550,7 +550,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
               }
               const obj5 = { contentContainerStyle: tmp7, children: items };
               items = [tmp8, tmp11, tmp19];
-              const tmp25 = closure_5(guildId(6584).BottomSheetScrollView, obj5);
+              const tmp25 = closure_5(guildId(5269).BottomSheetScrollView, obj5);
               cResult[18] = tmp7;
               cResult[19] = tmp8;
               cResult[20] = tmp11;
@@ -626,10 +626,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   let tmp6Result2 = null;
   if (null != tmp4) {
     let obj = { scrollable: true, startExpanded: true, onDismiss, children: tmp8(BottomSheetScrollView, obj2) };
-    BottomSheet = guildId(7118).BottomSheet;
+    BottomSheet = guildId(5265).BottomSheet;
     obj2 = { contentContainerStyle: obj3, children: items };
     obj3 = { paddingBottom: bottom };
-    BottomSheetScrollView = guildId(6584).BottomSheetScrollView;
+    BottomSheetScrollView = guildId(5269).BottomSheetScrollView;
     const obj5 = { title: null, description: null };
     ({ title: obj4.title, description: obj4.description } = tmp4);
     items = [closure_4(GuildPowerupsSectionHeaderDefault, obj5), , ];

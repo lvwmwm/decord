@@ -1,25 +1,25 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16325
+// Function ID: 16326
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8700, 5191, 683, 558, 576, 16060, 4945, 5478, 5482, 5192, 5195, 1123, 504, 1384, 1257, 1633, 1128, 6462, 16080, 16082, 16084, 16086, 16087, 11632, 8674, 8676, 16088, 16089, 2]
+// Dependencies: [32, 19, 17, 2001, 1087, 21, 587, 8791, 4971, 683, 558, 576, 16306, 5052, 5247, 5248, 5206, 5209, 1123, 504, 1384, 1257, 1633, 1128, 6908, 16326, 16328, 16330, 16332, 16333, 11791, 8765, 8767, 16334, 16335, 2]
 
-// Module 16079 (AdVideoPlayer)
+// Module 16325 (AdVideoPlayer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import timing from "timing" /* 5192 */;
-import timingPresets from "timingPresets" /* 5195 */;
-import spring from "spring" /* 5478 */;
-import TextTrackTypeDefault from "TextTrackType" /* 8700 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16060 */;
+import timing from "timing" /* 5206 */;
+import timingPresets from "timingPresets" /* 5209 */;
+import spring from "spring" /* 5247 */;
+import media_playback_VideoDefault from "media_playback/Video" /* 8791 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16306 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -46,12 +46,12 @@ let rect1;
 let rect2;
 let tmp2;
 let unpackModuleId;
-const springPresets = tmp2(5482);
+const springPresets = tmp2(5248);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
 ({ AppStates: c9, ComponentActions: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
-const TextTrackType = react.memo(TextTrackTypeDefault);
+const Video = react.memo(media_playback_VideoDefault);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }

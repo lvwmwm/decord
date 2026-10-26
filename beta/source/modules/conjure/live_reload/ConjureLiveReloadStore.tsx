@@ -1,12 +1,14 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 10711
+// Function ID: 10712
 // Name: ConjureLiveReloadStore
 // Dependencies: [504, 584, 2]
 
-// Module 10990 (ConjureLiveReloadStore)
+// Module 10711 (ConjureLiveReloadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
+
+let set;
 
 const map = new Map();
 const Store = get_initializedDefault.Store;
@@ -21,9 +23,20 @@ class ConjureLiveReloadStore extends Store {
 }
 const prototype = ConjureLiveReloadStore.prototype;
 let obj = {
-  CONJURE_LIVE_RELOAD_SET: function handleLiveReloadSet(enabled) {
-    const obj = { enabled: enabled.enabled, error: enabled.error, phase: enabled.phase, step: enabled.step };
-    const result = map.set(enabled.projectId, obj);
+  CONJURE_LIVE_RELOAD_SET: function handleLiveReloadSet(background) {
+    let obj3;
+    background = background.background;
+    const projectId = background.projectId;
+    const obj = { enabled: background.enabled, error: background.error, phase: background.phase, step: background.step };
+    set = map.set;
+    if (true === background) {
+      obj3 = { background };
+      const obj2 = { background };
+    } else {
+      obj3 = {};
+    }
+    const merged = Object.assign(obj3);
+    const result = set(projectId, obj);
   }
 };
 const conjureLiveReloadStore = new ConjureLiveReloadStore(DispatcherDefault, obj);

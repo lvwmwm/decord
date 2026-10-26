@@ -1,24 +1,27 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 13030
+// Function ID: 13031
 // Name: TraitOptionItem
-// Dependencies: [17, 5537, 21, 587, 5191, 558, 576, 5538, 9327, 5491, 6520, 12749, 7843, 5128, 4927, 2]
+// Dependencies: [17, 6015, 21, 587, 4971, 558, 576, 6016, 9425, 5258, 6966, 6362, 7962, 5669, 6040, 5039, 2]
 
-// Module 12789 (TraitOptionItem)
+// Module 13030 (TraitOptionItem)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import react_native from "react-native" /* 4927 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import LinearGradientDefault from "LinearGradient" /* 5491 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
-import _modDef6520 from "module_6520" /* 6520 */;
-import inlineStylesDefault from "inlineStyles" /* 7843 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12749 */;
+import react_native from "react-native" /* 5039 */;
+import LinearGradientDefault from "LinearGradient" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6016 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6040 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
+import _modDef6966 from "module_6966" /* 6966 */;
+import inlineStyles from "inlineStyles" /* 7962 */;
 import react_native2 from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+const inlineStylesDefault = inlineStyles;
 
 let TRAIT_OPTION_HEIGHT;
 let c3;
@@ -32,8 +35,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const inlineStyles = tmp(7843);
-const NitroWheelIcon = tmp(9327);
+const NitroWheelIcon = tmp(9425);
 ({ Pressable: c3, View: closure_4 } = react_native2);
 ({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_NITRO_GRADIENT_COLORS: metroRequire, CHECKPOINT_PRIMARY: metroImportDefault, CHECKPOINT_RARITY_COLORS: metroImportAll, TRAIT_OPTION_HEIGHT } = CheckpointConstants);
 const TRAIT_OPTION_WIDTH = CheckpointConstants.TRAIT_OPTION_WIDTH;
@@ -88,7 +90,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Rarity
         return tmp23;
       }
       const obj3 = { style: tmp11, maskElement: tmp13, pointerEvents: "none", children: tmp16 };
-      const tmp26 = unpackModuleId(_modDef6520, obj3);
+      const tmp26 = unpackModuleId(_modDef6966, obj3);
       cResult[6] = tmp11;
       cResult[7] = tmp16;
       cResult[8] = tmp26;
@@ -145,7 +147,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Rarity
     items = [, ];
     ({ rarityIndicator: arr2[0], cornerNitroIcon: arr2[1] } = tmp);
     obj3 = { colors: metroRequire, start, end, style: tmp.cornerNitroIconGradient };
-    const tmp12 = _modDef6520;
+    const tmp12 = _modDef6966;
     tmp4Result = unpackModuleId(tmp12, obj2);
   } else {
     const items1 = [, , ];
@@ -203,20 +205,20 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitO
       if (cResult[6] === tmp6) {
         if (cResult[7] === tmp4.assetImageLocked) {
           let tmp10;
-          if (cResult[8] === traitOption.locked) {
+          if (cResult[8] === traitOption.status) {
             tmp10 = cResult[9];
           }
           return tmp10;
         }
       }
       let tmp11 = tmp6;
-      if (true === traitOption.locked) {
+      if (traitOption.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.NITRO_LOCKED) {
         const obj5 = { style: tmp4.assetImageLocked, children: tmp6 };
         tmp11 = unpackModuleId(React3, obj5);
       }
       cResult[6] = tmp6;
       cResult[7] = tmp4.assetImageLocked;
-      cResult[8] = traitOption.locked;
+      cResult[8] = traitOption.status;
       cResult[9] = tmp11;
       tmp10 = tmp11;
     }
@@ -243,7 +245,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitO
     obj4 = { uri: traitOption.asset };
     const tmp4Result = unpackModuleId(FastImageDefault, obj3);
     let tmp4Result2 = tmp4Result;
-    if (true === traitOption.locked) {
+    if (traitOption.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.NITRO_LOCKED) {
       const obj5 = { style: tmp.assetImageLocked, children: tmp4Result };
       tmp4Result2 = tmp4(React3, obj5);
     }
@@ -267,9 +269,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     let tmp6 = !isNoneOption;
     if (tmp6) {
       const obj2 = { children: authStore2(LinearGradient, obj3) };
-      const Defs = tmp(7843).Defs;
+      const Defs = tmp(7962).Defs;
       obj3 = { id: checkpointTraitGradient, x1: "0", y1: "1", x2: "0", y2: "0", children: items };
-      LinearGradient = tmp(7843).LinearGradient;
+      LinearGradient = tmp(7962).LinearGradient;
       const obj4 = { offset: "0", stopColor: hasOwnProperty, stopOpacity };
       items = [unpackModuleId(inlineStyles.Stop, obj4), ];
       const obj5 = { offset: "1", stopColor: hasOwnProperty, stopOpacity };
@@ -285,7 +287,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const tmp13 = isSelected ? hasOwnProperty : hasOwnProperty;
   let num3 = 1;
   if (isSelected) {
-    num3 = tmp(12749).TRAIT_OPTION_STROKE_WIDTH;
+    num3 = tmp(6362).TRAIT_OPTION_STROKE_WIDTH;
   }
   if (cResult[2] === tmp13) {
     let tmp14;
@@ -297,7 +299,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
       let tmp17 = !isNoneOption;
       if (tmp17) {
         const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-        const Polygon2 = tmp(7843).Polygon;
+        const Polygon2 = tmp(7962).Polygon;
         const _HermesInternal = HermesInternal;
         tmp17 = unpackModuleId(Polygon2, obj6);
       }
@@ -329,7 +331,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     tmp21 = tmp26;
   }
   const obj7 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: tmp13, strokeWidth: num3 };
-  const Polygon = tmp(7843).Polygon;
+  const Polygon = tmp(7962).Polygon;
   const tmp15 = unpackModuleId(Polygon, obj7);
   cResult[2] = tmp13;
   cResult[3] = num3;
@@ -364,13 +366,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const Polygon = inlineStyles.Polygon;
   num = 1;
   if (isSelected) {
-    num = tmp13(12749).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp13(6362).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = unpackModuleId(Polygon, obj5);
   let tmp12Result = !isNoneOption;
   if (tmp12Result) {
     const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp13(7843).Polygon;
+    const Polygon2 = tmp13(7962).Polygon;
     const _HermesInternal = HermesInternal;
     tmp12Result = tmp12(Polygon2, obj6);
   }
@@ -401,10 +403,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitOptionI
     const tmpResult = react_native;
     const radioA11yNative = tmpResult.useRadioA11yNative(tmp8);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
+    const tmp10 = (traitOption.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.NITRO_LOCKED || undefined !== disabled && disabled) && tmp7.assetItemLocked;
     if (cResult[3] === tmp7.assetItem) {
       let tmp11;
       let tmp12;
-      if (cResult[4] === ((traitOption.locked || undefined !== disabled && disabled) && tmp7.assetItemLocked)) {
+      if (cResult[4] === tmp10) {
         tmp11 = cResult[5];
       }
       if (cResult[6] !== traitOption) {
@@ -489,9 +492,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitOptionI
       cResult[10] = tmp17;
       tmp14 = tmp17;
     }
-    const items1 = [tmp7.assetItem, (traitOption.locked || undefined !== disabled && disabled) && tmp7.assetItemLocked];
+    const items1 = [tmp7.assetItem, tmp10];
     cResult[3] = tmp7.assetItem;
-    cResult[4] = (traitOption.locked || undefined !== disabled && disabled) && tmp7.assetItemLocked;
+    cResult[4] = tmp10;
     cResult[5] = items1;
     tmp11 = items1;
   }
@@ -530,26 +533,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitOptionI
   const radioA11yNative = obj.useRadioA11yNative({ selected: isSelected, disabled: flag });
   const obj2 = { onPress, disabled: flag, style: items, accessibilityRole, accessibilityLabel, accessibilityState, children: items1 };
   items = [tmp.assetItem, ];
-  let assetItemLocked = traitOption.locked;
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const tmp5 = authStore2;
-  const tmp6 = _false;
-  if (!assetItemLocked) {
-    assetItemLocked = flag;
-  }
-  if (assetItemLocked) {
-    assetItemLocked = tmp.assetItemLocked;
-  }
-  items[1] = assetItemLocked;
+  items[1] = (traitOption.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.NITRO_LOCKED || flag) && tmp.assetItemLocked;
   const obj3 = { isNoneOption: tmp2Result.isNoneOption(traitOption), isSelected: showSelectedBorder };
+  (traitOption.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.NITRO_LOCKED || flag) && tmp.assetItemLocked;
   tmp2Result = CheckpointCustomizationUtils;
   items1 = [unpackModuleId(closure_21, obj3), , ];
-  let tmp7Result = !hideCornerFlag && null != traitOption.rarity;
-  if (tmp7Result) {
-    const obj4 = { rarity: traitOption.rarity };
-    tmp7Result = tmp7(closure_19, obj4);
+  let tmp8Result = !hideCornerFlag;
+  const tmp5 = authStore2;
+  const tmp6 = _false;
+  if (tmp8Result) {
+    tmp8Result = null != traitOption.rarity;
   }
-  items1[1] = tmp7Result;
+  if (tmp8Result) {
+    const obj4 = { rarity: traitOption.rarity };
+    tmp8Result = tmp8(closure_19, obj4);
+  }
+  items1[1] = tmp8Result;
   items1[2] = unpackModuleId(closure_20, { traitOption });
   return tmp5(tmp6, obj2);
 });

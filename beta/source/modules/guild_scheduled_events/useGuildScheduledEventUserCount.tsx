@@ -1,12 +1,12 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 8886
+// Function ID: 8887
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 6332, 558, 576, 504, 8791, 2]
+// Dependencies: [19, 6784, 558, 576, 504, 8887, 2]
 
-// Module 8790 (useGuildScheduledEventUserCount)
+// Module 8886 (useGuildScheduledEventUserCount)
 import react from "react" /* 19 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8791 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8887 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

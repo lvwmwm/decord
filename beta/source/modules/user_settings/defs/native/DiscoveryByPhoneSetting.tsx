@@ -1,17 +1,17 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 16139
+// Function ID: 16140
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [8260, 1087, 1128, 558, 576, 2044, 1405, 13349, 11084, 2]
+// Dependencies: [8332, 1087, 1128, 558, 576, 4799, 1405, 13588, 11208, 2]
 
-// Module 15893 (DiscoveryByPhoneSetting)
+// Module 16139 (DiscoveryByPhoneSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13349 */;
+import UserSettings from "UserSettings" /* 4799 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13588 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

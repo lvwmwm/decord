@@ -1,18 +1,18 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 17232
+// Function ID: 17233
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1087, 21, 5191, 587, 558, 576, 4901, 2131, 1128, 5187, 5479, 7972, 6214, 5155, 7118, 2]
+// Dependencies: [19, 1087, 21, 4971, 587, 558, 576, 5660, 2067, 1128, 5234, 5244, 8092, 6696, 5210, 5265, 2]
 
-// Module 16936 (PersonalizationDisclaimerActionSheet)
+// Module 17232 (PersonalizationDisclaimerActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import LinkingDefault from "Linking" /* 5660 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1128);
-const Text_Text = tmp(5187);
-const components_Button_Button = tmp(5479);
-const ButtonGroup2 = tmp(6214);
-const Sheet_BottomSheet = tmp(7118);
-const LinkExternalSmallIcon2 = tmp(7972);
+const Text_Text = tmp(5234);
+const components_Button_Button = tmp(5244);
+const Sheet_BottomSheet = tmp(5265);
+const ButtonGroup2 = tmp(6696);
+const LinkExternalSmallIcon2 = tmp(8092);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

@@ -1,22 +1,23 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 18095
+// Function ID: 18096
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2073, 9614, 21, 11896, 5057, 1128, 5191, 558, 576, 504, 17790, 6212, 6206, 17791, 12936, 17793, 2]
+// Dependencies: [19, 17, 4828, 9714, 21, 12064, 5025, 1128, 4971, 558, 576, 504, 18096, 6694, 6688, 18097, 13176, 18099, 2]
 
-// Module 17789 (GuildVoiceOrStageChannelRow)
+// Module 18095 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6212 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
-import ChannelListLayout from "ChannelListLayout" /* 11896 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17790 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17793 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6688 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6694 */;
+import SearchConstants from "SearchConstants" /* 9714 */;
+import ChannelListLayout from "ChannelListLayout" /* 12064 */;
+import _mod13176 from "module_13176" /* 13176 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 18096 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 18099 */;
 import react from "react" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 2073 */;
-import createStyles from "createStyles" /* 5191 */;
+import StageInstanceStore from "StageInstanceStore" /* 4828 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -206,7 +207,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildV
     tmp11 = getVoiceChannelSubtitle(voiceStates, layout);
   }
   const obj3 = { subtitle: tmp11, muted: false, layout, channelId: id, guildId: guild_id };
-  const tmpResult2 = channel(17790);
+  const tmpResult2 = channel(18096);
   const result = tmpResult2.renderChannelSubtitle(obj3);
   cResult[4] = id;
   cResult[5] = guild_id;
@@ -299,12 +300,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildV
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildVoiceChannelRow(channel) {
-  let logger;
   let onPress;
   let tmp5;
   let trailing;
   let voiceStates;
-  let tmp = require;
   const obj = react2;
   const cResult = obj.c(26);
   channel = channel.channel;
@@ -425,13 +424,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[5] = V;
   tmp9 = V;
 }) : (function GuildVoiceChannelRow(channel) {
+  let logger;
+  let obj3;
   let onPress;
   let trailing;
   let voiceStates;
   channel = channel.channel;
   ({ voiceStates, trailing, onPress } = channel);
   const speakerVoiceStates = channel.speakerVoiceStates;
-  const tmp = closure_9();
+  let tmp = closure_9();
   if (channel.isGuildStageVoice()) {
     voiceStates = speakerVoiceStates;
   }
@@ -440,12 +441,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const callback = react.useCallback(() => {
     onPress(channel.id);
   }, items);
-  GuildChannelRowDefault;
+  const obj = { onPress: callback, voiceStates, channel, subtitle: null, trailing, extras: jsx(closure_11, { channel, voiceStates, users: mapped }) };
+  const tmp6 = GuildChannelRowDefault;
   if (null == trailing) {
-    const obj2 = { style: tmp.trailing, children: null };
+    const obj2 = { style: tmp.trailing, children: jsx(_mod13176.VocalChannelJoinButton, obj3) };
+    obj3 = { channel, voiceStates };
     trailing = tmp4(View, obj2);
   }
-  return <tmp6 onPress={callback} voiceStates={voiceStates} channel={channel} subtitle={null} trailing={trailing} extras={null} />;
+  return jsx(tmp6, obj);
 }));
 let result = size.fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

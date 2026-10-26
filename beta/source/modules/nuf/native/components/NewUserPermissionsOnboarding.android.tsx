@@ -1,19 +1,19 @@
-// Module ID: 13353
-// Function ID: 13354
+// Module ID: 13592
+// Function ID: 13593
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 5191, 6536, 587, 558, 576, 5187, 1128, 5479, 2]
+// Dependencies: [19, 17, 21, 4971, 5268, 587, 558, 576, 5234, 1128, 5244, 2]
 
-// Module 13353 (NewUserPermissionsOnboarding)
+// Module 13592 (NewUserPermissionsOnboarding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -240,7 +240,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserPermi
                       if (tmp37) {
                         const obj9 = { style: tmp6.buttonWrapper, children: React3(Button, obj10) };
                         obj10 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-                        Button = tmp(5479).Button;
+                        Button = tmp(5244).Button;
                         intl2 = tmp(1128).intl;
                         tmp37 = React3(React2, obj9);
                       }
@@ -383,13 +383,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserPermi
   items5[1] = tmp12;
   const obj9 = { style: items5, children: React3(Button, obj10) };
   obj10 = { variant: "primary", size: "md", text: intl.string(intl3.t["2nYlT2"]), onPress: onAllow, loading, grow: true };
-  Button = tmp10(5479).Button;
+  Button = tmp10(5244).Button;
   intl = tmp10(1128).intl;
   items4[3] = React3(React2, obj9);
   if (showSkip) {
     const obj11 = { style: tmp.buttonWrapper, children: React3(Button2, obj12) };
     obj12 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-    Button2 = tmp10(5479).Button;
+    Button2 = tmp10(5244).Button;
     intl2 = tmp10(1128).intl;
     showSkip = tmp4(tmp5, obj11);
   }

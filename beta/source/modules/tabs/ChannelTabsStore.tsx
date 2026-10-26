@@ -1,20 +1,20 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12921
+// Function ID: 12922
 // Name: ChannelTabsStore
-// Dependencies: [32, 2119, 5034, 2075, 12705, 1385, 504, 584, 2]
+// Dependencies: [32, 4874, 5002, 4830, 12922, 1385, 504, 584, 2]
 
-// Module 12704 (ChannelTabsStore)
+// Module 12921 (ChannelTabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import TabsExperimentDefault from "TabsExperiment" /* 12705 */;
+import ChannelConstants from "ChannelConstants" /* 4830 */;
+import TabsExperimentDefault from "TabsExperiment" /* 12922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import size from "module_2" /* 2 */;
 
-const f114235 = (id) => id.id === activeTabId;
+const f116415 = (id) => id.id === activeTabId;
 function handleChannelDelete(channel) {
   let found;
   channel = channel.channel;
@@ -345,7 +345,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_7;
-    const found = tabs.find(f114235);
+    const found = tabs.find(f116415);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -371,7 +371,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_7;
-    const found = tabs.find(f114235);
+    const found = tabs.find(f116415);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;
@@ -442,8 +442,8 @@ let obj = {
   },
   CHANNEL_TABS_NAVIGATE_ROUTE: function handleNavigateRoute(routePath) {
     let closure_7;
-    let id;
     let items;
+    let items2;
     routePath = routePath.routePath;
     let obj3;
     let enabled = flag;
@@ -457,48 +457,59 @@ let obj = {
       enabled = obj2.isDesktop();
     }
     if (enabled) {
-      if (0 !== tabs.length) {
-        if (null != id) {
-          const found = tabs.find((id) => id.id === id);
-          if (null != found) {
-            obj3 = { kind: "route", routePath, routeLabel };
-            if (found.pinned) {
-              if (tabs.length >= 25) {
-                return false;
-              } else {
-                const obj4 = { id: String(+closure_9), pinned: false, entries: items, index: 0 };
-                const _String = String;
-                closure_9 = tmp9 + 1;
-                let merged = Object.assign(obj3);
-                items = [obj3];
-                const items1 = [];
-                items1[HermesBuiltin.arraySpread(items1, tabs, 0)] = obj4;
-                tabs = items1;
-                id = obj4.id;
-              }
+      let id;
+      obj3 = { kind: "route", routePath, routeLabel };
+      if (0 === tabs.length) {
+        const obj4 = { id: String(+closure_9), pinned: false, entries: items, index: 0 };
+        const _String2 = String;
+        closure_9 = tmp17 + 1;
+        let merged = Object.assign(obj3);
+        items = [obj3];
+        const items1 = [obj4];
+        tabs = items1;
+        id = obj4.id;
+      } else if (null == id) {
+        return false;
+      } else {
+        const found = tabs.find((id) => id.id === id);
+        if (null != found) {
+          if (found.pinned) {
+            if (tabs.length >= 25) {
+              return false;
             } else {
-              tabs = arr.map((id) => {
-                let diff;
-                if (id.id !== activeTabId) {
-                  return id;
-                } else {
-                  const entries = id.entries;
-                  const items = [];
-                  items[HermesBuiltin.arraySpread(items, entries.slice(0, id.index + 1), 0)] = obj3;
-                  const obj = { id: null, pinned: null, entries: items, index: diff };
-                  ({ id: obj.id, pinned: obj.pinned } = id);
-                  diff = items.length - 1;
-                  const merged = Object.assign(obj3);
-                  return obj;
-                }
-              });
+              const obj5 = { id: String(+closure_9), pinned: false, entries: items2, index: 0 };
+              const _String = String;
+              closure_9 = tmp9 + 1;
+              const merged1 = Object.assign(obj3);
+              items2 = [obj3];
+              const items3 = [];
+              items3[HermesBuiltin.arraySpread(items3, tabs, 0)] = obj5;
+              tabs = items3;
+              id = obj5.id;
             }
+          } else {
+            tabs = arr.map((id) => {
+              let diff;
+              if (id.id !== activeTabId) {
+                return id;
+              } else {
+                const entries = id.entries;
+                const items = [];
+                items[HermesBuiltin.arraySpread(items, entries.slice(0, id.index + 1), 0)] = obj3;
+                const obj = { id: null, pinned: null, entries: items, index: diff };
+                ({ id: obj.id, pinned: obj.pinned } = id);
+                diff = items.length - 1;
+                const merged = Object.assign(obj3);
+                return obj;
+              }
+            });
           }
-          return false;
         }
+        return false;
       }
+    } else {
+      return false;
     }
-    return false;
   },
   CHANNEL_SELECT: function handleChannelSelect(arg0) {
     let channelId;

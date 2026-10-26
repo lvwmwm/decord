@@ -1,9 +1,9 @@
-// Module ID: 6377
-// Function ID: 6378
+// Module ID: 6830
+// Function ID: 6831
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6378, 502, 6220, 4843, 2090, 2119, 5034, 1392, 1087, 1112, 5399, 1128, 584, 6379, 1297, 6381, 7061, 2002, 6185, 7184, 7190, 7196, 7197, 7224, 7315, 6194, 1275, 4850, 1099, 7303, 4887, 1267, 7316, 1114, 6180, 6200, 2]
+// Dependencies: [109, 5, 6831, 502, 6702, 4901, 4845, 4874, 5002, 1392, 1087, 1112, 5908, 1128, 584, 6832, 1297, 6834, 7190, 2002, 6667, 7307, 7313, 7319, 7320, 7347, 7435, 6676, 1275, 4908, 1099, 7424, 4795, 1267, 7436, 1114, 6662, 6682, 2]
 
-// Module 6377 (GuildActionCreators)
+// Module 6830 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
 import router_utils from "router_utils" /* 1114 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import AgeGateUtils from "AgeGateUtils" /* 6180 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6200 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7303 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7315 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7316 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
+import AgeGateUtils from "AgeGateUtils" /* 6662 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6676 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6682 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7424 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7435 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7436 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6378 */;
+import BulkBanStore from "BulkBanStore" /* 6831 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6220 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6702 */;
+import GuildChannelStore from "GuildChannelStore" /* 4901 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -367,15 +367,15 @@ let obj = function _joinGuild() {
   });
   return obj(...arguments);
 };
-function waitForGuild(id) {
-  let closure_0 = id;
+function waitForGuild(guildId) {
+  let closure_0 = guildId;
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     return GuildStore.addConditionalChangeListener(() => {
-      const guild = GuildStore.getGuild(id);
+      const guild = GuildStore.getGuild(guildId);
       let flag = null == guild;
       if (!flag) {
-        id(guild);
+        guildId(guild);
         flag = false;
       }
       return flag;
@@ -512,7 +512,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore3.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { mute };
     obj3 = HTTPUtils;
@@ -522,7 +522,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore3.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { deaf };
     obj3 = HTTPUtils;
@@ -531,14 +531,14 @@ obj = {
   setChannel(guildId, userId, channel_id) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore3.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
     body = { channel_id };
     HTTP.patch(request);
   },
   setMemberFlags(id, id2, flags) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore3.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
     body = { flags };
     HTTP.patch(request);
   },
@@ -576,7 +576,7 @@ obj = {
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderatorReportId);
     moderatorReportId = moderatorReportId.moderatorReportId;
     const tmp2 = TrackedHTTPUtilsDefault;
-    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
+    const request = { url: authStore3.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
     const patch = tmp2.patch;
     trackedActionData = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: obj2 };
     obj2 = { guild_id: guildId, target_user_id: userId, duration: tmp4, reason: tmp5, communication_disabled_until: communicationDisabledUntilTimestamp, location: tmp6 };
@@ -599,7 +599,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore3.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const put = HTTP.put;
     body = { delete_message_seconds: value, moderator_report_id };
     obj3 = HTTPUtils;
@@ -609,7 +609,7 @@ obj = {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    obj = { url: authStore4.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
+    obj = { url: authStore3.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },
@@ -617,7 +617,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore3.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { user_ids, delete_message_seconds };
     obj3 = HTTPUtils;
@@ -861,7 +861,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore3.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { permissions };
     obj3 = HTTPUtils;

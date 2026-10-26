@@ -1,19 +1,19 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7485
+// Function ID: 7486
 // Name: HeaderActionButton
-// Dependencies: [19, 1206, 21, 5191, 587, 558, 576, 5187, 5484, 5481, 6462, 2]
+// Dependencies: [19, 1206, 21, 4971, 587, 558, 576, 5234, 5250, 5246, 6908, 2]
 
-// Module 7365 (HeaderActionButton)
+// Module 7485 (HeaderActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import IconDefault from "Icon" /* 5481 */;
-import ButtonConstants from "ButtonConstants" /* 5484 */;
-import Pressables from "Pressables" /* 6462 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import IconDefault from "Icon" /* 5246 */;
+import ButtonConstants from "ButtonConstants" /* 5250 */;
+import Pressables from "Pressables" /* 6908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAction
           tmp9 = tmp14;
         }
         const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: ButtonConstants.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
-        const Text = tmp(5187).Text;
+        const Text = tmp(5234).Text;
         const tmp16 = React3(Text, obj2);
         cResult[4] = tmp13;
         cResult[5] = text;

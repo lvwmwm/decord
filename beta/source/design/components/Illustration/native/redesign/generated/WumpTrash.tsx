@@ -1,15 +1,15 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17394
+// Function ID: 17395
 // Name: WumpTrash
-// Dependencies: [19, 21, 8633, 17098, 17099, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8724, 17395, 17396, 558, 576, 4978, 5669, 2]
 // Exports: getWumpTrashSource
 
-// Module 17097 (WumpTrash)
+// Module 17394 (WumpTrash)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import _mod8633 from "module_8633" /* 8633 */;
+import shared from "shared" /* 4978 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWumpTrash
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker };
-    const tmpResult = _mod8633;
+    const tmpResult = _mod8724;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWumpTrash
 }) : (function useWumpTrashSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8633;
+  const obj2 = _mod8724;
   const obj3 = { dark, darker };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WumpTrash(ar
   return <tmp2 source={tmp} />;
 });
 function getWumpTrashSource(theme) {
-  const obj = _mod8633;
+  const obj = _mod8724;
   const obj2 = { dark, darker };
   return obj.getIllustrationSource(theme, obj2);
 }

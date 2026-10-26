@@ -1,17 +1,17 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 13033
+// Function ID: 13034
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5538, 1128, 3141, 5187, 9693, 7155, 12749, 12791, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 6040, 1128, 3088, 5234, 9792, 7278, 6362, 13034, 2]
 
-// Module 12790 (TraitOptionDetails)
+// Module 13033 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3141 from "module_3141" /* 3141 */;
-import RarityBadgeDefault from "RarityBadge" /* 12791 */;
+import _modDef3088 from "module_3088" /* 3088 */;
+import RarityBadgeDefault from "RarityBadge" /* 13034 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5187);
+const Text_Text = tmp(5234);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
@@ -41,77 +41,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   _require = tmp4;
   let tmp5 = null;
   if (!hidden) {
-    let tmp6;
-    if (asset.rarity === tmp(5538).CheckpointTraitRarity.NITRO) {
-      if (true === asset.locked) {
-        let tmp8;
-        if (cResult[0] !== tmp4) {
-          const intl = tmp(1128).intl;
-          const obj2 = {
-            subscribeHook(children, arg1) {
-                      let obj = {
-                        variant: "text-md/medium",
-                        color: "text-subtle",
-                        style: subscribeLink.subscribeLink,
-                        onPress() {
-                          let items;
-                          const obj = { analyticsLocations: items };
-                          items = [];
-                          const tmp = closure_1_1(closure_1_2[11]);
-                          items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
-                          return tmp(obj);
-                        },
-                        accessibilityRole: "link",
-                        children
-                      };
-                      return React3(Text_Text.Text, obj, arg1);
-                    }
-          };
-          const formatResult = intl.format(_modDef3141["3Wq/bk"], obj2);
-          cResult[0] = tmp4;
-          cResult[1] = formatResult;
-          tmp8 = formatResult;
-        } else {
-          tmp8 = cResult[1];
-        }
-        tmp5 = tmp8;
-      }
-    }
-    if (cResult[2] !== asset) {
-      const tmpResult = tmp(12749);
-      const assetDescription = tmpResult.getAssetDescription(asset);
-      cResult[2] = asset;
-      cResult[3] = assetDescription;
-      tmp6 = assetDescription;
-    } else {
-      tmp6 = cResult[3];
-    }
-    tmp5 = tmp6;
-  }
-  if (cResult[4] === tmp5) {
-    let tmp12;
-    if (cResult[5] === null == tmp5) {
-      tmp12 = cResult[6];
-    }
-    return tmp12;
-  }
-  const tmp13 = closure_4(tmp(5187).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
-  cResult[4] = tmp5;
-  cResult[5] = null == tmp5;
-  cResult[6] = tmp13;
-  tmp12 = tmp13;
-}) : (function AssetDescription(asset) {
-  let subscribeLink;
-  asset = asset.asset;
-  const hidden = asset.hidden;
-  _require = closure_7();
-  let tmp = null;
-  if (!hidden) {
-    if (asset.rarity === require("CheckpointTraitRarity").CheckpointTraitRarity.NITRO) {
-      let formatResult;
-      if (true === asset.locked) {
-        const intl = tmp2(1128).intl;
-        let obj = {
+    if (asset.status === tmp(6040).CheckpointTraitOptionStatus.NITRO_LOCKED) {
+      let tmp8;
+      if (cResult[0] !== tmp4) {
+        const intl = tmp(1128).intl;
+        const obj2 = {
           subscribeHook(children, arg1) {
                   let obj = {
                     variant: "text-md/medium",
@@ -131,12 +65,76 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
                   return React3(Text_Text.Text, obj, arg1);
                 }
         };
-        formatResult = intl.format(_modDef3141["3Wq/bk"], obj);
+        const formatResult = intl.format(_modDef3088["3Wq/bk"], obj2);
+        cResult[0] = tmp4;
+        cResult[1] = formatResult;
+        tmp8 = formatResult;
+      } else {
+        tmp8 = cResult[1];
       }
-      tmp = formatResult;
+      tmp5 = tmp8;
+    } else {
+      let tmp6;
+      if (cResult[2] !== asset) {
+        const tmpResult = tmp(6362);
+        const assetDescription = tmpResult.getAssetDescription(asset);
+        cResult[2] = asset;
+        cResult[3] = assetDescription;
+        tmp6 = assetDescription;
+      } else {
+        tmp6 = cResult[3];
+      }
+      tmp5 = tmp6;
     }
-    const tmp2Result = require("CheckpointCustomizationUtils");
-    formatResult = tmp2Result.getAssetDescription(asset);
+  }
+  if (cResult[4] === tmp5) {
+    let tmp12;
+    if (cResult[5] === null == tmp5) {
+      tmp12 = cResult[6];
+    }
+    return tmp12;
+  }
+  const tmp13 = closure_4(tmp(5234).Text, { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp5, children: tmp5 });
+  cResult[4] = tmp5;
+  cResult[5] = null == tmp5;
+  cResult[6] = tmp13;
+  tmp12 = tmp13;
+}) : (function AssetDescription(asset) {
+  let subscribeLink;
+  asset = asset.asset;
+  const hidden = asset.hidden;
+  _require = closure_7();
+  let tmp = null;
+  if (!hidden) {
+    let formatResult;
+    if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
+      const intl = tmp2(1128).intl;
+      let obj = {
+        subscribeHook(children, arg1) {
+              let obj = {
+                variant: "text-md/medium",
+                color: "text-subtle",
+                style: subscribeLink.subscribeLink,
+                onPress() {
+                  let items;
+                  const obj = { analyticsLocations: items };
+                  items = [];
+                  const tmp = closure_1_1(closure_1_2[11]);
+                  items[0] = closure_1_1(closure_1_2[12]).CHECKPOINT;
+                  return tmp(obj);
+                },
+                accessibilityRole: "link",
+                children
+              };
+              return React3(Text_Text.Text, obj, arg1);
+            }
+      };
+      formatResult = intl.format(_modDef3088["3Wq/bk"], obj);
+    } else {
+      const tmp2Result = require("CheckpointCustomizationUtils");
+      formatResult = tmp2Result.getAssetDescription(asset);
+    }
+    tmp = formatResult;
   }
   const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp, children: tmp };
   return closure_4(require("Text/Text").Text, obj2);

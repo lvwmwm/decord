@@ -1,10 +1,10 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13472
+// Function ID: 13473
 // Name: useGuildPowerupColorConfig
 // Dependencies: [587, 2]
 // Exports: default
 
-// Module 13234 (useGuildPowerupColorConfig)
+// Module 13472 (useGuildPowerupColorConfig)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9672
+// Function ID: 9673
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1392, 1087, 1394, 21, 9572, 1128, 9573, 9574, 9575, 4864, 9576, 9577, 9578, 5400, 9766, 2002, 558, 576, 7436, 9694, 5081, 1267, 5155, 9693, 2]
+// Dependencies: [19, 1392, 1087, 1394, 21, 9673, 1128, 9674, 9675, 9676, 2053, 9677, 9678, 9679, 5909, 9864, 2002, 14051, 558, 576, 7557, 9793, 5159, 1267, 5210, 9792, 2]
 // Exports: getUpsellItems
 
-// Module 9571 (PremiumUpsellUtils)
+// Module 9672 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import PremiumUtils from "PremiumUtils" /* 4864 */;
-import ChatInputUtils from "ChatInputUtils" /* 5081 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9572 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9573 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9574 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9575 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9576 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9577 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
+import PremiumUtils from "PremiumUtils" /* 2053 */;
+import ChatInputUtils from "ChatInputUtils" /* 5159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9673 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9674 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9675 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9676 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9677 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9678 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
   } else {
     first = cResult[0];
   }
-  const tmp9 = null != premiumTrialOffer && first.has(arg0);
+  const tmp9 = null != premiumTrialOffer && null != arg0 && first.has(arg0);
   let tmp10 = tmp9;
   if (tmp10) {
     let skuId;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
     tmp10 = skuId === closure_8.TIER_0;
   }
   if (tmp10) {
-    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+    TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_0_LEADING;
   } else {
     if (constants3.UPLOAD !== arg0) {
       if (constants3.ANIMATED_EMOJI !== arg0) {
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
                           const ANIMATED_AVATAR = tmp13.ANIMATED_AVATAR;
                         }
                       }
-                      TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_0_LEADING;
+                      TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_0_LEADING;
                     }
                   }
                 }
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
         }
       }
     }
-    TIER_2_LEADING = tmp(tmp2[20]).PremiumFeatureCardOrder.TIER_2_LEADING;
+    TIER_2_LEADING = tmp(tmp2[21]).PremiumFeatureCardOrder.TIER_2_LEADING;
   }
   if (cResult[1] === _location) {
     if (cResult[2] === arg1) {
@@ -184,19 +184,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
   class P {
     constructor() {
       tmp = closure_2;
-      obj = closure_0(closure_2[21]);
+      obj = closure_0(closure_2[22]);
       bestActiveInput = obj.getBestActiveInput();
       if (bestActiveInput != null) {
         closeCustomKeyboardResult = bestActiveInput.closeCustomKeyboard();
       }
-      obj3 = closure_1(tmp[22]);
+      obj3 = closure_1(tmp[23]);
       obj1 = { location: closure_1 };
       trackResult = obj3.track(AnalyticEvents.PREMIUM_PROMOTION_OPENED, obj1);
-      obj5 = closure_1(tmp[23]);
+      obj5 = closure_1(tmp[24]);
       hideAllActionSheetsResult = obj5.hideAllActionSheets();
       obj8 = { analyticsLocation: null, analyticsLocations: null, premiumFeatureCardOrder: null };
       obj9 = {};
-      tmp5 = closure_1(tmp[24]);
+      tmp5 = closure_1(tmp[25]);
       merged = Object.assign(closure_1);
       obj9.object = AnalyticsObjects.BUTTON_CTA;
       obj8.analyticsLocation = obj9;
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUp
   let items = [, ];
   ({ GLOBAL_EMOJI: arr[0], UPLOAD: arr[1] } = closure_7);
   set = new Set(items);
-  let hasItem = null != premiumTrialOffer;
+  let hasItem = null != premiumTrialOffer && null != arg0;
   if (hasItem) {
     const tmp3 = set;
     hasItem = set.has(arg0);
@@ -385,8 +385,8 @@ let obj = {
         const obj8 = analyticsLocation(analyticsLocations[10]);
         flag = !obj8.canUsePremiumProfileCustomization(currentUser);
       } else if (constants3.APP_ICONS === initialUpsellKey) {
-        const obj7 = analyticsLocation(analyticsLocations[10]);
-        flag = !obj7.canUsePremiumAppIcons(currentUser);
+        const obj7 = initialUpsellKey(analyticsLocations[17]);
+        flag = !obj7.canUseAllAppIcons(currentUser);
       } else if (constants3.GLOBAL_STICKER === initialUpsellKey) {
         const obj6 = analyticsLocation(analyticsLocations[10]);
         flag = !obj6.canUseCustomStickersEverywhere(currentUser);
@@ -414,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(9766, dependencyMap.paths);
+                const promise = asyncRequire(9864, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

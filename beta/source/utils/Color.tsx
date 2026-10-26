@@ -1,9 +1,9 @@
-// Module ID: 5064
-// Function ID: 5065
+// Module ID: 4969
+// Function ID: 4970
 // Name: utils/Color
 // Dependencies: [32, 2]
 
-// Module 5064 (utils/Color)
+// Module 4969 (utils/Color)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

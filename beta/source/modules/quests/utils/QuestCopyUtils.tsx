@@ -1,25 +1,23 @@
-// Module ID: 9495
-// Function ID: 9496
+// Module ID: 9594
+// Function ID: 9595
 // Name: QuestCopyUtils
-// Dependencies: [6228, 1128, 6235, 9476, 9477, 9480, 7672, 7162, 2]
+// Dependencies: [6710, 1128, 6717, 9573, 9576, 7285, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9495 (QuestCopyUtils)
+// Module 9594 (QuestCopyUtils)
 import intl7 from "intl" /* 1128 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9476 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
+import AdCreativeType from "AdCreativeType" /* 6717 */;
+import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import captureAdUserAction from "captureAdUserAction" /* 9573 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
+import QuestConstants from "QuestConstants" /* 6710 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let closure_4;
 ({ QuestHomeSortMethods: c2, RewardFilterTypes: c3, TaskFilterTypes: closure_4 } = QuestConstants);
-let result = size.fileFinishedImporting("modules/quests/utils/QuestCopyUtils.tsx");
+const result = size.fileFinishedImporting("modules/quests/utils/QuestCopyUtils.tsx");
 
 export const getContextualEntrypointHeading = function getContextualEntrypointHeading(taskDetails) {
   let quest;
@@ -181,21 +179,11 @@ export const getCtaLink = function getCtaLink(config) {
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  const obj = AdAnalyticsInterfaceExperiment;
-  if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    const captureAdUserAction = captureAdUserAction2.captureAdUserAction;
-    captureAdUserAction2;
-    ({ content: obj4.surfaceId, sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = ctaContent);
-    captureAdUserAction(obj2);
-  } else {
-    const obj5 = { questId: id, questContent: ctaContent.content, questContentCTA: ctaContent, questContentPosition: null, impressionId: null, sourceQuestContent: null };
-    ({ position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = ctaContent);
-    const tmpResult3 = AnalyticsActions;
-    const result = tmpResult3.trackQuestContentClicked(obj5);
-  }
-  const tmpResult4 = ClipboardUtils;
-  tmpResult4.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
+  const obj = captureAdUserAction;
+  const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent, surfaceId: ctaContent.content, sourceQuestContent: ctaContent.sourceQuestContent, questContentPosition: ctaContent.position, impressionId: ctaContent.impressionId };
+  obj.captureAdUserAction(obj2);
+  const obj3 = ClipboardUtils;
+  obj3.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
 };
 export const getDefaultReward = function getDefaultReward(config) {
   if (0 === config.rewardsConfig.rewards.length) {

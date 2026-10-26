@@ -1,12 +1,12 @@
-// Module ID: 9422
-// Function ID: 9423
+// Module ID: 9521
+// Function ID: 9522
 // Name: PromotionRecord
-// Dependencies: [1407, 9423, 9457, 1405, 2]
+// Dependencies: [1407, 9522, 9558, 1405, 2]
 
-// Module 9422 (PromotionRecord)
+// Module 9521 (PromotionRecord)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import Record from "Record" /* 1407 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9423 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9522 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ class PromotionRecord extends Record {
     tmp3.allowedCountries = allowedCountries;
     let BLOCKLIST = inboundRestrictedCountries.countryListMode;
     if (BLOCKLIST == null) {
-      BLOCKLIST = require("promotions/constants").CountryListMode.BLOCKLIST;
+      BLOCKLIST = require("constants").CountryListMode.BLOCKLIST;
     }
     tmp3.countryListMode = BLOCKLIST;
     ({ promotionType: tmp3.promotionType, partnerId: tmp3.partnerId, marketingComponents: tmp3.marketingComponents, rewardSkuIds: tmp3.rewardSkuIds, bogoRewardEnabled } = inboundRestrictedCountries);
@@ -231,15 +231,15 @@ class PromotionRecord extends Record {
   }
   isCountryRestricted(arg0) {
     const self = this;
-    if (this.countryListMode === require("promotions/constants").CountryListMode.ALLOWLIST) {
+    if (this.countryListMode === require("constants").CountryListMode.ALLOWLIST) {
       const allowedCountries = self.allowedCountries;
       return !allowedCountries.includes(arg0);
     } else {
       const promotionType = self.promotionType;
-      if (require("promotions/constants").PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-        if (require("promotions/constants").PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-          if (require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-            if (require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+      if (require("constants").PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+        if (require("constants").PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+          if (require("constants").PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+            if (require("constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
               return false;
             }
           }
@@ -255,13 +255,13 @@ class PromotionRecord extends Record {
 const prototype = PromotionRecord.prototype;
 Object.defineProperty(prototype, "isBogo", {
   get: function isBogo() {
-    return this.promotionType === require("promotions/constants").PromotionTypes.BOGO;
+    return this.promotionType === require("constants").PromotionTypes.BOGO;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMarketingMoment", {
   get: function isMarketingMoment() {
-    return this.promotionType === require("promotions/constants").PromotionTypes.MARKETING_MOMENT;
+    return this.promotionType === require("constants").PromotionTypes.MARKETING_MOMENT;
   },
   set: undefined
 });

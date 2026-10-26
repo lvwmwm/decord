@@ -1,19 +1,19 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11857
+// Function ID: 11858
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11683, 5128, 1417, 8506, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 11858, 5669, 1417, 8577, 2]
 
-// Module 11682 (ConjureProjectIcon)
+// Module 11857 (ConjureProjectIcon)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import AppsIcon2 from "AppsIcon" /* 8506 */;
-import useConjureProjectIconDefault from "useConjureProjectIcon" /* 11683 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import AppsIcon2 from "AppsIcon" /* 8577 */;
+import useConjureProjectIconDefault from "useConjureProjectIcon" /* 11858 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = { header: 20, list: 32 };
+let closure_7 = { header: 20, list: 32, card: 40 };
 let closure_8 = createStyles.createStyles((width, borderRadius, width2) => {
   let obj3;
   const obj = { frame: { width, height: width, borderRadius, overflow: "hidden", alignItems: "center", justifyContent: "center" }, placeholder: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG }, image: { width, height: width }, border: obj3, glyph: { width: width2, height: width2 } };
@@ -88,7 +88,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
       tmp12 = hasOwnProperty(tmp5Result, obj4);
     } else {
       const obj5 = { size: "custom", style: tmp7.glyph, color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const AppsIcon = tmp(8506).AppsIcon;
+      const AppsIcon = tmp(8577).AppsIcon;
       tmp12 = hasOwnProperty(AppsIcon, obj5);
     }
     cResult[3] = tmp7.glyph;

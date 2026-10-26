@@ -1,26 +1,29 @@
-// Module ID: 18562
-// Function ID: 18563
+// Module ID: 18868
+// Function ID: 18869
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 10809, 10810, 1087, 504, 1104, 18563, 2]
+// Dependencies: [5, 11028, 11029, 1087, 504, 1104, 11319, 11320, 2]
 
-// Module 18562 (useGameOrganizationInviteFetch)
+// Module 18868 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10810 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 18563 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11029 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11319 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11320 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10809 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11028 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
+let obj2;
 const constants = GameOrganizationInviteConstants.GameOrganizationInviteStates;
 const QueryIds = Constants.QueryIds;
 let obj = {
   getQueryId: QueryIds.GAME_ORGANIZATION_INVITE,
   staleAfter: 5 * DurationsDefault.Seconds.MINUTE,
   failureStaleAfter: 5 * DurationsDefault.Seconds.MINUTE,
+  retryConfig: obj2,
   get(arg0) {
     const invite = GameOrganizationInviteStore.getInvite(arg0);
     let state;
@@ -38,6 +41,7 @@ let obj = {
   }
 };
 const createFetchStore = get_initialized.createFetchStore;
+obj2 = { retryableErrors: isRetryableFetchErrorDefault };
 let closure_2 = _asyncToGenerator(async (arg0, value) => {
   let obj2;
   let closure_0 = arg0;

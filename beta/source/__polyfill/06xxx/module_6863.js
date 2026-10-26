@@ -1,155 +1,83 @@
 // Module ID: 6863
 // Function ID: 6864
-// Dependencies: [17, 19, 21, 6831, 6864, 6865, 6866]
-// Exports: useSecondaryProps
+// Dependencies: []
 
 // Module 6863
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 6864 */;
-import react3 from "react" /* 6865 */;
-import react_native2 from "react-native" /* 6866 */;
-import react_native3 from "react-native" /* 17 */;
-
-const react = react2;
-
-let c2;
-let c3;
-({ Animated: c2, RefreshControl: c3 } = react_native3);
-const useMemo = react2.useMemo;
-const jsx = Fragment.jsx;
-
-export const useSecondaryProps = function useSecondaryProps(ListHeaderComponent) {
-  let items5;
-  let tmp;
-  let tmp5Result;
-  ListHeaderComponent = ListHeaderComponent.ListHeaderComponent;
-  const ListHeaderComponentStyle = ListHeaderComponent.ListHeaderComponentStyle;
-  const ListFooterComponent = ListHeaderComponent.ListFooterComponent;
-  const ListFooterComponentStyle = ListHeaderComponent.ListFooterComponentStyle;
-  const ListEmptyComponent = ListHeaderComponent.ListEmptyComponent;
-  const ListEmptyComponentStyle = ListHeaderComponent.ListEmptyComponentStyle;
-  const renderScrollComponent = ListHeaderComponent.renderScrollComponent;
-  const refreshing = ListHeaderComponent.refreshing;
-  const progressViewOffset = ListHeaderComponent.progressViewOffset;
-  const onRefresh = ListHeaderComponent.onRefresh;
-  const data = ListHeaderComponent.data;
-  const refreshControl = ListHeaderComponent.refreshControl;
-  const stickyHeaderConfig = ListHeaderComponent.stickyHeaderConfig;
-  let invertedTransformStyle;
-  if (ListHeaderComponent.inverted) {
-    let tmp3 = ListHeaderComponent;
-    let tmp4 = ListHeaderComponentStyle;
-    let obj = ListHeaderComponent(ListHeaderComponentStyle[3]);
-    invertedTransformStyle = obj.getInvertedTransformStyle(tmp);
-  }
-  const tmp5 = ListEmptyComponentStyle;
-  let items = [onRefresh, refreshing, progressViewOffset, refreshControl];
-  const items1 = [ListHeaderComponent, ListHeaderComponentStyle, invertedTransformStyle];
-  const items2 = [ListFooterComponent, ListFooterComponentStyle, invertedTransformStyle];
-  const tmp6 = ListEmptyComponentStyle(() => {
-    let tmp = refreshControl;
-    if (!tmp) {
-      let tmp3;
-      if (onRefresh) {
-        const _Boolean = Boolean;
-        tmp3 = <_false refreshing={Boolean(refreshing)} progressViewOffset={progressViewOffset} onRefresh={tmp2} />;
-      }
-      tmp = tmp3;
+module.exports.parse = (arg0) => {
+  let obj7;
+  let tmp5;
+  const obj = /^(?:(en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang))$|^((?:[a-z]{2,3}(?:(?:-[a-z]{3}){1,3})?)|[a-z]{4}|[a-z]{5,8})(?:-([a-z]{4}))?(?:-([a-z]{2}|\d{3}))?((?:-(?:[\da-z]{5,8}|\d[\da-z]{3}))*)?((?:-[\da-wy-z](?:-[\da-z]{2,8})+)*)?(-x(?:-[\da-z]{1,8})+)?$|^(x(?:-[\da-z]{1,8})+)$/i;
+  const match = obj.exec(arg0);
+  if (match) {
+    match.shift();
+    let items = [];
+    if (match[2]) {
+      const str = match[2];
+      const parts = str.split("-");
+      const arr2 = parts.shift();
+      items = parts;
     }
-    return tmp;
-  }, items);
-  let tmp7 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListHeaderComponent) {
-      const items = [ListHeaderComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
+    let items1 = [];
+    if (match[5]) {
+      const str3 = match[5];
+      const parts1 = str3.split("-");
+      parts1.shift();
+      items1 = parts1;
     }
-    return tmp2;
-  }, items1);
-  const items3 = [ListEmptyComponent, data, invertedTransformStyle, ListEmptyComponentStyle];
-  const tmp8 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListFooterComponent) {
-      const items = [ListFooterComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items2);
-  let backdropComponent;
-  const tmp9 = ListEmptyComponentStyle(() => {
-    if (ListEmptyComponent) {
+    const items2 = [];
+    if (match[6]) {
+      const str5 = match[6];
+      const parts2 = str5.split("-");
+      parts2.shift();
+      let items3 = [];
+      let tmp6 = items3;
       let tmp7;
-      const obj = react3;
-      const validComponent = obj.getValidComponent(tmp);
-      const tmp2 = require;
-      if (invertedTransformStyle) {
-        const items = [ListEmptyComponentStyle, tmp5];
-        tmp7 = jsx(tmp2(6864).CompatView, { style: items, children: validComponent });
-      } else {
-        tmp7 = validComponent;
-      }
-      return tmp7;
-    }
-    return null;
-  }, items3);
-  if (stickyHeaderConfig != null) {
-    backdropComponent = stickyHeaderConfig.backdropComponent;
-  }
-  const items4 = [backdropComponent, invertedTransformStyle];
-  let obj2 = {
-    refreshControl: tmp6,
-    renderHeader: tmp7,
-    renderFooter: tmp8,
-    renderEmpty: tmp9,
-    CompatScrollView: tmp5(() => {
-      let forwardRefResult;
-      const CompatAnimatedScroller = react_native2.CompatAnimatedScroller;
-      if (typeof renderScrollComponent === "function") {
-        const tmpResult = react3;
-        if (!tmpResult.isComponentClass(renderScrollComponent)) {
-          forwardRefResult = react.forwardRef((arg0, ref) => {
-            const obj = { ref };
-            const merged = Object.assign(arg0);
-            return renderScrollComponent(obj);
-          });
-          forwardRefResult.displayName = "CustomScrollView";
+      while (parts2.length) {
+        let items4;
+        let tmp11;
+        let arr5 = parts2.shift();
+        if (1 === arr5.length) {
+          items4 = items3;
+          tmp11 = arr5;
+          if (tmp5) {
+            let obj2 = { singleton: tmp5, extension: items3 };
+            let arr6 = items2.push(obj2);
+            items4 = [];
+            tmp11 = arr5;
+          }
+        } else {
+          let arr7 = items3.push(arr5);
+          items4 = items3;
+          tmp11 = tmp5;
         }
-        return React2.createAnimatedComponent(forwardRefResult);
+        items3 = items4;
+        tmp5 = tmp11;
+        tmp6 = items4;
+        tmp7 = tmp11;
       }
-      forwardRefResult = CompatAnimatedScroller;
-      if (renderScrollComponent) {
-        forwardRefResult = tmp3;
-      }
-    }, items5),
-    renderStickyHeaderBackdrop: tmp5Result
-  };
-  items5 = [renderScrollComponent];
-  tmp5Result = tmp5(() => {
-    let backdropComponent1;
-    let getValidComponent;
-    let items;
-    let backdropComponent;
-    if (stickyHeaderConfig != null) {
-      backdropComponent = tmp.backdropComponent;
+      const obj3 = { singleton: tmp7, extension: tmp6 };
+      items2.push(obj3);
     }
-    let tmp4Result = null;
-    if (backdropComponent) {
-      const obj = { style: items, children: getValidComponent(backdropComponent1) };
-      items = [{ position: "absolute", inset: 0, pointerEvents: "none" }, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      backdropComponent1 = undefined;
-      getValidComponent = react3.getValidComponent;
-      react3;
-      const tmp4 = jsx;
-      if (stickyHeaderConfig != null) {
-        backdropComponent1 = tmp.backdropComponent;
-      }
-      tmp4Result = tmp4(CompatView, obj);
+    let items5 = [];
+    if (match[7]) {
+      const str7 = match[7];
+      const parts3 = str7.split("-");
+      parts3.shift();
+      parts3.shift();
+      items5 = parts3;
     }
-    return tmp4Result;
-  }, items4);
-  return obj2;
+    let items6 = [];
+    if (match[8]) {
+      const str9 = match[8];
+      const parts4 = str9.split("-");
+      parts4.shift();
+      items6 = parts4;
+    }
+    const obj4 = { language: obj5, script: match[3] || null, region: tmp17, variant: items1, extension: items2, privateuse: items5 };
+    const obj6 = { langtag: obj4, privateuse: items6, grandfathered: obj7 };
+    obj7 = { irregular: tmp18, regular: match[1] || null };
+    return obj6;
+  } else {
+    return null;
+  }
 };

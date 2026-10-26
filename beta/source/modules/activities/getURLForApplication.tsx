@@ -1,12 +1,14 @@
-// Module ID: 6299
-// Function ID: 6300
+// Module ID: 5623
+// Function ID: 5624
 // Name: getURLForApplication
-// Dependencies: [6300, 6311, 2]
-// Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
+// Dependencies: [32, 5624, 5625, 1386, 2]
+// Exports: default, getApplicationRouterOrigin, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 6299 (getURLForApplication)
-import TestModeStore from "TestModeStore" /* 6300 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 6311 */;
+// Module 5623 (getURLForApplication)
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import TestModeStore from "TestModeStore" /* 5624 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5625 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
@@ -69,6 +71,50 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
   } else {
     const _HermesInternal = HermesInternal;
     return "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
+  }
+};
+export const getApplicationRouterOrigin = function getApplicationRouterOrigin(url) {
+  const obj = URLUtilsDefault;
+  const toURLSafeResult = obj.toURLSafe(url);
+  if (null == toURLSafeResult) {
+    return null;
+  } else {
+    const str4 = toURLSafeResult.hostname;
+    const str6 = _slicedToArray(str4.split(".", 1), 1)[0];
+    const first = _slicedToArray(str6.split("--", 1), 1)[0];
+    const _window3 = window;
+    let origin = null;
+    if (null != ACTIVITY_APPLICATION_HOST) {
+      if (ACTIVITY_APPLICATION_HOST.startsWith("//")) {
+        const _URL = URL;
+        const _window = window;
+        const _window2 = window;
+        const _HermesInternal2 = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const uRL = new URL(ACTIVITY_APPLICATION_HOST, "" + window.location.protocol + "//" + window.location.host);
+        const _HermesInternal3 = HermesInternal;
+        uRL.hostname = "" + first + "." + uRL.hostname;
+        origin = uRL.origin;
+      } else {
+        const _HermesInternal = HermesInternal;
+        origin = "https://" + first + "." + ACTIVITY_APPLICATION_HOST;
+      }
+    }
+    let origin2 = null;
+    if (null != origin) {
+      const tmpResult = URLUtilsDefault;
+      const toURLSafeResult1 = tmpResult.toURLSafe(origin);
+      let origin1;
+      if (toURLSafeResult1 != null) {
+        origin1 = toURLSafeResult1.origin;
+      }
+      origin2 = null;
+      if (origin1 === toURLSafeResult.origin) {
+        origin2 = toURLSafeResult.origin;
+      }
+    }
+    return origin2;
   }
 };
 export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {

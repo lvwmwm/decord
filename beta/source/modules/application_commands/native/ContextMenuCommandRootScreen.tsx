@@ -1,20 +1,20 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18324
+// Function ID: 18325
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2090, 5503, 21, 5191, 587, 558, 576, 504, 9555, 10107, 10101, 6942, 7015, 10839, 1128, 5187, 18019, 7016, 7021, 2]
+// Dependencies: [32, 19, 17, 4845, 5983, 21, 4971, 587, 558, 576, 504, 9656, 10204, 10198, 5593, 7144, 11059, 1128, 5234, 18325, 7145, 7150, 2]
 
-// Module 18018 (ContextMenuCommandRootScreen)
+// Module 18324 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import executeCommandDefault from "executeCommand" /* 10101 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import executeCommandDefault from "executeCommand" /* 10198 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -570,7 +570,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
   tmp12 = items7;
   tmp11 = H;
 }) : (function ContextMenuCommandRootScreen(navigation) {
-  let SearchField;
+  let SearchBar;
   let intl;
   let items13;
   let items2;
@@ -833,9 +833,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
     }
     const obj7 = { marginBottom: num2 };
     items12[1] = obj7;
-    const obj6 = { style: items12, children: sectionDescriptors(SearchField, obj8) };
+    const obj6 = { style: items12, children: sectionDescriptors(SearchBar, obj8) };
     obj8 = { size: "md", onChange: tmp6, placeholder: intl.string(tmp(tmp2[17]).t.m1UwbP) };
-    SearchField = tmp(tmp2[20]).SearchField;
+    SearchBar = tmp(tmp2[20]).SearchBar;
     intl = tmp(tmp2[17]).intl;
     tmp29Result = tmp29(tmp30, obj6);
   }

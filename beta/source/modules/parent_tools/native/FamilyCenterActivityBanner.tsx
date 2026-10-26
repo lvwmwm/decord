@@ -1,22 +1,22 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 16167
+// Function ID: 16168
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5191, 558, 576, 8005, 8006, 15922, 587, 1128, 2589, 12665, 15929, 15930, 5128, 5187, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 8125, 8126, 16168, 587, 1128, 2536, 12883, 16175, 16176, 5669, 5234, 2]
 
-// Module 15921 (FamilyCenterActivityBanner)
+// Module 16167 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useUserLinks from "useUserLinks" /* 8005 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12665 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import FastImageDefault from "FastImage" /* 5669 */;
+import useUserLinks from "useUserLinks" /* 8125 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8126 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12883 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const FamilyCenterBannerButton = tmp(15922);
+const FamilyCenterBannerButton = tmp(16168);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -112,9 +112,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const hasMaxConnections = obj2.useHasMaxConnections();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef2589["T7GyW+"]);
+    const stringResult = intl.string(_modDef2536["T7GyW+"]);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef2589.goKE2b);
+    const stringResult1 = intl2.string(_modDef2536.goKE2b);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp8 = stringResult;
@@ -126,9 +126,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp8, tmp9);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1128).intl;
-    const formatResult = intl3.format(_modDef2589.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
+    const formatResult = intl3.format(_modDef2536.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
     const intl4 = tmp(1128).intl;
-    const formatResult1 = intl4.format(_modDef2589.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" });
+    const formatResult1 = intl4.format(_modDef2536.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" });
     cResult[2] = formatResult;
     cResult[3] = formatResult1;
     tmp14 = formatResult1;
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   const tmpResult2 = useAgeSpecificText3;
   const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 15929 : 15930);
+  const tmp4Result = importDefault(tmp5 ? 16175 : 16176);
   if (cResult[4] === tmp6.art) {
     let tmp19;
     if (cResult[5] === tmp4Result) {
@@ -220,17 +220,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl = intl5.intl;
-  const stringResult = intl.string(_modDef2589["T7GyW+"]);
+  const stringResult = intl.string(_modDef2536["T7GyW+"]);
   const intl2 = intl5.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2589.goKE2b));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2536.goKE2b));
   const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl3 = intl5.intl;
-  const formatResult = intl3.format(_modDef2589.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
+  const formatResult = intl3.format(_modDef2536.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2589.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 15929 : 15930), style: tmp4.art };
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2536.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  const obj3 = { source: importDefault(tmp3 ? 16175 : 16176), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

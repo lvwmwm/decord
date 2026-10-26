@@ -11,13 +11,14 @@ const require = globalThis.__r;
 let _require, importDefault, navigation;
 
 
-export const usePreventRemove = function usePreventRemove(stateFromStores, arg1) {
+export const usePreventRemove = function usePreventRemove(arg0, arg1) {
+  let closure_0;
   let closure_1;
   let key;
-  _require = stateFromStores;
+  _require = arg0;
   importDefault = arg1;
   const first = navigation(key.useState(() => {
-    const obj = stateFromStores(first[2]);
+    const obj = closure_0(first[2]);
     return obj.nanoid();
   }), 1)[0];
   let obj = require("module_1548");
@@ -28,14 +29,14 @@ export const usePreventRemove = function usePreventRemove(stateFromStores, arg1)
   const preventRemoveContext = obj3.usePreventRemoveContext();
   const setPreventRemove = preventRemoveContext.setPreventRemove;
   const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, stateFromStores];
+  const items = [setPreventRemove, first, key, arg0];
   const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, stateFromStores);
+    setPreventRemove(first, key, closure_0);
     return () => {
       setPreventRemove(first, key, false);
     };
   }, items);
-  const items1 = [first, key, stateFromStores, notifyPreventRemove];
+  const items1 = [first, key, arg0, notifyPreventRemove];
   const effect = key.useEffect(() => {
     notifyPreventRemove();
     return () => {
@@ -43,7 +44,7 @@ export const usePreventRemove = function usePreventRemove(stateFromStores, arg1)
     };
   }, items1);
   const tmp6 = require("useLatestCallback")((preventDefault) => {
-    const tmp = stateFromStores;
+    const tmp = closure_0;
     if (tmp) {
       preventDefault.preventDefault();
       const obj = { data: preventDefault.data };

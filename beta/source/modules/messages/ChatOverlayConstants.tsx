@@ -1,9 +1,9 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 11022
+// Function ID: 11023
 // Name: ChatOverlayConstants
 // Dependencies: [2]
 
-// Module 10802 (ChatOverlayConstants)
+// Module 11022 (ChatOverlayConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/ChatOverlayConstants.tsx");

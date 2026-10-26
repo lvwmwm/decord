@@ -1,14 +1,14 @@
-// Module ID: 6303
-// Function ID: 6304
+// Module ID: 2046
+// Function ID: 2047
 // Name: EntitlementRecord
-// Dependencies: [1407, 6304, 1406, 1087, 4864, 6308, 2]
+// Dependencies: [1407, 2047, 1406, 1087, 2053, 15296, 2]
 
-// Module 6303 (EntitlementRecord)
+// Module 2046 (EntitlementRecord)
 import Constants from "Constants" /* 1087 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 6308 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15296 */;
 import Record from "Record" /* 1407 */;
-import SKURecord from "SKURecord" /* 6304 */;
+import SKURecord from "SKURecord" /* 2047 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 

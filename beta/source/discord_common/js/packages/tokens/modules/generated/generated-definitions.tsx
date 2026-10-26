@@ -11,6 +11,7 @@ let obj12;
 let obj13;
 let obj14;
 let obj15;
+let obj16;
 let obj2;
 let obj3;
 let obj4;
@@ -20,28 +21,67 @@ let obj7;
 let obj8;
 let obj9;
 const obj = { Modules: obj2 };
-obj2 = { button: obj3, channels: obj5, chat: obj6, control: obj7, form: obj8, guildbar: obj9, icon: obj10, menu: obj11, mobile: obj12, modal: obj13, select: obj14, toast: obj15 };
-obj3 = {
-  BORDER_RADIUS: obj4,
-  BORDER_RADIUS_LG: {
-    resolve(enabledExperiments) {
-      enabledExperiments = enabledExperiments.enabledExperiments;
+obj2 = { badge: obj3, button: obj5, channels: obj6, chat: obj7, control: obj8, form: obj9, guildbar: obj10, icon: obj11, menu: obj12, mobile: obj13, modal: obj14, select: obj15, toast: obj16 };
+obj3 = { BORDER_WIDTH: obj4 };
+obj10 = {
+  AVATAR_SIZE: {
+    resolve(arg0) {
+      let density;
+      let enabledExperiments;
+      ({ enabledExperiments, density } = arg0);
       if (0 === enabledExperiments.length) {
-        return 2147483647;
+        return 40;
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
-          if ("mobile-visual-refresh" === iter.next()) {
+          if ("refresh-fast-follow-avatars" === iter.next()) {
+            let str2 = "compact";
+            if ("compact" !== density) {
+              let str3 = "default";
+              if ("default" !== density) {
+                let str4 = "cozy";
+              }
+              iter.return();
+              return 44;
+            }
             iter.return();
-            return 12;
+            return 40;
           }
         }
-        return 2147483647;
+        return 40;
+      }
+    }
+  },
+  FOLDER_SIZE: {
+    resolve(arg0) {
+      let density;
+      let enabledExperiments;
+      ({ enabledExperiments, density } = arg0);
+      if (0 === enabledExperiments.length) {
+        return 48;
+      } else {
+        const iter = enabledExperiments[Symbol.iterator]();
+        while (iter !== undefined) {
+          if ("refresh-fast-follow-avatars" === iter.next()) {
+            let str2 = "compact";
+            if ("compact" !== density) {
+              let str3 = "default";
+              if ("default" !== density) {
+                let str4 = "cozy";
+              }
+              iter.return();
+              return 52;
+            }
+            iter.return();
+            return 48;
+          }
+        }
+        return 48;
       }
     }
   }
 };
-obj10 = {
+obj11 = {
   SIZE_LG: {
     resolve() {
       return 32;
@@ -68,7 +108,7 @@ obj10 = {
     }
   }
 };
-obj11 = {
+obj12 = {
   BORDER_WIDTH: {
     resolve() {
       return 1;
@@ -80,7 +120,7 @@ obj11 = {
     }
   }
 };
-obj12 = {
+obj13 = {
   BOUNTY_TILE_BORDER_RADIUS: {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
@@ -2623,7 +2663,7 @@ obj12 = {
     }
   }
 };
-obj13 = {
+obj14 = {
   HORIZONTAL_PADDING: {
     resolve() {
       return 24;
@@ -2650,7 +2690,7 @@ obj13 = {
     }
   }
 };
-obj14 = {
+obj15 = {
   MAX_WIDTH: {
     resolve() {
       return 248;
@@ -2662,7 +2702,7 @@ obj14 = {
     }
   }
 };
-obj15 = {
+obj16 = {
   ANIMATION_DURATION_MS: {
     resolve() {
       return 300;
@@ -2688,20 +2728,56 @@ obj4 = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
-      return 2147483647;
+      return 0;
     } else {
       const iter = enabledExperiments[Symbol.iterator]();
       while (iter !== undefined) {
-        if ("mobile-visual-refresh" === iter.next()) {
+        if ("mana-badge-refresh" === iter.next()) {
           iter.return();
-          return 8;
+          return 1;
         }
       }
-      return 2147483647;
+      return 0;
     }
   }
 };
 obj5 = {
+  BORDER_RADIUS: {
+    resolve(enabledExperiments) {
+      enabledExperiments = enabledExperiments.enabledExperiments;
+      if (0 === enabledExperiments.length) {
+        return 2147483647;
+      } else {
+        const iter = enabledExperiments[Symbol.iterator]();
+        while (iter !== undefined) {
+          if ("mobile-visual-refresh" === iter.next()) {
+            iter.return();
+            return 8;
+          }
+        }
+        return 2147483647;
+      }
+    }
+  },
+  BORDER_RADIUS_LG: {
+    resolve(enabledExperiments) {
+      enabledExperiments = enabledExperiments.enabledExperiments;
+      if (0 === enabledExperiments.length) {
+        return 2147483647;
+      } else {
+        const iter = enabledExperiments[Symbol.iterator]();
+        while (iter !== undefined) {
+          if ("mobile-visual-refresh" === iter.next()) {
+            iter.return();
+            return 12;
+          }
+        }
+        return 2147483647;
+      }
+    }
+  }
+};
+obj6 = {
   NAME_LINE_HEIGHT: {
     resolve(density) {
       density = density.density;
@@ -2748,7 +2824,7 @@ obj5 = {
     }
   }
 };
-obj6 = {
+obj7 = {
   AVATAR_SIZE: {
     resolve() {
       return 40;
@@ -2770,7 +2846,7 @@ obj6 = {
     }
   }
 };
-obj7 = {
+obj8 = {
   INPUT_HEIGHT_MD: {
     resolve() {
       return 40;
@@ -2792,68 +2868,10 @@ obj7 = {
     }
   }
 };
-obj8 = {
+obj9 = {
   INPUT_HEIGHT: {
     resolve() {
       return 44;
-    }
-  }
-};
-obj9 = {
-  AVATAR_SIZE: {
-    resolve(arg0) {
-      let density;
-      let enabledExperiments;
-      ({ enabledExperiments, density } = arg0);
-      if (0 === enabledExperiments.length) {
-        return 40;
-      } else {
-        const iter = enabledExperiments[Symbol.iterator]();
-        while (iter !== undefined) {
-          if ("refresh-fast-follow-avatars" === iter.next()) {
-            let str2 = "compact";
-            if ("compact" !== density) {
-              let str3 = "default";
-              if ("default" !== density) {
-                let str4 = "cozy";
-              }
-              iter.return();
-              return 44;
-            }
-            iter.return();
-            return 40;
-          }
-        }
-        return 40;
-      }
-    }
-  },
-  FOLDER_SIZE: {
-    resolve(arg0) {
-      let density;
-      let enabledExperiments;
-      ({ enabledExperiments, density } = arg0);
-      if (0 === enabledExperiments.length) {
-        return 48;
-      } else {
-        const iter = enabledExperiments[Symbol.iterator]();
-        while (iter !== undefined) {
-          if ("refresh-fast-follow-avatars" === iter.next()) {
-            let str2 = "compact";
-            if ("compact" !== density) {
-              let str3 = "default";
-              if ("default" !== density) {
-                let str4 = "cozy";
-              }
-              iter.return();
-              return 52;
-            }
-            iter.return();
-            return 48;
-          }
-        }
-        return 48;
-      }
     }
   }
 };

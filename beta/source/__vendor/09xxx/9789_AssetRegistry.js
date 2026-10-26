@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BlushIcon", width: 60, height: 60, scales: [2, 3], hash: "def0b6d35103453cf4894471df6b84ad", name: "BlushIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", name: "wumpus-mario", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 7436
-// Function ID: 7437
+// Module ID: 7557
+// Function ID: 7558
 // Name: usePremiumTrialOffer
-// Dependencies: [558, 7437, 2]
+// Dependencies: [558, 7558, 2]
 // Exports: usePremiumTrialOffer
 
-// Module 7436 (usePremiumTrialOffer)
-import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 7437 */;
+// Module 7557 (usePremiumTrialOffer)
+import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 7558 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

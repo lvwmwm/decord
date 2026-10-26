@@ -1,18 +1,18 @@
-// Module ID: 19074
-// Function ID: 19075
+// Module ID: 19409
+// Function ID: 19410
 // Name: ApplicationStreamingManager
-// Dependencies: [19, 5371, 5311, 5216, 21, 3, 19075, 5400, 19076, 2002, 11446, 5343, 2]
+// Dependencies: [19, 5879, 5814, 5718, 21, 3, 19410, 5909, 19411, 2002, 11599, 5851, 2]
 
-// Module 19074 (ApplicationStreamingManager)
+// Module 19409 (ApplicationStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 5216 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11446 */;
+import Constants from "Constants" /* 5718 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
+import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11599 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5371 */;
-import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19075 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5879 */;
+import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19410 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ class ApplicationStreamingManager extends ApplicationStreamingManager2 {
       const obj2 = { desktopSettings: obj3, qualityOptions: obj4, context: MediaEngineContextTypes.STREAM };
       obj3 = { sourceId, sound: soundshareEnabled };
       obj4 = { preset, resolution, frameRate: fps };
-      const tmp4Result = tmp4(5343);
+      const tmp4Result = tmp4(5851);
       tmp4Result.setGoLiveSource(obj2);
     } else {
       const _HermesInternal = HermesInternal;

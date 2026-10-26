@@ -1,17 +1,17 @@
-// Module ID: 6332
-// Function ID: 6333
+// Module ID: 6784
+// Function ID: 6785
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2128, 2074, 4840, 12, 11, 504, 584, 2]
+// Dependencies: [502, 4883, 4829, 4898, 12, 11, 504, 584, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6332 (GuildScheduledEventStore)
+// Module 6784 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4840 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4898 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_13;
@@ -584,19 +584,6 @@ let obj2 = {
       closure_9 = closure_9 + 1;
       return true;
     }
-  },
-  GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: function handleGuildScheduledEventExceptionsDelete(eventId) {
-    const value = secondaryIndexMap.get(eventId.eventId);
-    let flag = null != value;
-    const obj = secondaryIndexMap;
-    if (flag) {
-      const obj2 = { guild_scheduled_event_exceptions: [] };
-      const merged = Object.assign(value);
-      const result = obj.set(obj2.id, obj2);
-      closure_9 = closure_9 + 1;
-      flag = true;
-    }
-    return flag;
   },
   LOGOUT: function handleLogout() {
     secondaryIndexMap.clear();

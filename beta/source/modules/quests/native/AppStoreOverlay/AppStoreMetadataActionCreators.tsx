@@ -1,18 +1,25 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 14107
+// Function ID: 14108
 // Name: AppStoreMetadataActionCreators
-// Dependencies: [5, 1087, 1104, 584, 1297, 569, 2]
+// Dependencies: [5, 2068, 1087, 1104, 584, 1297, 569, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 13877 (AppStoreMetadataActionCreators)
+// Module 14107 (AppStoreMetadataActionCreators)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
 
+function clearMetadataCache() {
+  map.clear();
+  map1.clear();
+  map2.clear();
+  map3.clear();
+}
 function clearRetryState(arg0) {
   map2.delete(arg0);
   map3.delete(arg0);
@@ -24,11 +31,8 @@ const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-const subscription = Dispatcher.subscribe("LOGOUT", () => {
-  map.clear();
-  map1.clear();
-  map3.clear();
-});
+const subscription = Dispatcher.subscribe("LOGOUT", clearMetadataCache);
+LocaleStore.addChangeListener(clearMetadataCache);
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreMetadataActionCreators.tsx");
 
 export const getAppStoreMetadataCacheKey = function getAppStoreMetadataCacheKey(os) {
@@ -97,7 +101,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
                 body = undefined;
                 tmp = undefined;
                 c3 = 2;
-                const HTTP = os(error[4]).HTTP;
+                const HTTP = os(error[5]).HTTP;
                 const request = { url: constants.QUESTS_APP_STORE_METADATA, query: obj4, rejectWithError: true };
                 obj4 = { os, app_id: storeAppId };
                 constants = 3;
@@ -123,7 +127,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
                 if (null == tmp) {
                   const self = this;
                   const self2 = this;
-                  const tmp33 = new tmp(error[5])(c5, closure_1_6);
+                  const tmp33 = new tmp(error[6])(c5, closure_1_6);
                   tmp = tmp33;
                   const result1 = map2.set(closure_129_2, tmp);
                 }

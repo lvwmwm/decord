@@ -1,11 +1,11 @@
-// Module ID: 5299
-// Function ID: 5300
+// Module ID: 5802
+// Function ID: 5803
 // Name: transformStats
-// Dependencies: [5300, 2]
+// Dependencies: [5803, 2]
 // Exports: default
 
-// Module 5299 (transformStats)
-import transformStatsUtils from "transformStatsUtils" /* 5300 */;
+// Module 5802 (transformStats)
+import transformStatsUtils from "transformStatsUtils" /* 5803 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -427,7 +427,7 @@ function transformInboundVideoStats(height, id, id2, playout) {
   if (num4 == null) {
     num4 = 0;
   }
-  const obj = { type: "video", ssrc: height.ssrc, sinkWant: obj2.formatSinkWantStat(id, height.ssrc, true), sinkWantAsInt: obj3.formatSinkWantAsInt(id, height.ssrc), sinkWantLocal: obj4.formatSinkWantStat(id, height.ssrc, true), sinkWantLocalAsInt: obj5.formatSinkWantAsInt(id, height.ssrc), codec: { id: height.codecPayloadType, name: height.codecName }, bytesReceived: tmp, packetsReceived: sum1, packetsLost, fractionLost: height.rtcpStats.fractionLost, bitrate: null, jitterBuffer: null, currentDelay: null, targetDelay: null, minPlayoutDelay: null, renderDelay: null, averageDecodeTime: null, totalDecodeTime: null, resolution: { height: height.height, width: height.width }, decoderImplementationName: null, framesDecoded: null, framesDropped: null, framesDecodeErrors: null, framesReceived: height.frameCounts.keyFrames + height.frameCounts.deltaFrames, networkFramesDropped: num5, keyFramesDecoded: height.frameCounts.keyFrames, frameRateDecode: null, frameRateNetwork: null, frameRateRender: null, firCount: height.rtcpStats.firPackets, nackCount: height.rtcpStats.nackPackets, pliCount: height.rtcpStats.pliPackets, qpSum: null, freezeCount: null, pauseCount: null, totalFreezesDuration: null, totalPausesDuration: null, totalFramesDuration: null, sumOfSquaredFramesDurations: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null, minResolutionWidth: null, minResolutionHeight: null };
+  const obj = { type: "video", ssrc: height.ssrc, sinkWant: obj2.formatSinkWantStat(id, height.ssrc, true), sinkWantAsInt: obj3.formatSinkWantAsInt(id, height.ssrc), sinkWantLocal: obj4.formatSinkWantStat(id, height.ssrc, true), sinkWantLocalAsInt: obj5.formatSinkWantAsInt(id, height.ssrc), codec: { id: height.codecPayloadType, name: height.codecName }, bytesReceived: tmp, packetsReceived: sum1, packetsLost, fractionLost: height.rtcpStats.fractionLost, bitrate: null, jitterBuffer: null, currentDelay: null, targetDelay: null, minPlayoutDelay: null, renderDelay: null, averageDecodeTime: null, totalDecodeTime: null, resolution: { height: height.height, width: height.width }, decoderImplementationName: null, framesDecoded: null, framesDropped: null, framesDecodeErrors: null, framesDecodeErrorsNoOutput: null, framesDecodeErrorsTimeout: null, framesDecodeErrorsGeneric: null, framesDecodeErrorsFallback: null, framesDecodeErrorsParameter: null, framesDecodeErrorsOther: null, framesReceived: height.frameCounts.keyFrames + height.frameCounts.deltaFrames, networkFramesDropped: num5, keyFramesDecoded: height.frameCounts.keyFrames, frameRateDecode: null, frameRateNetwork: null, frameRateRender: null, firCount: height.rtcpStats.firPackets, nackCount: height.rtcpStats.nackPackets, pliCount: height.rtcpStats.pliPackets, qpSum: null, freezeCount: null, pauseCount: null, totalFreezesDuration: null, totalPausesDuration: null, totalFramesDuration: null, sumOfSquaredFramesDurations: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null, minResolutionWidth: null, minResolutionHeight: null };
   sum1 = sum + num4 + num;
   obj2 = transformStatsUtils;
   obj3 = transformStatsUtils;
@@ -438,7 +438,7 @@ function transformInboundVideoStats(height, id, id2, playout) {
     packetsLost = height.rtcpStats.packetsLost;
   }
   ({ totalBitrate: obj.bitrate, jitterBuffer: obj.jitterBuffer, currentDelay: obj.currentDelay, targetDelay: obj.targetDelay, minPlayoutDelay: obj.minPlayoutDelay, renderDelay: obj.renderDelay, decode: obj.averageDecodeTime, totalDecode: obj.totalDecodeTime } = height);
-  ({ decoderImplementationName: obj.decoderImplementationName, framesDecoded: obj.framesDecoded, framesDropped: obj.framesDropped, framesDecodeErrors: obj.framesDecodeErrors } = height);
+  ({ decoderImplementationName: obj.decoderImplementationName, framesDecoded: obj.framesDecoded, framesDropped: obj.framesDropped, framesDecodeErrors: obj.framesDecodeErrors, framesDecodeErrorsNoOutput: obj.framesDecodeErrorsNoOutput, framesDecodeErrorsTimeout: obj.framesDecodeErrorsTimeout, framesDecodeErrorsGeneric: obj.framesDecodeErrorsGeneric, framesDecodeErrorsFallback: obj.framesDecodeErrorsFallback, framesDecodeErrorsParameter: obj.framesDecodeErrorsParameter, framesDecodeErrorsOther: obj.framesDecodeErrorsOther } = height);
   num5 = height.networkFramesDropped;
   if (num5 == null) {
     num5 = 0;

@@ -1,24 +1,24 @@
-// Module ID: 17508
-// Function ID: 17509
+// Module ID: 17810
+// Function ID: 17811
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1087, 2065, 21, 5191, 558, 576, 17509, 1211, 1128, 8004, 2044, 2052, 7370, 2]
+// Dependencies: [19, 17, 1087, 4820, 21, 4971, 558, 576, 17811, 1211, 1128, 8124, 4799, 4807, 7490, 2]
 
-// Module 17508 (usePrivateProfileCoachmarkProps)
+// Module 17810 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
+import dismissible_content from "dismissible_content" /* 4807 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(17509);
+const PrivateProfileAbstractUI = tmp(17811);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -57,9 +57,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(8004);
+  let obj2 = markAsDismissed(8124);
   let userIsTeen = obj2.useUserIsTeen();
-  const ProfileVisibility = markAsDismissed(2044).ProfileVisibility;
+  const ProfileVisibility = markAsDismissed(4799).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
     userIsTeen = setting !== tmp(1211).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     } else {
       tmp10 = cResult[3];
     }
-    const PRIVATE_PROFILE_COACHMARK = tmp(2052).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+    const PRIVATE_PROFILE_COACHMARK = tmp(4807).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
     if (cResult[4] !== markAsDismissed) {
       class S {
         constructor() {

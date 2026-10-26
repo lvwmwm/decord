@@ -1,39 +1,38 @@
-// Module ID: 11275
-// Function ID: 11276
+// Module ID: 11418
+// Function ID: 11419
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 2067, 6292, 502, 2014, 2119, 6203, 11232, 10662, 5214, 21, 5191, 1202, 587, 558, 576, 10668, 12, 11229, 11276, 504, 5205, 11277, 11280, 11290, 10685, 11300, 11225, 11312, 11355, 4913, 8541, 11302, 11305, 11239, 11235, 11238, 1499, 1384, 8724, 2]
+// Dependencies: [32, 19, 17, 4822, 6772, 502, 2014, 4874, 6685, 11371, 10882, 5632, 21, 4971, 1202, 587, 558, 576, 10888, 12, 11368, 11419, 504, 5710, 11420, 11423, 11433, 10905, 11443, 11364, 11452, 11508, 5252, 8614, 11445, 11378, 11374, 11377, 1499, 1384, 8820, 2]
 
-// Module 11275 (PictureInPictureVideo)
+// Module 11418 (PictureInPictureVideo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useToken2 from "useToken" /* 4913 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
-import CallConstants from "CallConstants" /* 5214 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8541 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11225 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11235 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 11238 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 11239 */;
-import VideoRenderer from "VideoRenderer" /* 11290 */;
-import UserTileDefault from "UserTile" /* 11300 */;
-import useAvatarSpeakingColor from "useAvatarSpeakingColor" /* 11302 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11305 */;
+import useToken2 from "useToken" /* 5252 */;
+import CallConstants from "CallConstants" /* 5632 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8614 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11364 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11374 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 11377 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11378 */;
+import VideoRenderer from "VideoRenderer" /* 11433 */;
+import UserTileDefault from "UserTile" /* 11443 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SpeakingStore from "SpeakingStore" /* 6203 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11232 */;
-import ChannelCallStore from "ChannelCallStore" /* 10662 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SpeakingStore from "SpeakingStore" /* 6685 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11371 */;
+import ChannelCallStore from "ChannelCallStore" /* 10882 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import native_mod from "native" /* 1202 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -602,7 +601,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAct
     tmp8 = cResult[2];
   }
   if (cResult[3] !== channelId) {
-    const fn2 = function v() {
+    const fn2 = function h() {
       const items = [ChannelRTCStore.getParticipants(channelId), ChannelRTCStore.getVideoParticipants(channelId), ChannelRTCStore.getParticipantsVersion(channelId)];
       return items;
     };
@@ -853,7 +852,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let tmp6;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(30);
+  const cResult = obj.c(26);
   ({ channel, selfParticipant } = arg0);
   const tmp4 = closure_19();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -889,124 +888,104 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         tmp20 = cResult[7];
       }
       const tmp24 = useAvatarColorDefault(tmp20, tmp16);
-      let id;
-      if (tmp13 != null) {
-        id = tmp13.user.id;
-      }
-      if (cResult[8] === channel.guild_id) {
-        let tmp27;
-        if (cResult[9] === id) {
-          tmp27 = cResult[10];
+      if (null == tmp13) {
+        return null;
+      } else {
+        let tmp28;
+        let tmp27 = null != tmp13.streamId;
+        if (tmp27) {
+          const voiceState = tmp13.voiceState;
+          let selfVideo;
+          if (voiceState != null) {
+            selfVideo = voiceState.selfVideo;
+          }
+          tmp27 = selfVideo;
         }
-        const tmpResult4 = useAvatarSpeakingColor;
-        const avatarSpeakingColor = tmpResult4.useAvatarSpeakingColor(tmp27);
-        if (null == tmp13) {
-          return null;
+        if (cResult[8] !== tmp24) {
+          const obj2 = { backgroundColor: tmp24 };
+          cResult[8] = tmp24;
+          cResult[9] = obj2;
+          tmp28 = obj2;
         } else {
-          let tmp31;
-          let tmp30 = null != tmp13.streamId;
-          if (tmp30) {
-            const voiceState = tmp13.voiceState;
-            let selfVideo;
-            if (voiceState != null) {
-              selfVideo = voiceState.selfVideo;
-            }
-            tmp30 = selfVideo;
+          tmp28 = cResult[9];
+        }
+        if (cResult[10] === tmp4.avatarContainer) {
+          let tmp29;
+          let tmp30;
+          if (cResult[11] === tmp28) {
+            tmp29 = cResult[12];
           }
-          if (cResult[11] !== tmp24) {
-            const obj2 = { backgroundColor: tmp24 };
-            cResult[11] = tmp24;
-            cResult[12] = obj2;
-            tmp31 = obj2;
-          } else {
-            tmp31 = cResult[12];
-          }
-          if (cResult[13] === tmp4.avatarContainer) {
-            let tmp32;
-            let tmp33;
-            if (cResult[14] === tmp31) {
-              tmp32 = cResult[15];
-            }
-            if (cResult[16] === channel) {
-              if (cResult[17] === tmp10) {
-                if (cResult[18] === tmp13) {
-                  if (cResult[19] === avatarSpeakingColor) {
-                    if (cResult[20] === tmp30) {
-                      tmp33 = cResult[21];
+          if (cResult[13] === channel) {
+            if (cResult[14] === tmp10) {
+              if (cResult[15] === tmp13) {
+                if (cResult[16] === tmp27) {
+                  tmp30 = cResult[17];
+                }
+                if (cResult[18] === tmp9) {
+                  if (cResult[19] === tmp4.thermalAlertIcon) {
+                    let tmp35;
+                    if (cResult[20] === tmp4.thermalAlertIconContainer) {
+                      tmp35 = cResult[21];
                     }
-                    if (cResult[22] === tmp9) {
-                      if (cResult[23] === tmp4.thermalAlertIcon) {
-                        let tmp38;
-                        if (cResult[24] === tmp4.thermalAlertIconContainer) {
-                          tmp38 = cResult[25];
+                    if (cResult[22] === tmp29) {
+                      if (cResult[23] === tmp30) {
+                        let tmp39;
+                        if (cResult[24] === tmp35) {
+                          tmp39 = cResult[25];
                         }
-                        if (cResult[26] === tmp38) {
-                          if (cResult[27] === tmp32) {
-                            let tmp42;
-                            if (cResult[28] === tmp33) {
-                              tmp42 = cResult[29];
-                            }
-                            return tmp42;
-                          }
-                        }
-                        const obj3 = { style: tmp32, children: items1 };
-                        items1 = [tmp33, tmp38];
-                        const tmp45 = authStore5(hasOwnProperty, obj3);
-                        cResult[26] = tmp38;
-                        cResult[27] = tmp32;
-                        cResult[28] = tmp33;
-                        cResult[29] = tmp45;
-                        tmp42 = tmp45;
+                        return tmp39;
                       }
                     }
-                    let tmp39 = null;
-                    if (tmp9) {
-                      const obj4 = { style: tmp4.thermalAlertIconContainer, children: authStore4(Icon, obj5) };
-                      obj5 = { style: tmp4.thermalAlertIcon, source: AssetRegistryDefault, color: tmp4.thermalAlertIcon.color };
-                      Icon = tmp(1202).Icon;
-                      tmp39 = authStore4(hasOwnProperty, obj4);
-                    }
-                    cResult[22] = tmp9;
-                    cResult[23] = tmp4.thermalAlertIcon;
-                    cResult[24] = tmp4.thermalAlertIconContainer;
-                    cResult[25] = tmp39;
-                    tmp38 = tmp39;
+                    const obj3 = { style: tmp29, children: items1 };
+                    items1 = [tmp30, tmp35];
+                    const tmp42 = authStore4(hasOwnProperty, obj3);
+                    cResult[22] = tmp29;
+                    cResult[23] = tmp30;
+                    cResult[24] = tmp35;
+                    cResult[25] = tmp42;
+                    tmp39 = tmp42;
                   }
                 }
+                let tmp36 = null;
+                if (tmp9) {
+                  const obj4 = { style: tmp4.thermalAlertIconContainer, children: authStore3(Icon, obj5) };
+                  obj5 = { style: tmp4.thermalAlertIcon, source: AssetRegistryDefault, color: tmp4.thermalAlertIcon.color };
+                  Icon = tmp(1202).Icon;
+                  tmp36 = authStore3(hasOwnProperty, obj4);
+                }
+                cResult[18] = tmp9;
+                cResult[19] = tmp4.thermalAlertIcon;
+                cResult[20] = tmp4.thermalAlertIconContainer;
+                cResult[21] = tmp36;
+                tmp35 = tmp36;
               }
             }
-            if (tmp30) {
-              let tmp36;
-              if (!tmp10) {
-                const obj6 = { participant: tmp13, avatarSize: native.AvatarSizes.PROFILE, resizeMode: VideoRenderer.ResizeMode.COVER };
-                const tmp15Result = UserTileDefault;
-                tmp36 = authStore4(tmp15Result, obj6);
-              }
-              cResult[16] = channel;
-              cResult[17] = tmp10;
-              cResult[18] = tmp13;
-              cResult[19] = avatarSpeakingColor;
-              cResult[20] = tmp30;
-              cResult[21] = tmp36;
-              tmp33 = tmp36;
-            }
-            const obj7 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: avatarSpeakingColor };
-            const Avatar = tmp(1202).Avatar;
-            ({ user: obj8.user, speaking: obj8.speaking } = tmp13);
-            tmp36 = authStore4(Avatar, obj7);
           }
-          const items2 = [tmp4.avatarContainer, tmp31];
-          cResult[13] = tmp4.avatarContainer;
-          cResult[14] = tmp31;
-          cResult[15] = items2;
-          tmp32 = items2;
+          if (tmp27) {
+            let tmp33;
+            if (!tmp10) {
+              const obj7 = { participant: tmp13, avatarSize: native.AvatarSizes.PROFILE, resizeMode: VideoRenderer.ResizeMode.COVER };
+              const tmp15Result = UserTileDefault;
+              tmp33 = authStore3(tmp15Result, obj7);
+            }
+            cResult[13] = channel;
+            cResult[14] = tmp10;
+            cResult[15] = tmp13;
+            cResult[16] = tmp27;
+            cResult[17] = tmp33;
+            tmp30 = tmp33;
+          }
+          const obj8 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null };
+          const Avatar = tmp(1202).Avatar;
+          ({ user: obj6.user, speaking: obj6.speaking } = tmp13);
+          tmp33 = authStore3(Avatar, obj8);
         }
+        const items2 = [tmp4.avatarContainer, tmp28];
+        cResult[10] = tmp4.avatarContainer;
+        cResult[11] = tmp28;
+        cResult[12] = items2;
+        tmp29 = items2;
       }
-      const obj9 = { userId: id, guildId: channel.guild_id };
-      cResult[8] = channel.guild_id;
-      cResult[9] = id;
-      cResult[10] = obj9;
-      tmp27 = obj9;
     }
     let avatarURL;
     if (tmp13 != null) {
@@ -1022,18 +1001,18 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     cResult[7] = avatarURL;
     tmp20 = avatarURL;
   }
-  const obj10 = { channelId: channel.id, selfParticipant };
+  const obj9 = { channelId: channel.id, selfParticipant };
   cResult[2] = channel.id;
   cResult[3] = selfParticipant;
-  cResult[4] = obj10;
-  tmp11 = obj10;
+  cResult[4] = obj9;
+  tmp11 = obj9;
 }) : (function ActivityPictureInPictureVideo(channel) {
   let Icon;
   let items1;
   let obj9;
   let tmp5;
   let tmp6;
-  const f108419 = () => {
+  const f110342 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
@@ -1043,63 +1022,57 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let items = [ChannelCallLifecycleStore];
   const obj = get_initialized;
   const obj2 = { channelId: channel.id, selfParticipant };
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f108419);
-  _slicedToArray(obj.useStateFromStoresArray(items, f108419), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f110342);
+  _slicedToArray(obj.useStateFromStoresArray(items, f110342), 2);
   const tmp7 = closure_22(obj2);
-  let avatarURL;
   const obj3 = useToken2;
   const token = obj3.useToken(nativeDefault.unsafe_rawColors.PRIMARY_800);
   if (tmp7 != null) {
     const user = tmp7.user;
-    avatarURL = user.getAvatarURL(channel.guild_id, 80);
-  }
-  const tmp11 = useAvatarColorDefault(avatarURL, token);
-  useAvatarSpeakingColor;
-  if (tmp7 != null) {
-    const id = tmp7.user.id;
+    const avatarURL = user.getAvatarURL(channel.guild_id, 80);
   }
   if (null == tmp7) {
     return null;
   } else {
-    let tmp15 = null != tmp7.streamId;
-    if (tmp15) {
+    let tmp13 = null != tmp7.streamId;
+    if (tmp13) {
       const voiceState = tmp7.voiceState;
       let selfVideo;
       if (voiceState != null) {
         selfVideo = voiceState.selfVideo;
       }
-      tmp15 = selfVideo;
+      tmp13 = selfVideo;
     }
     const obj4 = { style: items1, children: null };
     items1 = [tmp.avatarContainer, ];
     const obj5 = { backgroundColor: tmp11 };
     items1[1] = obj5;
-    if (tmp15) {
+    if (tmp13) {
+      let tmp16;
       let tmp18;
-      let tmp20;
       if (!tmp6) {
-        tmp18 = authStore4;
+        tmp16 = authStore3;
         const obj6 = { participant: tmp7, avatarSize: native.AvatarSizes.PROFILE, resizeMode: VideoRenderer.ResizeMode.COVER };
         const tmp8Result = UserTileDefault;
-        tmp20 = authStore4(tmp8Result, obj6);
+        tmp18 = authStore3(tmp8Result, obj6);
       }
-      const items2 = [tmp20, ];
-      let tmp18Result = null;
+      const items2 = [tmp18, ];
+      let tmp16Result = null;
       if (tmp5) {
-        const obj8 = { style: tmp.thermalAlertIconContainer, children: tmp18(Icon, obj9) };
+        const obj8 = { style: tmp.thermalAlertIconContainer, children: tmp16(Icon, obj9) };
         obj9 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
         Icon = tmp2(1202).Icon;
-        tmp18Result = tmp18(tmp17, obj8);
+        tmp16Result = tmp16(tmp15, obj8);
       }
-      items2[1] = tmp18Result;
+      items2[1] = tmp16Result;
       obj4.children = items2;
-      return tmp16(hasOwnProperty, obj4);
+      return tmp14(hasOwnProperty, obj4);
     }
-    const obj16 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: tmp13 };
+    const obj16 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null };
     const Avatar = tmp2(1202).Avatar;
     ({ user: obj7.user, speaking: obj7.speaking } = tmp7);
-    tmp20 = authStore4(Avatar, obj16);
-    tmp18 = authStore4;
+    tmp18 = authStore3(Avatar, obj16);
+    tmp16 = authStore3;
   }
 }));
 const memo3 = react.memo;
@@ -1205,15 +1178,15 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                       return tmp30;
                     }
                     const obj5 = { style: tmp13, children: tmp25 };
-                    const tmp33 = authStore4(hasOwnProperty, obj5);
+                    const tmp33 = authStore3(hasOwnProperty, obj5);
                     cResult[25] = tmp25;
                     cResult[26] = tmp13;
                     cResult[27] = tmp33;
                     tmp30 = tmp33;
                   }
-                  const obj6 = { activeOpacity: 0.7, children: authStore4(hasOwnProperty, obj7) };
+                  const obj6 = { activeOpacity: 0.7, children: authStore3(hasOwnProperty, obj7) };
                   obj7 = { style: tmp18, children: tmp19 };
-                  const tmp29 = authStore4(React3, obj6);
+                  const tmp29 = authStore3(React3, obj6);
                   cResult[22] = tmp19;
                   cResult[23] = tmp18;
                   cResult[24] = tmp29;
@@ -1223,7 +1196,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
             }
           }
           if (isViewingActivity) {
-            const obj8 = { pointerEvents: "none", style: tmp4.activityPipContainer, children: authStore4(closure_23, obj9) };
+            const obj8 = { pointerEvents: "none", style: tmp4.activityPipContainer, children: authStore3(closure_23, obj9) };
             obj9 = { channel, pipParticipant, selfParticipant };
             tmp20Result = tmp20(hasOwnProperty, obj8);
           } else {
@@ -1274,7 +1247,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const obj4 = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
   const tmp6 = usePipDimensionsDefault(obj4);
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
-  const obj5 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: authStore4(tmp10, obj10) };
+  const obj5 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: authStore3(tmp10, obj10) };
   ({ width, height } = useWindowDimensionsDefault());
   useWindowDimensionsDefault();
   let elevationShadow;
@@ -1293,15 +1266,15 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   items[2] = { flexDirection: str };
   items[3] = tmp6;
   if (isViewingActivity) {
-    const obj7 = { pointerEvents: "none", style: tmp.activityPipContainer, children: authStore4(closure_23, obj8) };
+    const obj7 = { pointerEvents: "none", style: tmp.activityPipContainer, children: authStore3(closure_23, obj8) };
     obj8 = { channel, pipParticipant, selfParticipant };
     tmp8Result = tmp8(tmp9, obj7);
   } else {
     const obj9 = { channel, pipParticipant, selfParticipant };
     tmp8Result = tmp8(closure_20, obj9);
   }
-  obj10 = { activeOpacity: 0.7, children: authStore4(hasOwnProperty, obj6) };
-  return authStore4(hasOwnProperty, obj5);
+  obj10 = { activeOpacity: 0.7, children: authStore3(hasOwnProperty, obj6) };
+  return authStore3(hasOwnProperty, obj5);
 }));
 size = size_mod;
 const result = size.fileFinishedImporting("modules/video_calls/native/components/PictureInPictureVideo.tsx");

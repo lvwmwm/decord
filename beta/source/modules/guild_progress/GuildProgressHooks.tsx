@@ -1,22 +1,22 @@
-// Module ID: 13155
-// Function ID: 13156
+// Module ID: 13393
+// Function ID: 13394
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2068, 4843, 5116, 2090, 13156, 5532, 4845, 1087, 558, 576, 8808, 504, 11, 12, 6364, 2]
+// Dependencies: [19, 502, 4823, 4901, 5194, 4845, 13394, 6010, 4903, 1087, 558, 576, 8904, 504, 11, 12, 6816, 2]
 
-// Module 13155 (GuildProgressHooks)
+// Module 13393 (GuildProgressHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import canViewInviteModal from "canViewInviteModal" /* 8808 */;
+import canViewInviteModal from "canViewInviteModal" /* 8904 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4843 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import LayerStore from "LayerStore" /* 13156 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import LayerStore from "LayerStore" /* 13394 */;
+import MessageStore from "MessageStore" /* 6010 */;
+import PermissionStore from "PermissionStore" /* 4903 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

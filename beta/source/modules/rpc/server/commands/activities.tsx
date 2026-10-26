@@ -1,14 +1,14 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15767
+// Function ID: 15768
 // Name: activities
-// Dependencies: [5, 1087, 15503, 15493, 11335, 2032, 9169, 9163, 6313, 6312, 11047, 2]
+// Dependencies: [5, 1087, 15725, 15715, 11478, 2031, 9264, 9258, 6778, 6777, 10730, 2]
 
-// Module 15543 (activities)
-import RPCHelpers from "RPCHelpers" /* 11335 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15493 */;
+// Module 15767 (activities)
+import RPCHelpers from "RPCHelpers" /* 11478 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;

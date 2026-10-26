@@ -1,19 +1,19 @@
-// Module ID: 17852
-// Function ID: 17853
+// Module ID: 18158
+// Function ID: 18159
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6340, 12997, 9613, 21, 13004, 558, 576, 12990, 504, 17841, 17853, 12983, 17854, 17855, 12988, 17773, 17785, 2]
+// Dependencies: [19, 6792, 13237, 9713, 21, 13244, 558, 576, 13230, 504, 18147, 18159, 13223, 18160, 18161, 13228, 18079, 18091, 2]
 // Exports: trackMessageItemPress
 
-// Module 17852 (BaseMessagesScreen)
+// Module 18158 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9613 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12983 */;
-import SearchUtils from "SearchUtils" /* 12990 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17854 */;
+import TrackingConstants from "TrackingConstants" /* 9713 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13223 */;
+import SearchUtils from "SearchUtils" /* 13230 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13244 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18160 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6340 */;
-import SearchQueryStore from "SearchQueryStore" /* 12997 */;
+import SearchMessageStore from "SearchMessageStore" /* 6792 */;
+import SearchQueryStore from "SearchQueryStore" /* 13237 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,6 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;
+  let documentsIndexed;
   let errorText;
   let first;
   let hasError;
@@ -32,10 +33,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   let keywordResultCount;
   let numColumns;
   let searchContext;
+  let searchResultsQuery;
   let smartSearchStatus;
   let tmp = searchContext;
   let obj = searchContext(isFocused[7]);
-  const cResult = obj.c(44);
+  const cResult = obj.c(45);
   ({ data, searchContext } = tab);
   tab = tab.tab;
   isFocused = tab.isFocused;
@@ -62,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
     }
     const tmpResult = tmp(isFocused[9]);
     const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-    const documentsIndexed = stateFromStoresObject.documentsIndexed;
+    ({ searchResultsQuery, documentsIndexed } = stateFromStoresObject);
     if (cResult[4] === searchContext) {
       if (cResult[5] === keywordResultCount > 0) {
         let tmp12;
@@ -109,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                     if (null != documentsIndexed) {
                                       if (documentsIndexed > 0) {
                                         let obj2 = { searchContext: null, documentsIndexed, tab };
-                                        class K {
+                                        class U {
                                           constructor() {
                                             const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                             if (tmp) {
@@ -121,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                         cResult[30] = searchContext;
                                         cResult[31] = tab;
                                         const tmp26 = showErrorToast(tab(isFocused[13]), obj2);
-                                        class N {
+                                        class Q {
                                           constructor() {
                                             if (0 !== keywordResultCount) {
                                               const tmp17 = isFirstPageLoading;
@@ -147,7 +149,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                       }
                                     }
                                   }
-                                  class K {
+                                  class U {
                                     constructor() {
                                       const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                       if (tmp) {
@@ -158,7 +160,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                 }
                               }
                             }
-                            class K {
+                            class U {
                               constructor() {
                                 const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                 if (tmp) {
@@ -169,7 +171,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                             const items1 = [isErrorToast, isFirstPageLoading, isFocused, showErrorToast];
                             cResult[23] = isErrorToast;
                             cResult[24] = isFocused;
-                            class N {
+                            class Q {
                               constructor() {
                                 if (0 !== keywordResultCount) {
                                   const tmp17 = isFirstPageLoading;
@@ -194,8 +196,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                             }
                             cResult[26] = showErrorToast;
                             cResult[27] = items1;
-                            cResult[28] = K;
-                            tmp20 = K;
+                            cResult[28] = U;
+                            tmp20 = U;
                             tmp19 = items1;
                           }
                         }
@@ -211,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                     cResult[16] = isFocused;
                     cResult[17] = isFirstPageLoading;
                     cResult[18] = searchContext;
-                    class N {
+                    class Q {
                       constructor() {
                         if (0 !== keywordResultCount) {
                           const tmp17 = isFirstPageLoading;
@@ -246,7 +248,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
             }
           }
         }
-        class N {
+        class Q {
           constructor() {
             if (0 !== keywordResultCount) {
               const tmp17 = isFirstPageLoading;
@@ -276,12 +278,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
         cResult[12] = searchContext;
         cResult[13] = searchFetchPendingManager;
         cResult[14] = tab;
-        cResult[15] = N;
+        cResult[15] = Q;
       }
     }
     const obj3 = { searchContext, tab, hasListItems: keywordResultCount > 0 };
     cResult[4] = searchContext;
-    cResult[5] = keywordResultCount > 0;
     cResult[6] = tab;
     cResult[7] = obj3;
     tmp12 = obj3;
@@ -290,7 +291,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
     const obj = SearchUtils;
     const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tab, searchResultsQuery);
-    const obj2 = { isIndexing: SearchMessageStore.getIsIndexing(searchTabFetchId), isHistoricalIndexing: SearchMessageStore.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: SearchMessageStore.getDocumentsIndexed(searchTabFetchId) };
+    const obj2 = { searchResultsQuery, isIndexing: SearchMessageStore.getIsIndexing(searchTabFetchId), isHistoricalIndexing: SearchMessageStore.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: SearchMessageStore.getDocumentsIndexed(searchTabFetchId) };
     return obj2;
   };
   cResult[1] = searchContext;
@@ -304,10 +305,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   let errorText;
   let isErrorFullscreen;
   let isFirstPageLoading;
+  let isIndexing;
   let isNextPageLoading;
   let keywordResultCount;
   let numColumns;
   let searchContext;
+  let searchResultsQuery;
   let smartSearchStatus;
   ({ data, searchContext } = tab);
   tab = tab.tab;
@@ -338,12 +341,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
     const obj = SearchUtils;
     const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tab, searchResultsQuery);
-    const obj2 = { isIndexing: SearchMessageStore.getIsIndexing(searchTabFetchId), isHistoricalIndexing: SearchMessageStore.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: SearchMessageStore.getDocumentsIndexed(searchTabFetchId) };
+    const obj2 = { searchResultsQuery, isIndexing: SearchMessageStore.getIsIndexing(searchTabFetchId), isHistoricalIndexing: SearchMessageStore.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: SearchMessageStore.getDocumentsIndexed(searchTabFetchId) };
     return obj2;
   });
   isHistoricalIndexing = stateFromStoresObject.isHistoricalIndexing;
   documentsIndexed = stateFromStoresObject.documentsIndexed;
-  const isIndexing = stateFromStoresObject.isIndexing;
+  ({ searchResultsQuery, isIndexing } = stateFromStoresObject);
   let obj2 = searchContext(isFocused[10]);
   const obj3 = { searchContext, tab, hasListItems: keywordResultCount > 0 };
   const messageSearchErrorScreen = obj2.useMessageSearchErrorScreen(obj3);
@@ -406,7 +409,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
         return tmp13;
       }
     }
-    const obj7 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp9, ItemSeparatorComponent, numColumns };
+    const obj7 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp9, ItemSeparatorComponent, numColumns, scrollToTopKey: searchResultsQuery };
     tmp13 = hasError(tab(tmp2[17]), obj7);
   }
 });

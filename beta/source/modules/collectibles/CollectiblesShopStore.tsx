@@ -1,51 +1,22 @@
-// Module ID: 7547
-// Function ID: 7548
+// Module ID: 7689
+// Function ID: 7690
 // Name: CollectiblesShopStore
 // Dependencies: [504, 584, 2]
 
-// Module 7547 (CollectiblesShopStore)
+// Module 7689 (CollectiblesShopStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
-let closure_4, closure_6;
+let c0;
 
 const items = [];
 const React2 = items;
 const _false = null;
-const React3 = {};
-let set = new Set();
-const metroRequire = {};
 const Store = get_initializedDefault.Store;
 class CollectiblesShopStore extends Store {
   getAnalytics() {
     return { analyticsLocations, analyticsSource };
-  }
-  getLayout(arg0) {
-    let tmp = null;
-    if (null != arg0) {
-      let tmp3 = closure_4[arg0];
-      if (tmp3 == null) {
-        tmp3 = null;
-      }
-      tmp = tmp3;
-    }
-    return tmp;
-  }
-  isFetchingLayout(c0) {
-    const hasItem = null != c0 && set.has(c0);
-    return hasItem;
-  }
-  getLayoutFetchError(c0) {
-    let tmp = null;
-    if (null != c0) {
-      let tmp3 = closure_6[c0];
-      if (tmp3 == null) {
-        tmp3 = null;
-      }
-      tmp = tmp3;
-    }
-    return tmp;
   }
 }
 const prototype = CollectiblesShopStore.prototype;
@@ -92,27 +63,10 @@ const obj = {
       c0 = undefined;
     }
   },
-  COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH: function handleShopTabLayoutFetch(tab) {
-    set.add(tab.tab);
-  },
-  COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_SUCCESS: function handleShopTabLayoutFetchSuccess(tab) {
-    tab = tab.tab;
-    closure_4[tab] = tab.layoutId;
-    delete closure_6[tab];
-    set.delete(tab);
-  },
-  COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_FAILURE: function handleShopTabLayoutFetchFailure(tab) {
-    tab = tab.tab;
-    closure_6[tab] = tab.apiError;
-    set.delete(tab);
-  },
   LOGOUT: function handleLogout() {
     let closure_2 = items;
     let c3 = null;
     c0 = undefined;
-    closure_4 = {};
-    set = new Set();
-    closure_6 = {};
   }
 };
 const collectiblesShopStore = new CollectiblesShopStore(DispatcherDefault, obj);

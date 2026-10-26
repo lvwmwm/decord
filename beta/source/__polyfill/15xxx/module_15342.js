@@ -1,18 +1,9 @@
 // Module ID: 15342
 // Function ID: 15343
-// Dependencies: [15343]
+// Dependencies: [15333]
 
 // Module 15342
-import prop_mod from "module_15343" /* 15343 */;
+import _mod15333 from "module_15333" /* 15333 */;
 
-let prop = prop_mod;
-if (prop) {
-  const _Symbol = Symbol;
-  prop = !Symbol.sham;
-}
-if (prop) {
-  const _Symbol2 = Symbol;
-  prop = typeof Symbol.iterator === "symbol";
-}
 
-export default prop;
+export default (arg0, arg1, arg2) => 0 !== _mod15333(arg0, arg1, arg2);

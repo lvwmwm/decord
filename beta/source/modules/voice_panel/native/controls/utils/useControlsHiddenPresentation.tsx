@@ -1,11 +1,11 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18609
+// Function ID: 18610
 // Name: useControlsHiddenPresentation
-// Dependencies: [10680, 558, 576, 4922, 4945, 5478, 2]
+// Dependencies: [10900, 558, 576, 5037, 5052, 5247, 2]
 
-// Module 18308 (useControlsHiddenPresentation)
-import spring from "spring" /* 5478 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
+// Module 18609 (useControlsHiddenPresentation)
+import spring from "spring" /* 5247 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsH
     obj = {};
   }
   const cleanUp = obj.cleanUp;
-  const tmp4 = obj.state === tmp(4922).TransitionStates.YEETED;
+  const tmp4 = obj.state === tmp(5037).TransitionStates.YEETED;
   HIDDEN_OPACITY_PHYSICS = tmp4;
   let fn = function l() {
     const tmp = closure_3;
@@ -48,9 +48,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsH
   fn.__closure = obj3;
   fn.__workletHash = 9921694756227;
   fn.__initData = __initData;
-  const tmpResult = tmp(4945);
+  const tmpResult = tmp(5052);
   const animatedProps = tmpResult.useAnimatedProps(fn);
-  const tmpResult2 = tmp(4945);
+  const tmpResult2 = tmp(5052);
   class S {
     constructor() {
       tmp = closure_0(closure_1[5]);
@@ -76,10 +76,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsH
       return obj;
     }
   }
-  S.__closure = { withSpring: tmp(5478).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4945).runOnJS };
+  S.__closure = { withSpring: tmp(5247).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(5052).runOnJS };
   S.__workletHash = 6139998685483;
   S.__initData = __initData2;
-  ({ withSpring: tmp(5478).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(4945).runOnJS });
+  ({ withSpring: tmp(5247).withSpring, yeeted: tmp4, wrapperSpecs, HIDDEN_OPACITY_PHYSICS, cleanUp, runOnJS: tmp(5052).runOnJS });
   const animatedStyle = tmpResult2.useAnimatedStyle(S);
   if (cResult[0] === animatedProps) {
     let tmp7;

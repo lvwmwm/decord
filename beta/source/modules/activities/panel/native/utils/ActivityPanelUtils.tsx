@@ -1,17 +1,17 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18449
+// Function ID: 18450
 // Name: ActivityPanelUtils
-// Dependencies: [2068, 2119, 2067, 6298, 4834, 10805, 1108, 558, 576, 504, 2]
+// Dependencies: [4823, 4874, 4822, 5609, 4892, 5629, 1108, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 18141 (ActivityPanelUtils)
+// Module 18449 (ActivityPanelUtils)
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10805 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5629 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

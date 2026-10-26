@@ -1,14 +1,14 @@
-// Module ID: 18679
-// Function ID: 18680
+// Module ID: 18983
+// Function ID: 18984
 // Name: ChannelListIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18680, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18984, 5668, 2]
 
-// Module 18679 (ChannelListIcon)
+// Module 18983 (ChannelListIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 18680 */;
+import BaseIconImage2 from "BaseIconImage" /* 5668 */;
+import AssetRegistry from "AssetRegistry" /* 18984 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5668).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

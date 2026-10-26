@@ -17,8 +17,6 @@ import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let closure_15;
-
 let CHANNEL_SIDEBAR_WIDTH;
 let metroImportDefault;
 let closure_3 = ["allowConjurePictureInPictureOnNavigateAway", "allowVibegrationsPictureInPictureOnNavigateAway"];
@@ -32,7 +30,7 @@ let obj = { DATA_SAVER: "data_saver", STANDARD: "standard", BEST: "best" };
 let closure_12 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
 const STANDARD = obj.STANDARD;
 let closure_14 = null;
-const authStore3 = {};
+let closure_15 = {};
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class UnsyncedUserSettingsStore extends DeviceSettingsStore {
   initialize(arg0) {

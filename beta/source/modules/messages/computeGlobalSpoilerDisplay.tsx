@@ -1,11 +1,11 @@
-// Module ID: 8672
-// Function ID: 8673
+// Module ID: 8763
+// Function ID: 8764
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4845, 1087, 558, 576, 573, 2044, 2]
+// Dependencies: [4903, 1087, 558, 576, 573, 4799, 2]
 // Exports: default
 
-// Module 8672 (computeGlobalSpoilerDisplay)
-import PermissionStore from "PermissionStore" /* 4845 */;
+// Module 8763 (computeGlobalSpoilerDisplay)
+import PermissionStore from "PermissionStore" /* 4903 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldD
   }
   const tmpResult = require("useStateFromStores");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const RenderSpoilers = tmp(2044).RenderSpoilers;
+  const RenderSpoilers = tmp(4799).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   if (cResult[3] === stateFromStores) {
     let tmp9;

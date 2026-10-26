@@ -1,20 +1,20 @@
-// Module ID: 6207
-// Function ID: 6208
+// Module ID: 6689
+// Function ID: 6690
 // Name: GuildMemberRequesterStore
-// Dependencies: [2068, 2128, 2119, 6208, 584, 4833, 1103, 504, 2]
+// Dependencies: [4823, 4883, 4874, 6690, 584, 4891, 1103, 504, 2]
 
-// Module 6207 (GuildMemberRequesterStore)
+// Module 6689 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import MessageTypes from "MessageTypes" /* 1103 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6208 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4891 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6690 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import size from "module_2" /* 2 */;
 
-const f37237 = (arg0, userIds) => {
+const f38320 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -107,8 +107,8 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f37237);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f37237);
+const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38320);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38320);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {
@@ -116,6 +116,9 @@ class GuildMemberRequesterStore extends Store {
   }
   requestMember(arg0, arg1) {
     navigation.request(arg0, arg1);
+  }
+  isMemberRequestSettled(arg0, arg1) {
+    return navigation.isSettled(arg0, arg1);
   }
   getDebugState(arg0) {
     return navigation.getDebugState(arg0);
@@ -131,14 +134,17 @@ let obj = {
     return false;
   },
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch(arg0) {
+    let closure_0 = false;
     function _loop(iter) {
       const members = iter.members;
       const item = members.forEach((user) => {
-        navigation.acknowledge(iter.guildId, user.user.id);
+        navigation.acknowledge(iter.guildId, user.user.id) || iter;
       });
       if (null != iter.notFound) {
         const notFound = iter.notFound;
-        const item1 = notFound.forEach((item) => navigation.acknowledge(iter.guildId, item));
+        const item1 = notFound.forEach((item) => {
+          navigation.acknowledge(iter.guildId, item) || iter;
+        });
       }
     }
     let iter = arg0.chunks[Symbol.iterator]();
@@ -146,7 +152,7 @@ let obj = {
       let _loopResult = _loop(iter.next());
       continue;
     }
-    return false;
+    return closure_0;
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
   SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(messages) {

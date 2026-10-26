@@ -1,11 +1,14 @@
 // Module ID: 15333
 // Function ID: 15334
-// Dependencies: [15331]
+// Dependencies: [15319]
 
 // Module 15333
-import _mod15331 from "module_15331" /* 15331 */;
+import _mod15319 from "module_15319" /* 15319 */;
 
-let closure_0 = _mod15331({}.toString);
-let closure_1 = _mod15331("".slice);
 
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export default (arg0, arg1, arg2) => {
+  const compare = new _mod15319(arg0, arg2).compare;
+  new _mod15319(arg0, arg2);
+  const tmp2 = new _mod15319(arg1, arg2);
+  return compare(tmp2);
+};

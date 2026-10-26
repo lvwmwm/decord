@@ -1,27 +1,27 @@
-// Module ID: 11996
-// Function ID: 11997
+// Module ID: 12165
+// Function ID: 12166
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1087, 21, 5191, 587, 1896, 5155, 11997, 2002, 11994, 6462, 5187, 2]
+// Dependencies: [32, 19, 1087, 21, 4971, 587, 1896, 5210, 12166, 2002, 12163, 6908, 5234, 2]
 // Exports: default
 
-// Module 11996 (AppLauncherAutocompleteOption)
+// Module 12165 (AppLauncherAutocompleteOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Pressables from "Pressables" /* 6462 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Pressables from "Pressables" /* 6908 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp4;
-const Text_Text = tmp4(5187);
+const Text_Text = tmp4(5234);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -67,7 +67,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ref.current
     };
-    obj2.openLazy(asyncRequire(11997, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(12166, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ style, autoFocus } = arg0);
   [initChoice, closure_9] = react.useState(() => {

@@ -1,14 +1,14 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14633
+// Function ID: 14634
 // Name: OngoingCallTimer
-// Dependencies: [19, 6014, 21, 558, 576, 504, 11, 14399, 2]
+// Dependencies: [19, 6497, 21, 558, 576, 504, 11, 14634, 2]
 
-// Module 14398 (OngoingCallTimer)
+// Module 14633 (OngoingCallTimer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
-import TimerDefault from "Timer" /* 14399 */;
+import TimerDefault from "Timer" /* 14634 */;
 import react from "react" /* 19 */;
-import CallStore from "CallStore" /* 6014 */;
+import CallStore from "CallStore" /* 6497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

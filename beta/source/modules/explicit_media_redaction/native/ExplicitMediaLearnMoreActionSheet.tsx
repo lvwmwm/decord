@@ -1,23 +1,23 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12824
+// Function ID: 12825
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7269, 1087, 21, 5191, 587, 12607, 6165, 8515, 1128, 7370, 5155, 4901, 2131, 7764, 12608, 2002, 7118, 7783, 5187, 5479, 2]
+// Dependencies: [19, 17, 7392, 1087, 21, 4971, 587, 12825, 6654, 8586, 1128, 7490, 5210, 5660, 2067, 7883, 12826, 2002, 5265, 7902, 5234, 5244, 2]
 // Exports: default
 
-// Module 12606 (ExplicitMediaLearnMoreActionSheet)
+// Module 12824 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7269 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8515 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7392 */;
+import openUserSettings from "openUserSettings" /* 7490 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8586 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;

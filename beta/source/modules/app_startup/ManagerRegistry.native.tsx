@@ -1,10 +1,10 @@
-// Module ID: 18431
-// Function ID: 18432
+// Module ID: 18732
+// Function ID: 18733
 // Name: ManagerRegistry
-// Dependencies: [18432, 18435, 18442, 18443, 18444, 18445, 13875, 18448, 18449, 18452, 18453, 18455, 13576, 18456, 18457, 18458, 18462, 18463, 18464, 18466, 13146, 18471, 13346, 18472, 18473, 18474, 18475, 18480, 18481, 18482, 18485, 18487, 18505, 10022, 8178, 15570, 18506, 18507, 18509, 18511, 18512, 18513, 8791, 18514, 18515, 18516, 18517, 18525, 18526, 18542, 16634, 18544, 18545, 18549, 18551, 18553, 18554, 9618, 18568, 16379, 18569, 18570, 18575, 18577, 18591, 18608, 18611, 14370, 18612, 18614, 18623, 18624, 18626, 18627, 18629, 18630, 18633, 18635, 18636, 18638, 18639, 18640, 18641, 18642, 18643, 18647, 18648, 11371, 18650, 18653, 18654, 18656, 18657, 18661, 7083, 8975, 18662, 18663, 8650, 18664, 18450, 18665, 18666, 19023, 19024, 19025, 19027, 19028, 19029, 19031, 19032, 19034, 19036, 19037, 19038, 19042, 19043, 19044, 19045, 16753, 19047, 19048, 19051, 19052, 19074, 19078, 19079, 19082, 19083, 19110, 19111, 19112, 19113, 19114, 19115, 19116, 2]
+// Dependencies: [18733, 18736, 18743, 18744, 18745, 18746, 14105, 18749, 18750, 18753, 18754, 18756, 13798, 18757, 18758, 18759, 18763, 18764, 18765, 18767, 13384, 18772, 18773, 13585, 18774, 18775, 18776, 18777, 18782, 18783, 18787, 18788, 18791, 18793, 18811, 10119, 8296, 15799, 18812, 18813, 18815, 18817, 18818, 18819, 8887, 18820, 18821, 18822, 18823, 18831, 18832, 18848, 16930, 18850, 18851, 18855, 18857, 18859, 18860, 9717, 18873, 16678, 18874, 18875, 18880, 18882, 18896, 18913, 18916, 14605, 18917, 18918, 18927, 18928, 18930, 18931, 18933, 18934, 18937, 18939, 18940, 18942, 18943, 18944, 18945, 18946, 18947, 18951, 18952, 11524, 18954, 18957, 18958, 18960, 18961, 18965, 7212, 9070, 18966, 18967, 8741, 18968, 18751, 18969, 18970, 19357, 19358, 19359, 19361, 19362, 19363, 19365, 19366, 19368, 19369, 19371, 19372, 19373, 19377, 19378, 19379, 19380, 17049, 19382, 19383, 19386, 19387, 19409, 19413, 19414, 19417, 19418, 19445, 19446, 19447, 19448, 19449, 19450, 19453, 2]
 
-// Module 18431 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 19116 */;
+// Module 18732 (ManagerRegistry)
+import ManagerRegistryShared from "ManagerRegistryShared" /* 19453 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -143,6 +143,12 @@ const obj = {
     },
     loadAfterConnectionOpen: true
   },
+  ConjureBackgroundFramesManager: {
+    actions: ["FRAME_LAUNCH_START"],
+    inlineRequire() {
+      return require("ConjureBackgroundFramesManager").default;
+    }
+  },
   ConjureTurnNotificationManager: {
     actions: ["CONJURE_TURN_NOTIFICATION", "CONJURE_TURN_SETTLED", "LOGOUT"],
     inlineRequire() {
@@ -186,6 +192,13 @@ const obj = {
     inlineRequire() {
       return require("TopEmojisDataManager").default;
     }
+  },
+  EmbeddedAppShimManager: {
+    actions: ["EMBEDDED_APP_SHIM_PIPE_OPEN"],
+    inlineRequire() {
+      return require("EmbeddedAppShimManager").default;
+    },
+    hasStoreChangeListeners: true
   },
   EntityVersionsManager: {
     actions: ["GUILD_CREATE", "DELETED_ENTITY_IDS"],
@@ -705,7 +718,7 @@ const obj = {
     neverLoadBeforeConnectionOpen: true
   },
   NativeNotificationsManager: {
-    actions: ["MESSAGE_ACK", "CHANNEL_SELECT", "POST_CONNECTION_OPEN", "EXPERIMENT_OVERRIDE_BUCKET", "EXPERIMENTS_FETCH_SUCCESS"],
+    actions: ["MESSAGE_ACK", "CHANNEL_SELECT", "POST_CONNECTION_OPEN"],
     inlineRequire() {
       return require("NativeNotificationsManager").default;
     },
@@ -730,6 +743,14 @@ const obj = {
     inlineRequire() {
       return require("ContentInventoryManager").default;
     },
+    neverLoadBeforeConnectionOpen: true
+  },
+  OrbsArcadeFetchManager: {
+    actions: ["POST_CONNECTION_OPEN", "USER_SETTINGS_PROTO_UPDATE", "ORBS_ARCADE_GAME_STATE_UPDATE", "LOGOUT"],
+    inlineRequire() {
+      return require("OrbsArcadeFetchManager").default;
+    },
+    hasStoreChangeListeners: true,
     neverLoadBeforeConnectionOpen: true
   },
   QuestFetchManager: {

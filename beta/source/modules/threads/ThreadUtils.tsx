@@ -1,22 +1,22 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 8308
+// Function ID: 8309
 // Name: ThreadUtils
-// Dependencies: [109, 6291, 6222, 4847, 1127, 1087, 1128, 7487, 5206, 1267, 8179, 7081, 1405, 558, 576, 504, 11, 4797, 2]
+// Dependencies: [109, 6771, 6704, 4905, 1127, 1087, 1128, 7608, 5711, 1267, 8297, 7210, 1405, 558, 576, 504, 11, 2049, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8190 (ThreadUtils)
+// Module 8308 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import getTimestampStringDefault from "getTimestampString" /* 7487 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8179 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
+import getTimestampStringDefault from "getTimestampString" /* 7608 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8297 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6291 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ReadStateStore from "ReadStateStore" /* 6771 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7081);
+const NotificationSettingsUtils = tmp(7210);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastMes
   if (cResult[5] !== createTimestamp) {
     let valueOfResult = null;
     if (null != createTimestamp) {
-      const obj4 = _modDef4797(createTimestamp);
+      const obj4 = _modDef2049(createTimestamp);
       valueOfResult = obj4.valueOf();
     }
     cResult[5] = createTimestamp;
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastMes
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    const obj3 = _modDef4797(createTimestamp);
+    const obj3 = _modDef2049(createTimestamp);
     valueOfResult = obj3.valueOf();
   }
   if (extractTimestampResult == null) {

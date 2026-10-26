@@ -1,20 +1,20 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11375
+// Function ID: 11376
 // Name: usePipVideoOrStream
-// Dependencies: [2067, 6292, 11237, 6153, 502, 2068, 2014, 5209, 5214, 558, 576, 6156, 5072, 11226, 504, 2]
+// Dependencies: [4822, 6772, 11376, 6642, 502, 4823, 2014, 5714, 5632, 558, 576, 6645, 5150, 11365, 504, 2]
 
-// Module 11236 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 11226 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 11237 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+// Module 11375 (usePipVideoOrStream)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 11365 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 11376 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import CallConstants from "CallConstants" /* 5632 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

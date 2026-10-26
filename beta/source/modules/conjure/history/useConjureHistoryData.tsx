@@ -1,22 +1,22 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12275
+// Function ID: 12276
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 558, 576, 12095, 12107, 11698, 2]
+// Dependencies: [32, 19, 558, 576, 12264, 12276, 11880, 2]
 
-// Module 12106 (useConjureHistoryData)
+// Module 12275 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11698 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12095 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12107 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11880 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12264 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, map, set;
+let _require, channel, dependencyMap, map, set;
 
-const f111945 = (result) => {
+const f113951 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -24,7 +24,7 @@ const f111945 = (result) => {
 };
 let react = react_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLoad(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLoad(arg0) {
   let closure_129_1;
   let closure_129_2;
   let obj3;
@@ -35,15 +35,15 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
   let obj = react2;
   const cResult = obj.c(12);
   let obj2 = react;
-  [tmp3, closure_129_1] = _slicedToArray(react.useState(0), 2);
   const tmp2 = _slicedToArray(react.useState(0), 2);
-  [tmp5, closure_129_2] = _slicedToArray(react.useState(null), 2);
+  [tmp3, closure_129_1] = tmp2;
   const tmp4 = _slicedToArray(react.useState(null), 2);
+  [tmp5, closure_129_2] = tmp4;
   if (cResult[0] !== arg0) {
     const fn = function n() {
       let load;
-      let c0 = false;
-      const promise = c0();
+      channel = false;
+      const promise = channel();
       promise.then((data) => {
         let obj2;
         const tmp = c0;
@@ -82,7 +82,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const fn2 = function l() {
         closure_1_2(null);
-        closure_1_1((arg0) => arg0 + 1);
+        onClose((arg0) => arg0 + 1);
       };
       cResult[5] = fn2;
       tmp10 = fn2;
@@ -93,7 +93,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class D {
         constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
+          return onClose((arg0) => arg0 + 1);
         }
       }
       cResult[6] = D;
@@ -101,7 +101,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
     } else {
       class D {
         constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
+          return onClose((arg0) => arg0 + 1);
         }
       }
     }
@@ -109,13 +109,13 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
       let tmp13;
       class D {
         constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
+          return onClose((arg0) => arg0 + 1);
         }
       }
       if (cResult[10] !== tmp12) {
         class D {
           constructor() {
-            return closure_1_1((arg0) => arg0 + 1);
+            return onClose((arg0) => arg0 + 1);
           }
         }
         tmp14[0] = tmp12;
@@ -127,7 +127,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
       } else {
         class D {
           constructor() {
-            return closure_1_1((arg0) => arg0 + 1);
+            return onClose((arg0) => arg0 + 1);
           }
         }
       }
@@ -136,7 +136,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
     if (null != tmp5) {
       class D {
         constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
+          return onClose((arg0) => arg0 + 1);
         }
       }
       cResult[7] = arg0;
@@ -196,9 +196,10 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHist
     return obj;
   }
 });
+let closure_4 = tmp2;
 let closure_5 = [];
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHistoryData(arg0, arg1) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHistoryData(arg0, arg1) {
   let arr;
   let state2;
   let tmp11;
@@ -210,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(12107);
+    const tmp2Result = tmp2(12276);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -247,7 +248,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f111945);
+      return allResult.then(f113951);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -370,7 +371,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
               tmp21 = mapped;
             }
           }
-          const fn5 = function j(environment) {
+          const fn5 = function _(environment) {
             let obj3;
             let tmp;
             const obj = { environment, backups: tmp };
@@ -504,7 +505,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const obj2 = conjureHistoryRequests;
     items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
     const allResult = all(items);
-    return allResult.then(f111945);
+    return allResult.then(f113951);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];
@@ -623,4 +624,5 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
 });
 let result = size.fileFinishedImporting("modules/conjure/history/useConjureHistoryData.tsx");
 
-export default tmp2;
+export default tmp3;
+export const useHistoryLoad = tmp2;

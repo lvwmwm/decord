@@ -1,22 +1,22 @@
-// Module ID: 18208
-// Function ID: 18209
+// Module ID: 18512
+// Function ID: 18513
 // Name: SoundboardSoundPicker
-// Dependencies: [32, 19, 17, 18209, 5209, 1392, 5530, 18210, 1087, 21, 5191, 587, 558, 576, 4945, 573, 18211, 7331, 6942, 7130, 7155, 1275, 9263, 1384, 9754, 5088, 1128, 5187, 7016, 18215, 18225, 18226, 7118, 2]
+// Dependencies: [32, 19, 17, 18513, 5714, 1392, 6008, 18514, 1087, 21, 4971, 587, 558, 576, 5052, 573, 18515, 7451, 5593, 7253, 7278, 1275, 9361, 1384, 9852, 5166, 1128, 5234, 7145, 18519, 18529, 18530, 5265, 2]
 
-// Module 18208 (SoundboardSoundPicker)
+// Module 18512 (SoundboardSoundPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import SoundboardConstants from "SoundboardConstants" /* 5530 */;
-import searchSounds from "searchSounds" /* 7331 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18210 */;
+import SoundboardConstants from "SoundboardConstants" /* 6008 */;
+import searchSounds from "searchSounds" /* 7451 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18514 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18209 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18513 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,14 +75,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [RTCConnectionStore];
-    class U {
+    class B {
       constructor() {
         return mediaSessionId.getMediaSessionId();
       }
     }
     cResult[2] = items1;
-    cResult[3] = U;
-    tmp13 = U;
+    cResult[3] = B;
+    tmp13 = B;
     tmp12 = items1;
   } else {
     tmp12 = cResult[2];
@@ -93,7 +93,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { filterOutEmptyCurrentGuild: true };
     cResult[4] = obj3;
-    class U {
+    class B {
       constructor() {
         return mediaSessionId.getMediaSessionId();
       }
@@ -102,19 +102,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ categories, availableSounds } = initialScrollLocation(ref[16])(channel, tmp16));
   initialScrollLocation(ref[16])(channel, tmp16);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
+    class F {
       constructor(searchQuery) {
         return searchQuery.searchQuery;
       }
     }
-    cResult[5] = D;
-    class U {
+    cResult[5] = F;
+    class B {
       constructor() {
         return mediaSessionId.getMediaSessionId();
       }
     }
   } else {
-    class D {
+    class F {
       constructor(searchQuery) {
         return searchQuery.searchQuery;
       }
@@ -122,7 +122,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmp19 = closure_7(tmp18);
   if (cResult[6] === availableSounds) {
-    class D {
+    class F {
       constructor(searchQuery) {
         return searchQuery.searchQuery;
       }
@@ -136,7 +136,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[10] = tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
   tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
 }) : (function SoundboardSoundPicker(channel) {
-  let SearchField;
+  let SearchBar;
   let SoundboardSoundPickerList;
   let _undefined;
   let availableSounds;
@@ -240,9 +240,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const Text = tmp6(tmp7[27]).Text;
   intl = tmp6(tmp7[26]).intl;
   items5 = [closure_12(Text, obj15), , , ];
-  const obj16 = { style: tmp.header, children: closure_12(SearchField, obj17) };
+  const obj16 = { style: tmp.header, children: closure_12(SearchBar, obj17) };
   obj17 = { size: "md", placeholder: intl2.string(channel(ref[26]).t.sKt3xS), onChange: callback };
-  SearchField = tmp6(tmp7[28]).SearchField;
+  SearchBar = tmp6(tmp7[28]).SearchBar;
   intl2 = tmp6(tmp7[26]).intl;
   items5[1] = closure_12(c5, obj16);
   const obj18 = { style: tmp.body, children: closure_12(SoundboardSoundPickerList, obj19) };

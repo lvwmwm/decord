@@ -222,7 +222,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
       }
     }
   }
-  const f84835 = (content) => {
+  const f86557 = (content) => {
     let parts;
     let tmp2;
     const tmp = content && typeof content === "object";
@@ -236,7 +236,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
         isArray = Array.isArray(content.content);
       }
       if (isArray) {
-        const obj2 = { content: content.map(f84835) };
+        const obj2 = { content: content.map(f86557) };
         const merged = Object.assign(content);
         content = content.content;
         tmp9 = obj2;
@@ -267,7 +267,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
         if (tmp9 == null) {
           tmp19 = content;
         }
-        const obj3 = { parts: parts.map(f84835) };
+        const obj3 = { parts: parts.map(f86557) };
         const merged2 = Object.assign(tmp19);
         parts = content.parts;
         tmp18 = obj3;
@@ -294,7 +294,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
     tmp2 = filteredMessages;
     if (0 !== filteredMessages.length) {
       let items = [filteredMessages[filteredMessages.length - 1]];
-      let mapped = items.map(f84835);
+      let mapped = items.map(f86557);
       const first = mapped[0];
       if (typeof jsonBytes === "function") {
         const _JSON = JSON;

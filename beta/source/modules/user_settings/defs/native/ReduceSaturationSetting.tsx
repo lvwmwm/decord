@@ -1,21 +1,21 @@
-// Module ID: 16474
-// Function ID: 16475
+// Module ID: 16770
+// Function ID: 16771
 // Name: ReduceSaturationSetting
-// Dependencies: [19, 5181, 8260, 21, 558, 576, 15466, 16372, 10936, 11084, 1128, 1202, 2]
+// Dependencies: [19, 4972, 8332, 21, 558, 576, 15687, 16671, 11156, 11208, 1128, 1202, 2]
 
-// Module 16474 (ReduceSaturationSetting)
+// Module 16770 (ReduceSaturationSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10936 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15466 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16372 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11156 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15687 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16671 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSaturat
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { value: AccessibilityStore.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    const obj2 = { value: AccessibilityStore.saturation, onChangeEnd: AccessibilityActionCreators.setSaturation, minValue: 0, maxValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSaturat
 }) : (function useSaturationSettingProps() {
   let saturation;
   return react.useMemo(() => {
-    const obj = { value: saturation.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    const obj = { value: saturation.saturation, onChangeEnd: AccessibilityActionCreators.setSaturation, minValue: 0, maxValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
     return obj;
   }, []);
 });

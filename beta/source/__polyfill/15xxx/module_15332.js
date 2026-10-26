@@ -1,16 +1,19 @@
 // Module ID: 15332
 // Function ID: 15333
-// Dependencies: [15328]
+// Dependencies: [15318]
 
 // Module 15332
-import _mod15328 from "module_15328" /* 15328 */;
+import _mod15318 from "module_15318" /* 15318 */;
 
 
-export default !_mod15328(() => {
-  const fn = () => {
-
-  };
-  const bindResult = fn.bind();
-  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
-  return hasOwnPropertyResult;
-});
+export default (arg0, arg1) => {
+  const tmp = _mod15318(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
+  }
+  return prerelease;
+};

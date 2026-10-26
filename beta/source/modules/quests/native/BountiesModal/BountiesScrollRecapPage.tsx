@@ -1,28 +1,28 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16343
+// Function ID: 16344
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5181, 21, 587, 5191, 1384, 558, 576, 9303, 16098, 16099, 8699, 6940, 1633, 504, 16100, 1128, 5187, 9331, 5479, 2]
+// Dependencies: [19, 17, 4972, 21, 587, 4971, 1384, 558, 576, 9401, 16344, 16345, 8790, 7074, 1633, 504, 16346, 1128, 5234, 9429, 5244, 2]
 
-// Module 16097 (BountiesScrollRecapPage)
+// Module 16343 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
-import common_Video from "common/Video" /* 8699 */;
-import OrbsIcon from "OrbsIcon" /* 9331 */;
-import _modDef16098 from "module_16098" /* 16098 */;
-import _modDef16099 from "module_16099" /* 16099 */;
-import _modDef16100 from "module_16100" /* 16100 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import components_Button_Button from "components/Button/Button" /* 5244 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7074 */;
+import common_Video from "common/Video" /* 8790 */;
+import OrbsIcon from "OrbsIcon" /* 9429 */;
+import _modDef16344 from "module_16344" /* 16344 */;
+import _modDef16345 from "module_16345" /* 16345 */;
+import _modDef16346 from "module_16346" /* 16346 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,8 +60,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   if (obj2.isAndroid()) {
     let tmp11;
     if (cResult[0] !== !reducedMotion) {
-      const obj3 = { url: _modDef16098, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-      const APNGPlayer = tmp(9303).APNGPlayer;
+      const obj3 = { url: _modDef16344, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+      const APNGPlayer = tmp(9401).APNGPlayer;
       const tmp15 = metroRequire(APNGPlayer, obj3);
       cResult[0] = !reducedMotion;
       cResult[1] = tmp15;
@@ -86,7 +86,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     let tmp5;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { uri: _modDef16099 };
+      const obj5 = { uri: _modDef16345 };
       cResult[5] = obj5;
       tmp5 = obj5;
     } else {
@@ -117,13 +117,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef16098, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9303).APNGPlayer;
+    obj3 = { url: _modDef16344, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    APNGPlayer = tmp(9401).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef16099 };
-    const VideoComponent = tmp(8699).VideoComponent;
+    obj5 = { uri: _modDef16345 };
+    const VideoComponent = tmp(8790).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
   return tmp3Result;
@@ -172,7 +172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef16100 };
+      const obj3 = { uri: _modDef16346 };
       cResult[5] = obj3;
       tmp13 = obj3;
     } else {
@@ -249,7 +249,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
                   const _Symbol4 = Symbol;
                   if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
                     const obj5 = { variant: "text-md/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(intl4.t.x0Ffz3) };
-                    const Text = tmp(5187).Text;
+                    const Text = tmp(5234).Text;
                     intl2 = tmp(1128).intl;
                     const tmp54 = metroRequire(Text, obj5);
                     cResult[31] = tmp54;
@@ -447,7 +447,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
   items1 = [tmp.root, style];
   const obj4 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj5 = { source: obj6, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef16100 };
+  obj6 = { uri: _modDef16346 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj5), ];
   const obj7 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

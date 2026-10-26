@@ -1,10 +1,10 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 12125
+// Function ID: 12126
 // Name: getApplicationInstallURL
 // Dependencies: [1087, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11958 (getApplicationInstallURL)
+// Module 12125 (getApplicationInstallURL)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -12,10 +12,11 @@ const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");
 
 export const getActivityLaunchURL = function getActivityLaunchURL(applicationId) {
+  let channelId;
   let customId;
   let linkId;
   let referrerId;
-  ({ customId, referrerId, linkId } = applicationId);
+  ({ customId, referrerId, linkId, channelId } = applicationId);
   const ACTIVITY_DETAILSResult = Routes.ACTIVITY_DETAILS(applicationId.applicationId);
   const str = new URL(ACTIVITY_DETAILSResult, "" + location.protocol + "//" + location.host);
   const searchParams = str.searchParams;
@@ -27,6 +28,9 @@ export const getActivityLaunchURL = function getActivityLaunchURL(applicationId)
   }
   if (null != customId) {
     const result2 = searchParams.set("custom_id", customId);
+  }
+  if (null != channelId) {
+    const result3 = searchParams.set("channel_id", channelId);
   }
   return str.toString();
 };

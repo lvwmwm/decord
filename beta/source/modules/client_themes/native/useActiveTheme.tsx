@@ -1,15 +1,15 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9710
+// Function ID: 9711
 // Name: useActiveTheme
-// Dependencies: [1209, 5032, 1253, 1210, 558, 576, 504, 5071, 2]
+// Dependencies: [1209, 4995, 1253, 1210, 558, 576, 504, 5149, 2]
 // Exports: useIsCustomThemeActive
 
-// Module 9610 (useActiveTheme)
+// Module 9710 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5071 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5149 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

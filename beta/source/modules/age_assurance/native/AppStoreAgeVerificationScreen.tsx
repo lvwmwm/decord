@@ -1,21 +1,24 @@
-// Module ID: 7958
-// Function ID: 7959
+// Module ID: 8077
+// Function ID: 8078
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5985, 5990, 1505, 6165, 7959, 7963, 7812, 7960, 7781, 7782, 5477, 5187, 1128, 3143, 6214, 5479, 6174, 2]
+// Dependencies: [32, 5, 19, 17, 21, 6468, 6473, 8078, 8082, 7931, 8079, 1505, 6654, 8086, 7900, 7901, 5977, 5234, 1128, 3090, 6696, 5244, 6657, 2]
 // Exports: default
 
-// Module 7958 (AppStoreAgeVerificationScreen)
+// Module 8077 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5985 */;
-import MetricEvents from "MetricEvents" /* 5990 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
+import MetricEvents from "MetricEvents" /* 6473 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6657 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7931 */;
+import AppStoreAgeSignalAttestation from "AppStoreAgeSignalAttestation" /* 8078 */;
+import AppStoreAgeAssuranceDefault from "AppStoreAgeAssurance" /* 8082 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
-let c5, c6, closure_5, dependencyMap, navigation;
+let _undefined, c3, c5, c6, dependencyMap, navigation;
 
 let c9;
 let metroImportAll;
@@ -24,10 +27,141 @@ function trackFailure(arg0) {
   let items;
   const tmp = MonitoringAgentDefault;
   const increment = tmp.increment;
-  const obj = { name: MetricEvents.MetricEvents.APP_STORE_AGE_VERIFICATION_FAILED, tags: items };
+  obj = { name: MetricEvents.MetricEvents.APP_STORE_AGE_VERIFICATION_FAILED, tags: items };
   items = ["reason:" + arg0];
   increment(obj);
 }
+function submitUserInitiatedAgeSignal() {
+  return obj(...arguments);
+}
+let obj = function _submitUserInitiatedAgeSignal() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj6;
+    let obj9;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let closure_0;
+        let closure_1;
+        let appleVerifiedMethod;
+        let closure_3;
+        let closure_4;
+        let closure_5;
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_0 = undefined;
+            closure_1 = undefined;
+            appleVerifiedMethod = undefined;
+            closure_3 = undefined;
+            closure_4 = undefined;
+            closure_5 = undefined;
+            const obj15 = AppStoreAgeSignalAttestation;
+            const result = obj15.warmAgeSignalAttestation();
+            const obj5 = { firstAgeGate: AppStoreAgeSignalSupport.MIN_AGE_GATE, secondAgeGate: AppStoreAgeSignalSupport.ADULT_AGE_GATE };
+            const getAgeSignals = AppStoreAgeAssuranceDefault.getAgeSignals;
+            const items = [getAgeSignals(obj5), ];
+            const obj17 = AppStoreAgeSignalAttestation;
+            items[1] = obj17.getAgeSignalChallenge();
+            c2 = 1;
+            c3 = 1;
+            const obj7 = { value: all(items), done: false };
+            return obj7;
+          }
+        } else if (1 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            closure_0 = value;
+            closure_1 = closure_129_3(closure_0, 2);
+            appleVerifiedMethod = closure_1[0];
+            closure_3 = closure_1[1];
+            if ("declined" === appleVerifiedMethod.appleVerifiedMethod) {
+              c3 = 3;
+              return { value: null, done: true };
+            } else {
+              c2 = 2;
+              c3 = 1;
+              const obj10 = { value: obj9.getAgeSignalIntegrityToken(closure_3, appleVerifiedMethod), done: false };
+              obj9 = closure_129_0(closure_129_2[7]);
+              return obj10;
+            }
+          }
+        } else if (2 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
+          } else {
+            closure_4 = value;
+            c2 = 3;
+            c3 = 1;
+            const obj12 = { value: obj6.getAppStoreAgeSignalAssertion(appleVerifiedMethod, false), done: false };
+            obj6 = closure_129_0(closure_129_2[7]);
+            return obj12;
+          }
+        } else if (3 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj13 = { value, done: true };
+            return obj13;
+          } else {
+            closure_5 = value;
+            const obj3 = closure_129_0(closure_129_2[10]);
+            c2 = 4;
+            c3 = 1;
+            const obj14 = { value: obj3.submitAgeSignal(appleVerifiedMethod, closure_4, false, "user_initiated", closure_5), done: false };
+            return obj14;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj16 = { value, done: true };
+          return obj16;
+        } else {
+          c3 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+      } catch (tmp24) {
+        c3 = 3;
+        throw tmp24;
+      }
+    }
+  });
+  return obj(...arguments);
+};
 let react = react_mod;
 const ActivityIndicator = react_native.ActivityIndicator;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
@@ -36,6 +170,7 @@ let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAg
 export default function AppStoreAgeVerificationScreen(modalSessionId) {
   let Button;
   let c2;
+  let closure_5;
   let intl;
   let intl2;
   let intl3;
@@ -47,26 +182,25 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   let tmp5;
   modalSessionId = modalSessionId.modalSessionId;
   dependencyMap = undefined;
+  let callback;
   let callback1;
   react = undefined;
   let tmp = modalSessionId;
   const onClose = modalSessionId.onClose;
-  let obj = modalSessionId(1505);
+  obj = modalSessionId(1505);
   navigation = obj.useNavigation();
-  const tmp4 = callback1(react.useState({ type: "loading" }), 2);
+  const tmp4 = callback(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(6165);
+  let obj2 = modalSessionId(6654);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
-  let items = [navigation];
-  const callback = react.useCallback(() => {
+  const items = [navigation];
+  callback = react.useCallback(() => {
     navigation.goBack();
   }, items);
   const items1 = [callback];
-  callback1 = react.useCallback(callback(function*(arg0, value) {
-    let closure_1;
-    let obj5;
-    let unknown_str;
-    let v0;
+  callback1 = react.useCallback(callback1(function*(arg0, value) {
+    let closure_2;
+    let obj3;
     if (c6 === 2) {
       c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -74,17 +208,16 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "IconComponent", done: null };
       }
     } else {
+      let c4;
       let status;
       try {
-        let closure_0;
-        let appleVerifiedMethod;
-        let closure_4;
+        let unknown_str;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -95,120 +228,72 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_0 = undefined;
-            navigation = undefined;
-            appleVerifiedMethod = undefined;
-            closure_4 = undefined;
-            closure_5 = undefined;
+            _undefined = tmp;
+            let closure_1 = tmp4;
+            unknown_str = undefined;
             status = undefined;
-            callback1 = 1;
-            const obj12 = unknown_str(appleVerifiedMethod[9]);
-            const result = obj12.warmAgeSignalAttestation();
-            const obj6 = { firstAgeGate: unknown_str(appleVerifiedMethod[11]).MIN_AGE_GATE, secondAgeGate: unknown_str(appleVerifiedMethod[11]).ADULT_AGE_GATE };
-            const getAgeSignals = navigation(appleVerifiedMethod[10]).getAgeSignals;
-            const tmp63 = navigation(appleVerifiedMethod[10]);
-            const items = [getAgeSignals(obj6), ];
-            const obj14 = unknown_str(appleVerifiedMethod[9]);
-            items[1] = obj14.getAgeSignalChallenge();
+            c4 = 1;
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: all(items), done: false };
-            return obj7;
+            const obj5 = { value: obj3.queueAppStoreAgeSignalSubmit(submitUserInitiatedAgeSignal), done: false };
+            obj3 = unknown_str(_undefined[13]);
+            return obj5;
           }
         } else {
           if (1 === c5) {
-            callback1 = 0;
+            c4 = 0;
             status = undefined;
             if (status != null) {
               status = status.status;
             }
-            let str2 = "unknown";
-            const tmp36 = trackFailure;
+            let str = "unknown";
+            const tmp25 = trackFailure;
             if (429 === status) {
-              str2 = "rate_limited";
+              str = "rate_limited";
             }
-            tmp36(str2);
+            tmp25(str);
             closure_130_2({ type: "error" });
-          } else if (2 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              callback1 = 0;
-              c6 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            } else {
-              closure_0 = value;
-              navigation = callback1(closure_0, 2);
-              appleVerifiedMethod = navigation[0];
-              status = navigation[1];
-              if ("declined" === appleVerifiedMethod.appleVerifiedMethod) {
-                trackFailure("user_declined");
-                closure_130_3();
-                callback1 = 0;
-                c6 = 3;
-                const obj9 = { value: undefined, done: true };
-                return obj9;
-              } else {
-                c5 = 3;
-                c6 = 1;
-                const obj10 = { value: obj5.getAgeSignalIntegrityToken(status, appleVerifiedMethod), done: false };
-                obj5 = unknown_str(appleVerifiedMethod[9]);
-                return obj10;
-              }
-            }
-          } else if (3 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              callback1 = 0;
-              c6 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
-            } else {
-              closure_4 = value;
-              const obj2 = unknown_str(appleVerifiedMethod[12]);
-              c5 = 4;
-              c6 = 1;
-              const obj13 = { value: obj2.submitAgeSignal(appleVerifiedMethod, closure_4, false, "user_initiated"), done: false };
-              return obj13;
-            }
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            callback1 = 0;
+            c4 = 0;
             c6 = 3;
-            const obj = { value, done: true };
-            return obj;
+            const obj6 = { value, done: true };
+            return obj6;
           } else {
-            closure_5 = value;
-            if ("accepted" === closure_5.result) {
-              callback1 = 0;
+            unknown_str = value;
+            if (null == unknown_str) {
+              trackFailure("user_declined");
+              closure_130_3();
+              c4 = 0;
+              c6 = 3;
+              obj = { value: undefined, done: true };
+              return obj;
+            } else if ("accepted" === unknown_str.result) {
+              c4 = 0;
               c6 = 3;
               return { value: "IconComponent", done: null };
             } else {
-              const reason = closure_5.reason;
+              const reason = unknown_str.reason;
               unknown_str = reason;
-              const tmp7 = trackFailure;
+              const tmp9 = trackFailure;
               if (reason == null) {
                 unknown_str = "unknown";
               }
-              tmp7(unknown_str);
+              tmp9(unknown_str);
               closure_130_2({ type: "error" });
-              callback1 = 0;
+              c4 = 0;
             }
           }
           c6 = 3;
           return { value: "IconComponent", done: null };
         }
-      } catch (tmp41) {
-        status = tmp41;
-        if (0 === callback1) {
+      } catch (tmp33) {
+        status = tmp33;
+        if (0 === c4) {
           c6 = 3;
-          throw tmp41;
+          throw tmp33;
         } else {
           c5 = 1;
         }
@@ -242,29 +327,29 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7781).ModalScreen;
-  const ModalContent = modalSessionId(7782).ModalContent;
-  const Stack = modalSessionId(5477).Stack;
+  const ModalScreen = modalSessionId(7900).ModalScreen;
+  const ModalContent = modalSessionId(7901).ModalContent;
+  const Stack = modalSessionId(5977).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
-    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3143).MN6I4Y) };
-    const Text = tmp(5187).Text;
+    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3090).MN6I4Y) };
+    const Text = tmp(5234).Text;
     intl = tmp(1128).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
-    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3143).tBwanH) };
-    const Text2 = tmp(5187).Text;
+    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3090).tBwanH) };
+    const Text2 = tmp(5234).Text;
     intl2 = tmp(1128).intl;
     items4 = [tmp10(Text2, obj6), ];
-    let obj7 = { children: tmp10(Button, obj8) };
-    const ButtonGroup = tmp(6214).ButtonGroup;
+    const obj7 = { children: closure_7(Button, obj8) };
+    const ButtonGroup = tmp(6696).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
-      text: intl3.string(navigation(3143)["Jx33+I"]),
+      text: intl3.string(navigation(3090)["Jx33+I"]),
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
@@ -272,12 +357,12 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5479).Button;
+    Button = tmp(5244).Button;
     intl3 = tmp(1128).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);
   }
-  let obj9 = { children: tmp10(ModalContent, obj10) };
-  obj10 = { children: tmp10(Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) };
+  const obj9 = { children: closure_7(ModalContent, obj10) };
+  obj10 = { children: closure_7(Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) };
   return closure_7(ModalScreen, obj9);
 };

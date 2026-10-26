@@ -1,12 +1,13 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 11028
+// Function ID: 11029
 // Name: GameOrganizationInviteStore
-// Dependencies: [10810, 504, 584, 2]
+// Dependencies: [11029, 11030, 504, 584, 2]
 
-// Module 10809 (GameOrganizationInviteStore)
+// Module 11028 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10810 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11029 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11030 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -49,22 +50,29 @@ let obj = {
   },
   GAME_ORGANIZATION_INVITE_RESOLVE_SUCCESS: function handleResolveSuccess(invite) {
     let application;
-    let application_config;
     let display_noun;
     let game_organization;
+    let guild;
+    let obj2;
+    let obj3;
+    let tmp2Result;
     invite = invite.invite;
     const code = invite.code;
     map = new Map(map);
-    ({ game_organization, application, application_config } = invite);
-    const obj = { code: invite.code, state: constants.RESOLVED, organization: { id: game_organization.game_organization_id, name: game_organization.name, description: game_organization.description, iconUrl: game_organization.icon_url, applicationId: game_organization.application_id, memberCount: game_organization.member_count, maxMembers: game_organization.max_members }, application: { id: application.id, name: application.name, iconUrl: application.icon_url }, displayNoun: display_noun };
-    display_noun = undefined;
+    const application_config = invite.application_config;
+    const obj = { code: invite.code, state: constants.RESOLVED, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
     set = map.set;
+    ({ game_organization, application, guild } = invite);
+    obj2 = fromServerGameOrganization;
+    display_noun = undefined;
+    obj3 = fromServerGameOrganization;
     if (application_config != null) {
       display_noun = application_config.display_noun;
     }
     if (display_noun == null) {
       display_noun = null;
     }
+    tmp2Result = fromServerGameOrganization;
     const result = set(code, obj);
   },
   GAME_ORGANIZATION_INVITE_RESOLVE_FAILURE: function handleResolveFailure(code) {

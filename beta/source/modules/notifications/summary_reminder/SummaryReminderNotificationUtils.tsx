@@ -1,14 +1,14 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16874
+// Function ID: 16875
 // Name: SummaryReminderNotificationUtils
-// Dependencies: [4858, 1087, 2044, 1267, 2]
+// Dependencies: [4916, 1087, 4799, 1267, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 16578 (SummaryReminderNotificationUtils)
+// Module 16874 (SummaryReminderNotificationUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import NotificationConstants from "NotificationConstants" /* 4858 */;
+import UserSettings from "UserSettings" /* 4799 */;
+import NotificationConstants from "NotificationConstants" /* 4916 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

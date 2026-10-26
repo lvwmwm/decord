@@ -1,8 +1,8 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 6305
+// Function ID: 6306
 // Dependencies: [2]
 
-// Module 5827
+// Module 6305
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/stickers.png.js");

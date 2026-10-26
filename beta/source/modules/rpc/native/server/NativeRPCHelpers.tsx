@@ -1,13 +1,13 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11477
+// Function ID: 11478
 // Name: NativeRPCHelpers
-// Dependencies: [5, 5895, 1087, 11335, 9169, 2]
+// Dependencies: [5, 6378, 1087, 11478, 9264, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 11334 (NativeRPCHelpers)
+// Module 11477 (NativeRPCHelpers)
 import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 5895 */;
-import RPCHelpers from "RPCHelpers" /* 11335 */;
+import Constants2 from "Constants" /* 6378 */;
+import RPCHelpers from "RPCHelpers" /* 11478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

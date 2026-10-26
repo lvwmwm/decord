@@ -1,17 +1,19 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17438
+// Function ID: 17439
 // Name: getJankSurfaceName
-// Dependencies: [19, 4897, 17137, 17136, 5075, 17140, 1384, 2]
+// Dependencies: [19, 5211, 17434, 17433, 5153, 17437, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 17141 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 5075 */;
-import getJankScreenName from "getJankScreenName" /* 17136 */;
-import react_nativeDefault from "react-native" /* 17140 */;
+// Module 17438 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 5153 */;
+import getJankScreenName from "getJankScreenName" /* 17433 */;
+import react_nativeDefault from "react-native" /* 17437 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4897 */;
-import JankScreenConstants from "JankScreenConstants" /* 17137 */;
+import ActionSheetStore from "ActionSheetStore" /* 5211 */;
+import JankScreenConstants from "JankScreenConstants" /* 17434 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -192,25 +194,26 @@ export const setJankVoicePanelFocus = function setJankVoicePanelFocus(arg0) {
   }
 };
 export const attachJankActionSheetReporter = function attachJankActionSheetReporter() {
-  let length;
-  let tmp = c15;
+  let atResult;
+  const tmp = c15;
   if (!tmp) {
-    let tmp2 = length;
-    let obj = length(1384);
-    if (obj.isAndroid()) {
-      c15 = true;
-      length = ActionSheetStore.getStack().length;
-      ActionSheetStore.addChangeListener(() => {
-        length = ActionSheetStore.getStack().length;
-        const tmp = length < length;
-        const tmp2 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
+    c15 = true;
+    const length = ActionSheetStore.getStack().length;
+    let stack = ActionSheetStore.getStack();
+    importDefault = stack.at(-1);
+    ActionSheetStore.addChangeListener(() => {
+      const stack = ActionSheetStore.getStack();
+      importDefault = stack.at(-1);
+      if (stack.length !== length) {
+        const tmp4 = stack.length < stack.length;
+        const tmp8 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
         const obj = react_nativeDefault;
-        if (tmp) {
-          obj.surfaceClosed(tmp2);
+        if (tmp4) {
+          obj.surfaceClosed(tmp8);
         } else {
-          obj.setScreenContext(tmp2, metroRequire);
+          obj.setScreenContext(tmp8, metroRequire);
         }
-      });
-    }
+      }
+    });
   }
 };

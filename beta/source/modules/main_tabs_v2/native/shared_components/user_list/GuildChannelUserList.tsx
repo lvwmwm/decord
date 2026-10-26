@@ -1,31 +1,31 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11286
+// Function ID: 11287
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7249, 2068, 2128, 2090, 2119, 1392, 1087, 21, 558, 576, 8972, 6376, 550, 7254, 7130, 504, 7015, 4850, 11164, 8877, 5509, 5057, 1128, 8577, 587, 7016, 10526, 2]
+// Dependencies: [32, 19, 17, 7372, 4823, 4883, 4845, 4874, 1392, 1087, 21, 558, 576, 9067, 6829, 550, 7377, 7253, 504, 7144, 4908, 11287, 8972, 5989, 5025, 1128, 8668, 587, 7145, 10622, 2]
 
-// Module 11163 (GuildChannelUserList)
+// Module 11286 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
-import GuildUtilsDefault from "GuildUtils" /* 6376 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import _mod8972 from "module_8972" /* 8972 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
+import UserUtilsDefault from "UserUtils" /* 5025 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
+import GuildUtilsDefault from "GuildUtils" /* 6829 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import _mod9067 from "module_9067" /* 9067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7249 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7372 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const _modDef8972 = _mod8972;
+const _modDef9067 = _mod9067;
 
 let closure_15;
 let closure_16;
@@ -63,8 +63,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSea
   if (cResult[0] !== guildId) {
     const fn = function l() {
       let obj2;
-      const tmp = _modDef8972;
-      const items = [_mod8972.AutocompleterResultTypes.USER];
+      const tmp = _modDef9067;
+      const items = [_mod9067.AutocompleterResultTypes.USER];
       const obj = { userFilters: obj2 };
       obj2 = { guild: guildId, strict: true };
       const tmp2 = new tmp((arg0, str) => {
@@ -333,8 +333,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSea
   let closure_8 = tmp3[1];
   const first1 = ref(str.useState(() => {
     let obj2;
-    const tmp = _modDef8972;
-    const items = [_mod8972.AutocompleterResultTypes.USER];
+    const tmp = _modDef9067;
+    const items = [_mod9067.AutocompleterResultTypes.USER];
     const obj = { userFilters: obj2 };
     obj2 = { guild: guildId, strict: true };
     const tmp2 = new tmp((arg0, str) => {
@@ -1280,7 +1280,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items11);
   if (flag) {
     const obj6 = { children: items12 };
-    const obj7 = { style: obj8, children: ref2(tmp5(tmp2[28]).SearchField, obj9) };
+    const obj7 = { style: obj8, children: ref2(tmp5(tmp2[28]).SearchBar, obj9) };
     obj8 = { marginHorizontal: tmp(tmp2[27]).space.PX_16 };
     obj9 = { size: "md", onChange: onChangeText, ref: searchBarRef };
     items12 = [ref2(isNameplatedList, obj7), searchBarEmptyState];

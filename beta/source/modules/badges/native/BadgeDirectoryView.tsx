@@ -1,23 +1,23 @@
-// Module ID: 10903
-// Function ID: 10904
+// Module ID: 11123
+// Function ID: 11124
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 10904, 1392, 8590, 1087, 21, 5191, 587, 558, 1499, 576, 5187, 8817, 1128, 10896, 1633, 504, 8595, 10905, 10906, 10901, 7370, 10908, 5479, 6433, 2]
+// Dependencies: [19, 17, 11124, 1392, 8681, 1087, 21, 4971, 587, 558, 1499, 576, 5234, 8913, 1128, 11116, 1633, 504, 8686, 11125, 11126, 11121, 7490, 11128, 5244, 6880, 2]
 
-// Module 10903 (BadgeDirectoryView)
+// Module 11123 (BadgeDirectoryView)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8595 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10896 */;
-import BadgeUtils from "BadgeUtils" /* 10905 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10908 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11116 */;
+import BadgeUtils from "BadgeUtils" /* 11125 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11128 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10904 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11124 */;
 import UserStore from "UserStore" /* 1392 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8590 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeS
     let tmp11;
     if (cResult[0] !== title) {
       let obj2 = { variant: "text-md/medium", color: "text-strong", children: title };
-      let tmp8 = closure_10(tmp(tmp2[12]).Text, obj2);
+      let tmp8 = closure_10(tmp(tmp2[12]).Heading, obj2);
       cResult[0] = title;
       cResult[1] = tmp8;
       tmp6 = tmp8;
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeS
     let tmp5 = closure_10;
     const tmp3 = closure_11;
     let obj2 = { variant: "text-md/medium", color: "text-strong", children: title };
-    items = [closure_10(Text_Text.Text, obj2), ];
+    items = [closure_10(Text_Text.Heading, obj2), ];
     const tmp6 = require;
     if (badges.length > 0) {
       let obj3 = {
@@ -247,7 +247,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeS
       tmp5Result = tmp5(tmp4, obj3);
     } else {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: emptyText };
-      tmp5Result = tmp5(tmp6(5187).Text, obj4);
+      tmp5Result = tmp5(tmp6(5234).Text, obj4);
     }
     items[1] = tmp5Result;
     tmp3Result = tmp3(tmp4, obj);
@@ -264,9 +264,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
   let stringResult;
   let targetUserId;
   let targetUsername;
-  let tmp36;
   let tmp37;
-  let tmp42;
+  let tmp38;
+  let tmp43;
   let tmp = targetUsername;
   let tmp2 = dependencyMap;
   let obj = targetUsername(576);
@@ -494,15 +494,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
       const tmpResult7 = tmp(504);
       const stateFromStores2 = tmpResult7.useStateFromStores(tmp29, tmp30, tmp31);
       if (cResult[19] !== tmp18) {
-        class G {
+        class N {
           constructor() {
-            if (null != targetUserId) {
-              const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-              if (!tmp2) {
-                const obj2 = BadgeDirectoryActionCreators;
-                const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-              }
-            }
+            return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
           }
         }
         const items7 = [tmp18];
@@ -517,20 +511,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
           }
         }
         cResult[19] = tmp18;
-        cResult[20] = G;
+        cResult[20] = tmp35;
         cResult[21] = items7;
         tmp34 = items7;
-        tmp33 = G;
+        tmp33 = tmp35;
       } else {
-        class G {
+        class N {
           constructor() {
-            if (null != targetUserId) {
-              const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-              if (!tmp2) {
-                const obj2 = BadgeDirectoryActionCreators;
-                const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-              }
-            }
+            return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
           }
         }
         tmp34 = cResult[21];
@@ -538,29 +526,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
       const effect = targetUserId.useEffect(tmp33, tmp34);
       const obj7 = targetUserId;
       if (cResult[22] === stateFromStores) {
-        let tmp39;
-        class G {
+        let tmp40;
+        class N {
           constructor() {
-            if (null != targetUserId) {
-              const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-              if (!tmp2) {
-                const obj2 = BadgeDirectoryActionCreators;
-                const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-              }
-            }
+            return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
           }
         }
-        const effect1 = obj7.useEffect(tmp36, tmp37);
+        const effect1 = obj7.useEffect(tmp37, tmp38);
         if (cResult[26] !== stateFromStoresArray) {
-          class G {
+          class N {
             constructor() {
-              if (null != targetUserId) {
-                const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-                if (!tmp2) {
-                  const obj2 = BadgeDirectoryActionCreators;
-                  const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-                }
-              }
+              return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
             }
           }
           const directoryBadges = obj8.getDirectoryBadges(stateFromStoresArray);
@@ -575,17 +551,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
             }
           }
           cResult[27] = directoryBadges;
-          tmp39 = directoryBadges;
+          tmp40 = directoryBadges;
         } else {
-          class G {
+          class N {
             constructor() {
-              if (null != targetUserId) {
-                const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-                if (!tmp2) {
-                  const obj2 = BadgeDirectoryActionCreators;
-                  const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-                }
-              }
+              return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
             }
           }
         }
@@ -599,21 +569,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
             return id;
           }
         }
-        const owned = tmp39.owned;
+        const owned = tmp40.owned;
         if (cResult[28] === stateFromStoresArray) {
-          class G {
+          class N {
             constructor() {
-              if (null != targetUserId) {
-                const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-                if (!tmp2) {
-                  const obj2 = BadgeDirectoryActionCreators;
-                  const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-                }
-              }
+              return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
             }
           }
-          const tmpResult8 = tmp(10906);
-          const badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators(tmp42).badgeIndicatorIds;
+          const tmpResult8 = tmp(11126);
+          const badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators(tmp43).badgeIndicatorIds;
           class U {
             constructor() {
               currentUser = currentUser.getCurrentUser();
@@ -625,15 +589,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
             }
           }
           if (null != targetUserId && targetUserId !== stateFromStores) {
-            class G {
+            class N {
               constructor() {
-                if (null != targetUserId) {
-                  const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-                  if (!tmp2) {
-                    const obj2 = BadgeDirectoryActionCreators;
-                    const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-                  }
-                }
+                return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
               }
             }
             cResult[31] = null != targetUserId && targetUserId !== stateFromStores;
@@ -657,7 +615,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         cResult[28] = stateFromStoresArray;
         cResult[29] = !(null != targetUserId && targetUserId !== stateFromStores);
         cResult[30] = obj3;
-        tmp42 = obj3;
+        tmp43 = obj3;
       }
       class Q {
         constructor() {
@@ -676,23 +634,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
       cResult[23] = null != targetUserId && targetUserId !== stateFromStores;
       cResult[24] = Q;
       cResult[25] = items8;
-      tmp36 = Q;
-      tmp37 = items8;
+      tmp37 = Q;
+      tmp38 = items8;
     }
     const items9 = [tmp4.footer, tmp9];
     cResult[2] = tmp4.footer;
     cResult[3] = tmp9;
     cResult[4] = items9;
   } else {
-    class G {
+    class N {
       constructor() {
-        if (null != targetUserId) {
-          const tmp2 = BadgeDirectoryStore.hasCatalogFor(targetUserId) && !BadgeDirectoryStore.isCatalogStaleFor(targetUserId);
-          if (!tmp2) {
-            const obj2 = BadgeDirectoryActionCreators;
-            const badgeDirectory = obj2.fetchBadgeDirectory(tmp);
-          }
-        }
+        return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
       }
     }
     throw new TypeError("Trying to call a non-function");
@@ -800,7 +752,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
     ({ owned, earnable } = memo);
     let obj3 = { badges: stateFromStoresArray, enabled: tmp36Result };
     tmp36Result = !tmp10;
-    const tmp6Result6 = targetUsername(10906);
+    const tmp6Result6 = targetUsername(11126);
     const badgeIndicatorIds = tmp6Result6.useBadgeDirectoryBadgeIndicators(obj3).badgeIndicatorIds;
     if (null != targetUserId && targetUserId !== stateFromStores) {
       let formatToPlainStringResult;
@@ -844,15 +796,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         if (stateFromStores2) {
           const obj5 = { style: tmp.centered, children: items13 };
           const obj7 = { variant: "text-md/semibold", children: intl3.string(targetUsername(1128).t.iufib1) };
-          const Text = tmp6(5187).Text;
+          const Text = tmp6(5234).Text;
           intl3 = tmp6(1128).intl;
           items13 = [closure_10(Text, obj7), , ];
           const obj8 = { variant: "text-md/normal", color: "text-subtle", children: intl4.string(targetUsername(1128).t.eAn6z2) };
-          const Text2 = tmp6(5187).Text;
+          const Text2 = tmp6(5234).Text;
           intl4 = tmp6(1128).intl;
           items13[1] = closure_10(Text2, obj8);
           const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl5.string(targetUsername(1128).t["7NqTJn"]) };
-          const Button = tmp6(5479).Button;
+          const Button = tmp6(5244).Button;
           intl5 = tmp6(1128).intl;
           items13[2] = closure_10(Button, obj9);
           tmp28 = closure_11(closure_5, obj5);
@@ -882,7 +834,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         if (null != targetUserId && targetUserId !== stateFromStores) {
           const obj14 = { style: items, children: closure_10(Button3, obj15) };
           obj15 = { variant: "secondary", onPress: callback3, text: intl9.string(targetUsername(1128).t.msyp90) };
-          Button3 = tmp6(5479).Button;
+          Button3 = tmp6(5244).Button;
           intl9 = tmp6(1128).intl;
           tmp36Result2 = tmp36(tmp34, obj14);
         } else {
@@ -890,7 +842,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
           if (tmp36Result2) {
             const obj16 = { style: items, children: closure_10(Button2, obj17) };
             obj17 = { variant: "secondary", onPress: callback1, text: intl8.string(targetUsername(1128).t["6CLLyH"]) };
-            Button2 = tmp6(5479).Button;
+            Button2 = tmp6(5244).Button;
             intl8 = tmp6(1128).intl;
             tmp36Result2 = tmp36(tmp34, obj16);
           }
@@ -898,7 +850,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         items15[1] = tmp36Result2;
         tmp33Result = tmp33(tmp34, obj10);
       } else {
-        const obj18 = { style: tmp.centered, children: closure_10(targetUsername(6433).ActivityIndicator, {}) };
+        const obj18 = { style: tmp.centered, children: closure_10(targetUsername(6880).ActivityIndicator, {}) };
         tmp33Result = closure_10(closure_5, obj18);
       }
       tmp28 = tmp33Result;

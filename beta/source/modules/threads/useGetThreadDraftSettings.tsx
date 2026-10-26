@@ -1,11 +1,11 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 10091
+// Function ID: 10092
 // Name: useGetThreadDraftSettings
-// Dependencies: [7510, 558, 576, 11, 504, 2]
+// Dependencies: [7631, 558, 576, 11, 504, 2]
 
-// Module 9994 (useGetThreadDraftSettings)
+// Module 10091 (useGetThreadDraftSettings)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DraftStore from "DraftStore" /* 7510 */;
+import DraftStore from "DraftStore" /* 7631 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

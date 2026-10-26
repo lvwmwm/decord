@@ -1,18 +1,18 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9593
+// Function ID: 9594
 // Name: FractionalPremiumUtils
-// Dependencies: [4864, 1128, 7661, 4888, 1104, 2]
+// Dependencies: [2053, 1128, 7781, 4796, 1104, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 9494 (FractionalPremiumUtils)
+// Module 9593 (FractionalPremiumUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl3 from "intl" /* 1128 */;
-import PremiumUtils from "PremiumUtils" /* 4864 */;
-import DateUtils from "DateUtils" /* 4888 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7661 */;
+import PremiumUtils from "PremiumUtils" /* 2053 */;
+import DateUtils from "DateUtils" /* 4796 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7781 */;
 import size from "module_2" /* 2 */;
 
-const f102333 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
+const f104149 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
 const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
@@ -32,12 +32,12 @@ export const getDurationStringOfFractionalPremium = function getDurationStringOf
 };
 export const getFractionalPremiumQuestRewards = function getFractionalPremiumQuestRewards(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  return rewards.filter(f102333);
+  return rewards.filter(f104149);
 };
 export const getFractionalPremiumQuestRewardName = function getFractionalPremiumQuestRewardName(rewardsConfig) {
   let obj6;
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  const found = rewards.filter(f102333);
+  const found = rewards.filter(f104149);
   const flatMapResult = found.flatMap((quantity) => {
     const ArrayResult = Array(quantity.quantity);
     return ArrayResult.fill(quantity.skuId);

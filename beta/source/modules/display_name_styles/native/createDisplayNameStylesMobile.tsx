@@ -1,13 +1,13 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8321
+// Function ID: 8322
 // Name: createDisplayNameStylesMobile
-// Dependencies: [5181, 2128, 1392, 1412, 2]
+// Dependencies: [4972, 4883, 1392, 1412, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 8249 (createDisplayNameStylesMobile)
+// Module 8321 (createDisplayNameStylesMobile)
 import DisplayNameFont from "DisplayNameFont" /* 1412 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

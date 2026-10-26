@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "e71bfb9b43d4bbd3706e078113315f40", name: "ic_image", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/safety_hub/images", width: 258, height: 235, scales: [1], hash: "67aa3a4595e9ab08ffca5da7eba4c713", name: "check-with-stars", type: "png" });

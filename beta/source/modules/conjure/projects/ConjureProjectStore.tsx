@@ -1,19 +1,19 @@
-// Module ID: 6293
-// Function ID: 6294
+// Module ID: 6773
+// Function ID: 6774
 // Name: ConjureProjectStore
-// Dependencies: [32, 1392, 6294, 504, 584, 2]
+// Dependencies: [32, 1392, 6774, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6293 (ConjureProjectStore)
+// Module 6773 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
-function isProjectOwner(item10010) {
-  const owner_user_id = item10010.owner_user_id;
+function isProjectOwner(stateFromStores) {
+  const owner_user_id = stateFromStores.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -311,8 +311,8 @@ export const canPublishProject = function canPublishProject(project) {
   }
   return tmp3;
 };
-export const canRemixProject = function canRemixProject(owner_user_id) {
-  owner_user_id = owner_user_id.owner_user_id;
+export const canRemixProject = function canRemixProject(project) {
+  const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -321,12 +321,12 @@ export const canRemixProject = function canRemixProject(owner_user_id) {
   let isProjectPublicResult = owner_user_id === id;
   if (!isProjectPublicResult) {
     obj = ConjureProjectTypes;
-    isProjectPublicResult = obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
-    obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
+    isProjectPublicResult = obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
+    obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
   }
   if (!isProjectPublicResult) {
     const obj2 = ConjureProjectTypes;
-    isProjectPublicResult = obj2.isProjectPublic(owner_user_id);
+    isProjectPublicResult = obj2.isProjectPublic(project);
   }
   return isProjectPublicResult;
 };

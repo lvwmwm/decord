@@ -1,21 +1,9 @@
 // Module ID: 15339
 // Function ID: 15340
-// Dependencies: [15340]
+// Dependencies: [15333]
 
 // Module 15339
-import _mod15340 from "module_15340" /* 15340 */;
+import _mod15333 from "module_15333" /* 15333 */;
 
 
-export default (arg0, arg1) => {
-  let tmp3 = _mod15340[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    const tmpResult = _mod15340;
-    if (!arg1) {
-      obj = {};
-    }
-    tmpResult[arg0] = obj;
-    tmp3 = obj;
-  }
-  return tmp3;
-};
+export default (arg0, arg1, arg2) => _mod15333(arg0, arg1, arg2) > 0;

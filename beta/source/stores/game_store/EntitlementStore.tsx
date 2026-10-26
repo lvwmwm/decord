@@ -1,18 +1,18 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7506
+// Function ID: 7507
 // Name: EntitlementStore
-// Dependencies: [6303, 6301, 6310, 1087, 1394, 504, 12, 6309, 1090, 584, 2]
+// Dependencies: [2046, 2043, 6824, 1087, 1394, 504, 12, 7507, 1090, 584, 2]
 
-// Module 7386 (EntitlementStore)
+// Module 7506 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 6309 */;
-import EntitlementRecord from "EntitlementRecord" /* 6303 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 6301 */;
-import SKUStore from "SKUStore" /* 6310 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7507 */;
+import EntitlementRecord from "EntitlementRecord" /* 2046 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
+import SKUStore from "SKUStore" /* 6824 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let c14 = false;
 let c15 = false;
 let set = new Set();
 let set1 = new Set();
-const authStore5 = {};
+const authStore4 = {};
 const Store = get_initializedAll.Store;
 class EntitlementStore extends Store {
   initialize() {
@@ -162,7 +162,7 @@ class EntitlementStore extends Store {
       return set;
     }
   }
-  isEntitledToSku(arg0, arg1, id, item) {
+  isEntitledToSku(arg0, arg1, applicationId, item) {
     let tmp = item;
     if (item === undefined) {
       tmp = null;
@@ -181,14 +181,14 @@ class EntitlementStore extends Store {
         continue;
       }
     }
-    if (set1.has(id)) {
+    if (set1.has(applicationId)) {
       return false;
     } else {
       let libraryApplication;
       if (null != tmp) {
-        libraryApplication = LibraryApplicationStore.getLibraryApplication(id, tmp);
+        libraryApplication = LibraryApplicationStore.getLibraryApplication(applicationId, tmp);
       } else {
-        libraryApplication = LibraryApplicationStore.getActiveLibraryApplication(id);
+        libraryApplication = LibraryApplicationStore.getActiveLibraryApplication(applicationId);
       }
       let tmp13 = null == libraryApplication || libraryApplication.sku.id !== arg1;
       if (!tmp13) {

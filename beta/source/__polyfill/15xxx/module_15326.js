@@ -1,34 +1,18 @@
 // Module ID: 15326
 // Function ID: 15327
-// Dependencies: [15327, 15329, 15336, 15359, 15347, 15361, 15357, 15362]
+// Dependencies: [15318]
 
 // Module 15326
-import _mod15327 from "module_15327" /* 15327 */;
-import _mod15329 from "module_15329" /* 15329 */;
-import _mod15336 from "module_15336" /* 15336 */;
-import _mod15347 from "module_15347" /* 15347 */;
-import _mod15357 from "module_15357" /* 15357 */;
-import _mod15359 from "module_15359" /* 15359 */;
-import _mod15361 from "module_15361" /* 15361 */;
-import propertyIsEnumerable from "propertyIsEnumerable" /* 15362 */;
+import _mod15318 from "module_15318" /* 15318 */;
 
-if (!_mod15327) {
-  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
-    const tmp3 = _mod15329(arg0);
-    const tmp4 = _mod15336(arg1);
-    if (!_mod15359) {
-      if (_mod15347(tmp3, tmp4)) {
-        const tmpResult = _mod15361;
-        const tmpResult2 = _mod15357;
-        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
-      }
-    } else {
-      try {
-        return getOwnPropertyDescriptor(tmp3, tmp4);
-      } catch (err) {
-      }
-    }
-  };
-}
 
-export const f = getOwnPropertyDescriptor;
+export default (str, arg1) => {
+  const tmp = _mod15318;
+  str = str.trim();
+  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
+  let version = null;
+  if (tmpResult) {
+    version = tmpResult.version;
+  }
+  return version;
+};

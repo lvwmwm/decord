@@ -1,12 +1,12 @@
-// Module ID: 17830
-// Function ID: 17831
+// Module ID: 18136
+// Function ID: 18137
 // Name: EnglishAnalyzer
-// Dependencies: [12, 17831, 17833, 2]
+// Dependencies: [12, 18137, 18139, 2]
 // Exports: analyze, createASTHighlighter
 
-// Module 17830 (EnglishAnalyzer)
+// Module 18136 (EnglishAnalyzer)
 import _modDef12 from "module_12" /* 12 */;
-import snowballStemmer from "snowballStemmer" /* 17831 */;
+import snowballStemmer from "snowballStemmer" /* 18137 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

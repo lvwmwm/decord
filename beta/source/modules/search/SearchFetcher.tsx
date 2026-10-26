@@ -1,13 +1,13 @@
-// Module ID: 13020
-// Function ID: 13021
+// Module ID: 13260
+// Function ID: 13261
 // Name: SearchFetcher
-// Dependencies: [5, 2068, 1087, 1104, 3, 1297, 1493, 2]
+// Dependencies: [5, 4823, 1087, 1104, 3, 1297, 1493, 2]
 
-// Module 13020 (SearchFetcher)
+// Module 13260 (SearchFetcher)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef1493 from "module_1493" /* 1493 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

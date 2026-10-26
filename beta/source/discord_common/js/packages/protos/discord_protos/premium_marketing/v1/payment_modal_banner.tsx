@@ -1,11 +1,11 @@
-// Module ID: 9431
-// Function ID: 9432
+// Module ID: 9530
+// Function ID: 9531
 // Name: payment_modal_banner
-// Dependencies: [32, 1212, 9426, 2]
+// Dependencies: [32, 1212, 9525, 2]
 
-// Module 9431 (payment_modal_banner)
+// Module 9530 (payment_modal_banner)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9426 */;
+import localized_string from "localized_string" /* 9525 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

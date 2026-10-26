@@ -1,15 +1,15 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16610
+// Function ID: 16611
 // Name: SoundboardVolumeSetting
-// Dependencies: [8260, 11084, 1128, 7332, 7324, 7155, 2]
+// Dependencies: [8332, 11208, 1128, 7452, 7444, 7278, 2]
 
-// Module 16311 (SoundboardVolumeSetting)
+// Module 16610 (SoundboardVolumeSetting)
 import intl2 from "intl" /* 1128 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7324 */;
-import SoundboardUtils from "SoundboardUtils" /* 7332 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7444 */;
+import SoundboardUtils from "SoundboardUtils" /* 7452 */;
+import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

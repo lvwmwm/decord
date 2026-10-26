@@ -1,15 +1,15 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 12007
+// Function ID: 12008
 // Name: useIsOwnedConjureApplication
-// Dependencies: [19, 2090, 6293, 569, 558, 576, 7222, 504, 10999, 2]
+// Dependencies: [19, 4845, 6773, 569, 558, 576, 7345, 504, 10720, 2]
 
-// Module 11835 (useIsOwnedConjureApplication)
+// Module 12007 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 569 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6293 */;
-import ConjureUtils from "ConjureUtils" /* 7222 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6773 */;
+import ConjureUtils from "ConjureUtils" /* 7345 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -190,12 +190,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwned
     tmp13 = fn2;
   }
   const fn = function f() {
-    let tmp = closure_1 && null != closure_0;
-    if (tmp) {
+    let result = closure_1 && null != closure_0;
+    if (result) {
       const obj = ConjureUtils;
-      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str).length > 0;
+      result = obj.hasEligibleConjureGuild(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str);
     }
-    return tmp;
+    return result;
   };
   const items5 = [arg1, arg0];
   cResult[1] = arg0;
@@ -214,12 +214,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOwned
   const items = [stateFromStores1];
   const items1 = [arg1, arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let tmp = closure_1 && null != closure_0;
-    if (tmp) {
+    let result = closure_1 && null != closure_0;
+    if (result) {
       const obj = ConjureUtils;
-      tmp = obj.eligibleConjureGuilds(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str).length > 0;
+      result = obj.hasEligibleConjureGuild(GuildStore.getGuildsArray(), useIsOwnedConjureApplication_str);
     }
-    return tmp;
+    return result;
   }, items1);
   const items2 = [ConjureProjectStore];
   const obj2 = require("get initialized");

@@ -1,19 +1,19 @@
-// Module ID: 10787
-// Function ID: 10788
+// Module ID: 11007
+// Function ID: 11008
 // Name: MuteSettingsActionSheet
-// Dependencies: [19, 2068, 2090, 4855, 1392, 1087, 21, 558, 576, 5187, 1128, 10721, 5155, 1202, 10788, 5521, 6542, 6457, 10789, 7117, 7175, 2]
+// Dependencies: [19, 4823, 4845, 4913, 1392, 1087, 21, 558, 576, 5234, 1128, 10941, 5210, 1202, 11008, 5604, 6987, 6903, 11009, 7248, 7298, 2]
 
-// Module 10787 (MuteSettingsActionSheet)
+// Module 11007 (MuteSettingsActionSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10721 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Text_Text from "Text/Text" /* 5234 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10941 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import GuildStore_mod from "GuildStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.t0mEt2) };
-      const Text3 = tmp(5187).Text;
+      const Text3 = tmp(5234).Text;
       intl5 = tmp(1128).intl;
       const tmp23 = React4(Text3, obj2);
       cResult[0] = tmp23;
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl4.format(intl6.t.O34r15, obj4) };
-      const Text2 = tmp(5187).Text;
+      const Text2 = tmp(5234).Text;
       intl4 = tmp(1128).intl;
       obj4 = {
         mutedHook(children, arg1) {
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { variant: "text-sm/medium", color: "text-default", children: intl3.format(intl6.t.nRwUIL, obj6) };
-      const Text = tmp(5187).Text;
+      const Text = tmp(5234).Text;
       intl3 = tmp(1128).intl;
       obj6 = {
         notificationHook(children, arg1) {

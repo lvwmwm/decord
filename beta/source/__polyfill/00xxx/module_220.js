@@ -26,11 +26,11 @@ function _isNativeReflectConstruct() {
   }
 }
 class MessageEvent {
-  constructor(arg0, data) {
+  constructor(arg0, arg1) {
     let constructResult;
     const self = this;
     _classCallCheck(this, MessageEvent);
-    const items = [arg0, data];
+    const items = [arg0, arg1];
     const obj = _getPrototypeOf(MessageEvent);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
@@ -41,15 +41,15 @@ class MessageEvent {
       constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    data = undefined;
-    if (data != null) {
-      data = data.data;
+    let data;
+    if (arg1 != null) {
+      data = arg1.data;
     }
     tmp3Result._data = data;
     let str;
     const _String = String;
-    if (data != null) {
-      str = data.origin;
+    if (arg1 != null) {
+      str = arg1.origin;
     }
     if (str == null) {
       str = "";
@@ -57,8 +57,8 @@ class MessageEvent {
     tmp3Result._origin = _String(str);
     let str2;
     const _String2 = String;
-    if (data != null) {
-      str2 = data.lastEventId;
+    if (arg1 != null) {
+      str2 = arg1.lastEventId;
     }
     if (str2 == null) {
       str2 = "";

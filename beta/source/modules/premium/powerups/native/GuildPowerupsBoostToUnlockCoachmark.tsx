@@ -1,17 +1,17 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17599
+// Function ID: 17600
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 558, 576, 13181, 17299, 2]
+// Dependencies: [19, 558, 576, 13419, 17600, 2]
 
-// Module 17298 (GuildPowerupsBoostToUnlockCoachmark)
+// Module 17599 (GuildPowerupsBoostToUnlockCoachmark)
 import react2 from "react" /* 576 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 17299 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 17600 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GuildPowerupsNotification = tmp(13181);
+const GuildPowerupsNotification = tmp(13419);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostToUnlockCoachmark(arg0) {
   let markAsDismissed;
   let powerup;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     const obj = { type: GuildPowerupsNotification.GuildPowerupNotificationPopoutType.BOOST_TO_UNLOCK, powerup, markAsDismissed };
     return obj;
   }, items);
-  markAsDismissed(17299)(targetRef, guildId, memo);
+  markAsDismissed(17600)(targetRef, guildId, memo);
   return null;
 });
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");

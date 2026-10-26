@@ -1,20 +1,20 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 18166
+// Function ID: 18167
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 2068, 1087, 1127, 21, 5191, 587, 558, 576, 7246, 6942, 13109, 5202, 17861, 573, 1506, 2]
+// Dependencies: [19, 17, 4823, 1087, 1127, 21, 4971, 587, 558, 576, 7369, 5593, 13347, 5707, 18167, 573, 1506, 2]
 
-// Module 17860 (ThreadsScreen)
+// Module 18166 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 13109 */;
-import ThreadListDefault from "ThreadList" /* 17861 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 13347 */;
+import ThreadListDefault from "ThreadList" /* 18167 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import createStyles from "createStyles" /* 5191 */;
+import ChannelStore from "ChannelStore" /* 4823 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   const cResult = obj.c(16);
   ({ style, channel } = arg0);
   const tmp3 = closure_9();
-  let obj2 = channel(7246);
+  let obj2 = channel(7369);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { includeKeyboardHeight: true };
@@ -128,7 +128,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(7246);
+  let obj = channel(7369);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;

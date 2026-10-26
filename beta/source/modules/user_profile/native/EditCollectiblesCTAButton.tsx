@@ -1,23 +1,23 @@
-// Module ID: 8570
-// Function ID: 8571
+// Module ID: 8661
+// Function ID: 8662
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5181, 1089, 1629, 21, 5191, 558, 576, 1633, 504, 8571, 4945, 5478, 4864, 7542, 8572, 1128, 5156, 8573, 8574, 7529, 5155, 5479, 2]
+// Dependencies: [19, 4972, 1089, 1629, 21, 4971, 558, 576, 1633, 504, 8662, 5052, 5247, 2053, 7662, 8663, 1128, 5212, 8664, 8665, 7649, 5210, 5244, 2]
 
-// Module 8570 (EditCollectiblesCTAButton)
+// Module 8661 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import intl4 from "intl" /* 1128 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import spring from "spring" /* 5478 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8573 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8574 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5212 */;
+import spring from "spring" /* 5247 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8664 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8665 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import createStyles from "createStyles" /* 5191 */;
+import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7588
-// Function ID: 7589
+// Module ID: 7705
+// Function ID: 7706
 // Name: UserProfileGameWidgetTypes
-// Dependencies: [7589, 7587, 7590, 2]
+// Dependencies: [7706, 7704, 7707, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7588 (UserProfileGameWidgetTypes)
-import WidgetType from "WidgetType" /* 7587 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 7590 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7589 */;
+// Module 7705 (UserProfileGameWidgetTypes)
+import WidgetType from "WidgetType" /* 7704 */;
+import GameWidgetLimits from "GameWidgetLimits" /* 7707 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7706 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -51,7 +51,7 @@ class BaseGameWidget {
     return tmp;
   }
   isEqual(type) {
-    const f142405 = (gameId, index) => {
+    const f145107 = (gameId, index) => {
       let c0;
       let flag = false;
       if (gameId.gameId === games1[index].gameId) {
@@ -128,8 +128,8 @@ class BaseGameWidget {
         const games = self.games;
         const games1 = type.games;
         type = self.type;
-        tmp2 = games.length === games1.length && games.every(f142405);
-        const tmp3 = games.length === games1.length && games.every(f142405);
+        tmp2 = games.length === games1.length && games.every(f145107);
+        const tmp3 = games.length === games1.length && games.every(f145107);
       }
       tmp = tmp2;
     }

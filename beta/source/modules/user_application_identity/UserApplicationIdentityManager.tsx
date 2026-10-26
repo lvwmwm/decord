@@ -1,11 +1,11 @@
-// Module ID: 19110
-// Function ID: 19111
+// Module ID: 19445
+// Function ID: 19446
 // Name: UserApplicationIdentityManager
-// Dependencies: [11707, 7085, 2]
+// Dependencies: [10791, 7214, 2]
 
-// Module 19110 (UserApplicationIdentityManager)
-import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 11707 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+// Module 19445 (UserApplicationIdentityManager)
+import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 10791 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
 function handleUserApplicationIdentityGatewayEvent(user_id) {

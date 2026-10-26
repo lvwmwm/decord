@@ -1,8 +1,8 @@
-// Module ID: 5710
-// Function ID: 5711
+// Module ID: 6188
+// Function ID: 6189
 // Dependencies: [2]
 
-// Module 5710
+// Module 6188
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/astronaut_martian.png.js");

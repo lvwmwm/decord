@@ -1,12 +1,12 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 5641
+// Function ID: 5642
 // Name: DismissibleContentFrameworkActionCreators
-// Dependencies: [2060, 584, 2]
-// Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, overrideUpsellBackoff, resetDismissibleContentFrameworkStore
+// Dependencies: [4815, 584, 2]
+// Exports: handleDCActioned, handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, overrideUpsellBackoff, resetDismissibleContentFrameworkStore
 
-// Module 10637 (DismissibleContentFrameworkActionCreators)
+// Module 5641 (DismissibleContentFrameworkActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2060 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4815 */;
 import size from "module_2" /* 2 */;
 
 const resetFatigueCooldown = DismissibleContentShownStateStore.resetFatigueCooldown;
@@ -20,6 +20,11 @@ export const handleDCShownToUser = function handleDCShownToUser(dismissibleConte
 export const handleDCDismissed = function handleDCDismissed(dismissibleContent, guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "DCF_HANDLE_DC_DISMISSED", dismissibleContent, guildId };
+  obj.dispatch(obj2);
+};
+export const handleDCActioned = function handleDCActioned(dismissibleContent) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "DCF_HANDLE_DC_ACTIONED", dismissibleContent };
   obj.dispatch(obj2);
 };
 export const resetDismissibleContentFrameworkStore = function resetDismissibleContentFrameworkStore() {

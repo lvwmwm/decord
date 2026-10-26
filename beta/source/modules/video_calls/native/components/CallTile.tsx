@@ -1,33 +1,33 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11710
+// Function ID: 11711
 // Name: CallTile
-// Dependencies: [19, 17, 6153, 1392, 10662, 5214, 21, 5191, 5063, 587, 558, 576, 7130, 1633, 504, 5205, 8577, 11280, 11529, 11300, 11312, 11558, 11563, 11564, 11565, 11566, 11567, 1202, 11228, 4945, 5192, 11568, 2]
+// Dependencies: [19, 17, 6642, 1392, 10882, 5632, 21, 4971, 4968, 587, 558, 576, 7253, 1633, 504, 5710, 8668, 11423, 11682, 11443, 11452, 11711, 11716, 11717, 11718, 11719, 11720, 1202, 11367, 5052, 5206, 11721, 2]
 
-// Module 11557 (CallTile)
+// Module 11710 (CallTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11558 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11563 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11564 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11565 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11566 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11567 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11568 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
+import timing from "timing" /* 5206 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11711 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11716 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11717 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11718 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11719 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11720 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11721 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelCallStore from "ChannelCallStore" /* 10662 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import ChannelCallStore from "ChannelCallStore" /* 10882 */;
+import CallConstants from "CallConstants" /* 5632 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
-import ColorUtils_mod from "ColorUtils" /* 5063 */;
+import createStyles_mod from "createStyles" /* 4971 */;
+import ColorUtils_mod from "ColorUtils" /* 4968 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -672,8 +672,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   const tmp4 = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  reveal = react.useContext(reveal(11228).RevealContext).reveal;
-  let obj2 = reveal(4945);
+  reveal = react.useContext(reveal(11367).RevealContext).reveal;
+  let obj2 = reveal(5052);
   const fn = function l() {
     let obj2;
     let num = 0;
@@ -686,10 +686,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
     obj2 = { easing: native.STANDARD_EASING, duration: 250 };
     return obj;
   };
-  fn.__closure = { withTiming: reveal(5192).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING };
+  fn.__closure = { withTiming: reveal(5206).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING };
   fn.__workletHash = 15640123774063;
   fn.__initData = __initData;
-  ({ withTiming: reveal(5192).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING });
+  ({ withTiming: reveal(5206).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let num = 0;
   if (hasBottomSafeArea) {
@@ -843,8 +843,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const tmp5 = reveal;
-  reveal = react.useContext(reveal(11228).RevealContext).reveal;
-  let obj = reveal(4945);
+  reveal = react.useContext(reveal(11367).RevealContext).reveal;
+  let obj = reveal(5052);
   class A {
     constructor() {
       tmp = closure_0;
@@ -861,7 +861,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
       return obj;
     }
   }
-  let obj2 = { withTiming: reveal(5192).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING };
+  let obj2 = { withTiming: reveal(5206).withTiming, reveal, STANDARD_EASING: reveal(1202).STANDARD_EASING };
   A.__closure = obj2;
   A.__workletHash = 1463196379948;
   A.__initData = __initData2;
@@ -885,7 +885,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   }
   const obj3 = { pointerEvents: "none", style: items, children: items1 };
   items = [closure_4.absoluteFill, rect, animatedStyle];
-  const View = tmp2(4945).View;
+  const View = tmp2(5052).View;
   if (isActiveStream) {
     const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1202).LiveTag, {}) };
     isActiveStream = closure_13(closure_5, obj4);
@@ -893,7 +893,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   items1 = [isActiveStream, ];
   const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
   obj6 = { style: tmp.usernameContainer, children: items2 };
-  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11568), { channel, participant })];
+  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11721), { channel, participant })];
   items1[1] = closure_13(closure_5, obj5);
   return closure_15(View, obj3);
 });

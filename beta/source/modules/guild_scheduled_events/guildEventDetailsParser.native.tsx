@@ -1,10 +1,10 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 9017
+// Function ID: 9018
 // Name: guildEventDetailsParser
-// Dependencies: [5179, 2]
+// Dependencies: [5705, 2]
 
-// Module 8922 (guildEventDetailsParser)
-import MarkupUtils from "MarkupUtils" /* 5179 */;
+// Module 9017 (guildEventDetailsParser)
+import MarkupUtils from "MarkupUtils" /* 5705 */;
 import size from "module_2" /* 2 */;
 
 const reactParserForResult = MarkupUtils.reactParserFor(MarkupUtils.guildEventLocationRules);
