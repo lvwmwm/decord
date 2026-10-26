@@ -1,466 +1,270 @@
 // Module ID: 13930
 // Function ID: 13931
-// Dependencies: [5, 19, 13931, 13916]
-// Exports: useIAP
+// Dependencies: [5, 32, 19, 21, 13915, 13927]
+// Exports: useIAPContext, withIAPContext
 
 // Module 13930
+import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 
-let developerPayloadAndroid, isConsumable, purchase;
+let c1, c2, c3, redux, setConnected;
 
-let c3;
 let closure_4;
-({ useCallback: c3, useEffect: closure_4 } = react);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let react = react_mod;
+({ useContext: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+const context = react.createContext(null);
 
-export const useIAP = () => {
-  let availablePurchases;
-  let connected;
-  let currentPurchase;
-  let currentPurchaseError;
-  let initConnectionError;
-  let products;
-  let promotedProductsIOS;
-  let purchaseHistory;
-  let setProducts;
-  let subscriptions;
-  const tmp = currentPurchase;
-  const tmp2 = currentPurchaseError;
-  let obj = currentPurchase(currentPurchaseError[2]);
-  const iAPContext = obj.useIAPContext();
-  currentPurchaseError = iAPContext.currentPurchaseError;
-  ({ setConnected: _asyncToGenerator, setProducts } = iAPContext);
-  const setSubscriptions = iAPContext.setSubscriptions;
-  const setAvailablePurchases = iAPContext.setAvailablePurchases;
-  const setPurchaseHistory = iAPContext.setPurchaseHistory;
-  const setCurrentPurchase = iAPContext.setCurrentPurchase;
-  const setCurrentPurchaseError = iAPContext.setCurrentPurchaseError;
-  ({ connected, products, promotedProductsIOS, subscriptions, purchaseHistory, availablePurchases, initConnectionError } = iAPContext);
-  const tmp4 = setProducts;
-  _asyncToGenerator(async (arg0, value) => {
-    let obj2;
-    closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let closure_3;
-        let skus;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_3 = tmp4;
-            let closure_2 = tmp;
-            skus = closure_0.skus;
-            c4 = 1;
-            c5 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else {
-          let closure_1;
-          if (1 === c4) {
+export const useIAPContext = function useIAPContext() {
+  const tmp = React3(closure_9);
+  if (tmp) {
+    return tmp;
+  } else {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("You need wrap your app with withIAPContext HOC");
+    throw error;
+  }
+};
+export function withIAPContext(arg0) {
+  let closure_0 = arg0;
+  return function WrapperComponent(arg0) {
+    let closure_15;
+    let closure_19;
+    let first;
+    let first1;
+    let first2;
+    let first3;
+    let first4;
+    let first7;
+    let first9;
+    let tmp11;
+    let tmp14;
+    let tmp3;
+    let tmp6;
+    [first, tmp3] = metroImportDefault(false);
+    let closure_1 = tmp3;
+    [first1, tmp6] = metroImportDefault([]);
+    let closure_3 = tmp6;
+    [first2, hasOwnProperty] = metroImportDefault([]);
+    [first3, tmp11] = metroImportDefault([]);
+    metroImportDefault = tmp11;
+    [first4, tmp14] = metroImportDefault([]);
+    redux = tmp14;
+    const tmp15 = _slicedToArray(metroImportDefault([]), 2);
+    const first5 = tmp15[0];
+    let closure_11 = tmp17;
+    const tmp18 = _slicedToArray(metroImportDefault(), 2);
+    const first6 = tmp18[0];
+    let closure_13 = tmp20;
+    [first7, closure_15] = metroImportDefault();
+    const tmp23 = _slicedToArray(metroImportDefault(), 2);
+    const first8 = tmp23[0];
+    let closure_17 = tmp25;
+    [first9, closure_19] = metroImportDefault();
+    let items = [first, first1, first3, first2, first4, first5, first6, first7, first8, first9, tmp3, tmp6, tmp11, tmp14, tmp15[1], tmp18[1], tmp23[1]];
+    const tmp28 = metroRequire(() => ({ connected, products: first1, subscriptions: first3, promotedProductsIOS: first2, purchaseHistory: first4, availablePurchases: first5, currentPurchase: first6, currentTransaction: first7, currentPurchaseError: first8, initConnectionError: first9, setConnected, setProducts, setSubscriptions, setPurchaseHistory, setAvailablePurchases, setCurrentPurchase, setCurrentPurchaseError }), items);
+    hasOwnProperty(() => {
+      const obj = closure_2_0(closure_2_1[4]);
+      const connection = obj.initConnection();
+      const nextPromise = connection.then((result) => {
+        closure_1_19(undefined);
+        setConnected(result);
+      });
+      nextPromise.catch(closure_19);
+    }, []);
+    let items1 = [first];
+    hasOwnProperty(() => {
+      if (closure_0) {
+        let tmp = first;
+        const tmp2 = setConnected;
+        const tmp3 = first(setConnected[5]);
+        let tmp4 = first1;
+        const purchaseUpdatedListener = tmp3.purchaseUpdatedListener;
+        first1(function*(arg0, value) {
+          closure_0 = arg0;
+          if (c1 === 2) {
+            c1 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp2 === 3) {
             if (arg0 === 1) {
-              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
+              const obj2 = { value, done: true };
+              return obj2;
             } else {
-              closure_1 = closure_3;
-              const obj6 = { skus };
-              c4 = 2;
-              c5 = 1;
-              const obj7 = { value: obj2.getProducts(obj6), done: false };
-              obj2 = closure_0(currentPurchaseError[3]);
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            closure_1(value);
-            c5 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        }
-      } catch (tmp14) {
-        c5 = 3;
-        throw tmp14;
-      }
-    }
-  });
-  const items = [setProducts];
-  const tmp5 = setProducts(function(arg0) {
-    return closure_0(...arguments);
-  }, items);
-  _asyncToGenerator(async (arg0, value) => {
-    let obj2;
-    closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let skus;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            skus = closure_0.skus;
-            c4 = 1;
-            c5 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else {
-          let closure_1;
-          if (1 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              closure_1 = c4;
-              const obj6 = { skus };
-              c4 = 2;
-              c5 = 1;
-              const obj7 = { value: obj2.getSubscriptions(obj6), done: false };
-              obj2 = closure_0(currentPurchaseError[3]);
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            closure_1(value);
-            c5 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        }
-      } catch (tmp14) {
-        c5 = 3;
-        throw tmp14;
-      }
-    }
-  });
-  const items1 = [setSubscriptions];
-  const items2 = [setAvailablePurchases];
-  const tmp6 = setProducts(function(arg0) {
-    return closure_0(...arguments);
-  }, items1);
-  const items3 = [setPurchaseHistory];
-  const tmp7 = setProducts(_asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let closure_0;
-    if (c2 === 2) {
-      c2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c2 = 2;
-        if (0 === currentPurchaseError) {
-          if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            currentPurchase = setAvailablePurchases;
-            const obj2 = currentPurchase(currentPurchaseError[3]);
-            currentPurchaseError = 1;
-            c2 = 1;
-            const obj5 = { value: obj2.getAvailablePurchases(), done: false };
-            return obj5;
-          }
-        } else if (arg0 === 1) {
-          c2 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          currentPurchase(value);
-          c2 = 3;
-          return { value: "IconComponent", done: null };
-        }
-      } catch (tmp9) {
-        c2 = 3;
-        throw tmp9;
-      }
-    }
-  }), items2);
-  const tmp8 = setProducts(_asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let closure_0;
-    if (c2 === 2) {
-      c2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c2 = 2;
-        if (0 === currentPurchaseError) {
-          if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            currentPurchase = setPurchaseHistory;
-            const obj2 = currentPurchase(currentPurchaseError[3]);
-            currentPurchaseError = 1;
-            c2 = 1;
-            const obj5 = { value: obj2.getPurchaseHistory(), done: false };
-            return obj5;
-          }
-        } else if (arg0 === 1) {
-          c2 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          currentPurchase(value);
-          c2 = 3;
-          return { value: "IconComponent", done: null };
-        }
-      } catch (tmp9) {
-        c2 = 3;
-        throw tmp9;
-      }
-    }
-  }), items3);
-  currentPurchase = _asyncToGenerator(async (purchase) => {
-    let c5 = 0;
-    let c6 = 0;
-    let c4 = 0;
-    const iter = (async (arg0, value) => {
-      let c0;
-      let c1;
-      let c2;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              let closure_2 = tmp;
-              purchase = undefined;
-              isConsumable = undefined;
-              developerPayloadAndroid = undefined;
-              ({ purchase: c0, isConsumable: c1, developerPayloadAndroid: c2 } = purchase);
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
-            let finishTransactionResult;
-            if (1 === c5) {
+            try {
+              c1 = 2;
               if (arg0 === 1) {
-                c6 = 3;
+                c1 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
+                c1 = 3;
+                const obj = { value, done: true };
+                return obj;
               } else {
-                c4 = 2;
-                const obj6 = { purchase, isConsumable, developerPayloadAndroid };
-                const obj3 = purchase(currentPurchaseError[3]);
-                finishTransactionResult = obj3.finishTransaction(obj6);
-                c5 = 4;
-                c6 = 1;
-                return { value: finishTransactionResult, done: false };
+                closure_1_17(undefined);
+                closure_1_13(closure_0);
+                c1 = 3;
+                return { value: "IconComponent", done: "+352" };
               }
-            } else if (2 === c5) {
-              c4 = 0;
-              finishTransactionResult = undefined;
-              const productId = purchase.productId;
-              const tmp35 = closure_3;
-              if (purchase != null) {
-                finishTransactionResult = purchase.productId;
-              }
-              if (productId === finishTransactionResult) {
-                finishTransactionResult = closure_1_7(undefined);
-              }
-              finishTransactionResult = undefined;
-              const productId2 = purchase.productId;
-              if (finishTransactionResult != null) {
-                finishTransactionResult = finishTransactionResult.productId;
-              }
-              if (productId2 === finishTransactionResult) {
-                finishTransactionResult = closure_1_8(undefined);
-              }
-              throw tmp35;
-            } else if (3 === c5) {
-              c4 = 1;
-              throw closure_3;
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              finishTransactionResult = purchase.productId;
-              let productId1;
-              if (purchase != null) {
-                productId1 = purchase.productId;
-              }
-              if (finishTransactionResult === productId1) {
-                closure_1_7(undefined);
-              }
-              finishTransactionResult = purchase.productId;
-              let productId3;
-              if (finishTransactionResult != null) {
-                productId3 = finishTransactionResult.productId;
-              }
-              if (finishTransactionResult === productId3) {
-                closure_1_8(undefined);
-              }
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              c4 = 0;
-              finishTransactionResult = purchase.productId;
-              let productId4;
-              if (purchase != null) {
-                productId4 = purchase.productId;
-              }
-              if (finishTransactionResult === productId4) {
-                closure_1_7(undefined);
-              }
-              finishTransactionResult = purchase.productId;
-              let productId5;
-              if (finishTransactionResult != null) {
-                productId5 = finishTransactionResult.productId;
-              }
-              if (finishTransactionResult === productId5) {
-                closure_1_8(undefined);
-              }
-              c6 = 3;
-              return { value, done: true };
+            } catch (tmp8) {
+              c1 = 3;
+              throw tmp8;
             }
           }
-        } catch (tmp53) {
-          closure_3 = tmp53;
-          if (0 === c4) {
-            c6 = 3;
-            throw tmp53;
-          } else if (1 === tmp55) {
-            c5 = 2;
+        });
+        purchaseUpdatedListener(function(arg0) {
+          return closure_0(...arguments);
+        });
+        const transactionListener = first(setConnected[5]).transactionListener;
+        const tmp5 = first(setConnected[5]);
+        closure_0 = first1(function*(arg0, value) {
+          closure_0 = arg0;
+          if (c1 === 2) {
+            c1 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp2 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: "+352" };
+            }
           } else {
-            c5 = 3;
+            try {
+              c1 = 2;
+              if (arg0 === 1) {
+                c1 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c1 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                let error;
+                const tmp4 = closure_1_17;
+                if (closure_0 != null) {
+                  error = tmp3.error;
+                }
+                tmp4(error);
+                let transaction;
+                const tmp8 = closure_1_15;
+                if (closure_0 != null) {
+                  transaction = tmp3.transaction;
+                }
+                tmp8(transaction);
+                c1 = 3;
+                return { value: "IconComponent", done: "+352" };
+              }
+            } catch (tmp11) {
+              c1 = 3;
+              throw tmp11;
+            }
           }
-        }
+        });
+        setConnected = transactionListener(function(arg0) {
+          return closure_0(...arguments);
+        });
+        let obj = first(setConnected[5]);
+        let closure_2 = obj.purchaseErrorListener((arg0) => {
+          setCurrentPurchase(undefined);
+          setCurrentPurchaseError(arg0);
+        });
+        let obj2 = first(setConnected[5]);
+        let closure_3 = obj2.promotedProductListener(first1(function*(arg0, value) {
+          if (c3 === 2) {
+            c3 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
+            } else {
+              return { value: "IconComponent", done: "+352" };
+            }
+          } else {
+            try {
+              let tmp;
+              c3 = 2;
+              if (0 === c2) {
+                if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  closure_1 = tmp4;
+                  tmp = undefined;
+                  const IapIos = tmp(closure_1[4]).IapIos;
+                  c2 = 1;
+                  c3 = 1;
+                  const obj4 = { value: IapIos.getPromotedProductIOS(), done: false };
+                  return obj4;
+                }
+              } else if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                tmp = value;
+                closure_1_5((arg0) => {
+                  let items2;
+                  const items = [...arg0];
+                  if (closure_1_0) {
+                    const items1 = [tmp3];
+                    items2 = items1;
+                  } else {
+                    items2 = [];
+                  }
+                  HermesBuiltin.arraySpread(items, items2, tmp2);
+                  return items;
+                });
+                c3 = 3;
+                return { value: "IconComponent", done: "+352" };
+              }
+            } catch (tmp11) {
+              c3 = 3;
+              throw tmp11;
+            }
+          }
+        }));
+        return () => {
+          closure_0.remove();
+          closure_2.remove();
+          const obj = closure_3;
+          if (closure_3 != null) {
+            obj.remove();
+          }
+          const obj2 = closure_1;
+          if (closure_1 != null) {
+            obj2.remove();
+          }
+        };
       }
-    })();
-    iter.next();
-    return iter;
-  });
-  let productId;
-  if (currentPurchase != null) {
-    productId = currentPurchase.productId;
-  }
-  const items4 = [productId, , , ];
-  let productId1;
-  if (currentPurchaseError != null) {
-    productId1 = currentPurchaseError.productId;
-  }
-  items4[1] = productId1;
-  items4[2] = setCurrentPurchase;
-  items4[3] = setCurrentPurchaseError;
-  const tmp4Result = tmp4(function(arg0) {
-    return closure_0(...arguments);
-  }, items4);
-  setSubscriptions(() => {
-    _asyncToGenerator(true);
-    return () => {
-      closure_1_2(false);
-      setCurrentPurchaseError(undefined);
-    };
-  }, []);
-  let obj2 = { connected, products, promotedProductsIOS, subscriptions, purchaseHistory, availablePurchases, currentPurchase, currentPurchaseError, initConnectionError, finishTransaction: tmp4Result, getProducts: tmp5, getSubscriptions: tmp6, getAvailablePurchases: tmp7, getPurchaseHistory: tmp8, requestPurchase: tmp(tmp2[3]).requestPurchase, requestSubscription: tmp(tmp2[3]).requestSubscription };
-  return obj2;
-};
+    }, items1);
+    let obj2 = {};
+    const Provider = redux.Provider;
+    const merged = Object.assign(arg0);
+    return <Provider value={tmp28}>{null}</Provider>;
+  };
+}

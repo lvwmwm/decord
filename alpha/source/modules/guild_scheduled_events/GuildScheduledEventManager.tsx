@@ -31,7 +31,7 @@ let obj = function _getGuildEventsForCurrentUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -78,7 +78,7 @@ let obj = function _getGuildEventsForCurrentUser() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp22) {
         let closure_3 = tmp22;
         if (0 === c4) {
@@ -219,7 +219,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c2;
@@ -297,7 +297,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                     let obj3 = { value, done: true };
                                     return obj3;
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "+352" };
                                   }
                                 } else {
                                   try {
@@ -327,7 +327,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                                 const obj3 = { value, done: true };
                                                 return obj3;
                                               } else {
-                                                return { value: "IconComponent", done: null };
+                                                return { value: "IconComponent", done: "+352" };
                                               }
                                             } else {
                                               while (true) {
@@ -385,7 +385,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                                       continue;
                                                     }
                                                     c7 = 3;
-                                                    return { value: "IconComponent", done: null };
+                                                    return { value: "IconComponent", done: "+352" };
                                                   }
                                                 } else {
                                                   c5 = 0;
@@ -426,7 +426,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                       } else {
                                         let num4 = 3;
                                         c0 = 3;
-                                        return { value: "IconComponent", done: null };
+                                        return { value: "IconComponent", done: "+352" };
                                       }
                                     }
                                   } catch (tmp7) {
@@ -467,7 +467,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
             }
             let num4 = 3;
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp18) {
             tmp19 = c2;
             if (0 === c2) {
@@ -504,7 +504,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -536,7 +536,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 _self = guildScheduledEventsForGuild[Symbol.iterator]();
               }
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (1 === tmp4) {
             guildScheduledEventsForGuild = 0;
@@ -615,7 +615,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     let self = this;
     return (async function(arg0, value) {
       let closure_0;
-      const f159152 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
+      const f159165 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -626,7 +626,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -649,7 +649,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 guildId = guildScheduledEventsForGuild[Symbol.iterator]();
               }
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (1 === tmp4) {
             let c6 = 0;
@@ -663,7 +663,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
               let _Promise3 = Promise;
               let self5 = this;
               let self6 = this;
-              let promise = new Promise(f159152);
+              let promise = new Promise(f159165);
               c8 = 3;
               c9 = 1;
               let obj4 = { value: promise, done: false };
@@ -690,7 +690,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise2 = Promise;
                 let self3 = this;
                 let self4 = this;
-                let promise3 = new Promise(f159152);
+                let promise3 = new Promise(f159165);
                 c8 = 5;
                 c9 = 1;
                 let obj6 = { value: promise3, done: false };
@@ -700,7 +700,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise = Promise;
                 self = this;
                 let self2 = this;
-                let promise4 = new Promise(f159152);
+                let promise4 = new Promise(f159165);
                 c8 = 6;
                 c9 = 1;
                 let obj7 = { value: promise4, done: false };

@@ -1,17 +1,17 @@
-// Module ID: 18483
-// Function ID: 18484
+// Module ID: 18482
+// Function ID: 18483
 // Name: FramePanelPIPView
-// Dependencies: [19, 6775, 6776, 18366, 21, 558, 576, 504, 18459, 11888, 11892, 18481, 2]
+// Dependencies: [19, 6775, 6776, 18365, 21, 558, 576, 504, 18458, 11890, 11894, 18480, 2]
 
-// Module 18483 (FramePanelPIPView)
+// Module 18482 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11888 */;
-import FrameStackLevel from "FrameStackLevel" /* 11892 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18366 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 18459 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 18481 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11890 */;
+import FrameStackLevel from "FrameStackLevel" /* 11894 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18365 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 18458 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 18480 */;
 import react_mod from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
@@ -78,7 +78,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       }
     }
-    const BaseActivityPanelPIPView = tmp(18459).BaseActivityPanelPIPView;
+    const BaseActivityPanelPIPView = tmp(18458).BaseActivityPanelPIPView;
     const tmp22 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
     cResult[7] = tmp8;
     cResult[8] = null != stateFromStores;

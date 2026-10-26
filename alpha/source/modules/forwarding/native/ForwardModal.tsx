@@ -1,9 +1,9 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12902
+// Function ID: 12903
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7697, 7701, 8823, 4823, 6010, 8850, 12904, 10616, 21, 4971, 587, 558, 576, 1499, 12905, 504, 12901, 12900, 6930, 12907, 5663, 1128, 1388, 12909, 5910, 12910, 9717, 5707, 12911, 12912, 5994, 5212, 5213, 5662, 7285, 7485, 5678, 1384, 12915, 10625, 12916, 12925, 12937, 2]
+// Dependencies: [5, 32, 19, 17, 7697, 7701, 8823, 4823, 6010, 8850, 12903, 10616, 21, 4971, 587, 558, 576, 1499, 12904, 504, 12900, 12899, 6930, 12906, 5663, 1128, 1388, 12908, 5910, 12909, 9717, 5707, 12910, 12911, 5994, 5212, 5213, 5662, 7285, 7485, 5678, 1384, 12914, 10625, 12915, 12924, 12936, 2]
 
-// Module 12903 (ForwardModal)
+// Module 12902 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -16,11 +16,11 @@ import ChannelUtils from "ChannelUtils" /* 5994 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import UserRowConstants from "UserRowConstants" /* 10616 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12900 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12901 */;
-import ForwardConstants from "ForwardConstants" /* 12904 */;
-import formatResults from "formatResults" /* 12905 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12907 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12899 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12900 */;
+import ForwardConstants from "ForwardConstants" /* 12903 */;
+import formatResults from "formatResults" /* 12904 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

@@ -1,10 +1,10 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11524
+// Function ID: 11525
 // Name: StageMusicManager
-// Dependencies: [4823, 2014, 4874, 5630, 6641, 4828, 11520, 11523, 558, 576, 504, 6694, 6688, 7214, 2]
+// Dependencies: [4823, 2014, 4874, 5630, 6641, 4828, 11522, 11525, 558, 576, 504, 6694, 6688, 7214, 2]
 // Exports: shouldShowStageMusicMuteButton
 
-// Module 11522 (StageMusicManager)
+// Module 11524 (StageMusicManager)
 import StageChannelParticipants from "StageChannelParticipants" /* 6688 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -12,8 +12,8 @@ import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6641 */;
 import StageInstanceStore from "StageInstanceStore" /* 4828 */;
-import StageMusicStore from "StageMusicStore" /* 11520 */;
-import SoundUtils from "SoundUtils" /* 11523 */;
+import StageMusicStore from "StageMusicStore" /* 11522 */;
+import SoundUtils from "SoundUtils" /* 11525 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;

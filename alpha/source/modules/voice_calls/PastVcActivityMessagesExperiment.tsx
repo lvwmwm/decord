@@ -1,10 +1,10 @@
-// Module ID: 18770
-// Function ID: 18771
+// Module ID: 18769
+// Function ID: 18770
 // Name: PastVcActivityMessagesExperiment
 // Dependencies: [5191, 5188, 558, 576, 2]
 // Exports: isPastVcActivityMessagesEnabled
 
-// Module 18770 (PastVcActivityMessagesExperiment)
+// Module 18769 (PastVcActivityMessagesExperiment)
 import react from "react" /* 576 */;
 import ExperimentConstants from "ExperimentConstants" /* 5191 */;
 import createExperiment from "module_5188" /* 5188 */;

@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let c0, c1, closure_2, closure_4, messages;
+let c0, c1, closure_4, messages;
 
 let fn = this;
 if (this) {
@@ -121,7 +121,7 @@ class MessageLoader {
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -149,7 +149,7 @@ class MessageLoader {
                 } else {
                   closure_1._parseCache = {};
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp7) {
                 c3 = 3;
@@ -304,7 +304,7 @@ let items = [
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -387,7 +387,7 @@ let items = [
                 return { value, done: true };
               }
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } catch (tmp29) {
               c6 = 3;
               throw tmp29;
@@ -455,48 +455,86 @@ let items = [
     key: "waitForLocaleLoaded",
     value: function waitForLocaleLoaded(defaultLocale) {
       return fn(this, arguments, undefined, function(arg0) {
-        let closure_3;
         const self = this;
         let closure_1 = arg0;
-        const ref = arg1;
+        let ref = arg1;
         let c5 = 0;
         let c6 = 0;
         const iter = (function*(arg0, value) {
-          let flag;
-          if (1 === tmp4) {
+          if (c6 === 2) {
+            c6 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
             if (arg0 === 1) {
-              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
               return { value, done: true };
-            } else if (null == closure_4._localeLoadingPromises[closure_0]) {
-              c6 = 3;
-              const obj5 = { value: closure_4._loadLocale(closure_0), done: true };
-              return obj5;
             } else {
-              const initialized = ref.initialized && !flag;
-              if (!initialized) {
-                c5 = 2;
-                c6 = 1;
-                return { value: closure_4._localeLoadingPromises[closure_0].current, done: false };
-              }
+              return { value: "IconComponent", done: "+352" };
             }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
+          } else {
+            try {
+              let closure_0;
+              let flag;
+              c6 = 2;
+              if (0 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_4 = self;
+                  closure_3 = tmp;
+                  closure_0 = closure_1;
+                  flag = ref;
+                  if (ref === undefined) {
+                    flag = false;
+                  }
+                  ref = undefined;
+                  c5 = 1;
+                  c6 = 1;
+                  return { value: "Reflect", done: null };
+                }
+              } else {
+                if (1 === tmp4) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    return { value, done: true };
+                  } else {
+                    ref = closure_4._localeLoadingPromises[closure_0];
+                    if (null == ref) {
+                      c6 = 3;
+                      const obj5 = { value: closure_4._loadLocale(closure_0), done: true };
+                      return obj5;
+                    } else {
+                      const initialized = ref.initialized && !flag;
+                      if (!initialized) {
+                        c5 = 2;
+                        c6 = 1;
+                        return { value: ref.current, done: false };
+                      }
+                    }
+                  }
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  return { value, done: true };
+                }
+                c6 = 3;
+                return { value: "IconComponent", done: "+352" };
+              }
+            } catch (tmp16) {
+              c6 = 3;
+              throw tmp16;
+            }
           }
-          yield "IconComponent";
-          closure_4 = self;
-          closure_0 = closure_1;
-          flag = ref;
-          if (ref === undefined) {
-            flag = false;
-          }
-          return "Reflect";
         })();
         iter.next();
         return iter;
@@ -507,60 +545,19 @@ let items = [
     key: "waitForDefaultLocale",
     value: function waitForDefaultLocale() {
       return fn(this, arguments, undefined, function() {
+        let closure_2;
         const self = this;
         let closure_1 = arg0;
         let c4 = 0;
         let c5 = 0;
-        const iter = (function*(arg0, value) {
-          if (c5 === 2) {
-            c5 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              return { value, done: true };
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              let flag;
-              c5 = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  c5 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 3;
-                  return { value, done: true };
-                } else {
-                  closure_3 = self;
-                  closure_2 = tmp;
-                  flag = closure_1;
-                  if (closure_1 === undefined) {
-                    flag = false;
-                  }
-                  c4 = 1;
-                  c5 = 1;
-                  return { value: "Reflect", done: true };
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                return { value, done: true };
-              } else {
-                c5 = 3;
-                const obj = { value: closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag), done: true };
-                return obj;
-              }
-            } catch (tmp9) {
-              c5 = 3;
-              throw tmp9;
-            }
+        const iter = (function*() {
+          closure_3 = self;
+          let flag = closure_1;
+          if (closure_1 === undefined) {
+            flag = false;
           }
+          yield "Reflect";
+          return closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag);
         })();
         iter.next();
         return iter;
@@ -586,7 +583,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -614,7 +611,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(arg0) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -635,7 +632,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -663,7 +660,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp6) {
         c0 = 3;

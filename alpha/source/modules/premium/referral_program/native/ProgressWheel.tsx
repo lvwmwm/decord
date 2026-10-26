@@ -1,17 +1,17 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14761
+// Function ID: 14762
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5252, 587, 14745, 5669, 14763, 7962, 14764, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 5252, 587, 14744, 5669, 14762, 7962, 14763, 2]
 
-// Module 14762 (ProgressWheel)
+// Module 14761 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5252 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import inlineStyles from "inlineStyles" /* 7962 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14745 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14763 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14744 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressWhee
           tmp23 = cResult[10];
         }
         if (altImage == null) {
-          altImage = tmp5(14764);
+          altImage = tmp5(14763);
         }
         if (cResult[11] !== altImage) {
           const obj5 = { uri: altImage };
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressWhee
   const tmp13 = React3;
   const tmp4Result4 = FastImageDefault;
   if (altImage == null) {
-    altImage = tmp4(14764);
+    altImage = tmp4(14763);
   }
   const obj6 = { source: { uri: altImage }, style: tmp.progressCircleImage };
   items[2] = tmp13(tmp4Result4, obj6);

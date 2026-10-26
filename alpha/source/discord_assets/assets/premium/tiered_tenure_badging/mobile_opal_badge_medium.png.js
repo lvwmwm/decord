@@ -1,8 +1,8 @@
-// Module ID: 11105
-// Function ID: 11106
+// Module ID: 11107
+// Function ID: 11108
 // Dependencies: [2]
 
-// Module 11105
+// Module 11107
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_opal_badge_medium.png.js");

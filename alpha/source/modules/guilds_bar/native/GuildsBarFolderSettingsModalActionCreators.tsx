@@ -1,10 +1,10 @@
-// Module ID: 17737
-// Function ID: 17738
+// Module ID: 17736
+// Function ID: 17737
 // Name: GuildsBarFolderSettingsModalActionCreators
-// Dependencies: [6672, 17738, 2002, 2]
+// Dependencies: [6672, 17737, 2002, 2]
 // Exports: hideGuildsBarFolderModal, showGuildsBarFolderModal
 
-// Module 17737 (GuildsBarFolderSettingsModalActionCreators)
+// Module 17736 (GuildsBarFolderSettingsModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFo
 export const showGuildsBarFolderModal = function showGuildsBarFolderModal(folderId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { folderId };
-  obj.pushLazy(asyncRequire(17738, dependencyMap.paths), obj2, GUILD_FOLDER_SETTINGS_MODAL_KEY);
+  obj.pushLazy(asyncRequire(17737, dependencyMap.paths), obj2, GUILD_FOLDER_SETTINGS_MODAL_KEY);
 };
 export const hideGuildsBarFolderModal = function hideGuildsBarFolderModal() {
   const obj = ModalActionCreatorsDefault;

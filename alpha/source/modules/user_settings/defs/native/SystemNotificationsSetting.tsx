@@ -1,17 +1,17 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16845
+// Function ID: 16846
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 8332, 1087, 7868, 13311, 7891, 13319, 1267, 10753, 11206, 1128, 2]
+// Dependencies: [5, 8332, 1087, 7868, 13310, 7891, 13318, 1267, 10753, 11208, 1128, 2]
 
-// Module 16846 (SystemNotificationsSetting)
+// Module 16845 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
 import react_nativeDefault from "react-native" /* 7891 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13311 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13310 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -32,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp26) {
         c3 = 3;

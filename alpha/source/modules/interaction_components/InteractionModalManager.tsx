@@ -1,13 +1,13 @@
-// Module ID: 18832
-// Function ID: 18833
+// Module ID: 18831
+// Function ID: 18832
 // Name: InteractionModalManager
-// Dependencies: [5, 2045, 8270, 1087, 6019, 18833, 2002, 1267, 559, 1257, 18844, 15801, 5626, 18847, 7214, 2]
+// Dependencies: [5, 2045, 8270, 1087, 6019, 18832, 2002, 1267, 559, 1257, 18843, 15800, 5626, 18846, 7214, 2]
 
-// Module 18832 (InteractionModalManager)
+// Module 18831 (InteractionModalManager)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15801 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18844 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15800 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18843 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import InteractionStore from "InteractionStore" /* 8270 */;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp18) {
           c4 = 3;

@@ -1,12 +1,12 @@
-// Module ID: 19256
-// Function ID: 19257
+// Module ID: 19255
+// Function ID: 19256
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 1087, 558, 576, 19257, 1417, 2]
+// Dependencies: [19, 1087, 558, 576, 19256, 1417, 2]
 
-// Module 19256 (useHighlightedCreatorGuildDetails)
+// Module 19255 (useHighlightedCreatorGuildDetails)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19257 */;
+import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19256 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

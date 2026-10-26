@@ -1,15 +1,15 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18002
+// Function ID: 18003
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 5190, 7325, 8301, 1087, 21, 558, 576, 5052, 504, 7326, 13169, 1267, 5711, 6830, 18004, 18009, 18013, 18014, 18017, 18020, 7324, 2]
+// Dependencies: [19, 5190, 7325, 8301, 1087, 21, 558, 576, 5052, 504, 7326, 13168, 1267, 5711, 6830, 18003, 18008, 18012, 18013, 18016, 18019, 7324, 2]
 
-// Module 18003 (GuildOnboardingHomePage)
+// Module 18002 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
 import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 7325 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13169 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13168 */;
 import react from "react" /* 19 */;
 import ExperimentStore from "ExperimentStore" /* 5190 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8301 */;
@@ -244,21 +244,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildO
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(18020);
-    items3[0] = closure_9(stateFromStores(18004), obj4);
+    const tmp4Result = stateFromStores(18019);
+    items3[0] = closure_9(stateFromStores(18003), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(18009), obj6), , ];
+      items4 = [tmp13(tmp4(18008), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(18013), obj7);
+      items4[1] = closure_9(stateFromStores(18012), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(18014), obj8);
+      items4[2] = closure_9(stateFromStores(18013), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(18017), obj9);
+      tmp13Result = tmp13(tmp4(18016), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

@@ -1,9 +1,9 @@
-// Module ID: 16625
-// Function ID: 16626
+// Module ID: 16624
+// Function ID: 16625
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [5, 32, 19, 17, 4995, 1253, 1392, 1208, 1207, 1209, 1210, 4996, 1098, 21, 4971, 587, 1384, 1128, 16626, 13840, 16628, 558, 576, 1499, 573, 5202, 1211, 1256, 4993, 16381, 5599, 4998, 1506, 7253, 7278, 6933, 8901, 5052, 4968, 5144, 5206, 5209, 16380, 15856, 15857, 6713, 5663, 5037, 9706, 5234, 6880, 6908, 6930, 16382, 16630, 9146, 16636, 16648, 16657, 7221, 10887, 2]
+// Dependencies: [5, 32, 19, 17, 4995, 1253, 1392, 1208, 1207, 1209, 1210, 4996, 1098, 21, 4971, 587, 1384, 1128, 16625, 13839, 16627, 558, 576, 1499, 573, 5202, 1211, 1256, 4993, 16380, 5599, 4998, 1506, 7253, 7278, 6933, 8901, 5052, 4968, 5144, 5206, 5209, 16379, 15855, 15856, 6713, 5663, 5037, 9706, 5234, 6880, 6908, 6930, 16381, 16629, 9146, 16635, 16647, 16656, 7221, 10889, 2]
 
-// Module 16625 (SettingsAppearanceThemePickerScreen)
+// Module 16624 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -18,14 +18,14 @@ import timing from "timing" /* 5206 */;
 import timingPresets from "timingPresets" /* 5209 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import QuestTypes from "QuestTypes" /* 6713 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 13840 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15856 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15857 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16380 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16381 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16382 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 16626 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16628 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 13839 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15855 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15856 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16379 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16380 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16381 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 16625 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16627 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -388,7 +388,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -485,7 +485,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -524,7 +524,7 @@ function ThemePicker(defaultIndex) {
                 callback1(tmp11);
                 close();
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             }
           }
@@ -539,7 +539,7 @@ function ThemePicker(defaultIndex) {
           close();
         }
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp18) {
         c2 = 3;
         throw tmp18;
@@ -594,7 +594,7 @@ function ThemePicker(defaultIndex) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -638,7 +638,7 @@ function ThemePicker(defaultIndex) {
               closure_1_9.dispatch(data.data.action);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp21) {
             c4 = 3;
             throw tmp21;

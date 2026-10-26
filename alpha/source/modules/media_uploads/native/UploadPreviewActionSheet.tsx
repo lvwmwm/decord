@@ -1,7 +1,7 @@
 // Module ID: 10417
 // Function ID: 10418
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7631, 1087, 5266, 21, 4971, 587, 558, 576, 38, 8145, 1499, 1633, 5263, 5210, 9665, 8155, 10418, 1267, 5663, 8154, 13968, 13969, 5234, 1384, 8790, 10436, 6987, 6903, 12184, 13970, 1128, 6900, 13972, 8558, 13974, 5244, 5689, 5977, 5269, 5265, 2]
+// Dependencies: [32, 19, 17, 7631, 1087, 5266, 21, 4971, 587, 558, 576, 38, 8145, 1499, 1633, 5263, 5210, 9665, 8155, 10418, 1267, 5663, 8154, 13967, 13968, 5234, 1384, 8790, 10436, 6987, 6903, 12186, 13969, 1128, 6900, 13971, 8558, 13973, 5244, 5689, 5977, 5269, 5265, 2]
 
 // Module 10417 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import DraftStore from "DraftStore" /* 7631 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 13970 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 13969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

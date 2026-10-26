@@ -1,15 +1,15 @@
-// Module ID: 18467
-// Function ID: 18468
+// Module ID: 18466
+// Function ID: 18467
 // Name: InviteActivityButton
-// Dependencies: [19, 11192, 6498, 21, 5210, 18468, 2002, 558, 576, 11353, 504, 1128, 5244, 10858, 2]
+// Dependencies: [19, 11194, 6498, 21, 5210, 18467, 2002, 558, 576, 11355, 504, 1128, 5244, 10860, 2]
 
-// Module 18467 (InviteActivityButton)
+// Module 18466 (InviteActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11353 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11355 */;
 import react from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11192 */;
+import LocalActivityStore from "LocalActivityStore" /* 11194 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
         const obj = { activity: stateFromStores };
-        const tmp2 = asyncRequire(18468, dependencyMap.paths);
+        const tmp2 = asyncRequire(18467, dependencyMap.paths);
         openLazy(tmp2, "ActivityInviteSheet-" + stateFromStores.session_id, obj);
       };
       cResult[4] = stateFromStores;
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[8] !== tmp11) {
       const Button = tmp(5244).Button;
-      const tmp19 = <Button onPress={tmp11} icon={stateFromStores(10858)} text={tmp12} accessibilityLabel={tmp13} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
+      const tmp19 = <Button onPress={tmp11} icon={stateFromStores(10860)} text={tmp12} accessibilityLabel={tmp13} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
       cResult[8] = tmp11;
       cResult[9] = tmp19;
       tmp16 = tmp19;
@@ -110,9 +110,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activity: stateFromStores };
-      const tmp2 = asyncRequire(18468, dependencyMap.paths);
+      const tmp2 = asyncRequire(18467, dependencyMap.paths);
       openLazy(tmp2, "ActivityInviteSheet-" + stateFromStores.session_id, obj);
-    }} icon={stateFromStores(10858)} text={intl.string(tmp(1128).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1128).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
+    }} icon={stateFromStores(10860)} text={intl.string(tmp(1128).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1128).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
   }
   return tmp4;
 }));

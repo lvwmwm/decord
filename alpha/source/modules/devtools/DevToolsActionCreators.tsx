@@ -1,10 +1,10 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 16936
+// Function ID: 16937
 // Name: DevToolsActionCreators
 // Dependencies: [7793, 584, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools, updateDevToolsSettings
 
-// Module 16937 (DevToolsActionCreators)
+// Module 16936 (DevToolsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7793 */;
 import size from "module_2" /* 2 */;

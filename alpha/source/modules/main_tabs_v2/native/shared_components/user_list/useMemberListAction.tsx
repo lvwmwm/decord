@@ -1,20 +1,20 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 11287
+// Function ID: 11288
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4823, 4903, 4913, 1392, 10623, 1087, 21, 4971, 558, 576, 573, 11286, 8972, 7144, 11289, 11298, 11299, 1128, 10858, 10857, 5001, 4807, 11301, 11306, 7488, 11307, 1896, 9050, 8953, 9616, 11311, 2406, 5977, 2]
+// Dependencies: [32, 19, 17, 4823, 4903, 4913, 1392, 10623, 1087, 21, 4971, 558, 576, 573, 11288, 8972, 7144, 11291, 11300, 11301, 1128, 10860, 10859, 5001, 4807, 11303, 11308, 7488, 11309, 1896, 9050, 8953, 9616, 11313, 2406, 5977, 2]
 
-// Module 11285 (useMemberListAction)
+// Module 11287 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
 import dismissible_content from "dismissible_content" /* 4807 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10623 */;
-import useCanInviteToAnyLinkedGameOrganizationDefault from "useCanInviteToAnyLinkedGameOrganization" /* 11286 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11289 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11301 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11307 */;
-import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11311 */;
+import useCanInviteToAnyLinkedGameOrganizationDefault from "useCanInviteToAnyLinkedGameOrganization" /* 11288 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11291 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11303 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11309 */;
+import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11313 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -42,7 +42,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "Array", listActionHeight: "Reflect" };
+let closure_16 = { listActionRenderer: "dispatch", listActionHeight: "ix" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemberListAction(channel) {

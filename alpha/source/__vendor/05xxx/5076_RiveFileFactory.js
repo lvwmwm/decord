@@ -17,68 +17,26 @@ let closure_3 = NitroModules.createHybridObject("RiveFileFactory");
 let RiveFileFactory = {};
 RiveFileFactory = function _fromURL() {
   obj = _asyncToGenerator(async (arg0, data) => {
+    let closure_4;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp4;
-              fromURL = tmp;
-              flag = closure_2;
-              if (closure_2 === undefined) {
-                flag = true;
-              }
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            let tmp11;
-            fromURL = fromURL.fromURL;
-            const tmp8 = closure_0;
-            const tmp9 = flag;
-            if (data) {
-              tmp11 = { data };
-              obj = { data };
-            }
-            c6 = 3;
-            const obj5 = { value: fromURL(tmp8, tmp9, tmp11), done: true };
-            return obj5;
-          }
-        } catch (tmp16) {
-          c6 = 3;
-          throw tmp16;
-        }
+      let tmp11;
+      fromURL = tmp;
+      let flag = closure_2;
+      if (closure_2 === undefined) {
+        flag = true;
       }
+      await "Reflect";
+      fromURL = fromURL.fromURL;
+      const tmp8 = closure_0;
+      const tmp9 = flag;
+      if (data) {
+        tmp11 = { data };
+      }
+      return fromURL(tmp8, tmp9, tmp11);
     })();
     iter.next();
     return iter;
@@ -87,71 +45,28 @@ RiveFileFactory = function _fromURL() {
 };
 RiveFileFactory = function _fromFileURL() {
   obj = _asyncToGenerator(async (arg0, data) => {
+    let closure_4;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c5 = 0;
     let c6 = 0;
-    const iter = (async (arg0, value) => {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp4;
-              fromFileURL = tmp;
-              data = undefined;
-              const tmp15 = data;
-              data = tmp15;
-              flag = closure_2;
-              if (closure_2 === undefined) {
-                flag = true;
-              }
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            let tmp11;
-            fromFileURL = fromFileURL.fromFileURL;
-            const tmp8 = closure_0;
-            const tmp9 = flag;
-            if (data) {
-              tmp11 = { data };
-              obj = { data };
-            }
-            c6 = 3;
-            const obj5 = { value: fromFileURL(tmp8, tmp9, tmp11), done: true };
-            return obj5;
-          }
-        } catch (tmp16) {
-          c6 = 3;
-          throw tmp16;
-        }
+    const iter = (async (arg0) => {
+      let tmp11;
+      fromFileURL = tmp;
+      const tmp15 = data;
+      data = tmp15;
+      let flag = closure_2;
+      if (closure_2 === undefined) {
+        flag = true;
       }
+      await "Reflect";
+      fromFileURL = fromFileURL.fromFileURL;
+      const tmp8 = closure_0;
+      const tmp9 = flag;
+      if (data) {
+        tmp11 = { data };
+      }
+      return fromFileURL(tmp8, tmp9, tmp11);
     })();
     iter.next();
     return iter;
@@ -160,68 +75,26 @@ RiveFileFactory = function _fromFileURL() {
 };
 RiveFileFactory = function _fromResource() {
   obj = _asyncToGenerator(async (arg0, data) => {
+    let closure_4;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp4;
-              fromResource = tmp;
-              flag = closure_2;
-              if (closure_2 === undefined) {
-                flag = true;
-              }
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            let tmp11;
-            fromResource = fromResource.fromResource;
-            const tmp8 = closure_0;
-            const tmp9 = flag;
-            if (data) {
-              tmp11 = { data };
-              obj = { data };
-            }
-            c6 = 3;
-            const obj5 = { value: fromResource(tmp8, tmp9, tmp11), done: true };
-            return obj5;
-          }
-        } catch (tmp16) {
-          c6 = 3;
-          throw tmp16;
-        }
+      let tmp11;
+      fromResource = tmp;
+      let flag = closure_2;
+      if (closure_2 === undefined) {
+        flag = true;
       }
+      await "Reflect";
+      fromResource = fromResource.fromResource;
+      const tmp8 = closure_0;
+      const tmp9 = flag;
+      if (data) {
+        tmp11 = { data };
+      }
+      return fromResource(tmp8, tmp9, tmp11);
     })();
     iter.next();
     return iter;
@@ -230,68 +103,26 @@ RiveFileFactory = function _fromResource() {
 };
 RiveFileFactory = function _fromBytes() {
   obj = _asyncToGenerator(async (arg0, data) => {
+    let closure_4;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp4;
-              fromBytes = tmp;
-              flag = closure_2;
-              if (closure_2 === undefined) {
-                flag = true;
-              }
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            let tmp11;
-            fromBytes = fromBytes.fromBytes;
-            const tmp8 = closure_0;
-            const tmp9 = flag;
-            if (data) {
-              tmp11 = { data };
-              obj = { data };
-            }
-            c6 = 3;
-            const obj5 = { value: fromBytes(tmp8, tmp9, tmp11), done: true };
-            return obj5;
-          }
-        } catch (tmp16) {
-          c6 = 3;
-          throw tmp16;
-        }
+      let tmp11;
+      fromBytes = tmp;
+      let flag = closure_2;
+      if (closure_2 === undefined) {
+        flag = true;
       }
+      await "Reflect";
+      fromBytes = fromBytes.fromBytes;
+      const tmp8 = closure_0;
+      const tmp9 = flag;
+      if (data) {
+        tmp11 = { data };
+      }
+      return fromBytes(tmp8, tmp9, tmp11);
     })();
     iter.next();
     return iter;
@@ -314,7 +145,7 @@ RiveFileFactory = function _fromSource() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let tmp50;
@@ -345,7 +176,7 @@ RiveFileFactory = function _fromSource() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {

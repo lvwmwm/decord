@@ -1,9 +1,9 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15879
+// Function ID: 15880
 // Name: HexagonCampaignDaysLeftBadge
 // Dependencies: [19, 17, 1392, 4996, 21, 1104, 4971, 587, 558, 576, 504, 4998, 7554, 5037, 4978, 5234, 5691, 1128, 4247, 2]
 
-// Module 15880 (HexagonCampaignDaysLeftBadge)
+// Module 15879 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

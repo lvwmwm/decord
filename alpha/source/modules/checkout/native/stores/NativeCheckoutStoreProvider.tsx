@@ -22,7 +22,7 @@ import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c5, dispatchResult, loadId, obj1, redux, trackResult;
+let c5, dispatchResult, loadId, obj1, redux, trackResult, v2;
 
 let c9;
 let metroImportAll;
@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
           }
           closure_1_10(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp22) {
         c4 = 3;
@@ -285,28 +285,81 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
   onOrderCreated((orderLineItems) => {
     let closure_1;
     let externalGatewayFacet;
-    let v2;
     let c3 = 0;
     let c4 = 0;
-    const iter = (function*(arg0) {
+    const iter = (function*(arg0, value) {
       let c0;
       let c1;
-      const obj5 = { orderLineItems, paymentGateway: tmp, isGift, subscriptionFacet: tmp, externalGatewayFacet, countryCode: country };
-      const createOrder = orderLineItems(closure_2_2[15]).createOrder;
-      orderLineItems(closure_2_2[15]);
-      if (country != null) {
-        country = country.country;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "+352" };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === v2) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              orderLineItems = undefined;
+              ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
+              isGift = undefined;
+              v2 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === v2) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              country = undefined;
+              const obj5 = { orderLineItems, paymentGateway: tmp, isGift, subscriptionFacet: tmp, externalGatewayFacet, countryCode: country };
+              const createOrder = orderLineItems(closure_2_2[15]).createOrder;
+              orderLineItems(closure_2_2[15]);
+              if (country != null) {
+                country = country.country;
+              }
+              v2 = 2;
+              c4 = 1;
+              const obj6 = { value: createOrder(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            isGift = value;
+            closure_1_9(isGift);
+            if (null != v2) {
+              v2(isGift);
+            }
+            closure_1_10(false);
+            c4 = 3;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } catch (tmp22) {
+          c4 = 3;
+          throw tmp22;
+        }
       }
-      isGift = yield createOrder(obj5);
-      closure_1_9(isGift);
-      if (null != v2) {
-        v2(isGift);
-      }
-      closure_1_10(false);
-      yield "IconComponent";
-      isGift = tmp4;
-      ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -328,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -371,7 +424,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp12) {
         if (0 === c3) {
@@ -433,6 +486,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
     let tmp19 = null;
     if (!flag) {
       let obj2 = { style: tmp.loadingSpinnerContainer, children: mobileStoreFront(orderRequired(tmp7[17]).ActivityIndicator, { animating: true, size: "large" }) };
+      const tmp22 = orderRequired;
       tmp19 = mobileStoreFront(onOrderRetryCancellation, obj2);
     }
     tmp18 = tmp19;

@@ -1,10 +1,10 @@
-// Module ID: 13787
-// Function ID: 13788
+// Module ID: 13786
+// Function ID: 13787
 // Name: BugReportUtils
 // Dependencies: [5, 3, 1281, 8154, 1257, 2]
 // Exports: getAttachments
 
-// Module 13787 (BugReportUtils)
+// Module 13786 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let obj = function _getAttachments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {

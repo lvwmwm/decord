@@ -1,9 +1,9 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14234
+// Function ID: 14235
 // Name: MediaModalLoadingOverlay
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 1128, 2]
 
-// Module 14235 (MediaModalLoadingOverlay)
+// Module 14234 (MediaModalLoadingOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;

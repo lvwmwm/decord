@@ -1,9 +1,9 @@
-// Module ID: 19446
-// Function ID: 19447
+// Module ID: 19445
+// Function ID: 19446
 // Name: LocalMessageCacheStatsManager
 // Dependencies: [1087, 7597, 1267, 7214, 2]
 
-// Module 19446 (LocalMessageCacheStatsManager)
+// Module 19445 (LocalMessageCacheStatsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import MessageCacheStatsDefault from "MessageCacheStats" /* 7597 */;
 import Constants from "Constants" /* 1087 */;

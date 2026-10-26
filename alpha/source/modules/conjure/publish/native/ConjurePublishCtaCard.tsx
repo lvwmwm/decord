@@ -1,15 +1,15 @@
 // Module ID: 12490
 // Function ID: 12491
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 558, 576, 11874, 12287, 5977, 5244, 12305, 12491, 5234, 12492, 2]
+// Dependencies: [19, 21, 558, 576, 11876, 12289, 5977, 5244, 12307, 12491, 5234, 12492, 2]
 
 // Module 12490 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11874 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12287 */;
-import conjurePublishCard from "conjurePublishCard" /* 12305 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11876 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12289 */;
+import conjurePublishCard from "conjurePublishCard" /* 12307 */;
 import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12491 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
   const cResult = obj.c(7);
   projectId = projectId.projectId;
   const publish = projectId.publish;
-  const context = react.useContext(projectId(11874).ConjurePublishActionContext);
+  const context = react.useContext(projectId(11876).ConjurePublishActionContext);
   if (cResult[0] === context) {
     let tmp6;
     if (cResult[1] === projectId) {

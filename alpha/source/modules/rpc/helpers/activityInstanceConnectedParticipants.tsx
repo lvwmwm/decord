@@ -1,10 +1,10 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 15714
+// Function ID: 15715
 // Name: activityInstanceConnectedParticipants
 // Dependencies: [4822, 1392, 6378, 4892, 5989, 9262, 1388, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 15715 (activityInstanceConnectedParticipants)
+// Module 15714 (activityInstanceConnectedParticipants)
 import transformUserDefault from "transformUser" /* 9262 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;

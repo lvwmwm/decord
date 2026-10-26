@@ -1,18 +1,18 @@
-// Module ID: 18100
-// Function ID: 18101
+// Module ID: 18099
+// Function ID: 18100
 // Name: ChannelContent
-// Dependencies: [19, 17, 12060, 6705, 21, 4971, 1384, 558, 576, 12061, 7202, 18101, 8566, 7957, 17557, 5234, 2]
+// Dependencies: [19, 17, 12062, 6705, 21, 4971, 1384, 558, 576, 12063, 7202, 18100, 8566, 7957, 17556, 5234, 2]
 // Exports: renderChannelContent
 
-// Module 18100 (ChannelContent)
+// Module 18099 (ChannelContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7202 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12060 */;
-import ChannelListLayout from "ChannelListLayout" /* 12061 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17557 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18101 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12062 */;
+import ChannelListLayout from "ChannelListLayout" /* 12063 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17556 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18100 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

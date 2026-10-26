@@ -1,9 +1,9 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18096
+// Function ID: 18097
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12061, 5234, 1202, 18098, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12063, 5234, 1202, 18097, 2]
 
-// Module 18097 (guild_channels/VoiceOrStageSummaryRow)
+// Module 18096 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     num = max;
   }
   if (cResult[0] !== layout) {
-    const tmpResult = tmp(12061);
+    const tmpResult = tmp(12063);
     const layoutStyles = tmpResult.getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
@@ -339,7 +339,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   obj5 = { style: items2, children: items3 };
                   items2 = [, ];
                   ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp7);
-                  let obj6 = { size: tmp(1202).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(18098) };
+                  let obj6 = { size: tmp(1202).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(18097) };
                   const Icon = tmp(1202).Icon;
                   items3 = [tmp17(Icon, obj6), ];
                   let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };

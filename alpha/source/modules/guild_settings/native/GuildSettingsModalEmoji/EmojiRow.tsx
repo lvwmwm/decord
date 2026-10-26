@@ -1,9 +1,9 @@
-// Module ID: 19063
-// Function ID: 19064
+// Module ID: 19062
+// Function ID: 19063
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 4845, 1392, 21, 4971, 587, 1384, 558, 576, 7220, 504, 8944, 9943, 4921, 19064, 5267, 5234, 1202, 5663, 1128, 5669, 1417, 5989, 5025, 6908, 19066, 6903, 2]
+// Dependencies: [32, 19, 17, 4845, 1392, 21, 4971, 587, 1384, 558, 576, 7220, 504, 8944, 9943, 4921, 19063, 5267, 5234, 1202, 5663, 1128, 5669, 1417, 5989, 5025, 6908, 19065, 6903, 2]
 
-// Module 19063 (GuildSettingsModalEmoji/EmojiRow)
+// Module 19062 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
@@ -14,8 +14,8 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
 import EmojiActionCreators from "EmojiActionCreators" /* 9943 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19064 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19066 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19063 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19065 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

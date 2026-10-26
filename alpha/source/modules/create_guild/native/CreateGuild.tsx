@@ -1,9 +1,9 @@
-// Module ID: 13219
-// Function ID: 13220
+// Module ID: 13218
+// Function ID: 13219
 // Name: CreateGuild
 // Dependencies: [19, 17, 1392, 1087, 21, 4971, 587, 558, 576, 5267, 5971, 1128, 5234, 12744, 7008, 7295, 5244, 7033, 5977, 2]
 
-// Module 13219 (CreateGuild)
+// Module 13218 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

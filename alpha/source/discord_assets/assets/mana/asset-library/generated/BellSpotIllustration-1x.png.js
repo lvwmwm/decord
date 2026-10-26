@@ -1,8 +1,8 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17418
+// Function ID: 17419
 // Dependencies: [2]
 
-// Module 17419
+// Module 17418
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BellSpotIllustration-1x.png.js");

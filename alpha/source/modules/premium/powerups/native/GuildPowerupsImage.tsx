@@ -1,9 +1,9 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13444
+// Function ID: 13445
 // Name: GuildPowerupsImage
 // Dependencies: [4972, 21, 4971, 558, 576, 504, 1385, 9402, 5669, 2]
 
-// Module 13445 (GuildPowerupsImage)
+// Module 13444 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;

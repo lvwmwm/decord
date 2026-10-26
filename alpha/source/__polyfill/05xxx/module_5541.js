@@ -11,7 +11,7 @@ import _slicedToArray from "_slicedToArray" /* 5499 */;
 import react from "react" /* 19 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, size;
+let _require, dependencyMap, ref, size;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +24,6 @@ const I18nManager = react_native.I18nManager;
 export const useRecyclerViewController = function useRecyclerViewController(recyclerViewManager, arg1, arg2, arg3) {
   let _setTimeout;
   let closure_4;
-  let ref;
   let ref5;
   _require = recyclerViewManager;
   dependencyMap = arg2;
@@ -425,54 +424,92 @@ export const useRecyclerViewController = function useRecyclerViewController(recy
       let c3 = 0;
       let c4 = 0;
       const iter = (function*(arg0, value) {
-        let animated;
-        if (1 === c3) {
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
             return { value, done: true };
           } else {
-            const data = engagedIndices.props.data;
-            const tmp23 = data;
-            if (tmp23) {
-              if (data.length > 0) {
-                index = data.length - 1;
-                engagedIndices = engagedIndices.getEngagedIndices();
-                if (!engagedIndices.includes(index)) {
-                  c3 = 2;
-                  c4 = 1;
-                  const obj6 = { index, animated };
-                  const obj7 = { value: closure_1_13.scrollToIndex(obj6), done: false };
-                  return obj7;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } else {
+          try {
+            let animated;
+            let data;
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                index = tmp4;
+                ref = tmp;
+                animated = undefined;
+                let obj4 = engagedIndices;
+                if (engagedIndices === undefined) {
+                  obj4 = {};
                 }
+                animated = obj4.animated;
+                data = undefined;
+                index = undefined;
+                c3 = 1;
+                c4 = 1;
+                return { value: "Reflect", done: null };
               }
+            } else {
+              if (1 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                } else {
+                  data = engagedIndices.props.data;
+                  const tmp23 = data;
+                  if (tmp23) {
+                    if (data.length > 0) {
+                      index = data.length - 1;
+                      engagedIndices = engagedIndices.getEngagedIndices();
+                      if (!engagedIndices.includes(index)) {
+                        c3 = 2;
+                        c4 = 1;
+                        const obj6 = { index, animated };
+                        const obj7 = { value: closure_1_13.scrollToIndex(obj6), done: false };
+                        return obj7;
+                      }
+                    }
+                  }
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                let obj = { value, done: true };
+                return obj;
+              }
+              closure_1_7(() => {
+                const current = ref.current;
+                if (current != null) {
+                  const obj = { animated };
+                  current.scrollToEnd(obj);
+                }
+              }, 0);
+              c4 = 3;
+              return { value: "IconComponent", done: "+352" };
             }
+          } catch (tmp16) {
+            c4 = 3;
+            throw tmp16;
           }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          let obj = { value, done: true };
-          return obj;
         }
-        closure_1_7(() => {
-          const current = ref.current;
-          if (current != null) {
-            const obj = { animated };
-            current.scrollToEnd(obj);
-          }
-        }, 0);
-        yield "IconComponent";
-        index = tmp4;
-        let obj4 = engagedIndices;
-        if (engagedIndices === undefined) {
-          obj4 = {};
-        }
-        animated = obj4.animated;
-        return "Reflect";
       })();
       iter.next();
       return iter;

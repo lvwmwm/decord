@@ -1,9 +1,9 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14112
+// Function ID: 14113
 // Name: AppStoreOverlayStarRating
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9947, 9949, 2]
 
-// Module 14113 (AppStoreOverlayStarRating)
+// Module 14112 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

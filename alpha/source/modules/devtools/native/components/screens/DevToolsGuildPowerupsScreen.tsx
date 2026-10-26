@@ -1,9 +1,9 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17074
+// Function ID: 17075
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1246, 13486, 4845, 5002, 17076, 1087, 21, 4971, 587, 1297, 2049, 8368, 13412, 558, 576, 16979, 7295, 13418, 4804, 4807, 1633, 504, 5234, 6903, 6987, 2]
+// Dependencies: [5, 19, 17, 1246, 13485, 4845, 5002, 17075, 1087, 21, 4971, 587, 1297, 2049, 8368, 13411, 558, 576, 16978, 7295, 13417, 4804, 4807, 1633, 504, 5234, 6903, 6987, 2]
 
-// Module 17075 (DevToolsGuildPowerupsScreen)
+// Module 17074 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,16 +12,16 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
 import dismissible_content from "dismissible_content" /* 4807 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13418 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16979 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13417 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16978 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13486 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13485 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17076 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -132,7 +132,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp8) {
         c1 = 3;

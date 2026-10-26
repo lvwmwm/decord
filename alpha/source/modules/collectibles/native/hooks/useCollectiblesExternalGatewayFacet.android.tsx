@@ -1,9 +1,9 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 13876
+// Function ID: 13877
 // Name: useCollectiblesExternalGatewayFacet
 // Dependencies: [19, 1392, 558, 576, 504, 9448, 2]
 
-// Module 13877 (useCollectiblesExternalGatewayFacet)
+// Module 13876 (useCollectiblesExternalGatewayFacet)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

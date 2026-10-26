@@ -1,9 +1,9 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19316
+// Function ID: 19317
 // Name: components/StepsIndicator
 // Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 5052, 5206, 5234, 504, 2]
 
-// Module 19317 (components/StepsIndicator)
+// Module 19316 (components/StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

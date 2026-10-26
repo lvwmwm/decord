@@ -1,9 +1,9 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 13110
+// Function ID: 13111
 // Name: ForumPostAppliedTags
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10410, 2]
 
-// Module 13111 (ForumPostAppliedTags)
+// Module 13110 (ForumPostAppliedTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AppliedForumTag2 from "AppliedForumTag" /* 10410 */;

@@ -1,9 +1,9 @@
-// Module ID: 14279
-// Function ID: 14280
+// Module ID: 14278
+// Function ID: 14279
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9650, 1087, 1504, 21, 558, 576, 12136, 10744, 5210, 7285, 12122, 5662, 1386, 8092, 9469, 1128, 587, 5244, 6809, 7411, 5159, 1631, 1267, 2]
+// Dependencies: [5, 32, 19, 9650, 1087, 1504, 21, 558, 576, 12138, 10744, 5210, 7285, 12124, 5662, 1386, 8092, 9469, 1128, 587, 5244, 6809, 7411, 5159, 1631, 1267, 2]
 
-// Module 14279 (AddOrOpenAppButton)
+// Module 14278 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,8 +13,8 @@ import ToastUtils from "ToastUtils" /* 5662 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
 import ApplicationUtils from "ApplicationUtils" /* 10744 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12122 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12136 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12124 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12138 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -369,7 +369,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -451,7 +451,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
         recipientIds = application1;
         c3(false);
@@ -504,7 +504,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -587,7 +587,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
         tmp = application1;
         closure_130_3(false);

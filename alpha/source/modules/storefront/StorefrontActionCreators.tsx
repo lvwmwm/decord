@@ -17,7 +17,7 @@ import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9381 */;
 import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9382 */;
 import size from "module_2" /* 2 */;
 
-let apiError, c1, closure_4, promotions;
+let apiError, c1, closure_2, closure_4, promotions;
 
 function shouldFetchStorefrontPromotions(arg0) {
   const fetchState = StorefrontPromotionStore.getFetchState(arg0);
@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -282,17 +282,69 @@ obj = function _claimStorefrontPromotion() {
 };
 obj = function _fetchStorefrontPricesForApplicationId() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_2;
     let applicationId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      const obj5 = { type: "application", applicationId };
-      await closure_130_18(obj5);
-      await "IconComponent";
-      applicationId = applicationId.applicationId;
-      return "Reflect";
+    const iter = (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "+352" };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              closure_1 = tmp;
+              applicationId = undefined;
+              applicationId = applicationId.applicationId;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { type: "application", applicationId };
+              const obj6 = { value: closure_130_18(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } catch (tmp10) {
+          c4 = 3;
+          throw tmp10;
+        }
+      }
     })();
     iter.next();
     return iter;
@@ -301,17 +353,69 @@ obj = function _fetchStorefrontPricesForApplicationId() {
 };
 obj = function _fetchStorefrontPricesForSkuIds() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_1;
-    let closure_2;
     let skuIds = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      const obj5 = { type: "skus", skuIds };
-      await closure_130_18(obj5);
-      await "IconComponent";
-      skuIds = skuIds.skuIds;
-      return "Reflect";
+    const iter = (async (arg0, value) => {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "+352" };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              closure_1 = tmp;
+              skuIds = undefined;
+              skuIds = skuIds.skuIds;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { type: "skus", skuIds };
+              const obj6 = { value: closure_130_18(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 3;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } catch (tmp10) {
+          c4 = 3;
+          throw tmp10;
+        }
+      }
     })();
     iter.next();
     return iter;
@@ -334,7 +438,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c2;
@@ -379,7 +483,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

@@ -1,17 +1,17 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11317
+// Function ID: 11318
 // Name: useInvitableGameOrganizations
-// Dependencies: [5, 11316, 1087, 504, 1104, 11317, 11318, 558, 11319, 2]
+// Dependencies: [5, 11318, 1087, 504, 1104, 11319, 11320, 558, 11321, 2]
 // Exports: default
 
-// Module 11315 (useInvitableGameOrganizations)
+// Module 11317 (useInvitableGameOrganizations)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11317 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11318 */;
-import useCanInviteGuildIdsDefault from "useCanInviteGuildIds" /* 11319 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11319 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11320 */;
+import useCanInviteGuildIdsDefault from "useCanInviteGuildIds" /* 11321 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InvitableGameOrganizationStore from "InvitableGameOrganizationStore" /* 11316 */;
+import InvitableGameOrganizationStore from "InvitableGameOrganizationStore" /* 11318 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     }
   } else {
     try {
@@ -76,7 +76,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } catch (tmp7) {
       c1 = 3;

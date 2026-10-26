@@ -1,9 +1,9 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15160
+// Function ID: 15161
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1392, 8274, 21, 4971, 587, 558, 576, 504, 5989, 1417, 15162, 1128, 5234, 5669, 15163, 9225, 15164, 15208, 5244, 5977, 6905, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 8274, 21, 4971, 587, 558, 576, 504, 5989, 1417, 15161, 1128, 5234, 5669, 15162, 9225, 15163, 15207, 5244, 5977, 6905, 2]
 
-// Module 15161 (GuildSettingsServerTagPreview)
+// Module 15160 (GuildSettingsServerTagPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildTagConstants from "GuildTagConstants" /* 8274 */;
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             tmp28 = cResult[15];
           }
           if (cResult[16] !== tmp4.avatar) {
-            let obj2 = { source: tmp8(15163), style: tmp4.avatar, importantForAccessibility: "no" };
+            let obj2 = { source: tmp8(15162), style: tmp4.avatar, importantForAccessibility: "no" };
             const tmp8Result = onAdopted(5669);
             const tmp32 = closure_9(tmp8Result, obj2);
             cResult[16] = tmp4.avatar;
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                     tmp75 = cResult[50];
                                   }
                                   if (cResult[51] !== tmp4.avatar) {
-                                    const obj8 = { source: onAdopted(15208), style: tmp4.avatar, importantForAccessibility: "no" };
+                                    const obj8 = { source: onAdopted(15207), style: tmp4.avatar, importantForAccessibility: "no" };
                                     const tmp8Result3 = onAdopted(5669);
                                     const tmp79 = closure_9(tmp8Result3, obj8);
                                     cResult[51] = tmp4.avatar;
@@ -445,7 +445,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   const BaseGuildTagChiplet = tmp(9225).BaseGuildTagChiplet;
                   if (null != badge) {
                     size = { badge, primaryTintColor: tmp57, secondaryTintColor: tmp58, width: null, height: null };
-                    const GuildBadge = tmp(15164).GuildBadge;
+                    const GuildBadge = tmp(15163).GuildBadge;
                     ({ SIZE_12: obj13.width, SIZE_12: obj13.height } = GuildTagBadgeSize);
                     tmp55Result = tmp55(GuildBadge, size);
                     tmp57 = primaryColor;
@@ -505,7 +505,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -544,7 +544,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp18) {
           c3 = 3;
@@ -653,7 +653,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -693,7 +693,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -718,7 +718,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  const obj6 = { source: tmp4(15163), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj6 = { source: tmp4(15162), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result = tmp4(5669);
   items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
@@ -746,7 +746,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const BaseGuildTagChiplet = tmp2(9225).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(15164).GuildBadge;
+      const GuildBadge = tmp2(15163).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -763,7 +763,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  const obj17 = { source: tmp4(15208), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(15207), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp4Result2 = tmp4(5669);
   items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };

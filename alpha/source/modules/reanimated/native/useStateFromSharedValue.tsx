@@ -258,11 +258,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
 }) : (function useDerivedStateFromSharedValue(arg0, cResult) {
   let closure_129_2;
   let tmp2;
-  const f101553 = () => current(closure_0.get(), undefined);
+  const f101562 = () => current(closure_0.get(), undefined);
   let closure_0 = arg0;
   let closure_1 = cResult;
-  [tmp2, closure_129_2] = react.useState(f101553);
-  _slicedToArray(react.useState(f101553), 2);
+  [tmp2, closure_129_2] = react.useState(f101562);
+  _slicedToArray(react.useState(f101562), 2);
   let closure_3 = react.useRef(cResult);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_3.current = current;

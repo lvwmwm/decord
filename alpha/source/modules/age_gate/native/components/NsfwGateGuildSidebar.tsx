@@ -1,9 +1,9 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17727
+// Function ID: 17728
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 4883, 4845, 1392, 7315, 1087, 21, 4971, 587, 558, 576, 504, 1267, 7316, 17562, 6651, 1128, 2067, 1202, 2]
+// Dependencies: [19, 17, 4883, 4845, 1392, 7315, 1087, 21, 4971, 587, 558, 576, 504, 1267, 7316, 17561, 6651, 1128, 2067, 1202, 2]
 
-// Module 17728 (NsfwGateGuildSidebar)
+// Module 17727 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         if (cResult[11] !== stateFromStores) {
           let obj2 = { guild: stateFromStores, showExtraButtons: false };
-          const tmp21 = closure_12(stateFromStores(17562), obj2);
+          const tmp21 = closure_12(stateFromStores(17561), obj2);
           cResult[11] = stateFromStores;
           cResult[12] = tmp21;
           tmp18 = tmp21;

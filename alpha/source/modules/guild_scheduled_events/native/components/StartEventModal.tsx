@@ -541,7 +541,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -579,7 +579,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;
@@ -644,7 +644,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

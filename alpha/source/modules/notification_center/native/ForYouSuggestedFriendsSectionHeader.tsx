@@ -1,9 +1,9 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17881
+// Function ID: 17882
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1128, 5234, 2]
 
-// Module 17882 (ForYouSuggestedFriendsSectionHeader)
+// Module 17881 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

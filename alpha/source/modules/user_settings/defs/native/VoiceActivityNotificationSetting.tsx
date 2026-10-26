@@ -1,16 +1,16 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16859
+// Function ID: 16860
 // Name: VoiceActivityNotificationSetting
-// Dependencies: [8332, 1087, 4916, 11206, 1128, 4799, 1267, 2]
+// Dependencies: [8332, 1087, 4916, 11208, 1128, 4799, 1267, 2]
 
-// Module 16860 (VoiceActivityNotificationSetting)
+// Module 16859 (VoiceActivityNotificationSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import NotificationConstants from "NotificationConstants" /* 4916 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

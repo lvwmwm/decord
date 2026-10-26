@@ -1,10 +1,10 @@
-// Module ID: 19083
-// Function ID: 19084
+// Module ID: 19082
+// Function ID: 19083
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6766, 21, 504, 10155, 5663, 1128, 5265, 7248, 587, 6987, 6903, 10120, 19076, 5689, 2]
+// Dependencies: [5, 32, 19, 17, 6766, 21, 504, 10155, 5663, 1128, 5265, 7248, 587, 6987, 6903, 10120, 19075, 5689, 2]
 
-// Module 19083 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19076 */;
+// Module 19082 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {

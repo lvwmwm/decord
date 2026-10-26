@@ -35,7 +35,7 @@ obj = function _initialize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ obj = function _initialize() {
           return obj;
         } else if (tmp3.isInitialized) {
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else {
           const initError = tmp3.initError;
           let c0 = initError;

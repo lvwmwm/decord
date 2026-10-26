@@ -1,11 +1,11 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16413
+// Function ID: 16414
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 21, 1128, 5210, 16411, 558, 576, 16415, 16418, 5244, 6696, 2]
+// Dependencies: [19, 21, 1128, 5210, 16410, 558, 576, 16414, 16417, 5244, 6696, 2]
 
-// Module 16414 (OrbsArcadeSheetActions)
+// Module 16413 (OrbsArcadeSheetActions)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16411 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -82,12 +82,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       if (primaryAction === obj.CLAIM) {
         const obj4 = { game, size: "lg" };
-        tmp11 = closure_3(sheetKey(16415), obj4);
+        tmp11 = closure_3(sheetKey(16414), obj4);
       } else {
         tmp11 = null;
         if (primaryAction === tmp10.PLAY) {
           const obj5 = { game, size: "lg" };
-          tmp11 = closure_3(sheetKey(16418), obj5);
+          tmp11 = closure_3(sheetKey(16417), obj5);
         }
       }
       cResult[4] = game;
@@ -181,12 +181,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   const tmp9 = closure_4;
   if (primaryAction === obj.CLAIM) {
     const obj4 = { game, size: "lg" };
-    tmp13 = closure_3(sheetKey(16415), obj4);
+    tmp13 = closure_3(sheetKey(16414), obj4);
   } else {
     tmp13 = null;
     if (primaryAction === tmp12.PLAY) {
       const obj5 = { game, size: "lg" };
-      tmp13 = closure_3(sheetKey(16418), obj5);
+      tmp13 = closure_3(sheetKey(16417), obj5);
     }
   }
   items = [tmp13, ];

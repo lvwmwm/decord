@@ -28,7 +28,7 @@ let obj = function _flushWithTimeout() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -74,7 +74,7 @@ let obj = function _flushWithTimeout() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp23) {
         closure_3 = tmp23;
@@ -91,98 +91,137 @@ let obj = function _flushWithTimeout() {
 };
 obj = function _flushIfServerless() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_1;
-    let closure_2;
-    let obj5;
     let closure_0 = arg0;
-    if (1 === c3) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c4 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const timeout = obj5.timeout;
-        let num4 = 2000;
-        if (undefined !== timeout) {
-          num4 = timeout;
-        }
-        if ("cloudflareWaitUntil" in obj5) {
-          let cloudflareWaitUntil;
-          if (obj5 != null) {
-            cloudflareWaitUntil = obj5.cloudflareWaitUntil;
-          }
-          if (typeof cloudflareWaitUntil === "function") {
-            obj5.cloudflareWaitUntil(closure_130_3(num4));
-          }
-        }
-        if ("cloudflareCtx" in obj5) {
-          const cloudflareCtx = obj5.cloudflareCtx;
-          let waitUntil;
-          if (cloudflareCtx != null) {
-            waitUntil = cloudflareCtx.waitUntil;
-          }
-          if (typeof waitUntil === "function") {
-            const cloudflareCtx2 = obj5.cloudflareCtx;
-            cloudflareCtx2.waitUntil(closure_130_3(num4));
-          }
-        }
-        const _Symbol = Symbol;
-        if (closure_130_0(closure_130_1[3]).GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")]) {
-          const obj3 = closure_130_0(closure_130_1[4]);
-          obj3.vercelWaitUntil(closure_130_3(num4));
-        } else {
-          const _process = process;
-          let tmp21 = typeof process !== "undefined";
-          if (tmp21) {
-            const _process7 = process;
-            let NETLIFY = process.env.FUNCTIONS_WORKER_RUNTIME;
-            if (!NETLIFY) {
-              const _process2 = process;
-              NETLIFY = process.env.LAMBDA_TASK_ROOT;
-            }
-            if (!NETLIFY) {
-              const _process3 = process;
-              NETLIFY = process.env.K_SERVICE;
-            }
-            if (!NETLIFY) {
-              const _process4 = process;
-              NETLIFY = process.env.CF_PAGES;
-            }
-            if (!NETLIFY) {
-              const _process5 = process;
-              NETLIFY = process.env.VERCEL;
-            }
-            if (!NETLIFY) {
-              const _process6 = process;
-              NETLIFY = process.env.NETLIFY;
-            }
-            tmp21 = NETLIFY;
-          }
-          if (tmp21) {
-            c3 = 2;
-            c4 = 1;
-            const obj7 = { value: closure_130_3(num4), done: false };
-            return obj7;
-          }
-        }
+        return { value: "IconComponent", done: "+352" };
       }
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      obj = { value, done: true };
-      return obj;
+    } else {
+      try {
+        let obj5;
+        let timeout;
+        let num4;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_2 = tmp4;
+            let closure_1 = tmp;
+            obj5 = closure_0;
+            if (closure_0 === undefined) {
+              obj5 = {};
+            }
+            timeout = undefined;
+            num4 = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              timeout = obj5.timeout;
+              num4 = 2000;
+              if (undefined !== timeout) {
+                num4 = timeout;
+              }
+              if ("cloudflareWaitUntil" in obj5) {
+                let cloudflareWaitUntil;
+                if (obj5 != null) {
+                  cloudflareWaitUntil = obj5.cloudflareWaitUntil;
+                }
+                if (typeof cloudflareWaitUntil === "function") {
+                  obj5.cloudflareWaitUntil(closure_130_3(num4));
+                }
+              }
+              if ("cloudflareCtx" in obj5) {
+                const cloudflareCtx = obj5.cloudflareCtx;
+                let waitUntil;
+                if (cloudflareCtx != null) {
+                  waitUntil = cloudflareCtx.waitUntil;
+                }
+                if (typeof waitUntil === "function") {
+                  const cloudflareCtx2 = obj5.cloudflareCtx;
+                  cloudflareCtx2.waitUntil(closure_130_3(num4));
+                }
+              }
+              const _Symbol = Symbol;
+              if (closure_130_0(closure_130_1[3]).GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")]) {
+                const obj3 = closure_130_0(closure_130_1[4]);
+                obj3.vercelWaitUntil(closure_130_3(num4));
+              } else {
+                const _process = process;
+                let tmp21 = typeof process !== "undefined";
+                if (tmp21) {
+                  const _process7 = process;
+                  let NETLIFY = process.env.FUNCTIONS_WORKER_RUNTIME;
+                  if (!NETLIFY) {
+                    const _process2 = process;
+                    NETLIFY = process.env.LAMBDA_TASK_ROOT;
+                  }
+                  if (!NETLIFY) {
+                    const _process3 = process;
+                    NETLIFY = process.env.K_SERVICE;
+                  }
+                  if (!NETLIFY) {
+                    const _process4 = process;
+                    NETLIFY = process.env.CF_PAGES;
+                  }
+                  if (!NETLIFY) {
+                    const _process5 = process;
+                    NETLIFY = process.env.VERCEL;
+                  }
+                  if (!NETLIFY) {
+                    const _process6 = process;
+                    NETLIFY = process.env.NETLIFY;
+                  }
+                  tmp21 = NETLIFY;
+                }
+                if (tmp21) {
+                  c3 = 2;
+                  c4 = 1;
+                  const obj7 = { value: closure_130_3(num4), done: false };
+                  return obj7;
+                }
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: "+352" };
+        }
+      } catch (tmp45) {
+        c4 = 3;
+        throw tmp45;
+      }
     }
-    await "IconComponent";
-    obj5 = closure_0;
-    if (closure_0 === undefined) {
-      obj5 = {};
-    }
-    return "Reflect";
   });
   return obj(...arguments);
 };

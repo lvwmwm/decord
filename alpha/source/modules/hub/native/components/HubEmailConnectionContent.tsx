@@ -1,10 +1,10 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13674
+// Function ID: 13675
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4823, 13662, 1087, 21, 4971, 587, 1505, 5593, 13676, 6374, 1128, 13671, 13677, 5234, 5210, 13681, 2002, 7007, 1202, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 4823, 13661, 1087, 21, 4971, 587, 1505, 5593, 13675, 6374, 1128, 13670, 13676, 5234, 5210, 13680, 2002, 7007, 1202, 5244, 2]
 // Exports: default
 
-// Module 13675 (HubEmailConnectionContent)
+// Module 13674 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
-import HubConstants from "HubConstants" /* 13662 */;
+import HubConstants from "HubConstants" /* 13661 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionContent(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 0;
             closure_131_4(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp78) {
           closure_4 = tmp78;
@@ -269,10 +269,10 @@ export default function HubEmailConnectionContent(arg0) {
   let obj4 = { ref, contentContainerStyle: items, children: items2 };
   items = [tmp.scrollViewContainer, ];
   let obj5 = { paddingBottom: insets.bottom + tmp10(587).space.PX_16 };
-  const HubEmailConnectionScreen = tmp2(13671).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = tmp2(13670).HubEmailConnectionScreen;
   items[1] = obj5;
   let obj6 = { style: tmp.container, children: items1 };
-  let obj7 = { style: tmp.header, children: closure_12(tmp2(13677).InkQuillSpotIllustration, { scale: 0.75 }) };
+  let obj7 = { style: tmp.header, children: closure_12(tmp2(13676).InkQuillSpotIllustration, { scale: 0.75 }) };
   items1 = [closure_12(ref, obj7), , , ];
   let obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items1[1] = closure_12(Text_Text.Text, obj8);

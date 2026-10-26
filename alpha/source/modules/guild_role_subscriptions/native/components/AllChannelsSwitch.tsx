@@ -1,9 +1,9 @@
-// Module ID: 19307
-// Function ID: 19308
+// Module ID: 19306
+// Function ID: 19307
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 16585, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 1128, 19308, 19309, 2]
+// Dependencies: [19, 17, 16584, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 1128, 19307, 19308, 2]
 
-// Module 19307 (AllChannelsSwitch)
+// Module 19306 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import native from "native" /* 1202 */;
 import react_native2 from "react-native" /* 5039 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16585 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19308 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19309 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16584 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19307 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

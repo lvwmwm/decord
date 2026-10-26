@@ -1,9 +1,9 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 17974
+// Function ID: 17975
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9700, 1087, 1098, 21, 4971, 558, 576, 5052, 17976, 17978, 5263, 5205, 5153, 5155, 17979, 5037, 11223, 17980, 5939, 5053, 1506, 5159, 17427, 11884, 5297, 5146, 17426, 584, 5160, 2]
+// Dependencies: [32, 19, 17, 9700, 1087, 1098, 21, 4971, 558, 576, 5052, 17975, 17977, 5263, 5205, 5153, 5155, 17978, 5037, 11225, 17979, 5939, 5053, 1506, 5159, 17426, 11886, 5297, 5146, 17425, 584, 5160, 2]
 
-// Module 17975 (MainTabsChannelScreenStack)
+// Module 17974 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1098 */;
@@ -16,14 +16,14 @@ import ChatInputUtils from "ChatInputUtils" /* 5159 */;
 import useThemeDefault from "useTheme" /* 5205 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
 import react_native from "react-native" /* 9700 */;
-import reactDefault from "react" /* 11223 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11884 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17426 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17427 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17976 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17978 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17979 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17980 */;
+import reactDefault from "react" /* 11225 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11886 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17425 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17426 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17975 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 17977 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 17978 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 17979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -1365,8 +1365,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[7] !== sharedValue) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154265 */ }, 10);
-        return () => { /* body not rendered: F154266 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154278 */ }, 10);
+        return () => { /* body not rendered: F154279 */ };
       }
     }
     cResult[7] = sharedValue;
@@ -1375,24 +1375,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154265 */ }, 10);
-        return () => { /* body not rendered: F154266 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154278 */ }, 10);
+        return () => { /* body not rendered: F154279 */ };
       }
     }
   }
   if (cResult[9] === shouldFreeze) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154265 */ }, 10);
-        return () => { /* body not rendered: F154266 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154278 */ }, 10);
+        return () => { /* body not rendered: F154279 */ };
       }
     }
     const effect1 = obj2.useEffect(tmp21, items);
     if (cResult[12] === firstScreenFrame) {
       class J {
         constructor() {
-          closure_0 = setTimeout(() => { /* body not rendered: F154265 */ }, 10);
-          return () => { /* body not rendered: F154266 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F154278 */ }, 10);
+          return () => { /* body not rendered: F154279 */ };
         }
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12279
+// Function ID: 12280
 // Name: conjurePublishHistoryRequests
 // Dependencies: [5, 10794, 2]
 // Exports: fetchPublishHistory, fetchPublishHistoryNotes
 
-// Module 12277 (conjurePublishHistoryRequests)
+// Module 12279 (conjurePublishHistoryRequests)
 import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ obj = function _fetchPublishHistoryNotes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

@@ -1,230 +1,439 @@
 // Module ID: 13008
 // Function ID: 13009
-// Dependencies: [13001]
-// Exports: add, ceil, clone, copy, create, cross, dist, distance, div, divide, dot, equals, exactEquals, floor, forEach, fromValues, inverse, len, length, lerp, max, min, mul, multiply, negate, normalize, random, round, scale, scaleAndAdd, set, sqrDist, sqrLen, squaredDistance, squaredLength, str, sub, subtract, transformMat4, transformQuat, zero
+// Dependencies: [13000, 13005, 13004]
+// Exports: add, clone, conjugate, copy, create, equals, exactEquals, fromMat4, fromRotation, fromRotationTranslation, fromRotationTranslationValues, fromTranslation, fromValues, getDual, getTranslation, identity, invert, lerp, mul, multiply, normalize, rotateAroundAxis, rotateByQuatAppend, rotateByQuatPrepend, rotateX, rotateY, rotateZ, scale, set, setDual, str, translate
 
 // Module 13008
-import ANGLE_ORDER from "ANGLE_ORDER" /* 13001 */;
+import ANGLE_ORDER2 from "ANGLE_ORDER" /* 13000 */;
+import _mod13004 from "module_13004" /* 13004 */;
+import _mod13005 from "module_13005" /* 13005 */;
 
-let tmp;
-let value;
-let weakMap;
-let fn = function _typeof(ANGLE_ORDER) {
+let fn = function _typeof(arg0) {
   if (typeof Symbol === "function") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "symbol") {
       fn = (arg0) => typeof arg0;
     }
-    let tmp = ANGLE_ORDER;
-    return fn(ANGLE_ORDER);
+    let tmp = arg0;
+    return fn(arg0);
   }
-  fn = (ANGLE_ORDER) => {
-    const tmp = ANGLE_ORDER;
+  fn = (arg0) => {
+    const tmp = arg0;
     if (tmp) {
       const _Symbol = Symbol;
       if (typeof Symbol === "function") {
         let str;
         const _Symbol3 = Symbol;
-        if (ANGLE_ORDER.constructor === Symbol) {
+        if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
           str = "symbol";
         }
         return str;
       }
     }
-    str = typeof ANGLE_ORDER;
+    str = typeof arg0;
   };
 };
-function subtract(arg0, arg1, arg2) {
-  arg0[0] = arg1[0] - arg2[0];
-  arg0[1] = arg1[1] - arg2[1];
-  arg0[2] = arg1[2] - arg2[2];
-  arg0[3] = arg1[3] - arg2[3];
-  return arg0;
-}
 function multiply(arg0, arg1, arg2) {
-  arg0[0] = arg1[0] * arg2[0];
-  arg0[1] = arg1[1] * arg2[1];
-  arg0[2] = arg1[2] * arg2[2];
-  arg0[3] = arg1[3] * arg2[3];
-  return arg0;
-}
-function divide(arg0, arg1, arg2) {
-  arg0[0] = arg1[0] / arg2[0];
-  arg0[1] = arg1[1] / arg2[1];
-  arg0[2] = arg1[2] / arg2[2];
-  arg0[3] = arg1[3] / arg2[3];
-  return arg0;
-}
-function distance(arg0, arg1) {
-  const diff = arg1[0] - arg0[0];
-  const diff1 = arg1[1] - arg0[1];
-  const diff2 = arg1[2] - arg0[2];
-  const diff3 = arg1[3] - arg0[3];
-  return Math.sqrt(diff * diff + diff1 * diff1 + diff2 * diff2 + diff3 * diff3);
-}
-function squaredDistance(arg0, arg1) {
-  const diff = arg1[0] - arg0[0];
-  const diff1 = arg1[1] - arg0[1];
-  const diff2 = arg1[2] - arg0[2];
-  const diff3 = arg1[3] - arg0[3];
-  return diff * diff + diff1 * diff1 + diff2 * diff2 + diff3 * diff3;
-}
-function length(arg0) {
   let tmp;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
   let tmp2;
   let tmp3;
   let tmp4;
-  [tmp, tmp2, tmp3, tmp4] = arg0;
-  return Math.sqrt(tmp * tmp + tmp2 * tmp2 + tmp3 * tmp3 + tmp4 * tmp4);
+  [tmp, tmp2, tmp3, tmp4] = arg1;
+  [tmp13, tmp14, tmp15, tmp16] = arg2;
+  arg0[0] = tmp * tmp16 + tmp4 * tmp13 + tmp2 * tmp15 - tmp3 * tmp14;
+  arg0[1] = tmp2 * tmp16 + tmp4 * tmp14 + tmp3 * tmp13 - tmp * tmp15;
+  arg0[2] = tmp3 * tmp16 + tmp4 * tmp15 + tmp * tmp14 - tmp2 * tmp13;
+  arg0[3] = tmp4 * tmp16 - tmp * tmp13 - tmp2 * tmp14 - tmp3 * tmp15;
+  arg0[4] = tmp * arg2[7] + tmp4 * arg2[4] + tmp2 * arg2[6] - tmp3 * arg2[5] + arg1[4] * tmp16 + arg1[7] * tmp13 + arg1[5] * tmp15 - arg1[6] * tmp14;
+  arg0[5] = tmp2 * arg2[7] + tmp4 * arg2[5] + tmp3 * arg2[4] - tmp * arg2[6] + arg1[5] * tmp16 + arg1[7] * tmp14 + arg1[6] * tmp13 - arg1[4] * tmp15;
+  arg0[6] = tmp3 * arg2[7] + tmp4 * arg2[6] + tmp * arg2[5] - tmp2 * arg2[4] + arg1[6] * tmp16 + arg1[7] * tmp15 + arg1[4] * tmp14 - arg1[5] * tmp13;
+  arg0[7] = tmp4 * arg2[7] - tmp * arg2[4] - tmp2 * arg2[5] - tmp3 * arg2[6] + arg1[7] * tmp16 - arg1[4] * tmp13 - arg1[5] * tmp14 - arg1[6] * tmp15;
+  return arg0;
 }
-function squaredLength(arg0) {
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  [tmp, tmp2, tmp3, tmp4] = arg0;
-  return tmp * tmp + tmp2 * tmp2 + tmp3 * tmp3 + tmp4 * tmp4;
-}
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  const self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!ANGLE_ORDER) {
-  let tmp5 = null;
-  const merged = Object.assign({ default: null });
-  merged[0] = ANGLE_ORDER;
-  value = merged;
-  if (null !== ANGLE_ORDER) {
-    if ("object" == fn(ANGLE_ORDER)) {
-      if (!weakMap) {
-        const tmp8 = ANGLE_ORDER;
-        let str = "default";
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          const tmp10 = keys[tmp];
-          while (tmp10 !== undefined) {
-            let callResult = "default" !== tmp10;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(ANGLE_ORDER, tmp10);
-            }
-            if (!callResult) {
-              continue;
-            } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(ANGLE_ORDER, tmp10);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp10] = ANGLE_ORDER[tmp10];
-                continue;
-              } else {
-                let definePropertyResult1 = defineProperty(merged, tmp10, ownPropertyDescriptor);
-                continue;
-              }
-              continue;
-            }
-            continue;
-          }
-        }
-      } else if (weakMap.has(ANGLE_ORDER)) {
-        value = weakMap.get(ANGLE_ORDER);
-      } else {
-        let result = weakMap.set(ANGLE_ORDER, merged);
-      }
-    } else {
-      value = merged;
-    }
-  }
-} else {
-  value = ANGLE_ORDER;
-}
-const map = value;
-let aRRAY_TYPE = new value.ARRAY_TYPE(4);
-if (value.ARRAY_TYPE != Float32Array) {
-  let num = 0;
-  aRRAY_TYPE[0] = 0;
-  aRRAY_TYPE[1] = 0;
-  aRRAY_TYPE[2] = 0;
-  aRRAY_TYPE[3] = 0;
-}
-const str_export = function str(arg0) {
-  return "vec4(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ", " + arg0[3] + ")";
-};
-
-export const add = function add(arg0, arg1, arg2) {
+const ANGLE_ORDER = _interopRequireWildcard(ANGLE_ORDER2);
+const add = _interopRequireWildcard(_mod13005);
+let closure_3 = _interopRequireWildcard(_mod13004);
+({ copy: exports.getReal, copy: exports.setReal } = add);
+const dot = add.dot;
+const squaredLength = add.squaredLength;
+const add_export = function add(arg0, arg1, arg2) {
   arg0[0] = arg1[0] + arg2[0];
   arg0[1] = arg1[1] + arg2[1];
   arg0[2] = arg1[2] + arg2[2];
   arg0[3] = arg1[3] + arg2[3];
+  arg0[4] = arg1[4] + arg2[4];
+  arg0[5] = arg1[5] + arg2[5];
+  arg0[6] = arg1[6] + arg2[6];
+  arg0[7] = arg1[7] + arg2[7];
   return arg0;
 };
-export const ceil = function ceil(arg0, arg1) {
-  arg0[0] = Math.ceil(arg1[0]);
-  arg0[1] = Math.ceil(arg1[1]);
-  arg0[2] = Math.ceil(arg1[2]);
-  arg0[3] = Math.ceil(arg1[3]);
-  return arg0;
+const str_export = function str(arg0) {
+  return "quat2(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ", " + arg0[3] + ", " + arg0[4] + ", " + arg0[5] + ", " + arg0[6] + ", " + arg0[7] + ")";
 };
+
+export { add_export as add };
 export const clone = function clone(arg0) {
-  aRRAY_TYPE = new map.ARRAY_TYPE(4);
+  const aRRAY_TYPE = new ANGLE_ORDER.ARRAY_TYPE(8);
   aRRAY_TYPE[0] = arg0[0];
   aRRAY_TYPE[1] = arg0[1];
   aRRAY_TYPE[2] = arg0[2];
   aRRAY_TYPE[3] = arg0[3];
+  aRRAY_TYPE[4] = arg0[4];
+  aRRAY_TYPE[5] = arg0[5];
+  aRRAY_TYPE[6] = arg0[6];
+  aRRAY_TYPE[7] = arg0[7];
   return aRRAY_TYPE;
+};
+export const conjugate = function conjugate(arg0, arg1) {
+  arg0[0] = -arg1[0];
+  arg0[1] = -arg1[1];
+  arg0[2] = -arg1[2];
+  arg0[3] = arg1[3];
+  arg0[4] = -arg1[4];
+  arg0[5] = -arg1[5];
+  arg0[6] = -arg1[6];
+  arg0[7] = arg1[7];
+  return arg0;
 };
 export const copy = function copy(arg0, arg1) {
   arg0[0] = arg1[0];
   arg0[1] = arg1[1];
   arg0[2] = arg1[2];
   arg0[3] = arg1[3];
+  arg0[4] = arg1[4];
+  arg0[5] = arg1[5];
+  arg0[6] = arg1[6];
+  arg0[7] = arg1[7];
   return arg0;
 };
 export const create = function create() {
-  aRRAY_TYPE = new map.ARRAY_TYPE(4);
-  if (map.ARRAY_TYPE != Float32Array) {
+  const aRRAY_TYPE = new ANGLE_ORDER.ARRAY_TYPE(8);
+  if (ANGLE_ORDER.ARRAY_TYPE != Float32Array) {
     aRRAY_TYPE[0] = 0;
     aRRAY_TYPE[1] = 0;
     aRRAY_TYPE[2] = 0;
-    aRRAY_TYPE[3] = 0;
+    aRRAY_TYPE[4] = 0;
+    aRRAY_TYPE[5] = 0;
+    aRRAY_TYPE[6] = 0;
+    aRRAY_TYPE[7] = 0;
   }
+  aRRAY_TYPE[3] = 1;
   return aRRAY_TYPE;
 };
-export const cross = function cross(arg0, arg1, arg2, arg3) {
+export const equals = function equals(arg0, arg1) {
+  let tmp;
   let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
   let tmp7;
   let tmp8;
   let tmp9;
-  const diff = arg2[0] * arg3[1] - arg2[1] * arg3[0];
-  const diff1 = arg2[0] * arg3[2] - arg2[2] * arg3[0];
-  const diff2 = arg2[0] * arg3[3] - arg2[3] * arg3[0];
-  const diff3 = arg2[1] * arg3[2] - arg2[2] * arg3[1];
-  const diff4 = arg2[1] * arg3[3] - arg2[3] * arg3[1];
-  const diff5 = arg2[2] * arg3[3] - arg2[3] * arg3[2];
-  [tmp7, tmp8, tmp9, tmp10] = arg1;
-  arg0[0] = tmp8 * diff5 - tmp9 * diff4 + tmp10 * diff3;
-  arg0[1] = -tmp7 * diff5 + tmp9 * diff2 - tmp10 * diff1;
-  arg0[2] = tmp7 * diff4 - tmp8 * diff2 + tmp10 * diff;
-  arg0[3] = -tmp7 * diff3 + tmp8 * diff1 - tmp9 * diff;
+  [tmp, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8] = arg0;
+  [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16] = arg1;
+  const absolute = Math.abs(tmp - tmp9);
+  const EPSILON = ANGLE_ORDER.EPSILON;
+  const absolute1 = Math.abs(tmp);
+  let tmp20 = absolute <= EPSILON * max(1, absolute1, Math.abs(tmp9));
+  if (tmp20) {
+    const _Math = Math;
+    const _Math2 = Math;
+    const _Math3 = Math;
+    const absolute2 = Math.abs(tmp2 - tmp10);
+    const EPSILON2 = tmp18.EPSILON;
+    const max2 = Math.max;
+    const _Math4 = Math;
+    const absolute3 = Math.abs(tmp2);
+    tmp20 = absolute2 <= EPSILON2 * max2(1, absolute3, Math.abs(tmp10));
+  }
+  if (tmp20) {
+    const _Math5 = Math;
+    const _Math6 = Math;
+    const _Math7 = Math;
+    const absolute4 = Math.abs(tmp3 - tmp11);
+    const EPSILON3 = tmp18.EPSILON;
+    const max3 = Math.max;
+    const _Math8 = Math;
+    const absolute5 = Math.abs(tmp3);
+    tmp20 = absolute4 <= EPSILON3 * max3(1, absolute5, Math.abs(tmp11));
+  }
+  if (tmp20) {
+    const _Math9 = Math;
+    const _Math10 = Math;
+    const _Math11 = Math;
+    const absolute6 = Math.abs(tmp4 - tmp12);
+    const EPSILON4 = tmp18.EPSILON;
+    const max4 = Math.max;
+    const _Math12 = Math;
+    const absolute7 = Math.abs(tmp4);
+    tmp20 = absolute6 <= EPSILON4 * max4(1, absolute7, Math.abs(tmp12));
+  }
+  if (tmp20) {
+    const _Math13 = Math;
+    const _Math14 = Math;
+    const _Math15 = Math;
+    const absolute8 = Math.abs(tmp5 - tmp13);
+    const EPSILON5 = tmp18.EPSILON;
+    const max5 = Math.max;
+    const _Math16 = Math;
+    const absolute9 = Math.abs(tmp5);
+    tmp20 = absolute8 <= EPSILON5 * max5(1, absolute9, Math.abs(tmp13));
+  }
+  if (tmp20) {
+    const _Math17 = Math;
+    const _Math18 = Math;
+    const _Math19 = Math;
+    const absolute10 = Math.abs(tmp6 - tmp14);
+    const EPSILON6 = tmp18.EPSILON;
+    const max6 = Math.max;
+    const _Math20 = Math;
+    const absolute11 = Math.abs(tmp6);
+    tmp20 = absolute10 <= EPSILON6 * max6(1, absolute11, Math.abs(tmp14));
+  }
+  if (tmp20) {
+    const _Math21 = Math;
+    const _Math22 = Math;
+    const _Math23 = Math;
+    const absolute12 = Math.abs(tmp7 - tmp15);
+    const EPSILON7 = tmp18.EPSILON;
+    const max7 = Math.max;
+    const _Math24 = Math;
+    const absolute13 = Math.abs(tmp7);
+    tmp20 = absolute12 <= EPSILON7 * max7(1, absolute13, Math.abs(tmp15));
+  }
+  if (tmp20) {
+    const _Math25 = Math;
+    const _Math26 = Math;
+    const _Math27 = Math;
+    const absolute14 = Math.abs(tmp8 - tmp16);
+    const EPSILON8 = tmp18.EPSILON;
+    const max8 = Math.max;
+    const _Math28 = Math;
+    const absolute15 = Math.abs(tmp8);
+    tmp20 = absolute14 <= EPSILON8 * max8(1, absolute15, Math.abs(tmp16));
+  }
+  return tmp20;
+};
+export const exactEquals = function exactEquals(arg0, arg1) {
+  return arg0[0] === arg1[0] && arg0[1] === arg1[1] && arg0[2] === arg1[2] && arg0[3] === arg1[3] && arg0[4] === arg1[4] && arg0[5] === arg1[5] && arg0[6] === arg1[6] && arg0[7] === arg1[7];
+};
+export const fromMat4 = function fromMat4(arg0, arg1) {
+  let tmp10;
+  let tmp11;
+  let tmp8;
+  let tmp9;
+  const obj = add.create();
+  const rotation = closure_3.getRotation(obj, arg1);
+  const aRRAY_TYPE = new ANGLE_ORDER.ARRAY_TYPE(3);
+  const translation = closure_3.getTranslation(aRRAY_TYPE, arg1);
+  const result = 0.5 * aRRAY_TYPE[0];
+  const result1 = 0.5 * aRRAY_TYPE[1];
+  const result2 = 0.5 * aRRAY_TYPE[2];
+  [tmp8, tmp9, tmp10, tmp11] = obj;
+  arg0[0] = tmp8;
+  arg0[1] = tmp9;
+  arg0[2] = tmp10;
+  arg0[3] = tmp11;
+  arg0[4] = result * tmp11 + result1 * tmp10 - result2 * tmp9;
+  arg0[5] = result1 * tmp11 + result2 * tmp8 - result * tmp10;
+  arg0[6] = result2 * tmp11 + result * tmp9 - result1 * tmp8;
+  arg0[7] = -result * tmp8 - result1 * tmp9 - result2 * tmp10;
   return arg0;
 };
-export { distance };
-export { divide };
-export const dot = function dot(arg0, arg1) {
-  return arg0[0] * arg1[0] + arg0[1] * arg1[1] + arg0[2] * arg1[2] + arg0[3] * arg1[3];
+export const fromRotation = function fromRotation(arg0, arg1) {
+  arg0[0] = arg1[0];
+  arg0[1] = arg1[1];
+  arg0[2] = arg1[2];
+  arg0[3] = arg1[3];
+  arg0[4] = 0;
+  arg0[5] = 0;
+  arg0[6] = 0;
+  arg0[7] = 0;
+  return arg0;
 };
-export const equals = function equals(arg0, arg1) {
+export const fromRotationTranslation = function fromRotationTranslation(arg0, arg1, arg2) {
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const result = 0.5 * arg2[0];
+  const result1 = 0.5 * arg2[1];
+  const result2 = 0.5 * arg2[2];
+  [tmp4, tmp5, tmp6, tmp7] = arg1;
+  arg0[0] = tmp4;
+  arg0[1] = tmp5;
+  arg0[2] = tmp6;
+  arg0[3] = tmp7;
+  arg0[4] = result * tmp7 + result1 * tmp6 - result2 * tmp5;
+  arg0[5] = result1 * tmp7 + result2 * tmp4 - result * tmp6;
+  arg0[6] = result2 * tmp7 + result * tmp5 - result1 * tmp4;
+  arg0[7] = -result * tmp4 - result1 * tmp5 - result2 * tmp6;
+  return arg0;
+};
+export const fromRotationTranslationValues = function fromRotationTranslationValues(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+  const aRRAY_TYPE = new ANGLE_ORDER.ARRAY_TYPE(8);
+  aRRAY_TYPE[0] = arg0;
+  aRRAY_TYPE[1] = arg1;
+  aRRAY_TYPE[2] = arg2;
+  aRRAY_TYPE[3] = arg3;
+  const result = 0.5 * arg4;
+  const result1 = 0.5 * arg5;
+  const result2 = 0.5 * arg6;
+  aRRAY_TYPE[4] = result * arg3 + result1 * arg2 - result2 * arg1;
+  aRRAY_TYPE[5] = result1 * arg3 + result2 * arg0 - result * arg2;
+  aRRAY_TYPE[6] = result2 * arg3 + result * arg1 - result1 * arg0;
+  aRRAY_TYPE[7] = -result * arg0 - result1 * arg1 - result2 * arg2;
+  return aRRAY_TYPE;
+};
+export const fromTranslation = function fromTranslation(arg0, arg1) {
+  arg0[0] = 0;
+  arg0[1] = 0;
+  arg0[2] = 0;
+  arg0[3] = 1;
+  arg0[4] = 0.5 * arg1[0];
+  arg0[5] = 0.5 * arg1[1];
+  arg0[6] = 0.5 * arg1[2];
+  arg0[7] = 0;
+  return arg0;
+};
+export const fromValues = function fromValues(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
+  const aRRAY_TYPE = new ANGLE_ORDER.ARRAY_TYPE(8);
+  aRRAY_TYPE[0] = arg0;
+  aRRAY_TYPE[1] = arg1;
+  aRRAY_TYPE[2] = arg2;
+  aRRAY_TYPE[3] = arg3;
+  aRRAY_TYPE[4] = arg4;
+  aRRAY_TYPE[5] = arg5;
+  aRRAY_TYPE[6] = arg6;
+  aRRAY_TYPE[7] = arg7;
+  return aRRAY_TYPE;
+};
+export const getDual = function getDual(arg0, arg1) {
+  arg0[0] = arg1[4];
+  arg0[1] = arg1[5];
+  arg0[2] = arg1[6];
+  arg0[3] = arg1[7];
+  return arg0;
+};
+export const getTranslation = function getTranslation(arg0, arg1) {
+  arg0[0] = 2 * (arg1[4] * arg1[3] + arg1[7] * -arg1[0] + arg1[5] * -arg1[2] - arg1[6] * -arg1[1]);
+  arg0[1] = 2 * (arg1[5] * arg1[3] + arg1[7] * -arg1[1] + arg1[6] * -arg1[0] - arg1[4] * -arg1[2]);
+  arg0[2] = 2 * (arg1[6] * arg1[3] + arg1[7] * -arg1[2] + arg1[4] * -arg1[1] - arg1[5] * -arg1[0]);
+  return arg0;
+};
+export const identity = function identity(arg0) {
+  arg0[0] = 0;
+  arg0[1] = 0;
+  arg0[2] = 0;
+  arg0[3] = 1;
+  arg0[4] = 0;
+  arg0[5] = 0;
+  arg0[6] = 0;
+  arg0[7] = 0;
+  return arg0;
+};
+export const invert = function invert(arg0, arg1) {
+  const tmp = squaredLength(arg1);
+  arg0[0] = -arg1[0] / tmp;
+  arg0[1] = -arg1[1] / tmp;
+  arg0[2] = -arg1[2] / tmp;
+  arg0[3] = arg1[3] / tmp;
+  arg0[4] = -arg1[4] / tmp;
+  arg0[5] = -arg1[5] / tmp;
+  arg0[6] = -arg1[6] / tmp;
+  arg0[7] = arg1[7] / tmp;
+  return arg0;
+};
+export const lerp = function lerp(arg0, arg1, arg2, arg3) {
+  const diff = 1 - arg3;
+  let tmp2 = arg3;
+  if (dot(arg1, arg2) < 0) {
+    tmp2 = -arg3;
+  }
+  arg0[0] = arg1[0] * diff + arg2[0] * tmp2;
+  arg0[1] = arg1[1] * diff + arg2[1] * tmp2;
+  arg0[2] = arg1[2] * diff + arg2[2] * tmp2;
+  arg0[3] = arg1[3] * diff + arg2[3] * tmp2;
+  arg0[4] = arg1[4] * diff + arg2[4] * tmp2;
+  arg0[5] = arg1[5] * diff + arg2[5] * tmp2;
+  arg0[6] = arg1[6] * diff + arg2[6] * tmp2;
+  arg0[7] = arg1[7] * diff + arg2[7] * tmp2;
+  return arg0;
+};
+export { multiply };
+export const normalize = function normalize(arg0, arg1) {
+  const tmp = squaredLength(arg1);
+  if (tmp > 0) {
+    const _Math = Math;
+    const sqrtResult = Math.sqrt(tmp);
+    const result = arg1[0] / sqrtResult;
+    const result1 = arg1[1] / sqrtResult;
+    const result2 = arg1[2] / sqrtResult;
+    const result3 = arg1[3] / sqrtResult;
+    const sum = result * tmp8 + result1 * tmp9 + result2 * tmp10 + result3 * tmp11;
+    arg0[0] = result;
+    arg0[1] = result1;
+    arg0[2] = result2;
+    arg0[3] = result3;
+    arg0[4] = (arg1[4] - result * sum) / sqrtResult;
+    arg0[5] = (arg1[5] - result1 * sum) / sqrtResult;
+    arg0[6] = (arg1[6] - result2 * sum) / sqrtResult;
+    arg0[7] = (arg1[7] - result3 * sum) / sqrtResult;
+  }
+  return arg0;
+};
+export const rotateAroundAxis = function rotateAroundAxis(arg0, arg1, arg2, arg3) {
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp9;
+  if (Math.abs(arg3) < ANGLE_ORDER.EPSILON) {
+    arg0[0] = arg1[0];
+    arg0[1] = arg1[1];
+    arg0[2] = arg1[2];
+    arg0[3] = arg1[3];
+    arg0[4] = arg1[4];
+    arg0[5] = arg1[5];
+    arg0[6] = arg1[6];
+    arg0[7] = arg1[7];
+    return arg0;
+  } else {
+    const _Math = Math;
+    const sqrtResult = Math.sqrt(arg2[0] * arg2[0] + arg2[1] * arg2[1] + arg2[2] * arg2[2]);
+    const result = arg3 * 0.5;
+    const _Math2 = Math;
+    const sinResult = Math.sin(result);
+    const result1 = sinResult * arg2[0] / sqrtResult;
+    const result2 = sinResult * arg2[1] / sqrtResult;
+    const result3 = sinResult * arg2[2] / sqrtResult;
+    const _Math3 = Math;
+    const cosResult = Math.cos(result);
+    [tmp9, tmp10, tmp11, tmp12] = arg1;
+    arg0[0] = tmp9 * cosResult + tmp12 * result1 + tmp10 * result3 - tmp11 * result2;
+    arg0[1] = tmp10 * cosResult + tmp12 * result2 + tmp11 * result1 - tmp9 * result3;
+    arg0[2] = tmp11 * cosResult + tmp12 * result3 + tmp9 * result2 - tmp10 * result1;
+    arg0[3] = tmp12 * cosResult - tmp9 * result1 - tmp10 * result2 - tmp11 * result3;
+    arg0[4] = arg1[4] * cosResult + arg1[7] * result1 + arg1[5] * result3 - arg1[6] * result2;
+    arg0[5] = arg1[5] * cosResult + arg1[7] * result2 + arg1[6] * result1 - arg1[4] * result3;
+    arg0[6] = arg1[6] * cosResult + arg1[7] * result3 + arg1[4] * result2 - arg1[5] * result1;
+    arg0[7] = arg1[7] * cosResult - arg1[4] * result1 - arg1[5] * result2 - arg1[6] * result3;
+    return arg0;
+  }
+};
+export const rotateByQuatAppend = function rotateByQuatAppend(arg0, arg1, arg2) {
   let tmp;
   let tmp2;
   let tmp3;
@@ -233,150 +442,88 @@ export const equals = function equals(arg0, arg1) {
   let tmp6;
   let tmp7;
   let tmp8;
-  [tmp, tmp2, tmp3, tmp4] = arg0;
+  [tmp, tmp2, tmp3, tmp4] = arg2;
   [tmp5, tmp6, tmp7, tmp8] = arg1;
-  const absolute = Math.abs(tmp - tmp5);
-  const EPSILON = map.EPSILON;
-  const absolute1 = Math.abs(tmp);
-  let tmp12 = absolute <= EPSILON * max(1, absolute1, Math.abs(tmp5));
-  if (tmp12) {
-    const _Math = Math;
-    const _Math2 = Math;
-    const _Math3 = Math;
-    const absolute2 = Math.abs(tmp2 - tmp6);
-    const EPSILON2 = tmp10.EPSILON;
-    const max2 = Math.max;
-    const _Math4 = Math;
-    const absolute3 = Math.abs(tmp2);
-    tmp12 = absolute2 <= EPSILON2 * max2(1, absolute3, Math.abs(tmp6));
-  }
-  if (tmp12) {
-    const _Math5 = Math;
-    const _Math6 = Math;
-    const _Math7 = Math;
-    const absolute4 = Math.abs(tmp3 - tmp7);
-    const EPSILON3 = tmp10.EPSILON;
-    const max3 = Math.max;
-    const _Math8 = Math;
-    const absolute5 = Math.abs(tmp3);
-    tmp12 = absolute4 <= EPSILON3 * max3(1, absolute5, Math.abs(tmp7));
-  }
-  if (tmp12) {
-    const _Math9 = Math;
-    const _Math10 = Math;
-    const _Math11 = Math;
-    const absolute6 = Math.abs(tmp4 - tmp8);
-    const EPSILON4 = tmp10.EPSILON;
-    const max4 = Math.max;
-    const _Math12 = Math;
-    const absolute7 = Math.abs(tmp4);
-    tmp12 = absolute6 <= EPSILON4 * max4(1, absolute7, Math.abs(tmp8));
-  }
-  return tmp12;
-};
-export const exactEquals = function exactEquals(arg0, arg1) {
-  return arg0[0] === arg1[0] && arg0[1] === arg1[1] && arg0[2] === arg1[2] && arg0[3] === arg1[3];
-};
-export const floor = function floor(arg0, arg1) {
-  arg0[0] = Math.floor(arg1[0]);
-  arg0[1] = Math.floor(arg1[1]);
-  arg0[2] = Math.floor(arg1[2]);
-  arg0[3] = Math.floor(arg1[3]);
+  arg0[0] = tmp5 * tmp4 + tmp8 * tmp + tmp6 * tmp3 - tmp7 * tmp2;
+  arg0[1] = tmp6 * tmp4 + tmp8 * tmp2 + tmp7 * tmp - tmp5 * tmp3;
+  arg0[2] = tmp7 * tmp4 + tmp8 * tmp3 + tmp5 * tmp2 - tmp6 * tmp;
+  arg0[3] = tmp8 * tmp4 - tmp5 * tmp - tmp6 * tmp2 - tmp7 * tmp3;
+  arg0[4] = arg1[4] * tmp4 + arg1[7] * tmp + arg1[5] * tmp3 - arg1[6] * tmp2;
+  arg0[5] = arg1[5] * tmp4 + arg1[7] * tmp2 + arg1[6] * tmp - arg1[4] * tmp3;
+  arg0[6] = arg1[6] * tmp4 + arg1[7] * tmp3 + arg1[4] * tmp2 - arg1[5] * tmp;
+  arg0[7] = arg1[7] * tmp4 - arg1[4] * tmp - arg1[5] * tmp2 - arg1[6] * tmp3;
   return arg0;
 };
-export const fromValues = function fromValues(arg0, arg1, arg2, arg3) {
-  aRRAY_TYPE = new map.ARRAY_TYPE(4);
-  aRRAY_TYPE[0] = arg0;
-  aRRAY_TYPE[1] = arg1;
-  aRRAY_TYPE[2] = arg2;
-  aRRAY_TYPE[3] = arg3;
-  return aRRAY_TYPE;
-};
-export const inverse = function inverse(arg0, arg1) {
-  arg0[0] = 1 / arg1[0];
-  arg0[1] = 1 / arg1[1];
-  arg0[2] = 1 / arg1[2];
-  arg0[3] = 1 / arg1[3];
-  return arg0;
-};
-export { length };
-export const lerp = function lerp(arg0, arg1, arg2, arg3) {
+export const rotateByQuatPrepend = function rotateByQuatPrepend(arg0, arg1, arg2) {
   let tmp;
   let tmp2;
   let tmp3;
   let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   [tmp, tmp2, tmp3, tmp4] = arg1;
-  arg0[0] = tmp + arg3 * (arg2[0] - tmp);
-  arg0[1] = tmp2 + arg3 * (arg2[1] - tmp2);
-  arg0[2] = tmp3 + arg3 * (arg2[2] - tmp3);
-  arg0[3] = tmp4 + arg3 * (arg2[3] - tmp4);
+  [tmp5, tmp6, tmp7, tmp8] = arg2;
+  arg0[0] = tmp * tmp8 + tmp4 * tmp5 + tmp2 * tmp7 - tmp3 * tmp6;
+  arg0[1] = tmp2 * tmp8 + tmp4 * tmp6 + tmp3 * tmp5 - tmp * tmp7;
+  arg0[2] = tmp3 * tmp8 + tmp4 * tmp7 + tmp * tmp6 - tmp2 * tmp5;
+  arg0[3] = tmp4 * tmp8 - tmp * tmp5 - tmp2 * tmp6 - tmp3 * tmp7;
+  arg0[4] = tmp * arg2[7] + tmp4 * arg2[4] + tmp2 * arg2[6] - tmp3 * arg2[5];
+  arg0[5] = tmp2 * arg2[7] + tmp4 * arg2[5] + tmp3 * arg2[4] - tmp * arg2[6];
+  arg0[6] = tmp3 * arg2[7] + tmp4 * arg2[6] + tmp * arg2[5] - tmp2 * arg2[4];
+  arg0[7] = tmp4 * arg2[7] - tmp * arg2[4] - tmp2 * arg2[5] - tmp3 * arg2[6];
   return arg0;
 };
-export const max = function max(arg0, arg1, arg2) {
-  arg0[0] = Math.max(arg1[0], arg2[0]);
-  arg0[1] = Math.max(arg1[1], arg2[1]);
-  arg0[2] = Math.max(arg1[2], arg2[2]);
-  arg0[3] = Math.max(arg1[3], arg2[3]);
+export const rotateX = function rotateX(arg0, arg1, arg2) {
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  const diff = tmp5 * tmp4 + tmp8 * tmp + tmp6 * tmp3 - tmp7 * tmp2;
+  const diff1 = tmp6 * tmp4 + tmp8 * tmp2 + tmp7 * tmp - tmp5 * tmp3;
+  const diff2 = tmp7 * tmp4 + tmp8 * tmp3 + tmp5 * tmp2 - tmp6 * tmp;
+  const diff3 = tmp8 * tmp4 - tmp5 * tmp - tmp6 * tmp2 - tmp7 * tmp3;
+  add.rotateX(arg0, arg1, arg2);
+  [tmp14, tmp15, tmp16, tmp17] = arg0;
+  arg0[4] = diff * tmp17 + diff3 * tmp14 + diff1 * tmp16 - diff2 * tmp15;
+  arg0[5] = diff1 * tmp17 + diff3 * tmp15 + diff2 * tmp14 - diff * tmp16;
+  arg0[6] = diff2 * tmp17 + diff3 * tmp16 + diff * tmp15 - diff1 * tmp14;
+  arg0[7] = diff3 * tmp17 - diff * tmp14 - diff1 * tmp15 - diff2 * tmp16;
   return arg0;
 };
-export const min = function min(arg0, arg1, arg2) {
-  arg0[0] = Math.min(arg1[0], arg2[0]);
-  arg0[1] = Math.min(arg1[1], arg2[1]);
-  arg0[2] = Math.min(arg1[2], arg2[2]);
-  arg0[3] = Math.min(arg1[3], arg2[3]);
+export const rotateY = function rotateY(arg0, arg1, arg2) {
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  const diff = tmp5 * tmp4 + tmp8 * tmp + tmp6 * tmp3 - tmp7 * tmp2;
+  const diff1 = tmp6 * tmp4 + tmp8 * tmp2 + tmp7 * tmp - tmp5 * tmp3;
+  const diff2 = tmp7 * tmp4 + tmp8 * tmp3 + tmp5 * tmp2 - tmp6 * tmp;
+  const diff3 = tmp8 * tmp4 - tmp5 * tmp - tmp6 * tmp2 - tmp7 * tmp3;
+  add.rotateY(arg0, arg1, arg2);
+  [tmp14, tmp15, tmp16, tmp17] = arg0;
+  arg0[4] = diff * tmp17 + diff3 * tmp14 + diff1 * tmp16 - diff2 * tmp15;
+  arg0[5] = diff1 * tmp17 + diff3 * tmp15 + diff2 * tmp14 - diff * tmp16;
+  arg0[6] = diff2 * tmp17 + diff3 * tmp16 + diff * tmp15 - diff1 * tmp14;
+  arg0[7] = diff3 * tmp17 - diff * tmp14 - diff1 * tmp15 - diff2 * tmp16;
   return arg0;
 };
-export { multiply };
-export const negate = function negate(arg0, arg1) {
-  arg0[0] = -arg1[0];
-  arg0[1] = -arg1[1];
-  arg0[2] = -arg1[2];
-  arg0[3] = -arg1[3];
-  return arg0;
-};
-export const normalize = function normalize(arg0, arg1) {
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  [tmp, tmp2, tmp3, tmp4] = arg1;
-  const sum = tmp * tmp + tmp2 * tmp2 + tmp3 * tmp3 + tmp4 * tmp4;
-  let result = sum;
-  if (sum > 0) {
-    const _Math = Math;
-    result = 1 / Math.sqrt(sum);
-  }
-  arg0[0] = tmp * result;
-  arg0[1] = tmp2 * result;
-  arg0[2] = tmp3 * result;
-  arg0[3] = tmp4 * result;
-  return arg0;
-};
-export const random = function random(arg0, arg1) {
-  let num = 1;
-  if (undefined !== arg1) {
-    num = arg1;
-  }
-  const RANDOMResult = map.RANDOM();
-  const diff = 2 * RANDOMResult - 1;
-  const result = 4 * map.RANDOM();
-  const result1 = (result - 2) * Math.sqrt(RANDOMResult * -RANDOMResult + RANDOMResult);
-  const RANDOMResult1 = map.RANDOM();
-  const diff1 = 2 * RANDOMResult1 - 1;
-  const result2 = 4 * map.RANDOM();
-  const result3 = (result2 - 2) * Math.sqrt(RANDOMResult1 * -RANDOMResult1 + RANDOMResult1);
-  const sqrtResult = Math.sqrt((1 - (diff * diff + result1 * result1)) / (diff1 * diff1 + result3 * result3));
-  arg0[0] = num * diff;
-  arg0[1] = num * result1;
-  arg0[2] = num * diff1 * sqrtResult;
-  arg0[3] = num * result3 * sqrtResult;
-  return arg0;
-};
-export const round = function round(arg0, arg1) {
-  arg0[0] = map.round(arg1[0]);
-  arg0[1] = map.round(arg1[1]);
-  arg0[2] = map.round(arg1[2]);
-  arg0[3] = map.round(arg1[3]);
+export const rotateZ = function rotateZ(arg0, arg1, arg2) {
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  const diff = tmp5 * tmp4 + tmp8 * tmp + tmp6 * tmp3 - tmp7 * tmp2;
+  const diff1 = tmp6 * tmp4 + tmp8 * tmp2 + tmp7 * tmp - tmp5 * tmp3;
+  const diff2 = tmp7 * tmp4 + tmp8 * tmp3 + tmp5 * tmp2 - tmp6 * tmp;
+  const diff3 = tmp8 * tmp4 - tmp5 * tmp - tmp6 * tmp2 - tmp7 * tmp3;
+  add.rotateZ(arg0, arg1, arg2);
+  [tmp14, tmp15, tmp16, tmp17] = arg0;
+  arg0[4] = diff * tmp17 + diff3 * tmp14 + diff1 * tmp16 - diff2 * tmp15;
+  arg0[5] = diff1 * tmp17 + diff3 * tmp15 + diff2 * tmp14 - diff * tmp16;
+  arg0[6] = diff2 * tmp17 + diff3 * tmp16 + diff * tmp15 - diff1 * tmp14;
+  arg0[7] = diff3 * tmp17 - diff * tmp14 - diff1 * tmp15 - diff2 * tmp16;
   return arg0;
 };
 export const scale = function scale(arg0, arg1, arg2) {
@@ -384,97 +531,53 @@ export const scale = function scale(arg0, arg1, arg2) {
   arg0[1] = arg1[1] * arg2;
   arg0[2] = arg1[2] * arg2;
   arg0[3] = arg1[3] * arg2;
+  arg0[4] = arg1[4] * arg2;
+  arg0[5] = arg1[5] * arg2;
+  arg0[6] = arg1[6] * arg2;
+  arg0[7] = arg1[7] * arg2;
   return arg0;
 };
-export const scaleAndAdd = function scaleAndAdd(arg0, arg1, arg2, arg3) {
-  arg0[0] = arg1[0] + arg2[0] * arg3;
-  arg0[1] = arg1[1] + arg2[1] * arg3;
-  arg0[2] = arg1[2] + arg2[2] * arg3;
-  arg0[3] = arg1[3] + arg2[3] * arg3;
-  return arg0;
-};
-export const set = function set(arg0, arg1, arg2, arg3, arg4) {
+export const set = function set(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
   arg0[0] = arg1;
   arg0[1] = arg2;
   arg0[2] = arg3;
   arg0[3] = arg4;
+  arg0[4] = arg5;
+  arg0[5] = arg6;
+  arg0[6] = arg7;
+  arg0[7] = arg8;
   return arg0;
 };
-export { squaredDistance };
-export { squaredLength };
+export const setDual = function setDual(arg0, arg1) {
+  arg0[4] = arg1[0];
+  arg0[5] = arg1[1];
+  arg0[6] = arg1[2];
+  arg0[7] = arg1[3];
+  return arg0;
+};
 export { str_export as str };
-export { subtract };
-export const transformMat4 = function transformMat4(arg0, arg1, arg2) {
+export const translate = function translate(arg0, arg1, arg2) {
   let tmp;
   let tmp2;
   let tmp3;
   let tmp4;
   [tmp, tmp2, tmp3, tmp4] = arg1;
-  arg0[0] = arg2[0] * tmp + arg2[4] * tmp2 + arg2[8] * tmp3 + arg2[12] * tmp4;
-  arg0[1] = arg2[1] * tmp + arg2[5] * tmp2 + arg2[9] * tmp3 + arg2[13] * tmp4;
-  arg0[2] = arg2[2] * tmp + arg2[6] * tmp2 + arg2[10] * tmp3 + arg2[14] * tmp4;
-  arg0[3] = arg2[3] * tmp + arg2[7] * tmp2 + arg2[11] * tmp3 + arg2[15] * tmp4;
+  const result = 0.5 * arg2[0];
+  const result1 = 0.5 * arg2[1];
+  const result2 = 0.5 * arg2[2];
+  arg0[0] = tmp;
+  arg0[1] = tmp2;
+  arg0[2] = tmp3;
+  arg0[3] = tmp4;
+  arg0[4] = tmp4 * result + tmp2 * result2 - tmp3 * result1 + arg1[4];
+  arg0[5] = tmp4 * result1 + tmp3 * result - tmp * result2 + arg1[5];
+  arg0[6] = tmp4 * result2 + tmp * result1 - tmp2 * result + arg1[6];
+  arg0[7] = -tmp * result - tmp2 * result1 - tmp3 * result2 + arg1[7];
   return arg0;
 };
-export const transformQuat = function transformQuat(arg0, arg1, arg2) {
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  [tmp, tmp2, tmp3, tmp4] = arg2;
-  [tmp5, tmp6, tmp7] = arg1;
-  const diff = tmp2 * tmp7 - tmp3 * tmp6;
-  const diff1 = tmp3 * tmp5 - tmp * tmp7;
-  const diff2 = tmp * tmp6 - tmp2 * tmp5;
-  const sum = diff + diff;
-  const sum1 = diff1 + diff1;
-  const sum2 = diff2 + diff2;
-  arg0[0] = tmp5 + tmp4 * sum + tmp2 * sum2 - tmp3 * sum1;
-  arg0[1] = tmp6 + tmp4 * sum1 + tmp3 * sum - tmp * sum2;
-  arg0[2] = tmp7 + tmp4 * sum2 + tmp * sum1 - tmp2 * sum;
-  arg0[3] = arg1[3];
-  return arg0;
-};
-export const zero = function zero(arg0) {
-  arg0[0] = 0;
-  arg0[1] = 0;
-  arg0[2] = 0;
-  arg0[3] = 0;
-  return arg0;
-};
-export const sub = subtract;
 export const mul = multiply;
-export const div = divide;
-export const dist = distance;
-export const sqrDist = squaredDistance;
-export const len = length;
+export { dot };
+export const length = add.length;
+export const len = add.length;
+export { squaredLength };
 export const sqrLen = squaredLength;
-export const forEach = (arg0, arg1, arg2, arg3, fn, arg5) => {
-  let length;
-  let sum = arg2 || 0;
-  const tmp2 = arg3;
-  if (tmp2) {
-    const _Math = Math;
-    length = Math.min(arg3 * num + sum, arg0.length);
-  } else {
-    length = arg0.length;
-  }
-  if (sum < length) {
-    do {
-      aRRAY_TYPE[0] = arg0[sum];
-      aRRAY_TYPE[1] = arg0[sum + 1];
-      aRRAY_TYPE[2] = arg0[sum + 2];
-      aRRAY_TYPE[3] = arg0[sum + 3];
-      let tmp5 = fn(aRRAY_TYPE, aRRAY_TYPE, arg5);
-      arg0[sum] = aRRAY_TYPE[0];
-      arg0[sum + 1] = aRRAY_TYPE[1];
-      arg0[sum + 2] = aRRAY_TYPE[2];
-      arg0[sum + 3] = aRRAY_TYPE[3];
-      sum = sum + num;
-    } while (sum < length);
-  }
-  return arg0;
-};

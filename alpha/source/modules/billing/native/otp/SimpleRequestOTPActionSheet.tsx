@@ -1,9 +1,9 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17066
+// Function ID: 17067
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1392, 6824, 1087, 1394, 21, 3, 1633, 10450, 504, 11049, 7649, 1991, 9798, 13882, 5210, 5909, 7662, 5977, 5234, 6905, 5244, 10585, 558, 576, 1281, 10448, 5265, 10575, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 6824, 1087, 1394, 21, 3, 1633, 10450, 504, 11051, 7649, 1991, 9798, 13881, 5210, 5909, 7662, 5977, 5234, 6905, 5244, 10585, 558, 576, 1281, 10448, 5265, 10575, 2]
 
-// Module 17067 (SimpleRequestOTPActionSheet)
+// Module 17066 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -46,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f128989 = () => {
+  const f128997 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -134,7 +134,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11049);
+  let obj4 = selectedSkuId(11051);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -195,7 +195,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -249,7 +249,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -284,10 +284,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(13882)(obj6);
+  closure_8 = tmp(13881)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f128989, items5), 2);
-  tmp3(obj.useMemo(f128989, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f128997, items5), 2);
+  tmp3(obj.useMemo(f128997, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

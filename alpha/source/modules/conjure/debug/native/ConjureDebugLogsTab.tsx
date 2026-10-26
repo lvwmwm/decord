@@ -1,7 +1,7 @@
 // Module ID: 12549
 // Function ID: 12550
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 10709, 21, 4971, 587, 558, 576, 12550, 11077, 7305, 12543, 5234, 1128, 3830, 6908, 6905, 1633, 504, 12551, 8901, 9146, 7145, 12553, 12554, 7220, 2]
+// Dependencies: [32, 19, 17, 10709, 21, 4971, 587, 558, 576, 12550, 11079, 7305, 12543, 5234, 1128, 3830, 6908, 6905, 1633, 504, 12551, 8901, 9146, 7145, 12553, 12554, 7220, 2]
 
 // Module 12549 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
@@ -88,7 +88,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp(11077).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(11079).ChevronSmallDownIcon;
   } else {
     ChevronSmallRightIcon = tmp(7305).ChevronSmallRightIcon;
   }
@@ -329,7 +329,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(11077).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(11079).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
     ChevronSmallRightIcon = tmp3(7305).ChevronSmallRightIcon;

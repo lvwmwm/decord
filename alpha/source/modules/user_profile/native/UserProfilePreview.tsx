@@ -1,9 +1,9 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 11056
+// Function ID: 11057
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8649, 7304, 21, 4971, 587, 558, 576, 504, 8675, 8718, 8732, 11055, 8729, 8655, 8692, 8658, 8654, 8733, 8715, 8711, 8698, 8737, 9396, 8746, 11056, 11157, 9394, 5037, 11075, 11076, 2]
+// Dependencies: [32, 19, 17, 8649, 7304, 21, 4971, 587, 558, 576, 504, 8675, 8718, 8732, 11057, 8729, 8655, 8692, 8658, 8654, 8733, 8715, 8711, 8698, 8737, 9396, 8746, 11058, 11159, 9394, 5037, 11077, 11078, 2]
 
-// Module 11054 (UserProfilePreview)
+// Module 11056 (UserProfilePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import scaleProfileFrameDefault from "scaleProfileFrame" /* 8715 */;
@@ -549,7 +549,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   isPremiumTryItOut(8718)({ user, displayProfile: tmp5, pendingThemeColors, isPreview: isPremiumTryItOut });
   const tmp8 = closure_12(flag, null != primaryColor, maxWidth);
   const tmp9 = isPremiumTryItOut(8732)();
-  const obj2 = guildId(11055);
+  const obj2 = guildId(11057);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let tmp31Result5 = null != customStatusActivity && !flag;
   const tmpResult = tmp(8729);
@@ -677,7 +677,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   items7 = [, , ];
   ({ profileContentWrapper: arr9[0], profileContent: arr9[1] } = tmp9);
   let tmp42 = !tmp31Result5;
-  const tmp4Result9 = isPremiumTryItOut(11075);
+  const tmp4Result9 = isPremiumTryItOut(11077);
   if (!tmp31Result5) {
     tmp42 = { paddingTop };
     const obj15 = { paddingTop };
@@ -686,11 +686,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   if (tmp31Result5) {
     const obj16 = { customStatusActivity, themeType: constants.PREVIEW, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null };
     ({ customStatusBubble: obj18.style, emojiOnlyCustomStatusBubble: obj18.emojiOnlyStyle } = tmp9);
-    tmp31Result5 = tmp31(tmp4(11056), obj16);
+    tmp31Result5 = tmp31(tmp4(11058), obj16);
   }
   items8 = [tmp31Result5, , ];
   const obj17 = { user, themeType: constants.PREVIEW, displayName, pronouns: tmp47, badges: items1, badgeContainerBackground: containerBackground, showBadgeToastOnPress: false, pendingDisplayNameStyles, primaryGuildOverride: tmp49, guildId, hideBadges: flag3 };
-  const tmp4Result10 = isPremiumTryItOut(11076);
+  const tmp4Result10 = isPremiumTryItOut(11078);
   if (displayName == null) {
     displayName = pendingGlobalName;
   }
@@ -716,7 +716,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     items9 = [tmp9.card, tmp8.aboutMeCard, ];
     const obj20 = { backgroundColor: containerBackground };
     items9[2] = obj20;
-    tmp31Result6 = tmp31(tmp4(11157), obj19);
+    tmp31Result6 = tmp31(tmp4(11159), obj19);
   }
   items8[2] = tmp31Result6;
   items6[1] = closure_10(tmp4Result9, obj14);

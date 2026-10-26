@@ -1,11 +1,11 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11528
+// Function ID: 11529
 // Name: getSoundsForPack
-// Dependencies: [11525, 2]
+// Dependencies: [11527, 2]
 // Exports: default
 
-// Module 11526 (getSoundsForPack)
-import Constants from "Constants" /* 11525 */;
+// Module 11528 (getSoundsForPack)
+import Constants from "Constants" /* 11527 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;

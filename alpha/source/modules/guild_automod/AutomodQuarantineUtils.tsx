@@ -1,7 +1,7 @@
 // Module ID: 12820
 // Function ID: 12821
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11122, 502, 4883, 4845, 4903, 5002, 1087, 4889, 1097, 558, 576, 4909, 573, 1128, 11186, 11187, 7490, 2]
+// Dependencies: [19, 11124, 502, 4883, 4845, 4903, 5002, 1087, 4889, 1097, 558, 576, 4909, 573, 1128, 11188, 11189, 7490, 2]
 
 // Module 12820 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
@@ -9,9 +9,9 @@ import intl4 from "intl" /* 1128 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4889 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4909 */;
 import openUserSettings2 from "openUserSettings" /* 7490 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11187 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11189 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11122 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11124 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "Array", bio: "Reflect" };
+      const obj = { nick: "dispatch", bio: "ix" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Reflect" };
+    const obj = { nick: "dispatch", bio: "ix" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

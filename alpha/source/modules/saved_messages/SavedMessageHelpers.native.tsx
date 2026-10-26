@@ -1,13 +1,13 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13811
+// Function ID: 13812
 // Name: SavedMessageHelpers
-// Dependencies: [5, 1087, 13813, 13809, 5908, 1128, 13803, 10078, 5663, 5691, 13814, 2]
+// Dependencies: [5, 1087, 13812, 13808, 5908, 1128, 13802, 10078, 5663, 5691, 13813, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 13812 (SavedMessageHelpers)
+// Module 13811 (SavedMessageHelpers)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 13813 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 13812 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -32,7 +32,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _addOrUpdateSavedMessage() {
               BookmarkIcon = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -170,7 +170,7 @@ let obj = function _addOrUpdateSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp40) {
           c4 = 3;
@@ -199,7 +199,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -224,7 +224,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             text = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -296,7 +296,7 @@ obj = function _removeSavedMessage() {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp44) {
         c4 = 3;

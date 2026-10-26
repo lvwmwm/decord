@@ -1,12 +1,12 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15143
+// Function ID: 15144
 // Name: FormDropdown
-// Dependencies: [19, 21, 4971, 558, 576, 15145, 8566, 11077, 5234, 9041, 2]
+// Dependencies: [19, 21, 4971, 558, 576, 15144, 8566, 11079, 5234, 9041, 2]
 
-// Module 15144 (FormDropdown)
+// Module 15143 (FormDropdown)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import FormStylesDefault from "FormStyles" /* 15145 */;
+import FormStylesDefault from "FormStyles" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -39,7 +39,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormDropdown(arg
     if (disabled) {
       ChevronSmallDownIcon = tmp(8566).LockIcon;
     } else {
-      ChevronSmallDownIcon = tmp(11077).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp(11079).ChevronSmallDownIcon;
     }
     const tmp8Result = tmp8(ChevronSmallDownIcon, { size: "md" });
     cResult[0] = disabled;
@@ -127,7 +127,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormDropdown(arg
     ChevronSmallDownIcon = tmp6(8566).LockIcon;
     tmp7 = tmp6;
   } else {
-    ChevronSmallDownIcon = tmp6(11077).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp6(11079).ChevronSmallDownIcon;
     tmp7 = tmp6;
   }
   const obj = { style: items, accessibilityRole: "spinbutton", disabled, onPress: tmp11, children: items1 };

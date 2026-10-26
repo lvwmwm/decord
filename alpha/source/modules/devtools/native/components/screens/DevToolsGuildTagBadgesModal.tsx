@@ -1,13 +1,13 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17076
+// Function ID: 17077
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [109, 19, 21, 9743, 558, 576, 7095, 9699, 10031, 17078, 2]
+// Dependencies: [109, 19, 21, 9743, 558, 576, 7095, 9699, 10031, 17077, 2]
 
-// Module 17077 (DevToolsGuildTagBadgesModal)
+// Module 17076 (DevToolsGuildTagBadgesModal)
 import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 9699 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10031 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 17078 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 17077 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 9743 */;

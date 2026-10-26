@@ -1,9 +1,9 @@
-// Module ID: 13785
-// Function ID: 13786
+// Module ID: 13784
+// Function ID: 13785
 // Name: BugReportStore
 // Dependencies: [5163, 2]
 
-// Module 13785 (BugReportStore)
+// Module 13784 (BugReportStore)
 import ZustandStore from "ZustandStore" /* 5163 */;
 import size from "module_2" /* 2 */;
 

@@ -1,7 +1,7 @@
 // Module ID: 12752
 // Function ID: 12753
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5191, 7809, 21, 8275, 8485, 11216, 11217, 4993, 12753, 12754, 12755, 8277, 12756, 558, 576, 8487, 5210, 5195, 7248, 12757, 5265, 11215, 2]
+// Dependencies: [19, 17, 502, 5191, 7809, 21, 8275, 8485, 11218, 11219, 4993, 12753, 12754, 12755, 8277, 12756, 558, 576, 8487, 5210, 5195, 7248, 12757, 5265, 11217, 2]
 // Exports: createExperimentEmbed
 
 // Module 12752 (ExperimentEmbed)
@@ -17,8 +17,8 @@ import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8275 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8485 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8487 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11216 */;
-import useApexExperiments from "useApexExperiments" /* 11217 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11218 */;
+import useApexExperiments from "useApexExperiments" /* 11219 */;
 import useExperimentAssignments from "useExperimentAssignments" /* 12755 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12756 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet, map;
 
 let tmp;
-const useCodedLinksExperimentEmbeds = tmp(11215);
+const useCodedLinksExperimentEmbeds = tmp(11217);
 const Image = react_native.Image;
 const ExperimentEmbedType = ExperimentConstants.ExperimentEmbedType;
 const InviteTypes = Constants.InviteTypes;

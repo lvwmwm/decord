@@ -1,12 +1,12 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14415
+// Function ID: 14416
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4971, 558, 576, 7257, 1128, 13553, 5234, 7303, 2]
+// Dependencies: [19, 21, 4971, 558, 576, 7257, 1128, 13552, 5234, 7303, 2]
 
-// Module 14416 (UserProfileGameFriendsCard)
+// Module 14415 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7257 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13553 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13552 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

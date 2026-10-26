@@ -1,7 +1,7 @@
 // Module ID: 12442
 // Function ID: 12443
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 6773, 21, 4971, 587, 12443, 558, 576, 12445, 12446, 5669, 11830, 5705, 12278, 12447, 12449, 12452, 12455, 504, 12453, 1128, 12456, 12457, 12458, 12460, 3830, 12441, 5234, 12464, 12465, 5244, 11817, 2]
+// Dependencies: [19, 17, 6773, 21, 4971, 587, 12443, 558, 576, 12445, 12446, 5669, 11832, 5705, 12280, 12447, 12449, 12452, 12455, 504, 12453, 1128, 12456, 12457, 12458, 12460, 3830, 12441, 5234, 12464, 12465, 5244, 11819, 2]
 
 // Module 12442 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11830 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12278 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11832 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12280 */;
 import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12443 */;
 import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12445 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12446 */;
@@ -53,7 +53,7 @@ obj4 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: n
 obj5 = { width: "100%", aspectRatio: 1.5, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, alignItems: "center", justifyContent: "center" };
 obj6 = { width: "100%", aspectRatio: conjurePlanOverlayDesign.CONJURE_PLAN_OVERLAY_SCENE_ASPECT_RATIO, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, overflow: "hidden" };
 obj7 = { transform: items };
-items = [{ scale: 1.1 }];
+items = [{ scale: 1.04 }];
 obj8 = { position: "absolute", top: conjurePlanOverlayDesign.CONJURE_PLAN_OVERLAY_WIDGET_TOP, end: conjurePlanOverlayDesign.CONJURE_PLAN_OVERLAY_WIDGET_END };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -173,7 +173,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     items2 = [hasOwnProperty.absoluteFill, tmp6Result.blurred && tmp4.blurredBackground];
     num3 = undefined;
     if (tmp6Result.blurred) {
-      num3 = 12;
+      num3 = 4;
     }
     tmp11Result = tmp11(tmp5Result, obj7);
   }
@@ -216,7 +216,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     items = [hasOwnProperty.absoluteFill, tmp4Result.blurred && tmp.blurredBackground];
     num = undefined;
     if (tmp4Result.blurred) {
-      num = 12;
+      num = 4;
     }
     tmp9Result = tmp9(tmp2Result, obj4);
   }

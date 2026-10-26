@@ -1,13 +1,12 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12331
+// Function ID: 12332
 // Name: useConjureTips
-// Dependencies: [19, 12330, 12332, 558, 576, 12335, 12338, 12339, 12331, 2]
+// Dependencies: [19, 12332, 558, 576, 12334, 12337, 12338, 12333, 2]
 
-// Module 12329 (useConjureTips)
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12330 */;
-import conjureTipImpressions from "conjureTipImpressions" /* 12331 */;
-import conjureIdeasTip from "conjureIdeasTip" /* 12332 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 12338 */;
+// Module 12331 (useConjureTips)
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12332 */;
+import conjureTipImpressions from "conjureTipImpressions" /* 12333 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 12337 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,124 +14,103 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-let items = [conjureLiveBehindTip.CONJURE_TIP_LIVE_BEHIND_IDLE_MS, conjureIdeasTip.CONJURE_TIP_IDEAS_IDLE_MS];
+let items = [conjureLiveBehindTip.CONJURE_TIP_LIVE_BEHIND_IDLE_MS];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTips(arg0, arg1, arg2, arg3, arg4) {
   let arr;
   let callout;
   let closure_0;
   let context;
   let hint;
-  let tmp6;
   _require = arg1;
   let obj = require("react");
-  const cResult = obj.c(17);
+  const cResult = obj.c(14);
   let tmp4 = require("useConjureTipContext")(arg1, arg2, arg3, arg4, items);
   importDefault = tmp4;
   let obj2 = require("conjureTipDismissals");
   const conjureTipDismissalsVersion = obj2.useConjureTipDismissalsVersion();
   const tmp = _require;
   const tmp2 = arr;
-  if (cResult[0] !== arg1) {
-    let fn = function c(dismissal) {
-      const obj = conjureTipDismissals;
-      return obj.isConjureTipDismissed(dismissal, closure_0);
-    };
-    cResult[0] = arg1;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp4) {
-    if (cResult[3] === tmp6) {
-      let tmp7;
-      if (cResult[4] === arg0) {
-        tmp7 = cResult[5];
-      }
-      ({ callout, hint } = tmp7);
-      if (cResult[6] === callout) {
-        if (cResult[7] === hint) {
-          arr = cResult[8];
-        }
-        if (cResult[9] === tmp4) {
-          if (cResult[10] === arg1) {
-            let tmp10;
-            if (cResult[11] === arr) {
-              tmp10 = cResult[12];
-            }
-            const effect = react.useEffect(tmp10);
-            class E {
-              constructor() {
-                const timestamp = Date.now();
-                const iter = arr[Symbol.iterator]();
-                while (iter !== undefined) {
-                  let tip = iter.next().tip;
-                  let tmp3 = tip;
-                  if (0 !== context.messagesSinceShown(tip.id)) {
-                    let obj = conjureTipImpressions;
-                    let result = obj.recordConjureTipImpression(closure_0, tmp3.id, timestamp);
-                  }
-                  continue;
-                }
-              }
-            }
-            const mapped = arr.map((tip) => {
-              let fn;
-              let obj2;
-              let obj = { options: obj2 };
-              const merged = Object.assign(tip);
-              obj2 = { context, dismiss: fn };
-              fn = undefined;
-              if (null != tip.tip.dismissal) {
-                fn = () => {
-                  const obj = conjureTipDismissals;
-                  return obj.dismissConjureTip(tip.tip, tip);
-                };
-              }
-              return obj;
-            });
-            cResult[13] = tmp4;
-            cResult[14] = arg1;
-            cResult[15] = arr;
-            cResult[16] = mapped;
-          }
-        }
-        class E {
-          constructor() {
-            const timestamp = Date.now();
-            const iter = arr[Symbol.iterator]();
-            while (iter !== undefined) {
-              let tip = iter.next().tip;
-              let tmp3 = tip;
-              if (0 !== context.messagesSinceShown(tip.id)) {
-                let obj = conjureTipImpressions;
-                let result = obj.recordConjureTipImpression(closure_0, tmp3.id, timestamp);
-              }
-              continue;
-            }
-          }
-        }
-        cResult[9] = tmp4;
-        cResult[10] = arg1;
-        cResult[11] = arr;
-        cResult[12] = E;
-        tmp10 = E;
-      }
-      items = [callout, hint];
-      const found = items.filter((item) => null != item);
-      cResult[6] = callout;
-      cResult[7] = hint;
-      cResult[8] = found;
-      arr = found;
+  if (cResult[0] === tmp4) {
+    let tmp6;
+    if (cResult[1] === arg0) {
+      tmp6 = cResult[2];
     }
+    ({ callout, hint } = tmp6);
+    if (cResult[3] === callout) {
+      if (cResult[4] === hint) {
+        arr = cResult[5];
+      }
+      if (cResult[6] === tmp4) {
+        if (cResult[7] === arg1) {
+          let tmp9;
+          if (cResult[8] === arr) {
+            tmp9 = cResult[9];
+          }
+          const effect = react.useEffect(tmp9);
+          if (cResult[10] === tmp4) {
+            if (cResult[11] === arg1) {
+              let tmp12;
+              if (cResult[12] === arr) {
+                tmp12 = cResult[13];
+              }
+              return tmp12;
+            }
+          }
+          const mapped = arr.map((tip) => {
+            let fn;
+            let ideasIntroAnchorId;
+            let obj2;
+            let obj = { options: obj2 };
+            const merged = Object.assign(tip);
+            obj2 = { context, dismiss: fn };
+            fn = undefined;
+            if (null != tip.tip.dismissal) {
+              fn = () => {
+                const obj = conjureTipDismissals;
+                return obj.dismissConjureTip(tip.tip, tip, ideasIntroAnchorId.ideasIntroAnchorId);
+              };
+            }
+            return obj;
+          });
+          cResult[10] = tmp4;
+          cResult[11] = arg1;
+          cResult[12] = arr;
+          cResult[13] = mapped;
+          tmp12 = mapped;
+        }
+      }
+      let fn = function _() {
+        const timestamp = Date.now();
+        const iter = arr[Symbol.iterator]();
+        while (iter !== undefined) {
+          let tip = iter.next().tip;
+          let tmp3 = tip;
+          if (0 !== context.messagesSinceShown(tip.id)) {
+            let obj = conjureTipImpressions;
+            let result = obj.recordConjureTipImpression(closure_0, tmp3.id, timestamp);
+          }
+          continue;
+        }
+      };
+      cResult[6] = tmp4;
+      cResult[7] = arg1;
+      cResult[8] = arr;
+      cResult[9] = fn;
+      tmp9 = fn;
+    }
+    items = [callout, hint];
+    const found = items.filter((item) => null != item);
+    cResult[3] = callout;
+    cResult[4] = hint;
+    cResult[5] = found;
+    arr = found;
   }
-  const tmpResult = tmp(tmp2[7]);
-  const conjureTips = tmpResult.selectConjureTips(arg0, tmp4, tmp6);
-  cResult[2] = tmp4;
-  cResult[3] = tmp6;
-  cResult[4] = arg0;
-  cResult[5] = conjureTips;
-  tmp7 = conjureTips;
+  const tmpResult = tmp(tmp2[6]);
+  const conjureTips = tmpResult.selectConjureTips(arg0, tmp4, tmp4.isDismissed);
+  cResult[0] = tmp4;
+  cResult[1] = arg0;
+  cResult[2] = conjureTips;
+  tmp6 = conjureTips;
 }) : (function useConjureTips(arg0, arg1, arg2, arg3, arg4) {
   let closure_0;
   let context;
@@ -143,10 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
   let obj = require("conjureTipDismissals");
   const conjureTipDismissalsVersion = obj.useConjureTipDismissalsVersion();
   let obj2 = require("conjureTipSelection");
-  const conjureTips = obj2.selectConjureTips(arg0, tmp, (dismissal) => {
-    const obj = conjureTipDismissals;
-    return obj.isConjureTipDismissed(dismissal, closure_0);
-  });
+  const conjureTips = obj2.selectConjureTips(arg0, tmp, tmp.isDismissed);
   items = [, ];
   ({ callout: arr[0], hint: arr[1] } = conjureTips);
   found = items.filter((item) => null != item);
@@ -165,6 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
   });
   return found.map((tip) => {
     let fn;
+    let ideasIntroAnchorId;
     let obj2;
     let obj = { options: obj2 };
     const merged = Object.assign(tip);
@@ -173,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
     if (null != tip.tip.dismissal) {
       fn = () => {
         const obj = conjureTipDismissals;
-        return obj.dismissConjureTip(tip.tip, tip);
+        return obj.dismissConjureTip(tip.tip, tip, ideasIntroAnchorId.ideasIntroAnchorId);
       };
     }
     return obj;

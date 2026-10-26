@@ -1,9 +1,9 @@
-// Module ID: 11147
-// Function ID: 11148
+// Module ID: 11149
+// Function ID: 11150
 // Name: Modal
 // Dependencies: [19, 21, 558, 576, 1633, 5268, 7095, 2]
 
-// Module 11147 (Modal)
+// Module 11149 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

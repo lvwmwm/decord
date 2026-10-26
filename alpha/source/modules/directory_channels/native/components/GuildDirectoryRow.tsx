@@ -1,15 +1,15 @@
-// Module ID: 13220
-// Function ID: 13221
+// Module ID: 13219
+// Function ID: 13220
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 4823, 4845, 1087, 21, 4971, 587, 504, 7220, 7449, 6830, 9062, 1211, 7319, 1417, 1128, 6905, 6883, 4837, 5234, 13198, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 4823, 4845, 1087, 21, 4971, 587, 504, 7220, 7449, 6830, 9062, 1211, 7319, 1417, 1128, 6905, 6883, 4837, 5234, 13197, 5244, 2]
 
-// Module 13220 (GuildDirectoryRow)
+// Module 13219 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 13198 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 13197 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -148,7 +148,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
                   closure_129_3(false);
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 let guildId;
                 const setHubProgressActionComplete = closure_0(ref[14]).setHubProgressActionComplete;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
               closure_129_3(false);
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp64) {
           ref = tmp64;

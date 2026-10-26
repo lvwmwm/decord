@@ -1,7 +1,7 @@
 // Module ID: 12757
 // Function ID: 12758
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 5190, 502, 4845, 5191, 21, 4971, 587, 558, 576, 11216, 11217, 5593, 7144, 12758, 12, 1202, 8723, 7145, 7150, 8487, 5195, 5210, 5234, 6903, 1280, 12755, 6987, 8485, 7285, 5663, 7248, 5265, 2]
+// Dependencies: [32, 19, 17, 5190, 502, 4845, 5191, 21, 4971, 587, 558, 576, 11218, 11219, 5593, 7144, 12758, 12, 1202, 8723, 7145, 7150, 8487, 5195, 5210, 5234, 6903, 1280, 12755, 6987, 8485, 7285, 5663, 7248, 5265, 2]
 
 // Module 12757 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
@@ -1948,7 +1948,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
     class S {
       constructor() {
         obj = closure_0(closure_2[31]);
-        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149588 */ });
+        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149603 */ });
         return;
       }
     }
@@ -1958,7 +1958,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
   class S {
     constructor() {
       obj = closure_0(closure_2[31]);
-      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149588 */ });
+      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149603 */ });
       return;
     }
   }

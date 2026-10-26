@@ -1,9 +1,9 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15150
+// Function ID: 15151
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 5052, 5258, 1202, 4971, 587, 558, 576, 5206, 4968, 1128, 12169, 8154, 2]
+// Dependencies: [19, 17, 21, 5052, 5258, 1202, 4971, 587, 558, 576, 5206, 4968, 1128, 12171, 8154, 2]
 
-// Module 15151 (ShareAttachments)
+// Module 15150 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -11,7 +11,7 @@ import ColorUtils from "ColorUtils" /* 4968 */;
 import timing from "timing" /* 5206 */;
 import LinearGradientDefault from "LinearGradient" /* 5258 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12169 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12171 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;

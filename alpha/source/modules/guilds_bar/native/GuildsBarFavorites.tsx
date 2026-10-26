@@ -1,9 +1,9 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17759
+// Function ID: 17760
 // Name: GuildsBarFavorites
-// Dependencies: [19, 4826, 1087, 21, 558, 576, 17743, 10843, 504, 17761, 17746, 17758, 17563, 1128, 17762, 587, 9949, 2]
+// Dependencies: [19, 4826, 1087, 21, 558, 576, 17742, 10845, 504, 17760, 17745, 17757, 17562, 1128, 17761, 587, 9949, 2]
 
-// Module 17760 (GuildsBarFavorites)
+// Module 17759 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,13 +11,13 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import StarIcon2 from "StarIcon" /* 9949 */;
-import FavoritesHooks from "FavoritesHooks" /* 10843 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17563 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17743 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17746 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17758 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17761 */;
-import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17762 */;
+import FavoritesHooks from "FavoritesHooks" /* 10845 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17562 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17742 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17745 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17757 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17760 */;
+import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17761 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4826 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

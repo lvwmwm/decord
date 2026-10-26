@@ -1,10 +1,10 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13039
+// Function ID: 13040
 // Name: ContentClassificationVisibility
 // Dependencies: [1392, 5613, 5615, 558, 576, 504, 2]
 // Exports: getContentClassificationVisibility
 
-// Module 13040 (ContentClassificationVisibility)
+// Module 13039 (ContentClassificationVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5613 */;

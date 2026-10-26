@@ -1,10 +1,10 @@
-// Module ID: 19489
-// Function ID: 19490
+// Module ID: 19488
+// Function ID: 19489
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 18705, 1087, 3, 1257, 10100, 15, 9, 14983, 1267, 1275, 18792, 4818, 2]
+// Dependencies: [5, 17, 502, 18704, 1087, 3, 1257, 10100, 15, 9, 14982, 1267, 1275, 18791, 4818, 2]
 // Exports: default
 
-// Module 19489 (executeHeadlessTask)
+// Module 19488 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
@@ -13,10 +13,10 @@ import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10100 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14983 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14982 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 18705 */;
+import NativeAppStartup from "NativeAppStartup" /* 18704 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
             case 13:
             {

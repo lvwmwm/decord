@@ -1,17 +1,17 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 11036
+// Function ID: 11037
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2045, 7650, 7658, 1087, 1394, 584, 6372, 6809, 7649, 6374, 4795, 1257, 1297, 11035, 11036, 2]
+// Dependencies: [5, 2045, 7650, 7658, 1087, 1394, 584, 6372, 6809, 7649, 6374, 4795, 1257, 1297, 11037, 11038, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11034 (GiftCodeActionCreators)
+// Module 11036 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4795 */;
 import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7658 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11035 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11036 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11037 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
@@ -47,7 +47,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -263,7 +263,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -314,7 +314,7 @@ obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp20) {
           closure_2 = tmp20;
@@ -379,7 +379,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -428,7 +428,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

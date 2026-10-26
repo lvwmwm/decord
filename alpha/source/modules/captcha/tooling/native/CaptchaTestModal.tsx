@@ -1,17 +1,17 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17052
+// Function ID: 17053
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 17054, 17055, 5663, 5234, 1202, 7221, 5244, 6672, 6924, 558, 576, 1128, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 17053, 17054, 5663, 5234, 1202, 7221, 5244, 6672, 6924, 558, 576, 1128, 7095, 2]
 
-// Module 17053 (CaptchaTestModal)
+// Module 17052 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import Navigator2 from "Navigator" /* 7095 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17054 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17055 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17053 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -61,7 +61,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c4;
@@ -114,7 +114,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {

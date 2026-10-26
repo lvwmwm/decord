@@ -1,12 +1,12 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15751
+// Function ID: 15752
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1087, 584, 11407, 7357, 2]
+// Dependencies: [5, 1087, 584, 11409, 7357, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 15752 (ApplicationSubscriptionsActionCreators)
+// Module 15751 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 11407 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 11409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
             const obj3 = closure_132_0(closure_132_2[2]);
             obj3.dispatch(obj7);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -149,7 +149,7 @@ obj = function _fetchEntitlementsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ obj = function _fetchEntitlementsForGuild() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -231,7 +231,7 @@ obj = function _fetchSubscriptionListingForPlan() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -255,7 +255,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -345,7 +345,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp30) {
           closure_5 = tmp30;

@@ -1,9 +1,9 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12854
+// Function ID: 12855
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 5151, 9, 7740, 12856, 2]
+// Dependencies: [19, 21, 558, 576, 5151, 9, 7740, 12855, 2]
 
-// Module 12855 (TTIFirstContentfulPaint)
+// Module 12854 (TTIFirstContentfulPaint)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
 import RootNavigationRef from "RootNavigationRef" /* 5151 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TTIFirstCo
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const tmp7 = jsx(tmp(12856).TTIMeasurementView, { onMeasurement: tmp4 });
+    const tmp7 = jsx(tmp(12855).TTIMeasurementView, { onMeasurement: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp7;
     tmp5 = tmp7;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TTIFirstCo
     const obj3 = PostTTIScheduler;
     obj3.notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(12856).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(12855).TTIMeasurementView, { onMeasurement });
 });
 const result = size.fileFinishedImporting("modules/tti_analytics/native/TTIFirstContentfulPaint.tsx");
 

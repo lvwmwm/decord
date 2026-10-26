@@ -1,9 +1,9 @@
-// Module ID: 13142
-// Function ID: 13143
+// Module ID: 13141
+// Function ID: 13142
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 4972, 9520, 12529, 4820, 21, 4971, 587, 558, 576, 504, 10495, 2033, 13143, 7496, 4807, 13144, 12886, 1128, 5258, 12525, 4808, 13145, 2]
+// Dependencies: [32, 19, 17, 4972, 9520, 12529, 4820, 21, 4971, 587, 558, 576, 504, 10495, 2033, 13142, 7496, 4807, 13143, 12885, 1128, 5258, 12525, 4808, 13144, 2]
 
-// Module 13142 (ChatInputActionButtonGift)
+// Module 13141 (ChatInputActionButtonGift)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 4807 */;

@@ -1,13 +1,13 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12071
+// Function ID: 12072
 // Name: Timestamp
-// Dependencies: [19, 21, 4971, 587, 558, 576, 12070, 5663, 1202, 2]
+// Dependencies: [19, 21, 4971, 587, 558, 576, 12072, 5663, 1202, 2]
 
-// Module 12069 (Timestamp)
+// Module 12071 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 12070 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 12072 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 18813
-// Function ID: 18814
+// Module ID: 18812
+// Function ID: 18813
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2014, 5714, 5716, 5630, 5715, 9626, 5718, 3, 38, 5851, 11648, 7214, 4818, 11650, 1388, 5908, 1128, 18814, 11654, 2]
+// Dependencies: [5, 502, 2014, 5714, 5716, 5630, 5715, 9626, 5718, 3, 38, 5851, 11650, 7214, 4818, 11652, 1388, 5908, 1128, 18813, 11656, 2]
 
-// Module 18813 (GameConsoleManager)
+// Module 18812 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,9 +11,9 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Timers from "Timers" /* 4818 */;
 import Constants from "Constants" /* 5718 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5851 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11650 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11654 */;
-import _modDef18814 from "module_18814" /* 18814 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11652 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11656 */;
+import _modDef18813 from "module_18813" /* 18813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -47,7 +47,7 @@ let obj = function _syncLocalState() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let obj = function _syncLocalState() {
           obj2.toggleSelfDeaf({ syncRemote: false });
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef18814;
+            const tmp8 = _modDef18813;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;
@@ -282,7 +282,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               const obj4 = { title: null, body: null, errorCodeMessage: null, reconnectPlatformType: type1 };
               ({ title: obj2.title, body: obj2.body, errorCodeMessage: obj2.errorCodeMessage } = tmp8Result);
               type1 = undefined;
-              const showSelfDismissableAlert = tmp6(11654).showSelfDismissableAlert;
+              const showSelfDismissableAlert = tmp6(11656).showSelfDismissableAlert;
               GameConsoleAlertUtilsDefault;
               if (tmp8Result.isAccountLinkError) {
                 type1 = awaitingRemoteSessionInfo.type;

@@ -1,9 +1,9 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14137
+// Function ID: 14138
 // Name: RewardCodeClaimHooks
 // Dependencies: [5, 32, 19, 558, 576, 9571, 6713, 9605, 9573, 9576, 6717, 7801, 5656, 2]
 
-// Module 14138 (RewardCodeClaimHooks)
+// Module 14137 (RewardCodeClaimHooks)
 import openURLDefault from "openURL" /* 5656 */;
 import QuestTypes from "QuestTypes" /* 6713 */;
 import AdCreativeType from "AdCreativeType" /* 6717 */;
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c6;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
               c6 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c6;
@@ -278,7 +278,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
             c6 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp23) {
         let closure_5 = tmp23;

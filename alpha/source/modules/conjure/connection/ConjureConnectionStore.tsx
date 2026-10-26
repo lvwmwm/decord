@@ -1,7 +1,7 @@
 // Module ID: 10698
 // Function ID: 10699
 // Name: ConjureConnectionStore
-// Dependencies: [5, 1392, 10699, 10704, 6773, 10707, 10708, 10709, 10711, 10712, 10713, 10714, 10715, 10716, 584, 10717, 10732, 10733, 10735, 10737, 10738, 10739, 10796, 10806, 10808, 10809, 10811, 10812, 10813, 10718, 10814, 10725, 10785, 10815, 569, 10719, 10742, 10203, 10793, 504, 2]
+// Dependencies: [5, 1392, 10699, 10704, 6773, 10707, 10708, 10709, 10711, 10712, 10713, 10714, 10715, 10716, 584, 10717, 10732, 10733, 10735, 10737, 10738, 10739, 10796, 10806, 10808, 10809, 10811, 10812, 10813, 10718, 10814, 10725, 10785, 10815, 569, 10719, 10742, 10816, 10203, 10793, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
 // Module 10698 (ConjureConnectionStore)
@@ -32,6 +32,7 @@ import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" 
 import conjureProjectConnection from "conjureProjectConnection" /* 10813 */;
 import conjureKnownStepKinds from "conjureKnownStepKinds" /* 10814 */;
 import ConjureWebSocket from "ConjureWebSocket" /* 10815 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 10816 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
@@ -98,7 +99,7 @@ function appendFailedUserMessage(projectId, nonce, message) {
   const result = set(nonce, id);
   const tmp6 = DispatcherDefault;
   const dispatch = tmp6.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "duration" };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "emoji" };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
@@ -138,8 +139,8 @@ function handleEvent(projectId, pendingEvents, type) {
         if (attachments != null) {
           mapped = attachments.map((id) => id.id);
         }
-        obj = { templateId: null, remix: null, clarificationAnswers: null };
-        ({ templateId: obj.templateId, remix: obj.remix, clarificationAnswers: obj.clarificationAnswers } = nextResult);
+        obj = { templateId: null, remix: null, clarificationAnswers: null, linkEmbeds: null };
+        ({ templateId: obj.templateId, remix: obj.remix, clarificationAnswers: obj.clarificationAnswers, linkEmbeds: obj.linkEmbeds } = nextResult);
         sendUserMessage(content, nonce, mapped, obj);
       } catch (tmp14) {
         const _Error = Error;
@@ -334,7 +335,7 @@ let obj = function _openWithFreshTicket() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c6;
@@ -375,7 +376,7 @@ let obj = function _openWithFreshTicket() {
             c6 = 0;
             if (closure_1.disposed) {
               c8 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               closure_132_12(closure_0, "failed");
               open = closure_1;
@@ -421,7 +422,7 @@ let obj = function _openWithFreshTicket() {
             if (closure_1.disposed) {
               c6 = 0;
               c8 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               const ws = closure_1.ws;
               open = ws.open;
@@ -478,7 +479,7 @@ let obj = function _openWithFreshTicket() {
             }
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp57) {
         if (0 === c6) {
@@ -593,7 +594,7 @@ let set = new Set();
 const map2 = new Map();
 obj = {};
 let merged = Object.assign(conjureBrowserSessionsConnection.browserSessionsFrameHandlers);
-const merged1 = Object.assign(conjureChatConnection.chatFrameHandlers);
+let merged1 = Object.assign(conjureChatConnection.chatFrameHandlers);
 const merged2 = Object.assign(conjureDebugConnection.debugFrameHandlers);
 const merged3 = Object.assign(ConjureHostApproval.hostAccessFrameHandlers);
 const merged4 = Object.assign(conjureLiveReloadConnection.liveReloadFrameHandlers);
@@ -679,7 +680,7 @@ let obj3 = {
 };
 const conjureConnectionStore = new ConjureConnectionStore(DispatcherDefault, obj3);
 let result = size.fileFinishedImporting("modules/conjure/connection/ConjureConnectionStore.tsx");
-const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
+const sendUserMessage_export = function sendUserMessage(projectId, trimmed, arg2) {
   let attachments;
   let clarificationAnswers;
   let content;
@@ -687,6 +688,7 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
   let nonce1;
   let nonce2;
   let obj5;
+  let obj7;
   let remix;
   let templateId;
   obj = arg3;
@@ -694,7 +696,7 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
     obj = {};
   }
   ({ clarificationAnswers, nonce, templateId, remix } = obj);
-  const trimmed = str.trim();
+  trimmed = trimmed.trim();
   let tmp2;
   if (null != arg2) {
     if (arg2.length > 0) {
@@ -706,11 +708,13 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
       return false;
     }
   }
-  obj2 = { content: trimmed, nonce: nonce1, attachments: tmp2, templateId, remix };
+  obj2 = conjureLinkEmbeds;
+  const result = obj2.readyConjureLinkEmbeds(trimmed);
+  const obj3 = { content: trimmed, nonce: nonce1, attachments: tmp2, templateId, remix };
   nonce1 = nonce;
   if (nonce == null) {
-    const obj3 = createNonce;
-    nonce1 = obj3.createNonce();
+    const tmp3Result = createNonce;
+    nonce1 = tmp3Result.createNonce();
   }
   if (null != clarificationAnswers) {
     obj5 = { clarificationAnswers };
@@ -719,13 +723,20 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
     obj5 = {};
   }
   const merged = Object.assign(obj5);
+  if (null != result) {
+    obj7 = { linkEmbeds: result };
+    const obj6 = { linkEmbeds: result };
+  } else {
+    obj7 = {};
+  }
+  const merged1 = Object.assign(obj7);
   const value = map.get(projectId);
   if (null != value) {
     const pendingSends = value.pendingSends;
-    pendingSends.push(obj2);
+    pendingSends.push(obj3);
     return true;
   }
-  appendLocalUserMessage(projectId, obj2);
+  appendLocalUserMessage(projectId, obj3);
   try {
     if (null == value) {
       const _Error = Error;
@@ -735,26 +746,26 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
       throw error;
     } else {
       const ws = value.ws;
-      ({ content, nonce: nonce2, attachments } = obj2);
+      ({ content, nonce: nonce2, attachments } = obj3);
       let mapped;
       const sendUserMessage = ws.sendUserMessage;
       if (attachments != null) {
         mapped = attachments.map((id) => id.id);
       }
-      const obj11 = { templateId: null, remix: null, clarificationAnswers: null };
-      ({ templateId: obj6.templateId, remix: obj6.remix, clarificationAnswers: obj6.clarificationAnswers } = obj2);
-      sendUserMessage(content, nonce2, mapped, obj11);
+      const obj8 = { templateId: null, remix: null, clarificationAnswers: null, linkEmbeds: null };
+      ({ templateId: obj9.templateId, remix: obj9.remix, clarificationAnswers: obj9.clarificationAnswers, linkEmbeds: obj9.linkEmbeds } = obj3);
+      sendUserMessage(content, nonce2, mapped, obj8);
       return true;
     }
-  } catch (tmp20) {
+  } catch (tmp22) {
     const _Error2 = Error;
     let str3 = "send failed";
-    if (tmp20 instanceof Error) {
-      str3 = tmp20.message;
+    if (tmp22 instanceof Error) {
+      str3 = tmp22.message;
     }
     if (null == nonce) {
-      const obj7 = conjureChatConnection;
-      obj7.sendFailedStep(projectId, str3);
+      const tmp3Result2 = conjureChatConnection;
+      tmp3Result2.sendFailedStep(projectId, str3);
     }
     return false;
   }

@@ -1,9 +1,9 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18405
+// Function ID: 18406
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1089, 5266, 4820, 21, 4971, 587, 558, 576, 1499, 5269, 1633, 5052, 18407, 5669, 5234, 7649, 7278, 18408, 1128, 13636, 13624, 18409, 5244, 5265, 2]
+// Dependencies: [19, 17, 1089, 5266, 4820, 21, 4971, 587, 558, 576, 1499, 5269, 1633, 5052, 18406, 5669, 5234, 7649, 7278, 18407, 1128, 13635, 13623, 18408, 5244, 5265, 2]
 
-// Module 18406 (CollectiblesMobileAnnouncementActionSheet)
+// Module 18405 (CollectiblesMobileAnnouncementActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -16,8 +16,8 @@ import BottomSheetModal from "BottomSheetModal" /* 5269 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import _modDef18406 from "module_18406" /* 18406 */;
 import _modDef18407 from "module_18407" /* 18407 */;
-import _modDef18408 from "module_18408" /* 18408 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -113,7 +113,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CatEar
             }
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { uri: _modDef18407 };
+              const obj4 = { uri: _modDef18406 };
               cResult[13] = obj4;
               tmp15 = obj4;
             } else {
@@ -210,7 +210,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CatEar
   items1[1] = rect;
   const View = ReanimatedRexportDefault.View;
   obj5 = { source: obj6, style: tmp.mascotImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef18407 };
+  obj6 = { uri: _modDef18406 };
   tmp7 = FastImageDefault;
   return metroImportAll(View, obj3);
 });
@@ -370,7 +370,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   }
   const container = tmp4.container;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef18408 };
+    const obj3 = { uri: _modDef18407 };
     cResult[10] = obj3;
     tmp17 = obj3;
   } else {
@@ -404,7 +404,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     tmp25 = cResult[15];
   }
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { icon: closure_8(markAsDismissed(13636).PaintIllocon, obj7), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
+    const obj6 = { icon: closure_8(markAsDismissed(13635).PaintIllocon, obj7), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
     obj7 = { size };
     intl2 = tmp(1128).intl;
     const tmp32 = closure_8(closure_15, obj6);
@@ -414,7 +414,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     tmp28 = cResult[16];
   }
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { icon: closure_8(markAsDismissed(13624).HeartIllocon, obj9), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
+    const obj8 = { icon: closure_8(markAsDismissed(13623).HeartIllocon, obj9), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
     obj9 = { size };
     intl3 = tmp(1128).intl;
     const tmp37 = closure_8(closure_15, obj8);
@@ -424,7 +424,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     tmp33 = cResult[17];
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { icon: closure_8(markAsDismissed(18409).ShopIllocon, obj11), text: intl4.string(markAsDismissed(1128).t["/4bQuG"]) };
+    const obj10 = { icon: closure_8(markAsDismissed(18408).ShopIllocon, obj11), text: intl4.string(markAsDismissed(1128).t["/4bQuG"]) };
     obj11 = { size };
     intl4 = tmp(1128).intl;
     const tmp42 = closure_8(closure_15, obj10);
@@ -546,7 +546,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   obj2 = { style: tmp.container, children: items3 };
   BottomSheet = markAsDismissed(5265).BottomSheet;
   const obj3 = { source: obj4, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj4 = { uri: _modDef18408 };
+  obj4 = { uri: _modDef18407 };
   const tmp7 = FastImageDefault;
   items3 = [closure_8(tmp7, obj3), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: intl.string(markAsDismissed(1128).t.vRCvqo) };
@@ -554,15 +554,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   intl = markAsDismissed(1128).intl;
   items3[1] = closure_8(Text, obj5);
   const obj6 = { style: tmp.featureRows, children: items4 };
-  const obj7 = { icon: closure_8(markAsDismissed(13636).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
+  const obj7 = { icon: closure_8(markAsDismissed(13635).PaintIllocon, obj8), text: intl2.string(markAsDismissed(1128).t["6ZWB0C"]) };
   obj8 = { size };
   intl2 = markAsDismissed(1128).intl;
   items4 = [closure_8(closure_15, obj7), , ];
-  const obj9 = { icon: closure_8(markAsDismissed(13624).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
+  const obj9 = { icon: closure_8(markAsDismissed(13623).HeartIllocon, obj10), text: intl3.string(markAsDismissed(1128).t.MkVbBY) };
   obj10 = { size };
   intl3 = markAsDismissed(1128).intl;
   items4[1] = closure_8(closure_15, obj9);
-  const obj11 = { icon: closure_8(markAsDismissed(18409).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1128).t["/4bQuG"]) };
+  const obj11 = { icon: closure_8(markAsDismissed(18408).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1128).t["/4bQuG"]) };
   obj12 = { size };
   intl4 = markAsDismissed(1128).intl;
   items4[2] = closure_8(closure_15, obj11);

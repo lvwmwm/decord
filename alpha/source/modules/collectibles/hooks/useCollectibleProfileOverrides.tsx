@@ -1,9 +1,9 @@
-// Module ID: 14449
-// Function ID: 14450
+// Module ID: 14448
+// Function ID: 14449
 // Name: useCollectibleProfileOverrides
 // Dependencies: [19, 7655, 7656, 7657, 558, 576, 8660, 1995, 2]
 
-// Module 14449 (useCollectibleProfileOverrides)
+// Module 14448 (useCollectibleProfileOverrides)
 import react2 from "react" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7655 */;

@@ -1,16 +1,16 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12220
+// Function ID: 12221
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 8310, 558, 576, 8284, 12219, 12220, 12233, 12234, 12235, 1128, 12226, 2]
+// Dependencies: [5, 32, 19, 8310, 558, 576, 8284, 12221, 12222, 12235, 12236, 12237, 1128, 12228, 2]
 
-// Module 12218 (useCreatePollFormData)
+// Module 12220 (useCreatePollFormData)
 import intl3 from "intl" /* 1128 */;
 import PollsUtils from "PollsUtils" /* 8284 */;
-import useRequestDefault from "useRequest" /* 12219 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 12220 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12233 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12234 */;
-import PollTypes from "PollTypes" /* 12235 */;
+import useRequestDefault from "useRequest" /* 12221 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 12222 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12235 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12236 */;
+import PollTypes from "PollTypes" /* 12237 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -667,7 +667,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -708,7 +708,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
             Ae(closure_2_10(closure_1, closure_0(initialAnswers[11]).PollMediaUploadAttachmentStatus.ERROR), closure_0);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp24) {
         c6 = 3;
@@ -886,7 +886,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -927,7 +927,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
             callback2(first3(closure_1, closure_0(initialQuestion[11]).PollMediaUploadAttachmentStatus.ERROR), closure_0);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp24) {
         c6 = 3;
@@ -1051,7 +1051,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -1080,7 +1080,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatePol
           return obj;
         } else {
           channel = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp4) {
         channel = 3;

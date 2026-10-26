@@ -1,9 +1,9 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16231
+// Function ID: 16232
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7203, 1087, 21, 587, 4971, 558, 576, 9634, 9492, 14066, 5686, 1633, 504, 1505, 7259, 1506, 5234, 1128, 6987, 6903, 8980, 7087, 7091, 7220, 2]
+// Dependencies: [19, 17, 7203, 1087, 21, 587, 4971, 558, 576, 9634, 9492, 14065, 5686, 1633, 504, 1505, 7259, 1506, 5234, 1128, 6987, 6903, 8980, 7087, 7091, 7220, 2]
 
-// Module 16232 (UserSettingsAuthedApps)
+// Module 16231 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import UserSettingsUtils from "UserSettingsUtils" /* 7091 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7203 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 9492 */;
 import applications from "applications" /* 9634 */;
-import EmbedIcon from "EmbedIcon" /* 14066 */;
+import EmbedIcon from "EmbedIcon" /* 14065 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;

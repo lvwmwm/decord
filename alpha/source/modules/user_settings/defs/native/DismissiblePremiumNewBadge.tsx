@@ -1,9 +1,9 @@
-// Module ID: 16013
-// Function ID: 16014
+// Module ID: 16012
+// Function ID: 16013
 // Name: DismissiblePremiumNewBadge
 // Dependencies: [19, 7544, 21, 4971, 587, 558, 576, 1384, 1202, 5258, 1107, 10408, 2]
 
-// Module 16013 (DismissiblePremiumNewBadge)
+// Module 16012 (DismissiblePremiumNewBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;

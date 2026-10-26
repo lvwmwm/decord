@@ -1,17 +1,17 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17334
+// Function ID: 17335
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 14994, 1087, 3, 584, 1248, 14995, 1297, 1104, 2]
+// Dependencies: [5, 14993, 1087, 3, 584, 1248, 14994, 1297, 1104, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 17335 (NotifSettingsActionCreators)
+// Module 17334 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import notification_settings from "notification_settings" /* 14995 */;
+import notification_settings from "notification_settings" /* 14994 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14994 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14993 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c5;
@@ -88,7 +88,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Failed to take ownership of apply; current is", NotifSettingsProtoStore.applyingEdit);
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 const obj12 = user_settings_UserSettingsUtils;
                 const protoToB64Result = obj12.protoToB64(notification_settings.DeclarativeSettings, pendingEdit.partialSettings);
@@ -108,7 +108,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             }
           }
@@ -204,7 +204,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp95) {
         resetAnyPending = tmp95;
         if (0 === c5) {
@@ -230,7 +230,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;

@@ -1,16 +1,16 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13381
+// Function ID: 13382
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 4885, 21, 558, 576, 13383, 12802, 1128, 13356, 2]
+// Dependencies: [19, 4885, 21, 558, 576, 13382, 12802, 1128, 13355, 2]
 
-// Module 13382 (ChatInputGuardGuildCommunicationDisabled)
+// Module 13381 (ChatInputGuardGuildCommunicationDisabled)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4885 */;
 import ClockWarningIcon from "ClockWarningIcon" /* 12802 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13356 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 13383 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13355 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 13382 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

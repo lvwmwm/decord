@@ -1,10 +1,10 @@
-// Module ID: 11337
-// Function ID: 11338
+// Module ID: 11339
+// Function ID: 11340
 // Name: canEditMessage
 // Dependencies: [1087, 6816, 6012, 5602, 2]
 // Exports: default
 
-// Module 11337 (canEditMessage)
+// Module 11339 (canEditMessage)
 import isForwardMessageDefault from "isForwardMessage" /* 5602 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
 import isSystemMessageDefault from "isSystemMessage" /* 6816 */;

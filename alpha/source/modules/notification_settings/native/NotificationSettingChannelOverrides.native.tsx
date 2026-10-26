@@ -1,9 +1,9 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19348
+// Function ID: 19349
 // Name: NotificationSettingChannelOverrides
 // Dependencies: [32, 19, 17, 4827, 7207, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 504, 5593, 7208, 5604, 6827, 1128, 4980, 7144, 6903, 6911, 8502, 10624, 7145, 1202, 8723, 7150, 2]
 
-// Module 19349 (NotificationSettingChannelOverrides)
+// Module 19348 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;

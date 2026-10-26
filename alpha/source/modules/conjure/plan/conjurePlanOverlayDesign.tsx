@@ -8,9 +8,8 @@
 import conjureOverlayPreview from "conjureOverlayPreview" /* 12444 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2 = 339.3333333333333;
-const combined = "" + Number((7.072691552062869).toFixed(3)) + "%";
-const combined1 = "" + Number((3.75).toFixed(3)) + "%";
+const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";
+const combined1 = "" + Number((1.25).toFixed(3)) + "%";
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanOverlayDesign.tsx");
 
@@ -38,9 +37,9 @@ export const conjurePlanOverlayWidgetSize = function conjurePlanOverlayWidgetSiz
 export const conjurePlanOverlayWidgetBox = function conjurePlanOverlayWidgetBox(size) {
   let result;
   let result1;
-  const bound = Math.min(1, 592 / size.width, 291.3333333333333 / size.height);
+  const bound = Math.min(1, 1872 / size.width, 970 / size.height);
   size = { width: "" + Number(result.toFixed(3)) + "%", height: "" + Number(result1.toFixed(3)) + "%" };
-  result = size.width * bound / 640 * 100;
-  result1 = size.height * bound / c2 * 100;
+  result = size.width * bound / 1920 * 100;
+  result1 = size.height * bound / 1018 * 100;
   return size;
 };

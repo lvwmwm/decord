@@ -1,7 +1,7 @@
 // Module ID: 12499
 // Function ID: 12500
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10699, 21, 4971, 587, 558, 576, 504, 12280, 9961, 5234, 1128, 3830, 12278, 6905, 2]
+// Dependencies: [19, 17, 10699, 21, 4971, 587, 558, 576, 504, 12282, 9961, 5234, 1128, 3830, 12280, 6905, 2]
 
 // Module 12499 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
@@ -83,8 +83,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     tmp12 = cResult[5];
   }
   let str2;
-  const useConjureRevealedText = projectId(12280).useConjureRevealedText;
-  projectId(12280);
+  const useConjureRevealedText = projectId(12282).useConjureRevealedText;
+  projectId(12282);
   if (stateFromStores != null) {
     str2 = stateFromStores.text;
   }
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12278), obj11)
+      children: closure_7(ref(12280), obj11)
     };
     obj11 = { source: text };
     tmp29 = closure_7(closure_4, obj10);
@@ -215,8 +215,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12280).useConjureRevealedText;
-  projectId(12280);
+  const useConjureRevealedText = projectId(12282).useConjureRevealedText;
+  projectId(12282);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12278), obj9)
+      children: closure_7(ref(12280), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);

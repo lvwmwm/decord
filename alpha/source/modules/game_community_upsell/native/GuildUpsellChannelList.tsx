@@ -1,24 +1,24 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17701
+// Function ID: 17702
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 15026, 6670, 17703, 1087, 21, 4971, 587, 1128, 14271, 17704, 17708, 558, 576, 504, 17712, 1267, 13613, 5234, 6905, 5244, 16446, 17713, 2]
+// Dependencies: [19, 17, 15025, 6670, 17702, 1087, 21, 4971, 587, 1128, 14270, 17703, 17707, 558, 576, 504, 17711, 1267, 13612, 5234, 6905, 5244, 16445, 17712, 2]
 
-// Module 17702 (GuildUpsellChannelList)
+// Module 17701 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Card_Card from "Card/Card" /* 6905 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13613 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14271 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17703 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17704 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17708 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17712 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13612 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14270 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17702 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17703 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17707 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17711 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15026 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15025 */;
 import ConsentStore from "ConsentStore" /* 6670 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19137
+// Function ID: 19138
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 558, 576, 11254, 1202, 6903, 5205, 7248, 1128, 7612, 1417, 4978, 5210, 8901, 9146, 5269, 7221, 6987, 7298, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 11256, 1202, 6903, 5205, 7248, 1128, 7612, 1417, 4978, 5210, 8901, 9146, 5269, 7221, 6987, 7298, 2]
 
-// Module 19138 (SelectConnectionActionSheet)
+// Module 19137 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
@@ -14,7 +14,7 @@ import useThemeDefault from "useTheme" /* 5205 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11254 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     if (cResult[0] !== bot) {
       let tmp6 = null;
       if (null != bot) {
-        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
         const Avatar = tmp(1202).Avatar;
         tmp6 = metroRequire(Avatar, obj3);
       }
@@ -101,7 +101,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     let tmp6Result = null;
     const TableRow = tmp(6903).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
       const Avatar = tmp(1202).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -200,7 +200,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
                   }
               };
               const TableRow = addConnection(excludedApplications[8]).TableRow;
-              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "r" };
+              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "Array" };
               Avatar = addConnection(excludedApplications[7]).Avatar;
               description = undefined;
               const tmp2 = closure_1_6;
@@ -538,7 +538,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

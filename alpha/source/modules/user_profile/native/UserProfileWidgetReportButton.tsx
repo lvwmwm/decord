@@ -1,9 +1,9 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14391
+// Function ID: 14392
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 576, 1128, 9971, 14393, 9644, 587, 9761, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1128, 9971, 14392, 9644, 587, 9761, 2]
 
-// Module 14392 (UserProfileWidgetReportButton)
+// Module 14391 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1128 */;
 import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9644 */;
 import ContextMenu from "ContextMenu" /* 9761 */;
 import FlagIcon from "FlagIcon" /* 9971 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14393 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14392 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

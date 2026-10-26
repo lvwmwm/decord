@@ -1,7 +1,7 @@
 // Module ID: 12357
 // Function ID: 12358
 // Name: conjureMentions
-// Dependencies: [19, 1392, 11826, 5025, 11823, 558, 576, 12356, 504, 1128, 3830, 2]
+// Dependencies: [19, 1392, 11828, 5025, 11825, 558, 576, 12356, 504, 1128, 3830, 2]
 // Exports: filterConjureMentionCandidates, findConjureMentionQuery, withConjureMentionNames
 
 // Module 12357 (conjureMentions)
@@ -9,7 +9,7 @@ import UserUtils from "UserUtils" /* 5025 */;
 import conjureMessageAuthors from "conjureMessageAuthors" /* 12356 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 11826 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 11828 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
   _require = arg0;
   let items = [arg0];
   const memo = react.useMemo(() => {
-    const f149162 = (kind) => {
+    const f149177 = (kind) => {
       let items1;
       if ("mention" === kind.kind) {
         const items = [kind.userId];
@@ -173,8 +173,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestCo
       return items1;
     };
     const obj = splitConjureMentions(closure_0);
-    let items = [...new Set(obj.flatMap(f149162))];
-    new Set(obj.flatMap(f149162));
+    let items = [...new Set(obj.flatMap(f149177))];
+    new Set(obj.flatMap(f149177));
     return items;
   }, items);
   let items1 = [memo];
@@ -212,12 +212,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
   }
   if (cResult[1] !== arg0) {
     const fn = function u() {
-      const f149164 = (arg0) => user.getUser(arg0);
-      const f149165 = (arg0) => attachment.getAttachment(arg0);
+      const f149179 = (arg0) => user.getUser(arg0);
+      const f149180 = (arg0) => attachment.getAttachment(arg0);
       return closure_0.replace(re6, (arg0, arg1, arg2) => {
         if (null == arg1) {
           let str2 = arg2;
-          const tmp7 = f149167;
+          const tmp7 = f149182;
           if (arg2 == null) {
             str2 = "";
           }
@@ -234,7 +234,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
           return "@" + name;
         } else {
           let combined = arg0;
-          const tmp3 = f149166(arg1);
+          const tmp3 = f149181(arg1);
           if (null != tmp3) {
             const _HermesInternal = HermesInternal;
             const obj = closure_2_0(closure_2_2[3]);
@@ -263,12 +263,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
   const items = [UserStore, ConjureStoredAttachmentStore];
   const items1 = [arg0];
   return obj.useStateFromStores(items, () => {
-    const f149166 = (arg0) => user.getUser(arg0);
-    const f149167 = (arg0) => attachment.getAttachment(arg0);
+    const f149181 = (arg0) => user.getUser(arg0);
+    const f149182 = (arg0) => attachment.getAttachment(arg0);
     return closure_0.replace(re6, (arg0, arg1, arg2) => {
       if (null == arg1) {
         let str2 = arg2;
-        const tmp7 = f149167;
+        const tmp7 = f149182;
         if (arg2 == null) {
           str2 = "";
         }
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureMe
         return "@" + name;
       } else {
         let combined = arg0;
-        const tmp3 = f149166(arg1);
+        const tmp3 = f149181(arg1);
         if (null != tmp3) {
           const _HermesInternal = HermesInternal;
           const obj = closure_2_0(closure_2_2[3]);
@@ -342,12 +342,12 @@ export const useRequestConjureMentionedUsers = tmp3;
 export const withConjureMentionNames = function withConjureMentionNames(body) {
   let attachment;
   let user;
-  const f114389 = (arg0) => user.getUser(arg0);
-  const f114390 = (arg0) => attachment.getAttachment(arg0);
+  const f114402 = (arg0) => user.getUser(arg0);
+  const f114403 = (arg0) => attachment.getAttachment(arg0);
   return body.replace(closure_6, (arg0, arg1, arg2) => {
     if (null == arg1) {
       let str2 = arg2;
-      const tmp7 = f149167;
+      const tmp7 = f149182;
       if (arg2 == null) {
         str2 = "";
       }
@@ -364,7 +364,7 @@ export const withConjureMentionNames = function withConjureMentionNames(body) {
       return "@" + name;
     } else {
       let combined = arg0;
-      const tmp3 = f149166(arg1);
+      const tmp3 = f149181(arg1);
       if (null != tmp3) {
         const _HermesInternal = HermesInternal;
         const obj = closure_2_0(closure_2_2[3]);

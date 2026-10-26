@@ -1,9 +1,9 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14426
+// Function ID: 14427
 // Name: useWishlistSuggestionsDismissibleContent
 // Dependencies: [32, 19, 7703, 4820, 1104, 558, 576, 504, 7496, 4807, 2]
 
-// Module 14427 (useWishlistSuggestionsDismissibleContent)
+// Module 14426 (useWishlistSuggestionsDismissibleContent)
 import DurationsDefault from "Durations" /* 1104 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

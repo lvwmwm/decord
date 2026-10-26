@@ -1,14 +1,14 @@
-// Module ID: 18794
-// Function ID: 18795
+// Module ID: 18793
+// Function ID: 18794
 // Name: feedback/FeedbackManager
-// Dependencies: [7309, 18795, 10045, 18796, 4799, 510, 12, 7214, 2]
+// Dependencies: [7309, 18794, 10045, 18795, 4799, 510, 12, 7214, 2]
 
-// Module 18794 (feedback/FeedbackManager)
+// Module 18793 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
 import UserSettings from "UserSettings" /* 4799 */;
-import FeedbackConfig from "FeedbackConfig" /* 18796 */;
+import FeedbackConfig from "FeedbackConfig" /* 18795 */;
 import HotspotStore from "hotspot/HotspotStore" /* 7309 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18795 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18794 */;
 import Constants from "Constants" /* 10045 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;

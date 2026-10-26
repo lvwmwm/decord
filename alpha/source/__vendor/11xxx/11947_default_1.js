@@ -1,11 +1,11 @@
 // Module ID: 11947
 // Function ID: 11948
 // Name: default_1
-// Dependencies: [11920]
+// Dependencies: [11922]
 // Exports: default
 
 // Module 11947 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11920 */;
+import captureStackTrace2 from "captureStackTrace" /* 11922 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp50;
+                combined = "Input tidak valid: diharapkan instanceof " + code.expected + ", diterima " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp50;
+                combined = "Input tidak valid: diharapkan " + expected + ", diterima " + tmp48;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Input non valido: atteso " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Input tidak valid: diharapkan " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Opzione non valida: atteso uno tra " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Pilihan tidak valid: diharapkan salah satu dari " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str27 = "<";
+              let str25 = "<";
               if (code.inclusive) {
-                str27 = "<=";
+                str25 = "<=";
               }
-              let str28 = code.origin;
+              let str26 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str28 == null) {
-                  str28 = "valore";
+                if (str26 == null) {
+                  str26 = "value";
                 }
-                const str33 = code.maximum;
+                const str31 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str33.toString();
-                const str34 = (obj2[code.origin] ?? null).unit ?? "elementi";
-                combined2 = "Troppo grande: " + str28 + " deve avere " + str27 + str1 + " " + str34;
+                const str1 = str31.toString();
+                const str32 = (obj2[code.origin] ?? null).unit ?? "elemen";
+                combined2 = "Terlalu besar: diharapkan " + str26 + " memiliki " + str25 + str1 + " " + str32;
               } else {
-                let str29 = str28;
-                if (str28 == null) {
-                  str29 = "valore";
+                let str27 = str26;
+                if (str26 == null) {
+                  str27 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str30 = code.maximum;
-                combined2 = "Troppo grande: " + str29 + " deve essere " + str27 + str30.toString();
+                const str28 = code.maximum;
+                combined2 = "Terlalu besar: diharapkan " + str27 + " menjadi " + str25 + str28.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str21 = ">";
+              let str19 = ">";
               if (code.inclusive) {
-                str21 = ">=";
+                str19 = ">=";
               }
               ({ origin, minimum } = code);
-              const str48 = minimum.toString();
+              const str46 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "Troppo piccolo: " + origin + " deve avere " + str21 + str48 + " " + tmp17.unit;
+                combined3 = "Terlalu kecil: diharapkan " + origin + " memiliki " + str19 + str46 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "Troppo piccolo: " + origin + " deve essere " + str21 + str48;
+                combined3 = "Terlalu kecil: diharapkan " + origin + " menjadi " + str19 + str46;
               }
               return combined3;
             }
@@ -181,65 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
+                combined4 = "String tidak valid: harus dimulai dengan \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
+                combined4 = "String tidak valid: harus berakhir dengan \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
+                combined4 = "String tidak valid: harus menyertakan \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
+                combined4 = "String tidak valid: harus sesuai pola " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Invalid " + format;
+                combined4 = "" + format + " tidak valid";
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Numero non valido: deve essere un multiplo di " + code.divisor;
+              return "Angka tidak valid: harus kelipatan dari " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str4 = "e";
+              let str3 = "";
               if (code.keys.length > 1) {
-                str4 = "i";
-              }
-              let str5 = "a";
-              if (code.keys.length > 1) {
-                str5 = "e";
+                str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Chiav" + str4 + " non riconosciut" + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Kunci tidak dikenali " + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Chiave non valida in " + code.origin;
+              return "Kunci tidak valid di " + code.origin;
             }
             case "invalid_union":
             {
-              return "Input non valido";
+              return "Input tidak valid";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Valore non valido in " + code.origin;
+              return "Nilai tidak valid di " + code.origin;
             }
             default:
             {
-              return "Input non valido";
+              return "Input tidak valid";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" } };
-    closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", jwt: "JWT", template_literal: "input" };
-    let closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
+    const obj2 = { string: { unit: "karakter", verb: "memiliki" }, file: { unit: "byte", verb: "memiliki" }, array: { unit: "item", verb: "memiliki" }, set: { unit: "item", verb: "memiliki" } };
+    closure_1 = { regex: "input", email: "alamat email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "tanggal dan waktu format ISO", date: "tanggal format ISO", time: "jam format ISO", duration: "durasi format ISO", ipv4: "alamat IPv4", ipv6: "alamat IPv6", cidrv4: "rentang alamat IPv4", cidrv6: "rentang alamat IPv6", base64: "string dengan enkode base64", base64url: "string dengan enkode base64url", json_string: "string JSON", e164: "angka E.164", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

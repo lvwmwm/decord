@@ -1,9 +1,9 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13362
+// Function ID: 13363
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4904, 4823, 12529, 1087, 21, 558, 576, 504, 1114, 5711, 13364, 9062, 1211, 7448, 6830, 7319, 1128, 13356, 2]
+// Dependencies: [19, 4904, 4823, 12529, 1087, 21, 558, 576, 504, 1114, 5711, 13363, 9062, 1211, 7448, 6830, 7319, 1128, 13355, 2]
 
-// Module 13363 (ChatInputGuardLurking)
+// Module 13362 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
@@ -12,8 +12,8 @@ import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7319 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7448 */;
 import HubProgressActionCreators from "HubProgressActionCreators" /* 9062 */;
 import ChatInputConstants from "ChatInputConstants" /* 12529 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13356 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13364 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13355 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13363 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4904 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -574,7 +574,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13356);
+    guildId(13355);
     const intl9 = tmp2(1128).intl;
     const intl10 = tmp2(1128).intl;
     const intl11 = tmp2(1128).intl;
@@ -582,7 +582,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13356);
+    const tmp17 = guildId(13355);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1128).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1128).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1128).intl;

@@ -1,9 +1,9 @@
-// Module ID: 17962
-// Function ID: 17963
+// Module ID: 17961
+// Function ID: 17962
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 6784, 4823, 4845, 21, 17900, 587, 558, 576, 8898, 1128, 8890, 5604, 8893, 9016, 8841, 8883, 7449, 8886, 17946, 11, 5234, 9017, 8560, 1202, 504, 2]
+// Dependencies: [19, 17, 6784, 4823, 4845, 21, 17899, 587, 558, 576, 8898, 1128, 8890, 5604, 8893, 9016, 8841, 8883, 7449, 8886, 17945, 11, 5234, 9017, 8560, 1202, 504, 2]
 
-// Module 17962 (ICYMIGuildEventRow)
+// Module 17961 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import transitionToGuild from "transitionToGuild" /* 7449 */;
@@ -16,7 +16,7 @@ import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6784 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17900 */;
+import createICYMIStyles from "createICYMIStyles" /* 17899 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -238,7 +238,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIG
             }
           }
           const tmp30Result = tmp30(undefined, undefined, tmp25);
-          guild(17946);
+          guild(17945);
           const _Symbol = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
             class F {
@@ -887,7 +887,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIG
   }
   let obj5 = { actionLabel: intl.string(event(1128).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(17946);
+  const tmp2Result3 = guild(17945);
   intl = tmp8(1128).intl;
   id1 = undefined;
   if (channel != null) {

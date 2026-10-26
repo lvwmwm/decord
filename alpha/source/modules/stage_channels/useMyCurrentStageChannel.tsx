@@ -1,9 +1,9 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11572
+// Function ID: 11573
 // Name: useMyCurrentStageChannel
 // Dependencies: [4823, 4874, 558, 576, 504, 2]
 
-// Module 11570 (useMyCurrentStageChannel)
+// Module 11572 (useMyCurrentStageChannel)
 import react from "react" /* 576 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;

@@ -1,9 +1,9 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13057
+// Function ID: 13058
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 8307, 13059, 10090, 7753, 13060, 7631, 7754, 4903, 8293, 9782, 12529, 1087, 1504, 4820, 1395, 1629, 21, 4971, 587, 1384, 13062, 4799, 5144, 5252, 13063, 504, 7369, 7253, 8284, 5052, 5161, 8882, 13085, 13086, 9695, 13087, 13088, 7323, 1123, 1632, 13127, 12533, 8154, 9665, 8145, 1281, 5212, 1267, 1631, 5711, 11391, 12013, 12211, 10418, 5159, 8144, 1895, 12214, 9826, 9762, 13128, 10435, 9662, 13131, 13132, 2065, 12532, 13146, 13147, 13148, 13154, 13155, 1105, 13156, 13157, 13160, 13167, 13172, 13175, 13279, 13281, 13306, 13308, 13309, 13322, 13326, 13330, 13334, 13335, 13336, 13341, 2]
+// Dependencies: [5, 32, 19, 17, 8307, 13058, 10090, 7753, 13059, 7631, 7754, 4903, 8293, 9782, 12529, 1087, 1504, 4820, 1395, 1629, 21, 4971, 587, 1384, 13061, 4799, 5144, 5252, 13062, 504, 7369, 7253, 8284, 5052, 5161, 8882, 13084, 13085, 9695, 13086, 13087, 7323, 1123, 1632, 13126, 12533, 8154, 9665, 8145, 1281, 5212, 1267, 1631, 5711, 11393, 12015, 12213, 10418, 5159, 8144, 1895, 12216, 9826, 9762, 13127, 10435, 9662, 13130, 13131, 2065, 12532, 13145, 13146, 13147, 13153, 13154, 1105, 13155, 13156, 13159, 13166, 13171, 13174, 13278, 13280, 13305, 13307, 13308, 13321, 13325, 13329, 13333, 13334, 13335, 13340, 2]
 
-// Module 13058 (ChatInput)
+// Module 13057 (ChatInput)
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -13,13 +13,13 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7323 */;
 import ThreadHooks from "ThreadHooks" /* 7369 */;
 import DraftStore2 from "DraftStore" /* 7631 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13060 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8307 */;
-import DiceRollStore from "DiceRollStore" /* 13059 */;
+import DiceRollStore from "DiceRollStore" /* 13058 */;
 import NativeMenuStore from "NativeMenuStore" /* 10090 */;
 import PendingReplyStore from "PendingReplyStore" /* 7753 */;
 import EditMessageStore from "EditMessageStore" /* 7754 */;
@@ -128,7 +128,7 @@ class ChatInput {
     let tmp = channel;
     let tmp2 = dependencyMap;
     ({ isResourceChannel, setNoExtractUI, secondaryTextFieldRef, ref } = channel);
-    let obj = channel(13062);
+    let obj = channel(13061);
     const mobileEmojiSuggestionsConfig = obj.useMobileEmojiSuggestionsConfig({ location: "ChatInput" });
     const InlineEmojiSuggestionsEnabled = channel(4799).InlineEmojiSuggestionsEnabled;
     let tmp67Result30 = mobileEmojiSuggestionsConfig.enabled && InlineEmojiSuggestionsEnabled.useSetting();
@@ -174,11 +174,11 @@ class ChatInput {
     react = tmp22;
     let tmp23 = channel.isPrivate() && !tmp22;
     const tmp24 = editable((channelId) => channelId.channelId === channel.id);
-    const tmpResult36 = tmp(13063);
+    const tmpResult36 = tmp(13062);
     const typingUserIdsForDisplay = tmpResult36.useTypingUserIdsForDisplay(channel.id, 1);
     const tmp26 = closure_22(screenIndex);
     suppressed = tmp26;
-    const tmpResult37 = tmp(13063);
+    const tmpResult37 = tmp(13062);
     let result1 = tmpResult37.hasTypingIndicatorContent(channel, typingUserIdsForDisplay, tmp26);
     const tmp28 = closure_21(screenIndex);
     let tmp29 = token1;
@@ -306,7 +306,7 @@ class ChatInput {
     const tmpResult48 = tmp(504);
     const stateFromStores3 = tmpResult48.useStateFromStores(items9, () => ApplicationCommandStore.getActiveCommand(channel.id));
     let obj2 = { channel, isReadonly: !editable, isCreatingThread: tmp22 };
-    let tmp49 = tmp6(13085)(obj2);
+    let tmp49 = tmp6(13084)(obj2);
     ({ placeholder, accessibilityLabel } = tmp49);
     const tmpResult49 = tmp(5052);
     class Ze {
@@ -321,12 +321,12 @@ class ChatInput {
     const animatedStyle = tmpResult49.useAnimatedStyle(Ze);
     const ref1 = obj9.useRef(null);
     let obj3 = { disabled: !editable };
-    const tmpResult50 = tmp(13086);
+    const tmpResult50 = tmp(13085);
     const refreshChatInputCoachmark = tmpResult50.useRefreshChatInputCoachmark(obj3);
     const tmpResult51 = tmp(9695);
     let canUseScheduledMessages = tmpResult51.useCanUseScheduledMessages();
-    const useScheduledMessageDraftCoachmarkState = tmp(13087).useScheduledMessageDraftCoachmarkState;
-    tmp(13087);
+    const useScheduledMessageDraftCoachmarkState = tmp(13086).useScheduledMessageDraftCoachmarkState;
+    tmp(13086);
     if (canUseScheduledMessages) {
       canUseScheduledMessages = editable;
     }
@@ -340,7 +340,7 @@ class ChatInput {
     isCoachmarkVisible = scheduledMessageDraftCoachmarkState.isCoachmarkVisible;
     dismissCoachmark = scheduledMessageDraftCoachmarkState.dismissCoachmark;
     let obj4 = { chatInputProps: { analyticsLocations, canUpload, channel, defaultValue: memo, hasAttachmentsToUpload: stateFromStores2, pendingEdit: stateFromStores, pendingReply: stateFromStores1, screenIndex, secondaryTextFieldRef, threadCreationCallback }, chatInputTextFieldHeight: sharedValue1, ref };
-    const tmp56 = tmp6(13088)(obj4);
+    const tmp56 = tmp6(13087)(obj4);
     closure_16 = tmp56;
     const items10 = [tmp56];
     const effect2 = obj9.useEffect(() => {
@@ -870,48 +870,89 @@ class ChatInput {
         let c1;
         let c2;
         let c3;
-        let closure_1;
-        let closure_2;
         let mimeType;
         let obj2;
         let obj9;
         closure_0 = arg0;
-        if (1 === mimeType) {
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            let c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else if (closure_1_16.state.current.focused) {
-            if (closure_1_16.props.current.canUpload) {
-              mimeType = 2;
-              c4 = 1;
-              const obj6 = { value: obj2.getImageDimensionsIfMissing(originalUri, c1, c2), done: false };
-              obj2 = closure_0(closure_2_3[46]);
-              return obj6;
-            }
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: "+352" };
           }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj = { value, done: true };
-          return obj;
         } else {
-          const styles = value;
-          const obj7 = { channelId: closure_1_16.props.current.channel.id, file: size, draftType: ChannelMessage.ChannelMessage };
-          size = { uri: originalUri, originalUri, width: styles.width, height: styles.height, mimeType, platform: closure_0(closure_2_3[48]).UploadPlatform.REACT_NATIVE, id: obj9.v4() };
-          const addFile = screenIndex(closure_2_3[47]).addFile;
-          const tmp23 = screenIndex(closure_2_3[47]);
-          obj9 = closure_0(closure_2_3[49]);
-          addFile(obj7);
+          try {
+            let originalUri;
+            let styles;
+            c4 = 2;
+            if (0 === mimeType) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp4;
+                let closure_1 = tmp;
+                originalUri = undefined;
+                c1 = undefined;
+                c2 = undefined;
+                ({ url: c0, width: c1, height: c2, type: c3 } = closure_0.nativeEvent);
+                styles = undefined;
+                mimeType = 1;
+                c4 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else {
+              if (1 === mimeType) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else if (closure_1_16.state.current.focused) {
+                  if (closure_1_16.props.current.canUpload) {
+                    mimeType = 2;
+                    c4 = 1;
+                    const obj6 = { value: obj2.getImageDimensionsIfMissing(originalUri, c1, c2), done: false };
+                    obj2 = closure_0(closure_2_3[46]);
+                    return obj6;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                styles = value;
+                const obj7 = { channelId: closure_1_16.props.current.channel.id, file: size, draftType: ChannelMessage.ChannelMessage };
+                size = { uri: originalUri, originalUri, width: styles.width, height: styles.height, mimeType, platform: closure_0(closure_2_3[48]).UploadPlatform.REACT_NATIVE, id: obj9.v4() };
+                const addFile = screenIndex(closure_2_3[47]).addFile;
+                const tmp23 = screenIndex(closure_2_3[47]);
+                obj9 = closure_0(closure_2_3[49]);
+                addFile(obj7);
+              }
+              c4 = 3;
+              return { value: "IconComponent", done: "+352" };
+            }
+          } catch (tmp15) {
+            c4 = 3;
+            throw tmp15;
+          }
         }
-        yield "IconComponent";
-        ({ url: c0, width: c1, height: c2, type: c3 } = closure_0.nativeEvent);
-        return "Reflect";
       });
       return obj;
     }, items13);
@@ -940,7 +981,7 @@ class ChatInput {
         }
       }
     }, items15);
-    const tmp63 = tmp6(13127)({ textFieldHeight: sharedValue1, textFieldMinHeight: sharedValue });
+    const tmp63 = tmp6(13126)({ textFieldHeight: sharedValue1, textFieldMinHeight: sharedValue });
     registerViewTag = tmp63.registerViewTag;
     unregisterViewTag = tmp63.unregisterViewTag;
     ref = obj9.useRef(null);
@@ -970,7 +1011,7 @@ class ChatInput {
     }, items17);
     let obj5 = { canUpload, channelId: channel.id, screenIndex };
     let tmp67Result = null;
-    const tmp68 = closure_37(tmp6(13131), obj5);
+    const tmp68 = closure_37(tmp6(13130), obj5);
     if (editable) {
       let obj6 = {
         ref: tmp56.chatInputActions,
@@ -994,7 +1035,7 @@ class ChatInput {
           }
       };
       tmp71 = canUpload;
-      const tmp6Result = tmp6(13132);
+      const tmp6Result = tmp6(13131);
       if (canUpload) {
         tmp71 = null == stateFromStores3;
       }
@@ -1012,16 +1053,16 @@ class ChatInput {
     let obj7 = { style: items18, children: items19 };
     items18 = [tmp10.inputDefault, animatedStyle];
     const View = tmp6(5052).View;
-    let obj8 = { accessibilityLabel, customKeyboard: tmp(13146).PORTAL_KEYBOARD_PLACEHOLDER_INSTANCE, editable, onBeginFocus: null, onEndBlur: null, onChangeContentSize: null, onMaxHeightChanged: null, onSelectionOrTextChange: null, onTextFlushed: null, onPasteImage: null, onPasteCommand: null, onTapAction: null, onRequestSend: null, placeholder, ref: callback3, setNoExtractUI, shouldShowCursor: tmp44 !== tmp(1631).KeyboardTypes.MEDIA, verticalInset: 5 };
+    let obj8 = { accessibilityLabel, customKeyboard: tmp(13145).PORTAL_KEYBOARD_PLACEHOLDER_INSTANCE, editable, onBeginFocus: null, onEndBlur: null, onChangeContentSize: null, onMaxHeightChanged: null, onSelectionOrTextChange: null, onTextFlushed: null, onPasteImage: null, onPasteCommand: null, onTapAction: null, onRequestSend: null, placeholder, ref: callback3, setNoExtractUI, shouldShowCursor: tmp44 !== tmp(1631).KeyboardTypes.MEDIA, verticalInset: 5 };
     ({ handleFocus: obj33.onBeginFocus, handleBlur: obj33.onEndBlur, handleChangeContentSize: obj33.onChangeContentSize, handleMaxHeightChanged: obj33.onMaxHeightChanged, handleSelectionOrTextChange: obj33.onSelectionOrTextChange, handleTextFlushed: obj33.onTextFlushed, handlePasteImage: obj33.onPasteImage, handlePasteCommand: obj33.onPasteCommand, handleTapAction: obj33.onTapAction, handlePressSend: obj33.onRequestSend } = memo1);
     const tmp6Result7 = tmp6(12532);
     items19 = [closure_37(tmp6Result7, obj8), ];
     let obj10 = { keyboardType: tmp44, onSelectKeyboard: memo1.handleToggleKeyboard, ref: tmp56.chatInputCover };
-    items19[1] = closure_37(tmp6(13147), obj10);
+    items19[1] = closure_37(tmp6(13146), obj10);
     const tmp75 = closure_38(View, obj7);
     if (editable) {
       let obj11 = { ref: tmp56.chatInputSendButton, canSendVoiceMessage, channel, defaultValue: memo, hasPendingAttachments: stateFromStores2, hasPendingEdit: null != stateFromStores, onSendMessage: memo1.handlePressSend, requireTextContent: result3 };
-      const tmp6Result8 = tmp6(13148);
+      const tmp6Result8 = tmp6(13147);
       if (stateFromStores2) {
         stateFromStores2 = canUpload;
       }
@@ -1030,7 +1071,7 @@ class ChatInput {
       tmp67Result17 = null;
     }
     let obj12 = { collapsable: false, onLayout: callback2, style: items20, children: items21 };
-    items20 = [tmp6(13154)({ isCreatingThread: tmp22 }), tmp10.overflowVisible, ];
+    items20 = [tmp6(13153)({ isCreatingThread: tmp22 }), tmp10.overflowVisible, ];
     let floatingScrimOverlap = result3;
     if (null == threadCreationCallback) {
       floatingScrimOverlap = tmp10.floatingScrimOverlap;
@@ -1039,7 +1080,7 @@ class ChatInput {
     let tmp67Result18 = !result1;
     if (tmp67Result18) {
       let obj13 = { gradientHeight: tmp29, inline: false, scrimBase: token2 };
-      tmp67Result18 = tmp67(tmp(13155).ChatInputScrimGradient, obj13);
+      tmp67Result18 = tmp67(tmp(13154).ChatInputScrimGradient, obj13);
     }
     items21 = [tmp67Result18, , , , , , , , , , , , , ];
     let tmp67Result19 = result1;
@@ -1054,13 +1095,13 @@ class ChatInput {
       tmp67Result19 = tmp67(tmp78, obj14);
     }
     items21[1] = tmp67Result19;
-    items21[2] = closure_37(tmp(13156).ChatInputAccessibilityDivider, {});
+    items21[2] = closure_37(tmp(13155).ChatInputAccessibilityDivider, {});
     let tmp67Result20 = null;
     if (tmp23) {
       let obj15 = { channel, hasInputText: tmp84 };
       let str = "";
       tmp84 = "" !== memo;
-      const tmp6Result9 = tmp6(13157);
+      const tmp6Result9 = tmp6(13156);
       if (!tmp84) {
         let current = tmp56.chatInput.current;
         let text;
@@ -1076,51 +1117,51 @@ class ChatInput {
     let tmp67Result21 = result1;
     if (tmp67Result21) {
       let obj17 = { gradientHeight: tmp30, inline: true, scrimBase: token2 };
-      tmp67Result21 = tmp67(tmp(13155).ChatInputScrimGradient, obj17);
+      tmp67Result21 = tmp67(tmp(13154).ChatInputScrimGradient, obj17);
     }
     items22 = [tmp67Result21, , ];
     let tmp67Result22 = null;
     if (null == threadCreationCallback) {
       let obj18 = { channel, screenIndex };
-      tmp67Result22 = tmp67(tmp6(13063), obj18);
+      tmp67Result22 = tmp67(tmp6(13062), obj18);
     }
     items22[1] = tmp67Result22;
     let tmp67Result23 = null;
     const tmpResult55 = tmp(1384);
     if (tmpResult55.isIOS()) {
       let obj19 = { channelId: channel.id, screenIndex, onJumpToPresent };
-      tmp67Result23 = tmp67(tmp6(13160), obj19);
+      tmp67Result23 = tmp67(tmp6(13159), obj19);
     }
     items22[2] = tmp67Result23;
     items21[4] = closure_38(suppressed, obj16);
     let tmp67Result24 = null;
     if (isResourceChannel) {
       let obj20 = { channel };
-      tmp67Result24 = tmp67(tmp6(13167), obj20, channel.id);
+      tmp67Result24 = tmp67(tmp6(13166), obj20, channel.id);
     }
     items21[5] = tmp67Result24;
-    items21[6] = closure_37(tmp(13172).MemberActionsChatInputBannerGuardedOuter, { channel });
-    items21[7] = closure_37(tmp(13175).DoubleTapToReactChatInputBanner, { channel });
+    items21[6] = closure_37(tmp(13171).MemberActionsChatInputBannerGuardedOuter, { channel });
+    items21[7] = closure_37(tmp(13174).DoubleTapToReactChatInputBanner, { channel });
     let tmp67Result25 = null;
     if (tmp24) {
       let obj21 = { channelId: channel.id };
-      tmp67Result25 = tmp67(tmp6(13279), obj21);
+      tmp67Result25 = tmp67(tmp6(13278), obj21);
     }
     items21[8] = tmp67Result25;
     let tmp67Result26 = null;
     if (tmp44 !== tmp(1631).KeyboardTypes.EXPRESSION) {
       let obj22 = { ref: tmp56.chatInputAutocomplete, analyticsLocations, channel, canMentionEveryone, keyboardType: tmp44, onChangeAutoCompleteVisibility: memo1.handleChangeAutoCompleteVisibility, commandsDisabled: tmp36, canOnlyUseTextCommands: tmp37, chatInputRef: tmp56.chatInput, screenIndex };
-      tmp67Result26 = tmp67(tmp6(13281), obj22);
+      tmp67Result26 = tmp67(tmp6(13280), obj22);
     }
     items21[9] = tmp67Result26;
     let obj23 = { ref: tmp56.chatInputAppCommandManager, canOnlyUseTextCommands: tmp37, channel, chatInputRef: tmp56.chatInput, chatInputStateRef: tmp56.state, commandsDisabled: tmp36 };
-    items21[10] = closure_37(tmp6(13306), obj23);
+    items21[10] = closure_37(tmp6(13305), obj23);
     const obj24 = { style: items23, onLayout: memo1.handleLayoutOfInputContainer, children: closure_38(tmp93, { children: items24 }) };
     items23 = [, ];
     ({ container: arr24[0], floatingContainer: arr24[1] } = tmp10);
     items24 = [tmp68, , , ];
-    const tmp6Result10 = tmp6(13308);
-    items24[1] = closure_37(tmp6(13309), { channel });
+    const tmp6Result10 = tmp6(13307);
+    items24[1] = closure_37(tmp6(13308), { channel });
     const items25 = [tmp10.floatingInputBox, , ];
     tmp93 = closure_39;
     if (floatingInputBoxPressed) {
@@ -1136,12 +1177,12 @@ class ChatInput {
     }
     items26 = [, , ];
     const obj26 = { channel, chatInputRef: tmp56.chatInput, pendingEdit: stateFromStores, pendingReply: stateFromStores1 };
-    items26[0] = closure_37(tmp6(13322), obj26);
+    items26[0] = closure_37(tmp6(13321), obj26);
     let tmp67Result27 = tmp67Result30 && "large" === mobileEmojiSuggestionsConfig.style;
     if (tmp67Result27) {
       let obj27 = { ref: null, chatInputRef: null, chatInputStateRef: null, channel, suppressed: tmp26 };
       ({ chatInputEmojiSuggestions: obj54.ref, chatInput: obj54.chatInputRef, state: obj54.chatInputStateRef } = tmp56);
-      tmp67Result27 = tmp67(tmp(13326).EmojiSuggestionBarLarge, obj27);
+      tmp67Result27 = tmp67(tmp(13325).EmojiSuggestionBarLarge, obj27);
     }
     items26[1] = tmp67Result27;
     let obj28 = { style: tmp10.floatingMainContents, children: items27 };
@@ -1160,7 +1201,7 @@ class ChatInput {
       const obj34 = { style: obj35, children: closure_37(tmp6Result11, obj36) };
       obj35 = { paddingBottom: result };
       obj36 = { ref: tmp56.chatInputRightActions, channel, keyboardType: tmp44, shouldShowGiftButton: result3, onPressAction: null, onPressExpression: null, suggestedExpressions: memo2, suggestedExpressionsRef: tmp56.chatInputEmojiSuggestions };
-      tmp6Result11 = tmp6(13330);
+      tmp6Result11 = tmp6(13329);
       if (null == threadCreationCallback) {
         const tmpResult56 = tmp(2065);
         result3 = tmpResult56.isPremiumGiftingSupported();
@@ -1171,7 +1212,7 @@ class ChatInput {
     items27[2] = tmp67Result29;
     items27[3] = tmp67Result17;
     const obj37 = { style: tmp10.characterCounter, analyticsLocations, ref: tmp56.chatInputCharCounter };
-    items27[4] = closure_37(tmp6(13334), obj37);
+    items27[4] = closure_37(tmp6(13333), obj37);
     items26[2] = closure_38(suppressed, obj28);
     items24[2] = closure_38(suppressed, obj25);
     if (tmp67Result30) {
@@ -1180,24 +1221,24 @@ class ChatInput {
     if (tmp67Result30) {
       const obj38 = { ref: null, chatInputRef: null, chatInputStateRef: null, channel, suppressed: tmp26, anchorTop: tmp18, onOccupiedHeightChange: callback1 };
       ({ chatInputEmojiSuggestions: obj64.ref, chatInput: obj64.chatInputRef, state: obj64.chatInputStateRef } = tmp56);
-      tmp67Result30 = tmp67(tmp(13335).EmojiSuggestionBarSmall, obj38);
+      tmp67Result30 = tmp67(tmp(13334).EmojiSuggestionBarSmall, obj38);
     }
     items24[3] = tmp67Result30;
     items21[11] = closure_37(tmp6Result10, obj24);
     let tmp67Result31 = null;
     if (null != refreshChatInputCoachmark) {
       const obj39 = { buttonRef: ref1 };
-      const tmp6Result12 = tmp6(13086);
+      const tmp6Result12 = tmp6(13085);
       const merged = Object.assign(refreshChatInputCoachmark);
       tmp67Result31 = tmp67(tmp6Result12, obj39);
     }
     items21[12] = tmp67Result31;
-    items21[13] = closure_37(tmp6(13336), { buttonRef: ref1, isVisible: isCoachmarkVisible, onDismiss: dismissCoachmark });
+    items21[13] = closure_37(tmp6(13335), { buttonRef: ref1, isVisible: isCoachmarkVisible, onDismiss: dismissCoachmark });
     const tmp73Result = closure_38(suppressed, obj12);
     let tmp67Result32 = tmp73Result;
     if (null == threadCreationCallback) {
       const obj40 = { channel, screenIndex, canSendMessages: editable, canCreateThreads, onJumpToPresent, isReadonly: !editable, children: tmp73Result };
-      tmp67Result32 = tmp67(tmp6(13341), obj40);
+      tmp67Result32 = tmp67(tmp6(13340), obj40);
     }
     return tmp67Result32;
   }

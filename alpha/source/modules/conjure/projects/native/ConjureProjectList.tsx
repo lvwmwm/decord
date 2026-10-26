@@ -1,22 +1,22 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11746
+// Function ID: 11747
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1246, 6773, 21, 4971, 587, 558, 576, 1633, 1505, 504, 7345, 11745, 11743, 5210, 11746, 10696, 11785, 10723, 11795, 11800, 7291, 6933, 11149, 1128, 5234, 3830, 5244, 10720, 11852, 6987, 10722, 6789, 11854, 11856, 11857, 9644, 6903, 2]
+// Dependencies: [19, 17, 1246, 6773, 21, 4971, 587, 558, 576, 1633, 1505, 504, 7345, 11747, 11745, 5210, 11748, 10696, 11787, 10723, 11797, 11802, 7291, 6933, 11151, 1128, 5234, 3830, 5244, 10720, 11854, 6987, 10722, 6789, 11856, 11858, 11859, 9644, 6903, 2]
 
-// Module 11744 (ConjureProjectList)
+// Module 11746 (ConjureProjectList)
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 10696 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11743 */;
-import ConjureActivity from "ConjureActivity" /* 11745 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11746 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11800 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11854 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 11856 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11857 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11745 */;
+import ConjureActivity from "ConjureActivity" /* 11747 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11748 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11802 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11856 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 11858 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11859 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
@@ -851,7 +851,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { mentionsCount: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(11856), obj6);
+      tmp14Result3 = tmp14(tmp18(11858), obj6);
     }
     items2 = [tmp14Result3, ];
     const obj7 = { IconComponent: project(9644).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1128).t["UKOtz+"]) };

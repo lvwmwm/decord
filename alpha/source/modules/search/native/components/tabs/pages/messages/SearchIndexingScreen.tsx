@@ -1,12 +1,12 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18160
+// Function ID: 18161
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 558, 576, 13244, 13230, 18079, 2]
+// Dependencies: [19, 21, 558, 576, 13243, 13229, 18078, 2]
 
-// Module 18161 (SearchIndexingScreen)
+// Module 18160 (SearchIndexingScreen)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13244 */;
-import ErrorScreenDefault from "ErrorScreen" /* 18079 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13243 */;
+import ErrorScreenDefault from "ErrorScreen" /* 18078 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchInde
   }
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[3] !== searchContext) {
-    const tmpResult = tmp(13230);
+    const tmpResult = tmp(13229);
     const indexingErrorText = tmpResult.getIndexingErrorText(searchContext);
     cResult[3] = searchContext;
     cResult[4] = indexingErrorText;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchInde
     const obj2 = { searchContext };
     obj.trackSearchIndexing(obj2);
   }, items);
-  let obj = searchContext(13230);
+  let obj = searchContext(13229);
   const text = obj.getIndexingErrorText(searchContext);
   return jsx(ErrorScreenDefault, { text });
 });

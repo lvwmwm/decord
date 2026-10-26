@@ -1,15 +1,15 @@
-// Module ID: 18367
-// Function ID: 18368
+// Module ID: 18366
+// Function ID: 18367
 // Name: OrbsArcadeFrameHeaderInfo
-// Dependencies: [19, 17, 2045, 16395, 21, 4971, 587, 5250, 558, 576, 504, 9451, 5234, 13949, 2]
+// Dependencies: [19, 17, 2045, 16394, 21, 4971, 587, 5250, 558, 576, 504, 9451, 5234, 13948, 2]
 
-// Module 18367 (OrbsArcadeFrameHeaderInfo)
+// Module 18366 (OrbsArcadeFrameHeaderInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ButtonConstants from "ButtonConstants" /* 5250 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16394 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
       }
       if (cResult[8] !== balance) {
         const obj2 = { balance };
-        const tmp17 = closure_5(applicationId(13949).BalanceWidgetPill, obj2);
+        const tmp17 = closure_5(applicationId(13948).BalanceWidgetPill, obj2);
         cResult[8] = balance;
         cResult[9] = tmp17;
         tmp15 = tmp17;
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeFr
       tmp7 = closure_5(tmp6, obj4);
     }
   }
-  items2 = [tmp7, closure_5(applicationId(13949).BalanceWidgetPill, { balance })];
+  items2 = [tmp7, closure_5(applicationId(13948).BalanceWidgetPill, { balance })];
   return tmp5(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeFrameHeaderInfo.tsx");

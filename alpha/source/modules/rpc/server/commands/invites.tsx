@@ -1,9 +1,9 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 15733
+// Function ID: 15734
 // Name: invites
-// Dependencies: [5, 4822, 4823, 6378, 1087, 1098, 15725, 8827, 9265, 11399, 15735, 1108, 11391, 2]
+// Dependencies: [5, 4822, 4823, 6378, 1087, 1098, 15724, 8827, 9265, 11401, 15734, 1108, 11393, 2]
 
-// Module 15734 (invites)
+// Module 15733 (invites)
 import Constants2 from "Constants" /* 1087 */;
 import Constants3 from "Constants" /* 6378 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import Constants from "Constants" /* 1098 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15724 */;
 import size from "module_2" /* 2 */;
 
 let connectedActivityLocation, userId;
@@ -47,7 +47,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c2;
@@ -137,7 +137,7 @@ let obj2 = {
           } else {
             c2 = 0;
             connectedActivityLocation = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp48) {
           if (0 === c2) {

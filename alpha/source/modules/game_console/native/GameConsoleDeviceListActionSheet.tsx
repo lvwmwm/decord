@@ -1,9 +1,9 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11661
+// Function ID: 11662
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 5715, 1087, 21, 4971, 587, 558, 576, 1128, 5244, 7221, 11660, 5669, 5234, 11661, 504, 11650, 38, 11652, 5210, 1123, 1202, 11052, 7248, 5269, 5265, 2]
+// Dependencies: [5, 32, 19, 17, 5715, 1087, 21, 4971, 587, 558, 576, 1128, 5244, 7221, 11662, 5669, 5234, 11663, 504, 11652, 38, 11654, 5210, 1123, 1202, 11054, 7248, 5269, 5265, 2]
 
-// Module 11659 (GameConsoleDeviceListActionSheet)
+// Module 11661 (GameConsoleDeviceListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,9 +11,9 @@ import intl4 from "intl" /* 1128 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11650 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11660 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11661 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11652 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11662 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11663 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -435,7 +435,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleL
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -471,7 +471,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleL
             const ComponentDispatch = tmp3(stateFromStores[23]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp12) {
           c2 = 3;
@@ -542,7 +542,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleL
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -578,7 +578,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleL
             const ComponentDispatch = tmp3(c2[23]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp12) {
           c2 = 3;

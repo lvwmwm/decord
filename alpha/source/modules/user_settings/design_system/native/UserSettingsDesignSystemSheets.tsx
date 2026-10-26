@@ -1,9 +1,9 @@
-// Module ID: 17176
-// Function ID: 17177
+// Module ID: 17175
+// Function ID: 17176
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 8934, 7293, 7248, 7008, 5977, 7294, 7298, 5210, 5244, 1128, 10853, 17177, 5234, 6905, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 8934, 7293, 7248, 7008, 5977, 7294, 7298, 5210, 5244, 1128, 10855, 17176, 5234, 6905, 2]
 
-// Module 17176 (UserSettingsDesignSystemSheets)
+// Module 17175 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -17,8 +17,8 @@ import TextInput_TextInput from "TextInput/TextInput" /* 7008 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
 import ActionSheetRow from "ActionSheetRow" /* 7294 */;
 import ActionSheet2 from "ActionSheet" /* 7298 */;
-import PromoSheet2 from "PromoSheet" /* 10853 */;
-import _modDef17177 from "module_17177" /* 17177 */;
+import PromoSheet2 from "PromoSheet" /* 10855 */;
+import _modDef17176 from "module_17176" /* 17176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -341,8 +341,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoPr
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { graphic: obj4, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: first };
     obj4 = { type: "image", src: obj5, aspectRatio: "16/9" };
-    obj5 = { uri: _modDef17177 };
-    const PromoSheet = tmp(10853).PromoSheet;
+    obj5 = { uri: _modDef17176 };
+    const PromoSheet = tmp(10855).PromoSheet;
     const tmp10 = metroImportDefault(PromoSheet, obj3);
     cResult[1] = tmp10;
     tmp7 = tmp10;
@@ -367,7 +367,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoPr
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef17177 };
+  obj4 = { uri: _modDef17176 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);

@@ -1,17 +1,17 @@
-// Module ID: 19021
-// Function ID: 19022
+// Module ID: 19020
+// Function ID: 19021
 // Name: TriggerFields
-// Dependencies: [19, 21, 558, 576, 19005, 5234, 1128, 19022, 19023, 19027, 19031, 2]
+// Dependencies: [19, 21, 558, 576, 19004, 5234, 1128, 19021, 19022, 19026, 19030, 2]
 
-// Module 19021 (TriggerFields)
+// Module 19020 (TriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19005 */;
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 19022 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 19023 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 19027 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 19031 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19004 */;
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 19021 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 19022 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 19026 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 19030 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

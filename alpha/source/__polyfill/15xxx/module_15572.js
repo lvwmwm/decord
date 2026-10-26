@@ -1,21 +1,27 @@
 // Module ID: 15572
 // Function ID: 15573
-// Dependencies: [15563, 15573, 15571, 15574]
+// Dependencies: [15570, 15544]
 
 // Module 15572
-import _mod15563 from "module_15563" /* 15563 */;
-import _mod15571 from "module_15571" /* 15571 */;
-import _mod15573 from "module_15573" /* 15573 */;
+import _mod15544 from "module_15544" /* 15544 */;
+import _mod15570 from "module_15570" /* 15570 */;
 
-let tmp;
-const _mod15574 = tmp(15574);
 
-export default _mod15563 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod15573("Symbol");
-  let tmpResultResult = _mod15571(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod15574;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod15544[arg0];
+    let tmp8;
+    if (_mod15570(tmp7)) {
+      tmp8 = tmp7;
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod15544[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(15544)[arg0][arg1];
+    }
   }
-  return tmpResultResult;
-});
+  return tmp3;
+};

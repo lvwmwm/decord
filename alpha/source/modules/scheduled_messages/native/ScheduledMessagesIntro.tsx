@@ -1,17 +1,17 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14037
+// Function ID: 14038
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4971, 587, 558, 576, 13337, 1128, 5234, 10423, 12238, 10839, 2]
+// Dependencies: [17, 21, 4971, 587, 558, 576, 13336, 1128, 5234, 10423, 12240, 10841, 2]
 
-// Module 14038 (ScheduledMessagesIntro)
+// Module 14037 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import AttachmentIcon from "AttachmentIcon" /* 10423 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10839 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12238 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13337 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10841 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12240 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13336 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -174,7 +174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         const _Symbol3 = Symbol;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10839).PlusLargeIcon;
+          const PlusLargeIcon = tmp(10841).PlusLargeIcon;
           const tmp43 = hasOwnProperty(PlusLargeIcon, obj8);
           cResult[20] = tmp43;
           tmp40 = tmp43;

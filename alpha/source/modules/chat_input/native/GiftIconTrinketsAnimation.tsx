@@ -1,9 +1,9 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13144
+// Function ID: 13145
 // Name: GiftIconTrinketsAnimation
 // Dependencies: [19, 17, 4972, 21, 4971, 558, 576, 5252, 587, 504, 2033, 1384, 9401, 5669, 2]
 
-// Module 13145 (GiftIconTrinketsAnimation)
+// Module 13144 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

@@ -1,13 +1,13 @@
-// Module ID: 13859
-// Function ID: 13860
+// Module ID: 13858
+// Function ID: 13859
 // Name: getChannelMoveBlocker
-// Dependencies: [4845, 6704, 4848, 13860, 6813, 2]
+// Dependencies: [4845, 6704, 4848, 13859, 6813, 2]
 // Exports: default
 
-// Module 13859 (getChannelMoveBlocker)
+// Module 13858 (getChannelMoveBlocker)
 import FavoritesUtils from "FavoritesUtils" /* 4848 */;
 import isOptInEnabled from "isOptInEnabled" /* 6813 */;
-import canManageChannelList from "canManageChannelList" /* 13860 */;
+import canManageChannelList from "canManageChannelList" /* 13859 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11540
+// Function ID: 11541
 // Name: useRequestToSpeakPermission
 // Dependencies: [32, 19, 4823, 1087, 558, 576, 504, 4908, 7873, 2]
 
-// Module 11538 (useRequestToSpeakPermission)
+// Module 11540 (useRequestToSpeakPermission)
 import Constants from "Constants" /* 1087 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7873 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

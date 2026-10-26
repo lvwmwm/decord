@@ -1,9 +1,9 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11567
+// Function ID: 11568
 // Name: useIsInvitedToSpeak
 // Dependencies: [502, 4874, 558, 576, 504, 5996, 2]
 
-// Module 11565 (useIsInvitedToSpeak)
+// Module 11567 (useIsInvitedToSpeak)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5996 */;

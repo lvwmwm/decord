@@ -10,7 +10,7 @@ import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import conjurePlanTags from "conjurePlanTags" /* 12454 */;
 import size from "module_2" /* 2 */;
 
-const f114594 = (item) => {
+const f114607 = (item) => {
   const obj = conjurePlanTags;
   return obj.planDeclaresSurface(proposal, item);
 };
@@ -29,7 +29,7 @@ const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanDesig
 export { CONJURE_PLAN_DESIGN_ALTS };
 export const conjurePlanDesignSurface = function conjurePlanDesignSurface(proposal) {
   let closure_0 = proposal;
-  let found = items.find(f114594);
+  let found = items.find(f114607);
   if (found == null) {
     found = null;
   }
@@ -39,7 +39,7 @@ export const conjurePlanDesignAlt = function conjurePlanDesignAlt(proposal) {
   let obj;
   let prop;
   let closure_0 = proposal;
-  let found = items.find(f114594);
+  let found = items.find(f114607);
   if (found == null) {
     found = null;
   }

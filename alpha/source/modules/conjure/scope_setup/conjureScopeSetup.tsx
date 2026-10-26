@@ -1,22 +1,22 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11754
+// Function ID: 11755
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 10699, 11753, 10698, 6773, 1087, 510, 10203, 11754, 11755, 1128, 3830, 1297, 584, 10720, 10719, 2]
+// Dependencies: [109, 5, 10699, 11755, 10698, 6773, 1087, 510, 10203, 11756, 11757, 1128, 3830, 1297, 584, 10720, 10719, 2]
 // Exports: keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 11752 (conjureScopeSetup)
+// Module 11754 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11754 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11755 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11756 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11757 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureChatStore from "ConjureChatStore" /* 10699 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 11753 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 11755 */;
 import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10698 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f111421 = function*(arg0, value) {
+const f111436 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -38,7 +38,7 @@ const f111421 = function*(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     }
   } else {
     let c3;
@@ -76,7 +76,7 @@ const f111421 = function*(arg0, value) {
       } else {
         c3 = 0;
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } catch (tmp14) {
       closure_2 = tmp14;
@@ -161,7 +161,7 @@ let obj = function _putInstallScope() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ let obj = function _putInstallScope() {
             obj = closure_132_1(closure_132_2[14]);
             obj.dispatch(obj9);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp14) {
           c6 = 3;
@@ -388,7 +388,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -445,7 +445,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -462,7 +462,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f111421)();
+    value = tmp2(f111436)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -482,7 +482,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -519,7 +519,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
           const intl = tmp(c2[11]).intl;
           if (closure_1_8(closure_129_0, intl.string(prop))) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else {
             const _Error = Error;
             const self = this;
@@ -538,7 +538,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f111421)();
+    value = tmp2(f111436)();
   }
   const result = obj.set(combined, value);
   return value;

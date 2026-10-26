@@ -1,9 +1,9 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 15994
+// Function ID: 15995
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4971, 587, 6484, 15996, 5234, 1128, 558, 576, 1505, 504, 2053, 15997, 7087, 7078, 1297, 1506, 9699, 7008, 7093, 7030, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4971, 587, 6484, 15995, 5234, 1128, 558, 576, 1505, 504, 2053, 15996, 7087, 7078, 1297, 1506, 9699, 7008, 7093, 7030, 2]
 
-// Module 15995 (UserSettingsChangeUsername)
+// Module 15994 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
@@ -34,7 +34,7 @@ function UsernameStatusMessage(showHint) {
   const usernameStatus = showHint.usernameStatus;
   const str = showHint(6484);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(15996).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(15995).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
   P = showHint(6484).P;
   const _withResult = _with(obj, (children) => {
@@ -42,7 +42,7 @@ function UsernameStatusMessage(showHint) {
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(15996).NameValidationState.AVAILABLE, message: P2.select() };
+  const obj2 = { type: showHint(15995).NameValidationState.AVAILABLE, message: P2.select() };
   P2 = showHint(6484).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
@@ -350,7 +350,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {

@@ -1,9 +1,9 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11715
+// Function ID: 11716
 // Name: useFetchStreamPreview
 // Dependencies: [19, 7831, 4823, 4903, 4874, 1098, 558, 576, 504, 7829, 2]
 
-// Module 11713 (useFetchStreamPreview)
+// Module 11715 (useFetchStreamPreview)
 import Constants from "Constants" /* 1098 */;
 import StreamActionCreators from "StreamActionCreators" /* 7829 */;
 import react_mod from "react" /* 19 */;
@@ -207,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSt
     }
     return obj5;
   }
-  obj5 = { previewUrl: "Reflect", isLoading: true };
+  obj5 = { previewUrl: "Reflect", isLoading: null };
 });
 const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 

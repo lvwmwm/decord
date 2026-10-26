@@ -1,16 +1,16 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 14219
+// Function ID: 14220
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1384, 5586, 14213, 5244, 7221, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1384, 5586, 14212, 5244, 7221, 2]
 
-// Module 14220 (MediaModalOverlayFooterAction)
+// Module 14219 (MediaModalOverlayFooterAction)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5586 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 14213 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 14212 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

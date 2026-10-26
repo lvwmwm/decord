@@ -1,9 +1,9 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 17927
+// Function ID: 17928
 // Name: ScienceIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 12756, 5668, 2]
 
-// Module 17928 (ScienceIcon)
+// Module 17927 (ScienceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

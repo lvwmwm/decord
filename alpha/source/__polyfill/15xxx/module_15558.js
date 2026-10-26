@@ -1,44 +1,37 @@
 // Module ID: 15558
 // Function ID: 15559
-// Dependencies: [15559, 15570, 15572, 15575, 15578, 15579]
+// Dependencies: [15559, 15562, 15544, 15566, 15567, 15563]
 
 // Module 15558
+import _mod15544 from "module_15544" /* 15544 */;
 import _mod15559 from "module_15559" /* 15559 */;
-import _mod15570 from "module_15570" /* 15570 */;
-import _mod15572 from "module_15572" /* 15572 */;
-import _mod15575 from "module_15575" /* 15575 */;
-import _mod15578 from "module_15578" /* 15578 */;
-import _mod15579 from "module_15579" /* 15579 */;
+import _mod15563 from "module_15563" /* 15563 */;
+import _mod15566 from "module_15566" /* 15566 */;
+import _mod15567 from "module_15567" /* 15567 */;
+import prop from "module_15562" /* 15562 */;
 
-let closure_3 = _mod15559("toPrimitive");
+let tmp2;
+let closure_2 = _mod15559("wks");
+const _Symbol = _mod15544.Symbol;
+if (prop) {
+  tmp2 = _Symbol.for || _mod15544.Symbol;
+  const tmp3 = _Symbol.for || _mod15544.Symbol;
+} else {
+  tmp2 = _Symbol && _mod15544.Symbol.withoutSetter || _mod15566;
+}
+let closure_3 = tmp2;
 
-export default function(arg0, arg1) {
-  if (_mod15570(arg0)) {
-    if (!_mod15572(arg0)) {
-      let str = arg1;
-      const tmp4 = _mod15575(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
-        }
-        const tmp5 = _mod15578(tmp4, arg0, str);
-        if (_mod15570(tmp5)) {
-          if (!_mod15572(tmp5)) {
-            const self = this;
-            const self2 = this;
-            const tmp7 = new TypeError("Can't convert object to primitive value");
-            throw tmp7;
-          }
-        }
-        return tmp5;
-      } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return _mod15579(arg0, str2);
+export default (arg0) => {
+  if (!_mod15567(closure_2, arg0)) {
+    if (_mod15563) {
+      let tmp6;
+      const tmpResult = _mod15567;
+      if (tmpResult(_mod15544.Symbol, arg0)) {
+        tmp6 = tmp(15544).Symbol[arg0];
       }
+      closure_2[arg0] = tmp6;
     }
+    tmp6 = closure_3(`Symbol.${arg0}`);
   }
-  return arg0;
+  return closure_2[arg0];
 };

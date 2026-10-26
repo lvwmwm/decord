@@ -1,13 +1,13 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18049
+// Function ID: 18050
 // Name: conjureBackgroundFramePlatform
-// Dependencies: [5609, 6776, 10767, 11890, 5626, 5707, 2]
+// Dependencies: [5609, 6776, 10767, 11892, 5626, 5707, 2]
 
-// Module 18050 (conjureBackgroundFramePlatform)
+// Module 18049 (conjureBackgroundFramePlatform)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11890 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11892 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
 

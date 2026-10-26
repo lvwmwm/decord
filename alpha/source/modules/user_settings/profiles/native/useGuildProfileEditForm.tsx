@@ -1,9 +1,9 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 15958
+// Function ID: 15959
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8649, 7703, 4883, 4845, 6701, 1392, 1087, 4996, 558, 576, 504, 12820, 4818, 11187, 15960, 11183, 4998, 7085, 15857, 6713, 15858, 6374, 1128, 8656, 2]
+// Dependencies: [109, 5, 19, 8649, 7703, 4883, 4845, 6701, 1392, 1087, 4996, 558, 576, 504, 12820, 4818, 11189, 15959, 11185, 4998, 7085, 15856, 6713, 15857, 6374, 1128, 8656, 2]
 
-// Module 15959 (useGuildProfileEditForm)
+// Module 15958 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1087 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8649 */;
@@ -275,7 +275,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -375,7 +375,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
                 }
               }
               pendingThemeColors = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -661,7 +661,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -761,7 +761,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

@@ -20,7 +20,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f114687 = (answer) => {
+const f114700 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -28,7 +28,7 @@ const f114687 = (answer) => {
   }
   return tmp;
 };
-const f114688 = (answer) => {
+const f114701 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -119,8 +119,8 @@ export const formatClarificationAnswers = function formatClarificationAnswers(qu
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114687);
-  const mapped1 = found.map(f114688);
+  const found = mapped.filter(f114700);
+  const mapped1 = found.map(f114701);
   return mapped1.join("\n");
 };
 export const toggleClarificationOption = function toggleClarificationOption(options, arr, id) {
@@ -401,8 +401,8 @@ export const submitClarificationAnswers = function submitClarificationAnswers(pr
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114687);
-  const mapped1 = found.map(f114688);
+  const found = mapped.filter(f114700);
+  const mapped1 = found.map(f114701);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

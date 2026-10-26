@@ -1,9 +1,9 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 19412
+// Function ID: 19413
 // Name: LibdiscoreExperimentManager
 // Dependencies: [1261, 562, 559, 568, 1455, 7214, 2]
 
-// Module 19413 (LibdiscoreExperimentManager)
+// Module 19412 (LibdiscoreExperimentManager)
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import shim from "shim" /* 562 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;

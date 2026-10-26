@@ -229,7 +229,7 @@ class FeedbackWidget {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "Array", attachment: "ix", attachmentUri: "apply" });
+                  obj10.setState({ filename: "toCharArray$esjava$1", attachment: "test", attachmentUri: "ix" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {
@@ -433,7 +433,7 @@ class FeedbackWidget {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp72) {
             c5 = 3;
             throw tmp72;
@@ -471,7 +471,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, state.state);
     };
     tmp4Result._clearFormState = () => {
-      state._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
+      state._savedState = { name: "", email: "", description: "", filename: "emoji", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
     };
     tmp4Result._hasScreenshot = () => undefined !== state.state.filename && undefined !== state.state.attachment && undefined !== state.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -650,7 +650,7 @@ let items = [
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -666,7 +666,7 @@ let items = [
                   const obj = c0(closure_1_2[7]);
                   obj.feedbackAlertDialog(props3.errorTitle, props3.captureScreenshotError);
                   c0 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp7) {
                 c0 = 3;
@@ -778,13 +778,13 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "emoji", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = defaultConfiguration.defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "emoji", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
 const FeedbackWidget_export = importDefaultResultResult;
 
 export { FeedbackWidget_export as FeedbackWidget };

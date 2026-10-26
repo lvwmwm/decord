@@ -1,11 +1,11 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17039
+// Function ID: 17040
 // Name: TotpScreen
-// Dependencies: [5, 32, 19, 21, 17041, 558, 576, 1128, 17042, 17036, 17037, 2]
+// Dependencies: [5, 32, 19, 21, 17040, 558, 576, 1128, 17041, 17035, 17036, 2]
 
-// Module 17040 (TotpScreen)
+// Module 17039 (TotpScreen)
 import Fragment from "Fragment" /* 21 */;
-import MFA from "MFA" /* 17041 */;
+import MFA from "MFA" /* 17040 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TotpScreen(a
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -130,7 +130,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TotpScreen(a
             message2(false);
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp26) {
           if (0 === c5) {
             c7 = 3;
@@ -323,7 +323,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TotpScreen(a
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -383,7 +383,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TotpScreen(a
           message2(false);
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp26) {
         if (0 === c5) {
           c7 = 3;

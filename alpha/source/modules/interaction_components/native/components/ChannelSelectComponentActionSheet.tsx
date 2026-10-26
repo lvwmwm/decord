@@ -1,7 +1,7 @@
 // Module ID: 12771
 // Function ID: 12772
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 4823, 4845, 21, 558, 576, 8603, 12770, 8605, 1202, 9018, 11840, 2]
+// Dependencies: [19, 4823, 4845, 21, 558, 576, 8603, 12770, 8605, 1202, 9018, 11842, 2]
 
 // Module 12771 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;

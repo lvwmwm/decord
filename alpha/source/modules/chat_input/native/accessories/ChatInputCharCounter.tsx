@@ -1,9 +1,9 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13333
+// Function ID: 13334
 // Name: ChatInputCharCounter
 // Dependencies: [32, 19, 1392, 1087, 1394, 21, 4971, 587, 558, 576, 2053, 504, 9662, 9672, 5663, 1128, 5234, 9425, 6908, 2]
 
-// Module 13334 (ChatInputCharCounter)
+// Module 13333 (ChatInputCharCounter)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   class E {
     constructor() {
-      obj = { onMessageLengthChanged() { /* body not rendered: F150234 */ } };
+      obj = { onMessageLengthChanged() { /* body not rendered: F150247 */ } };
       return obj;
     }
   }

@@ -1,14 +1,14 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11664
+// Function ID: 11665
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1087, 21, 11654, 11650, 11663, 5909, 11664, 2002, 11657, 7829, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 11656, 11652, 11665, 5909, 11666, 2002, 11659, 7829, 2]
 // Exports: default
 
-// Module 11662 (transferToXbox)
+// Module 11664 (transferToXbox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11654 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11656 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _transferToXbox() {
           obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _transferToXbox() {
             obj5.stopOwnStream(false);
             closure_130_5.openURL(closure_2);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else {
             c4 = 3;
             const obj17 = {

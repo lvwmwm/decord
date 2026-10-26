@@ -1,9 +1,9 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12088
+// Function ID: 12089
 // Name: SearchBarBottomBorder
 // Dependencies: [19, 21, 4971, 587, 558, 576, 5052, 5247, 5248, 2]
 
-// Module 12086 (SearchBarBottomBorder)
+// Module 12088 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5247 */;

@@ -1,9 +1,9 @@
-// Module ID: 17963
-// Function ID: 17964
+// Module ID: 17962
+// Function ID: 17963
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 4972, 4845, 8823, 1087, 21, 17900, 587, 558, 576, 504, 1417, 4837, 9406, 5669, 6883, 8841, 5663, 1128, 6830, 5234, 5244, 17939, 7150, 2]
+// Dependencies: [32, 5, 19, 17, 4972, 4845, 8823, 1087, 21, 17899, 587, 558, 576, 504, 1417, 4837, 9406, 5669, 6883, 8841, 5663, 1128, 6830, 5234, 5244, 17938, 7150, 2]
 
-// Module 17963 (ICYMIServerRecommendationRow)
+// Module 17962 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;
 import FastestListDefault from "FastestList" /* 7150 */;
 import ClipViewDefault from "ClipView" /* 9406 */;
-import ICYMIShared from "ICYMIShared" /* 17939 */;
+import ICYMIShared from "ICYMIShared" /* 17938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -24,7 +24,7 @@ import GuildStore from "GuildStore" /* 4845 */;
 import ICYMIStore from "ICYMIStore" /* 8823 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17900 */;
+import createICYMIStyles from "createICYMIStyles" /* 17899 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ function FeaturedServer(guild) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ function FeaturedServer(guild) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 try {
@@ -172,7 +172,7 @@ function FeaturedServer(guild) {
                     const obj = c1(c2[19]);
                     const recommendedGuilds = obj.getRecommendedGuilds();
                     c2 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } catch (tmp13) {
                   c2 = 3;
@@ -211,7 +211,7 @@ function FeaturedServer(guild) {
         } else {
           closure_129_1(false);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp37) {
         c3 = 3;

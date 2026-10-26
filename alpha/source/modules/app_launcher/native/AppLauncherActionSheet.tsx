@@ -1,20 +1,20 @@
-// Module ID: 12210
-// Function ID: 12211
+// Module ID: 12212
+// Function ID: 12213
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1504, 21, 558, 576, 5052, 11166, 11167, 11168, 12211, 12056, 5265, 5580, 2]
+// Dependencies: [32, 19, 1504, 21, 558, 576, 5052, 11168, 11169, 11170, 12213, 12058, 5265, 5580, 2]
 
-// Module 12210 (AppLauncherActionSheet)
+// Module 12212 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
 import reactDefault from "react" /* 5580 */;
-import AppLauncherContext from "AppLauncherContext" /* 11166 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11167 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11168 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12056 */;
-import getAppDMApplication from "getAppDMApplication" /* 12211 */;
+import AppLauncherContext from "AppLauncherContext" /* 11168 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11169 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11170 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12058 */;
+import getAppDMApplication from "getAppDMApplication" /* 12213 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

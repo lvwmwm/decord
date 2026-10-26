@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13907
+// Function ID: 13908
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7655, 1993, 21, 587, 4971, 558, 576, 8667, 5039, 11049, 9417, 9403, 9216, 5234, 1128, 6908, 1499, 12, 2]
+// Dependencies: [19, 17, 7655, 1993, 21, 587, 4971, 558, 576, 8667, 5039, 11051, 9417, 9403, 9216, 5234, 1128, 6908, 1499, 12, 2]
 
-// Module 13908 (GiftingSKUCardsGrid)
+// Module 13907 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import NameplateRecord from "NameplateRecord" /* 1993 */;
 import react_native from "react-native" /* 5039 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7655 */;
 import useCurrentUser from "useCurrentUser" /* 8667 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11049 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11051 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -265,7 +265,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
               }
               class P {
                 constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150814 */ }) };
+                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150827 */ }) };
                   return jsx(View, obj, arg1);
                 }
               }
@@ -289,7 +289,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
             const mapped = arr.map(tmp13);
             class P {
               constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150814 */ }) };
+                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150827 */ }) };
                 return jsx(View, obj, arg1);
               }
             }
@@ -304,7 +304,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
       }
       class P {
         constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150814 */ }) };
+          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F150827 */ }) };
           return jsx(View, obj, arg1);
         }
       }

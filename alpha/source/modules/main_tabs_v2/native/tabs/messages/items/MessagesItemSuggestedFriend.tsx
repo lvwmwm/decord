@@ -1,10 +1,10 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17467
+// Function ID: 17468
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4913, 1087, 21, 4971, 587, 11057, 8668, 2002, 573, 1128, 5025, 17469, 17470, 1267, 6908, 1202, 5234, 5244, 5680, 558, 576, 7220, 13873, 2]
+// Dependencies: [32, 19, 17, 4913, 1087, 21, 4971, 587, 11059, 8668, 2002, 573, 1128, 5025, 17468, 17469, 1267, 6908, 1202, 5234, 5244, 5680, 558, 576, 7220, 13872, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 17468 (MessagesItemSuggestedFriend)
+// Module 17467 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,10 +12,10 @@ import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
-import LegendList from "LegendList" /* 13873 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17469 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17470 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
+import LegendList from "LegendList" /* 13872 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17468 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;

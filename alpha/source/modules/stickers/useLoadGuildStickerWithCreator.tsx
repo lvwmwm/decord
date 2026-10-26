@@ -1,9 +1,9 @@
-// Module ID: 19075
-// Function ID: 19076
+// Module ID: 19074
+// Function ID: 19075
 // Name: useLoadGuildStickerWithCreator
 // Dependencies: [5, 32, 19, 1392, 6767, 558, 576, 504, 10155, 2]
 
-// Module 19075 (useLoadGuildStickerWithCreator)
+// Module 19074 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -110,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;
@@ -256,7 +256,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -298,7 +298,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;

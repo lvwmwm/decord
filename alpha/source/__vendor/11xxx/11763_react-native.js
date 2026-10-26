@@ -1,14 +1,16 @@
 // Module ID: 11763
 // Function ID: 11764
 // Name: react-native
-// Dependencies: [11762]
-// Exports: keepLocalCopy
+// Dependencies: [11764]
+// Exports: isKnownType
 
 // Module 11763 (react-native)
-import react_native from "react-native" /* 11762 */;
+import react_native from "react-native" /* 11764 */;
 
 
-export const keepLocalCopy = function keepLocalCopy(arg0) {
+export const isKnownType = function isKnownType(kind) {
+  let value;
+  ({ kind, value } = kind);
   const NativeDocumentPicker = react_native.NativeDocumentPicker;
-  return NativeDocumentPicker.keepLocalCopy(arg0);
+  return NativeDocumentPicker.isKnownType(kind, value);
 };

@@ -1,9 +1,9 @@
-// Module ID: 18831
-// Function ID: 18832
+// Module ID: 18830
+// Function ID: 18831
 // Name: IAPManager
 // Dependencies: [7214, 2]
 
-// Module 18831 (IAPManager)
+// Module 18830 (IAPManager)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 

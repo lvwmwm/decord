@@ -1,9 +1,9 @@
-// Module ID: 19180
-// Function ID: 19181
+// Module ID: 19179
+// Function ID: 19180
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 9006, 4877, 8406, 1087, 21, 558, 576, 5252, 587, 504, 4908, 9005, 1099, 19122, 19169, 19168, 1128, 5234, 5669, 7295, 19178, 6987, 5977, 2067, 19166, 2]
+// Dependencies: [32, 19, 17, 9006, 4877, 8406, 1087, 21, 558, 576, 5252, 587, 504, 4908, 9005, 1099, 19121, 19168, 19167, 1128, 5234, 5669, 7295, 19177, 6987, 5977, 2067, 19165, 2]
 
-// Module 19180 (FinishingTouchesScreen)
+// Module 19179 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
@@ -159,8 +159,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     } else {
       tmp28 = cResult[7];
     }
-    const tmp29 = defaultMessageNotifications(19169)();
-    const tmpResult2 = tmp(19168);
+    const tmp29 = defaultMessageNotifications(19168)();
+    const tmpResult2 = tmp(19167);
     const enableCommunitySharedStyles = tmpResult2.useEnableCommunitySharedStyles();
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -381,8 +381,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                               }
                             }
                           }
-                          const obj15 = { headerRef: ref, currentStep: tmp(19166).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
-                          const EnableCommunityModalScreen = tmp(19166).EnableCommunityModalScreen;
+                          const obj15 = { headerRef: ref, currentStep: tmp(19165).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
+                          const EnableCommunityModalScreen = tmp(19165).EnableCommunityModalScreen;
                           items1 = [tmp50, tmp84, tmp91];
                           const tmp96 = closure_16(EnableCommunityModalScreen, obj15);
                           cResult[54] = tmp50;
@@ -411,7 +411,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                     tmp74 = tmp76;
                   }
                   const obj18 = { formSwitchDisabled: first1, children: tmp68 };
-                  const tmp73 = closure_15(defaultMessageNotifications(19178), obj18);
+                  const tmp73 = closure_15(defaultMessageNotifications(19177), obj18);
                   cResult[37] = first1;
                   cResult[38] = tmp68;
                   cResult[39] = tmp73;
@@ -425,7 +425,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                 tmp68 = tmp70;
               }
               const obj20 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: tmp60 };
-              const tmp65 = closure_15(defaultMessageNotifications(19178), obj20);
+              const tmp65 = closure_15(defaultMessageNotifications(19177), obj20);
               cResult[30] = defaultMessageNotifications === ONLY_MENTIONS;
               cResult[31] = tmp60;
               cResult[32] = tmp65;
@@ -542,7 +542,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f139514 = (item) => {
+  const f139522 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
@@ -562,8 +562,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f139514)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f139514)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f139522)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f139522)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -632,11 +632,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       }
     }
   }, []);
-  const tmp20 = tmp4(19169)();
-  const tmp2Result = guild(19168);
+  const tmp20 = tmp4(19168)();
+  const tmp2Result = guild(19167);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(19166).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1128).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(19166).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(19165).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1128).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(19165).EnableCommunityModalScreen;
   intl = tmp2(1128).intl;
   const obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1128).t.tInpJj, { number: 3, total: 3 }) };
@@ -659,7 +659,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   const TableRowGroup = tmp2(6987).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_15(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1128).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(19178);
+  const tmp4Result = tmp4(19177);
   TableSwitchRow = tmp2(7295).TableSwitchRow;
   intl5 = tmp2(1128).intl;
   prop2 = undefined;
@@ -675,7 +675,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   items4 = [closure_15(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_15(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1128).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(19178);
+  const tmp4Result4 = tmp4(19177);
   TableSwitchRow2 = tmp2(7295).TableSwitchRow;
   intl6 = tmp2(1128).intl;
   obj17 = {

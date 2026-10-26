@@ -1,27 +1,47 @@
 // Module ID: 15564
 // Function ID: 15565
-// Dependencies: [15549, 15545, 15565]
+// Dependencies: [15544, 15565]
 
 // Module 15564
-import _mod15545 from "module_15545" /* 15545 */;
-import _mod15549 from "module_15549" /* 15549 */;
+import _mod15544 from "module_15544" /* 15544 */;
+import _mod15565 from "module_15565" /* 15565 */;
 
-const prop = Object.getOwnPropertySymbols && !_mod15549(() => {
-  const SymbolResult = Symbol("symbol detection");
-  const obj = _mod15545;
-  const StringResult = obj.String(SymbolResult);
-  let tmp5 = !StringResult;
-  if (StringResult) {
-    const _Object = Object;
-    const _Symbol = Symbol;
-    tmp5 = !(Object(SymbolResult) instanceof Symbol);
+let tmp4;
+let tmp = _mod15544.process && _mod15544.process.versions;
+if (!tmp) {
+  tmp = _mod15544.Deno && _mod15544.Deno.version;
+  _mod15544.Deno && _mod15544.Deno.version;
+}
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
   }
-  if (!tmp5) {
-    const _Symbol2 = Symbol;
-    tmp5 = !Symbol.sham && tmp2(15565) && tmp2(15565) < 41;
-    const tmp6 = !Symbol.sham && tmp2(15565) && tmp2(15565) < 41;
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod15565;
+if (match1) {
+  const str3 = _mod15565;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
   }
-  return tmp5;
-});
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod15565;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
 
-export default prop;
+export default tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11844
+// Function ID: 11845
 // Name: conjureLinkedApps
 // Dependencies: [5, 3830, 1128, 10794, 2]
 // Exports: fetchLinkedAppCallers, linkConjureApp, linkedAppBuildDescription, linkedAppBuildLabel, unlinkConjureApp
 
-// Module 11842 (conjureLinkedApps)
+// Module 11844 (conjureLinkedApps)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
@@ -30,7 +30,7 @@ let obj = function _fetchLinkedAppCallers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _linkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ obj = function _linkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -182,7 +182,7 @@ obj = function _unlinkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -215,7 +215,7 @@ obj = function _unlinkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;

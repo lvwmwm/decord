@@ -1,9 +1,9 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11672
+// Function ID: 11673
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 6642, 502, 5718, 21, 4971, 587, 558, 576, 1202, 5669, 11671, 11672, 8951, 504, 11673, 1128, 1384, 11620, 9153, 9160, 11591, 11674, 11641, 11675, 11676, 2]
+// Dependencies: [19, 17, 6642, 502, 5718, 21, 4971, 587, 558, 576, 1202, 5669, 11673, 11674, 8951, 504, 11675, 1128, 1384, 11622, 9153, 9160, 11593, 11676, 11643, 11677, 11678, 2]
 
-// Module 11670 (FocusedExpandedControls)
+// Module 11672 (FocusedExpandedControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,13 +16,13 @@ import Constants from "Constants" /* 5718 */;
 import Form from "Form" /* 8951 */;
 import CallsUtils from "CallsUtils" /* 9153 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 9160 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11591 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11620 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11641 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11671 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11672 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11673 */;
-import useDeafStatesDefault from "useDeafStates" /* 11674 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11593 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11622 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11643 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11673 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11674 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11675 */;
+import useDeafStatesDefault from "useDeafStates" /* 11676 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -572,7 +572,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeafenButton
     tmp7 = cResult[1];
   }
   const onPress = tmp7.onPress;
-  const tmp5Result = tmp5(tmp7.deaf ? 11675 : 11676);
+  const tmp5Result = tmp5(tmp7.deaf ? 11677 : 11678);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.wjcRFX);
@@ -606,7 +606,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeafenButton
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 11675 : 11676), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 11677 : 11678), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1128).intl;
   return metroImportDefault(closure_12, obj2);
 });

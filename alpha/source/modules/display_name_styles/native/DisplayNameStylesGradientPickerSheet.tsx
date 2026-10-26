@@ -1,15 +1,15 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16706
+// Function ID: 16707
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 16708, 558, 576, 10664, 1409, 16703, 5212, 1267, 5210, 15842, 5265, 1128, 5244, 16699, 1105, 5258, 16709, 12, 6908, 6919, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 16707, 558, 576, 10664, 1409, 16702, 5212, 1267, 5210, 15841, 5265, 1128, 5244, 16698, 1105, 5258, 16708, 12, 6908, 6919, 2]
 
-// Module 16707 (DisplayNameStylesGradientPickerSheet)
+// Module 16706 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import HapticUtils from "HapticUtils" /* 5212 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16708 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 16707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -115,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F162975 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F162992 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -140,7 +140,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F162975 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F162992 */ }));
                         },
               actionButtonVariant: "primary"
             };

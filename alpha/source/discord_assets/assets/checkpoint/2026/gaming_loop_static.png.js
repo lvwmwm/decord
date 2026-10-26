@@ -1,8 +1,8 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13014
+// Function ID: 13015
 // Dependencies: [2]
 
-// Module 13015
+// Module 13014
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/gaming_loop_static.png.js");

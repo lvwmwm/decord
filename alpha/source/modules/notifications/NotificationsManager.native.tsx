@@ -1,24 +1,24 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18912
+// Function ID: 18913
 // Name: NotificationsManager
-// Dependencies: [5, 4905, 502, 4823, 6704, 13310, 1087, 7868, 13311, 5210, 18914, 2002, 1275, 2049, 7891, 13313, 13750, 1267, 1384, 7214, 16840, 1107, 2]
+// Dependencies: [5, 4905, 502, 4823, 6704, 13309, 1087, 7868, 13310, 5210, 18913, 2002, 1275, 2049, 7891, 13312, 13749, 1267, 1384, 7214, 16839, 1107, 2]
 
-// Module 18913 (NotificationsManager)
+// Module 18912 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
 import react_nativeDefault from "react-native" /* 7891 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13310 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13313 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13309 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13311 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13310 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let obj = function _shouldShowPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _shouldShowReactivationPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(18914, dependencyMap.paths);
+    const tmp3 = asyncRequire(18913, dependencyMap.paths);
     openLazy(tmp3, syncedClientThemes, obj2);
   }, arg2);
 }
@@ -202,7 +202,7 @@ obj = function _logNotificationPermissionStatus2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ obj = function _logNotificationPermissionStatus2() {
           }
           track(NOTIFICATION_PERMISSION_STATUS, obj7);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -302,7 +302,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp7) {
           c2 = 3;
@@ -371,7 +371,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -392,7 +392,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
             } else {
               let tmp5;
@@ -422,7 +422,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -466,7 +466,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -485,7 +485,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
             } else {
               let tmp5;
@@ -516,7 +516,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else if (2 === c4) {
                 if (arg0 === 1) {
@@ -561,63 +561,97 @@ class NotificationsManager extends AutomaticLifecycleManager {
       return closure_0(...arguments);
     };
     _asyncToGenerator(async (arg0) => {
-      let closure_1;
-      let closure_2;
       let constants2;
       let constants3;
       let relationship = arg0;
       let c3 = 0;
       let c4 = 0;
       const iter = (async (arg0, value) => {
-        let tmp5;
-        if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            tmp5 = relationship.type === constants2.PENDING_OUTGOING;
-            if (tmp5) {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
-              return obj5;
-            }
-          }
-        } else if (2 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            tmp5 = value;
-            if (!tmp5) {
-              c3 = 3;
-              c4 = 1;
-              const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
-              return obj7;
-            }
-          }
-        } else if (arg0 === 1) {
+        if (c4 === 2) {
           c4 = 3;
-          throw value;
-        } else {
-          tmp5 = value;
-          if (arg0 === 2) {
-            c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
             return { value, done: true };
+          } else {
+            return { value: "IconComponent", done: "+352" };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = tmp4;
+                closure_1 = tmp;
+                relationship = undefined;
+                relationship = relationship.relationship;
+                c3 = 1;
+                c4 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else {
+              let tmp5;
+              if (1 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                } else {
+                  tmp5 = relationship.type === constants2.PENDING_OUTGOING;
+                  if (tmp5) {
+                    c3 = 2;
+                    c4 = 1;
+                    const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
+                    return obj5;
+                  }
+                }
+              } else if (2 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                } else {
+                  tmp5 = value;
+                  if (!tmp5) {
+                    c3 = 3;
+                    c4 = 1;
+                    const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
+                    return obj7;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else {
+                tmp5 = value;
+                if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                }
+              }
+              if (tmp5) {
+                closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
+              }
+              c4 = 3;
+              return { value: "IconComponent", done: "+352" };
+            }
+          } catch (tmp18) {
+            c4 = 3;
+            throw tmp18;
           }
         }
-        if (tmp5) {
-          closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
-        }
-        await "IconComponent";
-        relationship = relationship.relationship;
-        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -637,7 +671,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -659,7 +693,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === c3) {
@@ -701,7 +735,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
             if (state === closure_0(closure_2[21]).AppStates.ACTIVE) {
               c3 = 3;
@@ -732,7 +766,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -766,7 +800,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             obj = tmp(c2[15]);
             const result = obj.updateNotificationAuthorizationStatus(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp13) {
           c3 = 3;

@@ -1,7 +1,7 @@
 // Module ID: 12498
 // Function ID: 12499
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6773, 558, 576, 504, 10806, 10807, 1128, 3830, 11845, 2]
+// Dependencies: [5, 32, 19, 6773, 558, 576, 504, 10806, 10807, 1128, 3830, 11847, 2]
 
 // Module 12498 (useConjurePublishScheduleProposal)
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
       const formatToPlainString = tmp19.formatToPlainString;
       let obj4 = { time: tmpResult2.formatPublishScheduleTime(trigger.next_run_at) };
       const orZDqY = _modDef3830.orZDqY;
-      tmpResult2 = tmp(11845);
+      tmpResult2 = tmp(11847);
       formatToPlainStringResult = formatToPlainString(orZDqY, obj4);
     }
     cResult[8] = trigger.next_run_at;
@@ -169,7 +169,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp35) {
         if (0 === c3) {
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -328,7 +328,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -347,12 +347,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
     const orZDqY = _modDef3830.orZDqY;
-    tmpResult = tmp(11845);
+    tmpResult = tmp(11847);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(11845);
+  tmpResult2 = tmp(11847);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

@@ -1,9 +1,9 @@
-// Module ID: 17635
-// Function ID: 17636
+// Module ID: 17634
+// Function ID: 17635
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4830, 21, 4971, 587, 558, 576, 1202, 13741, 1128, 7248, 17525, 8951, 10861, 7298, 2]
+// Dependencies: [19, 17, 4830, 21, 4971, 587, 558, 576, 1202, 13740, 1128, 7248, 17524, 8951, 10863, 7298, 2]
 
-// Module 17635 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 17634 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import ChannelConstants from "ChannelConstants" /* 4830 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
 import ActionSheet2 from "ActionSheet" /* 7298 */;
 import Form from "Form" /* 8951 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10861 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13741 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17525 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10863 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13740 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17524 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(13741) };
+    const obj2 = { disableColor: true, source: onClose(13740) };
     const Icon = tmp(1202).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(17525) };
+    const obj5 = { source: onClose(17524) };
     const Icon2 = tmp(1202).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;

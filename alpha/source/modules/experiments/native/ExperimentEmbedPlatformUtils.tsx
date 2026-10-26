@@ -1,7 +1,7 @@
 // Module ID: 12751
 // Function ID: 12752
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [5210, 12752, 2002, 11216, 11217, 8485, 5195, 2]
+// Dependencies: [5210, 12752, 2002, 11218, 11219, 8485, 5195, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
 // Module 12751 (ExperimentEmbedPlatformUtils)
@@ -9,8 +9,8 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ExperimentManager from "ExperimentManager" /* 5195 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8485 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11216 */;
-import useApexExperiments from "useApexExperiments" /* 11217 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11218 */;
+import useApexExperiments from "useApexExperiments" /* 11219 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");

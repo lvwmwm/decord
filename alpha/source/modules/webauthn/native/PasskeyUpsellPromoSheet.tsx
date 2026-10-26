@@ -1,15 +1,15 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17046
+// Function ID: 17047
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1087, 4820, 21, 558, 576, 5669, 17048, 17049, 17046, 7042, 7490, 1128, 1384, 5244, 10853, 6696, 2]
+// Dependencies: [19, 1087, 4820, 21, 558, 576, 5669, 17047, 17048, 17045, 7042, 7490, 1128, 1384, 5244, 10855, 6696, 2]
 
-// Module 17047 (PasskeyUpsellPromoSheet)
+// Module 17046 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7042 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17046 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17049 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17045 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17048 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(17048), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(17047), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = FastImageDefault;
     const tmp8 = closure_6(tmp7, obj2);
     cResult[0] = tmp8;
@@ -142,7 +142,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { illustration: first, title: tmp11, description: tmp12, onDismiss: tmp13, actions: closure_7(ButtonGroup, obj5) };
-    const PromoSheet = tmp(10853).PromoSheet;
+    const PromoSheet = tmp(10855).PromoSheet;
     obj5 = { children: items };
     items = [tmp17, ];
     ButtonGroup = tmp(6696).ButtonGroup;

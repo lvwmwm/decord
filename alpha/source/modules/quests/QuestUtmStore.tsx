@@ -11,9 +11,9 @@ let obj = module_570.create((arg0) => {
   const state = arg0;
   obj = {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "toCharArray$esjava$1",
-    utmCampaignCurrent: "has",
-    utmContentCurrent: "data",
+    utmMediumCurrent: "emoji",
+    utmCampaignCurrent: "pos",
+    utmContentCurrent: "toCharArray$esjava$1",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
       return state(obj);

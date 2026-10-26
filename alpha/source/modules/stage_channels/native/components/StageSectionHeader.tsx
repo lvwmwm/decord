@@ -1,9 +1,9 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11707
+// Function ID: 11708
 // Name: StageSectionHeader
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5052, 5206, 5234, 1202, 7249, 2]
 
-// Module 11705 (StageSectionHeader)
+// Module 11707 (StageSectionHeader)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;

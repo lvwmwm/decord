@@ -1,10 +1,10 @@
-// Module ID: 13865
-// Function ID: 13866
+// Module ID: 13864
+// Function ID: 13865
 // Name: frameRunsInBackground
 // Dependencies: [6776, 2]
 // Exports: default
 
-// Module 13865 (frameRunsInBackground)
+// Module 13864 (frameRunsInBackground)
 import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
 

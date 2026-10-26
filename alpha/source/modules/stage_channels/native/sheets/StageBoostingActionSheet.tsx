@@ -1,7 +1,7 @@
 // Module ID: 6693
 // Function ID: 6694
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 4972, 4845, 4903, 6637, 1087, 1394, 21, 504, 4831, 1128, 5210, 1267, 6694, 6688, 5263, 6696, 5244, 6697, 10853, 14941, 5669, 14945, 2]
+// Dependencies: [19, 4972, 4845, 4903, 6637, 1087, 1394, 21, 504, 4831, 1128, 5210, 1267, 6694, 6688, 5263, 6696, 5244, 6697, 10855, 14940, 5669, 14944, 2]
 // Exports: default
 
 // Module 6693 (StageBoostingActionSheet)
@@ -177,11 +177,11 @@ export default function StageBoostingActionSheet(channel) {
       tmp21Result = tmp21(Button, obj7);
     }
     const obj8 = { title: string3Result1, description: stringResult, illustration: tmp21Result2, actions: tmp21Result };
-    const PromoSheet = tmp(10853).PromoSheet;
+    const PromoSheet = tmp(10855).PromoSheet;
     if (tmp9) {
-      tmp21Result2 = tmp21(tmp(14941).HoldingGemSpotIllustration, { accessible: false });
+      tmp21Result2 = tmp21(tmp(14940).HoldingGemSpotIllustration, { accessible: false });
     } else {
-      const obj9 = { source: stateFromStores2(14945) };
+      const obj9 = { source: stateFromStores2(14944) };
       const tmp19Result = stateFromStores2(5669);
       tmp21Result2 = tmp21(tmp19Result, obj9);
     }

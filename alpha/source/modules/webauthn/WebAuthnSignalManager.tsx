@@ -1,9 +1,9 @@
-// Module ID: 19382
-// Function ID: 19383
+// Module ID: 19381
+// Function ID: 19382
 // Name: WebAuthnSignalManager
 // Dependencies: [5, 502, 7214, 6678, 2]
 
-// Module 19382 (WebAuthnSignalManager)
+// Module 19381 (WebAuthnSignalManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
@@ -31,7 +31,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             credential = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp7) {
           credential = 3;
@@ -84,7 +84,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             credentials = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp9) {
           credentials = 3;
@@ -137,7 +137,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ class WebAuthnSignalManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             user = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp7) {
           user = 3;

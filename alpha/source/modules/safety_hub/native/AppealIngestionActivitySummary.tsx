@@ -1,13 +1,13 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12842
+// Function ID: 12843
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4971, 558, 576, 12844, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 12843, 2]
 
-// Module 12843 (AppealIngestionActivitySummary)
+// Module 12842 (AppealIngestionActivitySummary)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12844 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12843 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

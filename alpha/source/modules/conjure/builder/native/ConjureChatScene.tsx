@@ -1,10 +1,10 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 11860
+// Function ID: 11861
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2045, 10698, 11859, 10721, 6773, 10714, 6776, 21, 4971, 587, 1505, 1633, 11861, 1647, 5052, 504, 6809, 11865, 10795, 11871, 11743, 11868, 10720, 5623, 11872, 10742, 11873, 11874, 10762, 1128, 3830, 11880, 11077, 11881, 1499, 8901, 11882, 12253, 5210, 11800, 10696, 12255, 5663, 12259, 12261, 5662, 11877, 12263, 12265, 12283, 10728, 11885, 10765, 12284, 10723, 11795, 11876, 9804, 12287, 7488, 12296, 11785, 12298, 6924, 11857, 12299, 9761, 9644, 5234, 5244, 12301, 11823, 12302, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 2045, 10698, 11861, 10721, 6773, 10714, 6776, 21, 4971, 587, 1505, 1633, 11863, 1647, 5052, 504, 6809, 11867, 10795, 11873, 11745, 11870, 10720, 5623, 11874, 10742, 11875, 11876, 10762, 1128, 3830, 11882, 11079, 11883, 1499, 8901, 11884, 12255, 5210, 11802, 10696, 12257, 5663, 12261, 12263, 5662, 11879, 12265, 12267, 12285, 10728, 11887, 10765, 12286, 10723, 11797, 11878, 9804, 12289, 7488, 12298, 11787, 12300, 6924, 11859, 12301, 9761, 9644, 5234, 5244, 12303, 11825, 12304, 558, 576, 2]
 // Exports: default
 
-// Module 11858 (ConjureChatScene)
+// Module 11860 (ConjureChatScene)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -20,22 +20,22 @@ import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
 import restartFrames from "restartFrames" /* 10765 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11743 */;
-import conjureProjectActions2 from "conjureProjectActions" /* 11785 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11800 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11874 */;
-import conjurePublishAction from "conjurePublishAction" /* 11876 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 11880 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12255 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12265 */;
-import BugIcon from "BugIcon" /* 12296 */;
-import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12298 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11745 */;
+import conjureProjectActions2 from "conjureProjectActions" /* 11787 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11802 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11876 */;
+import conjurePublishAction from "conjurePublishAction" /* 11878 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 11882 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12257 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12267 */;
+import BugIcon from "BugIcon" /* 12298 */;
+import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12300 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11859 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11861 */;
 import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10721 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
@@ -48,7 +48,7 @@ const ConjureRemixSheetDefault = ConjureRemixSheet;
 const ConjureSettingsSheetDefault = ConjureSettingsSheet;
 const ConjureConnectToolSheetDefault = ConjureConnectToolSheet;
 const ConjureHistorySheetDefault = ConjureHistorySheet;
-let c1, c3, c4, c6, navigation;
+let c3, c4, c6, c7, closure_4, navigation;
 
 let closure_12;
 let closure_18;
@@ -59,7 +59,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ExperimentalDirectSelectIcon2 = tmp(12299);
+const ExperimentalDirectSelectIcon2 = tmp(12301);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Keyboard: metroImportDefault, View: metroImportAll } = react_native);
@@ -109,7 +109,6 @@ export default function ConjureChatScene(guildId) {
   let _undefined;
   let closure_23;
   let closure_24;
-  let closure_4;
   let closure_5;
   let first;
   let fn;
@@ -403,7 +402,7 @@ export default function ConjureChatScene(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -467,7 +466,7 @@ export default function ConjureChatScene(guildId) {
           let result = openConjureAppInstallModal(obj6);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         c4 = 3;
         throw tmp15;
@@ -787,7 +786,6 @@ export default function ConjureChatScene(guildId) {
   const useCallback = obj2.useCallback;
   let closure_0 = tmp39(function*(arg0, value) {
     let Z4n6LX;
-    let closure_3;
     let formatToPlainString;
     let intl2;
     let obj13;
@@ -796,99 +794,147 @@ export default function ConjureChatScene(guildId) {
     let obj7;
     closure_0 = arg0;
     let closure_1 = value;
-    if (1 === c6) {
-      if (arg0 === 1) {
-        let c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c7 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else if (!ref.current) {
-        ref.current = true;
-        const obj6 = { text: intl2.string(projectId(navigation[34]).qqlUiW), icon: closure_0(navigation[47]).UndoIcon };
-        const open = projectId(navigation[46]).open;
-        const tmp40 = projectId(navigation[46]);
-        intl2 = closure_0(navigation[33]).intl;
-        open("CONJURE_VERSION_RESTORING", obj6);
-        let c5 = 2;
-        c6 = 4;
-        c7 = 1;
-        const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
-        obj7 = closure_0(navigation[48]);
-        return obj8;
-      }
-    } else if (2 === c6) {
-      c5 = 0;
-      ref.current = false;
-      throw closure_4;
-    } else if (3 === c6) {
-      const presentError = closure_0(navigation[49]).presentError;
-      const tmp23 = closure_0(navigation[49]);
-      const intl = closure_0(navigation[33]).intl;
-      presentError(intl.string(projectId(navigation[34])["PSdo+w"]));
-      c5 = 0;
-      ref.current = false;
+    if (c7 === 2) {
       c7 = 3;
-      const obj9 = { value: undefined, done: true };
-      return obj9;
-    } else {
-      if (4 === c6) {
-        if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          ref.current = false;
-          c7 = 3;
-          const obj10 = { value, done: true };
-          return obj10;
-        } else {
-          c5 = 1;
-          const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[47]).UndoIcon };
-          const open2 = projectId(navigation[46]).open;
-          const tmp73 = projectId(navigation[46]);
-          const intl3 = closure_0(navigation[33]).intl;
-          formatToPlainString = intl3.formatToPlainString;
-          obj13 = { title: obj15.versionTitle(closure_0.subject).short };
-          Z4n6LX = projectId(navigation[34]).Z4n6LX;
-          obj15 = closure_0(navigation[50]);
-          open2("CONJURE_VERSION_RESTORED", obj11);
-          if (null != c1) {
-            c6 = 5;
-            c7 = 1;
-            const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
-            obj2 = closure_0(navigation[51]);
-            return obj14;
-          }
-        }
-      } else if (arg0 === 1) {
-        c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c5 = 0;
-        ref.current = false;
-        c7 = 3;
-        const obj = { value, done: true };
-        return obj;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
-        let closure_2 = value;
-        if (null != closure_2) {
-          const obj12 = closure_0(navigation[49]);
-          obj12.presentError(closure_2);
+        return { value: "IconComponent", done: "+352" };
+      }
+    } else {
+      let c5;
+      try {
+        let closure_2;
+        let c1;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_3 = tmp;
+            closure_2 = tmp4;
+            c1 = undefined;
+            let tmp55 = closure_1;
+            if (closure_1 === undefined) {
+              tmp55 = null;
+            }
+            c1 = tmp55;
+            closure_2 = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else if (!ref.current) {
+              ref.current = true;
+              const obj6 = { text: intl2.string(projectId(navigation[34]).qqlUiW), icon: closure_0(navigation[47]).UndoIcon };
+              const open = projectId(navigation[46]).open;
+              const tmp40 = projectId(navigation[46]);
+              intl2 = closure_0(navigation[33]).intl;
+              open("CONJURE_VERSION_RESTORING", obj6);
+              c5 = 2;
+              c6 = 4;
+              c7 = 1;
+              const obj8 = { value: obj7.restoreSourceHistoryEntry(closure_1, closure_0.sha), done: false };
+              obj7 = closure_0(navigation[48]);
+              return obj8;
+            }
+          } else if (2 === c6) {
+            c5 = 0;
+            ref.current = false;
+            throw closure_4;
+          } else if (3 === c6) {
+            const presentError = closure_0(navigation[49]).presentError;
+            const tmp23 = closure_0(navigation[49]);
+            const intl = closure_0(navigation[33]).intl;
+            presentError(intl.string(projectId(navigation[34])["PSdo+w"]));
+            c5 = 0;
+            ref.current = false;
+            c7 = 3;
+            const obj9 = { value: undefined, done: true };
+            return obj9;
+          } else {
+            if (4 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                ref.current = false;
+                c7 = 3;
+                const obj10 = { value, done: true };
+                return obj10;
+              } else {
+                c5 = 1;
+                const obj11 = { text: formatToPlainString(Z4n6LX, obj13), icon: closure_0(navigation[47]).UndoIcon };
+                const open2 = projectId(navigation[46]).open;
+                const tmp73 = projectId(navigation[46]);
+                const intl3 = closure_0(navigation[33]).intl;
+                formatToPlainString = intl3.formatToPlainString;
+                obj13 = { title: obj15.versionTitle(closure_0.subject).short };
+                Z4n6LX = projectId(navigation[34]).Z4n6LX;
+                obj15 = closure_0(navigation[50]);
+                open2("CONJURE_VERSION_RESTORED", obj11);
+                if (null != c1) {
+                  c6 = 5;
+                  c7 = 1;
+                  const obj14 = { value: obj2.rewindDataAfterVersionRestore(closure_1, c1), done: false };
+                  obj2 = closure_0(navigation[51]);
+                  return obj14;
+                }
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              ref.current = false;
+              c7 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_2 = value;
+              if (null != closure_2) {
+                const obj12 = closure_0(navigation[49]);
+                obj12.presentError(closure_2);
+              }
+            }
+            c5 = 0;
+            ref.current = false;
+          }
+          c7 = 3;
+          return { value: "IconComponent", done: "+352" };
+        }
+      } catch (tmp56) {
+        closure_4 = tmp56;
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp56;
+        } else if (1 === tmp58) {
+          c6 = 2;
+        } else {
+          c6 = 3;
         }
       }
-      c5 = 0;
-      ref.current = false;
     }
-    yield "IconComponent";
-    closure_2 = tmp4;
-    let tmp55 = closure_1;
-    if (closure_1 === undefined) {
-      tmp55 = null;
-    }
-    c1 = tmp55;
-    return "Reflect";
   });
   const items25 = [projectId];
   callback6 = useCallback(function() {

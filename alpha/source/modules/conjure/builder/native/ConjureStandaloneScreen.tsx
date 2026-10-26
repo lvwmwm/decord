@@ -1,14 +1,14 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11744
+// Function ID: 11745
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4883, 4845, 4903, 7321, 1087, 21, 558, 576, 1505, 11743, 504, 6808, 10720, 6924, 1128, 3830, 11744, 11858, 12538, 7095, 11882, 2]
+// Dependencies: [32, 19, 4883, 4845, 4903, 7321, 1087, 21, 558, 576, 1505, 11745, 504, 6808, 10720, 6924, 1128, 3830, 11746, 11860, 12538, 7095, 11884, 2]
 
-// Module 11742 (ConjureStandaloneScreen)
+// Module 11744 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1087 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11743 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11744 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11858 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11745 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 11746 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11860 */;
 import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 18001
-// Function ID: 18002
+// Module ID: 18000
+// Function ID: 18001
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 5234, 1633, 16584, 2049, 5265, 1128, 1202, 17994, 6672, 18002, 2002, 5210, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 5234, 1633, 16583, 2049, 5265, 1128, 1202, 17993, 6672, 18001, 2002, 5210, 2]
 // Exports: default
 
-// Module 18001 (ChangeSubscriptionCard)
+// Module 18000 (ChangeSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,7 +14,7 @@ import _modDef2049 from "module_2049" /* 2049 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,12 +90,12 @@ export default function ChangeSubscriptionCard(activeSubscription) {
       onPress: function handleCancelSubscription() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { subscriptionId: activeSubscription.id };
-          obj.pushLazy(asyncRequire(18002, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(18001, dependencyMap.paths), obj2);
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
         }
     };
-    const ArrowButton = tmp7(17994).ArrowButton;
+    const ArrowButton = tmp7(17993).ArrowButton;
     intl4 = tmp7(1128).intl;
     items3[1] = closure_7(ArrowButton, obj11);
     tmp8Result = tmp8(closure_9, obj10);

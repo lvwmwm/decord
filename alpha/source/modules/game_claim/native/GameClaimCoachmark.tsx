@@ -1,18 +1,18 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17618
+// Function ID: 17619
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1087, 4820, 21, 587, 17620, 11057, 5250, 4971, 558, 576, 17621, 1128, 14385, 6931, 6908, 5234, 8092, 5244, 7429, 7433, 6905, 2]
+// Dependencies: [5, 19, 17, 1087, 4820, 21, 587, 17619, 11059, 5250, 4971, 558, 576, 17620, 1128, 14384, 6931, 6908, 5234, 8092, 5244, 7429, 7433, 6905, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 17619 (GameClaimCoachmark)
+// Module 17618 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import ButtonConstants from "ButtonConstants" /* 5250 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14385 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 17620 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17621 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14384 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 17619 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17620 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
@@ -41,7 +41,7 @@ const Card_Card = tmp2(6905);
 const Pressables = tmp2(6908);
 const XSmallIcon = tmp2(6931);
 const LinkExternalSmallIcon = tmp2(8092);
-const GameClaimCardStackDefault = tmp8(17620);
+const GameClaimCardStackDefault = tmp8(17619);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -70,7 +70,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(36);
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
-  let obj2 = markAsDismissed(17621);
+  let obj2 = markAsDismissed(17620);
   let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
@@ -208,7 +208,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                   const obj3 = { value, done: true };
                                   return obj3;
                                 } else {
-                                  return { value: "IconComponent", done: null };
+                                  return { value: "IconComponent", done: "+352" };
                                 }
                               } else {
                                 try {
@@ -238,7 +238,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                     return obj;
                                   } else {
                                     markAsDismissed = 3;
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "+352" };
                                   }
                                 } catch (tmp11) {
                                   markAsDismissed = 3;
@@ -401,7 +401,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -431,7 +431,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp11) {
               c0 = 3;

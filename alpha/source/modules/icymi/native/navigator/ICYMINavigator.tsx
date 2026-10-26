@@ -1,9 +1,9 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17896
+// Function ID: 17897
 // Name: ICYMINavigator
-// Dependencies: [21, 9743, 558, 576, 7095, 17898, 17848, 2]
+// Dependencies: [21, 9743, 558, 576, 7095, 17897, 17847, 2]
 
-// Module 17897 (ICYMINavigator)
+// Module 17896 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9743 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

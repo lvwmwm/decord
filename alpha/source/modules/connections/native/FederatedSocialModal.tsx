@@ -1,9 +1,9 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14102
+// Function ID: 14103
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1087, 21, 4971, 6502, 1128, 7274, 5660, 14104, 7221, 5234, 7007, 1202, 5244, 558, 576, 6924, 7095, 2]
+// Dependencies: [5, 32, 19, 1087, 21, 4971, 6502, 1128, 7274, 5660, 14103, 7221, 5234, 7007, 1202, 5244, 558, 576, 6924, 7095, 2]
 
-// Module 14103 (FederatedSocialModal)
+// Module 14102 (FederatedSocialModal)
 import Constants from "Constants" /* 1087 */;
 import PlatformsDefault from "Platforms" /* 6502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

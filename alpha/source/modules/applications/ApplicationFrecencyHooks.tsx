@@ -1,9 +1,9 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 12112
+// Function ID: 12113
 // Name: ApplicationFrecencyHooks
 // Dependencies: [19, 9651, 1097, 558, 576, 4804, 504, 11, 7630, 2]
 
-// Module 12110 (ApplicationFrecencyHooks)
+// Module 12112 (ApplicationFrecencyHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import react_mod from "react" /* 19 */;

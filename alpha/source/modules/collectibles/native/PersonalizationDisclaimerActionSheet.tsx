@@ -1,9 +1,9 @@
-// Module ID: 17232
-// Function ID: 17233
+// Module ID: 17231
+// Function ID: 17232
 // Name: PersonalizationDisclaimerActionSheet
 // Dependencies: [19, 1087, 21, 4971, 587, 558, 576, 5660, 2067, 1128, 5234, 5244, 8092, 6696, 5210, 5265, 2]
 
-// Module 17232 (PersonalizationDisclaimerActionSheet)
+// Module 17231 (PersonalizationDisclaimerActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

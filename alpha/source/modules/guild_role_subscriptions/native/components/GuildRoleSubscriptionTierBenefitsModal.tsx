@@ -1,9 +1,9 @@
-// Module ID: 19291
-// Function ID: 19292
+// Module ID: 19290
+// Function ID: 19291
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 16585, 19279, 16562, 21, 4971, 587, 558, 576, 11154, 5234, 9041, 1128, 1417, 5669, 19292, 15145, 16589, 38, 19275, 7295, 9044, 19293, 19294, 19296, 16569, 19271, 16584, 19297, 19298, 19306, 16588, 19307, 19281, 2]
+// Dependencies: [32, 19, 17, 16584, 19278, 16561, 21, 4971, 587, 558, 576, 11156, 5234, 9041, 1128, 1417, 5669, 19291, 15144, 16588, 38, 19274, 7295, 9044, 19292, 19293, 19295, 16568, 19270, 16583, 19296, 19297, 19305, 16587, 19306, 19280, 2]
 
-// Module 19291 (GuildRoleSubscriptionTierBenefitsModal)
+// Module 19290 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,19 +12,19 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 11154 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16585 */;
-import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 19271 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19279 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19281 */;
-import EmojiAliasDefault from "EmojiAlias" /* 19292 */;
-import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 19297 */;
-import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 19298 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 11156 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16583 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16584 */;
+import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 19270 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19278 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19280 */;
+import EmojiAliasDefault from "EmojiAlias" /* 19291 */;
+import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 19296 */;
+import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 19297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16561 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ let obj6;
 let obj7;
 let tmp10;
 let unpackModuleId;
-const AllChannelsSwitchDefault = tmp10(19307);
+const AllChannelsSwitchDefault = tmp10(19306);
 function Content(arg0) {
   let closure_2;
   let closure_3;
@@ -152,7 +152,7 @@ function Content(arg0) {
   const first4 = tmp24[0];
   closure_13 = tmp27;
   const tmp26 = tmp24[1];
-  const tmp5Result = tmp5(19275);
+  const tmp5Result = tmp5(19274);
   roleSubscriptionSettingsDisabled = tmp5Result.useRoleSubscriptionSettingsDisabled();
   const tmp29 = useRoleSubscriptionEmojisDefault(guildId);
   closure_16 = tmp29;
@@ -276,7 +276,7 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: tmp5(16588).getBenefitKey,
+    keyExtractor: tmp5(16587).getBenefitKey,
     ListHeaderComponent: tmp34Result,
     renderSectionHeader(section) {
       const obj = { type: section.section.type };
@@ -381,7 +381,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddBen
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "md", color: nativeDefault.colors.ICON_BRAND };
-      const CirclePlusIcon = tmp(11154).CirclePlusIcon;
+      const CirclePlusIcon = tmp(11156).CirclePlusIcon;
       const tmp13 = authStore2(CirclePlusIcon, obj3);
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -607,8 +607,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const interval = onChangeTrialInterval.interval;
   const tmp4 = closure_15();
-  const tmp6 = options(15145)();
-  const tmp7 = options(16589)(interval);
+  const tmp6 = options(15144)();
+  const tmp7 = options(16588)(interval);
   options = tmp7.options;
   const selectedOption = tmp7.selectedOption;
   if (cResult[0] === onChangeTrialInterval) {
@@ -617,7 +617,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     if (cResult[1] === options) {
       tmp8 = cResult[2];
     }
-    const tmpResult = onChangeTrialInterval(19275);
+    const tmpResult = onChangeTrialInterval(19274);
     const roleSubscriptionSettingsDisabled = tmpResult.useRoleSubscriptionSettingsDisabled();
     const _Symbol = Symbol;
     ({ listFooterContainer, trialSwitchRow } = tmp4);
@@ -833,7 +833,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                         }
                       }
                       const obj9 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp39 };
-                      const tmp57 = closure_12(options(19294), obj9);
+                      const tmp57 = closure_12(options(19293), obj9);
                       cResult[40] = onChangeTrialActiveUserLimit;
                       cResult[41] = tmp39;
                       cResult[42] = trialActiveUserLimit;
@@ -850,7 +850,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                 }
               }
               const obj10 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp40 };
-              const tmp43 = closure_12(options(19293), obj10);
+              const tmp43 = closure_12(options(19292), obj10);
               cResult[26] = onChangeTrialInterval;
               cResult[27] = selectedOption;
               cResult[28] = tmp40;
@@ -926,8 +926,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const tmp = closure_15();
   let tmp3 = dependencyMap;
-  const tmp4 = options(15145)();
-  const tmp5 = options(16589)(interval);
+  const tmp4 = options(15144)();
+  const tmp5 = options(16588)(interval);
   options = tmp5.options;
   const selectedOption = tmp5.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -941,7 +941,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     }
     tmp3(value);
   }, items);
-  const obj = onChangeTrialInterval(19275);
+  const obj = onChangeTrialInterval(19274);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const obj2 = { style: tmp.listFooterContainer, children: items1 };
   const obj3 = { style: tmp.trialSwitchRow, children: closure_12(TableSwitchRow, obj4) };
@@ -972,7 +972,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   let tmp15 = !tmp7;
   const obj9 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp16 };
   tmp16 = tmp15;
-  const tmp2Result4 = options(19293);
+  const tmp2Result4 = options(19292);
   if (null != selectedOption) {
     tmp16 = roleSubscriptionSettingsDisabled;
   }
@@ -988,7 +988,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   intl6 = tmp8(1128).intl;
   items3[5] = closure_12(Text3, obj11);
   const obj12 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp15 };
-  const tmp2Result6 = options(19294);
+  const tmp2Result6 = options(19293);
   if (null != selectedOption) {
     tmp15 = roleSubscriptionSettingsDisabled;
   }

@@ -1,14 +1,14 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18596
+// Function ID: 18597
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 4822, 6775, 4823, 2026, 5609, 6776, 21, 4971, 558, 576, 10897, 18492, 4892, 504, 5052, 12071, 5629, 18461, 11888, 11892, 11457, 7168, 2]
+// Dependencies: [19, 4822, 6775, 4823, 2026, 5609, 6776, 21, 4971, 558, 576, 10899, 18491, 4892, 504, 5052, 12073, 5629, 18460, 11890, 11894, 11459, 7168, 2]
 
-// Module 18597 (VoicePanelSecondaryPIPContent)
+// Module 18596 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 2026 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12071 */;
-import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 18461 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12073 */;
+import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 18460 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import FramesStore from "FramesStore" /* 6775 */;

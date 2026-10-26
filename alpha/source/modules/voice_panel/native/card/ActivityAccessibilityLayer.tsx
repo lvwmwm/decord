@@ -1,12 +1,12 @@
-// Module ID: 18570
-// Function ID: 18571
+// Module ID: 18569
+// Function ID: 18570
 // Name: ActivityAccessibilityLayer
-// Dependencies: [109, 32, 19, 17, 10898, 21, 4971, 558, 576, 5971, 1128, 5968, 5267, 2]
+// Dependencies: [109, 32, 19, 17, 10900, 21, 4971, 558, 576, 5971, 1128, 5968, 5267, 2]
 
-// Module 18570 (ActivityAccessibilityLayer)
+// Module 18569 (ActivityAccessibilityLayer)
 import react2 from "react" /* 576 */;
 import react_native from "react-native" /* 5971 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10898 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

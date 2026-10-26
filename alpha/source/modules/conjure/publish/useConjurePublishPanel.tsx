@@ -1,10 +1,10 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12294
+// Function ID: 12295
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 6773, 6774, 3830, 12293, 11806, 12294, 12295, 11810, 11877, 10720, 1128, 2]
+// Dependencies: [5, 32, 19, 6773, 6774, 3830, 12295, 11808, 12296, 12297, 11812, 11879, 10720, 1128, 2]
 // Exports: default
 
-// Module 12292 (useConjurePublishPanel)
+// Module 12294 (useConjurePublishPanel)
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
@@ -69,7 +69,7 @@ export default function useConjurePublishPanel(id, guildId) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;

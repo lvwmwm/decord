@@ -1,10 +1,10 @@
-// Module ID: 18263
-// Function ID: 18264
+// Module ID: 18262
+// Function ID: 18263
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 558, 576, 12797, 12798, 1128, 3830, 11796, 5977, 5234, 5914, 5910, 2]
+// Dependencies: [5, 32, 19, 21, 558, 576, 12797, 12798, 1128, 3830, 11798, 5977, 5234, 5914, 5910, 2]
 // Exports: default
 
-// Module 18263 (openConjureDeleteAppChannelAlert)
+// Module 18262 (openConjureDeleteAppChannelAlert)
 import useAlertStore from "useAlertStore" /* 5910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -187,7 +187,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           length = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp31) {
           length = 3;
           throw tmp31;
@@ -297,7 +297,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;

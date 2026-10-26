@@ -1,108 +1,131 @@
 // Module ID: 15635
 // Function ID: 15636
-// Dependencies: [41, 42]
-// Exports: memoize
+// Dependencies: [42, 41, 93, 95, 98, 158, 17, 15636]
 
 // Module 15635
-import _createClassDefault from "_createClass" /* 42 */;
+import react_native from "react-native" /* 17 */;
+import base64Decode from "base64Decode" /* 15636 */;
+import _createClass from "_createClass" /* 42 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-function monadic(call, get, fn, num) {
-  let tmp2 = num;
-  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
-  if (!tmp) {
-    tmp2 = fn(num);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const callResult = call.call(this, num);
-    const result = get.set(tmp2, callResult);
-    value = callResult;
-  }
-  return value;
 }
-function variadic(apply, get, fn) {
-  const callResult = slice.call(arguments, 3);
-  const tmp2 = fn(callResult);
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const self = this;
-    const applyResult = apply.apply(this, callResult);
-    const result = get.set(tmp2, applyResult);
-    value = applyResult;
-  }
-  return value;
-}
-function strategyDefault(c165, cache) {
-  cache = cache.cache;
-  const obj = 1 === c165.length ? monadic : variadic;
-  return obj.bind(this, c165, cache.create(), cache.serializer);
-}
-function serializerDefault() {
-  return JSON.stringify(arguments);
-}
-class ObjectWithoutPrototypeCache {
+const NativeModules = react_native.NativeModules;
+class TypeMismatchError {
   constructor() {
-    _classCallCheck(this, ObjectWithoutPrototypeCache);
-    this.cache = Object.create(null);
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TypeMismatchError);
+    const obj = _getPrototypeOf(TypeMismatchError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
 }
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    return this.cache[arg0];
-  }
-};
-const items = [
-  entry,
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      this.cache[arg0] = arg1;
+_inherits(TypeMismatchError, _wrapNativeSuper(Error));
+let closure_8 = _createClass(TypeMismatchError);
+class QuotaExceededError {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, QuotaExceededError);
+    const obj = _getPrototypeOf(QuotaExceededError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
+    return tmp3(self, constructResult);
   }
-];
-let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
-let closure_6 = {
-  create() {
-    const tmp = new closure_5();
-    return tmp;
-  }
-};
-let obj = {
-  variadic: function strategyVariadic(c165, cache) {
-    cache = cache.cache;
-    return variadic.bind(this, c165, cache.create(), cache.serializer);
-  },
-  monadic: function strategyMonadic(c165, cache) {
-    cache = cache.cache;
-    return monadic.bind(this, c165, cache.create(), cache.serializer);
-  }
-};
-
-export const memoize = function memoize(arg0, cache) {
-  const tmp = cache;
-  if (tmp) {
-    if (cache.cache) {
-      cache = cache.cache;
-    }
-    if (cache) {
-      let serializer;
-      if (cache.serializer) {
-        serializer = cache.serializer;
-      }
-      if (cache) {
-        let strategy;
-        if (cache.strategy) {
-          strategy = cache.strategy;
+}
+_inherits(QuotaExceededError, _wrapNativeSuper(Error));
+let closure_9 = _createClass(QuotaExceededError);
+if (typeof global.crypto !== "object") {
+  global.crypto = {};
+}
+if (typeof global.crypto.getRandomValues !== "function") {
+  global.crypto.getRandomValues = function getRandomValues(uint8Array) {
+    if (!(uint8Array instanceof Int8Array)) {
+      const _Uint8Array = Uint8Array;
+      if (!(uint8Array instanceof Uint8Array)) {
+        const _Int16Array = Int16Array;
+        if (!(uint8Array instanceof Int16Array)) {
+          const _Uint16Array = Uint16Array;
+          if (!(uint8Array instanceof Uint16Array)) {
+            const _Int32Array = Int32Array;
+            if (!(uint8Array instanceof Int32Array)) {
+              const _Uint32Array = Uint32Array;
+              if (!(uint8Array instanceof Uint32Array)) {
+                const _Uint8ClampedArray = Uint8ClampedArray;
+                if (!(uint8Array instanceof Uint8ClampedArray)) {
+                  const self = this;
+                  const self2 = this;
+                  const tmp2 = new closure_8("Expected an integer array");
+                  throw tmp2;
+                }
+              }
+            }
+          }
         }
-        const obj = { cache, serializer };
-        return strategy(arg0, obj);
       }
-      strategy = strategyDefault;
     }
-    serializer = serializerDefault;
-  }
-  cache = closure_6;
-};
-export const strategies = obj;
+    if (uint8Array.byteLength > 65536) {
+      const self7 = this;
+      const self8 = this;
+      const tmp11 = new closure_9("Can only request a maximum of 65536 bytes");
+      throw tmp11;
+    } else {
+      let randomBase64;
+      const byteLength = uint8Array.byteLength;
+      const tmp15 = base64Decode;
+      if (NativeModules.RNGetRandomValues) {
+        const RNGetRandomValues = tmp16.RNGetRandomValues;
+        randomBase64 = RNGetRandomValues.getRandomBase64(byteLength);
+      } else if (NativeModules.ExpoRandom) {
+        const ExpoRandom2 = tmp16.ExpoRandom;
+        randomBase64 = ExpoRandom2.getRandomBase64String(byteLength);
+      } else if (global.ExpoModules) {
+        const ExpoRandom = global.ExpoModules.ExpoRandom;
+        randomBase64 = ExpoRandom.getRandomBase64String(byteLength);
+      } else {
+        const _Error = Error;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Native module not found");
+        throw error;
+      }
+      const _Uint8Array2 = Uint8Array;
+      const self5 = this;
+      const self6 = this;
+      uint8Array = new Uint8Array(uint8Array.buffer, uint8Array.byteOffset, uint8Array.byteLength);
+      tmp15(randomBase64, uint8Array);
+      return uint8Array;
+    }
+  };
+}

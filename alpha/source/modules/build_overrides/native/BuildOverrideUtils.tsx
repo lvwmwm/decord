@@ -1,7 +1,7 @@
 // Module ID: 12716
 // Function ID: 12717
 // Name: build_overrides/BuildOverrideUtils
-// Dependencies: [5, 11025, 1384, 12717, 12718, 5909, 1381, 2]
+// Dependencies: [5, 11027, 1384, 12717, 12718, 5909, 1381, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
 // Module 12716 (build_overrides/BuildOverrideUtils)
@@ -9,7 +9,7 @@ import BuildOverrideUtils from "BuildOverrideUtils" /* 1381 */;
 import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 12717 */;
 import BundleUpdaterDefault from "BundleUpdater" /* 12718 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11025 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11027 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _setBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _setBuildOverride() {
             obj.show(obj9);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp20) {
         c4 = 3;
@@ -106,7 +106,7 @@ obj = function _clearBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ obj = function _clearBuildOverride() {
             obj.show(obj8);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp17) {
         c3 = 3;
@@ -172,7 +172,7 @@ obj = function _toggleOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ obj = function _toggleOverride() {
                 if (null != id1) {
                   setBuildOverrideForBranch(id1);
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
               c3 = 1;
@@ -246,7 +246,7 @@ obj = function _toggleOverride() {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp28) {
         c4 = 3;
         throw tmp28;
@@ -270,7 +270,7 @@ obj = function _setBuildOverrideFromLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -336,7 +336,7 @@ obj = function _setBuildOverrideFromLink() {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;

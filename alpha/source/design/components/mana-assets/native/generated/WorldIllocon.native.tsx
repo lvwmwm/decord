@@ -1,28 +1,28 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13648
+// Function ID: 13649
 // Name: WorldIllocon
-// Dependencies: [19, 21, 13650, 13651, 13652, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 13649, 13650, 13651, 558, 576, 6995, 5669, 2]
 
-// Module 13649 (WorldIllocon)
+// Module 13648 (WorldIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
+import _modDef13649 from "module_13649" /* 13649 */;
 import _modDef13650 from "module_13650" /* 13650 */;
 import _modDef13651 from "module_13651" /* 13651 */;
-import _modDef13652 from "module_13652" /* 13652 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13650 };
+let obj2 = { uri: _modDef13649 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13651 };
+obj[2] = { uri: _modDef13650 };
+({ uri: _modDef13650 });
+obj[3] = { uri: _modDef13651 };
 ({ uri: _modDef13651 });
-obj[3] = { uri: _modDef13652 };
-({ uri: _modDef13652 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WorldIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

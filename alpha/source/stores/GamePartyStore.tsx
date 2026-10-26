@@ -1,9 +1,9 @@
-// Module ID: 14556
-// Function ID: 14557
+// Module ID: 14555
+// Function ID: 14556
 // Name: GamePartyStore
 // Dependencies: [502, 4913, 6498, 1087, 12, 504, 584, 2]
 
-// Module 14556 (GamePartyStore)
+// Module 14555 (GamePartyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

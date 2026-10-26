@@ -1,9 +1,9 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15228
+// Function ID: 15229
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6725, 1207, 1392, 1087, 21, 4971, 587, 558, 576, 504, 1499, 5252, 2053, 7253, 7278, 5210, 9672, 4978, 15230, 1128, 6908, 1202, 15231, 5212, 5213, 5662, 5669, 7228, 7229, 1417, 2]
+// Dependencies: [32, 19, 17, 6725, 1207, 1392, 1087, 21, 4971, 587, 558, 576, 504, 1499, 5252, 2053, 7253, 7278, 5210, 9672, 4978, 15229, 1128, 6908, 1202, 15230, 5212, 5213, 5662, 5669, 7228, 7229, 1417, 2]
 
-// Module 15229 (GuildActionSheetEmojiSection)
+// Module 15228 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;

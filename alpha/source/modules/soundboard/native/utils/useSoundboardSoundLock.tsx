@@ -1,9 +1,9 @@
-// Module ID: 18524
-// Function ID: 18525
+// Module ID: 18523
+// Function ID: 18524
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1392, 6008, 558, 576, 504, 7452, 2053, 18525, 9680, 5030, 5663, 1128, 9808, 2]
+// Dependencies: [19, 1392, 6008, 558, 576, 504, 7452, 2053, 18524, 9680, 5030, 5663, 1128, 9808, 2]
 
-// Module 18524 (useSoundboardSoundLock)
+// Module 18523 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1128 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5030 */;
@@ -11,7 +11,7 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import SoundboardConstants from "SoundboardConstants" /* 6008 */;
 import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9680 */;
 import BoostGemIcon from "BoostGemIcon" /* 9808 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 18525 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 18524 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

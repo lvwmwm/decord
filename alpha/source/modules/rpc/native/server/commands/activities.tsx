@@ -1,18 +1,18 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15770
+// Function ID: 15771
 // Name: commands/activities
-// Dependencies: [5, 6378, 1087, 7868, 15725, 8827, 15735, 9264, 9050, 9258, 6778, 10728, 8155, 7885, 11391, 6375, 2]
+// Dependencies: [5, 6378, 1087, 7868, 15724, 8827, 15734, 9264, 9050, 9258, 6778, 10728, 8155, 7885, 11393, 6375, 2]
 
-// Module 15771 (commands/activities)
+// Module 15770 (commands/activities)
 import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15735 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15724 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -84,7 +84,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

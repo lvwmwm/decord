@@ -1,243 +1,937 @@
 // Module ID: 15347
 // Function ID: 15348
-// Dependencies: [41, 42, 15320, 15322, 15323, 15319, 15345, 15348]
+// Dependencies: [41, 42, 15319, 15346, 15320, 15322, 15321, 15318, 15348]
 
 // Module 15347
-import _mod15320 from "module_15320" /* 15320 */;
+import _createClass from "_createClass" /* 42 */;
+import _mod15318 from "module_15318" /* 15318 */;
+import _mod15319 from "module_15319" /* 15319 */;
+import _mod15321 from "module_15321" /* 15321 */;
 import _mod15322 from "module_15322" /* 15322 */;
-import _mod15323 from "module_15323" /* 15323 */;
-import _mod15345 from "module_15345" /* 15345 */;
+import _mod15346 from "module_15346" /* 15346 */;
 import _mod15348 from "module_15348" /* 15348 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-const semver = Symbol("SemVer ANY");
-class Comparator {
+let map, set;
+
+const re3 = /\s+/g;
+class Range {
   constructor(loose, arg1) {
     const self = this;
-    _classCallCheck(this, Comparator);
-    const tmp4 = _mod15320(arg1);
-    let str = loose;
-    if (loose instanceof Comparator) {
-      if (loose.loose === tmp4.loose) {
-        return loose;
+    _classCallCheck(this, Range);
+    const tmp5 = _mod15319(arg1);
+    const tmp = Range;
+    if (loose instanceof Range) {
+      let tmpResult;
+      if (loose.loose !== tmp5.loose) {
+        tmpResult = tmp(loose.raw, tmp5);
       } else {
-        str = loose.value;
+        tmpResult = loose;
       }
-    }
-    const str2 = str.trim();
-    const parts = str2.split(/\s+/);
-    const joined = parts.join(" ");
-    _mod15322("comparator", joined, tmp4);
-    self.options = tmp4;
-    self.loose = tmp4.loose;
-    const parsed = self.parse(joined);
-    if (self.semver === semver) {
-      self.value = "";
+      return tmpResult;
+    } else if (loose instanceof _mod15346) {
+      self.raw = loose.value;
+      const items = [loose];
+      const items1 = [items];
+      self.set = items1;
+      self.formatted = undefined;
+      return self;
     } else {
-      self.value = self.operator + self.semver.version;
-    }
-    _mod15322("comp", self);
-  }
-}
-const entry = {
-  key: "parse",
-  value: function parse(str) {
-    let tmp3;
-    let tmp5;
-    const self = this;
-    const loose = this.options.loose;
-    const safeRe = _mod15323.safeRe;
-    const t = _mod15323.t;
-    if (loose) {
-      tmp3 = safeRe[t.COMPARATORLOOSE];
-      tmp5 = tmp;
-    } else {
-      tmp3 = safeRe[t.COMPARATOR];
-      tmp5 = tmp;
-    }
-    const match = str.match(tmp3);
-    if (match) {
-      let str3 = "";
-      if (undefined !== match[1]) {
-        str3 = match[1];
-      }
-      self.operator = str3;
-      if ("=" === self.operator) {
-        self.operator = "";
-      }
-      if (match[2]) {
-        const self4 = this;
-        const self5 = this;
-        self.semver = new tmp5(15319)(match[2], self.options.loose);
-        const tmp11 = new tmp5(15319)(match[2], self.options.loose);
-      } else {
-        self.semver = semver;
-      }
-    } else {
-      const _TypeError = TypeError;
-      const _HermesInternal = HermesInternal;
-      const self2 = this;
-      const self3 = this;
-      const typeError = new TypeError("Invalid comparator: " + str);
-      throw typeError;
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "toString",
-    value: function toString() {
-      return this.value;
-    }
-  },
-  {
-    key: "test",
-    value: function test(arg0) {
-      const self = this;
-      let tmp = arg0;
-      _mod15322("Comparator.test", arg0, this.options.loose);
-      if (this.semver !== semver) {
-        if (tmp !== tmp5) {
-          if (typeof tmp === "string") {
-            try {
-              const self2 = this;
-              const self3 = this;
-              tmp = new tmp2(15319)(tmp, self.options);
-            } catch (err) {
-              return false;
+      self.options = tmp5;
+      self.loose = tmp5.loose;
+      self.includePrerelease = tmp5.includePrerelease;
+      const str = loose.trim();
+      self.raw = str.replace(re3, " ");
+      const str3 = self.raw;
+      const parts = str3.split("||");
+      const mapped = parts.map((item) => self.parseRange(item.trim()));
+      self.set = mapped.filter((item) => item.length);
+      if (self.set.length) {
+        if (self.set.length > 1) {
+          const first = self.set[0];
+          const set1 = self.set;
+          self.set = set1.filter((item) => {
+            if (typeof closure_1_5 === "function") {
+              return "<0.0.0-0" !== item[0].value;
+            } else {
+              throw new TypeError("Trying to call a non-function");
             }
-          }
-          return _mod15345(tmp, self.operator, self.semver, self.options);
-        }
-      }
-      return true;
-    }
-  },
-  {
-    key: "intersects",
-    value: function intersects(value, arg1) {
-      if (value instanceof Comparator) {
-        let tmp6;
-        const self3 = this;
-        if ("" === this.operator) {
-          let isMatch = "" === self3.value;
-          if (!isMatch) {
-            const self6 = this;
-            const self7 = this;
-            const obj2 = new _mod15348(value.value, arg1);
-            isMatch = obj2.test(self3.value);
-          }
-          tmp6 = isMatch;
-        } else if ("" === value.operator) {
-          let isMatch1 = "" === value.value;
-          if (!isMatch1) {
-            const self4 = this;
-            const self5 = this;
-            const obj = new _mod15348(self3.value, arg1);
-            isMatch1 = obj.test(value.semver);
-          }
-          tmp6 = isMatch1;
-        } else {
-          const tmp39 = _mod15320(arg1);
-          const includePrerelease = tmp39.includePrerelease;
-          tmp6 = !includePrerelease;
-          if (includePrerelease) {
-            tmp6 = "<0.0.0-0" !== self3.value && "<0.0.0-0" !== value.value;
-          }
-          if (tmp6) {
-            let tmp7 = !tmp39.includePrerelease;
-            if (tmp7) {
-              value = self3.value;
-              let startsWithResult = value.startsWith("<0.0.0");
-              if (!startsWithResult) {
-                const value2 = value.value;
-                startsWithResult = value2.startsWith("<0.0.0");
-              }
-              tmp7 = startsWithResult;
-            }
-            let tmp9 = !tmp7;
-            if (tmp9) {
-              const operator = self3.operator;
-              const startsWithResult1 = operator.startsWith(">");
-              let tmp11 = !startsWithResult1;
-              if (startsWithResult1) {
-                const operator2 = value.operator;
-                tmp11 = !operator2.startsWith(">");
-              }
-              let tmp12 = !tmp11;
-              if (tmp11) {
-                const operator3 = self3.operator;
-                const startsWithResult2 = operator3.startsWith("<");
-                let tmp14 = !startsWithResult2;
-                if (startsWithResult2) {
-                  const operator4 = value.operator;
-                  tmp14 = !operator4.startsWith("<");
+          });
+          if (0 === self.set.length) {
+            const items2 = [first];
+            self.set = items2;
+          } else if (self.set.length > 1) {
+            for (const item10061 of set) {
+              let tmp12 = item10061;
+              if (1 === item10061.length) {
+                if (isAny(tmp12[0])) {
+                  let items3 = [tmp12];
+                  self.set = items3;
+                  obj.return();
+                  break;
                 }
-                let tmp15 = !tmp14;
-                if (tmp14) {
-                  let tmp16 = self3.semver.version !== value.semver.version;
-                  if (!tmp16) {
-                    const operator5 = self3.operator;
-                    tmp16 = !operator5.includes("=");
-                  }
-                  if (!tmp16) {
-                    const operator6 = value.operator;
-                    tmp16 = !operator6.includes("=");
-                  }
-                  let tmp17 = !tmp16;
-                  if (tmp16) {
-                    let startsWithResult3 = _mod15345(self3.semver, "<", value.semver, tmp39);
-                    if (startsWithResult3) {
-                      const operator7 = self3.operator;
-                      startsWithResult3 = operator7.startsWith(">");
-                    }
-                    if (startsWithResult3) {
-                      const operator8 = value.operator;
-                      startsWithResult3 = operator8.startsWith("<");
-                    }
-                    let tmp22 = startsWithResult3;
-                    if (!tmp22) {
-                      let startsWithResult4 = _mod15345(self3.semver, ">", value.semver, tmp39);
-                      if (startsWithResult4) {
-                        const operator9 = self3.operator;
-                        startsWithResult4 = operator9.startsWith("<");
-                      }
-                      if (startsWithResult4) {
-                        const operator10 = value.operator;
-                        startsWithResult4 = operator10.startsWith(">");
-                      }
-                      tmp22 = startsWithResult4;
-                    }
-                    tmp17 = tmp22;
-                  }
-                  tmp15 = tmp17;
-                }
-                tmp12 = tmp15;
+                break;
               }
-              tmp9 = tmp12;
+              continue;
             }
-            tmp6 = tmp9;
           }
         }
-        return tmp6;
+        self.formatted = undefined;
       } else {
         const _TypeError = TypeError;
-        const self = this;
+        const _HermesInternal = HermesInternal;
         const self2 = this;
-        const typeError = new TypeError("a Comparator is required");
+        const self3 = this;
+        const typeError = new TypeError("Invalid SemVer Range: " + self.raw);
         throw typeError;
       }
     }
   }
-];
+}
 let obj = {
-  key: "ANY",
+  key: "range",
   get() {
-    return semver;
+    const self = this;
+    if (undefined === this.formatted) {
+      let num2;
+      self.formatted = "";
+      for (let num2 = 0; num2 < self.set.length; num2 = num2 + 1) {
+        let num;
+        if (0 < num2) {
+          self.formatted = `${self.formatted}||`;
+        }
+        let arr = self.set[num2];
+        for (let num = 0; num < arr.length; num = num + 1) {
+          if (0 < num) {
+            self.formatted = `${self.formatted} `;
+          }
+          let str = arr[num];
+          let formatted = self.formatted;
+          let str2 = str.toString();
+          self.formatted = formatted + str2.trim();
+        }
+      }
+    }
+    return self.formatted;
   }
 };
-const items1 = [obj];
+let items = [
+  obj,
+  {
+    key: "format",
+    value: function format() {
+      return this.range;
+    }
+  },
+  {
+    key: "toString",
+    value: function toString() {
+      return this.range;
+    }
+  },
+  {
+    key: "parseRange",
+    value: function parseRange(str) {
+      const self = this;
+      let FLAG_INCLUDE_PRERELEASE = this.options.includePrerelease;
+      if (FLAG_INCLUDE_PRERELEASE) {
+        let tmp = self;
+        let tmp2 = dependencyMap;
+        FLAG_INCLUDE_PRERELEASE = self(15320).FLAG_INCLUDE_PRERELEASE;
+      }
+      let FLAG_LOOSE = self.options.loose;
+      if (FLAG_LOOSE) {
+        let tmp3 = self;
+        let tmp4 = dependencyMap;
+        FLAG_LOOSE = self(15320).FLAG_LOOSE;
+      }
+      const text = `${FLAG_INCLUDE_PRERELEASE | FLAG_LOOSE}:${str}`;
+      const value = closure_4.get(text);
+      if (value) {
+        return value;
+      } else {
+        let tmp9;
+        let tmp11;
+        let loose = self.options.loose;
+        let tmp7 = self;
+        let tmp8 = dependencyMap;
+        let safeRe = self(15322).safeRe;
+        let t = self(15322).t;
+        if (loose) {
+          tmp9 = safeRe[t.HYPHENRANGELOOSE];
+          let tmp10 = tmp8;
+          tmp11 = tmp7;
+        } else {
+          tmp9 = safeRe[t.HYPHENRANGE];
+          tmp10 = tmp8;
+          tmp11 = tmp7;
+        }
+        str = str.replace(tmp9, hyphenReplace(self.options.includePrerelease));
+        let str2 = "hyphen replace";
+        const tmp13 = tmp11(15321)("hyphen replace", str);
+        let replace = str.replace;
+        let str3 = replace(tmp11(15322).safeRe[tmp11(undefined, 15322).t.COMPARATORTRIM], tmp11(15322).comparatorTrimReplace);
+        let str4 = "comparator trim";
+        tmp11(15321)("comparator trim", str3);
+        const replace2 = str3.replace;
+        const str5 = replace2(tmp11(15322).safeRe[tmp11(undefined, 15322).t.TILDETRIM], tmp11(15322).tildeTrimReplace);
+        let str6 = "tilde trim";
+        const tmp15 = tmp11(15321)("tilde trim", str5);
+        const replace3 = str5.replace;
+        let str7 = replace3(tmp11(15322).safeRe[tmp11(undefined, 15322).t.CARETTRIM], tmp11(15322).caretTrimReplace);
+        const str8 = "caret trim";
+        tmp11(15321)("caret trim", str7);
+        const str9 = " ";
+        let parts = str7.split(" ");
+        let mapped = parts.map((item) => {
+          const options = self.options;
+          if (typeof parseComparator === "function") {
+            const tmp = item;
+            let tmp2 = require;
+            let tmp3 = dependencyMap;
+            let str = "comp";
+            const tmp4 = _mod15321("comp", item, options);
+            let tmp5 = replaceCarets;
+            if (typeof replaceCarets === "function") {
+              let str2 = item.trim();
+              const parts = str2.split(/\s+/);
+              const mapped = parts.map((item) => {
+                if (typeof closure_2_13 === "function") {
+                  let tmp6;
+                  let closure_0 = item;
+                  let tmp5 = self(closure_2_1[6])("caret", item, tmp);
+                  const loose = tmp.loose;
+                  const safeRe = self(closure_2_1[5]).safeRe;
+                  const t = self(closure_2_1[5]).t;
+                  if (loose) {
+                    tmp6 = safeRe[t.CARETLOOSE];
+                  } else {
+                    tmp6 = safeRe[t.CARET];
+                  }
+                  let str2 = "";
+                  if (options.includePrerelease) {
+                    str2 = "-0";
+                  }
+                  return item.replace(tmp6, (arg0, str, str2, str3, arg4) => {
+                    options(closure_2_1[6])("caret", closure_0, arg0, str, str2, str3, arg4);
+                    if (typeof closure_2_9 === "function") {
+                      let tmp5 = !str;
+                      if (str) {
+                        tmp5 = "x" === str.toLowerCase();
+                      }
+                      if (!tmp5) {
+                        tmp5 = "*" === str;
+                      }
+                      str3 = "";
+                      if (!tmp5) {
+                        if (typeof closure_2_9 === "function") {
+                          let tmp6 = !str2;
+                          if (str2) {
+                            tmp6 = "x" === str2.toLowerCase();
+                          }
+                          if (!tmp6) {
+                            tmp6 = "*" === str2;
+                          }
+                          if (tmp6) {
+                            const _HermesInternal9 = HermesInternal;
+                            str3 = ">=" + str + ".0.0" + str2 + " <" + +str + 1 + ".0.0-0";
+                          } else if (typeof closure_2_9 === "function") {
+                            let tmp7 = !str3;
+                            if (str3) {
+                              tmp7 = "x" === str3.toLowerCase();
+                            }
+                            if (!tmp7) {
+                              tmp7 = "*" === str3;
+                            }
+                            if (tmp7) {
+                              let combined;
+                              if ("0" === str) {
+                                const _HermesInternal8 = HermesInternal;
+                                combined = ">=" + str + "." + str2 + ".0" + str2 + " <" + str + "." + +str2 + 1 + ".0-0";
+                              } else {
+                                const _HermesInternal7 = HermesInternal;
+                                combined = ">=" + str + "." + str2 + ".0" + str2 + " <" + +str + 1 + ".0.0-0";
+                              }
+                              str3 = combined;
+                            } else {
+                              const tmpResult = options(closure_2_1[6]);
+                              if (arg4) {
+                                let combined2;
+                                tmpResult("replaceCaret pr", arg4);
+                                if ("0" === str) {
+                                  let combined1;
+                                  if ("0" === str2) {
+                                    const _HermesInternal6 = HermesInternal;
+                                    combined1 = ">=" + str + "." + str2 + "." + str3 + "-" + arg4 + " <" + str + "." + str2 + "." + +str3 + 1 + "-0";
+                                  } else {
+                                    const _HermesInternal5 = HermesInternal;
+                                    combined1 = ">=" + str + "." + str2 + "." + str3 + "-" + arg4 + " <" + str + "." + +str2 + 1 + ".0-0";
+                                  }
+                                  combined2 = combined1;
+                                } else {
+                                  const _HermesInternal4 = HermesInternal;
+                                  combined2 = ">=" + str + "." + str2 + "." + str3 + "-" + arg4 + " <" + +str + 1 + ".0.0-0";
+                                }
+                                str3 = combined2;
+                              } else {
+                                let combined4;
+                                tmpResult("no pr");
+                                if ("0" === str) {
+                                  let combined3;
+                                  if ("0" === str2) {
+                                    const _HermesInternal3 = HermesInternal;
+                                    combined3 = ">=" + str + "." + str2 + "." + str3 + str2 + " <" + str + "." + str2 + "." + +str3 + 1 + "-0";
+                                  } else {
+                                    const _HermesInternal2 = HermesInternal;
+                                    combined3 = ">=" + str + "." + str2 + "." + str3 + str2 + " <" + str + "." + +str2 + 1 + ".0-0";
+                                  }
+                                  combined4 = combined3;
+                                } else {
+                                  const _HermesInternal = HermesInternal;
+                                  combined4 = ">=" + str + "." + str2 + "." + str3 + " <" + +str + 1 + ".0.0-0";
+                                }
+                                str3 = combined4;
+                              }
+                            }
+                          } else {
+                            throw new TypeError("Trying to call a non-function");
+                          }
+                        } else {
+                          throw new TypeError("Trying to call a non-function");
+                        }
+                      }
+                      options(closure_2_1[6])("caret return", str3);
+                      return str3;
+                    } else {
+                      throw new TypeError("Trying to call a non-function");
+                    }
+                  });
+                } else {
+                  let str3 = "Trying to call a non-function";
+                  throw new TypeError("Trying to call a non-function");
+                }
+              });
+              let str3 = " ";
+              const str4 = mapped.join(" ");
+              let tmp6 = tmp2(15321)("caret", str4);
+              let tmp7 = replaceTildes;
+              if (typeof replaceTildes === "function") {
+                const str6 = str4.trim();
+                const parts1 = str6.split(/\s+/);
+                const mapped1 = parts1.map((item) => {
+                  if (typeof closure_2_11 === "function") {
+                    let tmp5;
+                    let closure_0 = item;
+                    const loose = tmp.loose;
+                    const safeRe = self(closure_2_1[5]).safeRe;
+                    const t = self(closure_2_1[5]).t;
+                    if (loose) {
+                      tmp5 = safeRe[t.TILDELOOSE];
+                    } else {
+                      tmp5 = safeRe[t.TILDE];
+                    }
+                    return item.replace(tmp5, (arg0, str, str2, str3, arg4) => {
+                      options(closure_2_1[6])("tilde", closure_0, arg0, str, str2, str3, arg4);
+                      if (typeof closure_2_9 === "function") {
+                        let tmp5 = !str;
+                        if (str) {
+                          tmp5 = "x" === str.toLowerCase();
+                        }
+                        if (!tmp5) {
+                          tmp5 = "*" === str;
+                        }
+                        str3 = "";
+                        if (!tmp5) {
+                          if (typeof closure_2_9 === "function") {
+                            let tmp6 = !str2;
+                            if (str2) {
+                              tmp6 = "x" === str2.toLowerCase();
+                            }
+                            if (!tmp6) {
+                              tmp6 = "*" === str2;
+                            }
+                            if (tmp6) {
+                              const _HermesInternal4 = HermesInternal;
+                              str3 = ">=" + str + ".0.0 <" + +str + 1 + ".0.0-0";
+                            } else if (typeof closure_2_9 === "function") {
+                              let tmp7 = !str3;
+                              if (str3) {
+                                tmp7 = "x" === str3.toLowerCase();
+                              }
+                              if (!tmp7) {
+                                tmp7 = "*" === str3;
+                              }
+                              if (tmp7) {
+                                const _HermesInternal3 = HermesInternal;
+                                str3 = ">=" + str + "." + str2 + ".0 <" + str + "." + +str2 + 1 + ".0-0";
+                              } else if (arg4) {
+                                options(closure_2_1[6])("replaceTilde pr", arg4);
+                                const _HermesInternal2 = HermesInternal;
+                                str3 = ">=" + str + "." + str2 + "." + str3 + "-" + arg4 + " <" + str + "." + +str2 + 1 + ".0-0";
+                              } else {
+                                const _HermesInternal = HermesInternal;
+                                str3 = ">=" + str + "." + str2 + "." + str3 + " <" + str + "." + +str2 + 1 + ".0-0";
+                              }
+                            } else {
+                              throw new TypeError("Trying to call a non-function");
+                            }
+                          } else {
+                            throw new TypeError("Trying to call a non-function");
+                          }
+                        }
+                        options(closure_2_1[6])("tilde return", str3);
+                        return str3;
+                      } else {
+                        throw new TypeError("Trying to call a non-function");
+                      }
+                    });
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                });
+                const str7 = mapped1.join(" ");
+                let tmp8 = tmp2(15321)("tildes", str7);
+                let tmp9 = replaceXRanges;
+                if (typeof replaceXRanges === "function") {
+                  let tmp10 = tmp2(15321)("replaceXRanges", str7, options);
+                  const parts2 = str7.split(/\s+/);
+                  const mapped2 = parts2.map((item) => {
+                    if (typeof closure_2_15 === "function") {
+                      let tmp5;
+                      let tmp2 = item;
+                      let closure_1 = tmp;
+                      let str = item.trim();
+                      let tmp3 = self;
+                      const loose = tmp.loose;
+                      const safeRe = self(closure_2_1[5]).safeRe;
+                      const t = self(closure_2_1[5]).t;
+                      if (loose) {
+                        tmp5 = safeRe[t.XRANGELOOSE];
+                      } else {
+                        tmp5 = safeRe[t.XRANGE];
+                      }
+                      return str.replace(tmp5, (arg0, arg1, str, str2, str3, arg5) => {
+                        let combined = arg0;
+                        str = arg1;
+                        options(closure_2_1[6])("xRange", str, arg0, arg1, str, str2, str3, arg5);
+                        const tmp2 = options;
+                        const tmp3 = closure_2_1;
+                        if (typeof closure_2_9 === "function") {
+                          let tmp6 = !str;
+                          if (str) {
+                            tmp6 = "x" === str.toLowerCase();
+                          }
+                          if (!tmp6) {
+                            tmp6 = "*" === str;
+                          }
+                          let tmp7 = tmp6;
+                          if (!tmp7) {
+                            if (typeof closure_2_9 === "function") {
+                              let tmp8 = !str2;
+                              if (str2) {
+                                tmp8 = "x" === str2.toLowerCase();
+                              }
+                              if (!tmp8) {
+                                tmp8 = "*" === str2;
+                              }
+                              tmp7 = tmp8;
+                            } else {
+                              throw new TypeError("Trying to call a non-function");
+                            }
+                          }
+                          let tmp9 = tmp7;
+                          if (!tmp9) {
+                            if (typeof closure_2_9 === "function") {
+                              let tmp10 = !str3;
+                              if (str3) {
+                                tmp10 = "x" === str3.toLowerCase();
+                              }
+                              if (!tmp10) {
+                                tmp10 = "*" === str3;
+                              }
+                              tmp9 = tmp10;
+                            } else {
+                              throw new TypeError("Trying to call a non-function");
+                            }
+                          }
+                          const tmp11 = "=" === str && tmp9;
+                          if (tmp11) {
+                            str = "";
+                          }
+                          let str10 = "";
+                          if (includePrerelease.includePrerelease) {
+                            str10 = "-0";
+                          }
+                          if (tmp6) {
+                            let str31;
+                            if (">" === str) {
+                              str31 = "<0.0.0-0";
+                            } else {
+                              str31 = "*";
+                            }
+                            combined = str31;
+                          } else {
+                            if (str) {
+                              if (tmp9) {
+                                let sum;
+                                let num4;
+                                let str24;
+                                let num3 = str2;
+                                if (tmp7) {
+                                  num3 = 0;
+                                }
+                                if (">" === str) {
+                                  if (tmp7) {
+                                    sum = +str + 1;
+                                    num4 = 0;
+                                    str24 = ">=";
+                                  } else {
+                                    num4 = +num3 + 1;
+                                    str24 = ">=";
+                                    sum = str;
+                                  }
+                                } else {
+                                  num4 = num3;
+                                  sum = str;
+                                  str24 = str;
+                                  if ("<=" === str) {
+                                    let sum1;
+                                    let sum2;
+                                    if (tmp7) {
+                                      sum1 = +str + 1;
+                                      sum2 = num3;
+                                    } else {
+                                      sum2 = +num3 + 1;
+                                      sum1 = str;
+                                    }
+                                    str24 = "<";
+                                    num4 = sum2;
+                                    sum = sum1;
+                                  }
+                                }
+                                if ("<" === str24) {
+                                  str10 = "-0";
+                                }
+                                const _HermesInternal3 = HermesInternal;
+                                combined = "" + str24 + sum + "." + num4 + "." + 0 + str10;
+                              }
+                            }
+                            if (tmp7) {
+                              const _HermesInternal2 = HermesInternal;
+                              combined = ">=" + str + ".0.0" + str10 + " <" + +str + 1 + ".0.0-0";
+                            } else if (tmp9) {
+                              const _HermesInternal = HermesInternal;
+                              combined = ">=" + str + "." + str2 + ".0" + str10 + " <" + str + "." + +str2 + 1 + ".0-0";
+                            }
+                          }
+                          tmp2(tmp3[6])("xRange return", combined);
+                          return combined;
+                        } else {
+                          throw new TypeError("Trying to call a non-function");
+                        }
+                      });
+                    } else {
+                      throw new TypeError("Trying to call a non-function");
+                    }
+                  });
+                  let str10 = mapped2.join(" ");
+                  let tmp11 = tmp2(15321)("xrange", str10);
+                  if (typeof replaceStars === "function") {
+                    tmp2(15321)("replaceStars", str10, options);
+                    const replace = str10.trim().replace;
+                    const str13 = str10.trim();
+                    const replaced = replace(tmp2(15322).safeRe[tmp2(undefined, 15322).t.STAR], "");
+                    tmp2(15321)("stars", replaced);
+                    return replaced;
+                  } else {
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
+              } else {
+                throw new TypeError("Trying to call a non-function");
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        });
+        let str10 = mapped.join(" ");
+        let parts1 = str10.split(/\s+/);
+        let mapped1 = parts1.map((item) => {
+          const options = self.options;
+          if (typeof replaceGTE0 === "function") {
+            _mod15321("replaceGTE0", item, options);
+            const replace = item.trim().replace;
+            item.trim();
+            const safeRe = _mod15322.safeRe;
+            const includePrerelease = options.includePrerelease;
+            const t = _mod15322.t;
+            return replace(safeRe[includePrerelease ? t.GTE0PRE : t.GTE0], "");
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        });
+        let found = mapped1;
+        if (loose) {
+          found = mapped1.filter((item) => {
+            _mod15321("loose invalid filter", item, self.options);
+            const match = item.match;
+            return match(_mod15322.safeRe[_mod15322.t.COMPARATORLOOSE]);
+          });
+        }
+        const str11 = "range list";
+        tmp11(15321)("range list", found);
+        const _Map = Map;
+        const self3 = this;
+        const self2 = this;
+        map = new Map();
+        let mapped2 = found.map((item) => {
+          const tmp = new _mod15346(item, self.options);
+          return tmp;
+        });
+        for (const item10132 of mapped2) {
+          let iter = item10132;
+          if (isNullSet(item10132)) {
+            let items = [iter];
+            obj3.return();
+            return items;
+          } else {
+            let result = map.set(iter.value, iter);
+            continue;
+          }
+        }
+        let hasItem = map.size > 1;
+        if (hasItem) {
+          const str12 = "";
+          hasItem = map.has("");
+        }
+        if (hasItem) {
+          let str13 = "";
+          map.delete("");
+        }
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, map.values(), 0);
+        const result1 = closure_4.set(text, items1);
+        return items1;
+      }
+    }
+  },
+  {
+    key: "intersects",
+    value: function intersects(arg0, arg1) {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      if (arg0 instanceof Range) {
+        const self3 = this;
+        set = this.set;
+        return set.some((arr) => {
+          set = arr;
+          if (typeof closure_1_7 === "function") {
+            set = closure_1;
+            let substr = arr.slice();
+            closure_1 = substr.pop();
+            let flag = true;
+            if (substr.length) {
+              let everyResult = substr.every((item) => closure_1.intersects(item, closure_0));
+              closure_1 = substr.pop();
+              flag = everyResult;
+              while (everyResult) {
+                flag = everyResult;
+                if (!substr.length) {
+                  break;
+                }
+              }
+            }
+            if (flag) {
+              set = set.set;
+              flag = set.some((arr) => {
+                let closure_0 = arr;
+                if (typeof closure_3_7 === "function") {
+                  closure_0 = closure_1;
+                  const substr = arr.slice();
+                  closure_1 = substr.pop();
+                  let flag = true;
+                  if (substr.length) {
+                    const everyResult = substr.every((item) => closure_1.intersects(item, closure_0));
+                    closure_1 = substr.pop();
+                    flag = everyResult;
+                    while (everyResult) {
+                      flag = everyResult;
+                      if (!substr.length) {
+                        break;
+                      }
+                    }
+                  }
+                  if (flag) {
+                    flag = closure_0.every((item) => {
+                      closure_0 = item;
+                      return closure_0.every((item) => closure_0.intersects(item, closure_2_1));
+                    });
+                  }
+                  return flag;
+                } else {
+                  throw new TypeError("Trying to call a non-function");
+                }
+              });
+            }
+            return flag;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        });
+      } else {
+        const _TypeError = TypeError;
+        const self = this;
+        const str = "a Range is required";
+        const self2 = this;
+        const typeError = new TypeError("a Range is required");
+        throw typeError;
+      }
+    }
+  },
+  {
+    key: "test",
+    value: function test(prerelease) {
+      let tmp = prerelease;
+      if (tmp) {
+        const self = this;
+        if (typeof tmp === "string") {
+          try {
+            const self2 = this;
+            const self3 = this;
+            tmp = new _mod15318(tmp, self.options);
+          } catch (err) {
+            return false;
+          }
+        }
+        let num = 0;
+        if (0 < self.set.length) {
+          while (!testSet(self.set[num], tmp, self.options)) {
+            num = num + 1;
+          }
+          return true;
+        }
+        return false;
+      } else {
+        return false;
+      }
+    }
+  }
+];
+let tmp = new _mod15348();
+let closure_4 = tmp;
+function isNullSet(item10132) {
+  return "<0.0.0-0" === item10132.value;
+}
+function isAny(value) {
+  return "" === value.value;
+}
+function isSatisfiable(arg0, arg1) {
 
-export default _createClass(Comparator, items, items1);
+}
+function parseComparator(arg0, arg1) {
+
+}
+function isX(arg0) {
+
+}
+function replaceTildes(arg0, arg1) {
+
+}
+function replaceTilde(arg0, arg1) {
+
+}
+function replaceCarets(arg0, arg1) {
+
+}
+function replaceCaret(arg0, arg1) {
+
+}
+function replaceXRanges(arg0, arg1) {
+
+}
+function replaceXRange(arg0, arg1) {
+
+}
+function replaceStars(arg0, arg1) {
+
+}
+function replaceGTE0(arg0, arg1) {
+
+}
+function hyphenReplace(includePrerelease) {
+  let closure_0 = includePrerelease;
+  return (arg0, arg1, str, str2, str3, arg5, arg6, arg7, str4, str5, str6, arg11) => {
+    if (typeof isX === "function") {
+      let tmp3 = !str;
+      if (str) {
+        tmp3 = "x" === str.toLowerCase();
+      }
+      if (!tmp3) {
+        tmp3 = "*" === str;
+      }
+      str4 = "";
+      if (!tmp3) {
+        if (typeof isX === "function") {
+          let combined;
+          let tmp5 = !str2;
+          if (str2) {
+            tmp5 = "x" === str2.toLowerCase();
+          }
+          if (!tmp5) {
+            tmp5 = "*" === str2;
+          }
+          if (tmp5) {
+            let str16 = "";
+            if (includePrerelease) {
+              str16 = "-0";
+            }
+            const _HermesInternal4 = HermesInternal;
+            combined = ">=" + str + ".0.0" + str16;
+          } else if (typeof isX === "function") {
+            let tmp7 = !str3;
+            if (str3) {
+              tmp7 = "x" === str3.toLowerCase();
+            }
+            if (!tmp7) {
+              tmp7 = "*" === str3;
+            }
+            if (tmp7) {
+              let str12 = "";
+              if (includePrerelease) {
+                str12 = "-0";
+              }
+              const _HermesInternal3 = HermesInternal;
+              combined = ">=" + str + "." + str2 + ".0" + str12;
+            } else {
+              const tmp9 = arg5;
+              if (tmp9) {
+                const _HermesInternal2 = HermesInternal;
+                combined = ">=" + arg1;
+              } else {
+                let str9 = "";
+                if (includePrerelease) {
+                  str9 = "-0";
+                }
+                const _HermesInternal = HermesInternal;
+                combined = ">=" + arg1 + str9;
+              }
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+          str4 = combined;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      if (typeof isX === "function") {
+        let tmp22 = !str4;
+        if (str4) {
+          tmp22 = "x" === str4.toLowerCase();
+        }
+        if (!tmp22) {
+          tmp22 = "*" === str4;
+        }
+        let str21 = "";
+        if (!tmp22) {
+          if (typeof isX === "function") {
+            let combined1;
+            let tmp24 = !str5;
+            if (str5) {
+              tmp24 = "x" === str5.toLowerCase();
+            }
+            if (!tmp24) {
+              tmp24 = "*" === str5;
+            }
+            if (tmp24) {
+              const _HermesInternal9 = HermesInternal;
+              combined1 = "<" + +str4 + 1 + ".0.0-0";
+            } else if (typeof isX === "function") {
+              let tmp26 = !str6;
+              if (str6) {
+                tmp26 = "x" === str6.toLowerCase();
+              }
+              if (!tmp26) {
+                tmp26 = "*" === str6;
+              }
+              if (tmp26) {
+                const _HermesInternal8 = HermesInternal;
+                combined1 = "<" + str4 + "." + +str5 + 1 + ".0-0";
+              } else {
+                const tmp28 = arg11;
+                if (tmp28) {
+                  const _HermesInternal7 = HermesInternal;
+                  combined1 = "<=" + str4 + "." + str5 + "." + str6 + "-" + arg11;
+                } else {
+                  const tmp29 = includePrerelease;
+                  if (tmp29) {
+                    const _HermesInternal6 = HermesInternal;
+                    combined1 = "<" + str4 + "." + str5 + "." + +str6 + 1 + "-0";
+                  } else {
+                    const _HermesInternal5 = HermesInternal;
+                    combined1 = "<=" + arg7;
+                  }
+                }
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+            str21 = combined1;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        const _HermesInternal10 = HermesInternal;
+        const str43 = "" + str4 + " " + str21;
+        return str43.trim();
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+}
+function testSet(arg0, prerelease, options) {
+  let num = 0;
+  if (0 < arg0.length) {
+    const obj = arg0[num];
+    while (obj.test(prerelease)) {
+      num = num + 1;
+    }
+    return false;
+  }
+  if (prerelease.prerelease.length) {
+    if (!options.includePrerelease) {
+      let num2 = 0;
+      if (0 < arg0.length) {
+        while (true) {
+          let tmp5 = _mod15321(arg0[num2].semver);
+          if (arg0[num2].semver !== _mod15346.ANY) {
+            if (arg0[num2].semver.prerelease.length > 0) {
+              let semver = arg0[num2].semver;
+              if (semver.major === prerelease.major) {
+                if (semver.minor === prerelease.minor) {
+                  if (semver.patch === prerelease.patch) {
+                    break;
+                  }
+                }
+              }
+            }
+          }
+          num2 = num2 + 1;
+        }
+        return true;
+      }
+      return false;
+    }
+  }
+  return true;
+}
+
+export default _createClass(Range, items);

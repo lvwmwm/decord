@@ -1,14 +1,14 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 16933
+// Function ID: 16934
 // Name: FileWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16935, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16934, 5668, 2]
 
-// Module 16934 (FileWarningIcon)
+// Module 16933 (FileWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 16935 */;
+import AssetRegistry from "AssetRegistry" /* 16934 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 13684
-// Function ID: 13685
+// Module ID: 13683
+// Function ID: 13684
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13662, 1087, 21, 4971, 587, 1505, 5593, 13676, 6374, 13671, 1202, 1128, 5234, 7007, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 13661, 1087, 21, 4971, 587, 1505, 5593, 13675, 6374, 13670, 1202, 1128, 5234, 7007, 5244, 2]
 // Exports: default
 
-// Module 13684 (HubEmailConnectionSubmitSchool)
+// Module 13683 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
@@ -13,8 +13,8 @@ import useNavigation from "useNavigation" /* 1505 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
 import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7007 */;
-import HubConstants from "HubConstants" /* 13662 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13671 */;
+import HubConstants from "HubConstants" /* 13661 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp41) {
           closure_2 = tmp41;

@@ -299,7 +299,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeVerifi
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -330,7 +330,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeVerifi
                   return obj;
                 } else {
                   c1 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp4) {
                 c1 = 3;
@@ -728,7 +728,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeVerifi
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 try {
@@ -759,7 +759,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeVerifi
                     return obj;
                   } else {
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } catch (tmp4) {
                   c1 = 3;

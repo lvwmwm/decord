@@ -1,11 +1,11 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11431
+// Function ID: 11432
 // Name: useStreamError
-// Dependencies: [11423, 5897, 558, 576, 504, 2]
+// Dependencies: [11425, 5897, 558, 576, 504, 2]
 
-// Module 11429 (useStreamError)
+// Module 11431 (useStreamError)
 import AVError from "AVError" /* 5897 */;
-import AVErrorStore from "AVErrorStore" /* 11423 */;
+import AVErrorStore from "AVErrorStore" /* 11425 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13304
+// Function ID: 13305
 // Name: DescriptionEllipsis
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 2]
 
-// Module 13305 (DescriptionEllipsis)
+// Module 13304 (DescriptionEllipsis)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

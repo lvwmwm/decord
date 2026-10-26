@@ -1,9 +1,9 @@
-// Module ID: 15000
-// Function ID: 15001
+// Module ID: 14999
+// Function ID: 15000
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [7585, 502, 6010, 4874, 2001, 1087, 3, 15001, 504, 1483, 584, 2]
+// Dependencies: [7585, 502, 6010, 4874, 2001, 1087, 3, 15000, 504, 1483, 584, 2]
 
-// Module 15000 (ConnectivityIndicatorStateStore)
+// Module 14999 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -60,7 +60,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj4 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp24 };
             if (CacheStore.hasCache()) {
-              const obj16 = state(15001);
+              const obj16 = state(15000);
               let num2 = obj16.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -85,7 +85,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj8 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp19 };
             if (CacheStore.hasCache()) {
-              const obj11 = state(15001);
+              const obj11 = state(15000);
               let num = obj11.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

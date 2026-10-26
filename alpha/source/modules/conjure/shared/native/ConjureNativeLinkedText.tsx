@@ -1,15 +1,15 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11823
+// Function ID: 11824
 // Name: ConjureNativeLinkedText
-// Dependencies: [19, 21, 11822, 11831, 558, 576, 5234, 2]
+// Dependencies: [19, 21, 11824, 11833, 558, 576, 5234, 2]
 // Exports: conjureLinkedNodes
 
-// Module 11821 (ConjureNativeLinkedText)
+// Module 11823 (ConjureNativeLinkedText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import conjureMarkup from "conjureMarkup" /* 11822 */;
-import conjureLinkifyBareDomains from "conjureLinkifyBareDomains" /* 11831 */;
+import conjureMarkup from "conjureMarkup" /* 11824 */;
+import conjureLinkifyBareDomains from "conjureLinkifyBareDomains" /* 11833 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

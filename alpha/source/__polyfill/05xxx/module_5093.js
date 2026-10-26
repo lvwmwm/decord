@@ -150,7 +150,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -303,7 +303,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
             riveFile = value;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp46) {
           closure_2 = tmp46;
           if (0 === c3) {

@@ -1,13 +1,13 @@
-// Module ID: 14086
-// Function ID: 14087
+// Module ID: 14085
+// Function ID: 14086
 // Name: PlayStationLinkDiscordConsent
-// Dependencies: [19, 14081, 1087, 9626, 21, 558, 576, 1505, 13525, 14087, 9627, 2]
+// Dependencies: [19, 14080, 1087, 9626, 21, 558, 576, 1505, 13524, 14086, 9627, 2]
 
-// Module 14086 (PlayStationLinkDiscordConsent)
+// Module 14085 (PlayStationLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 9626 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14081 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14080 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -124,14 +124,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   }, items1);
   const tmp6 = PlatformTypes;
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    PLAYSTATION_APPLICATION_ID = tmp(13525).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(13524).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
   } else {
-    PLAYSTATION_APPLICATION_ID = tmp(13525).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(13524).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
   }
   if (platformType === tmp6.PLAYSTATION_STAGING) {
-    PLAYSTATION = tmp(14087).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
+    PLAYSTATION = tmp(14086).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
   } else {
-    PLAYSTATION = tmp(14087).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
+    PLAYSTATION = tmp(14086).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
   }
   return jsx(navigation(9627).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
 });

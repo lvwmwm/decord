@@ -1,9 +1,9 @@
-// Module ID: 19136
-// Function ID: 19137
+// Module ID: 19135
+// Function ID: 19136
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1087, 7276, 21, 4971, 587, 558, 576, 5205, 11254, 1202, 4978, 1417, 1128, 6931, 6908, 6903, 7295, 19137, 1384, 5234, 6502, 6987, 2]
+// Dependencies: [32, 19, 17, 1087, 7276, 21, 4971, 587, 558, 576, 5205, 11256, 1202, 4978, 1417, 1128, 6931, 6908, 6903, 7295, 19136, 1384, 5234, 6502, 6987, 2]
 
-// Module 19136 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 19135 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,8 +18,8 @@ import PlatformsDefault from "Platforms" /* 6502 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import Pressables from "Pressables" /* 6908 */;
 import XSmallIcon from "XSmallIcon" /* 6931 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11254 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 19137 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11256 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 19136 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 7276 */;
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
       const Avatar2 = tmp(1202).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
@@ -197,7 +197,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
           const Avatar = tmp(1202).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
@@ -353,7 +353,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
     const Avatar2 = tmp3(1202).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
         const Avatar = tmp3(1202).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
@@ -1335,7 +1335,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(19137);
+  let obj = metadataField(19136);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1344,7 +1344,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(19137);
+  const tmp2Result = tmp2(19136);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);

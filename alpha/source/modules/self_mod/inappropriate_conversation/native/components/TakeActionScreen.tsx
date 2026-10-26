@@ -1,21 +1,21 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17096
+// Function ID: 17097
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4913, 1392, 10924, 21, 4971, 587, 558, 576, 504, 10965, 10968, 1505, 7414, 7422, 10937, 8108, 5663, 1128, 5662, 5244, 10976, 9972, 8522, 8093, 5660, 5234, 2]
+// Dependencies: [5, 32, 19, 17, 4913, 1392, 10926, 21, 4971, 587, 558, 576, 504, 10967, 10970, 1505, 7414, 7422, 10939, 8108, 5663, 1128, 5662, 5244, 10978, 9972, 8522, 8093, 5660, 5234, 2]
 
-// Module 17097 (TakeActionScreen)
+// Module 17096 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 5660 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7422 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10937 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 10924 */;
+import Constants from "Constants" /* 10926 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -284,7 +284,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -335,7 +335,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
                   trackAnalyticsEvent(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } catch (tmp21) {
                 c2 = 3;
                 throw tmp21;
@@ -458,7 +458,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
           closure_128_3(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

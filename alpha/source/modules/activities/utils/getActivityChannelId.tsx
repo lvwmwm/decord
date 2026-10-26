@@ -1,10 +1,10 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14318
+// Function ID: 14319
 // Name: getActivityChannelId
 // Dependencies: [4827, 4823, 5630, 2]
 // Exports: default
 
-// Module 14319 (getActivityChannelId)
+// Module 14318 (getActivityChannelId)
 import ChannelRecord from "ChannelRecord" /* 4827 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;

@@ -1,12 +1,12 @@
-// Module ID: 19012
-// Function ID: 19013
+// Module ID: 19011
+// Function ID: 19012
 // Name: getActionInfo
-// Dependencies: [12811, 7018, 8551, 12802, 13386, 19013, 2]
+// Dependencies: [12811, 7018, 8551, 12802, 13385, 19012, 2]
 // Exports: getActionInfo
 
-// Module 19012 (getActionInfo)
+// Module 19011 (getActionInfo)
 import Constants from "Constants" /* 12811 */;
-import BaseActionInfo from "BaseActionInfo" /* 19013 */;
+import BaseActionInfo from "BaseActionInfo" /* 19012 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;
@@ -27,7 +27,7 @@ export const getActionInfo = function getActionInfo(actionType, action, triggerT
     } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === actionType) {
       CircleXIcon = tmp(12802).ClockWarningIcon;
     } else if (AutomodActionType.QUARANTINE_USER === actionType) {
-      CircleXIcon = tmp(13386).ChatXIcon;
+      CircleXIcon = tmp(13385).ChatXIcon;
     }
     if (CircleXIcon == null) {
       CircleXIcon = tmp(7018).CircleXIcon;

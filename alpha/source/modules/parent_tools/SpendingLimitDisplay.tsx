@@ -1,15 +1,15 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16200
+// Function ID: 16201
 // Name: SpendingLimitDisplay
-// Dependencies: [1246, 7645, 1394, 558, 576, 504, 16112, 7339, 7340, 1128, 2536, 2]
+// Dependencies: [1246, 7645, 1394, 558, 576, 504, 16111, 7339, 7340, 1128, 2536, 2]
 
-// Module 16201 (SpendingLimitDisplay)
+// Module 16200 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _modDef2536 from "module_2536" /* 2536 */;
 import PriceUtils from "PriceUtils" /* 7339 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16112 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16111 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

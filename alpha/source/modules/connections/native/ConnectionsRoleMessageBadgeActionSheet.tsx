@@ -1,7 +1,7 @@
 // Module ID: 12766
 // Function ID: 12767
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1406, 502, 4883, 4877, 4845, 12767, 7276, 1087, 21, 4971, 587, 558, 576, 1128, 7275, 6919, 5234, 5205, 12, 5252, 6502, 11257, 9134, 1202, 1417, 4978, 38, 7253, 7278, 504, 1267, 5711, 6830, 8668, 5210, 11261, 7299, 5244, 5265, 2]
+// Dependencies: [32, 19, 17, 1406, 502, 4883, 4877, 4845, 12767, 7276, 1087, 21, 4971, 587, 558, 576, 1128, 7275, 6919, 5234, 5205, 12, 5252, 6502, 11259, 9134, 1202, 1417, 4978, 38, 7253, 7278, 504, 1267, 5711, 6830, 8668, 5210, 11263, 7299, 5244, 5265, 2]
 
 // Module 12766 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
@@ -22,7 +22,7 @@ import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6919 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7275 */;
 import Constants2 from "Constants" /* 7276 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11261 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11263 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -290,7 +290,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     }
     if (includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      tmp10 = authStore3(tmp2(11257), obj2);
+      tmp10 = authStore3(tmp2(11259), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
       tmp10 = authStore3(tmp2(9134), obj3);
@@ -423,7 +423,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       }
       if (includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        tmp10 = authStore3(tmp2(11257), obj2);
+        tmp10 = authStore3(tmp2(11259), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
         tmp10 = authStore3(tmp2(9134), obj3);

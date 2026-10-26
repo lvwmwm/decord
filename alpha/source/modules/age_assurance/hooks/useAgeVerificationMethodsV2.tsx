@@ -27,7 +27,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   let tmp2;
   let tmp4;
   let tmp6;
-  const f99904 = () => callback.methodsV2OutageBannerMessage;
+  const f99913 = () => callback.methodsV2OutageBannerMessage;
   const tmp = _slicedToArray(react.useState(() => {
     let methodsV2 = callback.methodsV2;
     if (methodsV2 == null) {
@@ -38,8 +38,8 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   [tmp2, require] = tmp;
   const tmp3 = _slicedToArray(react.useState(() => callback.methodsV2FooterMessage), 2);
   [tmp4, importDefault] = tmp3;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(f99904), 2);
-  const tmp5 = _slicedToArray(react.useState(f99904), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(f99913), 2);
+  const tmp5 = _slicedToArray(react.useState(f99913), 2);
   [first, _asyncToGenerator] = react.useState(() => null == callback.methodsV2);
   [first1, _slicedToArray] = react.useState(false);
   react = react.useRef(true);
@@ -58,7 +58,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
             tmp66(false);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp66) {
         if (0 === c4) {

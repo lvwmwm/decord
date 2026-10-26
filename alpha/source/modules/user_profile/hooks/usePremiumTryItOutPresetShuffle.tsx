@@ -1,17 +1,17 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 15910
+// Function ID: 15911
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8649, 1087, 558, 576, 5205, 4978, 15912, 8656, 15840, 7086, 1267, 1128, 2]
+// Dependencies: [19, 8649, 1087, 558, 576, 5205, 4978, 15911, 8656, 15839, 7086, 1267, 1128, 2]
 
-// Module 15911 (usePremiumTryItOutPresetShuffle)
+// Module 15910 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import shared from "shared" /* 4978 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7086 */;
 import UserProfileActionCreators from "UserProfileActionCreators" /* 8656 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15840 */;
-import TryItOutPresets from "TryItOutPresets" /* 15912 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15839 */;
+import TryItOutPresets from "TryItOutPresets" /* 15911 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "gap" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "gap" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "gap" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "gap" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -196,7 +196,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "gap" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

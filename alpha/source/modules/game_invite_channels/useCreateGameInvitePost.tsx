@@ -1,18 +1,18 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 13719
+// Function ID: 13720
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11192, 6498, 7760, 1087, 4830, 558, 576, 7379, 13721, 11353, 504, 9663, 7761, 2]
+// Dependencies: [5, 32, 19, 11194, 6498, 7760, 1087, 4830, 558, 576, 7379, 13720, 11355, 504, 9663, 7761, 2]
 
-// Module 13720 (useCreateGameInvitePost)
+// Module 13719 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;
 import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7379 */;
 import SlowmodeStore2 from "SlowmodeStore" /* 7760 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11353 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11192 */;
+import LocalActivityStore from "LocalActivityStore" /* 11194 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -491,7 +491,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c2;
@@ -537,7 +537,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
           c2 = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

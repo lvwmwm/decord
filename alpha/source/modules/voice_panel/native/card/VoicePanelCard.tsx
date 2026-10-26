@@ -1,9 +1,9 @@
-// Module ID: 18557
-// Function ID: 18558
+// Module ID: 18556
+// Function ID: 18557
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6006, 6642, 5714, 6685, 10898, 10896, 18447, 10901, 1087, 5632, 10899, 21, 5052, 5234, 5258, 1202, 4971, 587, 558, 576, 504, 7829, 6645, 6886, 1128, 5244, 10897, 11422, 5739, 14324, 11424, 11421, 18558, 11430, 18443, 5206, 5247, 9419, 5669, 7168, 5252, 18560, 12071, 9976, 5037, 7253, 18492, 18504, 18446, 18561, 8668, 18562, 5826, 5297, 18563, 10900, 18564, 18565, 18566, 18567, 18568, 18578, 2]
+// Dependencies: [32, 19, 17, 6006, 6642, 5714, 6685, 10900, 10898, 18446, 10903, 1087, 5632, 10901, 21, 5052, 5234, 5258, 1202, 4971, 587, 558, 576, 504, 7829, 6645, 6886, 1128, 5244, 10899, 11424, 5739, 14323, 11426, 11423, 18557, 11432, 18442, 5206, 5247, 9419, 5669, 7168, 5252, 18559, 12073, 9976, 5037, 7253, 18491, 18503, 18445, 18560, 8668, 18561, 5826, 5297, 18562, 10902, 18563, 18564, 18565, 18566, 18567, 18577, 2]
 
-// Module 18557 (VoicePanelCard)
+// Module 18556 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,21 +19,21 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
 import StreamActionCreators from "StreamActionCreators" /* 7829 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9976 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10896 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10899 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10901 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12071 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18446 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18447 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18560 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18561 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10901 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10903 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12073 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18445 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18446 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18559 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18560 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import SoundboardStore_mod from "SoundboardStore" /* 6006 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import SpeakingStore from "SpeakingStore" /* 6685 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10898 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

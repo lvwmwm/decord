@@ -1,10 +1,10 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11309
+// Function ID: 11310
 // Name: channel_permissions/ChannelPermissionsUtils
-// Dependencies: [1087, 1267, 5210, 8988, 2002, 11308, 2]
+// Dependencies: [1087, 1267, 5210, 8988, 2002, 11310, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
-// Module 11307 (channel_permissions/ChannelPermissionsUtils)
+// Module 11309 (channel_permissions/ChannelPermissionsUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -33,6 +33,6 @@ export const openChannelMembersActionSheet = function openChannelMembersActionSh
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channelId: id, guildId: guild_id };
-  const tmp3 = asyncRequire(11308, dependencyMap.paths);
+  const tmp3 = asyncRequire(11310, dependencyMap.paths);
   openLazy(tmp3, "channel-members-" + id, obj2);
 };

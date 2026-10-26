@@ -1,14 +1,14 @@
 // Module ID: 12710
 // Function ID: 12711
 // Name: joinFrameActivity
-// Dependencies: [5, 2045, 4823, 5630, 6776, 1087, 2026, 584, 11396, 11354, 5626, 11397, 10783, 1128, 11415, 12711, 11210, 10778, 6375, 12712, 9255, 7411, 11343, 2]
+// Dependencies: [5, 2045, 4823, 5630, 6776, 1087, 2026, 584, 11398, 11356, 5626, 11399, 10783, 1128, 11417, 12711, 11212, 10778, 6375, 12712, 9255, 7411, 11345, 2]
 // Exports: default
 
 // Module 12710 (joinFrameActivity)
 import Constants2 from "Constants" /* 2026 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11343 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11345 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -46,7 +46,7 @@ let obj = function _joinFrameActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c8;
@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
               break;
             }
@@ -476,7 +476,7 @@ obj = function _getVoiceChannelAppChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -566,7 +566,7 @@ obj = function _getActivityChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -593,7 +593,7 @@ obj = function _getActivityChannelId() {
         } else if (1 === c3) {
           c4 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

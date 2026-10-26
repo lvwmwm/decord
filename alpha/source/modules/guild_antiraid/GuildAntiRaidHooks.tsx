@@ -1,22 +1,22 @@
-// Module ID: 13760
-// Function ID: 13761
+// Module ID: 13759
+// Function ID: 13760
 // Name: GuildAntiRaidHooks
-// Dependencies: [1246, 4845, 4903, 5002, 1392, 11236, 8386, 1087, 558, 576, 573, 11, 8385, 1099, 4908, 13761, 2]
+// Dependencies: [1246, 4845, 4903, 5002, 1392, 11238, 8386, 1087, 558, 576, 573, 11, 8385, 1099, 4908, 13760, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 13760 (GuildAntiRaidHooks)
+// Module 13759 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8385 */;
 import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8386 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13761 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13760 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11236 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11238 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

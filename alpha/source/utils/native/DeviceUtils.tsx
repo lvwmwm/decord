@@ -15,7 +15,7 @@ const mediaPerformanceClass = "mediaPerformanceClass";
 let result = size.fileFinishedImporting("utils/native/DeviceUtils.tsx");
 
 export const isIpadOS = function isIpadOS() {
-  return "iPad" === closure_3.deviceModel;
+  return "iPad" === closure_3.deviceModel || "iPhone19,4" === closure_3.deviceProduct;
 };
 export const isGestureNavigationEnabled = function isGestureNavigationEnabled() {
   return closure_3.isGestureNavigationEnabled;

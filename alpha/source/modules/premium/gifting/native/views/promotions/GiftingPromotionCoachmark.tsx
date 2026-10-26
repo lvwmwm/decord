@@ -1,9 +1,9 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18390
+// Function ID: 18391
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4972, 9520, 1087, 4820, 21, 4971, 587, 558, 576, 504, 10509, 10494, 10510, 6660, 5210, 7253, 7278, 10446, 1384, 9401, 5669, 10511, 5234, 12886, 1128, 5244, 5265, 2]
+// Dependencies: [19, 17, 4972, 9520, 1087, 4820, 21, 4971, 587, 558, 576, 504, 10509, 10494, 10510, 6660, 5210, 7253, 7278, 10446, 1384, 9401, 5669, 10511, 5234, 12885, 1128, 5244, 5265, 2]
 
-// Module 18391 (GiftingPromotionCoachmark)
+// Module 18390 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
@@ -362,7 +362,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingPromo
     const obj12 = { grow: true, icon: closure_11(GiftIcon, obj13), text: intl.string(tmp2(1128).t.Ve9Ge6), onPress: tmp19 };
     const Button = tmp2(5244).Button;
     obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
-    GiftIcon = tmp2(12886).GiftIcon;
+    GiftIcon = tmp2(12885).GiftIcon;
     intl = tmp2(1128).intl;
     items5[3] = closure_11(Button, obj12);
     tmp21Result2 = tmp21(BottomSheet, obj2);

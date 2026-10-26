@@ -1,9 +1,9 @@
-// Module ID: 13896
-// Function ID: 13897
+// Module ID: 13895
+// Function ID: 13896
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8681, 13897, 4820, 21, 4971, 587, 558, 576, 1633, 6672, 5151, 12886, 1128, 2632, 5244, 13898, 5234, 10502, 5212, 5213, 10505, 13899, 5001, 4807, 8673, 504, 2]
+// Dependencies: [19, 17, 8681, 13896, 4820, 21, 4971, 587, 558, 576, 1633, 6672, 5151, 12885, 1128, 2632, 5244, 13897, 5234, 10502, 5212, 5213, 10505, 13898, 5001, 4807, 8673, 504, 2]
 
-// Module 13896 (GiftBadgePostPurchase)
+// Module 13895 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -19,10 +19,10 @@ import Text_Text from "Text/Text" /* 5234 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import BadgeId from "BadgeId" /* 8673 */;
 import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10502 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13899 */;
+import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13898 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13897 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13896 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const GiftingBadgeProgressDefault = tmp4(13898);
+const GiftingBadgeProgressDefault = tmp4(13897);
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
       }
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-    const GiftIcon = tmp(12886).GiftIcon;
+    const GiftIcon = tmp(12885).GiftIcon;
     const tmp10 = closure_10(GiftIcon, obj2);
     const intl = tmp(1128).intl;
     const stringResult = intl.string(_modDef2632.g86YiI);
@@ -247,7 +247,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
   const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2632.g86YiI), onPress: callback };
   const Button = onSendGift(5244).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(12886).GiftIcon;
+  GiftIcon = onSendGift(12885).GiftIcon;
   intl = onSendGift(1128).intl;
   items1 = [closure_10(Button, obj2), ];
   const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2632["sa/cfM"]), onPress: callback1 };

@@ -1,9 +1,9 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11575
+// Function ID: 11576
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5211, 4828, 1087, 21, 1128, 4971, 587, 558, 576, 5604, 504, 10753, 5263, 8106, 11563, 6687, 7883, 6657, 7873, 7869, 1202, 5234, 5245, 5244, 11565, 11387, 5205, 4993, 10887, 8502, 2]
+// Dependencies: [5, 32, 19, 17, 5211, 4828, 1087, 21, 1128, 4971, 587, 558, 576, 5604, 504, 10753, 5263, 8106, 11565, 6687, 7883, 6657, 7873, 7869, 1202, 5234, 5245, 5244, 11567, 11389, 5205, 4993, 10889, 8502, 2]
 
-// Module 11573 (GlobalStageChannelStatus)
+// Module 11575 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,9 +11,9 @@ import intl8 from "intl" /* 1128 */;
 import useChannelNameDefault from "useChannelName" /* 5604 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7873 */;
 import PushNotificationDefault from "PushNotification" /* 10753 */;
-import StatusBarDefault from "StatusBar" /* 10887 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11387 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11565 */;
+import StatusBarDefault from "StatusBar" /* 10889 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11389 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -156,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(tmp22);
     let tmp25;
-    const useGetStageRTCPanelHeight = tmp(11563).useGetStageRTCPanelHeight;
-    tmp(11563);
+    const useGetStageRTCPanelHeight = tmp(11565).useGetStageRTCPanelHeight;
+    tmp(11565);
     if (channel != null) {
       class S {
         constructor() {
@@ -185,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp25) {
             closure_2 = tmp25;
             if (0 === c3) {
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -524,7 +524,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp25) {
           if (0 === c3) {
             c5 = 3;
@@ -580,7 +580,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     id2 = channel.id;
   }
   const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-  channel(11563);
+  channel(11565);
   if (channel != null) {
     let id = channel.id;
   }
@@ -911,7 +911,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     stringResult = intl.string(id(1128).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11387)(id);
+  let invitedHeaderText = tmp3(11389)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);

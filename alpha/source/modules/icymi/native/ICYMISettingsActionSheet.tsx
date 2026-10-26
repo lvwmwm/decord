@@ -1,10 +1,10 @@
-// Module ID: 17902
-// Function ID: 17903
+// Module ID: 17901
+// Function ID: 17902
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 19, 17, 6771, 8835, 8823, 1087, 21, 4971, 587, 504, 8842, 7298, 6987, 1128, 7295, 8841, 6903, 8836, 1108, 11, 7206, 5210, 17903, 6672, 17905, 2002, 17914, 2]
+// Dependencies: [5, 19, 17, 6771, 8835, 8823, 1087, 21, 4971, 587, 504, 8842, 7298, 6987, 1128, 7295, 8841, 6903, 8836, 1108, 11, 7206, 5210, 17902, 6672, 17904, 2002, 17913, 2]
 // Exports: default
 
-// Module 17902 (ICYMISettingsActionSheet)
+// Module 17901 (ICYMISettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
@@ -124,7 +124,7 @@ export default function ICYMISettingsActionSheet() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -155,7 +155,7 @@ export default function ICYMISettingsActionSheet() {
                 const obj = c1(paths[22]);
                 obj.hideActionSheet();
                 paths = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp11) {
               paths = 3;

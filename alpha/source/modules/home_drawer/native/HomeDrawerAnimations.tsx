@@ -1,9 +1,9 @@
-// Module ID: 17445
-// Function ID: 17446
+// Module ID: 17444
+// Function ID: 17445
 // Name: HomeDrawerAnimations
 // Dependencies: [5052, 2]
 
-// Module 17445 (HomeDrawerAnimations)
+// Module 17444 (HomeDrawerAnimations)
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import size from "module_2" /* 2 */;
 

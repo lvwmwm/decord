@@ -1,9 +1,9 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16322
+// Function ID: 16323
 // Name: BountiesModalProgress
 // Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 5052, 5206, 5209, 2]
 
-// Module 16323 (BountiesModalProgress)
+// Module 16322 (BountiesModalProgress)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

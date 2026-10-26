@@ -1,7 +1,7 @@
 // Module ID: 7510
 // Function ID: 7511
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7511, 1087, 6699, 1394, 21, 7512, 6672, 6697, 558, 576, 14886, 1505, 7253, 573, 1400, 13462, 1128, 8566, 5244, 2]
+// Dependencies: [5, 19, 17, 7511, 1087, 6699, 1394, 21, 7512, 6672, 6697, 558, 576, 14885, 1505, 7253, 573, 1400, 13461, 1128, 8566, 5244, 2]
 
 // Module 7510 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp9) {
           c5 = 3;

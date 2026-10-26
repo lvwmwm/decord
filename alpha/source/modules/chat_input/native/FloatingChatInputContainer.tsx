@@ -1,9 +1,9 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 13307
+// Function ID: 13308
 // Name: FloatingChatInputContainer
 // Dependencies: [32, 19, 21, 5052, 558, 576, 5252, 587, 1647, 5161, 1631, 5206, 5209, 2]
 
-// Module 13308 (FloatingChatInputContainer)
+// Module 13307 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

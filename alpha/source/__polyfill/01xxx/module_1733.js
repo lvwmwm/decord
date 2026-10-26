@@ -94,9 +94,9 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "emoji",
+      current: "enabled",
       lastTimestamp: null,
-      startTimestamp: "EMBEDDED_ACTIVITY_SET_PANEL_MODE",
+      startTimestamp: "set_live_reload",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

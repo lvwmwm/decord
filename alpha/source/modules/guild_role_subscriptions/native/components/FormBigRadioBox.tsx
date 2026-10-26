@@ -1,9 +1,9 @@
-// Module ID: 19277
-// Function ID: 19278
+// Module ID: 19276
+// Function ID: 19277
 // Name: FormBigRadioBox
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 2]
 
-// Module 19277 (FormBigRadioBox)
+// Module 19276 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

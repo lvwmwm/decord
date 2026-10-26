@@ -1,9 +1,9 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11710
+// Function ID: 11711
 // Name: CallTile
-// Dependencies: [19, 17, 6642, 1392, 10880, 5632, 21, 4971, 4968, 587, 558, 576, 7253, 1633, 504, 5710, 8668, 11421, 11680, 11441, 11450, 11709, 11714, 11715, 11716, 11717, 11718, 1202, 11365, 5052, 5206, 11719, 2]
+// Dependencies: [19, 17, 6642, 1392, 10882, 5632, 21, 4971, 4968, 587, 558, 576, 7253, 1633, 504, 5710, 8668, 11423, 11682, 11443, 11452, 11711, 11716, 11717, 11718, 11719, 11720, 1202, 11367, 5052, 5206, 11721, 2]
 
-// Module 11708 (CallTile)
+// Module 11710 (CallTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -12,18 +12,18 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11709 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11714 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11715 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11716 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11717 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11718 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11719 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11711 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11716 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11717 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11718 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11719 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11720 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11721 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelCallStore from "ChannelCallStore" /* 10880 */;
+import ChannelCallStore from "ChannelCallStore" /* 10882 */;
 import CallConstants from "CallConstants" /* 5632 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -515,7 +515,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamPrevie
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { aspectRatio: "duration", borderRadius: false };
+      const obj2 = { aspectRatio: "emoji", borderRadius: false };
       cResult[3] = obj2;
       tmp6 = obj2;
     } else {
@@ -572,7 +572,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamPrevie
   obj2 = {
     guildId: participant.stream.guildId,
     userId: participant.user.id,
-    style: { aspectRatio: "duration", borderRadius: false },
+    style: { aspectRatio: "emoji", borderRadius: false },
     disableTransition: true,
     onPress() {
       return closure_1_8();
@@ -672,7 +672,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   const tmp4 = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  reveal = react.useContext(reveal(11365).RevealContext).reveal;
+  reveal = react.useContext(reveal(11367).RevealContext).reveal;
   let obj2 = reveal(5052);
   const fn = function l() {
     let obj2;
@@ -843,7 +843,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const tmp5 = reveal;
-  reveal = react.useContext(reveal(11365).RevealContext).reveal;
+  reveal = react.useContext(reveal(11367).RevealContext).reveal;
   let obj = reveal(5052);
   class A {
     constructor() {
@@ -893,7 +893,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   items1 = [isActiveStream, ];
   const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
   obj6 = { style: tmp.usernameContainer, children: items2 };
-  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11719), { channel, participant })];
+  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11721), { channel, participant })];
   items1[1] = closure_13(closure_5, obj5);
   return closure_15(View, obj3);
 });

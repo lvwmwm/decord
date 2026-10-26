@@ -1,14 +1,14 @@
-// Module ID: 19049
-// Function ID: 19050
+// Module ID: 19048
+// Function ID: 19049
 // Name: HomeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 19050, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 19049, 5668, 2]
 
-// Module 19049 (HomeIcon)
+// Module 19048 (HomeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 19050 */;
+import AssetRegistry from "AssetRegistry" /* 19049 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

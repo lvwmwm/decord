@@ -1,7 +1,7 @@
 // Module ID: 10692
 // Function ID: 10693
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10693, 6683, 4828, 6790, 4827, 7213, 4823, 7636, 4845, 4903, 6771, 4913, 4874, 6704, 1392, 4830, 1087, 10024, 21, 7878, 2002, 7867, 1128, 3830, 10694, 5210, 10696, 1114, 10816, 8668, 5676, 7411, 5604, 5908, 10120, 10025, 5678, 6672, 10818, 3412, 9646, 10839, 8545, 10841, 10856, 10857, 9050, 10859, 7209, 5151, 6931, 10861, 7957, 10862, 10863, 10865, 10867, 10868, 10870, 7063, 7206, 10872, 9140, 7215, 7210, 10874, 10093, 8544, 10876, 10877, 8568, 8542, 10878, 13845, 5710, 7869, 9971, 8108, 13846, 11535, 13847, 7061, 6830, 7488, 5682, 8975, 10412, 7285, 5662, 558, 576, 7253, 7278, 10843, 504, 4831, 6813, 9724, 4799, 6883, 1202, 13850, 11010, 13851, 13857, 7345, 13862, 13863, 13866, 7298, 1630, 11011, 7294, 2]
+// Dependencies: [5, 19, 10693, 6683, 4828, 6790, 4827, 7213, 4823, 7636, 4845, 4903, 6771, 4913, 4874, 6704, 1392, 4830, 1087, 10024, 21, 7878, 2002, 7867, 1128, 3830, 10694, 5210, 10696, 1114, 10818, 8668, 5676, 7411, 5604, 5908, 10120, 10025, 5678, 6672, 10820, 3412, 9646, 10841, 8545, 10843, 10858, 10859, 9050, 10861, 7209, 5151, 6931, 10863, 7957, 10864, 10865, 10867, 10869, 10870, 10872, 7063, 7206, 10874, 9140, 7215, 7210, 10876, 10093, 8544, 10878, 10879, 8568, 8542, 10880, 13844, 5710, 7869, 9971, 8108, 13845, 11537, 13846, 7061, 6830, 7488, 5682, 8975, 10412, 7285, 5662, 558, 576, 7253, 7278, 10845, 504, 4831, 6813, 9724, 4799, 6883, 1202, 13849, 11012, 13850, 13856, 7345, 13861, 13862, 13865, 7298, 1630, 11013, 7294, 2]
 
 // Module 10692 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -33,16 +33,16 @@ import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSh
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 10696 */;
-import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10841 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10861 */;
-import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10862 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10865 */;
-import markChannelUnreadDefault from "markChannelUnread" /* 10870 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10876 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10877 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13845 */;
-import openAppChannelToChatDefault from "openAppChannelToChat" /* 13846 */;
-import closeFrameDefault from "closeFrame" /* 13847 */;
+import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10843 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10863 */;
+import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10864 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10867 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 10872 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10878 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10879 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13844 */;
+import openAppChannelToChatDefault from "openAppChannelToChat" /* 13845 */;
+import closeFrameDefault from "closeFrame" /* 13846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6683 */;
@@ -101,7 +101,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -353,7 +353,7 @@ function getActionSheetButtons(channel) {
         onPress() {
               obj = ModalActionCreatorsDefault;
               const obj2 = { channelId: channel.id };
-              obj.pushLazy(asyncRequire(10818, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(10820, dependencyMap.paths), obj2);
             }
       };
       intl6 = tmp14(tmp15[24]).intl;
@@ -786,7 +786,7 @@ function getActionSheetButtons(channel) {
                   obj.hideActionSheet();
                   const obj2 = ModalActionCreatorsDefault;
                   const obj3 = { channel };
-                  obj2.pushLazy(asyncRequire(10878, dependencyMap.paths), obj3);
+                  obj2.pushLazy(asyncRequire(10880, dependencyMap.paths), obj3);
                   hideLaunchPadDefault();
                 }
         };
@@ -825,7 +825,7 @@ function getActionSheetButtons(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } else {
                   try {
@@ -854,7 +854,7 @@ function getActionSheetButtons(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+352" };
                     }
                   } catch (tmp9) {
                     paths = 3;
@@ -1142,7 +1142,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(10843);
+  const tmpResult = tmp(10845);
   const isFavoritesGuildSelected = tmpResult.useIsFavoritesGuildSelected();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];

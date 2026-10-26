@@ -1,16 +1,16 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 11479
+// Function ID: 11480
 // Name: transformMessage
-// Dependencies: [1406, 4823, 4913, 1392, 1087, 11478, 2000, 1388, 5705, 6366, 9262, 2]
+// Dependencies: [1406, 4823, 4913, 1392, 1087, 11480, 2000, 1388, 5705, 6366, 9262, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 11477 (transformMessage)
+// Module 11479 (transformMessage)
 import Constants from "Constants" /* 1087 */;
 import Server from "Server" /* 2000 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
 import useMessageAuthor from "useMessageAuthor" /* 6366 */;
 import transformUserDefault from "transformUser" /* 9262 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11478 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 11480 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -21,7 +21,7 @@ let images, results;
 
 let tmp;
 const GlobalUtils = tmp(1388);
-const f110485 = (emoji) => {
+const f110500 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -369,7 +369,7 @@ export const transformMessageRecord = function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f110485),
+    reactions: mapped2.map(f110500),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -612,7 +612,7 @@ export const transformServerMessage = function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f110485);
+    mapped1 = reactions.map(f110500);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;

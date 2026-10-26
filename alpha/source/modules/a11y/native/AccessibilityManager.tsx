@@ -1,18 +1,18 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15683
+// Function ID: 15684
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4972, 1087, 1210, 15685, 584, 1267, 15688, 10902, 15686, 5036, 4978, 2]
+// Dependencies: [5, 17, 4972, 1087, 1210, 15684, 584, 1267, 15687, 10904, 15685, 5036, 4978, 2]
 
-// Module 15684 (AccessibilityManager)
+// Module 15683 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 5036 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10902 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 15685 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15686 */;
-import react_native from "react-native" /* 15688 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10904 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 15684 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15685 */;
+import react_native from "react-native" /* 15687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = {
             closure_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp11) {
           c3 = 3;

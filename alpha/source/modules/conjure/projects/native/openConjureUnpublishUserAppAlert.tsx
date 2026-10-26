@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11801
+// Function ID: 11802
 // Name: openConjureUnpublishUserAppAlert
 // Dependencies: [5, 32, 19, 2045, 21, 558, 576, 504, 10786, 1128, 3830, 5663, 5234, 5914, 5910, 2]
 // Exports: default
 
-// Module 11799 (openConjureUnpublishUserAppAlert)
+// Module 11801 (openConjureUnpublishUserAppAlert)
 import useAlertStore from "useAlertStore" /* 5910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -178,7 +178,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             obj7 = { app };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else {
             const intl = tmp4(stateFromStores[9]).intl;
             tmp4 = intl.string(require("module_3830")["rE/0SD"]);
@@ -293,7 +293,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else {
             const intl = tmp(c2[9]).intl;
             tmp = intl.string(tmp4(c2[10])["rE/0SD"]);

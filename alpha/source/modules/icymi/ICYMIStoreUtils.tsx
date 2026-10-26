@@ -1,12 +1,12 @@
-// Module ID: 17903
-// Function ID: 17904
+// Module ID: 17902
+// Function ID: 17903
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6010, 6771, 8823, 1087, 17904, 8840, 8836, 7206, 2002, 1087, 11, 8841, 558, 576, 504, 2]
+// Dependencies: [5, 6010, 6771, 8823, 1087, 17903, 8840, 8836, 7206, 2002, 1087, 11, 8841, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 17903 (ICYMIStoreUtils)
+// Module 17902 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1087 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 17904 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 17903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 6010 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp35) {
         c4 = 3;

@@ -1,19 +1,19 @@
-// Module ID: 17764
-// Function ID: 17765
+// Module ID: 17763
+// Function ID: 17764
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4905, 4827, 4823, 4901, 6814, 4845, 6771, 4913, 6704, 1392, 1087, 6705, 21, 4971, 558, 576, 504, 5156, 5153, 13823, 10872, 5234, 17765, 17766, 5604, 11, 17767, 17768, 13067, 17769, 17770, 17771, 17773, 17774, 17755, 2]
+// Dependencies: [19, 17, 4905, 4827, 4823, 4901, 6814, 4845, 6771, 4913, 6704, 1392, 1087, 6705, 21, 4971, 558, 576, 504, 5156, 5153, 13822, 10874, 5234, 17764, 17765, 5604, 11, 17766, 17767, 13066, 17768, 17769, 17770, 17772, 17773, 17754, 2]
 
-// Module 17764 (HomeDrawerGuildRow)
+// Module 17763 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useChannelName from "useChannelName" /* 5604 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 17769 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 17770 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 17771 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 17773 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 17774 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17768 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17769 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17770 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17772 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17773 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -338,9 +338,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(13823).BellZIcon;
+        BellSlashIcon = tmp3(13822).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10872).BellSlashIcon;
+        BellSlashIcon = tmp3(10874).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {
@@ -418,7 +418,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "duration", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
+      return { mentionChannel: "emoji", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
     } else {
       let tmp8 = disableSubtitle;
       const obj3 = disableSubtitle(onActiveHookChange[27]);

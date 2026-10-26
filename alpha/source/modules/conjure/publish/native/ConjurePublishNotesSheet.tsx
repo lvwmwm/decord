@@ -1,7 +1,7 @@
 // Module ID: 12383
 // Function ID: 12384
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4845, 4913, 1392, 21, 4971, 587, 558, 576, 5593, 12384, 5210, 11834, 1128, 3830, 7248, 7180, 5234, 5604, 5244, 7298, 2]
+// Dependencies: [5, 32, 19, 17, 4845, 4913, 1392, 21, 4971, 587, 558, 576, 5593, 12384, 5210, 11836, 1128, 3830, 7248, 7180, 5234, 5604, 5244, 7298, 2]
 
 // Module 12383 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import intl10 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11834 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11836 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -275,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -310,7 +310,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
             closure_128_2(true);
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp13) {
         c2 = 3;

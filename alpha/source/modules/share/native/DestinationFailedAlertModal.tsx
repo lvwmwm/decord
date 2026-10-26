@@ -1,9 +1,9 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12939
+// Function ID: 12940
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4823, 4845, 5712, 4913, 1392, 1098, 21, 4971, 587, 558, 576, 5604, 10688, 1202, 5234, 504, 5025, 12941, 5914, 5914, 1128, 2]
+// Dependencies: [19, 17, 4823, 4845, 5712, 4913, 1392, 1098, 21, 4971, 587, 558, 576, 5604, 10688, 1202, 5234, 504, 5025, 12940, 5914, 5914, 1128, 2]
 
-// Module 12940 (DestinationFailedAlertModal)
+// Module 12939 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -180,7 +180,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
       }
     }
     tmp16[0] = tmp4.row;
-    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: false };
+    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
     const Avatar = tmp(1202).Avatar;
     const tmp14 = closure_11;
     const tmp15 = View;
@@ -235,7 +235,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: false };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1202).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
     tmp13 = null;
     const Avatar = tmp2(1202).Avatar;
     const tmp10 = View;
@@ -333,8 +333,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12941).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const GuildIconWithChannelType = tmp(12941).GuildIconWithChannelType;
+  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12940).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const GuildIconWithChannelType = tmp(12940).GuildIconWithChannelType;
   const tmp14 = closure_10(GuildIconWithChannelType, obj4);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -355,9 +355,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12941).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(12940).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(12941).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(12940).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5234).Text, obj4);

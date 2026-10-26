@@ -1,18 +1,18 @@
-// Module ID: 17859
-// Function ID: 17860
+// Module ID: 17858
+// Function ID: 17859
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 6815, 6787, 17858, 6705, 558, 576, 504, 17860, 7206, 8740, 2]
+// Dependencies: [5, 32, 19, 6815, 6787, 17857, 6705, 558, 576, 504, 17859, 7206, 8740, 2]
 
-// Module 17859 (useNotificationCenterItemsLoader)
+// Module 17858 (useNotificationCenterItemsLoader)
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7206 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17860 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 6815 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6787 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 17858 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 17857 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -298,7 +298,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
                               const obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+352" };
                             }
                           } else {
                             try {
@@ -363,7 +363,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
                                 closure_1_7(false);
                               }
                               c3 = 3;
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+352" };
                             } catch (tmp22) {
                               c3 = 3;
                               throw tmp22;
@@ -642,7 +642,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -707,7 +707,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
           _undefined(false);
         }
         with_mentions = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp22) {
         with_mentions = 3;
         throw tmp22;

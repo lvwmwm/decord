@@ -1,10 +1,10 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12287
+// Function ID: 12288
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 558, 576, 12258, 12257, 8860, 1128, 3830, 2]
+// Dependencies: [5, 32, 19, 558, 576, 12260, 12259, 8860, 1128, 3830, 2]
 
-// Module 12285 (useConjureConnectActions)
-import conjureExternalConnections from "conjureExternalConnections" /* 12258 */;
+// Module 12287 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 12260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -80,7 +80,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -131,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                   obj.handleClick(obj8);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp33) {
               c3 = 3;
@@ -181,7 +181,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -232,7 +232,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                   obj.handleClick(obj8);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp33) {
               c3 = 3;

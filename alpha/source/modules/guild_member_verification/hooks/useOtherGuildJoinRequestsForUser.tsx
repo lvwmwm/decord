@@ -1,9 +1,9 @@
-// Module ID: 18036
-// Function ID: 18037
+// Module ID: 18035
+// Function ID: 18036
 // Name: useOtherGuildJoinRequestsForUser
 // Dependencies: [19, 6844, 558, 576, 504, 6843, 2]
 
-// Module 18036 (useOtherGuildJoinRequestsForUser)
+// Module 18035 (useOtherGuildJoinRequestsForUser)
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6843 */;
 import react from "react" /* 19 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6844 */;

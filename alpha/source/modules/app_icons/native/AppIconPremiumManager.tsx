@@ -1,9 +1,9 @@
-// Module ID: 18745
-// Function ID: 18746
+// Module ID: 18744
+// Function ID: 18745
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1392, 9865, 1087, 4996, 3, 9866, 7214, 1384, 14767, 4999, 14051, 1267, 2]
+// Dependencies: [5, 1392, 9865, 1087, 4996, 3, 9866, 7214, 1384, 14766, 4999, 14050, 1267, 2]
 
-// Module 18745 (AppIconPremiumManager)
+// Module 18744 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp62) {
           c6 = 3;

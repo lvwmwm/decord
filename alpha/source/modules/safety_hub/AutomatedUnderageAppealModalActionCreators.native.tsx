@@ -1,9 +1,9 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12836
+// Function ID: 12837
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 7898, 6656, 21, 12835, 584, 5210, 12838, 2002, 7897, 7921, 6657, 7927, 7883, 6672, 7934, 8088, 2]
+// Dependencies: [5, 7898, 6656, 21, 12834, 584, 5210, 12837, 2002, 7897, 7921, 6657, 7927, 7883, 6672, 7934, 8088, 2]
 
-// Module 12837 (AutomatedUnderageAppealModalActionCreators)
+// Module 12836 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(12838, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(12837, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp23) {
               c3 = 3;

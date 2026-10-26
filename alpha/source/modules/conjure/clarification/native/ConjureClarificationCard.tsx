@@ -1,7 +1,7 @@
 // Module ID: 12472
 // Function ID: 12473
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 4971, 587, 1128, 3830, 558, 576, 12473, 12474, 12475, 7008, 5234, 7959, 6931, 12477, 6987, 6900, 6905, 12481, 5244, 12484, 11817, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 1128, 3830, 558, 576, 12473, 12474, 12475, 7008, 5234, 7959, 6931, 12477, 6987, 6900, 6905, 12481, 5244, 12484, 11819, 2]
 
 // Module 12472 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
@@ -20,7 +20,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const f114647 = (item) => "" !== item;
+const f114660 = (item) => "" !== item;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -409,7 +409,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp63;
   let tmp64;
   let tmp8;
-  const f114662 = () => {
+  const f114675 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -452,8 +452,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f114662), 2);
-  const tmp9 = _slicedToArray(react.useState(f114662), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f114675), 2);
+  const tmp9 = _slicedToArray(react.useState(f114675), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -724,7 +724,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f114647);
+          const found = items.filter(f114660);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");

@@ -1,9 +1,9 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15095
+// Function ID: 15096
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1392, 1087, 13582, 21, 4971, 6651, 587, 558, 576, 13584, 1267, 1384, 5263, 1508, 6672, 5025, 1128, 8851, 7485, 15097, 6924, 5234, 15098, 15100, 1633, 7095, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 13581, 21, 4971, 6651, 587, 558, 576, 13583, 1267, 1384, 5263, 1508, 6672, 5025, 1128, 8851, 7485, 15096, 6924, 5234, 15097, 15099, 1633, 7095, 2]
 
-// Module 15096 (AddFriendModal)
+// Module 15095 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,8 +12,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import Navigator from "Navigator" /* 7095 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13582 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13584 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13581 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

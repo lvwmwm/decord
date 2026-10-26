@@ -1,10 +1,10 @@
-// Module ID: 13424
-// Function ID: 13425
+// Module ID: 13423
+// Function ID: 13424
 // Name: usePowerupActiveStatus
 // Dependencies: [4845, 5181, 5182, 1087, 5183, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 13424 (usePowerupActiveStatus)
+// Module 13423 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GameServerConstants from "GameServerConstants" /* 5183 */;

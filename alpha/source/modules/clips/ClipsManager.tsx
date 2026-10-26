@@ -1,9 +1,9 @@
-// Module ID: 19360
-// Function ID: 19361
+// Module ID: 19359
+// Function ID: 19360
 // Name: clips/ClipsManager
-// Dependencies: [5, 5733, 502, 4823, 2014, 5714, 7814, 2020, 8148, 1087, 6643, 5718, 7214, 14638, 5739, 6645, 1267, 4799, 584, 4785, 1384, 14637, 2]
+// Dependencies: [5, 5733, 502, 4823, 2014, 5714, 7814, 2020, 8148, 1087, 6643, 5718, 7214, 14637, 5739, 6645, 1267, 4799, 584, 4785, 1384, 14636, 2]
 
-// Module 19360 (clips/ClipsManager)
+// Module 19359 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -14,7 +14,7 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5733 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5739 */;
 import Constants3 from "Constants" /* 6643 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
-import ClipsExperiment from "ClipsExperiment" /* 14638 */;
+import ClipsExperiment from "ClipsExperiment" /* 14637 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -38,7 +38,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(14637);
+const isClipsEnabled = tmp(14636);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);
@@ -268,7 +268,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;

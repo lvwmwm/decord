@@ -1,9 +1,9 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17178
+// Function ID: 17179
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 5234, 6985, 6984, 6987, 7295, 14064, 6900, 6903, 15278, 11621, 8572, 15277, 5977, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 558, 576, 5234, 6985, 6984, 6987, 7295, 14063, 6900, 6903, 15277, 11623, 8572, 15276, 5977, 2]
 
-// Module 17179 (UserSettingsDesignSystemFormPrimitives)
+// Module 17178 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,9 +15,9 @@ import TableRadioGroup2 from "TableRadioGroup" /* 6985 */;
 import TableRowGroup3 from "TableRowGroup" /* 6987 */;
 import TableSwitchRow5 from "TableSwitchRow" /* 7295 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8572 */;
-import VoiceXIcon from "VoiceXIcon" /* 11621 */;
-import TableSliderRow from "TableSliderRow" /* 15277 */;
-import Slider2 from "Slider" /* 15278 */;
+import VoiceXIcon from "VoiceXIcon" /* 11623 */;
+import TableSliderRow from "TableSliderRow" /* 15276 */;
+import Slider2 from "Slider" /* 15277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const Stack_Stack = tmp(5977);
-const Checkbox = tmp(14064);
+const Checkbox = tmp(14063);
 const ScrollView = react_native.ScrollView;
 const NOOP = Constants.NOOP;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -468,7 +468,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider
     const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
     const TableRow = tmp(6903).TableRow;
     obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onChange: NOOP, accessibilityLabel: "Volume" };
-    Slider = tmp(15278).Slider;
+    Slider = tmp(15277).Slider;
     items[1] = metroRequire(TableRow, obj3);
     const tmp12 = metroImportDefault(metroImportAll, obj2);
     cResult[1] = tmp12;

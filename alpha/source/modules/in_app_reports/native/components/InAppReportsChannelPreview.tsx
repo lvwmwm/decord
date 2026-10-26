@@ -1,9 +1,9 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14578
+// Function ID: 14579
 // Name: InAppReportsChannelPreview
 // Dependencies: [19, 17, 4845, 21, 4971, 587, 558, 576, 504, 4968, 1128, 5234, 6883, 2]
 
-// Module 14579 (InAppReportsChannelPreview)
+// Module 14578 (InAppReportsChannelPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;

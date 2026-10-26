@@ -1,9 +1,9 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13269
+// Function ID: 13270
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 4845, 6704, 6705, 21, 4971, 558, 576, 504, 6883, 1128, 7248, 1202, 13271, 8951, 7206, 5210, 13272, 13273, 7215, 7210, 7298, 2]
+// Dependencies: [19, 17, 4845, 6704, 6705, 21, 4971, 558, 576, 504, 6883, 1128, 7248, 1202, 13270, 8951, 7206, 5210, 13271, 13272, 7215, 7210, 7298, 2]
 
-// Module 13270 (UpcomingEventsLongPressActionSheet)
+// Module 13269 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { source: stateFromStores1(13271) };
+      const obj4 = { source: stateFromStores1(13270) };
       const Icon = tmp(1202).Icon;
       const tmp28 = closure_7(Icon, obj4);
       cResult[14] = tmp28;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     } else {
       tmp32 = cResult[17];
     }
-    const tmp35 = stateFromStores1(stateFromStores1 ? 13272 : 13273);
+    const tmp35 = stateFromStores1(stateFromStores1 ? 13271 : 13272);
     if (cResult[18] !== tmp35) {
       const obj7 = { source: tmp35 };
       const tmp38 = closure_7(tmp(1202).Icon, obj7);
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
     }
   };
   const FormRow = guildId(8951).FormRow;
-  obj7 = { source: stateFromStores1(13271) };
+  obj7 = { source: stateFromStores1(13270) };
   Icon = guildId(1202).Icon;
   obj8 = { text: intl2.string(guildId(1128).t.e6RscS) };
   FormLabel = guildId(8951).FormLabel;
@@ -305,7 +305,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpcomingEven
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 13272 : 13273) };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 13271 : 13272) };
   Icon2 = guildId(1202).Icon;
   FormLabel2 = tmp2(8951).FormLabel;
   const intl3 = tmp2(1128).intl;

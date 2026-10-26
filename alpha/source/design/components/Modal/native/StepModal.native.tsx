@@ -1,7 +1,7 @@
 // Module ID: 12731
 // Function ID: 12732
 // Name: StepModal
-// Dependencies: [32, 109, 19, 17, 21, 4971, 5268, 558, 576, 1633, 11147, 12732, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4971, 5268, 558, 576, 1633, 11149, 12732, 2]
 
 // Module 12731 (StepModal)
 import react_native from "react-native" /* 17 */;
@@ -20,7 +20,7 @@ let c9;
 let metroImportAll;
 let rect;
 let tmp;
-const Modal2 = tmp(11147);
+const Modal2 = tmp(11149);
 const ModalStepIndicator2 = tmp(12732);
 let closure_3 = ["steps", "onWillFocus"];
 const View = react_native.View;

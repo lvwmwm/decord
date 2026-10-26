@@ -1,10 +1,10 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11588
+// Function ID: 11589
 // Name: useHasVideoPermission
 // Dependencies: [4845, 4903, 558, 576, 6652, 504, 2]
 // Exports: getVideoPermission
 
-// Module 11586 (useHasVideoPermission)
+// Module 11588 (useHasVideoPermission)
 import StreamPermissionUtils from "StreamPermissionUtils" /* 6652 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import PermissionStore from "PermissionStore" /* 4903 */;

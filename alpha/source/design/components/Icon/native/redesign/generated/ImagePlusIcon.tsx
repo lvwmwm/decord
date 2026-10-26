@@ -1,14 +1,14 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11814
+// Function ID: 11815
 // Name: ImagePlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11813, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11815, 5668, 2]
 
-// Module 11812 (ImagePlusIcon)
+// Module 11814 (ImagePlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 11813 */;
+import AssetRegistry from "AssetRegistry" /* 11815 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

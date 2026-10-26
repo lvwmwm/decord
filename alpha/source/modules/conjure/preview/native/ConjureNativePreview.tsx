@@ -1,10 +1,10 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11884
+// Function ID: 11885
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6775, 502, 4823, 6771, 2001, 11859, 6773, 1087, 6776, 21, 4971, 587, 558, 576, 5234, 6905, 10728, 10766, 11883, 10762, 504, 11885, 10742, 10767, 5593, 11886, 11887, 11888, 11892, 11894, 11896, 1128, 3830, 5244, 7708, 11904, 10740, 7411, 7206, 10889, 1384, 12011, 2]
+// Dependencies: [32, 19, 17, 6775, 502, 4823, 6771, 2001, 11861, 6773, 1087, 6776, 21, 4971, 587, 558, 576, 5234, 6905, 10728, 10766, 11885, 10762, 504, 11887, 10742, 10767, 5593, 11888, 11889, 11890, 11894, 11896, 11898, 1128, 3830, 5244, 7708, 11906, 10740, 7411, 7206, 10891, 1384, 12013, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11882 (ConjureNativePreview)
+// Module 11884 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,9 +21,9 @@ import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10728 */;
 import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10742 */;
 import leaveFrame from "leaveFrame" /* 10766 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11883 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11886 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11904 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11885 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11888 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11906 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -32,7 +32,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11859 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11861 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -1111,14 +1111,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: tmp19, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(previewApplicationId(10889), obj7, stateFromStores.id), ];
+    items8 = [closure_22(previewApplicationId(10891), obj7, stateFromStores.id), ];
     let tmp30Result = null;
     const tmp28 = closure_23;
     const tmp29 = id;
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1384);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(12011).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(12013).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);

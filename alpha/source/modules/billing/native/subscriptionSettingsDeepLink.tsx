@@ -1,10 +1,10 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15233
+// Function ID: 15234
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2058, 1087, 7490, 15235, 5210, 1128, 1267, 6463, 2]
+// Dependencies: [5, 2058, 1087, 7490, 15234, 5210, 1128, 1267, 6463, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15234 (subscriptionSettingsDeepLink)
+// Module 15233 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6463 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

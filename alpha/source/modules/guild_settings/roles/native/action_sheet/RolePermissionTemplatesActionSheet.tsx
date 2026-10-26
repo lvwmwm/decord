@@ -1,9 +1,9 @@
-// Module ID: 19133
-// Function ID: 19134
+// Module ID: 19132
+// Function ID: 19133
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1267, 5210, 5662, 5908, 1128, 7248, 19111, 7298, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1267, 5210, 5662, 5908, 1128, 7248, 19110, 7298, 2]
 
-// Module 19133 (RolePermissionTemplatesActionSheet)
+// Module 19132 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -146,8 +146,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissi
     }
     cResult[8] = guildId;
     cResult[9] = tmp10;
-    cResult[10] = jsx(onPermissionsChanged(19111), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
-    const tmp17 = jsx(onPermissionsChanged(19111), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    cResult[10] = jsx(onPermissionsChanged(19110), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    const tmp17 = jsx(onPermissionsChanged(19110), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
   }
   function handleTemplateSelect(arg0) {
     let intl;

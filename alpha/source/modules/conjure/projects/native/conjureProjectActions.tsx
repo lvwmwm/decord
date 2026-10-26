@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11787
+// Function ID: 11788
 // Name: conjureProjectActions
-// Dependencies: [5, 10698, 10714, 6773, 4830, 11758, 5662, 5914, 1128, 3830, 11786, 11535, 11788, 7051, 9140, 10872, 10723, 10694, 5684, 11790, 11792, 5691, 5678, 7285, 5994, 10412, 5663, 5682, 7488, 11794, 11795, 7061, 11799, 5689, 10720, 2]
+// Dependencies: [5, 10698, 10714, 6773, 4830, 11760, 5662, 5914, 1128, 3830, 11788, 11537, 11790, 7051, 9140, 10874, 10723, 10694, 5684, 11792, 11794, 5691, 5678, 7285, 5994, 10412, 5663, 5682, 7488, 11796, 11797, 7061, 11801, 5689, 10720, 2]
 // Exports: conjureProjectActions
 
-// Module 11785 (conjureProjectActions)
+// Module 11787 (conjureProjectActions)
 import intl15 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;
@@ -15,9 +15,9 @@ import AlertModal from "AlertModal" /* 5914 */;
 import ChannelUtils from "ChannelUtils" /* 5994 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import conjureProjectMute from "conjureProjectMute" /* 10723 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11758 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11794 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11799 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11760 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11796 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
@@ -54,7 +54,7 @@ let obj = function _importIntoProject() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ let obj = function _importIntoProject() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+352" };
                     }
                   } else {
                     let c2;
@@ -167,7 +167,7 @@ let obj = function _importIntoProject() {
                           c2 = 0;
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+352" };
                       }
                     } catch (tmp24) {
                       if (0 === c2) {
@@ -187,7 +187,7 @@ let obj = function _importIntoProject() {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp33) {
           c5 = 3;

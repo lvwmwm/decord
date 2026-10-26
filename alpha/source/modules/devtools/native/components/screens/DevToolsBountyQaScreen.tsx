@@ -1,9 +1,9 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17027
+// Function ID: 17028
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7773, 21, 4971, 587, 5663, 558, 576, 1633, 6713, 7774, 504, 14134, 9571, 6717, 5234, 6984, 6985, 12259, 6903, 16453, 7063, 6987, 2]
+// Dependencies: [5, 32, 19, 17, 7773, 21, 4971, 587, 5663, 558, 576, 1633, 6713, 7774, 504, 14133, 9571, 6717, 5234, 6984, 6985, 12261, 6903, 16452, 7063, 6987, 2]
 
-// Module 17028 (DevToolsBountyQaScreen)
+// Module 17027 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp32 = closure_8(tmp(12259).UndoIcon, {});
+            const tmp32 = closure_8(tmp(12261).UndoIcon, {});
             cResult[23] = tmp32;
             tmp30 = tmp32;
           } else {
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol3 = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(16453).RedoIcon, {}), onPress: tmp17 };
+            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(16452).RedoIcon, {}), onPress: tmp17 };
             const TableRow = tmp(6903).TableRow;
             const tmp38 = closure_8(TableRow, obj5);
             cResult[26] = tmp38;
@@ -296,7 +296,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c2;
@@ -317,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
                   toast("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -365,7 +365,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp26) {
           if (0 === c2) {
@@ -420,7 +420,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c2;
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -489,7 +489,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp26) {
           if (0 === c2) {

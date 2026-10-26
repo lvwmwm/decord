@@ -1,16 +1,16 @@
-// Module ID: 17797
-// Function ID: 17798
+// Module ID: 17796
+// Function ID: 17797
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5002, 1087, 1394, 21, 4971, 10139, 2002, 13613, 7307, 9672, 7278, 558, 576, 17743, 504, 17758, 1128, 17798, 587, 11154, 2]
+// Dependencies: [5, 19, 17, 5002, 1087, 1394, 21, 4971, 10139, 2002, 13612, 7307, 9672, 7278, 558, 576, 17742, 504, 17757, 1128, 17797, 587, 11156, 2]
 
-// Module 17797 (GuildsBarCreateJoinButton)
+// Module 17796 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7307 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17743 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
@@ -30,8 +30,8 @@ let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
 const intl2 = tmp(1128);
-const CirclePlusIcon2 = tmp(11154);
-const HomeDrawerAddServerRow = tmp(17798);
+const CirclePlusIcon2 = tmp(11156);
+const HomeDrawerAddServerRow = tmp(17797);
 function handleCreateJoinGuildPress() {
   return obj(...arguments);
 }
@@ -52,7 +52,7 @@ let obj = function _handleCreateJoinGuildPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ let obj = function _handleCreateJoinGuildPress() {
             closure_1.openCreateGuildModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp27) {
         c3 = 3;
@@ -225,7 +225,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp23 = tmp26;
     }
   }
-  const tmp22 = jsx(tmp17(17743), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
+  const tmp22 = jsx(tmp17(17742), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
   cResult[7] = stateFromStores;
   cResult[8] = tmp18;
   cResult[9] = guildsBarAnimatedWrapperStyles;
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "guilds-bar-drag-preview", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "URL", children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

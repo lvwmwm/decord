@@ -1,15 +1,15 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14846
+// Function ID: 14847
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2068, 1392, 2057, 2058, 7524, 1087, 1394, 21, 4971, 558, 576, 504, 2053, 14711, 7531, 7519, 5234, 1384, 7340, 7339, 1128, 1903, 2]
+// Dependencies: [32, 19, 17, 2068, 1392, 2057, 2058, 7524, 1087, 1394, 21, 4971, 558, 576, 504, 2053, 14710, 7531, 7519, 5234, 1384, 7340, 7339, 1128, 1903, 2]
 
-// Module 14847 (PremiumSubscriptionPricingUpsell)
+// Module 14846 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14711 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14710 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
@@ -110,7 +110,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp12, tmp13);
-  const tmpResult7 = tmp(14711);
+  const tmpResult7 = tmp(14710);
   const subscriptionPlansLoaded = tmpResult7.useSubscriptionPlansLoaded();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SubscriptionStore];
@@ -366,7 +366,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f122776 = () => {
+  const f122787 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -402,8 +402,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f122776), 5);
-  str2(obj7.useStateFromStoresArray(items4, f122776), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f122787), 5);
+  str2(obj7.useStateFromStoresArray(items4, f122787), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

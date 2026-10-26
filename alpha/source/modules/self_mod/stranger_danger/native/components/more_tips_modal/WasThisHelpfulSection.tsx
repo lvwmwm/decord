@@ -1,19 +1,19 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10952
+// Function ID: 10953
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10693, 10924, 21, 4971, 587, 558, 576, 573, 10938, 5663, 1128, 10951, 10937, 5234, 1202, 10953, 10954, 2]
+// Dependencies: [19, 17, 10693, 10926, 21, 4971, 587, 558, 576, 573, 10940, 5663, 1128, 10953, 10939, 5234, 1202, 10955, 10956, 2]
 
-// Module 10950 (WasThisHelpfulSection)
+// Module 10952 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10693 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10937 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10938 */;
-import ShieldIcon from "ShieldIcon" /* 10951 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10939 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10940 */;
+import ShieldIcon from "ShieldIcon" /* 10953 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 10924 */;
+import Constants from "Constants" /* 10926 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

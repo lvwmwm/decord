@@ -1,9 +1,12 @@
 // Module ID: 18669
 // Function ID: 18670
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7962, 9112]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 18668, 9112]
 
 // Module 18669
-import inlineStyles from "inlineStyles" /* 7962 */;
+import Fragment from "Fragment" /* 21 */;
+import _modDef9112 from "module_9112" /* 9112 */;
+import _modDef18668 from "module_18668" /* 18668 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -11,22 +14,13 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import module_9112_mod from "module_9112" /* 9112 */;
 
-let Animated;
-let hasOwnProperty;
-let items1;
-let metroImportDefault;
-let metroRequire;
-let module_9112;
-let oneOfType;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+    closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
     }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
@@ -36,175 +30,119 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-({ View: hasOwnProperty, Animated } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-class CircularProgress {
-  constructor() {
+let closure_0 = ["fill", "prefill"];
+const Animated = react_native.Animated;
+const Easing = react_native.Easing;
+const jsx = Fragment.jsx;
+const module_18668 = Animated.createAnimatedComponent(_modDef18668);
+class AnimatedCircularProgress {
+  constructor(prefill) {
     let constructResult;
+    let value;
     const self = this;
-    const items = [...arguments];
-    _classCallCheck(this, CircularProgress);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(CircularProgress);
+    closure_0 = prefill;
+    _classCallCheck(this, AnimatedCircularProgress);
+    const items = [prefill];
+    const obj = _getPrototypeOf(AnimatedCircularProgress);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.clampFill = (arg0) => Math.min(100, Math.max(0, arg0));
+    const obj2 = { fillAnimation: value };
+    value = new Animated.Value(prefill.prefill);
+    tmp3Result.state = obj2;
+    if (prefill.onFillChange) {
+      const fillAnimation = tmp3Result.state.fillAnimation;
+      fillAnimation.addListener((value) => closure_0.onFillChange(value.value));
+    }
     return tmp3Result;
   }
 }
-_inherits(CircularProgress, react.PureComponent);
+_inherits(AnimatedCircularProgress, react.PureComponent);
 const entry = {
-  key: "polarToCartesian",
-  value: function polarToCartesian(sum, sum2, diff, result5) {
-    const result = (result5 - 90) * Math.PI / 180;
-    const point = { x: sum + diff * Math.cos(result), y: sum2 + diff * Math.sin(result) };
-    return point;
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    this.animate();
   }
 };
 let items = [
   entry,
   {
-    key: "circlePath",
-    value: function circlePath(sum, sum2, diff, result5, arcSweepAngle) {
-      let str = "1";
-      const polarToCartesianResult = this.polarToCartesian(sum, sum2, diff, 0.9999999 * arcSweepAngle);
-      const polarToCartesianResult1 = this.polarToCartesian(sum, sum2, diff, result5);
-      if (arcSweepAngle - result5 <= 180) {
-        str = "0";
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(arg0) {
+      const self = this;
+      if (arg0.fill !== this.props.fill) {
+        self.animate();
       }
-      const items = ["M"];
-      ({ x: arr[1], y: arr[2] } = polarToCartesianResult);
-      items[3] = "A";
-      items[4] = diff;
-      items[5] = diff;
-      items[6] = 0;
-      items[7] = str;
-      items[8] = 0;
-      ({ x: arr[9], y: arr[10] } = polarToCartesianResult1);
-      return items.join(" ");
+    }
+  },
+  {
+    key: "reAnimate",
+    value: function reAnimate(arg0, arg1, arg2, arg3) {
+      let value;
+      const self = this;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      closure_0 = arg3;
+      const setState = this.setState;
+      const obj = { fillAnimation: value };
+      value = new Animated.Value(arg0);
+      setState(obj, () => self.animate(closure_1, closure_2, closure_0));
+    }
+  },
+  {
+    key: "animate",
+    value: function animate(arg0, arg1, arg2) {
+      const self = this;
+      let fill = arg0;
+      if (arg0 < 0) {
+        fill = self.props.fill;
+      }
+      const obj = { useNativeDriver: self.props.useNativeDriver, toValue: fill, easing: arg2 || self.props.easing, duration: arg1 || self.props.duration, delay: self.props.delay };
+      const timingResult = Animated.timing(self.state.fillAnimation, obj);
+      timingResult.start(self.props.onAnimationComplete);
+      return timingResult;
+    }
+  },
+  {
+    key: "animateColor",
+    value: function animateColor() {
+      let items;
+      let tintColor;
+      const self = this;
+      if (this.props.tintColorSecondary) {
+        const fillAnimation = self.state.fillAnimation;
+        const obj = { inputRange: [0, 100], outputRange: items };
+        items = [self.props.tintColor, self.props.tintColorSecondary];
+        tintColor = fillAnimation.interpolate(obj);
+      } else {
+        tintColor = self.props.tintColor;
+      }
+      return tintColor;
     }
   },
   {
     key: "render",
     value: function render() {
-      let G;
-      let arcSweepAngle;
-      let backgroundColor;
-      let backgroundWidth;
-      let children;
-      let childrenContainerStyle;
-      let dashedBackground;
-      let dashedTint;
       let fill;
-      let fillLineCap;
-      let items;
-      let items1;
-      let lineCap;
-      let obj3;
-      let padding;
-      let renderCap;
-      let rotation;
-      let style;
-      let tintColor;
-      let tintTransparency;
-      let width;
-      const self = this;
+      let prefill;
       const props = this.props;
-      ({ size, width, backgroundWidth, backgroundColor, lineCap, fillLineCap } = props);
-      ({ tintColor, tintTransparency, style, rotation } = props);
-      if (undefined === fillLineCap) {
-        fillLineCap = lineCap;
-      }
-      ({ arcSweepAngle, fill, children, childrenContainerStyle, padding, renderCap, dashedBackground, dashedTint } = props);
-      let bound = width;
-      if (backgroundWidth) {
-        const _Math = Math;
-        bound = Math.max(width, backgroundWidth);
-      }
-      const result = size / 2;
-      const result1 = padding / 2;
-      const result2 = size / 2;
-      const result3 = bound / 2;
-      const result4 = padding / 2;
-      const result5 = arcSweepAngle * self.clampFill(fill) / 100;
-      let num = 0;
-      const circlePath = self.circlePath;
-      if (!tintTransparency) {
-        num = result5;
-      }
-      const sum = result + result1;
-      const diff = result2 - result3 - result4;
-      let renderCapResult = null;
-      const circlePathResult = circlePath(sum, sum, diff, num, arcSweepAngle);
-      const circlePathResult1 = self.circlePath(sum, sum, diff, 0, result5);
-      if (self.props.renderCap) {
-        const props2 = self.props;
-        const obj = { center: tmp13 };
-        renderCapResult = props2.renderCap(obj);
-      }
-      const diff1 = size - 2 * bound;
-      const size1 = { position: "absolute", left: bound + padding / 2, top: bound + padding / 2, width: diff1, height: diff1, borderRadius: diff1 / 2, alignItems: "center", justifyContent: "center", overflow: "hidden" };
-      const merged = Object.assign(childrenContainerStyle);
-      let mapped = null;
-      if (dashedTint.gap > 0) {
-        const _Object = Object;
-        const values = Object.values(dashedTint);
-        mapped = values.map((item) => parseInt(item));
-      }
-      let mapped1 = null;
-      if (dashedBackground.gap > 0) {
-        const _Object2 = Object;
-        const values2 = Object.values(dashedBackground);
-        mapped1 = values2.map((item) => parseInt(item));
-      }
-      const obj2 = { style, children: items1 };
-      const size2 = { width: size + padding, height: size + padding, children: metroImportDefault(G, obj3) };
-      const Svg = inlineStyles.Svg;
-      let tmp23Result = backgroundColor;
-      obj3 = { rotation, originX: (size + padding) / 2, originY: (size + padding) / 2, children: items };
-      G = inlineStyles.G;
-      if (backgroundColor) {
-        const obj4 = { d: circlePathResult, stroke: backgroundColor, strokeWidth: backgroundWidth, strokeLinecap: lineCap, strokeDasharray: mapped1, fill: "transparent" };
-        const Path = tmp24(7962).Path;
-        if (!backgroundWidth) {
-          backgroundWidth = width;
-        }
-        tmp23Result = tmp23(Path, obj4);
-      }
-      items = [tmp23Result, , ];
-      let tmp23Result3 = fill > 0;
-      if (tmp23Result3) {
-        const obj5 = { d: circlePathResult1, stroke: tintColor, strokeWidth: width, strokeLinecap: fillLineCap, strokeDasharray: mapped, fill: "transparent" };
-        tmp23Result3 = tmp23(tmp24(7962).Path, obj5);
-      }
-      items[1] = tmp23Result3;
-      items[2] = renderCapResult;
-      items1 = [metroRequire(Svg, size2), ];
-      let tmp23Result4 = children;
-      if (tmp23Result4) {
-        const obj6 = { style: size1, children: children(fill) };
-        tmp23Result4 = tmp23(tmp22, obj6);
-      }
-      items1[1] = tmp23Result4;
-      return metroImportDefault(hasOwnProperty, obj2);
+      ({ fill, prefill } = props);
+      const merged = Object.assign(_objectWithoutProperties(props, closure_0));
+      return <module_18668 fill={this.state.fillAnimation} tintColor={this.animateColor()} />;
     }
   }
 ];
-const importDefaultResultResult = _createClass(CircularProgress, items);
-let obj = { style: module_9112.object, size: oneOfType(items1).isRequired, fill: module_9112.number.isRequired, width: module_9112.number.isRequired, backgroundWidth: module_9112.number, tintColor: module_9112.string, tintTransparency: module_9112.bool, backgroundColor: module_9112.string, rotation: module_9112.number, lineCap: module_9112.string, arcSweepAngle: module_9112.number, children: module_9112.func, childrenContainerStyle: module_9112.object, padding: module_9112.number, renderCap: module_9112.func, dashedBackground: module_9112.object, dashedTint: module_9112.object };
-module_9112 = module_9112_mod;
-oneOfType = module_9112.oneOfType;
-items1 = [module_9112.number, ];
-module_9112 = module_9112_mod;
-items1[1] = module_9112.instanceOf(Animated.Value);
+const importDefaultResultResult = _createClass(AnimatedCircularProgress, items);
+let obj = { prefill: _modDef9112.number, duration: _modDef9112.number, easing: _modDef9112.func, onAnimationComplete: _modDef9112.func, useNativeDriver: _modDef9112.bool, delay: _modDef9112.number };
+let merged = Object.assign(_modDef18668.propTypes);
 importDefaultResultResult.propTypes = obj;
-importDefaultResultResult.defaultProps = { tintColor: "black", tintTransparency: true, rotation: 90, lineCap: "butt", arcSweepAngle: 360, padding: 0, dashedBackground: { width: 0, gap: 0 }, dashedTint: { width: 0, gap: 0 } };
+let obj2 = { duration: 500, easing: Easing.out(Easing.ease), prefill: 0, useNativeDriver: false, delay: 0 };
+importDefaultResultResult.defaultProps = obj2;
 
 export default importDefaultResultResult;

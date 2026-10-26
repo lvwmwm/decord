@@ -1,11 +1,11 @@
 // Module ID: 12368
 // Function ID: 12369
 // Name: ConjureMentionText
-// Dependencies: [19, 1392, 21, 558, 576, 5025, 504, 12364, 12357, 11824, 2]
+// Dependencies: [19, 1392, 21, 558, 576, 5025, 504, 12364, 12357, 11826, 2]
 
 // Module 12368 (ConjureMentionText)
 import UserUtils from "UserUtils" /* 5025 */;
-import ConjureFileMentionDefault from "ConjureFileMention" /* 11824 */;
+import ConjureFileMentionDefault from "ConjureFileMention" /* 11826 */;
 import conjureMentions from "conjureMentions" /* 12357 */;
 import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12364 */;
 import react from "react" /* 19 */;

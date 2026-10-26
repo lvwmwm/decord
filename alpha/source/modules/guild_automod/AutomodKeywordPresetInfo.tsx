@@ -1,10 +1,10 @@
-// Module ID: 19024
-// Function ID: 19025
+// Module ID: 19023
+// Function ID: 19024
 // Name: AutomodKeywordPresetInfo
 // Dependencies: [12811, 1128, 2]
 // Exports: getKeywordPresetInfo
 
-// Module 19024 (AutomodKeywordPresetInfo)
+// Module 19023 (AutomodKeywordPresetInfo)
 import intl7 from "intl" /* 1128 */;
 import Constants from "Constants" /* 12811 */;
 import size from "module_2" /* 2 */;

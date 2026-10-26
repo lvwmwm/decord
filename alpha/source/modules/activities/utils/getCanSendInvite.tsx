@@ -1,13 +1,13 @@
-// Module ID: 14560
-// Function ID: 14561
+// Module ID: 14559
+// Function ID: 14560
 // Name: getCanSendInvite
-// Dependencies: [1087, 11345, 7409, 11347, 11348, 11349, 2]
+// Dependencies: [1087, 11347, 7409, 11349, 11350, 11351, 2]
 // Exports: getCanSendInvite
 
-// Module 14560 (getCanSendInvite)
-import isInviteActiveDefault from "isInviteActive" /* 11345 */;
-import _slicedToArray from "_slicedToArray" /* 11347 */;
-import hasPartySize from "hasPartySize" /* 11348 */;
+// Module 14559 (getCanSendInvite)
+import isInviteActiveDefault from "isInviteActive" /* 11347 */;
+import _slicedToArray from "_slicedToArray" /* 11349 */;
+import hasPartySize from "hasPartySize" /* 11350 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export const getCanSendInvite = function getCanSendInvite(applicationActivity, a
         let isPartyFullResult = !hasPartySizeResult;
         const tmp5 = require;
         if (hasPartySizeResult) {
-          const tmp5Result = tmp5(11349);
+          const tmp5Result = tmp5(11351);
           isPartyFullResult = tmp5Result.isPartyFull(partySize);
         }
         return !isPartyFullResult;

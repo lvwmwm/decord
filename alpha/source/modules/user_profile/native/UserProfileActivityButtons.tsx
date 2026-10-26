@@ -1,10 +1,10 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14317
+// Function ID: 14318
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 4822, 4823, 6500, 5194, 4845, 11192, 4903, 4913, 4874, 6498, 5630, 1087, 8828, 21, 4971, 587, 558, 576, 7253, 4892, 14319, 573, 6662, 14320, 7812, 1128, 8577, 5210, 6672, 11358, 5244, 10651, 1202, 8623, 11339, 5660, 14322, 8749, 5151, 7878, 7867, 6502, 1417, 9609, 7490, 8832, 11343, 1386, 8860, 2]
+// Dependencies: [5, 19, 4822, 4823, 6500, 5194, 4845, 11194, 4903, 4913, 4874, 6498, 5630, 1087, 8828, 21, 4971, 587, 558, 576, 7253, 4892, 14318, 573, 6662, 14319, 7812, 1128, 8577, 5210, 6672, 11360, 5244, 10651, 1202, 8623, 11341, 5660, 14321, 8749, 5151, 7878, 7867, 6502, 1417, 9609, 7490, 8832, 11345, 1386, 8860, 2]
 // Exports: CustomActivityButton
 
-// Module 14318 (UserProfileActivityButtons)
+// Module 14317 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,10 +21,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
 import isStreamingDefault from "isStreaming" /* 8749 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9609 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11358 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14319 */;
-import getActivityJoinability from "getActivityJoinability" /* 14320 */;
-import getStreamURLDefault from "getStreamURL" /* 14322 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11360 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14318 */;
+import getActivityJoinability from "getActivityJoinability" /* 14319 */;
+import getStreamURLDefault from "getStreamURL" /* 14321 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 4823 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
 import GuildStore from "GuildStore" /* 4845 */;
-import LocalActivityStore from "LocalActivityStore" /* 11192 */;
+import LocalActivityStore from "LocalActivityStore" /* 11194 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
@@ -603,7 +603,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -632,7 +632,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -709,7 +709,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -737,7 +737,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -1337,7 +1337,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 let tmp17;
@@ -1383,13 +1383,13 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+352" };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+352" };
                         } else {
                           const obj8 = tmp(tmp17[49]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -1420,12 +1420,12 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+352" };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {

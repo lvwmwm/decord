@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13815
+// Function ID: 13816
 // Name: SavedMessageUtils
 // Dependencies: [5, 19, 4827, 4823, 1087, 1128, 2049, 558, 576, 504, 7411, 7347, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 13816 (SavedMessageUtils)
+// Module 13815 (SavedMessageUtils)
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -83,11 +83,11 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 type = closure_131_1(closure_131_2[10]);
                 const recipients = type2.recipients;
@@ -116,7 +116,7 @@ let obj = function _savedMessageJumpToMessage() {
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {

@@ -1,11 +1,11 @@
-// Module ID: 15028
-// Function ID: 15029
+// Module ID: 15027
+// Function ID: 15028
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 6670, 1087, 15027, 1385, 7823, 1267, 584, 2]
+// Dependencies: [5, 6670, 1087, 15026, 1385, 7823, 1267, 584, 2]
 // Exports: detectLocalApps
 
-// Module 15028 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15027 */;
+// Module 15027 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConsentStore from "ConsentStore" /* 6670 */;
 import Constants from "Constants" /* 1087 */;
@@ -67,7 +67,7 @@ let obj = function _detectLocalApps() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ let obj = function _detectLocalApps() {
               let obj7 = { type: "LOCAL_APP_DETECTION_COMPLETE", result };
               let dispatchResult = obj6.dispatch(obj7);
               c8 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (1 === tmp5) {
             c6 = 0;

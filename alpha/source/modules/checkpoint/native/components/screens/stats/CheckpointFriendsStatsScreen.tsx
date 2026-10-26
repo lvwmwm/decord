@@ -1,9 +1,9 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13015
+// Function ID: 13016
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 4972, 1392, 12954, 6015, 21, 1385, 4971, 587, 1417, 558, 576, 504, 13017, 13018, 1499, 5025, 6363, 5111, 12972, 1128, 3088, 3056, 12974, 5666, 12990, 8542, 12981, 11643, 13019, 12955, 5662, 1202, 10446, 7278, 12886, 5680, 2]
+// Dependencies: [5, 32, 19, 17, 4972, 1392, 12953, 6015, 21, 1385, 4971, 587, 1417, 558, 576, 504, 13016, 13017, 1499, 5025, 6363, 5111, 12971, 1128, 3088, 3056, 12973, 5666, 12989, 8542, 12980, 11645, 13018, 12954, 5662, 1202, 10446, 7278, 12885, 5680, 2]
 
-// Module 13016 (CheckpointFriendsStatsScreen)
+// Module 13015 (CheckpointFriendsStatsScreen)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,20 +19,20 @@ import CheckpointNavigation from "CheckpointNavigation" /* 6363 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import ChatIcon from "ChatIcon" /* 8542 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10446 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11643 */;
-import CheckpointTextDefault from "CheckpointText" /* 12972 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12974 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12981 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12990 */;
-import useFriendsAnimationState from "useFriendsAnimationState" /* 13017 */;
-import useSidekickLeave from "useSidekickLeave" /* 13018 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11645 */;
+import CheckpointTextDefault from "CheckpointText" /* 12971 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12973 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12980 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12989 */;
+import useFriendsAnimationState from "useFriendsAnimationState" /* 13016 */;
+import useSidekickLeave from "useSidekickLeave" /* 13017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import UserStore from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12954 */;
+import CheckpointStore from "CheckpointStore" /* 12953 */;
 import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
@@ -98,7 +98,7 @@ function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ function SidekickMessageInput(user) {
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp37) {
           closure_2 = tmp37;
           if (0 === c3) {
@@ -177,7 +177,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(13019)(user.id);
+  const tmp9 = value(13018)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -221,7 +221,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1128).t.Ve9Ge6),
-      children: tmp14(tmp15(12886).GiftIcon, obj6)
+      children: tmp14(tmp15(12885).GiftIcon, obj6)
     };
     intl2 = tmp15(1128).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };

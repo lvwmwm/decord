@@ -1,18 +1,18 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 18913
+// Function ID: 18914
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 13311, 1087, 21, 4971, 587, 1267, 558, 576, 13312, 5210, 5669, 18915, 1128, 5234, 5244, 6696, 5265, 2]
+// Dependencies: [19, 17, 13310, 1087, 21, 4971, 587, 1267, 558, 576, 13311, 5210, 5669, 18914, 1128, 5234, 5244, 6696, 5265, 2]
 
-// Module 18914 (NotificationReactivationActionSheet)
+// Module 18913 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13311 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13312 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18915 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13310 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13311 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18914 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const fn2 = function v() {
       const SKIP_STEP = EventActionType.SKIP_STEP;
       const obj = AnalyticsUtilsDefault;
-      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
+      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
       obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();

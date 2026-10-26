@@ -1,9 +1,9 @@
-// Module ID: 11188
-// Function ID: 11189
+// Module ID: 11190
+// Function ID: 11191
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1506, 11189, 11190, 5669, 1128, 5234, 5244, 6672, 7221, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1506, 11191, 11192, 5669, 1128, 5234, 5244, 6672, 7221, 2]
 
-// Module 11188 (GiftCodeRedeemError)
+// Module 11190 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -47,10 +47,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(11189);
+    tmp5Result = tmp5(11191);
     tmp7 = tmp5;
   } else {
-    tmp5Result = tmp5(11190);
+    tmp5Result = tmp5(11192);
     tmp7 = tmp5;
   }
   if (cResult[0] !== tmp5Result) {
@@ -184,9 +184,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(11189);
+    tmp8Result = tmp8(11191);
   } else {
-    tmp8Result = tmp8(11190);
+    tmp8Result = tmp8(11192);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };

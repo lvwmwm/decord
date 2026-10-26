@@ -1,16 +1,16 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17538
+// Function ID: 17539
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 4826, 4836, 21, 4971, 587, 558, 576, 1505, 504, 4848, 10842, 9699, 1128, 5908, 1202, 7008, 5689, 6987, 6903, 5977, 10029, 10030, 2]
+// Dependencies: [32, 19, 17, 4826, 4836, 21, 4971, 587, 558, 576, 1505, 504, 4848, 10844, 9699, 1128, 5908, 1202, 7008, 5689, 6987, 6903, 5977, 10029, 10030, 2]
 
-// Module 17539 (FavoritesGuildCategorySettingsModal)
+// Module 17538 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import FavoritesConstants from "FavoritesConstants" /* 4836 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10842 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FavoriteStore_mod from "FavoriteStore" /* 4826 */;

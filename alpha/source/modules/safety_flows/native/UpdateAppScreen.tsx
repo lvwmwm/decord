@@ -1,9 +1,9 @@
-// Module ID: 19432
-// Function ID: 19433
+// Module ID: 19431
+// Function ID: 19432
 // Name: UpdateAppScreen
 // Dependencies: [17, 21, 4971, 587, 558, 576, 5234, 1128, 2832, 5244, 2]
 
-// Module 19432 (UpdateAppScreen)
+// Module 19431 (UpdateAppScreen)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;

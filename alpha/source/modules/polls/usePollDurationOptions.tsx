@@ -1,10 +1,10 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12218
+// Function ID: 12219
 // Name: usePollDurationOptions
 // Dependencies: [8310, 1128, 2]
 // Exports: default
 
-// Module 12216 (usePollDurationOptions)
+// Module 12218 (usePollDurationOptions)
 import intl8 from "intl" /* 1128 */;
 import PollsConstants from "PollsConstants" /* 8310 */;
 import size from "module_2" /* 2 */;

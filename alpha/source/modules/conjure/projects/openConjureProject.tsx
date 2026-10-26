@@ -1,10 +1,10 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 13526
+// Function ID: 13527
 // Name: openConjureProject
 // Dependencies: [1087, 4830, 1114, 2]
 // Exports: openConjureForMe, openConjureProject
 
-// Module 13527 (openConjureProject)
+// Module 13526 (openConjureProject)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;

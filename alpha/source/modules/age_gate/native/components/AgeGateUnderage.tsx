@@ -1,9 +1,9 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17403
+// Function ID: 17404
 // Name: AgeGateUnderage
 // Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 7037, 1505, 6924, 6930, 1128, 7068, 7071, 7902, 7067, 2067, 5234, 5244, 2]
 
-// Module 17404 (AgeGateUnderage)
+// Module 17403 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;

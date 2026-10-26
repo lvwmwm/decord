@@ -1,9 +1,9 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16584
+// Function ID: 16585
 // Name: GuildRoleSubscriptionEditStore
 // Dependencies: [570, 1274, 2]
 
-// Module 16585 (GuildRoleSubscriptionEditStore)
+// Module 16584 (GuildRoleSubscriptionEditStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

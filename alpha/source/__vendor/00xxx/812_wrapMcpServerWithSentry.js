@@ -7,7 +7,7 @@
 // Module 812 (wrapMcpServerWithSentry)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-let _self, closure_3, closure_4, closure_5;
+let _self, closure_4, closure_5;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakSet = new WeakSet();
@@ -24,7 +24,6 @@ export const wrapMcpServerWithSentry = function wrapMcpServerWithSentry(arg0, re
     if (obj2.validateMcpServerInstance(arg0)) {
       const tmpResult = tmp(724);
       const client = tmpResult.getClient();
-      const tmp4 = null;
       let sendDefaultPii;
       const _Boolean = Boolean;
       if (client != null) {
@@ -49,83 +48,31 @@ export const wrapMcpServerWithSentry = function wrapMcpServerWithSentry(arg0, re
       const tmpResult3 = tmp(698);
       tmpResult3.fill(arg0, "connect", (arg0) => {
         let closure_0 = _asyncToGenerator(async function(arg0) {
+          let closure_3;
           const self = this;
           let closure_1 = arg0;
           let value = [...arguments].slice();
           let c6 = 0;
           let c7 = 0;
-          const iter = (async (arg0, value) => {
-            if (c7 === 2) {
-              c7 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp4 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                return { value, done: true };
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c7 = 2;
-                if (0 === c6) {
-                  if (arg0 === 1) {
-                    c7 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c7 = 3;
-                    return { value, done: true };
-                  } else {
-                    closure_5 = self;
-                    closure_4 = self;
-                    closure_3 = tmp;
-                    _self = closure_1;
-                    closure_1 = value;
-                    value = undefined;
-                    c6 = 1;
-                    c7 = 1;
-                    return { value: "Reflect", done: true };
-                  }
-                } else if (1 === tmp5) {
-                  if (arg0 === 1) {
-                    c7 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c7 = 3;
-                    return { value, done: true };
-                  } else {
-                    const call = self.call;
-                    const items = [closure_5, _self];
-                    HermesBuiltin.arraySpread(items, closure_1, 2);
-                    c6 = 2;
-                    c7 = 1;
-                    const obj5 = { value: HermesBuiltin.apply(call, items, self), done: false };
-                    return obj5;
-                  }
-                } else if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  return { value, done: true };
-                } else {
-                  const obj7 = _self(closure_3_1[4]);
-                  const result = obj7.wrapTransportOnMessage(_self, _self);
-                  const obj8 = _self(closure_3_1[4]);
-                  obj8.wrapTransportSend(_self, _self);
-                  const obj9 = _self(closure_3_1[4]);
-                  obj9.wrapTransportOnClose(_self);
-                  const obj10 = _self(closure_3_1[4]);
-                  obj10.wrapTransportError(_self);
-                  c7 = 3;
-                  return { value, done: true };
-                }
-              } catch (tmp21) {
-                c7 = 3;
-                throw tmp21;
-              }
-            }
+          const iter = (async (arg0) => {
+            closure_5 = self;
+            closure_4 = self;
+            _self = closure_1;
+            closure_1 = value;
+            await "Reflect";
+            const call = self.call;
+            const items = [closure_5, _self];
+            HermesBuiltin.arraySpread(items, closure_1, 2);
+            value = await HermesBuiltin.apply(call, items, self);
+            const obj7 = _self(closure_3_1[4]);
+            const result = obj7.wrapTransportOnMessage(_self, _self);
+            const obj8 = _self(closure_3_1[4]);
+            obj8.wrapTransportSend(_self, _self);
+            const obj9 = _self(closure_3_1[4]);
+            obj9.wrapTransportOnClose(_self);
+            const obj10 = _self(closure_3_1[4]);
+            obj10.wrapTransportError(_self);
+            return value;
           })();
           iter.next();
           return iter;

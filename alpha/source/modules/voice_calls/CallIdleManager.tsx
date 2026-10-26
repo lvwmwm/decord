@@ -1,9 +1,9 @@
-// Module ID: 18757
-// Function ID: 18758
+// Module ID: 18756
+// Function ID: 18757
 // Name: CallIdleManager
 // Dependencies: [4822, 4823, 5630, 5717, 7566, 1128, 6634, 7214, 4818, 2]
 
-// Module 18757 (CallIdleManager)
+// Module 18756 (CallIdleManager)
 import intl2 from "intl" /* 1128 */;
 import Timers from "Timers" /* 4818 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;

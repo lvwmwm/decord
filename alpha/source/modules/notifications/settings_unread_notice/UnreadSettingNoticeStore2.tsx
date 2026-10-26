@@ -1,9 +1,9 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 10990
+// Function ID: 10991
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 4823, 4845, 4874, 6704, 1087, 6705, 1097, 1104, 11, 1405, 504, 10989, 584, 2]
+// Dependencies: [502, 4823, 4845, 4874, 6704, 1087, 6705, 1097, 1104, 11, 1405, 504, 10991, 584, 2]
 
-// Module 10988 (UnreadSettingNoticeStore2)
+// Module 10990 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,7 +12,7 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10989 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10991 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 
 let guild;
 
-const f108662 = () => {
+const f108677 = () => {
   let flag = false;
   if (null != closure_16) {
     flag = false;
@@ -57,7 +57,7 @@ function startInterval() {
   }
   if (UserGuildSettingsStore.useNewNotifications) {
     const _setInterval = setInterval;
-    interval = setInterval(f108662, 15 * DurationsDefault.Millis.SECOND);
+    interval = setInterval(f108677, 15 * DurationsDefault.Millis.SECOND);
   }
   return false;
 }
@@ -276,7 +276,7 @@ const obj5 = {
     }
     if (UserGuildSettingsStore.useNewNotifications) {
       const _setInterval = setInterval;
-      interval = setInterval(f108662, 15 * DurationsDefault.Millis.SECOND);
+      interval = setInterval(f108677, 15 * DurationsDefault.Millis.SECOND);
     }
     let closure_0 = Date.now() - WEEK;
     const arr = SnowflakeUtilsDefault;

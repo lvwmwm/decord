@@ -1,15 +1,15 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17915
+// Function ID: 17916
 // Name: ICYMIInfoModal
-// Dependencies: [19, 21, 558, 576, 17917, 6924, 17918, 1275, 6672, 7485, 1128, 15649, 17926, 17932, 7095, 11147, 12731, 2]
+// Dependencies: [19, 21, 558, 576, 17916, 6924, 17917, 1275, 6672, 7485, 1128, 15648, 17925, 17931, 7095, 11149, 12731, 2]
 
-// Module 17916 (ICYMIInfoModal)
+// Module 17915 (ICYMIInfoModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import StepModal2 from "StepModal" /* 12731 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 17917 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 17916 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -215,7 +215,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
         tmp7 = cResult[5];
       }
       if (extendedOnboarding) {
-        const ICYMIInfoScreens2 = tmp(17917).ICYMIInfoScreens;
+        const ICYMIInfoScreens2 = tmp(17916).ICYMIInfoScreens;
         const tmp11 = skipIntro ? ICYMIInfoScreens2.TOPICS_CLOUD : ICYMIInfoScreens2.DEFAULT;
         if (cResult[8] === tmp6) {
           if (cResult[9] === tmp7) {
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
       } else {
         let tmp8;
         if (cResult[6] !== tmp6) {
-          const Modal = tmp(11147).Modal;
+          const Modal = tmp(11149).Modal;
           const tmp10 = <Modal screens={tmp6} initialRouteName={ICYMIInfoModalTypes.ICYMIInfoScreens.DEFAULT} />;
           cResult[6] = tmp6;
           cResult[7] = tmp10;
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
         return tmp8;
       }
     }
-    const ICYMIInfoScreens = tmp(17917).ICYMIInfoScreens;
+    const ICYMIInfoScreens = tmp(17916).ICYMIInfoScreens;
     if (extendedOnboarding) {
       let items1;
       if (skipIntro) {
@@ -279,11 +279,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
   if (extendedOnboarding) {
     const obj2 = { screens: tmp, steps: tmp2, initialRouteName: skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT };
     const StepModal = tmp4(12731).StepModal;
-    ICYMIInfoScreens = tmp4(17917).ICYMIInfoScreens;
+    ICYMIInfoScreens = tmp4(17916).ICYMIInfoScreens;
     tmp3Result = tmp3(StepModal, obj2);
   } else {
-    const obj = { screens: tmp, initialRouteName: extendedOnboarding(17917).ICYMIInfoScreens.DEFAULT };
-    const Modal = tmp4(11147).Modal;
+    const obj = { screens: tmp, initialRouteName: extendedOnboarding(17916).ICYMIInfoScreens.DEFAULT };
+    const Modal = tmp4(11149).Modal;
     tmp3Result = tmp3(Modal, obj);
   }
   return tmp3Result;

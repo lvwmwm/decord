@@ -1,9 +1,9 @@
-// Module ID: 10828
-// Function ID: 10829
+// Module ID: 10830
+// Function ID: 10831
 // Name: InstantInviteCode
 // Dependencies: [19, 17, 4827, 4913, 1392, 21, 4971, 587, 558, 576, 8502, 8551, 5604, 5234, 5977, 5691, 1128, 10036, 2]
 
-// Module 10828 (InstantInviteCode)
+// Module 10830 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

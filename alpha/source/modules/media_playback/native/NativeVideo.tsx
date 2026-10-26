@@ -21,7 +21,7 @@ let c10;
 let c9;
 let obj2;
 let unpackModuleId;
-const f101673 = (item) => {
+const f101682 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -115,7 +115,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
     }
     if (!tmp19) {
       const _JSON2 = JSON;
-      let obj6 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101673) };
+      let obj6 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101682) };
       const _String = String;
       sum = sum + 1;
       let parsed = JSON.parse(json);
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   const fn = function w() {
     let entries;
-    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101673) };
+    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101682) };
     sum = sum + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -506,7 +506,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   const tmp4Result = id(obj.useState(() => {
     let entries;
-    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101673) };
+    const obj = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101682) };
     sum = sum + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -520,7 +520,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeVide
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101673) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f101682) };
     const _String = String;
     sum = sum + 1;
     let parsed = JSON.parse(json);

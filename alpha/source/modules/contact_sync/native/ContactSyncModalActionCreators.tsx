@@ -1,24 +1,24 @@
-// Module ID: 13580
-// Function ID: 13581
+// Module ID: 13579
+// Function ID: 13580
 // Name: ContactSyncModalActionCreators
-// Dependencies: [5, 6500, 1392, 13581, 13583, 13582, 1087, 7868, 13584, 13586, 1267, 13588, 1128, 5909, 5663, 7140, 6374, 6672, 13589, 2002, 9050, 1107, 13609, 2]
+// Dependencies: [5, 6500, 1392, 13580, 13582, 13581, 1087, 7868, 13583, 13585, 1267, 13587, 1128, 5909, 5663, 7140, 6374, 6672, 13588, 2002, 9050, 1107, 13608, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModal, openContactSyncModalDeeplink, openContactSyncModalOnboarding, refreshContactSyncPermissionStatus, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 13580 (ContactSyncModalActionCreators)
+// Module 13579 (ContactSyncModalActionCreators)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7140 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13584 */;
-import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 13586 */;
-import NUFActionCreators from "NUFActionCreators" /* 13609 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
+import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 13585 */;
+import NUFActionCreators from "NUFActionCreators" /* 13608 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
 import UserStore from "UserStore" /* 1392 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13581 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13583 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13582 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13580 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13582 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13581 */;
 import Constants from "Constants" /* 1087 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f118850 = (result) => {
+const f118861 = (result) => {
   closure_1_7(result);
 };
 function handleNameInputScreenOrSuggestions() {
@@ -72,7 +72,7 @@ let obj = function _handleNameInputScreenOrSuggestions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let tmp77;
@@ -243,7 +243,7 @@ let obj = function _handleNameInputScreenOrSuggestions() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp77) {
           if (0 === c6) {
@@ -272,7 +272,7 @@ obj = function _handlePhoneVerificationComplete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -300,7 +300,7 @@ obj = function _handlePhoneVerificationComplete() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -324,7 +324,7 @@ obj = function _startContactSync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -367,7 +367,7 @@ obj = function _startContactSync() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp13) {
         c1 = 3;
@@ -405,7 +405,7 @@ obj = function _bulkAddFriendSuggestions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -503,7 +503,7 @@ obj = function _bulkAddFriendSuggestions() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp64) {
           tmp65 = c4;
           if (0 === c4) {
@@ -532,7 +532,7 @@ obj = function _verifyPhone() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c5;
@@ -626,7 +626,7 @@ function closeContactSyncModal(skip) {
     }
     let obj2 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
     const tmp16 = closure_15();
-    const obj3 = flag2(13586);
+    const obj3 = flag2(13585);
     obj3.trackFlowEnd(flag, obj2);
     if (tmp16) {
       onComplete(flag);
@@ -649,7 +649,7 @@ function closeContactSyncModal(skip) {
     const tmp2 = closure_15();
     dependencyMap = tmp2;
     if (!back) {
-      obj = flag2(13586);
+      obj = flag2(13585);
       const obj4 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
       obj.trackFlowEnd(flag2, obj4);
     }
@@ -729,7 +729,7 @@ export const upsellDismissed = function upsellDismissed() {
 export const openContactSyncModal = function openContactSyncModal(initialRoutes, HUB_PROGRESS, arg2) {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f118850);
+  result.then(f118861);
   const tmp2 = dependencyMap;
   if (null == initialRoutes.initialRoutes) {
     syncedClientThemes(map1.NORMAL);
@@ -742,7 +742,7 @@ export const openContactSyncModal = function openContactSyncModal(initialRoutes,
   }
   const obj3 = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
   const obj4 = ModalActionCreatorsDefault;
-  const pushLazyResult = obj4.pushLazy(asyncRequire(13589, tmp2.paths), obj3, closure_20);
+  const pushLazyResult = obj4.pushLazy(asyncRequire(13588, tmp2.paths), obj3, closure_20);
   pushLazyResult.then(arg2);
 };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
@@ -778,7 +778,7 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   obj = {};
   const obj2 = ContactSyncUtils;
   const result = obj2.checkContactPermissions();
-  result.then(f118850);
+  result.then(f118861);
   const tmp2 = dependencyMap;
   if (null == obj.initialRoutes) {
     syncedClientThemes(map1.NORMAL);
@@ -787,12 +787,12 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   tmpResult.trackFlowStart({ location: { page: "Deep Link" } });
   const obj3 = { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage };
   const obj4 = ModalActionCreatorsDefault;
-  const pushLazyResult = obj4.pushLazy(asyncRequire(13589, tmp2.paths), obj3, closure_20);
+  const pushLazyResult = obj4.pushLazy(asyncRequire(13588, tmp2.paths), obj3, closure_20);
   pushLazyResult.then(undefined);
 };
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f118850);
+  result.then(f118861);
 };
 export { closeContactSyncModal };

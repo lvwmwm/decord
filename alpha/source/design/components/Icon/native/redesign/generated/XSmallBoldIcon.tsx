@@ -1,9 +1,9 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11025
+// Function ID: 11026
 // Name: XSmallBoldIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 7297, 5668, 2]
 
-// Module 11023 (XSmallBoldIcon)
+// Module 11025 (XSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

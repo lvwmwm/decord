@@ -1,9 +1,9 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11520
+// Function ID: 11521
 // Name: GuildScheduledEventPrompts
 // Dependencies: [19, 21, 4971, 587, 558, 576, 8944, 8906, 1128, 8951, 9048, 4796, 2049, 9144, 2]
 
-// Module 11518 (GuildScheduledEventPrompts)
+// Module 11520 (GuildScheduledEventPrompts)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;

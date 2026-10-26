@@ -1,10 +1,10 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16227
+// Function ID: 16228
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5210, 8933, 2002, 4971, 587, 558, 576, 5234, 1128, 2536, 1202, 5977, 1505, 7090, 13748, 573, 16229, 16230, 5689, 6987, 7295, 6903, 7221, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 5210, 8933, 2002, 4971, 587, 558, 576, 5234, 1128, 2536, 1202, 5977, 1505, 7090, 13747, 573, 16228, 16229, 5689, 6987, 7295, 6903, 7221, 5244, 2]
 // Exports: default
 
-// Module 16228 (ScheduleDowntimeScreen)
+// Module 16227 (ScheduleDowntimeScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,7 +15,7 @@ import _modDef2536 from "module_2536" /* 2536 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13748 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13747 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -205,7 +205,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -277,7 +277,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_17(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp33) {
           closure_2 = tmp33;
           if (0 === c3) {
@@ -441,7 +441,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -508,7 +508,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_17(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp32) {
         closure_3 = tmp32;
         if (0 === c4) {
@@ -607,7 +607,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f152343 = (first1) => {
+          const f152356 = (first1) => {
             closure_1_11(first1);
             obj = closure_2_0(rule[21]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;

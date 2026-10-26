@@ -1,17 +1,17 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14220
+// Function ID: 14221
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4971, 587, 5052, 11231, 5206, 1202, 14222, 5297, 5053, 7221, 5582, 14223, 14213, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 5052, 11233, 5206, 1202, 14221, 5297, 5053, 7221, 5582, 14222, 14212, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 14221 (MediaModalOverlayFooter)
+// Module 14220 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11231 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11233 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

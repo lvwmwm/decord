@@ -1,9 +1,9 @@
-// Module ID: 17555
-// Function ID: 17556
+// Module ID: 17554
+// Function ID: 17555
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5712, 4913, 1392, 1087, 4830, 6705, 21, 4971, 587, 6707, 13274, 558, 576, 1417, 5669, 17556, 8546, 8502, 504, 1202, 5993, 1114, 17557, 5604, 2]
+// Dependencies: [109, 19, 17, 5712, 4913, 1392, 1087, 4830, 6705, 21, 4971, 587, 6707, 13273, 558, 576, 1417, 5669, 17555, 8546, 8502, 504, 1202, 5993, 1114, 17556, 5604, 2]
 
-// Module 17555 (ChannelItem)
+// Module 17554 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,8 +15,8 @@ import ReadStateConstants from "ReadStateConstants" /* 6705 */;
 import LegacyTokens from "LegacyTokens" /* 6707 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 8546 */;
-import BaseChannelItem from "BaseChannelItem" /* 13274 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17556 */;
+import BaseChannelItem from "BaseChannelItem" /* 13273 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17555 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5712 */;
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(13274).BaseChannelIcon;
+    const BaseChannelIcon = tmp(13273).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13274).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(13273).BaseChannelIcon;
     const tmp17 = syncedClientThemes;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

@@ -1,17 +1,17 @@
-// Module ID: 17623
-// Function ID: 17624
+// Module ID: 17622
+// Function ID: 17623
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1392, 4820, 21, 587, 7261, 11057, 5250, 4971, 558, 576, 573, 7253, 7278, 6931, 6908, 1202, 1128, 5234, 9338, 5244, 6905, 2]
+// Dependencies: [19, 17, 1392, 4820, 21, 587, 7261, 11059, 5250, 4971, 558, 576, 573, 7253, 7278, 6931, 6908, 1202, 1128, 5234, 9338, 5244, 6905, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 17623 (AccountLinkBanner)
+// Module 17622 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import ButtonConstants from "ButtonConstants" /* 5250 */;
 import GameIcon from "GameIcon" /* 7261 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11057 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -248,7 +248,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
     const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

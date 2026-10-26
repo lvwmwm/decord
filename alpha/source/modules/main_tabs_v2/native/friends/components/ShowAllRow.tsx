@@ -1,9 +1,9 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18215
+// Function ID: 18216
 // Name: ShowAllRow
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 15295, 1128, 5234, 6903, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 15294, 1128, 5234, 6903, 2]
 
-// Module 18216 (ShowAllRow)
+// Module 18215 (ShowAllRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import TableRow2 from "TableRow" /* 6903 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15295 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15294 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -64,7 +64,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShowAllRow(a
   }
   if (cResult[3] !== tmp5) {
     const obj2 = { size: native.AvatarSizes.XSMALL_20, "aria-label": "", children: tmp5 };
-    const AvatarDuoPile = tmp(15295).AvatarDuoPile;
+    const AvatarDuoPile = tmp(15294).AvatarDuoPile;
     const tmp11 = _false(AvatarDuoPile, obj2);
     cResult[3] = tmp5;
     cResult[4] = tmp11;

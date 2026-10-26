@@ -1,22 +1,22 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16837
+// Function ID: 16838
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 16839, 8332, 21, 4971, 587, 558, 576, 7075, 13312, 16840, 16841, 5234, 1128, 6905, 7012, 11206, 16842, 16843, 15978, 2]
+// Dependencies: [19, 17, 16838, 8332, 21, 4971, 587, 558, 576, 7075, 13311, 16839, 16840, 5234, 1128, 6905, 7012, 11208, 16841, 16842, 15977, 2]
 
-// Module 16838 (SettingsNotificationScreen)
+// Module 16837 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7075 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13312 */;
-import SettingLayoutDefault from "SettingLayout" /* 15978 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16839 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16840 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16841 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16842 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13311 */;
+import SettingLayoutDefault from "SettingLayout" /* 15977 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16838 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16839 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16840 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -303,11 +303,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const inHoldout = obj3.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: tmp5Result };
-    const createList = tmp(11206).createList;
+    const createList = tmp(11208).createList;
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(16842);
+      tmp5Result = tmp5(16841);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

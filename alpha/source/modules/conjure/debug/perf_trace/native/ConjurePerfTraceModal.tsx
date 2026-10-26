@@ -1,7 +1,7 @@
 // Module ID: 12540
 // Function ID: 12541
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 10704, 21, 4971, 587, 558, 576, 12541, 7305, 11077, 5234, 7957, 12542, 12544, 1633, 12545, 10734, 5244, 504, 6924, 6672, 11147, 2]
+// Dependencies: [19, 17, 10704, 21, 4971, 587, 558, 576, 12541, 7305, 11079, 5234, 7957, 12542, 12544, 1633, 12545, 10734, 5244, 504, 6924, 6672, 11149, 2]
 
 // Module 12540 (ConjurePerfTraceModal)
 import react2 from "react" /* 576 */;
@@ -555,7 +555,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waterf
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7305).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(11077).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(11079).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;
@@ -1633,7 +1633,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
         }
         if (cResult[12] !== tmp12) {
           const obj2 = { initialRouteName: perf_trace, screens: tmp12 };
-          const tmp17 = closure_8(projectId(11147).Modal, obj2);
+          const tmp17 = closure_8(projectId(11149).Modal, obj2);
           cResult[12] = tmp12;
           cResult[13] = tmp17;
           tmp14 = tmp17;

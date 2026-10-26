@@ -1,7 +1,7 @@
 // Module ID: 5657
 // Function ID: 5658
 // Name: handleURL
-// Dependencies: [5, 17, 5211, 1087, 3, 5658, 5659, 5660, 5661, 1951, 5662, 1128, 5693, 1384, 5210, 1389, 5696, 7434, 15093, 2]
+// Dependencies: [5, 17, 5211, 1087, 3, 5658, 5659, 5660, 5661, 1951, 5662, 1128, 5693, 1384, 5210, 1389, 5696, 7434, 15092, 2]
 // Exports: default
 
 // Module 5657 (handleURL)
@@ -12,7 +12,7 @@ import ActionSheetStore from "ActionSheetStore" /* 5211 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let constants;
+let closure_4, constants;
 
 let metroImportDefault;
 let metroRequire;
@@ -25,7 +25,6 @@ function sanitizeURLPart(str) {
 }
 let obj = function _handleURL() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
-    let closure_4;
     let closure_5;
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -34,12 +33,8 @@ let obj = function _handleURL() {
     let c8 = 0;
     let c6 = 0;
     let iter = (async (arg0, value) => {
-      let flag;
-      let flag2;
       let open;
-      let openInBrowser;
-      let tmp4;
-      let tmp57;
+      let tmp;
       function tryHandleCustomScheme(tryHandleUniversalLink) {
         let protocol;
         let regex;
@@ -147,194 +142,252 @@ let obj = function _handleURL() {
         });
         return promise;
       }
-      if (1 === tmp4) {
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c8 = 3;
-          let obj5 = { value, done: true };
-          return obj5;
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
-          tryHandleUniversalLink = flag2;
-          if (tryHandleUniversalLink) {
-            openInBrowser();
-          } else {
-            let obj6 = /^[a-zA-Z0-9+-.]+:/;
-            tryHandleUniversalLink = obj6.test(tryHandleUniversalLink) || `https://${tryHandleUniversalLink}`;
-            let obj7 = /^https?:/i;
-            tryHandleUniversalLink = obj7.test(tryHandleUniversalLink);
-            if (tryHandleUniversalLink) {
-              const obj8 = closure_132_1(closure_132_2[15]);
-              tmp57 = obj8.parse(tryHandleUniversalLink);
-              tmp57.pathname = closure_132_9(tmp57.pathname);
-              tmp57.search = closure_132_9(tmp57.search);
-              tmp57.hash = closure_132_9(tmp57.hash);
-              const obj9 = closure_132_1(closure_132_2[15]);
-              tryHandleUniversalLink = obj9.format(tmp57);
-              c6 = 0;
-            }
-            const payload = closure_132_1(closure_132_2[16])(tryHandleUniversalLink).payload;
-            tryHandleUniversalLink = payload.type === closure_132_6.CHANNEL && null != payload.channelId;
-            if (tryHandleUniversalLink) {
-              const obj10 = closure_132_0(closure_132_2[17]);
-              tryHandleUniversalLink = obj10.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
-            }
-            const obj11 = { payload, safe: true };
-            tryHandleUniversalLink = closure_132_1(closure_132_2[18])(obj11);
-            if (!tryHandleUniversalLink) {
-              const tmp53 = flag;
-              if (tmp53) {
-                tryHandleUniversalLink = function tryHandleUniversalLink(flag) {
-                  closure_0 = flag;
-                  const promise = new Promise((arg0) => {
-                    closure_0 = arg0;
-                    obj = closure_2_1(closure_2_2[5]);
-                    const result = obj.tryOpenUrlAsUniversalLink(closure_0);
-                    const nextPromise = result.then(() => {
-                      logger.info("Universal link opened successfully.");
-                      closure_0(true);
-                    });
-                    nextPromise.catch(() => {
-                      logger.info("URL is not a handled universal link.");
-                      closure_0(false);
-                    });
-                  });
-                  return promise;
-                };
-                c7 = 3;
-                c8 = 1;
-                const obj12 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
-                return obj12;
-              }
-            }
-          }
+          return { value: "IconComponent", done: "+352" };
         }
-      } else if (2 === tmp4) {
-        let tmp12 = tmp57;
-        c6 = 0;
-        c8 = 3;
-        return { value: "IconComponent", done: null };
-      } else if (3 === tmp4) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          return { value, done: true };
-        } else {
-          constants = value;
-          tryHandleUniversalLink = constants;
-          if (!tryHandleUniversalLink) {
-            let tmp11 = tryHandleUniversalLink;
-            tryHandleUniversalLink = tryHandleCustomScheme(tryHandleUniversalLink);
-            c7 = 4;
-            c8 = 1;
-            return { value: tryHandleUniversalLink, done: false };
-          }
-        }
-      } else if (4 === tmp4) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          return { value, done: true };
-        } else {
-          const logger = value;
-          tryHandleUniversalLink = logger;
-          if (!tryHandleUniversalLink) {
-            let tmp9 = tryHandleUniversalLink;
-            tryHandleUniversalLink = tryHandleWhitelistedURL(tryHandleUniversalLink);
-            c7 = 5;
-            c8 = 1;
-            return { value: tryHandleUniversalLink, done: false };
-          }
-        }
-      } else if (arg0 === 1) {
-        c8 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c8 = 3;
-        obj = { value, done: true };
-        return obj;
       } else {
-        let tmp5 = tryHandleUniversalLink;
-        let closure_9 = value;
-        tryHandleUniversalLink = closure_9;
-        if (!tryHandleUniversalLink) {
-          let tmp6 = openInBrowser;
-          let tmp7 = openInBrowser();
-        }
-      }
-      await "IconComponent";
-      tryHandleUniversalLink = closure_0;
-      let obj4 = closure_2;
-      if (closure_2 === undefined) {
-        obj4 = {};
-      }
-      flag = obj4.allowExternal ?? true;
-      flag2 = obj4.forceExternalBrowser ?? false;
-      openInBrowser = function openInBrowser() {
-        const tmp = closure_2_1;
-        obj = closure_2_1(closure_2_2[9]);
-        if (null != obj.sanitizeUrl(tryHandleUniversalLink)) {
-          let SAFARI = constants.SAFARI;
-          if (tryHandleUniversalLink.startsWith("https:")) {
-            const obj2 = closure_2_0(closure_2_2[12]);
-            let browserManagerSelectedBrowser = obj2.getBrowserManagerSelectedBrowser();
-            let tmp11 = closure_1;
-            const tmp9 = closure_2_0;
-            if (closure_1 == null) {
-              tmp11 = browserManagerSelectedBrowser;
-            }
-            SAFARI = tmp11;
-            const tmp12 = flag2 && tmp11 === constants.IN_APP;
-            if (tmp12) {
-              if (browserManagerSelectedBrowser === constants.IN_APP) {
-                const tmp9Result = tmp9(closure_2_2[13]);
-                browserManagerSelectedBrowser = tmp9Result.isIOS() ? tmp6.SAFARI : tmp6.CHROME;
+        let tmp57;
+        try {
+          let flag;
+          let flag2;
+          let payload;
+          let logger;
+          let closure_9;
+          let openInBrowser;
+          let num = 2;
+          c8 = 2;
+          let tmp4 = c7;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp;
+              flag = undefined;
+              flag2 = undefined;
+              tryHandleUniversalLink = closure_0;
+              let obj4 = closure_2;
+              if (closure_2 === undefined) {
+                obj4 = {};
               }
-              SAFARI = browserManagerSelectedBrowser;
+              flag = obj4.allowExternal ?? true;
+              flag2 = obj4.forceExternalBrowser ?? false;
+              tmp57 = undefined;
+              payload = undefined;
+              constants = undefined;
+              logger = undefined;
+              closure_9 = undefined;
+              openInBrowser = function openInBrowser() {
+                const tmp = closure_2_1;
+                obj = closure_2_1(closure_2_2[9]);
+                if (null != obj.sanitizeUrl(tryHandleUniversalLink)) {
+                  let SAFARI = constants.SAFARI;
+                  if (tryHandleUniversalLink.startsWith("https:")) {
+                    const obj2 = closure_2_0(closure_2_2[12]);
+                    let browserManagerSelectedBrowser = obj2.getBrowserManagerSelectedBrowser();
+                    let tmp11 = closure_1;
+                    const tmp9 = closure_2_0;
+                    if (closure_1 == null) {
+                      tmp11 = browserManagerSelectedBrowser;
+                    }
+                    SAFARI = tmp11;
+                    const tmp12 = flag2 && tmp11 === constants.IN_APP;
+                    if (tmp12) {
+                      if (browserManagerSelectedBrowser === constants.IN_APP) {
+                        const tmp9Result = tmp9(closure_2_2[13]);
+                        browserManagerSelectedBrowser = tmp9Result.isIOS() ? tmp6.SAFARI : tmp6.CHROME;
+                      }
+                      SAFARI = browserManagerSelectedBrowser;
+                    }
+                  }
+                  if (constants.IN_APP === SAFARI) {
+                    const obj6 = closure_2_0(closure_2_2[12]);
+                    const result = obj6.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.IN_APP);
+                    result.catch(() => {
+                      const presentFailedToast = tryHandleUniversalLink(flag[10]).presentFailedToast;
+                      tryHandleUniversalLink(flag[10]);
+                      const intl = tryHandleUniversalLink(flag[11]).intl;
+                      presentFailedToast("" + intl.string(tryHandleUniversalLink(flag[11]).t.HryVrx) + " " + closure_1_0);
+                    });
+                    const obj7 = closure_2_0(closure_2_2[13]);
+                    const isIOSResult = obj7.isIOS() && open.isOpen();
+                    if (isIOSResult) {
+                      const tmpResult = tmp(closure_2_2[14]);
+                      tmpResult.hideAllActionSheets();
+                    }
+                  } else if (constants.CHROME === SAFARI) {
+                    const obj5 = closure_2_0(closure_2_2[12]);
+                    const result1 = obj5.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.CHROME);
+                    result1.catch(() => {
+                      const presentFailedToast = tryHandleUniversalLink(flag[10]).presentFailedToast;
+                      tryHandleUniversalLink(flag[10]);
+                      const intl = tryHandleUniversalLink(flag[11]).intl;
+                      presentFailedToast("" + intl.string(tryHandleUniversalLink(flag[11]).t.HryVrx) + " " + closure_1_0);
+                    });
+                  } else {
+                    const SAFARI2 = tmp6.SAFARI;
+                    const obj4 = closure_2_0(closure_2_2[12]);
+                    const result2 = obj4.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.SAFARI);
+                  }
+                } else {
+                  let presentFailedToast = closure_2_0(closure_2_2[10]).presentFailedToast;
+                  closure_2_0(closure_2_2[10]);
+                  let intl = closure_2_0(tmp2[11]).intl;
+                  presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
+                }
+              };
+              c7 = 1;
+              c8 = 1;
+              return { value: "Reflect", done: null };
             }
-          }
-          if (constants.IN_APP === SAFARI) {
-            const obj6 = closure_2_0(closure_2_2[12]);
-            const result = obj6.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.IN_APP);
-            result.catch(() => {
-              const presentFailedToast = tryHandleUniversalLink(flag[10]).presentFailedToast;
-              tryHandleUniversalLink(flag[10]);
-              const intl = tryHandleUniversalLink(flag[11]).intl;
-              presentFailedToast("" + intl.string(tryHandleUniversalLink(flag[11]).t.HryVrx) + " " + closure_1_0);
-            });
-            const obj7 = closure_2_0(closure_2_2[13]);
-            const isIOSResult = obj7.isIOS() && open.isOpen();
-            if (isIOSResult) {
-              const tmpResult = tmp(closure_2_2[14]);
-              tmpResult.hideAllActionSheets();
-            }
-          } else if (constants.CHROME === SAFARI) {
-            const obj5 = closure_2_0(closure_2_2[12]);
-            const result1 = obj5.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.CHROME);
-            result1.catch(() => {
-              const presentFailedToast = tryHandleUniversalLink(flag[10]).presentFailedToast;
-              tryHandleUniversalLink(flag[10]);
-              const intl = tryHandleUniversalLink(flag[11]).intl;
-              presentFailedToast("" + intl.string(tryHandleUniversalLink(flag[11]).t.HryVrx) + " " + closure_1_0);
-            });
           } else {
-            const SAFARI2 = tmp6.SAFARI;
-            const obj4 = closure_2_0(closure_2_2[12]);
-            const result2 = obj4.browserManagerOpenUrl(tryHandleUniversalLink, tmp6.SAFARI);
+            if (1 === tmp4) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                let obj5 = { value, done: true };
+                return obj5;
+              } else {
+                tryHandleUniversalLink = flag2;
+                if (tryHandleUniversalLink) {
+                  openInBrowser();
+                } else {
+                  let obj6 = /^[a-zA-Z0-9+-.]+:/;
+                  tryHandleUniversalLink = obj6.test(tryHandleUniversalLink);
+                  if (!tryHandleUniversalLink) {
+                    tryHandleUniversalLink = `https://${tryHandleUniversalLink}`;
+                  }
+                  let obj7 = /^https?:/i;
+                  tryHandleUniversalLink = obj7.test(tryHandleUniversalLink);
+                  if (tryHandleUniversalLink) {
+                    const obj8 = closure_132_1(closure_132_2[15]);
+                    tmp57 = obj8.parse(tryHandleUniversalLink);
+                    tmp57.pathname = closure_132_9(tmp57.pathname);
+                    tmp57.search = closure_132_9(tmp57.search);
+                    tmp57.hash = closure_132_9(tmp57.hash);
+                    const obj9 = closure_132_1(closure_132_2[15]);
+                    tryHandleUniversalLink = obj9.format(tmp57);
+                    c6 = 0;
+                  }
+                  payload = closure_132_1(closure_132_2[16])(tryHandleUniversalLink).payload;
+                  tryHandleUniversalLink = payload.type === closure_132_6.CHANNEL && null != payload.channelId;
+                  if (tryHandleUniversalLink) {
+                    const obj10 = closure_132_0(closure_132_2[17]);
+                    tryHandleUniversalLink = obj10.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
+                  }
+                  const obj11 = { payload, safe: true };
+                  tryHandleUniversalLink = closure_132_1(closure_132_2[18])(obj11);
+                  if (!tryHandleUniversalLink) {
+                    const tmp53 = flag;
+                    if (tmp53) {
+                      tryHandleUniversalLink = function tryHandleUniversalLink(flag) {
+                        closure_0 = flag;
+                        const promise = new Promise((arg0) => {
+                          closure_0 = arg0;
+                          obj = closure_2_1(closure_2_2[5]);
+                          const result = obj.tryOpenUrlAsUniversalLink(closure_0);
+                          const nextPromise = result.then(() => {
+                            logger.info("Universal link opened successfully.");
+                            closure_0(true);
+                          });
+                          nextPromise.catch(() => {
+                            logger.info("URL is not a handled universal link.");
+                            closure_0(false);
+                          });
+                        });
+                        return promise;
+                      };
+                      c7 = 3;
+                      c8 = 1;
+                      const obj12 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
+                      return obj12;
+                    }
+                  }
+                }
+              }
+            } else if (2 === tmp4) {
+              let tmp12 = tmp57;
+              c6 = 0;
+              c8 = 3;
+              return { value: "IconComponent", done: "+352" };
+            } else if (3 === tmp4) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                constants = value;
+                tryHandleUniversalLink = constants;
+                if (!tryHandleUniversalLink) {
+                  let tmp11 = tryHandleUniversalLink;
+                  tryHandleUniversalLink = tryHandleCustomScheme(tryHandleUniversalLink);
+                  c7 = 4;
+                  c8 = 1;
+                  return { value: tryHandleUniversalLink, done: false };
+                }
+              }
+            } else if (4 === tmp4) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                logger = value;
+                tryHandleUniversalLink = logger;
+                if (!tryHandleUniversalLink) {
+                  let tmp9 = tryHandleUniversalLink;
+                  tryHandleUniversalLink = tryHandleWhitelistedURL(tryHandleUniversalLink);
+                  c7 = 5;
+                  c8 = 1;
+                  return { value: tryHandleUniversalLink, done: false };
+                }
+              }
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              let tmp5 = tryHandleUniversalLink;
+              closure_9 = value;
+              tryHandleUniversalLink = closure_9;
+              if (!tryHandleUniversalLink) {
+                let tmp6 = openInBrowser;
+                let tmp7 = openInBrowser();
+              }
+            }
+            c8 = 3;
+            return { value: "IconComponent", done: "+352" };
           }
-        } else {
-          let presentFailedToast = closure_2_0(closure_2_2[10]).presentFailedToast;
-          closure_2_0(closure_2_2[10]);
-          let intl = closure_2_0(tmp2[11]).intl;
-          presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
+        } catch (tmp57) {
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp57;
+          } else {
+            c7 = 2;
+          }
         }
-      };
-      return "Reflect";
+      }
     })();
     let nextResult = iter.next();
     return iter;

@@ -1,9 +1,9 @@
-// Module ID: 13295
-// Function ID: 13296
+// Module ID: 13294
+// Function ID: 13295
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5983, 13296, 10113, 1087, 21, 13297, 4971, 587, 558, 576, 5253, 13298, 2000, 9656, 10204, 4980, 1128, 5711, 12, 1202, 10191, 5634, 13299, 13300, 13301, 2]
+// Dependencies: [32, 19, 17, 5983, 13295, 10113, 1087, 21, 13296, 4971, 587, 558, 576, 5253, 13297, 2000, 9656, 10204, 4980, 1128, 5711, 12, 1202, 10191, 5634, 13298, 13299, 13300, 2]
 
-// Module 13295 (ApplicationCommandDiscovery)
+// Module 13294 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -14,10 +14,10 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9656 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10113 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10191 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13296 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13297 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13298 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13301 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13295 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13296 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13297 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -94,7 +94,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   } else {
     first = cResult[0];
   }
-  let tmpResult = tmp(13298);
+  let tmpResult = tmp(13297);
   const commandDiscoveryManager = tmpResult.useCommandDiscoveryManager(first);
   if (cResult[1] !== channel) {
     const obj4 = { channel, type: "channel" };

@@ -1,9 +1,9 @@
-// Module ID: 18191
-// Function ID: 18192
+// Module ID: 18190
+// Function ID: 18191
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1392, 10024, 1087, 21, 1384, 4971, 558, 576, 18192, 5052, 5247, 5705, 6908, 5234, 1128, 5258, 5025, 504, 5994, 2]
+// Dependencies: [32, 19, 17, 1392, 10024, 1087, 21, 1384, 4971, 558, 576, 18191, 5052, 5247, 5705, 6908, 5234, 1128, 5258, 5025, 504, 5994, 2]
 
-// Module 18191 (ChannelDetailsTopic)
+// Module 18190 (ChannelDetailsTopic)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;

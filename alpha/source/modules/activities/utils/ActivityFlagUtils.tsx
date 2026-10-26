@@ -1,10 +1,10 @@
-// Module ID: 11200
-// Function ID: 11201
+// Module ID: 11202
+// Function ID: 11203
 // Name: ActivityFlagUtils
 // Dependencies: [1087, 4799, 510, 1405, 7812, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11200 (ActivityFlagUtils)
+// Module 11202 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 4799 */;

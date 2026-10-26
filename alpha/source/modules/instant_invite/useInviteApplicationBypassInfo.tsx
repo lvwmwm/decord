@@ -1,9 +1,9 @@
-// Module ID: 19353
-// Function ID: 19354
+// Module ID: 19352
+// Function ID: 19353
 // Name: useInviteApplicationBypassInfo
 // Dependencies: [4903, 1087, 558, 576, 504, 2]
 
-// Module 19353 (useInviteApplicationBypassInfo)
+// Module 19352 (useInviteApplicationBypassInfo)
 import PermissionStore from "PermissionStore" /* 4903 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,13 +1,13 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14311
+// Function ID: 14312
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5712, 21, 558, 576, 6782, 504, 5989, 1202, 6903, 1128, 11074, 2]
+// Dependencies: [19, 5712, 21, 558, 576, 6782, 504, 5989, 1202, 6903, 1128, 11076, 2]
 
-// Module 14312 (UserProfileActivityVoiceChannelUsers)
+// Module 14311 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11074 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11076 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5712 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -183,13 +183,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         }
         return tmp11;
       }
-      const tmp14 = jsx(onPressUser(11074), { title: first, onBack, scrollable: true, children: tmp8 });
+      const tmp14 = jsx(onPressUser(11076), { title: first, onBack, scrollable: true, children: tmp8 });
       cResult[8] = onBack;
       cResult[9] = tmp8;
       cResult[10] = tmp14;
       tmp11 = tmp14;
     }
-    const tmp10 = jsx(channel(11074).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
+    const tmp10 = jsx(channel(11076).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
     cResult[5] = tmp7;
     cResult[6] = users;
     cResult[7] = tmp10;

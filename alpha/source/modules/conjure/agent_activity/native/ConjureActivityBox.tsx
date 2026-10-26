@@ -1,7 +1,7 @@
 // Module ID: 12390
 // Function ID: 12391
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 12354, 587, 558, 576, 12391, 12309, 11879, 1128, 3830, 12344, 12437, 5234, 11757, 7957, 12438, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 12354, 587, 558, 576, 12391, 12311, 11881, 1128, 3830, 12343, 12437, 5234, 11759, 7957, 12438, 2]
 // Exports: stretchOf
 
 // Module 12390 (ConjureActivityBox)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12344 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12343 */;
 import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12354 */;
 import ConjureSubagentMark from "ConjureSubagentMark" /* 12391 */;
 import ConjureNativeStepImagesDefault from "ConjureNativeStepImages" /* 12438 */;
@@ -780,7 +780,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     arr = cResult[1];
   }
   if (cResult[3] !== node) {
-    let tmpResult = tmp(12309);
+    let tmpResult = tmp(12311);
     const describeNodeResult = tmpResult.describeNode(node);
     cResult[3] = node;
     cResult[4] = describeNodeResult;
@@ -798,7 +798,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     if (null != node.durationMs) {
       let obj2 = { variant: "text-xs/normal", color: "text-subtle", children: tmpResult2.describeDuration(node.durationMs) };
       let Text = tmp(5234).Text;
-      tmpResult2 = node(11879);
+      tmpResult2 = node(11881);
       tmp14 = closure_6(Text, obj2);
     }
     cResult[5] = node.durationMs;
@@ -970,7 +970,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(12309);
+  obj2 = node(12311);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -980,7 +980,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   if (null != node.durationMs) {
     let obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
     let Text = tmp8(5234).Text;
-    tmp8Result = tmp8(11879);
+    tmp8Result = tmp8(11881);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];

@@ -1,9 +1,9 @@
-// Module ID: 19029
-// Function ID: 19030
+// Module ID: 19028
+// Function ID: 19029
 // Name: IntegrationTypes
 // Dependencies: [2]
 
-// Module 19029 (IntegrationTypes)
+// Module 19028 (IntegrationTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { SYNCABLE: new Set(["twitch", "youtube"]) };

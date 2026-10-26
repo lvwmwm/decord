@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12309
+// Function ID: 12310
 // Name: useConjureHeldPrompt
-// Dependencies: [32, 19, 10699, 10698, 6773, 558, 576, 504, 11752, 2]
+// Dependencies: [32, 19, 10699, 10698, 6773, 558, 576, 504, 11754, 2]
 
-// Module 12307 (useConjureHeldPrompt)
-import conjureScopeSetup from "conjureScopeSetup" /* 11752 */;
+// Module 12309 (useConjureHeldPrompt)
+import conjureScopeSetup from "conjureScopeSetup" /* 11754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureChatStore from "ConjureChatStore" /* 10699 */;

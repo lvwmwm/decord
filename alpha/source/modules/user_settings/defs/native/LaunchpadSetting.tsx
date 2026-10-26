@@ -1,16 +1,16 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 16890
+// Function ID: 16891
 // Name: LaunchpadSetting
-// Dependencies: [8332, 11202, 4799, 1211, 1128, 11206, 11203, 2]
+// Dependencies: [8332, 11204, 4799, 1211, 1128, 11208, 11205, 2]
 
-// Module 16891 (LaunchpadSetting)
+// Module 16890 (LaunchpadSetting)
 import intl9 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11202 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11203 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11204 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11205 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12347
+// Function ID: 12348
 // Name: conjureBotPermissionsTip
 // Dependencies: [2]
 // Exports: isBotPermissionsReviewPending, resolveBotPermissionsTip
 
-// Module 12334 (conjureBotPermissionsTip)
+// Module 12347 (conjureBotPermissionsTip)
 import size from "module_2" /* 2 */;
 
 function resolveBotPermissionsTip(publish) {
@@ -21,8 +21,8 @@ function resolveBotPermissionsTip(publish) {
 }
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureBotPermissionsTip.tsx");
 
-export const isBotPermissionsReviewPending = function isBotPermissionsReviewPending(publish) {
-  return null != publish && !publish.publishing && "review_permissions" === publish.action;
+export const isBotPermissionsReviewPending = function isBotPermissionsReviewPending(publishing) {
+  return null != publishing && !publishing.publishing && "review_permissions" === publishing.action;
 };
 export { resolveBotPermissionsTip };
 export const CONJURE_BOT_PERMISSIONS_TIP_BASE = { id: "bot_permissions", priority: 3, resolve: resolveBotPermissionsTip };

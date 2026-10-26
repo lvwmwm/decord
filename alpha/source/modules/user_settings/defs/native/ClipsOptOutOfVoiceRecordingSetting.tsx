@@ -1,14 +1,14 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16268
+// Function ID: 16269
 // Name: ClipsOptOutOfVoiceRecordingSetting
-// Dependencies: [5, 8332, 4799, 584, 11206, 1128, 2]
+// Dependencies: [5, 8332, 4799, 584, 11208, 1128, 2]
 
-// Module 16269 (ClipsOptOutOfVoiceRecordingSetting)
+// Module 16268 (ClipsOptOutOfVoiceRecordingSetting)
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -26,7 +26,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _updateClipsAllowVoiceRecording() {
           obj = closure_129_1(closure_129_2[3]);
           obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp11) {
         c3 = 3;

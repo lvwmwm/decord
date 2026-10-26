@@ -1,15 +1,15 @@
-// Module ID: 19369
-// Function ID: 19370
+// Module ID: 19368
+// Function ID: 19369
 // Name: QuestFetchManager
-// Dependencies: [7776, 1104, 7214, 9565, 1257, 9571, 1384, 6801, 19370, 2]
+// Dependencies: [7776, 1104, 7214, 9565, 1257, 9571, 1384, 6801, 19369, 2]
 
-// Module 19369 (QuestFetchManager)
+// Module 19368 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1104 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import QuestsEligibility from "QuestsEligibility" /* 9565 */;
 import QuestActionCreators from "QuestActionCreators" /* 9571 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 19370 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 19369 */;
 import QuestStore from "QuestStore" /* 7776 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(19370).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(19369).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 

@@ -1,10 +1,10 @@
-// Module ID: 10855
-// Function ID: 10856
+// Module ID: 10857
+// Function ID: 10858
 // Name: FavoritesCleanup
 // Dependencies: [5, 4827, 4823, 4903, 6771, 4826, 1098, 1211, 7410, 1104, 6822, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10855 (FavoritesCleanup)
+// Module 10857 (FavoritesCleanup)
 import Constants from "Constants" /* 1098 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
@@ -58,7 +58,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp8) {
         c1 = 3;

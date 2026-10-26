@@ -1,10 +1,10 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11358
+// Function ID: 11359
 // Name: getShouldShowAppAuthPrompt
 // Dependencies: [7203, 7256, 7259, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11356 (getShouldShowAppAuthPrompt)
+// Module 11358 (getShouldShowAppAuthPrompt)
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7203 */;
 import useAuthorizationApp from "useAuthorizationApp" /* 7256 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7259 */;

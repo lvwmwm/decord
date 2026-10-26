@@ -1,14 +1,14 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11760
+// Function ID: 11761
 // Name: ConjureArchivePicker
-// Dependencies: [5, 10698, 11759, 11757, 1128, 3830, 11756, 2]
+// Dependencies: [5, 10698, 11761, 11759, 1128, 3830, 11758, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 11758 (ConjureArchivePicker)
+// Module 11760 (ConjureArchivePicker)
 import _modDef3830 from "module_3830" /* 3830 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11756 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11757 */;
-import FilePickerUtils from "FilePickerUtils" /* 11759 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11758 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11759 */;
+import FilePickerUtils from "FilePickerUtils" /* 11761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp13) {
         c6 = 3;

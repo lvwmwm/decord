@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
 
-const f107978 = (channel) => channel.channel;
+const f107987 = (channel) => channel.channel;
 let closure_5 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/conjure/projects/conjureAppInServer.tsx");
@@ -86,7 +86,7 @@ export const canRemoveConjureBot = function canRemoveConjureBot(guild, id) {
 export const findConjureAppChannels = function findConjureAppChannels(id, application_id) {
   let closure_0 = application_id;
   const arr = GuildChannelStore.getChannels(id)[closure_5];
-  const mapped = arr.map(f107978);
+  const mapped = arr.map(f107987);
   return mapped.filter((item) => {
     const obj = ConjureUtils;
     return obj.conjureChannelAppId(item) === application_id;
@@ -124,7 +124,7 @@ export const readConjureAppServerPresence = function readConjureAppServerPresenc
         if (true !== tmp6) {
           const application_id = install_scope.application_id;
           const arr2 = GuildChannelStore.getChannels(install_scope.guild_id)[closure_5];
-          const mapped = arr2.map(f107978);
+          const mapped = arr2.map(f107987);
           str2 = "in_server";
           if (mapped.filter((item) => {
             const obj = ConjureUtils;

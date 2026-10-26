@@ -1,11 +1,11 @@
-// Module ID: 13981
-// Function ID: 13982
+// Module ID: 13980
+// Function ID: 13981
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 13982, 1087, 8287, 1297, 6374, 1128, 5908, 584, 2]
+// Dependencies: [5, 13981, 1087, 8287, 1297, 6374, 1128, 5908, 584, 2]
 
-// Module 13981 (ChannelPinActionCreators)
+// Module 13980 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 13982 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 13981 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ let obj = {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -145,7 +145,7 @@ let obj = {
               show(obj3);
             });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -168,7 +168,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -218,7 +218,7 @@ let obj = {
               return show(obj);
             });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp7) {
           c3 = 3;

@@ -1,7 +1,7 @@
 // Module ID: 12477
 // Function ID: 12478
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 11830, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12473, 6905, 7959, 5689, 12478, 11756, 8751, 12480, 5244, 11812, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 11832, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12473, 6905, 7959, 5689, 12478, 11758, 8751, 12480, 5244, 11814, 2]
 
 // Module 12477 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import _modDef3830 from "module_3830" /* 3830 */;
 import react_native from "react-native" /* 5039 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import openMediaModal from "openMediaModal" /* 8751 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11830 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -1333,7 +1333,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -1373,7 +1373,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp15) {
         c3 = 3;

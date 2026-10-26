@@ -1,9 +1,9 @@
-// Module ID: 18911
-// Function ID: 18912
+// Module ID: 18910
+// Function ID: 18911
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1087, 7646, 21, 4971, 587, 558, 576, 1633, 18912, 1267, 6880, 1128, 2536, 5234, 16173, 5244, 2]
+// Dependencies: [19, 17, 1087, 7646, 21, 4971, 587, 558, 576, 1633, 18911, 1267, 6880, 1128, 2536, 5234, 16172, 5244, 2]
 
-// Module 18911 (ConnectGuardianModal)
+// Module 18910 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   onComplete = route.route.params.onComplete;
   const tmp4 = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj2 = onComplete(18912);
+  let obj2 = onComplete(18911);
   connectGuardianGate = obj2.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const obj3 = react;
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             const obj14 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
             ({ linkCode: obj8.linkCode, expiresAt: obj8.expiresAt, refresh: obj8.onRefresh } = connectGuardianGate);
-            const tmp31 = closure_7(tmp(16173).ConnectGuardianCard, obj14);
+            const tmp31 = closure_7(tmp(16172).ConnectGuardianCard, obj14);
             cResult[24] = connectGuardianGate.expiresAt;
             cResult[25] = connectGuardianGate.linkCode;
             cResult[26] = connectGuardianGate.refresh;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj = onComplete(18912);
+  let obj = onComplete(18911);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -394,7 +394,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(16173).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(16172).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);

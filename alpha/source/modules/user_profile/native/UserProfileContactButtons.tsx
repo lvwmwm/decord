@@ -1,9 +1,9 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14439
+// Function ID: 14440
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 5244, 7253, 8679, 14349, 504, 5025, 14441, 5672, 1128, 13545, 7414, 11169, 5210, 6672, 7411, 14443, 8542, 7959, 9720, 14012, 2]
+// Dependencies: [109, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 5244, 7253, 8679, 14348, 504, 5025, 14440, 5672, 1128, 13544, 7414, 11171, 5210, 6672, 7411, 14442, 8542, 7959, 9720, 14011, 2]
 
-// Module 14440 (UserProfileContactButtons)
+// Module 14439 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11169 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13545 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 14012 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11171 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13544 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 14011 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -171,7 +171,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(14349);
+  const tmpResult = tmp(14348);
   const gameFriendsForUser = tmpResult.useGameFriendsForUser(user.id);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
@@ -205,7 +205,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let tmp12;
         let tmp14;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp(14441).UserClockIcon;
+          UserPlusIcon = tmp(14440).UserClockIcon;
         } else {
           UserPlusIcon = tmp(5672).UserPlusIcon;
         }
@@ -330,7 +330,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14349);
+  const tmp3Result = user(14348);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [RelationshipStore];
   const tmp3Result2 = user(504);
@@ -348,7 +348,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14441).UserClockIcon;
+          UserPlusIcon = tmp3(14440).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(5672).UserPlusIcon;
         }

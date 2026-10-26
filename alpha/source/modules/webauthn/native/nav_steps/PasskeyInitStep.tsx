@@ -1,9 +1,9 @@
-// Module ID: 16067
-// Function ID: 16068
+// Module ID: 16066
+// Function ID: 16067
 // Name: PasskeyInitStep
-// Dependencies: [32, 19, 17, 15971, 1087, 21, 4971, 587, 504, 16068, 5234, 1128, 6696, 7959, 5689, 5210, 16072, 2002, 10120, 6987, 6903, 16073, 558, 576, 1505, 6677, 7044, 7485, 8951, 2]
+// Dependencies: [32, 19, 17, 15970, 1087, 21, 4971, 587, 504, 16067, 5234, 1128, 6696, 7959, 5689, 5210, 16071, 2002, 10120, 6987, 6903, 16072, 558, 576, 1505, 6677, 7044, 7485, 8951, 2]
 
-// Module 16067 (PasskeyInitStep)
+// Module 16066 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210
 import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6677 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15971 */;
+import WebAuthnStore from "WebAuthnStore" /* 15970 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -50,7 +50,7 @@ function CredentialList(navigation) {
   _slicedToArray(react.useState(false), 2);
   if (0 === credentials.length) {
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
-    items1 = [closure_8(tmp(16068).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    items1 = [closure_8(tmp(16067).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1128).t.FSNwFW) };
     const Text = tmp(5234).Text;
     intl2 = tmp(1128).intl;
@@ -87,7 +87,7 @@ function CredentialList(navigation) {
             onPress() {
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { credential, deleting, setDeleting };
-              return obj.openLazy(asyncRequire(16072, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
+              return obj.openLazy(asyncRequire(16071, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
             }
           };
           const IconButton = navigation(loading[13]).IconButton;
@@ -267,7 +267,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PasskeyIni
         headerRight() {
               let intl;
               if (navigation(hasFetchedCredentials[26]).hasWebAuthn) {
-                const obj = { text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk), style: headerAddButton.headerAddButton, hitSlop, onPress() { /* body not rendered: F161008 */ }, foregroundRipple: true };
+                const obj = { text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk), style: headerAddButton.headerAddButton, hitSlop, onPress() { /* body not rendered: F161024 */ }, foregroundRipple: true };
                 const HeaderActionButton = tmp(tmp2[27]).HeaderActionButton;
                 intl = tmp(tmp2[11]).intl;
                 return closure_2_8(HeaderActionButton, obj);

@@ -1,9 +1,9 @@
-// Module ID: 13302
-// Function ID: 13303
+// Module ID: 13301
+// Function ID: 13302
 // Name: ApplicationCommandList
-// Dependencies: [19, 10113, 21, 558, 576, 2000, 9656, 10204, 5634, 13299, 13300, 7220, 2]
+// Dependencies: [19, 10113, 21, 558, 576, 2000, 9656, 10204, 5634, 13298, 13299, 7220, 2]
 
-// Module 13302 (ApplicationCommandList)
+// Module 13301 (ApplicationCommandList)
 import Fragment from "Fragment" /* 21 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10113 */;
 import react from "react" /* 19 */;
@@ -267,7 +267,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
         tmp2 = null;
         found = undefined;
         if (sections != null) {
-          found = arr.find(() => { /* body not rendered: F150123 */ });
+          found = arr.find(() => { /* body not rendered: F150136 */ });
         }
         closure_1 = found;
         tmp4 = scrollDown;
@@ -275,7 +275,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
         obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
         obj.command = item;
         obj.section = found;
-        obj.onPress = function onPress() { /* body not rendered: F150124 */ };
+        obj.onPress = function onPress() { /* body not rendered: F150137 */ };
         tmp6 = item;
         obj.guildId = item.guild_id;
         num = 0;

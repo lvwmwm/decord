@@ -1,9 +1,9 @@
-// Module ID: 19207
-// Function ID: 19208
+// Module ID: 19206
+// Function ID: 19207
 // Name: CreatorMonetizationEligibilityConstants
 // Dependencies: [2]
 
-// Module 19207 (CreatorMonetizationEligibilityConstants)
+// Module 19206 (CreatorMonetizationEligibilityConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityConstants.tsx");

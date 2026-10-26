@@ -1,7 +1,7 @@
 // Module ID: 12728
 // Function ID: 12729
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12722, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12724, 1505, 11318, 5663, 1128, 7900, 7901, 2406, 12729, 12727, 6696, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 12722, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12724, 1505, 11320, 5663, 1128, 7900, 7901, 2406, 12729, 12727, 6696, 5244, 2]
 // Exports: AcceptStep
 
 // Module 12728 (AcceptStep)
@@ -155,7 +155,7 @@ export const AcceptStep = function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -219,7 +219,7 @@ export const AcceptStep = function AcceptStep(code) {
             c3 = 0;
             closure_129_2(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp29) {
           failureReason = tmp29;

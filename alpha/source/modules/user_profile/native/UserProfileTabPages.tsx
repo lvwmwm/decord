@@ -1,9 +1,9 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14431
+// Function ID: 14432
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 558, 576, 5052, 1499, 1633, 5267, 11145, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 5052, 1499, 1633, 5267, 11147, 2]
 
-// Module 14432 (UserProfileTabPages)
+// Module 14431 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -21,7 +21,7 @@ const ReanimatedRexportDefault = ReanimatedRexport;
 let _require, dependencyMap, set;
 
 let tmp;
-const SegmentedControlPages = tmp(11145);
+const SegmentedControlPages = tmp(11147);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;

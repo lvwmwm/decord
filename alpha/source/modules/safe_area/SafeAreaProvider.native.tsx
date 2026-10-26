@@ -1,9 +1,9 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15825
+// Function ID: 15826
 // Name: SafeAreaProvider
 // Dependencies: [19, 17, 21, 1630, 1635, 1384, 1634, 1645, 1274, 558, 576, 1636, 1502, 2]
 
-// Module 15826 (SafeAreaProvider)
+// Module 15825 (SafeAreaProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

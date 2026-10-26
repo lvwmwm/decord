@@ -1,10 +1,10 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11278
+// Function ID: 11279
 // Name: handleMessagesLongPressChannel
 // Dependencies: [5994, 10068, 2]
 // Exports: handleMessagesLongPressChannel
 
-// Module 11276 (handleMessagesLongPressChannel)
+// Module 11278 (handleMessagesLongPressChannel)
 import ChannelUtils from "ChannelUtils" /* 5994 */;
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10068 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 15399
-// Function ID: 15400
+// Module ID: 15398
+// Function ID: 15399
 // Name: ThemedIcon
 // Dependencies: [109, 19, 21, 558, 576, 5252, 5246, 2]
 
-// Module 15399 (ThemedIcon)
+// Module 15398 (ThemedIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import IconDefault from "Icon" /* 5246 */;

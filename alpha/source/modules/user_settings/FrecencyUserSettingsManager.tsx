@@ -1,9 +1,9 @@
-// Module ID: 18812
-// Function ID: 18813
+// Module ID: 18811
+// Function ID: 18812
 // Name: FrecencyUserSettingsManager
 // Dependencies: [5, 9652, 9651, 6725, 6006, 6765, 6823, 1246, 1097, 1375, 1104, 7214, 4804, 1247, 1248, 12, 2]
 
-// Module 18812 (FrecencyUserSettingsManager)
+// Module 18811 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import frecency_user_settings from "frecency_user_settings" /* 1247 */;
@@ -70,7 +70,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let actions = function _saveProtos() {
           const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
         });
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp24) {
         c4 = 3;
         throw tmp24;

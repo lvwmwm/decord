@@ -1,10 +1,10 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15801
+// Function ID: 15802
 // Name: MediaPlayerManager
-// Dependencies: [17, 4822, 6804, 4823, 6010, 4903, 2001, 1087, 5609, 15803, 1098, 3, 570, 1274, 2004, 5151, 584, 1384, 568, 7566, 6802, 2]
+// Dependencies: [17, 4822, 6804, 4823, 6010, 4903, 2001, 1087, 5609, 15802, 1098, 3, 570, 1274, 2004, 5151, 584, 1384, 568, 7566, 6802, 2]
 // Exports: isPlaybackComplete
 
-// Module 15802 (MediaPlayerManager)
+// Module 15801 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4823 */;
 import MessageStore from "MessageStore" /* 6010 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15803 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15802 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
@@ -48,18 +48,18 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
   let obj = {
     activeMediaPlayerSource: "IconComponent",
     mediaSourceMessage: "Set",
-    canAccessMedia: "duration",
+    canAccessMedia: "emoji",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: "Generated Test Users",
+    showPip: "RNPlainText",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 245
+    currentlyDisplayedChannelId: 6
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "duration", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "emoji", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

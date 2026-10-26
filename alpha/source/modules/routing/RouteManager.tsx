@@ -1,14 +1,14 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11739
+// Function ID: 11740
 // Name: RouteManager
-// Dependencies: [6496, 11738, 1087, 1114, 11739, 12573, 2]
+// Dependencies: [6496, 11740, 1087, 1114, 11741, 12573, 2]
 
-// Module 11737 (RouteManager)
+// Module 11739 (RouteManager)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 11739 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 11741 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 11738 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 11740 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {

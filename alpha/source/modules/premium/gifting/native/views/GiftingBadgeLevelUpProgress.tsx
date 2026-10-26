@@ -1,9 +1,9 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13898
+// Function ID: 13899
 // Name: GiftingBadgeLevelUpProgress
 // Dependencies: [19, 17, 8681, 21, 4971, 587, 558, 576, 10502, 10505, 5234, 1128, 2632, 2]
 
-// Module 13899 (GiftingBadgeLevelUpProgress)
+// Module 13898 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

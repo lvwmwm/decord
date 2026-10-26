@@ -1,10 +1,10 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19208
+// Function ID: 19209
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4841, 4845, 1392, 504, 7361, 19210, 6375, 2]
+// Dependencies: [5, 32, 19, 4841, 4845, 1392, 504, 7361, 19209, 6375, 2]
 // Exports: default
 
-// Module 19209 (useCreatorMonetizationAcceptTerms)
+// Module 19208 (useCreatorMonetizationAcceptTerms)
 import GuildRecord from "GuildRecord" /* 4841 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -60,7 +60,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp41) {
           if (0 === c3) {
             c5 = 3;

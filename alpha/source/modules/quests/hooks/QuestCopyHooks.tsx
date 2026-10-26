@@ -1,10 +1,10 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14138
+// Function ID: 14139
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2068, 1392, 6710, 1087, 1394, 1128, 558, 576, 9570, 7796, 7798, 9589, 2067, 14140, 1991, 504, 14141, 9245, 9246, 6713, 9594, 1903, 11454, 14128, 9607, 7801, 7800, 2]
+// Dependencies: [5, 32, 19, 2068, 1392, 6710, 1087, 1394, 1128, 558, 576, 9570, 7796, 7798, 9589, 2067, 14139, 1991, 504, 14140, 9245, 9246, 6713, 9594, 1903, 11456, 14127, 9607, 7801, 7800, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 14139 (QuestCopyHooks)
+// Module 14138 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -19,9 +19,9 @@ import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9594 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11454 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14128 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14141 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11456 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14127 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14140 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ let tmp2;
 const intl13 = tmp(1128);
 const utils_QuestUtils = tmp(7796);
 const GameProfileAnalyticUtils = tmp2(9245);
-const SponsoredQuestUtils = tmp(14140);
+const SponsoredQuestUtils = tmp(14139);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -2036,7 +2036,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -2077,7 +2077,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
           }
           openGameLinkDirectly(tmp18, obj5);
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -2114,7 +2114,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -2155,7 +2155,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
             }
             openGameLinkDirectly(tmp18, obj5);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp10) {
           c2 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14576
+// Function ID: 14577
 // Name: InAppReportsUserPreview
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7074, 4968, 1128, 5234, 1202, 2]
 
-// Module 14577 (InAppReportsUserPreview)
+// Module 14576 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -97,7 +97,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             tmp16 = cResult[15];
           }
           if (cResult[16] !== user) {
-            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
+            const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
             const Avatar = tmp(1202).Avatar;
             const tmp19 = _false(Avatar, obj4);
             cResult[16] = user;
@@ -235,7 +235,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   items1 = [_false(Text, obj4), ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
+  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
   const Avatar = tmp2(1202).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;

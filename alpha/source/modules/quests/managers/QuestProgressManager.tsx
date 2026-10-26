@@ -1,9 +1,9 @@
-// Module ID: 19449
-// Function ID: 19450
+// Module ID: 19448
+// Function ID: 19449
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 4822, 6775, 2021, 6642, 2039, 5717, 7776, 18473, 6710, 6776, 1104, 7783, 7782, 14130, 6711, 9571, 6713, 7801, 7821, 7820, 7214, 6718, 7798, 6645, 1388, 7819, 7796, 2]
+// Dependencies: [5, 32, 4822, 6775, 2021, 6642, 2039, 5717, 7776, 18472, 6710, 6776, 1104, 7783, 7782, 14129, 6711, 9571, 6713, 7801, 7821, 7820, 7214, 6718, 7798, 6645, 1388, 7819, 7796, 2]
 
-// Module 19449 (QuestProgressManager)
+// Module 19448 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1104 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
@@ -17,7 +17,7 @@ import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7819 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7820 */;
 import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7821 */;
 import QuestActionCreators from "QuestActionCreators" /* 9571 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 14130 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 14129 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
@@ -27,13 +27,13 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import DetectableGameStore from "DetectableGameStore" /* 2039 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
 import QuestStore from "QuestStore" /* 7776 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 18473 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 18472 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import getQuestLogger from "getQuestLogger" /* 7783 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let c3, c4, map, set;
 
 let QuestsExperimentLocations;
 let closure_12;
@@ -368,26 +368,80 @@ class QuestProgressManager extends AutomaticLifecycleManager {
       }
     };
     new Map();
-    applyArgumentsResult = _asyncToGenerator(async (arg0) => {
-      let c3;
-      let c4;
-      let closure_1;
+    applyArgumentsResult = _asyncToGenerator(async (arg0, value) => {
       closure_0 = arg0;
-      await closure_1_18(applicationId);
-      const syncHeartbeats = closure_130_1.syncHeartbeats;
-      const items = [closure_0(closure_2[23]).FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
-      syncHeartbeats(items, "FRAME_LAUNCH", (config) => {
-        let hasItem = null != config;
-        if (hasItem) {
-          const features = config.config.features;
-          hasItem = features.includes(closure_1_0(closure_1_2[16]).QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "+352" };
         }
-        return !hasItem;
-      });
-      await "IconComponent";
-      closure_2 = tmp4;
-      applicationId = closure_0.applicationId;
-      return "Reflect";
+      } else {
+        try {
+          let closure_2;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_2 = tmp4;
+              let closure_1 = tmp;
+              applicationId = closure_0.applicationId;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { value: closure_1_18(applicationId), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            const syncHeartbeats = closure_130_1.syncHeartbeats;
+            const items = [closure_0(closure_2[23]).FirstPartyQuestTaskTypes.PLAY_ACTIVITY];
+            syncHeartbeats(items, "FRAME_LAUNCH", (config) => {
+              let hasItem = null != config;
+              if (hasItem) {
+                const features = config.config.features;
+                hasItem = features.includes(closure_1_0(closure_1_2[16]).QuestVariants.MANUAL_HEARTBEAT_INITIALIZATION);
+              }
+              return !hasItem;
+            });
+            c4 = 3;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } catch (tmp16) {
+          c4 = 3;
+          throw tmp16;
+        }
+      }
     });
     applyArgumentsResult.actions = obj2;
     return applyArgumentsResult;

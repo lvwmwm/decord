@@ -267,7 +267,7 @@ class AnalyticsFeedItemSeenManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -343,7 +343,7 @@ class AnalyticsFeedItemSeenManager {
             return obj;
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp16) {
           c2 = 3;
           throw tmp16;

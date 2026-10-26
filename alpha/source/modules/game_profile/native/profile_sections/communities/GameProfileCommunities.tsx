@@ -156,7 +156,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -254,7 +254,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
             closure_1_7(loadId, channelId);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp62) {
         if (0 === c4) {
@@ -323,7 +323,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -421,7 +421,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
             closure_130_7(currentlySelectedChannelId2, channelId);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp62) {
         if (0 === c4) {

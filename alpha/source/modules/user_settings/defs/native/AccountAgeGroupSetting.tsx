@@ -1,9 +1,9 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16004
+// Function ID: 16005
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8332, 1087, 21, 4971, 587, 558, 576, 10019, 16006, 16013, 4807, 6903, 11206, 1128, 16014, 15974, 16015, 2]
+// Dependencies: [17, 8332, 1087, 21, 4971, 587, 558, 576, 10019, 16005, 16012, 4807, 6903, 11208, 1128, 16013, 15973, 16014, 2]
 
-// Module 16005 (AccountAgeGroupSetting)
+// Module 16004 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,14 +13,14 @@ import dismissible_content from "dismissible_content" /* 4807 */;
 import TableRow from "TableRow" /* 6903 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10019 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15974 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 16006 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16013 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15973 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 16005 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16012 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16014 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16013 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

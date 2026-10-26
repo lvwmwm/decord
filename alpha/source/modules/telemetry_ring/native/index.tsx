@@ -1,15 +1,15 @@
 // Module ID: 1259
 // Function ID: 1260
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1260, 2005, 15381, 15382, 2006, 2009]
+// Dependencies: [2, 1260, 2005, 15380, 15381, 2006, 2009]
 
 // Module 1259 (TelemetryRingLifecycle)
 import telemetry_ring_TelemetryRingLifecycleDefault from "telemetry_ring/TelemetryRingLifecycle" /* 1260 */;
 import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 2005 */;
 import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2006 */;
 import TelemetryRingNative from "TelemetryRingNative" /* 2009 */;
-import SentryTelemetryDefault from "SentryTelemetry" /* 15381 */;
-import NormalTelemetryDefault from "NormalTelemetry" /* 15382 */;
+import SentryTelemetryDefault from "SentryTelemetry" /* 15380 */;
+import NormalTelemetryDefault from "NormalTelemetry" /* 15381 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/index.tsx");

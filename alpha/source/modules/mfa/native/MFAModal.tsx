@@ -1,10 +1,10 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17031
+// Function ID: 17032
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 7044, 6672, 1128, 17033, 7485, 8115, 6924, 17034, 17035, 17040, 17043, 17044, 17045, 7095, 5909, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 7044, 6672, 1128, 17032, 7485, 8115, 6924, 17033, 17034, 17039, 17042, 17043, 17044, 7095, 5909, 2]
 // Exports: openMFAModal
 
-// Module 17032 (MFAModal)
+// Module 17031 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
@@ -13,7 +13,7 @@ import NavigatorHeader from "NavigatorHeader" /* 6924 */;
 import MFAUtils from "MFAUtils" /* 7044 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8115 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 17033 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17032 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, closure_1, data, dependencyMap, importDefault;
+let _require, c2, closure_1, data, dependencyMap, importDefault, mfaType;
 
 let LogBox;
 let metroImportDefault;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           }
         }
       }
-      const obj3 = { name: tmp(17033).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(17032).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -192,7 +192,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           const obj = closure_2_1(closure_2_2[8]);
           obj.popWithKey(MFA_MODAL_KEY);
           ticket = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp12) {
         ticket = 3;
@@ -265,21 +265,73 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
   }, items);
   const useCallback = finish.useCallback;
   let closure_0 = flag((mfaType) => {
-    let closure_2;
     let ticket;
     let c3 = 0;
     let c4 = 0;
-    const iter = (function*(arg0) {
+    const iter = (function*(arg0, value) {
       let c0;
       let c1;
-      const obj5 = { mfaType, data, ticket: ticket.ticket };
-      yield data(obj5);
-      const obj = finish(cancel[8]);
-      obj.popWithKey(closure_2_9);
-      yield "IconComponent";
-      data = tmp;
-      ({ mfaType: c0, data: c1 } = closure_0);
-      return "Reflect";
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "+352" };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              mfaType = undefined;
+              data = undefined;
+              ({ mfaType: c0, data: c1 } = closure_0);
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { mfaType, data, ticket: ticket.ticket };
+              const obj6 = { value: data(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            const obj = finish(cancel[8]);
+            obj.popWithKey(closure_2_9);
+            c4 = 3;
+            return { value: "IconComponent", done: "+352" };
+          }
+        } catch (tmp17) {
+          c4 = 3;
+          throw tmp17;
+        }
+      }
     })();
     iter.next();
     return iter;

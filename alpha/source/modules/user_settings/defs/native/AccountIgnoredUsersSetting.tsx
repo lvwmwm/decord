@@ -1,9 +1,9 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16096
+// Function ID: 16097
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4913, 8332, 1087, 558, 576, 504, 1128, 11206, 7061, 16098, 2]
+// Dependencies: [4913, 8332, 1087, 558, 576, 504, 1128, 11208, 7061, 16097, 2]
 
-// Module 16097 (AccountIgnoredUsersSetting)
+// Module 16096 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,7 +12,7 @@ import EyeSlashIcon from "EyeSlashIcon" /* 7061 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

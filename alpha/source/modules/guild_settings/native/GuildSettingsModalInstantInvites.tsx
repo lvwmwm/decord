@@ -1,9 +1,9 @@
-// Module ID: 19146
-// Function ID: 19147
+// Module ID: 19145
+// Function ID: 19146
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11236, 8868, 4823, 4845, 9006, 1087, 21, 4971, 587, 558, 576, 1128, 2067, 5234, 6911, 14921, 6900, 13266, 504, 12, 8387, 8385, 5210, 12773, 2002, 5663, 10819, 7134, 1202, 19147, 7220, 5592, 2]
+// Dependencies: [32, 19, 17, 11238, 8868, 4823, 4845, 9006, 1087, 21, 4971, 587, 558, 576, 1128, 2067, 5234, 6911, 14920, 6900, 13265, 504, 12, 8387, 8385, 5210, 12773, 2002, 5663, 10821, 7134, 1202, 19146, 7220, 5592, 2]
 
-// Module 19146 (GuildSettingsModalInstantInvites)
+// Module 19145 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,12 +15,12 @@ import Text_Text from "Text/Text" /* 5234 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 6900 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8385 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8387 */;
-import InstantInvite from "InstantInvite" /* 10819 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14921 */;
+import InstantInvite from "InstantInvite" /* 10821 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14920 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11236 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11238 */;
 import InviteRecord from "InviteRecord" /* 8868 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;

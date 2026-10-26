@@ -1,9 +1,9 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16510
+// Function ID: 16511
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5210, 7490, 9916, 5660, 2067, 5244, 1128, 7074, 1633, 5582, 5125, 5234, 9592, 3636, 5265, 16508, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5210, 7490, 9916, 5660, 2067, 5244, 1128, 7074, 1633, 5582, 5125, 5234, 9592, 3636, 5265, 16507, 2]
 
-// Module 16511 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 16510 (QuestOrbMultiplierPerkInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,7 +21,7 @@ import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform
 import openUserSettings from "openUserSettings" /* 7490 */;
 import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9592 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9916 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16508 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16507 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -681,7 +681,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMu
   let obj2 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: closure_8(tmp7, obj3) };
   BottomSheet = tmp(5265).BottomSheet;
   obj3 = { visible: tmp4, children: closure_8(closure_14, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  tmp7 = orbMultiplierEligibility(16508);
+  tmp7 = orbMultiplierEligibility(16507);
   return closure_8(BottomSheet, obj2);
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");

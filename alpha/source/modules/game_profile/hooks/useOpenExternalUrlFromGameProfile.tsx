@@ -34,7 +34,7 @@ let obj = function _getDeepLinkUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -196,7 +196,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -222,7 +222,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp37) {
         if (0 === c3) {
           c5 = 3;
@@ -257,7 +257,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -294,7 +294,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -320,7 +320,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp37) {
         if (0 === c3) {
           c5 = 3;

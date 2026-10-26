@@ -1,10 +1,10 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 13726
+// Function ID: 13727
 // Name: GuildPromptsActionCreators
 // Dependencies: [584, 2]
 // Exports: viewPrompt
 
-// Module 13727 (GuildPromptsActionCreators)
+// Module 13726 (GuildPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

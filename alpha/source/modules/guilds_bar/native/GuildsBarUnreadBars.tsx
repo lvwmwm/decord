@@ -1,9 +1,9 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17798
+// Function ID: 17799
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6814, 5002, 6701, 17731, 16444, 21, 4971, 7167, 558, 576, 1633, 16437, 16446, 551, 568, 504, 5052, 17800, 2]
+// Dependencies: [32, 19, 17, 6814, 5002, 6701, 17730, 16443, 21, 4971, 7167, 558, 576, 1633, 16436, 16445, 551, 568, 504, 5052, 17799, 2]
 
-// Module 17799 (GuildsBarUnreadBars)
+// Module 17798 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,14 +13,14 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import SortedGuildStore2 from "SortedGuildStore" /* 6701 */;
 import FastList from "FastList" /* 7167 */;
-import QuestHooks from "QuestHooks" /* 16437 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16446 */;
+import QuestHooks from "QuestHooks" /* 16436 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 16445 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17731 */;
-import YouBarConstants from "YouBarConstants" /* 16444 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17730 */;
+import YouBarConstants from "YouBarConstants" /* 16443 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -233,7 +233,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "a" };
+            let obj6 = { beforeItem: obj7, afterItem: "Array" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -252,8 +252,8 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "Array", afterItem: "Reflect" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
+let closure_17 = { beforeItem: "dispatch", afterItem: "ix" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {
   const obj = react2;

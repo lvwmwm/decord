@@ -1,20 +1,20 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 18047
+// Function ID: 18048
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4822, 6775, 1209, 18049, 15711, 6776, 13865, 15709, 5626, 10728, 2]
+// Dependencies: [4822, 6775, 1209, 18048, 15710, 6776, 13864, 15708, 5626, 10728, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 18048 (conjureBackgroundFrameRules)
+// Module 18047 (conjureBackgroundFrameRules)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13865 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15709 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13864 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15708 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18049 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15711 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18048 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15710 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;
@@ -52,8 +52,12 @@ export const isBuilderPreviewFrame = function isBuilderPreviewFrame(frame) {
   const obj = conjurePreviewSurface;
   let result = obj.isConjurePreviewSurface(frame.surface);
   if (!result) {
+    const tmpResult = conjurePreviewSurface;
+    result = tmpResult.isConjurePreviewOverlayFrame(frame);
+  }
+  if (!result) {
     result = frame.intent === FrameIntent.MAIN && frame.applicationId === ConjureBuilderPreviewStore.getLastBuilderPreviewApplicationId();
-    const tmp3 = frame.intent === FrameIntent.MAIN && frame.applicationId === ConjureBuilderPreviewStore.getLastBuilderPreviewApplicationId();
+    const tmp5 = frame.intent === FrameIntent.MAIN && frame.applicationId === ConjureBuilderPreviewStore.getLastBuilderPreviewApplicationId();
   }
   return result;
 };

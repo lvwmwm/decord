@@ -1,10 +1,10 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 11874
+// Function ID: 11875
 // Name: ConjureInstallTarget
 // Dependencies: [5, 10720, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 11872 (ConjureInstallTarget)
+// Module 11874 (ConjureInstallTarget)
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _repairConjureGuildHints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _repairConjureGuildHints() {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp7) {
           c2 = 3;
           throw tmp7;

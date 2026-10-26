@@ -1,31 +1,31 @@
-// Module ID: 17443
-// Function ID: 17444
+// Module ID: 17442
+// Function ID: 17443
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 17444, 1087, 17434, 21, 558, 576, 17446, 6885, 4971, 587, 5153, 1633, 17447, 17448, 17530, 17729, 17730, 5052, 17449, 17431, 17436, 17433, 17807, 5156, 13057, 2]
+// Dependencies: [32, 19, 17, 17443, 1087, 17433, 21, 558, 576, 17445, 6885, 4971, 587, 5153, 1633, 17446, 17447, 17529, 17728, 17729, 5052, 17448, 17430, 17435, 17432, 17806, 5156, 13056, 2]
 
-// Module 17443 (MainChannels)
+// Module 17442 (MainChannels)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useChatLayoutDefault from "useChatLayout" /* 5153 */;
 import useRefValueDefault from "useRefValue" /* 6885 */;
-import StartupProfilerDefault from "StartupProfiler" /* 13057 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 17431 */;
-import getJankScreenName from "getJankScreenName" /* 17433 */;
-import JankScreenConstants from "JankScreenConstants" /* 17434 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 17436 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 17446 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17447 */;
-import messages_MessagesDefault from "messages/Messages" /* 17448 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17449 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 17530 */;
-import NativeFreezeScreens2 from "NativeFreezeScreens" /* 17729 */;
-import HomePanelContent from "HomePanelContent" /* 17730 */;
-import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 17807 */;
+import StartupProfilerDefault from "StartupProfiler" /* 13056 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 17430 */;
+import getJankScreenName from "getJankScreenName" /* 17432 */;
+import JankScreenConstants from "JankScreenConstants" /* 17433 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 17435 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 17445 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17446 */;
+import messages_MessagesDefault from "messages/Messages" /* 17447 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17448 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 17529 */;
+import NativeFreezeScreens2 from "NativeFreezeScreens" /* 17728 */;
+import HomePanelContent from "HomePanelContent" /* 17729 */;
+import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 17806 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 17444 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 17443 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -41,7 +41,7 @@ let rect;
 let tmp;
 let unpackModuleId;
 const HomeDrawerExperiment = tmp(5156);
-const StartupProfiler = tmp(13057);
+const StartupProfiler = tmp(13056);
 function resolveHomeDrawerName() {
   return HOME_DRAWER_SCREEN;
 }
@@ -156,7 +156,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
         tmp10 = cResult[7];
       }
       let num6 = 0;
-      const sum = DM_WIDTH + tmp6(17447)();
+      const sum = DM_WIDTH + tmp6(17446)();
       if (isGuildSelected) {
         num6 = 1;
       }
@@ -454,7 +454,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
   }
   items = [tmp7, ];
   const obj5 = { gesture, children: unpackModuleId(closure_15, { panelStyles }) };
-  const NonCollapsableGestureDetector = tmp(17807).NonCollapsableGestureDetector;
+  const NonCollapsableGestureDetector = tmp(17806).NonCollapsableGestureDetector;
   items[1] = unpackModuleId(NonCollapsableGestureDetector, obj5);
   return tmp6(Provider, obj2);
 });

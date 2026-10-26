@@ -1,9 +1,9 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17338
+// Function ID: 17339
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5587, 21, 4971, 558, 576, 7296, 17340, 8951, 2]
+// Dependencies: [32, 19, 5587, 21, 4971, 558, 576, 7296, 17339, 8951, 2]
 
-// Module 17339 (VEVOOPropBlurAmount)
+// Module 17338 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FormSwitch from "FormSwitch" /* 7296 */;
@@ -221,8 +221,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
-    cResult[11] = jsx(first1(17340), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
-    const tmp25 = jsx(first1(17340), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
+    cResult[11] = jsx(first1(17339), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
+    const tmp25 = jsx(first1(17339), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13, accessibilityLabel: "Blur Amount" });
   }
   cResult[6] = tmp7;
   cResult[7] = tmp17;

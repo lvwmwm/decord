@@ -1,10 +1,10 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14106
+// Function ID: 14107
 // Name: AppStoreMetadataActionCreators
 // Dependencies: [5, 2068, 1087, 1104, 584, 1297, 569, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 14107 (AppStoreMetadataActionCreators)
+// Module 14106 (AppStoreMetadataActionCreators)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -80,7 +80,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(os) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;

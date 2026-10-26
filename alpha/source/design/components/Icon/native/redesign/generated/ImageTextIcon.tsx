@@ -1,14 +1,14 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16812
+// Function ID: 16813
 // Name: ImageTextIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16814, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16813, 5668, 2]
 
-// Module 16813 (ImageTextIcon)
+// Module 16812 (ImageTextIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 16814 */;
+import AssetRegistry from "AssetRegistry" /* 16813 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

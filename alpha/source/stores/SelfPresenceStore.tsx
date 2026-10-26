@@ -1,7 +1,7 @@
 // Module ID: 6498
 // Function ID: 6499
 // Name: SelfPresenceStore
-// Dependencies: [6499, 1246, 2039, 6633, 2043, 11192, 5712, 5716, 1087, 7507, 4799, 10651, 1357, 12, 504, 584, 2]
+// Dependencies: [6499, 1246, 2039, 6633, 2043, 11194, 5712, 5716, 1087, 7507, 4799, 10651, 1357, 12, 504, 584, 2]
 
 // Module 6498 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -16,7 +16,7 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import DetectableGameStore from "DetectableGameStore" /* 2039 */;
 import IdleStore from "IdleStore" /* 6633 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
-import LocalActivityStore from "LocalActivityStore" /* 11192 */;
+import LocalActivityStore from "LocalActivityStore" /* 11194 */;
 import SessionsStore from "SessionsStore" /* 5716 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

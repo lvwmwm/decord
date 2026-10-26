@@ -1,16 +1,16 @@
-// Module ID: 18997
-// Function ID: 18998
+// Module ID: 18996
+// Function ID: 18997
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1087, 21, 4971, 587, 5037, 8154, 6908, 1128, 5669, 18998, 18999, 1202, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 4971, 587, 5037, 8154, 6908, 1128, 5669, 18997, 18998, 1202, 2]
 
-// Module 18997 (AssetChooser)
+// Module 18996 (AssetChooser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 5037 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import Pressables from "Pressables" /* 6908 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18999 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(18998);
+      tmp9Result = tmp9(18997);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

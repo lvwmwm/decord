@@ -1,7 +1,7 @@
 // Module ID: 12360
 // Function ID: 12361
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 8668, 5210, 558, 576, 7285, 5663, 1128, 5682, 7294, 3830, 12361, 6931, 11838, 12259, 12296, 7298, 2]
+// Dependencies: [19, 21, 8668, 5210, 558, 576, 7285, 5663, 1128, 5682, 7294, 3830, 12361, 6931, 11840, 12261, 12298, 7298, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
 // Module 12360 (ConjureMessageActionSheet)

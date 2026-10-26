@@ -1,9 +1,9 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18224
+// Function ID: 18225
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1267, 5593, 5267, 9708, 1384, 10625, 1128, 15098, 7135, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1267, 5593, 5267, 9708, 1384, 10625, 1128, 15097, 7135, 2]
 
-// Module 18225 (UsernameSearchScreen)
+// Module 18224 (UsernameSearchScreen)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -252,7 +252,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsernameSear
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(587).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1128).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(587).space.PX_16 });
-  tmp3Result2 = ref(15098);
+  tmp3Result2 = ref(15097);
   intl = tmp7(1128).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

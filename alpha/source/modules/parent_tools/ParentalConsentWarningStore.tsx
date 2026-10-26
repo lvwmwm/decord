@@ -1,9 +1,9 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16158
+// Function ID: 16159
 // Name: ParentalConsentWarningStore
 // Dependencies: [504, 584, 2]
 
-// Module 16159 (ParentalConsentWarningStore)
+// Module 16158 (ParentalConsentWarningStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

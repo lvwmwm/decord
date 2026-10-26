@@ -1,14 +1,14 @@
 // Module ID: 12348
 // Function ID: 12349
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 558, 576, 11874, 1128, 3830, 12287, 12342, 9804, 12330, 2]
+// Dependencies: [19, 21, 558, 576, 11876, 1128, 3830, 12289, 12341, 9804, 12332, 2]
 
 // Module 12348 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12287 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12330 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12342 */;
+import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12289 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12332 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12341 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
   const cResult = obj.c(6);
   projectId = projectId.projectId;
   const onDismiss = projectId.onDismiss;
-  const context = react.useContext(projectId(11874).ConjurePublishActionContext);
+  const context = react.useContext(projectId(11876).ConjurePublishActionContext);
   if (cResult[0] === context) {
     let tmp5;
     if (cResult[1] === projectId) {
@@ -35,7 +35,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
       }
       return tmp7;
     }
-    context(12342);
+    context(12341);
     const tmp11 = <tmp10 icon={tmp(9804).UploadIcon} onDismiss={onDismiss}>{tmp5}</tmp10>;
     cResult[3] = onDismiss;
     cResult[4] = tmp5;
@@ -59,7 +59,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
   let closure_1;
   projectId = projectId.projectId;
   const onDismiss = projectId.onDismiss;
-  importDefault = react.useContext(projectId(11874).ConjurePublishActionContext);
+  importDefault = react.useContext(projectId(11876).ConjurePublishActionContext);
   const tmp = ConjureTipHintDefault;
   const intl = projectId(1128).intl;
   const obj2 = {

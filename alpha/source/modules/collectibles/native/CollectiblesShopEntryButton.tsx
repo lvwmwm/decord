@@ -1,12 +1,12 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14158
+// Function ID: 14159
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 5635, 4820, 21, 558, 576, 7496, 4807, 1128, 14154, 12128, 14160, 5636, 573, 7672, 10408, 2]
+// Dependencies: [32, 19, 5635, 4820, 21, 558, 576, 7496, 4807, 1128, 14153, 12130, 14159, 5636, 573, 7672, 10408, 2]
 
-// Module 14159 (CollectiblesShopEntryButton)
+// Module 14158 (CollectiblesShopEntryButton)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14154 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 14160 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14153 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 14159 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5635 */;
@@ -96,7 +96,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
           tmp15 = tmp18;
         }
       }
-      const obj5 = { ref: shopButtonRef, IconComponent: tmp(12128).ShopIcon, accessibilityLabel: first, onPress: tmp9, showRedDot: tmp6 };
+      const obj5 = { ref: shopButtonRef, IconComponent: tmp(12130).ShopIcon, accessibilityLabel: first, onPress: tmp9, showRedDot: tmp6 };
       const tmp13 = YouScreenNavIconDefault;
       const tmp14 = closure_6(tmp13, obj5);
       cResult[5] = tmp6;
@@ -135,7 +135,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const obj2 = { children: items };
   const obj3 = {
     ref: shopButtonRef,
-    IconComponent: navigateToShop(12128).ShopIcon,
+    IconComponent: navigateToShop(12130).ShopIcon,
     accessibilityLabel: intl.string(navigateToShop(1128).t.pWG4ze),
     onPress() {
       const tmp = closure_2;

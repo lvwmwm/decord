@@ -1,18 +1,18 @@
-// Module ID: 16109
-// Function ID: 16110
+// Module ID: 16108
+// Function ID: 16109
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7648, 7416, 558, 576, 8127, 16110, 16113, 1211, 7398, 7091, 8125, 504, 7647, 7422, 2]
+// Dependencies: [5, 19, 7648, 7416, 558, 576, 8127, 16109, 16112, 1211, 7398, 7091, 8125, 504, 7647, 7422, 2]
 // Exports: useIsParentallyControlled
 
-// Module 16109 (useParentalControlSettings)
+// Module 16108 (useParentalControlSettings)
 import react2 from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7398 */;
 import Constants from "Constants" /* 7416 */;
 import useUserLinks from "useUserLinks" /* 8125 */;
 import useSelectedTeen from "useSelectedTeen" /* 8127 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16110 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16113 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16109 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7648 */;
@@ -316,7 +316,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFr
   let controlledSetting;
   let obj = controlledSetting(8127);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(16110).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(16109).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -400,7 +400,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -454,7 +454,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
           c4 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {
@@ -491,7 +491,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -545,7 +545,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
           c4 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

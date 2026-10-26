@@ -1,16 +1,16 @@
-// Module ID: 16433
-// Function ID: 16434
+// Module ID: 16432
+// Function ID: 16433
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [109, 5, 19, 1392, 21, 16400, 5663, 1128, 558, 576, 504, 13964, 16411, 11786, 7959, 9139, 9761, 2]
+// Dependencies: [109, 5, 19, 1392, 21, 16399, 5663, 1128, 558, 576, 504, 13963, 16410, 11788, 7959, 9139, 9761, 2]
 
-// Module 16433 (OrbsArcadeGameContextMenu)
+// Module 16432 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1128 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9139 */;
-import RefreshIcon from "RefreshIcon" /* 11786 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13964 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16400 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16411 */;
+import RefreshIcon from "RefreshIcon" /* 11788 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 13963 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16399 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16410 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj = function _handleResetGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _handleResetGame() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp17) {
         if (0 === c3) {
@@ -146,11 +146,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     tmp8 = cResult[2];
   }
   if (cResult[3] !== game.id) {
-    const items1 = [{ label: tmp8, IconComponent: tmp(13964).CircleQuestionIcon, action }];
+    const items1 = [{ label: tmp8, IconComponent: tmp(13963).CircleQuestionIcon, action }];
     cResult[3] = game.id;
     cResult[4] = items1;
     tmp10 = items1;
-    const obj2 = { label: tmp8, IconComponent: tmp(13964).CircleQuestionIcon, action };
+    const obj2 = { label: tmp8, IconComponent: tmp(13963).CircleQuestionIcon, action };
   } else {
     tmp10 = cResult[4];
   }
@@ -163,11 +163,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     tmp11 = cResult[5];
   }
   if (cResult[6] !== game.id) {
-    const items2 = [{ label: tmp11, IconComponent: tmp(11786).RefreshIcon, variant: "destructive", action: action2 }];
+    const items2 = [{ label: tmp11, IconComponent: tmp(11788).RefreshIcon, variant: "destructive", action: action2 }];
     cResult[6] = game.id;
     cResult[7] = items2;
     tmp13 = items2;
-    const obj3 = { label: tmp11, IconComponent: tmp(11786).RefreshIcon, variant: "destructive", action: action2 };
+    const obj3 = { label: tmp11, IconComponent: tmp(11788).RefreshIcon, variant: "destructive", action: action2 };
   } else {
     tmp13 = cResult[7];
   }

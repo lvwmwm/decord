@@ -1,21 +1,21 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13311
+// Function ID: 13312
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 13310, 13311, 1087, 7868, 7891, 10757, 1267, 13313, 13319, 558, 576, 13320, 504, 2]
+// Dependencies: [32, 5, 19, 17, 13309, 13310, 1087, 7868, 7891, 10757, 1267, 13312, 13318, 558, 576, 13319, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 13312 (NotificationPermissionUtil)
+// Module 13311 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
 import react_nativeDefault from "react-native" /* 7891 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13311 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13320 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13310 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13319 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13310 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13309 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ let obj = function _requestPushNotificationPermission() {
               });
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp36) {
           c6 = 3;
@@ -117,7 +117,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -212,7 +212,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -244,7 +244,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -319,7 +319,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp11) {
             c2 = 3;

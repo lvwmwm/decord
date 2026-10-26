@@ -1,9 +1,9 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 13987
+// Function ID: 13988
 // Name: EmojiRow
-// Dependencies: [19, 17, 5266, 21, 4971, 5210, 5212, 8286, 4915, 7566, 9836, 558, 576, 5252, 587, 13989, 13990, 9783, 13991, 7278, 2]
+// Dependencies: [19, 17, 5266, 21, 4971, 5210, 5212, 8286, 4915, 7566, 9836, 558, 576, 5252, 587, 13988, 13989, 9783, 13990, 7278, 2]
 
-// Module 13988 (EmojiRow)
+// Module 13987 (EmojiRow)
 import react_native from "react-native" /* 17 */;
 import ReactionUtils from "ReactionUtils" /* 4915 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
@@ -13,9 +13,9 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5266 */;
 import ReactionActionCreators from "ReactionActionCreators" /* 8286 */;
 import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9783 */;
 import DoubleTapReminderToast from "DoubleTapReminderToast" /* 9836 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 13989 */;
-import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 13990 */;
-import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 13991 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 13988 */;
+import EmojiReactionRowButton2 from "EmojiReactionRowButton" /* 13989 */;
+import DoubleTapEmojiEditNudge2 from "DoubleTapEmojiEditNudge" /* 13990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;

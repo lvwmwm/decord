@@ -1,16 +1,16 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17088
+// Function ID: 17089
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4972, 4823, 4874, 8594, 21, 558, 576, 8595, 38, 5705, 8482, 504, 4799, 8763, 10008, 17090, 11277, 2]
+// Dependencies: [32, 19, 4972, 4823, 4874, 8594, 21, 558, 576, 8595, 38, 5705, 8482, 504, 4799, 8763, 10008, 17089, 11279, 2]
 
-// Module 17089 (TextDisplayComponent)
+// Module 17088 (TextDisplayComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
 import renderMessageMarkup from "renderMessageMarkup" /* 8482 */;
 import InteractionComponentConstants from "InteractionComponentConstants" /* 8594 */;
 import handleMessagesTapLink from "handleMessagesTapLink" /* 10008 */;
-import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 17090 */;
+import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 17089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
                   return tmp32;
                 }
                 TextDisplayComponentViewNativeComponentDefault;
-                const tmp35 = <tmp8Result model={tmp10} markdownTextRenderOptions={tmp28} onTapLink={tmp30} onLongPressLink={channelId(11277).contentHandlers.onLongPressLink} onTapAttachmentLink={channelId(11277).contentHandlers.onTapAttachmentLink} onLongPressAttachmentLink={channelId(11277).contentHandlers.onLongPressAttachmentLink} onTapMention={channelId(11277).contentHandlers.onTapMention} onTapTimestamp={channelId(11277).contentHandlers.onTapTimestamp} onTapInlineCode={channelId(11277).contentHandlers.onTapInlineCode} onTapEmoji={channelId(11277).contentHandlers.onTapEmoji} style={tmp31} />;
+                const tmp35 = <tmp8Result model={tmp10} markdownTextRenderOptions={tmp28} onTapLink={tmp30} onLongPressLink={channelId(11279).contentHandlers.onLongPressLink} onTapAttachmentLink={channelId(11279).contentHandlers.onTapAttachmentLink} onLongPressAttachmentLink={channelId(11279).contentHandlers.onLongPressAttachmentLink} onTapMention={channelId(11279).contentHandlers.onTapMention} onTapTimestamp={channelId(11279).contentHandlers.onTapTimestamp} onTapInlineCode={channelId(11279).contentHandlers.onTapInlineCode} onTapEmoji={channelId(11279).contentHandlers.onTapEmoji} style={tmp31} />;
                 cResult[18] = tmp10;
                 cResult[19] = tmp28;
                 cResult[20] = tmp35;
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
 }) : (function TextDisplayComponent(type) {
   let tmp6;
   let tmp7;
-  const f129105 = () => {
+  const f129113 = () => {
     const items = [, ];
     ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
     return items;
@@ -193,8 +193,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
   }, items);
   let obj2 = type(content[13]);
   const items1 = [AccessibilityStore];
-  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f129105), 2);
-  channelId(obj2.useStateFromStoresArray(items1, f129105), 2);
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f129113), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f129113), 2);
   const AnimateEmoji = type(content[14]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj3 = type(content[13]);

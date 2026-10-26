@@ -1,17 +1,17 @@
-// Module ID: 16137
-// Function ID: 16138
+// Module ID: 16136
+// Function ID: 16137
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 13582, 21, 6672, 4971, 587, 5268, 558, 576, 13584, 13588, 5663, 1128, 13602, 6924, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 13581, 21, 6672, 4971, 587, 5268, 558, 576, 13583, 13587, 5663, 1128, 13601, 6924, 7095, 2]
 
-// Module 16137 (ContactSyncNameUpdateModal)
+// Module 16136 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13582 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13584 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13581 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -113,7 +113,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp25) {
           if (0 === c3) {
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(13602), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(13601), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;
@@ -206,7 +206,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -252,7 +252,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp25) {
           if (0 === c3) {

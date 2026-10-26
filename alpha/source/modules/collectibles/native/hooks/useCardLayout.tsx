@@ -1,9 +1,9 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17225
+// Function ID: 17226
 // Name: useCardLayout
 // Dependencies: [9357, 558, 576, 1499, 2]
 
-// Module 17226 (useCardLayout)
+// Module 17225 (useCardLayout)
 import react from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9357 */;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
             let tmp30;
             const _Symbol = Symbol;
             if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "application" };
+              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
               cResult[6] = obj3;
               tmp30 = obj3;
             } else {
@@ -188,7 +188,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     if (result3 + (bound + tmp10(9357).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       let obj;
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "application" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
       }
       return obj;
     }

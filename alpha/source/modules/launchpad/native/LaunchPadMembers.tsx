@@ -1,18 +1,18 @@
-// Module ID: 18700
-// Function ID: 18701
+// Module ID: 18699
+// Function ID: 18700
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4823, 4874, 21, 4971, 558, 576, 573, 12196, 18150, 11284, 1128, 5234, 2]
+// Dependencies: [19, 17, 4823, 4874, 21, 4971, 558, 576, 573, 12198, 18149, 11286, 1128, 5234, 2]
 
-// Module 18700 (LaunchPadMembers)
+// Module 18699 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11284 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12196 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18150 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11286 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12198 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18149 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      return { channelId: "ix", type: "<string:1319588266>" };
+      return { channelId: "ix", type: false };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    return { channelId: "ix", type: "<string:1319588266>" };
+    return { channelId: "ix", type: false };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;

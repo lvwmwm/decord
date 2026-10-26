@@ -1,19 +1,19 @@
-// Module ID: 11121
-// Function ID: 11122
+// Module ID: 11123
+// Function ID: 11124
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 11122, 1392, 8681, 1087, 21, 4971, 587, 558, 1499, 576, 5234, 8913, 1128, 11114, 1633, 504, 8686, 11123, 11124, 11119, 7490, 11126, 5244, 6880, 2]
+// Dependencies: [19, 17, 11124, 1392, 8681, 1087, 21, 4971, 587, 558, 1499, 576, 5234, 8913, 1128, 11116, 1633, 504, 8686, 11125, 11126, 11121, 7490, 11128, 5244, 6880, 2]
 
-// Module 11121 (BadgeDirectoryView)
+// Module 11123 (BadgeDirectoryView)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11114 */;
-import BadgeUtils from "BadgeUtils" /* 11123 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11126 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11116 */;
+import BadgeUtils from "BadgeUtils" /* 11125 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11128 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11122 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11124 */;
 import UserStore from "UserStore" /* 1392 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import Fragment from "Fragment" /* 21 */;
@@ -576,7 +576,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
               return BadgeDirectoryStore.hasCatalogFetchErrorFor(targetUserId);
             }
           }
-          const tmpResult8 = tmp(11124);
+          const tmpResult8 = tmp(11126);
           const badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators(tmp43).badgeIndicatorIds;
           class U {
             constructor() {
@@ -752,7 +752,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
     ({ owned, earnable } = memo);
     let obj3 = { badges: stateFromStoresArray, enabled: tmp36Result };
     tmp36Result = !tmp10;
-    const tmp6Result6 = targetUsername(11124);
+    const tmp6Result6 = targetUsername(11126);
     const badgeIndicatorIds = tmp6Result6.useBadgeDirectoryBadgeIndicators(obj3).badgeIndicatorIds;
     if (null != targetUserId && targetUserId !== stateFromStores) {
       let formatToPlainStringResult;

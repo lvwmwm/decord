@@ -1,27 +1,27 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15832
+// Function ID: 15833
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11122, 8649, 1097, 1087, 21, 4971, 1128, 15834, 15958, 558, 576, 15967, 5252, 587, 1505, 7090, 8901, 11069, 7078, 15855, 15959, 573, 5711, 11187, 6924, 7485, 1506, 11850, 11145, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11124, 8649, 1097, 1087, 21, 4971, 1128, 15833, 15957, 558, 576, 15966, 5252, 587, 1505, 7090, 8901, 11071, 7078, 15854, 15958, 573, 5711, 11189, 6924, 7485, 1506, 11852, 11147, 2]
 
-// Module 15833 (ProfileCustomizationSettingScreen)
+// Module 15832 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7078 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11069 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11187 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15834 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15855 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15958 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15959 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15967 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11071 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11189 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15833 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15854 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15957 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15958 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15966 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11122 */;
+import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11124 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -459,7 +459,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -491,7 +491,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     closure_128_3(true);
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp8) {
                 c2 = 3;

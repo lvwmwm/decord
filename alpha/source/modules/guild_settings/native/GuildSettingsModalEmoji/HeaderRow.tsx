@@ -1,19 +1,19 @@
-// Module ID: 19067
-// Function ID: 19068
+// Module ID: 19066
+// Function ID: 19067
 // Name: HeaderRow
-// Dependencies: [13136, 5, 32, 19, 17, 19061, 1087, 1395, 21, 4971, 587, 8944, 9943, 1267, 1128, 1281, 8154, 5244, 5234, 558, 576, 504, 2]
+// Dependencies: [13135, 5, 32, 19, 17, 19060, 1087, 1395, 21, 4971, 587, 8944, 9943, 1267, 1128, 1281, 8154, 5244, 5234, 558, 576, 504, 2]
 
-// Module 19067 (HeaderRow)
+// Module 19066 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13136 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13135 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19061 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19060 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -84,7 +84,7 @@ function HeaderRow(guild) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -208,7 +208,7 @@ function HeaderRow(guild) {
             c5 = 0;
             closure_132_4(false);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp28) {
           upload_id = tmp28;

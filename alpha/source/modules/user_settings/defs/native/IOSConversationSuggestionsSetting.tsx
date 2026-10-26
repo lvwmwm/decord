@@ -1,9 +1,9 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16140
+// Function ID: 16141
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 8332, 1269, 1274, 558, 576, 4886, 1384, 3, 11206, 1128, 2]
+// Dependencies: [19, 17, 8332, 1269, 1274, 558, 576, 4886, 1384, 3, 11208, 1128, 2]
 
-// Module 16141 (IOSConversationSuggestionsSetting)
+// Module 16140 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import SettingsConstants from "SettingsConstants" /* 8332 */;
 import react from "react" /* 19 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;

@@ -1,7 +1,7 @@
 // Module ID: 12465
 // Function ID: 12466
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9616, 12466, 10816, 11797, 10951, 4971, 587, 558, 576, 5234, 8577, 12455, 1128, 3830, 12468, 12464, 12448, 2]
+// Dependencies: [19, 17, 21, 9616, 12466, 10818, 11799, 10953, 4971, 587, 558, 576, 5234, 8577, 12455, 1128, 3830, 12468, 12464, 12448, 2]
 
 // Module 12465 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
@@ -11,9 +11,9 @@ import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import AppsIcon2 from "AppsIcon" /* 8577 */;
 import GameControllerIcon from "GameControllerIcon" /* 9616 */;
-import UserCircleIcon from "UserCircleIcon" /* 10816 */;
-import ShieldIcon from "ShieldIcon" /* 10951 */;
-import RobotIcon from "RobotIcon" /* 11797 */;
+import UserCircleIcon from "UserCircleIcon" /* 10818 */;
+import ShieldIcon from "ShieldIcon" /* 10953 */;
+import RobotIcon from "RobotIcon" /* 11799 */;
 import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12455 */;
 import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12464 */;
 import WindowTopIcon from "WindowTopIcon" /* 12466 */;
@@ -41,7 +41,7 @@ let obj9;
 let size;
 let tmp;
 const Text_Text = tmp(5234);
-const f114615 = (caption) => {
+const f114628 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f114615), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f114628), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f114615), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f114628), arraySpreadResult);
       items = items3;
     }
   }

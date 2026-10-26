@@ -1,16 +1,16 @@
-// Module ID: 13520
-// Function ID: 13521
+// Module ID: 13519
+// Function ID: 13520
 // Name: useMessageRequestPreview
-// Dependencies: [5, 6010, 6771, 13521, 1087, 558, 576, 504, 12, 1297, 584, 2]
+// Dependencies: [5, 6010, 6771, 13520, 1087, 558, 576, 504, 12, 1297, 584, 2]
 
-// Module 13520 (useMessageRequestPreview)
+// Module 13519 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 6010 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13521 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13520 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         }
       }

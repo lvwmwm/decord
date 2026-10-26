@@ -1,15 +1,15 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12906
+// Function ID: 12907
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6766, 4827, 4823, 4903, 4913, 1392, 1087, 558, 576, 12905, 1388, 504, 1108, 6488, 2000, 6662, 6654, 5644, 6659, 12908, 1128, 6486, 7761, 5025, 5604, 2]
+// Dependencies: [19, 6766, 4827, 4823, 4903, 4913, 1392, 1087, 558, 576, 12904, 1388, 504, 1108, 6488, 2000, 6662, 6654, 5644, 6659, 12907, 1128, 6486, 7761, 5025, 5604, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 12907 (ForwardDestinationUtils)
+// Module 12906 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import StickersUtils from "StickersUtils" /* 6488 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 7761 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12908 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12907 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6766 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(12905).getChannelIdFromDestinationId);
+    const mapped = arr.map(tmp(12904).getChannelIdFromDestinationId);
     const found = mapped.find(tmp(1388).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   return tmp11;
 }) : (function useSelectedDestinationChannel(arr) {
   let found;
-  const mapped = arr.map(found(12905).getChannelIdFromDestinationId);
+  const mapped = arr.map(found(12904).getChannelIdFromDestinationId);
   found = mapped.find(found(1388).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];

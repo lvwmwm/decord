@@ -1,9 +1,9 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14621
+// Function ID: 14622
 // Name: VoiceMemberUser
-// Dependencies: [109, 19, 17, 6006, 1207, 502, 6497, 4823, 4883, 2014, 5712, 1087, 21, 4971, 587, 558, 576, 6781, 504, 4978, 14623, 14624, 1202, 14625, 14626, 14627, 14628, 11443, 5234, 1128, 8951, 7811, 11709, 5150, 7867, 5210, 7413, 6908, 5989, 7423, 5025, 2]
+// Dependencies: [109, 19, 17, 6006, 1207, 502, 6497, 4823, 4883, 2014, 5712, 1087, 21, 4971, 587, 558, 576, 6781, 504, 4978, 14622, 14623, 1202, 14624, 14625, 14626, 14627, 11445, 5234, 1128, 8951, 7811, 11711, 5150, 7867, 5210, 7413, 6908, 5989, 7423, 5025, 2]
 
-// Module 14622 (VoiceMemberUser)
+// Module 14621 (VoiceMemberUser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
@@ -17,11 +17,11 @@ import useIsSpeakingDefault from "useIsSpeaking" /* 6781 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 7413 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7811 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11443 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14625 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14626 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14627 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14628 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11445 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14624 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14625 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14626 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14627 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -511,7 +511,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       const tmp25 = closure_15;
       const tmp26 = closure_5;
       if (isSpectating) {
-        const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14628), style: tmp21 };
+        const obj10 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14627), style: tmp21 };
         const Icon = tmp8(1202).Icon;
         tmp22Result = tmp22(Icon, obj10);
       }
@@ -521,9 +521,9 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let tmp5Result;
         const tmp8Result = user(4978);
         if (tmp8Result.isThemeDark(stateFromStores1)) {
-          tmp5Result = tmp5(14623);
+          tmp5Result = tmp5(14622);
         } else {
-          tmp5Result = tmp5(14624);
+          tmp5Result = tmp5(14623);
         }
         const obj11 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp21.tintColor, disableColor: localMute };
         const Icon2 = tmp8(1202).Icon;
@@ -532,7 +532,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       items4[1] = tmp22Result5;
       let tmp22Result6 = null;
       if (tmp15) {
-        const obj12 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14625), style: tmp21 };
+        const obj12 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14624), style: tmp21 };
         const Icon3 = tmp8(1202).Icon;
         tmp22Result6 = tmp22(Icon3, obj12);
       }
@@ -542,10 +542,10 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let obj14;
         const Icon4 = tmp8(1202).Icon;
         if (localVideoDisabled) {
-          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14626), style: tmp2.voiceStatusIconMargin, disableColor: true };
-          const obj13 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14626), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14625), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          const obj13 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14625), style: tmp2.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14627), style: tmp21 };
+          obj14 = { size: user(1202).Icon.Sizes.REFRESH_SMALL_16, source: channel(14626), style: tmp21 };
         }
         tmp22Result7 = tmp22(Icon4, obj14);
       }
@@ -582,7 +582,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   if (localVideoAutoDisabled) {
     const obj20 = { style: tmp2.autoDisabledVideo, children: items7 };
-    const obj21 = { source: channel(11443), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj21 = { source: channel(11445), size: user(1202).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp8(1202).Icon;
     items7 = [closure_14(Icon5, obj21), ];
     const obj22 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: intl3.string(user(1128).t.m2Hyj0) };
@@ -700,7 +700,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
         let guildId;
         const obj4 = { style: tmp4.streamPreview, children: closure_14(tmp30, obj5) };
         const tmp28 = closure_5;
-        tmp30 = channel(11709);
+        tmp30 = channel(11711);
         if (channel != null) {
           guildId = channel.getGuildId();
         }
@@ -797,7 +797,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_5;
-    tmp17 = channel(11709);
+    tmp17 = channel(11711);
     if (channel != null) {
       guildId = channel.getGuildId();
     }

@@ -1,9 +1,9 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16467
+// Function ID: 16468
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1392, 21, 4971, 587, 558, 576, 9570, 7798, 16437, 504, 9589, 7796, 1128, 16467, 6713, 16469, 16438, 5267, 5971, 5234, 6908, 9644, 2]
+// Dependencies: [32, 19, 17, 1392, 21, 4971, 587, 558, 576, 9570, 7798, 16436, 504, 9589, 7796, 1128, 16466, 6713, 16468, 16437, 5267, 5971, 5234, 6908, 9644, 2]
 
-// Module 16468 (QuestBottomSheetHeader)
+// Module 16467 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -15,8 +15,8 @@ import utils_QuestUtils from "utils/QuestUtils" /* 7796 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
-import QuestHooks from "QuestHooks" /* 16437 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 16467 */;
+import QuestHooks from "QuestHooks" /* 16436 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 16466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -277,7 +277,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHea
     const obj2 = { quest };
     return obj.hasStreamOnDesktopTask(obj2);
   }, items);
-  let obj5 = quest(16437);
+  let obj5 = quest(16436);
   hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
   let obj6 = quest(504);
   const items1 = [first];
@@ -367,9 +367,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   const cResult = obj.c(23);
   ({ quest, step, withActionSheet, location: _location } = arg0);
   const tmp5 = closure_9();
-  const tmpResult = tmp(16469);
+  const tmpResult = tmp(16468);
   const questCreative = tmpResult.useQuestCreative(quest);
-  const tmpResult3 = tmp(16438);
+  const tmpResult3 = tmp(16437);
   const actionSheetPressHandler = tmpResult3.useActionSheetPressHandler(questCreative);
   if (cResult[0] === _location) {
     if (cResult[1] === quest) {
@@ -507,9 +507,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   let isScreenReaderEnabled;
   const _location = step.location;
   let tmp = closure_9();
-  let obj = isScreenReaderEnabled(16469);
+  let obj = isScreenReaderEnabled(16468);
   const questCreative = obj.useQuestCreative(quest);
-  let obj2 = isScreenReaderEnabled(16438);
+  let obj2 = isScreenReaderEnabled(16437);
   const actionSheetPressHandler = obj2.useActionSheetPressHandler(questCreative);
   const tmp6 = closure_10({ quest, step, location: _location });
   const obj3 = isScreenReaderEnabled(5267);

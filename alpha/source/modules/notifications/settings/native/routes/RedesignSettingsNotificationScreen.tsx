@@ -1,20 +1,20 @@
-// Module ID: 17323
-// Function ID: 17324
+// Module ID: 17322
+// Function ID: 17323
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 16839, 8332, 21, 17324, 1128, 2864, 558, 576, 16840, 11206, 16842, 17325, 5263, 15978, 2]
+// Dependencies: [19, 16838, 8332, 21, 17323, 1128, 2864, 558, 576, 16839, 11208, 16841, 17324, 5263, 15977, 2]
 
-// Module 17323 (RedesignSettingsNotificationScreen)
+// Module 17322 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2864 from "module_2864" /* 2864 */;
 import useMountEffectDefault from "useMountEffect" /* 5263 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
-import SettingLayoutDefault from "SettingLayout" /* 15978 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16839 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16840 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17324 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingLayoutDefault from "SettingLayout" /* 15977 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16838 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16839 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17323 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 let tmp2;
 
 let tmp3;
-const NotificationPermissionSettingsHeaderDefault = tmp3(16842);
+const NotificationPermissionSettingsHeaderDefault = tmp3(16841);
 let closure_4 = AndroidNotificationSettingsStore.initializeAndroidNotificationSettingsStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
@@ -61,7 +61,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items[1] = obj5;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(16842);
+      tmp5Result = tmp5(16841);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

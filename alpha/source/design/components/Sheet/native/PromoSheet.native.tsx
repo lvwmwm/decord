@@ -1,9 +1,9 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10855
+// Function ID: 10856
 // Name: PromoSheet
 // Dependencies: [109, 19, 17, 21, 4971, 587, 558, 576, 9851, 9850, 5234, 5977, 5265, 2]
 
-// Module 10853 (PromoSheet)
+// Module 10855 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ExpressiveGradient2 from "ExpressiveGradient" /* 9851 */;

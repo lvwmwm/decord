@@ -1,9 +1,9 @@
-// Module ID: 18110
-// Function ID: 18111
+// Module ID: 18109
+// Function ID: 18110
 // Name: SearchMediaImage
-// Dependencies: [109, 32, 19, 17, 4823, 6792, 1087, 21, 4971, 558, 576, 5205, 4978, 7394, 13972, 8552, 5586, 504, 8763, 1498, 13110, 1384, 5669, 1128, 9348, 12828, 1405, 6682, 8757, 9312, 12169, 2]
+// Dependencies: [109, 32, 19, 17, 4823, 6792, 1087, 21, 4971, 558, 576, 5205, 4978, 7394, 13971, 8552, 5586, 504, 8763, 1498, 13109, 1384, 5669, 1128, 9348, 12827, 1405, 6682, 8757, 9312, 12171, 2]
 
-// Module 18110 (SearchMediaImage)
+// Module 18109 (SearchMediaImage)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
@@ -14,9 +14,9 @@ import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6682 */;
 import ObscureMediaModels from "ObscureMediaModels" /* 7394 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8552 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 12828 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13110 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 13972 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 12827 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13109 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 13971 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -40,7 +40,7 @@ let tmp;
 let tmp5;
 const VisualEffectViewDefault = tmp5(5586);
 const CirclePlayIcon = tmp(9312);
-const AttachmentPreview = tmp(12169);
+const AttachmentPreview = tmp(12171);
 let closure_3 = ["attachment", "channelId", "authorId"];
 let closure_4 = ["embed", "sources", "messageId", "channelId", "authorId"];
 let closure_5 = ["unfurledMediaItem", "sources", "channelId", "authorId", "isBot"];
@@ -286,7 +286,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
                       tmp13 = cResult[14];
                     }
                     if (cResult[15] !== tmp11) {
-                      const tmpResult7 = channelId(13110);
+                      const tmpResult7 = channelId(13109);
                       const obscuredAlt = tmpResult7.getObscuredAlt(tmp11);
                       cResult[15] = tmp11;
                       cResult[16] = obscuredAlt;
@@ -690,7 +690,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachment
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(12828);
+  let obj = attachment(12827);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
   const hasFlag = attachment(1405).hasFlag;
@@ -968,7 +968,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedM
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(12828);
+  let obj = embed(12827);
   closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   const obj2 = embed(6682);
   closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
@@ -990,8 +990,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedM
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(13110).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(13110);
+      const getObscureReasonForEmbed = tmp2(13109).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(13109);
       if (!flag2) {
         flag2 = closure_4;
       }

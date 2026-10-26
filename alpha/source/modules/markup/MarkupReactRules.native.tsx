@@ -1,7 +1,7 @@
 // Module ID: 5706
 // Function ID: 5707
 // Name: MarkupReactRules
-// Dependencies: [109, 19, 17, 4972, 4823, 4877, 1087, 4830, 1098, 21, 558, 576, 5234, 4971, 587, 5707, 5606, 5151, 6672, 8668, 5908, 1128, 7285, 5662, 6883, 1202, 1386, 8860, 5660, 10013, 10068, 8471, 504, 4968, 8319, 5210, 11283, 2002, 11, 4799, 5669, 11256, 15082, 15084, 5678, 11239, 15086, 11163, 5980, 12067, 5982, 1384, 8502, 15087, 12069, 2]
+// Dependencies: [109, 19, 17, 4972, 4823, 4877, 1087, 4830, 1098, 21, 558, 576, 5234, 4971, 587, 5707, 5606, 5151, 6672, 8668, 5908, 1128, 7285, 5662, 6883, 1202, 1386, 8860, 5660, 10013, 10068, 8471, 504, 4968, 8319, 5210, 11285, 2002, 11, 4799, 5669, 11258, 15081, 15083, 5678, 11241, 15085, 11165, 5980, 12069, 5982, 1384, 8502, 15086, 12071, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5706 (MarkupReactRules)
@@ -26,11 +26,11 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10068 */;
-import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11163 */;
-import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11239 */;
-import SpoilerDefault from "Spoiler" /* 12067 */;
-import TimestampDefault from "Timestamp" /* 12069 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15087 */;
+import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11165 */;
+import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11241 */;
+import SpoilerDefault from "Spoiler" /* 12069 */;
+import TimestampDefault from "Timestamp" /* 12071 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15086 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -152,13 +152,13 @@ function MarkupMention(styles) {
           const obj2 = { guildId: null, roleId: null, channelId: null };
           ({ guildId: obj5.guildId, roleId: obj5.roleId, channelId: obj5.channelId } = node);
           const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.openLazy(asyncRequire(11283, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
+          obj4.openLazy(asyncRequire(11285, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
         }
       }
       if ("@everyone" === node.roleName) {
         if (null != node.guildId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-          const tmp13 = asyncRequire(11283, dependencyMap.paths);
+          const tmp13 = asyncRequire(11285, dependencyMap.paths);
           const obj6 = { guildId: node.guildId, roleId: obj3.castGuildIdAsEveryoneGuildRoleId(node.guildId), channelId: node.channelId };
           obj3 = SnowflakeUtilsDefault;
           openLazy(tmp13, "RoleMembersActionSheet", obj6, "stack");
@@ -1018,7 +1018,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       if (cResult[4] !== node.inContent) {
         let tmp10Result = null;
         if (null != node.inContent) {
-          const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp11(11256), size: state(1202).Icon.Sizes.CUSTOM };
+          const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp11(11258), size: state(1202).Icon.Sizes.CUSTOM };
           const ThemedIcon = tmp(1202).ThemedIcon;
           const fontScale = closure_6.getFontScale();
           const tmp10 = closure_14;
@@ -1229,7 +1229,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   items = [outputResult, , ];
   let tmp7Result = null;
   if (null != node.inContent) {
-    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp8(11256), size: tmp3(1202).Icon.Sizes.CUSTOM };
+    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp8(11258), size: tmp3(1202).Icon.Sizes.CUSTOM };
     const ThemedIcon = tmp3(1202).ThemedIcon;
     const fontScale = closure_6.getFontScale();
     const tmp7 = closure_14;
@@ -1329,7 +1329,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   const output = state.output;
   ({ styles, variants } = state);
   const tmp4 = closure_18();
-  let SignPostIcon = state(15082).SignPostIcon;
+  let SignPostIcon = state(15081).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     let first;
@@ -1342,7 +1342,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           }
         }
       }
-      SignPostIcon = tmp(15084).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp(15083).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -1546,7 +1546,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     cResult[6] = smartOutputResult;
     tmp17 = smartOutputResult;
   }
-  SignPostIcon = tmp(15082).SignPostIcon;
+  SignPostIcon = tmp(15081).SignPostIcon;
 }) : (function MarkupStaticRouteLink(state) {
   let items;
   let items2;
@@ -1560,7 +1560,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_18();
-  let SignPostIcon = state(15082).SignPostIcon;
+  let SignPostIcon = state(15081).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -1571,7 +1571,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           }
         }
       }
-      SignPostIcon = tmp2(15084).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15083).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -1645,7 +1645,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15082).SignPostIcon;
+  SignPostIcon = tmp2(15081).SignPostIcon;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupAttachmentLink(state) {
@@ -1673,7 +1673,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   }
   const channelMentionText = tmp4.channelMentionText;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(15086), size: SMALL };
+    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(15085), size: SMALL };
     const ThemedIcon = tmp(1202).ThemedIcon;
     const fontScale = closure_6.getFontScale();
     const tmp6 = closure_14;
@@ -1828,7 +1828,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(15086), size: SMALL };
+  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(15085), size: SMALL };
   const ThemedIcon = tmp3(1202).ThemedIcon;
   const fontScale = closure_6.getFontScale();
   if (fontScale < 1) {

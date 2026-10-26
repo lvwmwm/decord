@@ -1,9 +1,9 @@
-// Module ID: 18949
-// Function ID: 18950
+// Module ID: 18948
+// Function ID: 18949
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4823, 1392, 15048, 1087, 21, 4971, 587, 5234, 5989, 1128, 558, 576, 504, 1388, 1202, 11838, 10688, 7267, 5686, 1267, 5210, 18950, 7411, 7298, 5669, 10943, 6987, 6903, 5244, 2]
+// Dependencies: [19, 17, 4823, 1392, 15047, 1087, 21, 4971, 587, 5234, 5989, 1128, 558, 576, 504, 1388, 1202, 11840, 10688, 7267, 5686, 1267, 5210, 18949, 7411, 7298, 5669, 10945, 6987, 6903, 5244, 2]
 
-// Module 18949 (BlockedUserInGdmActionSheet)
+// Module 18948 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,11 +17,11 @@ import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
 import TableRow2 from "TableRow" /* 6903 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 7267 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18950 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18949 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import UserStore from "UserStore" /* 1392 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15048 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15047 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -280,7 +280,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1202).Avatar;
       tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_10(tmp(11838).UserIcon, {});
+      tmp19 = closure_10(tmp(11840).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -321,7 +321,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1202).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(11838).UserIcon, {});
+      tmp8 = closure_10(tmp(11840).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {

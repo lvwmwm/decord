@@ -1,15 +1,15 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11471
+// Function ID: 11472
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4822, 6775, 6378, 1087, 6776, 1104, 11470, 580, 1123, 1267, 4892, 9264, 6777, 11471, 10730, 6778, 9260, 2002, 11473, 11474, 2]
+// Dependencies: [5, 32, 4822, 6775, 6378, 1087, 6776, 1104, 11472, 580, 1123, 1267, 4892, 9264, 6777, 11473, 10730, 6778, 9260, 2002, 11475, 11476, 2]
 
-// Module 11469 (PostMessageTransport)
+// Module 11471 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import Constants2 from "Constants" /* 6378 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11470 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 11472 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
@@ -172,7 +172,7 @@ class PostMessageTransport extends EventEmitter {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c7;
@@ -323,7 +323,7 @@ class PostMessageTransport extends EventEmitter {
               logger2.info("Socket Validated: " + user.id);
               c7 = 0;
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               const logger = closure_133_1.logger;
               const _HermesInternal = HermesInternal;
@@ -371,7 +371,7 @@ class PostMessageTransport extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -418,7 +418,7 @@ class PostMessageTransport extends EventEmitter {
               c5 = 0;
               closure_131_1.disconnectSocket(closure_0, closure_1);
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             c5 = 0;
@@ -582,7 +582,7 @@ class PostMessageTransport extends EventEmitter {
                                     const obj2 = { value, done: true };
                                     return obj2;
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "+352" };
                                   }
                                 } else {
                                   let c3;
@@ -644,7 +644,7 @@ class PostMessageTransport extends EventEmitter {
                                           const pendingTicketRefreshes2 = tmp56.pendingTicketRefreshes;
                                           pendingTicketRefreshes2.delete(ticket.iframeId);
                                           c5 = 3;
-                                          return { value: "IconComponent", done: null };
+                                          return { value: "IconComponent", done: "+352" };
                                         }
                                       } else if (arg0 === 1) {
                                         c5 = 3;
@@ -671,7 +671,7 @@ class PostMessageTransport extends EventEmitter {
                                       const pendingTicketRefreshes4 = tmp56.pendingTicketRefreshes;
                                       pendingTicketRefreshes4.delete(ticket.iframeId);
                                       c5 = 3;
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "+352" };
                                     }
                                   } catch (tmp56) {
                                     if (0 === c3) {

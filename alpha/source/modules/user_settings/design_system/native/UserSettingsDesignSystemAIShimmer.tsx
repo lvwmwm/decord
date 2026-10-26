@@ -1,9 +1,9 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17184
+// Function ID: 17185
 // Name: UserSettingsDesignSystemAIShimmer
 // Dependencies: [32, 19, 17, 21, 4971, 558, 576, 5244, 5234, 12504, 6905, 5977, 2]
 
-// Module 17185 (UserSettingsDesignSystemAIShimmer)
+// Module 17184 (UserSettingsDesignSystemAIShimmer)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;

@@ -1,9 +1,9 @@
-// Module ID: 19363
-// Function ID: 19364
+// Module ID: 19362
+// Function ID: 19363
 // Name: FriendOnlineTimer
-// Dependencies: [5, 6498, 19364, 1087, 1098, 1104, 1297, 1257, 584, 7214, 4799, 2]
+// Dependencies: [5, 6498, 19363, 1087, 1098, 1104, 1297, 1257, 584, 7214, 4799, 2]
 
-// Module 19363 (FriendOnlineTimer)
+// Module 19362 (FriendOnlineTimer)
 import Constants from "Constants" /* 1087 */;
 import Constants2 from "Constants" /* 1098 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -11,7 +11,7 @@ import HTTPUtils from "HTTPUtils" /* 1297 */;
 import UserSettings from "UserSettings" /* 4799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 19364 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 19363 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
           const tmp17 = closure_129_1(closure_129_2[8]);
           dispatch(obj9);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp28) {
         closure_2 = tmp28;

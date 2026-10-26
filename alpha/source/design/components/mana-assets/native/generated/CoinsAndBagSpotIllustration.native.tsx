@@ -1,28 +1,28 @@
-// Module ID: 19226
-// Function ID: 19227
+// Module ID: 19225
+// Function ID: 19226
 // Name: CoinsAndBagSpotIllustration
-// Dependencies: [19, 21, 19227, 19228, 19229, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 19226, 19227, 19228, 558, 576, 6995, 5669, 2]
 
-// Module 19226 (CoinsAndBagSpotIllustration)
+// Module 19225 (CoinsAndBagSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
+import _modDef19226 from "module_19226" /* 19226 */;
 import _modDef19227 from "module_19227" /* 19227 */;
 import _modDef19228 from "module_19228" /* 19228 */;
-import _modDef19229 from "module_19229" /* 19229 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19227 };
+let obj2 = { uri: _modDef19226 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19228 };
+let obj3 = { uri: _modDef19227 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19229 };
-({ uri: _modDef19229 });
+obj[3] = { uri: _modDef19228 };
+({ uri: _modDef19228 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoinsAndBagSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

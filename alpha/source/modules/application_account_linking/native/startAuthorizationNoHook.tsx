@@ -1,10 +1,10 @@
-// Module ID: 11357
-// Function ID: 11358
+// Module ID: 11359
+// Function ID: 11360
 // Name: startAuthorizationNoHook
 // Dependencies: [5, 1087, 7256, 5660, 1267, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11357 (startAuthorizationNoHook)
+// Module 11359 (startAuthorizationNoHook)
 import Constants from "Constants" /* 1087 */;
 import LinkingDefault from "Linking" /* 5660 */;
 import useAuthorizationApp from "useAuthorizationApp" /* 7256 */;
@@ -29,7 +29,7 @@ let obj = function _startAuthorizationNoHook() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _startAuthorizationNoHook() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp20) {
           closure_4 = tmp20;
           if (0 === c5) {

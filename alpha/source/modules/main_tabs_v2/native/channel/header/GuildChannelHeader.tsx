@@ -1,9 +1,9 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14026
+// Function ID: 14027
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 14028, 6496, 4827, 7372, 4823, 5194, 4845, 4913, 1392, 1087, 4820, 21, 558, 576, 5252, 587, 504, 7022, 14021, 9858, 1128, 5604, 14019, 4807, 7496, 2067, 8502, 9840, 10091, 7346, 14014, 2]
+// Dependencies: [32, 19, 17, 14027, 6496, 4827, 7372, 4823, 5194, 4845, 4913, 1392, 1087, 4820, 21, 558, 576, 5252, 587, 504, 7022, 14020, 9858, 1128, 5604, 14018, 4807, 7496, 2067, 8502, 9840, 10091, 7346, 14013, 2]
 
-// Module 14027 (GuildChannelHeader)
+// Module 14026 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */
 import ChannelRecord from "ChannelRecord" /* 4827 */;
 import useChannelName2 from "useChannelName" /* 5604 */;
 import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9858 */;
-import ChannelHeader from "ChannelHeader" /* 14014 */;
+import ChannelHeader from "ChannelHeader" /* 14013 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14028 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14027 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7372 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -131,7 +131,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
             }
           }
         }
-        const tmpResult4 = tmp(14021);
+        const tmpResult4 = tmp(14020);
         const result = tmpResult4.renderMemberCountText(online, total, tmp4, tmp18);
         cResult[8] = online;
         cResult[9] = tmp18;
@@ -254,7 +254,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
     if (null != online) {
       let tmp7 = c22;
     }
-    const tmpResult = tmp(14021);
+    const tmpResult = tmp(14020);
     let tmp8 = tmpResult;
     let tmp9 = online;
     return tmpResult.renderMemberCountText(online, total, flag, tmp(7022).ICON_SIZE[token]);
@@ -324,8 +324,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                   tmp20 = cResult[14];
                 }
                 let id;
-                const useShouldChannelShowLoadingIndicator = guildId(14019).useShouldChannelShowLoadingIndicator;
-                guildId(14019);
+                const useShouldChannelShowLoadingIndicator = guildId(14018).useShouldChannelShowLoadingIndicator;
+                guildId(14018);
                 if (channel != null) {
                   id = channel.id;
                 }
@@ -341,7 +341,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                       let tmp40;
                       const _Symbol = Symbol;
                       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp42 = closure_19(guildId(14019).ChannelHeaderLoadingIndicator, {});
+                        const tmp42 = closure_19(guildId(14018).ChannelHeaderLoadingIndicator, {});
                         cResult[18] = tmp42;
                         tmp40 = tmp42;
                       } else {
@@ -384,7 +384,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
                     }
                   }
                   const obj6 = { accessibleTitle: tmp14, subtitle: tmp30, disableArrow, guildId, icon };
-                  const tmpResult8 = guildId(14021);
+                  const tmpResult8 = guildId(14020);
                   const renderChannelTitleResult = tmpResult8.renderChannelTitle(tmp7, obj6);
                   if (cResult[26] === (null != appSubTitle || tmp27 || tmp20 || null != tmp15)) {
                     let tmp45;
@@ -434,7 +434,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
       let result;
       if (tmp8) {
         if (null != parentChannel) {
-          const tmpResult9 = guildId(14021);
+          const tmpResult9 = guildId(14020);
           result = tmpResult9.renderParentChannelSubTitle(parentChannel);
         }
       }
@@ -502,7 +502,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
   const formatToPlainStringResult = formatToPlainString(tmp5 ? t["OkzL+Q"] : t.UbNmGc, { channelName: tmp3 });
   if (tmp5) {
     if (null != parentChannel) {
-      const tmpResult = guildId(14021);
+      const tmpResult = guildId(14020);
       result = tmpResult.renderParentChannelSubTitle(parentChannel);
     }
   }
@@ -525,8 +525,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
     tmp12 = null == appSubTitle;
   }
   let id;
-  const useShouldChannelShowLoadingIndicator = guildId(14019).useShouldChannelShowLoadingIndicator;
-  guildId(14019);
+  const useShouldChannelShowLoadingIndicator = guildId(14018).useShouldChannelShowLoadingIndicator;
+  guildId(14018);
   if (channel != null) {
     id = channel.id;
   }
@@ -539,7 +539,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
   if (null == appSubTitle) {
     let tmp21Result;
     if (!isForumLikeChannelResult && shouldChannelShowLoadingIndicator) {
-      tmp21Result = closure_19(tmp(14019).ChannelHeaderLoadingIndicator, {});
+      tmp21Result = closure_19(tmp(14018).ChannelHeaderLoadingIndicator, {});
     } else {
       let tmp23 = tmp12;
       const tmp21 = closure_21;
@@ -557,7 +557,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCha
     tmp20 = tmp21Result;
   }
   const obj6 = { node: tmpResult6.renderChannelTitle(tmp3, { accessibleTitle: formatToPlainStringResult, subtitle: tmp20, disableArrow, guildId, icon }), hasSubtitle: null != appSubTitle || !isForumLikeChannelResult && shouldChannelShowLoadingIndicator || tmp12 || null != result };
-  tmpResult6 = guildId(14021);
+  tmpResult6 = guildId(14020);
   return obj6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

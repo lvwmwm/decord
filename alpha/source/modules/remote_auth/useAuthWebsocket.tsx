@@ -1,14 +1,14 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17406
+// Function ID: 17407
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1087, 3, 558, 576, 17406, 569, 7057, 14953, 17408, 1123, 1297, 6668, 17410, 2]
+// Dependencies: [5, 32, 19, 1087, 3, 558, 576, 17405, 569, 7057, 14952, 17407, 1123, 1297, 6668, 17409, 2]
 
-// Module 17407 (useAuthWebsocket)
+// Module 17406 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import useStableCallbackDefault from "useStableCallback" /* 7057 */;
-import typing from "typing" /* 17406 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17408 */;
+import typing from "typing" /* 17405 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17407 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
   let tmp8 = tmp6[1];
   react = tmp8;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { step: tmp(17406).RemoteAuthStep.INITIALIZING };
+    let obj3 = { step: tmp(17405).RemoteAuthStep.INITIALIZING };
     cResult[0] = obj3;
     first1 = obj3;
   } else {
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F153518 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F153531 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F153518 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F153531 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
         flag = false;
         tmp8 = closure_5(false);
         tmp9 = closure_3;
-        tmp10 = closure_3(() => { /* body not rendered: F153519 */ });
+        tmp10 = closure_3(() => { /* body not rendered: F153532 */ });
       }
       return;
     }
@@ -310,7 +310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
                   heartbeat_interval = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "Reflect", done: true };
+                  return { value: "Reflect", done: null };
                 }
               } else if (1 === tmp4) {
                 if (arg0 === 1) {
@@ -399,7 +399,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
                               obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+352" };
                             }
                           } else {
                             try {
@@ -486,7 +486,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
                                 closure_0(closure_1);
                               }
                               c4 = 3;
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+352" };
                             } catch (tmp23) {
                               c4 = 3;
                               throw tmp23;
@@ -547,11 +547,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
                   } else if ("heartbeat_ack" === op) {
                     user = true;
                     c4 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   } else {
                     !warn("received unsupported message");
                     c4 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 }
               } else if (2 === tmp4) {
@@ -637,7 +637,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -710,7 +710,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthWebso
                   closure_129_2.send(JSON.stringify(obj12));
                   getKeyPair.current = current;
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
             }

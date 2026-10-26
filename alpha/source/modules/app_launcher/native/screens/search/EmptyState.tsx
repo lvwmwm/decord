@@ -1,9 +1,9 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12102
+// Function ID: 12103
 // Name: search/EmptyState
-// Dependencies: [19, 17, 21, 4971, 558, 576, 12029, 11167, 1128, 4980, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 12031, 11169, 1128, 4980, 5234, 2]
 
-// Module 12100 (search/EmptyState)
+// Module 12102 (search/EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
@@ -30,8 +30,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   }
   showsGenericMessage = tmp4;
   const tmp5 = closure_5();
-  const tmpResult = showsGenericMessage(12029);
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11167).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const tmpResult = showsGenericMessage(12031);
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11169).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   if (cResult[0] !== tmp4) {
     const fn = function o() {
       let stringResult;
@@ -114,8 +114,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     flag = false;
   }
   const tmp = closure_5();
-  const obj = flag(12029);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(11167).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
+  const obj = flag(12031);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(11169).AppLauncherEmptyStateType.SEARCH_EMPTY, query);
   const items = [flag];
   const effect = react.useEffect(() => {
     let stringResult;

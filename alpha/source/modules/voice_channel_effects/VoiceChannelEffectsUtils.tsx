@@ -120,28 +120,28 @@ export const getEffectUrl = function getEffectUrl(emoji) {
 export const getEffectAnnouncement = function getEffectAnnouncement(items) {
   let username2;
   let username4;
-  const f98617 = (item) => {
+  const f98626 = (item) => {
     let tmp = item[emojiName];
     if (tmp == null) {
       tmp = null;
     }
     return tmp;
   };
-  const f98618 = (item) => null != item;
+  const f98627 = (item) => null != item;
   if (items.length < 1) {
     return "";
   } else {
     let joined;
     const userId = "userId";
     const arr = module_12(items);
-    const mapped = arr.map(f98617);
-    const found = mapped.filter(f98618);
+    const mapped = arr.map(f98626);
+    const found = mapped.filter(f98627);
     const iter = found.uniq();
     const valueResult = iter.value();
     const emojiName = "emojiName";
     const arr4 = module_12(items);
-    const mapped1 = arr4.map(f98617);
-    const found1 = mapped1.filter(f98618);
+    const mapped1 = arr4.map(f98626);
+    const found1 = mapped1.filter(f98627);
     const iter2 = found1.uniq();
     const valueResult2 = iter2.value();
     if (valueResult2.length < 2) {

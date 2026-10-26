@@ -1,11 +1,11 @@
 // Module ID: 11963
 // Function ID: 11964
 // Name: default_1
-// Dependencies: [11920]
+// Dependencies: [11922]
 // Exports: default
 
 // Module 11963 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11920 */;
+import captureStackTrace2 from "captureStackTrace" /* 11922 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Neveljaven vnos: pri\u010Dakovano instanceof " + code.expected + ", prejeto " + tmp48;
+                combined = "Tipo inv\u00E1lido: esperado instanceof " + code.expected + ", recebido " + tmp50;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Neveljaven vnos: pri\u010Dakovano " + expected + ", prejeto " + tmp48;
+                combined = "Tipo inv\u00E1lido: esperado " + expected + ", recebido " + tmp50;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Neveljaven vnos: pri\u010Dakovano " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Entrada inv\u00E1lida: esperado " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Neveljavna mo\u017Enost: pri\u010Dakovano eno izmed " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Op\u00E7\u00E3o inv\u00E1lida: esperada uma das " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str24 = "<";
+              let str28 = "<";
               if (code.inclusive) {
-                str24 = "<=";
+                str28 = "<=";
               }
-              let str25 = code.origin;
+              let str29 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str25 == null) {
-                  str25 = "vrednost";
+                if (str29 == null) {
+                  str29 = "valor";
                 }
-                const str30 = code.maximum;
+                const str34 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str30.toString();
-                const str31 = (obj2[code.origin] ?? null).unit ?? "elementov";
-                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str25 + " imelo " + str24 + str1 + " " + str31;
+                const str1 = str34.toString();
+                const str35 = (obj2[code.origin] ?? null).unit ?? "elementos";
+                combined2 = "Muito grande: esperado que " + str29 + " tivesse " + str28 + str1 + " " + str35;
               } else {
-                let str26 = str25;
-                if (str25 == null) {
-                  str26 = "vrednost";
+                let str30 = str29;
+                if (str29 == null) {
+                  str30 = "valor";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str27 = code.maximum;
-                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str26 + " " + str24 + str27.toString();
+                const str31 = code.maximum;
+                combined2 = "Muito grande: esperado que " + str30 + " fosse " + str28 + str31.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str18 = ">";
+              let str22 = ">";
               if (code.inclusive) {
-                str18 = ">=";
+                str22 = ">=";
               }
               ({ origin, minimum } = code);
-              const str45 = minimum.toString();
+              const str49 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " imelo " + str18 + str45 + " " + tmp15.unit;
+                combined3 = "Muito pequeno: esperado que " + origin + " tivesse " + str22 + str49 + " " + tmp17.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " " + str18 + str45;
+                combined3 = "Muito pequeno: esperado que " + origin + " fosse " + str22 + str49;
               }
               return combined3;
             }
@@ -181,61 +181,65 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Neveljaven niz: mora se za\u010Deti z \"" + code.prefix + "\"";
+                combined4 = "Texto inv\u00E1lido: deve come\u00E7ar com \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Neveljaven niz: mora se kon\u010Dati z \"" + code.suffix + "\"";
+                combined4 = "Texto inv\u00E1lido: deve terminar com \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Neveljaven niz: mora vsebovati \"" + code.includes + "\"";
+                combined4 = "Texto inv\u00E1lido: deve incluir \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Neveljaven niz: mora ustrezati vzorcu " + code.pattern;
+                combined4 = "Texto inv\u00E1lido: deve corresponder ao padr\u00E3o " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Neveljaven " + format;
+                combined4 = "" + format + " inv\u00E1lido";
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Neveljavno \u0161tevilo: mora biti ve\u010Dkratnik " + code.divisor;
+              return "N\u00FAmero inv\u00E1lido: deve ser m\u00FAltiplo de " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str3 = " klju\u010D";
+              let str4 = "";
+              let str5 = "";
               if (code.keys.length > 1) {
-                str3 = "i klju\u010Di";
+                str5 = "s";
+              }
+              if (code.keys.length > 1) {
+                str4 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Neprepoznan" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Chave" + str5 + " desconhecida" + str4 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Neveljaven klju\u010D v " + code.origin;
+              return "Chave inv\u00E1lida em " + code.origin;
             }
             case "invalid_union":
             {
-              return "Neveljaven vnos";
+              return "Entrada inv\u00E1lida";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Neveljavna vrednost v " + code.origin;
+              return "Valor inv\u00E1lido em " + code.origin;
             }
             default:
             {
-              return "Neveljaven vnos";
+              return "Campo inv\u00E1lido";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "znakov", verb: "imeti" }, file: { unit: "bajtov", verb: "imeti" }, array: { unit: "elementov", verb: "imeti" }, set: { unit: "elementov", verb: "imeti" } };
-    closure_1 = { regex: "vnos", email: "e-po\u0161tni naslov", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum in \u010Das", date: "ISO datum", time: "ISO \u010Das", duration: "ISO trajanje", ipv4: "IPv4 naslov", ipv6: "IPv6 naslov", cidrv4: "obseg IPv4", cidrv6: "obseg IPv6", base64: "base64 kodiran niz", base64url: "base64url kodiran niz", json_string: "JSON niz", e164: "E.164 \u0161tevilka", jwt: "JWT", template_literal: "vnos" };
-    let closure_2 = { nan: "NaN", number: "\u0161tevilo", array: "tabela" };
+    const obj2 = { string: { unit: "caracteres", verb: "ter" }, file: { unit: "bytes", verb: "ter" }, array: { unit: "itens", verb: "ter" }, set: { unit: "itens", verb: "ter" } };
+    closure_1 = { regex: "padr\u00E3o", email: "endere\u00E7o de e-mail", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e hora ISO", date: "data ISO", time: "hora ISO", duration: "dura\u00E7\u00E3o ISO", ipv4: "endere\u00E7o IPv4", ipv6: "endere\u00E7o IPv6", cidrv4: "faixa de IPv4", cidrv6: "faixa de IPv6", base64: "texto codificado em base64", base64url: "URL codificada em base64", json_string: "texto JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
+    let closure_2 = { nan: "NaN", number: "n\u00FAmero", null: "nulo" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

@@ -12,7 +12,7 @@ import PaymentConstants from "PaymentConstants" /* 5698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, closure_4, expected_revision, external_gateway_facet, gift_customization, orderLineItemId, order_line_items, recipient_id, request_gateway_country_code, subscription_facet;
+let closure_3, closure_4, expected_revision, external_gateway_facet, giftInfo, gift_customization, orderLineItemId, order_line_items, recipient_id, request_gateway_country_code, subscription_facet;
 
 function getOrders() {
   return obj(...arguments);
@@ -33,7 +33,7 @@ let obj = function _getOrders() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _createOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -202,7 +202,7 @@ obj = function _createOrder() {
               body = undefined;
               external_gateway_facet = 1;
               request_gateway_country_code = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === external_gateway_facet) {
             if (arg0 === 1) {
@@ -372,7 +372,7 @@ obj = function _createOrder() {
   return obj(...arguments);
 };
 obj = function _getOrCreateOrder() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
@@ -382,116 +382,24 @@ obj = function _getOrCreateOrder() {
     let c6;
     let c7;
     let c8;
-    let isGift;
     let items;
-    let purchase_type;
     let closure_0 = arg0;
-    if (isGift === 2) {
-      isGift = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let sku_id;
-        let paymentGateway;
-        let recipientUserId;
-        let giftInfo;
-        let createdAfter;
-        let subscription_plan_id;
-        let externalGatewayFacet;
-        let length;
-        isGift = 2;
-        if (0 === purchase_type) {
-          if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp3;
-            sku_id = undefined;
-            paymentGateway = undefined;
-            recipientUserId = undefined;
-            giftInfo = undefined;
-            createdAfter = undefined;
-            subscription_plan_id = undefined;
-            externalGatewayFacet = undefined;
-            ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8 } = closure_0);
-            length = undefined;
-            value = undefined;
-            purchase_type = 1;
-            isGift = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === purchase_type) {
-          if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId };
-            purchase_type = 2;
-            isGift = 1;
-            const obj6 = { value: closure_130_7(obj5), done: false };
-            return obj6;
-          }
-        } else if (2 === purchase_type) {
-          if (arg0 === 1) {
-            isGift = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            isGift = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            length = value;
-            if (length.length > 0) {
-              value = length[0];
-              const obj8 = { orderId: value.id, skuId: sku_id, isGift };
-              closure_130_6.info("reusing existing draft order", obj8);
-              isGift = 3;
-              const obj9 = { value, done: true };
-              return obj9;
-            } else {
-              const obj10 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet };
-              const obj11 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
-              items = [obj11];
-              purchase_type = 3;
-              isGift = 1;
-              const obj12 = { value: closure_130_9(obj10), done: false };
-              return obj12;
-            }
-          }
-        } else if (arg0 === 1) {
-          isGift = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          isGift = 3;
-          const obj13 = { value, done: true };
-          return obj13;
-        } else {
-          isGift = 3;
-          obj = { value, done: true };
-          return obj;
-        }
-      } catch (tmp20) {
-        isGift = 3;
-        throw tmp20;
-      }
+    const paymentGateway = 0;
+    ({ skuId: c0, paymentGateway: c1, recipientUserId: c2, purchaseType: c3, isGift: c4, giftInfo: c5, createdAfter: c6, subscriptionPlanId: c7, externalGatewayFacet: c8 } = closure_0);
+    await "Reflect";
+    const obj5 = { isGift, status: closure_130_4.DRAFT, skuId: sku_id, createdAfter, recipientUserId };
+    const length = await closure_130_7(obj5);
+    if (length.length > 0) {
+      const value = length[0];
+      const obj8 = { orderId: value.id, skuId: sku_id, isGift };
+      closure_130_6.info("reusing existing draft order", obj8);
+      return value;
     }
+    const obj10 = { paymentGateway, recipientUserId, isGift, giftInfo, orderLineItems: items, externalGatewayFacet };
+    const obj11 = { sku_id, quantity: 1, purchase_type, subscription_plan_id };
+    items = [obj11];
+    await closure_130_9(obj10);
+    return arg1;
   });
   return obj(...arguments);
 };
@@ -517,7 +425,7 @@ obj = function _patchOrderLineItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -541,7 +449,7 @@ obj = function _patchOrderLineItem() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -657,7 +565,7 @@ obj = function _patchOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -683,7 +591,7 @@ obj = function _patchOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -806,7 +714,7 @@ obj = function _updateOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c4;
@@ -832,7 +740,7 @@ obj = function _updateOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -988,7 +896,7 @@ obj = function _markOrderAsSigningInProgress() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -1027,7 +935,7 @@ obj = function _markOrderAsSigningInProgress() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 let c3;
@@ -1156,7 +1064,7 @@ obj = function _markOrderAsSigningInProgress() {
                     c3 = 0;
                     c11 = null;
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } catch (tmp38) {
                   closure_2 = tmp38;
@@ -1199,7 +1107,7 @@ obj = function _markOrderAsSigningInProgress() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1224,7 +1132,7 @@ obj = function _cancelOrderSigning() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -1265,7 +1173,7 @@ obj = function _cancelOrderSigning() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } else {
                   let c3;

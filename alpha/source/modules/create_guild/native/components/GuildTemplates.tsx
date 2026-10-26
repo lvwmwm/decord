@@ -1,22 +1,22 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13614
+// Function ID: 13615
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 13612, 7073, 1087, 21, 4971, 5268, 587, 558, 576, 1128, 5234, 1505, 1633, 13587, 1267, 5244, 13616, 13217, 6987, 7221, 2]
+// Dependencies: [32, 19, 17, 13611, 7073, 1087, 21, 4971, 5268, 587, 558, 576, 1128, 5234, 1505, 1633, 13586, 1267, 5244, 13615, 13216, 6987, 7221, 2]
 
-// Module 13615 (GuildTemplates)
+// Module 13614 (GuildTemplates)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 13217 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13587 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 13616 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 13216 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13586 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 13615 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13612 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13611 */;
 import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7073 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

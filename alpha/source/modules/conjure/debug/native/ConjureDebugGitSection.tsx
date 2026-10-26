@@ -1,7 +1,7 @@
 // Module ID: 12559
 // Function ID: 12560
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 4971, 587, 8545, 10120, 12560, 12562, 9047, 12564, 9646, 12566, 11598, 11828, 7267, 7957, 7018, 12568, 12570, 558, 576, 12572, 5234, 12554, 5039, 5914, 6901, 5977, 11788, 5244, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 8545, 10120, 12560, 12562, 9047, 12564, 9646, 12566, 11600, 11830, 7267, 7957, 7018, 12568, 12570, 558, 576, 12572, 5234, 12554, 5039, 5914, 6901, 5977, 11790, 5244, 2]
 
 // Module 12559 (ConjureDebugGitSection)
 import react2 from "react" /* 576 */;
@@ -14,8 +14,8 @@ import FolderIcon from "FolderIcon" /* 8545 */;
 import CalendarIcon from "CalendarIcon" /* 9047 */;
 import ServerIcon from "ServerIcon" /* 9646 */;
 import PencilIcon from "PencilIcon" /* 10120 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11598 */;
-import FileIcon from "FileIcon" /* 11828 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11600 */;
+import FileIcon from "FileIcon" /* 11830 */;
 import CloudIcon from "CloudIcon" /* 12560 */;
 import ListNumberedIcon from "ListNumberedIcon" /* 12562 */;
 import SaveIcon from "SaveIcon" /* 12564 */;

@@ -1,10 +1,10 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14421
+// Function ID: 14422
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7650, 13902, 9370, 9373, 9371, 1392, 6824, 7703, 8672, 1087, 1089, 1394, 21, 3, 4971, 587, 558, 576, 5037, 4978, 1128, 5234, 14266, 8679, 7253, 10499, 9797, 504, 14423, 8663, 14409, 14424, 5151, 5663, 5210, 11296, 2053, 7519, 5909, 10446, 7278, 1385, 10556, 7335, 10555, 8668, 2065, 7649, 13875, 7429, 4787, 8665, 14425, 2002, 5686, 5244, 11149, 7959, 10120, 13900, 2]
+// Dependencies: [5, 19, 17, 7650, 13901, 9370, 9373, 9371, 1392, 6824, 7703, 8672, 1087, 1089, 1394, 21, 3, 4971, 587, 558, 576, 5037, 4978, 1128, 5234, 14265, 8679, 7253, 10499, 9797, 504, 14422, 8663, 14408, 14423, 5151, 5663, 5210, 11298, 2053, 7519, 5909, 10446, 7278, 1385, 10556, 7335, 10555, 8668, 2065, 7649, 13874, 7429, 4787, 8665, 14424, 2002, 5686, 5244, 11151, 7959, 10120, 13899, 2]
 // Exports: default
 
-// Module 14422 (UserProfileWishlistGrid)
+// Module 14421 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -23,7 +23,7 @@ import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
-import SentGiftsStore from "SentGiftsStore" /* 13902 */;
+import SentGiftsStore from "SentGiftsStore" /* 13901 */;
 import WishlistStore from "WishlistStore" /* 9370 */;
 import UserStore from "UserStore" /* 1392 */;
 import SKUStore from "SKUStore" /* 6824 */;
@@ -379,7 +379,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -647,7 +647,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
             openGiftModal(obj39);
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp140) {
           closure_4 = tmp140;
           if (0 === v0) {
@@ -687,7 +687,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(14425, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(14424, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

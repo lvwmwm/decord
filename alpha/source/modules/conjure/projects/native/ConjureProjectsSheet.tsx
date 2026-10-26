@@ -1,9 +1,9 @@
-// Module ID: 14153
-// Function ID: 14154
+// Module ID: 14152
+// Function ID: 14153
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 5002, 6773, 7321, 21, 4971, 587, 5210, 5151, 13527, 558, 576, 11748, 11854, 6903, 6987, 11746, 1128, 3830, 11838, 6883, 504, 5234, 5977, 5244, 10720, 1633, 5263, 7248, 7298, 5269, 2]
+// Dependencies: [19, 17, 5002, 6773, 7321, 21, 4971, 587, 5210, 5151, 13526, 558, 576, 11750, 11856, 6903, 6987, 11748, 1128, 3830, 11840, 6883, 504, 5234, 5977, 5244, 10720, 1633, 5263, 7248, 7298, 5269, 2]
 
-// Module 14153 (ConjureProjectsSheet)
+// Module 14152 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,8 +17,8 @@ import BottomSheetModal from "BottomSheetModal" /* 5269 */;
 import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
 import ActionSheet2 from "ActionSheet" /* 7298 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11746 */;
-import openConjureProject from "openConjureProject" /* 13527 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11748 */;
+import openConjureProject from "openConjureProject" /* 13526 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
@@ -60,7 +60,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     fallbackGuildId = entry.fallbackGuildId;
   }
   if (cResult[0] !== entry) {
-    const tmpResult = tmp(11748);
+    const tmpResult = tmp(11750);
     const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
@@ -72,7 +72,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   ({ serverName, label } = tmp4);
   if (cResult[2] !== entry.project) {
     let obj2 = { project: entry.project, size: "list" };
-    const tmp9 = closure_6(fallbackGuildId(11854), obj2);
+    const tmp9 = closure_6(fallbackGuildId(11856), obj2);
     cResult[2] = entry.project;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -170,14 +170,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let obj = entry(11748);
+  let obj = entry(11750);
   const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
   let obj2 = {
     label: entry.name,
     subLabel: serverName,
     accessibilityLabel: label,
-    icon: closure_6(fallbackGuildId(11854), obj3),
+    icon: closure_6(fallbackGuildId(11856), obj3),
     trailing: tmp2Result,
     disabled: null == fallbackGuildId,
     onPress() {
@@ -366,7 +366,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
       };
       let TableRow = tmp(6903).TableRow;
       intl = tmp(1128).intl;
-      obj3 = { IconComponent: tmp(11838).UserIcon };
+      obj3 = { IconComponent: tmp(11840).UserIcon };
       Icon = tmp(6903).TableRow.Icon;
       tmp6 = closure_6(TableRow, obj2);
     }
@@ -525,7 +525,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
       };
       let TableRow = tmp3(6903).TableRow;
       intl = tmp3(1128).intl;
-      obj3 = { IconComponent: forMeGuildId(11838).UserIcon };
+      obj3 = { IconComponent: forMeGuildId(11840).UserIcon };
       Icon = tmp3(6903).TableRow.Icon;
       tmp5 = closure_6(TableRow, obj2);
     }
@@ -603,11 +603,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(47);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(11748);
+  const obj2 = stateFromStores1(11750);
   const conjureProjects = obj2.useConjureProjects(ConjureProjectsSheet_str);
-  const obj3 = stateFromStores1(11748);
+  const obj3 = stateFromStores1(11750);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(ConjureProjectsSheet_str);
-  const obj4 = stateFromStores1(11748);
+  const obj4 = stateFromStores1(11750);
   const conjureForMeGuildId = obj4.useConjureForMeGuildId(ConjureProjectsSheet_str);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];

@@ -1,9 +1,9 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17104
+// Function ID: 17105
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10668, 1128, 10664, 2928, 4971, 587, 558, 576, 5234, 5244, 5977, 10661, 10662, 504, 17106, 14064, 6903, 6987, 6369, 2]
+// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10668, 1128, 10664, 2928, 4971, 587, 558, 576, 5234, 5244, 5977, 10661, 10662, 504, 17105, 14063, 6903, 6987, 6369, 2]
 
-// Module 17105 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17104 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;

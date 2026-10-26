@@ -1,9 +1,9 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15070
+// Function ID: 15071
 // Name: isUserSettingsOpen
 // Dependencies: [32, 19, 5151, 558, 576, 2]
 
-// Module 15071 (isUserSettingsOpen)
+// Module 15070 (isUserSettingsOpen)
 import RootNavigationRef from "RootNavigationRef" /* 5151 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f123255 = (name) => {
+const f123266 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f123255 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f123255);
+      someResult = routes.some(f123266);
     }
     tmp = someResult;
   }
@@ -43,7 +43,7 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f123255);
+      someResult = routes.some(f123266);
     }
     tmp2 = someResult;
   }
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
             let someResult = null != routes1;
             if (someResult) {
               const routes = rootState.routes;
-              someResult = routes.some(f123255);
+              someResult = routes.some(f123266);
             }
             rootNavigationRef(someResult);
           }
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f123255);
+          someResult = routes.some(f123266);
         }
         _require(someResult);
       }

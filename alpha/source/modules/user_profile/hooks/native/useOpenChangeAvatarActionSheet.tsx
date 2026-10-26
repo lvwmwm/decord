@@ -1,10 +1,10 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 15934
+// Function ID: 15935
 // Name: useOpenChangeAvatarActionSheet
-// Dependencies: [19, 2053, 8648, 15936, 5210, 15937, 2002, 15850, 15850, 8646, 8655, 2]
+// Dependencies: [19, 2053, 8648, 15935, 5210, 15936, 2002, 15849, 15849, 8646, 8655, 2]
 // Exports: default
 
-// Module 15935 (useOpenChangeAvatarActionSheet)
+// Module 15934 (useOpenChangeAvatarActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import react_mod from "react" /* 19 */;
@@ -69,7 +69,7 @@ export default function useOpenChangeAvatarActionSheet(user) {
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
     editAvatarDecoration = undefined;
-    const tmp4 = asyncRequire(15937, dependencyMap.paths);
+    const tmp4 = asyncRequire(15936, dependencyMap.paths);
     if (!isTryItOut) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(isTryItOut[9]);

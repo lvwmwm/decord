@@ -1,16 +1,16 @@
-// Module ID: 18680
-// Function ID: 18681
+// Module ID: 18679
+// Function ID: 18680
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 4823, 6771, 1392, 1087, 21, 4971, 587, 558, 576, 7449, 18681, 504, 1202, 10688, 14316, 5669, 7411, 5707, 9703, 17533, 1499, 18686, 1128, 7167, 2]
+// Dependencies: [19, 17, 4823, 6771, 1392, 1087, 21, 4971, 587, 558, 576, 7449, 18680, 504, 1202, 10688, 14315, 5669, 7411, 5707, 9703, 17532, 1499, 18685, 1128, 7167, 2]
 
-// Module 18680 (LaunchPadUnreadServers)
+// Module 18679 (LaunchPadUnreadServers)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import transitionToChannel from "transitionToChannel" /* 5707 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import transitionToGuild from "transitionToGuild" /* 7449 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 18686 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 18685 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -92,7 +92,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
       }
     }
     const obj3 = { size: 48, borderRadius: 16, guildId, selected, onPress: tmp4, onLongPress: tmp5, backgroundColor: tmp3.maskStrokeStyle.backgroundColor };
-    const tmp9 = closure_10(onGuildSelect(18681), obj3);
+    const tmp9 = closure_10(onGuildSelect(18680), obj3);
     cResult[5] = guildId;
     cResult[6] = tmp5;
     cResult[7] = tmp4;
@@ -119,7 +119,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(18681), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(18680), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);

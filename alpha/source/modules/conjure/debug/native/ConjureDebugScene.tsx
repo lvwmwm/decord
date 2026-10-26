@@ -1,7 +1,7 @@
 // Module ID: 12538
 // Function ID: 12539
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12283, 8901, 504, 10733, 11871, 12539, 7285, 12548, 5663, 5682, 11857, 9146, 12549, 12555, 12557, 2]
+// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12285, 8901, 504, 10733, 11873, 12539, 7285, 12548, 5663, 5682, 11859, 9146, 12549, 12555, 12557, 2]
 
 // Module 12538 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import CopyIcon from "CopyIcon" /* 5682 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import conjureDebugConnection from "conjureDebugConnection" /* 10733 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11871 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11873 */;
 import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

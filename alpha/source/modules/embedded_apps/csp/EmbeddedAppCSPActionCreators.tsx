@@ -26,7 +26,7 @@ let obj = function _fetchEmbeddedAppCSP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ let obj = function _fetchEmbeddedAppCSP() {
             obj.dispatch(obj8);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp21) {
           closure_3 = tmp21;

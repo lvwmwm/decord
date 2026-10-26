@@ -1,9 +1,9 @@
-// Module ID: 17822
-// Function ID: 17823
+// Module ID: 17821
+// Function ID: 17822
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 5026, 1392, 13314, 13315, 17823, 1087, 21, 9743, 4971, 587, 558, 576, 504, 1202, 5909, 1128, 13318, 16671, 6908, 17367, 5052, 5206, 6660, 1267, 17368, 13324, 17824, 6915, 8951, 11154, 17825, 7221, 7095, 9699, 10031, 17393, 6668, 7034, 17392, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 5026, 1392, 13313, 13314, 17822, 1087, 21, 9743, 4971, 587, 558, 576, 504, 1202, 5909, 1128, 13317, 16670, 6908, 17366, 5052, 5206, 6660, 1267, 17367, 13323, 17823, 6915, 8951, 11156, 17824, 7221, 7095, 9699, 10031, 17392, 6668, 7034, 17391, 2]
 
-// Module 17822 (ManageAccountsModal)
+// Module 17821 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import timing from "timing" /* 5206 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
 import HeaderShared from "HeaderShared" /* 9699 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10031 */;
-import MultiAccountStore from "MultiAccountStore" /* 13314 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13318 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 17823 */;
+import MultiAccountStore from "MultiAccountStore" /* 13313 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13317 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 17822 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -22,7 +22,7 @@ import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StreamerModeStore from "StreamerModeStore" /* 5026 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants_mod from "Constants" /* 13315 */;
+import Constants_mod from "Constants" /* 13314 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9743 */;
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(16671).CircleMinusIcon;
+            const CircleMinusIcon = tmp(16670).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -178,7 +178,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -218,7 +218,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
                   obj.removeAccount(tmp.id);
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp10) {
               c2 = 3;
@@ -280,7 +280,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -320,7 +320,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -364,7 +364,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     const PressableOpacity = tmp(6908).PressableOpacity;
     intl = tmp(1128).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(16671).CircleMinusIcon;
+    CircleMinusIcon = tmp(16670).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });

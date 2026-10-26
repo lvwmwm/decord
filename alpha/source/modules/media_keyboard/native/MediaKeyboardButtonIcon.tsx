@@ -1,15 +1,15 @@
-// Module ID: 13135
-// Function ID: 13136
+// Module ID: 13134
+// Function ID: 13135
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [13136, 19, 21, 558, 576, 5161, 5052, 1631, 5206, 5209, 10839, 2]
+// Dependencies: [13135, 19, 21, 558, 576, 5161, 5052, 1631, 5206, 5209, 10841, 2]
 
-// Module 13135 (MediaKeyboardButtonIcon)
+// Module 13134 (MediaKeyboardButtonIcon)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import useKeyboardTypeDefault from "useKeyboardType" /* 5161 */;
 import timing from "timing" /* 5206 */;
 import timingPresets from "timingPresets" /* 5209 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13136 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13135 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
   ({ keyboard: tmp10, KeyboardTypes: require("KeyboardTypes").KeyboardTypes, withTiming: require("timing").withTiming, timingStandard: require("timingPresets").timingStandard });
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   if (cResult[2] !== tmp4) {
-    const PlusLargeIcon = tmp(10839).PlusLargeIcon;
+    const PlusLargeIcon = tmp(10841).PlusLargeIcon;
     const merged = Object.assign(tmp4);
     const tmp17 = <PlusLargeIcon />;
     cResult[2] = tmp4;

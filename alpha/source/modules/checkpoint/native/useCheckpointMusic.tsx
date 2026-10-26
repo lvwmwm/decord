@@ -1,12 +1,12 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 12962
+// Function ID: 12963
 // Name: useCheckpointMusic
-// Dependencies: [19, 17, 12954, 558, 576, 504, 11523, 12964, 2]
+// Dependencies: [19, 17, 12953, 558, 576, 504, 11525, 12963, 2]
 
-// Module 12963 (useCheckpointMusic)
+// Module 12962 (useCheckpointMusic)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12954 */;
+import CheckpointStore from "CheckpointStore" /* 12953 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

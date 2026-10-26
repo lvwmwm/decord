@@ -1,7 +1,7 @@
 // Module ID: 12355
 // Function ID: 12356
 // Name: chat/ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 12344, 4971, 587, 558, 576, 12356, 5025, 11860, 12357, 1128, 3830, 12358, 1202, 5234, 12364, 2]
+// Dependencies: [19, 17, 21, 12343, 4971, 587, 558, 576, 12356, 5025, 11862, 12357, 1128, 3830, 12358, 1202, 5234, 12364, 2]
 
 // Module 12355 (chat/ConjureRepliedMessage)
 import react2 from "react" /* 576 */;
@@ -10,8 +10,8 @@ import native from "native" /* 1202 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import UserUtils from "UserUtils" /* 5025 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11860 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12344 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11862 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12343 */;
 import conjureMessageAuthors from "conjureMessageAuthors" /* 12356 */;
 import conjureMentions from "conjureMentions" /* 12357 */;
 import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12364 */;

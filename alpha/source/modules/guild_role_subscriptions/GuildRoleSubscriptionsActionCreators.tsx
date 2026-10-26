@@ -29,7 +29,7 @@ let obj = function _fetchSubscriptionsSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _fetchSubscriptionsSettings() {
             obj = closure_130_1(closure_130_3[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -90,7 +90,7 @@ obj = function _updateSubscriptionsSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ obj = function _updateSubscriptionsSettings() {
             obj = closure_131_1(closure_131_3[4]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp15) {
           c5 = 3;
@@ -151,7 +151,7 @@ obj = function _fetchAllSubscriptionListingsDataForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -193,7 +193,7 @@ obj = function _fetchAllSubscriptionListingsDataForGuild() {
               benefitChannels = undefined;
               c11 = 1;
               c12 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -289,7 +289,7 @@ obj = function _fetchAllSubscriptionListingsDataForGuild() {
               throw closure_1_9;
             }
             c12 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         }
       }
@@ -314,7 +314,7 @@ obj = function _createSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -376,7 +376,7 @@ obj = function _updateSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -438,7 +438,7 @@ obj = function _deleteSubscriptionGroupListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -497,7 +497,7 @@ obj = function _fetchSubscriptionListingForPlan() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -551,7 +551,7 @@ obj = function _fetchSubscriptionListingForPlan() {
                 closure_2 = closure_2[Symbol.iterator]();
                 if (closure_2 === undefined) {
                   c9 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   c7 = 1;
                   c3 = tmp14;
@@ -604,7 +604,7 @@ obj = function _deleteSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -637,7 +637,7 @@ obj = function _deleteSubscriptionListing() {
             obj = closure_132_1(closure_132_3[4]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           c6 = 3;
@@ -665,7 +665,7 @@ obj = function _archiveSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -699,7 +699,7 @@ obj = function _archiveSubscriptionListing() {
             obj = closure_132_1(closure_132_3[4]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           c6 = 3;
@@ -727,7 +727,7 @@ obj = function _updateSubscriptionTrial() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -761,7 +761,7 @@ obj = function _updateSubscriptionTrial() {
             obj = closure_132_1(closure_132_3[4]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           c6 = 3;
@@ -792,7 +792,7 @@ obj = function _fetchGuildRoleSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -816,7 +816,7 @@ obj = function _fetchGuildRoleSubscriptionGroupListing() {
             tmp = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -876,7 +876,7 @@ obj = function _createSubscriptionListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -901,7 +901,7 @@ obj = function _createSubscriptionListing() {
             id = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -967,96 +967,24 @@ obj = function _createSubscriptionListing() {
   return obj(...arguments);
 };
 obj = function _updateSubscriptionListing() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
     let c3;
+    let c4;
+    let closure_1;
+    let closure_2;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            c2 = undefined;
-            ({ guildId: c0, listingId: c1, groupListingId: c2, data: c3 } = closure_0);
-            value = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const obj7 = closure_130_2(closure_130_3[3]);
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: obj7.updateGuildRoleSubscriptionListing(c0, c2, c1, c3), done: false };
-            return obj6;
-          }
-        } else if (2 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            const obj9 = { type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: value };
-            const obj3 = closure_130_1(closure_130_3[4]);
-            obj3.dispatch(obj9);
-            c3 = 3;
-            c4 = 1;
-            const obj10 = { value: closure_130_17(c0, c2, { includeArchivedListings: true }), done: false };
-            return obj10;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj11 = { value, done: true };
-          return obj11;
-        } else {
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
-        }
-      } catch (tmp25) {
-        c4 = 3;
-        throw tmp25;
-      }
-    }
+    ({ guildId: c0, listingId: c1, groupListingId: c2, data: c3 } = closure_0);
+    await "Reflect";
+    const obj7 = closure_130_2(closure_130_3[3]);
+    const value = await obj7.updateGuildRoleSubscriptionListing(c0, c2, c1, c3);
+    const obj9 = { type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: value };
+    const obj3 = closure_130_1(closure_130_3[4]);
+    obj3.dispatch(obj9);
+    await closure_130_17(c0, c2, { includeArchivedListings: true });
+    return value;
   });
   return obj(...arguments);
 };
@@ -1078,7 +1006,7 @@ obj = function _fetchMonetizationRestrictions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -1106,7 +1034,7 @@ obj = function _fetchMonetizationRestrictions() {
               restrictions = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === c7) {
@@ -1127,7 +1055,7 @@ obj = function _fetchMonetizationRestrictions() {
                     obj6.dispatch(obj8);
                   }
                   c8 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
             } else if (2 === c7) {

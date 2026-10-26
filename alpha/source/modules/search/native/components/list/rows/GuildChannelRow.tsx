@@ -1,9 +1,9 @@
-// Module ID: 18099
-// Function ID: 18100
+// Module ID: 18098
+// Function ID: 18099
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 9714, 21, 4971, 587, 558, 576, 5604, 18100, 5669, 8502, 18102, 18078, 2]
+// Dependencies: [109, 19, 17, 9714, 21, 4971, 587, 558, 576, 5604, 18099, 5669, 8502, 18101, 18077, 2]
 
-// Module 18099 (GuildChannelRow)
+// Module 18098 (GuildChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import useChannelNameDefault from "useChannelName" /* 5604 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
 import SearchConstants from "SearchConstants" /* 9714 */;
-import SearchListRow2 from "SearchListRow" /* 18078 */;
-import renderChannelItem from "renderChannelItem" /* 18102 */;
+import SearchListRow2 from "SearchListRow" /* 18077 */;
+import renderChannelItem from "renderChannelItem" /* 18101 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -22,7 +22,7 @@ import size_mod from "module_2" /* 2 */;
 
 let size;
 let tmp;
-const ChannelContent = tmp(18100);
+const ChannelContent = tmp(18099);
 let closure_3 = ["channel", "subtitle", "trailing", "extras", "onPress", "voiceStates"];
 const View = react_native.View;
 const layout = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
@@ -162,7 +162,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const SearchListRow = tmp(18078).SearchListRow;
+      const SearchListRow = tmp(18077).SearchListRow;
       const merged = Object.assign(tmp15);
       const merged1 = Object.assign(tmp7);
       ({ container: obj7.containerStyle, iconContainer: obj7.iconContainerStyle } = tmp14);

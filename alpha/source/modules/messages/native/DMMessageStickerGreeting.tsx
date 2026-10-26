@@ -1,9 +1,9 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13156
+// Function ID: 13157
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6766, 6010, 1392, 21, 4971, 587, 5144, 558, 576, 5252, 4968, 5663, 13158, 7566, 1128, 1103, 504, 5025, 13159, 10155, 5052, 5206, 1202, 10154, 5258, 6908, 10170, 5234, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 6766, 6010, 1392, 21, 4971, 587, 5144, 558, 576, 5252, 4968, 5663, 13157, 7566, 1128, 1103, 504, 5025, 13158, 10155, 5052, 5206, 1202, 10154, 5258, 6908, 10170, 5234, 5244, 2]
 
-// Module 13157 (DMMessageStickerGreeting)
+// Module 13156 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -191,7 +191,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
                 c4(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: closure_0.id, source: "In-channel greet" };
@@ -262,7 +262,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
           c4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -309,7 +309,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -341,7 +341,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: id.id, source: "In-channel greet" };
@@ -378,7 +378,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -465,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(13159);
+  const tmpResult7 = tmp(13158);
   const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [StickersStore];
@@ -626,7 +626,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1128).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13159);
+  const tmpResult = tmp(13158);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];

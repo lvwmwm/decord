@@ -1,18 +1,18 @@
-// Module ID: 10944
-// Function ID: 10945
+// Module ID: 10946
+// Function ID: 10947
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10693, 1087, 21, 4971, 587, 558, 576, 10945, 1128, 5234, 10950, 7485, 6672, 8115, 1202, 1633, 573, 10937, 6468, 6473, 7095, 2]
+// Dependencies: [19, 17, 10693, 1087, 21, 4971, 587, 558, 576, 10947, 1128, 5234, 10952, 7485, 6672, 8115, 1202, 1633, 573, 10939, 6468, 6473, 7095, 2]
 
-// Module 10944 (MoreTipsModal)
+// Module 10946 (MoreTipsModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10937 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10945 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10950 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10939 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10947 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10952 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;

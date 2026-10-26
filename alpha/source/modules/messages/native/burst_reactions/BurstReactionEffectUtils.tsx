@@ -39,7 +39,7 @@ let obj = function _generateAnimationSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c9;
@@ -233,7 +233,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -397,7 +397,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -432,7 +432,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
             closure_1_4(closure_0);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp17) {
           c3 = 3;
           throw tmp17;
@@ -476,7 +476,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -512,7 +512,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
               closure_1_4(closure_0);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp17) {
             c3 = 3;
             throw tmp17;
@@ -560,7 +560,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -593,7 +593,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
             animationSource = value;
             c2(animationSource);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -635,7 +635,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -668,7 +668,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
               animationSource = value;
               c2(animationSource);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp13) {
             c3 = 3;

@@ -1,17 +1,17 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 17722
+// Function ID: 17723
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17724, 7732, 4823, 17631, 12906, 558, 576, 17726, 504, 9083, 13854, 12917, 9079, 9067, 2]
+// Dependencies: [19, 17723, 7732, 4823, 17630, 12905, 558, 576, 17725, 504, 9083, 13853, 12916, 9079, 9067, 2]
 // Exports: default
 
-// Module 17723 (useFavoritesGuildSuggestionCandidates)
+// Module 17722 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9079 */;
-import ShareConstants from "ShareConstants" /* 12906 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17631 */;
+import ShareConstants from "ShareConstants" /* 12905 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17630 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17724 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17723 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

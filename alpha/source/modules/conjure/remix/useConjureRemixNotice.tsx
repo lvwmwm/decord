@@ -1,9 +1,9 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12306
+// Function ID: 12307
 // Name: useConjureRemixNotice
 // Dependencies: [19, 10715, 558, 576, 504, 10808, 1128, 3830, 2]
 
-// Module 12304 (useConjureRemixNotice)
+// Module 12306 (useConjureRemixNotice)
 import _modDef3830 from "module_3830" /* 3830 */;
 import conjureRemixConnection from "conjureRemixConnection" /* 10808 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12289
+// Function ID: 12290
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6773, 21, 9483, 8572, 6774, 11797, 12288, 12290, 10951, 4971, 587, 5663, 558, 576, 11874, 12253, 504, 12292, 8577, 1128, 3830, 5210, 11811, 11854, 7008, 7180, 5234, 6883, 11838, 5244, 7298, 5604, 2]
+// Dependencies: [5, 19, 17, 6773, 21, 9483, 8572, 6774, 11799, 12290, 12292, 10953, 4971, 587, 5663, 558, 576, 11876, 12255, 504, 12294, 8577, 1128, 3830, 5210, 11813, 11856, 7008, 7180, 5234, 6883, 11840, 5244, 7298, 5604, 2]
 // Exports: default
 
-// Module 12287 (ConjurePublishSheet)
+// Module 12289 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,12 +14,12 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8572 */;
 import ScreenIcon from "ScreenIcon" /* 9483 */;
-import ShieldIcon from "ShieldIcon" /* 10951 */;
-import RobotIcon from "RobotIcon" /* 11797 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11874 */;
-import useConjureNativePublishOptionsDefault from "useConjureNativePublishOptions" /* 12253 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12288 */;
-import BadgeIcon from "BadgeIcon" /* 12290 */;
+import ShieldIcon from "ShieldIcon" /* 10953 */;
+import RobotIcon from "RobotIcon" /* 11799 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11876 */;
+import useConjureNativePublishOptionsDefault from "useConjureNativePublishOptions" /* 12255 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12290 */;
+import BadgeIcon from "BadgeIcon" /* 12292 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
@@ -186,7 +186,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   ({ project, publish } = entryPoint);
   entryPoint = entryPoint.entryPoint;
   const tmp4 = closure_13();
-  const tmp6 = entryPoint(12292)(project, publish);
+  const tmp6 = entryPoint(12294)(project, publish);
   dependencyMap = tmp6;
   ({ initial, editable, identity, sharing } = tmp6);
   if (cResult[0] === initial) {
@@ -333,7 +333,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                                         }
                                         tmp52[0] = tmp4.onlyMeIcon;
                                         const obj7 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-                                        const UserIcon = tmp(11838).UserIcon;
+                                        const UserIcon = tmp(11840).UserIcon;
                                         tmp52[1] = closure_6(UserIcon, obj7);
                                         tmp50Result = tmp50(tmp49, tmp52);
                                       }
@@ -500,7 +500,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                   obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
                 }
               };
-              tmp13Result = tmp13(tmp(11811).ConjureAppIconTile, tmp16);
+              tmp13Result = tmp13(tmp(11813).ConjureAppIconTile, tmp16);
             } else {
               class V {
                 constructor(arg0) {
@@ -511,7 +511,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                 }
               }
               tmp14[0] = project;
-              tmp13Result = tmp13(tmp5(11854), tmp14);
+              tmp13Result = tmp13(tmp5(11856), tmp14);
             }
             cResult[10] = editable;
             cResult[11] = identity;
@@ -531,7 +531,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             let c2;
@@ -557,7 +557,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                 const intl = tmp(closure_2_2[22]).intl;
                 showCriticalToast(intl.string(entryPoint(closure_2_2[23]).Fi7boI));
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else if (arg0 === 1) {
                 c3 = 3;
                 throw value;
@@ -573,10 +573,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                   obj.hideActionSheet(ConjurePublishSheet_str);
                   tmp.run(c1);
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
             } catch (tmp21) {
@@ -704,7 +704,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c2;
@@ -730,7 +730,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
             const intl = tmp(c2[22]).intl;
             closure_1_14(intl.string(c1(c2[23]).Fi7boI));
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -746,10 +746,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
               obj.hideActionSheet(closure_1_9);
               closure_128_0.run(closure_128_1);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           }
         } catch (tmp21) {
@@ -766,7 +766,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12292)(project, publish);
+  const tmp4 = entryPoint(12294)(project, publish);
   dependencyMap = tmp4;
   ({ editable, identity, sharing } = tmp4);
   if (tmp4.initial) {
@@ -809,10 +809,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           }
         }
     };
-    tmp6Result = tmp6(tmp7(11811).ConjureAppIconTile, obj3);
+    tmp6Result = tmp6(tmp7(11813).ConjureAppIconTile, obj3);
   } else {
     let obj4 = { project, size: "card" };
-    tmp6Result = tmp6(tmp2(11854), obj4);
+    tmp6Result = tmp6(tmp2(11856), obj4);
   }
   items1 = [tmp6Result, , , , , ];
   if (editable) {
@@ -873,7 +873,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
     } else {
       const obj18 = { style: tmp.onlyMeIcon, children: closure_6(UserIcon, obj19) };
       obj19 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-      UserIcon = tmp7(11838).UserIcon;
+      UserIcon = tmp7(11840).UserIcon;
       tmp6Result6 = tmp6(tmp9, obj18);
     }
     items5 = [tmp6Result6, ];

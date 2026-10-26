@@ -81,7 +81,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -132,7 +132,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -262,7 +262,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -380,7 +380,7 @@ function useTooltipHelper(ref, arg1, arg2) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -431,7 +431,7 @@ function useTooltipHelper(ref, arg1, arg2) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

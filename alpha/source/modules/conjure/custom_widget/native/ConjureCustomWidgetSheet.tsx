@@ -1,10 +1,10 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14377
+// Function ID: 14378
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10698, 1087, 4830, 21, 4971, 587, 7345, 1128, 3830, 1114, 5210, 10720, 14377, 10724, 7298, 7248, 7180, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 10698, 1087, 4830, 21, 4971, 587, 7345, 1128, 3830, 1114, 5210, 10720, 14376, 10724, 7298, 7248, 7180, 5244, 2]
 // Exports: default
 
-// Module 14378 (ConjureCustomWidgetSheet)
+// Module 14377 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -86,7 +86,7 @@ export default function ConjureCustomWidgetSheet() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -151,7 +151,7 @@ export default function ConjureCustomWidgetSheet() {
               closure_129_4.current = false;
               closure_129_3(false);
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               let obj3 = value(dependencyMap[17]);
               closure_129_2(obj3.getConjureCreateErrorMessage(_asyncToGenerator));
@@ -179,7 +179,7 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp66) {
         dependencyMap = tmp66;
         if (0 === c3) {
@@ -199,7 +199,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7248).BottomSheetTitleHeader;
   intl = value(1128).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3830["09BSx3"]), placeholder: intl3.string(_modDef3830.K7zdCZ), description: intl4.string(_modDef3830.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14377).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef3830["09BSx3"]), placeholder: intl3.string(_modDef3830.K7zdCZ), description: intl4.string(_modDef3830.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14376).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7180).TextArea;
   intl2 = value(1128).intl;
   intl3 = value(1128).intl;

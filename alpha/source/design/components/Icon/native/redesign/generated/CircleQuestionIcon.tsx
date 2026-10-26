@@ -1,15 +1,15 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 13963
+// Function ID: 13964
 // Name: CircleQuestionIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 13965, 5668, 13966, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 13964, 5668, 13965, 2]
 
-// Module 13964 (CircleQuestionIcon)
+// Module 13963 (CircleQuestionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage3 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 13965 */;
-import AssetRegistry2 from "AssetRegistry" /* 13966 */;
+import AssetRegistry from "AssetRegistry" /* 13964 */;
+import AssetRegistry2 from "AssetRegistry" /* 13965 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

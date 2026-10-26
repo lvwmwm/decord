@@ -1,10 +1,10 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15092
+// Function ID: 15093
 // Name: handleSupportedURL
-// Dependencies: [32, 109, 5, 6859, 6784, 7533, 14707, 502, 1087, 4830, 6643, 7868, 10745, 7646, 5698, 15094, 8332, 13580, 6672, 5151, 15095, 8668, 7490, 11119, 9342, 12737, 1896, 11034, 1267, 11036, 7348, 10069, 12877, 15102, 13613, 10749, 2002, 10746, 10744, 15104, 15106, 1630, 7885, 15116, 5660, 15118, 4845, 7449, 8888, 8883, 7429, 7866, 11650, 5150, 6722, 1114, 584, 7274, 1386, 9005, 15121, 15136, 1384, 15146, 9050, 12869, 15154, 6463, 15155, 7649, 7278, 9200, 15232, 7792, 6715, 9567, 14134, 6716, 10446, 15233, 6697, 10768, 15234, 9245, 9251, 7345, 13527, 5693, 2]
+// Dependencies: [32, 109, 5, 6859, 6784, 7533, 14706, 502, 1087, 4830, 6643, 7868, 10745, 7646, 5698, 15093, 8332, 13579, 6672, 5151, 15094, 8668, 7490, 11121, 9342, 12737, 1896, 11036, 1267, 11038, 7348, 10069, 12876, 15101, 13612, 10749, 2002, 10746, 10744, 15103, 15105, 1630, 7885, 15115, 5660, 15117, 4845, 7449, 8888, 8883, 7429, 7866, 11652, 5150, 6722, 1114, 584, 7274, 1386, 9005, 15120, 15135, 1384, 15145, 9050, 12868, 15153, 6463, 15154, 7649, 7278, 9200, 15231, 7792, 6715, 9567, 14133, 6716, 10446, 15232, 6697, 10768, 15233, 9245, 9251, 7345, 13526, 5693, 2]
 // Exports: default
 
-// Module 15093 (handleSupportedURL)
+// Module 15092 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -36,16 +36,16 @@ import ApplicationUtils from "ApplicationUtils" /* 10744 */;
 import Constants3 from "Constants" /* 10745 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 10768 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12737 */;
-import BountyActionCreators from "BountyActionCreators" /* 14134 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15094 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15102 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15136 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15232 */;
+import BountyActionCreators from "BountyActionCreators" /* 14133 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15093 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15101 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15135 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15231 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14707 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14706 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -61,8 +61,8 @@ let map1;
 let tmp;
 let tmp3;
 const authorizeCallbackDefault = tmp(10746);
-const FamilyCenterNativeUtils = tmp3(12877);
-const CreateGuildModalActionCreatorsDefault = tmp(13613);
+const FamilyCenterNativeUtils = tmp3(12876);
+const CreateGuildModalActionCreatorsDefault = tmp(13612);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_10 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -355,7 +355,7 @@ export default function handleSupportedURL(payload) {
           remoteAuthFingerprint(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15106, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15105, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -416,7 +416,7 @@ export default function handleSupportedURL(payload) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -484,7 +484,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj3.openGuildEventDetails(obj10);
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp34) {
                 c4 = 3;
@@ -515,7 +515,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -561,7 +561,7 @@ export default function handleSupportedURL(payload) {
                   obj4.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } catch (tmp36) {
                 c2 = 3;
                 throw tmp36;
@@ -626,7 +626,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -725,7 +725,7 @@ export default function handleSupportedURL(payload) {
                   }
                 }
                 c8 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } catch (tmp29) {
                 c8 = 3;
                 throw tmp29;
@@ -810,7 +810,7 @@ export default function handleSupportedURL(payload) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+352" };
                     }
                   } else {
                     try {
@@ -859,7 +859,7 @@ export default function handleSupportedURL(payload) {
                         }
                       }
                       inviteCode = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+352" };
                     } catch (tmp15) {
                       inviteCode = 3;
                       throw tmp15;
@@ -1099,7 +1099,7 @@ export default function handleSupportedURL(payload) {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+352" };
                       }
                     } else {
                       try {
@@ -1149,7 +1149,7 @@ export default function handleSupportedURL(payload) {
                             openConjureProject(closure_4, closure_130_12);
                           }
                           c4 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+352" };
                         }
                       } catch (tmp16) {
                         c4 = 3;

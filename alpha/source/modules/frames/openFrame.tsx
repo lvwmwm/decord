@@ -1,10 +1,10 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11398
+// Function ID: 11399
 // Name: openFrame
 // Dependencies: [6775, 6776, 1087, 10767, 5626, 1114, 2]
 // Exports: default, shouldOpenAppChannel
 
-// Module 11396 (openFrame)
+// Module 11398 (openFrame)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;

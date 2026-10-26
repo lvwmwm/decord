@@ -1,7 +1,7 @@
 // Module ID: 12358
 // Function ID: 12359
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4971, 587, 12344, 558, 576, 12359, 5234, 6908, 1128, 12356, 5025, 12360, 3830, 1202, 5669, 12363, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 12343, 558, 576, 12359, 5234, 6908, 1128, 12356, 5025, 12360, 3830, 1202, 5669, 12363, 2]
 
 // Module 12358 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12344 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12343 */;
 import ConjureMessageTime from "ConjureMessageTime" /* 12359 */;
 import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12360 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12363 */;
@@ -323,7 +323,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
       cResult[8] = tmp15;
       tmp13 = tmp15;
     }
-    const obj3 = { size, user: messageAuthorUser, guildId: "r" };
+    const obj3 = { size, user: messageAuthorUser, guildId: "Array" };
     const tmp12 = closure_5(tmp(1202).Avatar, obj3);
     cResult[3] = size;
     cResult[4] = messageAuthorUser;
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1128).t.iXAna6), children: closure_5(messageAuthorUser(1202).Avatar, obj3) };
     const PressableOpacity = tmp3(6908).PressableOpacity;
     intl = tmp3(1128).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

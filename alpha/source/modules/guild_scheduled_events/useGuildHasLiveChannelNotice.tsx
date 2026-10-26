@@ -1,9 +1,9 @@
-// Module ID: 17613
-// Function ID: 17614
+// Module ID: 17612
+// Function ID: 17613
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6641, 4828, 6642, 4823, 4903, 5717, 17614, 4829, 1098, 558, 576, 17615, 504, 9022, 17616, 6694, 6688, 2]
+// Dependencies: [19, 6641, 4828, 6642, 4823, 4903, 5717, 17613, 4829, 1098, 558, 576, 17614, 504, 9022, 17615, 6694, 6688, 2]
 
-// Module 17613 (useGuildHasLiveChannelNotice)
+// Module 17612 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1098 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6688 */;
@@ -14,7 +14,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17614 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17613 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -247,7 +247,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildLi
   let tmp2 = dependencyMap;
   const obj = activeEventOrStageInstanceChannel(576);
   const cResult = obj.c(29);
-  const obj2 = activeEventOrStageInstanceChannel(17616);
+  const obj2 = activeEventOrStageInstanceChannel(17615);
   activeEventOrStageInstanceChannel = obj2.useActiveEventOrStageInstanceChannel(arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];

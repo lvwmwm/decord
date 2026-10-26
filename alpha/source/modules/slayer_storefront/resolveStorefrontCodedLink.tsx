@@ -1,10 +1,10 @@
-// Module ID: 18869
-// Function ID: 18870
+// Module ID: 18868
+// Function ID: 18869
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6824, 18861, 11227, 5703, 584, 18870, 10556, 2]
+// Dependencies: [32, 5, 6824, 18860, 11229, 5703, 584, 18869, 10556, 2]
 // Exports: default
 
-// Module 18869 (resolveStorefrontCodedLink)
+// Module 18868 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SKUStore from "SKUStore" /* 6824 */;
@@ -19,7 +19,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(11227);
+  let obj = obj3(11229);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
     if (arg0 === tmp(5703).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
@@ -36,7 +36,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult = tmp(11227);
+        const tmpResult = tmp(11229);
         const storefrontCodedLink = tmpResult.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -52,7 +52,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -100,7 +100,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   return obj;
                 }
                 obj3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp8) {
               obj3 = 3;
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult2 = tmp(18861);
+          const tmpResult2 = tmp(18860);
           const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;
@@ -123,7 +123,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               let c3;
@@ -162,7 +162,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   c3 = 0;
                   set.delete(closure_128_0);
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp20) {
                 closure_2 = tmp20;

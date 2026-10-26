@@ -1,16 +1,16 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16771
+// Function ID: 16772
 // Name: SyncProfileColorsSetting
-// Dependencies: [4972, 8332, 558, 576, 504, 11206, 1128, 15687, 2]
+// Dependencies: [4972, 8332, 558, 576, 504, 11208, 1128, 15686, 2]
 
-// Module 16772 (SyncProfileColorsSetting)
+// Module 16771 (SyncProfileColorsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15687 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15686 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11206 */;
+import SettingBuilders from "SettingBuilders" /* 11208 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
