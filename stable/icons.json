@@ -13,13 +13,6 @@
         "width": 24,
         "height": 24
     },
-    "ActivitiesIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/ActivitiesIcon.png",
-        "hash": "04284dcfb33cab4ac93ceefb6696c6d5",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "add": {
         "file": "app/modules/video_calls/native/images/add.png",
         "hash": "db76c9ef21a10a502ae95ae16e345521",
@@ -659,21 +652,28 @@
     },
     "BoostGemIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemIcon.png",
-        "hash": "30bd17a4fc8d423d981d2ea586a3ca6e",
+        "hash": "a55e771de04b13c26603a57cb2527fa8",
         "scales": [],
         "width": 24,
         "height": 24
     },
     "BoostGemOutlineIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemOutlineIcon.png",
-        "hash": "c3befb4dec1b6486d35bd86d8fd2910e",
+        "hash": "c993344d8197e11d62f0d0a7ef753412",
         "scales": [],
         "width": 24,
         "height": 24
     },
-    "BoostGemSlashIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon.png",
-        "hash": "de8b19411fa51d311a8da8e41361a538",
+    "BoostGemSlashIcon-primary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon-primary.png",
+        "hash": "7dbd1713c87c4ae784d40f25fd6578fe",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "BoostGemSlashIcon-secondary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/BoostGemSlashIcon-secondary.png",
+        "hash": "c7028bf08d8a5f5ffcf7b1260c0b4766",
         "scales": [],
         "width": 24,
         "height": 24
@@ -1346,6 +1346,13 @@
     "close": {
         "file": "app/modules/voice_panel/native/images/close.png",
         "hash": "87af1eac5f6e8ada6427505502b6d55f",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ClosedCaptionsIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ClosedCaptionsIcon.png",
+        "hash": "67084cd4f72fc46263204ba0954f5f2f",
         "scales": [],
         "width": 24,
         "height": 24
@@ -2697,6 +2704,13 @@
     "GoogleNeutralIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/GoogleNeutralIcon.png",
         "hash": "f6beefc7c46ba35914164c9b6ddbe0f6",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "GooglePlayNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/GooglePlayNeutralIcon.png",
+        "hash": "ee2c0e9df1cdb55262b28d0f27383b12",
         "scales": [],
         "width": 24,
         "height": 24
@@ -8933,7 +8947,7 @@
     },
     "UserPlatformIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/UserPlatformIcon.png",
-        "hash": "021d4551cb2e4d8e923e934b6403ea10",
+        "hash": "cc60adc9d34b42157ecab0277b6b238d",
         "scales": [],
         "width": 24,
         "height": 24
@@ -9197,16 +9211,16 @@
         "width": 60,
         "height": 60
     },
-    "WidgetsIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/WidgetsIcon.png",
-        "hash": "07694532fe5b5d77fc59f6774ff08cb4",
+    "WindowLaunchIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
+        "hash": "6fc18e0c40f0ce37259a8a45cc634c66",
         "scales": [],
         "width": 24,
         "height": 24
     },
-    "WindowLaunchIcon": {
-        "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
-        "hash": "6fc18e0c40f0ce37259a8a45cc634c66",
+    "WindowTopIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WindowTopIcon.png",
+        "hash": "0cbf6a63eb42fee45267174e07a266f8",
         "scales": [],
         "width": 24,
         "height": 24
