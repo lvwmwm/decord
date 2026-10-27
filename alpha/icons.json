@@ -2239,6 +2239,13 @@
         "width": 216,
         "height": 216
     },
+    "ExperimentalCheckpointIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalCheckpointIcon.png",
+        "hash": "e2f35893f933ba61ccefbd78592b084f",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ExperimentalCommonIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalCommonIcon.png",
         "hash": "eb549ee942b74daf232ce014560f92c6",
@@ -4908,14 +4915,14 @@
     },
     "img_account_sync_letterboxd_dark": {
         "file": "app/images/platforms/img_account_sync_letterboxd_dark.png",
-        "hash": "94e785783bdc5358633f0ac49f888e99",
+        "hash": "59966e5b844184ad532c25b89628277b",
         "scales": [],
         "width": 500,
         "height": 500
     },
     "img_account_sync_letterboxd_light": {
         "file": "app/images/platforms/img_account_sync_letterboxd_light.png",
-        "hash": "59966e5b844184ad532c25b89628277b",
+        "hash": "94e785783bdc5358633f0ac49f888e99",
         "scales": [],
         "width": 500,
         "height": 500
@@ -7478,6 +7485,13 @@
     "PinIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/PinIcon.png",
         "hash": "cc9053b1cd7f0215ee3d9ba69e2b389a",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "PinUprightSlashIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/PinUprightSlashIcon.png",
+        "hash": "cad1976e6067251c70a97ab450e89981",
         "scales": [],
         "width": 24,
         "height": 24
