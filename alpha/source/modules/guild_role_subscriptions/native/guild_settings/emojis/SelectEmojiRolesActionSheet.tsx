@@ -1,14 +1,14 @@
-// Module ID: 19324
-// Function ID: 19325
+// Module ID: 19334
+// Function ID: 19335
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1206, 21, 4971, 587, 558, 576, 16568, 8951, 5234, 1128, 6908, 7248, 7167, 7298, 2]
+// Dependencies: [32, 19, 17, 1206, 21, 4971, 587, 558, 576, 16569, 8951, 5234, 1128, 6908, 7248, 7167, 7298, 2]
 
-// Module 19324 (SelectEmojiRolesActionSheet)
+// Module 19334 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import Pressables from "Pressables" /* 6908 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16568 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16569 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmojiR
   } else {
     tmp13 = cResult[2];
   }
-  const tmpResult = tmp(16568);
+  const tmpResult = tmp(16569);
   const subscriptionListingsForGuild = tmpResult.useSubscriptionListingsForGuild(guildId, tmp13);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     function toggleRole(arg0) {

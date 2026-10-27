@@ -4,4 +4,4 @@
 
 // Module 12580
 
-export const SDK_VERSION = "8.55.0";
+export const DEBUG_BUILD = typeof globalThis.__SENTRY_DEBUG__ === "undefined" || globalThis.__SENTRY_DEBUG__;

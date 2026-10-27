@@ -1,9 +1,9 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17734
+// Function ID: 17735
 // Name: GuildsBarDnDStore
 // Dependencies: [6701, 1269, 5052, 1274, 1257, 558, 576, 4886, 2]
 
-// Module 17733 (GuildsBarDnDStore)
+// Module 17734 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native from "react-native" /* 1274 */;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "application" };
+          const obj = { dropSpecs, dragSpecs: "r", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -110,7 +110,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

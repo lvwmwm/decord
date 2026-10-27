@@ -1,21 +1,21 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16149
+// Function ID: 16150
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6670, 8332, 1087, 558, 16108, 576, 504, 5908, 1128, 5978, 16146, 16147, 11208, 2]
+// Dependencies: [6670, 8332, 1087, 558, 16109, 576, 504, 5908, 1128, 5978, 16147, 16148, 11209, 2]
 
-// Module 16148 (UseDataToCustomizeDiscordSetting)
+// Module 16149 (UseDataToCustomizeDiscordSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
 import AlertDefault from "Alert" /* 5978 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16108 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16146 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16147 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16109 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16147 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16148 */;
 import ConsentStore from "ConsentStore" /* 6670 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11209 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

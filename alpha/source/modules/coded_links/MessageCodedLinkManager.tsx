@@ -1,12 +1,12 @@
-// Module ID: 18859
-// Function ID: 18860
+// Module ID: 18869
+// Function ID: 18870
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7567, 4823, 5700, 1098, 5699, 5703, 18860, 8866, 7425, 11289, 18867, 12734, 18868, 12050, 7214, 18871, 2]
+// Dependencies: [5, 7567, 4823, 5700, 1098, 5699, 5703, 18870, 8866, 7425, 11290, 18877, 12737, 18878, 11941, 7214, 18881, 2]
 
-// Module 18859 (MessageCodedLinkManager)
+// Module 18869 (MessageCodedLinkManager)
 import Constants from "Constants" /* 1098 */;
 import findCodedLinksDefault from "findCodedLinks" /* 5699 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18871 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 7567 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -20,7 +20,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f138104 = (item) => {
+  const f138194 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -39,7 +39,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -93,7 +93,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -125,7 +125,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -166,7 +166,7 @@ function resolveMessageCodedLinks(content) {
                                                 const obj2 = { value, done: true };
                                                 return obj2;
                                               } else {
-                                                return { value: "IconComponent", done: "+352" };
+                                                return { value: "IconComponent", done: null };
                                               }
                                             } else {
                                               try {
@@ -198,7 +198,7 @@ function resolveMessageCodedLinks(content) {
                                                   const promise = c1(c2[12])(closure_128_0);
                                                   promise.catch(closure_1_6);
                                                   c2 = 3;
-                                                  return { value: "IconComponent", done: "+352" };
+                                                  return { value: "IconComponent", done: null };
                                                 }
                                               } catch (tmp13) {
                                                 c2 = 3;
@@ -253,7 +253,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f138104);
+    let item = arr.forEach(f138194);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -264,7 +264,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f138104);
+        const item = arr.forEach(f138194);
       }
     });
   }

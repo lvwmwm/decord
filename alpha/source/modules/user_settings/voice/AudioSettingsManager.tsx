@@ -1,17 +1,17 @@
-// Module ID: 18752
-// Function ID: 18753
+// Module ID: 18762
+// Function ID: 18763
 // Name: AudioSettingsManager
-// Dependencies: [32, 5715, 6006, 502, 2014, 5718, 5858, 11, 1211, 510, 4804, 5857, 12, 15373, 11652, 7214, 2]
+// Dependencies: [32, 5715, 6006, 502, 2014, 5718, 5858, 11, 1211, 510, 4804, 5857, 12, 15374, 11653, 7214, 2]
 
-// Module 18752 (AudioSettingsManager)
+// Module 18762 (AudioSettingsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Storage2 from "Storage" /* 510 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
 import Constants from "Constants" /* 5718 */;
 import AudioSettingsUtils from "AudioSettingsUtils" /* 5857 */;
 import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 5858 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11652 */;
-import AudioSettingsPending from "AudioSettingsPending" /* 15373 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11653 */;
+import AudioSettingsPending from "AudioSettingsPending" /* 15374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameConsoleStore from "GameConsoleStore" /* 5715 */;
 import SoundboardStore from "SoundboardStore" /* 6006 */;
@@ -21,7 +21,7 @@ import module_12_mod from "module_12" /* 12 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
-const f137800 = async (arg0) => {
+const f137890 = async (arg0) => {
   let closure_0 = arg0;
   let closure_1 = false;
   let obj = closure_0(closure_2[13]);
@@ -210,7 +210,7 @@ function handleSetLocalMute(arg0) {
     const result = obj.updatePendingSettings(context, userId, obj2);
     closure_12.cancel();
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137800, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137890, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function handleSetLocalSoundboardMute(userId) {
@@ -223,7 +223,7 @@ function handleSetLocalSoundboardMute(userId) {
     const result1 = obj.updatePendingSettings(context, userId, obj2);
     closure_12.cancel();
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137800, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+    PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137890, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function handleResetMediaEngineSettings(arg0) {
@@ -253,7 +253,7 @@ function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
 let module_12 = module_12_mod;
 let closure_12 = module_12.debounce(() => {
   const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
-  PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137800, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+  PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", f137890, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }, 2000);
 module_12 = module_12_mod;
 let closure_13 = module_12.debounce(GameConsoleActionCreators.remoteAudioSettingsUpdate, 500, { maxWait: 500 });

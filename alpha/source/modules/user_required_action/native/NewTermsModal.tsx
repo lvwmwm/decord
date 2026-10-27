@@ -1,9 +1,9 @@
-// Module ID: 18979
-// Function ID: 18980
+// Module ID: 18989
+// Function ID: 18990
 // Name: NewTermsModal
 // Dependencies: [5, 32, 19, 17, 4817, 1087, 21, 4971, 587, 7290, 1128, 6668, 558, 576, 1633, 6930, 5972, 8670, 1275, 9361, 5234, 5244, 9041, 9032, 2]
 
-// Module 18979 (NewTermsModal)
+// Module 18989 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -129,7 +129,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
             tmp = value;
             tmp4(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c3 = 3;
@@ -504,7 +504,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -538,7 +538,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
           tmp = value;
           closure_129_1(tmp);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = 3;

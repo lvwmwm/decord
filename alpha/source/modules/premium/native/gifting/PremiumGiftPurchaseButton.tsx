@@ -1,9 +1,9 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13913
+// Function ID: 13914
 // Name: PremiumGiftPurchaseButton
-// Dependencies: [19, 17, 8681, 9520, 1087, 21, 4971, 587, 558, 576, 5593, 1505, 10450, 13912, 10495, 504, 10508, 10496, 8673, 10448, 10447, 5159, 11051, 1128, 10509, 10512, 2600, 10120, 10514, 10502, 7278, 5234, 2067, 5244, 2]
+// Dependencies: [19, 17, 8681, 9520, 1087, 21, 4971, 587, 558, 576, 5593, 1505, 10450, 13914, 10495, 504, 10508, 10496, 8673, 10448, 10447, 5159, 11052, 1128, 10509, 10512, 2600, 10120, 10514, 10502, 7278, 5234, 2067, 5244, 2]
 
-// Module 13911 (PremiumGiftPurchaseButton)
+// Module 13913 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChatInputUtils from "ChatInputUtils" /* 5159 */;
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   const selectedGiftingPromotionReward = nativeGiftContext.selectedGiftingPromotionReward;
   const setSelectedGiftingPromotionReward = nativeGiftContext.setSelectedGiftingPromotionReward;
   ({ setCurrentAnalyticsStep: c7, productId } = nativeGiftContext);
-  const obj3 = defaultSelection(13912);
+  const obj3 = defaultSelection(13914);
   const canPurchaseIAP = obj3.useCanPurchaseIAP(productId);
   let items = [c7];
   const obj4 = defaultSelection(504);
@@ -361,7 +361,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       setSelectedGiftingPromotionReward(claimableRewards[0]);
     }
   }, items2);
-  const tmp4Result4 = tmp4(11051);
+  const tmp4Result4 = tmp4(11052);
   const product = tmp4Result4.useFetchCollectiblesProduct(selectedGiftingPromotionReward).product;
   const tmp14 = null != product && product.items.length > 0;
   const intl = tmp4(1128).intl;

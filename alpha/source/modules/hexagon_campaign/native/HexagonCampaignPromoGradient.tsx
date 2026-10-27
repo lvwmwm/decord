@@ -1,13 +1,13 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15875
+// Function ID: 15876
 // Name: HexagonCampaignPromoGradient
-// Dependencies: [32, 19, 17, 21, 15875, 4971, 587, 558, 576, 5252, 5258, 2]
+// Dependencies: [32, 19, 17, 21, 15876, 4971, 587, 558, 576, 5252, 5258, 2]
 
-// Module 15874 (HexagonCampaignPromoGradient)
+// Module 15875 (HexagonCampaignPromoGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5252 */;
-import hexagon_campaign_HexagonCampaignPromoGradient from "hexagon_campaign/HexagonCampaignPromoGradient" /* 15875 */;
+import hexagon_campaign_HexagonCampaignPromoGradient from "hexagon_campaign/HexagonCampaignPromoGradient" /* 15876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17226
+// Function ID: 17227
 // Name: useCardLayout
 // Dependencies: [9357, 558, 576, 1499, 2]
 
-// Module 17225 (useCardLayout)
+// Module 17226 (useCardLayout)
 import react from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9357 */;
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
   if (num < 2) {
     let tmp31;
     if (cResult[0] !== num) {
-      const obj2 = { columns: num, cardWidth: "Array", rowWidth: "application" };
+      const obj2 = { columns: num, cardWidth: "r", rowWidth: "toCharArray$esjava$1" };
       cResult[0] = num;
       cResult[1] = obj2;
       tmp31 = obj2;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
             let tmp30;
             const _Symbol = Symbol;
             if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
+              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "emoji" };
               cResult[6] = obj3;
               tmp30 = obj3;
             } else {
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "Array", rowWidth: "application" };
+    return { columns: num, cardWidth: "r", rowWidth: "toCharArray$esjava$1" };
   } else {
     let bound;
     let num2 = 2;
@@ -188,7 +188,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     if (result3 + (bound + tmp10(9357).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       let obj;
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "emoji" };
       }
       return obj;
     }

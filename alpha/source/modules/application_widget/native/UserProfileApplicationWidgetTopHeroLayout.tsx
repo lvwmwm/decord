@@ -1,9 +1,9 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11797
+// Function ID: 11798
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1087, 7304, 21, 4971, 587, 558, 576, 11909, 8732, 11995, 11996, 6966, 5258, 5669, 2]
+// Dependencies: [32, 19, 17, 1087, 7304, 21, 4971, 587, 558, 576, 11798, 8732, 11884, 11885, 6966, 5258, 5669, 2]
 
-// Module 11908 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 11797 (UserProfileApplicationWidgetTopHeroLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import FastImageDefault from "FastImage" /* 5669 */;
 import _modDef6966 from "module_6966" /* 6966 */;
 import Constants2 from "Constants" /* 7304 */;
 import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8732 */;
-import _mod11909 from "module_11909" /* 11909 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11995 */;
+import _mod11798 from "module_11798" /* 11798 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                             let tmp36 = null == tmp16 || null == tmp6;
                             if (tmp36) {
                               const obj17 = { style: tmp4.heroImageSkeleton };
-                              tmp36 = metroImportDefault(tmp(11996).ImageSkeleton, obj17);
+                              tmp36 = metroImportDefault(tmp(11885).ImageSkeleton, obj17);
                             }
                             cResult[33] = tmp16;
                             cResult[34] = tmp6;
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                     cResult[32] = tmp34;
                     tmp31 = tmp34;
                   }
-                  const items5 = [tmp(11909).ResolvedValueType.MEDIA];
+                  const items5 = [tmp(11798).ResolvedValueType.MEDIA];
                   const fieldValue = resolveFieldValue(image, items5);
                   cResult[16] = resolveFieldValue;
                   cResult[17] = image;
@@ -293,7 +293,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                   tmp16 = fieldValue;
                 }
               }
-              const tmpResult5 = _mod11909;
+              const tmpResult5 = _mod11798;
               const textComponentValues = tmpResult5.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
               cResult[12] = numberFormat;
               cResult[13] = resolveFieldValue;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
               tmp13 = textComponentValues;
             }
           }
-          const tmpResult6 = _mod11909;
+          const tmpResult6 = _mod11798;
           const textComponentValues1 = tmpResult6.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
           cResult[8] = numberFormat;
           cResult[9] = resolveFieldValue;
@@ -311,7 +311,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
           tmp11 = textComponentValues1;
         }
       }
-      const tmpResult7 = _mod11909;
+      const tmpResult7 = _mod11798;
       const textComponentValues2 = tmpResult7.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
       cResult[4] = numberFormat;
       cResult[5] = resolveFieldValue;
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       tmp9 = textComponentValues2;
     }
   }
-  const tmpResult8 = _mod11909;
+  const tmpResult8 = _mod11798;
   const textComponentValues3 = tmpResult8.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
   cResult[0] = numberFormat;
   cResult[1] = resolveFieldValue;
@@ -349,20 +349,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const tmp = closure_10();
   [tmp3, c0] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
-  const obj = _mod11909;
+  const obj = _mod11798;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod11909;
+  const obj2 = _mod11798;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod11909;
+  const obj3 = _mod11798;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const hero_image = topConfig.components.hero_image;
   let image;
-  const obj4 = _mod11909;
+  const obj4 = _mod11798;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_mod11909.ResolvedValueType.MEDIA];
+  const items = [_mod11798.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const obj5 = { style: tmp.root, children: items1 };
   items1 = [header, , ];
@@ -376,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(tmp4(11996).ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(11885).ImageSkeleton, obj9);
   }
   items3[1] = metroImportDefault(View, obj8);
   items1[1] = metroImportAll(View, obj6);

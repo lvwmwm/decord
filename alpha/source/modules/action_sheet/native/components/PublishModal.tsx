@@ -1,15 +1,15 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13978
+// Function ID: 13979
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4971, 6707, 558, 576, 13977, 1202, 1128, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 6707, 558, 576, 13979, 1202, 1128, 2]
 
-// Module 13976 (PublishModal)
+// Module 13978 (PublishModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import LegacyTokens from "LegacyTokens" /* 6707 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 13977 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 13979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

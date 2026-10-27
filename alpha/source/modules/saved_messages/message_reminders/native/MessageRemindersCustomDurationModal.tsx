@@ -1,9 +1,9 @@
-// Module ID: 13820
-// Function ID: 13821
+// Module ID: 13822
+// Function ID: 13823
 // Name: MessageRemindersCustomDurationModal
 // Dependencies: [32, 19, 17, 21, 4971, 587, 1633, 1896, 5210, 8933, 2002, 1128, 6933, 9699, 1384, 6924, 6908, 5234, 2]
 
-// Module 13820 (MessageRemindersCustomDurationModal)
+// Module 13822 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;

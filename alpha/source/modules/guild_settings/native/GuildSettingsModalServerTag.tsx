@@ -1,10 +1,10 @@
-// Module ID: 19083
-// Function ID: 19084
+// Module ID: 19093
+// Function ID: 19094
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8985, 4845, 9006, 1087, 8274, 21, 4971, 587, 1505, 9008, 504, 8986, 8654, 8987, 9005, 5662, 1128, 13402, 5185, 6924, 7485, 1506, 5909, 1202, 7134, 14174, 5234, 6987, 7295, 6903, 5977, 15163, 8951, 15160, 19084, 2]
+// Dependencies: [5, 32, 19, 17, 8985, 4845, 9006, 1087, 8274, 21, 4971, 587, 1505, 9008, 504, 8986, 8654, 8987, 9005, 5662, 1128, 13405, 5185, 6924, 7485, 1506, 5909, 1202, 7134, 14175, 5234, 6987, 7295, 6903, 5977, 15164, 8951, 15161, 19094, 2]
 // Exports: default
 
-// Module 19083 (GuildSettingsModalServerTag)
+// Module 19093 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,7 +12,7 @@ import Powerups from "Powerups" /* 5185 */;
 import GuildProfileStore from "GuildProfileStore" /* 8985 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8987 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13402 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13405 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -197,7 +197,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp27) {
         c3 = 3;
         throw tmp27;
@@ -300,7 +300,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         }
       }
     }
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "Array" });
   }, items9);
   const items10 = [guildId, stateFromStores2];
   closure_13 = obj7.useCallback(() => {
@@ -383,7 +383,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   return obj.getGuildProfile(guildId, true);
                 }
         };
-        return closure_13(navigation(14174), obj8);
+        return closure_13(navigation(14175), obj8);
       } else if (null == stateFromStores1) {
         return closure_13(tmp2(7134).SceneLoadingIndicator, {});
       } else {
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(15163).GuildBadge;
+            const GuildBadge = tmp2(15164).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,12 +452,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(15160), obj19);
+          items14[3] = closure_13(navigation(15161), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(19084), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(19094), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

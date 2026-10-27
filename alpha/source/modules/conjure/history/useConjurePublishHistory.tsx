@@ -1,14 +1,14 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12227
+// Function ID: 12228
 // Name: useConjurePublishHistory
-// Dependencies: [32, 19, 1128, 3830, 2049, 558, 576, 12279, 12274, 2]
+// Dependencies: [32, 19, 1128, 3830, 2049, 558, 576, 12228, 12223, 2]
 // Exports: publishHistoryTitle
 
-// Module 12278 (useConjurePublishHistory)
+// Module 12227 (useConjurePublishHistory)
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12279 */;
+import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     if (cResult[5] === arg0) {
       tmp12 = cResult[6];
     }
-    const tmpResult = tmp(12274);
+    const tmpResult = tmp(12223);
     historyLoad = tmpResult.useHistoryLoad(tmp12);
     nextCursor = null;
     if ("loaded" === historyLoad.state.status) {
@@ -272,7 +272,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         if (cResult[3] === arg0) {
           tmp5 = cResult[4];
         }
-        const tmpResult = tmp(12274);
+        const tmpResult = tmp(12223);
         const historyLoad = tmpResult.useHistoryLoad(tmp5);
         if (cResult[5] === get) {
           let state;

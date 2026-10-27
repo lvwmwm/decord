@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13882
+// Function ID: 13883
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8681, 7536, 1087, 1394, 21, 4971, 587, 5593, 10496, 504, 8673, 7253, 10581, 1267, 13881, 584, 6672, 5909, 13882, 2002, 1384, 10514, 10502, 5234, 1128, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 8681, 7536, 1087, 1394, 21, 4971, 587, 5593, 10496, 504, 8673, 7253, 10581, 1267, 13883, 584, 6672, 5909, 13884, 2002, 1384, 10514, 10502, 5234, 1128, 5244, 2]
 // Exports: default
 
-// Module 13880 (CollectiblesShopGiftPurchaseSection)
+// Module 13882 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -221,7 +221,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

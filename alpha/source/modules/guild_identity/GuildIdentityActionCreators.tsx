@@ -1,10 +1,10 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11190
+// Function ID: 11191
 // Name: GuildIdentityActionCreators
 // Dependencies: [5, 1087, 584, 1297, 7079, 7083, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 11189 (GuildIdentityActionCreators)
+// Module 11190 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let obj = function _saveGuildIdentityChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let obj = function _saveGuildIdentityChanges() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

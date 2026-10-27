@@ -22,8 +22,8 @@ class ConjurePublishStatusStore extends Store {
   initialize() {
     this.waitFor(ConjureProjectStore);
   }
-  getPublishStatus(projectId) {
-    let value = map.get(projectId);
+  getPublishStatus(id) {
+    let value = map.get(id);
     if (value == null) {
       value = null;
     }
@@ -53,8 +53,8 @@ class ConjurePublishStatusStore extends Store {
     }
     return value;
   }
-  isAppChannelPending(projectId) {
-    return set1.has(projectId);
+  isAppChannelPending(arg0) {
+    return set1.has(arg0);
   }
 }
 const prototype = ConjurePublishStatusStore.prototype;

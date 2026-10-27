@@ -1,243 +1,106 @@
 // Module ID: 15346
 // Function ID: 15347
-// Dependencies: [41, 42, 15319, 15321, 15322, 15318, 15344, 15347]
+// Dependencies: [15319, 15323, 15318]
 
 // Module 15346
+import _mod15318 from "module_15318" /* 15318 */;
 import _mod15319 from "module_15319" /* 15319 */;
-import _mod15321 from "module_15321" /* 15321 */;
-import _mod15322 from "module_15322" /* 15322 */;
-import _mod15344 from "module_15344" /* 15344 */;
-import _mod15347 from "module_15347" /* 15347 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-const semver = Symbol("SemVer ANY");
-class Comparator {
-  constructor(loose, arg1) {
-    const self = this;
-    _classCallCheck(this, Comparator);
-    const tmp4 = _mod15319(arg1);
-    let str = loose;
-    if (loose instanceof Comparator) {
-      if (loose.loose === tmp4.loose) {
-        return loose;
-      } else {
-        str = loose.value;
-      }
+
+export default (num, arg1) => {
+  if (num instanceof _mod15319) {
+    return num;
+  } else {
+    let StringResult = num;
+    if (typeof num === "number") {
+      const _String = String;
+      StringResult = String(num);
     }
-    const str2 = str.trim();
-    const parts = str2.split(/\s+/);
-    const joined = parts.join(" ");
-    _mod15321("comparator", joined, tmp4);
-    self.options = tmp4;
-    self.loose = tmp4.loose;
-    const parsed = self.parse(joined);
-    if (self.semver === semver) {
-      self.value = "";
+    if (typeof StringResult !== "string") {
+      return null;
     } else {
-      self.value = self.operator + self.semver.version;
-    }
-    _mod15321("comp", self);
-  }
-}
-const entry = {
-  key: "parse",
-  value: function parse(str) {
-    let tmp3;
-    let tmp5;
-    const self = this;
-    const loose = this.options.loose;
-    const safeRe = _mod15322.safeRe;
-    const t = _mod15322.t;
-    if (loose) {
-      tmp3 = safeRe[t.COMPARATORLOOSE];
-      tmp5 = tmp;
-    } else {
-      tmp3 = safeRe[t.COMPARATOR];
-      tmp5 = tmp;
-    }
-    const match = str.match(tmp3);
-    if (match) {
-      let str3 = "";
-      if (undefined !== match[1]) {
-        str3 = match[1];
-      }
-      self.operator = str3;
-      if ("=" === self.operator) {
-        self.operator = "";
-      }
-      if (match[2]) {
-        const self4 = this;
-        const self5 = this;
-        self.semver = new tmp5(15318)(match[2], self.options.loose);
-        const tmp11 = new tmp5(15318)(match[2], self.options.loose);
-      } else {
-        self.semver = semver;
-      }
-    } else {
-      const _TypeError = TypeError;
-      const _HermesInternal = HermesInternal;
-      const self2 = this;
-      const self3 = this;
-      const typeError = new TypeError("Invalid comparator: " + str);
-      throw typeError;
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "toString",
-    value: function toString() {
-      return this.value;
-    }
-  },
-  {
-    key: "test",
-    value: function test(arg0) {
-      const self = this;
-      let tmp = arg0;
-      _mod15321("Comparator.test", arg0, this.options.loose);
-      if (this.semver !== semver) {
-        if (tmp !== tmp5) {
-          if (typeof tmp === "string") {
-            try {
-              const self2 = this;
-              const self3 = this;
-              tmp = new tmp2(15318)(tmp, self.options);
-            } catch (err) {
-              return false;
-            }
-          }
-          return _mod15344(tmp, self.operator, self.semver, self.options);
-        }
-      }
-      return true;
-    }
-  },
-  {
-    key: "intersects",
-    value: function intersects(value, arg1) {
-      if (value instanceof Comparator) {
-        let tmp6;
-        const self3 = this;
-        if ("" === this.operator) {
-          let isMatch = "" === self3.value;
-          if (!isMatch) {
-            const self6 = this;
-            const self7 = this;
-            const obj2 = new _mod15347(value.value, arg1);
-            isMatch = obj2.test(self3.value);
-          }
-          tmp6 = isMatch;
-        } else if ("" === value.operator) {
-          let isMatch1 = "" === value.value;
-          if (!isMatch1) {
-            const self4 = this;
-            const self5 = this;
-            const obj = new _mod15347(self3.value, arg1);
-            isMatch1 = obj.test(value.semver);
-          }
-          tmp6 = isMatch1;
+      let match3;
+      const tmp3 = arg1 || {};
+      if (tmp3.rtl) {
+        let obj;
+        const includePrerelease2 = tmp3.includePrerelease;
+        const safeRe2 = tmp(15323).safeRe;
+        const t2 = tmp(15323).t;
+        if (includePrerelease2) {
+          obj = safeRe2[t2.COERCERTLFULL];
         } else {
-          const tmp39 = _mod15319(arg1);
-          const includePrerelease = tmp39.includePrerelease;
-          tmp6 = !includePrerelease;
-          if (includePrerelease) {
-            tmp6 = "<0.0.0-0" !== self3.value && "<0.0.0-0" !== value.value;
-          }
-          if (tmp6) {
-            let tmp7 = !tmp39.includePrerelease;
-            if (tmp7) {
-              value = self3.value;
-              let startsWithResult = value.startsWith("<0.0.0");
-              if (!startsWithResult) {
-                const value2 = value.value;
-                startsWithResult = value2.startsWith("<0.0.0");
-              }
-              tmp7 = startsWithResult;
+          obj = safeRe2[t2.COERCERTL];
+        }
+        let match1 = obj.exec(StringResult);
+        let tmp7 = null;
+        let tmp9 = null;
+        if (match1) {
+          while (true) {
+            let tmp11 = tmp7;
+            let tmp12 = tmp7 && match1.index + match1[0].length === tmp11.index + tmp11[0].length;
+            if (!tmp12) {
+              tmp11 = match1;
             }
-            let tmp9 = !tmp7;
-            if (tmp9) {
-              const operator = self3.operator;
-              const startsWithResult1 = operator.startsWith(">");
-              let tmp11 = !startsWithResult1;
-              if (startsWithResult1) {
-                const operator2 = value.operator;
-                tmp11 = !operator2.startsWith(">");
-              }
-              let tmp12 = !tmp11;
-              if (tmp11) {
-                const operator3 = self3.operator;
-                const startsWithResult2 = operator3.startsWith("<");
-                let tmp14 = !startsWithResult2;
-                if (startsWithResult2) {
-                  const operator4 = value.operator;
-                  tmp14 = !operator4.startsWith("<");
+            obj.lastIndex = match1.index + match1[1].length + match1[2].length;
+            let match2 = obj.exec(StringResult);
+            tmp9 = tmp11;
+            if (!match2) {
+              break;
+            } else {
+              match1 = match2;
+              tmp7 = tmp11;
+              if (!tmp7) {
+                continue;
+              } else {
+                match1 = match2;
+                tmp7 = tmp11;
+                tmp9 = tmp11;
+                if (tmp11.index + tmp11[0].length === StringResult.length) {
+                  break;
                 }
-                let tmp15 = !tmp14;
-                if (tmp14) {
-                  let tmp16 = self3.semver.version !== value.semver.version;
-                  if (!tmp16) {
-                    const operator5 = self3.operator;
-                    tmp16 = !operator5.includes("=");
-                  }
-                  if (!tmp16) {
-                    const operator6 = value.operator;
-                    tmp16 = !operator6.includes("=");
-                  }
-                  let tmp17 = !tmp16;
-                  if (tmp16) {
-                    let startsWithResult3 = _mod15344(self3.semver, "<", value.semver, tmp39);
-                    if (startsWithResult3) {
-                      const operator7 = self3.operator;
-                      startsWithResult3 = operator7.startsWith(">");
-                    }
-                    if (startsWithResult3) {
-                      const operator8 = value.operator;
-                      startsWithResult3 = operator8.startsWith("<");
-                    }
-                    let tmp22 = startsWithResult3;
-                    if (!tmp22) {
-                      let startsWithResult4 = _mod15344(self3.semver, ">", value.semver, tmp39);
-                      if (startsWithResult4) {
-                        const operator9 = self3.operator;
-                        startsWithResult4 = operator9.startsWith("<");
-                      }
-                      if (startsWithResult4) {
-                        const operator10 = value.operator;
-                        startsWithResult4 = operator10.startsWith(">");
-                      }
-                      tmp22 = startsWithResult4;
-                    }
-                    tmp17 = tmp22;
-                  }
-                  tmp15 = tmp17;
-                }
-                tmp12 = tmp15;
               }
-              tmp9 = tmp12;
+              continue;
             }
-            tmp6 = tmp9;
           }
         }
-        return tmp6;
+        obj.lastIndex = -1;
+        match3 = tmp9;
       } else {
-        const _TypeError = TypeError;
-        const self = this;
-        const self2 = this;
-        const typeError = new TypeError("a Comparator is required");
-        throw typeError;
+        let tmp4;
+        const match = StringResult.match;
+        const includePrerelease = tmp3.includePrerelease;
+        const safeRe = tmp(15323).safeRe;
+        const t = tmp(15323).t;
+        if (includePrerelease) {
+          tmp4 = safeRe[t.COERCEFULL];
+        } else {
+          tmp4 = safeRe[t.COERCE];
+        }
+        match3 = match(tmp4);
+      }
+      if (null === match3) {
+        return null;
+      } else {
+        let str2 = "";
+        if (tmp3.includePrerelease) {
+          str2 = "";
+          if (match3[5]) {
+            const _HermesInternal = HermesInternal;
+            str2 = "-" + match3[5];
+          }
+        }
+        let str4 = "";
+        if (tmp3.includePrerelease) {
+          str4 = "";
+          if (match3[6]) {
+            const _HermesInternal2 = HermesInternal;
+            str4 = "+" + match3[6];
+          }
+        }
+        const _HermesInternal3 = HermesInternal;
+        const tmp21 = _mod15318;
+        return tmp21("" + match3[2] + "." + match3[3] || "0" + "." + match3[4] || "0" + str2 + str4, tmp3);
       }
     }
   }
-];
-let obj = {
-  key: "ANY",
-  get() {
-    return semver;
-  }
 };
-const items1 = [obj];
-
-export default _createClass(Comparator, items, items1);

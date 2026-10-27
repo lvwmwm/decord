@@ -1,10 +1,10 @@
-// Module ID: 13168
-// Function ID: 13169
+// Module ID: 13171
+// Function ID: 13172
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 4876, 4823, 7325, 8301, 1087, 584, 1297, 13169, 1267, 5707, 11, 2]
+// Dependencies: [5, 4876, 4823, 7325, 8301, 1087, 584, 1297, 13172, 1267, 5707, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 13168 (GuildOnboardingHomeActionCreators)
+// Module 13171 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -68,7 +68,7 @@ obj = function _fetchNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ obj = function _fetchNewMemberActions() {
             return { value: tmp, done: true };
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp18) {
           closure_3 = tmp18;
           if (0 === c4) {
@@ -152,7 +152,7 @@ obj = function _clearNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ obj = function _clearNewMemberActions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           closure_3 = tmp18;

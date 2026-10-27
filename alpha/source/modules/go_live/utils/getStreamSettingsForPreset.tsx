@@ -1,12 +1,12 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11596
+// Function ID: 11597
 // Name: getStreamSettingsForPreset
-// Dependencies: [5814, 11596, 1384, 5845, 2]
+// Dependencies: [5814, 11597, 1384, 5845, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 11595 (getStreamSettingsForPreset)
+// Module 11596 (getStreamSettingsForPreset)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11596 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11597 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
 import size from "module_2" /* 2 */;
 

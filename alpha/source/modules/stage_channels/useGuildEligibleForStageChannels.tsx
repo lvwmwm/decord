@@ -1,10 +1,10 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18294
+// Function ID: 18295
 // Name: useGuildEligibleForStageChannels
 // Dependencies: [4845, 1087, 558, 576, 504, 2]
 // Exports: isGuildEligibleForStageChannels
 
-// Module 18285 (useGuildEligibleForStageChannels)
+// Module 18294 (useGuildEligibleForStageChannels)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

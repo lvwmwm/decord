@@ -1,9 +1,9 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12428
+// Function ID: 12429
 // Name: useConjureOverlayBackground
 // Dependencies: [5, 32, 19, 10713, 558, 576, 504, 10739, 2]
 
-// Module 12445 (useConjureOverlayBackground)
+// Module 12428 (useConjureOverlayBackground)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -185,7 +185,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureOv
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c4;
@@ -231,7 +231,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureOv
                   closure_2_4(closure_0);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               if (0 === c4) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureOv
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -364,7 +364,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureOv
                 c4(closure_0);
               }
               c6 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp19) {
             if (0 === c4) {

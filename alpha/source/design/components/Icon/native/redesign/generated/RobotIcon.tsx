@@ -1,14 +1,14 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 12240
+// Function ID: 12241
 // Name: RobotIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11800, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12241, 5668, 2]
 
-// Module 11799 (RobotIcon)
+// Module 12240 (RobotIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 11800 */;
+import AssetRegistry from "AssetRegistry" /* 12241 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

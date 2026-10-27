@@ -1,10 +1,10 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 12152
+// Function ID: 12153
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6773, 504, 11805, 11808, 11810, 10735, 6774, 7345, 11811, 1128, 3830, 11812, 10720, 2]
+// Dependencies: [5, 32, 19, 6773, 504, 12153, 12156, 12158, 10735, 6774, 7345, 12159, 1128, 3830, 12160, 10720, 2]
 // Exports: default
 
-// Module 11804 (useConjureProjectSettingsDraft)
+// Module 12152 (useConjureProjectSettingsDraft)
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -245,7 +245,7 @@ export default function useConjureProjectSettingsDraft(arg0, guild_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

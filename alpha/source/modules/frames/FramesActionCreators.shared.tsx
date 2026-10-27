@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -281,7 +281,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

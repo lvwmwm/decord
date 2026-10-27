@@ -1,9 +1,9 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11571
+// Function ID: 11572
 // Name: useVoiceStateForRemoteSession
 // Dependencies: [502, 5630, 5715, 558, 576, 504, 2]
 
-// Module 11570 (useVoiceStateForRemoteSession)
+// Module 11571 (useVoiceStateForRemoteSession)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;

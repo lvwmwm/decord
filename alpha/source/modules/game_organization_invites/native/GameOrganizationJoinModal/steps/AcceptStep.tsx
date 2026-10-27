@@ -1,10 +1,10 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12731
+// Function ID: 12732
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12722, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12724, 1505, 11320, 5663, 1128, 7900, 7901, 2406, 12729, 12727, 6696, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 12725, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12727, 1505, 11321, 5663, 1128, 7900, 7901, 2406, 12732, 12730, 6696, 5244, 2]
 // Exports: AcceptStep
 
-// Module 12728 (AcceptStep)
+// Module 12731 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,12 +12,12 @@ import _modDef2406 from "module_2406" /* 2406 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12724 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12729 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12727 */;
+import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12732 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12722 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -155,7 +155,7 @@ export const AcceptStep = function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -219,7 +219,7 @@ export const AcceptStep = function AcceptStep(code) {
             c3 = 0;
             closure_129_2(false);
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp29) {
           failureReason = tmp29;
@@ -288,7 +288,7 @@ export const AcceptStep = function AcceptStep(code) {
     items1[1] = closure_10(Stack, obj9);
     items4 = [tmp11(ModalContent, obj6), ];
     const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(12727).ModalFooter;
+    const ModalFooter = tmp5(12730).ModalFooter;
     obj15 = { children: items5 };
     ButtonGroup = tmp5(6696).ButtonGroup;
     const obj16 = {

@@ -1,10 +1,10 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12249
+// Function ID: 12250
 // Name: conjurePublishPopoutMode
 // Dependencies: [10805, 2]
 // Exports: conjurePublishPopoutMode
 
-// Module 12297 (conjurePublishPopoutMode)
+// Module 12249 (conjurePublishPopoutMode)
 import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
 import size from "module_2" /* 2 */;
 

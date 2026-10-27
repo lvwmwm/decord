@@ -1,11 +1,11 @@
-// Module ID: 18677
-// Function ID: 18678
+// Module ID: 18687
+// Function ID: 18688
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 558, 576, 5052, 11571, 2]
+// Dependencies: [19, 17, 558, 576, 5052, 11572, 2]
 
-// Module 18677 (useLaunchPadPullTabMinimized)
+// Module 18687 (useLaunchPadPullTabMinimized)
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 11571 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 11572 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

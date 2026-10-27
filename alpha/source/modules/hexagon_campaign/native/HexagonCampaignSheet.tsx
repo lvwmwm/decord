@@ -1,9 +1,9 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16378
+// Function ID: 16379
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1208, 1392, 15642, 4996, 5266, 9865, 1255, 1098, 21, 1412, 1411, 9221, 4971, 587, 558, 576, 4999, 504, 7253, 7278, 14766, 4998, 1633, 2053, 9866, 15856, 6713, 16378, 5663, 1128, 5210, 16376, 4247, 10625, 5234, 16383, 7248, 15879, 5244, 16384, 6987, 7295, 16385, 5265, 2]
+// Dependencies: [5, 32, 19, 17, 1208, 1392, 15643, 4996, 5266, 9865, 1255, 1098, 21, 1412, 1411, 9221, 4971, 587, 558, 576, 4999, 504, 7253, 7278, 14767, 4998, 1633, 2053, 9866, 15857, 6713, 16379, 5663, 1128, 5210, 16377, 4247, 10625, 5234, 16384, 7248, 15880, 5244, 16385, 6987, 7295, 16386, 5265, 2]
 
-// Module 16377 (HexagonCampaignSheet)
+// Module 16378 (HexagonCampaignSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -19,7 +19,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import UserStore from "UserStore" /* 1392 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15642 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15643 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -303,7 +303,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp57) {
           if (0 === analyticsLocations) {
             c4 = 3;

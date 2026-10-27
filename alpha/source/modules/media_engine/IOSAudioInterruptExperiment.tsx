@@ -1,10 +1,10 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 15375
+// Function ID: 15376
 // Name: IOSAudioInterruptExperiment
 // Dependencies: [1455, 2]
 // Exports: getIOSAudioInterruptExperimentConfig
 
-// Module 15374 (IOSAudioInterruptExperiment)
+// Module 15375 (IOSAudioInterruptExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

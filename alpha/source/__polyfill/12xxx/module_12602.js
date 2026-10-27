@@ -1,202 +1,563 @@
 // Module ID: 12602
 // Function ID: 12603
-// Dependencies: [41, 42, 12585]
-// Exports: rejectedSyncPromise, resolvedSyncPromise
+// Dependencies: [32, 41, 42, 12591, 12603, 12604, 12588, 12595, 12606, 12592, 12581]
 
 // Module 12602
-import _mod12585 from "module_12585" /* 12585 */;
+import _mod12581 from "module_12581" /* 12581 */;
+import _mod12588 from "module_12588" /* 12588 */;
+import generatePropagationContext from "generatePropagationContext" /* 12591 */;
+import _mod12592 from "module_12592" /* 12592 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12595 */;
+import _mod12603 from "module_12603" /* 12603 */;
+import _mod12604 from "module_12604" /* 12604 */;
+import _mod12606 from "module_12606" /* 12606 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let c3;
-
-let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
-obj[0] = "PENDING";
-obj[1] = "RESOLVED";
-obj[2] = "REJECTED";
-class SyncPromise {
-  constructor(fn) {
-    const self = this;
-    _classCallCheck(this, SyncPromise);
-    const __init = SyncPromise.prototype.__init;
-    __init.call(self);
-    const __init2 = tmp.prototype.__init2;
-    __init2.call(self);
-    const __init3 = tmp.prototype.__init3;
-    __init3.call(self);
-    const __init4 = tmp.prototype.__init4;
-    __init4.call(self);
-    self._state = obj.PENDING;
-    self._handlers = [];
-    try {
-      fn(self._resolve, self._reject);
-    } catch (tmp5) {
-      self._reject(tmp5);
-    }
+class ScopeClass {
+  constructor() {
+    let obj2;
+    let obj3;
+    _classCallCheck(this, ScopeClass);
+    this._notifyingListeners = false;
+    this._scopeListeners = [];
+    this._eventProcessors = [];
+    this._breadcrumbs = [];
+    this._attachments = [];
+    this._user = {};
+    this._tags = {};
+    this._extra = {};
+    this._contexts = {};
+    this._sdkProcessingMetadata = {};
+    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
+    obj2 = generatePropagationContext;
+    this._propagationContext = obj;
+    obj3 = generatePropagationContext;
   }
 }
 const entry = {
-  key: "then",
-  value: function then(arg0, arg1) {
+  key: "clone",
+  value: function clone() {
+    let items1;
+    let obj2;
+    let obj3;
     const self = this;
-    let closure_1 = arg0;
-    let closure_0 = arg1;
-    obj = Object.create(SyncPromise.prototype);
-    SyncPromise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const _handlers = self._handlers;
-      const items = [
-        false,
-        (arg0) => {
-          if (closure_1) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_0(arg0);
-          }
-        },
-        (arg0) => {
-          if (closure_0) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_1(arg0);
-          }
-        }
-      ];
-      _handlers.push(items);
-      self._executeHandlers();
-    });
-    return obj;
+    const obj4 = Object.create(ScopeClass.prototype);
+    _classCallCheck(obj4, ScopeClass);
+    obj4._notifyingListeners = false;
+    obj4._scopeListeners = [];
+    obj4._eventProcessors = [];
+    obj4._breadcrumbs = [];
+    obj4._attachments = [];
+    obj4._user = {};
+    obj4._tags = {};
+    obj4._extra = {};
+    obj4._contexts = {};
+    obj4._sdkProcessingMetadata = {};
+    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
+    obj2 = generatePropagationContext;
+    obj4._propagationContext = obj;
+    const items = [...this._breadcrumbs];
+    obj4._breadcrumbs = items;
+    obj3 = generatePropagationContext;
+    const obj5 = {};
+    const merged = Object.assign(this._tags);
+    obj4._tags = obj5;
+    const obj6 = {};
+    const merged1 = Object.assign(this._extra);
+    obj4._extra = obj6;
+    const obj7 = {};
+    const merged2 = Object.assign(this._contexts);
+    obj4._contexts = obj7;
+    if (this._contexts.flags) {
+      const obj8 = { values: items1 };
+      items1 = [];
+      const _contexts = obj4._contexts;
+      HermesBuiltin.arraySpread(items1, self._contexts.flags.values, 0);
+      _contexts.flags = obj8;
+    }
+    ({ _user: tmp2._user, _level: tmp2._level, _session: tmp2._session, _transactionName: tmp2._transactionName, _fingerprint: tmp2._fingerprint } = self);
+    const items2 = [...self._eventProcessors];
+    obj4._eventProcessors = items2;
+    obj4._requestSession = self._requestSession;
+    obj4._attachments = [...self._attachments];
+    const obj9 = {};
+    const merged3 = Object.assign(self._sdkProcessingMetadata);
+    obj4._sdkProcessingMetadata = obj9;
+    const obj10 = {};
+    const merged4 = Object.assign(self._propagationContext);
+    obj4._propagationContext = obj10;
+    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId } = self);
+    const _setSpanForScope = _mod12603._setSpanForScope;
+    _mod12603;
+    const tmp4Result2 = _mod12603;
+    _setSpanForScope(obj4, tmp4Result2._getSpanForScope(self));
+    return obj4;
   }
 };
 let items = [
   entry,
   {
-    key: "catch",
-    value: function _catch(arg0) {
-      return this.then((result) => result, arg0);
+    key: "setClient",
+    value: function setClient(_client) {
+      this._client = _client;
     }
   },
   {
-    key: "finally",
-    value: function _finally(arg0) {
+    key: "setLastEventId",
+    value: function setLastEventId(_lastEventId) {
+      this._lastEventId = _lastEventId;
+    }
+  },
+  {
+    key: "getClient",
+    value: function getClient() {
+      return this._client;
+    }
+  },
+  {
+    key: "lastEventId",
+    value: function lastEventId() {
+      return this._lastEventId;
+    }
+  },
+  {
+    key: "addScopeListener",
+    value: function addScopeListener(arg0) {
+      const _scopeListeners = this._scopeListeners;
+      _scopeListeners.push(arg0);
+    }
+  },
+  {
+    key: "addEventProcessor",
+    value: function addEventProcessor(arg0) {
+      const _eventProcessors = this._eventProcessors;
+      _eventProcessors.push(arg0);
+      return this;
+    }
+  },
+  {
+    key: "setUser",
+    value: function setUser(user) {
       const self = this;
-      let closure_0 = arg0;
-      obj = Object.create(SyncPromise.prototype);
-      SyncPromise((arg0, arg1) => {
-        let closure_1;
-        closure_0 = arg0;
-        const nextPromise = arg1.then((result) => {
-          c3 = false;
-          let closure_1_2 = result;
-          if (closure_0) {
-            tmp();
-          }
-        }, (arg0) => {
-          c3 = true;
-          let closure_1_2 = arg0;
-          if (closure_0) {
-            tmp();
-          }
-        });
-        return nextPromise.then(() => {
-          const tmp = c3;
-          if (tmp) {
-            closure_1(closure_1_2);
+      const tmp = user || { email: "Array", id: "test", ip_address: "y", username: "IconComponent" };
+      this._user = tmp;
+      if (this._session) {
+        const obj2 = { user };
+        const obj = _mod12604;
+        obj.updateSession(self._session, obj2);
+      }
+      const result = self._notifyScopeListeners();
+      return self;
+    }
+  },
+  {
+    key: "getUser",
+    value: function getUser() {
+      return this._user;
+    }
+  },
+  {
+    key: "getRequestSession",
+    value: function getRequestSession() {
+      return this._requestSession;
+    }
+  },
+  {
+    key: "setRequestSession",
+    value: function setRequestSession(_requestSession) {
+      this._requestSession = _requestSession;
+      return this;
+    }
+  },
+  {
+    key: "setTags",
+    value: function setTags(arg0) {
+      const obj = {};
+      const merged = Object.assign(this._tags);
+      const merged1 = Object.assign(arg0);
+      this._tags = obj;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setTag",
+    value: function setTag(arg0, arg1) {
+      const obj = {};
+      const merged = Object.assign(this._tags);
+      obj[arg0] = arg1;
+      this._tags = obj;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setExtras",
+    value: function setExtras(arg0) {
+      const obj = {};
+      const merged = Object.assign(this._extra);
+      const merged1 = Object.assign(arg0);
+      this._extra = obj;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setExtra",
+    value: function setExtra(arg0, arg1) {
+      const obj = {};
+      const merged = Object.assign(this._extra);
+      obj[arg0] = arg1;
+      this._extra = obj;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setFingerprint",
+    value: function setFingerprint(_fingerprint) {
+      this._fingerprint = _fingerprint;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setLevel",
+    value: function setLevel(_level) {
+      this._level = _level;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setTransactionName",
+    value: function setTransactionName(_transactionName) {
+      this._transactionName = _transactionName;
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "setContext",
+    value: function setContext(arg0, arg1) {
+      const self = this;
+      if (null === arg1) {
+        delete self._contexts[tmp];
+      } else {
+        self._contexts[arg0] = arg1;
+      }
+      const result = self._notifyScopeListeners();
+      return self;
+    }
+  },
+  {
+    key: "setSession",
+    value: function setSession(_session) {
+      const self = this;
+      const tmp = _session;
+      if (tmp) {
+        self._session = _session;
+      } else {
+        delete self["_session"];
+      }
+      const result = self._notifyScopeListeners();
+      return self;
+    }
+  },
+  {
+    key: "getSession",
+    value: function getSession() {
+      return this._session;
+    }
+  },
+  {
+    key: "update",
+    value: function update(requestSession) {
+      let contexts;
+      let extra;
+      let fingerprint;
+      let level;
+      let obj3;
+      let obj4;
+      let tags;
+      let tmp7;
+      let user;
+      const self = this;
+      const tmp = requestSession;
+      if (tmp) {
+        let items2;
+        let obj = requestSession;
+        if (typeof requestSession === "function") {
+          obj = requestSession(self);
+        }
+        if (obj instanceof _moduleResult) {
+          const items = [obj.getScopeData(), obj.getRequestSession()];
+          items2 = items;
+        } else {
+          const obj2 = _mod12588;
+          if (obj2.isPlainObject(obj)) {
+            const items1 = [requestSession, requestSession.requestSession];
+            items2 = items1;
           } else {
-            closure_0(closure_1_2);
+            items2 = [];
           }
-        });
-      });
+        }
+        [obj3, tmp7] = items2;
+        _slicedToArray(items2, 2);
+        if (!obj4) {
+          obj4 = {};
+        }
+        ({ tags, extra, user, contexts, level, fingerprint } = obj4);
+        if (undefined === fingerprint) {
+          fingerprint = [];
+        }
+        const propagationContext = obj4.propagationContext;
+        const obj5 = {};
+        const merged = Object.assign(self._tags);
+        const merged1 = Object.assign(tags);
+        self._tags = obj5;
+        const obj6 = {};
+        const merged2 = Object.assign(self._extra);
+        const merged3 = Object.assign(extra);
+        self._extra = obj6;
+        const obj10 = {};
+        const merged4 = Object.assign(self._contexts);
+        const merged5 = Object.assign(contexts);
+        self._contexts = obj10;
+        let length = user;
+        if (length) {
+          const _Object = Object;
+          length = Object.keys(user).length;
+        }
+        if (length) {
+          self._user = user;
+        }
+        if (level) {
+          self._level = level;
+        }
+        if (fingerprint.length) {
+          self._fingerprint = fingerprint;
+        }
+        if (propagationContext) {
+          self._propagationContext = propagationContext;
+        }
+        if (tmp7) {
+          self._requestSession = tmp7;
+        }
+        return self;
+      } else {
+        return self;
+      }
+    }
+  },
+  {
+    key: "clear",
+    value: function clear() {
+      let obj4;
+      const obj = { _breadcrumbs: [], _tags: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _requestSession: undefined, _session: undefined, _attachments: [] };
+      const obj2 = _mod12603;
+      obj2._setSpanForScope(obj, undefined);
+      const setPropagationContext = obj.setPropagationContext;
+      const obj3 = { traceId: obj4.generateTraceId() };
+      obj4 = generatePropagationContext;
+      const result = setPropagationContext(obj3);
+      const result1 = obj._notifyScopeListeners();
       return obj;
     }
   },
   {
-    key: "__init",
-    value: function __init() {
+    key: "addBreadcrumb",
+    value: function addBreadcrumb(arg0, num) {
+      let obj2;
+      num = 100;
       const self = this;
-      this._resolve = (arg0) => {
-        self._setResult(obj.RESOLVED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init2",
-    value: function __init2() {
-      const self = this;
-      this._reject = (arg0) => {
-        self._setResult(obj.REJECTED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init3",
-    value: function __init3() {
-      const self = this;
-      this._setResult = (_state, _value) => {
-        if (self._state === self.PENDING) {
-          const obj2 = _mod12585;
-          if (obj2.isThenable(_value)) {
-            _value.then(self._resolve, self._reject);
-          } else {
-            self._state = _state;
-            self._value = _value;
-            self._executeHandlers();
+      if (num <= 0) {
+        return self;
+      } else {
+        const obj = { timestamp: obj2.dateTimestampInSeconds() };
+        obj2 = _browserPerformanceTimeOriginMode;
+        const merged = Object.assign(arg0);
+        const _breadcrumbs = self._breadcrumbs;
+        _breadcrumbs.push(obj);
+        if (self._breadcrumbs.length > num) {
+          const _breadcrumbs1 = self._breadcrumbs;
+          self._breadcrumbs = _breadcrumbs1.slice(-num);
+          if (self._client) {
+            const _client = self._client;
+            _client.recordDroppedEvent("buffer_overflow", "log_item");
           }
         }
-      };
+        const result = self._notifyScopeListeners();
+        return self;
+      }
     }
   },
   {
-    key: "__init4",
-    value: function __init4() {
+    key: "getLastBreadcrumb",
+    value: function getLastBreadcrumb() {
+      return this._breadcrumbs[this._breadcrumbs.length - 1];
+    }
+  },
+  {
+    key: "clearBreadcrumbs",
+    value: function clearBreadcrumbs() {
+      this._breadcrumbs = [];
+      const result = this._notifyScopeListeners();
+      return this;
+    }
+  },
+  {
+    key: "addAttachment",
+    value: function addAttachment(arg0) {
+      const _attachments = this._attachments;
+      _attachments.push(arg0);
+      return this;
+    }
+  },
+  {
+    key: "clearAttachments",
+    value: function clearAttachments() {
+      this._attachments = [];
+      return this;
+    }
+  },
+  {
+    key: "getScopeData",
+    value: function getScopeData() {
+      let obj2;
       const self = this;
-      this._executeHandlers = () => {
-        let _state;
-        if (self._state !== obj.PENDING) {
-          const _handlers = tmp._handlers;
-          const substr = _handlers.slice();
-          self._handlers = [];
-          const item = substr.forEach((item) => {
-            if (!item[0]) {
-              const tmp2 = constants;
-              if (_state._state === constants.RESOLVED) {
-                item[1](_state._value);
-              }
-              if (_state._state === tmp2.REJECTED) {
-                item[2](_state._value);
-              }
-              item[0] = true;
-            }
-          });
+      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self) };
+      obj2 = _mod12603;
+      return obj;
+    }
+  },
+  {
+    key: "setSDKProcessingMetadata",
+    value: function setSDKProcessingMetadata(arg0) {
+      const obj = _mod12606;
+      this._sdkProcessingMetadata = obj.merge(this._sdkProcessingMetadata, arg0, 2);
+      return this;
+    }
+  },
+  {
+    key: "setPropagationContext",
+    value: function setPropagationContext(arg0) {
+      let obj2;
+      const obj = { spanId: obj2.generateSpanId() };
+      obj2 = generatePropagationContext;
+      const merged = Object.assign(arg0);
+      this._propagationContext = obj;
+      return this;
+    }
+  },
+  {
+    key: "getPropagationContext",
+    value: function getPropagationContext() {
+      return this._propagationContext;
+    }
+  },
+  {
+    key: "captureException",
+    value: function captureException(originalException, event_id) {
+      const tmp = event_id;
+      if (tmp) {
+        if (event_id.event_id) {
+          event_id = event_id.event_id;
         }
-      };
+        const self = this;
+        if (this._client) {
+          const _Error = Error;
+          const self2 = this;
+          const self3 = this;
+          const error = new Error("Sentry syntheticException");
+          const _client = self._client;
+          const captureException = _client.captureException;
+          const obj2 = { originalException, syntheticException: error, event_id };
+          const merged = Object.assign(event_id);
+          captureException(originalException, obj2, self);
+          return event_id;
+        } else {
+          const logger = _mod12581.logger;
+          logger.warn("No client configured on scope - will not capture exception!");
+          return event_id;
+        }
+      }
+      const obj = _mod12592;
+      event_id = obj.uuid4();
+    }
+  },
+  {
+    key: "captureMessage",
+    value: function captureMessage(originalException, arg1, event_id) {
+      const tmp = event_id;
+      if (tmp) {
+        if (event_id.event_id) {
+          event_id = event_id.event_id;
+        }
+        const self = this;
+        if (this._client) {
+          const _Error = Error;
+          const self2 = this;
+          const self3 = this;
+          const error = new Error(originalException);
+          const _client = self._client;
+          const captureMessage = _client.captureMessage;
+          const obj2 = { originalException, syntheticException: error, event_id };
+          const merged = Object.assign(event_id);
+          captureMessage(originalException, arg1, obj2, self);
+          return event_id;
+        } else {
+          const logger = _mod12581.logger;
+          logger.warn("No client configured on scope - will not capture message!");
+          return event_id;
+        }
+      }
+      const obj = _mod12592;
+      event_id = obj.uuid4();
+    }
+  },
+  {
+    key: "captureEvent",
+    value: function captureEvent(arg0, event_id) {
+      const tmp = event_id;
+      if (tmp) {
+        if (event_id.event_id) {
+          event_id = event_id.event_id;
+        }
+        const self = this;
+        if (this._client) {
+          const _client = self._client;
+          const captureEvent = _client.captureEvent;
+          const obj2 = { event_id };
+          const merged = Object.assign(event_id);
+          captureEvent(arg0, obj2, self);
+        } else {
+          const logger = _mod12581.logger;
+          logger.warn("No client configured on scope - will not capture event!");
+        }
+        return event_id;
+      }
+      const obj = _mod12592;
+      event_id = obj.uuid4();
+    }
+  },
+  {
+    key: "_notifyScopeListeners",
+    value: function _notifyScopeListeners() {
+      const self = this;
+      if (!this._notifyingListeners) {
+        self._notifyingListeners = true;
+        const _scopeListeners = self._scopeListeners;
+        const item = _scopeListeners.forEach((fn) => {
+          fn(self);
+        });
+        self._notifyingListeners = false;
+      }
     }
   }
 ];
-const _moduleResult = _createClass(SyncPromise, items);
-const SyncPromise_export = _moduleResult;
+const _moduleResult = _createClass(ScopeClass, items);
 
-export { SyncPromise_export as SyncPromise };
-export const rejectedSyncPromise = function rejectedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((arg0, fn) => {
-    fn(closure_0);
-  });
-  return tmp;
-};
-export const resolvedSyncPromise = function resolvedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((fn) => {
-    fn(closure_0);
-  });
-  return tmp;
-};
+export const Scope = _moduleResult;

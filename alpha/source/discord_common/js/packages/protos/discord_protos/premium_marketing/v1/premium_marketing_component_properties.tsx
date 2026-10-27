@@ -315,7 +315,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
+    const obj = { properties: { oneofKind: "Array" }, contentIdentifier: "", isDefaultBase: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);

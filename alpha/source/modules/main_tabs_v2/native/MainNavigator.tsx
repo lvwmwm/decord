@@ -1,25 +1,25 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17356
+// Function ID: 17357
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 17356, 1087, 21, 4971, 1384, 4928, 15291, 17357, 17358, 17422, 558, 576, 18194, 18201, 18233, 18255, 9742, 18318, 18319, 18322, 18326, 18328, 18357, 18363, 5159, 1503, 1631, 18364, 5711, 9699, 18368, 18426, 573, 11369, 5153, 7095, 18429, 10031, 13056, 18670, 18701, 11573, 18241, 2]
+// Dependencies: [32, 19, 17, 502, 17357, 1087, 21, 4971, 1384, 4928, 15292, 17358, 17359, 17423, 558, 576, 18203, 18210, 18242, 18264, 9742, 18327, 18328, 18331, 18335, 18337, 18366, 18372, 18373, 5159, 1503, 1631, 18374, 5711, 9699, 18378, 18436, 573, 11370, 5153, 7095, 18439, 10031, 13059, 18680, 18711, 11574, 18250, 2]
 // Exports: getChannelScreen
 
-// Module 17355 (MainNavigator)
+// Module 17356 (MainNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1503 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import DeviceUtils from "DeviceUtils" /* 4928 */;
 import ChatInputUtils from "ChatInputUtils" /* 5159 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11573 */;
-import StartupProfiler from "StartupProfiler" /* 13056 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15291 */;
-import NavigationConstants from "NavigationConstants" /* 17356 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17357 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 18241 */;
-import AppComponents from "AppComponents" /* 18429 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 18670 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 18701 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11574 */;
+import StartupProfiler from "StartupProfiler" /* 13059 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15292 */;
+import NavigationConstants from "NavigationConstants" /* 17357 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17358 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 18250 */;
+import AppComponents from "AppComponents" /* 18439 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 18680 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 18711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -42,17 +42,17 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const getNavigationModalPresentationDefault = tmp2(10031);
-const AutoAnalytics = tmp(18194);
+const AutoAnalytics = tmp(18203);
 function getId(params) {
   return params.params.screenKey;
 }
 function beforeRemove(data) {
   let SWIPE;
-  const obj = closure_1_0(closure_1_2[28]);
+  const obj = closure_1_0(closure_1_2[29]);
   if (null != obj.getBestActiveInput()) {
-    const obj2 = { type: closure_1_0(closure_1_2[30]).KeyboardTypes.SYSTEM };
-    const setKeyboardType = closure_1_0(closure_1_2[29]).setKeyboardType;
-    closure_1_0(closure_1_2[29]);
+    const obj2 = { type: closure_1_0(closure_1_2[31]).KeyboardTypes.SYSTEM };
+    const setKeyboardType = closure_1_0(closure_1_2[30]).setKeyboardType;
+    closure_1_0(closure_1_2[30]);
     setKeyboardType(obj2);
   }
   data = data.data;
@@ -63,9 +63,9 @@ function beforeRemove(data) {
       type = action.type;
     }
   }
-  const trackWithMetadata = closure_1_1(closure_1_2[32]).trackWithMetadata;
+  const trackWithMetadata = closure_1_1(closure_1_2[33]).trackWithMetadata;
   const CHANNEL_BACK_NAVIGATED = constants.CHANNEL_BACK_NAVIGATED;
-  closure_1_1(closure_1_2[32]);
+  closure_1_1(closure_1_2[33]);
   if ("GO_BACK" === type) {
     SWIPE = constants2.BACK_BUTTON;
   } else {
@@ -111,6 +111,9 @@ function getMessageRequestsComponent() {
 }
 function getSettingsComponent() {
   return require("Settings").default;
+}
+function getConjureHomeComponent() {
+  return require("ConjureHomeScreen").default;
 }
 function getAccountStanding() {
   return require("SuspendedUserPage").default;
@@ -180,8 +183,8 @@ function getChannelScreen() {
     options(arg0) {
       let route;
       ({ navigation, route } = arg0);
-      const obj = { headerShown: true, header: closure_2_0(closure_2_2[33]).renderHeader, animation };
-      const obj2 = closure_2_0(closure_2_2[33]);
+      const obj = { headerShown: true, header: closure_2_0(closure_2_2[34]).renderHeader, animation };
+      const obj2 = closure_2_0(closure_2_2[34]);
       const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
       const merged1 = Object.assign(animation2);
       return obj;
@@ -199,20 +202,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let items1;
   let obj10;
   let obj14;
-  let obj21;
+  let obj20;
+  let obj23;
   let obj7;
   let sessionId;
   let tmp10;
-  let tmp15;
+  let tmp16;
   let tmp9;
   let tmp = first;
   let tmp2 = homeIndicatorStore;
   let obj = first(homeIndicatorStore[15]);
-  const cResult = obj.c(34);
+  const cResult = obj.c(35);
   let tmp4 = closure_14();
-  let obj2 = first(homeIndicatorStore[34]);
+  let obj2 = first(homeIndicatorStore[35]);
   const screenReaderEnabled = obj2.useScreenReaderEnabled();
-  let obj3 = first(homeIndicatorStore[34]);
+  let obj3 = first(homeIndicatorStore[35]);
   const appKeyCommands = obj3.useAppKeyCommands();
   require("useNativeThemeUpdater")();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -227,32 +231,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     [tmp9, tmp10] = cResult;
   }
-  const tmpResult = tmp(tmp2[36]);
+  const tmpResult = tmp(tmp2[37]);
   const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
-  const tmp13 = isChatBesideChannelList(accessibilityNativeStackOptions.useState(closure_7.animation), 2);
-  first = tmp13[0];
-  importDefault = tmp13[1];
+  const tmp14 = isChatBesideChannelList(accessibilityNativeStackOptions.useState(closure_7.animation), 2);
+  first = tmp14[0];
+  importDefault = tmp14[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u(autoHideHomeIndicator) {
       return autoHideHomeIndicator.autoHideHomeIndicator;
     };
     cResult[2] = fn2;
-    tmp15 = fn2;
+    tmp16 = fn2;
   } else {
-    tmp15 = cResult[2];
+    tmp16 = cResult[2];
   }
-  const tmpResult4 = tmp(tmp2[37]);
-  homeIndicatorStore = tmpResult4.useHomeIndicatorStore(tmp15);
-  isChatBesideChannelList = tmp7(tmp2[38])().isChatBesideChannelList;
-  const tmpResult5 = tmp(tmp2[39]);
+  const tmpResult4 = tmp(tmp2[38]);
+  homeIndicatorStore = tmpResult4.useHomeIndicatorStore(tmp16);
+  isChatBesideChannelList = tmp7(tmp2[39])().isChatBesideChannelList;
+  const tmpResult5 = tmp(tmp2[40]);
   accessibilityNativeStackOptions = tmpResult5.useAccessibilityNativeStackOptions();
   if (cResult[3] !== stateFromStores) {
-    let tmp19 = null;
+    let tmp20 = null;
     if (stateFromStores) {
-      tmp19 = closure_10(closure_21, {});
+      tmp20 = closure_10(closure_21, {});
     }
     cResult[3] = stateFromStores;
-    cResult[4] = tmp19;
+    cResult[4] = tmp20;
   }
   if (cResult[5] !== homeIndicatorStore) {
     class R {
@@ -269,7 +273,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  const tmp23 = cResult[7];
+  const tmp24 = cResult[7];
   if (accessibilityNativeStackOptions != null) {
     class R {
       constructor() {
@@ -277,19 +281,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }
-  if (tmp23 === undefined) {
-    let tmp26;
-    let tmp30;
+  if (tmp24 === undefined) {
+    let tmp27;
+    let tmp31;
+    let tmp36;
     let tmp35;
-    let tmp34;
-    let tmp43;
-    let tmp50;
-    let tmp58;
-    let tmp63;
-    let tmp67;
-    let tmp71;
-    let tmp75;
-    let tmp79;
+    let tmp44;
+    let tmp51;
+    let tmp59;
+    let tmp64;
+    let tmp68;
+    let tmp72;
+    let tmp76;
+    let tmp80;
+    let tmp87;
     class R {
       constructor() {
         return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
@@ -303,9 +308,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       let obj4 = { name: "search", getComponent: getSearchComponent };
-      const tmp29 = closure_10(closure_16.Screen, obj4);
-      cResult[10] = tmp29;
-      tmp26 = tmp29;
+      const tmp30 = closure_10(closure_16.Screen, obj4);
+      cResult[10] = tmp30;
+      tmp27 = tmp30;
     } else {
       class R {
         constructor() {
@@ -324,12 +329,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         name: "conversations",
         getComponent: getConversationsComponent,
         options() {
-              return closure_1(homeIndicatorStore[41])();
+              return closure_1(homeIndicatorStore[42])();
             }
       };
-      const tmp33 = closure_10(closure_16.Screen, obj5);
-      cResult[11] = tmp33;
-      tmp30 = tmp33;
+      const tmp34 = closure_10(closure_16.Screen, obj5);
+      cResult[11] = tmp34;
+      tmp31 = tmp34;
     } else {
       class R {
         constructor() {
@@ -348,25 +353,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         name: "channel-secondary-view-chat",
         getComponent: getChannelSecondaryViewChatComponent,
         options() {
-              return closure_1(homeIndicatorStore[41])();
+              return closure_1(homeIndicatorStore[42])();
             },
         listeners: obj7
       };
       obj7 = { beforeRemove: resetChatKeyboard };
-      const tmp39 = closure_10(closure_16.Screen, obj6);
+      const tmp40 = closure_10(closure_16.Screen, obj6);
       const obj8 = { name: "auth", getComponent: getAuthComponent, options };
-      const tmp42 = closure_10(closure_16.Screen, obj8);
-      cResult[12] = tmp39;
-      cResult[13] = tmp42;
-      tmp35 = tmp42;
-      tmp34 = tmp39;
+      const tmp43 = closure_10(closure_16.Screen, obj8);
+      cResult[12] = tmp40;
+      cResult[13] = tmp43;
+      tmp36 = tmp43;
+      tmp35 = tmp40;
     } else {
       class R {
         constructor() {
           return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
         }
       }
-      tmp35 = cResult[13];
+      tmp36 = cResult[13];
     }
     const _Symbol4 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
@@ -379,9 +384,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       Screen = closure_16.Screen;
       obj10 = { presentation: "fullScreenModal", gestureEnabled: false };
       let merged = Object.assign(options);
-      const tmp49 = closure_10(Screen, obj9);
-      cResult[14] = tmp49;
-      tmp43 = tmp49;
+      const tmp50 = closure_10(Screen, obj9);
+      cResult[14] = tmp50;
+      tmp44 = tmp50;
     } else {
       class R {
         constructor() {
@@ -397,9 +402,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       const obj11 = { name: "orbs-arcade-game", getComponent: getOrbsArcadeGameComponent, options: { presentation: "fullScreenModal", animation: "slide_from_bottom", gestureEnabled: false, orientation: "portrait" } };
-      const tmp53 = closure_10(closure_16.Screen, obj11);
-      cResult[15] = tmp53;
-      tmp50 = tmp53;
+      const tmp54 = closure_10(closure_16.Screen, obj11);
+      cResult[15] = tmp54;
+      tmp51 = tmp54;
     } else {
       class R {
         constructor() {
@@ -445,7 +450,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       };
       cResult[16] = isChatBesideChannelList;
       cResult[17] = closure_10(closure_16.Screen, obj12);
-      const tmp57 = closure_10(closure_16.Screen, obj12);
+      const tmp58 = closure_10(closure_16.Screen, obj12);
     } else {
       class R {
         constructor() {
@@ -468,7 +473,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               route = route.route;
               const params = route.params;
               let str;
-              const tmp = closure_1(homeIndicatorStore[41]);
+              const tmp = closure_1(homeIndicatorStore[42]);
               if (params != null) {
                 const params2 = params.params;
                 if (params2 != null) {
@@ -493,7 +498,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         listeners: obj14,
         getComponent: getFriendsNavigatorComponent
       };
-      const tmp59 = closure_10;
+      const tmp60 = closure_10;
       const tmpResult6 = tmp(tmp2[8]);
       if (!tmpResult6.isAndroid()) {
         class R {
@@ -503,9 +508,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       obj14 = { beforeRemove: undefined };
-      const tmp59Result = tmp59(Screen2, obj13);
-      cResult[18] = tmp59Result;
-      tmp58 = tmp59Result;
+      const tmp60Result = tmp60(Screen2, obj13);
+      cResult[18] = tmp60Result;
+      tmp59 = tmp60Result;
     } else {
       class R {
         constructor() {
@@ -524,7 +529,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         name: "settings",
         options() {
               let obj2;
-              const tmp = closure_1(homeIndicatorStore[41]);
+              const tmp = closure_1(homeIndicatorStore[42]);
               const obj = first(homeIndicatorStore[9]);
               if (obj.isIpadOS()) {
                 obj2 = { presentation: "modal" };
@@ -535,9 +540,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             },
         getComponent: getSettingsComponent
       };
-      const tmp66 = closure_10(closure_16.Screen, obj15);
-      cResult[19] = tmp66;
-      tmp63 = tmp66;
+      const tmp67 = closure_10(closure_16.Screen, obj15);
+      cResult[19] = tmp67;
+      tmp64 = tmp67;
     } else {
       class R {
         constructor() {
@@ -556,12 +561,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         name: "sidebar",
         getComponent: getChannelDetailsComponent,
         options() {
-              return closure_1(homeIndicatorStore[41])({ lockOrientation: false });
+              return closure_1(homeIndicatorStore[42])({ lockOrientation: false });
             }
       };
-      const tmp70 = closure_10(closure_16.Screen, obj16);
-      cResult[20] = tmp70;
-      tmp67 = tmp70;
+      const tmp71 = closure_10(closure_16.Screen, obj16);
+      cResult[20] = tmp71;
+      tmp68 = tmp71;
     } else {
       class R {
         constructor() {
@@ -578,9 +583,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const Screen3 = closure_16.Screen;
       const obj17 = { name: "message-requests", options: require("getNavigationModalPresentation")(), getComponent: getMessageRequestsComponent };
-      const tmp74 = closure_10(Screen3, obj17);
-      cResult[21] = tmp74;
-      tmp71 = tmp74;
+      const tmp75 = closure_10(Screen3, obj17);
+      cResult[21] = tmp75;
+      tmp72 = tmp75;
     } else {
       class R {
         constructor() {
@@ -597,9 +602,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const Screen4 = closure_16.Screen;
       const obj18 = { name: "context-menu-commands", options: require("getNavigationModalPresentation")(), getComponent: getContextMenuCommandNavigatorComponent };
-      const tmp78 = closure_10(Screen4, obj18);
-      cResult[22] = tmp78;
-      tmp75 = tmp78;
+      const tmp79 = closure_10(Screen4, obj18);
+      cResult[22] = tmp79;
+      tmp76 = tmp79;
     } else {
       class R {
         constructor() {
@@ -614,7 +619,28 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
         }
       }
-      const obj19 = {
+      const obj19 = { name: "conjure", options: obj20, getComponent: getConjureHomeComponent };
+      const Screen5 = closure_16.Screen;
+      obj20 = { gestureEnabled: true };
+      let merged1 = Object.assign(tmp13);
+      const tmp86 = closure_10(Screen5, obj19);
+      cResult[23] = tmp86;
+      tmp80 = tmp86;
+    } else {
+      class R {
+        constructor() {
+          return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+        }
+      }
+    }
+    const _Symbol12 = Symbol;
+    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+      class R {
+        constructor() {
+          return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
+        }
+      }
+      const obj21 = {
         name: "modal",
         getId(params) {
               return params.params.modal.key;
@@ -628,7 +654,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 str = "slide_from_bottom";
               }
               let str2 = "transparentModal";
-              const tmp = closure_1(homeIndicatorStore[41]);
+              const tmp = closure_1(homeIndicatorStore[42]);
               if ("card" !== route.params.presentation) {
                 let str3 = route.params.presentation;
                 if (str3 == null) {
@@ -641,9 +667,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             },
         getComponent: getModalComponent
       };
-      const tmp82 = closure_10(closure_16.Screen, obj19);
-      cResult[23] = tmp82;
-      tmp79 = tmp82;
+      const tmp90 = closure_10(closure_16.Screen, obj21);
+      cResult[24] = tmp90;
+      tmp87 = tmp90;
     } else {
       class R {
         constructor() {
@@ -651,24 +677,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    if (cResult[24] === tmp54) {
+    if (cResult[25] === tmp55) {
       class R {
         constructor() {
           return { headerShown: false, autoHideHomeIndicator: homeIndicatorStore };
         }
       }
     }
-    const obj20 = { profile: tmp(tmp2[42]).Profiles.StackNavigator, children: closure_11(closure_16.Navigator, obj21) };
-    obj21 = { id: "root", screenOptions: tmp22, children: items1 };
-    items1 = [tmp24, tmp26, tmp30, tmp34, tmp35, tmp43, tmp50, tmp54, tmp58, tmp63, tmp67, tmp71, tmp75, tmp79];
+    const obj22 = { profile: tmp(tmp2[43]).Profiles.StackNavigator, children: closure_11(closure_16.Navigator, obj23) };
+    obj23 = { id: "root", screenOptions: tmp23, children: items1 };
+    items1 = [tmp25, tmp27, tmp31, tmp35, tmp36, tmp44, tmp51, tmp55, tmp59, tmp64, tmp68, tmp72, tmp76, tmp80, tmp87];
     const tmp7Result = require("StartupProfiler");
-    cResult[24] = tmp54;
-    cResult[25] = tmp22;
-    cResult[26] = tmp24;
-    cResult[27] = closure_10(tmp7Result, obj20);
-    const tmp88 = closure_10(tmp7Result, obj20);
+    cResult[25] = tmp55;
+    cResult[26] = tmp23;
+    cResult[27] = tmp25;
+    cResult[28] = closure_10(tmp7Result, obj22);
+    const tmp96 = closure_10(tmp7Result, obj22);
   }
-  const obj22 = {
+  const obj24 = {
     name: "main",
     options,
     children() {
@@ -683,7 +709,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             str = "default";
           }
           const obj = { orientation: str, headerShown: false };
-          const obj2 = first(homeIndicatorStore[33]);
+          const obj2 = first(homeIndicatorStore[34]);
           const merged = Object.assign(obj2.getDefaultStackHeaderProps(navigation));
           const merged1 = Object.assign(closure_1_7);
           return obj;
@@ -714,8 +740,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         options(arg0) {
           let route;
           ({ navigation, route } = arg0);
-          const obj = { headerShown: true, header: closure_2_0(closure_2_2[33]).renderHeader, animation };
-          const obj2 = closure_2_0(closure_2_2[33]);
+          const obj = { headerShown: true, header: closure_2_0(closure_2_2[34]).renderHeader, animation };
+          const obj2 = closure_2_0(closure_2_2[34]);
           const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
           const merged1 = Object.assign(animation2);
           return obj;
@@ -727,7 +753,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return unpackModuleId(tmp2, obj3);
     }
   };
-  const tmp25 = closure_10(closure_16.Screen, obj22);
+  const tmp26 = closure_10(closure_16.Screen, obj24);
   if (accessibilityNativeStackOptions != null) {
     class R {
       constructor() {
@@ -737,7 +763,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   cResult[7] = undefined;
   cResult[8] = first;
-  cResult[9] = tmp25;
+  cResult[9] = tmp26;
 }) : (function StackNavigator() {
   let accessibilityNativeStackOptions;
   let closure_3;
@@ -753,20 +779,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const screenReaderEnabled = obj.useScreenReaderEnabled();
   let obj2 = require("MainShared");
   const appKeyCommands = obj2.useAppKeyCommands();
-  let tmp4 = stateFromStores(first[35])();
+  let tmp4 = stateFromStores(first[36])();
   let obj3 = require("useStateFromStores");
   let items = [accessibilityNativeStackOptions];
   stateFromStores = obj3.useStateFromStores(items, () => null != accessibilityNativeStackOptions.getSessionId());
   [first, _slicedToArray] = homeIndicatorStore.useState(closure_7.animation);
   let obj4 = require("HomeIndicator");
   homeIndicatorStore = obj4.useHomeIndicatorStore((autoHideHomeIndicator) => autoHideHomeIndicator.autoHideHomeIndicator);
-  const isChatBesideChannelList = stateFromStores(first[38])().isChatBesideChannelList;
+  const isChatBesideChannelList = stateFromStores(first[39])().isChatBesideChannelList;
   let obj5 = require("Navigator");
   accessibilityNativeStackOptions = obj5.useAccessibilityNativeStackOptions();
   let items1 = [tmp, stateFromStores, homeIndicatorStore, accessibilityNativeStackOptions, first, isChatBesideChannelList];
   return homeIndicatorStore.useMemo(() => {
     let Navigator;
-    let animation2;
     let autoHideHomeIndicator;
     let fn;
     let items1;
@@ -775,6 +800,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let obj17;
     let obj18;
     let obj2;
+    let obj24;
     let obj4;
     let obj9;
     let tmp6;
@@ -804,7 +830,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       children: items1
     };
     Navigator = closure_16.Navigator;
-    items1 = [, , , , , , , , , , , , , ];
+    items1 = [, , , , , , , , , , , , , , ];
     const obj5 = {
       name: "main",
       options,
@@ -821,7 +847,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               str = "default";
             }
             const obj = { orientation: str, headerShown: false };
-            const obj2 = closure_1_0(closure_1_2[33]);
+            const obj2 = closure_1_0(closure_1_2[34]);
             const merged = Object.assign(obj2.getDefaultStackHeaderProps(navigation));
             const merged1 = Object.assign(animation2);
             return obj;
@@ -852,8 +878,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           options(arg0) {
             let route;
             ({ navigation, route } = arg0);
-            const obj = { headerShown: true, header: closure_2_0(closure_2_2[33]).renderHeader, animation };
-            const obj2 = closure_2_0(closure_2_2[33]);
+            const obj = { headerShown: true, header: closure_2_0(closure_2_2[34]).renderHeader, animation };
+            const obj2 = closure_2_0(closure_2_2[34]);
             const merged = Object.assign(obj2.getDefaultChannelStackHeaderProps(navigation, route));
             const merged1 = Object.assign(animation2);
             return obj;
@@ -861,7 +887,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           getComponent: getComponent2
         };
         items[1] = tmp4(tmp3.Screen, obj4);
-        items1 = [tmp(Navigator, obj), styles(first[40]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
+        items1 = [tmp(Navigator, obj), styles(first[41]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
         return closure_2_11(tmp2, obj3);
       }
     };
@@ -873,7 +899,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       name: "conversations",
       getComponent: getConversationsComponent,
       options() {
-        return stateFromStores(first[41])();
+        return stateFromStores(first[42])();
       }
     };
     items1[2] = tmp(closure_16.Screen, obj7);
@@ -881,7 +907,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       name: "channel-secondary-view-chat",
       getComponent: getChannelSecondaryViewChatComponent,
       options() {
-        return stateFromStores(first[41])();
+        return stateFromStores(first[42])();
       },
       listeners: obj9
     };
@@ -901,7 +927,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       options() {
         let obj2;
         let obj4;
-        const tmp2 = stateFromStores(first[41]);
+        const tmp2 = stateFromStores(first[42]);
         const obj = styles(first[9]);
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -935,7 +961,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         route = route.route;
         const params = route.params;
         let str;
-        const tmp = stateFromStores(first[41]);
+        const tmp = stateFromStores(first[42]);
         if (params != null) {
           const params2 = params.params;
           if (params2 != null) {
@@ -976,7 +1002,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       name: "settings",
       options() {
         let obj2;
-        const tmp = stateFromStores(first[41]);
+        const tmp = stateFromStores(first[42]);
         const obj = styles(first[9]);
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -992,7 +1018,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       name: "sidebar",
       getComponent: getChannelDetailsComponent,
       options() {
-        return stateFromStores(first[41])({ lockOrientation: false });
+        return stateFromStores(first[42])({ lockOrientation: false });
       }
     };
     items1[10] = tmp(closure_16.Screen, obj20);
@@ -1000,7 +1026,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items1[11] = tmp(closure_16.Screen, obj21);
     const obj22 = { name: "context-menu-commands", options: getNavigationModalPresentationDefault(), getComponent: getContextMenuCommandNavigatorComponent };
     items1[12] = tmp(closure_16.Screen, obj22);
-    const obj23 = {
+    const obj23 = { name: "conjure", options: obj24, getComponent: getConjureHomeComponent };
+    const Screen3 = tmp14.Screen;
+    obj24 = { gestureEnabled: true };
+    let merged1 = Object.assign(animation2);
+    items1[13] = tmp(Screen3, obj23);
+    const obj25 = {
       name: "modal",
       getId(params) {
         return params.params.modal.key;
@@ -1014,7 +1045,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           str = "slide_from_bottom";
         }
         let str2 = "transparentModal";
-        const tmp = stateFromStores(first[41]);
+        const tmp = stateFromStores(first[42]);
         if ("card" !== route.params.presentation) {
           let str3 = route.params.presentation;
           if (str3 == null) {
@@ -1027,7 +1058,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       },
       getComponent: getModalComponent
     };
-    items1[13] = tmp(closure_16.Screen, obj23);
+    items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
     items2 = [tmp(tmp8, obj16), AppComponents.APP_EXTRA_COMPONENTS, AppComponents.APP_EXTRA_COMPONENTS_NEVER_FREEZE, AppComponents.APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);

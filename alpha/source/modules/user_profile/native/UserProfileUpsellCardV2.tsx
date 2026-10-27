@@ -1,9 +1,9 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15942
+// Function ID: 15943
 // Name: UserProfileUpsellCardV2
 // Dependencies: [19, 17, 7544, 21, 4971, 587, 558, 576, 5234, 9425, 5244, 5258, 1107, 2]
 
-// Module 15941 (UserProfileUpsellCardV2)
+// Module 15942 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

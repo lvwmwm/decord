@@ -1,9 +1,9 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16257
+// Function ID: 16258
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4971, 16257, 1128, 1202, 5234, 11054, 5908, 16234, 5978, 1417, 5246, 10791, 9218, 7959, 6903, 7295, 6904, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4971, 16258, 1128, 1202, 5234, 11055, 5908, 16235, 5978, 1417, 5246, 10791, 9218, 7959, 6903, 7295, 6904, 2]
 
-// Module 16256 (ConnectedApplicationIdentity)
+// Module 16257 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import Icon from "Icon" /* 5246 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
 import AlertDefault from "Alert" /* 5978 */;
-import InfoBoxDefault from "InfoBox" /* 11054 */;
+import InfoBoxDefault from "InfoBox" /* 11055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -315,7 +315,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
                     v0 = 0;
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp17) {
                 if (0 === v0) {
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           if (0 === c3) {

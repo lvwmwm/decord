@@ -1,18 +1,18 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11627
+// Function ID: 11628
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 11614, 21, 558, 576, 573, 1128, 11613, 7295, 11627, 2]
+// Dependencies: [19, 11615, 21, 558, 576, 573, 1128, 11614, 7295, 11628, 2]
 
-// Module 11626 (UserSettingsVoiceOverlay)
+// Module 11627 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7295 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 11613 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11627 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 11614 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11628 */;
 import react from "react" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11614 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11615 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp11 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    const UserSettingsTableRowGroup = tmp(11613).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11614).UserSettingsTableRowGroup;
     ({ label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
     const TableSwitchRow = tmp(7295).TableSwitchRow;
     const tmp17 = <UserSettingsTableRowGroup title={tmp8} hasIcons={false}>{null}</UserSettingsTableRowGroup>;

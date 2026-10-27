@@ -1,9 +1,9 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15032
+// Function ID: 15033
 // Name: GuildOfficialMessagesStore
 // Dependencies: [4823, 4883, 4845, 4913, 1392, 1087, 6012, 1405, 504, 584, 2]
 
-// Module 15031 (GuildOfficialMessagesStore)
+// Module 15032 (GuildOfficialMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

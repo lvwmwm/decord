@@ -1,16 +1,16 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12724
+// Function ID: 12725
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 12722, 21, 558, 576, 6924, 12723, 12728, 12730, 7095, 1128, 12731, 2]
+// Dependencies: [19, 12725, 21, 558, 576, 6924, 12726, 12731, 12733, 7095, 1128, 12734, 2]
 
-// Module 12721 (GameOrganizationJoinModal)
+// Module 12724 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import StepModal2 from "StepModal" /* 12731 */;
+import StepModal2 from "StepModal" /* 12734 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12722 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

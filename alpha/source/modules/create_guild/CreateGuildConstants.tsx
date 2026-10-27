@@ -1,10 +1,10 @@
-// Module ID: 13611
-// Function ID: 13612
+// Module ID: 13613
+// Function ID: 13614
 // Name: create_guild/CreateGuildConstants
 // Dependencies: [1087, 1128, 4908, 1099, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 13611 (create_guild/CreateGuildConstants)
+// Module 13613 (create_guild/CreateGuildConstants)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import intl77 from "intl" /* 1128 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4908 */;

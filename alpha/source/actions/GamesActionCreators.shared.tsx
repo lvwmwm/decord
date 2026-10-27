@@ -1,17 +1,17 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11363
+// Function ID: 11364
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4822, 6772, 4823, 5712, 1087, 6776, 7409, 11356, 11361, 11363, 4892, 12710, 2031, 5626, 11396, 11395, 10767, 6780, 12713, 12714, 7411, 2]
+// Dependencies: [5, 4822, 6772, 4823, 5712, 1087, 6776, 7409, 11357, 11362, 11364, 4892, 12713, 2031, 5626, 11397, 11396, 10767, 6780, 12716, 12717, 7411, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11362 (tryJoinAsFrame)
+// Module 11363 (tryJoinAsFrame)
 import Constants from "Constants" /* 1087 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11356 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11361 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11363 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12714 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11357 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11362 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11364 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
@@ -47,7 +47,7 @@ let obj = function _tryJoinAsFrame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -194,7 +194,7 @@ obj = function _startFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -241,7 +241,7 @@ obj = function _startFrame() {
               frameParticipantId = undefined;
               referrerId = 1;
               source = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === referrerId) {
             if (arg0 === 1) {
@@ -348,7 +348,7 @@ obj = function _startActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;

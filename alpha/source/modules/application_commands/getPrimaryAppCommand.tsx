@@ -1,10 +1,10 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11404
+// Function ID: 11405
 // Name: getPrimaryAppCommand
 // Dependencies: [5, 19, 4823, 9650, 2000, 9656, 558, 576, 9654, 5603, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 11403 (getPrimaryAppCommand)
+// Module 11404 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5603 */;
@@ -37,7 +37,7 @@ let obj = function _getPrimaryAppCommand() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

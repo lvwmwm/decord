@@ -1,9 +1,9 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 15749
+// Function ID: 15750
 // Name: setActivity
-// Dependencies: [32, 109, 5, 2045, 6378, 1087, 15724, 8827, 15709, 9264, 584, 15743, 11202, 11356, 12, 1104, 8620, 1267, 2]
+// Dependencies: [32, 109, 5, 2045, 6378, 1087, 15725, 8827, 15710, 9264, 584, 15744, 11203, 11357, 12, 1104, 8620, 1267, 2]
 
-// Module 15748 (setActivity)
+// Module 15749 (setActivity)
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import Constants_mod from "Constants" /* 6378 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15724 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
 import size from "module_2" /* 2 */;
 
 let c14, c15, constants;
@@ -64,7 +64,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

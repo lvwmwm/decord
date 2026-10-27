@@ -60,7 +60,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "r" };
+  obj = { lineHeight: "Array" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;

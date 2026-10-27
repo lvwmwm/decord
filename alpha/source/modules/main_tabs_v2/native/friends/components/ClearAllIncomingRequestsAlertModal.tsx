@@ -1,9 +1,9 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18238
+// Function ID: 18239
 // Name: ClearAllIncomingRequestsAlertModal
 // Dependencies: [5, 19, 21, 7414, 558, 576, 1128, 5914, 5914, 2]
 
-// Module 18229 (ClearAllIncomingRequestsAlertModal)
+// Module 18238 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
 import AlertModal2 from "AlertModal" /* 5914 */;
@@ -34,7 +34,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c0 = 3;

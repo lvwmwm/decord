@@ -1,9 +1,9 @@
-// Module ID: 18847
-// Function ID: 18848
+// Module ID: 18857
+// Function ID: 18858
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1392, 1087, 7214, 1384, 18848, 1297, 1257, 1267, 2]
+// Dependencies: [5, 17, 1392, 1087, 7214, 1384, 18858, 1297, 1257, 1267, 2]
 
-// Module 18847 (IOSUserIdentifiersManager)
+// Module 18857 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
@@ -45,7 +45,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
             return obj;
           }
           _self = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp8) {
           _self = 3;
           throw tmp8;

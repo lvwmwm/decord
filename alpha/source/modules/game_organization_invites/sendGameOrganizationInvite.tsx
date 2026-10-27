@@ -1,15 +1,15 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11324
+// Function ID: 11325
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 9131, 7809, 4978, 1128, 11324, 2]
+// Dependencies: [5, 9131, 7809, 4978, 1128, 11325, 2]
 // Exports: default
 
-// Module 11323 (sendGameOrganizationInvite)
+// Module 11324 (sendGameOrganizationInvite)
 import intl4 from "intl" /* 1128 */;
 import shared from "shared" /* 4978 */;
 import Constants from "Constants" /* 7809 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9131 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11324 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11325 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _sendGameOrganizationInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ let obj = function _sendGameOrganizationInvite() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
           AccessibilityAnnouncer = closure_4;
           c7 = 3;

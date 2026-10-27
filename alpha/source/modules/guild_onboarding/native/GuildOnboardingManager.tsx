@@ -1,9 +1,9 @@
-// Module ID: 18816
-// Function ID: 18817
+// Module ID: 18826
+// Function ID: 18827
 // Name: GuildOnboardingManager
 // Dependencies: [4883, 4845, 5002, 1087, 4889, 7214, 7190, 1405, 2]
 
-// Module 18816 (GuildOnboardingManager)
+// Module 18826 (GuildOnboardingManager)
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4889 */;

@@ -1,9 +1,9 @@
-// Module ID: 19435
-// Function ID: 19436
+// Module ID: 19445
+// Function ID: 19446
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7645, 1392, 7646, 558, 576, 504, 8125, 12879, 2]
+// Dependencies: [32, 19, 7645, 1392, 7646, 558, 576, 504, 8125, 12882, 2]
 
-// Module 19435 (usePendingParentRequests)
+// Module 19445 (usePendingParentRequests)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, currentUser, dependencyMap, map, set;
 
 let tmp;
-const useFamilyCenterActions = tmp(12879);
+const useFamilyCenterActions = tmp(12882);
 const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedPendingRequests(arr, arg1) {
@@ -459,7 +459,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   let tmp15;
   let tmp16;
   let tmp4;
-  const f140202 = () => {
+  const f140292 = () => {
     set = new Set();
     return set;
   };
@@ -488,8 +488,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f140202), 2);
-  tmp2(react.useState(f140202), 2);
+  [c6, c7] = tmp2(react.useState(f140292), 2);
+  tmp2(react.useState(f140292), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -668,7 +668,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f140211 = () => {
+  const f140301 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -692,8 +692,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingRe
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f140211), 2);
-  const tmp2 = _slicedToArray(react.useState(f140211), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f140301), 2);
+  const tmp2 = _slicedToArray(react.useState(f140301), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

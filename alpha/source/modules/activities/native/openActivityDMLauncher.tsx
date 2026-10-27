@@ -1,10 +1,10 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15233
+// Function ID: 15234
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1504, 14192, 11360, 7278, 5634, 6809, 7411, 5159, 1631, 2]
+// Dependencies: [5, 1504, 14193, 11361, 7278, 5634, 6809, 7411, 5159, 1631, 2]
 // Exports: default
 
-// Module 15232 (openActivityDMLauncher)
+// Module 15233 (openActivityDMLauncher)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let obj = function _openActivityDMLauncher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _openActivityDMLauncher() {
               id = undefined;
               c3 = 1;
               linkChannelId = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -159,7 +159,7 @@ let obj = function _openActivityDMLauncher() {
               }
             }
             linkChannelId = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           linkChannelId = 3;

@@ -1,9 +1,9 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13032
+// Function ID: 13033
 // Name: TraitOptionItem
 // Dependencies: [17, 6015, 21, 587, 4971, 558, 576, 6016, 9425, 5258, 6966, 6362, 7962, 5669, 6040, 5039, 2]
 
-// Module 13029 (TraitOptionItem)
+// Module 13032 (TraitOptionItem)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react_native from "react-native" /* 5039 */;

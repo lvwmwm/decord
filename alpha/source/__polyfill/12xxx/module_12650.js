@@ -1,20 +1,17 @@
 // Module ID: 12650
 // Function ID: 12651
-// Dependencies: [12649]
-// Exports: getTraceMetaTags
+// Dependencies: []
+// Exports: parameterize
 
 // Module 12650
-import _mod12649 from "module_12649" /* 12649 */;
 
-
-export const getTraceMetaTags = function getTraceMetaTags() {
-  const obj = _mod12649;
-  const entries1 = entries(obj.getTraceData());
-  const mapped = entries1.map((item) => {
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = item;
-    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
-  });
-  return mapped.join("\n");
+export const parameterize = function parameterize(join) {
+  const substr = [...arguments].slice();
+  const items = [join, ...substr];
+  const string = new String(String.raw.apply(items));
+  const str = join.join("\0");
+  const str2 = str.replace(/%/g, "%%");
+  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
+  string.__sentry_template_values__ = substr;
+  return string;
 };

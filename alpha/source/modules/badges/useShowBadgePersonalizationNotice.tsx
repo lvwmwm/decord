@@ -1,13 +1,13 @@
-// Module ID: 11132
-// Function ID: 11133
+// Module ID: 11133
+// Function ID: 11134
 // Name: useShowBadgePersonalizationNotice
-// Dependencies: [6670, 1087, 558, 576, 504, 11125, 2]
+// Dependencies: [6670, 1087, 558, 576, 504, 11126, 2]
 
-// Module 11132 (useShowBadgePersonalizationNotice)
+// Module 11133 (useShowBadgePersonalizationNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import BadgeUtils from "BadgeUtils" /* 11125 */;
+import BadgeUtils from "BadgeUtils" /* 11126 */;
 import ConsentStore from "ConsentStore" /* 6670 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

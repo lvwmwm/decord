@@ -1,11 +1,11 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11408
+// Function ID: 11409
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 2045, 2024, 4823, 11388, 11408, 11409, 2]
+// Dependencies: [5, 2045, 2024, 4823, 11389, 11409, 11410, 2]
 // Exports: default
 
-// Module 11407 (getCachedOrFetchActivityApplicationForLaunch)
-import fetchShelf from "fetchShelf" /* 11388 */;
+// Module 11408 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 11389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
@@ -31,7 +31,7 @@ let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

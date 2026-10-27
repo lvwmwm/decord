@@ -1,10 +1,10 @@
-// Module ID: 17925
-// Function ID: 17926
+// Module ID: 17934
+// Function ID: 17935
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 17919, 17926, 21, 9616, 10641, 8559, 17927, 10647, 8546, 16618, 12886, 11799, 12763, 9965, 17928, 9967, 13973, 4971, 587, 558, 576, 5039, 5244, 1633, 1505, 17930, 2002, 8841, 5663, 1128, 504, 15648, 5234, 2]
+// Dependencies: [5, 32, 19, 17, 17928, 17935, 21, 9616, 10641, 8559, 17936, 10647, 8546, 16619, 12889, 12240, 12766, 9965, 17937, 9967, 13975, 4971, 587, 558, 576, 5039, 5244, 1633, 1505, 17939, 2002, 8841, 5663, 1128, 504, 15649, 5234, 2]
 // Exports: default
 
-// Module 17925 (ICYMITopicsScreen)
+// Module 17934 (ICYMITopicsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -17,20 +17,20 @@ import FoodIcon from "FoodIcon" /* 9965 */;
 import BicycleIcon from "BicycleIcon" /* 9967 */;
 import TvIcon from "TvIcon" /* 10641 */;
 import MusicIcon from "MusicIcon" /* 10647 */;
-import RobotIcon from "RobotIcon" /* 11799 */;
-import MedalIcon from "MedalIcon" /* 12763 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12886 */;
-import PencilSparkleIcon from "PencilSparkleIcon" /* 13973 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15648 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16618 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17926 */;
-import ScienceIcon from "ScienceIcon" /* 17927 */;
-import PaintbrushThinIcon from "PaintbrushThinIcon" /* 17928 */;
+import RobotIcon from "RobotIcon" /* 12240 */;
+import MedalIcon from "MedalIcon" /* 12766 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12889 */;
+import PencilSparkleIcon from "PencilSparkleIcon" /* 13975 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15649 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16619 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17935 */;
+import ScienceIcon from "ScienceIcon" /* 17936 */;
+import PaintbrushThinIcon from "PaintbrushThinIcon" /* 17937 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17919 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17928 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -248,7 +248,7 @@ export default function ICYMITopicsScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -306,7 +306,7 @@ export default function ICYMITopicsScreen() {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v2(false), 500);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         c3 = 3;

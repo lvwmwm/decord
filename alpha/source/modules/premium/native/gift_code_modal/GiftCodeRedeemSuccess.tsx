@@ -1,9 +1,9 @@
-// Module ID: 11181
-// Function ID: 11182
+// Module ID: 11182
+// Function ID: 11183
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 6824, 21, 4971, 587, 558, 576, 504, 11047, 7257, 11051, 7662, 1995, 8660, 11182, 7330, 9418, 7261, 9390, 6484, 1202, 11055, 11173, 11174, 11175, 5234, 1128, 6372, 5244, 6672, 7221, 2]
+// Dependencies: [32, 19, 17, 6824, 21, 4971, 587, 558, 576, 504, 11048, 7257, 11052, 7662, 1995, 8660, 11183, 7330, 9418, 7261, 9390, 6484, 1202, 11056, 11174, 11175, 11176, 5234, 1128, 6372, 5244, 6672, 7221, 2]
 
-// Module 11181 (GiftCodeRedeemSuccess)
+// Module 11182 (GiftCodeRedeemSuccess)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
@@ -16,10 +16,10 @@ import GameIcon from "GameIcon" /* 7261 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7330 */;
 import BundleSampleV2Default from "BundleSampleV2" /* 9390 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9418 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11055 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11173 */;
-import NameplatePreview from "NameplatePreview" /* 11174 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11175 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11056 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11174 */;
+import NameplatePreview from "NameplatePreview" /* 11175 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11176 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -91,12 +91,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   }
   let tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult7 = tmp(11047);
+  const tmpResult7 = tmp(11048);
   const getOrFetchSubscriptionPlan = tmpResult7.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const tmpResult8 = tmp(7257);
   const getOrFetchApplication = tmpResult8.useGetOrFetchApplication(giftCode.applicationId);
-  const useFetchCollectiblesProduct = tmp(11051).useFetchCollectiblesProduct;
-  tmp(11051);
+  const useFetchCollectiblesProduct = tmp(11052).useFetchCollectiblesProduct;
+  tmp(11052);
   let skuId = null;
   const tmpResult10 = tmp(7662);
   if (tmpResult10.isCollectiblesGiftCode(giftCode)) {
@@ -151,7 +151,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   } else {
     tmp21 = cResult[8];
   }
-  const tmpResult12 = tmp(11182);
+  const tmpResult12 = tmp(11183);
   const handleUseNow1 = tmpResult12.useHandleUseNow(tmp21);
   const handleUseNow = handleUseNow1.handleUseNow;
   const canUseNow = handleUseNow1.canUseNow;
@@ -600,12 +600,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   let obj = giftCode(504);
   const items = [SKUStore];
   const stateFromStores = obj.useStateFromStores(items, () => SKUStore.get(giftCode.skuId));
-  let obj2 = giftCode(11047);
+  let obj2 = giftCode(11048);
   const getOrFetchSubscriptionPlan = obj2.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const obj3 = giftCode(7257);
   const getOrFetchApplication = obj3.useGetOrFetchApplication(giftCode.applicationId);
-  const useFetchCollectiblesProduct = giftCode(11051).useFetchCollectiblesProduct;
-  giftCode(11051);
+  const useFetchCollectiblesProduct = giftCode(11052).useFetchCollectiblesProduct;
+  giftCode(11052);
   let skuId = null;
   const obj4 = giftCode(7662);
   if (obj4.isCollectiblesGiftCode(giftCode)) {
@@ -631,8 +631,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRede
   const shopProductItems = useShopProductItems(tmp12);
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
   let tmp15 = product;
-  const useHandleUseNow = tmp2(11182).useHandleUseNow;
-  tmp2(11182);
+  const useHandleUseNow = tmp2(11183).useHandleUseNow;
+  tmp2(11183);
   if (product == null) {
     tmp15 = { skuId: "", type: tmp2(1995).CollectiblesItemType.BUNDLE, items: [] };
     const obj6 = { skuId: "", type: tmp2(1995).CollectiblesItemType.BUNDLE, items: [] };

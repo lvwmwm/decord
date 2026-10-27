@@ -1,10 +1,10 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11417
+// Function ID: 11418
 // Name: showActivitiesInvalidPermissionsAlert
 // Dependencies: [5908, 1128, 2]
 // Exports: showActivitiesInvalidPermissionsAlert
 
-// Module 11416 (showActivitiesInvalidPermissionsAlert)
+// Module 11417 (showActivitiesInvalidPermissionsAlert)
 import intl3 from "intl" /* 1128 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
 import size from "module_2" /* 2 */;

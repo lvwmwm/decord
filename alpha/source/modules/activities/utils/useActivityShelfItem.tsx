@@ -1,10 +1,10 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 11928
+// Function ID: 11929
 // Name: useActivityShelfItem
-// Dependencies: [5, 4822, 2026, 1087, 558, 576, 5633, 1384, 11507, 12038, 12039, 2000, 6811, 11454, 11453, 7257, 4892, 7253, 11360, 11363, 10771, 2]
+// Dependencies: [5, 4822, 2026, 1087, 558, 576, 5633, 1384, 11508, 11929, 11930, 2000, 6811, 11455, 11454, 7257, 4892, 7253, 11361, 11364, 10771, 2]
 // Exports: getStaffReleasePhase
 
-// Module 12037 (useActivityShelfItem)
+// Module 11928 (useActivityShelfItem)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -15,10 +15,10 @@ import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6811 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7257 */;
 import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10771 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11453 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11454 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11507 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12039 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11454 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11455 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11508 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11930 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ import size from "module_2" /* 2 */;
 
 let c2;
 
-const f112841 = (str) => str.toUpperCase();
+const f112439 = (str) => str.toUpperCase();
 const STAFF_RELEASE_PHASES = Constants2.STAFF_RELEASE_PHASES;
 const ApplicationFlags = Constants.ApplicationFlags;
 const ActivityAction = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
@@ -169,7 +169,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f112841);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f112439);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -219,7 +219,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       }
       let tmp13 = null;
       if (null != activity.activity_preview_video_asset_id) {
-        tmp13 = tmp5(12038)(application.id, activity.activity_preview_video_asset_id);
+        tmp13 = tmp5(11929)(application.id, activity.activity_preview_video_asset_id);
       }
       cResult[6] = activity.activity_preview_video_asset_id;
       cResult[7] = application.id;
@@ -277,7 +277,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(12038)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(11929)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -300,7 +300,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f112841);
+      replaced = str4.replace(/(^\w|\s\w)/g, f112439);
     }
     tmp16 = replaced;
   } else {
@@ -509,7 +509,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -550,7 +550,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
                     }
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp21) {
                 c2 = 3;
@@ -643,7 +643,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -685,7 +685,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
               }
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp21) {
           c2 = 3;
@@ -708,7 +708,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -764,7 +764,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
             return obj;
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -800,7 +800,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f112841);
+    replaced = str4.replace(/(^\w|\s\w)/g, f112439);
   }
   return replaced;
 }

@@ -1,10 +1,10 @@
-// Module ID: 15801
-// Function ID: 15802
+// Module ID: 15802
+// Function ID: 15803
 // Name: MediaPlayerManager
-// Dependencies: [17, 4822, 6804, 4823, 6010, 4903, 2001, 1087, 5609, 15802, 1098, 3, 570, 1274, 2004, 5151, 584, 1384, 568, 7566, 6802, 2]
+// Dependencies: [17, 4822, 6804, 4823, 6010, 4903, 2001, 1087, 5609, 15803, 1098, 3, 570, 1274, 2004, 5151, 584, 1384, 568, 7566, 6802, 2]
 // Exports: isPlaybackComplete
 
-// Module 15801 (MediaPlayerManager)
+// Module 15802 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4823 */;
 import MessageStore from "MessageStore" /* 6010 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15802 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15803 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: "RNPlainText",
+    showPip: "PLAY_ON_PLAYSTATION",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 6
+    currentlyDisplayedChannelId: "salade"
   };
   return obj;
 });

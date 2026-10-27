@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "dispatch", paymentGatewayOverride: "ix" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -103,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12819
+// Function ID: 12820
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4877, 4845, 4903, 1087, 12817, 1388, 11, 1297, 12810, 5711, 7627, 584, 2]
+// Dependencies: [5, 4877, 4845, 4903, 1087, 12820, 1388, 11, 1297, 12813, 5711, 7627, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12816 (GuildAutomodActionCreators)
+// Module 12819 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import AutomodFeedback from "AutomodFeedback" /* 7627 */;
-import DataUtils from "DataUtils" /* 12817 */;
+import DataUtils from "DataUtils" /* 12820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 4877 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

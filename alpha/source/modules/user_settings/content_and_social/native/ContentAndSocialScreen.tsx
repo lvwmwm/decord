@@ -1,9 +1,9 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17270
+// Function ID: 17271
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8332, 1087, 21, 4971, 587, 1128, 2067, 17270, 16106, 13583, 558, 576, 17275, 7398, 11208, 16104, 15977, 17276, 5234, 2]
+// Dependencies: [32, 19, 17, 8332, 1087, 21, 4971, 587, 1128, 2067, 17271, 16107, 13585, 558, 576, 17276, 7398, 11209, 16105, 15978, 17277, 5234, 2]
 
-// Module 17269 (ContentAndSocialScreen)
+// Module 17270 (ContentAndSocialScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,14 +12,14 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7398 */;
 import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
-import SettingLayoutDefault from "SettingLayout" /* 15977 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 16104 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 16106 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17270 */;
-import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 17275 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17276 */;
+import SettingBuilders from "SettingBuilders" /* 11209 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
+import SettingLayoutDefault from "SettingLayout" /* 15978 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 16105 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 16107 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17271 */;
+import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 17276 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -145,7 +145,7 @@ function getSocialPermissions(allServersSelected) {
   tmp11 = undefined;
   if (allServersSelected) {
     if (showMessageRequestsNotice) {
-      tmp11 = React4(tmp3(16106).MessageRequestsNotice, {});
+      tmp11 = React4(tmp3(16107).MessageRequestsNotice, {});
     }
   }
   items2[4] = obj5;
@@ -435,7 +435,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGam
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(15977), obj);
+    tmp7 = React4(tmp2(15978), obj);
   }
   return tmp7;
 });
@@ -497,7 +497,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
   const first1 = _slicedToArray(react.useState(tmp8), 1)[0];
   if (cResult[3] !== first1) {
     const obj2 = { defaultIndex: first1, settings: first };
-    const tmpResult = tmp(11208);
+    const tmpResult = tmp(11209);
     const segmentedControl = tmpResult.createSegmentedControl(obj2);
     cResult[3] = first1;
     cResult[4] = segmentedControl;
@@ -516,7 +516,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
   }
   return tmp13;
 }) : (function ContentAndSocialSettings(route) {
-  const f129921 = () => {
+  const f129965 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -536,9 +536,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentAndSo
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f129921), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f129965), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f129921), 2);
+  _slicedToArray(react.useState(f129965), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };

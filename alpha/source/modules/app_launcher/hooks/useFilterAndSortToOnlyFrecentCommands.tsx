@@ -1,10 +1,10 @@
-// Module ID: 12141
-// Function ID: 12142
+// Module ID: 12032
+// Function ID: 12033
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 9652, 12097, 9657, 2]
+// Dependencies: [19, 9652, 11988, 9657, 2]
 // Exports: default
 
-// Module 12141 (useFilterAndSortToOnlyFrecentCommands)
+// Module 12032 (useFilterAndSortToOnlyFrecentCommands)
 import react from "react" /* 19 */;
 import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9652 */;
 import size from "module_2" /* 2 */;

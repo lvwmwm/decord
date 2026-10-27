@@ -1,9 +1,9 @@
-// Module ID: 13741
-// Function ID: 13742
+// Module ID: 13743
+// Function ID: 13744
 // Name: ActivitiesPrivateChannelCallTooltip
 // Dependencies: [19, 17, 4972, 2026, 21, 4971, 558, 576, 504, 5052, 5206, 1128, 5244, 1202, 2]
 
-// Module 13741 (ActivitiesPrivateChannelCallTooltip)
+// Module 13743 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 2026 */;

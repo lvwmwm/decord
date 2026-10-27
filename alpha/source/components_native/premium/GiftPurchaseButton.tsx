@@ -1,9 +1,9 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14881
+// Function ID: 14882
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2058, 7524, 21, 558, 576, 5251, 5234, 504, 7519, 13912, 7253, 10499, 5909, 1128, 2053, 10446, 5245, 14881, 2]
+// Dependencies: [5, 19, 17, 2058, 7524, 21, 558, 576, 5251, 5234, 504, 7519, 13914, 7253, 10499, 5909, 1128, 2053, 10446, 5245, 14882, 2]
 
-// Module 14880 (GiftPurchaseButton)
+// Module 14881 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
     tmp12 = cResult[5];
   }
   _asyncToGenerator = tmp12;
-  const tmpResult9 = tmp(13912);
+  const tmpResult9 = tmp(13914);
   const canPurchaseIAP = tmpResult9.useCanPurchaseIAP(tmp12);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [IAPStore];
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftPurcha
             }
             const BaseTextButton = tmp(5245).BaseTextButton;
             let obj4 = { style: obj3, basePlanId: planId, isCurrentPlan: tmp23, isGift: true, product: stateFromStores2 };
-            const tmp28 = tmp24(14881)(obj4);
+            const tmp28 = tmp24(14882)(obj4);
             if (cResult[19] === BaseTextButton) {
               if (cResult[20] === tmp26) {
                 if (cResult[21] === stateFromStores1) {

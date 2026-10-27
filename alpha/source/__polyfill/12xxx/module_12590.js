@@ -1,85 +1,151 @@
 // Module ID: 12590
 // Function ID: 12591
-// Dependencies: [12591, 12588]
-// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
+// Dependencies: [12588]
+// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
 
 // Module 12590
-import generatePropagationContext from "generatePropagationContext" /* 12588 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12591 */;
+import _mod12588 from "module_12588" /* 12588 */;
 
-const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
-export const TRACEPARENT_REGEXP = regExp;
-export const extractTraceparentData = function extractTraceparentData(str) {
-  const tmp = str;
-  if (tmp) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
+export const isMatchingPattern = function isMatchingPattern(arr, test) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  const obj = _mod12588;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod12588;
+    if (tmpResult.isRegExp(test)) {
+      isMatch = test.test(arr);
+    } else {
+      const tmpResult2 = _mod12588;
+      isMatch = tmpResult2.isString(test);
+      if (isMatch) {
+        let hasItem;
+        if (flag) {
+          hasItem = arr === test;
+        } else {
+          hasItem = arr.includes(test);
         }
+        isMatch = hasItem;
       }
-      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
+    isStringResult = isMatch;
+  }
+  return isStringResult;
+};
+export const safeJoin = function safeJoin(arg0, arg1) {
+  if (Array.isArray(arg0)) {
+    const items = [];
+    let num = 0;
+    if (0 < arg0.length) {
+      try {
+        const push = items.push;
+        const obj = _mod12588;
+        if (obj.isVueViewModel(arg0[num])) {
+          push("[VueViewModel]");
+        } else {
+          const _String = String;
+          push(String(arg0[num]));
+        }
+      } catch (err) {
+        items.push("[value cannot be serialized]");
+      }
+      num = num + 1;
+    }
+    return items.join(arg1);
+  } else {
+    return "";
   }
 };
-export const generateSentryTraceHeader = function generateSentryTraceHeader() {
-  let traceId = arg0;
-  if (arg0 === undefined) {
-    const obj = generatePropagationContext;
-    traceId = obj.generateTraceId();
+export const snipLine = function snipLine(arr, arg1) {
+  if (arr.length <= 150) {
+    return arr;
+  } else {
+    let tmp = arg1;
+    if (arg1 > arr.length) {
+      tmp = length;
+    }
+    const _Math = Math;
+    let num3 = Math.max(tmp - 60, 0);
+    if (num3 < 5) {
+      num3 = 0;
+    }
+    const _Math2 = Math;
+    let bound = Math.min(num3 + 140, length);
+    if (bound > arr.length - 5) {
+      bound = length;
+    }
+    if (bound === arr.length) {
+      const _Math3 = Math;
+      num3 = Math.max(bound - 140, 0);
+    }
+    const substr = arr.slice(num3, bound);
+    let combined = substr;
+    if (num3 > 0) {
+      const _HermesInternal = HermesInternal;
+      combined = "'{snip} " + substr;
+    }
+    let text = combined;
+    if (bound < arr.length) {
+      text = `${tmp6} {snip}`;
+    }
+    return text;
   }
-  let spanId = arg1;
+};
+export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
+  let closure_0 = arg0;
+  let items = arg1;
   if (arg1 === undefined) {
-    const obj2 = generatePropagationContext;
-    spanId = obj2.generateSpanId();
+    items = [];
   }
-  let str = "";
-  if (undefined !== arg2) {
-    let str2 = "-0";
-    if (arg2) {
-      str2 = "-1";
-    }
-    str = str2;
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  return "" + traceId + "-" + spanId + str;
-};
-export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
-  let parentSampled;
-  let tmp4Result;
-  let tmp4Result3;
-  let tmp4Result4;
-  let tmp;
-  if (str) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
+  return items.some((test) => {
+    const obj2 = _mod12588;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod12588;
+      if (tmpResult.isRegExp(test)) {
+        isMatch = test.test(obj);
+      } else {
+        const tmpResult2 = _mod12588;
+        isMatch = tmpResult2.isString(test);
+        if (isMatch) {
+          let hasItem;
+          if (flag) {
+            hasItem = obj === test;
+          } else {
+            hasItem = obj.includes(test);
+          }
+          isMatch = hasItem;
         }
       }
-      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
-      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      isStringResult = isMatch;
     }
+    return isStringResult;
+  });
+};
+export const truncate = function truncate(str) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
   }
-  const obj2 = BAGGAGE_HEADER_NAME;
-  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
-  if (tmp) {
-    if (tmp.traceId) {
-      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
-      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
-      tmp4Result = generatePropagationContext;
-      if (!result) {
-        result = {};
+  let combined = str;
+  if (typeof str === "string") {
+    combined = str;
+    if (0 !== num) {
+      combined = str;
+      if (str.length > num) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + str.slice(0, num) + "...";
       }
-      return obj3;
     }
   }
-  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
-  tmp4Result3 = generatePropagationContext;
-  tmp4Result4 = generatePropagationContext;
-  return obj4;
+  return combined;
 };

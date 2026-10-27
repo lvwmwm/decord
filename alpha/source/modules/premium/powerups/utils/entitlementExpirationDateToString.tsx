@@ -1,10 +1,10 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13449
+// Function ID: 13450
 // Name: entitlementExpirationDateToString
 // Dependencies: [2068, 2]
 // Exports: default
 
-// Module 13446 (entitlementExpirationDateToString)
+// Module 13449 (entitlementExpirationDateToString)
 import LocaleStore from "LocaleStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13094
-// Function ID: 13095
+// Module ID: 13097
+// Function ID: 13098
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4823, 7631, 4845, 6010, 1087, 21, 4971, 587, 10096, 8150, 8166, 5210, 9668, 9665, 11, 8146, 9667, 8287, 1297, 13095, 7566, 8586, 5909, 1128, 558, 576, 504, 7253, 8289, 8154, 13096, 5234, 5245, 5265, 2]
+// Dependencies: [32, 5, 19, 17, 4823, 7631, 4845, 6010, 1087, 21, 4971, 587, 10096, 8150, 8166, 5210, 9668, 9665, 11, 8146, 9667, 8287, 1297, 13098, 7566, 8586, 5909, 1128, 558, 576, 504, 7253, 8289, 8154, 13099, 5234, 5245, 5265, 2]
 
-// Module 13094 (AddMediaToOriginalForumPostActionSheet)
+// Module 13097 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -60,7 +60,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -95,7 +95,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -264,7 +264,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

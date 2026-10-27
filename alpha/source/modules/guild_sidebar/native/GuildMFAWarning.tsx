@@ -1,10 +1,10 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17628
+// Function ID: 17629
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1087, 21, 4971, 587, 11059, 2067, 2002, 5660, 558, 576, 5669, 17628, 1128, 5234, 1202, 6908, 2]
+// Dependencies: [5, 19, 1087, 21, 4971, 587, 11060, 2067, 2002, 5660, 558, 576, 5669, 17629, 1128, 5234, 1202, 6908, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 17627 (GuildMFAWarning)
+// Module 17628 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import Pressables from "Pressables" /* 6908 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17628 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
@@ -47,7 +47,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

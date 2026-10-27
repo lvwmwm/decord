@@ -1,16 +1,16 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16422
+// Function ID: 16423
 // Name: OrbsArcadeRewardChain
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 4978, 16400, 16395, 16409, 16422, 683, 5258, 16404, 5234, 2]
+// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 4978, 16401, 16396, 16410, 16423, 683, 5258, 16405, 5234, 2]
 
-// Module 16421 (OrbsArcadeRewardChain)
+// Module 16422 (OrbsArcadeRewardChain)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16395 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16400 */;
-import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16409 */;
-import OrbsArcadeRewardChainCellDefault from "OrbsArcadeRewardChainCell" /* 16422 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16401 */;
+import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16410 */;
+import OrbsArcadeRewardChainCellDefault from "OrbsArcadeRewardChainCell" /* 16423 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp16;
-const OrbsArcadeRewardStatusLabelDefault = tmp16(16404);
+const OrbsArcadeRewardStatusLabelDefault = tmp16(16405);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 let Fragment = Fragment_mod;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
             if (cResult[21] === id) {
               tmp29 = cResult[22];
             }
-            let tmp2Result = tmp2(16422);
+            let tmp2Result = tmp2(16423);
             const orbsArcadeRewardChainTimeline = tmp2Result.useOrbsArcadeRewardChainTimeline(tmp29);
             const timeline = orbsArcadeRewardChainTimeline.timeline;
             const getGrantAtMs = orbsArcadeRewardChainTimeline.getGrantAtMs;
@@ -450,14 +450,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   const findLastResult = memo.findLast((arg0, arg1) => closure_4[arg1] === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED);
   let c5 = findLastResult;
   let first = findLastResult;
-  let tmp6 = gameState(16409);
+  let tmp6 = gameState(16410);
   const tmp5 = gameState;
   if (findLastResult == null) {
     first = memo[0];
   }
   const tmp6Result = tmp6(first);
   closure_6 = tmp6Result;
-  let tmp2Result = tmp2(16422);
+  let tmp2Result = tmp2(16423);
   let obj3 = { grantedRewardIds: mapped.reverse(), focusedRewardId: id, grantAnimatedOnOpenRewardIds };
   const useOrbsArcadeRewardChainTimeline = tmp2Result.useOrbsArcadeRewardChainTimeline;
   const found = memo.filter((item, index) => closure_4[index] !== OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED);

@@ -1,9 +1,9 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14041
+// Function ID: 14042
 // Name: ScheduledMessageEditContentModal
 // Dependencies: [5, 32, 19, 17, 4823, 21, 4971, 587, 558, 576, 1633, 9662, 504, 7755, 9695, 9694, 6672, 1128, 9699, 1384, 6924, 6908, 5234, 6933, 7180, 2]
 
-// Module 14039 (ScheduledMessageEditContentModal)
+// Module 14041 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
               arr.pop();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;

@@ -1,16 +1,16 @@
-// Module ID: 19124
-// Function ID: 19125
+// Module ID: 19134
+// Function ID: 19135
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 19107, 1087, 1395, 21, 558, 576, 504, 5210, 8154, 1496, 19125, 5662, 1128, 19121, 9825, 7248, 5234, 6903, 7298, 6987, 2]
+// Dependencies: [5, 19, 19117, 1087, 1395, 21, 558, 576, 504, 5210, 8154, 1496, 19135, 5662, 1128, 19131, 9825, 7248, 5234, 6903, 7298, 6987, 2]
 
-// Module 19124 (RoleIconActionSheet)
+// Module 19134 (RoleIconActionSheet)
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19121 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19131 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19107 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19117 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
               presentError(intl.string(_var(dependencyMap[14]).t.HFyKsa));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c4 = 3;
@@ -661,7 +661,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -722,7 +722,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           if (0 === c6) {
             c8 = 3;
@@ -763,7 +763,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -825,7 +825,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
               presentError(intl.string(_var(closure_2[14]).t.HFyKsa));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c4 = 3;
@@ -902,7 +902,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c6;
@@ -963,7 +963,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIconActi
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp29) {
             if (0 === c6) {
               c8 = 3;

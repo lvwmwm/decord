@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

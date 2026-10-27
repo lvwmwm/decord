@@ -1,9 +1,9 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18367
+// Function ID: 18368
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2068, 15979, 1087, 21, 9743, 4971, 587, 558, 576, 18359, 1202, 5234, 1506, 14768, 18360, 7091, 573, 7253, 7278, 15981, 7584, 15982, 7095, 15290, 5252, 6908, 1128, 17849, 18361, 15828, 18362, 38, 2]
+// Dependencies: [32, 19, 17, 2068, 15980, 1087, 21, 9743, 4971, 587, 558, 576, 18368, 1202, 5234, 1506, 14769, 18369, 7091, 573, 7253, 7278, 15982, 7584, 15983, 7095, 15291, 5252, 6908, 1128, 17858, 18370, 15829, 18371, 38, 2]
 
-// Module 18358 (SettingsNavigator)
+// Module 18367 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -13,13 +13,13 @@ import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Pressables from "Pressables" /* 6908 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7091 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15981 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 17849 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 18359 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15982 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 17858 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 18368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 15979 */;
+import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 15980 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9743 */;

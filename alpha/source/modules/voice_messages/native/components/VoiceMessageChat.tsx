@@ -1,21 +1,21 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13574
+// Function ID: 13575
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4972, 13059, 13060, 21, 5052, 4971, 587, 1384, 558, 576, 5247, 5206, 5252, 8173, 5234, 2]
+// Dependencies: [32, 19, 17, 4972, 13062, 13063, 21, 5052, 4971, 587, 1384, 558, 576, 5247, 5206, 5252, 8173, 5234, 2]
 
-// Module 13572 (VoiceMessageChat)
+// Module 13574 (VoiceMessageChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import spring from "spring" /* 5247 */;
 import utils_TimeUtils from "utils/TimeUtils" /* 8173 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13059 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13060 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13063 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
@@ -457,7 +457,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f160601);
+                AccessibilityStore(f160706);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -504,7 +504,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f160601);
+                AccessibilityStore(f160706);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -560,7 +560,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f160601);
+                AccessibilityStore(f160706);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -601,7 +601,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                 }
                 c1 = num;
                 flash = function flash() {
-                  AccessibilityStore(f160601);
+                  AccessibilityStore(f160706);
                   const timeout = setTimeout(flash, num);
                 };
                 tmp8 = closure_6;
@@ -642,7 +642,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f160601);
+                    AccessibilityStore(f160706);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -684,7 +684,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f160601);
+                    AccessibilityStore(f160706);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -848,7 +848,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
   const first2 = tmp13[0];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f160602 = (arg0) => !arg0;
+    const f160707 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -860,10 +860,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
           num = num2;
         }
         function flash() {
-          closure_7(f160602);
+          closure_7(f160707);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f160602);
+        closure_7(f160707);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

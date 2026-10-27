@@ -1,10 +1,10 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13732
+// Function ID: 13733
 // Name: WelcomeScreenActionCreators
 // Dependencies: [5, 1087, 584, 1297, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 13730 (WelcomeScreenActionCreators)
+// Module 13732 (WelcomeScreenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
@@ -55,7 +55,7 @@ obj = function _saveWelcomeScreen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ obj = function _saveWelcomeScreen() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           closure_4 = tmp17;

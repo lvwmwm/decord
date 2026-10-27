@@ -1,9 +1,9 @@
-// Module ID: 15210
-// Function ID: 15211
+// Module ID: 15211
+// Function ID: 15212
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9131, 4845, 9065, 1098, 21, 4971, 587, 9052, 558, 576, 9060, 504, 11316, 9082, 11323, 11326, 1128, 2406, 7298, 5977, 5234, 7145, 15211, 2]
+// Dependencies: [32, 19, 17, 9131, 4845, 9065, 1098, 21, 4971, 587, 9052, 558, 576, 9060, 504, 11317, 9082, 11324, 11327, 1128, 2406, 7298, 5977, 5234, 7145, 15212, 2]
 
-// Module 15210 (GameOrganizationInviteActionSheet)
+// Module 15211 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import InstantInviteUtils from "InstantInviteUtils" /* 9052 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9060 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9082 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9131 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11316 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11323 */;
-import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11326 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11317 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11324 */;
+import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11327 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -136,7 +136,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   if (cResult[3] !== stateFromStores) {
     let tmp10 = null;
     if (null != stateFromStores) {
-      tmp10 = stateFromStores(11316)(stateFromStores);
+      tmp10 = stateFromStores(11317)(stateFromStores);
     }
     cResult[3] = stateFromStores;
     cResult[4] = tmp10;
@@ -462,7 +462,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   let tmp5 = null;
   if (null != stateFromStores) {
     let tmp6 = stateFromStores;
-    tmp5 = stateFromStores(11316)(stateFromStores);
+    tmp5 = stateFromStores(11317)(stateFromStores);
   }
   dependencyMap = tmp5;
   const tmp7 = closure_6((arg0) => {
@@ -549,7 +549,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     tmp17Result = tmp17(closure_14, {});
   } else {
     const obj8 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp17Result = tmp17(tmp15(15211), obj8);
+    tmp17Result = tmp17(tmp15(15212), obj8);
   }
   return closure_10(ActionSheet, obj2);
 });

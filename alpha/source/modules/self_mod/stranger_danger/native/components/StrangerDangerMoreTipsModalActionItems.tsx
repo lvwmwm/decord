@@ -1,15 +1,15 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10963
+// Function ID: 10964
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4913, 1392, 10693, 21, 558, 576, 504, 5025, 10939, 7414, 1128, 7063, 7061, 9770, 6987, 10963, 2]
+// Dependencies: [32, 19, 4913, 1392, 10693, 21, 558, 576, 504, 5025, 10940, 7414, 1128, 7063, 7061, 9770, 6987, 10964, 2]
 
-// Module 10962 (StrangerDangerMoreTipsModalActionItems)
+// Module 10963 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10939 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;

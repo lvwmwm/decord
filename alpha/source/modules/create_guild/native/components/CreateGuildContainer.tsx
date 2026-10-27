@@ -1,10 +1,10 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13220
+// Function ID: 13221
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4901, 1392, 1087, 21, 4971, 5268, 6829, 8154, 13204, 6830, 4837, 9082, 7221, 13218, 2]
+// Dependencies: [5, 32, 19, 4901, 1392, 1087, 21, 4971, 5268, 6829, 8154, 13207, 6830, 4837, 9082, 7221, 13221, 2]
 // Exports: default
 
-// Module 13217 (CreateGuildContainer)
+// Module 13220 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
@@ -86,7 +86,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ export default function CreateGuildContainer(onCreate) {
             closure_129_6(base64);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -146,7 +146,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function CreateGuildContainer(onCreate) {
         }
         closure_129_7(false);
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         channel = tmp36;
         if (0 === c3) {

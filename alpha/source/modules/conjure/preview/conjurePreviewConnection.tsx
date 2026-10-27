@@ -38,7 +38,7 @@ let obj = function _refetchWidgetData() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -81,7 +81,7 @@ let obj = function _refetchWidgetData() {
           c2 = 0;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         if (0 === c2) {
           c0 = 3;
@@ -109,7 +109,7 @@ obj = function _getPreviewScreenshotUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -184,7 +184,7 @@ obj = function _uploadOverlayBackground() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _uploadOverlayBackground() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -249,7 +249,7 @@ obj = function _resetOverlayBackground() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -282,7 +282,7 @@ obj = function _resetOverlayBackground() {
           closure_0 = value;
           if (closure_0.ok) {
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -317,7 +317,7 @@ obj = function _getOverlayBackgroundUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -389,7 +389,7 @@ obj = function _relayCaptureRequest() {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -473,7 +473,7 @@ obj = function _relayCaptureRequest() {
             resolveUploadUrl = closure_1;
             const sendCaptureAckResult = closure_1.sendCaptureAck(closure_2.id, resolveUploadUrl.status, resolveUploadUrl.code, resolveUploadUrl.message);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -510,7 +510,7 @@ obj = function _relayControlRequest() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ obj = function _relayControlRequest() {
               c6 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           closure_5 = tmp27;
@@ -599,7 +599,7 @@ obj = function _getClientCaptureUploadUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15893
+// Function ID: 15894
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7665, 7656, 1087, 21, 4971, 587, 558, 576, 8675, 8659, 7253, 7278, 1267, 8660, 8656, 8653, 7248, 1128, 8661, 5265, 10490, 504, 15893, 14492, 8655, 8676, 15894, 14498, 14499, 8662, 11055, 5258, 2]
+// Dependencies: [32, 19, 17, 7665, 7656, 1087, 21, 4971, 587, 558, 576, 8675, 8659, 7253, 7278, 1267, 8660, 8656, 8653, 7248, 1128, 8661, 5265, 10490, 504, 15894, 14493, 8655, 8676, 15895, 14499, 14500, 8662, 11056, 5258, 2]
 
-// Module 15892 (EditProfileEffectActionSheet)
+// Module 15893 (EditProfileEffectActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,8 +16,8 @@ import UserProfileActionCreators from "UserProfileActionCreators" /* 8656 */;
 import useShopProductItems from "useShopProductItems" /* 8660 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8662 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11055 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 15894 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11056 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 15895 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -791,7 +791,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11055), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(11056), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5258);

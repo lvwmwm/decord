@@ -1,9 +1,9 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15223
+// Function ID: 15224
 // Name: GuildHeaderCountsStore
 // Dependencies: [7372, 4823, 5194, 1392, 5630, 504, 584, 2]
 
-// Module 15222 (GuildHeaderCountsStore)
+// Module 15223 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7372 */;
@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "children", onlineCount: "k", memberCount: "borderRadius" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "children", onlineCount: "k", memberCount: "borderRadius" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "children", onlineCount: "k", memberCount: "borderRadius" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

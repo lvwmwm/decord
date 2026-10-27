@@ -1,14 +1,14 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12242
+// Function ID: 12243
 // Name: ActivitiesIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12291, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12243, 5668, 2]
 
-// Module 12290 (ActivitiesIcon)
+// Module 12242 (ActivitiesIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 12291 */;
+import AssetRegistry from "AssetRegistry" /* 12243 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

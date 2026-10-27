@@ -1,14 +1,14 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 13979
+// Function ID: 13980
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 13978, 1104, 558, 576, 504, 13368, 2]
+// Dependencies: [32, 19, 13980, 1104, 558, 576, 504, 13371, 2]
 
-// Module 13977 (useChannelFollowerStats)
+// Module 13979 (useChannelFollowerStats)
 import DurationsDefault from "Durations" /* 1104 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 13368 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 13371 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 13978 */;
+import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 13980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

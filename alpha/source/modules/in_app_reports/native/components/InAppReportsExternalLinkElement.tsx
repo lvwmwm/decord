@@ -1,9 +1,9 @@
-// Module ID: 14593
-// Function ID: 14594
+// Module ID: 14594
+// Function ID: 14595
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 4971, 587, 558, 576, 7074, 5234, 1128, 5660, 6911, 14594, 8953, 2]
+// Dependencies: [17, 21, 4971, 587, 558, 576, 7074, 5234, 1128, 5660, 6911, 14595, 8953, 2]
 
-// Module 14593 (InAppReportsExternalLinkElement)
+// Module 14594 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -193,7 +193,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { IconComponent: url(14594).LinkExternalMediumIcon };
+      const obj2 = { IconComponent: url(14595).LinkExternalMediumIcon };
       const TableRowIcon = tmp(6911).TableRowIcon;
       const tmp9 = closure_4(TableRowIcon, obj2);
       cResult[2] = tmp9;
@@ -239,7 +239,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       accessibilityRole: "link"
     };
     const RowButton = url(8953).RowButton;
-    obj2 = { IconComponent: url(14594).LinkExternalMediumIcon };
+    obj2 = { IconComponent: url(14595).LinkExternalMediumIcon };
     TableRowIcon = url(6911).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }

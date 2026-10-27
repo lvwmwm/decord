@@ -1,19 +1,19 @@
-// Module ID: 18364
-// Function ID: 18365
+// Module ID: 18374
+// Function ID: 18375
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6775, 16394, 1087, 5609, 18365, 6776, 21, 4971, 587, 16400, 16410, 558, 576, 1633, 504, 1506, 11889, 10766, 11503, 11890, 11894, 18366, 18367, 5037, 2]
+// Dependencies: [19, 17, 6775, 16395, 1087, 5609, 18375, 6776, 21, 4971, 587, 16401, 16411, 558, 576, 1633, 504, 1506, 11778, 10766, 11504, 11779, 11783, 18376, 18377, 5037, 2]
 
-// Module 18364 (OrbsArcadeGameScreen)
+// Module 18374 (OrbsArcadeGameScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Link from "Link" /* 1506 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
 import leaveFrame from "leaveFrame" /* 10766 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18365 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18375 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6775 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16394 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -29,7 +29,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let rect;
-const f135424 = (id) => id.id;
+const f135514 = (id) => id.id;
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 const ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT = ActivityPanelConstants.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT;
@@ -163,10 +163,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGa
               const _Set = Set;
               const obj3 = navigation(frameId[11]);
               const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
-              const mapped = orbsArcadeClaimableRewards.map(f135424);
+              const mapped = orbsArcadeClaimableRewards.map(f135514);
               const self = this;
               const self2 = this;
-              set = new Set(mapped.filter(() => { /* body not rendered: F135425 */ }));
+              set = new Set(mapped.filter(() => { /* body not rendered: F135515 */ }));
               const tmp5 = navigation;
               const tmp6 = frameId;
               if (set.size > 0) {
@@ -267,7 +267,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGa
       const _Set = Set;
       const obj3 = navigation(frameId[11]);
       const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
-      const mapped = orbsArcadeClaimableRewards.map(f135424);
+      const mapped = orbsArcadeClaimableRewards.map(f135514);
       const self = this;
       const self2 = this;
       set = new Set(mapped.filter((item) => !closure_0.includes(item)));

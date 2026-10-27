@@ -1,9 +1,9 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17521
+// Function ID: 17522
 // Name: MessagesItemEmptyState
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5151, 1128, 5234, 5244, 2]
 
-// Module 17520 (MessagesItemEmptyState)
+// Module 17521 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

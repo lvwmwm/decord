@@ -12,7 +12,7 @@ let obj = module_570.create((arg0) => {
   obj = {
     utmSourceCurrent: "r",
     utmMediumCurrent: "emoji",
-    utmCampaignCurrent: "pos",
+    utmCampaignCurrent: "sr",
     utmContentCurrent: "toCharArray$esjava$1",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };

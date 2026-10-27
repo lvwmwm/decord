@@ -1,9 +1,9 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17237
+// Function ID: 17238
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7650, 1089, 1087, 21, 4971, 587, 558, 576, 1505, 9360, 17208, 7253, 7278, 504, 17210, 16362, 7649, 9357, 5669, 5234, 5244, 1128, 5597, 7220, 2]
+// Dependencies: [19, 17, 7650, 1089, 1087, 21, 4971, 587, 558, 576, 1505, 9360, 17209, 7253, 7278, 504, 17211, 16363, 7649, 9357, 5669, 5234, 5244, 1128, 5597, 7220, 2]
 
-// Module 17236 (ShelfBlock)
+// Module 17237 (ShelfBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

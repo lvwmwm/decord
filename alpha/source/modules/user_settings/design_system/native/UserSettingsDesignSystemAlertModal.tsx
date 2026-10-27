@@ -1,9 +1,9 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17143
+// Function ID: 17144
 // Name: UserSettingsDesignSystemAlertModal
 // Dependencies: [5, 19, 17, 21, 558, 576, 5914, 5910, 4971, 5244, 2]
 
-// Module 17142 (UserSettingsDesignSystemAlertModal)
+// Module 17143 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useAlertStore from "useAlertStore" /* 5910 */;
@@ -46,7 +46,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -117,7 +117,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp7) {
         c0 = 3;

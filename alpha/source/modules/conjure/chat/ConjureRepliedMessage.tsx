@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12310
+// Function ID: 12311
 // Name: ConjureRepliedMessage
 // Dependencies: [2]
 // Exports: repliedMessagesById
 
-// Module 12325 (ConjureRepliedMessage)
+// Module 12310 (ConjureRepliedMessage)
 import size from "module_2" /* 2 */;
 
 let map, set;

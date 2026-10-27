@@ -1,9 +1,9 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 12744
+// Function ID: 12745
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 4827, 4878, 1087, 7427, 21, 4971, 587, 6651, 558, 576, 6880, 1202, 12742, 1128, 7074, 38, 1633, 4879, 5234, 12744, 7008, 5244, 8955, 12, 8928, 12749, 12750, 10837, 1105, 2]
+// Dependencies: [19, 17, 4827, 4878, 1087, 7427, 21, 4971, 587, 6651, 558, 576, 6880, 1202, 12745, 1128, 7074, 38, 1633, 4879, 5234, 12747, 7008, 5244, 8955, 12, 8928, 12752, 12753, 10838, 1105, 2]
 
-// Module 12741 (AcceptGuildTemplate)
+// Module 12744 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -16,9 +16,9 @@ import GuildRoleRecord from "GuildRoleRecord" /* 4878 */;
 import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4879 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7427 */;
 import FormDividerDefault from "FormDivider" /* 8955 */;
-import RolePillDefault from "RolePill" /* 10837 */;
-import InvalidLink from "InvalidLink" /* 12742 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 12744 */;
+import RolePillDefault from "RolePill" /* 10838 */;
+import InvalidLink from "InvalidLink" /* 12745 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 12747 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
@@ -758,9 +758,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     if (isGuildVocalChannelType(type)) {
       tmp10Result = tmp10(8928);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(12749);
+      tmp10Result = tmp10(12752);
     } else {
-      tmp10Result = tmp10(12750);
+      tmp10Result = tmp10(12753);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];
@@ -817,9 +817,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     if (isGuildVocalChannelType(type)) {
       tmp10Result = tmp10(8928);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(12749);
+      tmp10Result = tmp10(12752);
     } else {
-      tmp10Result = tmp10(12750);
+      tmp10Result = tmp10(12753);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];

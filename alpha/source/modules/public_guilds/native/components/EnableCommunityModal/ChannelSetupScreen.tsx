@@ -1,10 +1,10 @@
-// Module ID: 19178
-// Function ID: 19179
+// Module ID: 19188
+// Function ID: 19189
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9006, 4823, 4901, 4913, 1392, 8406, 1087, 21, 5252, 587, 19167, 504, 5604, 1128, 19168, 5210, 8925, 2002, 9005, 19165, 5234, 5669, 5977, 6987, 6903, 2]
+// Dependencies: [19, 17, 9006, 4823, 4901, 4913, 1392, 8406, 1087, 21, 5252, 587, 19177, 504, 5604, 1128, 19178, 5210, 8925, 2002, 9005, 19175, 5234, 5669, 5977, 6987, 6903, 2]
 // Exports: default
 
-// Module 19178 (ChannelSetupScreen)
+// Module 19188 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;

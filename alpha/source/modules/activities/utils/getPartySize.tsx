@@ -1,10 +1,10 @@
-// Module ID: 11349
-// Function ID: 11350
+// Module ID: 11350
+// Function ID: 11351
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getPartySize
 
-// Module 11349 (_slicedToArray)
+// Module 11350 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

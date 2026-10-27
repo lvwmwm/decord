@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 272, height: 130, scales: [2, 3], hash: "4987bef6ae5ad852bc999d6d3249ca80", name: "empty_server_settings_audit_log_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "452e4649130bf55bccef66e38e059a6a", name: "ListBulletsIcon", type: "png" });

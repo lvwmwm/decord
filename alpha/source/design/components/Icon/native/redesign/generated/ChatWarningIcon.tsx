@@ -1,9 +1,9 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13363
+// Function ID: 13364
 // Name: ChatWarningIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 8388, 5668, 2]
 
-// Module 13360 (ChatWarningIcon)
+// Module 13363 (ChatWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

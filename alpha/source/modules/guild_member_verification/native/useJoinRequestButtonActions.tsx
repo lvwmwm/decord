@@ -1,10 +1,10 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 13560
+// Function ID: 13561
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 4823, 1087, 5663, 1128, 7347, 5210, 6843, 5005, 13559, 2002, 2]
+// Dependencies: [5, 32, 19, 4823, 1087, 5663, 1128, 7347, 5210, 6843, 5005, 13561, 2002, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 13558 (useJoinRequestButtonActions)
+// Module 13560 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
@@ -59,7 +59,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(13559, dependencyMap.paths);
+        const tmp10 = asyncRequire(13561, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {

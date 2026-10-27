@@ -1,22 +1,22 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 12223
+// Function ID: 12224
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 558, 576, 12263, 12275, 11879, 2]
+// Dependencies: [32, 19, 558, 576, 12212, 12224, 11768, 2]
 
-// Module 12274 (useConjureHistoryData)
+// Module 12223 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11879 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12263 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12275 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11768 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12212 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12224 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel, dependencyMap, map, set;
+let _require, dependencyMap, map, set;
 
-const f113947 = (result) => {
+const f113863 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -35,15 +35,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
   let obj = react2;
   const cResult = obj.c(12);
   let obj2 = react;
+  [tmp3, closure_129_1] = _slicedToArray(react.useState(0), 2);
   const tmp2 = _slicedToArray(react.useState(0), 2);
-  [tmp3, closure_129_1] = tmp2;
+  [tmp5, closure_129_2] = _slicedToArray(react.useState(null), 2);
   const tmp4 = _slicedToArray(react.useState(null), 2);
-  [tmp5, closure_129_2] = tmp4;
   if (cResult[0] !== arg0) {
     const fn = function n() {
       let load;
-      channel = false;
-      const promise = channel();
+      let c0 = false;
+      const promise = c0();
       promise.then((data) => {
         let obj2;
         const tmp = c0;
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const fn2 = function l() {
         closure_1_2(null);
-        onClose((arg0) => arg0 + 1);
+        closure_1_1((arg0) => arg0 + 1);
       };
       cResult[5] = fn2;
       tmp10 = fn2;
@@ -93,7 +93,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class D {
         constructor() {
-          return onClose((arg0) => arg0 + 1);
+          return closure_1_1((arg0) => arg0 + 1);
         }
       }
       cResult[6] = D;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
     } else {
       class D {
         constructor() {
-          return onClose((arg0) => arg0 + 1);
+          return closure_1_1((arg0) => arg0 + 1);
         }
       }
     }
@@ -109,13 +109,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
       let tmp13;
       class D {
         constructor() {
-          return onClose((arg0) => arg0 + 1);
+          return closure_1_1((arg0) => arg0 + 1);
         }
       }
       if (cResult[10] !== tmp12) {
         class D {
           constructor() {
-            return onClose((arg0) => arg0 + 1);
+            return closure_1_1((arg0) => arg0 + 1);
           }
         }
         tmp14[0] = tmp12;
@@ -127,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
       } else {
         class D {
           constructor() {
-            return onClose((arg0) => arg0 + 1);
+            return closure_1_1((arg0) => arg0 + 1);
           }
         }
       }
@@ -136,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLo
     if (null != tmp5) {
       class D {
         constructor() {
-          return onClose((arg0) => arg0 + 1);
+          return closure_1_1((arg0) => arg0 + 1);
         }
       }
       cResult[7] = arg0;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(12275);
+    const tmp2Result = tmp2(12224);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -248,7 +248,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f113947);
+      return allResult.then(f113863);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -505,7 +505,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const obj2 = conjureHistoryRequests;
     items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
     const allResult = all(items);
-    return allResult.then(f113947);
+    return allResult.then(f113863);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

@@ -1,7 +1,7 @@
 // Module ID: 9162
 // Function ID: 9163
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 5715, 9154, 4823, 5716, 9161, 1087, 21, 4971, 5210, 558, 576, 573, 9163, 9164, 1128, 6985, 6984, 6911, 9153, 11649, 11570, 14180, 5001, 4807, 14181, 7248, 5265, 6886, 2]
+// Dependencies: [19, 17, 5715, 9154, 4823, 5716, 9161, 1087, 21, 4971, 5210, 558, 576, 573, 9163, 9164, 1128, 6985, 6984, 6911, 9153, 11650, 11571, 14181, 5001, 4807, 14182, 7248, 5265, 6886, 2]
 
 // Module 9162 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 500
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import NativeViewDefault from "NativeView" /* 6886 */;
 import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9161 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 14180 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 14181 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5715 */;
 import AudioManagerStore from "AudioManagerStore" /* 9154 */;
@@ -212,8 +212,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   const cResult = obj.c(19);
   channel = channel.channel;
   const tmp4 = closure_13();
-  arr = arr(11649)();
-  let tmp5 = arr(11570)();
+  arr = arr(11650)();
+  let tmp5 = arr(11571)();
   dependencyMap = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GameConsoleStore];
@@ -480,8 +480,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let awaitingRemoteSessionInfo;
   let tmp2 = dependencyMap;
   let tmp = closure_13();
-  arr = arr(11649)();
-  dependencyMap = arr(11570)();
+  arr = arr(11650)();
+  dependencyMap = arr(11571)();
   let obj = channel(573);
   const items = [awaitingRemoteSessionInfo];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());

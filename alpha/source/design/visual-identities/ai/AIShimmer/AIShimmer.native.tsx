@@ -1,15 +1,15 @@
-// Module ID: 12504
-// Function ID: 12505
+// Module ID: 12487
+// Function ID: 12488
 // Name: AIShimmer
-// Dependencies: [32, 109, 19, 17, 21, 4971, 558, 576, 12505, 5037, 5234, 12506, 5052, 12507, 12508, 11902, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4971, 558, 576, 12488, 5037, 5234, 12489, 5052, 12490, 12491, 11791, 2]
 
-// Module 12504 (AIShimmer)
+// Module 12487 (AIShimmer)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 12505 */;
-import waveTransition2 from "waveTransition" /* 12506 */;
-import createWaveTransition2 from "createWaveTransition" /* 12507 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 12488 */;
+import waveTransition2 from "waveTransition" /* 12489 */;
+import createWaveTransition2 from "createWaveTransition" /* 12490 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -79,14 +79,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     str = tmp5;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DELAY) {
-    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(12505).AI_TEXT_EFFECT_DEFAULT_DELAY;
+    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(12488).AI_TEXT_EFFECT_DEFAULT_DELAY;
   }
   let num7 = 0;
   if (undefined !== tmp6) {
     num7 = tmp6;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DURATION) {
-    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(12505).AI_TEXT_EFFECT_DEFAULT_DURATION;
+    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(12488).AI_TEXT_EFFECT_DEFAULT_DURATION;
   }
   if (cResult[6] === AI_TEXT_EFFECT_DEFAULT_DELAY) {
     if (cResult[7] === AI_TEXT_EFFECT_DEFAULT_DURATION) {

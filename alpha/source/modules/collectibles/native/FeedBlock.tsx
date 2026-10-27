@@ -1,16 +1,16 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17231
+// Function ID: 17232
 // Name: FeedBlock
-// Dependencies: [19, 17, 4972, 1207, 1089, 21, 4971, 587, 504, 4978, 9466, 17210, 17195, 9476, 17211, 7649, 9448, 9797, 16362, 7278, 7253, 1128, 5234, 6908, 5210, 17231, 2002, 5686, 5244, 17224, 5669, 17232, 1384, 9402, 17233, 17234, 17235, 2]
+// Dependencies: [19, 17, 4972, 1207, 1089, 21, 4971, 587, 504, 4978, 9466, 17211, 17196, 9476, 17212, 7649, 9448, 9797, 16363, 7278, 7253, 1128, 5234, 6908, 5210, 17232, 2002, 5686, 5244, 17225, 5669, 17233, 1384, 9402, 17234, 17235, 17236, 2]
 // Exports: default
 
-// Module 17230 (FeedBlock)
+// Module 17231 (FeedBlock)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9448 */;
-import uniqByDefault from "uniqBy" /* 17211 */;
+import uniqByDefault from "uniqBy" /* 17212 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
@@ -219,18 +219,18 @@ export default function _default(screen) {
     let tmp19Result3;
     if (stateFromStores1) {
       const obj14 = { source: obj15, style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-      obj15 = { uri: require("module_17232") };
+      obj15 = { uri: require("module_17233") };
       const tmp6Result9 = require("FastImage");
       tmp19Result3 = tmp19(tmp6Result9, obj14);
     } else {
       const tmp2Result6 = isInImprovedMobileShopLoading(shownSkuIds[32]);
       if (tmp2Result6.isAndroid()) {
-        const obj16 = { url: require("module_17233"), autoplay: true, style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+        const obj16 = { url: require("module_17234"), autoplay: true, style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         const tmp6Result10 = require("APNGDecorationNativeComponent");
         tmp19Result3 = tmp19(tmp6Result10, obj16);
       } else {
         const obj17 = { source: obj18, enableAnimation: true, resizeMode: "contain", style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        obj18 = { uri: require("module_17233") };
+        obj18 = { uri: require("module_17234") };
         const tmp6Result11 = require("FastImage");
         tmp19Result3 = tmp19(tmp6Result11, obj17);
       }

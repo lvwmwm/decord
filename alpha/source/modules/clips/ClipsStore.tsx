@@ -1,15 +1,15 @@
 // Module ID: 2020
 // Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8148, 1087, 5814, 4785, 15297, 1405, 15298, 15300, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 8148, 1087, 5814, 4785, 15298, 1405, 15299, 15301, 504, 584, 2]
 
 // Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import DiscordNativeDefault from "DiscordNative" /* 4785 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15298 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15300 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15299 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -47,7 +47,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -117,7 +117,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_40.emitChange();
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {

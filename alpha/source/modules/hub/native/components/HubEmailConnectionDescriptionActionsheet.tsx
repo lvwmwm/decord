@@ -1,9 +1,9 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13682
+// Function ID: 13683
 // Name: HubEmailConnectionDescriptionActionsheet
 // Dependencies: [19, 21, 4971, 558, 576, 7248, 1128, 5234, 5265, 2]
 
-// Module 13680 (HubEmailConnectionDescriptionActionsheet)
+// Module 13682 (HubEmailConnectionDescriptionActionsheet)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;

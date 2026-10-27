@@ -1,9 +1,9 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13119
+// Function ID: 13120
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9725, 13066, 13117, 5052, 1202, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9725, 13069, 13120, 5052, 1202, 5234, 2]
 
-// Module 13116 (ForumPostTypingUsers)
+// Module 13119 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

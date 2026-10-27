@@ -1,10 +1,10 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13660
+// Function ID: 13661
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 4883, 4845, 5700, 1087, 4889, 21, 4971, 587, 1505, 504, 6924, 1405, 7190, 2002, 7808, 8906, 7428, 8866, 10015, 13659, 7221, 5037, 2]
+// Dependencies: [5, 19, 4883, 4845, 5700, 1087, 4889, 21, 4971, 587, 1505, 504, 6924, 1405, 7190, 2002, 7808, 8906, 7428, 8866, 10015, 13661, 7221, 5037, 2]
 // Exports: default
 
-// Module 13658 (AcceptInviteContainer)
+// Module 13660 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -117,7 +117,7 @@ export default function AcceptInviteContainer(code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;
@@ -203,7 +203,7 @@ export default function AcceptInviteContainer(code) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function AcceptInviteContainer(code) {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -263,7 +263,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "IconComponent", done: "+352" };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 closure_1();
                                 const tmp8Result = closure_2_0(transitionToInviteChannel[17]);
@@ -293,7 +293,7 @@ export default function AcceptInviteContainer(code) {
                             closure_1();
                           }
                           c6 = 3;
-                          return { value: "IconComponent", done: "+352" };
+                          return { value: "IconComponent", done: null };
                         }
                       } else if (1 === c5) {
                         c4 = 0;
@@ -348,7 +348,7 @@ export default function AcceptInviteContainer(code) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -403,7 +403,7 @@ export default function AcceptInviteContainer(code) {
                       closure_128_2(closure_128_1);
                     }
                     c2 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp15) {
                     c2 = 3;
                     throw tmp15;
@@ -431,7 +431,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         code = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp4) {
         code = 3;
         throw tmp4;

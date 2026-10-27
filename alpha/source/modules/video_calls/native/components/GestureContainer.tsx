@@ -1,9 +1,9 @@
-// Module ID: 11679
-// Function ID: 11680
+// Module ID: 11680
+// Function ID: 11681
 // Name: GestureContainer
-// Dependencies: [19, 17, 10882, 11366, 21, 4971, 587, 558, 576, 1499, 5052, 5297, 6672, 5206, 1202, 2]
+// Dependencies: [19, 17, 10883, 11367, 21, 4971, 587, 558, 576, 1499, 5052, 5297, 6672, 5206, 1202, 2]
 
-// Module 11679 (GestureContainer)
+// Module 11680 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import ChannelCallStore from "ChannelCallStore" /* 10882 */;
+import ChannelCallStore from "ChannelCallStore" /* 10883 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11366 */;
+import Constants from "Constants" /* 11367 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,201 +1,170 @@
 // Module ID: 12628
 // Function ID: 12629
-// Dependencies: [12603, 12584, 12583, 12614]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: [32, 12581, 12580]
+// Exports: dsnToString, makeDsn
 
 // Module 12628
-import _mod12583 from "module_12583" /* 12583 */;
-import _mod12584 from "module_12584" /* 12584 */;
-import _mod12603 from "module_12603" /* 12603 */;
-import _mod12614 from "module_12614" /* 12614 */;
+import _mod12581 from "module_12581" /* 12581 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod12584;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
-  }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
-  }
-  const tmpResult = _mod12584;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
-  }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod12584;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod12584;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod12583;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod12614;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod12583;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod12583;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
+function dsnFromString(arg0) {
+  let closure_0 = arg0;
+  const match = re3.exec(arg0);
+  if (match) {
+    const tmp5 = _slicedToArray(match.slice(1), 6);
+    let str = tmp5[1];
+    let str3 = "";
+    const first = tmp5[0];
+    if (undefined !== tmp5[2]) {
+      str3 = tmp7;
     }
-  }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
-    } else {
-      items = [fingerprint2];
+    let str4 = "";
+    if (undefined !== tmp5[3]) {
+      str4 = tmp8;
     }
-    items1 = items;
+    let str5 = "";
+    if (undefined !== tmp5[4]) {
+      str5 = tmp9;
+    }
+    let str6 = "";
+    if (undefined !== tmp5[5]) {
+      str6 = tmp10;
+    }
+    const parts = str6.split("/");
+    let str8 = str6;
+    let str9 = "";
+    if (parts.length > 1) {
+      const substr = parts.slice(0, -1);
+      str9 = substr.join("/");
+      str8 = parts.pop();
+    }
+    let first1 = str8;
+    if (first1) {
+      const match1 = str8.match(/^\d+/);
+      first1 = str8;
+      if (match1) {
+        first1 = match1[0];
+      }
+    }
+    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
+    if (!str) {
+      str = "";
+    }
+    if (!str3) {
+      str3 = "";
+    }
+    if (!str5) {
+      str5 = "";
+    }
+    if (!str9) {
+      str9 = "";
+    }
+    return url;
   } else {
-    items1 = [];
+    const obj = _mod12581;
+    obj.consoleSandbox(() => {
+      console.error("Invalid Sentry Dsn: " + closure_0);
+    });
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
+}
+const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+
+export { dsnFromString };
+export const dsnToString = function dsnToString(arg0) {
+  let host;
+  let pass;
+  let path;
+  let port;
+  let projectId;
+  let protocol;
+  let publicKey;
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
   }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
+  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
+  let str = "";
+  if (flag) {
+    str = "";
+    if (pass) {
+      const _HermesInternal = HermesInternal;
+      str = ":" + pass;
+    }
   }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
+  let str3 = "";
+  if (port) {
+    const _HermesInternal2 = HermesInternal;
+    str3 = ":" + port;
   }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
+  let combined = path;
+  if (combined) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + path + "/";
+  }
+  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 };
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod12603;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
-export const mergeScopeData = function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod12603;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod12603;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod12603;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod12603;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod12603;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
+export const makeDsn = function makeDsn(protocol) {
+  let port;
+  let projectId;
+  let url;
+  if (typeof protocol === "string") {
+    url = dsnFromString(protocol);
+  } else {
+    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
   }
-  if (transactionName) {
-    extra.transactionName = transactionName;
+  if (url) {
+    let flag = true;
+    if (url(12580).DEBUG_BUILD) {
+      ({ port, projectId, protocol } = url);
+      const items = ["protocol", "publicKey", "host", "projectId"];
+      let found = items.find((item) => {
+        let flag = !url[item];
+        if (flag) {
+          const logger = _mod12581.logger;
+          const _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: " + item + " missing");
+          flag = true;
+        }
+        return flag;
+      });
+      if (!found) {
+        let num;
+        if (projectId.match(/^\d+$/)) {
+          let num2;
+          const tmp7 = "http" === protocol || "https" === protocol;
+          if (tmp7) {
+            let num3 = port;
+            if (num3) {
+              const _isNaN = isNaN;
+              const _parseInt = parseInt;
+              num3 = isNaN(parseInt(port, 10));
+            }
+            if (num3) {
+              const logger3 = tmp2(12581).logger;
+              const _HermesInternal3 = HermesInternal;
+              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
+              num3 = 1;
+            }
+            num2 = num3;
+          } else {
+            const logger2 = tmp2(12581).logger;
+            const _HermesInternal2 = HermesInternal;
+            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
+            num2 = 1;
+          }
+          num = num2;
+        } else {
+          let logger = tmp2(12581).logger;
+          let _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
+          num = 1;
+        }
+        found = num;
+      }
+      flag = !found;
+    }
+    if (flag) {
+      return url;
+    }
   }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
 };

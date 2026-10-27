@@ -1,9 +1,9 @@
-// Module ID: 14006
-// Function ID: 14007
+// Module ID: 14008
+// Function ID: 14009
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 4823, 8290, 21, 4971, 558, 576, 1506, 14007, 9699, 9727, 1128, 5244, 504, 8289, 7145, 2]
+// Dependencies: [19, 17, 4823, 8290, 21, 4971, 558, 576, 1506, 14009, 9699, 9727, 1128, 5244, 504, 8289, 7145, 2]
 
-// Module 14006 (ForumChannelSearch)
+// Module 14008 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Tracking from "Tracking" /* 8289 */;
@@ -163,7 +163,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   channelId = channelId.channelId;
   const guildId = channelId.guildId;
   closure_8();
-  let obj2 = channelId(14007);
+  let obj2 = channelId(14009);
   const canSearchForumPostsByChannelId = obj2.useCanSearchForumPostsByChannelId(channelId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ForumSearchStore];
@@ -311,7 +311,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(14007);
+  let obj = channelId(14009);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];

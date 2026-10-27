@@ -1,9 +1,9 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 18474
+// Function ID: 18475
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 4822, 5609, 1098, 21, 4971, 587, 558, 576, 1633, 5052, 18461, 18465, 5037, 5297, 504, 7257, 18466, 18470, 18471, 18367, 18456, 2]
+// Dependencies: [32, 19, 17, 4822, 5609, 1098, 21, 4971, 587, 558, 576, 1633, 5052, 18471, 18475, 5037, 5297, 504, 7257, 18476, 18480, 18481, 18377, 18466, 2]
 
-// Module 18464 (ActivityPanelHeader)
+// Module 18474 (ActivityPanelHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -12,11 +12,11 @@ import native from "native" /* 5037 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7257 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 18367 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18456 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 18465 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 18466 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 18470 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 18377 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18466 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 18475 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 18476 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 18480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -148,8 +148,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
             cResult[15] = tmp11;
             cResult[16] = pipState;
             cResult[17] = wrapperOffset;
-            cResult[18] = { mode: setMode(18461).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
-            const obj4 = { mode: setMode(18461).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            cResult[18] = { mode: setMode(18471).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            const obj4 = { mode: setMode(18471).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
           }
         }
         const items1 = [tmp4.panelHeader, panelLandscape, tmp9];
@@ -233,8 +233,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
   const items2 = [setMode];
   const obj2 = { gesture: tmp6(obj3), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(fn, items2);
-  obj3 = { mode: landscape(18461).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  tmp6 = setMode(18461);
+  obj3 = { mode: landscape(18471).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  tmp6 = setMode(18471);
   return obj2;
 });
 let closure_17 = tmp7;
@@ -464,7 +464,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
               let tmp34 = null != applicationId;
               if (tmp34) {
                 const obj3 = { applicationId };
-                tmp34 = authStore2(tmp16(18471), obj3);
+                tmp34 = authStore2(tmp16(18481), obj3);
               }
               cResult[18] = applicationId;
               cResult[19] = tmp34;
@@ -617,7 +617,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(18471), obj5);
+    tmp8Result2 = tmp8(tmp5(18481), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;

@@ -1,7 +1,7 @@
 // Module ID: 8865
 // Function ID: 8866
 // Name: getOnClick
-// Dependencies: [32, 5, 2045, 6784, 7332, 502, 4883, 4845, 5700, 6010, 4874, 5002, 6701, 1087, 1089, 7333, 584, 5701, 8866, 8888, 2002, 6830, 7347, 8883, 5699, 5703, 7764, 5656, 1267, 13041, 11356, 14192, 11360, 7765, 14196, 11229, 10555, 9565, 1386, 9567, 6715, 14197, 7649, 5711, 5606, 8610, 11282, 2]
+// Dependencies: [32, 5, 2045, 6784, 7332, 502, 4883, 4845, 5700, 6010, 4874, 5002, 6701, 1087, 1089, 7333, 584, 5701, 8866, 8888, 2002, 6830, 7347, 8883, 5699, 5703, 7764, 5656, 1267, 13044, 11357, 14193, 11361, 7765, 14197, 11230, 10555, 9565, 1386, 9567, 6715, 14198, 7649, 5711, 5606, 8610, 11283, 2]
 // Exports: default
 
 // Module 8865 (getOnClick)
@@ -18,9 +18,9 @@ import _slicedToArray2 from "_slicedToArray" /* 7764 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 7765 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8866 */;
 import QuestUtils from "QuestUtils" /* 9567 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11229 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11282 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11360 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11230 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11283 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
@@ -71,7 +71,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -99,7 +99,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -128,7 +128,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -322,7 +322,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "dispatch", skuId: "ix" };
+            result = { applicationId: "Array", skuId: "Reflect" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -414,7 +414,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14196, dependencyMap.paths);
+        const promise = asyncRequire(14197, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

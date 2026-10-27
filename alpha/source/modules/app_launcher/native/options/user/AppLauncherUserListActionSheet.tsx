@@ -1,9 +1,9 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12090
+// Function ID: 12091
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1504, 21, 4971, 558, 576, 5210, 7630, 1202, 12160, 1128, 12198, 11286, 12161, 6903, 12159, 2]
+// Dependencies: [19, 1504, 21, 4971, 558, 576, 5210, 7630, 1202, 12051, 1128, 12091, 11287, 12052, 6903, 12050, 2]
 
-// Module 12197 (AppLauncherUserListActionSheet)
+// Module 12090 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       tmp14[0] = id;
       tmp14[5] = tmp4;
-      tmp10Result = tmp10(tmp11(12198), tmp14);
+      tmp10Result = tmp10(tmp11(12091), tmp14);
     } else {
       class U {
         constructor(arg0) {
@@ -300,7 +300,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       tmp12[1] = guild_id;
       tmp12[3] = tmp5;
       tmp12[6] = tmp4;
-      tmp10Result = tmp10(tmp11(11286), tmp12);
+      tmp10Result = tmp10(tmp11(11287), tmp12);
     }
     cResult[8] = channel;
     cResult[9] = id;
@@ -422,7 +422,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(12159).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
+  const tmp8 = jsx(tmp(12050).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
   cResult[4] = tmp4.emptyState;
   cResult[5] = tmp5;
   cResult[6] = tmp6;
@@ -433,7 +433,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(12159).AppLauncherList, {
+  return jsx(onPressRow(12050).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

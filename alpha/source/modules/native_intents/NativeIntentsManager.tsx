@@ -1,15 +1,15 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 19423
+// Function ID: 19424
 // Name: NativeIntentsManager
-// Dependencies: [32, 4823, 4845, 4903, 4913, 4874, 1392, 1087, 19414, 19415, 5604, 14315, 1417, 1388, 5025, 7214, 2]
+// Dependencies: [32, 4823, 4845, 4903, 4913, 4874, 1392, 1087, 19424, 19425, 5604, 14316, 1417, 1388, 5025, 7214, 2]
 
-// Module 19413 (NativeIntentsManager)
+// Module 19423 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
 import useChannelName from "useChannelName" /* 5604 */;
-import getChannelIcon from "getChannelIcon" /* 14315 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19414 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 19415 */;
+import getChannelIcon from "getChannelIcon" /* 14316 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19424 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 19425 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;

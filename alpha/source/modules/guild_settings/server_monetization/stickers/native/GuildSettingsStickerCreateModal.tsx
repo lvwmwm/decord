@@ -1,12 +1,12 @@
-// Module ID: 19076
-// Function ID: 19077
+// Module ID: 19086
+// Function ID: 19087
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 558, 576, 10027, 1128, 19077, 10030, 2]
+// Dependencies: [19, 21, 558, 576, 10027, 1128, 19087, 10030, 2]
 
-// Module 19076 (GuildSettingsStickerCreateModal)
+// Module 19086 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19077 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19087 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

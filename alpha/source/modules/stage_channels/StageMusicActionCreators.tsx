@@ -1,10 +1,10 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11535
+// Function ID: 11536
 // Name: StageMusicActionCreators
 // Dependencies: [584, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 11534 (StageMusicActionCreators)
+// Module 11535 (StageMusicActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

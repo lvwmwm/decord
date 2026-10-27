@@ -1,13 +1,13 @@
-// Module ID: 12449
-// Function ID: 12450
+// Module ID: 12432
+// Function ID: 12433
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2068, 6773, 11909, 12450, 12451, 11872, 558, 576, 11758, 504, 2]
+// Dependencies: [32, 19, 2068, 6773, 11798, 12433, 12434, 11760, 558, 576, 12178, 504, 2]
 
-// Module 12449 (conjurePlanWidget)
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11872 */;
-import _mod11909 from "module_11909" /* 11909 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12450 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12451 */;
+// Module 12432 (conjurePlanWidget)
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11760 */;
+import _mod11798 from "module_11798" /* 11798 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12433 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12434 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
@@ -120,19 +120,19 @@ function sampleValues(widget_config, sample_data, arg2) {
       let _String = String;
       let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod11909.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod11798.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod11909.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod11798.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod11909.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod11798.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -162,7 +162,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, arg2
     }
     continue;
   }
-  const applicationWidgetSurfaceConfigsSchema = _mod11909.applicationWidgetSurfaceConfigsSchema;
+  const applicationWidgetSurfaceConfigsSchema = _mod11798.applicationWidgetSurfaceConfigsSchema;
   const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
   if (safeParseResult.success) {
     const data = safeParseResult.data;

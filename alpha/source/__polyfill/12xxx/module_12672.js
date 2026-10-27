@@ -1,177 +1,178 @@
 // Module ID: 12672
 // Function ID: 12673
-// Dependencies: [12585, 12587, 12634]
+// Dependencies: [12637, 12582, 12673]
+// Exports: generateIteratee
 
 // Module 12672
-import _mod12585 from "module_12585" /* 12585 */;
-import _mod12587 from "module_12587" /* 12587 */;
-import module_12634 from "module_12634" /* 12634 */;
+import _mod12673 from "module_12673" /* 12673 */;
+import module_12637 from "module_12637" /* 12637 */;
 
-let set;
+const require = globalThis.__r;
+let _require, stacktrace;
 
-function flattenIssue(path) {
-  let joined;
-  let json;
-  let json1;
-  const obj = { path: joined, keys: json, unionErrors: json1 };
-  const merged = Object.assign(path);
-  joined = undefined;
-  if ("path" in path) {
-    const _Array = Array;
-    if (Array.isArray(path.path)) {
-      path = path.path;
-      joined = path.join(".");
-    }
-  }
-  json = undefined;
-  if ("keys" in path) {
-    const _JSON = JSON;
-    json = JSON.stringify(path.keys);
-  }
-  json1 = undefined;
-  if ("unionErrors" in path) {
-    const _JSON2 = JSON;
-    json1 = JSON.stringify(path.unionErrors);
-  }
-  return obj;
-}
-function flattenIssuePath(arr) {
-  const mapped = arr.map((item) => {
-    let str = "<array>";
-    if (typeof item !== "number") {
-      str = item;
-    }
-    return str;
-  });
-  return mapped.join(".");
-}
-function formatIssueMessage(issues) {
-  set = new Set();
-  const tmp = issues.issues[Symbol.iterator]();
-  while (tmp !== undefined) {
-    let arr = flattenIssuePath(tmp2.path);
-    if (arr.length > 0) {
-      let addResult = set.add(tmp4);
-    }
-    continue;
-  }
-  const arr2 = Array.from(set);
-  if (0 === arr2.length) {
-    let str4 = "variable";
-    if (issues.issues.length > 0) {
-      const first = issues.issues[0];
-      str4 = "variable";
-      const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
-      if (tmp10) {
-        str4 = first.expected;
+
+export const generateIteratee = function generateIteratee(arg0) {
+  let closure_2;
+  let require;
+  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
+  return (filename) => {
+    if (filename.filename) {
+      const obj = /^[a-zA-Z]:\\/;
+      let isMatch = obj.test(filename.filename);
+      if (!isMatch) {
+        filename = filename.filename;
+        let hasItem = filename.includes("\\");
+        if (hasItem) {
+          const filename2 = filename.filename;
+          hasItem = !filename2.includes("/");
+        }
+        isMatch = hasItem;
       }
-    }
-    const _HermesInternal2 = HermesInternal;
-    return "Failed to validate " + str4;
-  } else {
-    const _HermesInternal = HermesInternal;
-    const obj2 = _mod12587;
-    return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
-  }
-}
-function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
-  let items;
-  let obj2;
-  let obj4;
-  let obj6;
-  let obj8;
-  function originalExceptionIsZodError(originalException) {
-    const obj = _mod12585;
-    let isErrorResult = obj.isError(originalException) && "ZodError" === originalException.name;
-    if (isErrorResult) {
-      const _Array = Array;
-      isErrorResult = Array.isArray(originalException.issues);
-    }
-    return isErrorResult;
-  }
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp2 = originalException;
-      if (tmp2) {
-        if (originalException.originalException) {
-          if (originalExceptionIsZodError(originalException.originalException)) {
-            if (0 !== originalException.originalException.issues.length) {
-              try {
-                let substr;
-                const issues = originalException.originalException.issues;
-                if (flag) {
-                  substr = issues;
-                } else {
-                  substr = issues.slice(0, arg0);
-                }
-                const mapped = substr.map(flattenIssue);
-                if (flag) {
-                  let _Array = Array;
-                  if (!Array.isArray(originalException.attachments)) {
-                    originalException.attachments = [];
-                  }
-                  const attachments = originalException.attachments;
-                  let obj = { filename: "zod_issues.json", data: JSON.stringify(obj2) };
-                  const _JSON = JSON;
-                  const push = attachments.push;
-                  obj2 = { issues: mapped };
-                  push(obj);
-                }
-                const obj3 = { exception: obj4, extra: obj6 };
-                const merged = Object.assign(exception);
-                obj4 = { values: items };
-                const merged1 = Object.assign(exception.exception);
-                const obj5 = { value: formatIssueMessage(originalException.originalException) };
-                const merged2 = Object.assign(exception.exception.values[0]);
-                items = [obj5];
-                const values = exception.exception.values;
-                HermesBuiltin.arraySpread(items, values.slice(1), 1);
-                obj6 = { "zoderror.issues": mapped.slice(0, arg0) };
-                const merged3 = Object.assign(exception.extra);
-                return obj3;
-              } catch (error) {
-                const obj7 = { extra: obj8 };
-                const merged4 = Object.assign(exception);
-                obj8 = { "zoderrors sentry integration parse error": obj9 };
-                const merged5 = Object.assign(exception.extra);
-                const _Error = Error;
-                let str = "unknown";
-                if (error instanceof Error) {
-                  const _HermesInternal = HermesInternal;
-                  str = "" + error.name + ": " + error.message + "\n" + error.stack;
-                }
-                return obj7;
-              }
-            }
+      const tmp5 = closure_0;
+      if (tmp5) {
+        if (root) {
+          const filename1 = filename.filename;
+          if (0 === filename1.indexOf(root)) {
+            filename.filename = filename1.replace(root, prefix);
           }
         }
+      } else if (isMatch) {
+        let replaced;
+        let relativeResult;
+        if (isMatch) {
+          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
+          replaced = str5.replace(/\\/g, "/");
+        } else {
+          replaced = str3;
+        }
+        const obj2 = _mod12673;
+        if (root) {
+          relativeResult = obj2.relative(tmp7, replaced);
+        } else {
+          relativeResult = obj2.basename(replaced);
+        }
+        const _HermesInternal = HermesInternal;
+        filename.filename = "" + prefix + relativeResult;
       }
+      return filename;
+    } else {
+      return filename;
     }
-  }
-  return exception;
-}
-
-export { applyZodErrorsToEvent };
-export { flattenIssue };
-export { flattenIssuePath };
-export { formatIssueMessage };
-export const zodErrorsIntegration = module_12634.defineIntegration(() => {
+  };
+};
+export const rewriteFramesIntegration = module_12637.defineIntegration(() => {
+  let closure_0;
+  let prefix;
+  let root;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let num = 10;
-  if (undefined !== obj.limit) {
-    num = obj.limit;
+  let fn;
+  ({ prefix, root } = obj);
+  if (!prefix) {
+    prefix = "app:///";
   }
-  return {
-    name: "ZodErrors",
-    processEvent(arg0, arg1) {
-      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
+  const tmp = _require;
+  let tmp2 = root;
+  fn = obj.iteratee;
+  const tmp3 = "window" in require("module_12582").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
+  if (!fn) {
+    _require = tmp3;
+    fn = (filename) => {
+      if (filename.filename) {
+        const obj = /^[a-zA-Z]:\\/;
+        let isMatch = obj.test(filename.filename);
+        if (!isMatch) {
+          filename = filename.filename;
+          let hasItem = filename.includes("\\");
+          if (hasItem) {
+            const filename2 = filename.filename;
+            hasItem = !filename2.includes("/");
+          }
+          isMatch = hasItem;
+        }
+        const tmp5 = closure_0;
+        if (tmp5) {
+          if (root) {
+            const filename1 = filename.filename;
+            if (0 === filename1.indexOf(root)) {
+              filename.filename = filename1.replace(root, prefix);
+            }
+          }
+        } else if (isMatch) {
+          let replaced;
+          let relativeResult;
+          if (isMatch) {
+            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
+            replaced = str5.replace(/\\/g, "/");
+          } else {
+            replaced = str3;
+          }
+          const obj2 = _mod12673;
+          if (root) {
+            relativeResult = obj2.relative(tmp7, replaced);
+          } else {
+            relativeResult = obj2.basename(replaced);
+          }
+          const _HermesInternal = HermesInternal;
+          filename.filename = "" + prefix + relativeResult;
+        }
+        return filename;
+      } else {
+        return filename;
+      }
+    };
+  }
+  let obj2 = {
+    name: "RewriteFrames",
+    processEvent(exception) {
+      function _processExceptionsEvent(exception) {
+        let obj2;
+        let values;
+        try {
+          let obj = { exception: obj2 };
+          let merged = Object.assign(exception);
+          obj2 = {
+            values: values.map((stacktrace) => {
+                let mapped;
+                const obj = {};
+                const merged = Object.assign(stacktrace);
+                stacktrace = stacktrace.stacktrace;
+                if (stacktrace) {
+                  const stacktrace2 = stacktrace.stacktrace;
+                  const obj2 = { frames: mapped };
+                  const merged1 = Object.assign(stacktrace2);
+                  mapped = stacktrace2 && stacktrace2.frames;
+                  if (mapped) {
+                    const frames = stacktrace2.frames;
+                    mapped = frames.map((item) => closure_1_0(item));
+                  }
+                  stacktrace = { stacktrace: obj2 };
+                  const obj3 = { stacktrace: obj2 };
+                }
+                const merged2 = Object.assign(stacktrace);
+                return obj;
+              })
+          };
+          let merged1 = Object.assign(exception.exception);
+          values = exception.exception.values;
+          return obj;
+        } catch (err) {
+          return exception;
+        }
+      }
+      exception = exception.exception;
+      if (exception) {
+        const _Array = Array;
+        exception = Array.isArray(exception.exception.values);
+      }
+      let tmp2 = exception;
+      if (exception) {
+        tmp2 = _processExceptionsEvent(exception);
+      }
+      return tmp2;
     }
   };
+  return obj2;
 });

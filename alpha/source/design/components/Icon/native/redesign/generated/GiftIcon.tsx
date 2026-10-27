@@ -1,9 +1,9 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12888
+// Function ID: 12889
 // Name: GiftIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 8452, 5668, 2]
 
-// Module 12885 (GiftIcon)
+// Module 12888 (GiftIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

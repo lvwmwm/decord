@@ -1,9 +1,9 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12329
+// Function ID: 12330
 // Name: ConjureShimmer
 // Dependencies: [32, 19, 17, 4972, 21, 4971, 558, 576, 504, 5052, 5206, 683, 6966, 5258, 2]
 
-// Module 12346 (ConjureShimmer)
+// Module 12329 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;

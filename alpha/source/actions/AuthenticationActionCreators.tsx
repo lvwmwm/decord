@@ -32,7 +32,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f96439 = (error) => {
+const f96489 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
@@ -52,7 +52,7 @@ function handleLogout(source, Routes) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f96439);
+  dispatchResult.catch(f96489);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -168,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f96439);
+            dispatchResult.catch(f96489);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -295,7 +295,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ let obj2 = {
               } else {
                 credential = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -513,7 +513,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -623,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f96439);
+    dispatchResult.catch(f96489);
   },
   logout(TTI_test, LOGIN) {
     let Storage;
@@ -686,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f96439);
+    dispatchResult.catch(f96489);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -780,7 +780,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -950,7 +950,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

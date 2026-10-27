@@ -1,9 +1,9 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15742
+// Function ID: 15743
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4823, 1392, 4822, 10616, 4976, 21, 4971, 587, 558, 576, 504, 12904, 12124, 15740, 7257, 1388, 15742, 7566, 7755, 5663, 1128, 7285, 5662, 7485, 5678, 1499, 1384, 12914, 10625, 12915, 12936, 2]
+// Dependencies: [5, 32, 19, 17, 4823, 1392, 4822, 10616, 4976, 21, 4971, 587, 558, 576, 504, 12907, 12015, 15741, 7257, 1388, 15743, 7566, 7755, 5663, 1128, 7285, 5662, 7485, 5678, 1499, 1384, 12917, 10625, 12918, 12939, 2]
 
-// Module 15741 (ActivityShareLinkModal)
+// Module 15742 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -14,9 +14,9 @@ import LinkIcon from "LinkIcon" /* 5678 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
 import UserRowConstants from "UserRowConstants" /* 10616 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12124 */;
-import formatResults from "formatResults" /* 12904 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15740 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12015 */;
+import formatResults from "formatResults" /* 12907 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -268,7 +268,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -321,7 +321,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -356,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -378,7 +378,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

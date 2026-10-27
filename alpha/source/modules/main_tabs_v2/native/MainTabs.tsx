@@ -1,9 +1,9 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17423
+// Function ID: 17424
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5146, 9710, 1633, 10625, 17423, 5037, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5146, 9710, 1633, 10625, 17424, 5037, 2]
 
-// Module 17422 (MainTabs)
+// Module 17423 (MainTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
 import useActiveTheme from "useActiveTheme" /* 9710 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17423 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17424 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;

@@ -1,9 +1,9 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18210
+// Function ID: 18211
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 9743, 4971, 587, 558, 576, 1128, 9705, 9699, 13521, 7584, 7095, 18202, 18208, 18211, 18212, 18213, 18224, 18225, 18226, 18228, 18231, 18232, 5146, 1633, 5037, 2]
+// Dependencies: [109, 19, 17, 21, 9743, 4971, 587, 558, 576, 1128, 9705, 9699, 13524, 7584, 7095, 18211, 18217, 18220, 18221, 18222, 18233, 18234, 18235, 18237, 18240, 18241, 5146, 1633, 5037, 2]
 
-// Module 18201 (FriendsNavigator)
+// Module 18210 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
 import HeaderShared from "HeaderShared" /* 9699 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13521 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13524 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

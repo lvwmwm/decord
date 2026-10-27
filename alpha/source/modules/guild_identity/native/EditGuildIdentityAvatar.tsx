@@ -1,10 +1,10 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15966
+// Function ID: 15967
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 4883, 1392, 1087, 1394, 21, 4971, 504, 7253, 7278, 8648, 15935, 8658, 2053, 8655, 9672, 5210, 15936, 2002, 15849, 15849, 8646, 6908, 1128, 8747, 11816, 2]
+// Dependencies: [19, 4883, 1392, 1087, 1394, 21, 4971, 504, 7253, 7278, 8648, 15936, 8658, 2053, 8655, 9672, 5210, 15937, 2002, 15850, 15850, 8646, 6908, 1128, 8747, 12165, 2]
 // Exports: default
 
-// Module 15965 (EditGuildIdentityAvatar)
+// Module 15966 (EditGuildIdentityAvatar)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;

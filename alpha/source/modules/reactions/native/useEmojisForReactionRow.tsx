@@ -1,9 +1,9 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 13990
+// Function ID: 13991
 // Name: useEmojisForReactionRow
 // Dependencies: [19, 1395, 558, 576, 9829, 1499, 4921, 2]
 
-// Module 13988 (useEmojisForReactionRow)
+// Module 13990 (useEmojisForReactionRow)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4921 */;

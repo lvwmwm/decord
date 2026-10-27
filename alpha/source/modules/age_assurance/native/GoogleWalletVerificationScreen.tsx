@@ -381,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp50;
@@ -510,7 +510,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp50) {
           if (0 === c3) {
@@ -604,7 +604,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp50;
@@ -733,7 +733,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp50) {
         if (0 === c3) {

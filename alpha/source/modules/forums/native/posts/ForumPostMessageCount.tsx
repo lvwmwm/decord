@@ -1,16 +1,16 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13118
+// Function ID: 13119
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4971, 587, 1384, 558, 576, 9725, 1128, 8542, 5234, 11014, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 1384, 558, 576, 9725, 1128, 8542, 5234, 11015, 2]
 
-// Module 13115 (ForumPostMessageCount)
+// Module 13118 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import ChatIcon2 from "ChatIcon" /* 8542 */;
 import ForumHooks from "ForumHooks" /* 9725 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11014 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

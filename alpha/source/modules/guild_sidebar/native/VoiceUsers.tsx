@@ -1,19 +1,19 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17545
+// Function ID: 17546
 // Name: VoiceUsers
-// Dependencies: [19, 17, 4883, 21, 4971, 587, 12063, 558, 576, 9709, 504, 17545, 11059, 1128, 13451, 5234, 7408, 17549, 17552, 2]
+// Dependencies: [19, 17, 4883, 21, 4971, 587, 11954, 558, 576, 9709, 504, 17546, 11060, 1128, 13454, 5234, 7408, 17550, 17553, 2]
 // Exports: getAudienceItemHeight
 
-// Module 17544 (VoiceUsers)
+// Module 17545 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9709 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
-import ChannelListLayout from "ChannelListLayout" /* 12063 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13451 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
+import ChannelListLayout from "ChannelListLayout" /* 11954 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13454 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     }
     const obj4 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
     ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-    const tmp15 = closure_6(tmp4(17545), obj4, user.id);
+    const tmp15 = closure_6(tmp4(17546), obj4, user.id);
     cResult[5] = channel;
     cResult[6] = collapsed;
     cResult[7] = isGuest;
@@ -198,7 +198,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   const obj2 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj5, user.id) };
   obj5 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
-  tmpResult = tmp(17545);
+  tmpResult = tmp(17546);
   if (member == null) {
     member = storeMember;
   }
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsers(c
     if (cResult[1] === voiceStates) {
       tmp4 = cResult[2];
     }
-    const arr2 = channel(17549)(tmp4);
+    const arr2 = channel(17550)(tmp4);
     const tmp6 = channel;
     if (cResult[3] === guild_id) {
       if (cResult[4] === arr2) {
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsers(c
               }
               const obj2 = { collapsed, children: items };
               items = [tmp14, tmp16];
-              const tmp22 = closure_7(tmp6(17552), obj2);
+              const tmp22 = closure_7(tmp6(17553), obj2);
               cResult[15] = collapsed;
               cResult[16] = tmp14;
               cResult[17] = tmp16;

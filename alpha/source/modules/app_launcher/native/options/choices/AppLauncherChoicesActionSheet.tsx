@@ -1,9 +1,9 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12049
+// Function ID: 12050
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1504, 21, 4971, 587, 558, 576, 7220, 1633, 1384, 6708, 8951, 5210, 7038, 12159, 12161, 2]
+// Dependencies: [32, 109, 19, 17, 1504, 21, 4971, 587, 558, 576, 7220, 1633, 1384, 6708, 8951, 5210, 7038, 12050, 12052, 2]
 
-// Module 12158 (AppLauncherChoicesActionSheet)
+// Module 12049 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let tmp;
 const defaultMVCPConfig = tmp(7220);
-const f113432 = (choice, originalIndex) => ({ choice, originalIndex });
+const f113030 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F113432 */ });
+        return choices.map(function() { /* body not rendered: F113030 */ });
       }
     }
     cResult[2] = option.choices;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F113432 */ });
+        return choices.map(function() { /* body not rendered: F113030 */ });
       }
     }
   }
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
       obj = { style: items, children: null };
       items[2] = lastItem;
       tmp5 = tmp === originalIndex;
-      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F148859 */ } };
+      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F148756 */ } };
       obj.children = tmp2(option(closure_2[14]).FormRadioRow, obj1);
       return tmp2(tmp3, obj);
     }
@@ -280,7 +280,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f113432);
+    return choices.map(f113030);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];
@@ -350,15 +350,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
   let tmp16 = tmp13;
   length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(12161).AppLauncherCommandOptionActionSheet;
+  const AppLauncherCommandOptionActionSheet = tmp3(12052).AppLauncherCommandOptionActionSheet;
   const tmp15 = closure_10;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(12159).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(12050).AppLauncherListSearchBar, obj3);
   }
   items3 = [tmp16, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(12159).AppLauncherListEmptyState, {});
+    tmp20 = closure_9(tmp3(12050).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
       scrollable: tmp13,

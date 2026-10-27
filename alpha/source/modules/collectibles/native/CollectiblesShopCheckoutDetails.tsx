@@ -1,9 +1,9 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 13879
+// Function ID: 13880
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1089, 9391, 21, 4971, 587, 558, 576, 8717, 13878, 5669, 8692, 9415, 8660, 9390, 1992, 9411, 1995, 1090, 9438, 9437, 9403, 1128, 5234, 7661, 9448, 13879, 8667, 2053, 9465, 2]
+// Dependencies: [19, 17, 1089, 9391, 21, 4971, 587, 558, 576, 8717, 13880, 5669, 8692, 9415, 8660, 9390, 1992, 9411, 1995, 1090, 9438, 9437, 9403, 1128, 5234, 7661, 9448, 13881, 8667, 2053, 9465, 2]
 
-// Module 13877 (CollectiblesShopCheckoutDetails)
+// Module 13879 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -27,8 +27,8 @@ import _modDef9437 from "module_9437" /* 9437 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9438 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9448 */;
 import getProductName from "getProductName" /* 9465 */;
-import _modDef13878 from "module_13878" /* 13878 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13879 */;
+import _modDef13880 from "module_13880" /* 13880 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 13881 */;
 import react from "react" /* 19 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9391 */;
 import Fragment from "Fragment" /* 21 */;
@@ -79,8 +79,8 @@ let closure_10 = createStyles.createStyles((arg0) => {
     BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
     tmp5 = tmp;
   }
-  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "application" } };
-  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "application" });
+  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "__initData" } };
+  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "__initData" });
   return obj;
 });
 createStyles = createStyles_mod;
@@ -104,7 +104,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef13878 };
+      const obj2 = { uri: _modDef13880 };
       cResult[0] = obj2;
       first = obj2;
     } else {
@@ -176,7 +176,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef13878 };
+    obj3 = { uri: _modDef13880 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };

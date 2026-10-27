@@ -1,10 +1,10 @@
-// Module ID: 12475
-// Function ID: 12476
+// Module ID: 12458
+// Function ID: 12459
 // Name: ConjureClarification
-// Dependencies: [4823, 1392, 1087, 1128, 3830, 12476, 2]
+// Dependencies: [4823, 1392, 1087, 1128, 3830, 12459, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, multiSelectAnswer, nextClarificationStep, submitClarificationAnswers, toggleClarificationOption
 
-// Module 12475 (ConjureClarification)
+// Module 12458 (ConjureClarification)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -20,7 +20,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f114700 = (answer) => {
+const f114693 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -28,7 +28,7 @@ const f114700 = (answer) => {
   }
   return tmp;
 };
-const f114701 = (answer) => {
+const f114694 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -119,8 +119,8 @@ export const formatClarificationAnswers = function formatClarificationAnswers(qu
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114700);
-  const mapped1 = found.map(f114701);
+  const found = mapped.filter(f114693);
+  const mapped1 = found.map(f114694);
   return mapped1.join("\n");
 };
 export const toggleClarificationOption = function toggleClarificationOption(options, arr, id) {
@@ -401,8 +401,8 @@ export const submitClarificationAnswers = function submitClarificationAnswers(pr
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114700);
-  const mapped1 = found.map(f114701);
+  const found = mapped.filter(f114693);
+  const mapped1 = found.map(f114694);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

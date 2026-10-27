@@ -1,10 +1,10 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 12276
+// Function ID: 12277
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 4971, 558, 576, 11797, 1128, 3830, 11798, 10720, 10786, 5663, 5234, 5977, 5914, 5910, 2]
+// Dependencies: [5, 32, 19, 21, 4971, 558, 576, 12238, 1128, 3830, 12277, 10720, 10786, 5663, 5234, 5977, 5914, 5910, 2]
 // Exports: default
 
-// Module 11796 (openConjureRemoveAppAlert)
+// Module 12276 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 5910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -264,7 +264,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -337,7 +337,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                       open("CONJURE_APP_REMOVED", obj);
                     }
                     c3 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 }
               } catch (tmp36) {
@@ -435,7 +435,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -508,7 +508,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp36) {

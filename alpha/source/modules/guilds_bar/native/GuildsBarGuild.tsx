@@ -1,9 +1,9 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17763
+// Function ID: 17764
 // Name: GuildsBarGuild
-// Dependencies: [19, 4841, 6703, 6814, 4845, 5002, 6701, 17733, 17730, 1087, 21, 4971, 587, 558, 576, 5252, 17742, 17448, 17451, 17763, 504, 6883, 17774, 17775, 5908, 1128, 1267, 17757, 17781, 17734, 17782, 5052, 5247, 5669, 17785, 2]
+// Dependencies: [19, 4841, 6703, 6814, 4845, 5002, 6701, 17734, 17731, 1087, 21, 4971, 587, 558, 576, 5252, 17743, 17449, 17452, 17764, 504, 6883, 17775, 17776, 5908, 1128, 1267, 17758, 17782, 17735, 17783, 5052, 5247, 5669, 17786, 2]
 
-// Module 17762 (GuildsBarGuild)
+// Module 17763 (GuildsBarGuild)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
@@ -11,11 +11,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import spring from "spring" /* 5247 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
 import GuildIcon from "GuildIcon" /* 6883 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17730 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17733 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17734 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17757 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 17782 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17731 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17734 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17735 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17758 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 17783 */;
 import react_mod from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 4841 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6703 */;

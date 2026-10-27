@@ -1,9 +1,9 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 13688
+// Function ID: 13689
 // Name: HubJoinManager
 // Dependencies: [4845, 1087, 2004, 584, 7449, 2]
 
-// Module 13686 (HubJoinManager)
+// Module 13688 (HubJoinManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import transitionToGuild from "transitionToGuild" /* 7449 */;

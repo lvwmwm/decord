@@ -1,10 +1,10 @@
-// Module ID: 18491
-// Function ID: 18492
+// Module ID: 18501
+// Function ID: 18502
 // Name: VoicePanelPIPStateContext
 // Dependencies: [19, 7169, 558, 2]
 // Exports: usePIPState
 
-// Module 18491 (VoicePanelPIPStateContext)
+// Module 18501 (VoicePanelPIPStateContext)
 import react from "react" /* 19 */;
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7169 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

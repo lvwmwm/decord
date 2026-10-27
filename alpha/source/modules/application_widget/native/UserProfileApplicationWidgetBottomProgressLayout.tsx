@@ -1,14 +1,14 @@
-// Module ID: 12001
-// Function ID: 12002
+// Module ID: 11890
+// Function ID: 11891
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 11909, 5669, 11996, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 11798, 5669, 11885, 5234, 2]
 
-// Module 12001 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 11890 (UserProfileApplicationWidgetBottomProgressLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import _mod11909 from "module_11909" /* 11909 */;
+import _mod11798 from "module_11798" /* 11798 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -192,15 +192,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             }
           }
         }
-        const items3 = [_mod11909.ResolvedValueType.NUMBER];
+        const items3 = [_mod11798.ResolvedValueType.NUMBER];
         const iter = resolveFieldValue(current, items3);
         let max1;
         if (progress != null) {
           max1 = progress.fields.max;
         }
-        const items4 = [_mod11909.ResolvedValueType.NUMBER];
+        const items4 = [_mod11798.ResolvedValueType.NUMBER];
         const iter2 = resolveFieldValue(max1, items4);
-        _mod11909;
+        _mod11798;
         const root = tmp4.root;
         if (cResult[35] === tmp6) {
           let tmp28;
@@ -269,12 +269,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
                         combined1 = "" + iter.value + "/" + iter2.value;
                       } else {
                         const _HermesInternal2 = HermesInternal;
-                        const tmpResult4 = _mod11909;
+                        const tmpResult4 = _mod11798;
                         combined1 = "" + tmpResult4.decimalToClampedPercentage(iter.value) + "%";
                       }
                       tmp39Result4 = tmp39(Text, obj7);
                     } else {
-                      tmp39Result4 = tmp39(tmp(11996).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+                      tmp39Result4 = tmp39(tmp(11885).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
                     }
                     cResult[9] = tmp10.status;
                     cResult[10] = tmp10.text;
@@ -331,7 +331,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
                 const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
                 tmp39Result5 = tmp39(tmp(5234).Text, obj9);
               } else {
-                tmp39Result5 = tmp39(tmp(11996).TextSkeleton, { variant: "text-xs/medium" });
+                tmp39Result5 = tmp39(tmp(11885).TextSkeleton, { variant: "text-xs/medium" });
               }
               cResult[46] = tmp10.status;
               cResult[47] = tmp10.text;
@@ -342,7 +342,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
               const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: tmp8.text };
               tmp39Result6 = tmp39(tmp(5234).Text, obj10);
             } else {
-              tmp39Result6 = tmp39(tmp(11996).TextSkeleton, { variant: "heading-sm/medium" });
+              tmp39Result6 = tmp39(tmp(11885).TextSkeleton, { variant: "heading-sm/medium" });
             }
             cResult[43] = tmp8.status;
             cResult[44] = tmp8.text;
@@ -363,28 +363,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp30 = React3(FastImageDefault, obj12);
         } else {
           const obj14 = { style: tmp4.image };
-          tmp30 = React3(tmp(11996).ImageSkeleton, obj14);
+          tmp30 = React3(tmp(11885).ImageSkeleton, obj14);
         }
         cResult[35] = tmp6;
         cResult[36] = tmp4.image;
         cResult[37] = tmp30;
         tmp28 = tmp30;
       }
-      const tmpResult5 = _mod11909;
+      const tmpResult5 = _mod11798;
       const singleStringOrSkeleton = tmpResult5.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
       cResult[6] = objective;
       cResult[7] = resolveFieldValue;
       cResult[8] = singleStringOrSkeleton;
       tmp10 = singleStringOrSkeleton;
     }
-    const tmpResult6 = _mod11909;
+    const tmpResult6 = _mod11798;
     const singleStringOrSkeleton1 = tmpResult6.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
     cResult[3] = objective;
     cResult[4] = resolveFieldValue;
     cResult[5] = singleStringOrSkeleton1;
     tmp8 = singleStringOrSkeleton1;
   }
-  const items7 = [_mod11909.ResolvedValueType.MEDIA];
+  const items7 = [_mod11798.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items7);
   cResult[0] = resolveFieldValue;
   cResult[1] = image;
@@ -415,27 +415,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [_mod11909.ResolvedValueType.MEDIA];
+  const items = [_mod11798.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod11909;
+  const obj = _mod11798;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  const obj2 = _mod11909;
+  const obj2 = _mod11798;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [_mod11909.ResolvedValueType.NUMBER];
+  const items1 = [_mod11798.ResolvedValueType.NUMBER];
   const iter = resolveFieldValue(current, items1);
   let max;
   if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [_mod11909.ResolvedValueType.NUMBER];
+  const items2 = [_mod11798.ResolvedValueType.NUMBER];
   const iter2 = resolveFieldValue(max, items2);
   const obj3 = { style: tmp.root, children: items3 };
-  const tmp3Result = _mod11909;
+  const tmp3Result = _mod11798;
   const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
     const obj4 = { source: obj5, style: tmp.image, resizeMode: "contain" };
@@ -444,7 +444,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     tmp15 = React3;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React3(tmp3(11996).ImageSkeleton, obj6);
+    tmp14 = React3(tmp3(11885).ImageSkeleton, obj6);
     tmp15 = React3;
   }
   items3 = [tmp14, ];
@@ -475,14 +475,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const obj13 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
     tmp15Result = tmp15(tmp3(5234).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(11996).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(11885).TextSkeleton, { variant: "heading-sm/medium" });
   }
   items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
     tmp15Result3 = tmp15(tmp3(5234).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(11996).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(11885).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result3;
   items7 = [hasOwnProperty(View, obj12), ];
@@ -494,12 +494,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       combined = "" + iter.value + "/" + iter2.value;
     } else {
       const _HermesInternal = HermesInternal;
-      const tmp3Result2 = _mod11909;
+      const tmp3Result2 = _mod11798;
       combined = "" + tmp3Result2.decimalToClampedPercentage(iter.value) + "%";
     }
     tmp15Result4 = tmp15(Text, obj15);
   } else {
-    tmp15Result4 = tmp15(tmp3(11996).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    tmp15Result4 = tmp15(tmp3(11885).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
   }
   items7[1] = tmp15Result4;
   items5[1] = hasOwnProperty(View, obj11);

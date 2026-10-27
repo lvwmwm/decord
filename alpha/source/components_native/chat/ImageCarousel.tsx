@@ -1,7 +1,7 @@
 // Module ID: 10414
 // Function ID: 10415
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7631, 8293, 10415, 21, 4971, 587, 558, 576, 5052, 5206, 1202, 5247, 38, 8145, 504, 10416, 1128, 13105, 8736, 5234, 8765, 7063, 12171, 6908, 7032, 1499, 9665, 10418, 8144, 2]
+// Dependencies: [19, 17, 7631, 8293, 10415, 21, 4971, 587, 558, 576, 5052, 5206, 1202, 5247, 38, 8145, 504, 10416, 1128, 13108, 8736, 5234, 8765, 7063, 12064, 6908, 7032, 1499, 9665, 10418, 8144, 2]
 
 // Module 10414 (ImageCarousel)
 import react2 from "react" /* 576 */;
@@ -19,7 +19,7 @@ import Upload from "Upload" /* 8144 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9665 */;
 import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10416 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12171 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12064 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;

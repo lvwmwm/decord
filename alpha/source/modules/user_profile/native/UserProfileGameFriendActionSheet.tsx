@@ -1,14 +1,14 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14348
+// Function ID: 14349
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 13544, 6931, 1202, 5234, 7294, 14348, 7257, 5989, 7414, 5662, 5210, 7298, 7248, 1128, 2]
+// Dependencies: [5, 32, 19, 17, 4913, 1087, 21, 4971, 587, 558, 576, 13546, 6931, 1202, 5234, 7294, 14349, 7257, 5989, 7414, 5662, 5210, 7298, 7248, 1128, 2]
 // Exports: default
 
-// Module 14347 (UserProfileGameFriendActionSheet)
+// Module 14348 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13544 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13546 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -253,7 +253,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -303,7 +303,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         memo = tmp30;

@@ -1,7 +1,7 @@
 // Module ID: 9663
 // Function ID: 9664
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7402, 502, 4823, 7631, 6010, 7760, 1127, 1087, 4976, 558, 7369, 7755, 7381, 576, 1128, 9664, 11, 1297, 8304, 9665, 7757, 1405, 8146, 9667, 8289, 5711, 7566, 5908, 584, 4978, 1104, 10203, 14052, 2]
+// Dependencies: [32, 5, 19, 7402, 502, 4823, 7631, 6010, 7760, 1127, 1087, 4976, 558, 7369, 7755, 7381, 576, 1128, 9664, 11, 1297, 8304, 9665, 7757, 1405, 8146, 9667, 8289, 5711, 7566, 5908, 584, 4978, 1104, 10203, 14054, 2]
 // Exports: createThread
 
 // Module 9663 (ThreadCreationHooks)
@@ -228,7 +228,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -741,7 +741,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -791,7 +791,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -890,7 +890,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -958,7 +958,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;
@@ -1208,7 +1208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;

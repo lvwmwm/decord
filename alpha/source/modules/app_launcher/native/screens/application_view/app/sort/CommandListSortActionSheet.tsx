@@ -1,9 +1,9 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12034
+// Function ID: 12035
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 12127, 21, 1128, 558, 576, 7248, 12144, 587, 6984, 5265, 6985, 2]
+// Dependencies: [19, 12018, 21, 1128, 558, 576, 7248, 12035, 587, 6984, 5265, 6985, 2]
 
-// Module 12143 (CommandListSortActionSheet)
+// Module 12034 (CommandListSortActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
 import TableRadioRow from "TableRadioRow" /* 6984 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 6985 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 12127 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12144 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 12018 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12035 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandLis
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
       ({ size: "sm", color: onSortOptionPress(587).colors.TEXT_DEFAULT });
-      const ArrowsUpDownIcon = tmp(12144).ArrowsUpDownIcon;
+      const ArrowsUpDownIcon = tmp(12035).ArrowsUpDownIcon;
       const intl = tmp(1128).intl;
       const tmp9 = <BottomSheetTitleHeader leading={null} title={intl.string(onClose(1128).t.yeYaHf)} />;
       cResult[3] = tmp9;

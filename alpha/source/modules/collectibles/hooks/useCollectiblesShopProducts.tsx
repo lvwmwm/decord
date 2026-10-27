@@ -724,10 +724,10 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f146468 = (item) => "" !== item;
+    const f146558 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f146468))];
-    new Set(values.filter(f146468));
+    const items = [...new Set(values.filter(f146558))];
+    new Set(values.filter(f146558));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

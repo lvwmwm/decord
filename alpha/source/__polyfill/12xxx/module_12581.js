@@ -1,148 +1,84 @@
 // Module ID: 12581
 // Function ID: 12582
-// Dependencies: []
-// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
+// Dependencies: [12582, 12580]
 
 // Module 12581
-let filename;
+import GLOBAL_OBJ from "module_12582" /* 12582 */;
 
-function createStackParser() {
-  let items = [...arguments];
-  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
-  let closure_0 = sorted.map((item) => item[1]);
-  return (str) => {
-    let num = arg1;
-    if (arg1 === undefined) {
-      num = 0;
-    }
-    let num2 = arg2;
-    if (arg2 === undefined) {
-      num2 = 0;
-    }
-    const items = [];
-    const parts = str.split("\n");
-    if (num < parts.length) {
-      while (true) {
-        let arr3 = parts[num];
-        if (arr3.length <= 1024) {
-          let tmp10 = re0;
-          str = arr3;
-          if (re0.test(arr3)) {
-            str = arr3.replace(tmp10, "$1");
-          }
-          if (!str.match(/\S*Error: /)) {
-            for (const item10026 of closure_0) {
-              let item10026Result = item10026(str);
-              if (item10026Result) {
-                let arr = items.push(tmp6);
-                obj.return();
-                break;
-              }
-              continue;
-            }
-            if (items.length >= 50 + num2) {
-              break;
-            }
-          }
-          break;
-        }
-        num = num + 1;
-        if (num >= parts.length) {
-          break;
-        }
-      }
-    }
-    return stripSentryFramesAndReverse(items.slice(num2));
+const require = globalThis.__r;
+let _require, c0, dependencyMap;
+
+function consoleSandbox(fn) {
+  let closure_1;
+  let console;
+  const f115252 = (item) => {
+    console[item] = closure_1[item];
   };
+  const tmp = console;
+  if ("console" in console(12582).GLOBAL_OBJ) {
+    console = tmp(12582).GLOBAL_OBJ.console;
+    dependencyMap = {};
+    const _Object = Object;
+    const keys = Object.keys(obj);
+    const item = keys.forEach((item) => {
+      closure_1[item] = console[item];
+      console[item] = obj[item];
+    });
+    try {
+      const tmp6 = fn();
+      const item1 = keys.forEach(f115252);
+      return tmp6;
+    } catch (tmp8) {
+      const item2 = keys.forEach(f115252);
+      throw tmp8;
+    }
+  } else {
+    return fn();
+  }
 }
-function stripSentryFramesAndReverse(arg0) {
-  if (arg0.length) {
-    const _Array = Array;
-    const arr = Array.from(arg0);
-    let obj = arr[arr.length - 1];
-    const test = /sentryWrapped/.test;
-    const tmp2 = /sentryWrapped/;
-    if (!obj) {
-      obj = {};
+let items = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+const originalConsoleMethods = {};
+
+export const CONSOLE_LEVELS = items;
+export { consoleSandbox };
+export const logger = GLOBAL_OBJ.getGlobalSingleton("logger", function makeLogger() {
+  _require = false;
+  let obj = {
+    enable() {
+      c0 = true;
+    },
+    disable() {
+      c0 = false;
+    },
+    isEnabled() {
+      return c0;
     }
-    const tmp3 = obj.function || "";
-    if (test(tmp3)) {
-      arr.pop();
-    }
-    const reversed = arr.reverse();
-    let obj2 = arr[arr.length - 1];
-    const test2 = re1.test;
-    const tmp6 = re1;
-    if (!obj2) {
-      obj2 = {};
-    }
-    const tmp7 = obj2.function || "";
-    if (test2(tmp7)) {
-      arr.pop();
-      let obj3 = arr[arr.length - 1];
-      const test3 = tmp6.test;
-      if (!obj3) {
-        obj3 = {};
-      }
-      const tmp9 = obj3.function || "";
-      if (test3(tmp9)) {
-        arr.pop();
-      }
-    }
-    const substr = arr.slice(0, 50);
-    return substr.map((filename) => {
-      const obj = { filename, function: filename.function || "?" };
-      const merged = Object.assign(filename);
-      filename = filename.filename;
-      if (!filename) {
-        filename = (arr[arr.length - 1] || {}).filename;
-      }
-      return obj;
+  };
+  let tmp = items;
+  const forEach = items.forEach;
+  if (require("module_12580").DEBUG_BUILD) {
+    const item = forEach((arg0) => {
+      let closure_0 = arg0;
+      obj[arg0] = () => {
+        const args = [...arguments];
+        const tmp = args;
+        if (tmp) {
+          consoleSandbox(() => {
+            const _console = GLOBAL_OBJ.GLOBAL_OBJ.console;
+            obj = _console[args];
+            items = ["Sentry Logger [" + args + "]:", ...closure_0];
+            obj.apply(items);
+          });
+        }
+      };
     });
   } else {
-    return [];
-  }
-}
-const re0 = /\(error: (.*)\)/;
-const re1 = /captureMessage|captureException/;
-let c4 = "<anonymous>";
+    const item1 = forEach((arg0) => {
+      obj[arg0] = () => {
 
-export const UNKNOWN_FUNCTION = "?";
-export { createStackParser };
-export const getFramesFromEvent = function getFramesFromEvent(exception) {
-  exception = exception.exception;
-  if (exception) {
-    let items = [];
-    try {
-      const values = exception.values;
-      const item = values.forEach((stacktrace) => {
-        if (stacktrace.stacktrace.frames) {
-          const push = items.push;
-          items = [];
-          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
-          HermesBuiltin.apply(push, items, items);
-        }
-      });
-      return items;
-    } catch (err) {
-    }
+      };
+    });
   }
-};
-export const getFunctionName = function getFunctionName(name) {
-  try {
-    name = name && typeof name === "function" && name.name || c4;
-    return name;
-  } catch (err) {
-    return c4;
-  }
-};
-export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
-  let applyResult = arg0;
-  if (Array.isArray(arg0)) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, arg0, 0);
-    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
-  }
-  return applyResult;
-};
-export { stripSentryFramesAndReverse };
+  return obj;
+});
+export { originalConsoleMethods };

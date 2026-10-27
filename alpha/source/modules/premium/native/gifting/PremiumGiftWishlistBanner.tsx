@@ -1,7 +1,7 @@
 // Module ID: 10549
 // Function ID: 10550
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7331, 1394, 1087, 1089, 8672, 21, 587, 4971, 558, 576, 9357, 9369, 10550, 10554, 7253, 7278, 1267, 8668, 10498, 10555, 5151, 5663, 1128, 7649, 13874, 5025, 5234, 13899, 13904, 2]
+// Dependencies: [5, 19, 17, 7331, 1394, 1087, 1089, 8672, 21, 587, 4971, 558, 576, 9357, 9369, 10550, 10554, 7253, 7278, 1267, 8668, 10498, 10555, 5151, 5663, 1128, 7649, 13876, 5025, 5234, 13901, 13906, 2]
 
 // Module 10549 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
@@ -428,7 +428,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                       } else if (arg0 === 2) {
                         return { value, done: true };
                       } else {
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -503,7 +503,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                           return { value, done: true };
                         }
                         c2 = 3;
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp23) {
                         c2 = 3;
                         throw tmp23;
@@ -736,7 +736,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -811,7 +811,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

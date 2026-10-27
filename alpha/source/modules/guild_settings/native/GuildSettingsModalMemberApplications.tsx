@@ -1,16 +1,16 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18039
+// Function ID: 18040
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6844, 21, 4971, 587, 558, 576, 5025, 5234, 18031, 1417, 1202, 6903, 1633, 5005, 18036, 18037, 504, 1128, 7220, 8723, 5592, 2]
+// Dependencies: [19, 17, 6844, 21, 4971, 587, 558, 576, 5025, 5234, 18040, 1417, 1202, 6903, 1633, 5005, 18045, 18046, 504, 1128, 7220, 8723, 5592, 2]
 
-// Module 18030 (GuildSettingsModalMemberApplications)
+// Module 18039 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18031 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18040 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6844 */;

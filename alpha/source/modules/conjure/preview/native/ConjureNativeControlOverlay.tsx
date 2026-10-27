@@ -1,15 +1,15 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11787
+// Function ID: 11788
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 11899, 10762, 504, 5052, 5247, 5248, 5206, 1128, 3830, 11900, 11904, 5234, 5244, 2]
+// Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 11788, 10762, 504, 5052, 5247, 5248, 5206, 1128, 3830, 11789, 11793, 5234, 5244, 2]
 
-// Module 11898 (ConjureNativeControlOverlay)
+// Module 11787 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import spring from "spring" /* 5247 */;
 import springPresets from "springPresets" /* 5248 */;
-import useConjureControlBar from "useConjureControlBar" /* 11899 */;
+import useConjureControlBar from "useConjureControlBar" /* 11788 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -75,9 +75,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ projectId, visible, children } = active);
   active = active.active;
   const tmp4 = closure_10();
-  let obj2 = conjureControlPhase(11899);
+  let obj2 = conjureControlPhase(11788);
   conjureControlPhase = obj2.useConjureControlPhase(active);
-  const obj3 = conjureControlPhase(11899);
+  const obj3 = conjureControlPhase(11788);
   const conjureControlStop = obj3.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
   const obj4 = conjureControlPhase(10762);
@@ -295,10 +295,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               items1 = [tmp4.bar, animatedStyle1];
               View2 = stateFromStores(5052).View;
               if (tmp12) {
-                tmp37Result = closure_6(tmp(11900).AILoader, { size: 12, color: "text-overlay-light" });
+                tmp37Result = closure_6(tmp(11789).AILoader, { size: 12, color: "text-overlay-light" });
               } else {
                 ({ size: "sm", color: stateFromStores(587).colors.TEXT_OVERLAY_LIGHT });
-                const SparklesIcon = tmp(11904).SparklesIcon;
+                const SparklesIcon = tmp(11793).SparklesIcon;
                 class B {
                   constructor() {
                     let bound;
@@ -625,9 +625,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ active, children } = arg0);
   let tmp = closure_10();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(11899);
+  let obj = conjureControlPhase(11788);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(11899);
+  let obj2 = conjureControlPhase(11788);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
   const obj3 = conjureControlPhase(10762);
@@ -784,10 +784,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       items4 = [tmp.bar, animatedStyle1];
       View2 = tmp20(5052).View;
       if (tmp8) {
-        tmp36Result = tmp36(tmp2(11900).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp36Result = tmp36(tmp2(11789).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp20(587).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(11904).SparklesIcon;
+        const SparklesIcon = tmp2(11793).SparklesIcon;
         tmp36Result = tmp36(SparklesIcon, obj8);
       }
       items5 = [tmp36Result, , ];

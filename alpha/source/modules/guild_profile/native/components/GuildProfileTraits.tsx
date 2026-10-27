@@ -1,9 +1,9 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14168
+// Function ID: 14169
 // Name: GuildProfileTraits
 // Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1417, 4921, 7227, 5234, 2]
 
-// Module 14167 (GuildProfileTraits)
+// Module 14168 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

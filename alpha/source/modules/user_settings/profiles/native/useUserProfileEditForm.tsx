@@ -1,9 +1,9 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15855
+// Function ID: 15856
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 32, 19, 8649, 7703, 1392, 1087, 4996, 558, 576, 504, 7078, 15855, 11185, 4998, 7085, 15856, 6713, 7088, 15857, 6374, 1128, 8656, 584, 15858, 8670, 8686, 14407, 4799, 15161, 2]
+// Dependencies: [109, 5, 32, 19, 8649, 7703, 1392, 1087, 4996, 558, 576, 504, 7078, 15856, 11186, 4998, 7085, 15857, 6713, 7088, 15858, 6374, 1128, 8656, 584, 15859, 8670, 8686, 14408, 4799, 15162, 2]
 
-// Module 15854 (useUserProfileEditForm)
+// Module 15855 (useUserProfileEditForm)
 import Constants from "Constants" /* 1087 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -182,7 +182,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           if (1 === c7) {
@@ -694,7 +694,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -758,7 +758,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           if (1 === c7) {
@@ -1166,7 +1166,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1212,7 +1212,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp15) {
         c3 = 3;
         throw tmp15;

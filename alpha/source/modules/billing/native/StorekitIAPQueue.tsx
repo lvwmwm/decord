@@ -1,9 +1,9 @@
-// Module ID: 13933
-// Function ID: 13934
+// Module ID: 13935
+// Function ID: 13936
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5646, 7340, 13914, 2]
+// Dependencies: [5, 17, 5646, 7340, 13916, 2]
 
-// Module 13933 (StorekitIAPQueue)
+// Module 13935 (StorekitIAPQueue)
 import react_native from "react-native" /* 17 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5646 */;
 import utils_PriceUtils from "utils/PriceUtils" /* 7340 */;
@@ -91,7 +91,7 @@ class StorekitIAPQueueClass {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -133,7 +133,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -169,7 +169,7 @@ class StorekitIAPQueueClass {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -248,7 +248,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -279,7 +279,7 @@ class StorekitIAPQueueClass {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -305,7 +305,7 @@ class StorekitIAPQueueClass {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c4) {
             c3 = 0;

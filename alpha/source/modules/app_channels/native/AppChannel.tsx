@@ -1,9 +1,9 @@
-// Module ID: 18042
-// Function ID: 18043
+// Module ID: 18051
+// Function ID: 18052
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1899, 5593, 11888, 18043, 18046, 11885, 11889, 7345, 5707, 11890, 11894, 18050, 18053, 1128, 6809, 5669, 1417, 5244, 5626, 9716, 18054, 6807, 18055, 10892, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1899, 5593, 11777, 18052, 18055, 11774, 11778, 7345, 5707, 11779, 11783, 18059, 18062, 1128, 6809, 5669, 1417, 5244, 5626, 9716, 18063, 6807, 18064, 10893, 2]
 
-// Module 18042 (AppChannel)
+// Module 18051 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,16 +18,16 @@ import transitionToChannel from "transitionToChannel" /* 5707 */;
 import conjureDMAppChannel from "conjureDMAppChannel" /* 6807 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6809 */;
 import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9716 */;
-import useChannelContentGate from "useChannelContentGate" /* 10892 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11885 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11888 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11889 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11890 */;
-import useFrameLifecycleDefault from "useFrameLifecycle" /* 18043 */;
-import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 18046 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 18053 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 18054 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18055 */;
+import useChannelContentGate from "useChannelContentGate" /* 10893 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11774 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11777 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11778 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11779 */;
+import useFrameLifecycleDefault from "useFrameLifecycle" /* 18052 */;
+import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 18055 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18062 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 18063 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -85,10 +85,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
             useFrameLifecycleDefault(tmp9);
             conjureBackgroundFramesDefault(applicationId, surface);
             const tmp5Result = useEdgeOnlySwipeExitDefault;
-            tmp5Result(state === id(18043).FrameLifecycleState.Launched);
+            tmp5Result(state === id(18052).FrameLifecycleState.Launched);
             let tmp15 = null;
             const tmp5Result3 = useInlineFrameOAuthNavigationDefault;
-            if (state === id(18043).FrameLifecycleState.Launched) {
+            if (state === id(18052).FrameLifecycleState.Launched) {
               tmp15 = applicationId;
             }
             tmp5Result3(tmp15);
@@ -114,7 +114,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
                 }
               }
             }
-            if (id(18043).FrameLifecycleState.Launched === state) {
+            if (id(18052).FrameLifecycleState.Launched === state) {
               class M {
                 constructor(arg0) {
                   obj = closure_0(closure_2[15]);
@@ -122,7 +122,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
                   return;
                 }
               }
-              const obj2 = { frameId: frame.id, level: id(11894).FrameStackLevel.WithinAppContent, presentation: tmp7 };
+              const obj2 = { frameId: frame.id, level: id(11783).FrameStackLevel.WithinAppContent, presentation: tmp7 };
               const tmp5Result4 = FrameRenderTargetDefault;
               cResult[11] = frame.id;
               cResult[12] = tmp7;
@@ -497,7 +497,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-      const FrameSurfaceExplanation = tmp(18053).FrameSurfaceExplanation;
+      const FrameSurfaceExplanation = tmp(18062).FrameSurfaceExplanation;
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       const tmp13 = hasOwnProperty(FrameSurfaceExplanation, obj3);
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(18053).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(18062).FrameSurfaceExplanation;
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     result = hasOwnProperty(FrameSurfaceExplanation, obj2);

@@ -1,123 +1,114 @@
 // Module ID: 12658
 // Function ID: 12659
-// Dependencies: [32, 109, 12659, 12634]
+// Dependencies: [12588, 12590]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 12658
-import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 12659 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import module_12634 from "module_12634" /* 12634 */;
+import _mod12588 from "module_12588" /* 12588 */;
+import _mod12590 from "module_12590" /* 12590 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
+const require = globalThis.__r;
+let _require, dependencyMap, length;
 
-export const requestDataIntegration = module_12634.defineIntegration(() => {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let obj2 = {};
-  let tmp = obj;
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    let user;
-    if (typeof obj.include.user === "boolean") {
-      user = obj.include.user;
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
+  let closure_1;
+  let closure_2;
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  let closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
+  } else {
+    let items = [];
+    HermesBuiltin.arraySpread(items, arg5, 0);
+    length = items;
+    let obj3 = require("module_12588");
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      let obj = { exception_id };
+      const tmp2 = obj;
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let tmp6 = tmp4;
+      let merged1 = Object.assign(tmp4);
+      mechanism.mechanism = obj;
+      const tmp8 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
+      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
+      let merged2 = Object.assign(tmp8.mechanism);
+      tmp8.mechanism = obj2;
+      const tmp12 = aggregateExceptionsFromError;
+      const items1 = [tmp8];
+      let tmp13 = errors[source];
+      HermesBuiltin.arraySpread(items1, length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
     }
-    obj3.user = user;
-    obj2.include = obj3;
-    return {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let normalizedRequest;
-          let request;
-          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            let tmp15;
-            include = include.include;
-            const user = include.user;
-            const transactionNamingScheme = include.transactionNamingScheme;
-            const ip = include.ip;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            const tmp2 = entries[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
-            tmp15 = undefined;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            return { include: include2 };
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        const obj = _mod12588;
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = { exception_id };
+          const merged = Object.assign(tmp2.mechanism);
+          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp6);
+          mechanism.mechanism = obj2;
+          const tmp13 = fn(closure_1, item);
+          length = length.length;
+          const _HermesInternal = HermesInternal;
+          mechanism = tmp13.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
           }
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
+          tmp13.mechanism = mechanism;
+          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
+          const merged2 = Object.assign(tmp13.mechanism);
+          tmp13.mechanism = obj3;
+          const items = [tmp13];
+          HermesBuiltin.arraySpread(items, length, 1);
+          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
+        }
+      });
+    }
+    return length;
+  }
+}
+
+export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
+  }
+  if (exception.exception) {
+    if (exception.exception.values) {
+      const tmp = originalException;
+      if (tmp) {
+        let obj = num(12588);
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
           }
-          ({ request, normalizedRequest } = prop);
-          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
+          if (tmp5) {
+            exception = exception.exception;
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+            exception.values = arr.map((value) => {
+              if (value.value) {
+                const obj = _mod12590;
+                value.value = obj.truncate(value.value, num);
               }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = DEFAULT_USER_INCLUDES;
-            obj = { ipAddress: tmp5, user };
-            let tmp10 = obj3;
-            let tmp11 = sdkProcessingMetadata;
-            let tmp13 = obj;
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              const tmp3 = require;
-              let tmp4 = dependencyMap;
-              obj2 = DEFAULT_USER_INCLUDES;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
+              return value;
+            });
           }
         }
-    };
+      }
+    }
   }
-  user = {};
-  const merged4 = Object.assign(tmp.include.user);
-  let tmp7 = obj.include || {};
-  const merged5 = Object.assign(tmp7.user);
-});
+};

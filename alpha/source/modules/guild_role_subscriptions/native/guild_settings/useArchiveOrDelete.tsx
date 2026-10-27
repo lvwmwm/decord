@@ -1,12 +1,12 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19294
+// Function ID: 19295
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 16568, 16583, 1128, 5909, 1202, 38, 5662, 2]
+// Dependencies: [5, 32, 19, 558, 576, 16569, 16584, 1128, 5909, 1202, 38, 5662, 2]
 
-// Module 19284 (useArchiveOrDelete)
+// Module 19294 (useArchiveOrDelete)
 import intl13 from "intl" /* 1128 */;
 import ToastUtilsAll from "ToastUtils" /* 5662 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16583 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -261,7 +261,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
                 navigation.goBack();
               }
               c2 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp30) {
             c2 = 3;
@@ -505,7 +505,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -578,7 +578,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c2 = 3;

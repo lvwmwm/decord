@@ -1,9 +1,9 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 13324
+// Function ID: 13325
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4972, 7631, 1392, 1087, 21, 1202, 4971, 587, 558, 576, 5252, 1128, 5234, 7032, 6908, 504, 5039, 6367, 9221, 8319, 13322, 5144, 5052, 5206, 10087, 1267, 10085, 1114, 6366, 8304, 9694, 9696, 13323, 2]
+// Dependencies: [19, 17, 4972, 7631, 1392, 1087, 21, 1202, 4971, 587, 558, 576, 5252, 1128, 5234, 7032, 6908, 504, 5039, 6367, 9221, 8319, 13325, 5144, 5052, 5206, 10087, 1267, 10085, 1114, 6366, 8304, 9694, 9696, 13326, 2]
 
-// Module 13321 (ChatInputContextBar)
+// Module 13324 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
@@ -1229,7 +1229,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F160569 */ };
+                  const fn = function n() { /* body not rendered: F160674 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1261,7 +1261,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F160569 */ };
+                  const fn = function n() { /* body not rendered: F160674 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1292,7 +1292,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F160569 */ };
+                  const fn = function n() { /* body not rendered: F160674 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1321,7 +1321,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F160569 */ };
+                      const fn = function n() { /* body not rendered: F160674 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;

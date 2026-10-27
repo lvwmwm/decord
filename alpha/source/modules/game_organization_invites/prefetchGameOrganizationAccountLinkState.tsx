@@ -1,16 +1,16 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 12737
+// Function ID: 12738
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2045, 7203, 11028, 11029, 6809, 7256, 7259, 2]
+// Dependencies: [5, 2045, 7203, 11029, 11030, 6809, 7256, 7259, 2]
 // Exports: default
 
-// Module 12734 (prefetchGameOrganizationAccountLinkState)
+// Module 12737 (prefetchGameOrganizationAccountLinkState)
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7203 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11029 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11028 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11029 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 17961
+// Function ID: 17962
 // Name: ReactActionSheet
-// Dependencies: [13135, 5, 32, 19, 17, 5266, 1395, 21, 1128, 4971, 587, 558, 576, 9825, 5225, 9350, 6908, 8613, 8841, 9829, 5146, 9708, 1499, 5234, 10625, 5144, 17947, 5037, 5669, 1417, 5025, 7008, 5680, 7959, 7298, 17900, 2]
+// Dependencies: [13138, 5, 32, 19, 17, 5266, 1395, 21, 1128, 4971, 587, 558, 576, 9825, 5225, 9350, 6908, 8613, 8841, 9829, 5146, 9708, 1499, 5234, 10625, 5144, 17956, 5037, 5669, 1417, 5025, 7008, 5680, 7959, 7298, 17909, 2]
 // Exports: getStatusReplyContent
 
-// Module 17952 (ReactActionSheet)
+// Module 17961 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import MessageReactionsTypes from "MessageReactionsTypes" /* 5225 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5266 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9825 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13135 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13138 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -33,7 +33,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const ICYMIContext = tmp(17900);
+const ICYMIContext = tmp(17909);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -643,7 +643,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -677,7 +677,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
                 } else {
                   closure_1_6(false);
                   c3 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp8) {
                 c3 = 3;
@@ -708,7 +708,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -745,7 +745,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           closure_1_6(false);
           closure_1_8("");
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -837,7 +837,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -874,7 +874,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
             closure_128_5(false);
             closure_128_8("");
             sendMessage = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           sendMessage = 3;
@@ -899,7 +899,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -932,7 +932,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
             } else {
               closure_1_5(false);
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp8) {
             c3 = 3;

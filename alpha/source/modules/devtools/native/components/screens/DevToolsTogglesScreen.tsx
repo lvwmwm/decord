@@ -1,9 +1,9 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 17081
+// Function ID: 17082
 // Name: DevToolsTogglesScreen
-// Dependencies: [32, 19, 17, 6927, 5237, 21, 6827, 4971, 587, 558, 576, 5663, 7296, 6903, 504, 17063, 6987, 5593, 15281, 17081, 7145, 5977, 2]
+// Dependencies: [32, 19, 17, 6927, 5237, 21, 6827, 4971, 587, 558, 576, 5663, 7296, 6903, 504, 17064, 6987, 5593, 15282, 17082, 7145, 5977, 2]
 
-// Module 17080 (DevToolsTogglesScreen)
+// Module 17081 (DevToolsTogglesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -315,7 +315,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsTogg
   }
   const insets = useSafeAreaInsetsKeyboardAwareDefault(first).insets;
   [first1, tmp9] = react.useState("");
-  const tmpResult = tmp(15281);
+  const tmpResult = tmp(15282);
   const manaTextMigrationHighlightRestartNotice = tmpResult.useManaTextMigrationHighlightRestartNotice();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DesignTogglesStore];
@@ -919,7 +919,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsTogg
   let tmp2 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   [query, tmp5] = react.useState("");
-  let obj = query(15281);
+  let obj = query(15282);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj2 = query(504);
   const items = [DesignTogglesStore];

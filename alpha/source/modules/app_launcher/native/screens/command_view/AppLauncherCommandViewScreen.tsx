@@ -1,9 +1,9 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 12037
+// Function ID: 12038
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 4972, 9650, 4877, 1504, 1087, 1629, 21, 4971, 587, 12147, 558, 576, 504, 5052, 5206, 5209, 5212, 4968, 5258, 1128, 5680, 5245, 11168, 5711, 5593, 12149, 5634, 6660, 12031, 1274, 12097, 12151, 2000, 9649, 12098, 11404, 1499, 10919, 10418, 12152, 10419, 8154, 1896, 8144, 12153, 11169, 5269, 5234, 12154, 12155, 12204, 1202, 38, 12120, 10204, 7630, 9655, 10205, 12205, 12206, 12106, 12107, 2]
+// Dependencies: [5, 32, 19, 17, 4972, 9650, 4877, 1504, 1087, 1629, 21, 4971, 587, 12038, 558, 576, 504, 5052, 5206, 5209, 5212, 4968, 5258, 1128, 5680, 5245, 11169, 5711, 5593, 12040, 5634, 6660, 11922, 1274, 11988, 12042, 2000, 9649, 11989, 11405, 1499, 10920, 10418, 12043, 10419, 8154, 1896, 8144, 12044, 11170, 5269, 5234, 12045, 12046, 12097, 1202, 38, 12011, 10204, 7630, 9655, 10205, 12098, 12099, 11997, 11998, 2]
 
-// Module 12146 (AppLauncherCommandViewScreen)
+// Module 12037 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -22,18 +22,18 @@ import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9649 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
 import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10419 */;
-import AppLauncherContext from "AppLauncherContext" /* 11168 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11169 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12031 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12098 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12106 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12107 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12147 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12149 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12151 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 12154 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12205 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12206 */;
+import AppLauncherContext from "AppLauncherContext" /* 11169 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11170 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11922 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11989 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11997 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11998 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12038 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12040 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12042 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 12045 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12098 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -549,7 +549,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -567,7 +567,7 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
@@ -588,11 +588,11 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
         closure_128_50();
         c2 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;

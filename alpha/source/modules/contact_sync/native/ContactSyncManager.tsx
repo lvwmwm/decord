@@ -1,18 +1,18 @@
-// Module ID: 13584
-// Function ID: 13585
+// Module ID: 13586
+// Function ID: 13587
 // Name: ContactSyncManager
-// Dependencies: [5, 6500, 1392, 13582, 13581, 1087, 510, 13583, 7214, 7133, 2]
+// Dependencies: [5, 6500, 1392, 13584, 13583, 1087, 510, 13585, 7214, 7133, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 13584 (ContactSyncManager)
+// Module 13586 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13581 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13583 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
 import UserStore from "UserStore" /* 1392 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13582 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13584 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _requestAndSyncContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -75,7 +75,7 @@ let obj = function _requestAndSyncContacts() {
               if (null == phone) {
                 c4 = 0;
                 c6 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } else {
                 set = ContactSyncUtils;
                 c5 = 2;
@@ -128,7 +128,7 @@ let obj = function _requestAndSyncContacts() {
           const result = set(closure_130_10, timestamp);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp29) {
         let closure_3 = tmp29;
         if (0 === c4) {

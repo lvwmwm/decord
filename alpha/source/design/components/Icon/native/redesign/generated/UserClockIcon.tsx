@@ -1,14 +1,14 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14441
+// Function ID: 14442
 // Name: UserClockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14441, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14442, 5668, 2]
 
-// Module 14440 (UserClockIcon)
+// Module 14441 (UserClockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 14441 */;
+import AssetRegistry from "AssetRegistry" /* 14442 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

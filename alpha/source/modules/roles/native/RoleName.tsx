@@ -1,9 +1,9 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12787
+// Function ID: 12788
 // Name: RoleName
 // Dependencies: [19, 17, 4972, 21, 4971, 587, 558, 576, 504, 8319, 1202, 5234, 2]
 
-// Module 12784 (RoleName)
+// Module 12787 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

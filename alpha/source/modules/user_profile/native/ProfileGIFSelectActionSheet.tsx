@@ -1,9 +1,9 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 15850
+// Function ID: 15851
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4971, 587, 558, 576, 7080, 15839, 8658, 8656, 8653, 8655, 7086, 5210, 1128, 9425, 7248, 10130, 5265, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4971, 587, 558, 576, 7080, 15840, 8658, 8656, 8653, 8655, 7086, 5210, 1128, 9425, 7248, 10130, 5265, 2]
 
-// Module 15849 (ProfileGIFSelectActionSheet)
+// Module 15850 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
           const obj10 = selectionContext(guildId[16]);
           obj10.hideActionSheet();
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -424,7 +424,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
             const obj10 = src(closure_2[16]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp53) {
           c5 = 3;

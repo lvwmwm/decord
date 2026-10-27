@@ -1,271 +1,91 @@
 // Module ID: 12598
 // Function ID: 12599
-// Dependencies: [41, 42, 12599, 12585, 12596, 12604]
-// Exports: getStackAsyncContextStrategy
+// Dependencies: []
+// Exports: getSpanStatusFromHttpCode, setHttpStatus
 
 // Module 12598
-import _mod12585 from "module_12585" /* 12585 */;
-import _mod12596 from "module_12596" /* 12596 */;
-import _mod12599 from "module_12599" /* 12599 */;
-import _mod12604 from "module_12604" /* 12604 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-const require = globalThis.__r;
-let _require;
-
-function withScope(arg0) {
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12596;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod12604;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod12604;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(arg0);
-}
-function withSetScope(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12596;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod12604;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod12604;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(() => {
-    stack.getStackTop().scope = scope;
-    return closure_1(scope);
-  });
-}
-function withIsolationScope(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("module_12596");
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = require("module_12596");
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = require("module_12604");
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = require("module_12604");
-    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(function() {
-    const obj = require("module_12596");
-    const mainCarrier = obj.getMainCarrier();
-    const obj2 = require("module_12596");
-    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-    let stack = sentryCarrier.stack;
-    const tmp = closure_0;
-    if (!stack) {
-      const tmp2Result = require("module_12604");
-      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-      const self = this;
-      const self2 = this;
-      const tmp2Result2 = require("module_12604");
-      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+export const SPAN_STATUS_ERROR = 2;
+export const SPAN_STATUS_OK = 1;
+export const SPAN_STATUS_UNSET = 0;
+export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0) {
+  if (arg0 < 400) {
+    if (arg0 >= 100) {
+      return { code: 1 };
     }
-    sentryCarrier.stack = stack;
-    return tmp(stack.getIsolationScope());
-  });
-}
-class AsyncContextStack {
-  constructor(arg0, arg1) {
-    const self = this;
-    let scope = arg0;
-    _classCallCheck(this, AsyncContextStack);
-    if (!arg0) {
-      const self2 = this;
-      const self3 = this;
-      scope = new _mod12599.Scope();
-    }
-    let scope1 = arg1;
-    if (!scope1) {
-      const self4 = this;
-      const self5 = this;
-      scope1 = new _mod12599.Scope();
-    }
-    const items = [{ scope }];
-    self._stack = items;
-    self._isolationScope = scope1;
   }
-}
-const entry = {
-  key: "withScope",
-  value: function withScope(fn) {
-    const self = this;
-    try {
-      let nextPromise;
-      const promise = fn(tmp);
-      const obj = _mod12585;
-      if (obj.isThenable(promise)) {
-        nextPromise = promise.then((result) => {
-          self._popScope();
-          return result;
-        }, (arg0) => {
-          self._popScope();
-          throw arg0;
-        });
+  if (arg0 >= 400) {
+    if (arg0 < 500) {
+      if (401 === arg0) {
+        return { code: 2, message: "unauthenticated" };
+      } else if (403 === arg0) {
+        return { code: 2, message: "permission_denied" };
+      } else if (404 === arg0) {
+        return { code: 2, message: "not_found" };
+      } else if (409 === arg0) {
+        return { code: 2, message: "already_exists" };
+      } else if (413 === arg0) {
+        return { code: 2, message: "failed_precondition" };
+      } else if (429 === arg0) {
+        return { code: 2, message: "resource_exhausted" };
       } else {
-        self._popScope();
-        nextPromise = promise;
+        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
       }
-      return nextPromise;
-    } catch (tmp9) {
-      self._popScope();
-      throw tmp9;
     }
   }
+  if (arg0 >= 500) {
+    if (arg0 < 600) {
+      if (501 === arg0) {
+        return { code: 2, message: "unimplemented" };
+      } else if (503 === arg0) {
+        return { code: 2, message: "unavailable" };
+      } else {
+        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  return { code: 2, message: "unknown_error" };
 };
-let items = [
-  entry,
-  {
-    key: "getClient",
-    value: function getClient() {
-      return this.getStackTop().client;
+export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
+  let obj;
+  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
+  if (arg1 < 400) {
+    if (arg1 >= 100) {
+      obj = { code: 1 };
     }
-  },
-  {
-    key: "getScope",
-    value: function getScope() {
-      return this.getStackTop().scope;
-    }
-  },
-  {
-    key: "getIsolationScope",
-    value: function getIsolationScope() {
-      return this._isolationScope;
-    }
-  },
-  {
-    key: "getStackTop",
-    value: function getStackTop() {
-      return this._stack[this._stack.length - 1];
-    }
-  },
-  {
-    key: "_pushScope",
-    value: function _pushScope() {
-      const scope = this.getScope();
-      const cloneResult = scope.clone();
-      const _stack = this._stack;
-      const obj = { client: this.getClient(), scope: cloneResult };
-      _stack.push(obj);
-      return cloneResult;
-    }
-  },
-  {
-    key: "_popScope",
-    value: function _popScope() {
-      let arr = this._stack.length > 1;
-      if (arr) {
-        const _stack = this._stack;
-        arr = _stack.pop();
-      }
-      return arr;
+    if ("unknown_error" !== obj.message) {
+      setAttribute.setStatus(obj);
     }
   }
-];
-const _moduleResult = _createClass(AsyncContextStack, items);
-let c3 = _moduleResult;
-const AsyncContextStack_export = _moduleResult;
-
-export { AsyncContextStack_export as AsyncContextStack };
-export function getStackAsyncContextStrategy() {
-  let obj = {
-    withIsolationScope,
-    withScope,
-    withSetScope,
-    withSetIsolationScope(arg0, arg1) {
-      let closure_0 = arg1;
-      let tmp = closure_0;
-      let obj = closure_0(closure_1[4]);
-      let mainCarrier = obj.getMainCarrier();
-      let obj2 = closure_0(closure_1[4]);
-      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = tmp(closure_1[5]);
-        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        let self = this;
-        let self2 = this;
-        const tmpResult2 = tmp(closure_1[5]);
-        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  if (arg1 >= 400) {
+    if (arg1 < 500) {
+      if (401 === arg1) {
+        obj = { code: 2, message: "unauthenticated" };
+      } else if (403 === arg1) {
+        obj = { code: 2, message: "permission_denied" };
+      } else if (404 === arg1) {
+        obj = { code: 2, message: "not_found" };
+      } else if (409 === arg1) {
+        obj = { code: 2, message: "already_exists" };
+      } else if (413 === arg1) {
+        obj = { code: 2, message: "failed_precondition" };
+      } else if (429 === arg1) {
+        obj = { code: 2, message: "resource_exhausted" };
+      } else {
+        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
       }
-      sentryCarrier.stack = stack;
-      return stack.withScope(function() {
-        const obj = require("module_12596");
-        const mainCarrier = obj.getMainCarrier();
-        const obj2 = require("module_12596");
-        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-        let stack = sentryCarrier.stack;
-        const tmp = closure_0;
-        if (!stack) {
-          const tmp2Result = require("module_12604");
-          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-          const self = this;
-          const self2 = this;
-          const tmp2Result2 = require("module_12604");
-          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-        }
-        sentryCarrier.stack = stack;
-        return tmp(stack.getIsolationScope());
-      });
-    },
-    getCurrentScope() {
-      const obj = require("module_12596");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_12596");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_12604");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_12604");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getScope();
-    },
-    getIsolationScope() {
-      const obj = require("module_12596");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_12596");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_12604");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_12604");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getIsolationScope();
     }
-  };
-  return obj;
-}
+  }
+  if (arg1 >= 500) {
+    if (arg1 < 600) {
+      if (501 === arg1) {
+        obj = { code: 2, message: "unimplemented" };
+      } else if (503 === arg1) {
+        obj = { code: 2, message: "unavailable" };
+      } else {
+        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  obj = { code: 2, message: "unknown_error" };
+};

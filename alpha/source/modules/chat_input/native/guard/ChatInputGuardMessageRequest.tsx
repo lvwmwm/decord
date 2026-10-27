@@ -1,11 +1,11 @@
-// Module ID: 13347
-// Function ID: 13348
+// Module ID: 13350
+// Function ID: 13351
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1392, 21, 558, 576, 1505, 13348, 504, 5663, 1128, 13349, 5707, 13355, 2]
+// Dependencies: [5, 19, 1392, 21, 558, 576, 1505, 13351, 504, 5663, 1128, 13352, 5707, 13358, 2]
 
-// Module 13347 (ChatInputGuardMessageRequest)
+// Module 13350 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13355 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13358 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -220,7 +220,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               return obj;
             } else {
               c1 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp8) {
             c1 = 3;
@@ -249,7 +249,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj = closure_0(acceptMessageRequest[12]);
             obj.transitionToChannel(closure_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -334,7 +334,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -366,7 +366,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj = id(c2[12]);
             obj.transitionToChannel(closure_129_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -390,7 +390,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -419,7 +419,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -433,12 +433,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2 = dependencyMap;
   obj = channel(1505);
   importDefault = obj.useNavigation();
-  let obj2 = channel(13348);
+  let obj2 = channel(13351);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(13349);
+  let obj4 = channel(13352);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {

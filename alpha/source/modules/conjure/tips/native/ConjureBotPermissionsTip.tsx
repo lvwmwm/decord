@@ -1,13 +1,13 @@
-// Module ID: 12340
-// Function ID: 12341
+// Module ID: 12325
+// Function ID: 12326
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 558, 576, 11876, 1128, 3830, 12341, 10953, 12347, 2]
+// Dependencies: [5, 19, 21, 558, 576, 11765, 1128, 3830, 12326, 10954, 12330, 2]
 
-// Module 12340 (ConjureBotPermissionsTip)
+// Module 12325 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12341 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12347 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12326 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12330 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;
@@ -108,7 +108,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(11876).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(11765).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1128).intl;
   const format = intl.format;
@@ -130,7 +130,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -159,14 +159,14 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
           return obj;
         }
         projectId = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         projectId = 3;
         throw tmp9;
       }
     }
   });
-  return <tmp icon={projectId(10953).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(10954).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {

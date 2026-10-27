@@ -1,122 +1,265 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11745
+// Function ID: 11746
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4883, 4845, 4903, 7321, 1087, 21, 558, 576, 1505, 11745, 504, 6808, 10720, 6924, 1128, 3830, 11746, 11860, 12538, 7095, 11884, 2]
+// Dependencies: [32, 19, 4883, 4845, 4903, 6773, 7321, 1087, 21, 558, 576, 11746, 504, 11747, 1505, 12521, 11762, 11750, 6808, 10720, 6924, 1128, 3830, 12522, 12541, 7095, 11773, 2]
 
-// Module 11744 (ConjureStandaloneScreen)
+// Module 11745 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1087 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6924 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11745 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11746 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11860 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12538 */;
+import ConjureActivity from "ConjureActivity" /* 11746 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11747 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11762 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 12521 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 12522 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12541 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7321 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+const require = globalThis.__r;
+let importDefault, navigation;
 
-let c10;
 let closure_12;
+let map1;
 let unpackModuleId;
+let react = react_mod;
 const Permissions = Constants.Permissions;
-({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
+({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoutedProjectOpener(projectId) {
-  let openedProjectIdRef;
-  let obj = projectId(openedProjectIdRef[9]);
-  const cResult = obj.c(6);
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalChatScene(projectId) {
+  let first;
+  let obj = projectId(576);
+  const cResult = obj.c(8);
+  const tmp = projectId;
   projectId = projectId.projectId;
-  const sceneProjectId = projectId.sceneProjectId;
-  openedProjectIdRef = projectId.openedProjectIdRef;
-  const obj2 = projectId(openedProjectIdRef[10]);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === navigation) {
-    if (cResult[1] === openedProjectIdRef) {
-      if (cResult[2] === projectId) {
-        let tmp3;
-        let tmp4;
-        if (cResult[3] === sceneProjectId) {
-          tmp3 = cResult[4];
-          tmp4 = cResult[5];
-        }
-        const effect = react.useEffect(tmp3, tmp4);
-        return null;
+  const fallbackGuildId = projectId.fallbackGuildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConjureProjectStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === fallbackGuildId) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === projectId) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+    if (cResult[5] === stateFromStores) {
+      let tmp9;
+      if (cResult[6] === projectId) {
+        tmp9 = cResult[7];
       }
+      return tmp9;
+    }
+    const obj2 = { guildId: stateFromStores, projectId };
+    const tmp12 = closure_11(fallbackGuildId(11747), obj2);
+    cResult[5] = stateFromStores;
+    cResult[6] = projectId;
+    cResult[7] = tmp12;
+    tmp9 = tmp12;
+  }
+  const fn = function o() {
+    const project = ConjureProjectStore.getProject(projectId);
+    let result = null;
+    if (null != project) {
+      const obj = ConjureActivity;
+      result = obj.conjureProjectGuildId(project);
+    }
+    if (result == null) {
+      result = fallbackGuildId;
+    }
+    return result;
+  };
+  const items1 = [projectId, fallbackGuildId];
+  cResult[1] = fallbackGuildId;
+  cResult[2] = projectId;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : (function GlobalChatScene(projectId) {
+  projectId = projectId.projectId;
+  const fallbackGuildId = projectId.fallbackGuildId;
+  let obj = projectId(504);
+  const items = [ConjureProjectStore];
+  const items1 = [projectId, fallbackGuildId];
+  const guildId = obj.useStateFromStores(items, () => {
+    const project = ConjureProjectStore.getProject(projectId);
+    let result = null;
+    if (null != project) {
+      const obj = ConjureActivity;
+      result = obj.conjureProjectGuildId(project);
+    }
+    if (result == null) {
+      result = fallbackGuildId;
+    }
+    return result;
+  }, items1);
+  return closure_11(fallbackGuildId(11747), { guildId, projectId });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoutedProjectOpener(guildId) {
+  let request;
+  let obj = guildId(request[10]);
+  const cResult = obj.c(11);
+  guildId = guildId.guildId;
+  const inline = guildId.inline;
+  request = guildId.request;
+  const sceneProjectId = guildId.sceneProjectId;
+  const handledKeyRef = guildId.handledKeyRef;
+  const obj2 = guildId(request[14]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === guildId) {
+    if (cResult[1] === inline) {
+      let tmp3;
+      let tmp4;
+      if (cResult[2] === sceneProjectId) {
+        tmp3 = cResult[3];
+        tmp4 = cResult[4];
+      }
+      const effect = handledKeyRef.useEffect(tmp3, tmp4);
+      const obj3 = handledKeyRef;
+      if (cResult[5] === handledKeyRef) {
+        if (cResult[6] === navigation) {
+          if (cResult[7] === request) {
+            let tmp6;
+            let tmp7;
+            if (cResult[8] === sceneProjectId) {
+              tmp6 = cResult[9];
+              tmp7 = cResult[10];
+            }
+            const effect1 = obj3.useEffect(tmp6, tmp7);
+            return null;
+          }
+        }
+      }
+      const fn2 = function u() {
+        const isFocusedResult = null != request && tmp.key !== handledKeyRef.current && navigation.isFocused();
+        if (isFocusedResult) {
+          handledKeyRef.current = request.key;
+          if (request.projectId !== sceneProjectId) {
+            if (null != request.projectId) {
+              const obj = { projectId: request.projectId };
+              navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+            } else {
+              const routes = navigation.getState().routes;
+              if (routes.some((name) => name.name === guildId(request[16]).ConjureScreenScenes.PROJECTS)) {
+                navigation.popTo(conjureStandaloneScenes.ConjureScreenScenes.PROJECTS);
+              } else {
+                navigation.push(conjureStandaloneScenes.ConjureScreenScenes.PROJECTS);
+              }
+            }
+          }
+        }
+      };
+      const items = [request, sceneProjectId, handledKeyRef, navigation];
+      cResult[5] = handledKeyRef;
+      cResult[6] = navigation;
+      cResult[7] = request;
+      cResult[8] = sceneProjectId;
+      cResult[9] = fn2;
+      cResult[10] = items;
+      tmp7 = items;
+      tmp6 = fn2;
     }
   }
   const fn = function o() {
-    const tmp2 = null != projectId && tmp !== openedProjectIdRef.current;
-    if (tmp2) {
-      openedProjectIdRef.current = projectId;
-      if (projectId !== sceneProjectId) {
-        const obj = { projectId };
-        navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+    const tmp = inline;
+    if (tmp) {
+      let tmp6 = sceneProjectId;
+      const tmp4 = selectConjureChannelDefault;
+      const tmp5 = guildId;
+      if (sceneProjectId == null) {
+        tmp6 = null;
       }
+      tmp4(tmp5, tmp6);
     }
   };
-  const items = [projectId, sceneProjectId, openedProjectIdRef, navigation];
-  cResult[0] = navigation;
-  cResult[1] = openedProjectIdRef;
-  cResult[2] = projectId;
-  cResult[3] = sceneProjectId;
-  cResult[4] = fn;
-  cResult[5] = items;
-  tmp4 = items;
+  const items1 = [guildId, inline, sceneProjectId];
+  cResult[0] = guildId;
+  cResult[1] = inline;
+  cResult[2] = sceneProjectId;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp4 = items1;
   tmp3 = fn;
-}) : (function RoutedProjectOpener(projectId) {
-  projectId = projectId.projectId;
-  const sceneProjectId = projectId.sceneProjectId;
-  const openedProjectIdRef = projectId.openedProjectIdRef;
-  let obj = projectId(openedProjectIdRef[10]);
+}) : (function RoutedProjectOpener(guildId) {
+  guildId = guildId.guildId;
+  const inline = guildId.inline;
+  const request = guildId.request;
+  const sceneProjectId = guildId.sceneProjectId;
+  const handledKeyRef = guildId.handledKeyRef;
+  let obj = guildId(request[14]);
   navigation = obj.useNavigation();
-  const items = [projectId, sceneProjectId, openedProjectIdRef, navigation];
-  const effect = react.useEffect(() => {
-    const tmp2 = null != projectId && tmp !== openedProjectIdRef.current;
-    if (tmp2) {
-      openedProjectIdRef.current = projectId;
-      if (projectId !== sceneProjectId) {
-        const obj = { projectId };
-        navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+  const items = [guildId, inline, sceneProjectId];
+  const effect = handledKeyRef.useEffect(() => {
+    const tmp = inline;
+    if (tmp) {
+      let tmp6 = sceneProjectId;
+      const tmp4 = selectConjureChannelDefault;
+      const tmp5 = guildId;
+      if (sceneProjectId == null) {
+        tmp6 = null;
       }
+      tmp4(tmp5, tmp6);
     }
   }, items);
+  const items1 = [request, sceneProjectId, handledKeyRef, navigation];
+  const effect1 = handledKeyRef.useEffect(() => {
+    const isFocusedResult = null != request && tmp.key !== handledKeyRef.current && navigation.isFocused();
+    if (isFocusedResult) {
+      handledKeyRef.current = request.key;
+      if (request.projectId !== sceneProjectId) {
+        if (null != request.projectId) {
+          const obj = { projectId: request.projectId };
+          navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+        } else {
+          const routes = navigation.getState().routes;
+          if (routes.some((name) => name.name === guildId(request[16]).ConjureScreenScenes.PROJECTS)) {
+            navigation.popTo(conjureStandaloneScenes.ConjureScreenScenes.PROJECTS);
+          } else {
+            navigation.push(conjureStandaloneScenes.ConjureScreenScenes.PROJECTS);
+          }
+        }
+      }
+    }
+  }, items1);
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStandaloneScreen(guildId) {
+  let closure_4;
+  let handledKeyRef;
   let inline;
   let onClose;
-  let openedProjectIdRef;
-  let tmp11;
-  let tmp12;
-  let tmp13;
-  let tmp15;
-  let tmp18;
-  let tmp19;
-  let tmp20;
-  let tmp22;
-  let tmp24;
-  let tmp25;
+  let request;
+  let stateFromStores;
   let tmp5;
-  let tmp6;
   let tmp8;
-  let tmp9;
   let tmp = guildId;
-  let obj = guildId(onClose[9]);
-  const cResult = obj.c(61);
+  let tmp2 = navigation;
+  let obj = guildId(navigation[10]);
+  const cResult = obj.c(77);
   guildId = guildId.guildId;
   ({ onClose, inline } = guildId);
-  const tmpResult = tmp(onClose[10]);
+  importDefault = undefined !== inline && inline;
+  const tmpResult = tmp(tmp2[14]);
   navigation = tmpResult.useNavigation();
   if (cResult[0] !== navigation) {
-    const fn = function f() {
+    const fn = function j() {
       return navigation.goBack();
     };
     cResult[0] = navigation;
@@ -128,218 +271,202 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   if (onClose == null) {
     onClose = tmp5;
   }
+  const context = react.useContext(require("react"));
+  react = tmp7;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ConjureBuilderRouteStore];
     cResult[2] = items;
-    tmp6 = items;
+    tmp8 = items;
   } else {
-    tmp6 = cResult[2];
+    tmp8 = cResult[2];
   }
-  if (cResult[3] !== guildId) {
-    class T {
-      constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-        return routedProjectId;
-      }
+  if (cResult[3] === guildId) {
+    let tmp10;
+    let tmp11;
+    let tmp12;
+    let tmp15;
+    let tmp14;
+    let tmp17;
+    let tmp20;
+    let tmp22;
+    let tmp21;
+    let tmp24;
+    let tmp27;
+    let tmp26;
+    if (cResult[4] === null != context) {
+      tmp10 = cResult[5];
+      tmp11 = cResult[6];
     }
-    const items1 = [guildId];
-    cResult[3] = guildId;
-    cResult[4] = T;
-    cResult[5] = items1;
-    tmp9 = items1;
-    tmp8 = T;
-  } else {
-    class T {
-      constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-        return routedProjectId;
-      }
+    const tmpResult6 = tmp(tmp2[12]);
+    let projectId = tmpResult6.useStateFromStores(tmp8, tmp10, tmp11);
+    if (null != context) {
+      projectId = context.projectId;
     }
-    tmp9 = cResult[5];
-  }
-  const tmpResult6 = tmp(onClose[12]);
-  const stateFromStores = tmpResult6.useStateFromStores(tmp6, tmp8, tmp9);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-        return routedProjectId;
-      }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      let items1 = [stateFromStores];
+      cResult[7] = items1;
+      tmp12 = items1;
+    } else {
+      tmp12 = cResult[7];
     }
-    const items2 = [GuildStore];
-    cResult[6] = items2;
-    tmp11 = items2;
-  } else {
-    class T {
-      constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-        return routedProjectId;
-      }
-    }
-  }
-  if (cResult[7] !== guildId) {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    const items3 = [guildId];
-    cResult[7] = guildId;
-    cResult[8] = A;
-    cResult[9] = items3;
-    tmp13 = items3;
-    tmp12 = A;
-  } else {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    tmp13 = cResult[9];
-  }
-  const tmpResult7 = tmp(onClose[12]);
-  const stateFromStores1 = tmpResult7.useStateFromStores(tmp11, tmp12, tmp13);
-  if (cResult[10] !== guildId) {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    tmp16[0] = guildId;
-    cResult[10] = guildId;
-    cResult[11] = tmp16;
-    tmp15 = tmp16;
-  } else {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-  }
-  const tmpResult8 = tmp(onClose[13]);
-  const isConjureGuildEnabled = tmpResult8.useIsConjureGuildEnabled(tmp15);
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    const items4 = [isConjureGuildEnabled];
-    cResult[12] = items4;
-    tmp18 = items4;
-  } else {
-    class A {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-  }
-  if (cResult[13] !== guildId) {
-    class O {
-      constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
-        if (selfMember != null) {
-          roles = selfMember.roles;
+    if (cResult[8] !== guildId) {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
         }
-        if (roles == null) {
-          roles = [];
+      }
+      const items2 = [guildId];
+      cResult[8] = guildId;
+      cResult[9] = A;
+      cResult[10] = items2;
+      tmp15 = items2;
+      tmp14 = A;
+    } else {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
         }
-        return roles;
+      }
+      tmp15 = cResult[10];
+    }
+    const tmpResult7 = tmp(tmp2[12]);
+    stateFromStores = tmpResult7.useStateFromStores(tmp12, tmp14, tmp15);
+    if (cResult[11] !== guildId) {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
+        }
+      }
+      tmp18[0] = guildId;
+      cResult[11] = guildId;
+      cResult[12] = tmp18;
+      tmp17 = tmp18;
+    } else {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
+        }
       }
     }
-    const items5 = [guildId];
-    cResult[13] = guildId;
-    cResult[14] = O;
-    cResult[15] = items5;
-    tmp20 = items5;
-    tmp19 = O;
-  } else {
-    class O {
-      constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
-        if (selfMember != null) {
-          roles = selfMember.roles;
+    const tmpResult8 = tmp(tmp2[18]);
+    const isConjureGuildEnabled = tmpResult8.useIsConjureGuildEnabled(tmp17);
+    const _Symbol2 = Symbol;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
         }
-        if (roles == null) {
-          roles = [];
+      }
+      const items3 = [projectId];
+      cResult[13] = items3;
+      tmp20 = items3;
+    } else {
+      class A {
+        constructor() {
+          return GuildStore.getGuild(guildId);
         }
-        return roles;
       }
     }
-    tmp20 = cResult[15];
-  }
-  const tmpResult9 = tmp(onClose[12]);
-  const stateFromStoresArray = tmpResult9.useStateFromStoresArray(tmp18, tmp19, tmp20);
-  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
-        if (selfMember != null) {
-          roles = selfMember.roles;
-        }
-        if (roles == null) {
-          roles = [];
-        }
-        return roles;
-      }
-    }
-    const items6 = [GuildStore, PermissionStore];
-    cResult[16] = items6;
-    tmp22 = items6;
-  } else {
-    class O {
-      constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
-        if (selfMember != null) {
-          roles = selfMember.roles;
-        }
-        if (roles == null) {
-          roles = [];
-        }
-        return roles;
-      }
-    }
-  }
-  if (cResult[17] !== guildId) {
-    class L {
-      constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    const items7 = [guildId];
-    cResult[17] = guildId;
-    cResult[18] = L;
-    cResult[19] = items7;
-    tmp25 = items7;
-    tmp24 = L;
-  } else {
-    class L {
-      constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    tmp25 = cResult[19];
-  }
-  const tmpResult10 = tmp(onClose[12]);
-  const stateFromStores2 = tmpResult10.useStateFromStores(tmp22, tmp24, tmp25);
-  if (cResult[20] === guildId) {
-    class L {
-      constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    if (cResult[23] === stateFromStores2) {
+    if (cResult[14] !== guildId) {
       class L {
+        constructor() {
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
+        }
+      }
+      const items4 = [guildId];
+      cResult[14] = guildId;
+      cResult[15] = L;
+      cResult[16] = items4;
+      tmp22 = items4;
+      tmp21 = L;
+    } else {
+      class L {
+        constructor() {
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
+        }
+      }
+      tmp22 = cResult[16];
+    }
+    const tmpResult9 = tmp(tmp2[12]);
+    const stateFromStoresArray = tmpResult9.useStateFromStoresArray(tmp20, tmp21, tmp22);
+    const _Symbol3 = Symbol;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
+        }
+      }
+      const items5 = [stateFromStores, isConjureGuildEnabled];
+      cResult[17] = items5;
+      tmp24 = items5;
+    } else {
+      class L {
+        constructor() {
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
+        }
+      }
+    }
+    if (cResult[18] !== guildId) {
+      class Q {
+        constructor() {
+          const guild = GuildStore.getGuild(guildId);
+          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+          return canResult;
+        }
+      }
+      const items6 = [guildId];
+      cResult[18] = guildId;
+      cResult[19] = Q;
+      cResult[20] = items6;
+      tmp27 = items6;
+      tmp26 = Q;
+    } else {
+      class Q {
+        constructor() {
+          const guild = GuildStore.getGuild(guildId);
+          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+          return canResult;
+        }
+      }
+      tmp27 = cResult[20];
+    }
+    const tmpResult10 = tmp(tmp2[12]);
+    const stateFromStores1 = tmpResult10.useStateFromStores(tmp24, tmp26, tmp27);
+    if (cResult[21] === guildId) {
+      class Q {
         constructor() {
           const guild = GuildStore.getGuild(guildId);
           const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
@@ -347,66 +474,110 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
         }
       }
     }
-    const items8 = [isConjureGuildEnabled, guildId, stateFromStoresArray, stateFromStores2];
-    cResult[23] = stateFromStores2;
-    cResult[24] = stateFromStoresArray;
-    cResult[25] = guildId;
-    cResult[26] = isConjureGuildEnabled;
-    cResult[27] = items8;
-  }
-  class Q {
-    constructor() {
-      const tmp = isConjureGuildEnabled;
-      if (tmp) {
-        const obj = ConjureActionCreators;
-        obj.listProjects(guildId);
+    class V {
+      constructor() {
+        const tmp = isConjureGuildEnabled;
+        if (tmp) {
+          let tmp6;
+          const listProjects = ConjureActionCreators.listProjects;
+          ConjureActionCreators;
+          if (!closure_4) {
+            tmp6 = guildId;
+          }
+          listProjects(tmp6);
+        }
       }
     }
+    cResult[21] = guildId;
+    class T {
+      constructor() {
+        let tmp;
+        if (!closure_4) {
+          const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+          tmp = routedProjectId;
+        }
+        return tmp;
+      }
+    }
+    cResult[22] = isConjureGuildEnabled;
+    cResult[23] = null != context;
+    cResult[24] = V;
   }
-  cResult[20] = guildId;
-  cResult[21] = isConjureGuildEnabled;
-  cResult[22] = Q;
+  class T {
+    constructor() {
+      let tmp;
+      if (!closure_4) {
+        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+        tmp = routedProjectId;
+      }
+      return tmp;
+    }
+  }
+  const items7 = [guildId, null != context];
+  cResult[3] = guildId;
+  cResult[4] = null != context;
+  cResult[5] = T;
+  cResult[6] = items7;
+  tmp11 = items7;
+  tmp10 = T;
 }) : (function ConjureStandaloneScreen(guildId) {
   let Navigator;
+  let headerBackButton;
   let inline;
   let intl;
+  let obj4;
   let obj6;
   let onClose;
-  let tmpResult10;
   guildId = guildId.guildId;
   ({ onClose, inline } = guildId);
   if (inline === undefined) {
     inline = false;
   }
+  navigation = undefined;
   onClose = undefined;
+  let context;
+  let closure_5;
+  let projectId;
   let stateFromStores;
-  let stateFromStores1;
   let isConjureGuildEnabled;
-  let openedProjectIdRef;
+  let memo;
+  let handledKeyRef;
   let tmp = guildId;
-  let obj = guildId(onClose[10]);
+  let tmp2 = navigation;
+  let obj = guildId(navigation[14]);
   navigation = obj.useNavigation();
-  let obj2 = stateFromStores1;
+  let obj2 = context;
   let items = [navigation];
   if (onClose == null) {
-    onClose = stateFromStores1.useCallback(() => navigation.goBack(), items);
+    onClose = context.useCallback(() => navigation.goBack(), items);
   }
-  const items1 = [ConjureBuilderRouteStore];
-  const items2 = [guildId];
-  const tmpResult = tmp(onClose[12]);
-  stateFromStores = tmpResult.useStateFromStores(items1, () => {
-    const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-    return routedProjectId;
+  let tmp4 = inline;
+  context = obj2.useContext(inline(tmp2[17]));
+  let tmp6 = null != context;
+  closure_5 = tmp6;
+  let items1 = [memo];
+  const items2 = [guildId, tmp6];
+  const tmpResult = tmp(tmp2[12]);
+  projectId = tmpResult.useStateFromStores(items1, () => {
+    let tmp;
+    if (!closure_5) {
+      const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+      tmp = routedProjectId;
+    }
+    return tmp;
   }, items2);
-  const items3 = [openedProjectIdRef];
+  if (tmp6) {
+    projectId = context.projectId;
+  }
+  const items3 = [projectId];
   const items4 = [guildId];
-  const tmpResult6 = tmp(onClose[12]);
-  stateFromStores1 = tmpResult6.useStateFromStores(items3, () => GuildStore.getGuild(guildId), items4);
-  const tmpResult7 = tmp(onClose[13]);
+  const tmpResult6 = tmp(tmp2[12]);
+  stateFromStores = tmpResult6.useStateFromStores(items3, () => GuildStore.getGuild(guildId), items4);
+  const tmpResult7 = tmp(tmp2[18]);
   isConjureGuildEnabled = tmpResult7.useIsConjureGuildEnabled({ guildId, location: "ConjureStandaloneScreen" });
-  const items5 = [isConjureGuildEnabled];
+  const items5 = [closure_5];
   const items6 = [guildId];
-  const tmpResult8 = tmp(onClose[12]);
+  const tmpResult8 = tmp(tmp2[12]);
   const stateFromStoresArray = tmpResult8.useStateFromStoresArray(items5, () => {
     const selfMember = GuildMemberStore.getSelfMember(guildId);
     let roles;
@@ -418,11 +589,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     }
     return roles;
   }, items6);
-  const items7 = [openedProjectIdRef, PermissionStore];
+  const items7 = [projectId, stateFromStores];
   const items8 = [guildId];
-  const items9 = [isConjureGuildEnabled, guildId, stateFromStoresArray, ];
-  const tmpResult9 = tmp(onClose[12]);
-  items9[3] = tmpResult9.useStateFromStores(items7, () => {
+  const items9 = [isConjureGuildEnabled, tmp6, guildId, stateFromStoresArray, ];
+  const tmpResult9 = tmp(tmp2[12]);
+  items9[4] = tmpResult9.useStateFromStores(items7, () => {
     const guild = GuildStore.getGuild(guildId);
     const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
     return canResult;
@@ -430,93 +601,163 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   const effect = obj2.useEffect(() => {
     const tmp = isConjureGuildEnabled;
     if (tmp) {
-      const obj = ConjureActionCreators;
-      obj.listProjects(guildId);
+      let tmp6;
+      const listProjects = ConjureActionCreators.listProjects;
+      ConjureActionCreators;
+      if (!closure_5) {
+        tmp6 = guildId;
+      }
+      listProjects(tmp6);
     }
   }, items9);
-  const items10 = [stateFromStores1, isConjureGuildEnabled, onClose];
+  const items10 = [stateFromStores, isConjureGuildEnabled, onClose];
   const effect1 = obj2.useEffect(() => {
-    const tmp = null == stateFromStores1 || isConjureGuildEnabled;
+    const tmp = null == stateFromStores || isConjureGuildEnabled;
     if (!tmp) {
       onClose();
     }
   }, items10);
-  openedProjectIdRef = obj2.useRef(stateFromStores);
-  let obj3 = {};
-  const obj4 = {
-    headerLeft: tmpResult10.getHeaderCloseButton(onClose),
+  const items11 = [tmp6, , ];
+  let requestId;
+  const useMemo = obj2.useMemo;
+  if (context != null) {
+    requestId = context.requestId;
+  }
+  items11[1] = requestId;
+  items11[2] = projectId;
+  memo = useMemo(() => {
+    let tmp4;
+    const tmp = closure_5;
+    if (tmp) {
+      let num = context.requestId;
+      if (num == null) {
+        num = 0;
+      }
+      tmp4 = { key: num, projectId };
+      const obj2 = { key: num, projectId };
+    } else if (null != projectId) {
+      tmp4 = { key: projectId, projectId };
+      const obj = { key: projectId, projectId };
+    }
+    return tmp4;
+  }, items11);
+  let key;
+  const useRef = obj2.useRef;
+  if (memo != null) {
+    key = memo.key;
+  }
+  handledKeyRef = useRef(key);
+  const PROJECTS = tmp(tmp2[16]).ConjureScreenScenes.PROJECTS;
+  const tmpResult10 = tmp(tmp2[20]);
+  if (tmp6) {
+    headerBackButton = tmpResult10.getHeaderBackButton(onClose, true);
+  } else {
+    headerBackButton = tmpResult10.getHeaderCloseButton(onClose);
+  }
+  let obj3 = { [PROJECTS]: obj4 };
+  obj4 = {
+    headerLeft: headerBackButton,
     headerTitle() {
       let intl;
-      const obj = { title: intl.string(navigation(onClose[17]).uk6jhJ) };
-      const NavigatorHeader = guildId(onClose[15]).NavigatorHeader;
-      intl = guildId(onClose[16]).intl;
-      return closure_1_10(NavigatorHeader, obj);
+      const obj = { title: intl.string(inline(navigation[22]).uk6jhJ) };
+      const NavigatorHeader = guildId(navigation[20]).NavigatorHeader;
+      intl = guildId(navigation[21]).intl;
+      return closure_1_11(NavigatorHeader, obj);
     },
     render() {
       let items;
       const obj = { children: items };
-      const obj2 = { projectId: stateFromStores, sceneProjectId: "Array", openedProjectIdRef };
-      items = [authStore(closure_13, obj2), ];
+      const obj2 = { guildId, inline, request: memo, sceneProjectId: "Array", handledKeyRef };
+      items = [unpackModuleId(closure_15, obj2), ];
       const obj3 = { guildId };
-      items[1] = authStore(ConjureProjectListDefault, obj3);
-      return authStore2(unpackModuleId, obj);
+      items[1] = unpackModuleId(ConjureProjectListDefault, obj3);
+      return map1(authStore2, obj);
     }
   };
-  const PROJECTS = tmp(tmp2[11]).ConjureScreenScenes.PROJECTS;
-  obj3[PROJECTS] = obj4;
-  obj3[tmp(onClose[11]).ConjureScreenScenes.CHAT] = {
+  let renderGlobalChatBack;
+  const CHAT = tmp(tmp2[16]).ConjureScreenScenes.CHAT;
+  if (tmp6) {
+    renderGlobalChatBack = function renderGlobalChatBack(canGoBack) {
+      let tmp4;
+      if (true === canGoBack.canGoBack) {
+        const obj2 = NavigatorHeader2;
+        tmp4 = obj2.getHeaderBackButton()(canGoBack);
+      } else {
+        const obj = NavigatorHeader2;
+        tmp4 = obj.getHeaderBackButton(onClose, true)(canGoBack);
+      }
+      return tmp4;
+    };
+  }
+  obj3[CHAT] = {
     ignoreKeyboard: true,
+    headerLeft: renderGlobalChatBack,
     render(projectId) {
-      let items;
+      let tmp3Result;
       projectId = projectId.projectId;
-      const obj = { children: items };
-      items = [, ];
-      const obj2 = { projectId: stateFromStores, sceneProjectId: projectId, openedProjectIdRef };
-      items[0] = authStore(closure_13, obj2);
-      const obj3 = { guildId, projectId };
-      items[1] = authStore(ConjureChatSceneDefault, obj3);
-      return authStore2(unpackModuleId, obj);
+      const children = [, ];
+      const obj = { guildId, inline, request: memo, sceneProjectId: projectId, handledKeyRef };
+      children[0] = unpackModuleId(closure_15, obj);
+      const tmp = map1;
+      const tmp2 = authStore2;
+      const tmp5 = closure_5;
+      if (tmp5) {
+        const obj2 = { projectId, fallbackGuildId: guildId };
+        tmp3Result = tmp3(closure_14, obj2);
+      } else {
+        const obj3 = { guildId, projectId };
+        tmp3Result = tmp3(ConjureChatSceneDefault, obj3);
+      }
+      children[1] = tmp3Result;
+      return tmp(tmp2, { children });
     }
   };
-  obj3[tmp(onClose[11]).ConjureScreenScenes.DEBUG] = {
+  obj3[tmp(tmp2[16]).ConjureScreenScenes.DEBUG] = {
     headerTitle() {
       let intl;
-      const obj = { title: intl.string(navigation(onClose[17])["Q4FN+H"]) };
-      const NavigatorHeader = guildId(onClose[15]).NavigatorHeader;
-      intl = guildId(onClose[16]).intl;
-      return closure_1_10(NavigatorHeader, obj);
+      const obj = { title: intl.string(inline(navigation[22])["Q4FN+H"]) };
+      const NavigatorHeader = guildId(navigation[20]).NavigatorHeader;
+      intl = guildId(navigation[21]).intl;
+      return closure_1_11(NavigatorHeader, obj);
     },
     render(projectId) {
       let items;
       projectId = projectId.projectId;
       const obj = { children: items };
       items = [, ];
-      const obj2 = { projectId: stateFromStores, sceneProjectId: projectId, openedProjectIdRef };
-      items[0] = authStore(closure_13, obj2);
-      items[1] = authStore(ConjureDebugSceneDefault, { projectId });
-      return authStore2(unpackModuleId, obj);
+      const obj2 = { guildId, inline, request: memo, sceneProjectId: projectId, handledKeyRef };
+      items[0] = unpackModuleId(closure_15, obj2);
+      items[1] = unpackModuleId(ConjureDebugSceneDefault, { projectId });
+      return map1(authStore2, obj);
     }
   };
-  tmpResult10 = tmp(onClose[15]);
-  const first = stateFromStores(obj2.useState(() => {
-    let obj3;
-    const items = [{ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS }];
-    ({ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS });
-    if (null != stateFromStores) {
-      const push = items.push;
-      const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj3 };
-      obj3 = { projectId: tmp3 };
-      push(obj2);
+  const first = onClose(obj2.useState(() => {
+    let obj5;
+    const tmp = closure_5;
+    if (tmp) {
+      if (null != projectId) {
+        const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj3 };
+        const items = [obj2];
+        return items;
+      }
     }
-    return items;
+    const items1 = [{ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS }];
+    ({ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS });
+    if (null != projectId) {
+      const push = items1.push;
+      const obj4 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj5 };
+      obj5 = { projectId: tmp4 };
+      push(obj4);
+    }
+    return items1;
   }), 1)[0];
-  const obj5 = { value: inline, children: closure_10(Navigator, obj6) };
-  const Provider = tmp(tmp2[22]).ConjureBuilderInlineContext.Provider;
-  obj6 = { screens: obj3, initialRouteStack: first, headerBackTitle: intl.string(navigation(onClose[17]).uk6jhJ) };
-  Navigator = tmp(tmp2[21]).Navigator;
-  intl = tmp(tmp2[16]).intl;
-  return closure_10(Provider, obj5);
+  let obj5 = { value: inline, children: closure_11(Navigator, obj6) };
+  const Provider = tmp(tmp2[26]).ConjureBuilderInlineContext.Provider;
+  obj6 = { screens: obj3, initialRouteStack: first, headerBackTitle: intl.string(tmp4(tmp2[22]).uk6jhJ) };
+  Navigator = tmp(tmp2[25]).Navigator;
+  intl = tmp(tmp2[21]).intl;
+  return closure_11(Provider, obj5);
 });
-const result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStandaloneScreen.tsx");
+let result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStandaloneScreen.tsx");
 
 export default tmp3;

@@ -36,7 +36,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f93665 = (item) => isChangelogUserDefault(item);
+const f93715 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -198,7 +198,7 @@ function setChannel(isPrivate) {
     } else {
       delete closure_33[id3];
       const recipients = isPrivate.recipients;
-      if (null == recipients.find(f93665)) {
+      if (null == recipients.find(f93715)) {
         closure_22[isPrivate.id] = isPrivate;
         if (isPrivate.type === ChannelTypes.DM) {
           closure_26[isPrivate.getRecipientId()] = isPrivate.id;
@@ -255,7 +255,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f93665)) {
+  if (null != recipients.find(f93715)) {
     return false;
   } else {
     closure_22[recipients.id] = recipients;
@@ -619,7 +619,7 @@ class ChannelLoader {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               while (true) {

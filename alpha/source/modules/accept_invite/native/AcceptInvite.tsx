@@ -1,9 +1,9 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13661
+// Function ID: 13662
 // Name: AcceptInvite
-// Dependencies: [109, 32, 19, 17, 1087, 21, 4971, 587, 1388, 558, 576, 5252, 5595, 13660, 13664, 1417, 1452, 13669, 1499, 5669, 6905, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 4971, 587, 1388, 558, 576, 5252, 5595, 13662, 13666, 1417, 1452, 13671, 1499, 5669, 6905, 2]
 
-// Module 13659 (AcceptInvite)
+// Module 13661 (AcceptInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -177,7 +177,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp25;
       }
       const obj3 = { invite };
-      const tmp28 = first(13660);
+      const tmp28 = first(13662);
       const merged = Object.assign(invite);
       const tmp32 = closure_10(tmp28, obj3);
       cResult[7] = invite;
@@ -193,7 +193,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp17;
       }
       const obj4 = { invite };
-      const tmp20 = first(13664);
+      const tmp20 = first(13666);
       const merged1 = Object.assign(invite);
       const tmp24 = closure_10(tmp20, obj4);
       cResult[10] = invite;
@@ -246,12 +246,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
     return closure_10(closure_15, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(13660);
+    const tmp16 = first(13662);
     const merged = Object.assign(invite);
     return closure_10(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(13664);
+    const tmp9 = first(13666);
     const merged1 = Object.assign(invite);
     return closure_10(tmp9, obj);
   } else {
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp10(13669);
+    guildSplashSource = tmp10(13671);
   } else {
     ({ id: obj3.id, splash: obj3.splash } = guild);
     const obj10 = { id: null, splash: null, size: width * tmpResult.getDevicePixelRatio() };
@@ -480,7 +480,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13669);
+    guildSplashSource = tmp3(13671);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

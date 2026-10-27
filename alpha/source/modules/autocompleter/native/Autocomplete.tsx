@@ -1,9 +1,9 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13284
+// Function ID: 13285
 // Name: Autocomplete
-// Dependencies: [19, 17, 4845, 4913, 1392, 1087, 10113, 21, 4971, 587, 558, 576, 8951, 504, 5025, 1202, 9133, 6914, 6903, 1128, 8607, 8502, 5604, 5234, 5669, 13282, 10154, 10170, 6908, 12, 8499, 13283, 2032, 2033, 8074, 13284, 2]
+// Dependencies: [19, 17, 4845, 4913, 1392, 1087, 10113, 21, 4971, 587, 558, 576, 8951, 504, 5025, 1202, 9133, 6914, 6903, 1128, 8607, 8502, 5604, 5234, 5669, 13285, 10154, 10170, 6908, 12, 8499, 13286, 2032, 2033, 8074, 13287, 2]
 
-// Module 13281 (Autocomplete)
+// Module 13284 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -22,8 +22,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 8607 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10113 */;
 import StickersHooks from "StickersHooks" /* 10154 */;
 import StickerDefault from "Sticker" /* 10170 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13282 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13283 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13285 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13286 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -1019,7 +1019,7 @@ const obj10 = {
             let tmp17;
             if (extraChromeEnabled) {
               const obj6 = { platforms: game.platformAvailability };
-              tmp17 = React4(tmp6(13284), obj6);
+              tmp17 = React4(tmp6(13287), obj6);
             }
             cResult[9] = extraChromeEnabled;
             cResult[10] = game.platformAvailability;
@@ -1089,7 +1089,7 @@ const obj10 = {
     tmp9Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp9Result = tmp9(tmp2(13284), obj8);
+      tmp9Result = tmp9(tmp2(13287), obj8);
     }
     return tmp9(FormRow, obj6);
   }),

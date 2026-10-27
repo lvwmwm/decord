@@ -1,9 +1,9 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11239
+// Function ID: 11240
 // Name: GuildIncidentsStore
 // Dependencies: [5190, 1246, 4845, 4903, 8385, 504, 584, 2]
 
-// Module 11238 (GuildIncidentsStore)
+// Module 11239 (GuildIncidentsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8385 */;

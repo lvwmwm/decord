@@ -1,17 +1,17 @@
-// Module ID: 10848
-// Function ID: 10849
+// Module ID: 10849
+// Function ID: 10850
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 4836, 1087, 21, 558, 576, 10846, 10849, 5210, 10847, 1128, 3412, 10850, 5244, 9792, 9793, 10854, 1114, 6696, 10855, 2]
+// Dependencies: [19, 4836, 1087, 21, 558, 576, 10847, 10850, 5210, 10848, 1128, 3412, 10851, 5244, 9792, 9793, 10855, 1114, 6696, 10856, 2]
 
-// Module 10848 (FavoritesGuildUpsellSheet)
+// Module 10849 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import _modDef3412 from "module_3412" /* 3412 */;
 import FavoritesConstants from "FavoritesConstants" /* 4836 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10849 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10854 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10850 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10855 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   const cResult = obj.c(14);
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (undefined === FREE_FAVORITE_LIMIT) {
-    FREE_FAVORITE_LIMIT = tmp(10846).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = tmp(10847).FREE_FAVORITE_LIMIT;
   }
-  analyticsLocations = first(10849)().analyticsLocations;
+  analyticsLocations = first(10850)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
       const obj = first(dependencyMap[8]);
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_6(analyticsLocations(10850).FavoritesSpotIllustration, {});
+    const tmp13 = closure_6(analyticsLocations(10851).FavoritesSpotIllustration, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     }
     return tmp25;
   }
-  const tmp26 = closure_6(analyticsLocations(10855).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
+  const tmp26 = closure_6(analyticsLocations(10856).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
   cResult[11] = tmp8;
   cResult[12] = tmp22;
   cResult[13] = tmp26;
@@ -163,15 +163,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10846).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10847).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[8]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[9]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3412.hINqUs), description: intl2.formatToPlainString(_modDef3412.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10850).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(10855).PromoSheet;
+  let obj = { title: intl.string(_modDef3412.hINqUs), description: intl2.formatToPlainString(_modDef3412.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10851).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10856).PromoSheet;
   intl = analyticsLocations(1128).intl;
   intl2 = analyticsLocations(1128).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };

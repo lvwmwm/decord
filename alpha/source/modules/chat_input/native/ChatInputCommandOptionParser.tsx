@@ -1,10 +1,10 @@
-// Module ID: 13089
-// Function ID: 13090
+// Module ID: 13092
+// Function ID: 13093
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 4972, 6725, 4877, 4903, 1087, 5984, 1395, 12515, 4921, 12098, 2032, 2033, 8075, 8499, 7440, 10112, 4799, 587, 5604, 2]
+// Dependencies: [32, 17, 4972, 6725, 4877, 4903, 1087, 5984, 1395, 12498, 4921, 11989, 2032, 2033, 8075, 8499, 7440, 10112, 4799, 587, 5604, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
-// Module 13089 (ChatInputCommandOptionParser)
+// Module 13092 (ChatInputCommandOptionParser)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
@@ -12,8 +12,8 @@ import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
 import StringUtils from "StringUtils" /* 2033 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4921 */;
 import useChannelName from "useChannelName" /* 5604 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12098 */;
-import ChatInputParser from "ChatInputParser" /* 12515 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11989 */;
+import ChatInputParser from "ChatInputParser" /* 12498 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import EmojiStore from "EmojiStore" /* 6725 */;
@@ -351,32 +351,32 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
   }
 };
 export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
-  const f160523 = (text) => _require(text.text) === closure_0;
+  const f160628 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f116957 = (arg0) => arg0;
+  const f117024 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f160523)) {
+      if (null != users.find(f160628)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f116958 = (arg0) => arg0.split("#")[0];
+  const f117025 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f160523)) {
+      if (null != users.find(f160628)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }

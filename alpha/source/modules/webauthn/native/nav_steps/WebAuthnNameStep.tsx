@@ -1,10 +1,10 @@
-// Module ID: 16083
-// Function ID: 16084
+// Module ID: 16084
+// Function ID: 16085
 // Name: WebAuthnNameStep
 // Dependencies: [5, 32, 19, 17, 1087, 21, 4971, 7090, 1505, 6677, 5663, 1128, 8951, 1202, 5244, 2]
 // Exports: default
 
-// Module 16083 (WebAuthnNameStep)
+// Module 16084 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import useNavigation from "useNavigation" /* 1505 */;
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           body = tmp28;

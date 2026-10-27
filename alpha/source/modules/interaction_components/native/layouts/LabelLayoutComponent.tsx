@@ -1,9 +1,9 @@
-// Module ID: 18837
-// Function ID: 18838
+// Module ID: 18847
+// Function ID: 18848
 // Name: LabelLayoutComponent
 // Dependencies: [19, 17, 21, 558, 576, 8595, 2000, 7009, 2]
 
-// Module 18837 (LabelLayoutComponent)
+// Module 18847 (LabelLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

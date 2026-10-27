@@ -1,9 +1,9 @@
-// Module ID: 11324
-// Function ID: 11325
+// Module ID: 11325
+// Function ID: 11326
 // Name: GameOrganizationInviteSendActionCreators
-// Dependencies: [5, 1087, 4976, 1297, 6375, 7411, 7566, 11325, 2]
+// Dependencies: [5, 1087, 4976, 1297, 6375, 7411, 7566, 11326, 2]
 
-// Module 11324 (GameOrganizationInviteSendActionCreators)
+// Module 11325 (GameOrganizationInviteSendActionCreators)
 import Constants from "Constants" /* 1087 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -104,7 +104,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c3 = 3;

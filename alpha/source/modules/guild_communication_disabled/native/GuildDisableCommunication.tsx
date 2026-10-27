@@ -1,9 +1,9 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12791
+// Function ID: 12792
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 4885, 1087, 21, 1128, 4971, 587, 558, 576, 5593, 11069, 1267, 5263, 12789, 5663, 5989, 5234, 6985, 6984, 7180, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 4885, 1087, 21, 1128, 4971, 587, 558, 576, 5593, 11070, 1267, 5263, 12792, 5663, 5989, 5234, 6985, 6984, 7180, 5244, 2]
 
-// Module 12788 (GuildDisableCommunication)
+// Module 12791 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import TableRadioRow2 from "TableRadioRow" /* 6984 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 6985 */;
 import TextArea2 from "TextArea" /* 7180 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11069 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -404,7 +404,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -450,7 +450,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             c2();
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c3 = 3;
@@ -518,7 +518,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -562,7 +562,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             closure_129_2();
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c3 = 3;

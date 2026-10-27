@@ -1,10 +1,10 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 16974
+// Function ID: 16975
 // Name: GeneratedTestUserActionCreators
-// Dependencies: [5, 1406, 16950, 1087, 7416, 6668, 7422, 6676, 1275, 584, 16974, 2]
+// Dependencies: [5, 1406, 16951, 1087, 7416, 6668, 7422, 6676, 1275, 584, 16975, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 16973 (GeneratedTestUserActionCreators)
+// Module 16974 (GeneratedTestUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
@@ -14,7 +14,7 @@ import Constants2 from "Constants" /* 7416 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1406 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 16950 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 16951 */;
 import size from "module_2" /* 2 */;
 
 let body, c2, c3;
@@ -35,7 +35,7 @@ let obj = function _getGeneratedPoolById() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

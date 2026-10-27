@@ -29,7 +29,7 @@ let embeddedActivitiesForLocationIncludingHidden, importDefault, set3;
 let c10;
 let set1;
 let unpackModuleId;
-const f93642 = (item) => {
+const f93692 = (item) => {
   closure_1_34(item);
 };
 function participantFromServer(userId) {
@@ -750,7 +750,7 @@ const obj2 = {
     let item = guilds.forEach((activity_instances) => {
       activity_instances = activity_instances.activity_instances;
       if (activity_instances != null) {
-        const item = activity_instances.forEach(f93642);
+        const item = activity_instances.forEach(f93692);
       }
     });
     id = AuthenticationStore.getId();
@@ -780,7 +780,7 @@ const obj2 = {
   GUILD_CREATE: function handleGuildCreate(guild) {
     const activity_instances = guild.guild.activity_instances;
     if (activity_instances != null) {
-      const item = activity_instances.forEach(f93642);
+      const item = activity_instances.forEach(f93692);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {

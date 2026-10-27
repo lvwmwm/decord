@@ -1,13 +1,13 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 16930
+// Function ID: 16931
 // Name: DiskUsageManager
-// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10098, 1384, 16930, 1267, 7584, 7214, 13794, 13795, 2]
+// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10098, 1384, 16931, 1267, 7584, 7214, 13796, 13797, 2]
 
-// Module 16929 (DiskUsageManager)
+// Module 16930 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1369 */;
 import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10098 */;
-import react_nativeDefault from "react-native" /* 16930 */;
+import react_nativeDefault from "react-native" /* 16931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

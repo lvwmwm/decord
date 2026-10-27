@@ -1,10 +1,10 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16060
+// Function ID: 16061
 // Name: account/MFAUtils
 // Dependencies: [4845, 4903, 1392, 1087, 1128, 558, 576, 573, 7044, 2]
 // Exports: getSMSBackupDisabledMessage
 
-// Module 16059 (account/MFAUtils)
+// Module 16060 (account/MFAUtils)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import MFAUtils from "MFAUtils" /* 7044 */;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F152260 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F152354 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F152260 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F152354 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;

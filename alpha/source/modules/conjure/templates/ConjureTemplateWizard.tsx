@@ -1,14 +1,14 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 12534
+// Function ID: 12535
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 10698, 1128, 3830, 11784, 7345, 2]
+// Dependencies: [5, 10698, 1128, 3830, 12535, 7345, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 11783 (ConjureTemplateWizard)
+// Module 12534 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 11784 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 12535 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj = function _startConjureTemplateWizard() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

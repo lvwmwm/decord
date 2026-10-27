@@ -1,16 +1,16 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 11960
+// Function ID: 11961
 // Name: Spoiler
-// Dependencies: [109, 32, 19, 17, 1087, 12062, 21, 4971, 1384, 587, 571, 558, 576, 570, 5037, 1202, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 11953, 21, 4971, 1384, 587, 571, 558, 576, 570, 5037, 1202, 2]
 
-// Module 12069 (Spoiler)
+// Module 11960 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import _mod571 from "module_571" /* 571 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 5037 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12062 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11953 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -90,8 +90,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpoilerRevea
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedSpoiler(id) {
   let tmp10;
+  let tmp4;
   let tmp5;
-  const obj = react2;
+  let tmp6;
+  const tmp = require;
+  let obj = react2;
   const cResult = obj.c(13);
   if (cResult[0] !== id) {
     id = id.id;
@@ -103,7 +106,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Shared
     cResult[1] = id;
     cResult[2] = tmp9;
     cResult[3] = store;
+    tmp6 = store;
     tmp5 = tmp9;
+    tmp4 = id;
   } else {
     closure_0 = cResult[1];
     tmp5 = cResult[2];
@@ -136,6 +141,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Shared
         return tmp13;
       }
     }
+    let obj2 = { revealed: store1, onReveal: tmp12 };
     const merged = Object.assign(tmp5);
     const tmp19 = <Spoiler revealed={store1} onReveal={tmp12} />;
     cResult[9] = tmp5;
@@ -145,6 +151,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Shared
     tmp13 = tmp19;
   }
   const fn2 = function u() {
+    let state;
     state = state.getState();
     return state.reveal(closure_0);
   };
@@ -157,7 +164,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Shared
   let store;
   ({ id: closure_129_0, store } = arg0);
   const merged = Object.assign(arg0, Object.assign({ id: 0, store: 0 }));
-  let obj = _mod570;
+  const obj = _mod570;
   const store1 = obj.useStore(store, (revealedIds) => {
     revealedIds = revealedIds.revealedIds;
     return revealedIds.has(closure_1_0);
@@ -219,7 +226,7 @@ class Spoiler extends PureComponent {
       const Children1 = tmp4.Children;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f113036 = (props) => {
+        const f112634 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -231,7 +238,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_8.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f113036), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f112634), style: items, onPress: "Array" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -267,7 +274,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f113036);
+              mapped = Children.map(type, f112634);
             }
           }
           tmp10 = mapped;

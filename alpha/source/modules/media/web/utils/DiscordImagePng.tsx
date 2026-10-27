@@ -65,7 +65,7 @@ class DiscordImagePng {
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

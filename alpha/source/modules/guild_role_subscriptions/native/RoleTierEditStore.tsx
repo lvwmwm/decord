@@ -1,14 +1,14 @@
-// Module ID: 19278
-// Function ID: 19279
+// Module ID: 19288
+// Function ID: 19289
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1274, 1269, 7356, 558, 576, 4886, 5263, 16568, 2]
+// Dependencies: [32, 5, 1274, 1269, 7356, 558, 576, 4886, 5263, 16569, 2]
 // Exports: resetImperatively
 
-// Module 19278 (RoleTierEditStore)
+// Module 19288 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1274 */;
 import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7356 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16568 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16569 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;
@@ -60,7 +60,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -116,7 +116,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp21) {
             if (0 === c2) {

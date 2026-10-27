@@ -1,9 +1,9 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11164
+// Function ID: 11165
 // Name: useBotProfileCommands
 // Dependencies: [19, 558, 576, 10204, 2000, 2]
 
-// Module 11163 (useBotProfileCommands)
+// Module 11164 (useBotProfileCommands)
 import react2 from "react" /* 576 */;
 import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10204 */;
 import react from "react" /* 19 */;

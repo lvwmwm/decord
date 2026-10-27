@@ -1,83 +1,35 @@
 // Module ID: 12642
 // Function ID: 12643
-// Dependencies: [12602, 12635]
-// Exports: makePromiseBuffer
+// Dependencies: [12628, 12587, 12625]
+// Exports: createCheckInEnvelope
 
 // Module 12642
-import _mod12602 from "module_12602" /* 12602 */;
+import _mod12587 from "module_12587" /* 12587 */;
+import _mod12625 from "module_12625" /* 12625 */;
+import _mod12628 from "module_12628" /* 12628 */;
 
-let diff;
 
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod12602;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
-    }
-  };
-  return obj;
-}
+export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  date = new Date();
+  const tmp = sdk && sdk.sdk;
+  if (tmp) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
+  }
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod12628;
+    obj.dsn = obj4.dsnToString(arg4);
+  }
+  const tmp5 = arg1;
+  if (tmp5) {
+    const obj5 = _mod12587;
+    obj.trace = obj5.dropUndefinedKeys(arg1);
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const items1 = [items];
+  const obj6 = _mod12625;
+  return obj6.createEnvelope(obj, items1);
+};

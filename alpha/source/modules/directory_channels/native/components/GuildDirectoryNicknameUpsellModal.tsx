@@ -1,9 +1,9 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13736
+// Function ID: 13737
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 4845, 13725, 21, 4971, 5268, 587, 558, 576, 504, 5593, 7216, 6374, 6883, 1128, 5234, 7007, 1202, 5244, 13726, 13733, 6924, 5599, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 4845, 13727, 21, 4971, 5268, 587, 558, 576, 504, 5593, 7216, 6374, 6883, 1128, 5234, 7007, 1202, 5244, 13728, 13735, 6924, 5599, 7095, 2]
 
-// Module 13734 (GuildDirectoryNicknameUpsellModal)
+// Module 13736 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -14,7 +14,7 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import useInitialValueDefault from "useInitialValue" /* 5599 */;
 import GuildIcon from "GuildIcon" /* 6883 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import Constants from "Constants" /* 13725 */;
+import Constants from "Constants" /* 13727 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -320,7 +320,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -365,7 +365,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
             nick = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         if (0 === nick) {
@@ -419,7 +419,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -467,7 +467,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;

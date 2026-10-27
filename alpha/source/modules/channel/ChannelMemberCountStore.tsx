@@ -1,9 +1,9 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14029
+// Function ID: 14030
 // Name: ChannelMemberCountStore
 // Dependencies: [6496, 4823, 11, 504, 584, 2]
 
-// Module 14027 (ChannelMemberCountStore)
+// Module 14029 (ChannelMemberCountStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

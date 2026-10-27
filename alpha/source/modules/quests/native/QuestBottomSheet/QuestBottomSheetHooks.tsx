@@ -1,9 +1,9 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16471
+// Function ID: 16472
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 6710, 558, 576, 16444, 16466, 5210, 9605, 16471, 9573, 9576, 6717, 7801, 6713, 2]
+// Dependencies: [5, 19, 6710, 558, 576, 16445, 16467, 5210, 9605, 16472, 9573, 9576, 6717, 7801, 6713, 2]
 
-// Module 16470 (QuestBottomSheetHooks)
+// Module 16471 (QuestBottomSheetHooks)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import QuestTypes from "QuestTypes" /* 6713 */;
@@ -11,7 +11,7 @@ import AdCreativeType from "AdCreativeType" /* 6717 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 9573 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 16471 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 16472 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,8 +26,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16444).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16466).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16445).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16467).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -50,8 +50,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDism
   tmp2 = fn;
 }) : (function useDismissSheetOrCollapseDock() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16444).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16466).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16445).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(16467).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileAct
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileAct
           }
           captureAdUserAction(obj6);
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c2 = 3;
@@ -281,7 +281,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileAct
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -324,7 +324,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileAct
           }
           captureAdUserAction(obj6);
           launchMobileActivity = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         launchMobileActivity = 3;

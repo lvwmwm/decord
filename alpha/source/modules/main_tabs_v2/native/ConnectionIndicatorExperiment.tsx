@@ -1,14 +1,14 @@
-// Module ID: 15000
-// Function ID: 15001
+// Module ID: 15001
+// Function ID: 15002
 // Name: ConnectionIndicatorExperiment
 // Dependencies: [1455, 2]
 
-// Module 15000 (ConnectionIndicatorExperiment)
+// Module 15001 (ConnectionIndicatorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-const obj = { name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "IconComponent", hidden: "+352" }, variations: obj2 };
+const obj = { name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "IconComponent", hidden: null }, variations: obj2 };
 obj2 = { 1: null, 2: { timeoutMs: 10000, hidden: false }, 3: { timeoutMs: 15000, hidden: false }, 4: { timeoutMs: 20000, hidden: false } };
 obj2[4] = { timeoutMs: 10000, hidden: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);

@@ -1,9 +1,9 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17958
+// Function ID: 17959
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4823, 1087, 10616, 4976, 21, 4971, 587, 558, 576, 8905, 1128, 17950, 5663, 5593, 12925, 12934, 5244, 6672, 12904, 1388, 7755, 7566, 1633, 1499, 1384, 12914, 12915, 2]
+// Dependencies: [32, 5, 19, 17, 4823, 1087, 10616, 4976, 21, 4971, 587, 558, 576, 8905, 1128, 17959, 5663, 5593, 12928, 12937, 5244, 6672, 12907, 1388, 7755, 7566, 1633, 1499, 1384, 12917, 12918, 2]
 
-// Module 17949 (ICYMIShareModal)
+// Module 17958 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ShareEventUtils from "ShareEventUtils" /* 8905 */;
 import UserRowConstants from "UserRowConstants" /* 10616 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 12925 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 12928 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -33,7 +33,7 @@ let closure_12;
 let obj2;
 let tmp9;
 let unpackModuleId;
-const ShareChatInputDefault = tmp9(12934);
+const ShareChatInputDefault = tmp9(12937);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           closure_3 = tmp27;
@@ -256,7 +256,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -314,7 +314,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp32) {
         closure_3 = tmp32;
@@ -701,7 +701,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -747,7 +747,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -793,7 +793,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp16) {
                     c1 = 3;
                     throw tmp16;
@@ -808,7 +808,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             const arr3 = forwardToChannel(first1[21]);
             arr3.pop();
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp6) {
           c4 = 3;
@@ -858,7 +858,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -906,7 +906,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -952,7 +952,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                         return obj;
                       }
                       c1 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp16) {
                       c1 = 3;
                       throw tmp16;
@@ -967,7 +967,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
               const arr3 = tmp2(closure_2[21]);
               arr3.pop();
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp6) {
             c4 = 3;

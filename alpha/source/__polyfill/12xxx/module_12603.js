@@ -1,46 +1,22 @@
 // Module ID: 12603
 // Function ID: 12604
-// Dependencies: []
+// Dependencies: [12587]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 12603
-let hasOwnProperty;
+import _mod12587 from "module_12587" /* 12587 */;
 
-function merge(arg0, obj) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 2;
-  }
-  const tmp = obj;
-  if (tmp) {
-    if (typeof obj === "object") {
-      if (num > 0) {
-        const tmp9 = arg0;
-        if (tmp9) {
-          if (obj) {
-            const _Object = Object;
-            if (0 === Object.keys(obj).length) {
-              return arg0;
-            }
-          }
-        }
-        obj = {};
-        const merged = Object.assign(arg0);
-        for (const key10016 in obj) {
-          let _Object2 = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          if (!hasOwnProperty.call(obj, key10016)) {
-            continue;
-          } else {
-            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
-            continue;
-          }
-          continue;
-        }
-        return obj;
-      }
-    }
-  }
-  return obj;
-}
+const _sentrySpan = "_sentrySpan";
 
-export { merge };
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+};
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod12587;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
+  }
+};

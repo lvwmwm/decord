@@ -1,9 +1,9 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12771
+// Function ID: 12772
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4971, 587, 558, 576, 8602, 2000, 5210, 7227, 5234, 1128, 11842, 2]
+// Dependencies: [32, 19, 21, 4971, 587, 558, 576, 8602, 2000, 5210, 7227, 5234, 1128, 12190, 2]
 
-// Module 12768 (StringSelectComponentActionSheet)
+// Module 12771 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
@@ -519,8 +519,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
           cResult[32] = tmp13;
           cResult[33] = tmp24;
           cResult[34] = !tmp17;
-          cResult[35] = jsx(onSubmit(11842), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
-          const tmp28 = jsx(onSubmit(11842), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
+          cResult[35] = jsx(onSubmit(12190), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
+          const tmp28 = jsx(onSubmit(12190), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
         }
       }
     }
@@ -702,7 +702,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(11842);
+  const tmp10 = onSubmit(12190);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

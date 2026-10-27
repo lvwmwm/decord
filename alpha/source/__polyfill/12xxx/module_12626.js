@@ -1,382 +1,236 @@
 // Module ID: 12626
 // Function ID: 12627
-// Dependencies: [5, 12605, 12627, 12606, 12578, 12589, 12592, 12585, 12615, 12579, 12601]
-// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
+// Dependencies: [32, 12627, 12587, 12588, 12584]
+// Exports: normalizeUrlToBase
 
 // Module 12626
-import _mod12579 from "module_12579" /* 12579 */;
-import _mod12585 from "module_12585" /* 12585 */;
-import _mod12589 from "module_12589" /* 12589 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12592 */;
-import _mod12601 from "module_12601" /* 12601 */;
-import _mod12605 from "module_12605" /* 12605 */;
-import _mod12606 from "module_12606" /* 12606 */;
-import _mod12627 from "module_12627" /* 12627 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _mod12584 from "module_12584" /* 12584 */;
+import _mod12587 from "module_12587" /* 12587 */;
+import _mod12588 from "module_12588" /* 12588 */;
+import memoBuilder from "memoBuilder" /* 12627 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
+let hasOwnProperty;
 
-let obj = function _flush() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "+352" };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let flushResult;
-          const obj4 = require("module_12605");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            flushResult = client.flush(tmp10);
-          } else {
-            if (require("module_12606").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events. No client defined.");
-            }
-            flushResult = Promise.resolve(false);
-          }
-          c1 = 3;
-          obj = { value: flushResult, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
-    }
-  });
-  return obj(...arguments);
-};
-obj = function _close() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "+352" };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let closeResult;
-          const obj4 = require("module_12605");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            closeResult = client.close(tmp10);
-          } else {
-            if (require("module_12606").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events and disable SDK. No client defined.");
-            }
-            closeResult = Promise.resolve(false);
-          }
-          c1 = 3;
-          obj = { value: closeResult, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
-    }
-  });
-  return obj(...arguments);
-};
-function endSession() {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  const obj3 = _mod12605;
-  const currentScope = obj3.getCurrentScope();
-  const tmp3 = currentScope.getSession() || isolationScope.getSession();
-  if (tmp3) {
-    const tmpResult = _mod12601;
-    tmpResult.closeSession(tmp3);
+function normalize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 100;
   }
-  const tmpResult4 = _mod12605;
-  const isolationScope1 = tmpResult4.getIsolationScope();
-  const tmpResult5 = _mod12605;
-  const currentScope1 = tmpResult5.getCurrentScope();
-  const tmpResult6 = _mod12605;
-  const client = tmpResult6.getClient();
-  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
-  const tmp6 = tmp5 && client;
-  if (tmp6) {
-    client.captureSession(tmp5);
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = Infinity;
   }
-  isolationScope.setSession();
-  currentScope.setSession();
+  try {
+    return visit("", arg0, num, num2);
+  } catch (tmp5) {
+    const _HermesInternal = HermesInternal;
+    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
+    return obj;
+  }
 }
-let _asyncToGenerator = _asyncToGenerator_mod;
-
-export const addEventProcessor = function addEventProcessor(arg0) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.addEventProcessor(arg0);
-};
-export const captureCheckIn = function captureCheckIn(arg0, arg1) {
-  obj = _mod12605;
-  const currentScope = obj.getCurrentScope();
-  const obj2 = _mod12605;
-  const client = obj2.getClient();
-  if (client) {
-    if (client.captureCheckIn) {
-      return client.captureCheckIn(arg0, arg1, currentScope);
-    } else if (_mod12606.DEBUG_BUILD) {
-      const logger2 = tmp(12578).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
-    }
-  } else if (_mod12606.DEBUG_BUILD) {
-    const logger = tmp(12578).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
-  }
-  const tmpResult = _mod12589;
-  return tmpResult.uuid4();
-};
-export const captureEvent = function captureEvent(arg0, arg1) {
-  obj = _mod12605;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureEvent(arg0, arg1);
-};
-export const captureException = function captureException(arg0, arg1) {
-  obj = _mod12605;
-  const currentScope = obj.getCurrentScope();
-  const captureException = currentScope.captureException;
-  const obj2 = _mod12627;
-  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
-};
-export const captureMessage = function captureMessage(arg0, captureContext) {
-  let tmp;
-  if (typeof captureContext === "string") {
-    tmp = captureContext;
-  }
-  let tmp2;
-  if (typeof captureContext !== "string") {
-    tmp2 = { captureContext };
-    const obj2 = { captureContext };
-  }
-  obj = _mod12605;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureMessage(arg0, tmp, tmp2);
-};
-export const captureSession = function captureSession() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = false;
-  }
-  if (flag) {
-    endSession();
-  } else {
-    obj = _mod12605;
-    const isolationScope = obj.getIsolationScope();
-    const obj3 = _mod12605;
-    const currentScope = obj3.getCurrentScope();
-    const obj5 = _mod12605;
-    const client = obj5.getClient();
-    const tmp3 = currentScope.getSession() || isolationScope.getSession();
-    const tmp4 = tmp3 && client;
-    if (tmp4) {
-      client.captureSession(tmp3);
-    }
-  }
-};
-export const close = function close(arg0) {
-  return obj(...arguments);
-};
-export { endSession };
-export const flush = function flush(arg0) {
-  return obj(...arguments);
-};
-export const isEnabled = function isEnabled() {
-  obj = _mod12605;
-  const client = obj.getClient();
-  const transport = client && false !== client.getOptions().enabled && client.getTransport();
-  return transport;
-};
-export const isInitialized = function isInitialized() {
-  obj = _mod12605;
-  return obj.getClient();
-};
-export const lastEventId = function lastEventId() {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  return isolationScope.lastEventId();
-};
-export const setContext = function setContext(arg0, arg1) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setContext(arg0, arg1);
-};
-export const setExtra = function setExtra(arg0, arg1) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtra(arg0, arg1);
-};
-export const setExtras = function setExtras(arg0) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtras(arg0);
-};
-export const setTag = function setTag(arg0, arg1) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTag(arg0, arg1);
-};
-export const setTags = function setTags(arg0) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTags(arg0);
-};
-export const setUser = function setUser(arg0) {
-  obj = _mod12605;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setUser(arg0);
-};
-export const startSession = function startSession(arg0) {
-  let environment;
-  let release;
-  obj = _mod12605;
-  const client = obj.getClient();
-  const obj3 = _mod12605;
-  const isolationScope = obj3.getIsolationScope();
-  const obj5 = _mod12605;
-  const currentScope = obj5.getCurrentScope();
-  ({ environment, release } = client && client.getOptions() || {});
-  client && client.getOptions() || {};
-  if (undefined === environment) {
-    environment = tmp(12615).DEFAULT_ENVIRONMENT;
-  }
-  const userAgent = (_mod12579.GLOBAL_OBJ.navigator || {}).userAgent;
-  _mod12579.GLOBAL_OBJ.navigator || {};
-  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
-  const makeSession = _mod12601.makeSession;
-  _mod12601;
-  let tmp7 = userAgent;
-  currentScope.getUser() || isolationScope.getUser();
-  if (tmp7) {
-    tmp7 = { userAgent };
-    const obj4 = { userAgent };
-  }
-  const merged = Object.assign(tmp7);
-  const merged1 = Object.assign(arg0);
-  const session = makeSession(obj2);
-  const session1 = isolationScope.getSession();
-  const tmp12 = session1 && "ok" === session1.status;
-  if (tmp12) {
-    const tmpResult2 = _mod12601;
-    tmpResult2.updateSession(session1, { status: "exited" });
-  }
-  endSession();
-  isolationScope.setSession(session);
-  currentScope.setSession(session);
-  return session;
-};
-export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
-  let closure_1;
-  _require = monitorSlug;
-  dependencyMap = arg1;
-  function finishCheckIn(status) {
-    let obj2;
-    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
-    obj2 = _browserPerformanceTimeOriginMode;
-    const obj3 = _mod12605;
-    const currentScope = obj3.getCurrentScope();
-    const obj4 = _mod12605;
-    const client = obj4.getClient();
-    if (client) {
-      if (client.captureCheckIn) {
-        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
-      } else if (_mod12606.DEBUG_BUILD) {
-        const logger2 = tmp(12578).logger;
-        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+function visit(arg0, __sentry_skip_normalization__) {
+  function stringifyValue(arg0, _events) {
+    function getConstructorName(_events) {
+      const prototypeOf = Object.getPrototypeOf(_events);
+      let str = "null prototype";
+      if (prototypeOf) {
+        str = prototypeOf.constructor.name;
       }
-    } else if (_mod12606.DEBUG_BUILD) {
-      const logger = tmp(12578).logger;
-      logger.warn("Cannot capture check-in. No client defined.");
+      return str;
     }
-    const tmpResult = _mod12589;
-    tmpResult.uuid4();
-  }
-  obj = { monitorSlug, status: "in_progress" };
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj2 = require("module_12605");
-  let currentScope = obj2.getCurrentScope();
-  let obj3 = require("module_12605");
-  let client = obj3.getClient();
-  if (client) {
-    let captureCheckInResult;
-    if (client.captureCheckIn) {
-      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
-    } else if (tmp(12606).DEBUG_BUILD) {
-      let logger2 = tmp(12578).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
-    }
-    _asyncToGenerator = captureCheckInResult;
-    let tmpResult = tmp(12592);
-    let closure_3 = tmpResult.timestampInSeconds();
-    const tmpResult3 = tmp(12605);
-    return tmpResult3.withIsolationScope(() => {
-      try {
-        const tmp2 = closure_1();
-        obj = _mod12585;
-        if (obj.isThenable(tmp2)) {
-          const resolved = Promise.resolve(tmp2);
-          resolved.then(() => {
-            finishCheckIn("ok");
-          }, (arg0) => {
-            finishCheckIn("error");
-            throw arg0;
-          });
-        } else {
-          finishCheckIn("ok");
+    try {
+      let str = "domain";
+      if ("domain" === arg0) {
+        if (_events) {
+          if (typeof _events === "object") {
+            if (_events._events) {
+              return "[Domain]";
+            }
+          }
         }
-        return tmp2;
-      } catch (tmp11) {
-        finishCheckIn("error");
-        throw tmp11;
       }
-    });
-  } else if (tmp(12606).DEBUG_BUILD) {
-    let logger = tmp(12578).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
+      if ("domainEmitter" === arg0) {
+        return "[DomainEmitter]";
+      } else {
+        if (undefined !== global) {
+          if (_events === global) {
+            return "[Global]";
+          }
+        }
+        const _window = window;
+        if (typeof window !== "undefined") {
+          const _window2 = window;
+          if (_events === window) {
+            return "[Window]";
+          }
+        }
+        const _document = document;
+        if (typeof document !== "undefined") {
+          const _document2 = document;
+          if (_events === document) {
+            return "[Document]";
+          }
+        }
+        const obj = _mod12588;
+        if (obj.isVueViewModel(_events)) {
+          return "[VueViewModel]";
+        } else {
+          const tmp4Result = _mod12588;
+          if (tmp4Result.isSyntheticEvent(_events)) {
+            return "[SyntheticEvent]";
+          } else {
+            if (typeof _events === "number") {
+              const _Number = Number;
+              if (!Number.isFinite(_events)) {
+                const _HermesInternal = HermesInternal;
+                return "[" + _events + "]";
+              }
+            }
+            if (typeof _events === "function") {
+              const _HermesInternal4 = HermesInternal;
+              const tmp4Result2 = _mod12584;
+              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
+            } else if (typeof _events === "symbol") {
+              const _String2 = String;
+              const _HermesInternal3 = HermesInternal;
+              return "[" + String(_events) + "]";
+            } else if (typeof _events === "bigint") {
+              const _String = String;
+              const _HermesInternal2 = HermesInternal;
+              return "[BigInt: " + String(_events) + "]";
+            } else {
+              let combined;
+              const _HermesInternal6 = HermesInternal;
+              const obj4 = /^HTML(\w*)Element$/;
+              const tmp9 = getConstructorName(_events);
+              if (obj4.test(tmp9)) {
+                combined = concat(tmp10, "]");
+              } else {
+                combined = concat(tmp10, "]");
+              }
+              return combined;
+            }
+          }
+        }
+      }
+    } catch (tmp7) {
+      const _HermesInternal5 = HermesInternal;
+      return "**non-serializable** (" + tmp7 + ")";
+    }
   }
-  const tmpResult4 = tmp(12589);
-  captureCheckInResult = tmpResult4.uuid4();
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = Infinity;
+  }
+  let num2 = arg3;
+  if (arg3 === undefined) {
+    num2 = Infinity;
+  }
+  let memoBuilderResult = arg4;
+  if (arg4 === undefined) {
+    let obj = memoBuilder;
+    memoBuilderResult = obj.memoBuilder();
+  }
+  _slicedToArray(memoBuilderResult, 2);
+  if (null != __sentry_skip_normalization__) {
+    const items = ["boolean", "string"];
+    if (!items.includes(typeof __sentry_skip_normalization__)) {
+      if (typeof __sentry_skip_normalization__ === "number") {
+        let _Number = Number;
+      }
+      let tmp9 = arg0;
+      let str = stringifyValue(arg0, __sentry_skip_normalization__);
+      if (str.startsWith("[object ")) {
+        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
+          return __sentry_skip_normalization__;
+        } else {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
+            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
+          }
+          if (0 === num) {
+            return str.replace("object ", "");
+          } else if (tmp6(__sentry_skip_normalization__)) {
+            return "[Circular ~]";
+          } else {
+            if (__sentry_skip_normalization__) {
+              if (typeof __sentry_skip_normalization__.toJSON === "function") {
+                try {
+                  const tmp10 = visit;
+                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
+                } catch (err) {
+                }
+              }
+            }
+            const _Array = Array;
+            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
+            const obj2 = _mod12587;
+            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
+            const keys = Object.keys();
+            if (keys !== undefined) {
+              while (keys[tmp] !== undefined) {
+                let _Object = Object;
+                hasOwnProperty = Object.prototype.hasOwnProperty;
+                let tmp28 = tmp21;
+                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
+                  continue;
+                } else {
+                  if (tmp20 >= num2) {
+                    let str4 = "[MaxProperties ~]";
+                    tmp14[tmp21] = "[MaxProperties ~]";
+                    break;
+                  } else {
+                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
+                    let num6 = tmp20 + 1;
+                    continue;
+                  }
+                  break;
+                }
+                break;
+              }
+            }
+            tmp7(__sentry_skip_normalization__);
+            return tmp14;
+          }
+        }
+      } else {
+        return str;
+      }
+    }
+  }
+  return __sentry_skip_normalization__;
+}
+function normalizeToSize(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 3;
+  }
+  let num2 = arg2;
+  if (arg2 === undefined) {
+    num2 = 102400;
+  }
+  let tmp = normalize(arg0, num);
+  const str = encodeURI(JSON.stringify(tmp));
+  if (~(-str.split(/%..|./).length) > num2) {
+    tmp = normalizeToSize(arg0, num - 1, num2);
+  }
+  return tmp;
+}
+
+export { normalize };
+export { normalizeToSize };
+export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
+  let str2 = arg0;
+  str = str.replace(/\\/g, "/");
+  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+  try {
+    const _decodeURI = decodeURI;
+    str2 = decodeURI(arg0);
+  } catch (err) {
+  }
+  const str3 = str2.replace(/\\/g, "/");
+  const replace = str3.replace(/webpack:\/?/g, "").replace;
+  str3.replace(/webpack:\/?/g, "");
+  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
+  return replace(regExp, "app:///");
 };

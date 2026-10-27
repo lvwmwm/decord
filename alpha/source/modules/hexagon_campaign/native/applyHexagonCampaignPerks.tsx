@@ -1,10 +1,10 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16379
+// Function ID: 16380
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 4995, 1392, 15642, 4996, 9865, 1255, 7078, 14766, 4998, 16379, 15855, 16380, 9866, 2053, 2]
+// Dependencies: [5, 4995, 1392, 15643, 4996, 9865, 1255, 7078, 14767, 4998, 16380, 15856, 16381, 9866, 2053, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 16378 (applyHexagonCampaignPerks)
+// Module 16379 (applyHexagonCampaignPerks)
 import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7078 */;
@@ -12,7 +12,7 @@ import AppIconConstants from "AppIconConstants" /* 9865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
 import UserStore from "UserStore" /* 1392 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15642 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15643 */;
 import size from "module_2" /* 2 */;
 
 let c5;
@@ -35,7 +35,7 @@ let obj = function _saveDisplayNameStyles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ obj = function _applyHexagonCampaignPerks() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -141,7 +141,7 @@ obj = function _applyHexagonCampaignPerks() {
             closure_11 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -317,7 +317,7 @@ obj = function _applyHexagonCampaignPerks() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {

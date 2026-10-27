@@ -1,12 +1,12 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15848
+// Function ID: 15849
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 15844, 5052, 5297, 5258, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 15845, 5052, 5297, 5258, 2]
 
-// Module 15847 (HuePicker)
+// Module 15848 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 15844 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 15845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -109,7 +109,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
       tmpResult.runOnJS(tmp4)();
     }
   };
-  fn.__closure = { hue, normalizeValue: tmp(15844).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS };
+  fn.__closure = { hue, normalizeValue: tmp(15845).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS };
   fn.__workletHash = 353921971989;
   fn.__initData = __initData;
   const fn2 = function s(arg0) {
@@ -121,8 +121,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
       tmpResult.runOnJS(tmp4)();
     }
   };
-  ({ hue, normalizeValue: tmp(15844).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS });
-  fn2.__closure = { hue, normalizeValue: tmp(15844).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS };
+  ({ hue, normalizeValue: tmp(15845).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS });
+  fn2.__closure = { hue, normalizeValue: tmp(15845).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS };
   fn2.__workletHash = 10859524318070;
   fn2.__initData = __initData2;
   cResult[0] = barWidth;
@@ -132,7 +132,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
   cResult[4] = fn2;
   tmp5 = fn2;
   tmp4 = fn;
-  ({ hue, normalizeValue: tmp(15844).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS });
+  ({ hue, normalizeValue: tmp(15845).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(5052).runOnJS });
 }) : (function useHuePickerGesture(hue, barWidth, onPanUpdate, onPanFinalize) {
   let fn;
   let fn2;

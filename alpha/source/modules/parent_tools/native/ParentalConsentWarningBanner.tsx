@@ -1,9 +1,9 @@
-// Module ID: 18701
-// Function ID: 18702
+// Module ID: 18711
+// Function ID: 18712
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7646, 1087, 21, 587, 4971, 558, 576, 1633, 16157, 16156, 18702, 11568, 5252, 7660, 1267, 7647, 7490, 5234, 5258, 1128, 2536, 2]
+// Dependencies: [19, 17, 7646, 1087, 21, 587, 4971, 558, 576, 1633, 16158, 16157, 18712, 11569, 5252, 7660, 1267, 7647, 7490, 5234, 5258, 1128, 2536, 2]
 
-// Module 18701 (ParentalConsentWarningBanner)
+// Module 18711 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Text_Text from "Text/Text" /* 5234 */;

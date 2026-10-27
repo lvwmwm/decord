@@ -1,9 +1,9 @@
-// Module ID: 13020
-// Function ID: 13021
+// Module ID: 13023
+// Function ID: 13024
 // Name: CheckpointRecapCard
-// Dependencies: [32, 19, 17, 21, 12980, 4971, 587, 558, 576, 8624, 6036, 1900, 5052, 5206, 7962, 5669, 10571, 2]
+// Dependencies: [32, 19, 17, 21, 12983, 4971, 587, 558, 576, 8624, 6036, 1900, 5052, 5206, 7962, 5669, 10571, 2]
 
-// Module 13020 (CheckpointRecapCard)
+// Module 13023 (CheckpointRecapCard)
 import nativeDefault from "native" /* 587 */;
 import react_nativeDefault from "react-native" /* 1900 */;
 import timing from "timing" /* 5206 */;
@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 12980 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 12983 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -278,8 +278,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 }
                 const obj6 = { value, color: primaryBackgroundColor, size: 64 };
                 cResult[31] = primaryBackgroundColor;
-                cResult[32] = closure_7(first(12980), obj6);
-                const tmp54 = closure_7(first(12980), obj6);
+                cResult[32] = closure_7(first(12983), obj6);
+                const tmp54 = closure_7(first(12983), obj6);
               } else {
                 class U {
                   constructor() {

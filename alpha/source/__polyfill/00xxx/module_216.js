@@ -7,10 +7,10 @@ let hasOwnProperty, map, set, set2;
 
 const fn = function t(DOMException) {
   let tmp6;
-  const f140843 = function(item, index) {
+  const f140933 = function(item, index) {
     this.append(index, item);
   };
-  const f140844 = function(item) {
+  const f140934 = function(item) {
     if (2 != item.length) {
       const _TypeError = TypeError;
       const self2 = this;
@@ -29,11 +29,11 @@ const fn = function t(DOMException) {
       closure_0 = headers;
       this.map = {};
       if (headers instanceof Headers) {
-        const item = headers.forEach(f140843, self);
+        const item = headers.forEach(f140933, self);
       } else {
         const _Array = Array;
         if (Array.isArray(headers)) {
-          const item1 = headers.forEach(f140844, self);
+          const item1 = headers.forEach(f140934, self);
         } else if (headers) {
           const _Object = Object;
           const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -248,11 +248,11 @@ const fn = function t(DOMException) {
               const obj6 = Object.create(Headers.prototype);
               obj6.map = {};
               if (headers instanceof Headers) {
-                const item = headers.forEach(f140843, obj6);
+                const item = headers.forEach(f140933, obj6);
               } else {
                 const _Array = Array;
                 if (Array.isArray(headers)) {
-                  const item1 = headers.forEach(f140844, obj6);
+                  const item1 = headers.forEach(f140934, obj6);
                 } else if (headers) {
                   const _Object = Object;
                   const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -283,11 +283,11 @@ const fn = function t(DOMException) {
           const obj7 = Object.create(Headers.prototype);
           obj7.map = {};
           if (headers1 instanceof Headers) {
-            const item3 = headers1.forEach(f140843, obj7);
+            const item3 = headers1.forEach(f140933, obj7);
           } else {
             const _Array2 = Array;
             if (Array.isArray(headers1)) {
-              const item4 = headers1.forEach(f140844, obj7);
+              const item4 = headers1.forEach(f140934, obj7);
             } else if (headers1) {
               const _Object2 = Object;
               const ownPropertyNames1 = Object.getOwnPropertyNames(headers1);
@@ -413,11 +413,11 @@ const fn = function t(DOMException) {
             const obj = Object.create(Headers.prototype);
             obj.map = {};
             if (headers instanceof Headers) {
-              const item = headers.forEach(f140843, obj);
+              const item = headers.forEach(f140933, obj);
             } else {
               const _Array = Array;
               if (Array.isArray(headers)) {
-                const item1 = headers.forEach(f140844, obj);
+                const item1 = headers.forEach(f140934, obj);
               } else if (headers) {
                 const _Object = Object;
                 const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -453,11 +453,11 @@ const fn = function t(DOMException) {
       obj = Object.create(Headers.prototype);
       obj.map = {};
       if (headers instanceof Headers) {
-        const item = headers.forEach(f140843, obj);
+        const item = headers.forEach(f140933, obj);
       } else {
         const _Array = Array;
         if (Array.isArray(headers)) {
-          const item1 = headers.forEach(f140844, obj);
+          const item1 = headers.forEach(f140934, obj);
         } else if (headers) {
           const _Object = Object;
           const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -508,11 +508,11 @@ const fn = function t(DOMException) {
         closure_0 = headers;
         this.map = {};
         if (headers instanceof Headers) {
-          const item = headers.forEach(f140843, self);
+          const item = headers.forEach(f140933, self);
         } else {
           const _Array = Array;
           if (Array.isArray(headers)) {
-            const item1 = headers.forEach(f140844, self);
+            const item1 = headers.forEach(f140934, self);
           } else if (headers) {
             const _Object = Object;
             const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -711,11 +711,11 @@ const fn = function t(DOMException) {
         closure_0 = headers;
         this.map = {};
         if (headers instanceof Headers) {
-          const item = headers.forEach(f140843, self);
+          const item = headers.forEach(f140933, self);
         } else {
           const _Array = Array;
           if (Array.isArray(headers)) {
-            const item1 = headers.forEach(f140844, self);
+            const item1 = headers.forEach(f140934, self);
           } else if (headers) {
             const _Object = Object;
             const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -927,11 +927,11 @@ const fn = function t(DOMException) {
         closure_0 = headers;
         this.map = {};
         if (headers instanceof Headers) {
-          const item = headers.forEach(f140843, self);
+          const item = headers.forEach(f140933, self);
         } else {
           const _Array = Array;
           if (Array.isArray(headers)) {
-            const item1 = headers.forEach(f140844, self);
+            const item1 = headers.forEach(f140934, self);
           } else if (headers) {
             const _Object = Object;
             const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -1447,11 +1447,11 @@ const fn = function t(DOMException) {
         closure_0 = headers;
         this.map = {};
         if (headers instanceof Headers) {
-          const item = headers.forEach(f140843, self);
+          const item = headers.forEach(f140933, self);
         } else {
           const _Array = Array;
           if (Array.isArray(headers)) {
-            const item1 = headers.forEach(f140844, self);
+            const item1 = headers.forEach(f140934, self);
           } else if (headers) {
             const _Object = Object;
             const ownPropertyNames = Object.getOwnPropertyNames(headers);
@@ -1678,12 +1678,12 @@ const fn = function t(DOMException) {
         let c0;
         obj2.map = {};
         if (undefined instanceof Headers) {
-          const item = undefined.forEach(f140843, obj2);
+          const item = undefined.forEach(f140933, obj2);
         } else {
           const tmp3 = globalThis;
           const _Array = Array;
           if (Array.isArray(undefined)) {
-            const item1 = undefined.forEach(f140844, obj2);
+            const item1 = undefined.forEach(f140934, obj2);
           }
         }
         const str2 = str.replace(/\r?\n[\t ]+/g, " ");
@@ -1838,11 +1838,11 @@ const fn = function t(DOMException) {
         closure_0 = headers;
         this.map = {};
         if (headers instanceof Headers) {
-          const item = headers.forEach(f140843, self);
+          const item = headers.forEach(f140933, self);
         } else {
           const _Array = Array;
           if (Array.isArray(headers)) {
-            const item1 = headers.forEach(f140844, self);
+            const item1 = headers.forEach(f140934, self);
           } else if (headers) {
             const _Object = Object;
             const ownPropertyNames = Object.getOwnPropertyNames(headers);

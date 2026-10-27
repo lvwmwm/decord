@@ -1,9 +1,9 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12107
+// Function ID: 12108
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1629, 1087, 558, 576, 8284, 12215, 7369, 8882, 10418, 2000, 2]
+// Dependencies: [19, 1629, 1087, 558, 576, 8284, 12108, 7369, 8882, 10418, 2000, 2]
 
-// Module 12214 (useMediaKeyboardConfig)
+// Module 12107 (useMediaKeyboardConfig)
 import react2 from "react" /* 576 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import Server from "Server" /* 2000 */;
@@ -11,7 +11,7 @@ import ThreadHooks from "ThreadHooks" /* 7369 */;
 import PollsUtils from "PollsUtils" /* 8284 */;
 import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8882 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 12215 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 12108 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

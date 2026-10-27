@@ -1,21 +1,21 @@
-// Module ID: 14122
-// Function ID: 14123
+// Module ID: 14124
+// Function ID: 14125
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 14123, 3, 14120, 14124, 14125, 2]
+// Dependencies: [5, 14125, 3, 14122, 14126, 14127, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 14122 (IosAttributionImpressionRegistry)
+// Module 14124 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14120 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 14123 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14124 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14122 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 14125 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f120694 = () => {
+const f120761 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f120694);
+    endImpressionResult.catch(f120761);
   }
 }
 let obj = function _startNativeImpression() {
@@ -66,7 +66,7 @@ let obj = function _startNativeImpression() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _startNativeImpression() {
               token = undefined;
               signAbort = 1;
               c4 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === signAbort) {
             if (arg0 === 1) {
@@ -115,7 +115,7 @@ let obj = function _startNativeImpression() {
                 const result = obj11.trackIosAttributionImpression(closure_130_0(closure_130_1[4]).IosAttributionImpressionResult.NO_FRAMEWORK, c2);
                 closure_130_7(impressionId, signAbort);
                 c4 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj8 = { metadataSealed, impressionId, specs: items, signal: signAbort.signAbort.signal };
                 items = [viewThroughSpec];
@@ -183,7 +183,7 @@ let obj = function _startNativeImpression() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp83) {
           c4 = 3;
@@ -210,7 +210,7 @@ obj = function _getImpressionToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -282,29 +282,83 @@ obj = function _getStoreKitCredential() {
     let impressionId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      let tmp8;
+    const iter = (async (arg0, value) => {
       function getImpressionToken() {
         return closure_1_10(...arguments);
       }
-      impressionToken = tmp4;
-      impressionId = impressionId.impressionId;
-      await "Reflect";
-      const obj8 = closure_130_0(closure_130_1[3]);
-      const activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
-      if (null != activeIosAttributionFramework) {
-        if (null != closure_130_3[activeIosAttributionFramework]) {
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: getImpressionToken(impressionId), done: false };
-          return obj5;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let activeIosAttributionFramework;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              impressionId = undefined;
+              impressionId = impressionId.impressionId;
+              activeIosAttributionFramework = undefined;
+              impressionToken = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: true };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              const obj8 = closure_130_0(closure_130_1[3]);
+              activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
+              if (null != activeIosAttributionFramework) {
+                if (null != closure_130_3[activeIosAttributionFramework]) {
+                  c3 = 2;
+                  c4 = 1;
+                  const obj5 = { value: getImpressionToken(impressionId), done: false };
+                  return obj5;
+                }
+              }
+              c4 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            impressionToken = value;
+            let tmp8;
+            if (null != impressionToken) {
+              tmp8 = { impressionToken };
+              obj = { impressionToken };
+            }
+            c4 = 3;
+            return { value: tmp8, done: true };
+          }
+        } catch (tmp18) {
+          c4 = 3;
+          throw tmp18;
         }
       }
-      impressionToken = await "IconComponent";
-      if (null != impressionToken) {
-        tmp8 = { impressionToken };
-      }
-      return tmp8;
     })();
     iter.next();
     return iter;
@@ -359,7 +413,7 @@ export const endImpression = function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f120694);
+      endImpressionResult.catch(f120761);
     }
   }
 };

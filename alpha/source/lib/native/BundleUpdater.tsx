@@ -1,9 +1,9 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12721
+// Function ID: 12722
 // Name: BundleUpdater
 // Dependencies: [5, 17, 1087, 3, 1384, 81, 2002, 6484, 1267, 6468, 2]
 
-// Module 12718 (BundleUpdater)
+// Module 12721 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -68,7 +68,7 @@ class BundleUpdater {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ class BundleUpdater {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;

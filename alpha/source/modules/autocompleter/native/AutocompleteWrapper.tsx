@@ -1,9 +1,9 @@
-// Module ID: 13280
-// Function ID: 13281
+// Module ID: 13283
+// Function ID: 13284
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8307, 6725, 6496, 6766, 1087, 5983, 10113, 5984, 10197, 1395, 21, 8580, 7133, 10208, 4971, 1384, 587, 13281, 558, 576, 1499, 5593, 5268, 504, 5252, 11059, 13288, 13289, 4799, 6986, 10196, 13290, 7440, 10112, 6826, 9826, 13291, 7630, 13089, 2000, 7756, 1631, 5711, 9075, 9505, 9076, 13292, 13293, 9672, 8499, 13127, 5052, 13294, 5634, 13301, 5234, 1128, 7220, 8955, 13302, 13303, 2]
+// Dependencies: [32, 19, 17, 8307, 6725, 6496, 6766, 1087, 5983, 10113, 5984, 10197, 1395, 21, 8580, 7133, 10208, 4971, 1384, 587, 13284, 558, 576, 1499, 5593, 5268, 504, 5252, 11060, 13291, 13292, 4799, 6986, 10196, 13293, 7440, 10112, 6826, 9826, 13294, 7630, 13092, 2000, 7756, 1631, 5711, 9075, 9505, 9076, 13295, 13296, 9672, 8499, 13130, 5052, 13297, 5634, 13304, 5234, 1128, 7220, 8955, 13305, 13306, 2]
 
-// Module 13280 (AutocompleteWrapper)
+// Module 13283 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -23,8 +23,8 @@ import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /*
 import AutocompleteOptions from "AutocompleteOptions" /* 10196 */;
 import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10197 */;
 import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10208 */;
-import Autocomplete from "Autocomplete" /* 13281 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 13292 */;
+import Autocomplete from "Autocomplete" /* 13284 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 13295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -61,7 +61,7 @@ let tmp5;
 let unpackModuleId;
 const NavigatorConstants = tmp(5268);
 const useSafeAreaInsetsKeyboardAwareDefault = tmp5(5593);
-const application_commands_ApplicationCommandUtils = tmp(13127);
+const application_commands_ApplicationCommandUtils = tmp(13130);
 function getItemKey(type, arg1) {
   type = type.type;
   if (constants.USER === type) {

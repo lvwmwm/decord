@@ -1,9 +1,9 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13461
+// Function ID: 13462
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 4845, 7511, 5182, 558, 576, 13459, 504, 13460, 7253, 13461, 8366, 5210, 13438, 6697, 7512, 6672, 7522, 2]
+// Dependencies: [19, 4845, 7511, 5182, 558, 576, 13462, 504, 13463, 7253, 13464, 8366, 5210, 13441, 6697, 7512, 6672, 7522, 2]
 
-// Module 13458 (useGuildPowerupOnActivate)
+// Module 13461 (useGuildPowerupOnActivate)
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8366 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;

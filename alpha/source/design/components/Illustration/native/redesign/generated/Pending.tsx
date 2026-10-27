@@ -1,10 +1,10 @@
-// Module ID: 18342
-// Function ID: 18343
+// Module ID: 18351
+// Function ID: 18352
 // Name: Pending
-// Dependencies: [19, 21, 8724, 18343, 18344, 18345, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 18352, 18353, 18354, 558, 576, 4978, 5669, 2]
 // Exports: getPendingSource
 
-// Module 18342 (Pending)
+// Module 18351 (Pending)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

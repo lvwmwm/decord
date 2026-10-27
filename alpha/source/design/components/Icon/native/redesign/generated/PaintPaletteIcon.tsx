@@ -1,14 +1,14 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16619
+// Function ID: 16620
 // Name: PaintPaletteIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16619, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16620, 5668, 2]
 
-// Module 16618 (PaintPaletteIcon)
+// Module 16619 (PaintPaletteIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 16619 */;
+import AssetRegistry from "AssetRegistry" /* 16620 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

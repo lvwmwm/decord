@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12219
+// Function ID: 12220
 // Name: TagGroupShared
 // Dependencies: [2]
 // Exports: getDefaultTagGroupSize, getTagIconSize, getTagTextVariant
 
-// Module 12270 (TagGroupShared)
+// Module 12219 (TagGroupShared)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { xs: "text-xs/normal", sm: "text-sm/normal", md: "text-md/normal" };

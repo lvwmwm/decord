@@ -1,9 +1,9 @@
-// Module ID: 11731
-// Function ID: 11732
+// Module ID: 11732
+// Function ID: 11733
 // Name: PanGestureAnimations
 // Dependencies: [1202, 5247, 5206, 558, 576, 5052, 5297, 2]
 
-// Module 11731 (PanGestureAnimations)
+// Module 11732 (PanGestureAnimations)
 import native from "native" /* 1202 */;
 import timing from "timing" /* 5206 */;
 import spring from "spring" /* 5247 */;

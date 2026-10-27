@@ -1,10 +1,10 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 18925
+// Function ID: 18926
 // Name: NotifSettingsProtoManager
-// Dependencies: [17334, 7214, 2]
+// Dependencies: [17335, 7214, 2]
 
-// Module 18915 (NotifSettingsProtoManager)
-import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17334 */;
+// Module 18925 (NotifSettingsProtoManager)
+import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17335 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 

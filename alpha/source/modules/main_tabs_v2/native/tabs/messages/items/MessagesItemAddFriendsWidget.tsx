@@ -1,9 +1,9 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17524
+// Function ID: 17525
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1087, 21, 14000, 587, 4971, 8866, 5662, 1128, 9050, 9061, 558, 576, 5151, 5234, 6908, 15096, 17524, 2]
+// Dependencies: [5, 19, 17, 1087, 21, 14002, 587, 4971, 8866, 5662, 1128, 9050, 9061, 558, 576, 5151, 5234, 6908, 15097, 17525, 2]
 
-// Module 17523 (MessagesItemAddFriendsWidget)
+// Module 17524 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import RootNavigationRef from "RootNavigationRef" /* 5151 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Pressables from "Pressables" /* 6908 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8866 */;
-import IconActionButton from "IconActionButton" /* 14000 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15096 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17524 */;
+import IconActionButton from "IconActionButton" /* 14002 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15097 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17525 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,7 +48,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -190,7 +190,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -224,7 +224,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = 3;

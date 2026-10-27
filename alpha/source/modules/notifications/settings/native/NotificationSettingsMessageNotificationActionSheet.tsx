@@ -1,9 +1,9 @@
-// Module ID: 19342
-// Function ID: 19343
+// Module ID: 19352
+// Function ID: 19353
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 19340, 5234, 1128, 6984, 6985, 5265, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 19350, 5234, 1128, 6984, 6985, 5265, 2]
 
-// Module 19342 (NotificationSettingsMessageNotificationActionSheet)
+// Module 19352 (NotificationSettingsMessageNotificationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5234 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
 import TableRadioRow4 from "TableRadioRow" /* 6984 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 6985 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 19340 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 19350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

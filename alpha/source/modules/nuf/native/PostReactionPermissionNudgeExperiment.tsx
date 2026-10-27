@@ -1,9 +1,9 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13323
+// Function ID: 13324
 // Name: PostReactionPermissionNudgeExperiment
 // Dependencies: [1455, 2]
 
-// Module 13320 (PostReactionPermissionNudgeExperiment)
+// Module 13323 (PostReactionPermissionNudgeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

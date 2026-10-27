@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f107979 = (item) => null != item;
+const f108036 = (item) => null != item;
 ({ getFrameHostWindowKey: closure_4, isLaunched: hasOwnProperty, makeFrameId: metroRequire, OVERLAY_SURFACE: metroImportDefault } = FramesConstants);
 let c8 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -91,7 +91,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f107979);
+  return mapped.filter(f108036);
 };
 export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -114,7 +114,7 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f107979);
+  const found = mapped.filter(f108036);
   let found1 = found.find(closure_5);
   if (found1 == null) {
     found1 = found[0];

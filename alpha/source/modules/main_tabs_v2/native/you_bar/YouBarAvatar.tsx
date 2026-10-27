@@ -1,9 +1,9 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17834
+// Function ID: 17835
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4972, 6498, 1392, 16443, 1087, 21, 4971, 587, 558, 576, 504, 1202, 5037, 5052, 6782, 9406, 5247, 5252, 9405, 8646, 5212, 7490, 2002, 5297, 2]
+// Dependencies: [5, 32, 19, 17, 4972, 6498, 1392, 16444, 1087, 21, 4971, 587, 558, 576, 504, 1202, 5037, 5052, 6782, 9406, 5247, 5252, 9405, 8646, 5212, 7490, 2002, 5297, 2]
 
-// Module 17833 (YouBarAvatar)
+// Module 17834 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
@@ -19,7 +19,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
 import UserStore from "UserStore" /* 1392 */;
-import YouBarConstants from "YouBarConstants" /* 16443 */;
+import YouBarConstants from "YouBarConstants" /* 16444 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -876,7 +876,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -908,7 +908,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_3(false);
           isAvatarPressed = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         isAvatarPressed = 3;

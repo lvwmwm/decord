@@ -1,9 +1,9 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 14003
+// Function ID: 14004
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6776, 558, 576, 5626, 11887, 7346, 1128, 10765, 11788, 13846, 11537, 5686, 8668, 9971, 14002, 2]
+// Dependencies: [19, 6776, 558, 576, 5626, 11776, 7346, 1128, 10765, 12270, 13848, 11538, 5686, 8668, 9971, 14004, 2]
 
-// Module 14001 (useAppChannelOverflowMenuItems)
+// Module 14003 (useAppChannelOverflowMenuItems)
 import intl5 from "intl" /* 1128 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
@@ -11,10 +11,10 @@ import FramesConstants from "FramesConstants" /* 6776 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import FlagIcon from "FlagIcon" /* 9971 */;
 import restartFrames from "restartFrames" /* 10765 */;
-import DoorExitIcon from "DoorExitIcon" /* 11537 */;
-import RefreshIcon from "RefreshIcon" /* 11788 */;
-import closeFrameDefault from "closeFrame" /* 13846 */;
-import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 14002 */;
+import DoorExitIcon from "DoorExitIcon" /* 11538 */;
+import RefreshIcon from "RefreshIcon" /* 12270 */;
+import closeFrameDefault from "closeFrame" /* 13848 */;
+import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 14004 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     if (cResult[1] === application_id.id) {
       tmp5 = cResult[2];
     }
-    const tmp7 = application_id(11887)(application_id, tmp5);
+    const tmp7 = application_id(11776)(application_id, tmp5);
     dependencyMap = tmp7;
     const tmpResult = require("useAppChannelApplication");
     const appChannelApplication = tmpResult.useAppChannelApplication(application_id);
@@ -225,7 +225,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: application_id.id, guildId: application_id.guild_id };
     return obj;
   }, items);
-  const tmp3 = application_id(11887)(application_id, memo);
+  const tmp3 = application_id(11776)(application_id, memo);
   dependencyMap = tmp3;
   let obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(application_id);

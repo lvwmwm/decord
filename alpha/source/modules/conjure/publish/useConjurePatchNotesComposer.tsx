@@ -1,14 +1,14 @@
-// Module ID: 12384
-// Function ID: 12385
+// Module ID: 12367
+// Function ID: 12368
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4901, 4976, 504, 7345, 9662, 12385, 10796, 7755, 7566, 2]
+// Dependencies: [5, 32, 19, 4901, 4976, 504, 7345, 9662, 12368, 10796, 7755, 7566, 2]
 // Exports: default
 
-// Module 12384 (useConjurePatchNotesComposer)
+// Module 12367 (useConjurePatchNotesComposer)
 import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12385 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12368 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -119,7 +119,7 @@ export default function useConjurePatchNotesComposer(projectId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -147,7 +147,7 @@ export default function useConjurePatchNotesComposer(projectId) {
               c2 = 0;
               if (closure_129_0.cancelled) {
                 c4 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } else {
                 closure_1_10(false);
                 closure_1_11(true);
@@ -180,7 +180,7 @@ export default function useConjurePatchNotesComposer(projectId) {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp38) {
             if (0 === c2) {
@@ -235,7 +235,7 @@ export default function useConjurePatchNotesComposer(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

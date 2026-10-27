@@ -1,9 +1,9 @@
-// Module ID: 13387
-// Function ID: 13388
+// Module ID: 13390
+// Function ID: 13391
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 4827, 4823, 4901, 4903, 6771, 4913, 1392, 12529, 1087, 21, 558, 576, 13172, 504, 1388, 1128, 5604, 5711, 1114, 11, 13355, 2]
+// Dependencies: [19, 4827, 4823, 4901, 4903, 6771, 4913, 1392, 12512, 1087, 21, 558, 576, 13175, 504, 1388, 1128, 5604, 5711, 1114, 11, 13358, 2]
 
-// Module 13387 (ChatInputGuardReadonly)
+// Module 13390 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,8 +13,8 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import ChatInputConstants from "ChatInputConstants" /* 12529 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13355 */;
+import ChatInputConstants from "ChatInputConstants" /* 12512 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13358 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import PermissionStore from "PermissionStore" /* 4903 */;

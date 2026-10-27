@@ -1,15 +1,15 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12968
+// Function ID: 12969
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 12953, 21, 4971, 587, 6039, 1128, 6365, 6364, 558, 576, 504, 5234, 6362, 2]
+// Dependencies: [17, 12956, 21, 4971, 587, 6039, 1128, 6365, 6364, 558, 576, 504, 5234, 6362, 2]
 
-// Module 12965 (CheckpointCharacterStage)
+// Module 12968 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CheckpointTrait from "CheckpointTrait" /* 6039 */;
 import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6364 */;
 import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6365 */;
-import CheckpointStore from "CheckpointStore" /* 12953 */;
+import CheckpointStore from "CheckpointStore" /* 12956 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

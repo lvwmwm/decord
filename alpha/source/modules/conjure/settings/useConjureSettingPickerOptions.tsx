@@ -1,13 +1,13 @@
-// Module ID: 11834
-// Function ID: 11835
+// Module ID: 12182
+// Function ID: 12183
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4901, 4913, 5026, 1392, 6773, 558, 576, 7345, 504, 11835, 5604, 5989, 2]
+// Dependencies: [19, 4901, 4913, 5026, 1392, 6773, 558, 576, 7345, 504, 12183, 5604, 5989, 2]
 // Exports: conjureSettingPickedIds, withPickCap, withSavedPicks
 
-// Module 11834 (useConjureSettingPickerOptions)
+// Module 12182 (useConjureSettingPickerOptions)
 import NicknameUtils from "NicknameUtils" /* 5989 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
-import conjureGuildPickerSources from "conjureGuildPickerSources" /* 11835 */;
+import conjureGuildPickerSources from "conjureGuildPickerSources" /* 12183 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4901 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -100,15 +100,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp11 = null;
-    const useConjureGuildRoles = tmp(11835).useConjureGuildRoles;
-    tmp(11835);
+    const useConjureGuildRoles = tmp(12183).useConjureGuildRoles;
+    tmp(12183);
     if ("role" === type.type) {
       tmp11 = arg0;
     }
     const conjureGuildRoles = useConjureGuildRoles(tmp11);
     let tmp13 = null;
-    const useConjureGuildMemberUsers = tmp(11835).useConjureGuildMemberUsers;
-    tmp(11835);
+    const useConjureGuildMemberUsers = tmp(12183).useConjureGuildMemberUsers;
+    tmp(12183);
     if ("user" === type.type) {
       tmp13 = arg0;
     }
@@ -239,8 +239,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(11835).useConjureGuildMemberUsers;
-  tmp(11835);
+  const useConjureGuildMemberUsers = tmp(12183).useConjureGuildMemberUsers;
+  tmp(12183);
   if ("user" === type.type) {
     tmp8 = arg0;
   }

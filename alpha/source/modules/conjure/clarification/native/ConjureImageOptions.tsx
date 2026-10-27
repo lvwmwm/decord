@@ -1,16 +1,16 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12460
+// Function ID: 12461
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 11832, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12473, 6905, 7959, 5689, 12478, 11758, 8751, 12480, 5244, 11814, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 12180, 8552, 1128, 3830, 5234, 5669, 5039, 6901, 6988, 12456, 6905, 7959, 5689, 12461, 12178, 8751, 12463, 5244, 12163, 2]
 
-// Module 12477 (clarification/ConjureImageOptions)
+// Module 12460 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import react_native from "react-native" /* 5039 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import openMediaModal from "openMediaModal" /* 8751 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11832 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12180 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -48,8 +48,8 @@ const Card_Card = tmp2(6905);
 const FormRadio = tmp2(6988);
 const IconButton2 = tmp2(7959);
 const ImageWarningIcon2 = tmp(8552);
-const ConjureImageOptions2 = tmp2(12473);
-const MaximizeIcon2 = tmp2(12478);
+const ConjureImageOptions2 = tmp2(12456);
+const MaximizeIcon2 = tmp2(12461);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -1333,7 +1333,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1373,7 +1373,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp15) {
         c3 = 3;

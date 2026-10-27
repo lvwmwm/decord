@@ -1,9 +1,9 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13602
+// Function ID: 13603
 // Name: SkipHeaderButton
 // Dependencies: [19, 21, 4971, 587, 558, 576, 1128, 9699, 2]
 
-// Module 13600 (SkipHeaderButton)
+// Module 13602 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

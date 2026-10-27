@@ -94,7 +94,7 @@ export const useOrderSigning = function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -124,7 +124,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

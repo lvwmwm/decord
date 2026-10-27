@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14503
+// Function ID: 14504
 // Name: InteractionStatus
 // Dependencies: [8599, 1128, 2]
 // Exports: createInteractionStatus
 
-// Module 14502 (InteractionStatus)
+// Module 14503 (InteractionStatus)
 import intl5 from "intl" /* 1128 */;
 import InteractionUtils from "InteractionUtils" /* 8599 */;
 import size from "module_2" /* 2 */;

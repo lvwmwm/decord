@@ -1,11 +1,11 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 12362
+// Function ID: 12363
 // Name: conjureSettingsSummary
-// Dependencies: [1128, 3830, 12376, 2]
+// Dependencies: [1128, 3830, 12359, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 12379 (conjureSettingsSummary)
-import intl5 from "intl" /* 1128 */;
+// Module 12362 (conjureSettingsSummary)
+import intl7 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
     } else {
       let mapped;
       const obj = { key, text: formatToPlainString(prop, obj2) };
-      let intl = intl5.intl;
+      let intl = intl7.intl;
       formatToPlainString = intl.formatToPlainString;
       const _Array = Array;
       obj2 = { label: found.label, value: stringResult };
@@ -47,12 +47,12 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
       }
       const type = found.type;
       if ("secret" === type) {
-        const intl4 = tmp3(1128).intl;
-        stringResult = intl4.string(tmp5(3830).CJq1rY);
+        const intl6 = tmp3(1128).intl;
+        stringResult = intl6.string(tmp5(3830).CJq1rY);
       } else if ("checkbox" === type) {
         let nXtpn3;
-        const intl3 = tmp3(1128).intl;
-        const string = intl3.string;
+        const intl5 = tmp3(1128).intl;
+        const string = intl5.string;
         if (true === ("secret" === found.type || tmp.values[key])) {
           nXtpn3 = tmp5(3830).nXtpn3;
         } else {
@@ -90,12 +90,20 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
           return combined;
         });
         stringResult = mapped2.join(", ");
+      } else if ("game" === type) {
+        let stringResult1;
+        if (0 === mapped.length) {
+          const intl4 = tmp3(1128).intl;
+          stringResult1 = intl4.string(tmp5(3830).nEv677);
+        } else {
+          const intl3 = tmp3(1128).intl;
+          stringResult1 = intl3.string(tmp5(3830).Fw9G9A);
+        }
+        stringResult = stringResult1;
       } else {
         if ("role" !== type) {
           if ("user" !== type) {
-            if ("game" !== type) {
-              stringResult = mapped.join(", ");
-            }
+            stringResult = mapped.join(", ");
           }
         }
         const intl2 = tmp3(1128).intl;

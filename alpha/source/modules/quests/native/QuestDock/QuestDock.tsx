@@ -1,9 +1,9 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16524
+// Function ID: 16525
 // Name: QuestDock
-// Dependencies: [5, 32, 109, 19, 17, 16438, 6710, 16440, 1087, 1098, 21, 4971, 587, 558, 576, 1384, 16468, 16437, 16441, 16444, 5267, 5052, 8759, 1633, 16445, 5252, 16524, 5247, 16439, 5248, 1128, 7168, 16525, 16526, 16527, 16528, 5968, 5584, 6713, 9570, 16529, 6468, 6473, 6717, 7801, 16522, 504, 9565, 9571, 5037, 16436, 1267, 16530, 16531, 16538, 16539, 16541, 14141, 16544, 16545, 16551, 16554, 16556, 16557, 7038, 16559, 2]
+// Dependencies: [5, 32, 109, 19, 17, 16439, 6710, 16441, 1087, 1098, 21, 4971, 587, 558, 576, 1384, 16469, 16438, 16442, 16445, 5267, 5052, 8759, 1633, 16446, 5252, 16525, 5247, 16440, 5248, 1128, 7168, 16526, 16527, 16528, 16529, 5968, 5584, 6713, 9570, 16530, 6468, 6473, 6717, 7801, 16523, 504, 9565, 9571, 5037, 16437, 1267, 16531, 16532, 16539, 16540, 16542, 14143, 16545, 16546, 16552, 16555, 16557, 16558, 7038, 16560, 2]
 
-// Module 16523 (QuestDock)
+// Module 16524 (QuestDock)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -21,24 +21,24 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 7038 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
 import QuestActionCreators from "QuestActionCreators" /* 9571 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14141 */;
-import QuestHooks from "QuestHooks" /* 16436 */;
-import QuestDockUtils from "QuestDockUtils" /* 16439 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16441 */;
-import reactDefault from "react" /* 16522 */;
-import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 16551 */;
-import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 16554 */;
-import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 16556 */;
-import useNoFillDecisionDefault from "useNoFillDecision" /* 16557 */;
-import NoFillQuestDockDefault from "NoFillQuestDock" /* 16559 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14143 */;
+import QuestHooks from "QuestHooks" /* 16437 */;
+import QuestDockUtils from "QuestDockUtils" /* 16440 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16442 */;
+import reactDefault from "react" /* 16523 */;
+import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 16552 */;
+import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 16555 */;
+import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 16557 */;
+import useNoFillDecisionDefault from "useNoFillDecision" /* 16558 */;
+import NoFillQuestDockDefault from "NoFillQuestDock" /* 16560 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockStore from "QuestDockStore" /* 16438 */;
+import QuestDockStore from "QuestDockStore" /* 16439 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
-import QuestDockConstants from "QuestDockConstants" /* 16440 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -1063,7 +1063,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -1129,7 +1129,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1169,14 +1169,14 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
               let FAILED;
               tmp = value;
               const tmp7 = closure_2_6;
-              if (tmp.every(function() { /* body not rendered: F163523 */ })) {
+              if (tmp.every(function() { /* body not rendered: F163626 */ })) {
                 FAILED = tmp10.SUCCEEDED;
               } else {
                 FAILED = tmp10.FAILED;
               }
               tmp7(FAILED);
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             c3 = 3;
@@ -1230,7 +1230,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -1297,7 +1297,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1344,7 +1344,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQue
               }
               tmp7(FAILED);
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             c3 = 3;
@@ -1811,11 +1811,11 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
   quest = quest.quest;
   let obj2 = quest(9570);
   const questBarImpressionSurvey = obj2.useQuestBarImpressionSurvey(quest);
-  const obj3 = quest(16437);
+  const obj3 = quest(16438);
   const questDockAppThemedBackgroundColor = obj3.useQuestDockAppThemedBackgroundColor();
-  const obj4 = quest(16436);
+  const obj4 = quest(16437);
   const staticUrl = obj4.useQuestDockHeroAsset(quest).staticUrl;
-  const obj5 = quest(16436);
+  const obj5 = quest(16437);
   const questGameLogotypeAssetUrl = obj5.useQuestGameLogotypeAssetUrl(quest);
   const userStatus = quest.userStatus;
   let enrolledAt;
@@ -1842,11 +1842,11 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
     DARK = ThemeTypes.DARK;
   }
   if (cResult[2] !== (null != enrolledAt)) {
-    const tmp14Result = closure_24(questBarImpressionSurvey(null != enrolledAt ? 16530 : 16531), {});
-    const tmp14Result3 = closure_24(questBarImpressionSurvey(null != enrolledAt ? 16538 : 16539), {});
+    const tmp14Result = closure_24(questBarImpressionSurvey(null != enrolledAt ? 16531 : 16532), {});
+    const tmp14Result3 = closure_24(questBarImpressionSurvey(null != enrolledAt ? 16539 : 16540), {});
     let tmp14Result4 = null;
     if (null == enrolledAt) {
-      tmp14Result4 = tmp14(tmp15(16541), {});
+      tmp14Result4 = tmp14(tmp15(16542), {});
     }
     cResult[2] = null != enrolledAt;
     cResult[3] = tmp14Result;
@@ -1938,13 +1938,13 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
   quest = quest.quest;
   let obj = quest(9570);
   const onImpression = obj.useQuestBarImpressionSurvey(quest);
-  let obj2 = quest(16437);
+  let obj2 = quest(16438);
   const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();
-  const obj3 = quest(16436);
+  const obj3 = quest(16437);
   const staticUrl = obj3.useQuestDockHeroAsset(quest).staticUrl;
   const userStatus = quest.userStatus;
   let enrolledAt;
-  const obj4 = quest(16436);
+  const obj4 = quest(16437);
   const questGameLogotypeAssetUrl = obj4.useQuestGameLogotypeAssetUrl(quest);
   if (userStatus != null) {
     enrolledAt = userStatus.enrolledAt;
@@ -1964,8 +1964,8 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
     theme: DARK,
     backgroundColor: questDockAppThemedBackgroundColor,
     expandedHeight,
-    collapsedContent: closure_24(onImpression(null != enrolledAt ? 16530 : 16531), {}),
-    expandedContent: closure_24(onImpression(null != enrolledAt ? 16538 : 16539), {}),
+    collapsedContent: closure_24(onImpression(null != enrolledAt ? 16531 : 16532), {}),
+    expandedContent: closure_24(onImpression(null != enrolledAt ? 16539 : 16540), {}),
     backgroundContent: tmp7Result,
     renderImpressionTracker(arg0) {
       let children;
@@ -1980,7 +1980,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
       return closure_24(closure_45, obj);
     }
   };
-  const QuestDockQuestProvider = tmp(16468).QuestDockQuestProvider;
+  const QuestDockQuestProvider = tmp(16469).QuestDockQuestProvider;
   str = "insetHeader";
   tmp8 = closure_53;
   if (null != enrolledAt) {
@@ -1992,7 +1992,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQu
   }
   tmp7Result = null;
   if (null == enrolledAt) {
-    tmp7Result = tmp7(tmp11(16541), {});
+    tmp7Result = tmp7(tmp11(16542), {});
   }
   return closure_24(QuestDockQuestProvider, obj5);
 });
@@ -2007,13 +2007,13 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   let obj = bounty(576);
   const cResult = obj.c(22);
   bounty = bounty.bounty;
-  let obj2 = bounty(16437);
+  let obj2 = bounty(16438);
   const bountyPreviewImageUrl = obj2.useBountyPreviewImageUrl(bounty);
-  const obj3 = bounty(16437);
+  const obj3 = bounty(16438);
   const questDockAppThemedBackgroundColor = obj3.useQuestDockAppThemedBackgroundColor();
-  const obj4 = bounty(16544);
+  const obj4 = bounty(16545);
   const questDockBountySmokeCollapsedPlaceholderUrl = obj4.useQuestDockBountySmokeCollapsedPlaceholderUrl();
-  const obj5 = bounty(16545);
+  const obj5 = bounty(16546);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj5.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   if (cResult[0] !== bounty.id) {
     const fn = function o(asset_id) {
@@ -2096,8 +2096,8 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
                   const obj7 = { bounty, children: tmp21 };
                   cResult[19] = bounty;
                   cResult[20] = tmp21;
-                  cResult[21] = closure_24(bounty(16468).QuestDockBountyProvider, obj7);
-                  const tmp25 = closure_24(bounty(16468).QuestDockBountyProvider, obj7);
+                  cResult[21] = closure_24(bounty(16469).QuestDockBountyProvider, obj7);
+                  const tmp25 = closure_24(bounty(16469).QuestDockBountyProvider, obj7);
                 }
               }
             }
@@ -2121,13 +2121,13 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   tmp21 = tmp22;
 }) : (function QuestDockBountyContent(bounty) {
   bounty = bounty.bounty;
-  let obj = bounty(16437);
+  let obj = bounty(16438);
   const bountyPreviewImageUrl = obj.useBountyPreviewImageUrl(bounty);
-  let obj2 = bounty(16437);
+  let obj2 = bounty(16438);
   const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();
-  const obj3 = bounty(16544);
+  const obj3 = bounty(16545);
   const questDockBountySmokeCollapsedPlaceholderUrl = obj3.useQuestDockBountySmokeCollapsedPlaceholderUrl();
-  const obj4 = bounty(16545);
+  const obj4 = bounty(16546);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj4.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   const obj5 = { bounty, children: closure_24(closure_53, obj6) };
   obj6 = {
@@ -2161,7 +2161,7 @@ let closure_55 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
       return closure_24(closure_45, obj);
     }
   };
-  const QuestDockBountyProvider = bounty(16468).QuestDockBountyProvider;
+  const QuestDockBountyProvider = bounty(16469).QuestDockBountyProvider;
   return closure_24(QuestDockBountyProvider, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

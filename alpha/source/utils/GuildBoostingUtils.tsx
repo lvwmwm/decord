@@ -47,8 +47,8 @@ let tmp7;
 const GlobalUtils = tmp2(1388);
 const _modDef3250 = tmp7(3250);
 const FileSizeUtils = tmp2(6379);
-const f100796 = (isAvailable) => isAvailable.isAvailable();
-const f100797 = (endsAt) => null != endsAt.endsAt;
+const f100846 = (isAvailable) => isAvailable.isAvailable();
+const f100847 = (endsAt) => null != endsAt.endsAt;
 function getGuildTierFromGuild(arg0) {
   const guild = GuildStore.getGuild(arg0);
   let premiumTier;
@@ -516,7 +516,7 @@ export const isTierUnlocked = function isTierUnlocked(premiumTier, arg1) {
 export const getAvailableGuildBoostSlots = function getAvailableGuildBoostSlots(boostSlots) {
   const obj = module_12;
   const values = obj.values(boostSlots);
-  return values.filter(f100796);
+  return values.filter(f100846);
 };
 export const generateBlockGuildSubscriptionPurchasesNode = function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   fractionalState = fractionalState.fractionalState;
@@ -532,7 +532,7 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
   obj3 = module_12;
   const values = obj3.values(boostSlots);
   let prop;
-  const found = values.filter(f100796);
+  const found = values.filter(f100846);
   if (premiumTypeSubscription != null) {
     prop = premiumTypeSubscription.isPausedOrPausePending;
   }
@@ -636,7 +636,7 @@ export const isInGracePeriod = function isInGracePeriod(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100797).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100847).length);
   }
   return num > 0;
 };
@@ -659,7 +659,7 @@ export const appliedGuildBoostsRequiredForPerks = function appliedGuildBoostsReq
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100797).length);
+    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100847).length);
   }
 };
 export const GuildTierSubscriptionsOrdered = items1;
@@ -682,7 +682,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, a
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100797).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f100847).length);
   }
   if (num > 0) {
     const sorted = arr.sort((endsAt, endsAt2) => {

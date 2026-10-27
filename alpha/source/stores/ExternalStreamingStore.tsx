@@ -1,9 +1,9 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11200
+// Function ID: 11201
 // Name: ExternalStreamingStore
 // Dependencies: [5, 6500, 5026, 1087, 1104, 1297, 7274, 584, 8620, 6502, 1357, 504, 2]
 
-// Module 11199 (ExternalStreamingStore)
+// Module 11200 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;

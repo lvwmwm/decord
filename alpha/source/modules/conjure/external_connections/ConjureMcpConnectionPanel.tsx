@@ -1,9 +1,9 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12207
+// Function ID: 12208
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 558, 576, 12259, 2]
+// Dependencies: [32, 5, 19, 558, 576, 12208, 2]
 
-// Module 12258 (ConjureMcpConnectionPanel)
+// Module 12207 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ class McpConnectionPanel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -97,7 +97,7 @@ class McpConnectionPanel {
             c2 = 0;
             if (closure_129_1.isStale(c1)) {
               c4 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             } else {
               connection = null;
               const update2 = closure_129_1.update;
@@ -138,7 +138,7 @@ class McpConnectionPanel {
               closure_129_1.armTimer(connection);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp48) {
           if (0 === c2) {

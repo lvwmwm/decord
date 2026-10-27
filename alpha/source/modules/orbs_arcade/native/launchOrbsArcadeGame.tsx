@@ -1,19 +1,19 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16420
+// Function ID: 16421
 // Name: launchOrbsArcadeGame
-// Dependencies: [5, 2045, 16394, 1087, 6776, 1128, 5663, 16399, 6375, 6809, 11394, 16400, 10767, 5210, 5151, 10766, 584, 2]
+// Dependencies: [5, 2045, 16395, 1087, 6776, 1128, 5663, 16400, 6375, 6809, 11395, 16401, 10767, 5210, 5151, 10766, 584, 2]
 // Exports: default
 
-// Module 16419 (launchOrbsArcadeGame)
+// Module 16420 (launchOrbsArcadeGame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16399 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16400 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16394 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _ensureEnrollment() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -136,7 +136,7 @@ obj = function _launchGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -170,13 +170,13 @@ obj = function _launchGame() {
                 }
               }
               c6 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c5) {
             c4 = 0;
             closure_131_9();
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else if (2 === c5) {
             if (arg0 === 1) {
               c6 = 3;
@@ -215,7 +215,7 @@ obj = function _launchGame() {
           } else if (4 === c5) {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -240,7 +240,7 @@ obj = function _launchGame() {
             obj2.leaveFrame(frameId);
             closure_131_9();
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
           c4 = 0;
           const obj12 = closure_131_0(closure_131_2[10]);
@@ -288,7 +288,7 @@ obj = function _launchOrbsArcadeGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -338,7 +338,7 @@ obj = function _launchOrbsArcadeGame() {
             obj.dispatch(obj12);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp28) {
           closure_4 = tmp28;
           if (0 === c5) {

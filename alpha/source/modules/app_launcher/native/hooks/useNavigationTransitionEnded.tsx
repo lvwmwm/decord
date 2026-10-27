@@ -1,9 +1,9 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12011
+// Function ID: 12012
 // Name: useNavigationTransitionEnded
 // Dependencies: [32, 19, 1504, 558, 576, 1506, 2]
 
-// Module 12120 (useNavigationTransitionEnded)
+// Module 12011 (useNavigationTransitionEnded)
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Link from "Link" /* 1506 */;

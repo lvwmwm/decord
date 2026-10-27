@@ -1,10 +1,10 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 10906
+// Function ID: 10907
 // Name: participantHasVideo
 // Dependencies: [502, 2014, 5632, 5718, 558, 576, 504, 2]
 // Exports: default
 
-// Module 10905 (participantHasVideo)
+// Module 10906 (participantHasVideo)
 import Constants from "Constants" /* 5718 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;

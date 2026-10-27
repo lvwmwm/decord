@@ -1,9 +1,9 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 12793
+// Function ID: 12794
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1392, 4885, 1087, 21, 4971, 558, 576, 8334, 10036, 1267, 5263, 5989, 12789, 5663, 1128, 5234, 5978, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1392, 4885, 1087, 21, 4971, 558, 576, 8334, 10036, 1267, 5263, 5989, 12792, 5663, 1128, 5234, 5978, 2]
 
-// Module 12790 (GuildEnableCommunicationAlert)
+// Module 12793 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
@@ -154,7 +154,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
             intl = tmp3(c2[19]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;

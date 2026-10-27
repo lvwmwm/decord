@@ -1,18 +1,18 @@
-// Module ID: 12839
-// Function ID: 12840
+// Module ID: 12842
+// Function ID: 12843
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 5234, 504, 12833, 1505, 7899, 12838, 12834, 7897, 7221, 1128, 5244, 6924, 12840, 1275, 12860, 12862, 12864, 12866, 12867, 5599, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 7922, 7898, 1087, 21, 4971, 587, 558, 576, 5234, 504, 12836, 1505, 7899, 12841, 12837, 7897, 7221, 1128, 5244, 6924, 12843, 1275, 12863, 12865, 12867, 12869, 12870, 5599, 7095, 2]
 
-// Module 12839 (AppealIngestionModal)
+// Module 12842 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12838 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12840 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12860 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12862 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12841 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12843 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12863 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12865 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           closure_2 = tmp25;
           if (0 === c3) {
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -668,7 +668,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           navigation = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

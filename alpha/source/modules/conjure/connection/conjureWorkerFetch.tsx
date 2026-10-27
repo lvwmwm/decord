@@ -30,7 +30,7 @@ let obj = function _fetchConjureWorker() {
         let obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ let obj = function _fetchConjureWorker() {
             };
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else {
           let closure_4;

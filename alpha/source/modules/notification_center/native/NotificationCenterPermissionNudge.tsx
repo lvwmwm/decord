@@ -1,18 +1,18 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17864
+// Function ID: 17865
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1087, 4820, 13310, 21, 4971, 587, 558, 576, 1267, 13311, 10874, 5234, 1128, 5244, 6931, 6908, 16839, 7496, 4807, 2]
+// Dependencies: [32, 19, 17, 1087, 4820, 13313, 21, 4971, 587, 558, 576, 1267, 13314, 10875, 5234, 1128, 5244, 6931, 6908, 16840, 7496, 4807, 2]
 
-// Module 17855 (NotificationCenterPermissionNudge)
+// Module 17864 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16839 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13310 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13313 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -116,7 +116,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   const container = tmp4.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    const BellSlashIcon = tmp(10874).BellSlashIcon;
+    const BellSlashIcon = tmp(10875).BellSlashIcon;
     const tmp13 = closure_14(BellSlashIcon, obj2);
     cResult[5] = tmp13;
     tmp10 = tmp13;
@@ -254,7 +254,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(10874).BellSlashIcon;
+  BellSlashIcon = onDismiss(10875).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "text-md/semibold", color: "text-default", children: intl.string(onDismiss(1128).t.G6YBna) };

@@ -1,9 +1,9 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16024
+// Function ID: 16025
 // Name: SettingsAgeGroupResetAlert
 // Dependencies: [5, 21, 558, 576, 1505, 6661, 5910, 5662, 1128, 3090, 5914, 5914, 2]
 
-// Module 16023 (SettingsAgeGroupResetAlert)
+// Module 16024 (SettingsAgeGroupResetAlert)
 import _modDef3090 from "module_3090" /* 3090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
             navigation.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c2) {
@@ -190,7 +190,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -237,7 +237,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
             closure_128_0.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c2) {

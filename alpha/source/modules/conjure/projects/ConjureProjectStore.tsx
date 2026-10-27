@@ -28,13 +28,15 @@ function handleProjectUpsert(project) {
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
+let c8 = null;
+const map3 = new Map();
 let set = new Set();
-let c9 = false;
-let maxProjects = null;
 let c11 = false;
+let maxProjects = null;
+let c13 = false;
 let obj = null;
 const set1 = new Set();
-const map3 = new Map();
+const map4 = new Map();
 let success = "unattempted";
 const Store = get_initializedDefault.Store;
 class ConjureProjectStore extends Store {
@@ -46,13 +48,13 @@ class ConjureProjectStore extends Store {
     return arr.filter(isProjectOwner);
   }
   hasFetchedOwnedProjects() {
-    return c9;
+    return c11;
   }
   getMaxProjects() {
     return maxProjects;
   }
   hasFetchedProjectLimit() {
-    return c11;
+    return c13;
   }
   getProject(arg0) {
     let value = map.get(arg0);
@@ -102,6 +104,16 @@ class ConjureProjectStore extends Store {
     }
     return value;
   }
+  getGlobalSelectedProjectId() {
+    return c8;
+  }
+  getProjectLoadStatus(projectId) {
+    let value = map3.get(projectId);
+    if (value == null) {
+      value = null;
+    }
+    return value;
+  }
   getProjectsFetchState() {
     return obj;
   }
@@ -109,7 +121,7 @@ class ConjureProjectStore extends Store {
     return set1.has(id);
   }
   getGuildProjectsFetchState(guildId) {
-    let str = map3.get(guildId);
+    let str = map4.get(guildId);
     if (str == null) {
       str = "unattempted";
     }
@@ -134,13 +146,17 @@ obj = {
     if (0 === map.size) {
       if (0 === map1.size) {
         if (0 === map2.size) {
-          if (0 === set.size) {
-            if (0 === set1.size) {
-              if (null == obj) {
-                if (null == maxProjects) {
-                  const tmp8 = c11;
-                  if (!tmp8) {
-                    return false;
+          if (null == c8) {
+            if (0 === map3.size) {
+              if (0 === set.size) {
+                if (0 === set1.size) {
+                  if (null == obj) {
+                    if (null == maxProjects) {
+                      const tmp10 = c13;
+                      if (!tmp10) {
+                        return false;
+                      }
+                    }
                   }
                 }
               }
@@ -152,19 +168,21 @@ obj = {
     obj.clear();
     map1.clear();
     map2.clear();
+    c8 = null;
+    map3.clear();
     set.clear();
     set1.clear();
-    map3.clear();
+    map4.clear();
     obj = null;
-    c9 = false;
+    c11 = false;
     success = "unattempted";
     maxProjects = null;
-    c11 = false;
+    c13 = false;
   },
   CONJURE_PROJECTS_FETCH_START: function handleProjectsFetchStart(guildId) {
     guildId = guildId.guildId;
     if (null != guildId) {
-      const result = map3.set(guildId, "loading");
+      const result = map4.set(guildId, "loading");
     } else {
       success = "loading";
     }
@@ -228,17 +246,17 @@ obj = {
     }
     if (null != guildId) {
       set1.add(guildId);
-      const result1 = map3.set(guildId, "success");
+      const result1 = map4.set(guildId, "success");
     }
     pruneProjectScopedState();
-    c9 = true;
+    c11 = true;
     success = "success";
     ({ type: "success", fetchedAt: Date.now() });
   },
   CONJURE_PROJECTS_FETCH_FAIL: function handleProjectsFetchFail(guildId) {
     guildId = guildId.guildId;
     if (null != guildId) {
-      const result = map3.set(guildId, "error");
+      const result = map4.set(guildId, "error");
     } else {
       success = "error";
     }
@@ -246,7 +264,7 @@ obj = {
   },
   CONJURE_PROJECT_LIMIT_FETCH_SETTLE: function handleProjectLimitFetchSettle(maxProjects) {
     maxProjects = maxProjects.maxProjects;
-    c11 = true;
+    c13 = true;
   },
   CONJURE_PROJECT_CREATE_SUCCESS: handleProjectUpsert,
   CONJURE_PROJECT_UPDATE_SUCCESS: handleProjectUpsert,
@@ -270,6 +288,10 @@ obj = {
       }
       continue;
     }
+    if (c8 === projectId) {
+      c8 = null;
+    }
+    map3.delete(projectId);
   },
   CONJURE_PROJECT_DELETE_FAIL: function handleProjectDeleteFail(projectId) {
     return set.delete(projectId.projectId);
@@ -288,6 +310,37 @@ obj = {
       map2.delete(guildId);
     } else {
       const result = obj.set(guildId, projectId);
+    }
+  },
+  CONJURE_PROJECT_GLOBAL_SELECT: function handleProjectGlobalSelect(projectId) {
+    projectId = projectId.projectId;
+    if (c8 === projectId) {
+      return false;
+    } else {
+      c8 = projectId;
+    }
+  },
+  CONJURE_PROJECT_GLOBAL_CLEAR: function handleProjectGlobalClear(projectId) {
+    if (c8 !== projectId.projectId) {
+      return false;
+    } else {
+      c8 = null;
+    }
+  },
+  CONJURE_PROJECT_LOAD_STATUS: function handleProjectLoadStatus(arg0) {
+    let projectId;
+    let status;
+    ({ projectId, status } = arg0);
+    let value = map3.get(projectId);
+    if (value == null) {
+      value = null;
+    }
+    if (value === status) {
+      return false;
+    } else if (null == status) {
+      map3.delete(projectId);
+    } else {
+      const result = obj.set(projectId, status);
     }
   }
 };

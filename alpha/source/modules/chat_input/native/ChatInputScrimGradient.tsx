@@ -1,9 +1,9 @@
-// Module ID: 13154
-// Function ID: 13155
+// Module ID: 13157
+// Function ID: 13158
 // Name: ChatInputScrimGradient
 // Dependencies: [19, 17, 21, 558, 576, 5144, 5252, 587, 1105, 5258, 2]
 
-// Module 13154 (ChatInputScrimGradient)
+// Module 13157 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

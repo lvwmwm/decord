@@ -1,9 +1,9 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18052
+// Function ID: 18053
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6776, 558, 576, 10767, 18044, 18045, 6809, 2031, 5623, 2]
+// Dependencies: [32, 5, 19, 6776, 558, 576, 10767, 18053, 18054, 6809, 2031, 5623, 2]
 
-// Module 18043 (useFrameLifecycle)
+// Module 18052 (useFrameLifecycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c2;
@@ -177,7 +177,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                   c2 = 0;
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp12) {
               if (0 === c2) {
@@ -235,7 +235,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -275,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             if (0 === c2) {

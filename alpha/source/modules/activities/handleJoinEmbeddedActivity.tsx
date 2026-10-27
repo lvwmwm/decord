@@ -1,10 +1,10 @@
-// Module ID: 11363
-// Function ID: 11364
+// Module ID: 11364
+// Function ID: 11365
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2045, 4823, 4874, 1392, 4822, 2026, 5628, 4892, 11364, 11407, 11406, 5629, 11417, 8882, 12709, 11393, 2]
+// Dependencies: [5, 2045, 4823, 4874, 1392, 4822, 2026, 5628, 4892, 11365, 11408, 11407, 5629, 11418, 8882, 12712, 11394, 2]
 // Exports: default
 
-// Module 11363 (handleJoinEmbeddedActivity)
+// Module 11364 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16253
+// Function ID: 16254
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 7203, 502, 6500, 2068, 1087, 21, 4971, 587, 5205, 504, 14418, 7259, 7274, 5210, 16251, 2002, 9609, 16253, 8951, 5977, 16256, 16257, 2]
+// Dependencies: [19, 17, 7203, 502, 6500, 2068, 1087, 21, 4971, 587, 5205, 504, 14419, 7259, 7274, 5210, 16252, 2002, 9609, 16254, 8951, 5977, 16257, 16258, 2]
 // Exports: UserSettingsConnections
 
-// Module 16252 (UserSettingsConnections)
+// Module 16253 (UserSettingsConnections)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,9 +14,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7203 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7259 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9609 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14418 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 16256 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 16257 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14419 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 16257 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 16258 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
@@ -32,7 +32,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const ConnectionsEmptyStateUpsellDefault = tmp2(16253);
+const ConnectionsEmptyStateUpsellDefault = tmp2(16254);
 const ActivityIndicator = react_native.ActivityIndicator;
 const FetchState = AuthorizedAppsStore2.FetchState;
 const AnalyticsLocations = Constants.AnalyticsLocations;
@@ -94,7 +94,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (null != selectedPlatformType) {
       if (-1 === selectedPlatformType) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(16251, dependencyMap.paths), "AddConnection");
+        obj2.openLazy(asyncRequire(16252, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: selectedPlatformType, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);

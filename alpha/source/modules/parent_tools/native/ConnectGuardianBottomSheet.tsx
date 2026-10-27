@@ -1,9 +1,9 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16171
+// Function ID: 16172
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7645, 7646, 21, 4971, 587, 558, 576, 573, 5210, 16171, 1128, 2536, 5234, 16172, 5244, 5265, 2]
+// Dependencies: [19, 17, 7645, 7646, 21, 4971, 587, 558, 576, 573, 5210, 16172, 1128, 2536, 5234, 16173, 5244, 5265, 2]
 
-// Module 16170 (ConnectGuardianBottomSheet)
+// Module 16171 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210
 import Text_Text from "Text/Text" /* 5234 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16171 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16172 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
 import Fragment from "Fragment" /* 21 */;
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(16172).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(16173).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }

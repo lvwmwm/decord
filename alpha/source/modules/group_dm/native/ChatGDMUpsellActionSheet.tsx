@@ -1,9 +1,9 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11305
+// Function ID: 11306
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 5001, 4807, 5210, 5669, 11305, 1128, 5244, 5234, 11306, 5678, 5269, 5265, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 5001, 4807, 5210, 5669, 11306, 1128, 5244, 5234, 11307, 5678, 5269, 5265, 2]
 
-// Module 11304 (ChatGDMUpsellActionSheet)
+// Module 11305 (ChatGDMUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -11,7 +11,7 @@ import dismissible_content from "dismissible_content" /* 4807 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11305 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11306 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -210,7 +210,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         const _Symbol5 = Symbol;
         ({ noticeContainer, innerContainer } = tmp4);
         if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp47 = closure_5(onClick(11306).TimerIcon, { size: "sm" });
+          const tmp47 = closure_5(onClick(11307).TimerIcon, { size: "sm" });
           cResult[27] = tmp47;
           tmp45 = tmp47;
         } else {
@@ -451,7 +451,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
   const obj13 = { style: tmp.innerContainer, children: items4 };
   items4 = [, ];
   const obj12 = { style: tmp.noticeContainer, children: items5 };
-  const obj14 = { style: tmp.item, children: closure_5(onClick(11306).TimerIcon, { size: "sm" }) };
+  const obj14 = { style: tmp.item, children: closure_5(onClick(11307).TimerIcon, { size: "sm" }) };
   items4[0] = closure_5(View, obj14);
   const obj15 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl5.string(onClick(1128).t.Fq3DJb) };
   const Text3 = onClick(5234).Text;

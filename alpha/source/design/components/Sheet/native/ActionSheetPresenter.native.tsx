@@ -1,9 +1,9 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 15245
+// Function ID: 15246
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 5211, 1087, 21, 558, 576, 1275, 9361, 5210, 5972, 5967, 5580, 504, 13323, 5915, 2]
+// Dependencies: [32, 19, 17, 5211, 1087, 21, 558, 576, 1275, 9361, 5210, 5972, 5967, 5580, 504, 13326, 5915, 2]
 
-// Module 15244 (ActionSheetPresenter)
+// Module 15245 (ActionSheetPresenter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
@@ -317,7 +317,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
       tmp11 = cResult[8];
     }
     if (cResult[10] !== tmp11) {
-      const TransitionGroup = tmp(13323).TransitionGroup;
+      const TransitionGroup = tmp(13326).TransitionGroup;
       const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5915).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
       cResult[10] = tmp11;
       cResult[11] = tmp17;
@@ -361,7 +361,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const TransitionGroup = appEntryKey(13323).TransitionGroup;
+  const TransitionGroup = appEntryKey(13326).TransitionGroup;
   return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5915).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
 });
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16145
+// Function ID: 16146
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 4845, 21, 4971, 587, 558, 576, 504, 6883, 16142, 1128, 5234, 13543, 13254, 5210, 5663, 5244, 5265, 2]
+// Dependencies: [19, 17, 4845, 21, 4971, 587, 558, 576, 504, 6883, 16143, 1128, 5234, 13545, 13257, 5210, 5663, 5244, 5265, 2]
 
-// Module 16144 (BaseUpsellActionSheet)
+// Module 16145 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
 import GuildIconDefault from "GuildIcon" /* 6883 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16142 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16143 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   ({ guildIds, direction, onPress } = arg0);
   const tmp4 = closure_9();
   if (cResult[0] !== guildIds) {
-    const tmpResult = arr(16142);
+    const tmpResult = arr(16143);
     const result = tmpResult.sortGuildIdsByFrecency(guildIds);
     cResult[0] = guildIds;
     cResult[1] = result;
@@ -226,7 +226,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[10] !== tmp14) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
     const items2 = [tmp14];
@@ -238,7 +238,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
     tmp18 = cResult[12];
@@ -249,7 +249,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[13] !== guildIds.length) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
     const obj2 = { count: guildIds.length };
@@ -259,14 +259,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
   }
   if (cResult[15] !== tmp20) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
     const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp20 };
@@ -276,41 +276,41 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
   }
   const statusRow = tmp4.statusRow;
   let str = "text-muted";
-  if (direction === arr(16142).ChangeDirection.RESTRICTING) {
+  if (direction === arr(16143).ChangeDirection.RESTRICTING) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
   }
   if (cResult[17] === tmp10) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F152314 */ });
+        return closure_1.map(() => { /* body not rendered: F152408 */ });
       }
     }
     if (cResult[20] === undefined) {
       class B {
         constructor() {
-          return closure_1.map(() => { /* body not rendered: F152314 */ });
+          return closure_1.map(() => { /* body not rendered: F152408 */ });
         }
       }
       if (cResult[23] === tmp4.guildSummary) {
         class B {
           constructor() {
-            return closure_1.map(() => { /* body not rendered: F152314 */ });
+            return closure_1.map(() => { /* body not rendered: F152408 */ });
           }
         }
         if (cResult[26] === tmp4.statusRow) {
           class B {
             constructor() {
-              return closure_1.map(() => { /* body not rendered: F152314 */ });
+              return closure_1.map(() => { /* body not rendered: F152408 */ });
             }
           }
         }

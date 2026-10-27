@@ -1,13 +1,13 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13202
+// Function ID: 13203
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 4971, 5268, 558, 576, 13200, 13198, 1128, 5234, 13201, 7221, 6924, 7095, 2]
+// Dependencies: [5, 19, 17, 21, 4971, 5268, 558, 576, 13203, 13201, 1128, 5234, 13204, 7221, 6924, 7095, 2]
 
-// Module 13199 (GuildDirectoryEditDescriptionModal)
+// Module 13202 (GuildDirectoryEditDescriptionModal)
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13198 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13200 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13201 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13201 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13203 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -155,7 +155,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           obj.close();
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c4 = 3;
@@ -226,7 +226,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -257,7 +257,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
             obj = closure_1(c3[9]);
             obj.close();
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -285,7 +285,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(13201);
+  const tmp2 = obj(13204);
   intl2 = entry(1128).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

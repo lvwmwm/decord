@@ -1,16 +1,16 @@
-// Module ID: 19454
-// Function ID: 19455
+// Module ID: 19464
+// Function ID: 19465
 // Name: handleIncomingURL
-// Dependencies: [5, 4823, 5714, 2001, 1087, 3, 7584, 19453, 7867, 1267, 15092, 5696, 7434, 5701, 1280, 8866, 17359, 19455, 2]
+// Dependencies: [5, 4823, 5714, 2001, 1087, 3, 7584, 19463, 7867, 1267, 15093, 5696, 7434, 5701, 1280, 8866, 17360, 19465, 2]
 // Exports: default
 
-// Module 19454 (handleIncomingURL)
+// Module 19464 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7584 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15092 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 19453 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15093 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 19463 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
@@ -53,7 +53,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -175,18 +175,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj13 = { payload: obj14, isAppStartupNavigation };
@@ -226,7 +226,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp4) {
             c6 = 0;

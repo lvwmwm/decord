@@ -1,48 +1,63 @@
 // Module ID: 12664
 // Function ID: 12665
-// Dependencies: [12576, 12579, 12578, 12584]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: []
+// Exports: getClientIPAddress
 
 // Module 12664
-import _mod12576 from "module_12576" /* 12576 */;
-import _mod12579 from "module_12579" /* 12579 */;
+const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
 
-let tmp;
-const _mod12578 = tmp(12578);
-function instrumentConsole() {
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  if ("console" in _mod12579.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod12578.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      let closure_0 = item;
-      let tmp = closure_0;
-      let tmp2 = closure_1;
-      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
-        const tmpResult = tmp(tmp2[3]);
-        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod12578.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            const obj = { args: items, level };
-            const obj2 = level(closure_2_1[0]);
-            obj2.triggerHandlers("console", obj);
-            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
-            const tmp = level;
-            const tmp2 = closure_2_1;
-            if (obj3) {
-              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
-            }
-          };
-        });
+export const getClientIPAddress = function getClientIPAddress(arg0) {
+  let closure_0 = arg0;
+  let mapped = items.map((item) => {
+    let mapped;
+    function parseForwardedHeader(str) {
+      if (str) {
+        const parts = str.split(";");
+        const iter = parts[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let arr = nextResult;
+          if (nextResult.startsWith("for=")) {
+            let substr = arr.slice(4);
+            iter.return();
+            return substr;
+          }
+        }
+        return null;
+      } else {
+        return null;
       }
-    });
-  }
-}
-
-export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
-  const obj = _mod12576;
-  obj.addHandler("console", arg0);
-  const obj2 = _mod12576;
-  obj2.maybeInstrument("console", instrumentConsole);
+    }
+    let str = obj;
+    if (Array.isArray(closure_0[item])) {
+      str = obj.join(";");
+    }
+    if ("Forwarded" === item) {
+      mapped = parseForwardedHeader(str);
+    } else {
+      mapped = str;
+      if (mapped) {
+        let parts = str.split(",");
+        mapped = parts.map((item) => item.trim());
+      }
+    }
+    return mapped;
+  });
+  const reduced = mapped.reduce((arr, item) => {
+    let combined = arr;
+    if (item) {
+      combined = arr.concat(item);
+    }
+    return combined;
+  }, []);
+  const tmp = reduced.find((item) => {
+    let isMatch = null !== item;
+    if (isMatch) {
+      const obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
+      isMatch = obj.test(item);
+    }
+    return isMatch;
+  }) || null;
+  return tmp;
 };
+export const ipHeaderNames = items;

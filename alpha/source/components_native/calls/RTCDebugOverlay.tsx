@@ -1,9 +1,9 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11694
+// Function ID: 11695
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 4823, 4845, 5714, 5737, 7814, 1392, 5718, 21, 4971, 4968, 587, 558, 576, 1202, 504, 5604, 11694, 5738, 1128, 5244, 7221, 2]
+// Dependencies: [109, 32, 19, 17, 4823, 4845, 5714, 5737, 7814, 1392, 5718, 21, 4971, 4968, 587, 558, 576, 1202, 504, 5604, 11695, 5738, 1128, 5244, 7221, 2]
 
-// Module 11693 (RTCDebugOverlay)
+// Module 11694 (RTCDebugOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -11,7 +11,7 @@ import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Constants from "Constants" /* 5718 */;
 import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5738 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11694 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11695 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ let obj3;
 let tmp;
 const get_initialized = tmp(504);
 const native = tmp(1202);
-const f111169 = (data, index) => {
+const f111228 = (data, index) => {
   const obj = { data };
   return closure_1_17(closure_1_25, obj, index);
 };
@@ -749,7 +749,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           obj3 = { obj: mediaEngineConnectionId.transport };
           items[1] = closure_17(closure_23, obj2);
           const outbound = mediaEngineConnectionId.rtp.outbound;
-          obj4 = { title: "outbound", children: outbound.map(f111169) };
+          obj4 = { title: "outbound", children: outbound.map(f111228) };
           items[2] = closure_17(closure_23, obj4);
           const inbound = mediaEngineConnectionId.rtp.inbound;
           const keys = Object.keys(inbound);
@@ -806,7 +806,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         obj3 = { obj: mediaEngineConnectionId.transport };
         items[1] = closure_17(closure_23, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
-        obj4 = { title: "outbound", children: outbound.map(f111169) };
+        obj4 = { title: "outbound", children: outbound.map(f111228) };
         items[2] = closure_17(closure_23, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);

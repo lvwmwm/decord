@@ -1,9 +1,9 @@
-// Module ID: 11852
-// Function ID: 11853
+// Module ID: 12204
+// Function ID: 12205
 // Name: Tabs
-// Dependencies: [19, 17, 2068, 21, 5052, 4971, 587, 558, 576, 5247, 9976, 11853, 5297, 1384, 2]
+// Dependencies: [19, 17, 2068, 21, 5052, 4971, 587, 558, 576, 5247, 9976, 12205, 5297, 1384, 2]
 
-// Module 11852 (Tabs)
+// Module 12204 (Tabs)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
 import spring from "spring" /* 5247 */;

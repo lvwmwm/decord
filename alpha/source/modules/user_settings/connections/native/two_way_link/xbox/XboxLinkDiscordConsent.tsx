@@ -1,7 +1,7 @@
 // Module ID: 9625
 // Function ID: 9626
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9612, 1087, 9626, 21, 558, 576, 1505, 9627, 13524, 2]
+// Dependencies: [19, 9612, 1087, 9626, 21, 558, 576, 1505, 9627, 13527, 2]
 
 // Module 9625 (XboxLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDi
     }
   }
   const TwoWayLinkDiscordConsent = tmp(9627).TwoWayLinkDiscordConsent;
-  const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(13524).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
+  const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(13527).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
   cResult[4] = callbackCode;
   cResult[5] = callbackState;
   cResult[6] = tmp6;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDi
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const TwoWayLinkDiscordConsent = navigation(9627).TwoWayLinkDiscordConsent;
-  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(13524).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
+  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(13527).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");
 

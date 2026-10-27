@@ -1,9 +1,9 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19108
+// Function ID: 19109
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4913, 1392, 1087, 21, 558, 576, 1505, 7257, 6903, 5604, 8502, 6987, 5252, 587, 18987, 12, 5977, 8951, 5592, 2]
+// Dependencies: [19, 4913, 1392, 1087, 21, 558, 576, 1505, 7257, 6903, 5604, 8502, 6987, 5252, 587, 18997, 12, 5977, 8951, 5592, 2]
 
-// Module 19098 (GuildSettingsModalLobbiesLinked)
+// Module 19108 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
@@ -66,7 +66,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
             obj4 = channels(closure_2[11]);
             obj1.IconComponent = obj4.getChannelIconComponent(channels);
             obj.icon = closure_1_6(Icon, obj1);
-            obj.onPress = function onPress() { /* body not rendered: F156870 */ };
+            obj.onPress = function onPress() { /* body not rendered: F156975 */ };
             return closure_1_6(TableRow, obj, channels.id);
           }
         }
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
             obj4 = channels(closure_2[11]);
             obj1.IconComponent = obj4.getChannelIconComponent(channels);
             obj.icon = closure_1_6(Icon, obj1);
-            obj.onPress = function onPress() { /* body not rendered: F156870 */ };
+            obj.onPress = function onPress() { /* body not rendered: F156975 */ };
             return closure_1_6(TableRow, obj, channels.id);
           }
         }
@@ -119,7 +119,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
         obj4 = channels(closure_2[11]);
         obj1.IconComponent = obj4.getChannelIconComponent(channels);
         obj.icon = closure_1_6(Icon, obj1);
-        obj.onPress = function onPress() { /* body not rendered: F156870 */ };
+        obj.onPress = function onPress() { /* body not rendered: F156975 */ };
         return closure_1_6(TableRow, obj, channels.id);
       }
     }

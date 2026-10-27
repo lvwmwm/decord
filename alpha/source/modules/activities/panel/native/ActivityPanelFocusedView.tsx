@@ -1,9 +1,9 @@
-// Module ID: 18463
-// Function ID: 18464
+// Module ID: 18473
+// Function ID: 18474
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4972, 4823, 4822, 2026, 5609, 18365, 1087, 10900, 21, 4971, 587, 558, 576, 1633, 504, 1499, 18454, 11863, 5052, 5037, 5206, 5247, 5968, 4892, 18456, 18464, 11393, 11459, 2]
+// Dependencies: [19, 17, 4972, 4823, 4822, 2026, 5609, 18375, 1087, 10901, 21, 4971, 587, 558, 576, 1633, 504, 1499, 18464, 11751, 5052, 5037, 5206, 5247, 5968, 4892, 18466, 18474, 11394, 11460, 2]
 
-// Module 18463 (ActivityPanelFocusedView)
+// Module 18473 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,16 +14,16 @@ import native from "native" /* 5037 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import spring from "spring" /* 5247 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11459 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18456 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 18464 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10901 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11460 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18466 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 18474 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 4972 */;
 import ChannelStore_mod from "ChannelStore" /* 4823 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18365 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18375 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18249
+// Function ID: 18250
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1087, 4820, 21, 4971, 587, 558, 576, 1128, 3832, 7253, 7278, 7490, 9840, 13074, 13075, 13073, 1400, 2]
+// Dependencies: [19, 17, 1087, 4820, 21, 4971, 587, 558, 576, 1128, 3832, 7253, 7278, 7490, 9840, 13077, 13078, 13076, 1400, 2]
 
-// Module 18240 (CustomTypingIndicatorProfileCoachmark)
+// Module 18249 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,9 +13,9 @@ import intl4 from "intl" /* 1128 */;
 import _modDef3832 from "module_3832" /* 3832 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13073 */;
-import _modDef13074 from "module_13074" /* 13074 */;
-import _modDef13075 from "module_13075" /* 13075 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13076 */;
+import _modDef13077 from "module_13077" /* 13077 */;
+import _modDef13078 from "module_13078" /* 13078 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [_modDef13074, _modDef13075, _modDef13074];
+    const items = [_modDef13077, _modDef13078, _modDef13077];
     cResult[0] = items;
     first = items;
   } else {
@@ -240,7 +240,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const tmp = closure_8();
   ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef13074, _modDef13075, _modDef13074];
+  items = [_modDef13077, _modDef13078, _modDef13077];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorProfileCoachmark.tsx");

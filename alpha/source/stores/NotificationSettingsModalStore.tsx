@@ -1,9 +1,9 @@
-// Module ID: 18970
-// Function ID: 18971
+// Module ID: 18980
+// Function ID: 18981
 // Name: NotificationSettingsModalStore
 // Dependencies: [4827, 7207, 4901, 5194, 4845, 6704, 1087, 504, 7208, 584, 2]
 
-// Module 18970 (NotificationSettingsModalStore)
+// Module 18980 (NotificationSettingsModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelRecord from "ChannelRecord" /* 4827 */;

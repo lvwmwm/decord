@@ -1,10 +1,10 @@
-// Module ID: 11284
-// Function ID: 11285
+// Module ID: 11285
+// Function ID: 11286
 // Name: useDownloadedFile
 // Dependencies: [5, 32, 19, 1128, 6379, 5986, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11284 (useDownloadedFile)
+// Module 11285 (useDownloadedFile)
 import intl2 from "intl" /* 1128 */;
 import FileSizeUtils from "FileSizeUtils" /* 6379 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -95,7 +95,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;

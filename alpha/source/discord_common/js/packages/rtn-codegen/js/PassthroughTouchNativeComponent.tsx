@@ -1,9 +1,9 @@
-// Module ID: 15240
-// Function ID: 15241
+// Module ID: 15241
+// Function ID: 15242
 // Name: PassthroughTouchNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 15240 (PassthroughTouchNativeComponent)
+// Module 15241 (PassthroughTouchNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

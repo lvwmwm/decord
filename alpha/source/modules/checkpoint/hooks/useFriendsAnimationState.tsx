@@ -1,9 +1,9 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13019
+// Function ID: 13020
 // Name: useFriendsAnimationState
 // Dependencies: [32, 19, 558, 576, 6363, 2]
 
-// Module 13016 (useFriendsAnimationState)
+// Module 13019 (useFriendsAnimationState)
 import react2 from "react" /* 576 */;
 import CheckpointNavigation from "CheckpointNavigation" /* 6363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

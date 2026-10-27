@@ -1,9 +1,9 @@
-// Module ID: 10921
-// Function ID: 10922
+// Module ID: 10922
+// Function ID: 10923
 // Name: useCreateThreadViewProps
 // Dependencies: [4823, 558, 576, 10091, 573, 2]
 
-// Module 10921 (useCreateThreadViewProps)
+// Module 10922 (useCreateThreadViewProps)
 import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10091 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

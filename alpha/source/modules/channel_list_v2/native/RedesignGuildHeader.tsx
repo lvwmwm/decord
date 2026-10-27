@@ -1,9 +1,9 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17560
+// Function ID: 17561
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4972, 5211, 12062, 1087, 21, 558, 576, 9709, 5205, 4978, 5253, 17560, 4848, 17530, 11059, 5252, 587, 5250, 12073, 4971, 5052, 10625, 5053, 17561, 1499, 504, 1506, 5247, 5248, 15154, 1417, 5669, 17605, 2]
+// Dependencies: [19, 17, 4972, 5211, 11953, 1087, 21, 558, 576, 9709, 5205, 4978, 5253, 17561, 4848, 17531, 11060, 5252, 587, 5250, 11964, 4971, 5052, 10625, 5053, 17562, 1499, 504, 1506, 5247, 5248, 15155, 1417, 5669, 17606, 2]
 
-// Module 17559 (RedesignGuildHeader)
+// Module 17560 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -18,17 +18,17 @@ import useToken from "useToken" /* 5252 */;
 import useFontScale from "useFontScale" /* 5253 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9709 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12073 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15154 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17530 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17560 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17561 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11964 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15155 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17531 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17561 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17562 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ActionSheetStore from "ActionSheetStore" /* 5211 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12062 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11953 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 4971 */;

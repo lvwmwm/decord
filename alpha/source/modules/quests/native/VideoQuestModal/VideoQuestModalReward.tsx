@@ -1,12 +1,12 @@
-// Module ID: 16495
-// Function ID: 16496
+// Module ID: 16496
+// Function ID: 16497
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4971, 558, 576, 16473, 9570, 9567, 16478, 5234, 1128, 5977, 587, 2]
+// Dependencies: [19, 21, 4971, 558, 576, 16474, 9570, 9567, 16479, 5234, 1128, 5977, 587, 2]
 
-// Module 16495 (VideoQuestModalReward)
+// Module 16496 (VideoQuestModalReward)
 import nativeDefault from "native" /* 587 */;
 import QuestUtils from "QuestUtils" /* 9567 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16478 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -37,7 +37,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined !== size) {
     str = size;
   }
-  const tmpResult = quest(16473);
+  const tmpResult = quest(16474);
   quest = tmpResult.useVideoQuestModalContext().quest;
   const tmpResult2 = quest(9570);
   const questTaskDetails = tmpResult2.useQuestTaskDetails(quest);
@@ -169,7 +169,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(16473);
+  let obj = quest(16474);
   quest = obj.useVideoQuestModalContext().quest;
   let obj2 = quest(9570);
   const items = [quest.id];

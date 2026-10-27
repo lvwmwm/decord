@@ -1,10 +1,10 @@
-// Module ID: 12356
-// Function ID: 12357
+// Module ID: 12339
+// Function ID: 12340
 // Name: conjureMessageAuthors
 // Dependencies: [5, 19, 1392, 8670, 558, 576, 504, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 12356 (conjureMessageAuthors)
+// Module 12339 (conjureMessageAuthors)
 import UserActionCreatorsAll from "UserActionCreators" /* 8670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ let obj = function _settle() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -65,7 +65,7 @@ let obj = function _settle() {
               c3 = 0;
             }
             c1 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           if (0 === c3) {

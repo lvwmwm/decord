@@ -1,9 +1,9 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12341
+// Function ID: 12342
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4971, 587, 12343, 558, 576, 12359, 5234, 6908, 1128, 12356, 5025, 12360, 3830, 1202, 5669, 12363, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 12328, 558, 576, 12342, 5234, 6908, 1128, 12339, 5025, 12343, 3830, 1202, 5669, 12346, 2]
 
-// Module 12358 (ConjureMessageAuthor)
+// Module 12341 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12343 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 12359 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12360 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12363 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12328 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 12342 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12343 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12346 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -172,7 +172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let obj = messageAuthorUser(576);
   const cResult = obj.c(6);
   ({ at, userId } = arg0);
-  const obj2 = messageAuthorUser(12356);
+  const obj2 = messageAuthorUser(12339);
   messageAuthorUser = obj2.useMessageAuthorUser(userId);
   const obj3 = messageAuthorUser(5025);
   const name = obj3.useName(messageAuthorUser);
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(12356);
+  let obj = messageAuthorUser(12339);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const obj2 = messageAuthorUser(5025);
   const name = obj2.useName(messageAuthorUser);
@@ -277,7 +277,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
   if (undefined === size) {
     size = tmp(1202).AvatarSizes.NORMAL;
   }
-  const tmpResult = tmp(12356);
+  const tmpResult = tmp(12339);
   messageAuthorUser = tmpResult.useMessageAuthorUser(userId);
   if (cResult[0] !== messageAuthorUser) {
     const fn = function t() {
@@ -342,7 +342,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     NORMAL = messageAuthorUser(1202).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(12356);
+  let obj = messageAuthorUser(12339);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {

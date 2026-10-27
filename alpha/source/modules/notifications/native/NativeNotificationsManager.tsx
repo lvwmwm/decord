@@ -1,9 +1,9 @@
-// Module ID: 19361
-// Function ID: 19362
+// Module ID: 19371
+// Function ID: 19372
 // Name: NativeNotificationsManager
 // Dependencies: [5, 6814, 1087, 3, 7214, 1384, 10753, 10756, 8696, 1267, 2]
 
-// Module 19361 (NativeNotificationsManager)
+// Module 19371 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -48,7 +48,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp72;
@@ -103,7 +103,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -230,7 +230,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     c8 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -349,7 +349,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj13;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp72) {
           if (0 === c6) {

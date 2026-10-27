@@ -1,17 +1,17 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13609
+// Function ID: 13610
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1392, 13580, 21, 4971, 5268, 587, 558, 576, 1505, 1128, 5234, 13579, 7139, 7140, 573, 7133, 38, 7173, 7089, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13582, 21, 4971, 5268, 587, 558, 576, 1505, 1128, 5234, 13581, 7139, 7140, 573, 7133, 38, 7173, 7089, 2]
 
-// Module 13607 (AddPhoneScreens)
+// Module 13609 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7133 */;
 import AddPhoneDefault from "AddPhone" /* 7139 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7140 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13579 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13580 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13581 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -233,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
               result = obj.handlePhoneVerificationComplete(tmp, closure_2);
               nextPromise = result.then(() => {
                 const obj = RunAfterInteractionsUtils;
-                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160616 */ });
+                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160721 */ });
               });
             }
             return () => {
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
         result = obj.handlePhoneVerificationComplete(tmp, closure_2);
         nextPromise = result.then(() => {
           const obj = RunAfterInteractionsUtils;
-          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160616 */ });
+          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F160721 */ });
         });
       }
       return () => {
@@ -407,7 +407,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

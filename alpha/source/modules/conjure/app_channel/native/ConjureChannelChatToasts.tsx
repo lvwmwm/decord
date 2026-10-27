@@ -1,9 +1,9 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18059
+// Function ID: 18060
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 4971, 587, 1128, 558, 576, 5025, 1202, 5234, 6905, 18051, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 1128, 558, 576, 5025, 1202, 5234, 6905, 18060, 2]
 
-// Module 18050 (ConjureChannelChatToasts)
+// Module 18059 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1202 */;
 import UserUtils from "UserUtils" /* 5025 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Card_Card from "Card/Card" /* 6905 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18051 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18060 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _fetchGameAutocomplete() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {

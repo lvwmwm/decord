@@ -1,9 +1,9 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15788
+// Function ID: 15789
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [4823, 4901, 4845, 2014, 4903, 5714, 4913, 6685, 1392, 5630, 11614, 1087, 15788, 15789, 15790, 15791, 8115, 14622, 15792, 15793, 14597, 1128, 15794, 11627, 10099, 5604, 6708, 1267, 5711, 2004, 2]
+// Dependencies: [4823, 4901, 4845, 2014, 4903, 5714, 4913, 6685, 1392, 5630, 11615, 1087, 15789, 15790, 15791, 15792, 8115, 14623, 15793, 15794, 14598, 1128, 15795, 11628, 10099, 5604, 6708, 1267, 5711, 2004, 2]
 
-// Module 15787 (MobileVoiceOverlayLifecycleManager)
+// Module 15788 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GuildChannelStore from "GuildChannelStore" /* 4901 */;
@@ -11,8 +11,8 @@ import useChannelName from "useChannelName" /* 5604 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6708 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10099 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11627 */;
-import react_nativeDefault from "react-native" /* 15794 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11628 */;
+import react_nativeDefault from "react-native" /* 15795 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -22,10 +22,10 @@ import RelationshipStore from "RelationshipStore" /* 4913 */;
 import SpeakingStore from "SpeakingStore" /* 6685 */;
 import UserStore from "UserStore" /* 1392 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11614 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11615 */;
 import Constants from "Constants" /* 1087 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 14597 */;
+import AssetRegistry from "AssetRegistry" /* 14598 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 

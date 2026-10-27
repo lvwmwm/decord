@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           return obj;
         } else {
           trackAction = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         trackAction = 3;

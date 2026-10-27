@@ -1,13 +1,13 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 11886
+// Function ID: 11887
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [5981, 12, 5982, 11998, 5706, 8344, 2]
+// Dependencies: [5981, 12, 5982, 11887, 5706, 8344, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 11997 (ApplicationWidgetMarkupUtils)
+// Module 11886 (ApplicationWidgetMarkupUtils)
 import MarkupReactRulesDefault from "MarkupReactRules" /* 5706 */;
 import MarkupRulesDefault from "MarkupRules" /* 5982 */;
-import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 11998 */;
+import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 11887 */;
 import combineMarkupRules from "combineMarkupRules" /* 5981 */;
 import module_12 from "module_12" /* 12 */;
 import MarkupParser_mod from "MarkupParser" /* 8344 */;

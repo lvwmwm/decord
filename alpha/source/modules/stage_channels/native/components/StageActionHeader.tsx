@@ -1,10 +1,10 @@
-// Module ID: 11685
-// Function ID: 11686
+// Module ID: 11686
+// Function ID: 11687
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6772, 4823, 6814, 4845, 4828, 11522, 1087, 21, 4971, 5268, 4968, 587, 1267, 5711, 10889, 6672, 7867, 558, 576, 504, 5710, 1128, 1202, 11548, 11686, 5604, 6694, 6688, 5258, 5234, 8932, 8105, 11687, 7869, 11688, 9022, 9050, 10860, 10859, 11524, 11530, 11531, 11534, 11689, 11690, 2]
+// Dependencies: [19, 17, 6772, 4823, 6814, 4845, 4828, 11523, 1087, 21, 4971, 5268, 4968, 587, 1267, 5711, 10890, 6672, 7867, 558, 576, 504, 5710, 1128, 1202, 11549, 11687, 5604, 6694, 6688, 5258, 5234, 8932, 8105, 11688, 7869, 11689, 9022, 9050, 10861, 10860, 11525, 11531, 11532, 11535, 11690, 11691, 2]
 // Exports: closeStageModal
 
-// Module 11685 (StageActionHeader)
+// Module 11686 (StageActionHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,21 +20,21 @@ import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /*
 import AssetRegistryDefault from "AssetRegistry" /* 8105 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8932 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import StatusBarDefault from "StatusBar" /* 10889 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 11534 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11548 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11686 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11687 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11688 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11689 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11690 */;
+import StatusBarDefault from "StatusBar" /* 10890 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 11535 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11549 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11687 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11688 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11689 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11690 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11691 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import StageInstanceStore from "StageInstanceStore" /* 4828 */;
-import StageMusicStore from "StageMusicStore" /* 11522 */;
+import StageMusicStore from "StageMusicStore" /* 11523 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -588,8 +588,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSetting
         }
         return tmp9;
       }
-      const obj2 = { accessibilityLabel: first, containerStyle: tmp7, source: onOpenRTCDebugOverlay(11688), onPress: tmp8, disableBackground: true };
-      const tmp12 = onOpenRTCDebugOverlay(11548);
+      const obj2 = { accessibilityLabel: first, containerStyle: tmp7, source: onOpenRTCDebugOverlay(11689), onPress: tmp8, disableBackground: true };
+      const tmp12 = onOpenRTCDebugOverlay(11549);
       const tmp13 = closure_12(tmp12, obj2);
       cResult[7] = tmp7;
       cResult[8] = tmp8;
@@ -871,7 +871,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
   }
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult2 = stateFromStores(11524);
+  const tmpResult2 = stateFromStores(11525);
   if (tmpResult2.useShowStageMusicMuteButton(channelId)) {
     let tmp9;
     if (cResult[2] !== stateFromStores) {
@@ -890,7 +890,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
     } else {
       tmp9 = cResult[3];
     }
-    const tmp11Result = importDefault(stateFromStores ? 11530 : 11531);
+    const tmp11Result = importDefault(stateFromStores ? 11531 : 11532);
     if (cResult[4] !== stateFromStores) {
       class C {
         constructor() {
@@ -941,7 +941,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
   const items = [StageMusicStore];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6Result = null;
-  const obj2 = stateFromStores(11524);
+  const obj2 = stateFromStores(11525);
   if (obj2.useShowStageMusicMuteButton(channelId)) {
     let stringResult;
     const tmp8 = ChannelCallNavigatorIconDefault;
@@ -958,7 +958,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicMuteBu
     const obj3 = {
       accessibilityLabel: stringResult,
       containerStyle: tmp.iconBackground,
-      source: tmp7(stateFromStores ? 11530 : 11531),
+      source: tmp7(stateFromStores ? 11531 : 11532),
       onPress() {
           const obj = StageMusicActionCreators;
           return obj.updateStageMusicMuted(!stateFromStores);
@@ -1090,7 +1090,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp17 = fullscreenStream;
       if (tmp17) {
         const obj6 = { channel };
-        tmp17 = authStore2(tmp(11690).GridButton, obj6);
+        tmp17 = authStore2(tmp(11691).GridButton, obj6);
       }
       cResult[8] = channel;
       cResult[9] = fullscreenStream;

@@ -1,9 +1,9 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12514
+// Function ID: 12515
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 4971, 587, 558, 576, 6987, 1128, 3830, 6903, 1202, 5025, 11829, 2]
+// Dependencies: [19, 21, 4971, 587, 558, 576, 6987, 1128, 3830, 6903, 1202, 5025, 12179, 2]
 
-// Module 12531 (ConjureMentionSuggestions)
+// Module 12514 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;

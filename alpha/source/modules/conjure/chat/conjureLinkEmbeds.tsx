@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c0, c1, c11, c12, set2;
 
-const f108242 = (item) => {
+const f108299 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -29,7 +29,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f108242));
+    set = new Set(match.filter(f108299));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -52,7 +52,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -259,7 +259,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
           let deleteResult2 = closure_136_7.delete(joined);
         }
         c12 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     }
   });
@@ -288,7 +288,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(match.filter(f108242));
+        set = new Set(match.filter(f108299));
         const items = [];
         const tmp6 = set;
         HermesBuiltin.arraySpread(items, set, 0);
@@ -309,7 +309,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -337,7 +337,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp6) {
               c0 = 3;
@@ -375,7 +375,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f108242));
+      set = new Set(match.filter(f108299));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);
@@ -396,7 +396,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -424,7 +424,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -454,7 +454,7 @@ export const readyConjureLinkEmbeds = function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f108242));
+    set = new Set(match.filter(f108299));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {

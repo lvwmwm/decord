@@ -1,13 +1,13 @@
-// Module ID: 12551
-// Function ID: 12552
+// Module ID: 12554
+// Function ID: 12555
 // Name: ConjureDebugLabels
-// Dependencies: [1128, 3830, 12552, 2]
+// Dependencies: [1128, 3830, 12555, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, filterDebugLogs, forceCompactionStatus, isRenderableLog, sandboxRestartStatus
 
-// Module 12551 (ConjureDebugLabels)
+// Module 12554 (ConjureDebugLabels)
 import intl6 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12552 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12555 */;
 import size from "module_2" /* 2 */;
 
 let log;
@@ -210,7 +210,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(12552).formatBytes;
+    formatBytes2 = tmp2(12555).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;

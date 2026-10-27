@@ -1,9 +1,9 @@
-// Module ID: 17904
-// Function ID: 17905
+// Module ID: 17913
+// Function ID: 17914
 // Name: ICYMICustomScoresModal
-// Dependencies: [109, 19, 21, 9743, 4971, 587, 558, 576, 7095, 9699, 1128, 10031, 17905, 17906, 2]
+// Dependencies: [109, 19, 21, 9743, 4971, 587, 558, 576, 7095, 9699, 1128, 10031, 17914, 17915, 2]
 
-// Module 17904 (ICYMICustomScoresModal)
+// Module 17913 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

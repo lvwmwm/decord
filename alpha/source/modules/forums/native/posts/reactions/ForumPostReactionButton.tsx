@@ -1,9 +1,9 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 10998
+// Function ID: 10999
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10998, 1128, 5234, 6908, 5225, 9783, 10995, 4799, 9983, 1105, 1417, 4915, 7227, 11014, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10999, 1128, 5234, 6908, 5225, 9783, 10996, 4799, 9983, 1105, 1417, 4915, 7227, 11015, 2]
 
-// Module 10997 (ForumPostReactionButton)
+// Module 10998 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,9 +17,9 @@ import Pressables from "Pressables" /* 6908 */;
 import EmojiDefault from "Emoji" /* 7227 */;
 import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9783 */;
 import useEmojiColorPalette from "useEmojiColorPalette" /* 9983 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10995 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10998 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11014 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10996 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10999 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

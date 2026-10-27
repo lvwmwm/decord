@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               mobileBoostingEnabled = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {
@@ -144,7 +144,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

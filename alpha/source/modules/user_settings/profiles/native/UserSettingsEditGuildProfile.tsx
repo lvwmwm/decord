@@ -1,14 +1,14 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15958
+// Function ID: 15959
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8649, 1392, 21, 4971, 587, 7253, 7278, 504, 15958, 11189, 8676, 15960, 6903, 6883, 11071, 5210, 15962, 2002, 15963, 2]
+// Dependencies: [19, 17, 8649, 1392, 21, 4971, 587, 7253, 7278, 504, 15959, 11190, 8676, 15961, 6903, 6883, 11072, 5210, 15963, 2002, 15964, 2]
 // Exports: default
 
-// Module 15957 (UserSettingsEditGuildProfile)
+// Module 15958 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11071 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11189 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11072 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11190 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
@@ -52,7 +52,7 @@ export default function UserSettingsEditGuildProfile() {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(15958)();
+  const tmp7 = guild(15959)();
   guild = tmp7.guild;
   ({ resetPending: dependencyMap, handleSubmit: react } = tmp7);
   let obj2 = stateFromStores(504);
@@ -107,10 +107,10 @@ export default function UserSettingsEditGuildProfile() {
       items3 = [closure_7(hasUnsavedChanges, obj4), ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores };
-      const tmp2Result2 = tmp2(15963);
+      const tmp2Result2 = tmp2(15964);
       items3[1] = closure_7(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return closure_8(AnalyticsLocationProvider, obj3);
     }
   }
-  return closure_7(tmp2(15960), {});
+  return closure_7(tmp2(15961), {});
 };

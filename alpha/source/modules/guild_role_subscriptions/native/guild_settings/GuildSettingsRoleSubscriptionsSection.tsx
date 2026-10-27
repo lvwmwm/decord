@@ -1,9 +1,9 @@
-// Module ID: 18988
-// Function ID: 18989
+// Module ID: 18998
+// Function ID: 18999
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 4841, 1392, 1087, 21, 558, 576, 504, 1128, 6903, 5686, 11003, 18989, 16736, 6987, 7360, 2]
+// Dependencies: [19, 4841, 1392, 1087, 21, 558, 576, 504, 1128, 6903, 5686, 11004, 18999, 16737, 6987, 7360, 2]
 
-// Module 18988 (GuildSettingsRoleSubscriptionsSection)
+// Module 18998 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,9 +12,9 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
 import TableRow5 from "TableRow" /* 6903 */;
 import TableRowGroup2 from "TableRowGroup" /* 6987 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7360 */;
-import TagsIcon from "TagsIcon" /* 11003 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16736 */;
-import WalletIcon from "WalletIcon" /* 18989 */;
+import TagsIcon from "TagsIcon" /* 11004 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16737 */;
+import WalletIcon from "WalletIcon" /* 18999 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

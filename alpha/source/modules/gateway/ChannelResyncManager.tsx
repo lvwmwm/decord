@@ -1,9 +1,9 @@
-// Module ID: 18763
-// Function ID: 18764
+// Module ID: 18773
+// Function ID: 18774
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4823, 6703, 4845, 6496, 1087, 4830, 3, 1104, 7214, 1267, 584, 7725, 14984, 1405, 1281, 2]
+// Dependencies: [5, 502, 4823, 6703, 4845, 6496, 1087, 4830, 3, 1104, 7214, 1267, 584, 7725, 14985, 1405, 1281, 2]
 
-// Module 18763 (ChannelResyncManager)
+// Module 18773 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;
 import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7725 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 14984 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 14985 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

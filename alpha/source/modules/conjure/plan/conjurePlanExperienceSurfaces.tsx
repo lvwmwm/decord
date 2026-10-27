@@ -1,14 +1,14 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12438
+// Function ID: 12439
 // Name: conjurePlanExperienceSurfaces
-// Dependencies: [1128, 3830, 6774, 12456, 2]
+// Dependencies: [1128, 3830, 6774, 12439, 2]
 // Exports: conjurePlanDesignExperienceId, conjurePlanExperiencePlacement
 
-// Module 12455 (conjurePlanExperienceSurfaces)
+// Module 12438 (conjurePlanExperienceSurfaces)
 import intl2 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12456 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12439 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSurfaces.tsx");

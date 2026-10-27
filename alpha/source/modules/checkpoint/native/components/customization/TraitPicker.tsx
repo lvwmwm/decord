@@ -1,9 +1,9 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13030
+// Function ID: 13031
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4972, 6015, 21, 587, 6362, 4971, 13028, 558, 576, 1128, 3088, 12971, 5234, 504, 5267, 13030, 5599, 5052, 5206, 13031, 13032, 2]
+// Dependencies: [32, 19, 17, 4972, 6015, 21, 587, 6362, 4971, 13031, 558, 576, 1128, 3088, 12974, 5234, 504, 5267, 13033, 5599, 5052, 5206, 13034, 13035, 2]
 
-// Module 13027 (TraitPicker)
+// Module 13030 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,8 +14,8 @@ import timing from "timing" /* 5206 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import CheckpointConstants from "CheckpointConstants" /* 6015 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
-import CheckpointTextDefault from "CheckpointText" /* 12971 */;
-import TraitOptionList from "TraitOptionList" /* 13028 */;
+import CheckpointTextDefault from "CheckpointText" /* 12974 */;
+import TraitOptionList from "TraitOptionList" /* 13031 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
@@ -659,7 +659,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
   dependencyMap = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj3 = customizationOption(5267);
   _slicedToArray = obj3.useIsScreenReaderEnabled();
-  const obj4 = customizationOption(13030);
+  const obj4 = customizationOption(13033);
   const obj5 = { customizationOption, optionIds, savedOptionId, rarityOrder };
   const traitPickerOptions = obj4.useTraitPickerOptions(obj5);
   ({ availableTraitOptions, earnedCount } = traitPickerOptions);
@@ -721,8 +721,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
   _slicedToArray(earnedCount.useState(tmp8), 2);
   const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp15 };
   tmp15 = flag;
-  const useAutoSelectTraitOption = tmp2(13031).useAutoSelectTraitOption;
-  tmp2(13031);
+  const useAutoSelectTraitOption = tmp2(13034).useAutoSelectTraitOption;
+  tmp2(13034);
   if (!flag) {
     let tmp16 = !tmp6;
     if (tmp16) {
@@ -748,10 +748,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     const obj9 = { customizationOption, earnedCount: diff, totalCount };
     showEarnedCount = closure_8(closure_13, obj9);
   }
-  items2 = [showEarnedCount, closure_8(selectedOptionId(13028), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
+  items2 = [showEarnedCount, closure_8(selectedOptionId(13031), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
   let tmp24Result = null != found;
   if (tmp24Result) {
-    const obj10 = { style: items3, children: closure_8(selectedOptionId(13032), obj11) };
+    const obj10 = { style: items3, children: closure_8(selectedOptionId(13035), obj11) };
     items3 = [tmp.details, animatedStyle];
     View = tmp7(5052).View;
     obj11 = { asset: found, hideDescriptionAndRarity: tmp4 };

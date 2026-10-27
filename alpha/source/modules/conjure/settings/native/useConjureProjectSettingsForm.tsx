@@ -1,9 +1,9 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 12151
+// Function ID: 12152
 // Name: useConjureProjectSettingsForm
-// Dependencies: [32, 19, 17, 4877, 1087, 21, 4971, 587, 558, 576, 504, 6774, 5210, 1128, 3830, 5234, 7248, 8934, 7145, 6987, 6900, 7298, 11804, 11813, 6903, 11817, 2]
+// Dependencies: [32, 19, 17, 4877, 1087, 21, 4971, 587, 558, 576, 504, 6774, 5210, 1128, 3830, 5234, 7248, 8934, 7145, 6987, 6900, 7298, 12152, 12161, 6903, 12166, 2]
 
-// Module 11803 (useConjureProjectSettingsForm)
+// Module 12151 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -168,7 +168,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148352 */ });
+          tmp = closure_5(() => { /* body not rendered: F148915 */ });
           return;
         }
       }
@@ -179,7 +179,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148352 */ });
+          tmp = closure_5(() => { /* body not rendered: F148915 */ });
           return;
         }
       }
@@ -190,7 +190,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148352 */ });
+          tmp = closure_5(() => { /* body not rendered: F148915 */ });
           return;
         }
       }
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -223,7 +223,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -234,7 +234,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -254,7 +254,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -264,7 +264,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -286,7 +286,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148352 */ });
+            tmp = closure_5(() => { /* body not rendered: F148915 */ });
             return;
           }
         }
@@ -325,7 +325,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       constructor(arg0, arg1) {
         closure_0 = guildId;
         closure_1 = arg1;
-        tmp = closure_5(() => { /* body not rendered: F148352 */ });
+        tmp = closure_5(() => { /* body not rendered: F148915 */ });
         return;
       }
     }
@@ -1000,7 +1000,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   let supportsVisibility;
   _require = arg1;
   const tmp = closure_11();
-  const tmp4 = selectedRoleIds(11804)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12152)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: dependencyMap, handleRoleSelectionChange } = tmp4);
   let items = [arg1, handleRoleSelectionChange, selectedRoleIds];

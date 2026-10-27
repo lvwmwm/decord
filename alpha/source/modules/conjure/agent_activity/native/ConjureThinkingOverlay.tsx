@@ -1,9 +1,9 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12482
+// Function ID: 12483
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10699, 21, 4971, 587, 558, 576, 504, 12282, 9961, 5234, 1128, 3830, 12280, 6905, 2]
+// Dependencies: [19, 17, 10699, 21, 4971, 587, 558, 576, 504, 12231, 9961, 5234, 1128, 3830, 12229, 6905, 2]
 
-// Module 12499 (ConjureThinkingOverlay)
+// Module 12482 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -83,8 +83,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     tmp12 = cResult[5];
   }
   let str2;
-  const useConjureRevealedText = projectId(12282).useConjureRevealedText;
-  projectId(12282);
+  const useConjureRevealedText = projectId(12231).useConjureRevealedText;
+  projectId(12231);
   if (stateFromStores != null) {
     str2 = stateFromStores.text;
   }
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12280), obj11)
+      children: closure_7(ref(12229), obj11)
     };
     obj11 = { source: text };
     tmp29 = closure_7(closure_4, obj10);
@@ -215,8 +215,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12282).useConjureRevealedText;
-  projectId(12282);
+  const useConjureRevealedText = projectId(12231).useConjureRevealedText;
+  projectId(12231);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12280), obj9)
+      children: closure_7(ref(12229), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);

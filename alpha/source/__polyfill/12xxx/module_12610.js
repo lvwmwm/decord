@@ -1,29 +1,23 @@
 // Module ID: 12610
 // Function ID: 12611
-// Dependencies: [12605]
-// Exports: hasTracingEnabled
+// Dependencies: [12587]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12610
-import _mod12605 from "module_12605" /* 12605 */;
+import _mod12587 from "module_12587" /* 12587 */;
 
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const hasTracingEnabled = function hasTracingEnabled(tracesSampler) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
-    }
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod12587;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod12587;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
-  let tmp = tracesSampler;
-  const obj = _mod12605;
-  const client = obj.getClient();
-  if (!tracesSampler) {
-    tmp = client && client.getOptions();
-    client && client.getOptions();
-  }
-  let tmp3 = tmp;
-  if (tmp3) {
-    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
-    tmp3 = enableTracing;
-  }
-  return tmp3;
 };

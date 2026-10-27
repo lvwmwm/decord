@@ -1,9 +1,9 @@
-// Module ID: 18275
-// Function ID: 18276
+// Module ID: 18284
+// Function ID: 18285
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18276, 4823, 4883, 4877, 4845, 4903, 4913, 1392, 7875, 1087, 21, 4971, 587, 558, 576, 1505, 11311, 504, 8972, 8973, 8974, 1128, 5604, 5908, 8989, 4908, 5977, 7295, 6987, 7953, 11156, 6903, 11309, 6930, 5711, 8901, 9146, 18277, 18279, 2]
+// Dependencies: [32, 5, 19, 17, 18285, 4823, 4883, 4877, 4845, 4903, 4913, 1392, 7875, 1087, 21, 4971, 587, 558, 576, 1505, 11312, 504, 8972, 8973, 8974, 1128, 5604, 5908, 8989, 4908, 5977, 7295, 6987, 7953, 11157, 6903, 11310, 6930, 5711, 8901, 9146, 18286, 18288, 2]
 
-// Module 18275 (EasyChannelPermissionSettings)
+// Module 18284 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
@@ -11,12 +11,12 @@ import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7875 */
 import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8972 */;
 import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8973 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8989 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11309 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11310 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18276 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18285 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildMemberStore from "GuildMemberStore" /* 4883 */;
 import GuildRoleStore from "GuildRoleStore" /* 4877 */;
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "Array" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "Array" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "Array" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "r" });
+          navigation.setOptions({ headerRight: "Array" });
         }
       }
     }
@@ -146,14 +146,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "Array" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "r" });
+        navigation.setOptions({ headerRight: "Array" });
       }
     }
   }
@@ -195,7 +195,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
           const items = [tmp];
           c2 = 2;
@@ -283,7 +283,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -324,7 +324,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
           const intl = title(c3[25]).intl;
           const string = intl.string;
@@ -368,7 +368,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           intl4 = title(c3[25]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "Array" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

@@ -1,10 +1,10 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11254
+// Function ID: 11255
 // Name: RecentChannelsActionCreators
 // Dependencies: [5, 1087, 4804, 1241, 584, 1267, 2]
 // Exports: bulkClearRecents
 
-// Module 11253 (RecentChannelsActionCreators)
+// Module 11254 (RecentChannelsActionCreators)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -27,7 +27,7 @@ let obj = function _bulkClearRecents() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _bulkClearRecents() {
             const obj7 = closure_131_1(closure_131_2[5]);
             obj7.track(closure_131_4.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c5 = 3;

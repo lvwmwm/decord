@@ -1,19 +1,19 @@
-// Module ID: 18772
-// Function ID: 18773
+// Module ID: 18782
+// Function ID: 18783
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7645, 1246, 13745, 4874, 5002, 6498, 6773, 1087, 4830, 7214, 10742, 4799, 10723, 11525, 7345, 12357, 2]
+// Dependencies: [7645, 1246, 13747, 4874, 5002, 6498, 6773, 1087, 4830, 7214, 10742, 4799, 10723, 11526, 7345, 12340, 2]
 
-// Module 18772 (ConjureTurnNotificationManager)
+// Module 18782 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 4799 */;
 import ChannelConstants from "ChannelConstants" /* 4830 */;
 import ConjureUtils from "ConjureUtils" /* 7345 */;
 import conjureProjectMute from "conjureProjectMute" /* 10723 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10742 */;
-import SoundUtils from "SoundUtils" /* 11525 */;
-import conjureMentions from "conjureMentions" /* 12357 */;
+import SoundUtils from "SoundUtils" /* 11526 */;
+import conjureMentions from "conjureMentions" /* 12340 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13745 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13747 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
@@ -50,7 +50,7 @@ function handleLogout() {
 }
 function notifyTurn(projectId, guildId, title, body, nonce) {
   let CHANNELResult;
-  let tmp27;
+  let tmp26;
   let tmp8Result4;
   if (null != nonce) {
     let num = map.get(projectId);
@@ -76,16 +76,12 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
     if (!obj3.isConjureProjectMuted(UserSettingsProtoStore.settings, projectId)) {
       const isSoundDisabledResult = NotificationSettingsStore.isSoundDisabled(message1);
       guildId = SelectedGuildStore.getGuildId();
-      if (null != guildId) {
-        if (ConjureProjectStore.getSelectedProjectId(guildId) === projectId) {
-          if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
-            const tmpResult = ConjurePlatformUtilsDefault;
-            if (tmpResult.isWindowFocused()) {
-              if (!isSoundDisabledResult) {
-                const tmp8Result = SoundUtils;
-                tmp8Result.playSound(bit_message1, volume);
-              }
-            }
+      if (ConjureProjectStore.getGlobalSelectedProjectId() === projectId) {
+        const tmpResult = ConjurePlatformUtilsDefault;
+        if (tmpResult.isWindowFocused()) {
+          if (!isSoundDisabledResult) {
+            const tmp8Result = SoundUtils;
+            tmp8Result.playSound(bit_message1, volume);
           }
         }
       }
@@ -94,7 +90,7 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
         const tmp8Result3 = ConjureUtils;
         conjureWorkspaceGuildId = tmp8Result3.resolveConjureWorkspaceGuildId(ConjureChatStore);
       }
-      const obj4 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result4.withConjureMentionNames(body), route: CHANNELResult, sound: tmp27, volume };
+      const obj5 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result4.withConjureMentionNames(body), route: CHANNELResult, sound: tmp26, volume };
       const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
       ConjurePlatformUtilsDefault;
       CHANNELResult = null;
@@ -102,11 +98,11 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
       if (null != conjureWorkspaceGuildId) {
         CHANNELResult = authStore.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
       }
-      tmp27 = undefined;
+      tmp26 = undefined;
       if (!isSoundDisabledResult) {
-        tmp27 = bit_message1;
+        tmp26 = bit_message1;
       }
-      const result1 = presentTurnNotification(obj4);
+      const result1 = presentTurnNotification(obj5);
     }
   }
 }

@@ -1,15 +1,15 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12907
+// Function ID: 12908
 // Name: formatResults
-// Dependencies: [5, 9066, 4823, 4903, 1392, 12905, 1087, 9067, 7411, 9079, 1128, 1388, 12, 2]
+// Dependencies: [5, 9066, 4823, 4903, 1392, 12908, 1087, 9067, 7411, 9079, 1128, 1388, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 12904 (formatResults)
+// Module 12907 (formatResults)
 import _mod12 from "module_12" /* 12 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9079 */;
-import ShareConstants from "ShareConstants" /* 12905 */;
+import ShareConstants from "ShareConstants" /* 12908 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 9066 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -48,7 +48,7 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -77,13 +77,13 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
               return obj6;
             } else {
               c1 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === tmp3) {
           c4 = 0;
           c1 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -182,7 +182,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f116343 = (type) => {
+  const f116410 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -205,7 +205,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f116343));
+    return tmp26(results.filter(f116410));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -269,7 +269,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f116343);
+      const found = items.filter(f116410);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;

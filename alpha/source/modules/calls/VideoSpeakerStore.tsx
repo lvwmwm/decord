@@ -1,9 +1,9 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11377
+// Function ID: 11378
 // Name: VideoSpeakerStore
 // Dependencies: [6642, 502, 2014, 6685, 6772, 5632, 6645, 12, 504, 584, 2]
 
-// Module 11376 (VideoSpeakerStore)
+// Module 11377 (VideoSpeakerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CallConstants from "CallConstants" /* 5632 */;

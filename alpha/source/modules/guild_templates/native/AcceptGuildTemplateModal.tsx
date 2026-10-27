@@ -1,14 +1,14 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12741
+// Function ID: 12742
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 7567, 1087, 21, 4971, 5268, 558, 576, 504, 6829, 12739, 12740, 12737, 8154, 12741, 7221, 6924, 7095, 2]
+// Dependencies: [5, 32, 19, 7567, 1087, 21, 4971, 5268, 558, 576, 504, 6829, 12742, 12743, 12740, 8154, 12744, 7221, 6924, 7095, 2]
 
-// Module 12738 (AcceptGuildTemplateModal)
+// Module 12741 (AcceptGuildTemplateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12740 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 12743 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let c2, c3, dependencyMap;
 
 let obj2;
-const f115609 = () => {
+const f115676 = () => {
   const obj = closure_1_1(closure_1_3[14]);
   return obj.hideModal();
 };
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   [first2, _slicedToArray] = react.useState(null);
   const tmp16 = _slicedToArray(react.useState(null), 2);
   [tmp17, react] = tmp16;
-  stateFromStores(12739)(stateFromStores);
+  stateFromStores(12742)(stateFromStores);
   const tmp18 = stateFromStores;
   if (cResult[4] === stateFromStores) {
     if (cResult[5] === first2) {
@@ -127,7 +127,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -165,7 +165,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
                   closure_1_5(base64);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp16) {
               c3 = 3;
@@ -198,8 +198,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       cResult[13] = tmp20;
       cResult[14] = first2;
       cResult[15] = first1;
-      cResult[16] = jsx(tmp18(12741), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
-      const tmp25 = jsx(tmp18(12741), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      cResult[16] = jsx(tmp18(12744), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      const tmp25 = jsx(tmp18(12744), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
     }
   }
   function handleCreateServer() {
@@ -239,7 +239,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   [name, dependencyMap] = useState(obj2.getGuildNameSuggestion());
   [first1, _slicedToArray] = react.useState(null);
   [first2, react] = react.useState(null);
-  stateFromStores(12739)(stateFromStores);
+  stateFromStores(12742)(stateFromStores);
   const SafeAreaPaddingView = code(7221).SafeAreaPaddingView;
   let obj4 = {
     code,
@@ -262,7 +262,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -299,7 +299,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
               closure_129_5(base64);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -318,7 +318,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   };
-  stateFromStores(12741);
+  stateFromStores(12744);
   return <SafeAreaPaddingView top style={tmp.container}>{null}</SafeAreaPaddingView>;
 });
 const ACCEPT_GUILD_TEMPLATE = "ACCEPT_GUILD_TEMPLATE";
@@ -334,7 +334,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
   if (cResult[0] !== code) {
     obj2 = { code };
     const obj3 = {};
-    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f115609), render };
+    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f115676), render };
     obj3[ACCEPT_GUILD_TEMPLATE] = obj4;
     cResult[0] = code;
     cResult[1] = obj3;
@@ -359,7 +359,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptGuil
     let obj4;
     let obj = { code };
     const obj2 = {};
-    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f115609), render };
+    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f115676), render };
     obj2[ACCEPT_GUILD_TEMPLATE] = obj3;
     obj4 = NavigatorHeader;
     return obj2;

@@ -1,9 +1,9 @@
-// Module ID: 18856
-// Function ID: 18857
+// Module ID: 18866
+// Function ID: 18867
 // Name: JSWatchdogManager
-// Dependencies: [5, 1087, 3, 1104, 7214, 18857, 1257, 1267, 7584, 7581, 7571, 2]
+// Dependencies: [5, 1087, 3, 1104, 7214, 18867, 1257, 1267, 7584, 7581, 7571, 2]
 
-// Module 18856 (JSWatchdogManager)
+// Module 18866 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -72,7 +72,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             c3 = 0;
             closure_129_1._pingCompleted = true;
             c5 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp80) {
           closure_2 = tmp80;
@@ -217,7 +217,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -315,7 +315,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,9 +1,9 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 16920
+// Function ID: 16921
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5210, 558, 576, 6672, 10030, 7294, 7248, 1128, 16920, 16922, 5691, 7298, 16925, 1384, 10876, 16926, 11208, 15083, 4799, 2]
+// Dependencies: [19, 17, 21, 5210, 558, 576, 6672, 10030, 7294, 7248, 1128, 16921, 16923, 5691, 7298, 16926, 1384, 10877, 16927, 11209, 15084, 4799, 2]
 
-// Module 16919 (ViewDebugLogsSetting)
+// Module 16920 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
@@ -17,15 +17,15 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
 import ActionSheetRow from "ActionSheetRow" /* 7294 */;
 import ActionSheet2 from "ActionSheet" /* 7298 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10030 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10876 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15083 */;
-import WrenchIcon from "WrenchIcon" /* 16920 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16922 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16925 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16926 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10877 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15084 */;
+import WrenchIcon from "WrenchIcon" /* 16921 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16923 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16926 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16927 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11209 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

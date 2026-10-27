@@ -1,9 +1,9 @@
-// Module ID: 13162
-// Function ID: 13163
+// Module ID: 13165
+// Function ID: 13166
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 10898, 1087, 21, 4971, 5710, 558, 576, 1123, 13160, 1128, 10658, 10899, 5052, 10625, 7168, 9708, 1499, 1633, 13163, 7411, 5146, 13164, 10891, 5968, 5037, 11225, 2]
+// Dependencies: [19, 17, 10899, 1087, 21, 4971, 5710, 558, 576, 1123, 13163, 1128, 10658, 10900, 5052, 10625, 7168, 9708, 1499, 1633, 13166, 7411, 5146, 13167, 10892, 5968, 5037, 11226, 2]
 
-// Module 13162 (VoicePanelChatView)
+// Module 13165 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
@@ -14,9 +14,9 @@ import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7168 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10658 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10899 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13160 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10899 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10900 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13163 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

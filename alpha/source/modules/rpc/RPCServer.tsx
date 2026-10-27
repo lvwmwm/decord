@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f146340 = function() {
+    const f146430 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f146340).then;
-    then(f146340);
+    const then2 = then(f146430).then;
+    then(f146430);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

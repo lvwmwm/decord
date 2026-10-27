@@ -1,9 +1,9 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 12196
+// Function ID: 12197
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 21, 558, 576, 5914, 1128, 3830, 5210, 11849, 6903, 11844, 6987, 5234, 5977, 587, 2]
+// Dependencies: [19, 21, 558, 576, 5914, 1128, 3830, 5210, 12197, 6903, 12192, 6987, 5234, 5977, 587, 2]
 
-// Module 11848 (ConjureLinkedAppsTab)
+// Module 12196 (ConjureLinkedAppsTab)
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import react from "react" /* 19 */;

@@ -1,22 +1,22 @@
-// Module ID: 18592
-// Function ID: 18593
+// Module ID: 18602
+// Function ID: 18603
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 558, 576, 1633, 11888, 5626, 18043, 18046, 11889, 11890, 11894, 18053, 1128, 3928, 2]
+// Dependencies: [19, 21, 558, 576, 1633, 11777, 5626, 18052, 18055, 11778, 11779, 11783, 18062, 1128, 3928, 2]
 
-// Module 18592 (VoiceChannelAppSurface)
+// Module 18602 (VoiceChannelAppSurface)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef3928 from "module_3928" /* 3928 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11888 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11889 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11890 */;
-import FrameStackLevel from "FrameStackLevel" /* 11894 */;
-import useFrameLifecycle from "useFrameLifecycle" /* 18043 */;
-import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 18046 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 18053 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11777 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11778 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11779 */;
+import FrameStackLevel from "FrameStackLevel" /* 11783 */;
+import useFrameLifecycle from "useFrameLifecycle" /* 18052 */;
+import conjureBackgroundFramesDefault from "conjureBackgroundFrames" /* 18055 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18062 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
           let tmp32;
           const _Symbol5 = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation4 = tmp(18053).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation4 = tmp(18062).FrameSurfaceExplanation;
             const intl5 = tmp(1128).intl;
             const tmp34 = <FrameSurfaceExplanation4 description={intl5.string(intl6.t["2KIDX+"])} />;
             cResult[12] = tmp34;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
           let tmp28;
           const _Symbol4 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation3 = tmp(18053).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation3 = tmp(18062).FrameSurfaceExplanation;
             const intl4 = tmp(1128).intl;
             const tmp30 = <FrameSurfaceExplanation3 description={intl4.string(_modDef3928.TQptZV)} />;
             cResult[13] = tmp30;
@@ -103,7 +103,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
           let tmp24;
           const _Symbol3 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation2 = tmp(18053).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation2 = tmp(18062).FrameSurfaceExplanation;
             const intl3 = tmp(1128).intl;
             const tmp26 = <FrameSurfaceExplanation2 description={intl3.string(_modDef3928["13FYwI"])} />;
             cResult[14] = tmp26;
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
           let tmp20;
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const FrameSurfaceExplanation = tmp(18053).FrameSurfaceExplanation;
+            const FrameSurfaceExplanation = tmp(18062).FrameSurfaceExplanation;
             const intl = tmp(1128).intl;
             const intl2 = tmp(1128).intl;
             const tmp22 = <FrameSurfaceExplanation heading={intl.string(intl6.t.VquUff)} error={intl2.string(intl6.t["Sd9D/R"])} />;

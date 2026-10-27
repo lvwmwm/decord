@@ -1,9 +1,9 @@
-// Module ID: 18950
-// Function ID: 18951
+// Module ID: 18960
+// Function ID: 18961
 // Name: StageBoostUpsellManager
 // Dependencies: [5211, 4823, 4903, 4874, 6637, 7214, 5210, 6640, 9156, 4831, 6693, 2002, 2]
 
-// Module 18950 (StageBoostUpsellManager)
+// Module 18960 (StageBoostUpsellManager)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4831 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;

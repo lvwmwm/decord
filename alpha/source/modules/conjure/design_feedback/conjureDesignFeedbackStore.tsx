@@ -1,11 +1,11 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11748
+// Function ID: 11749
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 11862, 558, 576, 2]
+// Dependencies: [19, 11749, 558, 576, 2]
 // Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
 
-// Module 11861 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11862 */;
+// Module 11748 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11749 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,17 @@ let active = Object.freeze(obj);
 const map = new Map();
 const set = new Set();
 let metroRequire = 0;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDesignFeedback(arg0) {
+function getConjureDesignFeedback(arg0) {
+  let value = map.get(arg0);
+  if (value == null) {
+    value = active;
+  }
+  return value;
+}
+function canEditConjureDesignAnnotation(authorId, arg1) {
+  return null != arg1 && authorId.authorId === arg1;
+}
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDesignFeedback(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -68,16 +78,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDe
   }, items);
   return react.useSyncExternalStore(subscribeConjureDesignFeedback, callback, callback);
 });
-function getConjureDesignFeedback(arg0) {
-  let value = map.get(arg0);
-  if (value == null) {
-    value = active;
-  }
-  return value;
-}
-function canEditConjureDesignAnnotation(authorId, arg1) {
-  return null != arg1 && authorId.authorId === arg1;
-}
 let result = size.fileFinishedImporting("modules/conjure/design_feedback/conjureDesignFeedbackStore.tsx");
 
 export { getConjureDesignFeedback };
@@ -276,7 +276,6 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
   const found = annotations.find((id) => id.id === closure_0);
   let tmp3 = null != found;
   if (tmp3) {
-    const tmp4 = arg1;
     tmp3 = null != arg1 && found.authorId === arg1;
     const tmp5 = null != arg1 && found.authorId === arg1;
   }
@@ -292,7 +291,6 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
           return tmp;
         })
     };
-    let tmp6 = obj2;
     let merged = Object.assign(value);
     annotations1 = value.annotations;
     if (!obj2.active) {

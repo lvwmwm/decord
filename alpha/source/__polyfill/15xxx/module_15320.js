@@ -3,6 +3,19 @@
 // Dependencies: []
 
 // Module 15320
-const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
+  }
+  return tmp2;
+};

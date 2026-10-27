@@ -1,9 +1,9 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18498
+// Function ID: 18499
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6772, 8781, 6804, 10900, 10898, 5632, 10901, 21, 3, 5247, 4971, 587, 5052, 1630, 558, 576, 10899, 1633, 5297, 9976, 10904, 18489, 18490, 5212, 18445, 5252, 10906, 11568, 18491, 18492, 12073, 5824, 6469, 7168, 7253, 7278, 1274, 18493, 5597, 18494, 18495, 10768, 18496, 18498, 18555, 18586, 18590, 18593, 18599, 2]
+// Dependencies: [32, 19, 17, 6772, 8781, 6804, 10901, 10899, 5632, 10902, 21, 3, 5247, 4971, 587, 5052, 1630, 558, 576, 10900, 1633, 5297, 9976, 10905, 18499, 18500, 5212, 18455, 5252, 10907, 11569, 18501, 18502, 11964, 5824, 6469, 7168, 7253, 7278, 1274, 18503, 5597, 18504, 18505, 10768, 18506, 18508, 18565, 18596, 18600, 18603, 18609, 2]
 
-// Module 18488 (VoicePanelUI)
+// Module 18498 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,28 +18,28 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9976 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 10768 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10899 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10901 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10904 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10906 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12073 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18445 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18490 */;
-import PanelSizeUtils from "PanelSizeUtils" /* 18492 */;
-import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 18493 */;
-import VoicePanelAccessibilityViewDefault from "VoicePanelAccessibilityView" /* 18495 */;
-import VoicePanelHeaderDefault from "VoicePanelHeader" /* 18498 */;
-import VoicePanelVoiceChannelAppDefault from "VoicePanelVoiceChannelApp" /* 18590 */;
-import VoicePanelPIPDefault from "VoicePanelPIP" /* 18593 */;
-import VoicePanelControlsDefault from "VoicePanelControls" /* 18599 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10899 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10900 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10902 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10905 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10907 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11964 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18455 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18500 */;
+import PanelSizeUtils from "PanelSizeUtils" /* 18502 */;
+import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 18503 */;
+import VoicePanelAccessibilityViewDefault from "VoicePanelAccessibilityView" /* 18505 */;
+import VoicePanelHeaderDefault from "VoicePanelHeader" /* 18508 */;
+import VoicePanelVoiceChannelAppDefault from "VoicePanelVoiceChannelApp" /* 18600 */;
+import VoicePanelPIPDefault from "VoicePanelPIP" /* 18603 */;
+import VoicePanelControlsDefault from "VoicePanelControls" /* 18609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
 import AppFreezeStore from "AppFreezeStore" /* 8781 */;
 import VoicePanelStore from "VoicePanelStore" /* 6804 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10901 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
@@ -84,7 +84,7 @@ function useWrapperStyles(wrapperOffset) {
   const tmp3 = closure_34();
   dependencyMap = tmp3;
   obj2 = connected;
-  const context = connected.useContext(height(10899));
+  const context = connected.useContext(height(10900));
   const wrapperDimensions = context.wrapperDimensions;
   connected = context.connected;
   const controlsSpecs = context.controlsSpecs;
@@ -160,12 +160,12 @@ function useWrapperStyles(wrapperOffset) {
             tmp33(wrapperDimensions, obj);
             tmp17 = tmp32;
           }
-          tmp17(10904)(wrapperOffset, { gestureActive: false, x: 0, y: 0 });
+          tmp17(10905)(wrapperOffset, { gestureActive: false, x: 0, y: 0 });
         }
       }
     }
   };
-  let obj6 = { cheapWorkletShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10904), wrapperOffset, getMaxPanelWidth: require("PanelSizeUtils").getMaxPanelWidth, getPanelX: require("PanelSizeUtils").getPanelX, roundToNearestPixel: height(12073), windowDimensions };
+  let obj6 = { cheapWorkletShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10905), wrapperOffset, getMaxPanelWidth: require("PanelSizeUtils").getMaxPanelWidth, getPanelX: require("PanelSizeUtils").getPanelX, roundToNearestPixel: height(11964), windowDimensions };
   fn3.__closure = obj6;
   fn3.__workletHash = 7580692586417;
   fn3.__initData = __initData32;
@@ -1992,7 +1992,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const AnalyticsLocationProvider = channelId(7253).AnalyticsLocationProvider;
     obj3 = { children: items3 };
     LayerScope = channelId(5597).LayerScope;
-    items3 = [closure_21(tmp2(18494), {}), , ];
+    items3 = [closure_21(tmp2(18504), {}), , ];
     obj4 = { opacity, onPress: dismissPanel };
     items3[1] = closure_21(closure_99, obj4);
     const obj5 = { gesture: tmp12, children: closure_22(tmp2Result, obj6) };
@@ -2000,7 +2000,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let _HermesInternal = HermesInternal;
     obj6 = { style: tmp.accessibilityView, nativeID: "voice-panel-ui-" + channelId, accessibilityViewIsModal: true, layout: layoutTransition, onAccessibilityEscape: closeVoicePanelsDefault, children: items4 };
     tmp2Result = VoicePanelAccessibilityViewDefault;
-    items4 = [closure_21(tmp2(18496), {}), , , ];
+    items4 = [closure_21(tmp2(18506), {}), , , ];
     const obj7 = { wrapperOffset, children: items5 };
     const obj8 = { zIndex: 2, children: closure_21(VoicePanelHeaderDefault, obj9) };
     const LayerScope2 = channelId(5597).LayerScope;
@@ -2014,7 +2014,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp2Result2 = ReanimatedNativeViewDefault;
     GestureDetector3 = channelId(5297).GestureDetector;
     const obj14 = { viewableChunks };
-    items6 = [closure_21(tmp2(18555), obj14), closure_21(tmp2(18586), {})];
+    items6 = [closure_21(tmp2(18565), obj14), closure_21(tmp2(18596), {})];
     items5[1] = closure_21(GestureDetector2, obj10);
     items5[2] = closure_21(VoicePanelVoiceChannelAppDefault, {});
     items4[1] = closure_22(closure_95, obj7);

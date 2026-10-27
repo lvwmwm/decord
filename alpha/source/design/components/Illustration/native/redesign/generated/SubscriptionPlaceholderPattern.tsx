@@ -1,10 +1,10 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 14813
+// Function ID: 14814
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8724, 14813, 14814, 14815, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 14814, 14815, 14816, 558, 576, 4978, 5669, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 14812 (SubscriptionPlaceholderPattern)
+// Module 14813 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

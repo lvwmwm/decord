@@ -1,10 +1,10 @@
-// Module ID: 17453
-// Function ID: 17454
+// Module ID: 17454
+// Function ID: 17455
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1087, 21, 587, 12199, 11059, 5250, 4971, 558, 576, 5052, 5247, 17448, 5151, 13222, 6925, 10841, 7959, 1128, 5234, 7147, 17454, 5244, 5673, 2]
+// Dependencies: [19, 17, 1087, 21, 587, 12092, 11060, 5250, 4971, 558, 576, 5052, 5247, 17449, 5151, 13225, 6925, 10842, 7959, 1128, 5234, 7147, 17455, 5244, 5673, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 17453 (MessagesHeader)
+// Module 17454 (MessagesHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
@@ -13,9 +13,9 @@ import ButtonConstants from "ButtonConstants" /* 5250 */;
 import AssetRegistryDefault from "AssetRegistry" /* 5673 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6925 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7147 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11059 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12199 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17454 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12092 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17455 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,7 +103,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     fn.__workletHash = 17233409273245;
     fn.__initData = __initData;
     const animatedStyle = useAnimatedStyle(fn);
-    const tmpResult2 = tmp(17448);
+    const tmpResult2 = tmp(17449);
     const isHomeDrawerEnabled = tmpResult2.useIsHomeDrawerEnabled();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -224,7 +224,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       const obj4 = { size: "sm", color: nativeDefault.colors.WHITE };
-      const PlusLargeIcon = tmp(10841).PlusLargeIcon;
+      const PlusLargeIcon = tmp(10842).PlusLargeIcon;
       const tmp19 = closure_6(PlusLargeIcon, obj4);
       cResult[9] = tmp19;
       tmp18 = tmp19;
@@ -599,7 +599,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__workletHash = 5883359949214;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(17448);
+  let obj3 = height(17449);
   const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
   const callback = react.useCallback(() => {
     const obj = height(headerPanel[14]);
@@ -641,7 +641,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp12 = scrollPosition(6925)("bespoke");
   const IconButton = height(7959).IconButton;
   obj5 = { size: "sm", color: scrollPosition(587).colors.WHITE };
-  PlusLargeIcon = height(10841).PlusLargeIcon;
+  PlusLargeIcon = height(10842).PlusLargeIcon;
   intl = height(1128).intl;
   const obj6 = { style: memo, children: items1 };
   const obj7 = { style: tmp.headerPanelTitle, children: closure_6(Text, obj8) };
@@ -661,7 +661,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(7147), accessibilityLabel: intl3.string(height(1128).t["5h0QOP"]) };
   const IconButton2 = tmp3(7959).IconButton;
   intl3 = tmp3(1128).intl;
-  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(17454), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(17455), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5673), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1128).t.zIJnA6) };
   const Button = tmp3(5244).Button;
   intl4 = tmp3(1128).intl;

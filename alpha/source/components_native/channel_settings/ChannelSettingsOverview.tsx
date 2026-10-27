@@ -1,9 +1,9 @@
-// Module ID: 18257
-// Function ID: 18258
+// Module ID: 18266
+// Function ID: 18267
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4905, 4827, 4841, 10094, 4823, 4901, 4845, 4903, 6771, 18258, 4913, 1392, 18259, 1087, 4830, 7380, 1127, 1098, 21, 4971, 587, 558, 576, 504, 10861, 18260, 1128, 5037, 12, 18261, 5711, 6924, 9699, 10093, 5663, 8976, 7381, 4917, 1405, 4978, 8974, 5909, 5234, 9005, 5604, 5978, 7345, 12797, 18262, 6374, 5151, 18263, 7008, 7180, 1384, 6987, 7295, 6662, 15276, 18264, 9664, 4910, 8977, 18265, 18266, 6985, 6984, 4832, 4834, 2067, 5994, 6903, 7369, 8990, 9140, 11010, 5678, 4833, 18271, 7188, 10822, 16248, 10859, 8287, 5691, 10657, 8566, 10863, 5676, 5689, 5977, 11006, 7959, 9469, 6908, 17582, 8951, 1505, 2]
+// Dependencies: [5, 19, 17, 4905, 4827, 4841, 10094, 4823, 4901, 4845, 4903, 6771, 18267, 4913, 1392, 18268, 1087, 4830, 7380, 1127, 1098, 21, 4971, 587, 558, 576, 504, 10862, 18269, 1128, 5037, 12, 18270, 5711, 6924, 9699, 10093, 5663, 8976, 7381, 4917, 1405, 4978, 8974, 5909, 5234, 9005, 5604, 5978, 7345, 12800, 18271, 6374, 5151, 18272, 7008, 7180, 1384, 6987, 7295, 6662, 15277, 18273, 9664, 4910, 8977, 18274, 18275, 6985, 6984, 4832, 4834, 2067, 5994, 6903, 7369, 8990, 9140, 11011, 5678, 4833, 18280, 7188, 10823, 16249, 10860, 8287, 5691, 10657, 8566, 10864, 5676, 5689, 5977, 11007, 7959, 9469, 6908, 17583, 8951, 1505, 2]
 
-// Module 18257 (ChannelSettingsOverview)
+// Module 18266 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -44,17 +44,17 @@ import ThreadAutoArchive from "ThreadAutoArchive" /* 9664 */;
 import HeaderShared from "HeaderShared" /* 9699 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
 import XLargeIcon from "XLargeIcon" /* 10657 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10859 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10863 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 11006 */;
-import threadActionSheets from "threadActionSheets" /* 11010 */;
-import TableSliderRow2 from "TableSliderRow" /* 15276 */;
-import ChannelSettingsConstants from "ChannelSettingsConstants" /* 18259 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 18260 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 18261 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 18263 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 18264 */;
-import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 18266 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10860 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10864 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 11007 */;
+import threadActionSheets from "threadActionSheets" /* 11011 */;
+import TableSliderRow2 from "TableSliderRow" /* 15277 */;
+import ChannelSettingsConstants from "ChannelSettingsConstants" /* 18268 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 18269 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 18270 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 18272 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 18273 */;
+import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 18275 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
@@ -65,7 +65,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4901 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
-import RegionStore from "RegionStore" /* 18258 */;
+import RegionStore from "RegionStore" /* 18267 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -208,7 +208,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PinImage(cha
     tmp13 = tmp16;
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp19 = closure_47(channelId(10861).PinIcon, {});
+    const tmp19 = closure_47(channelId(10862).PinIcon, {});
     cResult[8] = tmp19;
     tmp17 = tmp19;
   } else {
@@ -244,7 +244,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PinImage(cha
     tmp4 = closure_47(View, obj2);
   }
   const obj4 = { style, children: items1 };
-  items1 = [closure_47(tmp2(10861).PinIcon, {}), tmp4];
+  items1 = [closure_47(tmp2(10862).PinIcon, {}), tmp4];
   return closure_48(View, obj4);
 });
 let closure_51 = tmp8;
@@ -484,7 +484,7 @@ class ChannelSettingsOverview extends PureComponent {
           let tmp7 = channel;
           if (user.rulesChannelId !== channel.id) {
             let c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
           if (user.rulesChannelId === channel.id) {
             let intl2 = tmp(c2[29]).intl;
@@ -619,7 +619,7 @@ class ChannelSettingsOverview extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -677,7 +677,7 @@ class ChannelSettingsOverview extends PureComponent {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           closure_3 = tmp30;
@@ -972,7 +972,7 @@ class ChannelSettingsOverview extends PureComponent {
         const obj = { helperText: stringResult, hasIcons: false, children: vanityURLCode(TableSliderRow, obj2) };
         const TableRowGroup = tmp8(6987).TableRowGroup;
         obj2 = { label: intl3.string(tmp8(1128).t.piZgKF), value: self._cooldown, minValue: 0, maxValue: length.length - 1, onChange: self.handleSlowmodeChange, formatValue: formatSlowmodeCooldown };
-        TableSliderRow = tmp8(15276).TableSliderRow;
+        TableSliderRow = tmp8(15277).TableSliderRow;
         intl3 = tmp8(1128).intl;
         push(vanityURLCode(TableRowGroup, obj, "slowmode-section"));
         return items;
@@ -1006,7 +1006,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp5 = tmp;
         }
         const obj = { title: intl2.string(tmp5(1128).t.FGjMZS), description: stringResult, selected: autoArchiveDuration, channel, onSelectDuration: this.handleAutoArchiveDurationChange };
-        const AutoArchiveDurationOptions = tmp5(18264).AutoArchiveDurationOptions;
+        const AutoArchiveDurationOptions = tmp5(18273).AutoArchiveDurationOptions;
         intl2 = tmp5(1128).intl;
         const threadMetadata = channel.threadMetadata;
         autoArchiveDuration = undefined;
@@ -1091,7 +1091,7 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp6 = importDefault;
         const tmp8 = AppChannelApplicationSelectorDefault;
         if (!canManageChannels) {
-          tmp9 = tmp6(18265)(channel);
+          tmp9 = tmp6(18274)(channel);
         }
         return tmp5(tmp8, obj);
       }
@@ -1314,7 +1314,7 @@ class ChannelSettingsOverview extends PureComponent {
         }
         const obj = { description: formatResult, hasIcons: false, children: vanityURLCode(TableSliderRow, obj2) };
         obj2 = { label: intl2.string(intl10.t["/AoSGN"]), value: Math.min(channel.userLimit, tmp), minValue: 0, maxValue: tmp, onChange: this.handleUserLimitChange, formatValue: formatUserLimit };
-        TableSliderRow = tmp3(15276).TableSliderRow;
+        TableSliderRow = tmp3(15277).TableSliderRow;
         intl2 = tmp3(1128).intl;
         const _Math = Math;
         push(vanityURLCode(TableRowGroup, obj, "channel-user-limit"));
@@ -1542,7 +1542,7 @@ class ChannelSettingsOverview extends PureComponent {
       }
       obj3 = { text: stringResult };
       if (channel.defaultForumLayout === self(4833).ForumLayout.GRID) {
-        tmp2Result = tmp2(tmp3(18271).GridSquareIcon, {});
+        tmp2Result = tmp2(tmp3(18280).GridSquareIcon, {});
       } else {
         tmp2Result = tmp2(tmp3(7188).ListViewIcon, {});
       }
@@ -1973,7 +1973,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp7 = self;
         }
         const TableRowGroup = tmp7(6987).TableRowGroup;
-        const obj2 = { icon: closure_47(tmp7(17582).FolderPlusIcon, {}), label: intl2.string(tmp7(1128).t.vHCZwr), trailing: closure_47(tmp7(6903).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
+        const obj2 = { icon: closure_47(tmp7(17583).FolderPlusIcon, {}), label: intl2.string(tmp7(1128).t.vHCZwr), trailing: closure_47(tmp7(6903).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
         const TableRow = tmp7(6903).TableRow;
         intl2 = tmp7(1128).intl;
         fn = undefined;

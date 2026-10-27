@@ -1,9 +1,9 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14038
+// Function ID: 14039
 // Name: ScheduledMessageCardActionButtons
 // Dependencies: [109, 21, 558, 576, 1128, 5680, 9694, 10120, 5691, 7018, 7959, 9139, 9761, 2]
 
-// Module 14036 (ScheduledMessageCardActionButtons)
+// Module 14038 (ScheduledMessageCardActionButtons)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1128 */;
 import SendMessageIcon from "SendMessageIcon" /* 5680 */;

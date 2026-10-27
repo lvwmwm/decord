@@ -1,9 +1,9 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16000
+// Function ID: 16001
 // Name: UniqueUsernamesActionCreators
 // Dependencies: [5, 1087, 1128, 584, 1297, 1267, 6676, 1275, 6374, 2]
 
-// Module 15999 (UniqueUsernamesActionCreators)
+// Module 16000 (UniqueUsernamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ let obj = {
               }
             }
             constants = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -160,7 +160,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ let obj = {
               constants = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp68) {
           closure_3 = tmp68;

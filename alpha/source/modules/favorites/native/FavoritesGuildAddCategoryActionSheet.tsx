@@ -1,14 +1,14 @@
-// Module ID: 17581
-// Function ID: 17582
+// Module ID: 17582
+// Function ID: 17583
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 4836, 21, 4971, 587, 558, 576, 4848, 10844, 5210, 7248, 1128, 7008, 5244, 5265, 2]
+// Dependencies: [32, 19, 4836, 21, 4971, 587, 558, 576, 4848, 10845, 5210, 7248, 1128, 7008, 5244, 5265, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 17581 (FavoritesGuildAddCategoryActionSheet)
+// Module 17582 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 587 */;
 import FavoritesConstants from "FavoritesConstants" /* 4836 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10844 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

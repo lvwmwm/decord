@@ -1,17 +1,17 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11730
+// Function ID: 11731
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 6772, 11699, 1087, 21, 4971, 587, 558, 576, 504, 6695, 11267, 1128, 5234, 6908, 2]
+// Dependencies: [32, 19, 17, 6772, 11700, 1087, 21, 4971, 587, 558, 576, 504, 6695, 11268, 1128, 5234, 6908, 2]
 
-// Module 11729 (ActiveSpeakerTooltip)
+// Module 11730 (ActiveSpeakerTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11267 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11268 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
-import StageChannelListStore from "StageChannelListStore" /* 11699 */;
+import StageChannelListStore from "StageChannelListStore" /* 11700 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

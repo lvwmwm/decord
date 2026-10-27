@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 
 let set3, set4;
 
-const f107888 = (kind) => "preview_ready" === kind.kind;
+const f107943 = (kind) => "preview_ready" === kind.kind;
 function patchTurn(projectId, turnId, fn) {
   const value = map.get(projectId);
   if (null != value) {
@@ -263,9 +263,9 @@ class ConjureChatStore extends Store {
     const messages = this.getMessages(arg0);
     return null != tmp && "assistant" === tmp.role && null != tmp.settingsRequest;
   }
-  isThinking(projectId) {
+  isThinking(id) {
     const obj = conjureChatTurns;
-    return obj.hasOpenTurn(map.get(projectId));
+    return obj.hasOpenTurn(map.get(id));
   }
   hasLoadedHistory(projectId) {
     return map5.has(projectId);
@@ -653,7 +653,7 @@ let obj = {
             }
             if (everyResult) {
               const steps = tmp53.steps;
-              everyResult = steps.every(f107888);
+              everyResult = steps.every(f107943);
             }
             if (everyResult) {
               const obj5 = conjureChatTurns;
@@ -793,7 +793,7 @@ let obj = {
           let everyResult = null != tmp10 && "assistant" === tmp10.role && null == tmp10.turn_id;
           if (everyResult) {
             const steps = tmp10.steps;
-            everyResult = steps.every(f107888);
+            everyResult = steps.every(f107943);
           }
           if (everyResult) {
             const tmp2Result = conjureChatTurns;

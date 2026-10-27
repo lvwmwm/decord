@@ -1,11 +1,11 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17569
+// Function ID: 17570
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 4823, 4903, 6771, 4826, 17569, 504, 10857, 10844, 2]
+// Dependencies: [5, 32, 19, 4823, 4903, 6771, 4826, 17570, 504, 10858, 10845, 2]
 // Exports: default
 
-// Module 17568 (useFavoritesCleanup)
-import FavoritesCleanup from "FavoritesCleanup" /* 10857 */;
+// Module 17569 (useFavoritesCleanup)
+import FavoritesCleanup from "FavoritesCleanup" /* 10858 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -51,7 +51,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -139,7 +139,7 @@ export default function useFavoritesCleanup(arg0) {
                 closure_129_4(false);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
             c3 = 0;
             closure_129_11.current = false;
@@ -148,7 +148,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp66) {
           closure_2 = tmp66;
           if (0 === c3) {
@@ -180,7 +180,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -248,7 +248,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === c3) {

@@ -1,10 +1,10 @@
-// Module ID: 17938
-// Function ID: 17939
+// Module ID: 17947
+// Function ID: 17948
 // Name: ICYMIShared
-// Dependencies: [19, 17, 7403, 4823, 4883, 4903, 1392, 1087, 21, 8836, 14163, 8558, 9312, 9961, 7206, 7347, 7133, 7566, 5201, 17899, 1384, 587, 558, 576, 1202, 9406, 6883, 5253, 5234, 6789, 6908, 17939, 9644, 504, 5989, 8841, 8668, 8565, 8840, 7408, 9047, 1128, 17900, 5205, 5252, 4968, 5052, 5206, 7411, 8542, 7305, 5705, 2]
+// Dependencies: [19, 17, 7403, 4823, 4883, 4903, 1392, 1087, 21, 8836, 14164, 8558, 9312, 9961, 7206, 7347, 7133, 7566, 5201, 17908, 1384, 587, 558, 576, 1202, 9406, 6883, 5253, 5234, 6789, 6908, 17948, 9644, 504, 5989, 8841, 8668, 8565, 8840, 7408, 9047, 1128, 17909, 5205, 5252, 4968, 5052, 5206, 7411, 8542, 7305, 5705, 2]
 // Exports: navigateToPost, truncateUsername
 
-// Module 17938 (ICYMIShared)
+// Module 17947 (ICYMIShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,7 +23,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 86
 import ICYMIUtils from "ICYMIUtils" /* 8840 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
 import ClipView from "ClipView" /* 9406 */;
-import openDetailsActionSheet2 from "openDetailsActionSheet" /* 17939 */;
+import openDetailsActionSheet2 from "openDetailsActionSheet" /* 17948 */;
 import react from "react" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 7403 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
@@ -32,7 +32,7 @@ import PermissionStore from "PermissionStore" /* 4903 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17899 */;
+import createICYMIStyles from "createICYMIStyles" /* 17908 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

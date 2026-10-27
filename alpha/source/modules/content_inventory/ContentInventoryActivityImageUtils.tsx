@@ -1,10 +1,10 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14281
+// Function ID: 14282
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 2045, 1087, 2026, 8829, 8620, 1128, 558, 576, 14281, 7406, 14283, 10652, 1417, 14287, 6502, 14288, 10646, 7257, 504, 1267, 8832, 2]
+// Dependencies: [19, 2045, 1087, 2026, 8829, 8620, 1128, 558, 576, 14282, 7406, 14284, 10652, 1417, 14288, 6502, 14289, 10646, 7257, 504, 1267, 8832, 2]
 // Exports: getApplicationImage
 
-// Module 14280 (ContentInventoryActivityImageUtils)
+// Module 14281 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
@@ -18,10 +18,10 @@ import ContentInventoryTypes from "ContentInventoryTypes" /* 8829 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8832 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10646 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10652 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14281 */;
-import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14283 */;
-import isOnXboxDefault from "isOnXbox" /* 14287 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14288 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14282 */;
+import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14284 */;
+import isOnXboxDefault from "isOnXbox" /* 14288 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14289 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -689,7 +689,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
     let tmp32;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { largeImage: "dispatch", smallImage: "ix" };
+      const obj2 = { largeImage: "Array", smallImage: "Reflect" };
       cResult[2] = obj2;
       tmp32 = obj2;
     } else {
@@ -871,7 +871,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
   }
   const data = useGame(canonicalGameId).data;
   if (null == application_id) {
-    return { largeImage: "dispatch", smallImage: "ix" };
+    return { largeImage: "Array", smallImage: "Reflect" };
   } else {
     let large_image;
     if (application_id != null) {

@@ -1,10 +1,10 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11428
+// Function ID: 11429
 // Name: StreamEnded
-// Dependencies: [19, 21, 8724, 11428, 11429, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 11429, 11430, 558, 576, 4978, 5669, 2]
 // Exports: getStreamEndedSource
 
-// Module 11427 (StreamEnded)
+// Module 11428 (StreamEnded)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4978 */;

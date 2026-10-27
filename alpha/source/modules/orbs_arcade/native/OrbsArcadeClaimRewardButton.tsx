@@ -1,16 +1,16 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16415
+// Function ID: 16416
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16394, 21, 5663, 1128, 558, 576, 504, 16400, 16399, 16415, 5244, 2]
+// Dependencies: [5, 19, 16395, 21, 5663, 1128, 558, 576, 504, 16401, 16400, 16416, 5244, 2]
 
-// Module 16414 (OrbsArcadeClaimRewardButton)
+// Module 16415 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16400 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16401 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16394 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
             c2 = 0;
             showOrbsArcadeClaimRewardsError();
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -193,7 +193,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           if (0 === c2) {
@@ -260,7 +260,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -293,7 +293,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           c2 = 0;
           showOrbsArcadeClaimRewardsError();
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -324,7 +324,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         if (0 === c2) {

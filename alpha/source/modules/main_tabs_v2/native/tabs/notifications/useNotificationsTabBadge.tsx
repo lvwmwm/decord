@@ -1,9 +1,9 @@
-// Module ID: 17840
-// Function ID: 17841
+// Module ID: 17849
+// Function ID: 17850
 // Name: useNotificationsTabBadge
 // Dependencies: [19, 6787, 558, 576, 504, 6788, 2]
 
-// Module 17840 (useNotificationsTabBadge)
+// Module 17849 (useNotificationsTabBadge)
 import react2 from "react" /* 576 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6788 */;
 import react from "react" /* 19 */;

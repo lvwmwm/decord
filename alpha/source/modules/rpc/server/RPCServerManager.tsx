@@ -1,9 +1,9 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 15707
+// Function ID: 15708
 // Name: RPCServerManager
-// Dependencies: [32, 7776, 4823, 4883, 4845, 2014, 5712, 5714, 4913, 4874, 1392, 5630, 6378, 1087, 2026, 6776, 5718, 1384, 584, 1267, 15707, 504, 1388, 11479, 11480, 9257, 7434, 15713, 15714, 9262, 11478, 7798, 2]
+// Dependencies: [32, 7776, 4823, 4883, 4845, 2014, 5712, 5714, 4913, 4874, 1392, 5630, 6378, 1087, 2026, 6776, 5718, 1384, 584, 1267, 15708, 504, 1388, 11480, 11481, 9257, 7434, 15714, 15715, 9262, 11479, 7798, 2]
 
-// Module 15706 (RPCServerManager)
+// Module 15707 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -15,12 +15,12 @@ import FramesConstants from "FramesConstants" /* 6776 */;
 import frameDeepLinks from "frameDeepLinks" /* 7434 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
 import transformUserDefault from "transformUser" /* 9262 */;
-import RPCHelpers from "RPCHelpers" /* 11478 */;
-import transformMessage from "transformMessage" /* 11479 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11480 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15707 */;
-import useThermalState from "useThermalState" /* 15713 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15714 */;
+import RPCHelpers from "RPCHelpers" /* 11479 */;
+import transformMessage from "transformMessage" /* 11480 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 11481 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15708 */;
+import useThermalState from "useThermalState" /* 15714 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import QuestStore from "QuestStore" /* 7776 */;
 import ChannelStore from "ChannelStore" /* 4823 */;

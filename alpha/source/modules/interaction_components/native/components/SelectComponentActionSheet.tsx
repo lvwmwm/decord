@@ -1,9 +1,9 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 12190
+// Function ID: 12191
 // Name: SelectComponentActionSheet
 // Dependencies: [19, 17, 4823, 4874, 5266, 21, 4971, 587, 558, 576, 1128, 5244, 7248, 8993, 5039, 6901, 9135, 6903, 5593, 4980, 1633, 1499, 5268, 504, 5210, 7220, 5265, 2]
 
-// Module 11842 (SelectComponentActionSheet)
+// Module 12190 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -29,6 +29,9 @@ let obj2;
 let obj3;
 let rect;
 let size;
+let tmp2;
+const FormCheckbox2 = tmp2(6901);
+const CheckmarkSmallBoldIcon = tmp2(9135);
 const View = react_native.View;
 let closure_7 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
@@ -646,10 +649,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   item = item.item;
   ({ onPressOptionItem: closure_129_1, selected, disabled, index: closure_129_2, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
   ({ clearable, start, end, iconContainerStyle, skipIcon, multi, renderIcon } = item);
-  let flag = selected;
+  const tmp2 = require;
   const tmp = closure_11();
-  const useCheckboxA11yNative = react_native2.useCheckboxA11yNative;
-  react_native2;
+  const tmp4 = react_native2;
+  let flag = selected;
+  const useCheckboxA11yNative = tmp4.useCheckboxA11yNative;
   if (selected == null) {
     flag = false;
   }
@@ -664,7 +668,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
-  const obj = {
+  let obj = {
     accessibilityRole: radioA11yNative.accessibilityRole,
     accessibilityLabel: result,
     accessibilityState: radioA11yNative.accessibilityState,
@@ -677,18 +681,18 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
     subLabel: renderDescriptionResult,
     subLabelLineClamp: 1,
     onPress() {
-      return closure_1_1(closure_1_2, item);
+      return onClose(closure_1_2, item);
     },
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(6903).TableRow;
+  const TableRow = TableRow2.TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
   tmp8Result = null;
   if (!skipIcon) {
-    const obj2 = { style: items, children: renderIcon(item) };
+    let obj2 = { style: items, children: renderIcon(item) };
     items = [tmp.selectionOptionItemIconWrapper, iconContainerStyle];
     tmp8Result = tmp8(View, obj2);
   }
@@ -696,8 +700,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   if (renderDescription != null) {
     renderDescriptionResult = renderDescription(item);
   }
-  let renderOptionSuffixResult;
   obj3 = { style: { flexDirection: "row" }, children: items1 };
+  let renderOptionSuffixResult;
   tmp13 = authStore;
   tmp14 = View;
   if (renderOptionSuffix != null) {
@@ -705,16 +709,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(6901).FormCheckbox;
+    const FormCheckbox = FormCheckbox2.FormCheckbox;
     if (!selected) {
       selected = false;
     }
-    const obj4 = { checked: selected };
+    let obj4 = { checked: selected };
     tmp8Result2 = tmp8(FormCheckbox, obj4);
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(9135).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(CheckmarkSmallBoldIcon.CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

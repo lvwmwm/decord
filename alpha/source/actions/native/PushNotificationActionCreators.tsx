@@ -1,10 +1,10 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13315
+// Function ID: 13316
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 13313, 502, 1087, 13314, 6671, 3, 1113, 1297, 1257, 13317, 510, 6676, 1384, 1275, 1388, 584, 2]
+// Dependencies: [5, 13316, 502, 1087, 13317, 6671, 3, 1113, 1297, 1257, 13320, 510, 6676, 1384, 1275, 1388, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 13312 (PushNotificationActionCreators)
+// Module 13315 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,9 +13,9 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6676 */;
-import Constants2 from "Constants" /* 13314 */;
+import Constants2 from "Constants" /* 13317 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 13313 */;
+import MultiAccountStore from "MultiAccountStore" /* 13316 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6671 */;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           c3 = 3;

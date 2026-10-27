@@ -452,7 +452,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -507,7 +507,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
                   }
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } catch (tmp30) {
                 c3 = 3;
                 throw tmp30;
@@ -667,7 +667,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -721,7 +721,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;

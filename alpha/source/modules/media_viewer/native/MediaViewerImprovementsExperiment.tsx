@@ -1,9 +1,9 @@
-// Module ID: 14245
-// Function ID: 14246
+// Module ID: 14246
+// Function ID: 14247
 // Name: MediaViewerImprovementsExperiment
 // Dependencies: [1455, 558, 576, 2]
 
-// Module 14245 (MediaViewerImprovementsExperiment)
+// Module 14246 (MediaViewerImprovementsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

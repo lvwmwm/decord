@@ -126,7 +126,7 @@ let obj = function _getOrFetchApplicationCommandIndexForTarget() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -279,7 +279,7 @@ obj = function _updateIndexAndFetchApplicationCommandIndex() {
             c4 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         closure_5 = tmp14;

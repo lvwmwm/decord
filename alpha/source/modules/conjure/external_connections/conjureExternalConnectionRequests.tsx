@@ -1,57 +1,135 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12208
+// Function ID: 12209
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 10794, 12260, 2]
+// Dependencies: [5, 10794, 12209, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 12259 (conjureExternalConnectionRequests)
+// Module 12208 (conjureExternalConnectionRequests)
 import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_4, closure_5, externalAuthErrorCode;
+let c5, closure_4, closure_5, expiresAtMs, externalAuthErrorCode;
 
 let obj = function _fetchProjectMcpConnection() {
-  let expiresAtMs;
-  obj = _asyncToGenerator(async function(arg0) {
-    let c5;
+  obj = _asyncToGenerator(async function(arg0, value) {
     let closure_2;
-    let obj6;
     let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_3 = tmp4;
-    let obj4 = closure_1;
-    if (closure_1 === undefined) {
-      obj4 = {};
-    }
-    const flag = obj4.regenerate ?? false;
-    await "Reflect";
-    const fetchConjureWorker = closure_131_0(closure_131_1[1]).fetchConjureWorker;
-    const tmp21 = closure_131_0(closure_131_1[1]);
-    const tmp22 = closure_0;
-    if (flag) {
-      obj6 = { regenerate: "1" };
-    }
-    const obj7 = { method: "POST", query: obj6 };
-    const tmp = await fetchConjureWorker(tmp22, "/agent/mcp-token", obj7);
-    if (!tmp.ok) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("mcp token failed (" + tmp.status + ")");
-      throw error;
-    }
-    closure_3 = await tmp.json();
-    if (typeof closure_3.expires_in === "number") {
-      const _Date = Date;
-      let sum = Date.now() + 1000 * closure_3.expires_in;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      const _Date2 = Date;
-      sum = Date.parse(closure_3.expires_at);
+      try {
+        let closure_3;
+        let flag;
+        let tmp;
+        c5 = 2;
+        if (0 === expiresAtMs) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_3 = tmp4;
+            flag = undefined;
+            let obj4 = closure_1;
+            if (closure_1 === undefined) {
+              obj4 = {};
+            }
+            flag = obj4.regenerate ?? false;
+            tmp = undefined;
+            closure_3 = undefined;
+            expiresAtMs = 1;
+            c5 = 1;
+            return { value: "Reflect", done: true };
+          }
+        } else if (1 === expiresAtMs) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            let obj6;
+            const fetchConjureWorker = closure_131_0(closure_131_1[1]).fetchConjureWorker;
+            const tmp21 = closure_131_0(closure_131_1[1]);
+            const tmp22 = closure_0;
+            if (flag) {
+              obj6 = { regenerate: "1" };
+            }
+            const obj7 = { method: "POST", query: obj6 };
+            expiresAtMs = 2;
+            c5 = 1;
+            const obj8 = { value: fetchConjureWorker(tmp22, "/agent/mcp-token", obj7), done: false };
+            return obj8;
+          }
+        } else if (2 === expiresAtMs) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj9 = { value, done: true };
+            return obj9;
+          } else {
+            tmp = value;
+            if (tmp.ok) {
+              expiresAtMs = 3;
+              c5 = 1;
+              const obj10 = { value: tmp.json(), done: false };
+              return obj10;
+            } else {
+              const _Error = Error;
+              const _HermesInternal = HermesInternal;
+              const self = this;
+              const self2 = this;
+              const error = new Error("mcp token failed (" + tmp.status + ")");
+              throw error;
+            }
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj11 = { value, done: true };
+          return obj11;
+        } else {
+          let sum;
+          closure_3 = value;
+          if (typeof closure_3.expires_in === "number") {
+            const _Date = Date;
+            sum = Date.now() + 1000 * closure_3.expires_in;
+          } else {
+            const _Date2 = Date;
+            sum = Date.parse(closure_3.expires_at);
+          }
+          expiresAtMs = sum;
+          obj = { url: closure_3.url, expiresAtMs };
+          c5 = 3;
+          const obj12 = { value: obj, done: true };
+          return obj12;
+        }
+      } catch (tmp25) {
+        c5 = 3;
+        throw tmp25;
+      }
     }
-    obj = { url: closure_3.url, expiresAtMs };
-    return obj;
   });
   return obj(...arguments);
 };
@@ -74,7 +152,7 @@ obj = function _requestExternalAuthorizeUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

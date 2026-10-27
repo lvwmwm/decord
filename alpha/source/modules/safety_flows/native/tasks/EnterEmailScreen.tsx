@@ -1,13 +1,13 @@
-// Module ID: 19427
-// Function ID: 19428
+// Module ID: 19437
+// Function ID: 19438
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1505, 1128, 2832, 19419, 5977, 7008, 19428, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1505, 1128, 2832, 19429, 5977, 7008, 19438, 2]
 
-// Module 19427 (EnterEmailScreen)
+// Module 19437 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2832 from "module_2832" /* 2832 */;
-import types from "types" /* 19419 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19428 */;
+import types from "types" /* 19429 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19438 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

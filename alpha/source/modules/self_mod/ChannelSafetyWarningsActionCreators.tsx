@@ -1,10 +1,10 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10941
+// Function ID: 10942
 // Name: ChannelSafetyWarningsActionCreators
 // Dependencies: [10693, 1087, 584, 1297, 2]
 // Exports: acknowledgeChannelSafetyWarningTooltip, clearChannelSafetyWarnings, dismissChannelSafetyWarnings, markAsStrangerDanger, reportFalsePositive, setChannelSafetyWarningFeedback
 
-// Module 10940 (ChannelSafetyWarningsActionCreators)
+// Module 10941 (ChannelSafetyWarningsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;

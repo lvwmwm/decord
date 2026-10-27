@@ -1,10 +1,10 @@
-// Module ID: 19338
-// Function ID: 19339
+// Module ID: 19348
+// Function ID: 19349
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 19339, 1128, 5234, 19340, 6908, 19337, 5210, 19341, 2002, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 19349, 1128, 5234, 19350, 6908, 19347, 5210, 19351, 2002, 2]
 // Exports: NotificationSettingsGuildMessageNotification
 
-// Module 19338 (NotificationSettingsMessageNotification)
+// Module 19348 (NotificationSettingsMessageNotification)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Pressables from "Pressables" /* 6908 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 19339 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 19340 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 19349 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 19350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -300,7 +300,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(19341, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
+      obj.openLazy(asyncRequire(19351, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");

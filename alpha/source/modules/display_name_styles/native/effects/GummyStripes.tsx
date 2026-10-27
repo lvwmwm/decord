@@ -1,9 +1,9 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 15871
+// Function ID: 15872
 // Name: GummyStripes
 // Dependencies: [19, 17, 21, 4971, 558, 576, 1105, 2]
 
-// Module 15870 (GummyStripes)
+// Module 15871 (GummyStripes)
 import react_native from "react-native" /* 17 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import react from "react" /* 19 */;

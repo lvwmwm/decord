@@ -1,9 +1,9 @@
-// Module ID: 19158
-// Function ID: 19159
+// Module ID: 19168
+// Function ID: 19169
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 4845, 4903, 9006, 1087, 21, 4971, 587, 10151, 1128, 5234, 9961, 5686, 558, 576, 1505, 504, 9005, 19159, 19163, 5662, 5669, 2067, 5244, 5592, 2]
+// Dependencies: [19, 17, 4845, 4903, 9006, 1087, 21, 4971, 587, 10151, 1128, 5234, 9961, 5686, 558, 576, 1505, 504, 9005, 19169, 19173, 5662, 5669, 2067, 5244, 5592, 2]
 
-// Module 19158 (GuildSettingsModalCommunityIntro)
+// Module 19168 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -13,7 +13,7 @@ import CircleInformationIcon2 from "CircleInformationIcon" /* 5686 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
 import LightbulbIcon2 from "LightbulbIcon" /* 9961 */;
 import AnalyticsIcon2 from "AnalyticsIcon" /* 10151 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19163 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19173 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4845 */;

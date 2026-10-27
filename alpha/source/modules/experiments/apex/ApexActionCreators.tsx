@@ -1,10 +1,10 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11221
+// Function ID: 11222
 // Name: ApexActionCreators
 // Dependencies: [109, 5, 1261, 1087, 1297, 584, 8488, 1458, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11220 (ApexActionCreators)
+// Module 11221 (ApexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
@@ -29,7 +29,7 @@ let obj = function _fetchApexExperimentsMetadata() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -84,7 +84,7 @@ let obj = function _fetchApexExperimentsMetadata() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         closure_3 = tmp16;
@@ -116,7 +116,7 @@ obj = function _fetchUserExperimentAssignments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _fetchUserExperimentAssignments() {
             obj3.dispatch(obj13);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           closure_3 = tmp34;
           if (0 === c4) {
@@ -206,7 +206,7 @@ obj = function _fetchInstallationExperiments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -293,7 +293,7 @@ obj = function _fetchInstallationExperiments() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp47) {
         experiments = tmp47;
         if (0 === c4) {

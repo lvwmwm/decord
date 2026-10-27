@@ -1,14 +1,14 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11197
+// Function ID: 11198
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [11197, 11198, 1357, 504, 584, 2]
+// Dependencies: [11198, 11199, 1357, 504, 584, 2]
 
-// Module 11196 (FirstPartyRichPresenceStore)
+// Module 11197 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 11198 */;
-import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 11197 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 11199 */;
+import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 11198 */;
 import size from "module_2" /* 2 */;
 
 function updateActivities() {

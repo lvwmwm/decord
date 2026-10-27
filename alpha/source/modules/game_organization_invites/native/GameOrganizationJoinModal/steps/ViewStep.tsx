@@ -1,15 +1,15 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12726
+// Function ID: 12727
 // Name: ViewStep
-// Dependencies: [19, 12722, 21, 4971, 558, 576, 1505, 12724, 12725, 7900, 7901, 5977, 587, 12726, 5234, 1128, 2406, 8560, 12727, 5244, 2]
+// Dependencies: [19, 12725, 21, 4971, 558, 576, 1505, 12727, 12728, 7900, 7901, 5977, 587, 12729, 5234, 1128, 2406, 8560, 12730, 5244, 2]
 
-// Module 12723 (ViewStep)
+// Module 12726 (ViewStep)
 import nativeDefault from "native" /* 587 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12722 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12724 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12725 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12726 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12727 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12728 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12729 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
                                             }
                                             if (cResult[54] !== navigation) {
                                               const obj5 = { children: closure_4(navigation(5244).Button, obj6) };
-                                              const ModalFooter = tmp(12727).ModalFooter;
+                                              const ModalFooter = tmp(12730).ModalFooter;
                                               obj6 = {
                                                 text: tmp54,
                                                 size: "lg",
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewStep(cod
     items1[1] = closure_5(Stack4, obj8);
     items5 = [closure_4(ModalContent, obj17), ];
     const obj18 = { children: closure_4(Button, obj19) };
-    const ModalFooter = tmp2(12727).ModalFooter;
+    const ModalFooter = tmp2(12730).ModalFooter;
     obj19 = {
       text: intl2.string(require("intl").t["3PatSz"]),
       size: "lg",

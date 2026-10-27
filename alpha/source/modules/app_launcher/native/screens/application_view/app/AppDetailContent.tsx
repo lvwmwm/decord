@@ -1,10 +1,10 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12012
+// Function ID: 12013
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9650, 1504, 1087, 5983, 21, 4971, 12122, 587, 558, 576, 12034, 6903, 11168, 7630, 11404, 12096, 1128, 1633, 10204, 2000, 12126, 9649, 5634, 12031, 1384, 12128, 5234, 12130, 12093, 12132, 9648, 1202, 12140, 12142, 5210, 5711, 10744, 2]
+// Dependencies: [5, 19, 17, 9650, 1504, 1087, 5983, 21, 4971, 12013, 587, 558, 576, 11925, 6903, 11169, 7630, 11405, 11987, 1128, 1633, 10204, 2000, 12017, 9649, 5634, 11922, 1384, 12019, 5234, 12021, 11984, 12023, 9648, 1202, 12031, 12033, 5210, 5711, 10744, 2]
 // Exports: default
 
-// Module 12121 (AppDetailContent)
+// Module 12012 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,13 +17,13 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */
 import TableRow2 from "TableRow" /* 6903 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9649 */;
-import AppLauncherContext from "AppLauncherContext" /* 11168 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12031 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 12034 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12096 */;
-import Header from "Header" /* 12122 */;
-import BillIcon from "BillIcon" /* 12128 */;
-import ShopIcon from "ShopIcon" /* 12130 */;
+import AppLauncherContext from "AppLauncherContext" /* 11169 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11922 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11925 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 11987 */;
+import Header from "Header" /* 12013 */;
+import BillIcon from "BillIcon" /* 12019 */;
+import ShopIcon from "ShopIcon" /* 12021 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
@@ -378,7 +378,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -419,7 +419,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
                     closure_0();
                   }
                   c3 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp12) {
                 c3 = 3;
@@ -474,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
   let onPressSend;
   ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
   let tmp = command;
-  let obj = command(11168);
+  let obj = command(11169);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   const tmp3 = onPressSend(true, true);
   hasOptions(context, true, true);
@@ -494,8 +494,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     sectionName
   };
   fn = undefined;
-  const useCommandRowSend = command(12096).useCommandRowSend;
-  const tmp5 = command(12096);
+  const useCommandRowSend = command(11987).useCommandRowSend;
+  const tmp5 = command(11987);
   if (installOnDemand) {
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let obj5;
@@ -511,7 +511,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -552,7 +552,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
               closure_0();
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11746
+// Function ID: 11747
 // Name: ConjureActivity
 // Dependencies: [2]
 // Exports: compareConjureProjectsByUpdatedAt, conjureActivity, conjureProjectGuildId, sortConjureProjects
 
-// Module 11747 (ConjureActivity)
+// Module 11746 (ConjureActivity)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { building: 0, done: 1, idle: 2 };
@@ -57,10 +57,10 @@ export const compareConjureProjectsByUpdatedAt = function compareConjureProjects
   }
   return num;
 };
-export const conjureProjectGuildId = function conjureProjectGuildId(guild_id) {
-  guild_id = guild_id.guild_id;
+export const conjureProjectGuildId = function conjureProjectGuildId(project) {
+  let guild_id = project.guild_id;
   if (guild_id == null) {
-    guild_id = guild_id.preview_guild_id;
+    guild_id = project.preview_guild_id;
   }
   if (guild_id == null) {
     guild_id = null;

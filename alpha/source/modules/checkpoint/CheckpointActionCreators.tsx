@@ -1,17 +1,17 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12957
+// Function ID: 12958
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4823, 12953, 1087, 584, 1297, 12955, 12956, 7411, 1267, 7755, 7566, 12904, 1388, 2]
+// Dependencies: [5, 4823, 12956, 1087, 584, 1297, 12958, 12959, 7411, 1267, 7755, 7566, 12907, 1388, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
 
-// Module 12954 (CheckpointActionCreators)
+// Module 12957 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import formatResults from "formatResults" /* 12904 */;
+import formatResults from "formatResults" /* 12907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
-import CheckpointStore from "CheckpointStore" /* 12953 */;
+import CheckpointStore from "CheckpointStore" /* 12956 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -129,7 +129,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -202,7 +202,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -277,7 +277,7 @@ obj = function _sendSidekickMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -353,7 +353,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -435,7 +435,7 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           c8 = 0;

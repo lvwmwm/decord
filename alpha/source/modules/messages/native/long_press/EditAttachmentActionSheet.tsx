@@ -1,9 +1,9 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13985
+// Function ID: 13986
 // Name: EditAttachmentActionSheet
 // Dependencies: [5, 32, 19, 6010, 4976, 1087, 21, 558, 576, 8659, 8758, 1405, 1128, 4980, 7566, 7248, 5234, 7180, 6900, 5244, 5977, 587, 7298, 2]
 
-// Module 13983 (EditAttachmentActionSheet)
+// Module 13985 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1087 */;
 import MessageConstants from "MessageConstants" /* 4976 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
@@ -295,7 +295,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -358,7 +358,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
             c2 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -439,7 +439,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -501,7 +501,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
             c2 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;

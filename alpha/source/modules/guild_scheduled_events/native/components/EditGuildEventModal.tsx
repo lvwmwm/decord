@@ -190,7 +190,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let onClose;
   let right;
   let tmp8;
-  const f102080 = () => {
+  const f102130 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -228,7 +228,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               announce(intl.string(tmp3(guildEvent[16]).t["5HzXO5"]));
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           c2 = 3;
@@ -310,7 +310,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f102080), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f102130), 2);
   constants = {
     guild,
     guildEvent,
@@ -370,7 +370,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f102080), 2);
+  const tmp7 = first1(require("LazyAPIPromise")(f102130), 2);
   const CHANNEL_SELECTOR = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
   const CHANNEL_SELECTOR2 = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;

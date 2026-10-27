@@ -1,9 +1,9 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13026
+// Function ID: 13027
 // Name: FinalizeTraitActionSheet
 // Dependencies: [21, 6362, 3088, 558, 576, 7248, 1128, 5210, 6984, 7298, 6985, 2]
 
-// Module 13023 (FinalizeTraitActionSheet)
+// Module 13026 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef3088 from "module_3088" /* 3088 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;

@@ -1,10 +1,10 @@
-// Module ID: 14735
-// Function ID: 14736
+// Module ID: 14736
+// Function ID: 14737
 // Name: navigateToSocialLayerStorefront
 // Dependencies: [5, 4845, 7332, 1087, 10556, 7330, 1114, 7448, 8866, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 14735 (navigateToSocialLayerStorefront)
+// Module 14736 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1114 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7330 */;
 import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10556 */;
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
             joinedAt = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c3) {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (2 === c3) {

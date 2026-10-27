@@ -1,10 +1,10 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11362
+// Function ID: 11363
 // Name: getOrFetchApplication
 // Dependencies: [5, 2045, 6809, 2]
 // Exports: default
 
-// Module 11361 (getOrFetchApplication)
+// Module 11362 (getOrFetchApplication)
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
@@ -27,7 +27,7 @@ let obj = function _getOrFetchApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

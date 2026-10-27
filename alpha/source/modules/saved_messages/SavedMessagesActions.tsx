@@ -1,17 +1,17 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13810
+// Function ID: 13811
 // Name: SavedMessagesActions
 // Dependencies: [5, 10077, 1087, 1297, 10078, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 13808 (SavedMessagesActions)
+// Module 13810 (SavedMessagesActions)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 10077 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, c6, c7, c8, results;
+let bookmarksFetchState, c3, c4, c8, results;
 
 let obj = function _upsertSavedMessage() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -108,7 +108,7 @@ obj = function _fetchSavedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -167,7 +167,7 @@ obj = function _fetchSavedMessages() {
             return obj10;
           } else {
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -204,11 +204,15 @@ obj = function _fetchSavedMessages() {
 };
 obj = function _fetchBookmarks() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let bookmarksCursor2;
     let closure_4;
+    let flag;
     let obj12;
     let obj9;
+    let requestId;
     let results1;
     let sum;
+    let tmp4;
     function shouldFetchBookmarks(flag) {
       obj = bookmarksFetchState;
       bookmarksFetchState = bookmarksFetchState.getBookmarksFetchState();
@@ -227,146 +231,80 @@ obj = function _fetchBookmarks() {
       }
     }
     let closure_0 = arg0;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    await value;
+    if (2 === tmp4) {
       if (arg0 === 1) {
+        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: "+352" };
+        c7 = 3;
+        const obj10 = { value, done: true };
+        return obj10;
+      } else if (shouldFetchBookmarks(flag)) {
+        bookmarksCursor2 = bookmarksCursor.getBookmarksCursor();
+        sum = sum + 1;
+        requestId = sum;
+        const obj11 = { type: "BOOKMARKS_FETCH", requestId };
+        const obj5 = closure_132_1(closure_132_2[5]);
+        obj5.dispatch(obj11);
+        let c5 = 1;
+        const HTTP = closure_132_0(closure_132_2[3]).HTTP;
+        const request = { url: constants.GET_BOOKMARKS, query: obj12, retries: 2, rejectWithError: obj9.rejectWithMigratedError() };
+        let before = bookmarksCursor2;
+        const get = HTTP.get;
+        if (bookmarksCursor2 == null) {
+          before = undefined;
+        }
+        obj12 = { before, limit: 25 };
+        obj9 = closure_132_0(closure_132_2[3]);
+        let c6 = 4;
+        c7 = 1;
+        const obj13 = { value: get(request), done: false };
+        return obj13;
       }
+    } else if (3 === tmp4) {
+      c5 = 0;
+      const obj14 = { type: "BOOKMARKS_FETCH_FAILURE", requestId };
+      const obj2 = closure_132_1(closure_132_2[5]);
+      obj2.dispatch(obj14);
+      c7 = 3;
+      const obj15 = { value: undefined, done: true };
+      return obj15;
+    } else if (arg0 === 1) {
+      c7 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c5 = 0;
+      c7 = 3;
+      obj = { value, done: true };
+      return obj;
     } else {
-      let c5;
-      try {
-        let flag;
-        let nextBefore;
-        let bookmarksCursor2;
-        let requestId;
-        let body;
-        c7 = 2;
-        let tmp4 = c6;
-        if (0 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let bookmarksFetchState = tmp;
-            let closure_3 = tmp4;
-            flag = undefined;
-            let obj6 = closure_0;
-            if (closure_0 === undefined) {
-              obj6 = {};
-            }
-            flag = obj6.loadMore ?? false;
-            nextBefore = undefined;
-            bookmarksCursor2 = undefined;
-            requestId = undefined;
-            body = undefined;
-            c6 = 1;
-            c7 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            c6 = 2;
-            c7 = 1;
-            const obj8 = { value, done: false };
-            return obj8;
-          }
-        } else {
-          if (2 === tmp4) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj10 = { value, done: true };
-              return obj10;
-            } else if (shouldFetchBookmarks(flag)) {
-              bookmarksCursor2 = bookmarksCursor.getBookmarksCursor();
-              sum = sum + 1;
-              requestId = sum;
-              const obj11 = { type: "BOOKMARKS_FETCH", requestId };
-              const obj5 = closure_132_1(closure_132_2[5]);
-              obj5.dispatch(obj11);
-              c5 = 1;
-              const HTTP = closure_132_0(closure_132_2[3]).HTTP;
-              const request = { url: constants.GET_BOOKMARKS, query: obj12, retries: 2, rejectWithError: obj9.rejectWithMigratedError() };
-              let before = bookmarksCursor2;
-              const get = HTTP.get;
-              if (bookmarksCursor2 == null) {
-                before = undefined;
-              }
-              obj12 = { before, limit: 25 };
-              obj9 = closure_132_0(closure_132_2[3]);
-              c6 = 4;
-              c7 = 1;
-              const obj13 = { value: get(request), done: false };
-              return obj13;
-            }
-          } else if (3 === tmp4) {
-            c5 = 0;
-            const obj14 = { type: "BOOKMARKS_FETCH_FAILURE", requestId };
-            const obj2 = closure_132_1(closure_132_2[5]);
-            obj2.dispatch(obj14);
-            c7 = 3;
-            const obj15 = { value: undefined, done: true };
-            return obj15;
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            nextBefore = value;
-            c5 = 0;
-            body = nextBefore.body;
-            const obj16 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more };
-            results = body.results;
-            const dispatch = closure_132_1(closure_132_2[5]).dispatch;
-            const tmp53 = closure_132_1(closure_132_2[5]);
-            const atResult = results.at(-1);
-            let saved_at;
-            if (atResult != null) {
-              saved_at = atResult.save_data.saved_at;
-            }
-            nextBefore = saved_at;
-            if (saved_at == null) {
-              nextBefore = bookmarksCursor2;
-            }
-            results1 = body.results;
-            dispatch(obj16);
-          }
-          c7 = 3;
-          return { value: "IconComponent", done: "+352" };
-        }
-      } catch (tmp42) {
-        if (0 === c5) {
-          c7 = 3;
-          throw tmp42;
-        } else {
-          c6 = 3;
-        }
+      let nextBefore = value;
+      c5 = 0;
+      const body = nextBefore.body;
+      const obj16 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more };
+      results = body.results;
+      const dispatch = closure_132_1(closure_132_2[5]).dispatch;
+      const tmp53 = closure_132_1(closure_132_2[5]);
+      const atResult = results.at(-1);
+      let saved_at;
+      if (atResult != null) {
+        saved_at = atResult.save_data.saved_at;
       }
+      nextBefore = saved_at;
+      if (saved_at == null) {
+        nextBefore = bookmarksCursor2;
+      }
+      results1 = body.results;
+      dispatch(obj16);
     }
+    await "IconComponent";
+    let obj6 = closure_0;
+    if (closure_0 === undefined) {
+      obj6 = {};
+    }
+    flag = obj6.loadMore ?? false;
+    return "Reflect";
   });
   return obj(...arguments);
 };

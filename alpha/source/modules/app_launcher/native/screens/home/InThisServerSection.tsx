@@ -1,14 +1,14 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 11994
+// Function ID: 11995
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12079, 1388, 5234, 1128, 6908, 12031, 11169, 12036, 8913, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 11970, 1388, 5234, 1128, 6908, 11922, 11170, 11927, 8913, 2]
 
-// Module 12103 (InThisServerSection)
+// Module 11994 (InThisServerSection)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11169 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12079 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11170 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11970 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -272,7 +272,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
   const tmp4 = closure_7();
   const application = appItem.application;
   if (cResult[0] !== application) {
-    const tmpResult = tmp(12031);
+    const tmpResult = tmp(11922);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -349,7 +349,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
     let tmp9 = null;
     if (null != tmp5) {
       const obj4 = { iconSource: tmp5, wrapperStyle: tmp4.iconContainer, iconSize: 36 };
-      tmp9 = closure_5(application(12036), obj4);
+      tmp9 = closure_5(application(11927), obj4);
     }
     cResult[5] = tmp5;
     cResult[6] = tmp4.iconContainer;
@@ -387,7 +387,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
   let tmp = closure_7();
   const application = appItem.application;
   let tmp2 = onAppSelected;
-  let obj = onAppSelected(12031);
+  let obj = onAppSelected(11922);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp6 = null;
   const obj2 = {
@@ -412,7 +412,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
   const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(12036), obj3);
+    tmp6 = closure_5(application(11927), obj3);
   }
   items = [tmp6, ];
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };

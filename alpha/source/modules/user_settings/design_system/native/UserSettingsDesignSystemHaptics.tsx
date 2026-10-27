@@ -1,9 +1,9 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17181
+// Function ID: 17182
 // Name: UserSettingsDesignSystemHaptics
 // Dependencies: [19, 17, 21, 4971, 558, 576, 5212, 5244, 5213, 6905, 5977, 5234, 5214, 2]
 
-// Module 17180 (UserSettingsDesignSystemHaptics)
+// Module 17181 (UserSettingsDesignSystemHaptics)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import HapticUtils from "HapticUtils" /* 5212 */;

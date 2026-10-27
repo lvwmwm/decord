@@ -1,10 +1,10 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16567
+// Function ID: 16568
 // Name: useRestorePurchases
 // Dependencies: [5, 32, 19, 3, 7531, 2]
 // Exports: default
 
-// Module 16566 (useRestorePurchases)
+// Module 16567 (useRestorePurchases)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -39,7 +39,7 @@ export default function useRestorePurchases() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -95,7 +95,7 @@ export default function useRestorePurchases() {
             closure_129_2(false);
             logger.log("isRestoring false");
             logger = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp39) {
           closure_2 = tmp39;

@@ -1,23 +1,24 @@
 // Module ID: 12607
 // Function ID: 12608
-// Dependencies: [12584]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [12582, 12602]
+// Exports: getDefaultCurrentScope, getDefaultIsolationScope
 
 // Module 12607
-import _mod12584 from "module_12584" /* 12584 */;
+import _mod12582 from "module_12582" /* 12582 */;
+import _mod12602 from "module_12602" /* 12602 */;
 
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+export const getDefaultCurrentScope = function getDefaultCurrentScope() {
+  const obj = _mod12582;
+  return obj.getGlobalSingleton("defaultCurrentScope", () => {
+    const scope = new _mod12602.Scope();
+    return scope;
+  });
 };
-export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  const tmp = arg0;
-  if (tmp) {
-    const obj = _mod12584;
-    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const obj2 = _mod12584;
-    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
-  }
+export const getDefaultIsolationScope = function getDefaultIsolationScope() {
+  const obj = _mod12582;
+  return obj.getGlobalSingleton("defaultIsolationScope", () => {
+    const scope = new _mod12602.Scope();
+    return scope;
+  });
 };

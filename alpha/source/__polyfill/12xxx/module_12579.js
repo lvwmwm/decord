@@ -1,24 +1,58 @@
 // Module ID: 12579
 // Function ID: 12580
-// Dependencies: [12580]
-// Exports: getGlobalSingleton
+// Dependencies: [12580, 12581, 12584]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 12579
 import _mod12580 from "module_12580" /* 12580 */;
+import _mod12584 from "module_12584" /* 12584 */;
 
+let closure_2 = {};
+let closure_3 = {};
 
-export const GLOBAL_OBJ = globalThis;
-export const getGlobalSingleton = function getGlobalSingleton(arg0, fn, arg2) {
-  const tmp2 = (arg2 || globalThis).__SENTRY__ || {};
-  (arg2 || globalThis).__SENTRY__ = tmp2;
-  const SDK_VERSION = _mod12580.SDK_VERSION;
-  const tmp3 = tmp2[_mod12580.SDK_VERSION] || {};
-  tmp2[SDK_VERSION] = tmp3;
-  let tmp4 = tmp3[arg0];
-  if (!tmp4) {
-    const tmp6 = fn();
-    tmp3[arg0] = tmp6;
-    tmp4 = tmp6;
+export const addHandler = function addHandler(arg0, arg1) {
+  const tmp2 = closure_2[arg0] || [];
+  closure_2[arg0] = tmp2;
+  const arr = closure_2[arg0];
+  arr.push(arg1);
+};
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp[arg0] = true;
+    try {
+      fn();
+    } catch (tmp4) {
+      const tmp5 = require;
+      if (_mod12580.DEBUG_BUILD) {
+        const logger = tmp5(12581).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + arg0, tmp4);
+      }
+    }
   }
-  return tmp4;
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    closure_1_2[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  if (arg0 && closure_2[arg0]) {
+    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
+    const nextResult = iter.next();
+    if (iter !== undefined) {
+      try {
+        nextResult(arg1);
+      } catch (tmp11) {
+        if (_mod12580.DEBUG_BUILD) {
+          const logger = tmp12(12581).logger;
+          const error = logger.error;
+          const _HermesInternal = HermesInternal;
+          const tmp12Result = _mod12584;
+          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
+        }
+      }
+    }
+  }
 };

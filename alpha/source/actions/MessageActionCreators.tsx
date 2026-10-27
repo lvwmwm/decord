@@ -1,7 +1,7 @@
 // Module ID: 7566
 // Function ID: 7567
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6496, 6844, 7567, 7568, 7751, 7753, 7696, 6766, 6642, 502, 4823, 7754, 4845, 5700, 6010, 4903, 5712, 6771, 7760, 1392, 1087, 7762, 7427, 4976, 17, 3, 5699, 7763, 5703, 7766, 7767, 5711, 7772, 6715, 7792, 1267, 5701, 7808, 7811, 6372, 7813, 1128, 2067, 8146, 584, 10207, 6484, 10203, 8586, 1297, 6012, 7323, 9, 7597, 6491, 11, 4849, 4869, 7586, 6494, 14638, 10098, 9061, 14639, 2053, 7757, 1405, 7367, 8284, 14640, 8140, 11348, 14644, 9669, 14034, 14040, 6845, 1104, 8268, 2000, 8287, 4978, 10497, 5908, 2]
+// Dependencies: [32, 5, 6496, 6844, 7567, 7568, 7751, 7753, 7696, 6766, 6642, 502, 4823, 7754, 4845, 5700, 6010, 4903, 5712, 6771, 7760, 1392, 1087, 7762, 7427, 4976, 17, 3, 5699, 7763, 5703, 7766, 7767, 5711, 7772, 6715, 7792, 1267, 5701, 7808, 7811, 6372, 7813, 1128, 2067, 8146, 584, 10207, 6484, 10203, 8586, 1297, 6012, 7323, 9, 7597, 6491, 11, 4849, 4869, 7586, 6494, 14639, 10098, 9061, 14640, 2053, 7757, 1405, 7367, 8284, 14641, 8140, 11349, 14645, 9669, 14036, 14042, 6845, 1104, 8268, 2000, 8287, 4978, 10497, 5908, 2]
 
 // Module 7566 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -29,7 +29,7 @@ import getInviteURLDefault from "getInviteURL" /* 9061 */;
 import createNonce from "createNonce" /* 10203 */;
 import createMessage from "createMessage" /* 10207 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10497 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14639 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
@@ -454,7 +454,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f98960 = () => {
+    const f99010 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -478,8 +478,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f98960));
-      withResult1.otherwise(f98960);
+      ({ message, messageName } = withResult1.otherwise(f99010));
+      withResult1.otherwise(f99010);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -582,7 +582,7 @@ let obj17 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -625,7 +625,7 @@ let obj17 = {
               return obj7;
             } else {
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp10) {
@@ -830,7 +830,7 @@ let obj17 = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -915,7 +915,7 @@ let obj17 = {
             }
           }
           after = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp63) {
           after = 3;
           throw tmp63;
@@ -938,7 +938,7 @@ let obj17 = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1025,7 +1025,7 @@ let obj17 = {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           c3 = 3;
           throw tmp26;
@@ -1428,7 +1428,7 @@ let obj17 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c7;
@@ -1795,7 +1795,7 @@ let obj17 = {
                 if (null == closure_18) {
                   c7 = 0;
                   c9 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   attachments2 = closure_18.attachments;
                   uploader = closure_18.uploader;
@@ -1803,7 +1803,7 @@ let obj17 = {
                   if (tmp204) {
                     c7 = 0;
                     c9 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                   let tmp45 = attachments2;
                   if (null != attachments2) {
@@ -2408,7 +2408,7 @@ let obj17 = {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -2486,7 +2486,7 @@ let obj17 = {
                 obj5.focusMessage(obj6);
               });
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -2515,7 +2515,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2556,7 +2556,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2585,7 +2585,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2626,7 +2626,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2667,9 +2667,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f162384);
+        dispatchResult.then(f162487);
       }
-      const f162384 = () => {
+      const f162487 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2685,7 +2685,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2730,11 +2730,11 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f162384);
+              dispatchResult.then(f162487);
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp9) {
           c3 = 3;
           throw tmp9;

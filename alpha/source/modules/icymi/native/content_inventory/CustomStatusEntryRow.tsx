@@ -1,18 +1,18 @@
-// Module ID: 17955
-// Function ID: 17956
+// Module ID: 17964
+// Function ID: 17965
 // Name: CustomStatusEntryRow
-// Dependencies: [19, 21, 558, 576, 17951, 17956, 2]
+// Dependencies: [19, 21, 558, 576, 17960, 17965, 2]
 
-// Module 17955 (CustomStatusEntryRow)
+// Module 17964 (CustomStatusEntryRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ICYMICustomStatusRowDefault from "ICYMICustomStatusRow" /* 17956 */;
+import ICYMICustomStatusRowDefault from "ICYMICustomStatusRow" /* 17965 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useReplyActions = tmp(17951);
+const useReplyActions = tmp(17960);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatusEntryRow(arg0) {
   let content;

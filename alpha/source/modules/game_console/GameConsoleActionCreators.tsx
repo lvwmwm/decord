@@ -1,15 +1,15 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11653
+// Function ID: 11654
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5714, 5716, 5715, 1087, 1267, 584, 5908, 1128, 5857, 11653, 1297, 1257, 2]
+// Dependencies: [5, 5714, 5716, 5715, 1087, 1267, 584, 5908, 1128, 5857, 11654, 1297, 1257, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 11652 (GameConsoleActionCreators)
+// Module 11653 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import AudioSettingsUtils from "AudioSettingsUtils" /* 5857 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 11653 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 11654 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import SessionsStore from "SessionsStore" /* 5716 */;
@@ -39,7 +39,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -200,7 +200,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;

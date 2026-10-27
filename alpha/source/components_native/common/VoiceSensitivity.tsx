@@ -1,9 +1,9 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11621
+// Function ID: 11622
 // Name: VoiceSensitivity
 // Dependencies: [5, 32, 19, 17, 2014, 6685, 2001, 1087, 7868, 21, 4971, 587, 4968, 558, 576, 1499, 504, 7885, 5739, 4980, 1128, 1202, 8951, 1384, 8769, 2]
 
-// Module 11620 (VoiceSensitivity)
+// Module 11621 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -649,7 +649,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensiti
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -684,7 +684,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensiti
                 mediaEngine.on(_true(first[18]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c2 = 3;

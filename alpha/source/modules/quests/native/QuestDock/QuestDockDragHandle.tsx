@@ -1,14 +1,14 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16528
+// Function ID: 16529
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6710, 16440, 21, 4971, 558, 576, 16441, 5052, 5247, 1128, 5582, 7168, 16439, 2]
+// Dependencies: [19, 17, 6710, 16441, 21, 4971, 558, 576, 16442, 5052, 5247, 1128, 5582, 7168, 16440, 2]
 
-// Module 16527 (QuestDockDragHandle)
+// Module 16528 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
 import spring from "spring" /* 5247 */;
 import QuestConstants from "QuestConstants" /* 6710 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7168 */;
-import QuestDockConstants from "QuestDockConstants" /* 16440 */;
+import QuestDockConstants from "QuestDockConstants" /* 16441 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   isExpanded = isExpanded.isExpanded;
   const variant = isExpanded.variant;
   const tmp4 = closure_8();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16441).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16442).QuestDockGestureContext).activeQuestDockMode;
   importDefault = tmp5;
   let obj2 = activeQuestDockMode(5052);
   const fn = function c() {
@@ -195,7 +195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp33 = tmp36;
           }
         }
-        const obj11 = { style: animatedStyle, layout: tmp(16439).dimensionsLayoutTransition, children: items };
+        const obj11 = { style: animatedStyle, layout: tmp(16440).dimensionsLayoutTransition, children: items };
         items = [tmp15, tmp24];
         const tmp31 = ReanimatedNativeViewDefault;
         const tmp32 = closure_7(tmp31, obj11);
@@ -240,7 +240,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_8();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16441).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16442).QuestDockGestureContext).activeQuestDockMode;
   importDefault = tmp4;
   let obj = activeQuestDockMode(5052);
   const fn = function c() {
@@ -301,7 +301,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ withSpring: activeQuestDockMode(5247).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj5.useAnimatedStyle(fn3);
   const obj7 = { style: tmp.dragHandleWrapper, children: tmp11(tmp12, obj8) };
-  obj8 = { style: animatedStyle, layout: activeQuestDockMode(16439).dimensionsLayoutTransition, children: items1 };
+  obj8 = { style: animatedStyle, layout: activeQuestDockMode(16440).dimensionsLayoutTransition, children: items1 };
   const tmp10 = ReanimatedNativeViewDefault;
   tmp12 = ReanimatedNativeViewDefault;
   const obj9 = { style: items, children: closure_6(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };

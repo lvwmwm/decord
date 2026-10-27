@@ -1,10 +1,10 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12881
+// Function ID: 12882
 // Name: FamilyCenterModalRequestRouting
 // Dependencies: [5, 7646, 7647, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 12878 (FamilyCenterModalRequestRouting)
+// Module 12881 (FamilyCenterModalRequestRouting)
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7647 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -50,7 +50,7 @@ let obj = function _resolveConnectionPrereqTarget() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;

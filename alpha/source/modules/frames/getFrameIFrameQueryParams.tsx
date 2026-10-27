@@ -1,13 +1,13 @@
-// Module ID: 18433
-// Function ID: 18434
+// Module ID: 18443
+// Function ID: 18444
 // Name: getFrameIFrameQueryParams
-// Dependencies: [18434, 11461, 18435, 2]
+// Dependencies: [18444, 11462, 18445, 2]
 // Exports: default
 
-// Module 18433 (getFrameIFrameQueryParams)
-import DiscordEnvironment from "DiscordEnvironment" /* 11461 */;
-import getFrameLaunchContextQueryParamsDefault from "getFrameLaunchContextQueryParams" /* 18434 */;
-import getFrameSurfaceQueryParamsDefault from "getFrameSurfaceQueryParams" /* 18435 */;
+// Module 18443 (getFrameIFrameQueryParams)
+import DiscordEnvironment from "DiscordEnvironment" /* 11462 */;
+import getFrameLaunchContextQueryParamsDefault from "getFrameLaunchContextQueryParams" /* 18444 */;
+import getFrameSurfaceQueryParamsDefault from "getFrameSurfaceQueryParams" /* 18445 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/getFrameIFrameQueryParams.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14486
+// Function ID: 14487
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1087, 3, 13881, 7649, 5210, 13942, 1630, 7429, 4787, 5663, 1128, 2]
+// Dependencies: [5, 32, 19, 1087, 3, 13883, 7649, 5210, 13944, 1630, 7429, 4787, 5663, 1128, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 14485 (useHandleBuyNow)
+// Module 14486 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -42,7 +42,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function useHandleBuyNow(product) {
             const obj2 = c1(c2[8]);
             obj2.open(obj8);
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c2 = 3;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(13881)(obj);
+  const tmp3 = onBuySettled(13883)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -127,7 +127,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -232,7 +232,7 @@ function useHandleBuyNow(product) {
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp52) {
           closure_2 = tmp52;
           if (0 === c3) {

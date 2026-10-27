@@ -1,9 +1,9 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15225
+// Function ID: 15226
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 4823, 4901, 4874, 1087, 21, 558, 576, 15209, 8371, 504, 9053, 9050, 1128, 9808, 587, 5711, 5210, 6697, 7959, 10860, 8280, 7215, 7489, 9005, 6696, 2]
+// Dependencies: [19, 4823, 4901, 4874, 1087, 21, 558, 576, 15210, 8371, 504, 9053, 9050, 1128, 9808, 587, 5711, 5210, 6697, 7959, 10861, 8280, 7215, 7489, 9005, 6696, 2]
 
-// Module 15224 (GuildActionSheetTabItems)
+// Module 15225 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
 import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6697 */;
@@ -45,7 +45,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let obj = guild(576);
   const cResult = obj.c(32);
   guild = guild.guild;
-  let obj2 = guild(15209);
+  let obj2 = guild(15210);
   const canAccessSettings = obj2.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(8371)(guild.id).total;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -559,7 +559,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
           const obj7 = {
             variant: "secondary",
             label: intl.string(tmp(1128).t.VINpSK),
-            icon: stateFromStores(10860),
+            icon: stateFromStores(10861),
             grow: true,
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
@@ -629,7 +629,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(15209);
+  let obj = guild(15210);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
   const total = stateFromStores(8371)(guild.id).total;
@@ -687,7 +687,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     const obj8 = {
       variant: "secondary",
       label: intl3.string(tmp(1128).t.VINpSK),
-      icon: tmp3(10860),
+      icon: tmp3(10861),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;

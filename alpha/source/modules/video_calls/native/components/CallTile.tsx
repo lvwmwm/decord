@@ -1,9 +1,9 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11711
+// Function ID: 11712
 // Name: CallTile
-// Dependencies: [19, 17, 6642, 1392, 10882, 5632, 21, 4971, 4968, 587, 558, 576, 7253, 1633, 504, 5710, 8668, 11423, 11682, 11443, 11452, 11711, 11716, 11717, 11718, 11719, 11720, 1202, 11367, 5052, 5206, 11721, 2]
+// Dependencies: [19, 17, 6642, 1392, 10883, 5632, 21, 4971, 4968, 587, 558, 576, 7253, 1633, 504, 5710, 8668, 11424, 11683, 11444, 11453, 11712, 11717, 11718, 11719, 11720, 11721, 1202, 11368, 5052, 5206, 11722, 2]
 
-// Module 11710 (CallTile)
+// Module 11711 (CallTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -12,18 +12,18 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11711 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11716 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11717 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11718 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11719 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11720 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11721 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11712 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11717 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11718 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11719 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11720 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11721 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11722 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelCallStore from "ChannelCallStore" /* 10882 */;
+import ChannelCallStore from "ChannelCallStore" /* 10883 */;
 import CallConstants from "CallConstants" /* 5632 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -672,7 +672,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   const tmp4 = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  reveal = react.useContext(reveal(11367).RevealContext).reveal;
+  reveal = react.useContext(reveal(11368).RevealContext).reveal;
   let obj2 = reveal(5052);
   const fn = function l() {
     let obj2;
@@ -843,7 +843,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const tmp5 = reveal;
-  reveal = react.useContext(reveal(11367).RevealContext).reveal;
+  reveal = react.useContext(reveal(11368).RevealContext).reveal;
   let obj = reveal(5052);
   class A {
     constructor() {
@@ -893,7 +893,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function TileOverlay
   items1 = [isActiveStream, ];
   const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
   obj6 = { style: tmp.usernameContainer, children: items2 };
-  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11721), { channel, participant })];
+  items2 = [closure_13(closure_18, { participant }), closure_13(tmp2(11722), { channel, participant })];
   items1[1] = closure_13(closure_5, obj5);
   return closure_15(View, obj3);
 });

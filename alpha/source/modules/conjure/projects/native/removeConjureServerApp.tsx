@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12801
+// Function ID: 12802
 // Name: removeConjureServerApp
 // Dependencies: [5, 10786, 5663, 1128, 3830, 2]
 // Exports: default
 
-// Module 12798 (removeConjureServerApp)
+// Module 12801 (removeConjureServerApp)
 import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10786 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _removeConjureServerApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

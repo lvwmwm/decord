@@ -1,9 +1,9 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12477
+// Function ID: 12478
 // Name: ConjureRatingFeedbackSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 8659, 12493, 1128, 3830, 1896, 7248, 7180, 5244, 7298, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 8659, 12476, 1128, 3830, 1896, 7248, 7180, 5244, 7298, 2]
 
-// Module 12494 (ConjureRatingFeedbackSheet)
+// Module 12477 (ConjureRatingFeedbackSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
   const obj2 = bottomSheetClose(8659);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  const obj3 = bottomSheetClose(12493);
+  const obj3 = bottomSheetClose(12476);
   const conjureRatingFeedback = obj3.useConjureRatingFeedback(rating);
   ({ text, setText, send } = conjureRatingFeedback);
   const canSend = conjureRatingFeedback.canSend;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
       cResult[12] = tmp26;
       tmp24 = tmp26;
     }
-    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12493).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
+    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12476).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
     const TextArea = tmp(7180).TextArea;
     const tmp19 = closure_4(TextArea, obj8);
     cResult[6] = setText;

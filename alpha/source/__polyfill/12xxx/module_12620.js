@@ -1,56 +1,75 @@
 // Module ID: 12620
 // Function ID: 12621
-// Dependencies: [12583, 12606, 12578, 12593]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: [12613, 12608, 12621, 12609, 12581]
+// Exports: sampleSpan
 
 // Module 12620
-import _mod12583 from "module_12583" /* 12583 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12593 */;
-import _mod12606 from "module_12606" /* 12606 */;
+import _mod12608 from "module_12608" /* 12608 */;
+import _mod12609 from "module_12609" /* 12609 */;
+import _mod12613 from "module_12613" /* 12613 */;
+import _mod12621 from "module_12621" /* 12621 */;
 
 
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod12583;
-    activeSpan = obj.getActiveSpan();
-  }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod12583;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod12606.DEBUG_BUILD) {
-      const logger = tmp9(12578).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  const obj = _mod12613;
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    let num;
+    let items3;
+    const tmpResult = _mod12608;
+    const isolationScope = tmpResult.getIsolationScope();
+    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
+    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    const merged = Object.assign(normalizedRequest);
+    if (typeof tracesSampler.tracesSampler === "function") {
+      num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
+    } else {
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
+      }
     }
-    const obj2 = {};
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
-  }
-};
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  let tmp = arr;
-  if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
+    const tmpResult2 = _mod12621;
+    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (_mod12609.DEBUG_BUILD) {
+        const logger3 = tmp(12581).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+      }
+      const items = [false];
+      items3 = items;
+    } else if (parseSampleRateResult) {
+      let items2;
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        items2 = items1;
+      } else {
+        if (_mod12609.DEBUG_BUILD) {
+          const logger2 = tmp(12581).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
         }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
+        items2 = [false, parseSampleRateResult];
+      }
+      items3 = items2;
+    } else {
+      if (_mod12609.DEBUG_BUILD) {
+        const logger = tmp(12581).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        const log = logger.log;
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
         }
-      });
-      return obj;
+        log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
     }
+    return items3;
+  } else {
+    const items4 = [false];
+    return items4;
   }
 };

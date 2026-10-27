@@ -1,12 +1,12 @@
-// Module ID: 19268
-// Function ID: 19269
+// Module ID: 19278
+// Function ID: 19279
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 4845, 21, 558, 576, 504, 19204, 17986, 1128, 2]
+// Dependencies: [19, 4845, 21, 558, 576, 504, 19214, 17995, 1128, 2]
 
-// Module 19268 (GuildSettingsRoleSubscriptionsEnableMonetization)
+// Module 19278 (GuildSettingsRoleSubscriptionsEnableMonetization)
 import Fragment from "Fragment" /* 21 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17986 */;
-import PlaceholderDefault from "Placeholder" /* 19204 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17995 */;
+import PlaceholderDefault from "Placeholder" /* 19214 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

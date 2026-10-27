@@ -1,9 +1,9 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12101
+// Function ID: 12102
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10090, 21, 1384, 4971, 587, 8913, 558, 576, 5267, 5052, 12209, 5037, 5581, 12210, 504, 5269, 5212, 6802, 1896, 5263, 5252, 1633, 1499, 5166, 5146, 5968, 9852, 5592, 2]
+// Dependencies: [32, 19, 17, 10090, 21, 1384, 4971, 587, 8913, 558, 576, 5267, 5052, 12102, 5037, 5581, 12103, 504, 5269, 5212, 6802, 1896, 5263, 5252, 1633, 1499, 5166, 5146, 5968, 9852, 5592, 2]
 
-// Module 12208 (PortalKeyboardBottomSheet)
+// Module 12101 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;

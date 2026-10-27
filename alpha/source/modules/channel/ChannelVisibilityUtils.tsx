@@ -1,10 +1,10 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 13753
+// Function ID: 13754
 // Name: ChannelVisibilityUtils
 // Dependencies: [6791, 4874, 5002, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 13751 (ChannelVisibilityUtils)
+// Module 13753 (ChannelVisibilityUtils)
 import ChannelSectionStore from "ChannelSectionStore" /* 6791 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;

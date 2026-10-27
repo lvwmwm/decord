@@ -1,9 +1,9 @@
-// Module ID: 14142
-// Function ID: 14143
+// Module ID: 14144
+// Function ID: 14145
 // Name: ContentImpressionTracker
-// Dependencies: [5, 19, 7776, 9575, 1087, 21, 1281, 9608, 7772, 6717, 14119, 14120, 14124, 14122, 7802, 7801, 1384, 7750, 9574, 7782, 9571, 9576, 9573, 7783, 7792, 7807, 6468, 6473, 558, 576, 9605, 504, 5263, 9606, 2]
+// Dependencies: [5, 19, 7776, 9575, 1087, 21, 1281, 9608, 7772, 6717, 14121, 14122, 14126, 14124, 7802, 7801, 1384, 7750, 9574, 7782, 9571, 9576, 9573, 7783, 7792, 7807, 6468, 6473, 558, 576, 9605, 504, 5263, 9606, 2]
 
-// Module 14142 (ContentImpressionTracker)
+// Module 14144 (ContentImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
@@ -14,10 +14,10 @@ import AnalyticsActions from "AnalyticsActions" /* 7792 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
 import captureAdUserAction4 from "captureAdUserAction" /* 9573 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
-import IosAttributionEligibility from "IosAttributionEligibility" /* 14119 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14120 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14122 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14124 */;
+import IosAttributionEligibility from "IosAttributionEligibility" /* 14121 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14122 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14124 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestStore from "QuestStore" /* 7776 */;
@@ -96,15 +96,15 @@ class QuestContentImpression {
                 obj4.iosAttributionRegistered = true;
               } else {
                 const tmp2Result8 = IosAttributionMetrics;
-                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14124).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
+                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14126).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
               }
             } else {
               const tmp2Result9 = IosAttributionMetrics;
-              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14124).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
+              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14126).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
             }
           } else {
             const tmp2Result10 = IosAttributionMetrics;
-            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14124).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
+            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14126).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
           }
         }
       }
@@ -125,7 +125,7 @@ class QuestContentImpression {
           obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ class QuestContentImpression {
               closure_129_0.onImpressionCallback();
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           c3 = 3;

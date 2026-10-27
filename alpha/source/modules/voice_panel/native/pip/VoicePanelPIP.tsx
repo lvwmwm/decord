@@ -1,9 +1,9 @@
-// Module ID: 18593
-// Function ID: 18594
+// Module ID: 18603
+// Function ID: 18604
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 4822, 6775, 6804, 10900, 10898, 18446, 5609, 6776, 21, 4971, 558, 576, 10899, 18491, 10908, 5052, 18445, 10904, 5247, 5297, 18490, 5824, 18594, 4892, 504, 10767, 11393, 8759, 1128, 7168, 18595, 6886, 18596, 18597, 5037, 2]
+// Dependencies: [19, 17, 4822, 6775, 6804, 10901, 10899, 18456, 5609, 6776, 21, 4971, 558, 576, 10900, 18501, 10909, 5052, 18455, 10905, 5247, 5297, 18500, 5824, 18604, 4892, 504, 10767, 11394, 8759, 1128, 7168, 18605, 6886, 18606, 18607, 5037, 2]
 
-// Module 18593 (VoicePanelPIP)
+// Module 18603 (VoicePanelPIP)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
@@ -14,22 +14,22 @@ import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
 import ExternalPipDefault from "ExternalPip" /* 5824 */;
 import FramesConstants from "FramesConstants" /* 6776 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10898 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10899 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10904 */;
-import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 10908 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11393 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18445 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18446 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18490 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18491 */;
-import VoicePanelPIPScaleCache from "VoicePanelPIPScaleCache" /* 18594 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10899 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10900 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10905 */;
+import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 10909 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11394 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18455 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18456 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 18500 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 18501 */;
+import VoicePanelPIPScaleCache from "VoicePanelPIPScaleCache" /* 18604 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
 import FramesStore from "FramesStore" /* 6775 */;
 import VoicePanelStore from "VoicePanelStore" /* 6804 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10900 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10901 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -276,7 +276,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIP
                   if (value.active) {
                     PIP_LAYOUT_PHYSICS = React4;
                   } else {
-                    PIP_LAYOUT_PHYSICS = tmp3(18445).PIP_LAYOUT_PHYSICS;
+                    PIP_LAYOUT_PHYSICS = tmp3(18455).PIP_LAYOUT_PHYSICS;
                   }
                   const size1 = { width: result, height: scaledPIPContainerHeight, opacity: sharedValue1.get(), transform: items, borderRadius: tmp3Result6.getVoicePanelPIPBorderRadius(result, scaledPIPContainerHeight) };
                   const obj2 = { translateX: tmp3Result4.withSpring(x, PIP_LAYOUT_PHYSICS) };
@@ -1071,7 +1071,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIP
       if (value.active) {
         PIP_LAYOUT_PHYSICS = React4;
       } else {
-        PIP_LAYOUT_PHYSICS = tmp3(18445).PIP_LAYOUT_PHYSICS;
+        PIP_LAYOUT_PHYSICS = tmp3(18455).PIP_LAYOUT_PHYSICS;
       }
       const size1 = { width: result, height: scaledPIPContainerHeight, opacity: sharedValue1.get(), transform: items, borderRadius: tmp3Result6.getVoicePanelPIPBorderRadius(result, scaledPIPContainerHeight) };
       const obj2 = { translateX: tmp3Result4.withSpring(x, PIP_LAYOUT_PHYSICS) };
@@ -1621,13 +1621,13 @@ let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
         targetWidth = originX.targetWidth;
       } else {
         const tmpResult = spring;
-        targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(18445).PIP_LAYOUT_PHYSICS);
+        targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(18455).PIP_LAYOUT_PHYSICS);
       }
       if (active) {
         targetHeight = originX.targetHeight;
       } else {
         const tmpResult2 = spring;
-        targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(18445).PIP_LAYOUT_PHYSICS);
+        targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(18455).PIP_LAYOUT_PHYSICS);
       }
       return { animations: size, initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight } };
     }
@@ -2001,13 +2001,13 @@ let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
       targetWidth = originX.targetWidth;
     } else {
       const tmpResult = spring;
-      targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(18445).PIP_LAYOUT_PHYSICS);
+      targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(18455).PIP_LAYOUT_PHYSICS);
     }
     if (active) {
       targetHeight = originX.targetHeight;
     } else {
       const tmpResult2 = spring;
-      targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(18445).PIP_LAYOUT_PHYSICS);
+      targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(18455).PIP_LAYOUT_PHYSICS);
     }
     return { animations: size, initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight } };
   };

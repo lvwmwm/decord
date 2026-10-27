@@ -1,9 +1,9 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 17772
+// Function ID: 17773
 // Name: useSubtitleStyles
 // Dependencies: [4971, 2]
 
-// Module 17771 (useSubtitleStyles)
+// Module 17772 (useSubtitleStyles)
 import createStyles from "createStyles" /* 4971 */;
 import size from "module_2" /* 2 */;
 

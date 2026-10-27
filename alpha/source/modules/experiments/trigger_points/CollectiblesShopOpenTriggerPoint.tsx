@@ -1,9 +1,9 @@
-// Module ID: 17191
-// Function ID: 17192
+// Module ID: 17192
+// Function ID: 17193
 // Name: CollectiblesShopOpenTriggerPoint
 // Dependencies: [5191, 10564, 2]
 
-// Module 17191 (CollectiblesShopOpenTriggerPoint)
+// Module 17192 (CollectiblesShopOpenTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5191 */;
 import Helpers from "Helpers" /* 10564 */;
 import size from "module_2" /* 2 */;

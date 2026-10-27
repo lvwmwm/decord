@@ -1,14 +1,14 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 12167
+// Function ID: 12168
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 4972, 21, 587, 4971, 11819, 558, 576, 504, 5052, 5206, 2]
+// Dependencies: [19, 4972, 21, 587, 4971, 12168, 558, 576, 504, 5052, 5206, 2]
 
-// Module 11818 (ConjureAwaitingUser)
+// Module 12167 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import timing from "timing" /* 5206 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 11819 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12168 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import createStyles from "createStyles" /* 4971 */;

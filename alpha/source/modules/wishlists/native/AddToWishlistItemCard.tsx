@@ -1,10 +1,10 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14431
+// Function ID: 14432
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1087, 21, 4971, 587, 14429, 9365, 9432, 1267, 9377, 5663, 1128, 9366, 9362, 2]
+// Dependencies: [5, 32, 19, 17, 1087, 21, 4971, 587, 14430, 9365, 9432, 1267, 9377, 5663, 1128, 9366, 9362, 2]
 // Exports: default
 
-// Module 14430 (AddToWishlistItemCard)
+// Module 14431 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -85,7 +85,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -150,7 +150,7 @@ export default function AddToWishlistItemCard(sku) {
           closure_128_7(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         analyticsLocations = tmp33;
         if (0 === c3) {

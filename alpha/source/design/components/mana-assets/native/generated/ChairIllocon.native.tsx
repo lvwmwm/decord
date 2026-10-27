@@ -1,28 +1,28 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13646
+// Function ID: 13647
 // Name: ChairIllocon
-// Dependencies: [19, 21, 13645, 13646, 13647, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 13647, 13648, 13649, 558, 576, 6995, 5669, 2]
 
-// Module 13644 (ChairIllocon)
+// Module 13646 (ChairIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
-import _modDef13645 from "module_13645" /* 13645 */;
-import _modDef13646 from "module_13646" /* 13646 */;
 import _modDef13647 from "module_13647" /* 13647 */;
+import _modDef13648 from "module_13648" /* 13648 */;
+import _modDef13649 from "module_13649" /* 13649 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13645 };
+let obj2 = { uri: _modDef13647 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13646 };
-({ uri: _modDef13646 });
-obj[3] = { uri: _modDef13647 };
-({ uri: _modDef13647 });
+obj[2] = { uri: _modDef13648 };
+({ uri: _modDef13648 });
+obj[3] = { uri: _modDef13649 };
+({ uri: _modDef13649 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChairIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

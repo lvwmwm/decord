@@ -1,9 +1,9 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18298
+// Function ID: 18299
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 587, 4971, 4908, 1128, 9770, 9216, 18290, 558, 576, 5039, 2]
+// Dependencies: [19, 17, 21, 587, 4971, 4908, 1128, 9770, 9216, 18299, 558, 576, 5039, 2]
 
-// Module 18289 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 18298 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PermissionUtils from "PermissionUtils" /* 4908 */;
@@ -30,7 +30,7 @@ function getIcon(arg0, arg1, icon) {
     const colors2 = nativeDefault.colors;
     return <CheckmarkLargeBoldIcon size="sm" style={arg2.icon} color={arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE} />;
   } else if (PermissionUtils.PASSTHROUGH === arg0) {
-    const SlashIcon = tmp(18290).SlashIcon;
+    const SlashIcon = tmp(18299).SlashIcon;
     const colors = nativeDefault.colors;
     return <SlashIcon size="sm" style={arg2.icon} color={arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT} />;
   } else {

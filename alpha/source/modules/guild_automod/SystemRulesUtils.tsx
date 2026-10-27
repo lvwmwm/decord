@@ -1,10 +1,10 @@
-// Module ID: 19002
-// Function ID: 19003
+// Module ID: 19012
+// Function ID: 19013
 // Name: SystemRulesUtils
 // Dependencies: [2]
 // Exports: isDefaultRuleId
 
-// Module 19002 (SystemRulesUtils)
+// Module 19012 (SystemRulesUtils)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["1030554520465440818"]);

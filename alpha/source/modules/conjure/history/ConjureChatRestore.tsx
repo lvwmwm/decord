@@ -1,10 +1,10 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 12348
+// Function ID: 12349
 // Name: ConjureChatRestore
 // Dependencies: [2]
 // Exports: proposalRestoreEntry, turnRestoreEntry
 
-// Module 12365 (ConjureChatRestore)
+// Module 12348 (ConjureChatRestore)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureChatRestore.tsx");

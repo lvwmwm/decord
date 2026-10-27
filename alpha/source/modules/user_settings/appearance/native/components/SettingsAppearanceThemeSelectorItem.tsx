@@ -1,9 +1,9 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16632
+// Function ID: 16633
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1207, 16630, 1098, 21, 4971, 587, 4969, 558, 576, 4993, 10625, 1202, 16632, 573, 5252, 16633, 5202, 1256, 5039, 1128, 6908, 2]
+// Dependencies: [19, 17, 1207, 16631, 1098, 21, 4971, 587, 4969, 558, 576, 4993, 10625, 1202, 16633, 573, 5252, 16634, 5202, 1256, 5039, 1128, 6908, 2]
 
-// Module 16631 (SettingsAppearanceThemeSelectorItem)
+// Module 16632 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -17,11 +17,11 @@ import MobileThemesUtils from "MobileThemesUtils" /* 5202 */;
 import useToken from "useToken" /* 5252 */;
 import Pressables from "Pressables" /* 6908 */;
 import ThemedGradient from "ThemedGradient" /* 10625 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16632 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16633 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16633 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 16634 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16630 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16631 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

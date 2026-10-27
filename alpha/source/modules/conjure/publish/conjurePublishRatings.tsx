@@ -1,10 +1,10 @@
-// Module ID: 12493
-// Function ID: 12494
+// Module ID: 12476
+// Function ID: 12477
 // Name: conjurePublishRatings
 // Dependencies: [32, 19, 3830, 1128, 510, 10718, 558, 576, 2]
 // Exports: conjurePublishRatingLabel, conjurePublishRatingOptionLabel, conjurePublishRatingThanks, submitConjurePublishRatingFeedback
 
-// Module 12493 (conjurePublishRatings)
+// Module 12476 (conjurePublishRatings)
 import Storage4 from "Storage" /* 510 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;

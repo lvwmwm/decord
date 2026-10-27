@@ -1,9 +1,9 @@
-// Module ID: 13331
-// Function ID: 13332
+// Module ID: 13334
+// Function ID: 13335
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 4820, 21, 558, 576, 1647, 5596, 5161, 1633, 5252, 587, 1384, 1631, 4807, 7496, 13061, 1128, 7233, 9840, 2]
+// Dependencies: [32, 19, 4820, 21, 558, 576, 1647, 5596, 5161, 1633, 5252, 587, 1384, 1631, 4807, 7496, 13064, 1128, 7233, 9840, 2]
 
-// Module 13331 (useEmojiSuggestionNuxCoachmark)
+// Module 13334 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */
 import useKeyboardTypeDefault from "useKeyboardType" /* 5161 */;
 import useToken from "useToken" /* 5252 */;
 import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5596 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13061 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 11502
-// Function ID: 11503
+// Module ID: 11503
+// Function ID: 11504
 // Name: useDispatchOpenActivity
 // Dependencies: [19, 558, 576, 584, 2]
 
-// Module 11502 (useDispatchOpenActivity)
+// Module 11503 (useDispatchOpenActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

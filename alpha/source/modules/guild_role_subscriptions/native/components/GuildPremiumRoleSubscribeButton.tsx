@@ -1,9 +1,9 @@
-// Module ID: 19311
-// Function ID: 19312
+// Module ID: 19321
+// Function ID: 19322
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: [19, 21, 4971, 558, 576, 1128, 9861, 2]
 
-// Module 19311 (GuildPremiumRoleSubscribeButton)
+// Module 19321 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;

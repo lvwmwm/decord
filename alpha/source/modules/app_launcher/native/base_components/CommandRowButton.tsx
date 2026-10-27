@@ -1,10 +1,10 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 11987
+// Function ID: 11988
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12097, 9649, 12098, 5634, 558, 576, 6912, 5244, 1128, 5680, 2]
+// Dependencies: [5, 32, 19, 21, 11988, 9649, 11989, 5634, 558, 576, 6912, 5244, 1128, 5680, 2]
 // Exports: useCommandRowSend
 
-// Module 12096 (CommandRowButton)
+// Module 11987 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -100,7 +100,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         closure_2 = tmp25;

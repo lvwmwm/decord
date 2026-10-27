@@ -1,13 +1,13 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12834
+// Function ID: 12835
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 4971, 587, 6672, 6924, 12832, 12868, 558, 576, 12869, 12834, 1506, 1128, 7095, 2]
+// Dependencies: [19, 21, 4971, 587, 6672, 6924, 12835, 12871, 558, 576, 12872, 12837, 1506, 1128, 7095, 2]
 
-// Module 12831 (ClassificationDetailModal)
+// Module 12834 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12834 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12837 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   const cResult = obj.c(11);
   ({ classificationId, source, shouldRedirectToAccountStanding } = arg0);
   const tmp5 = closure_7();
-  const tmpResult = tmp(12869);
+  const tmpResult = tmp(12872);
   safetyHubInitialized = tmpResult.useSafetyHubInitialized();
   if (cResult[0] !== safetyHubInitialized) {
     const fn = function l() {
@@ -142,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(12869);
+  let obj = classificationId(12872);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {

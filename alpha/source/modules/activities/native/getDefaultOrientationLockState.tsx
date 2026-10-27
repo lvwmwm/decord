@@ -1,10 +1,10 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11458
+// Function ID: 11459
 // Name: getDefaultOrientationLockState
 // Dependencies: [1499, 5154, 584, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 11457 (getDefaultOrientationLockState)
+// Module 11458 (getDefaultOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import useWindowDimensions from "useWindowDimensions" /* 1499 */;
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5154 */;

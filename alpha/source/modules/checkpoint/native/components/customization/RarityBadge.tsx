@@ -1,9 +1,9 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13036
+// Function ID: 13037
 // Name: RarityBadge
 // Dependencies: [32, 19, 17, 6015, 21, 4971, 587, 558, 576, 6016, 7962, 6362, 1128, 5234, 9425, 2]
 
-// Module 13033 (RarityBadge)
+// Module 13036 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,10 +1,10 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14395
+// Function ID: 14396
 // Name: PersonalWidgetExpandCollapseContext
 // Dependencies: [32, 19, 21, 558, 576, 2]
 // Exports: usePersonalWidgetExpandCollapse
 
-// Module 14394 (PersonalWidgetExpandCollapseContext)
+// Module 14395 (PersonalWidgetExpandCollapseContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -354,7 +354,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
                     class R {
                       constructor(arg0) {
                         closure_0 = emojis;
-                        found = emojis.find(() => { /* body not rendered: F146871 */ });
+                        found = emojis.find(() => { /* body not rendered: F146961 */ });
                         if (null != found) {
                           tmp2 = onLongPressEmoji;
                           tmp3 = onLongPressEmoji(found);
@@ -374,7 +374,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
                   class R {
                     constructor(arg0) {
                       closure_0 = emojis;
-                      found = emojis.find(() => { /* body not rendered: F146871 */ });
+                      found = emojis.find(() => { /* body not rendered: F146961 */ });
                       if (null != found) {
                         tmp2 = onLongPressEmoji;
                         tmp3 = onLongPressEmoji(found);
@@ -391,7 +391,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
               class C {
                 constructor(arg0) {
                   closure_0 = emojis;
-                  found = emojis.find(() => { /* body not rendered: F146870 */ });
+                  found = emojis.find(() => { /* body not rendered: F146960 */ });
                   if (null != found) {
                     tmp2 = onPressEmoji;
                     tmp3 = category;
@@ -429,7 +429,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
       class R {
         constructor(arg0) {
           closure_0 = emojis;
-          found = emojis.find(() => { /* body not rendered: F146871 */ });
+          found = emojis.find(() => { /* body not rendered: F146961 */ });
           if (null != found) {
             tmp2 = onLongPressEmoji;
             tmp3 = onLongPressEmoji(found);

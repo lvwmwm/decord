@@ -1,18 +1,18 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18327
+// Function ID: 18328
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9743, 4971, 587, 9699, 1384, 558, 576, 10891, 12013, 13742, 5146, 7095, 14013, 9711, 5037, 2]
+// Dependencies: [19, 21, 9743, 4971, 587, 9699, 1384, 558, 576, 10892, 11904, 13744, 5146, 7095, 14015, 9711, 5037, 2]
 
-// Module 18318 (ChannelSecondaryViewChatNavigator)
+// Module 18327 (ChannelSecondaryViewChatNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import HeaderShared from "HeaderShared" /* 9699 */;
 import ChannelActionsDefault from "ChannelActions" /* 9711 */;
-import ChatViewDefault from "ChatView" /* 10891 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12013 */;
-import ChannelContainer2 from "ChannelContainer" /* 13742 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14013 */;
+import ChatViewDefault from "ChatView" /* 10892 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11904 */;
+import ChannelContainer2 from "ChannelContainer" /* 13744 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9743 */;
@@ -58,7 +58,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult = PlatformUtils;
-      const isIOSResult = tmpResult.isIOS() && React3(tmp(12013).PortalKeyboardRenderer, { portal: false });
+      const isIOSResult = tmpResult.isIOS() && React3(tmp(11904).PortalKeyboardRenderer, { portal: false });
       cResult[3] = isIOSResult;
       tmp8 = isIOSResult;
     } else {

@@ -1,9 +1,9 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14597
+// Function ID: 14598
 // Name: InAppReportsBottomButton
 // Dependencies: [19, 17, 1098, 21, 4971, 587, 558, 576, 1128, 2670, 5234, 5244, 1202, 2]
 
-// Module 14596 (InAppReportsBottomButton)
+// Module 14597 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

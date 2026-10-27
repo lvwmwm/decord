@@ -64,7 +64,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp64) {
           if (0 === c5) {

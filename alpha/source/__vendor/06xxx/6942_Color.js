@@ -666,12 +666,12 @@ const point = {
     hslResult.color[0] = sum;
     return hslResult;
   },
-  mix(token, BLACK) {
-    const tmp = token;
+  mix(gradientSecondaryBackground, BLACK) {
+    const tmp = gradientSecondaryBackground;
     if (tmp) {
-      if (token.rgb) {
+      if (gradientSecondaryBackground.rgb) {
         const self = this;
-        const color = token.rgb();
+        const color = gradientSecondaryBackground.rgb();
         const color2 = this.rgb();
         let num = 0.5;
         if (undefined !== BLACK) {
@@ -697,7 +697,7 @@ const point = {
         return rgb(result2 + result3, result4 + result5, result6 + result7, result8 + color2.alpha() * (1 - num));
       }
     }
-    const error = new Error("Argument to \"mix\" was not a Color instance, but rather an instance of " + typeof token);
+    const error = new Error("Argument to \"mix\" was not a Color instance, but rather an instance of " + typeof gradientSecondaryBackground);
     throw error;
   }
 };

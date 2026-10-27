@@ -1,28 +1,28 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12407
+// Function ID: 12408
 // Name: SpiderIllocon
-// Dependencies: [19, 21, 12425, 12426, 12427, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 12408, 12409, 12410, 558, 576, 6995, 5669, 2]
 
-// Module 12424 (SpiderIllocon)
+// Module 12407 (SpiderIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
-import _modDef12425 from "module_12425" /* 12425 */;
-import _modDef12426 from "module_12426" /* 12426 */;
-import _modDef12427 from "module_12427" /* 12427 */;
+import _modDef12408 from "module_12408" /* 12408 */;
+import _modDef12409 from "module_12409" /* 12409 */;
+import _modDef12410 from "module_12410" /* 12410 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12425 };
+let obj2 = { uri: _modDef12408 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12426 };
-({ uri: _modDef12426 });
-obj[3] = { uri: _modDef12427 };
-({ uri: _modDef12427 });
+obj[2] = { uri: _modDef12409 };
+({ uri: _modDef12409 });
+obj[3] = { uri: _modDef12410 };
+({ uri: _modDef12410 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpiderIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

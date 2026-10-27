@@ -263,7 +263,7 @@ let obj = function _relayPreviewCapture() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp45;
@@ -325,7 +325,7 @@ let obj = function _relayPreviewCapture() {
                   c8 = 3;
                   return { value: { status: "unavailable" }, done: true };
                 } else if (null == onAccepted) {
-                  obj10 = { uploadToken: "r" };
+                  obj10 = { uploadToken: "Array" };
                 } else {
                   c7 = 2;
                   c8 = 1;
@@ -427,7 +427,7 @@ obj = function _inspectConjurePreviewPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -519,7 +519,7 @@ obj = function _relayPreviewControl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp71;

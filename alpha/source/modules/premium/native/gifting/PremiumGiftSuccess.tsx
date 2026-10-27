@@ -1,9 +1,9 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 13939
+// Function ID: 13940
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 9520, 4820, 21, 4971, 587, 558, 576, 1633, 10450, 38, 13938, 10508, 10490, 504, 4808, 4807, 13939, 13940, 13941, 2]
+// Dependencies: [19, 17, 9520, 4820, 21, 4971, 587, 558, 576, 1633, 10450, 38, 13940, 10508, 10490, 504, 4808, 4807, 13941, 13942, 13943, 2]
 
-// Module 13937 (PremiumGiftSuccess)
+// Module 13939 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 4807 */;

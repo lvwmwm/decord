@@ -130,7 +130,7 @@ let obj2 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ let obj2 = {
                 const tmp9 = projectId;
                 if (publishApprovalUrl.getPublishApprovalUrl(projectId) === tmp.approval_url) {
                   paths = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   const obj5 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId: tmp9, approvalUrl: tmp.approval_url };
                   const obj2 = projectId(paths[4]);
@@ -173,7 +173,7 @@ let obj2 = {
             const result = value.promptPublishApproval(closure_128_0.approval_url);
           }
           paths = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp14) {
           paths = 3;
           throw tmp14;

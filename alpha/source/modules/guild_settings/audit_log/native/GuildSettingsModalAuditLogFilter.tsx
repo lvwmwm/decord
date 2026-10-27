@@ -1,10 +1,10 @@
-// Module ID: 19043
-// Function ID: 19044
+// Module ID: 19053
+// Function ID: 19054
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1392, 19039, 1087, 21, 4971, 587, 1128, 5025, 19041, 558, 576, 5039, 6988, 10832, 1633, 1505, 6827, 19044, 1202, 11687, 19045, 6984, 7145, 8723, 7220, 5592, 2]
+// Dependencies: [32, 19, 17, 1392, 19049, 1087, 21, 4971, 587, 1128, 5025, 19051, 558, 576, 5039, 6988, 10833, 1633, 1505, 6827, 19054, 1202, 11688, 19055, 6984, 7145, 8723, 7220, 5592, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 19043 (GuildSettingsModalAuditLogFilter)
+// Module 19053 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,13 +14,13 @@ import UserUtilsDefault from "UserUtils" /* 5025 */;
 import react_native2 from "react-native" /* 5039 */;
 import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
 import FormRadio from "FormRadio" /* 6988 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10832 */;
-import AuditLogUtils from "AuditLogUtils" /* 19041 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19044 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10833 */;
+import AuditLogUtils from "AuditLogUtils" /* 19051 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19039 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19049 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

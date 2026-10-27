@@ -1,25 +1,21 @@
-// Module ID: 19462
-// Function ID: 19463
+// Module ID: 19472
+// Function ID: 19473
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [10743, 1087, 4830, 7584, 584, 1257, 1267, 6830, 12708, 2002, 5707, 5201, 1114, 2]
+// Dependencies: [10743, 1087, 7584, 584, 1257, 1267, 6830, 12711, 2002, 5707, 5201, 10818, 2]
 // Exports: receiveLocalNotification
 
-// Module 19462 (LocalPushNotificationActionCreators)
+// Module 19472 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
 import Constants2 from "Constants" /* 10743 */;
-import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
 let tmp;
 const GuildActionCreatorsDefault = tmp(6830);
 const LocalNotificationTypes = Constants2.LocalNotificationTypes;
-({ AnalyticEvents: closure_4, Routes: hasOwnProperty } = Constants);
-const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
@@ -31,22 +27,21 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
     data = getData.getData();
     let type = data.type;
     function dispatch() {
-      let channelId;
-      let closure_1;
       let guildId;
       let obj4;
+      let projectId;
       let obj = DispatcherDefault;
       obj.dispatch({ type: "PUSH_NOTIFICATION_CLICK" });
       const obj3 = { message: "Notification Clicked", data: obj4 };
-      obj4 = { type: data.type };
+      obj4 = { type: projectId.type };
       const obj2 = SentryUtilsDefault;
       obj2.addBreadcrumb(obj3);
-      const obj5 = { notif_type: data.type, guild_id: guildId };
+      const obj5 = { notif_type: projectId.type, guild_id: guildId };
       guildId = null;
       const track = AnalyticsUtilsDefault.track;
       const NOTIFICATION_CLICKED = constants2.NOTIFICATION_CLICKED;
       AnalyticsUtilsDefault;
-      if ("guildId" in data) {
+      if ("guildId" in projectId) {
         guildId = tmp4.guildId;
       }
       track(NOTIFICATION_CLICKED, obj5);
@@ -55,22 +50,21 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
         const tmpResult = GuildActionCreatorsDefault;
         const result = tmpResult.transitionToGuildSync(tmp4.guildId);
       } else if (constants.CALL_RING === type) {
-        const promise2 = data(dependencyMap[9])(dependencyMap[8], dependencyMap.paths);
-        promise2.then((result) => result.default(data.channelId));
+        const promise2 = data(dependencyMap[8])(dependencyMap[7], dependencyMap.paths);
+        promise2.then((result) => result.default(projectId.channelId));
       } else if (constants.MESSAGE_SEND_FAILED === type) {
-        const promise = data(dependencyMap[9])(dependencyMap[10], dependencyMap.paths);
+        const promise = data(dependencyMap[8])(dependencyMap[9], dependencyMap.paths);
         promise.then((transitionToMessage) => {
+          let channelId;
           let messageId;
-          ({ channelId, messageId } = data);
-          const obj = { jumpType: data(dependencyMap[11]).JumpType.INSTANT };
+          ({ channelId, messageId } = projectId);
+          const obj = { jumpType: data(dependencyMap[10]).JumpType.INSTANT };
           return transitionToMessage.transitionToMessage(channelId, messageId, obj);
         });
       } else if (constants.CONJURE === type) {
-        if (null != data.guildId) {
-          ({ guildId: data, projectId: closure_1 } = data);
-          const promise3 = data(dependencyMap[9])(dependencyMap[12], dependencyMap.paths);
-          promise3.then((transitionTo) => transitionTo.transitionTo(hasOwnProperty.CHANNEL(data, StaticChannelRoute.CONJURE, closure_1)));
-        }
+        projectId = tmp4.projectId;
+        const promise3 = data(dependencyMap[8])(dependencyMap[11], dependencyMap.paths);
+        promise3.then((openConjureHomeScreenWhenReady) => openConjureHomeScreenWhenReady.openConjureHomeScreenWhenReady(projectId));
       }
     }
     let tmp = importDefault;

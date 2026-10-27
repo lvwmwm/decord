@@ -1,13 +1,13 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12420
+// Function ID: 12421
 // Name: ConjureTaskOutcome
-// Dependencies: [1128, 3830, 11881, 2]
+// Dependencies: [1128, 3830, 11770, 2]
 // Exports: describeTaskOutcome, taskTitle
 
-// Module 12437 (ConjureTaskOutcome)
+// Module 12420 (ConjureTaskOutcome)
 import intl7 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureDuration from "ConjureDuration" /* 11881 */;
+import ConjureDuration from "ConjureDuration" /* 11770 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTaskOutcome.tsx");

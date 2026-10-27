@@ -1,15 +1,15 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11656
+// Function ID: 11657
 // Name: transferToPlayStation
-// Dependencies: [5, 1087, 11656, 11652, 11659, 584, 1297, 11660, 2]
+// Dependencies: [5, 1087, 11657, 11653, 11660, 584, 1297, 11661, 2]
 // Exports: transferToPlayStation
 
-// Module 11655 (transferToPlayStation)
+// Module 11656 (transferToPlayStation)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11656 */;
-import ConsoleCommands from "ConsoleCommands" /* 11660 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11657 */;
+import ConsoleCommands from "ConsoleCommands" /* 11661 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[4])(id.id, closure_0);
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           c6 = 3;
@@ -139,7 +139,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

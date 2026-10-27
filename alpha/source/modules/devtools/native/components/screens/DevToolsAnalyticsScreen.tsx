@@ -1,9 +1,9 @@
-// Module ID: 16941
-// Function ID: 16942
+// Module ID: 16942
+// Function ID: 16943
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1392, 15646, 1087, 21, 4971, 587, 558, 576, 5234, 10151, 6903, 2049, 9133, 6908, 7285, 5682, 504, 12144, 7295, 5689, 16936, 6987, 7145, 5977, 7220, 2]
+// Dependencies: [32, 19, 17, 1392, 15647, 1087, 21, 4971, 587, 558, 576, 5234, 10151, 6903, 2049, 9133, 6908, 7285, 5682, 504, 12035, 7295, 5689, 16937, 6987, 7145, 5977, 7220, 2]
 
-// Module 16941 (DevToolsAnalyticsScreen)
+// Module 16942 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 15646 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 15647 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -145,21 +145,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Logged
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F153028 */ });
+        return closure_2(() => { /* body not rendered: F153122 */ });
       }
     }
     cResult[5] = E;
   } else {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F153028 */ });
+        return closure_2(() => { /* body not rendered: F153122 */ });
       }
     }
   }
   if (cResult[6] === end) {
     class E {
       constructor() {
-        return closure_2(() => { /* body not rendered: F153028 */ });
+        return closure_2(() => { /* body not rendered: F153122 */ });
       }
     }
   }
@@ -349,7 +349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp19 = closure_8(trimmed(12144).ArrowsUpDownIcon, {});
+      const tmp19 = closure_8(trimmed(12035).ArrowsUpDownIcon, {});
       cResult[6] = tmp19;
       tmp17 = tmp19;
     } else {
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5689).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16936).clearAnalyticsLog };
+      const obj3 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5689).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16937).clearAnalyticsLog };
       const TableRow = tmp(6903).TableRow;
       const tmp25 = closure_8(TableRow, obj3);
       cResult[9] = tmp25;
@@ -563,10 +563,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAnal
   const Stack = tmp2(5977).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(6987).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(12144).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const obj4 = { icon: closure_8(trimmed(12035).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7295).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5689).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16936).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5689).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16937).clearAnalyticsLog };
   const TableRow = tmp2(6903).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

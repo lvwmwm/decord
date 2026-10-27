@@ -1,23 +1,23 @@
-// Module ID: 18181
-// Function ID: 18182
+// Module ID: 18190
+// Function ID: 18191
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4823, 4913, 1392, 18182, 13236, 9714, 1087, 21, 558, 576, 504, 18086, 13222, 13247, 13243, 5025, 5604, 13229, 18183, 13228, 13230, 18146, 18078, 1128, 18090, 2]
+// Dependencies: [32, 19, 4823, 4913, 1392, 18191, 13239, 9714, 1087, 21, 558, 576, 504, 18095, 13225, 13250, 13246, 5025, 5604, 13232, 18192, 13231, 13233, 18155, 18087, 1128, 18099, 2]
 
-// Module 18181 (AutocompleteScreen)
+// Module 18190 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5025 */;
 import useChannelName from "useChannelName" /* 5604 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13222 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13243 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13247 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18183 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13225 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13246 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13250 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18192 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 4823 */;
 import RelationshipStore from "RelationshipStore" /* 4913 */;
 import UserStore from "UserStore" /* 1392 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18182 */;
-import SearchQueryStore from "SearchQueryStore" /* 13236 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18191 */;
+import SearchQueryStore from "SearchQueryStore" /* 13239 */;
 import SearchConstants from "SearchConstants" /* 9714 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

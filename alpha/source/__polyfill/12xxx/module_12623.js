@@ -1,236 +1,56 @@
 // Module ID: 12623
 // Function ID: 12624
-// Dependencies: [32, 12624, 12584, 12585, 12581]
-// Exports: normalizeUrlToBase
+// Dependencies: [12586, 12609, 12581, 12596]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12623
-import _mod12581 from "module_12581" /* 12581 */;
-import _mod12584 from "module_12584" /* 12584 */;
-import _mod12585 from "module_12585" /* 12585 */;
-import memoBuilder from "memoBuilder" /* 12624 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12586 from "module_12586" /* 12586 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12596 */;
+import _mod12609 from "module_12609" /* 12609 */;
 
-let hasOwnProperty;
 
-function normalize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 100;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = Infinity;
-  }
-  try {
-    return visit("", arg0, num, num2);
-  } catch (tmp5) {
-    const _HermesInternal = HermesInternal;
-    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
-    return obj;
-  }
-}
-function visit(arg0, __sentry_skip_normalization__) {
-  function stringifyValue(arg0, _events) {
-    function getConstructorName(_events) {
-      const prototypeOf = Object.getPrototypeOf(_events);
-      let str = "null prototype";
-      if (prototypeOf) {
-        str = prototypeOf.constructor.name;
-      }
-      return str;
-    }
-    try {
-      let str = "domain";
-      if ("domain" === arg0) {
-        if (_events) {
-          if (typeof _events === "object") {
-            if (_events._events) {
-              return "[Domain]";
-            }
-          }
-        }
-      }
-      if ("domainEmitter" === arg0) {
-        return "[DomainEmitter]";
-      } else {
-        if (undefined !== global) {
-          if (_events === global) {
-            return "[Global]";
-          }
-        }
-        const _window = window;
-        if (typeof window !== "undefined") {
-          const _window2 = window;
-          if (_events === window) {
-            return "[Window]";
-          }
-        }
-        const _document = document;
-        if (typeof document !== "undefined") {
-          const _document2 = document;
-          if (_events === document) {
-            return "[Document]";
-          }
-        }
-        const obj = _mod12585;
-        if (obj.isVueViewModel(_events)) {
-          return "[VueViewModel]";
-        } else {
-          const tmp4Result = _mod12585;
-          if (tmp4Result.isSyntheticEvent(_events)) {
-            return "[SyntheticEvent]";
-          } else {
-            if (typeof _events === "number") {
-              const _Number = Number;
-              if (!Number.isFinite(_events)) {
-                const _HermesInternal = HermesInternal;
-                return "[" + _events + "]";
-              }
-            }
-            if (typeof _events === "function") {
-              const _HermesInternal4 = HermesInternal;
-              const tmp4Result2 = _mod12581;
-              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
-            } else if (typeof _events === "symbol") {
-              const _String2 = String;
-              const _HermesInternal3 = HermesInternal;
-              return "[" + String(_events) + "]";
-            } else if (typeof _events === "bigint") {
-              const _String = String;
-              const _HermesInternal2 = HermesInternal;
-              return "[BigInt: " + String(_events) + "]";
-            } else {
-              let combined;
-              const _HermesInternal6 = HermesInternal;
-              const obj4 = /^HTML(\w*)Element$/;
-              const tmp9 = getConstructorName(_events);
-              if (obj4.test(tmp9)) {
-                combined = concat(tmp10, "]");
-              } else {
-                combined = concat(tmp10, "]");
-              }
-              return combined;
-            }
-          }
-        }
-      }
-    } catch (tmp7) {
-      const _HermesInternal5 = HermesInternal;
-      return "**non-serializable** (" + tmp7 + ")";
-    }
-  }
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = Infinity;
-  }
-  let num2 = arg3;
+export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
   if (arg3 === undefined) {
-    num2 = Infinity;
+    const obj = _mod12586;
+    activeSpan = obj.getActiveSpan();
   }
-  let memoBuilderResult = arg4;
-  if (arg4 === undefined) {
-    let obj = memoBuilder;
-    memoBuilderResult = obj.memoBuilder();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod12586;
+    rootSpan = obj3.getRootSpan(activeSpan);
   }
-  _slicedToArray(memoBuilderResult, 2);
-  if (null != __sentry_skip_normalization__) {
-    const items = ["boolean", "string"];
-    if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ === "number") {
-        let _Number = Number;
-      }
-      let tmp9 = arg0;
-      let str = stringifyValue(arg0, __sentry_skip_normalization__);
-      if (str.startsWith("[object ")) {
-        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
-          return __sentry_skip_normalization__;
-        } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
-            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
-          }
-          if (0 === num) {
-            return str.replace("object ", "");
-          } else if (tmp6(__sentry_skip_normalization__)) {
-            return "[Circular ~]";
-          } else {
-            if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON === "function") {
-                try {
-                  const tmp10 = visit;
-                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
-                } catch (err) {
-                }
-              }
-            }
-            const _Array = Array;
-            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
-            const obj2 = _mod12584;
-            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              while (keys[tmp] !== undefined) {
-                let _Object = Object;
-                hasOwnProperty = Object.prototype.hasOwnProperty;
-                let tmp28 = tmp21;
-                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
-                  continue;
-                } else {
-                  if (tmp20 >= num2) {
-                    let str4 = "[MaxProperties ~]";
-                    tmp14[tmp21] = "[MaxProperties ~]";
-                    break;
-                  } else {
-                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
-                    let num6 = tmp20 + 1;
-                    continue;
-                  }
-                  break;
-                }
-                break;
-              }
-            }
-            tmp7(__sentry_skip_normalization__);
-            return tmp14;
-          }
+  if (rootSpan) {
+    if (_mod12609.DEBUG_BUILD) {
+      const logger = tmp9(12581).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+    }
+    const obj2 = {};
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
+  }
+};
+export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
         }
-      } else {
-        return str;
-      }
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
+      });
+      return obj;
     }
   }
-  return __sentry_skip_normalization__;
-}
-function normalizeToSize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 3;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = 102400;
-  }
-  let tmp = normalize(arg0, num);
-  const str = encodeURI(JSON.stringify(tmp));
-  if (~(-str.split(/%..|./).length) > num2) {
-    tmp = normalizeToSize(arg0, num - 1, num2);
-  }
-  return tmp;
-}
-
-export { normalize };
-export { normalizeToSize };
-export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
-  let str2 = arg0;
-  str = str.replace(/\\/g, "/");
-  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  try {
-    const _decodeURI = decodeURI;
-    str2 = decodeURI(arg0);
-  } catch (err) {
-  }
-  const str3 = str2.replace(/\\/g, "/");
-  const replace = str3.replace(/webpack:\/?/g, "").replace;
-  str3.replace(/webpack:\/?/g, "");
-  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
-  return replace(regExp, "app:///");
 };

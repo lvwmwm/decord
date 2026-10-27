@@ -1,10 +1,10 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12542
+// Function ID: 12543
 // Name: ConjurePerfTraceTab
-// Dependencies: [32, 5, 19, 17, 10704, 21, 4971, 587, 6672, 12540, 2002, 558, 576, 10734, 12546, 5234, 12542, 6905, 1281, 8696, 12547, 11762, 1633, 504, 12544, 7145, 11859, 5684, 12541, 7220, 2]
+// Dependencies: [32, 5, 19, 17, 10704, 21, 4971, 587, 6672, 12543, 2002, 558, 576, 10734, 12549, 5234, 12545, 6905, 1281, 8696, 12550, 12259, 1633, 504, 12547, 7145, 12280, 5684, 12544, 7220, 2]
 // Exports: openPerfTrace
 
-// Module 12539 (ConjurePerfTraceTab)
+// Module 12542 (ConjurePerfTraceTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import v1 from "v1" /* 1281 */;
@@ -15,9 +15,9 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import Card_Card from "Card/Card" /* 6905 */;
 import FileManagerUtils from "FileManagerUtils" /* 8696 */;
 import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10734 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12542 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 12544 */;
-import ConjurePerfTraceList from "ConjurePerfTraceList" /* 12547 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 12545 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 12547 */;
+import ConjurePerfTraceList from "ConjurePerfTraceList" /* 12550 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ let obj6;
 let obj7;
 let obj8;
 let tmp6;
-const ConjureHeaderIconButtonDefault = tmp6(11859);
+const ConjureHeaderIconButtonDefault = tmp6(12280);
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -98,7 +98,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
     }
     if (cResult[7] !== tmp11) {
       let obj2 = { status: tmp11 };
-      const tmp16 = closure_8(trace(12546), obj2);
+      const tmp16 = closure_8(trace(12549), obj2);
       cResult[7] = tmp11;
       cResult[8] = tmp16;
       tmp13 = tmp16;
@@ -113,7 +113,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
         tmp17 = cResult[11];
       }
       if (cResult[12] !== trace) {
-        const tmpResult3 = projectId(12542);
+        const tmpResult3 = projectId(12545);
         const perfTraceDurationResult = tmpResult3.perfTraceDuration(trace);
         cResult[12] = trace;
         cResult[13] = perfTraceDurationResult;
@@ -141,7 +141,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
               tmp25 = cResult[20];
             }
             if (cResult[21] !== trace) {
-              const tmpResult4 = projectId(12542);
+              const tmpResult4 = projectId(12545);
               const perfTraceSummaryResult = tmpResult4.perfTraceSummary(trace);
               cResult[21] = trace;
               cResult[22] = perfTraceSummaryResult;
@@ -241,7 +241,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
     const id = trace.id;
     const obj = ModalActionCreatorsDefault;
     const obj2 = { projectId, traceId: id };
-    obj.pushLazy(asyncRequire(12540, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+    obj.pushLazy(asyncRequire(12543, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
   };
   cResult[2] = projectId;
   cResult[3] = trace.id;
@@ -275,7 +275,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
       const id = trace.id;
       const obj = ModalActionCreatorsDefault;
       const obj2 = { projectId: require, traceId: id };
-      obj.pushLazy(asyncRequire(12540, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+      obj.pushLazy(asyncRequire(12543, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
     },
     accessibilityLabel: trace.name,
     children: tmp8(View, obj3)
@@ -284,7 +284,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerfTr
   const obj4 = { style: tmp.rowTop, children: items };
   Card = Card_Card.Card;
   const obj5 = { status: obj6.perfTraceStatus(trace) };
-  const tmp9 = trace(12546);
+  const tmp9 = trace(12549);
   obj6 = ConjurePerfTraceLayout;
   items = [closure_8(tmp9, obj5), , ];
   const obj7 = { variant: "text-sm/semibold", color: "text-default", style: tmp.rowName, lineClamp: 1, children: trace.name };
@@ -398,7 +398,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -443,7 +443,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                   return obj;
                 } else {
                   c2 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp11) {
                 c2 = 3;
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
     }
     if (cResult[9] !== tmp13) {
       cResult[9] = tmp13;
-      const tmp2Result3 = projectId(12544);
+      const tmp2Result3 = projectId(12547);
       tmp2Result3.sumPerfTraceStats(tmp13);
       class B {
         constructor() {
@@ -515,7 +515,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -560,7 +560,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                   return obj;
                 } else {
                   c2 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp11) {
                 c2 = 3;
@@ -640,7 +640,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -685,7 +685,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     return obj;
                   } else {
                     c2 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp11) {
                   c2 = 3;
@@ -777,7 +777,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -822,7 +822,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c2 = 3;
@@ -906,7 +906,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -951,7 +951,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c2 = 3;
@@ -1052,7 +1052,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -1097,7 +1097,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     return obj;
                   } else {
                     c2 = 3;
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp11) {
                   c2 = 3;
@@ -1168,7 +1168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -1213,7 +1213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c2 = 3;
@@ -1295,7 +1295,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -1340,7 +1340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c2 = 3;
@@ -1430,7 +1430,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -1475,7 +1475,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                 return obj;
               } else {
                 c2 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c2 = 3;
@@ -1501,7 +1501,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
     cResult[13] = B;
     tmp22 = B;
   }
-  const tmp2Result4 = projectId(12547);
+  const tmp2Result4 = projectId(12550);
   const filterPerfTracesResult = tmp2Result4.filterPerfTraces(stateFromStoresArray, first1);
   cResult[4] = first1;
   cResult[5] = stateFromStoresArray;
@@ -1589,7 +1589,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1634,7 +1634,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c2 = 3;
@@ -1696,7 +1696,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
 function openPerfTrace(projectId, traceId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { projectId, traceId };
-  obj.pushLazy(asyncRequire(12540, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+  obj.pushLazy(asyncRequire(12543, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
 }
 const result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/native/ConjurePerfTraceTab.tsx");
 

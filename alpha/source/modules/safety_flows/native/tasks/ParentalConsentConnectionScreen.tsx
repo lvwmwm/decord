@@ -1,10 +1,10 @@
-// Module ID: 19434
-// Function ID: 19435
+// Module ID: 19444
+// Function ID: 19445
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7645, 1392, 7646, 21, 4971, 587, 19425, 19424, 12879, 5263, 18924, 16171, 8125, 504, 16169, 19435, 19419, 5663, 1128, 2832, 5210, 16170, 2002, 19428, 12727, 5977, 19436, 12937, 19437, 5234, 2536, 16172, 2]
+// Dependencies: [5, 32, 19, 17, 7645, 1392, 7646, 21, 4971, 587, 19435, 19434, 12882, 5263, 18934, 16172, 8125, 504, 16170, 19445, 19429, 5663, 1128, 2832, 5210, 16171, 2002, 19438, 12730, 5977, 19446, 12940, 19447, 5234, 2536, 16173, 2]
 // Exports: default
 
-// Module 19434 (ParentalConsentConnectionScreen)
+// Module 19444 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef2832 from "module_2832" /* 2832 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16169 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -169,7 +169,7 @@ export default function ParentalConsentConnectionScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -219,7 +219,7 @@ export default function ParentalConsentConnectionScreen() {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2832.dMMSA0), body: intl2.format(_modDef2832["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(16170, dependencyMap.paths);
+    const tmp2 = asyncRequire(16171, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

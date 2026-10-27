@@ -1,12 +1,12 @@
-// Module ID: 18903
-// Function ID: 18904
+// Module ID: 18913
+// Function ID: 18914
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8649, 1087, 21, 4971, 587, 558, 576, 1633, 504, 15839, 18885, 8658, 8739, 8154, 8653, 8655, 1128, 5234, 18894, 18882, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 8649, 1087, 21, 4971, 587, 558, 576, 1633, 504, 15840, 18895, 8658, 8739, 8154, 8653, 8655, 1128, 5234, 18904, 18892, 5244, 2]
 
-// Module 18903 (RedesignAddAvatarModal)
+// Module 18913 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18882 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18892 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
                 tmp4(true);
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {
@@ -581,7 +581,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -621,7 +621,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {

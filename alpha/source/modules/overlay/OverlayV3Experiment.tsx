@@ -15,7 +15,7 @@ let obj4;
 let obj6;
 let obj8;
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj2 };
+let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "Array" }, variations: obj2 };
 obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj2[3] = { keybindOverride: "ctrl+l" };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);

@@ -1,9 +1,9 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14222
+// Function ID: 14223
 // Name: useMediaModalFooterBackground
 // Dependencies: [32, 558, 576, 683, 5252, 587, 2]
 
-// Module 14221 (useMediaModalFooterBackground)
+// Module 14222 (useMediaModalFooterBackground)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;

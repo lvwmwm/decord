@@ -1,9 +1,9 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14886
+// Function ID: 14887
 // Name: useFetchGuildBoostSlots
 // Dependencies: [5, 32, 19, 7511, 2001, 558, 576, 504, 1107, 7531, 8368, 2]
 
-// Module 14885 (useFetchGuildBoostSlots)
+// Module 14886 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c2 = 3;
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -243,7 +243,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c2 = 3;

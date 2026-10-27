@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

@@ -1,9 +1,9 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12733
+// Function ID: 12734
 // Name: OutcomeStep
-// Dependencies: [19, 11029, 12722, 21, 4971, 1128, 2406, 558, 576, 12724, 12725, 5234, 7901, 5977, 587, 12727, 5244, 7900, 2]
+// Dependencies: [19, 11030, 12725, 21, 4971, 1128, 2406, 558, 576, 12727, 12728, 5234, 7901, 5977, 587, 12730, 5244, 7900, 2]
 
-// Module 12730 (OutcomeStep)
+// Module 12733 (OutcomeStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1128 */;
@@ -13,11 +13,11 @@ import components_Button_Button from "components/Button/Button" /* 5244 */;
 import Stack_Stack from "Stack/Stack" /* 5977 */;
 import ModalScreen2 from "ModalScreen" /* 7900 */;
 import ModalContent2 from "ModalContent" /* 7901 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12722 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12724 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12725 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12727 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12728 */;
 import react from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11029 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11030 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -190,7 +190,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
                   tmp33 = tmp35;
                 }
                 const obj3 = { children: metroImportDefault(components_Button_Button.Button, obj4) };
-                const ModalFooter = tmp(12727).ModalFooter;
+                const ModalFooter = tmp(12730).ModalFooter;
                 obj4 = { text: null, size: "lg", onPress: null };
                 ({ text: obj9.text, onPress: obj9.onPress } = cta);
                 const tmp32 = metroImportDefault(ModalFooter, obj3);
@@ -317,7 +317,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   const obj7 = { children: metroImportAll(Stack, obj3) };
   items1[0] = metroImportDefault(ModalContent, obj7);
   const obj8 = { children: metroImportDefault(components_Button_Button.Button, obj9) };
-  const ModalFooter = tmp10(12727).ModalFooter;
+  const ModalFooter = tmp10(12730).ModalFooter;
   obj9 = { text: cta.text, size: "lg", onPress: cta.onPress };
   items1[1] = metroImportDefault(ModalFooter, obj8);
   return metroImportAll(ModalScreen, obj6);

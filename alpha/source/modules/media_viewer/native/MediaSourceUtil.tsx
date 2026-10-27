@@ -38,7 +38,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f101550 = () => {
+const f101600 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -814,7 +814,7 @@ function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f101550, handleDownloadError);
+  return result.then(f101600, handleDownloadError);
 }
 function isAnimatedWebpSource(sourceURI) {
   let result = null != sourceURI.sourceURI && null != sourceURI.uri;
@@ -1135,7 +1135,7 @@ export const downloadMediaAsset = function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f101550, handleDownloadError);
+  return downloadMediaAssetResult.then(f101600, handleDownloadError);
 };
 export { downloadMediaAssetWithContentType };
 export const getYoutubeClipVideoIdFromURI = function getYoutubeClipVideoIdFromURI(uri) {

@@ -1,11 +1,11 @@
-// Module ID: 18350
-// Function ID: 18351
+// Module ID: 18359
+// Function ID: 18360
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 4823, 6010, 1392, 21, 4971, 587, 558, 576, 1633, 13529, 504, 18351, 18353, 13555, 13347, 2]
+// Dependencies: [32, 19, 17, 4823, 6010, 1392, 21, 4971, 587, 558, 576, 1633, 13531, 504, 18360, 18362, 13557, 13350, 2]
 
-// Module 18350 (RestrictedMessageRequestPreview)
+// Module 18359 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
-import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13529 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13531 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -244,8 +244,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155738 */ }, 1000);
-          return () => { /* body not rendered: F155739 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155843 */ }, 1000);
+          return () => { /* body not rendered: F155844 */ };
         }
       }
     }
@@ -264,8 +264,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155738 */ }, 1000);
-          return () => { /* body not rendered: F155739 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155843 */ }, 1000);
+          return () => { /* body not rendered: F155844 */ };
         }
       }
     }
@@ -281,8 +281,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155738 */ }, 1000);
-          return () => { /* body not rendered: F155739 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155843 */ }, 1000);
+          return () => { /* body not rendered: F155844 */ };
         }
       }
     }
@@ -403,17 +403,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(18351), obj6), , ];
+      items9 = [closure_10(tmp2(18360), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(18353), obj7);
+      items9[1] = closure_10(ref(18362), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };
-        tmp19Result = tmp19(tmp2(13555), obj8);
+        tmp19Result = tmp19(tmp2(13557), obj8);
       }
       items9[2] = tmp19Result;
       items10 = [closure_11(tmp16, obj5), ];
-      const obj9 = { style: items11, children: closure_10(ref(13347), obj11) };
+      const obj9 = { style: items11, children: closure_10(ref(13350), obj11) };
       items11 = [tmp.footer, ];
       items11[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       const obj10 = { paddingBottom: ref(587).space.PX_8 + bottom };

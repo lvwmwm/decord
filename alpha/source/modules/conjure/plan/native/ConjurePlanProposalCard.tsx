@@ -1,24 +1,24 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12425
+// Function ID: 12426
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 6773, 21, 4971, 587, 12443, 558, 576, 12445, 12446, 5669, 11832, 5705, 12280, 12447, 12449, 12452, 12455, 504, 12453, 1128, 12456, 12457, 12458, 12460, 3830, 12441, 5234, 12464, 12465, 5244, 11819, 2]
+// Dependencies: [19, 17, 6773, 21, 4971, 587, 12426, 558, 576, 12428, 12429, 5669, 12180, 5705, 12229, 12430, 12432, 12435, 12438, 504, 12436, 1128, 12439, 12440, 12441, 12443, 3830, 12424, 5234, 12447, 12448, 5244, 12168, 2]
 
-// Module 12442 (ConjurePlanProposalCard)
+// Module 12425 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11832 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12280 */;
-import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12443 */;
-import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12445 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12446 */;
-import conjurePlanBot from "conjurePlanBot" /* 12453 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12456 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12457 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12458 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12460 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12180 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12229 */;
+import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12426 */;
+import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12428 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12429 */;
+import conjurePlanBot from "conjurePlanBot" /* 12436 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12439 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12440 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12441 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12443 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;

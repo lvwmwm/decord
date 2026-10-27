@@ -1,16 +1,34 @@
 // Module ID: 15547
 // Function ID: 15548
-// Dependencies: [15548]
+// Dependencies: [15548, 15550, 15557, 15580, 15568, 15582, 15578, 15583]
 
 // Module 15547
 import _mod15548 from "module_15548" /* 15548 */;
+import _mod15550 from "module_15550" /* 15550 */;
+import _mod15557 from "module_15557" /* 15557 */;
+import _mod15568 from "module_15568" /* 15568 */;
+import _mod15578 from "module_15578" /* 15578 */;
+import _mod15580 from "module_15580" /* 15580 */;
+import _mod15582 from "module_15582" /* 15582 */;
+import propertyIsEnumerable from "propertyIsEnumerable" /* 15583 */;
 
-
-export default !_mod15548(() => {
-  const obj = {
-    get() {
-      return 7;
+if (!_mod15548) {
+  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
+    const tmp3 = _mod15550(arg0);
+    const tmp4 = _mod15557(arg1);
+    if (!_mod15580) {
+      if (_mod15568(tmp3, tmp4)) {
+        const tmpResult = _mod15582;
+        const tmpResult2 = _mod15578;
+        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
+      }
+    } else {
+      try {
+        return getOwnPropertyDescriptor(tmp3, tmp4);
+      } catch (err) {
+      }
     }
   };
-  return 7 !== Object.defineProperty({}, 1, obj)[1];
-});
+}
+
+export const f = getOwnPropertyDescriptor;

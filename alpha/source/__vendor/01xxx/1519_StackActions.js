@@ -37,13 +37,13 @@ const StackActions = {
   popToTop() {
     return { type: "POP_TO_TOP" };
   },
-  popTo(WEBAUTHN_VIEW, params, arg2) {
+  popTo(PROJECTS, params, arg2) {
     let tmp;
     if (typeof arg2 === "boolean") {
       const _console = console;
       console.warn("Passing a boolean as the third argument to 'popTo' is deprecated. Pass '{ merge: true }' instead.");
     }
-    const payload = { name: WEBAUTHN_VIEW, params, merge: tmp };
+    const payload = { name: PROJECTS, params, merge: tmp };
     tmp = arg2;
     if (typeof arg2 !== "boolean") {
       let merge;

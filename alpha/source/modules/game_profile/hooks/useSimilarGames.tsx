@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   if (cResult[3] !== tmp10) {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     const items1 = [tmp10];
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   } else {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     tmp15 = cResult[5];
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     const items2 = [GameStore, UserStore];
@@ -90,14 +90,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   } else {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
   }
   if (cResult[7] !== tmp10) {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     const items3 = [tmp10];
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   } else {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     tmp20 = cResult[9];
@@ -120,13 +120,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
     let tmp25;
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       class S {
         constructor() {
-          return data.some(() => { /* body not rendered: F146473 */ });
+          return data.some(() => { /* body not rendered: F146563 */ });
         }
       }
       tmp26[1] = closure_6;
@@ -135,7 +135,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
     } else {
       class S {
         constructor() {
-          return data.some(() => { /* body not rendered: F146473 */ });
+          return data.some(() => { /* body not rendered: F146563 */ });
         }
       }
     }
@@ -143,13 +143,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   } else {
     class S {
       constructor() {
-        return data.some(() => { /* body not rendered: F146473 */ });
+        return data.some(() => { /* body not rendered: F146563 */ });
       }
     }
     if (cResult[11] === stateFromStoresArray) {
       class S {
         constructor() {
-          return data.some(() => { /* body not rendered: F146473 */ });
+          return data.some(() => { /* body not rendered: F146563 */ });
         }
       }
       return tmp24;

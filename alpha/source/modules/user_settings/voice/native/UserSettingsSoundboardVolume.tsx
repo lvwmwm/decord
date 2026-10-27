@@ -1,15 +1,15 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11626
+// Function ID: 11627
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1087, 21, 4971, 558, 576, 7452, 7253, 1128, 7444, 11622, 2067, 5234, 11613, 6903, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 558, 576, 7452, 7253, 1128, 7444, 11623, 2067, 5234, 11614, 6903, 2]
 
-// Module 11625 (UserSettingsSoundboardVolume)
+// Module 11626 (UserSettingsSoundboardVolume)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 7444 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11622 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11623 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
       return tmp26;
     }
     const obj5 = { title: tmp8, hasIcons: false, children: closure_5(TableRow, obj6) };
-    const UserSettingsTableRowGroup = tmp(11613).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11614).UserSettingsTableRowGroup;
     obj6 = { label: tmp10, subLabel: closure_7(closure_6, obj7) };
     obj7 = { children: items };
     items = [tmp18, tmp23];
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const obj2 = { title: intl.string(analyticsLocations(1128).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
-  const UserSettingsTableRowGroup = analyticsLocations(11613).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = analyticsLocations(11614).UserSettingsTableRowGroup;
   intl = analyticsLocations(1128).intl;
   obj3 = { label: intl2.string(analyticsLocations(1128).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
   TableRow = analyticsLocations(6903).TableRow;

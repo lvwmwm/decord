@@ -1,10 +1,10 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19427
+// Function ID: 19428
 // Name: SafetyFlowsManager
-// Dependencies: [19418, 7214, 2]
+// Dependencies: [19428, 7214, 2]
 
-// Module 19417 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 19418 */;
+// Module 19427 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 19428 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 

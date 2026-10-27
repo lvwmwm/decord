@@ -1,10 +1,10 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12715
+// Function ID: 12716
 // Name: voiceChannelAppSession
 // Dependencies: [5626, 2]
 // Exports: hasVoiceChannelAppSession, voiceChannelAppSurface
 
-// Module 12712 (voiceChannelAppSession)
+// Module 12715 (voiceChannelAppSession)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
 import size from "module_2" /* 2 */;
 

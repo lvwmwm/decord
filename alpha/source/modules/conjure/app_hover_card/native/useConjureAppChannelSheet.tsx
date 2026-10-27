@@ -1,9 +1,9 @@
-// Module ID: 13865
-// Function ID: 13866
+// Module ID: 13867
+// Function ID: 13868
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6773, 21, 4971, 587, 558, 576, 1417, 5669, 7346, 504, 13866, 1128, 3830, 5025, 2]
+// Dependencies: [19, 6773, 21, 4971, 587, 558, 576, 1417, 5669, 7346, 504, 13868, 1128, 3830, 5025, 2]
 
-// Module 13865 (useConjureAppChannelSheet)
+// Module 13867 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import UserUtils from "UserUtils" /* 5025 */;
 import FastImageDefault from "FastImage" /* 5669 */;
-import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13866 */;
+import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13868 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import createStyles from "createStyles" /* 4971 */;

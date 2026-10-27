@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12496
+// Function ID: 12497
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 4972, 10712, 11755, 21, 587, 4971, 1128, 3830, 558, 576, 5252, 7957, 10414, 12514, 10816, 11756, 12516, 12515, 11757, 12518, 11827, 12357, 11759, 11758, 504, 12480, 11761, 12521, 10647, 11762, 11792, 12523, 5210, 11850, 12525, 12386, 12526, 5680, 12528, 12531, 5234, 9761, 10841, 12532, 5037, 2]
+// Dependencies: [5, 32, 19, 17, 4972, 10712, 12291, 21, 587, 4971, 1128, 3830, 558, 576, 5252, 7957, 10414, 12497, 10816, 12292, 12499, 12498, 12293, 12501, 12176, 12340, 12162, 12178, 504, 12463, 12258, 12504, 10647, 12259, 12272, 12506, 5210, 12198, 12508, 12369, 12509, 5680, 12511, 12514, 5234, 9761, 10842, 12515, 5037, 2]
 // Exports: default
 
-// Module 12513 (ConjureNativeComposer)
+// Module 12496 (ConjureNativeComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -14,31 +14,31 @@ import useToken from "useToken" /* 5252 */;
 import SendMessageIcon from "SendMessageIcon" /* 5680 */;
 import ImageCarousel from "ImageCarousel" /* 10414 */;
 import MusicIcon from "MusicIcon" /* 10647 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10841 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11756 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11757 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11759 */;
-import FileUpIcon from "FileUpIcon" /* 11792 */;
-import conjureStoredAttachments2 from "conjureStoredAttachments" /* 11827 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 11850 */;
-import conjureMentions from "conjureMentions" /* 12357 */;
-import StopIcon from "StopIcon" /* 12386 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 12480 */;
-import conjureComposerPills from "conjureComposerPills" /* 12514 */;
-import ChatInputParser from "ChatInputParser" /* 12515 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12516 */;
-import ImagesIcon from "ImagesIcon" /* 12521 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12523 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12525 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12526 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12528 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10842 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12162 */;
+import conjureStoredAttachments2 from "conjureStoredAttachments" /* 12176 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 12198 */;
+import FileUpIcon from "FileUpIcon" /* 12272 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12292 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12293 */;
+import conjureMentions from "conjureMentions" /* 12340 */;
+import StopIcon from "StopIcon" /* 12369 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 12463 */;
+import conjureComposerPills from "conjureComposerPills" /* 12497 */;
+import ChatInputParser from "ChatInputParser" /* 12498 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12499 */;
+import ImagesIcon from "ImagesIcon" /* 12504 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12506 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12508 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12509 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12511 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4972 */;
 import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10712 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 11755 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12291 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -654,7 +654,7 @@ export default function ConjureNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -685,7 +685,7 @@ export default function ConjureNativeComposer(projectId) {
         } else {
           projectId(value);
           onSend = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp9) {
         onSend = 3;
@@ -726,7 +726,7 @@ export default function ConjureNativeComposer(projectId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -775,7 +775,7 @@ export default function ConjureNativeComposer(projectId) {
               }));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c4 = 3;

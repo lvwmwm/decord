@@ -1,13 +1,13 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12453
+// Function ID: 12454
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6773, 1128, 3830, 11754, 558, 576, 504, 11750, 2]
+// Dependencies: [5, 32, 19, 6773, 1128, 3830, 12290, 558, 576, 504, 12304, 2]
 
-// Module 12470 (useConjureScopeCards)
+// Module 12453 (useConjureScopeCards)
 import intl6 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6773 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 11754 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult3 = tmp(11750);
+  const tmpResult3 = tmp(12304);
   const conjureEligibleGuilds = tmpResult3.useConjureEligibleGuilds(ConjureScopeSetupCard);
   [tmp11, importDefault] = settle(react.useState(null), 2);
   const tmp10 = settle(react.useState(null), 2);
@@ -175,7 +175,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+352" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   let c5;
@@ -229,7 +229,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
                         c5 = 0;
                       }
                       c7 = 3;
-                      return { value: "IconComponent", done: "+352" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp27) {
                     closure_4 = tmp27;
@@ -337,7 +337,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           }
         }
         if (cResult[8] !== tmp19) {
-          const tmpResult4 = tmp(11754);
+          const tmpResult4 = tmp(12290);
           const result = tmpResult4.ownerOnlyClarification(tmp19);
           cResult[8] = tmp19;
           cResult[9] = result;
@@ -397,7 +397,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -450,7 +450,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           closure_4 = tmp27;
@@ -563,7 +563,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(11754);
+    tmpResult = tmp(12290);
     return obj5;
   }
 });
@@ -804,7 +804,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -853,7 +853,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
                             c4 = 0;
                           }
                           c6 = 3;
-                          return { value: "IconComponent", done: "+352" };
+                          return { value: "IconComponent", done: null };
                         }
                       } catch (tmp26) {
                         closure_3 = tmp26;
@@ -979,7 +979,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -1028,7 +1028,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           closure_3 = tmp26;
@@ -1050,7 +1050,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(11750);
+  let obj2 = projectId(12304);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds(switchTo);
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -1170,7 +1170,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(11754);
+  tmpResult = tmp(12290);
   return obj5;
 });
 let result = size.fileFinishedImporting("modules/conjure/scope_setup/useConjureScopeCards.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 19145
-// Function ID: 19146
+// Module ID: 19155
+// Function ID: 19156
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11238, 8868, 4823, 4845, 9006, 1087, 21, 4971, 587, 558, 576, 1128, 2067, 5234, 6911, 14920, 6900, 13265, 504, 12, 8387, 8385, 5210, 12773, 2002, 5663, 10821, 7134, 1202, 19146, 7220, 5592, 2]
+// Dependencies: [32, 19, 17, 11239, 8868, 4823, 4845, 9006, 1087, 21, 4971, 587, 558, 576, 1128, 2067, 5234, 6911, 14921, 6900, 13268, 504, 12, 8387, 8385, 5210, 12776, 2002, 5663, 10822, 7134, 1202, 19156, 7220, 5592, 2]
 
-// Module 19145 (GuildSettingsModalInstantInvites)
+// Module 19155 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,12 +15,12 @@ import Text_Text from "Text/Text" /* 5234 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 6900 */;
 import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8385 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8387 */;
-import InstantInvite from "InstantInvite" /* 10821 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14920 */;
+import InstantInvite from "InstantInvite" /* 10822 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11238 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11239 */;
 import InviteRecord from "InviteRecord" /* 8868 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import GuildStore from "GuildStore" /* 4845 */;
@@ -154,7 +154,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(12773, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(12776, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);

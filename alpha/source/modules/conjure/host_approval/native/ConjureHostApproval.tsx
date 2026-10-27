@@ -1,17 +1,17 @@
-// Module ID: 11817
-// Function ID: 11818
+// Module ID: 12166
+// Function ID: 12167
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 11818, 5234, 1128, 3830, 10735, 5244, 5977, 11819, 6903, 6987, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12167, 5234, 1128, 3830, 10735, 5244, 5977, 12168, 6903, 6987, 2]
 
-// Module 11817 (host_approval/ConjureHostApproval)
+// Module 12166 (host_approval/ConjureHostApproval)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3830 from "module_3830" /* 3830 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import ConjureHostApproval from "ConjureHostApproval" /* 10735 */;
-import ConjureAwaitingUser from "ConjureAwaitingUser" /* 11818 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11819 */;
+import ConjureAwaitingUser from "ConjureAwaitingUser" /* 12167 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12168 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -54,7 +54,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   ({ host, reason } = approval);
   const card = tmp4.card;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_4(projectId(11818).ConjureAwaitingPulseRing, {});
+    const tmp7 = closure_4(projectId(12167).ConjureAwaitingPulseRing, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -228,7 +228,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             tmp50[2] = tmp15;
             tmp50[3] = tmp18;
             tmp50[4] = tmp44;
-            const tmp51 = closure_5(id(11819), obj10);
+            const tmp51 = closure_5(id(12168), obj10);
             cResult[30] = tmp4.card;
             cResult[31] = tmp44;
             cResult[32] = tmp15;

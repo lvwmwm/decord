@@ -1,9 +1,9 @@
-// Module ID: 15423
-// Function ID: 15424
+// Module ID: 15424
+// Function ID: 15425
 // Name: Atoms
 // Dependencies: [17, 2, 8966, 5234]
 
-// Module 15423 (Atoms)
+// Module 15424 (Atoms)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8966 */;

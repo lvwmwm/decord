@@ -1,16 +1,16 @@
-// Module ID: 17664
-// Function ID: 17665
+// Module ID: 17665
+// Function ID: 17666
 // Name: RTCConnectionDesyncHooks
-// Dependencies: [32, 19, 502, 15065, 5714, 5630, 1087, 12, 558, 576, 504, 6780, 17665, 2]
+// Dependencies: [32, 19, 502, 15066, 5714, 5630, 1087, 12, 558, 576, 504, 6780, 17666, 2]
 
-// Module 17664 (RTCConnectionDesyncHooks)
+// Module 17665 (RTCConnectionDesyncHooks)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
-import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17665 */;
+import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17666 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 15065 */;
+import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 15066 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import VoiceStateStore from "VoiceStateStore" /* 5630 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

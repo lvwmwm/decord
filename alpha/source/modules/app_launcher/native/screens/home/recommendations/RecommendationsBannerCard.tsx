@@ -1,16 +1,16 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 11973
+// Function ID: 11974
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 9649, 8676, 1417, 12059, 6908, 12083, 2000, 12076, 5234, 1128, 12036, 6912, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 9649, 8676, 1417, 11950, 6908, 11974, 2000, 11967, 5234, 1128, 11927, 6912, 2]
 
-// Module 12082 (RecommendationsBannerCard)
+// Module 11973 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12076 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 12083 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11967 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 11974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -187,7 +187,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
               return;
             }
           }
-          tmp23Result2 = closure_6(tmp(12059).BaseAppRow, obj2);
+          tmp23Result2 = closure_6(tmp(11950).BaseAppRow, obj2);
         } else {
           let tmp23Result;
           const items1 = [tmp5.container, , ];
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
                 return;
               }
             }
-            items3 = [closure_6(tmp26(12076), obj11), ];
+            items3 = [closure_6(tmp26(11967), obj11), ];
             let tmp25Result = tmp6;
             if (tmp25Result) {
               const obj12 = { style: tmp5.promotedLabelWrapper, children: closure_6(tmp30, obj13) };
@@ -404,7 +404,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(12059).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(11950).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
@@ -449,7 +449,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(12036), obj16);
+      tmp14Result = tmp14(tmp10(11927), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };

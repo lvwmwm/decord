@@ -1,15 +1,15 @@
-// Module ID: 11122
-// Function ID: 11123
+// Module ID: 11123
+// Function ID: 11124
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1392, 21, 4971, 5268, 587, 558, 576, 504, 1128, 6924, 11121, 11123, 7095, 11149, 2]
+// Dependencies: [19, 1392, 21, 4971, 5268, 587, 558, 576, 504, 1128, 6924, 11122, 11124, 7095, 11150, 2]
 
-// Module 11122 (BadgeDirectoryScreen)
+// Module 11123 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11121 */;
-import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11123 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11122 */;
+import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11124 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult5 = tmp(6924);
-      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(11121).closeBadgeDirectoryScreen);
+      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(11122).closeBadgeDirectoryScreen);
       cResult[8] = headerCloseButton;
       tmp16 = headerCloseButton;
     } else {
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         if (cResult[11] === tmp14) {
           tmp18 = cResult[12];
         }
-        const tmpResult6 = tmp(11121);
+        const tmpResult6 = tmp(11122);
         if (tmpResult6.isBadgeDirectoryIOSPageSheet()) {
           if (cResult[13] === tmp18) {
             if (cResult[14] === tmp4.sheetHeader) {
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
               tmp20 = cResult[19];
             }
           }
-          const tmp23 = jsx(tmp(11149).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
+          const tmp23 = jsx(tmp(11150).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
           cResult[17] = tmp18;
           cResult[18] = tmp4.view;
           cResult[19] = tmp23;
@@ -234,14 +234,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(11121);
+      const tmp2Result = targetUserId(11122);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
         tmp9Result = tmp9(tmp2(7095).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11149).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11150).Modal, obj5);
       }
       return tmp9Result;
     }

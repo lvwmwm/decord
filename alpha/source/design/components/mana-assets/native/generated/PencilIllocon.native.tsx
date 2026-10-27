@@ -1,28 +1,28 @@
-// Module ID: 13616
-// Function ID: 13617
+// Module ID: 13618
+// Function ID: 13619
 // Name: PencilIllocon
-// Dependencies: [19, 21, 13617, 13513, 13618, 558, 576, 6995, 5669, 2]
+// Dependencies: [19, 21, 13619, 13516, 13620, 558, 576, 6995, 5669, 2]
 
-// Module 13616 (PencilIllocon)
+// Module 13618 (PencilIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import react_native from "react-native" /* 6995 */;
-import _modDef13513 from "module_13513" /* 13513 */;
-import _modDef13617 from "module_13617" /* 13617 */;
-import _modDef13618 from "module_13618" /* 13618 */;
+import _modDef13516 from "module_13516" /* 13516 */;
+import _modDef13619 from "module_13619" /* 13619 */;
+import _modDef13620 from "module_13620" /* 13620 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13617 };
+let obj2 = { uri: _modDef13619 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13513 };
-({ uri: _modDef13513 });
-obj[3] = { uri: _modDef13618 };
-({ uri: _modDef13618 });
+obj[2] = { uri: _modDef13516 };
+({ uri: _modDef13516 });
+obj[3] = { uri: _modDef13620 };
+({ uri: _modDef13620 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PencilIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

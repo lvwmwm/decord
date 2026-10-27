@@ -1,20 +1,20 @@
-// Module ID: 18058
-// Function ID: 18059
+// Module ID: 18067
+// Function ID: 18068
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13236, 4823, 9712, 10024, 21, 587, 4971, 558, 576, 504, 13183, 18059, 7253, 7278, 1505, 13332, 5267, 7038, 1633, 1384, 4928, 7584, 13247, 13222, 5052, 5206, 5209, 5247, 13256, 5159, 18060, 18070, 18186, 18188, 18189, 18190, 5939, 5297, 2]
+// Dependencies: [19, 17, 13239, 4823, 9712, 10024, 21, 587, 4971, 558, 576, 504, 13186, 18068, 7253, 7278, 1505, 13335, 5267, 7038, 1633, 1384, 4928, 7584, 13250, 13225, 5052, 5206, 5209, 5247, 13259, 5159, 18069, 18079, 18195, 18197, 18198, 18199, 5939, 5297, 2]
 
-// Module 18058 (ChannelDetails)
+// Module 18067 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import timing from "timing" /* 5206 */;
 import timingPresets from "timingPresets" /* 5209 */;
 import spring from "spring" /* 5247 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13222 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13247 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13256 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13225 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13250 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13259 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13236 */;
+import SearchQueryStore from "SearchQueryStore" /* 13239 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import ChannelDetailsStore from "ChannelDetailsStore" /* 9712 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10024 */;

@@ -1,9 +1,9 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14578
+// Function ID: 14579
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7074, 8732, 7709, 14393, 7705, 14378, 1128, 5234, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7074, 8732, 7709, 14394, 7705, 14379, 1128, 5234, 2]
 
-// Module 14577 (InAppReportsWidgetPreviewElement)
+// Module 14578 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp6;
-const UserProfilePersonalWidgetCardDefault = tmp6(14393);
+const UserProfilePersonalWidgetCardDefault = tmp6(14394);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj6 = { userId, widget, disableInteraction: true, cardStyle: items3 };
         items3 = [tmp7.card, tmp4.card];
-        tmp9 = React3(tmp(14378).WidgetSection, obj6);
+        tmp9 = React3(tmp(14379).WidgetSection, obj6);
       }
     }
   }
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(14378).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14379).WidgetSection, obj3);
       }
     }
   }

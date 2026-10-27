@@ -1,12 +1,12 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12317
+// Function ID: 12318
 // Name: conjureLiveBehindTip
-// Dependencies: [12307, 12333, 2]
+// Dependencies: [12287, 12318, 2]
 // Exports: resolveLiveBehindTip
 
-// Module 12332 (conjureLiveBehindTip)
-import conjurePublishCard from "conjurePublishCard" /* 12307 */;
-import conjureTipImpressions from "conjureTipImpressions" /* 12333 */;
+// Module 12317 (conjureLiveBehindTip)
+import conjurePublishCard from "conjurePublishCard" /* 12287 */;
+import conjureTipImpressions from "conjureTipImpressions" /* 12318 */;
 import size from "module_2" /* 2 */;
 
 function resolveLiveBehindTip(draftHasText) {

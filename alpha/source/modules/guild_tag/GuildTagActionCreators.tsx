@@ -1,10 +1,10 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15162
+// Function ID: 15163
 // Name: GuildTagActionCreators
 // Dependencies: [5, 1392, 1087, 1297, 584, 2]
 // Exports: adoptGuildIdentity
 
-// Module 15161 (GuildTagActionCreators)
+// Module 15162 (GuildTagActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _adoptGuildIdentity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

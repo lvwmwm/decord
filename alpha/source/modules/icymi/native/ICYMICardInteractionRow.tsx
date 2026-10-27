@@ -1,10 +1,10 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 17953
+// Function ID: 17954
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7403, 4823, 6636, 4903, 1087, 1395, 21, 4915, 8286, 4971, 587, 1384, 4968, 558, 576, 504, 7411, 7566, 9825, 1128, 9350, 5234, 6908, 9983, 1105, 1417, 9781, 5669, 10655, 11014, 12911, 12462, 17938, 8542, 5225, 8329, 10079, 8841, 12899, 10087, 5252, 5258, 683, 7305, 2]
+// Dependencies: [32, 19, 17, 7403, 4823, 6636, 4903, 1087, 1395, 21, 4915, 8286, 4971, 587, 1384, 4968, 558, 576, 504, 7411, 7566, 9825, 1128, 9350, 5234, 6908, 9983, 1105, 1417, 9781, 5669, 10655, 11015, 12914, 12445, 17947, 8542, 5225, 8329, 10079, 8841, 12902, 10087, 5252, 5258, 683, 7305, 2]
 // Exports: onAddReaction
 
-// Module 17944 (ICYMICardInteractionRow)
+// Module 17953 (ICYMICardInteractionRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -22,10 +22,10 @@ import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
 import messages_MessagesUtils from "messages/MessagesUtils" /* 9781 */;
 import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9825 */;
 import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10087 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12462 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12899 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12911 */;
-import ICYMIShared from "ICYMIShared" /* 17938 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12445 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12902 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12914 */;
+import ICYMIShared from "ICYMIShared" /* 17947 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,18 +1,18 @@
-// Module ID: 18699
-// Function ID: 18700
+// Module ID: 18709
+// Function ID: 18710
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4823, 4874, 21, 4971, 558, 576, 573, 12198, 18149, 11286, 1128, 5234, 2]
+// Dependencies: [19, 17, 4823, 4874, 21, 4971, 558, 576, 573, 12091, 18158, 11287, 1128, 5234, 2]
 
-// Module 18699 (LaunchPadMembers)
+// Module 18709 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11286 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12198 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18149 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11287 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12091 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18158 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      return { channelId: "ix", type: false };
+      return { channelId: "ix", type: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045523148030837695 };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    return { channelId: "ix", type: false };
+    return { channelId: "ix", type: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045523148030837695 };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;

@@ -1,10 +1,10 @@
-// Module ID: 16693
-// Function ID: 16694
+// Module ID: 16694
+// Function ID: 16695
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1392, 1087, 4996, 1409, 15855, 7078, 8656, 8653, 1267, 1412, 1411, 4998, 2]
+// Dependencies: [5, 32, 19, 1392, 1087, 4996, 1409, 15856, 7078, 8656, 8653, 1267, 1412, 1411, 4998, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16693 (useDisplayNameStylesHandleApply)
+// Module 16694 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -62,7 +62,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -100,7 +100,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -198,7 +198,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "IconComponent", done: "+352" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp60) {
                         closure_2 = tmp60;
                         if (0 === c3) {
@@ -295,7 +295,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               return obj;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;

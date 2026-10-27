@@ -16,6 +16,8 @@ import Constants from "Constants" /* 1087 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6671 */;
 import size from "module_2" /* 2 */;
 
+let closure_3;
+
 let c9;
 let closure_4;
 let hasOwnProperty;
@@ -27,52 +29,108 @@ function saveProfileAndAccountRequest() {
 }
 let body = function _saveProfileAndAccountRequest() {
   let obj = _asyncToGenerator(async (body) => {
-    let closure_3;
     let closure_1 = arg1;
     let c4 = 0;
     let c5 = 0;
-    const iter = (async (arg0) => {
+    const iter = (async (arg0, value) => {
       let obj15;
-      value = tmp;
-      let obj6 = closure_1;
-      if (closure_1 === undefined) {
-        obj6 = {};
-      }
-      await "Reflect";
-      const HTTP = closure_131_0(closure_131_2[4]).HTTP;
-      const request = { url: closure_131_4.ME, oldFormErrors: true, body, headers: obj6.headers, rejectWithError: obj15.rejectWithMigratedError() };
-      const patch = HTTP.patch;
-      obj15 = closure_131_0(closure_131_2[4]);
-      value = await patch(request);
-      body = value.body;
-      if (body.token) {
-        const token = body.token;
-        delete body["token"];
-        const obj10 = { type: "UPDATE_TOKEN", token, userId: body.id };
-        const obj = closure_131_1(closure_131_2[3]);
-        obj.dispatch(obj10);
-        let password;
-        if (body != null) {
-          password = body.password;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
         }
-        let tmp15 = null != password;
-        if (tmp15) {
-          let new_password;
-          if (body != null) {
-            new_password = body.new_password;
+      } else {
+        try {
+          let obj6;
+          let token;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              value = tmp;
+              obj6 = closure_1;
+              if (closure_1 === undefined) {
+                obj6 = {};
+              }
+              value = undefined;
+              body = undefined;
+              token = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "Reflect", done: true };
+            }
+          } else if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              const HTTP = closure_131_0(closure_131_2[4]).HTTP;
+              const request = { url: closure_131_4.ME, oldFormErrors: true, body, headers: obj6.headers, rejectWithError: obj15.rejectWithMigratedError() };
+              const patch = HTTP.patch;
+              c4 = 2;
+              c5 = 1;
+              obj15 = closure_131_0(closure_131_2[4]);
+              const obj8 = { value: patch(request), done: false };
+              return obj8;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            body = value.body;
+            if (body.token) {
+              token = body.token;
+              delete body["token"];
+              const obj10 = { type: "UPDATE_TOKEN", token, userId: body.id };
+              const obj = closure_131_1(closure_131_2[3]);
+              obj.dispatch(obj10);
+              let password;
+              if (body != null) {
+                password = body.password;
+              }
+              let tmp15 = null != password;
+              if (tmp15) {
+                let new_password;
+                if (body != null) {
+                  new_password = body.new_password;
+                }
+                tmp15 = null != new_password;
+              }
+              if (tmp15) {
+                const obj11 = { type: "PASSWORD_UPDATED", userId: body.id };
+                const obj3 = closure_131_1(closure_131_2[3]);
+                obj3.dispatch(obj11);
+              }
+            }
+            const obj12 = { type: "CURRENT_USER_UPDATE", user: body };
+            const obj5 = closure_131_1(closure_131_2[3]);
+            obj5.dispatch(obj12);
+            c5 = 3;
+            return { value, done: true };
           }
-          tmp15 = null != new_password;
-        }
-        if (tmp15) {
-          const obj11 = { type: "PASSWORD_UPDATED", userId: body.id };
-          const obj3 = closure_131_1(closure_131_2[3]);
-          obj3.dispatch(obj11);
+        } catch (tmp31) {
+          c5 = 3;
+          throw tmp31;
         }
       }
-      const obj12 = { type: "CURRENT_USER_UPDATE", user: body };
-      const obj5 = closure_131_1(closure_131_2[3]);
-      obj5.dispatch(obj12);
-      return value;
     })();
     iter.next();
     return iter;

@@ -1,14 +1,14 @@
-// Module ID: 12557
-// Function ID: 12558
+// Module ID: 12560
+// Function ID: 12561
 // Name: ConjureDebugAgentTab
-// Dependencies: [32, 19, 17, 21, 4971, 587, 12554, 1128, 3830, 12552, 10706, 558, 576, 12558, 5244, 12551, 5234, 12559, 12556, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 12557, 1128, 3830, 12555, 10706, 558, 576, 12561, 5244, 12554, 5234, 12562, 12559, 2]
 
-// Module 12557 (ConjureDebugAgentTab)
+// Module 12560 (ConjureDebugAgentTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
-import useConjureDebugAgentStateDefault from "useConjureDebugAgentState" /* 12558 */;
+import useConjureDebugAgentStateDefault from "useConjureDebugAgentState" /* 12561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,11 +26,11 @@ const intl45 = tmp(1128);
 const Text_Text = tmp(5234);
 const components_Button_Button = tmp(5244);
 const ConjureUsageTypes = tmp(10706);
-const ConjureDebugLabels = tmp(12551);
-const ConjureDebugFormat = tmp(12552);
-const ConjureDebugPrimitives = tmp(12554);
-const ConjureDebugAnalytics = tmp(12556);
-const ConjureDebugGitSection = tmp(12559);
+const ConjureDebugLabels = tmp(12554);
+const ConjureDebugFormat = tmp(12555);
+const ConjureDebugPrimitives = tmp(12557);
+const ConjureDebugAnalytics = tmp(12559);
+const ConjureDebugGitSection = tmp(12562);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

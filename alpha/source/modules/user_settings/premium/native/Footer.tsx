@@ -1,9 +1,9 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14803
+// Function ID: 14804
 // Name: Footer
-// Dependencies: [19, 17, 21, 4971, 558, 576, 14803, 7278, 5234, 1128, 5244, 5669, 14804, 2]
+// Dependencies: [19, 17, 21, 4971, 558, 576, 14804, 7278, 5234, 1128, 5244, 5669, 14805, 2]
 
-// Module 14802 (Footer)
+// Module 14803 (Footer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import Text_Text from "Text/Text" /* 5234 */;
 import components_Button_Button from "components/Button/Button" /* 5244 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14803 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14804 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14804 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14805 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;

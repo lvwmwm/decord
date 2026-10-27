@@ -1,18 +1,18 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12795
+// Function ID: 12796
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 12793, 21, 12791, 1275, 1128, 6924, 12794, 7006, 9005, 5662, 558, 576, 7095, 2]
+// Dependencies: [5, 19, 12796, 21, 12794, 1275, 1128, 6924, 12797, 7006, 9005, 5662, 558, 576, 7095, 2]
 
-// Module 12792 (TransferOwnershipModal)
+// Module 12795 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Navigator2 from "Navigator" /* 7095 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12791 */;
-import TransferOwnershipDefault from "TransferOwnership" /* 12794 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12794 */;
+import TransferOwnershipDefault from "TransferOwnership" /* 12797 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12793 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12796 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ function getScreens(guild, toUser) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -117,7 +117,7 @@ function getScreens(guild, toUser) {
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp7) {
             c0 = 3;

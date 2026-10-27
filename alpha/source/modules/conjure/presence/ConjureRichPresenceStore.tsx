@@ -1,9 +1,9 @@
-// Module ID: 11197
-// Function ID: 11198
+// Module ID: 11198
+// Function ID: 11199
 // Name: ConjureRichPresenceStore
 // Dependencies: [32, 5, 6633, 4874, 5002, 6773, 1087, 4830, 10646, 6808, 1297, 10698, 2002, 504, 584, 2]
 
-// Module 11197 (ConjureRichPresenceStore)
+// Module 11198 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
@@ -28,7 +28,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f109464 = () => {
+  const f109523 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -46,7 +46,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f109464, closure_1_11);
+      timeout = setTimeout(f109523, closure_1_11);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -92,24 +92,27 @@ function updateActivity(withGracePeriod) {
         return flag3;
       }
     }
-    let tmp7 = null;
-    if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
-      const guildId = SelectedGuildStore.getGuildId();
-      tmp7 = null;
+    const guildId = SelectedGuildStore.getGuildId();
+    obj = ConjureProjectStore;
+    let globalSelectedProjectId = ConjureProjectStore.getGlobalSelectedProjectId();
+    if (globalSelectedProjectId == null) {
+      let selectedProjectId = null;
       if (null != guildId) {
-        obj = ConjureProjectStore;
-        const selectedProjectId = ConjureProjectStore.getSelectedProjectId(guildId);
-        let tmp11 = null;
-        if (null != selectedProjectId) {
-          tmp11 = null;
-          if (null != obj.getProject(selectedProjectId)) {
-            tmp11 = selectedProjectId;
-          }
+        selectedProjectId = null;
+        if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
+          selectedProjectId = obj.getSelectedProjectId(guildId);
         }
-        tmp7 = tmp11;
+      }
+      globalSelectedProjectId = selectedProjectId;
+    }
+    let tmp11 = null;
+    if (null != globalSelectedProjectId) {
+      tmp11 = null;
+      if (null != obj.getProject(globalSelectedProjectId)) {
+        tmp11 = globalSelectedProjectId;
       }
     }
-    if (null == tmp7) {
+    if (null == tmp11) {
       let flag2;
       if (null != c13) {
         if (withGracePeriod) {
@@ -160,9 +163,9 @@ function updateActivity(withGracePeriod) {
         clearTimeout(timeout);
         timeout = null;
       }
-      flag = tmp7 !== c12 || null == c13;
+      flag = tmp11 !== c12 || null == c13;
       if (flag) {
-        c12 = tmp7;
+        c12 = tmp11;
         let c0;
         const obj2 = { type: metroImportAll.PLAYING, name: conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_NAME, details: found[Math.floor(Math, Math.random(Math) * found.length)], timestamps: obj3 };
         let prop = conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_LINES;
@@ -178,7 +181,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f109464, c11);
+        timeout2 = setTimeout(f109523, c11);
         flag = true;
       }
     }
@@ -197,7 +200,7 @@ let obj = function _resumeRunningProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -257,7 +260,7 @@ let obj = function _resumeRunningProjects() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         if (0 === c2) {
           c4 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14063
+// Function ID: 14064
 // Name: WebhookGuildChannelSelector
 // Dependencies: [5, 32, 19, 17, 4827, 4913, 1392, 21, 4971, 587, 5210, 8925, 2002, 1128, 5604, 9637, 5234, 1202, 8951, 2]
 // Exports: default
 
-// Module 14061 (WebhookGuildChannelSelector)
+// Module 14063 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -111,7 +111,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -150,7 +150,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v3 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               v3 = 3;

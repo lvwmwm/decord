@@ -96,7 +96,7 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "enabled",
       lastTimestamp: null,
-      startTimestamp: "set_live_reload",
+      startTimestamp: 5.817,
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

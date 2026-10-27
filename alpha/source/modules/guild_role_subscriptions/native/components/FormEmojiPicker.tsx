@@ -1,9 +1,9 @@
-// Module ID: 19303
-// Function ID: 19304
+// Module ID: 19313
+// Function ID: 19314
 // Name: FormEmojiPicker
-// Dependencies: [19, 1395, 21, 4971, 558, 576, 15144, 4917, 16597, 16596, 9350, 9825, 4921, 1128, 5234, 7305, 9041, 2]
+// Dependencies: [19, 1395, 21, 4971, 558, 576, 15145, 4917, 16598, 16597, 9350, 9825, 4921, 1128, 5234, 7305, 9041, 2]
 
-// Module 19303 (FormEmojiPicker)
+// Module 19313 (FormEmojiPicker)
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9825 */;
 import react from "react" /* 19 */;
@@ -30,14 +30,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiPic
   onChange = onChange.onChange;
   ({ emojiId, emojiName } = emoji);
   const tmp4 = closure_6();
-  const tmp6 = onChange(15144)();
+  const tmp6 = onChange(15145)();
   if (cResult[0] === emojiId) {
     let tmp7;
     let tmp15;
     if (cResult[1] === emojiName) {
       tmp7 = cResult[2];
     }
-    const tmpResult = tmp(16597);
+    const tmpResult = tmp(16598);
     const emojiByIdOrName = tmpResult.useEmojiByIdOrName(guildId, tmp7);
     if (cResult[3] === tmp7) {
       if (cResult[4] === guildId) {
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiPic
     }
     if (null != tmp7) {
       const obj4 = { guildId, id: tmp7 };
-      tmp15 = closure_4(tmp5(16596), obj4);
+      tmp15 = closure_4(tmp5(16597), obj4);
     } else {
       const obj5 = { size: "custom", style: tmp4.emojiPickerIcon };
       tmp15 = closure_4(tmp(9350).ReactionIcon, obj5);
@@ -194,7 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiPic
   const onChange = emoji.onChange;
   const tmp = closure_6();
   const tmp3 = dependencyMap;
-  const tmp4 = onChange(15144)();
+  const tmp4 = onChange(15145)();
   if (emojiId == null) {
     const convertSurrogateToName = onChange(4917).convertSurrogateToName;
     onChange(4917);
@@ -203,11 +203,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiPic
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(16597);
+  let obj = guildId(16598);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     let obj2 = { guildId, id: emojiId };
-    tmp9 = closure_4(tmp2(16596), obj2);
+    tmp9 = closure_4(tmp2(16597), obj2);
     tmp8 = closure_4;
   } else {
     tmp8 = closure_4;

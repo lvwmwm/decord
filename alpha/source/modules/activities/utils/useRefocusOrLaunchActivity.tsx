@@ -1,9 +1,9 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14133
+// Function ID: 14134
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6775, 4822, 6776, 558, 576, 6809, 504, 10767, 11364, 11360, 2]
+// Dependencies: [5, 19, 6775, 4822, 6776, 558, 576, 6809, 504, 10767, 11365, 11361, 2]
 
-// Module 14131 (useRefocusOrLaunchActivity)
+// Module 14133 (useRefocusOrLaunchActivity)
 import FramesConstants from "FramesConstants" /* 6776 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -94,7 +94,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         if (0 === c3) {
           c4 = 3;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -281,7 +281,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         runBeforeLaunchAttempt = tmp22;
         if (0 === c3) {

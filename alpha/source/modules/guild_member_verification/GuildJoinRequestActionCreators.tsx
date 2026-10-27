@@ -41,7 +41,7 @@ let obj = function _fetchGuildJoinRequests() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -110,7 +110,7 @@ let obj = function _fetchGuildJoinRequests() {
                 }
               }
               c7 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else if (2 === c6) {
             c5 = 0;
@@ -198,7 +198,7 @@ obj = function _removeGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ obj = function _ackUserGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ obj = function _ackUserGuildJoinRequest() {
             const obj7 = closure_131_1(closure_131_2[6]);
             obj7.dispatch(obj10);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -363,7 +363,7 @@ obj = function _updateGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -387,7 +387,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -439,7 +439,7 @@ obj = function _updateGuildJoinRequest() {
             const obj10 = { type: "GUILD_JOIN_REQUEST_UPDATE", guildId, status: tmp.body.application_status, request: tmp.body };
             obj.dispatch(obj10);
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           c8 = 3;
@@ -469,7 +469,7 @@ obj = function _resetGuildJoinRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -542,7 +542,7 @@ obj = function _fetchRequestToJoinGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -581,7 +581,7 @@ obj = function _fetchRequestToJoinGuilds() {
           obj = closure_129_1(closure_129_2[6]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -613,34 +613,94 @@ obj = function _fetchJoinRequestForInterview() {
   return obj(...arguments);
 };
 obj = function _createOrEnterJoinRequestInterview() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c4;
-    let c5;
+  obj = _asyncToGenerator(async (arg0, value) => {
     let obj11;
     let closure_0 = arg0;
-    let closure_1 = arg1;
-    let channel = tmp4;
-    let body = tmp;
-    let flag = closure_1;
-    if (closure_1 === undefined) {
-      flag = true;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let channel;
+        let body;
+        let flag;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            channel = tmp4;
+            body = tmp;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = true;
+            }
+            body = undefined;
+            channel = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "Reflect", done: true };
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const HTTP = closure_131_0(closure_131_2[7]).HTTP;
+            const obj5 = { url: closure_131_8.JOIN_REQUEST_INTERVIEW(closure_0), rejectWithError: obj11.rejectWithMigratedError() };
+            const post = HTTP.post;
+            obj11 = closure_131_0(closure_131_2[7]);
+            c4 = 2;
+            c5 = 1;
+            const obj6 = { value: post(obj5), done: false };
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          body = value;
+          channel = closure_131_4(body.body);
+          const obj9 = { type: "CHANNEL_CREATE", channel };
+          const obj8 = closure_131_1(closure_131_2[6]);
+          obj8.dispatch(obj9);
+          const tmp26 = flag;
+          if (tmp26) {
+            obj = closure_131_1(closure_131_2[11]);
+            const privateChannel = obj.selectPrivateChannel(channel.id);
+          }
+          c5 = 3;
+          const obj10 = { value: channel.id, done: true };
+          return obj10;
+        }
+      } catch (tmp14) {
+        c5 = 3;
+        throw tmp14;
+      }
     }
-    await "Reflect";
-    const HTTP = closure_131_0(closure_131_2[7]).HTTP;
-    const obj5 = { url: closure_131_8.JOIN_REQUEST_INTERVIEW(closure_0), rejectWithError: obj11.rejectWithMigratedError() };
-    const post = HTTP.post;
-    obj11 = closure_131_0(closure_131_2[7]);
-    body = await post(obj5);
-    channel = closure_131_4(body.body);
-    const obj9 = { type: "CHANNEL_CREATE", channel };
-    const obj8 = closure_131_1(closure_131_2[6]);
-    obj8.dispatch(obj9);
-    const tmp26 = flag;
-    if (tmp26) {
-      obj = closure_131_1(closure_131_2[11]);
-      const privateChannel = obj.selectPrivateChannel(channel.id);
-    }
-    return channel.id;
   });
   return obj(...arguments);
 };

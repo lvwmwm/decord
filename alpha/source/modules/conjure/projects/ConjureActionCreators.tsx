@@ -2,7 +2,7 @@
 // Function ID: 10721
 // Name: ConjureActionCreators
 // Dependencies: [109, 5, 6771, 1392, 10721, 6773, 1087, 6705, 584, 1297, 10722, 5722, 10724, 569, 10719, 10725, 10727, 10730, 10728, 5626, 6774, 6809, 8670, 10731, 2]
-// Exports: applyPublishedPreview, applyRemixPreview, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
+// Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
 // Module 10720 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
@@ -28,7 +28,7 @@ import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore
 import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
 import size from "module_2" /* 2 */;
 
-let GUILD_COLLABORATION, closure_14, closure_15, closure_31, projectsFetchState, resourceIds;
+let GUILD_COLLABORATION, c2, c8, closure_14, closure_15, closure_28, closure_35, projectsFetchState, resourceIds;
 
 function updateIntegrationStatus(projectId, integrationStatus) {
   obj = DispatcherDefault;
@@ -57,7 +57,7 @@ let obj = function _listProjects() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -149,7 +149,7 @@ let obj = function _listProjects() {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp48) {
           if (0 === c4) {
             c6 = 3;
@@ -175,7 +175,7 @@ obj = function _forgetMissingProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -222,7 +222,7 @@ obj = function _forgetMissingProjects() {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp4) {
           c5 = 0;
@@ -242,7 +242,7 @@ obj = function _forgetMissingProjects() {
             c5 = 2;
             c6 = 4;
             c7 = 1;
-            let obj9 = { value: closure_131_34(c0), done: false };
+            let obj9 = { value: closure_131_38(c0), done: false };
             return obj9;
           }
         } else if (3 === tmp4) {
@@ -280,44 +280,176 @@ function forgetProject(projectId) {
   const obj2 = { type: "CONJURE_PROJECT_DELETE_SUCCESS", projectId };
   obj.dispatch(obj2);
 }
+function resetMissingProjectsOnUserChange() {
+  const currentUser = UserStore.getCurrentUser();
+  id = undefined;
+  if (currentUser != null) {
+    id = currentUser.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  if (id !== id) {
+    set.clear();
+    set1.clear();
+    set2.clear();
+    closure_22.cancel();
+  }
+}
+function fetchMissingProject() {
+  return obj(...arguments);
+}
+obj = function _fetchMissingProject() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let c1;
+    let closure_1;
+    let closure_0 = arg0;
+    let closure_2 = tmp;
+    closure_28 = closure_0;
+    await getProject(closure_0);
+    if (1 === c5) {
+      let c4 = 0;
+      closure_2 = closure_3;
+      const obj2 = closure_130_0(closure_130_2[12]);
+      c1 = obj2.createFailureStatus(closure_2);
+    } else if (arg0 === 1) {
+      let c6 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c6 = 3;
+      obj = { value, done: true };
+      return obj;
+    } else {
+      c1 = 200;
+      c4 = 0;
+    }
+    let tmp16 = 200 !== c1;
+    if (tmp16) {
+      if (403 !== c1) {
+        let flag;
+        if (404 !== c1) {
+          set.delete(closure_0);
+          flag = true;
+        }
+        tmp16 = flag;
+      }
+      set2.add(closure_0);
+      closure_130_21(closure_0);
+      flag = false;
+    }
+    return tmp16;
+  });
+  return obj(...arguments);
+};
+obj = function _fetchMissingConjureProjectNow() {
+  let projectLoadStatus;
+  obj = _asyncToGenerator(async (projectId) => {
+    let c3 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      let str;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = undefined;
+              if ("loading" !== projectLoadStatus.getProjectLoadStatus(projectId)) {
+                resetMissingProjectsOnUserChange();
+                set2.delete(projectId);
+                set.add(projectId);
+                const obj5 = { type: "CONJURE_PROJECT_LOAD_STATUS", projectId, status: "loading" };
+                const obj3 = DispatcherDefault;
+                obj3.dispatch(obj5);
+                c3 = 1;
+                c4 = 1;
+                const obj6 = { value: fetchMissingProject(projectId), done: false };
+                return obj6;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            closure_1 = value;
+            obj = { type: "CONJURE_PROJECT_LOAD_STATUS", projectId, status: str };
+            str = null;
+            const dispatch = closure_130_1(closure_130_2[8]).dispatch;
+            closure_130_1(closure_130_2[8]);
+            if (closure_1) {
+              str = "failed";
+            }
+            dispatch(obj);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp24) {
+          c4 = 3;
+          throw tmp24;
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 function drainMissingProjects() {
   return obj(...arguments);
 }
 obj = function _drainMissingProjects() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let tmp;
-    if (c7 === 2) {
-      c7 = 3;
+    if (c8 === 2) {
+      c8 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
         let c1;
-        let c2;
         let closure_0;
-        c7 = 2;
-        let tmp5 = c6;
-        if (0 === c6) {
+        let closure_2;
+        c8 = 2;
+        if (0 === c7) {
           if (arg0 === 1) {
-            c7 = 3;
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
+            c8 = 3;
+            let obj3 = { value, done: true };
+            return obj3;
           } else {
-            closure_3 = tmp;
-            let closure_2 = tmp2;
+            closure_4 = tmp;
+            closure_3 = tmp2;
             c1 = undefined;
-            c2 = undefined;
             c27 = true;
             closure_0 = [];
             let closure_1 = set2;
@@ -325,75 +457,59 @@ obj = function _drainMissingProjects() {
             if (closure_0 === undefined) {
               c27 = false;
               if (0 !== closure_0.length) {
-                let failResult = closure_131_22.fail(() => {
+                let failResult = closure_132_22.fail(() => {
                   for (const item10005 of closure_1_0) {
                     let addResult = set.add(item10005);
                     continue;
                   }
                   const tmp3 = closure_2_27;
                   if (!tmp3) {
-                    closure_2_29();
+                    closure_2_33();
                   }
                 });
               } else {
-                let succeedResult = closure_131_22.succeed();
+                let succeedResult = closure_132_22.succeed();
               }
-              c7 = 3;
-              return { value: "IconComponent", done: "+352" };
+              c8 = 3;
+              return { value: "IconComponent", done: null };
             } else {
-              let c5 = 1;
-              c1 = tmp36;
-              let deleteResult = set3.delete(c1);
+              let c6 = 1;
+              c1 = tmp12;
+              let deleteResult = set2.delete(c1);
               if (!set.has(c1)) {
                 let addResult = set.add(c1);
-                if (null == project.getProject(c1)) {
-                  c2 = undefined;
-                  c28 = c1;
-                  c5 = 2;
-                  c6 = 3;
-                  c7 = 1;
-                  let obj5 = { value: closure_131_34(c1), done: false };
-                  return obj5;
+                let tmp20 = null == project.getProject(c1);
+                closure_2 = tmp20;
+                if (closure_2) {
+                  c7 = 2;
+                  c8 = 1;
+                  let obj4 = { value: closure_132_30(c1), done: false };
+                  return obj4;
                 }
               }
+              c6 = 0;
             }
           }
         } else if (1 === tmp5) {
-          c5 = 0;
+          c6 = 0;
           closure_0.return();
-          throw closure_1_4;
+          throw _objectWithoutProperties;
+        } else if (arg0 === 1) {
+          c8 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 0;
+          closure_0.return();
+          c8 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          if (2 === tmp5) {
-            c5 = 1;
-            closure_3 = closure_1_4;
-            let obj2 = closure_131_0(closure_131_2[12]);
-            c2 = obj2.createFailureStatus(closure_3);
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            closure_0.return();
-            c7 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            c2 = 200;
-            c5 = 1;
-          }
-          c28 = null;
-          if (200 !== c2) {
-            if (403 !== c2) {
-              if (404 !== c2) {
-                let deleteResult1 = set.delete(c1);
-                let arr = closure_0.push(c1);
-              }
-            }
-            let addResult1 = set2.add(c1);
-            let tmp30 = closure_131_21(c1);
-          }
+          closure_2 = value;
         }
-        c5 = 0;
+        let tmp21 = closure_2;
+        if (tmp21) {
+          let arr = closure_0.push(c1);
+        }
       }
     }
   });
@@ -411,7 +527,7 @@ obj = function _fetchProjectLimit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -443,9 +559,9 @@ obj = function _fetchProjectLimit() {
             }
             closure_0 = c0;
             if (null != c0) {
-              if (closure_31 !== c0) {
+              if (closure_35 !== c0) {
                 if (!ConjureProjectStore.hasFetchedProjectLimit()) {
-                  closure_31 = tmp16;
+                  closure_35 = tmp16;
                   max_projects = null;
                   c3 = 1;
                   const HTTP = HTTPUtils.HTTP;
@@ -473,8 +589,8 @@ obj = function _fetchProjectLimit() {
             max_projects = value.body.max_projects;
             c3 = 0;
           }
-          if (c31 === closure_0) {
-            c31 = null;
+          if (c35 === closure_0) {
+            c35 = null;
           }
           const currentUser1 = currentUser.getCurrentUser();
           let id1;
@@ -488,7 +604,7 @@ obj = function _fetchProjectLimit() {
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         if (0 === c3) {
           c5 = 3;
@@ -597,7 +713,7 @@ obj = function _postProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -710,7 +826,7 @@ obj = function _fetchConjureApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -749,7 +865,7 @@ obj = function _fetchConjureApplication() {
             obj.dispatch(obj7);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         c4 = 3;
@@ -772,7 +888,7 @@ obj = function _refreshPreviewApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -807,7 +923,7 @@ obj = function _refreshPreviewApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;
@@ -832,7 +948,7 @@ obj = function _updateProjectSettings() {
         const tmp7 = null == user.name && null == user.icon && null == user.description && !("cover_image" in user);
       }
       if (!tmp14) {
-        const promise = closure_131_42(preview_application_id);
+        const promise = closure_131_46(preview_application_id);
         promise.catch(() => {
 
         });
@@ -855,7 +971,7 @@ obj = function _fetchApplicationChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -928,7 +1044,7 @@ obj = function _deleteProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1007,7 +1123,7 @@ const set1 = new Set();
 const set2 = new Set();
 let c27 = false;
 let c28 = null;
-let c31 = null;
+let c35 = null;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/projects/ConjureActionCreators.tsx");
 
@@ -1048,45 +1164,32 @@ export const applyPublishedPreview = function applyPublishedPreview(projectId, a
   tmpResult.dispatch(obj5);
 };
 export { listProjects };
-export const isConjureProjectUnavailable = function isConjureProjectUnavailable(arg0) {
-  const hasItem = set1.has(arg0) && null == ConjureProjectStore.getProject(arg0);
+export const isConjureProjectUnavailable = function isConjureProjectUnavailable(projectId) {
+  const hasItem = set1.has(projectId) && null == ConjureProjectStore.getProject(projectId);
   return hasItem;
 };
 export const loadMissingConjureProjects = function loadMissingConjureProjects(items) {
-  const currentUser = UserStore.getCurrentUser();
-  id = undefined;
-  if (currentUser != null) {
-    id = currentUser.id;
-  }
-  if (id == null) {
-    id = null;
-  }
-  if (id !== id) {
-    set.clear();
-    set1.clear();
-    set2.clear();
-    closure_22.cancel();
-  }
+  resetMissingProjectsOnUserChange();
   const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    let tmp13 = nextResult;
+    let tmp3 = nextResult;
     obj = set;
     let hasItem = set.has(nextResult);
     if (hasItem) {
-      hasItem = !set1.has(tmp13);
+      hasItem = !set1.has(tmp3);
     }
     if (hasItem) {
-      hasItem = c28 !== tmp13;
+      hasItem = c28 !== tmp3;
     }
     if (hasItem) {
-      hasItem = null == ConjureProjectStore.getProject(tmp13);
+      hasItem = null == ConjureProjectStore.getProject(tmp3);
     }
     if (hasItem) {
-      let deleteResult = obj.delete(tmp13);
+      let deleteResult = obj.delete(tmp3);
     }
-    if (!obj.has(tmp13)) {
-      let addResult = set2.add(tmp13);
+    if (!obj.has(tmp3)) {
+      let addResult = set2.add(tmp3);
     }
     continue;
   }
@@ -1094,6 +1197,9 @@ export const loadMissingConjureProjects = function loadMissingConjureProjects(it
   if (!pending) {
     drainMissingProjects();
   }
+};
+export const fetchMissingConjureProjectNow = function fetchMissingConjureProjectNow() {
+  return obj(...arguments);
 };
 export const fetchProjectLimit = function fetchProjectLimit() {
   return obj(...arguments);
@@ -1216,5 +1322,15 @@ export const refreshConjureInstallState = function refreshConjureInstallState(pr
 export const setSelectedProjectForGuild = function setSelectedProjectForGuild(guildId, projectId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_PROJECT_SELECT", guildId, projectId };
+  obj.dispatch(obj2);
+};
+export const selectGlobalChatProject = function selectGlobalChatProject(projectId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_PROJECT_GLOBAL_SELECT", projectId };
+  obj.dispatch(obj2);
+};
+export const clearGlobalChatProject = function clearGlobalChatProject(projectId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_PROJECT_GLOBAL_CLEAR", projectId };
   obj.dispatch(obj2);
 };

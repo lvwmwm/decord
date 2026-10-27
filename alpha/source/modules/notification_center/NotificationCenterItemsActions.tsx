@@ -1,10 +1,10 @@
-// Module ID: 17859
-// Function ID: 17860
+// Module ID: 17868
+// Function ID: 17869
 // Name: NotificationCenterItemsActions
 // Dependencies: [5, 6787, 1087, 584, 6676, 1275, 4835, 6789, 1297, 4799, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 17859 (NotificationCenterItemsActions)
+// Module 17868 (NotificationCenterItemsActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
@@ -44,7 +44,7 @@ let obj = function _fetchNotificationCenterItems() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ let obj = function _fetchNotificationCenterItems() {
             return obj;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -189,7 +189,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -238,7 +238,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -267,7 +267,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -325,7 +325,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -359,7 +359,7 @@ obj = function _deleteNotificationCenterItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -414,7 +414,7 @@ obj = function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           closure_3 = tmp16;

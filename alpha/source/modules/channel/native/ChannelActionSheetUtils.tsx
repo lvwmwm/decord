@@ -1,10 +1,10 @@
-// Module ID: 10863
-// Function ID: 10864
+// Module ID: 10864
+// Function ID: 10865
 // Name: ChannelActionSheetUtils
 // Dependencies: [5994, 7285, 5662, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 10863 (ChannelActionSheetUtils)
+// Module 10864 (ChannelActionSheetUtils)
 import ToastUtils from "ToastUtils" /* 5662 */;
 import ChannelUtils from "ChannelUtils" /* 5994 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;

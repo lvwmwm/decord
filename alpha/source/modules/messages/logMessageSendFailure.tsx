@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import size from "module_2" /* 2 */;
 
-const f104378 = (mimeType) => {
+const f104433 = (mimeType) => {
   let str = mimeType.mimeType;
   if (str == null) {
     str = "unknown";
@@ -23,7 +23,7 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   let mapped;
   if (null != fileItems.fileItems) {
     fileItems = fileItems.fileItems;
-    mapped = fileItems.map(f104378);
+    mapped = fileItems.map(f104433);
   } else {
     mapped = [];
   }
@@ -33,5 +33,5 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   obj.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, { failure_code: failureCode, error_message: errorMessage, attachment_mimetypes: mapped });
 };
 export const getAttachmentMimeTypes = function getAttachmentMimeTypes(items) {
-  return items.map(f104378);
+  return items.map(f104433);
 };

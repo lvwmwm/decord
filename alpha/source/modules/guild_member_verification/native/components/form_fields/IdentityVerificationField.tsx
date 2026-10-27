@@ -25,18 +25,18 @@ let obj2;
 let tmp2;
 const MobilePhoneIcon = tmp2(7053);
 const EnvelopeIcon2 = tmp2(7176);
-const f97166 = () => {
+const f97216 = () => {
   const obj = require("EmailVerificationModalActionCreators");
   obj.open();
 };
-const f97167 = () => {
+const f97217 = () => {
   const pushLazy = require("ModalActionCreators").pushLazy;
   const obj = { reason: require("PhoneActionCreators").ChangePhoneReason.GUILD_PHONE_REQUIRED };
   require("ModalActionCreators");
   const tmp2 = require("asyncRequire")(paths[14], paths.paths);
   pushLazy(tmp2, obj);
 };
-const f97168 = () => {
+const f97218 = () => {
 
 };
 function getLabel(arg0, arg1) {
@@ -231,9 +231,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IdentityVeri
     if (cResult[5] !== platform) {
       let fn;
       if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-        fn = f97166;
+        fn = f97216;
       } else {
-        fn = tmp(5005).UserVerificationFieldPlatforms.PHONE === platform ? f97167 : f97168;
+        fn = tmp(5005).UserVerificationFieldPlatforms.PHONE === platform ? f97217 : f97218;
       }
       cResult[5] = platform;
       cResult[6] = fn;
@@ -283,9 +283,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IdentityVeri
     icon = EnvelopeIcon2.EnvelopeIcon;
   }
   if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-    onPress = f97166;
+    onPress = f97216;
   } else {
-    onPress = MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE === platform ? f97167 : f97168;
+    onPress = MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE === platform ? f97217 : f97218;
   }
   return React3(closure_7, { label, icon, passesVerification, onPress });
 });

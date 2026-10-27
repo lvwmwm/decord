@@ -1,9 +1,9 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14311
+// Function ID: 14312
 // Name: usePersonalizedVoiceChannelUsers
 // Dependencies: [7732, 6670, 1392, 5717, 1087, 558, 576, 504, 2]
 
-// Module 14310 (usePersonalizedVoiceChannelUsers)
+// Module 14311 (usePersonalizedVoiceChannelUsers)
 import Constants from "Constants" /* 1087 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
 import ConsentStore from "ConsentStore" /* 6670 */;

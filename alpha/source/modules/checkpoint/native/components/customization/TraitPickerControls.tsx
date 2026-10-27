@@ -1,18 +1,18 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13028
+// Function ID: 13029
 // Name: TraitPickerControls
-// Dependencies: [109, 21, 558, 576, 13026, 13027, 2]
+// Dependencies: [109, 21, 558, 576, 13029, 13030, 2]
 
-// Module 13025 (TraitPickerControls)
+// Module 13028 (TraitPickerControls)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import TraitPickerDefault from "TraitPicker" /* 13027 */;
+import TraitPickerDefault from "TraitPicker" /* 13030 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useTraitPickerSelection = tmp(13026);
+const useTraitPickerSelection = tmp(13029);
 let closure_3 = ["activeCustomizationOption", "onSelectOption"];
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPickerControls(arg0) {

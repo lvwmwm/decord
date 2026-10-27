@@ -1,9 +1,9 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 12150
+// Function ID: 12151
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 11803, 11820, 11843, 1128, 7293, 7248, 5977, 11845, 11848, 11850, 5234, 6880, 5244, 7298, 8901, 11852, 9146, 2]
+// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 12151, 12169, 12191, 1128, 7293, 7248, 5977, 12193, 12196, 12198, 5234, 6880, 5244, 7298, 8901, 12204, 9146, 2]
 
-// Module 11802 (ConjureSettingsSheet)
+// Module 12150 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3830 from "module_3830" /* 3830 */;
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
     }
   }
-  const tmp5Result = tmp5(11803);
+  const tmp5Result = tmp5(12151);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -417,7 +417,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -507,7 +507,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;
@@ -798,7 +798,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(11852).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(12204).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
     tmp11Result = tmp11(tmp5(9146).SegmentedControl, obj4);

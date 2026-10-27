@@ -1,10 +1,10 @@
-// Module ID: 19149
-// Function ID: 19150
+// Module ID: 19159
+// Function ID: 19160
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 4823, 4903, 7567, 1087, 558, 576, 504, 7425, 6374, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 19149 (GuildTemplateSettingsUtils)
+// Module 19159 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1087 */;
 import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7425 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c4;
@@ -149,7 +149,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
                 }
                 closure_1(closure_0);
                 c6 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp26) {
               closure_3 = tmp26;
@@ -256,7 +256,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -302,7 +302,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               }
               closure_1(closure_0);
               c6 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp26) {
             closure_3 = tmp26;

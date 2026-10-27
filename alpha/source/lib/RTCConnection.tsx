@@ -1,7 +1,7 @@
 // Module ID: 5720
 // Function ID: 5721
 // Name: RTCConnection
-// Dependencies: [5, 5721, 5731, 5732, 5733, 5734, 502, 4823, 4845, 2014, 5714, 5737, 5813, 1392, 1087, 5814, 5815, 5718, 5816, 569, 5722, 5742, 1257, 3, 5817, 5818, 1281, 5820, 5829, 5823, 5830, 1483, 1384, 4785, 1386, 584, 2013, 1405, 5832, 14, 5833, 5834, 5835, 5836, 5837, 5838, 5839, 1267, 4977, 5840, 5786, 5841, 5843, 5844, 2053, 5845, 5847, 5848, 5849, 5739, 5850, 5882, 5895, 5891, 5896, 5897, 5898, 5899, 5901, 5904, 5906, 5907, 5908, 1128, 551, 15077, 1266, 2]
+// Dependencies: [5, 5721, 5731, 5732, 5733, 5734, 502, 4823, 4845, 2014, 5714, 5737, 5813, 1392, 1087, 5814, 5815, 5718, 5816, 569, 5722, 5742, 1257, 3, 5817, 5818, 1281, 5820, 5829, 5823, 5830, 1483, 1384, 4785, 1386, 584, 2013, 1405, 5832, 14, 5833, 5834, 5835, 5836, 5837, 5838, 5839, 1267, 4977, 5840, 5786, 5841, 5843, 5844, 2053, 5845, 5847, 5848, 5849, 5739, 5850, 5882, 5895, 5891, 5896, 5897, 5898, 5899, 5901, 5904, 5906, 5907, 5908, 1128, 551, 15078, 1266, 2]
 
 // Module 5720 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -42,7 +42,7 @@ import ThermalUtilsDefault from "ThermalUtils" /* 5904 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5906 */;
 import DaveMessageValidator from "DaveMessageValidator" /* 5907 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15077 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5721 */;
 import MediaEngineStatsStore_mod from "MediaEngineStatsStore" /* 5731 */;
@@ -1701,7 +1701,7 @@ class RTCConnection extends TypedEventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1735,7 +1735,7 @@ class RTCConnection extends TypedEventEmitter {
               const result = setAvx512EntropyHistogram(obj.getIsAvx512EntropyHistogramEnabled("RTCConnection"));
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c2 = 3;

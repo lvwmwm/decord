@@ -1,9 +1,9 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13980
+// Function ID: 13981
 // Name: ChannelFollowerStatsStore
 // Dependencies: [504, 584, 2]
 
-// Module 13978 (ChannelFollowerStatsStore)
+// Module 13980 (ChannelFollowerStatsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

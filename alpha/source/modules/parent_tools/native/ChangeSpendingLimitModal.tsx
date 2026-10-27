@@ -1,9 +1,9 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16199
+// Function ID: 16200
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 4971, 587, 7957, 5234, 1128, 2536, 558, 576, 16199, 5663, 6672, 5662, 7339, 7900, 7901, 5977, 7008, 5244, 12727, 6696, 6924, 11149, 2]
+// Dependencies: [5, 19, 17, 21, 4971, 587, 7957, 5234, 1128, 2536, 558, 576, 16200, 5663, 6672, 5662, 7339, 7900, 7901, 5977, 7008, 5244, 12730, 6696, 6924, 11150, 2]
 
-// Module 16198 (ChangeSpendingLimitModal)
+// Module 16199 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const cResult = obj.c(62);
   teenId = teenId.teenId;
   const tmp4 = closure_8();
-  let obj2 = save(16199);
+  let obj2 = save(16200);
   const changeSpendingLimitFormState = obj2.useChangeSpendingLimitFormState(teenId);
   ({ amountInput, handleAmountChange, currency, currencySymbol, exponent, isClearingCap, isOverspending, canSave, isSubmitting, renewalDate, monthlySpend, save } = changeSpendingLimitFormState);
   if (cResult[0] !== save) {
@@ -134,7 +134,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -180,7 +180,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {
@@ -264,7 +264,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
                                         }
                                         if (cResult[56] !== tmp57) {
                                           let obj4 = { children: closure_7(tmp(6696).ButtonGroup, obj5) };
-                                          const ModalFooter = tmp(12727).ModalFooter;
+                                          const ModalFooter = tmp(12730).ModalFooter;
                                           obj5 = { children: items };
                                           items = [tmp57, tmp63];
                                           const tmp70 = closure_6(ModalFooter, obj4);
@@ -534,7 +534,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -581,7 +581,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {
@@ -653,7 +653,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   items1[2] = renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, tmp);
   items[1] = tmp8(Stack2, obj4);
   const items3 = [tmp9(ModalContent, obj8), ];
-  const ModalFooter = tmp2(12727).ModalFooter;
+  const ModalFooter = tmp2(12730).ModalFooter;
   const ButtonGroup = tmp2(6696).ButtonGroup;
   const Button = tmp2(5244).Button;
   if (isClearingCap) {
@@ -723,7 +723,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeSpendi
   }
   if (cResult[3] !== tmp4) {
     const obj4 = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: tmp4, headerBackTitle: tmp6 };
-    const tmp10 = closure_6(teenId(11149).Modal, obj4);
+    const tmp10 = closure_6(teenId(11150).Modal, obj4);
     cResult[3] = tmp4;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -758,7 +758,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeSpendi
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1128).t["13/7kX"]) };
-  const Modal = teenId(11149).Modal;
+  const Modal = teenId(11150).Modal;
   intl = teenId(1128).intl;
   return closure_6(Modal, obj);
 });

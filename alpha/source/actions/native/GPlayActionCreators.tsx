@@ -36,34 +36,96 @@ let closure_15;
 let closure_18;
 let closure_19;
 let map1;
-const f104825 = async () => {
-  let closure_2;
+const f104880 = async () => {
   closure_0 = [...arguments];
   let c5 = 0;
   let c6 = 0;
   let c4 = 0;
-  const iter = (async () => {
-    let tmp12;
-    await "Reflect";
-    const items = [];
-    HermesBuiltin.arraySpread(items, closure_0, 0);
-    applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
-    await applyResult;
-    let closure_1 = closure_3;
-    const tmp10 = closure_1;
-    const tmp9 = closure_1_44;
-    if (null != closure_130_2) {
-      applyResult = { source: tmp11 };
-      tmp12 = applyResult;
+  const iter = (async (arg0, value) => {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            closure_2 = tmp;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Reflect", done: true };
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 1;
+            const items = [];
+            HermesBuiltin.arraySpread(items, closure_0, 0);
+            applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
+            c5 = 3;
+            c6 = 1;
+            return { value: applyResult, done: false };
+          }
+        } else if (2 === c5) {
+          c4 = 0;
+          let closure_1 = closure_3;
+          let tmp12;
+          const tmp10 = closure_1;
+          const tmp9 = closure_1_44;
+          if (null != closure_130_2) {
+            applyResult = { source: tmp11 };
+            tmp12 = applyResult;
+          }
+          const obj6 = { tags: tmp12 };
+          applyResult = tmp9(tmp10, obj6);
+          const tmp13 = closure_130_1;
+          if (tmp13) {
+            throw closure_1;
+          } else {
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 0;
+          c6 = 3;
+          return { value, done: true };
+        } else {
+          c4 = 0;
+          c6 = 3;
+          return { value, done: true };
+        }
+      } catch (tmp25) {
+        closure_3 = tmp25;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp25;
+        } else {
+          c5 = 2;
+        }
+      }
     }
-    const obj6 = { tags: tmp12 };
-    applyResult = tmp9(tmp10, obj6);
-    const tmp13 = closure_130_1;
-    if (tmp13) {
-      throw closure_1;
-    }
-    await "IconComponent";
-    return value;
   })();
   iter.next();
   return iter;
@@ -110,7 +172,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -173,7 +235,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
             user = undefined;
             c21 = 1;
             c22 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -444,7 +506,7 @@ obj = function _loadUserCountry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -479,7 +541,7 @@ obj = function _loadUserCountry() {
           obj = closure_129_1(closure_129_2[14]);
           obj.dispatch(obj6);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -510,7 +572,7 @@ obj = function _subscribe() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -566,7 +628,7 @@ obj = function _subscribe() {
               c9 = 0;
             }
             c11 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp37) {
           closure_8 = tmp37;
@@ -599,7 +661,7 @@ obj = function _verifyPurchase() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -804,7 +866,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+352" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     let c4;
@@ -830,7 +892,7 @@ _asyncToGenerator(async (arg0, value) => {
           value = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Reflect", done: null };
+          return { value: "Reflect", done: true };
         }
       } else if (1 === c5) {
         if (arg0 === 1) {
@@ -913,7 +975,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSubscriptionSkus = "loadSubscriptionSkus";
-const importDefaultResultResult = _asyncToGenerator(f104825);
+const importDefaultResultResult = _asyncToGenerator(f104880);
 _asyncToGenerator(async () => {
   let closure_0 = arg0;
   let c5 = 0;
@@ -951,7 +1013,7 @@ _asyncToGenerator(async () => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -974,7 +1036,7 @@ _asyncToGenerator(async () => {
             value = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1056,7 +1118,7 @@ _asyncToGenerator(async () => {
   return iter;
 });
 const loadInAppSkus = "loadInAppSkus";
-const importDefaultResultResult1 = _asyncToGenerator(f104825);
+const importDefaultResultResult1 = _asyncToGenerator(f104880);
 _asyncToGenerator(async (arg0, value) => {
   if (c0 === 2) {
     c0 = 3;
@@ -1068,7 +1130,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+352" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -1097,7 +1159,7 @@ _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c0 = 3;
@@ -1106,7 +1168,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSkus = "loadSkus";
-const importDefaultResultResult2 = _asyncToGenerator(f104825);
+const importDefaultResultResult2 = _asyncToGenerator(f104880);
 let tmp11 = new BackoffDefault(5000, 300000, true);
 let closure_29 = tmp11;
 let c30 = 0;
@@ -1133,7 +1195,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+352" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     let c6;
@@ -1192,7 +1254,7 @@ _asyncToGenerator(async (arg0, value) => {
       } else {
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp35) {
       closure_5 = tmp35;
@@ -1217,7 +1279,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+352" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     let c3;
@@ -1314,7 +1376,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 });
 let c1 = true;
 const getUserCountry = "getUserCountry";
-const importDefaultResultResult3 = _asyncToGenerator(f104825);
+const importDefaultResultResult3 = _asyncToGenerator(f104880);
 const items1 = [, , , , ];
 ({ SERVICE_DISCONNECTED: arr2[0], SERVICE_TIMEOUT: arr2[1], BILLING_UNAVAILABLE: arr2[2], BILLING_CLIENT_NOT_READY: arr2[3], DEVELOPER_ERROR: arr2[4] } = Constants.GPlayBillingResult);
 const set2 = new Set(items1.map(String));
@@ -1361,7 +1423,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
         }
         if (isOnlineResult) {
           const tmp13 = (async (arg0, value) => {
-            const f159780 = (item) => null != product.getProduct(item);
+            const f159885 = (item) => null != product.getProduct(item);
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -1372,7 +1434,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               let c3;
@@ -1399,7 +1461,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                   c3 = 0;
                   c31 = null;
                   const tmp19 = closure_2;
-                  if (closure_129_0.every(f159780)) {
+                  if (closure_129_0.every(f159885)) {
                     closure_1_29.succeed();
                     let closure_30 = 0;
                   } else {
@@ -1414,7 +1476,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f159780)) {
+                  if (closure_129_0.every(f159885)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1428,7 +1490,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 } else {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f159780)) {
+                  if (closure_129_0.every(f159885)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1437,7 +1499,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                     closure_30 = timestamp2 + closure_1_29.fail();
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: "+352" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp28) {
                 closure_2 = tmp28;

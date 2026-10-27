@@ -1,9 +1,9 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15106
+// Function ID: 15107
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 558, 576, 1633, 5669, 15106, 15104, 5595, 1297, 6672, 12, 15107, 5234, 1128, 1202, 5244, 6696, 15111, 6880, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 558, 576, 1633, 5669, 15107, 15105, 5595, 1297, 6672, 12, 15108, 5234, 1128, 1202, 5244, 6696, 15112, 6880, 2]
 
-// Module 15105 (RemoteAuthModal)
+// Module 15106 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,10 +18,10 @@ import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5595 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
 import ButtonGroup2 from "ButtonGroup" /* 6696 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15104 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15106 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15107 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15111 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15105 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15107 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15108 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15112 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -405,7 +405,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { scale };
-      const tmp19 = closure_7(tmp(15107).QrLoginSpotIllustration, obj4);
+      const tmp19 = closure_7(tmp(15108).QrLoginSpotIllustration, obj4);
       cResult[7] = tmp19;
       tmp16 = tmp19;
     } else {

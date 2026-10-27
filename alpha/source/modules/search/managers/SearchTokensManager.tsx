@@ -1,11 +1,11 @@
-// Module ID: 18942
-// Function ID: 18943
+// Module ID: 18952
+// Function ID: 18953
 // Name: SearchTokensManager
-// Dependencies: [2069, 7214, 13229, 2]
+// Dependencies: [2069, 7214, 13232, 2]
 
-// Module 18942 (SearchTokensManager)
+// Module 18952 (SearchTokensManager)
 import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
-import SearchUtils from "SearchUtils" /* 13229 */;
+import SearchUtils from "SearchUtils" /* 13232 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
 import size from "module_2" /* 2 */;
 

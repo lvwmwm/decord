@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 const DraftStore = DraftStore2;
 let set;
 
-const f100709 = (content_type) => {
+const f100759 = (content_type) => {
   let str = content_type.content_type;
   if (str == null) {
     str = "unknown";
@@ -163,7 +163,7 @@ export const getForumPostAttachmentMimetypes = function getForumPostAttachmentMi
     items = [];
   } else {
     const attachments = firstMessage.attachments;
-    items = attachments.map(f100709);
+    items = attachments.map(f100759);
   }
   return items;
 };
@@ -284,7 +284,7 @@ export const collectForumPostAnalyticsMetadata = function collectForumPostAnalyt
             items1 = [];
           } else {
             const attachments = firstMessage2.attachments;
-            items1 = attachments.map(f100709);
+            items1 = attachments.map(f100759);
           }
           tmp = obj2;
         }

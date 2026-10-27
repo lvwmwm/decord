@@ -1,13 +1,13 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12315
+// Function ID: 12316
 // Name: ConjureTipsHost
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12331, 12339, 12352, 2]
+// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12316, 12324, 12335, 2]
 
-// Module 12330 (ConjureTipsHost)
+// Module 12315 (ConjureTipsHost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useConjureTipsDefault from "useConjureTips" /* 12331 */;
+import useConjureTipsDefault from "useConjureTips" /* 12316 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipsH
   ({ projectId, messages, draftHasText, onAskForIdeas } = onShow);
   const tmp2 = closure_6();
   const tmp3 = useConjureTipsDefault;
-  const tmp3Result = tmp3(onShow(12339).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
+  const tmp3Result = tmp3(onShow(12324).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
   if (cResult[0] !== tmp3Result) {
     let tmp6;
     const _Symbol = Symbol;
@@ -169,8 +169,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipsH
   let joined;
   ({ projectId, messages, draftHasText, onAskForIdeas } = onShow);
   const tmp = closure_6();
-  const tmp2 = joined(12331);
-  const tmp2Result = tmp2(onShow(12339).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
+  const tmp2 = joined(12316);
+  const tmp2Result = tmp2(onShow(12324).CONJURE_TIPS, projectId, messages, draftHasText, onAskForIdeas);
   const mapped = tmp2Result.map((tip) => "" + tip.tip.id + ":" + tip.presentation);
   joined = mapped.join(",");
   const items = [joined, onShow];

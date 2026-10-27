@@ -1,10 +1,10 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14267
+// Function ID: 14268
 // Name: AddFriendNicknameModal
 // Dependencies: [5, 32, 19, 17, 4913, 1392, 21, 4971, 587, 10033, 504, 1128, 6672, 7414, 7135, 5978, 5234, 7015, 5025, 2]
 // Exports: default
 
-// Module 14266 (AddFriendNicknameModal)
+// Module 14267 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -70,7 +70,7 @@ export default function AddFriendNicknameModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -151,7 +151,7 @@ export default function AddFriendNicknameModal(arg0) {
             closure_130_3(false);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_3 = tmp42;
           if (0 === c4) {

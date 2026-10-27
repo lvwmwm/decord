@@ -1,23 +1,27 @@
 // Module ID: 15551
 // Function ID: 15552
-// Dependencies: [15552]
+// Dependencies: [15552, 15549, 15554]
 
 // Module 15551
-import module_15552_mod from "module_15552" /* 15552 */;
+import _mod15549 from "module_15549" /* 15549 */;
+import _mod15552 from "module_15552" /* 15552 */;
+import _mod15554 from "module_15554" /* 15554 */;
 
-const call = prototype.call;
-let module_15552 = module_15552_mod;
-if (module_15552) {
-  const bind = prototype.bind;
-  module_15552 = bind.bind(call, call);
-}
-if (!module_15552) {
-  module_15552 = (arg0) => {
-    let closure_0 = arg0;
-    return function() {
-      return call(...arguments);
-    };
+let fn = Object;
+let closure_3 = _mod15552("".split);
+if (_mod15549(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod15554(arg0)) {
+      tmp2 = closure_3(arg0, "");
+    } else {
+      tmp2 = Object(arg0);
+    }
+    return tmp2;
   };
 }
 
-export default module_15552;
+export default fn;

@@ -1,10 +1,10 @@
-// Module ID: 10858
-// Function ID: 10859
+// Module ID: 10859
+// Function ID: 10860
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 10844, 2002, 1128, 3412, 9949, 9947, 2]
+// Dependencies: [5, 10845, 2002, 1128, 3412, 9949, 9947, 2]
 // Exports: default
 
-// Module 10858 (buildFavoritesSectionButtons)
+// Module 10859 (buildFavoritesSectionButtons)
 import _modDef3412 from "module_3412" /* 3412 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _addChannelToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ let obj = function _addChannelToFavorites() {
           items = [closure_0];
           value.addFavoriteChannels(obj);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -83,7 +83,7 @@ obj = function _removeChannelFromFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _removeChannelFromFavorites() {
         } else {
           const result = value.removeFavoriteChannel(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;

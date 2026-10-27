@@ -1,9 +1,9 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18195
+// Function ID: 18196
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4904, 4905, 4823, 6704, 9712, 10024, 1087, 9713, 21, 4971, 13264, 587, 558, 576, 5252, 504, 1505, 1128, 10875, 8280, 7959, 13183, 13243, 6662, 7147, 10691, 10093, 7489, 18187, 5037, 5052, 5206, 18060, 5209, 11312, 6928, 6908, 2]
+// Dependencies: [19, 17, 4904, 4905, 4823, 6704, 9712, 10024, 1087, 9713, 21, 4971, 13267, 587, 558, 576, 5252, 504, 1505, 1128, 10876, 8280, 7959, 13186, 13246, 6662, 7147, 10691, 10093, 7489, 18196, 5037, 5052, 5206, 18069, 5209, 11313, 6928, 6908, 2]
 
-// Module 18186 (ChannelDetailsNavigationBar)
+// Module 18195 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,11 +15,11 @@ import AssetRegistryDefault from "AssetRegistry" /* 7147 */;
 import TrackingConstants from "TrackingConstants" /* 9713 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11312 */;
-import useSearchContext from "useSearchContext" /* 13183 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13243 */;
-import SearchButton2 from "SearchButton" /* 13264 */;
-import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 18187 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11313 */;
+import useSearchContext from "useSearchContext" /* 13186 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13246 */;
+import SearchButton2 from "SearchButton" /* 13267 */;
+import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 18196 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4904 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
@@ -147,7 +147,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteBu
     } else {
       tmp14 = cResult[6];
     }
-    const tmp16 = navigation(stateFromStores ? 10875 : 8280);
+    const tmp16 = navigation(stateFromStores ? 10876 : 8280);
     if (cResult[7] === tmp11) {
       if (cResult[8] === size) {
         if (cResult[9] === tmp16) {
@@ -213,7 +213,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteBu
     navigation.navigate("sidebar", obj);
   }, items1);
   ({ size, variant } = closure_19());
-  const obj3 = { accessibilityLabel: intl.string(channelId(1128).t.w4m945), onPress: callback, variant, size, icon: navigation(stateFromStores ? 10875 : 8280) };
+  const obj3 = { accessibilityLabel: intl.string(channelId(1128).t.w4m945), onPress: callback, variant, size, icon: navigation(stateFromStores ? 10876 : 8280) };
   closure_19();
   const IconButton = channelId(7959).IconButton;
   intl = channelId(1128).intl;
@@ -506,7 +506,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     const obj8 = { ref: cleanUp.ref, channelId: null, guildId: null, showBackButton: true };
     ({ id: obj4.channelId, guild_id: obj4.guildId } = channel);
-    const tmp10 = closure_15(cleanUp(18060), obj8);
+    const tmp10 = closure_15(cleanUp(18069), obj8);
     let num = 3;
     cResult[3] = channel.guild_id;
     cResult[4] = channel.id;
@@ -571,7 +571,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   fn.__workletHash = 14243423616139;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(18060), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(18069), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(5052).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };

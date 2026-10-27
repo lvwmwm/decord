@@ -1,9 +1,9 @@
-// Module ID: 15008
-// Function ID: 15009
+// Module ID: 15009
+// Function ID: 15010
 // Name: ExplicitMediaSearchStore
 // Dependencies: [6012, 7702, 504, 584, 2]
 
-// Module 15008 (ExplicitMediaSearchStore)
+// Module 15009 (ExplicitMediaSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;

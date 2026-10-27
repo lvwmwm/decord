@@ -85,7 +85,7 @@ function transformToRowGeneratedComponent(message, accessory) {
   function expensive() {
     if (null != found1) {
       if (0 !== found1.length) {
-        const mapped = arr.map(f101094);
+        const mapped = arr.map(f101144);
         const intl = closure_0(message[8]).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { selections: mapped.join(",") };
@@ -148,7 +148,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const merged2 = Object.assign(accessory);
     tmpResult31 = tmp(tmp2[9]);
     _require = accessory;
-    const f101094 = (arg0) => found1.options[arg0].label;
+    const f101144 = (arg0) => found1.options[arg0].label;
     tmpResult32 = tmp(tmp2[7]);
     obj5 = { expensive, cheap: tmpResult34.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe2 = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -479,7 +479,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     tmpResult52 = tmp(tmp2[9]);
     tmpResult53 = tmp(tmp2[12]);
     _require = accessory;
-    const f101095 = (label) => label.label;
+    const f101145 = (label) => label.label;
     tmpResult54 = tmp(tmp2[7]);
     obj24 = { expensive, cheap: tmpResult56.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;

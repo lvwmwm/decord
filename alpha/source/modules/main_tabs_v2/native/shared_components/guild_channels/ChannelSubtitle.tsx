@@ -1,15 +1,15 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18104
+// Function ID: 18105
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 12063, 5234, 558, 576, 17657, 12060, 2]
+// Dependencies: [19, 21, 11954, 5234, 558, 576, 17658, 11951, 2]
 // Exports: renderChannelSubtitle
 
-// Module 18095 (guild_channels/ChannelSubtitle)
+// Module 18104 (guild_channels/ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 12060 */;
-import ChannelListLayout from "ChannelListLayout" /* 12063 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 17657 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11951 */;
+import ChannelListLayout from "ChannelListLayout" /* 11954 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 17658 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12778
+// Function ID: 12779
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 4845, 8386, 1087, 1267, 5711, 9005, 2049, 1297, 12776, 2]
+// Dependencies: [5, 4845, 8386, 1087, 1267, 5711, 9005, 2049, 1297, 12779, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12775 (GuildAntiRaidActionCreators)
+// Module 12778 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
 import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8386 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12776 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12779 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 4845 */;
 import Constants from "Constants" /* 1087 */;
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -159,7 +159,7 @@ obj = function _handleResolveRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -231,7 +231,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

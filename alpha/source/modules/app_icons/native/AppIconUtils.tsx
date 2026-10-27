@@ -1,10 +1,10 @@
-// Module ID: 14766
-// Function ID: 14767
+// Module ID: 14767
+// Function ID: 14768
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9865, 1087, 1394, 3, 14767, 9866, 558, 576, 584, 5263, 1267, 5663, 1128, 7490, 1630, 2]
+// Dependencies: [32, 5, 19, 9865, 1087, 1394, 3, 14768, 9866, 558, 576, 584, 5263, 1267, 5663, 1128, 7490, 1630, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 14766 (AppIconUtils)
+// Module 14767 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,7 +12,7 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import useMountEffectDefault from "useMountEffect" /* 5263 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
-import react_nativeDefault from "react-native" /* 14767 */;
+import react_nativeDefault from "react-native" /* 14768 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -46,7 +46,7 @@ let obj = function _fetchCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ obj = function _setAppIcon() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ obj = function _setAppIcon() {
               flag = obj5.showErrorToast ?? true;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -247,7 +247,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -280,7 +280,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
             tmp = value;
             tmp(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -327,7 +327,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -359,7 +359,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -427,7 +427,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -488,7 +488,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -578,7 +578,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -637,7 +637,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         closure_3 = tmp22;

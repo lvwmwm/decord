@@ -1,9 +1,9 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 12538
+// Function ID: 12539
 // Name: ConjureStaffAccessNotice
-// Dependencies: [19, 1087, 21, 558, 576, 11855, 1114, 5660, 1128, 3830, 7956, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 12539, 1114, 5660, 1128, 3830, 7956, 2]
 
-// Module 11854 (ConjureStaffAccessNotice)
+// Module 12538 (ConjureStaffAccessNotice)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
   let tmp5;
   let obj = conjureStaffAccessTarget(576);
   const cResult = obj.c(6);
-  let obj2 = conjureStaffAccessTarget(11855);
+  let obj2 = conjureStaffAccessTarget(12539);
   conjureStaffAccessTarget = obj2.useConjureStaffAccessTarget();
   if (cResult[0] !== conjureStaffAccessTarget) {
     const fn = function n() {
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
     if (cResult[2] !== tmp5) {
       const intl = tmp(1128).intl;
       const format = intl.format;
-      const obj3 = { channel: conjureStaffAccessTarget(11855).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
+      const obj3 = { channel: conjureStaffAccessTarget(12539).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
       const v6anmu1 = _modDef3830["6anmu1"];
       const formatResult = format(v6anmu1, obj3);
       cResult[2] = tmp5;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
   return tmp6;
 }) : (function ConjureStaffAccessNotice() {
   let conjureStaffAccessTarget;
-  let obj = conjureStaffAccessTarget(11855);
+  let obj = conjureStaffAccessTarget(12539);
   conjureStaffAccessTarget = obj.useConjureStaffAccessTarget();
   [][0] = conjureStaffAccessTarget;
   let tmp5 = null;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
     const NewInlineNotice = tmp(7956).NewInlineNotice;
     const intl = tmp(1128).intl;
     const format = intl.format;
-    const obj3 = { channel: conjureStaffAccessTarget(11855).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
+    const obj3 = { channel: conjureStaffAccessTarget(12539).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
     const v6anmu1 = _modDef3830["6anmu1"];
     tmp5 = <NewInlineNotice type="info" role="none" message={format(v6anmu1, obj3)} />;
   }

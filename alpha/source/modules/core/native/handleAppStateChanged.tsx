@@ -1,10 +1,10 @@
-// Module ID: 19460
-// Function ID: 19461
+// Module ID: 19470
+// Function ID: 19471
 // Name: handleAppStateChanged
-// Dependencies: [502, 2001, 1087, 3, 10, 584, 5714, 19459, 7584, 5036, 9, 1267, 2]
+// Dependencies: [502, 2001, 1087, 3, 10, 584, 5714, 19469, 7584, 5036, 9, 1267, 2]
 // Exports: default
 
-// Module 19460 (handleAppStateChanged)
+// Module 19470 (handleAppStateChanged)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 5036 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7584 */;
-import BundleUpdaterActionCreatorsDefault from "BundleUpdaterActionCreators" /* 19459 */;
+import BundleUpdaterActionCreatorsDefault from "BundleUpdaterActionCreators" /* 19469 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import Constants from "Constants" /* 1087 */;

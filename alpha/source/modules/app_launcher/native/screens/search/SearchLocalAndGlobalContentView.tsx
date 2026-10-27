@@ -1,10 +1,10 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 11986
+// Function ID: 11987
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 9650, 12047, 1504, 21, 4971, 587, 558, 576, 12031, 12036, 11169, 12096, 1128, 9649, 6903, 12034, 1633, 7144, 8882, 12046, 5634, 7630, 12099, 12100, 4980, 12081, 12059, 12093, 5234, 12101, 8913, 12102, 2]
+// Dependencies: [32, 19, 17, 9650, 11938, 1504, 21, 4971, 587, 558, 576, 11922, 11927, 11170, 11987, 1128, 9649, 6903, 11925, 1633, 7144, 8882, 11937, 5634, 7630, 11990, 11991, 4980, 11972, 11950, 11984, 5234, 11992, 8913, 11993, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 12095 (SearchLocalAndGlobalContentView)
+// Module 11986 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,12 +15,12 @@ import TableRow2 from "TableRow" /* 6903 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9649 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11169 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12031 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 12034 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12036 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12047 */;
-import CommandRowButton from "CommandRowButton" /* 12096 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11170 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11922 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11925 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11927 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11938 */;
+import CommandRowButton from "CommandRowButton" /* 11987 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
@@ -258,15 +258,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(12031);
+  obj = hasOptions(11922);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(12036), obj2);
+    tmp4 = closure_10(onPressSend(11927), obj2);
   }
-  const tmpResult = tmp(12096);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11169).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(11987);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11170).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -289,7 +289,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12096), { hasOptions, sending, onPressSend }) };
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(11987), { hasOptions, sending, onPressSend }) };
   const TableRow = tmp(6903).TableRow;
   tmpResult2 = tmp(9649);
   return closure_10(TableRow, obj4);

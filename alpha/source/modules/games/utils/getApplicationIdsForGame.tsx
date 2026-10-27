@@ -1,10 +1,10 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 13722
+// Function ID: 13723
 // Name: getApplicationIdsForGame
 // Dependencies: [2045, 2022, 558, 576, 504, 2]
 // Exports: default
 
-// Module 13720 (getApplicationIdsForGame)
+// Module 13722 (getApplicationIdsForGame)
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import GameStore from "GameStore" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

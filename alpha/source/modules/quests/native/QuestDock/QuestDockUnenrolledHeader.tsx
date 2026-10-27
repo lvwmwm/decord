@@ -1,18 +1,18 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16532
+// Function ID: 16533
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1098, 21, 4971, 558, 576, 16468, 16437, 16456, 6713, 7801, 5205, 4978, 16436, 1128, 5234, 16532, 16533, 5669, 16496, 16534, 2]
+// Dependencies: [19, 17, 1098, 21, 4971, 558, 576, 16469, 16438, 16457, 6713, 7801, 5205, 4978, 16437, 1128, 5234, 16533, 16534, 5669, 16497, 16535, 2]
 
-// Module 16531 (QuestDockUnenrolledHeader)
+// Module 16532 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import useThemeDefault from "useTheme" /* 5205 */;
 import FastImageDefault from "FastImage" /* 5669 */;
 import QuestTypes from "QuestTypes" /* 6713 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16456 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16496 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16534 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16457 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16497 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16535 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
@@ -36,11 +36,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp8Result;
   let obj = questCreative(576);
   const cResult = obj.c(21);
-  let obj2 = questCreative(16468);
+  let obj2 = questCreative(16469);
   const questDockQuest = obj2.useQuestDockQuest();
-  const obj3 = questCreative(16468);
+  const obj3 = questCreative(16469);
   questCreative = obj3.useQuestCreative(questDockQuest);
-  const obj4 = questCreative(16437);
+  const obj4 = questCreative(16438);
   const actionSheetPressHandler = obj4.useActionSheetPressHandler(questCreative);
   if (cResult[0] !== questCreative) {
     const fn = function t() {
@@ -65,7 +65,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp11 = tmp10;
   }
   const tmp12 = closure_8();
-  const tmpResult2 = questCreative(16436);
+  const tmpResult2 = questCreative(16437);
   const questGameLogotypeAssetUrl = tmpResult2.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const getRewardLabel = tmp12.getRewardLabel;
@@ -87,9 +87,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp16 = cResult[4];
   }
   if (LIGHT === tmp11.DARK) {
-    tmp8Result = tmp8(16532);
-  } else {
     tmp8Result = tmp8(16533);
+  } else {
+    tmp8Result = tmp8(16534);
   }
   if (cResult[5] === tmp12.wreathImage) {
     let tmp20;
@@ -165,11 +165,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp15;
   let tmp16;
   let tmp7Result4;
-  let obj = questCreative(16468);
+  let obj = questCreative(16469);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(16468);
+  let obj2 = questCreative(16469);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(16437);
+  const obj3 = questCreative(16438);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -188,7 +188,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp10 = tmp9;
   }
   const tmp11 = closure_8();
-  const tmpResult = questCreative(16436);
+  const tmpResult = questCreative(16437);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
@@ -201,9 +201,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   tmp16 = View;
   const tmp7Result3 = FastImageDefault;
   if (LIGHT === tmp10.DARK) {
-    tmp7Result4 = tmp7(16532);
-  } else {
     tmp7Result4 = tmp7(16533);
+  } else {
+    tmp7Result4 = tmp7(16534);
   }
   items1 = [, ];
   const obj8 = { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage };

@@ -1,9 +1,9 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11166
+// Function ID: 11167
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4823, 1504, 5983, 5984, 21, 5634, 5151, 5210, 1631, 5909, 1128, 1202, 11166, 5662, 7285, 4799, 10412, 7290, 558, 576, 11168, 5159, 11171, 8471, 5234, 2]
+// Dependencies: [19, 4823, 1504, 5983, 5984, 21, 5634, 5151, 5210, 1631, 5909, 1128, 1202, 11167, 5662, 7285, 4799, 10412, 7290, 558, 576, 11169, 5159, 11172, 8471, 5234, 2]
 
-// Module 11165 (MarkupReactCommandRule)
+// Module 11166 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
@@ -12,7 +12,7 @@ import ToastUtils from "ToastUtils" /* 5662 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5984 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11171 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11172 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4823 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   const cResult = obj.c(18);
   node = node.node;
   ({ output, state, style } = node);
-  const tmp4 = null != react.useContext(node(11168).AppLauncherContext);
+  const tmp4 = null != react.useContext(node(11169).AppLauncherContext);
   let closure_1 = tmp4;
   const tmp5 = closure_6();
   dependencyMap = tmp5;
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11168).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11169).AppLauncherContext);
   dependencyMap = closure_6();
   const Text = node(5234).Text;
   let obj2 = node(8471);

@@ -1,9 +1,9 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14652
+// Function ID: 14653
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1087, 1089, 21, 4971, 587, 558, 576, 1275, 9361, 7649, 7278, 7490, 14148, 7221, 7293, 5669, 14652, 5234, 1128, 5244, 2]
+// Dependencies: [32, 19, 17, 1087, 1089, 21, 4971, 587, 558, 576, 1275, 9361, 7649, 7278, 7490, 14150, 7221, 7293, 5669, 14653, 5234, 1128, 5244, 2]
 
-// Module 14651 (NitroOrbsDeliveredModal)
+// Module 14652 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -12,7 +12,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import openUserSettings from "openUserSettings" /* 7490 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 9361 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14652 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14653 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -151,7 +151,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
         obj.openUserSettings(obj2);
       }
     }
-    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14148).OrbsRewardBackground, obj5) };
+    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14150).OrbsRewardBackground, obj5) };
     obj5 = { style: tmp4.background, onReady: tmp12 };
     cResult[7] = tmp4.background;
     cResult[8] = closure_10(View, obj4);
@@ -301,7 +301,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14148).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14150).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };

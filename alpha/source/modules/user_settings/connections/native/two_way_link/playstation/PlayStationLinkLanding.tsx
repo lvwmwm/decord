@@ -1,14 +1,14 @@
-// Module ID: 14081
-// Function ID: 14082
+// Module ID: 14083
+// Function ID: 14084
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 14080, 1087, 21, 4971, 1128, 8572, 9616, 558, 576, 1505, 2067, 14082, 9618, 2]
+// Dependencies: [19, 14082, 1087, 21, 4971, 1128, 8572, 9616, 558, 576, 1505, 2067, 14084, 9618, 2]
 
-// Module 14081 (PlayStationLinkLanding)
+// Module 14083 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14080 */;
-import _modDef14082 from "module_14082" /* 14082 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14082 */;
+import _modDef14084 from "module_14084" /* 14084 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { uri: _modDef14082 };
+    const obj7 = { uri: _modDef14084 };
     cResult[4] = obj7;
     tmp13 = obj7;
   } else {
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef14082 };
+    const obj = { uri: _modDef14084 };
     return obj;
   }, []);
   const TwoWayLinkLanding = navigation(9618).TwoWayLinkLanding;

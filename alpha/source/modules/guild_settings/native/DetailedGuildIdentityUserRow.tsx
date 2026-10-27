@@ -1,9 +1,9 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10833
+// Function ID: 10834
 // Name: DetailedGuildIdentityUserRow
 // Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 5989, 5025, 9133, 1202, 504, 8951, 6903, 2]
 
-// Module 10832 (DetailedGuildIdentityUserRow)
+// Module 10833 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

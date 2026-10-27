@@ -1,20 +1,20 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17388
+// Function ID: 17389
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 17361, 21, 4971, 5052, 558, 576, 15995, 7012, 587, 5977, 5234, 1128, 15292, 1384, 7008, 2]
+// Dependencies: [109, 32, 19, 17362, 21, 4971, 5052, 558, 576, 15996, 7012, 587, 5977, 5234, 1128, 15293, 1384, 7008, 2]
 
-// Module 17387 (RegisterUsernameInput)
+// Module 17388 (RegisterUsernameInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15292 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15995 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15293 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15996 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17361 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17362 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
         }
       }
     }
-    if (undefined === tmp(15995).NameValidationState.ERROR) {
+    if (undefined === tmp(15996).NameValidationState.ERROR) {
       class H {
         constructor() {
           tmp = closure_1(true);
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(15995).NameValidationState.ERROR) {
+  if (type === tmp15(15996).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

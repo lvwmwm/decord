@@ -1,10 +1,10 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16916
+// Function ID: 16917
 // Name: CopyClientInfoSetting
-// Dependencies: [11027, 21, 1383, 5210, 12716, 7285, 5662, 558, 576, 1128, 7748, 7294, 7248, 1384, 7298, 5682, 4928, 11208, 6840, 4799, 2]
+// Dependencies: [11028, 21, 1383, 5210, 12719, 7285, 5662, 558, 576, 1128, 7748, 7294, 7248, 1384, 7298, 5682, 4928, 11209, 6840, 4799, 2]
 // Exports: getClientInfoString
 
-// Module 16915 (CopyClientInfoSetting)
+// Module 16916 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4799 */;
@@ -14,12 +14,12 @@ import ToastUtils from "ToastUtils" /* 5662 */;
 import ClipboardListIcon from "ClipboardListIcon" /* 6840 */;
 import ClipboardUtils from "ClipboardUtils" /* 7285 */;
 import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7748 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12716 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11027 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12719 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11028 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11209 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

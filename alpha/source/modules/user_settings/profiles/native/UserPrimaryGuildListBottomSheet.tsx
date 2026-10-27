@@ -1,9 +1,9 @@
-// Module ID: 15907
-// Function ID: 15908
+// Module ID: 15908
+// Function ID: 15909
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8274, 21, 4971, 1384, 587, 558, 576, 8654, 5039, 5210, 1128, 6883, 9225, 6988, 6903, 14169, 12, 4980, 14172, 7278, 7248, 5244, 7298, 7145, 5234, 8951, 7220, 5265, 2]
+// Dependencies: [32, 19, 17, 8274, 21, 4971, 1384, 587, 558, 576, 8654, 5039, 5210, 1128, 6883, 9225, 6988, 6903, 14170, 12, 4980, 14173, 7278, 7248, 5244, 7298, 7145, 5234, 8951, 7220, 5265, 2]
 
-// Module 15907 (UserPrimaryGuildListBottomSheet)
+// Module 15908 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import GuildIconDefault from "GuildIcon" /* 6883 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
 import GuildTagConstants from "GuildTagConstants" /* 8274 */;
 import Form from "Form" /* 8951 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14172 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14173 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -366,7 +366,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
   str = tmp5[0];
   const tmp6 = tmp5[1];
   ref = ref.useRef(null);
-  const obj3 = selectedGuildId(14169);
+  const obj3 = selectedGuildId(14170);
   const guildTagCreationUpsell = obj3.useGuildTagCreationUpsell("UserPrimaryGuildListBottomSheet");
   const creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   const isUpsellVisible = guildTagCreationUpsell.isUpsellVisible;

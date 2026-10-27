@@ -1,7 +1,7 @@
 // Module ID: 9649
 // Function ID: 9650
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9650, 2024, 12078, 1087, 5983, 4976, 1128, 2031, 5626, 6811, 5633, 1384, 2000, 5634, 10198, 7755, 7566, 5908, 1417, 11169, 12114, 7630, 11405, 2]
+// Dependencies: [109, 5, 9650, 2024, 11969, 1087, 5983, 4976, 1128, 2031, 5626, 6811, 5633, 1384, 2000, 5634, 10198, 7755, 7566, 5908, 1417, 11170, 12005, 7630, 11406, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9649 (AppLauncherUtils)
@@ -17,14 +17,14 @@ import getPlatformDefault from "getPlatform" /* 5633 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6811 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11169 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11405 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12114 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11170 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11406 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12005 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import AppLauncherStore from "AppLauncherStore" /* 12078 */;
+import AppLauncherStore from "AppLauncherStore" /* 11969 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -187,7 +187,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -263,7 +263,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;

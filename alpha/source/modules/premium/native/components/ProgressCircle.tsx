@@ -1,9 +1,9 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13518
+// Function ID: 13519
 // Name: ProgressCircle
 // Dependencies: [19, 17, 21, 4971, 5037, 587, 7962, 2]
 
-// Module 13515 (ProgressCircle)
+// Module 13518 (ProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 5037 */;

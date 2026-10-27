@@ -1,18 +1,18 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18496
+// Function ID: 18497
 // Name: FramePanelSystemUIManager
-// Dependencies: [19, 21, 558, 576, 18480, 18477, 2]
+// Dependencies: [19, 21, 558, 576, 18490, 18487, 2]
 
-// Module 18486 (FramePanelSystemUIManager)
+// Module 18496 (FramePanelSystemUIManager)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 18480 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 18490 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityPanelSystemUIManager = tmp(18477);
+const ActivityPanelSystemUIManager = tmp(18487);
 const jsx = Fragment.jsx;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelSystemUIManager() {

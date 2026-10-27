@@ -1,93 +1,202 @@
 // Module ID: 12605
 // Function ID: 12606
-// Dependencies: [12596, 12597, 12579, 12599, 12584]
-// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
+// Dependencies: [41, 42, 12588]
+// Exports: rejectedSyncPromise, resolvedSyncPromise
 
 // Module 12605
-import _mod12579 from "module_12579" /* 12579 */;
-import _mod12584 from "module_12584" /* 12584 */;
-import _mod12596 from "module_12596" /* 12596 */;
-import _mod12597 from "module_12597" /* 12597 */;
-import _mod12599 from "module_12599" /* 12599 */;
+import _mod12588 from "module_12588" /* 12588 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
+let c3;
 
-export const getClient = function getClient() {
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12597;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  const currentScope = asyncContextStrategy.getCurrentScope();
-  return currentScope.getClient();
+let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
+obj[0] = "PENDING";
+obj[1] = "RESOLVED";
+obj[2] = "REJECTED";
+class SyncPromise {
+  constructor(fn) {
+    const self = this;
+    _classCallCheck(this, SyncPromise);
+    const __init = SyncPromise.prototype.__init;
+    __init.call(self);
+    const __init2 = tmp.prototype.__init2;
+    __init2.call(self);
+    const __init3 = tmp.prototype.__init3;
+    __init3.call(self);
+    const __init4 = tmp.prototype.__init4;
+    __init4.call(self);
+    self._state = obj.PENDING;
+    self._handlers = [];
+    try {
+      fn(self._resolve, self._reject);
+    } catch (tmp5) {
+      self._reject(tmp5);
+    }
+  }
+}
+const entry = {
+  key: "then",
+  value: function then(arg0, arg1) {
+    const self = this;
+    let closure_1 = arg0;
+    let closure_0 = arg1;
+    obj = Object.create(SyncPromise.prototype);
+    SyncPromise((arg0, arg1) => {
+      closure_0 = arg0;
+      closure_1 = arg1;
+      const _handlers = self._handlers;
+      const items = [
+        false,
+        (arg0) => {
+          if (closure_1) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_0(arg0);
+          }
+        },
+        (arg0) => {
+          if (closure_0) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_1(arg0);
+          }
+        }
+      ];
+      _handlers.push(items);
+      self._executeHandlers();
+    });
+    return obj;
+  }
 };
-export const getCurrentScope = function getCurrentScope() {
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12597;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getCurrentScope();
-};
-export const getGlobalScope = function getGlobalScope() {
-  const obj = _mod12579;
-  return obj.getGlobalSingleton("globalScope", () => {
-    const scope = new _mod12599.Scope();
-    return scope;
+let items = [
+  entry,
+  {
+    key: "catch",
+    value: function _catch(arg0) {
+      return this.then((result) => result, arg0);
+    }
+  },
+  {
+    key: "finally",
+    value: function _finally(arg0) {
+      const self = this;
+      let closure_0 = arg0;
+      obj = Object.create(SyncPromise.prototype);
+      SyncPromise((arg0, arg1) => {
+        let closure_1;
+        closure_0 = arg0;
+        const nextPromise = arg1.then((result) => {
+          c3 = false;
+          let closure_1_2 = result;
+          if (closure_0) {
+            tmp();
+          }
+        }, (arg0) => {
+          c3 = true;
+          let closure_1_2 = arg0;
+          if (closure_0) {
+            tmp();
+          }
+        });
+        return nextPromise.then(() => {
+          const tmp = c3;
+          if (tmp) {
+            closure_1(closure_1_2);
+          } else {
+            closure_0(closure_1_2);
+          }
+        });
+      });
+      return obj;
+    }
+  },
+  {
+    key: "__init",
+    value: function __init() {
+      const self = this;
+      this._resolve = (arg0) => {
+        self._setResult(obj.RESOLVED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init2",
+    value: function __init2() {
+      const self = this;
+      this._reject = (arg0) => {
+        self._setResult(obj.REJECTED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init3",
+    value: function __init3() {
+      const self = this;
+      this._setResult = (_state, _value) => {
+        if (self._state === self.PENDING) {
+          const obj2 = _mod12588;
+          if (obj2.isThenable(_value)) {
+            _value.then(self._resolve, self._reject);
+          } else {
+            self._state = _state;
+            self._value = _value;
+            self._executeHandlers();
+          }
+        }
+      };
+    }
+  },
+  {
+    key: "__init4",
+    value: function __init4() {
+      const self = this;
+      this._executeHandlers = () => {
+        let _state;
+        if (self._state !== obj.PENDING) {
+          const _handlers = tmp._handlers;
+          const substr = _handlers.slice();
+          self._handlers = [];
+          const item = substr.forEach((item) => {
+            if (!item[0]) {
+              const tmp2 = constants;
+              if (_state._state === constants.RESOLVED) {
+                item[1](_state._value);
+              }
+              if (_state._state === tmp2.REJECTED) {
+                item[2](_state._value);
+              }
+              item[0] = true;
+            }
+          });
+        }
+      };
+    }
+  }
+];
+const _moduleResult = _createClass(SyncPromise, items);
+const SyncPromise_export = _moduleResult;
+
+export { SyncPromise_export as SyncPromise };
+export const rejectedSyncPromise = function rejectedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((arg0, fn) => {
+    fn(closure_0);
   });
+  return tmp;
 };
-export const getIsolationScope = function getIsolationScope() {
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12597;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getIsolationScope();
-};
-export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
-  let parentSpanId;
-  let spanId;
-  let traceId;
-  const propagationContext = getPropagationContext.getPropagationContext();
-  ({ traceId, spanId, parentSpanId } = propagationContext);
-  const obj = _mod12584;
-  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
-};
-export const withIsolationScope = function withIsolationScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12597;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let result;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
-    } else {
-      result = asyncContextStrategy.withIsolationScope(tmp3);
-    }
-    return result;
-  } else {
-    return asyncContextStrategy.withIsolationScope(items[0]);
-  }
-};
-export const withScope = function withScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12596;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12597;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let withSetScopeResult;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
-    } else {
-      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
-    }
-    return withSetScopeResult;
-  } else {
-    return asyncContextStrategy.withScope(items[0]);
-  }
+export const resolvedSyncPromise = function resolvedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((fn) => {
+    fn(closure_0);
+  });
+  return tmp;
 };

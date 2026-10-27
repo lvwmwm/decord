@@ -1,132 +1,65 @@
 // Module ID: 12632
 // Function ID: 12633
-// Dependencies: [12625]
-// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
+// Dependencies: [12605, 12609, 12581, 12588]
+// Exports: notifyEventProcessors
 
 // Module 12632
-import _mod12625 from "module_12625" /* 12625 */;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
 
-export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
-  if (!combined1) {
-    let str2 = "";
-    if (protocol.protocol) {
-      const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
-    }
-    let str4 = "";
-    if (protocol.port) {
-      const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
-    }
-    const host = protocol.host;
-    let str6 = "";
-    if (protocol.path) {
-      const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
-    }
-    const tmp12 = name;
-    if (tmp12) {
-      const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
-    }
-    const _URLSearchParams = URLSearchParams;
-    const self = this;
-    const self2 = this;
-    const _HermesInternal7 = HermesInternal;
-    const str13 = new URLSearchParams(obj);
-    combined1 = "" + combined + "?" + str13.toString();
-  }
-  return combined1;
-};
-export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
-  const obj = _mod12625;
-  const url = obj.makeDsn(arg0);
-  if (url) {
-    let str = "";
-    if (url.protocol) {
-      const _HermesInternal = HermesInternal;
-      str = "" + url.protocol + ":";
-    }
-    let str3 = "";
-    if (url.port) {
-      const _HermesInternal2 = HermesInternal;
-      str3 = ":" + url.port;
-    }
-    const host = url.host;
-    let str5 = "";
-    if (url.path) {
-      const _HermesInternal3 = HermesInternal;
-      str5 = "/" + url.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
-    const _HermesInternal6 = HermesInternal;
-    const tmp2Result = _mod12625;
-    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
-    let tmp16 = combined1;
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      tmp16 = combined1;
-      while (keys[tmp] !== undefined) {
-        if ("dsn" === tmp19) {
-          continue;
-        } else {
-          combined1 = tmp18;
-          if ("onClose" === tmp19) {
-            continue;
-          } else {
-            if ("user" === tmp19) {
-              user = user.user;
-              combined1 = tmp18;
-              if (!user) {
-                continue;
-              } else {
-                let sum = tmp18;
-                if (user.name) {
-                  let _encodeURIComponent3 = encodeURIComponent;
-                  let _HermesInternal8 = HermesInternal;
-                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
-                }
-                combined1 = sum;
-                if (!user.email) {
-                  continue;
-                } else {
-                  let _encodeURIComponent4 = encodeURIComponent;
-                  let _HermesInternal9 = HermesInternal;
-                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
-                  continue;
-                }
-                continue;
-              }
-              continue;
-            } else {
-              let _encodeURIComponent = encodeURIComponent;
-              let _encodeURIComponent2 = encodeURIComponent;
-              let encodeURIComponentResult = encodeURIComponent(tmp19);
-              let _HermesInternal7 = HermesInternal;
-              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
-              continue;
-            }
-            continue;
-          }
-          continue;
+export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f115421 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
         }
-        continue;
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f149570);
+          let nextPromise1 = nextPromise.then(null, arg1);
+        } else {
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f115421);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
+        }
       }
     }
-    const _HermesInternal10 = HermesInternal;
-    return "" + combined + "?" + tmp16;
-  } else {
-    return "";
-  }
+    let tmp12 = fn(tmp4);
+  };
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_12605").SyncPromise(f115421);
+  return syncPromise;
 };

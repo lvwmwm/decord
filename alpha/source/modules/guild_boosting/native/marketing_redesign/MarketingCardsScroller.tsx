@@ -1,9 +1,9 @@
-// Module ID: 13491
-// Function ID: 13492
+// Module ID: 13494
+// Function ID: 13495
 // Name: MarketingCardsScroller
-// Dependencies: [32, 109, 19, 17, 4972, 21, 4971, 4968, 587, 558, 576, 504, 5267, 1128, 1385, 6908, 10142, 13254, 2]
+// Dependencies: [32, 109, 19, 17, 4972, 21, 4971, 4968, 587, 558, 576, 504, 5267, 1128, 1385, 6908, 10142, 13257, 2]
 
-// Module 13491 (MarketingCardsScroller)
+// Module 13494 (MarketingCardsScroller)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;

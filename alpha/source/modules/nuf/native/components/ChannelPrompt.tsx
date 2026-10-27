@@ -1,10 +1,10 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13694
+// Function ID: 13695
 // Name: ChannelPrompt
 // Dependencies: [5, 32, 19, 17, 4901, 4845, 21, 4971, 5268, 504, 1505, 6924, 1128, 7411, 6374, 7221, 6883, 1417, 5234, 7007, 5244, 7033, 2]
 // Exports: default
 
-// Module 13692 (ChannelPrompt)
+// Module 13694 (ChannelPrompt)
 import intl5 from "intl" /* 1128 */;
 import NavigatorConstants from "NavigatorConstants" /* 5268 */;
 import NavigatorHeader from "NavigatorHeader" /* 6924 */;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

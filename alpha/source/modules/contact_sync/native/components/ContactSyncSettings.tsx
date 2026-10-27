@@ -1,18 +1,18 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16136
+// Function ID: 16137
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1392, 13582, 1087, 21, 13583, 5663, 1128, 13587, 1267, 13579, 504, 4799, 1405, 8951, 6672, 16136, 2002, 2]
+// Dependencies: [5, 19, 1392, 13584, 1087, 21, 13585, 5663, 1128, 13589, 1267, 13581, 504, 4799, 1405, 8951, 6672, 16137, 2002, 2]
 // Exports: default, handleSyncContacts
 
-// Module 16135 (ContactSyncSettings)
+// Module 16136 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13579 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13583 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13587 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13581 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13589 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13582 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13584 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let obj = function _syncContacts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -127,7 +127,7 @@ let obj = function _syncContacts() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         closure_5 = tmp22;
         if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updateFriendSync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -223,7 +223,7 @@ obj = function _updateFriendSync() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         let closure_5 = tmp22;
         if (0 === c6) {
@@ -265,7 +265,7 @@ export default function ContactSyncSettings() {
   let obj9;
   const tmp = contactSyncAccount;
   const tmp2 = dependencyMap;
-  obj = contactSyncAccount(13583);
+  obj = contactSyncAccount(13585);
   contactSyncAccount = obj.useContactSyncAccount();
   let obj2 = contactSyncAccount(504);
   const items = [UserStore];
@@ -278,7 +278,7 @@ export default function ContactSyncSettings() {
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  const tmpResult = tmp(13583);
+  const tmpResult = tmp(13585);
   const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
   const FriendDiscoverySettings = tmp(4799).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
@@ -293,7 +293,7 @@ export default function ContactSyncSettings() {
   let tmp10Result = null;
   if (isStaffResult) {
     const obj4 = { children: items1 };
-    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(13583).adminDeleteContactSync };
+    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(13585).adminDeleteContactSync };
     const FormSwitchRow = tmp(8951).FormSwitchRow;
     items1 = [closure_10(FormSwitchRow, obj5), closure_10(tmp(8951).FormDivider, {})];
     tmp10Result = tmp10(tmp11, obj4);
@@ -344,7 +344,7 @@ export default function ContactSyncSettings() {
   const FormHint = tmp(8951).FormHint;
   const intl4 = tmp(1128).intl;
   format = intl4.format;
-  obj12 = { onClick: tmp(13583).handleOpenLearnMoreLink };
+  obj12 = { onClick: tmp(13585).handleOpenLearnMoreLink };
   BoR0dO = tmp(1128).t.BoR0dO;
   items4[1] = closure_10(FormHint, obj11);
   const obj13 = { children: intl5.string(tmp(1128).t.cW1nr9) };

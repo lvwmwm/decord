@@ -1,9 +1,9 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 14294
+// Function ID: 14295
 // Name: Badges
-// Dependencies: [19, 17, 2068, 21, 587, 4971, 558, 576, 14291, 8617, 5234, 504, 9616, 11306, 14294, 1128, 14296, 14298, 14163, 11790, 1104, 9308, 2]
+// Dependencies: [19, 17, 2068, 21, 587, 4971, 558, 576, 14292, 8617, 5234, 504, 9616, 11307, 14295, 1128, 14297, 14299, 14164, 11900, 1104, 9308, 2]
 
-// Module 14293 (Badges)
+// Module 14294 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,13 +14,13 @@ import Text_Text from "Text/Text" /* 5234 */;
 import utils from "utils" /* 8617 */;
 import TrophyIcon from "TrophyIcon" /* 9308 */;
 import GameControllerIcon from "GameControllerIcon" /* 9616 */;
-import TimerIcon2 from "TimerIcon" /* 11306 */;
-import RetryIcon from "RetryIcon" /* 11790 */;
-import FireIcon from "FireIcon" /* 14163 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14291 */;
-import NewUserIcon from "NewUserIcon" /* 14294 */;
-import FlashIcon2 from "FlashIcon" /* 14296 */;
-import TrendingType from "TrendingType" /* 14298 */;
+import TimerIcon2 from "TimerIcon" /* 11307 */;
+import RetryIcon from "RetryIcon" /* 11900 */;
+import FireIcon from "FireIcon" /* 14164 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14292 */;
+import NewUserIcon from "NewUserIcon" /* 14295 */;
+import FlashIcon2 from "FlashIcon" /* 14297 */;
+import TrendingType from "TrendingType" /* 14299 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimest
 }) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(14291);
+  obj = entry(14292);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
@@ -641,7 +641,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(14296).FlashIcon;
+          FlashIcon = tmp(14297).FlashIcon;
           const intl = tmp(1128).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["Klie/P"], obj3);

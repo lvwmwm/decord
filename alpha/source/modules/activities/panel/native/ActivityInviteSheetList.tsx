@@ -1,9 +1,9 @@
-// Module ID: 18468
-// Function ID: 18469
+// Module ID: 18478
+// Function ID: 18479
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1087, 21, 4971, 6651, 587, 558, 576, 1128, 1202, 5210, 5151, 6908, 5234, 18469, 5593, 7220, 2]
+// Dependencies: [19, 1087, 21, 4971, 6651, 587, 558, 576, 1128, 1202, 5210, 5151, 6908, 5234, 18479, 5593, 7220, 2]
 
-// Module 18468 (ActivityInviteSheetList)
+// Module 18478 (ActivityInviteSheetList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5151 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
 import Text_Text from "Text/Text" /* 5234 */;
 import Pressables from "Pressables" /* 6908 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 18469 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 18479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;

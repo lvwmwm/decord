@@ -1,10 +1,10 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11234
+// Function ID: 11235
 // Name: useMessagePreviewHeight
 // Dependencies: [570, 558, 1274, 2]
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 11233 (useMessagePreviewHeight)
+// Module 11234 (useMessagePreviewHeight)
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

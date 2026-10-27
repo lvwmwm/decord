@@ -1,14 +1,14 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 16596
+// Function ID: 16597
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 576, 9955, 9957, 16596, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9955, 9957, 16597, 2]
 
-// Module 16595 (GuildRoleSubscriptionEmojiGallery)
+// Module 16596 (GuildRoleSubscriptionEmojiGallery)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import chunkDefault from "chunk" /* 9955 */;
 import LayoutUtils from "LayoutUtils" /* 9957 */;
-import EmojiIconDefault from "EmojiIcon" /* 16596 */;
+import EmojiIconDefault from "EmojiIcon" /* 16597 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
         obj = { style: { flexDirection: "row" }, children: null };
         obj1 = { gap: 16, children: null };
         GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(() => { /* body not rendered: F152871 */ });
+        obj1.children = maxPerRow.map(() => { /* body not rendered: F152965 */ });
         obj.children = jsx(GappedList, obj1);
         return jsx(View, obj, arg1);
       }
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
         obj = { style: { flexDirection: "row" }, children: null };
         obj1 = { gap: 16, children: null };
         GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(() => { /* body not rendered: F152871 */ });
+        obj1.children = maxPerRow.map(() => { /* body not rendered: F152965 */ });
         obj.children = jsx(GappedList, obj1);
         return jsx(View, obj, arg1);
       }

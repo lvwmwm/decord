@@ -1,14 +1,14 @@
-// Module ID: 19334
-// Function ID: 19335
+// Module ID: 19344
+// Function ID: 19345
 // Name: GuildSettingsModalGuildSpace
-// Dependencies: [19, 4903, 9006, 1087, 21, 4971, 587, 558, 576, 1405, 9005, 18992, 7295, 504, 1128, 2440, 6987, 5977, 8951, 5592, 2]
+// Dependencies: [19, 4903, 9006, 1087, 21, 4971, 587, 558, 576, 1405, 9005, 19002, 7295, 504, 1128, 2440, 6987, 5977, 8951, 5592, 2]
 
-// Module 19334 (GuildSettingsModalGuildSpace)
+// Module 19344 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 587 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import _modDef2440 from "module_2440" /* 2440 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import ServerHubAnalytics from "ServerHubAnalytics" /* 18992 */;
+import ServerHubAnalytics from "ServerHubAnalytics" /* 19002 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4903 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
@@ -241,14 +241,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     TableRowGroup = tmp2(6987).TableRowGroup;
     intl = tmp2(1128).intl;
     intl2 = tmp2(1128).intl;
-    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(18992).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2440.btBTIw), subLabel: intl4.string(stateFromStores(1128).t.n3aRYQ), disabled: !stateFromStores1 };
+    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(19002).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2440.btBTIw), subLabel: intl4.string(stateFromStores(1128).t.n3aRYQ), disabled: !stateFromStores1 };
     intl3 = tmp2(1128).intl;
     intl4 = tmp2(1128).intl;
     items4 = [closure_8(closure_12, obj7), , ];
-    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(18992).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1128).t["9tlK5J"]), disabled: !stateFromStores1 };
+    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(19002).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1128).t["9tlK5J"]), disabled: !stateFromStores1 };
     intl5 = tmp2(1128).intl;
     items4[1] = closure_8(closure_12, obj8);
-    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(18992).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2440["5xxUI2"]), subLabel: intl7.string(_modDef2440.FMGoDB), disabled: !stateFromStores1 };
+    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(19002).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2440["5xxUI2"]), subLabel: intl7.string(_modDef2440.FMGoDB), disabled: !stateFromStores1 };
     intl6 = tmp2(1128).intl;
     intl7 = tmp2(1128).intl;
     items4[2] = closure_8(closure_12, obj9);

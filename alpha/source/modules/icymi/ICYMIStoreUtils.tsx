@@ -1,12 +1,12 @@
-// Module ID: 17902
-// Function ID: 17903
+// Module ID: 17911
+// Function ID: 17912
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6010, 6771, 8823, 1087, 17903, 8840, 8836, 7206, 2002, 1087, 11, 8841, 558, 576, 504, 2]
+// Dependencies: [5, 6010, 6771, 8823, 1087, 17912, 8840, 8836, 7206, 2002, 1087, 11, 8841, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 17902 (ICYMIStoreUtils)
+// Module 17911 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1087 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 17903 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 17912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 6010 */;
 import ReadStateStore from "ReadStateStore" /* 6771 */;
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp35) {
         c4 = 3;

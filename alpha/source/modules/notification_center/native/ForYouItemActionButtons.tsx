@@ -1,9 +1,9 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17875
+// Function ID: 17876
 // Name: ForYouItemActionButtons
-// Dependencies: [109, 5, 19, 17, 4823, 1392, 1087, 21, 4971, 1123, 558, 576, 5052, 5206, 1128, 5244, 5977, 5234, 573, 8333, 17469, 5696, 15092, 10629, 6788, 7411, 7414, 5663, 10087, 1267, 2]
+// Dependencies: [109, 5, 19, 17, 4823, 1392, 1087, 21, 4971, 1123, 558, 576, 5052, 5206, 1128, 5244, 5977, 5234, 573, 8333, 17470, 5696, 15093, 10629, 6788, 7411, 7414, 5663, 10087, 1267, 2]
 
-// Module 17866 (ForYouItemActionButtons)
+// Module 17875 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import intl23 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -15,8 +15,8 @@ import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6788 
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10629 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15092 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17469 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15093 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17470 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -1227,7 +1227,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1262,7 +1262,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         c2 = 3;
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c2 = 3;
         throw tmp17;

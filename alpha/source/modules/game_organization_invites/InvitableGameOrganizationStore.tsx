@@ -1,13 +1,13 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11319
+// Function ID: 11320
 // Name: InvitableGameOrganizationStore
-// Dependencies: [1087, 11030, 504, 584, 2]
+// Dependencies: [1087, 11031, 504, 584, 2]
 
-// Module 11318 (InvitableGameOrganizationStore)
+// Module 11319 (InvitableGameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11030 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11031 */;
 import size from "module_2" /* 2 */;
 
 function fromServerInvitableGameOrganization(game_organization) {

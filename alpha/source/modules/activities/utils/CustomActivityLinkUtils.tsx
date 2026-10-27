@@ -1,14 +1,14 @@
-// Module ID: 14192
-// Function ID: 14193
+// Module ID: 14193
+// Function ID: 14194
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14193, 1087, 14195, 1297, 584, 2]
+// Dependencies: [5, 14194, 1087, 14196, 1297, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14192 (CustomActivityLinkUtils)
+// Module 14193 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1087 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14195 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14193 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14194 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "r" }, done: true };
+            return { value: { customId: "Array" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "r" };
+              obj = { customId: "Array" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

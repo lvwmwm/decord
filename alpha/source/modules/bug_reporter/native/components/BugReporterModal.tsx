@@ -1,9 +1,9 @@
-// Module ID: 13785
-// Function ID: 13786
+// Module ID: 13787
+// Function ID: 13788
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1392, 13784, 21, 4971, 587, 683, 1104, 6672, 1505, 504, 1128, 6924, 8145, 8144, 5663, 13786, 569, 13787, 7485, 6984, 5669, 1417, 1384, 8155, 11761, 1647, 7181, 5977, 5234, 6905, 12171, 6908, 1202, 8115, 5244, 7008, 6987, 6903, 5210, 13796, 2002, 6985, 7180, 1373, 13797, 10170, 558, 576, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13786, 21, 4971, 587, 683, 1104, 6672, 1505, 504, 1128, 6924, 8145, 8144, 5663, 13788, 569, 13789, 7485, 6984, 5669, 1417, 1384, 8155, 12258, 1647, 7181, 5977, 5234, 6905, 12064, 6908, 1202, 8115, 5244, 7008, 6987, 6903, 5210, 13798, 2002, 6985, 7180, 1373, 13799, 10170, 558, 576, 7095, 2]
 
-// Module 13785 (BugReporterModal)
+// Module 13787 (BugReporterModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import BugReportStore from "BugReportStore" /* 13784 */;
+import BugReportStore from "BugReportStore" /* 13786 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import module_683 from "module_683" /* 683 */;
@@ -95,7 +95,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -218,7 +218,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -263,7 +263,7 @@ class BugCreateScreen {
                 });
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c3 = 3;
@@ -387,7 +387,7 @@ class BugCreateScreen {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -426,7 +426,7 @@ class BugCreateScreen {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "+352" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -619,7 +619,7 @@ class BugCreateScreen {
                   clearTimeout(timeout);
                 }
                 priority = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               } catch (tmp65) {
                 closure_2 = tmp65;
                 if (0 === name) {
@@ -681,7 +681,7 @@ class BugCreateScreen {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -715,7 +715,7 @@ class BugCreateScreen {
                 closure_0 = value;
                 closure_1_18(closure_0);
                 c3 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp12) {
               c3 = 3;
@@ -805,7 +805,7 @@ class BugCreateScreen {
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(13796, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(13798, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
@@ -849,7 +849,7 @@ class BugCreateScreen {
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(13787);
+    const tmp25Result = tmp25(13789);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
     let obj14 = { label: intl8.string(tmp25(1128).t["1SplH2"]), placeholder: intl9.string(tmp25(1128).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };

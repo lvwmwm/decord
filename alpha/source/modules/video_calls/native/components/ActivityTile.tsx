@@ -1,9 +1,9 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11453
+// Function ID: 11454
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4822, 1392, 1087, 1206, 2026, 21, 1202, 4971, 587, 558, 576, 1388, 504, 7257, 5989, 5025, 11453, 7253, 7278, 9935, 1128, 11455, 11363, 11457, 11458, 11459, 6908, 11506, 5234, 5245, 5037, 2]
+// Dependencies: [5, 32, 19, 17, 4822, 1392, 1087, 1206, 2026, 21, 1202, 4971, 587, 558, 576, 1388, 504, 7257, 5989, 5025, 11454, 7253, 7278, 9935, 1128, 11456, 11364, 11458, 11459, 11460, 6908, 11507, 5234, 5245, 5037, 2]
 
-// Module 11452 (ActivityTile)
+// Module 11453 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1202 */;
 import FormConstants from "FormConstants" /* 1206 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Constants2 from "Constants" /* 2026 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11458 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11459 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               const result = obj.setOrientationLockState(application);
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp16) {
             c2 = 3;
             throw tmp16;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

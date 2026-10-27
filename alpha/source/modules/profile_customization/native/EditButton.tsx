@@ -1,9 +1,9 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 15852
+// Function ID: 15853
 // Name: EditButton
 // Dependencies: [19, 17, 21, 558, 576, 7959, 8324, 2]
 
-// Module 15851 (EditButton)
+// Module 15852 (EditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

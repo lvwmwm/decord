@@ -1,9 +1,9 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12792
+// Function ID: 12793
 // Name: CommunicationDisabledActionCreators
 // Dependencies: [5, 2049, 6830, 2]
 
-// Module 12789 (CommunicationDisabledActionCreators)
+// Module 12792 (CommunicationDisabledActionCreators)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           guildId = 3;

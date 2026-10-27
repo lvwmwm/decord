@@ -1,10 +1,10 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13914
+// Function ID: 13915
 // Name: IAPUtils
-// Dependencies: [5, 17, 5237, 5646, 1392, 7524, 1087, 1394, 1384, 13913, 13914, 3, 38, 13933, 7519, 12, 1281, 4787, 558, 576, 504, 13934, 1383, 4928, 13935, 2]
+// Dependencies: [5, 17, 5237, 5646, 1392, 7524, 1087, 1394, 1384, 13915, 13916, 3, 38, 13935, 7519, 12, 1281, 4787, 558, 576, 504, 13936, 1383, 4928, 13937, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 13912 (IAPUtils)
+// Module 13914 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -14,11 +14,11 @@ import react_nativeAll from "react-native" /* 1383 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import DeviceUtils from "DeviceUtils" /* 4928 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5646 */;
-import react_native2 from "react-native" /* 13913 */;
-import _mod13914 from "module_13914" /* 13914 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 13933 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 13934 */;
-import iapProducts from "iapProducts" /* 13935 */;
+import react_native2 from "react-native" /* 13915 */;
+import _mod13916 from "module_13916" /* 13916 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 13935 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 13936 */;
+import iapProducts from "iapProducts" /* 13937 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DevSettingsStore from "DevSettingsStore" /* 5237 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -70,7 +70,7 @@ let obj = function _makeIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -99,8 +99,8 @@ let obj = function _makeIAPRequest() {
               } else {
                 c6 = 1;
                 const obj5 = { requestJSONString: tmp45, sku: tmp46, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: tmp47 };
-                const requestPurchase = require("module_13914").requestPurchase;
-                require("module_13914");
+                const requestPurchase = require("module_13916").requestPurchase;
+                require("module_13916");
                 c7 = 2;
                 c8 = 1;
                 const obj6 = { value: requestPurchase(obj5), done: false };
@@ -175,7 +175,7 @@ obj = function _purchaseProduct() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ obj = function _purchaseProduct() {
                 c5 = 1;
                 c6 = 1;
                 const obj5 = { value: obj7.clearTransactionIOS(), done: false };
-                obj7 = require("module_13914");
+                obj7 = require("module_13916");
                 return obj5;
               }
             }
@@ -268,7 +268,7 @@ obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -291,7 +291,7 @@ obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -465,7 +465,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -489,7 +489,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_13914");
+              obj4 = require("module_13916");
               return obj6;
             } else {
               c5 = 3;
@@ -548,7 +548,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod13914.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod13914.ErrorCode.E_UNKNOWN];
+let items = [_mod13916.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod13916.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {

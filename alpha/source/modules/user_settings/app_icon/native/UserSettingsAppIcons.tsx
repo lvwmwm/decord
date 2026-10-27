@@ -1,15 +1,15 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16884
+// Function ID: 16885
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 9865, 4996, 21, 4971, 504, 14766, 1991, 7253, 15855, 5663, 1128, 16379, 15856, 6713, 9866, 4999, 9792, 9793, 9672, 8951, 16884, 10178, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 9865, 4996, 21, 4971, 504, 14767, 1991, 7253, 15856, 5663, 1128, 16380, 15857, 6713, 9866, 4999, 9792, 9793, 9672, 8951, 16885, 10178, 2]
 
-// Module 16883 (UserSettingsAppIcons)
+// Module 16884 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
-import AppIconRowsDefault from "AppIconRows" /* 16884 */;
+import AppIconRowsDefault from "AppIconRows" /* 16885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -172,7 +172,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             c5 = 0;
             closure_132_7(null);
             c8 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp68) {
           closure_6 = tmp68;
@@ -206,7 +206,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -307,7 +307,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
             return obj;
           }
           c1 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         } catch (tmp27) {
           c1 = 3;
           throw tmp27;
@@ -322,7 +322,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(14766);
+  let obj2 = stateFromStores(14767);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(1991);
   const isPremiumResult = obj3.isPremium(stateFromStores);

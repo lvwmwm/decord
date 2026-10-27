@@ -32,7 +32,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -59,7 +59,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
             closure_3 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

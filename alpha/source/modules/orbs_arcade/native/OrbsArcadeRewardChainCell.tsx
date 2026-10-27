@@ -1,9 +1,9 @@
-// Module ID: 16422
-// Function ID: 16423
+// Module ID: 16423
+// Function ID: 16424
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 4972, 21, 4971, 587, 5052, 558, 576, 504, 5206, 4978, 5252, 16395, 683, 16423, 9439, 16403, 7267, 5228, 16424, 2]
+// Dependencies: [32, 19, 17, 4972, 21, 4971, 587, 5052, 558, 576, 504, 5206, 4978, 5252, 16396, 683, 16424, 9439, 16404, 7267, 5228, 16425, 2]
 
-// Module 16422 (OrbsArcadeRewardChainCell)
+// Module 16423 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;

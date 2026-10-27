@@ -1,19 +1,19 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18338
+// Function ID: 18339
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 18330, 18346, 8901, 9146, 11147, 12854, 2]
+// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 18339, 18355, 8901, 9146, 11148, 12857, 2]
 
-// Module 18329 (MessageRequestsScreenWithTabs)
+// Module 18338 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import SegmentedControlState from "SegmentedControlState" /* 8901 */;
 import SegmentedControl from "SegmentedControl" /* 9146 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 11147 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12854 */;
-import MessageRequestListDefault from "MessageRequestList" /* 18330 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18346 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 11148 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12857 */;
+import MessageRequestListDefault from "MessageRequestList" /* 18339 */;
+import SpamMessageListDefault from "SpamMessageList" /* 18355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

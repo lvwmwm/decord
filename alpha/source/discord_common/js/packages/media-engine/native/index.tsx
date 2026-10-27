@@ -281,7 +281,7 @@ class MediaEngineNative extends TypedEventEmitter {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -337,7 +337,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const timerId = setTimeout(closure_129_2, periodMs);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } catch (tmp21) {
             c3 = 3;
             throw tmp21;
@@ -822,7 +822,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -897,7 +897,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const item = connections.forEach((setVideoBroadcast) => setVideoBroadcast.setVideoBroadcast(closure_1_1.shouldConnectionBroadcastVideo(setVideoBroadcast)));
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c3 = 3;
@@ -1054,7 +1054,7 @@ class MediaEngineNative extends TypedEventEmitter {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "+352" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -1128,7 +1128,7 @@ class MediaEngineNative extends TypedEventEmitter {
                   const result2 = signalSnapshotProcessed(closure_0);
                 }
                 c10 = 3;
-                return { value: "IconComponent", done: "+352" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp44) {
               closure_7 = tmp44;

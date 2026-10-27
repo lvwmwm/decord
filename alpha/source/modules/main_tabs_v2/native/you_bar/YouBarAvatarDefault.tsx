@@ -1,9 +1,9 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17833
+// Function ID: 17834
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 16443, 1087, 21, 4971, 587, 558, 576, 5252, 1202, 9406, 9350, 2]
+// Dependencies: [19, 17, 16444, 1087, 21, 4971, 587, 558, 576, 5252, 1202, 9406, 9350, 2]
 
-// Module 17832 (YouBarAvatarDefault)
+// Module 17833 (YouBarAvatarDefault)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import useToken from "useToken" /* 5252 */;
 import ReactionIcon2 from "ReactionIcon" /* 9350 */;
 import ClipView from "ClipView" /* 9406 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16443 */;
+import YouBarConstants from "YouBarConstants" /* 16444 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

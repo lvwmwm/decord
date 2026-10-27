@@ -1,10 +1,10 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 12178
+// Function ID: 12179
 // Name: conjureAttachmentRequests
 // Dependencies: [5, 10794, 10793, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 11758 (conjureAttachmentRequests)
+// Module 12178 (conjureAttachmentRequests)
 import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let obj = function _listStoredAttachments() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ obj = function _importAttachmentFromUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ obj = function _deleteStagedAttachment() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _deleteStagedAttachment() {
           closure_0 = value;
           if (closure_0.ok) {
             c4 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -318,7 +318,7 @@ obj = function _getAttachmentUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ obj = function _getAttachmentUrl() {
             uRLSearchParams = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -414,7 +414,7 @@ obj = function _isAttachmentAvailable() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -138,7 +138,7 @@ obj = function _submitHeadlessReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ obj = function _submitHeadlessReport() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp9) {
         c5 = 3;
@@ -340,7 +340,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "__initData", message_id: "substring_i", stage_instance_id: "ind", guild_id: "Map", guild_scheduled_event_id: "message", user_id: "body", email_token: "substring_i", application_id: "space", entrypoint: "analyticsLocations", widget_id: "end" };
+  let obj2 = { channel_id: "colors", message_id: "kind", stage_instance_id: "paddingHorizontal", guild_id: "variant", guild_scheduled_event_id: "cix", user_id: "test", email_token: "hd", application_id: "error", entrypoint: "toCharArray$esjava$1", widget_id: "error" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -555,7 +555,7 @@ export const submitReport = function submitReport(language, name, arr) {
       }
       let tmp15 = null;
       if (name.name === tmp4(8109).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "toCharArray$esjava$1", message_id: "test", guild_id: "ix" };
+        let obj2 = { channel_id: "children", message_id: "k", guild_id: "borderRadius" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);

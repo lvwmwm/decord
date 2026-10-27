@@ -1184,7 +1184,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "r" }, animated: false };
+    obj = { emoji: { oneofKind: "Array" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
@@ -2065,7 +2065,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "r" } };
+    obj = { badge: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
@@ -3901,7 +3901,7 @@ class PerkConfig$Type extends MessageType29 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "r" } };
+    obj = { source: [], kind: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);

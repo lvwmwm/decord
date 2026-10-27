@@ -1,9 +1,9 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 14390
+// Function ID: 14391
 // Name: shared/ClipsConstants
 // Dependencies: [2]
 
-// Module 14389 (shared/ClipsConstants)
+// Module 14390 (shared/ClipsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ClipsConstants.tsx");

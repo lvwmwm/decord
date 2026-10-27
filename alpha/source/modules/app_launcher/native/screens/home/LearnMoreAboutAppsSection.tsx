@@ -1,16 +1,16 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 11977
+// Function ID: 11978
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5660, 2067, 1128, 5234, 6908, 12087, 11169, 2]
+// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 5660, 2067, 1128, 5234, 6908, 11978, 11170, 2]
 
-// Module 12086 (LearnMoreAboutAppsSection)
+// Module 11977 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
 import LinkingDefault from "Linking" /* 5660 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12087 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11978 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4971 */;
@@ -26,7 +26,7 @@ let tmp;
 const intl5 = tmp(1128);
 const Text_Text = tmp(5234);
 const Pressables = tmp(6908);
-const AppLauncherTypes = tmp(11169);
+const AppLauncherTypes = tmp(11170);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

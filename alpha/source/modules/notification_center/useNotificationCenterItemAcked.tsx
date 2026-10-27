@@ -1,10 +1,10 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 17873
+// Function ID: 17874
 // Name: useNotificationCenterItemAcked
-// Dependencies: [17857, 558, 576, 504, 6789, 2]
+// Dependencies: [17866, 558, 576, 504, 6789, 2]
 
-// Module 17864 (useNotificationCenterItemAcked)
-import NotificationCenterStore from "NotificationCenterStore" /* 17857 */;
+// Module 17873 (useNotificationCenterItemAcked)
+import NotificationCenterStore from "NotificationCenterStore" /* 17866 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

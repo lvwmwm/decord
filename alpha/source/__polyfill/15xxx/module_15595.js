@@ -1,18 +1,10 @@
 // Module ID: 15595
 // Function ID: 15596
-// Dependencies: [15593]
+// Dependencies: []
 
 // Module 15595
-import _mod15593 from "module_15593" /* 15593 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15593(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default tmp;

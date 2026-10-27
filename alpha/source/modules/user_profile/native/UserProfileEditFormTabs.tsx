@@ -1,9 +1,9 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 15955
+// Function ID: 15956
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7304, 21, 4971, 587, 558, 576, 15953, 8732, 5159, 1128, 14378, 14431, 8901, 5052, 11852, 2]
+// Dependencies: [32, 19, 17, 7304, 21, 4971, 587, 558, 576, 15954, 8732, 5159, 1128, 14379, 14432, 8901, 5052, 12204, 2]
 
-// Module 15954 (UserProfileEditFormTabs)
+// Module 15955 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1128 */;
 import ChatInputUtils from "ChatInputUtils" /* 5159 */;
 import Constants from "Constants" /* 7304 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8732 */;
-import reactDefault from "react" /* 15953 */;
+import reactDefault from "react" /* 15954 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp5;
-const UserProfileWidgetsBoardDefault = tmp5(14378);
+const UserProfileWidgetsBoardDefault = tmp5(14379);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;

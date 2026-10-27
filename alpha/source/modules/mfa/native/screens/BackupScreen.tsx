@@ -1,12 +1,12 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17043
+// Function ID: 17044
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 17040, 5234, 1128, 558, 576, 7037, 17041, 17035, 17036, 2]
+// Dependencies: [5, 32, 19, 21, 17041, 5234, 1128, 558, 576, 7037, 17042, 17036, 17037, 2]
 
-// Module 17042 (BackupScreen)
+// Module 17043 (BackupScreen)
 import intl6 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5234 */;
-import MFA from "MFA" /* 17040 */;
+import MFA from "MFA" /* 17041 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
             }
             message2(false);
             c7 = 3;
-            return { value: "IconComponent", done: "+352" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           if (0 === c5) {
@@ -423,7 +423,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+352" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -479,7 +479,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
           }
           message2(false);
           c7 = 3;
-          return { value: "IconComponent", done: "+352" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         if (0 === c5) {

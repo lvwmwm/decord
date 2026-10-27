@@ -1,10 +1,10 @@
 // Module ID: 15524
 // Function ID: 15525
-// Dependencies: []
-// Exports: shouldPolyfill
+// Dependencies: [15525, 15526]
 
 // Module 15524
+const require = globalThis.__r;
 
-export const shouldPolyfill = function shouldPolyfill() {
-  return !("supportedValuesOf" in Intl);
-};
+
+export const shouldPolyfill = require("module_15525").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

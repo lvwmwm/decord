@@ -16,19 +16,19 @@ export const conjureSettingSubmitValue = function conjureSettingSubmitValue(foun
       return num;
     } else {
       const _String2 = String;
-      const str5 = String(num);
-      const str6 = str5.trim();
-      if ("" === str6) {
+      const str6 = String(num);
+      const str7 = str6.trim();
+      if ("" === str7) {
         return null;
       } else {
         const _Number = Number;
-        const NumberResult = Number(str6.replace(",", "."));
+        const NumberResult = Number(str7.replace(",", "."));
         const _Number2 = Number;
-        let tmp5;
+        let tmp4;
         if (Number.isFinite(NumberResult)) {
-          tmp5 = NumberResult;
+          tmp4 = NumberResult;
         }
-        return tmp5;
+        return tmp4;
       }
     }
   } else if (true === found.multiple) {
@@ -40,11 +40,18 @@ export const conjureSettingSubmitValue = function conjureSettingSubmitValue(foun
       const parts = str.split(/[\s,]+/);
       found = parts.filter((item) => "" !== item);
     }
-    let tmp3 = null;
-    if (0 !== found.length) {
-      tmp3 = found;
+    if (0 === found.length) {
+      let items = null;
+      if ("game" === found.type) {
+        const _Array2 = Array;
+        items = null;
+        if (Array.isArray(num)) {
+          items = [];
+        }
+      }
+      found = items;
     }
-    return tmp3;
+    return found;
   } else {
     let tmp;
     if (typeof num !== "string") {
