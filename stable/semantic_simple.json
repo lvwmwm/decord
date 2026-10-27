@@ -179,17 +179,71 @@
         "onyx": "#d22d391f",
         "dark": "#d22d391f"
     },
-    "BADGE_BACKGROUND_BRAND": {
-        "ash": "#5865f2",
-        "light": "#5865f2",
-        "onyx": "#5865f2",
-        "dark": "#5865f2"
+    "BADGE_COMMON_BACKGROUND": {
+        "ash": "#97979f3d",
+        "light": "#97979f3d",
+        "onyx": "#97979f3d",
+        "dark": "#97979f3d"
     },
-    "BADGE_BACKGROUND_DEFAULT": {
-        "ash": "#97979f29",
-        "light": "#97979f29",
-        "onyx": "#97979f33",
-        "dark": "#97979f29"
+    "BADGE_COMMON_BORDER": {
+        "ash": "#81828a",
+        "light": "#81828a",
+        "onyx": "#81828a",
+        "dark": "#81828a"
+    },
+    "BADGE_COMMON_TEXT": {
+        "ash": "#c9cace",
+        "light": "#5f606a",
+        "onyx": "#c9cace",
+        "dark": "#c9cace"
+    },
+    "BADGE_EPIC_BACKGROUND": {
+        "ash": "#a056f23d",
+        "light": "#a056f23d",
+        "onyx": "#a056f23d",
+        "dark": "#a056f23d"
+    },
+    "BADGE_EPIC_BORDER_GRADIENT_START": {
+        "ash": "#ff4cd2",
+        "light": "#ff4cd2",
+        "onyx": "#ff4cd2",
+        "dark": "#ff4cd2"
+    },
+    "BADGE_EPIC_TEXT": {
+        "ash": "#ca9ef9",
+        "light": "#612caf",
+        "onyx": "#ca9ef9",
+        "dark": "#ca9ef9"
+    },
+    "BADGE_EXPRESSIVE_BACKGROUND": {
+        "ash": "#ffffff",
+        "light": "#5865f2",
+        "onyx": "#ffffff",
+        "dark": "#ffffff"
+    },
+    "BADGE_EXPRESSIVE_TEXT": {
+        "ash": "#2f3035",
+        "light": "#ffffff",
+        "onyx": "#2f3035",
+        "dark": "#2f3035"
+    },
+    "BADGE_MYTHIC_BACKGROUND": {
+        "ash": "#fe6e0d3d",
+        "light": "#fe6e0d3d",
+        "onyx": "#fe6e0d3d",
+        "dark": "#fe6e0d3d"
+    },
+    "BADGE_MYTHIC_BORDER_GRADIENT_START": {
+        "ash": "#ffe047",
+        "light": "#ffe047",
+        "onyx": "#ffe047",
+        "dark": "#ffe047"
+    },
+    "BADGE_MYTHIC_TEXT": {
+        "ash": "#fe9242",
+        "light": "#f25e0c",
+        "onyx": "#fe9242",
+        "dark": "#fe9242"
     },
     "BADGE_NOTIFICATION_BACKGROUND": {
         "ash": "#d22d39",
@@ -197,13 +251,43 @@
         "onyx": "#d22d39",
         "dark": "#d22d39"
     },
-    "BADGE_TEXT_BRAND": {
+    "BADGE_PRIMARY_BACKGROUND": {
+        "ash": "#5865f2",
+        "light": "#5865f2",
+        "onyx": "#5865f2",
+        "dark": "#5865f2"
+    },
+    "BADGE_PRIMARY_TEXT": {
         "ash": "#ffffff",
         "light": "#ffffff",
         "onyx": "#ffffff",
         "dark": "#ffffff"
     },
-    "BADGE_TEXT_DEFAULT": {
+    "BADGE_RARE_BACKGROUND": {
+        "ash": "#5865f23d",
+        "light": "#5865f23d",
+        "onyx": "#5865f23d",
+        "dark": "#5865f23d"
+    },
+    "BADGE_RARE_BORDER_GRADIENT_START": {
+        "ash": "#5865f2",
+        "light": "#5865f2",
+        "onyx": "#5865f2",
+        "dark": "#5865f2"
+    },
+    "BADGE_RARE_TEXT": {
+        "ash": "#a0a9fa",
+        "light": "#2d35ad",
+        "onyx": "#a0a9fa",
+        "dark": "#a0a9fa"
+    },
+    "BADGE_SECONDARY_BACKGROUND": {
+        "ash": "#97979f29",
+        "light": "#97979f29",
+        "onyx": "#97979f33",
+        "dark": "#97979f29"
+    },
+    "BADGE_SECONDARY_TEXT": {
         "ash": "#ffffff",
         "light": "#28282d",
         "onyx": "#dcdcdf",
