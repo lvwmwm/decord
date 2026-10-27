@@ -1,12 +1,12 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 7025
+// Function ID: 7026
 // Name: FastestListLogger
-// Dependencies: [3, 1255, 2]
+// Dependencies: [3, 1257, 2]
 // Exports: logFastestListError
 
-// Module 6748 (FastestListLogger)
+// Module 7025 (FastestListLogger)
 import LoggerDefault from "Logger" /* 3 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import size from "module_2" /* 2 */;
 
 const logger = new LoggerDefault("FastestList");

@@ -1,13 +1,13 @@
-// Module ID: 9727
-// Function ID: 9728
+// Module ID: 10030
+// Function ID: 10031
 // Name: useExpressionPickerTabData
-// Dependencies: [19, 1241, 558, 576, 1126, 2]
+// Dependencies: [19, 1243, 558, 576, 1128, 2]
 
-// Module 9727 (useExpressionPickerTabData)
+// Module 10030 (useExpressionPickerTabData)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
+import intl4 from "intl" /* 1128 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,11 +48,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpress
     let tmp11;
     const obj2 = { EMOJI: obj3, GIF: obj4, STICKER: obj5 };
     obj3 = { label: intl.string(intl4.t.Xu3wE3), viewType: constants.EMOJI, show: expressionPickerTabs.includes(constants.EMOJI), order: _false.indexOf(constants.EMOJI) };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     obj4 = { label: intl2.string(intl4.t["6gUTsS"]), viewType: constants.GIF, show: expressionPickerTabs.includes(constants.GIF), order: _false.indexOf(constants.GIF) };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     obj5 = { label: intl3.string(intl4.t.nf1s3u), viewType: constants.STICKER, show: expressionPickerTabs.includes(constants.STICKER), order: _false.indexOf(constants.STICKER) };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       class I {

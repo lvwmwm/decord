@@ -1,22 +1,24 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 17599
+// Function ID: 17600
 // Name: ICYMIContext
-// Dependencies: [19, 21, 558, 576, 1497, 587, 2]
+// Dependencies: [19, 21, 558, 576, 1499, 587, 2]
 
-// Module 16919 (ICYMIContext)
-import react from "react" /* 19 */;
+// Module 17599 (ICYMIContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const createContext = react.createContext;
+let c3;
+let createContext;
+({ useMemo: c3, createContext } = react);
 const jsx = Fragment.jsx;
 const context = createContext({ width: 0, margin: 0, inset: 0 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIContextConstructor() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIContextConstructor() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -36,17 +38,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMICont
   const PX_16 = nativeDefault.space.PX_16;
   return { width: bound, margin: PX_16, inset: PX_16 + 38 };
 });
-let closure_5 = tmp3;
+let closure_6 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIContextProvider(children) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIContextProvider(children) {
   let inset;
   let margin;
   let width;
   const obj = react2;
   const cResult = obj.c(7);
   children = children.children;
-  ({ width, margin, inset } = closure_5());
-  closure_5();
+  ({ width, margin, inset } = closure_6());
+  closure_6();
   if (cResult[0] === inset) {
     if (cResult[1] === margin) {
       let tmp3;
@@ -75,11 +77,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIContext
   tmp3 = obj3;
 }) : (function ICYMIContextProvider(children) {
   children = children.children;
-  const tmp = closure_5();
-  return <context.Provider value={{ width: tmp.width, margin: tmp.margin, inset: tmp.inset }}>{children}</context.Provider>;
+  const tmp = closure_6();
+  const width = tmp.width;
+  const margin = tmp.margin;
+  const inset = tmp.inset;
+  const items = [width, margin, inset];
+  return <context.Provider value={_false(() => ({ width, margin, inset }), items)}>{children}</context.Provider>;
 });
 const result = size.fileFinishedImporting("modules/icymi/native/ICYMIContext.tsx");
 
 export const ICYMIContext = context;
-export const useICYMIContextConstructor = tmp3;
-export const ICYMIContextProvider = tmp4;
+export const useICYMIContextConstructor = tmp4;
+export const ICYMIContextProvider = tmp5;

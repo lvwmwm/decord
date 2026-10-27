@@ -1,19 +1,19 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16972
+// Function ID: 16973
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 5932, 7988, 1085, 21, 558, 576, 16274, 1126, 2128, 8824, 1503, 15139, 15142, 10664, 15097, 14970, 2]
+// Dependencies: [19, 6188, 8260, 1087, 21, 558, 576, 16965, 1128, 2131, 9101, 1505, 15901, 15904, 11084, 15859, 15732, 2]
 
-// Module 16281 (DataAndPrivacyScreen)
-import intl8 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8824 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
-import SettingLayoutDefault from "SettingLayout" /* 14970 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15097 */;
+// Module 16972 (DataAndPrivacyScreen)
+import intl8 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9101 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15859 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 5932 */;
-import Constants from "Constants" /* 1085 */;
+import ConsentStore from "ConsentStore" /* 6188 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -78,31 +78,31 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDat
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { settings: items, subLabel: format(prop, obj4) };
     items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     format = intl.format;
     obj4 = { helpdeskArticle: obj5.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
-    prop = tmp(1126).t["igTSG/"];
+    prop = tmp(1128).t["igTSG/"];
     obj5 = HelpdeskUtilsDefault;
     const obj6 = { settings: items1, subLabel: format2(prop1, obj7) };
     items1 = [MobileUserSettings.USE_DATA_TO_CUSTOMIZE_DISCORD];
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     format2 = intl2.format;
     obj7 = { helpdeskArticle: obj8.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
-    prop1 = tmp(1126).t["eQL/Mr"];
+    prop1 = tmp(1128).t["eQL/Mr"];
     obj8 = HelpdeskUtilsDefault;
     const obj9 = { settings: items2, subLabel: format3(cf9mvV, obj10) };
     items2 = [MobileUserSettings.USE_DATA_FOR_QUESTS];
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     format3 = intl3.format;
     obj10 = { helpdeskArticle: obj11.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    cf9mvV = tmp(1126).t.cf9mvV;
+    cf9mvV = tmp(1128).t.cf9mvV;
     obj11 = HelpdeskUtilsDefault;
     const obj12 = { settings: items3, subLabel: format4(prop2, obj13) };
     items3 = [MobileUserSettings.USE_DATA_FOR_QUESTS_3P];
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     format4 = intl4.format;
     obj13 = { helpdeskArticle: obj14.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    prop2 = tmp(1126).t["2QFDU/"];
+    prop2 = tmp(1128).t["2QFDU/"];
     cResult[0] = obj3;
     cResult[1] = obj6;
     cResult[2] = obj9;
@@ -125,12 +125,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDat
   const items4 = [tmp5, tmp6, tmp7, tmp8, ...pinotDataPrivacySections];
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj15 = { label: intl5.string(require("intl").t.BG7QsQ), settings: items5, subLabel: format5(P3kNfr, obj16) };
-    intl5 = tmp(1126).intl;
+    intl5 = tmp(1128).intl;
     items5 = [MobileUserSettings.REQUEST_YOUR_DATA];
-    const intl6 = tmp(1126).intl;
+    const intl6 = tmp(1128).intl;
     format5 = intl6.format;
     obj16 = { helpdeskArticle: obj17.getArticleURL(constants.GDPR_REQUEST_DATA) };
-    P3kNfr = tmp(1126).t.P3kNfr;
+    P3kNfr = tmp(1128).t.P3kNfr;
     cResult[7] = obj15;
     tmp16 = obj15;
     obj17 = HelpdeskUtilsDefault;
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDat
     tmp21 = cResult[8];
   }
   if (cResult[9] !== arg0) {
-    const intl7 = tmp(1126).intl;
+    const intl7 = tmp(1128).intl;
     const obj18 = {
       onClick() {
           return navigation.navigate(metroImportDefault.CONTENT_AND_SOCIAL);
@@ -293,7 +293,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let tmp8;
   let obj = stackNavigation(576);
   const cResult = obj.c(8);
-  let obj2 = stackNavigation(1503);
+  let obj2 = stackNavigation(1505);
   stackNavigation = obj2.useStackNavigation();
   const tmp6 = closure_11(stackNavigation);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { screen: stackNavigation(15097).SettingsScreen.DATA_AND_PRIVACY };
+      const obj3 = { screen: stackNavigation(15859).SettingsScreen.DATA_AND_PRIVACY };
       const tmp20 = SettingsScreenNoticesDefault;
       const tmp21 = closure_8(tmp20, obj3);
       cResult[5] = tmp21;
@@ -347,24 +347,24 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   }
   const obj6 = { sections: items2 };
   items2 = [...tmp6];
-  const createList = tmp2(10664).createList;
-  const obj7 = { label: intl.string(stackNavigation(1126).t.Me5lVK), settings: items3, subLabel: format(prop, obj8) };
-  stackNavigation(10664);
-  intl = tmp2(1126).intl;
+  const createList = tmp2(11084).createList;
+  const obj7 = { label: intl.string(stackNavigation(1128).t.Me5lVK), settings: items3, subLabel: format(prop, obj8) };
+  stackNavigation(11084);
+  intl = tmp2(1128).intl;
   items3 = [, ];
   ({ DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES: arr3[0], ENCRYPTION_VERIFIED_DEVICES: arr3[1] } = MobileUserSettings);
-  const intl2 = tmp2(1126).intl;
+  const intl2 = tmp2(1128).intl;
   format = intl2.format;
   obj8 = { helpArticle: tmp2Result2.getSecureFramesHelpdeskArticle() };
-  prop = tmp2(1126).t["/6sFWa"];
+  prop = tmp2(1128).t["/6sFWa"];
   const items4 = [obj7];
-  tmp2Result2 = stackNavigation(8824);
-  const obj9 = { label: intl3.string(stackNavigation(1126).t["+uHbqE"]), settings: items5, subLabel: intl4.format(stackNavigation(1126).t.R5N31P, obj10) };
+  tmp2Result2 = stackNavigation(9101);
+  const obj9 = { label: intl3.string(stackNavigation(1128).t["+uHbqE"]), settings: items5, subLabel: intl4.format(stackNavigation(1128).t.R5N31P, obj10) };
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, items4, tmp12);
-  intl3 = tmp2(1126).intl;
+  intl3 = tmp2(1128).intl;
   items5 = [, ];
   ({ SAFETY_TERMS_OF_SERVICE: arr5[0], SAFETY_PRIVACY_POLICY: arr5[1] } = MobileUserSettings);
-  intl4 = tmp2(1126).intl;
+  intl4 = tmp2(1128).intl;
   const items6 = [obj9];
   obj10 = { onClick };
   HermesBuiltin.arraySpread(items2, items6, arraySpreadResult);
@@ -378,7 +378,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let fetchedConsents;
   let items1;
   let stackNavigation;
-  let obj = stackNavigation(1503);
+  let obj = stackNavigation(1505);
   stackNavigation = obj.useStackNavigation();
   const tmp2 = closure_11(stackNavigation);
   importDefault = tmp2;
@@ -430,7 +430,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     HermesBuiltin.arraySpread(items, items4, arraySpreadResult);
     return createList(obj);
   }, items);
-  let obj3 = { screen: stackNavigation(15097).SettingsScreen.DATA_AND_PRIVACY };
+  let obj3 = { screen: stackNavigation(15859).SettingsScreen.DATA_AND_PRIVACY };
   const tmp5 = SettingsScreenNoticesDefault;
   items1 = [closure_8(tmp5, obj3), closure_8(SettingLayoutDefault, { node: memo })];
   return closure_10(closure_9, obj2);

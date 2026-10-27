@@ -1,16 +1,16 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 10018
+// Function ID: 10019
 // Name: MediaPostMultipleThumbnailActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5088, 1126, 1200, 5379, 6307, 6840, 2]
+// Dependencies: [19, 17, 2065, 21, 5191, 587, 558, 576, 1633, 5187, 1128, 1202, 5479, 6584, 7118, 2]
 
-// Module 9715 (MediaPostMultipleThumbnailActionSheet)
+// Module 10018 (MediaPostMultipleThumbnailActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,11 +71,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.ews2pj) };
-      const Text = tmp(5088).Text;
-      intl = tmp(1126).intl;
+      const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1128).t.ews2pj) };
+      const Text = tmp(5187).Text;
+      intl = tmp(1128).intl;
       const tmp12 = closure_5(Text, obj3);
-      const tmp13 = closure_5(markAsDismissed(1200).Checkbox, { selected: true });
+      const tmp13 = closure_5(markAsDismissed(1202).Checkbox, { selected: true });
       cResult[7] = tmp12;
       cResult[8] = tmp13;
       tmp10 = tmp13;
@@ -110,8 +110,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       const _Symbol2 = Symbol;
       const title = tmp4.title;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
-        const stringResult = intl2.string(markAsDismissed(1126).t.WJisip);
+        const intl2 = tmp(1128).intl;
+        const stringResult = intl2.string(markAsDismissed(1128).t.WJisip);
         cResult[14] = stringResult;
         tmp22 = stringResult;
       } else {
@@ -119,7 +119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       if (cResult[15] !== tmp4.title) {
         const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: title, children: tmp22 };
-        const tmp26 = closure_5(markAsDismissed(5088).Text, obj5);
+        const tmp26 = closure_5(markAsDismissed(5187).Text, obj5);
         cResult[15] = tmp4.title;
         cResult[16] = tmp26;
         tmp24 = tmp26;
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       const _Symbol3 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp29 = closure_5(markAsDismissed(1200).Spacer, { size: 12 });
+        const tmp29 = closure_5(markAsDismissed(1202).Spacer, { size: 12 });
         cResult[17] = tmp29;
         tmp27 = tmp29;
       } else {
@@ -137,8 +137,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       const _Symbol4 = Symbol;
       const description = tmp4.description;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1126).intl;
-        const stringResult1 = intl3.string(markAsDismissed(1126).t.X6ZH6d);
+        const intl3 = tmp(1128).intl;
+        const stringResult1 = intl3.string(markAsDismissed(1128).t.X6ZH6d);
         cResult[18] = stringResult1;
         tmp30 = stringResult1;
       } else {
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       if (cResult[19] !== tmp4.description) {
         const obj6 = { variant: "text-md/normal", color: "text-default", style: description, children: tmp30 };
-        const tmp34 = closure_5(markAsDismissed(5088).Text, obj6);
+        const tmp34 = closure_5(markAsDismissed(5187).Text, obj6);
         cResult[19] = tmp4.description;
         cResult[20] = tmp34;
         tmp32 = tmp34;
@@ -155,7 +155,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       const _Symbol5 = Symbol;
       if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp37 = closure_5(markAsDismissed(1200).Spacer, { size: 48 });
+        const tmp37 = closure_5(markAsDismissed(1202).Spacer, { size: 48 });
         cResult[21] = tmp37;
         tmp35 = tmp37;
       } else {
@@ -163,8 +163,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       const _Symbol6 = Symbol;
       if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1126).intl;
-        const stringResult2 = intl4.string(markAsDismissed(1126).t["NX+WJN"]);
+        const intl4 = tmp(1128).intl;
+        const stringResult2 = intl4.string(markAsDismissed(1128).t["NX+WJN"]);
         cResult[22] = stringResult2;
         tmp38 = stringResult2;
       } else {
@@ -178,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
                   return markAsDismissed(ContentDismissActionType.UNKNOWN);
                 }
         };
-        const tmp42 = closure_5(markAsDismissed(5379).Button, obj7);
+        const tmp42 = closure_5(markAsDismissed(5479).Button, obj7);
         cResult[23] = markAsDismissed;
         cResult[24] = tmp42;
         tmp40 = tmp42;
@@ -206,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
                   return tmp50;
                 }
                 const obj8 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp46 };
-                const tmp52 = closure_5(markAsDismissed(6840).BottomSheet, obj8);
+                const tmp52 = closure_5(markAsDismissed(7118).BottomSheet, obj8);
                 cResult[34] = tmp5;
                 cResult[35] = tmp46;
                 cResult[36] = tmp52;
@@ -224,7 +224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       const obj10 = { contentContainerStyle: tmp7, children: items1 };
       items1 = [tmp18, tmp24, tmp27, tmp32, tmp35, tmp40];
-      const tmp45 = closure_6(markAsDismissed(6307).BottomSheetScrollView, obj10);
+      const tmp45 = closure_6(markAsDismissed(6584).BottomSheetScrollView, obj10);
       cResult[25] = tmp24;
       cResult[26] = tmp32;
       cResult[27] = tmp40;
@@ -268,36 +268,36 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  BottomSheet = markAsDismissed(6840).BottomSheet;
+  BottomSheet = markAsDismissed(7118).BottomSheet;
   obj3 = { contentContainerStyle: items, children: items2 };
   items = [tmp.contentContainer, { paddingBottom: bottom }];
   const obj4 = { style: tmp.topContainer, children: closure_6(View, obj5) };
   obj5 = { style: tmp.setAsThumbnailContainer, children: items1 };
-  BottomSheetScrollView = markAsDismissed(6307).BottomSheetScrollView;
-  const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.ews2pj) };
-  const Text = markAsDismissed(5088).Text;
-  intl = markAsDismissed(1126).intl;
-  items1 = [closure_5(Text, obj6), closure_5(markAsDismissed(1200).Checkbox, { selected: true })];
+  BottomSheetScrollView = markAsDismissed(6584).BottomSheetScrollView;
+  const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1128).t.ews2pj) };
+  const Text = markAsDismissed(5187).Text;
+  intl = markAsDismissed(1128).intl;
+  items1 = [closure_5(Text, obj6), closure_5(markAsDismissed(1202).Checkbox, { selected: true })];
   items2 = [closure_5(View, obj4), , , , , ];
-  const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl2.string(markAsDismissed(1126).t.WJisip) };
-  const Text2 = markAsDismissed(5088).Text;
-  intl2 = markAsDismissed(1126).intl;
+  const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl2.string(markAsDismissed(1128).t.WJisip) };
+  const Text2 = markAsDismissed(5187).Text;
+  intl2 = markAsDismissed(1128).intl;
   items2[1] = closure_5(Text2, obj7);
-  items2[2] = closure_5(markAsDismissed(1200).Spacer, { size: 12 });
-  const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl3.string(markAsDismissed(1126).t.X6ZH6d) };
-  const Text3 = markAsDismissed(5088).Text;
-  intl3 = markAsDismissed(1126).intl;
+  items2[2] = closure_5(markAsDismissed(1202).Spacer, { size: 12 });
+  const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl3.string(markAsDismissed(1128).t.X6ZH6d) };
+  const Text3 = markAsDismissed(5187).Text;
+  intl3 = markAsDismissed(1128).intl;
   items2[3] = closure_5(Text3, obj8);
-  items2[4] = closure_5(markAsDismissed(1200).Spacer, { size: 48 });
+  items2[4] = closure_5(markAsDismissed(1202).Spacer, { size: 48 });
   const obj9 = {
-    text: intl4.string(markAsDismissed(1126).t["NX+WJN"]),
+    text: intl4.string(markAsDismissed(1128).t["NX+WJN"]),
     grow: true,
     onPress() {
       return markAsDismissed(ContentDismissActionType.UNKNOWN);
     }
   };
-  const Button = markAsDismissed(5379).Button;
-  intl4 = markAsDismissed(1126).intl;
+  const Button = markAsDismissed(5479).Button;
+  intl4 = markAsDismissed(1128).intl;
   items2[5] = closure_5(Button, obj9);
   return closure_5(BottomSheet, obj);
 });

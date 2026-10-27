@@ -1,14 +1,14 @@
-// Module ID: 10648
-// Function ID: 10649
+// Module ID: 10973
+// Function ID: 10974
 // Name: ActivityLauncherStore
-// Dependencies: [10649, 5759, 1085, 2060, 584, 504, 2]
+// Dependencies: [10974, 6015, 1087, 2063, 584, 504, 2]
 
-// Module 10648 (ActivityLauncherStore)
+// Module 10973 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LocalActivityStore from "LocalActivityStore" /* 10649 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
-import Constants from "Constants" /* 1085 */;
+import LocalActivityStore from "LocalActivityStore" /* 10974 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f105782 = () => {
+  const f107239 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -48,8 +48,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self3 = this;
       const self4 = this;
-      const timeout = new applicationId(2060).Timeout();
-      timeout.start(tmp10, f105782);
+      const timeout = new applicationId(2063).Timeout();
+      timeout.start(tmp10, f107239);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -63,8 +63,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self = this;
       const self2 = this;
-      const timeout1 = new applicationId(2060).Timeout();
-      timeout1.start(num, f105782);
+      const timeout1 = new applicationId(2063).Timeout();
+      timeout1.start(num, f107239);
       closure_8[applicationId] = timeout1;
     }
   }
@@ -153,6 +153,9 @@ obj = {
   },
   ACTIVITY_JOIN_LOADING(type) {
     return handleActivityStateChanged(hasOwnProperty.LOADING, metroRequire.JOIN, type);
+  },
+  ACTIVITY_JOIN_NAVIGATION_COMPLETE(type) {
+    return handleActivityStateChanged(hasOwnProperty.COMPLETE, metroRequire.JOIN, type);
   },
   ACTIVITY_JOIN_FAILED(type) {
     return handleActivityStateChanged(hasOwnProperty.FAILED, metroRequire.JOIN, type);

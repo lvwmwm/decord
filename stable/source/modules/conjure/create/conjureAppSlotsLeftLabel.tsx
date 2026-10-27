@@ -1,12 +1,12 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 11626
+// Function ID: 11627
 // Name: conjureAppSlotsLeftLabel
-// Dependencies: [1126, 3849, 2]
+// Dependencies: [1128, 3883, 2]
 // Exports: conjureAppSlotsLeftLabel
 
-// Module 17075 (conjureAppSlotsLeftLabel)
-import intl3 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
+// Module 11626 (conjureAppSlotsLeftLabel)
+import intl3 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/create/conjureAppSlotsLeftLabel.tsx");
@@ -15,11 +15,11 @@ export const conjureAppSlotsLeftLabel = function conjureAppSlotsLeftLabel(count)
   let stringResult;
   if (0 === count) {
     const intl2 = intl3.intl;
-    stringResult = intl2.string(_modDef3849.s28pGG);
+    stringResult = intl2.string(_modDef3883.s28pGG);
   } else {
     const intl = intl3.intl;
     const obj = { count };
-    stringResult = intl.formatToPlainString(_modDef3849.Wy5aK4, obj);
+    stringResult = intl.formatToPlainString(_modDef3883.Wy5aK4, obj);
   }
   return stringResult;
 };

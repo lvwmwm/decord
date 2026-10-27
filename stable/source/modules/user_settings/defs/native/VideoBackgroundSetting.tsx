@@ -1,20 +1,20 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 17023
+// Function ID: 17024
 // Name: VideoBackgroundSetting
-// Dependencies: [7988, 1085, 558, 576, 5258, 11098, 5253, 5256, 10664, 1126, 11078, 2]
+// Dependencies: [8260, 1087, 558, 576, 5358, 11484, 5353, 5356, 11084, 1128, 11464, 2]
 
-// Module 16332 (VideoBackgroundSetting)
+// Module 17023 (VideoBackgroundSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5253 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5256 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5258 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11078 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11098 */;
-import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1128 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5353 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5356 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5358 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11464 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11484 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let c3;

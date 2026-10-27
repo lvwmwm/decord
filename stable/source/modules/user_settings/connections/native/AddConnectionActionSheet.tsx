@@ -1,18 +1,18 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 16006
+// Function ID: 16007
 // Name: AddConnectionActionSheet
-// Dependencies: [1085, 2026, 21, 5092, 1200, 558, 576, 5031, 1631, 7220, 6858, 6840, 6839, 1126, 6307, 6180, 5056, 9200, 1415, 4969, 6855, 6852, 6879, 2]
+// Dependencies: [1087, 2029, 21, 5191, 1202, 558, 576, 5127, 1633, 7491, 7134, 7118, 7117, 1128, 6584, 6457, 5155, 9507, 1417, 5065, 7131, 7130, 7155, 2]
 
-// Module 15244 (AddConnectionActionSheet)
-import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2026 */;
-import shared from "shared" /* 4969 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import TableRow2 from "TableRow" /* 6180 */;
+// Module 16006 (AddConnectionActionSheet)
+import Constants from "Constants" /* 1087 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2029 */;
+import shared from "shared" /* 5065 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import TableRow2 from "TableRow" /* 6457 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import native_mod from "native" /* 1200 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import native_mod from "native" /* 1202 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,10 +141,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
         found(found1[17])(obj2);
       },
       icon: hasOwnProperty(Icon, obj2),
-      trailing: hasOwnProperty(tmp2(6180).TableRow.Arrow, {})
+      trailing: hasOwnProperty(tmp2(6457).TableRow.Arrow, {})
     };
-    Icon = tmp2(1200).Icon;
-    const makeSource = tmp2(1415).makeSource;
+    Icon = tmp2(1202).Icon;
+    const makeSource = tmp2(1417).makeSource;
     AvatarUtils;
     const tmp2Result2 = shared;
     obj2 = { source: makeSource(tmp2Result2.isThemeDark(closure_0) ? icon.darkPNG : icon.lightPNG), disableColor: true };
@@ -255,10 +255,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
           found(found1[17])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(6180).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6457).TableRow.Arrow, {})
       };
-      Icon = tmp2(1200).Icon;
-      const makeSource = tmp2(1415).makeSource;
+      Icon = tmp2(1202).Icon;
+      const makeSource = tmp2(1417).makeSource;
       AvatarUtils;
       const tmp2Result2 = shared;
       obj2 = { source: makeSource(tmp2Result2.isThemeDark(closure_0) ? icon.darkPNG : icon.lightPNG), disableColor: true };
@@ -278,16 +278,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   let obj = startAuthorization(576);
   const cResult = obj.c(17);
   ({ application, start, end } = arg0);
-  const tmp4 = analyticsLocations(6855)(application);
+  const tmp4 = analyticsLocations(7131)(application);
   startAuthorization = tmp4.startAuthorization;
   const canStartAuthorization = tmp4.canStartAuthorization;
-  const tmp5 = analyticsLocations(6852);
-  analyticsLocations = tmp5(analyticsLocations(6879).ACTION_SHEET).analyticsLocations;
+  const tmp5 = analyticsLocations(7130);
+  analyticsLocations = tmp5(analyticsLocations(7155).ACTION_SHEET).analyticsLocations;
   const tmp6 = closure_7();
   if (cResult[0] !== application) {
     const getIconSource = application.getIconSource;
-    const tmpResult = startAuthorization(1200);
-    const iconSource = getIconSource(tmpResult.getIconSize(tmp(1200).IconSizes.LARGE));
+    const tmpResult = startAuthorization(1202);
+    const iconSource = getIconSource(tmpResult.getIconSize(tmp(1202).IconSizes.LARGE));
     cResult[0] = application;
     cResult[1] = iconSource;
     tmp7 = iconSource;
@@ -307,7 +307,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_5(startAuthorization(6180).TableRow.Arrow, {});
+        const tmp16 = closure_5(startAuthorization(6457).TableRow.Arrow, {});
         cResult[8] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -331,7 +331,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
         }
       }
       let obj2 = { start, end, label: application.name, onPress: tmp9, icon: tmp10, trailing: tmp14, disabled: !canStartAuthorization };
-      const tmp20 = closure_5(startAuthorization(6180).TableRow, obj2, application.id);
+      const tmp20 = closure_5(startAuthorization(6457).TableRow, obj2, application.id);
       cResult[9] = application.id;
       cResult[10] = application.name;
       cResult[11] = end;
@@ -345,7 +345,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
     let tmp11 = null;
     if (null != tmp7) {
       const obj3 = { source: tmp7, style: tmp6.icon, disableColor: true };
-      tmp11 = closure_5(tmp(1200).Icon, obj3);
+      tmp11 = closure_5(tmp(1202).Icon, obj3);
     }
     cResult[5] = tmp7;
     cResult[6] = tmp6;
@@ -373,10 +373,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(6855)(application));
-  const tmp2 = analyticsLocations(6855)(application);
-  const tmp3 = analyticsLocations(6852);
-  analyticsLocations = tmp3(analyticsLocations(6879).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7131)(application));
+  const tmp2 = analyticsLocations(7131)(application);
+  const tmp3 = analyticsLocations(7130);
+  analyticsLocations = tmp3(analyticsLocations(7155).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");
@@ -399,7 +399,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   const TableRow = require("TableRow").TableRow;
   if (null != iconSource) {
     const obj3 = { source: iconSource, style: tmp4.icon, disableColor: true };
-    tmp7Result = tmp7(tmp5(1200).Icon, obj3);
+    tmp7Result = tmp7(tmp5(1202).Icon, obj3);
   }
   return closure_5(TableRow, obj2, application.id);
 });

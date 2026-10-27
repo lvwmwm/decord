@@ -1,26 +1,24 @@
-// Module ID: 9351
-// Function ID: 9352
+// Module ID: 9655
+// Function ID: 9656
 // Name: ConversationNavigatorUtils
-// Dependencies: [4977, 9333, 5103, 2]
+// Dependencies: [5073, 5202, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 9351 (ConversationNavigatorUtils)
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import transitionToChannel from "transitionToChannel" /* 5103 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9333 */;
+// Module 9655 (ConversationNavigatorUtils)
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
+let tmp;
+const transitionToChannel = tmp(5202);
+const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 
-export const closeConversationsAndJumpToMessage = function closeConversationsAndJumpToMessage(channelId, messageId, conversationId) {
+export const closeConversationsAndJumpToMessage = function closeConversationsAndJumpToMessage(channelId, messageId) {
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.goBack();
   }
-  const tmpResult = ConversationsActionCreators;
-  const result = tmpResult.setSelectedConversation(channelId, conversationId, { shouldJump: false });
-  const tmpResult2 = transitionToChannel;
-  tmpResult2.transitionToMessage(channelId, messageId, { navigationReplace: true });
+  const tmpResult = transitionToChannel;
+  tmpResult.transitionToMessage(channelId, messageId, { navigationReplace: true });
 };
 export const ConversationNavigatorScreens = { LIST: "conversation_list", FOCUS: "conversation_focus" };

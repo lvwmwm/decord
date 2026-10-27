@@ -1,20 +1,20 @@
-// Module ID: 10464
-// Function ID: 10465
+// Module ID: 10787
+// Function ID: 10788
 // Name: MuteSettingsActionSheet
-// Dependencies: [19, 2065, 2087, 4760, 1390, 1085, 21, 558, 576, 5088, 1126, 10398, 5056, 1200, 10465, 5421, 6265, 6180, 10466, 6839, 6899, 2]
+// Dependencies: [19, 2068, 2090, 4855, 1392, 1087, 21, 558, 576, 5187, 1128, 10721, 5155, 1202, 10788, 5521, 6542, 6457, 10789, 7117, 7175, 2]
 
-// Module 10464 (MuteSettingsActionSheet)
+// Module 10787 (MuteSettingsActionSheet)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10398 */;
+import Constants from "Constants" /* 1087 */;
+import intl6 from "intl" /* 1128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10721 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore_mod from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserStore from "UserStore" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore_mod from "GuildStore" /* 2090 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,8 +44,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.t0mEt2) };
-      const Text3 = tmp(5088).Text;
-      intl5 = tmp(1126).intl;
+      const Text3 = tmp(5187).Text;
+      intl5 = tmp(1128).intl;
       const tmp23 = React4(Text3, obj2);
       cResult[0] = tmp23;
       first = tmp23;
@@ -58,8 +58,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl4.format(intl6.t.O34r15, obj4) };
-      const Text2 = tmp(5088).Text;
-      intl4 = tmp(1126).intl;
+      const Text2 = tmp(5187).Text;
+      intl4 = tmp(1128).intl;
       obj4 = {
         mutedHook(children, arg1) {
               const obj = { variant: "text-sm/medium", color: "text-feedback-critical", children };
@@ -78,8 +78,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { variant: "text-sm/medium", color: "text-default", children: intl3.format(intl6.t.nRwUIL, obj6) };
-      const Text = tmp(5088).Text;
-      intl3 = tmp(1126).intl;
+      const Text = tmp(5187).Text;
+      intl3 = tmp(1128).intl;
       obj6 = {
         notificationHook(children, arg1) {
               const obj = { variant: "text-sm/medium", color: "text-feedback-warning", children };
@@ -99,11 +99,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     if (cResult[3] !== guildMessageNotifications) {
       let stringResult;
       if (guildMessageNotifications === UserNotificationSettings.ALL_MESSAGES) {
-        const intl2 = tmp(1126).intl;
-        stringResult = intl2.string(tmp(1126).t.mUbulW);
+        const intl2 = tmp(1128).intl;
+        stringResult = intl2.string(tmp(1128).t.mUbulW);
       } else {
-        const intl = tmp(1126).intl;
-        stringResult = intl.string(tmp(1126).t.GGAdHV);
+        const intl = tmp(1128).intl;
+        stringResult = intl.string(tmp(1128).t.GGAdHV);
       }
       cResult[3] = guildMessageNotifications;
       cResult[4] = stringResult;
@@ -165,11 +165,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettin
     const Text = Text_Text.Text;
     const tmp4 = React4;
     if (guildMessageNotifications === UserNotificationSettings.ALL_MESSAGES) {
-      const intl2 = tmp5(1126).intl;
-      stringResult = intl2.string(tmp5(1126).t.mUbulW);
+      const intl2 = tmp5(1128).intl;
+      stringResult = intl2.string(tmp5(1128).t.mUbulW);
     } else {
-      const intl = tmp5(1126).intl;
-      stringResult = intl.string(tmp5(1126).t.GGAdHV);
+      const intl = tmp5(1128).intl;
+      stringResult = intl.string(tmp5(1128).t.GGAdHV);
     }
     let obj = { variant: "text-sm/medium", color: "text-default", children: stringResult };
     tmp4Result = tmp4(Text, obj);

@@ -1,33 +1,35 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 16620
+// Function ID: 16621
 // Name: CopyClientInfoSetting
-// Dependencies: [10485, 21, 1381, 5056, 11343, 6886, 4808, 558, 576, 6839, 1126, 6895, 6899, 5042, 5068, 10664, 6114, 2041, 2]
+// Dependencies: [10808, 21, 1383, 5155, 12514, 7162, 4903, 558, 576, 1128, 11113, 7171, 7117, 1384, 7175, 5141, 5167, 11084, 6393, 2044, 2]
 // Exports: getClientInfoString
 
-// Module 15864 (CopyClientInfoSetting)
+// Module 16620 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import DeviceUtils from "DeviceUtils" /* 5068 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6114 */;
-import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11343 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10485 */;
+import intl8 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import DeviceUtils from "DeviceUtils" /* 5167 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6393 */;
+import ClipboardUtils from "ClipboardUtils" /* 7162 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12514 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1381 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import react_native from "react-native" /* 1383 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const intl8 = tmp(1126);
-const CopyIcon = tmp(5042);
-const BottomSheetTitleHeader2 = tmp(6839);
-const ActionSheetRow7 = tmp(6895);
-const ActionSheet2 = tmp(6899);
+const PlatformUtils = tmp(1384);
+const CopyIcon = tmp(5141);
+const BottomSheetTitleHeader2 = tmp(7117);
+const ActionSheetRow7 = tmp(7171);
+const ActionSheet2 = tmp(7175);
 function getClientInfo() {
   let str10;
   const overrides = BuildOverrideStore.getCurrentBuildOverride().overrides;
@@ -80,12 +82,80 @@ function getClientInfo() {
 }
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const Manifest = react_native.getConstants();
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientClientInfoActionSheet() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnchoredChatScrollerRow() {
+  let subLabel;
+  let tmp7;
+  let tmp9;
+  let obj = subLabel(576);
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1128).intl;
+    const string = intl.string;
+    const tmpResult = subLabel(11113);
+    let result = tmpResult.isIOSAnchoredChatScrollerEnabled();
+    const t = tmp(1128).t;
+    const stringResult = string(result ? t.LfEwvz : t["pe/6Ma"]);
+    cResult[0] = stringResult;
+    subLabel = stringResult;
+  } else {
+    subLabel = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(subLabel(1128).t.iNGJNe);
+    cResult[1] = stringResult1;
+    tmp7 = stringResult1;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = {
+      label: tmp7,
+      subLabel,
+      onPress() {
+          const obj = ClipboardUtils;
+          obj.copy(first);
+          const obj2 = ToastUtils;
+          const result = obj2.presentCopiedToClipboard();
+        }
+    };
+    const tmp11 = closure_4(subLabel(7171).ActionSheetRow, obj2);
+    cResult[2] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[2];
+  }
+  return tmp9;
+}) : (function IOSAnchoredChatScrollerRow() {
+  let intl2;
+  const intl = intl8.intl;
+  const string = intl.string;
+  let obj = IOSAnchoredChatScrollerExperiment;
+  let result = obj.isIOSAnchoredChatScrollerEnabled();
+  const t = intl8.t;
+  const stringResult = string(result ? t.LfEwvz : t["pe/6Ma"]);
+  require = stringResult;
+  let obj2 = {
+    label: intl2.string(intl8.t.iNGJNe),
+    subLabel: stringResult,
+    onPress() {
+      const obj = ClipboardUtils;
+      obj.copy(require);
+      const obj2 = ToastUtils;
+      const result = obj2.presentCopiedToClipboard();
+    }
+  };
+  const ActionSheetRow = tmp(7171).ActionSheetRow;
+  intl2 = tmp(1128).intl;
+  return closure_4(ActionSheetRow, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientClientInfoActionSheet() {
   let ActionSheetRow;
   let first;
   let intl;
   let intl7;
-  let items;
   let items1;
   let obj11;
   let tmp12;
@@ -101,7 +171,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   let tmp39;
   let tmp40;
   let tmp44;
-  let tmp48;
+  let tmp50;
   let tmp7;
   let tmp8;
   let tmp = require;
@@ -250,10 +320,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
     tmp40 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { hasIcons: false, children: items };
-    items = [tmp12, tmp20, tmp28, tmp36, ];
+    const items = [tmp12, tmp20, tmp28, tmp36, , ];
     const Group = ActionSheetRow7.ActionSheetRow.Group;
-    const obj8 = {
+    const obj7 = {
       label: tmp39,
       subLabel: tmp40.buildOverride,
       onPress() {
@@ -264,10 +333,19 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
           const result = obj2.presentCopiedToClipboard();
         }
     };
-    items[4] = React3(ActionSheetRow7.ActionSheetRow, obj8);
-    const tmp47 = hasOwnProperty(Group, obj7);
-    cResult[15] = tmp47;
-    tmp44 = tmp47;
+    items[4] = React3(ActionSheetRow7.ActionSheetRow, obj7);
+    let tmp46Result = null;
+    const tmp45 = hasOwnProperty;
+    const tmp46 = React3;
+    const tmpResult = PlatformUtils;
+    if (tmpResult.isIOS()) {
+      tmp46Result = tmp46(closure_8, {});
+    }
+    const obj8 = { hasIcons: false, children: items };
+    items[5] = tmp46Result;
+    const tmp45Result = tmp45(Group, obj8);
+    cResult[15] = tmp45Result;
+    tmp44 = tmp45Result;
   } else {
     tmp44 = cResult[15];
   }
@@ -302,13 +380,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
     ActionSheetRow = ActionSheetRow7.ActionSheetRow;
     intl7 = intl8.intl;
     items1[1] = React3(Group2, obj10);
-    const tmp51 = hasOwnProperty(ActionSheet, obj9);
-    cResult[16] = tmp51;
-    tmp48 = tmp51;
+    const tmp53 = hasOwnProperty(ActionSheet, obj9);
+    cResult[16] = tmp53;
+    tmp50 = tmp53;
   } else {
-    tmp48 = cResult[16];
+    tmp50 = cResult[16];
   }
-  return tmp48;
+  return tmp50;
 }) : (function ClientClientInfoActionSheet() {
   let ActionSheetRow6;
   let BottomSheetTitleHeader;
@@ -319,18 +397,17 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   let intl5;
   let intl6;
   let intl7;
-  let items;
   let items1;
   let obj10;
   let obj2;
+  let tmp = hasOwnProperty;
   let obj = { header: React3(BottomSheetTitleHeader, obj2), startExpanded: true, children: items1 };
   const ActionSheet = ActionSheet2.ActionSheet;
   obj2 = { title: intl.string(intl8.t.Na2lF9) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl8.intl;
-  let obj3 = { hasIcons: false, children: items };
   const Group = ActionSheetRow7.ActionSheetRow.Group;
-  let obj4 = {
+  let obj3 = {
     label: intl2.string(intl8.t.H66MEk),
     subLabel: getClientInfo().appVersion,
     onPress() {
@@ -343,8 +420,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   };
   const ActionSheetRow = ActionSheetRow7.ActionSheetRow;
   intl2 = intl8.intl;
-  items = [React3(ActionSheetRow, obj4), , , , ];
-  const obj5 = {
+  const items = [React3(ActionSheetRow, obj3), , , , , ];
+  let obj4 = {
     label: intl3.string(intl8.t.zuaWIt),
     subLabel: getClientInfo().buildNumber,
     onPress() {
@@ -357,8 +434,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   };
   const ActionSheetRow2 = ActionSheetRow7.ActionSheetRow;
   intl3 = intl8.intl;
-  items[1] = React3(ActionSheetRow2, obj5);
-  const obj6 = {
+  items[1] = React3(ActionSheetRow2, obj4);
+  const obj5 = {
     label: intl4.string(intl8.t["YD/2+H"]),
     subLabel: getClientInfo().releaseChannel,
     onPress() {
@@ -371,8 +448,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   };
   const ActionSheetRow3 = ActionSheetRow7.ActionSheetRow;
   intl4 = intl8.intl;
-  items[2] = React3(ActionSheetRow3, obj6);
-  const obj7 = {
+  items[2] = React3(ActionSheetRow3, obj5);
+  const obj6 = {
     label: intl5.string(intl8.t["4bhpIV"]),
     subLabel: getClientInfo().manifest,
     onPress() {
@@ -385,8 +462,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   };
   const ActionSheetRow4 = ActionSheetRow7.ActionSheetRow;
   intl5 = intl8.intl;
-  items[3] = React3(ActionSheetRow4, obj7);
-  const obj8 = {
+  items[3] = React3(ActionSheetRow4, obj6);
+  const obj7 = {
     label: intl6.string(intl8.t.Wj3LW4),
     subLabel: getClientInfo().buildOverride,
     onPress() {
@@ -399,10 +476,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   };
   const ActionSheetRow5 = ActionSheetRow7.ActionSheetRow;
   intl6 = intl8.intl;
-  items[4] = React3(ActionSheetRow5, obj8);
-  items1 = [hasOwnProperty(Group, obj3), ];
+  items[4] = React3(ActionSheetRow5, obj7);
+  let tmp4Result = null;
+  const obj8 = PlatformUtils;
+  if (obj8.isIOS()) {
+    tmp4Result = tmp4(closure_8, {});
+  }
+  items[5] = tmp4Result;
+  items1 = [tmp(Group, { hasIcons: false, children: items }), ];
   const obj9 = { hasIcons: true, children: React3(ActionSheetRow6, obj10) };
-  const Group2 = ActionSheetRow7.ActionSheetRow.Group;
+  const Group2 = tmp2(7171).ActionSheetRow.Group;
   obj10 = {
     icon: React3(CopyIcon.CopyIcon, {}),
     label: intl7.string(intl8.t["7dqZ6H"]),
@@ -425,10 +508,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
       const result = obj4.presentCopiedToClipboard();
     }
   };
-  ActionSheetRow6 = ActionSheetRow7.ActionSheetRow;
-  intl7 = intl8.intl;
+  ActionSheetRow6 = tmp2(7171).ActionSheetRow;
+  intl7 = tmp2(1128).intl;
   items1[1] = React3(Group2, obj9);
-  return hasOwnProperty(ActionSheet, obj);
+  return tmp(ActionSheet, obj);
 });
 function getClientInfoString(ReleaseChannel) {
   let str = "N/A";
@@ -449,7 +532,7 @@ let obj = {
   IconComponent: ClipboardListIcon.ClipboardListIcon,
   onPress: function handleClientInfoPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    const obj2 = { default: closure_8 };
+    const obj2 = { default: closure_9 };
     obj.openLazy(Promise.resolve(obj2), "ClientClientInfoActionSheet");
   },
   usePredicate: UserSettings.DeveloperMode.useSetting,

@@ -1,15 +1,15 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9848
+// Function ID: 9849
 // Name: getEmojiPopoutMessage
-// Dependencies: [6160, 1085, 1126, 4107, 2128, 2]
+// Dependencies: [6437, 1087, 1128, 4159, 2131, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9546 (getEmojiPopoutMessage)
-import Constants from "Constants" /* 1085 */;
-import intl12 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import _modDef4107 from "module_4107" /* 4107 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6160 */;
+// Module 9848 (getEmojiPopoutMessage)
+import Constants from "Constants" /* 1087 */;
+import intl12 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import _modDef4159 from "module_4159" /* 4159 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6437 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -49,7 +49,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     const intl11 = intl12.intl;
     format = intl11.format;
     obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = _modDef4107["/jdd/7"];
+    prop = _modDef4159["/jdd/7"];
     obj9 = HelpdeskUtilsDefault;
     return obj2;
   } else {
@@ -81,8 +81,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
           }
           if (isPremium2) {
             if (isDiscoverable2) {
-              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1126).t.riu2R5), description: null };
-              intl10 = tmp7(1126).intl;
+              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1128).t.riu2R5), description: null };
+              intl10 = tmp7(1128).intl;
               obj7 = obj5;
             }
             const obj6 = { emojiDescription: formatToPlainStringResult, analyticsType: CROSS_SERVER };
@@ -90,8 +90,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
             return obj6;
           }
           if (!isPremium2) {
-            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1126).t["gl/XHJ"]), description: null };
-            intl9 = tmp7(1126).intl;
+            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1128).t["gl/XHJ"]), description: null };
+            intl9 = tmp7(1128).intl;
           }
           obj7 = { type: obj.UNAVAILABLE, text: null, description: null };
           const obj8 = { type: obj.UNAVAILABLE, text: null, description: null };
@@ -216,11 +216,11 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     } else {
       const intl = intl12.intl;
       if (isDiscoverable3) {
-        formatToPlainStringResult = intl.string(tmp3(1126).t.FJ6Z01);
+        formatToPlainStringResult = intl.string(tmp3(1128).t.FJ6Z01);
         tmp7 = tmp3;
       } else {
         obj = { openPremiumSettings: onOpenPremiumSettings };
-        formatToPlainStringResult = intl.format(tmp3(1126).t.U6vLcA, obj);
+        formatToPlainStringResult = intl.format(tmp3(1128).t.U6vLcA, obj);
         tmp7 = tmp3;
       }
     }

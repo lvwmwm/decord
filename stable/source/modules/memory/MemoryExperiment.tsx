@@ -1,27 +1,28 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 15429
+// Function ID: 15430
 // Name: MemoryExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 14661 (MemoryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 15429 (MemoryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
-
-let enabled;
 
 let obj2;
 const obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-const config = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+let enabled;
 const interval = setInterval(() => {
   let tmp = enabled;
   if (undefined === enabled) {
-    enabled = config.getConfig({ location: "startMemoryExperiment" }).enabled;
+    enabled = enabled.getConfig({ location: "startMemoryExperiment" }).enabled;
     tmp = enabled;
   }
   if (tmp) {
-    globalThis.gc();
+    if (globalThis.gc != null) {
+      globalThis.gc();
+    }
   } else {
     const _clearInterval = clearInterval;
     clearInterval(closure_1);

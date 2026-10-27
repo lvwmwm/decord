@@ -1,12 +1,12 @@
-// Module ID: 18034
-// Function ID: 18035
+// Module ID: 18427
+// Function ID: 18428
 // Name: useFormattedEndTime
-// Dependencies: [1390, 1126, 558, 576, 504, 2]
+// Dependencies: [1392, 1128, 558, 576, 504, 2]
 
-// Module 18034 (useFormattedEndTime)
+// Module 18427 (useFormattedEndTime)
 import react from "react" /* 576 */;
-import intl from "intl" /* 1126 */;
-import UserStore from "UserStore" /* 1390 */;
+import intl from "intl" /* 1128 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

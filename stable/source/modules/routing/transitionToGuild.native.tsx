@@ -1,14 +1,14 @@
-// Module ID: 7053
-// Function ID: 7054
+// Module ID: 7329
+// Function ID: 7330
 // Name: transitionToGuild
-// Dependencies: [32, 1085, 6921, 6667, 1112, 2]
+// Dependencies: [32, 1087, 7197, 6944, 1114, 2]
 // Exports: transitionToGuild
 
-// Module 7053 (transitionToGuild)
-import Constants from "Constants" /* 1085 */;
-import router_utils from "router_utils" /* 1112 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6667 */;
-import getGuildTransitionRoute from "getGuildTransitionRoute" /* 6921 */;
+// Module 7329 (transitionToGuild)
+import Constants from "Constants" /* 1087 */;
+import router_utils from "router_utils" /* 1114 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6944 */;
+import getGuildTransitionRoute from "getGuildTransitionRoute" /* 7197 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ export const transitionToGuild = function transitionToGuild(id, arg1) {
   const obj = getGuildTransitionRoute;
   const first = _slicedToArray(obj.getGuildTransitionRoute(id), 1)[0];
   const obj2 = DeprecatedLayoutAnimation;
-  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "color", delete: "alignItems" });
+  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "end", delete: "toCharArray$esjava$1" });
   const transitionTo = router_utils.transitionTo;
   const obj3 = { navigationReplace: true };
   router_utils;

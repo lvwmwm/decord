@@ -1,19 +1,19 @@
-// Module ID: 13544
-// Function ID: 13545
+// Module ID: 14324
+// Function ID: 14325
 // Name: InviteEmbedTextUtils
-// Dependencies: [1390, 1085, 1126, 3054, 5409, 2]
-// Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
+// Dependencies: [1392, 1087, 1128, 3077, 5509, 2]
+// Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamFormattedText, getRequestToStreamText, getRequestToStreamTextParts
 
-// Module 13544 (InviteEmbedTextUtils)
-import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import _modDef3054 from "module_3054" /* 3054 */;
-import NicknameUtils from "NicknameUtils" /* 5409 */;
-import UserStore from "UserStore" /* 1390 */;
+// Module 14324 (InviteEmbedTextUtils)
+import Constants from "Constants" /* 1087 */;
+import intl6 from "intl" /* 1128 */;
+import _modDef3077 from "module_3077" /* 3077 */;
+import NicknameUtils from "NicknameUtils" /* 5509 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
-function getAskToJoinText(author, appName, isPrivate, id4, arg4) {
-  if (author.author.id === id4) {
+function getAskToJoinText(author, appName, isPrivate, id3, arg4) {
+  if (author.author.id === id3) {
     let formatToPlainStringResult;
     if (isPrivate.isPrivate()) {
       const user = UserStore.getUser(isPrivate.getRecipientId());
@@ -79,7 +79,7 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
     return stringResult;
   } else if (ActivityActionTypes.STREAM_REQUEST === arg1) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3054.DKHhec);
+    return intl2.string(_modDef3077.DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
     const intl = intl6.intl;
@@ -91,19 +91,51 @@ export const getRequestToStreamText = function getRequestToStreamText(author, gu
   let stringResult;
   if (author.author.id === id) {
     const intl2 = intl6.intl;
-    stringResult = intl2.string(_modDef3054["8B3U5O"]);
+    stringResult = intl2.string(_modDef3077["8B3U5O"]);
   } else {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, author.author) };
-    const prop = _modDef3054["d/qbC0"];
+    const prop = _modDef3077["d/qbC0"];
     obj2 = NicknameUtils;
     stringResult = formatToPlainString(prop, obj);
   }
   return stringResult;
 };
+export const getRequestToStreamFormattedText = function getRequestToStreamFormattedText(author, guild_id, arg2) {
+  let obj2;
+  let stringResult;
+  if (author.author.id === arg2) {
+    const intl2 = intl6.intl;
+    stringResult = intl2.string(_modDef3077["8B3U5O"]);
+  } else {
+    const intl = intl6.intl;
+    const format = intl.format;
+    const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, author.author) };
+    const prop = _modDef3077["d/qbC0"];
+    obj2 = NicknameUtils;
+    stringResult = format(prop, obj);
+  }
+  return stringResult;
+};
+export const getRequestToStreamTextParts = function getRequestToStreamTextParts(author, guild_id, id) {
+  let obj2;
+  let stringResult;
+  if (author.author.id === id) {
+    const intl2 = intl6.intl;
+    stringResult = intl2.string(_modDef3077["8B3U5O"]);
+  } else {
+    const intl = intl6.intl;
+    const formatToParts = intl.formatToParts;
+    const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, author.author) };
+    const prop = _modDef3077["d/qbC0"];
+    obj2 = NicknameUtils;
+    stringResult = formatToParts(prop, obj);
+  }
+  return stringResult;
+};
 export { getAskToJoinText };
-export const getDeadGameInviteText = function getDeadGameInviteText(activity, name_override, guild_id, id4, arg4) {
+export const getDeadGameInviteText = function getDeadGameInviteText(activity, name_override, guild_id, id3, arg4) {
   let obj2;
   activity = activity.activity;
   let type;
@@ -115,21 +147,21 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
       if (ActivityActionTypes.JOIN !== type) {
         if (ActivityActionTypes.STREAM_REQUEST === type) {
           let stringResult;
-          if (activity.author.id === id4) {
+          if (activity.author.id === id3) {
             const intl2 = intl6.intl;
-            stringResult = intl2.string(_modDef3054["8B3U5O"]);
+            stringResult = intl2.string(_modDef3077["8B3U5O"]);
           } else {
             const intl = intl6.intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj = { username: obj2.getName(guild_id.guild_id, guild_id.id, activity.author) };
-            const prop = _modDef3054["d/qbC0"];
+            const prop = _modDef3077["d/qbC0"];
             obj2 = NicknameUtils;
             stringResult = formatToPlainString(prop, obj);
           }
           return stringResult;
         } else {
           const JOIN_REQUEST = tmp2.JOIN_REQUEST;
-          return getAskToJoinText(activity, name_override, guild_id, id4, true);
+          return getAskToJoinText(activity, name_override, guild_id, id3, true);
         }
       }
     }

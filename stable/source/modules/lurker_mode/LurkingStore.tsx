@@ -1,16 +1,16 @@
-// Module ID: 4751
-// Function ID: 4752
+// Module ID: 4846
+// Function ID: 4847
 // Name: LurkingStore
-// Dependencies: [2083, 2125, 2087, 1390, 1085, 504, 584, 2]
+// Dependencies: [2086, 2128, 2090, 1392, 1087, 504, 584, 2]
 
-// Module 4751 (LurkingStore)
+// Module 4846 (LurkingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_8;

@@ -1,19 +1,19 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 13670
+// Function ID: 13671
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8312, 21, 5092, 587, 558, 576, 10101, 10107, 5088, 1126, 2664, 2]
+// Dependencies: [19, 17, 8590, 21, 5191, 587, 558, 576, 10406, 10409, 5187, 1128, 2685, 2]
 
-// Module 12733 (GiftingBadgeLevelUpProgress)
+// Module 13670 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10101 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10107 */;
+import _modDef2685 from "module_2685" /* 2685 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8590 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10406 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10409 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,114 +34,120 @@ obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 obj4 = { flex: 1, height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
 obj5 = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadgeLevelUpProgress(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadgeLevelUpProgress(arg0) {
   let currentTier;
   let items;
   let items1;
   let items2;
   let newTier;
   let progress;
+  let str;
+  let str2;
   let style;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp5;
+  let tmp7;
+  let tmp9;
   const obj = react2;
-  const cResult = obj.c(59);
+  const cResult = obj.c(57);
   ({ progress, currentTier, newTier, style } = arg0);
   const tmp4 = closure_7();
-  const obj2 = GiftingBadgesUtils;
-  const isGiftingBadgeComplexArtEnabled = obj2.useIsGiftingBadgeComplexArtEnabled("GiftingBadgeLevelUpProgress");
-  if (cResult[0] === isGiftingBadgeComplexArtEnabled) {
-    let tmp6;
-    if (cResult[1] === currentTier) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] === isGiftingBadgeComplexArtEnabled) {
-      let tmp8;
-      let tmp16;
-      let tmp15;
-      let tmp14;
-      let tmp13;
-      let str2;
-      let str;
-      let tmp12;
-      let tmp11;
-      let tmp10;
-      if (cResult[4] === newTier) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === tmp6) {
-        if (cResult[7] === newTier) {
-          if (cResult[8] === tmp8) {
-            if (cResult[9] === progress) {
-              if (cResult[10] === style) {
-                if (cResult[11] === tmp4.barRow) {
-                  if (cResult[12] === tmp4.container) {
-                    if (cResult[13] === tmp4.labels) {
-                      if (cResult[14] === tmp4.progressBarFill) {
-                        if (cResult[15] === tmp4.progressBarTrack) {
-                          tmp10 = cResult[16];
-                          tmp11 = cResult[17];
-                          tmp12 = cResult[18];
-                          str = cResult[19];
-                          str2 = cResult[20];
-                          tmp13 = cResult[21];
-                          tmp14 = cResult[22];
-                          tmp15 = cResult[23];
-                          tmp16 = cResult[24];
-                        }
-                        if (cResult[45] === tmp10) {
-                          if (cResult[46] === str) {
-                            if (cResult[47] === str2) {
-                              let tmp44;
-                              if (cResult[48] === tmp13) {
-                                tmp44 = cResult[49];
+  if (cResult[0] !== currentTier) {
+    const tmpResult = GiftingBadgesUtils;
+    const giftingBadgeTierIconUrl = tmpResult.getGiftingBadgeTierIconUrl(currentTier);
+    cResult[0] = currentTier;
+    cResult[1] = giftingBadgeTierIconUrl;
+    tmp5 = giftingBadgeTierIconUrl;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== newTier) {
+    const tmpResult2 = GiftingBadgesUtils;
+    const giftingBadgeTierIconUrl1 = tmpResult2.getGiftingBadgeTierIconUrl(newTier);
+    cResult[2] = newTier;
+    cResult[3] = giftingBadgeTierIconUrl1;
+    tmp7 = giftingBadgeTierIconUrl1;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === tmp5) {
+    if (cResult[5] === newTier) {
+      if (cResult[6] === tmp7) {
+        if (cResult[7] === progress) {
+          if (cResult[8] === style) {
+            if (cResult[9] === tmp4.barRow) {
+              if (cResult[10] === tmp4.container) {
+                if (cResult[11] === tmp4.labels) {
+                  if (cResult[12] === tmp4.progressBarFill) {
+                    if (cResult[13] === tmp4.progressBarTrack) {
+                      tmp9 = cResult[14];
+                      tmp10 = cResult[15];
+                      tmp11 = cResult[16];
+                      str = cResult[17];
+                      str2 = cResult[18];
+                      tmp12 = cResult[19];
+                      tmp13 = cResult[20];
+                      tmp14 = cResult[21];
+                      tmp15 = cResult[22];
+                    }
+                    if (cResult[43] === tmp9) {
+                      if (cResult[44] === str) {
+                        if (cResult[45] === str2) {
+                          let tmp42;
+                          if (cResult[46] === tmp12) {
+                            tmp42 = cResult[47];
+                          }
+                          if (cResult[48] === tmp10) {
+                            if (cResult[49] === tmp42) {
+                              let tmp45;
+                              if (cResult[50] === tmp13) {
+                                tmp45 = cResult[51];
                               }
-                              if (cResult[50] === tmp11) {
-                                if (cResult[51] === tmp44) {
-                                  let tmp47;
-                                  if (cResult[52] === tmp14) {
-                                    tmp47 = cResult[53];
-                                  }
-                                  if (cResult[54] === tmp12) {
-                                    if (cResult[55] === tmp47) {
-                                      if (cResult[56] === tmp15) {
-                                        let tmp50;
-                                        if (cResult[57] === tmp16) {
-                                          tmp50 = cResult[58];
-                                        }
-                                        return tmp50;
-                                      }
+                              if (cResult[52] === tmp11) {
+                                if (cResult[53] === tmp45) {
+                                  if (cResult[54] === tmp14) {
+                                    let tmp48;
+                                    if (cResult[55] === tmp15) {
+                                      tmp48 = cResult[56];
                                     }
+                                    return tmp48;
                                   }
-                                  const obj3 = { style: tmp15, children: items };
-                                  items = [tmp16, tmp47];
-                                  const tmp52 = metroRequire(tmp12, obj3);
-                                  cResult[54] = tmp12;
-                                  cResult[55] = tmp47;
-                                  cResult[56] = tmp15;
-                                  cResult[57] = tmp16;
-                                  cResult[58] = tmp52;
-                                  tmp50 = tmp52;
                                 }
                               }
-                              const obj4 = { style: tmp14, children: tmp44 };
-                              const tmp49 = hasOwnProperty(tmp11, obj4);
-                              cResult[50] = tmp11;
-                              cResult[51] = tmp44;
-                              cResult[52] = tmp14;
-                              cResult[53] = tmp49;
-                              tmp47 = tmp49;
+                              const obj2 = { style: tmp14, children: items };
+                              items = [tmp15, tmp45];
+                              const tmp50 = metroRequire(tmp11, obj2);
+                              cResult[52] = tmp11;
+                              cResult[53] = tmp45;
+                              cResult[54] = tmp14;
+                              cResult[55] = tmp15;
+                              cResult[56] = tmp50;
+                              tmp48 = tmp50;
                             }
                           }
+                          const obj3 = { style: tmp13, children: tmp42 };
+                          const tmp47 = hasOwnProperty(tmp10, obj3);
+                          cResult[48] = tmp10;
+                          cResult[49] = tmp42;
+                          cResult[50] = tmp13;
+                          cResult[51] = tmp47;
+                          tmp45 = tmp47;
                         }
-                        const obj5 = { variant: str, color: str2, children: tmp13 };
-                        const tmp46 = hasOwnProperty(tmp10, obj5);
-                        cResult[45] = tmp10;
-                        cResult[46] = str;
-                        cResult[47] = str2;
-                        cResult[48] = tmp13;
-                        cResult[49] = tmp46;
-                        tmp44 = tmp46;
                       }
                     }
+                    const obj4 = { variant: str, color: str2, children: tmp12 };
+                    const tmp44 = hasOwnProperty(tmp9, obj4);
+                    cResult[43] = tmp9;
+                    cResult[44] = str;
+                    cResult[45] = str2;
+                    cResult[46] = tmp12;
+                    cResult[47] = tmp44;
+                    tmp42 = tmp44;
                   }
                 }
               }
@@ -149,152 +155,140 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
           }
         }
       }
-      const tmp18 = closure_4(newTier);
-      let num6 = 100;
-      if (tmp18 > 0) {
-        const _Math = Math;
-        const _Math2 = Math;
-        num6 = Math.min(Math.max(progress / tmp18 * 100, 0), 100);
-      }
-      if (cResult[25] === style) {
-        let tmp21;
-        let tmp22;
-        let tmp28;
-        if (cResult[26] === tmp4.container) {
-          tmp21 = cResult[27];
-        }
-        if (cResult[28] !== tmp6) {
-          let tmp23 = null != tmp6;
-          if (tmp23) {
-            const obj6 = { icon: tmp6, size: 24 };
-            tmp23 = hasOwnProperty(GiftingBadgeIconDefault, obj6);
-          }
-          cResult[28] = tmp6;
-          cResult[29] = tmp23;
-          tmp22 = tmp23;
-        } else {
-          tmp22 = cResult[29];
-        }
-        const _HermesInternal = HermesInternal;
-        const combined = "" + num6 + "%";
-        if (cResult[30] !== combined) {
-          const obj7 = { width: combined };
-          cResult[30] = combined;
-          cResult[31] = obj7;
-          tmp28 = obj7;
-        } else {
-          tmp28 = cResult[31];
-        }
-        if (cResult[32] === tmp4.progressBarFill) {
-          let tmp29;
-          if (cResult[33] === tmp28) {
-            tmp29 = cResult[34];
-          }
-          if (cResult[35] === tmp4.progressBarTrack) {
-            let tmp32;
-            let tmp35;
-            if (cResult[36] === tmp29) {
-              tmp32 = cResult[37];
-            }
-            if (cResult[38] !== tmp8) {
-              let tmp36 = null != tmp8;
-              if (tmp36) {
-                const obj8 = { icon: tmp8, size: 24 };
-                tmp36 = hasOwnProperty(GiftingBadgeIconDefault, obj8);
-              }
-              cResult[38] = tmp8;
-              cResult[39] = tmp36;
-              tmp35 = tmp36;
-            } else {
-              tmp35 = cResult[39];
-            }
-            if (cResult[40] === tmp4.barRow) {
-              if (cResult[41] === tmp22) {
-                if (cResult[42] === tmp32) {
-                  let tmp39;
-                  if (cResult[43] === tmp35) {
-                    tmp39 = cResult[44];
-                  }
-                  const labels = tmp4.labels;
-                  const Text = tmp(5088).Text;
-                  const intl = tmp(1126).intl;
-                  const obj9 = { count: progress, threshold: tmp18 };
-                  const formatResult = intl.format(_modDef2664.iIpfQe, obj9);
-                  cResult[6] = tmp6;
-                  cResult[7] = newTier;
-                  cResult[8] = tmp8;
-                  cResult[9] = progress;
-                  cResult[10] = style;
-                  cResult[11] = tmp4.barRow;
-                  cResult[12] = tmp4.container;
-                  cResult[13] = tmp4.labels;
-                  cResult[14] = tmp4.progressBarFill;
-                  cResult[15] = tmp4.progressBarTrack;
-                  cResult[16] = Text;
-                  cResult[17] = View;
-                  cResult[18] = View;
-                  cResult[19] = "text-xs/normal";
-                  cResult[20] = "text-muted";
-                  cResult[21] = formatResult;
-                  cResult[22] = labels;
-                  cResult[23] = tmp21;
-                  cResult[24] = tmp39;
-                  tmp16 = tmp39;
-                  tmp15 = tmp21;
-                  tmp14 = labels;
-                  tmp13 = formatResult;
-                  str2 = "text-muted";
-                  str = "text-xs/normal";
-                  tmp12 = tmp20;
-                  tmp11 = tmp20;
-                  tmp10 = Text;
-                }
-              }
-            }
-            const obj10 = { style: tmp4.barRow, children: items1 };
-            items1 = [tmp22, tmp32, tmp35];
-            const tmp41 = metroRequire(View, obj10);
-            cResult[40] = tmp4.barRow;
-            cResult[41] = tmp22;
-            cResult[42] = tmp32;
-            cResult[43] = tmp35;
-            cResult[44] = tmp41;
-            tmp39 = tmp41;
-          }
-          const obj11 = { style: tmp4.progressBarTrack, children: tmp29 };
-          const tmp34 = hasOwnProperty(View, obj11);
-          cResult[35] = tmp4.progressBarTrack;
-          cResult[36] = tmp29;
-          cResult[37] = tmp34;
-          tmp32 = tmp34;
-        }
-        const obj12 = { style: items2 };
-        items2 = [tmp4.progressBarFill, tmp28];
-        const tmp31 = hasOwnProperty(View, obj12);
-        cResult[32] = tmp4.progressBarFill;
-        cResult[33] = tmp28;
-        cResult[34] = tmp31;
-        tmp29 = tmp31;
-      }
-      const items3 = [tmp4.container, style];
-      cResult[25] = style;
-      cResult[26] = tmp4.container;
-      cResult[27] = items3;
-      tmp21 = items3;
     }
-    const tmpResult = GiftingBadgesUtils;
-    const giftingBadgeTierIconUrl = tmpResult.getGiftingBadgeTierIconUrl(newTier, isGiftingBadgeComplexArtEnabled);
-    cResult[3] = isGiftingBadgeComplexArtEnabled;
-    cResult[4] = newTier;
-    cResult[5] = giftingBadgeTierIconUrl;
-    tmp8 = giftingBadgeTierIconUrl;
   }
-  const tmpResult2 = GiftingBadgesUtils;
-  const giftingBadgeTierIconUrl1 = tmpResult2.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
-  cResult[0] = isGiftingBadgeComplexArtEnabled;
-  cResult[1] = currentTier;
-  cResult[2] = giftingBadgeTierIconUrl1;
-  tmp6 = giftingBadgeTierIconUrl1;
+  const tmp16 = closure_4(newTier);
+  let num5 = 100;
+  if (tmp16 > 0) {
+    const _Math = Math;
+    const _Math2 = Math;
+    num5 = Math.min(Math.max(progress / tmp16 * 100, 0), 100);
+  }
+  if (cResult[23] === style) {
+    let tmp19;
+    let tmp20;
+    let tmp26;
+    if (cResult[24] === tmp4.container) {
+      tmp19 = cResult[25];
+    }
+    if (cResult[26] !== tmp5) {
+      let tmp21 = null != tmp5;
+      if (tmp21) {
+        const obj5 = { icon: tmp5, size: 24 };
+        tmp21 = hasOwnProperty(GiftingBadgeIconDefault, obj5);
+      }
+      cResult[26] = tmp5;
+      cResult[27] = tmp21;
+      tmp20 = tmp21;
+    } else {
+      tmp20 = cResult[27];
+    }
+    const _HermesInternal = HermesInternal;
+    const combined = "" + num5 + "%";
+    if (cResult[28] !== combined) {
+      const obj6 = { width: combined };
+      cResult[28] = combined;
+      cResult[29] = obj6;
+      tmp26 = obj6;
+    } else {
+      tmp26 = cResult[29];
+    }
+    if (cResult[30] === tmp4.progressBarFill) {
+      let tmp27;
+      if (cResult[31] === tmp26) {
+        tmp27 = cResult[32];
+      }
+      if (cResult[33] === tmp4.progressBarTrack) {
+        let tmp30;
+        let tmp33;
+        if (cResult[34] === tmp27) {
+          tmp30 = cResult[35];
+        }
+        if (cResult[36] !== tmp7) {
+          let tmp34 = null != tmp7;
+          if (tmp34) {
+            const obj7 = { icon: tmp7, size: 24 };
+            tmp34 = hasOwnProperty(GiftingBadgeIconDefault, obj7);
+          }
+          cResult[36] = tmp7;
+          cResult[37] = tmp34;
+          tmp33 = tmp34;
+        } else {
+          tmp33 = cResult[37];
+        }
+        if (cResult[38] === tmp4.barRow) {
+          if (cResult[39] === tmp20) {
+            if (cResult[40] === tmp30) {
+              let tmp37;
+              if (cResult[41] === tmp33) {
+                tmp37 = cResult[42];
+              }
+              const labels = tmp4.labels;
+              const Text = tmp(5187).Text;
+              const intl = tmp(1128).intl;
+              const obj8 = { count: progress, threshold: tmp16 };
+              const formatResult = intl.format(_modDef2685.iIpfQe, obj8);
+              cResult[4] = tmp5;
+              cResult[5] = newTier;
+              cResult[6] = tmp7;
+              cResult[7] = progress;
+              cResult[8] = style;
+              cResult[9] = tmp4.barRow;
+              cResult[10] = tmp4.container;
+              cResult[11] = tmp4.labels;
+              cResult[12] = tmp4.progressBarFill;
+              cResult[13] = tmp4.progressBarTrack;
+              cResult[14] = Text;
+              cResult[15] = View;
+              cResult[16] = View;
+              cResult[17] = "text-xs/normal";
+              cResult[18] = "text-muted";
+              cResult[19] = formatResult;
+              cResult[20] = labels;
+              cResult[21] = tmp19;
+              cResult[22] = tmp37;
+              tmp15 = tmp37;
+              tmp14 = tmp19;
+              tmp13 = labels;
+              tmp12 = formatResult;
+              str2 = "text-muted";
+              str = "text-xs/normal";
+              tmp11 = tmp18;
+              tmp10 = tmp18;
+              tmp9 = Text;
+            }
+          }
+        }
+        const obj9 = { style: tmp4.barRow, children: items1 };
+        items1 = [tmp20, tmp30, tmp33];
+        const tmp39 = metroRequire(View, obj9);
+        cResult[38] = tmp4.barRow;
+        cResult[39] = tmp20;
+        cResult[40] = tmp30;
+        cResult[41] = tmp33;
+        cResult[42] = tmp39;
+        tmp37 = tmp39;
+      }
+      const obj10 = { style: tmp4.progressBarTrack, children: tmp27 };
+      const tmp32 = hasOwnProperty(View, obj10);
+      cResult[33] = tmp4.progressBarTrack;
+      cResult[34] = tmp27;
+      cResult[35] = tmp32;
+      tmp30 = tmp32;
+    }
+    const obj11 = { style: items2 };
+    items2 = [tmp4.progressBarFill, tmp26];
+    const tmp29 = hasOwnProperty(View, obj11);
+    cResult[30] = tmp4.progressBarFill;
+    cResult[31] = tmp26;
+    cResult[32] = tmp29;
+    tmp27 = tmp29;
+  }
+  const items3 = [tmp4.container, style];
+  cResult[23] = style;
+  cResult[24] = tmp4.container;
+  cResult[25] = items3;
+  tmp19 = items3;
 }) : (function GiftingBadgeLevelUpProgress(style) {
   let Text;
   let currentTier;
@@ -304,53 +298,51 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
   let items2;
   let items3;
   let newTier;
-  let obj10;
-  let obj6;
+  let obj5;
+  let obj9;
   let progress;
   ({ progress, currentTier, newTier } = style);
   style = style.style;
   const tmp = closure_7();
-  const obj = GiftingBadgesUtils;
-  const isGiftingBadgeComplexArtEnabled = obj.useIsGiftingBadgeComplexArtEnabled("GiftingBadgeLevelUpProgress");
   const getGiftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl;
   GiftingBadgesUtils;
-  const giftingBadgeTierIconUrl = getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
+  const giftingBadgeTierIconUrl = getGiftingBadgeTierIconUrl(currentTier);
   const tmp2Result = GiftingBadgesUtils;
-  const giftingBadgeTierIconUrl1 = tmp2Result.getGiftingBadgeTierIconUrl(newTier, isGiftingBadgeComplexArtEnabled);
-  const tmp8 = closure_4(newTier);
+  const giftingBadgeTierIconUrl1 = tmp2Result.getGiftingBadgeTierIconUrl(newTier);
+  const tmp7 = closure_4(newTier);
   let num = 100;
-  if (tmp8 > 0) {
+  if (tmp7 > 0) {
     const _Math = Math;
     const _Math2 = Math;
-    num = Math.min(Math.max(progress / tmp8 * 100, 0), 100);
+    num = Math.min(Math.max(progress / tmp7 * 100, 0), 100);
   }
-  const obj2 = { style: items, children: items3 };
+  const obj = { style: items, children: items3 };
   items = [tmp.container, style];
-  let tmp12 = null != giftingBadgeTierIconUrl;
-  const obj3 = { style: tmp.barRow, children: items1 };
-  if (tmp12) {
-    const obj4 = { icon: giftingBadgeTierIconUrl, size: 24 };
-    tmp12 = hasOwnProperty(GiftingBadgeIconDefault, obj4);
+  let tmp11 = null != giftingBadgeTierIconUrl;
+  const obj2 = { style: tmp.barRow, children: items1 };
+  if (tmp11) {
+    const obj3 = { icon: giftingBadgeTierIconUrl, size: 24 };
+    tmp11 = hasOwnProperty(GiftingBadgeIconDefault, obj3);
   }
-  items1 = [tmp12, , ];
-  const obj5 = { style: tmp.progressBarTrack, children: hasOwnProperty(View, obj6) };
-  obj6 = { style: items2 };
+  items1 = [tmp11, , ];
+  const obj4 = { style: tmp.progressBarTrack, children: hasOwnProperty(View, obj5) };
+  obj5 = { style: items2 };
   items2 = [tmp.progressBarFill, { width: "" + num + "%" }];
   ({ width: "" + num + "%" });
-  items1[1] = hasOwnProperty(View, obj5);
-  let tmp15Result = null != giftingBadgeTierIconUrl1;
-  if (tmp15Result) {
-    const obj8 = { icon: giftingBadgeTierIconUrl1, size: 24 };
-    tmp15Result = tmp15(GiftingBadgeIconDefault, obj8);
+  items1[1] = hasOwnProperty(View, obj4);
+  let tmp14Result = null != giftingBadgeTierIconUrl1;
+  if (tmp14Result) {
+    const obj7 = { icon: giftingBadgeTierIconUrl1, size: 24 };
+    tmp14Result = tmp14(GiftingBadgeIconDefault, obj7);
   }
-  items1[2] = tmp15Result;
-  items3 = [metroRequire(View, obj3), ];
-  const obj9 = { style: tmp.labels, children: hasOwnProperty(Text, obj10) };
-  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2664.iIpfQe, { count: progress, threshold: tmp8 }) };
-  Text = tmp2(5088).Text;
-  intl = tmp2(1126).intl;
-  items3[1] = hasOwnProperty(View, obj9);
-  return metroRequire(View, obj2);
+  items1[2] = tmp14Result;
+  items3 = [metroRequire(View, obj2), ];
+  const obj8 = { style: tmp.labels, children: hasOwnProperty(Text, obj9) };
+  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2685.iIpfQe, { count: progress, threshold: tmp7 }) };
+  Text = tmp2(5187).Text;
+  intl = tmp2(1128).intl;
+  items3[1] = hasOwnProperty(View, obj8);
+  return metroRequire(View, obj);
 });
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeLevelUpProgress.tsx");
 

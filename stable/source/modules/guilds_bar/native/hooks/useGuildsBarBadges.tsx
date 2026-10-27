@@ -1,24 +1,24 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 17474
+// Function ID: 17475
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10695, 4940, 2125, 2087, 4750, 1390, 1085, 21, 5092, 558, 576, 504, 4941, 16792, 4818, 587, 1200, 16796, 16760, 16759, 2]
+// Dependencies: [109, 19, 11115, 5035, 2128, 2090, 4845, 1392, 1087, 21, 5191, 558, 576, 504, 5036, 17475, 4913, 587, 1202, 17476, 17445, 17444, 2]
 
-// Module 16791 (useGuildsBarBadges)
+// Module 17474 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1200 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4941 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16760 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16796 */;
+import native from "native" /* 1202 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5036 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17445 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17476 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10695 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5092 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11115 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -293,12 +293,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
     }
     const tmpResult6 = tmp(504);
     const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
-    const tmp20 = stateFromStores(16792)(arg0);
-    const tmpResult7 = tmp(4818);
+    const tmp20 = stateFromStores(17475)(arg0);
+    const tmpResult7 = tmp(4913);
     const token = tmpResult7.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-    const tmpResult8 = tmp(4818);
+    const tmpResult8 = tmp(4913);
     const token1 = tmpResult8.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
-    const diff = token1 - tmp(1200).BADGE_PADDING;
+    const diff = token1 - tmp(1202).BADGE_PADDING;
     if (cResult[12] !== diff) {
       class U {
         constructor() {

@@ -1,16 +1,16 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14806
+// Function ID: 14807
 // Name: useHasXboxMonthlyOrbsPerk
-// Dependencies: [1390, 1392, 4769, 1396, 1398, 558, 576, 504, 2]
+// Dependencies: [1392, 1394, 4864, 1398, 1400, 558, 576, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk
 
-// Module 14025 (useHasXboxMonthlyOrbsPerk)
+// Module 14806 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PerksStateUtils from "PerksStateUtils" /* 1396 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PerksStateUtils from "PerksStateUtils" /* 1398 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasXbox
         if (stateFromStores != null) {
           perks = stateFromStores.perks;
         }
-        const perkSource = getPerkSource(perks, tmp(1398).Perk.MONTHLY_ORBS);
-        const hasItem = null != perkSource && perkSource.includes(tmp(1398).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        const perkSource = getPerkSource(perks, tmp(1400).Perk.MONTHLY_ORBS);
+        const hasItem = null != perkSource && perkSource.includes(tmp(1400).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         flag = hasItem;
       }
     }
@@ -80,8 +80,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasXbox
       if (stateFromStores != null) {
         perks = stateFromStores.perks;
       }
-      const perkSource = getPerkSource(perks, tmp(1398).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp(1398).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+      const perkSource = getPerkSource(perks, tmp(1400).Perk.MONTHLY_ORBS);
+      const hasItem = null != perkSource && perkSource.includes(tmp(1400).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       flag = hasItem;
     }
   }
@@ -98,8 +98,8 @@ function hasCrepeMonthlyOrbsPerk(currentUser) {
       if (currentUser != null) {
         perks = currentUser.perks;
       }
-      const perkSource = getPerkSource(perks, tmp2(1398).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp2(1398).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+      const perkSource = getPerkSource(perks, tmp2(1400).Perk.MONTHLY_ORBS);
+      const hasItem = null != perkSource && perkSource.includes(tmp2(1400).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       return hasItem;
     }
   }

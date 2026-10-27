@@ -1,13 +1,13 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 15489
+// Function ID: 15490
 // Name: ConjureBuilderPreviewStore
-// Dependencies: [10808, 2024, 504, 584, 2]
+// Dependencies: [6295, 2026, 504, 584, 2]
 
-// Module 14723 (ConjureBuilderPreviewStore)
+// Module 15489 (ConjureBuilderPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 2024 */;
-import FramesStore from "FramesStore" /* 10808 */;
+import Constants from "Constants" /* 2026 */;
+import FramesStore from "FramesStore" /* 6295 */;
 import size from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;
@@ -23,6 +23,9 @@ class ConjureBuilderPreviewStore extends Store {
     return applicationId;
   }
   getPhoneLensApplicationId() {
+    return applicationId;
+  }
+  getLastBuilderPreviewApplicationId() {
     return applicationId;
   }
   isBuilderPreviewMobile() {

@@ -1,19 +1,19 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 12302
+// Function ID: 12303
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5092, 17200, 558, 576, 5088, 1126, 3849, 6182, 5377, 2]
+// Dependencies: [19, 17, 21, 5191, 12166, 558, 576, 5187, 1128, 3883, 6459, 5477, 2]
 
-// Module 17318 (ConjureIdeaCards)
+// Module 12302 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 17200 */;
+import intl2 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import Card_Card from "Card/Card" /* 6459 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12166 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIdeaC
   let tmp4 = closure_6();
   const ideaCards = tmp4.ideaCards;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3849["wx/o8Y"]) };
-    const Text = tmp(5088).Text;
-    intl = tmp(1126).intl;
+    let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3883["wx/o8Y"]) };
+    const Text = tmp(5187).Text;
+    intl = tmp(1128).intl;
     const tmp8 = closure_4(Text, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIdeaC
         onPress() {
           return onPick(title);
         },
-        accessibilityLabel: intl.formatToPlainString(_modDef3849.H8G39M, obj2),
+        accessibilityLabel: intl.formatToPlainString(_modDef3883.H8G39M, obj2),
         children: tmp4(Stack, { direction: "vertical", spacing: 4, children: items })
       };
       const Card = onPick(dependencyMap[10]).Card;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIdeaC
   let items;
   ({ ideas, onPick: require } = arg0);
   let obj = { style: closure_6().ideaCards, children: items };
-  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3849["wx/o8Y"]) };
+  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3883["wx/o8Y"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIdeaC
         onPress() {
           return require(title);
         },
-        accessibilityLabel: intl.formatToPlainString(_modDef3849.H8G39M, obj2),
+        accessibilityLabel: intl.formatToPlainString(_modDef3883.H8G39M, obj2),
         children: tmp4(Stack, { direction: "vertical", spacing: 4, children: items })
       };
       const Card = Card_Card.Card;

@@ -1,16 +1,16 @@
-// Module ID: 6160
-// Function ID: 6161
+// Module ID: 6437
+// Function ID: 6438
 // Name: ExpressionSourceRecord
-// Dependencies: [5, 1405, 1085, 1295, 1415, 2082, 2079, 2]
+// Dependencies: [5, 1407, 1087, 1297, 1417, 2085, 2082, 2]
 
-// Module 6160 (ExpressionSourceRecord)
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import SetUtils from "SetUtils" /* 2082 */;
+// Module 6437 (ExpressionSourceRecord)
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import SetUtils from "SetUtils" /* 2085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Record from "Record" /* 1405 */;
-import Constants from "Constants" /* 1085 */;
+import Record from "Record" /* 1407 */;
+import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,8 +22,10 @@ let obj = function _getEmojiSourceData() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_1;
     let closure_2;
+    let preview_emojis;
+    let tmp18;
     let closure_0 = arg0;
-    let obj8 = null;
+    let obj9 = null;
     const HTTP = HTTPUtils.HTTP;
     const obj4 = { url: React32.EMOJI_SOURCE_DATA(closure_0), oldFormErrors: true, timeout: 5000, rejectWithError: true };
     const get = HTTP.get;
@@ -46,28 +48,34 @@ let obj = function _getEmojiSourceData() {
       }
       if (type === closure_130_6.GUILD) {
         const obj7 = { guild: closure_130_9.createFromServer(body.guild), type: body.type };
-        obj8 = obj7;
+        obj9 = obj7;
       } else {
         let type1;
         if (body != null) {
           type1 = body.type;
         }
         if (type1 === closure_130_6.APPLICATION) {
-          obj = { application: closure_130_10.createFromServer(body.application), type: body.type };
-          obj8 = obj;
+          const obj8 = { application: closure_130_10.createFromServer(body.application), type: body.type };
+          obj9 = obj8;
         } else {
           let type2;
           if (body != null) {
             type2 = body.type;
           }
           if (type2 === closure_130_6.PACK) {
-            obj8 = { type: body.type };
+            obj9 = { type: body.type, pack: tmp18 };
+            tmp18 = null;
+            if (null != body.pack) {
+              obj = { id: body.pack.id, name: body.pack.name, previewEmojis: preview_emojis.map((id) => ({ id: id.id, name: id.name, animated: id.animated })) };
+              preview_emojis = body.pack.preview_emojis;
+              tmp18 = obj;
+            }
           }
         }
       }
       c3 = 0;
     }
-    return obj8;
+    return obj9;
   });
   return obj(...arguments);
 };
@@ -94,7 +102,7 @@ class ExpressionSourceGuildRecord extends Record {
     if (hasItem === undefined) {
       flag = false;
     }
-    obj = self(1415);
+    obj = self(1417);
     return obj.getAnimatableSourceWithFallback(flag, (canAnimate) => {
       obj = AvatarUtilsDefault;
       const obj2 = { id: self.id, size, icon: self.icon, canAnimate };

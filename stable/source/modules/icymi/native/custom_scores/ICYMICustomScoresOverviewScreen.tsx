@@ -1,17 +1,17 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 17604
+// Function ID: 17605
 // Name: ICYMICustomScoresOverviewScreen
-// Dependencies: [19, 17, 2087, 5963, 8449, 21, 5092, 587, 558, 576, 504, 1631, 6180, 6159, 8466, 1126, 6265, 2]
+// Dependencies: [19, 17, 2090, 6219, 8727, 21, 5191, 587, 558, 576, 504, 1633, 6457, 6436, 8744, 1128, 6542, 2]
 
-// Module 16924 (ICYMICustomScoresOverviewScreen)
+// Module 17604 (ICYMICustomScoresOverviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import ICYMIStore from "ICYMIStore" /* 8449 */;
-import createStyles from "createStyles" /* 5092 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import ICYMIStore from "ICYMIStore" /* 8727 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

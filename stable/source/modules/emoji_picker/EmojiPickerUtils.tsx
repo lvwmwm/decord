@@ -1,34 +1,34 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9730
+// Function ID: 9731
 // Name: EmojiPickerUtils
-// Dependencies: [19, 5987, 2087, 5963, 1390, 5991, 1085, 1393, 1241, 1392, 1279, 9427, 5107, 9428, 9430, 9431, 504, 1989, 9432, 1126, 4768, 4764, 1265, 12, 1102, 558, 576, 2046, 2]
+// Dependencies: [19, 6243, 2090, 6219, 1392, 6247, 1087, 1395, 1243, 1394, 1281, 9731, 5206, 9732, 9734, 9735, 504, 1991, 9736, 1128, 4863, 4859, 1267, 12, 1104, 558, 576, 2049, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9426 (EmojiPickerUtils)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl14 from "intl" /* 1126 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import v1 from "v1" /* 1279 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9427 */;
+// Module 9730 (EmojiPickerUtils)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl14 from "intl" /* 1128 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import v1 from "v1" /* 1281 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9731 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import UserStore from "UserStore" /* 1390 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5991 */;
-import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import UserStore from "UserStore" /* 1392 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6247 */;
+import Constants from "Constants" /* 1087 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, constants, constants2, dependencyMap, importDefault, set;
+let _require, constants, constants2, dependencyMap, importDefault, results, set;
 
 let c10;
 let c9;
@@ -49,7 +49,6 @@ const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewT
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 const re21 = /-/g;
 const throttleResult = module_12.throttle((emojiSuggestions) => {
-  let results;
   emojiSuggestions = emojiSuggestions.emojiSuggestions;
   const analyticsLocation = emojiSuggestions.analyticsLocation;
   const obj = { suggestion_type: constants6.EMOJI, suggestion_quantity: emojiSuggestions.results.length, custom_quantity: results.filter((emoji) => null != emoji.emoji.id).length, load_id: emojiSuggestions.loadId, location: analyticsLocation };
@@ -868,7 +867,7 @@ export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
     const merged = Object.assign(obj3);
     let length;
     if (emojiSuggestions != null) {
-      const results = emojiSuggestions.results;
+      results = emojiSuggestions.results;
       if (results != null) {
         length = results.length;
       }

@@ -1,11 +1,11 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9427
+// Function ID: 9428
 // Name: help_article
-// Dependencies: [32, 1210, 9122, 2]
+// Dependencies: [32, 1212, 9426, 2]
 
-// Module 9123 (help_article)
-import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9122 */;
+// Module 9427 (help_article)
+import _mod1212 from "module_1212" /* 1212 */;
+import localized_string from "localized_string" /* 9426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,21 +15,21 @@ let tmp;
 function T() {
   return localized_string.LocalizedString;
 }
-const MessageType = _mod1210.MessageType;
+const MessageType = _mod1212.MessageType;
 class HelpArticle$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "id", kind: "scalar", T: 9 }, { no: 2, name: "link_text", kind: "scalar", T: 9 }, { no: 3, name: "link_text_localized", kind: "message", T }];
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.HelpArticle", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { id: "", linkText: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
-      const tmpResult = _mod1210;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1212;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -70,7 +70,7 @@ class HelpArticle$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1210.UnknownFieldHandler.onRead;
+                onRead = _mod1212.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -82,25 +82,25 @@ class HelpArticle$Type extends MessageType {
   }
   internalBinaryWrite(id, tag, writeUnknownFields) {
     if ("" !== id.id) {
-      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
       tagResult.string(id.id);
     }
     if ("" !== id.linkText) {
-      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
       tagResult1.string(id.linkText);
     }
     if (id.linkTextLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const linkTextLocalized = id.linkTextLocalized;
-      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(linkTextLocalized, tagResult2.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1210.UnknownFieldHandler.onWrite;
+        onWrite = _mod1212.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, id, tag);

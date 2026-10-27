@@ -1,10 +1,10 @@
-// Module ID: 13973
-// Function ID: 13974
+// Module ID: 14753
+// Function ID: 14754
 // Name: StateManager
-// Dependencies: [1355, 2]
+// Dependencies: [1357, 2]
 
-// Module 13973 (StateManager)
-import _modDef1355 from "module_1355" /* 1355 */;
+// Module 14753 (StateManager)
+import _modDef1357 from "module_1357" /* 1357 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/StateManager.tsx");
@@ -51,7 +51,7 @@ class StateManager {
     const merged1 = Object.assign(obj);
     const nextState = getNextState(obj2);
     if (flag) {
-      const tmp14 = _modDef1355;
+      const tmp14 = _modDef1357;
       self.dirty = !tmp14(nextState, self.getInitialState());
     } else {
       const _Object = Object;
@@ -60,7 +60,7 @@ class StateManager {
         let tmp8 = item10021;
         let dirty = self.dirty;
         if (!dirty) {
-          dirty = !_modDef1355(self.state[tmp8], nextState[tmp8]);
+          dirty = !_modDef1357(self.state[tmp8], nextState[tmp8]);
         }
         self.dirty = dirty;
         continue;

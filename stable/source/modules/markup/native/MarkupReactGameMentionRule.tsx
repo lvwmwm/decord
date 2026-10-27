@@ -1,18 +1,18 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14854
+// Function ID: 14855
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 21, 5092, 587, 558, 576, 8230, 1126, 2030, 5080, 8880, 8874, 7684, 6157, 5088, 7009, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 8507, 1128, 2033, 5180, 9156, 9150, 7955, 5128, 5187, 7285, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 14072 (MarkupReactGameMentionRule)
+// Module 14854 (MarkupReactGameMentionRule)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useGame from "useGame" /* 7009 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8880 */;
+import useGame from "useGame" /* 7285 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9156 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,11 +40,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   const node = state.node;
   const tmp4 = closure_5();
   const gameId = node.gameId;
-  let obj2 = state(8230);
+  let obj2 = state(8507);
   const gameMentionData = obj2.useGameMentionData(gameId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(state(1126).t["11pdXZ"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(state(1128).t["11pdXZ"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -80,7 +80,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
       }
       const obj3 = { color: textColor1, children: items };
       items = ["@", first];
-      const tmp32 = closure_3(state(5080).MarkupText, obj3, state.key);
+      const tmp32 = closure_3(state(5180).MarkupText, obj3, state.key);
       cResult[4] = state.key;
       cResult[5] = textColor1;
       cResult[6] = tmp32;
@@ -91,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
         let textColor;
         if (cResult[10] !== tmp4.icon) {
           const obj4 = { size: "sm", style: tmp4.icon };
-          const tmp15 = closure_4(state(7684).UnknownGameIcon, obj4);
+          const tmp15 = closure_4(state(7955).UnknownGameIcon, obj4);
           cResult[10] = tmp4.icon;
           cResult[11] = tmp15;
           tmp13 = tmp15;
@@ -117,7 +117,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
             tmp13 = tmp18;
           }
           const obj6 = { style: tmp4.icon, source: tmp17 };
-          const tmp21 = closure_4(gameId(6157), obj6);
+          const tmp21 = closure_4(gameId(5128), obj6);
           cResult[14] = tmp4.icon;
           cResult[15] = tmp17;
           cResult[16] = tmp21;
@@ -154,7 +154,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
           }
           const obj7 = { accessibilityRole: str2, style: tmp4.chip, color: textColor, onPress: tmp22, children: items1 };
           items1 = [tmp13, tmp23];
-          const tmp28 = closure_3(state(5080).MarkupText, obj7, state.key);
+          const tmp28 = closure_3(state(5180).MarkupText, obj7, state.key);
           cResult[20] = tmp13;
           cResult[21] = state.key;
           cResult[22] = tmp4.chip;
@@ -166,7 +166,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
           tmp26 = tmp28;
         }
         const obj8 = { variant: "text-sm/medium", style: tmp4.chipText, children: gameName };
-        const tmp25 = closure_4(state(5088).Text, obj8);
+        const tmp25 = closure_4(state(5187).Text, obj8);
         cResult[17] = gameName;
         cResult[18] = tmp4.chipText;
         cResult[19] = tmp25;
@@ -182,7 +182,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
       cResult[9] = handlePress;
     }
   }
-  const tmp11 = gameId(2030)(gameId, gameIcon, { size: 32 });
+  const tmp11 = gameId(2033)(gameId, gameIcon, { size: 32 });
   cResult[1] = gameId;
   cResult[2] = gameIcon;
   cResult[3] = tmp11;
@@ -197,10 +197,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   const node = state.node;
   const tmp = closure_5();
   const gameId = node.gameId;
-  let obj = state(8230);
+  let obj = state(8507);
   const gameMentionData = obj.useGameMentionData(gameId);
-  const intl = state(1126).intl;
-  const stringResult = intl.string(state(1126).t["11pdXZ"]);
+  const intl = state(1128).intl;
+  const stringResult = intl.string(state(1128).t["11pdXZ"]);
   let gameName;
   if (gameMentionData != null) {
     gameName = gameMentionData.gameName;
@@ -210,14 +210,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   }
   let gameIcon;
   const tmp7 = gameId;
-  const tmp8 = gameId(2030);
+  const tmp8 = gameId(2033);
   if (gameMentionData != null) {
     gameIcon = gameMentionData.gameIcon;
   }
   const tmp8Result = tmp8(gameId, gameIcon, { size: 32 });
   if (null == gameMentionData) {
     let textColor;
-    const MarkupText2 = tmp2(5080).MarkupText;
+    const MarkupText2 = tmp2(5180).MarkupText;
     const tmp15 = closure_3;
     if (state != null) {
       textColor = state.textColor;
@@ -228,7 +228,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
   } else {
     let tmp11 = null != tmp8Result;
     const obj3 = { size: "sm", style: tmp.icon };
-    const tmp18 = closure_4(state(7684).UnknownGameIcon, obj3);
+    const tmp18 = closure_4(state(7955).UnknownGameIcon, obj3);
     if (tmp11) {
       tmp11 = "" !== tmp8Result;
     }
@@ -236,10 +236,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
     if (tmp11) {
       const obj4 = { style: tmp.icon, source: obj5 };
       obj5 = { uri: tmp8Result };
-      tmp17Result = tmp17(tmp7(6157), obj4);
+      tmp17Result = tmp17(tmp7(5128), obj4);
     }
     let str2 = "button";
-    const MarkupText = tmp2(5080).MarkupText;
+    const MarkupText = tmp2(5180).MarkupText;
     const tmp13 = closure_3;
     if (state.noStyleAndInteraction) {
       str2 = "text";
@@ -259,7 +259,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupGame
     }
     items1 = [tmp17Result, ];
     const obj7 = { variant: "text-sm/medium", style: tmp.chipText, children: gameName };
-    items1[1] = closure_4(state(5088).Text, obj7);
+    items1[1] = closure_4(state(5187).Text, obj7);
     return tmp13(MarkupText, obj6, state.key);
   }
 });

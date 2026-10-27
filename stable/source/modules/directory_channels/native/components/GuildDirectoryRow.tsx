@@ -1,25 +1,25 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12980
+// Function ID: 12981
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 2065, 2087, 1085, 21, 5092, 587, 504, 7053, 6098, 8690, 1209, 6920, 1415, 1126, 6182, 6159, 2079, 5088, 12013, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 2090, 1087, 21, 5191, 587, 504, 7091, 7329, 6377, 8967, 1211, 7196, 1417, 1128, 6459, 6436, 2082, 5187, 12958, 5479, 2]
 
-// Module 12035 (GuildDirectoryRow)
+// Module 12980 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildIconDefault from "GuildIcon" /* 6159 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12013 */;
+import Constants from "Constants" /* 1087 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import GuildIconDefault from "GuildIcon" /* 6436 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12958 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
-let c4, c5, closure_2, dependencyMap, importDefault;
+let c4, c5, dependencyMap, importDefault, ref;
 
 let c10;
 let closure_12;
@@ -42,28 +42,26 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   let approximatePresenceCount;
   let closure_1;
   let description;
-  let first;
   let intl3;
   let intl4;
-  let items1;
   let items2;
   let items3;
   let items4;
   let items5;
   let items6;
   let items7;
-  let obj14;
-  let obj18;
-  let obj5;
+  let items8;
+  let obj15;
+  let obj19;
+  let obj6;
   let result;
   let str2;
   entry = entry.entry;
   dependencyMap = undefined;
   let obj = function _handleJoinGuild() {
     obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_0;
+      let closure_2;
       let obj4;
-      let tmp;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -79,7 +77,9 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
       } else {
         let c3;
         try {
-          let channel2;
+          let closure_0;
+          let tmp;
+          let c0;
           c5 = 2;
           if (0 === c4) {
             if (arg0 === 1) {
@@ -90,15 +90,21 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              channel2 = undefined;
-              closure_2_2(true);
+              closure_0 = tmp4;
+              tmp = undefined;
+              const sum = ref.current + 1;
+              ref.current = sum;
+              c0 = sum;
+              closure_2_3(true);
               c3 = 2;
-              const tmp61 = closure_2_1;
-              if (tmp61) {
-                const obj7 = channel2(closure_2[11]);
+              const tmp80 = closure_2_1;
+              if (tmp80) {
+                const obj7 = closure_0(ref[12]);
                 obj7.transitionToGuild(entry.guildId);
                 c3 = 0;
-                closure_2_2(false);
+                if (sum === ref.current) {
+                  closure_2_3(false);
+                }
                 c5 = 3;
                 const obj6 = { value: undefined, done: true };
                 return obj6;
@@ -107,59 +113,67 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
                 c4 = 3;
                 c5 = 1;
                 const obj9 = { value: obj4.joinGuild(entry.guildId, obj8), done: false };
-                obj4 = tmp(closure_2[12]);
+                obj4 = tmp(ref[13]);
                 return obj9;
               }
             }
           } else if (1 === c4) {
             c3 = 0;
-            closure_129_2(false);
-            throw closure_2;
+            const tmp46 = ref;
+            if (c0 === closure_129_2.current) {
+              closure_129_3(false);
+            }
+            throw tmp46;
           } else {
             if (2 === c4) {
               c3 = 1;
-              tmp = closure_2;
-              const obj3 = channel2(closure_2[15]);
-              const result = obj3.ignoreJoinGuildRefused(tmp);
+              const obj3 = closure_0(ref[16]);
+              const result = obj3.ignoreJoinGuildRefused(ref);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_2(false);
+              if (c0 === closure_129_2.current) {
+                closure_129_3(false);
+              }
               c5 = 3;
               const obj10 = { value, done: true };
               return obj10;
             } else {
-              channel2 = channel.getChannel(closure_129_0.channelId);
-              if (null == channel2) {
+              tmp = channel.getChannel(closure_129_0.channelId);
+              if (null == tmp) {
                 c3 = 0;
-                closure_129_2(false);
+                if (c0 === closure_129_2.current) {
+                  closure_129_3(false);
+                }
                 c5 = 3;
                 return { value: "IconComponent", done: null };
               } else {
                 let guildId;
-                const setHubProgressActionComplete = channel2(closure_2[13]).setHubProgressActionComplete;
-                obj = channel2;
-                const tmp9 = channel2(closure_2[13]);
-                if (channel2 != null) {
+                const setHubProgressActionComplete = closure_0(ref[14]).setHubProgressActionComplete;
+                obj = tmp;
+                const tmp9 = closure_0(ref[14]);
+                if (tmp != null) {
                   guildId = obj.getGuildId();
                 }
-                const result1 = setHubProgressActionComplete(guildId, channel2(closure_2[14]).HubProgressStep.JOIN_GUILD);
+                const result1 = setHubProgressActionComplete(guildId, closure_0(ref[15]).HubProgressStep.JOIN_GUILD);
                 c3 = 1;
               }
             }
             c3 = 0;
-            closure_129_2(false);
+            if (c0 === closure_129_2.current) {
+              closure_129_3(false);
+            }
             c5 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp47) {
-          closure_2 = tmp47;
+        } catch (tmp64) {
+          ref = tmp64;
           if (0 === c3) {
             c5 = 3;
-            throw tmp47;
-          } else if (1 === tmp49) {
+            throw tmp64;
+          } else if (1 === tmp66) {
             c4 = 1;
           } else {
             c4 = 2;
@@ -177,76 +191,83 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   const items = [GuildStore];
   const tmp4 = null != obj.useStateFromStores(items, () => GuildStore.getGuild(entry.guildId));
   importDefault = tmp4;
-  [first, dependencyMap] = react.useState(false);
-  let obj2 = AvatarUtilsDefault;
-  let obj3 = { id: entry.guildId, icon: entry.icon, size: 40 };
-  const guildIconURL = obj2.getGuildIconURL(obj3);
-  const intl = tmp2(1126).intl;
-  let stringResult = intl.string(tmp2(1126).t.VJlc0S);
+  dependencyMap = react.useRef(0);
+  let obj2 = entry(7091);
+  const items1 = [entry.guildId];
+  const tmp5 = obj(obj2.useRecyclingState(false, items1, () => {
+    ref.current = ref.current + 1;
+  }), 2);
+  let closure_3 = tmp5[1];
+  const first = tmp5[0];
+  let obj3 = AvatarUtilsDefault;
+  let obj4 = { id: entry.guildId, icon: entry.icon, size: 40 };
+  const guildIconURL = obj3.getGuildIconURL(obj4);
+  const intl = tmp2(1128).intl;
+  let stringResult = intl.string(tmp2(1128).t.VJlc0S);
   if (tmp4) {
-    const intl2 = tmp2(1126).intl;
-    stringResult = intl2.string(tmp2(1126).t.cqWE2Z);
+    const intl2 = tmp2(1128).intl;
+    stringResult = intl2.string(tmp2(1128).t.cqWE2Z);
   }
-  let obj4 = { style: tmp.container, children: tmp11(tmp12, obj5) };
-  obj5 = { style: tmp.guildWrapper, children: items7 };
-  let obj6 = { style: tmp.headerContainer, children: items6 };
-  let obj7 = { style: tmp.titleContainer, children: items1 };
-  const Card = tmp2(6182).Card;
-  let obj8 = { style: tmp.guildIcon, icon: guildIconURL, guild: result, selected: false };
+  let obj5 = { style: tmp.container, children: tmp11(tmp12, obj6) };
+  obj6 = { style: tmp.guildWrapper, children: items8 };
+  let obj7 = { style: tmp.headerContainer, children: items7 };
+  let obj8 = { style: tmp.titleContainer, children: items2 };
+  const Card = tmp2(6459).Card;
+  let obj9 = { style: tmp.guildIcon, icon: guildIconURL, guild: result, selected: false };
   result = undefined;
   const tmp7Result = GuildIconDefault;
   if (null == guildIconURL) {
-    const tmp2Result = entry(2079);
+    const tmp2Result = entry(2082);
     result = tmp2Result.fromGuildDirectoryEntry(entry);
   }
-  items1 = [closure_10(tmp7Result, obj8), ];
-  let obj9 = { style: tmp.guildInfoContainer, children: items2 };
-  items2 = [closure_10(tmp2(5088).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
-  let obj10 = { style: tmp.memberInfo, children: items4 };
+  items2 = [closure_10(tmp7Result, obj9), ];
+  let obj10 = { style: tmp.guildInfoContainer, children: items3 };
+  items3 = [closure_10(tmp2(5187).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
   let tmp11Result = null;
+  const obj11 = { style: tmp.memberInfo, children: items5 };
   if (null != approximatePresenceCount) {
-    const obj11 = { children: items3 };
-    const obj12 = { style: tmp.dotOnline };
-    items3 = [closure_10(tmp12, obj12), ];
-    const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl3.format(entry(1126).t["LC+S+m"], obj14) };
-    const Text = tmp2(5088).Text;
-    intl3 = tmp2(1126).intl;
-    obj14 = { membersOnline: approximatePresenceCount };
-    items3[1] = closure_10(Text, obj13);
-    tmp11Result = tmp11(closure_11, obj11);
+    const obj12 = { children: items4 };
+    const obj13 = { style: tmp.dotOnline };
+    items4 = [closure_10(tmp12, obj13), ];
+    const obj14 = { variant: "text-xs/medium", color: "text-default", children: intl3.format(entry(1128).t["LC+S+m"], obj15) };
+    const Text = tmp2(5187).Text;
+    intl3 = tmp2(1128).intl;
+    obj15 = { membersOnline: approximatePresenceCount };
+    items4[1] = closure_10(Text, obj14);
+    tmp11Result = tmp11(closure_11, obj12);
   }
-  items4 = [tmp11Result, ];
+  items5 = [tmp11Result, ];
   let tmp11Result2 = null;
   if (null != approximateMemberCount) {
-    const obj15 = { children: items5 };
-    const obj16 = { style: tmp.dotOffline };
-    items5 = [closure_10(tmp12, obj16), ];
-    const obj17 = { variant: "text-xs/medium", color: "text-default", children: intl4.format(entry(1126).t.zRl6XR, obj18) };
-    const Text2 = tmp2(5088).Text;
-    intl4 = tmp2(1126).intl;
-    obj18 = { count: approximateMemberCount };
-    items5[1] = closure_10(Text2, obj17);
-    tmp11Result2 = tmp11(closure_11, obj15);
+    const obj16 = { children: items6 };
+    const obj17 = { style: tmp.dotOffline };
+    items6 = [closure_10(tmp12, obj17), ];
+    const obj18 = { variant: "text-xs/medium", color: "text-default", children: intl4.format(entry(1128).t.zRl6XR, obj19) };
+    const Text2 = tmp2(5187).Text;
+    intl4 = tmp2(1128).intl;
+    obj19 = { count: approximateMemberCount };
+    items6[1] = closure_10(Text2, obj18);
+    tmp11Result2 = tmp11(closure_11, obj16);
   }
-  items4[1] = tmp11Result2;
+  items5[1] = tmp11Result2;
+  items3[1] = closure_12(View, obj11);
   items2[1] = closure_12(View, obj10);
-  items1[1] = closure_12(View, obj9);
-  items6 = [tmp11(tmp12, obj7), ];
-  const obj19 = { children: closure_10(GuildDirectoryMoreMenuDefault, { entry }) };
-  items6[1] = closure_10(View, obj19);
-  items7 = [tmp11(tmp12, obj6), , , ];
+  items7 = [tmp11(tmp12, obj8), ];
+  const obj20 = { children: closure_10(GuildDirectoryMoreMenuDefault, { entry }) };
+  items7[1] = closure_10(View, obj20);
+  items8 = [tmp11(tmp12, obj7), , , ];
   let tmp10Result = null != description;
   if (tmp10Result) {
     tmp10Result = "" !== description;
   }
   if (tmp10Result) {
-    const obj20 = { lineClamp: 3, style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: description };
-    tmp10Result = tmp10(tmp2(5088).Text, obj20);
+    const obj21 = { lineClamp: 3, style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: description };
+    tmp10Result = tmp10(tmp2(5187).Text, obj21);
   }
-  items7[1] = tmp10Result;
-  const obj21 = { style: tmp.flex };
-  items7[2] = closure_10(View, obj21);
-  const obj22 = {
+  items8[1] = tmp10Result;
+  const obj22 = { style: tmp.flex };
+  items8[2] = closure_10(View, obj22);
+  const obj23 = {
     loading: first,
     onPress: function handleJoinGuild() {
       return obj(...arguments);
@@ -255,12 +276,12 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
     text: stringResult
   };
   str2 = "active";
-  const Button = tmp2(5379).Button;
+  const Button = tmp2(5479).Button;
   if (tmp4) {
     str2 = "secondary";
   }
-  items7[3] = closure_10(Button, obj22);
-  return closure_10(Card, obj4);
+  items8[3] = closure_10(Button, obj23);
+  return closure_10(Card, obj5);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");

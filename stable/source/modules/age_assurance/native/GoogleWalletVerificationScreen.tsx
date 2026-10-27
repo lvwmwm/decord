@@ -1,11 +1,11 @@
-// Module ID: 7686
-// Function ID: 7687
+// Module ID: 7957
+// Function ID: 7958
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5909, 7542, 7507, 5729, 5734, 1126, 3120, 7510, 7511, 5377, 5088, 5958, 5379, 5918, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1505, 6165, 7813, 7778, 5985, 5990, 1128, 3143, 7781, 7782, 5477, 5187, 6214, 5479, 6174, 2]
 
-// Module 7686 (GoogleWalletVerificationScreen)
+// Module 7957 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

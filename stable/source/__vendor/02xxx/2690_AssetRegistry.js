@@ -1,10 +1,10 @@
 // Module ID: 2690
 // Function ID: 2691
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2690 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "b2445b59e5ee54661a6bee0e68df3405", name: "ro.messages.b2445b59e5ee54661a6bee0e68df3405.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "cafe3de0b8ebe9d39f0d68daef560e51", name: "GiftedSubscriptionsUntranslated.compiled.messages", type: "jsona" });

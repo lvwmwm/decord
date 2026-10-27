@@ -1,33 +1,35 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 11628
+// Function ID: 11629
 // Name: ConjureRemix
-// Dependencies: [5, 13223, 11415, 13250, 3849, 1126, 2]
+// Dependencies: [5, 10978, 1128, 3883, 11004, 10999, 11068, 2]
 // Exports: remixConjureProjectInto
 
-// Module 17077 (ConjureRemix)
-import ConjureActionCreators from "ConjureActionCreators" /* 11415 */;
+// Module 11628 (ConjureRemix)
+import intl3 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13223 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, status;
+let closure_2, closure_3, projectId;
 
 let closure_4;
 let hasOwnProperty;
+let metroRequire;
 let obj = function _remixConjureProjectInto() {
-  obj = _asyncToGenerator(async (arg0, arg1) => {
-    const user = arg0;
-    let closure_1 = arg1;
-    c6 = 0;
-    let c7 = 0;
+  obj = _asyncToGenerator(async (projectId, guild_id) => {
     let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
     return (async (arg0, value) => {
+      let acceptRemixResult;
       let deleteProjectResult;
-      let intl;
+      let intl2;
       let name;
-      let obj4;
-      if (c7 === 2) {
-        c7 = 3;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -39,106 +41,111 @@ let obj = function _remixConjureProjectInto() {
         }
       } else {
         try {
-          let Cn8H0Y;
-          let projectId;
-          c7 = 2;
-          if (0 === c6) {
+          let obj5;
+          let c2;
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c7 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c7 = 3;
+              c6 = 3;
               return { value, done: true };
             } else {
-              status = tmp;
               closure_2 = tmp4;
-              Cn8H0Y = undefined;
-              projectId = null;
-              c5 = 1;
-              const obj5 = { name: "" + name.slice(0, 120) + closure_2_6, guild_id: projectId, install_scope: user.install_scope };
-              name = user.name;
+              projectId = undefined;
+              closure_3 = undefined;
+              obj5 = { ok: false, message: intl2.string(_modDef3883.Cn8H0Y) };
+              intl2 = intl3.intl;
+              const obj15 = ConjureWorkerTickets;
+              const mintRemixTicketResult = obj15.mintRemixTicket(projectId.id);
+              c2 = mintRemixTicketResult;
+              mintRemixTicketResult.catch(() => {
+
+              });
+              c4 = 1;
+              const obj6 = { name: "" + name.slice(0, 120) + closure_2_7, guild_id, install_scope: projectId.install_scope };
+              name = projectId.name;
               const createProject = ConjureActionCreators.createProject;
               const _HermesInternal = HermesInternal;
               ConjureActionCreators;
-              c6 = 2;
-              c7 = 1;
-              const obj6 = { value: createProject(obj5), done: false };
-              return obj6;
+              c5 = 3;
+              c6 = 1;
+              const obj8 = { value: createProject(obj6), done: false };
+              return obj8;
             }
+          } else if (1 === c5) {
+            c4 = 0;
+            c6 = 3;
+            return { value: obj5, done: true };
           } else {
-            if (1 === c6) {
-              c5 = 0;
-              status = closure_4;
-              if (null != projectId) {
-                c6 = 4;
-                c7 = 1;
-                const obj9 = closure_131_0(closure_131_2[2]);
-                const obj7 = {
-                  value: deleteProjectResult.catch(() => {
-
-                            }),
-                  done: false
-                };
-                deleteProjectResult = obj9.deleteProject(projectId);
-                return obj7;
-              }
-            } else if (2 === c6) {
+            if (2 === c5) {
               if (arg0 === 1) {
-                c7 = 3;
+                c6 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c5 = 0;
-                c7 = 3;
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                let obj12;
+                closure_3 = value;
+                if ("accepted" !== closure_3) {
+                  closure_131_4(projectId);
+                  if ("rejected" === closure_3) {
+                    c5 = 4;
+                    c6 = 1;
+                    const obj7 = closure_131_0(closure_131_2[5]);
+                    const obj11 = {
+                      value: deleteProjectResult.catch(() => {
+
+                                    }),
+                      done: false
+                    };
+                    deleteProjectResult = obj7.deleteProject(projectId);
+                    return obj11;
+                  }
+                } else {
+                  const intl = closure_131_0(closure_131_2[2]).intl;
+                  closure_131_6(projectId, intl.string(closure_131_1(closure_131_2[3]).jviD6Y), undefined, { remix: true });
+                  obj12 = { ok: true, projectId };
+                }
+                c6 = 3;
+                return { value: obj12, done: true };
+              }
+            } else if (3 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
                 return { value, done: true };
               } else {
                 projectId = value;
-                c6 = 3;
-                c7 = 1;
-                const obj10 = { value: obj4.remixProjectWorkspace(user.id, projectId), done: false };
-                obj4 = closure_131_0(closure_131_2[3]);
-                return obj10;
-              }
-            } else if (3 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                c7 = 3;
-                return { value, done: true };
-              } else {
-                c5 = 0;
-                closure_131_4(projectId);
-                const intl2 = closure_131_0(closure_131_2[5]).intl;
-                closure_131_5(projectId, intl2.string(closure_131_1(closure_131_2[4]).jviD6Y), undefined, { remix: true });
-                c7 = 3;
-                return { value: { ok: true, projectId }, done: true };
+                c4 = 0;
+                closure_131_5(projectId);
+                c5 = 2;
+                c6 = 1;
+                const obj2 = closure_131_0(closure_131_2[6]);
+                const obj16 = { value: acceptRemixResult.catch(() => "rejected"), done: false };
+                acceptRemixResult = obj2.acceptRemix(c2, projectId);
+                return obj16;
               }
             } else if (arg0 === 1) {
-              c7 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c7 = 3;
+              c6 = 3;
               return { value, done: true };
             }
-            if (status instanceof closure_131_0(closure_131_2[3]).ConjureRemixError) {
-              if (409 === status.status) {
-                Cn8H0Y = closure_131_1(closure_131_2[4]).kQerlZ;
-              }
-              const obj14 = { ok: false, message: intl.string(Cn8H0Y) };
-              intl = closure_131_0(closure_131_2[5]).intl;
-              c7 = 3;
-              return { value: obj14, done: true };
-            }
-            Cn8H0Y = closure_131_1(closure_131_2[4]).Cn8H0Y;
+            obj12 = obj5;
           }
-        } catch (tmp38) {
-          closure_4 = tmp38;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp38;
+        } catch (tmp36) {
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp36;
           } else {
-            c6 = 1;
+            c5 = 1;
           }
         }
       }
@@ -146,8 +153,8 @@ let obj = function _remixConjureProjectInto() {
   });
   return obj(...arguments);
 };
-({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty } = ConjureConnectionStore);
-let c6 = " (Remix)";
+({ closeConnection: closure_4, ensureConnection: hasOwnProperty, sendUserMessage: metroRequire } = ConjureConnectionStore);
+let c7 = " (Remix)";
 const result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx");
 
 export const remixConjureProjectInto = function remixConjureProjectInto() {

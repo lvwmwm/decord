@@ -1,17 +1,17 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 12261
+// Function ID: 12262
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2129, 10653, 13273, 17289, 17290, 13356, 558, 576, 17065, 504, 2]
+// Dependencies: [32, 19, 2132, 6293, 11738, 12262, 12263, 11708, 558, 576, 11612, 504, 2]
 
-// Module 17288 (conjurePlanWidget)
-import _mod13273 from "module_13273" /* 13273 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 13356 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 17289 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 17290 */;
+// Module 12261 (conjurePlanWidget)
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11708 */;
+import _mod11738 from "module_11738" /* 11738 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12262 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12263 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ function previewSurface(components) {
   }
   return { layout: components.layout, components: obj };
 }
-function sampleValues(widget_config, sample_data, tmp12Result) {
+function sampleValues(widget_config, sample_data, arg2) {
   let first;
   let tmp8;
   function dataBindings(surfaces) {
@@ -118,21 +118,21 @@ function sampleValues(widget_config, sample_data, tmp12Result) {
     let tmp7 = first;
     if ("image" === obj.get(first)) {
       let _String = String;
-      let tmp13 = tmp12Result[String(undefined, tmp8)];
+      let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod13273.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod11738.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod13273.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod11738.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod13273.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod11738.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -145,12 +145,12 @@ function previewAsset(key) {
   size = { width: v256, height: v256, content_type: "image/png", is_animated: false };
   return obj;
 }
-function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp12Result, stateFromStores) {
+function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, arg2, stateFromStores) {
   let keys;
   let obj3;
   let tmp6;
   let tmp7;
-  let closure_0 = tmp12Result;
+  let closure_0 = arg2;
   const obj = {};
   const entries = Object.entries(widget_config.surfaces);
   const tmp2 = entries[Symbol.iterator]();
@@ -162,7 +162,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
     }
     continue;
   }
-  const applicationWidgetSurfaceConfigsSchema = _mod13273.applicationWidgetSurfaceConfigsSchema;
+  const applicationWidgetSurfaceConfigsSchema = _mod11738.applicationWidgetSurfaceConfigsSchema;
   const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
   if (safeParseResult.success) {
     const data = safeParseResult.data;
@@ -173,7 +173,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
         const obj2 = { locale: stateFromStores, surfaceConfigs: data, isLoading: false, hasIdentity: true, resolutionContext: obj3 };
         const _Object = Object;
         obj3 = {
-          data: sampleValues(widget_config, widget_preview, tmp12Result),
+          data: sampleValues(widget_config, widget_preview, arg2),
           applicationAssets: keys.map(previewAsset),
           getApplicationAssetUrl(arg0) {
                   let str = closure_0[arg0.key];
@@ -184,7 +184,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
                 },
           localizedStrings
         };
-        keys = Object.keys(tmp12Result);
+        keys = Object.keys(arg2);
         tmp15 = obj2;
       }
     }
@@ -195,9 +195,10 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
 }
 const localizedStrings = [];
 let closure_7 = {};
-let c8 = 256;
+let closure_8 = {};
+let c9 = 256;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -217,7 +218,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
     const effect = obj2.useEffect(tmp4, tmp5);
     return tmp3;
   }
-  const fn = function u() {
+  const fn = function o() {
     let obj = closure_1;
     let _Object = Object;
     if (closure_1 == null) {
@@ -315,9 +316,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   const obj = require("react");
   const cResult = obj.c(13);
   ({ widget_config, widget_preview } = arg1);
+  if (undefined === widget_preview) {
+    widget_preview = closure_8;
+  }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
-    const fn = function o() {
+    const fn = function u() {
       return locale.locale;
     };
     cResult[0] = items;
@@ -337,7 +341,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     tmp8 = cResult[2];
   }
   if (cResult[3] !== arg0) {
-    const fn2 = function b() {
+    const fn2 = function j() {
       const project = ConjureProjectStore.getProject(closure_0);
       let prop;
       if (project != null) {
@@ -363,60 +367,55 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   }
   const tmpResult2 = require("get initialized");
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10);
-  let images;
-  const tmp12 = closure_14;
-  if (widget_preview != null) {
-    images = widget_preview.images;
-  }
-  const tmp12Result = tmp12(arg0, images);
+  const tmp12 = closure_15(arg0, widget_preview.images);
   if (cResult[5] === widget_config) {
-    if (cResult[6] === tmp12Result) {
+    if (cResult[6] === tmp12) {
       if (cResult[7] === stateFromStores) {
-        let tmp15;
+        let tmp13;
         if (cResult[8] === widget_preview) {
-          tmp15 = cResult[9];
+          tmp13 = cResult[9];
         }
         if (cResult[10] === stateFromStores1) {
-          let tmp22;
-          if (cResult[11] === tmp15) {
-            tmp22 = cResult[12];
+          let tmp20;
+          if (cResult[11] === tmp13) {
+            tmp20 = cResult[12];
           }
-          return tmp22;
+          return tmp20;
         }
-        let tmp23 = null;
+        let tmp22 = null;
         if (null != stateFromStores1) {
-          tmp23 = null;
-          if (null != tmp15) {
-            tmp23 = { applicationId: stateFromStores1, rendererProps: tmp15 };
-            const obj2 = { applicationId: stateFromStores1, rendererProps: tmp15 };
+          tmp22 = null;
+          if (null != tmp13) {
+            tmp22 = { applicationId: stateFromStores1, rendererProps: tmp13 };
+            const obj2 = { applicationId: stateFromStores1, rendererProps: tmp13 };
           }
         }
         cResult[10] = stateFromStores1;
-        cResult[11] = tmp15;
-        cResult[12] = tmp23;
-        tmp22 = tmp23;
+        cResult[11] = tmp13;
+        cResult[12] = tmp22;
+        tmp20 = tmp22;
       }
     }
   }
-  let tmp16 = null;
+  let tmp14 = null;
   if (null != widget_config) {
-    tmp16 = null;
-    if (null != widget_preview) {
-      tmp16 = buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp12Result, stateFromStores);
-    }
+    tmp14 = buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp12, stateFromStores);
   }
   cResult[5] = widget_config;
-  cResult[6] = tmp12Result;
+  cResult[6] = tmp12;
   cResult[7] = stateFromStores;
   cResult[8] = widget_preview;
-  cResult[9] = tmp16;
-  tmp15 = tmp16;
+  cResult[9] = tmp14;
+  tmp13 = tmp14;
 }) : (function useConjurePlanWidget(arg0, widget_config) {
   let closure_0;
   let stateFromStores1;
   _require = arg0;
   widget_config = widget_config.widget_config;
-  const widget_preview = widget_config.widget_preview;
+  let widget_preview = widget_config.widget_preview;
+  if (undefined === widget_preview) {
+    widget_preview = closure_8;
+  }
   let obj = require("get initialized");
   const items = [stateFromStores1];
   const stateFromStores = obj.useStateFromStores(items, () => stateFromStores1.locale);
@@ -440,21 +439,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     }
     return prop;
   });
-  let images;
-  const tmp3 = closure_14;
-  if (widget_preview != null) {
-    images = widget_preview.images;
-  }
-  const tmp3Result = tmp3(arg0, images);
-  closure_5 = tmp3Result;
-  const items2 = [widget_config, widget_preview, tmp3Result, stateFromStores];
+  const tmp3 = closure_15(arg0, widget_preview.images);
+  closure_5 = tmp3;
+  const items2 = [widget_config, widget_preview, tmp3, stateFromStores];
   const memo = stateFromStores.useMemo(() => {
     let tmp2 = null;
     if (null != widget_config) {
-      tmp2 = null;
-      if (null != widget_preview) {
-        tmp2 = buildConjurePlanWidgetRendererProps(tmp, tmp3, closure_5, stateFromStores);
-      }
+      tmp2 = buildConjurePlanWidgetRendererProps(tmp, widget_preview, closure_5, stateFromStores);
     }
     return tmp2;
   }, items2);

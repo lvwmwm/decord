@@ -1,43 +1,34 @@
 // Module ID: 1587
 // Function ID: 1588
 // Name: react
-// Dependencies: [19, 1533]
-// Exports: useFocusedListenersChildrenAdapter
+// Dependencies: [19, 1535]
+// Exports: useOnRouteFocus
 
 // Module 1587 (react)
-import react2 from "react" /* 1533 */;
+import react2 from "react" /* 1535 */;
 import react from "react" /* 19 */;
 
 
-export const useFocusedListenersChildrenAdapter = function useFocusedListenersChildrenAdapter(navigation) {
-  navigation = navigation.navigation;
-  const focusedListeners = navigation.focusedListeners;
-  const addListener = react.useContext(react2.NavigationBuilderContext).addListener;
-  const items = [focusedListeners, navigation];
-  const callback = react.useCallback((fn) => {
-    if (navigation.isFocused()) {
-      for (const item10012 of focusedListeners) {
-        let item10012Result = item10012(fn);
-        let handled = item10012Result.handled;
-        let tmp4 = handled;
-        if (tmp4) {
-          let obj2 = { handled, result: tmp5 };
-          obj.return();
-          return obj2;
-        }
-      }
-      const obj3 = { handled: true, result: fn(navigation) };
-      return obj3;
-    } else {
-      return { handled: false, result: null };
+export const useOnRouteFocus = function useOnRouteFocus(router) {
+  router = router.router;
+  const getState = router.getState;
+  const key = router.key;
+  const setState = router.setState;
+  const onRouteFocus = react.useContext(react2.NavigationBuilderContext).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return react.useCallback((arg0) => {
+    const tmp = getState();
+    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
+    if (stateForRouteFocus !== tmp) {
+      setState(stateForRouteFocus);
+    }
+    let tmp6 = undefined !== onRouteFocus;
+    const tmp5 = onRouteFocus;
+    if (tmp6) {
+      tmp6 = undefined !== key;
+    }
+    if (tmp6) {
+      tmp5(key);
     }
   }, items);
-  const items1 = [addListener, callback];
-  const effect = react.useEffect(() => {
-    let tmpResult;
-    if (addListener != null) {
-      tmpResult = tmp("focus", callback);
-    }
-    return tmpResult;
-  }, items1);
 };

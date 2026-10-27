@@ -1,33 +1,33 @@
-// Module ID: 18005
-// Function ID: 18006
+// Module ID: 18398
+// Function ID: 18399
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5081, 2129, 2065, 5108, 11641, 5966, 1085, 5967, 21, 5092, 587, 558, 576, 17415, 7015, 5386, 504, 11, 6059, 17996, 6185, 17416, 17994, 8380, 1200, 12593, 9309, 17418, 4962, 17995, 16807, 15617, 2]
+// Dependencies: [19, 5181, 2132, 2068, 5207, 12824, 6222, 1087, 6223, 21, 5191, 587, 558, 576, 17797, 7290, 5486, 504, 11, 6337, 18389, 6462, 17798, 18387, 8658, 1202, 13529, 9615, 17800, 5057, 18388, 17487, 16377, 2]
 
-// Module 18005 (LaunchPadSearchResultUser)
+// Module 18398 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import isStreamingDefault from "isStreaming" /* 8380 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16807 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17415 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 17416 */;
-import renderChannelContentDefault from "renderChannelContent" /* 17418 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17994 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 17995 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17996 */;
+import Constants from "Constants" /* 1087 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import isStreamingDefault from "isStreaming" /* 8658 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 17487 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17797 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17798 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17800 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 18387 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 18388 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 18389 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import TypingStore from "TypingStore" /* 11641 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import TypingStore from "TypingStore" /* 12824 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
       }
     }
   }
-  const tmpResult = user(5386);
+  const tmpResult = user(5486);
   const fontScale = tmpResult.useFontScale();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
@@ -288,7 +288,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
     }
   }
   renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp(6185).PressableHighlight;
+  const PressableHighlight = tmp(6462).PressableHighlight;
   if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
@@ -402,7 +402,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
         }
       }
     }
-    const obj3 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp35, streaming: tmp37, style: first.icon.margin, size: first.icon.avatarSize, animate: !stateFromStores1, typing: undefined !== isTyping && isTyping, autoStatusCutout: "radio" };
+    const obj3 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp35, streaming: tmp37, style: first.icon.margin, size: first.icon.avatarSize, animate: !stateFromStores1, typing: undefined !== isTyping && isTyping, autoStatusCutout: true };
     cResult[46] = isMobileOnline;
     cResult[47] = undefined !== isTyping && isTyping;
     cResult[48] = isVROnline;
@@ -410,8 +410,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
     cResult[50] = tmp37;
     cResult[51] = !stateFromStores1;
     cResult[52] = user;
-    cResult[53] = closure_12(user(1200).Avatar, obj3);
-    const tmp42 = closure_12(user(1200).Avatar, obj3);
+    cResult[53] = closure_12(user(1202).Avatar, obj3);
+    const tmp42 = closure_12(user(1202).Avatar, obj3);
   }
   let tmp36 = null;
   if (!user.isSystemUser()) {
@@ -479,7 +479,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
     const obj = ChannelActionCreatorsDefault;
     obj.openPrivateChannel(obj2);
   }, items);
-  let obj = user(5386);
+  let obj = user(5486);
   const fontScale = obj.useFontScale();
   let obj2 = user(504);
   const items1 = [LocaleStore];
@@ -502,7 +502,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    const tmp6Result = user(6059);
+    const tmp6Result = user(6337);
     relativeTimestamp = tmp6Result.getRelativeTimestamp(extractTimestampResult);
   }
   let str = "text-muted";
@@ -515,13 +515,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   const obj5 = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4, children: tmp2Result6(tmp16(tmp17, obj10), { fontScale }) };
   items4 = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
   const tmp2Result5 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp6(6185).PressableHighlight;
+  const PressableHighlight = tmp6(6462).PressableHighlight;
   const items5 = [, , ];
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   tmp2Result6 = renderChannelWrapperDefault;
   items5[0] = closure_12(UnreadBadgeDefault, obj6);
-  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp19, streaming: isStreamingDefault(activities), style: tmp4.icon.margin, size: tmp4.icon.avatarSize, animate: tmp21, typing: flag2, autoStatusCutout: "radio" };
-  const Avatar = tmp6(1200).Avatar;
+  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp19, streaming: isStreamingDefault(activities), style: tmp4.icon.margin, size: tmp4.icon.avatarSize, animate: tmp21, typing: flag2, autoStatusCutout: true };
+  const Avatar = tmp6(1202).Avatar;
   tmp19 = null;
   tmp16 = closure_14;
   tmp17 = closure_13;
@@ -546,8 +546,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   tmp14Result = undefined;
   if (null != lastMessage) {
     if (null != channel) {
-      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(9309).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp6(12593).ChannelRowPreview;
+      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(9615).ChannelListLayoutTypes.COMPACT };
+      const ChannelRowPreview = tmp6(13529).ChannelRowPreview;
       tmp14Result = tmp14(ChannelRowPreview, obj9);
     }
   }
@@ -585,7 +585,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   }
   const tmpResult = user(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmpResult3 = user(16807);
+  const tmpResult3 = user(17487);
   const baseChannelUnreadBadgeState = tmpResult3.useBaseChannelUnreadBadgeState(channel, stateFromStores);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
@@ -611,7 +611,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
     } else {
       tmp13 = cResult[8];
     }
-    const tmp15 = channel(15617)(channel, tmp13);
+    const tmp15 = channel(16377)(channel, tmp13);
     if (cResult[9] === channel) {
       if (cResult[10] === stateFromStores1) {
         if (cResult[11] === tmp15) {
@@ -666,7 +666,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRe
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => TypingStore.isTyping(channel.id, require.id));
   const obj4 = { channel, lastMessage: tmp4, unread, mentionCount, muted: stateFromStores, isTyping: stateFromStores1 };
-  tmp4 = channel(15617)(channel, { unread });
+  tmp4 = channel(16377)(channel, { unread });
   const merged = Object.assign(arg0);
   return closure_12(closure_16, obj4);
 });

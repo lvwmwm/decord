@@ -1,20 +1,20 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 15720
+// Function ID: 15721
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 2125, 1390, 1085, 1392, 21, 5092, 504, 6852, 6879, 8279, 14869, 8289, 4769, 8286, 9265, 5056, 14870, 2000, 14858, 14858, 8277, 6185, 1126, 8378, 14872, 2]
+// Dependencies: [19, 2128, 1392, 1087, 1394, 21, 5191, 504, 7130, 7155, 8557, 15631, 8567, 4864, 8564, 9571, 5155, 15632, 2002, 15621, 15621, 8555, 6462, 1128, 8656, 11659, 2]
 // Exports: default
 
-// Module 14958 (EditGuildIdentityAvatar)
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
+// Module 15720 (EditGuildIdentityAvatar)
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,473 +1,629 @@
 // Module ID: 1302
 // Function ID: 1303
-// Dependencies: [1301, 1299, 1303]
+// Dependencies: [1303]
 
 // Module 1302
-import _mod1299 from "module_1299" /* 1299 */;
-import _mod1301 from "module_1301" /* 1301 */;
-import getSideChannel from "getSideChannel" /* 1303 */;
+import _mod1303 from "module_1303" /* 1303 */;
 
-let obj = {
-  brackets(arg0) {
-    return arg0 + "[]";
-  },
-  comma: "comma",
-  indices(arg0, arg1) {
-    return arg0 + "[" + arg1 + "]";
-  },
-  repeat(arg0) {
-    return arg0;
-  }
-};
-function pushToArray(arg0, arg1) {
+let dependencyMap;
+
+let obj = { allowDots: false, allowEmptyArrays: false, allowPrototypes: false, allowSparse: false, arrayLimit: 20, charset: "utf-8", charsetSentinel: false, comma: false, decodeDotInKeys: false, decoder: _mod1303.decode, delimiter: "&", depth: 5, duplicates: "combine", ignoreQueryPrefix: false, interpretNumericEntities: false, parameterLimit: 1000, parseArrays: true, plainObjects: false, strictDepth: false, strictNullHandling: false, throwOnLimitExceeded: false };
+function interpretNumericEntities(arg0) {
 
 }
-let obj2 = {
-  addQueryPrefix: false,
-  allowDots: false,
-  allowEmptyArrays: false,
-  arrayFormat: "indices",
-  charset: "utf-8",
-  charsetSentinel: false,
-  commaRoundTrip: false,
-  delimiter: "&",
-  encode: true,
-  encodeDotInKeys: false,
-  encoder: _mod1301.encode,
-  encodeValuesOnly: false,
-  filter: "r",
-  format: _mod1299.default,
-  formatter: _mod1299.formatters[_mod1299.default],
-  indices: false,
-  serializeDate(arg0) {
-    return toISOString.call(arg0);
-  },
-  skipNulls: 1,
-  strictNullHandling: 1
-};
-let closure_9 = {};
-function stringify(parts1, arg1, fn, arg3, arg4, arg5, arg6, arg7, fn2, fn3, arg10, arg11, fn4, arg13, fn5, arg15, arg16, get) {
-  let items4;
-  let str2;
-  let closure_0 = fn4;
-  let value4 = get.get(closure_9);
-  let flag = false;
-  let num = 0;
-  let num2 = 0;
-  if (undefined !== value4) {
-    while (true) {
-      let value5 = value4.get(parts1);
-      let num3 = num + 1;
-      let flag2 = flag;
-      if (undefined !== value5) {
-        flag2 = true;
-        if (value5 === num3) {
-          break;
-        }
-      }
-      let tmp3 = closure_9;
-      if (undefined === value4.get(closure_9)) {
-        num3 = 0;
-      }
-      let value6 = value4.get(tmp3);
-      num2 = num3;
-      if (undefined !== value6) {
-        num = num3;
-        value4 = value6;
-        num2 = num3;
-        flag = flag2;
-      }
-    }
-    const _RangeError = RangeError;
-    const self = this;
-    const self2 = this;
-    const rangeError = new RangeError("Cyclic object value");
-    throw rangeError;
-  }
-  if (typeof fn3 === "function") {
-    str2 = fn3(arg1, parts1);
-  } else {
-    const _Date = Date;
-    if (parts1 instanceof Date) {
-      str2 = fn4(parts1);
-    } else {
-      str2 = parts1;
-      const tmp5 = "comma" === fn && isArray(parts1);
-      if (tmp5) {
-        obj2 = _mod1301;
-        str2 = obj2.maybeMap(parts1, (arg0) => {
-          let tmp = arg0;
-          if (arg0 instanceof Date) {
-            tmp = closure_0(arg0);
-          }
-          return tmp;
-        });
-      }
-    }
-  }
-  if (null === str2) {
-    str2 = "";
-    if (arg5) {
-      let tmp74 = arg1;
-      if (fn2) {
-        tmp74 = arg1;
-        if (!arg15) {
-          tmp74 = fn2(arg1, obj2.encoder, arg16, "key", arg13);
-        }
-      }
-      return tmp74;
-    }
-  }
-  const tmp9 = typeof str2 === "string" || typeof str2 === "number" || typeof str2 === "boolean" || typeof str2 === "symbol" || typeof str2 === "bigint";
-  if (!tmp9) {
-    const obj3 = _mod1301;
-    const tmp10 = require;
-    if (!obj3.isBuffer(str2)) {
-      const items = [];
-      if (undefined === str2) {
-        return items;
-      } else {
-        let arr2;
-        let arr3;
-        let tmp14;
-        if ("comma" === fn) {
-          let replaced;
-          const tmp12 = isArray;
-          if (isArray(str2)) {
-            let maybeMapResult = str2;
-            const tmp17 = arg15 && fn2;
-            if (tmp17) {
-              const tmp10Result = tmp10(1301);
-              maybeMapResult = tmp10Result.maybeMap(str2, fn2);
-            }
-            let tmp18;
-            if (maybeMapResult.length > 0) {
-              tmp18 = maybeMapResult.join(",") || null;
-              maybeMapResult.join(",") || null;
-            }
-            const items1 = [{ value: tmp18 }];
-            arr2 = items1;
-            arr3 = maybeMapResult;
-            tmp14 = tmp12;
-            obj = { value: tmp18 };
-          }
-          const _String = String;
-          const str4 = String(arg1);
-          if (arg7) {
-            replaced = str4.replace(/\./g, "%2E");
-          } else {
-            replaced = str4;
-          }
-          let text = replaced;
-          if (arg3) {
-            text = replaced;
-            if (tmp14(arr3)) {
-              text = replaced;
-              if (1 === arr3.length) {
-                text = `${tmp22}[]`;
-              }
-            }
-          }
-          const tmp25 = arg4;
-          if (tmp25) {
-            if (tmp14(arr3)) {
-              if (0 === arr3.length) {
-                return text + "[]";
-              }
-            }
-          }
-          let num4 = 0;
-          if (0 < arr2.length) {
-            while (true) {
-              let iter = arr2[num4];
-              if (typeof iter === "object") {
-                if (iter) {
-                  if (undefined !== iter.value) {
-                    let value = iter.value;
-                    if (!arg6) {
-                      if (arg11) {
-                        if (arg7) {
-                          let sum;
-                          let _String3 = String;
-                          let str11 = String(iter);
-                          let replaced1 = str11.replace(/\./g, "%2E");
-                          let tmp28 = isArray;
-                          if (isArray(arr3)) {
-                            let tmp31 = text;
-                            if (typeof fn === "function") {
-                              tmp31 = fn(text, replaced1);
-                            }
-                            sum = tmp31;
-                          } else {
-                            let text1;
-                            if (arg11) {
-                              text1 = `.${tmp27}`;
-                            } else {
-                              text1 = `${"[" + tmp27}]`;
-                            }
-                            sum = text + text1;
-                          }
-                          let result = get.set(parts1, num2);
-                          let obj7 = getSideChannel();
-                          let result1 = obj7.set(closure_9, get);
-                          if (tmp84) {
-                            let tmp39;
-                            if (arg15) {
-                              tmp39 = null;
-                            }
-                            let tmp38Result = tmp38(value, sum, fn, arg3, arg4, arg5, arg6, arg7, tmp39, fn3, arg10, arg11, fn4, arg13, fn5, arg15, arg16, obj7);
-                            if (typeof tmp37 !== "function") {
-                              break;
-                            } else {
-                              let apply = push.apply;
-                              let tmp60 = tmp38Result;
-                              if (!tmp28(tmp38Result)) {
-                                let items2 = [tmp38Result];
-                                tmp60 = items2;
-                              }
-                              let applyResult = apply(items, tmp60);
-                            }
-                          }
-                          tmp39 = fn2;
-                        }
-                      }
-                      let _String2 = String;
-                      replaced1 = String(iter);
-                    }
-                    num4 = num4 + 1;
-                  }
-                }
-              }
-              value = arr3[iter];
-            }
-            throw new TypeError("Trying to call a non-function");
-          }
-          return items;
-        }
-        arr2 = fn3;
-        arr3 = str2;
-        tmp14 = isArray;
-        const tmp13 = isArray;
-        if (!isArray(fn3)) {
-          const _Object = Object;
-          const keys = Object.keys(str2);
-          let sorted = keys;
-          if (arg10) {
-            sorted = keys.sort(arg10);
-          }
-          arr2 = sorted;
-          arr3 = str2;
-          tmp14 = tmp13;
-        }
-      }
-    }
-  }
-  if (fn2) {
-    let tmp64 = arg1;
-    if (!arg15) {
-      tmp64 = fn2(arg1, obj2.encoder, arg16, "key", arg13);
-    }
-    const text2 = `${fn5(tmp64)}=`;
-    const items3 = [`${fn5(tmp64)}=` + fn5(fn2(str2, obj2.encoder, arg16, "value", arg13))];
-    items4 = items3;
-  } else {
-    const _String4 = String;
-    const text3 = `${fn5(arg1)}=`;
-    items4 = [`${fn5(arg1)}=` + fn5(String(str2))];
-  }
-  return items4;
+function parseArrayValue(arg0, arg1, arg2) {
+
+}
+function parseQueryStringKeys(arg0, arg1, arg2, arg3) {
+
 }
 
-export default function(arg0, allowEmptyArrays) {
-  let allowEmptyArrays2;
-  let arr;
-  let encodeDotInKeys;
-  let filter1;
-  let found;
-  let skipNulls2;
-  let sort;
-  let strictNullHandling;
+export default function(str, allowEmptyArrays) {
+  let allowPrototypes;
+  let allowSparse;
+  let arrayLimit;
+  let c1;
+  let charsetSentinel;
+  let comma;
+  let decodeDotInKeys;
+  let decoder;
+  let obj10;
   const tmp = allowEmptyArrays;
   if (tmp) {
-    let arrayFormat;
-    let allowDots;
+    let charset;
+    let duplicates;
+    let allowDots1;
     if (undefined !== allowEmptyArrays.allowEmptyArrays) {
       if (typeof allowEmptyArrays.allowEmptyArrays !== "boolean") {
         const _TypeError6 = TypeError;
-        const self11 = this;
-        const self12 = this;
+        const self19 = this;
+        const self20 = this;
         const typeError = new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
         throw typeError;
       }
     }
-    if (undefined !== allowEmptyArrays.encodeDotInKeys) {
-      if (typeof allowEmptyArrays.encodeDotInKeys !== "boolean") {
+    if (undefined !== allowEmptyArrays.decodeDotInKeys) {
+      if (typeof allowEmptyArrays.decodeDotInKeys !== "boolean") {
         const _TypeError5 = TypeError;
-        const self9 = this;
-        const self10 = this;
-        const typeError1 = new TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");
+        const self17 = this;
+        const self18 = this;
+        const typeError1 = new TypeError("`decodeDotInKeys` option can only be `true` or `false`, when provided");
         throw typeError1;
       }
     }
-    if (null !== allowEmptyArrays.encoder) {
-      if (undefined !== allowEmptyArrays.encoder) {
-        if (typeof allowEmptyArrays.encoder !== "function") {
+    if (null !== allowEmptyArrays.decoder) {
+      if (undefined !== allowEmptyArrays.decoder) {
+        if (typeof allowEmptyArrays.decoder !== "function") {
           const _TypeError4 = TypeError;
-          const self7 = this;
-          const self8 = this;
-          const typeError2 = new TypeError("Encoder has to be a function.");
+          const self15 = this;
+          const self16 = this;
+          const typeError2 = new TypeError("Decoder has to be a function.");
           throw typeError2;
         }
       }
     }
-    const charset = allowEmptyArrays.charset || obj2.charset;
     if (undefined !== allowEmptyArrays.charset) {
       if ("utf-8" !== allowEmptyArrays.charset) {
         if ("iso-8859-1" !== allowEmptyArrays.charset) {
           const _TypeError3 = TypeError;
-          const self5 = this;
-          const self6 = this;
+          const self13 = this;
+          const self14 = this;
           const typeError3 = new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
           throw typeError3;
         }
       }
     }
-    let format = _mod1299.default;
-    if (undefined !== allowEmptyArrays.format) {
-      if (hasOwnProperty.call(_mod1299.formatters, allowEmptyArrays.format)) {
-        format = allowEmptyArrays.format;
-      } else {
-        const _TypeError = TypeError;
-        const self = this;
-        const self2 = this;
-        const typeError4 = new TypeError("Unknown format option provided.");
+    if (undefined !== allowEmptyArrays.throwOnLimitExceeded) {
+      if (typeof allowEmptyArrays.throwOnLimitExceeded !== "boolean") {
+        const _TypeError2 = TypeError;
+        const self11 = this;
+        const self12 = this;
+        const typeError4 = new TypeError("`throwOnLimitExceeded` option must be a boolean");
         throw typeError4;
       }
     }
-    let filter = obj2.filter;
-    const filter2 = allowEmptyArrays.filter;
-    let tmp12 = typeof filter2 === "function";
-    const tmp10 = _mod1299.formatters[format];
-    if (typeof filter2 !== "function") {
-      tmp12 = isArray(allowEmptyArrays.filter);
-    }
-    if (tmp12) {
-      filter = allowEmptyArrays.filter;
-    }
-    if (allowEmptyArrays.arrayFormat in obj) {
-      arrayFormat = allowEmptyArrays.arrayFormat;
-    } else if ("indices" in allowEmptyArrays) {
-      let str5 = "repeat";
-      if (allowEmptyArrays.indices) {
-        str5 = "indices";
-      }
-      arrayFormat = str5;
+    if (undefined === allowEmptyArrays.charset) {
+      charset = obj.charset;
     } else {
-      arrayFormat = tmp11.arrayFormat;
+      charset = allowEmptyArrays.charset;
     }
-    if ("commaRoundTrip" in allowEmptyArrays) {
-      if (typeof allowEmptyArrays.commaRoundTrip !== "boolean") {
-        const _TypeError2 = TypeError;
-        const self3 = this;
-        const self4 = this;
-        const typeError5 = new TypeError("`commaRoundTrip` must be a boolean, or absent");
-        throw typeError5;
+    if (undefined === allowEmptyArrays.duplicates) {
+      duplicates = obj.duplicates;
+    } else {
+      duplicates = allowEmptyArrays.duplicates;
+    }
+    if ("combine" !== duplicates) {
+      if ("first" !== duplicates) {
+        if ("last" !== duplicates) {
+          const _TypeError = TypeError;
+          const self9 = this;
+          const self10 = this;
+          const typeError5 = new TypeError("The duplicates option must be either combine, first, or last");
+          throw typeError5;
+        }
       }
     }
     if (undefined === allowEmptyArrays.allowDots) {
-      allowDots = true === allowEmptyArrays.encodeDotInKeys || obj2.allowDots;
+      const allowDots = true === allowEmptyArrays.decodeDotInKeys || obj.allowDots;
+      allowDots1 = allowDots;
     } else {
-      allowDots = allowEmptyArrays.allowDots;
+      allowDots1 = allowEmptyArrays.allowDots;
     }
-    obj = { addQueryPrefix: typeof allowEmptyArrays.addQueryPrefix === "boolean" ? allowEmptyArrays.addQueryPrefix : obj2.addQueryPrefix, allowDots, allowEmptyArrays, arrayFormat, charset, charsetSentinel: typeof allowEmptyArrays.charsetSentinel === "boolean" ? allowEmptyArrays.charsetSentinel : obj2.charsetSentinel, commaRoundTrip: allowEmptyArrays.commaRoundTrip, delimiter: undefined === allowEmptyArrays.delimiter ? obj2.delimiter : allowEmptyArrays.delimiter, encode: typeof allowEmptyArrays.encode === "boolean" ? allowEmptyArrays.encode : obj2.encode, encodeDotInKeys: typeof allowEmptyArrays.encodeDotInKeys === "boolean" ? allowEmptyArrays.encodeDotInKeys : obj2.encodeDotInKeys, encoder: typeof allowEmptyArrays.encoder === "function" ? allowEmptyArrays.encoder : obj2.encoder, encodeValuesOnly: typeof allowEmptyArrays.encodeValuesOnly === "boolean" ? allowEmptyArrays.encodeValuesOnly : obj2.encodeValuesOnly, filter, format, formatter: tmp10, serializeDate: typeof allowEmptyArrays.serializeDate === "function" ? allowEmptyArrays.serializeDate : obj2.serializeDate, skipNulls: typeof allowEmptyArrays.skipNulls === "boolean" ? allowEmptyArrays.skipNulls : obj2.skipNulls, sort, strictNullHandling: typeof allowEmptyArrays.strictNullHandling === "boolean" ? allowEmptyArrays.strictNullHandling : obj2.strictNullHandling };
+    const obj2 = { allowDots: allowDots1, allowEmptyArrays, allowPrototypes, allowSparse, arrayLimit, charset, charsetSentinel, comma, decodeDotInKeys, decoder, delimiter: null, depth: null, duplicates: null, ignoreQueryPrefix: null, interpretNumericEntities: null, parameterLimit: null, parseArrays: null, plainObjects: null, strictDepth: null, strictNullHandling: null, throwOnLimitExceeded: null };
     if (typeof allowEmptyArrays.allowEmptyArrays === "boolean") {
       allowEmptyArrays = allowEmptyArrays.allowEmptyArrays;
     } else {
-      allowEmptyArrays = tmp11.allowEmptyArrays;
+      allowEmptyArrays = obj.allowEmptyArrays;
     }
-    sort = null;
-    if (typeof allowEmptyArrays.sort === "function") {
-      sort = allowEmptyArrays.sort;
+    if (typeof allowEmptyArrays.allowPrototypes === "boolean") {
+      allowPrototypes = allowEmptyArrays.allowPrototypes;
+    } else {
+      allowPrototypes = obj.allowPrototypes;
     }
-    arr = obj;
-  } else {
-    arr = obj2;
-  }
-  if (typeof arr.filter === "function") {
-    found = arr.filter("", arg0);
-  } else {
-    found = arg0;
-    if (isArray(arr.filter)) {
-      filter1 = arr.filter;
-      found = arg0;
+    if (typeof allowEmptyArrays.allowSparse === "boolean") {
+      allowSparse = allowEmptyArrays.allowSparse;
+    } else {
+      allowSparse = obj.allowSparse;
     }
-  }
-  if (typeof found === "object") {
-    if (null !== found) {
-      if (!filter1) {
-        const _Object = Object;
-        filter1 = Object.keys(found);
+    if (typeof allowEmptyArrays.arrayLimit === "number") {
+      arrayLimit = allowEmptyArrays.arrayLimit;
+    } else {
+      arrayLimit = obj.arrayLimit;
+    }
+    if (typeof allowEmptyArrays.charsetSentinel === "boolean") {
+      charsetSentinel = allowEmptyArrays.charsetSentinel;
+    } else {
+      charsetSentinel = obj.charsetSentinel;
+    }
+    if (typeof allowEmptyArrays.comma === "boolean") {
+      comma = allowEmptyArrays.comma;
+    } else {
+      comma = obj.comma;
+    }
+    if (typeof allowEmptyArrays.decodeDotInKeys === "boolean") {
+      decodeDotInKeys = allowEmptyArrays.decodeDotInKeys;
+    } else {
+      decodeDotInKeys = obj.decodeDotInKeys;
+    }
+    if (typeof allowEmptyArrays.decoder === "function") {
+      decoder = allowEmptyArrays.decoder;
+    } else {
+      decoder = obj.decoder;
+    }
+    if (typeof allowEmptyArrays.delimiter !== "string") {
+      let delimiter;
+      const obj11 = obj(1303);
+      if (!obj11.isRegExp(allowEmptyArrays.delimiter)) {
+        delimiter = obj.delimiter;
       }
-      if (arr.sort) {
-        const sorted = filter1.sort(arr.sort);
+      obj2.delimiter = delimiter;
+      if (typeof allowEmptyArrays.depth !== "number") {
+        let depth;
+        let parameterLimit;
+        let plainObjects;
+        let strictDepth;
+        let strictNullHandling;
+        if (false !== allowEmptyArrays.depth) {
+          depth = obj.depth;
+        }
+        obj2.depth = depth;
+        obj2.duplicates = duplicates;
+        obj2.ignoreQueryPrefix = true === allowEmptyArrays.ignoreQueryPrefix;
+        if (typeof allowEmptyArrays.interpretNumericEntities === "boolean") {
+          interpretNumericEntities = allowEmptyArrays.interpretNumericEntities;
+        } else {
+          interpretNumericEntities = obj.interpretNumericEntities;
+        }
+        obj2.interpretNumericEntities = interpretNumericEntities;
+        if (typeof allowEmptyArrays.parameterLimit === "number") {
+          parameterLimit = allowEmptyArrays.parameterLimit;
+        } else {
+          parameterLimit = obj.parameterLimit;
+        }
+        obj2.parameterLimit = parameterLimit;
+        obj2.parseArrays = false !== allowEmptyArrays.parseArrays;
+        if (typeof allowEmptyArrays.plainObjects === "boolean") {
+          plainObjects = allowEmptyArrays.plainObjects;
+        } else {
+          plainObjects = obj.plainObjects;
+        }
+        obj2.plainObjects = plainObjects;
+        if (typeof allowEmptyArrays.strictDepth === "boolean") {
+          strictDepth = allowEmptyArrays.strictDepth;
+        } else {
+          strictDepth = obj.strictDepth;
+        }
+        obj2.strictDepth = strictDepth;
+        if (typeof allowEmptyArrays.strictNullHandling === "boolean") {
+          strictNullHandling = allowEmptyArrays.strictNullHandling;
+        } else {
+          strictNullHandling = obj.strictNullHandling;
+        }
+        obj2.strictNullHandling = strictNullHandling;
+        const throwOnLimitExceeded = allowEmptyArrays.throwOnLimitExceeded;
+        let throwOnLimitExceeded2 = typeof throwOnLimitExceeded === "boolean";
+        if (typeof throwOnLimitExceeded === "boolean") {
+          throwOnLimitExceeded2 = allowEmptyArrays.throwOnLimitExceeded;
+        }
+        obj2.throwOnLimitExceeded = throwOnLimitExceeded2;
+        obj = obj2;
       }
-      const items = [];
-      const tmp23 = getSideChannel();
-      let num3 = 0;
-      if (0 < filter1.length) {
-        while (true) {
-          let tmp24 = filter1[num3];
-          let tmp25 = found[tmp24];
-          let skipNulls = arr.skipNulls;
-          if (skipNulls) {
-            skipNulls = null === tmp25;
-          }
-          if (!skipNulls) {
-            ({ allowEmptyArrays: allowEmptyArrays2, strictNullHandling, skipNulls: skipNulls2, encodeDotInKeys } = arr);
-            let encoder = null;
-            let tmp27 = pushToArray;
-            let tmp28 = stringify;
-            if (arr.encode) {
-              encoder = arr.encoder;
+      depth = +allowEmptyArrays.depth;
+    }
+    delimiter = allowEmptyArrays.delimiter;
+  }
+  if ("" !== str) {
+    if (null != str) {
+      let tmp19 = str;
+      if (typeof str === "string") {
+        let str6 = str;
+        if (obj.ignoreQueryPrefix) {
+          str6 = str.replace(/^\?/, "");
+        }
+        let parameterLimit1;
+        const str8 = str6.replace(/%5B/gi, "[");
+        const str10 = str8.replace(/%5D/gi, "]");
+        if (obj.parameterLimit !== Infinity) {
+          parameterLimit1 = obj.parameterLimit;
+        }
+        let sum = parameterLimit1;
+        const split = str10.split;
+        const delimiter2 = obj.delimiter;
+        if (obj.throwOnLimitExceeded) {
+          sum = parameterLimit1 + 1;
+        }
+        const parts = split(delimiter2, sum);
+        if (obj.throwOnLimitExceeded) {
+          if (parts.length > parameterLimit1) {
+            let str48 = "s";
+            const _RangeError4 = RangeError;
+            const text = `Parameter limit exceeded. Only ${tmp9}`;
+            if (1 === parameterLimit1) {
+              str48 = "";
             }
-            let tmp28Result = tmp28(tmp25, tmp24, tmp66, tmp18, allowEmptyArrays2, strictNullHandling, skipNulls2, encodeDotInKeys, encoder, arr.filter, arr.sort, arr.allowDots, arr.serializeDate, arr.format, arr.formatter, arr.encodeValuesOnly, arr.charset, tmp23);
-            if (typeof tmp27 !== "function") {
-              break;
-            } else {
-              let apply = push.apply;
-              let tmp43 = tmp28Result;
-              if (!isArray(tmp28Result)) {
-                let items1 = [tmp28Result];
-                tmp43 = items1;
+            const _HermesInternal3 = HermesInternal;
+            const self7 = this;
+            const self8 = this;
+            const _RangeError41 = new _RangeError4(text + " parameter" + str48 + " allowed.");
+            throw _RangeError41;
+          }
+        }
+        const charset2 = obj.charset;
+        dependencyMap = charset2;
+        let tmp11 = charset2;
+        let num4 = -1;
+        if (obj.charsetSentinel) {
+          let tmp12 = charset2;
+          let num6 = -1;
+          let num7 = 0;
+          tmp11 = charset2;
+          num4 = -1;
+          if (0 < parts.length) {
+            do {
+              let arr2 = parts[num7];
+              let str16 = tmp12;
+              let tmp13 = num6;
+              let tmp15 = tmp12;
+              let length = num7;
+              if (0 === arr2.indexOf("utf8=")) {
+                if ("utf8=%E2%9C%93" === parts[num7]) {
+                  dependencyMap = "utf-8";
+                  str16 = "utf-8";
+                } else if ("utf8=%26%2310003%3B" === parts[num7]) {
+                  dependencyMap = "iso-8859-1";
+                  str16 = "iso-8859-1";
+                }
+                length = parts.length;
+                tmp15 = str16;
+                tmp13 = num7;
               }
-              let applyResult = apply(items, tmp43);
-            }
+              num7 = length + 1;
+              tmp12 = tmp15;
+              num6 = tmp13;
+              tmp11 = tmp15;
+              num4 = tmp13;
+            } while (num7 < parts.length);
           }
-          num3 = num3 + 1;
+        }
+        const obj5 = Object.create(null);
+        let num10 = 0;
+        tmp19 = obj5;
+        if (0 < parts.length) {
+          while (true) {
+            if (num10 !== num4) {
+              let index1;
+              let maybeMapResult;
+              let tmp27;
+              let arr11 = parts[num10];
+              let index = arr11.indexOf("]=");
+              if (-1 === index) {
+                index1 = arr11.indexOf("=");
+              } else {
+                index1 = index + 1;
+              }
+              if (-1 === index1) {
+                let str29 = "key";
+                let tmp33 = "";
+                let decoderResult = obj.decoder(arr11, obj.decoder, tmp11, "key");
+                if (obj.strictNullHandling) {
+                  tmp33 = null;
+                }
+                maybeMapResult = tmp33;
+                tmp27 = decoderResult;
+              } else {
+                let str57 = "key";
+                let decoderResult1 = obj.decoder(arr11.slice(0, index1), obj.decoder, tmp11, "key");
+                let tmp129 = obj(1303);
+                let maybeMap = tmp129.maybeMap;
+                let tmp130 = parseArrayValue;
+                let substr = arr11.slice(index1 + 1);
+                let num11 = 0;
+                if (isArray(obj5[decoderResult1])) {
+                  num11 = obj5[decoderResult1].length;
+                }
+                if (typeof tmp130 !== "function") {
+                  break;
+                } else {
+                  let parts1;
+                  if (substr) {
+                    if (typeof substr === "string") {
+                      if (obj.comma) {
+                        if (substr.indexOf(",") > -1) {
+                          parts1 = substr.split(",");
+                          maybeMapResult = maybeMap(parts1, (arg0) => obj.decoder(arg0, obj.decoder, c1, "value"));
+                          tmp27 = decoderResult1;
+                        }
+                      }
+                    }
+                  }
+                  parts1 = substr;
+                  if (obj.throwOnLimitExceeded) {
+                    parts1 = substr;
+                    if (num11 >= obj.arrayLimit) {
+                      let str25 = "Array limit exceeded. Only ";
+                      let str26 = "s";
+                      let _RangeError = RangeError;
+                      let text1 = `Array limit exceeded. Only ${obj.arrayLimit}`;
+                      if (1 === obj.arrayLimit) {
+                        str26 = "";
+                      }
+                      let _HermesInternal = HermesInternal;
+                      let str27 = " allowed in an array.";
+                      let str28 = " element";
+                      let self = this;
+                      let self2 = this;
+                      let _RangeError1 = new _RangeError(text1 + " element" + str26 + " allowed in an array.");
+                      throw _RangeError1;
+                    }
+                  }
+                }
+              }
+              let tmp34 = maybeMapResult && obj.interpretNumericEntities && tmp18;
+              let replaced = maybeMapResult;
+              if (tmp34) {
+                let _String = String;
+                let str30 = String(maybeMapResult);
+                if (typeof interpretNumericEntities === "function") {
+                  replaced = str30.replace(/&#(\d+);/g, (arg0, match) => String.fromCharCode(parseInt(match, 10)));
+                } else {
+                  let str59 = "Trying to call a non-function";
+                  throw new TypeError("Trying to call a non-function");
+                }
+              }
+              let tmp37 = replaced;
+              if (arr11.indexOf("[]=") > -1) {
+                let tmp39 = replaced;
+                if (isArray(replaced)) {
+                  let items = [replaced];
+                  tmp39 = items;
+                }
+                tmp37 = tmp39;
+              }
+              let callResult = hasOwnProperty.call(obj5, tmp27);
+              if (callResult) {
+                if ("combine" === obj.duplicates) {
+                  let obj3 = obj(1303);
+                  obj5[tmp27] = obj3.combine(obj5[tmp27], tmp37);
+                }
+              }
+              if (callResult) {
+                callResult = "last" !== obj.duplicates;
+              }
+              if (!callResult) {
+                obj5[tmp27] = tmp37;
+              }
+            }
+            num10 = num10 + 1;
+            tmp19 = obj5;
+          }
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      const tmp43 = obj.plainObjects ? Object.create(null) : {};
+      const _Object = Object;
+      const keys = Object.keys(tmp19);
+      let mergeResult = tmp43;
+      let num16 = 0;
+      let tmp46 = tmp43;
+      if (0 < keys.length) {
+        while (typeof parseQueryStringKeys === "function") {
+          let tmp50;
+          if (str38) {
+            let replaced1 = str38;
+            if (obj.allowDots) {
+              replaced1 = str38.replace(/\.([^.[]+)/g, "[$1]");
+            }
+            let match = obj.depth > 0;
+            if (match) {
+              let obj4 = /(\[[^[\]]*])/;
+              match = obj4.exec(replaced1);
+            }
+            let substr1 = replaced1;
+            if (match) {
+              substr1 = replaced1.slice(0, match.index);
+            }
+            let items1 = [];
+            if (substr1) {
+              if (!obj.plainObjects) {
+                let _Object2 = Object;
+              }
+              let arr = items1.push(substr1);
+            }
+            if (obj.depth > 0) {
+              let obj12 = /(\[[^[\]]*])/g;
+              let match1 = obj12.exec(replaced1);
+              match = match1;
+              if (null !== match1) {
+                let num17 = 0;
+                let tmp59 = match1;
+                match = match1;
+                if (0 < obj.depth) {
+                  while (true) {
+                    if (!obj.plainObjects) {
+                      let _Object3 = Object;
+                      let arr8 = tmp59[1];
+                      if (hasOwnProperty.call(Object.prototype, arr8.slice(1, -1))) {
+                        if (!obj.allowPrototypes) {
+                          break;
+                        }
+                      }
+                      break;
+                    }
+                    let arr3 = items1.push(tmp59[1]);
+                    match = tmp59;
+                    if (obj.depth > 0) {
+                      let match2 = obj12.exec(replaced1);
+                      match = match2;
+                      if (null !== match2) {
+                        num17 = num17 + 1;
+                        tmp59 = match2;
+                        match = match2;
+                      }
+                      continue;
+                    }
+                  }
+                }
+              }
+            }
+            if (match) {
+              if (true === obj.strictDepth) {
+                let _RangeError3 = RangeError;
+                let str45 = "Input depth exceeded depth option of ";
+                let self5 = this;
+                let str46 = " and strictDepth is true";
+                let self6 = this;
+                let rangeError = new RangeError("Input depth exceeded depth option of " + obj.depth + " and strictDepth is true");
+                throw rangeError;
+              } else {
+                let arr4 = items1.push(`[${arr6.slice(tmp51.index)}]`);
+              }
+            }
+            let num18 = 0;
+            if (items1.length > 0) {
+              num18 = 0;
+              if ("[]" === items1[items1.length - 1]) {
+                let substr2 = items1.slice(0, -1);
+                let joined = substr2.join("");
+                let _Array = Array;
+                let num19 = 0;
+                if (Array.isArray(arr5)) {
+                  num19 = 0;
+                  if (arr5[joined]) {
+                    num19 = arr5[joined].length;
+                  }
+                }
+                num18 = num19;
+              }
+            }
+            let tmp61 = arr5;
+            if (typeof str !== "string") {
+              if (typeof parseArrayValue === "function") {
+                let parts2;
+                if (arr5) {
+                  if (typeof arr5 === "string") {
+                    if (obj.comma) {
+                      if (arr5.indexOf(",") > -1) {
+                        parts2 = arr5.split(",");
+                        tmp61 = parts2;
+                      }
+                    }
+                  }
+                }
+                parts2 = arr5;
+                if (obj.throwOnLimitExceeded) {
+                  parts2 = arr5;
+                  if (num18 >= obj.arrayLimit) {
+                    let str39 = "Array limit exceeded. Only ";
+                    let str40 = "s";
+                    let _RangeError2 = RangeError;
+                    let text2 = `Array limit exceeded. Only ${obj.arrayLimit}`;
+                    if (1 === obj.arrayLimit) {
+                      str40 = "";
+                    }
+                    let _HermesInternal2 = HermesInternal;
+                    let str41 = " allowed in an array.";
+                    let str42 = " element";
+                    let self3 = this;
+                    let self4 = this;
+                    let _RangeError21 = new _RangeError2(text2 + " element" + str40 + " allowed in an array.");
+                    throw _RangeError21;
+                  }
+                }
+              } else {
+                let str61 = "Trying to call a non-function";
+                throw new TypeError("Trying to call a non-function");
+              }
+            }
+            let diff = items1.length - 1;
+            let tmp67 = tmp61;
+            let tmp68 = tmp61;
+            if (0 <= diff) {
+              while (true) {
+                let obj6;
+                let str43 = items1[diff];
+                if ("[]" === str43) {
+                  if (obj.parseArrays) {
+                    let combineResult;
+                    if (!obj.allowEmptyArrays) {
+                      let obj7 = obj(1303);
+                      combineResult = obj7.combine([], tmp67);
+                    } else if ("" === tmp67) {
+                      combineResult = [];
+                    }
+                    obj6 = combineResult;
+                    diff = diff - 1;
+                    tmp67 = obj6;
+                    tmp68 = obj6;
+                    if (0 > diff) {
+                      break;
+                    }
+                  }
+                }
+                let tmp71 = obj.plainObjects ? Object.create(null) : {};
+                let str44 = str43;
+                if ("[" === str43.charAt(0)) {
+                  str44 = str43;
+                  if ("]" === str43.charAt(str43.length - 1)) {
+                    str44 = str43.slice(1, -1);
+                  }
+                }
+                let replaced2 = str44;
+                if (obj.decodeDotInKeys) {
+                  replaced2 = str44.replace(/%2E/g, ".");
+                }
+                let _parseInt = parseInt;
+                let parsed = parseInt(replaced2, 10);
+                if (!obj.parseArrays) {
+                  if ("" === replaced2) {
+                    obj6 = { 0: null };
+                    obj6[0] = tmp67;
+                  }
+                }
+                let _isNaN = isNaN;
+                if (!isNaN(parsed)) {
+                  if (str43 !== replaced2) {
+                    let _String2 = String;
+                    if (String(parsed) === replaced2) {
+                      if (parsed >= 0) {
+                        if (obj.parseArrays) {
+                          if (parsed <= obj.arrayLimit) {
+                            let items2 = [];
+                            items2[parsed] = tmp67;
+                            obj6 = items2;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                obj6 = tmp71;
+                if ("__proto__" !== replaced2) {
+                  tmp71[replaced2] = tmp67;
+                  obj6 = tmp71;
+                }
+              }
+            }
+            tmp50 = tmp68;
+          }
+          let obj8 = obj(1303);
+          mergeResult = obj8.merge(mergeResult, tmp50, obj);
+          num16 = num16 + 1;
+          tmp46 = mergeResult;
         }
         throw new TypeError("Trying to call a non-function");
       }
-      const joined = items.join(arr.delimiter);
-      let str8 = "";
-      let str9 = "";
-      if (true === arr.addQueryPrefix) {
-        str9 = "?";
+      let compactResult = tmp46;
+      if (true !== obj.allowSparse) {
+        const obj9 = obj(1303);
+        compactResult = obj9.compact(tmp46);
       }
-      let tmp45 = str9;
-      if (arr.charsetSentinel) {
-        let text;
-        if ("iso-8859-1" === arr.charset) {
-          text = `${str9}utf8=%26%2310003%3B&`;
-        } else {
-          text = `${str9}utf8=%E2%9C%93&`;
-        }
-        tmp45 = text;
-      }
-      if (joined.length > 0) {
-        str8 = tmp45 + joined;
-      }
-      return str8;
+      return compactResult;
     }
   }
-  return "";
+  if (obj.plainObjects) {
+    obj10 = Object.create(null);
+  } else {
+    obj10 = {};
+  }
+  return obj10;
 };

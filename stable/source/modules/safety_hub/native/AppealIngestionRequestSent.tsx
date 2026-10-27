@@ -1,17 +1,17 @@
-// Module ID: 11506
-// Function ID: 11507
+// Module ID: 12647
+// Function ID: 12648
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7508, 21, 5092, 558, 576, 11483, 1126, 6157, 11507, 11481, 5088, 11501, 2]
+// Dependencies: [19, 17, 7779, 21, 5191, 558, 576, 12624, 1128, 5128, 12648, 12622, 5187, 12642, 2]
 
-// Module 11506 (AppealIngestionRequestSent)
+// Module 12647 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11501 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11507 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12642 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12648 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,20 +42,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp8;
   const obj = emitAppealIngestionEvent(576);
   const cResult = obj.c(20);
-  const obj2 = emitAppealIngestionEvent(11483);
+  const obj2 = emitAppealIngestionEvent(12624);
   emitAppealIngestionEvent = obj2.useEmitAppealIngestionEvent();
   const tmp5 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(emitAppealIngestionEvent(1126).t.QMbTSu);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(emitAppealIngestionEvent(1128).t.QMbTSu);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(emitAppealIngestionEvent(1126).t.Qdx8AP);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(emitAppealIngestionEvent(1128).t.Qdx8AP);
     cResult[1] = stringResult1;
     tmp8 = stringResult1;
   } else {
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { headerText: first, subHeaderText: tmp8 };
-    const tmp17 = closure_6(emitAppealIngestionEvent(11481).AppealIngestionModalHeader, obj4);
+    const tmp17 = closure_6(emitAppealIngestionEvent(12622).AppealIngestionModalHeader, obj4);
     cResult[4] = tmp17;
     tmp15 = tmp17;
   } else {
@@ -82,8 +82,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   const actionsHeader = tmp5.actionsHeader;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(emitAppealIngestionEvent(1126).t["9BRc1N"]);
+    const intl3 = tmp(1128).intl;
+    const stringResult2 = intl3.string(emitAppealIngestionEvent(1128).t["9BRc1N"]);
     cResult[5] = stringResult2;
     tmp18 = stringResult2;
   } else {
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[6] !== tmp5.actionsHeader) {
     const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: actionsHeader, children: tmp18 };
-    const tmp22 = closure_6(emitAppealIngestionEvent(5088).Text, obj5);
+    const tmp22 = closure_6(emitAppealIngestionEvent(5187).Text, obj5);
     cResult[6] = tmp5.actionsHeader;
     cResult[7] = tmp22;
     tmp20 = tmp22;
@@ -99,8 +99,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
     tmp20 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1126).intl;
-    const stringResult3 = intl4.string(emitAppealIngestionEvent(1126).t.PxL38B);
+    const intl4 = tmp(1128).intl;
+    const stringResult3 = intl4.string(emitAppealIngestionEvent(1128).t.PxL38B);
     cResult[8] = stringResult3;
     tmp23 = stringResult3;
   } else {
@@ -122,8 +122,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
     tmp25 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl5 = tmp(1126).intl;
-    const stringResult4 = intl5.string(emitAppealIngestionEvent(1126).t.qC3XKa);
+    const intl5 = tmp(1128).intl;
+    const stringResult4 = intl5.string(emitAppealIngestionEvent(1128).t.qC3XKa);
     cResult[11] = stringResult4;
     tmp30 = stringResult4;
   } else {
@@ -160,7 +160,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   const obj8 = { children: closure_7(View, obj9) };
   obj9 = { style: container, children: items };
   items = [tmp10, tmp15, tmp20, tmp25, tmp32];
-  const AppealIngestionModalScreen = tmp(11481).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(12622).AppealIngestionModalScreen;
   const tmp38 = closure_6(AppealIngestionModalScreen, obj8);
   cResult[14] = tmp5.container;
   cResult[15] = tmp32;

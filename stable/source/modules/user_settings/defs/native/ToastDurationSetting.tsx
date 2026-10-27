@@ -1,22 +1,22 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 16475
+// Function ID: 16476
 // Name: ToastDurationSetting
-// Dependencies: [19, 5081, 7988, 1085, 21, 558, 576, 504, 14698, 1126, 15612, 10611, 10664, 2]
+// Dependencies: [19, 5181, 8260, 1087, 21, 558, 576, 504, 15466, 1128, 16372, 10936, 11084, 2]
 
-// Module 15715 (ToastDurationSetting)
+// Module 16475 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10611 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15612 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10936 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15466 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16372 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastDu
     tmp8 = cResult[2];
   }
   if (cResult[3] !== stateFromStores) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { seconds: stateFromStores };
     const formatResult = intl.format(intl3.t.pyvjRp, obj2);
     cResult[3] = stateFromStores;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastDu
     tmp12 = cResult[6];
   }
   if (cResult[7] !== stateFromStores) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { seconds: stateFromStores };
     const formatToPlainStringResult = intl2.formatToPlainString(intl3.t.geSp4K, obj3);
     cResult[7] = stateFromStores;

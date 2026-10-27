@@ -1,17 +1,17 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 9922
+// Function ID: 9923
 // Name: useAgeGroupPresentation
-// Dependencies: [1085, 558, 5909, 7493, 2128, 5918, 576, 1126, 2]
+// Dependencies: [1087, 558, 6165, 7764, 2131, 6174, 576, 1128, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification
 
-// Module 9621 (useAgeGroupPresentation)
+// Module 9922 (useAgeGroupPresentation)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6165 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGrou
     let first;
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult = intl3.string(intl4.t.XxRj7f);
       cResult[0] = stringResult;
       first = stringResult;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGrou
     let tmp10;
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl4.t.sK0dmH);
       cResult[1] = stringResult1;
       tmp10 = stringResult1;
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGrou
     let tmp7;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult2 = intl.string(intl4.t.lKDPGA);
       cResult[2] = stringResult2;
       tmp7 = stringResult2;

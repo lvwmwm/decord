@@ -1,13 +1,13 @@
-// Module ID: 16195
-// Function ID: 16196
+// Module ID: 16890
+// Function ID: 16891
 // Name: PremiumProfileCustomizationTryItOutSetting
-// Dependencies: [7988, 1085, 10664, 1126, 16196, 2]
+// Dependencies: [8260, 1087, 11084, 1128, 16891, 2]
 
-// Module 16195 (PremiumProfileCustomizationTryItOutSetting)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+// Module 16890 (PremiumProfileCustomizationTryItOutSetting)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ const obj = {
   screen: {
     route: UserSettingsSections.PROFILE_CUSTOMIZATION_TRY_IT_OUT,
     getComponent() {
-      return require("ProfileCustomizationTryItOutSettingScreenExperimentWrapper").default;
+      return require("ProfileCustomizationTryItOutSettingScreen").default;
     }
   }
 };

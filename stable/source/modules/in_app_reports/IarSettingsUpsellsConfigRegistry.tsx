@@ -1,15 +1,15 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 8000
+// Function ID: 8001
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 7718, 7730, 7731, 7732, 558, 576, 1388, 2]
+// Dependencies: [19, 7989, 8001, 8002, 8003, 558, 576, 1388, 2]
 
-// Module 7729 (IarSettingsUpsellsConfigRegistry)
+// Module 8000 (IarSettingsUpsellsConfigRegistry)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import MenuTypes from "MenuTypes" /* 7718 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 7730 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 7731 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 7732 */;
+import MenuTypes from "MenuTypes" /* 7989 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8001 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8002 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8003 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

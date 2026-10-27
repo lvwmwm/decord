@@ -1,26 +1,26 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 16296
+// Function ID: 16297
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 1126, 504, 5409, 1415, 6884, 6157, 1103, 5088, 1200, 6902, 2]
+// Dependencies: [19, 17, 1392, 21, 5191, 587, 558, 576, 1128, 504, 5509, 1417, 7160, 5128, 1105, 5187, 1202, 7178, 2]
 
-// Module 15536 (GuildRoleSubscriptionMemberPreview)
+// Module 16296 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1103 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import RoleIconUtils from "RoleIconUtils" /* 6884 */;
-import RoleIconDefault from "RoleIcon" /* 6902 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1105 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
+import RoleIconUtils from "RoleIconUtils" /* 7160 */;
+import RoleIconDefault from "RoleIcon" /* 7178 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,8 +55,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   if (cResult[0] !== content) {
     let stringResult = content;
     if (undefined === content) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t["6OSasb"]);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t["6OSasb"]);
     }
     cResult[0] = content;
     cResult[1] = stringResult;
@@ -317,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     const obj5 = { style: tmp3.contextRow, children: items3 };
     const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(5088).Text;
+    const Text = tmp4(5187).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;

@@ -1,41 +1,41 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 7112
+// Function ID: 7113
 // Name: Form/FormRadio
-// Dependencies: [19, 17, 21, 5092, 558, 576, 6835, 6836, 2]
+// Dependencies: [19, 21, 5191, 558, 576, 7113, 7114, 5128, 2]
 
-// Module 6834 (Form/FormRadio)
-import react_native from "react-native" /* 17 */;
+// Module 7112 (Form/FormRadio)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const Image = react_native.Image;
 const jsx = Fragment.jsx;
-let closure_5 = createStyles.createStyles({ radio: { width: 22, height: 22 } });
+let closure_4 = createStyles.createStyles({ radio: { width: 22, height: 22 } });
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(selected) {
   const obj = react2;
   const cResult = obj.c(3);
   selected = selected.selected;
-  const tmp3 = closure_5();
-  const tmp4 = importDefault(selected ? 6835 : 6836);
+  const tmp3 = closure_4();
+  const tmp4Result = importDefault(selected ? 7113 : 7114);
   if (cResult[0] === tmp3.radio) {
-    let tmp5;
-    if (cResult[1] === tmp4) {
-      tmp5 = cResult[2];
+    let tmp6;
+    if (cResult[1] === tmp4Result) {
+      tmp6 = cResult[2];
     }
-    return tmp5;
+    return tmp6;
   }
-  const tmp6 = <Image style={tmp3.radio} source={tmp4} />;
+  const tmp7 = jsx(FastImageDefault, { style: tmp3.radio, source: tmp4Result });
   cResult[0] = tmp3.radio;
-  cResult[1] = tmp4;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
+  cResult[1] = tmp4Result;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
 }) : (function FormRadio(selected) {
   selected = selected.selected;
-  return <Image style={closure_5().radio} source={importDefault(selected ? 6835 : 6836)} />;
+  FastImageDefault;
+  return <tmp5 style={closure_4().radio} source={importDefault(selected ? 7113 : 7114)} />;
 });
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 

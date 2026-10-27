@@ -1,22 +1,22 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 13846
+// Function ID: 13847
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5092, 558, 576, 9210, 6157, 12921, 5088, 1126, 5379, 5377, 6814, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 9517, 5128, 13847, 5187, 1128, 5479, 5477, 7092, 2]
 
-// Module 12920 (TwoWayLinkError)
+// Module 13846 (TwoWayLinkError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12921 */;
+import intl3 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13847 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkEr
             const _Symbol = Symbol;
             ({ footerContainer, footerButton } = twoWayLinkStyles);
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1126).intl;
+              const intl = tmp(1128).intl;
               const stringResult = intl.string(intl3.t["5911Lb"]);
               cResult[13] = stringResult;
               tmp21 = stringResult;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkEr
             }
             const _Symbol2 = Symbol;
             if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl2 = tmp(1126).intl;
+              const intl2 = tmp(1128).intl;
               const stringResult1 = intl2.string(intl3.t["ETE/oC"]);
               cResult[16] = stringResult1;
               tmp26 = stringResult1;

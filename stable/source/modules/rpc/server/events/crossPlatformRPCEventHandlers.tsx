@@ -1,34 +1,37 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 15553
+// Function ID: 15554
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [5440, 2019, 2083, 5897, 2065, 2125, 2087, 2012, 5110, 1390, 5113, 5639, 1085, 10940, 10946, 10937, 5924, 14719, 8453, 12, 14727, 1097, 568, 10947, 14789, 14790, 2]
+// Dependencies: [5540, 2021, 2086, 6153, 2068, 2128, 2090, 2014, 5209, 1392, 5212, 5895, 1087, 11330, 11335, 9169, 6180, 15486, 8731, 12, 15487, 7314, 9162, 15493, 1099, 568, 9167, 15554, 15555, 2]
 
-// Module 14788 (crossPlatformRPCEventHandlers)
+// Module 15553 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10940 */;
-import RPCHelpers from "RPCHelpers" /* 10946 */;
-import transformUserDefault from "transformUser" /* 10947 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14719 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14727 */;
-import transformGuildMemberDefault from "transformGuildMember" /* 14789 */;
-import transformApplicationDefault from "transformApplication" /* 14790 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import Constants_mod from "Constants" /* 5639 */;
-import Constants_mod2 from "Constants" /* 1085 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import frameDeepLinks from "frameDeepLinks" /* 7314 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9162 */;
+import transformUserDefault from "transformUser" /* 9167 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11330 */;
+import RPCHelpers from "RPCHelpers" /* 11335 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15486 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15487 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15493 */;
+import transformGuildMemberDefault from "transformGuildMember" /* 15554 */;
+import transformApplicationDefault from "transformApplication" /* 15555 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import RunningGameStore from "RunningGameStore" /* 2021 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import UserStore from "UserStore" /* 1392 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import Constants_mod from "Constants" /* 5895 */;
+import Constants_mod2 from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let application, gameForPID, streamerActiveStreamMetadata;
@@ -43,8 +46,9 @@ let closure_16;
 let items;
 let items13;
 let items14;
-let items18;
+let items15;
 let items19;
+let items20;
 let obj11;
 let obj16;
 let obj18;
@@ -54,12 +58,12 @@ let obj26;
 let obj28;
 let obj30;
 let obj32;
-let obj40;
-let obj43;
-let obj45;
-let obj49;
+let obj41;
+let obj44;
+let obj46;
 let obj5;
-let obj51;
+let obj50;
+let obj52;
 let obj7;
 let obj9;
 function handler() {
@@ -108,7 +112,7 @@ function messageEvents(args) {
     const obj4 = RPCHelpers;
     const tmp11 = require;
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
-      const tmp11Result = tmp11(5924);
+      const tmp11Result = tmp11(6180);
       if (tmp11Result.userCannotSeeNSFWContent(channel)) {
         const _HermesInternal = HermesInternal;
         const self = this;
@@ -164,7 +168,7 @@ function voiceSessionEvent(args) {
 }
 const getGuildIconURL = GuildRecord.getGuildIconURL;
 let Constants = Constants_mod2;
-({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
+({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;
 ({ ApplicationFlags: closure_15, RPCErrors: closure_16, RPCEvents } = Constants);
 let obj = { [RPC_SCOPE_CONFIG.ANY]: items };
@@ -422,7 +426,7 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(14719);
+    let obj = socket(15486);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;
@@ -489,7 +493,7 @@ const obj25 = {
 obj26 = {};
 const ACTIVITY_JOIN = RPCEvents.ACTIVITY_JOIN;
 const ANY9 = RPC_SCOPE_CONFIG.ANY;
-const items9 = [OAuth2Scopes.OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
+const items9 = [OAuth2Scopes.OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_EMBEDDED_APP_SCOPE];
 obj26[ANY9] = items9;
 obj2[ACTIVITY_JOIN] = obj25;
 const obj27 = {
@@ -549,15 +553,36 @@ const obj35 = {
   }
 };
 obj2[RPCEvents.FRAME_LAYOUT_MODE_UPDATE] = obj35;
-obj2[RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE] = activityInstanceConnectedParticipants.activityInstanceConnectedParticipantsUpdateEvent;
 const obj36 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items13 },
-  handler() {
-
+  handler(socket) {
+    socket = socket.socket;
+    const tmp = validateConjureAppFrameDefault(socket);
+    return (prevState) => {
+      prevState = prevState.prevState;
+      if (null != prevState) {
+        return prevState;
+      } else {
+        const obj = frameDeepLinks;
+        const frameDeepLinkChannelId = obj.getFrameDeepLinkChannelId(getSocketFrameDefault(socket));
+        let takeFrameDeepLinkResult = null;
+        const tmp2 = require;
+        if (null != frameDeepLinkChannelId) {
+          const tmp2Result = tmp2(7314);
+          takeFrameDeepLinkResult = tmp2Result.takeFrameDeepLink(frameDeepLinkChannelId);
+        }
+        if (null != takeFrameDeepLinkResult) {
+          const obj2 = { hash: takeFrameDeepLinkResult };
+          tmp(obj2);
+        }
+        return true;
+      }
+    };
   }
 };
-items13 = [RPC_AUTHENTICATED_SCOPE];
-obj2[RPCEvents.THERMAL_STATE_UPDATE] = obj36;
+items13 = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
+obj2[RPCEvents.FRAME_DEEP_LINK] = obj36;
+obj2[RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE] = activityInstanceConnectedParticipants.activityInstanceConnectedParticipantsUpdateEvent;
 const obj37 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items14 },
   handler() {
@@ -565,26 +590,34 @@ const obj37 = {
   }
 };
 items14 = [RPC_AUTHENTICATED_SCOPE];
-obj2[RPCEvents.ORIENTATION_UPDATE] = obj37;
-obj2[RPCEvents.VOICE_CHANNEL_SELECT] = { scope: OAuth2Scopes.OAuth2Scopes.RPC, handler: handler3 };
-const obj39 = {
-  scope: obj40,
+obj2[RPCEvents.THERMAL_STATE_UPDATE] = obj37;
+const obj38 = {
+  scope: { [RPC_SCOPE_CONFIG.ANY]: items15 },
   handler() {
 
   }
 };
-obj40 = {};
+items15 = [RPC_AUTHENTICATED_SCOPE];
+obj2[RPCEvents.ORIENTATION_UPDATE] = obj38;
+obj2[RPCEvents.VOICE_CHANNEL_SELECT] = { scope: OAuth2Scopes.OAuth2Scopes.RPC, handler: handler3 };
+const obj40 = {
+  scope: obj41,
+  handler() {
+
+  }
+};
+obj41 = {};
 const NOTIFICATION_CREATE = RPCEvents.NOTIFICATION_CREATE;
 const ALL = RPC_SCOPE_CONFIG.ALL;
-const items15 = [, ];
+const items16 = [, ];
 ({ scope: OAuth2Scopes.OAuth2Scopes.RPC, handler: handler3 });
-items15[0] = OAuth2Scopes.OAuth2Scopes.RPC;
-items15[1] = OAuth2Scopes.OAuth2Scopes.RPC_NOTIFICATIONS_READ;
-obj40[ALL] = items15;
-obj2[NOTIFICATION_CREATE] = obj39;
+items16[0] = OAuth2Scopes.OAuth2Scopes.RPC;
+items16[1] = OAuth2Scopes.OAuth2Scopes.RPC_NOTIFICATIONS_READ;
+obj41[ALL] = items16;
+obj2[NOTIFICATION_CREATE] = obj40;
 obj2[RPCEvents.RELATIONSHIP_UPDATE] = { scope: OAuth2Scopes.OAuth2Scopes.RELATIONSHIPS_READ, handler: handler4 };
-const obj42 = {
-  scope: obj43,
+const obj43 = {
+  scope: obj44,
   handler() {
     let currentUser;
     return (prevState) => {
@@ -603,16 +636,16 @@ const obj42 = {
     };
   }
 };
-obj43 = {};
-const items16 = [RPC_LOCAL_SCOPE, ];
+obj44 = {};
+const items17 = [RPC_LOCAL_SCOPE, ];
 const CURRENT_USER_UPDATE = RPCEvents.CURRENT_USER_UPDATE;
 const ANY13 = RPC_SCOPE_CONFIG.ANY;
 ({ scope: OAuth2Scopes.OAuth2Scopes.RELATIONSHIPS_READ, handler: handler4 });
-items16[1] = OAuth2Scopes.OAuth2Scopes.IDENTIFY;
-obj43[ANY13] = items16;
-obj2[CURRENT_USER_UPDATE] = obj42;
-const obj44 = {
-  scope: obj45,
+items17[1] = OAuth2Scopes.OAuth2Scopes.IDENTIFY;
+obj44[ANY13] = items17;
+obj2[CURRENT_USER_UPDATE] = obj43;
+const obj45 = {
+  scope: obj46,
   handler(args) {
     const guild_id = args.args.guild_id;
     return (prevState) => {
@@ -631,20 +664,12 @@ const obj44 = {
     };
   }
 };
-obj45 = {};
+obj46 = {};
 const CURRENT_GUILD_MEMBER_UPDATE = RPCEvents.CURRENT_GUILD_MEMBER_UPDATE;
 const ALL2 = RPC_SCOPE_CONFIG.ALL;
-const items17 = [OAuth2Scopes.OAuth2Scopes.IDENTIFY, OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ];
-obj45[ALL2] = items17;
-obj2[CURRENT_GUILD_MEMBER_UPDATE] = obj44;
-const obj46 = {
-  scope: { [RPC_SCOPE_CONFIG.ANY]: items18 },
-  handler() {
-
-  }
-};
-items18 = [RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
-obj2[RPCEvents.ENTITLEMENT_CREATE] = obj46;
+const items18 = [OAuth2Scopes.OAuth2Scopes.IDENTIFY, OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ];
+obj46[ALL2] = items18;
+obj2[CURRENT_GUILD_MEMBER_UPDATE] = obj45;
 const obj47 = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items19 },
   handler() {
@@ -652,9 +677,17 @@ const obj47 = {
   }
 };
 items19 = [RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
-obj2[RPCEvents.ENTITLEMENT_DELETE] = obj47;
+obj2[RPCEvents.ENTITLEMENT_CREATE] = obj47;
 const obj48 = {
-  scope: obj49,
+  scope: { [RPC_SCOPE_CONFIG.ANY]: items20 },
+  handler() {
+
+  }
+};
+items20 = [RPC_LOCAL_SCOPE, RPC_AUTHENTICATED_SCOPE];
+obj2[RPCEvents.ENTITLEMENT_DELETE] = obj48;
+const obj49 = {
+  scope: obj50,
   handler() {
     return (arg0) => {
       let dispatch;
@@ -708,15 +741,15 @@ const obj48 = {
     };
   }
 };
-obj49 = {};
-const items20 = [RPC_LOCAL_SCOPE, ];
+obj50 = {};
+const items21 = [RPC_LOCAL_SCOPE, ];
 const SCREENSHARE_STATE_UPDATE = RPCEvents.SCREENSHARE_STATE_UPDATE;
 const ALL3 = RPC_SCOPE_CONFIG.ALL;
-items20[1] = OAuth2Scopes.OAuth2Scopes.RPC_SCREENSHARE_READ;
-obj49[ALL3] = items20;
-obj2[SCREENSHARE_STATE_UPDATE] = obj48;
-const obj50 = {
-  scope: obj51,
+items21[1] = OAuth2Scopes.OAuth2Scopes.RPC_SCREENSHARE_READ;
+obj50[ALL3] = items21;
+obj2[SCREENSHARE_STATE_UPDATE] = obj49;
+const obj51 = {
+  scope: obj52,
   handler() {
     let videoEnabled;
     return (arg0) => {
@@ -732,20 +765,20 @@ const obj50 = {
     };
   }
 };
-obj51 = {};
-const items21 = [RPC_LOCAL_SCOPE, ];
+obj52 = {};
+const items22 = [RPC_LOCAL_SCOPE, ];
 const VIDEO_STATE_UPDATE = RPCEvents.VIDEO_STATE_UPDATE;
 const ALL4 = RPC_SCOPE_CONFIG.ALL;
-items21[1] = OAuth2Scopes.OAuth2Scopes.RPC_VIDEO_READ;
-obj51[ALL4] = items21;
-obj2[VIDEO_STATE_UPDATE] = obj50;
-const obj52 = {
+items22[1] = OAuth2Scopes.OAuth2Scopes.RPC_VIDEO_READ;
+obj52[ALL4] = items22;
+obj2[VIDEO_STATE_UPDATE] = obj51;
+const obj53 = {
   scope: "Array",
   handler() {
 
   }
 };
-obj2[RPCEvents.AUTHORIZE_REQUEST] = obj52;
+obj2[RPCEvents.AUTHORIZE_REQUEST] = obj53;
 let result = size.fileFinishedImporting("modules/rpc/server/events/crossPlatformRPCEventHandlers.tsx");
 
 export default obj2;

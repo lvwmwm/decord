@@ -1,14 +1,14 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 17432
+// Function ID: 17433
 // Name: GuildsBarDnDStore
-// Dependencies: [5963, 1267, 4850, 1272, 1255, 558, 576, 4733, 2]
+// Dependencies: [6219, 1269, 4945, 1274, 1257, 558, 576, 4828, 2]
 
-// Module 16747 (GuildsBarDnDStore)
+// Module 17432 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import react_native from "react-native" /* 1272 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import module_1267 from "module_1267" /* 1267 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import react_native from "react-native" /* 1274 */;
+import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,11 +16,11 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4733);
+const _slicedToArray = tmp(4828);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "r", overSpecs: "toCharArray$esjava$1" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "options" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

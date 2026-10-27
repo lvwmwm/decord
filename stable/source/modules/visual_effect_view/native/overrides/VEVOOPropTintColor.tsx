@@ -1,21 +1,21 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 17044
+// Function ID: 17045
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5366, 21, 5092, 587, 558, 576, 16350, 4967, 6897, 8575, 16352, 14850, 1103, 2]
+// Dependencies: [32, 19, 17, 5466, 21, 5191, 587, 558, 576, 17041, 5063, 7173, 8855, 17043, 15613, 1105, 2]
 
-// Module 16353 (VEVOOPropTintColor)
+// Module 17044 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14850 */;
-import VEVOO from "VEVOO" /* 16350 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15613 */;
+import VEVOO from "VEVOO" /* 17041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5366 */;
+import VEVOOStore from "VEVOOStore" /* 5466 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const FormSwitch = tmp(6897);
-const Form = tmp(8575);
+const FormSwitch = tmp(7173);
+const Form = tmp(8855);
 let react = react_mod;
 const View = react_native.View;
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: metroImportDefault } = VEVOOStore);
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150448 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -165,7 +165,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150448 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -212,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp15 = closure_7(obj4);
           tmp16 = globalThis;
           _setTimeout = setTimeout;
-          timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+          timerId = setTimeout(() => { /* body not rendered: F150448 */ });
         } else {
           tmp9 = closure_7;
           tmp10 = closure_7(obj1);
@@ -257,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp15 = closure_7(obj4);
             tmp16 = globalThis;
             _setTimeout = setTimeout;
-            timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+            timerId = setTimeout(() => { /* body not rendered: F150448 */ });
           } else {
             tmp9 = closure_7;
             tmp10 = closure_7(obj1);
@@ -302,7 +302,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150448 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -350,7 +350,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150448 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -396,7 +396,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp15 = closure_7(obj4);
               tmp16 = globalThis;
               _setTimeout = setTimeout;
-              timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+              timerId = setTimeout(() => { /* body not rendered: F150448 */ });
             } else {
               tmp9 = closure_7;
               tmp10 = closure_7(obj1);
@@ -442,7 +442,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 tmp15 = closure_7(obj4);
                 tmp16 = globalThis;
                 _setTimeout = setTimeout;
-                timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+                timerId = setTimeout(() => { /* body not rendered: F150448 */ });
               } else {
                 tmp9 = closure_7;
                 tmp10 = closure_7(obj1);
@@ -487,7 +487,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   tmp15 = closure_7(obj4);
                   tmp16 = globalThis;
                   _setTimeout = setTimeout;
-                  timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+                  timerId = setTimeout(() => { /* body not rendered: F150448 */ });
                 } else {
                   tmp9 = closure_7;
                   tmp10 = closure_7(obj1);
@@ -533,7 +533,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     tmp15 = closure_7(obj4);
                     tmp16 = globalThis;
                     _setTimeout = setTimeout;
-                    timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+                    timerId = setTimeout(() => { /* body not rendered: F150448 */ });
                   } else {
                     tmp9 = closure_7;
                     tmp10 = closure_7(obj1);
@@ -580,7 +580,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     tmp15 = closure_7(obj4);
                     tmp16 = globalThis;
                     _setTimeout = setTimeout;
-                    timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+                    timerId = setTimeout(() => { /* body not rendered: F150448 */ });
                   } else {
                     tmp9 = closure_7;
                     tmp10 = closure_7(obj1);
@@ -629,7 +629,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   tmp15 = closure_7(obj4);
                   tmp16 = globalThis;
                   _setTimeout = setTimeout;
-                  timerId = setTimeout(() => { /* body not rendered: F147940 */ });
+                  timerId = setTimeout(() => { /* body not rendered: F150448 */ });
                 } else {
                   tmp9 = closure_7;
                   tmp10 = closure_7(obj1);
@@ -683,8 +683,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj5 = { disabled: !tmp8, initialValue: ref, onValueChange: tmp38 };
           cResult[21] = !tmp8;
           cResult[22] = tmp38;
-          cResult[23] = closure_8(first1(16352), obj5);
-          const tmp42 = closure_8(first1(16352), obj5);
+          cResult[23] = closure_8(first1(17043), obj5);
+          const tmp42 = closure_8(first1(17043), obj5);
         }
         const obj6 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: tmp26 };
         cResult[14] = visualEffectViewOverrideSharedStyles.zeroPadding;
@@ -787,7 +787,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     style: visualEffectViewOverrideSharedStyles.zeroPaddingVertical,
     labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight,
     leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle,
-    leading: closure_8(tmp2(6897).FormSwitch, obj4),
+    leading: closure_8(tmp2(7173).FormSwitch, obj4),
     subLabel: tmp14(tmp15, obj8),
     disabled: !tmp7,
     onPress() {
@@ -804,7 +804,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp(obj);
     }
   };
-  const FormRow = tmp2(8575).FormRow;
+  const FormRow = tmp2(8855).FormRow;
   obj4 = {
     value: tmp7,
     onValueChange(arg0) {
@@ -819,11 +819,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj5 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: closure_8(closure_5, obj6) };
   obj6 = { style: items };
   items = [tmp.tintColor, { backgroundColor }];
-  const FormRow2 = tmp2(8575).FormRow;
+  const FormRow2 = tmp2(8855).FormRow;
   const items1 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(16352), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(17043), obj9) };
   str2 = undefined;
-  const FormRow3 = tmp2(8575).FormRow;
+  const FormRow3 = tmp2(8855).FormRow;
   tmp14 = closure_10;
   tmp15 = closure_9;
   if (first1 != null) {

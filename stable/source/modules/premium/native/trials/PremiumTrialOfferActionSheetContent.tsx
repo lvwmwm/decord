@@ -1,26 +1,26 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16762
+// Function ID: 16763
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 11382, 1126, 12901, 8197, 7756, 4769, 16064, 5088, 16068, 9031, 5379, 2]
+// Dependencies: [19, 17, 1394, 21, 5191, 587, 558, 576, 11671, 1128, 13827, 8474, 8027, 4864, 16763, 5187, 16767, 9327, 5479, 2]
 
-// Module 16063 (PremiumTrialOfferActionSheetContent)
+// Module 16762 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7756 */;
-import FolderIcon from "FolderIcon" /* 8197 */;
-import UserIcon from "UserIcon" /* 11382 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 12901 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16064 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16068 */;
+import intl10 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8027 */;
+import FolderIcon from "FolderIcon" /* 8474 */;
+import UserIcon from "UserIcon" /* 11671 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 13827 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16763 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 16767 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,8 +65,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { IconComponent: UserIcon.UserIcon, label: intl.string(intl10.t.kpMomJ), description: intl2.string(intl10.t.uVUtPw) };
-    intl = tmp(1126).intl;
-    intl2 = tmp(1126).intl;
+    intl = tmp(1128).intl;
+    intl2 = tmp(1128).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -74,8 +74,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { IconComponent: ChatSmileIcon.ChatSmileIcon, label: intl3.string(intl10.t["R2IV/Q"]), description: intl4.string(intl10.t["3SUJLd"]) };
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     cResult[1] = obj3;
     tmp7 = obj3;
   } else {
@@ -84,15 +84,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp7, ];
     const obj4 = { IconComponent: FolderIcon.FolderIcon, label: intl5.string(intl10.t["u/NJKc"]), description: getNitroFileUploadRolloutCopy(obj5) };
-    intl5 = tmp(1126).intl;
+    intl5 = tmp(1128).intl;
     obj5 = { legacyCopy: intl6.string(intl10.t.i1UuMk), rolloutCopy: formatToPlainString(PvqncD, obj6) };
     getNitroFileUploadRolloutCopy = NitroFileUploadExperiments.getNitroFileUploadRolloutCopy;
     NitroFileUploadExperiments;
-    intl6 = tmp(1126).intl;
-    const intl7 = tmp(1126).intl;
+    intl6 = tmp(1128).intl;
+    const intl7 = tmp(1128).intl;
     formatToPlainString = intl7.formatToPlainString;
     obj6 = { maxFileSize: tmpResult3.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false }) };
-    PvqncD = tmp(1126).t.PvqncD;
+    PvqncD = tmp(1128).t.PvqncD;
     items[2] = obj4;
     cResult[2] = items;
     tmp8 = items;
@@ -146,7 +146,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const buttonContainer = tmp4.buttonContainer;
       if (cResult[13] !== intervalDuration) {
-        const intl9 = tmp(1126).intl;
+        const intl9 = tmp(1128).intl;
         const obj9 = { duration: intervalDuration };
         const formatToPlainStringResult = intl9.formatToPlainString(intl10.t.xASjq5, obj9);
         cResult[13] = intervalDuration;
@@ -158,7 +158,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj10 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-        const NitroWheelIcon = tmp(9031).NitroWheelIcon;
+        const NitroWheelIcon = tmp(9327).NitroWheelIcon;
         const tmp40 = hasOwnProperty(NitroWheelIcon, obj10);
         cResult[15] = tmp40;
         tmp37 = tmp40;
@@ -217,10 +217,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[11] = tmp30;
     tmp28 = tmp30;
   }
-  const intl8 = tmp(1126).intl;
+  const intl8 = tmp(1128).intl;
   const formatToPlainString2 = intl8.formatToPlainString;
   let skuId1;
-  const q8eMc0 = tmp(1126).t.q8eMc0;
+  const q8eMc0 = tmp(1128).t.q8eMc0;
   if (subscriptionTrial != null) {
     skuId1 = subscriptionTrial.skuId;
   }
@@ -322,10 +322,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1[2] = hasOwnProperty(PremiumPerksListDefault, { perks: items });
   const obj10 = { style: tmp.buttonContainer, children: hasOwnProperty(Button, obj11) };
   obj11 = { size: "lg", text: intl9.formatToPlainString(intl10.t.xASjq5, { duration: intervalDuration }), onPress: onConfirm, grow: true, icon: hasOwnProperty(NitroWheelIcon, obj12) };
-  Button = tmp3(5379).Button;
-  intl9 = tmp3(1126).intl;
+  Button = tmp3(5479).Button;
+  intl9 = tmp3(1128).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9031).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9327).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 }));

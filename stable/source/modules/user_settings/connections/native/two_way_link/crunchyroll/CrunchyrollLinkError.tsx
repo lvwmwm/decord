@@ -1,16 +1,16 @@
-// Module ID: 12944
-// Function ID: 12945
+// Module ID: 13870
+// Function ID: 13871
 // Name: CrunchyrollLinkError
-// Dependencies: [19, 12936, 21, 558, 576, 1503, 12919, 1126, 12920, 2]
+// Dependencies: [19, 13862, 21, 558, 576, 1505, 13845, 1128, 13846, 2]
 
-// Module 12944 (CrunchyrollLinkError)
+// Module 13870 (CrunchyrollLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1503 */;
-import useConnectRetry from "useConnectRetry" /* 12919 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 12920 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12936 */;
+import intl3 from "intl" /* 1128 */;
+import useNavigation from "useNavigation" /* 1505 */;
+import useConnectRetry from "useConnectRetry" /* 13845 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 13846 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13862 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const obj3 = useConnectRetry;
   const connectRetry = obj3.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["8YK70c"]);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.moyYLf);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

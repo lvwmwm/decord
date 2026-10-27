@@ -1,23 +1,23 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9603
+// Function ID: 9604
 // Name: MaskedBadge
-// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 9298, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 1202, 9604, 2]
 
-// Module 9297 (MaskedBadge)
+// Module 9603 (MaskedBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9298 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9604 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 const jsx = Fragment.jsx;
-let obj = { maskStyle: { position: "relative", right: "IconComponent" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
+let obj = { maskStyle: { position: "relative", right: "p" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_5 = createStyles.createStyles(obj);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaskedBadge(arg0) {

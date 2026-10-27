@@ -1,17 +1,17 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 17580
+// Function ID: 17581
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 5187, 2]
 
-// Module 16900 (ForYouSuggestedFriendsSectionHeader)
+// Module 17580 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouSugges
     const _Symbol = Symbol;
     const text = tmp4.text;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t["1uAmCw"]);
       cResult[3] = stringResult;
       tmp8 = stringResult;

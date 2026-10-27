@@ -1,21 +1,21 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 18481
+// Function ID: 18482
 // Name: EntityVersionsManager
-// Dependencies: [5987, 6030, 2065, 2119, 2087, 5757, 3, 6808, 584, 504, 7335, 1264, 11, 2]
+// Dependencies: [6243, 6286, 2068, 2122, 2090, 6013, 3, 7085, 584, 504, 7605, 1266, 11, 2]
 
-// Module 18088 (EntityVersionsManager)
+// Module 18481 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7335 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import StickersStore from "StickersStore" /* 6030 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7605 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
+import StickersStore from "StickersStore" /* 6286 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, set2, set3, socket, sortedRoles;

@@ -1,30 +1,31 @@
-// Module ID: 12591
-// Function ID: 12592
+// Module ID: 13527
+// Function ID: 13528
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2065, 12583, 1096, 21, 5092, 1383, 587, 558, 576, 12592, 12593, 12582, 5088, 6157, 12594, 5627, 12597, 12598, 1107, 7002, 1126, 9309, 2]
+// Dependencies: [19, 17, 2068, 13519, 1098, 21, 5191, 1385, 587, 558, 576, 13528, 13529, 13518, 5187, 5128, 1105, 13530, 5883, 13533, 13534, 1109, 7278, 1128, 9615, 2]
 
-// Module 12591 (MessagePreviewText)
+// Module 13527 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1107 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12582 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12592 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12594 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 12597 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12598 */;
+import Constants from "Constants" /* 1098 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1109 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useMessageAuthor from "useMessageAuthor" /* 5883 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7278 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9615 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13518 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13528 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13530 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 13533 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13534 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12583 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13519 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,7 +39,7 @@ let obj5;
 let obj6;
 let size;
 let tmp;
-const ChannelRowPreview2 = tmp(12593);
+const ChannelRowPreview2 = tmp(13529);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
 const Fonts = Constants.Fonts;
@@ -54,7 +55,7 @@ obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.P
 const createStyles2 = createStyles.createStyles;
 obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "IconComponent" };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "ix" };
 let closure_11 = createStyles2(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeMessagePreviewContent(arg0) {
@@ -236,8 +237,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
   let items2;
   let rawTitle;
   let thumbnail;
+  let tmp7;
   const obj = react2;
-  const cResult = obj.c(25);
+  const cResult = obj.c(27);
   embed = embed.embed;
   const tmp4 = closure_11();
   const provider = embed.provider;
@@ -254,146 +256,153 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
   if (thumbnail == null) {
     thumbnail = embed.image;
   }
-  let color;
-  if (null != embed.color) {
-    const str = embed.color;
-    if ("#ffffff" !== str.toLowerCase()) {
-      color = embed.color;
+  if (cResult[0] !== embed.color) {
+    let int2hslResult;
+    if (null != embed.color) {
+      if (16777215 !== embed.color) {
+        const tmpResult = utils_ColorUtils;
+        int2hslResult = tmpResult.int2hsl(embed.color);
+      }
     }
+    cResult[0] = embed.color;
+    cResult[1] = int2hslResult;
+    tmp7 = int2hslResult;
+  } else {
+    tmp7 = cResult[1];
   }
-  if (cResult[0] === color) {
-    let tmp9;
-    let tmp13;
-    let tmp16;
-    if (cResult[1] === tmp4.embedAccentBar) {
-      tmp9 = cResult[2];
+  if (cResult[2] === tmp7) {
+    let tmp10;
+    let tmp14;
+    let tmp17;
+    if (cResult[3] === tmp4.embedAccentBar) {
+      tmp10 = cResult[4];
     }
-    if (cResult[3] !== name) {
-      let tmp14 = null != name;
-      if (tmp14) {
+    if (cResult[5] !== name) {
+      let tmp15 = null != name;
+      if (tmp15) {
         const obj2 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
-        tmp14 = metroImportAll(tmp(5088).Text, obj2);
+        tmp15 = metroImportAll(tmp(5187).Text, obj2);
       }
-      cResult[3] = name;
-      cResult[4] = tmp14;
-      tmp13 = tmp14;
+      cResult[5] = name;
+      cResult[6] = tmp15;
+      tmp14 = tmp15;
     } else {
-      tmp13 = cResult[4];
+      tmp14 = cResult[6];
     }
-    if (cResult[5] !== name1) {
-      let tmp17 = null != name1;
-      if (tmp17) {
+    if (cResult[7] !== name1) {
+      let tmp18 = null != name1;
+      if (tmp18) {
         const obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
-        tmp17 = metroImportAll(tmp(5088).Text, obj3);
+        tmp18 = metroImportAll(tmp(5187).Text, obj3);
       }
-      cResult[5] = name1;
-      cResult[6] = tmp17;
-      tmp16 = tmp17;
+      cResult[7] = name1;
+      cResult[8] = tmp18;
+      tmp17 = tmp18;
     } else {
-      tmp16 = cResult[6];
+      tmp17 = cResult[8];
     }
-    if (cResult[7] === (null == name && null == name1)) {
-      let tmp19;
-      let tmp22;
-      if (cResult[8] === rawTitle) {
-        tmp19 = cResult[9];
+    if (cResult[9] === (null == name && null == name1)) {
+      let tmp20;
+      let tmp23;
+      if (cResult[10] === rawTitle) {
+        tmp20 = cResult[11];
       }
-      if (cResult[10] !== embed.rawDescription) {
-        let tmp23 = null != embed.rawDescription;
-        if (tmp23) {
+      if (cResult[12] !== embed.rawDescription) {
+        let tmp24 = null != embed.rawDescription;
+        if (tmp24) {
           const obj4 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
-          tmp23 = metroImportAll(tmp(5088).Text, obj4);
+          tmp24 = metroImportAll(tmp(5187).Text, obj4);
         }
-        cResult[10] = embed.rawDescription;
-        cResult[11] = tmp23;
-        tmp22 = tmp23;
+        cResult[12] = embed.rawDescription;
+        cResult[13] = tmp24;
+        tmp23 = tmp24;
       } else {
-        tmp22 = cResult[11];
+        tmp23 = cResult[13];
       }
-      if (cResult[12] === tmp4.embedTextContainer) {
-        if (cResult[13] === tmp13) {
-          if (cResult[14] === tmp16) {
-            if (cResult[15] === tmp19) {
-              let tmp25;
-              let tmp29;
-              if (cResult[16] === tmp22) {
-                tmp25 = cResult[17];
+      if (cResult[14] === tmp4.embedTextContainer) {
+        if (cResult[15] === tmp14) {
+          if (cResult[16] === tmp17) {
+            if (cResult[17] === tmp20) {
+              let tmp26;
+              let tmp30;
+              if (cResult[18] === tmp23) {
+                tmp26 = cResult[19];
               }
-              if (cResult[18] !== thumbnail) {
-                let tmp30 = null != thumbnail;
-                if (tmp30) {
+              if (cResult[20] !== thumbnail) {
+                let tmp31 = null != thumbnail;
+                if (tmp31) {
                   const obj5 = { media: thumbnail };
-                  tmp30 = metroImportAll(closure_14, obj5);
+                  tmp31 = metroImportAll(closure_14, obj5);
                 }
-                cResult[18] = thumbnail;
-                cResult[19] = tmp30;
-                tmp29 = tmp30;
+                cResult[20] = thumbnail;
+                cResult[21] = tmp31;
+                tmp30 = tmp31;
               } else {
-                tmp29 = cResult[19];
+                tmp30 = cResult[21];
               }
-              if (cResult[20] === tmp4.embedContainer) {
-                if (cResult[21] === tmp9) {
-                  if (cResult[22] === tmp25) {
-                    let tmp33;
-                    if (cResult[23] === tmp29) {
-                      tmp33 = cResult[24];
+              if (cResult[22] === tmp4.embedContainer) {
+                if (cResult[23] === tmp10) {
+                  if (cResult[24] === tmp26) {
+                    let tmp34;
+                    if (cResult[25] === tmp30) {
+                      tmp34 = cResult[26];
                     }
-                    return tmp33;
+                    return tmp34;
                   }
                 }
               }
               const obj6 = { style: tmp4.embedContainer, children: items };
-              items = [tmp9, tmp25, tmp29];
-              const tmp36 = React4(View, obj6);
-              cResult[20] = tmp4.embedContainer;
-              cResult[21] = tmp9;
-              cResult[22] = tmp25;
-              cResult[23] = tmp29;
-              cResult[24] = tmp36;
-              tmp33 = tmp36;
+              items = [tmp10, tmp26, tmp30];
+              const tmp37 = React4(View, obj6);
+              cResult[22] = tmp4.embedContainer;
+              cResult[23] = tmp10;
+              cResult[24] = tmp26;
+              cResult[25] = tmp30;
+              cResult[26] = tmp37;
+              tmp34 = tmp37;
             }
           }
         }
       }
       const obj7 = { style: tmp4.embedTextContainer, children: items1 };
-      items1 = [tmp13, tmp16, tmp19, tmp22];
-      const tmp28 = React4(View, obj7);
-      cResult[12] = tmp4.embedTextContainer;
-      cResult[13] = tmp13;
-      cResult[14] = tmp16;
-      cResult[15] = tmp19;
-      cResult[16] = tmp22;
-      cResult[17] = tmp28;
-      tmp25 = tmp28;
+      items1 = [tmp14, tmp17, tmp20, tmp23];
+      const tmp29 = React4(View, obj7);
+      cResult[14] = tmp4.embedTextContainer;
+      cResult[15] = tmp14;
+      cResult[16] = tmp17;
+      cResult[17] = tmp20;
+      cResult[18] = tmp23;
+      cResult[19] = tmp29;
+      tmp26 = tmp29;
     }
-    let tmp21Result = null != rawTitle;
-    if (tmp21Result) {
-      let num5 = 1;
-      const Text = tmp(5088).Text;
-      const tmp21 = metroImportAll;
+    let tmp22Result = null != rawTitle;
+    if (tmp22Result) {
+      let num8 = 1;
+      const Text = tmp(5187).Text;
+      const tmp22 = metroImportAll;
       if (null == name && null == name1) {
-        num5 = 3;
+        num8 = 3;
       }
-      const obj8 = { variant: "text-xs/medium", color: "text-link", lineClamp: num5, children: rawTitle };
-      tmp21Result = tmp21(Text, obj8);
+      const obj8 = { variant: "text-xs/medium", color: "text-link", lineClamp: num8, children: rawTitle };
+      tmp22Result = tmp22(Text, obj8);
     }
-    cResult[7] = null == name && null == name1;
-    cResult[8] = rawTitle;
-    cResult[9] = tmp21Result;
-    tmp19 = tmp21Result;
+    cResult[9] = null == name && null == name1;
+    cResult[10] = rawTitle;
+    cResult[11] = tmp22Result;
+    tmp20 = tmp22Result;
   }
-  let tmp10 = null != color;
-  if (tmp10) {
+  let tmp11 = null != tmp7;
+  if (tmp11) {
     const obj9 = { style: items2 };
     items2 = [tmp4.embedAccentBar, ];
-    const obj10 = { backgroundColor: color };
+    const obj10 = { backgroundColor: tmp7 };
     items2[1] = obj10;
-    tmp10 = metroImportAll(View, obj9);
+    tmp11 = metroImportAll(View, obj9);
   }
-  cResult[0] = color;
-  cResult[1] = tmp4.embedAccentBar;
-  cResult[2] = tmp10;
-  tmp9 = tmp10;
+  cResult[2] = tmp7;
+  cResult[3] = tmp4.embedAccentBar;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
 }) : (function EmbedCard(embed) {
   let items;
   let items1;
@@ -416,65 +425,65 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedC
   if (thumbnail == null) {
     thumbnail = embed.image;
   }
-  let color;
+  let int2hslResult;
   if (null != embed.color) {
-    const str = embed.color;
-    if ("#ffffff" !== str.toLowerCase()) {
-      color = embed.color;
+    if (16777215 !== embed.color) {
+      const obj = utils_ColorUtils;
+      int2hslResult = obj.int2hsl(embed.color);
     }
   }
-  let tmp7 = null != color;
-  const obj = { style: tmp.embedContainer, children: items1 };
-  if (tmp7) {
-    const obj2 = { style: items };
-    items = [tmp.embedAccentBar, ];
-    const obj3 = { backgroundColor: color };
-    items[1] = obj3;
-    tmp7 = metroImportAll(tmp6, obj2);
-  }
-  items1 = [tmp7, , ];
-  let tmp9 = null != name;
-  const obj4 = { style: tmp.embedTextContainer, children: items2 };
+  let tmp9 = null != int2hslResult;
+  const obj2 = { style: tmp.embedContainer, children: items1 };
   if (tmp9) {
-    const obj5 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
-    tmp9 = metroImportAll(Text_Text.Text, obj5);
+    const obj3 = { style: items };
+    items = [tmp.embedAccentBar, ];
+    const obj4 = { backgroundColor: int2hslResult };
+    items[1] = obj4;
+    tmp9 = metroImportAll(tmp8, obj3);
   }
-  items2 = [tmp9, , , ];
-  let tmp13 = null != name1;
-  if (tmp13) {
-    const obj6 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
-    tmp13 = metroImportAll(Text_Text.Text, obj6);
+  items1 = [tmp9, , ];
+  let tmp11 = null != name;
+  const obj5 = { style: tmp.embedTextContainer, children: items2 };
+  if (tmp11) {
+    const obj6 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
+    tmp11 = metroImportAll(Text_Text.Text, obj6);
   }
-  items2[1] = tmp13;
-  let tmp18Result = null != rawTitle;
-  if (tmp18Result) {
-    let num2 = 1;
+  items2 = [tmp11, , , ];
+  let tmp15 = null != name1;
+  if (tmp15) {
+    const obj7 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
+    tmp15 = metroImportAll(Text_Text.Text, obj7);
+  }
+  items2[1] = tmp15;
+  let tmp20Result = null != rawTitle;
+  if (tmp20Result) {
+    let num3 = 1;
     const Text = Text_Text.Text;
-    const tmp18 = metroImportAll;
+    const tmp20 = metroImportAll;
     if (null == name) {
-      num2 = 1;
+      num3 = 1;
       if (null == name1) {
-        num2 = 3;
+        num3 = 3;
       }
     }
-    const obj7 = { variant: "text-xs/medium", color: "text-link", lineClamp: num2, children: rawTitle };
-    tmp18Result = tmp18(Text, obj7);
+    const obj8 = { variant: "text-xs/medium", color: "text-link", lineClamp: num3, children: rawTitle };
+    tmp20Result = tmp20(Text, obj8);
   }
-  items2[2] = tmp18Result;
-  let tmp21 = null != embed.rawDescription;
-  if (tmp21) {
-    const obj8 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
-    tmp21 = metroImportAll(Text_Text.Text, obj8);
+  items2[2] = tmp20Result;
+  let tmp23 = null != embed.rawDescription;
+  if (tmp23) {
+    const obj9 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
+    tmp23 = metroImportAll(Text_Text.Text, obj9);
   }
-  items2[3] = tmp21;
-  items1[1] = React4(View, obj4);
-  let tmp25 = null != thumbnail;
-  if (tmp25) {
-    const obj9 = { media: thumbnail };
-    tmp25 = metroImportAll(closure_14, obj9);
+  items2[3] = tmp23;
+  items1[1] = React4(View, obj5);
+  let tmp27 = null != thumbnail;
+  if (tmp27) {
+    const obj10 = { media: thumbnail };
+    tmp27 = metroImportAll(closure_14, obj10);
   }
-  items1[2] = tmp25;
-  return React4(View, obj);
+  items1[2] = tmp27;
+  return React4(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePreviewText(arg0) {
@@ -491,7 +500,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   const tmpResult = usePreviewableMedia;
   const previewableMedia = tmpResult.usePreviewableMedia(message);
   let tmp6 = null;
-  const useNullableMessageAuthor = tmp(5627).useNullableMessageAuthor;
+  const useNullableMessageAuthor = tmp(5883).useNullableMessageAuthor;
   useMessageAuthor;
   if (tmp4) {
     tmp6 = message;
@@ -641,7 +650,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
               return tmp;
             }
           }
-          tmp15 = tmp16 === tmp(12594).PreviewableMediaTypes.GIF;
+          tmp15 = tmp16 === tmp(13530).PreviewableMediaTypes.GIF;
         }
         if (previewableMedia.length > 0) {
           let tmp23;
@@ -768,17 +777,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(12594).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(13530).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
       if (null != nullableMessageAuthor) {
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         const obj6 = { username: nullableMessageAuthor.nick };
-        formatResult = intl4.format(tmp(1126).t.sLDHDi, obj6);
+        formatResult = intl4.format(tmp(1128).t.sLDHDi, obj6);
       } else {
-        const intl3 = tmp(1126).intl;
-        formatResult = intl3.string(tmp(1126).t["9ddYKt"]);
+        const intl3 = tmp(1128).intl;
+        formatResult = intl3.string(tmp(1128).t["9ddYKt"]);
       }
       const obj7 = { text: formatResult };
       return metroImportAll(closure_13, obj7);
@@ -791,7 +800,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(12593).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13529).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
@@ -808,7 +817,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5088).Text, obj12);
+          tmp18Result = tmp18(tmp(5187).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;
@@ -819,12 +828,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       let formatResult1;
       const text2 = message.poll.question.text;
       if (null != nullableMessageAuthor) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const obj14 = { username: nullableMessageAuthor.nick };
-        formatResult1 = intl2.format(tmp(1126).t["1wtRlq"], obj14);
+        formatResult1 = intl2.format(tmp(1128).t["1wtRlq"], obj14);
       } else {
-        const intl = tmp(1126).intl;
-        formatResult1 = intl.string(tmp(1126).t.n3shVJ);
+        const intl = tmp(1128).intl;
+        formatResult1 = intl.string(tmp(1128).t.n3shVJ);
       }
       const obj15 = { children: items3 };
       const obj16 = { text: formatResult1 };

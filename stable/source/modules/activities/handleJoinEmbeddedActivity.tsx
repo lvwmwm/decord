@@ -1,17 +1,17 @@
-// Module ID: 10823
-// Function ID: 10824
+// Module ID: 11223
+// Function ID: 11224
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5440, 2065, 2116, 1390, 2064, 2024, 10824, 4739, 10825, 10869, 10868, 10482, 10879, 8508, 11341, 10854, 2]
+// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11224, 4834, 11225, 11264, 11263, 10805, 11274, 8786, 12512, 11254, 2]
 // Exports: default
 
-// Module 10823 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2024 */;
+// Module 11223 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import UserStore from "UserStore" /* 1390 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import UserStore from "UserStore" /* 1392 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

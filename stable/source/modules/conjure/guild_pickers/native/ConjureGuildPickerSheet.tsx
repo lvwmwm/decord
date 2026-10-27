@@ -1,18 +1,18 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 11669
+// Function ID: 11670
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 2065, 2087, 21, 5445, 558, 576, 17100, 17101, 6817, 8253, 5056, 11381, 8154, 6188, 8646, 11378, 2]
+// Dependencies: [32, 19, 2068, 2090, 21, 5545, 558, 576, 11665, 11666, 7095, 8530, 5155, 11670, 8431, 6465, 8923, 11673, 2]
 
-// Module 17102 (ConjureGuildPickerSheet)
+// Module 11669 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5445 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5545 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11670 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore_mod from "GuildStore" /* 2087 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore_mod from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
   let channelFilter;
   let str;
   let title;
-  const f149037 = (id) => ({ id: id.value, label: id.label });
+  const f145611 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
       let tmp8 = null;
       if (null != channelIconWithGuild) {
-        tmp8 = jsx(tmp(6188).TableRowIcon, { source: channelIconWithGuild });
+        tmp8 = jsx(tmp(6465).TableRowIcon, { source: channelIconWithGuild });
       }
       return tmp8;
     }
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
         } else {
           items = [value];
         }
-        onSubmit(items.map(f149037));
+        onSubmit(items.map(f145611));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
     },
     submitSelection() {
-      onSubmit(first.map(f149037));
+      onSubmit(first.map(f145611));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

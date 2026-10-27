@@ -1,27 +1,27 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 15733
+// Function ID: 15734
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 14972, 14838, 10665, 21, 5092, 587, 558, 576, 6265, 5088, 14973, 1631, 14974, 14979, 8620, 14980, 14983, 14984, 1894, 2]
+// Dependencies: [19, 17, 15734, 15601, 11085, 21, 5191, 587, 558, 576, 6542, 5187, 15735, 1633, 15736, 15741, 7091, 15742, 15745, 15746, 1896, 2]
 
-// Module 14971 (SettingListRenderer)
+// Module 15733 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8620 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 10665 */;
-import SettingRenderer from "SettingRenderer" /* 14973 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14974 */;
-import useAutoScrollToSetting from "useAutoScrollToSetting" /* 14979 */;
-import useSettingSearchResults from "useSettingSearchResults" /* 14980 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 14983 */;
-import SettingSearchBarDefault from "SettingSearchBar" /* 14984 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7091 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11085 */;
+import SettingRenderer from "SettingRenderer" /* 15735 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15736 */;
+import useAutoScrollToSetting from "useAutoScrollToSetting" /* 15741 */;
+import useSettingSearchResults from "useSettingSearchResults" /* 15742 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 15745 */;
+import SettingSearchBarDefault from "SettingSearchBar" /* 15746 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14972 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14838 */;
-import createStyles from "createStyles" /* 5092 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15734 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 15601 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let importDefault, searchResultsHeader;
 
 let obj2;
 let tmp;
-const Text_Text = tmp(5088);
-const TableRowGroup = tmp(6265);
+const Text_Text = tmp(5187);
+const TableRowGroup = tmp(6542);
 function getItemType(type) {
   type = type.type;
   if (ListItemType.SECTION_HEADER !== type) {
@@ -255,7 +255,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   node = node.node;
   let field;
   const tmp = closure_9();
-  const bottom = field(1631)().bottom;
+  const bottom = field(1633)().bottom;
   field = SettingBlocklistStore.useField("blocklist");
   const items = [field, node];
   const memo = react.useMemo(() => {
@@ -263,10 +263,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(14979);
+  let obj = node(15741);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(587).space.PX_16 };
-  const FlashList = node(8620).FlashList;
+  const FlashList = node(7091).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 }));
@@ -347,7 +347,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                     }
                   }
                 }
-                const FlashList = tmp(8620).FlashList;
+                const FlashList = tmp(7091).FlashList;
                 const tmp28 = <FlashList keyboardShouldPersistTaps="always" contentContainerStyle={tmp19} ListHeaderComponentStyle={tmp13} ListHeaderComponent={SettingSearchBarDefault} ListEmptyComponent={tmp15} onScroll={KeyboardManagerUtils.dismissGlobalKeyboard} scrollIndicatorInsets={tmp22} keyExtractor={keyExtractor} renderItem={renderItem} data={arr} getItemType={getItemType} />;
                 cResult[19] = tmp15;
                 cResult[20] = tmp13;
@@ -370,7 +370,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
             if (!isLoading) {
               tmp16 = null;
               if (0 === arr.length) {
-                tmp16 = jsx(tmp5(14983), {});
+                tmp16 = jsx(tmp5(15745), {});
               }
             }
           }

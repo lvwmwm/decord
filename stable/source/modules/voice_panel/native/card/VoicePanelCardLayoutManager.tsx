@@ -1,20 +1,20 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 10682
+// Function ID: 10683
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6036, 11974, 11977, 5115, 558, 576, 4850, 10374, 568, 10905, 11978, 11979, 1272, 2]
+// Dependencies: [32, 19, 17, 6292, 10680, 10683, 5214, 558, 576, 4945, 10684, 568, 10685, 10686, 10687, 1274, 2]
 
-// Module 11976 (VoicePanelCardLayoutManager)
+// Module 10682 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1272 */;
-import CallConstants from "CallConstants" /* 5115 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10374 */;
+import react_native2 from "react-native" /* 1274 */;
+import CallConstants from "CallConstants" /* 5214 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11977 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -991,8 +991,7 @@ class VoicePanelCardLayoutManager {
     const tmp = this.emitItemChanges && self.mounted;
     if (tmp) {
       self.emitItemChanges = false;
-      const tmp2 = require;
-      let obj = react_native2;
+      const obj = react_native2;
       obj.batchUpdates(() => {
         const managerSubscriptions = self.managerSubscriptions;
         for (const item10006 of managerSubscriptions) {

@@ -1,28 +1,28 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 14515
+// Function ID: 14516
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1390, 7170, 1085, 21, 5092, 587, 504, 13736, 38, 1388, 10221, 13737, 1126, 4828, 13738, 6852, 6879, 1265, 7171, 5056, 13739, 2000, 4808, 6839, 5088, 6157, 13744, 13745, 10222, 6154, 5379, 6840, 8621, 10224, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 7441, 1087, 21, 5191, 587, 504, 14516, 38, 1388, 10523, 14517, 1128, 4923, 14518, 7130, 7155, 1267, 7442, 5155, 14519, 2002, 4903, 7117, 5187, 5128, 14524, 14525, 10524, 6433, 5479, 7118, 8898, 10526, 2]
 // Exports: default
 
-// Module 13735 (ReferralProgramShareActionSheet)
+// Module 14515 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl8 from "intl" /* 1126 */;
+import Constants from "Constants" /* 1087 */;
+import intl8 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10221 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13738 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10523 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 14518 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7170 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import UserStore from "UserStore" /* 1392 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, closure_2, trialCreationResult, v1;
+let BottomSheet, closure_2, trialCreationResult, v3;
 
 let c10;
 let obj2;
@@ -37,6 +37,8 @@ function mapToUser(arg0) {
   const items = [arg0, UserStore.getUser(arg0)];
   return items;
 }
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -54,10 +56,10 @@ let closure_12 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheet.tsx");
 
-export default function ReferralProgramShareActionSheet() {
+export default function ReferralProgramShareActionSheet(actionSheetKey) {
   let Button;
-  let closure_3;
-  let fetchUsers;
+  let c5;
+  let closure_4;
   let headerSize;
   let intl2;
   let intl3;
@@ -69,8 +71,6 @@ export default function ReferralProgramShareActionSheet() {
   let items12;
   let items13;
   let items15;
-  let memo;
-  let memo2;
   let obj13;
   let obj18;
   let obj21;
@@ -78,28 +78,38 @@ export default function ReferralProgramShareActionSheet() {
   let prop;
   let renderHeader;
   let selectedUserIds;
-  let str;
+  let str2;
   let tmp11;
   let tmp27Result;
   let tmp7;
   let tmp9Result4;
-  let tmp = memo2();
-  let obj = memo;
-  const ref = memo.useRef(null);
-  const tmp3 = ref;
-  const tmp4 = selectedUserIds;
-  let obj2 = ref(selectedUserIds[10]);
-  let items = [fetchUsers];
-  const stateFromStores = obj2.useStateFromStores(items, () => fetchUsers.getReferralsRemaining());
-  [str, tmp7] = _slicedToArray(memo.useState(""), 2);
-  const tmp6 = _slicedToArray(memo.useState(""), 2);
-  [selectedUserIds, _asyncToGenerator] = memo.useState([]);
-  const arr3 = stateFromStores(selectedUserIds[11])(str, 400);
-  const tmp10 = _slicedToArray(memo.useState(false), 2);
-  [tmp11, _slicedToArray] = tmp10;
-  stateFromStores(selectedUserIds[12])(null != stateFromStores, "Referrals remaining should not be null");
+  let str = actionSheetKey.actionSheetKey;
+  if (str === undefined) {
+    str = "referral-program-share-action-sheet";
+  }
+  let stateFromStores;
+  selectedUserIds = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
+  let eligibleUsers;
+  let resendUsers;
+  let tmp = resendUsers();
+  let obj = react;
+  const ref = react.useRef(null);
+  const tmp3 = str;
+  const tmp4 = stateFromStores;
+  let obj2 = str(stateFromStores[10]);
+  let items = [eligibleUsers];
+  stateFromStores = obj2.useStateFromStores(items, () => eligibleUsers.getReferralsRemaining());
+  [str2, tmp7] = _slicedToArray(react.useState(""), 2);
+  const tmp6 = _slicedToArray(react.useState(""), 2);
+  [selectedUserIds, _slicedToArray] = react.useState([]);
+  const arr3 = ref(stateFromStores[11])(str2, 400);
+  const tmp10 = _slicedToArray(react.useState(false), 2);
+  [tmp11, c5] = tmp10;
+  ref(stateFromStores[12])(null != stateFromStores, "Referrals remaining should not be null");
   const items1 = [selectedUserIds];
-  memo = memo.useMemo(() => {
+  const memo = react.useMemo(() => {
     let mapped;
     const _Map = Map;
     const arr = first;
@@ -110,34 +120,34 @@ export default function ReferralProgramShareActionSheet() {
     return _Map1;
   }, items1);
   const items2 = [memo];
-  const memo1 = memo.useMemo(() => {
+  const memo1 = react.useMemo(() => {
     const arr = Array.from(memo.values());
     const found = arr.filter(GlobalUtils.isNotNullish);
     return found.map(makeUserListPillDataDefault);
   }, items2);
-  const items3 = [str];
-  const layoutEffect = memo.useLayoutEffect(() => {
+  const items3 = [str2];
+  const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
       current.scrollToTop(false);
     }
   }, items3);
-  const obj3 = ref(selectedUserIds[15]);
+  const obj3 = str(stateFromStores[15]);
   const referralProgramEligibleUsers = obj3.useReferralProgramEligibleUsers({ searchQuery: arr3, selectedUsers: memo, limit: 15 });
-  const eligibleUsers = referralProgramEligibleUsers.eligibleUsers;
-  fetchUsers = referralProgramEligibleUsers.fetchUsers;
+  eligibleUsers = referralProgramEligibleUsers.eligibleUsers;
+  const fetchUsers = referralProgramEligibleUsers.fetchUsers;
   const isFetching = referralProgramEligibleUsers.isFetching;
   const hasError = referralProgramEligibleUsers.hasError;
-  const resendUsers = referralProgramEligibleUsers.resendUsers;
+  resendUsers = referralProgramEligibleUsers.resendUsers;
   const items4 = [selectedUserIds, resendUsers];
-  memo2 = memo.useMemo(() => first.filter((item) => !set.has(item)), items4);
+  const memo2 = react.useMemo(() => first.filter((item) => !set.has(item)), items4);
   const items5 = [isFetching, hasError, eligibleUsers];
-  const memo3 = memo.useMemo(() => isFetching && !hasError && 0 === eligibleUsers.length, items5);
-  let intl = ref(selectedUserIds[16]).intl;
-  let stringResult = intl.string(ref(selectedUserIds[16]).t.DXgoi2);
-  const onSelectUser = memo.useCallback((arg0) => {
+  const memo3 = react.useMemo(() => isFetching && !hasError && 0 === eligibleUsers.length, items5);
+  let intl = str(stateFromStores[16]).intl;
+  let stringResult = intl.string(str(stateFromStores[16]).t.DXgoi2);
+  const onSelectUser = react.useCallback((arg0) => {
     let closure_0 = arg0;
-    let tmp = closure_3((arr) => {
+    let tmp = closure_4((arr) => {
       const index = arr.indexOf(id.id);
       const items = [...arr];
       const tmp = id;
@@ -151,7 +161,7 @@ export default function ReferralProgramShareActionSheet() {
   }, []);
   const items6 = [onSelectUser, memo1];
   const items7 = [eligibleUsers];
-  const callback1 = memo.useCallback((arg0) => {
+  const callback1 = react.useCallback((arg0) => {
     const user = UserStore.getUser(tmp.id);
     if (null != user) {
       callback(user);
@@ -162,29 +172,29 @@ export default function ReferralProgramShareActionSheet() {
       announce(intl.formatToPlainString(intl8.t.srlxB8, obj));
     }
   }, items6);
-  const memo4 = memo.useMemo(() => {
+  const memo4 = react.useMemo(() => {
     const items = [eligibleUsers.length];
     return items;
   }, items7);
   const items8 = [eligibleUsers, onSelectUser, selectedUserIds, resendUsers, stateFromStores, memo2];
-  const callback2 = memo.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
-  const callback3 = memo.useCallback((arg0, row) => {
+  const callback2 = react.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
+  const callback3 = react.useCallback((arg0, row) => {
     const obj = ReferralProgramShareActionSheetUtils;
     const obj2 = { eligibleUsers, row, selectedUserIds, resendUsers, referralsRemaining: stateFromStores, selectedNotResendUsers: memo2, onSelectUser };
     return obj.buildReferralUserRow(obj2);
   }, items8);
-  const tmp25 = stateFromStores(selectedUserIds[19]);
-  const analyticsLocations = tmp25(stateFromStores(selectedUserIds[20]).PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL).analyticsLocations;
-  const useCallback = memo.useCallback;
-  let closure_0 = _asyncToGenerator(async (selectedUsers) => {
+  const tmp25 = ref(stateFromStores[19]);
+  const analyticsLocations = tmp25(ref(stateFromStores[20]).PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL).analyticsLocations;
+  const useCallback = react.useCallback;
+  let closure_0 = selectedUserIds((selectedUsers) => {
     let location_stack;
     let c4 = 0;
-    let c5 = 0;
+    c5 = 0;
     let c3 = 0;
-    return (async (arg0, value) => {
+    return (function*(arg0, value) {
       let obj9;
-      if (c5 === 2) {
-        c5 = 3;
+      if (v3 === 2) {
+        v3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -196,72 +206,72 @@ export default function ReferralProgramShareActionSheet() {
         }
       } else {
         try {
-          c5 = 2;
-          if (0 === v1) {
+          v3 = 2;
+          if (0 === c4) {
             if (arg0 === 1) {
-              c5 = 3;
+              v3 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
+              v3 = 3;
               return { value, done: true };
             } else {
               closure_2 = tmp;
               trialCreationResult = undefined;
               c3 = 1;
-              v1(true);
+              v3(true);
               const obj4 = { location_stack };
-              const obj7 = stateFromStores(paths[21]);
+              const obj7 = ref(paths[21]);
               obj7.track(constants.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, obj4);
-              v1 = 2;
-              c5 = 1;
+              c4 = 2;
+              v3 = 1;
               const obj6 = { value: obj9.createReferralTrials(selectedUsers.map((id) => id.id)), done: false };
               obj9 = selectedUsers(paths[22]);
               return obj6;
             }
           } else {
-            if (1 === v1) {
+            if (1 === c4) {
               c3 = 0;
-              v1(false);
+              v3(false);
               const presentError = selectedUsers(paths[26]).presentError;
               selectedUsers(paths[26]);
               const intl = selectedUsers(paths[16]).intl;
               presentError(intl.string(selectedUsers(paths[16]).t.R0RpRX));
             } else if (arg0 === 1) {
-              c5 = 3;
+              v3 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              c5 = 3;
+              v3 = 3;
               return { value, done: true };
             } else {
               trialCreationResult = value;
-              v1(false);
+              v3(false);
               const obj8 = { selectedUsers, trialCreationResult };
-              const obj5 = stateFromStores(paths[23]);
-              obj5.openLazy(selectedUsers(paths[25])(paths[24], paths.paths), "referral-program-share-action-sheet", obj8);
+              const obj5 = ref(paths[23]);
+              obj5.openLazy(selectedUsers(paths[25])(paths[24], paths.paths), selectedUsers, obj8);
               c3 = 0;
             }
-            c5 = 3;
+            v3 = 3;
             return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {
-            c5 = 3;
+            v3 = 3;
             throw tmp16;
           } else {
-            v1 = 1;
+            c4 = 1;
           }
         }
       }
     })();
   });
-  const items9 = [analyticsLocations];
-  let closure_15 = useCallback(function() {
+  const items9 = [analyticsLocations, str];
+  let closure_16 = useCallback(function() {
     return closure_0(...arguments);
   }, items9);
   const items10 = [stateFromStores];
   let obj4 = { style: tmp.header, children: items11 };
-  const memo5 = memo.useMemo(() => {
+  const memo5 = react.useMemo(() => {
     let stringResult;
     if (0 === stateFromStores) {
       const intl2 = intl8.intl;
@@ -272,23 +282,23 @@ export default function ReferralProgramShareActionSheet() {
     }
     return stringResult;
   }, items10);
-  items11 = [hasError(ref(selectedUserIds[27]).BottomSheetTitleHeader, { title: memo5 }), ];
+  items11 = [isFetching(str(stateFromStores[27]).BottomSheetTitleHeader, { title: memo5 }), ];
   let obj5 = { variant: "text-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
-  items11[1] = hasError(ref(selectedUserIds[28]).Text, obj5);
+  items11[1] = isFetching(str(stateFromStores[28]).Text, obj5);
   if (hasError) {
     let obj6 = { style: tmp.centeredContainer, children: items12 };
     let obj7 = { source: obj8, resizeMode: "contain", style: tmp.errorImage };
     obj8 = { uri: tmp9(tmp4[30]) };
-    const tmp9Result = stateFromStores(tmp4[29]);
+    const tmp9Result = ref(tmp4[29]);
     items12 = [tmp29(tmp9Result, obj7), , ];
     let obj9 = { variant: "heading-xl/bold", style: tmp.subtitle, children: intl4.string(tmp3(tmp4[16]).t.a9HOKg) };
     const Text3 = tmp3(tmp4[28]).Text;
     intl4 = tmp3(tmp4[16]).intl;
-    items12[1] = hasError(Text3, obj9);
+    items12[1] = isFetching(Text3, obj9);
     const obj10 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl5.string(tmp3(tmp4[16]).t.JjjeZb) };
     const Text4 = tmp3(tmp4[28]).Text;
     intl5 = tmp3(tmp4[16]).intl;
-    items12[2] = hasError(Text4, obj10);
+    items12[2] = isFetching(Text4, obj10);
     tmp27Result = tmp27(tmp28, obj6);
   } else {
     tmp27Result = tmp30;
@@ -296,23 +306,23 @@ export default function ReferralProgramShareActionSheet() {
     if (tmp31) {
       const obj11 = { style: tmp.centeredContainer, children: items13 };
       const obj12 = { source: obj13, resizeMode: "contain", style: tmp.emptyImage };
-      obj13 = { uri: stateFromStores(tmp4[31]) };
-      const tmp9Result3 = stateFromStores(tmp4[29]);
+      obj13 = { uri: ref(tmp4[31]) };
+      const tmp9Result3 = ref(tmp4[29]);
       items13 = [tmp29(tmp9Result3, obj12), , ];
       const obj14 = { variant: "heading-xl/bold", style: tmp.subtitle, children: intl2.string(tmp3(tmp4[16]).t["PFp+aJ"]) };
       const Text = tmp3(tmp4[28]).Text;
       intl2 = tmp3(tmp4[16]).intl;
-      items13[1] = hasError(Text, obj14);
+      items13[1] = isFetching(Text, obj14);
       const obj15 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl3.string(tmp3(tmp4[16]).t.eBIGB4) };
       const Text2 = tmp3(tmp4[28]).Text;
       intl3 = tmp3(tmp4[16]).intl;
-      items13[2] = hasError(Text2, obj15);
+      items13[2] = isFetching(Text2, obj15);
       tmp27Result = tmp27(tmp28, obj11);
     }
   }
   const obj16 = { actions: [], style: prop };
   prop = undefined;
-  const tmp35 = str.trim().length > 0;
+  const tmp35 = str2.trim().length > 0;
   const useUserListActionsProps = tmp3(tmp4[32]).useUserListActionsProps;
   tmp3(tmp4[32]);
   if (!tmp35) {
@@ -326,24 +336,24 @@ export default function ReferralProgramShareActionSheet() {
       fetchUsers();
     }
   }, items14);
-  const obj17 = { style: tmp.footer, children: hasError(Button, obj18) };
+  const obj17 = { style: tmp.footer, children: isFetching(Button, obj18) };
   obj18 = {
     size: "lg",
     text: intl6.string(tmp3(tmp4[16]).t.ItpQxk),
     onPress() {
-      closure_15(Array.from(memo.values()));
+      closure_16(Array.from(memo.values()));
     },
     loading: tmp11,
     disabled: tmp11
   };
-  const tmp29Result = hasError(tmp3(tmp4[33]).ActivityIndicator, {});
+  const tmp29Result = isFetching(tmp3(tmp4[33]).ActivityIndicator, {});
   Button = tmp3(tmp4[34]).Button;
   intl6 = tmp3(tmp4[16]).intl;
-  const obj19 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: hasError(memo1, obj17), children: items15 };
-  const obj20 = { style: tmp.searchBarContainer, children: hasError(tmp9Result4, obj21) };
+  const obj19 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: isFetching(memo, obj17), children: items15 };
+  const obj20 = { style: tmp.searchBarContainer, children: isFetching(tmp9Result4, obj21) };
   BottomSheet = tmp3(tmp4[35]).BottomSheet;
   obj21 = { onChangeText: tmp7, onRemove: callback1, tags: memo1, placeholder: intl7.string(tmp3(tmp4[16]).t.Kd5RaI) };
-  tmp9Result4 = stateFromStores(tmp4[36]);
+  tmp9Result4 = ref(tmp4[36]);
   intl7 = tmp3(tmp4[16]).intl;
   items15 = [tmp29(tmp28, obj20), , ];
   let tmp43 = null;
@@ -351,6 +361,6 @@ export default function ReferralProgramShareActionSheet() {
     tmp43 = tmp29Result;
   }
   items15[1] = tmp43;
-  items15[2] = hasError(tmp3(tmp4[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
-  return resendUsers(BottomSheet, obj19);
+  items15[2] = isFetching(tmp3(tmp4[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
+  return hasError(BottomSheet, obj19);
 };

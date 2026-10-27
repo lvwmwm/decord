@@ -1,11 +1,11 @@
-// Module ID: 18480
-// Function ID: 18481
+// Module ID: 18876
+// Function ID: 18877
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4808, 558, 576, 18470, 6185, 2]
+// Dependencies: [19, 17, 21, 4903, 558, 576, 18866, 6462, 2]
 
-// Module 18480 (CommunityRequirementSatisfiedForm)
+// Module 18876 (CommunityRequirementSatisfiedForm)
 import react_native from "react-native" /* 17 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   const cResult = obj.c(7);
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
-  const obj2 = formSwitchDisabled(18470);
+  const obj2 = formSwitchDisabled(18866);
   const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
   if (cResult[0] === enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable) {
     let tmp5;
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
           }
         }
     };
-    tmp6 = closure_3(tmp(6185).PressableOpacity, obj4);
+    tmp6 = closure_3(tmp(6462).PressableOpacity, obj4);
   }
   cResult[0] = enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable;
   cResult[1] = formSwitchDisabled;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
   let tmp = formSwitchDisabled;
-  let obj = formSwitchDisabled(18470);
+  let obj = formSwitchDisabled(18866);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: items };
   items = [children, ];
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
           }
         }
     };
-    tmp6 = closure_3(tmp(6185).PressableOpacity, obj3);
+    tmp6 = closure_3(tmp(6462).PressableOpacity, obj3);
   }
   items[1] = tmp6;
   return tmp4(tmp5, obj2);

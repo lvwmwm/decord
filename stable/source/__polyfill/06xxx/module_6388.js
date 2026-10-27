@@ -1,52 +1,38 @@
 // Module ID: 6388
 // Function ID: 6389
-// Dependencies: [19, 6366, 6369]
-// Exports: useMountReactions
+// Dependencies: [106, 65, 114]
 
 // Module 6388
-import react from "react" /* 19 */;
-import selectProperties from "selectProperties" /* 6366 */;
-import MountRegistry2 from "MountRegistry" /* 6369 */;
+import renderElement from "renderElement" /* 114 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-function shouldUpdateDetector(arg0, handlerTag) {
-  if (undefined === arg0) {
-    return false;
-  } else {
-    const obj = selectProperties;
-    const result = obj.transformIntoHandlerTags(arg0);
-    for (const item10012 of result) {
-      if (item10012 === handlerTag.handlerTag) {
-        obj2.return();
-        let flag = true;
-        return true;
-      }
-    }
-    return false;
+let obj2;
+let obj3;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: obj2, validAttributes: obj3 };
+obj2 = { topAnimationFinish: { phasedRegistrationNames: { captured: "onAnimationFinishCapture", bubbled: "onAnimationFinish" } }, topAnimationFailure: { phasedRegistrationNames: { captured: "onAnimationFailureCapture", bubbled: "onAnimationFailure" } }, topAnimationLoaded: { phasedRegistrationNames: { captured: "onAnimationLoadedCapture", bubbled: "onAnimationLoaded" } } };
+obj3 = { resizeMode: true, renderMode: true, sourceName: true, sourceJson: true, sourceURL: true, sourceDotLottieURI: true, imageAssetsFolder: true, progress: true, speed: true, loop: true, autoPlay: true, enableMergePathsAndroidForKitKatAndAbove: true, enableSafeModeAndroid: true, hardwareAccelerationAndroid: true, cacheComposition: true, colorFilters: true, dummy: true, textFiltersAndroid: true, textFiltersIOS: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAnimationFinish: true, onAnimationFailure: true, onAnimationLoaded: true }));
+const obj4 = {
+  play(arg0, arg1, arg2) {
+    const items = [arg1, arg2];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "play", items);
+  },
+  reset(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "reset", []);
+  },
+  pause(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "pause", []);
+  },
+  resume(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "resume", []);
   }
-}
-const useEffect = react.useEffect;
-
-export const useMountReactions = function useMountReactions(detectorUpdater, current2) {
-  let closure_0 = detectorUpdater;
-  let closure_1 = current2;
-  const items = [detectorUpdater, current2];
-  useEffect(() => {
-    const MountRegistry = MountRegistry2.MountRegistry;
-    return MountRegistry.addMountListener((arg0) => {
-      if (current2.isMounted) {
-        const attachedGestures = current2.attachedGestures;
-        const iter = attachedGestures[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let requireToFail = nextResult.config.requireToFail;
-          let simultaneousWith = nextResult.config.simultaneousWith;
-          let tmp5 = shouldUpdateDetector;
-          if (!shouldUpdateDetector(nextResult.config.blocksHandlers, arg0)) {
-          }
-          let tmp9 = detectorUpdater();
-          iter.return();
-        }
-      }
-    });
-  }, items);
 };
+
+export default module_65.get("LottieAnimationView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };
+export const Commands = obj4;

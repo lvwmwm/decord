@@ -1,30 +1,30 @@
-// Module ID: 9786
-// Function ID: 9787
+// Module ID: 10089
+// Function ID: 10090
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 6030, 9757, 9724, 1085, 21, 5092, 587, 558, 576, 1200, 9787, 1126, 5088, 9507, 5750, 4850, 9525, 9452, 504, 9788, 9506, 9789, 9769, 12, 6751, 9790, 6668, 9517, 6744, 9530, 9276, 2]
+// Dependencies: [32, 19, 17, 6286, 10060, 10027, 1087, 21, 5191, 587, 558, 576, 1202, 10090, 1128, 5187, 9810, 6006, 4945, 9827, 9756, 504, 10091, 9809, 10092, 10072, 12, 7028, 10093, 6945, 9819, 7021, 9832, 9582, 2]
 
-// Module 9786 (StickerPickerList)
+// Module 10089 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6751 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9506 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9507 */;
-import StickerPickerStore from "StickerPickerStore" /* 9757 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 9769 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9787 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 9788 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9789 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7028 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9809 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9810 */;
+import StickerPickerStore from "StickerPickerStore" /* 10060 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10072 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10090 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 10091 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6030 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9724 */;
-import Constants from "Constants" /* 1085 */;
+import StickersStore from "StickersStore" /* 6286 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10027 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
-      const Icon = tmp(1200).Icon;
+      const Icon = tmp(1202).Icon;
       const tmp11 = map1(Icon, obj3);
       cResult[5] = tmp11;
       tmp8 = tmp11;
@@ -93,7 +93,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     const _Symbol2 = Symbol;
     const nsfwText = tmp4.nsfwText;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.uy25Qz);
       cResult[6] = stringResult;
       tmp12 = stringResult;
@@ -176,7 +176,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         tmp6 = cResult[5];
       }
       if (cResult[6] !== isSectionNitroLocked) {
-        const tmp8 = isSectionNitroLocked && map1(tmp(9507).PremiumUpsellGradientBackground, {});
+        const tmp8 = isSectionNitroLocked && map1(tmp(9810).PremiumUpsellGradientBackground, {});
         cResult[6] = isSectionNitroLocked;
         cResult[7] = tmp8;
         tmp7 = tmp8;

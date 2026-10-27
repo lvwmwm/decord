@@ -1,40 +1,40 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 11275
+// Function ID: 11276
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 2064, 6036, 502, 2012, 2116, 5947, 10832, 10355, 5115, 21, 5092, 1200, 587, 558, 576, 10361, 12, 10829, 10881, 504, 5106, 10882, 10885, 10895, 10905, 10906, 10825, 10918, 10965, 4818, 8264, 10908, 10911, 10839, 10835, 10838, 1497, 1382, 8446, 2]
+// Dependencies: [32, 19, 17, 2067, 6292, 502, 2014, 2119, 6203, 11232, 10662, 5214, 21, 5191, 1202, 587, 558, 576, 10668, 12, 11229, 11276, 504, 5205, 11277, 11280, 11290, 10685, 11300, 11225, 11312, 11355, 4913, 8541, 11302, 11305, 11239, 11235, 11238, 1499, 1384, 8724, 2]
 
-// Module 10880 (PictureInPictureVideo)
+// Module 11275 (PictureInPictureVideo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useToken2 from "useToken" /* 4818 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
-import CallConstants from "CallConstants" /* 5115 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8264 */;
-import transitionToActivityDefault from "transitionToActivity" /* 10825 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10835 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 10838 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 10839 */;
-import VideoRenderer from "VideoRenderer" /* 10895 */;
-import UserTileDefault from "UserTile" /* 10906 */;
-import useAvatarSpeakingColor from "useAvatarSpeakingColor" /* 10908 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10911 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useToken2 from "useToken" /* 4913 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
+import CallConstants from "CallConstants" /* 5214 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8541 */;
+import transitionToActivityDefault from "transitionToActivity" /* 11225 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 11235 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 11238 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11239 */;
+import VideoRenderer from "VideoRenderer" /* 11290 */;
+import UserTileDefault from "UserTile" /* 11300 */;
+import useAvatarSpeakingColor from "useAvatarSpeakingColor" /* 11302 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SpeakingStore from "SpeakingStore" /* 5947 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10832 */;
-import ChannelCallStore from "ChannelCallStore" /* 10355 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import SpeakingStore from "SpeakingStore" /* 6203 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11232 */;
+import ChannelCallStore from "ChannelCallStore" /* 10662 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import native_mod from "native" /* 1200 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import native_mod from "native" /* 1202 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -963,7 +963,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
                     if (tmp9) {
                       const obj4 = { style: tmp4.thermalAlertIconContainer, children: authStore4(Icon, obj5) };
                       obj5 = { style: tmp4.thermalAlertIcon, source: AssetRegistryDefault, color: tmp4.thermalAlertIcon.color };
-                      Icon = tmp(1200).Icon;
+                      Icon = tmp(1202).Icon;
                       tmp39 = authStore4(hasOwnProperty, obj4);
                     }
                     cResult[22] = tmp9;
@@ -991,7 +991,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
               tmp33 = tmp36;
             }
             const obj7 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: avatarSpeakingColor };
-            const Avatar = tmp(1200).Avatar;
+            const Avatar = tmp(1202).Avatar;
             ({ user: obj8.user, speaking: obj8.speaking } = tmp13);
             tmp36 = authStore4(Avatar, obj7);
           }
@@ -1033,7 +1033,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let obj9;
   let tmp5;
   let tmp6;
-  const f106683 = () => {
+  const f108418 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
@@ -1043,8 +1043,8 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let items = [ChannelCallLifecycleStore];
   const obj = get_initialized;
   const obj2 = { channelId: channel.id, selfParticipant };
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f106683);
-  _slicedToArray(obj.useStateFromStoresArray(items, f106683), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f108418);
+  _slicedToArray(obj.useStateFromStoresArray(items, f108418), 2);
   const tmp7 = closure_22(obj2);
   let avatarURL;
   const obj3 = useToken2;
@@ -1088,7 +1088,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       if (tmp5) {
         const obj8 = { style: tmp.thermalAlertIconContainer, children: tmp18(Icon, obj9) };
         obj9 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
-        Icon = tmp2(1200).Icon;
+        Icon = tmp2(1202).Icon;
         tmp18Result = tmp18(tmp17, obj8);
       }
       items2[1] = tmp18Result;
@@ -1096,7 +1096,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       return tmp16(hasOwnProperty, obj4);
     }
     const obj16 = { size: native.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id, user: null, speaking: null, speakingColor: tmp13 };
-    const Avatar = tmp2(1200).Avatar;
+    const Avatar = tmp2(1202).Avatar;
     ({ user: obj7.user, speaking: obj7.speaking } = tmp7);
     tmp20 = authStore4(Avatar, obj16);
     tmp18 = authStore4;

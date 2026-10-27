@@ -1,22 +1,27 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11895
+// Function ID: 11896
 // Name: RedesignChannelListConstants
-// Dependencies: [17, 1383, 10516, 2]
+// Dependencies: [17, 1385, 10839, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 11762 (RedesignChannelListConstants)
+// Module 11895 (RedesignChannelListConstants)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "text-xs/medium";
 const StyleSheet = react_native.StyleSheet;
+let PlatformUtils = PlatformUtils_mod;
 let num = 20;
+let num2 = 20;
+if (PlatformUtils.isIOS()) {
+  num2 = 22;
+}
+PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isIOS()) {
   num = 22;
 }
-let c4 = "text-sm/semibold";
 let c5 = "text-sm/semibold";
 const hairlineWidth = StyleSheet.hairlineWidth;
 const frozen = Object.freeze({ waitForInteraction: false, viewAreaCoveragePercentThreshold: 100, minimumViewTime: 25 });
@@ -24,7 +29,8 @@ const result = size.fileFinishedImporting("modules/channel_list_v2/native/Redesi
 
 export const CHANNEL_SUBTITLE_TEXT_VARIANT = "text-xs/medium";
 export const CHANNEL_PADDING_VERTICAL = 8;
-export const CHANNEL_TITLE_LINE_HEIGHT = num;
+export const CHANNEL_TITLE_LINE_HEIGHT = num2;
+export const CATEGORY_NAME_LINE_HEIGHT = num;
 export const SEARCH_BAR_HEIGHT = 40;
 export const SEARCH_BAR_MARGIN_BOTTOM = 8;
 export const SEARCH_BAR_PADDING_VERTICAL = 12;
@@ -54,15 +60,15 @@ export const getScaledChannelSubtitleHeight = function getScaledChannelSubtitleH
 };
 export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fontScale) {
   const obj = useScaledTextLineHeight;
-  return obj.scaleTextLineHeight(c5, fontScale) + 8 + 4;
+  return obj.scaleLineHeight(num, fontScale) + 8 + 4;
 };
 export const getScaledChannelRowHeight = function getScaledChannelRowHeight(fontScale) {
   const sum = 8 + hairlineWidth;
   const obj = useScaledTextLineHeight;
-  return 2 * sum + obj.scaleLineHeight(num, fontScale);
+  return 2 * sum + obj.scaleLineHeight(num2, fontScale);
 };
 export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
   const obj = useScaledTextLineHeight;
-  return 24 + obj.scaleTextLineHeight(c4, fontScale);
+  return 24 + obj.scaleTextLineHeight(c5, fontScale);
 };
 export const VIEWABILITY_CONFIG = frozen;

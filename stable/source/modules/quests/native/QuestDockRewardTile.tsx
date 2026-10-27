@@ -1,17 +1,17 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13907
+// Function ID: 13908
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 5081, 21, 5092, 587, 558, 576, 1382, 504, 9180, 8421, 6157, 2]
+// Dependencies: [32, 19, 17, 5181, 21, 5191, 587, 558, 576, 1384, 504, 9487, 8699, 5128, 2]
 
-// Module 12981 (QuestDockRewardTile)
+// Module 13907 (QuestDockRewardTile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AssetUtils from "AssetUtils" /* 9180 */;
+import AssetUtils from "AssetUtils" /* 9487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[0] !== withAnimation) {
     let isIOSResult = withAnimation;
     if (undefined === withAnimation) {
-      const tmpResult = tmp(1382);
+      const tmpResult = tmp(1384);
       isIOSResult = tmpResult.isIOS();
     }
     cResult[0] = withAnimation;
@@ -83,8 +83,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F145401 */ });
-          return () => { /* body not rendered: F145402 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148125 */ });
+          return () => { /* body not rendered: F148126 */ };
         } else {
           return;
         }
@@ -108,8 +108,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F145401 */ });
-          return () => { /* body not rendered: F145402 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148125 */ });
+          return () => { /* body not rendered: F148126 */ };
         } else {
           return;
         }
@@ -125,15 +125,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp) {
           tmp2 = closure_1_5;
           str = "change";
-          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F145401 */ });
-          return () => { /* body not rendered: F145402 */ };
+          closure_0 = closure_1_5.addEventListener("change", () => { /* body not rendered: F148125 */ });
+          return () => { /* body not rendered: F148126 */ };
         } else {
           return;
         }
       }
     }
   }
-  const tmpResult4 = tmp(9180);
+  const tmpResult4 = tmp(9487);
   const scaledImageUrl = tmpResult4.getScaledImageUrl({ assetUrl, width, height });
   cResult[7] = assetUrl;
   cResult[8] = height;

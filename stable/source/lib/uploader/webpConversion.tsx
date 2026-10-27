@@ -1,12 +1,12 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 8063
+// Function ID: 8064
 // Name: webpConversion
-// Dependencies: [5, 3, 7792, 1264, 2]
+// Dependencies: [5, 3, 8064, 1266, 2]
 // Exports: maybeConvertToWebP
 
-// Module 7791 (webpConversion)
+// Module 8063 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef1264 from "module_1264" /* 1264 */;
+import _modDef1266 from "module_1266" /* 1266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ let obj = function _shouldConvertToWebP2() {
 };
 function hashImageData(data) {
   const uint8Array = new Uint8Array(data.data.buffer);
-  const str = _modDef1264(uint8Array);
+  const str = _modDef1266(uint8Array);
   return str.toString(16);
 }
 obj = function _performWebPConversion() {

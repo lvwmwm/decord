@@ -1,18 +1,18 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9381
+// Function ID: 9382
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2129, 9085, 7278, 1085, 8341, 584, 5644, 5636, 2]
+// Dependencies: [5, 2132, 9379, 7549, 1087, 8619, 584, 5900, 5892, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9087 (StorefrontCollectionActionCreators)
+// Module 9381 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import StoreUtils from "StoreUtils" /* 5644 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8341 */;
+import Constants from "Constants" /* 1087 */;
+import StoreUtils from "StoreUtils" /* 5900 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8619 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9085 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7278 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9379 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7549 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;
@@ -100,7 +100,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -249,7 +249,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       obj6 = {};
     }
     flag = obj6.retryAfterError ?? false;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -515,7 +515,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

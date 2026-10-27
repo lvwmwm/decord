@@ -4,4 +4,4 @@
 
 // Module 1324
 
-export default EvalError;
+export default Function.prototype.apply;

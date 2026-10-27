@@ -1,25 +1,44 @@
-// Module ID: 17177
-// Function ID: 17178
+// Module ID: 12123
+// Function ID: 12124
 // Name: conjurePublishCard
-// Dependencies: [3849, 2]
-// Exports: isConjurePublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
+// Dependencies: [3883, 2]
+// Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 17177 (conjurePublishCard)
-import _modDef3849 from "module_3849" /* 3849 */;
+// Module 12123 (conjurePublishCard)
+import _modDef3883 from "module_3883" /* 3883 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
 
-export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(publish) {
+export const isPublishCardLive = function isPublishCardLive(reason, newUiUnpublished) {
+  let tmp = null != newUiUnpublished;
+  if (tmp) {
+    let tmp3;
+    if ("new_ui" === reason.reason) {
+      tmp3 = true === newUiUnpublished.newUiUnpublished;
+    } else {
+      tmp3 = "unpublished" === newUiUnpublished.state;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(publish, cta) {
   let tmp = null != publish;
   if (tmp) {
     const status = publish.status;
-    let state;
-    if (status != null) {
-      state = status.state;
+    let tmp2 = null != status;
+    if (tmp2) {
+      let tmp4;
+      if ("new_ui" === cta.reason) {
+        tmp4 = true === status.newUiUnpublished;
+      } else {
+        tmp4 = "unpublished" === status.state;
+      }
+      tmp2 = tmp4;
     }
-    tmp = "unpublished" === state;
+    tmp = tmp2;
   }
   return tmp;
 };
@@ -34,49 +53,73 @@ export const publishCardServerName = function publishCardServerName(name) {
   }
   return combined;
 };
-export const livePublishCardMessageId = function livePublishCardMessageId(arg0, arg1) {
-  if ("unpublished" !== arg1) {
-    return null;
-  } else {
-    let diff = arg0.length - 1;
-    if (0 <= diff) {
-      while (null == arg0[diff].publishCta) {
-        diff = diff - 1;
-      }
-      return arg0[diff].id;
+export const livePublishCardMessageId = function livePublishCardMessageId(arg0, newUiUnpublished) {
+  let diff = arg0.length - 1;
+  if (0 <= diff) {
+    const publishCta = arg0[diff].publishCta;
+    while (null == publishCta) {
+      diff = diff - 1;
     }
-    return null;
+    let tmp4 = null != newUiUnpublished;
+    if (tmp4) {
+      let tmp5;
+      if ("new_ui" === publishCta.reason) {
+        tmp5 = true === newUiUnpublished.newUiUnpublished;
+      } else {
+        tmp5 = "unpublished" === newUiUnpublished.state;
+      }
+      tmp4 = tmp5;
+    }
+    let id = null;
+    if (tmp4) {
+      id = arg0[diff].id;
+    }
+    return id;
   }
+  return null;
 };
-export const showsOutdatedNotice = function showsOutdatedNotice(publish) {
-  return null != publish && publish.isUpdate && null == publish.disabledReason && true !== publish.publishing;
+export const showsOutdatedNotice = function showsOutdatedNotice(isUpdate) {
+  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason && true !== isUpdate.publishing;
 };
 export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
   let ev23Cw;
   if (true === notice.channel_skipped) {
-    ev23Cw = _modDef3849.ev23Cw;
+    ev23Cw = _modDef3883.ev23Cw;
   } else if (notice.update) {
-    ev23Cw = _modDef3849.gQzuLC;
+    ev23Cw = _modDef3883.gQzuLC;
   } else if (null == arg1) {
-    ev23Cw = _modDef3849.MOrR29;
+    ev23Cw = _modDef3883.MOrR29;
   } else {
-    ev23Cw = _modDef3849["/npn7F"];
+    ev23Cw = _modDef3883["/npn7F"];
   }
   return ev23Cw;
 };
 export const withLivePublishCard = function withLivePublishCard(stateFromStores1, stateFromStores2) {
-  let id = null;
-  if ("unpublished" === stateFromStores2) {
-    let diff = stateFromStores1.length - 1;
-    id = null;
-    if (0 <= diff) {
-      while (null == stateFromStores1[diff].publishCta) {
-        diff = diff - 1;
-        id = null;
+  let diff = stateFromStores1.length - 1;
+  let tmp2 = null;
+  if (0 <= diff) {
+    const publishCta = stateFromStores1[diff].publishCta;
+    while (null == publishCta) {
+      diff = diff - 1;
+      tmp2 = null;
+    }
+    let tmp5 = null != stateFromStores2;
+    if (tmp5) {
+      let tmp6;
+      if ("new_ui" === publishCta.reason) {
+        tmp6 = true === stateFromStores2.newUiUnpublished;
+      } else {
+        tmp6 = "unpublished" === stateFromStores2.state;
       }
+      tmp5 = tmp6;
+    }
+    let id = null;
+    if (tmp5) {
       id = stateFromStores1[diff].id;
     }
+    tmp2 = id;
   }
+  id = tmp2;
   let mapped = stateFromStores1;
   if (!stateFromStores1.every((publishCta) => null == publishCta.publishCta || publishCta.id === id)) {
     mapped = stateFromStores1.map((publishCta) => {

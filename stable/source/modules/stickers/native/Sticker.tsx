@@ -1,22 +1,22 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 10073
+// Function ID: 10074
 // Name: Sticker
-// Dependencies: [19, 17, 1205, 21, 5750, 5749, 558, 576, 1126, 8013, 9771, 6157, 4969, 6821, 6822, 2]
+// Dependencies: [19, 17, 1207, 21, 6006, 6005, 558, 576, 1128, 8287, 10074, 5128, 5065, 7099, 7100, 2]
 // Exports: getStickerAssetUrl
 
-// Module 9770 (Sticker)
+// Module 10073 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import shared from "shared" /* 4969 */;
-import StickersUtils from "StickersUtils" /* 5749 */;
-import StickersTypes from "StickersTypes" /* 5750 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8013 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 9771 */;
+import intl2 from "intl" /* 1128 */;
+import shared from "shared" /* 5065 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import StickersUtils from "StickersUtils" /* 6005 */;
+import StickersTypes from "StickersTypes" /* 6006 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8287 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 10074 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
   let str;
   let tmp27Result;
   const obj = react2;
-  const cResult = obj.c(32);
+  const cResult = obj.c(33);
   ({ sticker, size, animated, opaque } = arg0);
   if (undefined === opaque) {
     num = 1;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         tmp5 = cResult[3];
       }
       if (cResult[4] !== sticker.name) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const obj2 = { stickerName: sticker.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl2.t.rk6pOw, obj2);
         cResult[4] = sticker.name;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         if (str4 == null) {
           str4 = "";
         }
-        const NativeLottieRenderMode = tmp(8013).NativeLottieRenderMode;
+        const NativeLottieRenderMode = tmp(8287).NativeLottieRenderMode;
         const tmp33 = undefined === animated || animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
         if (cResult[6] === tmp8) {
           if (cResult[7] === num) {
@@ -171,28 +171,31 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
             tmp24 = cResult[27];
           }
           if (cResult[28] === tmp8) {
-            if (cResult[29] === tmp23) {
-              let tmp25;
-              if (cResult[30] === tmp24) {
-                tmp25 = cResult[31];
+            if (cResult[29] === (undefined === animated || animated)) {
+              if (cResult[30] === tmp23) {
+                let tmp25;
+                if (cResult[31] === tmp24) {
+                  tmp25 = cResult[32];
+                }
+                return tmp25;
               }
-              return tmp25;
             }
           }
-          const obj6 = { resizeMode: "contain", style: tmp23, placeholder: tmp27Result, source: tmp24, accessible: true, accessibilityLabel: tmp8 };
+          const obj6 = { enableAnimation: undefined === animated || animated, resizeMode: "contain", style: tmp23, placeholder: tmp27Result, source: tmp24, accessible: true, accessibilityLabel: tmp8 };
           const tmp28 = FastImageDefault;
           const tmp26 = jsx;
           const tmpResult7 = shared;
           if (tmpResult7.isThemeDark(ThemeStore.theme)) {
-            tmp27Result = tmp27(6821);
+            tmp27Result = tmp27(7099);
           } else {
-            tmp27Result = tmp27(6822);
+            tmp27Result = tmp27(7100);
           }
           const tmp26Result = tmp26(tmp28, obj6);
           cResult[28] = tmp8;
-          cResult[29] = tmp23;
-          cResult[30] = tmp24;
-          cResult[31] = tmp26Result;
+          cResult[29] = undefined === animated || animated;
+          cResult[30] = tmp23;
+          cResult[31] = tmp24;
+          cResult[32] = tmp26Result;
           tmp25 = tmp26Result;
         }
         const size3 = { height: size, width: size, opacity: num };
@@ -264,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
   if (str == null) {
     str = "";
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const obj3 = { stickerName: sticker.name };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t.rk6pOw, obj3);
   if (sticker.format_type === StickersTypes.StickerFormat.LOTTIE) {
@@ -275,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8013).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8287).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {
@@ -291,15 +294,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
       const merged = Object.assign(obj4);
       return <tmp9 />;
     }
-    const obj6 = { resizeMode: "contain", style: size3, placeholder: tmp14Result, source: obj7, accessible: true, accessibilityLabel: formatToPlainStringResult };
+    const obj6 = { enableAnimation: animated, resizeMode: "contain", style: size3, placeholder: tmp14Result, source: obj7, accessible: true, accessibilityLabel: formatToPlainStringResult };
     size3 = { height: size, width: size, opacity: num };
     const tmp15 = FastImageDefault;
     const tmp13 = jsx;
     const tmpResult10 = shared;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(6821);
+      tmp14Result = tmp14(7099);
     } else {
-      tmp14Result = tmp14(6822);
+      tmp14Result = tmp14(7100);
     }
     obj7 = { uri: str };
     return tmp13(tmp15, obj6);

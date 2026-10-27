@@ -1,22 +1,22 @@
-// Module ID: 18522
-// Function ID: 18523
+// Module ID: 18918
+// Function ID: 18919
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6157, 1126, 18523, 1200, 18524, 18525, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 5128, 1128, 18919, 1202, 18920, 18921, 2]
 
-// Module 18522 (HowItWorksSection)
+// Module 18918 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18523 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18524 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18525 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18919 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18920 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18921 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { cardNumber: 1, description: intl.string(intl4.t.lT0ZNS), iconSource: AssetRegistryDefault };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     const tmp10 = React3(closure_7, obj2);
     const tmp11 = React3(native.Spacer, { size: 12 });
     cResult[0] = tmp10;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { cardNumber: 2, description: intl2.string(intl4.t.ihN2Wb), iconSource: AssetRegistryDefault2 };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     const tmp16 = React3(closure_7, obj3);
     cResult[2] = tmp16;
     tmp12 = tmp16;
@@ -183,7 +183,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { cardNumber: 3, description: intl3.string(intl4.t.c8krDQ), iconSource: AssetRegistryDefault3 };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     const tmp25 = React3(closure_7, obj5);
     cResult[5] = tmp25;
     tmp21 = tmp25;

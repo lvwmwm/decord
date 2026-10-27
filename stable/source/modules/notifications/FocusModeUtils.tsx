@@ -1,18 +1,18 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 13514
+// Function ID: 13515
 // Name: FocusModeUtils
-// Dependencies: [5759, 4763, 1085, 558, 576, 2041, 2046, 1240, 1265, 5299, 1126, 12579, 2]
+// Dependencies: [6015, 4858, 1087, 558, 576, 2044, 2049, 1242, 1267, 5399, 1128, 13515, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 12578 (FocusModeUtils)
+// Module 13514 (FocusModeUtils)
 import react from "react" /* 576 */;
-import wrappers from "wrappers" /* 1240 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4763 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
-import Constants from "Constants" /* 1085 */;
+import wrappers from "wrappers" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import NotificationConstants from "NotificationConstants" /* 4858 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,21 +146,21 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   }
   if (tmp7) {
     const obj3 = {
-      title: intl.string(tmp(1126).t["B+cbLS"]),
-      body: intl2.string(tmp(1126).t.CYVgLI),
-      cancelText: intl3.string(tmp(1126).t.f3Pet9),
-      confirmText: intl4.string(tmp(1126).t.BddRzS),
+      title: intl.string(tmp(1128).t["B+cbLS"]),
+      body: intl2.string(tmp(1128).t.CYVgLI),
+      cancelText: intl3.string(tmp(1128).t.f3Pet9),
+      confirmText: intl4.string(tmp(1128).t.BddRzS),
       onConfirm() {
           const obj = { nextStatus: constants.ONLINE };
           closure_1(dependencyMap[11])(obj);
         }
     };
-    const show = tmp5(5299).show;
+    const show = tmp5(5399).show;
     AlertActionCreatorsDefault;
-    intl = tmp(1126).intl;
-    intl2 = tmp(1126).intl;
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    intl = tmp(1128).intl;
+    intl2 = tmp(1128).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     show(obj3);
   }
 };

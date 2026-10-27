@@ -1,16 +1,16 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 14346
+// Function ID: 14347
 // Name: InAppReportsGuildScheduledEventPreview
-// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 4967, 1126, 5088, 6159, 2]
+// Dependencies: [19, 17, 2090, 21, 5191, 587, 558, 576, 504, 5063, 1128, 5187, 6436, 2]
 
-// Module 13566 (InAppReportsGuildScheduledEventPreview)
+// Module 14346 (InAppReportsGuildScheduledEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildIconDefault from "GuildIcon" /* 6159 */;
+import GuildIconDefault from "GuildIcon" /* 6436 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
     let tmp13;
     let tmp16;
     if (cResult[3] !== tmp4.borderColor.color) {
-      const tmpResult2 = event(4967);
+      const tmpResult2 = event(5063);
       const hexWithOpacityResult = tmpResult2.hexWithOpacity(tmp4.borderColor.color, 0.08);
       cResult[3] = tmp4.borderColor.color;
       cResult[4] = hexWithOpacityResult;
@@ -76,8 +76,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
     const _Symbol = Symbol;
     ({ container, title } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(event(1126).t.SDTOL7);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(event(1128).t.SDTOL7);
       cResult[5] = stringResult;
       tmp11 = stringResult;
     } else {
@@ -85,7 +85,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
     }
     if (cResult[6] !== tmp4.title) {
       const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp11 };
-      const tmp15 = closure_5(event(5088).Text, obj2);
+      const tmp15 = closure_5(event(5187).Text, obj2);
       cResult[6] = tmp4.title;
       cResult[7] = tmp15;
       tmp13 = tmp15;
@@ -107,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
         tmp17 = cResult[12];
       }
       if (cResult[13] !== stateFromStores) {
-        const obj4 = { guild: stateFromStores, size: event(6159).GuildIconSizes.XXSMALL, selected: false };
+        const obj4 = { guild: stateFromStores, size: event(6436).GuildIconSizes.XXSMALL, selected: false };
         const tmp21 = GuildIconDefault;
         const tmp22 = closure_5(tmp21, obj4);
         cResult[13] = stateFromStores;
@@ -167,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
               tmp33 = tmp36;
             }
             const obj7 = { style: tmp4.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
-            const tmp32 = closure_5(event(5088).Text, obj7);
+            const tmp32 = closure_5(event(5187).Text, obj7);
             cResult[22] = event.name;
             cResult[23] = tmp4.eventName;
             cResult[24] = tmp32;
@@ -184,7 +184,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
         tmp26 = tmp29;
       }
       const obj9 = { style: tmp4.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      const tmp25 = closure_5(event(5088).Text, obj9);
+      const tmp25 = closure_5(event(5187).Text, obj9);
       cResult[15] = stateFromStores.name;
       cResult[16] = tmp4.guildName;
       cResult[17] = tmp25;
@@ -211,25 +211,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
     return null;
   } else {
     const obj2 = { style: tmp.container, children: items1 };
-    const tmp2Result = event(4967);
-    const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: intl.string(event(1126).t.SDTOL7) };
+    const tmp2Result = event(5063);
+    const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: intl.string(event(1128).t.SDTOL7) };
     const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
+    const Text = tmp2(5187).Text;
+    intl = tmp2(1128).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = { style: items2, children: items4 };
     items2 = [tmp.itemContainer, ];
     const obj5 = { borderColor: hexWithOpacityResult };
     items2[1] = obj5;
     const obj6 = { style: tmp.guildInfo, children: items3 };
-    const obj7 = { guild: stateFromStores, size: event(6159).GuildIconSizes.XXSMALL, selected: false };
+    const obj7 = { guild: stateFromStores, size: event(6436).GuildIconSizes.XXSMALL, selected: false };
     const tmp10 = GuildIconDefault;
     items3 = [closure_5(tmp10, obj7), ];
     const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-    items3[1] = closure_5(event(5088).Text, obj8);
+    items3[1] = closure_5(event(5187).Text, obj8);
     items4 = [closure_6(View, obj6), ];
     const obj9 = { style: tmp.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
-    items4[1] = closure_5(event(5088).Text, obj9);
+    items4[1] = closure_5(event(5187).Text, obj9);
     items1[1] = closure_6(View, obj4);
     return closure_6(View, obj2);
   }

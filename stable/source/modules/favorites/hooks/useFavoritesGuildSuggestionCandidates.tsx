@@ -1,24 +1,24 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 17421
+// Function ID: 17422
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16737, 7343, 2065, 16643, 11561, 558, 576, 16739, 504, 8712, 12699, 11572, 8708, 8695, 2]
+// Dependencies: [19, 17422, 7613, 2068, 17330, 12689, 558, 576, 17424, 504, 8988, 13632, 12700, 8984, 8972, 2]
 // Exports: default
 
-// Module 16736 (useFavoritesGuildSuggestionCandidates)
+// Module 17421 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
-import _mod8695 from "module_8695" /* 8695 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8708 */;
-import ShareConstants from "ShareConstants" /* 11561 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16643 */;
+import _mod8972 from "module_8972" /* 8972 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8984 */;
+import ShareConstants from "ShareConstants" /* 12689 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17330 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16737 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17422 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7613 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_1, importDefault, set;
+let _require, closure_1, importDefault, results, set;
 
 let tmp;
 const get_initialized = tmp(504);
@@ -111,7 +111,6 @@ let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGui
 export default function useFavoritesGuildSuggestionCandidates(arg0) {
   let affinities;
   let closure_0;
-  let results;
   let userAffinitiesMap;
   _require = arg0;
   const tmp = require("useFavoritesGuildChannelFilter")();
@@ -224,7 +223,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod8695.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod8972.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

@@ -1,21 +1,25 @@
-// Module ID: 5422
-// Function ID: 5423
+// Module ID: 5522
+// Function ID: 5523
 // Name: LinkUtils
-// Dependencies: [2065, 2087, 4750, 1085, 2072, 5076, 2]
-// Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
+// Dependencies: [2068, 2090, 4845, 1087, 2075, 5169, 5176, 11, 2]
+// Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseConversationIdFromQuery, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5422 (LinkUtils)
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import RegexUtilsDefault from "RegexUtils" /* 5076 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import Constants from "Constants" /* 1085 */;
+// Module 5522 (LinkUtils)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ConversationConstants from "ConversationConstants" /* 5169 */;
+import RegexUtilsDefault from "RegexUtils" /* 5176 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;
 const Permissions = Constants.Permissions;
-const arr = Array.from(ChannelConstants.StaticChannelRoutes);
+const StaticChannelRoutes = ChannelConstants.StaticChannelRoutes;
+const CONVERSATION_QUERY_PARAM = ConversationConstants.CONVERSATION_QUERY_PARAM;
+const arr = Array.from(StaticChannelRoutes);
 const mapped = arr.map((item) => {
   const obj = RegexUtilsDefault;
   return obj.escape(item);
@@ -26,14 +30,17 @@ const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + 
 const regExp2 = new RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const regExp3 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+)/roll-dice(?:/(\\d+)d(\\d+))?$");
 const regExp4 = new RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?");
-const re12 = /^\/users\/(\d+)\/?$/;
+const re13 = /^\/users\/(\d+)\/?$/;
 const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
-const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
+const regExp7 = new RegExp("[\\w%=&+-]+");
+const regExp8 = new RegExp("" + regExp6.source + "(?:\\?(" + regExp7.source + "))?");
+const regExp9 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const result = size.fileFinishedImporting("modules/links/LinkUtils.tsx");
 
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
-export const MEDIA_POST_URL_RE = regExp7;
+export const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = regExp8;
+export const MEDIA_POST_URL_RE = regExp9;
 export const tryParseChannelPath = function tryParseChannelPath(pathname) {
   if (null == pathname) {
     return null;
@@ -82,7 +89,7 @@ export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathna
 export const tryParseUserProfilePath = function tryParseUserProfilePath(pathname) {
   let tmp = null;
   if (null != pathname) {
-    const match = pathname.match(re12);
+    const match = pathname.match(re13);
     let tmp4;
     if (match != null) {
       tmp4 = match[1];
@@ -145,5 +152,22 @@ export const tryParseDiceRollLink = function tryParseDiceRollLink(pathname) {
       }
     }
     return tmp;
+  }
+};
+export const tryParseConversationIdFromQuery = function tryParseConversationIdFromQuery(arg0) {
+  if (null != arg0) {
+    const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
+    const uRLSearchParams = new URLSearchParams(arg0);
+    const value = uRLSearchParams.get(CONVERSATION_QUERY_PARAM);
+    if (null != value) {
+      const obj2 = SnowflakeUtilsDefault;
+      const tmp6 = importDefault;
+      if (obj2.isProbablyAValidSnowflake(value)) {
+        const tmp6Result = tmp6(11);
+        return tmp6Result.cast(value);
+      }
+    }
   }
 };

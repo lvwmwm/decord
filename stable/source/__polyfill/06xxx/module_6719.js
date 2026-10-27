@@ -1,25 +1,17 @@
 // Module ID: 6719
 // Function ID: 6720
-// Dependencies: []
-// Exports: getModalRouteKeys
+// Dependencies: [6720, 6671]
+// Exports: useCompetingGestures
 
 // Module 6719
+import ComposedGestureName from "ComposedGestureName" /* 6671 */;
+import _mod6720 from "module_6720" /* 6720 */;
 
-export const getModalRouteKeys = (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
-    }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation;
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
+
+export const useCompetingGestures = function useCompetingGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod6720.useComposedGesture;
+  _mod6720;
+  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
+  return useComposedGesture.apply(items1);
 };

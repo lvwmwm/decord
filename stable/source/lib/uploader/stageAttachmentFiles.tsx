@@ -1,11 +1,11 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 10008
+// Function ID: 10009
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1085, 7752, 2]
+// Dependencies: [5, 1087, 8023, 2]
 // Exports: default
 
-// Module 9705 (stageAttachmentFiles)
-import Constants from "Constants" /* 1085 */;
+// Module 10008 (stageAttachmentFiles)
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let obj = function _stageAttachmentFiles() {
     if (closure_1 === undefined) {
       flag = false;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

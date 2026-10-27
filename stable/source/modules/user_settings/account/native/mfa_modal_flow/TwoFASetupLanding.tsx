@@ -1,21 +1,21 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15804
+// Function ID: 15805
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5092, 558, 576, 15043, 6157, 15044, 5088, 1126, 6814, 15039, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 15805, 5128, 15806, 5187, 1128, 7092, 15801, 2]
 
-// Module 15042 (TwoFASetupLanding)
+// Module 15804 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 15039 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 15043 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15044 */;
+import intl3 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 15801 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 15805 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15806 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
-    const Heading = tmp(5088).Heading;
-    intl = tmp(1126).intl;
+    const Heading = tmp(5187).Heading;
+    intl = tmp(1128).intl;
     const tmp13 = React3(Heading, obj4);
     cResult[2] = tmp13;
     tmp11 = tmp13;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const formatResult = intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
       cResult[6] = formatResult;
       tmp15 = formatResult;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
         }
         const obj6 = { children: React3(View, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(15039).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(15801).TwoFASetupModalScreen;
         const tmp26 = React3(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;

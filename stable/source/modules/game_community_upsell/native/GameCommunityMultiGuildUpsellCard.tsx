@@ -1,25 +1,25 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 17412
+// Function ID: 17413
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5081, 4751, 2087, 1085, 21, 5092, 587, 504, 1415, 1450, 1497, 1265, 6098, 6920, 7053, 7052, 1126, 9012, 6157, 8865, 1200, 5088, 5379, 9358, 7569, 9237, 2]
+// Dependencies: [5, 32, 19, 17, 5181, 4846, 2090, 1087, 21, 5191, 587, 504, 1417, 1452, 1499, 1267, 6377, 7196, 7329, 7328, 1128, 9308, 5128, 9141, 1202, 5187, 5479, 9662, 7840, 9543, 2]
 // Exports: default
 
-// Module 16727 (GameCommunityMultiGuildUpsellCard)
+// Module 17412 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import transitionToGuild from "transitionToGuild" /* 7053 */;
+import intl6 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
+import transitionToGuild from "transitionToGuild" /* 7329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import LurkingStore from "LurkingStore" /* 4751 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;

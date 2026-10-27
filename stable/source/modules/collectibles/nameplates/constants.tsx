@@ -1,10 +1,10 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 1996
+// Function ID: 1997
 // Name: nameplates/constants
-// Dependencies: [1995, 2]
+// Dependencies: [1997, 2]
 
-// Module 1994 (nameplates/constants)
-import types from "types" /* 1995 */;
+// Module 1996 (nameplates/constants)
+import types from "types" /* 1997 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

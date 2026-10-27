@@ -1,20 +1,20 @@
-// Module ID: 17127
-// Function ID: 17128
+// Module ID: 11711
+// Function ID: 11712
 // Name: conjurePreviewTargets
-// Dependencies: [8606, 17118, 1126, 3849, 2]
+// Dependencies: [6297, 11697, 1128, 3883, 2]
 // Exports: activePreviewTarget, getPreviewTargetLabel, previewTargetKey, previewTargets, selectPreviewTarget
 
-// Module 17127 (conjurePreviewTargets)
-import intl5 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ConjurePreviewMode from "ConjurePreviewMode" /* 17118 */;
+// Module 11711 (conjurePreviewTargets)
+import intl5 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ConjurePreviewMode from "ConjurePreviewMode" /* 11697 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTargets.tsx");
 
-export const previewTargets = function previewTargets(modes, frameSurfaceOptions, stateFromStores3) {
-  let items = stateFromStores3;
-  if (stateFromStores3 === undefined) {
+export const previewTargets = function previewTargets(modes, frameSurfaceOptions, stateFromStores4) {
+  let items = stateFromStores4;
+  if (stateFromStores4 === undefined) {
     items = [];
   }
   return modes.flatMap((mode) => {
@@ -88,20 +88,20 @@ export const getPreviewTargetLabel = function getPreviewTargetLabel(mode) {
       const intl4 = intl5.intl;
       const formatToPlainString = intl4.formatToPlainString;
       const obj = { surface: obj2.getPreviewFrameSurfaceLabel(mode.surface), channel: mode.appChannel };
-      const prop = _modDef3849["6xVl+N"];
+      const prop = _modDef3883["6xVl+N"];
       obj2 = ConjurePreviewMode;
       previewFrameSurfaceLabel = formatToPlainString(prop, obj);
     }
     return previewFrameSurfaceLabel;
   } else if ("widget" === mode) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3849.y5GiL1);
+    return intl3.string(_modDef3883.y5GiL1);
   } else if ("overlay" === mode) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3849["2940LX"]);
+    return intl2.string(_modDef3883["2940LX"]);
   } else if ("bot" === mode) {
     const intl = intl5.intl;
-    return intl.string(_modDef3849.tjpaGN);
+    return intl.string(_modDef3883.tjpaGN);
   }
 };
 export const selectPreviewTarget = function selectPreviewTarget(mode, fn, fn2, fn3) {

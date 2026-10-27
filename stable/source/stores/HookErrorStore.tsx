@@ -1,12 +1,12 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7697
+// Function ID: 7698
 // Name: HookErrorStore
-// Dependencies: [1085, 504, 584, 2]
+// Dependencies: [1087, 504, 584, 2]
 
-// Module 7427 (HookErrorStore)
+// Module 7697 (HookErrorStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

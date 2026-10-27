@@ -1,9 +1,9 @@
-// Module ID: 8994
-// Function ID: 8995
+// Module ID: 9290
+// Function ID: 9291
 // Name: useSlayerStorefrontDevOverrideStore
 // Dependencies: [570, 2]
 
-// Module 8994 (useSlayerStorefrontDevOverrideStore)
+// Module 9290 (useSlayerStorefrontDevOverrideStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

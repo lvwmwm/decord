@@ -1,10 +1,10 @@
-// Module ID: 2039
-// Function ID: 2040
+// Module ID: 2042
+// Function ID: 2043
 // Name: FunctionUtils
 // Dependencies: [2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 2039 (FunctionUtils)
+// Module 2042 (FunctionUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/FunctionUtils.tsx");

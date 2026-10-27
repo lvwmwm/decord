@@ -1,14 +1,14 @@
-// Module ID: 5044
-// Function ID: 5045
+// Module ID: 5143
+// Function ID: 5144
 // Name: DownloadIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 5045, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 5144, 4912, 2]
 
-// Module 5044 (DownloadIcon)
+// Module 5143 (DownloadIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 5045 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 5144 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DownloadIc
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

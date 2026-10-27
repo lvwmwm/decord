@@ -1,17 +1,17 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 11843
+// Function ID: 11844
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2065, 21, 558, 576, 4827, 5372, 6924, 1629, 11714, 10624, 17147, 17153, 2]
+// Dependencies: [19, 2068, 21, 558, 576, 4922, 5472, 7200, 1631, 11844, 10949, 12045, 12087, 2]
 
-// Module 17146 (PortalKeyboardRendererComponent)
+// Module 11843 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
-import useBackPressHandler from "useBackPressHandler" /* 5372 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6924 */;
-import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11714 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 17147 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 17153 */;
+import useBackPressHandler from "useBackPressHandler" /* 5472 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7200 */;
+import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11844 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 12045 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 12087 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ item, state, cleanUp } = arg0);
   ({ channelId, chatInputRef } = item);
   const type = item.type;
-  const tmp4 = state === chatInputRef(4827).TransitionStates.YEETED;
+  const tmp4 = state === chatInputRef(4922).TransitionStates.YEETED;
   importDefault = tmp4;
   if (cResult[0] === chatInputRef) {
     let tmp5;
@@ -50,8 +50,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[5];
     }
-    if (channelId === chatInputRef(6924).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-      FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6924).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    if (channelId === chatInputRef(7200).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(7200).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
     }
     if (cResult[6] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
       let tmp13;
@@ -67,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (null != FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
       if (undefined !== tmp11) {
-        if (chatInputRef(1629).KeyboardTypes.APP_LAUNCHER === type) {
+        if (chatInputRef(1631).KeyboardTypes.APP_LAUNCHER === type) {
           if (cResult[8] === chatInputRef) {
             if (cResult[9] === cleanUp) {
               if (cResult[10] === tmp11) {
@@ -80,14 +80,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           AppLauncherKeyboardDefault;
-          const tmp27 = <tmp26 context={tmp11} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={chatInputRef(10624).AppLauncherEntrypoint.TEXT} />;
+          const tmp27 = <tmp26 context={tmp11} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={chatInputRef(10949).AppLauncherEntrypoint.TEXT} />;
           cResult[8] = chatInputRef;
           cResult[9] = cleanUp;
           cResult[10] = tmp11;
           cResult[11] = state;
           cResult[12] = tmp27;
           tmp23 = tmp27;
-        } else if (chatInputRef(1629).KeyboardTypes.MEDIA === type) {
+        } else if (chatInputRef(1631).KeyboardTypes.MEDIA === type) {
           if (cResult[13] === chatInputRef) {
             if (cResult[14] === cleanUp) {
               if (cResult[15] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
@@ -106,7 +106,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           cResult[16] = state;
           cResult[17] = tmp22;
           tmp19 = tmp22;
-        } else if (chatInputRef(1629).KeyboardTypes.EXPRESSION === type) {
+        } else if (chatInputRef(1631).KeyboardTypes.EXPRESSION === type) {
           if (cResult[18] === chatInputRef) {
             if (cResult[19] === cleanUp) {
               if (cResult[20] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
@@ -164,7 +164,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let memo;
   let tmp = channelId;
   let tmp2 = dependencyMap;
-  const tmp3 = state === channelId(4827).TransitionStates.YEETED;
+  const tmp3 = state === channelId(4922).TransitionStates.YEETED;
   dependencyMap = tmp3;
   const items = [chatInputRef, tmp3];
   const layoutEffect = channel.useLayoutEffect(() => {
@@ -200,13 +200,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items2);
   if (null != memo) {
     if (undefined !== memo1) {
-      if (tmp(1629).KeyboardTypes.APP_LAUNCHER === type) {
-        chatInputRef(11714);
-        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10624).AppLauncherEntrypoint.TEXT} />;
-      } else if (tmp(1629).KeyboardTypes.MEDIA === type) {
-        return jsx(chatInputRef(17147), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
-      } else if (tmp(1629).KeyboardTypes.EXPRESSION === type) {
-        return jsx(chatInputRef(17153), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      if (tmp(1631).KeyboardTypes.APP_LAUNCHER === type) {
+        chatInputRef(11844);
+        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10949).AppLauncherEntrypoint.TEXT} />;
+      } else if (tmp(1631).KeyboardTypes.MEDIA === type) {
+        return jsx(chatInputRef(12045), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      } else if (tmp(1631).KeyboardTypes.EXPRESSION === type) {
+        return jsx(chatInputRef(12087), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }

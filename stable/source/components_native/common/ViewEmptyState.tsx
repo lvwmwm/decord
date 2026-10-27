@@ -1,19 +1,19 @@
-// Module ID: 6742
-// Function ID: 6743
+// Module ID: 7019
+// Function ID: 7020
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 6157, 1200, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 6162, 587, 558, 576, 5128, 1202, 2]
 
-// Module 6742 (ViewEmptyState)
+// Module 7019 (ViewEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import TextStyles from "TextStyles" /* 5906 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import TextStyles from "TextStyles" /* 6162 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
           const obj4 = { style: items1, children: text };
           items1 = [, ];
           ({ emptyLabel: arr2[0], emptyText: arr2[1] } = tmp4);
-          tmp14 = React3(tmp(1200).LegacyText, obj4);
+          tmp14 = React3(tmp(1202).LegacyText, obj4);
         }
         cResult[9] = tmp4.emptyLabel;
         cResult[10] = tmp4.emptyText;
@@ -111,7 +111,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
       let tmp11 = null;
       if (null != label) {
         const obj5 = { style: tmp4.emptyLabel, children: label.toUpperCase() };
-        const LegacyText = tmp(1200).LegacyText;
+        const LegacyText = tmp(1202).LegacyText;
         tmp11 = React3(LegacyText, obj5);
       }
       cResult[6] = label;

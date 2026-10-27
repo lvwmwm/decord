@@ -1,26 +1,26 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 13376
+// Function ID: 13377
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 12437, 6662, 1085, 21, 5092, 6259, 587, 558, 576, 1126, 5088, 1503, 1631, 12412, 1265, 5379, 12441, 12032, 6265, 6814, 2]
+// Dependencies: [32, 19, 17, 13373, 6939, 1087, 21, 5191, 6536, 587, 558, 576, 1128, 5187, 1505, 1633, 13348, 1267, 5479, 13377, 12977, 6542, 7092, 2]
 
-// Module 12440 (GuildTemplates)
+// Module 13376 (GuildTemplates)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 12032 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12412 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 12441 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 12977 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13348 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 13377 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 12437 */;
-import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 6662 */;
-import Constants from "Constants" /* 1085 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13373 */;
+import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 6939 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const tmp4 = closure_16();
   ({ headerContainer, headerTitle } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["5HZu07"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -90,7 +90,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   }
   const headerDescription = tmp4.headerDescription;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t["/k/L/j"]);
     cResult[3] = stringResult1;
     tmp10 = stringResult1;
@@ -309,15 +309,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const onHeightChange = trigger.onHeightChange;
   const tmp = closure_16();
   const tmp2 = trigger;
-  let obj = trigger(1503);
+  let obj = trigger(1505);
   dependencyMap = obj.useNavigation();
-  const bottom = onHeightChange(1631)().bottom;
+  const bottom = onHeightChange(1633)().bottom;
   if (trigger === constants3.NUF) {
-    const intl2 = tmp2(1126).intl;
-    stringResult = intl2.string(tmp2(1126).t.INo2NK);
+    const intl2 = tmp2(1128).intl;
+    stringResult = intl2.string(tmp2(1128).t.INo2NK);
   } else {
-    const intl = tmp2(1126).intl;
-    stringResult = intl.string(tmp2(1126).t.riOUtB);
+    const intl = tmp2(1128).intl;
+    stringResult = intl.string(tmp2(1128).t.riOUtB);
   }
   const items = [onHeightChange];
   let obj2 = {
@@ -329,9 +329,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   };
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
-  let obj4 = { style: tmp.footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1126).t["N+Mi/U"]) };
-  const Text = tmp2(5088).Text;
-  intl3 = tmp2(1126).intl;
+  let obj4 = { style: tmp.footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1128).t["N+Mi/U"]) };
+  const Text = tmp2(5187).Text;
+  intl3 = tmp2(1128).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
     variant: "primary",
@@ -351,7 +351,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5379).Button, obj5);
+  items2[1] = closure_14(tmp2(5479).Button, obj5);
   return closure_14(closure_5, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

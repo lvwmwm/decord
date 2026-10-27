@@ -1,9 +1,9 @@
-// Module ID: 13416
-// Function ID: 13417
+// Module ID: 14195
+// Function ID: 14196
 // Name: WishlistAnalyticsContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 13416 (WishlistAnalyticsContext)
+// Module 14195 (WishlistAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -56,11 +56,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistAn
   }
 }) : (function WishlistAnalyticsProvider(newValue) {
   newValue = newValue.newValue;
+  context = undefined;
   if (typeof useWishlistAnalyticsContext === "function") {
-    const obj = {};
-    const merged = Object.assign(react.useContext(context));
-    const merged1 = Object.assign(newValue);
-    return <context.Provider value={obj}>{tmp}</context.Provider>;
+    context = react.useContext(context);
+    const items = [context, newValue];
+    return <context.Provider value={react.useMemo(() => {
+      const obj = {};
+      const merged = Object.assign(context);
+      const merged1 = Object.assign(newValue);
+      return obj;
+    }, items)}>{tmp}</context.Provider>;
   } else {
     throw new TypeError("Trying to call a non-function");
   }

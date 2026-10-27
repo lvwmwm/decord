@@ -1,12 +1,12 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17734
+// Function ID: 17735
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 6118, 558, 576, 504, 6117, 2]
+// Dependencies: [19, 6397, 558, 576, 504, 6396, 2]
 
-// Module 17054 (useOtherGuildJoinRequestsForUser)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6117 */;
+// Module 17734 (useOtherGuildJoinRequestsForUser)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6396 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6118 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6397 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

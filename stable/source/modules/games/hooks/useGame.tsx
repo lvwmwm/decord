@@ -1,15 +1,15 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7285
+// Function ID: 7286
 // Name: useGame
-// Dependencies: [5, 19, 2020, 1085, 504, 1102, 7010, 558, 576, 2]
+// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7286, 558, 576, 2]
 
-// Module 7009 (useGame)
-import Constants from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import GameActionCreators from "GameActionCreators" /* 7010 */;
+// Module 7285 (useGame)
+import Constants from "Constants" /* 1087 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import GameActionCreators from "GameActionCreators" /* 7286 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2020 */;
+import GameStore from "GameStore" /* 2022 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

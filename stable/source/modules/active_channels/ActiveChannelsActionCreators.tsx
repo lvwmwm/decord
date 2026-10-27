@@ -1,11 +1,11 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 17191
+// Function ID: 17192
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1085, 584, 1295, 5636, 2]
+// Dependencies: [5, 1087, 584, 1297, 5892, 2]
 // Exports: fetchActiveChannels
 
-// Module 16502 (ActiveChannelsActionCreators)
-import Constants from "Constants" /* 1085 */;
+// Module 17191 (ActiveChannelsActionCreators)
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _fetchActiveChannels() {
               channels = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

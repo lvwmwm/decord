@@ -1,18 +1,18 @@
-// Module ID: 10577
-// Function ID: 10578
+// Module ID: 10902
+// Function ID: 10903
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1390, 21, 5092, 6259, 587, 558, 576, 504, 1126, 6201, 10576, 10578, 6688, 10604, 2]
+// Dependencies: [19, 1392, 21, 5191, 6536, 587, 558, 576, 504, 1128, 6478, 10901, 10903, 6965, 10929, 2]
 
-// Module 10577 (BadgeDirectoryScreen)
+// Module 10902 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10576 */;
-import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 10578 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10901 */;
+import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 10903 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import UserStore from "UserStore" /* 1392 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,8 +98,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult5 = tmp(6201);
-      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(10576).closeBadgeDirectoryScreen);
+      const tmpResult5 = tmp(6478);
+      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(10901).closeBadgeDirectoryScreen);
       cResult[8] = headerCloseButton;
       tmp16 = headerCloseButton;
     } else {
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         if (cResult[11] === tmp14) {
           tmp18 = cResult[12];
         }
-        const tmpResult6 = tmp(10576);
+        const tmpResult6 = tmp(10901);
         if (tmpResult6.isBadgeDirectoryIOSPageSheet()) {
           if (cResult[13] === tmp18) {
             if (cResult[14] === tmp4.sheetHeader) {
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
             }
           }
           ({ sheetHeader: obj10.headerStyle, view: obj10.viewStyle } = tmp4);
-          const tmp27 = jsx(tmp(6688).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
+          const tmp27 = jsx(tmp(6965).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
           cResult[13] = tmp18;
           cResult[14] = tmp4.sheetHeader;
           cResult[15] = tmp4.view;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
               tmp20 = cResult[19];
             }
           }
-          const tmp23 = jsx(tmp(10604).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
+          const tmp23 = jsx(tmp(10929).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
           cResult[17] = tmp18;
           cResult[18] = tmp4.view;
           cResult[19] = tmp23;
@@ -163,17 +163,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
   if (null != targetUserId && targetUserId !== stateFromStores) {
     let formatToPlainStringResult;
     if (null != stateFromStores1) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj6 = { username: stateFromStores1 };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.EIcwoe, obj6);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.EIcwoe, obj6);
     }
     cResult[5] = null != targetUserId && targetUserId !== stateFromStores;
     cResult[6] = stateFromStores1;
     cResult[7] = formatToPlainStringResult;
     tmp14 = formatToPlainStringResult;
   }
-  const intl = tmp(1126).intl;
-  formatToPlainStringResult = intl.string(tmp(1126).t.UqnlQF);
+  const intl = tmp(1128).intl;
+  formatToPlainStringResult = intl.string(tmp(1128).t.UqnlQF);
 }) : (function BadgeDirectoryScreen(targetUserId) {
   let title;
   targetUserId = targetUserId.targetUserId;
@@ -213,9 +213,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
       let formatToPlainStringResult;
       let tmp9Result;
       if (null != stateFromStores1) {
-        const intl2 = tmp2(1126).intl;
+        const intl2 = tmp2(1128).intl;
         let obj3 = { username: stateFromStores1 };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1126).t.EIcwoe, obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1128).t.EIcwoe, obj3);
       }
       dependencyMap = formatToPlainStringResult;
       const items2 = [formatToPlainStringResult, targetUserId, stateFromStores1];
@@ -234,20 +234,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(10576);
+      const tmp2Result = targetUserId(10901);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(6688).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(6965).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(10604).Modal, obj5);
+        tmp9Result = tmp9(tmp2(10929).Modal, obj5);
       }
       return tmp9Result;
     }
   }
-  const intl = tmp2(1126).intl;
-  formatToPlainStringResult = intl.string(tmp2(1126).t.UqnlQF);
+  const intl = tmp2(1128).intl;
+  formatToPlainStringResult = intl.string(tmp2(1128).t.UqnlQF);
 });
 const result = size.fileFinishedImporting("modules/badges/native/BadgeDirectoryScreen.tsx");
 

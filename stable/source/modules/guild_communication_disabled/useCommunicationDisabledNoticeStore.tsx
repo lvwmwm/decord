@@ -1,15 +1,15 @@
-// Module ID: 2126
-// Function ID: 2127
+// Module ID: 2129
+// Function ID: 2130
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 2127, 510, 571, 1272, 558, 576, 1267, 4733, 2]
+// Dependencies: [32, 2130, 510, 571, 1274, 558, 576, 1269, 4828, 2]
 // Exports: clearCommunicationDisabledNotice
 
-// Module 2126 (useCommunicationDisabledNoticeStore)
+// Module 2129 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
-import _mod1267 from "module_1267" /* 1267 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2127 */;
-import _slicedToArray2 from "_slicedToArray" /* 4733 */;
+import _mod1269 from "module_1269" /* 1269 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2130 */;
+import _slicedToArray2 from "_slicedToArray" /* 4828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_571 from "module_571" /* 571 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommuni
   } else {
     first = cResult[0];
   }
-  const tmpResult = _mod1267;
+  const tmpResult = _mod1269;
   [obj3, tmp6] = tmpResult.useStoreWithEqualityFn(state, first, _slicedToArray2.shallow);
   _slicedToArray(tmpResult.useStoreWithEqualityFn(state, first, _slicedToArray2.shallow), 2);
   if (cResult[1] === arg0) {
@@ -117,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommuni
 }) : (function useCommunicationDisabledNoticeStore(arg0) {
   let first;
   let tmp2;
-  const obj = _mod1267;
+  const obj = _mod1269;
   [first, tmp2] = obj.useStoreWithEqualityFn(state, (arg0) => {
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);

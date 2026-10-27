@@ -1,17 +1,17 @@
-// Module ID: 11078
-// Function ID: 11079
+// Module ID: 11464
+// Function ID: 11465
 // Name: useIsVideoBackgroundEnabled
-// Dependencies: [558, 576, 5269, 11079, 1382, 2]
+// Dependencies: [558, 576, 5369, 11465, 1384, 2]
 
-// Module 11078 (useIsVideoBackgroundEnabled)
+// Module 11464 (useIsVideoBackgroundEnabled)
 import react from "react" /* 576 */;
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5269 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 11079 */;
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5369 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 11465 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PlatformUtils = tmp(1382);
+const PlatformUtils = tmp(1384);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundEnabled(location) {
   let tmp4;
   const obj = react;

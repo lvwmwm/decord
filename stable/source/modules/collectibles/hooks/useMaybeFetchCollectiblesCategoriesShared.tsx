@@ -1,16 +1,16 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10397
+// Function ID: 10398
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 5016, 7259, 1087, 558, 576, 504, 7304, 7258, 2]
+// Dependencies: [32, 19, 5112, 7530, 1089, 558, 576, 504, 7575, 7529, 2]
 
-// Module 10094 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7304 */;
+// Module 10397 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 5016 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import ExperimentStore_mod from "ExperimentStore" /* 5112 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7258);
+              const tmp12Result = tmp12(7529);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }
@@ -263,7 +263,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7258);
+              const tmp12Result = tmp12(7529);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }

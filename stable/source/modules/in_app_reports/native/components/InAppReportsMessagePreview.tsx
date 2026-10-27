@@ -1,20 +1,20 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 8012
+// Function ID: 8013
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 5092, 587, 7742, 558, 576, 4967, 1126, 5088, 9369, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 8013, 558, 576, 5063, 1128, 5187, 9673, 2]
 
-// Module 7741 (InAppReportsMessagePreview)
+// Module 8012 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import RowGeneratorDefault from "RowGenerator" /* 7742 */;
-import ChatItemDefault from "ChatItem" /* 9369 */;
+import intl2 from "intl" /* 1128 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import RowGeneratorDefault from "RowGenerator" /* 8013 */;
+import ChatItemDefault from "ChatItem" /* 9673 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePre
   }
   ({ container, title } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.iouM3a);
     cResult[2] = stringResult;
     tmp7 = stringResult;

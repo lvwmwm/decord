@@ -1,17 +1,17 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11504
+// Function ID: 11505
 // Name: game_console/GameConsoleAlertUtils
-// Dependencies: [19, 2012, 9217, 1085, 21, 4938, 2049, 1126, 5300, 11119, 9200, 2]
+// Dependencies: [19, 2014, 9524, 1087, 21, 5033, 2052, 1128, 5400, 11505, 9507, 2]
 
-// Module 11118 (game_console/GameConsoleAlertUtils)
+// Module 11504 (game_console/GameConsoleAlertUtils)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1126 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9200 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9217 */;
+import intl4 from "intl" /* 1128 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9507 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9524 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import Constants from "Constants" /* 1085 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,13 +30,13 @@ let obj = {
         let resolved;
         let obj = {};
         XBOX = constants2.XBOX;
-        let intl = tmp8(1126).intl;
+        let intl = tmp8(1128).intl;
         obj[XBOX] = intl.string(require("intl").t.bVZ7vy);
         const PLAYSTATION = constants2.PLAYSTATION;
-        const intl2 = tmp8(1126).intl;
+        const intl2 = tmp8(1128).intl;
         obj[PLAYSTATION] = intl2.string(require("intl").t["6iqUsf"]);
         const PLAYSTATION_STAGING = constants2.PLAYSTATION_STAGING;
-        const intl3 = tmp8(1126).intl;
+        const intl3 = tmp8(1128).intl;
         obj[PLAYSTATION_STAGING] = intl3.string(require("intl").t["6iqUsf"]);
         _require = tmp3;
         if (null == obj[XBOX]) {
@@ -89,7 +89,7 @@ let obj = {
     };
     const show = tmp.show;
     ({ body, errorCodeMessage, dismissCallback: actions_AlertActionCreatorsDefault.close });
-    const SelfDismissibleAlertBody = reconnectPlatformType(11119).SelfDismissibleAlertBody;
+    const SelfDismissibleAlertBody = reconnectPlatformType(11505).SelfDismissibleAlertBody;
     show(obj);
   }
 };

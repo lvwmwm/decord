@@ -1,19 +1,19 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5124
+// Function ID: 5125
 // Name: MobileThemesUtils
-// Dependencies: [1205, 5029, 1251, 1253, 1126, 2798, 1254, 558, 576, 5030, 504, 2]
+// Dependencies: [1207, 5125, 1253, 1255, 1128, 2821, 1256, 558, 576, 5126, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient
 
-// Module 5028 (MobileThemesUtils)
+// Module 5124 (MobileThemesUtils)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
-import _modDef2798 from "module_2798" /* 2798 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5030 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5029 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1251 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import intl2 from "intl" /* 1128 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
+import _modDef2821 from "module_2821" /* 2821 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5126 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5125 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let tmp;
 const get_initialized = tmp(504);
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2798.yl1iMm);
+  return intl.string(_modDef2821.yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: metroImportDefault } = ClientThemesConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;

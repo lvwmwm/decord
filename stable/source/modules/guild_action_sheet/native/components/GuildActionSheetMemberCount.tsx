@@ -1,18 +1,18 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 13794
+// Function ID: 13795
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 5092, 587, 1383, 558, 576, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 1385, 558, 576, 1128, 5187, 2]
 
-// Module 12868 (GuildActionSheetMemberCount)
+// Module 13794 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,12 +52,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp6;
     if (cResult[0] !== type) {
       let v3DzP7x;
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const string = intl2.string;
       if ("online" === type) {
-        v3DzP7x = tmp(1126).t["3DzP7x"];
+        v3DzP7x = tmp(1128).t["3DzP7x"];
       } else {
-        v3DzP7x = tmp(1126).t["5SWsJX"];
+        v3DzP7x = tmp(1128).t["5SWsJX"];
       }
       const stringResult = string(v3DzP7x);
       cResult[0] = type;
@@ -74,12 +74,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp4 = cResult[4];
       }
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const format = intl.format;
     if ("online" === type) {
-      etqpUG = tmp(1126).t.PIikks;
+      etqpUG = tmp(1128).t.PIikks;
     } else {
-      etqpUG = tmp(1126).t.etqpUG;
+      etqpUG = tmp(1128).t.etqpUG;
     }
     const obj2 = { count };
     const formatResult = format(etqpUG, obj2);
@@ -195,9 +195,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const intl2 = intl3.intl;
     const string = intl2.string;
     if ("online" === type) {
-      v3DzP7x = tmp5(1126).t["3DzP7x"];
+      v3DzP7x = tmp5(1128).t["3DzP7x"];
     } else {
-      v3DzP7x = tmp5(1126).t["5SWsJX"];
+      v3DzP7x = tmp5(1128).t["5SWsJX"];
     }
     stringResult = string(v3DzP7x);
     tmp4 = tmp5;
@@ -206,9 +206,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const intl = intl3.intl;
     const format = intl.format;
     if ("online" === type) {
-      etqpUG = tmp(1126).t.PIikks;
+      etqpUG = tmp(1128).t.PIikks;
     } else {
-      etqpUG = tmp(1126).t.etqpUG;
+      etqpUG = tmp(1128).t.etqpUG;
     }
     const obj = { count };
     stringResult = format(etqpUG, obj);
@@ -227,7 +227,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(5088).Text;
+  const Text = tmp4(5187).Text;
   if (textVariant == null) {
     textVariant = "text-sm/normal";
   }

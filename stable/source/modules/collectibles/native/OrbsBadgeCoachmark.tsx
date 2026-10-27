@@ -1,20 +1,20 @@
-// Module ID: 10568
-// Function ID: 10569
+// Module ID: 10893
+// Function ID: 10894
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 10569, 6157, 1126, 4977, 9438, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 558, 576, 10894, 5128, 1128, 5073, 9742, 2]
 // Exports: default
 
-// Module 10568 (OrbsBadgeCoachmark)
+// Module 10893 (OrbsBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import useCoachmark from "useCoachmark" /* 9438 */;
-import _modDef10569 from "module_10569" /* 10569 */;
+import intl2 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import useCoachmark from "useCoachmark" /* 9742 */;
+import _modDef10894 from "module_10894" /* 10894 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBad
   const cResult = obj.c(6);
   const tmp3 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef10569 };
+    const obj2 = { uri: _modDef10894 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -60,7 +60,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBad
   tmp10 = tmp11;
 }) : (function OrbsBadgeCoachmarkImg() {
   const tmp = closure_8();
-  const obj3 = { uri: _modDef10569 };
+  const obj3 = { uri: _modDef10894 };
   FastImageDefault;
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
   disabled = disabled.disabled;
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t["4ivm+P"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -216,7 +216,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9438);
+    const tmp8Result = tmp8(9742);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     badgeRef = badgeRef.badgeRef;

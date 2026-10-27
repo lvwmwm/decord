@@ -1,13 +1,13 @@
-// Module ID: 8889
-// Function ID: 8890
+// Module ID: 9179
+// Function ID: 9180
 // Name: useSteamWebsiteUrl
-// Dependencies: [2020, 1085, 558, 576, 8890, 8888, 2031, 504, 2]
+// Dependencies: [2022, 1087, 558, 576, 9180, 9178, 2034, 504, 2]
 // Exports: buildSteamStoreUrl
 
-// Module 8889 (useSteamWebsiteUrl)
-import Constants from "Constants" /* 1085 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8890 */;
-import GameStore from "GameStore" /* 2020 */;
+// Module 9179 (useSteamWebsiteUrl)
+import Constants from "Constants" /* 1087 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9180 */;
+import GameStore from "GameStore" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWe
               id = first.id;
             }
             let combined = null;
-            const tmp11Result = tmp11(2031);
+            const tmp11Result = tmp11(2034);
             if (!tmp11Result.isNullOrEmpty(id)) {
               const _encodeURIComponent = encodeURIComponent;
               const _HermesInternal = HermesInternal;
@@ -143,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWe
             id = first.id;
           }
           let combined = null;
-          const tmp11Result = tmp11(2031);
+          const tmp11Result = tmp11(2034);
           if (!tmp11Result.isNullOrEmpty(id)) {
             const _encodeURIComponent = encodeURIComponent;
             const _HermesInternal = HermesInternal;

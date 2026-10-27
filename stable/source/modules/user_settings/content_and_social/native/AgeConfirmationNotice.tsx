@@ -1,18 +1,18 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15868
+// Function ID: 15869
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7020, 21, 558, 576, 7000, 14969, 4806, 2128, 7493, 5918, 587, 1126, 5088, 7563, 2]
+// Dependencies: [19, 17, 7295, 21, 558, 576, 7276, 15731, 4901, 2131, 7764, 6174, 587, 1128, 5187, 7834, 2]
 
-// Module 15106 (AgeConfirmationNotice)
+// Module 15868 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14969 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 15731 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7020 */;
+import Constants from "Constants" /* 7295 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(11);
-  let obj2 = sensitiveContentFilterHelpArticle(7000);
+  let obj2 = sensitiveContentFilterHelpArticle(7276);
   sensitiveContentFilterHelpArticle = obj2.useSensitiveContentFilterHelpArticle();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -131,8 +131,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
         }
     };
     cResult[6] = tmp8;
-    cResult[7] = obj3.format(tmp(1126).t.mFgsfg, obj4);
-    const formatResult = obj3.format(tmp(1126).t.mFgsfg, obj4);
+    cResult[7] = obj3.format(tmp(1128).t.mFgsfg, obj4);
+    const formatResult = obj3.format(tmp(1128).t.mFgsfg, obj4);
   } else {
     class E {
       constructor() {
@@ -154,8 +154,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
         const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
       }
     }
-    const intl = tmp(1126).intl;
-    tmp16[0] = intl.string(tmp(1126).t.FDSSia);
+    const intl = tmp(1128).intl;
+    tmp16[0] = intl.string(tmp(1128).t.FDSSia);
     tmp16[1] = tmp9;
     cResult[8] = tmp16;
   } else {
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(7000);
+  let obj = sensitiveContentFilterHelpArticle(7276);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[7]);
@@ -225,16 +225,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
     const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
-  ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1126).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(7563).InlineNotice;
-  intl = sensitiveContentFilterHelpArticle(1126).intl;
+  ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1128).t.mFgsfg, obj5), role: "status", action: obj6 });
+  const InlineNotice = sensitiveContentFilterHelpArticle(7834).InlineNotice;
+  intl = sensitiveContentFilterHelpArticle(1128).intl;
   obj5 = {
     hook(children) {
       return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
     }
   };
-  obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1126).t.FDSSia), onClick: callback };
-  intl2 = sensitiveContentFilterHelpArticle(1126).intl;
+  obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1128).t.FDSSia), onPress: callback };
+  intl2 = sensitiveContentFilterHelpArticle(1128).intl;
   return <View style={obj3}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");

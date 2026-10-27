@@ -1,20 +1,20 @@
-// Module ID: 17859
-// Function ID: 17860
+// Module ID: 18244
+// Function ID: 18245
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1085, 21, 5092, 587, 13032, 1126, 558, 576, 11110, 1388, 6162, 1200, 2]
+// Dependencies: [19, 1087, 21, 5191, 587, 13955, 1128, 558, 576, 11496, 1388, 6439, 1202, 2]
 
-// Module 17859 (VoicePanelConsoleFacepile)
+// Module 18244 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import NativeViewDefault from "NativeView" /* 6162 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11110 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13032 */;
+import NativeViewDefault from "NativeView" /* 6439 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11496 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13955 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
       }
       return tmp9;
     }
-    const tmp11 = jsx(tmp(1200).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
+    const tmp11 = jsx(tmp(1202).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
     cResult[5] = tmp5;
     cResult[6] = tmp8;
     cResult[7] = tmp11;

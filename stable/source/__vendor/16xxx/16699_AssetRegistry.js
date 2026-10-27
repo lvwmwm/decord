@@ -1,10 +1,10 @@
 // Module ID: 16699
 // Function ID: 16700
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 16699 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 148, height: 107, scales: [2, 3, 4], hash: "0068bea3a7b26b1d06c599bf3096c534", name: "channels-empty", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "1240638c60c6143203e89b55bf3dd564", name: "fi.messages.1240638c60c6143203e89b55bf3dd564.compiled.messages", type: "jsona" });

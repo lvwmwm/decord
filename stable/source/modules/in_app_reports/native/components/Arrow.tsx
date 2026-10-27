@@ -1,16 +1,16 @@
-// Module ID: 7727
-// Function ID: 7728
+// Module ID: 7998
+// Function ID: 7999
 // Name: Arrow
-// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 7728, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 1202, 7999, 2]
 
-// Module 7727 (Arrow)
+// Module 7998 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7728 */;
+import native from "native" /* 1202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7999 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Arrow() {
   const cResult = obj.c(2);
   const tmp4 = closure_4();
   if (cResult[0] !== tmp4.tintColor) {
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp8 = <Icon source={AssetRegistryDefault} size={native.Icon.Sizes.MEDIUM} style={tmp4.tintColor} />;
     cResult[0] = tmp4.tintColor;
     cResult[1] = tmp8;

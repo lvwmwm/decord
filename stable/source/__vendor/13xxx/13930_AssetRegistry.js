@@ -1,10 +1,10 @@
 // Module ID: 13930
 // Function ID: 13931
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13930 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 251, height: 120, scales: [1, 2, 3], hash: "ded9c31a2e9dd512048ecebbadd9fab8", name: "audience_welcome", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1fa18e452308090b708bccf68d32d023", name: "QuestsIcon", type: "png" });

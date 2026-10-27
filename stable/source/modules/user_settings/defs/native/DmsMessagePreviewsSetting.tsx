@@ -1,18 +1,18 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 16376
+// Function ID: 16377
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 7988, 558, 15617, 2041, 576, 1126, 9309, 10664, 2]
+// Dependencies: [19, 8260, 558, 16377, 2044, 576, 1128, 9615, 11084, 2]
 
-// Module 15616 (DmsMessagePreviewsSetting)
+// Module 16376 (DmsMessagePreviewsSetting)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
-import useMessagePreviews from "useMessagePreviews" /* 15617 */;
+import intl4 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9615 */;
+import useMessagePreviews from "useMessagePreviews" /* 16377 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -32,13 +32,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMsMess
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl4.t["8K53DF"]), value: ChannelListLayoutTypes.MessagePreviewTypes.ALL };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     const items = [obj2, , ];
     const obj3 = { label: intl2.string(intl4.t.Gw11zg), value: ChannelListLayoutTypes.MessagePreviewTypes.UNREADS };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl4.t.R2Ok7F), value: ChannelListLayoutTypes.MessagePreviewTypes.NONE };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     items[2] = obj4;
     cResult[0] = items;
     first = items;

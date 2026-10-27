@@ -1,12 +1,12 @@
-// Module ID: 1628
-// Function ID: 1629
+// Module ID: 1630
+// Function ID: 1631
 // Name: MetaQuestUtils
-// Dependencies: [1365, 1381, 2]
+// Dependencies: [1368, 1383, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1628 (MetaQuestUtils)
-import react_nativeAll from "react-native" /* 1381 */;
-import react_native_mod from "react-native" /* 1365 */;
+// Module 1630 (MetaQuestUtils)
+import react_nativeAll from "react-native" /* 1383 */;
+import react_native_mod from "react-native" /* 1368 */;
 import size from "module_2" /* 2 */;
 
 let constants;

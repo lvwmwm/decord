@@ -1,19 +1,19 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 8028
+// Function ID: 8029
 // Name: clipPayloadUtils
-// Dependencies: [32, 7758, 1085, 5117, 7759, 1265, 2]
+// Dependencies: [32, 8029, 1087, 5216, 8030, 1267, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 7757 (clipPayloadUtils)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Constants2 from "Constants" /* 5117 */;
+// Module 8028 (clipPayloadUtils)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Constants2 from "Constants" /* 5216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ClipsConstants from "ClipsConstants" /* 7758 */;
+import ClipsConstants from "ClipsConstants" /* 8029 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, map, map1;
+let _require, importDefault, map;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,6 +24,7 @@ let metroRequire;
 const AnalyticEvents = Constants.AnalyticEvents;
 const SpeakingFlags = Constants2.SpeakingFlags;
 const ServerClipGameEventType = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
+let obj2 = { UNKNOWN: 0, [0]: "UNKNOWN", LAUGHTER: 1, [1]: "LAUGHTER", SHOUTING: 2, [2]: "SHOUTING" };
 let result = size.fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");
 
 export const getClipCreatedAt = function getClipCreatedAt(createdAt) {
@@ -54,6 +55,7 @@ export const getClipParticipantIds = function getClipParticipantIds(users) {
   return users.slice(0, React3);
 };
 export { ServerClipGameEventType };
+export const ServerClipEmotionType = obj2;
 export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
   let closure_1;
   _require = clip;
@@ -81,7 +83,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.start;
       const sum1 = diff + 1000 * editMetadata.end;
-      const obj2 = require("GameEventsOnPlayerExperiment");
+      obj2 = require("GameEventsOnPlayerExperiment");
       importDefault = obj2.isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
@@ -98,123 +100,151 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         return tmp2;
       });
       const sorted = found.sort((timestamp, timestamp2) => timestamp.timestamp - timestamp2.timestamp);
-      if (0 !== sorted.length) {
-        const _Map = Map;
-        const self = this;
-        const self2 = this;
-        map = new Map();
-        const items = [];
-        const _Map2 = Map;
-        const self3 = this;
-        const self4 = this;
-        map1 = new Map();
-        for (const item10061 of sorted) {
-          let tmp12 = item10061;
-          if (item10061.signal.type !== constants.SPEAKING) {
-            continue;
-          } else {
-            if (tmp12.timestamp >= sum) {
-              obj6.return();
-              break;
-            } else {
-              let result = map.set(tmp12.signal.userId, (tmp12.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE);
-            }
+      const editMetadata2 = clip.editMetadata;
+      let voiceAudio;
+      if (editMetadata2 != null) {
+        voiceAudio = editMetadata2.voiceAudio;
+      }
+      if (false !== voiceAudio) {
+        let audioEvents = clip.audioEvents;
+        if (audioEvents == null) {
+          audioEvents = [];
+        }
+        let items = audioEvents;
+      } else {
+        items = [];
+      }
+      const _Map = Map;
+      const self = this;
+      const self2 = this;
+      map = new Map();
+      const items1 = [];
+      for (const item10067 of sorted) {
+        let tmp12 = item10067;
+        if (item10067.signal.type !== constants.SPEAKING) {
+          continue;
+        } else {
+          if (tmp12.timestamp >= sum) {
+            obj5.return();
             break;
+          } else {
+            let result = map.set(tmp12.signal.userId, (tmp12.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE);
           }
-          let tmp21 = tmp8[Symbol.iterator]();
-          while (tmp21 !== undefined) {
-            let tmp26 = _slicedToArray(tmp23, 2);
-            let first = tmp26[0];
-            if (tmp26[1]) {
-              let obj3 = { timestamp_ms: 0, speaking: obj4 };
-              let obj4 = { user_id: first, speaking_flags: SpeakingFlags.VOICE };
-              let arr = items.push(obj3);
+          break;
+        }
+        let tmp21 = tmp9[Symbol.iterator]();
+        while (tmp21 !== undefined) {
+          let tmp26 = _slicedToArray(tmp23, 2);
+          let first = tmp26[0];
+          if (tmp26[1]) {
+            let obj3 = { timestamp_ms: 0, speaking: obj4 };
+            let obj4 = { user_id: first, speaking_flags: SpeakingFlags.VOICE };
+            let arr = items1.push(obj3);
+          }
+          continue;
+        }
+        for (const item10112 of sorted) {
+          let tmp33 = item10112;
+          if (item10112.signal.type === constants.SPEAKING) {
+            if (tmp33.timestamp < sum) {
+              continue;
+            } else {
+              if (tmp33.timestamp > sum1) {
+                obj8.return();
+                break;
+              } else {
+                let tmp72 = (tmp33.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE;
+                let flag2 = map.get(tmp33.signal.userId) ?? false;
+                if (flag2 === tmp72) {
+                  continue;
+                } else {
+                  let result1 = map.set(tmp33.signal.userId, tmp72);
+                  let obj6 = { timestamp_ms: Math.round(tmp33.timestamp - sum), speaking: obj7 };
+                  let _Math3 = Math;
+                  let push3 = items1.push;
+                  let obj7 = { user_id: tmp33.signal.userId, speaking_flags: tmp33.signal.speakingFlags };
+                  let push3Result = push3(obj6);
+                }
+              }
+              break;
             }
-            continue;
-          }
-          for (const item10106 of sorted) {
-            let tmp33 = item10106;
-            if (item10106.signal.type === constants.SPEAKING) {
+            for (const item10146 of items) {
+              let tmp45 = item10146;
+              let tmp46 = item10146.peakMs < sum;
+              if (!tmp46) {
+                tmp46 = tmp45.peakMs > sum1;
+              }
+              if (!tmp46) {
+                let SHOUTING;
+                let obj9 = { timestamp_ms: Math.round(tmp45.peakMs - sum), emotion: obj10 };
+                let _Math2 = Math;
+                let push2 = items1.push;
+                if (tmp45.type === constants.LAUGHTER) {
+                  SHOUTING = obj2.LAUGHTER;
+                } else {
+                  SHOUTING = obj2.SHOUTING;
+                }
+                let obj10 = { type: SHOUTING };
+                let push2Result = push2(obj9);
+              }
+              continue;
+            }
+            let sorted1 = items1.sort((timestamp_ms, timestamp_ms2) => timestamp_ms.timestamp_ms - timestamp_ms2.timestamp_ms);
+            let substr = items1.slice(0, closure_5);
+            if (substr.length !== items1.length) {
+              let obj13 = AnalyticsUtilsDefault;
+              let obj11 = { clip_uuid: clip.id, clip_event_timeline_size: items1.length, clip_runtime };
+              let trackResult = obj13.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj11);
+            }
+            let tmp61;
+            if (substr.length > 0) {
+              tmp61 = substr;
+            }
+            return tmp61;
+          } else {
+            if (tmp33.signal.type === tmp35.GAME_EVENT) {
               if (tmp33.timestamp < sum) {
                 continue;
               } else {
                 if (tmp33.timestamp > sum1) {
-                  obj9.return();
+                  obj8.return();
                   break;
                 } else {
-                  let tmp73 = (tmp33.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE;
-                  let flag = map.get(tmp33.signal.userId) ?? false;
-                  if (flag === tmp73) {
-                    continue;
-                  } else {
-                    let result1 = map.set(tmp33.signal.userId, tmp73);
-                    let obj5 = { timestamp_ms: Math.round(tmp33.timestamp - sum), speaking: obj7 };
-                    let _Math2 = Math;
-                    let push = items.push;
-                    let obj7 = { user_id: tmp33.signal.userId, speaking_flags: tmp33.signal.speakingFlags };
-                    let arr2 = push(obj5);
+                  let tmp66 = obj;
+                  let DEATH = obj.UNKNOWN;
+                  let eventType = tmp33.signal.eventType;
+                  let tmp68 = constants2;
+                  if (constants2.KILL === eventType) {
+                    DEATH = tmp66.KILL;
+                  } else if (tmp68.MULTIKILL === eventType) {
+                    DEATH = tmp66.MULTIKILL;
+                  } else if (tmp68.DEATH === eventType) {
+                    DEATH = tmp66.DEATH;
                   }
+                  let obj12 = { timestamp_ms: Math.round(tmp33.timestamp - sum), game: obj14 };
+                  let _Math = Math;
+                  let push = items1.push;
+                  let obj14 = { type: DEATH, event_name: tmp33.signal.eventName };
+                  let arr2 = push(obj12);
                 }
                 break;
               }
-              let substr = items.slice(0, closure_5);
-              if (substr.length !== items.length) {
-                let obj13 = AnalyticsUtilsDefault;
-                let obj8 = { clip_uuid: clip.id, clip_event_timeline_size: items.length, clip_runtime };
-                let trackResult = obj13.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj8);
-              }
-              let tmp58;
-              if (substr.length > 0) {
-                tmp58 = substr;
-              }
-              return tmp58;
-            } else {
-              if (tmp33.signal.type === tmp35.GAME_EVENT) {
-                if (tmp33.timestamp < sum) {
-                  continue;
-                } else {
-                  if (tmp33.timestamp > sum1) {
-                    obj9.return();
-                    break;
-                  } else {
-                    let KILL;
-                    let eventType = tmp33.signal.eventType;
-                    if (constants2.KILL === eventType) {
-                      KILL = obj.KILL;
-                    } else if (tmp64.MULTIKILL === eventType) {
-                      KILL = obj.MULTIKILL;
-                    }
-                    if (null == KILL) {
-                      continue;
-                    } else {
-                      let _Math = Math;
-                      let rounded = Math.round(tmp33.timestamp - sum);
-                      let tmp67 = rounded;
-                      let value = map1.get(rounded);
-                      if (null != value) {
-                        if (KILL === obj.MULTIKILL) {
-                          let obj10 = { type: KILL };
-                          items[tmp69].game = obj10;
-                        }
-                        continue;
-                      } else {
-                        let result2 = map1.set(tmp67, items.length);
-                        let obj11 = { timestamp_ms: tmp67, game: obj12 };
-                        let obj12 = { type: KILL };
-                        let arr3 = items.push(obj11);
-                      }
-                    }
-                  }
-                  break;
-                }
-                break;
-              }
-              continue;
+              break;
             }
             continue;
           }
+          continue;
         }
       }
+    }
+  } else {
+    const audioEvents1 = clip.audioEvents;
+    let num2;
+    if (audioEvents1 != null) {
+      num2 = audioEvents1.length;
+    }
+    if (num2 == null) {
+      num2 = 0;
     }
   }
 };

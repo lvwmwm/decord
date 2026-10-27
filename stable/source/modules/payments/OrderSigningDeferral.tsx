@@ -1,34 +1,34 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9361
+// Function ID: 9362
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9068, 2]
-// Exports: performSigningDeferralAction
+// Dependencies: [5, 9362, 2]
+// Exports: getPaymentRedirectContext, performSigningDeferralAction
 
-// Module 9067 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9068 */;
+// Module 9361 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9362 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
+function openPaymentRedirect(redirect_url) {
+  redirect_url = redirect_url.redirect_url;
+  if (null == redirect_url) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Payment redirect context has no redirect url");
+    throw error;
+  } else {
+    const _window = window;
+    window.open(redirect_url);
+  }
+}
 let obj = function _performSigningDeferralAction() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj2;
     let payment_redirect_context;
     let stripe_3ds_context;
-    function openPaymentRedirect(payment_redirect_context) {
-      const redirect_url = payment_redirect_context.redirect_url;
-      if (null == redirect_url) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Payment redirect context has no redirect url");
-        throw error;
-      } else {
-        const _window = window;
-        window.open(redirect_url);
-      }
-    }
     let closure_0 = arg0;
     if (c1 === 2) {
       c1 = 3;
@@ -54,21 +54,20 @@ let obj = function _performSigningDeferralAction() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const tmp17 = closure_0;
+            const tmp18 = closure_0;
             if (null == closure_0) {
               const _Error2 = Error;
               const self3 = this;
               const self4 = this;
-              let error = new Error("Order signing was deferred without a deferral context");
+              const error = new Error("Order signing was deferred without a deferral context");
               throw error;
             } else {
-              ({ payment_redirect_context, stripe_3ds_context } = tmp17);
+              ({ payment_redirect_context, stripe_3ds_context } = tmp18);
               if (null == payment_redirect_context) {
                 if (null == stripe_3ds_context) {
-                  let _Error = Error;
-                  let self = this;
-                  const str = "Order signing deferral context has no action the client can complete";
-                  let self2 = this;
+                  const _Error = Error;
+                  const self = this;
+                  const self2 = this;
                   const error1 = new Error("Order signing deferral context has no action the client can complete");
                   throw error1;
                 } else {
@@ -93,9 +92,9 @@ let obj = function _performSigningDeferralAction() {
         }
         c1 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp13) {
+      } catch (tmp14) {
         c1 = 3;
-        throw tmp13;
+        throw tmp14;
       }
     }
   });
@@ -103,6 +102,22 @@ let obj = function _performSigningDeferralAction() {
 };
 const result = size.fileFinishedImporting("modules/payments/OrderSigningDeferral.tsx");
 
+export const getPaymentRedirectContext = function getPaymentRedirectContext(billing_facet) {
+  billing_facet = null;
+  if (null != billing_facet) {
+    billing_facet = billing_facet.billing_facet;
+  }
+  let prop = null;
+  if (null != billing_facet) {
+    prop = billing_facet.order_signing_deferral_context;
+  }
+  let prop1 = null;
+  if (null != prop) {
+    prop1 = prop.payment_redirect_context;
+  }
+  return prop1;
+};
+export { openPaymentRedirect };
 export const performSigningDeferralAction = function performSigningDeferralAction() {
   return obj(...arguments);
 };

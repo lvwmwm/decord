@@ -1,30 +1,30 @@
-// Module ID: 17524
-// Function ID: 17525
+// Module ID: 17906
+// Function ID: 17907
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2065, 14049, 5110, 1390, 10218, 1085, 21, 5092, 587, 7015, 7477, 7017, 11340, 5056, 504, 10751, 10753, 10750, 1265, 4809, 1126, 17523, 9293, 10754, 4808, 9303, 8719, 8492, 8689, 1200, 10219, 17464, 2]
+// Dependencies: [32, 5, 19, 17, 2068, 14831, 5209, 1392, 10520, 1087, 21, 5191, 587, 7290, 7748, 7292, 12511, 5155, 504, 11167, 11169, 11166, 1267, 4904, 1128, 17905, 9599, 11170, 4903, 9609, 8996, 8770, 8966, 1202, 10521, 17846, 2]
 // Exports: default
 
-// Module 17524 (NewGroupDMScreen)
+// Module 17906 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import HeaderShared from "HeaderShared" /* 9293 */;
-import UserRowConstants from "UserRowConstants" /* 10218 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10754 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17523 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import HeaderShared from "HeaderShared" /* 9599 */;
+import UserRowConstants from "UserRowConstants" /* 10520 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11170 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17905 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14049 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14831 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -166,7 +166,7 @@ obj = function _handleInviteUsers() {
               value = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === c5) {

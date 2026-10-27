@@ -1,11 +1,11 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11972
+// Function ID: 11973
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: [1126, 2]
+// Dependencies: [1128, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 11836 (getItemSubtitleForMaxPlayers)
-import intl3 from "intl" /* 1126 */;
+// Module 11972 (getItemSubtitleForMaxPlayers)
+import intl3 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");

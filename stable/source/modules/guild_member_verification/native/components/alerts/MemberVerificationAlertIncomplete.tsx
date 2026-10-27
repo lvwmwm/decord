@@ -1,16 +1,16 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 7058
+// Function ID: 7059
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [109, 19, 4940, 21, 558, 576, 573, 6145, 6103, 1126, 5379, 6113, 6782, 2]
+// Dependencies: [109, 19, 5035, 21, 558, 576, 573, 6424, 6382, 1128, 5479, 6392, 7059, 2]
 
-// Module 6781 (MemberVerificationAlertIncomplete)
-import intl5 from "intl" /* 1126 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6103 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6113 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6145 */;
+// Module 7058 (MemberVerificationAlertIncomplete)
+import intl5 from "intl" /* 1128 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6382 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6392 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6424 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -102,12 +102,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           name = stateFromStores.name;
         }
         if (null != name) {
-          let intl2 = tmp(1126).intl;
+          let intl2 = tmp(1128).intl;
           const obj2 = { guildName: stateFromStores.name };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.f5Jaw7, obj2);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.f5Jaw7, obj2);
         } else {
-          let intl = tmp(1126).intl;
-          formatToPlainStringResult = intl.string(tmp(1126).t["0sTyEb"]);
+          let intl = tmp(1128).intl;
+          formatToPlainStringResult = intl.string(tmp(1128).t["0sTyEb"]);
         }
         cResult[14] = stateFromStores;
         cResult[15] = formatToPlainStringResult;
@@ -117,8 +117,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       const _Symbol = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1126).intl;
-        const stringResult = intl3.string(tmp(1126).t.h3aGmv);
+        const intl3 = tmp(1128).intl;
+        const stringResult = intl3.string(tmp(1128).t.h3aGmv);
         cResult[16] = stringResult;
         tmp21 = stringResult;
       } else {
@@ -126,7 +126,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       if (cResult[17] !== tmp15) {
         const obj3 = { variant: "secondary", text: tmp21, onPress: tmp15 };
-        const tmp25 = closure_7(tmp(5379).Button, obj3);
+        const tmp25 = closure_7(tmp(5479).Button, obj3);
         cResult[17] = tmp15;
         cResult[18] = tmp25;
         tmp23 = tmp25;
@@ -135,8 +135,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       const _Symbol2 = Symbol;
       if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1126).intl;
-        const stringResult1 = intl4.string(tmp(1126).t.OQFlFD);
+        const intl4 = tmp(1128).intl;
+        const stringResult1 = intl4.string(tmp(1128).t.OQFlFD);
         cResult[19] = stringResult1;
         tmp26 = stringResult1;
       } else {
@@ -144,7 +144,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       }
       if (cResult[20] !== tmp16) {
         const obj4 = { text: tmp26, variant: "destructive", onPress: tmp16 };
-        const tmp30 = closure_7(tmp(5379).Button, obj4);
+        const tmp30 = closure_7(tmp(5479).Button, obj4);
         cResult[20] = tmp16;
         cResult[21] = tmp30;
         tmp28 = tmp30;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             return tmp35;
           }
         }
-        const obj5 = { icon: tmp(6782).ListViewIcon, header: tmp17, buttons: tmp31 };
+        const obj5 = { icon: tmp(7059).ListViewIcon, header: tmp17, buttons: tmp31 };
         const tmp38 = MemberVerificationAlertDefault;
         const merged = Object.assign(tmp6);
         const tmp42 = closure_7(tmp38, obj5);
@@ -274,24 +274,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     name = stateFromStores.name;
   }
   if (null != name) {
-    let intl2 = tmp2(1126).intl;
+    let intl2 = tmp2(1128).intl;
     const obj2 = { guildName: stateFromStores.name };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1126).t.f5Jaw7, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1128).t.f5Jaw7, obj2);
   } else {
-    let intl = tmp2(1126).intl;
-    formatToPlainStringResult = intl.string(tmp2(1126).t["0sTyEb"]);
+    let intl = tmp2(1128).intl;
+    formatToPlainStringResult = intl.string(tmp2(1128).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(6782).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
-  const tmp9 = onClose(6113);
+  const obj3 = { icon: guildId(7059).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
+  const tmp9 = onClose(6392);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
-  const obj5 = { variant: "secondary", text: intl3.string(guildId(1126).t.h3aGmv), onPress: callback };
-  const Button = tmp2(5379).Button;
-  intl3 = tmp2(1126).intl;
+  const obj5 = { variant: "secondary", text: intl3.string(guildId(1128).t.h3aGmv), onPress: callback };
+  const Button = tmp2(5479).Button;
+  intl3 = tmp2(1128).intl;
   items4 = [closure_7(Button, obj5), ];
-  const obj6 = { text: intl4.string(guildId(1126).t.OQFlFD), variant: "destructive", onPress: callback1 };
-  const Button2 = tmp2(5379).Button;
-  intl4 = tmp2(1126).intl;
+  const obj6 = { text: intl4.string(guildId(1128).t.OQFlFD), variant: "destructive", onPress: callback1 };
+  const Button2 = tmp2(5479).Button;
+  intl4 = tmp2(1128).intl;
   items4[1] = closure_7(Button2, obj6);
   return closure_7(tmp9, obj3);
 });

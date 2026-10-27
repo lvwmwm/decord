@@ -1,19 +1,19 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 12920
+// Function ID: 12921
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9379, 5757, 5432, 21, 5092, 587, 1382, 4818, 558, 576, 504, 11028, 1126, 11969, 11970, 11971, 2]
+// Dependencies: [19, 17, 9683, 6013, 5532, 21, 5191, 587, 1384, 4913, 558, 576, 504, 11418, 1128, 12921, 12922, 12923, 2]
 
-// Module 11968 (JumpToPresentButton)
+// Module 12920 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4818 */;
+import useToken from "useToken" /* 4913 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9379 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import MessageStore from "MessageStore" /* 5432 */;
-import createStyles from "createStyles" /* 5092 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9683 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import createStyles from "createStyles" /* 5191 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -239,9 +239,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function JumpToPresen
     }
     return tmp;
   });
-  const obj2 = channelId(11028);
+  const obj2 = channelId(11418);
   const isVoicePanelMounted = obj2.useIsVoicePanelMounted(channelId);
-  const obj3 = channelId(11028);
+  const obj3 = channelId(11418);
   const isVoicePanelOpen = obj3.useIsVoicePanelOpen(channelId);
   const items1 = [MessageStore];
   const obj4 = channelId(504);
@@ -250,14 +250,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function JumpToPresen
     return null;
   }
   let tmp10 = tmp2;
-  const tmp3Result = tmp3(1382);
+  const tmp3Result = tmp3(1384);
   if (tmp3Result.isIOS()) {
     const items2 = [tmp.containerIOS, tmp2];
     tmp10 = items2;
   }
-  const intl = tmp3(1126).intl;
+  const intl = tmp3(1128).intl;
   const string = intl.string;
-  const t = tmp3(1126).t;
+  const t = tmp3(1128).t;
   if (stateFromStores) {
     stringResult = string(t.dpjpOp);
   } else {
@@ -265,11 +265,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function JumpToPresen
   }
   const items3 = [tmp.container, tmp10];
   if (tmp5) {
-    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(11970), onPress: onJumpToPresent };
-    const tmp16 = screenIndex(11969);
+    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(12922), onPress: onJumpToPresent };
+    const tmp16 = screenIndex(12921);
     tmp12Result = tmp12(tmp16, obj6);
   } else {
-    tmp12Result = tmp12(tmp3(11971).MemoedVoicePanelDismissChatButton, {});
+    tmp12Result = tmp12(tmp3(12923).MemoedVoicePanelDismissChatButton, {});
   }
   return <tmp13 style={items3}>{tmp12Result}</tmp13>;
 });

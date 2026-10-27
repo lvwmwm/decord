@@ -1,15 +1,15 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9364
+// Function ID: 9365
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5092, 587, 558, 576, 4850, 5093, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 4945, 5192, 2]
 
-// Module 9070 (CollectiblesShopPricePlaceholder)
+// Module 9364 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   const cResult = obj.c(7);
   style = style.style;
   const tmp4 = closure_5();
-  const obj2 = sharedValue(4850);
+  const obj2 = sharedValue(4945);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  const tmpResult = tmp(4850);
+  const tmpResult = tmp(4945);
   class C {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(4850);
+  let obj = sharedValue(4945);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5265836727291;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4850);
+  const obj2 = sharedValue(4945);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items1 = [tmp.skeletonContainer, style, animatedStyle];
   return jsx(ReanimatedRexportDefault.View, { style: items1 });

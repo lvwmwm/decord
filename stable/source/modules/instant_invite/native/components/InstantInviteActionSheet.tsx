@@ -1,29 +1,29 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 8964
+// Function ID: 8965
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2070, 8679, 2087, 4750, 7419, 1085, 21, 5092, 587, 558, 576, 8688, 1631, 6852, 6879, 6858, 5074, 504, 8689, 8678, 5056, 8299, 8690, 1209, 8692, 1126, 6839, 1200, 8713, 8717, 8719, 6739, 8711, 8756, 8757, 6840, 2]
+// Dependencies: [32, 19, 17, 2073, 8956, 2090, 4845, 7689, 1087, 21, 5191, 587, 558, 576, 8965, 1633, 7130, 7155, 7134, 5174, 504, 8966, 8955, 5155, 8577, 8967, 1211, 8969, 1128, 7117, 1202, 8990, 8994, 8996, 7016, 8987, 9033, 9034, 7118, 2]
 
-// Module 8687 (InstantInviteActionSheet)
+// Module 8964 (InstantInviteActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5074 */;
-import Constants2 from "Constants" /* 7419 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8688 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8690 */;
+import Constants from "Constants" /* 1087 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5174 */;
+import Constants2 from "Constants" /* 7689 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8965 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2070 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8679 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import StageInstanceStore from "StageInstanceStore" /* 2073 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8956 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

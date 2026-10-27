@@ -1,17 +1,17 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 13442
+// Function ID: 13443
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 5092, 558, 576, 6839, 1126, 5088, 6840, 2]
+// Dependencies: [19, 21, 5191, 558, 576, 7117, 1128, 5187, 7118, 2]
 
-// Module 12506 (HubEmailConnectionDescriptionActionsheet)
+// Module 13442 (HubEmailConnectionDescriptionActionsheet)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import intl4 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   const tmp4 = closure_4();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t["48kg+O"]) };
-    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
-    intl = tmp(1126).intl;
+    const BottomSheetTitleHeader = tmp(7117).BottomSheetTitleHeader;
+    intl = tmp(1128).intl;
     const tmp7 = React2(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   }
   const description = tmp4.description;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult = intl2.string(intl4.t.O1k9XX);
     cResult[1] = stringResult;
     tmp8 = stringResult;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   }
   const description2 = tmp4.description;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult1 = intl3.string(intl4.t.FV5dvh);
     cResult[4] = stringResult1;
     tmp13 = stringResult1;

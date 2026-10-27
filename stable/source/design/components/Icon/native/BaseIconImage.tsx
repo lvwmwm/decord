@@ -1,21 +1,20 @@
-// Module ID: 4817
-// Function ID: 4818
+// Module ID: 4912
+// Function ID: 4913
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 558, 576, 4818, 2]
+// Dependencies: [19, 21, 558, 576, 4913, 5128, 2]
 
-// Module 4817 (BaseIconImage)
-import react_native from "react-native" /* 17 */;
+// Module 4912 (BaseIconImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(4818);
-const Image = react_native.Image;
+const useToken = tmp(4913);
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "top", height: "code" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "Reflect" }, refresh_sm: { width: 18, height: 18 } };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImage(arg0) {
   let accessibilityLabel;
   let accessible;
@@ -78,7 +77,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImag
           }
         }
       }
-      const tmp14 = <Image fadeDuration={0} source={source} resizeMode={resizeMode} style={tmp10} accessible={accessible} accessibilityLabel={accessibilityLabel} />;
+      const tmp14 = jsx(FastImageDefault, { fadeDuration: 0, source, resizeMode, style: tmp10, accessible, accessibilityLabel });
       cResult[8] = accessibilityLabel;
       cResult[9] = accessible;
       cResult[10] = resizeMode;
@@ -99,7 +98,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImag
   let accessible;
   let resizeMode;
   let style;
-  let tmp3;
+  let tmp5;
   let str = size.size;
   const source = size.source;
   if (str === undefined) {
@@ -109,18 +108,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImag
   ({ resizeMode, style, accessible, accessibilityLabel } = size);
   const obj = useToken;
   const token = obj.useToken(color);
+  const tmp3 = closure_4[str];
   if (null != token) {
-    tmp3 = { tintColor: token };
+    tmp5 = { tintColor: token };
     const obj2 = { tintColor: token };
   } else {
-    const tmp2 = null != color && typeof color === "string";
-    if (tmp2) {
-      tmp3 = { tintColor: color };
+    const tmp4 = null != color && typeof color === "string";
+    if (tmp4) {
+      tmp5 = { tintColor: color };
       const obj3 = { tintColor: color };
     }
   }
-  const items = [closure_4[str], tmp3, style];
-  return <Image fadeDuration={0} source={source} resizeMode={resizeMode} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} />;
+  const items = [tmp3, tmp5, style];
+  return jsx(FastImageDefault, { fadeDuration: 0, source, resizeMode, style: items, accessible, accessibilityLabel });
 });
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 

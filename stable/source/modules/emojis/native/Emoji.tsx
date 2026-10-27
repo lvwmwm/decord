@@ -1,18 +1,18 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 7098
+// Function ID: 7099
 // Name: Emoji
-// Dependencies: [19, 17, 1205, 21, 558, 576, 1382, 4768, 1200, 6157, 4969, 6821, 6822, 2]
+// Dependencies: [19, 17, 1207, 21, 558, 576, 1384, 4863, 1202, 5128, 5065, 7099, 7100, 2]
 
-// Module 6820 (Emoji)
+// Module 7098 (Emoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;
-import shared from "shared" /* 4969 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import shared from "shared" /* 5065 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,9 +74,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
           const tmp10 = jsx;
           const tmpResult = shared;
           if (tmpResult.isThemeDark(ThemeStore.theme)) {
-            tmp11Result = tmp11(6821);
+            tmp11Result = tmp11(7099);
           } else {
-            tmp11Result = tmp11(6822);
+            tmp11Result = tmp11(7100);
           }
           obj5 = { uri: tmp4 };
           tmp10Result = tmp10(tmp12, obj4);
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
         tmp8 = tmp10Result;
       }
     }
-    tmp10Result = jsx(tmp(1200).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+    tmp10Result = jsx(tmp(1202).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
   }
   let uRL = src;
   const tmpResult2 = PlatformUtils;
@@ -138,9 +138,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
         const tmp10 = FastImageDefault;
         const tmpResult = shared;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          tmp9Result = tmp9(6821);
+          tmp9Result = tmp9(7099);
         } else {
-          tmp9Result = tmp9(6822);
+          tmp9Result = tmp9(7100);
         }
         obj5 = { uri: uRL };
         tmp6Result = tmp6(tmp10, obj4);
@@ -149,7 +149,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(arg0
       return <tmp7 {...obj3} />;
     }
   }
-  tmp6Result = tmp6(tmp(1200).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+  tmp6Result = tmp6(tmp(1202).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
 });
 const result = size.fileFinishedImporting("modules/emojis/native/Emoji.tsx");
 

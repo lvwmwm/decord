@@ -1,18 +1,18 @@
-// Module ID: 6968
-// Function ID: 6969
+// Module ID: 7242
+// Function ID: 7243
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 2083, 2087, 4750, 1390, 4754, 1085, 1097, 4755, 558, 576, 504, 2]
+// Dependencies: [32, 2086, 2090, 4845, 1392, 4849, 1087, 1099, 4850, 558, 576, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
 
-// Module 6968 (MemberSafetyPermissionsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4754 */;
+// Module 7242 (MemberSafetyPermissionsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 4849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

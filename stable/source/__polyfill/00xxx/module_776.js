@@ -4,7 +4,7 @@
 // Exports: getHttpSpanDetailsFromUrlObject, getSanitizedUrlString, getSanitizedUrlStringFromUrlObject, isURLObjectRelative, parseStringToURLObject, parseUrl, stripDataUrlContent, stripUrlQueryAndFragment
 
 // Module 776
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 715 */;
+import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" /* 715 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
@@ -17,7 +17,7 @@ export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUr
       str = "http.route";
     }
     obj[str] = tmp;
-    obj[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
+    obj[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
   }
   method = undefined;
   if (method != null) {
@@ -25,7 +25,7 @@ export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUr
   }
   if (method) {
     const str4 = method.method;
-    obj[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] = str4.toUpperCase();
+    obj[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] = str4.toUpperCase();
   }
   const tmp5 = hash;
   if (tmp5) {
@@ -38,11 +38,11 @@ export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUr
     if (hash.pathname) {
       obj["url.path"] = hash.pathname;
       if ("/" === hash.pathname) {
-        obj[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
+        obj[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
       }
     }
     if (!("isRelative" in hash)) {
-      obj[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_URL_FULL] = hash.href;
+      obj[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_URL_FULL] = hash.href;
       if (hash.port) {
         obj["url.port"] = hash.port;
       }

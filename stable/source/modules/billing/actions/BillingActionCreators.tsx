@@ -1,25 +1,25 @@
-// Module ID: 5724
-// Function ID: 5725
+// Module ID: 5980
+// Function ID: 5981
 // Name: actions/BillingActionCreators
-// Dependencies: [109, 5, 4773, 4771, 4775, 1085, 4780, 1096, 584, 1295, 5635, 4791, 4702, 4769, 5725, 5736, 4784, 5742, 5743, 1265, 2]
+// Dependencies: [109, 5, 4868, 4866, 4870, 1087, 4875, 1098, 584, 1297, 5891, 4886, 4797, 4864, 5981, 5992, 4879, 5998, 5999, 1267, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchPayments, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 5724 (actions/BillingActionCreators)
+// Module 5980 (actions/BillingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import BillingConstants from "BillingConstants" /* 4780 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5725 */;
-import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5736 */;
-import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5743 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import BillingConstants from "BillingConstants" /* 4875 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5981 */;
+import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5992 */;
+import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5999 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4773 */;
-import BillingInfoStore from "BillingInfoStore" /* 4771 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import Constants_mod from "Constants" /* 1085 */;
-import Constants_mod2 from "Constants" /* 1096 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4868 */;
+import BillingInfoStore from "BillingInfoStore" /* 4866 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import Constants_mod from "Constants" /* 1087 */;
+import Constants_mod2 from "Constants" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_13, closure_4, closure_5, closure_9, id2, lastLazyPerkSync, planId;
@@ -515,7 +515,7 @@ obj = function _fetchPayments() {
               value = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -613,12 +613,12 @@ obj = function _fetchSubscriptions() {
             let tmp30 = null == lastLazyPerkSync;
             const tmp49 = constants2;
             if (!tmp30) {
-              const obj6 = _modDef4702();
+              const obj6 = _modDef4797();
               tmp30 = obj6.diff(lastLazyPerkSync, "hours") >= 1;
             }
             if (tmp30) {
               FULL_RESYNC = tmp49.FULL_RESYNC;
-              lastLazyPerkSync = _modDef4702();
+              lastLazyPerkSync = _modDef4797();
             }
             HTTP = HTTPUtils.HTTP;
             const request = { url: constants.BILLING_SUBSCRIPTIONS, oldFormErrors: true, rejectWithError: false, query: obj4 };
@@ -861,7 +861,7 @@ obj = function _createSubscription() {
             billingError = undefined;
             c10 = 1;
             c11 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c10) {
@@ -1662,7 +1662,7 @@ obj = function _fetchIpCountryCode() {
             country_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1775,7 +1775,7 @@ obj = function _fetchIpLocation() {
             subdivision_code = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -2149,7 +2149,7 @@ export const popupBridgeCallback = function popupBridgeCallback(paymentSourceTyp
   ({ state, path, query, insecure } = paymentSourceType);
   obj = DispatcherDefault;
   obj.dispatch({ type: "BILLING_POPUP_BRIDGE_CALLBACK_START", paymentSourceType });
-  const HTTP = paymentSourceType(1295).HTTP;
+  const HTTP = paymentSourceType(1297).HTTP;
   const request = { url: closure_10.BILLING_POPUP_BRIDGE_CALLBACK(paymentSourceType), body: { state, path, query, insecure }, oldFormErrors: true, rejectWithError: false };
   const postResult = HTTP.post(request);
   return postResult.then((result) => {

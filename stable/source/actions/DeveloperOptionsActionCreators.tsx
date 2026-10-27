@@ -1,10 +1,10 @@
-// Module ID: 1371
-// Function ID: 1372
+// Module ID: 1373
+// Function ID: 1374
 // Name: DeveloperOptionsActionCreators
 // Dependencies: [584, 2]
 // Exports: setDeveloperOptionSettings, setRoutingKeyTags
 
-// Module 1371 (DeveloperOptionsActionCreators)
+// Module 1373 (DeveloperOptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

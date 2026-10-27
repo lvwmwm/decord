@@ -1,18 +1,18 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 13249
+// Function ID: 13250
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 587, 1383, 5092, 558, 576, 12295, 1126, 2600, 12307, 12311, 2]
+// Dependencies: [19, 17, 21, 587, 1385, 5191, 558, 576, 13238, 1128, 2621, 13250, 13254, 2]
 
-// Module 12306 (GuildPowerupsLevelsSection)
+// Module 13249 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12307 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 12311 */;
+import intl3 from "intl" /* 1128 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13250 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13254 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
         return "singleLevel" === type.type;
       }
     }
-    let obj2 = { title: intl.string(require("module_2600")["TXY/b0"]), description: intl2.string(require("module_2600").aJv4PB) };
+    let obj2 = { title: intl.string(require("module_2621")["TXY/b0"]), description: intl2.string(require("module_2621").aJv4PB) };
     const tmp14 = require("GuildPowerupsSectionHeader");
     intl = tmp(tmp2[9]).intl;
     intl2 = tmp(tmp2[9]).intl;
@@ -169,8 +169,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const callback = memo.useCallback((current) => {
     isScrollingRef.current = current;
   }, []);
-  let obj2 = { title: intl.string(listings(2600)["TXY/b0"]), description: intl2.string(listings(2600).aJv4PB) };
-  const tmp3 = listings(12295);
+  let obj2 = { title: intl.string(listings(2621)["TXY/b0"]), description: intl2.string(listings(2621).aJv4PB) };
+  const tmp3 = listings(13238);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

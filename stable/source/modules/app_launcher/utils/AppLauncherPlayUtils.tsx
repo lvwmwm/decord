@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 12802
+// Function ID: 12803
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 10856, 7015, 11617, 2]
+// Dependencies: [5, 11256, 7290, 11871, 2]
 // Exports: launchActivityInBotDM
 
-// Module 11616 (AppLauncherPlayUtils)
+// Module 12802 (AppLauncherPlayUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let obj = function _launchActivityInBotDM() {
             channelId = undefined;
             customId = 1;
             referrerId = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === customId) {
           if (arg0 === 1) {

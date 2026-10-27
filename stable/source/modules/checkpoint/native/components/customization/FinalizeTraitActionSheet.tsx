@@ -1,31 +1,31 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 12783
+// Function ID: 12784
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 16014, 3118, 558, 576, 6839, 1126, 5056, 6262, 6899, 6263, 2]
+// Dependencies: [21, 12749, 3141, 558, 576, 7117, 1128, 5155, 6539, 7175, 6540, 2]
 
-// Module 16044 (FinalizeTraitActionSheet)
+// Module 12783 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3118 from "module_3118" /* 3118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16014 */;
+import _modDef3141 from "module_3141" /* 3141 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 12749 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let option;
 
 const jsx = Fragment.jsx;
-let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3118.f4BaUg };
+let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3141.f4BaUg };
 const items = [obj, , , , , ];
-let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3118.gpEOaS };
+let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3141.gpEOaS };
 items[1] = obj2;
-const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3118["l/tCAO"] };
+const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3141["l/tCAO"] };
 items[2] = obj3;
-items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3118["+oFzYq"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3118["+oFzYq"] });
-items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3118.xa55WX };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3118.xa55WX });
-items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3118["1dd6Fx"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3118["1dd6Fx"] });
+items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3141["+oFzYq"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3141["+oFzYq"] });
+items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3141.xa55WX };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3141.xa55WX });
+items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3141["1dd6Fx"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3141["1dd6Fx"] });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTraitActionSheet(arg0) {
   let first;
   let onSelectOption;
@@ -35,17 +35,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   const cResult = obj.c(8);
   ({ selectedOption, onSelectOption } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
-    let intl = tmp(1126).intl;
-    const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3118.Zl5vPW)} />;
+    const BottomSheetTitleHeader = tmp(7117).BottomSheetTitleHeader;
+    let intl = tmp(1128).intl;
+    const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3141.Zl5vPW)} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult = intl2.string(_modDef3118.Zl5vPW);
+    const intl2 = tmp(1128).intl;
+    const stringResult = intl2.string(_modDef3141.Zl5vPW);
     cResult[1] = stringResult;
   }
   if (cResult[2] !== onSelectOption) {
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
     }
     return tmp15;
   }
-  const ActionSheet = tmp(6899).ActionSheet;
+  const ActionSheet = tmp(7175).ActionSheet;
   const tmp16 = <ActionSheet startExpanded header={first}>{null}</ActionSheet>;
   cResult[5] = selectedOption;
   cResult[6] = tmp11;
@@ -89,13 +89,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(6899).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3118.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(6839).BottomSheetTitleHeader;
-  intl = onSelectOption(1126).intl;
+  const ActionSheet = onSelectOption(7175).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3141.Zl5vPW) };
+  const BottomSheetTitleHeader = onSelectOption(7117).BottomSheetTitleHeader;
+  intl = onSelectOption(1128).intl;
   ({
     hasIcons: false,
-    accessibilityLabel: intl2.string(_modDef3118.Zl5vPW),
+    accessibilityLabel: intl2.string(_modDef3141.Zl5vPW),
     defaultValue: selectedOption,
     onChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
@@ -111,8 +111,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
       return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(6263).TableRadioGroup;
-  intl2 = onSelectOption(1126).intl;
+  const TableRadioGroup = onSelectOption(6540).TableRadioGroup;
+  intl2 = onSelectOption(1128).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitActionSheet.tsx");

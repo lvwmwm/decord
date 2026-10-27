@@ -1,10 +1,10 @@
 // Module ID: 11174
 // Function ID: 11175
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 11174 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 300, height: 120, scales: [2, 3], hash: "af3947e9ef22aa54f0b32942d9a564e5", name: "img_preview_not_available_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/shared_components/user_list/images", width: 24, height: 24, scales: [2, 3, 4], hash: "a7182f0f94a36e3c4d169065a673c788", name: "icon-new-group", type: "png" });

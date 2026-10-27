@@ -1,17 +1,17 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 11679
+// Function ID: 11680
 // Name: TabItem
-// Dependencies: [109, 19, 17, 21, 4850, 5092, 587, 558, 5378, 576, 5088, 1382, 1126, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 5191, 587, 558, 5478, 576, 5187, 1384, 1128, 2]
 
-// Module 12365 (TabItem)
+// Module 11679 (TabItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabIte
   const cResult = obj.c(17);
   ({ count, index, activeIndex, pressed, variant } = arg0);
   const tmp4 = closure_11();
-  let obj2 = sharedValue(4850);
+  let obj2 = sharedValue(4945);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -157,8 +157,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabIte
     obj4 = ReanimatedRexport2;
     return obj;
   };
-  const tmpResult = tmp(4850);
-  let obj3 = { withSpring: tmp(5378).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: tmp(4850).interpolate };
+  const tmpResult = tmp(4945);
+  let obj3 = { withSpring: tmp(5478).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: tmp(4945).interpolate };
   fn2.__closure = obj3;
   fn2.__workletHash = 5074862072194;
   fn2.__initData = __initData3;
@@ -196,7 +196,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabIte
             tmp17 = tmp20;
           }
           const obj5 = { animated: true, variant: "text-sm/medium", style: tmp12, lineClamp: 1, children: count };
-          const tmp16 = closure_6(tmp(5088).Text, obj5);
+          const tmp16 = closure_6(tmp(5187).Text, obj5);
           cResult[11] = tmp12;
           cResult[12] = count;
           cResult[13] = tmp16;
@@ -228,13 +228,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabIte
   let sharedValue;
   ({ count, index, activeIndex, pressed, variant } = arg0);
   const tmp = closure_11();
-  let obj = sharedValue(4850);
+  let obj = sharedValue(4945);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const layoutEffect = react.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(4850);
+  let obj2 = sharedValue(4945);
   class I {
     constructor() {
       let items;
@@ -251,12 +251,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabIte
       return obj;
     }
   }
-  let obj3 = { withSpring: sharedValue(5378).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4850).interpolate };
+  let obj3 = { withSpring: sharedValue(5478).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(4945).interpolate };
   I.__closure = obj3;
   I.__workletHash = 8384757524453;
   I.__initData = __initData4;
   const animatedStyle = obj2.useAnimatedStyle(I);
-  let obj4 = { style: items1, children: closure_6(sharedValue(5088).Text, { animated: true, variant: "text-sm/medium", style: tmp5, lineClamp: 1, children: count }) };
+  let obj4 = { style: items1, children: closure_6(sharedValue(5187).Text, { animated: true, variant: "text-sm/medium", style: tmp5, lineClamp: 1, children: count }) };
   items1 = [tmp.count, animatedStyle];
   tmp5 = closure_16({ index, activeIndex, pressed, variant });
   const View = ReanimatedRexport.View;

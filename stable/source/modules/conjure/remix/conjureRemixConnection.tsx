@@ -1,21 +1,22 @@
-// Module ID: 13250
-// Function ID: 13251
+// Module ID: 11068
+// Function ID: 11069
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 13246, 2]
-// Exports: remixProjectWorkspace
+// Dependencies: [32, 5, 584, 11004, 10998, 2]
+// Exports: acceptRemix, sendRetryRemix
 
-// Module 13250 (conjureRemixConnection)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
+// Module 11068 (conjureRemixConnection)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c7;
 
-let obj = function _remixProjectWorkspace() {
+let obj = function _acceptRemix() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let closure_2;
-    let obj7;
+    let obj9;
     let closure_0 = arg0;
     let closure_1 = value;
     if (c5 === 2) {
@@ -32,10 +33,11 @@ let obj = function _remixProjectWorkspace() {
       }
     } else {
       try {
-        let tmp;
+        let closure_2;
         let ticket;
         let uRLSearchParams;
         let closure_5;
+        let closure_6;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -48,69 +50,107 @@ let obj = function _remixProjectWorkspace() {
           } else {
             closure_0 = undefined;
             closure_1 = undefined;
-            tmp = undefined;
+            closure_2 = undefined;
             ticket = undefined;
             uRLSearchParams = undefined;
             closure_5 = undefined;
-            const items = [, ];
-            const obj10 = ConjureWorkerTickets;
-            items[0] = obj10.mintRemixTicket(closure_0);
-            const obj11 = ConjureWorkerTickets;
-            items[1] = obj11.mintWorkerTicket(closure_1);
+            closure_6 = undefined;
+            const items = [closure_0, ];
+            const obj12 = ConjureWorkerTickets;
+            items[1] = obj12.mintWorkerTicket(closure_1);
             c4 = 1;
             c5 = 1;
             const obj4 = { value: all(items), done: false };
             return obj4;
           }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
+        } else {
+          if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            } else {
+              closure_0 = value;
+              closure_1 = closure_131_3(closure_0, 2);
+              closure_2 = closure_1[0];
+              ticket = closure_1[1];
+              const _URLSearchParams = URLSearchParams;
+              const obj6 = { ticket: closure_2.ticket };
+              const self3 = this;
+              const self4 = this;
+              uRLSearchParams = new URLSearchParams(obj6);
+              closure_5 = 1;
+            }
+          } else if (2 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              closure_6 = value;
+              if (null != closure_6) {
+                if (closure_6 < 300) {
+                  c5 = 3;
+                  return { value: "accepted", done: true };
+                }
+              }
+              if (409 === closure_6) {
+                c5 = 3;
+                return { value: "unreachable", done: true };
+              } else {
+                if (null != closure_6) {
+                  if (closure_6 < 500) {
+                    if (429 !== closure_6) {
+                      c5 = 3;
+                      return { value: "rejected", done: true };
+                    }
+                  }
+                }
+                if (3 === closure_5) {
+                  c5 = 3;
+                  return { value: "unreachable", done: true };
+                } else {
+                  const self = this;
+                  const self2 = this;
+                  const promise = new Promise((arg0) => setTimeout(arg0, 1000));
+                  c4 = 3;
+                  c5 = 1;
+                  const obj8 = { value: promise, done: false };
+                  return obj8;
+                }
+              }
+            }
+          } else if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            obj = { value, done: true };
+            return obj;
           } else {
-            closure_0 = value;
-            closure_1 = closure_131_2(closure_0, 2);
-            tmp = closure_1[0];
-            ticket = closure_1[1];
-            const _URLSearchParams = URLSearchParams;
-            const obj6 = { ticket: tmp.ticket };
-            const self2 = this;
-            const self3 = this;
-            uRLSearchParams = new URLSearchParams(obj6);
-            const _fetch = fetch;
-            const _HermesInternal = HermesInternal;
-            const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj7) };
-            const _JSON = JSON;
-            obj7 = { dest_ticket: ticket.ticket };
-            const combined = "" + tmp.baseUrl + "/agent/fork?" + uRLSearchParams;
-            c4 = 2;
-            c5 = 1;
-            const obj8 = { value: fetch(combined, request), done: false };
-            return obj8;
+            closure_5 = closure_5 + 1;
           }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          closure_5 = value;
-          if (closure_5.ok) {
-            c5 = 3;
-            return { value: "IconComponent", done: null };
-          } else {
-            const self = this;
-            throw new closure_131_4(closure_5.status);
-          }
+          const _fetch = fetch;
+          const _HermesInternal = HermesInternal;
+          const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj9) };
+          const _JSON = JSON;
+          obj9 = { dest_ticket: ticket.ticket };
+          const combined = "" + closure_2.baseUrl + "/agent/fork?" + uRLSearchParams;
+          const response = fetch(combined, request);
+          c4 = 2;
+          c5 = 1;
+          const obj10 = { value: response.then((status) => status.status, () => null), done: false };
+          return obj10;
         }
-      } catch (tmp11) {
+      } catch (tmp26) {
         c5 = 3;
-        throw tmp11;
+        throw tmp26;
       }
     }
   });
@@ -208,19 +248,21 @@ obj = {
       return obj(...arguments);
     }
     !mintUpstreamTicket(ws.ws, id.id, id.project_id);
+  },
+  remix_state(pending, projectId) {
+    projectId = projectId.projectId;
+    obj = DispatcherDefault;
+    const obj2 = { type: "CONJURE_REMIX_STATE_SET", projectId, pending: pending.pending, failed: pending.failed };
+    obj.dispatch(obj2);
   }
 };
-class ConjureRemixError extends Error {
-  constructor(status) {
-    const tmp3 = new tmp(concat(status, ")"), tmp2, concat);
-    tmp3.status = status;
-    return tmp3;
-  }
-}
 let result = size.fileFinishedImporting("modules/conjure/remix/conjureRemixConnection.tsx");
 
 export const remixFrameHandlers = obj;
-export { ConjureRemixError };
-export const remixProjectWorkspace = function remixProjectWorkspace() {
+export const acceptRemix = function acceptRemix() {
   return obj(...arguments);
+};
+export const sendRetryRemix = function sendRetryRemix(projectId) {
+  obj = conjureProjectSockets;
+  return obj.sendOnConjureSocket(projectId, "retry remix", (sendRetryRemix) => sendRetryRemix.sendRetryRemix());
 };

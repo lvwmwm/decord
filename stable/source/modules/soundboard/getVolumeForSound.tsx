@@ -1,13 +1,13 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 15577
+// Function ID: 15578
 // Name: getVolumeForSound
-// Dependencies: [2012, 5251, 2041, 2]
+// Dependencies: [2014, 5351, 2044, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 14814 (getVolumeForSound)
-import UserSettings from "UserSettings" /* 2041 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5251 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+// Module 15577 (getVolumeForSound)
+import UserSettings from "UserSettings" /* 2044 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5351 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/soundboard/getVolumeForSound.tsx");

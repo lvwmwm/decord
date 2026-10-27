@@ -1,0 +1,9 @@
+// Module ID: 15120
+// Function ID: 15121
+// Dependencies: [15111]
+
+// Module 15120
+import _mod15111 from "module_15111" /* 15111 */;
+
+
+export default (arg0, arg1, arg2) => 0 !== _mod15111(arg0, arg1, arg2);

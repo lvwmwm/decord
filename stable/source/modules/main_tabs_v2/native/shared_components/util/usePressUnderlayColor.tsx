@@ -1,16 +1,16 @@
-// Module ID: 17998
-// Function ID: 17999
+// Module ID: 18391
+// Function ID: 18392
 // Name: usePressUnderlayColor
-// Dependencies: [17999, 558, 576, 5031, 4818, 587, 4967, 4969, 2]
+// Dependencies: [18392, 558, 576, 5127, 4913, 587, 5063, 5065, 2]
 
-// Module 17998 (usePressUnderlayColor)
+// Module 18391 (usePressUnderlayColor)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4818 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import shared from "shared" /* 4969 */;
-import useThemeDefault from "useTheme" /* 5031 */;
-import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17999 */;
+import useToken from "useToken" /* 4913 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import shared from "shared" /* 5065 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import ChannelEmojiConstants from "ChannelEmojiConstants" /* 18392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

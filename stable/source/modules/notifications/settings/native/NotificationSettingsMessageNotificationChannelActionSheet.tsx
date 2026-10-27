@@ -1,18 +1,18 @@
-// Module ID: 12614
-// Function ID: 12615
+// Module ID: 13548
+// Function ID: 13549
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10448, 1126, 10449, 6809, 6804, 12613, 2]
+// Dependencies: [19, 6222, 1087, 6223, 1097, 21, 558, 576, 10771, 1128, 10772, 7086, 7081, 13547, 2]
 
-// Module 12614 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 13548 (NotificationSettingsMessageNotificationChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10449 */;
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10772 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             return tmp9;
           }
         }
-        const tmp12 = jsx(unread(12613), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+        const tmp12 = jsx(unread(13547), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
         cResult[7] = notification;
         cResult[8] = tmp5;
         cResult[9] = tmp8;
@@ -83,8 +83,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   let stringResult;
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.eP8yWU);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.eP8yWU);
     }
   }
   cResult[0] = notification;
@@ -120,11 +120,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12613);
+  const tmp5 = unread(13547);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.eP8yWU);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.eP8yWU);
     }
   }
   return tmp4(tmp5, obj2);

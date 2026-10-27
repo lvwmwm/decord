@@ -1,55 +1,87 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 12781
+// Function ID: 12782
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 5437, 21, 5092, 558, 576, 587, 2]
+// Dependencies: [19, 17, 5537, 21, 5191, 558, 576, 587, 2]
 
-// Module 16042 (CheckpointHeaderButton)
+// Module 12781 (CheckpointHeaderButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import createStyles from "createStyles" /* 5092 */;
+import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
-let obj = { button: { width: 32, height: 32, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: CHECKPOINT_PRIMARY } };
-let closure_5 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles({ button: { width: 32, height: 32, alignItems: "center", justifyContent: "center", borderWidth: 1 } });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointHeaderButton(arg0) {
   let accessibilityLabel;
   let children;
+  let color;
   let onPress;
-  const obj = react;
-  const cResult = obj.c(5);
-  ({ accessibilityLabel, children, onPress } = arg0);
-  const tmp3 = closure_5();
-  if (cResult[0] === accessibilityLabel) {
-    if (cResult[1] === children) {
-      if (cResult[2] === onPress) {
-        let tmp4;
-        if (cResult[3] === tmp3.button) {
-          tmp4 = cResult[4];
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ accessibilityLabel, children, onPress, color } = arg0);
+  if (undefined === color) {
+    color = CHECKPOINT_PRIMARY;
+  }
+  const tmp3 = closure_7();
+  if (cResult[0] !== color) {
+    const obj2 = { borderColor: color };
+    cResult[0] = color;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === tmp4) {
+    let tmp5;
+    if (cResult[3] === tmp3.button) {
+      tmp5 = cResult[4];
+    }
+    if (cResult[5] === accessibilityLabel) {
+      if (cResult[6] === children) {
+        if (cResult[7] === onPress) {
+          let tmp6;
+          if (cResult[8] === tmp5) {
+            tmp6 = cResult[9];
+          }
+          return tmp6;
         }
-        return tmp4;
       }
     }
+    const tmp10 = <Pressable style={tmp5} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
+    cResult[5] = accessibilityLabel;
+    cResult[6] = children;
+    cResult[7] = onPress;
+    cResult[8] = tmp5;
+    cResult[9] = tmp10;
+    tmp6 = tmp10;
   }
-  const tmp5 = <Pressable style={tmp3.button} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
-  cResult[0] = accessibilityLabel;
-  cResult[1] = children;
-  cResult[2] = onPress;
+  const items = [tmp3.button, tmp4];
+  cResult[2] = tmp4;
   cResult[3] = tmp3.button;
-  cResult[4] = tmp5;
-  tmp4 = tmp5;
-}) : (function CheckpointHeaderButton(arg0) {
+  cResult[4] = items;
+  tmp5 = items;
+}) : (function CheckpointHeaderButton(color) {
   let accessibilityLabel;
   let children;
   let onPress;
-  ({ accessibilityLabel, children, onPress } = arg0);
-  return <Pressable style={closure_5().button} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
+  color = color.color;
+  ({ accessibilityLabel, children, onPress } = color);
+  if (color === undefined) {
+    color = CHECKPOINT_PRIMARY;
+  }
+  const items = [color];
+  const items1 = [closure_7().button, ];
+  closure_7();
+  items1[1] = react.useMemo(() => ({ borderColor: color }), items);
+  return <Pressable style={items1} hitSlop={nativeDefault.space.PX_8} onPress={onPress} accessibilityRole="button" accessibilityLabel={accessibilityLabel}>{children}</Pressable>;
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointHeaderButton.tsx");
 

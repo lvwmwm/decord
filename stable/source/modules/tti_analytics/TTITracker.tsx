@@ -882,6 +882,9 @@ class TTITracker extends TTITrackers {
       }
     };
   }
+  getInitialPage() {
+    return this.initialPage;
+  }
   setInitialPage(page) {
     this.initialPage = page;
   }

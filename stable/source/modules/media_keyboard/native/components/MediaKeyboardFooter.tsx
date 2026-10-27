@@ -1,21 +1,21 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10344
+// Function ID: 10345
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10030, 1126, 5088, 5379, 6157, 10042, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10333, 1128, 5187, 5479, 5128, 10345, 2]
 
-// Module 10041 (MediaKeyboardFooter)
+// Module 10344 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10030 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10042 */;
+import intl3 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10333 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10345 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol = Symbol;
     ({ container, label } = tmp4);
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl3.t.mKSwAW);
       cResult[2] = stringResult;
       tmp11 = stringResult;
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol2 = Symbol;
     const buttonWrapper = tmp4.buttonWrapper;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl3.t.ZT24In);
       cResult[5] = stringResult1;
       tmp16 = stringResult1;

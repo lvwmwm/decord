@@ -1,14 +1,14 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18942
+// Function ID: 18943
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 2087, 21, 558, 576, 504, 18508, 17005, 1126, 2]
+// Dependencies: [19, 2090, 21, 558, 576, 504, 18904, 17685, 1128, 2]
 
-// Module 18546 (GuildSettingsRoleSubscriptionsEnableMonetization)
+// Module 18942 (GuildSettingsRoleSubscriptionsEnableMonetization)
 import Fragment from "Fragment" /* 21 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17005 */;
-import PlaceholderDefault from "Placeholder" /* 18508 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17685 */;
+import PlaceholderDefault from "Placeholder" /* 18904 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,9 +53,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSubsc
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       UnavailableNoticeDefault;
-      const intl = tmp(1126).intl;
-      const intl2 = tmp(1126).intl;
-      const tmp11 = <tmp10 brightTitle title={intl.string(guildId(1126).t.KeeWp0)} description={intl2.string(guildId(1126).t["tJLG+L"])} />;
+      const intl = tmp(1128).intl;
+      const intl2 = tmp(1128).intl;
+      const tmp11 = <tmp10 brightTitle title={intl.string(guildId(1128).t.KeeWp0)} description={intl2.string(guildId(1128).t["tJLG+L"])} />;
       cResult[4] = tmp11;
       tmp7 = tmp11;
     } else {
@@ -72,9 +72,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSubsc
     tmp5 = jsx(PlaceholderDefault, {});
   } else {
     UnavailableNoticeDefault;
-    const intl = tmp(1126).intl;
-    const intl2 = tmp(1126).intl;
-    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1126).t.KeeWp0)} description={intl2.string(guildId(1126).t["tJLG+L"])} />;
+    const intl = tmp(1128).intl;
+    const intl2 = tmp(1128).intl;
+    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1128).t.KeeWp0)} description={intl2.string(guildId(1128).t["tJLG+L"])} />;
   }
   return tmp5;
 });

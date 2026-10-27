@@ -1,9 +1,9 @@
-// Module ID: 2074
-// Function ID: 2075
+// Module ID: 2077
+// Function ID: 2078
 // Name: ThreadSortOrder
 // Dependencies: [2]
 
-// Module 2074 (ThreadSortOrder)
+// Module 2077 (ThreadSortOrder)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([0, 1]) };

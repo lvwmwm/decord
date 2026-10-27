@@ -1,10 +1,10 @@
 // Module ID: 3980
 // Function ID: 3981
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 3980 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels", scales: [1], hash: "df1cef16fde0e6c3d55877cd503e7686", name: "StageChannel.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/friends", scales: [1], hash: "5c07817bbbf13f50ad420522bd5ebdcf", name: "Friends.compiled.messages", type: "jsona" });

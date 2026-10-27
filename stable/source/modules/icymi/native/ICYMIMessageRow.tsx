@@ -1,28 +1,28 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 17639
+// Function ID: 17640
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 2065, 2125, 2087, 4760, 5966, 1390, 16956, 1085, 21, 587, 16918, 1382, 558, 576, 16919, 8388, 8462, 504, 16960, 16961, 5088, 1126, 1200, 5409, 6098, 16921, 8467, 10284, 9674, 16957, 11, 8646, 6185, 16963, 16964, 2]
+// Dependencies: [19, 17, 2068, 2128, 2090, 4855, 6222, 1392, 17636, 1087, 21, 587, 17598, 1384, 558, 576, 17599, 8666, 8740, 504, 17640, 17641, 5187, 1128, 1202, 5509, 6377, 17601, 8745, 10595, 9977, 17637, 11, 8923, 6462, 17643, 17644, 2]
 
-// Module 16959 (ICYMIMessageRow)
+// Module 17639 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9674 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
-import DesignConstants from "DesignConstants" /* 16956 */;
-import ICYMIShared from "ICYMIShared" /* 16957 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9977 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10595 */;
+import DesignConstants from "DesignConstants" /* 17636 */;
+import ICYMIShared from "ICYMIShared" /* 17637 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16918 */;
+import createICYMIStyles from "createICYMIStyles" /* 17598 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
     num = lineClamp;
   }
   const tmp5 = closure_18();
-  const context = react.useContext(tmp(16919).ICYMIContext);
+  const context = react.useContext(tmp(17599).ICYMIContext);
   if (cResult[0] === channel.guild_id) {
     let arr;
     let tmp9;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
             }
           }
           const obj2 = { message, muted: stateFromStores, lineClamp: num, messageOptions: undefined, pointerEvents: "none" };
-          const MessageRowPreview = tmp(16960).MessageRowPreview;
+          const MessageRowPreview = tmp(17640).MessageRowPreview;
           if (0 === arr.length) {
             class A {
               constructor(content_type) {
@@ -275,8 +275,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
     cResult[10] = undefined !== nested && nested;
     cResult[11] = tmp21;
   }
-  const tmpResult2 = channel(8388);
-  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8462).GRAVITY_VALID_EMBED_TYPES);
+  const tmpResult2 = channel(8666);
+  const result = tmpResult2.extractMediaSourcesFromMessage(message, message, channel.guild_id, tmp(8740).GRAVITY_VALID_EMBED_TYPES);
   cResult[0] = channel.guild_id;
   cResult[1] = message;
   cResult[2] = result;
@@ -304,9 +304,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   const tmp = closure_18();
   let tmp2 = message;
   let tmp3 = dependencyMap;
-  const context = react.useContext(message(16919).ICYMIContext);
-  const obj = message(8388);
-  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8462).GRAVITY_VALID_EMBED_TYPES);
+  const context = react.useContext(message(17599).ICYMIContext);
+  const obj = message(8666);
+  const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8740).GRAVITY_VALID_EMBED_TYPES);
   const items = [UserGuildSettingsStore];
   const obj2 = message(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id));
@@ -342,7 +342,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   if (tmp12Result) {
     const obj5 = { message, muted: stateFromStores, lineClamp: num, messageOptions: obj6, pointerEvents: str };
     obj6 = undefined;
-    const MessageRowPreview = tmp2(16960).MessageRowPreview;
+    const MessageRowPreview = tmp2(17640).MessageRowPreview;
     const tmp12 = closure_14;
     if (0 === result.length) {
       if (message.attachments.length > 0) {
@@ -360,14 +360,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowCo
   items3 = [tmp12Result, , ];
   let tmp13 = result.length > 0;
   if (tmp13) {
-    const obj7 = { style: tmp.media, children: closure_14(channel(16961), obj8) };
+    const obj7 = { style: tmp.media, children: closure_14(channel(17641), obj8) };
     obj8 = { message, visible: flag2, itemType: "message" };
     tmp13 = closure_14(tmp9, obj7);
   }
   items3[1] = tmp13;
   let tmp16 = 0 === result.length && message.embeds.length > 0;
   if (tmp16) {
-    const obj9 = { style: tmp.media, children: closure_14(tmp2(16960).NonMediaEmbedsRowPreview, obj10) };
+    const obj9 = { style: tmp.media, children: closure_14(tmp2(17640).NonMediaEmbedsRowPreview, obj10) };
     obj10 = { message, muted: stateFromStores, lineClamp: 3 };
     tmp16 = closure_14(tmp9, obj9);
   }
@@ -391,7 +391,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
   message = message.message;
   ({ channel, guild } = message);
   const tmp4 = closure_18();
-  const context = react.useContext(message(16919).ICYMIContext);
+  const context = react.useContext(message(17599).ICYMIContext);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -433,66 +433,64 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
     if (colorString == null) {
       colorString = closure_12;
     }
-    const width = obj2.useContext(tmp(16919).ICYMIContext).width;
-    if (null == stateFromStores) {
-      return null;
-    } else {
-      let tmp16;
-      const _Symbol = Symbol;
-      const replyPreview = tmp4.replyPreview;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { variant: "text-sm/semibold", color: "text-muted", style: { fontStyle: "italic" }, children: intl.string(message(1126).t.mPPcez) };
-        const Text = tmp(5088).Text;
-        intl = tmp(1126).intl;
-        const tmp18 = closure_14(Text, obj3);
-        cResult[7] = tmp18;
-        tmp16 = tmp18;
-      } else {
-        tmp16 = cResult[7];
-      }
-      if (cResult[8] === stateFromStores) {
-        let tmp20;
-        let tmp27;
-        let tmp28;
-        if (cResult[9] === guild.id) {
-          tmp20 = cResult[10];
+    const width = obj2.useContext(tmp(17599).ICYMIContext).width;
+    const diff = width - 2 * PX_12 - 30 - PX_8 - 2;
+    if (cResult[7] === context.inset) {
+      if (cResult[8] === context.margin) {
+        let tmp19;
+        if (cResult[9] === diff) {
+          tmp19 = cResult[10];
         }
-        const diff = width - context.inset - 2 * ITEM_PADDING - 2 * PX_12 - 30 - PX_8 - 2;
-        const tmp24 = PX_12;
-        const tmp25 = PX_8;
-        if (cResult[11] !== diff) {
-          const obj4 = { gap: 4, width: diff };
-          cResult[11] = diff;
-          cResult[12] = obj4;
-          tmp27 = obj4;
+        if (null == stateFromStores) {
+          return null;
         } else {
-          tmp27 = cResult[12];
-        }
-        if (cResult[13] !== colorString) {
-          const obj5 = { color: colorString };
-          cResult[13] = colorString;
-          cResult[14] = obj5;
-          tmp28 = obj5;
-        } else {
-          tmp28 = cResult[14];
-        }
-        if (cResult[15] === stateFromStores) {
-          if (cResult[16] === channel.id) {
+          let tmp20;
+          const _Symbol = Symbol;
+          const replyPreview = tmp4.replyPreview;
+          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj3 = { variant: "text-sm/semibold", color: "text-muted", style: { fontStyle: "italic" }, children: intl.string(message(1128).t.mPPcez) };
+            const Text = tmp(5187).Text;
+            intl = tmp(1128).intl;
+            const tmp22 = closure_14(Text, obj3);
+            cResult[11] = tmp22;
+            tmp20 = tmp22;
+          } else {
+            tmp20 = cResult[11];
+          }
+          if (cResult[12] === stateFromStores) {
+            let tmp24;
             let tmp29;
-            if (cResult[17] === guild.id) {
-              tmp29 = cResult[18];
+            let tmp30;
+            if (cResult[13] === guild.id) {
+              tmp24 = cResult[14];
             }
-            if (cResult[19] === tmp28) {
-              let tmp31;
-              if (cResult[20] === tmp29) {
-                tmp31 = cResult[21];
-              }
-              const diff1 = width - 2 * tmp24 - 30 - tmp25 - 2;
-              if (cResult[22] === context.inset) {
-                if (cResult[23] === context.margin) {
-                  let tmp35;
-                  if (cResult[24] === diff1) {
-                    tmp35 = cResult[25];
+            const diff1 = width - context.inset - 2 * ITEM_PADDING - 2 * tmp16 - 30 - tmp17 - 2;
+            if (cResult[15] !== diff1) {
+              const obj4 = { gap: 4, width: diff1 };
+              cResult[15] = diff1;
+              cResult[16] = obj4;
+              tmp29 = obj4;
+            } else {
+              tmp29 = cResult[16];
+            }
+            if (cResult[17] !== colorString) {
+              const obj6 = { color: colorString };
+              cResult[17] = colorString;
+              cResult[18] = obj6;
+              tmp30 = obj6;
+            } else {
+              tmp30 = cResult[18];
+            }
+            if (cResult[19] === stateFromStores) {
+              if (cResult[20] === channel.id) {
+                let tmp31;
+                if (cResult[21] === guild.id) {
+                  tmp31 = cResult[22];
+                }
+                if (cResult[23] === tmp30) {
+                  let tmp33;
+                  if (cResult[24] === tmp31) {
+                    tmp33 = cResult[25];
                   }
                   if (cResult[26] === channel) {
                     if (cResult[27] === guild) {
@@ -500,21 +498,21 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
                       if (cResult[28] === message) {
                         tmp36 = cResult[29];
                       }
-                      if (cResult[30] === tmp35) {
+                      if (cResult[30] === tmp19) {
                         let tmp40;
                         if (cResult[31] === tmp36) {
                           tmp40 = cResult[32];
                         }
-                        if (cResult[33] === tmp27) {
-                          if (cResult[34] === tmp31) {
+                        if (cResult[33] === tmp29) {
+                          if (cResult[34] === tmp33) {
                             let tmp43;
                             if (cResult[35] === tmp40) {
                               tmp43 = cResult[36];
                             }
                             if (cResult[37] === tmp4.replyInner) {
-                              if (cResult[38] === tmp43) {
+                              if (cResult[38] === tmp24) {
                                 let tmp47;
-                                if (cResult[39] === tmp20) {
+                                if (cResult[39] === tmp43) {
                                   tmp47 = cResult[40];
                                 }
                                 if (cResult[41] === tmp4.replyPreview) {
@@ -524,83 +522,83 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
                                   }
                                   return tmp51;
                                 }
-                                const obj6 = { style: replyPreview, children: items2 };
-                                items2 = [tmp16, tmp47];
-                                const tmp54 = closure_15(View, obj6);
+                                const obj7 = { style: replyPreview, children: items2 };
+                                items2 = [tmp20, tmp47];
+                                const tmp54 = closure_15(View, obj7);
                                 cResult[41] = tmp4.replyPreview;
                                 cResult[42] = tmp47;
                                 cResult[43] = tmp54;
                                 tmp51 = tmp54;
                               }
                             }
-                            const obj7 = { style: tmp19, children: items3 };
-                            items3 = [tmp20, tmp43];
-                            const tmp50 = closure_15(View, obj7);
+                            const obj8 = { style: tmp23, children: items3 };
+                            items3 = [tmp24, tmp43];
+                            const tmp50 = closure_15(View, obj8);
                             cResult[37] = tmp4.replyInner;
-                            cResult[38] = tmp43;
-                            cResult[39] = tmp20;
+                            cResult[38] = tmp24;
+                            cResult[39] = tmp43;
                             cResult[40] = tmp50;
                             tmp47 = tmp50;
                           }
                         }
-                        const obj8 = { style: tmp27, children: items4 };
-                        items4 = [tmp31, tmp40];
-                        const tmp46 = closure_15(View, obj8);
-                        cResult[33] = tmp27;
-                        cResult[34] = tmp31;
+                        const obj9 = { style: tmp29, children: items4 };
+                        items4 = [tmp33, tmp40];
+                        const tmp46 = closure_15(View, obj9);
+                        cResult[33] = tmp29;
+                        cResult[34] = tmp33;
                         cResult[35] = tmp40;
                         cResult[36] = tmp46;
                         tmp43 = tmp46;
                       }
-                      const obj9 = { value: tmp35, children: tmp36 };
-                      const tmp42 = closure_14(message(16919).ICYMIContext.Provider, obj9);
-                      cResult[30] = tmp35;
+                      const obj10 = { value: tmp19, children: tmp36 };
+                      const tmp42 = closure_14(message(17599).ICYMIContext.Provider, obj10);
+                      cResult[30] = tmp19;
                       cResult[31] = tmp36;
                       cResult[32] = tmp42;
                       tmp40 = tmp42;
                     }
                   }
-                  const obj10 = { message, channel, guild, nested: true };
-                  const tmp39 = closure_14(closure_19, obj10);
+                  const obj11 = { message, channel, guild, nested: true };
+                  const tmp39 = closure_14(closure_19, obj11);
                   cResult[26] = channel;
                   cResult[27] = guild;
                   cResult[28] = message;
                   cResult[29] = tmp39;
                   tmp36 = tmp39;
                 }
+                const obj12 = { variant: "text-md/semibold", style: tmp30, lineClamp: 1, children: tmp31 };
+                const tmp35 = closure_14(message(5187).Text, obj12);
+                cResult[23] = tmp30;
+                cResult[24] = tmp31;
+                cResult[25] = tmp35;
+                tmp33 = tmp35;
               }
-              const obj12 = { width: diff1, margin: null, inset: null };
-              ({ margin: obj11.margin, inset: obj11.inset } = context);
-              cResult[22] = context.inset;
-              cResult[23] = context.margin;
-              cResult[24] = diff1;
-              cResult[25] = obj12;
-              tmp35 = obj12;
             }
-            const obj13 = { variant: "text-md/semibold", style: tmp28, lineClamp: 1, children: tmp29 };
-            const tmp33 = closure_14(message(5088).Text, obj13);
-            cResult[19] = tmp28;
-            cResult[20] = tmp29;
-            cResult[21] = tmp33;
-            tmp31 = tmp33;
+            const tmpResult4 = message(5509);
+            const name = tmpResult4.getName(guild.id, channel.id, stateFromStores);
+            cResult[19] = stateFromStores;
+            cResult[20] = channel.id;
+            cResult[21] = guild.id;
+            cResult[22] = name;
+            tmp31 = name;
           }
+          const obj13 = { animate: false, guildId: guild.id, user: stateFromStores, size: message(1202).AvatarSizes.SMALL };
+          const Avatar = tmp(1202).Avatar;
+          const tmp26 = closure_14(Avatar, obj13);
+          cResult[12] = stateFromStores;
+          cResult[13] = guild.id;
+          cResult[14] = tmp26;
+          tmp24 = tmp26;
         }
-        const tmpResult4 = message(5409);
-        const name = tmpResult4.getName(guild.id, channel.id, stateFromStores);
-        cResult[15] = stateFromStores;
-        cResult[16] = channel.id;
-        cResult[17] = guild.id;
-        cResult[18] = name;
-        tmp29 = name;
       }
-      const obj14 = { animate: false, guildId: guild.id, user: stateFromStores, size: message(1200).AvatarSizes.SMALL };
-      const Avatar = tmp(1200).Avatar;
-      const tmp22 = closure_14(Avatar, obj14);
-      cResult[8] = stateFromStores;
-      cResult[9] = guild.id;
-      cResult[10] = tmp22;
-      tmp20 = tmp22;
     }
+    const obj14 = { width: diff, margin: null, inset: null };
+    ({ margin: obj5.margin, inset: obj5.inset } = context);
+    cResult[7] = context.inset;
+    cResult[8] = context.margin;
+    cResult[9] = diff;
+    cResult[10] = obj14;
+    tmp19 = obj14;
   }
   class E {
     constructor() {
@@ -615,62 +613,63 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReplyM
   let channel;
   let guild;
   let intl;
-  let items2;
   let items3;
   let items4;
+  let items5;
   let obj11;
   let obj13;
-  let obj15;
   let obj9;
   let tmp2Result;
   message = message.message;
   ({ channel, guild } = message);
+  let context;
+  let width;
   const tmp = closure_18();
-  const context = react.useContext(message(16919).ICYMIContext);
+  context = width.useContext(message(context[16]).ICYMIContext);
   const items = [UserStore];
-  const obj2 = message(504);
+  const obj2 = message(context[19]);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(message.author.id));
   const items1 = [GuildMemberStore];
-  const obj3 = message(504);
+  const obj3 = message(context[19]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => GuildMemberStore.getMember(guild.id, message.author.id));
   let colorString;
-  const obj = react;
+  const obj = width;
   if (stateFromStores1 != null) {
     colorString = stateFromStores1.colorString;
   }
   if (colorString == null) {
     colorString = closure_12;
   }
-  const width = obj.useContext(tmp2(16919).ICYMIContext).width;
-  let tmp8 = null;
+  width = obj.useContext(tmp2(tmp3[16]).ICYMIContext).width;
+  const items2 = [width, , ];
+  ({ margin: arr3[1], inset: arr3[2] } = context);
+  let tmp9 = null;
   if (null != stateFromStores) {
-    const obj4 = { style: tmp.replyPreview, children: items2 };
-    const obj5 = { variant: "text-sm/semibold", color: "text-muted", style: { fontStyle: "italic" }, children: intl.string(message(1126).t.mPPcez) };
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
-    items2 = [closure_14(Text, obj5), ];
-    const obj6 = { style: tmp.replyInner, children: items3 };
-    const obj7 = { animate: false, guildId: guild.id, user: stateFromStores, size: message(1200).AvatarSizes.SMALL };
-    const Avatar = tmp2(1200).Avatar;
-    items3 = [closure_14(Avatar, obj7), ];
-    const obj8 = { style: obj9, children: items4 };
+    const obj4 = { style: tmp.replyPreview, children: items3 };
+    const obj5 = { variant: "text-sm/semibold", color: "text-muted", style: { fontStyle: "italic" }, children: intl.string(message(context[23]).t.mPPcez) };
+    const Text = tmp2(tmp3[22]).Text;
+    intl = tmp2(tmp3[23]).intl;
+    items3 = [closure_14(Text, obj5), ];
+    const obj6 = { style: tmp.replyInner, children: items4 };
+    const obj7 = { animate: false, guildId: guild.id, user: stateFromStores, size: message(context[24]).AvatarSizes.SMALL };
+    const Avatar = tmp2(tmp3[24]).Avatar;
+    items4 = [closure_14(Avatar, obj7), ];
+    const obj8 = { style: obj9, children: items5 };
     obj9 = { gap: 4, width: width - context.inset - 2 * ITEM_PADDING - 2 * PX_12 - 30 - PX_8 - 2 };
     const obj10 = { variant: "text-md/semibold", style: obj11, lineClamp: 1, children: tmp2Result.getName(guild.id, channel.id, stateFromStores) };
     obj11 = { color: colorString };
-    const Text2 = tmp2(5088).Text;
-    tmp2Result = message(5409);
-    items4 = [closure_14(Text2, obj10), ];
-    const obj12 = { value: obj13, children: closure_14(closure_19, obj15) };
-    obj13 = { width: width - 2 * PX_12 - 30 - PX_8 - 2, margin: null, inset: null };
-    ({ margin: obj14.margin, inset: obj14.inset } = context);
-    obj15 = { message, channel, guild, nested: true };
-    const Provider = tmp2(16919).ICYMIContext.Provider;
-    items4[1] = closure_14(Provider, obj12);
-    items3[1] = closure_15(View, obj8);
-    items2[1] = closure_15(View, obj6);
-    tmp8 = closure_15(View, obj4);
+    const Text2 = tmp2(tmp3[22]).Text;
+    tmp2Result = message(context[25]);
+    items5 = [closure_14(Text2, obj10), ];
+    const obj12 = { value: tmp8, children: closure_14(closure_19, obj13) };
+    obj13 = { message, channel, guild, nested: true };
+    const Provider = tmp2(tmp3[16]).ICYMIContext.Provider;
+    items5[1] = closure_14(Provider, obj12);
+    items4[1] = closure_15(View, obj8);
+    items3[1] = closure_15(View, obj6);
+    tmp9 = closure_15(View, obj4);
   }
-  return tmp8;
+  return tmp9;
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1392,7 +1391,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowWr
   const obj = gravityMessage(576);
   const cResult = obj.c(15);
   ({ messageContext, visible, message } = arg0);
-  const obj2 = gravityMessage(16921);
+  const obj2 = gravityMessage(17601);
   gravityMessage = obj2.useGravityMessage(message);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
@@ -1502,7 +1501,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRowWr
   let visible;
   let gravityMessage;
   ({ message, messageContext, visible } = arg0);
-  const obj = gravityMessage(16921);
+  const obj = gravityMessage(17601);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ChannelStore];
   const obj2 = gravityMessage(504);

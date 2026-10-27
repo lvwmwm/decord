@@ -1,11 +1,11 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 17524
+// Function ID: 17525
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1102, 1126, 558, 576, 12578, 6180, 6899, 6265, 2]
+// Dependencies: [19, 21, 1104, 1128, 558, 576, 13514, 6457, 7175, 6542, 2]
 
-// Module 16844 (FocusModeOptionsActionSheet)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl5 from "intl" /* 1126 */;
+// Module 17524 (FocusModeOptionsActionSheet)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl5 from "intl" /* 1128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,11 +73,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let obj = onSelect(576);
   const cResult = obj.c(9);
   onSelect = onSelect.onSelect;
-  const obj2 = onSelect(12578);
+  const obj2 = onSelect(13514);
   const focusModeEnabled = obj2.useFocusModeEnabled();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(onSelect(1126).t["sNX1E+"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(onSelect(1128).t["sNX1E+"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -118,8 +118,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
       }
       return tmp13;
     }
-    const obj3 = { children: closure_3(onSelect(6265).TableRowGroup, obj4) };
-    const ActionSheet = tmp(6899).ActionSheet;
+    const obj3 = { children: closure_3(onSelect(6542).TableRowGroup, obj4) };
+    const ActionSheet = tmp(7175).ActionSheet;
     obj4 = { title: first, hasIcons: false, children: items };
     items = [tmp7, tmp10];
     const tmp16 = closure_2(ActionSheet, obj3);
@@ -131,18 +131,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let tmp8 = null;
   if (focusModeEnabled) {
     const obj5 = {
-      accessibilityLabel: intl2.string(onSelect(1126).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1126).t.rk35Gm),
+      accessibilityLabel: intl2.string(onSelect(1128).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1128).t.rk35Gm),
       onPress() {
           onSelect(false, undefined);
         },
       trailing: null,
-      label: intl4.string(onSelect(1126).t.rk35Gm)
+      label: intl4.string(onSelect(1128).t.rk35Gm)
     };
-    let TableRow = tmp(6180).TableRow;
-    intl2 = tmp(1126).intl;
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    let TableRow = tmp(6457).TableRow;
+    intl2 = tmp(1128).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     tmp8 = closure_2(TableRow, obj5);
   }
   cResult[1] = focusModeEnabled;
@@ -155,28 +155,28 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(12578);
+  let obj = onSelect(13514);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(6899).ActionSheet;
-  const obj2 = { title: intl.string(onSelect(1126).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(6265).TableRowGroup;
-  intl = onSelect(1126).intl;
+  const ActionSheet = onSelect(7175).ActionSheet;
+  const obj2 = { title: intl.string(onSelect(1128).t["sNX1E+"]), hasIcons: false, children: items };
+  const TableRowGroup = onSelect(6542).TableRowGroup;
+  intl = onSelect(1128).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
   if (focusModeEnabled) {
     const obj3 = {
-      accessibilityLabel: intl2.string(onSelect(1126).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1126).t.rk35Gm),
+      accessibilityLabel: intl2.string(onSelect(1128).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1128).t.rk35Gm),
       onPress() {
           onSelect(false, undefined);
         },
       trailing: null,
-      label: intl4.string(onSelect(1126).t.rk35Gm)
+      label: intl4.string(onSelect(1128).t.rk35Gm)
     };
-    let TableRow = tmp(6180).TableRow;
-    intl2 = tmp(1126).intl;
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    let TableRow = tmp(6457).TableRow;
+    intl2 = tmp(1128).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     tmp4Result = tmp4(TableRow, obj3);
   }
   items = [tmp4Result, ];

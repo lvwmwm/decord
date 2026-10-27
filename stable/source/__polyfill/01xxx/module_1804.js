@@ -1,74 +1,178 @@
 // Module ID: 1804
 // Function ID: 1805
-// Dependencies: [19, 1700, 1681]
-// Exports: useAnimatedKeyboard
+// Dependencies: [1683, 1669]
+// Exports: areDependenciesEqual, buildDependencies, buildWorkletsHash, shallowEqual, validateAnimatedStyles
 
 // Module 1804
-import react from "react" /* 19 */;
+import ReanimatedError from "ReanimatedError" /* 1669 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1683 */;
 
-let dependencyMap;
-
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
-let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
-let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
-
-export const useAnimatedKeyboard = function useAnimatedKeyboard() {
-  let obj3;
-  let obj4;
-  let ref;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "top", isNavigationBarTranslucentAndroid: "code" };
+const f87902 = (acc, __workletHash) => {
+  const str = __workletHash.__workletHash;
+  return acc + str.toString();
+};
+function isAnimated(onFrame) {
+  let someResult;
+  if (Array.isArray(onFrame)) {
+    someResult = onFrame.some(isAnimated);
+  } else {
+    someResult = typeof onFrame === "object";
+    if (typeof onFrame === "object") {
+      someResult = null !== onFrame;
+    }
+    if (someResult) {
+      let someResult1 = undefined !== onFrame.onFrame;
+      if (!someResult1) {
+        const _Object = Object;
+        const values = Object.values(onFrame);
+        someResult1 = values.some(isAnimated);
+      }
+      someResult = someResult1;
+    }
   }
-  let ref2;
-  let obj2;
-  const tmp = ref2(null);
-  dependencyMap = tmp;
-  const tmp2 = ref2(-1);
-  let closure_2 = tmp2;
-  const tmp3 = ref2(false);
-  ref2 = tmp3;
-  if (null === tmp.current) {
-    obj2 = { state: obj3.makeMutable(obj(1681).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
-    obj3 = obj(1700);
-    let fn = function c(value, value2) {
-      obj2.state.value = value;
-      obj2.height.value = value2;
+  return someResult;
+}
+isAnimated.__closure = {};
+isAnimated.__workletHash = 4296700641760;
+isAnimated.__initData = { code: "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}" };
+function shallowEqual(arg0, arg1) {
+  const keys = Object.keys(arg0);
+  if (keys.length !== Object.keys(arg1).length) {
+    return false;
+  } else {
+    let num = 0;
+    if (0 < keys.length) {
+      while (arg0[keys[num]] === arg1[keys[num]]) {
+        num = num + 1;
+      }
+      return false;
+    }
+    return true;
+  }
+}
+shallowEqual.__closure = {};
+shallowEqual.__workletHash = 6945711106539;
+shallowEqual.__initData = { code: "function shallowEqual_Pnpm_utilsTs2(a,b){const aKeys=Object.keys(a);const bKeys=Object.keys(b);if(aKeys.length!==bKeys.length){return false;}for(let i=0;i<aKeys.length;i++){if(a[aKeys[i]]!==b[aKeys[i]]){return false;}}return true;}" };
+function validateAnimatedStyles(obj) {
+  if (typeof obj !== "object") {
+    const _HermesInternal = HermesInternal;
+    const self3 = this;
+    const self4 = this;
+    const reanimatedError = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object, found " + typeof obj + " instead.");
+    throw reanimatedError;
+  } else {
+    const _Array = Array;
+    if (Array.isArray(obj)) {
+      const self = this;
+      const self2 = this;
+      const reanimatedError1 = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
+      throw reanimatedError1;
+    }
+  }
+}
+validateAnimatedStyles.__closure = {};
+validateAnimatedStyles.__workletHash = 9250446401049;
+validateAnimatedStyles.__initData = { code: "function validateAnimatedStyles_Pnpm_utilsTs3(styles){if(typeof styles!=='object'){throw new ReanimatedError(\"`useAnimatedStyle` has to return an object, found \"+typeof styles+\" instead.\");}else if(Array.isArray(styles)){throw new ReanimatedError('`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.');}}" };
+
+export const buildWorkletsHash = function buildWorkletsHash(items1) {
+  const values = Object.values(items1);
+  return values.reduce(f87902, "");
+};
+export const buildDependencies = function buildDependencies(items10, memoizedGestureCallbacks) {
+  const values = Object.values(memoizedGestureCallbacks);
+  const found = values.filter((item) => undefined !== item);
+  let tmp2 = found;
+  if (items10) {
+    const _Object = Object;
+    const push = items10.push;
+    const values2 = Object.values(found);
+    let str = "";
+    push(values2.reduce(f87902, ""));
+    tmp2 = items10;
+  }
+  return tmp2;
+};
+export const areDependenciesEqual = function areDependenciesEqual(dependencies, savedDependencies) {
+  let is;
+  if (typeof Object.is === "function") {
+    const _Object = Object;
+    is = Object.is;
+  } else {
+    is = function is(dependencies, savedDependencies) {
+      let tmp = dependencies === savedDependencies;
+      if (tmp) {
+        tmp = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+        const tmp2 = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+      }
+      if (!tmp) {
+        const _Number = Number;
+        let isNaNResult = Number.isNaN(dependencies);
+        if (isNaNResult) {
+          const _Number2 = Number;
+          isNaNResult = Number.isNaN(savedDependencies);
+        }
+        tmp = isNaNResult;
+      }
+      return tmp;
     };
-    const obj6 = { keyboardEventData: obj2 };
-    fn.__closure = obj6;
-    fn.__workletHash = 4393537867728;
-    fn.__initData = obj2;
-    obj4 = obj(1700);
-    const obj5 = obj(1700);
-    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
-    tmp.current = obj2;
-    tmp3.current = true;
   }
-  closure_2(() => {
-    if (false === ref2.current) {
-      if (null !== ref.current) {
-        const current = ref.current;
-        obj = obj(ref[1]);
-        const fn = function u(value, value2) {
-          current.state.value = value;
-          current.height.value = value2;
-        };
-        obj2 = { _keyboardEventData: current };
-        fn.__closure = obj2;
-        fn.__workletHash = 5041909921996;
-        fn.__initData = __initData;
-        ref.current = obj.subscribeForKeyboardEvents(fn, current);
-        tmp.current = true;
+  let flag = false;
+  if (dependencies) {
+    let tmp = savedDependencies;
+    flag = false;
+    if (savedDependencies) {
+      flag = false;
+      if (savedDependencies.length === dependencies.length) {
+        let num = 0;
+        flag = true;
+        if (0 < savedDependencies.length) {
+          while (true) {
+            let tmp2 = dependencies[num];
+            let tmp3 = savedDependencies[num];
+            if (is(tmp2, tmp3)) {
+              let sum = num + 1;
+              num = sum;
+              flag = true;
+              if (sum >= savedDependencies.length) {
+                break;
+              }
+            } else {
+              let tmp5 = require;
+              let obj = LayoutAnimationType;
+              flag = false;
+              if (!obj.isWorkletFunction(tmp2)) {
+                break;
+              } else {
+                let tmp5Result = tmp5(1683);
+                flag = false;
+                if (!tmp5Result.isWorkletFunction(tmp3)) {
+                  break;
+                } else {
+                  let closure_0 = tmp2;
+                  let closure_1 = tmp3;
+                  let flag2 = false;
+                  if (tmp2.__workletHash === tmp3.__workletHash) {
+                    let _Object2 = Object;
+                    let keys = Object.keys(tmp2.__closure);
+                    let _Object3 = Object;
+                    let tmp7 = keys.length === Object.keys(tmp3.__closure).length && keys.every((item) => item in __closure2.__closure && __closure.__closure[item] === tmp.__closure[item]);
+                    flag2 = tmp7;
+                  }
+                  flag = false;
+                  if (!flag2) {
+                    break;
+                  }
+                }
+              }
+            }
+            break;
+          }
+        }
       }
     }
-    return () => {
-      obj = obj(closure_1[1]);
-      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
-      ref2.current = false;
-    };
-  }, []);
-  return tmp.current;
+  }
+  return flag;
 };
+export { isAnimated };
+export { shallowEqual };
+export { validateAnimatedStyles };

@@ -1,25 +1,25 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16853
+// Function ID: 16854
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 4818, 4967, 8525, 12364, 12529, 10602, 5379, 5377, 6896, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 5187, 4913, 5063, 8805, 11678, 13465, 10927, 5479, 5477, 7172, 2]
 
-// Module 16160 (UserSettingsDesignSystemTabs)
+// Module 16853 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4818 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import TableSwitchRow from "TableSwitchRow" /* 6896 */;
-import SegmentedControlState from "SegmentedControlState" /* 8525 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 10602 */;
-import Tabs from "Tabs" /* 12364 */;
-import TabsGradientDefault from "TabsGradient" /* 12529 */;
+import useToken from "useToken" /* 4913 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import TableSwitchRow from "TableSwitchRow" /* 7172 */;
+import SegmentedControlState from "SegmentedControlState" /* 8805 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 10927 */;
+import Tabs from "Tabs" /* 11678 */;
+import TabsGradientDefault from "TabsGradient" /* 13465 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const ColorUtils = tmp(4967);
+const ColorUtils = tmp(5063);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsxs: metroImportDefault, jsx: metroImportAll } = Fragment);
 let obj = { container: { margin: 16, flex: 1, alignItems: "center" }, item: obj2 };
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const obj4 = { children: metroImportAll(hasOwnProperty, obj2) };
   items1 = [metroImportDefault(hasOwnProperty, { children: items }), metroImportAll(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj6 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = tmp16(5377).Stack;
+  const Stack2 = tmp16(5477).Stack;
   items2 = [, ];
   const obj7 = {
     text: "Add Tab",

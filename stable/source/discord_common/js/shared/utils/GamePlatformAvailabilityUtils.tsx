@@ -1,16 +1,16 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 13048
+// Function ID: 13049
 // Name: GamePlatformAvailabilityUtils
-// Dependencies: [12101, 2]
+// Dependencies: [13046, 2]
 // Exports: getOrderedGamePlatforms
 
-// Module 12103 (GamePlatformAvailabilityUtils)
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12101 */;
+// Module 13048 (GamePlatformAvailabilityUtils)
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13046 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const items = [GamePlatformAvailability.GamePlatformAvailability.DESKTOP, GamePlatformAvailability.GamePlatformAvailability.MOBILE, GamePlatformAvailability.GamePlatformAvailability.CONSOLE];
+const items = [GamePlatformAvailability.GamePlatformAvailability.DESKTOP, GamePlatformAvailability.GamePlatformAvailability.MOBILE, GamePlatformAvailability.GamePlatformAvailability.CONSOLE, GamePlatformAvailability.GamePlatformAvailability.ROBLOX];
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/GamePlatformAvailabilityUtils.tsx");
 
 export const GAME_PLATFORM_AVAILABILITY_ORDER = items;

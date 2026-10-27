@@ -1,17 +1,17 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 6295
+// Function ID: 6296
 // Name: FramesStore
-// Dependencies: [10803, 6067, 1096, 10809, 504, 10810, 10811, 584, 2]
+// Dependencies: [6296, 6298, 1098, 6299, 504, 6312, 6313, 584, 2]
 
-// Module 10808 (FramesStore)
+// Module 6295 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1096 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 10809 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 10810 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10811 */;
-import FramesConstants from "FramesConstants" /* 10803 */;
+import Constants from "Constants" /* 1098 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6312 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
+import FramesConstants from "FramesConstants" /* 6296 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -112,7 +112,7 @@ let obj = {
           const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
           ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
           const _Date = Date;
-          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, hostWindowKey, launch };
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, iframeId: null, hostWindowKey, launch };
           set = map.set;
           if (hostWindowKey == null) {
             hostWindowKey = null;
@@ -243,7 +243,7 @@ let obj = {
     }
     return flag;
   },
-  FRAME_SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY: function handleSetPrefersPictureInPictureOnNavigateAway(frameId) {
+  FRAME_SET_RUNS_IN_BACKGROUND: function handleSetRunsInBackground(frameId) {
     let obj2;
     frameId = frameId.frameId;
     let flag = false;
@@ -257,7 +257,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp3.set;
           const merged = Object.assign(value);
-          obj2 = { prefersPictureInPictureOnNavigateAway: tmp };
+          obj2 = { runsInBackground: tmp };
           const merged1 = Object.assign(value.data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -334,7 +334,7 @@ let obj = {
           set = tmp2.set;
           const merged = Object.assign(value);
           const data = value.data;
-          obj2 = { iframeId, prefersPictureInPictureOnNavigateAway: data.iframeId === iframeId && data.prefersPictureInPictureOnNavigateAway };
+          obj2 = { iframeId, runsInBackground: data.iframeId === iframeId && data.runsInBackground };
           const merged1 = Object.assign(data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -359,7 +359,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp2.set;
           const merged = Object.assign(value);
-          obj2 = { iframeId: null, prefersPictureInPictureOnNavigateAway: false };
+          obj2 = { iframeId: null, runsInBackground: false };
           const merged1 = Object.assign(value.data);
           const result = set(frameId, obj);
           flag2 = true;

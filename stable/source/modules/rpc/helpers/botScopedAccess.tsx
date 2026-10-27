@@ -1,20 +1,20 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 9172
+// Function ID: 9173
 // Name: botScopedAccess
-// Dependencies: [2065, 4750, 1085, 8453, 14738, 4755, 1097, 14724, 10937, 10944, 2]
+// Dependencies: [2068, 4845, 1087, 8731, 9171, 4850, 1099, 9163, 9169, 9173, 2]
 // Exports: botCanViewChannel, canBotScopeReadMessages, isBotScopeOnly, validateBotScopeHasChannelAccess, validateBotScopeHasGuildAccess
 
-// Module 14737 (botScopedAccess)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 10944 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14724 */;
-import validateScopeDefault from "validateScope" /* 14738 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import Constants from "Constants" /* 1085 */;
+// Module 9172 (botScopedAccess)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9163 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import validateScopeDefault from "validateScope" /* 9171 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9173 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -69,9 +69,9 @@ export const canBotScopeReadMessages = function canBotScopeReadMessages(socket, 
     return type === metroRequire.GUILD_APP && null != channel.application_id && channel.application_id === socket.application.id;
   }
 };
-export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildAccess(context, arg1) {
-  if (isPostMessageSocketDefault(context)) {
-    if (arg1 !== getGuildIdForEmbeddedSurfaceDefault(context.context.surface)) {
+export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildAccess(socket, guild_id) {
+  if (isPostMessageSocketDefault(socket)) {
+    if (guild_id !== getGuildIdForEmbeddedSurfaceDefault(socket.context.surface)) {
       const self3 = this;
       const self4 = this;
       const obj2 = { errorCode: metroImportAll.INVALID_PERMISSIONS };

@@ -1,14 +1,14 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 16425
+// Function ID: 16426
 // Name: EmojiColdFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15666, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16426, 4912, 2]
 
-// Module 15665 (EmojiColdFaceIcon)
+// Module 16425 (EmojiColdFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 15666 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 16426 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiColdF
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

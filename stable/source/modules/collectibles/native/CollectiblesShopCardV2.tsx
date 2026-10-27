@@ -1,27 +1,27 @@
-// Module ID: 8963
-// Function ID: 8964
+// Module ID: 9259
+// Function ID: 9260
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1205, 7259, 1087, 21, 5092, 587, 558, 576, 8964, 7270, 8965, 8298, 8968, 8969, 1126, 4809, 6852, 9026, 9028, 4969, 504, 7271, 5088, 9029, 9032, 9034, 9031, 9035, 9037, 9042, 9053, 6185, 8966, 5056, 8296, 4769, 9040, 9079, 9080, 1279, 2]
+// Dependencies: [19, 17, 1207, 7530, 1089, 21, 5191, 587, 558, 576, 9260, 7541, 9261, 8576, 9264, 9265, 1128, 4904, 7130, 9322, 9324, 5065, 504, 7542, 5187, 9325, 9328, 9330, 9327, 9331, 9333, 9338, 9349, 6462, 9262, 5155, 8574, 4864, 9336, 9373, 9374, 1281, 2]
 
-// Module 8963 (CollectiblesShopCardV2)
+// Module 9259 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7270 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8296 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8966 */;
-import DiceIcon from "DiceIcon" /* 9032 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9034 */;
-import OrbsIcon from "OrbsIcon" /* 9035 */;
+import intl4 from "intl" /* 1128 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7541 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8574 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9262 */;
+import DiceIcon from "DiceIcon" /* 9328 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9330 */;
+import OrbsIcon from "OrbsIcon" /* 9331 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ size = { position: "relative", height: num, width: 150, display: "flex", borderW
 createStyles = createStyles.createStyles;
 obj2 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: 1.5, borderRadius: nativeDefault.radii.round, flexShrink: 1 };
 obj3 = { backgroundColor: nativeDefault.colors.WHITE };
-obj4 = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj4 = { backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardInternalV2(product) {
@@ -135,7 +135,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         text = tmp20;
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -143,10 +143,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
               return;
             }
           }
-          cResult[12] = Y;
-          tmp22 = Y;
+          cResult[12] = K;
+          tmp22 = K;
         } else {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -157,7 +157,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         }
         const analyticsLocations = tmp16(tmp2[18])().analyticsLocations;
         if (cResult[13] === analyticsLocations) {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -168,7 +168,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
           const tmpResult9 = tmp(collectibleProductState[19]);
           const trackShopCardClick = tmpResult9.useTrackShopCardClick(tmp23);
           if (cResult[16] === currentUser.id) {
-            class Y {
+            class K {
               constructor() {
                 obj = closure_1(closure_2[17]);
                 obj1 = { text: closure_7 };
@@ -255,7 +255,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   let obj5;
   let preferVCPrice;
   let solidBackground;
-  let tmp25Result;
+  let tmp26Result;
   let unpublishedAt;
   product = product.product;
   const require = product;
@@ -368,15 +368,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   });
   const items5 = [trackShopCardClick];
   const tmp2Result13 = require("get initialized");
+  const stateFromStores1 = tmp2Result13.useStateFromStores(items5, () => {
+    const category = CollectiblesCategoryStore.getCategory(require.categorySkuId);
+    let unpublishedAt;
+    if (category != null) {
+      unpublishedAt = category.unpublishedAt;
+    }
+    return unpublishedAt;
+  });
   if (unpublishedAt == null) {
-    unpublishedAt = tmp2Result13.useStateFromStores(items5, () => {
-      const category = CollectiblesCategoryStore.getCategory(require.categorySkuId);
-      let unpublishedAt;
-      if (category != null) {
-        unpublishedAt = category.unpublishedAt;
-      }
-      return unpublishedAt;
-    });
+    unpublishedAt = product.categoryWillUnpublishAt;
+  }
+  if (unpublishedAt == null) {
+    unpublishedAt = stateFromStores1;
   }
   const obj7 = {
     ref: trackShopCardImpression,
@@ -397,60 +401,60 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const PressableOpacity = tmp2(tmp3[33]).PressableOpacity;
   require("CollectiblesUtils");
   const badgeOverride = product.badgeOverride;
-  let tmp28 = null;
+  let tmp29 = null;
   if (!product.hideBadge) {
-    let tmp34Result;
+    let tmp35Result;
     if (null != badgeOverride) {
       const items7 = [tmp.badgePill, ];
       items7[1] = stateFromStores ? tmp.badgePillDarkMode : tmp.badgePillLightMode;
       let str2 = "text-overlay-light";
       const obj9 = { style: items7, children: closure_9(Text, obj10) };
       Text = tmp2(tmp3[24]).Text;
-      const tmp35 = showWishlistNUXActionSheet;
+      const tmp36 = showWishlistNUXActionSheet;
       if (stateFromStores) {
         str2 = "text-overlay-dark";
       }
       obj10 = { variant: "text-xs/bold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
-      tmp34Result = tmp34(tmp35, obj9);
+      tmp35Result = tmp35(tmp36, obj9);
     } else {
       const tmp2Result15 = require("CollectiblesProductUtils");
       if (tmp2Result15.isDynamicProduct(selectedProduct)) {
         const obj11 = { icon: require("DiceIcon").DiceIcon, accessibilityLabel: intl3.string(require("intl").t["+drfVi"]), isDark: stateFromStores };
         const IconBadgePill2 = tmp2(tmp3[25]).IconBadgePill;
         intl3 = tmp2(tmp3[16]).intl;
-        tmp34Result = closure_9(IconBadgePill2, obj11);
-      } else if (tmp27) {
+        tmp35Result = closure_9(IconBadgePill2, obj11);
+      } else if (tmp28) {
         const obj12 = { unpublishedAt, style: tmp.badge };
-        tmp34Result = closure_9(tmp10(tmp3[27]), obj12);
+        tmp35Result = closure_9(tmp10(tmp3[27]), obj12);
       } else if ("nitroClaim" === collectibleProductState) {
-        tmp34Result = closure_9(tmp2(tmp3[28]).NitroWheelIcon, { color: "mobile-text-heading-primary" });
+        tmp35Result = closure_9(tmp2(tmp3[28]).NitroWheelIcon, { color: "mobile-text-heading-primary" });
       } else {
-        tmp34Result = null;
+        tmp35Result = null;
         const tmp2Result16 = require("CollectiblesProductUtils");
         if (tmp2Result16.isOrbsExclusiveProduct(selectedProduct)) {
           const obj13 = { icon: require("OrbsIcon").OrbsIcon, accessibilityLabel: intl2.string(require("intl").t["0TmQRG"]), isDark: stateFromStores };
           const IconBadgePill = tmp2(tmp3[25]).IconBadgePill;
           intl2 = tmp2(tmp3[16]).intl;
-          tmp34Result = closure_9(IconBadgePill, obj13);
+          tmp35Result = closure_9(IconBadgePill, obj13);
         }
       }
     }
-    tmp28 = tmp34Result;
+    tmp29 = tmp35Result;
   }
-  if (null != tmp28) {
+  if (null != tmp29) {
     const obj14 = { style: tmp.topRowOverlay, children: items8 };
-    items8 = [tmp28, ];
-    const tmp37 = showWishlistNUXActionSheet;
+    items8 = [tmp29, ];
+    const tmp38 = showWishlistNUXActionSheet;
     if (!(tmp17 || hideWishlistButton)) {
       const obj15 = { style: tmp.wishlistButton, isWishlisted, onPress: handleToggle, busy: isBusy, disabled: !result, accessibilityHidden: true, onTrackPress: trackShopCardClick };
       tmp19 = closure_9(tmp2(tmp3[30]).WishlistButtonBase, obj15);
     }
     items8[1] = tmp19;
-    tmp25Result = tmp25(tmp37, obj14);
+    tmp26Result = tmp26(tmp38, obj14);
   } else {
-    tmp25Result = null;
+    tmp26Result = null;
   }
-  items9 = [tmp25Result, , ];
+  items9 = [tmp26Result, , ];
   const obj16 = { solidBackground, product, isPurchased: tmp17, isDisabled, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth };
   const tmp10Result = require("CollectiblesShopCardAssetTileV2");
   if (!tmp17) {

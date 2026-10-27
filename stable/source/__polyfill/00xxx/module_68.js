@@ -9,6 +9,7 @@ import defineLazyObjectProperty from "defineLazyObjectProperty" /* 71 */;
 import _mod73 from "module_73" /* 73 */;
 
 let _default;
+let obj3;
 if (true === global.RN$Bridgeless) {
   _default = _mod69.default;
 } else {
@@ -106,6 +107,25 @@ let obj = {
     }
   }
 };
-const merged = Object.assign(_default);
+let num = global.RN$discordUiManagerOptimization;
+if (num == null) {
+  num = 0;
+}
+if (1 === num) {
+  const _Object = Object;
+  const _Object2 = Object;
+  const obj2 = {};
+  const _Object3 = Object;
+  const prototypeOf = Object.getPrototypeOf(_default);
+  const merged = Object.assign(Object.getOwnPropertyDescriptors(_default));
+  const _Object4 = Object;
+  const merged1 = Object.assign(Object.getOwnPropertyDescriptors(obj));
+  obj3 = create(prototypeOf, obj2);
+} else {
+  obj3 = {};
+  const merged2 = Object.assign(_default);
+  let tmp5 = obj3;
+  const merged3 = Object.assign(obj);
+}
 
-export default obj;
+export default obj3;

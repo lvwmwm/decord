@@ -1,15 +1,15 @@
-// Module ID: 13789
-// Function ID: 13790
+// Module ID: 14569
+// Function ID: 14570
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1085, 1392, 558, 576, 6852, 7165, 7164, 7142, 1126, 4769, 2]
+// Dependencies: [19, 1087, 1394, 558, 576, 7130, 7436, 7435, 7413, 1128, 4864, 2]
 
-// Module 13789 (useOpenPremiumMarketingPayment)
-import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7142 */;
+// Module 14569 (useOpenPremiumMarketingPayment)
+import intl2 from "intl" /* 1128 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7413 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,10 +29,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
   const tmp2 = dependencyMap;
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
-  analyticsLocations = premiumTrialOfferPremiumType(6852)(arg0).analyticsLocations;
-  const obj2 = analyticsLocations(7165);
+  analyticsLocations = premiumTrialOfferPremiumType(7130)(arg0).analyticsLocations;
+  const obj2 = analyticsLocations(7436);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
-  const obj3 = analyticsLocations(7164);
+  const obj3 = analyticsLocations(7435);
   premiumTrialOfferPremiumType = obj3.usePremiumTrialOfferPremiumType();
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -63,7 +63,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
         tmp9 = tmp13;
       }
       const obj4 = { intervalType: interval, intervalCount };
-      const tmpResult = tmp(4769);
+      const tmpResult = tmp(4864);
       const result = tmpResult.formatTrialCtaIntervalDuration(obj4);
       cResult[4] = interval;
       cResult[5] = intervalCount;
@@ -72,8 +72,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
     } else {
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
-        const stringResult = intl.string(tmp(1126).t["8x0jKT"]);
+        const intl = tmp(1128).intl;
+        const stringResult = intl.string(tmp(1128).t["8x0jKT"]);
         cResult[3] = stringResult;
         tmp9 = stringResult;
       } else {

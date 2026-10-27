@@ -1,15 +1,15 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 14338
+// Function ID: 14339
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1085, 4702, 7568, 8162, 7507, 7886, 1126, 2]
+// Dependencies: [17, 1087, 4797, 7839, 8439, 7778, 8158, 1128, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 13558 (SafetySystemNotificationEmbed)
+// Module 14338 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
+import Constants from "Constants" /* 1087 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8158 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -67,20 +67,20 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7568 : 8162))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7839 : 8439))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result4 = renderer_EmbedUtils;
-            const intl = tmp6(1126).intl;
+            const intl = tmp6(1128).intl;
             formatToPlainString = intl.formatToPlainString;
             let num = parseMessageForPropsResult.timestamp;
-            eevFb6 = tmp6(1126).t.eevFb6;
+            eevFb6 = tmp6(1128).t.eevFb6;
             if (num == null) {
               num = 0;
             }
             obj3 = { daysAgo: diff(tmp14Result.unix(num), "days") };
-            diff = _modDef4702().diff;
-            _modDef4702();
+            diff = _modDef4797().diff;
+            _modDef4797();
             str4 = parseMessageForPropsResult.body;
-            tmp14Result = _modDef4702;
+            tmp14Result = _modDef4797;
             if (str4 == null) {
               str4 = "";
             }

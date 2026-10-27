@@ -1,14 +1,14 @@
-// Module ID: 18516
-// Function ID: 18517
+// Module ID: 18912
+// Function ID: 18913
 // Name: useIsMFAEnabled
-// Dependencies: [8634, 1390, 1085, 558, 576, 573, 2]
+// Dependencies: [8911, 1392, 1087, 558, 576, 573, 2]
 
-// Module 18516 (useIsMFAEnabled)
+// Module 18912 (useIsMFAEnabled)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
-import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 1087 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

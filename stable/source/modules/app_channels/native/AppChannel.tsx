@@ -1,57 +1,72 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17741
+// Function ID: 17742
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5092, 558, 576, 1897, 6665, 17131, 8606, 17357, 17132, 17133, 6946, 9310, 17134, 17138, 17360, 17363, 1126, 17364, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1899, 6942, 11717, 17742, 11714, 11718, 7222, 5202, 11719, 11724, 17745, 17748, 1128, 6357, 5128, 1417, 5479, 6297, 9617, 17749, 6355, 17750, 10672, 2]
 
-// Module 17356 (AppChannel)
+// Module 17741 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1126 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
-import AppChannelChat from "AppChannelChat" /* 9310 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 17131 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 17363 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17364 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1899 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import transitionToChannel from "transitionToChannel" /* 5202 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6355 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6357 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9617 */;
+import useChannelContentGate from "useChannelContentGate" /* 10672 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11714 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11717 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11718 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11719 */;
+import useFrameLifecycleDefault from "useFrameLifecycle" /* 17742 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 17748 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 17749 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17750 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
-let openAppChannelChatResult;
+let transitionToMessageResult;
 
 let hasOwnProperty;
 let metroRequire;
+let size;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = createStyles.createStyles((paddingBottom) => {
+let createStyles = createStyles_mod;
+let obj = { icon: size };
+size = { width: 64, height: 64, borderRadius: nativeDefault.radii.lg };
+let closure_7 = createStyles.createStyles(obj);
+createStyles = createStyles_mod;
+let closure_8 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: obj2 };
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel(arg0) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAppChannel(arg0) {
   let applicationId;
   let bottom;
   let channel;
   let frame;
-  let guild_id;
   let headerVisible;
   let id;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  let items;
   let left;
   let right;
   let state;
+  let surface;
   let top;
   let obj = id(576);
-  const cResult = obj.c(31);
-  ({ applicationId, channel, headerVisible } = arg0);
-  const tmp6 = closure_7(guild_id(1897)());
-  ({ top, bottom, left, right } = guild_id(6665)().insets);
+  const cResult = obj.c(27);
+  ({ applicationId, channel, surface, headerVisible } = arg0);
+  closure_8(useSystemKeyboardHeightDefault());
+  ({ top, bottom, left, right } = useSafeAreaInsetsKeyboardAwareDefault().insets);
   if (cResult[0] === bottom) {
     if (cResult[1] === (undefined === headerVisible || headerVisible)) {
       if (cResult[2] === left) {
@@ -60,189 +75,77 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChan
           if (cResult[4] === top) {
             tmp7 = cResult[5];
           }
-          if (cResult[6] === channel.guild_id) {
+          if (cResult[6] === applicationId) {
             let tmp9;
-            if (cResult[7] === channel.id) {
+            if (cResult[7] === surface) {
               tmp9 = cResult[8];
             }
-            if (cResult[9] === applicationId) {
-              let tmp10;
-              if (cResult[10] === tmp9) {
-                tmp10 = cResult[11];
-              }
-              ({ frame, state } = guild_id(17357)(tmp10));
-              guild_id(17357)(tmp10);
-              const tmp5Result = guild_id(17132);
-              tmp5Result(state === id(17357).FrameLifecycleState.Launched);
-              let tmp15 = null;
-              const tmp5Result3 = guild_id(17133);
-              if (state === id(17357).FrameLifecycleState.Launched) {
-                tmp15 = applicationId;
-              }
-              tmp5Result3(tmp15);
-              const tmpResult = id(6946);
-              const isConjureChannelCandidate = tmpResult.useIsConjureChannelCandidate(channel, "AppChannel");
-              id = channel.id;
-              guild_id = channel.guild_id;
-              if (cResult[12] === id) {
-                let tmp18;
-                if (cResult[13] === guild_id) {
-                  tmp18 = cResult[14];
-                }
-                if (id(17357).FrameLifecycleState.Launched === state) {
-                  if (cResult[15] === frame.id) {
-                    let tmp39;
-                    if (cResult[16] === tmp7) {
-                      tmp39 = cResult[17];
-                    }
-                    if (cResult[18] === id) {
-                      if (cResult[19] === tmp18) {
-                        let tmp43;
-                        if (cResult[20] === isConjureChannelCandidate) {
-                          tmp43 = cResult[21];
-                        }
-                        if (cResult[22] === tmp6.container) {
-                          if (cResult[23] === tmp39) {
-                            let tmp46;
-                            if (cResult[24] === tmp43) {
-                              tmp46 = cResult[25];
-                            }
-                            return tmp46;
-                          }
-                        }
-                        const obj3 = { style: tmp6.container, children: items };
-                        items = [tmp39, tmp43];
-                        cResult[22] = tmp6.container;
-                        cResult[23] = tmp39;
-                        cResult[24] = tmp43;
-                        const tmp49 = closure_6(View, obj3);
-                        class D {
-                          constructor(arg0) {
-                            obj = closure_0(closure_2[14]);
-                            openAppChannelChatResult = obj.openAppChannelChat(guild_id, id, arg0.id);
-                            return;
-                          }
-                        }
-                        tmp46 = tmp49;
-                      }
-                    }
-                    let tmp44 = null;
-                    if (isConjureChannelCandidate) {
-                      const obj4 = { channelId: id, onOpenChat: tmp18 };
-                      tmp44 = closure_5(tmp5(17360), obj4);
-                    }
-                    cResult[18] = id;
-                    cResult[19] = tmp18;
-                    cResult[20] = isConjureChannelCandidate;
-                    cResult[21] = tmp44;
-                    tmp43 = tmp44;
-                  }
-                  const obj5 = { frameId: frame.id, level: id(17138).FrameStackLevel.WithinAppContent, presentation: tmp7 };
-                  const tmp5Result4 = guild_id(17134);
-                  const tmp42 = closure_5(tmp5Result4, obj5);
-                  cResult[15] = frame.id;
-                  cResult[16] = tmp7;
-                  cResult[17] = tmp42;
-                  tmp39 = tmp42;
-                } else if (id(17357).FrameLifecycleState.RenderingElsewhere === state) {
-                  let tmp36;
-                  const _Symbol5 = Symbol;
-                  if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-                    const obj6 = { description: intl5.string(id(1126).t["2KIDX+"]) };
-                    const FrameSurfaceExplanation4 = tmp(17363).FrameSurfaceExplanation;
-                    intl5 = tmp(1126).intl;
-                    const tmp38 = closure_5(FrameSurfaceExplanation4, obj6);
-                    cResult[26] = tmp38;
-                    tmp36 = tmp38;
-                  } else {
-                    tmp36 = cResult[26];
-                  }
-                  return tmp36;
-                } else if (id(17357).FrameLifecycleState.NoApplication === state) {
-                  let tmp32;
-                  const _Symbol4 = Symbol;
-                  if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                    const obj7 = { description: intl4.string(id(1126).t.izggZO) };
-                    const FrameSurfaceExplanation3 = tmp(17363).FrameSurfaceExplanation;
-                    intl4 = tmp(1126).intl;
-                    const tmp34 = closure_5(FrameSurfaceExplanation3, obj7);
-                    cResult[27] = tmp34;
-                    tmp32 = tmp34;
-                  } else {
-                    tmp32 = cResult[27];
-                  }
-                  return tmp32;
-                } else if (id(17357).FrameLifecycleState.DoesNotSupportSurface === state) {
-                  let tmp28;
-                  const _Symbol3 = Symbol;
-                  if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                    const obj8 = { description: intl3.string(id(1126).t["iUWcU/"]) };
-                    const FrameSurfaceExplanation2 = tmp(17363).FrameSurfaceExplanation;
-                    intl3 = tmp(1126).intl;
-                    const tmp30 = closure_5(FrameSurfaceExplanation2, obj8);
-                    cResult[28] = tmp30;
-                    tmp28 = tmp30;
-                  } else {
-                    tmp28 = cResult[28];
-                  }
-                  return tmp28;
-                } else if (id(17357).FrameLifecycleState.Error === state) {
-                  let tmp24;
-                  const _Symbol2 = Symbol;
-                  if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
-                    const obj9 = { heading: intl.string(id(1126).t.VquUff), error: intl2.string(id(1126).t["Sd9D/R"]) };
-                    const FrameSurfaceExplanation = tmp(17363).FrameSurfaceExplanation;
-                    intl = tmp(1126).intl;
-                    intl2 = tmp(1126).intl;
-                    const tmp26 = closure_5(FrameSurfaceExplanation, obj9);
-                    cResult[29] = tmp26;
-                    tmp24 = tmp26;
-                  } else {
-                    tmp24 = cResult[29];
-                  }
-                  return tmp24;
-                } else {
-                  let tmp20;
-                  const _Symbol = Symbol;
-                  if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-                    const tmp22 = closure_5(id(17363).FrameSurfaceLoading, {});
-                    cResult[30] = tmp22;
-                    tmp20 = tmp22;
-                  } else {
-                    tmp20 = cResult[30];
-                  }
-                  return tmp20;
-                }
-              }
-              class D {
+            ({ frame, state } = useFrameLifecycleDefault(tmp9));
+            useFrameLifecycleDefault(tmp9);
+            const tmp5Result = useEdgeOnlySwipeExitDefault;
+            tmp5Result(state === id(17742).FrameLifecycleState.Launched);
+            let tmp14 = null;
+            const tmp5Result3 = useInlineFrameOAuthNavigationDefault;
+            if (state === id(17742).FrameLifecycleState.Launched) {
+              tmp14 = applicationId;
+            }
+            tmp5Result3(tmp14);
+            const tmpResult = id(7222);
+            const isConjureChannelCandidate = tmpResult.useIsConjureChannelCandidate(channel, "AppChannel");
+            id = channel.id;
+            if (cResult[9] !== id) {
+              class M {
                 constructor(arg0) {
                   obj = closure_0(closure_2[14]);
-                  openAppChannelChatResult = obj.openAppChannelChat(guild_id, id, arg0.id);
+                  transitionToMessageResult = obj.transitionToMessage(id, arg0.id);
                   return;
                 }
               }
-              cResult[12] = id;
-              cResult[13] = guild_id;
-              cResult[14] = D;
-              tmp18 = D;
+              cResult[9] = id;
+              cResult[10] = M;
+            } else {
+              class M {
+                constructor(arg0) {
+                  obj = closure_0(closure_2[14]);
+                  transitionToMessageResult = obj.transitionToMessage(id, arg0.id);
+                  return;
+                }
+              }
             }
-            const obj10 = { applicationId, surface: tmp9 };
-            cResult[9] = applicationId;
-            cResult[10] = tmp9;
-            cResult[11] = obj10;
-            tmp10 = obj10;
+            if (id(17742).FrameLifecycleState.Launched === state) {
+              class M {
+                constructor(arg0) {
+                  obj = closure_0(closure_2[14]);
+                  transitionToMessageResult = obj.transitionToMessage(id, arg0.id);
+                  return;
+                }
+              }
+              const obj2 = { frameId: frame.id, level: id(11724).FrameStackLevel.WithinAppContent, presentation: tmp7 };
+              const tmp5Result4 = FrameRenderTargetDefault;
+              cResult[11] = frame.id;
+              cResult[12] = tmp7;
+              cResult[13] = closure_5(tmp5Result4, obj2);
+              const tmp21 = closure_5(tmp5Result4, obj2);
+            } else {
+              class M {
+                constructor(arg0) {
+                  obj = closure_0(closure_2[14]);
+                  transitionToMessageResult = obj.transitionToMessage(id, arg0.id);
+                  return;
+                }
+              }
+            }
           }
-          const obj11 = { type: id(8606).EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
-          ({ id: obj2.channelId, guild_id: obj2.guildId } = channel);
-          cResult[6] = channel.guild_id;
-          cResult[7] = channel.id;
-          cResult[8] = obj11;
-          tmp9 = obj11;
+          const obj3 = { applicationId, surface };
+          cResult[6] = applicationId;
+          cResult[7] = surface;
+          cResult[8] = obj3;
+          tmp9 = obj3;
         }
       }
     }
   }
-  const tmp8 = guild_id(17131)({ top, bottom, left, right }, undefined === headerVisible || headerVisible);
+  const tmp8 = getInlineFramePresentationDefault({ top, bottom, left, right }, undefined === headerVisible || headerVisible);
   cResult[0] = bottom;
   cResult[1] = undefined === headerVisible || headerVisible;
   cResult[2] = left;
@@ -250,160 +153,400 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChan
   cResult[4] = top;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : (function AppChannel(headerVisible) {
+}) : (function OpenAppChannel(surface) {
   let applicationId;
   let channel;
   let frame;
+  let headerVisible;
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
-  let items3;
+  let items2;
   let state;
-  ({ applicationId, channel } = headerVisible);
-  let flag = headerVisible.headerVisible;
-  if (flag === undefined) {
-    flag = true;
+  ({ applicationId, channel, headerVisible } = surface);
+  surface = surface.surface;
+  if (headerVisible === undefined) {
+    headerVisible = true;
   }
   let top;
+  let bottom;
   let id;
-  let guild_id;
-  const tmp3 = guild_id(flag(top[6])());
-  const insets = flag(top[7])().insets;
+  const tmp3 = closure_8(top(bottom[7])());
+  const insets = top(bottom[8])().insets;
   top = insets.top;
-  const bottom = insets.bottom;
+  bottom = insets.bottom;
   const left = insets.left;
   const right = insets.right;
-  let obj = bottom;
-  const items = [top, bottom, left, right, flag];
-  const items1 = [, ];
-  ({ id: arr2[0], guild_id: arr2[1] } = channel);
-  const memo = bottom.useMemo(() => {
+  let obj = left;
+  const items = [top, bottom, left, right, headerVisible];
+  const memo = left.useMemo(() => {
     const rect = { top, bottom, left, right };
-    return getInlineFramePresentationDefault(rect, flag);
+    return getInlineFramePresentationDefault(rect, headerVisible);
   }, items);
-  const memo1 = bottom.useMemo(() => {
-    const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
-    return obj;
-  }, items1);
-  ({ state, frame } = flag(top[10])({ applicationId, surface: memo1 }));
-  flag(top[10])({ applicationId, surface: memo1 });
-  const tmp7 = flag(top[11]);
-  tmp7(state === channel(top[10]).FrameLifecycleState.Launched);
-  let tmp11 = null;
-  const tmp10 = flag(top[12]);
-  if (state === channel(top[10]).FrameLifecycleState.Launched) {
-    tmp11 = applicationId;
+  ({ state, frame } = top(bottom[10])({ applicationId, surface }));
+  top(bottom[10])({ applicationId, surface });
+  const tmp6 = top(bottom[11]);
+  tmp6(state === headerVisible(bottom[10]).FrameLifecycleState.Launched);
+  let tmp10 = null;
+  const tmp9 = top(bottom[12]);
+  if (state === headerVisible(bottom[10]).FrameLifecycleState.Launched) {
+    tmp10 = applicationId;
   }
-  tmp10(tmp11);
+  tmp9(tmp10);
   id = channel.id;
-  guild_id = channel.guild_id;
-  const items2 = [guild_id, id];
-  const tmp8Result = channel(top[13]);
-  const isConjureChannelCandidate = tmp8Result.useIsConjureChannelCandidate(channel, "AppChannel");
+  const items1 = [id];
+  const tmp7Result = headerVisible(bottom[13]);
+  const isConjureChannelCandidate = tmp7Result.useIsConjureChannelCandidate(channel, "AppChannel");
   const callback = obj.useCallback((id) => {
-    const obj = AppChannelChat;
-    obj.openAppChannelChat(guild_id, id, id.id);
-  }, items2);
-  if (channel(top[10]).FrameLifecycleState.Launched === state) {
-    const obj2 = { style: tmp3.container, children: items3 };
-    const obj3 = { frameId: frame.id, level: channel(top[16]).FrameStackLevel.WithinAppContent, presentation: memo };
-    const tmpResult = flag(top[15]);
-    items3 = [right(tmpResult, obj3), ];
-    let tmp22Result = null;
-    const tmp20 = id;
-    const tmp21 = left;
-    const tmp22 = right;
+    const obj = transitionToChannel;
+    obj.transitionToMessage(id, id.id);
+  }, items1);
+  if (headerVisible(bottom[10]).FrameLifecycleState.Launched === state) {
+    const obj2 = { style: tmp3.container, children: items2 };
+    const obj3 = { frameId: frame.id, level: headerVisible(bottom[16]).FrameStackLevel.WithinAppContent, presentation: memo };
+    const tmpResult = top(bottom[15]);
+    items2 = [id(tmpResult, obj3), ];
+    let tmp21Result = null;
+    const tmp19 = closure_6;
+    const tmp20 = right;
+    const tmp21 = id;
     if (isConjureChannelCandidate) {
       const obj4 = { channelId: id, onOpenChat: callback };
-      tmp22Result = tmp22(tmp(tmp2[17]), obj4);
+      tmp21Result = tmp21(tmp(tmp2[17]), obj4);
     }
-    items3[1] = tmp22Result;
-    return tmp20(tmp21, obj2);
-  } else if (channel(top[10]).FrameLifecycleState.RenderingElsewhere === state) {
-    const obj5 = { description: intl5.string(channel(top[19]).t["2KIDX+"]) };
-    const FrameSurfaceExplanation4 = tmp8(tmp2[18]).FrameSurfaceExplanation;
-    intl5 = tmp8(tmp2[19]).intl;
-    return right(FrameSurfaceExplanation4, obj5);
-  } else if (channel(top[10]).FrameLifecycleState.NoApplication === state) {
-    const obj6 = { description: intl4.string(channel(top[19]).t.izggZO) };
-    const FrameSurfaceExplanation3 = tmp8(tmp2[18]).FrameSurfaceExplanation;
-    intl4 = tmp8(tmp2[19]).intl;
-    return right(FrameSurfaceExplanation3, obj6);
-  } else if (channel(top[10]).FrameLifecycleState.DoesNotSupportSurface === state) {
-    const obj7 = { description: intl3.string(channel(top[19]).t["iUWcU/"]) };
-    const FrameSurfaceExplanation2 = tmp8(tmp2[18]).FrameSurfaceExplanation;
-    intl3 = tmp8(tmp2[19]).intl;
-    return right(FrameSurfaceExplanation2, obj7);
-  } else if (channel(top[10]).FrameLifecycleState.Error === state) {
-    const obj8 = { heading: intl.string(channel(top[19]).t.VquUff), error: intl2.string(channel(top[19]).t["Sd9D/R"]) };
-    const FrameSurfaceExplanation = tmp8(tmp2[18]).FrameSurfaceExplanation;
-    intl = tmp8(tmp2[19]).intl;
-    intl2 = tmp8(tmp2[19]).intl;
-    return right(FrameSurfaceExplanation, obj8);
+    items2[1] = tmp21Result;
+    return tmp19(tmp20, obj2);
+  } else if (headerVisible(bottom[10]).FrameLifecycleState.RenderingElsewhere === state) {
+    const obj5 = { description: intl5.string(headerVisible(bottom[19]).t["2KIDX+"]) };
+    const FrameSurfaceExplanation4 = tmp7(tmp2[18]).FrameSurfaceExplanation;
+    intl5 = tmp7(tmp2[19]).intl;
+    return id(FrameSurfaceExplanation4, obj5);
+  } else if (headerVisible(bottom[10]).FrameLifecycleState.NoApplication === state) {
+    const obj6 = { description: intl4.string(headerVisible(bottom[19]).t.izggZO) };
+    const FrameSurfaceExplanation3 = tmp7(tmp2[18]).FrameSurfaceExplanation;
+    intl4 = tmp7(tmp2[19]).intl;
+    return id(FrameSurfaceExplanation3, obj6);
+  } else if (headerVisible(bottom[10]).FrameLifecycleState.DoesNotSupportSurface === state) {
+    const obj7 = { description: intl3.string(headerVisible(bottom[19]).t["iUWcU/"]) };
+    const FrameSurfaceExplanation2 = tmp7(tmp2[18]).FrameSurfaceExplanation;
+    intl3 = tmp7(tmp2[19]).intl;
+    return id(FrameSurfaceExplanation2, obj7);
+  } else if (headerVisible(bottom[10]).FrameLifecycleState.Error === state) {
+    const obj8 = { heading: intl.string(headerVisible(bottom[19]).t.VquUff), error: intl2.string(headerVisible(bottom[19]).t["Sd9D/R"]) };
+    const FrameSurfaceExplanation = tmp7(tmp2[18]).FrameSurfaceExplanation;
+    intl = tmp7(tmp2[19]).intl;
+    intl2 = tmp7(tmp2[19]).intl;
+    return id(FrameSurfaceExplanation, obj8);
   } else {
-    return right(channel(top[18]).FrameSurfaceLoading, {});
+    return id(headerVisible(bottom[18]).FrameSurfaceLoading, {});
   }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClosedAppChannel(onLaunch) {
+  let obj11;
+  let obj4;
+  const obj = react2;
+  const cResult = obj.c(10);
+  onLaunch = onLaunch.onLaunch;
+  const applicationId = onLaunch.applicationId;
+  const tmp4 = closure_7();
+  const obj2 = ApplicationActionCreators;
+  const data = obj2.useApplication(applicationId).data;
+  if (cResult[0] === data) {
+    let tmp5;
+    let tmp14;
+    let tmp16;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+    }
+    let name;
+    if (data != null) {
+      name = data.name;
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(intl6.t.PPYvuv);
+      cResult[3] = stringResult;
+      tmp14 = stringResult;
+    } else {
+      tmp14 = cResult[3];
+    }
+    if (cResult[4] !== onLaunch) {
+      const obj3 = { text: tmp14, onPress: onLaunch };
+      const tmp18 = hasOwnProperty(components_Button_Button.Button, obj3);
+      cResult[4] = onLaunch;
+      cResult[5] = tmp18;
+      tmp16 = tmp18;
+    } else {
+      tmp16 = cResult[5];
+    }
+    if (cResult[6] === tmp5) {
+      if (cResult[7] === name) {
+        let tmp19;
+        if (cResult[8] === tmp16) {
+          tmp19 = cResult[9];
+        }
+        return tmp19;
+      }
+    }
+    const obj6 = { icon: tmp5, heading: name, action: tmp16 };
+    const tmp21 = hasOwnProperty(FrameSurfaceState.FrameSurfaceExplanation, obj6);
+    cResult[6] = tmp5;
+    cResult[7] = name;
+    cResult[8] = tmp16;
+    cResult[9] = tmp21;
+    tmp19 = tmp21;
+  }
+  let icon;
+  if (data != null) {
+    icon = data.icon;
+  }
+  let tmp7 = null;
+  if (null != icon) {
+    const obj7 = { source: obj4.getApplicationIconSource(obj11), style: tmp4.icon };
+    obj11 = { id: null, icon: null, size: 64 };
+    ({ id: obj5.id, icon: obj5.icon } = data);
+    const tmp10 = FastImageDefault;
+    obj4 = AvatarUtilsDefault;
+    tmp7 = hasOwnProperty(tmp10, obj7);
+  }
+  cResult[0] = data;
+  cResult[1] = tmp4;
+  cResult[2] = tmp7;
+  tmp5 = tmp7;
+}) : (function ClosedAppChannel(arg0) {
+  let Button;
+  let applicationId;
+  let intl;
+  let name;
+  let obj10;
+  let obj3;
+  let obj5;
+  let onLaunch;
+  ({ applicationId, onLaunch } = arg0);
+  const tmp = closure_7();
+  const obj = ApplicationActionCreators;
+  const data = obj.useApplication(applicationId).data;
+  let icon;
+  const FrameSurfaceExplanation = FrameSurfaceState.FrameSurfaceExplanation;
+  if (data != null) {
+    icon = data.icon;
+  }
+  let tmp4Result = null;
+  if (null != icon) {
+    const obj2 = { source: obj3.getApplicationIconSource(obj5), style: tmp.icon };
+    obj5 = { id: null, icon: null, size: 64 };
+    ({ id: obj4.id, icon: obj4.icon } = data);
+    const tmp8 = FastImageDefault;
+    obj3 = AvatarUtilsDefault;
+    tmp4Result = tmp4(tmp8, obj2);
+  }
+  const obj6 = { icon: tmp4Result, heading: name, action: hasOwnProperty(Button, obj10) };
+  name = undefined;
+  if (data != null) {
+    name = data.name;
+  }
+  obj10 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
+  Button = tmp2(5479).Button;
+  intl = tmp2(1128).intl;
+  return hasOwnProperty(FrameSurfaceExplanation, obj6);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannel(arg0) {
+  let applicationId;
+  let channel;
+  let obj = channel(576);
+  const cResult = obj.c(15);
+  const tmp = channel;
+  ({ applicationId, channel } = arg0);
+  if (cResult[0] === channel.guild_id) {
+    let tmp4;
+    let tmp5;
+    if (cResult[1] === channel.id) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== channel.id) {
+      const fn = function p() {
+        const obj = openChannelSecondaryViewChat;
+        return -1 !== obj.getChannelSecondaryViewChatIndex(channel.id);
+      };
+      cResult[3] = channel.id;
+      cResult[4] = fn;
+      tmp5 = fn;
+    } else {
+      tmp5 = cResult[4];
+    }
+    if (cResult[5] === applicationId) {
+      if (cResult[6] === tmp4) {
+        let tmp6;
+        let tmp9;
+        if (cResult[7] === tmp5) {
+          tmp6 = cResult[8];
+        }
+        const tmp8 = useAppChannelClosedDefault(tmp6);
+        const launch = tmp8.launch;
+        if (tmp8.isClosed) {
+          if (cResult[9] === applicationId) {
+            let tmp16;
+            if (cResult[10] === launch) {
+              tmp16 = cResult[11];
+            }
+            tmp9 = tmp16;
+          }
+          const obj2 = { applicationId, onLaunch: launch };
+          const tmp19 = closure_5(closure_10, obj2);
+          cResult[9] = applicationId;
+          cResult[10] = launch;
+          cResult[11] = tmp19;
+          tmp16 = tmp19;
+        } else {
+          if (cResult[12] === arg0) {
+            if (cResult[13] === tmp4) {
+              tmp9 = cResult[14];
+            }
+          }
+          const obj3 = { surface: tmp4 };
+          const merged = Object.assign(arg0);
+          const tmp15 = closure_5(closure_9, obj3);
+          cResult[12] = arg0;
+          cResult[13] = tmp4;
+          cResult[14] = tmp15;
+          tmp9 = tmp15;
+        }
+        return tmp9;
+      }
+    }
+    const obj4 = { applicationId, surface: tmp4, shouldStartClosed: tmp5 };
+    cResult[5] = applicationId;
+    cResult[6] = tmp4;
+    cResult[7] = tmp5;
+    cResult[8] = obj4;
+    tmp6 = obj4;
+  }
+  const obj5 = { type: tmp(6297).EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
+  cResult[0] = channel.guild_id;
+  cResult[1] = channel.id;
+  cResult[2] = obj5;
+  tmp4 = obj5;
+}) : (function AppChannel(arg0) {
+  let applicationId;
+  let channel;
+  let tmp4Result;
+  ({ applicationId, channel } = arg0);
+  const items = [, ];
+  ({ id: arr[0], guild_id: arr[1] } = channel);
+  const memo = react.useMemo(() => {
+    const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
+    return obj;
+  }, items);
+  let obj = {
+    applicationId,
+    surface: memo,
+    shouldStartClosed() {
+      const obj = openChannelSecondaryViewChat;
+      return -1 !== obj.getChannelSecondaryViewChatIndex(channel.id);
+    }
+  };
+  const tmp2 = useAppChannelClosedDefault(obj);
+  if (tmp2.isClosed) {
+    const obj2 = { applicationId, onLaunch: tmp3 };
+    tmp4Result = tmp4(closure_10, obj2);
+  } else {
+    const obj3 = { surface: memo };
+    const merged = Object.assign(arg0);
+    tmp4Result = tmp4(closure_9, obj3);
+  }
+  return tmp4Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedAppChannel(channel) {
   let intl;
   let intl2;
-  let tmp5;
+  let tmp6;
   const obj = react2;
-  const cResult = obj.c(4);
+  const cResult = obj.c(6);
   channel = channel.channel;
-  const application_id = channel.application_id;
+  let application_id = channel.application_id;
+  const obj2 = conjureDMAppChannel;
+  if (application_id == null) {
+    application_id = obj2.useDMAppChannelApplicationId(channel);
+  }
   useChannelAppFrameTeardownDefault(channel);
-  if (null == application_id) {
-    let first;
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-      const FrameSurfaceExplanation = tmp(17363).FrameSurfaceExplanation;
-      intl = tmp(1126).intl;
-      intl2 = tmp(1126).intl;
-      const tmp12 = hasOwnProperty(FrameSurfaceExplanation, obj2);
-      cResult[0] = tmp12;
-      first = tmp12;
+  const tmpResult = useChannelContentGate;
+  const channelContentGate = tmpResult.useChannelContentGate(channel.guild_id, channel);
+  if (null != channelContentGate) {
+    let tmp14;
+    if (cResult[0] !== channelContentGate) {
+      const tmpResult2 = useChannelContentGate;
+      const result = tmpResult2.renderChannelContentGate(channelContentGate);
+      cResult[0] = channelContentGate;
+      cResult[1] = result;
+      tmp14 = result;
     } else {
-      first = cResult[0];
+      tmp14 = cResult[1];
     }
-    tmp5 = first;
+    tmp6 = tmp14;
+  } else if (null == application_id) {
+    let tmp11;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
+      const FrameSurfaceExplanation = tmp(17748).FrameSurfaceExplanation;
+      intl = tmp(1128).intl;
+      intl2 = tmp(1128).intl;
+      const tmp13 = hasOwnProperty(FrameSurfaceExplanation, obj3);
+      cResult[2] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[2];
+    }
+    tmp6 = tmp11;
   } else {
-    if (cResult[1] === application_id) {
-      if (cResult[2] === channel) {
-        tmp5 = cResult[3];
+    if (cResult[3] === application_id) {
+      if (cResult[4] === channel) {
+        tmp6 = cResult[5];
       }
     }
-    const obj3 = { applicationId: application_id, channel };
-    const tmp8 = hasOwnProperty(closure_8, obj3);
-    cResult[1] = application_id;
-    cResult[2] = channel;
-    cResult[3] = tmp8;
-    tmp5 = tmp8;
+    const obj4 = { applicationId: application_id, channel };
+    const tmp9 = hasOwnProperty(closure_11, obj4);
+    cResult[3] = application_id;
+    cResult[4] = channel;
+    cResult[5] = tmp9;
+    tmp6 = tmp9;
   }
-  return tmp5;
+  return tmp6;
 }) : (function ConnectedAppChannel(channel) {
   let intl;
   let intl2;
-  let tmp5;
+  let result;
   channel = channel.channel;
-  const application_id = channel.application_id;
-  useChannelAppFrameTeardownDefault(channel);
-  if (null == application_id) {
-    const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = FrameSurfaceState.FrameSurfaceExplanation;
-    intl = intl6.intl;
-    intl2 = intl6.intl;
-    tmp5 = hasOwnProperty(FrameSurfaceExplanation, obj2);
-  } else {
-    const obj = { applicationId: application_id, channel };
-    tmp5 = hasOwnProperty(closure_8, obj);
+  let application_id = channel.application_id;
+  const obj = conjureDMAppChannel;
+  if (application_id == null) {
+    application_id = obj.useDMAppChannelApplicationId(channel);
   }
-  return tmp5;
+  useChannelAppFrameTeardownDefault(channel);
+  const tmpResult = useChannelContentGate;
+  const channelContentGate = tmpResult.useChannelContentGate(channel.guild_id, channel);
+  if (null != channelContentGate) {
+    const tmpResult2 = useChannelContentGate;
+    result = tmpResult2.renderChannelContentGate(channelContentGate);
+  } else if (null == application_id) {
+    const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
+    const FrameSurfaceExplanation = tmp(17748).FrameSurfaceExplanation;
+    intl = tmp(1128).intl;
+    intl2 = tmp(1128).intl;
+    result = hasOwnProperty(FrameSurfaceExplanation, obj2);
+  } else {
+    const obj3 = { applicationId: application_id, channel };
+    result = hasOwnProperty(closure_11, obj3);
+  }
+  return result;
 });
-const result = size.fileFinishedImporting("modules/app_channels/native/AppChannel.tsx");
+size = size_mod;
+let result = size.fileFinishedImporting("modules/app_channels/native/AppChannel.tsx");
 
 export default tmp3;

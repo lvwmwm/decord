@@ -1,15 +1,15 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 13784
+// Function ID: 13785
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 576, 5305, 1126, 5088, 12855, 5305, 2]
+// Dependencies: [19, 21, 558, 576, 5405, 1128, 5187, 13781, 5405, 2]
 
-// Module 12858 (VoicePanelVideoGuardErrorAlert)
+// Module 13784 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AlertModal2 from "AlertModal" /* 5305 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 12855 */;
+import intl4 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AlertModal2 from "AlertModal" /* 5405 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 13781 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   const obj2 = AlertModal2;
   const dismissModalCallback = obj2.useDismissModalCallback();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.UoW002);
     cResult[0] = stringResult;
     first = stringResult;
@@ -34,11 +34,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5088).Text;
-    const intl2 = tmp(1126).intl;
+    const Text = tmp(5187).Text;
+    const intl2 = tmp(1128).intl;
     const format = intl2.format;
     const obj4 = { helpdeskArticle: VideoGuardExperiment.VIDEO_GUARD_BLOG_POST_URL };
-    const BPDKoA = tmp(1126).t.BPDKoA;
+    const BPDKoA = tmp(1128).t.BPDKoA;
     const tmp9 = <Text variant="text-sm/normal" color="text-subtle">{format(BPDKoA, obj4)}</Text>;
     cResult[1] = tmp9;
     tmp7 = tmp9;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult1 = intl3.string(intl4.t["NX+WJN"]);
     cResult[2] = stringResult1;
     tmp10 = stringResult1;

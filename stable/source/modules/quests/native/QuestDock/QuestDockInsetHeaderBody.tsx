@@ -1,23 +1,23 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 16242
+// Function ID: 16243
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 15375, 21, 587, 5092, 558, 576, 12981, 12980, 15372, 1631, 15443, 5088, 5379, 1200, 15446, 2]
+// Dependencies: [19, 17, 16137, 21, 587, 5191, 558, 576, 13907, 13906, 16134, 1633, 16203, 5187, 5479, 1202, 16206, 2]
 
-// Module 15482 (QuestDockInsetHeaderBody)
+// Module 16242 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 12980 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12981 */;
-import QuestDockHooks from "QuestDockHooks" /* 15372 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15443 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15446 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 13906 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13907 */;
+import QuestDockHooks from "QuestDockHooks" /* 16134 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16203 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16206 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 15375 */;
+import QuestDockConstants from "QuestDockConstants" /* 16137 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -300,7 +300,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                           if ("primary" === str) {
                             const obj9 = { variant: "primary", grow: true, onPress: onCtaPress, loading: undefined !== ctaLoading && ctaLoading, icon: renderCtaIconResult, text: ctaText };
                             renderCtaIconResult = undefined;
-                            const Button = tmp(5379).Button;
+                            const Button = tmp(5479).Button;
                             const tmp58 = hasOwnProperty;
                             if (renderCtaIcon != null) {
                               renderCtaIconResult = renderCtaIcon();
@@ -308,7 +308,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                             tmp58Result = tmp58(Button, obj9);
                           } else {
                             const obj10 = { style: tmp6.questDockCta, onPress: onCtaPress, loading: undefined !== ctaLoading && ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-                            tmp58Result = hasOwnProperty(tmp(1200).ShinyButton, obj10);
+                            tmp58Result = hasOwnProperty(tmp(1202).ShinyButton, obj10);
                           }
                           cResult[37] = str;
                           cResult[38] = undefined !== ctaLoading && ctaLoading;
@@ -470,14 +470,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5379).Button;
+    const Button = tmp2(5479).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }
     tmp8Result4 = tmp8(Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-    tmp8Result4 = tmp8(tmp2(1200).ShinyButton, obj15);
+    tmp8Result4 = tmp8(tmp2(1202).ShinyButton, obj15);
   }
   items7[1] = tmp8Result4;
   items6[1] = metroRequire(View, obj13);

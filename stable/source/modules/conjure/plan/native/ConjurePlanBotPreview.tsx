@@ -1,25 +1,24 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 12272
+// Function ID: 12273
 // Name: ConjurePlanBotPreview
-// Dependencies: [19, 17, 21, 7742, 5092, 587, 17198, 558, 576, 9369, 17291, 5088, 1126, 3849, 17302, 5377, 2]
+// Dependencies: [19, 17, 21, 8013, 5191, 587, 12157, 558, 576, 9673, 12264, 12273, 2]
 
-// Module 17301 (ConjurePlanBotPreview)
+// Module 12272 (ConjurePlanBotPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import RowGeneratorDefault from "RowGenerator" /* 7742 */;
-import ChatItemDefault from "ChatItem" /* 9369 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17198 */;
-import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 17302 */;
+import RowGeneratorDefault from "RowGenerator" /* 8013 */;
+import ChatItemDefault from "ChatItem" /* 9673 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12157 */;
+import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 12273 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, dependencyMap, menu, obj1, obj4, tmp6;
 
 let hasOwnProperty;
 let metroRequire;
@@ -60,7 +59,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SampleM
     cResult[5] = tmp8;
     tmp4 = tmp8;
   }
-  const fn = function n(message) {
+  const fn = function o(message) {
     const bot = record.author.bot && null != botIcon && null != message.message;
     if (bot) {
       message.message.avatarURL = botIcon;
@@ -88,18 +87,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
   let appIconSrc;
   let botIcon;
   let exchanges;
-  let intl;
-  let intl2;
   let items;
-  let items1;
   let projectId;
-  let tmp = _require;
-  const tmp2 = appIconSrc;
   let obj = require("react");
-  const cResult = obj.c(16);
+  const cResult = obj.c(12);
   ({ projectId, exchanges } = arg0);
-  const tmp4 = closure_8();
-  _require = tmp4;
+  const tmp2 = closure_8();
+  _require = tmp2;
   let obj2 = require("useConjurePlanBotPreviewItems");
   const conjurePlanBotPreviewItems = obj2.useConjurePlanBotPreviewItems(projectId, exchanges);
   ({ items, botIcon } = conjurePlanBotPreviewItems);
@@ -107,102 +101,132 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
   if (0 === items.length) {
     return null;
   } else {
-    let first;
-    let tmp11;
-    const _Symbol2 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(botIcon(tmp2[13]).sA1lTv) };
-      const Text = tmp(tmp2[11]).Text;
-      intl = tmp(tmp2[12]).intl;
-      const tmp9 = closure_5(Text, obj3);
-      cResult[0] = tmp9;
-      first = tmp9;
-    } else {
-      first = cResult[0];
-    }
-    if (cResult[1] === appIconSrc) {
-      if (cResult[2] === botIcon) {
-        if (cResult[3] === items) {
-          if (cResult[4] === tmp4.menu) {
-            tmp11 = cResult[5];
+    let tmp4;
+    if (cResult[0] === appIconSrc) {
+      if (cResult[1] === botIcon) {
+        if (cResult[2] === items) {
+          if (cResult[3] === tmp2.menu) {
+            tmp4 = cResult[4];
           }
-          if (cResult[10] === tmp4.chat) {
-            let tmp14;
-            let tmp18;
-            let tmp22;
-            if (cResult[11] === tmp11) {
-              tmp14 = cResult[12];
+          if (cResult[9] === tmp2.chat) {
+            let tmp7;
+            if (cResult[10] === tmp4) {
+              tmp7 = cResult[11];
             }
-            const _Symbol = Symbol;
-            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(botIcon(tmp2[13]).NnmbJu) };
-              const Text2 = tmp(tmp2[11]).Text;
-              intl2 = tmp(tmp2[12]).intl;
-              const tmp21 = closure_5(Text2, obj4);
-              cResult[13] = tmp21;
-              tmp18 = tmp21;
-            } else {
-              tmp18 = cResult[13];
-            }
-            if (cResult[14] !== tmp14) {
-              let obj5 = { direction: "vertical", spacing: 4, children: items1 };
-              items1 = [first, tmp14, tmp18];
-              const tmp24 = closure_6(tmp(tmp2[15]).Stack, obj5);
-              cResult[14] = tmp14;
-              cResult[15] = tmp24;
-              tmp22 = tmp24;
-            } else {
-              tmp22 = cResult[15];
-            }
-            return tmp22;
+            return tmp7;
           }
-          const obj6 = { style: tmp10, children: tmp11 };
-          const tmp17 = closure_5(View, obj6);
-          cResult[10] = tmp4.chat;
-          cResult[11] = tmp11;
-          cResult[12] = tmp17;
-          tmp14 = tmp17;
+          class P {
+            constructor(arg0) {
+              menu = arg0.menu;
+              tmp2 = View;
+              tmp3 = jsx;
+              obj = { record: arg0.record, botIcon };
+              key = arg0.key;
+              tmp = jsxs;
+              items = [, ];
+              items[0] = jsx(SampleMessage, obj);
+              tmp3Result = null;
+              if (null != menu) {
+                obj1 = { style: null, children: null };
+                tmp5 = closure_0;
+                obj1.style = closure_0.menu;
+                tmp6 = closure_1;
+                tmp7 = closure_2;
+                obj4 = { target: null, commandName: null, appIconSrc: null };
+                ({ target: obj3.target, commandName: obj3.commandName } = menu);
+                tmp8 = appIconSrc;
+                obj4.appIconSrc = appIconSrc;
+                obj1.children = tmp3(closure_1(closure_2[11]), obj4);
+                tmp3Result = tmp3(tmp2, obj1);
+              }
+              items[1] = tmp3Result;
+              return tmp(tmp2, { children: items }, key);
+            }
+          }
+          const obj3 = { style: tmp11, children: tmp4 };
+          const tmp9 = closure_5(View, obj3);
+          cResult[9] = tmp2.chat;
+          cResult[10] = tmp4;
+          cResult[11] = tmp9;
+          tmp7 = tmp9;
         }
       }
     }
-    if (cResult[6] === appIconSrc) {
-      if (cResult[7] === botIcon) {
-        let tmp12;
-        if (cResult[8] === tmp4.menu) {
-          tmp12 = cResult[9];
+    if (cResult[5] === appIconSrc) {
+      if (cResult[6] === botIcon) {
+        let tmp5;
+        if (cResult[7] === tmp2.menu) {
+          tmp5 = cResult[8];
         }
-        const mapped = items.map(tmp12);
-        cResult[1] = appIconSrc;
-        cResult[2] = botIcon;
-        cResult[3] = items;
-        cResult[4] = tmp4.menu;
-        cResult[5] = mapped;
-        tmp11 = mapped;
+        const mapped = items.map(tmp5);
+        class P {
+          constructor(arg0) {
+            menu = arg0.menu;
+            tmp2 = View;
+            tmp3 = jsx;
+            obj = { record: arg0.record, botIcon };
+            key = arg0.key;
+            tmp = jsxs;
+            items = [, ];
+            items[0] = jsx(SampleMessage, obj);
+            tmp3Result = null;
+            if (null != menu) {
+              obj1 = { style: null, children: null };
+              tmp5 = closure_0;
+              obj1.style = closure_0.menu;
+              tmp6 = closure_1;
+              tmp7 = closure_2;
+              obj4 = { target: null, commandName: null, appIconSrc: null };
+              ({ target: obj3.target, commandName: obj3.commandName } = menu);
+              tmp8 = appIconSrc;
+              obj4.appIconSrc = appIconSrc;
+              obj1.children = tmp3(closure_1(closure_2[11]), obj4);
+              tmp3Result = tmp3(tmp2, obj1);
+            }
+            items[1] = tmp3Result;
+            return tmp(tmp2, { children: items }, key);
+          }
+        }
+        cResult[1] = botIcon;
+        cResult[2] = items;
+        cResult[3] = tmp2.menu;
+        cResult[4] = mapped;
+        tmp4 = mapped;
       }
     }
-    const fn = function f(menu) {
-      let obj5;
-      menu = menu.menu;
-      const children = [, ];
-      const key = menu.key;
-      const obj = { record: menu.record, botIcon };
-      children[0] = hasOwnProperty(closure_9, obj);
-      let tmp3Result = null;
-      const tmp = metroRequire;
-      if (null != menu) {
-        const obj2 = { style: menu.menu, children: hasOwnProperty(ConjurePlanCommandMenuPreviewDefault, obj5) };
-        obj5 = { target: null, commandName: null, appIconSrc };
-        ({ target: obj3.target, commandName: obj3.commandName } = menu);
-        tmp3Result = tmp3(tmp2, obj2);
+    class P {
+      constructor(arg0) {
+        menu = arg0.menu;
+        tmp2 = View;
+        tmp3 = jsx;
+        obj = { record: arg0.record, botIcon };
+        key = arg0.key;
+        tmp = jsxs;
+        items = [, ];
+        items[0] = jsx(SampleMessage, obj);
+        tmp3Result = null;
+        if (null != menu) {
+          obj1 = { style: null, children: null };
+          tmp5 = closure_0;
+          obj1.style = closure_0.menu;
+          tmp6 = closure_1;
+          tmp7 = closure_2;
+          obj4 = { target: null, commandName: null, appIconSrc: null };
+          ({ target: obj3.target, commandName: obj3.commandName } = menu);
+          tmp8 = appIconSrc;
+          obj4.appIconSrc = appIconSrc;
+          obj1.children = tmp3(closure_1(closure_2[11]), obj4);
+          tmp3Result = tmp3(tmp2, obj1);
+        }
+        items[1] = tmp3Result;
+        return tmp(tmp2, { children: items }, key);
       }
-      children[1] = tmp3Result;
-      return tmp(View, { children }, key);
-    };
-    cResult[6] = appIconSrc;
-    cResult[7] = botIcon;
-    cResult[8] = tmp4.menu;
-    cResult[9] = fn;
-    tmp12 = fn;
+    }
+    cResult[5] = appIconSrc;
+    cResult[6] = botIcon;
+    cResult[7] = tmp2.menu;
+    cResult[8] = P;
+    tmp5 = P;
   }
 }) : (function ConjurePlanBotPreview(arg0) {
   let appIconSrc;
@@ -210,30 +234,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
   let c1;
   let c2;
   let exchanges;
-  let intl;
-  let intl2;
   let items;
-  let items1;
   let projectId;
-  importDefault = undefined;
+  c1 = undefined;
   dependencyMap = undefined;
   ({ projectId, exchanges } = arg0);
   let tmp = closure_8();
   _require = tmp;
-  const tmp2 = _require;
-  const tmp3 = dependencyMap;
   let obj = require("useConjurePlanBotPreviewItems");
   const conjurePlanBotPreviewItems = obj.useConjurePlanBotPreviewItems(projectId, exchanges);
   ({ items, botIcon: c1, appIconSrc: c2 } = conjurePlanBotPreviewItems);
-  let tmp5 = null;
+  let tmp3 = null;
   if (0 !== items.length) {
-    let obj2 = { direction: "vertical", spacing: 4, children: items1 };
-    const Stack = tmp2(5377).Stack;
-    const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3849.sA1lTv) };
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
-    items1 = [closure_5(Text, obj3), , ];
-    const obj4 = {
+    let obj2 = {
       style: tmp.chat,
       children: items.map((menu) => {
           let obj5;
@@ -254,14 +267,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
           return tmp(View, { children }, key);
         })
     };
-    items1[1] = closure_5(View, obj4);
-    let obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3849.NnmbJu) };
-    const Text2 = tmp2(5088).Text;
-    intl2 = tmp2(1126).intl;
-    items1[2] = closure_5(Text2, obj5);
-    tmp5 = closure_6(Stack, obj2);
+    tmp3 = closure_5(View, obj2);
   }
-  return tmp5;
+  return tmp3;
 });
 const result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanBotPreview.tsx");
 

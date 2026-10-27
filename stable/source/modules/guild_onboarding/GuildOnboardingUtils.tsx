@@ -1,25 +1,25 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 7072
+// Function ID: 7073
 // Name: GuildOnboardingUtils
-// Dependencies: [2065, 5761, 4748, 2087, 4750, 6790, 1085, 4736, 558, 576, 504, 1403, 6796, 6791, 4755, 1388, 568, 2031, 6797, 2]
+// Dependencies: [2068, 6017, 4843, 2090, 4845, 7067, 1087, 4831, 558, 576, 504, 1405, 7073, 7068, 4850, 1388, 568, 2034, 7074, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding
 
-// Module 6795 (GuildOnboardingUtils)
+// Module 7072 (GuildOnboardingUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 6791 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 6796 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import Constants from "Constants" /* 1085 */;
+import FlagUtilsAll from "FlagUtils" /* 1405 */;
+import StringUtils from "StringUtils" /* 2034 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7067 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7068 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7073 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let _require, application_id, authStore, navigation, provider_id, set;
 
 let closure_12;
 let unpackModuleId;
-const f94574 = (isCategory) => {
+const f95880 = (isCategory) => {
   const isCategoryResult = isCategory.isCategory();
   const tmp2 = !isCategoryResult && !isCategory.isThread() && !isRoleRequiredDefault(isCategory);
   return tmp2;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f94574);
+  const found = mapped.filter(f95880);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -278,7 +278,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f94574);
+  const found = mapped.filter(f95880);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -558,7 +558,7 @@ export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfM
             const tmp2 = importAll;
             const tmp4 = GuildMemberFlags;
             if (hasFlagResult) {
-              const tmp2Result = tmp2(1403);
+              const tmp2Result = tmp2(1405);
               hasFlagResult = !tmp2Result.hasFlag(num, tmp4.COMPLETED_ONBOARDING);
             }
             return hasFlagResult;
@@ -600,7 +600,7 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
     });
   });
   const item1 = defaultChannelIds.forEach((item) => set.add(item));
-  const found = mapped.filter(f94574);
+  const found = mapped.filter(f95880);
   const items = [
     found.filter((id) => {
       let hasItem = set.has(id.id);

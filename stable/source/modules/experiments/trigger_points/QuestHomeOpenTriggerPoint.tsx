@@ -1,11 +1,11 @@
-// Module ID: 15368
-// Function ID: 15369
+// Module ID: 16130
+// Function ID: 16131
 // Name: QuestHomeOpenTriggerPoint
-// Dependencies: [5017, 10166, 2]
+// Dependencies: [5113, 10468, 2]
 
-// Module 15368 (QuestHomeOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5017 */;
-import Helpers from "Helpers" /* 10166 */;
+// Module 16130 (QuestHomeOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5113 */;
+import Helpers from "Helpers" /* 10468 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.QUEST_HOME_OPEN, { location: "open quest home" });

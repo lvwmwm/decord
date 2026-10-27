@@ -1,15 +1,15 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 16482
+// Function ID: 16483
 // Name: LanguageSetting
-// Dependencies: [2129, 1085, 558, 576, 504, 1126, 10664, 15723, 15725, 2]
+// Dependencies: [2132, 1087, 558, 576, 504, 1128, 11084, 9415, 16483, 2]
 
-// Module 15722 (LanguageSetting)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import LanguageIcon from "LanguageIcon" /* 15723 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
+// Module 16482 (LanguageSetting)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import LanguageIcon from "LanguageIcon" /* 9415 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,12 +39,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguag
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const tmpResult2 = stateFromStores(1126);
+    const tmpResult2 = stateFromStores(1128);
     const availableLocales = tmpResult2.getAvailableLocales();
     const found = availableLocales.find((value) => value.value === stateFromStores);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       stringResult = intl.string(found.localizedName);
     }
     cResult[2] = stateFromStores;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguag
   const found = availableLocales.find((value) => value.value === closure_0);
   let stringResult = null;
   if (null != found) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     stringResult = intl.string(found.localizedName);
   }
   return stringResult;

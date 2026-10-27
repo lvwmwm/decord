@@ -1,29 +1,29 @@
-// Module ID: 10264
-// Function ID: 10265
+// Module ID: 10565
+// Function ID: 10566
 // Name: UsernameWithEffects
-// Dependencies: [109, 19, 17, 1408, 21, 1409, 5092, 587, 1383, 558, 576, 10265, 5628, 5629, 8849, 4818, 10266, 1407, 5088, 5098, 4821, 10269, 1388, 2]
+// Dependencies: [109, 19, 17, 1410, 21, 1411, 5191, 587, 1385, 558, 576, 10566, 5884, 5885, 9126, 4913, 10567, 1409, 5187, 5197, 4916, 10570, 1388, 2]
 
-// Module 10264 (UsernameWithEffects)
+// Module 10565 (UsernameWithEffects)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
-import useToken2 from "useToken" /* 4818 */;
-import getNodeText from "getNodeText" /* 4821 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5098 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5628 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5629 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8849 */;
-import types from "types" /* 10265 */;
-import useDisplayNameStylesAccessibleColors from "useDisplayNameStylesAccessibleColors" /* 10266 */;
-import PerLetterEffectDefault from "PerLetterEffect" /* 10269 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
+import useToken2 from "useToken" /* 4913 */;
+import getNodeText from "getNodeText" /* 4916 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5197 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5884 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5885 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9126 */;
+import types from "types" /* 10566 */;
+import useDisplayNameStylesAccessibleColors from "useDisplayNameStylesAccessibleColors" /* 10567 */;
+import PerLetterEffectDefault from "PerLetterEffect" /* 10570 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -130,7 +130,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ userId, guildId, userName, effectDisplayType, pendingDisplayNameStyles, defaultColor, containerStyle, ignoreDisabledStylesSetting } = arg0);
   const tmp5 = _objectWithoutProperties(arg0, closure_3);
   if (undefined === effectDisplayType) {
-    effectDisplayType = tmp2(10265).EffectDisplayType.STATIC;
+    effectDisplayType = tmp2(10566).EffectDisplayType.STATIC;
   }
   if (cResult[0] === guildId) {
     if (cResult[1] === (undefined !== ignoreDisabledStylesSetting && ignoreDisabledStylesSetting)) {
@@ -196,14 +196,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   effectId = tmp9.effectId;
                 }
                 if (effectId == null) {
-                  effectId = tmp2(1409).DisplayNameEffect.SOLID;
+                  effectId = tmp2(1411).DisplayNameEffect.SOLID;
                 }
                 let colorVariants = null;
                 if (null != first) {
                   const tmp2Result14 = DisplayNameStylesUtils;
                   colorVariants = tmp2Result14.generateColorVariants(first);
                 }
-                const TextStyleSheet = tmp2(5088).TextStyleSheet;
+                const TextStyleSheet = tmp2(5187).TextStyleSheet;
                 const tmp2Result15 = useTypographyVariantRemap;
                 const tmp31 = TextStyleSheet[tmp2Result15.useTypographyVariantRemap(tmp2Result15, tmp5.variant, false)];
                 const flattenResult = React4.flatten(tmp5.style);
@@ -403,7 +403,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                 }
                                                 const obj6 = { style: tmp62, children: items2 };
                                                 const obj7 = { textStrokeWidth: tmp40, textStrokeColor: tmp71, style: tmp63, children: userName };
-                                                const Text = tmp2(5088).Text;
+                                                const Text = tmp2(5187).Text;
                                                 const merged1 = Object.assign(tmp5);
                                                 tmp71 = undefined;
                                                 const tmp65 = authStore2;
@@ -413,7 +413,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                 }
                                                 items2 = [unpackModuleId(Text, obj7), ];
                                                 const obj8 = { textStrokeWidth: tmp40, textStrokeColor: tmp75, style: tmp64, children: userName };
-                                                const Text2 = tmp2(5088).Text;
+                                                const Text2 = tmp2(5187).Text;
                                                 const merged2 = Object.assign(tmp5);
                                                 tmp75 = undefined;
                                                 if (null != tmp57Result) {
@@ -471,7 +471,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       tmp53 = items7;
                                     } else {
                                       let tmp47;
-                                      const SOLID = tmp2(1409).DisplayNameEffect.SOLID;
+                                      const SOLID = tmp2(1411).DisplayNameEffect.SOLID;
                                       if (cResult[78] !== first) {
                                         const obj9 = { color: first };
                                         cResult[78] = first;
@@ -513,7 +513,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                     }
                                   }
                                   const obj10 = { gradientColors: tmp52, gradientLength: tmp49, gradientMode: "clamp", style: tmp48, gradientAngle: num35, textStrokeWidth: tmp51, textStrokeColor: tmp50, children: userName };
-                                  const Text3 = tmp2(5088).Text;
+                                  const Text3 = tmp2(5187).Text;
                                   const merged3 = Object.assign(tmp5);
                                   const tmp94 = unpackModuleId(Text3, obj10);
                                   cResult[83] = num35;
@@ -630,7 +630,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                           }
                         }
                         const obj11 = { style: tmp104, color: defaultColor, children: userName };
-                        const Text4 = tmp2(5088).Text;
+                        const Text4 = tmp2(5187).Text;
                         const merged4 = Object.assign(tmp5);
                         cResult[28] = defaultColor;
                         cResult[29] = tmp104;
@@ -659,7 +659,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     }
                   }
                   const obj12 = { color: defaultColor, children: userName };
-                  const Text5 = tmp2(5088).Text;
+                  const Text5 = tmp2(5187).Text;
                   const merged5 = Object.assign(tmp5);
                   cResult[21] = defaultColor;
                   cResult[22] = tmp5;
@@ -749,7 +749,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(10265).EffectDisplayType.STATIC;
+    STATIC = userName(10566).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -757,10 +757,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const merged = Object.assign(userName, Object.assign({ userId: 0, guildId: 0, userName: 0, effectDisplayType: 0, pendingDisplayNameStyles: 0, defaultColor: 0, containerStyle: 0, ignoreDisabledStylesSetting: 0 }));
   let num2;
-  const tmp7 = num2(5628)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
-  let obj = userName(5629);
+  const tmp7 = num2(5884)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
+  let obj = userName(5885);
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  const obj2 = userName(8849);
+  const obj2 = userName(9126);
   const displayNameStylesFont = obj2.useDisplayNameStylesFont({ displayNameStyles: tmp7, ignoreDisabledStylesSetting });
   let tmp11;
   if (null != displayNameStylesFont) {
@@ -780,11 +780,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     tmp12 = tmp13;
   }
-  const tmp8Result = userName(4818);
+  const tmp8Result = userName(4913);
   const token = tmp8Result.useToken(tmp5(587).colors.BACKGROUND_BASE_LOW);
-  const tmp8Result7 = userName(4818);
+  const tmp8Result7 = userName(4913);
   const token1 = tmp8Result7.useToken(tmp5(587).colors.WHITE);
-  const tmp8Result8 = userName(10266);
+  const tmp8Result8 = userName(10567);
   const displayNameStylesAccessibleColors = tmp8Result8.useDisplayNameStylesAccessibleColors({ displayNameStyles: tmp7, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
@@ -795,15 +795,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     effectId = tmp7.effectId;
   }
   if (effectId == null) {
-    effectId = tmp8(1409).DisplayNameEffect.SOLID;
+    effectId = tmp8(1411).DisplayNameEffect.SOLID;
   }
   let colorVariants = null;
   if (null != first) {
-    const tmp8Result9 = userName(1407);
+    const tmp8Result9 = userName(1409);
     colorVariants = tmp8Result9.generateColorVariants(first);
   }
-  const TextStyleSheet = tmp8(5088).TextStyleSheet;
-  const tmp8Result10 = userName(5098);
+  const TextStyleSheet = tmp8(5187).TextStyleSheet;
+  const tmp8Result10 = userName(5197);
   const tmp19 = TextStyleSheet[tmp8Result10.useTypographyVariantRemap(tmp8Result10, merged.variant, false)];
   const flattenResult = closure_9.flatten(merged.style);
   num2 = undefined;
@@ -861,17 +861,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp27Result = tmp27(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp7) {
-      if (STATIC !== userName(10265).EffectDisplayType.PLAIN) {
+      if (STATIC !== userName(10566).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           let layoutImpact;
           const items1 = [merged.style, tmp12];
-          const tmp8Result11 = userName(1407);
+          const tmp8Result11 = userName(1409);
           if (tmp8Result11.doesEffectImpactLayout(effectId)) {
             layoutImpact = tmp27Result.layoutImpact;
           }
-          if (effectId === userName(1409).DisplayNameEffect.GUMMY) {
-            const tmp5Result = num2(10269);
-            const tmp8Result12 = userName(4821);
+          if (effectId === userName(1411).DisplayNameEffect.GUMMY) {
+            const tmp5Result = num2(10570);
+            const tmp8Result12 = userName(4916);
             let str3 = tmp8Result12.getNodeText(userName);
             const tmp65 = closure_11;
             if (str3 == null) {
@@ -887,11 +887,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             let tmp32;
             let items10;
             let num5;
-            if (userName(1409).DisplayNameEffect.GRADIENT !== effectId) {
+            if (userName(1411).DisplayNameEffect.GRADIENT !== effectId) {
               let tmp30;
               let tmp31;
-              if (userName(1409).DisplayNameEffect.PRISM !== effectId) {
-                if (userName(1409).DisplayNameEffect.NEON === effectId) {
+              if (userName(1411).DisplayNameEffect.PRISM !== effectId) {
+                if (userName(1411).DisplayNameEffect.NEON === effectId) {
                   let neonStroke;
                   const tmp52 = closure_7;
                   if (colorVariants != null) {
@@ -907,7 +907,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   bound = memo;
                   items10 = items3;
                   tmp31 = sum;
-                } else if (userName(1409).DisplayNameEffect.POP === effectId) {
+                } else if (userName(1411).DisplayNameEffect.POP === effectId) {
                   let dark2;
                   if (colorVariants != null) {
                     dark2 = colorVariants.dark2;
@@ -924,7 +924,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     const obj7 = { style: items4, children: items6 };
                     items4 = [tmp27Result.popContainer, layoutImpact, containerStyle];
                     const obj8 = { textStrokeWidth: sum, textStrokeColor: tmp47, style: items5, children: userName };
-                    const Text = tmp8(5088).Text;
+                    const Text = tmp8(5187).Text;
                     const merged2 = Object.assign(merged);
                     tmp47 = undefined;
                     const tmp41 = closure_12;
@@ -935,7 +935,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     items5 = [items1, tmp27Result.popBackLayer];
                     items6 = [closure_11(Text, obj8), ];
                     const obj9 = { textStrokeWidth: sum, textStrokeColor: tmp51, style: items7, children: userName };
-                    const Text2 = tmp8(5088).Text;
+                    const Text2 = tmp8(5187).Text;
                     const merged3 = Object.assign(merged);
                     tmp51 = undefined;
                     if (null != tmp36Result) {
@@ -945,7 +945,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     items6[1] = closure_11(Text2, obj9);
                     return tmp41(tmp42, obj7);
                   }
-                } else if (userName(1409).DisplayNameEffect.TOON === effectId) {
+                } else if (userName(1411).DisplayNameEffect.TOON === effectId) {
                   const items8 = [items1, tmp27Result.toon, layoutImpact];
                   const items9 = [closure_7(token1), closure_7(colorVariants.light2), closure_7(colorVariants.light1), closure_7(colorVariants.main)];
                   const tmp34 = closure_7(colorVariants.toonStroke);
@@ -960,7 +960,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp31 = sum;
                   tmp32 = items9;
                 } else {
-                  const SOLID = tmp8(1409).DisplayNameEffect.SOLID;
+                  const SOLID = tmp8(1411).DisplayNameEffect.SOLID;
                   items10 = [items1, ];
                   const obj10 = { color: first };
                   items10[1] = obj10;
@@ -968,21 +968,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 }
               }
               const obj11 = { gradientColors: tmp32, gradientLength: bound, gradientMode: "clamp", style: items10, gradientAngle: num5, textStrokeWidth: tmp31, textStrokeColor: tmp30, children: userName };
-              const Text3 = tmp8(5088).Text;
+              const Text3 = tmp8(5187).Text;
               const merged4 = Object.assign(merged);
               return closure_11(Text3, obj11);
             }
             const mapped = displayNameStylesAccessibleColors.map((item) => closure_1_7(item));
             const found = mapped.filter(tmp8(1388).isNotNullish);
             let num6 = 45;
-            if (effectId === userName(1409).DisplayNameEffect.PRISM) {
+            if (effectId === userName(1411).DisplayNameEffect.PRISM) {
               num6 = 0;
             }
             bound = memo;
             items10 = items1;
             num5 = num6;
             tmp32 = found;
-            if (effectId === userName(1409).DisplayNameEffect.PRISM) {
+            if (effectId === userName(1411).DisplayNameEffect.PRISM) {
               let tmp56 = found;
               if (found.length > 0) {
                 const items11 = [];
@@ -999,14 +999,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       }
       const obj12 = { style: items12, color: defaultColor, children: userName };
-      const Text4 = tmp8(5088).Text;
+      const Text4 = tmp8(5187).Text;
       const merged5 = Object.assign(merged);
       items12 = [merged.style, tmp11];
       return closure_11(Text4, obj12);
     }
   }
   const obj13 = { color: defaultColor, children: userName };
-  const Text5 = tmp8(5088).Text;
+  const Text5 = tmp8(5187).Text;
   const merged6 = Object.assign(merged);
   return closure_11(Text5, obj13);
 }));

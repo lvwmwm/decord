@@ -1,10 +1,10 @@
 // Module ID: 13677
 // Function ID: 13678
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13677 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180.5, height: 88, scales: [2, 3], hash: "170926482058c89c2a2a9d537ff237a4", name: "img_what_you_lose_emojis", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 460, scales: [1], hash: "c8d53ba30e41e7296c825f2501df590c", name: "premium_gift_plan_selection_header", type: "png" });

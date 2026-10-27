@@ -1,18 +1,18 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5152
+// Function ID: 5153
 // Name: BrowserManager
-// Dependencies: [5, 17, 1382, 5054, 5055, 570, 558, 576, 1105, 4806, 1388, 2]
+// Dependencies: [5, 17, 1384, 5153, 5154, 570, 558, 576, 1107, 4901, 1388, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen
 
-// Module 5053 (BrowserManager)
+// Module 5152 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import react_native2 from "react-native" /* 5054 */;
-import react_nativeDefault2 from "react-native" /* 5055 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import react_native2 from "react-native" /* 5153 */;
+import react_nativeDefault2 from "react-native" /* 5154 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

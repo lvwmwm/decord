@@ -1,13 +1,13 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 17463
+// Function ID: 17464
 // Name: isHomeDrawerChannelMuted
-// Dependencies: [4752, 2069, 5966, 558, 576, 504, 2]
+// Dependencies: [4847, 2072, 6222, 558, 576, 504, 2]
 
-// Module 16780 (isHomeDrawerChannelMuted)
+// Module 17463 (isHomeDrawerChannelMuted)
 import react from "react" /* 576 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

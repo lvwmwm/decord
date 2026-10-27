@@ -1,17 +1,17 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 13587
+// Function ID: 13588
 // Name: SavedMessagesActions
-// Dependencies: [5, 9677, 1085, 1295, 9678, 584, 2]
+// Dependencies: [5, 9980, 1087, 1297, 9981, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 12656 (SavedMessagesActions)
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 13587 (SavedMessagesActions)
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9677 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
 import size from "module_2" /* 2 */;
 
-let bookmarksFetchState, c3, c4, c8;
+let bookmarksFetchState, c3, c4, c8, results;
 
 let obj = function _upsertSavedMessage() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -283,7 +283,7 @@ obj = function _fetchBookmarks() {
       c5 = 0;
       const body = nextBefore.body;
       const obj16 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more };
-      const results = body.results;
+      results = body.results;
       const dispatch = closure_132_1(closure_132_2[5]).dispatch;
       const tmp53 = closure_132_1(closure_132_2[5]);
       const atResult = results.at(-1);
@@ -304,7 +304,7 @@ obj = function _fetchBookmarks() {
       obj6 = {};
     }
     flag = obj6.loadMore ?? false;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

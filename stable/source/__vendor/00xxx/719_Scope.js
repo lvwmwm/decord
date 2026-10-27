@@ -94,7 +94,7 @@ const entry = {
     const obj11 = {};
     const merged5 = Object.assign(self._propagationContext);
     obj4._propagationContext = obj11;
-    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId } = self);
+    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId, _conversationId: tmp2._conversationId } = self);
     const _setSpanForScope = _getSpanForScope._setSpanForScope;
     _getSpanForScope;
     const tmp4Result2 = _getSpanForScope;
@@ -147,7 +147,7 @@ let items = [
     key: "setUser",
     value: function setUser(user) {
       const self = this;
-      const tmp = user || { email: "Array", id: "T", ip_address: "y", username: "IconComponent" };
+      const tmp = user || { email: "ix", id: "fill", ip_address: "shapes", username: "Array" };
       this._user = tmp;
       if (this._session) {
         const obj2 = { user };
@@ -162,6 +162,15 @@ let items = [
     key: "getUser",
     value: function getUser() {
       return this._user;
+    }
+  },
+  {
+    key: "setConversationId",
+    value: function setConversationId(arg0) {
+      const tmp = arg0 || undefined;
+      this._conversationId = tmp;
+      const result = this._notifyScopeListeners();
+      return this;
     }
   },
   {
@@ -295,9 +304,11 @@ let items = [
     value: function update(fn) {
       let attributes;
       let contexts;
+      let conversationId;
       let extra;
       let fingerprint;
       let level;
+      let propagationContext;
       let tags;
       let user;
       const self = this;
@@ -323,7 +334,7 @@ let items = [
         if (undefined === fingerprint) {
           fingerprint = [];
         }
-        const propagationContext = scopeData.propagationContext;
+        ({ propagationContext, conversationId } = scopeData);
         const obj3 = {};
         const merged = Object.assign(self._tags);
         const merged1 = Object.assign(tags);
@@ -357,6 +368,9 @@ let items = [
         if (propagationContext) {
           self._propagationContext = propagationContext;
         }
+        if (conversationId) {
+          self._conversationId = conversationId;
+        }
         return self;
       } else {
         return self;
@@ -368,7 +382,7 @@ let items = [
     value: function clear() {
       let obj4;
       let obj5;
-      const obj = { _breadcrumbs: [], _tags: {}, _attributes: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _session: undefined, _attachments: [] };
+      const obj = { _breadcrumbs: [], _tags: {}, _attributes: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _session: undefined, _conversationId: undefined, _attachments: [] };
       const obj2 = _getSpanForScope;
       obj2._setSpanForScope(obj, undefined);
       const setPropagationContext = obj.setPropagationContext;
@@ -448,7 +462,7 @@ let items = [
     value: function getScopeData() {
       let obj2;
       const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self) };
+      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self), conversationId: self._conversationId };
       obj2 = _getSpanForScope;
       return obj;
     }

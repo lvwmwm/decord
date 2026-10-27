@@ -1,10 +1,10 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11034
+// Function ID: 11035
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 11427 (conjurePreviewCall)
+// Module 11034 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["conjure-", "vibegrations-"];
@@ -60,7 +60,7 @@ export const controlAnswerTimeoutMs = function controlAnswerTimeoutMs(timeoutMs)
 export const PREVIEW_FRAME_WAIT_MS = 6000;
 export const CONTROL_RETRY_MS = 400;
 export const CONTROL_END_TIMEOUT_MS = 2000;
-export const CAPTURE_NOW_ACCEPT_TIMEOUT_MS = 8000;
+export const CAPTURE_NOW_TIMEOUT_MS = 15000;
 export const NATIVE_CAPTURE_WAIT_MS = 3000;
 export const CAPTURE_NOW_RETRY_MS = 400;
 export const INSPECT_TIMEOUT_MS = 1500;

@@ -1,16 +1,16 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 11640
+// Function ID: 11641
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5092, 558, 576, 17084, 1126, 3849, 11436, 11415, 11413, 4809, 5088, 5377, 5305, 5301, 2]
+// Dependencies: [5, 32, 19, 21, 5191, 558, 576, 11641, 1128, 3883, 11642, 10999, 11057, 4904, 5187, 5477, 5405, 5401, 2]
 // Exports: default
 
-// Module 17083 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 5301 */;
+// Module 11640 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 5401 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

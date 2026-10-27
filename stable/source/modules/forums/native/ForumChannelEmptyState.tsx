@@ -1,18 +1,18 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 13476
+// Function ID: 13477
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 5092, 558, 576, 4969, 1631, 12541, 12542, 6157, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 5065, 1633, 13477, 13478, 5128, 1128, 5187, 2]
 
-// Module 12540 (ForumChannelEmptyState)
+// Module 13476 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import shared from "shared" /* 4969 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import shared from "shared" /* 5065 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,9 +56,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(12541);
+      tmp5Result = tmp5(13477);
     } else {
-      tmp5Result = tmp5(12542);
+      tmp5Result = tmp5(13478);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -117,9 +117,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               tmp21 = tmp23;
             }
           }
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const formatToPlainString = intl2.formatToPlainString;
-          const t = tmp(1126).t;
+          const t = tmp(1128).t;
           if (tagFilter.size > 0) {
             const obj5 = { numTags: tagFilter.size };
             formatToPlainStringResult = formatToPlainString(t.AAeye1, obj5);
@@ -140,12 +140,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         cResult[13] = tmp18;
         tmp16 = tmp18;
       }
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       if (tagFilter.size > 0) {
         const obj8 = { numTags: tagFilter.size };
-        formatToPlainStringResult1 = intl.formatToPlainString(tmp(1126).t.lvPci0, obj8);
+        formatToPlainStringResult1 = intl.formatToPlainString(tmp(1128).t.lvPci0, obj8);
       } else {
-        formatToPlainStringResult1 = intl.string(tmp(1126).t.PwTMG0);
+        formatToPlainStringResult1 = intl.string(tmp(1128).t.PwTMG0);
       }
       cResult[8] = tagFilter.size > 0;
       cResult[9] = tagFilter.size;
@@ -187,28 +187,28 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(12541);
+    tmp4Result = tmp4(13477);
   } else {
-    tmp4Result = tmp4(12542);
+    tmp4Result = tmp4(13478);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(5088).Text;
-  const intl = tmp2(1126).intl;
+  const Text = tmp2(5187).Text;
+  const intl = tmp2(1128).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t.lvPci0, obj6);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1128).t.lvPci0, obj6);
   } else {
-    formatToPlainStringResult = intl.string(tmp2(1126).t.PwTMG0);
+    formatToPlainStringResult = intl.string(tmp2(1128).t.PwTMG0);
   }
   items1[1] = React3(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(5088).Text;
-  const intl2 = tmp2(1126).intl;
+  const Text2 = tmp2(5187).Text;
+  const intl2 = tmp2(1128).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = tmp2(1126).t;
+  const t = tmp2(1128).t;
   if (tagFilter.size > 0) {
     const obj8 = { numTags: tagFilter.size };
     formatToPlainStringResult1 = formatToPlainString(t.AAeye1, obj8);

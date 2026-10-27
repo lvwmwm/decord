@@ -1,12 +1,12 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 11045
+// Function ID: 11046
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: [2064, 10813, 2]
+// Dependencies: [2067, 11046, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10812 (leaveCurrentEmbeddedActivity)
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10813 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+// Module 11045 (leaveCurrentEmbeddedActivity)
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11046 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");

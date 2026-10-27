@@ -1,24 +1,24 @@
-// Module ID: 15601
-// Function ID: 15602
+// Module ID: 16361
+// Function ID: 16362
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5081, 1085, 21, 4850, 5391, 5378, 5382, 5092, 587, 558, 576, 6852, 6879, 9389, 9390, 1126, 1200, 5379, 504, 9444, 2]
+// Dependencies: [19, 17, 5181, 1087, 21, 4945, 5491, 5478, 5482, 5191, 587, 558, 576, 7130, 7155, 9693, 9694, 1128, 1202, 5479, 504, 9748, 2]
 
-// Module 15601 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 16361 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5378 */;
-import springPresets from "springPresets" /* 5382 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9444 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9748 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const cResult = obj.c(14);
   theme = theme.theme;
   const tmp4 = closure_17();
-  let obj2 = theme(4850);
+  let obj2 = theme(4945);
   const fn = function n() {
     let obj2;
     let num = 1;
@@ -102,13 +102,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     obj2 = spring;
     return obj;
   };
-  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5378).withSpring, springStandard: theme(5382).springStandard };
+  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5478).withSpring, springStandard: theme(5482).springStandard };
   fn.__workletHash = 16911565077998;
   fn.__initData = __initData2;
-  ({ theme, ThemeTypes, StyleSheet, withSpring: theme(5378).withSpring, springStandard: theme(5382).springStandard });
+  ({ theme, ThemeTypes, StyleSheet, withSpring: theme(5478).withSpring, springStandard: theme(5482).springStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const tmp6 = analyticsLocations(6852);
-  analyticsLocations = tmp6(analyticsLocations(6879).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const tmp6 = analyticsLocations(7130);
+  analyticsLocations = tmp6(analyticsLocations(7155).CLIENT_THEMES_EDITOR).analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
     const fn2 = function l() {
       let obj2;
@@ -135,8 +135,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.pj0XBN);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.pj0XBN);
     cResult[4] = stringResult;
     tmp13 = stringResult;
   } else {
@@ -144,7 +144,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   }
   if (cResult[5] !== tmp4.nitroWheelIcon) {
     const obj5 = { style: tmp4.nitroWheelIcon };
-    const tmp17 = closure_10(tmp(1200).NitroWheel, obj5);
+    const tmp17 = closure_10(tmp(1202).NitroWheel, obj5);
     cResult[5] = tmp4.nitroWheelIcon;
     cResult[6] = tmp17;
     tmp15 = tmp17;
@@ -174,7 +174,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     cResult[13] = tmp23;
     tmp20 = tmp23;
   }
-  const tmp19 = closure_10(tmp(5379).Button, { text: tmp13, icon: tmp15, variant: "active", onPress: tmp7, size: "md" });
+  const tmp19 = closure_10(tmp(5479).Button, { text: tmp13, icon: tmp15, variant: "active", onPress: tmp7, size: "md" });
   cResult[7] = tmp7;
   cResult[8] = tmp15;
   cResult[9] = tmp19;
@@ -186,7 +186,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   theme = theme.theme;
   let analyticsLocations;
   let tmp = closure_17();
-  let obj = theme(4850);
+  let obj = theme(4945);
   const fn = function l() {
     let obj2;
     let num = 1;
@@ -198,13 +198,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     obj2 = spring;
     return obj;
   };
-  let obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5378).withSpring, springStandard: theme(5382).springStandard };
+  let obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5478).withSpring, springStandard: theme(5482).springStandard };
   fn.__closure = obj2;
   fn.__workletHash = 14565202241551;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const tmp3 = analyticsLocations(6852);
-  analyticsLocations = tmp3(analyticsLocations(6879).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const tmp3 = analyticsLocations(7130);
+  analyticsLocations = tmp3(analyticsLocations(7155).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   const obj3 = { style: tmp.nitroUpsell, children: items1 };
   const obj4 = { style: animatedStyle, importantForAccessibility: "no-hide-descendants", colors };
@@ -216,9 +216,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     tmp(obj);
   }, items);
   items1 = [closure_10(LinearGradient, obj4), ];
-  const obj5 = { text: intl.string(theme(1126).t.pj0XBN), icon: closure_10(theme(1200).NitroWheel, obj6), variant: "active", onPress: callback, size: "md" };
-  const Button = theme(5379).Button;
-  intl = theme(1126).intl;
+  const obj5 = { text: intl.string(theme(1128).t.pj0XBN), icon: closure_10(theme(1202).NitroWheel, obj6), variant: "active", onPress: callback, size: "md" };
+  const Button = theme(5479).Button;
+  intl = theme(1128).intl;
   obj6 = { style: tmp.nitroWheelIcon };
   items1[1] = closure_10(Button, obj5);
   return closure_11(View, obj3);

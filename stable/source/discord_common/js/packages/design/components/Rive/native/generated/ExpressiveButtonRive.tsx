@@ -1,12 +1,12 @@
-// Module ID: 4916
-// Function ID: 4917
+// Module ID: 5011
+// Function ID: 5012
 // Name: ExpressiveButtonRive
-// Dependencies: [109, 19, 21, 558, 4844, 576, 4917, 4897, 2]
+// Dependencies: [109, 19, 21, 558, 4939, 576, 5012, 4992, 2]
 
-// Module 4916 (ExpressiveButtonRive)
+// Module 5011 (ExpressiveButtonRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4844 */;
+import BaseRive2 from "BaseRive" /* 4939 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4897);
+const RiveErrorBoundary2 = tmp(4992);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -603,7 +603,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expres
       }
       const BaseRive = tmp(tmp2[4]).BaseRive;
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_4917")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_5012")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

@@ -1,29 +1,29 @@
-// Module ID: 11456
-// Function ID: 11457
+// Module ID: 12597
+// Function ID: 12598
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 7089, 7724, 6814, 7235, 1631, 5088, 8575, 1200, 5379, 5107, 11457, 7234, 4808, 6688, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 587, 558, 576, 1128, 7365, 7995, 7092, 7506, 1633, 5187, 8855, 1202, 5479, 5206, 12598, 7505, 4903, 6965, 2]
 
-// Module 11456 (AutomodSubmitFeedbackModal)
+// Module 12597 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AutomodAlert from "AutomodAlert" /* 7234 */;
-import AutomodFeedback from "AutomodFeedback" /* 7235 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7724 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11457 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
+import AutomodAlert from "AutomodAlert" /* 7505 */;
+import AutomodFeedback from "AutomodFeedback" /* 7506 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7995 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 12598 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Navbar
   const tmp4 = closure_11();
   ({ header, closeButtonContainer } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -78,7 +78,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Navbar
   }
   if (cResult[1] !== onClose) {
     const obj2 = { accessibilityLabel: first, onPress: onClose, source: AssetRegistryDefault };
-    const HeaderActionButton = tmp(7089).HeaderActionButton;
+    const HeaderActionButton = tmp(7365).HeaderActionButton;
     const tmp10 = metroImportDefault(HeaderActionButton, obj2);
     cResult[1] = onClose;
     cResult[2] = tmp10;
@@ -174,7 +174,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Submit
       const _Symbol = Symbol;
       const headerTitle = tmp4.headerTitle;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl4.t["7bdzNo"]);
         cResult[8] = stringResult;
         tmp14 = stringResult;
@@ -193,7 +193,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Submit
       const _Symbol2 = Symbol;
       const headerSubtitle = tmp4.headerSubtitle;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult1 = intl2.string(intl4.t.Lbpk6m);
         cResult[11] = stringResult1;
         tmp19 = stringResult1;
@@ -253,7 +253,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Submit
                 }
                 const _Symbol3 = Symbol;
                 if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl3 = tmp(1126).intl;
+                  const intl3 = tmp(1128).intl;
                   const stringResult2 = intl3.string(intl4.t.Z6DZZ6);
                   cResult[25] = stringResult2;
                   tmp33 = stringResult2;

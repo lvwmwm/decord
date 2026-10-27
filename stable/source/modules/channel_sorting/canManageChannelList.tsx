@@ -1,13 +1,13 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 13638
+// Function ID: 13639
 // Name: canManageChannelList
-// Dependencies: [2065, 4750, 1085, 2]
+// Dependencies: [2068, 4845, 1087, 2]
 // Exports: canViewChannelList, default, getContainingCategory
 
-// Module 12705 (canManageChannelList)
-import Constants from "Constants" /* 1085 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+// Module 13638 (canManageChannelList)
+import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

@@ -1,10 +1,10 @@
-// Module ID: 13237
-// Function ID: 13238
+// Module ID: 10998
+// Function ID: 10999
 // Name: conjureProjectSockets
 // Dependencies: [2]
 // Exports: deleteConjureSocket, getConjureSocket, sendOnConjureSocket, setConjureSocket
 
-// Module 13237 (conjureProjectSockets)
+// Module 10998 (conjureProjectSockets)
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -19,8 +19,8 @@ export const setConjureSocket = function setConjureSocket(projectId, ws) {
 export const deleteConjureSocket = function deleteConjureSocket(projectId) {
   map.delete(projectId);
 };
-export const sendOnConjureSocket = function sendOnConjureSocket(arg0, arg1, fn) {
-  const value = map.get(arg0);
+export const sendOnConjureSocket = function sendOnConjureSocket(projectId, arg1, fn) {
+  const value = map.get(projectId);
   try {
     if (null == value) {
       const _Error = Error;

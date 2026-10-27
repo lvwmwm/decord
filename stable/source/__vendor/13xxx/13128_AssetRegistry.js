@@ -1,10 +1,10 @@
 // Module ID: 13128
 // Function ID: 13129
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13128 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/presence/native/images", width: 80, height: 80, scales: [1, 2, 3], hash: "d0ac2ff8bbd27dac2fa6efc885f4d1a1", name: "conjure_activity_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following", width: 400, height: 96, scales: [1, 2, 3], hash: "6d4af89335f89fb4d2742f6a0658e9cc", name: "channel-following-backdrop-dark", type: "png" });

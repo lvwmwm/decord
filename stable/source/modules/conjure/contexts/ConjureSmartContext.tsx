@@ -1,20 +1,20 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 11653
+// Function ID: 11654
 // Name: ConjureSmartContext
-// Dependencies: [32, 19, 13003, 13223, 13228, 558, 576, 504, 13252, 1126, 3849, 2]
+// Dependencies: [32, 19, 10979, 10978, 10987, 558, 576, 504, 11070, 1128, 3883, 11011, 2]
 
-// Module 17092 (ConjureSmartContext)
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 13252 */;
+// Module 11653 (ConjureSmartContext)
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 13003 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13223 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 13228 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10987 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, importDefault;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureContextSwitchRow(arg0, id) {
@@ -22,14 +22,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let error;
   let first;
   let status;
+  let tmp10;
   let tmp11;
-  let tmp12;
   let tmp6;
   let tmp7;
   let tmp9;
   _require = arg0;
   const frame = id;
-  const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(27);
   id = id.id;
@@ -61,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     tmp7 = cResult[3];
   }
-  const tmpResult = tmp(id[7]);
+  const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
@@ -69,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         return "open" === ConjureConnectionStore.getConnState(closure_0);
       }
     }
-    const items2 = [ConjureChatStore, ConjureConnectionStore];
+    const items2 = [ConjureChatStore];
     cResult[4] = items2;
     tmp9 = items2;
   } else {
@@ -87,22 +86,22 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     const items3 = [arg0];
     cResult[5] = arg0;
-    cResult[6] = tmp13;
+    cResult[6] = tmp12;
     cResult[7] = items3;
-    tmp12 = items3;
-    tmp11 = tmp13;
+    tmp11 = items3;
+    tmp10 = tmp12;
   } else {
     class S {
       constructor() {
         return "open" === ConjureConnectionStore.getConnState(closure_0);
       }
     }
-    tmp12 = cResult[7];
+    tmp11 = cResult[7];
   }
-  const tmpResult2 = tmp(id[7]);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
-  const tmp15 = _slicedToArray(react.useState(null), 2);
-  [r10063, _slicedToArray] = tmp15;
+  const tmpResult2 = require("get initialized");
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10, tmp11);
+  const tmp14 = _slicedToArray(react.useState(null), 2);
+  [r10062, _slicedToArray] = tmp14;
   if (cResult[8] === id) {
     class S {
       constructor() {
@@ -110,7 +109,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
     }
   }
-  const fn = function _() {
+  const fn = function p() {
     let obj2;
     const obj = { frame, ok: obj2.undoContextSwitch(closure_0, id) };
     obj2 = conjureSmartContextConnection;
@@ -137,23 +136,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   importDefault = id;
   id = id.id;
   ({ status, error } = id);
-  const tmp = _require;
   let obj = require("get initialized");
   const items = [ConjureConnectionStore];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => "open" === ConjureConnectionStore.getConnState(closure_0), items1);
   let obj2 = require("get initialized");
-  const items2 = [ConjureChatStore, ConjureConnectionStore];
+  const items2 = [ConjureChatStore];
   const items3 = [arg0];
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
-    let tmp3 = !ConjureConnectionStore.isChatStopped(closure_0);
-    ConjureConnectionStore.isChatStopped(closure_0);
-    if (tmp3) {
-      tmp3 = !ConjureChatStore.isThinking(tmp);
-    }
-    if (tmp3) {
-      tmp3 = !ConjureChatStore.isCompacting(tmp);
-    }
+    const isThinkingResult = ConjureChatStore.isThinking(closure_0);
+    const tmp3 = !isThinkingResult && !ConjureChatStore.isCompacting(closure_0);
     return tmp3;
   }, items3);
   const tmp5 = _slicedToArray(react.useState(null), 2);
@@ -181,7 +173,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   if ("undone" === status) {
     return null;
   } else if ("reverted" === status) {
-    const obj3 = { label: intl5.string(require("module_3849").uQRAzS), body: intl6.string(require("module_3849")["24OcbD"]), note: null, action: null };
+    const obj3 = { label: intl5.string(require("module_3883").uQRAzS), body: intl6.string(require("module_3883")["24OcbD"]), note: null, action: null };
     intl5 = tmp(tmp2[9]).intl;
     intl6 = tmp(tmp2[9]).intl;
     return obj3;
@@ -194,7 +186,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
       tmp13 = false === ok1;
     }
-    const obj4 = { label: intl.string(require("module_3849").iBrh0c), body: intl2.string(require("module_3849").sRY8wn), note: stringResult, action: tmp16 };
+    const obj4 = { label: intl.string(require("module_3883").iBrh0c), body: intl2.string(require("module_3883").sRY8wn), note: stringResult, action: tmp16 };
     intl = tmp(tmp2[9]).intl;
     intl2 = tmp(tmp2[9]).intl;
     if ("busy" === error) {
@@ -237,14 +229,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSmartContextSetting(arg0) {
   let closure_0;
-  let closure_2;
   let first;
   let tmp6;
   let tmp7;
+  let tmp9;
   _require = arg0;
   let obj = require("react");
-  const cResult = obj.c(12);
-  const tmp = _require;
+  const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureSmartContextStore];
     cResult[0] = items;
@@ -253,7 +244,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSm
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function o() {
       return ConjureSmartContextStore.getSmartContext(closure_0);
     };
     const items1 = [arg0];
@@ -266,111 +257,35 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSm
     tmp6 = cResult[2];
     tmp7 = cResult[3];
   }
-  const tmpResult = tmp(504);
+  const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = _slicedToArray(react.useState(null), 2);
-  let flag = tmp9[0];
-  const tmp11 = null != flag && flag === stateFromStores;
-  if (tmp11) {
-    tmp9[1](null);
-  }
-  let tmp13 = null != flag;
-  if (tmp13) {
-    let flag2 = stateFromStores;
-    if (stateFromStores == null) {
-      flag2 = false;
-    }
-    tmp13 = flag !== flag2;
-  }
-  dependencyMap = tmp13;
-  if (cResult[4] === tmp13) {
-    if (cResult[5] === flag) {
-      let tmp14;
-      if (cResult[6] === arg0) {
-        tmp14 = cResult[7];
-      }
-      if (flag == null) {
-        flag = stateFromStores;
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      if (cResult[8] === tmp13) {
-        if (cResult[9] === tmp14) {
-          let tmp15;
-          if (cResult[10] === flag) {
-            tmp15 = cResult[11];
-          }
-          return tmp15;
-        }
-      }
-      const obj2 = { checked: flag, changed: tmp13, setChecked: tmp9[1], save: tmp14 };
-      cResult[8] = tmp13;
-      cResult[9] = tmp14;
-      cResult[10] = flag;
-      cResult[11] = obj2;
-      tmp15 = obj2;
-    }
-  }
-  const fn2 = function x() {
-    let sendSmartContextResult = !closure_2;
-    if (closure_2) {
-      sendSmartContextResult = null == flag;
-    }
-    if (!sendSmartContextResult) {
+  if (cResult[4] !== arg0) {
+    const fn2 = function c(arg0) {
       const obj = conjureSmartContextConnection;
-      sendSmartContextResult = obj.sendSmartContext(closure_0, flag);
-    }
-    return sendSmartContextResult;
-  };
-  cResult[4] = tmp13;
-  cResult[5] = flag;
-  cResult[6] = arg0;
-  cResult[7] = fn2;
-  tmp14 = fn2;
+      return obj.sendSmartContext(closure_0, arg0);
+    };
+    cResult[4] = arg0;
+    cResult[5] = fn2;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[5];
+  }
+  const tmpResult2 = require("useToggleDraft");
+  return tmpResult2.useToggleDraft(stateFromStores, tmp9);
 }) : (function useConjureSmartContextSetting(arg0) {
-  let changed;
-  let checked;
   let closure_0;
-  let setChecked;
   _require = arg0;
   let obj = require("get initialized");
   const items = [ConjureSmartContextStore];
   const items1 = [arg0];
+  const items2 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureSmartContextStore.getSmartContext(closure_0), items1);
-  [checked, setChecked] = react.useState(null);
-  const obj2 = react;
-  const tmp4 = null != checked && checked === stateFromStores;
-  if (tmp4) {
-    setChecked(null);
-  }
-  changed = null != checked;
-  if (changed) {
-    let flag2 = stateFromStores;
-    if (stateFromStores == null) {
-      flag2 = false;
-    }
-    changed = checked !== flag2;
-  }
-  const items2 = [changed, checked, arg0];
-  const save = obj2.useCallback(() => {
-    let sendSmartContextResult = !changed;
-    if (changed) {
-      sendSmartContextResult = null == checked;
-    }
-    if (!sendSmartContextResult) {
-      const obj = conjureSmartContextConnection;
-      sendSmartContextResult = obj.sendSmartContext(closure_0, checked);
-    }
-    return sendSmartContextResult;
+  const callback = react.useCallback((arg0) => {
+    const obj = conjureSmartContextConnection;
+    return obj.sendSmartContext(closure_0, arg0);
   }, items2);
-  if (checked == null) {
-    checked = stateFromStores;
-  }
-  if (checked == null) {
-    checked = false;
-  }
-  return { checked, changed, setChecked, save };
+  const obj2 = require("useToggleDraft");
+  return obj2.useToggleDraft(stateFromStores, callback);
 });
 const result = size.fileFinishedImporting("modules/conjure/contexts/ConjureSmartContext.tsx");
 

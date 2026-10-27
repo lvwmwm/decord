@@ -1,20 +1,20 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17683
+// Function ID: 17684
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 11491, 11492, 17001, 11494, 5088, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 12632, 12633, 17681, 12635, 5187, 2]
 
-// Module 17003 (NavigationTTIRegionDebugOverlay)
+// Module 17683 (NavigationTTIRegionDebugOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11492 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 11494 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17001 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12633 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 12635 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17681 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -562,7 +562,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
         }
       }
       let obj3 = { variant: "text-xs/bold", color: str6, style: tmp4.badgeText, lineClamp: 1, accessible: false, children: tmp7 };
-      const tmp15 = closure_8(tmp(5088).Text, obj3);
+      const tmp15 = closure_8(tmp(5187).Text, obj3);
       cResult[8] = tmp7;
       cResult[9] = tmp4.badgeText;
       cResult[10] = str6;
@@ -736,15 +736,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTT
   name = name.name;
   ({ regionId, tracking, descendantTracking, includedDescendants, excludedDescendants, hierarchyDepth, violation } = name);
   const tmp4 = closure_11();
-  let obj2 = name(11491);
+  let obj2 = name(12632);
   const navTTISurface = obj2.useNavTTISurface();
   const tmp6 = react;
   [tmp8, dependencyMap] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
   if (typeof useNavigationTTIDebugFreezeTarget === "function") {
     const useSyncExternalStore = tmp6.useSyncExternalStore;
-    const subscribeNavigationTTIDebugFreezeTarget = tmp(11494).subscribeNavigationTTIDebugFreezeTarget;
-    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp(11494).getNavigationTTIDebugFreezeTarget, tmp(11494).getNavigationTTIDebugFreezeTarget);
+    const subscribeNavigationTTIDebugFreezeTarget = tmp(12635).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp(12635).getNavigationTTIDebugFreezeTarget, tmp(12635).getNavigationTTIDebugFreezeTarget);
     if (cResult[0] === name) {
       if (cResult[1] === regionId) {
         let tmp10;
@@ -1010,7 +1010,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTT
                                             }
                                           }
                                           const obj8 = { variant: "text-xs/bold", color: str30, style: tmp4.badgeText, lineClamp: num32, accessible: false, children: combined1 };
-                                          const tmp61 = closure_8(tmp(5088).Text, obj8);
+                                          const tmp61 = closure_8(tmp(5187).Text, obj8);
                                           cResult[32] = combined1;
                                           cResult[33] = tmp4.badgeText;
                                           cResult[34] = num32;
@@ -1169,7 +1169,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTT
   let tmp = closure_11();
   let tmp2 = name;
   let tmp3 = dependencyMap;
-  let obj = name(11491);
+  let obj = name(12632);
   const navTTISurface = obj.useNavTTISurface();
   const tmp6 = _slicedToArray(react.useState(false), 2);
   [tmp7, c2] = tmp6;
@@ -1178,8 +1178,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTT
     let str5;
     let combined;
     const useSyncExternalStore = tmp5.useSyncExternalStore;
-    const subscribeNavigationTTIDebugFreezeTarget = tmp2(11494).subscribeNavigationTTIDebugFreezeTarget;
-    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp2(11494).getNavigationTTIDebugFreezeTarget, tmp2(11494).getNavigationTTIDebugFreezeTarget);
+    const subscribeNavigationTTIDebugFreezeTarget = tmp2(12635).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp2(12635).getNavigationTTIDebugFreezeTarget, tmp2(12635).getNavigationTTIDebugFreezeTarget);
     let obj2 = { name, regionId, tracking };
     const tmp10 = closure_12(obj2);
     let tmp13 = "exclude" === tracking;
@@ -1385,7 +1385,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationTT
       }
       obj6 = { variant: "text-xs/bold", color: str30, style: tmp.badgeText, lineClamp: num, accessible: false, children: combined1 };
       num = 1;
-      Text = tmp2(5088).Text;
+      Text = tmp2(5187).Text;
       if (tmp7) {
         num = 3;
       }

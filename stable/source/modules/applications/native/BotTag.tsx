@@ -1,21 +1,21 @@
-// Module ID: 8762
-// Function ID: 8763
+// Module ID: 9039
+// Function ID: 9040
 // Name: BotTag
-// Dependencies: [19, 17, 1373, 21, 5092, 587, 1126, 558, 576, 8763, 5088, 2]
+// Dependencies: [19, 17, 1375, 21, 5191, 587, 1128, 558, 576, 9040, 5187, 2]
 
-// Module 8762 (BotTag)
+// Module 9039 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import ApplicationConstants from "ApplicationConstants" /* 1373 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8763 */;
+import intl5 from "intl" /* 1128 */;
+import ApplicationConstants from "ApplicationConstants" /* 1375 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
@@ -59,15 +59,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   let invertColor;
   let items;
   let style;
-  let tmp22;
+  let tmp21;
   let tmp7;
   let type;
   let verified;
   const obj = react2;
-  const cResult = obj.c(20);
-  ({ invertColor, type, style, verified } = arg0);
+  const cResult = obj.c(22);
+  ({ invertColor, type, style, verified, size } = arg0);
   if (undefined === type) {
     type = BotTagTypes.BOT;
+  }
+  let str = "md";
+  if (undefined !== size) {
+    str = size;
   }
   const tmp6 = closure_7();
   if (cResult[0] !== type) {
@@ -83,126 +87,139 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   }
   let tmp12 = null;
   if (verified) {
-    let tmp14;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(8763).CheckmarkSmallBoldIcon;
-      const tmp17 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
-      cResult[2] = tmp17;
-      tmp14 = tmp17;
-    } else {
-      tmp14 = cResult[2];
+    let tmp13;
+    let str2 = "xs";
+    if ("sm" === str) {
+      str2 = "xxs";
     }
-    tmp12 = tmp14;
+    if (cResult[2] !== str2) {
+      const obj2 = { size: str2, color: nativeDefault.colors.WHITE };
+      const CheckmarkSmallBoldIcon = tmp(9040).CheckmarkSmallBoldIcon;
+      const tmp16 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
+      cResult[2] = str2;
+      cResult[3] = tmp16;
+      tmp13 = tmp16;
+    } else {
+      tmp13 = cResult[3];
+    }
+    tmp12 = tmp13;
   }
-  const tmp18 = undefined !== invertColor && invertColor ? tmp6.tagInverted : tmp6.tagNormal;
-  const tmp19 = undefined !== invertColor && invertColor ? tmp6.tagTextInverted : tmp6.tagTextNormal;
+  const tmp17 = undefined !== invertColor && invertColor ? tmp6.tagInverted : tmp6.tagNormal;
+  const tmp18 = undefined !== invertColor && invertColor ? tmp6.tagTextInverted : tmp6.tagTextNormal;
   let prop = null;
   if (null != tmp12) {
     prop = tmp6.verifiedTagLeftPadding;
   }
   if (type === BotTagTypes.OFFICIAL || type === BotTagTypes.SYSTEM_DM) {
-    let tmp31;
-    const _Symbol5 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
-      const stringResult = intl4.string(intl5.t["7s687k"]);
-      cResult[3] = stringResult;
-      tmp31 = stringResult;
-    } else {
-      tmp31 = cResult[3];
-    }
-    tmp22 = tmp31;
-  } else if (verified) {
-    let tmp28;
+    let tmp30;
     const _Symbol4 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
-      const stringResult1 = intl3.string(intl5.t.g76OcH);
-      cResult[4] = stringResult1;
-      tmp28 = stringResult1;
+      const intl4 = tmp(1128).intl;
+      const stringResult = intl4.string(intl5.t["7s687k"]);
+      cResult[4] = stringResult;
+      tmp30 = stringResult;
     } else {
-      tmp28 = cResult[4];
+      tmp30 = cResult[4];
     }
-    tmp22 = tmp28;
-  } else if (type === BotTagTypes.SERVER) {
-    let tmp25;
+    tmp21 = tmp30;
+  } else if (verified) {
+    let tmp27;
     const _Symbol3 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
-      const stringResult2 = intl2.string(intl5.t["39trQT"]);
-      cResult[5] = stringResult2;
-      tmp25 = stringResult2;
+      const intl3 = tmp(1128).intl;
+      const stringResult1 = intl3.string(intl5.t.g76OcH);
+      cResult[5] = stringResult1;
+      tmp27 = stringResult1;
     } else {
-      tmp25 = cResult[5];
+      tmp27 = cResult[5];
     }
-    tmp22 = tmp25;
-  } else {
+    tmp21 = tmp27;
+  } else if (type === BotTagTypes.SERVER) {
+    let tmp24;
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult3 = intl.string(intl5.t.qwJHjo);
-      cResult[6] = stringResult3;
-      tmp22 = stringResult3;
+      const intl2 = tmp(1128).intl;
+      const stringResult2 = intl2.string(intl5.t["39trQT"]);
+      cResult[6] = stringResult2;
+      tmp24 = stringResult2;
     } else {
-      tmp22 = cResult[6];
+      tmp24 = cResult[6];
+    }
+    tmp21 = tmp24;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1128).intl;
+      const stringResult3 = intl.string(intl5.t.qwJHjo);
+      cResult[7] = stringResult3;
+      tmp21 = stringResult3;
+    } else {
+      tmp21 = cResult[7];
     }
   }
-  if (cResult[7] === prop) {
-    if (cResult[8] === style) {
-      if (cResult[9] === tmp6.tag) {
-        let tmp33;
-        if (cResult[10] === tmp18) {
-          tmp33 = cResult[11];
+  if (cResult[8] === prop) {
+    if (cResult[9] === style) {
+      if (cResult[10] === tmp6.tag) {
+        let tmp32;
+        if (cResult[11] === tmp17) {
+          tmp32 = cResult[12];
         }
-        if (cResult[12] === tmp7) {
-          let tmp34;
-          if (cResult[13] === tmp19) {
-            tmp34 = cResult[14];
-          }
-          if (cResult[15] === tmp22) {
-            if (cResult[16] === tmp33) {
-              if (cResult[17] === tmp34) {
-                let tmp37;
-                if (cResult[18] === tmp12) {
-                  tmp37 = cResult[19];
+        let str8 = "text-xs/semibold";
+        if ("sm" === str) {
+          str8 = "text-xxs/semibold";
+        }
+        if (cResult[13] === str8) {
+          if (cResult[14] === tmp7) {
+            let tmp33;
+            if (cResult[15] === tmp18) {
+              tmp33 = cResult[16];
+            }
+            if (cResult[17] === tmp21) {
+              if (cResult[18] === tmp32) {
+                if (cResult[19] === tmp33) {
+                  let tmp36;
+                  if (cResult[20] === tmp12) {
+                    tmp36 = cResult[21];
+                  }
+                  return tmp36;
                 }
-                return tmp37;
               }
             }
+            const obj3 = { style: tmp32, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp21, children: items };
+            items = [tmp12, tmp33];
+            const tmp39 = metroRequire(View, obj3);
+            cResult[17] = tmp21;
+            cResult[18] = tmp32;
+            cResult[19] = tmp33;
+            cResult[20] = tmp12;
+            cResult[21] = tmp39;
+            tmp36 = tmp39;
           }
-          const obj3 = { style: tmp33, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp22, children: items };
-          items = [tmp12, tmp34];
-          const tmp40 = metroRequire(View, obj3);
-          cResult[15] = tmp22;
-          cResult[16] = tmp33;
-          cResult[17] = tmp34;
-          cResult[18] = tmp12;
-          cResult[19] = tmp40;
-          tmp37 = tmp40;
         }
-        const obj4 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp19, children: tmp7 };
-        const tmp36 = hasOwnProperty(Text_Text.Text, obj4);
-        cResult[12] = tmp7;
-        cResult[13] = tmp19;
-        cResult[14] = tmp36;
-        tmp34 = tmp36;
+        const obj4 = { variant: str8, lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp18, children: tmp7 };
+        const tmp35 = hasOwnProperty(Text_Text.Text, obj4);
+        cResult[13] = str8;
+        cResult[14] = tmp7;
+        cResult[15] = tmp18;
+        cResult[16] = tmp35;
+        tmp33 = tmp35;
       }
     }
   }
-  const items1 = [tmp6.tag, tmp18, style, prop];
-  cResult[7] = prop;
-  cResult[8] = style;
-  cResult[9] = tmp6.tag;
-  cResult[10] = tmp18;
-  cResult[11] = items1;
-  tmp33 = items1;
+  const items1 = [tmp6.tag, tmp17, style, prop];
+  cResult[8] = prop;
+  cResult[9] = style;
+  cResult[10] = tmp6.tag;
+  cResult[11] = tmp17;
+  cResult[12] = items1;
+  tmp32 = items1;
 }) : (function BotTag(invertColor) {
   let items;
   let items1;
   let stringResult;
+  let style;
   let tmp17;
+  let verified;
   let flag = invertColor.invertColor;
   if (flag === undefined) {
     flag = false;
@@ -211,8 +228,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   if (BOT === undefined) {
     BOT = BotTagTypes.BOT;
   }
-  let verified = invertColor.verified;
-  const style = invertColor.style;
+  ({ verified, size, style } = invertColor);
+  if (size === undefined) {
+    size = "md";
+  }
   const tmp2 = closure_7();
   let tmp5 = BOT === BotTagTypes.OFFICIAL;
   const tmp3 = getBotLabel(BOT);
@@ -222,16 +241,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   if (!verified) {
     verified = tmp5;
   }
-  let tmp6 = null;
+  let tmp7Result = null;
   if (verified) {
-    const obj = { size: "xs", color: nativeDefault.colors.WHITE };
+    let str = "xs";
     const CheckmarkSmallBoldIcon = CheckmarkSmallBoldIcon2.CheckmarkSmallBoldIcon;
-    tmp6 = hasOwnProperty(CheckmarkSmallBoldIcon, obj);
+    const tmp7 = hasOwnProperty;
+    if ("sm" === size) {
+      str = "xxs";
+    }
+    const obj = { size: str, color: nativeDefault.colors.WHITE };
+    tmp7Result = tmp7(CheckmarkSmallBoldIcon, obj);
   }
   let prop = null;
   const tmp11 = flag ? tmp2.tagInverted : tmp2.tagNormal;
   const tmp12 = flag ? tmp2.tagTextInverted : tmp2.tagTextNormal;
-  if (null != tmp6) {
+  if (null != tmp7Result) {
     prop = tmp2.verifiedTagLeftPadding;
   }
   if (tmp5) {
@@ -253,10 +277,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   }
   const obj2 = { style: items, accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult, children: items1 };
   items = [tmp2.tag, tmp11, style, prop];
-  items1 = [tmp6, hasOwnProperty(tmp17(5088).Text, { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 })];
-  return metroRequire(View, obj2);
+  items1 = [tmp7Result, ];
+  let str3 = "text-xs/semibold";
+  const Text = tmp17(5187).Text;
+  const tmp24 = metroRequire;
+  const tmp25 = View;
+  const tmp26 = hasOwnProperty;
+  if ("sm" === size) {
+    str3 = "text-xxs/semibold";
+  }
+  items1[1] = tmp26(Text, { variant: str3, lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp12, children: tmp3 });
+  return tmp24(tmp25, obj2);
 });
 tmp5.Types = BotTagTypes;
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/applications/native/BotTag.tsx");
 
 export default tmp5;

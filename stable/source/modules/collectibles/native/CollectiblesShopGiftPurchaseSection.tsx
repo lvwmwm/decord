@@ -1,26 +1,26 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 13652
+// Function ID: 13653
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8312, 7144, 1085, 1392, 21, 5092, 587, 6665, 10097, 504, 8304, 10101, 6852, 10183, 1265, 12716, 584, 5934, 5300, 12717, 2000, 1382, 10116, 5088, 1126, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 8590, 7415, 1087, 1394, 21, 5191, 587, 6942, 10400, 504, 8582, 7130, 10485, 1267, 13653, 584, 6190, 5400, 13654, 2002, 1384, 10418, 10406, 5187, 1128, 5479, 2]
 // Exports: default
 
-// Module 12715 (CollectiblesShopGiftPurchaseSection)
+// Module 13652 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7415 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8590 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -53,7 +53,6 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
   let c3;
   let c4;
   let format;
-  let giftsToNextTier;
   let id;
   let intl2;
   let intl3;
@@ -62,9 +61,9 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
   let obj6;
   let ref;
   let rsEdd2;
-  let str2;
-  let tmp10;
-  let tmp4Result2;
+  let str;
+  let tmp4Result;
+  let tmp7;
   product = product.product;
   require = product;
   const giftOptions = product.giftOptions;
@@ -72,18 +71,16 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
   _asyncToGenerator = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let closure_6;
   let closure_7;
   let awaitSync;
-  let onPurchaseError;
   let closure_10;
-  let tmp = giftOptions;
   let tmp2 = giftingOrigin;
   const isPurchaseDisabled = product.isPurchaseDisabled;
+  let tmp = giftOptions;
   const tmp3 = closure_15(giftOptions(giftingOrigin[11])().insets.bottom);
   const tmp4 = require;
   const GiftingBadgeExperiment = require("GiftingBadgeExperiment").GiftingBadgeExperiment;
-  let enabled = GiftingBadgeExperiment.useConfig({ location: "CollectiblesShopGiftPurchaseSection" }).enabled;
+  const enabled = GiftingBadgeExperiment.useConfig({ location: "CollectiblesShopGiftPurchaseSection" }).enabled;
   let obj = require("get initialized");
   const items = [closure_7];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -96,29 +93,20 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
     }
     return obj;
   });
-  ({ nextTier, badgeProgress: c3, giftsToNextTier } = stateFromStoresObject);
-  if (enabled) {
-    enabled = null != nextTier;
-  }
-  let str = "-DISABLED";
-  const useIsGiftingBadgeComplexArtEnabled = tmp4(tmp2[15]).useIsGiftingBadgeComplexArtEnabled;
-  tmp4(tmp2[15]);
-  if (enabled) {
-    str = "";
-  }
-  const isGiftingBadgeComplexArtEnabled = useIsGiftingBadgeComplexArtEnabled(`CollectiblesShopGiftPurchaseSection${str}`);
-  [tmp10, c4] = _slicedToArray(react.useState(false), 2);
-  const tmp9 = _slicedToArray(react.useState(false), 2);
+  ({ nextTier, badgeProgress: c3 } = stateFromStoresObject);
+  const giftsToNextTier = stateFromStoresObject.giftsToNextTier;
+  [tmp7, c4] = _slicedToArray(react.useState(false), 2);
+  const tmp6 = _slicedToArray(react.useState(false), 2);
   react = react.useRef(false);
-  const analyticsLocations = tmp(tmp2[16])().analyticsLocations;
-  const tmp11 = awaitSync((analyticsFields) => analyticsFields.analyticsFields);
-  closure_6 = tmp11;
-  const tmp12 = awaitSync((orderRecord) => orderRecord.orderRecord);
-  const tmp13 = awaitSync((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
-  closure_7 = tmp13;
-  awaitSync = tmp(tmp2[17])(tmp12, giftOptions).awaitSync;
-  const items1 = [tmp11, tmp13];
-  onPurchaseError = react.useCallback(() => {
+  const analyticsLocations = giftOptions(giftingOrigin[15])().analyticsLocations;
+  const tmp8 = awaitSync((analyticsFields) => analyticsFields.analyticsFields);
+  let closure_6 = tmp8;
+  const tmp9 = awaitSync((orderRecord) => orderRecord.orderRecord);
+  const tmp10 = awaitSync((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
+  closure_7 = tmp10;
+  awaitSync = giftOptions(giftingOrigin[16])(tmp9, giftOptions).awaitSync;
+  const items1 = [tmp8, tmp10];
+  const onPurchaseError = react.useCallback(() => {
     if (ref.current) {
       tmp.current = false;
       const obj = AnalyticsUtilsDefault;
@@ -131,7 +119,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
     product,
     analyticsLocations,
     orderId: id,
-    analyticsData: tmp11,
+    analyticsData: tmp8,
     onPurchaseComplete() {
       let tmp2 = null == giftOptions.recipient_id;
       let tmp = giftOptions;
@@ -152,7 +140,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
         importer() {
           let giftBadgeProgress;
           let gift_style;
-          const promise = require("asyncRequire")(giftingOrigin[23], giftingOrigin.paths);
+          const promise = require("asyncRequire")(giftingOrigin[22], giftingOrigin.paths);
           return promise.then((result) => {
             let closure_0 = result.default;
             return (arg0) => {
@@ -184,27 +172,30 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
     giftParams: { isGift: true, options: giftOptions }
   };
   id = undefined;
-  const tmpResult = tmp(tmp2[19]);
-  if (tmp12 != null) {
-    id = tmp12.id;
+  const tmp12 = giftOptions(giftingOrigin[18]);
+  if (tmp9 != null) {
+    id = tmp9.id;
   }
-  closure_10 = tmpResult(obj2);
+  closure_10 = tmp12(obj2);
   let obj3 = { style: tmp3.container, children: items2 };
-  let tmp20Result = null;
-  const tmp17 = closure_14;
-  const tmp18 = closure_6;
+  let tmp17Result = null;
+  const tmp14 = closure_14;
+  const tmp15 = closure_6;
   if (enabled) {
-    let obj4 = { giftsToNextTier, nextTierName: str2, nextTierIcon: tmp4Result2.getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled) };
-    str2 = nextTier.name;
-    const tmp20 = closure_13;
-    const tmpResult2 = tmp(tmp2[26]);
-    if (str2 == null) {
-      str2 = "";
+    tmp17Result = null;
+    if (null != nextTier) {
+      let obj4 = { giftsToNextTier, nextTierName: str, nextTierIcon: tmp4Result.getGiftingBadgeTierIconUrl(nextTier) };
+      str = nextTier.name;
+      const tmp17 = closure_13;
+      const tmpResult = tmp(tmp2[25]);
+      if (str == null) {
+        str = "";
+      }
+      tmp4Result = tmp4(tmp2[26]);
+      tmp17Result = tmp17(tmpResult, obj4);
     }
-    tmp4Result2 = tmp4(tmp2[15]);
-    tmp20Result = tmp20(tmpResult2, obj4);
   }
-  items2 = [tmp20Result, , ];
+  items2 = [tmp17Result, , ];
   let obj5 = { variant: "text-xs/normal", style: tmp3.disclaimer, children: format(rsEdd2, obj6) };
   const Text = tmp4(tmp2[27]).Text;
   const intl = tmp4(tmp2[28]).intl;
@@ -216,7 +207,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
   items2[1] = closure_13(Text, obj5);
   const obj8 = {
     disabled: isPurchaseDisabled,
-    loading: tmp10,
+    loading: tmp7,
     variant: "active",
     text: intl3.string(tmp4(tmp2[28]).t.ouo4FK),
     onPress: _asyncToGenerator(async (arg0, value) => {
@@ -279,5 +270,5 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
   const Button = tmp4(tmp2[29]).Button;
   intl3 = tmp4(tmp2[28]).intl;
   items2[2] = closure_13(Button, obj8);
-  return tmp17(tmp18, obj3);
+  return tmp14(tmp15, obj3);
 };

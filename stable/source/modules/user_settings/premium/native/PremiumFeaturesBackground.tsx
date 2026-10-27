@@ -1,18 +1,18 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9326
+// Function ID: 9327
 // Name: PremiumFeaturesBackground
-// Dependencies: [109, 19, 7152, 1392, 21, 5092, 587, 558, 576, 683, 5391, 1105, 2]
+// Dependencies: [109, 19, 7423, 1394, 21, 5191, 587, 558, 576, 683, 5491, 1107, 2]
 
-// Module 9030 (PremiumFeaturesBackground)
+// Module 9326 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFea
       }
       LinearGradientDefault;
       const merged = Object.assign(tmp6);
-      const tmp25 = <tmp21 style={tmp17} colors={tmp15} start={num7(1105).HorizontalGradient.START} end={num7(1105).HorizontalGradient.END}>{tmp4}</tmp21>;
+      const tmp25 = <tmp21 style={tmp17} colors={tmp15} start={num7(1107).HorizontalGradient.START} end={num7(1107).HorizontalGradient.END}>{tmp4}</tmp21>;
       cResult[12] = tmp4;
       cResult[13] = tmp15;
       cResult[14] = tmp6;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFea
   const items = [tmp2.cardContainer, style];
   LinearGradientDefault;
   const merged1 = Object.assign(merged);
-  return <tmp6 style={items} colors={mapped} start={num(1105).HorizontalGradient.START} end={num(1105).HorizontalGradient.END}>{children}</tmp6>;
+  return <tmp6 style={items} colors={mapped} start={num(1107).HorizontalGradient.START} end={num(1107).HorizontalGradient.END}>{children}</tmp6>;
 });
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesBackground.tsx");
 

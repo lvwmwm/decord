@@ -1,21 +1,21 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 14225
+// Function ID: 14226
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 5092, 587, 558, 576, 13447, 5088, 7271, 9040, 1126, 13448, 1993, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 14226, 5187, 7542, 9336, 1128, 14227, 1995, 2]
 
-// Module 13446 (ProductDetailsActionSheetInfo)
+// Module 14225 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9040 */;
-import useProductDescription from "useProductDescription" /* 13447 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 13448 */;
+import intl3 from "intl" /* 1128 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9336 */;
+import useProductDescription from "useProductDescription" /* 14226 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 14227 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -138,13 +138,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Product
   }
   if (isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5088).Text;
-    intl2 = tmp(1126).intl;
+    const Text2 = tmp(5187).Text;
+    intl2 = tmp(1128).intl;
     tmp8 = React3(Text2, obj3);
   } else if (isPartiallyOwnedBundle) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5088).Text;
-    intl = tmp(1126).intl;
+    const Text = tmp(5187).Text;
+    intl = tmp(1128).intl;
     tmp8 = React3(Text, obj4);
   } else {
     tmp8 = !tmp4;
@@ -173,13 +173,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Product
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5088).Text;
-    intl2 = tmp(1126).intl;
+    const Text2 = tmp(5187).Text;
+    intl2 = tmp(1128).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5088).Text;
-    intl = tmp(1126).intl;
+    const Text = tmp(5187).Text;
+    intl = tmp(1128).intl;
     children = tmp6(Text, obj4);
   } else {
     children = !result;

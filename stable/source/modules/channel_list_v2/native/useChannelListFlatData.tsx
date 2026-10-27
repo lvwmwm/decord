@@ -1,10 +1,10 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 17386
+// Function ID: 17387
 // Name: useChannelListFlatData
-// Dependencies: [19, 558, 576, 6761, 2]
+// Dependencies: [19, 558, 576, 7038, 2]
 
-// Module 16701 (useChannelListFlatData)
-import FastList from "FastList" /* 6761 */;
+// Module 17386 (useChannelListFlatData)
+import FastList from "FastList" /* 7038 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLi
       let sum1 = tmp7;
       if (0 !== tmp9) {
         let tmp39 = map;
-        let SECTION = map(6761).FastListItemTypes.SECTION;
+        let SECTION = map(7038).FastListItemTypes.SECTION;
         let sectionHeaderSize = getSectionHeaderSize(num);
         let _HermesInternal5 = HermesInternal;
         let str13 = "";
@@ -126,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLi
         if (0 < tmp9) {
           do {
             let tmp21 = map;
-            let ITEM = map(6761).FastListItemTypes.ITEM;
+            let ITEM = map(7038).FastListItemTypes.ITEM;
             let itemSize = getItemSize(num, num3);
             let _HermesInternal2 = HermesInternal;
             let str4 = "";
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLi
         let sectionFooterSize = getSectionFooterSize(num);
         sum1 = tmp20;
         if (sectionFooterSize > 0) {
-          let SECTION_FOOTER = tmp39(6761).FastListItemTypes.SECTION_FOOTER;
+          let SECTION_FOOTER = tmp39(7038).FastListItemTypes.SECTION_FOOTER;
           let _HermesInternal6 = HermesInternal;
           let str16 = "";
           let str17 = ":";
@@ -291,7 +291,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLi
           let tmp39 = getSectionFooterSize(num);
           sum1 = tmp15;
           if (tmp39 > 0) {
-            let SECTION_FOOTER = tmp36(6761).FastListItemTypes.SECTION_FOOTER;
+            let SECTION_FOOTER = tmp36(7038).FastListItemTypes.SECTION_FOOTER;
             let _HermesInternal6 = HermesInternal;
             let str16 = "";
             let str17 = ":";

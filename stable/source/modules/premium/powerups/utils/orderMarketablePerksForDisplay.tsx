@@ -1,12 +1,12 @@
-// Module ID: 13875
-// Function ID: 13876
+// Module ID: 14655
+// Function ID: 14656
 // Name: orderMarketablePerksForDisplay
-// Dependencies: [32, 5009, 5011, 2]
+// Dependencies: [32, 5105, 5107, 2]
 // Exports: default
 
-// Module 13875 (orderMarketablePerksForDisplay)
-import GameServerConstants from "GameServerConstants" /* 5009 */;
-import Powerups from "Powerups" /* 5011 */;
+// Module 14655 (orderMarketablePerksForDisplay)
+import GameServerConstants from "GameServerConstants" /* 5105 */;
+import Powerups from "Powerups" /* 5107 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

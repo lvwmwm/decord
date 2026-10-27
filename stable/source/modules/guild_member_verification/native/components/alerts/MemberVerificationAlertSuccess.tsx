@@ -1,17 +1,17 @@
-// Module ID: 6104
-// Function ID: 6105
+// Module ID: 6383
+// Function ID: 6384
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [109, 19, 17, 5081, 2087, 21, 5092, 558, 576, 504, 1126, 6105, 6106, 5088, 5398, 2]
+// Dependencies: [109, 19, 17, 5181, 2090, 21, 5191, 558, 576, 504, 1128, 6384, 6385, 5187, 5498, 2]
 
-// Module 6104 (MemberVerificationAlertSuccess)
+// Module 6383 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 6106 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 6385 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,8 +102,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
       const _Symbol2 = Symbol;
       ({ alert: _alert, illustrationContainer } = tmp10);
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[14] = require("module_6105");
-        require("module_6105");
+        cResult[14] = require("module_6384");
+        require("module_6384");
         class M {
           constructor() {
             return useReducedMotion.useReducedMotion;
@@ -121,7 +121,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
           let tmp33;
           const header = tmp10.header;
           if (cResult[21] !== stateFromStores.name) {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const format = intl.format;
             const obj2 = { guildName: null };
             class M {

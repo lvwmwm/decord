@@ -1,29 +1,29 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8893
+// Function ID: 8894
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 2125, 2119, 2087, 1390, 7485, 1096, 21, 5092, 587, 4755, 6665, 5076, 504, 8598, 4828, 1126, 1200, 5088, 8616, 6307, 8620, 8621, 6097, 7563, 8626, 5421, 5414, 8599, 4808, 5056, 6840, 6839, 5379, 2]
+// Dependencies: [5, 109, 32, 19, 17, 2128, 2122, 2090, 1392, 7756, 1098, 21, 5191, 587, 4850, 6942, 5176, 504, 8877, 4923, 1128, 1202, 5187, 8894, 6584, 7091, 8898, 6376, 7834, 8903, 5521, 5514, 8878, 4903, 5155, 7118, 7117, 5479, 2]
 // Exports: default
 
-// Module 8615 (AddMembersActionSheet)
+// Module 8893 (AddMembersActionSheet)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import intl9 from "intl" /* 1126 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import RegexUtilsDefault from "RegexUtils" /* 5076 */;
-import GuildUtilsDefault from "GuildUtils" /* 6097 */;
+import Constants from "Constants" /* 1098 */;
+import intl9 from "intl" /* 1128 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
+import RegexUtilsDefault from "RegexUtils" /* 5176 */;
+import GuildUtilsDefault from "GuildUtils" /* 6376 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserStore from "UserStore" /* 1390 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserStore from "UserStore" /* 1392 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7756 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5, closure_1, dependencyMap, row, user;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(8598);
+const ChannelPermissionsUtilsAll = tmp10(8877);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -133,7 +133,7 @@ class AddMembersBody {
     const tmp8 = pendingAdditions;
     let obj2 = { isKeyboardAwareOnAndroid: !inActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(6665)(obj2).insets;
+    const insets = pendingAdditions(6942)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -172,16 +172,16 @@ class AddMembersBody {
       }
     }, items3);
     if (items2.length > 0) {
-      let intl = tmp12(1126).intl;
-      const items4 = [intl.string(tmp12(1126).t["LPJmL/"])];
+      let intl = tmp12(1128).intl;
+      const items4 = [intl.string(tmp12(1128).t["LPJmL/"])];
       let items5 = items4;
     } else {
       items5 = [];
     }
     const items6 = [...items2];
     if (membersRows.length > 0) {
-      const intl2 = tmp12(1126).intl;
-      const items7 = [intl2.string(tmp12(1126).t["9Oq93m"])];
+      const intl2 = tmp12(1128).intl;
+      const items7 = [intl2.string(tmp12(1128).t["9Oq93m"])];
       items8 = items7;
     } else {
       items8 = [];
@@ -199,13 +199,13 @@ class AddMembersBody {
     }
     const items9 = [];
     closure_12 = sum1 + membersRows.length - 1;
-    let obj7 = { title: intl3.string(tmp12(1126).t["LPJmL/"]), data: items2 };
+    let obj7 = { title: intl3.string(tmp12(1128).t["LPJmL/"]), data: items2 };
     const push = items9.push;
-    intl3 = tmp12(1126).intl;
+    intl3 = tmp12(1128).intl;
     push(obj7);
     const push2 = items9.push;
-    const obj8 = { title: intl4.string(tmp12(1126).t["9Oq93m"]), data: membersRows };
-    intl4 = tmp12(1126).intl;
+    const obj8 = { title: intl4.string(tmp12(1128).t["9Oq93m"]), data: membersRows };
+    intl4 = tmp12(1128).intl;
     push2(obj8);
     const values = Object.values(pendingAdditions);
     const mapped = values.map((row) => {
@@ -215,15 +215,15 @@ class AddMembersBody {
       return obj;
     });
     if (inActionSheet) {
-      BottomSheetScrollView = tmp12(6307).BottomSheetScrollView;
+      BottomSheetScrollView = tmp12(6584).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
-    const tmp12Result = tmp12(8620);
+    const tmp12Result = tmp12(7091);
     const obj9 = { style: tmp4.inputContainer, children: closure_17(tmp8Result, obj10) };
     obj10 = {
-      accessibilityLabel: intl5.string(tmp12(1126).t["5h0QOP"]),
-      placeholder: intl6.string(tmp12(1126).t.TVZdKh),
+      accessibilityLabel: intl5.string(tmp12(1128).t["5h0QOP"]),
+      placeholder: intl6.string(tmp12(1128).t.TVZdKh),
       tags: mapped,
       onChangeText: function handleQueryChange(str) {
         str = str.trim();
@@ -248,18 +248,18 @@ class AddMembersBody {
       }
     };
     const tmp31 = inActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(8621);
-    intl5 = tmp12(1126).intl;
-    intl6 = tmp12(1126).intl;
+    tmp8Result = tmp8(8898);
+    intl5 = tmp12(1128).intl;
+    intl6 = tmp12(1128).intl;
     const items10 = [closure_17(c8, obj9), , ];
     const tmp32 = closure_19;
     const tmp33 = closure_18;
     const tmp35 = c8;
     if (canEveryoneRoleResult) {
       const obj11 = { style: tmp4.adminWarning, children: closure_17(InlineNotice, obj12) };
-      obj12 = { type: "warning", message: intl7.string(tmp12(1126).t["5f3HIC"]), role: "status" };
-      InlineNotice = tmp12(7563).InlineNotice;
-      intl7 = tmp12(1126).intl;
+      obj12 = { type: "warning", message: intl7.string(tmp12(1128).t["5f3HIC"]), role: "status" };
+      InlineNotice = tmp12(7834).InlineNotice;
+      intl7 = tmp12(1128).intl;
       canEveryoneRoleResult = tmp34(tmp35, obj11);
     }
     items10[1] = canEveryoneRoleResult;
@@ -269,10 +269,10 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(8626).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1126).t.ErpIY3, obj15) };
-          EmptyState = tmp12(1200).EmptyState;
+          obj14 = { Illustration: tmp12(8903).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1128).t.ErpIY3, obj15) };
+          EmptyState = tmp12(1202).EmptyState;
           ({ emptyState: obj19.style, emptyStateText: obj19.bodyStyle } = tmp4);
-          intl8 = tmp12(1126).intl;
+          intl8 = tmp12(1128).intl;
           obj15 = { query: str };
           tmp34Result = tmp34(BottomSheetScrollView, obj13);
         }
@@ -510,7 +510,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(5421)(channel, true);
+  let str = pendingAdditions(5521)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -522,23 +522,23 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    BottomSheet = tmp5(6840).BottomSheet;
-    let obj2 = { title: intl3.string(tmp5(1126).t.dMJ3Y6), subtitle: str, trailing: null };
-    const BottomSheetTitleHeader = tmp5(6839).BottomSheetTitleHeader;
-    intl3 = tmp5(1126).intl;
+    BottomSheet = tmp5(7118).BottomSheet;
+    let obj2 = { title: intl3.string(tmp5(1128).t.dMJ3Y6), subtitle: str, trailing: null };
+    const BottomSheetTitleHeader = tmp5(7117).BottomSheetTitleHeader;
+    intl3 = tmp5(1128).intl;
     if (canSkip) {
       let obj7;
       if (tmp11) {
         let obj3 = {
           size: "sm",
-          text: intl2.string(tmp5(1126).t["5Wxrcd"]),
+          text: intl2.string(tmp5(1128).t["5Wxrcd"]),
           onPress() {
                   obj = first(dependencyMap[34]);
                   obj.hideActionSheet();
                 },
           variant: "secondary"
         };
-        intl2 = tmp5(1126).intl;
+        intl2 = tmp5(1128).intl;
         obj7 = obj3;
       }
       let obj4 = { scrollable: true, header: tmp12(BottomSheetTitleHeader, obj2), startExpanded: true, children: tmp12(closure_8, obj5) };
@@ -550,14 +550,14 @@ export default function AddMembersActionSheet(channel) {
     }
     obj7 = {
       size: "sm",
-      text: intl.string(tmp5(1126).t.OYkgVk),
+      text: intl.string(tmp5(1128).t.OYkgVk),
       onPress: function handleAddPressed() {
           return obj(...arguments);
         },
       variant: str2,
       disabled: tmp11
     };
-    intl = tmp5(1126).intl;
+    intl = tmp5(1128).intl;
     str2 = "primary";
     if (tmp11) {
       str2 = "secondary";

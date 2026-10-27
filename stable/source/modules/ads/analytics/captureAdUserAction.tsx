@@ -1,25 +1,25 @@
-// Module ID: 9170
-// Function ID: 9171
+// Module ID: 9477
+// Function ID: 9478
 // Name: captureAdUserAction
-// Dependencies: [5, 7386, 1085, 5979, 7402, 7382, 7411, 7417, 1265, 1279, 1382, 7360, 9171, 7412, 7393, 9173, 2]
+// Dependencies: [5, 7656, 1087, 6235, 7672, 7652, 7681, 7687, 1267, 1281, 1384, 7630, 9478, 7682, 7663, 9480, 2]
 // Exports: captureAdUserAction
 
-// Module 9170 (captureAdUserAction)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AdCreativeType from "AdCreativeType" /* 5979 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7360 */;
-import QuestDataUtils from "QuestDataUtils" /* 7382 */;
-import getQuestLogger from "getQuestLogger" /* 7393 */;
-import AnalyticsActions from "AnalyticsActions" /* 7402 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
-import AdDataUtils from "AdDataUtils" /* 7412 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7417 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 9171 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
+// Module 9477 (captureAdUserAction)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7630 */;
+import QuestDataUtils from "QuestDataUtils" /* 7652 */;
+import getQuestLogger from "getQuestLogger" /* 7663 */;
+import AnalyticsActions from "AnalyticsActions" /* 7672 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
+import AdDataUtils from "AdDataUtils" /* 7682 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7687 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 9478 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7386 */;
+import QuestStore from "QuestStore" /* 7656 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;

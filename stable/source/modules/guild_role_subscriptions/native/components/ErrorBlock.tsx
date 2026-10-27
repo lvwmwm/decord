@@ -1,18 +1,18 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 12076
+// Function ID: 12077
 // Name: ErrorBlock
-// Dependencies: [19, 21, 558, 576, 11924, 2]
+// Dependencies: [19, 21, 558, 576, 12077, 2]
 
-// Module 11923 (ErrorBlock)
+// Module 12076 (ErrorBlock)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessageBlockDefault from "MessageBlock" /* 11924 */;
+import MessageBlockDefault from "MessageBlock" /* 12077 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageBlock = tmp(11924);
+const MessageBlock = tmp(12077);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorBlock(children) {
   let tmp4;

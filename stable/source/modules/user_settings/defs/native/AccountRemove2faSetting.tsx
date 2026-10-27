@@ -1,17 +1,17 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15813
+// Function ID: 15814
 // Name: AccountRemove2faSetting
-// Dependencies: [7988, 558, 15052, 5299, 1126, 15047, 10664, 14965, 2]
+// Dependencies: [8260, 558, 15814, 5399, 1128, 15809, 11084, 15727, 2]
 
-// Module 15051 (AccountRemove2faSetting)
-import intl4 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14965 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 15047 */;
-import account_MFAUtils from "account/MFAUtils" /* 15052 */;
+// Module 15813 (AccountRemove2faSetting)
+import intl4 from "intl" /* 1128 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 15727 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15809 */;
+import account_MFAUtils from "account/MFAUtils" /* 15814 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

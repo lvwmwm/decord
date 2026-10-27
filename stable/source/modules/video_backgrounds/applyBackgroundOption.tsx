@@ -1,22 +1,22 @@
-// Module ID: 5253
-// Function ID: 5254
+// Module ID: 5353
+// Function ID: 5354
 // Name: applyBackgroundOption
-// Dependencies: [5, 1390, 5254, 5255, 1085, 5256, 5137, 5261, 1415, 5266, 5259, 5258, 5267, 2]
+// Dependencies: [5, 1392, 5354, 5355, 1087, 5356, 5236, 5361, 1417, 5366, 5359, 5358, 5367, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5253 (applyBackgroundOption)
-import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5256 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5258 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5261 */;
-import getFilterImageDefault from "getFilterImage" /* 5266 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5267 */;
+// Module 5353 (applyBackgroundOption)
+import Constants from "Constants" /* 1087 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5356 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5358 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5361 */;
+import getFilterImageDefault from "getFilterImage" /* 5366 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5367 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1390 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5254 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5255 */;
+import UserStore from "UserStore" /* 1392 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5354 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5355 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -227,7 +227,7 @@ obj = function _applyBackgroundOptionLive() {
         flag = true;
       }
       location = tmp14.location;
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -262,7 +262,7 @@ obj = function _applyBackgroundOptionPreview() {
         flag = true;
       }
       location = tmp15.location;
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,37 +1,37 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 10842
+// Function ID: 10843
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1390, 10520, 1085, 1393, 21, 5092, 587, 558, 576, 1126, 1200, 6621, 6185, 10521, 1265, 10514, 504, 10522, 10523, 4969, 10525, 5371, 9422, 6665, 10526, 9630, 4985, 10528, 9293, 6201, 5088, 10258, 8581, 6265, 6180, 5056, 10608, 2000, 10610, 5049, 1383, 1645, 5934, 6688, 2]
+// Dependencies: [32, 19, 17, 1392, 10843, 1087, 1395, 21, 5191, 587, 558, 576, 1128, 1202, 6898, 6462, 10844, 1267, 10837, 504, 10845, 10846, 5065, 10848, 5471, 9726, 6942, 10849, 10851, 10853, 9599, 6478, 5187, 10559, 8861, 6542, 6457, 5081, 5155, 10933, 2002, 10935, 5148, 1385, 1647, 6190, 6965, 2]
 
-// Module 10519 (EditCustomStatusWithPreview)
+// Module 10842 (EditCustomStatusWithPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import shared from "shared" /* 4969 */;
-import ChatInputUtils from "ChatInputUtils" /* 4985 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import react_native from "react-native" /* 5371 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import Pressables from "Pressables" /* 6185 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6621 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9630 */;
-import Constants2 from "Constants" /* 10520 */;
-import setCustomStatusDefault from "setCustomStatus" /* 10523 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 10525 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 10528 */;
+import intl7 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import shared from "shared" /* 5065 */;
+import ChatInputUtils from "ChatInputUtils" /* 5081 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import react_native from "react-native" /* 5471 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import Pressables from "Pressables" /* 6462 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6898 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9726 */;
+import Constants2 from "Constants" /* 10843 */;
+import setCustomStatusDefault from "setCustomStatus" /* 10846 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 10848 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 10851 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 10853 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,10 +64,10 @@ function EditCustomStatusWithPreview(navigation) {
   let intl4;
   let intl5;
   let intl6;
-  let items12;
   let items13;
   let items14;
-  let items7;
+  let items15;
+  let items8;
   let labelResult;
   let obj11;
   let obj13;
@@ -91,18 +91,19 @@ function EditCustomStatusWithPreview(navigation) {
   let first2;
   let onChange;
   let c11;
-  let callback;
+  let onSave;
+  let callback1;
   let ref1;
-  let callback2;
   let callback3;
+  let callback4;
   let ref2;
   let ref;
   let memo;
-  let callback7;
+  let callback8;
   let obj = stateFromStores;
   const useRef = stateFromStores.useRef;
   if (null == _prompt) {
-    let tmp = onClose;
+    const tmp = onClose;
     let tmp2 = analyticsLocations;
     _prompt = onClose(analyticsLocations[16])();
   }
@@ -153,8 +154,8 @@ function EditCustomStatusWithPreview(navigation) {
     labelResult = intl.string(tmp6(tmp7[12]).t.xod367);
   }
   c11 = labelResult;
-  const items2 = [value, first1, first2, onClose, analyticsLocations];
-  callback = obj.useCallback(() => {
+  const items2 = [value, first1, first2, analyticsLocations];
+  onSave = obj.useCallback(() => {
     let current;
     const obj = { text, emojiInfo: first1, clearAfter: first2, analyticsLocations, prompt: current };
     current = ref.current;
@@ -164,10 +165,14 @@ function EditCustomStatusWithPreview(navigation) {
     const announce = AccessibilityAnnouncer.announce;
     const intl = intl7.intl;
     announce(intl.string(intl7.t.Og40Yn));
-    onClose();
   }, items2);
-  const items3 = [onClose];
-  const callback1 = obj.useCallback(() => {
+  const items3 = [onSave, onClose];
+  callback1 = obj.useCallback(() => {
+    callback();
+    onClose();
+  }, items3);
+  const items4 = [onClose];
+  const callback2 = obj.useCallback(() => {
     removeCustomStatusDefault();
     const timerId = setTimeout(() => {
       const AccessibilityAnnouncer = navigation(analyticsLocations[22]).AccessibilityAnnouncer;
@@ -176,15 +181,15 @@ function EditCustomStatusWithPreview(navigation) {
       announce(intl.string(navigation(analyticsLocations[12]).t.YdUwBS));
     }, 300);
     onClose();
-  }, items3);
+  }, items4);
   ref1 = obj.useRef(null);
-  callback2 = obj.useCallback(() => {
+  callback3 = obj.useCallback(() => {
     const obj = react_native;
     const obj2 = { ref: ref1, delay: 500 };
     const result = obj.setAccessibilityFocus(obj2);
   }, []);
-  const items4 = [callback2];
-  callback3 = obj.useCallback((id) => {
+  const items5 = [callback3];
+  callback4 = obj.useCallback((id) => {
     let str2;
     const obj = { id: id.id, name: null, animated: null };
     if (null == id.id) {
@@ -195,48 +200,47 @@ function EditCustomStatusWithPreview(navigation) {
         obj.name = str2;
         obj.animated = id.animated;
         tmp(obj);
-        callback2();
+        callback3();
       }
     }
     str2 = id.name;
     if (str2 == null) {
       str2 = "";
     }
-  }, items4);
-  const items5 = [callback3, callback2];
-  const items6 = [tmp12Result[1], tmp13[1]];
-  const callback4 = obj.useCallback(() => {
-    const obj = openEmojiPickerActionSheet;
-    const obj2 = { onPressEmoji: callback3, onClose: callback2, pickerIntention: EmojiIntention.STATUS };
-    const result = obj.openEmojiPickerActionSheet(obj2);
   }, items5);
+  const items6 = [callback4, callback3];
+  const items7 = [tmp12Result[1], tmp13[1]];
   const callback5 = obj.useCallback(() => {
+    const obj = openEmojiPickerActionSheet;
+    const obj2 = { onPressEmoji: callback4, onClose: callback3, pickerIntention: EmojiIntention.STATUS };
+    const result = obj.openEmojiPickerActionSheet(obj2);
+  }, items6);
+  const callback6 = obj.useCallback(() => {
     closure_8(null);
     closure_6("");
-  }, items6);
+  }, items7);
   ref2 = obj.useRef(null);
   const ref3 = obj.useRef(null);
   const insets = tmp10(tmp7[26])({ includeKeyboardHeight: true, isKeyboardAwareOnIOS: false }).insets;
-  const obj4 = { insets, inputs: items7, scrollViewRef: ref3 };
-  items7 = [{ ref: ref2 }];
+  const obj4 = { insets, inputs: items8, scrollViewRef: ref3 };
+  items8 = [{ ref: ref2 }];
   const onFocus = tmp10(tmp7[27])(obj4).onFocus;
-  const callback6 = obj.useCallback(() => {
+  const callback7 = obj.useCallback(() => {
     const current = ref2.current;
     if (current != null) {
       current.blur();
     }
   }, []);
   ref = obj.useRef({ statusText: value, statusEmoji: first1, clearAfter: first2 });
-  const items8 = [value, first1, first2];
-  memo = obj.useMemo(() => first !== ref.current.statusText || first1 !== tmp.current.statusEmoji || first2 !== tmp.current.clearAfter, items8);
-  const items9 = [memo, onClose];
-  callback7 = obj.useCallback(() => {
-    const obj = { hasEdits: memo, onHasEdits: ChatInputUtils.dismissKeyboard, resetPending: unpackModuleId, onConfirm: onClose };
-    const tmp = maybeShowDiscardChangesAlertDefault;
-    tmp(obj);
-  }, items9);
-  const items10 = [stateFromStores, value, first1, labelResult];
-  const items11 = [navigation, callback, memo, callback7];
+  const items9 = [value, first1, first2];
+  memo = obj.useMemo(() => first !== ref.current.statusText || first1 !== tmp.current.statusEmoji || first2 !== tmp.current.clearAfter, items9);
+  const items10 = [memo, onClose, onSave];
+  callback8 = obj.useCallback(() => {
+    const obj = { location: "EditCustomStatusWithPreview", hasUnsavedChanges: memo, onReset: unpackModuleId, onContinue: onClose, onSave };
+    maybeShowUnsavedChangesAlertDefault(obj);
+  }, items10);
+  const items11 = [stateFromStores, value, first1, labelResult];
+  const items12 = [navigation, callback1, memo, callback8];
   const memo1 = obj.useMemo(() => {
     let tmp2 = null;
     if (null != stateFromStores) {
@@ -244,7 +248,7 @@ function EditCustomStatusWithPreview(navigation) {
       tmp2 = map1(CustomStatusPreviewDefault, obj);
     }
     return tmp2;
-  }, items10);
+  }, items11);
   const layoutEffect = obj.useLayoutEffect(() => {
     let obj2;
     let onPress;
@@ -252,32 +256,32 @@ function EditCustomStatusWithPreview(navigation) {
       headerRight() {
         let intl;
         const obj = { label: intl.string(navigation(analyticsLocations[12]).t["R3BPH+"]), onPress, disabled: !memo };
-        const HeaderTextButton = navigation(analyticsLocations[31]).HeaderTextButton;
+        const HeaderTextButton = navigation(analyticsLocations[30]).HeaderTextButton;
         intl = navigation(analyticsLocations[12]).intl;
-        return ref1(HeaderTextButton, obj);
+        return callback1(HeaderTextButton, obj);
       },
-      headerLeft: obj2.getHeaderCloseButton(callback7)
+      headerLeft: obj2.getHeaderCloseButton(callback8)
     };
     const setOptions = navigation.setOptions;
     obj2 = NavigatorHeader;
     setOptions(obj);
-  }, items11);
+  }, items12);
   if (null == stateFromStores) {
     return null;
   } else {
-    let tmp48Result4;
-    const obj5 = { style: tmp5.container, children: items12 };
+    let tmp49Result4;
+    const obj5 = { style: tmp5.container, children: items13 };
     const obj6 = { style: tmp5.previewContainer, children: memo1 };
-    items12 = [ref1(closure_6, obj6), , , ];
-    const obj7 = { style: tmp5.statusSection, children: items13 };
-    const obj8 = { style: tmp5.statusSectionHeader, children: ref1(Text2, obj9) };
+    items13 = [callback1(closure_6, obj6), , , ];
+    const obj7 = { style: tmp5.statusSection, children: items14 };
+    const obj8 = { style: tmp5.statusSectionHeader, children: callback1(Text2, obj9) };
     obj9 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", children: intl5.string(navigation(analyticsLocations[12]).t.zOdg0A) };
-    Text2 = tmp6(tmp7[33]).Text;
+    Text2 = tmp6(tmp7[32]).Text;
     intl5 = tmp6(tmp7[12]).intl;
-    items13 = [ref1(closure_6, obj8), ];
-    const obj10 = { style: tmp5.statusInput, children: callback2(closure_6, obj11) };
-    obj11 = { style: tmp5.statusInputRow, children: items14 };
-    const obj12 = { ref: ref1, accessibilityLabel: intl6.string(navigation(analyticsLocations[12]).t.WkfRZP), accessibilityValue: obj13, accessibilityRole: "button", onPress: callback4, children: ref1(onClose(analyticsLocations[34]), obj14) };
+    items14 = [callback1(closure_6, obj8), ];
+    const obj10 = { style: tmp5.statusInput, children: ref1(closure_6, obj11) };
+    obj11 = { style: tmp5.statusInputRow, children: items15 };
+    const obj12 = { ref: ref1, accessibilityLabel: intl6.string(navigation(analyticsLocations[12]).t.WkfRZP), accessibilityValue: obj13, accessibilityRole: "button", onPress: callback5, children: callback1(onClose(analyticsLocations[33]), obj14) };
     const PressableOpacity = tmp6(tmp7[15]).PressableOpacity;
     intl6 = tmp6(tmp7[12]).intl;
     let name;
@@ -286,25 +290,25 @@ function EditCustomStatusWithPreview(navigation) {
     }
     obj13 = { text: name };
     obj14 = { emoji: first1, size: 20, style: tmp5.emoji, withPlaceholder: true };
-    items14 = [ref1(PressableOpacity, obj12), , ];
-    const obj15 = { ref: ref2, maxLength, placeholder: labelResult, placeholderTextColor: tmp5.inputPlaceholder.color, accessibilityLabel: intl2.string(navigation(analyticsLocations[12]).t.xalUlT), onSubmitEditing: callback6, onFocus, style: tmp5.status, value, onChange: tmp13[1], autoCorrect: false, showBorder: false, showTopContainer: false, autoCapitalize: "none", inputTextStyle: tmp5.statusText, multiline: true, submitBehavior: "blurAndSubmit", returnKeyType: "done", autoFocus: true };
-    const tmp10Result = onClose(analyticsLocations[35]);
+    items15 = [callback1(PressableOpacity, obj12), , ];
+    const obj15 = { ref: ref2, maxLength, placeholder: labelResult, placeholderTextColor: tmp5.inputPlaceholder.color, accessibilityLabel: intl2.string(navigation(analyticsLocations[12]).t.xalUlT), onSubmitEditing: callback7, onFocus, style: tmp5.status, value, onChange: tmp13[1], autoCorrect: false, showBorder: false, showTopContainer: false, autoCapitalize: "none", inputTextStyle: tmp5.statusText, multiline: true, submitBehavior: "blurAndSubmit", returnKeyType: "done", autoFocus: true };
+    const tmp10Result = onClose(analyticsLocations[34]);
     intl2 = tmp6(tmp7[12]).intl;
-    items14[1] = ref1(tmp10Result, obj15);
-    let tmp48Result = null != first1;
-    if (!tmp48Result) {
+    items15[1] = callback1(tmp10Result, obj15);
+    let tmp49Result = null != first1;
+    if (!tmp49Result) {
       let str2 = "";
-      tmp48Result = "" !== value;
+      tmp49Result = "" !== value;
     }
-    if (tmp48Result) {
-      const obj16 = { onPress: callback5 };
-      tmp48Result = tmp48(ref2, obj16);
+    if (tmp49Result) {
+      const obj16 = { onPress: callback6 };
+      tmp49Result = tmp49(callback4, obj16);
     }
-    items14[2] = tmp48Result;
-    items13[1] = ref1(closure_6, obj10);
-    items12[1] = callback2(closure_6, obj7);
-    const obj17 = { hasIcons: false, children: ref1(TableRow, obj18) };
-    const TableRowGroup = tmp6(tmp7[36]).TableRowGroup;
+    items15[2] = tmp49Result;
+    items14[1] = callback1(closure_6, obj10);
+    items13[1] = ref1(closure_6, obj7);
+    const obj17 = { hasIcons: false, children: callback1(TableRow, obj18) };
+    const TableRowGroup = tmp6(tmp7[35]).TableRowGroup;
     obj18 = {
       label: intl3.string(navigation(analyticsLocations[12]).t["+14vvU"]),
       arrow: true,
@@ -313,38 +317,38 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(10608, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(10933, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
-      trailing: ref1(Text, obj19)
+      trailing: callback1(Text, obj19)
     };
-    TableRow = tmp6(tmp7[37]).TableRow;
+    TableRow = tmp6(tmp7[36]).TableRow;
     intl3 = tmp6(tmp7[12]).intl;
     obj19 = { variant: "text-sm/medium", children: onClose(analyticsLocations[41])(first2) };
-    Text = tmp6(tmp7[33]).Text;
-    items12[2] = ref1(TableRowGroup, obj17);
-    let tmp48Result3 = null != customStatusActivity;
-    if (tmp48Result3) {
-      const obj20 = { hasIcons: true, children: ref1(TableRow2, obj21) };
-      const TableRowGroup2 = tmp6(tmp7[36]).TableRowGroup;
-      obj21 = { icon: ref1(TrashIcon, obj22), label: intl4.string(navigation(analyticsLocations[12]).t.wO53tu), onPress: callback1, variant: "danger" };
-      TableRow2 = tmp6(tmp7[37]).TableRow;
+    Text = tmp6(tmp7[32]).Text;
+    items13[2] = callback1(TableRowGroup, obj17);
+    let tmp49Result3 = null != customStatusActivity;
+    if (tmp49Result3) {
+      const obj20 = { hasIcons: true, children: callback1(TableRow2, obj21) };
+      const TableRowGroup2 = tmp6(tmp7[35]).TableRowGroup;
+      obj21 = { icon: callback1(TrashIcon, obj22), label: intl4.string(navigation(analyticsLocations[12]).t.wO53tu), onPress: callback2, variant: "danger" };
+      TableRow2 = tmp6(tmp7[36]).TableRow;
       obj22 = { color: onClose(analyticsLocations[9]).colors.TEXT_FEEDBACK_CRITICAL };
       TrashIcon = tmp6(tmp7[42]).TrashIcon;
       intl4 = tmp6(tmp7[12]).intl;
-      tmp48Result3 = tmp48(TableRowGroup2, obj20);
+      tmp49Result3 = tmp49(TableRowGroup2, obj20);
     }
-    items12[3] = tmp48Result3;
-    const tmp46Result = callback2(closure_6, obj5);
+    items13[3] = tmp49Result3;
+    const tmp47Result = ref1(closure_6, obj5);
     const tmp6Result = navigation(analyticsLocations[43]);
     if (tmp6Result.isAndroid()) {
-      const obj23 = { ref: ref3, keyboardShouldPersistTaps: "always", contentContainerStyle: obj24, children: tmp46Result };
+      const obj23 = { ref: ref3, keyboardShouldPersistTaps: "always", contentContainerStyle: obj24, children: tmp47Result };
       obj24 = { paddingBottom: insets.bottom };
-      tmp48Result4 = tmp48(value, obj23);
+      tmp49Result4 = tmp49(value, obj23);
     } else {
-      const obj25 = { keyboardShouldPersistTaps: "always", children: tmp46Result };
-      tmp48Result4 = tmp48(tmp6(tmp7[44]).KeyboardAwareScrollView, obj25);
+      const obj25 = { keyboardShouldPersistTaps: "always", children: tmp47Result };
+      tmp49Result4 = tmp49(tmp6(tmp7[44]).KeyboardAwareScrollView, obj25);
     }
-    return tmp48Result4;
+    return tmp49Result4;
   }
 }
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native2);
@@ -381,7 +385,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearI
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl7.t.VkKicb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -397,7 +401,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearI
   }
   if (cResult[3] !== tmp4.closeIcon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.SMALL };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp12 = map1(Icon, obj3);
     cResult[3] = tmp4.closeIcon;
     cResult[4] = tmp12;
@@ -450,7 +454,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2;
-      const tmpResult = analyticsLocations(1383);
+      const tmpResult = analyticsLocations(1385);
       if (!tmpResult.isAndroid()) {
         obj2 = { height: 56 };
       }
@@ -461,8 +465,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     }
     if (cResult[4] !== tmp4) {
       const obj3 = { initialRouteName: "root", screens: tmp4, headerStatusBarHeight: 12, headerStyle: tmp6 };
-      const Navigator = tmp(6688).Navigator;
-      analyticsLocations(1383);
+      const Navigator = tmp(6965).Navigator;
+      analyticsLocations(1385);
       const tmp8Result = closure_13(Navigator, obj3);
       cResult[4] = tmp4;
       cResult[5] = tmp8Result;
@@ -474,27 +478,27 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
   }
   const obj4 = { root: obj5 };
   obj5 = {
-    title: intl.string(analyticsLocations(1126).t.Iuzg8R),
+    title: intl.string(analyticsLocations(1128).t.Iuzg8R),
     headerTitle() {
       let intl;
       const obj = { title: intl.string(analyticsLocations(closure_1_2[12]).t.Iuzg8R) };
-      const GenericHeaderTitle = analyticsLocations(closure_1_2[31]).GenericHeaderTitle;
+      const GenericHeaderTitle = analyticsLocations(closure_1_2[30]).GenericHeaderTitle;
       intl = analyticsLocations(closure_1_2[12]).intl;
       return closure_1_13(GenericHeaderTitle, obj);
     },
-    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(5934).pop),
+    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(6190).pop),
     ignoreKeyboard: true,
     render(arg0, navigation) {
       const obj = { navigation, onClose: _prompt(closure_2_2[45]).pop, analyticsLocations, prompt: _prompt };
       return closure_2_13(closure_2_17, obj);
     }
   };
-  intl = tmp(1126).intl;
+  intl = tmp(1128).intl;
   cResult[0] = analyticsLocations;
   cResult[1] = _prompt;
   cResult[2] = obj4;
   tmp4 = obj4;
-  tmpResult4 = analyticsLocations(6201);
+  tmpResult4 = analyticsLocations(6478);
 }) : (function EditCustomStatusWithPreviewModal(analyticsLocations) {
   let obj3;
   analyticsLocations = analyticsLocations.analyticsLocations;
@@ -510,7 +514,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
       headerTitle() {
         let intl;
         const obj = { title: intl.string(analyticsLocations(closure_1_2[12]).t.Iuzg8R) };
-        const GenericHeaderTitle = analyticsLocations(closure_1_2[31]).GenericHeaderTitle;
+        const GenericHeaderTitle = analyticsLocations(closure_1_2[30]).GenericHeaderTitle;
         intl = analyticsLocations(closure_1_2[12]).intl;
         return closure_1_13(GenericHeaderTitle, obj);
       },
@@ -526,11 +530,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: obj3 };
-  const Navigator = analyticsLocations(6688).Navigator;
-  let obj2 = analyticsLocations(1383);
+  const Navigator = analyticsLocations(6965).Navigator;
+  let obj2 = analyticsLocations(1385);
   obj3 = undefined;
   const tmp2 = closure_13;
-  const tmp3Result = analyticsLocations(1383);
+  const tmp3Result = analyticsLocations(1385);
   if (!tmp3Result.isAndroid()) {
     obj3 = { height: 56 };
   }

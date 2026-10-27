@@ -1,16 +1,18 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 13011
+// Function ID: 13012
 // Name: SearchMemberTabStore
-// Dependencies: [2065, 1085, 8695, 4755, 6097, 504, 584, 2]
+// Dependencies: [2068, 1087, 8972, 4850, 6376, 504, 584, 2]
 
-// Module 12066 (SearchMemberTabStore)
+// Module 13011 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import _modDef8695 from "module_8695" /* 8695 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import Constants from "Constants" /* 1087 */;
+import GuildUtilsDefault from "GuildUtils" /* 6376 */;
+import _modDef8972 from "module_8972" /* 8972 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 const Permissions = Constants.Permissions;
 let closure_6 = [];
@@ -47,8 +49,8 @@ class GuildMemberSearchManager {
       }
     };
     const items = [];
-    const tmp2 = _modDef8695;
-    items[0] = obj(8695).AutocompleterResultTypes.USER;
+    const tmp2 = _modDef8972;
+    items[0] = obj(8972).AutocompleterResultTypes.USER;
     obj.autocompleter = new tmp2(obj.onAutocompleterResultsChange, items, 50);
     const autocompleter = obj.autocompleter;
     new tmp2(obj.onAutocompleterResultsChange, items, 50);
@@ -93,7 +95,7 @@ class SearchGuildMemberTabStoreImpl extends Store {
   }
   getResults(arg0) {
     const value = map.get(arg0);
-    let results;
+    results = undefined;
     if (value != null) {
       results = value.getResults();
     }
@@ -172,8 +174,8 @@ let obj = {
           }
         };
         let tmp2 = importDefault;
-        const tmp4 = _modDef8695;
-        let items = [obj2(8695).AutocompleterResultTypes.USER];
+        const tmp4 = _modDef8972;
+        let items = [obj2(8972).AutocompleterResultTypes.USER];
         const self = this;
         const self2 = this;
         obj2.autocompleter = new tmp4(obj2.onAutocompleterResultsChange, items, 50);

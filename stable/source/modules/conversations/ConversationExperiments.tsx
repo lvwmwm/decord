@@ -1,14 +1,14 @@
-// Module ID: 9331
-// Function ID: 9332
+// Module ID: 9635
+// Function ID: 9636
 // Name: ConversationExperiments
-// Dependencies: [2087, 1085, 1453, 558, 576, 504, 2]
+// Dependencies: [2090, 1087, 1455, 558, 576, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled
 
-// Module 9331 (ConversationExperiments)
+// Module 9635 (ConversationExperiments)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
+import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -247,10 +247,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConvers
   }
   return enabled;
 });
-function isConversationDebugUXEnabled(arg0, location) {
-  let tmp2 = null != arg0;
+function isConversationDebugUXEnabled(guildId, location) {
+  let tmp2 = null != guildId;
   if (tmp2) {
-    const guild = GuildStore.getGuild(arg0);
+    const guild = GuildStore.getGuild(guildId);
     let flag;
     if (guild != null) {
       const features = guild.features;

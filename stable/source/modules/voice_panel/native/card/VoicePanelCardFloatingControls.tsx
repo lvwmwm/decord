@@ -1,47 +1,47 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 18277
+// Function ID: 18278
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 5081, 2064, 5897, 5110, 11974, 11972, 11977, 1085, 5115, 21, 4850, 1200, 5092, 587, 558, 576, 11973, 17843, 17888, 11178, 17889, 17816, 1126, 11084, 8794, 8793, 6162, 6290, 5378, 17814, 7439, 5900, 10813, 17783, 17890, 17891, 504, 17873, 17892, 6762, 4827, 8851, 8878, 8233, 8876, 8874, 8854, 17893, 5362, 6852, 8299, 8805, 5628, 8849, 5088, 13028, 17894, 2]
+// Dependencies: [19, 17, 5181, 2067, 6153, 5209, 10680, 10678, 10683, 1087, 5214, 21, 4945, 1202, 5191, 587, 558, 576, 10679, 18228, 18278, 11564, 18279, 18202, 1128, 11470, 9071, 9070, 6439, 6567, 5478, 18200, 7710, 6156, 11046, 18169, 18280, 18281, 504, 18263, 18282, 7039, 4922, 9127, 9154, 8510, 9152, 9150, 9130, 18283, 5462, 7130, 8577, 9082, 5884, 9126, 5187, 13951, 18284, 2]
 
-// Module 17887 (VoicePanelCardFloatingControls)
+// Module 18277 (VoicePanelCardFloatingControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import spring from "spring" /* 5378 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import NativeViewDefault from "NativeView" /* 6162 */;
-import StreamActionCreators from "StreamActionCreators" /* 7439 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 8793 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8794 */;
-import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 8851 */;
-import GuildTagDefault from "GuildTag" /* 8854 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8876 */;
-import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 8878 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10813 */;
-import VoiceXIcon from "VoiceXIcon" /* 11084 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11973 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11977 */;
-import useStableParticipant from "useStableParticipant" /* 17814 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17816 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17843 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17873 */;
-import GameTagChipletDefault from "GameTagChiplet" /* 17893 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import spring from "spring" /* 5478 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
+import NativeViewDefault from "NativeView" /* 6439 */;
+import StreamActionCreators from "StreamActionCreators" /* 7710 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9070 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9071 */;
+import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 9127 */;
+import GuildTagDefault from "GuildTag" /* 9130 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 9152 */;
+import useResolveGameForProfileDefault from "useResolveGameForProfile" /* 9154 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10679 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11046 */;
+import VoiceXIcon from "VoiceXIcon" /* 11470 */;
+import useStableParticipant from "useStableParticipant" /* 18200 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 18202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18228 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 18263 */;
+import GameTagChipletDefault from "GameTagChiplet" /* 18283 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
-import CallConstants from "CallConstants" /* 5115 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
+import CallConstants from "CallConstants" /* 5214 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4850 */;
-import createStyles from "createStyles" /* 5092 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4945 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,8 +58,8 @@ let closure_16;
 let closure_17;
 let closure_18;
 let tmp;
-const native2 = tmp(4827);
-const useGameProfileObscuredDefault = tmp(8233);
+const native2 = tmp(4922);
+const useGameProfileObscuredDefault = tmp(8510);
 function getAccessibilityLabel(tmp4ResultResult, label) {
   if (null != tmp4ResultResult.find((type) => type.type === require("useVoicePanelCardUserStateIcons").VoicePanelCardUserStateIconType.STREAM_ICON)) {
     const intl3 = intl5.intl;
@@ -71,12 +71,12 @@ function getAccessibilityLabel(tmp4ResultResult, label) {
       const muteDeafenIconState = found.muteDeafenIconState;
       if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED !== muteDeafenIconState) {
         if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER !== muteDeafenIconState) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const obj = { username: label };
           return intl.formatToPlainString(intl5.t.Hd1oVG, obj);
         }
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj3 = { username: label };
       return intl2.formatToPlainString(intl5.t["9hDjai"], obj3);
     } else {
@@ -138,15 +138,15 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   fn.__closure = obj3;
   fn.__workletHash = 3270040588948;
   fn.__initData = __initData;
-  const obj2 = controlsSpecs(4850);
+  const obj2 = controlsSpecs(4945);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let tmp4Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp4Result = tmp4(17888);
+    tmp4Result = tmp4(18278);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp4Result = tmp4(11178);
+    tmp4Result = tmp4(11564);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp4Result = tmp4(17889);
+    tmp4Result = tmp4(18279);
   }
   if (cResult[0] === animatedStyle) {
     let tmp8;
@@ -179,7 +179,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   voicePlatform = voicePlatform.voicePlatform;
   let tmp = closure_22();
   const controlsSpecs = react.useContext(VoicePanelStateContextDefault).controlsSpecs;
-  let obj = controlsSpecs(4850);
+  let obj = controlsSpecs(4945);
   const fn = function o() {
     let num2;
     const tmp = controlsSpecs.get().mode === VoicePanelControlsModes.HIDDEN;
@@ -201,11 +201,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Stream
   const animatedStyle = obj.useAnimatedStyle(fn);
   let tmp2Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(17888);
+    tmp2Result = tmp2(18278);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp2Result = tmp2(11178);
+    tmp2Result = tmp2(11564);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp2Result = tmp2(17889);
+    tmp2Result = tmp2(18279);
   }
   const obj3 = { source: tmp2Result, style: items };
   items = [tmp.iconWithoutBackground, animatedStyle];
@@ -239,7 +239,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     const speakerMuteIcon = tmp4.speakerMuteIcon;
     const onPress2 = icon.onPress;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
+      const intl4 = tmp(1128).intl;
       const stringResult = intl4.string(intl5.t.Q8Uzof);
       cResult[2] = stringResult;
       tmp38 = stringResult;
@@ -277,11 +277,11 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     if (cResult[9] !== icon.videoIconState) {
       let stringResult1;
       if (icon.videoIconState === VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
-        const intl3 = tmp(1126).intl;
-        stringResult1 = intl3.string(tmp(1126).t.uv1tVh);
+        const intl3 = tmp(1128).intl;
+        stringResult1 = intl3.string(tmp(1128).t.uv1tVh);
       } else {
-        const intl2 = tmp(1126).intl;
-        stringResult1 = intl2.string(tmp(1126).t["PXMZ/+"]);
+        const intl2 = tmp(1128).intl;
+        stringResult1 = intl2.string(tmp(1128).t["PXMZ/+"]);
       }
       cResult[9] = icon.videoIconState;
       cResult[10] = stringResult1;
@@ -364,10 +364,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     const iconContainer = tmp4.iconContainer;
     const onPress = icon.onPress;
     if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult2 = intl.string(intl5.t.HFwRpk);
       const obj12 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-      const CircleErrorIcon = tmp(6290).CircleErrorIcon;
+      const CircleErrorIcon = tmp(6567).CircleErrorIcon;
       const tmp11 = authStore4(CircleErrorIcon, obj12);
       cResult[26] = stringResult2;
       cResult[27] = tmp11;
@@ -409,18 +409,18 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     return authStore4(closure_25, obj2);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     const obj3 = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl4.string(intl5.t.Q8Uzof), children: authStore4(VoiceXIcon.VoiceXIcon, obj4) };
-    intl4 = tmp2(1126).intl;
+    intl4 = tmp2(1128).intl;
     obj4 = { style: tmp.iconWithoutBackground };
     return authStore4(Pressable, obj3);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     let stringResult;
     let tmp16;
     if (icon.videoIconState === VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
-      const intl3 = tmp2(1126).intl;
-      stringResult = intl3.string(tmp2(1126).t.uv1tVh);
+      const intl3 = tmp2(1128).intl;
+      stringResult = intl3.string(tmp2(1128).t.uv1tVh);
     } else {
-      const intl2 = tmp2(1126).intl;
-      stringResult = intl2.string(tmp2(1126).t["PXMZ/+"]);
+      const intl2 = tmp2(1128).intl;
+      stringResult = intl2.string(tmp2(1128).t["PXMZ/+"]);
     }
     if (null != icon.onPress) {
       const obj5 = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: stringResult, children: authStore4(VoiceStateIcons.VideoIcon, obj6) };
@@ -441,9 +441,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     return authStore4(tmp9, obj9);
   } else if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     const obj = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: intl.string(intl5.t.HFwRpk), children: authStore4(CircleErrorIcon, obj12) };
-    intl = tmp2(1126).intl;
+    intl = tmp2(1128).intl;
     obj12 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-    CircleErrorIcon = tmp2(6290).CircleErrorIcon;
+    CircleErrorIcon = tmp2(6567).CircleErrorIcon;
     return authStore4(Pressable, obj);
   }
 });
@@ -518,7 +518,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
   participant = participant.participant;
   ({ isSelf, layout } = participant);
   const controlsHidden = participant.controlsHidden;
-  guildId = react.useContext(guildId(11973)).guildId;
+  guildId = react.useContext(guildId(10679)).guildId;
   const tmp5 = closure_30(controlsHidden);
   if (cResult[0] === guildId) {
     let tmp6;
@@ -542,8 +542,8 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
           }
         }
       }
-      let obj2 = { icon: tmp4(17890), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
-      const tmp4Result = guildId(17783);
+      let obj2 = { icon: tmp4(18280), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
+      const tmp4Result = guildId(18169);
       const tmp13 = closure_16(tmp4Result, obj2);
       cResult[6] = tmp6;
       cResult[7] = layout;
@@ -552,11 +552,11 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
       cResult[10] = tmp13;
       tmp10 = tmp13;
     }
-    const tmpResult = tmp(17814);
+    const tmpResult = tmp(18200);
     let result = tmpResult.isStableActivityParticipant(participant);
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (result) {
       stringResult = string(t["R/FK4A"]);
     } else if (isSelf) {
@@ -605,7 +605,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
   participant = participant.participant;
   let guildId;
   ({ controlsHidden, isSelf, layout } = participant);
-  guildId = react.useContext(guildId(11973)).guildId;
+  guildId = react.useContext(guildId(10679)).guildId;
   const items = [guildId, participant];
   const tmp = closure_30(controlsHidden);
   const callback = react.useCallback(() => {
@@ -633,13 +633,13 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
     }
   }, items);
   const tmp3 = closure_16;
-  let obj = { icon: guildId(17890), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
-  const tmp4 = guildId(17783);
-  let obj2 = participant(17814);
+  let obj = { icon: guildId(18280), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
+  const tmp4 = guildId(18169);
+  let obj2 = participant(18200);
   let result = obj2.isStableActivityParticipant(participant);
-  const intl = participant(1126).intl;
+  const intl = participant(1128).intl;
   const string = intl.string;
-  const t = participant(1126).t;
+  const t = participant(1128).t;
   if (result) {
     stringResult = string(t["R/FK4A"]);
   } else if (isSelf) {
@@ -1128,8 +1128,8 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   } else {
     tmp6 = cResult[1];
   }
-  gameRecord = tmp3(8878)(tmp6).gameRecord;
-  let tmp7 = tmp3(8233)(gameRecord);
+  gameRecord = tmp3(9154)(tmp6).gameRecord;
+  let tmp7 = tmp3(8510)(gameRecord);
   importDefault = tmp7;
   dependencyMap = react.useRef(false);
   const obj3 = react;

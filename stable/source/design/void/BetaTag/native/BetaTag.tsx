@@ -1,20 +1,20 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 13821
+// Function ID: 13822
 // Name: BetaTag
-// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 1126, 5088, 5391, 1105, 2]
+// Dependencies: [19, 17, 7423, 21, 5191, 587, 558, 576, 1128, 5187, 5491, 1107, 2]
 
-// Module 12895 (BetaTag)
+// Module 13821 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BetaTag(ar
         }
         const _Symbol2 = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const stringResult = intl2.string(intl3.t.oW0eUd);
           cResult[6] = stringResult;
           tmp22 = stringResult;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BetaTag(ar
         }
         const _Symbol = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const stringResult1 = intl.string(intl3.t.oW0eUd);
           cResult[19] = stringResult1;
           tmp10 = stringResult1;

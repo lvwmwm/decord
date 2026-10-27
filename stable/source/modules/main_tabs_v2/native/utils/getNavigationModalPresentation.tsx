@@ -1,17 +1,18 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9934
+// Function ID: 9935
 // Name: getNavigationModalPresentation
-// Dependencies: [1382, 6627, 5068, 8446, 2]
+// Dependencies: [1384, 6904, 5167, 8724, 1499, 2]
 // Exports: default
 
-// Module 9633 (getNavigationModalPresentation)
-import DeviceUtils from "DeviceUtils" /* 5068 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 6627 */;
-import DeviceOrientation from "DeviceOrientation" /* 8446 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
-import size from "module_2" /* 2 */;
+// Module 9934 (getNavigationModalPresentation)
+import DeviceUtils from "DeviceUtils" /* 5167 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 6904 */;
+import DeviceOrientation from "DeviceOrientation" /* 8724 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import size_mod from "module_2" /* 2 */;
 
 let str;
+let tmp3;
 let PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isAndroid()) {
   const _module1 = useIsWindowLarge;
@@ -27,8 +28,15 @@ if (PlatformUtils.isAndroid()) {
     str = "fullScreenModal";
   }
 }
-let obj = { presentation: str, lockOrientation: !PlatformUtils.isAndroid() };
+let obj = { presentation: str, lockOrientation: tmp3 };
 PlatformUtils = PlatformUtils_mod;
+PlatformUtils = PlatformUtils.isAndroid();
+tmp3 = !PlatformUtils;
+if (tmp3) {
+  const _module4 = DeviceUtils;
+  tmp3 = !_module4.isIpadOS();
+}
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx");
 
 export default function getNavigationModalPresentation() {
@@ -51,16 +59,19 @@ export default function getNavigationModalPresentation() {
   if (lockOrientation) {
     const obj2 = DeviceOrientation;
     const orientationLock = obj2.getOrientationLock();
-    let str2 = "landscape";
     let str4 = "landscape";
+    const tmp5 = require;
     if ("LANDSCAPE" !== orientationLock) {
-      if (null != orientationLock) {
-        str2 = "portrait";
-      } else {
-        const tmp5Result = DeviceOrientation;
-        const orientation = tmp5Result.getOrientation();
+      let str5 = "portrait";
+      str4 = "portrait";
+      if (null == orientationLock) {
+        const tmp5Result = tmp5(1499);
+        size = tmp5Result.getWindowDimensions({ ignoreKeyboard: true });
+        if (size.width > size.height) {
+          str5 = "landscape";
+        }
+        str4 = str5;
       }
-      str4 = str2;
     }
     tmp4 = str4;
   }

@@ -1,10 +1,10 @@
-// Module ID: 6093
-// Function ID: 6094
+// Module ID: 6372
+// Function ID: 6373
 // Name: autocompleter/AutocompleterConstants
 // Dependencies: [2]
 // Exports: HeaderRecord
 
-// Module 6093 (autocompleter/AutocompleterConstants)
+// Module 6372 (autocompleter/AutocompleterConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");

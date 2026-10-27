@@ -1,23 +1,23 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 9034
+// Function ID: 9035
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 8758, 6665, 6307, 2]
+// Dependencies: [19, 1087, 21, 5191, 6162, 587, 558, 576, 1128, 1202, 5155, 5073, 6462, 5187, 9035, 6942, 7091, 2]
 
-// Module 8757 (InstantInviteFriendsList)
+// Module 9034 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6185 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 8758 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Pressables from "Pressables" /* 6462 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9035 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import TextStyles_mod from "TextStyles" /* 5906 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import TextStyles_mod from "TextStyles" /* 6162 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,9 +51,9 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
   const cResult = obj.c(14);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl5.t.dz4UlO);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl5.t.MBQBI7);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -91,7 +91,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult2 = intl3.string(intl5.t.a7FVbE);
       const rect = { top: 8, left: 8, bottom: 8, right: 8 };
       cResult[6] = stringResult2;
@@ -105,7 +105,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     const _Symbol3 = Symbol;
     const goToFriendsLink = tmp4.goToFriendsLink;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
+      const intl4 = tmp(1128).intl;
       const stringResult3 = intl4.string(intl5.t.a7FVbE);
       cResult[8] = stringResult3;
       tmp15 = stringResult3;
@@ -114,7 +114,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     }
     if (cResult[9] !== tmp4.goToFriendsLink) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6185).PressableOpacity;
+      const PressableOpacity = tmp(6462).PressableOpacity;
       obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
       const tmp19 = React3(PressableOpacity, obj2);
       cResult[9] = tmp4.goToFriendsLink;
@@ -233,7 +233,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
             }
           }
           const obj4 = { contentContainerStyle: tmp9, bounces: false, renderItem: tmp4, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
-          const tmp14 = source(tmp(onInviteSent[16]).BottomSheetFlatList, obj4);
+          const tmp14 = source(tmp(onInviteSent[16]).BottomSheetFlashList, obj4);
           cResult[9] = data;
           cResult[10] = tmp4;
           cResult[11] = tmp9;
@@ -271,8 +271,8 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
   const insets = onPressAvatar(onInviteSent[15])({ isKeyboardAwareOnAndroid: false }).insets;
   let obj = { contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
   obj2 = { paddingBottom: onPressAvatar(onInviteSent[5]).space.PX_16 + insets.bottom, paddingHorizontal: onPressAvatar(onInviteSent[5]).space.PX_12 };
-  const BottomSheetFlatList = code(onInviteSent[16]).BottomSheetFlatList;
-  return source(BottomSheetFlatList, obj);
+  const BottomSheetFlashList = code(onInviteSent[16]).BottomSheetFlashList;
+  return source(BottomSheetFlashList, obj);
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
 

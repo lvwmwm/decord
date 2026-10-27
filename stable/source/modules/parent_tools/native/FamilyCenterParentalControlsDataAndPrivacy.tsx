@@ -1,17 +1,17 @@
-// Module ID: 15217
-// Function ID: 15218
+// Module ID: 15979
+// Function ID: 15980
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1085, 7988, 21, 558, 576, 1126, 2568, 2128, 10664, 14970, 2]
+// Dependencies: [19, 1087, 8260, 21, 558, 576, 1128, 2589, 2131, 11084, 15732, 2]
 
-// Module 15217 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 15979 (FamilyCenterParentalControlsDataAndPrivacy)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
-import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import Constants from "Constants" /* 1087 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import _modDef2589 from "module_2589" /* 2589 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,34 +48,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { settings: items, subLabel: format(Z5yJZy, obj3) };
     items = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_STATISTICS];
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     format = intl.format;
     obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2568.Z5yJZy;
+    Z5yJZy = _modDef2589.Z5yJZy;
     const items1 = [obj2, , , ];
     obj4 = HelpdeskUtilsDefault;
     const obj5 = { settings: items2, subLabel: format2(Imp6Ns, obj6) };
     items2 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_PERSONALIZATION];
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     format2 = intl2.format;
     obj6 = { helpdeskArticle: obj7.getArticleURL(HelpdeskArticles.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2568.Imp6Ns;
+    Imp6Ns = _modDef2589.Imp6Ns;
     items1[1] = obj5;
     obj7 = HelpdeskUtilsDefault;
     const obj8 = { settings: items3, subLabel: format3(cnCK6b, obj9) };
     items3 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS];
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     format3 = intl3.format;
     obj9 = { helpdeskArticle: obj10.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2568.cnCK6b;
+    cnCK6b = _modDef2589.cnCK6b;
     items1[2] = obj8;
     obj10 = HelpdeskUtilsDefault;
     const obj11 = { settings: items4, subLabel: format4(v6mK5Pz, obj12) };
     items4 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS_3P];
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     format4 = intl4.format;
     obj12 = { helpdeskArticle: obj13.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2568["6mK5Pz"];
+    v6mK5Pz = _modDef2589["6mK5Pz"];
     items1[3] = obj11;
     cResult[0] = items1;
     first = items1;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     const intl = memo(dependencyMap[6]).intl;
     format = intl.format;
     obj2 = { helpdeskArticle: obj3.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2568.Z5yJZy;
+    Z5yJZy = _modDef2589.Z5yJZy;
     const items1 = [obj, , , ];
     obj3 = HelpdeskUtilsDefault;
     const obj4 = { settings: items2, subLabel: format2(Imp6Ns, obj5) };
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     const intl2 = memo(dependencyMap[6]).intl;
     format2 = intl2.format;
     obj5 = { helpdeskArticle: obj6.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2568.Imp6Ns;
+    Imp6Ns = _modDef2589.Imp6Ns;
     items1[1] = obj4;
     obj6 = HelpdeskUtilsDefault;
     const obj7 = { settings: items3, subLabel: format3(cnCK6b, obj8) };
@@ -143,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     const intl3 = memo(dependencyMap[6]).intl;
     format3 = intl3.format;
     obj8 = { helpdeskArticle: obj9.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2568.cnCK6b;
+    cnCK6b = _modDef2589.cnCK6b;
     items1[2] = obj7;
     obj9 = HelpdeskUtilsDefault;
     const obj10 = { settings: items4, subLabel: format4(v6mK5Pz, obj11) };
@@ -151,7 +151,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     const intl4 = memo(dependencyMap[6]).intl;
     format4 = intl4.format;
     obj11 = { helpdeskArticle: obj12.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2568["6mK5Pz"];
+    v6mK5Pz = _modDef2589["6mK5Pz"];
     items1[3] = obj10;
     obj12 = HelpdeskUtilsDefault;
     return items1;

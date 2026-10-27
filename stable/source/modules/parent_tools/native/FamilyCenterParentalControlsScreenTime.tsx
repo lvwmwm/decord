@@ -1,15 +1,15 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15980
+// Function ID: 15981
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 12573, 1126, 2568, 5088, 6180, 15177, 1503, 6265, 2]
+// Dependencies: [17, 1087, 21, 5191, 587, 558, 576, 13509, 1128, 2589, 5187, 6457, 15939, 1505, 6542, 2]
 
-// Module 15218 (FamilyCenterParentalControlsScreenTime)
+// Module 15980 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import _modDef2568 from "module_2568" /* 2568 */;
+import Constants from "Constants" /* 1087 */;
+import _modDef2589 from "module_2589" /* 2589 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,16 +146,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedul
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(12573);
+  let obj = rule(13509);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(12573);
+  let obj2 = rule(13509);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6180).TableRow;
-  Text = rule(5088).Text;
+  const TableRow = rule(6457).TableRow;
+  Text = rule(5187).Text;
   const enabled = rule.enabled;
-  const intl = rule(1126).intl;
+  const intl = rule(1128).intl;
   const string = intl.string;
-  const tmp4 = _modDef2568;
+  const tmp4 = _modDef2589;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -398,7 +398,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2568")["72CmJd"]) };
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2589")["72CmJd"]) };
     const Text = tmp2(tmp3[10]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

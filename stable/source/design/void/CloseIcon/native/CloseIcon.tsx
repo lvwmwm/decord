@@ -1,12 +1,12 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 15170
+// Function ID: 15171
 // Name: CloseIcon
-// Dependencies: [109, 19, 21, 558, 576, 7572, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7843, 2]
 
-// Module 14404 (CloseIcon)
+// Module 15170 (CloseIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7572 */;
+import inlineStyles from "inlineStyles" /* 7843 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Close(arg0
       }
     }
   }
-  const Svg = tmp(7572).Svg;
+  const Svg = tmp(7843).Svg;
   const merged = Object.assign(tmp4);
   const tmp16 = <Svg width={num7} height={num6} viewBox="0 0 24 24">{tmp11}</Svg>;
   cResult[7] = num6;

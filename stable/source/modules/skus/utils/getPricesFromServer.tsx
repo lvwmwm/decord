@@ -1,11 +1,11 @@
-// Module ID: 6091
-// Function ID: 6092
+// Module ID: 6306
+// Function ID: 6307
 // Name: getPricesFromServer
-// Dependencies: [4770, 2]
+// Dependencies: [4865, 2]
 // Exports: default
 
-// Module 6091 (getPricesFromServer)
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4770 */;
+// Module 6306 (getPricesFromServer)
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4865 */;
 import size from "module_2" /* 2 */;
 
 const getPriceFromServer = SubscriptionPlanRecord.getPriceFromServer;

@@ -1,24 +1,24 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 9130
+// Function ID: 9131
 // Name: GuildTag
-// Dependencies: [19, 17, 1390, 7883, 21, 5092, 587, 1382, 558, 576, 1126, 6157, 5088, 6185, 504, 8285, 5056, 8855, 2000, 2]
+// Dependencies: [19, 17, 1392, 8155, 21, 5191, 587, 1384, 558, 576, 1128, 5128, 5187, 6462, 504, 8563, 5155, 9131, 2002, 2]
 
-// Module 8854 (GuildTag)
+// Module 9130 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import GuildTagConstants from "GuildTagConstants" /* 7883 */;
-import GuildTagUtils from "GuildTagUtils" /* 8285 */;
+import intl2 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
+import GuildTagUtils from "GuildTagUtils" /* 8563 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp9;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.HHYPgJ);
       cResult[0] = stringResult;
       first = stringResult;

@@ -1,12 +1,12 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 11479
+// Function ID: 11480
 // Name: WindowsEffectsExperiment
-// Dependencies: [1259, 1453, 558, 576, 504, 2]
+// Dependencies: [1261, 1455, 558, 576, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig
 
-// Module 11093 (WindowsEffectsExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 11479 (WindowsEffectsExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

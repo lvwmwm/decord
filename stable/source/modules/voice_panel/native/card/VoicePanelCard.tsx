@@ -1,46 +1,46 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 18256
+// Function ID: 18257
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 5897, 5110, 5947, 11974, 11972, 17801, 11977, 1085, 5115, 11975, 21, 4850, 5088, 5391, 1200, 5092, 587, 558, 576, 7439, 5900, 6162, 1126, 5379, 11973, 504, 10886, 5137, 13168, 10888, 10885, 17867, 10894, 9025, 8373, 5093, 5378, 6157, 6762, 4818, 10908, 17869, 11579, 9576, 4827, 6852, 17802, 17814, 17800, 17870, 8299, 17871, 6335, 17872, 11976, 17873, 17874, 17875, 17876, 17877, 17887, 2]
+// Dependencies: [32, 19, 17, 6153, 5209, 6203, 10680, 10678, 18187, 10683, 1087, 5214, 10681, 21, 4945, 5187, 5491, 1202, 5191, 587, 558, 576, 504, 7710, 6156, 6439, 1128, 5479, 10679, 11281, 5236, 14088, 11283, 11280, 18257, 11289, 18137, 5192, 5478, 9321, 5128, 7039, 4913, 11302, 18259, 11906, 9878, 4922, 7130, 18188, 18200, 18186, 18260, 8577, 18261, 6612, 18262, 10682, 18263, 18264, 18265, 18266, 18267, 18277, 2]
 
-// Module 17866 (VoicePanelCard)
+// Module 18256 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import native2 from "native" /* 4827 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import CallConstants from "CallConstants" /* 5115 */;
-import spring from "spring" /* 5378 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7439 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9576 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11579 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11975 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11977 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17800 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17801 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17869 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17870 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import native2 from "native" /* 4922 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import timing from "timing" /* 5192 */;
+import CallConstants from "CallConstants" /* 5214 */;
+import spring from "spring" /* 5478 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
+import StreamActionCreators from "StreamActionCreators" /* 7710 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11906 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18186 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18187 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18259 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18260 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 5897 */;
-import RTCConnectionStore_mod from "RTCConnectionStore" /* 5110 */;
-import SpeakingStore from "SpeakingStore" /* 5947 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
+import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6153 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 5209 */;
+import SpeakingStore from "SpeakingStore" /* 6203 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexport_mod = ReanimatedRexport2;
-let _require, dependencyMap, importDefault, obj1, set;
+let _require, currentUserActiveStream, dependencyMap, importDefault, obj1, set;
 
 let c10;
 let c9;
@@ -102,21 +102,43 @@ let __initData = { code: "function VoicePanelCardTsx1(){const{isFocused,sharedCo
 const __initData2 = { code: "function VoicePanelCardTsx2(){const{isFocused,sharedCoords}=this.__closure;return{textAlign:'center',paddingHorizontal:16,paddingVertical:isFocused?0:16,width:isFocused?'auto':sharedCoords.get().width};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 const defaultBorderRadius2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelfStreamCard(sharedCoords) {
-  let intl2;
   let intl3;
   let isFocused;
-  let items;
   let items1;
+  let items2;
+  let string2Result;
   let tmp5;
+  let tmp6;
+  let tmp9;
   const tmp = sharedCoords;
   let obj = sharedCoords(isFocused[21]);
-  const cResult = obj.c(18);
+  const cResult = obj.c(23);
   sharedCoords = sharedCoords.sharedCoords;
   const stream = sharedCoords.stream;
   isFocused = sharedCoords.isFocused;
   const tmp4 = closure_29();
-  if (cResult[0] !== stream) {
-    const fn = function s() {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApplicationStreamingStore];
+    const fn = function n() {
+      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+      let state;
+      if (currentUserActiveStream != null) {
+        state = currentUserActiveStream.state;
+      }
+      return state === constants.PAUSED;
+    };
+    let num = 0;
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(isFocused[22]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== stream) {
+    const fn2 = function p() {
       if (null != stream) {
         const stopStream = StreamActionCreators.stopStream;
         StreamActionCreators;
@@ -124,14 +146,13 @@ const defaultBorderRadius2 = ReactCompilerGating.isReactCompilerEnabled() ? (fun
         stopStream(obj.encodeStreamKey(tmp));
       }
     };
-    let num = 0;
-    cResult[0] = stream;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[2] = stream;
+    cResult[3] = fn2;
+    tmp9 = fn2;
   } else {
-    tmp5 = cResult[1];
+    tmp9 = cResult[3];
   }
-  const fn2 = function h() {
+  const fn3 = function f() {
     let str;
     let num = 16;
     if (isFocused) {
@@ -144,111 +165,142 @@ const defaultBorderRadius2 = ReactCompilerGating.isReactCompilerEnabled() ? (fun
     }
     return obj;
   };
-  fn2.__closure = { isFocused, sharedCoords };
-  fn2.__workletHash = 1330083185339;
-  fn2.__initData = __initData;
-  const tmpResult = tmp(isFocused[14]);
-  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
-  if (cResult[2] === isFocused) {
-    let tmp8;
-    let tmp13;
-    if (cResult[3] === tmp4.blackBackground) {
-      tmp8 = cResult[4];
+  fn3.__closure = { isFocused, sharedCoords };
+  fn3.__workletHash = 1330083185339;
+  fn3.__initData = __initData;
+  const tmpResult2 = tmp(isFocused[14]);
+  const animatedStyle = tmpResult2.useAnimatedStyle(fn3);
+  if (cResult[4] === isFocused) {
+    let tmp11;
+    let tmp15;
+    if (cResult[5] === tmp4.blackBackground) {
+      tmp11 = cResult[6];
     }
     let str = "text-sm/semibold";
     if (isFocused) {
       str = "text-lg/semibold";
     }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(tmp2[25]).intl;
-      const stringResult = intl.string(tmp(isFocused[25]).t.gMOwov);
-      cResult[5] = stringResult;
-      tmp13 = stringResult;
-    } else {
-      tmp13 = cResult[5];
-    }
-    if (cResult[6] === str) {
-      let tmp15;
-      if (cResult[7] === animatedStyle) {
-        tmp15 = cResult[8];
+    if (cResult[7] !== stateFromStores) {
+      let stringResult;
+      const intl = tmp(tmp2[26]).intl;
+      const string = intl.string;
+      const t = tmp(tmp2[26]).t;
+      if (stateFromStores) {
+        stringResult = string(t["5q17w5"]);
+      } else {
+        stringResult = string(t.gMOwov);
       }
-      if (cResult[9] === tmp5) {
-        if (cResult[10] === isFocused) {
-          let tmp19;
-          if (cResult[11] === tmp4.selfStreamFocusedSubtitle) {
-            tmp19 = cResult[12];
-          }
-          if (cResult[13] === tmp4.nonUserRoundedCard) {
-            if (cResult[14] === tmp8) {
-              if (cResult[15] === tmp15) {
-                let tmp24;
-                if (cResult[16] === tmp19) {
-                  tmp24 = cResult[17];
-                }
-                return tmp24;
+      cResult[7] = stateFromStores;
+      cResult[8] = stringResult;
+      tmp15 = stringResult;
+    } else {
+      tmp15 = cResult[8];
+    }
+    if (cResult[9] === str) {
+      if (cResult[10] === tmp15) {
+        let tmp17;
+        if (cResult[11] === animatedStyle) {
+          tmp17 = cResult[12];
+        }
+        if (cResult[13] === tmp9) {
+          if (cResult[14] === isFocused) {
+            if (cResult[15] === stateFromStores) {
+              let tmp21;
+              if (cResult[16] === tmp4.selfStreamFocusedSubtitle) {
+                tmp21 = cResult[17];
               }
+              if (cResult[18] === tmp4.nonUserRoundedCard) {
+                if (cResult[19] === tmp11) {
+                  if (cResult[20] === tmp17) {
+                    let tmp27;
+                    if (cResult[21] === tmp21) {
+                      tmp27 = cResult[22];
+                    }
+                    return tmp27;
+                  }
+                }
+              }
+              const obj2 = { style: tmp4.nonUserRoundedCard, children: items1 };
+              items1 = [tmp11, tmp17, tmp21];
+              const tmp30 = closure_22(stream(isFocused[25]), obj2);
+              cResult[18] = tmp4.nonUserRoundedCard;
+              cResult[19] = tmp11;
+              cResult[20] = tmp17;
+              cResult[21] = tmp21;
+              cResult[22] = tmp30;
+              tmp27 = tmp30;
             }
           }
-          const obj2 = { style: tmp7, children: items };
-          items = [tmp8, tmp15, tmp19];
-          const tmp27 = closure_22(stream(isFocused[24]), obj2);
-          cResult[13] = tmp4.nonUserRoundedCard;
-          cResult[14] = tmp8;
-          cResult[15] = tmp15;
-          cResult[16] = tmp19;
-          cResult[17] = tmp27;
-          tmp24 = tmp27;
         }
+        let tmp23Result = null;
+        if (isFocused) {
+          const obj3 = { style: tmp4.selfStreamFocusedSubtitle, variant: "text-sm/medium", color: "text-overlay-light", children: string2Result };
+          const Text = tmp(tmp2[15]).Text;
+          const intl2 = tmp(tmp2[26]).intl;
+          const string2 = intl2.string;
+          const t2 = tmp(tmp2[26]).t;
+          const tmp23 = closure_22;
+          const tmp24 = closure_21;
+          if (stateFromStores) {
+            string2Result = string2(t2.LV1NSN);
+          } else {
+            string2Result = string2(t2.dKeLGt);
+          }
+          const obj4 = { children: items2 };
+          items2 = [closure_20(Text, obj3), ];
+          const obj5 = { size: "lg", variant: "primary-overlay", onPress: tmp9, text: intl3.string(tmp(isFocused[26]).t.CpkXwZ) };
+          const Button = tmp(tmp2[27]).Button;
+          intl3 = tmp(tmp2[26]).intl;
+          items2[1] = closure_20(Button, obj5);
+          tmp23Result = tmp23(tmp24, obj4);
+        }
+        cResult[13] = tmp9;
+        cResult[14] = isFocused;
+        cResult[15] = stateFromStores;
+        cResult[16] = tmp4.selfStreamFocusedSubtitle;
+        cResult[17] = tmp23Result;
+        tmp21 = tmp23Result;
       }
-      let tmp20 = null;
-      if (isFocused) {
-        const obj3 = { children: items1 };
-        const obj4 = { style: tmp4.selfStreamFocusedSubtitle, variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(tmp(isFocused[25]).t.dKeLGt) };
-        const Text = tmp(tmp2[15]).Text;
-        intl2 = tmp(tmp2[25]).intl;
-        items1 = [closure_20(Text, obj4), ];
-        const obj5 = { size: "lg", variant: "primary-overlay", onPress: tmp5, text: intl3.string(tmp(isFocused[25]).t.CpkXwZ) };
-        const Button = tmp(tmp2[26]).Button;
-        intl3 = tmp(tmp2[25]).intl;
-        items1[1] = closure_20(Button, obj5);
-        tmp20 = closure_22(closure_21, obj3);
-      }
-      cResult[9] = tmp5;
-      cResult[10] = isFocused;
-      cResult[11] = tmp4.selfStreamFocusedSubtitle;
-      cResult[12] = tmp20;
-      tmp19 = tmp20;
     }
-    const obj6 = { style: animatedStyle, variant: str, color: "text-overlay-light", children: tmp13 };
-    const tmp18 = closure_20(closure_23, obj6);
-    cResult[6] = str;
-    cResult[7] = animatedStyle;
-    cResult[8] = tmp18;
-    tmp15 = tmp18;
+    const obj6 = { style: animatedStyle, variant: str, color: "text-overlay-light", children: tmp15 };
+    const tmp20 = closure_20(closure_23, obj6);
+    cResult[9] = str;
+    cResult[10] = tmp15;
+    cResult[11] = animatedStyle;
+    cResult[12] = tmp20;
+    tmp17 = tmp20;
   }
-  let tmp9 = isFocused;
-  if (tmp9) {
+  let tmp12 = isFocused;
+  if (tmp12) {
     const obj7 = { style: tmp4.blackBackground };
-    tmp9 = closure_20(stream(tmp2[24]), obj7);
+    tmp12 = closure_20(stream(tmp2[25]), obj7);
   }
-  cResult[2] = isFocused;
-  cResult[3] = tmp4.blackBackground;
-  cResult[4] = tmp9;
-  tmp8 = tmp9;
+  cResult[4] = isFocused;
+  cResult[5] = tmp4.blackBackground;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
 }) : (function SelfStreamCard(sharedCoords) {
-  let intl;
-  let intl2;
   let intl3;
-  let items1;
   let items2;
+  let items3;
   let str;
+  let string2Result;
+  let stringResult;
   sharedCoords = sharedCoords.sharedCoords;
   const stream = sharedCoords.stream;
   const isFocused = sharedCoords.isFocused;
   const tmp = closure_29();
-  const items = [stream];
-  const tmp4 = isFocused;
+  let obj = sharedCoords(isFocused[22]);
+  const items = [ApplicationStreamingStore];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+    let state;
+    if (currentUserActiveStream != null) {
+      state = currentUserActiveStream.state;
+    }
+    return state === constants.PAUSED;
+  });
+  const items1 = [stream];
   const callback = react.useCallback(() => {
     if (null != stream) {
       const stopStream = StreamActionCreators.stopStream;
@@ -256,9 +308,8 @@ const defaultBorderRadius2 = ReactCompilerGating.isReactCompilerEnabled() ? (fun
       const obj = StreamKeyUtils;
       stopStream(obj.encodeStreamKey(tmp));
     }
-  }, items);
-  let obj = sharedCoords(isFocused[14]);
-  const fn = function l() {
+  }, items1);
+  const fn = function c() {
     let str;
     let num = 16;
     if (isFocused) {
@@ -274,39 +325,55 @@ const defaultBorderRadius2 = ReactCompilerGating.isReactCompilerEnabled() ? (fun
   fn.__closure = { isFocused, sharedCoords };
   fn.__workletHash = 4905346923512;
   fn.__initData = __initData2;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  let tmp9 = isFocused;
-  const obj2 = { style: tmp.nonUserRoundedCard, children: items1 };
-  const tmp7 = stream;
-  const tmp8 = stream(isFocused[24]);
+  const obj2 = sharedCoords(isFocused[14]);
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let tmp10 = isFocused;
+  const obj3 = { style: tmp.nonUserRoundedCard, children: items2 };
+  const tmp8 = stream;
+  const tmp9 = stream(isFocused[25]);
   if (isFocused) {
-    const obj3 = { style: tmp.blackBackground };
-    tmp9 = closure_20(tmp7(tmp4[24]), obj3);
+    const obj4 = { style: tmp.blackBackground };
+    tmp10 = closure_20(tmp8(tmp3[25]), obj4);
   }
-  items1 = [tmp9, , ];
-  const obj4 = { style: animatedStyle, variant: str, color: "text-overlay-light", children: intl.string(sharedCoords(tmp4[25]).t.gMOwov) };
+  items2 = [tmp10, , ];
+  const obj5 = { style: animatedStyle, variant: str, color: "text-overlay-light", children: stringResult };
   str = "text-sm/semibold";
-  const tmp12 = closure_23;
+  const tmp13 = closure_23;
   if (isFocused) {
     str = "text-lg/semibold";
   }
-  intl = tmp3(tmp4[25]).intl;
-  items1[1] = closure_20(tmp12, obj4);
-  let tmp6Result = null;
-  if (isFocused) {
-    const obj5 = { children: items2 };
-    const obj6 = { style: tmp.selfStreamFocusedSubtitle, variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(sharedCoords(tmp4[25]).t.dKeLGt) };
-    const Text = tmp3(tmp4[15]).Text;
-    intl2 = tmp3(tmp4[25]).intl;
-    items2 = [closure_20(Text, obj6), ];
-    const obj7 = { size: "lg", variant: "primary-overlay", onPress: callback, text: intl3.string(sharedCoords(tmp4[25]).t.CpkXwZ) };
-    const Button = tmp3(tmp4[26]).Button;
-    intl3 = tmp3(tmp4[25]).intl;
-    items2[1] = closure_20(Button, obj7);
-    tmp6Result = tmp6(closure_21, obj5);
+  const intl = tmp2(tmp3[26]).intl;
+  const string = intl.string;
+  const t = tmp2(tmp3[26]).t;
+  if (stateFromStores) {
+    stringResult = string(t["5q17w5"]);
+  } else {
+    stringResult = string(t.gMOwov);
   }
-  items1[2] = tmp6Result;
-  return closure_22(tmp8, obj2);
+  items2[1] = closure_20(tmp13, obj5);
+  let tmp7Result = null;
+  if (isFocused) {
+    const obj6 = { style: tmp.selfStreamFocusedSubtitle, variant: "text-sm/medium", color: "text-overlay-light", children: string2Result };
+    const Text = tmp2(tmp3[15]).Text;
+    const intl2 = tmp2(tmp3[26]).intl;
+    const string2 = intl2.string;
+    const t2 = tmp2(tmp3[26]).t;
+    const tmp16 = closure_21;
+    if (stateFromStores) {
+      string2Result = string2(t2.LV1NSN);
+    } else {
+      string2Result = string2(t2.dKeLGt);
+    }
+    const obj7 = { children: items3 };
+    items3 = [closure_20(Text, obj6), ];
+    const obj8 = { size: "lg", variant: "primary-overlay", onPress: callback, text: intl3.string(sharedCoords(isFocused[26]).t.CpkXwZ) };
+    const Button = tmp2(tmp3[27]).Button;
+    intl3 = tmp2(tmp3[26]).intl;
+    items3[1] = closure_20(Button, obj8);
+    tmp7Result = tmp7(tmp16, obj7);
+  }
+  items2[2] = tmp7Result;
+  return closure_22(tmp9, obj3);
 });
 const __initData3 = { code: "function VoicePanelCardTsx3(){const{focused,id}=this.__closure;var _focused$get;return((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;}" };
 __initData = { code: "function VoicePanelCardTsx4(isFocused_0,lastIsFocused){const{runOnJS,setIsFocused}=this.__closure;if(isFocused_0!==lastIsFocused){runOnJS(setIsFocused)(isFocused_0);}}" };
@@ -336,7 +403,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
   ({ userNick, sharedCoords, isScrollVisible, layout } = id);
   let obj2 = setFocused;
   const isSelf = id.isSelf;
-  const context = setFocused.useContext(userId(streamGuildId[27]));
+  const context = setFocused.useContext(userId(streamGuildId[28]));
   const focused = context.focused;
   ({ mode, setFocused } = context);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -353,7 +420,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
       tmp8 = cResult[3];
       tmp9 = cResult[4];
     }
-    const tmpResult = id(streamGuildId[28]);
+    const tmpResult = id(streamGuildId[22]);
     const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
     const stream = stateFromStoresObject.stream;
     const activeStream = stateFromStoresObject.activeStream;
@@ -493,9 +560,9 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
                 let tmp31;
                 const _Symbol = Symbol;
                 if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                  const obj8 = { title: intl3.string(id(streamGuildId[25]).t["pdFFK+"]) };
+                  const obj8 = { title: intl3.string(id(streamGuildId[26]).t["pdFFK+"]) };
                   const StreamTextOverlay = tmp(tmp2[33]).StreamTextOverlay;
-                  intl3 = tmp(tmp2[25]).intl;
+                  intl3 = tmp(tmp2[26]).intl;
                   cResult[24] = closure_20(StreamTextOverlay, obj8);
                   closure_20(StreamTextOverlay, obj8);
                   class G {
@@ -519,19 +586,19 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
                   let tmp27;
                   const _Symbol2 = Symbol;
                   if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl = tmp(tmp2[25]).intl;
-                    const stringResult = intl.string(id(streamGuildId[25]).t["5q17w5"]);
+                    const intl = tmp(tmp2[26]).intl;
+                    const stringResult = intl.string(id(streamGuildId[26]).t["5q17w5"]);
                     cResult[25] = stringResult;
                     tmp23 = stringResult;
                   } else {
                     tmp23 = cResult[25];
                   }
                   if (cResult[26] !== userNick) {
-                    const intl2 = tmp(tmp2[25]).intl;
+                    const intl2 = tmp(tmp2[26]).intl;
                     const obj9 = { username: userNick };
                     cResult[26] = userNick;
-                    cResult[27] = intl2.formatToPlainString(id(streamGuildId[25]).t.meVVlb, obj9);
-                    intl2.formatToPlainString(id(streamGuildId[25]).t.meVVlb, obj9);
+                    cResult[27] = intl2.formatToPlainString(id(streamGuildId[26]).t.meVVlb, obj9);
+                    intl2.formatToPlainString(id(streamGuildId[26]).t.meVVlb, obj9);
                     class G {
                       constructor() {
                         const value = focused.get();
@@ -568,7 +635,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
                 streamId = null;
               }
               if (cResult[30] !== activeStream) {
-                const tmpResult4 = id(streamGuildId[23]);
+                const tmpResult4 = id(streamGuildId[24]);
                 const encodeStreamKeyResult = tmpResult4.encodeStreamKey(activeStream);
                 cResult[30] = activeStream;
                 cResult[31] = encodeStreamKeyResult;
@@ -734,11 +801,11 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
   let setFocused;
   let c6;
   ({ userNick, isSelf, isScrollVisible } = id);
-  const context = setFocused.useContext(userId(streamGuildId[27]));
+  const context = setFocused.useContext(userId(streamGuildId[28]));
   const focused = context.focused;
   setFocused = context.setFocused;
   const mode = context.mode;
-  let obj = id(streamGuildId[28]);
+  let obj = id(streamGuildId[22]);
   const items = [c6];
   const items1 = [userId, streamGuildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -802,17 +869,17 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
         } else {
           let tmp15;
           if (activeStream.state === ApplicationStreamStates.RECONNECTING) {
-            const obj7 = { title: intl.string(id(streamGuildId[25]).t["pdFFK+"]) };
+            const obj7 = { title: intl.string(id(streamGuildId[26]).t["pdFFK+"]) };
             const StreamTextOverlay = tmp4(tmp2[33]).StreamTextOverlay;
-            intl = tmp4(tmp2[25]).intl;
+            intl = tmp4(tmp2[26]).intl;
             tmp15 = closure_20(StreamTextOverlay, obj7);
           } else {
             tmp15 = null;
             if (activeStream.state === ApplicationStreamStates.PAUSED) {
-              const obj8 = { title: intl2.string(id(streamGuildId[25]).t["5q17w5"]), subtext: intl3.formatToPlainString(id(streamGuildId[25]).t.meVVlb, obj9) };
+              const obj8 = { title: intl2.string(id(streamGuildId[26]).t["5q17w5"]), subtext: intl3.formatToPlainString(id(streamGuildId[26]).t.meVVlb, obj9) };
               const StreamTextOverlay2 = tmp4(tmp2[33]).StreamTextOverlay;
-              intl2 = tmp4(tmp2[25]).intl;
-              intl3 = tmp4(tmp2[25]).intl;
+              intl2 = tmp4(tmp2[26]).intl;
+              intl3 = tmp4(tmp2[26]).intl;
               obj9 = { username: userNick };
               tmp15 = closure_20(StreamTextOverlay2, obj8);
             }
@@ -826,7 +893,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
             streamId = null;
           }
           const obj11 = { children: items3 };
-          tmp4Result = id(streamGuildId[23]);
+          tmp4Result = id(streamGuildId[24]);
           items3 = [tmp18(tmpResult3, obj10), tmp15];
           return tmp16(tmp17, obj11);
         }
@@ -837,315 +904,251 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function A
     return closure_20(tmpResult4, obj12);
   }
 }));
-const __initData6 = { code: "function VoicePanelCardTsx7(){const{withTiming,isRinging,CONNECTING_OPACITY,solidBackgroundColor}=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},\"animate-always\"),backgroundColor:solidBackgroundColor};}" };
+const __initData6 = { code: "function VoicePanelCardTsx7(){const{withTiming,isRinging,CONNECTING_OPACITY,backgroundColor}=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},\"animate-always\"),backgroundColor:backgroundColor};}" };
 const __initData7 = { code: "function VoicePanelCardTsx8(){const{withSpring,mode,VoicePanelModes,layoutPhysics}=this.__closure;return{transform:[{scale:withSpring(mode.get()===VoicePanelModes.PIP?0.8:1,layoutPhysics)}]};}" };
-const __initData8 = { code: "function VoicePanelCardTsx9(){const{withTiming,isRinging,CONNECTING_OPACITY,solidBackgroundColor}=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},'animate-always'),backgroundColor:solidBackgroundColor};}" };
+const __initData8 = { code: "function VoicePanelCardTsx9(){const{withTiming,isRinging,CONNECTING_OPACITY,backgroundColor}=this.__closure;return{opacity:withTiming(isRinging?CONNECTING_OPACITY:1,{duration:100},'animate-always'),backgroundColor:backgroundColor};}" };
 const __initData9 = { code: "function VoicePanelCardTsx10(){const{withSpring,mode,VoicePanelModes,layoutPhysics}=this.__closure;return{transform:[{scale:withSpring(mode.get()===VoicePanelModes.PIP?64/80:1,layoutPhysics)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_42 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedUserCardInner(isRinging) {
   let avatarDecoration;
   let avatarURI;
+  let backgroundColor;
+  let gradientStops;
   let guildId;
+  let items1;
   let layout;
   let layoutPhysics;
   let mode;
   let userId;
   const tmp = isRinging;
   let obj = isRinging(mode[21]);
-  const cResult = obj.c(30);
+  const cResult = obj.c(31);
   isRinging = isRinging.isRinging;
   ({ layout, avatarURI, avatarDecoration, layoutPhysics } = isRinging);
   ({ userId, guildId } = isRinging);
   const tmp4 = closure_29();
-  mode = react.useContext(layoutPhysics(mode[27])).mode;
-  isRinging(mode[36]);
-  if (cResult[0] === guildId) {
-    let tmp8;
-    let tmp19;
-    if (cResult[1] === userId) {
-      tmp8 = cResult[2];
-    }
-    const tmp9 = layoutPhysics(mode[37])(tmp8);
-    let str = "transparent";
-    if (null == tmp9) {
-      str = tmp7;
-    }
-    const tmpResult = tmp(mode[14]);
-    class C {
-      constructor() {
+  mode = react.useContext(layoutPhysics(mode[28])).mode;
+  if (cResult[0] === avatarURI) {
+    if (cResult[1] === guildId) {
+      let tmp6;
+      let tmp16;
+      if (cResult[2] === userId) {
+        tmp6 = cResult[3];
+      }
+      ({ gradientStops, backgroundColor } = layoutPhysics(mode[36])(tmp6));
+      layoutPhysics(mode[36])(tmp6);
+      const fn = function w() {
         let num = 1;
         const withTiming = timing.withTiming;
         timing;
         if (isRinging) {
           num = c28;
         }
-        const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
+        const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor };
         return obj;
-      }
-    }
-    const obj2 = { withTiming: tmp(mode[38]).withTiming, isRinging, CONNECTING_OPACITY, solidBackgroundColor: str };
-    const useAnimatedStyle = tmpResult.useAnimatedStyle;
-    C.__closure = obj2;
-    let num = 14362526641310;
-    C.__workletHash = 14362526641310;
-    C.__initData = __initData6;
-    const animatedStyle = useAnimatedStyle(C);
-    const fn = function y() {
-      let items;
-      const withSpring = spring.withSpring;
-      let num = 1;
-      spring;
-      if (mode.get() === constants.PIP) {
-        num = 0.8;
-      }
-      const obj = { transform: items };
-      items = [{ scale: withSpring(num, layoutPhysics) }];
-      ({ scale: withSpring(num, layoutPhysics) });
-      return obj;
-    };
-    const obj3 = { withSpring: tmp(mode[39]).withSpring, mode, VoicePanelModes, layoutPhysics };
-    const useAnimatedStyle2 = tmp(mode[14]).useAnimatedStyle;
-    tmp(mode[14]);
-    fn.__closure = obj3;
-    fn.__workletHash = 1926256435326;
-    fn.__initData = __initData7;
-    const animatedStyle2 = useAnimatedStyle2(fn);
-    if (cResult[3] !== avatarURI) {
-      let cachedSourceFromURI;
-      if (null != avatarURI) {
-        const tmpResult4 = tmp(mode[36]);
-        cachedSourceFromURI = tmpResult4.getCachedSourceFromURI(avatarURI);
-      }
-      cResult[3] = avatarURI;
-      cResult[4] = cachedSourceFromURI;
-      tmp19 = cachedSourceFromURI;
-    } else {
-      tmp19 = cResult[4];
-    }
-    if (cResult[5] === animatedStyle) {
-      let tmp21;
-      if (cResult[6] === tmp4.userRoundedCard) {
-        tmp21 = cResult[7];
-      }
-      if (cResult[8] === tmp9) {
-        let tmp22;
-        let tmp27;
-        if (cResult[9] === layout) {
-          tmp22 = cResult[10];
-        }
-        if (null != tmp19) {
-          let prop;
-          if (null == avatarDecoration) {
-            prop = tmp4.avatarImageMaskStyles;
-          }
-          if (cResult[13] === animatedStyle2) {
-            let tmp32;
-            let tmp34Result;
-            if (cResult[14] === prop) {
-              tmp32 = cResult[15];
-            }
-            if (cResult[16] === avatarDecoration) {
-              if (cResult[17] === tmp19) {
-                if (cResult[18] === null != avatarDecoration) {
-                  let tmp33;
-                  if (cResult[19] === tmp4.image) {
-                    tmp33 = cResult[20];
-                  }
-                  if (cResult[21] === layout) {
-                    if (cResult[22] === tmp32) {
-                      let tmp36;
-                      if (cResult[23] === tmp33) {
-                        tmp36 = cResult[24];
-                      }
-                      tmp27 = tmp36;
-                    }
-                  }
-                  class C {
-                    constructor() {
-                      let num = 1;
-                      const withTiming = timing.withTiming;
-                      timing;
-                      if (isRinging) {
-                        num = c28;
-                      }
-                      const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-                      return obj;
-                    }
-                  }
-                  cResult[21] = layout;
-                  cResult[22] = tmp32;
-                  cResult[23] = tmp33;
-                  cResult[24] = tmp38;
-                  tmp36 = tmp38;
-                }
-              }
-            }
-            if (null != avatarDecoration) {
-              const obj5 = { source: tmp19, size: tmp(mode[17]).AvatarSizes.XXLARGE, avatarDecoration };
-              const Avatar = tmp(tmp2[17]).Avatar;
-              tmp34Result = tmp34(Avatar, obj5);
-            } else {
-              size = { source: tmp19, resizeMode: "stretch", width: 80, height: 80, style: tmp4.image };
-              tmp34Result = tmp34(tmp5(tmp2[40]), size);
-            }
-            cResult[16] = avatarDecoration;
-            class C {
-              constructor() {
-                let num = 1;
-                const withTiming = timing.withTiming;
-                timing;
-                if (isRinging) {
-                  num = c28;
-                }
-                const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-                return obj;
-              }
-            }
-            cResult[18] = null != avatarDecoration;
-            cResult[19] = tmp4.image;
-            cResult[20] = tmp34Result;
-            tmp33 = tmp34Result;
-          }
-          let items = [prop, animatedStyle2];
-          class C {
-            constructor() {
-              let num = 1;
-              const withTiming = timing.withTiming;
-              timing;
-              if (isRinging) {
-                num = c28;
-              }
-              const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-              return obj;
-            }
-          }
-          cResult[13] = animatedStyle2;
-          cResult[14] = prop;
-          cResult[15] = items;
-          tmp32 = items;
-        } else if (cResult[11] !== tmp4.avatarPlaceholder) {
-          const obj6 = { style: tmp4.avatarPlaceholder };
-          cResult[11] = tmp4.avatarPlaceholder;
-          const tmp29 = closure_20(layoutPhysics(mode[24]), obj6);
-          class C {
-            constructor() {
-              let num = 1;
-              const withTiming = timing.withTiming;
-              timing;
-              if (isRinging) {
-                num = c28;
-              }
-              const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-              return obj;
-            }
-          }
-          tmp27 = tmp29;
-        } else {
-          tmp27 = cResult[12];
-        }
-        if (cResult[25] === layout) {
-          if (cResult[26] === tmp21) {
-            if (cResult[27] === tmp22) {
-              let tmp39;
-              if (cResult[28] === tmp27) {
-                tmp39 = cResult[29];
-              }
-              return tmp39;
-            }
-          }
-        }
-        const obj7 = { style: tmp21, layout, children: tmp41 };
-        class C {
-          constructor() {
-            let num = 1;
-            const withTiming = timing.withTiming;
-            timing;
-            if (isRinging) {
-              num = c28;
-            }
-            const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-            return obj;
-          }
-        }
-        tmp41[0] = tmp22;
-        tmp41[1] = tmp27;
-        const tmp42 = closure_22(layoutPhysics(mode[41]), obj7);
-        cResult[25] = layout;
-        cResult[26] = tmp21;
-        cResult[27] = tmp22;
-        cResult[28] = tmp27;
-        cResult[29] = tmp42;
-        tmp39 = tmp42;
-      }
-      let tmp23 = null;
-      if (null != tmp9) {
-        const obj8 = { colors: tmp9, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: null, layout, pointerEvents: "none" };
-        class C {
-          constructor() {
-            let num = 1;
-            const withTiming = timing.withTiming;
-            timing;
-            if (isRinging) {
-              num = c28;
-            }
-            const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
-            return obj;
-          }
-        }
-        tmp23 = closure_20(LinearGradient, obj8);
-      }
-      cResult[8] = tmp9;
+      };
+      const obj2 = { withTiming: tmp(mode[37]).withTiming, isRinging, CONNECTING_OPACITY, backgroundColor };
+      const useAnimatedStyle = tmp(mode[14]).useAnimatedStyle;
+      tmp(mode[14]);
+      fn.__closure = obj2;
+      let num = 13655669649054;
+      fn.__workletHash = 13655669649054;
+      fn.__initData = __initData6;
+      const animatedStyle = useAnimatedStyle(fn);
+      const tmpResult3 = tmp(mode[14]);
       class C {
         constructor() {
+          let items;
+          const withSpring = spring.withSpring;
           let num = 1;
-          const withTiming = timing.withTiming;
-          timing;
-          if (isRinging) {
-            num = c28;
+          spring;
+          if (mode.get() === constants.PIP) {
+            num = 0.8;
           }
-          const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
+          const obj = { transform: items };
+          items = [{ scale: withSpring(num, layoutPhysics) }];
+          ({ scale: withSpring(num, layoutPhysics) });
           return obj;
         }
       }
-      cResult[10] = tmp23;
-      tmp22 = tmp23;
+      const useAnimatedStyle2 = tmpResult3.useAnimatedStyle;
+      C.__closure = { withSpring: tmp(mode[38]).withSpring, mode, VoicePanelModes, layoutPhysics };
+      C.__workletHash = 1926256435326;
+      C.__initData = __initData7;
+      const obj3 = { withSpring: tmp(mode[38]).withSpring, mode, VoicePanelModes, layoutPhysics };
+      const animatedStyle2 = useAnimatedStyle2(C);
+      if (cResult[4] !== avatarURI) {
+        let cachedSourceFromURI;
+        if (null != avatarURI) {
+          const tmpResult4 = tmp(mode[39]);
+          cachedSourceFromURI = tmpResult4.getCachedSourceFromURI(avatarURI);
+        }
+        cResult[4] = avatarURI;
+        cResult[5] = cachedSourceFromURI;
+        tmp16 = cachedSourceFromURI;
+      } else {
+        tmp16 = cResult[5];
+      }
+      if (cResult[6] === animatedStyle) {
+        let tmp19;
+        if (cResult[7] === tmp4.userRoundedCard) {
+          tmp19 = cResult[8];
+        }
+        if (cResult[9] === gradientStops) {
+          let tmp20;
+          let tmp26;
+          if (cResult[10] === layout) {
+            tmp20 = cResult[11];
+          }
+          if (null != tmp16) {
+            let prop;
+            if (null == avatarDecoration) {
+              prop = tmp4.avatarImageMaskStyles;
+            }
+            if (cResult[14] === animatedStyle2) {
+              let tmp31;
+              let tmp33Result;
+              if (cResult[15] === prop) {
+                tmp31 = cResult[16];
+              }
+              if (cResult[17] === avatarDecoration) {
+                if (cResult[18] === tmp16) {
+                  if (cResult[19] === null != avatarDecoration) {
+                    let tmp32;
+                    if (cResult[20] === tmp4.image) {
+                      tmp32 = cResult[21];
+                    }
+                    if (cResult[22] === layout) {
+                      if (cResult[23] === tmp31) {
+                        let tmp35;
+                        if (cResult[24] === tmp32) {
+                          tmp35 = cResult[25];
+                        }
+                        tmp26 = tmp35;
+                      }
+                    }
+                    const obj4 = { style: tmp31, layout, children: tmp32 };
+                    const tmp37 = closure_20(layoutPhysics(mode[41]), obj4);
+                    cResult[22] = layout;
+                    cResult[23] = tmp31;
+                    cResult[24] = tmp32;
+                    cResult[25] = tmp37;
+                    tmp35 = tmp37;
+                  }
+                }
+              }
+              if (null != avatarDecoration) {
+                const obj5 = { source: tmp16, size: tmp(mode[17]).AvatarSizes.XXLARGE, avatarDecoration };
+                const Avatar = tmp(tmp2[17]).Avatar;
+                tmp33Result = tmp33(Avatar, obj5);
+              } else {
+                size = { source: tmp16, resizeMode: "stretch", width: 80, height: 80, style: tmp4.image };
+                tmp33Result = tmp33(tmp5(tmp2[40]), size);
+              }
+              cResult[17] = avatarDecoration;
+              cResult[18] = tmp16;
+              cResult[19] = null != avatarDecoration;
+              cResult[20] = tmp4.image;
+              cResult[21] = tmp33Result;
+              tmp32 = tmp33Result;
+            }
+            let items = [prop, animatedStyle2];
+            cResult[14] = animatedStyle2;
+            cResult[15] = prop;
+            cResult[16] = items;
+            tmp31 = items;
+          } else if (cResult[12] !== tmp4.avatarPlaceholder) {
+            const obj6 = { style: tmp4.avatarPlaceholder };
+            const tmp28 = closure_20(layoutPhysics(mode[25]), obj6);
+            cResult[12] = tmp4.avatarPlaceholder;
+            cResult[13] = tmp28;
+            tmp26 = tmp28;
+          } else {
+            tmp26 = cResult[13];
+          }
+          if (cResult[26] === layout) {
+            if (cResult[27] === tmp19) {
+              if (cResult[28] === tmp20) {
+                let tmp38;
+                if (cResult[29] === tmp26) {
+                  tmp38 = cResult[30];
+                }
+                return tmp38;
+              }
+            }
+          }
+          const obj7 = { style: tmp19, layout, children: items1 };
+          items1 = [tmp20, tmp26];
+          const tmp40 = closure_22(layoutPhysics(mode[41]), obj7);
+          cResult[26] = layout;
+          cResult[27] = tmp19;
+          cResult[28] = tmp20;
+          cResult[29] = tmp26;
+          class C {
+            constructor() {
+              let items;
+              const withSpring = spring.withSpring;
+              let num = 1;
+              spring;
+              if (mode.get() === constants.PIP) {
+                num = 0.8;
+              }
+              const obj = { transform: items };
+              items = [{ scale: withSpring(num, layoutPhysics) }];
+              ({ scale: withSpring(num, layoutPhysics) });
+              return obj;
+            }
+          }
+          cResult[30] = tmp40;
+          tmp38 = tmp40;
+        }
+        let tmp21 = null;
+        if (null != gradientStops) {
+          const obj8 = { colors: gradientStops, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: StyleSheet.absoluteFill, layout, pointerEvents: "none" };
+          tmp21 = closure_20(LinearGradient, obj8);
+        }
+        cResult[9] = gradientStops;
+        cResult[10] = layout;
+        cResult[11] = tmp21;
+        tmp20 = tmp21;
+      }
+      const items2 = [tmp4.userRoundedCard, animatedStyle];
+      cResult[6] = animatedStyle;
+      cResult[7] = tmp4.userRoundedCard;
+      cResult[8] = items2;
+      tmp19 = items2;
     }
-    const items1 = [tmp4.userRoundedCard, animatedStyle];
-    cResult[5] = animatedStyle;
-    cResult[6] = tmp4.userRoundedCard;
-    cResult[7] = items1;
-    tmp21 = items1;
   }
-  const obj9 = { userId, guildId, location: "VoicePanelCard-native" };
-  cResult[0] = guildId;
-  cResult[1] = userId;
-  cResult[2] = obj9;
-  tmp8 = obj9;
+  const obj9 = { userId, guildId, avatarURI, location: "VoicePanelCard-native" };
+  cResult[0] = avatarURI;
+  cResult[1] = guildId;
+  cResult[2] = userId;
+  cResult[3] = obj9;
+  tmp6 = obj9;
 }) : (function AnimatedUserCardInner(isRinging) {
   let avatarDecoration;
   let avatarURI;
+  let backgroundColor;
+  let gradientStops;
   let guildId;
   let items;
   let items1;
   let items2;
   let layout;
   let layoutPhysics;
-  let tmp21Result;
-  let tmp21Result2;
+  let tmp20Result;
+  let tmp20Result2;
   let userId;
   isRinging = isRinging.isRinging;
   ({ layout, avatarURI, avatarDecoration, layoutPhysics } = isRinging);
   let mode;
+  backgroundColor = undefined;
   ({ userId, guildId } = isRinging);
   const tmp = closure_29();
-  mode = react.useContext(layoutPhysics(mode[27])).mode;
-  let obj = isRinging(mode[36]);
-  const dominantColorFromImage = obj.useDominantColorFromImage(avatarURI);
-  const tmp6 = layoutPhysics(mode[37])({ userId, guildId, location: "VoicePanelCard-native" });
-  let str = "transparent";
-  if (null == tmp6) {
-    str = dominantColorFromImage;
-  }
+  mode = react.useContext(layoutPhysics(mode[28])).mode;
+  ({ gradientStops, backgroundColor } = layoutPhysics(mode[36])({ userId, guildId, avatarURI, location: "VoicePanelCard-native" }));
+  layoutPhysics(mode[36])({ userId, guildId, avatarURI, location: "VoicePanelCard-native" });
+  let obj = isRinging(mode[14]);
   const fn = function _() {
     let num = 1;
     const withTiming = timing.withTiming;
@@ -1153,15 +1156,14 @@ let closure_42 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     if (isRinging) {
       num = c28;
     }
-    const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor: str };
+    const obj = { opacity: withTiming(num, { duration: 100 }, "animate-always"), backgroundColor };
     return obj;
   };
-  const tmp4Result = isRinging(mode[14]);
-  const obj2 = { withTiming: tmp4(tmp3[38]).withTiming, isRinging, CONNECTING_OPACITY, solidBackgroundColor: str };
+  const obj2 = { withTiming: isRinging(mode[37]).withTiming, isRinging, CONNECTING_OPACITY, backgroundColor };
   fn.__closure = obj2;
-  fn.__workletHash = 8753835850480;
+  fn.__workletHash = 12115732984752;
   fn.__initData = __initData8;
-  const animatedStyle = tmp4Result.useAnimatedStyle(fn);
+  const animatedStyle = obj.useAnimatedStyle(fn);
   const fn2 = function f() {
     let items;
     const withSpring = spring.withSpring;
@@ -1175,50 +1177,50 @@ let closure_42 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
     ({ scale: withSpring(num, layoutPhysics) });
     return obj;
   };
-  const tmp4Result3 = isRinging(mode[14]);
-  fn2.__closure = { withSpring: isRinging(mode[39]).withSpring, mode, VoicePanelModes, layoutPhysics };
+  const obj3 = isRinging(mode[14]);
+  fn2.__closure = { withSpring: isRinging(mode[38]).withSpring, mode, VoicePanelModes, layoutPhysics };
   fn2.__workletHash = 10965423163748;
   fn2.__initData = __initData9;
   let cachedSourceFromURI;
-  ({ withSpring: isRinging(mode[39]).withSpring, mode, VoicePanelModes, layoutPhysics });
-  const animatedStyle1 = tmp4Result3.useAnimatedStyle(fn2);
+  ({ withSpring: isRinging(mode[38]).withSpring, mode, VoicePanelModes, layoutPhysics });
+  const animatedStyle1 = obj3.useAnimatedStyle(fn2);
   if (null != avatarURI) {
-    const tmp4Result4 = isRinging(mode[36]);
-    cachedSourceFromURI = tmp4Result4.getCachedSourceFromURI(avatarURI);
+    const tmp5Result = isRinging(mode[39]);
+    cachedSourceFromURI = tmp5Result.getCachedSourceFromURI(avatarURI);
   }
-  const obj4 = { style: items, layout, children: items1 };
+  const obj5 = { style: items, layout, children: items1 };
   items = [tmp.userRoundedCard, animatedStyle];
-  let tmp12 = null;
-  const tmp10 = closure_22;
+  let tmp11 = null;
   const tmp2Result = layoutPhysics(mode[41]);
-  if (null != tmp6) {
-    const obj5 = { colors: tmp6, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: StyleSheet.absoluteFill, layout, pointerEvents: "none" };
-    tmp12 = closure_20(LinearGradient, obj5);
+  const tmp9 = closure_22;
+  if (null != gradientStops) {
+    const obj6 = { colors: gradientStops, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: StyleSheet.absoluteFill, layout, pointerEvents: "none" };
+    tmp11 = closure_20(LinearGradient, obj6);
   }
-  items1 = [tmp12, ];
+  items1 = [tmp11, ];
   if (null == cachedSourceFromURI) {
-    const obj6 = { style: tmp.avatarPlaceholder };
-    tmp21Result2 = closure_20(tmp2(tmp3[24]), obj6);
+    const obj7 = { style: tmp.avatarPlaceholder };
+    tmp20Result2 = closure_20(tmp2(tmp3[25]), obj7);
   } else {
     let prop;
     const tmp2Result2 = layoutPhysics(mode[41]);
     if (null == avatarDecoration) {
       prop = tmp.avatarImageMaskStyles;
     }
-    const obj7 = { style: items2, layout, children: tmp21Result };
+    const obj8 = { style: items2, layout, children: tmp20Result };
     items2 = [prop, animatedStyle1];
     if (null != avatarDecoration) {
-      const obj8 = { source: cachedSourceFromURI, size: isRinging(mode[17]).AvatarSizes.XXLARGE, avatarDecoration };
-      const Avatar = tmp4(tmp3[17]).Avatar;
-      tmp21Result = tmp21(Avatar, obj8);
+      const obj9 = { source: cachedSourceFromURI, size: isRinging(mode[17]).AvatarSizes.XXLARGE, avatarDecoration };
+      const Avatar = tmp5(tmp3[17]).Avatar;
+      tmp20Result = tmp20(Avatar, obj9);
     } else {
       size = { source: cachedSourceFromURI, resizeMode: "stretch", width: 80, height: 80, style: tmp.image };
-      tmp21Result = tmp21(tmp2(tmp3[40]), size);
+      tmp20Result = tmp20(tmp2(tmp3[40]), size);
     }
-    tmp21Result2 = tmp21(tmp2Result2, obj7);
+    tmp20Result2 = tmp20(tmp2Result2, obj8);
   }
-  items1[1] = tmp21Result2;
-  return tmp10(tmp2Result, obj4);
+  items1[1] = tmp20Result2;
+  return tmp9(tmp2Result, obj5);
 }));
 const __initData10 = { code: "function VoicePanelCardTsx11(){const{mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS}=this.__closure;var _focused$get,_focused$get2;const disable=mode.get()!==VoicePanelModes.PIP&&((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{opacity:disable?0:1,borderRadius:withSpring(disable?0:computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}),SPEAKING_PHYSICS,!disable?\"animate-always\":\"animate-never\")};}" };
 const __initData11 = { code: "function VoicePanelCardTsx12(){const{mode,VoicePanelModes,focused,id,withSpring,computeCardBorderRadius,isSelf,defaultBorderRadius,SPEAKING_PHYSICS,speaking,roundToNearestPixel,SPEAKING_BORDER_SIZE,SPEAKING_INSET}=this.__closure;var _focused$get,_focused$get2;const disable_0=mode.get()===VoicePanelModes.PIP||((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)===id;return{borderRadius:withSpring(!disable_0?computeCardBorderRadius({id:id,mode:mode.get(),focused:(_focused$get2=focused.get())===null||_focused$get2===void 0?void 0:_focused$get2.id,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}):0,SPEAKING_PHYSICS,!disable_0?\"animate-always\":\"animate-never\"),borderWidth:withSpring(!disable_0&&speaking.get()?roundToNearestPixel(SPEAKING_BORDER_SIZE+SPEAKING_INSET):0,SPEAKING_PHYSICS,!disable_0?\"animate-always\":\"animate-never\")};}" };
@@ -1240,7 +1242,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
   ({ userId, isSelf } = id);
   speaking = id.speaking;
   const layout = id.layout;
-  const context = focused.useContext(isSelf(speaking[27]));
+  const context = focused.useContext(isSelf(speaking[28]));
   const mode = context.mode;
   focused = context.focused;
   const guildId = context.guildId;
@@ -1295,7 +1297,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
       }
       return obj2;
     };
-    let obj3 = { mode, VoicePanelModes, focused, id, withSpring: tmp(tmp2[39]).withSpring, computeCardBorderRadius: tmp4(tmp2[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS };
+    let obj3 = { mode, VoicePanelModes, focused, id, withSpring: tmp(tmp2[38]).withSpring, computeCardBorderRadius: tmp4(tmp2[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS };
     let tmp11 = VoicePanelModes;
     const useAnimatedStyle = tmp(tmp2[14]).useAnimatedStyle;
     tmp(speaking[14]);
@@ -1340,7 +1342,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
         }
         const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
         num2 = 0;
-        withSpring2 = tmp7(5378).withSpring;
+        withSpring2 = tmp7(5478).withSpring;
         spring;
         if (!tmp) {
           num2 = 0;
@@ -1355,11 +1357,11 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
       }
     }
     const useAnimatedStyle2 = tmpResult5.useAnimatedStyle;
-    E.__closure = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
+    E.__closure = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
     let num2 = 9044857468643;
     E.__workletHash = 9044857468643;
     E.__initData = __initData11;
-    const obj4 = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
+    const obj4 = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
     const animatedStyle2 = useAnimatedStyle2(E);
     const fn2 = function b() {
       let id1;
@@ -1395,7 +1397,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
       }
       const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
       num2 = 0;
-      withSpring2 = tmp7(5378).withSpring;
+      withSpring2 = tmp7(5478).withSpring;
       spring;
       if (!tmp) {
         num2 = 0;
@@ -1408,7 +1410,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
       }
       return obj3;
     };
-    const obj5 = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 };
+    const obj5 = { mode, VoicePanelModes, focused, id, withSpring: tmp(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 };
     const useAnimatedStyle3 = tmp(tmp2[14]).useAnimatedStyle;
     tmp(speaking[14]);
     fn2.__closure = obj5;
@@ -1521,7 +1523,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
   const layout = id.layout;
   let focused;
   const userId = id.userId;
-  const context = focused.useContext(isSelf(speaking[27]));
+  const context = focused.useContext(isSelf(speaking[28]));
   const mode = context.mode;
   focused = context.focused;
   const guildId = context.guildId;
@@ -1572,10 +1574,10 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     }
     return obj2;
   };
-  fn.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS };
+  fn.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS };
   fn.__workletHash = 10993051977798;
   fn.__initData = __initData13;
-  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS });
+  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const fn2 = function h() {
     let id1;
@@ -1611,7 +1613,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     }
     const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
     num2 = 0;
-    withSpring2 = tmp7(5378).withSpring;
+    withSpring2 = tmp7(5478).withSpring;
     spring;
     if (!tmp) {
       num2 = 0;
@@ -1625,10 +1627,10 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     return obj3;
   };
   const obj5 = id(speaking[14]);
-  fn2.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
+  fn2.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 };
   fn2.__workletHash = 492143708356;
   fn2.__initData = __initData14;
-  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 });
+  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, roundToNearestPixel: isSelf(speaking[45]), SPEAKING_BORDER_SIZE: 3, SPEAKING_INSET: 2 });
   const animatedStyle1 = obj5.useAnimatedStyle(fn2);
   const fn3 = function p() {
     let id1;
@@ -1664,7 +1666,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     }
     const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
     num2 = 0;
-    withSpring2 = tmp7(5378).withSpring;
+    withSpring2 = tmp7(5478).withSpring;
     spring;
     if (!tmp) {
       num2 = 0;
@@ -1678,10 +1680,10 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     return obj3;
   };
   const obj7 = id(speaking[14]);
-  fn3.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 };
+  fn3.__closure = { mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 };
   fn3.__workletHash = 14974168975148;
   fn3.__initData = __initData15;
-  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[39]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 });
+  ({ mode, VoicePanelModes, focused, id, withSpring: id(speaking[38]).withSpring, computeCardBorderRadius: isSelf(speaking[44]), isSelf, defaultBorderRadius: token, SPEAKING_PHYSICS, speaking, SPEAKING_BORDER_SIZE: 3 });
   const animatedStyle2 = obj7.useAnimatedStyle(fn3);
   const obj9 = { style: items, layout, pointerEvents: "none", children: items2 };
   items = [tmp2.speakingIndicatorWrapper, animatedStyle];
@@ -2135,7 +2137,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   const analyticsLocations = coords(id[48])().analyticsLocations;
   const tmp5 = derivedValue2();
   let obj2 = isScrollVisible;
-  const context = isScrollVisible.useContext(coords(id[27]));
+  const context = isScrollVisible.useContext(coords(id[28]));
   const channelId = context.channelId;
   const connected = context.connected;
   const contentDimensions = context.contentDimensions;
@@ -2418,7 +2420,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                     obj15 = spring;
                     return size1;
                   }
-                  let obj6 = { coords, focused, id, isPIP: tmp18, pipState: pIPState, getScaledPIPContainerHeight: tmp(tmp2[51]).getScaledPIPContainerHeight, getClampedPIPPosition: tmp(tmp2[51]).getClampedPIPPosition, wrapperDimensions, windowDimensions, safeArea, pipAvoidanceSpecs, derivedScrollValue: derivedValue1, xOffset: derivedValue2, calculateContentCenterOffset: tmp4(tmp2[52]), contentDimensions, sharedTransitionState, TransitionStates: tmp(tmp2[47]).TransitionStates, zIndexOverride: derivedValue, computeCardBorderRadius: tmp4(tmp2[44]), mode, isSelf, defaultBorderRadius: token, sharedVisible, isRTCConnected, CONNECTING_OPACITY: derivedValue1, wrapperOffset, withDelay: tmp(tmp2[14]).withDelay, withTiming: tmp(tmp2[38]).withTiming, ZINDEX_TIMING: derivedValue, OPACITY_TIMING: id2, isScrollVisible, runOnJS: tmp(tmp2[14]).runOnJS, cleanUp, withSpring: tmp(tmp2[39]).withSpring, layoutPhysics, CARD_SCALE_PHYSICS: isSelf, SCALE_PHYSICS: showControls };
+                  let obj6 = { coords, focused, id, isPIP: tmp18, pipState: pIPState, getScaledPIPContainerHeight: tmp(tmp2[51]).getScaledPIPContainerHeight, getClampedPIPPosition: tmp(tmp2[51]).getClampedPIPPosition, wrapperDimensions, windowDimensions, safeArea, pipAvoidanceSpecs, derivedScrollValue: derivedValue1, xOffset: derivedValue2, calculateContentCenterOffset: tmp4(tmp2[52]), contentDimensions, sharedTransitionState, TransitionStates: tmp(tmp2[47]).TransitionStates, zIndexOverride: derivedValue, computeCardBorderRadius: tmp4(tmp2[44]), mode, isSelf, defaultBorderRadius: token, sharedVisible, isRTCConnected, CONNECTING_OPACITY: derivedValue1, wrapperOffset, withDelay: tmp(tmp2[14]).withDelay, withTiming: tmp(tmp2[37]).withTiming, ZINDEX_TIMING: derivedValue, OPACITY_TIMING: id2, isScrollVisible, runOnJS: tmp(tmp2[14]).runOnJS, cleanUp, withSpring: tmp(tmp2[38]).withSpring, layoutPhysics, CARD_SCALE_PHYSICS: isSelf, SCALE_PHYSICS: showControls };
                   const useAnimatedStyle = tmp(tmp2[14]).useAnimatedStyle;
                   tmp(tmp2[14]);
                   let tmp24 = isSelf;
@@ -2507,7 +2509,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                                                             tmp4 = closure_0;
                                                             tmp5 = closure_2;
                                                             set = closure_33.set;
-                                                            tmp6 = closure_0(closure_2[39]);
+                                                            tmp6 = closure_0(closure_2[38]);
                                                             tmp7 = layoutPhysics;
                                                             fn = function t(arg0) {
                                                               if (true === arg0) {
@@ -2545,7 +2547,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                                                           return pipHandoff.setCardArrivedInPIP(id);
                                                         }
                                                       }
-                                                      class Be {
+                                                      class Fe {
                                                         constructor(arg0) {
                                                           scale = closure_24.scale;
                                                           value = scale.get();
@@ -2553,13 +2555,13 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                                                           size = { originX: coords.currentOriginX, originY: coords.currentOriginY, width: coords.currentWidth * result, height: coords.currentHeight * result };
                                                           obj1 = { animations: null, initialValues: null, callback: null };
                                                           size1 = { originX: null, originY: null, width: null, height: null };
-                                                          obj4 = closure_0(closure_2[39]);
+                                                          obj4 = closure_0(closure_2[38]);
                                                           size1.originX = obj4.withSpring(coords.targetOriginX, layoutPhysics, "respect-motion-settings");
-                                                          obj5 = closure_0(closure_2[39]);
+                                                          obj5 = closure_0(closure_2[38]);
                                                           size1.originY = obj5.withSpring(coords.targetOriginY, layoutPhysics, "respect-motion-settings");
-                                                          obj6 = closure_0(closure_2[39]);
+                                                          obj6 = closure_0(closure_2[38]);
                                                           size1.width = obj6.withSpring(coords.targetWidth, layoutPhysics, "respect-motion-settings");
-                                                          obj7 = closure_0(closure_2[39]);
+                                                          obj7 = closure_0(closure_2[38]);
                                                           size1.height = obj7.withSpring(coords.targetHeight, layoutPhysics, "respect-motion-settings");
                                                           obj1.animations = size1;
                                                           obj1.initialValues = size;
@@ -2579,16 +2581,16 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                                                           return obj1;
                                                         }
                                                       }
-                                                      let obj7 = { pipState: pIPState, lastPIPScale: sharedValue1, withSpring: tmp(tmp2[39]).withSpring, layoutPhysics, wrapperOffset };
-                                                      Be.__closure = obj7;
-                                                      Be.__workletHash = 1978895565164;
-                                                      Be.__initData = __initData29;
+                                                      let obj7 = { pipState: pIPState, lastPIPScale: sharedValue1, withSpring: tmp(tmp2[38]).withSpring, layoutPhysics, wrapperOffset };
+                                                      Fe.__closure = obj7;
+                                                      Fe.__workletHash = 1978895565164;
+                                                      Fe.__initData = __initData29;
                                                       cResult[49] = sharedValue1;
                                                       cResult[50] = layoutPhysics;
                                                       cResult[51] = pIPState.scale;
                                                       cResult[52] = wrapperOffset;
-                                                      cResult[53] = Be;
-                                                      let tmp48 = Be;
+                                                      cResult[53] = Fe;
+                                                      let tmp48 = Fe;
                                                     }
                                                   }
                                                 }
@@ -2602,7 +2604,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                                                       tmp4 = closure_0;
                                                       tmp5 = closure_2;
                                                       set = closure_33.set;
-                                                      tmp6 = closure_0(closure_2[39]);
+                                                      tmp6 = closure_0(closure_2[38]);
                                                       tmp7 = layoutPhysics;
                                                       fn = function t(arg0) {
                                                         if (true === arg0) {
@@ -2805,7 +2807,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   const analyticsLocations = coords(id[48])().analyticsLocations;
   let obj = isScrollVisible;
   const tmp3 = derivedValue2();
-  const context = isScrollVisible.useContext(coords(id[27]));
+  const context = isScrollVisible.useContext(coords(id[28]));
   const channelId = context.channelId;
   const connected = context.connected;
   const contentDimensions = context.contentDimensions;
@@ -3068,7 +3070,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
       return size1;
     }
   }
-  let obj6 = { coords, focused, id, isPIP: tmp13, pipState: pIPState, getScaledPIPContainerHeight: tmp5(tmp2[51]).getScaledPIPContainerHeight, getClampedPIPPosition: tmp5(tmp2[51]).getClampedPIPPosition, wrapperDimensions, windowDimensions, safeArea, pipAvoidanceSpecs, derivedScrollValue: derivedValue1, xOffset: derivedValue2, calculateContentCenterOffset: tmp(tmp2[52]), contentDimensions, sharedTransitionState, TransitionStates: tmp5(tmp2[47]).TransitionStates, zIndexOverride: derivedValue, computeCardBorderRadius: tmp(tmp2[44]), mode, isSelf, defaultBorderRadius: token, sharedVisible, isRTCConnected, CONNECTING_OPACITY: derivedValue1, wrapperOffset, withDelay: tmp5(tmp2[14]).withDelay, withTiming: tmp5(tmp2[38]).withTiming, ZINDEX_TIMING: derivedValue, OPACITY_TIMING: id2, isScrollVisible, runOnJS: tmp5(tmp2[14]).runOnJS, cleanUp, withSpring: tmp5(tmp2[39]).withSpring, layoutPhysics, CARD_SCALE_PHYSICS: isSelf, SCALE_PHYSICS };
+  let obj6 = { coords, focused, id, isPIP: tmp13, pipState: pIPState, getScaledPIPContainerHeight: tmp5(tmp2[51]).getScaledPIPContainerHeight, getClampedPIPPosition: tmp5(tmp2[51]).getClampedPIPPosition, wrapperDimensions, windowDimensions, safeArea, pipAvoidanceSpecs, derivedScrollValue: derivedValue1, xOffset: derivedValue2, calculateContentCenterOffset: tmp(tmp2[52]), contentDimensions, sharedTransitionState, TransitionStates: tmp5(tmp2[47]).TransitionStates, zIndexOverride: derivedValue, computeCardBorderRadius: tmp(tmp2[44]), mode, isSelf, defaultBorderRadius: token, sharedVisible, isRTCConnected, CONNECTING_OPACITY: derivedValue1, wrapperOffset, withDelay: tmp5(tmp2[14]).withDelay, withTiming: tmp5(tmp2[37]).withTiming, ZINDEX_TIMING: derivedValue, OPACITY_TIMING: id2, isScrollVisible, runOnJS: tmp5(tmp2[14]).runOnJS, cleanUp, withSpring: tmp5(tmp2[38]).withSpring, layoutPhysics, CARD_SCALE_PHYSICS: isSelf, SCALE_PHYSICS };
   E.__closure = obj6;
   E.__workletHash = 12967186727989;
   E.__initData = __initData33;
@@ -3183,7 +3185,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     obj7 = spring;
     return obj;
   }
-  let obj8 = { pipState: pIPState, lastPIPScale: sharedValue1, withSpring: tmp5(tmp2[39]).withSpring, layoutPhysics, wrapperOffset };
+  let obj8 = { pipState: pIPState, lastPIPScale: sharedValue1, withSpring: tmp5(tmp2[38]).withSpring, layoutPhysics, wrapperOffset };
   me.__closure = obj8;
   me.__workletHash = 12776532702151;
   me.__initData = __initData35;
@@ -3241,7 +3243,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ item, transitionState, cleanUp } = arg0);
   const id = item.id;
   const tmp4 = windowDimensions;
-  const context = react.useContext(windowDimensions(id2[27]));
+  const context = react.useContext(windowDimensions(id2[28]));
   ({ guildId, isCall, mountedCards, scrollPosition } = context);
   windowDimensions = context.windowDimensions;
   ({ channelId, layoutManager } = context);
@@ -3276,7 +3278,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  const tmpResult11 = tmp(tmp2[28]);
+  const tmpResult11 = tmp(tmp2[22]);
   const stateFromStores = tmpResult11.useStateFromStores(tmp9, tmp10);
   if (cResult[4] !== tmp6) {
     const tmpResult12 = tmp(tmp2[50]);
@@ -3672,7 +3674,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[13] = obj12;
     tmp38 = obj12;
   }
-  class B {
+  class F {
     constructor() {
       handleChange = function handleChange() {
         const isSpeakingResult = null != id2 && SpeakingStore.isSpeaking(tmp2);
@@ -3695,10 +3697,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items2 = [id2, sharedValue2];
   cResult[6] = sharedValue2;
   cResult[7] = id2;
-  cResult[8] = B;
+  cResult[8] = F;
   cResult[9] = items2;
   tmp27 = items2;
-  tmp26 = B;
+  tmp26 = F;
 }) : (function VoicePanelCard(cleanUp) {
   let DEFAULT;
   let VideoSpinnerContext;
@@ -3734,7 +3736,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = windowDimensions;
   const tmp2 = id2;
   cleanUp = cleanUp.cleanUp;
-  const context = cardLayoutCoordsSubscription.useContext(windowDimensions(id2[27]));
+  const context = cardLayoutCoordsSubscription.useContext(windowDimensions(id2[28]));
   ({ guildId, isCall, mountedCards, scrollPosition } = context);
   windowDimensions = context.windowDimensions;
   ({ channelId, layoutManager } = context);
@@ -3747,7 +3749,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const isSelf = tmp6.isSelf;
   id2 = tmp6.user.id;
   const items = [RTCConnectionStore];
-  const tmp5Result = scrollPosition(tmp2[28]);
+  const tmp5Result = scrollPosition(tmp2[22]);
   const stateFromStores = tmp5Result.useStateFromStores(items, () => connected.isConnected());
   const tmp5Result10 = scrollPosition(tmp2[50]);
   const tmp8 = tmp5Result10.isStableUserParticipant(tmp4) && tmp4.ringing;
@@ -3805,7 +3807,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp5Result13 = scrollPosition(tmp2[57]);
   cardLayoutCoordsSubscription = tmp5Result13.useCardLayoutCoordsSubscription(id, layoutManager);
   const tmp5Result14 = scrollPosition(tmp2[14]);
-  class B {
+  class F {
     constructor() {
       const sum = EDGE_GUTTER + cardLayoutCoordsSubscription.get().y;
       const value = scrollPosition.get();
@@ -3819,10 +3821,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   let obj3 = { EDGE_GUTTER, coords: cardLayoutCoordsSubscription, scrollPosition, windowDimensions };
-  B.__closure = obj3;
-  B.__workletHash = 4524381131947;
-  B.__initData = __initData38;
-  const derivedValue = tmp5Result14.useDerivedValue(B);
+  F.__closure = obj3;
+  F.__workletHash = 4524381131947;
+  F.__initData = __initData38;
+  const derivedValue = tmp5Result14.useDerivedValue(F);
   const tmp5Result15 = scrollPosition(tmp2[49]);
   pIPState = tmp5Result15.usePIPState();
   const scale = pIPState.scale;

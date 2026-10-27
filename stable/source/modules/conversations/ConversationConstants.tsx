@@ -1,9 +1,9 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 5169
+// Function ID: 5170
 // Name: ConversationConstants
 // Dependencies: [2]
 
-// Module 7311 (ConversationConstants)
+// Module 5169 (ConversationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
@@ -21,3 +21,4 @@ export const MAX_PREVIEW_CONVERSATIONS = 10;
 export const PREVIEW_MESSAGE_COUNT = 4;
 export const MOBILE_PREVIEW_MESSAGE_COUNT = 3;
 export const CONVERSATION_HAS_MORE_EXPIRATION_MS = 3600000;
+export const CONVERSATION_QUERY_PARAM = "conversation_id";

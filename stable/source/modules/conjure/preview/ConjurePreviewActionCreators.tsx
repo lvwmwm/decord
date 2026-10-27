@@ -1,14 +1,17 @@
-// Module ID: 11422
-// Function ID: 11423
+// Module ID: 11015
+// Function ID: 11016
 // Name: ConjurePreviewActionCreators
-// Dependencies: [10653, 11423, 6947, 584, 2]
-// Exports: reloadConjureAppFrames, reloadConjureProjectFrames, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile
+// Dependencies: [6293, 11016, 11017, 6294, 584, 11041, 11055, 2]
+// Exports: pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 11422 (ConjurePreviewActionCreators)
+// Module 11015 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11423 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11017 */;
+import leaveFrame from "leaveFrame" /* 11041 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11055 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11016 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewActionCreators.tsx");
@@ -30,7 +33,7 @@ export const reloadConjureProjectFrames = function reloadConjureProjectFrames(ar
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(11423);
+      const tmp2Result = tmp2(11017);
       tmp2Result.reloadAppFrames(prop);
     }
   }
@@ -49,4 +52,28 @@ export const setBuilderPreviewLandscape = function setBuilderPreviewLandscape(la
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_BUILDER_PREVIEW_LANDSCAPE_SET", landscape };
   obj.dispatch(obj2);
+};
+export const pauseConjurePreview = function pauseConjurePreview(projectId, id) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_PREVIEW_PAUSED_SET", projectId, paused: true };
+  obj.dispatch(obj2);
+  const obj3 = leaveFrame;
+  obj3.leaveFrame(id);
+};
+export const resumeConjurePreview = function resumeConjurePreview(projectId) {
+  if (ConjurePreviewPauseStore.isPaused(projectId)) {
+    const obj2 = { type: "CONJURE_PREVIEW_PAUSED_SET", projectId, paused: false };
+    const obj = DispatcherDefault;
+    obj.dispatch(obj2);
+  }
+};
+export const wakeConjurePreview = function wakeConjurePreview(projectId) {
+  const obj = conjurePausedPreviewViews;
+  if (obj.isConjurePausedPreviewMounted(projectId)) {
+    if (ConjurePreviewPauseStore.isPaused(projectId)) {
+      const obj3 = { type: "CONJURE_PREVIEW_PAUSED_SET", projectId, paused: false };
+      const obj2 = DispatcherDefault;
+      obj2.dispatch(obj3);
+    }
+  }
 };

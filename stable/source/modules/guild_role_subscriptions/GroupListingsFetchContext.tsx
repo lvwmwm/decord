@@ -1,23 +1,23 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 16271
+// Function ID: 16272
 // Name: GroupListingsFetchContext
-// Dependencies: [32, 19, 5757, 4743, 21, 558, 576, 573, 6958, 2]
+// Dependencies: [32, 19, 6013, 4838, 21, 558, 576, 573, 7232, 2]
 
-// Module 15511 (GroupListingsFetchContext)
+// Module 16271 (GroupListingsFetchContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4743 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6958 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
 
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
-const jsx = Fragment.jsx;
+let jsx = Fragment.jsx;
 const redux = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGroupListingsFetchContext(arg0) {
@@ -206,6 +206,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupListing
   tmp14 = fn3;
 }) : (function GroupListingsFetchContextProvider(guildId) {
   let children;
+  let listingsLoaded;
   let refetchOnMount;
   guildId = guildId.guildId;
   const includeSoftDeleted = guildId.includeSoftDeleted;
@@ -232,8 +233,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupListing
   first = tmp3[0];
   closure_6 = tmp3[1];
   const items2 = [stateFromStores, guildId, includeSoftDeleted, countryCode, dontFetchWhileTrue, first];
-  let tmp6 = stateFromStores1 === FetchState.FETCHED;
-  const callback = stateFromStores.useCallback(() => {
+  const fetchGroupListingsForGuild = stateFromStores.useCallback(() => {
     const tmp = guildId;
     if (null != guildId) {
       const tmp14 = stateFromStores;
@@ -250,10 +250,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupListing
       }
     }
   }, items2);
-  if (tmp6) {
-    tmp6 = !first;
-  }
-  return <redux.Provider value={{ listingsLoaded: tmp6, fetchGroupListingsForGuild: callback }}>{children}</redux.Provider>;
+  jsx = tmp6;
+  const items3 = [tmp6, fetchGroupListingsForGuild];
+  return <redux.Provider value={stateFromStores.useMemo(() => ({ listingsLoaded, fetchGroupListingsForGuild }), items3)}>{children}</redux.Provider>;
 });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GroupListingsFetchContext.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17961
+// Function ID: 17962
 // Name: VoiceChannelAppSetting
-// Dependencies: [19, 21, 558, 576, 17580, 17581, 1126, 3947, 6265, 6180, 8607, 5056, 17583, 2000, 17583, 2]
+// Dependencies: [19, 21, 558, 576, 17962, 17963, 1128, 3981, 6542, 6457, 8885, 5155, 17965, 2002, 17965, 2]
 
-// Module 17579 (VoiceChannelAppSetting)
+// Module 17961 (VoiceChannelAppSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 17580 */;
-import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 17583 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 17962 */;
+import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 17965 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ function VoiceChannelAppRow(guildId) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { guildId, selectedApplicationId: application_id, onChange };
-      const tmp2 = asyncRequire(17583, dependencyMap.paths);
+      const tmp2 = asyncRequire(17965, dependencyMap.paths);
       openLazy(tmp2, VoiceChannelAppActionSheet.VOICE_CHANNEL_APP_ACTION_SHEET_KEY, obj);
     },
     arrow: true

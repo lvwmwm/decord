@@ -1,18 +1,18 @@
-// Module ID: 16524
-// Function ID: 16525
+// Module ID: 17213
+// Function ID: 17214
 // Name: typing_indicators/TypingIndicator
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 4969, 1200, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5127, 5065, 1202, 2]
 
-// Module 16524 (typing_indicators/TypingIndicator)
+// Module 17213 (typing_indicators/TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import shared from "shared" /* 4969 */;
-import useThemeDefault from "useTheme" /* 5031 */;
+import native from "native" /* 1202 */;
+import shared from "shared" /* 5065 */;
+import useThemeDefault from "useTheme" /* 5127 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 13595
+// Function ID: 13596
 // Name: validateJumpWithAlert
-// Dependencies: [2065, 4750, 4760, 1085, 5299, 1126, 7224, 2]
+// Dependencies: [2068, 4845, 4855, 1087, 5399, 1128, 7495, 2]
 // Exports: default
 
-// Module 12664 (validateJumpWithAlert)
-import Constants from "Constants" /* 1085 */;
-import intl14 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import isSpam from "isSpam" /* 7224 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+// Module 13595 (validateJumpWithAlert)
+import Constants from "Constants" /* 1087 */;
+import intl14 from "intl" /* 1128 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import isSpam from "isSpam" /* 7495 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -69,10 +69,10 @@ export default function validateJumpWithAlert(author, onConfirm) {
           const obj7 = { title: intl.string(intl14.t["6vJKFk"]), body: intl2.formatToPlainString(intl14.t.zKNgPF, obj8), confirmText: intl3.string(intl14.t.BddRzS) };
           const show = AlertActionCreatorsDefault.show;
           AlertActionCreatorsDefault;
-          intl = tmp(1126).intl;
-          intl2 = tmp(1126).intl;
+          intl = tmp(1128).intl;
+          intl2 = tmp(1128).intl;
           obj8 = { name: author.author.username };
-          intl3 = tmp(1126).intl;
+          intl3 = tmp(1128).intl;
           show(obj7);
         }
         return false;
@@ -80,11 +80,11 @@ export default function validateJumpWithAlert(author, onConfirm) {
       const obj9 = { title: intl4.string(intl14.t["cZcG+P"]), body: intl5.formatToPlainString(intl14.t["1YTWty"], obj10), confirmText: intl6.string(intl14.t["+TSRGD"]), cancelText: intl7.string(intl14.t["ETE/oC"]), onConfirm };
       const show2 = AlertActionCreatorsDefault.show;
       AlertActionCreatorsDefault;
-      intl4 = tmp(1126).intl;
-      intl5 = tmp(1126).intl;
+      intl4 = tmp(1128).intl;
+      intl5 = tmp(1128).intl;
       obj10 = { name: author.author.username };
-      intl6 = tmp(1126).intl;
-      intl7 = tmp(1126).intl;
+      intl6 = tmp(1128).intl;
+      intl7 = tmp(1128).intl;
       show2(obj9);
     } else {
       return true;

@@ -1,21 +1,21 @@
-// Module ID: 18008
-// Function ID: 18009
+// Module ID: 18401
+// Function ID: 18402
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7255, 1085, 21, 587, 5092, 558, 576, 1631, 15150, 15149, 18009, 11025, 4818, 7269, 1265, 7256, 7094, 5088, 5391, 1126, 2568, 2]
+// Dependencies: [19, 17, 7526, 1087, 21, 587, 5191, 558, 576, 1633, 15912, 15911, 18402, 11415, 4913, 7540, 1267, 7527, 7370, 5187, 5491, 1128, 2589, 2]
 
-// Module 18008 (ParentalConsentWarningBanner)
+// Module 18401 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import openUserSettings from "openUserSettings" /* 7094 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7255 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7256 */;
-import _modDef7269 from "module_7269" /* 7269 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import openUserSettings from "openUserSettings" /* 7370 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7527 */;
+import _modDef7540 from "module_7540" /* 7540 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   children = children.children;
   const tmp4 = closure_16();
   _require = tmp4;
-  const tmp6 = daysRemaining(1631)();
+  const tmp6 = daysRemaining(1633)();
   let obj2 = require("useParentalConsentWarning");
   const parentalConsentWarning = obj2.useParentalConsentWarning();
   let obj3 = require("useIsParentalConsentBannerActive");
@@ -74,7 +74,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   const obj6 = require("useToken");
   const token = obj6.useToken(daysRemaining(587).colors.BACKGROUND_FEEDBACK_WARNING);
   if (cResult[0] !== token) {
-    const obj7 = daysRemaining(7269)(token);
+    const obj7 = daysRemaining(7540)(token);
     const setAlphaResult = obj7.setAlpha(0);
     const toRgbStringResult = setAlphaResult.toRgbString();
     cResult[0] = token;
@@ -208,14 +208,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
           tmp30[0] = items1;
           const obj10 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: tmp13, locations, start: null, end: null };
           ({ START: obj12.start, END: obj12.end } = closure_10);
-          const items2 = [closure_11(daysRemaining(5391), obj10), ];
-          const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2568).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
-          intl = tmp(1126).intl;
+          const items2 = [closure_11(daysRemaining(5491), obj10), ];
+          const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2589).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
+          intl = tmp(1128).intl;
           items3 = [tmp4.pressable, ];
           const obj13 = { paddingTop: tmp6.top + 8 };
           items3[1] = obj13;
           obj14 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp4.label, children: formatResult };
-          Text = tmp(5088).Text;
+          Text = tmp(5187).Text;
           const tmp28 = closure_12;
           const tmp29 = View;
           const tmp35 = closure_4;
@@ -227,7 +227,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
               }
             }
             const obj15 = { connectHook: tmp20 };
-            formatResult = obj18.format(tmp5(2568).Gfqlpa, obj15);
+            formatResult = obj18.format(tmp5(2589).Gfqlpa, obj15);
           } else {
             class W {
               constructor(arg0, arg1) {
@@ -236,7 +236,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
               }
             }
             const obj17 = { count: daysRemaining, connectHook: tmp20 };
-            formatResult = obj16.format(tmp5(2568).ZBK5mM, obj17);
+            formatResult = obj16.format(tmp5(2589).ZBK5mM, obj17);
           }
           items2[1] = closure_11(tmp35, obj11);
           tmp30[2] = items2;
@@ -295,7 +295,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7269(token);
+    const obj = _modDef7540(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

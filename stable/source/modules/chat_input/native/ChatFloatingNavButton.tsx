@@ -1,17 +1,17 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 12921
+// Function ID: 12922
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 4818, 5378, 5382, 6157, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4945, 4913, 5478, 5482, 5128, 2]
 
-// Module 11969 (ChatFloatingNavButton)
+// Module 12921 (ChatFloatingNavButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
-import springPresets from "springPresets" /* 5382 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 6666
-// Function ID: 6667
+// Module ID: 6943
+// Function ID: 6944
 // Name: useKeyboardDuration
-// Dependencies: [1500, 1382, 1501, 2]
+// Dependencies: [1502, 1384, 1503, 2]
 // Exports: getKeyboardDuration
 
-// Module 6666 (useKeyboardDuration)
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1501 */;
+// Module 6943 (useKeyboardDuration)
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1503 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");

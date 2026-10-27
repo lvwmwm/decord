@@ -1,12 +1,12 @@
-// Module ID: 4778
-// Function ID: 4779
+// Module ID: 4873
+// Function ID: 4874
 // Name: InvoiceRecord
-// Dependencies: [1405, 1085, 4779, 2]
+// Dependencies: [1407, 1087, 4874, 2]
 
-// Module 4778 (InvoiceRecord)
-import Constants from "Constants" /* 1085 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4779 */;
-import Record from "Record" /* 1405 */;
+// Module 4873 (InvoiceRecord)
+import Constants from "Constants" /* 1087 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4874 */;
+import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;
@@ -318,11 +318,16 @@ class InvoiceRecord extends BaseInvoiceRecord {
   getWalletAmount() {
     const paymentLegs = this.paymentLegs;
     return paymentLegs.reduce((acc, payment_gateway) => {
-      let sum = acc;
+      let diff = acc;
       if (payment_gateway.payment_gateway === constants.TDS) {
-        sum = acc + payment_gateway.amount;
+        let num = payment_gateway.amount_short;
+        const sum = acc + payment_gateway.amount;
+        if (num == null) {
+          num = 0;
+        }
+        diff = sum - num;
       }
-      return sum;
+      return diff;
     }, 0);
   }
   getAmountDue() {

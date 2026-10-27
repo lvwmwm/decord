@@ -1,18 +1,18 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 11373
+// Function ID: 11374
 // Name: SoundpackStore
-// Dependencies: [10984, 504, 584, 2]
+// Dependencies: [11374, 504, 584, 2]
 
-// Module 10983 (SoundpackStore)
+// Module 11373 (SoundpackStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 10984 */;
+import Constants from "Constants" /* 11374 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;
 let obj = { soundpack: Soundpacks.CLASSIC, lastSoundpackExperimentId: null };
-const PersistedStore = get_initializedDefault.PersistedStore;
-class SoundpackStore extends PersistedStore {
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
+class SoundpackStore extends DeviceSettingsStore {
   initialize(arg0) {
     if (null != arg0) {
       const _Object = Object;
@@ -23,7 +23,7 @@ class SoundpackStore extends PersistedStore {
       }
     }
   }
-  getState() {
+  getUserAgnosticState() {
     return obj;
   }
   getSoundpack() {

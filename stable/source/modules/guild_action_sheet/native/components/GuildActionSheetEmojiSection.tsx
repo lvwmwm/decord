@@ -1,25 +1,25 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14998
+// Function ID: 14999
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5987, 1205, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1497, 4818, 4769, 6852, 6879, 5056, 9265, 4969, 14217, 1126, 6185, 1200, 9516, 5057, 5058, 4808, 6157, 6821, 6822, 1415, 2]
+// Dependencies: [32, 19, 17, 6243, 1207, 1392, 1087, 21, 5191, 587, 558, 576, 504, 1499, 4913, 4864, 7130, 7155, 5155, 9571, 5065, 14999, 1128, 6462, 1202, 15000, 5156, 5157, 4903, 5128, 7099, 7100, 1417, 2]
 
-// Module 14216 (GuildActionSheetEmojiSection)
+// Module 14998 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5157 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import ThemeStore_mod from "ThemeStore" /* 1205 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
+import ThemeStore_mod from "ThemeStore" /* 1207 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

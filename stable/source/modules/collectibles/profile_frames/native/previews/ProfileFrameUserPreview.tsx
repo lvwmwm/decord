@@ -1,13 +1,13 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10953
+// Function ID: 10954
 // Name: ProfileFrameUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1126, 10513, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1128, 10836, 2]
 
-// Module 10628 (ProfileFrameUserPreview)
+// Module 10953 (ProfileFrameUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10513 */;
+import intl3 from "intl" /* 1128 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10836 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,12 +47,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
   if (cResult[5] !== tmp6) {
     let formatToPlainStringResult;
     if (null != tmp6) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj2 = { a11y_text: tmp6.label };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t["DT/PwH"], obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t["DT/PwH"], obj2);
     } else {
-      const intl = tmp(1126).intl;
-      formatToPlainStringResult = intl.string(tmp(1126).t.vQx51z);
+      const intl = tmp(1128).intl;
+      formatToPlainStringResult = intl.string(tmp(1128).t.vQx51z);
     }
     cResult[5] = tmp6;
     cResult[6] = formatToPlainStringResult;

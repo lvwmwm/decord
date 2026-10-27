@@ -1,10 +1,10 @@
 // Module ID: 15929
 // Function ID: 15930
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 15929 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4aac4b9e524273cde97c71cf7da9357a", name: "DoubleCheckmarkIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 185, height: 125, scales: [1, 2, 3], hash: "fa358a5ff3d1f49a00fc1180e0e601e5", name: "family_center_activity_banner_image_parent", type: "png" });

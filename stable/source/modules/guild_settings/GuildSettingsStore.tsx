@@ -1,32 +1,32 @@
-// Module ID: 8634
-// Function ID: 8635
+// Module ID: 8911
+// Function ID: 8912
 // Name: GuildSettingsStore
-// Dependencies: [2080, 8612, 2069, 2083, 8494, 1404, 2087, 1390, 1085, 8635, 8060, 11, 8636, 1295, 584, 8638, 2079, 8639, 4702, 8640, 504, 12, 510, 2]
+// Dependencies: [2083, 8890, 2072, 2086, 8772, 1406, 2090, 1392, 1087, 8912, 8334, 11, 8913, 1297, 584, 8915, 2082, 8916, 4797, 8917, 504, 12, 510, 2]
 
-// Module 8634 (GuildSettingsStore)
+// Module 8911 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import PlainRecord from "PlainRecord" /* 2080 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8635 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8636 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8638 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8639 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8640 */;
-import GuildProfileStore from "GuildProfileStore" /* 8612 */;
-import InviteRecord from "InviteRecord" /* 8494 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8060 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import PlainRecord from "PlainRecord" /* 2083 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8912 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8913 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8915 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8916 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8917 */;
+import GuildProfileStore from "GuildProfileStore" /* 8890 */;
+import InviteRecord from "InviteRecord" /* 8772 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8334 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -37,10 +37,12 @@ let closure_25;
 let closure_26;
 let closure_28;
 let closure_29;
-function handleFormInit(location) {
+function handleFormInit(type) {
   let section;
-  ({ guildId, section, subsection } = location);
-  _location = location.location;
+  ({ guildId, section, subsection } = type);
+  if ("GUILD_SETTINGS_INIT" === type.type) {
+    _location = type.location;
+  }
   guild = GuildStore.getGuild(guildId);
   if (null == guild) {
     c35 = false;
@@ -116,7 +118,7 @@ function _createInvite(code) {
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   created_at = code.created_at;
   ({ flags: obj.flags, roles: obj.roles } = code);
-  tmp7 = _modDef4702;
+  tmp7 = _modDef4797;
   const tmp4 = new tmp(obj);
   return tmp4;
 }
@@ -249,7 +251,7 @@ class GuildSettingsStore extends Store {
   }
   showPublicSuccessModal() {
     const Storage = Storage2.Storage;
-    return !Storage.get(closure_28);
+    return !Storage.get(results);
   }
   getGuild() {
     return guild;

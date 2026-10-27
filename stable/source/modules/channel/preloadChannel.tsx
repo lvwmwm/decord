@@ -1,12 +1,12 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5204
+// Function ID: 5205
 // Name: preloadChannel
-// Dependencies: [1085, 584, 2]
+// Dependencies: [1087, 584, 2]
 // Exports: default
 
-// Module 5105 (preloadChannel)
+// Module 5204 (preloadChannel)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,24 +1,24 @@
-// Module ID: 13894
-// Function ID: 13895
+// Module ID: 14674
+// Function ID: 14675
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 13895, 9405, 13896, 13820, 13897, 8617, 13898, 8973, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 14675, 9709, 14676, 14600, 14677, 8895, 14678, 9269, 2]
 
-// Module 13894 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 14674 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
-import HeartIcon from "HeartIcon" /* 8973 */;
-import BoostGemIcon from "BoostGemIcon" /* 9405 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13820 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13895 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13896 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13897 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13898 */;
+import intl6 from "intl" /* 1128 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8895 */;
+import HeartIcon from "HeartIcon" /* 9269 */;
+import BoostGemIcon from "BoostGemIcon" /* 9709 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14675 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14676 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14677 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14678 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   const tmp4 = closure_8();
   ({ container, title } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl6.t.IzKs3o);
     cResult[0] = stringResult;
     first = stringResult;
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { icon: AssetRegistryDefault, IconComponent: BoostGemIcon.BoostGemIcon, children: intl2.string(intl6.t.TZigSO) };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     const tmp14 = React3(closure_7, obj3);
     cResult[3] = tmp14;
     tmp10 = tmp14;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { icon: AssetRegistryDefault2, IconComponent: BoostTier3Icon.BoostTier3Icon, children: intl3.string(intl6.t.hjQuV2) };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     const tmp19 = React3(closure_7, obj4);
     cResult[4] = tmp19;
     tmp15 = tmp19;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { icon: AssetRegistryDefault3, IconComponent: ShieldUserIcon.ShieldUserIcon, children: intl4.string(intl6.t["2RUcaM"]) };
-    intl4 = tmp(1126).intl;
+    intl4 = tmp(1128).intl;
     const tmp24 = React3(closure_7, obj5);
     cResult[5] = tmp24;
     tmp20 = tmp24;
@@ -177,7 +177,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { icon: AssetRegistryDefault4, IconComponent: HeartIcon.HeartIcon, children: intl5.string(intl6.t.bJoZKV) };
-    intl5 = tmp(1126).intl;
+    intl5 = tmp(1128).intl;
     const tmp29 = React3(closure_7, obj6);
     cResult[6] = tmp29;
     tmp25 = tmp29;

@@ -1,27 +1,27 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 15662
+// Function ID: 15663
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 7275, 1991, 2125, 1085, 21, 5092, 587, 558, 576, 8290, 6852, 6879, 1265, 8284, 8291, 1126, 5088, 8292, 6840, 10091, 504, 14902, 8286, 14903, 13483, 13484, 8293, 9016, 5391, 10629, 2]
+// Dependencies: [32, 19, 17, 7546, 1993, 2128, 1087, 21, 5191, 587, 558, 576, 8568, 7130, 7155, 1267, 8562, 8569, 1128, 5187, 8570, 7118, 10394, 504, 15663, 8564, 15664, 14262, 14263, 8571, 9312, 5491, 10954, 2]
 
-// Module 14901 (EditNameplateActionSheet)
+// Module 15662 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import NameplateRecord from "NameplateRecord" /* 1991 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8284 */;
-import useShopProductItems from "useShopProductItems" /* 8291 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
-import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9016 */;
-import NameplatePreview from "NameplatePreview" /* 10629 */;
-import EditNameplateSection from "EditNameplateSection" /* 14903 */;
+import Constants from "Constants" /* 1087 */;
+import NameplateRecord from "NameplateRecord" /* 1993 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8562 */;
+import useShopProductItems from "useShopProductItems" /* 8569 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
+import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9312 */;
+import NameplatePreview from "NameplatePreview" /* 10954 */;
+import EditNameplateSection from "EditNameplateSection" /* 15664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -60,15 +60,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
   const cResult = obj.c(31);
   ({ user, currentNameplate, guildId } = arg0);
   const tmp4 = closure_13();
-  let obj2 = guildId(8290);
+  let obj2 = guildId(8568);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
   [first, tmp7] = react.useState(undefined);
   let tmp8 = currentNameplate;
   if (undefined !== first) {
     tmp8 = first;
   }
-  const tmp10 = first(6852);
-  const analyticsLocations = tmp10(first(6879).EDIT_NAMEPLATE_SHEET).analyticsLocations;
+  const tmp10 = first(7130);
+  const analyticsLocations = tmp10(first(7155).EDIT_NAMEPLATE_SHEET).analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
       const obj = first(dependencyMap[15]);
@@ -101,8 +101,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
     const _Symbol = Symbol;
     const title = tmp4.title;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(tmp(1126).t.BwdeM1);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(tmp(1128).t.BwdeM1);
       cResult[6] = stringResult;
       tmp17 = stringResult;
     } else {
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
     }
     if (cResult[7] !== tmp4.title) {
       const obj4 = { variant: "redesign/heading-18/bold", style: title, accessibilityRole: "header", children: tmp17 };
-      const tmp21 = closure_10(tmp(5088).Text, obj4);
+      const tmp21 = closure_10(tmp(5187).Text, obj4);
       cResult[7] = tmp4.title;
       cResult[8] = tmp21;
       tmp19 = tmp21;
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
                             return tmp40;
                           }
                           const obj5 = { value: analyticsLocations, children: tmp37 };
-                          const tmp42 = closure_10(tmp(6852).AnalyticsLocationProvider, obj5);
+                          const tmp42 = closure_10(tmp(7130).AnalyticsLocationProvider, obj5);
                           cResult[28] = analyticsLocations;
                           cResult[29] = tmp37;
                           cResult[30] = tmp42;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
                       }
                       const obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: first1, startExpanded: true, children: items };
                       items = [tmp26, tmp33];
-                      const tmp39 = closure_11(tmp(6840).BottomSheet, obj6);
+                      const tmp39 = closure_11(tmp(7118).BottomSheet, obj6);
                       cResult[24] = bottomSheetRef;
                       cResult[25] = tmp33;
                       cResult[26] = tmp26;
@@ -179,8 +179,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
                   }
                 }
               }
-              const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: tmp12, analyticsLocations, analyticsSource: first(6879).EDIT_NAMEPLATE_SHEET };
-              const tmp9Result = first(8292);
+              const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: tmp12, analyticsLocations, analyticsSource: first(7155).EDIT_NAMEPLATE_SHEET };
+              const tmp9Result = first(8570);
               const tmp36 = closure_10(tmp9Result, obj7);
               cResult[18] = analyticsLocations;
               cResult[19] = tmp12;
@@ -247,7 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
   ({ user, currentNameplate, guildId } = arg0);
   first = undefined;
   const tmp = closure_13();
-  let obj = guildId(8290);
+  let obj = guildId(8568);
   let obj2 = react;
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   [first, tmp6] = react.useState(undefined);
@@ -255,8 +255,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
   if (undefined !== first) {
     tmp7 = first;
   }
-  const tmp9 = first(6852);
-  const analyticsLocations = tmp9(first(6879).EDIT_NAMEPLATE_SHEET).analyticsLocations;
+  const tmp9 = first(7130);
+  const analyticsLocations = tmp9(first(7155).EDIT_NAMEPLATE_SHEET).analyticsLocations;
   const items = [first, guildId];
   const callback = obj2.useCallback(() => {
     const obj = first(dependencyMap[15]);
@@ -279,22 +279,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditNameplat
     setPendingChanges(obj);
   }, items);
   const obj3 = { value: analyticsLocations, children: tmp13(BottomSheet, obj4) };
-  const AnalyticsLocationProvider = tmp2(6852).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp2(7130).AnalyticsLocationProvider;
   obj4 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, children: items2 };
   const obj5 = { style: tmp.container, children: items1 };
   const obj6 = { style: tmp.bounceOffset };
-  BottomSheet = tmp2(6840).BottomSheet;
+  BottomSheet = tmp2(7118).BottomSheet;
   items1 = [closure_10(View, obj6), , ];
-  const obj7 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(1126).t.BwdeM1) };
-  const Text = tmp2(5088).Text;
-  intl = tmp2(1126).intl;
+  const obj7 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(1128).t.BwdeM1) };
+  const Text = tmp2(5187).Text;
+  intl = tmp2(1128).intl;
   items1[1] = closure_10(Text, obj7);
   items1[2] = closure_10(closure_14, { user, selectedNameplate: tmp7, setSelectedNameplate: tmp6, guildId });
   items2 = [closure_11(View, obj5), ];
-  const obj8 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: tmp8(6879).EDIT_NAMEPLATE_SHEET };
+  const obj8 = { user, currentSkuId: skuId, selectedSkuId: skuId1, onApply: callback1, analyticsLocations, analyticsSource: tmp8(7155).EDIT_NAMEPLATE_SHEET };
   skuId = undefined;
   tmp13 = closure_11;
-  const tmp14 = first(8292);
+  const tmp14 = first(8570);
   tmp8 = first;
   if (currentNameplate != null) {
     skuId = currentNameplate.skuId;
@@ -630,12 +630,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   if (cResult[0] !== tmp9) {
     let formatToPlainStringResult;
     if (null != tmp9) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj2 = { a11y_text: tmp9.label };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.YJig7C, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.YJig7C, obj2);
     } else {
-      const intl = tmp(1126).intl;
-      formatToPlainStringResult = intl.string(tmp(1126).t.aqlsGS);
+      const intl = tmp(1128).intl;
+      formatToPlainStringResult = intl.string(tmp(1128).t.aqlsGS);
     }
     cResult[0] = tmp9;
     cResult[1] = formatToPlainStringResult;
@@ -822,7 +822,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_13();
   let tmp3 = dependencyMap;
-  const tmp4 = purchase(8293)(previewSkuId);
+  const tmp4 = purchase(8571)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -857,18 +857,18 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     tmp10 = _require;
   }
   const obj3 = { style: tmp.nameplateGradientContainer, children: items1 };
-  items1 = [closure_10(tmp10(9016).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(9016).NameplateDummyUserPreview, { width: 140 }), ];
+  items1 = [closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 100 }), closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 140 }), ];
   const obj4 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 }, colors: items2 };
   items2 = [tmp.nameplatePreviewGradient.color, ];
-  const tmp2Result = purchase(5391);
+  const tmp2Result = purchase(5491);
   items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
   items1[2] = closure_10(tmp2Result, obj4);
-  items3 = [closure_11(View, obj3), closure_10(tmp10(10629).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  items3 = [closure_11(View, obj3), closure_10(tmp10(10954).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
   const obj5 = { style: tmp.nameplateGradientContainer, children: items4 };
-  items4 = [closure_10(tmp10(9016).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9016).NameplateDummyUserPreview, { width: 100 }), ];
+  items4 = [closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9312).NameplateDummyUserPreview, { width: 100 }), ];
   const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };
   items5 = [, ];
-  const tmp2Result2 = purchase(5391);
+  const tmp2Result2 = purchase(5491);
   items5[0] = "" + tmp.nameplatePreviewGradient.color + "00";
   items5[1] = tmp.nameplatePreviewGradient.color;
   items4[2] = closure_10(tmp2Result2, obj6);

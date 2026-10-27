@@ -1,18 +1,18 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 16391
+// Function ID: 16392
 // Name: RoleColorsSetting
-// Dependencies: [19, 5081, 7988, 558, 576, 504, 14698, 1126, 10664, 2]
+// Dependencies: [19, 5181, 8260, 558, 576, 504, 15466, 1128, 11084, 2]
 // Exports: onRoleColorSettingValueChange
 
-// Module 15631 (RoleColorsSetting)
+// Module 16391 (RoleColorsSetting)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
+import intl4 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15466 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -55,13 +55,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleCol
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl4.t.YEOEi6), value: "username" };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     const items = [obj2, , ];
     const obj3 = { label: intl2.string(intl4.t.mQaro3), value: "dot" };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl4.t.Ji2EVJ), value: "hidden" };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     items[2] = obj4;
     cResult[0] = items;
     first = items;

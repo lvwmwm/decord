@@ -1,8 +1,8 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 13391
+// Function ID: 13392
 // Dependencies: [2]
 
-// Module 12455
+// Module 13391
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AppleIllocon-2x.png.js");

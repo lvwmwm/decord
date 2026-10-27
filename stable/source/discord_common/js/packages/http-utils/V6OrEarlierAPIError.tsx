@@ -1,9 +1,9 @@
-// Module ID: 1352
-// Function ID: 1353
+// Module ID: 1354
+// Function ID: 1355
 // Name: discord_common/V6OrEarlierAPIError
 // Dependencies: [2]
 
-// Module 1352 (discord_common/V6OrEarlierAPIError)
+// Module 1354 (discord_common/V6OrEarlierAPIError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/http-utils/V6OrEarlierAPIError.tsx");

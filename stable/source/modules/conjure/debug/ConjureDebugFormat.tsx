@@ -1,10 +1,10 @@
-// Module ID: 17341
-// Function ID: 17342
+// Module ID: 12356
+// Function ID: 12357
 // Name: ConjureDebugFormat
 // Dependencies: [2]
-// Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
+// Exports: debugLogEnv, formatBytes, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 17341 (ConjureDebugFormat)
+// Module 12356 (ConjureDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugFormat.tsx");
@@ -116,23 +116,6 @@ export const formatCount = function formatCount(cache_read_input_tokens) {
     str = cache_read_input_tokens.toLocaleString();
   }
   return str;
-};
-export const formatClockTime = function formatClockTime(arg0) {
-  let combined = arg0;
-  const date = new Date(arg0);
-  if (!Number.isNaN(date.getTime())) {
-    const _String = String;
-    const StringResult = String(date.getHours());
-    const _String2 = String;
-    const _String3 = String;
-    const padStartResult = StringResult.padStart(2, "0");
-    const StringResult1 = String(date.getMinutes());
-    const _HermesInternal = HermesInternal;
-    const padStartResult1 = StringResult1.padStart(2, "0");
-    const StringResult2 = String(date.getSeconds());
-    combined = "" + padStartResult + ":" + padStartResult1 + ":" + StringResult2.padStart(2, "0");
-  }
-  return combined;
 };
 export const formatObservedAt = function formatObservedAt(observedAt) {
   const date = new Date(observedAt);

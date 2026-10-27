@@ -1,19 +1,19 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 9724
+// Function ID: 9725
 // Name: SuperReactionLocalImageAnimation
-// Dependencies: [109, 19, 21, 558, 576, 7921, 7964, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8193, 8236, 2]
 
-// Module 9420 (SuperReactionLocalImageAnimation)
+// Module 9724 (SuperReactionLocalImageAnimation)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 7964 */;
+import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 8236 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const burst_reactions_BurstReactionEffectUtils = tmp(7921);
+const burst_reactions_BurstReactionEffectUtils = tmp(8193);
 let closure_3 = ["localImageSource", "animationSource"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReactionLocalImageAnimation(arg0) {

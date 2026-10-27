@@ -1,15 +1,15 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14921
+// Function ID: 14922
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 5070, 3, 1295, 4806, 1382, 1105, 2]
+// Dependencies: [5, 5170, 3, 1297, 4901, 1384, 1107, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 14139 (MobileNativeUpdateUtils)
+// Module 14921 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import Linking from "Linking" /* 4806 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5070 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import Linking from "Linking" /* 4901 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ function openBuildInstallerUrl(install) {
       obj = PlatformUtils;
       const tmp7 = require;
       if (obj.isIOS()) {
-        openURLExternally(uRL.toString(), tmp7(1105).WebBrowserType.SAFARI);
+        openURLExternally(uRL.toString(), tmp7(1107).WebBrowserType.SAFARI);
       } else {
         openURLExternally(uRL.toString());
       }

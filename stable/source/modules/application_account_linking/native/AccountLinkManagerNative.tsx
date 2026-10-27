@@ -1,11 +1,11 @@
-// Module ID: 18719
-// Function ID: 18720
+// Module ID: 19115
+// Function ID: 19116
 // Name: AccountLinkManagerNative
-// Dependencies: [17715, 5053, 2]
+// Dependencies: [18097, 5152, 2]
 
-// Module 18719 (AccountLinkManagerNative)
-import BrowserManager from "BrowserManager" /* 5053 */;
-import AccountLinkManager2 from "AccountLinkManager" /* 17715 */;
+// Module 19115 (AccountLinkManagerNative)
+import BrowserManager from "BrowserManager" /* 5152 */;
+import AccountLinkManager2 from "AccountLinkManager" /* 18097 */;
 import size from "module_2" /* 2 */;
 
 const AccountLinkManager = AccountLinkManager2.AccountLinkManager;

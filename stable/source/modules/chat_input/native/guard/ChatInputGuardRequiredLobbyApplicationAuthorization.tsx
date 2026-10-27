@@ -1,16 +1,16 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 13143
+// Function ID: 13144
 // Name: ChatInputGuardRequiredLobbyApplicationAuthorization
-// Dependencies: [19, 21, 5092, 587, 558, 576, 12173, 6157, 1126, 4806, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 13118, 5128, 1128, 4901, 2]
 
-// Module 12200 (ChatInputGuardRequiredLobbyApplicationAuthorization)
+// Module 13143 (ChatInputGuardRequiredLobbyApplicationAuthorization)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12173 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13118 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,9 +48,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (shouldRelaunchLinkedLobbyApplication) {
           let tmp21;
           if (cResult[6] !== requiredLinkedLobbyApplication.name) {
-            const intl3 = tmp(1126).intl;
+            const intl3 = tmp(1128).intl;
             const obj2 = { name: requiredLinkedLobbyApplication.name };
-            const formatResult = intl3.format(connectionEntrypointUrl(1126).t["SU2mY/"], obj2);
+            const formatResult = intl3.format(connectionEntrypointUrl(1128).t["SU2mY/"], obj2);
             cResult[6] = requiredLinkedLobbyApplication.name;
             cResult[7] = formatResult;
             tmp21 = formatResult;
@@ -75,9 +75,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           let tmp16;
           connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
           if (cResult[11] !== requiredLinkedLobbyApplication.name) {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const obj4 = { name: requiredLinkedLobbyApplication.name };
-            const formatResult1 = intl.format(connectionEntrypointUrl(1126).t.EvDn1D, obj4);
+            const formatResult1 = intl.format(connectionEntrypointUrl(1128).t.EvDn1D, obj4);
             cResult[11] = requiredLinkedLobbyApplication.name;
             cResult[12] = formatResult1;
             tmp12 = formatResult1;
@@ -87,8 +87,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           if (cResult[13] !== connectionEntrypointUrl) {
             let stringResult;
             if (null != connectionEntrypointUrl) {
-              const intl2 = tmp(1126).intl;
-              stringResult = intl2.string(tmp(1126).t.S0W8Z5);
+              const intl2 = tmp(1128).intl;
+              stringResult = intl2.string(tmp(1128).t.S0W8Z5);
             }
             cResult[13] = connectionEntrypointUrl;
             cResult[14] = stringResult;
@@ -167,20 +167,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (shouldRelaunchLinkedLobbyApplication) {
         ChatInputGuardDefault;
-        const intl3 = connectionEntrypointUrl(1126).intl;
+        const intl3 = connectionEntrypointUrl(1128).intl;
         const obj3 = { name: requiredLinkedLobbyApplication.name };
-        return <tmp16 type="simple-action" icon={tmp6} message={intl3.format(connectionEntrypointUrl(1126).t["SU2mY/"], obj3)} />;
+        return <tmp16 type="simple-action" icon={tmp6} message={intl3.format(connectionEntrypointUrl(1128).t["SU2mY/"], obj3)} />;
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
-        const obj4 = { type: "simple-action", icon: tmp6, message: intl.format(connectionEntrypointUrl(1126).t.EvDn1D, obj5), actionLabel: stringResult, actionOnPress: fn };
+        const obj4 = { type: "simple-action", icon: tmp6, message: intl.format(connectionEntrypointUrl(1128).t.EvDn1D, obj5), actionLabel: stringResult, actionOnPress: fn };
         const tmp10 = ChatInputGuardDefault;
-        intl = connectionEntrypointUrl(1126).intl;
+        intl = connectionEntrypointUrl(1128).intl;
         stringResult = undefined;
         obj5 = { name: requiredLinkedLobbyApplication.name };
         const tmp7 = jsx;
         if (null != connectionEntrypointUrl) {
-          const intl2 = tmp11(1126).intl;
-          stringResult = intl2.string(tmp11(1126).t.S0W8Z5);
+          const intl2 = tmp11(1128).intl;
+          stringResult = intl2.string(tmp11(1128).t.S0W8Z5);
         }
         fn = undefined;
         if (null != connectionEntrypointUrl) {

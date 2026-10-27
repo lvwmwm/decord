@@ -1,21 +1,21 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 17305
+// Function ID: 17306
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 7053, 7569, 6206, 1126, 16619, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7329, 7840, 6483, 1128, 17306, 2]
 
-// Module 16618 (ServerPreviewBannerControls)
+// Module 17305 (ServerPreviewBannerControls)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6206 */;
-import transitionToGuild from "transitionToGuild" /* 7053 */;
-import IconButton2 from "IconButton" /* 7569 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 16619 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6483 */;
+import transitionToGuild from "transitionToGuild" /* 7329 */;
+import IconButton2 from "IconButton" /* 7840 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 17306 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerPrev
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "md", variant: "secondary-overlay", icon: AssetRegistryDefault, onPress: first, accessibilityLabel: intl.string(intl2.t["13/7kX"]), maxFontSizeMultiplier: 1.5 };
-    const IconButton = tmp(7569).IconButton;
-    intl = tmp(1126).intl;
+    const IconButton = tmp(7840).IconButton;
+    intl = tmp(1128).intl;
     const tmp10 = metroRequire(IconButton, obj2);
     const tmp11 = metroRequire(ServerPreviewPillDefault, {});
     cResult[1] = tmp10;

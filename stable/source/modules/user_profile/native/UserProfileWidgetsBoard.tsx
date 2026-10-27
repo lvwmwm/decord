@@ -1,26 +1,26 @@
-// Module ID: 13255
-// Function ID: 13256
+// Module ID: 14143
+// Function ID: 14144
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 502, 8303, 21, 5092, 587, 558, 576, 8874, 8875, 8310, 6157, 13256, 5088, 13261, 2031, 13262, 504, 12, 7317, 1126, 13264, 13268, 6904, 7321, 13270, 7322, 13378, 13382, 2]
+// Dependencies: [32, 19, 17, 502, 8581, 21, 5191, 587, 558, 576, 9150, 9151, 8588, 5128, 14144, 5187, 14149, 2034, 14150, 504, 12, 7587, 1128, 14152, 14156, 7180, 7591, 11735, 7592, 14158, 14162, 2]
 
-// Module 13255 (UserProfileWidgetsBoard)
+// Module 14143 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7321 */;
-import Constants from "Constants" /* 8303 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 13261 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13270 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 13378 */;
+import StringUtils from "StringUtils" /* 2034 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7591 */;
+import Constants from "Constants" /* 8581 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9151 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11735 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14149 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14158 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,9 +45,9 @@ let obj8;
 let obj9;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5088);
-const UserProfilePersonalWidget = tmp(7322);
-const GameProfileAnalyticUtils = tmp(8874);
+const Text_Text = tmp(5187);
+const UserProfilePersonalWidget = tmp(7592);
+const GameProfileAnalyticUtils = tmp(9150);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
@@ -597,7 +597,7 @@ let closure_18 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   if (tmp6Result) {
     const obj6 = { style: tmp.comment, children: items3 };
     const obj7 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp9(13262).QuoteIcon;
+    const QuoteIcon = tmp9(14150).QuoteIcon;
     items3 = [React4(QuoteIcon, obj7), ];
     const obj8 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items3[1] = React4(Text_Text.Text, obj8);
@@ -997,7 +997,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     arr2 = cResult[4];
   }
   const type = widget.type;
-  if (userId(7317).WidgetType.FAVORITE_GAMES === type) {
+  if (userId(7587).WidgetType.FAVORITE_GAMES === type) {
     if (cResult[5] === tmp12) {
       if (cResult[6] === result) {
         if (cResult[7] === disableInteraction) {
@@ -1023,7 +1023,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     cResult[9] = userId;
     cResult[10] = tmp54;
     tmp53 = tmp54;
-  } else if (userId(7317).WidgetType.CURRENT_GAMES === type) {
+  } else if (userId(7587).WidgetType.CURRENT_GAMES === type) {
     if (cResult[11] === tmp10) {
       let arr5;
       if (cResult[12] === arr2) {
@@ -1078,14 +1078,14 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                     accessibilityRole: "button",
                     children: closure_9(Text2, obj6)
                   };
-                  Text2 = tmp(5088).Text;
-                  const intl2 = tmp(1126).intl;
+                  Text2 = tmp(5187).Text;
+                  const intl2 = tmp(1128).intl;
                   const tmp46 = closure_5;
                   if (tmp10) {
-                    stringResult = intl2.string(tmp(1126).t["6MwJo/"]);
+                    stringResult = intl2.string(tmp(1128).t["6MwJo/"]);
                   } else {
                     const obj5 = { numberOfItems: arr2.length - 2 };
-                    stringResult = intl2.formatToPlainString(tmp(1126).t.zr0Y5R, obj5);
+                    stringResult = intl2.formatToPlainString(tmp(1128).t.zr0Y5R, obj5);
                   }
                   obj6 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
                   tmp45Result = tmp45(tmp46, obj4);
@@ -1128,8 +1128,8 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     cResult[13] = substr;
     arr5 = substr;
   } else {
-    if (userId(7317).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-      if (userId(7317).WidgetType.PLAYED_GAMES !== type) {
+    if (userId(7587).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+      if (userId(7587).WidgetType.PLAYED_GAMES !== type) {
         return null;
       }
     }
@@ -1185,14 +1185,14 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                     accessibilityRole: "button",
                     children: closure_9(Text, obj11)
                   };
-                  Text = tmp(5088).Text;
-                  const intl = tmp(1126).intl;
+                  Text = tmp(5187).Text;
+                  const intl = tmp(1128).intl;
                   const tmp28 = closure_5;
                   if (tmp10) {
-                    stringResult1 = intl.string(tmp(1126).t["6MwJo/"]);
+                    stringResult1 = intl.string(tmp(1128).t["6MwJo/"]);
                   } else {
                     const obj10 = { numberOfItems: arr2.length - 6 };
-                    stringResult1 = intl.formatToPlainString(tmp(1126).t.zr0Y5R, obj10);
+                    stringResult1 = intl.formatToPlainString(tmp(1128).t.zr0Y5R, obj10);
                   }
                   obj11 = { variant: "text-sm/medium", color: "text-muted", children: stringResult1 };
                   tmp27Result = tmp27(tmp28, obj9);
@@ -1236,7 +1236,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     arr3 = substr1;
   }
   if (cResult[51] !== widget) {
-    const tmpResult2 = userId(13264);
+    const tmpResult2 = userId(14152);
     const widgetTitle = tmpResult2.getWidgetTitle(widget);
     cResult[51] = widget;
     cResult[52] = widgetTitle;
@@ -1284,7 +1284,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
           }
         }
         const obj14 = { style: cardStyle, title: tmp57, trailingAction: tmp59, children: tmp63 };
-        const tmp69 = closure_9(disableInteraction(6904), obj14);
+        const tmp69 = closure_9(disableInteraction(7180), obj14);
         cResult[61] = cardStyle;
         cResult[62] = tmp57;
         cResult[63] = tmp59;
@@ -1297,7 +1297,7 @@ const memo6Result = memo6(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   let tmp60 = !stateFromStores && !disableInteraction;
   if (tmp60) {
     const obj15 = { userId, widget };
-    tmp60 = closure_9(tmp13(13268), obj15);
+    tmp60 = closure_9(tmp13(14156), obj15);
   }
   cResult[53] = disableInteraction;
   cResult[54] = stateFromStores;
@@ -1551,7 +1551,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
   ({ isVisible, cardStyle } = userId);
   const tmp4 = undefined === isVisible || isVisible;
   const tmp5 = closure_13();
-  const tmpResult = tmp(13382);
+  const tmpResult = tmp(14162);
   const displayableBoardWidgets = tmpResult.useDisplayableBoardWidgets(userId);
   closure_15(tmp4, displayableBoardWidgets.length > 0);
   if (0 === displayableBoardWidgets.length) {
@@ -1607,7 +1607,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
   }
   const cardStyle = userId.cardStyle;
   const tmp = closure_13();
-  let obj = userId(13382);
+  let obj = userId(14162);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   closure_15(flag, displayableBoardWidgets.length > 0);
   let tmp3 = null;

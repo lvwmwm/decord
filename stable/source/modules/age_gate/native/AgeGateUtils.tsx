@@ -1,21 +1,21 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 9760
+// Function ID: 9761
 // Name: age_gate/AgeGateUtils
-// Dependencies: [2087, 4750, 1390, 1085, 1382, 6917, 2]
+// Dependencies: [2090, 4845, 1392, 1087, 1384, 7193, 2]
 // Exports: shouldNSFWGateGuild
 
-// Module 9456 (age_gate/AgeGateUtils)
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+// Module 9760 (age_gate/AgeGateUtils)
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const AgeRestrictedContentSettingsUtils = tmp(6917);
+const AgeRestrictedContentSettingsUtils = tmp(7193);
 ({ GuildNSFWContentLevel: hasOwnProperty, Permissions: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/age_gate/native/AgeGateUtils.tsx");
 

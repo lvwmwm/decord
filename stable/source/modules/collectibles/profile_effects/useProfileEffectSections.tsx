@@ -1,15 +1,15 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 15654
+// Function ID: 15655
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7259, 7275, 558, 576, 573, 7271, 1126, 13474, 2]
+// Dependencies: [32, 19, 7530, 7546, 558, 576, 573, 7542, 1128, 14253, 2]
 
-// Module 14893 (useProfileEffectSections)
+// Module 15654 (useProfileEffectSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
+import intl4 from "intl" /* 1128 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
           }
         }
         if (tmp28 === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp2(1126).intl;
-          const stringResult = intl.string(stateFromStores(1126).t.TiLCgw);
+          const intl = tmp2(1128).intl;
+          const stringResult = intl.string(stateFromStores(1128).t.TiLCgw);
           class P {
             constructor() {
               const items = [, ];
@@ -133,8 +133,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
         const _Symbol3 = Symbol;
         let preview = tmp15.preview;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp2(1126).intl;
-          const stringResult1 = intl2.string(stateFromStores(1126).t["1vbbee"]);
+          const intl2 = tmp2(1128).intl;
+          const stringResult1 = intl2.string(stateFromStores(1128).t["1vbbee"]);
           class P {
             constructor() {
               const items = [, ];
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7271);
+  const tmp2Result4 = stateFromStores(7542);
   const profileEffects = tmp2Result4.getProfileEffects(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -326,7 +326,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13474)(tmp5, obj.PREVIEW);
+  return first(14253)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffectSections.tsx");
 

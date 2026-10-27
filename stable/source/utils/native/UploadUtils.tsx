@@ -1,34 +1,35 @@
-// Module ID: 7764
-// Function ID: 7765
+// Module ID: 8035
+// Function ID: 8036
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1207, 5282, 1390, 1085, 7478, 3, 7495, 7765, 7755, 7771, 1382, 4808, 1126, 1445, 4769, 7754, 1162, 7772, 7774, 7775, 7760, 5068, 38, 7776, 7777, 7778, 1388, 7779, 7780, 7781, 5444, 7782, 2]
+// Dependencies: [109, 5, 17, 1209, 5382, 1392, 1087, 7749, 3, 8036, 7766, 8026, 8043, 1384, 4903, 1128, 1447, 4864, 8025, 1164, 8044, 8046, 8047, 8031, 5167, 38, 8048, 8049, 8050, 1388, 8051, 8052, 8053, 5544, 8054, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 7764 (utils/UploadUtils)
+// Module 8035 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 1162 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import react_nativeDefault2 from "react-native" /* 1445 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7495 */;
-import UploadPlatform from "UploadPlatform" /* 7754 */;
-import FileUtils from "FileUtils" /* 7760 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 7772 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 7774 */;
-import UploadLimits from "UploadLimits" /* 7775 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 7782 */;
+import react_nativeDefault from "react-native" /* 1164 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import react_nativeDefault2 from "react-native" /* 1447 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7766 */;
+import UploadPlatform from "UploadPlatform" /* 8025 */;
+import FileUtils from "FileUtils" /* 8031 */;
+import ImagePickerDefault from "ImagePicker" /* 8036 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 8044 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 8046 */;
+import UploadLimits from "UploadLimits" /* 8047 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8054 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1207 */;
-import NetworkStore from "NetworkStore" /* 5282 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1209 */;
+import NetworkStore from "NetworkStore" /* 5382 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c13, catchPromise, closure_11;
+let c13, closure_11;
 
 let Base64GIFPrefix;
 let Base64JPEGPrefix;
@@ -40,20 +41,22 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(5068);
-const UploadUtils = tmp(7755);
+const DeviceUtils = tmp(5167);
+const UploadUtils = tmp(8026);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
 let obj = function _openImagePickerUnhandled() {
   obj = _asyncToGenerator(async (arg0) => {
+    let closure_10;
+    let closure_6;
     const styles = arg0;
     let c11 = 0;
     let c12 = 0;
     let c9 = 0;
     return (async function(arg0, value) {
       let logger;
-      let obj35;
+      let obj22;
       if (c12 === 2) {
         c12 = 3;
         let str = "Generator functions may not be called on executing generators";
@@ -70,6 +73,8 @@ let obj = function _openImagePickerUnhandled() {
         try {
           let width;
           let height;
+          let tmp;
+          let closure_9;
           let cleanPickedImage;
           c12 = 2;
           switch (c11) {
@@ -82,30 +87,92 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                closure_6 = tmp;
+                size = undefined;
                 width = undefined;
                 height = undefined;
-                obj13 = undefined;
-                obj11 = undefined;
-                catchPromise = undefined;
-                obj9 = undefined;
+                obj12 = undefined;
+                tmp = undefined;
+                value = undefined;
+                closure_9 = undefined;
                 cleanPickedImage = function cleanPickedImage() {
                   let uri;
-                  obj = styles(obj22[13]);
+                  obj = styles(obj24[13]);
                   if (obj.isIOS()) {
-                    const nextPromise = catchPromise.then(() => {
-                      obj = catchPromise(width[10]);
+                    const nextPromise = promise.then(() => {
+                      obj = obj4(size[9]);
                       const str = uri.uri;
                       return obj.cleanSingle(decodeURIComponent(str.replace(/^file:\/\//, "")));
                     });
-                    catchPromise = nextPromise.catch((error) => logger.warn("Failed to remove picked image", error));
+                    nextPromise.catch((error) => logger.warn("Failed to remove picked image", error));
                   }
                 };
-                c11 = 1;
-                c12 = 1;
-                const obj4 = { value: obj35.requestPermission(constants.PHOTOS), done: false };
-                obj35 = NativePermissionUtilsDefault;
-                return obj4;
+                const obj4 = { mediaType: "photo", includeBase64: true, disableNewIOSPicker: true };
+                const obj38 = ImagePickerDefault;
+                if (obj38.canUseAndroidPhotoPicker(obj4)) {
+                  let tmp75;
+                  size = { width: null, height: null };
+                  if ("size" in styles) {
+                    size.width = styles.size;
+                    size.height = styles.size;
+                    tmp75 = size;
+                  } else {
+                    size.width = styles.width;
+                    size.height = styles.height;
+                    tmp75 = size;
+                  }
+                  size = tmp75;
+                  width = size.width;
+                  height = size.height;
+                  let self3 = this;
+                  let self4 = this;
+                  const promise = new Promise((arg0, arg1) => {
+                    let closure_0 = arg0;
+                    let closure_1 = arg1;
+                    obj = type(obj24[9]);
+                    obj.launchImageLibrary(closure_1_1, function(assets) {
+                      let first = null;
+                      if (null != assets.assets) {
+                        first = null;
+                        if (assets.assets.length > 0) {
+                          first = assets.assets[0];
+                        }
+                      }
+                      if (assets.didCancel) {
+                        const _Error2 = Error;
+                        const self3 = this;
+                        const self4 = this;
+                        const error = new Error(closure_2_22);
+                        closure_1(error);
+                      } else {
+                        if (null == assets.errorCode) {
+                          let uri;
+                          if (first != null) {
+                            uri = first.uri;
+                          }
+                          if (null != uri) {
+                            obj = { uri: null, base64: null };
+                            ({ uri: obj.uri, base64: obj.base64 } = first);
+                            closure_0(obj);
+                          }
+                        }
+                        const _Error = Error;
+                        const self = this;
+                        const self2 = this;
+                        const error1 = new Error(assets.errorMessage);
+                        closure_1(error1);
+                      }
+                    });
+                  });
+                  c11 = 2;
+                  c12 = 1;
+                  return { value: promise, done: false };
+                } else {
+                  c11 = 1;
+                  c12 = 1;
+                  const obj6 = { value: obj22.requestPermission(constants.PHOTOS), done: false };
+                  obj22 = NativePermissionUtilsDefault;
+                  return obj6;
+                }
               }
               break;
             }
@@ -117,70 +184,10 @@ let obj = function _openImagePickerUnhandled() {
               } else if (arg0 === 2) {
                 c12 = 3;
                 return { value, done: true };
-              } else if (value) {
-                catchPromise = "size" in styles;
-                size = { width: null, height: null };
-                if (catchPromise) {
-                  size.width = styles.size;
-                  size.height = styles.size;
-                  catchPromise = size;
-                } else {
-                  size.width = styles.width;
-                  size.height = styles.height;
-                  catchPromise = size;
-                }
-                width = catchPromise.width;
-                height = catchPromise.height;
-                catchPromise = this;
-                let self2 = this;
-                c11 = 2;
-                c12 = 1;
-                const obj6 = {
-                  value: new Promise((arg0, arg1) => {
-                              let closure_0 = arg0;
-                              let closure_1 = arg1;
-                              obj = closure_1(closure_2[10]);
-                              obj.launchImageLibrary({ mediaType: "photo", includeBase64: true, disableNewIOSPicker: true }, function(assets) {
-                                let first = null;
-                                if (null != assets.assets) {
-                                  first = null;
-                                  if (assets.assets.length > 0) {
-                                    first = assets.assets[0];
-                                  }
-                                }
-                                if (assets.didCancel) {
-                                  const _Error2 = Error;
-                                  const self3 = this;
-                                  const self4 = this;
-                                  const error = new Error(closure_2_22);
-                                  closure_1(error);
-                                } else {
-                                  if (null == assets.errorCode) {
-                                    let uri;
-                                    if (first != null) {
-                                      uri = first.uri;
-                                    }
-                                    if (null != uri) {
-                                      obj = { uri: null, base64: null };
-                                      ({ uri: obj.uri, base64: obj.base64 } = first);
-                                      closure_0(obj);
-                                    }
-                                  }
-                                  const _Error = Error;
-                                  const self = this;
-                                  const self2 = this;
-                                  const error1 = new Error(assets.errorMessage);
-                                  closure_1(error1);
-                                }
-                              });
-                            }),
-                  done: false
-                };
-                return obj6;
-              } else {
+              } else if (!value) {
                 let _Error = Error;
-                catchPromise = this;
                 let self = this;
+                let self2 = this;
                 let error = new Error(closure_134_23);
                 throw error;
               }
@@ -195,62 +202,57 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj13 = value;
-                const obj8 = { uri: obj13.uri, i: "" };
+                obj12 = value;
+                const obj9 = { uri: obj12.uri, i: "" };
                 const obj32 = closure_134_0(closure_134_2[11]);
-                obj11 = obj32.getFile(obj8);
+                tmp = obj32.getFile(obj9);
                 const obj34 = closure_134_1(closure_134_2[12]);
-                const fromFileUriResult = obj34.fromFileUri(obj13.uri);
-                catchPromise = fromFileUriResult.catch(() => null);
-                if (null != obj13.base64) {
-                  catchPromise = closure_134_0(closure_134_2[13]);
-                  if (catchPromise.isAndroid()) {
-                    const base64 = obj13.base64;
-                    catchPromise = base64.startsWith("UklGR");
-                    if (catchPromise) {
-                      obj9 = { base64: closure_134_16 + obj13.base64, mimeType: "image/webp" };
+                const fromFileUriResult = obj34.fromFileUri(obj12.uri);
+                value = fromFileUriResult.catch(() => null);
+                if (null != obj12.base64) {
+                  const obj35 = closure_134_0(closure_134_2[13]);
+                  if (obj35.isAndroid()) {
+                    const base64 = obj12.base64;
+                    if (base64.startsWith("UklGR")) {
+                      obj10 = { base64: closure_134_16 + obj12.base64, mimeType: "image/webp" };
                       c11 = 3;
                       c12 = 1;
-                      return { value: catchPromise, done: false };
+                      return { value, done: false };
                     } else {
-                      const base641 = obj13.base64;
-                      catchPromise = base641.indexOf("ZnR5cA==");
-                      if (4 === catchPromise) {
-                        const base642 = obj13.base64;
-                        catchPromise = base642.indexOf("YXZpZg==");
-                        if (8 !== catchPromise) {
-                          const base643 = obj13.base64;
-                          catchPromise = base643.indexOf("YXZpcw==");
+                      const base641 = obj12.base64;
+                      if (4 === base641.indexOf("ZnR5cA==")) {
+                        const base642 = obj12.base64;
+                        if (8 !== base642.indexOf("YXZpZg==")) {
+                          const base643 = obj12.base64;
                         }
-                        obj11 = { base64: closure_134_17 + obj13.base64, mimeType: "image/avif" };
+                        obj12 = { base64: closure_134_17 + obj12.base64, mimeType: "image/avif" };
                         c11 = 4;
                         c12 = 1;
-                        return { value: catchPromise, done: false };
+                        return { value, done: false };
                       }
                     }
                   }
                 }
-                catchPromise = obj11.type;
-                if ("image/gif" === catchPromise) {
+                if ("image/gif" === tmp.type) {
                   cleanPickedImage();
-                  obj13 = { base64: closure_134_13 + obj13.base64, mimeType: "image/gif" };
+                  obj14 = { base64: closure_134_13 + obj12.base64, mimeType: "image/gif" };
                   c11 = 5;
                   c12 = 1;
-                  return { value: catchPromise, done: false };
+                  return { value, done: false };
                 } else {
                   c9 = 2;
-                  catchPromise = { uri: obj13.uri, width, height, includeBase64: true, mimeType: type };
+                  const size1 = { uri: obj12.uri, width, height, includeBase64: true, mimeType: type };
                   const preferredMimeType = styles.preferredMimeType;
                   type = preferredMimeType;
-                  const launchCropper = closure_134_1(closure_134_2[10]).launchCropper;
-                  closure_134_1(closure_134_2[10]);
+                  const launchCropper = closure_134_1(closure_134_2[9]).launchCropper;
+                  closure_134_1(closure_134_2[9]);
                   if (preferredMimeType == null) {
-                    type = obj11.type;
+                    type = tmp.type;
                   }
                   c11 = 8;
                   c12 = 1;
-                  const obj15 = { value: launchCropper(catchPromise), done: false };
-                  return obj15;
+                  const obj16 = { value: launchCropper(size1), done: false };
+                  return obj16;
                 }
               }
               break;
@@ -264,9 +266,9 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj9.originalMd5 = value;
+                obj10.originalMd5 = value;
                 c12 = 3;
-                return { value: obj9, done: true };
+                return { value: obj10, done: true };
               }
               break;
             }
@@ -279,9 +281,9 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj11.originalMd5 = value;
+                obj12.originalMd5 = value;
                 c12 = 3;
-                return { value: obj11, done: true };
+                return { value: obj12, done: true };
               }
               break;
             }
@@ -294,30 +296,28 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj13.originalMd5 = value;
+                obj14.originalMd5 = value;
                 c12 = 3;
-                return { value: obj13, done: true };
+                return { value: obj14, done: true };
               }
               break;
             }
             case 6:
             {
               c9 = 0;
-              catchPromise = cleanPickedImage();
-              throw closure_10;
+              cleanPickedImage();
+              throw tmp90;
             }
             case 7:
             {
-              catchPromise = closure_10;
               c9 = 1;
-              let closure_9 = closure_10;
-              if ("E_PICKER_CANCELLED" === closure_9.code) {
-                throw closure_9;
+              if ("E_PICKER_CANCELLED" === tmp90.code) {
+                throw tmp90;
               } else {
-                obj22 = { base64: closure_134_12 + obj13.base64, mimeType: obj11.type, errorStr: closure_9.message };
+                obj24 = { base64: closure_134_12 + obj12.base64, mimeType: tmp.type, errorStr: tmp90.message };
                 c11 = 10;
                 c12 = 1;
-                return { value: catchPromise, done: false };
+                return { value, done: false };
               }
               break;
             }
@@ -332,15 +332,15 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj9 = value;
-                const obj30 = closure_134_1(closure_134_2[10]);
-                const cleanSingleResult = obj30.cleanSingle(obj9.path);
+                closure_9 = value;
+                const obj30 = closure_134_1(closure_134_2[9]);
+                const cleanSingleResult = obj30.cleanSingle(closure_9.path);
                 cleanSingleResult.catch((error) => logger.warn("Failed to remove cropped image", error));
-                obj25 = { base64: "data:" + obj9.mime + ";base64," + obj9.data, mimeType: obj9.mime };
+                obj27 = { base64: "data:" + closure_9.mime + ";base64," + closure_9.data, mimeType: closure_9.mime };
                 const _HermesInternal = HermesInternal;
                 c11 = 9;
                 c12 = 1;
-                return { value: catchPromise, done: false };
+                return { value, done: false };
               }
               break;
             }
@@ -355,11 +355,11 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj25.originalMd5 = value;
+                obj27.originalMd5 = value;
                 c9 = 0;
                 cleanPickedImage();
                 c12 = 3;
-                obj = { value: obj25, done: true };
+                obj = { value: obj27, done: true };
                 return obj;
               }
               break;
@@ -375,21 +375,20 @@ let obj = function _openImagePickerUnhandled() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                obj22.originalMd5 = value;
+                obj24.originalMd5 = value;
                 c9 = 0;
                 cleanPickedImage();
                 c12 = 3;
-                return { value: obj22, done: true };
+                return { value: obj24, done: true };
               }
               break;
             }
           }
-        } catch (tmp82) {
-          closure_10 = tmp82;
+        } catch (tmp90) {
           if (0 === c9) {
             c12 = 3;
-            throw tmp82;
-          } else if (1 === tmp84) {
+            throw tmp90;
+          } else if (1 === tmp92) {
             c11 = 6;
           } else {
             c11 = 7;
@@ -536,7 +535,7 @@ obj = function _mediaManager() {
               closure_3 = tmp;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -1551,7 +1550,7 @@ obj = function _processVideoUpload() {
             encodingConfig = undefined;
             fileSize = 1;
             spoiler = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === fileSize) {
           if (arg0 === 1) {
@@ -1751,7 +1750,7 @@ obj = function _processImageOrFileUpload() {
             closure_26 = undefined;
             i = 1;
             width = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -2022,7 +2021,7 @@ obj = function _tryConvertImage() {
               path3 = undefined;
               useJpegliEncoder = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
             break;
           }

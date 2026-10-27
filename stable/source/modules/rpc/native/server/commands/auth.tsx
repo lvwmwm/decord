@@ -1,14 +1,14 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 15548
+// Function ID: 15549
 // Name: auth
-// Dependencies: [5440, 1085, 10937, 2029, 1121, 14784, 2]
+// Dependencies: [5540, 1087, 9169, 2032, 1123, 15549, 2]
 
-// Module 14783 (auth)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14784 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import Constants from "Constants" /* 1085 */;
+// Module 15548 (auth)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2032 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 15549 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

@@ -1,16 +1,16 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8948
+// Function ID: 8949
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4750, 1085, 2071, 1096, 558, 576, 504, 4755, 1097, 1126, 2128, 2]
+// Dependencies: [4845, 1087, 2074, 1098, 558, 576, 504, 4850, 1099, 1128, 2131, 2]
 
-// Module 8671 (usePrivacyLevelHelpText)
-import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 1096 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+// Module 8948 (usePrivacyLevelHelpText)
+import Constants from "Constants" /* 1087 */;
+import Constants2 from "Constants" /* 1098 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,29 +129,29 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStagePr
     privacy_level = privacy_level.privacy_level;
   }
   if (privacy_level === constants.PUBLIC) {
-    const intl4 = tmp(1126).intl;
-    stringResult = intl4.string(tmp(1126).t.GFq5Rg);
+    const intl4 = tmp(1128).intl;
+    stringResult = intl4.string(tmp(1128).t.GFq5Rg);
   } else if (stateFromStores) {
     let stringResult1;
     if (canEveryoneRoleResult) {
       let formatResult = null;
       if (arg2 === constants.PUBLIC) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const format = intl3.format;
         const obj3 = { articleURL: obj4.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        const prop = tmp(1126).t["ew/Jq4"];
+        const prop = tmp(1128).t["ew/Jq4"];
         obj4 = HelpdeskUtilsDefault;
         formatResult = format(prop, obj3);
       }
       stringResult1 = formatResult;
     } else {
-      const intl2 = tmp(1126).intl;
-      stringResult1 = intl2.string(tmp(1126).t.E5T7a3);
+      const intl2 = tmp(1128).intl;
+      stringResult1 = intl2.string(tmp(1128).t.E5T7a3);
     }
     stringResult = stringResult1;
   } else {
-    const intl = tmp(1126).intl;
-    stringResult = intl.string(tmp(1126).t.BOjr7t);
+    const intl = tmp(1128).intl;
+    stringResult = intl.string(tmp(1128).t.BOjr7t);
   }
   const obj5 = { helpText: stringResult, guildOnlyDisabled: privacy_level1 === constants.PUBLIC, publicDisabled: tmp16 };
   privacy_level1 = undefined;

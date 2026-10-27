@@ -1,15 +1,15 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 13443
+// Function ID: 13444
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 1503, 7089, 1126, 6157, 12508, 1200, 5088, 5379, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 1505, 7365, 1128, 5128, 13444, 1202, 5187, 5479, 2]
 
-// Module 12507 (HubEmailConnectionWaitlist)
+// Module 13443 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
   const cResult = obj.c(26);
   ({ school, onClose } = arg0);
   const tmp4 = closure_7();
-  const obj2 = onClose(1503);
+  const obj2 = onClose(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp6;
@@ -48,8 +48,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
     const container = tmp4.container;
     if (cResult[4] !== tmp4.header) {
-      const obj3 = { source: navigation(12508), style: tmp4.header };
-      const tmp13 = navigation(6157);
+      const obj3 = { source: navigation(13444), style: tmp4.header };
+      const tmp13 = navigation(5128);
       const tmp14 = closure_5(tmp13, obj3);
       cResult[4] = tmp4.header;
       cResult[5] = tmp14;
@@ -60,8 +60,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     const _Symbol = Symbol;
     const title = tmp4.title;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1126).intl;
-      const stringResult = intl.string(onClose(1126).t.OaloU5);
+      let intl = tmp(1128).intl;
+      const stringResult = intl.string(onClose(1128).t.OaloU5);
       cResult[6] = stringResult;
       tmp16 = stringResult;
     } else {
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     }
     if (cResult[7] !== tmp4.title) {
       const obj4 = { style: title, accessibilityRole: "header", children: tmp16 };
-      const tmp20 = closure_5(onClose(1200).LegacyText, obj4);
+      const tmp20 = closure_5(onClose(1202).LegacyText, obj4);
       cResult[7] = tmp4.title;
       cResult[8] = tmp20;
       tmp18 = tmp20;
@@ -78,9 +78,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     }
     const description = tmp4.description;
     if (cResult[9] !== school) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const obj5 = { school };
-      const formatResult = intl2.format(onClose(1126).t.Rs7MXJ, obj5);
+      const formatResult = intl2.format(onClose(1128).t.Rs7MXJ, obj5);
       cResult[9] = school;
       cResult[10] = formatResult;
       tmp21 = formatResult;
@@ -97,8 +97,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       const _Symbol2 = Symbol;
       const redesignButton = tmp4.redesignButton;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1126).intl;
-        const stringResult1 = intl3.string(onClose(1126).t.i4jeWR);
+        const intl3 = tmp(1128).intl;
+        const stringResult1 = intl3.string(onClose(1128).t.i4jeWR);
         cResult[14] = stringResult1;
         tmp26 = stringResult1;
       } else {
@@ -106,7 +106,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       }
       if (cResult[15] !== onClose) {
         const obj6 = { size: "lg", text: tmp26, onPress: onClose };
-        const tmp30 = closure_5(onClose(5379).Button, obj6);
+        const tmp30 = closure_5(onClose(5479).Button, obj6);
         cResult[15] = onClose;
         cResult[16] = tmp30;
         tmp28 = tmp30;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       tmp31 = tmp34;
     }
     const obj9 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp21 };
-    const tmp25 = closure_5(onClose(5088).Text, obj9);
+    const tmp25 = closure_5(onClose(5187).Text, obj9);
     cResult[11] = tmp4.description;
     cResult[12] = tmp21;
     cResult[13] = tmp25;
@@ -186,7 +186,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
   onClose = onClose.onClose;
   const school = onClose.school;
   const tmp = closure_7();
-  let obj = onClose(1503);
+  let obj = onClose(1505);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -203,21 +203,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(12508), style: tmp.header };
-  const tmp4 = navigation(6157);
+  const obj3 = { source: navigation(13444), style: tmp.header };
+  const tmp4 = navigation(5128);
   items1 = [closure_5(tmp4, obj3), , , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1126).t.OaloU5) };
-  const LegacyText = onClose(1200).LegacyText;
-  intl = onClose(1126).intl;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1128).t.OaloU5) };
+  const LegacyText = onClose(1202).LegacyText;
+  intl = onClose(1128).intl;
   items1[1] = closure_5(LegacyText, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1126).t.Rs7MXJ, { school }) };
-  const Text = onClose(5088).Text;
-  intl2 = onClose(1126).intl;
+  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1128).t.Rs7MXJ, { school }) };
+  const Text = onClose(5187).Text;
+  intl2 = onClose(1128).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
-  obj7 = { size: "lg", text: intl3.string(onClose(1126).t.i4jeWR), onPress: onClose };
-  Button = onClose(5379).Button;
-  intl3 = onClose(1126).intl;
+  obj7 = { size: "lg", text: intl3.string(onClose(1128).t.i4jeWR), onPress: onClose };
+  Button = onClose(5479).Button;
+  intl3 = onClose(1128).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);
 });

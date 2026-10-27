@@ -1,25 +1,25 @@
-// Module ID: 7544
-// Function ID: 7545
+// Module ID: 7815
+// Function ID: 7816
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 5917, 1085, 21, 1398, 7545, 7547, 7549, 1382, 7551, 7553, 6640, 5092, 587, 7555, 7556, 7540, 7557, 5918, 7526, 7527, 5909, 7558, 7510, 7511, 5377, 7559, 5088, 7493, 2128, 7563, 1126, 3120, 6265, 6180, 7571, 7684, 6906, 5934, 6201, 7686, 7687, 558, 576, 1279, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 6173, 1087, 21, 1400, 7816, 7818, 7820, 1384, 7822, 7824, 6917, 5191, 587, 7826, 7827, 7811, 7828, 6174, 7797, 7798, 6165, 7829, 7781, 7782, 5477, 7830, 5187, 7764, 2131, 7834, 1128, 3143, 6542, 6457, 7842, 7955, 7182, 6190, 6478, 7957, 7958, 558, 576, 1281, 6965, 2]
 
-// Module 7544 (AgeVerificationExpressiveV2Modal)
+// Module 7815 (AgeVerificationExpressiveV2Modal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7526 */;
-import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7527 */;
+import Constants from "Constants" /* 1087 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6165 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6173 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7797 */;
+import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7798 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -348,7 +348,7 @@ function MethodsScreen(onClose) {
           tmp32 = tmp30;
         }
         obj18 = { type: "critical", message: string(cR6336), role: "alert", action: obj19 };
-        obj19 = { text: intl2.string(tmp32(tmp3[35]).hDvmYP), onClick: refetch };
+        obj19 = { text: intl2.string(tmp32(tmp3[35]).hDvmYP), onPress: refetch };
         intl2 = tmp2(tmp3[34]).intl;
         tmp19Result8 = tmp19(Stack6, obj17);
       }
@@ -480,7 +480,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   ({ onClose, onComplete } = entryPoint);
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = entryPoint(1279);
+    const tmpResult = entryPoint(1281);
     const v4Result = tmpResult.v4();
     cResult[0] = v4Result;
     first = v4Result;
@@ -529,7 +529,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
               const result = obj.trackAgeVerificationModalViewed(first, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
             }
           }
-          const stringResult = obj10.string(entryPoint(1126).t["13/7kX"]);
+          const stringResult = obj10.string(entryPoint(1128).t["13/7kX"]);
           cResult[9] = stringResult;
           tmp12 = stringResult;
         } else {
@@ -548,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
             }
           }
           const obj2 = { screens: tmp7, initialRouteName: constants.METHODS, headerBackTitle: tmp12 };
-          const tmp16 = closure_9(entryPoint(6688).Navigator, obj2);
+          const tmp16 = closure_9(entryPoint(6965).Navigator, obj2);
           cResult[10] = tmp7;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -581,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   };
   obj3[METHODS] = obj4;
-  tmpResult4 = entryPoint(6201);
+  tmpResult4 = entryPoint(6478);
   const GOOGLE_WALLET_VERIFICATION = constants.GOOGLE_WALLET_VERIFICATION;
   const obj5 = {
     headerStyle: tmp4.headerStyle,
@@ -593,7 +593,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   };
   obj3[GOOGLE_WALLET_VERIFICATION] = obj5;
-  tmpResult5 = entryPoint(6201);
+  tmpResult5 = entryPoint(6478);
   const APP_STORE_VERIFICATION = constants.APP_STORE_VERIFICATION;
   const obj6 = {
     headerStyle: tmp4.headerStyle,
@@ -611,7 +611,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   cResult[4] = tmp4;
   cResult[5] = obj3;
   tmp7 = obj3;
-  tmpResult6 = entryPoint(6201);
+  tmpResult6 = entryPoint(6478);
 }) : (function AgeVerificationExpressiveV2Modal(entryPoint) {
   let intl;
   entryPoint = entryPoint.entryPoint;

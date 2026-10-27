@@ -1,11 +1,11 @@
-// Module ID: 7788
-// Function ID: 7789
+// Module ID: 8060
+// Function ID: 8061
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: [1085, 7755, 2]
+// Dependencies: [1087, 8026, 2]
 
-// Module 7788 (ICYMIAttachmentUploadTarget)
-import UploadUtils from "UploadUtils" /* 7755 */;
-import Constants from "Constants" /* 1085 */;
+// Module 8060 (ICYMIAttachmentUploadTarget)
+import UploadUtils from "UploadUtils" /* 8026 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c2;

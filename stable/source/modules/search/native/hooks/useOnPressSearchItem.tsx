@@ -1,34 +1,34 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17777
+// Function ID: 17778
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7314, 2065, 12052, 9308, 17396, 9307, 1085, 2072, 12038, 12063, 558, 576, 1384, 4808, 1126, 8486, 4806, 1503, 12150, 17397, 12041, 9333, 9351, 1121, 5944, 8382, 7015, 5103, 7477, 2000, 5924, 13035, 5413, 8183, 6145, 1112, 12059, 2]
+// Dependencies: [5, 19, 7584, 2068, 12997, 9614, 17778, 9613, 1087, 2075, 12983, 13008, 558, 576, 1386, 4903, 1128, 8764, 4901, 1505, 13095, 17779, 12986, 9637, 9655, 1123, 6200, 8660, 7290, 5202, 7748, 2002, 6180, 13958, 5513, 8460, 6424, 1114, 13004, 2]
 // Exports: useOnPressMediaItem
 
-// Module 17395 (useOnPressSearchItem)
-import intl2 from "intl" /* 1126 */;
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8486 */;
-import TrackingConstants from "TrackingConstants" /* 9307 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12038 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12063 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17396 */;
+// Module 17777 (useOnPressSearchItem)
+import intl2 from "intl" /* 1128 */;
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
+import TrackingConstants from "TrackingConstants" /* 9613 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12983 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13004 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13008 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7314 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SearchQueryStore from "SearchQueryStore" /* 12052 */;
-import SearchConstants from "SearchConstants" /* 9308 */;
-import Constants from "Constants" /* 1085 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SearchQueryStore from "SearchQueryStore" /* 12997 */;
+import SearchConstants from "SearchConstants" /* 9614 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
-let _require, c3, c4, c5, navigation;
+let _require, c3, c4, closure_3, conversationId, navigation;
 
 let c10;
 let c9;
@@ -37,7 +37,7 @@ let closure_15;
 let closure_16;
 let map1;
 let metroImportAll;
-const f149575 = async (arg0, value) => {
+const f151458 = async (arg0, value) => {
   let c2;
   closure_0 = arg0;
   if (c3 === 2) {
@@ -439,8 +439,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
     let c2;
     let obj9;
     closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -453,67 +453,60 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
       }
     } else {
       try {
-        let _var;
+        let guildId;
         let messageId;
+        let title;
         let channelId;
-        let conversationId;
-        c5 = 2;
-        if (0 === c4) {
+        c4 = 2;
+        if (0 === conversationId) {
           if (arg0 === 1) {
-            c5 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
-            _var = undefined;
+            let closure_2 = tmp;
+            navigation = tmp2;
+            guildId = undefined;
             messageId = undefined;
+            title = undefined;
             channelId = closure_0.channelId;
             ({ guildId: c1, messageId: c2 } = closure_0);
             const sourceId = closure_0.sourceId;
             const obj8 = closure_0(context[22]);
             const parseConversationIdResult = obj8.parseConversationId(sourceId);
-            conversationId = parseConversationIdResult;
             addCurrentSearchQueryToSearchHistory(closure_0);
+            conversationId = 1;
             c4 = 1;
-            c5 = 1;
             const obj4 = { value: obj9.fetchConversation(channelId, parseConversationIdResult), done: false };
             obj9 = closure_0(context[23]);
             return obj4;
           }
         } else if (arg0 === 1) {
-          c5 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c4 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const obj6 = closure_0(context[23]);
-          const conversationMessages = obj6.fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true, isStandalone: true });
-          if (null == ConversationPreviewStore.getConversation(conversationId)) {
+          title = conversation.getConversation(conversationId);
+          if (null == title) {
+            const tmp6 = globalThis;
             const _Error = Error;
             const self = this;
+            const str = "Conversation not found";
             const self2 = this;
             const error = new Error("Conversation not found");
             throw error;
           } else {
-            const obj7 = { channelId, guildId: _var, conversationId, title: _var, messageId };
-            const conversation = ConversationPreviewStore.getConversation(conversationId);
-            let title;
-            if (conversation != null) {
-              title = conversation.title;
-            }
-            _var = title;
-            if (title == null) {
-              const str = "";
-              _var = "";
-            }
-            obj = closure_0(context[10]);
-            const result = obj.performKeyboardAwareNavigation(() => {
+            const obj5 = closure_0(context[23]);
+            const result = obj5.setSelectedConversation(channelId, conversationId, { cacheType: "preview", shouldJump: false });
+            const obj6 = { channelId, guildId, conversationId, title: title.title, messageId };
+            const obj7 = closure_0(context[10]);
+            const result1 = obj7.performKeyboardAwareNavigation(() => {
               if (null != messageId) {
                 const navigate = navigation.navigate;
                 obj = { screen: closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params };
@@ -522,13 +515,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
                 navigation.navigate(closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params);
               }
             });
-            c5 = 3;
+            c4 = 3;
             return { value: "IconComponent", done: null };
           }
         }
-      } catch (tmp17) {
-        c5 = 3;
-        throw tmp17;
+      } catch (tmp9) {
+        c4 = 3;
+        throw tmp9;
       }
     }
   });
@@ -552,8 +545,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
     let c2;
     let obj9;
     closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -566,67 +559,60 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
       }
     } else {
       try {
-        let _var;
+        let guildId;
         let messageId;
+        let title;
         let channelId;
-        let conversationId;
-        c5 = 2;
-        if (0 === c4) {
+        c4 = 2;
+        if (0 === conversationId) {
           if (arg0 === 1) {
-            c5 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
-            _var = undefined;
+            let closure_2 = tmp;
+            navigation = tmp2;
+            guildId = undefined;
             messageId = undefined;
+            title = undefined;
             channelId = closure_0.channelId;
             ({ guildId: c1, messageId: c2 } = closure_0);
             const sourceId = closure_0.sourceId;
             const obj8 = closure_0(context[22]);
             const parseConversationIdResult = obj8.parseConversationId(sourceId);
-            conversationId = parseConversationIdResult;
             addCurrentSearchQueryToSearchHistory(closure_0);
+            conversationId = 1;
             c4 = 1;
-            c5 = 1;
             const obj4 = { value: obj9.fetchConversation(channelId, parseConversationIdResult), done: false };
             obj9 = closure_0(context[23]);
             return obj4;
           }
         } else if (arg0 === 1) {
-          c5 = 3;
+          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c4 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          const obj6 = closure_0(context[23]);
-          const conversationMessages = obj6.fetchConversationMessages(channelId, conversationId, { includeReactions: true, includeMessageReferences: true, isStandalone: true });
-          if (null == ConversationPreviewStore.getConversation(conversationId)) {
+          title = conversation.getConversation(conversationId);
+          if (null == title) {
+            const tmp6 = globalThis;
             const _Error = Error;
             const self = this;
+            const str = "Conversation not found";
             const self2 = this;
             const error = new Error("Conversation not found");
             throw error;
           } else {
-            const obj7 = { channelId, guildId: _var, conversationId, title: _var, messageId };
-            const conversation = ConversationPreviewStore.getConversation(conversationId);
-            let title;
-            if (conversation != null) {
-              title = conversation.title;
-            }
-            _var = title;
-            if (title == null) {
-              const str = "";
-              _var = "";
-            }
-            obj = closure_0(context[10]);
-            const result = obj.performKeyboardAwareNavigation(() => {
+            const obj5 = closure_0(context[23]);
+            const result = obj5.setSelectedConversation(channelId, conversationId, { cacheType: "preview", shouldJump: false });
+            const obj6 = { channelId, guildId, conversationId, title: title.title, messageId };
+            const obj7 = closure_0(context[10]);
+            const result1 = obj7.performKeyboardAwareNavigation(() => {
               if (null != messageId) {
                 const navigate = navigation.navigate;
                 obj = { screen: closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params };
@@ -635,13 +621,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
                 navigation.navigate(closure_0(context[24]).ConversationNavigatorScreens.FOCUS, params);
               }
             });
-            c5 = 3;
+            c4 = 3;
             return { value: "IconComponent", done: null };
           }
         }
-      } catch (tmp17) {
-        c5 = 3;
-        throw tmp17;
+      } catch (tmp9) {
+        c4 = 3;
+        throw tmp9;
       }
     }
   });
@@ -651,11 +637,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressGroupDMItem(searchContext) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressGroupDMItem(searchContext) {
   obj = searchContext(576);
   const cResult = obj.c(3);
   searchContext = searchContext.searchContext;
-  let obj2 = searchContext(1503);
+  let obj2 = searchContext(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp3;
@@ -693,7 +679,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressGr
   tmp3 = fn;
 }) : (function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1503);
+  obj = searchContext(1505);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((channelId) => {
@@ -725,7 +711,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressDM
   obj = searchContext(576);
   const cResult = obj.c(3);
   searchContext = searchContext.searchContext;
-  let obj2 = searchContext(1503);
+  let obj2 = searchContext(1505);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp3;
@@ -764,7 +750,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressDM
   tmp3 = fn;
 }) : (function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1503);
+  obj = searchContext(1505);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((userId, arg1) => {
@@ -865,7 +851,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   const obj2 = searchContext(callback[19]);
   navigation = obj2.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f149575);
+  let closure_0 = _asyncToGenerator(f151458);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);
@@ -911,7 +897,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   obj = searchContext(callback[19]);
   navigation = obj.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f149575);
+  let closure_0 = _asyncToGenerator(f151458);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);

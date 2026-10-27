@@ -1,22 +1,22 @@
-// Module ID: 6661
-// Function ID: 6662
+// Module ID: 6938
+// Function ID: 6939
 // Name: JoinServer
-// Dependencies: [19, 17, 6662, 21, 5092, 587, 558, 576, 6663, 1126, 5088, 6665, 1503, 1497, 6285, 5379, 2]
+// Dependencies: [19, 17, 6939, 21, 5191, 587, 558, 576, 6940, 1128, 5187, 6942, 1505, 1499, 6562, 5479, 2]
 
-// Module 6661 (JoinServer)
+// Module 6938 (JoinServer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1126 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6285 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import intl10 from "intl" /* 1128 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6562 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6662 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6939 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrSeparator(
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl10.t.HEuagM);
       cResult[5] = stringResult;
       tmp12 = stringResult;
@@ -165,7 +165,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   ({ error, inviteString, onInviteChange, onDone, submitting } = arg0);
   const tmp4 = closure_11();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  const obj2 = navigation(1503);
+  const obj2 = navigation(1505);
   navigation = obj2.useNavigation();
   const tmp7 = useWindowDimensionsDefault().height <= closure_6;
   if (cResult[0] !== navigation) {
@@ -202,8 +202,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
         }
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1126).intl;
-          const stringResult = intl3.string(navigation(1126).t.qreV25);
+          const intl3 = tmp(1128).intl;
+          const stringResult = intl3.string(navigation(1128).t.qreV25);
           cResult[11] = stringResult;
           tmp18 = stringResult;
         } else {
@@ -211,8 +211,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
         }
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1126).intl;
-          const stringResult1 = intl4.string(navigation(1126).t.qreV25);
+          const intl4 = tmp(1128).intl;
+          const stringResult1 = intl4.string(navigation(1128).t.qreV25);
           cResult[12] = stringResult1;
           tmp20 = stringResult1;
         } else {
@@ -231,7 +231,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                 const _Symbol3 = Symbol;
                 const exampleText = tmp4.exampleText;
                 if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl5 = tmp(1126).intl;
+                  const intl5 = tmp(1128).intl;
                   const obj4 = {
                     example1: null,
                     example2: null,
@@ -242,7 +242,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                                     }
                   };
                   [obj8.example1, obj8.example2, obj8.example3] = items;
-                  const formatResult = intl5.format(navigation(1126).t.vwWaTe, obj4);
+                  const formatResult = intl5.format(navigation(1128).t.vwWaTe, obj4);
                   cResult[19] = formatResult;
                   tmp26 = formatResult;
                 } else {
@@ -250,7 +250,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                 }
                 if (cResult[20] !== tmp4.exampleText) {
                   const obj5 = { style: exampleText, variant: "text-sm/medium", color: "text-muted", children: tmp26 };
-                  const tmp31 = closure_8(navigation(5088).Text, obj5);
+                  const tmp31 = closure_8(navigation(5187).Text, obj5);
                   cResult[20] = tmp4.exampleText;
                   cResult[21] = tmp31;
                   tmp29 = tmp31;
@@ -277,10 +277,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                     }
                     const _Symbol4 = Symbol;
                     if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl6 = tmp(1126).intl;
-                      const stringResult2 = intl6.string(navigation(1126).t["+H/coT"]);
-                      const intl7 = tmp(1126).intl;
-                      const stringResult3 = intl7.string(navigation(1126).t["+H/coT"]);
+                      const intl6 = tmp(1128).intl;
+                      const stringResult2 = intl6.string(navigation(1128).t["+H/coT"]);
+                      const intl7 = tmp(1128).intl;
+                      const stringResult3 = intl7.string(navigation(1128).t["+H/coT"]);
                       cResult[28] = stringResult2;
                       cResult[29] = stringResult3;
                       tmp41 = stringResult3;
@@ -308,10 +308,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                       }
                       const _Symbol6 = Symbol;
                       if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl8 = tmp(1126).intl;
-                        const stringResult4 = intl8.string(navigation(1126).t["MOqX/G"]);
-                        const intl9 = tmp(1126).intl;
-                        const stringResult5 = intl9.string(navigation(1126).t["MOqX/G"]);
+                        const intl8 = tmp(1128).intl;
+                        const stringResult4 = intl8.string(navigation(1128).t["MOqX/G"]);
+                        const intl9 = tmp(1128).intl;
+                        const stringResult5 = intl9.string(navigation(1128).t["MOqX/G"]);
                         cResult[34] = stringResult4;
                         cResult[35] = stringResult5;
                         tmp52 = stringResult5;
@@ -322,7 +322,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                       }
                       if (cResult[36] !== tmp8) {
                         const obj7 = { size: "lg", variant: "secondary", text: tmp51, accessibilityLabel: tmp52, onPress: tmp8 };
-                        const tmp57 = closure_8(navigation(5379).Button, obj7);
+                        const tmp57 = closure_8(navigation(5479).Button, obj7);
                         cResult[36] = tmp8;
                         cResult[37] = tmp57;
                         tmp55 = tmp57;
@@ -364,7 +364,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
                       tmp58 = tmp61;
                     }
                     const obj11 = { size: "lg", text: tmp40, accessibilityLabel: tmp41, loading: submitting, disabled: submitting, onPress: onDone };
-                    const tmp46 = closure_8(navigation(5379).Button, obj11);
+                    const tmp46 = closure_8(navigation(5479).Button, obj11);
                     cResult[30] = onDone;
                     cResult[31] = submitting;
                     cResult[32] = tmp46;
@@ -397,13 +397,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
     let tmp13 = null;
     if (!tmp7) {
       const obj14 = { children: items3 };
-      const obj15 = { style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t.jlfuFW) };
-      const Text = tmp(5088).Text;
-      intl = tmp(1126).intl;
+      const obj15 = { style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t.jlfuFW) };
+      const Text = tmp(5187).Text;
+      intl = tmp(1128).intl;
       items3 = [closure_8(Text, obj15), ];
-      const obj28 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1126).t.lVvN3A) };
-      const Text2 = tmp(5088).Text;
-      intl2 = tmp(1126).intl;
+      const obj28 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1128).t.lVvN3A) };
+      const Text2 = tmp(5187).Text;
+      intl2 = tmp(1128).intl;
       items3[1] = closure_8(Text2, obj28);
       tmp13 = closure_9(closure_10, obj14);
     }
@@ -444,7 +444,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   ({ error, inviteString, onInviteChange } = arg0);
   const tmp = closure_11();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  let obj = navigation(1503);
+  let obj = navigation(1505);
   navigation = obj.useNavigation();
   items = [navigation];
   const height = useWindowDimensionsDefault().height;
@@ -459,26 +459,26 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   const tmp8 = closure_5;
   if (height > closure_6) {
     const obj4 = { children: items2 };
-    const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t.jlfuFW) };
-    const Text = tmp4(5088).Text;
-    intl = tmp4(1126).intl;
+    const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(navigation(1128).t.jlfuFW) };
+    const Text = tmp4(5187).Text;
+    intl = tmp4(1128).intl;
     items2 = [closure_8(Text, obj5), ];
-    const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1126).t.lVvN3A) };
-    const Text2 = tmp4(5088).Text;
-    intl2 = tmp4(1126).intl;
+    const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1128).t.lVvN3A) };
+    const Text2 = tmp4(5187).Text;
+    intl2 = tmp4(1128).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
   }
   const obj7 = { children: items3 };
   items3 = [tmp7Result, , ];
-  const obj8 = { label: intl3.string(navigation(1126).t.qreV25), error, value: inviteString, onChangeText: onInviteChange, placeholder, accessibilityLabel: intl4.string(navigation(1126).t.qreV25), autoFocus: true, autoCapitalize: "none", autoCorrect: false, returnKeyType: "join", textStyle: tmp.textInput, onSubmitEditing: onDone };
+  const obj8 = { label: intl3.string(navigation(1128).t.qreV25), error, value: inviteString, onChangeText: onInviteChange, placeholder, accessibilityLabel: intl4.string(navigation(1128).t.qreV25), autoFocus: true, autoCapitalize: "none", autoCorrect: false, returnKeyType: "join", textStyle: tmp.textInput, onSubmitEditing: onDone };
   const tmp2Result = FreeFormInputGroupDefault;
-  intl3 = tmp4(1126).intl;
-  intl4 = tmp4(1126).intl;
+  intl3 = tmp4(1128).intl;
+  intl4 = tmp4(1128).intl;
   items3[1] = closure_8(tmp2Result, obj8);
-  const obj9 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: intl5.format(navigation(1126).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5088).Text;
-  intl5 = tmp4(1126).intl;
+  const obj9 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: intl5.format(navigation(1128).t.vwWaTe, obj10) };
+  const Text3 = tmp4(5187).Text;
+  intl5 = tmp4(1128).intl;
   obj10 = {
     example1: items[0],
     example2: items[1],
@@ -494,16 +494,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServer(a
   items5 = [, , , ];
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
-  const obj13 = { size: "lg", text: intl6.string(navigation(1126).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1126).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5379).Button;
-  intl6 = tmp4(1126).intl;
-  intl7 = tmp4(1126).intl;
+  const obj13 = { size: "lg", text: intl6.string(navigation(1128).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1128).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
+  const Button = tmp4(5479).Button;
+  intl6 = tmp4(1128).intl;
+  intl7 = tmp4(1128).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(closure_14, {});
-  const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1126).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1126).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5379).Button;
-  intl8 = tmp4(1126).intl;
-  intl9 = tmp4(1126).intl;
+  const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1128).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1128).t["MOqX/G"]), onPress: callback };
+  const Button2 = tmp4(5479).Button;
+  intl8 = tmp4(1128).intl;
+  intl9 = tmp4(1128).intl;
   items5[3] = closure_8(Button2, obj14);
   items4[1] = closure_9(closure_10, obj11);
   return closure_9(tmp8, obj2);

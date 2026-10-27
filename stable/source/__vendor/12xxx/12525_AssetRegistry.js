@@ -1,10 +1,10 @@
 // Module ID: 12525
 // Function ID: 12526
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 12525 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 32, height: 32, scales: [2, 3], hash: "9a47d778a0b93e08af7ca2a5a0e14da1", name: "add_friend_32px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 200, height: 104, scales: [2, 3], hash: "1659789d77f59f81faaeb051e5b4088e", name: "img_invalid_link_darker", type: "png" });

@@ -1,14 +1,14 @@
-// Module ID: 1253
-// Function ID: 1254
+// Module ID: 1255
+// Function ID: 1256
 // Name: ClientThemesConstants
-// Dependencies: [1096, 1209, 1254, 1126, 12, 2]
+// Dependencies: [1098, 1211, 1256, 1128, 12, 2]
 // Exports: isSelectableGradientPreset
 
-// Module 1253 (ClientThemesConstants)
-import Constants from "Constants" /* 1096 */;
-import intl2 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+// Module 1255 (ClientThemesConstants)
+import Constants from "Constants" /* 1098 */;
+import intl2 from "intl" /* 1128 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

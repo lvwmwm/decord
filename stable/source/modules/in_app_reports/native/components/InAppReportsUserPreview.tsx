@@ -1,20 +1,20 @@
-// Module ID: 13562
-// Function ID: 13563
+// Module ID: 14342
+// Function ID: 14343
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 4967, 1126, 5088, 1200, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6940, 5063, 1128, 5187, 1202, 2]
 
-// Module 13562 (InAppReportsUserPreview)
+// Module 14342 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,10 +60,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
     if (cResult[5] !== typeConsolidationEyebrow.style) {
       let stringResult;
       if (null != typeConsolidationEyebrow.style) {
-        const intl2 = tmp(1126).intl;
-        stringResult = intl2.string(tmp(1126).t.Rsth7z);
+        const intl2 = tmp(1128).intl;
+        stringResult = intl2.string(tmp(1128).t.Rsth7z);
       } else {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const str = intl.string(intl3.t.Rsth7z);
         stringResult = str.toUpperCase();
       }
@@ -98,7 +98,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
           }
           if (cResult[16] !== user) {
             const obj4 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
-            const Avatar = tmp(1200).Avatar;
+            const Avatar = tmp(1202).Avatar;
             const tmp19 = _false(Avatar, obj4);
             cResult[16] = user;
             cResult[17] = tmp19;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
             let tmp22 = null != user.globalName;
             if (tmp22) {
               const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-              tmp22 = _false(tmp(5088).Text, obj5);
+              tmp22 = _false(tmp(5187).Text, obj5);
             }
             cResult[18] = user.globalName;
             cResult[19] = tmp22;
@@ -225,10 +225,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1126).intl;
-    stringResult = intl2.string(tmp2(1126).t.Rsth7z);
+    const intl2 = tmp2(1128).intl;
+    stringResult = intl2.string(tmp2(1128).t.Rsth7z);
   } else {
-    const intl = tmp2(1126).intl;
+    const intl = tmp2(1128).intl;
     const str = intl.string(intl3.t.Rsth7z);
     stringResult = str.toUpperCase();
   }
@@ -236,13 +236,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrevie
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
-  const Avatar = tmp2(1200).Avatar;
+  const Avatar = tmp2(1202).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;
   const obj7 = { style: tmp.userProfileInfo, children: items4 };
   if (tmp8Result) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp8Result = tmp8(tmp2(5088).Text, obj8);
+    tmp8Result = tmp8(tmp2(5187).Text, obj8);
   }
   items4 = [tmp8Result, ];
   const obj9 = { color: "text-default", variant: "text-sm/normal", children: user.username };

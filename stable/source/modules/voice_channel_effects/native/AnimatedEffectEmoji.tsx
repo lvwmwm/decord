@@ -1,26 +1,26 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 11311
+// Function ID: 11312
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 5081, 21, 1102, 5092, 587, 558, 576, 6157, 1200, 504, 4850, 5093, 7061, 2]
+// Dependencies: [19, 17, 5181, 21, 1104, 5191, 587, 558, 576, 5128, 1202, 504, 4945, 5192, 7337, 2]
 
-// Module 10917 (AnimatedEffectEmoji)
+// Module 11311 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let rect;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 let View = react_native.View;
 const jsx = Fragment.jsx;
 let c7 = -120;

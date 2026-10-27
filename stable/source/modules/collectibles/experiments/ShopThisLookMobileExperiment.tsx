@@ -1,11 +1,11 @@
-// Module ID: 8336
-// Function ID: 8337
+// Module ID: 8614
+// Function ID: 8615
 // Name: ShopThisLookMobileExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 
-// Module 8336 (ShopThisLookMobileExperiment)
+// Module 8614 (ShopThisLookMobileExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

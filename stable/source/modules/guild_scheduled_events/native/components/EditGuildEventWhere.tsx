@@ -1,25 +1,25 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8849
+// Function ID: 8850
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2065, 4750, 6054, 2071, 1085, 21, 5092, 1126, 8519, 558, 576, 504, 1503, 1894, 8515, 4828, 4702, 8570, 8536, 5088, 5379, 8631, 8632, 8633, 8534, 2]
+// Dependencies: [32, 19, 2068, 4845, 6332, 2074, 1087, 21, 5191, 1128, 8797, 558, 576, 504, 1505, 1896, 8793, 4923, 4797, 8850, 8816, 5187, 5479, 8908, 8909, 8910, 8814, 2]
 
-// Module 8569 (EditGuildEventWhere)
-import intl5 from "intl" /* 1126 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8515 */;
-import EntityUtils from "EntityUtils" /* 8519 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
+// Module 8849 (EditGuildEventWhere)
+import intl5 from "intl" /* 1128 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8793 */;
+import EntityUtils from "EntityUtils" /* 8797 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ function assertGuildEventWhereIsValid(guildEvent) {
       const obj = EntityUtils;
       if (null == obj.getLocationFromEventData(guildEvent)) {
         const _Error2 = Error;
-        const intl2 = tmp3(1126).intl;
+        const intl2 = tmp3(1128).intl;
         const self3 = this;
         const self4 = this;
-        const error1 = new Error(intl2.string(tmp3(1126).t.q91szp));
+        const error1 = new Error(intl2.string(tmp3(1128).t.q91szp));
         throw error1;
       }
     }
@@ -258,10 +258,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
       _slicedToArray(null);
       const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4702(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4797(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
         if (obj2 == null) {
-          obj2 = tmp2(4702)();
+          obj2 = tmp2(4797)();
         }
         const addResult = obj2.add(1, "hour");
         obj.scheduledEndTime = addResult.toISOString();
@@ -414,10 +414,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
       _undefined(null);
       const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4702(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4797(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
         if (obj2 == null) {
-          obj2 = tmp2(4702)();
+          obj2 = tmp2(4797)();
         }
         const addResult = obj2.add(1, "hour");
         obj.scheduledEndTime = addResult.toISOString();

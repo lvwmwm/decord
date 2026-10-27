@@ -1,15 +1,15 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 9082
+// Function ID: 9083
 // Name: useIsSecureFramesVerified
-// Dependencies: [502, 5110, 8806, 8807, 8808, 558, 576, 8843, 504, 8848, 5900, 2]
+// Dependencies: [502, 5209, 9083, 9084, 9085, 558, 576, 9120, 504, 9125, 6156, 2]
 
-// Module 8805 (useIsSecureFramesVerified)
-import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+// Module 9082 (useIsSecureFramesVerified)
+import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 8806 */;
-import TransientKeyStore from "TransientKeyStore" /* 8807 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 8808 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 9083 */;
+import TransientKeyStore from "TransientKeyStore" /* 9084 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

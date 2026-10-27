@@ -1,18 +1,18 @@
-// Module ID: 17223
-// Function ID: 17224
+// Module ID: 12186
+// Function ID: 12187
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17092, 10759, 5088, 5301, 5305, 1126, 3849, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 11653, 11175, 5187, 5401, 5405, 1128, 3883, 2]
 
-// Module 17223 (ConjureContextBoundaryRow)
+// Module 12186 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import useAlertStore from "useAlertStore" /* 5301 */;
-import AlertModal2 from "AlertModal" /* 5305 */;
+import intl5 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import useAlertStore from "useAlertStore" /* 5401 */;
+import AlertModal2 from "AlertModal" /* 5405 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,13 +32,13 @@ function confirmRevert(onPress) {
   let items;
   let obj2;
   const openAlert = useAlertStore.openAlert;
-  const obj = { title: intl.string(_modDef3849["i+xjZM"]), content: intl2.string(_modDef3849.fMBZmD), actions: hasOwnProperty(metroRequire, obj2) };
+  const obj = { title: intl.string(_modDef3883["i+xjZM"]), content: intl2.string(_modDef3883.fMBZmD), actions: hasOwnProperty(metroRequire, obj2) };
   useAlertStore;
   const AlertModal = AlertModal2.AlertModal;
   intl = intl5.intl;
   intl2 = intl5.intl;
   obj2 = { children: items };
-  const obj3 = { variant: "destructive", text: intl3.string(_modDef3849.i5f3Uo), onPress };
+  const obj3 = { variant: "destructive", text: intl3.string(_modDef3883.i5f3Uo), onPress };
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl5.intl;
   items = [React3(AlertActionButton, obj3), ];
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   const cResult = obj.c(32);
   ({ projectId, contextSwitch } = arg0);
   const tmp4 = closure_7();
-  const obj2 = action(17092);
+  const obj2 = action(11653);
   const conjureContextSwitchRow = obj2.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const ChatPlusIcon = tmp(10759).ChatPlusIcon;
+      const ChatPlusIcon = tmp(11175).ChatPlusIcon;
       const tmp14 = closure_4(ChatPlusIcon, obj4);
       cResult[2] = tmp14;
       tmp11 = tmp14;
@@ -104,7 +104,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     }
     if (cResult[3] !== conjureContextSwitchRow.label) {
       const obj5 = { variant: "text-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
-      const tmp17 = closure_4(action(5088).Text, obj5);
+      const tmp17 = closure_4(action(5187).Text, obj5);
       cResult[3] = conjureContextSwitchRow.label;
       cResult[4] = tmp17;
       tmp15 = tmp17;
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
               let tmp32Result = null;
               if (null != action) {
                 let str2 = "text-link";
-                const Text = tmp(5088).Text;
+                const Text = tmp(5187).Text;
                 const tmp32 = closure_5;
                 const tmp33 = closure_6;
                 const tmp34 = closure_4;
@@ -222,7 +222,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
                 let tmp39 = null;
                 if (null != conjureContextSwitchRow.note) {
                   const obj12 = { variant: "text-xs/normal", color: "text-muted", style: tmp4.contextCentered, children: conjureContextSwitchRow.note };
-                  tmp39 = closure_4(tmp(5088).Text, obj12);
+                  tmp39 = closure_4(tmp(5187).Text, obj12);
                 }
                 cResult[21] = conjureContextSwitchRow.note;
                 cResult[22] = tmp4.contextCentered;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
             }
             const obj13 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.contextCentered, children: items3 };
             items3 = [conjureContextSwitchRow.body, tmp30];
-            const tmp37 = closure_5(action(5088).Text, obj13);
+            const tmp37 = closure_5(action(5187).Text, obj13);
             cResult[17] = conjureContextSwitchRow.body;
             cResult[18] = tmp4.contextCentered;
             cResult[19] = tmp30;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  const obj = action(17092);
+  const obj = action(11653);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -284,10 +284,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     items = [closure_4(View, obj4), , ];
     const obj5 = { style: tmp.contextLabel, accessible: true, accessibilityRole: "header", children: items1 };
     const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const ChatPlusIcon = tmp2(10759).ChatPlusIcon;
+    const ChatPlusIcon = tmp2(11175).ChatPlusIcon;
     items1 = [closure_4(ChatPlusIcon, obj6), ];
     const obj7 = { variant: "text-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
-    items1[1] = closure_4(action(5088).Text, obj7);
+    items1[1] = closure_4(action(5187).Text, obj7);
     items[1] = closure_5(View, obj5);
     const obj8 = { style: tmp.contextLine };
     items[2] = closure_4(View, obj8);
@@ -296,10 +296,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     items3 = [conjureContextSwitchRow.body, ];
     let tmp8Result = null;
     const obj9 = { style: tmp.contextText, accessibilityLiveRegion: "polite", children: items5 };
-    const Text2 = tmp2(5088).Text;
+    const Text2 = tmp2(5187).Text;
     if (null != action) {
       let str = "text-link";
-      const Text = tmp2(5088).Text;
+      const Text = tmp2(5187).Text;
       const tmp5 = closure_6;
       if (action.disabled) {
         str = "text-muted";
@@ -332,7 +332,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     let tmp10Result = null;
     if (null != conjureContextSwitchRow.note) {
       const obj14 = { variant: "text-xs/normal", color: "text-muted", style: tmp.contextCentered, children: conjureContextSwitchRow.note };
-      tmp10Result = tmp10(tmp2(5088).Text, obj14);
+      tmp10Result = tmp10(tmp2(5187).Text, obj14);
     }
     items5[1] = tmp10Result;
     items2[1] = closure_5(View, obj9);

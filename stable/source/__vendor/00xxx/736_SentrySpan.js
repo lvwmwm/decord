@@ -9,7 +9,7 @@ import _mod696 from "module_696" /* 696 */;
 import _mod699 from "module_699" /* 699 */;
 import generateSpanId from "generateSpanId" /* 705 */;
 import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 714 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 715 */;
+import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" /* 715 */;
 import _mod724 from "module_724" /* 724 */;
 import logSpanEnd from "logSpanEnd" /* 737 */;
 import timedEventsToMeasurements from "timedEventsToMeasurements" /* 738 */;
@@ -53,7 +53,7 @@ class SentrySpan {
     self._attributes = {};
     const obj5 = { [closure_2_0(closure_2_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "manual" };
     const setAttributes = self.setAttributes;
-    obj5[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = obj.op;
+    obj5[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_OP] = obj.op;
     const merged = Object.assign(obj.attributes);
     setAttributes(obj5);
     self._name = obj.name;
@@ -162,7 +162,7 @@ let items = [
     key: "updateName",
     value: function updateName(_name) {
       this._name = _name;
-      const attr = this.setAttribute(SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom");
+      const attr = this.setAttribute(GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom");
       return this;
     }
   },
@@ -189,7 +189,7 @@ let items = [
       let spanId;
       let tmpResult4;
       const self = this;
-      const obj = { data: this._attributes, description: this._name, op: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP], parent_span_id: this._parentSpanId, span_id: this._spanId, start_timestamp: this._startTime, status: obj2.getStatusMessage(this._status), timestamp: null, trace_id: null, origin: _attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], profile_id: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_PROFILE_ID], exclusive_time: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME], measurements: obj3.timedEventsToMeasurements(this._events), is_segment: _isStandaloneSpan, segment_id: spanId, links: tmpResult4.convertSpanLinksForEnvelope(self._links) };
+      const obj = { data: this._attributes, description: this._name, op: this._attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_OP], parent_span_id: this._parentSpanId, span_id: this._spanId, start_timestamp: this._startTime, status: obj2.getStatusMessage(this._status), timestamp: null, trace_id: null, origin: _attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], profile_id: this._attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_PROFILE_ID], exclusive_time: this._attributes[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME], measurements: obj3.timedEventsToMeasurements(this._events), is_segment: _isStandaloneSpan, segment_id: spanId, links: tmpResult4.convertSpanLinksForEnvelope(self._links) };
       ({ _endTime: obj.timestamp, _traceId: obj.trace_id, _attributes } = this);
       obj2 = TRACE_FLAG_NONE;
       _isStandaloneSpan = this._isStandaloneSpan;

@@ -1,20 +1,11 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10638
+// Function ID: 10639
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10313, 2000, 5056, 10318, 10317, 1126, 3442, 9031, 9549, 9547, 1200, 2]
+// Dependencies: [5, 10624, 2002, 1128, 3465, 9851, 9849, 2]
 // Exports: default
 
-// Module 10331 (buildFavoritesSectionButtons)
-import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef3442 from "module_3442" /* 3442 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9547 */;
-import StarIcon from "StarIcon" /* 9549 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10317 */;
+// Module 10638 (buildFavoritesSectionButtons)
+import _modDef3465 from "module_3465" /* 3465 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +44,7 @@ let obj = function _addChannelToFavorites() {
             let closure_1 = tmp;
             c2 = 1;
             c3 = 1;
-            const obj4 = { value: require("asyncRequire")(paths[2], paths.paths), done: false };
+            const obj4 = { value: require("asyncRequire")(paths[1], paths.paths), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -109,7 +100,7 @@ obj = function _removeChannelFromFavorites() {
             let closure_1 = tmp;
             c2 = 1;
             c3 = 1;
-            const obj4 = { value: require("asyncRequire")(paths[2], paths.paths), done: false };
+            const obj4 = { value: require("asyncRequire")(paths[1], paths.paths), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -132,72 +123,47 @@ obj = function _removeChannelFromFavorites() {
   });
   return obj(...arguments);
 };
-function openNoAccessUpsell() {
-  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-  ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10318, dependencyMap.paths);
-  openLazy(tmp2, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
-}
-const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 
-export default function buildFavoritesSectionButtons(isExperimentEnabled) {
+export default function buildFavoritesSectionButtons(channelId) {
   let intl;
   let intl2;
-  let intl3;
-  let tmp15;
-  ({ channelId: require, dismissBetaTag: importDefault } = isExperimentEnabled);
-  let tmp6 = null;
-  if (isExperimentEnabled.isExperimentEnabled) {
-    tmp6 = null;
-    if (tmp2) {
-      if (tmp) {
-        let tmp11;
-        if (tmp3) {
-          const obj2 = {
-            label: intl3.string(_modDef3442.TN4nAX),
-            IconComponent: StarIcon.StarIcon,
-            isDestructive: true,
-            onPress() {
-                      function removeChannelFromFavorites() {
-                        return closure_1_6(...arguments);
-                      }
-                      return removeChannelFromFavorites(require);
-                    }
-          };
-          intl3 = intl4.intl;
-          tmp11 = obj2;
-        } else {
-          tmp11 = null;
-          if (!tmp4) {
-            const obj3 = {
-              label: intl2.string(_modDef3442.G9fGlP),
-              IconComponent: StarOutlineIcon.StarOutlineIcon,
-              trailing: tmp15,
-              onPress() {
-                          function addChannelToFavorites() {
-                            return closure_1_5(...arguments);
-                          }
-                          importDefault();
-                          addChannelToFavorites(require);
-                        }
-            };
-            intl2 = intl4.intl;
-            tmp15 = undefined;
-            if (tmp5) {
-              const BetaTag = tmp12(1200).BetaTag;
-              tmp15 = <BetaTag size={native.BetaSizes.SMALL} />;
+  channelId = channelId.channelId;
+  let tmp2 = null;
+  if (channelId.canFavoriteChannel) {
+    let tmp3;
+    if (channelId.isChannelInFavorites) {
+      const obj2 = {
+        label: intl2.string(_modDef3465.TN4nAX),
+        IconComponent: channelId(9851).StarIcon,
+        isDestructive: true,
+        onPress() {
+              function removeChannelFromFavorites() {
+                return closure_1_5(...arguments);
+              }
+              return removeChannelFromFavorites(channelId);
             }
-            tmp11 = obj3;
-          }
-        }
-        obj = tmp11;
-      } else {
-        obj = { label: intl.string(_modDef3442.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
-        intl = intl4.intl;
+      };
+      intl2 = channelId(1128).intl;
+      tmp3 = obj2;
+    } else {
+      tmp3 = null;
+      if (!tmp) {
+        obj = {
+          label: intl.string(_modDef3465.G9fGlP),
+          IconComponent: channelId(9849).StarOutlineIcon,
+          onPress() {
+                  function addChannelToFavorites() {
+                    return closure_1_4(...arguments);
+                  }
+                  return addChannelToFavorites(channelId);
+                }
+        };
+        intl = channelId(1128).intl;
+        tmp3 = obj;
       }
-      tmp6 = obj;
     }
+    tmp2 = tmp3;
   }
-  return tmp6;
+  return tmp2;
 };

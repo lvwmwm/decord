@@ -1,9 +1,9 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 12133
+// Function ID: 12134
 // Name: ConjureComposerDraftStore
 // Dependencies: [32, 510, 12, 504, 584, 2]
 
-// Module 17186 (ConjureComposerDraftStore)
+// Module 12133 (ConjureComposerDraftStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,13 +13,13 @@ import size from "module_2" /* 2 */;
 
 function readStoredDrafts() {
   const Storage = Storage2.Storage;
-  let obj = Storage.get(VibegrationsComposerDrafts);
+  let obj = Storage.get(ConjureComposerDrafts);
   if (obj == null) {
     obj = {};
   }
   return obj;
 }
-const VibegrationsComposerDrafts = "VibegrationsComposerDrafts";
+const ConjureComposerDrafts = "ConjureComposerDrafts";
 const map = new Map();
 let closure_6 = module_12.throttle(() => {
   let tmp7;
@@ -39,7 +39,7 @@ let closure_6 = module_12.throttle(() => {
     }
     map.clear();
     const Storage = Storage2.Storage;
-    const result = Storage.set(VibegrationsComposerDrafts, tmp19);
+    const result = Storage.set(ConjureComposerDrafts, tmp19);
   }
 }, 1000);
 const Store = get_initializedDefault.Store;
@@ -48,7 +48,7 @@ class ConjureComposerDraftStore extends Store {
     let value = map.get(arg0);
     if (null == value) {
       const Storage = Storage2.Storage;
-      let value2 = Storage.get(VibegrationsComposerDrafts);
+      let value2 = Storage.get(ConjureComposerDrafts);
       if (value2 == null) {
         value2 = {};
       }
@@ -67,7 +67,7 @@ let obj = {
     map.clear();
     closure_6.cancel();
     const Storage = Storage2.Storage;
-    Storage.remove(VibegrationsComposerDrafts);
+    Storage.remove(ConjureComposerDrafts);
     return false;
   },
   CONJURE_COMPOSER_DRAFT_SET: function handleDraftSet(draft) {

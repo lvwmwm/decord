@@ -1,10 +1,10 @@
 // Module ID: 2451
 // Function ID: 2452
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2451 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9yb29tcw==", scales: [1], hash: "bcdcf5462e63bb2670978e31d2345b36", name: "hi.messages.bcdcf5462e63bb2670978e31d2345b36.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [1], hash: "d85431345976f4d8f4290f4955ea932e", name: "sv-SE.messages.d85431345976f4d8f4290f4955ea932e.compiled.messages", type: "jsona" });

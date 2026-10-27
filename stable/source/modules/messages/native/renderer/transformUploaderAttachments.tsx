@@ -1,14 +1,14 @@
-// Module ID: 13488
-// Function ID: 13489
+// Module ID: 14267
+// Function ID: 14268
 // Name: transformUploaderAttachments
-// Dependencies: [7743, 5419, 8258, 1126, 7752, 2]
+// Dependencies: [8014, 5519, 8535, 1128, 8023, 2]
 // Exports: default
 
-// Module 13488 (transformUploaderAttachments)
-import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7743 */;
-import CloudUpload from "CloudUpload" /* 7752 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8258 */;
+// Module 14267 (transformUploaderAttachments)
+import MediaFormatTesters from "MediaFormatTesters" /* 5519 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8014 */;
+import CloudUpload from "CloudUpload" /* 8023 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8535 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -92,17 +92,17 @@ export default function createUploaderAttachments(uploaderFile) {
           num6 = item.height;
         }
       }
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const string = intl.string;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       if (isVideoFileResult) {
         stringResult = string(t["BEWw/7"]);
       } else {
         stringResult = string(t.IPzNKE);
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const string2 = intl2.string;
-      const t2 = tmp(1126).t;
+      const t2 = tmp(1128).t;
       if (isVideoFileResult) {
         string2Result = string2(t2["/SCpvi"]);
       } else {

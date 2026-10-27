@@ -1,34 +1,34 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8599
+// Function ID: 8600
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 2065, 2125, 1390, 8280, 6905, 1085, 6841, 21, 5092, 558, 6307, 4850, 576, 1631, 504, 8306, 6879, 6852, 8290, 2041, 8310, 8322, 8323, 8335, 8336, 8337, 8342, 8329, 8348, 8349, 8352, 1497, 6259, 8346, 5031, 4818, 587, 8319, 8353, 8301, 2114, 8307, 1265, 4977, 5056, 1503, 8299, 6840, 1200, 8354, 1126, 4827, 8359, 1382, 7094, 8362, 13091, 13190, 9000, 6844, 13432, 1209, 2]
+// Dependencies: [32, 19, 17, 2068, 2128, 1392, 8558, 7181, 1087, 7119, 21, 5191, 558, 6584, 4945, 576, 1633, 504, 8584, 7155, 7130, 8568, 2044, 8588, 8600, 8601, 8613, 8614, 8615, 8620, 8607, 8626, 8627, 8630, 1499, 6536, 8624, 5127, 4913, 587, 8597, 8631, 8579, 2117, 8585, 1267, 5073, 5155, 1505, 8577, 7118, 1202, 8632, 1128, 4922, 8637, 1384, 7370, 8640, 14014, 14110, 9296, 7122, 14211, 1211, 2]
 
-// Module 8321 (UserProfileActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import isChangelogUserDefault from "isChangelogUser" /* 2114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import BottomSheetModal from "BottomSheetModal" /* 6307 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import Constants2 from "Constants" /* 6905 */;
-import openUserSettings from "openUserSettings" /* 7094 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import UserActionCreators from "UserActionCreators" /* 8301 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8329 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8342 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8346 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8353 */;
+// Module 8599 (UserProfileActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import isChangelogUserDefault from "isChangelogUser" /* 2117 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import BottomSheetModal from "BottomSheetModal" /* 6584 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
+import Constants2 from "Constants" /* 7181 */;
+import openUserSettings from "openUserSettings" /* 7370 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import UserActionCreators from "UserActionCreators" /* 8579 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8585 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8607 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8620 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8624 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8631 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserStore_mod from "UserStore" /* 1390 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import UserStore_mod from "UserStore" /* 1392 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -214,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp7;
   const tmp3 = localUser;
   let obj = userId(localUser[15]);
-  const cResult = obj.c(190);
+  const cResult = obj.c(191);
   userId = userId.userId;
   const channelId = userId.channelId;
   ({ messageId, localUser } = userId);
@@ -652,9 +652,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let skuId;
   let theme;
   let tmp54;
-  let tmp78;
-  let tmp80;
-  let tmp82;
+  let tmp79;
+  let tmp81;
+  let tmp83;
   userId = userId.userId;
   const channelId = userId.channelId;
   const localUser = userId.localUser;
@@ -901,7 +901,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return tmp2;
     }, items7);
     if (isPreviewingChanges) {
-      let tmp108Result7;
+      let tmp109Result9;
       if (undefined !== profileEffect1) {
         let skuId3;
         if (profileEffect1 != null) {
@@ -923,6 +923,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       width = size.width;
       const diff = size.height - tmp3(tmp4[35]).NAV_BAR_HEIGHT_MULTILINE - top;
       const items8 = [isPreviewingChanges, tmp7Result2Result, width];
+      let tmp110Result = null != tmp7Result2Result;
       const memo2 = obj8.useMemo(() => {
         const tmp = isPreviewingChanges;
         if (tmp) {
@@ -934,12 +935,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         return 0;
       }, items8);
-      const tmp60 = tmp7(tmp4[37])();
+      if (!tmp110Result) {
+        tmp110Result = isPreviewingChanges;
+      }
+      const tmp61 = tmp7(tmp4[37])();
       const tmp3Result21 = tmp3(tmp4[38]);
       const token = tmp3Result21.useToken(tmp7(tmp4[39]).colors.INTERACTIVE_TEXT_HOVER, theme);
       const obj7 = { userId, user: obj4, channelId, guildId: guild_id, displayProfile: tmp7ResultResult, guildMember: stateFromStores2 };
-      const tmp62 = tmp7(tmp4[40])(obj7);
-      closure_26 = tmp62;
+      const tmp63 = tmp7(tmp4[40])(obj7);
+      closure_26 = tmp63;
       const items9 = [obj4, channelId];
       const items10 = [stateFromStores, userId];
       const memo3 = obj8.useMemo(() => {
@@ -973,7 +977,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp10 = channelId;
         }
       }, items11);
-      const items12 = [tmp62, tmp7ResultResult, guild_id, first, stateFromStores2];
+      const items12 = [tmp63, tmp7ResultResult, guild_id, first, stateFromStores2];
       const effect2 = obj8.useEffect(() => {
         const tmp = first || null == closure_13;
         if (!tmp) {
@@ -1016,7 +1020,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (atResult === AnalyticsLocationDefault.COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
           const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: tmp, sku_id: skuId };
           skuId = undefined;
-          const track = tmp3(1265).track;
+          const track = tmp3(1267).track;
           const OPEN_MODAL = stateFromStores2.OPEN_MODAL;
           AnalyticsUtilsDefault;
           if (avatarDecoration != null) {
@@ -1101,9 +1105,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         obj12 = { style: { marginTop: 42 }, Illustration: tmp3(tmp4[52]).NoResults, body: intl2.string(tmp3(tmp4[53]).t.eAn6z2) };
         EmptyState = tmp3(tmp4[51]).EmptyState;
         intl2 = tmp3(tmp4[53]).intl;
-        tmp108Result7 = tmp104(AnalyticsLocationProvider, obj9);
+        tmp109Result9 = tmp105(AnalyticsLocationProvider, obj9);
       } else {
-        let tmp108Result4;
+        let tmp109Result5;
         const obj13 = { theme, primaryColor, secondaryColor, children: first(AnalyticsLocationProvider2, obj14) };
         const ThemeContextProvider2 = tmp3(tmp4[54]).ThemeContextProvider;
         obj14 = { value: analyticsLocations, children: closure_17(UserProfileAnalyticsProvider2, obj15) };
@@ -1122,32 +1126,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp7ResultResult != null) {
           isLoaded1 = tmp7ResultResult.isLoaded;
         }
-        let tmp108Result = null != tmp7Result2Result;
+        let tmp109Result = tmp110Result;
         const obj16 = { ref: bottomSheetRef, handleDisabled: true, scrollable: true, startExpanded: true, maxHeight: diff - memo2, contentStyles: tmp2.noPadding, backdropChildren: memo1, animatedIndex: sharedValue1, children: items15 };
         BottomSheet = tmp3(tmp4[50]).BottomSheet;
-        if (tmp108Result) {
+        if (tmp110Result) {
           const obj17 = { animatedPosition: sharedValue };
-          tmp108Result = tmp108(createUserProfileAnalyticsContext, obj17);
+          tmp109Result = tmp109(createUserProfileAnalyticsContext, obj17);
         }
-        items15 = [tmp108Result, , , ];
+        items15 = [tmp109Result, , , ];
         const obj18 = { gradientHeight: diff, bannerHeight: tmp57 };
         items15[1] = first(tmp7(tmp4[55]), obj18);
         let str2;
-        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp78, ref, children: first(sharedValue, obj29) };
+        const obj19 = { scrollsToTop: false, style: tmp2.container, contentContainerStyle: obj20, scrollEventsHandlersHook: tmp79, ref, children: first(sharedValue, obj29) };
         const BottomSheetScrollView = tmp3(tmp4[13]).BottomSheetScrollView;
         if (isPreviewingChanges) {
           str2 = "none";
         }
-        tmp78 = undefined;
+        tmp79 = undefined;
         obj20 = { pointerEvents: str2 };
         const tmp3Result23 = tmp3(tmp4[56]);
         if (tmp3Result23.isIOS()) {
-          tmp78 = memo;
+          tmp79 = memo;
         }
         const obj22 = {
           user: obj4,
           channel: stateFromStores1,
-          guildId: tmp80,
+          guildId: tmp81,
           displayProfile: tmp7ResultResult,
           disableCalls,
           disableMessage,
@@ -1174,41 +1178,41 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   tmp(obj);
                 },
           initialSection,
-          scrollPosition: tmp82
+          scrollPosition: tmp83
         };
-        tmp80 = undefined;
+        tmp81 = undefined;
         const obj21 = { style: tmp2.profileContainer, onLayout: callback, children: items16 };
         if (showGuildProfile) {
-          tmp80 = guild_id;
+          tmp81 = guild_id;
         }
         avatarDecoration1 = undefined;
         if (collectibleProfileOverrides != null) {
           avatarDecoration1 = collectibleProfileOverrides.avatarDecoration;
         }
-        tmp82 = undefined;
+        tmp83 = undefined;
         const tmp3Result24 = tmp3(tmp4[56]);
         if (tmp3Result24.isIOS()) {
-          tmp82 = sharedValue2;
+          tmp83 = sharedValue2;
         }
         if (obj4.isNonUserBot()) {
           const obj23 = {};
           const tmp7Result15 = tmp7(tmp4[58]);
           let merged = Object.assign(obj22);
-          tmp108Result4 = tmp108(tmp7Result15, obj23);
+          tmp109Result5 = tmp109(tmp7Result15, obj23);
         } else if (obj4.bot) {
           const obj24 = {};
           const tmp7Result16 = tmp7(tmp4[59]);
           const merged1 = Object.assign(obj22);
-          tmp108Result4 = tmp108(tmp7Result16, obj24);
+          tmp109Result5 = tmp109(tmp7Result16, obj24);
         } else {
           const obj25 = {};
           const tmp7Result17 = tmp7(tmp4[60]);
           const merged2 = Object.assign(obj22);
-          tmp108Result4 = tmp108(tmp7Result17, obj25);
+          tmp109Result5 = tmp109(tmp7Result17, obj25);
         }
-        items16 = [tmp108Result4, ];
-        let tmp108Result5 = null != tmp50Result;
-        if (tmp108Result5) {
+        items16 = [tmp109Result5, ];
+        let tmp109Result6 = null != tmp50Result;
+        if (tmp109Result6) {
           const obj26 = { style: items17, pointerEvents: "none", children: first(tmp7(tmp4[61]), obj28) };
           items17 = [tmp2.profileEffect, , ];
           const obj27 = { height: diff };
@@ -1216,34 +1220,38 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           items17[2] = animatedStyle;
           const View = tmp7(tmp4[14]).View;
           obj28 = { skuId: tmp50Result.skuId, bannerAdjustment: 0 };
-          tmp108Result5 = tmp108(View, obj26);
+          tmp109Result6 = tmp109(View, obj26);
         }
-        items16[1] = tmp108Result5;
+        items16[1] = tmp109Result6;
         obj29 = { children: closure_17(sharedValue, obj21) };
         items15[2] = first(BottomSheetScrollView, obj19);
-        let tmp108Result6 = null == tmp7Result2Result;
-        if (tmp108Result6) {
+        let tmp109Result7 = !tmp110Result;
+        if (tmp109Result7) {
           const obj30 = { variant: "floating", tabStyle: obj31, onPress: bottomSheetClose };
           obj31 = { backgroundColor: token };
-          tmp108Result6 = tmp108(tmp3(tmp4[62]).ActionSheetHeaderBar, obj30);
+          tmp109Result7 = tmp109(tmp3(tmp4[62]).ActionSheetHeaderBar, obj30);
         }
-        items15[3] = tmp108Result6;
+        items15[3] = tmp109Result7;
         items18 = [closure_17(BottomSheet, obj16), , ];
-        let tmp109Result = null != tmp7Result2Result;
-        if (tmp109Result) {
+        if (tmp110Result) {
+          let tmp109Result8 = null != tmp7Result2Result;
           const obj32 = { animatedPosition: sharedValue, safeAreaTop: top, animatedIndex: sharedValue1, children: items19 };
-          const obj33 = { frame: tmp7Result2Result, profileThemeType: guild_id.ACTION_SHEET, frameOrder: tmp3(tmp4[30]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
-          const tmp7Result18 = tmp7(tmp4[29]);
-          items19 = [first(tmp7Result18, obj33), ];
+          const tmp99 = closure_26;
+          if (tmp109Result8) {
+            const obj33 = { frame: tmp7Result2Result, profileThemeType: guild_id.ACTION_SHEET, frameOrder: tmp3(tmp4[30]).ProfileFrameLayerOrder.FRONT, containerWidth: first1 };
+            const tmp7Result18 = tmp7(tmp4[29]);
+            tmp109Result8 = tmp109(tmp7Result18, obj33);
+          }
+          items19 = [tmp109Result8, ];
           const obj34 = { variant: "floating", tabStyle: obj35, onPress: bottomSheetClose };
           obj35 = { backgroundColor: token };
           items19[1] = first(tmp3(tmp4[62]).ActionSheetHeaderBar, obj34);
-          tmp109Result = tmp109(closure_26, obj32);
+          tmp110Result = tmp110(tmp99, obj32);
         }
-        items18[1] = tmp109Result;
+        items18[1] = tmp110Result;
         if (isPreviewingChanges) {
           let mNZcD8;
-          const obj36 = { theme: tmp60, primaryColor: null, secondaryColor: null, children: first(ActionSheetBackdropToast, obj37) };
+          const obj36 = { theme: tmp61, primaryColor: null, secondaryColor: null, children: first(ActionSheetBackdropToast, obj37) };
           const ThemeContextProvider = tmp3(tmp4[54]).ThemeContextProvider;
           ActionSheetBackdropToast = tmp3(tmp4[63]).ActionSheetBackdropToast;
           const intl = tmp3(tmp4[53]).intl;
@@ -1254,12 +1262,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             mNZcD8 = tmp3(tmp4[53]).t["wSnI/0"];
           }
           obj37 = { text: string(mNZcD8), isExpanded: true };
-          isPreviewingChanges = tmp108(ThemeContextProvider, obj36);
+          isPreviewingChanges = tmp109(ThemeContextProvider, obj36);
         }
         items18[2] = isPreviewingChanges;
-        tmp108Result7 = tmp108(ThemeContextProvider2, obj13);
+        tmp109Result9 = tmp109(ThemeContextProvider2, obj13);
       }
-      return tmp108Result7;
+      return tmp109Result9;
     }
     if (tmp7ResultResult != null) {
       const profileEffect = tmp7ResultResult.profileEffect;

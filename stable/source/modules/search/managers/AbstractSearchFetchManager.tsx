@@ -1,9 +1,9 @@
-// Module ID: 12074
-// Function ID: 12075
+// Module ID: 13019
+// Function ID: 13020
 // Name: AbstractSearchFetchManager
 // Dependencies: [2]
 
-// Module 12074 (AbstractSearchFetchManager)
+// Module 13019 (AbstractSearchFetchManager)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");

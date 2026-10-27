@@ -1,20 +1,20 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11516
+// Function ID: 11517
 // Name: LabeledActionBarButton
-// Dependencies: [109, 19, 17, 1096, 21, 5092, 5969, 587, 558, 576, 6157, 1200, 6185, 2]
+// Dependencies: [109, 19, 17, 1098, 21, 5191, 6225, 587, 558, 576, 5128, 1202, 6462, 2]
 
-// Module 11130 (LabeledActionBarButton)
+// Module 11516 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import LegacyTokens from "LegacyTokens" /* 5969 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Pressables from "Pressables" /* 6185 */;
+import Constants from "Constants" /* 1098 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import LegacyTokens from "LegacyTokens" /* 6225 */;
+import Pressables from "Pressables" /* 6462 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp7;
-const native = tmp7(1200);
+const native = tmp7(1202);
 let closure_3 = ["backgroundColor", "imageStyle", "children", "source", "disabled", "label", "iconPosition"];
 const View = react_native.View;
 const Fonts = Constants.Fonts;
@@ -203,7 +203,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                                     }
                                   }
                                   const obj6 = { accessibilityRole: "button", disabled: tmp6, style: tmp15.pressable, children: tmp42 };
-                                  const PressableOpacity = tmp(6185).PressableOpacity;
+                                  const PressableOpacity = tmp(6462).PressableOpacity;
                                   const merged = Object.assign(tmp9);
                                   const tmp51 = metroRequire(PressableOpacity, obj6);
                                   cResult[47] = tmp6;
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
               if (null != tmp8) {
                 const items2 = [tmp15.buttonText, ];
                 let rightTextMargin = LEFT === obj4.RIGHT;
-                const LegacyText = tmp(1200).LegacyText;
+                const LegacyText = tmp(1202).LegacyText;
                 const tmp31 = metroRequire;
                 if (rightTextMargin) {
                   rightTextMargin = tmp15.rightTextMargin;

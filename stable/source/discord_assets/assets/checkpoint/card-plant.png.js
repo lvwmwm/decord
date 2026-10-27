@@ -1,8 +1,8 @@
-// Module ID: 5449
-// Function ID: 5450
+// Module ID: 5549
+// Function ID: 5550
 // Dependencies: [2]
 
-// Module 5449
+// Module 5549
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-plant.png.js");

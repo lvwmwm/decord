@@ -1,36 +1,36 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 14045
+// Function ID: 14046
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5440, 1085, 2024, 8455, 8270, 1126, 558, 576, 13124, 7009, 13126, 10255, 1415, 13130, 5763, 13131, 10248, 6858, 504, 1265, 8458, 2]
+// Dependencies: [19, 5540, 1087, 2026, 8733, 8547, 1128, 558, 576, 14046, 7285, 14048, 10556, 1417, 14052, 6019, 14053, 10550, 7134, 504, 1267, 8736, 2]
 // Exports: getApplicationImage
 
-// Module 13123 (ContentInventoryActivityImageUtils)
+// Module 14045 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Constants2 from "Constants" /* 2024 */;
-import PlatformsDefault from "Platforms" /* 5763 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8455 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8458 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10248 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10255 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13124 */;
-import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 13126 */;
-import isOnXboxDefault from "isOnXbox" /* 13130 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 13131 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import Constants2 from "Constants" /* 2026 */;
+import PlatformsDefault from "Platforms" /* 6019 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7134 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8547 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8733 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8736 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10550 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10556 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14046 */;
+import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 14048 */;
+import isOnXboxDefault from "isOnXbox" /* 14052 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14053 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const useGame2 = tmp(7009);
+const useGame2 = tmp(7285);
 function getMediaImage(entry) {
   let tmp3;
   let tmpResult3;
@@ -101,7 +101,7 @@ function computeImageForActivity(arg0) {
       const obj5 = { largeImage: obj6, smallImage: "r" };
       obj6 = { src: tmp2Result.get(metroRequire.XBOX).icon.customPNG, alt: intl4.string(intl5.t.Nfvo72) };
       tmp2Result = PlatformsDefault;
-      intl4 = tmp17(1126).intl;
+      intl4 = tmp17(1128).intl;
       return obj5;
     } else {
       if (null == smallImage) {
@@ -109,7 +109,7 @@ function computeImageForActivity(arg0) {
           const obj7 = { largeImage: obj8, smallImage: "r" };
           obj8 = { src: tmp2Result2.get(metroRequire.PLAYSTATION).icon.lightPNG, alt: intl3.string(intl5.t.fFl4jo) };
           tmp2Result2 = PlatformsDefault;
-          intl3 = tmp17(1126).intl;
+          intl3 = tmp17(1128).intl;
           return obj7;
         }
       }
@@ -135,12 +135,12 @@ function computeImageForActivity(arg0) {
         if (null != iconURL) {
           const obj11 = { src: iconURL, alt: stringResult };
           if (null == name) {
-            const intl2 = tmp17(1126).intl;
-            stringResult = intl2.string(tmp17(1126).t["2B/phM"]);
+            const intl2 = tmp17(1128).intl;
+            stringResult = intl2.string(tmp17(1128).t["2B/phM"]);
           } else {
-            const intl = tmp17(1126).intl;
+            const intl = tmp17(1128).intl;
             const obj12 = { applicationName: name };
-            stringResult = intl.formatToPlainString(tmp17(1126).t.tiKyYg, obj12);
+            stringResult = intl.formatToPlainString(tmp17(1128).t.tiKyYg, obj12);
           }
           tmp5 = obj11;
         }
@@ -689,7 +689,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
     let tmp32;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { largeImage: "top", smallImage: "code" };
+      const obj2 = { largeImage: "Array", smallImage: "Reflect" };
       cResult[2] = obj2;
       tmp32 = obj2;
     } else {
@@ -755,7 +755,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
           if (null != data) {
             if (null != iconURL) {
               const obj4 = { src: iconURL, alt: intl.formatToPlainString(intl5.t.tiKyYg, obj5) };
-              intl = tmp(1126).intl;
+              intl = tmp(1128).intl;
               tmp25 = obj4;
               obj5 = { applicationName: data.name };
             }
@@ -775,12 +775,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
           if (null != iconURL1) {
             const obj6 = { src: iconURL1, alt: stringResult };
             if (null == name) {
-              const intl3 = tmp(1126).intl;
-              stringResult = intl3.string(tmp(1126).t["2B/phM"]);
+              const intl3 = tmp(1128).intl;
+              stringResult = intl3.string(tmp(1128).t["2B/phM"]);
             } else {
-              const intl2 = tmp(1126).intl;
+              const intl2 = tmp(1128).intl;
               const obj7 = { applicationName: name };
-              stringResult = intl2.formatToPlainString(tmp(1126).t.tiKyYg, obj7);
+              stringResult = intl2.formatToPlainString(tmp(1128).t.tiKyYg, obj7);
             }
             tmp28 = obj6;
           }
@@ -871,7 +871,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
   }
   const data = useGame(canonicalGameId).data;
   if (null == application_id) {
-    return { largeImage: "top", smallImage: "code" };
+    return { largeImage: "Array", smallImage: "Reflect" };
   } else {
     let large_image;
     if (application_id != null) {
@@ -940,7 +940,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
       if (null != data) {
         if (null != iconURL) {
           const obj3 = { src: iconURL, alt: intl.formatToPlainString(intl5.t.tiKyYg, obj4) };
-          intl = tmp(1126).intl;
+          intl = tmp(1128).intl;
           tmp20 = obj3;
           obj4 = { applicationName: data.name };
         }
@@ -960,12 +960,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
       if (null != iconURL1) {
         const obj5 = { src: iconURL1, alt: stringResult };
         if (null == name) {
-          const intl3 = tmp(1126).intl;
-          stringResult = intl3.string(tmp(1126).t["2B/phM"]);
+          const intl3 = tmp(1128).intl;
+          stringResult = intl3.string(tmp(1128).t["2B/phM"]);
         } else {
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const obj6 = { applicationName: name };
-          stringResult = intl2.formatToPlainString(tmp(1126).t.tiKyYg, obj6);
+          stringResult = intl2.formatToPlainString(tmp(1128).t.tiKyYg, obj6);
         }
         tmp23 = obj5;
       }

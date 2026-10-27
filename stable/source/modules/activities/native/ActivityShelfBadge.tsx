@@ -1,20 +1,20 @@
-// Module ID: 11775
-// Function ID: 11776
+// Module ID: 11909
+// Function ID: 11910
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1200, 558, 576, 1998, 1126, 5088, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 1202, 558, 576, 2000, 1128, 5187, 2]
 
-// Module 11775 (ActivityShelfBadge)
+// Module 11909 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import Server from "Server" /* 1998 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import Server from "Server" /* 2000 */;
+import Text_Text from "Text/Text" /* 5187 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import native_mod from "native" /* 1200 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import native_mod from "native" /* 1202 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = { badge: rect, newBadge: obj2, updatedBadge: obj3, elevationShadow: na
 rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj2 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 native = native_mod;
 let closure_4 = createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShelfBadge(arg0) {
@@ -55,7 +55,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
         const _Symbol2 = Symbol;
         const badgeText2 = tmp4.badgeText;
         if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1126).intl;
+          const intl2 = tmp(1128).intl;
           const stringResult = intl2.string(intl3.t.y2b7CA);
           cResult[4] = stringResult;
           tmp18 = stringResult;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
         const _Symbol = Symbol;
         const badgeText = tmp4.badgeText;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const stringResult1 = intl.string(intl3.t["/qdhkk"]);
           cResult[14] = stringResult1;
           tmp7 = stringResult1;
@@ -157,8 +157,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
     ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
+    const Text = tmp2(5187).Text;
+    intl = tmp2(1128).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
     tmp6 = null;
@@ -166,8 +166,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
       ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(5088).Text;
-      intl2 = tmp2(1126).intl;
+      const Text2 = tmp2(5187).Text;
+      intl2 = tmp2(1128).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }
   }

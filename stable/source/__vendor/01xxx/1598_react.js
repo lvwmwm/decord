@@ -1,23 +1,19 @@
 // Module ID: 1598
 // Function ID: 1599
 // Name: react
-// Dependencies: [19, 1573]
-// Exports: usePreventRemoveContext
+// Dependencies: [19, 1531]
+// Exports: useNavigationContainerRef
 
 // Module 1598 (react)
-import react2 from "react" /* 1573 */;
+import NOT_INITIALIZED_ERROR from "NOT_INITIALIZED_ERROR" /* 1531 */;
 import react from "react" /* 19 */;
 
 
-export const usePreventRemoveContext = function usePreventRemoveContext() {
-  const context = react.useContext(react2.PreventRemoveContext);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the prevent remove context. Is your component inside NavigationContent?");
-    throw error;
-  } else {
-    return context;
+export const useNavigationContainerRef = function useNavigationContainerRef() {
+  const ref = react.useRef(null);
+  if (null == ref.current) {
+    const obj = NOT_INITIALIZED_ERROR;
+    ref.current = obj.createNavigationContainerRef();
   }
+  return ref.current;
 };

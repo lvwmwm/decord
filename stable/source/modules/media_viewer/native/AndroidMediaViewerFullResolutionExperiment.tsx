@@ -1,11 +1,11 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 14006
+// Function ID: 14007
 // Name: AndroidMediaViewerFullResolutionExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 // Exports: getAndroidMediaViewerFullResolutionEnabled
 
-// Module 13083 (AndroidMediaViewerFullResolutionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 14006 (AndroidMediaViewerFullResolutionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

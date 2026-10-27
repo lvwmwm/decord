@@ -1,13 +1,13 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9929
+// Function ID: 9930
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 558, 576, 9629, 1126, 9632, 9634, 2]
+// Dependencies: [19, 21, 558, 576, 9930, 1128, 9933, 9935, 2]
 
-// Module 9628 (ChatGDMCustomizeActionSheet)
+// Module 9929 (ChatGDMCustomizeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 9629 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9632 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 9634 */;
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 9930 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9933 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 9935 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -66,8 +66,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMCus
   ({ onGoBack: c1, ref: c2 } = useNavigatorConfirmChangesOnBackDefault());
   useNavigatorConfirmChangesOnBackDefault();
   ModalStackNavigatorDefault;
-  const intl = channelId(1126).intl;
-  return <tmp2 screenKey="kick" title={intl.string(channelId(1126).t["1r5E+m"])} render={function render() {
+  const intl = channelId(1128).intl;
+  return <tmp2 screenKey="kick" title={intl.string(channelId(1128).t["1r5E+m"])} render={function render() {
     return jsx(ChatGDMCustomizeDefault, { ref, onFinish, channelId });
   }} />;
 });

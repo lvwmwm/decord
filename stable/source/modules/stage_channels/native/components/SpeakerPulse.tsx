@@ -1,17 +1,17 @@
-// Module ID: 14429
-// Function ID: 14430
+// Module ID: 15195
+// Function ID: 15196
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 2]
+// Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 504, 4945, 5192, 2]
 
-// Module 14429 (SpeakerPulse)
+// Module 15195 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

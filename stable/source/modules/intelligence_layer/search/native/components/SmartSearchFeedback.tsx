@@ -1,20 +1,20 @@
-// Module ID: 17452
-// Function ID: 17453
+// Module ID: 17834
+// Function ID: 17835
 // Name: SmartSearchFeedback
-// Dependencies: [32, 19, 17, 12042, 21, 5092, 587, 12077, 12060, 558, 576, 504, 8620, 1126, 4075, 5088, 12851, 9354, 9356, 2]
+// Dependencies: [32, 19, 17, 12987, 21, 5191, 587, 13022, 13005, 558, 576, 504, 7091, 1128, 4127, 5187, 13772, 9658, 9660, 2]
 
-// Module 17452 (SmartSearchFeedback)
+// Module 17834 (SmartSearchFeedback)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef4075 from "module_4075" /* 4075 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12060 */;
-import SmartSearchActionCreators from "SmartSearchActionCreators" /* 12077 */;
-import IconActionButtonDefault from "IconActionButton" /* 12851 */;
+import _modDef4127 from "module_4127" /* 4127 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13005 */;
+import SmartSearchActionCreators from "SmartSearchActionCreators" /* 13022 */;
+import IconActionButtonDefault from "IconActionButton" /* 13772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 12042 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 12987 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { feedbackContainer: obj2, buttonContainer: { flexDirection: "row", alignItems: "center" } };
-obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_6, height: nativeDefault.space.PX_24 };
+obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_6, height: nativeDefault.space.PX_24 };
 let closure_8 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchFeedback(smartSearchQuery) {
   let first;
@@ -62,18 +62,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchF
       tmp10 = cResult[6];
     }
     let tmp14 = null;
-    const tmpResult2 = smartSearchQuery(8620);
+    const tmpResult2 = smartSearchQuery(7091);
     if (!_slicedToArray(tmpResult2.useRecyclingState(null !== stateFromStores, tmp10), 1)[0]) {
       let tmp15;
       let tmp18;
       if (cResult[7] !== stateFromStores) {
         let stringResult;
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const string = intl.string;
         if (null !== stateFromStores) {
-          stringResult = string(tmp(1126).t.kZbFIO);
+          stringResult = string(tmp(1128).t.kZbFIO);
         } else {
-          stringResult = string(_modDef4075.uij9Dy);
+          stringResult = string(_modDef4127.uij9Dy);
         }
         cResult[7] = stateFromStores;
         cResult[8] = stringResult;
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchF
       }
       if (cResult[9] !== tmp15) {
         let obj2 = { variant: "text-sm/medium", color: "text-muted", children: tmp15 };
-        const tmp20 = closure_6(smartSearchQuery(5088).Text, obj2);
+        const tmp20 = closure_6(smartSearchQuery(5187).Text, obj2);
         cResult[9] = tmp15;
         cResult[10] = tmp20;
         tmp18 = tmp20;
@@ -119,31 +119,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchF
       if (tmp22) {
         const obj4 = { style: tmp4.buttonContainer, children: items3 };
         const obj5 = {
-          source: null,
-          IconComponent: smartSearchQuery(9354).ThumbsUpIcon,
+          IconComponent: smartSearchQuery(9658).ThumbsUpIcon,
           onPress() {
                   const obj = SmartSearchActionCreators;
                   const obj2 = { smartSearchQuery, hasPositiveFeedback: true, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
                   obj.setResultFeedback(obj2);
                 },
-          accessibilityLabel: intl2.string(_modDef4075["x/H32X"])
+          accessibilityLabel: intl2.string(_modDef4127["x/H32X"])
         };
         const tmp27 = IconActionButtonDefault;
-        intl2 = tmp(1126).intl;
+        intl2 = tmp(1128).intl;
         items3 = [closure_6(tmp27, obj5), ];
         const obj6 = {
-          source: null,
-          IconComponent: smartSearchQuery(9356).ThumbsDownIcon,
+          IconComponent: smartSearchQuery(9660).ThumbsDownIcon,
           noMargin: true,
           onPress() {
                   const obj = SmartSearchActionCreators;
                   const obj2 = { smartSearchQuery, hasPositiveFeedback: false, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
                   obj.setResultFeedback(obj2);
                 },
-          accessibilityLabel: intl3.string(_modDef4075.FoToeH)
+          accessibilityLabel: intl3.string(_modDef4127.FoToeH)
         };
         const tmp28 = IconActionButtonDefault;
-        intl3 = tmp(1126).intl;
+        intl3 = tmp(1128).intl;
         items3[1] = closure_6(tmp28, obj6);
         tmp22 = closure_7(View, obj4);
       }
@@ -178,19 +176,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchF
   const items1 = [, ];
   ({ guildId: arr2[0], requestKey: arr2[1] } = smartSearchQuery);
   const stateFromStores = obj.useStateFromStores(items, () => SmartSearchResultsStore.getResultFeedback(smartSearchQuery.guildId, smartSearchQuery.requestKey), items1);
-  let obj2 = smartSearchQuery(8620);
+  let obj2 = smartSearchQuery(7091);
   const items2 = [smartSearchQuery.requestKey];
   let tmp7Result2 = null;
   if (!_slicedToArray(obj2.useRecyclingState(null !== stateFromStores, items2), 1)[0]) {
     let stringResult;
     const obj3 = { style: tmp.feedbackContainer, children: items3 };
-    const Text = tmp2(5088).Text;
-    const intl = tmp2(1126).intl;
+    const Text = tmp2(5187).Text;
+    const intl = tmp2(1128).intl;
     const string = intl.string;
     if (null !== stateFromStores) {
-      stringResult = string(tmp2(1126).t.kZbFIO);
+      stringResult = string(tmp2(1128).t.kZbFIO);
     } else {
-      stringResult = string(_modDef4075.uij9Dy);
+      stringResult = string(_modDef4127.uij9Dy);
     }
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
     items3 = [closure_6(Text, obj4), ];
@@ -198,31 +196,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchF
     if (tmp7Result) {
       const obj5 = { style: tmp.buttonContainer, children: items4 };
       const obj6 = {
-        source: null,
-        IconComponent: smartSearchQuery(9354).ThumbsUpIcon,
+        IconComponent: smartSearchQuery(9658).ThumbsUpIcon,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: true, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
               obj.setResultFeedback(obj2);
             },
-        accessibilityLabel: intl2.string(_modDef4075["x/H32X"])
+        accessibilityLabel: intl2.string(_modDef4127["x/H32X"])
       };
       const tmp14 = IconActionButtonDefault;
-      intl2 = tmp2(1126).intl;
+      intl2 = tmp2(1128).intl;
       items4 = [closure_6(tmp14, obj6), ];
       const obj7 = {
-        source: null,
-        IconComponent: smartSearchQuery(9356).ThumbsDownIcon,
+        IconComponent: smartSearchQuery(9660).ThumbsDownIcon,
         noMargin: true,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: false, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
               obj.setResultFeedback(obj2);
             },
-        accessibilityLabel: intl3.string(_modDef4075.FoToeH)
+        accessibilityLabel: intl3.string(_modDef4127.FoToeH)
       };
       const tmp15 = IconActionButtonDefault;
-      intl3 = tmp2(1126).intl;
+      intl3 = tmp2(1128).intl;
       items4[1] = closure_6(tmp15, obj7);
       tmp7Result = tmp7(tmp8, obj5);
     }

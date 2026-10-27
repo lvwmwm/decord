@@ -1,14 +1,14 @@
-// Module ID: 15925
-// Function ID: 15926
+// Module ID: 16681
+// Function ID: 16682
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 7988, 21, 558, 576, 10664, 14970, 2]
+// Dependencies: [19, 8260, 21, 558, 576, 11084, 15732, 2]
 
-// Module 15925 (UserSettingsDesignSystemsScreen)
+// Module 16681 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
-import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,8 +28,8 @@ function getDesignSystemsSettings() {
   ({ DESIGN_SYSTEM_AI_LOADER: arr3[0], DESIGN_SYSTEM_AI_SHIMMER: arr3[1] } = MobileUserSettings);
   items1[1] = obj2;
   const obj3 = { label: "In Progress", settings: items3 };
-  items3 = [, , , , ];
-  ({ DESIGN_SYSTEM_SHEETS: arr4[0], DESIGN_SYSTEM_STACK: arr4[1], DESIGN_SYSTEMS_CONTEXT_MENU: arr4[2], DESIGN_SYSTEMS_TOAST: arr4[3], DESIGN_SYSTEMS_MODAL: arr4[4] } = MobileUserSettings);
+  items3 = [, , , , , ];
+  ({ DESIGN_SYSTEM_BADGE: arr4[0], DESIGN_SYSTEM_SHEETS: arr4[1], DESIGN_SYSTEM_STACK: arr4[2], DESIGN_SYSTEMS_CONTEXT_MENU: arr4[3], DESIGN_SYSTEMS_TOAST: arr4[4], DESIGN_SYSTEMS_MODAL: arr4[5] } = MobileUserSettings);
   items1[2] = obj3;
   const obj4 = { label: "Experimental", settings: items4 };
   items4 = [, ];
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsDe
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getDesignSystemsSettings() };
-    const createList = tmp(10664).createList;
+    const createList = tmp(11084).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

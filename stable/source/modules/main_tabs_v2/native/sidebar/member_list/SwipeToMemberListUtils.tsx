@@ -1,12 +1,13 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 11082
+// Function ID: 11083
 // Name: SwipeToMemberListUtils
-// Dependencies: [558, 10663, 1209, 2]
-// Exports: isSwipeToMemberListEnabled, useIsSwipeToMemberListEnabled
+// Dependencies: [558, 11083, 1211, 6354, 2]
+// Exports: isSwipeToMemberListEnabled, isSwipeToMemberListEnabledForChannel, useIsSwipeToMemberListEnabled
 
-// Module 10662 (SwipeToMemberListUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ChatGestureSettings from "ChatGestureSettings" /* 10663 */;
+// Module 11082 (SwipeToMemberListUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6354 */;
+import ChatGestureSettings from "ChatGestureSettings" /* 11083 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,4 +24,10 @@ export const isSwipeToMemberListEnabled = function isSwipeToMemberListEnabled() 
   const obj = ChatGestureSettings;
   const swipeToReplySettingValue = obj.getSwipeToReplySettingValue();
   return swipeToReplySettingValue === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS;
+};
+export const isSwipeToMemberListEnabledForChannel = function isSwipeToMemberListEnabledForChannel(id) {
+  const obj = ChatGestureSettings;
+  const swipeToReplySettingValue = obj.getSwipeToReplySettingValue();
+  const tmp3 = swipeToReplySettingValue === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS && !hasSecondaryViewChatDefault(id);
+  return tmp3;
 };

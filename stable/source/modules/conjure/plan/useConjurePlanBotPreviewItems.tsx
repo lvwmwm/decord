@@ -1,30 +1,30 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 12264
+// Function ID: 12265
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 5440, 2069, 1404, 1390, 10653, 1085, 558, 576, 504, 8301, 5434, 9808, 5442, 17292, 1126, 3849, 4962, 2]
+// Dependencies: [19, 5540, 2072, 1406, 1392, 6293, 1087, 558, 576, 504, 8579, 5534, 10111, 5542, 12265, 1128, 3883, 5057, 2]
 
-// Module 17291 (useConjurePlanBotPreviewItems)
+// Module 12264 (useConjurePlanBotPreviewItems)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import InteractionTypes from "InteractionTypes" /* 5442 */;
-import UserActionCreators from "UserActionCreators" /* 8301 */;
-import createMessage from "createMessage" /* 9808 */;
-import conjurePlanBot from "conjurePlanBot" /* 17292 */;
+import intl4 from "intl" /* 1128 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
+import InteractionTypes from "InteractionTypes" /* 5542 */;
+import UserActionCreators from "UserActionCreators" /* 8579 */;
+import createMessage from "createMessage" /* 10111 */;
+import conjurePlanBot from "conjurePlanBot" /* 12265 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
-import Constants from "Constants" /* 1085 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import UserStore from "UserStore" /* 1392 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const createMessageDefault = createMessage;
-let dependencyMap, importDefault;
+let _require, dependencyMap, importDefault;
 
 let c9;
 let metroImportAll;
@@ -155,8 +155,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSam
   let tmp4;
   let tmp7;
   let tmp9;
-  const _require = id;
-  importDefault = username;
+  _require = id;
   let tmp = _require;
   let obj = require("react");
   const cResult = obj.c(20);
@@ -253,33 +252,31 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSam
   if (stateFromStores != null) {
     username1 = stateFromStores.username;
   }
-  class E {
-    constructor() {
-      let tmp = closure_4;
-      if (tmp) {
-        username = undefined;
-        if (stateFromStores != null) {
-          username = stateFromStores.username;
-        }
-        tmp = username !== username;
+  const fn2 = function h() {
+    let tmp = closure_4;
+    if (tmp) {
+      username = undefined;
+      if (stateFromStores != null) {
+        username = stateFromStores.username;
       }
-      if (tmp) {
-        const self = this;
-        const self2 = this;
-        const obj = { id, username, discriminator: str, bot };
-        const insertStaticUser = UserActionCreators.insertStaticUser;
-        UserActionCreators;
-        const tmp14 = new UserRecord(obj);
-        insertStaticUser(tmp14);
-      }
+      tmp = username !== username;
     }
-  }
+    if (tmp) {
+      const self = this;
+      const self2 = this;
+      const obj = { id, username, discriminator: str, bot };
+      const insertStaticUser = UserActionCreators.insertStaticUser;
+      UserActionCreators;
+      const tmp14 = new UserRecord(obj);
+      insertStaticUser(tmp14);
+    }
+  };
   cResult[10] = username1;
   cResult[11] = username;
-  cResult[12] = E;
-  tmp15 = E;
+  cResult[12] = fn2;
+  tmp15 = fn2;
 }) : (function useSampleUser(id, username) {
-  const _require = id;
+  _require = id;
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -362,12 +359,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   if (null == tmp4) {
     items = [];
   } else {
-    const obj3 = { message: intl.string(_modDef3849.J7qggf), reply: intl2.string(_modDef3849.nqYtiy), event: intl3.string(_modDef3849["05lU9W"]) };
+    const obj3 = { message: intl.string(_modDef3883.J7qggf), reply: intl2.string(_modDef3883.nqYtiy), event: intl3.string(_modDef3883["05lU9W"]) };
     const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
     conjurePlanBot;
-    intl = tmp(1126).intl;
-    intl2 = tmp(1126).intl;
-    intl3 = tmp(1126).intl;
+    intl = tmp(1128).intl;
+    intl2 = tmp(1128).intl;
+    intl3 = tmp(1128).intl;
     items = getConjurePlanBotExchanges(bot, tmp4, obj3);
   }
   cResult[2] = tmp4;
@@ -375,7 +372,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   cResult[4] = items;
   tmp6 = items;
 }) : (function useConjurePlanBotExchanges(bot) {
-  const _require = bot;
+  _require = bot;
   let obj = require("conjurePlanBot");
   const conjurePlanBotInteraction = obj.getConjurePlanBotInteraction(bot);
   let items = [bot, conjurePlanBotInteraction];
@@ -389,7 +386,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef3849.J7qggf), reply: intl2.string(_modDef3849.nqYtiy), event: intl3.string(_modDef3849["05lU9W"]) };
+        const obj = { message: intl.string(_modDef3883.J7qggf), reply: intl2.string(_modDef3883.nqYtiy), event: intl3.string(_modDef3883["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -403,27 +400,82 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanBotPreviewItems(arg0, arg1) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanCommandExchanges(commands) {
+  let intl;
+  let intl2;
+  let intl3;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== commands) {
+    let conjurePlanBotExchanges;
+    commands = commands.commands;
+    if (commands.some(conjurePlanBot.isAppCommand)) {
+      const obj2 = { bot: undefined };
+      const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
+      conjurePlanBot;
+      const merged = Object.assign(commands);
+      const obj3 = { message: intl.string(_modDef3883.J7qggf), reply: intl2.string(_modDef3883.nqYtiy), event: intl3.string(_modDef3883["05lU9W"]) };
+      intl = tmp(1128).intl;
+      intl2 = tmp(1128).intl;
+      intl3 = tmp(1128).intl;
+      conjurePlanBotExchanges = getConjurePlanBotExchanges(obj2, "commands", obj3);
+    } else {
+      conjurePlanBotExchanges = [];
+    }
+    cResult[0] = commands;
+    cResult[1] = conjurePlanBotExchanges;
+    tmp4 = conjurePlanBotExchanges;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (function useConjurePlanCommandExchanges(arg0) {
+  let commands = arg0;
+  const items = [arg0];
+  return react.useMemo(() => {
+    let conjurePlanBotExchanges;
+    let intl;
+    let intl2;
+    let intl3;
+    commands = commands.commands;
+    if (commands.some(conjurePlanBot.isAppCommand)) {
+      const obj = { bot: undefined };
+      const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
+      conjurePlanBot;
+      const merged = Object.assign(tmp);
+      const obj2 = { message: intl.string(_modDef3883.J7qggf), reply: intl2.string(_modDef3883.nqYtiy), event: intl3.string(_modDef3883["05lU9W"]) };
+      intl = tmp2(1128).intl;
+      intl2 = tmp2(1128).intl;
+      intl3 = tmp2(1128).intl;
+      conjurePlanBotExchanges = getConjurePlanBotExchanges(obj, "commands", obj2);
+    } else {
+      conjurePlanBotExchanges = [];
+    }
+    return conjurePlanBotExchanges;
+  }, items);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanBotPreviewItems(arg0, arg1) {
   let closure_0;
   let currentUser;
-  let stringResult;
   let tmp10;
   let tmp13;
   let tmp15;
   let tmp16;
-  let tmp19;
-  let tmp23;
+  let tmp20;
   let tmp24;
-  let tmp25;
-  let tmp30;
-  let tmp34;
+  let tmp26;
+  let tmp27;
+  let tmp31;
   let tmp35;
-  let tmp39;
+  let tmp36;
   let tmp4;
-  let tmp42;
+  let tmp40;
+  let tmp43;
   let tmp5;
   let tmp8;
-  const _require = arg0;
+  _require = arg0;
   const tmp = _require;
   const obj = require("react");
   const cResult = obj.c(36);
@@ -472,417 +524,248 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     tmp13 = cResult[5];
   }
   if (cResult[6] !== application_id) {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+    const fn3 = function y() {
+      const application = ApplicationStore.getApplication(application_id);
+      let iconURL;
+      if (application != null) {
+        iconURL = application.getIconURL(80);
       }
-    }
+      if (iconURL == null) {
+        iconURL = null;
+      }
+      return iconURL;
+    };
     const items3 = [application_id];
     cResult[6] = application_id;
-    cResult[7] = I;
+    cResult[7] = fn3;
     cResult[8] = items3;
     tmp16 = items3;
-    tmp15 = I;
+    tmp15 = fn3;
   } else {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
+    tmp15 = cResult[7];
     tmp16 = cResult[8];
   }
   const tmpResult5 = tmp(504);
   const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp15, tmp16);
+  let name;
   const tmp18 = cResult[9];
   if (stateFromStores1 != null) {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
+    name = stateFromStores1.name;
   }
-  if (tmp18 !== undefined) {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
+  if (tmp18 !== name) {
+    let name1;
     if (stateFromStores1 != null) {
-      class I {
-        constructor() {
-          const application = ApplicationStore.getApplication(application_id);
-          let iconURL;
-          if (application != null) {
-            iconURL = application.getIconURL(80);
-          }
-          if (iconURL == null) {
-            iconURL = null;
-          }
-          return iconURL;
-        }
-      }
+      name1 = stateFromStores1.name;
     }
-    if (stringResult == null) {
-      class I {
-        constructor() {
-          const application = ApplicationStore.getApplication(application_id);
-          let iconURL;
-          if (application != null) {
-            iconURL = application.getIconURL(80);
-          }
-          if (iconURL == null) {
-            iconURL = null;
-          }
-          return iconURL;
-        }
-      }
-      stringResult = obj5.string(application_id(3849).JEYq8M);
+    if (name1 == null) {
+      const intl = tmp(1128).intl;
+      name1 = intl.string(application_id(3883).JEYq8M);
     }
+    let name2;
     if (stateFromStores1 != null) {
-      class I {
-        constructor() {
-          const application = ApplicationStore.getApplication(application_id);
-          let iconURL;
-          if (application != null) {
-            iconURL = application.getIconURL(80);
-          }
-          if (iconURL == null) {
-            iconURL = null;
-          }
-          return iconURL;
-        }
-      }
+      name2 = stateFromStores1.name;
     }
-    cResult[9] = undefined;
-    cResult[10] = stringResult;
-    tmp19 = stringResult;
+    cResult[9] = name2;
+    cResult[10] = name1;
+    tmp20 = name1;
   } else {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
+    tmp20 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
     const items4 = [UserStore];
     cResult[11] = items4;
-    tmp23 = items4;
+    tmp24 = items4;
   } else {
-    class I {
-      constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
-        }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
-      }
-    }
+    tmp24 = cResult[11];
   }
   if (cResult[12] !== application_id) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
     const items5 = [application_id];
     cResult[12] = application_id;
     cResult[13] = items5;
-    cResult[14] = tmp26;
-    tmp25 = tmp26;
-    tmp24 = items5;
+    cResult[14] = N;
+    tmp27 = N;
+    tmp26 = items5;
   } else {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    tmp25 = cResult[14];
+    tmp27 = cResult[14];
   }
   const tmpResult6 = tmp(504);
-  const stateFromStores3 = tmpResult6.useStateFromStores(tmp23, tmp25, tmp24);
+  const stateFromStores3 = tmpResult6.useStateFromStores(tmp24, tmp27, tmp26);
   if (stateFromStores3 != null) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
   if (cResult[15] !== true !== undefined) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    tmp31[1] = true !== undefined;
+    tmp32[1] = true !== undefined;
     cResult[15] = true !== undefined;
-    cResult[16] = tmp31;
-    tmp30 = tmp31;
+    cResult[16] = tmp32;
+    tmp31 = tmp32;
   } else {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
-  const tmp33 = closure_14(c10, tmp19, tmp30);
+  const tmp34 = closure_14(c10, tmp20, tmp31);
   if (true === undefined) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    const stringResult1 = obj7.string(application_id(3849)["9iAOsw"]);
+    const stringResult = obj6.string(application_id(3883)["9iAOsw"]);
     const obj2 = { discriminator: "0003" };
-    cResult[17] = stringResult1;
+    cResult[17] = stringResult;
     cResult[18] = obj2;
-    tmp35 = obj2;
-    tmp34 = stringResult1;
+    tmp36 = obj2;
+    tmp35 = stringResult;
   } else {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    tmp35 = cResult[18];
+    tmp36 = cResult[18];
   }
-  closure_14(c11, tmp34, tmp35);
+  closure_14(c11, tmp35, tmp36);
   if (cResult[19] !== stateFromStores) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    const name = obj9.getName(stateFromStores);
-    if (name == null) {
-      class I {
+    const name3 = obj8.getName(stateFromStores);
+    if (name3 == null) {
+      class N {
         constructor() {
-          const application = ApplicationStore.getApplication(application_id);
-          let iconURL;
-          if (application != null) {
-            iconURL = application.getIconURL(80);
+          let user;
+          if (null != application_id) {
+            user = UserStore.getUser(tmp);
           }
-          if (iconURL == null) {
-            iconURL = null;
-          }
-          return iconURL;
+          return user;
         }
       }
     }
     cResult[19] = stateFromStores;
-    cResult[20] = name;
-    tmp39 = name;
+    cResult[20] = name3;
+    tmp40 = name3;
   } else {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
   if (cResult[21] !== (null != stateFromStores)) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
-    tmp43[0] = null != stateFromStores;
+    tmp44[0] = null != stateFromStores;
     cResult[21] = null != stateFromStores;
-    cResult[22] = tmp43;
-    tmp42 = tmp43;
+    cResult[22] = tmp44;
+    tmp43 = tmp44;
   } else {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
-  closure_14(c12, tmp39, tmp42);
-  if (cResult[23] === tmp33) {
-    class I {
+  closure_14(c12, tmp40, tmp43);
+  if (cResult[23] === tmp34) {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
   if (null != stateFromStores) {
-    class I {
+    class N {
       constructor() {
-        const application = ApplicationStore.getApplication(application_id);
-        let iconURL;
-        if (application != null) {
-          iconURL = application.getIconURL(80);
+        let user;
+        if (null != application_id) {
+          user = UserStore.getUser(tmp);
         }
-        if (iconURL == null) {
-          iconURL = null;
-        }
-        return iconURL;
+        return user;
       }
     }
   }
@@ -893,7 +776,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   let items6;
   let obj6;
   let stateFromStores;
-  const _require = arg0;
+  _require = arg0;
   importDefault = arg1;
   const tmp = _require;
   let obj = require("get initialized");
@@ -927,7 +810,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   }
   if (name == null) {
     let intl = tmp(tmp2[15]).intl;
-    name = intl.string(require("module_3849").JEYq8M);
+    name = intl.string(require("module_3883").JEYq8M);
   }
   const items4 = [tmp3];
   const items5 = [application_id];
@@ -949,7 +832,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[15]).intl;
-  const tmp13Result = closure_14(c11, intl2.string(require("module_3849")["9iAOsw"]), { discriminator: "0003" });
+  const tmp13Result = closure_14(c11, intl2.string(require("module_3883")["9iAOsw"]), { discriminator: "0003" });
   let closure_5 = tmp13Result;
   const tmpResult4 = tmp(stateFromStores[17]);
   let str = tmpResult4.getName(stateFromStores);
@@ -969,7 +852,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
           if (null != obj6) {
             if (null != closure_5) {
               const obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              const obj2 = { targetMessage: intl.string(_modDef3849["y+QYes"]), memberMessage: intl2.string(_modDef3849.BUTRDc) };
+              const obj2 = { targetMessage: intl.string(_modDef3883["y+QYes"]), memberMessage: intl2.string(_modDef3883.BUTRDc) };
               intl = intl4.intl;
               intl2 = intl4.intl;
               buildPreviewItems(closure_1, obj, obj2);
@@ -996,4 +879,5 @@ const result = size.fileFinishedImporting("modules/conjure/plan/useConjurePlanBo
 
 export const CONJURE_PLAN_BOT_PREVIEW_CHANNEL = guildTextChannelRecord;
 export const useConjurePlanBotExchanges = tmp4;
-export const useConjurePlanBotPreviewItems = tmp5;
+export const useConjurePlanCommandExchanges = tmp5;
+export const useConjurePlanBotPreviewItems = tmp6;

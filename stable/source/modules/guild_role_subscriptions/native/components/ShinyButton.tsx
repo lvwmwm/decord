@@ -1,18 +1,18 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9764
+// Function ID: 9765
 // Name: ShinyButton
-// Dependencies: [109, 19, 21, 5092, 587, 558, 576, 1200, 9462, 5380, 2]
+// Dependencies: [109, 19, 21, 5191, 587, 558, 576, 1202, 9765, 5480, 2]
 
-// Module 9461 (ShinyButton)
+// Module 9764 (ShinyButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import BaseTextButton2 from "BaseTextButton" /* 5380 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9462 */;
+import native from "native" /* 1202 */;
+import BaseTextButton2 from "BaseTextButton" /* 5480 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9765 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
               }
             }
           }
-          const BaseTextButton = tmp(5380).BaseTextButton;
+          const BaseTextButton = tmp(5480).BaseTextButton;
           const merged = Object.assign(tmp6);
           const tmp24 = <BaseTextButton onPress={tmp12} pillStyle={tmp14} loading={tmp5} disabled={tmp4} icon={tmp15} />;
           cResult[16] = tmp4;
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
     }
     let tmp17Result;
     if (!tmp5) {
-      const Icon = tmp(1200).Icon;
+      const Icon = tmp(1202).Icon;
       const items = [tmp13.sparkleIcon, tmp4 && tmp13.disabled];
       tmp17Result = <Icon size={native.Icon.Sizes.REFRESH_SMALL_16} source={AssetRegistryDefault} style={items} />;
     }
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
   const BaseTextButton = BaseTextButton2.BaseTextButton;
   if (!loading) {
     const obj2 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, style: items1 };
-    const Icon = tmp4(1200).Icon;
+    const Icon = tmp4(1202).Icon;
     items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;

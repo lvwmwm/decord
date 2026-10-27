@@ -1,52 +1,52 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 14617
+// Function ID: 14618
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7144, 2087, 4774, 4775, 7132, 13838, 1392, 1085, 7152, 5071, 21, 5092, 5906, 5969, 587, 558, 576, 13839, 1126, 5088, 5377, 4769, 13843, 13844, 13845, 13846, 13847, 13848, 9031, 4818, 504, 13849, 13633, 5031, 1200, 1265, 13671, 13672, 13850, 6154, 6180, 4969, 6335, 1383, 7126, 10049, 5300, 13851, 2000, 6265, 5391, 7128, 7127, 4784, 5934, 7130, 10067, 6852, 6960, 6170, 5396, 10165, 10056, 1503, 7137, 13684, 6879, 10057, 5724, 10498, 13647, 7121, 9393, 4781, 10164, 2]
+// Dependencies: [5, 32, 19, 17, 7415, 2090, 4869, 4870, 7403, 14618, 1394, 1087, 7423, 5171, 21, 5191, 6162, 6225, 587, 558, 576, 14619, 1128, 5187, 5477, 4864, 14623, 14624, 14625, 14626, 14627, 14628, 9327, 4913, 504, 14629, 14413, 5127, 1202, 1267, 14451, 14452, 14630, 5128, 6433, 6457, 5065, 6612, 1385, 7397, 10352, 5400, 14631, 2002, 6542, 5491, 7399, 7398, 4879, 6190, 7401, 10370, 7130, 7234, 6447, 5496, 10467, 10359, 1505, 7408, 14464, 7155, 10360, 5980, 10821, 14427, 7392, 9697, 4876, 10466, 2]
 
-// Module 13837 (PremiumPlanSelect)
+// Module 14617 (PremiumPlanSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import PremiumSubscription from "PremiumSubscription" /* 4781 */;
-import PaymentConstants from "PaymentConstants" /* 5071 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
-import TextStylesDefault from "TextStyles" /* 5906 */;
-import LegacyTokens from "LegacyTokens" /* 5969 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6960 */;
-import ProductIds from "ProductIds" /* 7127 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9031 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10049 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10165 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13671 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13672 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13839 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13843 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13844 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13845 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13846 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13847 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13848 */;
+import intl5 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import PremiumSubscription from "PremiumSubscription" /* 4876 */;
+import PaymentConstants from "PaymentConstants" /* 5171 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5980 */;
+import TextStylesDefault from "TextStyles" /* 6162 */;
+import LegacyTokens from "LegacyTokens" /* 6225 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7234 */;
+import ProductIds from "ProductIds" /* 7398 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7415 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9327 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10352 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10467 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 14451 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 14452 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 14619 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14623 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14624 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14625 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14626 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14627 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4774 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import IAPStore from "IAPStore" /* 7132 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 13838 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import Constants from "Constants" /* 1085 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4869 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import IAPStore from "IAPStore" /* 7403 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14618 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import Constants from "Constants" /* 1087 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,11 +71,10 @@ let closure_25;
 let closure_26;
 let closure_27;
 let closure_28;
-let closure_29;
+let closure_30;
 let closure_31;
 let closure_32;
-let closure_33;
-let metroImportAll;
+let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -86,8 +85,8 @@ let obj6;
 let obj7;
 let obj8;
 let tmp;
-const native = tmp(1200);
-const PremiumBundledPlansUtils = tmp(7126);
+const native = tmp(1202);
+const PremiumBundledPlansUtils = tmp(7397);
 function getPlanDescription(premiumTier) {
   let formatToPlainStringResult;
   let flag = arg1;
@@ -106,13 +105,13 @@ function getPlanDescription(premiumTier) {
     const formatToPlainString = intl2.formatToPlainString;
     if (flag) {
       const obj4 = { numSubscriptions: premiumTier.numPremiumGuild };
-      formatToPlainStringResult = formatToPlainString(tmp7(1126).t.gDsyB9, obj4);
+      formatToPlainStringResult = formatToPlainString(tmp7(1128).t.gDsyB9, obj4);
     } else {
       let u6dBsN;
-      if (premiumTier.premiumTier === closure_20.TIER_1) {
-        u6dBsN = tmp7(1126).t.sexoHq;
+      if (premiumTier.premiumTier === closure_19.TIER_1) {
+        u6dBsN = tmp7(1128).t.sexoHq;
       } else {
-        u6dBsN = tmp7(1126).t.u6dBsN;
+        u6dBsN = tmp7(1128).t.u6dBsN;
       }
       const obj = { num: premiumTier.numPremiumGuild };
       formatToPlainStringResult = formatToPlainString(u6dBsN, obj);
@@ -124,7 +123,6 @@ function PlanSection(label) {
   let analyticsLoadId;
   let closure_6;
   let closure_7;
-  let closure_8;
   let isBoostPurchaseFlow;
   let plans;
   let recommendedBoostCount;
@@ -140,12 +138,12 @@ function PlanSection(label) {
   if (flag === undefined) {
     flag = false;
   }
-  ({ recommendedBoostCount: dependencyMap, isBoostPurchaseFlow: _asyncToGenerator, purchase: _slicedToArray, analyticsLoadId: react, trackNewPaymentFlow: closure_6, trackPaymentFlowStep: closure_7, subscription: closure_8, currentPaymentGatewayPlanId: useNativeCheckoutStore, shouldRemoveYearlyUpsell: GuildStore } = label);
+  ({ recommendedBoostCount: dependencyMap, isBoostPurchaseFlow: _asyncToGenerator, purchase: _slicedToArray, analyticsLoadId: react, trackNewPaymentFlow: closure_6, trackPaymentFlowStep: closure_7, subscription: useNativeCheckoutStore, currentPaymentGatewayPlanId: GuildStore, shouldRemoveYearlyUpsell: SubscriptionPlanStore } = label);
   let c12;
   let tmp = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   let closure_11 = tmp;
   let tmp2 = shouldShowModernBoostFlow;
-  let obj = shouldShowModernBoostFlow(1383);
+  let obj = shouldShowModernBoostFlow(1385);
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     let tmp5 = null;
@@ -156,7 +154,7 @@ function PlanSection(label) {
     let product;
     let obj = {
       plan,
-      subscription,
+      subscription: useNativeCheckoutStore,
       shouldShowModernBoostFlow,
       showBoostOnlyLabels: flag,
       recommendedBoostCount: dependencyMap,
@@ -167,7 +165,7 @@ function PlanSection(label) {
         let closure_0 = productId;
         let tmp = shouldShowModernBoostFlow;
         let tmp2 = recommendedBoostCount;
-        let obj = shouldShowModernBoostFlow(recommendedBoostCount[48]);
+        let obj = shouldShowModernBoostFlow(recommendedBoostCount[49]);
         const toggledIntervalProduct = obj.getToggledIntervalProduct(productId);
         let tmp5 = null;
         const tmp4 = closure_12;
@@ -178,7 +176,7 @@ function PlanSection(label) {
             const tmp6 = closure_11;
             if (closure_11 != null) {
               const getAvailablePlanForItems = tmp6.getAvailablePlanForItems;
-              const tmpResult = tmp(tmp2[48]);
+              const tmpResult = tmp(tmp2[49]);
               availablePlanForItems = getAvailablePlanForItems(tmpResult.getSubscriptionItemsForProduct(toggledIntervalProduct));
             }
             if (availablePlanForItems == null) {
@@ -196,22 +194,22 @@ function PlanSection(label) {
             tmp8 = null != product.getProduct(toggledIntervalProduct);
           }
         }
-        const tmpResult3 = tmp(tmp2[48]);
+        const tmpResult3 = tmp(tmp2[49]);
         const interval = tmpResult3.getPremiumBundledItemsFromProductId(productId).interval;
         const YEAR = constants.YEAR;
-        tmp(tmp2[48]);
+        tmp(tmp2[49]);
         if (null != toggledIntervalProduct) {
           if (tmp8) {
             const tmp12 = closure_10;
             if (!tmp12) {
               if (interval !== YEAR) {
                 if (!tmp11) {
-                  let obj2 = { fromStep: tmp(tmp2[49]).PaymentFlowStep.PLAN_SELECT, toStep: tmp(tmp2[49]).PaymentFlowStep.YEARLY_UPSELL, productId };
+                  let obj2 = { fromStep: tmp(tmp2[50]).PaymentFlowStep.PLAN_SELECT, toStep: tmp(tmp2[50]).PaymentFlowStep.YEARLY_UPSELL, productId };
                   closure_7(obj2);
-                  let obj5 = flag(tmp2[50]);
+                  let obj5 = flag(tmp2[51]);
                   let obj3 = {
                     importer() {
-                                const promise = shouldShowModernBoostFlow(dependencyMap[52])(dependencyMap[51], dependencyMap.paths);
+                                const promise = shouldShowModernBoostFlow(dependencyMap[53])(dependencyMap[52], dependencyMap.paths);
                                 return promise.then((result) => {
                                   let closure_0 = result.default;
                                   return (arg0) => {
@@ -244,7 +242,7 @@ function PlanSection(label) {
                                                 const obj3 = { value, done: true };
                                                 return obj3;
                                               } else {
-                                                const obj4 = { fromStep: productId(availablePlanForItems[49]).PaymentFlowStep.YEARLY_UPSELL, toStep: productId(availablePlanForItems[49]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
+                                                const obj4 = { fromStep: productId(availablePlanForItems[50]).PaymentFlowStep.YEARLY_UPSELL, toStep: productId(availablePlanForItems[50]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
                                                 closure_2_7(obj4);
                                                 c1 = 1;
                                                 productId = 1;
@@ -293,7 +291,7 @@ function PlanSection(label) {
                                                 const obj4 = { value, done: true };
                                                 return obj4;
                                               } else {
-                                                const obj2 = v3(availablePlanForItems[49]);
+                                                const obj2 = v3(availablePlanForItems[50]);
                                                 const newAnalyticsLoadId = obj2.getNewAnalyticsLoadId();
                                                 const obj5 = { newFlowAnalyticsLoadId: newAnalyticsLoadId, productId: productId2 };
                                                 closure_2_6(obj5);
@@ -324,7 +322,7 @@ function PlanSection(label) {
                                     const merged = Object.assign(arg0);
                                     let obj2 = availablePlanForItems;
                                     priceString = undefined;
-                                    const tmp = closure_4_31;
+                                    const tmp = closure_4_30;
                                     if (availablePlanForItems != null) {
                                       priceString = obj2.getPriceString();
                                     }
@@ -344,31 +342,31 @@ function PlanSection(label) {
             }
           }
         }
-        let obj4 = { fromStep: tmp(tmp2[49]).PaymentFlowStep.PLAN_SELECT, toStep: tmp(tmp2[49]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
+        let obj4 = { fromStep: tmp(tmp2[50]).PaymentFlowStep.PLAN_SELECT, toStep: tmp(tmp2[50]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
         closure_7(obj4);
         return closure_4(productId, closure_5);
       }
     };
-    return closure_31(closure_39, obj, plan.productId);
+    return closure_30(closure_38, obj, plan.productId);
   });
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: label, hasIcons: true, children: mapped };
-    tmp7Result = tmp7(tmp2(6265).TableRowGroup, obj2);
+    tmp7Result = tmp7(tmp2(6542).TableRowGroup, obj2);
   } else {
-    let tmp8 = closure_7;
+    let tmp8 = closure_6;
     let obj3 = { children: mapped };
-    tmp7Result = tmp7(closure_7, obj3);
+    tmp7Result = tmp7(closure_6, obj3);
   }
   return tmp7Result;
 }
 function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdFromSubscription2) {
   let toggledIntervalProduct;
   if (null != productIdFromSubscription) {
-    const obj3 = toggledIntervalProduct(7126);
+    const obj3 = toggledIntervalProduct(7397);
     if (obj3.isValidBundleProductId(productIdFromSubscription)) {
       let tmp2 = productIdFromSubscription2;
       if (null == productIdFromSubscription2) {
-        const tmp8Result = toggledIntervalProduct(7126);
+        const tmp8Result = toggledIntervalProduct(7397);
         toggledIntervalProduct = tmp8Result.getToggledIntervalProduct(productIdFromSubscription);
       } else {
         toggledIntervalProduct = productIdFromSubscription;
@@ -389,7 +387,7 @@ function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdF
             const tmp7 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp7Result = tmp7(7126);
+              const tmp7Result = tmp7(7397);
               result = interval === tmp7Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp5 = result;
@@ -399,7 +397,7 @@ function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdF
           items = [];
           let tmp5 = items;
           const arraySpreadResult = HermesBuiltin.arraySpread(items, plans, 0);
-          const tmp8Result2 = toggledIntervalProduct(7126);
+          const tmp8Result2 = toggledIntervalProduct(7397);
           items[arraySpreadResult] = tmp8Result2.getPremiumBundledItemsFromProductId(toggledIntervalProduct);
           tmp4 = items;
         }
@@ -410,14 +408,14 @@ function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdF
   return plans;
 }
 let _slicedToArray = _slicedToArray_mod;
-({ Image: metroRequire, View: metroImportDefault, ScrollView: metroImportAll } = react_native);
+({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
-({ setIsPurchasing: closure_14, usePremiumPlanSelectStore: closure_15 } = PremiumPlanSelectStore);
-({ GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_16, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_17, PRICE_PLACEHOLDER: closure_18, PremiumSubscriptionSKUs: closure_19, PremiumTypes: closure_20, SubscriptionIntervalTypes: closure_21, SubscriptionPlans: closure_22 } = PremiumConstants);
-({ AnalyticEvents: closure_23, AnalyticsObjects: closure_24, AnalyticsObjectTypes: closure_25, Fonts, HorizontalGradient: closure_26, PaymentGateways: closure_27, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
-({ getPremiumGradientColor: closure_28, Gradients: closure_29 } = ColorConstants);
+({ setIsPurchasing: map1, usePremiumPlanSelectStore: closure_14 } = PremiumPlanSelectStore);
+({ GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, PRICE_PLACEHOLDER: closure_17, PremiumSubscriptionSKUs: closure_18, PremiumTypes: closure_19, SubscriptionIntervalTypes: closure_20, SubscriptionPlans: closure_21 } = PremiumConstants);
+({ AnalyticEvents: closure_22, AnalyticsObjects: closure_23, AnalyticsObjectTypes: closure_24, Fonts, HorizontalGradient: closure_25, PaymentGateways: closure_26, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
+({ getPremiumGradientColor: closure_27, Gradients: closure_28 } = ColorConstants);
 const ItemPurchaseType = PaymentConstants.ItemPurchaseType;
-({ jsx: closure_31, jsxs: closure_32, Fragment: closure_33 } = Fragment);
+({ jsx: closure_30, jsxs: closure_31, Fragment: closure_32 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { header: obj2, row: obj3, rowDisabled: { opacity: 0.5 }, imgWumpusNitro: { height: 40, width: 40 }, imgBoost: { height: 40, width: 40 }, imgWumpusNitroBoost: { width: 32, height: 32 }, imgWumpusNitroClassic: { width: 40, height: 40 }, imgWumpusNitroClassicBoost: { width: 32, height: 32 }, imgWumpusNitroTier0: { width: 40, height: 40 }, rowText: obj4, rowPlanDescription: { marginLeft: 12, fontFamily: Fonts.PRIMARY_SEMIBOLD, lineHeight: 20 }, rowPlanDescriptionSubtext: { fontSize: 12, marginLeft: 5, fontFamily: Fonts.PRIMARY_MEDIUM, fontWeight: "400" }, rowPrice: { marginLeft: "auto" }, purchasingSpinner: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" }, container: { marginHorizontal: 14.5, paddingBottom: 10 }, currentPlanGradient: obj5, currentPlanRow: { marginTop: 0.5, marginRight: 0.5, marginLeft: 0.5, marginBottom: 0.5 }, loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" }, offPlatformSubscriptionMessage: { lineHeight: 20, marginTop: 40, margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, premiumHeaderLabel: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, marginTop: 8 }, boostContainer: obj6, boostRowIcon: { width: 32, height: 32 }, nitroBanner: obj7, nitroBannerText: { textAlign: "center" }, recommendedText: obj8 };
 obj2 = { marginTop: 16, color: LegacyTokens.DARK_WHITE_500_LIGHT_BLACK_500 };
@@ -429,9 +427,9 @@ obj5 = { marginTop: 20, borderRadius: nativeDefault.radii.sm };
 obj6 = { rowGap: nativeDefault.space.PX_24 };
 obj7 = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj8 = { color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-let closure_34 = createStyles(obj);
+let closure_33 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostPurchaseNitroBanner() {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostPurchaseNitroBanner() {
   let Text;
   let first;
   let intl2;
@@ -444,10 +442,10 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   let tmp8;
   const obj = react2;
   const cResult = obj.c(13);
-  const tmp4 = closure_34();
+  const tmp4 = closure_33();
   const nitroBanner = tmp4.nitroBanner;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_31(TreasureChestBannerSpotIllustration.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false });
+    const tmp7 = closure_30(TreasureChestBannerSpotIllustration.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false });
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -455,13 +453,13 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   }
   const nitroBannerText = tmp4.nitroBannerText;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const format = intl.format;
-    const obj2 = { discount: closure_31(Text, obj3, "discount") };
-    const jbrHpT = tmp(1126).t.jbrHpT;
+    const obj2 = { discount: closure_30(Text, obj3, "discount") };
+    const jbrHpT = tmp(1128).t.jbrHpT;
     obj3 = { variant: "text-md/semibold", color: "text-feedback-positive", children: intl2.format(intl5.t.RmVM19, obj4) };
-    Text = tmp(5088).Text;
-    intl2 = tmp(1126).intl;
+    Text = tmp(5187).Text;
+    intl2 = tmp(1128).intl;
     obj4 = { percentageOff };
     const formatResult = format(jbrHpT, obj2);
     cResult[1] = formatResult;
@@ -471,7 +469,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   }
   if (cResult[2] !== tmp4.nitroBannerText) {
     const obj5 = { variant: "text-md/semibold", color: "text-default", style: nitroBannerText, children: tmp8 };
-    const tmp14 = closure_31(Text_Text.Text, obj5);
+    const tmp14 = closure_30(Text_Text.Text, obj5);
     cResult[2] = tmp4.nitroBannerText;
     cResult[3] = tmp14;
     tmp12 = tmp14;
@@ -480,7 +478,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   }
   const nitroBannerText2 = tmp4.nitroBannerText;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const obj6 = { boostCount };
     const formatResult1 = intl3.format(intl5.t.HYpETY, obj6);
     cResult[4] = formatResult1;
@@ -490,7 +488,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   }
   if (cResult[5] !== tmp4.nitroBannerText) {
     const obj7 = { variant: "text-sm/medium", color: "text-muted", style: nitroBannerText2, children: tmp15 };
-    const tmp20 = closure_31(Text_Text.Text, obj7);
+    const tmp20 = closure_30(Text_Text.Text, obj7);
     cResult[5] = tmp4.nitroBannerText;
     cResult[6] = tmp20;
     tmp18 = tmp20;
@@ -510,18 +508,18 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
       return tmp23;
     }
     const obj8 = { align: "center", spacing: nativeDefault.space.PX_12, style: nitroBanner, children: items };
-    const Stack2 = tmp(5377).Stack;
+    const Stack2 = tmp(5477).Stack;
     items = [first, tmp21];
-    const tmp26 = __initData2(Stack2, obj8);
+    const tmp26 = __initData(Stack2, obj8);
     cResult[10] = tmp4.nitroBanner;
     cResult[11] = tmp21;
     cResult[12] = tmp26;
     tmp23 = tmp26;
   }
   const obj9 = { align: "center", spacing: nativeDefault.space.PX_4, children: items1 };
-  const Stack = tmp(5377).Stack;
+  const Stack = tmp(5477).Stack;
   items1 = [tmp12, tmp18];
-  const tmp22 = __initData2(Stack, obj9);
+  const tmp22 = __initData(Stack, obj9);
   cResult[7] = tmp12;
   cResult[8] = tmp18;
   cResult[9] = tmp22;
@@ -537,34 +535,34 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
   let obj5;
   let obj6;
   let obj8;
-  const tmp = closure_34();
+  const tmp = closure_33();
   const obj = { align: "center", spacing: nativeDefault.space.PX_12, style: tmp.nitroBanner, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [closure_31(TreasureChestBannerSpotIllustration.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
+  items = [closure_30(TreasureChestBannerSpotIllustration.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
   const obj2 = { align: "center", spacing: nativeDefault.space.PX_4, children: items1 };
   const Stack2 = Stack_Stack.Stack;
   const obj3 = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText, children: format(jbrHpT, obj4) };
   const Text = Text_Text.Text;
   const intl = intl5.intl;
   format = intl.format;
-  obj4 = { discount: closure_31(Text2, obj5, "discount") };
+  obj4 = { discount: closure_30(Text2, obj5, "discount") };
   jbrHpT = intl5.t.jbrHpT;
   obj5 = { variant: "text-md/semibold", color: "text-feedback-positive", children: intl2.format(intl5.t.RmVM19, obj6) };
   Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   obj6 = { percentageOff };
-  items1 = [closure_31(Text, obj3), ];
+  items1 = [closure_30(Text, obj3), ];
   const obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.nitroBannerText, children: intl3.format(intl5.t.HYpETY, obj8) };
   const Text3 = Text_Text.Text;
   intl3 = intl5.intl;
   obj8 = { boostCount };
-  items1[1] = closure_31(Text3, obj7);
-  items[1] = __initData2(Stack2, obj2);
-  return __initData2(Stack, obj);
+  items1[1] = closure_30(Text3, obj7);
+  items[1] = __initData(Stack2, obj2);
+  return __initData(Stack, obj);
 });
-let closure_37 = { [AssetRegistryDefault4]: "imgWumpusNitro", [AssetRegistryDefault6]: "imgWumpusNitroBoost", [AssetRegistryDefault3]: "imgWumpusNitroClassic", [AssetRegistryDefault5]: "imgWumpusNitroClassicBoost", [AssetRegistryDefault2]: "imgWumpusNitroTier0", [AssetRegistryDefault]: "imgBoost" };
+let closure_36 = { [AssetRegistryDefault4]: "imgWumpusNitro", [AssetRegistryDefault6]: "imgWumpusNitroBoost", [AssetRegistryDefault3]: "imgWumpusNitroClassic", [AssetRegistryDefault5]: "imgWumpusNitroClassicBoost", [AssetRegistryDefault2]: "imgWumpusNitroTier0", [AssetRegistryDefault]: "imgBoost" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostDeltaPriceTrailing(arg0) {
+let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostDeltaPriceTrailing(arg0) {
   let AbOLNu;
   let first;
   let interval;
@@ -575,8 +573,8 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
   ({ price, interval } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const NitroWheelIcon = tmp(9031).NitroWheelIcon;
-    const tmp7 = closure_31(NitroWheelIcon, obj2);
+    const NitroWheelIcon = tmp(9327).NitroWheelIcon;
+    const tmp7 = closure_30(NitroWheelIcon, obj2);
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -590,11 +588,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
     }
     if (cResult[6] !== tmp8) {
       const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_4, children: items };
-      const Stack = tmp(5377).Stack;
+      const Stack = tmp(5477).Stack;
       items = [first, ];
       const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp8 };
-      items[1] = closure_31(Text_Text.Text, obj4);
-      const tmp18 = __initData2(Stack, obj3);
+      items[1] = closure_30(Text_Text.Text, obj4);
+      const tmp18 = __initData(Stack, obj3);
       cResult[6] = tmp8;
       cResult[7] = tmp18;
       tmp14 = tmp18;
@@ -605,19 +603,19 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
   }
   if (cResult[4] !== price) {
     const obj5 = { variant: "text-sm/semibold", color: "text-feedback-positive", children: price };
-    const tmp11 = closure_31(Text_Text.Text, obj5, "price");
+    const tmp11 = closure_30(Text_Text.Text, obj5, "price");
     cResult[4] = price;
     cResult[5] = tmp11;
     tmp9 = tmp11;
   } else {
     tmp9 = cResult[5];
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const format = intl.format;
   if (interval === constants.MONTH) {
-    AbOLNu = tmp(1126).t.AbOLNu;
+    AbOLNu = tmp(1128).t.AbOLNu;
   } else {
-    AbOLNu = tmp(1126).t["rS8FA+"];
+    AbOLNu = tmp(1128).t["rS8FA+"];
   }
   const formatResult = format(AbOLNu, { price: tmp9 });
   cResult[1] = interval;
@@ -634,23 +632,23 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
   const Stack = Stack_Stack.Stack;
   const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
   const NitroWheelIcon = NitroWheelIcon2.NitroWheelIcon;
-  items = [closure_31(NitroWheelIcon, obj2), ];
+  items = [closure_30(NitroWheelIcon, obj2), ];
   const Text = Text_Text.Text;
   const intl = intl5.intl;
   const format = intl.format;
-  const tmp = __initData2;
+  const tmp = __initData;
   if (interval === constants.MONTH) {
-    AbOLNu = tmp2(1126).t.AbOLNu;
+    AbOLNu = tmp2(1128).t.AbOLNu;
   } else {
-    AbOLNu = tmp2(1126).t["rS8FA+"];
+    AbOLNu = tmp2(1128).t["rS8FA+"];
   }
   const obj3 = { variant: "text-sm/medium", color: "text-muted", children: format(AbOLNu, obj4) };
-  obj4 = { price: closure_31(Text_Text.Text, { variant: "text-sm/semibold", color: "text-feedback-positive", children: price }, "price") };
-  items[1] = closure_31(Text, obj3);
+  obj4 = { price: closure_30(Text_Text.Text, { variant: "text-sm/semibold", color: "text-feedback-positive", children: price }, "price") };
+  items[1] = closure_30(Text, obj3);
   return tmp(Stack, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRow(plan) {
+let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRow(plan) {
   let analyticsLoadId;
   let closure_4;
   let disabled;
@@ -686,7 +684,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     tmp7 = recommendedBoostCount;
   }
   _slicedToArray = tmp8;
-  const tmp9 = closure_34();
+  const tmp9 = closure_33();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function n(isPurchasing) {
       return isPurchasing.isPurchasing;
@@ -696,19 +694,19 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   } else {
     first = cResult[0];
   }
-  closure_15(first);
-  const tmp11 = closure_15;
+  closure_14(first);
+  const tmp11 = closure_14;
   if (cResult[1] !== plan.productId) {
-    class U {
+    class G {
       constructor(purchasingProductId) {
         return purchasingProductId.purchasingProductId === plan.productId;
       }
     }
     cResult[1] = plan.productId;
-    cResult[2] = U;
-    tmp13 = U;
+    cResult[2] = G;
+    tmp13 = G;
   } else {
-    class U {
+    class G {
       constructor(purchasingProductId) {
         return purchasingProductId.purchasingProductId === plan.productId;
       }
@@ -719,7 +717,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   const tmpResult = tmp(tmp2[33]);
   const token = tmpResult.useToken(purchase(tmp2[18]).colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
+    class G {
       constructor(purchasingProductId) {
         return purchasingProductId.purchasingProductId === plan.productId;
       }
@@ -728,24 +726,24 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     cResult[3] = items;
     tmp17 = items;
   } else {
-    class U {
+    class G {
       constructor(purchasingProductId) {
         return purchasingProductId.purchasingProductId === plan.productId;
       }
     }
   }
   if (cResult[4] !== plan.productId) {
-    class X {
+    class V {
       constructor() {
         items = [IAPStore.getProduct(plan.productId), IAPStore.isBusy()];
         return items;
       }
     }
     cResult[4] = plan.productId;
-    cResult[5] = X;
-    tmp18 = X;
+    cResult[5] = V;
+    tmp18 = V;
   } else {
-    class X {
+    class V {
       constructor() {
         items = [IAPStore.getProduct(plan.productId), IAPStore.isBusy()];
         return items;
@@ -755,15 +753,15 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   const tmpResult4 = tmp(tmp2[34]);
   [first1] = tmpResult4.useStateFromStoresArray(tmp17, tmp18);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
     }
-    cResult[6] = Q;
-    tmp21 = Q;
+    cResult[6] = Z;
+    tmp21 = Z;
   } else {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
@@ -774,24 +772,24 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   const premiumTier2DeltaPriceString = tmpResult5.usePremiumTier2DeltaPriceString(plan, subscription, first1, tmp6);
   tmp(tmp2[36]);
   if (premiumTier2DeltaPriceString == null) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
     }
   }
   if (premiumTier2DeltaPriceString == null) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
     }
   }
-  let tmp28 = plan.premiumTier === closure_20.TIER_2;
+  let tmp28 = plan.premiumTier === closure_19.TIER_2;
   tmp15(tmp2[37])();
-  const tmp27 = closure_20;
+  const tmp27 = closure_19;
   if (tmp28) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
@@ -799,19 +797,19 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     tmp28 = 0 === plan.numPremiumGuild;
   }
   if (cResult[7] === tmp28) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
     }
     if (cResult[10] !== plan) {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
       }
       if (!tmp32) {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
@@ -820,14 +818,14 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       cResult[10] = plan;
       cResult[11] = tmp32;
     } else {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
       }
     }
     if (cResult[12] !== plan) {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
@@ -835,27 +833,27 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       cResult[12] = plan;
       cResult[13] = tmp34;
     } else {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
       }
     }
     if (cResult[14] === premiumTier2DeltaPriceString) {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
       }
       if (cResult[17] !== tmp28) {
         let formatToPlainStringResult;
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
         }
         if (tmp28) {
-          class Q {
+          class Z {
             constructor(isPatchOrderLoading) {
               return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
             }
@@ -866,7 +864,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
         cResult[17] = tmp28;
         cResult[18] = formatToPlainStringResult;
       } else {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
@@ -874,13 +872,13 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       }
       if (cResult[19] !== subscription) {
         let premiumTypeFromSubscription;
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
         }
         if (null != subscription) {
-          class Q {
+          class Z {
             constructor(isPatchOrderLoading) {
               return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
             }
@@ -890,7 +888,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
         cResult[19] = subscription;
         cResult[20] = premiumTypeFromSubscription;
       } else {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
@@ -898,21 +896,21 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       }
       premiumTypeFromSubscription = tmp42;
       if (!(undefined !== disabled && disabled)) {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
         }
       }
       if (!(undefined !== disabled && disabled)) {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
         }
       }
       if (!(undefined !== disabled && disabled)) {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
@@ -921,7 +919,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       let closure_6 = tmp44;
       const is_recommended = tmp45;
       if (cResult[21] === analyticsLoadId) {
-        class Q {
+        class Z {
           constructor(isPatchOrderLoading) {
             return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
           }
@@ -938,8 +936,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
             obj.track(constants.BOOST_PLAN_ROW_SELECTED, obj2);
           }
           if (null != subscription) {
-            if (premiumTypeFromSubscription === closure_20.TIER_2) {
-              if (plan.premiumTier === closure_20.TIER_0) {
+            if (premiumTypeFromSubscription === closure_19.TIER_2) {
+              if (plan.premiumTier === closure_19.TIER_0) {
                 const obj3 = {
                   subscription: tmp10,
                   mode: PremiumPlanWhatYouLoseActionSheet.WhatYouLoseMode.DOWNGRADE,
@@ -970,13 +968,13 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     const intl2 = tmp(tmp2[22]).intl;
     const formatToPlainString = intl2.formatToPlainString;
     if (plan.interval === constants.MONTH) {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
       }
     } else {
-      class Q {
+      class Z {
         constructor(isPatchOrderLoading) {
           return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
         }
@@ -990,7 +988,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   }
   let tmp29 = null;
   if (tmp28) {
-    class Q {
+    class Z {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
@@ -1001,7 +999,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     const LegacyText = tmp(tmp2[38]).LegacyText;
     intl = tmp(tmp2[22]).intl;
     obj5 = { num };
-    tmp29 = closure_31(LegacyText, obj4);
+    tmp29 = closure_30(LegacyText, obj4);
   }
   cResult[7] = tmp28;
   cResult[8] = tmp9;
@@ -1011,14 +1009,15 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   let formatToPlainStringResult1;
   let intl;
   let intl4;
+  let is_recommended;
   let items1;
   let items3;
   let items4;
   let items5;
   let obj6;
   let subscription;
-  let tmp39Result2;
-  let tmp45;
+  let tmp38Result2;
+  let tmp43;
   let tmp7Result;
   plan = plan.plan;
   ({ purchase: importDefault, subscription } = plan);
@@ -1054,10 +1053,10 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   const analyticsLoadId = plan.analyticsLoadId;
   let premiumTypeFromSubscription;
   flag = undefined;
-  let is_recommended;
-  let tmp2 = closure_34();
-  const tmp3 = closure_15((isPurchasing) => isPurchasing.isPurchasing);
-  const tmp4 = closure_15((purchasingProductId) => purchasingProductId.purchasingProductId === plan.productId);
+  useNativeCheckoutStore = undefined;
+  let tmp2 = closure_33();
+  const tmp3 = closure_14((isPurchasing) => isPurchasing.isPurchasing);
+  const tmp4 = closure_14((purchasingProductId) => purchasingProductId.purchasingProductId === plan.productId);
   let obj = plan(subscription[33]);
   const token = obj.useToken(require("native").colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND);
   let obj2 = plan(subscription[34]);
@@ -1073,7 +1072,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   const premiumTier2DeltaPriceString = obj3.usePremiumTier2DeltaPriceString(plan, subscription, first, flag4);
   const obj4 = plan(subscription[36]);
   const checkoutPlanPriceString = obj4.useCheckoutPlanPriceString(plan.productId, first);
-  let tmp17 = plan.premiumTier === closure_20.TIER_2;
+  let tmp17 = plan.premiumTier === closure_19.TIER_2;
   let tmp15 = require("useTheme")();
   if (tmp17) {
     tmp17 = 0 === plan.numPremiumGuild;
@@ -1086,24 +1085,24 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     const LegacyText = tmp5(tmp6[38]).LegacyText;
     intl = tmp5(tmp6[22]).intl;
     obj6 = { num };
-    tmp18 = closure_31(LegacyText, obj5);
+    tmp18 = closure_30(LegacyText, obj5);
   }
   const tmp21 = null == plan.premiumTier || 0 !== plan.numPremiumGuild;
   if (null == plan.premiumTier) {
     tmp7Result = tmp7(tmp6[26]);
   } else if (0 !== plan.numPremiumGuild) {
-    if (plan.premiumTier === closure_20.TIER_1) {
+    if (plan.premiumTier === closure_19.TIER_1) {
       tmp7Result = tmp7(tmp6[30]);
     } else {
       tmp7Result = tmp7(tmp6[31]);
     }
   } else {
     const premiumTier = plan.premiumTier;
-    if (closure_20.TIER_0 === premiumTier) {
+    if (closure_19.TIER_0 === premiumTier) {
       tmp7Result = tmp7(tmp6[27]);
-    } else if (closure_20.TIER_1 === premiumTier) {
+    } else if (closure_19.TIER_1 === premiumTier) {
       tmp7Result = tmp7(tmp6[28]);
-    } else if (closure_20.TIER_2 === premiumTier) {
+    } else if (closure_19.TIER_2 === premiumTier) {
       tmp7Result = tmp7(tmp6[29]);
     }
   }
@@ -1119,7 +1118,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     tmp24 = checkoutPlanPriceString;
   }
   if (tmp24 == null) {
-    tmp24 = closure_18;
+    tmp24 = closure_17;
   }
   const formatToPlainStringResult = formatToPlainString(AbOLNu, { price: tmp24 });
   if (tmp17) {
@@ -1152,8 +1151,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
         obj.track(constants.BOOST_PLAN_ROW_SELECTED, obj2);
       }
       if (null != subscription) {
-        if (premiumTypeFromSubscription === closure_20.TIER_2) {
-          if (plan.premiumTier === closure_20.TIER_0) {
+        if (premiumTypeFromSubscription === closure_19.TIER_2) {
+          if (plan.premiumTier === closure_19.TIER_0) {
             const obj3 = {
               subscription: tmp10,
               mode: PremiumPlanWhatYouLoseActionSheet.WhatYouLoseMode.DOWNGRADE,
@@ -1169,36 +1168,36 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
       importDefault(plan.productId);
     }
   }
-  is_recommended = tmp29;
+  useNativeCheckoutStore = tmp29;
   if (flag4) {
-    let tmp39Result;
-    const TableRow = tmp5(tmp6[44]).TableRow;
+    let tmp38Result;
+    const TableRow = tmp5(tmp6[45]).TableRow;
     if (tmp21) {
-      tmp39Result = tmp39(tmp7(tmp6[42]), { width: 32, height: 32 });
+      tmp38Result = tmp38(tmp7(tmp6[42]), { width: 32, height: 32 });
     } else if (tmp17) {
       const obj8 = { size: "lg", color: require("native").colors.ICON_DEFAULT };
       const NitroWheelIcon = tmp5(tmp6[32]).NitroWheelIcon;
-      tmp39Result = tmp39(NitroWheelIcon, obj8);
+      tmp38Result = tmp38(NitroWheelIcon, obj8);
     } else {
       const obj9 = { style: tmp2.boostRowIcon, source: tmp7Result };
-      tmp39Result = tmp39(premiumTypeFromSubscription, obj9);
+      tmp38Result = tmp38(tmp7(tmp6[43]), obj9);
     }
-    const obj10 = { icon: tmp39Result, label: getPlanDescription(plan, flag5), subLabel: formatToPlainStringResult1, trailing: tmp39Result2, arrow: flag2, disabled: flag, onPress: tmp45 };
-    if (null != prop && plan.premiumTier === closure_20.TIER_2 && plan.numPremiumGuild === prop) {
+    const obj10 = { icon: tmp38Result, label: getPlanDescription(plan, flag5), subLabel: formatToPlainStringResult1, trailing: tmp38Result2, arrow: flag2, disabled: flag, onPress: tmp43 };
+    if (null != prop && plan.premiumTier === closure_19.TIER_2 && plan.numPremiumGuild === prop) {
       const obj11 = { variant: "text-xs/semibold", color: "none", style: tmp2.recommendedText, children: intl4.string(plan(subscription[22]).t.WThgAR) };
       const Text = tmp5(tmp6[23]).Text;
       intl4 = tmp5(tmp6[22]).intl;
-      formatToPlainStringResult1 = tmp39(Text, obj11);
+      formatToPlainStringResult1 = tmp38(Text, obj11);
     }
     if (tmp4) {
       const obj12 = { animating: true, size: "small", color: token };
-      tmp39Result2 = tmp39(tmp5(tmp6[43]).ActivityIndicator, obj12);
+      tmp38Result2 = tmp38(tmp5(tmp6[44]).ActivityIndicator, obj12);
     } else if (null != premiumTier2DeltaPriceString) {
       const obj13 = { price: premiumTier2DeltaPriceString, interval: plan.interval };
-      tmp39Result2 = tmp39(closure_38, obj13);
+      tmp38Result2 = tmp38(closure_37, obj13);
     } else {
       const obj14 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: formatToPlainStringResult };
-      tmp39Result2 = tmp39(tmp5(tmp6[23]).Text, obj14);
+      tmp38Result2 = tmp38(tmp5(tmp6[23]).Text, obj14);
     }
     if (flag) {
       flag = !tmp4;
@@ -1206,15 +1205,16 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     if (!flag) {
       flag = !flag2;
     }
-    tmp45 = undefined;
+    tmp43 = undefined;
     if (flag2) {
-      tmp45 = onPress;
+      tmp43 = onPress;
     }
-    return closure_31(TableRow, obj10);
+    return closure_30(TableRow, obj10);
   } else {
     const items2 = [tmp2.row, style, ];
     let rowDisabled = flag;
-    const tmp30 = closure_32;
+    const tmp30 = closure_31;
+    const tmp31 = premiumTypeFromSubscription;
     if (flag) {
       rowDisabled = !tmp4;
     }
@@ -1223,30 +1223,30 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
     }
     const obj15 = { style: items2, children: items3 };
     items2[2] = rowDisabled;
-    const obj16 = { style: tmp2[closure_37[tmp7Result]], source: tmp7Result };
-    items3 = [closure_31(premiumTypeFromSubscription, obj16), , , , ];
+    const obj16 = { style: tmp2[closure_36[tmp7Result]], source: tmp7Result };
+    items3 = [closure_30(tmp7(tmp6[43]), obj16), , , , ];
     const obj17 = { style: items4, children: getPlanDescription(plan, flag5) };
     items4 = [, ];
     ({ rowText: arr5[0], rowPlanDescription: arr5[1] } = tmp2);
     const LegacyText2 = tmp5(tmp6[38]).LegacyText;
-    items3[1] = closure_31(LegacyText2, obj17);
+    items3[1] = closure_30(LegacyText2, obj17);
     items3[2] = tmp18;
     const obj18 = { style: items5, children: formatToPlainStringResult };
     items5 = [, ];
     ({ rowText: arr6[0], rowPrice: arr6[1] } = tmp2);
-    items3[3] = closure_31(plan(subscription[38]).LegacyText, obj18);
+    items3[3] = closure_30(plan(subscription[38]).LegacyText, obj18);
     let tmp32Result = null;
     if (tmp4) {
       const obj19 = { animating: true, size: "small", style: tmp2.purchasingSpinner, color: token };
-      tmp32Result = tmp32(tmp5(tmp6[43]).ActivityIndicator, obj19);
+      tmp32Result = tmp32(tmp5(tmp6[44]).ActivityIndicator, obj19);
     }
     items3[4] = tmp32Result;
-    const tmp30Result = tmp30(flag, obj15);
+    const tmp30Result = tmp30(tmp31, obj15);
     let tmp32Result2 = tmp30Result;
     if (flag2) {
-      const TouchableHighlight = tmp5(tmp6[46]).TouchableHighlight;
+      const TouchableHighlight = tmp5(tmp6[47]).TouchableHighlight;
       let str2 = "none";
-      const tmp5Result2 = plan(subscription[45]);
+      const tmp5Result2 = plan(subscription[46]);
       if (!tmp5Result2.isThemeDark(tmp15)) {
         str2 = "none";
         if (flag3) {
@@ -1260,7 +1260,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRo
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function CurrentPlanRow(showCurrentPlan) {
+let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function CurrentPlanRow(showCurrentPlan) {
   let analyticsLoadId;
   let paymentGatewayPlanId;
   let subscription;
@@ -1268,7 +1268,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   const cResult = obj.c(13);
   ({ subscription, paymentGatewayPlanId, analyticsLoadId } = showCurrentPlan);
   showCurrentPlan = showCurrentPlan.showCurrentPlan;
-  const tmp4 = closure_34();
+  const tmp4 = closure_33();
   if (showCurrentPlan) {
     if (null != subscription) {
       if (null != paymentGatewayPlanId) {
@@ -1281,7 +1281,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
           const premiumBundledItemsFromProductId = tmpResult.getPremiumBundledItemsFromProductId(paymentGatewayPlanId);
           const premiumTier = premiumBundledItemsFromProductId.premiumTier;
           if (null != premiumTier) {
-            PREMIUM_GUILD = closure_28(premiumTier);
+            PREMIUM_GUILD = closure_27(premiumTier);
           } else {
             PREMIUM_GUILD = constants6.PREMIUM_GUILD;
           }
@@ -1321,8 +1321,8 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
                 }
               }
               const obj2 = { style: tmp4.currentPlanGradient, colors: tmp7, start: null, end: null, children: tmp13 };
-              ({ START: obj4.start, END: obj4.end } = prioritySpeakerDucking);
-              const tmp21 = closure_31(LinearGradientDefault, obj2);
+              ({ START: obj4.start, END: obj4.end } = closure_25);
+              const tmp21 = closure_30(LinearGradientDefault, obj2);
               cResult[9] = tmp7;
               cResult[10] = tmp4.currentPlanGradient;
               cResult[11] = tmp13;
@@ -1332,7 +1332,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
           }
         }
         const obj3 = { plan: tmp6, subscription, analyticsLoadId, interactive: false, hasBackground: true, purchase: tmp12, style: tmp4.currentPlanRow };
-        const tmp16 = closure_31(closure_39, obj3);
+        const tmp16 = closure_30(closure_38, obj3);
         cResult[4] = analyticsLoadId;
         cResult[5] = tmp6;
         cResult[6] = tmp4.currentPlanRow;
@@ -1351,7 +1351,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
   let subscription;
   ({ subscription, paymentGatewayPlanId } = arg0);
   ({ analyticsLoadId, showCurrentPlan } = arg0);
-  const tmp = closure_34();
+  const tmp = closure_33();
   if (showCurrentPlan) {
     if (null != subscription) {
       if (null != paymentGatewayPlanId) {
@@ -1360,12 +1360,12 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
         const premiumBundledItemsFromProductId = obj3.getPremiumBundledItemsFromProductId(paymentGatewayPlanId);
         const premiumTier = premiumBundledItemsFromProductId.premiumTier;
         if (null != premiumTier) {
-          PREMIUM_GUILD = closure_28(premiumTier);
+          PREMIUM_GUILD = closure_27(premiumTier);
         } else {
           PREMIUM_GUILD = constants6.PREMIUM_GUILD;
         }
-        const obj = { style: tmp.currentPlanGradient, colors: PREMIUM_GUILD, start: null, end: null, children: closure_31(closure_39, obj2) };
-        ({ START: obj.start, END: obj.end } = prioritySpeakerDucking);
+        const obj = { style: tmp.currentPlanGradient, colors: PREMIUM_GUILD, start: null, end: null, children: closure_30(closure_38, obj2) };
+        ({ START: obj.start, END: obj.end } = closure_25);
         obj2 = {
           plan: premiumBundledItemsFromProductId,
           subscription,
@@ -1378,7 +1378,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function Curren
           style: tmp.currentPlanRow
         };
         const tmp7 = LinearGradientDefault;
-        return closure_31(tmp7, obj);
+        return closure_30(tmp7, obj);
       }
     }
   }
@@ -1420,11 +1420,11 @@ let items = [
   }
 ];
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSectionHeader(string) {
+let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSectionHeader(string) {
   const obj = react2;
   const cResult = obj.c(3);
   string = string.string;
-  const tmp4 = closure_34();
+  const tmp4 = closure_33();
   if (cResult[0] === tmp4.header) {
     let tmp5;
     if (cResult[1] === string) {
@@ -1433,23 +1433,21 @@ let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     return tmp5;
   }
   const obj2 = { style: tmp4.header, accessibilityRole: "header", children: string };
-  const tmp6 = closure_31(native.LegacyText, obj2);
+  const tmp6 = closure_30(native.LegacyText, obj2);
   cResult[0] = tmp4.header;
   cResult[1] = string;
   cResult[2] = tmp6;
   tmp5 = tmp6;
 }) : (function PlanSectionHeader(string) {
   string = string.string;
-  const obj = { style: closure_34().header, accessibilityRole: "header", children: string };
-  return closure_31(native.LegacyText, obj);
+  const obj = { style: closure_33().header, accessibilityRole: "header", children: string };
+  return closure_30(native.LegacyText, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSections(analyticsLoadId) {
+let closure_44 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSections(analyticsLoadId) {
   let first;
   let isBoostPurchaseFlow;
   let plans;
-  let shouldRemoveYearlyUpsell;
-  let shouldShowModernBoostFlow;
   let showCurrentPlan;
   let subscription;
   let tmp35;
@@ -1464,7 +1462,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   const trackPaymentFlowStep = analyticsLoadId.trackPaymentFlowStep;
   const trackNewPaymentFlow = analyticsLoadId.trackNewPaymentFlow;
   const purchase = analyticsLoadId.purchase;
-  let tmp4 = closure_34();
+  let tmp4 = closure_33();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function t(getCheckoutContextRecord) {
       return getCheckoutContextRecord.getCheckoutContextRecord();
@@ -1502,7 +1500,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   }
   let productIdFromSubscription = null;
   if (null != subscription) {
-    let tmpResult = tmp(tmp2[48]);
+    let tmpResult = tmp(tmp2[49]);
     productIdFromSubscription = tmpResult.getProductIdFromSubscription(subscription, false);
   }
   let tmp9 = productIdFromSubscription;
@@ -1511,7 +1509,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
       try {
         let tmp10;
         if (cResult[13] !== subscription) {
-          const tmpResult4 = tmp(analyticsLoadId[48]);
+          const tmpResult4 = tmp(analyticsLoadId[49]);
           const productIdFromSubscription1 = tmpResult4.getProductIdFromSubscription(subscription, true);
           tmp10 = productIdFromSubscription1;
           cResult[13] = subscription;
@@ -1532,11 +1530,11 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     if (cResult[16] === subscription) {
       tmp12 = cResult[17];
     }
-    shouldRemoveYearlyUpsell = tmp12;
+    useNativeCheckoutStore = tmp12;
     if (cResult[18] !== isBoostPurchaseFlow) {
       let mobileBoostingEnabled = isBoostPurchaseFlow;
       if (mobileBoostingEnabled) {
-        const tmpResult5 = tmp(analyticsLoadId[55]);
+        const tmpResult5 = tmp(analyticsLoadId[56]);
         mobileBoostingEnabled = tmpResult5.getMobileBoostingEnabled("PremiumPlanSelect");
       }
       cResult[18] = isBoostPurchaseFlow;
@@ -1545,12 +1543,12 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     } else {
       tmp16 = cResult[19];
     }
-    useNativeCheckoutStore = tmp16;
+    const shouldShowModernBoostFlow = tmp16;
     if (cResult[20] !== subscription) {
       let tmp19 = null != subscription;
       if (tmp19) {
         const tmpResult6 = tmp(analyticsLoadId[25]);
-        tmp19 = tmpResult6.getPremiumTypeFromSubscription(subscription) === closure_20.TIER_2;
+        tmp19 = tmpResult6.getPremiumTypeFromSubscription(subscription) === closure_19.TIER_2;
       }
       cResult[20] = subscription;
       cResult[21] = tmp19;
@@ -1596,7 +1594,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
           if (null == arg1) {
             return true;
           } else {
-            const tmp3 = subscription(analyticsLoadId[56]).AppStorePremiumProductIdsToPremiumBundledItems[arg1];
+            const tmp3 = subscription(analyticsLoadId[57]).AppStorePremiumProductIdsToPremiumBundledItems[arg1];
             return null != tmp3.premiumTier || numPremiumGuild.numPremiumGuild >= tmp3.numPremiumGuild;
           }
         }
@@ -1656,7 +1654,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
                 const tmp8 = require;
                 if (result) {
                   const interval = productId.interval;
-                  const tmp8Result = tmp8(7126);
+                  const tmp8Result = tmp8(7397);
                   result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
                 }
                 tmp7 = result;
@@ -1737,7 +1735,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
                 return "premium-and-premium-guild" === section.section.id;
               }
             }
-            tmp37 = closure_31(closure_35, {});
+            tmp37 = closure_30(closure_34, {});
           }
           cResult[33] = tmp16 && tmp18;
           cResult[34] = tmp37;
@@ -1752,7 +1750,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
         let obj2 = { style: tmp35, children: items };
         items = [tmp36, , ];
         let obj3 = { subscription, paymentGatewayPlanId: tmp9, analyticsLoadId, showCurrentPlan };
-        items[1] = closure_31(closure_41, obj3);
+        items[1] = closure_30(closure_40, obj3);
         items[2] = arr2.map((section) => {
           section = section.section;
           const plansInSection = section.plansInSection;
@@ -1760,19 +1758,19 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
           const label = section.getLabel(closure_10);
           let tmp6 = !shouldShowModernBoostFlow;
           const tmp = closure_10;
-          const tmp3 = __initData2;
-          const tmp4 = metroImportDefault;
+          const tmp3 = __initData;
+          const tmp4 = metroRequire;
           if (!shouldShowModernBoostFlow) {
             const obj = { string: label };
-            tmp6 = closure_31(closure_44, obj);
+            tmp6 = closure_30(closure_43, obj);
           }
           const obj2 = { children: items };
           items = [tmp6, ];
           const obj3 = { trackPaymentFlowStep, trackNewPaymentFlow, analyticsLoadId, plans: plansInSection, label, shouldShowModernBoostFlow, showBoostOnlyLabels: tmp, recommendedBoostCount, isBoostPurchaseFlow, purchase, subscription, currentPaymentGatewayPlanId: productIdFromSubscription, shouldRemoveYearlyUpsell };
-          items[1] = closure_31(PlanSection, obj3);
+          items[1] = closure_30(PlanSection, obj3);
           return tmp3(tmp4, obj2, id);
         });
-        const tmp43 = closure_32(productIdFromSubscription, obj2);
+        const tmp43 = closure_31(closure_6, obj2);
         cResult[1] = analyticsLoadId;
         cResult[2] = tmp6;
         cResult[3] = isBoostPurchaseFlow;
@@ -1814,7 +1812,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     cResult[24] = recommendedBoostCount;
     tmp22 = recommendedBoostCount;
   }
-  shouldRemoveYearlyUpsell = isBoostPurchaseFlow;
+  let shouldRemoveYearlyUpsell = isBoostPurchaseFlow;
   if (shouldRemoveYearlyUpsell) {
     class K {
       constructor(section) {
@@ -1868,13 +1866,13 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   let recommendedBoostCount;
   let closure_12;
   const showCurrentPlan = isBoostPurchaseFlow.showCurrentPlan;
-  let tmp = closure_34();
-  let closure_6 = boostContainer((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
+  let tmp = closure_33();
+  let closure_6 = shouldRemoveYearlyUpsell((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   let productIdFromSubscription = null;
   if (null != subscription) {
     let tmp3 = subscription;
     let tmp4 = analyticsLoadId;
-    let obj = subscription(analyticsLoadId[48]);
+    let obj = subscription(analyticsLoadId[49]);
     let flag = false;
     productIdFromSubscription = obj.getProductIdFromSubscription(subscription, false);
   }
@@ -1884,7 +1882,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
       try {
         let tmp6 = subscription;
         let tmp7 = analyticsLoadId;
-        let obj2 = subscription(analyticsLoadId[48]);
+        let obj2 = subscription(analyticsLoadId[49]);
         productIdFromSubscription1 = obj2.getProductIdFromSubscription(subscription, true);
       } catch (err) {
       }
@@ -1892,7 +1890,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   }
   shouldRemoveYearlyUpsell = isBoostPurchaseFlow;
   if (shouldRemoveYearlyUpsell) {
-    let obj3 = subscription(analyticsLoadId[55]);
+    let obj3 = subscription(analyticsLoadId[56]);
     shouldRemoveYearlyUpsell = obj3.getShouldRemoveYearlyUpsell("PremiumPlanSelect");
   }
   if (!shouldRemoveYearlyUpsell) {
@@ -1908,13 +1906,13 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   }
   boostContainer = isBoostPurchaseFlow;
   if (boostContainer) {
-    let obj4 = subscription(analyticsLoadId[55]);
+    let obj4 = subscription(analyticsLoadId[56]);
     boostContainer = obj4.getMobileBoostingEnabled("PremiumPlanSelect");
   }
   let tmp16 = null != subscription;
   if (tmp16) {
     let obj5 = subscription(analyticsLoadId[25]);
-    tmp16 = obj5.getPremiumTypeFromSubscription(subscription) === closure_20.TIER_2;
+    tmp16 = obj5.getPremiumTypeFromSubscription(subscription) === closure_19.TIER_2;
   }
   let tmp20 = boostContainer && tmp16;
   closure_10 = tmp20;
@@ -1923,7 +1921,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     recommendedBoostCount = null;
     if (!tmp16) {
       const tmp23 = analyticsLoadId;
-      const obj6 = subscription(analyticsLoadId[55]);
+      const obj6 = subscription(analyticsLoadId[56]);
       recommendedBoostCount = obj6.getRecommendedBoostCount("PremiumPlanSelect");
     }
   }
@@ -1962,7 +1960,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
             const tmp8 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp8Result = tmp8(7126);
+              const tmp8Result = tmp8(7397);
               result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp7 = result;
@@ -2011,19 +2009,19 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
     }
   }
   items = [tmp.container, ];
-  const tmp29 = closure_32;
-  const tmp30 = productIdFromSubscription;
+  const tmp29 = closure_31;
+  const tmp30 = closure_6;
   if (boostContainer) {
     boostContainer = tmp.boostContainer;
   }
   const obj7 = { style: items, children: items1 };
   items[1] = boostContainer;
   if (tmp20) {
-    tmp20 = closure_31(closure_35, {});
+    tmp20 = closure_30(closure_34, {});
   }
   items1 = [
     tmp20,
-    closure_31(closure_41, { subscription, paymentGatewayPlanId: productIdFromSubscription1, analyticsLoadId, showCurrentPlan }),
+    closure_30(closure_40, { subscription, paymentGatewayPlanId: productIdFromSubscription1, analyticsLoadId, showCurrentPlan }),
     found1.map((section) => {
       section = section.section;
       const id = section.id;
@@ -2031,16 +2029,16 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
       const label = section.getLabel(closure_10);
       let tmp6 = !boostContainer;
       const tmp = closure_10;
-      const tmp3 = __initData2;
-      const tmp4 = metroImportDefault;
+      const tmp3 = __initData;
+      const tmp4 = metroRequire;
       if (!boostContainer) {
         const obj = { string: label };
-        tmp6 = closure_31(closure_44, obj);
+        tmp6 = closure_30(closure_43, obj);
       }
       const obj2 = { children: items };
       items = [tmp6, ];
       const obj3 = { trackPaymentFlowStep: _asyncToGenerator, trackNewPaymentFlow: _slicedToArray, analyticsLoadId, plans: plansInSection, label, shouldShowModernBoostFlow: boostContainer, showBoostOnlyLabels: tmp, recommendedBoostCount, isBoostPurchaseFlow, purchase: react, subscription, currentPaymentGatewayPlanId: productIdFromSubscription, shouldRemoveYearlyUpsell };
-      items[1] = closure_31(PlanSection, obj3);
+      items[1] = closure_30(PlanSection, obj3);
       return tmp3(tmp4, obj2, id);
     })
   ];
@@ -2079,7 +2077,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
   let patchOrderLineItems;
   let orderRequired;
   let stateFromStores;
-  let tmp = closure_34();
+  let tmp = closure_33();
   const tmp2 = importDefault;
   const tmp3 = basePurchaseFlowAnalyticsFields;
   const analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
@@ -2104,10 +2102,10 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
     }
   }, items1);
   const tmp12 = require("useInitialValue")(() => {
-    const obj = applicationId(basePurchaseFlowAnalyticsFields[49]);
+    const obj = applicationId(basePurchaseFlowAnalyticsFields[50]);
     return obj.getNewAnalyticsLoadId();
   });
-  const tmp13 = applicationId(basePurchaseFlowAnalyticsFields[49]);
+  const tmp13 = applicationId(basePurchaseFlowAnalyticsFields[50]);
   let obj2 = { analyticsLoadId: tmp12, analyticsLocation: obj3, analyticsLocations };
   obj3 = { object: constants3.BUTTON_CTA, object_type: constants4.BUY };
   const getBasePurchaseFlowAnalyticsFields = tmp13.getBasePurchaseFlowAnalyticsFields;
@@ -2119,7 +2117,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
   } else {
     obj5 = {};
   }
-  tmp2(tmp3[64])(() => {
+  tmp2(tmp3[65])(() => {
     const obj = { application_id: applicationId };
     const trackPaymentFlowStartedAnalyticsAndCTP = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP;
     PaymentFlowStartedTriggerPoint;
@@ -2127,18 +2125,18 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
     const merged1 = Object.assign(obj5);
     const result = trackPaymentFlowStartedAnalyticsAndCTP(obj);
   });
-  const activeSubscription = useNativeCheckoutStore((activeSubscription) => ({ activeSubscription: activeSubscription.checkoutInitParameters.activeSubscription, order: activeSubscription.orderRecord })).activeSubscription;
-  const tmp4Result = tmp4(tmp3[66]);
+  const activeSubscription = stateFromStores((activeSubscription) => ({ activeSubscription: activeSubscription.checkoutInitParameters.activeSubscription, order: activeSubscription.orderRecord })).activeSubscription;
+  const tmp4Result = tmp4(tmp3[67]);
   handlePremiumPurchase = tmp4Result.useHandlePremiumPurchase();
-  const tmp4Result9 = tmp4(tmp3[67]);
+  const tmp4Result9 = tmp4(tmp3[68]);
   navigation = tmp4Result9.useNavigation();
-  const tmp4Result10 = tmp4(tmp3[68]);
+  const tmp4Result10 = tmp4(tmp3[69]);
   const isPaymentsBlocked = tmp4Result10.useIsPaymentsBlocked();
-  const useFetchSubscriptionInvoicePreview = tmp4(tmp3[69]).useFetchSubscriptionInvoicePreview;
-  tmp4(tmp3[69]);
-  const tmp17 = useNativeCheckoutStore;
+  const useFetchSubscriptionInvoicePreview = tmp4(tmp3[70]).useFetchSubscriptionInvoicePreview;
+  tmp4(tmp3[70]);
+  const tmp17 = stateFromStores;
   if (null != activeSubscription) {
-    let obj6 = { subscriptionId: activeSubscription.id, renewal: true, analyticsLocations, analyticsLocation: tmp2(tmp3[70]).PREMIUM_PLAN_SELECT };
+    let obj6 = { subscriptionId: activeSubscription.id, renewal: true, analyticsLocations, analyticsLocation: tmp2(tmp3[71]).PREMIUM_PLAN_SELECT };
     obj7 = obj6;
   } else {
     obj7 = {};
@@ -2188,12 +2186,12 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
               let modifySubscriptionItemsForProduct;
               closure_3 = tmp;
               closure_2 = undefined;
-              closure_2_14(true, applicationId);
+              closure_2_13(true, applicationId);
               if (null != closure_1_8) {
-                const obj7 = applicationId(paths[48]);
+                const obj7 = applicationId(paths[49]);
                 modifySubscriptionItemsForProduct = obj7.getModifySubscriptionItemsForProduct(tmp67, tmp71);
               } else {
-                let obj6 = applicationId(paths[48]);
+                let obj6 = applicationId(paths[49]);
                 modifySubscriptionItemsForProduct = obj6.getSubscriptionItemsForProduct(tmp67);
               }
               closure_2 = undefined;
@@ -2220,19 +2218,19 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
           } else {
             if (1 === v1) {
               c5 = 0;
-              if (closure_4 instanceof closure_2_1(paths[71])) {
-                const obj4 = applicationId(paths[72]);
+              if (closure_4 instanceof closure_2_1(paths[72])) {
+                const obj4 = applicationId(paths[73]);
                 const subscriptions = obj4.fetchSubscriptions();
                 const obj8 = { title: intl3.string(applicationId(paths[22]).t["U+H+kd"]), body: intl4.string(applicationId(paths[22]).t.yyDkbE) };
-                const show2 = closure_2_1(paths[50]).show;
-                closure_2_1(paths[50]);
+                const show2 = closure_2_1(paths[51]).show;
+                closure_2_1(paths[51]);
                 intl3 = applicationId(paths[22]).intl;
                 intl4 = applicationId(paths[22]).intl;
                 show2(obj8);
               } else {
                 const obj9 = { title: intl.string(applicationId(paths[22]).t.zrhHH3), body: intl2.string(applicationId(paths[22]).t.PjfUXe), isDismissable: true };
-                const show = closure_2_1(paths[50]).show;
-                closure_2_1(paths[50]);
+                const show = closure_2_1(paths[51]).show;
+                closure_2_1(paths[51]);
                 intl = applicationId(paths[22]).intl;
                 intl2 = applicationId(paths[22]).intl;
                 show(obj9);
@@ -2248,7 +2246,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                 } else {
                   closure_2 = value;
                   if (null == value) {
-                    closure_2_14(false);
+                    closure_2_13(false);
                   }
                 }
               } else if (arg0 === 1) {
@@ -2265,7 +2263,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
               c7 = 3;
               return { value: "IconComponent", done: null };
             }
-            closure_2_14(false);
+            closure_2_13(false);
           }
           c5 = 1;
           const obj11 = {
@@ -2276,7 +2274,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
             orderId: id,
             onPurchaseComplete(paymentGateway) {
                   paymentGateway = paymentGateway.paymentGateway;
-                  let obj = analyticsLoadId(closure_2[50]);
+                  let obj = analyticsLoadId(closure_2[51]);
                   obj.close();
                   if (paymentGateway === constants.APPLE_ADVANCED_COMMERCE) {
                     premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
@@ -2284,13 +2282,13 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                       const _Error = Error;
                       const self = this;
                       const self2 = this;
-                      const captureBillingException = premiumTypeSubscription(closure_2[57]).captureBillingException;
-                      premiumTypeSubscription(closure_2[57]);
+                      const captureBillingException = premiumTypeSubscription(closure_2[58]).captureBillingException;
+                      premiumTypeSubscription(closure_2[58]);
                       const error = new Error("PremiumActivatedAlert: no premium subscription in store post-activation");
                       let obj2 = { tags: { source: "showPremiumActivatedAlert.nullSubscription" } };
                       const result = captureBillingException(error, obj2);
-                      const tmpResult = analyticsLoadId(closure_2[58]);
-                      tmpResult.popWithKey(premiumTypeSubscription(tmp2[59]).PREMIUM_KEY);
+                      const tmpResult = analyticsLoadId(closure_2[59]);
+                      tmpResult.popWithKey(premiumTypeSubscription(tmp2[60]).PREMIUM_KEY);
                       const obj6 = closure_1_5;
                       if (closure_1_5.canGoBack()) {
                         obj6.goBack();
@@ -2299,7 +2297,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                       const obj3 = {
                         importer() {
                               let subscription;
-                              const promise = premiumTypeSubscription(paths[52])(paths[60], paths.paths);
+                              const promise = premiumTypeSubscription(paths[53])(paths[61], paths.paths);
                               return promise.then((result) => {
                                 closure_0 = result.default;
                                 return (arg0) => {
@@ -2308,8 +2306,8 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                                     subscription,
                                     onClose() {
                                       closure_0.onClose();
-                                      const obj = closure_5_1(closure_5_2[58]);
-                                      obj.popWithKey(premiumTypeSubscription(closure_5_2[59]).PREMIUM_KEY);
+                                      const obj = closure_5_1(closure_5_2[59]);
+                                      obj.popWithKey(premiumTypeSubscription(closure_5_2[60]).PREMIUM_KEY);
                                       const obj2 = closure_1_5;
                                       if (closure_1_5.canGoBack()) {
                                         obj2.goBack();
@@ -2317,13 +2315,13 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                                     }
                                   };
                                   const merged = Object.assign(arg0);
-                                  return closure_5_31(closure_0, obj);
+                                  return closure_5_30(closure_0, obj);
                                 };
                               });
                             },
                         isDismissable: false
                       };
-                      const tmpResult2 = analyticsLoadId(closure_2[50]);
+                      const tmpResult2 = analyticsLoadId(closure_2[51]);
                       tmpResult2.openLazy(obj3);
                     }
                   }
@@ -2358,36 +2356,36 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
       if (tmp9) {
         let tmp31Result2;
         if (isPaymentsBlocked) {
-          let obj8 = { ref: isBoostPurchaseFlow.ref, contentInset: { top: 40 }, children: closure_31(tmp2(tmp3[73]), {}) };
-          tmp31Result2 = closure_31(stateFromStores, obj8);
+          let obj8 = { ref: isBoostPurchaseFlow.ref, contentInset: { top: 40 }, children: closure_30(tmp2(tmp3[74]), {}) };
+          tmp31Result2 = closure_30(orderRequired, obj8);
         } else {
           if (null != activeSubscription) {
             if (activeSubscription.isOnPlatformMatchingExternalPaymentGateway) {
-              const isValidBundleProductId = tmp4(tmp3[48]).isValidBundleProductId;
-              tmp4(tmp3[48]);
-              tmp4(tmp3[48]);
+              const isValidBundleProductId = tmp4(tmp3[49]).isValidBundleProductId;
+              tmp4(tmp3[49]);
+              tmp4(tmp3[49]);
             }
             let tmp31Result = null != first1;
-            const tmp32 = stateFromStores;
+            const tmp32 = orderRequired;
             if (tmp31Result) {
               let obj9 = { children: items4 };
               const obj10 = { style: tmp.premiumHeaderLabel, variant: "eyebrow", color: "text-default", accessibilityRole: "header", children: intl.string(tmp4(tmp3[22]).t.ITurwY) };
               const Text = tmp4(tmp3[23]).Text;
               intl = tmp4(tmp3[22]).intl;
-              items4 = [closure_31(Text, obj10), ];
+              items4 = [closure_30(Text, obj10), ];
               let obj11 = { subscription: activeSubscription, renewalInvoicePreview: first1 };
-              items4[1] = closure_31(tmp4(tmp3[74]).PremiumSubscriptionHeader, obj11);
-              tmp31Result = tmp31(closure_33, obj9);
+              items4[1] = closure_30(tmp4(tmp3[75]).PremiumSubscriptionHeader, obj11);
+              tmp31Result = tmp31(closure_32, obj9);
             }
             let obj12 = { children: items5 };
             items5 = [tmp31Result, ];
             const obj13 = { style: tmp.offPlatformSubscriptionMessage, variant: "text-md/semibold", children: tmp4Result15.getExternalManagementMessage(activeSubscription, { shouldAllowExternalManagement: true }) };
             const Text2 = tmp4(tmp3[23]).Text;
-            tmp4Result15 = tmp4(tmp3[75]);
-            items5[1] = closure_31(Text2, obj13);
+            tmp4Result15 = tmp4(tmp3[76]);
+            items5[1] = closure_30(Text2, obj13);
             tmp31Result2 = tmp31(tmp32, obj12);
           }
-          const obj14 = { ref: isBoostPurchaseFlow.ref, children: closure_31(closure_45, obj15) };
+          const obj14 = { ref: isBoostPurchaseFlow.ref, children: closure_30(closure_44, obj15) };
           obj15 = {
             subscription: activeSubscription,
             plans: tmp4Result16.getPremiumBundlesWithPredicate(predicate),
@@ -2419,15 +2417,15 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
                     },
             purchase: tmp25
           };
-          tmp4Result16 = tmp4(tmp3[48]);
-          tmp31Result2 = closure_31(stateFromStores, obj14);
+          tmp4Result16 = tmp4(tmp3[49]);
+          tmp31Result2 = closure_30(orderRequired, obj14);
         }
         tmp29 = tmp31Result2;
       }
       tmp26 = tmp29;
     }
-    const obj16 = { style: tmp.loadingSpinnerContainer, children: closure_31(tmp4(tmp3[43]).ActivityIndicator, { animating: true, size: "large" }) };
-    tmp29 = closure_31(orderRequired, obj16);
+    const obj16 = { style: tmp.loadingSpinnerContainer, children: closure_30(tmp4(tmp3[44]).ActivityIndicator, { animating: true, size: "large" }) };
+    tmp29 = closure_30(patchOrderLineItems, obj16);
   }
   return tmp26;
 }
@@ -2451,7 +2449,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
   let tmp2 = stateFromStores1;
   let obj = require("react");
   const cResult = obj.c(39);
-  const tmp4 = closure_34();
+  const tmp4 = closure_33();
   let obj2 = require("useNavigation");
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2475,9 +2473,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
   } else {
     tmp10 = cResult[2];
   }
-  const NitroACOMSubscriptionExperiment = tmp(tmp2[76]).NitroACOMSubscriptionExperiment;
+  const NitroACOMSubscriptionExperiment = tmp(tmp2[77]).NitroACOMSubscriptionExperiment;
   const enabled = NitroACOMSubscriptionExperiment.useConfig(tmp10).enabled;
-  const tmpResult7 = tmp(tmp2[47]);
+  const tmpResult7 = tmp(tmp2[48]);
   if (tmpResult7.isIOS()) {
     let APPLE;
     if (enabled) {
@@ -2496,7 +2494,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
     let tmp16;
     let baseSubscriptionItemForSubscriptionItems = null;
     if (null != stateFromStores) {
-      const tmpResult8 = tmp(tmp2[77]);
+      const tmpResult8 = tmp(tmp2[78]);
       baseSubscriptionItemForSubscriptionItems = tmpResult8.getBaseSubscriptionItemForSubscriptionItems(stateFromStores.items);
     }
     if (null == baseSubscriptionItemForSubscriptionItems) {
@@ -2531,14 +2529,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [SubscriptionStore];
-    class A {
+    class R {
       constructor() {
         return SubscriptionStore.hasFetchedSubscriptions();
       }
     }
     cResult[8] = items3;
-    cResult[9] = A;
-    tmp21 = A;
+    cResult[9] = R;
+    tmp21 = R;
     tmp20 = items3;
   } else {
     tmp20 = cResult[8];
@@ -2557,7 +2555,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       }
     }
     const items4 = [stateFromStores1];
-    class A {
+    class R {
       constructor() {
         return SubscriptionStore.hasFetchedSubscriptions();
       }
@@ -2591,7 +2589,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       }
     }
     const items5 = [GuildStore];
-    class A {
+    class R {
       constructor() {
         return SubscriptionStore.hasFetchedSubscriptions();
       }
@@ -2620,7 +2618,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       }
     }
     cResult[14] = guildId.guildId;
-    class A {
+    class R {
       constructor() {
         return SubscriptionStore.hasFetchedSubscriptions();
       }
@@ -2663,7 +2661,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       }
       mobileBoostingEnabled = obj11.getMobileBoostingEnabled("PremiumPlanSelect");
     }
-    class A {
+    class R {
       constructor() {
         return SubscriptionStore.hasFetchedSubscriptions();
       }
@@ -2729,7 +2727,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
   _require = isBoostPurchaseFlow;
   let tmp2 = _require;
   let tmp3 = stateFromStores;
-  let tmp = closure_34();
+  let tmp = closure_33();
   let obj = require("useNavigation");
   navigation = obj.useNavigation();
   let obj2 = require("get initialized");
@@ -2778,7 +2776,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       items1 = items;
       obj5 = PremiumUtilsDefault;
     } else {
-      const obj4 = { subscriptionPlanId: authStore6.PREMIUM_YEAR_TIER_2, skuId: obj3.castPremiumSubscriptionAsSkuId(TIER_2.TIER_2), quantity: 1 };
+      const obj4 = { subscriptionPlanId: PREMIUM_YEAR_TIER_2.PREMIUM_YEAR_TIER_2, skuId: obj3.castPremiumSubscriptionAsSkuId(authStore5.TIER_2), quantity: 1 };
       items1 = [obj4];
       obj3 = PremiumUtils;
     }
@@ -2811,7 +2809,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
   });
   mobileBoostingEnabled = true === isBoostPurchaseFlow.isBoostPurchaseFlow;
   if (mobileBoostingEnabled) {
-    const tmp2Result5 = tmp2(tmp3[55]);
+    const tmp2Result5 = tmp2(tmp3[56]);
     mobileBoostingEnabled = tmp2Result5.getMobileBoostingEnabled("PremiumPlanSelect");
   }
   const items5 = [navigation, mobileBoostingEnabled, stateFromStores2];
@@ -2846,27 +2844,27 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
                 navigation.pop();
               }
             },
-        children: closure_31(PremiumPlanSelect, obj6)
+        children: closure_30(PremiumPlanSelect, obj6)
       };
       obj6 = {};
-      const tmp20 = navigation(tmp3[78]);
+      const tmp20 = navigation(tmp3[79]);
       const merged = Object.assign(isBoostPurchaseFlow);
-      return closure_31(tmp20, obj5);
+      return closure_30(tmp20, obj5);
     }
     let str2 = "Android";
-    const tmp2Result6 = tmp2(tmp3[47]);
+    const tmp2Result6 = tmp2(tmp3[48]);
     if (tmp2Result6.isIOS()) {
       str2 = "iOS";
     }
-    const obj7 = { children: closure_31(Text, obj8) };
+    const obj7 = { children: closure_30(Text, obj8) };
     obj8 = { variant: "display-md", children: intl.format(tmp2(tmp3[22]).t.CnoyAN, obj9) };
     Text = tmp2(tmp3[23]).Text;
     intl = tmp2(tmp3[22]).intl;
     obj9 = { mobilePlatform: str2 };
-    return closure_31(closure_7, obj7);
+    return closure_30(closure_6, obj7);
   } else {
-    const obj10 = { style: tmp.loadingSpinnerContainer, children: closure_31(tmp2(tmp3[43]).ActivityIndicator, { animating: true, size: "large" }) };
-    return closure_31(closure_7, obj10);
+    const obj10 = { style: tmp.loadingSpinnerContainer, children: closure_30(tmp2(tmp3[44]).ActivityIndicator, { animating: true, size: "large" }) };
+    return closure_30(closure_6, obj10);
   }
 });
 let result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelect.tsx");

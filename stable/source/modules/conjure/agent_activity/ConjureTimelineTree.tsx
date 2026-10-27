@@ -1,12 +1,12 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 12126
+// Function ID: 12127
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3849, 1126, 2]
+// Dependencies: [32, 3883, 1128, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17180 (ConjureTimelineTree)
-import intl6 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
+// Module 12126 (ConjureTimelineTree)
+import intl6 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -513,7 +513,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3849.iwOTgo, preview_ready: _modDef3849.okkgSB, working: _modDef3849.t8skVB, error: _modDef3849.avt0ax };
+let obj = { healthcheck_failed: _modDef3883.iwOTgo, preview_ready: _modDef3883.okkgSB, working: _modDef3883.t8skVB, error: _modDef3883.avt0ax };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -531,26 +531,26 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl6.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3849.t8skVB;
+    t8skVB = _modDef3883.t8skVB;
   }
   return string(t8skVB);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3849.jTwZFY);
+    return intl5.string(_modDef3883.jTwZFY);
   } else if ("done" === arg0) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3849.keYz9o);
+    return intl4.string(_modDef3883.keYz9o);
   } else if ("failed" === arg0) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3849["RoY/lg"]);
+    return intl3.string(_modDef3883["RoY/lg"]);
   } else if ("cancelled" === arg0) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3849["HZw/I/"]);
+    return intl2.string(_modDef3883["HZw/I/"]);
   } else if ("incomplete" === arg0) {
     const intl = intl6.intl;
-    return intl.string(_modDef3849.sf2UHL);
+    return intl.string(_modDef3883.sf2UHL);
   }
 };
 export { buildTimelineTree };

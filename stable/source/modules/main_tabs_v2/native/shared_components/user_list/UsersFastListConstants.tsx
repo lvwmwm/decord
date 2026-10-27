@@ -1,9 +1,9 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10527
+// Function ID: 10528
 // Name: UsersFastListConstants
 // Dependencies: [587, 2]
 
-// Module 10225 (UsersFastListConstants)
+// Module 10527 (UsersFastListConstants)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 1086
-// Function ID: 1087
+// Module ID: 1088
+// Function ID: 1089
 // Name: RouteConstants
-// Dependencies: [1087, 1092, 1093, 1094, 2]
+// Dependencies: [1089, 1094, 1095, 1096, 2]
 
-// Module 1086 (RouteConstants)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import ConferenceModeConstants from "ConferenceModeConstants" /* 1092 */;
-import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1093 */;
-import PathUtils from "utils/PathUtils" /* 1094 */;
+// Module 1088 (RouteConstants)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1094 */;
+import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1095 */;
+import PathUtils from "utils/PathUtils" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 let c2;

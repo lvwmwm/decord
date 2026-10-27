@@ -1,20 +1,20 @@
-// Module ID: 11419
-// Function ID: 11420
+// Module ID: 11003
+// Function ID: 11004
 // Name: ConjureCreateErrors
-// Dependencies: [1085, 1126, 3849, 2]
+// Dependencies: [1087, 1128, 3883, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 11419 (ConjureCreateErrors)
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
+// Module 11003 (ConjureCreateErrors)
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
 class ConjureCreateError extends Error {
   constructor(reason, failureStatus) {
-    const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
-    tmp2.name = "VibegrationsCreateError";
+    const tmp2 = new tmp("conjure create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
+    tmp2.name = "ConjureCreateError";
     tmp2.reason = reason;
     tmp2.status = failureStatus;
     return tmp2;
@@ -23,12 +23,12 @@ class ConjureCreateError extends Error {
 const result = size.fileFinishedImporting("modules/conjure/create/ConjureCreateErrors.tsx");
 
 export { ConjureCreateError };
-export const classifyCreateFailure = function classifyCreateFailure(value) {
+export const classifyCreateFailure = function classifyCreateFailure(error) {
   let body;
   let status;
-  if (typeof value === "object") {
-    if (null !== value) {
-      ({ status, body } = value);
+  if (typeof error === "object") {
+    if (null !== error) {
+      ({ status, body } = error);
       if (typeof status !== "number") {
         return "unknown";
       } else if (429 === status) {
@@ -41,7 +41,7 @@ export const classifyCreateFailure = function classifyCreateFailure(value) {
         let str2 = "unknown";
         if (409 === status) {
           str2 = "unknown";
-          if (code === AbortCodes.TOO_MANY_VIBEGRATIONS_PROJECTS) {
+          if (code === AbortCodes.TOO_MANY_CONJURE_PROJECTS) {
             str2 = "project_limit";
           }
         }
@@ -69,12 +69,12 @@ export const getConjureCreateErrorMessage = function getConjureCreateErrorMessag
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3849["lh+h/p"]);
+    return intl3.string(_modDef3883["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3849.zBENJU);
+    return intl2.string(_modDef3883.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3849["9m86fn"]);
+    return intl.string(_modDef3883["9m86fn"]);
   }
 };

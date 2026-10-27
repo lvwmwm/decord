@@ -1,20 +1,21 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6350
+// Function ID: 6351
 // Name: isChannelFocused
-// Dependencies: [32, 19, 6036, 6073, 6074, 4978, 4976, 4977, 4979, 6075, 558, 576, 2]
+// Dependencies: [32, 19, 6292, 6351, 6352, 5074, 5072, 5073, 5075, 6353, 558, 576, 6354, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 6072 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4978 */;
-import useChatLayout from "useChatLayout" /* 4979 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6073 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6075 */;
+// Module 6350 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5074 */;
+import useChatLayout from "useChatLayout" /* 5075 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6351 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6353 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6354 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import VoicePanelStore from "VoicePanelStore" /* 6074 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+import VoicePanelStore from "VoicePanelStore" /* 6352 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,37 +30,48 @@ function getFocusedChannelId() {
   const isChatLockedOpen = obj3.getChatLayout().isChatLockedOpen;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
-      const tmp4 = getChannelDetailsFromRouteDefault;
-      return _slicedToArray(tmp4(rootNavigationRef.getCurrentRoute(), isChatLockedOpen), 2)[1];
+      const rootState = rootNavigationRef.getRootState();
+      const tmpResult = NavigationRouteUtils;
+      const result = tmpResult.coerceChannelSecondaryViewChatRoute(rootState.routes[rootState.index]);
+      let channelId;
+      if (result != null) {
+        channelId = result.params.channelId;
+      }
+      if (null != channelId) {
+        return channelId;
+      } else {
+        const tmp7 = getChannelDetailsFromRouteDefault;
+        return _slicedToArray(tmp7(rootNavigationRef.getCurrentRoute(), isChatLockedOpen), 2)[1];
+      }
     }
   }
-  let tmp6 = channelId1;
-  if (null === channelId1) {
-    const tmp21 = getInitialNavigationStateDefault();
-    let tmp7;
+  let tmp9 = channelId2;
+  if (null === channelId2) {
+    const tmp24 = getInitialNavigationStateDefault();
+    let tmp10;
     const coerceMainRoute = NavigationRouteUtils.coerceMainRoute;
     NavigationRouteUtils;
-    if (tmp21 != null) {
-      const routes = tmp21.routes;
+    if (tmp24 != null) {
+      const routes = tmp24.routes;
       if (routes != null) {
         let num2;
-        if (tmp21 != null) {
-          num2 = tmp21.index;
+        if (tmp24 != null) {
+          num2 = tmp24.index;
         }
         if (num2 == null) {
           num2 = 0;
         }
-        tmp7 = routes[num2];
+        tmp10 = routes[num2];
       }
     }
-    const coerceMainRouteResult = coerceMainRoute(tmp7);
-    let tmp9;
+    const coerceMainRouteResult = coerceMainRoute(tmp10);
+    let tmp12;
     if (null != coerceMainRouteResult) {
-      const tmpResult3 = NavigationRouteUtils;
+      const tmpResult5 = NavigationRouteUtils;
       if (isChatLockedOpen) {
         const state3 = coerceMainRouteResult.state;
-        let tmp14;
-        const coerceTabsRoute = tmpResult3.coerceTabsRoute;
+        let tmp17;
+        const coerceTabsRoute = tmpResult5.coerceTabsRoute;
         if (state3 != null) {
           const routes3 = state3.routes;
           if (routes3 != null) {
@@ -71,13 +83,13 @@ function getFocusedChannelId() {
             if (num4 == null) {
               num4 = 0;
             }
-            tmp14 = routes3[num4];
+            tmp17 = routes3[num4];
           }
         }
-        const coerceTabsRouteResult = coerceTabsRoute(tmp14);
+        const coerceTabsRouteResult = coerceTabsRoute(tmp17);
         if (null != coerceTabsRouteResult) {
           const state5 = coerceTabsRouteResult.state;
-          let tmp17;
+          let tmp20;
           const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
           NavigationRouteUtils;
           if (state5 != null) {
@@ -91,23 +103,23 @@ function getFocusedChannelId() {
               if (num5 == null) {
                 num5 = 0;
               }
-              tmp17 = routes4[num5];
+              tmp20 = routes4[num5];
             }
           }
-          const coerceGuildsRouteResult = coerceGuildsRoute(tmp17);
+          const coerceGuildsRouteResult = coerceGuildsRoute(tmp20);
           if (null != coerceGuildsRouteResult) {
             const params2 = coerceGuildsRouteResult.params;
-            let channelId;
+            let channelId1;
             if (params2 != null) {
-              channelId = params2.channelId;
+              channelId1 = params2.channelId;
             }
-            tmp9 = channelId;
+            tmp12 = channelId1;
           }
         }
       } else {
         const state = coerceMainRouteResult.state;
-        let tmp11;
-        const coerceChannelRoute = tmpResult3.coerceChannelRoute;
+        let tmp14;
+        const coerceChannelRoute = tmpResult5.coerceChannelRoute;
         if (state != null) {
           const routes2 = state.routes;
           if (routes2 != null) {
@@ -119,27 +131,27 @@ function getFocusedChannelId() {
             if (num3 == null) {
               num3 = 0;
             }
-            tmp11 = routes2[num3];
+            tmp14 = routes2[num3];
           }
         }
-        const coerceChannelRouteResult = coerceChannelRoute(tmp11);
+        const coerceChannelRouteResult = coerceChannelRoute(tmp14);
         if (null != coerceChannelRouteResult) {
           const params = coerceChannelRouteResult.params;
-          channelId1 = undefined;
+          channelId2 = undefined;
           if (params != null) {
-            channelId1 = params.channelId;
+            channelId2 = params.channelId;
           }
-          tmp9 = channelId1;
+          tmp12 = channelId2;
         }
       }
     }
-    channelId1 = tmp9;
-    tmp6 = tmp9;
+    channelId2 = tmp12;
+    tmp9 = tmp12;
   }
-  return tmp6;
+  return tmp9;
 }
 const CHANNEL_PREFIX = NavigationHistoryStore2.CHANNEL_PREFIX;
-let channelId1 = null;
+let channelId2 = null;
 function isChannelFocused() {
   return null != getFocusedChannelId();
 }
@@ -154,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChann
   let obj = require("react");
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
+    const fn = function u() {
       return null != getFocusedChannelId();
     };
     cResult[0] = fn;
@@ -230,7 +242,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChann
   }, []);
   return first;
 });
-const result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
+let result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
 
 export { getFocusedChannelId };
 export { isChannelFocused };
@@ -242,6 +254,22 @@ export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadS
     const state = VoicePanelStore.getState();
     if (state.isVoicePanelFullscreen()) {
       return false;
+    } else if (hasSecondaryViewChatDefault(channelId)) {
+      const obj2 = RootNavigationRef;
+      const rootNavigationRef = obj2.getRootNavigationRef();
+      let tmp12 = null != rootNavigationRef && rootNavigationRef.isReady();
+      const tmp10 = require;
+      if (tmp12) {
+        const rootState = rootNavigationRef.getRootState();
+        const tmp10Result = tmp10(5072);
+        const result = tmp10Result.coerceChannelSecondaryViewChatRoute(rootState.routes[rootState.index]);
+        channelId = undefined;
+        if (result != null) {
+          channelId = result.params.channelId;
+        }
+        tmp12 = channelId === channelId;
+      }
+      return tmp12;
     } else if (getFocusedChannelId() === channelId) {
       return true;
     } else {

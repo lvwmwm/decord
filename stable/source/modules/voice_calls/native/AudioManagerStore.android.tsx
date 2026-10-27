@@ -1,17 +1,17 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 9059
+// Function ID: 9060
 // Name: AudioManagerStore
-// Dependencies: [17, 1085, 5117, 8783, 12, 1255, 504, 584, 2]
+// Dependencies: [17, 1087, 5216, 9060, 12, 1257, 504, 584, 2]
 
-// Module 8782 (AudioManagerStore)
+// Module 9059 (AudioManagerStore)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import Constants2 from "Constants" /* 5117 */;
-import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 8783 */;
+import Constants from "Constants" /* 1087 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import Constants2 from "Constants" /* 5216 */;
+import NativeAudioManagerModuleDefault from "NativeAudioManagerModule" /* 9060 */;
 import size from "module_2" /* 2 */;
 
 const NativeAudioManagerModule_mod = NativeAudioManagerModuleDefault;

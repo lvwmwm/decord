@@ -1,22 +1,22 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 12763
+// Function ID: 12764
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 5081, 21, 5092, 558, 576, 504, 1383, 6157, 9007, 2]
+// Dependencies: [17, 5181, 21, 5191, 558, 576, 504, 1385, 5128, 9303, 2]
 
-// Module 16028 (CheckpointApngPlayer)
+// Module 12763 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const APNGPlayer = tmp2(9007);
+const APNGPlayer = tmp2(9303);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
@@ -73,7 +73,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointApngPl
     tmp10Result = tmp10(FastImageDefault, obj3);
   } else {
     const obj5 = { url: uri, autoplay: !stateFromStores, style };
-    tmp10Result = tmp10(tmp(9007).APNGPlayer, obj5);
+    tmp10Result = tmp10(tmp(9303).APNGPlayer, obj5);
   }
   cResult[2] = stateFromStores;
   cResult[3] = style;

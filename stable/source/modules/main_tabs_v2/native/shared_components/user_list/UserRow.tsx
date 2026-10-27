@@ -1,43 +1,44 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10531
+// Function ID: 10532
 // Name: UserRow
-// Dependencies: [19, 17, 5081, 5440, 7346, 2065, 5108, 4760, 10218, 1085, 21, 5092, 587, 7015, 38, 10230, 10231, 4808, 10232, 7018, 7347, 558, 576, 504, 1200, 5088, 4962, 10236, 6852, 6053, 1126, 10259, 10260, 6196, 5379, 2032, 9317, 8194, 8299, 2000, 8338, 10262, 9405, 5408, 7975, 5628, 8849, 10264, 8762, 10272, 8854, 10273, 6177, 10279, 6180, 2]
+// Dependencies: [19, 17, 5181, 5540, 7616, 2068, 5207, 4855, 10520, 1087, 21, 1385, 5191, 587, 7290, 38, 10532, 10533, 4903, 10534, 7293, 7617, 558, 576, 504, 1202, 5187, 5057, 10538, 7130, 6330, 1128, 10560, 10561, 6473, 5479, 2035, 9621, 8471, 8577, 2002, 8616, 10563, 9709, 5508, 8247, 5884, 9126, 10565, 9039, 10573, 9130, 10574, 6454, 10590, 6457, 2]
 
-// Module 10229 (UserRow)
+// Module 10531 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import intl14 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import utils_StringUtils from "utils/StringUtils" /* 2032 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import UserUtils from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6196 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7347 */;
-import ChatIcon from "ChatIcon" /* 8194 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9317 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9405 */;
-import UserRowConstants from "UserRowConstants" /* 10218 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10231 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10232 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10236 */;
-import ActionButtonDefault from "ActionButton" /* 10259 */;
-import XLargeIcon from "XLargeIcon" /* 10260 */;
-import CrownIcon2 from "CrownIcon" /* 10262 */;
+import intl14 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import utils_StringUtils from "utils/StringUtils" /* 2035 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6473 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7617 */;
+import ChatIcon from "ChatIcon" /* 8471 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9621 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9709 */;
+import UserRowConstants from "UserRowConstants" /* 10520 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10533 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10534 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10538 */;
+import ActionButtonDefault from "ActionButton" /* 10560 */;
+import XLargeIcon from "XLargeIcon" /* 10561 */;
+import CrownIcon2 from "CrownIcon" /* 10563 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7346 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7616 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,25 +50,29 @@ let closure_14;
 let closure_15;
 let closure_16;
 let map1;
-let obj2;
 let obj3;
+let obj4;
 let tmp2;
-const native = tmp2(1200);
+const native = tmp2(1202);
 const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
-let closure_17 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
+let obj;
+if (PlatformUtils.isIOS()) {
+  obj = { lineHeight: "r" };
+}
+let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
-let closure_18 = createStyles.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
+let closure_19 = createStyles.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
 createStyles = createStyles_mod;
-let obj = { activityText: obj2, gameContainer: obj3, gameIcon: { width: 14, height: 14 } };
-obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
+let obj2 = { activityText: obj3, gameContainer: obj4, gameIcon: { width: 14, height: 14 } };
+obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", gap: 4, cornerRadius: nativeDefault.radii.xs };
-let closure_19 = createStyles(obj);
+obj4 = { flexDirection: "row", gap: 4, cornerRadius: nativeDefault.radii.xs };
+let closure_20 = createStyles(obj2);
 const Friends_v2 = "Friends_v2";
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRowSubLabel(isGameRelationship) {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRowSubLabel(isGameRelationship) {
   let animate;
   let applicationId;
   let first;
@@ -77,11 +82,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
   let tmp7;
   let type;
   let user;
-  const obj = applicationId(576);
+  obj = applicationId(576);
   const cResult = obj.c(28);
   ({ user, type, animate, guildId, applicationId } = isGameRelationship);
   isGameRelationship = isGameRelationship.isGameRelationship;
-  const tmp4 = closure_19();
+  const tmp4 = closure_20();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ApplicationStore];
     cResult[0] = items;
@@ -171,7 +176,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
           }
           if (cResult[13] !== stateFromStores.name) {
             const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-            const tmp26 = closure_14(applicationId(5088).Text, obj5);
+            const tmp26 = closure_14(applicationId(5187).Text, obj5);
             cResult[13] = stateFromStores.name;
             cResult[14] = tmp26;
             tmp24 = tmp26;
@@ -196,7 +201,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
         }
       }
       const obj7 = { style: tmp4.gameIcon, resizeMode: "contain", source: tmp20, disableColor: true };
-      const tmp23 = closure_14(applicationId(1200).Icon, obj7, stateFromStores.id);
+      const tmp23 = closure_14(applicationId(1202).Icon, obj7, stateFromStores.id);
       cResult[9] = stateFromStores.id;
       cResult[10] = tmp4.gameIcon;
       cResult[11] = tmp20;
@@ -207,7 +212,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
   } else {
     let tmp13;
     if (cResult[19] !== user) {
-      const tmpResult2 = applicationId(4962);
+      const tmpResult2 = applicationId(5057);
       const userTag = tmpResult2.getUserTag(user);
       cResult[19] = user;
       cResult[20] = userTag;
@@ -217,7 +222,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     }
     if (cResult[21] !== tmp13) {
       const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp13 };
-      const tmp17 = closure_14(applicationId(5088).Text, obj8);
+      const tmp17 = closure_14(applicationId(5187).Text, obj8);
       cResult[21] = tmp13;
       cResult[22] = tmp17;
       tmp15 = tmp17;
@@ -238,9 +243,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
   let user;
   ({ user, type, applicationId: require } = arg0);
   ({ animate, isGameRelationship, guildId } = arg0);
-  const tmp = closure_19();
+  const tmp = closure_20();
   const items = [ApplicationStore];
-  const obj = get_initialized;
+  obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => ApplicationStore.getApplication(require));
   if (type !== constants.PENDING_INCOMING) {
     if (type !== constants.SUGGESTION) {
@@ -260,7 +265,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1200).Icon;
+      const Icon = tmp2(1202).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -276,7 +281,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5187).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -342,28 +347,28 @@ const memoResult = react.memo(function UserRow(type) {
     flag7 = false;
   }
   const merged = Object.assign(type, Object.assign({ type: 0, user: 0, mode: 0, selected: 0, disabled: 0, isOwner: 0, onPress: 0, onLongPress: 0, handleMessage: 0, nickname: 0, usernameColor: 0, roleColors: 0, premiumSince: 0, guildId: 0, trailing: 0, subLabel: 0, label: 0, accessibilityActions: 0, onAccessibilityAction: 0, applicationId: 0, isGameRelationship: 0, isNameplatedRow: 0, canShowDisplayNameStyles: 0, canShowDisplayNameStylesFont: 0 }));
-  let analyticsLocations;
-  let tmp3 = analyticsLocations();
-  closure_17 = tmp3;
+  let useReducedMotion;
+  let tmp3 = useReducedMotion();
+  let closure_17 = tmp3;
   let tmp4 = user;
   let tmp5 = NONE;
-  analyticsLocations = user(NONE[28])().analyticsLocations;
+  const analyticsLocations = user(NONE[29])().analyticsLocations;
   let tmp6 = type;
-  let obj = type(NONE[23]);
+  obj = type(NONE[24]);
   let items = [onPress];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ useReducedMotion: onPress.useReducedMotion, roleStyle: onPress.roleStyle }));
-  const useReducedMotion = stateFromStoresObject.useReducedMotion;
+  useReducedMotion = stateFromStoresObject.useReducedMotion;
   const roleStyle = stateFromStoresObject.roleStyle;
-  let obj2 = type(NONE[23]);
+  let obj2 = type(NONE[24]);
   let items1 = [usernameColor];
   const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
-    const obj = { isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id), status: PresenceStore.getStatus(user.id) };
+    obj = { isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id), status: PresenceStore.getStatus(user.id) };
     return obj;
   });
   const isMobileOnline = stateFromStoresObject1.isMobileOnline;
   const isVROnline = stateFromStoresObject1.isVROnline;
   const status = stateFromStoresObject1.status;
-  let obj3 = type(NONE[23]);
+  let obj3 = type(NONE[24]);
   let items2 = [premiumSince];
   stateFromStores = obj3.useStateFromStores(items2, () => {
     let tmp = stateFromStores;
@@ -376,10 +381,10 @@ const memoResult = react.memo(function UserRow(type) {
     }
     return tmp;
   });
-  let obj4 = type(NONE[23]);
+  let obj4 = type(NONE[24]);
   const items3 = [handleMessage];
   const stateFromStores1 = obj4.useStateFromStores(items3, () => FriendSuggestionStore.getSuggestion(user.id));
-  let obj5 = type(NONE[29]);
+  let obj5 = type(NONE[30]);
   const avatarDecoration = obj5.useAvatarDecoration(user, guildId);
   let obj6 = flag2;
   const items4 = [user, onPress];
@@ -453,14 +458,14 @@ const memoResult = react.memo(function UserRow(type) {
     } else {
       let tmp9;
       if (trailing.PENDING_INCOMING === type) {
-        let obj3 = { name: closure_17.DECLINE, label: formatToPlainString3(prop, obj4) };
+        let obj3 = { name: analyticsLocations.DECLINE, label: formatToPlainString3(prop, obj4) };
         const push3 = items.push;
         const intl6 = intl14.intl;
         formatToPlainString3 = intl6.formatToPlainString;
         obj4 = { name: obj15.getName(user) };
         prop = intl14.t["C9Xe6+"];
         obj15 = UserUtilsDefault;
-        let obj5 = { name: closure_17.ACCEPT, label: formatToPlainString4(v6p0yBo, obj6) };
+        let obj5 = { name: analyticsLocations.ACCEPT, label: formatToPlainString4(v6p0yBo, obj6) };
         const intl7 = intl14.intl;
         formatToPlainString4 = intl7.formatToPlainString;
         obj6 = { name: obj18.getName(user) };
@@ -476,15 +481,15 @@ const memoResult = react.memo(function UserRow(type) {
                 const current = closure_1_26.current;
                 if (null != applicationId) {
                   const obj2 = { userId: current.id, applicationId: tmp };
-                  const obj4 = user(NONE[18]);
+                  const obj4 = user(NONE[19]);
                   const result = obj4.cancelGameFriendRequest(obj2);
-                  const obj6 = type(NONE[17]);
+                  const obj6 = type(NONE[18]);
                   const result1 = obj6.presentGameFriendRequestIgnoredToast();
                 } else {
-                  const obj5 = { location: roleStyle };
-                  const obj = user(NONE[19]);
+                  const obj5 = { location: isMobileOnline };
+                  obj = user(NONE[20]);
                   obj.cancelFriendRequest(current.id, obj5);
-                  const obj3 = type(NONE[17]);
+                  const obj3 = type(NONE[18]);
                   const result2 = obj3.presentFriendRequestIgnoredToast();
                 }
               },
@@ -504,17 +509,17 @@ const memoResult = react.memo(function UserRow(type) {
           onPress() {
                 let closure_0 = applicationId;
                 const current = closure_1_26.current;
-                let obj = user(NONE[16]);
+                obj = user(NONE[17]);
                 let obj2 = {
                   userId: current.id,
                   applicationId,
-                  location: roleStyle,
+                  location: isMobileOnline,
                   onConfirm() {
                     if (null != closure_0) {
-                      const obj2 = closure_2_0(closure_2_2[17]);
+                      const obj2 = closure_2_0(closure_2_2[18]);
                       const result = obj2.presentGameFriendRequestAcceptedToast();
                     } else {
-                      const obj = closure_2_0(closure_2_2[17]);
+                      obj = closure_2_0(closure_2_2[18]);
                       const result1 = obj.presentFriendRequestAcceptedToast();
                     }
                   }
@@ -533,7 +538,7 @@ const memoResult = react.memo(function UserRow(type) {
         tmp9 = authStore3(View, obj7);
       } else if (trailing.PENDING_OUTGOING === type) {
         const push2 = items.push;
-        const obj14 = { name: closure_17.CANCEL, label: formatToPlainString(JFJ8Cg, obj16) };
+        const obj14 = { name: analyticsLocations.CANCEL, label: formatToPlainString(JFJ8Cg, obj16) };
         const intl4 = intl14.intl;
         formatToPlainString = intl4.formatToPlainString;
         obj16 = { name: obj8.getName(user) };
@@ -549,15 +554,15 @@ const memoResult = react.memo(function UserRow(type) {
                 const current = closure_1_26.current;
                 if (null != applicationId) {
                   const obj2 = { userId: current.id, applicationId: tmp };
-                  const obj4 = user(NONE[18]);
+                  const obj4 = user(NONE[19]);
                   const result = obj4.cancelGameFriendRequest(obj2);
-                  const obj6 = type(NONE[17]);
+                  const obj6 = type(NONE[18]);
                   const result1 = obj6.presentGameFriendRequestIgnoredToast();
                 } else {
-                  const obj5 = { location: roleStyle };
-                  const obj = user(NONE[19]);
+                  const obj5 = { location: isMobileOnline };
+                  obj = user(NONE[20]);
                   obj.cancelFriendRequest(current.id, obj5);
-                  const obj3 = type(NONE[17]);
+                  const obj3 = type(NONE[18]);
                   const result2 = obj3.presentFriendRequestIgnoredToast();
                 }
               },
@@ -571,13 +576,13 @@ const memoResult = react.memo(function UserRow(type) {
         obj12 = UserUtilsDefault;
         tmp9 = syncedClientThemes(View, obj17);
       } else if (trailing.SUGGESTION === type) {
-        let obj = { name: closure_17.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
-        let tmp = closure_17;
+        obj = { name: analyticsLocations.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
+        let tmp = analyticsLocations;
         let tmp2 = require;
         let tmp3 = dependencyMap;
         const push = items.push;
         intl = intl14.intl;
-        const obj21 = { name: closure_17.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
+        const obj21 = { name: analyticsLocations.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
         const obj23 = { style: closure_17.actions, children: syncedClientThemes(View, obj24) };
@@ -590,10 +595,10 @@ const memoResult = react.memo(function UserRow(type) {
                 let obj3;
                 const current = closure_1_26.current;
                 const obj2 = { userId: current.id, context: obj3, type: "IconComponent", fromFriendSuggestion: null };
-                obj3 = { location: roleStyle };
-                const obj = user(NONE[19]);
+                obj3 = { location: isMobileOnline };
+                obj = user(NONE[20]);
                 obj.addRelationship(obj2);
-                const obj4 = type(NONE[17]);
+                const obj4 = type(NONE[18]);
                 const result = obj4.presentAddedFriendToast();
               }
         };
@@ -604,13 +609,13 @@ const memoResult = react.memo(function UserRow(type) {
       } else {
         const FRIEND = tmp37.FRIEND;
         const push4 = items.push;
-        const obj27 = { name: closure_17.CALL, label: formatToPlainString7(Q75ddl, obj28) };
+        const obj27 = { name: analyticsLocations.CALL, label: formatToPlainString7(Q75ddl, obj28) };
         const intl10 = intl14.intl;
         formatToPlainString7 = intl10.formatToPlainString;
         obj28 = { name: obj30.getName(user) };
         Q75ddl = intl14.t.Q75ddl;
         obj30 = UserUtilsDefault;
-        const obj29 = { name: closure_17.MESSAGE, label: formatToPlainString8(zFfSFQ, obj31) };
+        const obj29 = { name: analyticsLocations.MESSAGE, label: formatToPlainString8(zFfSFQ, obj31) };
         const intl11 = intl14.intl;
         formatToPlainString8 = intl11.formatToPlainString;
         obj31 = { name: obj33.getName(user) };
@@ -624,21 +629,21 @@ const memoResult = react.memo(function UserRow(type) {
           type: "neutral",
           onPress() {
                 const current = closure_1_26.current;
-                let obj = user(NONE[13]);
+                obj = user(NONE[14]);
                 const ensurePrivateChannelResult = obj.ensurePrivateChannel(current.id);
                 ensurePrivateChannelResult.then((result) => {
                   channel = channel.getChannel(result);
                   if (null != channel) {
-                    const tmp3 = closure_2_1(closure_2_2[14]);
+                    const tmp3 = closure_2_1(closure_2_2[15]);
                     tmp3(channel.isPrivate(), "must be a DM");
-                    const obj2 = closure_2_1(closure_2_2[15])(channel, false);
+                    const obj2 = closure_2_1(closure_2_2[16])(channel, false);
                     const tmp = closure_2_1;
                     const tmp2 = closure_2_2;
                     if (!obj2.inCall) {
                       obj2.onPress();
                     }
-                    const obj = { recipientIds: current.id };
-                    const tmpResult = tmp(tmp2[13]);
+                    obj = { recipientIds: current.id };
+                    const tmpResult = tmp(tmp2[14]);
                     tmpResult.openPrivateChannel(obj);
                   }
                 });
@@ -684,33 +689,33 @@ const memoResult = react.memo(function UserRow(type) {
   const callback1 = flag2.useCallback((nativeEvent) => {
     let obj7;
     const actionName = nativeEvent.nativeEvent.actionName;
-    if (closure_17.CALL === actionName) {
+    if (analyticsLocations.CALL === actionName) {
       let closure_0 = user;
       const obj14 = ChannelActionCreatorsDefault;
       const ensurePrivateChannelResult = obj14.ensurePrivateChannel(user.id);
       ensurePrivateChannelResult.then((result) => {
         channel = channel.getChannel(result);
         if (null != channel) {
-          const tmp3 = closure_2_1(closure_2_2[14]);
+          const tmp3 = closure_2_1(closure_2_2[15]);
           tmp3(channel.isPrivate(), "must be a DM");
-          const obj2 = closure_2_1(closure_2_2[15])(channel, false);
+          const obj2 = closure_2_1(closure_2_2[16])(channel, false);
           const tmp = closure_2_1;
           const tmp2 = closure_2_2;
           if (!obj2.inCall) {
             obj2.onPress();
           }
-          const obj = { recipientIds: current.id };
-          const tmpResult = tmp(tmp2[13]);
+          obj = { recipientIds: current.id };
+          const tmpResult = tmp(tmp2[14]);
           tmpResult.openPrivateChannel(obj);
         }
       });
-    } else if (closure_17.MESSAGE === actionName) {
+    } else if (analyticsLocations.MESSAGE === actionName) {
       let tmp33Result;
       if (handleMessage != null) {
         tmp33Result = tmp33(user);
       }
       return tmp33Result;
-    } else if (closure_17.ACCEPT === actionName) {
+    } else if (analyticsLocations.ACCEPT === actionName) {
       closure_0 = applicationId;
       const obj3 = {
         userId: user.id,
@@ -718,10 +723,10 @@ const memoResult = react.memo(function UserRow(type) {
         location: Friends_v2,
         onConfirm() {
             if (null != closure_0) {
-              const obj2 = closure_2_0(closure_2_2[17]);
+              const obj2 = closure_2_0(closure_2_2[18]);
               const result = obj2.presentGameFriendRequestAcceptedToast();
             } else {
-              const obj = closure_2_0(closure_2_2[17]);
+              obj = closure_2_0(closure_2_2[18]);
               const result1 = obj.presentFriendRequestAcceptedToast();
             }
           }
@@ -729,17 +734,17 @@ const memoResult = react.memo(function UserRow(type) {
       const obj12 = PeopleUtilsDefault;
       const result = obj12.maybeConfirmFriendRequestAccept(obj3);
     } else {
-      if (closure_17.DECLINE !== actionName) {
-        if (closure_17.CANCEL !== actionName) {
-          if (closure_17.ACCEPT_SUGGESTION === actionName) {
+      if (analyticsLocations.DECLINE !== actionName) {
+        if (analyticsLocations.CANCEL !== actionName) {
+          if (analyticsLocations.ACCEPT_SUGGESTION === actionName) {
             const obj4 = { userId: user.id, context: obj7, type: "IconComponent", fromFriendSuggestion: null };
             obj7 = { location: Friends_v2 };
             const obj2 = RelationshipActionCreatorsDefault;
             obj2.addRelationship(obj4);
             const obj5 = ToastUtils;
             const result1 = obj5.presentAddedFriendToast();
-          } else if (closure_17.IGNORE_SUGGESTION === actionName) {
-            const obj = FriendSuggestionActionCreatorsDefault;
+          } else if (analyticsLocations.IGNORE_SUGGESTION === actionName) {
+            obj = FriendSuggestionActionCreatorsDefault;
             obj.ignore(user.id);
           }
         }
@@ -763,16 +768,16 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8299, dependencyMap.paths);
+      const promise = asyncRequire(8577, dependencyMap.paths);
       promise.then((result) => {
-        const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
+        obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
       });
     } else {
       tmp(user);
     }
   }, items8);
-  let obj7 = type(NONE[40]);
+  let obj7 = type(NONE[41]);
   const nameplate = obj7.useNameplate({ user, guildId });
   const items9 = [usernameColor, roleStyle];
   const memo1 = flag2.useMemo(() => {
@@ -780,7 +785,7 @@ const memoResult = react.memo(function UserRow(type) {
     if (null != usernameColor) {
       if ("username" === roleStyle) {
         tmp2 = { color: tmp };
-        const obj = { color: tmp };
+        obj = { color: tmp };
       }
     }
     return tmp2;
@@ -790,7 +795,7 @@ const memoResult = react.memo(function UserRow(type) {
   let name;
   const memo2 = flag2.useMemo(() => {
     let tmp4;
-    const obj = { style: closure_17.avatar, user, guildId, status: tmp4, isMobileOnline, isVROnline, size: native.AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, autoStatusCutout: true };
+    obj = { style: closure_17.avatar, user, guildId, status: tmp4, isMobileOnline, isVROnline, size: native.AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, autoStatusCutout: true };
     tmp4 = null;
     const Avatar = native.Avatar;
     const tmp = syncedClientThemes;
@@ -822,7 +827,7 @@ const memoResult = react.memo(function UserRow(type) {
       }
       name = stateFromStores;
       if (stateFromStores == null) {
-        const obj = UserUtilsDefault;
+        obj = UserUtilsDefault;
         name = obj.getName(user);
       }
     }
@@ -836,7 +841,7 @@ const memoResult = react.memo(function UserRow(type) {
       const tmp = authStore3;
       const tmp2 = authStore4;
       if (flag3) {
-        const obj = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
+        obj = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
         const CrownIcon = CrownIcon2.CrownIcon;
         tmp5 = syncedClientThemes(CrownIcon, obj);
       }
@@ -856,8 +861,8 @@ const memoResult = react.memo(function UserRow(type) {
   const memo5 = obj6.useMemo(() => {
     let tmp = subLabel;
     if (undefined === subLabel) {
-      const obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
-      tmp = syncedClientThemes(closure_21, obj);
+      obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
+      tmp = syncedClientThemes(closure_22, obj);
     }
     return tmp;
   }, items13);
@@ -876,8 +881,8 @@ const memoResult = react.memo(function UserRow(type) {
     }
     return tmp;
   }, items14);
-  let tmp25 = tmp4(tmp5[43])(guildId, user.id);
-  const tmp6Result = tmp6(tmp5[44]);
+  let tmp25 = tmp4(tmp5[44])(guildId, user.id);
+  const tmp6Result = tmp6(tmp5[45]);
   const processColorStringsArray = tmp6Result.useProcessColorStringsArray(roleColors);
   if (tmp25) {
     tmp25 = "username" === roleStyle;
@@ -886,17 +891,17 @@ const memoResult = react.memo(function UserRow(type) {
     tmp25 = processColorStringsArray.length > 1;
   }
   let obj8 = { userId: user.id, guildId };
-  const tmp26 = tmp4(tmp5[45])(obj8);
-  const tmp6Result4 = tmp6(tmp5[46]);
+  const tmp26 = tmp4(tmp5[46])(obj8);
+  const tmp6Result4 = tmp6(tmp5[47]);
   const displayNameStylesFont = tmp6Result4.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
-  const tmp6Result5 = tmp6(tmp5[26]);
+  const tmp6Result5 = tmp6(tmp5[27]);
   const humanizeStatusResult = tmp6Result5.humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let formatToPlainStringResult;
   if (typeof memo3 === "string") {
     if (null != humanizeStatusResult) {
-      let intl = tmp6(tmp5[30]).intl;
+      let intl = tmp6(tmp5[31]).intl;
       let obj9 = { label: memo3, status: humanizeStatusResult };
-      formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[30]).t["/6mw10"], obj9);
+      formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[31]).t["/6mw10"], obj9);
     }
   }
   let obj10 = { lineClamp: 1, variant: "text-md/semibold" };
@@ -909,7 +914,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (null == guildId) {
         let obj12 = { userId: user.id, userName: memo3, style: items15, defaultColor: "mobile-text-heading-primary", accessibilityLabel: formatToPlainStringResult };
         items15 = [tmp3.usernameLabel, memo1];
-        const tmp4Result = tmp4(tmp5[47]);
+        const tmp4Result = tmp4(tmp5[48]);
         const merged1 = Object.assign(obj10);
         tmp32Result6 = label(tmp4Result, obj12);
         tmp32 = label;
@@ -917,18 +922,18 @@ const memoResult = react.memo(function UserRow(type) {
       const items16 = [tmp32Result6, memo4, , ];
       if (user.bot) {
         let obj13 = { verified: user.isVerifiedBot(), type: tmp6Result6.getBotTagTypeFromUser(user) };
-        const tmp4Result2 = tmp4(tmp5[48]);
-        tmp6Result6 = tmp6(tmp5[49]);
+        const tmp4Result2 = tmp4(tmp5[49]);
+        tmp6Result6 = tmp6(tmp5[50]);
         tmp32Result = tmp32(tmp4Result2, obj13);
       } else {
         let obj14 = { userId: user.id };
-        tmp32Result = tmp32(tmp4(tmp5[50]), obj14);
+        tmp32Result = tmp32(tmp4(tmp5[51]), obj14);
       }
       items16[2] = tmp32Result;
       let tmp32Result4 = null != guildId;
       if (tmp32Result4) {
         let obj15 = { guildId, userId: user.id };
-        tmp32Result4 = tmp32(tmp4(tmp5[51]), obj15);
+        tmp32Result4 = tmp32(tmp4(tmp5[52]), obj15);
       }
       items16[3] = tmp32Result4;
       obj11.children = items16;
@@ -941,7 +946,7 @@ const memoResult = react.memo(function UserRow(type) {
       let tmp30Result2 = tmp30Result;
       if (!tmp45) {
         let obj16 = { style: tmp3.labelContainer, children: items17 };
-        const RoleDot = tmp6(tmp5[24]).RoleDot;
+        const RoleDot = tmp6(tmp5[25]).RoleDot;
         if (usernameColor == null) {
           usernameColor = null;
         }
@@ -964,20 +969,20 @@ const memoResult = react.memo(function UserRow(type) {
       }
       if (NONE === guildId.TOGGLE) {
         let obj19 = { checked: flag };
-        const TableCheckboxRow = tmp6(tmp5[52]).TableCheckboxRow;
+        const TableCheckboxRow = tmp6(tmp5[53]).TableCheckboxRow;
         const merged3 = Object.assign(obj18);
         tmp32Result5 = tmp32(TableCheckboxRow, obj19);
       } else {
         if (null != nameplate) {
           if (flag5) {
             let obj20 = { trailing: memo6, nameplate };
-            const UserNameplateRow = tmp6(tmp5[53]).UserNameplateRow;
+            const UserNameplateRow = tmp6(tmp5[54]).UserNameplateRow;
             const merged4 = Object.assign(obj18);
             tmp32Result5 = tmp32(UserNameplateRow, obj20);
           }
         }
         let obj21 = { trailing: memo6 };
-        const TableRow = tmp6(tmp5[54]).TableRow;
+        const TableRow = tmp6(tmp5[55]).TableRow;
         const merged5 = Object.assign(obj18);
         tmp32Result5 = tmp32(TableRow, obj21);
       }
@@ -986,12 +991,12 @@ const memoResult = react.memo(function UserRow(type) {
   }
   tmp32 = label;
   let tmp33;
-  const Text = tmp6(tmp5[25]).Text;
+  const Text = tmp6(tmp5[26]).Text;
   if (tmp25) {
     tmp33 = processColorStringsArray;
   }
   let obj22 = { gradientColors: tmp33, color: "mobile-text-heading-primary", style: items18, accessibilityLabel: formatToPlainStringResult, children: memo3 };
-  items18 = [tmp3.usernameLabel, memo1, ];
+  items18 = [tmp3.usernameLabel, null != guildId && closure_17, memo1, ];
   if (flag7) {
     flag7 = null != displayNameStylesFont;
   }
@@ -999,7 +1004,7 @@ const memoResult = react.memo(function UserRow(type) {
     let obj23 = { fontFamily: displayNameStylesFont };
     flag7 = obj23;
   }
-  items18[2] = flag7;
+  items18[3] = flag7;
   const merged6 = Object.assign(obj10);
   tmp32Result6 = tmp32(Text, obj22);
 });

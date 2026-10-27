@@ -1,16 +1,18 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8977
+// Function ID: 8978
 // Name: queryGamesAutocomplete
-// Dependencies: [8231, 551, 8702, 8704, 8232, 2]
+// Dependencies: [8508, 551, 8978, 8980, 8509, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 8701 (queryGamesAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8232 */;
-import useGameAutocomplete2 from "useGameAutocomplete" /* 8702 */;
-import GameSearchSession from "GameSearchSession" /* 8704 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8231 */;
+// Module 8977 (queryGamesAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
+import useGameAutocomplete2 from "useGameAutocomplete" /* 8978 */;
+import GameSearchSession from "GameSearchSession" /* 8980 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8508 */;
 import debounce from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 let obj = { leading: true, maxWait: useGameAutocomplete2.GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS };
 const GAME_AUTOCOMPLETE_DEBOUNCE_MS = useGameAutocomplete2.GAME_AUTOCOMPLETE_DEBOUNCE_MS;
@@ -37,7 +39,7 @@ export const queryGamesAutocomplete = function queryGamesAutocomplete(query, DEF
   } else {
     closure_3(result, DEFAULT);
     const closestResults = GameAutocompleteStore.getClosestResults(result, DEFAULT);
-    let results;
+    results = undefined;
     if (closestResults != null) {
       results = closestResults.results;
     }

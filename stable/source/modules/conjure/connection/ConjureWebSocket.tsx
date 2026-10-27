@@ -1,9 +1,9 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 11073
+// Function ID: 11074
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 13254 (ConjureWebSocket)
+// Module 11073 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -15,14 +15,27 @@ class ConjureWebSocket {
     let closure_1;
     let closure_2;
     let closure_3;
+    let obj3;
+    let templateId;
     let url;
     const self = this;
-    ({ url, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    ({ url, templateId, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    let webSocket;
     ticket = ticket.ticket;
     this.close();
+    const obj = { ticket, debug: "on_demand" };
     const str = url.replace(/^https:/i, "wss:");
     const replaced = str.replace(/^http:/i, "ws:");
-    const webSocket = new WebSocket("" + replaced + "/agent/ws?ticket=" + encodeURIComponent(ticket) + "&debug=on_demand");
+    const _URLSearchParams = URLSearchParams;
+    if (null != templateId) {
+      obj3 = { template: templateId };
+      const obj2 = { template: templateId };
+    } else {
+      obj3 = {};
+    }
+    const merged = Object.assign(obj3);
+    const _URLSearchParams1 = new _URLSearchParams(obj);
+    webSocket = new WebSocket("" + replaced + "/agent/ws?" + _URLSearchParams1);
     this.socket = webSocket;
     const listener = webSocket.addEventListener("message", (event) => {
       if (self.socket === webSocket) {
@@ -47,6 +60,19 @@ class ConjureWebSocket {
         }
       }
     });
+  }
+  sendPublishScheduleMessage(map) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify(map));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
   }
   sendUserMessage(content, nonce, attachment_ids, project_name) {
     const self = this;
@@ -74,6 +100,19 @@ class ConjureWebSocket {
       }
     }
     error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendRetryRemix() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify({ type: "retry_remix" }));
+      }
+    }
+    const error = new Error("WebSocket not open");
     throw error;
   }
   sendInterrupt() {
@@ -118,6 +157,19 @@ class ConjureWebSocket {
     const error = new Error("WebSocket not open");
     throw error;
   }
+  sendPreparePublish() {
+    const self = this;
+    let tmp = null != this.socket;
+    if (tmp) {
+      const _WebSocket = WebSocket;
+      tmp = self.socket.readyState === WebSocket.OPEN;
+    }
+    if (tmp) {
+      const socket = self.socket;
+      const _JSON = JSON;
+      socket.send(JSON.stringify({ type: "prepare_publish" }));
+    }
+  }
   sendDraftPatchNotes(combined, name) {
     const self = this;
     if (null != this.socket) {
@@ -136,6 +188,30 @@ class ConjureWebSocket {
         }
         const merged = Object.assign(obj3);
         send(stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendPatchNotesSent(sent, source_sha) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        let obj;
+        const socket = self.socket;
+        const obj2 = { type: "patch_notes_sent", published_revision: null, guild_id: null, channel_id: null, message_id: null };
+        ({ publishedRevision: obj3.published_revision, guildId: obj3.guild_id, channelId: obj3.channel_id, messageId: obj3.message_id } = sent);
+        const send = socket.send;
+        const _JSON = JSON;
+        if (null != source_sha) {
+          obj = { source_sha };
+          const obj5 = { source_sha };
+        } else {
+          obj = {};
+        }
+        const merged = Object.assign(obj);
+        send(stringify(obj2));
       }
     }
     const error = new Error("WebSocket not open");
@@ -163,6 +239,20 @@ class ConjureWebSocket {
         const socket = self.socket;
         const _JSON = JSON;
         const obj = { type: "set_overlay_background_blur", enabled };
+        socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendPrepareTemplate(template_id) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "prepare_template", template_id };
         socket.send(JSON.stringify(obj));
       }
     }
@@ -279,6 +369,19 @@ class ConjureWebSocket {
         const _JSON = JSON;
         const obj = { type: "set_smart_context", enabled };
         socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendHostAccess(arg0) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify(arg0));
       }
     }
     const error = new Error("WebSocket not open");

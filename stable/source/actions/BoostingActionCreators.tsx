@@ -1,17 +1,17 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8296
+// Function ID: 8297
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8023, 8024, 4775, 1085, 1295, 584, 5635, 2]
+// Dependencies: [5, 8297, 8298, 4870, 1087, 1297, 584, 5891, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8022 (actions/BoostingActionCreators)
+// Module 8296 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8023 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8024 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8297 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8298 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -311,8 +311,8 @@ obj = function _applyToGuild() {
     let c8 = 0;
     let c6 = 0;
     const iter = (async function(arg0, value) {
-      let obj14;
-      let obj6;
+      let obj15;
+      let obj7;
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -340,16 +340,18 @@ obj = function _applyToGuild() {
             } else {
               closure_4 = tmp;
               closure_3 = tmp4;
-              flag = closure_2;
+              flag = undefined;
+              let obj4 = closure_2;
               if (closure_2 === undefined) {
-                flag = false;
+                obj4 = {};
               }
+              flag = obj4.disablePowerupAutoApply ?? false;
               closure_3 = undefined;
               mapped = undefined;
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -359,18 +361,18 @@ obj = function _applyToGuild() {
               c8 = 3;
               return { value, done: true };
             } else {
-              const obj11 = closure_132_1(closure_132_2[6]);
-              obj11.dispatch({ type: "GUILD_APPLY_BOOST_START" });
+              const obj12 = closure_132_1(closure_132_2[6]);
+              obj12.dispatch({ type: "GUILD_APPLY_BOOST_START" });
               c6 = 1;
               const HTTP = closure_132_0(closure_132_2[5]).HTTP;
-              const request = { url: closure_132_7.APPLIED_GUILD_BOOSTS_FOR_GUILD(closure_0), body: obj6, oldFormErrors: true, rejectWithError: obj14.rejectWithMigratedError() };
+              const request = { url: closure_132_7.APPLIED_GUILD_BOOSTS_FOR_GUILD(closure_0), body: obj7, oldFormErrors: true, rejectWithError: obj15.rejectWithMigratedError() };
               const put = HTTP.put;
-              obj6 = { user_premium_guild_subscription_slot_ids, disable_powerup_auto_apply: flag };
+              obj7 = { user_premium_guild_subscription_slot_ids, disable_powerup_auto_apply: flag };
               c7 = 3;
               c8 = 1;
-              obj14 = closure_132_0(closure_132_2[5]);
-              const obj7 = { value: put(request), done: false };
-              return obj7;
+              obj15 = closure_132_0(closure_132_2[5]);
+              const obj8 = { value: put(request), done: false };
+              return obj8;
             }
           } else if (2 === c7) {
             c6 = 0;
@@ -378,9 +380,9 @@ obj = function _applyToGuild() {
             const self = this;
             const self2 = this;
             appliedGuildBoostError = new closure_132_0(closure_132_2[7]).AppliedGuildBoostError(closure_6);
-            const obj8 = { type: "GUILD_APPLY_BOOST_FAIL", error: appliedGuildBoostError };
+            const obj9 = { type: "GUILD_APPLY_BOOST_FAIL", error: appliedGuildBoostError };
             const obj5 = closure_132_1(closure_132_2[6]);
-            obj5.dispatch(obj8);
+            obj5.dispatch(obj9);
             throw appliedGuildBoostError;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -398,9 +400,9 @@ obj = function _applyToGuild() {
             } else {
               mapped = [closure_132_4.createFromServer(closure_3.body)];
             }
-            const obj10 = { type: "GUILD_APPLY_BOOST_SUCCESS", appliedGuildBoost: mapped };
+            const obj11 = { type: "GUILD_APPLY_BOOST_SUCCESS", appliedGuildBoost: mapped };
             obj = closure_132_1(closure_132_2[6]);
-            obj.dispatch(obj10);
+            obj.dispatch(obj11);
             closure_132_10();
             c6 = 0;
             c8 = 3;

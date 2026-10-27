@@ -1,12 +1,12 @@
-// Module ID: 4831
-// Function ID: 4832
+// Module ID: 4926
+// Function ID: 4927
 // Name: ThemeContext
-// Dependencies: [19, 1096, 21, 558, 576, 2]
+// Dependencies: [19, 1098, 21, 558, 576, 2]
 // Exports: createThemedContext
 
-// Module 4831 (ThemeContext)
+// Module 4926 (ThemeContext)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1096 */;
+import Constants from "Constants" /* 1098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

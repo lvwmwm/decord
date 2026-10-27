@@ -1,10 +1,10 @@
-// Module ID: 4738
-// Function ID: 4739
+// Module ID: 4833
+// Function ID: 4834
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
-// Exports: parseGuildSpaceLeaderboardMessageData, parseServerMemberGamingLeaderboardData
+// Exports: getGuildSpaceLeaderboardUserIds, parseGuildSpaceLeaderboardMessageData, parseServerMemberGamingLeaderboardData
 
-// Module 4738 (GuildLeaderboardTypes)
+// Module 4833 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const GamingLeaderboardStat = { GAMING_LEADERBOARD_STAT_UNSPECIFIED: 0, [0]: "GAMING_LEADERBOARD_STAT_UNSPECIFIED", GAMING_LEADERBOARD_STAT_HOURS_PLAYED: 1, [1]: "GAMING_LEADERBOARD_STAT_HOURS_PLAYED", GAMING_LEADERBOARD_STAT_DAYS_PLAYED: 2, [2]: "GAMING_LEADERBOARD_STAT_DAYS_PLAYED", GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED: 3, [3]: "GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED" };
@@ -13,6 +13,17 @@ const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboar
 
 export { GamingLeaderboardStat };
 export const GuildSpaceLeaderboardEvent = obj2;
+export const getGuildSpaceLeaderboardUserIds = function getGuildSpaceLeaderboardUserIds(leaderboard) {
+  let items;
+  if (null == leaderboard) {
+    items = [];
+  } else {
+    const items1 = [, ];
+    ({ user_id: arr[0], secondary_user_id: arr[1] } = leaderboard);
+    items = items1.filter((item) => null != item);
+  }
+  return items;
+};
 export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLeaderboardMessageData(leaderboard) {
   let obj;
   let secondary_user_id;

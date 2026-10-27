@@ -1,14 +1,14 @@
-// Module ID: 12960
-// Function ID: 12961
+// Module ID: 13886
+// Function ID: 13887
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4802, 1085, 1497, 8383, 2000, 8384, 8385, 12961, 1126, 5056, 5934, 12962, 2]
+// Dependencies: [32, 5, 4897, 1087, 1499, 8661, 2002, 8662, 8663, 13887, 1128, 5155, 6190, 13888, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 12960 (openAppStoreOverlayMediaModal)
-import Constants from "Constants" /* 1085 */;
+// Module 13886 (openAppStoreOverlayMediaModal)
+import Constants from "Constants" /* 1087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import ActionSheetStore from "ActionSheetStore" /* 4897 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj = function _openAppStoreOverlayMediaModal() {
@@ -101,7 +101,7 @@ let obj = function _openAppStoreOverlayMediaModal() {
     }
     ({ initialSources: c2, analyticsSource: c3, channelId: c4, onGetGamePress: c5, onClose: c6 } = closure_0);
     let closure_7 = Object.assign(tmp42, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

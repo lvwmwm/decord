@@ -1,17 +1,18 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 11112
+// Function ID: 11113
 // Name: useScrollHandlers
-// Dependencies: [19, 9379, 3, 558, 576, 9596, 5362, 10678, 1272, 9598, 5975, 2]
+// Dependencies: [19, 9683, 3, 558, 576, 9897, 11113, 5462, 11098, 1274, 9899, 6231, 2]
 
-// Module 10693 (useScrollHandlers)
+// Module 11112 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 1272 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 9596 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9598 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10678 */;
+import react_native from "react-native" /* 1274 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 9897 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9899 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11098 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +21,7 @@ let importDefault;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const QuestTypes = tmp(5975);
+const QuestTypes = tmp(6231);
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: hasOwnProperty } = useChatBottomManagerUIStore);
 let tmp3 = new LoggerDefault("useScrollHandlers");
 let closure_6 = tmp3;
@@ -236,7 +237,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollHan
                               ref4.current = tmp2;
                               ref6.current = undefined !== dragging && dragging;
                               ref5.current = undefined !== decelerating && decelerating;
-                              const obj2 = chatRef(chatUpdatesQueue[8]);
+                              const obj2 = chatRef(chatUpdatesQueue[9]);
                               obj2.batchUpdates(() => {
                                 let hasMoreAfter = closure_1;
                                 const tmp = hasOwnProperty;
@@ -339,10 +340,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollHan
             function updateNativeRows(isLoadingAtTop) {
               if (chatUpdatesQueue.isBlocking) {
                 chatUpdatesQueue.add(isLoadingAtTop);
-              } else if (!isLoadingAtTop.isLoadingAtTop) {
-                applyNativeRowsUpdate(isLoadingAtTop);
               } else {
-                chatUpdatesQueue.add(isLoadingAtTop);
+                isLoadingAtTop = isLoadingAtTop.isLoadingAtTop;
+                const obj2 = IOSAnchoredChatScrollerExperiment;
+                if (!obj2.isIOSAnchoredChatScrollerEnabled()) {
+                  if (isLoadingAtTop) {
+                    chatUpdatesQueue.add(isLoadingAtTop);
+                  }
+                }
+                applyNativeRowsUpdate(isLoadingAtTop);
               }
             }
             cResult[15] = applyNativeRowsUpdate;
@@ -610,10 +616,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollHan
     updateNativeRows(isLoadingAtTop) {
       if (dependencyMap.isBlocking) {
         dependencyMap.add(isLoadingAtTop);
-      } else if (!isLoadingAtTop.isLoadingAtTop) {
-        closure_8(isLoadingAtTop);
       } else {
-        dependencyMap.add(isLoadingAtTop);
+        isLoadingAtTop = isLoadingAtTop.isLoadingAtTop;
+        const obj2 = IOSAnchoredChatScrollerExperiment;
+        if (!obj2.isIOSAnchoredChatScrollerEnabled()) {
+          if (isLoadingAtTop) {
+            dependencyMap.add(isLoadingAtTop);
+          }
+        }
+        closure_8(isLoadingAtTop);
       }
     },
     handleScrollCallbacks,

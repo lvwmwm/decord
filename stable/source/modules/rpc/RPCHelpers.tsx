@@ -1,43 +1,43 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 11335
+// Function ID: 11336
 // Name: RPCHelpers
-// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7174, 5079, 5627, 10947, 5409, 1386, 8453, 1295, 10937, 10809, 10948, 2]
-// Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
+// Dependencies: [5, 5540, 2024, 2072, 2090, 2014, 5532, 5207, 1392, 5212, 5895, 1087, 1386, 5176, 1104, 12, 9168, 7445, 11336, 5509, 9167, 1389, 8731, 1297, 9169, 6299, 11338, 2]
+// Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformBigFlag, transformChannel, transformGuildMember, transformRole, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10946 (RPCHelpers)
+// Module 11335 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import urlParseDefault from "urlParse" /* 1386 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 10809 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
-import LeakyBucketDefault from "LeakyBucket" /* 10948 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import urlParseDefault from "urlParse" /* 1389 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
+import transformUserDefault from "transformUser" /* 9167 */;
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9168 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import transformMessage from "transformMessage" /* 11336 */;
+import LeakyBucketDefault from "LeakyBucket" /* 11338 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import MessageStore from "MessageStore" /* 5432 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import Constants_mod from "Constants" /* 5639 */;
-import Constants_mod2 from "Constants" /* 1085 */;
-import URLUtils from "URLUtils" /* 1384 */;
-import RegexUtils_mod from "RegexUtils" /* 5076 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import UserStore from "UserStore" /* 1392 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import Constants_mod from "Constants" /* 5895 */;
+import Constants_mod2 from "Constants" /* 1087 */;
+import URLUtils from "URLUtils" /* 1386 */;
+import RegexUtils_mod from "RegexUtils" /* 5176 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let c4, createFromServer, rpc_origins, set;
 
+let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
@@ -45,36 +45,7 @@ let closure_18;
 let closure_19;
 let closure_20;
 let closure_21;
-let closure_22;
-let closure_23;
-let tmp;
-const transformUserDefault = tmp(10947);
-function recurseReplaceContentTree(type) {
-  if ("customEmoji" === type.type) {
-    type.type = "emoji";
-  }
-  const tmp = "emoji" === type.type && type.src;
-  if (tmp) {
-    let combined = str2;
-    obj = /^http/;
-    if (!obj.test(type.src)) {
-      const _location = location;
-      const _location2 = location;
-      let str3 = "/";
-      if ("/" === type.src.charAt(0)) {
-        str3 = "";
-      }
-      const _HermesInternal = HermesInternal;
-      combined = "" + protocol + "//" + host + str3 + str2;
-    }
-    type.src = combined;
-  }
-  if (Array.isArray(type.content)) {
-    const content = type.content;
-    type.content = content.map(recurseReplaceContentTree);
-  }
-  return type;
-}
+let map1;
 function validateOrigin(arg0) {
   let items = arg1;
   if (arg1 === undefined) {
@@ -82,52 +53,9 @@ function validateOrigin(arg0) {
   }
   return items.indexOf(arg0) > -1;
 }
-function transformInternalTextMessage(message) {
-  let colorString;
-  let nick;
-  let tmp11;
-  let tmp8;
-  obj = MarkupUtilsDefault;
-  const obj2 = { channelId: message.channel_id };
-  const parseToASTResult = obj.parseToAST(message.content, true, obj2);
-  const mapped = parseToASTResult.map(recurseReplaceContentTree);
-  let tmp4;
-  const channel = ChannelStore.getChannel(message.channel_id);
-  if (null != message.author) {
-    const self = this;
-    const self2 = this;
-    tmp4 = new UserRecord(message.author);
-  }
-  let userAuthor;
-  if (null != message.author) {
-    const obj3 = useMessageAuthor;
-    userAuthor = obj3.getUserAuthor(tmp4, channel);
-  }
-  const obj6 = { id: message.id, blocked: message.blocked, bot: message.bot, content: message.content, content_parsed: tmp8, nick, author_color: colorString, edited_timestamp: message.edited_timestamp || message.editedTimestamp, timestamp: null, tts: null, mentions: null, mention_everyone: message.mention_everyone || message.mentionEveryone, mention_roles: message.mention_roles || message.mentionRoles, embeds: null, attachments: null, author: tmp11, pinned: null, type: null };
-  tmp8 = undefined;
-  if (mapped.length) {
-    tmp8 = mapped;
-  }
-  nick = undefined;
-  if (userAuthor != null) {
-    nick = userAuthor.nick;
-  }
-  colorString = undefined;
-  if (userAuthor != null) {
-    colorString = userAuthor.colorString;
-  }
-  ({ timestamp: obj4.timestamp, tts: obj4.tts, mentions: obj4.mentions } = message);
-  ({ embeds: obj4.embeds, attachments: obj4.attachments } = message);
-  tmp11 = undefined;
-  if (null != tmp4) {
-    tmp11 = transformUserDefault(tmp4);
-  }
-  ({ pinned: obj4.pinned, type: obj4.type } = message);
-  return obj6;
-}
 function fetchApplicationRPC(arg0) {
   const HTTP = HTTPUtils.HTTP;
-  obj = { url: closure_19.APPLICATION_RPC(arg0), oldFormErrors: true, retries: 3, rejectWithError: true };
+  obj = { url: closure_17.APPLICATION_RPC(arg0), oldFormErrors: true, retries: 3, rejectWithError: true };
   const value = HTTP.get(obj);
   return value.then((body) => body.body, () => {
     obj = { closeCode: constants.INVALID_CLIENTID };
@@ -218,11 +146,11 @@ let obj = function _validateSocketApplication() {
               } else {
                 rpc_origins = value;
                 application2 = closure_133_5.createFromServer(rpc_origins);
-                if (!closure_133_28(closure_2, rpc_origins.rpc_origins)) {
+                if (!closure_133_25(closure_2, rpc_origins.rpc_origins)) {
                   const self = this;
                   const self2 = this;
-                  const obj7 = { closeCode: closure_133_21.INVALID_ORIGIN };
-                  const tmp13 = new closure_133_1(closure_133_2[26])(obj7, "Invalid Origin");
+                  const obj7 = { closeCode: closure_133_19.INVALID_ORIGIN };
+                  const tmp13 = new closure_133_1(closure_133_2[24])(obj7, "Invalid Origin");
                   throw tmp13;
                 }
               }
@@ -249,15 +177,15 @@ let obj = function _validateSocketApplication() {
             c8 = 3;
             return { value: "IconComponent", done: null };
           }
-          closure_5 = transport.transport === closure_133_16.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
-          const tmp24 = transport.transport === closure_133_16.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
+          closure_5 = transport.transport === closure_133_14.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
+          const tmp24 = transport.transport === closure_133_14.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
           const tmp32 = null == application2 || closure_5;
           if (tmp32) {
             rpc_origins = closure_133_5;
             createFromServer = closure_133_5.createFromServer;
             c7 = 2;
             c8 = 1;
-            const obj9 = { value: closure_133_30(closure_1), done: false };
+            const obj9 = { value: closure_133_26(closure_1), done: false };
             return obj9;
           }
         } catch (tmp64) {
@@ -300,7 +228,7 @@ obj = function _processSocketThrottlers() {
             return obj4;
           } else {
             let closure_3 = tmp;
-            let obj3 = closure_2_26[closure_0];
+            let obj3 = closure_2_24[closure_0];
             const tmp28 = closure_2;
             if (null == obj3) {
               let num5 = 60;
@@ -321,10 +249,10 @@ obj = function _processSocketThrottlers() {
           }
         } else if (1 === tmp4) {
           c6 = 0;
-          const obj6 = { closeCode: closure_131_21.CLOSE_ABNORMAL };
+          const obj6 = { closeCode: closure_131_19.CLOSE_ABNORMAL };
           const self = this;
           const self2 = this;
-          const tmp11 = new closure_131_1(closure_131_2[26])(obj6, "Socket closed during throttle");
+          const tmp11 = new closure_131_1(closure_131_2[24])(obj6, "Socket closed during throttle");
           throw tmp11;
         } else if (arg0 === 1) {
           c7 = 3;
@@ -354,9 +282,9 @@ obj = function _processSocketThrottlers() {
 };
 const GUILD_VOCAL_CHANNEL_TYPES = ChannelRecord.GUILD_VOCAL_CHANNEL_TYPES;
 let Constants = Constants_mod2;
-({ RPC_LOCAL_SCOPE: closure_15, TransportTypes: closure_16 } = Constants);
+({ RPC_LOCAL_SCOPE: map1, TransportTypes: closure_14 } = Constants);
 Constants = Constants_mod2;
-({ ActivityActionTypes: closure_17, ChannelTypes: closure_18, Endpoints: closure_19, MAX_MESSAGES_PER_CHANNEL: closure_20, RPCCloseCodes: closure_21, RPCErrors: closure_22, RTCConnectionStates: closure_23 } = Constants);
+({ ActivityActionTypes: closure_15, ChannelTypes: closure_16, Endpoints: closure_17, MAX_MESSAGES_PER_CHANNEL: closure_18, RPCCloseCodes: closure_19, RPCErrors: closure_20, RTCConnectionStates: closure_21 } = Constants);
 const toURLSafeResult = URLUtils.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT);
 let str;
 if (toURLSafeResult != null) {
@@ -369,6 +297,7 @@ let str2 = str.split(":")[0];
 let tmp5 = str2;
 if (str2.includes(".")) {
   const parts = str2.split(".");
+  let num = 1;
   let obj2 = /^\d+$/;
   if (!obj2.test(parts[parts.length - 1])) {
     const substr = parts.slice(-2);
@@ -376,20 +305,12 @@ if (str2.includes(".")) {
   }
   tmp5 = str2;
 }
-function getRemoteIconURL(icon) {
-  let combined = icon;
-  obj = /^http/;
-  if (!obj.test(icon)) {
-    const _location = location;
-    const _location2 = location;
-    let str = "/";
-    if ("/" === icon.charAt(0)) {
-      str = "";
-    }
-    const _HermesInternal = HermesInternal;
-    combined = "" + protocol + "//" + host + str + icon;
+function transformBigFlag(permissions) {
+  let str = permissions;
+  if (typeof permissions !== "bigint") {
+    str = permissions.toString();
   }
-  return combined;
+  return str;
 }
 function transformVoiceState(arg0, id, userId) {
   let deaf;
@@ -426,7 +347,6 @@ export const VALIDATE_SOCKET_CALLS_PER_PERIOD_LOW = 2;
 export const VALIDATE_SOCKET_CALLS_PER_PERIOD_HIGH = 60;
 export const VALIDATE_SOCKET_PERIOD_MS = MINUTE;
 export const VALIDATE_SOCKET_THROTTLERS = obj;
-export { getRemoteIconURL };
 export const containsSameValues = function containsSameValues(arg0, arg1) {
   const isEqual = _modDef12.isEqual;
   _modDef12;
@@ -434,6 +354,69 @@ export const containsSameValues = function containsSameValues(arg0, arg1) {
   return isEqual(arg0, obj.pick(arg1, Object.keys(arg0)));
 };
 export { validateOrigin };
+export { transformBigFlag };
+export const transformRole = function transformRole(id) {
+  let colors;
+  let permissions;
+  let str;
+  obj = { id: id.id, name: id.name, color: id.color, colors, hoist: null, position: null, permissions: str, managed: null, mentionable: null, icon: null, unicode_emoji: null, tags: null, flags: null };
+  colors = id.colors;
+  if (colors == null) {
+    colors = { primary_color: id.color, secondary_color: null, tertiary_color: null };
+    const obj2 = { primary_color: id.color, secondary_color: null, tertiary_color: null };
+  }
+  ({ hoist: obj.hoist, position: obj.position, permissions } = id);
+  str = permissions;
+  if (typeof permissions !== "bigint") {
+    str = permissions.toString();
+  }
+  ({ managed: obj.managed, mentionable: obj.mentionable, icon: obj.icon, unicodeEmoji: obj.unicode_emoji, tags: obj.tags, flags: obj.flags } = id);
+  return obj;
+};
+export const transformGuildMember = function transformGuildMember(userId) {
+  let avatar;
+  let banner;
+  let flag;
+  let joinedAt;
+  let nick;
+  let num;
+  let premiumSince;
+  let prop;
+  obj = { user_id: userId.userId, guild_id: userId.guildId, nick, avatar, avatar_decoration_data: transformAvatarDecorationDefault(userId.avatarDecoration), banner, roles: null, joined_at: joinedAt, premium_since: premiumSince, communication_disabled_until: prop, pending: flag, flags: num };
+  nick = userId.nick;
+  if (nick == null) {
+    nick = null;
+  }
+  avatar = userId.avatar;
+  if (avatar == null) {
+    avatar = null;
+  }
+  banner = userId.banner;
+  if (banner == null) {
+    banner = null;
+  }
+  ({ roles: obj.roles, joinedAt } = userId);
+  if (joinedAt == null) {
+    joinedAt = null;
+  }
+  premiumSince = userId.premiumSince;
+  if (premiumSince == null) {
+    premiumSince = null;
+  }
+  prop = userId.communicationDisabledUntil;
+  if (prop == null) {
+    prop = null;
+  }
+  flag = userId.isPending;
+  if (flag == null) {
+    flag = false;
+  }
+  num = userId.flags;
+  if (num == null) {
+    num = 0;
+  }
+  return obj;
+};
 export const transformChannel = function transformChannel(channel, result) {
   let closure_1 = result;
   const items = [];
@@ -461,7 +444,7 @@ export const transformChannel = function transformChannel(channel, result) {
       if (tmp6) {
         const messages = MessageStore.getMessages(tmp.id);
         const toArrayResult = messages.toArray();
-        const mapped = toArrayResult.map(transformInternalTextMessage);
+        const mapped = toArrayResult.map(transformMessage.transformMessageRecord);
       }
       const _Object = Object;
       const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(tmp.id));
@@ -512,7 +495,6 @@ export const transformChannel = function transformChannel(channel, result) {
     }
   });
 };
-export { transformInternalTextMessage };
 export { transformVoiceState };
 export const transformBaseRelationship = function transformBaseRelationship(relationshipType, user) {
   obj = { type: relationshipType, user: transformUserDefault(user), presence: { status: PresenceStore.getStatus(user.id, null), activity: null } };
@@ -607,7 +589,7 @@ export const processSocketThrottlers = function processSocketThrottlers() {
 export const validateOriginAndUpdateSocket = function validateOriginAndUpdateSocket(authorization, arg1) {
   if (null == arg1) {
     const _Set = Set;
-    const items = [authStore3];
+    const items = [map1];
     const self = this;
     const self2 = this;
     authorization = authorization.authorization;
@@ -621,18 +603,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f143449 = (index, index2) => index.index - index2.index;
-  const f143450 = (id) => ({ id: id.id, name: id.name });
+  const f145341 = (index, index2) => index.index - index2.index;
+  const f145342 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f143450), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f145342), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f143449);
+  sorted = values.sort(f145341);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f143450), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f145342), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f143449);
+  sorted1 = values2.sort(f145341);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

@@ -1,22 +1,22 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 11190
+// Function ID: 11191
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8059, 6157, 1200, 10775, 1126, 5088, 6840, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 8333, 5128, 1202, 11191, 1128, 5187, 7118, 2]
 
-// Module 10774 (PublicGuildAnnouncementProfile)
+// Module 11190 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8059 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10775 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8333 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11191 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
   const nameWrapper = tmp4.nameWrapper;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { source: AssetRegistryDefault, disableColor: true };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp14 = React3(Icon, obj3);
     cResult[3] = tmp14;
     tmp11 = tmp14;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
   }
   const headerText = tmp4.headerText;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.xfAlNx);
     cResult[4] = stringResult;
     tmp15 = stringResult;
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
     const _Symbol = Symbol;
     const description = tmp4.description;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl4.t.BUZ0sl);
       cResult[10] = stringResult1;
       tmp22 = stringResult1;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
     const _Symbol2 = Symbol;
     const description2 = tmp4.description;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const stringResult2 = intl3.string(intl4.t.w5beJH);
       cResult[13] = stringResult2;
       tmp27 = stringResult2;
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
     const obj7 = { startExpanded: true, children: hasOwnProperty(View, obj8) };
     obj8 = { style: content, children: items };
     items = [tmp7, tmp20, tmp24, tmp29];
-    BottomSheet = tmp(6840).BottomSheet;
+    BottomSheet = tmp(7118).BottomSheet;
     const tmp36 = React3(BottomSheet, obj7);
     cResult[16] = tmp4.content;
     cResult[17] = tmp24;

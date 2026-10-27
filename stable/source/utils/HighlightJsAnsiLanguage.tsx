@@ -1,10 +1,10 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 8424
+// Function ID: 8425
 // Name: HighlightJsAnsiLanguage
 // Dependencies: [2]
 // Exports: default
 
-// Module 5087 (HighlightJsAnsiLanguage)
+// Module 8424 (HighlightJsAnsiLanguage)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { 1: "bold", 4: "underline" };
@@ -12,14 +12,15 @@ let closure_1 = { 30: "black", 31: "red", 32: "green", 33: "yellow", 34: "blue",
 let closure_2 = { 40: "black", 41: "red", 42: "green", 43: "yellow", 44: "blue", 45: "magenta", 46: "cyan", 47: "white" };
 const tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
 const re3 = tmp2;
-const regExp = new RegExp("(?=" + tmp2.source + ")");
+const regExp = new RegExp(tmp2, "g");
+const regExp1 = new RegExp("(?=" + tmp2.source + ")");
 const result = size.fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx");
 
 export default function highlightJsAnsiLanguage() {
   let items6;
   let length;
   let sum;
-  const f91384 = (item) => {
+  const f99291 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -58,7 +59,7 @@ export default function highlightJsAnsiLanguage() {
   let num = 0;
   items.push.apply(items1);
   const entries = Object.entries(items);
-  const items2 = [...entries.map(f91384)];
+  const items2 = [...entries.map(f99291)];
   const background = "background";
   const items3 = ["0", ...["48", "49"]];
   const items4 = [...Object.keys(closure_2)];
@@ -66,11 +67,11 @@ export default function highlightJsAnsiLanguage() {
   const entries1 = Object.entries(closure_2);
   const style = "style";
   const items5 = ["0", ...[]];
-  const arraySpreadResult = HermesBuiltin.arraySpread(items2, entries1.map(f91384), tmp3);
+  const arraySpreadResult = HermesBuiltin.arraySpread(items2, entries1.map(f99291), tmp3);
   const entries2 = Object.entries(foreground);
-  let obj = { className: "ansi-control-sequence", begin, starts: { end: regExp, endsParent: true } };
-  items2[HermesBuiltin.arraySpread(items2, entries2.map(f91384), arraySpreadResult)] = obj;
-  let tmp6 = regExp;
+  let obj = { className: "ansi-control-sequence", begin, starts: { end: regExp1, endsParent: true } };
+  items2[HermesBuiltin.arraySpread(items2, entries2.map(f99291), arraySpreadResult)] = obj;
+  let tmp6 = regExp1;
   if (0 < items2.length) {
     do {
       sum = num + 1;
@@ -84,3 +85,4 @@ export default function highlightJsAnsiLanguage() {
   return obj2;
 };
 export const ANSI_CONTROL_SEQUENCE_RE = tmp2;
+export const ANSI_CONTROL_SEQUENCE_RE_GLOBAL = regExp;

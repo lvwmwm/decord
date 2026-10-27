@@ -1,127 +1,88 @@
 // Module ID: 10140
 // Function ID: 10141
-// Dependencies: [19, 6335, 10141]
-// Exports: usePanGestureProxy
+// Dependencies: [41, 42, 93, 95, 98, 10141, 10138]
 
 // Module 10140
-import react from "react" /* 19 */;
+import _mod10138 from "module_10138" /* 10138 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10141 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const useMemo = react.useMemo;
-let closure_3 = { code: "function pnpm_usePanGestureProxyTs1(e){const{userDefinedConflictGestures}=this.__closure;if(userDefinedConflictGestures.onBegin)userDefinedConflictGestures.onBegin(e);}" };
-let closure_4 = { code: "function pnpm_usePanGestureProxyTs2(e){const{onGestureStart,userDefinedConflictGestures}=this.__closure;onGestureStart(e);if(userDefinedConflictGestures.onStart)userDefinedConflictGestures.onStart(e);}" };
-let closure_5 = { code: "function pnpm_usePanGestureProxyTs3(e){const{onGestureUpdate,userDefinedConflictGestures}=this.__closure;onGestureUpdate(e);if(userDefinedConflictGestures.onUpdate)userDefinedConflictGestures.onUpdate(e);}" };
-let closure_6 = { code: "function pnpm_usePanGestureProxyTs4(e,success){const{onGestureEnd,userDefinedConflictGestures}=this.__closure;onGestureEnd(e,success);if(userDefinedConflictGestures.onEnd)userDefinedConflictGestures.onEnd(e,success);}" };
-let closure_7 = { code: "function pnpm_usePanGestureProxyTs5(e,success){const{userDefinedConflictGestures}=this.__closure;if(userDefinedConflictGestures.onFinalize)userDefinedConflictGestures.onFinalize(e,success);}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const usePanGestureProxy = (onConfigurePanGesture) => {
-  onConfigurePanGesture = onConfigurePanGesture.onConfigurePanGesture;
-  const onGestureStart = onConfigurePanGesture.onGestureStart;
-  const onGestureUpdate = onConfigurePanGesture.onGestureUpdate;
-  const onGestureEnd = onConfigurePanGesture.onGestureEnd;
-  let options = onConfigurePanGesture.options;
-  if (undefined === options) {
-    options = {};
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const items = [onGestureStart, onGestureUpdate, onGestureEnd, onConfigurePanGesture];
-  const tmp = onGestureUpdate(() => {
-    let obj;
-    let onBegin;
-    let onEnd;
-    let onFinalize;
-    let onStart;
-    let onUpdate;
-    const Gesture = onConfigurePanGesture(onGestureStart[1]).Gesture;
-    const PanResult = Gesture.Pan();
-    const withTestIdResult = PanResult.withTestId("rnrc-gesture-handler");
-    onConfigurePanGesture = withTestIdResult;
-    const userDefinedConflictGestures = { onBegin: "color", onStart: "PX_16", onUpdate: "jsxs", onEnd: "duration", onFinalize: "Set" };
-    withTestIdResult.onBegin = (onBegin) => {
-      obj.onBegin = onBegin;
-      return withTestIdResult;
-    };
-    withTestIdResult.onStart = (onStart) => {
-      obj.onStart = onStart;
-      return withTestIdResult;
-    };
-    withTestIdResult.onUpdate = (onUpdate) => {
-      obj.onUpdate = onUpdate;
-      return withTestIdResult;
-    };
-    withTestIdResult.onEnd = (onEnd) => {
-      obj.onEnd = onEnd;
-      return withTestIdResult;
-    };
-    withTestIdResult.onFinalize = (onFinalize) => {
-      obj.onFinalize = onFinalize;
-      return withTestIdResult;
-    };
-    ({ onBegin, onStart, onUpdate, onEnd, onFinalize } = withTestIdResult);
-    if (onConfigurePanGesture) {
-      onConfigurePanGesture(withTestIdResult);
+}
+class AbstractMergeDateTimeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    withTestIdResult.onBegin = onBegin;
-    withTestIdResult.onStart = onStart;
-    withTestIdResult.onUpdate = onUpdate;
-    withTestIdResult.onEnd = onEnd;
-    withTestIdResult.onFinalize = onFinalize;
-    class C {
-      constructor(arg0) {
-        if (obj.onBegin) {
-          obj.onBegin(arg0);
-        }
-      }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractMergeDateTimeRefiner, _mod10138.MergingRefiner);
+const entry = {
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
     }
-    C.__closure = { userDefinedConflictGestures };
-    C.__workletHash = 7286111968229;
-    C.__initData = onGestureEnd;
-    const onBeginResult = withTestIdResult.onBegin(C);
-    class D {
-      constructor(arg0) {
-        onGestureStart(arg0);
-        if (obj.onStart) {
-          obj.onStart(arg0);
-        }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
       }
+      isOnlyDateResult = isOnlyDateResult1;
     }
-    const obj2 = { onGestureStart: userDefinedConflictGestures, userDefinedConflictGestures };
-    D.__closure = obj2;
-    D.__workletHash = 2969501037173;
-    D.__initData = __initData;
-    const fn = function p(arg0) {
-      onGestureUpdate(arg0);
-      if (obj.onUpdate) {
-        obj.onUpdate(arg0);
-      }
-    };
-    const obj3 = { onGestureUpdate, userDefinedConflictGestures };
-    fn.__closure = obj3;
-    fn.__workletHash = 14406733755860;
-    fn.__initData = __initData2;
-    const onStartResult = onBeginResult.onStart(D);
-    const fn2 = function c(arg0, arg1) {
-      onGestureEnd(arg0, arg1);
-      if (obj.onEnd) {
-        obj.onEnd(arg0, arg1);
-      }
-    };
-    const obj4 = { onGestureEnd, userDefinedConflictGestures };
-    fn2.__closure = obj4;
-    fn2.__workletHash = 3800149117372;
-    fn2.__initData = __initData3;
-    const onUpdateResult = onStartResult.onUpdate(fn);
-    const fn3 = function e(arg0, arg1) {
-      if (obj.onFinalize) {
-        obj.onFinalize(arg0, arg1);
-      }
-    };
-    fn3.__closure = { userDefinedConflictGestures };
-    fn3.__workletHash = 16525776198753;
-    fn3.__initData = __initData4;
-    const onEndResult = onUpdateResult.onEnd(fn2);
-    onEndResult.onFinalize(fn3);
-    return withTestIdResult;
-  }, items);
-  let obj2 = onConfigurePanGesture(onGestureStart[2]);
-  const updateGestureConfig = obj2.useUpdateGestureConfig(tmp, options);
-  return tmp;
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      start = start.start;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
+    }
+  }
+];
+
+export default _createClass(AbstractMergeDateTimeRefiner, items);

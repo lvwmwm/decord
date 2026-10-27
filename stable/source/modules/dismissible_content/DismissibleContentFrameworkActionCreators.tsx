@@ -1,13 +1,15 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10637
+// Function ID: 10638
 // Name: DismissibleContentFrameworkActionCreators
-// Dependencies: [584, 2]
-// Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
+// Dependencies: [2060, 584, 2]
+// Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, overrideUpsellBackoff, resetDismissibleContentFrameworkStore
 
-// Module 10327 (DismissibleContentFrameworkActionCreators)
+// Module 10637 (DismissibleContentFrameworkActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2060 */;
 import size from "module_2" /* 2 */;
 
+const resetFatigueCooldown = DismissibleContentShownStateStore.resetFatigueCooldown;
 const result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");
 
 export const handleDCShownToUser = function handleDCShownToUser(dismissibleContent, guildId) {
@@ -33,6 +35,14 @@ export const overrideNewUserMinAgeRequired = function overrideNewUserMinAgeRequi
   const obj = DispatcherDefault;
   const obj2 = { type: "DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE", value };
   obj.dispatch(obj2);
+};
+export const overrideUpsellBackoff = function overrideUpsellBackoff(value) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "DCF_UPSELL_BACKOFF_OVERRIDE", value };
+  obj.dispatch(obj2);
+  if (value) {
+    resetFatigueCooldown();
+  }
 };
 export const overrideDCFLastDCDismissed = function overrideDCFLastDCDismissed(dismissibleContent, guildId) {
   const obj = DispatcherDefault;

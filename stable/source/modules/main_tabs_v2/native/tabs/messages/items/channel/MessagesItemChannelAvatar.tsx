@@ -1,20 +1,20 @@
-// Module ID: 16474
-// Function ID: 16475
+// Module ID: 17164
+// Function ID: 17165
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 5081, 502, 5108, 11641, 1390, 11762, 21, 5092, 587, 558, 576, 1200, 504, 10281, 2]
+// Dependencies: [19, 5181, 502, 5207, 12824, 1392, 11895, 21, 5191, 587, 558, 576, 1202, 504, 10592, 2]
 
-// Module 16474 (MessagesItemChannelAvatar)
+// Module 17164 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10281 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10592 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import TypingStore from "TypingStore" /* 11641 */;
-import UserStore from "UserStore" /* 1390 */;
-import createStyles from "createStyles" /* 5092 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import TypingStore from "TypingStore" /* 12824 */;
+import UserStore from "UserStore" /* 1392 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -499,7 +499,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = tmp(muted);
   let tmp3 = channel;
-  const REFRESH_MEDIUM_32 = channel(1200).AvatarSizes.REFRESH_MEDIUM_32;
+  const REFRESH_MEDIUM_32 = channel(1202).AvatarSizes.REFRESH_MEDIUM_32;
   dependencyMap = AuthenticationStore.getId();
   let obj = channel(504);
   const items = [TypingStore];
@@ -561,7 +561,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp11Result = null;
     if (null != stateFromStores2) {
       const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: false };
-      const Avatar = tmp3(1200).Avatar;
+      const Avatar = tmp3(1202).Avatar;
       tmp12 = null;
       const tmp11 = jsx;
       if (!stateFromStores2.isSystemUser()) {

@@ -1,14 +1,14 @@
-// Module ID: 5971
-// Function ID: 5972
+// Module ID: 6227
+// Function ID: 6228
 // Name: InAppNavigationRecord
-// Dependencies: [1405, 1085, 5972, 1095, 5982, 2]
+// Dependencies: [1407, 1087, 6228, 1097, 6238, 2]
 
-// Module 5971 (InAppNavigationRecord)
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import QuestConstants from "QuestConstants" /* 5972 */;
-import UserSettingsURLUtils from "UserSettingsURLUtils" /* 5982 */;
-import Record from "Record" /* 1405 */;
+// Module 6227 (InAppNavigationRecord)
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
+import UserSettingsURLUtils from "UserSettingsURLUtils" /* 6238 */;
+import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

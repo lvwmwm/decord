@@ -1,23 +1,23 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 15635
+// Function ID: 15636
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 587, 558, 576, 1503, 14875, 2049, 7100, 8286, 5628, 10267, 1409, 1265, 1126, 14876, 1200, 13481, 10264, 14877, 2958, 14879, 2]
+// Dependencies: [32, 19, 17, 1087, 2065, 21, 5191, 587, 558, 576, 1505, 15636, 2052, 7376, 8564, 5884, 10568, 1411, 1267, 1128, 15637, 1202, 14260, 10565, 15638, 2981, 15640, 2]
 
-// Module 14874 (UserProfileDisplayNameStylesEditButton)
+// Module 15635 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13481 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14876 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14877 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14260 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15637 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15638 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import Constants from "Constants" /* 1087 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

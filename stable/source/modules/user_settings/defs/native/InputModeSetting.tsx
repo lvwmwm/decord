@@ -1,18 +1,18 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 16306
+// Function ID: 16307
 // Name: InputModeSetting
-// Dependencies: [2012, 7988, 5117, 558, 576, 504, 1126, 10664, 11080, 2]
+// Dependencies: [2014, 8260, 5216, 558, 576, 504, 1128, 11084, 11466, 2]
 
-// Module 15546 (InputModeSetting)
+// Module 16306 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Constants from "Constants" /* 5117 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 11080 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import intl3 from "intl" /* 1128 */;
+import Constants from "Constants" /* 5216 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 11466 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -41,11 +41,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputMo
   if (cResult[2] !== stateFromStores) {
     let stringResult;
     if (stateFromStores === InputModes.PUSH_TO_TALK) {
-      const intl2 = tmp(1126).intl;
-      stringResult = intl2.string(tmp(1126).t.Q8gkVL);
+      const intl2 = tmp(1128).intl;
+      stringResult = intl2.string(tmp(1128).t.Q8gkVL);
     } else {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.cHCEOJ);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.cHCEOJ);
     }
     cResult[2] = stateFromStores;
     cResult[3] = stringResult;
@@ -60,11 +60,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputMo
   const items = [MediaEngineStore];
   const obj = get_initialized;
   if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-    const intl2 = tmp(1126).intl;
-    stringResult = intl2.string(tmp(1126).t.Q8gkVL);
+    const intl2 = tmp(1128).intl;
+    stringResult = intl2.string(tmp(1128).t.Q8gkVL);
   } else {
-    const intl = tmp(1126).intl;
-    stringResult = intl.string(tmp(1126).t.cHCEOJ);
+    const intl = tmp(1128).intl;
+    stringResult = intl.string(tmp(1128).t.cHCEOJ);
   }
   return stringResult;
 });

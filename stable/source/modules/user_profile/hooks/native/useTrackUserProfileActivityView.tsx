@@ -1,12 +1,12 @@
-// Module ID: 13151
-// Function ID: 13152
+// Module ID: 14071
+// Function ID: 14072
 // Name: useTrackUserProfileActivityView
-// Dependencies: [32, 19, 8992, 558, 576, 504, 2]
+// Dependencies: [32, 19, 9288, 558, 576, 504, 2]
 
-// Module 13151 (useTrackUserProfileActivityView)
+// Module 14071 (useTrackUserProfileActivityView)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8992 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9288 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,23 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 12095
+// Function ID: 12096
 // Name: conjureHistoryRequests
-// Dependencies: [5, 13246, 11413, 17159, 11422, 2]
+// Dependencies: [5, 11063, 11057, 12096, 11015, 2]
 // Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchSourceHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 17158 (conjureHistoryRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
+// Module 12095 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c6;
+let c7, label;
 
 function fetchVersionHistory() {
   return obj(...arguments);
 }
 let obj = function _fetchVersionHistory() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let obj8;
+    let closure_1;
+    let obj6;
     let previewSha;
     let publishedSha;
     let closure_0 = arg0;
@@ -34,11 +35,7 @@ let obj = function _fetchVersionHistory() {
       }
     } else {
       try {
-        let ticket;
-        let baseUrl;
-        let uRLSearchParams;
-        let closure_4;
-        let closure_5;
+        let tmp;
         c3 = 2;
         if (0 === c2) {
           if (arg0 === 1) {
@@ -49,20 +46,15 @@ let obj = function _fetchVersionHistory() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_1 = tmp;
             closure_0 = undefined;
-            ticket = undefined;
-            baseUrl = undefined;
-            uRLSearchParams = undefined;
-            closure_4 = undefined;
-            closure_5 = undefined;
+            tmp = undefined;
             c2 = 1;
             c3 = 1;
-            const obj4 = { value: obj8.mintWorkerTicket(closure_0), done: false };
-            obj8 = ConjureWorkerTickets;
+            const obj4 = { value: obj6.fetchConjureWorker(closure_0, "/agent/source-history"), done: false };
+            obj6 = conjureWorkerFetch;
             return obj4;
           }
-        } else if (1 === c2) {
+        } else if (1 === tmp4) {
           if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -72,41 +64,17 @@ let obj = function _fetchVersionHistory() {
             return obj5;
           } else {
             closure_0 = value;
-            ticket = closure_0.ticket;
-            baseUrl = closure_0.baseUrl;
-            const _URLSearchParams = URLSearchParams;
-            const obj6 = { ticket };
-            const self3 = this;
-            const self4 = this;
-            uRLSearchParams = new URLSearchParams(obj6);
-            const _fetch = fetch;
-            const _HermesInternal2 = HermesInternal;
-            c2 = 2;
-            c3 = 1;
-            const obj7 = { value: fetch("" + baseUrl + "/agent/source-history?" + uRLSearchParams), done: false };
-            return obj7;
-          }
-        } else if (2 === c2) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            closure_4 = value;
-            if (closure_4.ok) {
-              c2 = 3;
+            if (closure_0.ok) {
+              c2 = 2;
               c3 = 1;
-              const obj10 = { value: closure_4.json(), done: false };
-              return obj10;
+              const obj7 = { value: closure_0.json(), done: false };
+              return obj7;
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
               const self = this;
               const self2 = this;
-              const error = new Error("version history failed (" + closure_4.status + ")");
+              const error = new Error("version history failed (" + closure_0.status + ")");
               throw error;
             }
           }
@@ -115,29 +83,29 @@ let obj = function _fetchVersionHistory() {
           throw value;
         } else if (arg0 === 2) {
           c3 = 3;
-          const obj11 = { value, done: true };
-          return obj11;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
           let entries;
-          closure_5 = value;
+          tmp = value;
           const _Array = Array;
-          if (Array.isArray(closure_5.entries)) {
-            entries = closure_5.entries;
+          if (Array.isArray(tmp.entries)) {
+            entries = tmp.entries;
           } else {
             entries = [];
           }
           obj = { entries, previewSha, publishedSha };
           previewSha = null;
-          if (typeof closure_5.previewSha === "string") {
-            previewSha = closure_5.previewSha;
+          if (typeof tmp.previewSha === "string") {
+            previewSha = tmp.previewSha;
           }
           publishedSha = null;
-          if (typeof closure_5.publishedSha === "string") {
-            publishedSha = closure_5.publishedSha;
+          if (typeof tmp.publishedSha === "string") {
+            publishedSha = tmp.publishedSha;
           }
           c3 = 3;
-          const obj12 = { value: obj, done: true };
-          return obj12;
+          const obj9 = { value: obj, done: true };
+          return obj9;
         }
       } catch (tmp21) {
         c3 = 3;
@@ -159,8 +127,7 @@ obj = function _fetchSourceHistory() {
 };
 obj = function _restoreSourceHistoryEntry() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let closure_2;
-    let obj11;
+    let obj12;
     let closure_0 = arg0;
     let closure_1 = value;
     if (c5 === 2) {
@@ -177,13 +144,8 @@ obj = function _restoreSourceHistoryEntry() {
       }
     } else {
       try {
-        let tmp;
-        let ticket;
-        let baseUrl;
-        let uRLSearchParams;
-        let closure_6;
-        let closure_7;
-        let closure_8;
+        let closure_2;
+        let closure_3;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -194,18 +156,15 @@ obj = function _restoreSourceHistoryEntry() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp4;
-            tmp = undefined;
-            ticket = undefined;
-            baseUrl = undefined;
-            uRLSearchParams = undefined;
-            closure_6 = undefined;
-            closure_7 = undefined;
-            closure_8 = undefined;
+            closure_1 = undefined;
+            closure_2 = undefined;
+            closure_3 = undefined;
+            const _encodeURIComponent = encodeURIComponent;
+            const _HermesInternal3 = HermesInternal;
             c4 = 1;
             c5 = 1;
-            const obj4 = { value: obj11.mintWorkerTicket(closure_0), done: false };
-            obj11 = ConjureWorkerTickets;
+            const obj4 = { value: obj12.fetchConjureWorker(closure_0, "/agent/source-history/" + encodeURIComponent(closure_1) + "/restore", { method: "POST" }), done: false };
+            obj12 = conjureWorkerFetch;
             return obj4;
           }
         } else if (1 === c4) {
@@ -217,21 +176,18 @@ obj = function _restoreSourceHistoryEntry() {
             const obj6 = { value, done: true };
             return obj6;
           } else {
-            tmp = value;
-            ticket = tmp.ticket;
-            baseUrl = tmp.baseUrl;
-            const _URLSearchParams = URLSearchParams;
-            const obj7 = { ticket };
-            const self5 = this;
-            const self6 = this;
-            uRLSearchParams = new URLSearchParams(obj7);
-            const _fetch = fetch;
-            const _encodeURIComponent = encodeURIComponent;
-            const _HermesInternal3 = HermesInternal;
-            c4 = 2;
-            c5 = 1;
-            const obj8 = { value: fetch("" + baseUrl + "/agent/source-history/" + encodeURIComponent(closure_1) + "/restore?" + uRLSearchParams, { method: "POST" }), done: false };
-            return obj8;
+            closure_1 = value;
+            if (closure_1.ok) {
+              c4 = 3;
+              c5 = 1;
+              const obj7 = { value: closure_1.json(), done: false };
+              return obj7;
+            } else {
+              c4 = 2;
+              c5 = 1;
+              const obj8 = { value: closure_1.text(), done: false };
+              return obj8;
+            }
           }
         } else if (2 === c4) {
           if (arg0 === 1) {
@@ -242,35 +198,13 @@ obj = function _restoreSourceHistoryEntry() {
             const obj9 = { value, done: true };
             return obj9;
           } else {
-            closure_6 = value;
-            if (closure_6.ok) {
-              c4 = 4;
-              c5 = 1;
-              const obj10 = { value: closure_6.json(), done: false };
-              return obj10;
-            } else {
-              c4 = 3;
-              c5 = 1;
-              const obj12 = { value: closure_6.text(), done: false };
-              return obj12;
-            }
-          }
-        } else if (3 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
-          } else {
-            closure_7 = value.trim();
+            closure_2 = value.trim();
             let str3 = "";
             const _Error2 = Error;
-            const status = closure_6.status;
-            if ("" !== closure_7) {
+            const status = closure_1.status;
+            if ("" !== closure_2) {
               const _HermesInternal = HermesInternal;
-              str3 = ": " + closure_7;
+              str3 = ": " + closure_2;
             }
             const _HermesInternal2 = HermesInternal;
             const self3 = this;
@@ -283,18 +217,18 @@ obj = function _restoreSourceHistoryEntry() {
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          const obj14 = { value, done: true };
-          return obj14;
+          const obj10 = { value, done: true };
+          return obj10;
         } else {
-          closure_8 = value;
-          if (null == closure_8.entry) {
+          closure_3 = value;
+          if (null == closure_3.entry) {
             const _Error = Error;
             const self = this;
             const self2 = this;
             const error = new Error("version restore returned no commit");
             throw error;
           } else {
-            if (true !== closure_8.live) {
+            if (true !== closure_3.live) {
               obj = closure_131_0(closure_131_1[2]);
               const result = obj.refreshPublishedProject(closure_0, { isPreview: true });
               result.catch(() => {
@@ -302,25 +236,26 @@ obj = function _restoreSourceHistoryEntry() {
               });
             }
             c5 = 3;
-            const obj15 = { value: closure_8.entry, done: true };
-            return obj15;
+            const obj11 = { value: closure_3.entry, done: true };
+            return obj11;
           }
         }
-      } catch (tmp27) {
+      } catch (tmp23) {
         c5 = 3;
-        throw tmp27;
+        throw tmp23;
       }
     }
   });
   return obj(...arguments);
 };
 obj = function _fetchDatabaseRestorePoints() {
-  obj = _asyncToGenerator(async (environment, arg1) => {
-    let closure_1 = arg1;
+  obj = _asyncToGenerator(async (arg0, environment) => {
+    let closure_0 = arg0;
     let c3 = 0;
     let c4 = 0;
     return (async function(arg0, value) {
-      let obj7;
+      let obj5;
+      let obj6;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -334,11 +269,6 @@ obj = function _fetchDatabaseRestorePoints() {
         }
       } else {
         try {
-          let ticket;
-          let baseUrl;
-          let uRLSearchParams;
-          let closure_5;
-          let closure_6;
           c4 = 2;
           if (0 === c3) {
             if (arg0 === 1) {
@@ -349,20 +279,17 @@ obj = function _fetchDatabaseRestorePoints() {
               return { value, done: true };
             } else {
               closure_2 = tmp;
-              environment = closure_1;
-              closure_1 = undefined;
-              ticket = undefined;
-              baseUrl = undefined;
-              uRLSearchParams = undefined;
-              closure_5 = undefined;
-              closure_6 = undefined;
+              closure_0 = undefined;
+              environment = undefined;
+              const obj4 = { query: obj6 };
               c3 = 1;
               c4 = 1;
-              const obj4 = { value: obj7.mintWorkerTicket(environment), done: false };
-              obj7 = ConjureWorkerTickets;
-              return obj4;
+              obj6 = { environment };
+              const obj7 = { value: obj5.fetchConjureWorker(closure_0, "/agent/database/restore-points", obj4), done: false };
+              obj5 = conjureWorkerFetch;
+              return obj7;
             }
-          } else if (1 === c3) {
+          } else if (1 === tmp4) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -370,41 +297,18 @@ obj = function _fetchDatabaseRestorePoints() {
               c4 = 3;
               return { value, done: true };
             } else {
-              closure_1 = value;
-              ticket = closure_1.ticket;
-              baseUrl = closure_1.baseUrl;
-              const _URLSearchParams = URLSearchParams;
-              const self3 = this;
-              const self4 = this;
-              const obj6 = { ticket, environment };
-              uRLSearchParams = new URLSearchParams(obj6);
-              const _fetch = fetch;
-              const _HermesInternal2 = HermesInternal;
-              c3 = 2;
-              c4 = 1;
-              const obj8 = { value: fetch("" + baseUrl + "/agent/database/restore-points?" + uRLSearchParams), done: false };
-              return obj8;
-            }
-          } else if (2 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_5 = value;
-              if (closure_5.ok) {
-                c3 = 3;
+              closure_0 = value;
+              if (closure_0.ok) {
+                c3 = 2;
                 c4 = 1;
-                const obj10 = { value: closure_5.json(), done: false };
-                return obj10;
+                const obj9 = { value: closure_0.json(), done: false };
+                return obj9;
               } else {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
                 const self = this;
                 const self2 = this;
-                const error = new Error("restore points failed (" + closure_5.status + ")");
+                const error = new Error("restore points failed (" + closure_0.status + ")");
                 throw error;
               }
             }
@@ -416,10 +320,10 @@ obj = function _fetchDatabaseRestorePoints() {
             return { value, done: true };
           } else {
             let restorePoints;
-            closure_6 = value;
+            environment = value;
             const _Array = Array;
-            if (Array.isArray(closure_6.restorePoints)) {
-              restorePoints = closure_6.restorePoints;
+            if (Array.isArray(environment.restorePoints)) {
+              restorePoints = environment.restorePoints;
             } else {
               restorePoints = [];
             }
@@ -436,12 +340,13 @@ obj = function _fetchDatabaseRestorePoints() {
   return obj(...arguments);
 };
 obj = function _fetchDatabaseRestoreWindow() {
-  obj = _asyncToGenerator(async (environment, arg1) => {
-    let closure_1 = arg1;
+  obj = _asyncToGenerator(async (arg0, environment) => {
+    let closure_0 = arg0;
     let c3 = 0;
     let c4 = 0;
     return (async function(arg0, value) {
-      let obj7;
+      let obj5;
+      let obj6;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -455,10 +360,6 @@ obj = function _fetchDatabaseRestoreWindow() {
         }
       } else {
         try {
-          let ticket;
-          let baseUrl;
-          let uRLSearchParams;
-          let closure_5;
           c4 = 2;
           if (0 === c3) {
             if (arg0 === 1) {
@@ -469,19 +370,16 @@ obj = function _fetchDatabaseRestoreWindow() {
               return { value, done: true };
             } else {
               closure_2 = tmp;
-              environment = closure_1;
-              closure_1 = undefined;
-              ticket = undefined;
-              baseUrl = undefined;
-              uRLSearchParams = undefined;
-              closure_5 = undefined;
+              closure_0 = undefined;
+              const obj4 = { query: obj6 };
               c3 = 1;
               c4 = 1;
-              const obj4 = { value: obj7.mintWorkerTicket(environment), done: false };
-              obj7 = ConjureWorkerTickets;
-              return obj4;
+              obj6 = { environment };
+              const obj7 = { value: obj5.fetchConjureWorker(closure_0, "/agent/database/restore-window", obj4), done: false };
+              obj5 = conjureWorkerFetch;
+              return obj7;
             }
-          } else if (1 === c3) {
+          } else if (1 === tmp4) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -489,41 +387,18 @@ obj = function _fetchDatabaseRestoreWindow() {
               c4 = 3;
               return { value, done: true };
             } else {
-              closure_1 = value;
-              ticket = closure_1.ticket;
-              baseUrl = closure_1.baseUrl;
-              const _URLSearchParams = URLSearchParams;
-              const self3 = this;
-              const self4 = this;
-              const obj6 = { ticket, environment };
-              uRLSearchParams = new URLSearchParams(obj6);
-              const _fetch = fetch;
-              const _HermesInternal2 = HermesInternal;
-              c3 = 2;
-              c4 = 1;
-              const obj8 = { value: fetch("" + baseUrl + "/agent/database/restore-window?" + uRLSearchParams), done: false };
-              return obj8;
-            }
-          } else if (2 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_5 = value;
-              if (closure_5.ok) {
-                c3 = 3;
+              closure_0 = value;
+              if (closure_0.ok) {
+                c3 = 2;
                 c4 = 1;
-                const obj10 = { value: closure_5.json(), done: false };
-                return obj10;
+                const obj9 = { value: closure_0.json(), done: false };
+                return obj9;
               } else {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
                 const self = this;
                 const self2 = this;
-                const error = new Error("restore window failed (" + closure_5.status + ")");
+                const error = new Error("restore window failed (" + closure_0.status + ")");
                 throw error;
               }
             }
@@ -547,133 +422,105 @@ obj = function _fetchDatabaseRestoreWindow() {
   return obj(...arguments);
 };
 obj = function _createDatabaseRestorePoint() {
-  obj = _asyncToGenerator(async (environment, label, arg2) => {
-    let closure_2 = arg2;
-    let c4 = 0;
-    let c5 = 0;
-    return (async function(arg0, value, arg2) {
-      let obj9;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+  obj = _asyncToGenerator(async function(arg0, value, arg2) {
+    let closure_1;
+    let closure_2;
+    let closure_0 = arg0;
+    environment = value;
+    label = arg2;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        try {
-          let ticket;
-          let closure_6;
-          let closure_7;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp;
-              environment = label;
-              label = closure_2;
-              closure_2 = undefined;
-              ticket = undefined;
-              let baseUrl;
-              let uRLSearchParams;
-              closure_6 = undefined;
-              closure_7 = undefined;
-              c4 = 1;
-              c5 = 1;
-              const obj4 = { value: obj9.mintWorkerTicket(environment), done: false };
-              obj9 = ConjureWorkerTickets;
-              return obj4;
-            }
-          } else if (1 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = value;
-              ticket = closure_2.ticket;
-              baseUrl = closure_2.baseUrl;
-              const _URLSearchParams = URLSearchParams;
-              const self5 = this;
-              const self6 = this;
-              const obj6 = { ticket };
-              uRLSearchParams = new URLSearchParams(obj6);
-              const _HermesInternal2 = HermesInternal;
-              const _fetch = fetch;
-              const request = { method: "POST", headers: { "content-type": "application/json" }, body: null };
-              if (null != label) {
-                let obj10;
-                if ("" !== label.trim()) {
-                  obj10 = { environment, label };
-                  const obj7 = { environment, label };
-                }
-                request.body = tmp49(obj10);
-                c4 = 2;
-                c5 = 1;
-                const obj8 = { value: _fetch(tmp47, request), done: false };
-                return obj8;
-              }
-              obj10 = { environment };
-            }
-          } else if (2 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_6 = value;
-              if (closure_6.ok) {
-                c4 = 3;
-                c5 = 1;
-                const obj12 = { value: closure_6.json(), done: false };
-                return obj12;
-              } else {
-                const _Error2 = Error;
-                const _HermesInternal = HermesInternal;
-                const self3 = this;
-                const self4 = this;
-                const error = new Error("restore point create failed (" + closure_6.status + ")");
-                throw error;
-              }
-            }
-          } else if (arg0 === 1) {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            return { value, done: true };
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            closure_7 = value;
-            if (null == closure_7.restorePoint) {
-              const _Error = Error;
-              const self = this;
-              const self2 = this;
-              const error1 = new Error("restore point create returned nothing");
-              throw error1;
+            let closure_3 = tmp;
+            closure_0 = undefined;
+            environment = undefined;
+            conjureWorkerFetch;
+            const tmp25 = closure_0;
+            if (null != label) {
+              let obj7;
+              if ("" !== label.trim()) {
+                const obj4 = { environment, label };
+                obj7 = obj4;
+              }
+              const obj5 = { method: "POST", json: obj7 };
+              c4 = 1;
+              c5 = 1;
+              const obj6 = { value: tmp30(tmp25, "/agent/database/restore-points", obj5), done: false };
+              return obj6;
+            }
+            obj7 = { environment };
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            closure_0 = value;
+            if (closure_0.ok) {
+              c4 = 2;
+              c5 = 1;
+              const obj9 = { value: closure_0.json(), done: false };
+              return obj9;
             } else {
-              c5 = 3;
-              return { value: closure_7.restorePoint, done: true };
+              const _Error2 = Error;
+              const _HermesInternal = HermesInternal;
+              const self3 = this;
+              const self4 = this;
+              const error = new Error("restore point create failed (" + closure_0.status + ")");
+              throw error;
             }
           }
-        } catch (tmp30) {
+        } else if (arg0 === 1) {
           c5 = 3;
-          throw tmp30;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj10 = { value, done: true };
+          return obj10;
+        } else {
+          environment = value;
+          if (null == environment.restorePoint) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error1 = new Error("restore point create returned nothing");
+            throw error1;
+          } else {
+            c5 = 3;
+            obj = { value: environment.restorePoint, done: true };
+            return obj;
+          }
         }
+      } catch (tmp18) {
+        c5 = 3;
+        throw tmp18;
       }
-    })();
+    }
   });
   return obj(...arguments);
 };
@@ -761,14 +608,14 @@ obj = function _settleDatabaseRestore() {
   return obj(...arguments);
 };
 obj = function _restoreDatabaseToPoint() {
-  obj = _asyncToGenerator(async function(arg0, value) {
-    let obj5;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj6;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c7 === 2) {
-      c7 = 3;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -779,77 +626,43 @@ obj = function _restoreDatabaseToPoint() {
       }
     } else {
       try {
+        let closure_3;
         let closure_2;
-        let ticket;
-        let baseUrl;
-        let uRLSearchParams;
-        c7 = 2;
-        if (0 === c6) {
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c7 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
+            c5 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_4 = tmp4;
-            let closure_5 = tmp;
-            closure_2 = undefined;
-            ticket = undefined;
-            baseUrl = undefined;
-            uRLSearchParams = undefined;
-            c6 = 1;
-            c7 = 1;
-            const obj4 = { value: obj5.mintWorkerTicket(closure_0), done: false };
-            obj5 = ConjureWorkerTickets;
+            closure_3 = settleDatabaseRestore;
+            closure_2 = closure_0;
+            const _encodeURIComponent = encodeURIComponent;
+            const _HermesInternal = HermesInternal;
+            c4 = 1;
+            c5 = 1;
+            const obj4 = { value: obj6.fetchConjureWorker(closure_0, "/agent/database/restore-points/" + encodeURIComponent(closure_1) + "/restore", { method: "POST" }), done: false };
+            obj6 = conjureWorkerFetch;
             return obj4;
           }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj5 = { value, done: true };
+          return obj5;
         } else {
-          let closure_3;
-          if (1 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              closure_2 = value;
-              ticket = closure_2.ticket;
-              baseUrl = closure_2.baseUrl;
-              const _URLSearchParams = URLSearchParams;
-              const obj7 = { ticket };
-              const self = this;
-              const self2 = this;
-              uRLSearchParams = new URLSearchParams(obj7);
-              closure_3 = closure_132_10;
-              closure_2 = closure_0;
-              const _fetch = fetch;
-              const _encodeURIComponent = encodeURIComponent;
-              const _HermesInternal = HermesInternal;
-              c6 = 2;
-              c7 = 1;
-              const obj8 = { value: fetch("" + baseUrl + "/agent/database/restore-points/" + encodeURIComponent(closure_1) + "/restore?" + uRLSearchParams, { method: "POST" }), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            c7 = 3;
-            obj = { value: closure_3(closure_2, value), done: true };
-            return obj;
-          }
+          c5 = 3;
+          obj = { value: closure_3(closure_2, value), done: true };
+          return obj;
         }
-      } catch (tmp11) {
-        c7 = 3;
-        throw tmp11;
+      } catch (tmp6) {
+        c5 = 3;
+        throw tmp6;
       }
     }
   });
@@ -858,15 +671,15 @@ obj = function _restoreDatabaseToPoint() {
 obj = function _restoreDatabaseToTimestamp() {
   obj = _asyncToGenerator(async (arg0, environment, timestampMs) => {
     let closure_0 = arg0;
-    let c7 = 0;
-    let c8 = 0;
-    return (async function(arg0, value, arg2) {
+    let c5 = 0;
+    let c6 = 0;
+    return (async (arg0, value, arg2) => {
       let obj5;
-      let obj8;
-      if (c8 === 2) {
-        c8 = 3;
+      let obj6;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -876,73 +689,39 @@ obj = function _restoreDatabaseToTimestamp() {
         }
       } else {
         try {
-          let ticket;
-          let baseUrl;
-          let uRLSearchParams;
-          c8 = 2;
-          if (0 === c7) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c8 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 3;
+              c6 = 3;
               return { value, done: true };
             } else {
-              closure_5 = tmp4;
-              closure_6 = tmp;
-              closure_3 = undefined;
-              ticket = undefined;
-              baseUrl = undefined;
-              uRLSearchParams = undefined;
-              c7 = 1;
-              c8 = 1;
-              const obj4 = { value: obj5.mintWorkerTicket(closure_0), done: false };
-              obj5 = ConjureWorkerTickets;
-              return obj4;
-            }
-          } else if (1 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = value;
-              ticket = closure_3.ticket;
-              baseUrl = closure_3.baseUrl;
-              const _URLSearchParams = URLSearchParams;
-              const self = this;
-              const self2 = this;
-              const obj7 = { ticket };
-              uRLSearchParams = new URLSearchParams(obj7);
-              closure_4 = closure_133_10;
+              closure_4 = settleDatabaseRestore;
               closure_3 = closure_0;
-              const _fetch = fetch;
-              const _HermesInternal = HermesInternal;
-              const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj8) };
-              const _JSON = JSON;
-              obj8 = { environment, timestampMs };
-              const combined = "" + baseUrl + "/agent/database/restore?" + uRLSearchParams;
-              c7 = 2;
-              c8 = 1;
-              const obj9 = { value: fetch(combined, request), done: false };
-              return obj9;
+              const obj4 = { method: "POST", json: obj5 };
+              c5 = 1;
+              c6 = 1;
+              obj5 = { environment, timestampMs };
+              const obj7 = { value: obj6.fetchConjureWorker(closure_0, "/agent/database/restore", obj4), done: false };
+              obj6 = conjureWorkerFetch;
+              return obj7;
             }
           } else if (arg0 === 1) {
-            c8 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
+            c6 = 3;
             return { value, done: true };
           } else {
-            c8 = 3;
+            c6 = 3;
             obj = { value: closure_4(closure_3, value), done: true };
             return obj;
           }
-        } catch (tmp12) {
-          c8 = 3;
-          throw tmp12;
+        } catch (tmp6) {
+          c6 = 3;
+          throw tmp6;
         }
       }
     })();

@@ -7,4 +7,4 @@
 import react from "react" /* 19 */;
 
 
-export const DeprecatedNavigationInChildContext = react.createContext(false);
+export const ConsumedParamsContext = react.createContext(undefined);

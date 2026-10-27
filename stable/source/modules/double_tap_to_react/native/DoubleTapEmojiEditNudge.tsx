@@ -1,23 +1,23 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 13762
+// Function ID: 13763
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5081, 1498, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7982, 1500, 504, 1415, 9422, 1265, 9435, 5088, 1126, 6820, 6185, 2]
+// Dependencies: [5, 19, 17, 5181, 1500, 1087, 1395, 21, 5191, 587, 558, 576, 2044, 8254, 1502, 504, 1417, 9726, 1267, 9739, 5187, 1128, 7098, 6462, 2]
 
-// Module 12837 (DoubleTapEmojiEditNudge)
+// Module 13762 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7982 */;
+import Constants from "Constants" /* 1087 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8254 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import DimensionsStore from "DimensionsStore" /* 1498 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import DimensionsStore from "DimensionsStore" /* 1500 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapEmo
 }) : (function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
   let setting;
-  const DoubleTapReactionEmoji = setting(2041).DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = setting(2044).DoubleTapReactionEmoji;
   setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {
@@ -167,7 +167,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   const cResult = obj.c(26);
   _location = location.location;
   const emoji = location.emoji;
-  let obj2 = _location(1500);
+  let obj2 = _location(1502);
   const appEntryKey = obj2.useAppEntryKey();
   if (cResult[0] !== appEntryKey) {
     const fn = function c(arg0) {
@@ -423,9 +423,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
               return;
             }
           }
-          let obj3 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(tmp(1126).t["1EUr/W"]) };
-          const Text = tmp(5088).Text;
-          intl = tmp(1126).intl;
+          let obj3 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(tmp(1128).t["1EUr/W"]) };
+          const Text = tmp(5187).Text;
+          intl = tmp(1128).intl;
           const tmp19 = closure_11(Text, obj3);
           cResult[11] = tmp19;
         } else {
@@ -649,7 +649,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
         }
         let obj4 = { style: null, fastImageStyle: null, textEmojiStyle: null, src: tmp12, name: str };
         ({ doubleTapEmojiContainer: obj6.style, doubleTapCustomEmoji: obj6.fastImageStyle, doubleTapTextEmoji: obj6.textEmojiStyle } = tmp11);
-        const tmp24 = closure_11(appEntryKey(6820), obj4);
+        const tmp24 = closure_11(appEntryKey(7098), obj4);
         cResult[12] = tmp12;
         cResult[13] = tmp11.doubleTapCustomEmoji;
         cResult[14] = tmp11.doubleTapEmojiContainer;
@@ -732,8 +732,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
       }
     }
     let obj5 = { id: emoji.id, size, animated: tmp16 };
-    const getEmojiURL = appEntryKey(1415).getEmojiURL;
-    const tmp14 = appEntryKey(1415);
+    const getEmojiURL = appEntryKey(1417).getEmojiURL;
+    const tmp14 = appEntryKey(1417);
     tmp16 = !stateFromStores;
     if (!stateFromStores) {
       class P {
@@ -899,7 +899,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   const _location = location.location;
   const emoji = location.emoji;
   let tmp = _location;
-  let obj = _location(1500);
+  let obj = _location(1502);
   dependencyMap = obj.useAppEntryKey();
   const tmp3 = DimensionsStore((arg0) => arg0.byAppEntry[closure_2].fontScale);
   let obj2 = _location(504);
@@ -997,13 +997,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
     });
     let result = openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  let obj4 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(_location(1126).t["1EUr/W"]) };
-  const Text = _location(5088).Text;
-  intl = _location(1126).intl;
+  let obj4 = { color: "text-subtle", variant: "text-sm/normal", children: intl.string(_location(1128).t["1EUr/W"]) };
+  const Text = _location(5187).Text;
+  intl = _location(1128).intl;
   items3 = [closure_11(Text, obj4), , ];
   let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
   str = "";
-  const tmp11 = emoji(6820);
+  const tmp11 = emoji(7098);
   const tmp8 = closure_12;
   const tmp9 = View;
   if (null == emoji.id) {
@@ -1011,10 +1011,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   }
   items3[1] = closure_11(tmp11, obj5);
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
-  const PressableOpacity = tmp(6185).PressableOpacity;
-  obj7 = { color: "text-brand", variant: "text-sm/normal", children: intl2.string(tmp(1126).t.bt75uw) };
-  Text2 = tmp(5088).Text;
-  intl2 = tmp(1126).intl;
+  const PressableOpacity = tmp(6462).PressableOpacity;
+  obj7 = { color: "text-brand", variant: "text-sm/normal", children: intl2.string(tmp(1128).t.bt75uw) };
+  Text2 = tmp(5187).Text;
+  intl2 = tmp(1128).intl;
   items3[2] = closure_11(PressableOpacity, obj6);
   return tmp8(tmp9, obj3);
 });

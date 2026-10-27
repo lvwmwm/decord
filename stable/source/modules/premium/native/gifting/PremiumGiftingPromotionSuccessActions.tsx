@@ -1,16 +1,16 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 13713
+// Function ID: 13714
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10051, 1503, 10097, 10508, 10048, 12777, 10114, 1126, 2632, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10354, 1505, 10400, 10831, 10351, 13714, 10416, 1128, 2653, 5479, 2]
 
-// Module 12776 (PremiumGiftingPromotionSuccessActions)
+// Module 13713 (PremiumGiftingPromotionSuccessActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10048 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12777 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10351 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13714 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

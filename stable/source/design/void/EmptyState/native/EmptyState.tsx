@@ -1,32 +1,31 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 15202
+// Function ID: 15203
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4969, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5065, 5128, 5187, 2]
 
-// Module 14436 (EmptyState)
+// Module 15202 (EmptyState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 4969 */;
+import shared from "shared" /* 5065 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
-({ View: c2, Image: c3 } = react_native);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = { textTransform: "none" };
 let closure_7 = { accessible: false, accessibilityRole: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
 let obj = { container: obj2, emptyImage: { flex: 1, maxWidth: 300, maxHeight: 200 }, textGroup: { alignSelf: "stretch", alignItems: "center" }, emptyTitle: { marginTop: 20, textTransform: "uppercase" }, emptyBody: { textAlign: "center", marginTop: 8 } };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_8 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(Illustration) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(Illustration) {
   let body;
   let bodyStyle;
   let children;
@@ -53,31 +52,31 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   shared;
   if (null != Illustration.Illustration) {
     if (cResult[0] === Illustration.imageStyle) {
-      let tmp20;
+      let tmp21;
       if (cResult[1] === tmp4.emptyImage) {
-        tmp20 = cResult[2];
+        tmp21 = cResult[2];
       }
       if (cResult[3] === Illustration.Illustration) {
-        let tmp21;
-        if (cResult[4] === tmp20) {
-          tmp21 = cResult[5];
+        let tmp22;
+        if (cResult[4] === tmp21) {
+          tmp22 = cResult[5];
         }
-        tmp10 = tmp21;
+        tmp10 = tmp22;
       }
       Illustration = Illustration.Illustration;
-      const obj3 = { resizeMode: "contain", style: tmp20 };
+      const obj3 = { resizeMode: "contain", style: tmp21 };
       const merged = Object.assign(closure_7);
-      const tmp26 = React3(Illustration, obj3);
+      const tmp27 = React3(Illustration, obj3);
       cResult[3] = Illustration.Illustration;
-      cResult[4] = tmp20;
-      cResult[5] = tmp26;
-      tmp21 = tmp26;
+      cResult[4] = tmp21;
+      cResult[5] = tmp27;
+      tmp22 = tmp27;
     }
     const items = [tmp4.emptyImage, Illustration.imageStyle];
     cResult[0] = Illustration.imageStyle;
     cResult[1] = tmp4.emptyImage;
     cResult[2] = items;
-    tmp20 = items;
+    tmp21 = items;
   } else {
     tmp10 = null;
     if (null != Illustration.lightSource) {
@@ -98,12 +97,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
             tmp10 = tmp13;
           }
           const obj4 = { resizeMode: "contain", source: tmp11, style: tmp12 };
+          const tmp16 = FastImageDefault;
           const merged1 = Object.assign(closure_7);
-          const tmp19 = React3(_false, obj4);
+          const tmp20 = React3(tmp16, obj4);
           cResult[9] = tmp11;
           cResult[10] = tmp12;
-          cResult[11] = tmp19;
-          tmp13 = tmp19;
+          cResult[11] = tmp20;
+          tmp13 = tmp20;
         }
         const items1 = [tmp4.emptyImage, Illustration.imageStyle];
         cResult[6] = Illustration.imageStyle;
@@ -115,9 +115,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   }
   ({ style, body, title, children, bodyStyle, titleStyle } = Illustration);
   if (cResult[12] === style) {
-    let tmp28;
+    let tmp29;
     if (cResult[13] === tmp4.container) {
-      tmp28 = cResult[14];
+      tmp29 = cResult[14];
     }
     if (cResult[15] === body) {
       if (cResult[16] === bodyStyle) {
@@ -127,30 +127,30 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
               if (cResult[20] === tmp4.textGroup) {
                 if (cResult[21] === title) {
                   if (cResult[22] === titleStyle) {
-                    let tmp29;
+                    let tmp30;
                     if (cResult[23] === tmp7) {
-                      tmp29 = cResult[24];
+                      tmp30 = cResult[24];
                     }
                     if (cResult[25] === children) {
                       if (cResult[26] === tmp10) {
-                        if (cResult[27] === tmp28) {
-                          let tmp37;
-                          if (cResult[28] === tmp29) {
-                            tmp37 = cResult[29];
+                        if (cResult[27] === tmp29) {
+                          let tmp38;
+                          if (cResult[28] === tmp30) {
+                            tmp38 = cResult[29];
                           }
-                          return tmp37;
+                          return tmp38;
                         }
                       }
                     }
-                    const obj5 = { style: tmp28, children: items2 };
-                    items2 = [tmp10, tmp29, children];
-                    const tmp40 = hasOwnProperty(React2, obj5);
+                    const obj5 = { style: tmp29, children: items2 };
+                    items2 = [tmp10, tmp30, children];
+                    const tmp41 = hasOwnProperty(View, obj5);
                     cResult[25] = children;
                     cResult[26] = tmp10;
-                    cResult[27] = tmp28;
-                    cResult[28] = tmp29;
-                    cResult[29] = tmp40;
-                    tmp37 = tmp40;
+                    cResult[27] = tmp29;
+                    cResult[28] = tmp30;
+                    cResult[29] = tmp41;
+                    tmp38 = tmp41;
                   }
                 }
               }
@@ -159,26 +159,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
         }
       }
     }
-    let tmp31Result = null;
+    let tmp32Result = null;
     if (null != title || null != body) {
-      let tmp33 = null;
+      let tmp34 = null;
       const obj6 = { style: tmp4.textGroup, accessible: true, children: items4 };
-      const tmp31 = hasOwnProperty;
-      const tmp32 = React2;
+      const tmp32 = hasOwnProperty;
+      const tmp33 = View;
       if (null != title) {
         const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items3, children: title };
         items3 = [tmp4.emptyTitle, titleStyle, tmp7];
-        tmp33 = React3(tmp(5088).Text, obj7);
+        tmp34 = React3(tmp(5187).Text, obj7);
       }
-      items4 = [tmp33, ];
-      let tmp35 = null;
+      items4 = [tmp34, ];
+      let tmp36 = null;
       if (null != body) {
         const obj8 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items5, children: body };
         items5 = [tmp4.emptyBody, bodyStyle];
-        tmp35 = React3(tmp(5088).Text, obj8);
+        tmp36 = React3(tmp(5187).Text, obj8);
       }
-      items4[1] = tmp35;
-      tmp31Result = tmp31(tmp32, obj6);
+      items4[1] = tmp36;
+      tmp32Result = tmp32(tmp33, obj6);
     }
     cResult[15] = body;
     cResult[16] = bodyStyle;
@@ -189,14 +189,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     cResult[21] = title;
     cResult[22] = titleStyle;
     cResult[23] = tmp7;
-    cResult[24] = tmp31Result;
-    tmp29 = tmp31Result;
+    cResult[24] = tmp32Result;
+    tmp30 = tmp32Result;
   }
   const items6 = [tmp4.container, style];
   cResult[12] = style;
   cResult[13] = tmp4.container;
   cResult[14] = items6;
-  tmp28 = items6;
+  tmp29 = items6;
 }) : (function EmptyState(Illustration) {
   let body;
   let items;
@@ -208,7 +208,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   let items6;
   let title;
   let tmp11Result;
-  let tmp22Result;
+  let tmp23Result;
   let tmp2Result2;
   let tmp6;
   const tmp = closure_8();
@@ -236,10 +236,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     const tmp9 = null != Illustration.lightSource && null != Illustration.darkSource;
     if (tmp9) {
       const obj3 = { resizeMode: "contain", source: tmp2Result2.isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource, style: items1 };
+      const tmp13 = FastImageDefault;
       const merged1 = Object.assign(closure_7);
       items1 = [tmp.emptyImage, Illustration.imageStyle];
       tmp2Result2 = shared;
-      tmp11Result = React3(_false, obj3);
+      tmp11Result = React3(tmp13, obj3);
     }
   }
   ({ body, title } = Illustration);
@@ -248,29 +249,29 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   items3 = [tmp11Result, , ];
   const children = Illustration.children;
   if (null != title) {
-    let tmp25 = null;
+    let tmp26 = null;
     const obj5 = { style: tmp.textGroup, accessible: true, children: items5 };
     if (null != title) {
       const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
-      items4 = [tmp.emptyTitle, tmp21, tmp6];
-      tmp25 = React3(tmp2(5088).Text, obj6);
+      items4 = [tmp.emptyTitle, tmp22, tmp6];
+      tmp26 = React3(tmp2(5187).Text, obj6);
     }
-    items5 = [tmp25, ];
-    let tmp27 = null;
+    items5 = [tmp26, ];
+    let tmp28 = null;
     if (null != body) {
       const obj7 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
-      items6 = [tmp.emptyBody, tmp20];
-      tmp27 = React3(tmp2(5088).Text, obj7);
+      items6 = [tmp.emptyBody, tmp21];
+      tmp28 = React3(tmp2(5187).Text, obj7);
     }
-    items5[1] = tmp27;
-    tmp22Result = tmp22(tmp23, obj5);
+    items5[1] = tmp28;
+    tmp23Result = tmp23(tmp24, obj5);
   } else {
-    tmp22Result = null;
+    tmp23Result = null;
   }
-  items3[1] = tmp22Result;
+  items3[1] = tmp23Result;
   items3[2] = children;
-  return hasOwnProperty(React2, obj4);
+  return hasOwnProperty(View, obj4);
 });
 const result = size.fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
 
-export default tmp5;
+export default tmp4;

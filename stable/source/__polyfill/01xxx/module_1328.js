@@ -4,4 +4,4 @@
 
 // Module 1328
 
-export default URIError;
+export default ReferenceError;

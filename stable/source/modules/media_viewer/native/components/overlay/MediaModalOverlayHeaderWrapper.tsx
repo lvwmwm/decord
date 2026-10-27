@@ -1,16 +1,16 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8763
+// Function ID: 8764
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 5092, 6259, 558, 576, 1631, 2]
+// Dependencies: [19, 17, 21, 5191, 6536, 558, 576, 1633, 2]
 
-// Module 8485 (MediaModalOverlayHeaderWrapper)
+// Module 8763 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 11996
-// Function ID: 11997
+// Module ID: 12941
+// Function ID: 12942
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5092, 1382, 587, 4969, 558, 576, 9303, 5031, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 1384, 587, 5065, 558, 576, 9609, 5127, 1128, 5187, 2]
 
-// Module 11996 (NewBadge)
+// Module 12941 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useThemeDefault from "useTheme" /* 5031 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9303 */;
+import intl2 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9609 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(4969);
+const shared = tmp(5065);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -61,7 +61,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
     str = "text-brand";
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.y2b7CA);
     cResult[0] = stringResult;
     first = stringResult;
@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1126).intl;
+  intl = tmp7(1128).intl;
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
 });
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");

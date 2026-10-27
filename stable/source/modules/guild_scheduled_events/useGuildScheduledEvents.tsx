@@ -1,20 +1,20 @@
-// Module ID: 8650
-// Function ID: 8651
+// Module ID: 8927
+// Function ID: 8928
 // Name: useGuildScheduledEvents
-// Dependencies: [32, 19, 2065, 2087, 4750, 6054, 8651, 2071, 1085, 1102, 558, 576, 504, 8516, 8652, 8522, 2]
+// Dependencies: [32, 19, 2068, 2090, 4845, 6332, 8928, 2074, 1087, 1104, 558, 576, 504, 8794, 8929, 8802, 2]
 // Exports: getGuildActiveEvent
 
-// Module 8650 (useGuildScheduledEvents)
-import DurationsDefault from "Durations" /* 1102 */;
+// Module 8927 (useGuildScheduledEvents)
+import DurationsDefault from "Durations" /* 1104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6054 */;
-import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 8651 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6332 */;
+import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 8928 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1005,7 +1005,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImminent
     return withinStartWindow;
   }), items2);
 });
-function getGuildActiveEvent(guildId) {
+function getGuildActiveEvent(guild_id) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = GuildScheduledEventStore;
@@ -1020,7 +1020,7 @@ function getGuildActiveEvent(guildId) {
     tmp2 = PermissionStore;
   }
   let closure_1 = tmp2;
-  const guildScheduledEventsByIndex = obj.getGuildScheduledEventsByIndex(closure_8.GUILD_EVENT_ACTIVE(guildId));
+  const guildScheduledEventsByIndex = obj.getGuildScheduledEventsByIndex(closure_8.GUILD_EVENT_ACTIVE(guild_id));
   return guildScheduledEventsByIndex.find((entity_type) => {
     if (entity_type.entity_type !== constants.NONE) {
       if (closure_2_7(entity_type)) {

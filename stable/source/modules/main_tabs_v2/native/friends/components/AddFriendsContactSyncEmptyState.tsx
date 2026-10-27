@@ -1,21 +1,21 @@
-// Module ID: 17532
-// Function ID: 17533
+// Module ID: 17914
+// Function ID: 17915
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12405, 17533, 1126, 5088, 12409, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 13341, 17915, 1128, 5187, 13345, 5479, 2]
 
-// Module 17532 (AddFriendsContactSyncEmptyState)
+// Module 17914 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12405 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12409 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 17533 */;
+import intl4 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13341 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13345 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 17915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriends
   }
   const title = tmp4.title;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["/G+nci"]);
     cResult[4] = stringResult;
     tmp13 = stringResult;
@@ -99,10 +99,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriends
   }
   ({ subtitle, subtitleText } = tmp4);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const format = intl2.format;
     const obj4 = { learnMoreHook: ContactSyncUtils.handleOpenLearnMoreLink };
-    const OXdOPf = tmp(1126).t.OXdOPf;
+    const OXdOPf = tmp(1128).t.OXdOPf;
     const formatResult = format(OXdOPf, obj4);
     cResult[7] = formatResult;
     tmp18 = formatResult;
@@ -128,8 +128,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriends
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "primary", size: "lg", text: intl3.string(intl4.t.QUXSpo), onPress: first };
-      const Button = tmp(5379).Button;
-      intl3 = tmp(1126).intl;
+      const Button = tmp(5479).Button;
+      intl3 = tmp(1128).intl;
       const tmp27 = _false(Button, obj6);
       cResult[13] = tmp27;
       tmp25 = tmp27;

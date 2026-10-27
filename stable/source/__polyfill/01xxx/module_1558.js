@@ -1,78 +1,19 @@
 // Module ID: 1558
 // Function ID: 1559
 // Dependencies: []
+// Exports: isRecordEqual
 
 // Module 1558
-function getStateFromRouteParams(params) {
-  let items;
-  let path;
-  let tmp4;
-  if (null != params) {
-    if (typeof params === "object") {
-      let state;
-      if ("state" in params) {
-        if (params.state) {
-          if (typeof params.state === "object") {
-            if ("routes" in params.state) {
-              let tmp = globalThis;
-              const _Array = Array;
-              if (Array.isArray(params.state.routes)) {
-                const routes = params.state.routes;
-                if (routes.every((name) => {
-                  let tmp = typeof name === "object";
-                  if (typeof name === "object") {
-                    tmp = null != name;
-                  }
-                  if (tmp) {
-                    tmp = "name" in name;
-                  }
-                  if (tmp) {
-                    tmp = typeof name.name === "string";
-                  }
-                  return tmp;
-                })) {
-                  state = params.state;
-                }
-                return state;
-              }
-            }
-          }
-        }
-      }
-      if ("screen" in params) {
-        if (params.screen) {
-          if (typeof params.screen === "string") {
-            const obj2 = { name: params.screen, params, path, state: tmp4 };
-            params = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  params = params.params;
-                }
-              }
-            }
-            path = undefined;
-            if ("path" in params) {
-              if (typeof params.path === "string") {
-                path = params.path;
-              }
-            }
-            tmp4 = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  tmp4 = getStateFromRouteParams(params.params);
-                }
-              }
-            }
-            const obj = { routes: items };
-            items = [obj2];
-            state = obj;
-          }
-        }
-      }
-    }
-  }
-}
 
-export { getStateFromRouteParams };
+export const isRecordEqual = function isRecordEqual(value, arg1) {
+  let closure_1 = arg1;
+  if (value === arg1) {
+    return true;
+  } else {
+    const _Object = Object;
+    const keys = Object.keys(value);
+    const _Object2 = Object;
+    const tmp2 = keys.length === Object.keys(arg1).length && keys.every((item) => Object.is(value[item], closure_1[item]));
+    return tmp2;
+  }
+};

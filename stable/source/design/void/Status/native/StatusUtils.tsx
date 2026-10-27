@@ -1,12 +1,12 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 15183
+// Function ID: 15184
 // Name: Status/StatusUtils
-// Dependencies: [1201, 14418, 2]
+// Dependencies: [1203, 15184, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 14417 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14418 */;
-import StatusConstants from "StatusConstants" /* 1201 */;
+// Module 15183 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15184 */;
+import StatusConstants from "StatusConstants" /* 1203 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

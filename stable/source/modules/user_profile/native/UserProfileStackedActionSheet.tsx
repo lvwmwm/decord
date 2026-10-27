@@ -1,22 +1,22 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 10856
+// Function ID: 10857
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 1631, 8575, 1382, 6307, 6185, 1126, 6205, 5088, 6840, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 1633, 8855, 1384, 7091, 6584, 6462, 1128, 6482, 5187, 7118, 2]
 
-// Module 10531 (UserProfileStackedActionSheet)
+// Module 10856 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6205 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import Form from "Form" /* 8575 */;
+import intl2 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6482 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
+import Form from "Form" /* 8855 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -134,9 +134,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
           }
         }
         const obj3 = { data: arr, style: tmp10.list, ItemSeparatorComponent: tmp12, contentContainerStyle: tmp15, renderItem: tmp16 };
-        const BottomSheetFlatList = tmp(6307).BottomSheetFlatList;
+        const BottomSheetFlashList = tmp(7091).BottomSheetFlashList;
         const merged = Object.assign(tmp5);
-        const tmp21 = closure_8(BottomSheetFlatList, obj3);
+        const tmp21 = closure_8(BottomSheetFlashList, obj3);
         cResult[16] = arr;
         cResult[17] = tmp5;
         cResult[18] = tmp10.list;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   const merged = Object.assign(data, Object.assign({ data: 0, contentContainerStyle: 0, renderItem: 0 }));
   const tmp2 = closure_10();
   dependencyMap = tmp2;
-  const bottom = renderItem(1631)().bottom;
+  const bottom = renderItem(1633)().bottom;
   let obj = {
     data,
     style: tmp2.list,
@@ -189,11 +189,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return renderItem(obj);
     }
   };
-  const BottomSheetFlatList = data(6307).BottomSheetFlatList;
+  const BottomSheetFlashList = data(7091).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
-  const obj2 = data(1382);
+  const obj2 = data(1384);
   const tmp3 = renderItem;
   const tmp5 = closure_8;
   if (obj2.isAndroid()) {
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   }
   items[1] = { paddingBottom: bottom + num };
   items[2] = contentContainerStyle;
-  return tmp5(BottomSheetFlatList, obj);
+  return tmp5(BottomSheetFlashList, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileStackedActionSheetSectionList(arg0) {
@@ -267,7 +267,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     }
   }
   const obj2 = { contentContainerStyle: tmp4, renderItem: tmp11, ItemSeparatorComponent: tmp12 };
-  const BottomSheetSectionList = tmp(6307).BottomSheetSectionList;
+  const BottomSheetSectionList = tmp(6584).BottomSheetSectionList;
   const merged = Object.assign(tmp5);
   const tmp15 = closure_8(BottomSheetSectionList, obj2);
   cResult[8] = tmp4;
@@ -293,7 +293,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return metroImportAll(Form.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(6307).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(6584).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_8(BottomSheetSectionList, obj);
 });
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
                 }
               }
               const obj4 = { header: tmp25, children: tmp4 };
-              BottomSheet = tmp(6840).BottomSheet;
+              BottomSheet = tmp(7118).BottomSheet;
               const merged = Object.assign(tmp6);
               const tmp34 = metroImportAll(BottomSheet, obj4);
               cResult[23] = tmp4;
@@ -418,8 +418,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let tmp16 = tmp12;
     if (tmp16) {
       const obj7 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: tmp5, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp(6185).PressableOpacity;
-      intl = tmp(1126).intl;
+      const PressableOpacity = tmp(6462).PressableOpacity;
+      intl = tmp(1128).intl;
       tmp16 = metroImportAll(PressableOpacity, obj7);
     }
     cResult[10] = tmp5;
@@ -458,8 +458,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(6185).PressableOpacity;
-    intl = tmp5(1126).intl;
+    const PressableOpacity = tmp5(6462).PressableOpacity;
+    intl = tmp5(1128).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }
   items1 = [tmp4Result, metroImportAll(Text_Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];

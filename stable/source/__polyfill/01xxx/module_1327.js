@@ -4,4 +4,4 @@
 
 // Module 1327
 
-export default SyntaxError;
+export default RangeError;

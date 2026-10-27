@@ -1,19 +1,19 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 12719
+// Function ID: 12720
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6665, 4850, 5378, 5382, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6942, 4945, 5478, 5482, 5187, 2]
 
-// Module 11594 (ShareFooterLayout)
+// Module 12719 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
-import springPresets from "springPresets" /* 5382 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp6;
-const ReanimatedRexportDefault = tmp6(4850);
+const ReanimatedRexportDefault = tmp6(4945);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -96,7 +96,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareFooterL
             let tmp22 = null != warningText;
             if (tmp22) {
               const obj4 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-              tmp22 = closure_4(tmp(5088).Text, obj4);
+              tmp22 = closure_4(tmp(5187).Text, obj4);
             }
             cResult[12] = warningText;
             cResult[13] = tmp22;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareFooterL
   const tmp11 = View;
   if (tmp12) {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = closure_4(tmp4(5088).Text, obj8);
+    tmp12 = closure_4(tmp4(5187).Text, obj8);
   }
   items4[1] = tmp12;
   items2[1] = closure_6(tmp11, obj6);

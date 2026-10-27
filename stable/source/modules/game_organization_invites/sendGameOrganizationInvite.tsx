@@ -1,16 +1,16 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14978
+// Function ID: 14979
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 8759, 10487, 7419, 4969, 1126, 14197, 5636, 2]
+// Dependencies: [5, 9036, 10810, 7689, 5065, 1128, 14979, 5892, 2]
 // Exports: default
 
-// Module 14196 (sendGameOrganizationInvite)
-import intl4 from "intl" /* 1126 */;
-import shared from "shared" /* 4969 */;
-import Constants from "Constants" /* 7419 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8759 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10487 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 14197 */;
+// Module 14978 (sendGameOrganizationInvite)
+import intl4 from "intl" /* 1128 */;
+import shared from "shared" /* 5065 */;
+import Constants from "Constants" /* 7689 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9036 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10810 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 14979 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

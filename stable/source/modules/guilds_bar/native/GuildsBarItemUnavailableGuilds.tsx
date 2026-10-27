@@ -1,19 +1,19 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 17493
+// Function ID: 17494
 // Name: GuildsBarItemUnavailableGuilds
-// Dependencies: [19, 17, 5965, 21, 5092, 587, 5299, 1126, 558, 576, 504, 6157, 16804, 2]
+// Dependencies: [19, 17, 6221, 21, 5191, 587, 5399, 1128, 558, 576, 504, 5128, 17484, 2]
 
-// Module 16813 (GuildsBarItemUnavailableGuilds)
+// Module 17493 (GuildsBarItemUnavailableGuilds)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16804 */;
+import intl3 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17484 */;
 import react from "react" /* 19 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5965 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6221 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (stateFromStores > 0) {
     let tmp9;
     if (cResult[2] !== stateFromStores) {
-      let intl = tmp(1126).intl;
+      let intl = tmp(1128).intl;
       let obj2 = { count: stateFromStores };
-      const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["MEpX+2"], obj2);
+      const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["MEpX+2"], obj2);
       cResult[2] = stateFromStores;
       cResult[3] = formatToPlainStringResult;
       tmp9 = formatToPlainStringResult;
@@ -161,11 +161,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   stateFromStores = obj.useStateFromStores(items, () => GuildAvailabilityStore.totalUnavailableGuilds);
   let tmp5 = null;
   if (stateFromStores > 0) {
-    let intl = tmp2(1126).intl;
+    let intl = tmp2(1128).intl;
     const obj3 = { count: stateFromStores };
     ({ style: tmp.unavailableGuildsIcon, source: AssetRegistryDefault });
     FastImageDefault;
-    tmp5 = <Pressable accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1126).t["MEpX+2"], obj3)} onPress={function onPress() {
+    tmp5 = <Pressable accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1128).t["MEpX+2"], obj3)} onPress={function onPress() {
       let intl;
       let intl2;
       let obj2;

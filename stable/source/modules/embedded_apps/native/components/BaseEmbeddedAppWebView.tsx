@@ -1,27 +1,27 @@
-// Module ID: 10953
-// Function ID: 10954
+// Module ID: 11343
+// Function ID: 11344
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 9061, 1085, 2024, 21, 5092, 3, 1382, 558, 576, 10954, 7517, 10955, 1381, 10942, 10956, 10952, 1265, 573, 5299, 1126, 10957, 10809, 1295, 10958, 1384, 10932, 5922, 2]
+// Dependencies: [5, 32, 19, 17, 6311, 1087, 2026, 21, 5191, 3, 1384, 558, 576, 11344, 7788, 11345, 1383, 11332, 11346, 11342, 1267, 573, 5399, 1128, 11347, 6299, 1297, 11348, 1386, 11035, 6178, 2]
 
-// Module 10953 (BaseEmbeddedAppWebView)
+// Module 11343 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import Constants2 from "Constants" /* 2024 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import usePreviousDefault from "usePrevious" /* 5922 */;
-import WebView2 from "WebView" /* 7517 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import Constants2 from "Constants" /* 2026 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import usePreviousDefault from "usePrevious" /* 6178 */;
+import WebView2 from "WebView" /* 7788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9061 */;
-import createStyles from "createStyles" /* 5092 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 6311 */;
+import createStyles from "createStyles" /* 5191 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

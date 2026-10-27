@@ -1,23 +1,23 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 13842
+// Function ID: 13843
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 9210, 2128, 12917, 6157, 1126, 5088, 5379, 6814, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 558, 576, 9517, 2131, 13843, 5128, 1128, 5187, 5479, 7092, 2]
 
-// Module 12916 (XboxLinkEducation)
+// Module 13842 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9210 */;
-import _modDef12917 from "module_12917" /* 12917 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
+import _modDef13843 from "module_13843" /* 13843 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
                           const _Symbol = Symbol;
                           ({ footerContainer, footerButton } = twoWayLinkStyles);
                           if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                            const intl3 = tmp(1126).intl;
+                            const intl3 = tmp(1128).intl;
                             const stringResult = intl3.string(intl4.t.i4jeWR);
                             cResult[34] = stringResult;
                             tmp35 = stringResult;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef12917 };
+    const obj10 = { uri: _modDef13843 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -205,7 +205,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   }
   const title = twoWayLinkStyles.title;
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult1 = intl.string(intl4.t.jHytat);
     cResult[19] = stringResult1;
     tmp22 = stringResult1;
@@ -221,9 +221,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   } else {
     tmp24 = cResult[21];
   }
-  const Text = tmp(5088).Text;
+  const Text = tmp(5187).Text;
   const body = twoWayLinkStyles.body;
-  const intl2 = tmp(1126).intl;
+  const intl2 = tmp(1128).intl;
   const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
   cResult[0] = twoWayLinkStyles.body;
   cResult[1] = twoWayLinkStyles.container;
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef12917 };
+    const obj = { uri: _modDef13843 };
     return obj;
   }, []);
   items = [, , ];

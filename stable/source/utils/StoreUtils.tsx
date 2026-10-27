@@ -1,22 +1,22 @@
-// Module ID: 5644
-// Function ID: 5645
+// Module ID: 5900
+// Function ID: 5901
 // Name: StoreUtils
-// Dependencies: [5, 502, 4771, 4772, 4775, 1085, 5645, 5294, 5218, 1450, 5724, 1295, 1382, 1126, 2]
+// Dependencies: [5, 502, 4866, 4867, 4870, 1087, 5901, 5394, 5317, 1452, 5980, 1297, 1384, 1128, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5644 (StoreUtils)
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import BrowserUtils from "BrowserUtils" /* 5218 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5294 */;
+// Module 5900 (StoreUtils)
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
+import BrowserUtils from "BrowserUtils" /* 5317 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4771 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4772 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import Constants from "Constants" /* 1085 */;
-import allSettled_mod from "allSettled" /* 5645 */;
+import BillingInfoStore from "BillingInfoStore" /* 4866 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4867 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import Constants from "Constants" /* 1087 */;
+import allSettled_mod from "allSettled" /* 5901 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -164,7 +164,7 @@ let obj = function _httpGetWithCountryCodeQuery() {
             closure_5 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c6) {
@@ -275,10 +275,14 @@ export const getAssetURL = function getAssetURL(arg0, mimeType, arg2, mp4) {
   let combined;
   let str = mp4;
   if (null == mp4) {
+    let tmp;
+    if (typeof mimeType !== "string") {
+      tmp = "mimeType" in mimeType ? mimeType.mimeType : mimeType.mime_type;
+    }
     str = "mp4";
-    if ("video/quicktime" !== (mimeType.mimeType || mimeType.mime_type)) {
+    if ("video/quicktime" !== tmp) {
       str = "mp4";
-      if ("video/mp4" !== (mimeType.mimeType || mimeType.mime_type)) {
+      if ("video/mp4" !== tmp) {
         str = "image/gif" === tmp ? "gif" : "webp";
       }
     }

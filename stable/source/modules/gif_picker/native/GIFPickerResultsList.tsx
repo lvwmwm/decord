@@ -1,16 +1,16 @@
-// Module ID: 9745
-// Function ID: 9746
+// Module ID: 10048
+// Function ID: 10049
 // Name: GIFPickerResultsList
-// Dependencies: [32, 19, 21, 5092, 9735, 558, 576, 9728, 9746, 8620, 9525, 2]
+// Dependencies: [32, 19, 21, 5191, 10038, 558, 576, 10031, 10049, 7091, 9827, 2]
 
-// Module 9745 (GIFPickerResultsList)
+// Module 10048 (GIFPickerResultsList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9735 */;
-import GIFPickerItemView from "GIFPickerItemView" /* 9746 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10038 */;
+import GIFPickerItemView from "GIFPickerItemView" /* 10049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerR
   } else {
     first = cResult[0];
   }
-  const safeAreaBottomKeyboardAware = onPressGIF(9728)(first).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = onPressGIF(10031)(first).safeAreaBottomKeyboardAware;
   if (loading) {
     resultItems = closure_7;
   }
@@ -182,7 +182,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerR
       if (cResult[8] === onPressGIF) {
         tmp10 = cResult[9];
       }
-      columnWidth(8620);
+      columnWidth(7091);
       class V {
         constructor(arg0) {
           let extraData;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerR
           }
         }
       }
-      const tmpResult2 = columnWidth(9525);
+      const tmpResult2 = columnWidth(9827);
       const isPortalKeyboardInModal = tmpResult2.useIsPortalKeyboardInModal();
       if (cResult[10] !== safeAreaBottomKeyboardAware) {
         let obj3 = { paddingBottom: safeAreaBottomKeyboardAware };
@@ -318,7 +318,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerR
           }
         }
       }
-      const tmp18 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={columnWidth(9735).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp15} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
+      const tmp18 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={columnWidth(10038).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp15} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
       cResult[13] = tmp12;
       cResult[14] = ListFooterComponent;
       cResult[15] = columns;

@@ -1,10 +1,10 @@
-// Module ID: 5401
-// Function ID: 5402
+// Module ID: 5501
+// Function ID: 5502
 // Name: combineMarkupRules
 // Dependencies: [2]
 // Exports: default
 
-// Module 5401 (combineMarkupRules)
+// Module 5501 (combineMarkupRules)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/combineMarkupRules.tsx");

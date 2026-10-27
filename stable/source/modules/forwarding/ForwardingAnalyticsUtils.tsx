@@ -1,16 +1,16 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 12684
+// Function ID: 12685
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 2065, 1085, 1265, 5107, 558, 576, 12, 2]
+// Dependencies: [19, 2068, 1087, 1267, 5206, 558, 576, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 11556 (ForwardingAnalyticsUtils)
+// Module 12684 (ForwardingAnalyticsUtils)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
   if ("message-shortcut" === source) {
     const channel = ChannelStore.getChannel(channelId);
     const obj2 = { action: "forward", original_message_id: messageId };
-    const track = tmp(1265).track;
+    const track = tmp(1267).track;
     const MESSAGE_SHORTCUT_ACTION_SENT = tmp3.MESSAGE_SHORTCUT_ACTION_SENT;
     AnalyticsUtilsDefault;
     let guild_id;
@@ -146,7 +146,7 @@ export const trackForwardSent = function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    const tmp14Result = tmp14(5107);
+    const tmp14Result = tmp14(5206);
     const merged1 = Object.assign(tmp14Result.collectChannelAnalyticsMetadata(channel));
     track(MESSAGE_SHORTCUT_ACTION_SENT, obj2);
   }

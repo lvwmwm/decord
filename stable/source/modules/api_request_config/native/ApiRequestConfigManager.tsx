@@ -1,15 +1,15 @@
-// Module ID: 18647
-// Function ID: 18648
+// Module ID: 19043
+// Function ID: 19044
 // Name: ApiRequestConfigManager
-// Dependencies: [17, 502, 1295, 1265, 6808, 1382, 2]
+// Dependencies: [17, 502, 1297, 1267, 7085, 1384, 2]
 
-// Module 18647 (ApiRequestConfigManager)
+// Module 19043 (ApiRequestConfigManager)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 function updateApiRequestConfig() {

@@ -1,19 +1,19 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 15671
+// Function ID: 15672
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8280, 1085, 558, 576, 5031, 4969, 14914, 8287, 14848, 6679, 1265, 1126, 2]
+// Dependencies: [19, 8558, 1087, 558, 576, 5127, 5065, 15672, 8565, 15611, 6956, 1267, 1128, 2]
 
-// Module 14913 (usePremiumTryItOutPresetShuffle)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import shared from "shared" /* 4969 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6679 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8287 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 14848 */;
-import TryItOutPresets from "TryItOutPresets" /* 14914 */;
+// Module 15671 (usePremiumTryItOutPresetShuffle)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import shared from "shared" /* 5065 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6956 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8565 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15611 */;
+import TryItOutPresets from "TryItOutPresets" /* 15672 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,9 +29,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(9);
-  const tmp4 = T(5031)();
+  const tmp4 = T(5127)();
   if (cResult[0] !== tmp4) {
-    const tmpResult = tmp(4969);
+    const tmpResult = tmp(5065);
     const isThemeLightResult = tmpResult.isThemeLight(tmp4);
     cResult[0] = tmp4;
     cResult[1] = isThemeLightResult;
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   return tmp12;
 }) : (function usePremiumTryItOutPresetShuffle() {
   let callback;
-  const tmp = callback(5031)();
+  const tmp = callback(5127)();
   let obj = shared;
   const isThemeLightResult = obj.isThemeLight(tmp);
   const require = isThemeLightResult;

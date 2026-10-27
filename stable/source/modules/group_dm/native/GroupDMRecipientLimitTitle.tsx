@@ -1,22 +1,22 @@
-// Module ID: 17523
-// Function ID: 17524
+// Module ID: 17905
+// Function ID: 17906
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 10750, 4818, 1126, 5088, 9031, 11898, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 1384, 558, 576, 11166, 4913, 1128, 5187, 9327, 12034, 2]
 
-// Module 17523 (GroupDMRecipientLimitTitle)
+// Module 17905 (GroupDMRecipientLimitTitle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4818 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10750 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11898 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import useToken from "useToken" /* 4913 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11166 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12034 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -179,7 +179,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
         let tmp20Result = null;
         if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
           let tmp21 = token2;
-          const NitroWheelIcon = tmp(9031).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9327).NitroWheelIcon;
           const tmp20 = metroRequire;
           if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
             tmp21 = token1;
@@ -204,7 +204,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
     cResult[6] = tmp17;
     tmp15 = tmp17;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   cResult[0] = memberCount;
   cResult[1] = recipientLimit;
@@ -240,7 +240,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
       str2 = "text-feedback-critical";
     }
   }
-  const intl = tmp2(1126).intl;
+  const intl = tmp2(1128).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   const items = [, ];
   const obj5 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp.title, maxFontSizeMultiplier: 2, children: title };
@@ -249,7 +249,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9327).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

@@ -1,11 +1,11 @@
-// Module ID: 2102
-// Function ID: 2103
+// Module ID: 2105
+// Function ID: 2106
 // Name: EntityDao
-// Dependencies: [2096, 2098, 2]
+// Dependencies: [2099, 2101, 2]
 
-// Module 2102 (EntityDao)
-import Table from "Table" /* 2096 */;
-import TableId from "TableId" /* 2098 */;
+// Module 2105 (EntityDao)
+import Table from "Table" /* 2099 */;
+import TableId from "TableId" /* 2101 */;
 import size from "module_2" /* 2 */;
 
 class EntityDao {

@@ -1,16 +1,16 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 13144
+// Function ID: 13145
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 2127, 21, 558, 576, 12202, 11441, 1126, 12173, 2]
+// Dependencies: [19, 2130, 21, 558, 576, 13145, 12584, 1128, 13118, 2]
 
-// Module 12201 (ChatInputGuardGuildCommunicationDisabled)
+// Module 13144 (ChatInputGuardGuildCommunicationDisabled)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2127 */;
-import ClockWarningIcon from "ClockWarningIcon" /* 11441 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12173 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12202 */;
+import intl3 from "intl" /* 1128 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2130 */;
+import ClockWarningIcon from "ClockWarningIcon" /* 12584 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13118 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 13145 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -50,9 +50,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp15 = jsx(ClockWarningIcon.ClockWarningIcon, {});
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.VSpdzK);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { link };
     const formatResult = intl2.format(intl3.t["4ZwD5G"], obj3);
     cResult[2] = tmp15;
@@ -93,8 +93,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     date = new Date(communicationDisabledUntil);
   }
   ChatInputGuardDefault;
-  const intl = tmp(1126).intl;
-  const intl2 = tmp(1126).intl;
+  const intl = tmp(1128).intl;
+  const intl2 = tmp(1128).intl;
   const obj3 = { link };
   return <tmp8 type="simple-action" icon={null} message={intl.string(intl3.t.VSpdzK)} subtext={intl2.format(intl3.t["4ZwD5G"], obj3)} countdown={date} />;
 }));

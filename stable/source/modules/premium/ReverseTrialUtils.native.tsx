@@ -1,12 +1,12 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8364
+// Function ID: 8365
 // Name: ReverseTrialUtils
-// Dependencies: [1390, 558, 576, 504, 2]
+// Dependencies: [1392, 558, 576, 504, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useReverseTrialDaysRemaining
 
-// Module 8090 (ReverseTrialUtils)
+// Module 8364 (ReverseTrialUtils)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10785
+// Function ID: 10786
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 6975, 21, 5092, 558, 576, 1126, 6977, 9324, 5056, 6839, 10463, 5379, 6899, 2]
+// Dependencies: [32, 19, 17, 7257, 21, 5191, 558, 576, 1128, 7259, 9628, 5155, 7117, 10786, 5479, 7175, 2]
 
-// Module 10462 (ForumPostTagsActionSheet)
+// Module 10785 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ForumConstants from "ForumConstants" /* 6975 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9324 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 10463 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ForumConstants from "ForumConstants" /* 7257 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9628 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 10786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -245,8 +245,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   if (title === undefined) {
     let tmp = thread;
     let tmp2 = dependencyMap;
-    const intl = thread(1126).intl;
-    title = intl.string(thread(1126).t["436ZFw"]);
+    const intl = thread(1128).intl;
+    title = intl.string(thread(1128).t["436ZFw"]);
   }
   ({ tags, onClose: _slicedToArray } = thread);
   first = undefined;
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(6977);
+  let obj = thread(7259);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(6977);
+  const tmp4Result = tmp4(7259);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {
@@ -295,10 +295,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
     header: toggleTag(BottomSheetTitleHeader, obj3),
     children: items
   };
-  const ActionSheet = tmp4(6899).ActionSheet;
-  obj3 = { title, subtitle: intl2.string(tmp4(1126).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
-  BottomSheetTitleHeader = tmp4(6839).BottomSheetTitleHeader;
-  intl2 = tmp4(1126).intl;
+  const ActionSheet = tmp4(7175).ActionSheet;
+  obj3 = { title, subtitle: intl2.string(tmp4(1128).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
+  BottomSheetTitleHeader = tmp4(7117).BottomSheetTitleHeader;
+  intl2 = tmp4(1128).intl;
   items = [, ];
   const obj4 = {
     style: tmp3.tagsContainer,
@@ -318,7 +318,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   items[0] = toggleTag(closure_5, obj4);
   const obj5 = { style: tmp3.saveButton, children: toggleTag(Button, obj6) };
   obj6 = {
-    text: intl3.string(tmp4(1126).t["R3BPH+"]),
+    text: intl3.string(tmp4(1128).t["R3BPH+"]),
     onPress: function handleSave() {
       Array.from(first);
       if (null != dependencyMap) {
@@ -333,8 +333,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
       obj2.hideActionSheet();
     }
   };
-  Button = tmp4(5379).Button;
-  intl3 = tmp4(1126).intl;
+  Button = tmp4(5479).Button;
+  intl3 = tmp4(1128).intl;
   items[1] = toggleTag(closure_5, obj5);
   return closure_8(ActionSheet, obj2);
 });

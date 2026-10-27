@@ -1,25 +1,25 @@
-// Module ID: 4808
-// Function ID: 4809
+// Module ID: 4903
+// Function ID: 4904
 // Name: ToastUtils
-// Dependencies: [1085, 4809, 1126, 4815, 5032, 5034, 5036, 5038, 5040, 5042, 5044, 1415, 5046, 5049, 1279, 5051, 2]
+// Dependencies: [1087, 4904, 1128, 4910, 5131, 5133, 5135, 5137, 5139, 5141, 5143, 1417, 5145, 5148, 1281, 5150, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4808 (ToastUtils)
-import Constants from "Constants" /* 1085 */;
-import intl7 from "intl" /* 1126 */;
-import v1 from "v1" /* 1279 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import FriendsIcon from "FriendsIcon" /* 4815 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 5034 */;
-import UserMinusIcon from "UserMinusIcon" /* 5036 */;
-import LinkIcon from "LinkIcon" /* 5038 */;
-import SendMessageIcon from "SendMessageIcon" /* 5040 */;
-import CopyIcon from "CopyIcon" /* 5042 */;
-import DownloadIcon from "DownloadIcon" /* 5044 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
-import TrashIcon from "TrashIcon" /* 5049 */;
-import ClockIcon from "ClockIcon" /* 5051 */;
+// Module 4903 (ToastUtils)
+import Constants from "Constants" /* 1087 */;
+import intl7 from "intl" /* 1128 */;
+import v1 from "v1" /* 1281 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import FriendsIcon from "FriendsIcon" /* 4910 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 5133 */;
+import UserMinusIcon from "UserMinusIcon" /* 5135 */;
+import LinkIcon from "LinkIcon" /* 5137 */;
+import SendMessageIcon from "SendMessageIcon" /* 5139 */;
+import CopyIcon from "CopyIcon" /* 5141 */;
+import DownloadIcon from "DownloadIcon" /* 5143 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
+import TrashIcon from "TrashIcon" /* 5148 */;
+import ClockIcon from "ClockIcon" /* 5150 */;
 import size from "module_2" /* 2 */;
 
 const VerificationCriteria = Constants.VerificationCriteria;
@@ -48,7 +48,7 @@ export const presentFriendRequestAcceptedToast = function presentFriendRequestAc
     const obj = { username: username.username };
     stringResult = intl.formatToPlainString(intl7.t.b3eoD4, obj);
   }
-  const obj2 = { text: stringResult, icon: tmp3(5032).UserPlusIcon, iconColor: "status-positive" };
+  const obj2 = { text: stringResult, icon: tmp3(5131).UserPlusIcon, iconColor: "status-positive" };
   open("TOAST_FRIEND_REQUEST_ACCEPTED", obj2);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {

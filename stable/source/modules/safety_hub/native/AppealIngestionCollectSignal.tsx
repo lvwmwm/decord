@@ -1,22 +1,22 @@
-// Module ID: 11502
-// Function ID: 11503
+// Module ID: 12643
+// Function ID: 12644
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 7508, 21, 5092, 587, 558, 576, 4832, 7507, 8575, 11475, 584, 5056, 11503, 2000, 1126, 11481, 5088, 2]
+// Dependencies: [19, 17, 7779, 21, 5191, 587, 558, 576, 4927, 7778, 8855, 12616, 584, 5155, 12644, 2002, 1128, 12622, 5187, 2]
 // Exports: default
 
-// Module 11502 (AppealIngestionCollectSignal)
+// Module 12643 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import react_native2 from "react-native" /* 4832 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
-import Form2 from "Form" /* 8575 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import react_native2 from "react-native" /* 4927 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
+import Form2 from "Form" /* 8855 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ActionSheetActionCreatorsDefault = tmp(5056);
+const ActionSheetActionCreatorsDefault = tmp(5155);
 const View = react_native.View;
 ({ AppealIngestionSignal: closure_4, AppealIngestionSignalOrder: hasOwnProperty } = SafetyHubConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -201,23 +201,23 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(11503, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(12644, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(11475);
+  let obj = isDsaEligible(12616);
   dependencyMap = obj.useSafetyHubAppealSignal();
-  const intl = isDsaEligible(1126).intl;
-  const stringResult = intl.string(isDsaEligible(1126).t["C5q+pW"]);
-  const intl2 = isDsaEligible(1126).intl;
+  const intl = isDsaEligible(1128).intl;
+  const stringResult = intl.string(isDsaEligible(1128).t["C5q+pW"]);
+  const intl2 = isDsaEligible(1128).intl;
   let obj2 = { children: items };
-  const stringResult1 = intl2.string(isDsaEligible(1126).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(11481).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(11481).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const stringResult1 = intl2.string(isDsaEligible(1128).t.VEcRhw);
+  const AppealIngestionModalScreen = isDsaEligible(12622).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(12622).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8575).Form;
+  Form = isDsaEligible(8855).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -226,12 +226,12 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(closure_9, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8575).FormSection;
+  const FormSection = isDsaEligible(8855).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
-  obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1126).t["8k9GCW"], {}) };
-  Text = isDsaEligible(5088).Text;
-  intl3 = isDsaEligible(1126).intl;
+  obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1128).t["8k9GCW"], {}) };
+  Text = isDsaEligible(5187).Text;
+  intl3 = isDsaEligible(1128).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);
   return closure_7(AppealIngestionModalScreen, obj2);

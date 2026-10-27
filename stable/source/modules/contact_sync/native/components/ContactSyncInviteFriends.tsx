@@ -1,20 +1,20 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 13366
+// Function ID: 13367
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1265, 1126, 4962, 8477, 6157, 12431, 5088, 5379, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 5191, 587, 558, 576, 504, 1267, 1128, 5057, 8755, 5128, 13367, 5187, 5479, 2]
 
-// Module 12430 (ContactSyncInviteFriends)
+// Module 13366 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12431 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13367 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp5;
-const UserUtilsDefault = tmp(4962);
-const showShareActionSheet = tmp5(8477);
+const UserUtilsDefault = tmp(5057);
+const showShareActionSheet = tmp5(8755);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -106,8 +106,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   const title = tmp4.title;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.ZxBpLf);
+    let intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.ZxBpLf);
     cResult[6] = stringResult;
     tmp15 = stringResult;
   } else {
@@ -115,7 +115,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   if (cResult[7] !== tmp4.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(tmp(5088).Text, obj3);
+    const tmp19 = closure_7(tmp(5187).Text, obj3);
     cResult[7] = tmp4.title;
     cResult[8] = tmp19;
     tmp17 = tmp19;
@@ -124,8 +124,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   const subtitle = tmp4.subtitle;
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(tmp(1126).t["fXtCJ+"]);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(tmp(1128).t["fXtCJ+"]);
     cResult[9] = stringResult1;
     tmp20 = stringResult1;
   } else {
@@ -133,7 +133,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
   }
   if (cResult[10] !== tmp4.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-    const tmp24 = closure_7(tmp(5088).Text, obj4);
+    const tmp24 = closure_7(tmp(5187).Text, obj4);
     cResult[10] = tmp4.subtitle;
     cResult[11] = tmp24;
     tmp22 = tmp24;
@@ -152,8 +152,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
         const _Symbol = Symbol;
         const button = tmp4.button;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1126).intl;
-          const stringResult2 = intl3.string(tmp(1126).t["6Qgrev"]);
+          const intl3 = tmp(1128).intl;
+          const stringResult2 = intl3.string(tmp(1128).t["6Qgrev"]);
           cResult[17] = stringResult2;
           tmp27 = stringResult2;
         } else {
@@ -161,7 +161,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncInvit
         }
         if (cResult[18] !== tmp9) {
           const obj5 = { variant: "primary", size: "lg", text: tmp27, onPress: tmp9 };
-          const tmp31 = closure_7(tmp(5379).Button, obj5);
+          const tmp31 = closure_7(tmp(5479).Button, obj5);
           cResult[18] = tmp9;
           cResult[19] = tmp31;
           tmp29 = tmp31;

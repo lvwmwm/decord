@@ -1,17 +1,17 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9996
+// Function ID: 9997
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 9694, 2065, 1085, 584, 4977, 7897, 1295, 7028, 2]
+// Dependencies: [5, 9997, 2068, 1087, 584, 5073, 8169, 1297, 7303, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 9693 (ChannelSettingsActionCreators)
+// Module 9996 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9694 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9997 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let application_id, auto_archive_duration, default_auto_archive_duration, default_forum_layout, default_sort_order, default_tag_setting, default_thread_rate_limit_per_user, permission_overwrites, position, rate_limit_per_user, rtc_region, theme_color, user, user_limit, video_quality_mode;
@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               topic = 1;
               bitrate = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === topic) {
             if (arg0 === 1) {

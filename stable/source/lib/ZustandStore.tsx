@@ -1,10 +1,10 @@
-// Module ID: 4989
-// Function ID: 4990
+// Module ID: 5085
+// Function ID: 5086
 // Name: ZustandStore
-// Dependencies: [1267, 4990, 1272, 558, 576, 2]
+// Dependencies: [1269, 5086, 1274, 558, 576, 2]
 // Exports: createZustandStore
 
-// Module 4989 (ZustandStore)
+// Module 5085 (ZustandStore)
 import react from "react" /* 576 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export const createZustandStore = function createZustandStore(arg0) {
   _require = arg0;
   let tmp = _require;
   let tmp2 = dependencyMap;
-  let tmp3 = require("module_1267");
+  let tmp3 = require("module_1269");
   const createWithEqualityFn = tmp3.createWithEqualityFn;
   let obj = require("combine");
   dependencyMap = createWithEqualityFn(obj.subscribeWithSelector((arg0, arg1, arg2) => {

@@ -1,28 +1,28 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 16415
+// Function ID: 16416
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5081, 8280, 21, 5092, 587, 558, 576, 8286, 1990, 8289, 504, 1126, 2958, 10513, 10629, 6053, 8279, 4793, 1200, 8369, 10264, 10265, 5088, 2]
+// Dependencies: [19, 17, 5181, 8558, 21, 5191, 587, 558, 576, 8564, 1992, 8567, 504, 1128, 2981, 10836, 10954, 6330, 8557, 4888, 1202, 8647, 10565, 10566, 5187, 2]
 
-// Module 15655 (DisplayNameStylesEditPreview)
+// Module 16415 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import _modDef2958 from "module_2958" /* 2958 */;
-import DateUtils from "DateUtils" /* 4793 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6053 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8279 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8289 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8369 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
-import types from "types" /* 10265 */;
+import native from "native" /* 1202 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import DateUtils from "DateUtils" /* 4888 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6330 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8557 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8567 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8647 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
+import types from "types" /* 10566 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,11 +64,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut } = user);
   dependencyMap = tmp4;
   const tmp5 = closure_9();
-  const tmpResult = user(8286);
+  const tmpResult = user(8564);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ guildNameplate, pendingNameplate, userNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {
-    const tmpResult3 = user(1990);
+    const tmpResult3 = user(1992);
     const nameplateData = tmpResult3.getNameplateData(guildNameplate);
     cResult[0] = guildNameplate;
     cResult[1] = nameplateData;
@@ -101,8 +101,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
           const _Symbol = Symbol;
           const previewSection = tmp5.previewSection;
           if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1126).intl;
-            const stringResult = intl.string(guildId(2958).zoh6MT);
+            const intl = tmp(1128).intl;
+            const stringResult = intl.string(guildId(2981).zoh6MT);
             cResult[11] = stringResult;
             tmp14 = stringResult;
           } else {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 }
                               }
                               const obj4 = { user, nameplate: pendingNameplate, nameplateData: tmp30, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp13, pendingGlobalName: displayName };
-                              const tmp33 = closure_7(user(10629).NameplatePreview, obj4);
+                              const tmp33 = closure_7(user(10954).NameplatePreview, obj4);
                               cResult[28] = stateFromStores;
                               cResult[29] = displayName;
                               cResult[30] = tmp13;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const obj7 = { user, displayName, guildId, displayNameStylesOverride: tmp13, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: tmp14 };
-          const tmp20 = closure_7(guildId(10513), obj7);
+          const tmp20 = closure_7(guildId(10836), obj7);
           cResult[12] = displayName;
           cResult[13] = tmp13;
           cResult[14] = guildId;
@@ -429,8 +429,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
                           }
                         }
                         if (tmp41 === Symbol.for("react.memo_cache_sentinel")) {
-                          const intl = tmp(1126).intl;
-                          const stringResult = intl.string(_modDef2958.h5Cuej);
+                          const intl = tmp(1128).intl;
+                          const stringResult = intl.string(_modDef2981.h5Cuej);
                           class P {
                             constructor() {
                               return closure_1_5.useReducedMotion;
@@ -533,7 +533,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
         }
       }
     }
-    const Avatar = tmp(1200).Avatar;
+    const Avatar = tmp(1202).Avatar;
     const tmp23 = metroImportDefault;
     if (undefined !== avatarSrcOverride) {
       const obj7 = { source: tmpResult6.getAvatarSource(user, guildId, avatarSrcOverride, stateFromStores), size: native.AvatarSizes.NORMAL, avatarDecoration: tmp20 };
@@ -603,7 +603,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
     tmp8 = pendingAvatarDecoration;
   }
   const obj3 = { style: tmp.chatContainer, pointerEvents: "none", children: items1 };
-  const Avatar = tmp2(1200).Avatar;
+  const Avatar = tmp2(1202).Avatar;
   if (undefined !== avatarSrcOverride) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, avatarSrcOverride, stateFromStores), size: native.AvatarSizes.NORMAL, avatarDecoration: tmp8 };
     obj5 = obj4;
@@ -620,9 +620,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   const obj9 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
-  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2958.h5Cuej) };
-  const Text = tmp2(5088).Text;
-  intl = tmp2(1126).intl;
+  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2981.h5Cuej) };
+  const Text = tmp2(5187).Text;
+  intl = tmp2(1128).intl;
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);
   return metroImportAll(View, obj3);

@@ -1,12 +1,12 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16768
+// Function ID: 16769
 // Name: DevSettingsActions
-// Dependencies: [5091, 584, 2]
+// Dependencies: [5190, 584, 2]
 // Exports: clearAll, toggle
 
-// Module 16069 (DevSettingsActions)
+// Module 16768 (DevSettingsActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import DevSettingsStore from "DevSettingsStore" /* 5190 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");

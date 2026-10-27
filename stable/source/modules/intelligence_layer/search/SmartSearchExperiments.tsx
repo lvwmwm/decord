@@ -1,13 +1,14 @@
-// Module ID: 12078
-// Function ID: 12079
+// Module ID: 13023
+// Function ID: 13024
 // Name: SmartSearchExperiments
-// Dependencies: [2087, 1085, 1453, 558, 576, 504, 2]
+// Dependencies: [2090, 1087, 1455, 9635, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 12078 (SmartSearchExperiments)
-import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
+// Module 13023 (SmartSearchExperiments)
+import Constants from "Constants" /* 1087 */;
+import ConversationExperiments from "ConversationExperiments" /* 9635 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,10 +25,9 @@ const apexExperiment1 = ApexExperiment.createApexExperiment(obj2);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSearchEnabled(arg0, location) {
   let closure_0;
   let first;
+  let tmp10;
   let tmp6;
   let tmp7;
-  let tmp9;
-  let str = arg0;
   _require = arg0;
   const tmp = _require;
   let tmp2 = dependencyMap;
@@ -40,7 +40,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
   } else {
     first = cResult[0];
   }
-  if (cResult[1] !== str) {
+  if (cResult[1] !== arg0) {
     const fn = function c() {
       let tmp2 = null != closure_0;
       if (tmp2) {
@@ -57,8 +57,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
       }
       return tmp2;
     };
-    const items1 = [str];
-    cResult[1] = str;
+    const items1 = [arg0];
+    cResult[1] = arg0;
     cResult[2] = fn;
     cResult[3] = items1;
     tmp7 = items1;
@@ -69,29 +69,34 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
   }
   const tmpResult = tmp(504);
   let stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  const tmpResult2 = tmp(9635);
+  let isConversationDebugUXEnabled = tmpResult2.useIsConversationDebugUXEnabled(arg0, location);
   if (cResult[4] !== location) {
     const obj2 = { location };
     cResult[4] = location;
     cResult[5] = obj2;
-    tmp9 = obj2;
+    tmp10 = obj2;
   } else {
-    tmp9 = cResult[5];
+    tmp10 = cResult[5];
   }
-  const enabled = apexExperiment.useConfig(tmp9).enabled;
-  if (str == null) {
+  let enabled = apexExperiment.useConfig(tmp10).enabled;
+  let str = arg0;
+  if (arg0 == null) {
     str = "";
   }
   if (cResult[6] === location) {
-    let tmp10;
+    let tmp11;
     if (cResult[7] === str) {
-      tmp10 = cResult[8];
-    }
-    const enabled2 = apexExperiment1.useConfig(tmp10).enabled;
-    if (stateFromStores) {
-      stateFromStores = enabled;
+      tmp11 = cResult[8];
     }
     if (stateFromStores) {
-      stateFromStores = enabled2;
+      if (!isConversationDebugUXEnabled) {
+        if (enabled) {
+          enabled = apexExperiment1.useConfig(tmp11).enabled;
+        }
+        isConversationDebugUXEnabled = enabled;
+      }
+      stateFromStores = isConversationDebugUXEnabled;
     }
     return stateFromStores;
   }
@@ -99,10 +104,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
   cResult[6] = location;
   cResult[7] = str;
   cResult[8] = obj3;
-  tmp10 = obj3;
+  tmp11 = obj3;
 }) : (function useIsNlpSearchEnabled(arg0, location) {
   let closure_0;
-  let str = arg0;
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
@@ -123,20 +127,24 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
     }
     return tmp2;
   }, items1);
-  const obj2 = { location };
-  const enabled = apexExperiment.useConfig(obj2).enabled;
-  let tmp2 = apexExperiment1;
+  const obj2 = require("ConversationExperiments");
+  let isConversationDebugUXEnabled = obj2.useIsConversationDebugUXEnabled(arg0, location);
+  const obj3 = { location };
+  let enabled = apexExperiment.useConfig(obj3).enabled;
+  let str = arg0;
   const useConfig = apexExperiment1.useConfig;
   if (arg0 == null) {
     str = "";
   }
-  const obj3 = { guildId: str, location };
-  const enabled2 = useConfig(obj3).enabled;
+  const obj4 = { guildId: str, location };
   if (stateFromStores) {
-    stateFromStores = enabled;
-  }
-  if (stateFromStores) {
-    stateFromStores = enabled2;
+    if (!isConversationDebugUXEnabled) {
+      if (enabled) {
+        enabled = useConfig(obj4).enabled;
+      }
+      isConversationDebugUXEnabled = enabled;
+    }
+    stateFromStores = isConversationDebugUXEnabled;
   }
   return stateFromStores;
 });
@@ -155,13 +163,18 @@ export const isNlpSearchEnabled = function isNlpSearchEnabled(guildId, suggested
     flag = false;
   }
   if (flag) {
-    const obj = { location: suggested_searches };
-    let enabled = apexExperiment.getConfig(obj).enabled;
-    const obj2 = { guildId, location: suggested_searches };
-    if (enabled) {
-      enabled = apexExperiment1.getConfig(obj2).enabled;
+    const obj = ConversationExperiments;
+    if (obj.isConversationDebugUXEnabled(guildId, suggested_searches)) {
+      return true;
+    } else {
+      const obj2 = { location: suggested_searches };
+      let enabled = apexExperiment.getConfig(obj2).enabled;
+      const obj3 = { guildId, location: suggested_searches };
+      if (enabled) {
+        enabled = apexExperiment1.getConfig(obj3).enabled;
+      }
+      return enabled;
     }
-    return enabled;
   } else {
     return false;
   }

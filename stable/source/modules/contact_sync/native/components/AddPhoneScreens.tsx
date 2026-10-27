@@ -1,23 +1,23 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 13369
+// Function ID: 13370
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1390, 12406, 21, 5092, 6259, 587, 558, 576, 1503, 1126, 5088, 12405, 6733, 6734, 573, 6726, 38, 6767, 6682, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13342, 21, 5191, 6536, 587, 558, 576, 1505, 1128, 5187, 13341, 7010, 7011, 573, 7003, 38, 7044, 6959, 2]
 
-// Module 12433 (AddPhoneScreens)
+// Module 13369 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6726 */;
-import AddPhoneDefault from "AddPhone" /* 6733 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 6734 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12405 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12406 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7003 */;
+import AddPhoneDefault from "AddPhone" /* 7010 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7011 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13341 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13342 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,13 +48,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   let tmp8;
   let obj = navigation(576);
   const cResult = obj.c(16);
-  const obj2 = navigation(1503);
+  const obj2 = navigation(1505);
   navigation = obj2.useNavigation();
   const tmp5 = closure_11();
   ({ header, title } = tmp5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(navigation(1126).t.Xgb497);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(navigation(1128).t.Xgb497);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   }
   if (cResult[1] !== tmp5.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp10 = closure_9(navigation(5088).Text, obj3);
+    const tmp10 = closure_9(navigation(5187).Text, obj3);
     cResult[1] = tmp5.title;
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -71,8 +71,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   }
   const subtitle = tmp5.subtitle;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(navigation(1126).t.qFmzyo);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(navigation(1128).t.qFmzyo);
     cResult[3] = stringResult1;
     tmp11 = stringResult1;
   } else {
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   }
   if (cResult[4] !== tmp5.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp11 };
-    const tmp15 = closure_9(navigation(5088).Text, obj4);
+    const tmp15 = closure_9(navigation(5187).Text, obj4);
     cResult[4] = tmp5.subtitle;
     cResult[5] = tmp15;
     tmp13 = tmp15;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
           }
         }
       }
-      const obj5 = { style: tmp5.container, reason: navigation(6734).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
+      const obj5 = { style: tmp5.container, reason: navigation(7011).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
       const tmp22 = AddPhoneDefault;
       cResult[12] = tmp16;
       cResult[13] = tmp5.container;
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
               result = obj.handlePhoneVerificationComplete(tmp, closure_2);
               nextPromise = result.then(() => {
                 const obj = RunAfterInteractionsUtils;
-                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F155478 */ });
+                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F157569 */ });
               });
             }
             return () => {
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
         result = obj.handlePhoneVerificationComplete(tmp, closure_2);
         nextPromise = result.then(() => {
           const obj = RunAfterInteractionsUtils;
-          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F155478 */ });
+          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F157569 */ });
         });
       }
       return () => {

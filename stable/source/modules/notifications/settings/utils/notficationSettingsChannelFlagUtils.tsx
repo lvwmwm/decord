@@ -1,21 +1,21 @@
-// Module ID: 10448
-// Function ID: 10449
+// Module ID: 10771
+// Function ID: 10772
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 2065, 5966, 1085, 5967, 1095, 558, 576, 573, 7909, 10446, 6809, 10449, 6804, 2]
+// Dependencies: [32, 2068, 6222, 1087, 6223, 1097, 558, 576, 573, 8181, 10769, 7086, 10772, 7081, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 10448 (notficationSettingsChannelFlagUtils)
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7909 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10446 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10449 */;
+// Module 10771 (notficationSettingsChannelFlagUtils)
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import ReadStateConstants from "ReadStateConstants" /* 6223 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8181 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10769 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

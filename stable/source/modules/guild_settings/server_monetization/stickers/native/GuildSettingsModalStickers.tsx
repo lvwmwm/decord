@@ -1,27 +1,27 @@
-// Module ID: 18374
-// Function ID: 18375
+// Module ID: 18770
+// Function ID: 18771
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 2087, 4750, 1390, 1085, 2044, 21, 1126, 18375, 9405, 13820, 5092, 587, 1631, 504, 8568, 18377, 6727, 8020, 5088, 5640, 5379, 18378, 8575, 5377, 6265, 6180, 8218, 9770, 1200, 5409, 6189, 18384, 2]
+// Dependencies: [19, 17, 2090, 4845, 1392, 1087, 2047, 21, 1128, 18771, 9709, 14600, 5191, 587, 1633, 504, 8848, 18773, 7004, 8294, 5187, 5896, 5479, 18774, 8855, 5477, 6542, 6457, 8495, 10073, 1202, 5509, 6466, 18780, 2]
 
-// Module 18374 (GuildSettingsModalStickers)
+// Module 18770 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import StickersConstants from "StickersConstants" /* 2044 */;
-import TableRow2 from "TableRow" /* 6180 */;
-import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
-import BoostGemIcon from "BoostGemIcon" /* 9405 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13820 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18375 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18378 */;
+import intl5 from "intl" /* 1128 */;
+import StickersConstants from "StickersConstants" /* 2047 */;
+import TableRow2 from "TableRow" /* 6457 */;
+import TableRowGroup2 from "TableRowGroup" /* 6542 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
+import BoostGemIcon from "BoostGemIcon" /* 9709 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14600 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 18771 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18774 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let intl4;
 let map1;
 let metroImportAll;
 let tmp2;
-const LockIcon = tmp2(8218);
+const LockIcon = tmp2(8495);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroImportAll, BoostedGuildTiers } = Constants);
 const GuildFeatures = Constants.GuildFeatures;
@@ -208,7 +208,7 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
           if (tmp) {
             tmp8Result2 = tmp8(LockIcon.LockIcon, { color: "icon-muted" });
           }
-          let obj7 = { hasIcons: true, children: items };
+          let obj7 = { hasIcons: false, children: items };
           items = [tmp8(TableRow, obj4), ];
           const arr = Array.from({ length: incrementalStickerCountForTier });
           items[1] = arr.map((item, index) => {

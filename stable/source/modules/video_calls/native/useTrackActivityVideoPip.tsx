@@ -1,13 +1,13 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 11358
+// Function ID: 11359
 // Name: useTrackActivityVideoPip
-// Dependencies: [19, 10832, 1085, 558, 576, 573, 5922, 10920, 1265, 2]
+// Dependencies: [19, 11232, 1087, 558, 576, 573, 6178, 11314, 1267, 2]
 
-// Module 10968 (useTrackActivityVideoPip)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+// Module 11358 (useTrackActivityVideoPip)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import react_mod from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10832 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11232 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,9 +42,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackActi
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmp8 = stateFromStores(5922)(stateFromStores);
+  const tmp8 = stateFromStores(6178)(stateFromStores);
   dependencyMap = tmp8;
-  const tmp9 = stateFromStores(10920)();
+  const tmp9 = stateFromStores(11314)();
   react = tmp9;
   if (cResult[2] === arg0) {
     if (cResult[3] === tmp9) {
@@ -92,9 +92,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackActi
   let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
   const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const tmp2 = stateFromStores(5922)(stateFromStores);
+  const tmp2 = stateFromStores(6178)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(10920)();
+  const tmp3 = stateFromStores(11314)();
   react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = react.useEffect(() => {

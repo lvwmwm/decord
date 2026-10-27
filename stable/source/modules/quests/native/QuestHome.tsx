@@ -1,42 +1,42 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 16047
+// Function ID: 16048
 // Name: QuestHome
-// Dependencies: [32, 19, 17, 5081, 9164, 7386, 7407, 5972, 1085, 21, 5092, 587, 558, 576, 504, 1503, 15288, 584, 7466, 7473, 1126, 15344, 5379, 5934, 7094, 9166, 15346, 5088, 9161, 1631, 7392, 9167, 5979, 7382, 4809, 1265, 1273, 8967, 15368, 13048, 12977, 15369, 1504, 5975, 15290, 7406, 15361, 15365, 12988, 15370, 15451, 8620, 2]
+// Dependencies: [32, 19, 17, 5181, 9471, 7656, 7677, 6228, 1087, 21, 5191, 587, 558, 576, 504, 1505, 16048, 584, 7737, 7744, 1128, 16106, 5479, 6190, 7370, 9473, 16108, 5187, 9468, 1633, 7662, 9474, 6235, 7652, 4904, 1267, 1275, 9263, 16130, 13971, 13903, 16131, 1506, 6231, 16050, 7676, 16123, 16127, 13914, 16132, 16211, 7091, 2]
 
-// Module 15287 (QuestHome)
+// Module 16047 (QuestHome)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import useNavigation from "useNavigation" /* 1503 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import QuestConstants from "QuestConstants" /* 5972 */;
-import QuestTypes from "QuestTypes" /* 5975 */;
-import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestDataUtils from "QuestDataUtils" /* 7382 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
-import QuestActionCreators from "QuestActionCreators" /* 9167 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12988 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15288 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15290 */;
-import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 15344 */;
-import QuestHomeBountiesDefault from "QuestHomeBounties" /* 15346 */;
-import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 15368 */;
-import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 15451 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import useNavigation from "useNavigation" /* 1505 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
+import QuestTypes from "QuestTypes" /* 6231 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import QuestDataUtils from "QuestDataUtils" /* 7652 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9473 */;
+import QuestActionCreators from "QuestActionCreators" /* 9474 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13914 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16048 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 16050 */;
+import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 16106 */;
+import QuestHomeBountiesDefault from "QuestHomeBounties" /* 16108 */;
+import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 16130 */;
+import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 16211 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9164 */;
-import QuestStore from "QuestStore" /* 7386 */;
-import QuestUtmStore from "QuestUtmStore" /* 7407 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9471 */;
+import QuestStore from "QuestStore" /* 7656 */;
+import QuestUtmStore from "QuestUtmStore" /* 7677 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,6 @@ obj5 = { gap: nativeDefault.space.PX_4 };
 let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollAndLayoutCallbacks(scrollToIndex) {
-  let closure_4;
   let ref;
   let tmp11;
   let tmp4;
@@ -97,7 +96,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
   }
   const tmpResult = tmp(tmp2[14]);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  ref = react.useRef(null);
+  ref = C.useRef(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { parent: { scrollY: 0 }, children: {} };
     cResult[2] = obj2;
@@ -107,51 +106,166 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
   }
   const ref1 = obj3.useRef(tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _(arg0) {
-      const keys = Object.keys(ref1.current.children);
-      const iter = keys[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let tmp3 = nextResult;
-        let tmp4 = null != arg0;
-        if (tmp4) {
-          tmp4 = tmp3 !== arg0;
-        }
-        if (!tmp4) {
-          let tmp8 = ref1.current.children[tmp3];
-          if (tmp8 != null) {
-            let calculateVisibility = tmp8.calculateVisibility;
-            if (calculateVisibility != null) {
-              let calculateVisibilityResult = calculateVisibility();
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
             }
           }
+          continue;
         }
-        continue;
       }
-    };
-    cResult[3] = fn2;
-    tmp11 = fn2;
+    }
+    cResult[3] = C;
+    tmp11 = C;
   } else {
-    tmp11 = cResult[3];
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
+            }
+          }
+          continue;
+        }
+      }
+    }
   }
-  react = tmp11;
+  C = tmp11;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function p(nativeEvent) {
-      ref1.current.parent.scrollY = nativeEvent.nativeEvent.contentOffset.y;
-      closure_4();
-    };
-    cResult[4] = fn3;
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
+            }
+          }
+          continue;
+        }
+      }
+    }
+    cResult[4] = tmp13;
+  } else {
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
+            }
+          }
+          continue;
+        }
+      }
+    }
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function y(nativeEvent) {
-      ref1.current.parent.layout = nativeEvent.nativeEvent.layout;
-      closure_4();
-    };
-    cResult[5] = fn4;
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
+            }
+          }
+          continue;
+        }
+      }
+    }
+    cResult[5] = tmp15;
+  } else {
+    class C {
+      constructor(arg0) {
+        const keys = Object.keys(ref1.current.children);
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          let tmp4 = null != arg0;
+          if (tmp4) {
+            tmp4 = tmp3 !== arg0;
+          }
+          if (!tmp4) {
+            let tmp8 = ref1.current.children[tmp3];
+            if (tmp8 != null) {
+              let calculateVisibility = tmp8.calculateVisibility;
+              if (calculateVisibility != null) {
+                let calculateVisibilityResult = calculateVisibility();
+              }
+            }
+          }
+          continue;
+        }
+      }
+    }
   }
-  const tmp14 = ref1(react.useState(false), 2);
-  const first = tmp14[0];
-  let closure_6 = tmp14[1];
+  const tmp16 = ref1(C.useState(false), 2);
+  const first = tmp16[0];
+  let closure_6 = tmp16[1];
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
       constructor() {
@@ -173,7 +287,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
         const obj = { layout: nativeEvent.nativeEvent.layout };
         const merged = Object.assign(ref1.current.children[arg1]);
         children[arg1] = obj;
-        closure_4(arg1);
+        C(arg1);
       }
     }
     cResult[7] = A;
@@ -184,7 +298,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
         const obj = { layout: nativeEvent.nativeEvent.layout };
         const merged = Object.assign(ref1.current.children[arg1]);
         children[arg1] = obj;
-        closure_4(arg1);
+        C(arg1);
       }
     }
   }
@@ -213,7 +327,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
       }
     }
   }
-  P = tmp18;
+  P = tmp20;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor(index) {
@@ -225,7 +339,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
         }
       }
     }
-    cResult[10] = tmp20;
+    cResult[10] = tmp22;
   } else {
     class P {
       constructor(index) {
@@ -250,7 +364,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
       }
     }
   }
-  const fn5 = function x() {
+  const fn2 = function x() {
     const tmp2 = null != scrollToIndex && -1 !== tmp && first;
     if (tmp2) {
       P(scrollToIndex);
@@ -258,9 +372,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
     }
   };
   cResult[11] = first;
-  cResult[12] = tmp18;
+  cResult[12] = tmp20;
   cResult[13] = scrollToIndex;
-  cResult[14] = fn5;
+  cResult[14] = fn2;
 }) : (function useScrollAndLayoutCallbacks(scrollToIndex) {
   scrollToIndex = scrollToIndex.scrollToIndex;
   let scrollViewRef;
@@ -356,7 +470,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSur
   let obj = bountiesAvailable(576);
   const cResult = obj.c(10);
   bountiesAvailable = bountiesAvailable.bountiesAvailable;
-  const obj2 = bountiesAvailable(1503);
+  const obj2 = bountiesAvailable(1505);
   navigation = obj2.useNavigation();
   dependencyMap = react.useRef(false);
   let closure_3 = react.useRef(false);
@@ -465,7 +579,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSur
   let closure_4;
   bountiesAvailable = bountiesAvailable.bountiesAvailable;
   react = undefined;
-  let obj = bountiesAvailable(1503);
+  let obj = bountiesAvailable(1505);
   navigation = obj.useNavigation();
   dependencyMap = react.useRef(false);
   let closure_3 = react.useRef(false);
@@ -547,7 +661,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["/g10LC"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;
@@ -592,7 +706,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   const cResult = obj.c(7);
   onClearFilters = onClearFilters.onClearFilters;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.urZl31);
     cResult[0] = stringResult;
     first = stringResult;
@@ -609,9 +723,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.PBfFnx);
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult2 = intl3.string(intl4.t.nwdKFC);
     cResult[3] = stringResult1;
     cResult[4] = stringResult2;
@@ -676,8 +790,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { grow: true, onPress: first, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-      const Button = tmp(5379).Button;
-      intl = tmp(1126).intl;
+      const Button = tmp(5479).Button;
+      intl = tmp(1128).intl;
       const tmp9 = syncedClientThemes(Button, obj2);
       cResult[1] = tmp9;
       tmp7 = tmp9;
@@ -714,8 +828,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   if (obj.useShouldShowPreviewToolTab()) {
     let obj2 = { style: tmp.previewButton, children: syncedClientThemes(Button, obj3) };
     obj3 = { grow: true, onPress: callback, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-    Button = tmp3(5379).Button;
-    intl = tmp3(1126).intl;
+    Button = tmp3(5479).Button;
+    intl = tmp3(1128).intl;
     tmp5 = syncedClientThemes(hasOwnProperty, obj2);
   }
   return tmp5;
@@ -723,116 +837,111 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderWithBounties(arg0) {
   let first;
-  let intl;
   let items;
   let obtainableOrbRewards;
   let orbShopProducts;
   let shopCarouselConfig;
   let showOrbShopPlaceholderCarousel;
   const obj = react2;
-  const cResult = obj.c(15);
+  const cResult = obj.c(6);
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
-  const tmp4 = closure_17();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = syncedClientThemes(closure_22, {});
-    cResult[0] = tmp8;
-    first = tmp8;
+    const tmp6 = syncedClientThemes(closure_22, {});
+    cResult[0] = tmp6;
+    first = tmp6;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === obtainableOrbRewards) {
     if (cResult[2] === orbShopProducts) {
       if (cResult[3] === shopCarouselConfig) {
-        let tmp9;
+        let tmp7;
         if (cResult[4] === showOrbShopPlaceholderCarousel) {
-          tmp9 = cResult[5];
+          tmp7 = cResult[5];
         }
-        if (cResult[6] === tmp4.sectionHeader) {
-          let tmp11;
-          let tmp12;
-          let tmp15;
-          if (cResult[7] === tmp4.sectionHeaderWithTag) {
-            tmp11 = cResult[8];
-          }
-          const _Symbol = Symbol;
-          if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj2 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
-            const Text = tmp(5088).Text;
-            intl = tmp(1126).intl;
-            const tmp14 = syncedClientThemes(Text, obj2);
-            cResult[9] = tmp14;
-            tmp12 = tmp14;
-          } else {
-            tmp12 = cResult[9];
-          }
-          if (cResult[10] !== tmp11) {
-            const obj3 = { style: tmp11, children: tmp12 };
-            const tmp18 = syncedClientThemes(hasOwnProperty, obj3);
-            cResult[10] = tmp11;
-            cResult[11] = tmp18;
-            tmp15 = tmp18;
-          } else {
-            tmp15 = cResult[11];
-          }
-          if (cResult[12] === tmp9) {
-            let tmp19;
-            if (cResult[13] === tmp15) {
-              tmp19 = cResult[14];
-            }
-            return tmp19;
-          }
-          const obj4 = { children: items };
-          items = [first, tmp9, tmp15];
-          const tmp22 = authStore4(authStore3, obj4);
-          cResult[12] = tmp9;
-          cResult[13] = tmp15;
-          cResult[14] = tmp22;
-          tmp19 = tmp22;
-        }
-        const items1 = [, ];
-        ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = tmp4);
-        cResult[6] = tmp4.sectionHeader;
-        cResult[7] = tmp4.sectionHeaderWithTag;
-        cResult[8] = items1;
-        tmp11 = items1;
+        return tmp7;
       }
     }
   }
-  const tmp10 = syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  const obj2 = { children: items };
+  items = [first, syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel })];
+  const tmp8 = authStore4(authStore3, obj2);
   cResult[1] = obtainableOrbRewards;
   cResult[2] = orbShopProducts;
   cResult[3] = shopCarouselConfig;
   cResult[4] = showOrbShopPlaceholderCarousel;
-  cResult[5] = tmp10;
-  tmp9 = tmp10;
+  cResult[5] = tmp8;
+  tmp7 = tmp8;
 }) : (function HeaderWithBounties(arg0) {
-  let Text;
-  let intl;
   let items;
-  let items1;
-  let obj3;
   let obtainableOrbRewards;
   let orbShopProducts;
   let shopCarouselConfig;
   let showOrbShopPlaceholderCarousel;
-  ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
   const obj = { children: items };
-  items = [, , ];
-  const tmp = closure_17();
-  items[0] = syncedClientThemes(closure_22, {});
-  items[1] = syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
-  const obj2 = { style: items1, children: syncedClientThemes(Text, obj3) };
-  items1 = [, ];
-  ({ sectionHeader: arr2[0], sectionHeaderWithTag: arr2[1] } = tmp);
-  obj3 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
+  ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
+  items = [syncedClientThemes(closure_22, {}), syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel })];
+  return authStore4(authStore3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestsSectionHeader() {
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp4 = closure_17();
+  if (cResult[0] === tmp4.sectionHeader) {
+    let tmp5;
+    let tmp7;
+    let tmp10;
+    if (cResult[1] === tmp4.sectionHeaderWithTag) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
+      const Text = tmp(5187).Text;
+      intl = tmp(1128).intl;
+      const tmp9 = syncedClientThemes(Text, obj2);
+      cResult[3] = tmp9;
+      tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] !== tmp5) {
+      const obj3 = { style: tmp5, children: tmp7 };
+      const tmp13 = syncedClientThemes(hasOwnProperty, obj3);
+      cResult[4] = tmp5;
+      cResult[5] = tmp13;
+      tmp10 = tmp13;
+    } else {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  const items = [, ];
+  ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = tmp4);
+  cResult[0] = tmp4.sectionHeader;
+  cResult[1] = tmp4.sectionHeaderWithTag;
+  cResult[2] = items;
+  tmp5 = items;
+}) : (function QuestsSectionHeader() {
+  let Text;
+  let intl;
+  let items;
+  let obj2;
+  const obj = { style: items, children: syncedClientThemes(Text, obj2) };
+  items = [, ];
+  ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = closure_17());
+  obj2 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
+  closure_17();
   Text = Text_Text.Text;
   intl = intl4.intl;
-  items[2] = syncedClientThemes(hasOwnProperty, obj2);
-  return authStore4(authStore3, obj);
+  return syncedClientThemes(hasOwnProperty, obj);
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MeasuredHeader(arg0) {
+let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MeasuredHeader(arg0) {
+  let items;
   let obtainableOrbRewards;
   let onLayout;
   let orbShopProducts;
@@ -841,29 +950,39 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
   let showOrbShopPlaceholderCarousel;
   let tmp3Result;
   const obj = react2;
-  const cResult = obj.c(9);
+  const cResult = obj.c(10);
   ({ shouldShowBounties, onLayout, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
   if (cResult[0] === obtainableOrbRewards) {
     if (cResult[1] === orbShopProducts) {
       if (cResult[2] === shopCarouselConfig) {
         if (cResult[3] === shouldShowBounties) {
           let tmp2;
+          let tmp8;
           if (cResult[4] === showOrbShopPlaceholderCarousel) {
             tmp2 = cResult[5];
           }
-          if (cResult[6] === onLayout) {
-            let tmp7;
-            if (cResult[7] === tmp2) {
-              tmp7 = cResult[8];
-            }
-            return tmp7;
+          const _Symbol = Symbol;
+          if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp11 = syncedClientThemes(closure_24, {});
+            cResult[6] = tmp11;
+            tmp8 = tmp11;
+          } else {
+            tmp8 = cResult[6];
           }
-          const obj2 = { onLayout, children: tmp2 };
-          const tmp10 = syncedClientThemes(hasOwnProperty, obj2);
-          cResult[6] = onLayout;
-          cResult[7] = tmp2;
-          cResult[8] = tmp10;
-          tmp7 = tmp10;
+          if (cResult[7] === onLayout) {
+            let tmp12;
+            if (cResult[8] === tmp2) {
+              tmp12 = cResult[9];
+            }
+            return tmp12;
+          }
+          const obj2 = { onLayout, children: items };
+          items = [tmp2, tmp8];
+          const tmp15 = authStore4(hasOwnProperty, obj2);
+          cResult[7] = onLayout;
+          cResult[8] = tmp2;
+          cResult[9] = tmp15;
+          tmp12 = tmp15;
         }
       }
     }
@@ -882,16 +1001,22 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
   cResult[5] = tmp3Result;
   tmp2 = tmp3Result;
 }) : (function MeasuredHeader(onLayout) {
-  let tmp5Result;
-  const obj = { onLayout: onLayout.onLayout, children: tmp5Result };
+  let items;
+  let tmp10;
+  let tmp7Result;
+  const obj = { onLayout: onLayout.onLayout, children: items };
+  const tmp5 = authStore4;
   const tmp6 = hasOwnProperty;
   if (onLayout.shouldShowBounties) {
     const obj2 = { shopCarouselConfig: tmp4, orbShopProducts: tmp, obtainableOrbRewards: tmp2, showOrbShopPlaceholderCarousel: tmp3 };
-    tmp5Result = tmp5(closure_23, obj2);
+    tmp7Result = tmp7(closure_23, obj2);
+    tmp10 = tmp7;
   } else {
-    tmp5Result = tmp5(closure_22, {});
+    tmp7Result = tmp7(closure_22, {});
+    tmp10 = tmp7;
   }
-  return syncedClientThemes(tmp6, obj);
+  items = [tmp7Result, tmp10(closure_24, {})];
+  return tmp5(tmp6, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHome(arg0) {
@@ -1035,7 +1160,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { text: intl.string(intl4.t.sIyHuY), variant: "critical", duration: 5000 };
           const open = ToastActionCreatorsDefault.open;
           ToastActionCreatorsDefault;
-          intl = tmp4(1126).intl;
+          intl = tmp4(1128).intl;
           open("QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", obj2);
           const obj4 = { quest_id: scrollToQuestId };
           const obj3 = AnalyticsUtilsDefault;
@@ -1145,7 +1270,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const obj2 = { text: intl.string(intl4.t.sIyHuY), variant: "critical", duration: 5000 };
         const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
-        intl = tmp4(1126).intl;
+        intl = tmp4(1128).intl;
         open("QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", obj2);
         const obj4 = { quest_id: scrollToQuestId };
         const obj3 = AnalyticsUtilsDefault;
@@ -1261,7 +1386,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items9 = [visibilityRef];
   const callback = obj2.useCallback(() => {
     const obj = { shouldShowBounties: enabled, onLayout: handleHeaderLayout, shopCarouselConfig: config, orbShopProducts: products, obtainableOrbRewards, showOrbShopPlaceholderCarousel: showPlaceholderCarousel };
-    return syncedClientThemes(closure_24, obj);
+    return syncedClientThemes(closure_25, obj);
   }, items8);
   const items10 = [quests, handleQuestCardLayout];
   const callback1 = obj2.useCallback((item) => {
@@ -1353,12 +1478,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       tmp50Result = tmp44;
     } else {
-      let num4 = 0;
+      let num4;
       const obj16 = { ref: scrollViewRef, contentContainerStyle: obj17, style: items15, accessibilityLabel: intl.string(tmp(tmp2[20]).t.JALI2K), data: quests, renderItem: callback1, showsHorizontalScrollIndicator: false, ListHeaderComponent: callback, CellRendererComponent: callback2, onLayout: handleListLayout, onScroll: handleListScroll, onLoad: handleListLoad, scrollEventThrottle: 16 };
       const FlashList = tmp(tmp2[51]).FlashList;
       const tmp50 = previewAdCreativeIds;
-      if (tmp39) {
+      if (!enabled) {
         num4 = tmp5(tmp2[11]).space.PX_16;
+      } else {
+        num4 = 0;
       }
       items15 = [tmp4.container, containerStyle];
       obj17 = { paddingTop: num4, paddingBottom: bottom };

@@ -1,14 +1,14 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 9423
+// Function ID: 9424
 // Name: MarketingComponentRecord
-// Dependencies: [1405, 1102, 1247, 9120, 1264, 2]
+// Dependencies: [1407, 1104, 1249, 9424, 1266, 2]
 
-// Module 9119 (MarketingComponentRecord)
-import DurationsDefault from "Durations" /* 1102 */;
-import ProtoUtils from "ProtoUtils" /* 1247 */;
-import _modDef1264 from "module_1264" /* 1264 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9120 */;
-import Record from "Record" /* 1405 */;
+// Module 9423 (MarketingComponentRecord)
+import DurationsDefault from "Durations" /* 1104 */;
+import ProtoUtils from "ProtoUtils" /* 1249 */;
+import _modDef1266 from "module_1266" /* 1266 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9424 */;
+import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 let startDate;
@@ -81,7 +81,7 @@ class MarketingComponentRecord extends Record {
       throw new TypeError("Trying to call a non-function");
     }
   }
-  getFormatVariableValues(arg0) {
+  getFormatVariableValues(currentLocale) {
     let obj;
     let promotionEndDate;
     const self = this;
@@ -100,7 +100,7 @@ class MarketingComponentRecord extends Record {
         const _Math = Math;
         num = Math.ceil(diff / DurationsDefault.Millis.DAY);
       }
-      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(arg0, closure_3) };
+      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(currentLocale, closure_3) };
       promotionEndDate = self.promotionEndDate;
     }
     return obj;
@@ -116,7 +116,7 @@ class MarketingComponentRecord extends Record {
         const _Math2 = Math;
         const result = 10000 * Math.min(1, Math.max(0, 0.2 * (diff / DurationsDefault.Millis.HOUR)));
         const _HermesInternal = HermesInternal;
-        const obj = _modDef1264;
+        const obj = _modDef1266;
         return obj.v3("" + self.promotionId + ":" + id) % 10000 < result;
       }
     }

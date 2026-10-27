@@ -1,20 +1,20 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 12085
+// Function ID: 12086
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 7903, 21, 5092, 587, 558, 576, 504, 4850, 1631, 5378, 683, 5391, 1126, 5040, 8544, 2]
+// Dependencies: [32, 19, 17, 8175, 21, 5191, 587, 558, 576, 504, 4945, 1633, 5478, 683, 5491, 1128, 5139, 8824, 2]
 
-// Module 17151 (MediaKeyboardFloatingSend)
+// Module 12085 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ animatedIndex, channelId, draftType, onSend } = ref);
   ref = ref.ref;
   const tmp4 = closure_9();
-  const tmp6 = bottom(1631)();
+  const tmp6 = bottom(1633)();
   [bottom, require] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
   const obj2 = react;

@@ -1,14 +1,14 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18787
+// Function ID: 18788
 // Name: useGuildTagBadgeCollection
-// Dependencies: [19, 8634, 5007, 7883, 504, 2]
+// Dependencies: [19, 8911, 5103, 8155, 504, 2]
 // Exports: default
 
-// Module 18391 (useGuildTagBadgeCollection)
+// Module 18787 (useGuildTagBadgeCollection)
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
-import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

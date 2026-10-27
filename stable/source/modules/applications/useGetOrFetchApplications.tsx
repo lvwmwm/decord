@@ -1,22 +1,24 @@
-// Module ID: 6858
-// Function ID: 6859
+// Module ID: 7134
+// Function ID: 7135
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 5440, 558, 576, 568, 6853, 12, 1388, 504, 2]
+// Dependencies: [19, 5540, 1087, 558, 576, 568, 6357, 12, 1388, 504, 2]
 
-// Module 6858 (useGetOrFetchApplications)
+// Module 7134 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6357 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, application, dependencyMap;
 
+const NOOP = Constants.NOOP;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplications(current, arg1) {
   let first;
@@ -54,37 +56,25 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       tmp9 = cResult[5];
     }
     if (cResult[6] !== current) {
-      class A {
-        constructor() {
-          return closure_0.map((item) => {
-            application = undefined;
-            if (null != item) {
-              application = application.getApplication(item);
-            }
-            return application;
-          });
-        }
-      }
+      const fn2 = function v() {
+        return current.map((item) => {
+          application = undefined;
+          if (null != item) {
+            application = application.getApplication(item);
+          }
+          return application;
+        });
+      };
       cResult[6] = current;
-      cResult[7] = A;
-      tmp11 = A;
+      cResult[7] = fn2;
+      tmp11 = fn2;
     } else {
-      class A {
-        constructor() {
-          return closure_0.map((item) => {
-            application = undefined;
-            if (null != item) {
-              application = application.getApplication(item);
-            }
-            return application;
-          });
-        }
-      }
+      tmp11 = cResult[7];
     }
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStoresArray(tmp9, tmp11);
   }
-  const fn = function p() {
+  const fn = function f() {
     let tmp = closure_1;
     if (tmp) {
       const obj = shallowEqual;
@@ -97,6 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       const found = arr.filter(GlobalUtils.isNotNullish);
       const iter = found.uniq();
       const applications = fetchApplications(iter.value(), false);
+      applications.catch(NOOP);
       ref.current = current;
     }
   };
@@ -129,6 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       const found = arr.filter(GlobalUtils.isNotNullish);
       const iter = found.uniq();
       const applications = fetchApplications(iter.value(), false);
+      applications.catch(NOOP);
       ref.current = current;
     }
   }, items);
@@ -142,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
     return application;
   }));
 });
-let closure_5 = tmp2;
+let closure_6 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplication(arg0, arg1) {
   let tmp3;
@@ -163,14 +155,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
   } else {
     tmp3 = cResult[1];
   }
-  return closure_5(tmp3, tmp2)[0];
+  return closure_6(tmp3, tmp2)[0];
 }) : (function useGetOrFetchApplication(arg0) {
   let items1;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const tmp = closure_5;
+  const tmp = closure_6;
   if (null != arg0) {
     const items = [arg0];
     items1 = items;

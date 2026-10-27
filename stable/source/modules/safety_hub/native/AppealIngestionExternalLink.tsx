@@ -1,19 +1,19 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 12642
+// Function ID: 12643
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4806, 5088, 1200, 7728, 6185, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4901, 5187, 1202, 7999, 6462, 2]
 
-// Module 11501 (AppealIngestionExternalLink)
+// Module 12642 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6185 */;
-import AssetRegistry from "AssetRegistry" /* 7728 */;
+import native from "native" /* 1202 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Pressables from "Pressables" /* 6462 */;
+import AssetRegistry from "AssetRegistry" /* 7999 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,8 +53,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         tmp6 = cResult[5];
       }
       if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(7728), color: tmp4.chevron.color };
-        const Icon = tmp(1200).Icon;
+        const obj2 = { source: tmp(7999), color: tmp4.chevron.color };
+        const Icon = tmp(1202).Icon;
         const tmp11 = closure_4(Icon, obj2);
         cResult[6] = tmp4.chevron.color;
         cResult[7] = tmp11;
@@ -78,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             }
           }
           const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(6185).PressableHighlight, obj3);
+          const tmp18 = closure_4(tmp(6462).PressableHighlight, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp4.childButton;
           cResult[14] = tmp12;
@@ -96,7 +96,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
       tmp12 = tmp15;
     }
     const obj5 = { style: tmp4.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-    const tmp8 = closure_4(tmp(5088).Text, obj5);
+    const tmp8 = closure_4(tmp(5187).Text, obj5);
     cResult[3] = tmp4.childButtonText;
     cResult[4] = text;
     cResult[5] = tmp8;

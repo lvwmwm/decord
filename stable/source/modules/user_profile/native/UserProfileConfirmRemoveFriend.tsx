@@ -1,12 +1,12 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 13309
+// Function ID: 13310
 // Name: UserProfileConfirmRemoveFriend
-// Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 5405, 5405, 2]
 
-// Module 12370 (UserProfileConfirmRemoveFriend)
+// Module 13309 (UserProfileConfirmRemoveFriend)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5305 */;
+import intl5 from "intl" /* 1128 */;
+import AlertModal2 from "AlertModal" /* 5405 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,7 +30,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   const cResult = obj.c(14);
   ({ userDisplayName, onConfirm } = arg0);
   if (cResult[0] !== userDisplayName) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj2 = { name: userDisplayName };
     const formatToPlainStringResult = intl.formatToPlainString(intl5.t.fPLvZd, obj2);
     cResult[0] = userDisplayName;
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     tmp4 = cResult[1];
   }
   if (cResult[2] !== userDisplayName) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { name: userDisplayName };
     const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.l5FFq6, obj3);
     cResult[2] = userDisplayName;
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
     tmp6 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult = intl3.string(intl5.t.cvSt1J);
     cResult[4] = stringResult;
     tmp8 = stringResult;
@@ -68,8 +68,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileC
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "secondary", text: intl4.string(intl5.t["eN6+rI"]) };
-    const AlertActionButton = tmp(5305).AlertActionButton;
-    intl4 = tmp(1126).intl;
+    const AlertActionButton = tmp(5405).AlertActionButton;
+    intl4 = tmp(1128).intl;
     const tmp15 = React2(AlertActionButton, obj5, "nevermind");
     cResult[7] = tmp15;
     tmp13 = tmp15;

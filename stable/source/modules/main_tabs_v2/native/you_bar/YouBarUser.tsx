@@ -1,17 +1,17 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 17530
+// Function ID: 17531
 // Name: YouBarUser
-// Dependencies: [19, 17, 1390, 15378, 21, 5092, 587, 558, 576, 504, 4850, 5378, 4962, 16851, 16852, 16853, 2]
+// Dependencies: [19, 17, 1392, 16140, 21, 5191, 587, 558, 576, 504, 4945, 5478, 5057, 17531, 17532, 17533, 2]
 
-// Module 16850 (YouBarUser)
+// Module 17530 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5378 */;
+import spring from "spring" /* 5478 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import YouBarConstants from "YouBarConstants" /* 15378 */;
+import UserStore from "UserStore" /* 1392 */;
+import YouBarConstants from "YouBarConstants" /* 16140 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     fn2.__initData = __initData;
     const tmpResult4 = require("ReanimatedRexport");
     const animatedStyle = tmpResult4.useAnimatedStyle(fn2);
-    const obj6 = sharedValue(4962);
+    const obj6 = sharedValue(5057);
     const name = obj6.useName(stateFromStores);
     if (null != stateFromStores) {
       if (null != name) {
@@ -137,14 +137,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 tmp31 = tmp34;
               }
               const obj5 = { style: tmp24, children: tmp25 };
-              const tmp30 = closure_9(sharedValue(4850).View, obj5);
+              const tmp30 = closure_9(sharedValue(4945).View, obj5);
               cResult[31] = tmp24;
               cResult[32] = tmp25;
               cResult[33] = tmp30;
               tmp28 = tmp30;
             }
             const obj7 = { userId: stateFromStores.id, username: name };
-            const tmp27 = closure_9(sharedValue(16853), obj7);
+            const tmp27 = closure_9(sharedValue(17533), obj7);
             cResult[28] = stateFromStores.id;
             cResult[29] = name;
             cResult[30] = tmp27;
@@ -157,7 +157,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp24 = items2;
         }
         const obj8 = { isLargeAvatar: !isQuestRendered, onPress: onAvatarPress };
-        const tmp22 = closure_9(sharedValue(16852), obj8);
+        const tmp22 = closure_9(sharedValue(17532), obj8);
         cResult[21] = !isQuestRendered;
         cResult[22] = onAvatarPress;
         cResult[23] = tmp22;
@@ -167,7 +167,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[6] !== !isQuestRendered) {
       const obj9 = { isLarge: !isQuestRendered };
-      const tmp37 = closure_9(sharedValue(16851), obj9);
+      const tmp37 = closure_9(sharedValue(17531), obj9);
       cResult[6] = !isQuestRendered;
       cResult[7] = tmp37;
       tmp35 = tmp37;
@@ -221,7 +221,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp47 = tmp50;
       }
       const obj13 = { style: tmp39, children: tmp40 };
-      const tmp46 = closure_9(sharedValue(4850).View, obj13);
+      const tmp46 = closure_9(sharedValue(4945).View, obj13);
       cResult[14] = tmp39;
       cResult[15] = tmp40;
       cResult[16] = tmp46;
@@ -282,7 +282,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = spring;
     const result = set(obj.withSpring(closure_0 ? metroImportDefault : metroImportAll, metroRequire));
   }, items1);
-  const tmp2Result = tmp2(4850);
+  const tmp2Result = tmp2(4945);
   class M {
     constructor() {
       const obj = { marginLeft: sharedValue.get() };
@@ -293,28 +293,28 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   M.__workletHash = 5882881762081;
   M.__initData = __initData2;
   const animatedStyle = tmp2Result.useAnimatedStyle(M);
-  const obj4 = sharedValue(4962);
+  const obj4 = sharedValue(5057);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items2 };
       const obj5 = { isLargeAvatar: !isQuestRendered, onPress: onAvatarPress };
-      items2 = [closure_9(sharedValue(16852), obj5), ];
-      const obj6 = { style: items3, children: closure_9(sharedValue(16853), obj7) };
+      items2 = [closure_9(sharedValue(17532), obj5), ];
+      const obj6 = { style: items3, children: closure_9(sharedValue(17533), obj7) };
       items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-      const View2 = tmp9(4850).View;
+      const View2 = tmp9(4945).View;
       obj7 = { userId: stateFromStores.id, username: name };
       items2[1] = closure_9(View2, obj6);
     }
     return tmp11(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items4 };
-  items4 = [closure_9(sharedValue(16851), { isLarge: !isQuestRendered }), ];
+  items4 = [closure_9(sharedValue(17531), { isLarge: !isQuestRendered }), ];
   const obj9 = { style: items5, children: closure_9(View, obj10) };
   items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };
-  View = tmp9(4850).View;
+  View = tmp9(4945).View;
   items4[1] = closure_9(View, obj9);
   obj3 = obj8;
 }));

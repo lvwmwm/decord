@@ -1,20 +1,20 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 11697
+// Function ID: 11698
 // Name: ConjurePreviewMode
-// Dependencies: [3849, 1126, 8606, 2]
+// Dependencies: [3883, 1128, 6297, 2]
 // Exports: getPreviewFrameSurfaceLabel, getPreviewModeLabel
 
-// Module 17118 (ConjurePreviewMode)
-import intl2 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
+// Module 11697 (ConjurePreviewMode)
+import intl2 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
 import size from "module_2" /* 2 */;
 
-const obj = { frame: _modDef3849.FKuG6X, widget: _modDef3849.oOAVlP, overlay: _modDef3849.EnTNKg, bot: _modDef3849.uE5z15 };
+const obj = { frame: _modDef3883.FKuG6X, widget: _modDef3883.oOAVlP, overlay: _modDef3883.EnTNKg, bot: _modDef3883.uE5z15 };
 const obj2 = {};
-obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL] = _modDef3849.xI4N6Q;
-obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL] = _modDef3849.oWMDh6;
-obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN] = _modDef3849["0ICBnS"];
+obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL] = _modDef3883.xI4N6Q;
+obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL] = _modDef3883.oWMDh6;
+obj2[EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN] = _modDef3883["0ICBnS"];
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewMode.tsx");
 
 export const CONJURE_PREVIEW_MODE_ORDER = ["frame", "widget", "overlay", "bot"];

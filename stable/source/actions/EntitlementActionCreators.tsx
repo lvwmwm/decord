@@ -1,12 +1,12 @@
-// Module ID: 7116
-// Function ID: 7117
+// Module ID: 7387
+// Function ID: 7388
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1085, 584, 1295, 5644, 2]
+// Dependencies: [5, 1087, 584, 1297, 5900, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7116 (EntitlementActionCreators)
+// Module 7387 (EntitlementActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj = function _fetchUserEntitlements() {
       }
       await "IconComponent";
       entitlementType = tmp36.entitlementType;
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

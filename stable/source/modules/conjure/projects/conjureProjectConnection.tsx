@@ -1,12 +1,12 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 11072
+// Function ID: 11073
 // Name: conjureProjectConnection
-// Dependencies: [10653, 584, 11415, 2]
+// Dependencies: [6293, 584, 10999, 2]
 
-// Module 13253 (conjureProjectConnection)
+// Module 11072 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11415 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -28,20 +28,15 @@ let obj = {
     let attachment_id;
     icon = icon.icon;
     if (null != icon) {
-      let str = "";
       if ("" !== icon) {
         attachment_id = icon.attachment_id;
         let tmp2 = require;
         const obj = ConjureActionCreators;
         const setProjectIconResult = obj.setProjectIcon(tmp, icon);
-        const nextPromise = setProjectIconResult.then((ok) => {
-          let str = "failed";
-          if (ok.ok) {
-            str = "applied";
-          }
+        const nextPromise = setProjectIconResult.then(() => {
           const tmp2 = null != attachment_id && "" !== tmp;
           if (tmp2) {
-            ws.sendAppIconAck(attachment_id, str);
+            ws.sendAppIconAck(attachment_id, "applied");
           }
         });
         nextPromise.catch(() => {
@@ -51,6 +46,15 @@ let obj = {
           }
         });
       }
+    }
+  },
+  app_cover_set(cover_image, arg1) {
+    if (undefined !== cover_image.cover_image) {
+      const obj = ConjureActionCreators;
+      const setProjectCoverResult = obj.setProjectCover(tmp, cover_image.cover_image);
+      setProjectCoverResult.catch(() => {
+
+      });
     }
   }
 };

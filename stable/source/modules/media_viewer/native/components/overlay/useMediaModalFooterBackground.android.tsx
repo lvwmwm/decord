@@ -1,13 +1,13 @@
-// Module ID: 13072
-// Function ID: 13073
+// Module ID: 13995
+// Function ID: 13996
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 558, 576, 683, 4818, 587, 2]
+// Dependencies: [32, 558, 576, 683, 4913, 587, 2]
 
-// Module 13072 (useMediaModalFooterBackground)
+// Module 13995 (useMediaModalFooterBackground)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4818 */;
+import useToken from "useToken" /* 4913 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

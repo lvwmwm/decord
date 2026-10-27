@@ -1,20 +1,20 @@
-// Module ID: 18303
-// Function ID: 18304
+// Module ID: 18699
+// Function ID: 18700
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 18304, 18306, 1085, 21, 5092, 587, 18308, 1126, 558, 576, 1503, 18313, 18321, 6154, 6265, 5088, 5377, 2128, 8575, 6728, 2]
+// Dependencies: [32, 19, 18700, 18702, 1087, 21, 5191, 587, 18704, 1128, 558, 576, 1505, 18709, 18717, 6433, 6542, 5187, 5477, 2131, 8855, 7005, 2]
 
-// Module 18303 (GuildSettingsAutoModeration)
+// Module 18699 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 587 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
-import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18306 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18308 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6433 */;
+import TableRowGroup2 from "TableRowGroup" /* 6542 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18702 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18704 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 18304 */;
-import Constants from "Constants" /* 1085 */;
+import AutomodStore from "AutomodStore" /* 18700 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -446,11 +446,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         const TableRowGroup = TableRowGroup2.TableRowGroup;
         const tmp5 = React4;
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
-          const intl2 = tmp6(1126).intl;
-          stringResult = intl2.string(tmp6(1126).t.sx4E5v);
+          const intl2 = tmp6(1128).intl;
+          stringResult = intl2.string(tmp6(1128).t.sx4E5v);
         } else if (AutomodTriggerConfigs.AutomodTriggerCategory.CONTENT === tmp) {
-          const intl = tmp6(1126).intl;
-          stringResult = intl.string(tmp6(1126).t.fphZb0);
+          const intl = tmp6(1128).intl;
+          stringResult = intl.string(tmp6(1128).t.fphZb0);
         }
         const obj = { title: stringResult, hasIcons: true, children: arr.map(renderTriggerType) };
         tmp5Result = tmp5(TableRowGroup, obj, tmp);

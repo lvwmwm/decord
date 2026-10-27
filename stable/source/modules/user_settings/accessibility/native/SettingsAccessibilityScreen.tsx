@@ -1,25 +1,25 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 16389
+// Function ID: 16390
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5081, 2042, 7988, 1085, 21, 1126, 2128, 2958, 7094, 6726, 15630, 558, 576, 1503, 573, 10664, 14970, 2]
+// Dependencies: [19, 5181, 2045, 8260, 1087, 21, 1128, 2131, 2981, 7370, 7003, 16390, 558, 576, 1505, 573, 11084, 15732, 2]
 
-// Module 15629 (SettingsAccessibilityScreen)
+// Module 16389 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import intl15 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1503 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import _modDef2958 from "module_2958" /* 2958 */;
-import openUserSettings from "openUserSettings" /* 7094 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
-import SettingLayoutDefault from "SettingLayout" /* 14970 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15630 */;
+import intl15 from "intl" /* 1128 */;
+import useNavigation from "useNavigation" /* 1505 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import openUserSettings from "openUserSettings" /* 7370 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingLayoutDefault from "SettingLayout" /* 15732 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16390 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2042 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2045 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
   intl2 = intl15.intl;
   items1[1] = obj4;
-  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2958.L8U56h, obj6) };
+  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2981.L8U56h, obj6) };
   items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
   intl3 = intl15.intl;
   obj6 = {
@@ -153,10 +153,10 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items14 = [, ];
   ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr15[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr15[1] } = MobileUserSettings);
   null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
-  intl13 = tmp2(1126).intl;
-  const intl14 = tmp2(1126).intl;
+  intl13 = tmp2(1128).intl;
+  const intl14 = tmp2(1128).intl;
   string = intl14.string;
-  t = tmp2(1126).t;
+  t = tmp2(1128).t;
   items1[13] = obj20;
   return items1.filter((item) => null != item);
 }

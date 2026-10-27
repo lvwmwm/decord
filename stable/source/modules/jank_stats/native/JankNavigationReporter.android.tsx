@@ -1,20 +1,20 @@
-// Module ID: 18154
-// Function ID: 18155
+// Module ID: 18546
+// Function ID: 18547
 // Name: JankNavigationReporter
-// Dependencies: [4977, 16447, 16451, 16452, 4979, 2]
+// Dependencies: [5073, 17136, 17140, 17141, 5075, 2]
 
-// Module 18154 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import getJankScreenName from "getJankScreenName" /* 16447 */;
-import react_nativeDefault from "react-native" /* 16451 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16452 */;
+// Module 18546 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
+import getJankScreenName from "getJankScreenName" /* 17136 */;
+import react_nativeDefault from "react-native" /* 17140 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17141 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "color" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "end" });
   }
   attach() {
     const self = this;
@@ -56,9 +56,7 @@ class JankNavigationReporter {
       }
       self._routeKeyAtDispatch = key;
       const obj3 = react_nativeDefault;
-      if (obj3 != null) {
-        const result = obj3.beginScreenTransition();
-      }
+      const result = obj3.beginScreenTransition();
     }
   }
   handleStateSettled() {
@@ -66,7 +64,6 @@ class JankNavigationReporter {
     let closure_129_0;
     let expectedScreenIds;
     let focusedRoute;
-    const self = this;
     this._screensBeforeDispatch = undefined;
     const _screensBeforeDispatch = this._screensBeforeDispatch;
     const tmp3 = getJankScreenNameDefault();
@@ -75,14 +72,10 @@ class JankNavigationReporter {
     const obj = getJankSurfaceName;
     const result = obj.composeJankSurfaceName(() => closure_1_0);
     const obj2 = react_nativeDefault;
-    if (obj2 != null) {
-      obj2.nameCurrentScreen(result, expectedScreenIds);
-    }
-    if (self.shouldSettleInJS(focusedRoute, _screensBeforeDispatch, { expectedScreenIds, chatScreens })) {
+    obj2.nameCurrentScreen(result, expectedScreenIds);
+    if (this.shouldSettleInJS(focusedRoute, _screensBeforeDispatch, { expectedScreenIds, chatScreens })) {
       const tmpResult = react_nativeDefault;
-      if (tmpResult != null) {
-        tmpResult.settleCurrentScreen();
-      }
+      tmpResult.settleCurrentScreen();
     }
   }
   shouldSettleInJS(focusedRoute, _screensBeforeDispatch, chatScreens2) {
@@ -109,7 +102,7 @@ class JankNavigationReporter {
         }
         let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
         if (!isChatLockedOpen) {
-          const tmp4Result = tmp4(4979);
+          const tmp4Result = tmp4(5075);
           isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
         }
         tmp6 = isChatLockedOpen;
@@ -123,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "color" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "end" });

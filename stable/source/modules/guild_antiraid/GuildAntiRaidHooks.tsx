@@ -1,23 +1,23 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 13521
+// Function ID: 13522
 // Name: GuildAntiRaidHooks
-// Dependencies: [1244, 2087, 4750, 4939, 1390, 10695, 8040, 1085, 558, 576, 573, 11, 8039, 1097, 4755, 12586, 2]
+// Dependencies: [1246, 2090, 4845, 5034, 1392, 11115, 8314, 1087, 558, 576, 573, 11, 8313, 1099, 4850, 13522, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 12585 (GuildAntiRaidHooks)
+// Module 13521 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8039 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8040 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12586 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import UserStore from "UserStore" /* 1390 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10695 */;
-import Constants from "Constants" /* 1085 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8313 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8314 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13522 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import UserStore from "UserStore" /* 1392 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11115 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp20 = require;
         let obj6 = GuildAntiRaidUtils;
         if (obj6.hasDetectedActivity(tmp19)) {
-          let tmp20Result = tmp20(8039);
+          let tmp20Result = tmp20(8313);
           if (!tmp20Result.isUnderLockdown(tmp19)) {
             let tmp13 = BigFlagUtilsAll;
             let hasAny = tmp13.hasAny;
@@ -57,7 +57,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp20Result2 = tmp20(8039);
+          let tmp20Result2 = tmp20(8313);
         }
       }
     }
@@ -202,7 +202,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGuil
       let tmp17 = tmp16;
       if (null != tmp16) {
         let tmp19 = stateFromStores1;
-        let obj7 = stateFromStores1(8039);
+        let obj7 = stateFromStores1(8313);
         if (obj7.hasDetectedActivity(tmp17)) {
           let tmp11 = BigFlagUtilsAll;
           let hasAny = tmp11.hasAny;
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGuil
             return id;
           }
         } else {
-          let tmp19Result = tmp19(8039);
+          let tmp19Result = tmp19(8313);
         }
       }
     }
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildInci
   if (cResult[6] !== stateFromStores1) {
     let isUnderLockdownResult = null != stateFromStores1;
     if (isUnderLockdownResult) {
-      const tmpResult4 = tmp(8039);
+      const tmpResult4 = tmp(8313);
       isUnderLockdownResult = tmpResult4.isUnderLockdown(stateFromStores1);
     }
     cResult[6] = stateFromStores1;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildInci
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: isUnderLockdownResult };
   isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    const tmpResult = tmp(8039);
+    const tmpResult = tmp(8313);
     isUnderLockdownResult = tmpResult.isUnderLockdown(stateFromStores1);
   }
   return obj3;

@@ -1,12 +1,11 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 14789
+// Function ID: 14790
 // Name: BlockedUserUtils
-// Dependencies: [4760, 1388, 12, 2]
-// Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
+// Dependencies: [4855, 1388, 2]
+// Exports: filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, hasBlockedOrIgnoredUserIds
 
-// Module 14009 (BlockedUserUtils)
-import _modDef12 from "module_12" /* 12 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+// Module 14789 (BlockedUserUtils)
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -43,30 +42,16 @@ export const filterOutBlockedOrIgnoredUserIds = function filterOutBlockedOrIgnor
     return !hasItem;
   });
 };
-export const filterOutStreamsByBlockedOwner = function filterOutStreamsByBlockedOwner(allApplicationStreams) {
-  let blockedOrIgnored;
-  return allApplicationStreams.filter((ownerId) => !blockedOrIgnored.isBlockedOrIgnored(ownerId.ownerId));
-};
-export const hasBlockedOrIgnoredUserIds = function hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredIDs) {
-  let closure_0 = blockedOrIgnoredIDs;
+export const hasBlockedOrIgnoredUserIds = function hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredUserIds) {
+  let closure_0 = blockedOrIgnoredUserIds;
   return items.some((item) => {
     let hasItem;
-    const obj = blockedOrIgnoredIDs;
-    if (null != blockedOrIgnoredIDs) {
+    const obj = blockedOrIgnoredUserIds;
+    if (null != blockedOrIgnoredUserIds) {
       hasItem = obj.has(item);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(item);
     }
     return hasItem;
   });
-};
-export const voiceStateHasBlockedUsers = function voiceStateHasBlockedUsers(userId) {
-  return RelationshipStore.isBlockedOrIgnored(userId.userId);
-};
-export const filterBlockedUsersFromVoiceStates = function filterBlockedUsersFromVoiceStates(voiceStates) {
-  let blockedOrIgnored;
-  const arr = _modDef12(voiceStates);
-  const found = arr.filter((userId) => !blockedOrIgnored.isBlockedOrIgnored(userId.userId));
-  const iter = found.keyBy("userId");
-  return iter.value();
 };

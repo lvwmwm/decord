@@ -1,10 +1,10 @@
 // Module ID: 9593
 // Function ID: 9594
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 9593 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "36e39be8b33ba48e0db05b6e6fe9d9e1", name: "ic_add_reaction_v2", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/roadblocks/images", width: 488, height: 240, scales: [1], hash: "1653812d24f945a581bfdacd052d1cd9", name: "app_icons_upsell", type: "png" });

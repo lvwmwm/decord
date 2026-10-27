@@ -1,12 +1,12 @@
-// Module ID: 17577
-// Function ID: 17578
+// Module ID: 17959
+// Function ID: 17960
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2072, 21, 558, 576, 9257, 6263, 1126, 6262, 2]
+// Dependencies: [19, 2075, 21, 558, 576, 9563, 6540, 1128, 6539, 2]
 
-// Module 17577 (ThreadAutoArchiveBottomSheet)
+// Module 17959 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import TableRadioRow from "TableRadioRow" /* 6262 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import TableRadioRow from "TableRadioRow" /* 6539 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -96,9 +96,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp11 = cResult[14];
   }
   _require = tmp11;
-  const TableRadioGroup = tmp(6263).TableRadioGroup;
+  const TableRadioGroup = tmp(6540).TableRadioGroup;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(require("intl").t.H4mGfI);
     cResult[15] = stringResult;
     tmp15 = stringResult;
@@ -157,8 +157,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   _require = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
   const hasFlagResult = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
-  const TableRadioGroup = tmp(6263).TableRadioGroup;
-  const intl = tmp(1126).intl;
+  const TableRadioGroup = tmp(6540).TableRadioGroup;
+  const intl = tmp(1128).intl;
   return <TableRadioGroup value={selected} title={title} description={description} accessibilityLabel={intl.string(require("intl").t.H4mGfI)} onChange={onSelectDuration} hasIcons={false}>{autoArchiveOptions.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value))}</TableRadioGroup>;
 }));
 const result = size.fileFinishedImporting("modules/threads/native/components/ThreadAutoArchiveBottomSheet.tsx");

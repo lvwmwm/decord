@@ -1,18 +1,18 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17913
+// Function ID: 17914
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 5081, 1085, 21, 558, 576, 4962, 4850, 1126, 573, 16484, 16483, 16904, 1265, 16905, 10229, 2]
+// Dependencies: [109, 19, 5181, 1087, 21, 558, 576, 5057, 4945, 1128, 573, 17173, 17172, 17584, 1267, 17585, 10531, 2]
 
-// Module 17531 (ContactSuggestionRow)
+// Module 17913 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16484 */;
+import intl3 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17173 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
     if (cResult[6] === tmp7.user) {
       tmp11 = cResult[7];
     }
-    const tmpResult = tmp(4850);
+    const tmpResult = tmp(4945);
     sharedValue = tmpResult.useSharedValue(false);
     if (cResult[8] === tmp4) {
       let tmp13;
@@ -78,8 +78,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
         if (tmp4) {
           items = [];
         } else {
-          const obj3 = { name: constants4.ADD, label: intl.string(tmp(1126).t["ed99+i"]) };
-          intl = tmp(1126).intl;
+          const obj3 = { name: constants4.ADD, label: intl.string(tmp(1128).t["ed99+i"]) };
+          intl = tmp(1128).intl;
           class F {
             constructor() {
               const result = sharedValue.set(closure_0);
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
               const result = sharedValue.set(closure_0);
             }
           }
-          const tmpResult4 = tmp(16483);
+          const tmpResult4 = tmp(17172);
           const suggestedContactNameForSuggestion = tmpResult4.getSuggestedContactNameForSuggestion(tmp11, tmp7);
           cResult[20] = tmp7;
           cResult[21] = tmp11;

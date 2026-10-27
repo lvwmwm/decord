@@ -1,18 +1,18 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 13594
+// Function ID: 13595
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2069, 2065, 1085, 1126, 4702, 558, 576, 504, 7015, 6950, 2]
+// Dependencies: [5, 19, 2072, 2068, 1087, 1128, 4797, 558, 576, 504, 7290, 7224, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 12663 (SavedMessageUtils)
-import intl2 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+// Module 13594 (SavedMessageUtils)
+import intl2 from "intl" /* 1128 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSavedMe
         stateFromStores = tmp8;
       }
       const obj2 = { id: saveData.saveData.channelId, guild_id: guildId, type: constants.UNKNOWN, name: intl.string(require("intl").t.J90oLW) };
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       const self = this;
       const self2 = this;
       const tmp12 = new UnknownChannelRecord(obj2);
@@ -232,19 +232,19 @@ export const useDueInString = function useDueInString(arg0) {
       H4gnX9 = intl2.t.H4gnX9;
     }
     if (type === tmp10.LONG) {
-      haia16 = tmp(1126).t.haia16;
+      haia16 = tmp(1128).t.haia16;
     } else {
-      haia16 = tmp(1126).t["Uq7Y+7"];
+      haia16 = tmp(1128).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: formatToPlainString(H4gnX9, obj2), isOverdue: now > dueAt };
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4702.duration;
-    _modDef4702;
+    const duration = _modDef4797.duration;
+    _modDef4797;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

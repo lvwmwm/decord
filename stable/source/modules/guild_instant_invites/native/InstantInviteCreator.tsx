@@ -1,18 +1,18 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10611
+// Function ID: 10612
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 5092, 558, 576, 1200, 10301, 5377, 587, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 1202, 10612, 5477, 587, 2]
 
-// Module 10300 (InstantInviteCreator)
+// Module 10611 (InstantInviteCreator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10301 */;
+import native from "native" /* 1202 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10612 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
       if (cResult[3] !== tmp6) {
         const obj2 = { source: tmp6, size: native.AvatarSizes.SMALL };
-        const Avatar = tmp(1200).Avatar;
+        const Avatar = tmp(1202).Avatar;
         const tmp10 = React3(Avatar, obj2);
         cResult[3] = tmp6;
         cResult[4] = tmp10;
@@ -66,7 +66,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp5 = tmp18;
           }
           const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_8, children: items };
-          const Stack = tmp(5377).Stack;
+          const Stack = tmp(5477).Stack;
           items = [tmp8, tmp14];
           const tmp21 = hasOwnProperty(Stack, obj3);
           cResult[11] = tmp8;

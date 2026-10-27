@@ -1,50 +1,50 @@
-// Module ID: 11843
-// Function ID: 11844
+// Module ID: 11979
+// Function ID: 11980
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5081, 9243, 2119, 1502, 1085, 1627, 21, 5092, 587, 11844, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10623, 5107, 6665, 11845, 7242, 5922, 11731, 1272, 11707, 11847, 1998, 9242, 11671, 10861, 1497, 10376, 10019, 11848, 10020, 7764, 1894, 7753, 11849, 10624, 6307, 5088, 11850, 11851, 11902, 1200, 38, 11818, 9804, 7238, 9248, 9805, 11903, 11904, 11803, 11804, 2]
+// Dependencies: [5, 32, 19, 17, 5181, 9549, 2122, 1504, 1087, 1629, 21, 5191, 587, 11980, 558, 576, 504, 4945, 5192, 5195, 5156, 5063, 5491, 1128, 5139, 5480, 10948, 5206, 6942, 11981, 7513, 6178, 11861, 1274, 11930, 11983, 2000, 9548, 11931, 11261, 1499, 10699, 10322, 11984, 10323, 8035, 1896, 8024, 11985, 10949, 6584, 5187, 11986, 11987, 12038, 1202, 38, 11954, 10107, 7509, 9554, 10108, 12039, 12040, 11939, 11940, 2]
 
-// Module 11843 (AppLauncherCommandViewScreen)
+// Module 11979 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import timingPresets from "timingPresets" /* 5096 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import BaseTextButton2 from "BaseTextButton" /* 5380 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7238 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10019 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10020 */;
-import AppLauncherContext from "AppLauncherContext" /* 10623 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10624 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11671 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11731 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11803 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11804 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11844 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11845 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11847 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 11850 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11903 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11904 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import timing from "timing" /* 5192 */;
+import timingPresets from "timingPresets" /* 5195 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import BaseTextButton2 from "BaseTextButton" /* 5480 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10322 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10323 */;
+import AppLauncherContext from "AppLauncherContext" /* 10948 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11861 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11931 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11939 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11940 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11980 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11981 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11983 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 11986 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12039 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -497,7 +497,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(1998).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(2000).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -755,7 +755,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7753).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8024).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
@@ -2210,9 +2210,9 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
   const logAppLauncherEmptyStateView = obj2.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   ({ emptyStateContainer, emptyState } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["pX/qb9"]);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.exOQVY);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -2223,7 +2223,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
   }
   ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult2 = intl3.string(intl4.t["/g10LC"]);
     cResult[2] = stringResult2;
     tmp10 = stringResult2;
@@ -2256,7 +2256,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
         tmp18 = tmp21;
       }
       const obj4 = { style: emptyState, lightSource: AssetRegistryDefault3, darkSource: AssetRegistryDefault4, title: tmp6, body: tmp7, children: tmp12 };
-      const EmptyState = tmp(1200).EmptyState;
+      const EmptyState = tmp(1202).EmptyState;
       const tmp17 = closure_20(EmptyState, obj4);
       cResult[7] = tmp4.emptyState;
       cResult[8] = tmp12;
@@ -2339,9 +2339,9 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
       const _Symbol = Symbol;
       const emptyState = tmp4.emptyState;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl4.t.TzufcR);
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult1 = intl2.string(intl4.t["I/O+A1"]);
         cResult[8] = stringResult;
         cResult[9] = stringResult1;
@@ -2354,7 +2354,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
       const _Symbol2 = Symbol;
       ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const stringResult2 = intl3.string(intl4.t["/g10LC"]);
         cResult[10] = stringResult2;
         tmp19 = stringResult2;
@@ -2391,7 +2391,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
             tmp28 = tmp31;
           }
           const obj6 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: tmp15, body: tmp16, children: tmp21 };
-          const EmptyState = tmp(1200).EmptyState;
+          const EmptyState = tmp(1202).EmptyState;
           const tmp27 = closure_20(EmptyState, obj6);
           cResult[15] = tmp4.emptyState;
           cResult[16] = tmp21;

@@ -1,15 +1,15 @@
-// Module ID: 6963
-// Function ID: 6964
+// Module ID: 7237
+// Function ID: 7238
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [2083, 4750, 1390, 1085, 558, 576, 504, 6964, 6956, 2]
+// Dependencies: [2086, 4845, 1392, 1087, 558, 576, 504, 7238, 7230, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 6963 (GuildRoleSubscriptionSettingUtils)
-import GuildRecord from "GuildRecord" /* 2083 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 6964 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+// Module 7237 (GuildRoleSubscriptionSettingUtils)
+import GuildRecord from "GuildRecord" /* 2086 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7238 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,11 +95,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRole
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult3 = tmp(6964);
+  const tmpResult3 = tmp(7238);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult3.useIsUserInCreatorMonetizationEligibleCountry();
   id = undefined;
-  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(6956).useShouldRestrictUpdatingCreatorMonetizationSettings;
-  tmp(6956);
+  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(7230).useShouldRestrictUpdatingCreatorMonetizationSettings;
+  tmp(7230);
   if (id != null) {
     id = id.id;
   }
