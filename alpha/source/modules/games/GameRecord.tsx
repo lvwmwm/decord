@@ -1,15 +1,15 @@
-// Module ID: 2023
-// Function ID: 2024
+// Module ID: 2020
+// Function ID: 2021
 // Name: GameRecord
-// Dependencies: [1407, 2024, 2000, 2032, 1417, 1388, 2]
+// Dependencies: [1404, 2021, 1997, 2029, 1414, 1385, 2]
 
-// Module 2023 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import Server from "Server" /* 2000 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2024 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2032 */;
-import Record from "Record" /* 1407 */;
+// Module 2020 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import Server from "Server" /* 1997 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2021 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2029 */;
+import Record from "Record" /* 1404 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;

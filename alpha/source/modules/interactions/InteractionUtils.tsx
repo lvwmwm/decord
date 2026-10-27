@@ -1,21 +1,21 @@
 // Module ID: 8599
 // Function ID: 8600
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8270, 1087, 11, 8287, 8600, 6019, 1297, 2000, 7566, 8601, 584, 6020, 2, 6017]
+// Dependencies: [5, 502, 8268, 1084, 11, 8285, 8600, 6020, 1294, 1997, 7567, 8601, 584, 6021, 2, 6018]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
 // Module 8599 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Server from "Server" /* 2000 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6017 */;
-import InteractionTypes from "InteractionTypes" /* 6019 */;
+import Server from "Server" /* 1997 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6018 */;
+import InteractionTypes from "InteractionTypes" /* 6020 */;
 import InteractionActionCreators from "InteractionActionCreators" /* 8600 */;
 import _slicedToArray from "_slicedToArray" /* 8601 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8270 */;
-import Constants from "Constants" /* 1087 */;
+import InteractionStore from "InteractionStore" /* 8268 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let componentId;
@@ -378,7 +378,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(2000).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1997).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }

@@ -1,16 +1,16 @@
-// Module ID: 19393
-// Function ID: 19394
+// Module ID: 19430
+// Function ID: 19431
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2068, 9007, 1087, 1128, 1388, 7448, 1267, 1281, 2]
+// Dependencies: [5, 2065, 9007, 1084, 1125, 1385, 7449, 1264, 1278, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 19393 (GlobalDiscoveryServersUtils)
-import Constants from "Constants" /* 1087 */;
-import intl8 from "intl" /* 1128 */;
-import v1 from "v1" /* 1281 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+// Module 19430 (GlobalDiscoveryServersUtils)
+import Constants from "Constants" /* 1084 */;
+import intl8 from "intl" /* 1125 */;
+import v1 from "v1" /* 1278 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9007 */;
 import size from "module_2" /* 2 */;
 
@@ -259,7 +259,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "toCharArray$esjava$1", discoverySplash: null, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "toCharArray$esjava$1", discoverySplash: true, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

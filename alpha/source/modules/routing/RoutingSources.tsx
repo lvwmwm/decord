@@ -1,10 +1,10 @@
-// Module ID: 1126
-// Function ID: 1127
+// Module ID: 1123
+// Function ID: 1124
 // Name: RoutingSources
-// Dependencies: [1127, 2]
+// Dependencies: [1124, 2]
 
-// Module 1126 (RoutingSources)
-import ThreadConstants from "ThreadConstants" /* 1127 */;
+// Module 1123 (RoutingSources)
+import ThreadConstants from "ThreadConstants" /* 1124 */;
 import size from "module_2" /* 2 */;
 
 const items = [, ];

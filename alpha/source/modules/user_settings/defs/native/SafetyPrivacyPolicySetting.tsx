@@ -1,14 +1,14 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17320
+// Function ID: 17321
 // Name: SafetyPrivacyPolicySetting
-// Dependencies: [8332, 1087, 5660, 11209, 1128, 2]
+// Dependencies: [8331, 1084, 5661, 11212, 1125, 2]
 
-// Module 17279 (SafetyPrivacyPolicySetting)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+// Module 17320 (SafetyPrivacyPolicySetting)
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,15 +1,15 @@
-// Module ID: 13126
-// Function ID: 13127
+// Module ID: 13140
+// Function ID: 13141
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 5717, 21, 4971, 558, 576, 504, 8572, 587, 5234, 2]
+// Dependencies: [19, 17, 5718, 21, 4972, 558, 576, 504, 8572, 587, 5235, 2]
 
-// Module 13126 (GameInviteVoiceCount)
+// Module 13140 (GameInviteVoiceCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
     }
     if (cResult[5] !== stateFromStores) {
       const obj3 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-      const tmp17 = closure_5(channel(5234).Text, obj3);
+      const tmp17 = closure_5(channel(5235).Text, obj3);
       cResult[5] = stateFromStores;
       cResult[6] = tmp17;
       tmp15 = tmp17;
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
     const VoiceNormalIcon = tmp2(8572).VoiceNormalIcon;
     items2 = [closure_5(VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-    items2[1] = closure_5(channel(5234).Text, obj4);
+    items2[1] = closure_5(channel(5235).Text, obj4);
     tmp5 = closure_6(View, obj2);
   }
   return tmp5;

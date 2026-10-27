@@ -1,198 +1,74 @@
 // Module ID: 1852
 // Function ID: 1853
-// Dependencies: [19, 1850, 1853, 1851, 1658, 1854, 1855]
-// Exports: useFocusedInputHandler, useGenericKeyboardHandler, useKeyboardAnimation, useKeyboardController, useKeyboardHandler, useReanimatedFocusedInput, useReanimatedKeyboardAnimation
+// Dependencies: [32, 19, 1847, 1645]
+// Exports: useKeyboardState
 
 // Module 1852
-import _mod1658 from "module_1658" /* 1658 */;
-import KeyboardController2 from "KeyboardController" /* 1850 */;
-import _mod1851 from "module_1851" /* 1851 */;
-import AndroidSoftInputModes from "AndroidSoftInputModes" /* 1853 */;
-import _mod1854 from "module_1854" /* 1854 */;
-import _mod1855 from "module_1855" /* 1855 */;
+import KeyboardController3 from "KeyboardController" /* 1847 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
-let c2;
 let c3;
-const f89792 = () => {
-  let KeyboardController = KeyboardController2.KeyboardController;
-  KeyboardController.setInputMode(AndroidSoftInputModes.AndroidSoftInputModes.SOFT_INPUT_ADJUST_RESIZE);
-  return () => {
-    const KeyboardController = closure_1_0(closure_1_1[1]).KeyboardController;
-    return KeyboardController.setDefaultMode();
-  };
-};
-({ useEffect: c2, useLayoutEffect: c3 } = react);
-function useResizeMode() {
-  React2(f89792, []);
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+let closure_5 = ["keyboardWillShow", "keyboardDidHide"];
+function getLatestState() {
+
 }
-const __initData = { code: "function pnpm_indexTs1(event){const{handler}=this.__closure;if(event.eventName.endsWith(\"onKeyboardMoveStart\")){var _handler$onStart,_handler;(_handler$onStart=(_handler=handler).onStart)===null||_handler$onStart===void 0||_handler$onStart.call(_handler,event);}if(event.eventName.endsWith(\"onKeyboardMove\")){var _handler$onMove,_handler2;(_handler$onMove=(_handler2=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler2,event);}if(event.eventName.endsWith(\"onKeyboardMoveEnd\")){var _handler$onEnd,_handler3;(_handler$onEnd=(_handler3=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler3,event);}if(event.eventName.endsWith(\"onKeyboardMoveInteractive\")){var _handler$onInteractiv,_handler4;(_handler$onInteractiv=(_handler4=handler).onInteractive)===null||_handler$onInteractiv===void 0||_handler$onInteractiv.call(_handler4,event);}}" };
-const __initData2 = { code: "function pnpm_indexTs2(event){const{handler}=this.__closure;if(event.eventName.endsWith(\"onFocusedInputTextChanged\")){var _handler$onChangeText,_handler;(_handler$onChangeText=(_handler=handler).onChangeText)===null||_handler$onChangeText===void 0||_handler$onChangeText.call(_handler,event);}if(event.eventName.endsWith(\"onFocusedInputSelectionChanged\")){var _handler$onSelectionC,_handler2;(_handler$onSelectionC=(_handler2=handler).onSelectionChange)===null||_handler$onSelectionC===void 0||_handler$onSelectionC.call(_handler2,event);}}" };
-for (const key10020 in _mod1854) {
-  exports[key10020] = _mod1854[key10020];
-  continue;
-}
-for (const key10024 in _mod1855) {
-  exports[key10024] = _mod1855[key10024];
-  continue;
+function defaultSelector(arg0) {
+  return arg0;
 }
 
-export { useResizeMode };
-export const useKeyboardAnimation = () => {
-  if (typeof useResizeMode === "function") {
-    React2(f89792, []);
-    const obj = _mod1851;
-    return obj.useKeyboardContext().animated;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+export const useKeyboardState = function useKeyboardState(cResult) {
+  let closure_1;
+  let first;
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = defaultSelector;
   }
-};
-export const useReanimatedKeyboardAnimation = () => {
-  if (typeof useResizeMode === "function") {
-    React2(f89792, []);
-    const obj = _mod1851;
-    return obj.useKeyboardContext().reanimated;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const useGenericKeyboardHandler = function useGenericKeyboardHandler(handler, items10) {
-  let closure_0 = handler;
-  const obj = _mod1851;
-  let closure_1 = obj.useKeyboardContext();
-  const obj2 = _mod1658;
-  const doDependenciesDiffer = obj2.useHandler(handler, items10).doDependenciesDiffer;
-  const fn = function u(eventName) {
-    eventName = eventName.eventName;
-    if (eventName.endsWith("onKeyboardMoveStart")) {
-      const onStart = closure_0.onStart;
-      if (onStart != null) {
-        onStart(eventName);
-      }
+  let closure_0 = tmp;
+  closure_1 = undefined;
+  [first, closure_1] = closure_4(() => {
+    let KeyboardController2;
+    if (typeof getLatestState === "function") {
+      const obj = { isVisible: KeyboardController2.isVisible() };
+      const KeyboardController = KeyboardController3.KeyboardController;
+      const merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = KeyboardController3.KeyboardController;
+      return tmp(obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    const eventName2 = eventName.eventName;
-    if (eventName2.endsWith("onKeyboardMove")) {
-      const onMove = closure_0.onMove;
-      if (onMove != null) {
-        onMove(eventName);
-      }
-    }
-    const eventName3 = eventName.eventName;
-    if (eventName3.endsWith("onKeyboardMoveEnd")) {
-      const onEnd = closure_0.onEnd;
-      if (onEnd != null) {
-        onEnd(eventName);
-      }
-    }
-    const eventName4 = eventName.eventName;
-    if (eventName4.endsWith("onKeyboardMoveInteractive")) {
-      const onInteractive = closure_0.onInteractive;
-      if (onInteractive != null) {
-        onInteractive(eventName);
-      }
-    }
-  };
-  fn.__closure = { handler };
-  fn.__workletHash = 7080794218426;
-  fn.__initData = __initData;
-  const obj3 = _mod1658;
-  let closure_2 = obj3.useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], doDependenciesDiffer);
-  _false(() => {
-    keyboardHandlers.setKeyboardHandlers(closure_2);
-    return () => closure_0();
-  }, items10);
-};
-export const useKeyboardHandler = function useKeyboardHandler(handler, items) {
-  if (typeof useResizeMode === "function") {
-    React2(f89792, []);
-    let closure_0 = handler;
-    const obj = _mod1851;
-    let closure_1 = obj.useKeyboardContext();
-    const obj2 = _mod1658;
-    const doDependenciesDiffer = obj2.useHandler(handler, items).doDependenciesDiffer;
-    const fn = function u(eventName) {
-      eventName = eventName.eventName;
-      if (eventName.endsWith("onKeyboardMoveStart")) {
-        const onStart = closure_0.onStart;
-        if (onStart != null) {
-          onStart(eventName);
+  });
+  const tmp4 = closure_3(() => {
+    let KeyboardController2;
+    closure_0 = closure_1_5.map((item) => {
+      const KeyboardEvents = closure_0(closure_1[3]).KeyboardEvents;
+      return KeyboardEvents.addListener(item, () => {
+        let KeyboardController2;
+        if (typeof closure_2_6 === "function") {
+          const obj = { isVisible: KeyboardController2.isVisible() };
+          const KeyboardController = closure_0(closure_2_1[2]).KeyboardController;
+          const merged = Object.assign(KeyboardController.state());
+          KeyboardController2 = closure_0(closure_2_1[2]).KeyboardController;
+          return tmp(tmp2(obj));
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
-      }
-      const eventName2 = eventName.eventName;
-      if (eventName2.endsWith("onKeyboardMove")) {
-        const onMove = closure_0.onMove;
-        if (onMove != null) {
-          onMove(eventName);
-        }
-      }
-      const eventName3 = eventName.eventName;
-      if (eventName3.endsWith("onKeyboardMoveEnd")) {
-        const onEnd = closure_0.onEnd;
-        if (onEnd != null) {
-          onEnd(eventName);
-        }
-      }
-      const eventName4 = eventName.eventName;
-      if (eventName4.endsWith("onKeyboardMoveInteractive")) {
-        const onInteractive = closure_0.onInteractive;
-        if (onInteractive != null) {
-          onInteractive(eventName);
-        }
-      }
-    };
-    const obj4 = { handler };
-    fn.__closure = obj4;
-    fn.__workletHash = 7080794218426;
-    fn.__initData = __initData;
-    const obj3 = _mod1658;
-    let c2 = obj3.useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], doDependenciesDiffer);
-    _false(() => {
-      keyboardHandlers.setKeyboardHandlers(closure_2);
-      return () => closure_0();
-    }, items);
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const useKeyboardController = function useKeyboardController() {
-  const obj = _mod1851;
-  const keyboardContext = obj.useKeyboardContext();
-  return { setEnabled: keyboardContext.setEnabled, enabled: keyboardContext.enabled };
-};
-export const useReanimatedFocusedInput = function useReanimatedFocusedInput() {
-  const obj = _mod1851;
-  const keyboardContext = obj.useKeyboardContext();
-  return { input: keyboardContext.layout, update: keyboardContext.update };
-};
-export const useFocusedInputHandler = function useFocusedInputHandler(handler, items10) {
-  let closure_0 = handler;
-  const obj = _mod1851;
-  let closure_1 = obj.useKeyboardContext();
-  const obj2 = _mod1658;
-  const doDependenciesDiffer = obj2.useHandler(handler, items10).doDependenciesDiffer;
-  const fn = function l(eventName) {
-    eventName = eventName.eventName;
-    if (eventName.endsWith("onFocusedInputTextChanged")) {
-      const onChangeText = closure_0.onChangeText;
-      if (onChangeText != null) {
-        onChangeText(eventName);
-      }
+      });
+    });
+    if (typeof getLatestState === "function") {
+      let obj = { isVisible: KeyboardController2.isVisible() };
+      let KeyboardController = closure_0(closure_1[2]).KeyboardController;
+      let merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = closure_0(closure_1[2]).KeyboardController;
+      tmp(tmp2(obj));
+      return () => {
+        const item = closure_0.forEach((remove) => remove.remove());
+      };
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    const eventName2 = eventName.eventName;
-    if (eventName2.endsWith("onFocusedInputSelectionChanged")) {
-      const onSelectionChange = closure_0.onSelectionChange;
-      if (onSelectionChange != null) {
-        onSelectionChange(eventName);
-      }
-    }
-  };
-  fn.__closure = { handler };
-  fn.__workletHash = 16071593392303;
-  fn.__initData = __initData2;
-  const obj3 = _mod1658;
-  let closure_2 = obj3.useEvent(fn, ["onFocusedInputTextChanged", "onFocusedInputSelectionChanged"], doDependenciesDiffer);
-  _false(() => {
-    inputHandlers.setInputHandlers(closure_2);
-    return () => closure_0();
-  }, items10);
+  }, []);
+  return first;
 };

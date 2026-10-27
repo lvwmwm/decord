@@ -4,4 +4,4 @@
 
 // Module 1332
 
-export default Math.abs;
+export default Math.min;

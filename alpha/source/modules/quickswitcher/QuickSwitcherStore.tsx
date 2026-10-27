@@ -1,34 +1,34 @@
 // Module ID: 9066
 // Function ID: 9067
 // Name: QuickSwitcherStore
-// Dependencies: [8579, 6770, 1207, 502, 6791, 4823, 7631, 4901, 4883, 4845, 4903, 6771, 4874, 5002, 6704, 1087, 9067, 12, 9079, 6708, 1128, 9080, 1388, 6793, 510, 504, 584, 2]
+// Dependencies: [8579, 6771, 1204, 502, 6792, 4824, 7632, 4902, 4884, 4846, 4904, 6772, 4875, 5003, 6705, 1084, 9067, 12, 9079, 6709, 1125, 9080, 1385, 6794, 510, 504, 584, 2]
 
 // Module 9066 (QuickSwitcherStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl8 from "intl" /* 1128 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6793 */;
-import DraftStore2 from "DraftStore" /* 7631 */;
+import intl8 from "intl" /* 1125 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6794 */;
+import DraftStore2 from "DraftStore" /* 7632 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9079 */;
 import ReadStateUtils from "ReadStateUtils" /* 9080 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 8579 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6770 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6771 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6791 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6792 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -414,31 +414,31 @@ function handleUserSearchUpdate(arr, str) {
         if (_mod9067.AutocompleterResultTypes.TEXT_CHANNEL === queryMode) {
           const unshift5 = arr.unshift;
           const createHeaderResult5 = _mod9067.createHeaderResult;
-          const intl5 = tmp9(1128).intl;
+          const intl5 = tmp9(1125).intl;
           unshift5(createHeaderResult5(intl5.string(intl8.t.W26k4V)));
           items = arr;
         } else if (_mod9067.AutocompleterResultTypes.VOICE_CHANNEL === queryMode) {
           const unshift4 = arr.unshift;
           const createHeaderResult4 = _mod9067.createHeaderResult;
-          const intl4 = tmp9(1128).intl;
+          const intl4 = tmp9(1125).intl;
           unshift4(createHeaderResult4(intl4.string(intl8.t.zUoI5C)));
           items = arr;
         } else if (_mod9067.AutocompleterResultTypes.GUILD === queryMode) {
           const unshift3 = arr.unshift;
           const createHeaderResult3 = _mod9067.createHeaderResult;
-          const intl3 = tmp9(1128).intl;
+          const intl3 = tmp9(1125).intl;
           unshift3(createHeaderResult3(intl3.string(intl8.t.olADPs)));
           items = arr;
         } else if (_mod9067.AutocompleterResultTypes.APPLICATION === queryMode) {
           const unshift2 = arr.unshift;
           const createHeaderResult2 = _mod9067.createHeaderResult;
-          const intl2 = tmp9(1128).intl;
+          const intl2 = tmp9(1125).intl;
           unshift2(createHeaderResult2(intl2.string(intl8.t.VwK1ld)));
           items = arr;
         } else if (_mod9067.AutocompleterResultTypes.GAME_PROFILE === queryMode) {
           const unshift = arr.unshift;
           const createHeaderResult = _mod9067.createHeaderResult;
-          const intl = tmp9(1128).intl;
+          const intl = tmp9(1125).intl;
           unshift(createHeaderResult(intl.string(intl8.t.gEp2SG)));
           items = arr;
         } else {
@@ -471,12 +471,12 @@ function handleUserSearchUpdate(arr, str) {
     const unshift6 = arr.unshift;
     const createHeaderResult6 = _mod9067.createHeaderResult;
     if (null != guild) {
-      const intl7 = tmp9(1128).intl;
+      const intl7 = tmp9(1125).intl;
       const obj = { name: guild.name };
-      formatToPlainStringResult = intl7.formatToPlainString(tmp9(1128).t.FREzQs, obj);
+      formatToPlainStringResult = intl7.formatToPlainString(tmp9(1125).t.FREzQs, obj);
     } else {
-      const intl6 = tmp9(1128).intl;
-      formatToPlainStringResult = intl6.string(tmp9(1128).t.XFYW1o);
+      const intl6 = tmp9(1125).intl;
+      formatToPlainStringResult = intl6.string(tmp9(1125).t.XFYW1o);
     }
     unshift6(createHeaderResult6(formatToPlainStringResult));
     items = arr;
@@ -660,7 +660,7 @@ let obj = {
         if (queryMode === tmp6(9067).AutocompleterResultTypes.VOICE_CHANNEL) {
           _null.setOptions({ voiceChannelGuildFilter: null }, true);
         } else {
-          _null.setOptions({ userFilters: null, voiceChannelGuildFilter: "Array" }, true);
+          _null.setOptions({ userFilters: null, voiceChannelGuildFilter: "y" }, true);
         }
       }
       if (queryMode === _mod9067.AutocompleterResultTypes.USER) {
@@ -705,7 +705,7 @@ let obj = {
       if (sidebarState != null) {
         type = sidebarState.type;
       }
-      if (type === obj2(6793).SidebarType.VIEW_CHANNEL) {
+      if (type === obj2(6794).SidebarType.VIEW_CHANNEL) {
         if (sidebarState.channelId !== channelId) {
           if (null != ChannelSectionStore.getCurrentSidebarChannelId(channelId)) {
             if (null == ChannelSectionStore.getGuildSidebarState(tmp)) {

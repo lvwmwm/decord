@@ -1,14 +1,14 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11667
+// Function ID: 11668
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1087, 21, 11657, 11653, 11666, 5909, 11667, 2002, 11660, 7829, 2]
+// Dependencies: [5, 19, 17, 1084, 21, 11659, 11655, 11668, 5910, 11669, 1999, 11662, 7830, 2]
 // Exports: default
 
-// Module 11665 (transferToXbox)
+// Module 11667 (transferToXbox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11657 */;
+import Constants from "Constants" /* 1084 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

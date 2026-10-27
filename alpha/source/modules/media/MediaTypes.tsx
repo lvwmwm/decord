@@ -1,14 +1,14 @@
-// Module ID: 6021
-// Function ID: 6022
+// Module ID: 6022
+// Function ID: 6023
 // Name: MediaTypes
-// Dependencies: [1087, 1405, 2000, 5999, 1386, 2]
+// Dependencies: [1084, 1402, 1997, 6000, 1383, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 6021 (MediaTypes)
-import Constants from "Constants" /* 1087 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5999 */;
+// Module 6022 (MediaTypes)
+import Constants from "Constants" /* 1084 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6000 */;
 import size_mod from "module_2" /* 2 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {
@@ -35,7 +35,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (hasFlag2(num3, tmp4.IS_ANIMATED)) {
     num4 = obj2.IS_ANIMATED | 0;
   }
-  size = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(2000).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: tmp8, flags: num4 };
+  size = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1997).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: tmp8, flags: num4 };
   tmp8 = undefined;
   if (null != flags.content_scan_version) {
     obj = { version: flags.content_scan_version, flags: num2 };

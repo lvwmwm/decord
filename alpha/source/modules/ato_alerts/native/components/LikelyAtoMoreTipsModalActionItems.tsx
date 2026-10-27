@@ -1,13 +1,13 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 10961
+// Function ID: 10962
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1392, 21, 558, 576, 504, 5025, 1128, 10875, 6987, 6903, 2]
+// Dependencies: [19, 1389, 21, 558, 576, 504, 5026, 1125, 10878, 6989, 6905, 2]
 
-// Module 10958 (LikelyAtoMoreTipsModalActionItems)
+// Module 10961 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,9 +55,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     tmp9 = cResult[5];
   }
   if (cResult[6] !== tmp9) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { username: tmp9 };
-    const formatToPlainStringResult = intl.formatToPlainString(senderId(1128).t["F/ID+9"], obj2);
+    const formatToPlainStringResult = intl.formatToPlainString(senderId(1125).t["F/ID+9"], obj2);
     cResult[6] = tmp9;
     cResult[7] = formatToPlainStringResult;
     tmp12 = formatToPlainStringResult;
@@ -65,12 +65,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     tmp12 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult = intl2.string(senderId(1128).t.w2ve0t);
+    const intl2 = tmp(1125).intl;
+    const stringResult = intl2.string(senderId(1125).t.w2ve0t);
     cResult[8] = stringResult;
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(10875).BellSlashIcon, {});
+    const tmp18 = jsx(senderId(10878).BellSlashIcon, {});
     cResult[9] = tmp18;
   }
   if (cResult[10] === handleMutePressed) {
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     }
     return tmp19;
   }
-  const TableRowGroup = tmp(6987).TableRowGroup;
+  const TableRowGroup = tmp(6989).TableRowGroup;
   const tmp20 = <TableRowGroup hasIcons>{null}</TableRowGroup>;
   cResult[10] = handleMutePressed;
   cResult[11] = tmp12;
@@ -100,11 +100,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(6987).TableRowGroup;
-  ({ label: intl.formatToPlainString(senderId(1128).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1128).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(6903).TableRow;
-  intl = senderId(1128).intl;
-  intl2 = senderId(1128).intl;
+  const TableRowGroup = senderId(6989).TableRowGroup;
+  ({ label: intl.formatToPlainString(senderId(1125).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1125).t.w2ve0t), onPress: handleMutePressed, icon: null });
+  const TableRow = senderId(6905).TableRow;
+  intl = senderId(1125).intl;
+  intl2 = senderId(1125).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;
 });
 const result = size.fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoMoreTipsModalActionItems.tsx");

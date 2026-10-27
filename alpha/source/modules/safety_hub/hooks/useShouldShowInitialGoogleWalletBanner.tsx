@@ -1,15 +1,15 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16071
+// Function ID: 16072
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 7922, 7898, 504, 1384, 7897, 7929, 1400, 7932, 2]
+// Dependencies: [5, 32, 19, 7923, 7899, 504, 1381, 7898, 7930, 1397, 7933, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 16033 (useShouldShowInitialGoogleWalletBanner)
-import SafetyHubConstants from "SafetyHubConstants" /* 7898 */;
+// Module 16071 (useShouldShowInitialGoogleWalletBanner)
+import SafetyHubConstants from "SafetyHubConstants" /* 7899 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7922 */;
+import SafetyHubStore from "SafetyHubStore" /* 7923 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,27 +1,27 @@
-// Module ID: 1246
-// Function ID: 1247
+// Module ID: 1243
+// Function ID: 1244
 // Name: UserSettingsProtoStore
-// Dependencies: [1097, 1211, 1247, 38, 1248, 1250, 12, 504, 1241, 1251, 584, 2]
+// Dependencies: [1094, 1208, 1244, 38, 1245, 1247, 12, 504, 1238, 1248, 584, 2]
 
-// Module 1246 (UserSettingsProtoStore)
+// Module 1243 (UserSettingsProtoStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import timestamp from "timestamp" /* 1241 */;
-import frecency_user_settings from "frecency_user_settings" /* 1247 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1250 */;
-import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1251 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+import timestamp from "timestamp" /* 1238 */;
+import frecency_user_settings from "frecency_user_settings" /* 1244 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1247 */;
+import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1248 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import size from "module_2" /* 2 */;
 
 let ProtoClass;
 
 let FrecencyUserSettings;
 let PreloadedUserSettings;
-const f88271 = (editInfo) => {
+const f88442 = (editInfo) => {
   if (null != editInfo.editInfo.timeout) {
     const _clearTimeout = clearTimeout;
     clearTimeout(editInfo.editInfo.timeout);
@@ -43,7 +43,7 @@ const f88271 = (editInfo) => {
 };
 function handleConnectionClosedOrResumed() {
   const values = Object.values(closure_7);
-  const item = values.forEach(f88271);
+  const item = values.forEach(f88442);
 }
 function handleUserSettingsProtoUpdate(settings) {
   settings = settings.settings;
@@ -107,7 +107,7 @@ class UserSettingsProtoStore extends PersistedStore {
             }
             if (null != protoToSave) {
               if (null != tmp.offlineEditDataVersion) {
-                const tmp3Result = tmp3(1248);
+                const tmp3Result = tmp3(1245);
                 const b64ToProtoResult1 = tmp3Result.b64ToProto(ProtoClass.ProtoClass, protoToSave);
                 if (null != b64ToProtoResult1) {
                   ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
@@ -342,7 +342,7 @@ const obj3 = {
             }
             if (null != protoToSave) {
               if (null != tmp.offlineEditDataVersion) {
-                const tmp3Result = tmp3(1248);
+                const tmp3Result = tmp3(1245);
                 const b64ToProtoResult1 = tmp3Result.b64ToProto(ProtoClass.ProtoClass, protoToSave);
                 if (null != b64ToProtoResult1) {
                   ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
@@ -401,7 +401,7 @@ const obj3 = {
       }
     });
     const values2 = Object.values(closure_7);
-    const item1 = values2.forEach(f88271);
+    const item1 = values2.forEach(f88442);
   },
   CONNECTION_CLOSED: handleConnectionClosedOrResumed,
   CONNECTION_RESUMED: handleConnectionClosedOrResumed,
@@ -413,7 +413,7 @@ const obj3 = {
   },
   LOGOUT: function handleLogout() {
     const values = Object.values(closure_7);
-    const item = values.forEach(f88271);
+    const item = values.forEach(f88442);
     const values2 = Object.values(closure_7);
     const item1 = values2.forEach((ProtoClass) => {
       ProtoClass = ProtoClass.ProtoClass;

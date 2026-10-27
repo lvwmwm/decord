@@ -1,20 +1,20 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19375
+// Function ID: 19376
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 17557, 5234, 16594, 7074, 1633, 19338, 1128, 19339, 19340, 9957, 5269, 5265, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1199, 17598, 5235, 16636, 7076, 1630, 19376, 1125, 19377, 19378, 9959, 5270, 5266, 2]
 
-// Module 19337 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 19375 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16594 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17557 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19340 */;
+import native from "native" /* 1199 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16636 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17598 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19378 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5235);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -311,7 +311,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         }
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult = intl.string(require("intl").t.CjC5XZ);
           cResult[12] = stringResult;
           tmp19 = stringResult;
@@ -338,8 +338,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         const _Symbol4 = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
-          const Text = tmp(5234).Text;
-          intl2 = tmp(1128).intl;
+          const Text = tmp(5235).Text;
+          intl2 = tmp(1125).intl;
           const tmp30 = closure_4(Text, obj7);
           const tmp31 = closure_4(require("native").Spacer, { size: 24 });
           cResult[16] = tmp30;
@@ -369,7 +369,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         }
         const _Symbol6 = Symbol;
         if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1128).intl;
+          const intl3 = tmp(1125).intl;
           const stringResult1 = intl3.string(require("intl").t.ZKyfEo);
           cResult[21] = stringResult1;
           tmp34 = stringResult1;
@@ -410,7 +410,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
                 }
                 const _Symbol9 = Symbol;
                 if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl4 = tmp(1128).intl;
+                  const intl4 = tmp(1125).intl;
                   const stringResult2 = intl4.string(require("intl").t.Ofvpfs);
                   cResult[32] = stringResult2;
                   tmp49 = stringResult2;
@@ -447,7 +447,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
                     }
                     const _Symbol11 = Symbol;
                     if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl5 = tmp(1128).intl;
+                      const intl5 = tmp(1125).intl;
                       const stringResult3 = intl5.string(require("intl").t.w7KA8R);
                       cResult[43] = stringResult3;
                       tmp62 = stringResult3;
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
                                 const obj13 = { scrollable: true, startExpanded: true, children: closure_6(View, obj14) };
                                 obj14 = { style: tmp7, children: items2 };
                                 items2 = [tmp8, tmp10, tmp71];
-                                BottomSheet = tmp(5265).BottomSheet;
+                                BottomSheet = tmp(5266).BottomSheet;
                                 const tmp78 = closure_4(BottomSheet, obj13);
                                 cResult[57] = tmp4.container;
                                 cResult[58] = tmp8;

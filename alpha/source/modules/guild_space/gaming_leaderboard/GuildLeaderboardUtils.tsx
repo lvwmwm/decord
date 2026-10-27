@@ -1,15 +1,15 @@
-// Module ID: 10672
-// Function ID: 10673
+// Module ID: 10675
+// Function ID: 10676
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 10673, 1128, 2440, 4891, 1104, 2]
+// Dependencies: [32, 10676, 1125, 2439, 4892, 1101, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardLeaderBadgeText, getLeaderboardLeaderDetailText, getLeaderboardWinnerBadgeText, getLeaderboardWinnerDetailText
 
-// Module 10672 (GuildLeaderboardUtils)
-import DurationsDefault from "Durations" /* 1104 */;
-import intl6 from "intl" /* 1128 */;
-import _modDef2440 from "module_2440" /* 2440 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4891 */;
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10673 */;
+// Module 10675 (GuildLeaderboardUtils)
+import DurationsDefault from "Durations" /* 1101 */;
+import intl6 from "intl" /* 1125 */;
+import _modDef2439 from "module_2439" /* 2439 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4892 */;
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10676 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,6 @@ let result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/
 
 export const LEADERBOARD_WINNER_ROLE_NAME_PREFIX = "leaderboard-winner-badge-sentinel-deliberately-longer-than-the-100-character-maximum-role-name-length:";
 export const LEADERBOARD_LEADER_ROLE_NAME_PREFIX = "leaderboard-leader-badge-sentinel-deliberately-longer-than-the-100-character-maximum-role-name-length:";
-export const LEADERBOARD_LEADER_EMOJI = "\u{1F947}";
 export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeText(activeLeaderboardWinnerData) {
   const obj = GuildLeaderboardStatCopy;
   const name = obj.getStatName(activeLeaderboardWinnerData.winningStat).name;
@@ -25,20 +24,20 @@ export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeT
   if (null != winningStreak) {
     let formatToPlainStringResult;
     if (winningStreak > 1) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj2 = { streakCount: winningStreak, statName: name };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.owAd83, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.owAd83, obj2);
     }
     return formatToPlainStringResult;
   }
-  const intl = tmp(1128).intl;
-  formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.So4gmj, { statName: name });
+  const intl = tmp(1125).intl;
+  formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.So4gmj, { statName: name });
 };
 export const getLeaderboardLeaderBadgeText = function getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData) {
   const obj = GuildLeaderboardStatCopy;
   const statName = obj.getStatName(activeLeaderboardLeaderData.currentLeaderStat).name;
   const intl = intl6.intl;
-  return intl.formatToPlainString(_modDef2440.ZaOAtm, { statName });
+  return intl.formatToPlainString(_modDef2439.ZaOAtm, { statName });
 };
 export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetailText(decodeWinnerDataResult) {
   let num = decodeWinnerDataResult.winningStreak;
@@ -48,7 +47,7 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
   if (num > 1) {
     const intl5 = intl6.intl;
     const obj2 = { streakCount: num };
-    return intl5.formatToPlainString(_modDef2440["ZCFDN+"], obj2);
+    return intl5.formatToPlainString(_modDef2439["ZCFDN+"], obj2);
   } else {
     const winningValue = decodeWinnerDataResult.winningValue;
     if (null != winningValue) {
@@ -64,23 +63,23 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
             const rounded1 = Math.floor(rounded / DurationsDefault.Minutes.HOUR);
             const result = rounded % DurationsDefault.Minutes.HOUR;
             if (0 === rounded1) {
-              const intl4 = tmp12(1128).intl;
+              const intl4 = tmp12(1125).intl;
               const obj3 = { minutes: result };
-              formatToPlainStringResult = intl4.formatToPlainString(tmp3(2440)["/272et"], obj3);
+              formatToPlainStringResult = intl4.formatToPlainString(tmp3(2439)["/272et"], obj3);
             } else {
-              const intl3 = tmp12(1128).intl;
+              const intl3 = tmp12(1125).intl;
               const time = { hours: rounded1, minutes: result };
-              formatToPlainStringResult = intl3.formatToPlainString(tmp3(2440).GC7N5H, time);
+              formatToPlainStringResult = intl3.formatToPlainString(tmp3(2439).GC7N5H, time);
             }
             return formatToPlainStringResult;
           } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_DAYS_PLAYED === winningStat) {
-            const intl2 = tmp12(1128).intl;
+            const intl2 = tmp12(1125).intl;
             const obj4 = { days: winningValue };
-            return intl2.formatToPlainString(_modDef2440.IXdbVJ, obj4);
+            return intl2.formatToPlainString(_modDef2439.IXdbVJ, obj4);
           } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED === winningStat) {
-            const intl = tmp12(1128).intl;
+            const intl = tmp12(1125).intl;
             const obj = { count: winningValue };
-            return intl.formatToPlainString(_modDef2440["/VAMco"], obj);
+            return intl.formatToPlainString(_modDef2439["/VAMco"], obj);
           } else {
             return null;
           }
@@ -92,7 +91,7 @@ export const getLeaderboardWinnerDetailText = function getLeaderboardWinnerDetai
 };
 export const getLeaderboardLeaderDetailText = function getLeaderboardLeaderDetailText() {
   const intl = intl6.intl;
-  return intl.string(_modDef2440.jCZgxQ);
+  return intl.string(_modDef2439.jCZgxQ);
 };
 export const encodeWinnerData = function encodeWinnerData(activeLeaderboardWinnerData) {
   let num = activeLeaderboardWinnerData.winningStat;

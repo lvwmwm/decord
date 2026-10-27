@@ -1,9 +1,9 @@
-// Module ID: 9386
-// Function ID: 9387
+// Module ID: 9385
+// Function ID: 9386
 // Name: ContentInventoryOutboxStore
 // Dependencies: [504, 8825, 584, 2]
 
-// Module 9386 (ContentInventoryOutboxStore)
+// Module 9385 (ContentInventoryOutboxStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import matchUtils from "matchUtils" /* 8825 */;

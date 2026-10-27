@@ -1,110 +1,127 @@
 // Module ID: 10541
 // Function ID: 10542
-// Dependencies: [19, 1658]
-// Exports: useVisibleRanges
+// Dependencies: [19, 5298, 10542]
+// Exports: usePanGestureProxy
 
 // Module 10541
 import react from "react" /* 19 */;
 
-const useRef = react.useRef;
-let closure_3 = { code: "function pnpm_useVisibleRangesTsx1(){const{windowSize,translation,viewSize,total,loop,isArraysEqual,cachedRanges}=this.__closure;var _cachedRanges$current,_cachedRanges$current2,_cachedRanges$current3,_cachedRanges$current4;const positiveCount=Math.round(windowSize/2);const negativeCount=windowSize-positiveCount;let currentIndex=Math.round(-translation.value/viewSize);currentIndex=currentIndex<0?currentIndex%total+total:currentIndex;let newRanges;if(!loop){newRanges={negativeRange:[0+currentIndex-(windowSize-1),0+currentIndex],positiveRange:[0+currentIndex,currentIndex+(windowSize-1)]};}else{const negativeRange=[(currentIndex-negativeCount+total)%total,(currentIndex-1+total)%total];const positiveRange=[(currentIndex+total)%total,(currentIndex+positiveCount+total)%total];if(negativeRange[0]<total&&negativeRange[0]>negativeRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}if(positiveRange[0]>positiveRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}newRanges={negativeRange:negativeRange,positiveRange:positiveRange};}if(isArraysEqual((_cachedRanges$current=(_cachedRanges$current2=cachedRanges.current)===null||_cachedRanges$current2===void 0?void 0:_cachedRanges$current2.negativeRange)!==null&&_cachedRanges$current!==void 0?_cachedRanges$current:[],newRanges.negativeRange)&&isArraysEqual((_cachedRanges$current3=(_cachedRanges$current4=cachedRanges.current)===null||_cachedRanges$current4===void 0?void 0:_cachedRanges$current4.positiveRange)!==null&&_cachedRanges$current3!==void 0?_cachedRanges$current3:[],newRanges.positiveRange))return cachedRanges.current;cachedRanges.current=newRanges;return cachedRanges.current;}" };
-function isArraysEqual(arr, arg1) {
-  let closure_0 = arg1;
-  const tmp = arr.length === arg1.length && arr.every((item, index) => item === positiveRange1[index]);
-  return tmp;
-}
-isArraysEqual.__closure = {};
-isArraysEqual.__workletHash = 6222082561981;
-isArraysEqual.__initData = { code: "function isArraysEqual_Pnpm_useVisibleRangesTsx2(a,b){if(a.length!==b.length)return false;return a.every(function(value,index){return value===b[index];});}" };
+const useMemo = react.useMemo;
+let closure_3 = { code: "function pnpm_usePanGestureProxyTs1(e){const{userDefinedConflictGestures}=this.__closure;if(userDefinedConflictGestures.onBegin)userDefinedConflictGestures.onBegin(e);}" };
+let closure_4 = { code: "function pnpm_usePanGestureProxyTs2(e){const{onGestureStart,userDefinedConflictGestures}=this.__closure;onGestureStart(e);if(userDefinedConflictGestures.onStart)userDefinedConflictGestures.onStart(e);}" };
+let closure_5 = { code: "function pnpm_usePanGestureProxyTs3(e){const{onGestureUpdate,userDefinedConflictGestures}=this.__closure;onGestureUpdate(e);if(userDefinedConflictGestures.onUpdate)userDefinedConflictGestures.onUpdate(e);}" };
+let closure_6 = { code: "function pnpm_usePanGestureProxyTs4(e,success){const{onGestureEnd,userDefinedConflictGestures}=this.__closure;onGestureEnd(e,success);if(userDefinedConflictGestures.onEnd)userDefinedConflictGestures.onEnd(e,success);}" };
+let closure_7 = { code: "function pnpm_usePanGestureProxyTs5(e,success){const{userDefinedConflictGestures}=this.__closure;if(userDefinedConflictGestures.onFinalize)userDefinedConflictGestures.onFinalize(e,success);}" };
 
-export const useVisibleRanges = function useVisibleRanges(total) {
-  let loop;
-  let windowSize;
-  total = total.total;
-  let num = 0;
-  if (undefined !== total) {
-    num = total;
+export const usePanGestureProxy = (onConfigurePanGesture) => {
+  onConfigurePanGesture = onConfigurePanGesture.onConfigurePanGesture;
+  const onGestureStart = onConfigurePanGesture.onGestureStart;
+  const onGestureUpdate = onConfigurePanGesture.onGestureUpdate;
+  const onGestureEnd = onConfigurePanGesture.onGestureEnd;
+  let options = onConfigurePanGesture.options;
+  if (undefined === options) {
+    options = {};
   }
-  const viewSize = total.viewSize;
-  const translation = total.translation;
-  ({ windowSize, loop } = total);
-  if (windowSize == null) {
-    windowSize = num;
-  }
-  const tmp = translation(null);
-  const ref = tmp;
-  let obj = num(viewSize[1]);
-  const fn = function s() {
-    let items2;
-    let items3;
+  const items = [onGestureStart, onGestureUpdate, onGestureEnd, onConfigurePanGesture];
+  const tmp = onGestureUpdate(() => {
     let obj;
-    const rounded = Math.round(windowSize / 2);
-    const diff = windowSize - rounded;
-    const rounded1 = Math.round(-translation.value / viewSize);
-    let sum = rounded1;
-    if (rounded1 < 0) {
-      sum = rounded1 % num + num;
+    let onBegin;
+    let onEnd;
+    let onFinalize;
+    let onStart;
+    let onUpdate;
+    const Gesture = onConfigurePanGesture(onGestureStart[1]).Gesture;
+    const PanResult = Gesture.Pan();
+    const withTestIdResult = PanResult.withTestId("rnrc-gesture-handler");
+    onConfigurePanGesture = withTestIdResult;
+    const userDefinedConflictGestures = { onBegin: "Array", onStart: "unicodeVersion", onUpdate: "c", onEnd: "withSpring", onFinalize: "IconComponent" };
+    withTestIdResult.onBegin = (onBegin) => {
+      obj.onBegin = onBegin;
+      return withTestIdResult;
+    };
+    withTestIdResult.onStart = (onStart) => {
+      obj.onStart = onStart;
+      return withTestIdResult;
+    };
+    withTestIdResult.onUpdate = (onUpdate) => {
+      obj.onUpdate = onUpdate;
+      return withTestIdResult;
+    };
+    withTestIdResult.onEnd = (onEnd) => {
+      obj.onEnd = onEnd;
+      return withTestIdResult;
+    };
+    withTestIdResult.onFinalize = (onFinalize) => {
+      obj.onFinalize = onFinalize;
+      return withTestIdResult;
+    };
+    ({ onBegin, onStart, onUpdate, onEnd, onFinalize } = withTestIdResult);
+    if (onConfigurePanGesture) {
+      onConfigurePanGesture(withTestIdResult);
     }
-    const tmp7 = loop;
-    if (tmp7) {
-      const items = [(sum - diff + num) % num, (sum - 1 + num) % num];
-      const items1 = [(sum + num) % num, (sum + rounded + num) % num];
-      const tmp9 = items[0] < num && items[0] > items[1];
-      if (tmp9) {
-        items[1] = num - 1;
-        items1[0] = 0;
-      }
-      if (items1[0] > items1[1]) {
-        items[1] = num - 1;
-        items1[0] = 0;
-      }
-      obj = { negativeRange: items, positiveRange: items1 };
-      const obj2 = { negativeRange: items, positiveRange: items1 };
-    } else {
-      obj = { negativeRange: items2, positiveRange: items3 };
-      items2 = [sum - (windowSize - 1), sum];
-      items3 = [sum, sum + (windowSize - 1)];
-    }
-    const current = ref.current;
-    let negativeRange;
-    if (current != null) {
-      negativeRange = current.negativeRange;
-    }
-    if (negativeRange == null) {
-      negativeRange = [];
-    }
-    const negativeRange1 = obj.negativeRange;
-    if (typeof isArraysEqual === "function") {
-      let tmp12 = negativeRange.length === negativeRange1.length && negativeRange.every((item, index) => item === positiveRange1[index]);
-      if (tmp12) {
-        const current2 = tmp11.current;
-        let positiveRange;
-        if (current2 != null) {
-          positiveRange = current2.positiveRange;
-        }
-        if (positiveRange == null) {
-          positiveRange = [];
-        }
-        const positiveRange1 = obj.positiveRange;
-        if (typeof isArraysEqual === "function") {
-          tmp12 = positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-          positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-        } else {
-          throw new TypeError("Trying to call a non-function");
+    withTestIdResult.onBegin = onBegin;
+    withTestIdResult.onStart = onStart;
+    withTestIdResult.onUpdate = onUpdate;
+    withTestIdResult.onEnd = onEnd;
+    withTestIdResult.onFinalize = onFinalize;
+    class C {
+      constructor(arg0) {
+        if (obj.onBegin) {
+          obj.onBegin(arg0);
         }
       }
-      if (!tmp12) {
-        ref.current = obj;
-      }
-      return ref.current;
-    } else {
-      throw new TypeError("Trying to call a non-function");
     }
-  };
-  let obj2 = { windowSize, translation, viewSize, total: num, loop, isArraysEqual: windowSize, cachedRanges: tmp };
-  fn.__closure = obj2;
-  fn.__workletHash = 627759706032;
-  fn.__initData = loop;
-  let items = [loop, num, windowSize, translation];
-  return obj.useDerivedValue(fn, items);
+    C.__closure = { userDefinedConflictGestures };
+    C.__workletHash = 7286111968229;
+    C.__initData = onGestureEnd;
+    const onBeginResult = withTestIdResult.onBegin(C);
+    class D {
+      constructor(arg0) {
+        onGestureStart(arg0);
+        if (obj.onStart) {
+          obj.onStart(arg0);
+        }
+      }
+    }
+    const obj2 = { onGestureStart: userDefinedConflictGestures, userDefinedConflictGestures };
+    D.__closure = obj2;
+    D.__workletHash = 2969501037173;
+    D.__initData = __initData;
+    const fn = function p(arg0) {
+      onGestureUpdate(arg0);
+      if (obj.onUpdate) {
+        obj.onUpdate(arg0);
+      }
+    };
+    const obj3 = { onGestureUpdate, userDefinedConflictGestures };
+    fn.__closure = obj3;
+    fn.__workletHash = 14406733755860;
+    fn.__initData = __initData2;
+    const onStartResult = onBeginResult.onStart(D);
+    const fn2 = function c(arg0, arg1) {
+      onGestureEnd(arg0, arg1);
+      if (obj.onEnd) {
+        obj.onEnd(arg0, arg1);
+      }
+    };
+    const obj4 = { onGestureEnd, userDefinedConflictGestures };
+    fn2.__closure = obj4;
+    fn2.__workletHash = 3800149117372;
+    fn2.__initData = __initData3;
+    const onUpdateResult = onStartResult.onUpdate(fn);
+    const fn3 = function e(arg0, arg1) {
+      if (obj.onFinalize) {
+        obj.onFinalize(arg0, arg1);
+      }
+    };
+    fn3.__closure = { userDefinedConflictGestures };
+    fn3.__workletHash = 16525776198753;
+    fn3.__initData = __initData4;
+    const onEndResult = onUpdateResult.onEnd(fn2);
+    onEndResult.onFinalize(fn3);
+    return withTestIdResult;
+  }, items);
+  let obj2 = onConfigurePanGesture(onGestureStart[2]);
+  const updateGestureConfig = obj2.useUpdateGestureConfig(tmp, options);
+  return tmp;
 };

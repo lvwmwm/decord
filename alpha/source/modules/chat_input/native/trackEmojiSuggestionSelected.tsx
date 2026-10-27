@@ -1,12 +1,12 @@
-// Module ID: 9903
-// Function ID: 9904
+// Module ID: 9905
+// Function ID: 9906
 // Name: trackEmojiSuggestionSelected
-// Dependencies: [1087, 5711, 2]
+// Dependencies: [1084, 5712, 2]
 // Exports: default
 
-// Module 9903 (trackEmojiSuggestionSelected)
-import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
+// Module 9905 (trackEmojiSuggestionSelected)
+import Constants from "Constants" /* 1084 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

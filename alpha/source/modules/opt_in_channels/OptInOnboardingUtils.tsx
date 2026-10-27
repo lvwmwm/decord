@@ -1,18 +1,18 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 11252
+// Function ID: 11253
 // Name: OptInOnboardingUtils
-// Dependencies: [1246, 4901, 4883, 6704, 4889, 6813, 1405, 7209, 7200, 1211, 2]
+// Dependencies: [1243, 4902, 4884, 6705, 4890, 6815, 1402, 7211, 7202, 1208, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 11249 (OptInOnboardingUtils)
-import GuildMemberConstants from "GuildMemberConstants" /* 4889 */;
-import isOptInEnabled from "isOptInEnabled" /* 6813 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7200 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7209 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+// Module 11252 (OptInOnboardingUtils)
+import GuildMemberConstants from "GuildMemberConstants" /* 4890 */;
+import isOptInEnabled from "isOptInEnabled" /* 6815 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7202 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7211 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4902 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
 import size from "module_2" /* 2 */;
 
 let channel, set;
@@ -20,7 +20,7 @@ let channel, set;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const FlagUtils = tmp(1405);
+const FlagUtils = tmp(1402);
 function optIntoAllChannelsForExistingMember(id, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
@@ -139,7 +139,7 @@ export const hasClearedGuildOnboardingNotice = function hasClearedGuildOnboardin
     if (num == null) {
       num = 0;
     }
-    hasFlagResult = hasFlag(num, tmp3(1211).GuildOnboardingProgress.GUILD_NOTICE_CLEARED);
+    hasFlagResult = hasFlag(num, tmp3(1208).GuildOnboardingProgress.GUILD_NOTICE_CLEARED);
   }
   return hasFlagResult;
 };

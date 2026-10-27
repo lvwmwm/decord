@@ -1,10 +1,10 @@
-// Module ID: 5034
-// Function ID: 5035
+// Module ID: 5035
+// Function ID: 5036
 // Name: DenormalizedPerksReadExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 
-// Module 5034 (DenormalizedPerksReadExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 5035 (DenormalizedPerksReadExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CONTROL: 0, [0]: "CONTROL", DUAL_READ_RETURN_OLD: 1, [1]: "DUAL_READ_RETURN_OLD", DUAL_READ_RETURN_NEW: 2, [2]: "DUAL_READ_RETURN_NEW" };

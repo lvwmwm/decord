@@ -1,17 +1,17 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9770
+// Function ID: 9771
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 5607, 21, 4971, 587, 558, 576, 5052, 5206, 2]
+// Dependencies: [19, 17, 5608, 21, 4972, 587, 558, 576, 5053, 5207, 2]
 
-// Module 9768 (ConversationPreviewSkeleton)
+// Module 9770 (ConversationPreviewSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import ConversationConstants from "ConversationConstants" /* 5607 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import ConversationConstants from "ConversationConstants" /* 5608 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 11432452203963;
   fn2.__initData = __initData;
-  const tmpResult = tmp(5052);
+  const tmpResult = tmp(5053);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] !== tmp4) {
     const _Array = Array;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     }
     return tmp14;
   }
-  const tmp15 = closure_6(sharedValue(5052).View, { style: animatedStyle, "aria-hidden": true, children: tmp10 });
+  const tmp15 = closure_6(sharedValue(5053).View, { style: animatedStyle, "aria-hidden": true, children: tmp10 });
   cResult[5] = animatedStyle;
   cResult[6] = tmp10;
   cResult[7] = tmp15;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     })
   };
   obj4 = { length: closure_5 };
-  View = sharedValue(5052).View;
+  View = sharedValue(5053).View;
   return closure_6(View, obj3);
 });
 size = size_mod;

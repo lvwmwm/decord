@@ -1,24 +1,24 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17669
+// Function ID: 17670
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1087, 21, 4971, 587, 11060, 2067, 2002, 5660, 558, 576, 5669, 17629, 1128, 5234, 1202, 6908, 2]
+// Dependencies: [5, 19, 1084, 21, 4972, 587, 11063, 2064, 1999, 5661, 558, 576, 5670, 17670, 1125, 5235, 1199, 6910, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 17628 (GuildMFAWarning)
+// Module 17669 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import Pressables from "Pressables" /* 6908 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17629 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import Pressables from "Pressables" /* 6910 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11063 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.ZIf8Ag);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -131,7 +131,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
   }
   const MFAWarningLink = tmp4.MFAWarningLink;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl3.t.hvVgAZ);
     cResult[3] = stringResult1;
     tmp12 = stringResult1;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(5234).Text;
+    const Text = tmp(5235).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroRequire(native.LegacyText, obj4);

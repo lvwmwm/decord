@@ -1,19 +1,19 @@
-// Module ID: 12998
-// Function ID: 12999
+// Module ID: 13011
+// Function ID: 13012
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 4972, 12956, 6015, 21, 4971, 587, 1384, 558, 576, 504, 12959, 12963, 12964, 1128, 3056, 3088, 12999, 12996, 13001, 12982, 12974, 1417, 1357, 13013, 7227, 12976, 12984, 2]
+// Dependencies: [32, 19, 17, 4973, 12968, 6016, 21, 4972, 587, 1381, 558, 576, 504, 12971, 12975, 12976, 1125, 3057, 3089, 13012, 13009, 13014, 12995, 12986, 1414, 1354, 13026, 7229, 12988, 12997, 2]
 
-// Module 12998 (CheckpointEmojiStatsScreen)
+// Module 13011 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import CheckpointStore from "CheckpointStore" /* 12956 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import CheckpointStore from "CheckpointStore" /* 12968 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,6 +32,7 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 ({ CHECKPOINT_PRIMARY: metroImportAll, CHECKPOINT_DARK_CYAN } = CheckpointConstants);
@@ -59,8 +60,14 @@ if (PlatformUtils.isIOS()) {
 }
 let closure_12 = createStyles(obj);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEmojiStatsScreen() {
+  let closure_3;
+  let closure_4;
   let emoji;
   let emojis1;
+  let items4;
+  let items5;
+  let items6;
+  let obj11;
   let tmp10;
   let tmp13;
   let tmp14;
@@ -69,6 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   let tmp5;
   let tmp6;
   let tmp9;
+  let tmpResult8;
   let useReducedMotion;
   const tmp2 = emoji;
   let obj = require("react");
@@ -108,8 +116,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  const tmpResult4 = require("get initialized");
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp10);
+  const tmpResult5 = require("get initialized");
+  const stateFromStores1 = tmpResult5.useStateFromStores(tmp9, tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [CheckpointStore];
     const fn3 = function _() {
@@ -128,26 +136,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
     tmp13 = cResult[4];
     tmp14 = cResult[5];
   }
-  const tmpResult5 = require("get initialized");
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp14);
+  const tmpResult6 = require("get initialized");
+  const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp14);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [CheckpointStore];
-    class F {
-      constructor() {
-        const obj = closure_0(first[13]);
-        return obj.hasCheckpointEmojis(CheckpointStore.stats);
-      }
-    }
+    const fn4 = function w() {
+      const obj = closure_0(first[13]);
+      return obj.hasCheckpointEmojis(CheckpointStore.stats);
+    };
     cResult[6] = items3;
-    cResult[7] = F;
-    tmp18 = F;
+    cResult[7] = fn4;
+    tmp18 = fn4;
     tmp17 = items3;
   } else {
     tmp17 = cResult[6];
     tmp18 = cResult[7];
   }
-  const tmpResult6 = require("get initialized");
-  const stateFromStores3 = tmpResult6.useStateFromStores(tmp17, tmp18);
+  const tmpResult7 = require("get initialized");
+  const stateFromStores3 = tmpResult7.useStateFromStores(tmp17, tmp18);
   let num9;
   const _Math = Math;
   if (stateFromStores1 != null) {
@@ -156,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   if (num9 == null) {
     num9 = 0;
   }
-  round(num9);
+  const roundResult = round(num9);
   let emojis;
   const tmp24 = cResult[8];
   if (stateFromStores1 != null) {
@@ -164,65 +170,247 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   }
   if (tmp24 === emojis) {
     if (cResult[9] === stateFromStores2) {
-      let tmp35;
-      class F {
-        constructor() {
-          const obj = closure_0(first[13]);
-          return obj.hasCheckpointEmojis(CheckpointStore.stats);
-        }
+      let arr5;
+      let stringResult;
+      let EmojiSlightlySmilingFaceIcon;
+      let tmp34;
+      if (cResult[10] === (!stateFromStores3 && null != stateFromStores2)) {
+        arr5 = cResult[11];
       }
-      emoji = tmp29[0];
-      let closure_3 = tmp29[1];
+      const tmp28 = _slicedToArray(react.useState(!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2) ? closure_11 : arr5[0]), 2);
+      emoji = tmp28[0];
+      _slicedToArray = tmp30;
       const tmp32 = stateFromStores(tmp2[14]);
-      let closure_4 = tmp32(stateFromStores(tmp2[15]));
-      tmp32(stateFromStores(tmp2[15]));
+      const tmp32Result = tmp32(stateFromStores(tmp2[15]));
+      react = tmp32Result;
       let intl = tmp(tmp2[16]).intl;
       const string = intl.string;
       if (!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2)) {
-        string(stateFromStores(tmp2[17]).vnG9Sx);
+        stringResult = string(tmp31(tmp2[17]).vnG9Sx);
       } else {
-        string(stateFromStores(tmp2[18]).ZTDCIv);
+        stringResult = string(tmp31(tmp2[18]).ZTDCIv);
       }
       if (!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2)) {
-        let EmojiSlightlySmilingFaceIcon = tmp(tmp2[19]).EmojiFrowningFaceIcon;
+        EmojiSlightlySmilingFaceIcon = tmp(tmp2[19]).EmojiFrowningFaceIcon;
       } else {
         EmojiSlightlySmilingFaceIcon = tmp(tmp2[20]).EmojiSlightlySmilingFaceIcon;
       }
       if (cResult[12] !== emoji) {
         let obj2 = { emoji };
-        class F {
-          constructor() {
-            const obj = closure_0(first[13]);
-            return obj.hasCheckpointEmojis(CheckpointStore.stats);
-          }
-        }
+        const tmp36 = closure_9(stateFromStores(tmp2[21]), obj2);
         cResult[12] = emoji;
-        cResult[13] = tmp37;
-        tmp35 = tmp37;
+        cResult[13] = tmp36;
+        tmp34 = tmp36;
       } else {
-        tmp35 = cResult[13];
+        tmp34 = cResult[13];
       }
       if (cResult[14] === tmp4.emojiCubeContainer) {
+        let tmp37;
+        if (cResult[15] === tmp34) {
+          tmp37 = cResult[16];
+        }
         let titleSpacing;
         if (!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2)) {
           titleSpacing = tmp4.titleSpacing;
         }
-        class F {
-          constructor() {
-            const obj = closure_0(first[13]);
-            return obj.hasCheckpointEmojis(CheckpointStore.stats);
+        if (cResult[17] === tmp4.title) {
+          let tmp42;
+          let tmp43;
+          if (cResult[18] === titleSpacing) {
+            tmp42 = cResult[19];
           }
+          if (cResult[20] !== EmojiSlightlySmilingFaceIcon) {
+            let obj3 = { size: "xs", color };
+            const tmp46 = closure_9(EmojiSlightlySmilingFaceIcon, obj3);
+            cResult[20] = EmojiSlightlySmilingFaceIcon;
+            cResult[21] = tmp46;
+            tmp43 = tmp46;
+          } else {
+            tmp43 = cResult[21];
+          }
+          if (cResult[22] === stateFromStores2) {
+            let tmp47;
+            let formatToPlainStringResult;
+            if (cResult[23] === (!stateFromStores3 && null != stateFromStores2)) {
+              tmp47 = cResult[24];
+            }
+            const tmp31Result = stateFromStores(tmp2[23]);
+            const intl2 = tmp(tmp2[16]).intl;
+            if (!stateFromStores3 && null != stateFromStores2) {
+              const formatToPlainString = intl2.formatToPlainString;
+              let obj4 = { numEmojis: tmpResult8.formatCheckpointCompactNumber(stateFromStores2.numEmojisSent) };
+              const prop = tmp31(tmp2[18])["660/Rr"];
+              tmpResult8 = require("CheckpointStatsUtils");
+              formatToPlainStringResult = formatToPlainString(prop, obj4);
+            } else if (!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2)) {
+              formatToPlainStringResult = intl2.string(tmp31(tmp2[17]).BHbwK1);
+            } else {
+              let obj5 = { numEmojis: roundResult };
+              formatToPlainStringResult = intl2.format(tmp31(tmp2[18]).NFptic, obj5);
+            }
+            if (cResult[25] === tmp31Result) {
+              let tmp53;
+              if (cResult[26] === formatToPlainStringResult) {
+                tmp53 = cResult[27];
+              }
+              if (cResult[28] === emoji) {
+                if (cResult[29] === arr5) {
+                  if (cResult[30] === tmp32Result) {
+                    if (cResult[31] === stateFromStores) {
+                      if (cResult[32] === tmp28[1]) {
+                        if (cResult[33] === (!stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2))) {
+                          if (cResult[34] === tmp4.customEmoji) {
+                            if (cResult[35] === tmp4.emoji) {
+                              if (cResult[36] === tmp4.emojiChip) {
+                                if (cResult[37] === tmp4.emojis) {
+                                  if (cResult[38] === tmp4.rankText) {
+                                    let tmp56;
+                                    if (cResult[39] === tmp4.textEmoji) {
+                                      tmp56 = cResult[40];
+                                    }
+                                    const obj6 = { style: tmp4.container, children: items4 };
+                                    items4 = [tmp37, ];
+                                    const obj8 = { style: tmp42, children: items5 };
+                                    items5 = [tmp43, ];
+                                    const obj7 = { style: tmp4.copy, children: items6 };
+                                    const obj9 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
+                                    const tmp31Result3 = stateFromStores(tmp2[28]);
+                                    const tmp31Result4 = stateFromStores(tmp2[23]);
+                                    items5[1] = closure_9(tmp31Result4, obj9);
+                                    items6 = [closure_10(View, obj8), tmp47, , , ];
+                                    let tmp60Result = stateFromStores3;
+                                    if (tmp60Result) {
+                                      const _HermesInternal = HermesInternal;
+                                      let str = " ";
+                                      let str2 = "";
+                                      const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp4.number, children: closure_9(stateFromStores(tmp2[29]), obj11) };
+                                      obj11 = { end: roundResult };
+                                      tmp60Result = tmp60(tmp63, obj10);
+                                    }
+                                    items6[2] = tmp60Result;
+                                    items6[3] = tmp53;
+                                    items6[4] = tmp56;
+                                    const obj12 = { children: closure_10(View, obj6) };
+                                    items4[1] = closure_10(View, obj7);
+                                    return closure_9(tmp31Result3, obj12);
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              let tmp57 = !tmp23;
+              if (tmp57) {
+                const obj13 = {
+                  style: tmp4.emojis,
+                  children: arr5.map((emojiName, index) => {
+                                  let intl;
+                                  let items;
+                                  let obj3;
+                                  let str;
+                                  let str2;
+                                  let tmp6;
+                                  closure_0 = emojiName;
+                                  let emojiURL;
+                                  if (null != emojiName.id) {
+                                    const obj = { id: emojiName.id, animated: tmp6, size: 48 };
+                                    tmp6 = !stateFromStores;
+                                    const getEmojiURL = stateFromStores(first[24]).getEmojiURL;
+                                    stateFromStores(first[24]);
+                                    if (!stateFromStores) {
+                                      tmp6 = true === emojiName.animated;
+                                    }
+                                    emojiURL = getEmojiURL(obj);
+                                  }
+                                  const tmp7 = stateFromStores(first[25])(first, emojiName);
+                                  const obj2 = {
+                                    size: "sm",
+                                    style: closure_0.emojiChip,
+                                    shadowColor: str,
+                                    accessibilityRole: "button",
+                                    accessibilityLabel: intl.formatToPlainString(stateFromStores(first[18])["S5+pRg"], obj3),
+                                    accessibilityState: { selected: tmp7 },
+                                    onPress() {
+                                      closure_4();
+                                      closure_3(emojiName);
+                                    },
+                                    children: items
+                                  };
+                                  str = "transparent";
+                                  const tmp8 = closure_1_10;
+                                  const tmp9 = stateFromStores(first[26]);
+                                  if (!tmp7) {
+                                    str = color;
+                                  }
+                                  intl = closure_0(first[16]).intl;
+                                  const obj4 = { style: closure_0.emoji, fastImageStyle: closure_0.customEmoji, textEmojiStyle: closure_0.textEmoji, name: str2, src: emojiURL };
+                                  str2 = "";
+                                  obj3 = { emojiName: emojiName.name, rank: index + 1 };
+                                  const tmp12 = stateFromStores(first[27]);
+                                  if (null == emojiName.id) {
+                                    str2 = emojiName.name;
+                                  }
+                                  items = [closure_1_9(tmp12, obj4), ];
+                                  const obj5 = { variant: "experimental/mono-md/bold", style: closure_0.rankText, children: index + 1 };
+                                  items[1] = closure_1_9(stateFromStores(first[23]), obj5);
+                                  let name = emojiName.id;
+                                  if (name == null) {
+                                    name = emojiName.name;
+                                  }
+                                  return tmp8(tmp9, obj2, name);
+                                })
+                };
+                tmp57 = closure_9(View, obj13);
+              }
+              cResult[28] = emoji;
+              cResult[29] = arr5;
+              cResult[30] = tmp32Result;
+              cResult[31] = stateFromStores;
+              cResult[32] = tmp28[1];
+              cResult[33] = !stateFromStores3 && !(!stateFromStores3 && null != stateFromStores2);
+              cResult[34] = tmp4.customEmoji;
+              cResult[35] = tmp4.emoji;
+              cResult[36] = tmp4.emojiChip;
+              cResult[37] = tmp4.emojis;
+              cResult[38] = tmp4.rankText;
+              cResult[39] = tmp4.textEmoji;
+              cResult[40] = tmp57;
+              tmp56 = tmp57;
+            }
+            const obj14 = { variant: "heading-lg/medium", children: formatToPlainStringResult };
+            const tmp55 = closure_9(tmp31Result, obj14);
+            cResult[25] = tmp31Result;
+            cResult[26] = formatToPlainStringResult;
+            cResult[27] = tmp55;
+            tmp53 = tmp55;
+          }
+          let tmp48 = tmp22;
+          if (tmp48) {
+            const obj15 = { value: stateFromStores2.numEmojisSent };
+            tmp48 = closure_9(tmp31(tmp2[22]), obj15);
+          }
+          cResult[22] = stateFromStores2;
+          cResult[23] = !stateFromStores3 && null != stateFromStores2;
+          cResult[24] = tmp48;
+          tmp47 = tmp48;
         }
-        const items4 = [tmp4.title, titleSpacing];
+        const items7 = [tmp4.title, titleSpacing];
         cResult[17] = tmp4.title;
         cResult[18] = titleSpacing;
-        cResult[19] = items4;
+        cResult[19] = items7;
+        tmp42 = items7;
       }
-      let obj3 = { style: tmp4.emojiCubeContainer, children: tmp35 };
+      const obj16 = { style: tmp4.emojiCubeContainer, children: tmp34 };
+      const tmp40 = closure_9(View, obj16);
       cResult[14] = tmp4.emojiCubeContainer;
-      cResult[15] = tmp35;
-      cResult[16] = closure_9(View, obj3);
-      const tmp41 = closure_9(View, obj3);
+      cResult[15] = tmp34;
+      cResult[16] = tmp40;
+      tmp37 = tmp40;
     }
   }
   if (!stateFromStores3 && null != stateFromStores2) {
@@ -241,6 +429,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   cResult[9] = stateFromStores2;
   cResult[10] = !stateFromStores3 && null != stateFromStores2;
   cResult[11] = emojis1;
+  arr5 = emojis1;
 }) : (function CheckpointEmojiStatsScreen() {
   let EmojiSlightlySmilingFaceIcon;
   let closure_1;
@@ -252,9 +441,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   let items4;
   let items6;
   let items7;
-  let numberFormat;
   let obj13;
   let stringResult;
+  let tmp2Result;
   let useReducedMotion;
   const tmp = closure_12();
   _require = tmp;
@@ -310,7 +499,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   [emoji, _slicedToArray] = react.useState(tmp9 ? closure_11 : emojis[0]);
   let tmp12 = importDefault;
   const tmp13 = require("useCheckpointSound");
-  react = tmp13(require("module_12964"));
+  react = tmp13(require("module_12976"));
   let intl = tmp2(tmp3[16]).intl;
   const string = intl.string;
   if (tmp9) {
@@ -361,12 +550,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   const intl2 = tmp2(tmp3[16]).intl;
   if (tmp8) {
     const formatToPlainString = intl2.formatToPlainString;
-    const _Intl = Intl;
-    const obj14 = { numEmojis: numberFormat.format(stateFromStores1.numEmojisSent) };
+    const obj14 = { numEmojis: tmp2Result.formatCheckpointCompactNumber(stateFromStores1.numEmojisSent) };
     const prop = tmp12(tmp3[18])["660/Rr"];
-    const self = this;
-    const self2 = this;
-    numberFormat = new Intl.NumberFormat(tmp2(tmp3[16]).intl.currentLocale, { notation: "compact", compactDisplay: "long" });
+    tmp2Result = tmp2(emoji[13]);
     formatToPlainStringResult = formatToPlainString(prop, obj14);
   } else if (tmp9) {
     formatToPlainStringResult = intl2.string(tmp12(tmp3[17]).BHbwK1);

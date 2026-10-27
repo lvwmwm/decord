@@ -1,12 +1,12 @@
-// Module ID: 19265
-// Function ID: 19266
+// Module ID: 19303
+// Function ID: 19304
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 1087, 558, 576, 19266, 1417, 2]
+// Dependencies: [19, 1084, 558, 576, 19304, 1414, 2]
 
-// Module 19265 (useHighlightedCreatorGuildDetails)
+// Module 19303 (useHighlightedCreatorGuildDetails)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19266 */;
+import Constants from "Constants" /* 1084 */;
+import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19304 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let roles, set;
 
 let tmp3;
-const AvatarUtilsDefault = tmp3(1417);
+const AvatarUtilsDefault = tmp3(1414);
 const MarketingURLs = Constants.MarketingURLs;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHighlightedCreatorGuildDetails(id, arg1, size) {
   let error;

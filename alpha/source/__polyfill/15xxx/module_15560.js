@@ -1,21 +1,10 @@
 // Module ID: 15560
 // Function ID: 15561
-// Dependencies: [15561]
+// Dependencies: [15561, 15562]
 
 // Module 15560
-import _mod15561 from "module_15561" /* 15561 */;
+const require = globalThis.__r;
 
 
-export default (arg0, arg1) => {
-  let tmp3 = _mod15561[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    const tmpResult = _mod15561;
-    if (!arg1) {
-      obj = {};
-    }
-    tmpResult[arg0] = obj;
-    tmp3 = obj;
-  }
-  return tmp3;
-};
+export const shouldPolyfill = require("module_15561").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

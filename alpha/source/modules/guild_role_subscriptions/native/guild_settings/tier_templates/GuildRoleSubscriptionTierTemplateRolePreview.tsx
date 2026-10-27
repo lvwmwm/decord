@@ -1,24 +1,24 @@
-// Module ID: 19339
-// Function ID: 19340
+// Module ID: 19377
+// Function ID: 19378
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 1128, 573, 5989, 5669, 1105, 5234, 1202, 7301, 2]
+// Dependencies: [19, 17, 1389, 21, 4972, 587, 558, 576, 1125, 573, 5990, 5670, 1102, 5235, 1199, 7303, 2]
 
-// Module 19339 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 19377 (GuildRoleSubscriptionTierTemplateRolePreview)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1105 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
-import RoleIconDefault from "RoleIcon" /* 7301 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1102 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
+import RoleIconDefault from "RoleIcon" /* 7303 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,8 +53,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   if (cResult[0] !== content) {
     let stringResult = content;
     if (undefined === content) {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t["6OSasb"]);
+      const intl = tmp(1125).intl;
+      stringResult = intl.string(tmp(1125).t["6OSasb"]);
     }
     cResult[0] = content;
     cResult[1] = stringResult;

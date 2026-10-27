@@ -1,11 +1,11 @@
-// Module ID: 11420
-// Function ID: 11421
+// Module ID: 11423
+// Function ID: 11424
 // Name: isWatchTogetherApplication
-// Dependencies: [2026, 2]
+// Dependencies: [2023, 2]
 // Exports: default
 
-// Module 11420 (isWatchTogetherApplication)
-import Constants from "Constants" /* 2026 */;
+// Module 11423 (isWatchTogetherApplication)
+import Constants from "Constants" /* 2023 */;
 import size from "module_2" /* 2 */;
 
 let _window;

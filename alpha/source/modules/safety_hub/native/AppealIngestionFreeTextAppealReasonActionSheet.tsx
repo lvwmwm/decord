@@ -1,16 +1,16 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12873
+// Function ID: 12874
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 7922, 21, 4971, 587, 558, 576, 504, 1128, 6931, 6908, 12842, 7180, 5234, 5244, 5265, 5977, 2]
+// Dependencies: [32, 19, 17, 7923, 21, 4972, 587, 558, 576, 504, 1125, 6933, 6910, 12851, 7182, 5235, 5245, 5266, 5978, 2]
 
-// Module 12864 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 12873 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7922 */;
+import SafetyHubStore from "SafetyHubStore" /* 7923 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

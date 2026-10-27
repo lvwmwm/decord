@@ -1,26 +1,26 @@
-// Module ID: 13030
-// Function ID: 13031
+// Module ID: 13044
+// Function ID: 13045
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4972, 6015, 21, 587, 6362, 4971, 13031, 558, 576, 1128, 3088, 12974, 5234, 504, 5267, 13033, 5599, 5052, 5206, 13034, 13035, 2]
+// Dependencies: [32, 19, 17, 4973, 6016, 21, 587, 6364, 4972, 13045, 558, 576, 1125, 3089, 12986, 5235, 504, 5268, 13047, 5600, 5053, 5207, 13048, 13049, 2]
 
-// Module 13030 (TraitPicker)
+// Module 13044 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import _modDef3088 from "module_3088" /* 3088 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
-import CheckpointTextDefault from "CheckpointText" /* 12974 */;
-import TraitOptionList from "TraitOptionList" /* 13031 */;
+import intl3 from "intl" /* 1125 */;
+import _modDef3089 from "module_3089" /* 3089 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
+import CheckpointTextDefault from "CheckpointText" /* 12986 */;
+import TraitOptionList from "TraitOptionList" /* 13045 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,9 +112,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
         }
       }
     }
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj3 = { earnedCount, totalCount, countHook: tmp15 };
-    const formatResult = intl2.format(_modDef3088.Vfq58K, obj3);
+    const formatResult = intl2.format(_modDef3089.Vfq58K, obj3);
     cResult[6] = earnedCount;
     cResult[7] = totalCount;
     cResult[8] = formatResult;
@@ -137,8 +137,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       }
     }
   }
-  const intl = tmp(1128).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3088.Vfq58K, { earnedCount, totalCount, countHook: tmp8 });
+  const intl = tmp(1125).intl;
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3089.Vfq58K, { earnedCount, totalCount, countHook: tmp8 });
   cResult[2] = earnedCount;
   cResult[3] = totalCount;
   cResult[4] = formatToPlainStringResult;
@@ -161,8 +161,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earned
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3088.Vfq58K, obj2);
-  const obj3 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3088.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3089.Vfq58K, obj2);
+  const obj3 = { variant: "experimental/body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3089.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
@@ -269,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                 }
                 let num2 = 0;
                 const obj2 = { opacity: withTiming(num, obj), transform: items };
-                const withTiming2 = tmp(5206).withTiming;
+                const withTiming2 = tmp(5207).withTiming;
                 timing;
                 if (!useReducedMotion) {
                   num2 = PX_12;
@@ -652,20 +652,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
   let useReducedMotion;
   let tmp = closure_12();
   const tmp2 = customizationOption;
-  let obj = customizationOption(6362);
+  let obj = customizationOption(6364);
   const tmp4 = !obj.getIsTraitRarityVisible(customizationOption);
   let obj2 = customizationOption(504);
   let items = [useReducedMotion];
   dependencyMap = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj3 = customizationOption(5267);
+  const obj3 = customizationOption(5268);
   _slicedToArray = obj3.useIsScreenReaderEnabled();
-  const obj4 = customizationOption(13033);
+  const obj4 = customizationOption(13047);
   const obj5 = { customizationOption, optionIds, savedOptionId, rarityOrder };
   const traitPickerOptions = obj4.useTraitPickerOptions(obj5);
   ({ availableTraitOptions, earnedCount } = traitPickerOptions);
   let closure_5 = tmp6;
   const totalCount = traitPickerOptions.totalCount;
-  const tmp8 = selectedOptionId(5599)(() => {
+  const tmp8 = selectedOptionId(5600)(() => {
     let num = 0;
     const tmp = customizationOption;
     if (!closure_5) {
@@ -702,7 +702,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     }
     let num2 = 0;
     const obj2 = { opacity: withTiming(num, obj), transform: items };
-    const withTiming2 = tmp(5206).withTiming;
+    const withTiming2 = tmp(5207).withTiming;
     timing;
     if (!useReducedMotion) {
       num2 = PX_12;
@@ -711,18 +711,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     ({ translateY: withTiming2(num2, obj) });
     return obj2;
   };
-  const tmp2Result = tmp2(5052);
-  fn.__closure = { INTRO_DETAILS_DURATION_MS, Easing: tmp2(5052).Easing, withTiming: tmp2(5206).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 };
+  const tmp2Result = tmp2(5053);
+  fn.__closure = { INTRO_DETAILS_DURATION_MS, Easing: tmp2(5053).Easing, withTiming: tmp2(5207).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 };
   fn.__workletHash = 13382203050567;
   fn.__initData = __initData2;
-  ({ INTRO_DETAILS_DURATION_MS, Easing: tmp2(5052).Easing, withTiming: tmp2(5206).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 });
+  ({ INTRO_DETAILS_DURATION_MS, Easing: tmp2(5053).Easing, withTiming: tmp2(5207).withTiming, isDetailsVisible: tmp9, INTRO_DETAILS_OFFSET_Y: PX_12 });
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   [tmp12, tmp13] = earnedCount.useState(tmp8);
   _slicedToArray(earnedCount.useState(tmp8), 2);
   const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp15 };
   tmp15 = flag;
-  const useAutoSelectTraitOption = tmp2(13034).useAutoSelectTraitOption;
-  tmp2(13034);
+  const useAutoSelectTraitOption = tmp2(13048).useAutoSelectTraitOption;
+  tmp2(13048);
   if (!flag) {
     let tmp16 = !tmp6;
     if (tmp16) {
@@ -748,12 +748,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
     const obj9 = { customizationOption, earnedCount: diff, totalCount };
     showEarnedCount = closure_8(closure_13, obj9);
   }
-  items2 = [showEarnedCount, closure_8(selectedOptionId(13031), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
+  items2 = [showEarnedCount, closure_8(selectedOptionId(13045), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
   let tmp24Result = null != found;
   if (tmp24Result) {
-    const obj10 = { style: items3, children: closure_8(selectedOptionId(13035), obj11) };
+    const obj10 = { style: items3, children: closure_8(selectedOptionId(13049), obj11) };
     items3 = [tmp.details, animatedStyle];
-    View = tmp7(5052).View;
+    View = tmp7(5053).View;
     obj11 = { asset: found, hideDescriptionAndRarity: tmp4 };
     tmp24Result = tmp24(View, obj10);
   }

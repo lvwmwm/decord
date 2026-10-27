@@ -1,12 +1,12 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18375
+// Function ID: 18376
 // Name: useMessageRequestTimestampText
-// Dependencies: [6771, 11, 558, 576, 13522, 504, 2049, 8308, 2]
+// Dependencies: [6772, 11, 558, 576, 13536, 504, 2046, 8306, 2]
 
-// Module 18341 (useMessageRequestTimestampText)
+// Module 18375 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
+import _modDef2046 from "module_2046" /* 2046 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     let str = "";
     let calendarResult;
     if (null != extractTimestampResult) {
-      const obj7 = _modDef2049(extractTimestampResult);
+      const obj7 = _modDef2046(extractTimestampResult);
       calendarResult = obj7.calendar();
       str = forResult;
     }
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     }
     let str = "";
     if (null != extractTimestampResult) {
-      const obj6 = _modDef2049(extractTimestampResult);
+      const obj6 = _modDef2046(extractTimestampResult);
       str = obj6.calendar();
     }
     return str;
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     }
     let str = "";
     if (null != extractTimestampResult) {
-      const tmpResult = tmp(8308);
+      const tmpResult = tmp(8306);
       str = tmpResult.getTimestampString(extractTimestampResult);
     }
     return str;

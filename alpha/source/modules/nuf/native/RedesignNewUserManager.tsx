@@ -1,50 +1,65 @@
-// Module ID: 18905
-// Function ID: 18906
+// Module ID: 18943
+// Function ID: 18944
 // Name: RedesignNewUserManager
-// Dependencies: [13582, 502, 4817, 6860, 18906, 5151, 5150, 18909, 7214, 9050, 18910, 6672, 18911, 2002, 1384, 2]
+// Dependencies: [5, 13596, 502, 4818, 6862, 18944, 5152, 5151, 18947, 7216, 9050, 18948, 6673, 18949, 1999, 1381, 2]
 
-// Module 18905 (RedesignNewUserManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 18906 */;
-import NewUserUtils from "NewUserUtils" /* 18910 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13582 */;
+// Module 18943 (RedesignNewUserManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 18944 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13596 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4817 */;
-import NewUserStore from "NewUserStore" /* 6860 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4818 */;
+import NewUserStore from "NewUserStore" /* 6862 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
-let c3;
+let c4, c5;
+
 let closure_4;
-({ initialize: c3, ContactSyncModes: closure_4 } = ContactSyncModalStore);
+let hasOwnProperty;
+const f138615 = (item) => {
+  const obj = closure_1_0(closure_1_2[7]);
+  const coerceModalRouteResult = obj.coerceModalRoute(item);
+  let key;
+  const tmp = closure_1_0;
+  const tmp2 = closure_1_2;
+  if (coerceModalRouteResult != null) {
+    const params = coerceModalRouteResult.params;
+    if (params != null) {
+      const modal = params.modal;
+      if (modal != null) {
+        key = modal.key;
+      }
+    }
+  }
+  return key === tmp(tmp2[8]).NEW_USER_MODAL_KEY;
+};
+function isBlockedByVerification() {
+  const tmp = isFullScreenVerificationModalRequiredDefault;
+  return tmp(UserRequiredActionStore.getAction(), "nuf-verification-gate");
+}
+function isNewUserModalInStack() {
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
+  let someResult = !(null == rootNavigationRef || !rootNavigationRef.isReady());
+  null == rootNavigationRef || !rootNavigationRef.isReady();
+  if (someResult) {
+    const routes = rootNavigationRef.getRootState().routes;
+    someResult = routes.some(f138615);
+  }
+  return someResult;
+}
+({ initialize: closure_4, ContactSyncModes: hasOwnProperty } = ContactSyncModalStore);
 class RedesignNewUserManager extends AutomaticLifecycleManager {
   constructor() {
-    let action;
-    let id;
-    const f138279 = (item) => {
-      const obj = closure_1_0(closure_1_2[6]);
-      const coerceModalRouteResult = obj.coerceModalRoute(item);
-      let key;
-      const tmp = closure_1_0;
-      const tmp2 = closure_1_2;
-      if (coerceModalRouteResult != null) {
-        const params = coerceModalRouteResult.params;
-        if (params != null) {
-          const modal = params.modal;
-          if (modal != null) {
-            key = modal.key;
-          }
-        }
-      }
-      return key === tmp(tmp2[7]).NEW_USER_MODAL_KEY;
-    };
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     require = applyArgumentsResult;
     applyArgumentsResult._onboardingStepIndex = -1;
     applyArgumentsResult._lastShownStepIndex = -1;
     applyArgumentsResult._resumeAfterVerificationUserId = null;
+    applyArgumentsResult._isStartingOnboarding = false;
     applyArgumentsResult.actions = {
       POST_CONNECTION_OPEN() {
         return require.handleConnectionOpen();
@@ -57,57 +72,167 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
       }
     };
     applyArgumentsResult.startOnboarding = function startOnboarding() {
-      let tmp = dependencyMap;
-      let tmp2 = isFullScreenVerificationModalRequiredDefault;
-      let tmp3 = require;
-      if (tmp2(UserRequiredActionStore.getAction(), "nuf-verification-gate")) {
-        tmp3._resumeAfterVerificationUserId = AuthenticationStore.getId();
-      } else {
+      function finishStartingOnboarding() {
+        return closure_0(...arguments);
+      }
+      const tmp = require;
+      let closure_0 = require;
+      if (!require._isStartingOnboarding) {
+        const tmp3 = dependencyMap;
+        let obj = RootNavigationRef;
+        const rootNavigationRef = obj.getRootNavigationRef();
         const tmp4 = null;
-        tmp3._resumeAfterVerificationUserId = null;
-        let obj = instant_invite_InstantInviteUtils;
-        const tmp6 = React3;
-        _false(obj.hasDeferredInvite() ? tmp6.ONBOARDING_INVITE : tmp6.ONBOARDING);
-        const tmp5Result = NewUserUtils;
-        const nextOnboardingStep = tmp5Result.getNextOnboardingStep(false, -1, -1);
-        nextOnboardingStep.then((result) => {
-          let lastShownStepIndex;
-          let onboardingStepIndex;
-          ({ lastShownStepIndex, onboardingStepIndex } = result);
-          let tmp2 = dependencyMap;
-          let tmp = importDefault;
-          const tmp3 = isFullScreenVerificationModalRequiredDefault;
-          if (tmp3(action.getAction(), "nuf-verification-gate")) {
-            closure_1_0._resumeAfterVerificationUserId = id.getId();
+        let someResult = !(null == rootNavigationRef || !rootNavigationRef.isReady());
+        const tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
+        if (someResult) {
+          const routes = rootNavigationRef.getRootState().routes;
+          someResult = routes.some(f138615);
+        }
+        if (!someResult) {
+          let str = "nuf-verification-gate";
+          const tmp8 = isFullScreenVerificationModalRequiredDefault;
+          if (tmp8(UserRequiredActionStore.getAction(), "nuf-verification-gate")) {
+            tmp._resumeAfterVerificationUserId = AuthenticationStore.getId();
           } else {
-            let obj = require("RootNavigationRef");
-            const rootNavigationRef = obj.getRootNavigationRef();
-            let someResult = !(null == rootNavigationRef || !rootNavigationRef.isReady());
-            null == rootNavigationRef || !rootNavigationRef.isReady();
-            if (someResult) {
-              const routes = rootNavigationRef.getRootState().routes;
-              someResult = routes.some(f138279);
-            }
-            if (!someResult) {
-              const tmp4Result = require("NewUserUtils");
-              const keyForOnboardingStep = tmp4Result.getKeyForOnboardingStep(onboardingStepIndex);
-              if (null != keyForOnboardingStep) {
-                const pushLazy = tmp(tmp2[11]).pushLazy;
-                const tmpResult = tmp(tmp2[11]);
-                const obj2 = { initialRouteName: keyForOnboardingStep, initialOnboardingStepIndex: onboardingStepIndex };
-                const tmp18 = require("asyncRequire")(tmp2[12], tmp2.paths);
-                const NEW_USER_MODAL_KEY = tmp4(tmp2[7]).NEW_USER_MODAL_KEY;
-                let str = "card";
-                const tmp4Result2 = require("PlatformUtils");
-                if (tmp4Result2.isAndroid()) {
-                  str = "transparentModal";
+            tmp._resumeAfterVerificationUserId = null;
+            tmp._isStartingOnboarding = true;
+            closure_0 = _asyncToGenerator(async (arg0, value) => {
+              let obj9;
+              if (c5 === 2) {
+                c5 = 3;
+                throw new TypeError("Generator functions may not be called on executing generators");
+              } else if (tmp3 === 3) {
+                if (arg0 === 1) {
+                  throw value;
+                } else if (arg0 === 2) {
+                  const obj3 = { value, done: true };
+                  return obj3;
+                } else {
+                  return { value: "IconComponent", done: null };
                 }
-                const obj3 = { fullScreenGestureEnabled: false, presentation: str, animation: "slide_from_bottom" };
-                pushLazy(tmp18, obj2, NEW_USER_MODAL_KEY, obj3);
+              } else {
+                let c3;
+                let initialRouteName;
+                try {
+                  let onboardingStepIndex;
+                  c5 = 2;
+                  if (0 === c4) {
+                    if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c5 = 3;
+                      const obj5 = { value, done: true };
+                      return obj5;
+                    } else {
+                      let ONBOARDING;
+                      let closure_1 = tmp;
+                      closure_0 = undefined;
+                      onboardingStepIndex = undefined;
+                      initialRouteName = undefined;
+                      c3 = 1;
+                      const obj13 = closure_0(paths[10]);
+                      const tmp69 = closure_2_4;
+                      if (obj13.hasDeferredInvite()) {
+                        ONBOARDING = tmp70.ONBOARDING_INVITE;
+                      } else {
+                        ONBOARDING = tmp70.ONBOARDING;
+                      }
+                      tmp69(ONBOARDING);
+                      c4 = 2;
+                      c5 = 1;
+                      const obj6 = { value: obj9.getNextOnboardingStep(false, -1, -1), done: false };
+                      obj9 = closure_0(paths[11]);
+                      return obj6;
+                    }
+                  } else if (1 === c4) {
+                    c3 = 0;
+                    closure_0._isStartingOnboarding = false;
+                    throw initialRouteName;
+                  } else {
+                    if (2 === c4) {
+                      if (arg0 === 1) {
+                        c5 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c3 = 0;
+                        closure_0._isStartingOnboarding = false;
+                        c5 = 3;
+                        const obj7 = { value, done: true };
+                        return obj7;
+                      } else {
+                        closure_0 = value;
+                        onboardingStepIndex = closure_0.onboardingStepIndex;
+                        if (closure_0.continueNavigation) {
+                          if (closure_2_9()) {
+                            closure_0._resumeAfterVerificationUserId = id.getId();
+                            c3 = 0;
+                            closure_0._isStartingOnboarding = false;
+                            c5 = 3;
+                            const obj8 = { value: undefined, done: true };
+                            return obj8;
+                          } else if (closure_2_10()) {
+                            c3 = 0;
+                            closure_0._isStartingOnboarding = false;
+                            c5 = 3;
+                            return { value: "IconComponent", done: null };
+                          } else {
+                            const obj2 = closure_0(paths[11]);
+                            initialRouteName = obj2.getKeyForOnboardingStep(onboardingStepIndex);
+                            if (null != initialRouteName) {
+                              const tmp23 = closure_2_1(paths[12]);
+                              const pushLazy = tmp23.pushLazy;
+                              const tmp28 = closure_0(paths[14])(paths[13], paths.paths);
+                              const obj10 = { initialRouteName, initialOnboardingStepIndex: onboardingStepIndex };
+                              const NEW_USER_MODAL_KEY = closure_0(paths[8]).NEW_USER_MODAL_KEY;
+                              let str = "card";
+                              const obj4 = closure_0(paths[15]);
+                              if (obj4.isAndroid()) {
+                                str = "transparentModal";
+                              }
+                              const obj11 = { fullScreenGestureEnabled: false, presentation: str, animation: "slide_from_bottom" };
+                              c4 = 3;
+                              c5 = 1;
+                              const obj12 = { value: pushLazy(tmp28, obj10, NEW_USER_MODAL_KEY, obj11), done: false };
+                              return obj12;
+                            }
+                          }
+                        } else {
+                          c3 = 0;
+                          closure_0._isStartingOnboarding = false;
+                          c5 = 3;
+                          return { value: "IconComponent", done: null };
+                        }
+                      }
+                    } else if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c3 = 0;
+                      closure_0._isStartingOnboarding = false;
+                      c5 = 3;
+                      const obj = { value, done: true };
+                      return obj;
+                    }
+                    c3 = 0;
+                    closure_0._isStartingOnboarding = false;
+                    c5 = 3;
+                    return { value: "IconComponent", done: null };
+                  }
+                } catch (tmp55) {
+                  initialRouteName = tmp55;
+                  if (0 === c3) {
+                    c5 = 3;
+                    throw tmp55;
+                  } else {
+                    c4 = 1;
+                  }
+                }
               }
-            }
+            });
+            finishStartingOnboarding();
           }
-        });
+        }
       }
     };
     applyArgumentsResult.handleOnboardingStart = function handleOnboardingStart() {
@@ -123,15 +248,22 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
     };
     applyArgumentsResult.handleRequiredActionUpdate = function handleRequiredActionUpdate(requiredAction) {
       if (null == requiredAction.requiredAction) {
-        const tmp2 = null != require._resumeAfterVerificationUserId && obj3._resumeAfterVerificationUserId === AuthenticationStore.getId() || null != NewUserStore.getType();
+        let tmp2 = null != require._resumeAfterVerificationUserId;
         if (tmp2) {
-          const obj = RootNavigationRef;
+          let tmp = AuthenticationStore;
+          tmp2 = obj3._resumeAfterVerificationUserId === AuthenticationStore.getId();
+        }
+        if (!tmp2) {
+          tmp2 = null != NewUserStore.getType();
+        }
+        if (tmp2) {
+          let obj = RootNavigationRef;
           const rootNavigationRef = obj.getRootNavigationRef();
           let someResult = !(null == rootNavigationRef || !rootNavigationRef.isReady());
           null == rootNavigationRef || !rootNavigationRef.isReady();
           if (someResult) {
             const routes = rootNavigationRef.getRootState().routes;
-            someResult = routes.some(f138279);
+            someResult = routes.some(f138615);
           }
           if (!someResult) {
             require.startOnboarding();

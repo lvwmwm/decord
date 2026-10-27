@@ -1,29 +1,29 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15772
+// Function ID: 15773
 // Name: links
-// Dependencies: [5, 4822, 2045, 6378, 1087, 2026, 1267, 4892, 1384, 15737, 15710, 15738, 4977, 15739, 5656, 8860, 15740, 9264, 15725, 11479, 11476, 7490, 2031, 15741, 15744, 2]
+// Dependencies: [5, 4823, 2042, 6379, 1084, 2023, 1264, 4893, 1381, 15773, 15746, 15774, 4978, 15775, 5657, 8860, 15776, 9264, 15761, 11482, 11479, 7491, 2028, 15777, 15780, 2]
 
-// Module 15736 (links)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4977 */;
+// Module 15772 (links)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4893 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4978 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11476 */;
-import RPCHelpers from "RPCHelpers" /* 11479 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15710 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15737 */;
-import internalDeepLinks from "internalDeepLinks" /* 15738 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15739 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15741 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 15744 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11479 */;
+import RPCHelpers from "RPCHelpers" /* 11482 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15746 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15773 */;
+import internalDeepLinks from "internalDeepLinks" /* 15774 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15775 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15777 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 15780 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import Constants_mod from "Constants" /* 6378 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import Constants_mod3 from "Constants" /* 2026 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
+import Constants_mod from "Constants" /* 6379 */;
+import Constants_mod2 from "Constants" /* 1084 */;
+import Constants_mod3 from "Constants" /* 2023 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15761 */;
 import size from "module_2" /* 2 */;
 
 let c2, currentEmbeddedActivity, getApplication;
@@ -39,7 +39,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const openUserSettings = tmp(7490);
+const openUserSettings = tmp(7491);
 function trackExternalLink(application, arg1, arg2) {
   const str = new URL(arg1);
   const tmp = "client.vibeyard.tools" === str.hostname && "/link" === str.pathname;
@@ -424,9 +424,9 @@ let obj4 = {
     ({ custom_id: importDefault, message: dependencyMap, link_id: _asyncToGenerator } = socket.args);
     let tmp2 = dependencyMap;
     let tmp = socket;
-    obj = socket(11479);
+    obj = socket(11482);
     let result = obj.validatePostMessageTransport(socket.transport);
-    let obj2 = socket(11479);
+    let obj2 = socket(11482);
     const validateApplicationResult = obj2.validateApplication(socket.application);
     let c4 = validateApplicationResult;
     if (null == validateApplicationResult) {
@@ -436,7 +436,7 @@ let obj4 = {
       const tmp16 = new RPCErrorDefault(obj3, "No application.");
       throw tmp16;
     } else {
-      const tmpResult = tmp(2031);
+      const tmpResult = tmp(2028);
       if (tmpResult.isEmbeddedApplication(socket.application)) {
         const self3 = this;
         const self4 = this;

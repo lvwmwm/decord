@@ -1,24 +1,24 @@
-// Module ID: 10881
-// Function ID: 10882
+// Module ID: 10884
+// Function ID: 10885
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 576, 5146, 10882, 5037, 5604, 5710, 8568, 5176, 10030, 2]
+// Dependencies: [19, 21, 558, 576, 5147, 10885, 5038, 5605, 5711, 8568, 5177, 10032, 2]
 
-// Module 10881 (ChannelVoiceChatModal)
+// Module 10884 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
-import reactDefault from "react" /* 5176 */;
-import useChannelNameDefault from "useChannelName" /* 5604 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5147 */;
+import reactDefault from "react" /* 5177 */;
+import useChannelNameDefault from "useChannelName" /* 5605 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const native = tmp(5037);
-const ModalStackNavigatorDefault = tmp4(10030);
-const ChannelVoiceChatDefault = tmp4(10882);
+const native = tmp(5038);
+const ModalStackNavigatorDefault = tmp4(10032);
+const ChannelVoiceChatDefault = tmp4(10885);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedChannelVoiceChat(channel) {

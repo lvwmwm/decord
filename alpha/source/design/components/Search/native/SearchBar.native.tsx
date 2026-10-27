@@ -1,14 +1,14 @@
-// Module ID: 7145
-// Function ID: 7146
+// Module ID: 7147
+// Function ID: 7148
 // Name: SearchBar
-// Dependencies: [109, 19, 21, 558, 576, 1128, 7015, 7146, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1125, 7017, 7148, 2]
 
-// Module 7145 (SearchBar)
+// Module 7147 (SearchBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import TextField2 from "TextField" /* 7015 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7146 */;
+import intl2 from "intl" /* 1125 */;
+import TextField2 from "TextField" /* 7017 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7148 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBar(
     tmp5 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t["5h0QOP"]);
     cResult[3] = stringResult;
     tmp9 = stringResult;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBar(
     }
     return tmp11;
   }
-  const TextField = tmp(7015).TextField;
+  const TextField = tmp(7017).TextField;
   const merged = Object.assign(tmp4);
   const tmp13 = <TextField placeholder={tmp9} returnKeyType="search" ref={tmp5} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
   cResult[4] = tmp4;

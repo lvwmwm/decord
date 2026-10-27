@@ -1,21 +1,21 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11319
+// Function ID: 11320
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9131, 7809, 21, 4971, 587, 558, 576, 11317, 7265, 5669, 5977, 8560, 5234, 1128, 2406, 9136, 6903, 2]
+// Dependencies: [19, 9131, 7810, 21, 4972, 587, 558, 576, 11320, 7267, 5670, 5978, 8560, 5235, 1125, 2403, 9136, 6905, 2]
 
-// Module 11316 (GameOrganizationInvitePickerRow)
+// Module 11319 (GameOrganizationInvitePickerRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2406 from "module_2406" /* 2406 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7265 */;
-import Constants from "Constants" /* 7809 */;
+import _modDef2403 from "module_2403" /* 2403 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7267 */;
+import Constants from "Constants" /* 7810 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9131 */;
 import InviteButtonDefault from "InviteButton" /* 9136 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11317 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11320 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,12 +23,12 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const intl2 = tmp(1128);
-const Text_Text = tmp(5234);
-const Stack_Stack = tmp(5977);
-const TableRow2 = tmp(6903);
+const intl2 = tmp(1125);
+const Text_Text = tmp(5235);
+const Stack_Stack = tmp(5978);
+const TableRow2 = tmp(6905);
 const GroupIcon2 = tmp(8560);
-const getGameOrganizationInviteSendStateKey = tmp(11317);
+const getGameOrganizationInviteSendStateKey = tmp(11320);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
             const GroupIcon = GroupIcon2.GroupIcon;
             items = [metroRequire(GroupIcon, obj6), ];
-            const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2406.VuENGl, obj8) };
+            const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2403.VuENGl, obj8) };
             const Text = Text_Text.Text;
             intl = intl2.intl;
             obj8 = { count: memberCount, max: maxMembers };
@@ -231,13 +231,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(5977).Stack;
+      const Stack = tmp5(5978).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
       const GroupIcon = tmp5(8560).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
-      const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2406.VuENGl, obj8) };
-      const Text = tmp5(5234).Text;
-      intl = tmp5(1128).intl;
+      const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2403.VuENGl, obj8) };
+      const Text = tmp5(5235).Text;
+      intl = tmp5(1125).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);
       tmp11 = metroImportDefault(Stack, obj5);

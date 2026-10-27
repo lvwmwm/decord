@@ -1,23 +1,23 @@
 // Module ID: 8668
 // Function ID: 8669
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 6859, 4913, 3, 1392, 2002, 8669, 8670, 4799, 8671, 5210, 8690, 2]
+// Dependencies: [5, 6861, 4914, 3, 1389, 1999, 8669, 8670, 4800, 8671, 5211, 8690, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
 // Module 8668 (showUserProfileActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6859 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6861 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let authStore, c4, c5;
 
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
-  let str3;
+  let str4;
   let str = arg1;
   const timestamp = Date.now();
   const IgnoreProfileSpeedbumpDisabled = UserSettings.IgnoreProfileSpeedbumpDisabled;
@@ -28,41 +28,43 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       const tmp8 = asyncRequire(8671, dependencyMap.paths);
       const _HermesInternal = HermesInternal;
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
-      const obj = { speedBumpType: str3, openedAt: timestamp };
+      const combined = "" + UserProfile + "IgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
+      const obj = { speedBumpType: str4, openedAt: timestamp };
       const merged = Object.assign(ignoreBlockedSpeedBump);
-      str3 = "ignore";
+      str4 = "ignore";
       if (isBlockedResult) {
-        str3 = "block";
+        str4 = "block";
       }
-      openLazy(tmp8, combined, obj, str);
+      return openLazy(tmp8, combined, obj, str);
     }
   }
   const tmp21 = asyncRequire(8690, dependencyMap.paths);
   const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
+  const combined1 = "" + UserProfile + ignoreBlockedSpeedBump.userId;
   const obj2 = { openedAt: timestamp };
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
   if (str == null) {
     str = "replaceAll";
   }
-  openLazy2(tmp21, combined1, obj2, str);
+  return openLazy2(tmp21, combined1, obj2, str);
 }
 const addPostConnectionCallback = PostConnectionCallbackStore.addPostConnectionCallback;
-let closure_6 = new LoggerDefault("showUserProfileActionSheet");
+const UserProfile = "UserProfile";
+let closure_7 = new LoggerDefault("showUserProfileActionSheet");
 const tmp2 = new LoggerDefault("showUserProfileActionSheet");
 const result = size.fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
 
 export default showUserProfileActionSheet;
+export const USER_PROFILE_ACTION_SHEET_KEY_PREFIX = "UserProfile";
 export const getUserProfileActionSheetKey = function getUserProfileActionSheetKey(userId) {
-  return "UserProfile" + userId;
+  return "" + UserProfile + userId;
 };
 export const getUserProfileBlockedSpeedBumpActionSheetKey = function getUserProfileBlockedSpeedBumpActionSheetKey(arg0) {
-  return "UserProfileBlockedSpeedBump" + arg0;
+  return "" + UserProfile + "BlockedSpeedBump" + arg0;
 };
 export const getUserProfileIgnoredSpeedBumpActionSheetKey = function getUserProfileIgnoredSpeedBumpActionSheetKey(arg0) {
-  return "UserProfileIgnoredSpeedBump" + arg0;
+  return "" + UserProfile + "IgnoredSpeedBump" + arg0;
 };
 export const showUserProfileActionSheetPostConnection = function showUserProfileActionSheetPostConnection(arg0) {
   let closure_0 = arg0;

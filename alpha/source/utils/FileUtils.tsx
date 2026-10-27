@@ -1,19 +1,19 @@
-// Module ID: 8150
-// Function ID: 8151
+// Module ID: 8148
+// Function ID: 8149
 // Name: FileUtils
-// Dependencies: [4845, 1392, 1087, 1394, 12, 8151, 2053, 8146, 6379, 1128, 2]
+// Dependencies: [4846, 1389, 1084, 1391, 12, 8149, 2050, 8144, 6380, 1125, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 8150 (FileUtils)
+// Module 8148 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import FileSizeUtils from "FileSizeUtils" /* 6379 */;
-import UploadUtils from "UploadUtils" /* 8146 */;
-import _modDef8151 from "module_8151" /* 8151 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import FileSizeUtils from "FileSizeUtils" /* 6380 */;
+import UploadUtils from "UploadUtils" /* 8144 */;
+import _modDef8149 from "module_8149" /* 8149 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
 let reType;
@@ -21,8 +21,8 @@ let reType;
 let GuildFeatures;
 let hasOwnProperty;
 let tmp;
-const intl2 = tmp(1128);
-const PremiumUtils = tmp(2053);
+const intl2 = tmp(1125);
+const PremiumUtils = tmp(2050);
 function getUploadFileSizeSum(arg0) {
   let num = 0;
   const tmp = arg0[Symbol.iterator]();
@@ -129,7 +129,7 @@ export const classifyFileName = function classifyFileName(fileName, arg1) {
   return str2;
 };
 export const sizeString = function sizeString(size) {
-  const obj = _modDef8151;
+  const obj = _modDef8149;
   return obj.filesize(size);
 };
 export const maxFileSize = function maxFileSize(guildId) {

@@ -1,13 +1,13 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 14018
+// Function ID: 14019
 // Name: openAppChannelReportModal
-// Dependencies: [5, 2045, 6809, 14005, 8108, 2]
+// Dependencies: [5, 2042, 6811, 14019, 8106, 2]
 // Exports: default
 
-// Module 14004 (openAppChannelReportModal)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
+// Module 14018 (openAppChannelReportModal)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6811 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_4, closure_5, contextualGuildId;

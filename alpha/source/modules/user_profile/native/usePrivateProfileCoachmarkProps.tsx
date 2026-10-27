@@ -1,24 +1,24 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17851
+// Function ID: 17852
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1087, 4820, 21, 4971, 558, 576, 17811, 1211, 1128, 8124, 4799, 4807, 7490, 2]
+// Dependencies: [19, 17, 1084, 4821, 21, 4972, 558, 576, 17852, 1208, 1125, 8122, 4800, 4808, 7491, 2]
 
-// Module 17810 (usePrivateProfileCoachmarkProps)
+// Module 17851 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import openUserSettings from "openUserSettings" /* 7490 */;
+import Constants from "Constants" /* 1084 */;
+import intl4 from "intl" /* 1125 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import openUserSettings from "openUserSettings" /* 7491 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(17811);
+const PrivateProfileAbstractUI = tmp(17852);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -57,12 +57,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(8124);
+  let obj2 = markAsDismissed(8122);
   let userIsTeen = obj2.useUserIsTeen();
-  const ProfileVisibility = markAsDismissed(4799).ProfileVisibility;
+  const ProfileVisibility = markAsDismissed(4800).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
-    userIsTeen = setting !== tmp(1211).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    userIsTeen = setting !== tmp(1208).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
   }
   if (cResult[0] === userIsTeen) {
     let tmp6;
@@ -74,14 +74,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(markAsDismissed(1128).t.Ve4nS1);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(markAsDismissed(1125).t.Ve4nS1);
       cResult[3] = stringResult;
       tmp10 = stringResult;
     } else {
       tmp10 = cResult[3];
     }
-    const PRIVATE_PROFILE_COACHMARK = tmp(4807).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+    const PRIVATE_PROFILE_COACHMARK = tmp(4808).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
     if (cResult[4] !== markAsDismissed) {
       class S {
         constructor() {
@@ -104,8 +104,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
           return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(markAsDismissed(1128).t.eOoTMX);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(markAsDismissed(1125).t.eOoTMX);
       cResult[6] = tmp15;
       cResult[7] = stringResult1;
       tmp14 = stringResult1;
@@ -160,7 +160,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         return markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    stringResult2 = obj3.string(tmp(1128).t.bnNxW1);
+    stringResult2 = obj3.string(tmp(1125).t.bnNxW1);
   }
   cResult[0] = userIsTeen;
   cResult[1] = setting;

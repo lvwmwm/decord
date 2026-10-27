@@ -1,21 +1,21 @@
-// Module ID: 19226
-// Function ID: 19227
+// Module ID: 19264
+// Function ID: 19265
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 1128, 19227, 1202, 19231, 19235, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5235, 1125, 19265, 1199, 19269, 19273, 2]
 
-// Module 19226 (HowItWorksSection)
+// Module 19264 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19227 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19231 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19235 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19265 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19269 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19273 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { cardNumber: 1, description: intl.string(intl4.t.lT0ZNS), Illustration: PerksTicketSpotIllustration.PerksTicketSpotIllustration };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     const tmp9 = _false(closure_6, obj2);
     const tmp10 = _false(native.Spacer, { size: 12 });
     cResult[0] = tmp9;
@@ -158,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { cardNumber: 2, description: intl2.string(intl4.t.ihN2Wb), Illustration: AnnouncementMegaphoneSpotIllustration.AnnouncementMegaphoneSpotIllustration };
-    intl2 = tmp(1128).intl;
+    intl2 = tmp(1125).intl;
     const tmp14 = _false(closure_6, obj3);
     cResult[2] = tmp14;
     tmp11 = tmp14;
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HowItWorksSe
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { cardNumber: 3, description: intl3.string(intl4.t.c8krDQ), Illustration: CoinsAndBagSpotIllustration.CoinsAndBagSpotIllustration };
-    intl3 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
     const tmp22 = _false(closure_6, obj5);
     cResult[5] = tmp22;
     tmp19 = tmp22;

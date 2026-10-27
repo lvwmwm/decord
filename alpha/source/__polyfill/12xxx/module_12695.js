@@ -1,49 +1,232 @@
 // Module ID: 12695
 // Function ID: 12696
-// Dependencies: [12696]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [5, 12585, 12588, 12589, 12617, 12603, 12613, 12637, 12616, 12634, 12623, 12604]
+// Exports: trpcMiddleware
 
 // Module 12695
-import _mod12696 from "module_12696" /* 12696 */;
+import _mod12613 from "module_12613" /* 12613 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import registerSpanErrorInstrumentation from "module_12585" /* 12585 */;
+import "module_12588";
+import CONSOLE_LEVELS from "module_12589" /* 12589 */;
+import DEBUG_BUILD from "module_12617" /* 12617 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12603 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
+let c5, c6;
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12696;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
+_mod12613;
+let obj = { mechanism: { handled: false, data: { function: "trpcMiddleware" } } };
+
+export const trpcMiddleware = function trpcMiddleware() {
+  obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let c1;
+    let fn;
+    let getRawInput;
+    let rawInput;
+    let tmp;
+    let tmp4;
+    closure_0 = arg0;
+    if (c6 === 2) {
+      c6 = 3;
+      let str = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c4;
+      let closure_3;
+      try {
+        let closure_2;
+        let obj5;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            let obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_2 = tmp;
+            const tmp24 = closure_0;
+            c1 = undefined;
+            closure_3 = undefined;
+            const path = closure_0.path;
+            ({ next: c1, rawInput, getRawInput } = closure_0);
+            const type = closure_0.type;
+            const obj8 = closure_0(dependencyMap[8]);
+            const client = obj8.getClient();
+            const options = client && client.getOptions();
+            obj5 = { procedure_path: path, procedure_type: type };
+            value = closure_0.attachRpcInput;
+            if (undefined !== value) {
+              value = closure_0.attachRpcInput;
+            } else {
+              value = options && options.sendDefaultPii;
+            }
+            if (value) {
+              if (undefined !== rawInput) {
+                const normalizer2 = closure_0(dependencyMap[9]);
+                value = normalizer2.normalize(rawInput);
+                obj5.input = value;
+              }
+              if (undefined !== getRawInput) {
+                if (typeof getRawInput === "function") {
+                  c4 = 1;
+                  value = getRawInput();
+                  c5 = 2;
+                  c6 = 1;
+                  let obj6 = { value, done: false };
+                  return obj6;
+                }
+              }
+            }
+          }
+        } else if (1 === tmp4) {
+          c4 = 0;
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 0;
+          c6 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          let tmp6 = closure_2;
+          closure_3 = value;
+          value = obj5;
+          const normalizer = closure_0(dependencyMap[9]);
+          obj5.input = normalizer.normalize(closure_3);
+          c4 = 0;
+        }
+        let obj3 = closure_0(dependencyMap[8]);
+        value = (setContext) => {
+          setContext.setContext("trpc", closure_2);
+          const tmp2 = closure_1_0(fn[10]);
+          obj = { name: "trpc/" + closure_0, op: "rpc.server", attributes: { [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "route", [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.rpc.trpc" } };
+          const startSpanManual = tmp2.startSpanManual;
+          closure_0 = closure_1_2(function*(arg0, value) {
+            let tmp;
+            function captureIfError(ok) {
+              let tmp = typeof ok === "object";
+              if (typeof ok === "object") {
+                tmp = null !== ok;
+              }
+              if (tmp) {
+                tmp = "ok" in ok;
+              }
+              if (tmp) {
+                tmp = !ok.ok;
+              }
+              if (tmp) {
+                tmp = "error" in ok;
+              }
+              if (tmp) {
+                obj = closure_1_0(closure_1_1[7]);
+                obj.captureException(ok.error, closure_1_3);
+              }
+            }
+            closure_0 = arg0;
+            if (c6 === 2) {
+              c6 = 3;
+              const str = "Generator functions may not be called on executing generators";
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp3 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                c6 = 2;
+                const tmp4 = c5;
+                if (0 === c5) {
+                  if (arg0 === 1) {
+                    c6 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c6 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    closure_2 = tmp;
+                    value = undefined;
+                    c4 = 1;
+                    c5 = 2;
+                    c6 = 1;
+                    const obj5 = { value: value(), done: false };
+                    return obj5;
+                  }
+                } else if (1 === tmp4) {
+                  c4 = 0;
+                  closure_2 = closure_3;
+                  const obj3 = closure_0(fn[7]);
+                  const captureExceptionResult = obj3.captureException(closure_2, closure_2_3);
+                  closure_0.end();
+                  throw closure_2;
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  c6 = 3;
+                  const obj6 = { value, done: true };
+                  return obj6;
+                } else {
+                  captureIfError(value);
+                  closure_0.end();
+                  c4 = 0;
+                  c6 = 3;
+                  obj = { value, done: true };
+                  return obj;
+                }
+              } catch (tmp24) {
+                closure_3 = tmp24;
+                if (0 === c4) {
+                  c6 = 3;
+                  throw tmp24;
+                } else {
+                  c5 = 1;
+                }
+              }
+            }
+          });
+          return startSpanManual(obj, function(arg0) {
+            return closure_0(...arguments);
+          });
+        };
+        c6 = 3;
+        const obj7 = { value: obj3.withScope(value), done: true };
+        return obj7;
+      } catch (tmp18) {
+        closure_3 = tmp18;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp18;
+        } else {
+          c5 = 1;
+        }
+      }
     }
-    tmp2 = "[object process]" === call(num);
-  }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
+  });
+  return function(arg0) {
+    return closure_0(...arguments);
+  };
 };

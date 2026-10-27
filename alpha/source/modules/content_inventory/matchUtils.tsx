@@ -1,11 +1,11 @@
 // Module ID: 8825
 // Function ID: 8826
 // Name: matchUtils
-// Dependencies: [1087, 8826, 8828, 8829, 8831, 8832, 8617, 2]
+// Dependencies: [1084, 8826, 8828, 8829, 8831, 8832, 8617, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
 // Module 8825 (matchUtils)
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8826 */;
 import SpotifyConstants from "SpotifyConstants" /* 8828 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8829 */;

@@ -1,17 +1,17 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19392
+// Function ID: 19393
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 6705, 21, 4971, 587, 558, 576, 1128, 13277, 8551, 5234, 1202, 2]
+// Dependencies: [19, 17, 6706, 21, 4972, 587, 558, 576, 1125, 13291, 8551, 5235, 1199, 2]
 
-// Module 19354 (NotificationSettingsMockChannels)
+// Module 19392 (NotificationSettingsMockChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReadStateConstants from "ReadStateConstants" /* 6705 */;
+import ReadStateConstants from "ReadStateConstants" /* 6706 */;
 import TextIcon2 from "TextIcon" /* 8551 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13277 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13291 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,15 +39,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const tmp4 = closure_7();
   _require = tmp4;
   if (cResult[0] !== unreadSetting.unreadSetting) {
-    let obj2 = { badged: true, unread: true, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, name: intl.string(tmp(1128).t.EjLobP) };
+    let obj2 = { badged: true, unread: true, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, name: intl.string(tmp(1125).t.EjLobP) };
     const tmp5 = UnreadSetting;
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     let items = [obj2, , ];
-    let obj3 = { badged: false, unread: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: intl2.string(tmp(1128).t.Wgpwpp) };
-    intl2 = tmp(1128).intl;
+    let obj3 = { badged: false, unread: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: intl2.string(tmp(1125).t.Wgpwpp) };
+    intl2 = tmp(1125).intl;
     items[1] = obj3;
-    let obj4 = { badged: false, unread: false, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: intl3.string(tmp(1128).t.g9VImh) };
-    intl3 = tmp(1128).intl;
+    let obj4 = { badged: false, unread: false, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: intl3.string(tmp(1125).t.g9VImh) };
+    intl3 = tmp(1125).intl;
     items[2] = obj4;
     if (unreadSetting.unreadSetting === UnreadSetting.ALL_MESSAGES) {
       items[1].resolvedUnreadSetting = tmp5.ALL_MESSAGES;
@@ -100,14 +100,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     items[1] = hasOwnProperty(TextIcon, obj4);
     const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
     str2 = undefined;
-    const Text = tmp5(5234).Text;
+    const Text = tmp5(5235).Text;
     if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
       str2 = "text-muted";
     }
     items[2] = hasOwnProperty(Text, obj5);
     items1 = [metroRequire(View, obj2), ];
     let num = 0;
-    const Badge = tmp5(1202).Badge;
+    const Badge = tmp5(1199).Badge;
     if (unread.badged) {
       num = 1;
     }
@@ -161,14 +161,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       items[1] = hasOwnProperty(TextIcon, obj4);
       const obj5 = { style: { marginLeft: 4 }, variant: "text-sm/semibold", color: str2, children: unread.name };
       str2 = undefined;
-      const Text = tmp5(5234).Text;
+      const Text = tmp5(5235).Text;
       if (unread.resolvedUnreadSetting === tmp6.ONLY_MENTIONS) {
         str2 = "text-muted";
       }
       items[2] = hasOwnProperty(Text, obj5);
       items1 = [metroRequire(View, obj2), ];
       let num = 0;
-      const Badge = tmp5(1202).Badge;
+      const Badge = tmp5(1199).Badge;
       if (unread.badged) {
         num = 1;
       }

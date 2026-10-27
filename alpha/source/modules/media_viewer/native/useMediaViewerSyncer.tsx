@@ -1,12 +1,12 @@
 // Module ID: 8782
 // Function ID: 8783
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8783, 1384, 8753, 5052, 8784, 1633, 8785, 8757, 5247, 8786, 558, 576, 2]
+// Dependencies: [32, 19, 8783, 1381, 8753, 5053, 8784, 1630, 8785, 8757, 5248, 8786, 558, 576, 2]
 
 // Module 8782 (useMediaViewerSyncer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import spring from "spring" /* 5247 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import spring from "spring" /* 5248 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8753 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
 import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8785 */;
@@ -14,7 +14,7 @@ import resolveSelectedIndex from "resolveSelectedIndex" /* 8786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 8783 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ function makeMediaViewerSyncer(sources) {
       let width = size.width;
       const height = size.height;
       const rect = thumbnailScrollPositions(selectedIndex[7])();
-      let obj3 = { onBeginDrag: R, onEndDrag: E, onScroll: V, onMomentumBegin: P, onMomentumEnd: fn };
+      let obj3 = { onBeginDrag: R, onEndDrag: V, onScroll: E, onMomentumBegin: P, onMomentumEnd: fn };
       const tmp2 = sources(selectedIndex[5]);
       class R {
         constructor() {
@@ -114,15 +114,15 @@ function makeMediaViewerSyncer(sources) {
       R.__closure = obj4;
       R.__workletHash = 16224520186325;
       R.__initData = _false;
-      class E {
+      class V {
         constructor() {
           const result = mapped1.set(-3 & mapped1.get());
         }
       }
-      E.__closure = { thumbnailsScrolling: mapped1, SCROLLING_DRAG: 2 };
-      E.__workletHash = 5779899826871;
-      E.__initData = __initData;
-      class V {
+      V.__closure = { thumbnailsScrolling: mapped1, SCROLLING_DRAG: 2 };
+      V.__workletHash = 5779899826871;
+      V.__initData = __initData;
+      class E {
         constructor(contentOffset) {
           const result = contentOffset.contentOffset.x / onSelect;
           const obj = swipeSource;
@@ -159,9 +159,9 @@ function makeMediaViewerSyncer(sources) {
       }
       let obj5 = { variableWidthThumbnailsEnabled: _false, thumbnailScrollPositions, thumbnailSize: onSelect, swipeSource, maxIndex, thumbnailsIndex: mapped, thumbnailsAnimateTo: derivedValue2, selectedIndex: animatedRef, viewerScrolling: diff1, thumbnailsScrolling: mapped1, runOnJS: sources(selectedIndex[5]).runOnJS, onSelectedIndexChange };
       const useAnimatedScrollHandler = tmp2.useAnimatedScrollHandler;
-      V.__closure = obj5;
-      V.__workletHash = 6212589685153;
-      V.__initData = __initData2;
+      E.__closure = obj5;
+      E.__workletHash = 6212589685153;
+      E.__initData = __initData2;
       class P {
         constructor() {
           const result = mapped1.set(4 | mapped1.get());
@@ -394,7 +394,7 @@ function makeMediaViewerSyncer(sources) {
       size = obj2.useMediaViewerDimensions();
       const width = size.width;
       const height = size.height;
-      const obj3 = sources(selectedIndex[5]);
+      let obj3 = sources(selectedIndex[5]);
       let fn = function l() {
         const tmp = flag || -1 === thumbnailsAnimateTo.get();
         if (!tmp) {
@@ -455,7 +455,7 @@ function makeMediaViewerSyncer(sources) {
       const animatedReaction1 = obj9.useAnimatedReaction(fn5, fn6);
       const diff = flag.length - 1;
       thumbnailsScrolling = diff;
-      const items = [flag, diff, width];
+      const items = [flag, diff, sharedValue, width];
       memo = thumbnailsScrolling.useMemo(() => {
         let fn;
         let fn2;
@@ -485,24 +485,28 @@ function makeMediaViewerSyncer(sources) {
           const result = sharedValue1.set(offsetX / closure_1_2);
           const tmp = closure_1_2;
           if ("viewer" === swipeSource.get()) {
-            const obj = { offsetX, pageSize: tmp, maxIndex };
-            const obj2 = sources(selectedIndex[11]);
+            const obj2 = { offsetX, pageSize: tmp, maxIndex };
+            const obj3 = sources(selectedIndex[11]);
             const tmp10 = selectedIndex;
-            selectedIndex = obj2.resolveSelectedIndex(obj);
-            let tmp4 = null != selectedIndex;
+            selectedIndex = obj3.resolveSelectedIndex(obj2);
             const tmp9 = sources;
-            if (tmp4) {
-              tmp4 = width.get() !== selectedIndex;
-            }
-            if (tmp4) {
-              const result1 = width.set(selectedIndex);
-              const tmp9Result = tmp9(tmp10[5]);
-              tmp9Result.runOnJS(onSelectedIndexChange)();
+            if (null != selectedIndex) {
+              const tmp3 = flag;
+              if (tmp3) {
+                const result1 = sharedValue.set(selectedIndex);
+              }
+              const obj = width;
+              if (width.get() !== selectedIndex) {
+                const result2 = obj.set(selectedIndex);
+                const tmp9Result = tmp9(tmp10[5]);
+                tmp9Result.runOnJS(onSelectedIndexChange)();
+              }
             }
           }
         };
-        fn3.__closure = { viewerPos, screenWidth: width, swipeSource, resolveSelectedIndex: resolveSelectedIndex.resolveSelectedIndex, maxIndex, selectedIndex, runOnJS: ReanimatedRexport.runOnJS, onSelectedIndexChange };
-        fn3.__workletHash = 3804833373552;
+        let obj3 = { viewerPos, screenWidth: width, swipeSource, resolveSelectedIndex: resolveSelectedIndex.resolveSelectedIndex, maxIndex, gesturePagerEnabled: flag, pagerIndex: sharedValue, selectedIndex, runOnJS: ReanimatedRexport.runOnJS, onSelectedIndexChange };
+        fn3.__closure = obj3;
+        fn3.__workletHash = 11551682753261;
         fn3.__initData = __initData3;
         fn4 = function n() {
           const result = viewerScrolling.set(4 | viewerScrolling.get());
@@ -517,7 +521,6 @@ function makeMediaViewerSyncer(sources) {
         fn5.__closure = { viewerScrolling, SCROLLING_MOMENTUM: 4 };
         fn5.__workletHash = 9245618526500;
         fn5.__initData = __initData5;
-        ({ viewerPos, screenWidth: width, swipeSource, resolveSelectedIndex: resolveSelectedIndex.resolveSelectedIndex, maxIndex, selectedIndex, runOnJS: ReanimatedRexport.runOnJS, onSelectedIndexChange });
         return obj;
       }, items);
       const obj10 = sources(selectedIndex[5]);
@@ -541,8 +544,8 @@ function makeMediaViewerSyncer(sources) {
       isSpuriousContentSizeReset.__closure = obj11;
       isSpuriousContentSizeReset.__workletHash = 15250440053717;
       isSpuriousContentSizeReset.__initData = __initData17;
-      const obj13 = { onBeginDrag: memo.onBeginDrag, onEndDrag: M, onScroll: I, onMomentumBegin: memo.onMomentumBegin, onMomentumEnd: fn7 };
-      const obj12 = sources(selectedIndex[5]);
+      let tmp10 = sources(selectedIndex[5]);
+      const obj12 = { onBeginDrag: memo.onBeginDrag, onEndDrag: M, onScroll: fn7, onMomentumBegin: memo.onMomentumBegin, onMomentumEnd: I };
       class M {
         constructor(contentOffset) {
           memo.onEndDrag();
@@ -552,6 +555,38 @@ function makeMediaViewerSyncer(sources) {
       M.__closure = { onScrollWorklets: memo };
       M.__workletHash = 9872882137515;
       M.__initData = __initData18;
+      fn7 = function v(contentOffset) {
+        if (typeof isSpuriousContentSizeReset === "function") {
+          let tmp2 = closure_10;
+          if (tmp2) {
+            const _Date = Date;
+            const timestamp = Date.now();
+            tmp2 = timestamp - sharedValue1.get() < 500;
+          }
+          if (tmp2) {
+            tmp2 = 0 === tmp;
+          }
+          if (tmp2) {
+            tmp2 = 0 !== selectedIndex.get();
+          }
+          if (tmp2) {
+            const obj = ReanimatedRexport;
+            obj.scrollTo(animatedRef, selectedIndex.get() * width, contentOffset.contentOffset.y, false);
+          } else {
+            const tmp8 = 0 === viewerScrolling.get() && 0 === maxIndex.get() && -1 === thumbnailsAnimateTo.get();
+            if (!tmp8) {
+              memo.onScroll(contentOffset.contentOffset.x);
+            }
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      };
+      const useAnimatedScrollHandler = tmp10.useAnimatedScrollHandler;
+      fn7.__closure = { isSpuriousContentSizeReset, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, selectedIndex: width, screenWidth: width, viewerScrolling: isSpuriousContentSizeReset, thumbnailsScrolling, thumbnailsAnimateTo: memo, onScrollWorklets: memo };
+      fn7.__workletHash = 11837192464005;
+      fn7.__initData = __initData19;
+      ({ isSpuriousContentSizeReset, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, selectedIndex: width, screenWidth: width, viewerScrolling: isSpuriousContentSizeReset, thumbnailsScrolling, thumbnailsAnimateTo: memo, onScrollWorklets: memo });
       class I {
         constructor(contentOffset) {
           if (typeof isSpuriousContentSizeReset === "function") {
@@ -567,52 +602,21 @@ function makeMediaViewerSyncer(sources) {
             if (tmp2) {
               tmp2 = 0 !== selectedIndex.get();
             }
-            if (tmp2) {
-              const obj = ReanimatedRexport;
-              obj.scrollTo(animatedRef, selectedIndex.get() * width, contentOffset.contentOffset.y, false);
-            } else {
-              const tmp8 = 0 === viewerScrolling.get() && 0 === maxIndex.get() && -1 === thumbnailsAnimateTo.get();
-              if (!tmp8) {
-                memo.onScroll(contentOffset.contentOffset.x);
-              }
+            if (!tmp2) {
+              memo.onScroll(contentOffset.contentOffset.x);
             }
+            memo.onMomentumEnd();
           } else {
             throw new TypeError("Trying to call a non-function");
           }
         }
       }
-      I.__closure = { isSpuriousContentSizeReset, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, selectedIndex: width, screenWidth: width, viewerScrolling: isSpuriousContentSizeReset, thumbnailsScrolling, thumbnailsAnimateTo: memo, onScrollWorklets: memo };
-      I.__workletHash = 11837192464005;
-      I.__initData = __initData19;
-      fn7 = function v(contentOffset) {
-        if (typeof isSpuriousContentSizeReset === "function") {
-          let tmp2 = closure_10;
-          if (tmp2) {
-            const _Date = Date;
-            const timestamp = Date.now();
-            tmp2 = timestamp - sharedValue1.get() < 500;
-          }
-          if (tmp2) {
-            tmp2 = 0 === tmp;
-          }
-          if (tmp2) {
-            tmp2 = 0 !== selectedIndex.get();
-          }
-          if (!tmp2) {
-            memo.onScroll(contentOffset.contentOffset.x);
-          }
-          memo.onMomentumEnd();
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      };
-      fn7.__closure = { isSpuriousContentSizeReset, onScrollWorklets: memo };
-      fn7.__workletHash = 17580250323854;
-      fn7.__initData = __initData20;
+      I.__closure = { isSpuriousContentSizeReset, onScrollWorklets: memo };
+      I.__workletHash = 17580250323854;
+      I.__initData = __initData20;
       const items1 = [animatedRef, width, sharedValue1];
-      ({ isSpuriousContentSizeReset, scrollTo: sources(selectedIndex[5]).scrollTo, ref: animatedRef, selectedIndex: width, screenWidth: width, viewerScrolling: isSpuriousContentSizeReset, thumbnailsScrolling, thumbnailsAnimateTo: memo, onScrollWorklets: memo });
       const items2 = [width, height, animatedRef];
-      const animatedScrollHandler = obj12.useAnimatedScrollHandler(obj13);
+      const animatedScrollHandler = useAnimatedScrollHandler(obj12);
       const callback = thumbnailsScrolling.useCallback(() => {
         const current = animatedRef.current;
         if (current != null) {
@@ -626,7 +630,7 @@ function makeMediaViewerSyncer(sources) {
           current.reset();
         }
       }, items2);
-      const obj15 = {
+      const obj14 = {
         ref: animatedRef,
         onScroll: animatedScrollHandler,
         onScrollWorklets: memo,
@@ -659,7 +663,7 @@ function makeMediaViewerSyncer(sources) {
           return first;
         }, [])
       };
-      return obj15;
+      return obj14;
     },
     onEndReached,
     onEndReachedThreshold
@@ -722,7 +726,7 @@ let closure_29 = { code: "function useMediaViewerSyncerTsx20(){const{thumbnailsA
 let closure_30 = { code: "function useMediaViewerSyncerTsx21(target,previous){const{pagerIndex}=this.__closure;if(previous!==null&&target!==-1)pagerIndex.set(target);}" };
 let closure_31 = { code: "function useMediaViewerSyncerTsx22(){const{viewerScrolling,SCROLLING_DRAG,swipeSource,gesturePagerEnabled,thumbnailsAnimateTo}=this.__closure;viewerScrolling.set(viewerScrolling.get()|SCROLLING_DRAG);swipeSource.set('viewer');if(gesturePagerEnabled)thumbnailsAnimateTo.set(-1);}" };
 let closure_32 = { code: "function useMediaViewerSyncerTsx23(){const{viewerScrolling,SCROLLING_DRAG}=this.__closure;viewerScrolling.set(viewerScrolling.get()&~SCROLLING_DRAG);}" };
-let closure_33 = { code: "function useMediaViewerSyncerTsx24(offsetX){const{viewerPos,screenWidth,swipeSource,resolveSelectedIndex,maxIndex,selectedIndex,runOnJS,onSelectedIndexChange}=this.__closure;viewerPos.set(offsetX/screenWidth);if(swipeSource.get()!=='viewer')return;const nearest=resolveSelectedIndex({offsetX:offsetX,pageSize:screenWidth,maxIndex:maxIndex});if(nearest==null||selectedIndex.get()===nearest)return;selectedIndex.set(nearest);runOnJS(onSelectedIndexChange)();}" };
+let closure_33 = { code: "function useMediaViewerSyncerTsx24(offsetX){const{viewerPos,screenWidth,swipeSource,resolveSelectedIndex,maxIndex,gesturePagerEnabled,pagerIndex,selectedIndex,runOnJS,onSelectedIndexChange}=this.__closure;viewerPos.set(offsetX/screenWidth);if(swipeSource.get()!=='viewer')return;const nearest=resolveSelectedIndex({offsetX:offsetX,pageSize:screenWidth,maxIndex:maxIndex});if(nearest==null)return;if(gesturePagerEnabled)pagerIndex.set(nearest);if(selectedIndex.get()===nearest)return;selectedIndex.set(nearest);runOnJS(onSelectedIndexChange)();}" };
 let closure_34 = { code: "function useMediaViewerSyncerTsx25(){const{viewerScrolling,SCROLLING_MOMENTUM,swipeSource}=this.__closure;viewerScrolling.set(viewerScrolling.get()|SCROLLING_MOMENTUM);swipeSource.set('viewer');}" };
 let closure_35 = { code: "function useMediaViewerSyncerTsx26(){const{viewerScrolling,SCROLLING_MOMENTUM}=this.__closure;viewerScrolling.set(viewerScrolling.get()&~SCROLLING_MOMENTUM);}" };
 let closure_36 = { code: "function isSpuriousContentSizeReset_useMediaViewerSyncerTsx27(offsetX){const{IS_ANDROID,contentSizeLastChangedAt,selectedIndex}=this.__closure;return IS_ANDROID&&Date.now()-contentSizeLastChangedAt.get()<500&&offsetX===0&&selectedIndex.get()!==0;}" };

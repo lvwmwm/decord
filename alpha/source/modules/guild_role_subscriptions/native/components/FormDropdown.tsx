@@ -1,15 +1,15 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15180
+// Function ID: 15181
 // Name: FormDropdown
-// Dependencies: [19, 21, 4971, 558, 576, 15145, 8566, 11080, 5234, 9041, 2]
+// Dependencies: [19, 21, 4972, 558, 576, 15181, 8566, 11083, 5235, 9041, 2]
 
-// Module 15144 (FormDropdown)
+// Module 15180 (FormDropdown)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FormStylesDefault from "FormStyles" /* 15145 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FormStylesDefault from "FormStyles" /* 15181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormDropdown(arg
     if (disabled) {
       ChevronSmallDownIcon = tmp(8566).LockIcon;
     } else {
-      ChevronSmallDownIcon = tmp(11080).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp(11083).ChevronSmallDownIcon;
     }
     const tmp8Result = tmp8(ChevronSmallDownIcon, { size: "md" });
     cResult[0] = disabled;
@@ -127,7 +127,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormDropdown(arg
     ChevronSmallDownIcon = tmp6(8566).LockIcon;
     tmp7 = tmp6;
   } else {
-    ChevronSmallDownIcon = tmp6(11080).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp6(11083).ChevronSmallDownIcon;
     tmp7 = tmp6;
   }
   const obj = { style: items, accessibilityRole: "spinbutton", disabled, onPress: tmp11, children: items1 };
@@ -142,7 +142,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormDropdown(arg
   items1 = [leading, , ];
   const obj2 = { style: tmp.content, variant: "text-md/medium", color: str, children: label };
   str = "text-muted";
-  const Text = tmp7(5234).Text;
+  const Text = tmp7(5235).Text;
   if (null != label) {
     str = "text-default";
   }

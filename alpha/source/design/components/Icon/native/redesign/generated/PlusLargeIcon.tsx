@@ -1,14 +1,14 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10845
+// Function ID: 10846
 // Name: PlusLargeIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10843, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10846, 5669, 2]
 
-// Module 10842 (PlusLargeIcon)
+// Module 10845 (PlusLargeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 10843 */;
+import BaseIconImage2 from "BaseIconImage" /* 5669 */;
+import AssetRegistry from "AssetRegistry" /* 10846 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlusLargeI
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5668).BaseIconImage;
+  const BaseIconImage = tmp(5669).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

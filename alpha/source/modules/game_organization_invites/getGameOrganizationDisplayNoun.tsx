@@ -1,13 +1,13 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12737
+// Function ID: 12738
 // Name: getGameOrganizationDisplayNoun
-// Dependencies: [11030, 1128, 2406, 2]
+// Dependencies: [11033, 1125, 2403, 2]
 // Exports: default
 
-// Module 12728 (getGameOrganizationDisplayNoun)
-import intl3 from "intl" /* 1128 */;
-import _modDef2406 from "module_2406" /* 2406 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11030 */;
+// Module 12737 (getGameOrganizationDisplayNoun)
+import intl3 from "intl" /* 1125 */;
+import _modDef2403 from "module_2403" /* 2403 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
 import size from "module_2" /* 2 */;
 
 const constants = GameOrganizationInviteConstants.GameOrganizationDisplayNouns;
@@ -23,12 +23,12 @@ export default function getGameOrganizationDisplayNoun(lowercase) {
   if (displayNoun === constants.GUILD) {
     const intl2 = intl3.intl;
     const string2 = intl2.string;
-    const tmp9 = _modDef2406;
+    const tmp9 = _modDef2403;
     string2Result = string2(flag ? tmp9.aikK3o : tmp9.sm5cz5);
   } else {
     const intl = intl3.intl;
     const string = intl.string;
-    const tmp4 = _modDef2406;
+    const tmp4 = _modDef2403;
     string2Result = string(flag ? tmp4.xXXGsq : tmp4.nVMqjA);
   }
   return string2Result;

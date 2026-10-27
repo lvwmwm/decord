@@ -1,12 +1,12 @@
 // Module ID: 8721
 // Function ID: 8722
 // Name: useUserProfileBannerHeight
-// Dependencies: [7304, 558, 576, 1499, 2]
+// Dependencies: [7306, 558, 576, 1496, 2]
 
 // Module 8721 (useUserProfileBannerHeight)
 import react from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import Constants from "Constants" /* 7304 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import Constants from "Constants" /* 7306 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

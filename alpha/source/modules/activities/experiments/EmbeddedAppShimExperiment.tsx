@@ -1,11 +1,11 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11493
+// Function ID: 11494
 // Name: EmbeddedAppShimExperiment
-// Dependencies: [1455, 558, 2]
+// Dependencies: [1452, 558, 2]
 // Exports: getEmbeddedAppShimVersion, useEmbeddedAppShimVersion
 
-// Module 11492 (EmbeddedAppShimExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 11493 (EmbeddedAppShimExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

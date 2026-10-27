@@ -1,23 +1,34 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11780
+// Function ID: 11781
 // Name: FrameRenderTarget
-// Dependencies: [19, 21, 4971, 558, 576, 11780, 7907, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 11781, 11782, 7908, 2]
 
-// Module 11779 (FrameRenderTarget)
-import Fragment from "Fragment" /* 21 */;
+// Module 11780 (FrameRenderTarget)
 import react2 from "react" /* 576 */;
-import useFramePoolBorrowDefault from "useFramePoolBorrow" /* 11780 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11782 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const WebView = tmp(7907);
-const jsx = Fragment.jsx;
-let closure_5 = createStyles.createStyles({ target: { flex: 1 } });
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ ActivityIndicator: closure_4, View: hasOwnProperty, StyleSheet } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { target: { flex: 1 }, loading: obj2 };
+obj2 = { alignItems: "center", justifyContent: "center" };
+createStyles = createStyles.createStyles;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemoizedPresentation(arg0) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemoizedPresentation(arg0) {
   let landscapeSafeAreasConfig;
   let layoutMode;
   let portraitSafeAreasConfig;
@@ -47,53 +58,138 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemo
   return react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderTarget(arg0) {
-  let frameId;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderTarget(frameId) {
+  let items;
   let level;
   let presentation;
-  let temporaryParentNodeTag;
   let webViewKey;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ frameId, level, presentation } = arg0);
-  const tmp4 = closure_5();
-  const tmp5 = closure_6(presentation);
-  ({ webViewKey, temporaryParentNodeTag } = useFramePoolBorrowDefault(frameId, level, tmp5));
-  let tmp7 = null;
-  useFramePoolBorrowDefault(frameId, level, tmp5);
-  if (null != webViewKey) {
-    if (cResult[0] === tmp4.target) {
-      if (cResult[1] === temporaryParentNodeTag) {
-        let tmp8;
-        if (cResult[2] === webViewKey) {
-          tmp8 = cResult[3];
-        }
-        tmp7 = tmp8;
-      }
-    }
-    const tmp10 = jsx(WebView.WebViewTarget, { webViewKey, temporaryParentNodeTag, style: tmp4.target });
-    cResult[0] = tmp4.target;
-    cResult[1] = temporaryParentNodeTag;
-    cResult[2] = webViewKey;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
+  const tmp = frameId;
+  let obj = frameId(576);
+  const cResult = obj.c(14);
+  frameId = frameId.frameId;
+  const spinnerWhileLoading = frameId.spinnerWhileLoading;
+  let tmp4 = undefined !== spinnerWhileLoading;
+  ({ level, presentation } = frameId);
+  if (tmp4) {
+    tmp4 = spinnerWhileLoading;
   }
-  return tmp7;
-}) : (function FrameRenderTarget(arg0) {
-  let frameId;
+  const tmp5 = closure_8();
+  const tmp6 = closure_9(presentation);
+  const tmp8 = webViewKey(11781)(frameId, level, tmp6);
+  const tmp7 = webViewKey;
+  webViewKey = tmp8.webViewKey;
+  const temporaryParentNodeTag = tmp8.temporaryParentNodeTag;
+  if (cResult[0] === frameId) {
+    let tmp9;
+    if (cResult[1] === webViewKey) {
+      tmp9 = cResult[2];
+    }
+    const syncExternalStore = react.useSyncExternalStore(tmp7(11782).subscribe, tmp9);
+    if (null == webViewKey) {
+      return null;
+    } else {
+      if (cResult[3] === tmp5.target) {
+        if (cResult[4] === temporaryParentNodeTag) {
+          let tmp13;
+          if (cResult[5] === webViewKey) {
+            tmp13 = cResult[6];
+          }
+          let tmp16 = tmp13;
+          if (tmp4) {
+            if (cResult[7] === syncExternalStore) {
+              let tmp17;
+              if (cResult[8] === tmp5.loading) {
+                tmp17 = cResult[9];
+              }
+              if (cResult[10] === tmp5.target) {
+                if (cResult[11] === tmp17) {
+                  let tmp22;
+                  if (cResult[12] === tmp13) {
+                    tmp22 = cResult[13];
+                  }
+                  tmp16 = tmp22;
+                }
+              }
+              const obj2 = { style: tmp5.target, children: items };
+              items = [tmp13, tmp17];
+              const tmp25 = closure_7(closure_5, obj2);
+              cResult[10] = tmp5.target;
+              cResult[11] = tmp17;
+              cResult[12] = tmp13;
+              cResult[13] = tmp25;
+              tmp22 = tmp25;
+            }
+            let tmp18 = null;
+            if (!syncExternalStore) {
+              const obj3 = { style: tmp5.loading, pointerEvents: "none", children: closure_6(closure_4, { size: "large" }) };
+              tmp18 = closure_6(closure_5, obj3);
+            }
+            cResult[7] = syncExternalStore;
+            cResult[8] = tmp5.loading;
+            cResult[9] = tmp18;
+            tmp17 = tmp18;
+          }
+          return tmp16;
+        }
+      }
+      const obj4 = { webViewKey, temporaryParentNodeTag, style: tmp5.target };
+      const tmp15 = closure_6(tmp(7908).WebViewTarget, obj4);
+      cResult[3] = tmp5.target;
+      cResult[4] = temporaryParentNodeTag;
+      cResult[5] = webViewKey;
+      cResult[6] = tmp15;
+      tmp13 = tmp15;
+    }
+  }
+  const fn = function o() {
+    let isWebViewLoadedResult = null != webViewKey;
+    if (isWebViewLoadedResult) {
+      const obj = FramePoolManagerDefault;
+      isWebViewLoadedResult = obj.isWebViewLoaded(frameId, tmp);
+    }
+    return isWebViewLoadedResult;
+  };
+  cResult[0] = frameId;
+  cResult[1] = webViewKey;
+  cResult[2] = fn;
+  tmp9 = fn;
+}) : (function FrameRenderTarget(frameId) {
+  let items;
   let level;
   let presentation;
-  ({ frameId, level, presentation } = arg0);
-  const tmp = closure_5();
-  const tmp2 = closure_6(presentation);
-  const webViewKey = useFramePoolBorrowDefault(frameId, level, tmp2).webViewKey;
-  let tmp6 = null;
-  useFramePoolBorrowDefault(frameId, level, tmp2);
-  if (null != webViewKey) {
-    tmp6 = jsx(WebView.WebViewTarget, { webViewKey, temporaryParentNodeTag: tmp5, style: tmp.target });
+  frameId = frameId.frameId;
+  let flag = frameId.spinnerWhileLoading;
+  ({ level, presentation } = frameId);
+  if (flag === undefined) {
+    flag = false;
   }
-  return tmp6;
+  let webViewKey;
+  const tmp = closure_8();
+  const tmp2 = closure_9(presentation);
+  const tmp4 = webViewKey(11781)(frameId, level, tmp2);
+  webViewKey = tmp4.webViewKey;
+  const temporaryParentNodeTag = tmp4.temporaryParentNodeTag;
+  if (null == webViewKey) {
+    return null;
+  } else {
+    const obj2 = { webViewKey, temporaryParentNodeTag, style: tmp.target };
+    const tmp13 = closure_6(frameId(7908).WebViewTarget, obj2);
+    let tmp6Result = tmp13;
+    if (flag) {
+      let obj = { style: tmp.target, children: items };
+      items = [tmp13, ];
+      let tmp11Result = null;
+      const tmp6 = closure_7;
+      if (!tmp5) {
+        const obj3 = { style: tmp.loading, pointerEvents: "none", children: closure_6(closure_4, { size: "large" }) };
+        tmp11Result = tmp11(tmp7, obj3);
+      }
+      items[1] = tmp11Result;
+      tmp6Result = tmp6(tmp7, obj);
+    }
+    return tmp6Result;
+  }
 });
 const result = size.fileFinishedImporting("modules/frames/native/FrameRenderTarget.tsx");
 
-export default tmp2;
+export default tmp6;

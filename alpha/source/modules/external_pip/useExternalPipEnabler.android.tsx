@@ -1,13 +1,13 @@
-// Module ID: 18448
-// Function ID: 18449
+// Module ID: 18482
+// Function ID: 18483
 // Name: useExternalPipEnabler
-// Dependencies: [6772, 502, 5714, 558, 576, 18449, 504, 2]
+// Dependencies: [6773, 502, 5715, 558, 576, 18483, 504, 2]
 
-// Module 18448 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 18449 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+// Module 18482 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 18483 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

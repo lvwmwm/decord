@@ -1,14 +1,14 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 13335
+// Function ID: 13336
 // Name: NotificationUtils
-// Dependencies: [5, 13312, 1087, 13315, 1267, 10753, 7891, 11526, 2]
+// Dependencies: [5, 13326, 1084, 13329, 1264, 10756, 7892, 11528, 2]
 
-// Module 13321 (NotificationUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PushNotificationDefault from "PushNotification" /* 10753 */;
-import SoundUtils from "SoundUtils" /* 11526 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13312 */;
+// Module 13335 (NotificationUtils)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PushNotificationDefault from "PushNotification" /* 10756 */;
+import SoundUtils from "SoundUtils" /* 11528 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c0;
 
 let tmp;
-const react_nativeDefault = tmp(7891);
+const react_nativeDefault = tmp(7892);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {
@@ -44,7 +44,7 @@ let obj = {
     obj2.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj3 = PushNotificationDefault;
     const permissions = obj3.requestPermissions();
-    permissions.then((sound) => {
+    return permissions.then((sound) => {
       let _alert;
       let badge;
       ({ alert: _alert, badge } = sound);

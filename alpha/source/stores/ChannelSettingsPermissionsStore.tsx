@@ -1,20 +1,20 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18319
+// Function ID: 18320
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [2045, 10094, 4823, 1087, 7875, 510, 4908, 11312, 12, 504, 584, 2]
+// Dependencies: [2042, 10096, 4824, 1084, 7876, 510, 4909, 11315, 12, 504, 584, 2]
 
-// Module 18285 (ChannelSettingsPermissionsStore)
+// Module 18319 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7875 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11312 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10094 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import Constants from "Constants" /* 1087 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7876 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11315 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10096 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let areChannelsLockedResult, closure_20, closure_5;
@@ -100,7 +100,7 @@ function syncChannelUpdates(id) {
           }
           const areChannelsLocked = PermissionUtilsAll.areChannelsLocked;
           PermissionUtilsAll;
-          const obj5 = obj4(11312);
+          const obj5 = obj4(11315);
           let closure_4 = areChannelsLocked(channel, category, obj5.getAppChannelBotUserId(channel));
           return true;
         }

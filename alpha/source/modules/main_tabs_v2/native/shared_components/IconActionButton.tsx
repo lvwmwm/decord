@@ -1,20 +1,20 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14016
+// Function ID: 14017
 // Name: IconActionButton
-// Dependencies: [377, 19, 21, 4971, 587, 1384, 558, 576, 1202, 5253, 5234, 6908, 9704, 2]
+// Dependencies: [377, 19, 21, 4972, 587, 1381, 558, 576, 1199, 5254, 5235, 6910, 9706, 2]
 
-// Module 14002 (IconActionButton)
+// Module 14016 (IconActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import useFontScale from "useFontScale" /* 5253 */;
-import Pressables from "Pressables" /* 6908 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9704 */;
+import native from "native" /* 1199 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import useFontScale from "useFontScale" /* 5254 */;
+import Pressables from "Pressables" /* 6910 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9706 */;
 import _readOnlyError from "_readOnlyError" /* 377 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const shared_components_Badge = tmp(9704);
+const shared_components_Badge = tmp(9706);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
   let num;
@@ -258,7 +258,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
                     let tmp20 = null;
                     if (num > 0) {
                       const obj4 = { style: tmp4.countStyle, value: num };
-                      tmp20 = React3(tmp(1202).Badge, obj4);
+                      tmp20 = React3(tmp(1199).Badge, obj4);
                     }
                     cResult[15] = num;
                     cResult[16] = tmp4.countStyle;
@@ -270,7 +270,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
               let tmp17 = tmp7;
               if (tmp17) {
                 const obj5 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp4.actionText, children: buttonText };
-                tmp17 = React3(tmp(5234).Text, obj5);
+                tmp17 = React3(tmp(5235).Text, obj5);
               }
               cResult[10] = buttonText;
               cResult[11] = buttonTextColor;
@@ -339,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(6908).PressableOpacity;
+  const PressableOpacity = tmp2(6910).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
@@ -354,13 +354,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconActionBu
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5234).Text, obj2);
+    tmp10Result = tmp10(tmp2(5235).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;
   if (num > 0) {
     const obj3 = { style: tmp.countStyle, value: num };
-    tmp10Result2 = tmp10(tmp2(1202).Badge, obj3);
+    tmp10Result2 = tmp10(tmp2(1199).Badge, obj3);
   }
   items1[2] = tmp10Result2;
   if (badge) {

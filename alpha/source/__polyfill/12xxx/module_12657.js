@@ -1,26 +1,28 @@
 // Module ID: 12657
 // Function ID: 12658
-// Dependencies: [12658, 12641, 12637]
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 12657
-import eventFromMessage from "eventFromMessage" /* 12641 */;
-import _mod12658 from "module_12658" /* 12658 */;
-import module_12637 from "module_12637" /* 12637 */;
 
-
-export const linkedErrorsIntegration = module_12637.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = _mod12658;
-      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
     }
-  };
-});
+    tmp2 = flag;
+  }
+  return tmp2;
+};

@@ -1,13 +1,13 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2002
+// Function ID: 2003
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 2006, 2007, 2009, 2011, 1267, 2]
+// Dependencies: [5, 2003, 2004, 2006, 2008, 1264, 2]
 
-// Module 2005 (ZoomedInTelemetry)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2006 */;
-import TelemetryRingNative2 from "TelemetryRingNative" /* 2009 */;
+// Module 2002 (ZoomedInTelemetry)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2003 */;
+import TelemetryRingNative2 from "TelemetryRingNative" /* 2006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 2007 */;
+import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 const TelemetryRingNative = TelemetryRingNative2;

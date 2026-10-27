@@ -1,20 +1,20 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12427
+// Function ID: 12428
 // Name: ConjureNativeStepImages
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 12180, 5669, 12178, 8751, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 12200, 5670, 12428, 2]
 
-// Module 12421 (ConjureNativeStepImages)
+// Module 12427 (ConjureNativeStepImages)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import openMediaModal from "openMediaModal" /* 8751 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12180 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12200 */;
+import openConjureNativeImages2 from "openConjureNativeImages" /* 12428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size_mod from "module_2" /* 2 */;
+import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
@@ -135,10 +135,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepIm
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeStepImages(projectId) {
   let onOpen;
-  let obj = projectId(576);
+  const obj = projectId(576);
   const cResult = obj.c(13);
   projectId = projectId.projectId;
-  let images = projectId.images;
+  const images = projectId.images;
   const tmp2 = closure_9();
   if (cResult[0] === images) {
     let tmp3;
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
             return tmp7;
           }
-          class I {
+          class C {
             constructor(image) {
               return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
             }
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           tmp5 = cResult[9];
         }
         let mapped = images.map(tmp5);
-        class I {
+        class C {
           constructor(image) {
             return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
           }
@@ -191,36 +191,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         cResult[6] = mapped;
         tmp4 = mapped;
       }
-      class I {
+      class C {
         constructor(image) {
           return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
         }
       }
       cResult[7] = tmp3;
       cResult[8] = projectId;
-      cResult[9] = I;
-      tmp5 = I;
+      cResult[9] = C;
+      tmp5 = C;
     }
   }
   const fn = function n(arg0) {
-    let closure_1;
-    const id = arg0;
-    images = images.findIndex((id) => id.id === id.id);
-    const allPromises = Promise.all(images.map((id) => {
-      const obj = projectId(onOpen[9]);
-      return obj.getAttachmentUrl(id, id.id);
-    }));
-    allPromises.then((arr) => {
-      const mapped = arr.map((uri, mediaIndex) => {
-        size = { uri, mediaIndex, width: 1280, height: 800, accessoryType: "embed", description: closure_1_1[mediaIndex].name, disableDownload: true };
-        return size;
-      });
-      const obj = openMediaModal;
-      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "ConjureChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
-      obj.openMediaModal(obj2);
-    }, () => {
-
-    });
+    let closure_0 = arg0;
+    const openConjureNativeImages = openConjureNativeImages2.openConjureNativeImages;
+    openConjureNativeImages2;
+    const mapped = images.map((id) => ({ id: id.id, alt: id.name }));
+    const result = openConjureNativeImages(projectId, mapped, images.findIndex((id) => id.id === id.id));
   };
   cResult[0] = images;
   cResult[1] = projectId;
@@ -228,28 +215,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   tmp3 = fn;
 }) : (function ConjureNativeStepImages(projectId) {
   projectId = projectId.projectId;
-  let images = projectId.images;
+  const images = projectId.images;
   const items = [images, projectId];
   const tmp = closure_9();
   const onOpen = react.useCallback((arg0) => {
-    let closure_1;
-    const id = arg0;
-    images = images.findIndex((id) => id.id === id.id);
-    const allPromises = Promise.all(images.map((id) => {
-      const obj = projectId(onOpen[9]);
-      return obj.getAttachmentUrl(id, id.id);
-    }));
-    allPromises.then((arr) => {
-      const mapped = arr.map((uri, mediaIndex) => {
-        size = { uri, mediaIndex, width: 1280, height: 800, accessoryType: "embed", description: closure_1_1[mediaIndex].name, disableDownload: true };
-        return size;
-      });
-      const obj = openMediaModal;
-      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "ConjureChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
-      obj.openMediaModal(obj2);
-    }, () => {
-
-    });
+    let closure_0 = arg0;
+    const openConjureNativeImages = openConjureNativeImages2.openConjureNativeImages;
+    openConjureNativeImages2;
+    const mapped = images.map((id) => ({ id: id.id, alt: id.name }));
+    const result = openConjureNativeImages(projectId, mapped, images.findIndex((id) => id.id === id.id));
   }, items);
   let tmp2 = null;
   if (0 !== images.length) {
@@ -257,7 +231,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   }
   return tmp2;
 });
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureNativeStepImages.tsx");
+let result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureNativeStepImages.tsx");
 
 export default tmp4;

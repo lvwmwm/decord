@@ -1,20 +1,20 @@
-// Module ID: 7071
-// Function ID: 7072
+// Module ID: 7073
+// Function ID: 7074
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4971, 587, 558, 576, 6924, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 6926, 2]
 
-// Module 7071 (AuthNavbarPlaceholder)
+// Module 7073 (AuthNavbarPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const NavigatorHeader = tmp(6924);
+const NavigatorHeader = tmp(6926);
 const jsx = Fragment.jsx;
 let obj = { navBar: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };

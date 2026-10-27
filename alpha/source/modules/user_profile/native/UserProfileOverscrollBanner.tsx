@@ -1,7 +1,7 @@
 // Module ID: 8735
 // Function ID: 8736
 // Name: UserProfileOverscrollBanner
-// Dependencies: [109, 19, 17, 21, 5052, 8736, 558, 576, 8737, 1384, 2]
+// Dependencies: [109, 19, 17, 21, 5053, 8736, 558, 576, 8737, 1381, 2]
 
 // Module 8735 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
@@ -11,14 +11,14 @@ import UserProfileBannerDefault from "UserProfileBanner" /* 8737 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1384);
+const PlatformUtils = tmp(1381);
 let closure_3 = ["bannerAnimatedStyle", "bannerImageAnimatedStyle", "blurAnimatedProps", "showBlur"];
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

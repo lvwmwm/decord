@@ -1,14 +1,14 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12215
+// Function ID: 12216
 // Name: ConjureLinkedAppBuildSheet
-// Dependencies: [19, 21, 4971, 587, 558, 576, 1633, 1128, 3830, 7248, 5210, 12192, 6984, 6985, 7294, 5977, 7298, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 1630, 1125, 3831, 7250, 5211, 12210, 6986, 6987, 7296, 5978, 7300, 2]
 
-// Module 12197 (ConjureLinkedAppBuildSheet)
+// Module 12215 (ConjureLinkedAppBuildSheet)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLin
   ({ title, value } = arg0);
   const tmp3 = closure_5(require("useSafeAreaInsets")().bottom);
   const intl = require("intl").intl;
-  const stringResult = intl.string(require("module_3830").Odrcmq);
+  const stringResult = intl.string(require("module_3831").Odrcmq);
   let obj = { header: closure_3(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title }), children: tmp7(Stack, obj2) };
   const ActionSheet = require("ActionSheet").ActionSheet;
   obj2 = { spacing: require("native").space.PX_16, style: tmp3.content, children: items };

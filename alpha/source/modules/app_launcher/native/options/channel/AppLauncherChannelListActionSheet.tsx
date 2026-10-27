@@ -1,24 +1,24 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12097
+// Function ID: 12098
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 4845, 21, 4971, 587, 558, 576, 8551, 8502, 12085, 6708, 5210, 12050, 12052, 5604, 5234, 6903, 2]
+// Dependencies: [32, 19, 4846, 21, 4972, 587, 558, 576, 8551, 8502, 12086, 6709, 5211, 12051, 12053, 5605, 5235, 6905, 2]
 
-// Module 12096 (AppLauncherChannelListActionSheet)
+// Module 12097 (AppLauncherChannelListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useChannelNameDefault from "useChannelName" /* 5604 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6708 */;
-import TableRow2 from "TableRow" /* 6903 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import useChannelNameDefault from "useChannelName" /* 5605 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6709 */;
+import TableRow2 from "TableRow" /* 6905 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
 import TextIcon3 from "TextIcon" /* 8551 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12085 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

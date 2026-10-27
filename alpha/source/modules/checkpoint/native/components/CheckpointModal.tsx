@@ -1,32 +1,32 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 12967
+// Function ID: 12968
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 4914, 12956, 6015, 1098, 21, 4971, 587, 1633, 12957, 12960, 504, 6363, 8624, 11624, 8572, 12963, 12964, 12965, 6362, 12967, 6672, 5662, 1128, 6364, 5037, 12968, 12969, 12971, 12979, 8629, 8630, 13024, 6931, 13025, 13028, 13037, 2000, 6022, 12902, 558, 576, 13039, 2]
+// Dependencies: [5, 32, 19, 17, 4915, 12968, 6016, 1095, 21, 4972, 587, 1630, 12969, 12972, 504, 6365, 8624, 11626, 8572, 12975, 12976, 12977, 6364, 12979, 6673, 5663, 1125, 6040, 5038, 12980, 12981, 12983, 12992, 8629, 8630, 13038, 6933, 13039, 13042, 13051, 1997, 6023, 12911, 558, 576, 13053, 2]
 
-// Module 12955 (CheckpointModal)
+// Module 12967 (CheckpointModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import Server from "Server" /* 2000 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6022 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12902 */;
-import CheckpointStore2 from "CheckpointStore" /* 12956 */;
-import CheckpointFlows from "CheckpointFlows" /* 12960 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13039 */;
+import Constants from "Constants" /* 1095 */;
+import Server from "Server" /* 1997 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6023 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12911 */;
+import CheckpointStore2 from "CheckpointStore" /* 12968 */;
+import CheckpointFlows from "CheckpointFlows" /* 12972 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13053 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 4914 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import MessageRecord from "MessageRecord" /* 4915 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, closure_1, closure_2, importDefault;
+let _require, c4, c5, closure_2, importDefault;
 
 let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_LOGO_SIZE;
@@ -50,11 +50,11 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let activeRoute;
   let c9;
   let characterStage;
-  let closure_0;
   let closure_3;
   let closure_5;
   let first;
   let first1;
+  let flow;
   let intl2;
   let items10;
   let items4;
@@ -67,6 +67,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let obj6;
   let ref;
   let shadowColor;
+  let stats;
   let statsScreen;
   let str2;
   let str3;
@@ -91,7 +92,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let closure_7;
   let selectedCharacterTraits;
   c9 = undefined;
-  function transition(arg0) {
+  function transition(direction) {
     obj = arg1;
     if (arg1 === undefined) {
       obj = {};
@@ -102,18 +103,19 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     }
     const timestamp = Date.now();
     if (flag) {
+      const obj3 = { flow, stats, currentRoute, direction };
       const obj2 = CheckpointFlows;
-      const adjacentCheckpointRoute = obj2.getAdjacentCheckpointRoute(closure_0, first, arg0, closure_1);
+      const adjacentCheckpointRoute = obj2.getAdjacentCheckpointRoute(obj3);
       const tmp4 = require;
-      const tmp7 = first;
+      const tmp8 = currentRoute;
       if (null != adjacentCheckpointRoute) {
         ref.current = timestamp;
-        const SILENT_CHECKPOINT_ROUTES = tmp4(6363).SILENT_CHECKPOINT_ROUTES;
-        if (!SILENT_CHECKPOINT_ROUTES.has(tmp7)) {
+        const SILENT_CHECKPOINT_ROUTES = tmp4(6365).SILENT_CHECKPOINT_ROUTES;
+        if (!SILENT_CHECKPOINT_ROUTES.has(tmp8)) {
           closure_7();
         }
         closure_3(adjacentCheckpointRoute);
-      } else if (1 === arg0) {
+      } else if (1 === direction) {
         const arr = ModalActionCreatorsDefault;
         arr.pop();
       }
@@ -121,6 +123,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   }
   let obj = function _handleNext() {
     obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
       let obj5;
       let obj7;
       if (c5 === 2) {
@@ -149,7 +152,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_1 = tmp;
+              let closure_1 = tmp;
               characterFromTraits = undefined;
               if (first === characterFromTraits(closure_2[15]).CheckpointRoute.HOME) {
                 if (_undefined.fetchState !== constants.SUCCESS) {
@@ -245,7 +248,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   const rect = require("useSafeAreaInsets")();
   obj = react;
   const effect = react.useEffect(() => {
-    obj = closure_0(first[12]);
+    obj = flow(first[12]);
     obj.resetEditedCharacter();
   }, []);
   const tmp5 = _require;
@@ -292,7 +295,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
       BASE = tmp5(tmp3[22]).CheckpointCustomizationOption.BASE;
     }
   }
-  const tmp26 = tmp5(tmp3[22]).CUSTOMIZATION_OPTION_TRAITS[tmp23];
+  const tmp26 = tmp5(tmp3[22]).CUSTOMIZATION_OPTION_TO_TRAIT[tmp23];
   const tmp27 = tmp2(tmp3[23])();
   selectedCharacterTraits = tmp27.selectedCharacterTraits;
   const blockedTraits = tmp27.blockedTraits;
@@ -419,7 +422,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
         message: new MessageRecord(obj4),
         source: "checkpoint",
         customSendHandler() {
-          obj = closure_0(first[42]);
+          obj = flow(first[42]);
           obj.closeForwardModal();
           transition(1, { skipThrottle: true });
           return Promise.resolve();

@@ -4,7 +4,7 @@
 
 // Module 1933
 const obj = {
-  locale: "pl",
+  locale: "ru",
   pluralRuleFunction(arg0, arg1) {
     let arr;
     let str6;
@@ -17,40 +17,46 @@ const obj = {
     let str2 = "other";
     if (!arg1) {
       let str3;
-      if (1 != arg0) {
-        let str5;
-        if (!tmp2) {
-          if (substr >= 2) {
-            if (substr <= 4) {
-              str5 = "few";
-              if (substr1 >= 12) {
-                str5 = "few";
-              }
-            }
-            str3 = str5;
-          }
+      let str5;
+      if (!tmp2) {
+        if (1 == substr) {
+          str3 = "one";
         }
-        if (!tmp2) {
-          if (1 != arr) {
-            if (0 != substr) {
-              str5 = str6;
+        str2 = str3;
+      }
+      if (!tmp2) {
+        if (substr >= 2) {
+          if (substr <= 4) {
+            str5 = "few";
+            if (substr1 >= 12) {
+              str5 = "few";
             }
           }
-          str6 = "many";
+          str3 = str5;
+        }
+      }
+      if (tmp2) {
+        if (!tmp2) {
+          if (substr >= 5) {
+            str5 = str6;
+          }
         }
         str6 = "other";
         if (!tmp2) {
           str6 = "other";
-          if (substr1 >= 12) {
+          if (substr1 >= 11) {
             str6 = "other";
           }
         }
-      } else {
-        str3 = "one";
       }
-      str2 = str3;
+      str6 = "many";
     }
     return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-BY", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KG", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KZ", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-MD", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-UA", parentLocale: "ru" });

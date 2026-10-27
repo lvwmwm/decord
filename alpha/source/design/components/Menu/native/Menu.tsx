@@ -1,24 +1,24 @@
-// Module ID: 15237
-// Function ID: 15238
+// Module ID: 15273
+// Function ID: 15274
 // Name: Menu
-// Dependencies: [32, 19, 17, 1087, 21, 15238, 4971, 587, 5052, 4985, 1633, 1499, 1384, 4980, 1128, 5971, 5206, 5972, 15239, 15240, 5247, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 15274, 4972, 587, 5053, 4986, 1630, 1496, 1381, 4981, 1125, 5972, 5207, 5973, 15275, 15276, 5248, 2]
 // Exports: Menu
 
-// Module 15237 (Menu)
+// Module 15273 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
-import react_native from "react-native" /* 5971 */;
-import Easing from "Easing" /* 15238 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import spring from "spring" /* 5248 */;
+import react_native from "react-native" /* 5972 */;
+import Easing from "Easing" /* 15274 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -108,9 +108,9 @@ export const Menu = function Menu(toggleButtonRef) {
   function openMenuCallback() {
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4980).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4981).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       announce(intl.string(intl2.t.ZqK0uI));
     }
     const obj2 = { ref };
@@ -297,7 +297,7 @@ export const Menu = function Menu(toggleButtonRef) {
       items1[1] = num4;
       items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
       const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-      const interpolate2 = tmp2(5052).interpolate;
+      const interpolate2 = tmp2(5053).interpolate;
       ReanimatedRexport;
       const value8 = obj2.get();
       if ("top" === __initData) {

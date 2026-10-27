@@ -1,16 +1,16 @@
 // Module ID: 9043
 // Function ID: 9044
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4903, 1087, 4829, 1098, 558, 576, 504, 4908, 1099, 1128, 2067, 2]
+// Dependencies: [4904, 1084, 4830, 1095, 558, 576, 504, 4909, 1096, 1125, 2064, 2]
 
 // Module 9043 (usePrivacyLevelHelpText)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import Constants from "Constants" /* 1084 */;
+import Constants2 from "Constants" /* 1095 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,29 +129,29 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStagePr
     privacy_level = privacy_level.privacy_level;
   }
   if (privacy_level === constants.PUBLIC) {
-    const intl4 = tmp(1128).intl;
-    stringResult = intl4.string(tmp(1128).t.GFq5Rg);
+    const intl4 = tmp(1125).intl;
+    stringResult = intl4.string(tmp(1125).t.GFq5Rg);
   } else if (stateFromStores) {
     let stringResult1;
     if (canEveryoneRoleResult) {
       let formatResult = null;
       if (arg2 === constants.PUBLIC) {
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const format = intl3.format;
         const obj3 = { articleURL: obj4.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        const prop = tmp(1128).t["ew/Jq4"];
+        const prop = tmp(1125).t["ew/Jq4"];
         obj4 = HelpdeskUtilsDefault;
         formatResult = format(prop, obj3);
       }
       stringResult1 = formatResult;
     } else {
-      const intl2 = tmp(1128).intl;
-      stringResult1 = intl2.string(tmp(1128).t.E5T7a3);
+      const intl2 = tmp(1125).intl;
+      stringResult1 = intl2.string(tmp(1125).t.E5T7a3);
     }
     stringResult = stringResult1;
   } else {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t.BOjr7t);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t.BOjr7t);
   }
   const obj5 = { helpText: stringResult, guildOnlyDisabled: privacy_level1 === constants.PUBLIC, publicDisabled: tmp16 };
   privacy_level1 = undefined;

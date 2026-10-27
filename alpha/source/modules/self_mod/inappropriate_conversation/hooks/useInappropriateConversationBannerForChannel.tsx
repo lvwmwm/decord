@@ -1,19 +1,19 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10936
+// Function ID: 10937
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [10693, 558, 576, 10934, 10935, 10932, 10931, 2]
+// Dependencies: [10696, 558, 576, 10937, 10938, 10935, 10934, 2]
 
-// Module 10933 (useInappropriateConversationBannerForChannel)
+// Module 10936 (useInappropriateConversationBannerForChannel)
 import react from "react" /* 576 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10693 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10696 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useChannelSafetyWarning = tmp(10931);
-const useInappropriateConversationWarningsForChannel = tmp(10932);
-const SelfModInappropriateConversationExperiment = tmp(10934);
-const useSafetyAlertsSettingOrDefault = tmp(10935);
+const useChannelSafetyWarning = tmp(10934);
+const useInappropriateConversationWarningsForChannel = tmp(10935);
+const SelfModInappropriateConversationExperiment = tmp(10937);
+const useSafetyAlertsSettingOrDefault = tmp(10938);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationBannerForChannel(arg0, location) {
   let tmp4;

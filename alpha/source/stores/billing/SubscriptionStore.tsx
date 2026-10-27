@@ -1,17 +1,17 @@
-// Module ID: 2058
-// Function ID: 2059
+// Module ID: 2055
+// Function ID: 2056
 // Name: SubscriptionStore
-// Dependencies: [1393, 2051, 2059, 502, 1087, 504, 584, 2]
+// Dependencies: [1390, 2048, 2056, 502, 1084, 504, 584, 2]
 // Exports: getSubscriptionOfType
 
-// Module 2058 (SubscriptionStore)
+// Module 2055 (SubscriptionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2051 */;
-import SubscriptionRecord2 from "SubscriptionRecord" /* 2059 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1393 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2048 */;
+import SubscriptionRecord2 from "SubscriptionRecord" /* 2056 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1390 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -271,7 +271,7 @@ obj = {
     });
   },
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: function handleSubscriptionUpdate(subscription) {
-    const f90592 = (id) => id.id === fromServer.id;
+    const f90763 = (id) => id.id === fromServer.id;
     subscription = subscription.subscription;
     if (subscription.user_id === AuthenticationStore.getId()) {
       const fromServer = SubscriptionRecord.createFromServer(subscription);
@@ -286,7 +286,7 @@ obj = {
       const tmp7 = null != items3 && fromServer.type === hasOwnProperty.GUILD;
       if (tmp7) {
         let tmp15;
-        const findIndexResult = items3.findIndex(f90592);
+        const findIndexResult = items3.findIndex(f90763);
         if (-1 === findIndexResult) {
           const items = [fromServer];
           HermesBuiltin.arraySpread(items, items3, 1);
@@ -308,7 +308,7 @@ obj = {
       const tmp20 = null != _null && fromServer.type === hasOwnProperty.APPLICATION;
       if (tmp20) {
         let tmp28;
-        const findIndexResult1 = _null.findIndex(f90592);
+        const findIndexResult1 = _null.findIndex(f90763);
         if (-1 === findIndexResult1) {
           const items2 = [fromServer];
           HermesBuiltin.arraySpread(items2, _null, 1);

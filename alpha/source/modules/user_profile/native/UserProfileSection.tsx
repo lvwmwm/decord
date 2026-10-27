@@ -1,20 +1,20 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 11281
+// Function ID: 11282
 // Name: UserProfileSection
-// Dependencies: [109, 19, 17, 21, 4971, 587, 558, 576, 5037, 7280, 4968, 8955, 5234, 2]
+// Dependencies: [109, 19, 17, 21, 4972, 587, 558, 576, 5038, 7282, 4969, 8955, 5235, 2]
 
-// Module 11278 (UserProfileSection)
+// Module 11281 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ColorUtils from "ColorUtils" /* 4968 */;
-import native from "native" /* 5037 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7280 */;
+import ColorUtils from "ColorUtils" /* 4969 */;
+import native from "native" /* 5038 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7282 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

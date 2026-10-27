@@ -1,31 +1,31 @@
 // Module ID: 8823
 // Function ID: 8824
 // Name: ICYMIStore
-// Dependencies: [32, 8824, 5190, 6784, 502, 4823, 8833, 4845, 6010, 4903, 6771, 4913, 6704, 8835, 8837, 1087, 8839, 1104, 8840, 8836, 8613, 8617, 8829, 8849, 8838, 8846, 7448, 6012, 504, 584, 2]
+// Dependencies: [32, 8824, 5191, 6785, 502, 4824, 8833, 4846, 6011, 4904, 6772, 4914, 6705, 8835, 8837, 1084, 8839, 1101, 8840, 8836, 8613, 8617, 8829, 8849, 8838, 8846, 7449, 6013, 504, 584, 2]
 
 // Module 8823 (ICYMIStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
+import DurationsDefault from "Durations" /* 1101 */;
 import ICYMITypes from "ICYMITypes" /* 8836 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 8839 */;
 import ICYMIUtils from "ICYMIUtils" /* 8840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 8824 */;
-import ExperimentStore from "ExperimentStore" /* 5190 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6784 */;
+import ExperimentStore from "ExperimentStore" /* 5191 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6785 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8833 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import MessageStore from "MessageStore" /* 6010 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import MessageStore from "MessageStore" /* 6011 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
 import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8835 */;
 import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8837 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let closure_23;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f101775 = (id) => id.id;
+const f101982 = (id) => id.id;
 function filterStaffGuild(data) {
   if (ICYMIFiltersStore.filterStaffContent()) {
     obj = ICYMIUtils;
@@ -433,7 +433,7 @@ function getNewUnreadItems(arr9, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_27;
-  const f101790 = (data) => {
+  const f101997 = (data) => {
     obj = channelId(dependencyMap[18]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -446,17 +446,17 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f101790);
-    closure_45 = closure_45.filter(f101790);
-    closure_46 = closure_46.filter(f101790);
-    closure_30 = closure_30.filter(f101790);
+    dehydratedItems = dehydratedItems.filter(f101997);
+    closure_45 = closure_45.filter(f101997);
+    closure_46 = closure_46.filter(f101997);
+    closure_30 = closure_30.filter(f101997);
     _require = channelId;
-    closure_31 = closure_31.filter(f101790);
+    closure_31 = closure_31.filter(f101997);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_27;
-  const f101791 = (data) => {
+  const f101998 = (data) => {
     obj = guildId(dependencyMap[18]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -469,12 +469,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f101791);
-    closure_45 = closure_45.filter(f101791);
-    closure_46 = closure_46.filter(f101791);
-    closure_30 = closure_30.filter(f101791);
+    dehydratedItems = dehydratedItems.filter(f101998);
+    closure_45 = closure_45.filter(f101998);
+    closure_46 = closure_46.filter(f101998);
+    closure_30 = closure_30.filter(f101998);
     _require = guildId;
-    closure_31 = closure_31.filter(f101791);
+    closure_31 = closure_31.filter(f101998);
   }
 }
 function handleReaction(colors) {
@@ -574,7 +574,7 @@ function handleAck(channelId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f101775));
+        new Set(items1.map(f101982));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -1096,7 +1096,7 @@ obj = {
         const _Set = Set;
         const self2 = this;
         const self3 = this;
-        const set1 = new Set(arr9.map(f101775));
+        const set1 = new Set(arr9.map(f101982));
         const substr = arr13.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }

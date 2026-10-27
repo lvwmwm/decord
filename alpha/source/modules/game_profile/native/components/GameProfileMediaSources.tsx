@@ -1,25 +1,26 @@
 // Module ID: 9311
 // Function ID: 9312
 // Name: GameProfileMediaSources
-// Dependencies: [1452, 6383, 2037, 2]
+// Dependencies: [1449, 6384, 2034, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
 // Module 9311 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2037 */;
-import StoreUtils from "StoreUtils" /* 6383 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2034 */;
+import StoreUtils from "StoreUtils" /* 6384 */;
 import size_mod from "module_2" /* 2 */;
 
-let originalUrl;
+let map;
 
 let c2 = 366;
-let closure_3 = { width: 1920, height: 1080 };
-let size = size_mod;
+let size = { width: 1920, height: 1080 };
+size = size_mod;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMediaSources.tsx");
 
 export const MEDIA_ITEM_MAX_WIDTH = 366;
 export const MEDIA_ITEM_MAX_HEIGHT = 200;
 export const MEDIA_ITEM_ASPECT_RATIO = 1.83;
+export const MEDIA_VIEWER_ITEM_SIZE = size;
 export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize() {
   let devicePixelRatio = arg0;
   if (arg0 === undefined) {
@@ -63,18 +64,39 @@ export const buildMediaEntries = function buildMediaEntries(game) {
   }
   return items;
 };
-export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult) {
-  let closure_0 = cResult;
-  return arr2.map((originalUrl, mediaIndex) => {
-    let obj2;
-    const obj = { uri: originalUrl.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: obj2, accessoryType: "embed", disableDownload: true };
-    originalUrl = undefined;
-    if ("trailer" === originalUrl.type) {
-      originalUrl = originalUrl.originalUrl;
+export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult, dimensions) {
+  map = dimensions;
+  if (dimensions === undefined) {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
+  }
+  return arr2.map((uri, mediaIndex) => {
+    let height;
+    let originalUrl;
+    let tmp4;
+    let value;
+    if ("image" === uri.type) {
+      value = map.get(uri.originalUrl);
     }
-    const merged = Object.assign(closure_3);
-    obj2 = { uri: originalUrl.previewUrl };
-    const merged1 = Object.assign(require);
+    if (null == value) {
+      height = cResult.height;
+      tmp4 = cResult;
+    } else {
+      const _Math = Math;
+      tmp4 = cResult;
+      height = Math.round(cResult.width * value.height / value.width);
+    }
+    const obj = { uri: uri.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: { width: tmp4.width, height, uri: uri.previewUrl }, accessoryType: "embed", disableDownload: true };
+    originalUrl = undefined;
+    if ("trailer" === uri.type) {
+      originalUrl = uri.originalUrl;
+    }
+    if (value == null) {
+      value = size;
+    }
+    const merged = Object.assign(value);
     return obj;
   });
 };

@@ -1,77 +1,80 @@
 // Module ID: 8251
 // Function ID: 8252
-// Dependencies: []
-// Exports: addMissingNamespaces, isMissingNamespaceError
+// Dependencies: [32, 8212, 8229, 8252]
 
 // Module 8251
-let closure_0 = { xmp: "http://ns.adobe.com/xap/1.0/", tiff: "http://ns.adobe.com/tiff/1.0/", exif: "http://ns.adobe.com/exif/1.0/", dc: "http://purl.org/dc/elements/1.1/", xmpMM: "http://ns.adobe.com/xap/1.0/mm/", stEvt: "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#", stRef: "http://ns.adobe.com/xap/1.0/sType/ResourceRef#", photoshop: "http://ns.adobe.com/photoshop/1.0/" };
+import _mod8212 from "module_8212" /* 8212 */;
+import _modDef8229 from "module_8229" /* 8229 */;
+import PathRecordTypesDefault from "PathRecordTypes" /* 8252 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-export const isMissingNamespaceError = function isMissingNamespaceError(message) {
-  const items = ["prefix is non-null and namespace is null", "prefix not bound to a namespace", "prefix inte bundet till en namnrymd", /Namespace prefix .+ is not defined/];
-  let num = 0;
-  if (0 < items.length) {
-    const _RegExp = RegExp;
-    const self = this;
-    const self2 = this;
-    const regExp = new RegExp(items[num]);
-    while (!regExp.test(message.message)) {
-      num = num + 1;
-    }
-    return true;
+let length;
+let metroImportDefault;
+function getTagName(dataView, sum1) {
+  let num;
+  let sum;
+  const obj = _mod8212;
+  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
+  const first = tmp[0];
+  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
+  num = 0;
+  sum = 1 + first;
+  if (first % 2 === 0) {
+    num = 1;
   }
-  return false;
-};
-export const addMissingNamespaces = function addMissingNamespaces(tmp7Result) {
-  const match = tmp7Result.match(/<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/);
-  if (match) {
-    const items = [];
-    const obj = /xmlns:([\w-]+)=["'][^"']+["']/g;
-    let match1 = obj.exec(tmp7Result);
-    if (null !== match1) {
-      do {
-        if (-1 === items.indexOf(match1[1])) {
-          let arr = items.push(match1[1]);
-        }
-        match1 = obj.exec(tmp7Result);
-      } while (null !== match1);
-    }
-    const items1 = [];
-    const obj2 = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
-    let match2 = obj2.exec(tmp7Result);
-    if (null !== match2) {
-      do {
-        let tmp8 = match2[1];
-        let tmp9 = "xmlns" !== tmp8 && "xml" !== tmp8;
-        if (tmp9) {
-          if (-1 === items1.indexOf(tmp8)) {
-            let arr2 = items1.push(tmp8);
+  return obj2;
+}
+let obj = {
+  read(arg0, arg1) {
+    let tmp4Result2;
+    const getDataView = _mod8212.getDataView;
+    _mod8212;
+    const uint8Array = new Uint8Array(arg0);
+    const dataView = getDataView(uint8Array.buffer);
+    const obj = {};
+    let num = 0;
+    if (0 < arg0.length) {
+      const sum = num + metroImportDefault;
+      const obj2 = _mod8212;
+      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
+      const obj3 = _modDef8229;
+      const shortAt = obj3.getShortAt(dataView, sum);
+      const sum1 = sum + c5;
+      const tmp14 = getTagName(dataView, sum1);
+      let name = tmp14.tagName;
+      const sum2 = sum1 + tmp14.tagNameSize;
+      const obj4 = _modDef8229;
+      const longAt = obj4.getLongAt(dataView, sum2);
+      const sum3 = sum2 + c6;
+      if (stringFromDataView === c4) {
+        const tmp4Result = _mod8212;
+        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
+        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
+        tmp4Result2 = _mod8212;
+        if (PathRecordTypesDefault[shortAt]) {
+          try {
+            const obj5 = PathRecordTypesDefault[shortAt];
+            obj6.description = obj5.description(dataView1);
+          } catch (err) {
+            obj6.description = "<no description formatter>";
           }
+          if (!name) {
+            name = tmp9(8252)[shortAt].name;
+          }
+          obj[name] = obj6;
+        } else if (arg1) {
+          const _HermesInternal = HermesInternal;
+          obj["undefined-" + shortAt] = obj6;
         }
-        match2 = obj2.exec(tmp7Result);
-      } while (null !== match2);
-    }
-    const found = items1.filter((item) => -1 === items.indexOf(item));
-    let replaced = tmp7Result;
-    if (0 !== found.length) {
-      let num3;
-      const items2 = [];
-      for (let num3 = 0; num3 < found.length; num3 = num3 + 1) {
-        let tmp12 = found[num3];
-        let text = closure_0[tmp12];
-        if (!text) {
-          text = `http://fallback.namespace/${tmp12}`;
-        }
-        let arr3 = items2.push(` xmlns:${tmp12}="${tmp14}"`);
       }
-      const _RegExp = RegExp;
-      const self = this;
-      const self2 = this;
-      const joined = items2.join("");
-      const regExp = new RegExp("<" + tmp2 + "([^>]*)>");
-      replaced = tmp7Result.replace(regExp, `<${tmp2}$1${tmp17}>`);
+      num = sum3 + (longAt + longAt % 2);
     }
-    return replaced;
-  } else {
-    return tmp7Result;
+    return obj;
   }
 };
+let c4 = "8BIM";
+let c5 = 2;
+let c6 = 4;
+({ length, length: metroImportDefault } = "8BIM");
+
+export default obj;

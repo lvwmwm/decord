@@ -1,78 +1,27 @@
 // Module ID: 1771
 // Function ID: 1772
-// Dependencies: []
-// Exports: getViewInfo
+// Dependencies: [1691, 1725, 1772, 1783, 1790]
 
 // Module 1771
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1725 */;
+import _mod1772 from "module_1772" /* 1772 */;
+import _mod1783 from "module_1783" /* 1783 */;
+import ProgressTransitionManager from "ProgressTransitionManager" /* 1790 */;
+import module_1691 from "module_1691" /* 1691 */;
 
-export const getViewInfo = function getViewInfo(findHostInstanceResult) {
-  let __nativeTag;
-  let _nativeTag;
-  let _nativeTag1;
-  let obj;
-  let viewConfig1;
-  let viewConfig3;
-  if (undefined !== findHostInstanceResult._nativeTag) {
-    if (null !== findHostInstanceResult.__nativeTag) {
-      let uiViewClassName;
-      if (findHostInstanceResult != null) {
-        const viewConfig2 = findHostInstanceResult.viewConfig;
-        if (viewConfig2 != null) {
-          uiViewClassName = viewConfig2.uiViewClassName;
-        }
-      }
-      const obj2 = { viewName: uiViewClassName, viewTag: _nativeTag, viewConfig: viewConfig1 };
-      _nativeTag = undefined;
-      if (findHostInstanceResult != null) {
-        _nativeTag = findHostInstanceResult._nativeTag;
-      }
-      viewConfig1 = undefined;
-      if (findHostInstanceResult != null) {
-        viewConfig1 = findHostInstanceResult.viewConfig;
-      }
-      obj = obj2;
-    }
-    return obj;
-  }
-  if (undefined !== findHostInstanceResult.__nativeTag) {
-    if (null !== findHostInstanceResult.__nativeTag) {
-      let __viewConfig;
-      if (findHostInstanceResult != null) {
-        __viewConfig = findHostInstanceResult.__viewConfig;
-      }
-      if (__viewConfig == null) {
-        let _viewConfig;
-        if (findHostInstanceResult != null) {
-          _viewConfig = findHostInstanceResult._viewConfig;
-        }
-        __viewConfig = _viewConfig;
-      }
-      let uiViewClassName1;
-      if (__viewConfig != null) {
-        uiViewClassName1 = __viewConfig.uiViewClassName;
-      }
-      const obj3 = { viewName: uiViewClassName1, viewTag: __nativeTag, viewConfig: __viewConfig };
-      __nativeTag = undefined;
-      if (findHostInstanceResult != null) {
-        __nativeTag = findHostInstanceResult.__nativeTag;
-      }
-      obj = obj3;
-    }
-  }
-  let uiViewClassName2;
-  if (findHostInstanceResult != null) {
-    const viewConfig = findHostInstanceResult.viewConfig;
-    if (viewConfig != null) {
-      uiViewClassName2 = viewConfig.uiViewClassName;
-    }
-  }
-  obj = { viewName: uiViewClassName2, viewTag: _nativeTag1, viewConfig: viewConfig3 };
-  _nativeTag1 = undefined;
-  if (findHostInstanceResult != null) {
-    _nativeTag1 = findHostInstanceResult._nativeTag;
-  }
-  viewConfig3 = undefined;
-  if (findHostInstanceResult != null) {
-    viewConfig3 = findHostInstanceResult.viewConfig;
-  }
-};
+for (const key10015 in BaseAnimationBuilder) {
+  exports[key10015] = BaseAnimationBuilder[key10015];
+  continue;
+}
+for (const key10019 in _mod1772) {
+  exports[key10019] = _mod1772[key10019];
+  continue;
+}
+for (const key10023 in _mod1783) {
+  exports[key10023] = _mod1783[key10023];
+  continue;
+}
+for (const key10027 in ProgressTransitionManager) {
+  exports[key10027] = ProgressTransitionManager[key10027];
+  continue;
+}

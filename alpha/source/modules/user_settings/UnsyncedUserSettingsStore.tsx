@@ -1,20 +1,20 @@
-// Module ID: 1209
-// Function ID: 1210
+// Module ID: 1206
+// Function ID: 1207
 // Name: UnsyncedUserSettingsStore
-// Dependencies: [109, 1210, 1097, 1087, 1243, 1244, 1245, 504, 510, 12, 584, 2]
+// Dependencies: [109, 1207, 1094, 1084, 1240, 1241, 1242, 504, 510, 12, 584, 2]
 
-// Module 1209 (UnsyncedUserSettingsStore)
+// Module 1206 (UnsyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import StageAudienceSidebarConstants from "StageAudienceSidebarConstants" /* 1244 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1245 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
+import ThemeConstants from "ThemeConstants" /* 1207 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
+import StageAudienceSidebarConstants from "StageAudienceSidebarConstants" /* 1241 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_SIDEBAR_WIDTH;

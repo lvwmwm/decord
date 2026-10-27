@@ -1,18 +1,18 @@
-// Module ID: 8444
-// Function ID: 8445
+// Module ID: 8443
+// Function ID: 8444
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [4823, 1392, 8318, 8320, 4971, 587, 1128, 8277, 8445, 8322, 2]
+// Dependencies: [4824, 1389, 8317, 8319, 4972, 587, 1125, 8275, 8444, 8321, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8444 (FriendRequestAcceptedSystemMessage)
+// Module 8443 (FriendRequestAcceptedSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 4971 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8318 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8320 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8445 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import UserStore from "UserStore" /* 1392 */;
+import createStyles from "createStyles" /* 4972 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8275 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8317 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8319 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8444 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
@@ -45,9 +45,9 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
               const createNativeStyleProperties = createStyles.createNativeStyleProperties;
               createStyles;
               const baseTextColor = createNativeStyleProperties(obj3)(message.theme).baseTextColor;
-              const intl2 = tmp18(1128).intl;
+              const intl2 = tmp18(1125).intl;
               const formatToParts2 = intl2.formatToParts;
-              const t2 = tmp18(1128).t;
+              const t2 = tmp18(1125).t;
               if (message.author.id === currentUser.id) {
                 const v6pQebO = t2["6pQebO"];
                 const obj4 = { note: content, formattedNote: obj5 };
@@ -66,12 +66,12 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             }
             const obj8 = { content: formatToPartsResult, iconUrl: tmp18Result2.getAssetUriForEmbed(AssetRegistryDefault), textColor: tmp6 };
             tmp18Result2 = renderer_EmbedUtils;
-            const merged2 = Object.assign(tmp21(8322)(message));
+            const merged2 = Object.assign(tmp21(8321)(message));
             return obj8;
           }
-          const intl = tmp18(1128).intl;
+          const intl = tmp18(1125).intl;
           const formatToParts = intl.formatToParts;
-          const t = tmp18(1128).t;
+          const t = tmp18(1125).t;
           if (message.author.id === currentUser.id) {
             formatToPartsResult = formatToParts(t.REfFZs, obj2);
           } else {

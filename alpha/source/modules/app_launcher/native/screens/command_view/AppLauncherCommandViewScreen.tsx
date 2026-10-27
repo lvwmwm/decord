@@ -1,50 +1,50 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12038
+// Function ID: 12039
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 4972, 9650, 4877, 1504, 1087, 1629, 21, 4971, 587, 12038, 558, 576, 504, 5052, 5206, 5209, 5212, 4968, 5258, 1128, 5680, 5245, 11169, 5711, 5593, 12040, 5634, 6660, 11922, 1274, 11988, 12042, 2000, 9649, 11989, 11405, 1499, 10920, 10418, 12043, 10419, 8154, 1896, 8144, 12044, 11170, 5269, 5234, 12045, 12046, 12097, 1202, 38, 12011, 10204, 7630, 9655, 10205, 12098, 12099, 11997, 11998, 2]
+// Dependencies: [5, 32, 19, 17, 4973, 9652, 4878, 1501, 1084, 1626, 21, 4972, 587, 12039, 558, 576, 504, 5053, 5207, 5210, 5213, 4969, 5259, 1125, 5681, 5246, 11172, 5712, 5594, 12041, 5635, 6661, 11923, 1271, 11989, 12043, 1997, 9651, 11990, 11408, 1496, 10923, 10420, 12044, 10421, 8152, 1893, 8142, 12045, 11173, 5270, 5235, 12046, 12047, 12098, 1199, 38, 12012, 10206, 7631, 9657, 10207, 12099, 12100, 11998, 11999, 2]
 
-// Module 12037 (AppLauncherCommandViewScreen)
+// Module 12038 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import timingPresets from "timingPresets" /* 5209 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import BaseTextButton2 from "BaseTextButton" /* 5245 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5634 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9649 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10419 */;
-import AppLauncherContext from "AppLauncherContext" /* 11169 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11170 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11922 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11989 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11997 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11998 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12038 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12040 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12042 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 12045 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12098 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12099 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import timingPresets from "timingPresets" /* 5210 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import BaseTextButton2 from "BaseTextButton" /* 5246 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5635 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7631 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8152 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9651 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10420 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10421 */;
+import AppLauncherContext from "AppLauncherContext" /* 11172 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11173 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11923 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11990 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11998 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11999 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12039 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12041 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12043 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 12046 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12099 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import Constants from "Constants" /* 1087 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9652 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -497,7 +497,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(2000).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(1997).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -755,7 +755,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8144).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8142).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
@@ -1132,7 +1132,7 @@ let obj = { container: obj2, optionsContainer: obj3, requiredOptionsContainer: {
 obj2 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj4 = { paddingVertical: 16, paddingHorizontal: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginTop: 24, borderRadius: nativeDefault.radii.lg };
+obj4 = { paddingVertical: 16, paddingHorizontal: 12, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, marginTop: 24, borderRadius: nativeDefault.radii.lg };
 obj5 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, borderRadius: nativeDefault.radii.lg };
 obj6 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, flex: 1 };
 obj7 = { borderRadius: nativeDefault.radii.xxl, paddingHorizontal: 12, paddingVertical: 8 };
@@ -2210,9 +2210,9 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
   const logAppLauncherEmptyStateView = obj2.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   ({ emptyStateContainer, emptyState } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl4.t["pX/qb9"]);
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl4.t.exOQVY);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -2223,7 +2223,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
   }
   ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult2 = intl3.string(intl4.t["/g10LC"]);
     cResult[2] = stringResult2;
     tmp10 = stringResult2;
@@ -2256,7 +2256,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
         tmp18 = tmp21;
       }
       const obj4 = { style: emptyState, lightSource: AssetRegistryDefault3, darkSource: AssetRegistryDefault4, title: tmp6, body: tmp7, children: tmp12 };
-      const EmptyState = tmp(1202).EmptyState;
+      const EmptyState = tmp(1199).EmptyState;
       const tmp17 = closure_20(EmptyState, obj4);
       cResult[7] = tmp4.emptyState;
       cResult[8] = tmp12;
@@ -2339,9 +2339,9 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
       const _Symbol = Symbol;
       const emptyState = tmp4.emptyState;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const stringResult = intl.string(intl4.t.TzufcR);
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const stringResult1 = intl2.string(intl4.t["I/O+A1"]);
         cResult[8] = stringResult;
         cResult[9] = stringResult1;
@@ -2354,7 +2354,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
       const _Symbol2 = Symbol;
       ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const stringResult2 = intl3.string(intl4.t["/g10LC"]);
         cResult[10] = stringResult2;
         tmp19 = stringResult2;
@@ -2391,7 +2391,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
             tmp28 = tmp31;
           }
           const obj6 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: tmp15, body: tmp16, children: tmp21 };
-          const EmptyState = tmp(1202).EmptyState;
+          const EmptyState = tmp(1199).EmptyState;
           const tmp27 = closure_20(EmptyState, obj6);
           cResult[15] = tmp4.emptyState;
           cResult[16] = tmp21;

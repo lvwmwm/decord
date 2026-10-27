@@ -1,30 +1,30 @@
-// Module ID: 19215
-// Function ID: 19216
+// Module ID: 19253
+// Function ID: 19254
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 16562, 1087, 19216, 21, 4971, 587, 558, 576, 12135, 1128, 19217, 5234, 19218, 1505, 5210, 19220, 2002, 19220, 8951, 5244, 1202, 7012, 19226, 19239, 19264, 19267, 19272, 19273, 1506, 1275, 9361, 5268, 19214, 5662, 19274, 7221, 2]
+// Dependencies: [32, 19, 17, 16604, 1084, 19254, 21, 4972, 587, 558, 576, 12136, 1125, 19255, 5235, 19256, 1502, 5211, 19258, 1999, 19258, 8951, 5245, 1199, 7014, 19264, 19277, 19302, 19305, 19310, 19311, 1503, 1272, 9360, 5269, 19252, 5663, 19312, 7223, 2]
 
-// Module 19215 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 19253 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12135 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19216 */;
-import WarningNoticeDefault from "WarningNotice" /* 19217 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 19220 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 19226 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19239 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19264 */;
+import Constants from "Constants" /* 1084 */;
+import intl5 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import NavigatorConstants from "NavigatorConstants" /* 5269 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12136 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16604 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19254 */;
+import WarningNoticeDefault from "WarningNotice" /* 19255 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 19258 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 19264 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19277 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19302 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(19220, dependencyMap.paths);
+    const tmp2 = asyncRequire(19258, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -216,7 +216,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
       let tmp10;
       const _Symbol2 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const stringResult = intl2.string(intl5.t.OrkTBn);
         cResult[10] = stringResult;
         tmp10 = stringResult;
@@ -229,7 +229,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
       if (null != reapplyNoticeText) {
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult1 = intl.string(intl5.t["YKw/NQ"]);
           cResult[11] = stringResult1;
         }
@@ -373,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionConta
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(5234).Text, obj4);
+      tmp13 = unpackModuleId(tmp(5235).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;
@@ -430,9 +430,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingS
   const cResult = obj.c(16);
   ({ onboardingMarketing, onHowItWorksLayoutChange } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1128).intl;
+    let intl = tmp(1125).intl;
     const stringResult = intl.string(require("intl").t.R9rNIk);
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     let obj2 = { creatorPortalUrl };
     const formatResult = intl2.format(require("intl").t.oxW30N, obj2);
     cResult[0] = stringResult;
@@ -460,7 +460,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingS
   }
   _require = tmp13;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult1 = intl3.string(require("intl").t["1QHJaW"]);
     cResult[5] = stringResult1;
     tmp18 = stringResult1;

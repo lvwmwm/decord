@@ -1,31 +1,31 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15871
+// Function ID: 15872
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11125, 8649, 1097, 1087, 21, 4971, 1128, 15834, 15958, 558, 576, 15967, 5252, 587, 1505, 7090, 8901, 11072, 7078, 15855, 15959, 573, 5711, 11190, 6924, 7485, 1506, 12204, 11148, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11128, 8649, 1094, 1084, 21, 4972, 1125, 15872, 15996, 558, 576, 16005, 5253, 587, 1502, 7092, 8901, 11075, 7080, 15893, 15997, 573, 5712, 11193, 6926, 7486, 1503, 12222, 11151, 2]
 
-// Module 15833 (ProfileCustomizationSettingScreen)
+// Module 15871 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import intl2 from "intl" /* 1128 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7078 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11072 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11190 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15834 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15855 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15958 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15959 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15967 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
+import intl2 from "intl" /* 1125 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7080 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11075 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11193 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15872 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15893 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15996 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15997 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 16005 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11125 */;
+import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 11128 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,13 +100,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(57);
   useMaybeFetchCollectiblesRecommendationsDefault();
   closure_19();
-  let obj2 = token(5252);
+  let obj2 = token(5253);
   token = obj2.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   [first, importDefault] = react.useState(0);
   [dependencyMap, closure_3] = react.useState(false);
-  let obj3 = token(1505);
+  let obj3 = token(1502);
   const nativeStackNavigation = obj3.useNativeStackNavigation();
-  let obj4 = token(7090);
+  let obj4 = token(7092);
   const params = obj4.useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {

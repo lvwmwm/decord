@@ -1,11 +1,11 @@
 // Module ID: 8602
 // Function ID: 8603
 // Name: StringSelectActionComponentUtils
-// Dependencies: [8596, 2000, 2]
+// Dependencies: [8596, 1997, 2]
 // Exports: getInitialStringSelectOptions
 
 // Module 8602 (StringSelectActionComponentUtils)
-import Server from "Server" /* 2000 */;
+import Server from "Server" /* 1997 */;
 import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8596 */;
 import size from "module_2" /* 2 */;
 

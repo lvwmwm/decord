@@ -1,14 +1,15 @@
-// Module ID: 10457
-// Function ID: 10458
+// Module ID: 10459
+// Function ID: 10460
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [6374, 4794, 8125, 5909, 1128, 7690, 7411, 2]
+// Dependencies: [6375, 4795, 8123, 5910, 1125, 10460, 7691, 5663, 2535, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10457 (showSpendingLimitReachedAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6374 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import LayerActionCreators from "LayerActionCreators" /* 7690 */;
+// Module 10459 (showSpendingLimitReachedAlert)
+import _modDef2535 from "module_2535" /* 2535 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6375 */;
+import LayerActionCreators from "LayerActionCreators" /* 7691 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10460 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -16,8 +17,8 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/showSpend
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
   let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    tmp3 = billingError.code === tmp(4794).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4794).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
-    const tmp4 = billingError.code === tmp(4794).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4794).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    tmp3 = billingError.code === tmp(4795).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4795).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    const tmp4 = billingError.code === tmp(4795).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4795).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
   }
   return tmp3;
 };
@@ -28,27 +29,32 @@ export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAl
   let intl3;
   let intl4;
   let obj4;
-  let obj = activeLinkUserIds(8125);
+  let tmp = activeLinkUserIds;
+  let obj = activeLinkUserIds(8123);
   activeLinkUserIds = obj.getActiveLinkUserIds();
-  let obj2 = { title: intl.string(activeLinkUserIds(1128).t.QJKKrT), body: intl2.string(activeLinkUserIds(1128).t["73Islf"]), isDismissable: true };
+  const obj2 = { title: intl.string(activeLinkUserIds(1125).t.QJKKrT), body: intl2.string(activeLinkUserIds(1125).t["73Islf"]), isDismissable: true };
   const show = actions_AlertActionCreatorsDefault.show;
   actions_AlertActionCreatorsDefault;
-  intl = activeLinkUserIds(1128).intl;
-  intl2 = activeLinkUserIds(1128).intl;
+  intl = activeLinkUserIds(1125).intl;
+  intl2 = activeLinkUserIds(1125).intl;
   if (activeLinkUserIds.length > 0) {
-    let obj3 = {
-      confirmText: intl3.string(activeLinkUserIds(1128).t.GF9RCX),
+    const obj3 = {
+      confirmText: intl3.string(tmp(1125).t.GF9RCX),
       onConfirm() {
-          const obj = LayerActionCreators;
-          obj.popLayer();
-          const obj2 = ChannelActionCreatorsDefault;
-          const obj3 = { recipientIds: activeLinkUserIds };
-          obj2.openPrivateChannel(obj3);
+          let length;
+          const tmp = openLinkedUsersChannelDefault;
+          return tmp(activeLinkUserIds, LayerActionCreators.popLayer, () => {
+            const presentFailedToast = activeLinkUserIds(dependencyMap[7]).presentFailedToast;
+            activeLinkUserIds(dependencyMap[7]);
+            const intl = activeLinkUserIds(dependencyMap[4]).intl;
+            const obj = { count: length.length };
+            return presentFailedToast(intl.formatToPlainString(_modDef2535.D1BwNC, obj));
+          });
         },
-      cancelText: intl4.string(activeLinkUserIds(1128).t.L5eIZ2)
+      cancelText: intl4.string(tmp(1125).t.L5eIZ2)
     };
-    intl3 = tmp(1128).intl;
-    intl4 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
+    intl4 = tmp(1125).intl;
     obj4 = obj3;
   } else {
     obj4 = {};

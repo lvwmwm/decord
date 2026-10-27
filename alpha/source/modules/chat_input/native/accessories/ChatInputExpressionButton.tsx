@@ -1,18 +1,18 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 12060
+// Function ID: 12061
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4971, 587, 558, 576, 5252, 1128, 12060, 9351, 1202, 6908, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 5253, 1125, 12061, 9350, 1199, 6910, 2]
 
-// Module 12059 (ChatInputExpressionButton)
+// Module 12060 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import useToken from "useToken" /* 5252 */;
-import Pressables from "Pressables" /* 6908 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import useToken from "useToken" /* 5253 */;
+import Pressables from "Pressables" /* 6910 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.iZ7Mz9);
       cResult[5] = stringResult;
       tmp15 = stringResult;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 12060 : 9351);
+    const tmp5Result = tmp5(showKeyboardIcon ? 12061 : 9350);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         let tmp19;
@@ -150,9 +150,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (bound > 0) {
     tmp12 = bound;
   }
-  const intl = tmp(1128).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 12060 : 9351) });
-  const Icon = tmp(1202).Icon;
+  const intl = tmp(1125).intl;
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 12061 : 9350) });
+  const Icon = tmp(1199).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 }));
 let size = size_mod;

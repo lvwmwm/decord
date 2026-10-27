@@ -1,23 +1,23 @@
-// Module ID: 7279
-// Function ID: 7280
+// Module ID: 7281
+// Function ID: 7282
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4972, 4877, 4845, 1392, 7195, 21, 4971, 587, 558, 576, 1505, 504, 7224, 5037, 7280, 1417, 1900, 1388, 5267, 5052, 5206, 5669, 1128, 5234, 1202, 7281, 6883, 2049, 7306, 5244, 7221, 2]
+// Dependencies: [19, 17, 4973, 4878, 4846, 1389, 7197, 21, 4972, 587, 558, 576, 1502, 504, 7226, 5038, 7282, 1414, 1897, 1385, 5268, 5053, 5207, 5670, 1125, 5235, 1199, 7283, 6885, 2046, 7308, 5245, 7223, 2]
 
-// Module 7279 (GuildOnboardingCompleted)
+// Module 7281 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 587 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7281 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7283 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7195 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7197 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
       num = tmp6;
     }
     const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5052).Easing;
+    Easing3 = tmp(5053).Easing;
     const obj8 = { opacity: withSequenceResult, transform: items };
     const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
     const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));

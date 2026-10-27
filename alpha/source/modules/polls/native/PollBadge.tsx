@@ -1,19 +1,19 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18158
+// Function ID: 18159
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1202, 18125, 1128, 5234, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1199, 18159, 1125, 5235, 2]
 
-// Module 18124 (PollBadge)
+// Module 18158 (PollBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18125 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollBadge(st
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
-      const Icon = tmp(1202).Icon;
+      const Icon = tmp(1199).Icon;
       const tmp10 = React3(Icon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollBadge(st
     const _Symbol2 = Symbol;
     const text = tmp4.text;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.RgIi2B);
       cResult[4] = stringResult;
       tmp11 = stringResult;

@@ -1,11 +1,11 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9633
+// Function ID: 9634
 // Name: scopes
-// Dependencies: [1128, 8827, 2]
+// Dependencies: [1125, 8827, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9631 (scopes)
-import intl66 from "intl" /* 1128 */;
+// Module 9633 (scopes)
+import intl66 from "intl" /* 1125 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import size from "module_2" /* 2 */;
 
@@ -328,9 +328,9 @@ export const getSecurityMessage = function getSecurityMessage(scopes) {
         const SCOPES_CAN_READ_MESSAGES = OAuth2Scopes.OAuth2ScopesSets.SCOPES_CAN_READ_MESSAGES;
         return SCOPES_CAN_READ_MESSAGES.has(item);
       });
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const format = intl.format;
-      const t = tmp(1128).t;
+      const t = tmp(1125).t;
       if (someResult) {
         formatResult = format(t.Soy7jJ, {});
       } else {
@@ -339,6 +339,6 @@ export const getSecurityMessage = function getSecurityMessage(scopes) {
     }
     return formatResult;
   }
-  const intl2 = tmp(1128).intl;
-  formatResult = intl2.format(tmp(1128).t.o0GMBD, {});
+  const intl2 = tmp(1125).intl;
+  formatResult = intl2.format(tmp(1125).t.o0GMBD, {});
 };

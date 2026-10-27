@@ -1,16 +1,16 @@
 // Module ID: 9058
 // Function ID: 9059
 // Name: openInstantInviteActionSheet
-// Dependencies: [5210, 9059, 2002, 1275, 2]
+// Dependencies: [5211, 9059, 1999, 1272, 2]
 // Exports: default
 
 // Module 9058 (openInstantInviteActionSheet)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const discord_common_AnalyticsUtils = tmp3(1275);
+const discord_common_AnalyticsUtils = tmp3(1272);
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 
 export default function openInstantInviteActionSheet(invite_channel_id) {

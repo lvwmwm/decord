@@ -1,27 +1,27 @@
 // Module ID: 8671
 // Function ID: 8672
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4823, 4883, 1392, 8672, 1087, 21, 4971, 587, 8674, 1128, 558, 576, 6987, 6903, 1202, 4978, 5205, 504, 8675, 7278, 7253, 8679, 8688, 1267, 8670, 8668, 8689, 7062, 5234, 5989, 5244, 6908, 4799, 5265, 5269, 2]
+// Dependencies: [32, 19, 17, 4824, 4884, 1389, 8672, 1084, 21, 4972, 587, 8674, 1125, 558, 576, 6989, 6905, 1199, 4979, 5206, 504, 8675, 7280, 7255, 8679, 8688, 1264, 8670, 8668, 8689, 7064, 5235, 5990, 5245, 6910, 4800, 5266, 5270, 2]
 
 // Module 8671 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import TableRow2 from "TableRow" /* 6903 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import TableRow2 from "TableRow" /* 6905 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import UserActionCreators from "UserActionCreators" /* 8670 */;
 import Constants2 from "Constants" /* 8672 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,19 +67,19 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
   speedBumpType = speedBumpType.speedBumpType;
   if (cResult[0] !== speedBumpType) {
     if (typeof SPEEDBUMP_ROWS === "function") {
-      let obj2 = { icon: AssetRegistryDefault, text: intl.string(items(1128).t.kcuWva) };
-      intl = tmp(1128).intl;
+      let obj2 = { icon: AssetRegistryDefault, text: intl.string(items(1125).t.kcuWva) };
+      intl = tmp(1125).intl;
       items = [obj2, ];
       const obj3 = { icon: AssetRegistryDefault, text: stringResult };
       if ("block" === speedBumpType) {
-        const intl3 = tmp(1128).intl;
-        stringResult = intl3.string(tmp(1128).t.QxrDY1);
+        const intl3 = tmp(1125).intl;
+        stringResult = intl3.string(tmp(1125).t.QxrDY1);
       } else {
-        const intl2 = tmp(1128).intl;
-        stringResult = intl2.string(tmp(1128).t.W6fjkS);
+        const intl2 = tmp(1125).intl;
+        stringResult = intl2.string(tmp(1125).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6987).TableRowGroup;
+      const TableRowGroup = tmp(6989).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
@@ -124,16 +124,16 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
   let stringResult;
   let items;
   if (typeof SPEEDBUMP_ROWS === "function") {
-    let obj = { icon: AssetRegistryDefault, text: intl.string(items(1128).t.kcuWva) };
-    intl = items(1128).intl;
+    let obj = { icon: AssetRegistryDefault, text: intl.string(items(1125).t.kcuWva) };
+    intl = items(1125).intl;
     items = [obj, ];
     let obj2 = { icon: AssetRegistryDefault, text: stringResult };
     if ("block" === tmp) {
-      const intl3 = tmp4(1128).intl;
-      stringResult = intl3.string(tmp4(1128).t.QxrDY1);
+      const intl3 = tmp4(1125).intl;
+      stringResult = intl3.string(tmp4(1125).t.QxrDY1);
     } else {
-      const intl2 = tmp4(1128).intl;
-      stringResult = intl2.string(tmp4(1128).t.W6fjkS);
+      const intl2 = tmp4(1125).intl;
+      stringResult = intl2.string(tmp4(1125).t.W6fjkS);
     }
     items[1] = obj2;
     const obj3 = {
@@ -148,7 +148,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
           return authStore2(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6987).TableRowGroup;
+    const TableRowGroup = tmp4(6989).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");

@@ -1,21 +1,21 @@
-// Module ID: 6874
-// Function ID: 6875
+// Module ID: 6876
+// Function ID: 6877
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 4883, 6875, 6876, 21, 5052, 1202, 4971, 587, 558, 576, 1633, 5205, 4978, 6877, 6879, 504, 5005, 6835, 6880, 6881, 6892, 6893, 1128, 7184, 6908, 7135, 2]
+// Dependencies: [19, 17, 4884, 6877, 6878, 21, 5053, 1199, 4972, 587, 558, 576, 1630, 5206, 4979, 6879, 6881, 504, 5006, 6837, 6882, 6883, 6894, 6895, 1125, 7186, 6910, 7137, 2]
 
-// Module 6874 (MemberVerificationModal)
+// Module 6876 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6835 */;
+import native from "native" /* 1199 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5006 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6837 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6875 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6876 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6877 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6878 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

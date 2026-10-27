@@ -1,25 +1,25 @@
-// Module ID: 18211
-// Function ID: 18212
+// Module ID: 18245
+// Function ID: 18246
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7731, 4913, 21, 4971, 587, 558, 576, 1505, 7253, 7278, 1633, 18212, 504, 1896, 8668, 18213, 18216, 1128, 17896, 5680, 6903, 5244, 12926, 16460, 10617, 12857, 2]
+// Dependencies: [19, 17, 7732, 4914, 21, 4972, 587, 558, 576, 1502, 7255, 7280, 1630, 18246, 504, 1893, 8668, 18247, 18250, 1125, 17930, 5681, 6905, 5245, 12935, 16499, 10620, 12866, 2]
 
-// Module 18211 (FriendsScreen)
+// Module 18245 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import SendMessageIcon from "SendMessageIcon" /* 5680 */;
-import TableRow2 from "TableRow" /* 6903 */;
+import intl6 from "intl" /* 1125 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import SendMessageIcon from "SendMessageIcon" /* 5681 */;
+import TableRow2 from "TableRow" /* 6905 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import NoResultsDefault from "NoResults" /* 12926 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16460 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17896 */;
+import NoResultsDefault from "NoResults" /* 12935 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16499 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17930 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7731 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7732 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -382,13 +382,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsScr
       Icon = TableRow2.TableRow.Icon;
       intl5 = intl6.intl;
       if (incoming + outgoing > 0) {
-        const intl2 = tmp11(1128).intl;
+        const intl2 = tmp11(1125).intl;
         const obj5 = { incoming, outgoing };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp11(1128).t["1IEawz"], obj5);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp11(1125).t["1IEawz"], obj5);
       } else {
-        const intl = tmp11(1128).intl;
+        const intl = tmp11(1125).intl;
         const obj6 = { spam: tmp6 };
-        formatToPlainStringResult = intl.formatToPlainString(tmp11(1128).t.e6BtLq, obj6);
+        formatToPlainStringResult = intl.formatToPlainString(tmp11(1125).t.e6BtLq, obj6);
       }
       tmp10Result = tmp10(tmp2, obj2);
     }

@@ -1,23 +1,23 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14688
+// Function ID: 14689
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1087, 1089, 21, 4971, 587, 558, 576, 1275, 9361, 7649, 7278, 7490, 14150, 7221, 7293, 5669, 14653, 5234, 1128, 5244, 2]
+// Dependencies: [32, 19, 17, 1084, 1086, 21, 4972, 587, 558, 576, 1272, 9360, 7650, 7280, 7491, 14164, 7223, 7295, 5670, 14689, 5235, 1125, 5245, 2]
 
-// Module 14652 (NitroOrbsDeliveredModal)
+// Module 14688 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import openUserSettings from "openUserSettings" /* 7490 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9361 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14653 */;
+import Constants from "Constants" /* 1084 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import openUserSettings from "openUserSettings" /* 7491 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9360 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14689 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   ({ orbsAmount, onClose } = arg0);
   const tmp4 = closure_12();
   if (cResult[0] !== orbsAmount) {
-    let obj2 = { type: tmp(1275).ImpressionTypes.MODAL, name: tmp(1275).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: obj3 };
+    let obj2 = { type: tmp(1272).ImpressionTypes.MODAL, name: tmp(1272).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: obj3 };
     obj3 = { orbs_amount: orbsAmount };
     cResult[0] = orbsAmount;
     cResult[1] = obj2;
@@ -151,7 +151,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
         obj.openUserSettings(obj2);
       }
     }
-    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14150).OrbsRewardBackground, obj5) };
+    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14164).OrbsRewardBackground, obj5) };
     obj5 = { style: tmp4.background, onReady: tmp12 };
     cResult[7] = tmp4.background;
     cResult[8] = closure_10(View, obj4);
@@ -196,8 +196,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
         }
       }
       const rect = { style: tmp4.main, top: true, bottom: true, left: true, right: true, children: items };
-      const obj6 = { style: tmp4.header, children: closure_10(onClose(7293).ActionSheetCloseButton, obj7) };
-      const SafeAreaPaddingView = tmp(7221).SafeAreaPaddingView;
+      const obj6 = { style: tmp4.header, children: closure_10(onClose(7295).ActionSheetCloseButton, obj7) };
+      const SafeAreaPaddingView = tmp(7223).SafeAreaPaddingView;
       obj7 = { onPress: onClose, variant: "overlay" };
       items = [closure_10(View, obj6), , ];
       const obj8 = { style: tmp4.body, children: items1 };
@@ -205,26 +205,26 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
       const tmp6Result = FastImageDefault;
       items1 = [closure_10(tmp6Result, obj9), ];
       const obj10 = { children: items2 };
-      const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp4.title, children: intl.formatToPlainString(onClose(1128).t["O2/Bj8"], obj12) };
-      const Text = tmp(5234).Text;
-      intl = tmp(1128).intl;
+      const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp4.title, children: intl.formatToPlainString(onClose(1125).t["O2/Bj8"], obj12) };
+      const Text = tmp(5235).Text;
+      intl = tmp(1125).intl;
       obj12 = { orbAmount: orbsAmount };
       items2 = [closure_10(Text, obj11), ];
-      const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp4.description, children: intl2.format(onClose(1128).t.qiZPb6, obj14) };
-      const Text2 = tmp(5234).Text;
-      intl2 = tmp(1128).intl;
+      const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp4.description, children: intl2.format(onClose(1125).t.qiZPb6, obj14) };
+      const Text2 = tmp(5235).Text;
+      intl2 = tmp(1125).intl;
       obj14 = { orbAmount: orbsAmount };
       items2[1] = closure_10(Text2, obj13);
       items1[1] = closure_11(View, obj10);
       items[1] = closure_11(View, obj8);
       const obj15 = { style: tmp4.footer, children: items3 };
-      const obj16 = { text: intl3.string(onClose(1128).t.OhOWfI), variant: "primary", size: "lg", onPress: tmp8 };
-      const Button = tmp(5244).Button;
-      intl3 = tmp(1128).intl;
+      const obj16 = { text: intl3.string(onClose(1125).t.OhOWfI), variant: "primary", size: "lg", onPress: tmp8 };
+      const Button = tmp(5245).Button;
+      intl3 = tmp(1125).intl;
       items3 = [closure_10(Button, obj16), ];
-      const obj17 = { text: intl4.string(onClose(1128).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: tmp9 };
-      const Button2 = tmp(5244).Button;
-      intl4 = tmp(1128).intl;
+      const obj17 = { text: intl4.string(onClose(1125).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: tmp9 };
+      const Button2 = tmp(5245).Button;
+      intl4 = tmp(1125).intl;
       items3[1] = closure_10(Button2, obj17);
       items[2] = closure_11(View, obj15);
       tmp22 = closure_11(SafeAreaPaddingView, rect);
@@ -282,7 +282,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   ({ orbsAmount, onClose } = arg0);
   importDefault = undefined;
   const tmp = closure_12();
-  let obj = { type: onClose(1275).ImpressionTypes.MODAL, name: onClose(1275).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: { orbs_amount: orbsAmount } };
+  let obj = { type: onClose(1272).ImpressionTypes.MODAL, name: onClose(1272).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: { orbs_amount: orbsAmount } };
   const tmp4 = useTrackImpressionDefault;
   tmp4(obj);
   const items = [onClose];
@@ -301,7 +301,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14150).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(14164).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };
@@ -314,8 +314,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   items2[1] = tmp14Result;
   if (tmp12Result) {
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items3 };
-    const obj6 = { style: tmp.header, children: closure_10(onClose(7293).ActionSheetCloseButton, obj7) };
-    const SafeAreaPaddingView = tmp5(7221).SafeAreaPaddingView;
+    const obj6 = { style: tmp.header, children: closure_10(onClose(7295).ActionSheetCloseButton, obj7) };
+    const SafeAreaPaddingView = tmp5(7223).SafeAreaPaddingView;
     obj7 = { onPress: onClose, variant: "overlay" };
     items3 = [closure_10(View, obj6), , ];
     const obj8 = { style: tmp.body, children: items4 };
@@ -323,26 +323,26 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
     const tmp2Result = FastImageDefault;
     items4 = [closure_10(tmp2Result, obj9), ];
     const obj10 = { children: items5 };
-    const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp.title, children: intl.formatToPlainString(onClose(1128).t["O2/Bj8"], obj12) };
-    const Text = tmp5(5234).Text;
-    intl = tmp5(1128).intl;
+    const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp.title, children: intl.formatToPlainString(onClose(1125).t["O2/Bj8"], obj12) };
+    const Text = tmp5(5235).Text;
+    intl = tmp5(1125).intl;
     obj12 = { orbAmount: orbsAmount };
     items5 = [closure_10(Text, obj11), ];
-    const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.description, children: intl2.format(onClose(1128).t.qiZPb6, obj14) };
-    const Text2 = tmp5(5234).Text;
-    intl2 = tmp5(1128).intl;
+    const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.description, children: intl2.format(onClose(1125).t.qiZPb6, obj14) };
+    const Text2 = tmp5(5235).Text;
+    intl2 = tmp5(1125).intl;
     obj14 = { orbAmount: orbsAmount };
     items5[1] = closure_10(Text2, obj13);
     items4[1] = closure_11(View, obj10);
     items3[1] = closure_11(View, obj8);
     const obj15 = { style: tmp.footer, children: items6 };
-    const obj16 = { text: intl3.string(onClose(1128).t.OhOWfI), variant: "primary", size: "lg", onPress: callback };
-    const Button = tmp5(5244).Button;
-    intl3 = tmp5(1128).intl;
+    const obj16 = { text: intl3.string(onClose(1125).t.OhOWfI), variant: "primary", size: "lg", onPress: callback };
+    const Button = tmp5(5245).Button;
+    intl3 = tmp5(1125).intl;
     items6 = [closure_10(Button, obj16), ];
-    const obj17 = { text: intl4.string(onClose(1128).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: callback1 };
-    const Button2 = tmp5(5244).Button;
-    intl4 = tmp5(1128).intl;
+    const obj17 = { text: intl4.string(onClose(1125).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: callback1 };
+    const Button2 = tmp5(5245).Button;
+    intl4 = tmp5(1125).intl;
     items6[1] = closure_10(Button2, obj17);
     items3[2] = closure_11(View, obj15);
     tmp12Result = closure_11(SafeAreaPaddingView, rect);

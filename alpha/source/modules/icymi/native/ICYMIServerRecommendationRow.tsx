@@ -1,30 +1,30 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 18005
+// Function ID: 18006
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 4972, 4845, 8823, 1087, 21, 17908, 587, 558, 576, 504, 1417, 4837, 9406, 5669, 6883, 8841, 5663, 1128, 6830, 5234, 5244, 17947, 7150, 2]
+// Dependencies: [32, 5, 19, 17, 4973, 4846, 8823, 1084, 21, 17942, 587, 558, 576, 504, 1414, 4838, 9405, 5670, 6885, 8841, 5664, 1125, 6832, 5235, 5245, 17981, 7152, 2]
 
-// Module 17971 (ICYMIServerRecommendationRow)
+// Module 18005 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
-import FastestListDefault from "FastestList" /* 7150 */;
-import ClipViewDefault from "ClipView" /* 9406 */;
-import ICYMIShared from "ICYMIShared" /* 17947 */;
+import intl3 from "intl" /* 1125 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4838 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import GuildIconDefault from "GuildIcon" /* 6885 */;
+import FastestListDefault from "FastestList" /* 7152 */;
+import ClipViewDefault from "ClipView" /* 9405 */;
+import ICYMIShared from "ICYMIShared" /* 17981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ICYMIStore from "ICYMIStore" /* 8823 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17908 */;
+import createICYMIStyles from "createICYMIStyles" /* 17942 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -226,16 +226,16 @@ function FeaturedServer(guild) {
   items2 = [closure_14(closure_19, { guild }), , ];
   let obj3 = { style: tmp.featuredServerInnerContainer, children: items3 };
   let obj4 = { maxFontSizeMultiplier: 1, lineClamp: 1, style: tmp.featuredServerTitle, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-  items3 = [closure_14(guild(5234).Text, obj4), ];
+  items3 = [closure_14(guild(5235).Text, obj4), ];
   let obj5 = { maxFontSizeMultiplier: 1, lineClamp: 3, variant: "text-xs/normal", color: "text-default", children: guild.description };
-  items3[1] = closure_14(guild(5234).Text, obj5);
+  items3[1] = closure_14(guild(5235).Text, obj5);
   items2[1] = closure_15(View, obj3);
   let obj6 = { style: tmp.buttonContainer, children: tmp8(Button, obj7) };
   obj7 = { disabled: stateFromStores, loading: first, text: stringResult, size: "sm", onPress: callback, grow: true };
-  Button = guild(5244).Button;
-  let intl = guild(1128).intl;
+  Button = guild(5245).Button;
+  let intl = guild(1125).intl;
   const string = intl.string;
-  const t = guild(1128).t;
+  const t = guild(1125).t;
   if (stateFromStores) {
     stringResult = string(t.cEnaWx);
   } else {
@@ -299,7 +299,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
           tmp9 = cResult[6];
         }
         if (cResult[7] !== guild) {
-          const tmpResult2 = guild(4837);
+          const tmpResult2 = guild(4838);
           const result = tmpResult2.fromClientDiscoverableGuild(guild);
           cResult[7] = guild;
           cResult[8] = result;
@@ -309,7 +309,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
         }
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          size = { shape: guild(9406).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+          size = { shape: guild(9405).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
           const items1 = [size];
           cResult[9] = items1;
           tmp16 = items1;
@@ -348,7 +348,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
                   tmp31 = tmp34;
                 }
               }
-              const obj4 = { style: tmp4.guildIcon, guild: tmp14, size: guild(6883).GuildIconSizes.LARGE, animate: !stateFromStores };
+              const obj4 = { style: tmp4.guildIcon, guild: tmp14, size: guild(6885).GuildIconSizes.LARGE, animate: !stateFromStores };
               const tmp29 = GuildIconDefault;
               const tmp30 = closure_14(tmp29, obj4);
               cResult[15] = tmp14;
@@ -364,7 +364,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
         const tmp20 = ClipViewDefault;
         if (null != guild.banner) {
           const obj6 = { style: tmp4.bannerImage, source: tmp9, resizeMode: "cover" };
-          tmp18Result = tmp18(tmp19(5669), obj6);
+          tmp18Result = tmp18(tmp19(5670), obj6);
         } else {
           const obj7 = { style: items3 };
           items3 = [, ];
@@ -433,13 +433,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
     return obj.fromClientDiscoverableGuild(guild);
   }, items1);
   const obj4 = { cutouts: items2, children: tmp12Result };
-  size = { shape: guild(9406).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9405).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items2 = [size];
   const tmp10 = closure_15;
   const tmp14 = ClipViewDefault;
   if (null != guild.banner) {
     const obj5 = { style: tmp.bannerImage, source: animatableSourceWithFallback, resizeMode: "cover" };
-    tmp12Result = tmp12(tmp13(5669), obj5);
+    tmp12Result = tmp12(tmp13(5670), obj5);
   } else {
     const obj6 = { style: items3 };
     items3 = [, ];
@@ -447,7 +447,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cutout
     tmp12Result = tmp12(tmp11, obj6);
   }
   items4 = [closure_14(tmp14, obj4), ];
-  const obj7 = { style: tmp.guildIcon, guild: memo, size: guild(6883).GuildIconSizes.LARGE, animate: !stateFromStores };
+  const obj7 = { style: tmp.guildIcon, guild: memo, size: guild(6885).GuildIconSizes.LARGE, animate: !stateFromStores };
   const tmp13Result = GuildIconDefault;
   items4[1] = closure_14(tmp13Result, obj7);
   return tmp10(View, obj3);
@@ -489,7 +489,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIServerR
     const _Symbol3 = Symbol;
     ({ container, title } = tmp7);
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl3.t.lv1tce);
       cResult[2] = stringResult;
       tmp8 = stringResult;
@@ -508,7 +508,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIServerR
     const _Symbol = Symbol;
     const subtitle = tmp7.subtitle;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const stringResult1 = intl2.string(intl3.t.x4OezN);
       cResult[5] = stringResult1;
       tmp13 = stringResult1;
@@ -589,12 +589,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIServerR
     const obj2 = { children: items2 };
     const obj3 = { style: tmp3.container, children: items1 };
     const obj4 = { style: tmp3.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.lv1tce) };
-    const Text = tmp(5234).Text;
-    intl = tmp(1128).intl;
+    const Text = tmp(5235).Text;
+    intl = tmp(1125).intl;
     items1 = [syncedClientThemes(Text, obj4), , ];
     const obj5 = { style: tmp3.subtitle, variant: "heading-sm/normal", color: "text-muted", children: intl2.string(intl3.t.x4OezN) };
-    const Text2 = tmp(5234).Text;
-    intl2 = tmp(1128).intl;
+    const Text2 = tmp(5235).Text;
+    intl2 = tmp(1125).intl;
     items1[1] = syncedClientThemes(Text2, obj5);
     const obj6 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = syncedClientThemes(closure_21, obj6);

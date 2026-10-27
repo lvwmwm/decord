@@ -1,20 +1,20 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12219
+// Function ID: 12220
 // Name: ConjureEffortTiers
-// Dependencies: [109, 12202, 1128, 3830, 2]
+// Dependencies: [109, 12220, 1125, 3831, 2]
 // Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureCustomizeMessage, conjureNormalizeFast, conjurePickTierModel, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureWithTier
 
-// Module 12201 (ConjureEffortTiers)
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 12202 */;
+// Module 12219 (ConjureEffortTiers)
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 12220 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const intl2 = tmp2(1128);
+const intl2 = tmp2(1125);
 let closure_3 = ["thinking"];
 let closure_4 = ["fast"];
-let obj = { simple: _modDef3830.Mqb8mc, balanced: _modDef3830.zCZfA6, complex: _modDef3830["8l2atm"] };
+let obj = { simple: _modDef3831.Mqb8mc, balanced: _modDef3831.zCZfA6, complex: _modDef3831["8l2atm"] };
 const result = size.fileFinishedImporting("modules/conjure/model_settings/ConjureEffortTiers.tsx");
 
 export const conjureTierLabel = function conjureTierLabel(value) {
@@ -119,9 +119,9 @@ export const conjureCanPickModel = function conjureCanPickModel(choices) {
 export const conjureCustomizeMessage = function conjureCustomizeMessage(choices) {
   let qSViP4;
   if (choices.main.length > 0) {
-    qSViP4 = _modDef3830.eGqPbV;
+    qSViP4 = _modDef3831.eGqPbV;
   } else {
-    qSViP4 = _modDef3830.qSViP4;
+    qSViP4 = _modDef3831.qSViP4;
   }
   return qSViP4;
 };

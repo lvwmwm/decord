@@ -1,15 +1,15 @@
-// Module ID: 5252
-// Function ID: 5253
+// Module ID: 5253
+// Function ID: 5254
 // Name: useToken
-// Dependencies: [587, 5138, 12, 558, 576, 5037, 2]
+// Dependencies: [587, 5139, 12, 558, 576, 5038, 2]
 // Exports: useToken
 
-// Module 5252 (useToken)
+// Module 5253 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 5037 */;
-import SemanticColorContext from "SemanticColorContext" /* 5138 */;
+import native from "native" /* 5038 */;
+import SemanticColorContext from "SemanticColorContext" /* 5139 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

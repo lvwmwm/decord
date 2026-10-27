@@ -1,15 +1,15 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12547
+// Function ID: 12548
 // Name: ConjureStaffAccess
-// Dependencies: [4901, 4845, 4913, 1392, 1087, 558, 576, 5604, 504, 2]
+// Dependencies: [4902, 4846, 4914, 1389, 1084, 558, 576, 5605, 504, 2]
 
-// Module 12539 (ConjureStaffAccess)
+// Module 12547 (ConjureStaffAccess)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1084 */;
+import GuildChannelStore from "GuildChannelStore" /* 4902 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
               tmp7 = closure_1_2;
               tmp8 = item10017;
               selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-              found = selectableChannels.find(() => { /* body not rendered: F149499 */ });
+              found = selectableChannels.find(() => { /* body not rendered: F149837 */ });
               tmp10 = found;
               if (null != found) {
                 obj1 = { isStaff: null, guildId: null, channelId: null };
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
                   tmp7 = closure_1_2;
                   tmp8 = item10017;
                   selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-                  found = selectableChannels.find(() => { /* body not rendered: F149499 */ });
+                  found = selectableChannels.find(() => { /* body not rendered: F149837 */ });
                   tmp10 = found;
                   if (null != found) {
                     obj1 = { isStaff: null, guildId: null, channelId: null };

@@ -1,18 +1,18 @@
-// Module ID: 19217
-// Function ID: 19218
+// Module ID: 19255
+// Function ID: 19256
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7012, 5234, 5244, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 7014, 5235, 5245, 2]
 
-// Module 19217 (WarningNotice)
+// Module 19255 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7012 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7014 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningNotic
       }
       if (cResult[4] !== tmp4.alertIcon) {
         const obj2 = { style: tmp4.alertIcon, size: "custom", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, secondaryColor: nativeDefault.colors.WHITE };
-        const CircleErrorIcon = tmp(7012).CircleErrorIcon;
+        const CircleErrorIcon = tmp(7014).CircleErrorIcon;
         const tmp9 = React3(CircleErrorIcon, obj2);
         cResult[4] = tmp4.alertIcon;
         cResult[5] = tmp9;

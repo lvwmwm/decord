@@ -1,13 +1,13 @@
-// Module ID: 18693
-// Function ID: 18694
+// Module ID: 18729
+// Function ID: 18730
 // Name: CutoutImage
-// Dependencies: [32, 19, 21, 1281, 7962, 5669, 14317, 2]
+// Dependencies: [32, 19, 21, 1278, 7960, 5670, 14353, 2]
 
-// Module 18693 (CutoutImage)
-import v1 from "v1" /* 1281 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import inlineStylesDefault from "inlineStyles" /* 7962 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14317 */;
+// Module 18729 (CutoutImage)
+import v1 from "v1" /* 1278 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import inlineStylesDefault from "inlineStyles" /* 7960 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14353 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,7 +103,7 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
   let obj = react;
   const borderStrokeColor = cutoutTopLeftSize.borderStrokeColor;
   const useState = react.useState;
-  const obj2 = imageTintColor(1281);
+  const obj2 = imageTintColor(1278);
   [tmp4, c1] = _slicedToArray(useState(obj2.v4()), 2);
   const tmp3 = _slicedToArray(useState(obj2.v4()), 2);
   if (null != tmp4) {
@@ -112,7 +112,7 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
   }
   let v4Result;
   if (num15 > 0) {
-    const tmpResult = imageTintColor(1281);
+    const tmpResult = imageTintColor(1278);
     v4Result = tmpResult.v4();
   }
   if (null != v4Result) {
@@ -132,41 +132,41 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
   }, items);
   size = { style, height: imageSize, width: imageSize, children: items3 };
   const tmp14 = inlineStylesDefault;
-  const Defs = tmp(7962).Defs;
+  const Defs = tmp(7960).Defs;
   const size1 = { width: imageSize, height: imageSize, id: tmp4, children: items1 };
-  const Mask = tmp(7962).Mask;
+  const Mask = tmp(7960).Mask;
   if (imageBorderRadius === imageSize / 2) {
     const obj3 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / 2, fill: "white" };
-    tmp16 = closure_5(tmp(7962).Circle, obj3);
+    tmp16 = closure_5(tmp(7960).Circle, obj3);
     tmp15 = closure_5;
   } else {
     tmp15 = closure_5;
     const size2 = { x: 0, y: 0, width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
-    tmp16 = closure_5(tmp(7962).Rect, size2);
+    tmp16 = closure_5(tmp(7960).Rect, size2);
   }
   items1 = [tmp16, , , , , ];
   let tmp15Result = null;
   if (num > 0) {
     const obj4 = { cx: num2, cy: num3, r: num, fill: "black" };
-    tmp15Result = tmp15(tmp(7962).Circle, obj4);
+    tmp15Result = tmp15(tmp(7960).Circle, obj4);
   }
   items1[1] = tmp15Result;
   let tmp15Result10 = null;
   if (num4 > 0) {
     const obj5 = { cx: imageSize - num5, cy: num6, r: num4, fill: "black" };
-    tmp15Result10 = tmp15(tmp(7962).Circle, obj5);
+    tmp15Result10 = tmp15(tmp(7960).Circle, obj5);
   }
   items1[2] = tmp15Result10;
   let tmp15Result11 = null;
   if (num7 > 0) {
     const obj6 = { cx: num8, cy: imageSize - num9, r: num7, fill: "black" };
-    tmp15Result11 = tmp15(tmp(7962).Circle, obj6);
+    tmp15Result11 = tmp15(tmp(7960).Circle, obj6);
   }
   items1[3] = tmp15Result11;
   let tmp15Result12 = null;
   if (num10 > 0) {
     const obj7 = { cx: imageSize - num11, cy: imageSize - num12, r: num10, fill: "black" };
-    tmp15Result12 = tmp15(tmp(7962).Circle, obj7);
+    tmp15Result12 = tmp15(tmp(7960).Circle, obj7);
   }
   items1[4] = tmp15Result12;
   let tmp22 = null;
@@ -174,10 +174,10 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
     let tmp15Result13;
     if (imageBorderRadius === imageSize / 2) {
       const obj8 = { cx: imageSize / 2, cy: imageSize / 2, r: num14 / 2, fill: "black" };
-      tmp15Result13 = tmp15(tmp(7962).Circle, obj8);
+      tmp15Result13 = tmp15(tmp(7960).Circle, obj8);
     } else {
       const size3 = { x: (imageSize - num14) / 2, y: (imageSize - num14) / 2, width: num14, height: num14, rx: imageBorderRadius * (num14 / imageSize), ry: imageBorderRadius * (num14 / imageSize), fill: "black" };
-      tmp15Result13 = tmp15(tmp(7962).Rect, size3);
+      tmp15Result13 = tmp15(tmp(7960).Rect, size3);
     }
     tmp22 = tmp15Result13;
   }
@@ -186,13 +186,13 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
   let tmp15Result15 = null;
   if (null != v4Result) {
     const obj9 = { id: v4Result, children: tmp15Result14 };
-    const ClipPath = tmp(7962).ClipPath;
+    const ClipPath = tmp(7960).ClipPath;
     if (imageBorderRadius === imageSize / 2) {
       const obj10 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / 4, fill: "white" };
-      tmp15Result14 = tmp15(tmp(7962).Circle, obj10);
+      tmp15Result14 = tmp15(tmp(7960).Circle, obj10);
     } else {
       const size4 = { x: num15, y: num15, width: imageSize - 2 * num15, height: imageSize - 2 * num15, rx: imageBorderRadius * ((imageSize - 2 * num15) / imageSize), ry: imageBorderRadius * ((imageSize - 2 * num15) / imageSize), fill: "white" };
-      tmp15Result14 = tmp15(tmp(7962).Rect, size4);
+      tmp15Result14 = tmp15(tmp(7960).Rect, size4);
     }
     tmp15Result15 = tmp15(ClipPath, obj9);
   }
@@ -201,7 +201,7 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
   let tmp15Result16 = null;
   if (null != imageBackgroundColor) {
     const size5 = { height: imageSize, width: imageSize, fill: imageBackgroundColor, mask: combined, clipPath: combined1 };
-    tmp15Result16 = tmp15(tmp(7962).Rect, size5);
+    tmp15Result16 = tmp15(tmp(7960).Rect, size5);
   }
   items3[1] = tmp15Result16;
   let tmp27 = null;
@@ -210,7 +210,7 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
       let tmp15Result17;
       if (null != imageTintColor) {
         const size6 = { height: imageSize, width: imageSize, mask: combined, clipPath: combined1, children: tmp15(FastImageDefault, obj11) };
-        const ForeignObject = tmp(7962).ForeignObject;
+        const ForeignObject = tmp(7960).ForeignObject;
         obj11 = { style: size7, source: imageSource, onLoad: callback };
         size7 = { width: imageSize, height: imageSize, tintColor: imageTintColor };
         tmp15Result17 = tmp15(ForeignObject, size6);
@@ -218,14 +218,14 @@ const memoResult = react.memo(function CutoutImage(cutoutTopLeftSize) {
       tmp27 = tmp15Result17;
     }
     const size8 = { height: imageSize, width: imageSize, href: getReactNativeSVGImageSourceDefault(imageSource), mask: combined, clipPath: combined1 };
-    const Image = tmp(7962).Image;
+    const Image = tmp(7960).Image;
     tmp15Result17 = tmp15(Image, size8);
   }
   items3[2] = tmp27;
   let tmp15Result18 = null;
   if (null != borderStroke) {
     const size9 = { height: imageSize, width: imageSize, fill: "transparent", stroke: borderStrokeColor, strokeWidth: 2 * borderStroke, mask: combined, clipPath: combined1, rx: imageBorderRadius, ry: imageBorderRadius };
-    tmp15Result18 = tmp15(tmp(7962).Rect, size9);
+    tmp15Result18 = tmp15(tmp(7960).Rect, size9);
   }
   items3[3] = tmp15Result18;
   return closure_6(tmp14, size);

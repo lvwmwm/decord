@@ -1,22 +1,22 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 16813
+// Function ID: 16814
 // Name: ToastDurationSetting
-// Dependencies: [19, 4972, 8332, 1087, 21, 1128, 558, 576, 504, 15687, 16671, 11157, 11209, 2]
+// Dependencies: [19, 4973, 8331, 1084, 21, 1125, 558, 576, 504, 15723, 16713, 11160, 11212, 2]
 
-// Module 16771 (ToastDurationSetting)
+// Module 16813 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11157 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15687 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16671 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11160 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15723 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16713 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 function formatToastDuration(seconds) {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastDu
     tmp8 = cResult[2];
   }
   if (cResult[3] !== stateFromStores) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { seconds: stateFromStores };
     const formatResult = intl.format(intl2.t.pyvjRp, obj2);
     cResult[3] = stateFromStores;

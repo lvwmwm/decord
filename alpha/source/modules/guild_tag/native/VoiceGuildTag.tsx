@@ -1,17 +1,17 @@
-// Module ID: 17549
-// Function ID: 17550
+// Module ID: 17590
+// Function ID: 17591
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1392, 8274, 21, 1384, 4971, 587, 558, 576, 504, 8654, 9225, 5234, 2]
+// Dependencies: [19, 17, 1389, 8272, 21, 1381, 4972, 587, 558, 576, 504, 8654, 9225, 5235, 2]
 
-// Module 17549 (VoiceGuildTag)
+// Module 17590 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 8274 */;
+import GuildTagConstants from "GuildTagConstants" /* 8272 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -167,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
       tmp31 = tmp34;
     }
     const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.tag, children: tmp14 };
-    const tmp30 = closure_5(userId(5234).Text, obj6);
+    const tmp30 = closure_5(userId(5235).Text, obj6);
     cResult[10] = tmp4.tag;
     cResult[11] = tmp14;
     cResult[12] = tmp30;
@@ -203,7 +203,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
       obj5 = { uri: guildTagBadgeUrl };
       items2 = [closure_5(userId(9225).GuildTagBadge, obj4), ];
       const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5234).Text, obj6);
+      items2[1] = closure_5(userId(5235).Text, obj6);
       return closure_5(View, obj2);
     }
   }

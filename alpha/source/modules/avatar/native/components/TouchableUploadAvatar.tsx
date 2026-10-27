@@ -1,21 +1,21 @@
-// Module ID: 18904
-// Function ID: 18905
+// Module ID: 18942
+// Function ID: 18943
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 15105, 1128, 5669, 1202, 13723, 6908, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 15141, 1125, 5670, 1199, 13737, 6910, 2]
 
-// Module 18904 (TouchableUploadAvatar)
+// Module 18942 (TouchableUploadAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import Pressables from "Pressables" /* 6908 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13723 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15105 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import Pressables from "Pressables" /* 6910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13737 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15141 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TouchableUpl
     const _Symbol = Symbol;
     const avatarContainer = tmp5.avatarContainer;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t["70lEQe"]);
       cResult[0] = stringResult;
       first = stringResult;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TouchableUpl
       }
       if (cResult[4] !== tmp5.uploadAvatarIcon) {
         const obj2 = { size: native.Icon.Sizes.MEDIUM, source: AssetRegistryDefault, style: tmp5.uploadAvatarIcon };
-        const Icon = tmp(1202).Icon;
+        const Icon = tmp(1199).Icon;
         const tmp20 = React3(Icon, obj2);
         cResult[4] = tmp5.uploadAvatarIcon;
         cResult[5] = tmp20;

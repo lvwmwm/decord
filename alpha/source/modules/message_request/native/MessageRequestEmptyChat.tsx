@@ -1,18 +1,18 @@
-// Module ID: 13557
-// Function ID: 13558
+// Module ID: 13571
+// Function ID: 13572
 // Name: MessageRequestEmptyChat
-// Dependencies: [19, 17, 1098, 21, 4971, 1384, 558, 576, 1128, 5234, 2]
+// Dependencies: [19, 17, 1095, 21, 4972, 1381, 558, 576, 1125, 5235, 2]
 
-// Module 13557 (MessageRequestEmptyChat)
+// Module 13571 (MessageRequestEmptyChat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1098 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Constants from "Constants" /* 1095 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
   const tmp4 = closure_4();
   const text = tmp4.text;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.eeJvfA);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,20 +1,20 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11308
+// Function ID: 11309
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 5001, 4807, 5210, 5669, 11306, 1128, 5244, 5234, 11307, 5678, 5269, 5265, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1630, 5002, 4808, 5211, 5670, 11309, 1125, 5245, 5235, 11310, 5679, 5270, 5266, 2]
 
-// Module 11305 (ChatGDMUpsellActionSheet)
+// Module 11308 (ChatGDMUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11306 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11309 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -119,8 +119,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(onClick(1128).t["3PatSz"]);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(onClick(1125).t["3PatSz"]);
       cResult[11] = stringResult;
       tmp19 = stringResult;
     } else {
@@ -128,7 +128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
     }
     if (cResult[12] !== tmp6) {
       const obj5 = { text: tmp19, onPress: tmp6 };
-      const tmp23 = closure_5(onClick(5244).Button, obj5);
+      const tmp23 = closure_5(onClick(5245).Button, obj5);
       cResult[12] = tmp6;
       cResult[13] = tmp23;
       tmp21 = tmp23;
@@ -137,9 +137,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
     }
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj6 = { text: intl2.string(onClick(1128).t["ETE/oC"]), onPress: tmp7, variant: "tertiary" };
-      const Button = tmp(5244).Button;
-      intl2 = tmp(1128).intl;
+      const obj6 = { text: intl2.string(onClick(1125).t["ETE/oC"]), onPress: tmp7, variant: "tertiary" };
+      const Button = tmp(5245).Button;
+      intl2 = tmp(1125).intl;
       const tmp26 = closure_5(Button, obj6);
       cResult[14] = tmp26;
       tmp24 = tmp26;
@@ -172,8 +172,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         const _Symbol3 = Symbol;
         const title = tmp4.title;
         if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1128).intl;
-          const stringResult1 = intl3.string(onClick(1128).t["bkqux/"]);
+          const intl3 = tmp(1125).intl;
+          const stringResult1 = intl3.string(onClick(1125).t["bkqux/"]);
           cResult[21] = stringResult1;
           tmp35 = stringResult1;
         } else {
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         }
         if (cResult[22] !== tmp4.title) {
           const obj8 = { style: title, variant: "heading-lg/extrabold", accessibilityRole: "header", children: tmp35 };
-          const tmp39 = closure_5(onClick(5234).Text, obj8);
+          const tmp39 = closure_5(onClick(5235).Text, obj8);
           cResult[22] = tmp4.title;
           cResult[23] = tmp39;
           tmp37 = tmp39;
@@ -191,8 +191,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         const _Symbol4 = Symbol;
         const body = tmp4.body;
         if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1128).intl;
-          const stringResult2 = intl4.string(onClick(1128).t.N6TdqN);
+          const intl4 = tmp(1125).intl;
+          const stringResult2 = intl4.string(onClick(1125).t.N6TdqN);
           cResult[24] = stringResult2;
           tmp40 = stringResult2;
         } else {
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         }
         if (cResult[25] !== tmp4.body) {
           const obj9 = { style: body, variant: "text-md/medium", color: "text-muted", children: tmp40 };
-          const tmp44 = closure_5(onClick(5234).Text, obj9);
+          const tmp44 = closure_5(onClick(5235).Text, obj9);
           cResult[25] = tmp4.body;
           cResult[26] = tmp44;
           tmp42 = tmp44;
@@ -210,7 +210,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         const _Symbol5 = Symbol;
         ({ noticeContainer, innerContainer } = tmp4);
         if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp47 = closure_5(onClick(11307).TimerIcon, { size: "sm" });
+          const tmp47 = closure_5(onClick(11310).TimerIcon, { size: "sm" });
           cResult[27] = tmp47;
           tmp45 = tmp47;
         } else {
@@ -228,8 +228,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         const _Symbol6 = Symbol;
         const text = tmp4.text;
         if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl5 = tmp(1128).intl;
-          const stringResult3 = intl5.string(onClick(1128).t.Fq3DJb);
+          const intl5 = tmp(1125).intl;
+          const stringResult3 = intl5.string(onClick(1125).t.Fq3DJb);
           cResult[30] = stringResult3;
           tmp52 = stringResult3;
         } else {
@@ -237,7 +237,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
         }
         if (cResult[31] !== tmp4.text) {
           const obj11 = { style: text, variant: "text-sm/medium", color: "text-default", children: tmp52 };
-          const tmp56 = closure_5(onClick(5234).Text, obj11);
+          const tmp56 = closure_5(onClick(5235).Text, obj11);
           cResult[31] = tmp4.text;
           cResult[32] = tmp56;
           tmp54 = tmp56;
@@ -257,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
             const _Symbol7 = Symbol;
             const secondInnerContainer = tmp4.secondInnerContainer;
             if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp63 = closure_5(onClick(5678).LinkIcon, { size: "sm" });
+              const tmp63 = closure_5(onClick(5679).LinkIcon, { size: "sm" });
               cResult[37] = tmp63;
               tmp61 = tmp63;
             } else {
@@ -275,8 +275,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
             const _Symbol8 = Symbol;
             const text2 = tmp4.text;
             if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl6 = tmp(1128).intl;
-              const stringResult4 = intl6.string(onClick(1128).t.XKbf2G);
+              const intl6 = tmp(1125).intl;
+              const stringResult4 = intl6.string(onClick(1125).t.XKbf2G);
               cResult[40] = stringResult4;
               tmp68 = stringResult4;
             } else {
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
             }
             if (cResult[41] !== tmp4.text) {
               const obj13 = { style: text2, variant: "text-sm/medium", color: "text-default", children: tmp68 };
-              const tmp72 = closure_5(onClick(5234).Text, obj13);
+              const tmp72 = closure_5(onClick(5235).Text, obj13);
               cResult[41] = tmp4.text;
               cResult[42] = tmp72;
               tmp70 = tmp72;
@@ -319,7 +319,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
                           }
                         }
                         const obj14 = { showGradient: true, scrollable: true, startExpanded: true, header: tmp12, footer: tmp31, children: tmp81 };
-                        const tmp86 = closure_5(onClick(5265).BottomSheet, obj14);
+                        const tmp86 = closure_5(onClick(5266).BottomSheet, obj14);
                         cResult[55] = tmp31;
                         cResult[56] = tmp81;
                         cResult[57] = tmp12;
@@ -329,7 +329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
                     }
                     const obj15 = { children: items };
                     items = [tmp37, tmp42, tmp77];
-                    const tmp83 = closure_6(onClick(5269).BottomSheetScrollView, obj15);
+                    const tmp83 = closure_6(onClick(5270).BottomSheetScrollView, obj15);
                     cResult[51] = tmp37;
                     cResult[52] = tmp42;
                     cResult[53] = tmp77;
@@ -415,56 +415,56 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
   }, items);
   let obj = { showGradient: true, scrollable: true, startExpanded: true, header: closure_5(View, obj2), footer: closure_6(View, obj4), children: closure_6(BottomSheetScrollView, obj9) };
   obj2 = { style: tmp.titleImage, children: closure_5(tmp3, obj3) };
-  BottomSheet = onClick(5265).BottomSheet;
+  BottomSheet = onClick(5266).BottomSheet;
   obj3 = { source: AssetRegistryDefault, resizeMode: "contain" };
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.footer, ];
   const obj5 = { padding: 16, paddingBottom: bottom + 16 };
   items1[1] = obj5;
   tmp3 = FastImageDefault;
-  const obj6 = { text: intl.string(onClick(1128).t["3PatSz"]), onPress: callback };
-  const Button = onClick(5244).Button;
-  intl = onClick(1128).intl;
+  const obj6 = { text: intl.string(onClick(1125).t["3PatSz"]), onPress: callback };
+  const Button = onClick(5245).Button;
+  intl = onClick(1125).intl;
   items2 = [closure_5(Button, obj6), ];
   const obj7 = { style: tmp.button, children: closure_5(Button2, obj8) };
   obj8 = {
-    text: intl2.string(onClick(1128).t["ETE/oC"]),
+    text: intl2.string(onClick(1125).t["ETE/oC"]),
     onPress: function handleCancel() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },
     variant: "tertiary"
   };
-  Button2 = onClick(5244).Button;
-  intl2 = onClick(1128).intl;
+  Button2 = onClick(5245).Button;
+  intl2 = onClick(1125).intl;
   items2[1] = closure_5(View, obj7);
   obj9 = { children: items3 };
-  BottomSheetScrollView = onClick(5269).BottomSheetScrollView;
-  const obj10 = { style: tmp.title, variant: "heading-lg/extrabold", accessibilityRole: "header", children: intl3.string(onClick(1128).t["bkqux/"]) };
-  const Text = onClick(5234).Text;
-  intl3 = onClick(1128).intl;
+  BottomSheetScrollView = onClick(5270).BottomSheetScrollView;
+  const obj10 = { style: tmp.title, variant: "heading-lg/extrabold", accessibilityRole: "header", children: intl3.string(onClick(1125).t["bkqux/"]) };
+  const Text = onClick(5235).Text;
+  intl3 = onClick(1125).intl;
   items3 = [closure_5(Text, obj10), , ];
-  const obj11 = { style: tmp.body, variant: "text-md/medium", color: "text-muted", children: intl4.string(onClick(1128).t.N6TdqN) };
-  const Text2 = onClick(5234).Text;
-  intl4 = onClick(1128).intl;
+  const obj11 = { style: tmp.body, variant: "text-md/medium", color: "text-muted", children: intl4.string(onClick(1125).t.N6TdqN) };
+  const Text2 = onClick(5235).Text;
+  intl4 = onClick(1125).intl;
   items3[1] = closure_5(Text2, obj11);
   const obj13 = { style: tmp.innerContainer, children: items4 };
   items4 = [, ];
   const obj12 = { style: tmp.noticeContainer, children: items5 };
-  const obj14 = { style: tmp.item, children: closure_5(onClick(11307).TimerIcon, { size: "sm" }) };
+  const obj14 = { style: tmp.item, children: closure_5(onClick(11310).TimerIcon, { size: "sm" }) };
   items4[0] = closure_5(View, obj14);
-  const obj15 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl5.string(onClick(1128).t.Fq3DJb) };
-  const Text3 = onClick(5234).Text;
-  intl5 = onClick(1128).intl;
+  const obj15 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl5.string(onClick(1125).t.Fq3DJb) };
+  const Text3 = onClick(5235).Text;
+  intl5 = onClick(1125).intl;
   items4[1] = closure_5(Text3, obj15);
   items5 = [closure_6(View, obj13), ];
   const obj16 = { style: tmp.secondInnerContainer, children: items6 };
   items6 = [, ];
-  const obj17 = { style: tmp.item, children: closure_5(onClick(5678).LinkIcon, { size: "sm" }) };
+  const obj17 = { style: tmp.item, children: closure_5(onClick(5679).LinkIcon, { size: "sm" }) };
   items6[0] = closure_5(View, obj17);
-  const obj18 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl6.string(onClick(1128).t.XKbf2G) };
-  const Text4 = onClick(5234).Text;
-  intl6 = onClick(1128).intl;
+  const obj18 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl6.string(onClick(1125).t.XKbf2G) };
+  const Text4 = onClick(5235).Text;
+  intl6 = onClick(1125).intl;
   items6[1] = closure_5(Text4, obj18);
   items5[1] = closure_6(View, obj16);
   items3[2] = closure_6(View, obj12);

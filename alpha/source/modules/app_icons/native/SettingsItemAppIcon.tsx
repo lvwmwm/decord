@@ -1,19 +1,19 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16925
+// Function ID: 16926
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 9865, 21, 4971, 587, 558, 576, 14767, 9866, 10571, 16384, 2]
+// Dependencies: [19, 9867, 21, 4972, 587, 558, 576, 14803, 9868, 10574, 16423, 2]
 
-// Module 16883 (SettingsItemAppIcon)
+// Module 16925 (SettingsItemAppIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AppIconConstants from "AppIconConstants" /* 9865 */;
-import AppIconTypes from "AppIconTypes" /* 9866 */;
-import ClydeIcon from "ClydeIcon" /* 10571 */;
-import AppIconUtils from "AppIconUtils" /* 14767 */;
-import AppIconDefault from "AppIcon" /* 16384 */;
+import AppIconConstants from "AppIconConstants" /* 9867 */;
+import AppIconTypes from "AppIconTypes" /* 9868 */;
+import ClydeIcon from "ClydeIcon" /* 10574 */;
+import AppIconUtils from "AppIconUtils" /* 14803 */;
+import AppIconDefault from "AppIcon" /* 16423 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

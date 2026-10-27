@@ -1,16 +1,16 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12733
+// Function ID: 12734
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 12725, 21, 558, 576, 6924, 12726, 12731, 12733, 7095, 1128, 12734, 2]
+// Dependencies: [19, 12734, 21, 558, 576, 6926, 12735, 12740, 12742, 7097, 1125, 12743, 2]
 
-// Module 12724 (GameOrganizationJoinModal)
+// Module 12733 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import StepModal2 from "StepModal" /* 12734 */;
+import intl2 from "intl" /* 1125 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import StepModal2 from "StepModal" /* 12743 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12734 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = tmp(7095);
+  const tmpResult = tmp(7097);
   return tmpResult.useNavigatorScreens(tmp4, tmp5);
 }) : (function useScreens(arg0) {
   let closure_0;
@@ -158,7 +158,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   const cResult = obj.c(3);
   const tmp4 = closure_6(code.code);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t["13/7kX"]);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,21 +1,21 @@
-// Module ID: 16139
-// Function ID: 16140
+// Module ID: 16177
+// Function ID: 16178
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [8332, 1087, 1128, 558, 576, 4799, 1405, 13589, 11209, 2]
+// Dependencies: [8331, 1084, 1125, 558, 576, 4800, 1402, 13603, 11212, 2]
 
-// Module 16139 (DiscoveryByPhoneSetting)
+// Module 16177 (DiscoveryByPhoneSetting)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13589 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13603 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const FlagUtils = tmp(1405);
+const FlagUtils = tmp(1402);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoveryByPhoneSettingValue() {

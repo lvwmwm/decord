@@ -1,13 +1,13 @@
-// Module ID: 13864
-// Function ID: 13865
+// Module ID: 13878
+// Function ID: 13879
 // Name: useAppChannelRunningApp
-// Dependencies: [6775, 1087, 6776, 558, 576, 504, 13865, 1128, 2]
+// Dependencies: [6776, 1084, 6777, 558, 576, 504, 13879, 1125, 2]
 
-// Module 13864 (useAppChannelRunningApp)
-import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import useFrameRunsInBackgroundDefault from "useFrameRunsInBackground" /* 13865 */;
-import FramesStore from "FramesStore" /* 6775 */;
+// Module 13878 (useAppChannelRunningApp)
+import Constants from "Constants" /* 1084 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
+import useFrameRunsInBackgroundDefault from "useFrameRunsInBackground" /* 13879 */;
+import FramesStore from "FramesStore" /* 6776 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,8 +70,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
   if (cResult[4] !== tmp9) {
     let stringResult = null;
     if (tmp9) {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t["1yCkJY"]);
+      const intl = tmp(1125).intl;
+      stringResult = intl.string(tmp(1125).t["1yCkJY"]);
     }
     cResult[4] = tmp9;
     cResult[5] = stringResult;
@@ -122,8 +122,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
   const obj2 = { frameId: stateFromStores, runningLabel: stringResult };
   stringResult = null;
   if (useFrameRunsInBackgroundDefault(stateFromStores)) {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t["1yCkJY"]);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t["1yCkJY"]);
   }
   return obj2;
 });

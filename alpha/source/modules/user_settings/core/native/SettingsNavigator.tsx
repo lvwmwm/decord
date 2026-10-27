@@ -1,29 +1,29 @@
-// Module ID: 18367
-// Function ID: 18368
+// Module ID: 18401
+// Function ID: 18402
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2068, 15980, 1087, 21, 9743, 4971, 587, 558, 576, 18368, 1202, 5234, 1506, 14769, 18369, 7091, 573, 7253, 7278, 15982, 7584, 15983, 7095, 15291, 5252, 6908, 1128, 17858, 18370, 15829, 18371, 38, 2]
+// Dependencies: [32, 19, 17, 2065, 16018, 1084, 21, 9745, 4972, 587, 558, 576, 18402, 1199, 5235, 1503, 14805, 18403, 7093, 573, 7255, 7280, 16020, 7585, 16021, 7097, 15327, 5253, 6910, 1125, 17892, 18404, 15867, 18405, 38, 2]
 
-// Module 18367 (SettingsNavigator)
+// Module 18401 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Pressables from "Pressables" /* 6908 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7091 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15982 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 17858 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 18368 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Pressables from "Pressables" /* 6910 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7093 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16020 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 17892 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 18402 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 15980 */;
-import Constants from "Constants" /* 1087 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 16018 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import NativeStackView from "NativeStackView" /* 9745 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: native.BetaSizes.SMALL };
-      const BetaTag = tmp(1202).BetaTag;
+      const BetaTag = tmp(1199).BetaTag;
       const tmp7 = authStore(BetaTag, obj2);
       cResult[0] = tmp7;
       first = tmp7;
@@ -95,7 +95,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
 }) : (function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
     const obj = { size: native.BetaSizes.SMALL };
-    const BetaTag = tmp(1202).BetaTag;
+    const BetaTag = tmp(1199).BetaTag;
     return authStore(BetaTag, obj);
   }
 });

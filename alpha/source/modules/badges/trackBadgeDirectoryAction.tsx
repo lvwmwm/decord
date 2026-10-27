@@ -1,13 +1,13 @@
-// Module ID: 11145
-// Function ID: 11146
+// Module ID: 11148
+// Function ID: 11149
 // Name: trackBadgeDirectoryAction
-// Dependencies: [1392, 8681, 1087, 1267, 2]
+// Dependencies: [1389, 8681, 1084, 1264, 2]
 // Exports: default
 
-// Module 11145 (trackBadgeDirectoryAction)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 11148 (trackBadgeDirectoryAction)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import UserStore from "UserStore" /* 1389 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import size from "module_2" /* 2 */;
 

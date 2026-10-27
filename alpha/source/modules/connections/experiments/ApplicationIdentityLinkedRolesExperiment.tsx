@@ -1,11 +1,11 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19188
+// Function ID: 19189
 // Name: ApplicationIdentityLinkedRolesExperiment
-// Dependencies: [5188, 558, 576, 2]
+// Dependencies: [5189, 558, 576, 2]
 
-// Module 19150 (ApplicationIdentityLinkedRolesExperiment)
+// Module 19188 (ApplicationIdentityLinkedRolesExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5188" /* 5188 */;
+import createExperiment from "module_5189" /* 5189 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

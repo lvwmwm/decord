@@ -1,12 +1,12 @@
 // Module ID: 8856
 // Function ID: 8857
 // Name: showSharePreparingModal
-// Dependencies: [8854, 6672, 8857, 2002, 2]
+// Dependencies: [8854, 6673, 8857, 1999, 2]
 // Exports: showSharePreparingModal
 
 // Module 8856 (showSharePreparingModal)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8854 */;
 import size from "module_2" /* 2 */;
 

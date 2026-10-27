@@ -1,12 +1,12 @@
-// Module ID: 18452
-// Function ID: 18453
+// Module ID: 18486
+// Function ID: 18487
 // Name: useUserTileBackground
-// Dependencies: [558, 576, 9419, 8742, 2]
+// Dependencies: [558, 576, 9418, 8742, 2]
 
-// Module 18452 (useUserTileBackground)
+// Module 18486 (useUserTileBackground)
 import react from "react" /* 576 */;
 import useProfileTileGradientDefault from "useProfileTileGradient" /* 8742 */;
-import DominantColorUtils from "DominantColorUtils" /* 9419 */;
+import DominantColorUtils from "DominantColorUtils" /* 9418 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

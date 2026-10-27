@@ -1,18 +1,18 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11244
+// Function ID: 11245
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 4827, 4841, 4823, 4845, 4903, 1087, 7448, 7319, 8864, 8471, 11242, 7347, 5696, 10071, 5606, 7867, 6634, 2]
+// Dependencies: [5, 4828, 4842, 4824, 4846, 4904, 1084, 7449, 7321, 8864, 8470, 11245, 7349, 5697, 10073, 5607, 7868, 6635, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11241 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import GuildRecord from "GuildRecord" /* 4841 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7448 */;
+// Module 11244 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import GuildRecord from "GuildRecord" /* 4842 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7449 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c8, closure_6;

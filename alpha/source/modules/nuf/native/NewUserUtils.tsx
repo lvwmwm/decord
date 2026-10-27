@@ -1,34 +1,42 @@
-// Module ID: 18910
-// Function ID: 18911
+// Module ID: 18948
+// Function ID: 18949
 // Name: NewUserUtils
-// Dependencies: [5, 17374, 6500, 1392, 1087, 13583, 7868, 13585, 1384, 7891, 9050, 584, 1506, 13588, 6672, 18909, 1114, 13695, 2]
+// Dependencies: [5, 17415, 6501, 1389, 13327, 1084, 13597, 7869, 17461, 13599, 1381, 7892, 17462, 13328, 1254, 9050, 584, 1503, 13602, 6673, 18947, 1111, 13709, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18910 (NewUserUtils)
+// Module 18948 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import router_utils from "router_utils" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Link from "Link" /* 1506 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
-import react_nativeDefault from "react-native" /* 7891 */;
+import router_utils from "router_utils" /* 1111 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Link from "Link" /* 1503 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7869 */;
+import react_nativeDefault from "react-native" /* 7892 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13583 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13588 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13695 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18909 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13597 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13602 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13709 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17461 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 18947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17374 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17415 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
+import UserStore from "UserStore" /* 1389 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13327 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c2, closure_5, registration;
+let _require, c0, c1, c2, c4, c5, closure_5, registration;
 
+let c10;
+let c9;
 let metroImportAll;
 let metroImportDefault;
+function shouldSkipContactSync() {
+  obj = MobileOnboardingFrictionExperimentDefault;
+  return obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipContactSync;
+}
 let obj = function _shouldSkipContactSyncStep() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -77,9 +85,9 @@ let obj = function _shouldSkipContactSyncStep() {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          isIOSResult = value === closure_128_9.UNAUTHORIZED;
+          isIOSResult = value === closure_128_11.UNAUTHORIZED;
           if (isIOSResult) {
-            obj = closure_128_0(closure_128_2[8]);
+            obj = closure_128_0(closure_128_2[10]);
             isIOSResult = obj.isIOS();
           }
         }
@@ -100,7 +108,7 @@ function lastStepComplete(STEP_GUILD_TEMPLATE) {
   const obj2 = ModalActionCreatorsDefault;
   obj2.popWithKey(NewUserModalTypes.NEW_USER_MODAL_KEY);
   const obj3 = router_utils;
-  obj3.transitionTo(metroImportAll.ME, { navigationReplace: true });
+  obj3.transitionTo(constants2.ME, { navigationReplace: true });
   const obj4 = nuf_NUFActionCreators;
   const result = obj4.setNewUserFlowCompleted();
 }
@@ -170,7 +178,7 @@ obj = function _getNextOnboardingStep() {
               return { value, done: true };
             } else {
               let key;
-              if (closure_133_14[lastShownStepIndex] != null) {
+              if (closure_133_18[lastShownStepIndex] != null) {
                 key = tmp70.key;
               }
               registration = key;
@@ -179,12 +187,12 @@ obj = function _getNextOnboardingStep() {
               }
               closure_3 = registration;
               sum = sum + 1;
-              if (sum >= closure_133_14.length) {
-                closure_133_15(closure_3);
+              if (sum >= closure_133_18.length) {
+                closure_133_19(closure_3);
                 c7 = 3;
                 return { value: { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false }, done: true };
               } else {
-                tmp = closure_133_14[sum];
+                tmp = closure_133_18[sum];
                 key2 = tmp.key;
                 shouldShowStep = tmp.shouldShowStep;
                 transitionStep = tmp.transitionStep;
@@ -207,17 +215,17 @@ obj = function _getNextOnboardingStep() {
                 let obj12;
                 lastShownStepIndex = sum;
                 const obj10 = { skip: flag };
-                const obj3 = closure_133_0(closure_133_2[13]);
+                const obj3 = closure_133_0(closure_133_2[18]);
                 obj3.trackNUFStep(closure_3, key2, obj10);
                 if (null != transitionStep) {
-                  closure_133_15(key2);
+                  closure_133_19(key2);
                   transitionStep();
                   obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
                   const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
                 } else {
                   obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
                   transitionStep = undefined;
-                  if (closure_133_14[sum] != null) {
+                  if (closure_133_18[sum] != null) {
                     transitionStep = tmp25.transitionStep;
                   }
                 }
@@ -225,7 +233,7 @@ obj = function _getNextOnboardingStep() {
               } else {
                 c6 = 3;
                 c7 = 1;
-                const obj13 = { value: closure_133_16(flag, lastShownStepIndex, sum), done: false };
+                const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
                 return obj13;
               }
             } else if (arg0 === 1) {
@@ -252,30 +260,36 @@ obj = function _getNextOnboardingStep() {
   });
   return obj(...arguments);
 };
-({ PlatformTypes: metroImportDefault, Routes: metroImportAll } = Constants);
+({ EventActionLocation: metroImportDefault, EventActionType: metroImportAll } = NotificationPermissionConstants);
+({ PlatformTypes: c9, Routes: c10 } = Constants);
 const ContactPermissions = ContactSyncConstants.ContactPermissions;
-let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
+let closure_12 = NativePermissionConstants.NotificationAuthorizationStatus;
+const NewUserUtils = "NewUserUtils";
 obj = {
   key: "choose-avatar",
   shouldShowStep() {
-    const currentUser = UserStore.getCurrentUser();
-    let avatar;
-    if (currentUser != null) {
-      avatar = currentUser.avatar;
+    obj = MobileOnboardingFrictionExperimentDefault;
+    let tmp = !obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipAvatar;
+    if (tmp) {
+      const currentUser = UserStore.getCurrentUser();
+      let avatar;
+      if (currentUser != null) {
+        avatar = currentUser.avatar;
+      }
+      tmp = null == avatar;
     }
-    return null == avatar;
+    return tmp;
   }
 };
 let obj2 = {
   key: "enable-notification",
   shouldShowStep() {
-    return closure_12(...arguments);
+    return closure_16(...arguments);
   }
 };
-let closure_12 = _asyncToGenerator(async (arg0, value) => {
-  let obj4;
-  if (c2 === 2) {
-    c2 = 3;
+let closure_16 = _asyncToGenerator(async (arg0, value) => {
+  if (c5 === 2) {
+    c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
   } else if (tmp3 === 3) {
     if (arg0 === 1) {
@@ -287,57 +301,129 @@ let closure_12 = _asyncToGenerator(async (arg0, value) => {
       return { value: "IconComponent", done: null };
     }
   } else {
+    let c3;
     try {
-      let isIOSResult;
-      c2 = 2;
-      if (0 === c1) {
+      let notificationPrompt;
+      let closure_1;
+      let notificationAuthorizationStatus;
+      c5 = 2;
+      if (0 === c4) {
         if (arg0 === 1) {
-          c2 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c2 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c5 = 3;
+          const obj4 = { value, done: true };
+          return obj4;
         } else {
-          let closure_0 = tmp;
-          const obj2 = PlatformUtils;
-          isIOSResult = obj2.isIOS();
-          if (isIOSResult) {
-            c1 = 1;
-            c2 = 1;
-            const obj6 = { value: obj4.getNotificationAuthorizationStatus(), done: false };
-            obj4 = react_nativeDefault;
-            return obj6;
+          notificationPrompt = undefined;
+          closure_1 = undefined;
+          const obj11 = PlatformUtils;
+          if (obj11.isIOS()) {
+            const obj6 = MobileOnboardingFrictionExperimentDefault;
+            notificationPrompt = obj6.getMobileOnboardingFrictionConfig(NewUserUtils).notificationPrompt;
+            c3 = 1;
+            const obj7 = react_nativeDefault;
+            notificationAuthorizationStatus = obj7.getNotificationAuthorizationStatus();
+            c4 = 2;
+            c5 = 1;
+            const obj8 = { value: notificationAuthorizationStatus, done: false };
+            return obj8;
+          } else {
+            c5 = 3;
+            return { value: false, done: true };
           }
         }
-      } else if (arg0 === 1) {
-        c2 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c2 = 3;
-        obj = { value, done: true };
-        return obj;
+      } else if (1 === c4) {
+        c3 = 0;
+        notificationAuthorizationStatus = notificationPrompt;
+        if (notificationPrompt !== closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.OS_ONLY) {
+          throw closure_2;
+        } else {
+          const obj5 = closure_129_1(closure_129_2[14]);
+          obj5.captureException(closure_2);
+          c5 = 3;
+          return { value: false, done: true };
+        }
       } else {
-        isIOSResult = value !== closure_128_10.AUTHORIZED;
+        if (2 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj9 = { value, done: true };
+            return obj9;
+          } else {
+            closure_1 = value;
+            notificationAuthorizationStatus = closure_1;
+            if (closure_1 === closure_129_12.AUTHORIZED) {
+              c3 = 0;
+              c5 = 3;
+              return { value: false, done: true };
+            } else {
+              notificationAuthorizationStatus = notificationPrompt;
+              if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.EXPLAINER === notificationPrompt) {
+                c3 = 0;
+                c5 = 3;
+                return { value: true, done: true };
+              } else if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.OS_ONLY === notificationAuthorizationStatus) {
+                notificationAuthorizationStatus = closure_1;
+                if (closure_1 !== closure_129_12.DENIED) {
+                  const obj2 = closure_129_0(closure_129_2[13]);
+                  notificationAuthorizationStatus = obj2.requestPushNotificationPermission(closure_129_8.REQUEST, closure_129_7.AUTO_PROMPT, () => {
+
+                  });
+                  c4 = 3;
+                  c5 = 1;
+                  const obj10 = { value: notificationAuthorizationStatus, done: false };
+                  return obj10;
+                }
+              } else if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.NONE === notificationAuthorizationStatus) {
+                c3 = 0;
+                c5 = 3;
+                return { value: false, done: true };
+              } else {
+                c3 = 0;
+                c5 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            }
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c3 = 0;
+        c5 = 3;
+        return { value: false, done: true };
       }
-      c2 = 3;
-      const obj7 = { value: isIOSResult, done: true };
-      return obj7;
-    } catch (tmp11) {
-      c2 = 3;
-      throw tmp11;
+    } catch (tmp36) {
+      closure_2 = tmp36;
+      if (0 === c3) {
+        c5 = 3;
+        throw tmp36;
+      } else {
+        c4 = 1;
+      }
     }
   }
 });
 let obj3 = {
   key: "contact-sync",
   shouldShowStep() {
-    return closure_13(...arguments);
+    return closure_17(...arguments);
   }
 };
-let closure_13 = _asyncToGenerator(async (arg0, value) => {
+let closure_17 = _asyncToGenerator(async (arg0, value) => {
   function shouldSkipContactSyncStep() {
-    return closure_1_11(...arguments);
+    return closure_1_15(...arguments);
   }
   if (c0 === 2) {
     c0 = 3;
@@ -363,8 +449,11 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
           c0 = 3;
           const obj3 = { value, done: true };
           return obj3;
+        } else if (shouldSkipContactSync()) {
+          c0 = 3;
+          return { value: false, done: true };
         } else {
-          const localAccount = ConnectedAccountsStore.getLocalAccount(metroImportDefault.CONTACTS);
+          const localAccount = ConnectedAccountsStore.getLocalAccount(constants.CONTACTS);
           let friendSync;
           if (localAccount != null) {
             friendSync = localAccount.friendSync;
@@ -402,7 +491,8 @@ let items = [
   {
     key: "discoverability",
     shouldShowStep() {
-      return true;
+      obj = MobileOnboardingFrictionExperimentDefault;
+      return !obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipContactSync;
     }
   },
   obj,

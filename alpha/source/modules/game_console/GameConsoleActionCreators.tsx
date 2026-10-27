@@ -1,20 +1,20 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11655
+// Function ID: 11656
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5714, 5716, 5715, 1087, 1267, 584, 5908, 1128, 5857, 11654, 1297, 1257, 2]
+// Dependencies: [5, 5715, 5717, 5716, 1084, 1264, 584, 5909, 1125, 5858, 11656, 1294, 1254, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 11653 (GameConsoleActionCreators)
+// Module 11655 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5857 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 11654 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5858 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 11656 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import SessionsStore from "SessionsStore" /* 5716 */;
-import GameConsoleStore from "GameConsoleStore" /* 5715 */;
-import Constants from "Constants" /* 1087 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import SessionsStore from "SessionsStore" /* 5717 */;
+import GameConsoleStore from "GameConsoleStore" /* 5716 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let awaitingRemoteSessionInfo, body, c1, closure_4, closure_5, error;

@@ -1,27 +1,27 @@
-// Module ID: 19081
-// Function ID: 19082
+// Module ID: 19119
+// Function ID: 19120
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4845, 4903, 1392, 1087, 4802, 21, 1128, 19082, 9808, 14835, 4971, 587, 1633, 504, 8944, 19084, 7134, 8366, 5234, 6379, 5244, 19085, 8951, 5977, 6987, 6903, 8566, 10170, 1202, 5989, 6912, 19091, 2]
+// Dependencies: [19, 17, 4846, 4904, 1389, 1084, 4803, 21, 1125, 19120, 9810, 14871, 4972, 587, 1630, 504, 8944, 19122, 7136, 8365, 5235, 6380, 5245, 19123, 8951, 5978, 6989, 6905, 8566, 10172, 1199, 5990, 6914, 19129, 2]
 
-// Module 19081 (GuildSettingsModalStickers)
+// Module 19119 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import StickersConstants from "StickersConstants" /* 4802 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8366 */;
-import BoostGemIcon from "BoostGemIcon" /* 9808 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 14835 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19082 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19085 */;
+import intl5 from "intl" /* 1125 */;
+import StickersConstants from "StickersConstants" /* 4803 */;
+import TableRow2 from "TableRow" /* 6905 */;
+import TableRowGroup2 from "TableRowGroup" /* 6989 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8365 */;
+import BoostGemIcon from "BoostGemIcon" /* 9810 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14871 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19120 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19123 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

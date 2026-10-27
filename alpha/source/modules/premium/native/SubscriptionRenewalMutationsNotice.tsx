@@ -1,20 +1,20 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14736
+// Function ID: 14737
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 2051, 21, 4971, 587, 6707, 558, 576, 1202, 1128, 2053, 2]
+// Dependencies: [19, 17, 2048, 21, 4972, 587, 6708, 558, 576, 1199, 1125, 2050, 2]
 
-// Module 14700 (SubscriptionRenewalMutationsNotice)
+// Module 14736 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2051 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import LegacyTokens from "LegacyTokens" /* 6707 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2048 */;
+import PremiumUtils from "PremiumUtils" /* 2050 */;
+import LegacyTokens from "LegacyTokens" /* 6708 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
       tmp15 = tmp17;
     }
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1125).intl;
   const format = intl.format;
   if (!subscription.hasExternalPlanChange) {
     let displayName;

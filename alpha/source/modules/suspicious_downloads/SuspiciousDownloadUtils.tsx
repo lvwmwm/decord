@@ -1,11 +1,11 @@
 // Module ID: 8610
 // Function ID: 8611
 // Name: SuspiciousDownloadUtils
-// Dependencies: [8611, 1386, 2]
+// Dependencies: [8611, 1383, 2]
 // Exports: isSuspiciousDownload
 
 // Module 8610 (SuspiciousDownloadUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
 import _modDef8611 from "module_8611" /* 8611 */;
 import size from "module_2" /* 2 */;
 

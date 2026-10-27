@@ -1,11 +1,11 @@
 // Module ID: 9081
 // Function ID: 9082
 // Name: GuildMembersInMobileVCInvitesExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
 // Module 9081 (GuildMembersInMobileVCInvitesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

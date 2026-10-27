@@ -1,15 +1,15 @@
-// Module ID: 19509
-// Function ID: 19510
+// Module ID: 19547
+// Function ID: 19548
 // Name: SelectVoiceChannel
-// Dependencies: [4823, 5714, 19502, 6634, 7867, 5707, 2]
+// Dependencies: [4824, 5715, 19540, 6635, 7868, 5708, 2]
 
-// Module 19509 (SelectVoiceChannel)
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+// Module 19547 (SelectVoiceChannel)
+import transitionToChannel from "transitionToChannel" /* 5708 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6635 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7868 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19540 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");

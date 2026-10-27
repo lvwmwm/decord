@@ -1,21 +1,21 @@
-// Module ID: 15058
-// Function ID: 15059
+// Module ID: 15094
+// Function ID: 15095
 // Name: NowPlayingStore
-// Dependencies: [7732, 5712, 1392, 1087, 15059, 504, 584, 2]
+// Dependencies: [7733, 5713, 1389, 1084, 15095, 504, 584, 2]
 
-// Module 15058 (NowPlayingStore)
+// Module 15094 (NowPlayingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 15059 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1084 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 15095 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7733 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, timestamps;
 
-const f123296 = (item) => {
+const f123622 = (item) => {
   const tmp = false !== closure_2_9(item) || closure_0;
   closure_0 = tmp;
 };
@@ -203,14 +203,14 @@ let obj = {
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
       let closure_0 = false;
-      const item = presences.forEach(f123296);
+      const item = presences.forEach(f123622);
       const tmp2 = closure_0;
       if (tmp2) {
         c0 = true;
       }
     });
     let c0 = false;
-    const item1 = presences.forEach(f123296);
+    const item1 = presences.forEach(f123622);
     const tmp3 = c0;
     if (tmp3) {
       c0 = true;
@@ -228,7 +228,7 @@ let obj = {
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
     let c0 = false;
-    const item = presences.forEach(f123296);
+    const item = presences.forEach(f123622);
     return c0;
   }
 };

@@ -1,31 +1,31 @@
-// Module ID: 18304
-// Function ID: 18305
+// Module ID: 18338
+// Function ID: 18339
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 109, 19, 4823, 4901, 4845, 4903, 1392, 18305, 1087, 21, 4971, 587, 558, 576, 1505, 1417, 1202, 1128, 11, 5025, 6903, 504, 18306, 8953, 18307, 5037, 2067, 5234, 18309, 6987, 8951, 5977, 5592, 2]
+// Dependencies: [5, 109, 19, 4824, 4902, 4846, 4904, 1389, 18339, 1084, 21, 4972, 587, 558, 576, 1502, 1414, 1199, 1125, 11, 5026, 6905, 504, 18340, 8953, 18341, 5038, 2064, 5235, 18343, 6989, 8951, 5978, 5593, 2]
 
-// Module 18304 (IntegrationsSettingsWebhooksOverview)
+// Module 18338 (IntegrationsSettingsWebhooksOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import native from "native" /* 5037 */;
-import NavScrim from "NavScrim" /* 5592 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
+import intl3 from "intl" /* 1125 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import native from "native" /* 5038 */;
+import NavScrim from "NavScrim" /* 5593 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
 import Form2 from "Form" /* 8951 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18306 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import UserStore from "UserStore" /* 1392 */;
-import WebhooksStore from "WebhooksStore" /* 18305 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4902 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import UserStore from "UserStore" /* 1389 */;
+import WebhooksStore from "WebhooksStore" /* 18339 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -647,7 +647,7 @@ class WebhooksOverview extends PureComponent {
     }
     const helpText = self.getHelpText();
     const tmp2 = closure_22;
-    const children = [closure_20(webhookType(5234).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+    const children = [closure_20(webhookType(5235).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
     let tmp4Result = webhookType === constants3.INCOMING;
     const tmp3 = closure_21;
     const tmp7 = constants3;
@@ -657,14 +657,14 @@ class WebhooksOverview extends PureComponent {
     }
     children[1] = tmp4Result;
     if (0 === found.length) {
-      const obj2 = { Illustration: webhookType(18309).WebhookEmpty, title: stringResult };
-      const EmptyState = tmp5(1202).EmptyState;
+      const obj2 = { Illustration: webhookType(18343).WebhookEmpty, title: stringResult };
+      const EmptyState = tmp5(1199).EmptyState;
       if (webhookType === tmp7.CHANNEL_FOLLOWER) {
-        const intl2 = tmp5(1128).intl;
-        stringResult = intl2.string(tmp5(1128).t.dkHRkE);
+        const intl2 = tmp5(1125).intl;
+        stringResult = intl2.string(tmp5(1125).t.dkHRkE);
       } else {
-        const intl = tmp5(1128).intl;
-        stringResult = intl.string(tmp5(1128).t["4JAVI+"]);
+        const intl = tmp5(1125).intl;
+        stringResult = intl.string(tmp5(1125).t["4JAVI+"]);
       }
       tmp4Result2 = tmp4(EmptyState, obj2);
     } else {
@@ -684,7 +684,7 @@ class WebhooksOverview extends PureComponent {
             return closure_1_20(closure_1_25, obj, id);
           })
       };
-      const TableRowGroup = tmp5(6987).TableRowGroup;
+      const TableRowGroup = tmp5(6989).TableRowGroup;
       tmp4Result2 = tmp4(TableRowGroup, obj3);
     }
     children[2] = tmp4Result2;

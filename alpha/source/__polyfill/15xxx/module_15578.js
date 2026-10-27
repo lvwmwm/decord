@@ -1,17 +1,10 @@
 // Module ID: 15578
 // Function ID: 15579
-// Dependencies: [15553]
+// Dependencies: [15579, 15647]
 
 // Module 15578
-import _mod15553 from "module_15553" /* 15553 */;
+import _mod15647 from "module_15647" /* 15647 */;
+import module_15579 from "module_15579" /* 15579 */;
 
-let fn;
-if (_mod15553) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
 
-export default fn;
+export default _mod15647.Object.assign;

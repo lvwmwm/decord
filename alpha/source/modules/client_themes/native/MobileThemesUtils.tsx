@@ -1,22 +1,22 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5203
+// Function ID: 5204
 // Name: MobileThemesUtils
-// Dependencies: [1207, 4995, 5203, 1253, 1255, 4996, 1256, 4998, 4999, 1128, 2768, 558, 576, 5204, 504, 2]
+// Dependencies: [1204, 4996, 5204, 1250, 1252, 4997, 1253, 4999, 5000, 1125, 2769, 558, 576, 5205, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, isHexagonCampaignMobileTheme, isNitroGatedMobileTheme
 
-// Module 5202 (MobileThemesUtils)
+// Module 5203 (MobileThemesUtils)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import _modDef2768 from "module_2768" /* 2768 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4999 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5204 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5203 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import intl2 from "intl" /* 1125 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import _modDef2769 from "module_2769" /* 2769 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5000 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5205 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5204 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,10 +30,10 @@ let metroImportDefault;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const HexagonCampaignUtils = tmp(4998);
+const HexagonCampaignUtils = tmp(4999);
 function getCustomThemesName() {
   const intl = intl2.intl;
-  return intl.string(_modDef2768.yl1iMm);
+  return intl.string(_modDef2769.yl1iMm);
 }
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroImportDefault, HEXAGON_GRADIENT_PRESET: metroImportAll, REFRESH_STANDARD_BACKGROUND_THEMES: c9 } = ClientThemesConstants);
 ({ HexagonCampaignPerk: c10, HexagonCampaignPerkAvailability: unpackModuleId } = HexagonCampaignConstants);
@@ -341,7 +341,7 @@ export { isHexagonCampaignMobileTheme };
 export const isNitroGatedMobileTheme = function isNitroGatedMobileTheme(themes) {
   let tmp3 = themes.type !== ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME;
   if (tmp3) {
-    let result = themes.type === tmp(1256).ClientThemeType.BACKGROUND_GRADIENT_PRESET;
+    let result = themes.type === tmp(1253).ClientThemeType.BACKGROUND_GRADIENT_PRESET;
     if (result) {
       const tmpResult = HexagonCampaignUtils;
       result = tmpResult.isHexagonCampaignClientThemePreset(themes.id);

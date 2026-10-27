@@ -4,9 +4,16 @@
 
 // Module 1938
 const obj = {
-  locale: "th",
+  locale: "vi",
   pluralRuleFunction(arg0, arg1) {
-    return "other";
+    let str = "other";
+    if (arg1) {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
+      }
+    }
+    return str;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);

@@ -1,22 +1,22 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 14652
+// Function ID: 14653
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1087, 21, 4971, 6651, 587, 558, 576, 1633, 1128, 1202, 14617, 14618, 2]
+// Dependencies: [19, 17, 1084, 21, 4972, 6652, 587, 558, 576, 1630, 1125, 1199, 14653, 14654, 2]
 
-// Module 14616 (VoiceEmptyState)
+// Module 14652 (VoiceEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14617 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14618 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14653 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles_mod from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import TextStyles_mod from "TextStyles" /* 6652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,9 +63,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceEmptySt
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl3.t["/HABZo"]);
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const stringResult1 = intl2.string(intl3.t["5Jy2FY"]);
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
@@ -119,7 +119,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceEmptySt
       tmp17 = tmp19;
     }
     const obj11 = { title: tmp9, body: tmp10, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, titleStyle: null, bodyStyle: null, imageStyle: tmp13 };
-    const ThemedEmptyState = tmp(1202).ThemedEmptyState;
+    const ThemedEmptyState = tmp(1199).ThemedEmptyState;
     ({ emptyTitle: obj4.titleStyle, emptyBody: obj4.bodyStyle } = tmp4);
     const tmp16 = React3(ThemedEmptyState, obj11);
     cResult[8] = tmp4.emptyBody;

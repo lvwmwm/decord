@@ -1,251 +1,50 @@
 // Module ID: 1812
 // Function ID: 1813
-// Dependencies: [32, 19, 1661, 1766, 1695, 1686, 1689, 1688]
+// Dependencies: [1760, 1800, 1802]
+// Exports: useComposedEventHandler
 
 // Module 1812
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import module_1661_mod from "module_1661" /* 1661 */;
+let set, workletEventHandler;
 
-let c3;
-let closure_4;
-({ useRef: c3, useState: closure_4 } = react);
-let module_1661 = module_1661_mod;
-module_1661.shouldBeUseWeb();
-module_1661 = module_1661_mod;
-module_1661 = module_1661.isIOS();
-if (!module_1661) {
-  const _module3 = module_1661;
-  module_1661 = _module3.isMacOS();
-}
-const __initData = { code: "function pnpm_useAnimatedRefTs1(){const{tagOrWrapper,viewName}=this.__closure;const f=function(){return tagOrWrapper.value;};if(viewName){f.viewName=viewName;}return f;}" };
+let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
 
-export const useAnimatedRef = module_1661 ? (function useAnimatedRefWeb() {
-  let fun;
-  const f89697 = (getScrollableNode) => {
-    let scrollableNode;
-    if (getScrollableNode.getScrollableNode) {
-      scrollableNode = getScrollableNode.getScrollableNode();
-    } else {
-      scrollableNode = getScrollableNode;
-      if (getScrollableNode.getNativeScrollRef) {
-        scrollableNode = getScrollableNode.getNativeScrollRef();
-      }
-    }
-    return scrollableNode;
-  };
-  map = new Map();
-  const current = fun(map).current;
-  let closure_2 = fun(-1);
-  const tmp2 = fun(null);
-  if (!tmp2.current) {
-    fun = function fun(map) {
-      let tag;
-      let closure_0 = map;
-      if (closure_0) {
-        ref.current = closure_0(map);
-        fun.getTag = () => {
-          const obj = first(first1[3]);
-          return obj.findNodeHandle(map);
-        };
-        fun.current = map;
-        const arr = tag;
-        if (tag.size) {
-          tag = undefined;
-          if (fun != null) {
-            const getTag = tmp3.getTag;
-            if (getTag != null) {
-              tag = getTag();
-            }
-          }
-          if (tag == null) {
-            tag = null;
-          }
-          const item = arr.forEach((fn, fn2) => {
-            if (fn != null) {
-              fn();
-            }
-            const result = current.set(fn2, fn2(tag));
-          });
-        }
-      }
-      return ref.current;
-    };
-    fun.observe = (fn) => {
-      let closure_0 = fn;
-      let tmp = fun;
-      let tag;
-      if (fun != null) {
-        const getTag = tmp.getTag;
-        if (getTag != null) {
-          tag = getTag();
-        }
-      }
-      if (tag == null) {
-        tag = null;
-      }
-      const result = current.set(fn, fn(tag));
-      return () => {
-        const value = current.get(fn);
-        const obj = current;
-        const tmp = fn;
-        if (value != null) {
-          value();
-        }
-        obj.delete(tmp);
-      };
-    };
-    fun.current = null;
-    tmp2.current = fun;
-  }
-  return tmp2.current;
-}) : (function useAnimatedRefNative() {
-  let fn;
-  const viewName = _slicedToArray(closure_4(() => {
-    let mutable = null;
-    const obj = first(first1[2]);
-    const tmp = first;
-    const tmp2 = first1;
-    if (!obj.isFabric()) {
-      mutable = null;
-      if (module_1661) {
-        const tmpResult = tmp(tmp2[4]);
-        mutable = tmpResult.makeMutable(null);
-      }
-    }
-    return mutable;
-  }), 1)[0];
-  const first1 = _slicedToArray(closure_4(() => {
-    const obj = first(first1[4]);
-    return obj.makeMutable(null);
-  }), 1)[0];
-  const f89700 = (viewConfig) => {
-    let fn;
-    const tmp = first;
-    const obj = first(first1[2]);
-    const tmp2 = first1;
-    if (obj.isFabric()) {
-      fn = tmp(tmp2[5]).getShadowNodeWrapperFromRef;
-    } else {
-      fn = (getScrollableNode) => {
-        let scrollableNode;
-        const findNodeHandle = closure_1_0(current[3]).findNodeHandle;
-        closure_1_0(current[3]);
-        if (getScrollableNode.getScrollableNode) {
-          scrollableNode = getScrollableNode.getScrollableNode();
+export const useComposedEventHandler = function useComposedEventHandler(tmp8Result4) {
+  const obj = {};
+  set = new Set();
+  const obj2 = {};
+  const found = tmp8Result4.filter((item) => null !== item);
+  let item = found.forEach((workletEventHandler) => {
+    workletEventHandler = workletEventHandler.workletEventHandler;
+    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
+      const eventNames = workletEventHandler.eventNames;
+      const item = eventNames.forEach((item) => {
+        let tmp3;
+        set.add(item);
+        if (obj2[item]) {
+          const arr2 = obj2[item];
+          arr2.push(workletEventHandler.worklet);
+          tmp3 = workletEventHandler;
         } else {
-          scrollableNode = getScrollableNode;
-          if (getScrollableNode.getNativeScrollRef) {
-            scrollableNode = getScrollableNode.getNativeScrollRef();
-          }
+          tmp3 = workletEventHandler;
+          const items = [workletEventHandler.worklet];
+          obj2[item] = items;
         }
-        return findNodeHandle(scrollableNode);
-      };
+        obj[item + "" + obj2[item].length] = tmp3.worklet;
+      });
     }
-    current.value = fn(viewConfig);
-    const iter = current;
-    if (f89700) {
-      let str;
-      if (viewConfig != null) {
-        viewConfig = viewConfig.viewConfig;
-        if (viewConfig != null) {
-          str = viewConfig.uiViewClassName;
-        }
-      }
-      if (!str) {
-        str = "RCTView";
-      }
-      tmp3.value = str;
+  });
+  const obj3 = obj(set[1]);
+  const doDependenciesDiffer = obj3.useHandler(obj).doDependenciesDiffer;
+  const fn = function v(arg0) {
+    let closure_0 = arg0;
+    if (obj2[arg0.eventName]) {
+      const arr = tmp[arg0.eventName];
+      const item = arr.forEach((fn) => fn(closure_0));
     }
-    return iter.value;
   };
-  let fun;
-  map = new Map();
-  let current = closure_3(map).current;
-  let closure_2 = closure_3(-1);
-  const tmp4 = closure_3(null);
-  if (!tmp4.current) {
-    fun = function fun(map) {
-      let tag;
-      let closure_0 = map;
-      if (closure_0) {
-        ref.current = closure_0(map);
-        fun.getTag = () => {
-          const obj = first(first1[3]);
-          return obj.findNodeHandle(map);
-        };
-        fun.current = map;
-        const arr = tag;
-        if (tag.size) {
-          tag = undefined;
-          if (fun != null) {
-            const getTag = tmp3.getTag;
-            if (getTag != null) {
-              tag = getTag();
-            }
-          }
-          if (tag == null) {
-            tag = null;
-          }
-          const item = arr.forEach((fn, fn2) => {
-            if (fn != null) {
-              fn();
-            }
-            const result = current.set(fn2, fn2(tag));
-          });
-        }
-      }
-      return ref.current;
-    };
-    fun.observe = (fn) => {
-      let closure_0 = fn;
-      let tmp = fun;
-      let tag;
-      if (fun != null) {
-        const getTag = tmp.getTag;
-        if (getTag != null) {
-          tag = getTag();
-        }
-      }
-      if (tag == null) {
-        tag = null;
-      }
-      const result = current.set(fn, fn(tag));
-      return () => {
-        const value = current.get(fn);
-        const obj = current;
-        const tmp = fn;
-        if (value != null) {
-          value();
-        }
-        obj.delete(tmp);
-      };
-    };
-    fun.current = null;
-    tmp4.current = fun;
-  }
-  current = tmp4.current;
-  const shareableMappingCache = viewName(first1[6]).shareableMappingCache;
-  if (!shareableMappingCache.get(current)) {
-    let obj = { __init: fn };
-    fn = function n() {
-      let value;
-      const fn = function f() {
-        return value.value;
-      };
-      if (viewName) {
-        fn.viewName = viewName;
-      }
-      return fn;
-    };
-    const obj2 = { tagOrWrapper: first1, viewName };
-    fn.__closure = obj2;
-    fn.__workletHash = 5138727370224;
-    fn.__initData = __initData;
-    const tmp5Result = viewName(first1[7]);
-    const shareableCloneRecursive = tmp5Result.makeShareableCloneRecursive(obj);
-    const shareableMappingCache2 = tmp5(tmp6[6]).shareableMappingCache;
-    let result = shareableMappingCache2.set(current, shareableCloneRecursive);
-  }
-  return current;
-});
+  fn.__closure = { workletsMap: obj2 };
+  fn.__workletHash = 14960316830945;
+  fn.__initData = obj2;
+  const obj4 = obj(set[2]);
+  return obj4.useEvent(fn, Array.from(set), doDependenciesDiffer);
+};

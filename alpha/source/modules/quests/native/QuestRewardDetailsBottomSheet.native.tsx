@@ -1,24 +1,24 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 9571
+// Function ID: 9572
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 9567, 5210, 9570, 9589, 7781, 1128, 504, 14136, 5234, 5977, 5265, 2]
+// Dependencies: [19, 17, 1389, 21, 4972, 587, 558, 576, 9569, 5211, 9572, 9591, 7782, 1125, 504, 14150, 5235, 5978, 5266, 2]
 
-// Module 9569 (QuestRewardDetailsBottomSheet)
+// Module 9571 (QuestRewardDetailsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7781 */;
-import QuestUtils from "QuestUtils" /* 9567 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14136 */;
+import intl3 from "intl" /* 1125 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7782 */;
+import QuestUtils from "QuestUtils" /* 9569 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9591 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14150 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const hooks_QuestHooks = tmp(9570);
+const hooks_QuestHooks = tmp(9572);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -120,9 +120,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   if (QuestRewardTypes.QuestRewardTypes.COLLECTIBLE === type) {
     let tmp10;
     if (cResult[2] !== tmp5) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const string = intl2.string;
-      const t = tmp(1128).t;
+      const t = tmp(1125).t;
       const stringResult = string(tmp5 ? t["66YyBJ"] : t.ABD2CN);
       cResult[2] = tmp5;
       cResult[3] = stringResult;
@@ -137,7 +137,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
       let tmp7;
       const _Symbol2 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const stringResult1 = intl.string(intl3.t.maMtqM);
         cResult[4] = stringResult1;
         tmp7 = stringResult1;
@@ -194,7 +194,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     }
     if (tmp22 === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "eyebrow", color: "text-subtle", children: obj8.string(intl3.t["jyYgZ+"]) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5235).Text;
       class C {
         constructor() {
           return closure_1_5.getCurrentUser();
@@ -247,9 +247,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
               return closure_1_5.getCurrentUser();
             }
           }
-          BottomSheet = tmp(5265).BottomSheet;
+          BottomSheet = tmp(5266).BottomSheet;
           const obj4 = { direction: "vertical", spacing: nativeDefault.space.PX_16, style: tmp4.wrapper, children: items1 };
-          const Stack3 = tmp(5977).Stack;
+          const Stack3 = tmp(5978).Stack;
           items1 = [tmp33, tmp38];
           tmp46[1] = metroImportDefault(Stack3, obj4);
           const tmp49 = metroRequire(BottomSheet, tmp46);
@@ -287,7 +287,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
           return closure_1_5.getCurrentUser();
         }
       }
-      const Stack2 = tmp(5977).Stack;
+      const Stack2 = tmp(5978).Stack;
       tmp35[2] = nativeDefault.space.PX_16;
       const items3 = [tmp18, tmp29];
       tmp35[3] = items3;
@@ -298,7 +298,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
       tmp33 = tmp37;
     }
     const obj9 = { direction: "vertical", spacing: nativeDefault.space.PX_4, style: tmp4.rewardDetailsCopy, children: items4 };
-    const Stack = tmp(5977).Stack;
+    const Stack = tmp(5978).Stack;
     items4 = [tmp23, tmp26];
     const tmp32 = metroImportDefault(Stack, obj9);
     cResult[15] = tmp4.rewardDetailsCopy;
@@ -331,12 +331,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     const obj = QuestRewardUtils;
     const type = obj.getQuestPrimaryReward(quest).type;
     if (QuestRewardTypes.QuestRewardTypes.COLLECTIBLE === type) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const string = intl2.string;
-      const t = tmp(1128).t;
+      const t = tmp(1125).t;
       return string(memo ? t["66YyBJ"] : t.ABD2CN);
     } else if (QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       return intl.string(intl3.t.maMtqM);
     } else {
       return null;
@@ -345,20 +345,20 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   let obj = quest(504);
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj2 = quest(9589);
+  const obj2 = quest(9591);
   const defaultRewardName = obj2.getDefaultRewardName(quest.config, stateFromStores);
-  BottomSheet = quest(5265).BottomSheet;
+  BottomSheet = quest(5266).BottomSheet;
   const obj3 = { direction: "vertical", spacing: memo(587).space.PX_16, style: tmp.wrapper, children: items5 };
-  const Stack = quest(5977).Stack;
+  const Stack = quest(5978).Stack;
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(587).space.PX_16, children: items3 };
-  const Stack2 = quest(5977).Stack;
-  items3 = [closure_6(memo(14136), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const Stack2 = quest(5978).Stack;
+  items3 = [closure_6(memo(14150), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(587).space.PX_4, style: tmp.rewardDetailsCopy, children: items4 };
-  const Stack3 = quest(5977).Stack;
-  const obj6 = { variant: "eyebrow", color: "text-subtle", children: intl.string(quest(1128).t["jyYgZ+"]) };
-  const Text = quest(5234).Text;
-  intl = quest(1128).intl;
-  items4 = [closure_6(Text, obj6), closure_6(quest(5234).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
+  const Stack3 = quest(5978).Stack;
+  const obj6 = { variant: "eyebrow", color: "text-subtle", children: intl.string(quest(1125).t["jyYgZ+"]) };
+  const Text = quest(5235).Text;
+  intl = quest(1125).intl;
+  items4 = [closure_6(Text, obj6), closure_6(quest(5235).Text, { variant: "heading-lg/semibold", color: "text-strong", children: defaultRewardName })];
   items3[1] = closure_7(Stack3, obj5);
   items5 = [closure_7(Stack2, obj4), ];
   let tmp9Result = null != memo1;
@@ -368,7 +368,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     const obj8 = { style: tmp.separator };
     items6 = [closure_6(View, obj8), ];
     const obj9 = { variant: "text-md/normal", color: "text-subtle", children: memo1 };
-    items6[1] = closure_6(tmp4(5234).Text, obj9);
+    items6[1] = closure_6(tmp4(5235).Text, obj9);
     tmp9Result = tmp9(closure_8, obj7);
   }
   items5[1] = tmp9Result;

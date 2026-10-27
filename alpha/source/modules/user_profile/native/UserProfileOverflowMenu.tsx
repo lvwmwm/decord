@@ -1,145 +1,130 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14278
+// Function ID: 14279
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 6772, 4823, 4913, 4874, 7304, 1087, 5632, 10960, 21, 504, 14252, 13021, 11289, 14258, 8679, 7253, 7278, 8675, 8705, 8706, 14259, 14260, 14261, 7423, 7284, 8668, 1128, 7411, 5210, 6672, 14267, 2002, 7414, 10962, 1275, 7422, 10961, 14268, 14268, 8108, 1384, 13546, 1267, 2406, 11314, 7413, 4799, 7285, 5025, 5662, 2031, 5626, 9649, 12015, 7291, 14269, 5052, 9761, 14265, 7959, 9644, 587, 14270, 2]
+// Dependencies: [32, 19, 17, 6773, 4824, 4914, 4875, 7306, 1084, 5633, 21, 504, 14279, 13034, 11292, 14285, 8679, 7255, 7280, 8675, 8705, 8706, 14286, 14287, 14288, 7425, 7286, 8668, 1125, 7413, 5211, 6673, 14294, 1999, 14295, 2403, 11317, 7415, 4800, 7287, 5026, 5663, 2028, 5627, 9651, 12016, 14297, 5053, 9763, 14292, 7957, 9646, 587, 14298, 2]
 // Exports: default
 
-// Module 14251 (UserProfileOverflowMenu)
+// Module 14278 (UserProfileOverflowMenu)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import CallConstants from "CallConstants" /* 5632 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import Constants2 from "Constants" /* 7304 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7413 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7422 */;
-import ReportModals from "ReportModals" /* 8108 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import CallConstants from "CallConstants" /* 5633 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
+import Constants2 from "Constants" /* 7306 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7415 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11314 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12015 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13546 */;
-import GuildInviteUtils from "GuildInviteUtils" /* 14252 */;
-import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14261 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14265 */;
-import BotReportChooser from "BotReportChooser" /* 14268 */;
-import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14269 */;
+import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11317 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12016 */;
+import GuildInviteUtils from "GuildInviteUtils" /* 14279 */;
+import openShopThisLookActionSheet from "openShopThisLookActionSheet" /* 14288 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14292 */;
+import openUserContextMenuCommandsDefault from "openUserContextMenuCommands" /* 14297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import Constants from "Constants" /* 1087 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10960 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
-let closure_14;
 let closure_15;
-let closure_17;
-let closure_18;
-let closure_19;
-let closure_20;
+let closure_16;
 let map1;
-let tmp3;
 let unpackModuleId;
-const discord_common_AnalyticsUtils = tmp3(1275);
 let View = react_native.View;
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
-({ AnalyticEvents: unpackModuleId, AVATAR_MAX_SIZE: closure_12, ChannelTypesSets: map1, NOOP: closure_14, RelationshipTypes: closure_15 } = Constants);
+({ AVATAR_MAX_SIZE: unpackModuleId, ChannelTypesSets: closure_12, RelationshipTypes: map1 } = Constants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
-({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_17, IGNORE_CONFIRMATION_ACTION_SHEET_KEY: closure_18 } = RestrictionConfirmationConstants);
-({ jsx: closure_19, jsxs: closure_20 } = Fragment);
+({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileOverflowMenu.tsx");
 
 export default function UserProfileOverflowMenu(user) {
   let arr3;
   let arr4;
-  let closure_19;
+  let bannerURL;
+  let channel;
+  let closure_17;
+  let displayProfile;
+  let guildId1;
+  let guildId5;
+  let id4;
   let intl;
+  let intl10;
   let intl11;
-  let intl12;
-  let intl13;
-  let intl15;
-  let intl17;
-  let intl18;
   let intl2;
   let intl3;
   let intl5;
   let intl6;
   let intl7;
-  let intl8;
   let intl9;
   let isIgnored;
   let isVisible;
   let items7;
   let items8;
   let markAsDismissed;
+  let obj23;
   let obj24;
-  let obj25;
   let relationshipType;
-  let tmp66;
+  let tmp70;
   user = user.user;
   const currentUser = user.currentUser;
   const application = user.application;
-  const displayProfile = user.displayProfile;
-  const channel = user.channel;
-  let context;
+  ({ displayProfile, channel } = user);
   let trackUserProfileAction;
   let analyticsLocations;
+  let newestAnalyticsLocation;
   let guildId;
   let canRing;
   let userIsInCall;
-  let showUserProfile;
+  let callback1;
   let id2;
-  let guildId1;
-  let closure_17;
-  let closure_18;
+  let closure_15;
+  let closure_16;
   let installAppPropsFromProfileApplication;
   let tmp = user;
-  let tmp2 = application;
-  let obj = user(application[12]);
-  let items = [trackUserProfileAction];
+  const tmp2 = application;
+  let obj = user(application[11]);
+  let items = [analyticsLocations];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = { relationshipType: RelationshipStore.getRelationshipType(user.id), isIgnored: RelationshipStore.isIgnored(user.id) };
     return obj;
   });
   ({ relationshipType, isIgnored } = stateFromStoresObject);
-  let obj2 = user(application[12]);
-  let items1 = [analyticsLocations, context];
+  let obj2 = user(application[11]);
+  let items1 = [newestAnalyticsLocation, trackUserProfileAction];
   const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
-    const obj = { selectedChannel: context.getChannel(analyticsLocations.getChannelId()), selectedVoiceChannelId: analyticsLocations.getVoiceChannelId() };
+    const obj = { selectedChannel: trackUserProfileAction.getChannel(newestAnalyticsLocation.getChannelId()), selectedVoiceChannelId: newestAnalyticsLocation.getVoiceChannelId() };
     return obj;
   });
   const selectedChannel = stateFromStoresObject1.selectedChannel;
   const selectedVoiceChannelId = stateFromStoresObject1.selectedVoiceChannelId;
-  let obj3 = user(application[13]);
-  let tmp5 = displayProfile(obj3.useServerInviteRows(user.id), 2);
-  [arr3, arr4] = tmp5;
-  const tmp6 = null != trackUserProfileAction.getNickname(user.id);
-  const tmp8 = currentUser(application[14])(user.id);
+  let obj3 = user(application[12]);
+  [arr3, arr4] = channel(obj3.useServerInviteRows(user.id), 2);
+  const tmp5 = channel(obj3.useServerInviteRows(user.id), 2);
+  const tmp6 = null != analyticsLocations.getNickname(user.id);
+  const tmp8 = currentUser(application[13])(user.id);
   const tmp9 = tmp8 && arr3.length + arr4.length > 0;
-  const tmp10 = currentUser(tmp2[15])("user_profile_overflow_menu");
-  const tmpResult = tmp(tmp2[16]);
+  const tmp10 = currentUser(tmp2[14])("user_profile_overflow_menu");
+  const tmpResult = tmp(tmp2[15]);
   let result = tmpResult.isIarUserReportingEnabled("User Profile Options - Mobile");
-  const tmpResult10 = tmp(tmp2[17]);
-  const userProfileAnalyticsContext = tmpResult10.useUserProfileAnalyticsContext();
-  context = userProfileAnalyticsContext.context;
+  const tmpResult13 = tmp(tmp2[16]);
+  const userProfileAnalyticsContext = tmpResult13.useUserProfileAnalyticsContext();
+  const context = userProfileAnalyticsContext.context;
   trackUserProfileAction = userProfileAnalyticsContext.trackUserProfileAction;
-  const tmp7Result = currentUser(tmp2[18]);
-  const tmp7ResultResult = tmp7Result(currentUser(tmp2[19]).USER_PROFILE_OVERFLOW_MENU);
+  const tmp7Result = currentUser(tmp2[17]);
+  const tmp7ResultResult = tmp7Result(currentUser(tmp2[18]).USER_PROFILE_OVERFLOW_MENU);
   analyticsLocations = tmp7ResultResult.analyticsLocations;
-  const newestAnalyticsLocation = tmp7ResultResult.newestAnalyticsLocation;
+  newestAnalyticsLocation = tmp7ResultResult.newestAnalyticsLocation;
   let guild_id;
   let id = user.id;
-  const tmp7Result3 = currentUser(tmp2[20]);
+  const tmp7Result3 = currentUser(tmp2[19]);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
@@ -148,28 +133,28 @@ export default function UserProfileOverflowMenu(user) {
   if (displayProfile != null) {
     guildId = displayProfile.guildId;
   }
-  const tmpResult11 = tmp(tmp2[21]);
-  const isShopThisLookMobileEnabled = tmpResult11.useIsShopThisLookMobileEnabled("UserProfileOverflowMenu");
-  const tmpResult12 = tmp(tmp2[22]);
-  const equippedCollectibleSkuIds = tmpResult12.useEquippedCollectibleSkuIds(user.id, guildId);
-  let ref = channel.useRef(null);
-  const tmp22 = currentUser(tmp2[23])();
-  const tmpResult13 = tmp(tmp2[24]);
-  const shopThisLookMarketing = tmpResult13.useShopThisLookMarketing(user.id, guildId, isShopThisLookMobileEnabled);
+  const tmpResult14 = tmp(tmp2[20]);
+  const isShopThisLookMobileEnabled = tmpResult14.useIsShopThisLookMobileEnabled("UserProfileOverflowMenu");
+  const tmpResult15 = tmp(tmp2[21]);
+  const equippedCollectibleSkuIds = tmpResult15.useEquippedCollectibleSkuIds(user.id, guildId);
+  let ref = selectedChannel.useRef(null);
+  const tmp22 = currentUser(tmp2[22])();
+  const tmpResult16 = tmp(tmp2[23]);
+  const shopThisLookMarketing = tmpResult16.useShopThisLookMarketing(user.id, guildId, isShopThisLookMobileEnabled);
   const items2 = [user.id, guildId];
   ({ isVisible, markAsDismissed } = shopThisLookMarketing);
-  const callback = channel.useCallback(() => {
+  const callback = selectedChannel.useCallback(() => {
     const obj = openShopThisLookActionSheet;
     const obj2 = { userId: user.id, guildId };
     const result = obj.openShopThisLookActionSheet(obj2);
   }, items2);
-  const tmpResult14 = tmp(tmp2[26]);
-  canRing = tmpResult14.useCanRing(user, selectedVoiceChannelId);
-  const tmp7Result4 = currentUser(tmp2[27]);
+  const tmpResult17 = tmp(tmp2[25]);
+  canRing = tmpResult17.useCanRing(user, selectedVoiceChannelId);
+  const tmp7Result4 = currentUser(tmp2[26]);
   const tidaWebformEnabled = tmp7Result4.useExperiment({ location: "UserProfileOverflowMenu" }, { autoTrackExposure: false }).tidaWebformEnabled;
-  const items3 = [selectedVoiceChannelId];
-  const tmpResult15 = tmp(tmp2[12]);
-  const stateFromStoresObject2 = tmpResult15.useStateFromStoresObject(items3, () => {
+  const items3 = [context];
+  const tmpResult18 = tmp(tmp2[11]);
+  const stateFromStoresObject2 = tmpResult18.useStateFromStoresObject(items3, () => {
     let ringing;
     let participant = null;
     const tmp = canRing && null != selectedVoiceChannelId;
@@ -184,14 +169,14 @@ export default function UserProfileOverflowMenu(user) {
   const items4 = [user.id, , , ];
   let id1;
   const isUserRinging = stateFromStoresObject2.isUserRinging;
-  const useCallback = channel.useCallback;
+  const useCallback = selectedChannel.useCallback;
   if (channel != null) {
     id1 = channel.id;
   }
   items4[1] = id1;
   items4[2] = context;
   items4[3] = analyticsLocations;
-  showUserProfile = useCallback((showGuildProfile) => {
+  callback1 = useCallback((showGuildProfile) => {
     let id;
     const obj = { showGuildProfile, userId: user.id, channelId: id, sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true };
     const tmp = showUserProfileActionSheetDefault;
@@ -203,75 +188,76 @@ export default function UserProfileOverflowMenu(user) {
     tmp(obj);
   }, items4);
   id2 = user.id;
-  guildId1 = undefined;
   const id3 = currentUser.id;
   if (channel != null) {
     guildId1 = channel.getGuildId();
   }
-  let tmp30 = isShopThisLookMobileEnabled;
-  const BLOCKED = id2.BLOCKED;
-  const tmp29 = id2;
-  if (isShopThisLookMobileEnabled) {
-    tmp30 = equippedCollectibleSkuIds.length > 0;
+  let obj4 = { user, channelId: id4, location: newestAnalyticsLocation, analyticsLocations, trackUserProfileAction, showUserProfile: callback1 };
+  id4 = undefined;
+  const BLOCKED = callback1.BLOCKED;
+  const tmp30 = callback1;
+  if (channel != null) {
+    id4 = channel.id;
   }
-  closure_17 = tmp30;
+  closure_15 = tmp32;
   let guildId2;
   if (displayProfile != null) {
     guildId2 = displayProfile.guildId;
   }
   const items5 = [];
   if (null != guildId2) {
-    let obj4 = {
-      label: intl.string(tmp(tmp2[29]).t.GISTta),
+    let obj5 = {
+      label: intl.string(tmp(tmp2[28]).t.GISTta),
       action() {
           const obj = { action: "PRESS_VIEW_MAIN_PROFILE", analyticsLocations };
           trackUserProfileAction(obj);
-          showUserProfile(false);
+          callback1(false);
         }
     };
-    let push = items5.push;
-    intl = tmp(tmp2[29]).intl;
-    push(obj4);
+    const push = items5.push;
+    intl = tmp(tmp2[28]).intl;
+    push(obj5);
   }
   let guildId3;
   if (tmp7Result1Result != null) {
     guildId3 = tmp7Result1Result.guildId;
   }
-  let tmp34 = null != guildId3;
-  if (tmp34) {
+  let tmp36 = null != guildId3;
+  if (tmp36) {
     let guildId4;
     if (displayProfile != null) {
       guildId4 = displayProfile.guildId;
     }
-    tmp34 = null == guildId4;
+    tmp36 = null == guildId4;
   }
-  if (tmp34) {
-    let obj5 = {
-      label: intl2.string(tmp(tmp2[29]).t.DisZzB),
+  if (tmp36) {
+    let obj6 = {
+      label: intl2.string(tmp(tmp2[28]).t.DisZzB),
       action() {
           const obj = { action: "PRESS_VIEW_SERVER_PROFILE", analyticsLocations };
           trackUserProfileAction(obj);
-          showUserProfile();
+          callback1();
         }
     };
-    let push2 = items5.push;
-    intl2 = tmp(tmp2[29]).intl;
-    push2(obj5);
+    const push2 = items5.push;
+    intl2 = tmp(tmp2[28]).intl;
+    push2(obj6);
   }
   const items6 = [];
   if (id3 !== id2) {
-    let tmp37 = null != channel && !channel.isThread() && channel.isOwner(currentUser.id);
-    if (tmp37) {
+    let tmp39 = null != channel && !channel.isThread() && channel.isOwner(currentUser.id);
+    if (tmp39) {
       const recipients = channel.recipients;
       let hasItem;
       if (recipients != null) {
         hasItem = recipients.includes(id2);
       }
-      tmp37 = hasItem;
+      tmp39 = hasItem;
     }
-    if (tmp37) {
-      let obj6 = {
-        label: intl3.string(tmp(tmp2[29]).t["n5zMI+"]),
+    if (tmp39) {
+      const push3 = items6.push;
+      const obj7 = {
+        label: intl3.string(tmp(tmp2[28]).t["n5zMI+"]),
         variant: "destructive",
         action() {
               const obj = ChannelActionCreatorsDefault;
@@ -280,268 +266,113 @@ export default function UserProfileOverflowMenu(user) {
               obj2.hideActionSheet();
             }
       };
-      let push3 = items6.push;
-      intl3 = tmp(tmp2[29]).intl;
-      push3(obj6);
+      intl3 = tmp(tmp2[28]).intl;
+      push3(obj7);
     }
-    if (relationshipType === tmp29.FRIEND) {
+    if (relationshipType === tmp30.FRIEND) {
       let stringResult;
-      let push4 = items5.push;
-      let intl4 = tmp(tmp2[29]).intl;
+      const push4 = items5.push;
+      const intl4 = tmp(tmp2[28]).intl;
       const string = intl4.string;
-      const t = tmp(tmp2[29]).t;
+      const t = tmp(tmp2[28]).t;
       if (tmp6) {
         stringResult = string(t["8pOYUE"]);
       } else {
         stringResult = string(t.BGYkaH);
       }
-      let obj7 = {
+      const obj8 = {
         label: stringResult,
         action() {
               const obj = { action: "PRESS_SET_FRIEND_NICKNAME", analyticsLocations };
               trackUserProfileAction(obj);
               const obj2 = ModalActionCreatorsDefault;
-              const obj3 = { userId: id2, showUserProfile };
-              obj2.pushLazy(asyncRequire(14267, dependencyMap.paths), obj3);
+              const obj3 = { userId: id2, showUserProfile: callback1 };
+              obj2.pushLazy(asyncRequire(14294, dependencyMap.paths), obj3);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
             }
       };
-      push4(obj7);
+      push4(obj8);
     }
-    if (tmp30) {
-      let obj8 = {
-        label: intl5.string(tmp(tmp2[29]).t.xNdRDO),
+    if (isShopThisLookMobileEnabled && equippedCollectibleSkuIds.length > 0) {
+      const push5 = items5.push;
+      const obj9 = {
+        label: intl5.string(tmp(tmp2[28]).t.xNdRDO),
         action() {
               const obj = openShopThisLookActionSheet;
               const obj2 = { userId: id2, guildId };
               const result = obj.openShopThisLookActionSheet(obj2);
             }
       };
-      const push5 = items5.push;
-      intl5 = tmp(tmp2[29]).intl;
-      push5(obj8);
+      intl5 = tmp(tmp2[28]).intl;
+      push5(obj9);
     }
-    if (isIgnored) {
-      if (relationshipType !== BLOCKED) {
-        const push6 = items6.push;
-        const obj9 = {
-          label: intl6.string(tmp(tmp2[29]).t["8wXU9B"]),
-          action() {
-                  const obj = { action: "UNIGNORE", analyticsLocations };
-                  trackUserProfileAction(obj);
-                  let id;
-                  const unignoreUser = RelationshipActionCreatorsDefault.unignoreUser;
-                  RelationshipActionCreatorsDefault;
-                  const tmp3 = id2;
-                  const tmp4 = newestAnalyticsLocation;
-                  if (channel != null) {
-                    id = channel.id;
-                  }
-                  unignoreUser(tmp3, tmp4, id);
-                  showUserProfile();
-                }
-        };
-        intl6 = tmp(tmp2[29]).intl;
-        push6(obj9);
-      }
-      const push8 = items6.push;
-      if (relationshipType === BLOCKED) {
-        const obj10 = {
-          label: intl13.string(tmp(tmp2[29]).t.XyHpKH),
-          action() {
-                  const obj = { action: "UNBLOCK", analyticsLocations };
-                  trackUserProfileAction(obj);
-                  let id;
-                  const unblockUser = RelationshipActionCreatorsDefault.unblockUser;
-                  const obj2 = { location: newestAnalyticsLocation };
-                  RelationshipActionCreatorsDefault;
-                  if (channel != null) {
-                    id = tmp6.id;
-                  }
-                  unblockUser(id2, obj2, id);
-                  showUserProfile();
-                  let id1;
-                  const showUnblockSuccessToast = tmp2(7422).showUnblockSuccessToast;
-                  SafetyToastsActionCreatorsDefault;
-                  if (channel != null) {
-                    id1 = tmp6.id;
-                  }
-                  const result = showUnblockSuccessToast(tmp5, id1);
-                }
-        };
-        intl13 = tmp(tmp2[29]).intl;
-        push8(obj10);
-      } else {
-        const obj11 = {
-          label: intl8.string(tmp(tmp2[29]).t.l4Emac),
-          variant: "destructive",
-          action() {
-                  let id;
-                  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-                  ActionSheetActionCreatorsDefault;
-                  let obj = {
-                    userId: id2,
-                    channelId: id,
-                    onBlock() {
-                      const obj = { action: "BLOCK", analyticsLocations };
-                      return trackUserProfileAction(obj);
-                    },
-                    onIgnore() {
-                      const obj = { action: "IGNORE", analyticsLocations };
-                      return trackUserProfileAction(obj);
-                    },
-                    onSuccess,
-                    impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION
-                  };
-                  id = undefined;
-                  const tmp4 = asyncRequire(10961, dependencyMap.paths);
-                  const tmp5 = closure_17;
-                  if (channel != null) {
-                    id = channel.id;
-                  }
-                  openLazy(tmp4, tmp5, obj, "stack");
-                }
-        };
-        intl8 = tmp(tmp2[29]).intl;
-        push8(obj11);
-        if (result) {
-          const push10 = items6.push;
-          const intl10 = tmp(tmp2[29]).intl;
-          const string2 = intl10.string;
-          const bot = user.bot;
-          const t2 = tmp(tmp2[29]).t;
-          const obj12 = {
-            label: string2(bot ? t2.jhJzez : t2.A1MM3D),
-            variant: "destructive",
-            action() {
-                      let id;
-                      const obj = { action: "REPORT", analyticsLocations };
-                      trackUserProfileAction(obj);
-                      if (user.bot) {
-                        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-                        const tmp19 = asyncRequire(14268, dependencyMap.paths);
-                        const BOT_REPORT_CHOOSER_KEY = BotReportChooser.BOT_REPORT_CHOOSER_KEY;
-                        const obj4 = { user, entrypoint: "UserProfileOverflowMenu", contextualGuildId: tmp3, contextualChannelId: id };
-                        id = undefined;
-                        if (channel != null) {
-                          id = channel.id;
-                        }
-                        openLazy(tmp19, BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
-                      } else {
-                        const obj2 = ReportModals;
-                        const result = obj2.showReportModalForUser(tmp5, tmp3);
-                        const obj3 = ActionSheetActionCreatorsDefault;
-                        obj3.hideActionSheet();
-                      }
-                    }
-          };
-          push10(obj12);
-        } else {
-          const tmpResult16 = tmp(tmp2[43]);
-          if (tmpResult16.isAndroid()) {
-            const push9 = items6.push;
-            const obj13 = {
-              label: intl9.string(tmp(tmp2[29]).t.TbHyMG),
-              variant: "destructive",
-              action() {
-                          const obj = { action: "REPORT", analyticsLocations };
-                          trackUserProfileAction(obj);
-                          const obj2 = UserProfileAlertUtils;
-                          obj2.alertUserReported();
-                          const obj3 = AnalyticsUtilsDefault;
-                          const obj4 = { reported_user_id: id2 };
-                          obj3.track(unpackModuleId.TNS_USER_REPORT_SUBMITTED, obj4);
-                        }
-            };
-            intl9 = tmp(tmp2[29]).intl;
-            push9(obj13);
-          }
-        }
-        const tmp49 = !user.bot && tmp9;
-        if (tmp49) {
-          const push11 = items5.push;
-          const obj14 = {
-            label: intl11.string(tmp(tmp2[29]).t.Sd8Ixw),
-            action() {
-                      const obj = { action: "PRESS_INVITE_TO_SERVER", analyticsLocations };
-                      trackUserProfileAction(obj);
-                      const obj2 = GuildInviteUtils;
-                      const result = obj2.showGuildInviteActionSheet(id2, newestAnalyticsLocation);
-                    }
-          };
-          intl11 = tmp(tmp2[29]).intl;
-          push11(obj14);
-        }
-        const tmp51 = !user.bot && !user.isSystemUser() && tmp8 && tmp10;
-        if (tmp51) {
-          const push12 = items5.push;
-          const obj15 = {
-            label: intl12.string(currentUser(tmp2[46])["wkSug+"]),
-            action() {
-                      return openGameOrganizationInvitePickerDefault(id2);
-                    }
-          };
-          intl12 = tmp(tmp2[29]).intl;
-          push12(obj15);
-        }
-      }
+    const obj10 = { isIgnored, isBlocked: relationshipType === BLOCKED };
+    const tmpResult19 = tmp(tmp2[34]);
+    const ignoreMenuItem = tmpResult19.getIgnoreMenuItem(obj4, obj10);
+    if (null != ignoreMenuItem) {
+      items6.push(ignoreMenuItem);
     }
+    const push6 = items6.push;
+    const obj11 = { isBlocked: relationshipType === BLOCKED };
+    const tmpResult20 = tmp(tmp2[34]);
+    push6(tmpResult20.getBlockMenuItem(obj4, obj11));
     if (relationshipType !== BLOCKED) {
-      const push7 = items6.push;
-      const obj16 = {
-        label: intl7.string(tmp(tmp2[29]).t.ytCpKs),
-        action() {
-              let id;
-              const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-              ActionSheetActionCreatorsDefault;
-              let obj = {
-                userId: id2,
-                channelId: id,
-                onBlock() {
-                  const obj = { action: "BLOCK", analyticsLocations };
-                  return trackUserProfileAction(obj);
-                },
-                onIgnore() {
-                  const obj = { action: "IGNORE", analyticsLocations };
-                  return trackUserProfileAction(obj);
-                },
-                onSuccess,
-                impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION
-              };
-              id = undefined;
-              const tmp4 = asyncRequire(10962, dependencyMap.paths);
-              const tmp5 = authStore4;
-              if (channel != null) {
-                id = channel.id;
-              }
-              openLazy(tmp4, tmp5, obj, "stack");
-            }
-      };
-      intl7 = tmp(tmp2[29]).intl;
-      push7(obj16);
+      const obj12 = { isInIarUserReportingExperiment: result, guildId: guildId1, reportEntrypoint: "UserProfileOverflowMenu" };
+      const tmpResult21 = tmp(tmp2[34]);
+      const reportMenuItem = tmpResult21.getReportMenuItem(obj4, obj12);
+      if (null != reportMenuItem) {
+        items6.push(reportMenuItem);
+      }
+      const tmp51 = !user.bot && tmp9;
+      if (tmp51) {
+        const push7 = items5.push;
+        const obj13 = {
+          label: intl6.string(tmp(tmp2[28]).t.Sd8Ixw),
+          action() {
+                  const obj = { action: "PRESS_INVITE_TO_SERVER", analyticsLocations };
+                  trackUserProfileAction(obj);
+                  const obj2 = GuildInviteUtils;
+                  const result = obj2.showGuildInviteActionSheet(id2, newestAnalyticsLocation);
+                }
+        };
+        intl6 = tmp(tmp2[28]).intl;
+        push7(obj13);
+      }
+      const tmp53 = !user.bot && !user.isSystemUser() && tmp8 && tmp10;
+      if (tmp53) {
+        const push8 = items5.push;
+        const obj14 = {
+          label: intl7.string(currentUser(tmp2[35])["wkSug+"]),
+          action() {
+                  return openGameOrganizationInvitePickerDefault(id2);
+                }
+        };
+        intl7 = tmp(tmp2[28]).intl;
+        push8(obj14);
+      }
     }
   }
-  let tmp54 = !canRing;
+  let tmp55 = !canRing;
   if (canRing) {
-    tmp54 = null == selectedVoiceChannelId;
+    tmp55 = null == selectedVoiceChannelId;
   }
-  if (!tmp54) {
-    tmp54 = userIsInCall && !isUserRinging;
+  if (!tmp55) {
+    tmp55 = userIsInCall && !isUserRinging;
   }
-  if (!tmp54) {
-    let string3Result;
-    const push13 = items5.push;
-    const intl14 = tmp(tmp2[29]).intl;
-    const string3 = intl14.string;
-    const t3 = tmp(tmp2[29]).t;
+  if (!tmp55) {
+    let string2Result;
+    const push9 = items5.push;
+    const intl8 = tmp(tmp2[28]).intl;
+    const string2 = intl8.string;
+    const t2 = tmp(tmp2[28]).t;
     if (userIsInCall) {
-      string3Result = string3(t3.ygslb0);
+      string2Result = string2(t2.ygslb0);
     } else {
-      string3Result = string3(t3.bHa9kN);
+      string2Result = string2(t2.bHa9kN);
     }
-    const obj17 = {
-      label: string3Result,
+    const obj15 = {
+      label: string2Result,
       action() {
           let str = "RING";
           const tmp = trackUserProfileAction;
@@ -560,15 +391,15 @@ export default function UserProfileOverflowMenu(user) {
           }
         }
     };
-    push13(obj17);
+    push9(obj15);
   }
-  const DeveloperMode = tmp(tmp2[49]).DeveloperMode;
+  const DeveloperMode = tmp(tmp2[38]).DeveloperMode;
   const setting = DeveloperMode.getSetting();
-  const tmp59 = setting && tidaWebformEnabled;
-  if (!tmp59) {
-    const push14 = items5.push;
-    const obj18 = {
-      label: intl15.string(tmp(tmp2[29]).t.y5MwJy),
+  const tmp60 = setting && tidaWebformEnabled;
+  if (!tmp60) {
+    const push10 = items5.push;
+    const obj16 = {
+      label: intl9.string(tmp(tmp2[28]).t.y5MwJy),
       action() {
           const obj = { action: "COPY_USERNAME", analyticsLocations };
           trackUserProfileAction(obj);
@@ -580,30 +411,30 @@ export default function UserProfileOverflowMenu(user) {
           const result = obj3.presentUsernameCopied();
         }
     };
-    intl15 = tmp(tmp2[29]).intl;
-    push14(obj18);
+    intl9 = tmp(tmp2[28]).intl;
+    push10(obj16);
   }
   if (user.bot) {
     if (null != application) {
-      const tmpResult17 = tmp(tmp2[53]);
-      closure_18 = tmpResult17.supportsEmbeddedSurface(application, tmp(tmp2[54]).EmbeddedSurfaceType.MAIN);
-      const tmpResult18 = tmp(tmp2[55]);
-      installAppPropsFromProfileApplication = tmpResult18.getInstallAppPropsFromProfileApplication(application);
-      const push17 = items5.push;
-      const obj19 = {
-        label: intl18.string(tmp(tmp2[29]).t.WqhZss),
+      const tmpResult22 = tmp(tmp2[42]);
+      closure_16 = tmpResult22.supportsEmbeddedSurface(application, tmp(tmp2[43]).EmbeddedSurfaceType.MAIN);
+      const tmpResult23 = tmp(tmp2[44]);
+      installAppPropsFromProfileApplication = tmpResult23.getInstallAppPropsFromProfileApplication(application);
+      const push13 = items5.push;
+      const obj17 = {
+        label: intl11.string(tmp(tmp2[28]).t.WqhZss),
         action() {
               let activityLaunchURL;
               const obj = { action: "COPY_APP_LINK", analyticsLocations };
               trackUserProfileAction(obj);
               const obj2 = getApplicationInstallURL2;
-              if (closure_18) {
+              if (closure_16) {
                 const obj3 = { applicationId: application.id, referrerId: currentUser.id };
                 activityLaunchURL = obj2.getActivityLaunchURL(obj3);
               } else {
                 const getApplicationInstallURL = obj2.getApplicationInstallURL;
                 const obj4 = { id: application.id };
-                const merged = Object.assign(closure_19);
+                const merged = Object.assign(closure_17);
                 activityLaunchURL = getApplicationInstallURL(obj4);
               }
               const obj5 = ClipboardUtils;
@@ -612,133 +443,25 @@ export default function UserProfileOverflowMenu(user) {
               obj6.presentLinkCopied();
             }
       };
-      intl18 = tmp(tmp2[29]).intl;
-      push17(obj19);
+      intl11 = tmp(tmp2[28]).intl;
+      push13(obj17);
     }
   }
   if (setting) {
-    const push15 = items5.push;
-    const obj20 = { label: null, action: null };
-    const intl16 = tmp(tmp2[29]).intl;
-    const string4 = intl16.string;
-    const t4 = tmp(tmp2[29]).t;
-    if (tidaWebformEnabled) {
-      obj20.label = string4(t4.QvQeLv);
-      obj20.action = function action() {
-        let bannerURL;
-        let intl;
-        let intl2;
-        let intl3;
-        let intl4;
-        let intl5;
-        let obj8;
-        const items = [];
-        let obj = {
-          label: intl.string(user(application[29]).t.y5MwJy),
-          onPress() {
-            const obj = { action: "COPY_USERNAME", analyticsLocations };
-            trackUserProfileAction(obj);
-            const copy = user(application[50]).copy;
-            user(application[50]);
-            const obj2 = currentUser(application[51]);
-            copy(obj2.getUserTag(bannerURL, { decoration: "never", identifiable: "always" }));
-            const obj3 = user(application[52]);
-            const result = obj3.presentUsernameCopied();
-          }
-        };
-        const tmp2 = application;
-        const push = items.push;
-        intl = user(application[29]).intl;
-        push(obj);
-        let obj2 = {
-          label: intl2.string(user(application[29]).t["/AXYnE"]),
-          onPress() {
-            const obj = { action: "COPY_USER_ID", analyticsLocations };
-            trackUserProfileAction(obj);
-            const obj2 = user(application[50]);
-            obj2.copy(id2);
-            const obj3 = user(application[52]);
-            obj3.presentIdCopied();
-          }
-        };
-        const push2 = items.push;
-        intl2 = user(application[29]).intl;
-        push2(obj2);
-        let hasAvatarForGuildResult = null != bannerURL.avatar;
-        const tmp5 = bannerURL;
-        if (!hasAvatarForGuildResult) {
-          guildId = undefined;
-          const hasAvatarForGuild = tmp5.hasAvatarForGuild;
-          if (displayProfile != null) {
-            guildId = displayProfile.guildId;
-          }
-          hasAvatarForGuildResult = hasAvatarForGuild(guildId);
-        }
-        if (hasAvatarForGuildResult) {
-          let obj3 = {
-            label: intl3.string(tmp(tmp2[29]).t.gERDvM),
-            onPress() {
-                const obj = { action: "COPY_AVATAR_IMAGE_LINK", analyticsLocations };
-                trackUserProfileAction(obj);
-                guildId = undefined;
-                const getAvatarURL = bannerURL.getAvatarURL;
-                if (guildId != null) {
-                  guildId = guildId.guildId;
-                }
-                const avatarURL = getAvatarURL(guildId, canRing, true);
-                if (null != avatarURL) {
-                  const obj2 = user(application[50]);
-                  obj2.copy(avatarURL);
-                  const obj3 = user(application[52]);
-                  obj3.presentLinkCopied();
-                }
-              }
-          };
-          const push3 = items.push;
-          intl3 = tmp(tmp2[29]).intl;
-          push3(obj3);
-        }
-        const obj4 = displayProfile;
-        if (null != displayProfile) {
-          const obj5 = { canAnimate: true, size: canRing };
-          bannerURL = obj4.getBannerURL(obj5);
-          if (null != bannerURL) {
-            const push4 = items.push;
-            const obj6 = {
-              label: intl4.string(user(tmp2[29]).t.hsNv0R),
-              onPress() {
-                    const obj = { action: "COPY_BANNER_IMAGE_LINK", analyticsLocations };
-                    trackUserProfileAction(obj);
-                    const obj2 = ClipboardUtils;
-                    obj2.copy(bannerURL);
-                    const obj3 = ToastUtils;
-                    obj3.presentLinkCopied();
-                  }
-            };
-            intl4 = tmp(tmp2[29]).intl;
-            push4(obj6);
-          }
-        }
-        const obj7 = { options: items, key: "copy-info", header: obj8, stackingBehavior: "stack", hasIcons: false };
-        obj8 = { title: intl5.string(user(tmp2[29]).t.QvQeLv) };
-        const showSimpleActionSheet = tmp(tmp2[57]).showSimpleActionSheet;
-        user(tmp2[57]);
-        intl5 = tmp(tmp2[29]).intl;
-        let result = showSimpleActionSheet(obj7);
-      };
-      push15(obj20);
-    } else {
-      obj20.label = string4(t4["/AXYnE"]);
-      obj20.action = function action() {
-        const obj = { action: "COPY_USER_ID", analyticsLocations };
-        trackUserProfileAction(obj);
-        const obj2 = ClipboardUtils;
-        obj2.copy(id2);
-        const obj3 = ToastUtils;
-        obj3.presentIdCopied();
-      };
-      push15(obj20);
+    const push11 = items5.push;
+    const obj18 = { tidaWebformEnabled, avatarGuildId: guildId5, bannerUrl: bannerURL };
+    guildId5 = undefined;
+    const getDeveloperCopyMenuItem = tmp(tmp2[34]).getDeveloperCopyMenuItem;
+    tmp(tmp2[34]);
+    if (displayProfile != null) {
+      guildId5 = displayProfile.guildId;
     }
+    bannerURL = undefined;
+    if (displayProfile != null) {
+      const obj19 = { canAnimate: true, size: canRing };
+      bannerURL = displayProfile.getBannerURL(obj19);
+    }
+    push11(getDeveloperCopyMenuItem(obj4, obj18));
   }
   let hasItem1 = null != channel && null != selectedChannel;
   if (hasItem1) {
@@ -746,27 +469,27 @@ export default function UserProfileOverflowMenu(user) {
     hasItem1 = TEXTUAL.has(selectedChannel.type);
   }
   if (hasItem1) {
-    const push16 = items5.push;
-    const obj21 = {
-      label: intl17.string(tmp(tmp2[29]).t.PHjkRE),
+    const push12 = items5.push;
+    const obj20 = {
+      label: intl10.string(tmp(tmp2[28]).t.PHjkRE),
       action() {
-          const obj = { userId: id2, selectedChannel, showUserProfile, analyticsLocations };
+          const obj = { userId: id2, selectedChannel, showUserProfile: callback1, analyticsLocations };
           return openUserContextMenuCommandsDefault(obj);
         }
     };
-    intl17 = tmp(tmp2[29]).intl;
-    push16(obj21);
+    intl10 = tmp(tmp2[28]).intl;
+    push12(obj20);
   }
   if (0 !== items5.length) {
-    const obj22 = { value: analyticsLocations, children: items8 };
-    const obj23 = { ref, children: installAppPropsFromProfileApplication(View, obj24) };
-    const AnalyticsLocationProvider = tmp(tmp2[18]).AnalyticsLocationProvider;
-    obj24 = { style: tmp22, children: installAppPropsFromProfileApplication(tmp(tmp2[60]).ContextMenu, obj25) };
-    View = tmp7(tmp2[59]).View;
-    obj25 = {
+    const obj21 = { value: analyticsLocations, children: items8 };
+    const obj22 = { ref, children: closure_15(View, obj23) };
+    const AnalyticsLocationProvider = tmp(tmp2[17]).AnalyticsLocationProvider;
+    obj23 = { style: tmp22, children: closure_15(tmp(tmp2[48]).ContextMenu, obj24) };
+    View = tmp7(tmp2[47]).View;
+    obj24 = {
       items: items7,
       onOpen() {
-          const tmp = closure_17;
+          const tmp = closure_15;
           if (tmp) {
             const obj = ShopThisLookAnalyticsUtils;
             const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.MENU_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
@@ -778,22 +501,22 @@ export default function UserProfileOverflowMenu(user) {
           let obj2;
           ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[29]).t["+zofAD"]), icon: closure_19(MoreHorizontalIcon, obj2) };
-          const IconButton = user(application[62]).IconButton;
+          const obj = { ref, size: "sm", variant: "secondary-overlay", accessibilityLabel: intl.string(user(application[28]).t["+zofAD"]), icon: closure_15(MoreHorizontalIcon, obj2) };
+          const IconButton = user(application[50]).IconButton;
           const merged1 = Object.assign(merged);
-          intl = user(application[29]).intl;
-          obj2 = { size: "sm", color: currentUser(application[64]).colors.WHITE };
-          MoreHorizontalIcon = user(application[63]).MoreHorizontalIcon;
-          return closure_19(IconButton, obj);
+          intl = user(application[28]).intl;
+          obj2 = { size: "sm", color: currentUser(application[52]).colors.WHITE };
+          MoreHorizontalIcon = user(application[51]).MoreHorizontalIcon;
+          return closure_15(IconButton, obj);
         }
     };
     items7 = [items5, items6];
-    items8 = [installAppPropsFromProfileApplication(selectedChannel, obj23), ];
-    const obj26 = { targetRef: ref, visible: isVisible, onDismiss: markAsDismissed, onPress: callback };
-    items8[1] = installAppPropsFromProfileApplication(currentUser(tmp2[65]), obj26);
-    tmp66 = closure_20(AnalyticsLocationProvider, obj22);
+    items8 = [closure_15(selectedVoiceChannelId, obj22), ];
+    const obj25 = { targetRef: ref, visible: isVisible, onDismiss: markAsDismissed, onPress: callback };
+    items8[1] = closure_15(currentUser(tmp2[53]), obj25);
+    tmp70 = closure_16(AnalyticsLocationProvider, obj21);
   } else {
-    tmp66 = null;
+    tmp70 = null;
   }
-  return tmp66;
+  return tmp70;
 };

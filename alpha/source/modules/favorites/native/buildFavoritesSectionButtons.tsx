@@ -1,11 +1,11 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10862
+// Function ID: 10863
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 10845, 2002, 1128, 3412, 9949, 9947, 2]
+// Dependencies: [5, 10848, 1999, 1125, 3413, 9951, 9949, 2]
 // Exports: default
 
-// Module 10859 (buildFavoritesSectionButtons)
-import _modDef3412 from "module_3412" /* 3412 */;
+// Module 10862 (buildFavoritesSectionButtons)
+import _modDef3413 from "module_3413" /* 3413 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -134,8 +134,8 @@ export default function buildFavoritesSectionButtons(channelId) {
     let tmp3;
     if (channelId.isChannelInFavorites) {
       const obj2 = {
-        label: intl2.string(_modDef3412.TN4nAX),
-        IconComponent: channelId(9949).StarIcon,
+        label: intl2.string(_modDef3413.TN4nAX),
+        IconComponent: channelId(9951).StarIcon,
         isDestructive: true,
         onPress() {
               function removeChannelFromFavorites() {
@@ -144,14 +144,14 @@ export default function buildFavoritesSectionButtons(channelId) {
               return removeChannelFromFavorites(channelId);
             }
       };
-      intl2 = channelId(1128).intl;
+      intl2 = channelId(1125).intl;
       tmp3 = obj2;
     } else {
       tmp3 = null;
       if (!tmp) {
         obj = {
-          label: intl.string(_modDef3412.G9fGlP),
-          IconComponent: channelId(9947).StarOutlineIcon,
+          label: intl.string(_modDef3413.G9fGlP),
+          IconComponent: channelId(9949).StarOutlineIcon,
           onPress() {
                   function addChannelToFavorites() {
                     return closure_1_4(...arguments);
@@ -159,7 +159,7 @@ export default function buildFavoritesSectionButtons(channelId) {
                   return addChannelToFavorites(channelId);
                 }
         };
-        intl = channelId(1128).intl;
+        intl = channelId(1125).intl;
         tmp3 = obj;
       }
     }

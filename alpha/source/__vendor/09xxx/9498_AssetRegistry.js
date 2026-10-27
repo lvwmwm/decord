@@ -1,0 +1,10 @@
+// Module ID: 9498
+// Function ID: 9499
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 9498 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dcae1df15663c479951183ad5f2fe3dd", name: "RedditNeutralIcon", type: "png" });

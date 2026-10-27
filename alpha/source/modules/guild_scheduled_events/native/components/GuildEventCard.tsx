@@ -1,20 +1,20 @@
 // Module ID: 9027
 // Function ID: 9028
 // Name: GuildEventCard
-// Dependencies: [19, 17, 5714, 6784, 4829, 21, 4971, 587, 558, 576, 8902, 6696, 504, 8889, 7882, 9028, 6905, 2]
+// Dependencies: [19, 17, 5715, 6785, 4830, 21, 4972, 587, 558, 576, 8902, 6697, 504, 8889, 7883, 9028, 6907, 2]
 
 // Module 9027 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
-import ButtonGroup2 from "ButtonGroup" /* 6696 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import ButtonGroup2 from "ButtonGroup" /* 6697 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
 import GuildEventCardComponents from "GuildEventCardComponents" /* 8902 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

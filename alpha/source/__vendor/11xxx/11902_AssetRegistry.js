@@ -1,0 +1,10 @@
+// Module ID: 11902
+// Function ID: 11903
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 11902 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8b4b2bddd719de3088e180cf9d96ecec", name: "RetryIcon", type: "png" });

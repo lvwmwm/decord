@@ -1,9 +1,9 @@
-// Module ID: 4992
-// Function ID: 4993
+// Module ID: 4993
+// Function ID: 4994
 // Name: StickerTypes
 // Dependencies: [2]
 
-// Module 4992 (StickerTypes)
+// Module 4993 (StickerTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Stickers/StickerTypes.tsx");

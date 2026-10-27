@@ -1,9 +1,9 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11199
+// Function ID: 11200
 // Name: SocialSdkApplicationStore
-// Dependencies: [32, 1357, 504, 584, 2]
+// Dependencies: [32, 1354, 504, 584, 2]
 
-// Module 11196 (SocialSdkApplicationStore)
+// Module 11199 (SocialSdkApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

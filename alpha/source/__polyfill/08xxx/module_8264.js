@@ -1,75 +1,42 @@
 // Module ID: 8264
 // Function ID: 8265
-// Dependencies: [8214]
+// Dependencies: [8212]
 
 // Module 8264
-import _mod8214 from "module_8214" /* 8214 */;
+const require = globalThis.__r;
 
+let closure_2 = [6, 7, 99];
 
 export default {
-  read(byteLength) {
-    let str5;
-    let str6;
-    let str9;
-    let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
-    let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod8214;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
+  get(buffer, Compression, arg2) {
+    let prop = Compression;
+    if (prop) {
+      const hasItem = undefined === Compression.Compression || closure_2.includes(Compression.Compression.value);
+      prop = hasItem;
     }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat;
     }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat.value;
     }
-    tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
-      }
-      tmp11 = obj6;
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength;
     }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength.value;
     }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
+    if (prop) {
+      Compression.type = "image/jpeg";
+      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
+      buffer = buffer.buffer;
+      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
+      let obj = require("module_8212");
+      obj.deferInit(Compression, "base64", function() {
+        const obj = require("module_8212");
+        return obj.getBase64Image(this.image);
+      });
     }
-    return obj3;
+    return Compression;
   }
 };

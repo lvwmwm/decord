@@ -1,16 +1,16 @@
-// Module ID: 7137
-// Function ID: 7138
+// Module ID: 7139
+// Function ID: 7140
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1087, 7138, 21, 6924, 7139, 7140, 6672, 1275, 7173, 7089, 558, 576, 1128, 7095, 2]
+// Dependencies: [5, 19, 1084, 7140, 21, 6926, 7141, 7142, 6673, 1272, 7175, 7091, 558, 576, 1125, 7097, 2]
 
-// Module 7137 (PhoneVerificationModal)
+// Module 7139 (PhoneVerificationModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7089 */;
-import PhoneConstants from "PhoneConstants" /* 7138 */;
-import AddPhoneDefault from "AddPhone" /* 7139 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7140 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 7173 */;
+import Constants from "Constants" /* 1084 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7091 */;
+import PhoneConstants from "PhoneConstants" /* 7140 */;
+import AddPhoneDefault from "AddPhone" /* 7141 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7142 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 7175 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneVerif
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(require("intl").t["13/7kX"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;

@@ -1,34 +1,34 @@
-// Module ID: 13782
-// Function ID: 13783
+// Module ID: 13796
+// Function ID: 13797
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 4972, 13759, 21, 4971, 587, 558, 576, 8765, 5234, 5252, 1384, 5586, 8552, 7063, 573, 8586, 12830, 13770, 8608, 8757, 1498, 5669, 7389, 7395, 8790, 10170, 1202, 9406, 2]
+// Dependencies: [19, 17, 4973, 13773, 21, 4972, 587, 558, 576, 8765, 5235, 5253, 1381, 5587, 8552, 7065, 573, 8586, 12839, 13784, 8608, 8757, 1495, 5670, 7391, 7397, 8790, 10172, 1199, 9405, 2]
 
-// Module 13782 (MediaPreviewRightAccessory)
+// Module 13796 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1498 */;
-import useToken from "useToken" /* 5252 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import EyeIcon from "EyeIcon" /* 7063 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7389 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7395 */;
+import native from "native" /* 1199 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
+import useToken from "useToken" /* 5253 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import EyeIcon from "EyeIcon" /* 7065 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7391 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7397 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8586 */;
 import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8608 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
 import common_VideoDefault from "common/Video" /* 8790 */;
-import ClipViewDefault from "ClipView" /* 9406 */;
-import StickerDefault from "Sticker" /* 10170 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 12830 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13759 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 13770 */;
+import ClipViewDefault from "ClipView" /* 9405 */;
+import StickerDefault from "Sticker" /* 10172 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 12839 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13773 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13784 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5234);
-const VisualEffectViewDefault = tmp5(5586);
+const Text_Text = tmp(5235);
+const VisualEffectViewDefault = tmp5(5587);
 const PlayIcon = tmp(8765);
-const ClipView = tmp(9406);
+const ClipView = tmp(9405);
 ({ PixelRatio: closure_4, StyleSheet } = react_native);
 const View = react_native.View;
 const RIGHT_ACCESSORY_LEFT_MARGIN = InAppNotificationConstants.RIGHT_ACCESSORY_LEFT_MARGIN;

@@ -1,12 +1,12 @@
-// Module ID: 1993
-// Function ID: 1994
+// Module ID: 1990
+// Function ID: 1991
 // Name: NameplateRecord
-// Dependencies: [1994, 1995, 2]
+// Dependencies: [1991, 1992, 2]
 // Exports: isNameplateRecord
 
-// Module 1993 (NameplateRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1994 */;
+// Module 1990 (NameplateRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1991 */;
 import size from "module_2" /* 2 */;
 
 class NameplateRecord extends BaseCollectiblesItemRecord {

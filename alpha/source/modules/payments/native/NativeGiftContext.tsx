@@ -1,34 +1,34 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10452
+// Function ID: 10453
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8681, 9520, 10451, 1392, 1087, 7525, 1394, 1098, 21, 3, 7540, 558, 576, 10452, 7541, 4787, 10453, 1128, 10454, 2053, 7519, 10455, 504, 10489, 10496, 8686, 8673, 5909, 1267, 7278, 10497, 584, 1384, 10448, 2]
+// Dependencies: [5, 32, 19, 8681, 9519, 10453, 1389, 1084, 7526, 1391, 1095, 21, 3, 7541, 558, 576, 10454, 7542, 4788, 10455, 1125, 10456, 2050, 7520, 10457, 504, 10492, 10499, 8686, 8673, 5910, 1264, 7280, 10500, 584, 1381, 10450, 2]
 
-// Module 10450 (NativeGiftContext)
+// Module 10452 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import BillingUtils from "BillingUtils" /* 4787 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import Constants3 from "Constants" /* 7525 */;
-import ContextUtilsDefault from "ContextUtils" /* 7540 */;
+import Constants from "Constants" /* 1084 */;
+import Constants2 from "Constants" /* 1095 */;
+import intl3 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import BillingUtils from "BillingUtils" /* 4788 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import Constants3 from "Constants" /* 7526 */;
+import ContextUtilsDefault from "ContextUtils" /* 7541 */;
 import BadgeId from "BadgeId" /* 8673 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10448 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10497 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10450 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9520 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10451 */;
-import UserStore from "UserStore" /* 1392 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9519 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10453 */;
+import UserStore from "UserStore" /* 1389 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: "computer", planSelection: { premiumType, planInterval }, giftInfo: "computer" };
+  let obj4 = { orderId: "a", planId: 1610613164, planSelection: { premiumType, planInterval }, giftInfo: 1090519905 };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "computer", planSelection: { premiumType, planInterval }, giftInfo: "computer" };
+  let obj = { orderId: "a", planId: 1610613164, planSelection: { premiumType, planInterval }, giftInfo: 1090519905 };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);

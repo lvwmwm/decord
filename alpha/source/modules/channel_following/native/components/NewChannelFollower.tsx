@@ -1,28 +1,28 @@
-// Module ID: 13367
-// Function ID: 13368
+// Module ID: 13381
+// Function ID: 13382
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 4827, 4823, 4901, 4845, 4903, 6701, 1087, 21, 4971, 587, 8659, 5205, 504, 5604, 5263, 4978, 13368, 13369, 5265, 5269, 5669, 6883, 1202, 8502, 5234, 1128, 5977, 6987, 6903, 5210, 8925, 2002, 13370, 8951, 6696, 5244, 13371, 5582, 2]
+// Dependencies: [32, 19, 17, 4828, 4824, 4902, 4846, 4904, 6702, 1084, 21, 4972, 587, 8659, 5206, 504, 5605, 5264, 4979, 13382, 13383, 5266, 5270, 5670, 6885, 1199, 8502, 5235, 1125, 5978, 6989, 6905, 5211, 8925, 1999, 13384, 8951, 6697, 5245, 13385, 5583, 2]
 // Exports: default
 
-// Module 13367 (NewChannelFollower)
+// Module 13381 (NewChannelFollower)
 import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import openChannelPickerDefault from "openChannelPicker" /* 13370 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 13371 */;
+import intl10 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import openChannelPickerDefault from "openChannelPicker" /* 13384 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 13385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import SortedGuildStore from "SortedGuildStore" /* 6701 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import SortedGuildStore from "SortedGuildStore" /* 6702 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

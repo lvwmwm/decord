@@ -1,10 +1,10 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15135
+// Function ID: 15136
 // Name: FriendRequestMessageExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 
-// Module 15099 (FriendRequestMessageExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15135 (FriendRequestMessageExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

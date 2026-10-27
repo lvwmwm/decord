@@ -1,15 +1,15 @@
-// Module ID: 6804
-// Function ID: 6805
+// Module ID: 6805
+// Function ID: 6806
 // Name: VoicePanelStore
-// Dependencies: [1269, 1274, 2]
+// Dependencies: [1266, 1271, 2]
 
-// Module 6804 (VoicePanelStore)
-import module_1269 from "module_1269" /* 1269 */;
+// Module 6805 (VoicePanelStore)
+import module_1266 from "module_1266" /* 1266 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
 
-const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
   let set1;
   let closure_0 = arg0;
   let closure_1 = arg1;

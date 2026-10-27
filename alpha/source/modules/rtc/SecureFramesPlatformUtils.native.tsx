@@ -1,20 +1,20 @@
 // Module ID: 9200
 // Function ID: 9201
 // Name: SecureFramesPlatformUtils
-// Dependencies: [4823, 5714, 9197, 1087, 6672, 9201, 2002, 5210, 9211, 1128, 5909, 1202, 7347, 9214, 2]
+// Dependencies: [4824, 5715, 9197, 1084, 6673, 9201, 1999, 5211, 9211, 1125, 5910, 1199, 7349, 9214, 2]
 
 // Module 9200 (SecureFramesPlatformUtils)
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7347 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 7349 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
 import SecureFramesConstants from "SecureFramesConstants" /* 9197 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c9;

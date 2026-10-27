@@ -1,52 +1,78 @@
 // Module ID: 1557
 // Function ID: 1558
-// Dependencies: [32, 109, 19, 1558]
-// Exports: useRouteCache
+// Dependencies: []
 
 // Module 1557
-import _mod1558 from "module_1558" /* 1558 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
-
-let map;
-
-let closure_2 = ["state"];
-const SymbolResult = Symbol("CHILD_STATE");
-const hasOwnProperty = SymbolResult;
-
-export const CHILD_STATE = SymbolResult;
-export const useRouteCache = function useRouteCache(routes) {
-  const ref = react.useMemo(() => {
-    const obj = { current: new Map() };
-    new Map();
-    return obj;
-  }, []);
-  const reduce = routes.reduce;
-  map = new Map();
-  const reduced = reduce((set, key) => {
-    const current = ref.current;
-    const value = current.get(key.key);
-    const state = key.state;
-    const tmp2 = _objectWithoutProperties(key, closure_2);
-    let tmp3 = tmp2;
-    if (value) {
-      tmp3 = tmp2;
-      const obj = _mod1558;
-      if (obj.isRecordEqual(value, tmp2)) {
-        tmp3 = value;
+function getStateFromRouteParams(params) {
+  let items;
+  let path;
+  let tmp4;
+  if (null != params) {
+    if (typeof params === "object") {
+      let state;
+      if ("state" in params) {
+        if (params.state) {
+          if (typeof params.state === "object") {
+            if ("routes" in params.state) {
+              let tmp = globalThis;
+              const _Array = Array;
+              if (Array.isArray(params.state.routes)) {
+                const routes = params.state.routes;
+                if (routes.every((name) => {
+                  let tmp = typeof name === "object";
+                  if (typeof name === "object") {
+                    tmp = null != name;
+                  }
+                  if (tmp) {
+                    tmp = "name" in name;
+                  }
+                  if (tmp) {
+                    tmp = typeof name.name === "string";
+                  }
+                  return tmp;
+                })) {
+                  state = params.state;
+                }
+                return state;
+              }
+            }
+          }
+        }
+      }
+      if ("screen" in params) {
+        if (params.screen) {
+          if (typeof params.screen === "string") {
+            const obj2 = { name: params.screen, params, path, state: tmp4 };
+            params = undefined;
+            if ("params" in params) {
+              if (typeof params.params === "object") {
+                if (null != params.params) {
+                  params = params.params;
+                }
+              }
+            }
+            path = undefined;
+            if ("path" in params) {
+              if (typeof params.path === "string") {
+                path = params.path;
+              }
+            }
+            tmp4 = undefined;
+            if ("params" in params) {
+              if (typeof params.params === "object") {
+                if (null != params.params) {
+                  tmp4 = getStateFromRouteParams(params.params);
+                }
+              }
+            }
+            const obj = { routes: items };
+            items = [obj2];
+            state = obj;
+          }
+        }
       }
     }
-    if (tmp3[hasOwnProperty] !== state) {
-      const _Object = Object;
-      const obj2 = { enumerable: false, configurable: true, value: state };
-      Object.defineProperty(tmp3, tmp6, obj2);
-    }
-    const result = set.set(key.key, tmp3);
-    return set;
-  }, map);
-  const insertionEffect = react.useInsertionEffect(() => {
-    ref.current = reduced;
-  });
-  return Array.from(reduced.values());
-};
+  }
+}
+
+export { getStateFromRouteParams };

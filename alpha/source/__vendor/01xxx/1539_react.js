@@ -6,5 +6,7 @@
 // Module 1539 (react)
 import react from "react" /* 19 */;
 
+const context = react.createContext(undefined);
+context.displayName = "ThemeContext";
 
-export const DeprecatedNavigationInChildContext = react.createContext(false);
+export const ThemeContext = context;

@@ -1,21 +1,21 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2017
+// Function ID: 2018
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8148, 1087, 5814, 4785, 15298, 1405, 15299, 15301, 504, 584, 2]
+// Dependencies: [5, 2018, 502, 8146, 1084, 5815, 4786, 15334, 1402, 15335, 15337, 504, 584, 2]
 
-// Module 2020 (ClipsStore)
+// Module 2017 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import DiscordNativeDefault from "DiscordNative" /* 4785 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15299 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15301 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import DiscordNativeDefault from "DiscordNative" /* 4786 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15335 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15337 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2021 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8148 */;
-import Constants from "Constants" /* 1087 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
+import ClipsConstants from "ClipsConstants" /* 8146 */;
+import Constants from "Constants" /* 1084 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5815 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;

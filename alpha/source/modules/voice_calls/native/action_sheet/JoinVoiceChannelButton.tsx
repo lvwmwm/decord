@@ -1,18 +1,18 @@
-// Module ID: 14618
-// Function ID: 14619
+// Module ID: 14654
+// Function ID: 14655
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4903, 1087, 21, 4971, 558, 576, 11562, 504, 1128, 1896, 6634, 5244, 2]
+// Dependencies: [19, 17, 4904, 1084, 21, 4972, 558, 576, 11564, 504, 1125, 1893, 6635, 5245, 2]
 
-// Module 14618 (JoinVoiceChannelButton)
+// Module 14654 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11562 */;
+import Constants from "Constants" /* 1084 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6635 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11564 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import createStyles from "createStyles" /* 4971 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(channel(1128).t.eIi3Om);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(channel(1125).t.eIi3Om);
     cResult[3] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -62,8 +62,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
     let tmp14;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
-      const stringResult1 = intl3.string(channel(1128).t.rZfiNq);
+      const intl3 = tmp(1125).intl;
+      const stringResult1 = intl3.string(channel(1125).t.rZfiNq);
       cResult[4] = stringResult1;
       tmp14 = stringResult1;
     } else {
@@ -77,8 +77,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
       let tmp12;
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult2 = intl2.string(channel(1128).t.TVBCKZ);
+        const intl2 = tmp(1125).intl;
+        const stringResult2 = intl2.string(channel(1125).t.TVBCKZ);
         cResult[5] = stringResult2;
         tmp12 = stringResult2;
       } else {
@@ -131,8 +131,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
     cResult[11] = tmp10;
     cResult[12] = flag;
     cResult[13] = tmp16;
-    cResult[14] = jsx(channel(5244).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
-    const tmp19 = jsx(channel(5244).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    cResult[14] = jsx(channel(5245).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    const tmp19 = jsx(channel(5245).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
   }
   const items1 = [tmp4.container, style];
   cResult[8] = style;
@@ -146,14 +146,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
   let obj = channel(504);
   const items = [PermissionStore];
   const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
-  const intl = channel(1128).intl;
-  intl.string(channel(1128).t.eIi3Om);
+  const intl = channel(1125).intl;
+  intl.string(channel(1125).t.eIi3Om);
   if (tmp3) {
-    const intl3 = tmp4(1128).intl;
-    intl3.string(tmp4(1128).t.rZfiNq);
+    const intl3 = tmp4(1125).intl;
+    intl3.string(tmp4(1125).t.rZfiNq);
   } else if (stateFromStores) {
-    const intl2 = tmp4(1128).intl;
-    intl2.string(tmp4(1128).t.TVBCKZ);
+    const intl2 = tmp4(1125).intl;
+    intl2.string(tmp4(1125).t.TVBCKZ);
   }
   const items1 = [channel.id];
   const items2 = [tmp.container, style];

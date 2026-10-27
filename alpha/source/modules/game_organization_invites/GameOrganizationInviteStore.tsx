@@ -1,13 +1,13 @@
-// Module ID: 11029
-// Function ID: 11030
+// Module ID: 11032
+// Function ID: 11033
 // Name: GameOrganizationInviteStore
-// Dependencies: [11030, 11031, 504, 584, 2]
+// Dependencies: [11033, 11034, 504, 584, 2]
 
-// Module 11029 (GameOrganizationInviteStore)
+// Module 11032 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11030 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11031 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11034 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -60,7 +60,7 @@ let obj = {
     const code = invite.code;
     map = new Map(map);
     const application_config = invite.application_config;
-    const obj = { code: invite.code, state: constants.RESOLVED, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
+    const obj = { code: invite.code, state: constants.RESOLVED, inviterId: invite.inviter_id, accepted: invite.accepted, guildId: invite.guild.id, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
     set = map.set;
     ({ game_organization, application, guild } = invite);
     obj2 = fromServerGameOrganization;
@@ -92,6 +92,26 @@ let obj = {
       map = new Map(map);
       const obj = { code, state: tmp3.ERROR, error };
       const result = map.set(code, obj);
+    }
+  },
+  GAME_ORGANIZATION_INVITE_ACCEPT_SUCCESS: function handleAcceptSuccess(code) {
+    code = code.code;
+    const value = map.get(code);
+    let state;
+    if (value != null) {
+      state = value.state;
+    }
+    if (state !== constants.RESOLVED) {
+      return false;
+    } else {
+      const _Map = Map;
+      const self = this;
+      const self2 = this;
+      map = new Map(map);
+      const obj = { accepted: true };
+      set = map.set;
+      const merged = Object.assign(value);
+      const result = set(code, obj);
     }
   }
 };

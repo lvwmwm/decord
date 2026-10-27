@@ -1,11 +1,11 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15903
+// Function ID: 15904
 // Name: DisplayNameStylesFlywheelExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 
-// Module 15865 (DisplayNameStylesFlywheelExperiment)
+// Module 15903 (DisplayNameStylesFlywheelExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

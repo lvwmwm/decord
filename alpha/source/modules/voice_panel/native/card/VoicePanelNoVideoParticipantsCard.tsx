@@ -1,16 +1,16 @@
-// Module ID: 18574
-// Function ID: 18575
+// Module ID: 18610
+// Function ID: 18611
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10900, 5710, 1128, 5234, 6886, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 10903, 5711, 1125, 5235, 6888, 2]
 
-// Module 18574 (VoicePanelNoVideoParticipantsCard)
+// Module 18610 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10900 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const NativeViewDefault = tmp4(6886);
+const NativeViewDefault = tmp4(6888);
 const Pressable = react_native.Pressable;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -58,8 +58,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   ({ container, label } = tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(channelId(1128).t["8eBJ73"]);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(channelId(1125).t["8eBJ73"]);
     cResult[2] = stringResult;
     tmp7 = stringResult;
   } else {
@@ -67,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[3] !== tmp5.label) {
     const obj2 = { style: label, variant: "text-md/semibold", color: "text-overlay-light", children: tmp7 };
-    const tmp11 = closure_5(channelId(5234).Text, obj2);
+    const tmp11 = closure_5(channelId(5235).Text, obj2);
     cResult[3] = tmp5.label;
     cResult[4] = tmp11;
     tmp9 = tmp11;
@@ -76,8 +76,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const button = tmp5.button;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(channelId(1128).t.kLQySL);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(channelId(1125).t.kLQySL);
     cResult[5] = stringResult1;
     tmp12 = stringResult1;
   } else {
@@ -85,8 +85,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const buttonText = tmp5.buttonText;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(channelId(1128).t.kLQySL);
+    const intl3 = tmp(1125).intl;
+    const stringResult2 = intl3.string(channelId(1125).t.kLQySL);
     cResult[6] = stringResult2;
     tmp14 = stringResult2;
   } else {
@@ -94,7 +94,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[7] !== tmp5.buttonText) {
     const obj3 = { variant: "text-sm/semibold", style: buttonText, children: tmp14 };
-    const tmp18 = closure_5(channelId(5234).Text, obj3);
+    const tmp18 = closure_5(channelId(5235).Text, obj3);
     cResult[7] = tmp5.buttonText;
     cResult[8] = tmp18;
     tmp16 = tmp18;
@@ -147,16 +147,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const result = obj.toggleVoiceParticipantsHidden(channelId, false);
   }, items);
   let obj = { style: tmp.container, children: items1 };
-  const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1128).t["8eBJ73"]) };
+  const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1125).t["8eBJ73"]) };
   const tmp3 = NativeViewDefault;
-  const Text = channelId(5234).Text;
-  intl = channelId(1128).intl;
+  const Text = channelId(5235).Text;
+  intl = channelId(1125).intl;
   items1 = [closure_5(Text, obj2), ];
-  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1128).t.kLQySL), children: closure_5(Text2, obj4) };
-  intl2 = channelId(1128).intl;
-  obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1128).t.kLQySL) };
-  Text2 = channelId(5234).Text;
-  intl3 = channelId(1128).intl;
+  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1125).t.kLQySL), children: closure_5(Text2, obj4) };
+  intl2 = channelId(1125).intl;
+  obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1125).t.kLQySL) };
+  Text2 = channelId(5235).Text;
+  intl3 = channelId(1125).intl;
   items1[1] = closure_5(Pressable, obj3);
   return closure_6(tmp3, obj);
 }));

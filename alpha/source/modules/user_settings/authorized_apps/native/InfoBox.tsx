@@ -1,18 +1,18 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11058
+// Function ID: 11059
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5686, 7012, 5234, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5687, 7014, 5235, 2]
 
-// Module 11055 (InfoBox)
+// Module 11058 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5686 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7012 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5687 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7014 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBox(arg0
   ({ infoBox: arr2[0], infoBoxWarning: arr2[1] } = tmp5);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     obj4 = { color: nativeDefault.colors.TEXT_LINK };
-    const CircleInformationIcon = tmp(5686).CircleInformationIcon;
+    const CircleInformationIcon = tmp(5687).CircleInformationIcon;
     const tmp13 = React3(CircleInformationIcon, obj4);
     cResult[7] = tmp13;
     tmp10 = tmp13;
@@ -106,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBox(arg0
     obj5[obj4.INFO] = tmp10;
     const WARNING = tmp9.WARNING;
     const obj6 = { color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const CircleErrorIcon = tmp(7012).CircleErrorIcon;
+    const CircleErrorIcon = tmp(7014).CircleErrorIcon;
     obj5[WARNING] = React3(CircleErrorIcon, obj6);
     cResult[8] = obj5;
     tmp14 = obj5;

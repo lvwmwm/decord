@@ -1,13 +1,13 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17474
+// Function ID: 17475
 // Name: getJankScreenName
-// Dependencies: [17434, 5151, 17435, 2]
+// Dependencies: [17475, 5152, 17476, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 17433 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17435 */;
-import JankScreenConstants from "JankScreenConstants" /* 17434 */;
+// Module 17474 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17476 */;
+import JankScreenConstants from "JankScreenConstants" /* 17475 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f130474 = (name) => name.name === tabs;
+const f130826 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -181,7 +181,7 @@ export default function getJankScreenName() {
               let tmp14 = tmp11;
               if (name === channel) {
                 let routes1 = tmp9.routes;
-                let found = routes1.find(f130474);
+                let found = routes1.find(f130826);
                 if (found == null) {
                   found = tmp11;
                 }
@@ -240,7 +240,7 @@ export default function getJankScreenName() {
         }
         ({ focused, rendered } = obj5);
         if (0 === focused.length) {
-          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "takeRecords" };
+          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "response" };
           obj10 = obj9;
         } else {
           obj10 = { screen: resolveScreenName(focused), expectedScreenIds: mapped1.join(","), focusedRoute: focused[focused.length - 1], chatScreens: tmp17 };
@@ -327,7 +327,7 @@ export const getPanelListScreenName = function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f130474);
+          let found = routes1.find(f130826);
           if (found == null) {
             found = tmp3;
           }

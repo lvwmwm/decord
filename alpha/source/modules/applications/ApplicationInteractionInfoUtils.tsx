@@ -1,15 +1,15 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10040
+// Function ID: 10041
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [6019, 2000, 2]
+// Dependencies: [6020, 1997, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 10038 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 6019 */;
+// Module 10040 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 6020 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const Server = tmp2(2000);
+const Server = tmp2(1997);
 const result = size.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {

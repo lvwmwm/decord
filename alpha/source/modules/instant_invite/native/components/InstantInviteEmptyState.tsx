@@ -1,19 +1,19 @@
 // Module ID: 9089
 // Function ID: 9090
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 9051, 21, 4971, 587, 558, 576, 504, 9052, 1128, 1202, 9090, 7031, 7488, 6908, 5234, 5244, 2]
+// Dependencies: [19, 17, 9051, 21, 4972, 587, 558, 576, 504, 9052, 1125, 1199, 9090, 7033, 7489, 6910, 5235, 5245, 2]
 
 // Module 9089 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7031 */;
+import intl6 from "intl" /* 1125 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7033 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9052 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9090 */;
 import react from "react" /* 19 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 9051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           tmp3 = require;
           dqPWMN = intl6.t.dqPWMN;
         }
-        const intl = tmp3(1128).intl;
+        const intl = tmp3(1125).intl;
         const obj = { maxAge: str2, maxUses: str3 };
         return intl.format(dqPWMN, obj);
       }
@@ -111,10 +111,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   }
   ({ container, emptyStateContainer, emptyStateArt, emptyStateTitle } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1128).intl;
-    const stringResult = intl.string(tmp(1128).t.tQc0l8);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(tmp(1128).t.DXgdcD);
+    let intl = tmp(1125).intl;
+    const stringResult = intl.string(tmp(1125).t.tQc0l8);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(tmp(1125).t.DXgdcD);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
     tmp11 = stringResult1;
@@ -143,8 +143,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           }
           const _Symbol = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp(1128).intl;
-            const stringResult2 = intl3.string(tmp(1128).t["3D5yo/"]);
+            const intl3 = tmp(1125).intl;
+            const stringResult2 = intl3.string(tmp(1125).t["3D5yo/"]);
             cResult[14] = stringResult2;
             tmp22 = stringResult2;
           } else {
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp26 = closure_5(tmp(7488).SettingsIcon, {});
+            const tmp26 = closure_5(tmp(7489).SettingsIcon, {});
             cResult[15] = tmp26;
             tmp24 = tmp26;
           } else {
@@ -188,8 +188,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
                   }
                   const _Symbol3 = Symbol;
                   if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl4 = tmp(1128).intl;
-                    const stringResult3 = intl4.string(tmp(1128).t.Ej3B3Y);
+                    const intl4 = tmp(1125).intl;
+                    const stringResult3 = intl4.string(tmp(1125).t.Ej3B3Y);
                     cResult[28] = stringResult3;
                     tmp39 = stringResult3;
                   } else {
@@ -197,7 +197,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
                   }
                   if (cResult[29] !== onShare) {
                     let obj2 = { text: tmp39, onPress: onShare };
-                    const tmp43 = closure_5(tmp(5244).Button, obj2);
+                    const tmp43 = closure_5(tmp(5245).Button, obj2);
                     cResult[29] = onShare;
                     cResult[30] = tmp43;
                     tmp41 = tmp43;
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
                   tmp44 = tmp47;
                 }
                 const obj4 = { style: expireCaption, variant: "text-xs/medium", color: "text-muted", children: tmp34 };
-                const tmp38 = closure_5(tmp(5234).Text, obj4);
+                const tmp38 = closure_5(tmp(5235).Text, obj4);
                 cResult[25] = tmp4.expireCaption;
                 cResult[26] = tmp34;
                 cResult[27] = tmp38;
@@ -246,14 +246,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
             tmp30 = tmp33;
           }
           const obj6 = { accessibilityLabel: tmp22, accessibilityRole: "button", onPress: onPressSettings, style: tmp4.settingsButton, children: tmp24 };
-          const tmp29 = closure_5(tmp(6908).PressableOpacity, obj6);
+          const tmp29 = closure_5(tmp(6910).PressableOpacity, obj6);
           cResult[16] = onPressSettings;
           cResult[17] = tmp4.settingsButton;
           cResult[18] = tmp29;
           tmp27 = tmp29;
         }
       }
-      const obj7 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: link, style: tmp4.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: tmp(1202).ClearButtonVisibility.NEVER };
+      const obj7 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: link, style: tmp4.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: tmp(1199).ClearButtonVisibility.NEVER };
       const tmp20 = FreeFormTextInputDefault;
       const tmp21 = closure_5(tmp20, obj7);
       cResult[10] = onCopy;
@@ -264,7 +264,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     }
   }
   const obj8 = { containerStyle: emptyStateContainer, imageStyle: emptyStateArt, titleStyle: emptyStateTitle, source: AssetRegistryDefault, title: tmp10, body: tmp11 };
-  const RefreshEmptyState = tmp(1202).RefreshEmptyState;
+  const RefreshEmptyState = tmp(1199).RefreshEmptyState;
   const tmp15 = closure_5(RefreshEmptyState, obj8);
   cResult[6] = tmp4.emptyStateArt;
   cResult[7] = tmp4.emptyStateContainer;
@@ -291,26 +291,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   const obj = stateFromStores(504);
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: AssetRegistryDefault, title: intl.string(stateFromStores(1128).t.tQc0l8), body: intl2.string(stateFromStores(1128).t.DXgdcD) };
-  const RefreshEmptyState = stateFromStores(1202).RefreshEmptyState;
-  intl = stateFromStores(1128).intl;
-  intl2 = stateFromStores(1128).intl;
+  const obj3 = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: AssetRegistryDefault, title: intl.string(stateFromStores(1125).t.tQc0l8), body: intl2.string(stateFromStores(1125).t.DXgdcD) };
+  const RefreshEmptyState = stateFromStores(1199).RefreshEmptyState;
+  intl = stateFromStores(1125).intl;
+  intl2 = stateFromStores(1125).intl;
   items1 = [closure_5(RefreshEmptyState, obj3), , , ];
   const obj4 = { style: tmp.linkContainer, children: items2 };
-  const obj5 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: str, style: tmp.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: stateFromStores(1202).ClearButtonVisibility.NEVER };
+  const obj5 = { accessibilityRole: "button", onPress: onCopy, editable: false, value: str, style: tmp.inviteInput, forceAccessibleContainer: true, clearButtonVisibility: stateFromStores(1199).ClearButtonVisibility.NEVER };
   const tmp9 = FreeFormTextInputDefault;
   if (str == null) {
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1128).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(7488).SettingsIcon, {}) };
-  const PressableOpacity = tmp2(6908).PressableOpacity;
-  intl3 = tmp2(1128).intl;
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1125).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(7489).SettingsIcon, {}) };
+  const PressableOpacity = tmp2(6910).PressableOpacity;
+  intl3 = tmp2(1125).intl;
   items2[1] = closure_5(PressableOpacity, obj6);
   items1[1] = closure_6(View, obj4);
   const obj7 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: formatResult };
   formatResult = null;
-  const Text = tmp2(5234).Text;
+  const Text = tmp2(5235).Text;
   if (null != stateFromStores) {
     let dqPWMN;
     const tmp8Result = InstantInviteUtilsDefault;
@@ -334,18 +334,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
       str5 = str6;
     }
     if (0 === stateFromStores.maxAge) {
-      dqPWMN = tmp2(1128).t["99ISmn"];
+      dqPWMN = tmp2(1125).t["99ISmn"];
     } else {
-      dqPWMN = tmp2(1128).t.dqPWMN;
+      dqPWMN = tmp2(1125).t.dqPWMN;
     }
-    const intl4 = tmp2(1128).intl;
+    const intl4 = tmp2(1125).intl;
     const obj8 = { maxAge: str3, maxUses: str5 };
     formatResult = intl4.format(dqPWMN, obj8);
   }
   items1[2] = closure_5(Text, obj7);
-  const obj9 = { text: intl5.string(stateFromStores(1128).t.Ej3B3Y), onPress: onShare };
-  const Button = tmp2(5244).Button;
-  intl5 = tmp2(1128).intl;
+  const obj9 = { text: intl5.string(stateFromStores(1125).t.Ej3B3Y), onPress: onShare };
+  const Button = tmp2(5245).Button;
+  intl5 = tmp2(1125).intl;
   items1[3] = closure_5(Button, obj9);
   return closure_6(View, obj2);
 });

@@ -1,12 +1,12 @@
-// Module ID: 5831
-// Function ID: 5832
+// Module ID: 5832
+// Function ID: 5833
 // Name: trackVoiceAndVideoSettingsUpdate
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1084, 1264, 2]
 // Exports: default
 
-// Module 5831 (trackVoiceAndVideoSettingsUpdate)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 5832 (trackVoiceAndVideoSettingsUpdate)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

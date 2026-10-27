@@ -1,15 +1,15 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9534
+// Function ID: 9535
 // Name: theme_aware_asset
-// Dependencies: [32, 1212, 2]
+// Dependencies: [32, 1209, 2]
 
-// Module 9535 (theme_aware_asset)
-import _mod1212 from "module_1212" /* 1212 */;
+// Module 9534 (theme_aware_asset)
+import _mod1209 from "module_1209" /* 1209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1209.MessageType;
 class ThemeAwareAsset$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "light_url", kind: "scalar", T: 9 }, { no: 2, name: "dark_url", kind: "scalar", T: 9 }, { no: 3, name: "light_static_url", kind: "scalar", T: 9 }, { no: 4, name: "dark_static_url", kind: "scalar", T: 9 }];
@@ -20,9 +20,9 @@ class ThemeAwareAsset$Type extends MessageType {
     const obj = { lightUrl: "", darkUrl: "", lightStaticUrl: "", darkStaticUrl: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1209;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -65,7 +65,7 @@ class ThemeAwareAsset$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1212.UnknownFieldHandler.onRead;
+                onRead = _mod1209.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -77,25 +77,25 @@ class ThemeAwareAsset$Type extends MessageType {
   }
   internalBinaryWrite(lightUrl, tag, writeUnknownFields) {
     if ("" !== lightUrl.lightUrl) {
-      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
       tagResult.string(lightUrl.lightUrl);
     }
     if ("" !== lightUrl.darkUrl) {
-      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1209.WireType.LengthDelimited);
       tagResult1.string(lightUrl.darkUrl);
     }
     if ("" !== lightUrl.lightStaticUrl) {
-      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1209.WireType.LengthDelimited);
       tagResult2.string(lightUrl.lightStaticUrl);
     }
     if ("" !== lightUrl.darkStaticUrl) {
-      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1209.WireType.LengthDelimited);
       tagResult3.string(lightUrl.darkStaticUrl);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1209.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, lightUrl, tag);

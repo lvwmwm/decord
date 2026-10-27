@@ -1,19 +1,19 @@
-// Module ID: 18365
-// Function ID: 18366
+// Module ID: 18399
+// Function ID: 18400
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4971, 18363, 587, 558, 576, 1128, 5234, 6908, 2]
+// Dependencies: [32, 19, 17, 21, 4972, 18397, 587, 558, 576, 1125, 5235, 6910, 2]
 
-// Module 18365 (RestrictedBlockedMessageGroup)
+// Module 18399 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Pressables from "Pressables" /* 6908 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18363 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Pressables from "Pressables" /* 6910 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,9 +62,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
     tmp8 = cResult[2];
   }
   if (cResult[3] !== messages.length) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj3 = { count: messages.length };
-    const formatResult = intl.format(renderMessage(1128).t["+FcYM/"], obj3);
+    const formatResult = intl.format(renderMessage(1125).t["+FcYM/"], obj3);
     cResult[3] = messages.length;
     cResult[4] = formatResult;
     tmp9 = formatResult;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
   }
   if (cResult[5] !== tmp9) {
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(renderMessage(5234).Text, obj4);
+    const tmp13 = closure_5(renderMessage(5235).Text, obj4);
     cResult[5] = tmp9;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
       tmp16 = tmp17;
     }
   }
-  const tmp15 = closure_5(renderMessage(6908).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(6910).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;

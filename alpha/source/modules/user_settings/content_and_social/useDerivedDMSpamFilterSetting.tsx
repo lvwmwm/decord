@@ -1,17 +1,17 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16169
+// Function ID: 16170
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1392, 4801, 558, 576, 4799, 504, 5644, 5651, 1211, 2]
+// Dependencies: [1389, 4802, 558, 576, 4800, 504, 5645, 5652, 1208, 2]
 
-// Module 16131 (useDerivedDMSpamFilterSetting)
+// Module 16169 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4801 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5644 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5651 */;
-import UserStore from "UserStore" /* 1392 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4802 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5645 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5652 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   const tmpResult2 = RegionalFeatureConfigUtils;
-  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(5651).SettingsDefaultFeature.SPAM_FILTERS);
+  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(5652).SettingsDefaultFeature.SPAM_FILTERS);
   if (setting === preloaded_user_settings.DmSpamFilterV2.DEFAULT_UNSET) {
     let FRIENDS_AND_NON_FRIENDS;
     let nsfwAllowed;
@@ -50,14 +50,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        FRIENDS_AND_NON_FRIENDS = tmp(1211).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        FRIENDS_AND_NON_FRIENDS = tmp(1208).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = FRIENDS_AND_NON_FRIENDS;
     }
     if (cResult[2] !== setting1) {
       let NON_FRIENDS = closure_3.get(setting1);
       if (NON_FRIENDS == null) {
-        NON_FRIENDS = tmp(1211).DmSpamFilterV2.NON_FRIENDS;
+        NON_FRIENDS = tmp(1208).DmSpamFilterV2.NON_FRIENDS;
       }
       cResult[2] = setting1;
       cResult[3] = NON_FRIENDS;
@@ -86,13 +86,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        NON_FRIENDS = tmp(1211).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        NON_FRIENDS = tmp(1208).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = NON_FRIENDS;
     }
     NON_FRIENDS = closure_3.get(setting1);
     if (NON_FRIENDS == null) {
-      NON_FRIENDS = tmp(1211).DmSpamFilterV2.NON_FRIENDS;
+      NON_FRIENDS = tmp(1208).DmSpamFilterV2.NON_FRIENDS;
     }
   }
   return setting;

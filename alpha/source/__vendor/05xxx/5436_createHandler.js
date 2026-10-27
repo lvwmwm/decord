@@ -1,13 +1,13 @@
 // Module ID: 5436
 // Function ID: 5437
 // Name: createHandler
-// Dependencies: [5324, 5322]
+// Dependencies: [5325, 5323]
 
 // Module 5436 (createHandler)
-import baseGestureHandlerProps from "baseGestureHandlerProps" /* 5322 */;
-import createHandler from "createHandler" /* 5324 */;
+import baseGestureHandlerProps from "baseGestureHandlerProps" /* 5323 */;
+import createHandler from "createHandler" /* 5325 */;
 
-const obj = { name: "RotationGestureHandler", allowedProps: baseGestureHandlerProps.baseGestureHandlerProps, config: {} };
+const obj = { name: "PinchGestureHandler", allowedProps: baseGestureHandlerProps.baseGestureHandlerProps, config: {} };
 
-export const rotationHandlerName = "RotationGestureHandler";
-export const RotationGestureHandler = createHandler(obj);
+export const pinchHandlerName = "PinchGestureHandler";
+export const PinchGestureHandler = createHandler(obj);

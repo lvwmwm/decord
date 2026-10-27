@@ -1,14 +1,14 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9718
+// Function ID: 9719
 // Name: openChannelSecondaryViewChat
-// Dependencies: [19, 1087, 5151, 5150, 9717, 1506, 558, 576, 584, 2]
+// Dependencies: [19, 1084, 5152, 5151, 9719, 1503, 558, 576, 584, 2]
 // Exports: default, getChannelSecondaryViewChatIndex, presentChannelSecondaryViewChat
 
-// Module 9716 (openChannelSecondaryViewChat)
+// Module 9718 (openChannelSecondaryViewChat)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
-import MessageManagerDefault from "MessageManager" /* 9717 */;
+import Constants from "Constants" /* 1084 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
+import MessageManagerDefault from "MessageManager" /* 9719 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f104555 = () => {
+const f104776 = () => {
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (rootNavigationRef != null) {
@@ -172,7 +172,7 @@ function presentChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   let closure_1 = channelId;
   const obj = require("RootNavigationRef");
-  const result = obj.runWhenRootNavigationReady(f104555);
+  const result = obj.runWhenRootNavigationReady(f104776);
 }
 let result = size.fileFinishedImporting("modules/app_channels/native/openChannelSecondaryViewChat.tsx");
 
@@ -187,7 +187,7 @@ export default function openChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   importDefault = channelId;
   let obj2 = require("RootNavigationRef");
-  const result = obj2.runWhenRootNavigationReady(f104555);
+  const result = obj2.runWhenRootNavigationReady(f104776);
 };
 export { getChannelSecondaryViewChatIndex };
 export { presentChannelSecondaryViewChat };

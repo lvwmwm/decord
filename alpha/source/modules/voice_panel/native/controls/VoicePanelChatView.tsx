@@ -1,26 +1,26 @@
-// Module ID: 13165
-// Function ID: 13166
+// Module ID: 13179
+// Function ID: 13180
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 10899, 1087, 21, 4971, 5710, 558, 576, 1123, 13163, 1128, 10658, 10900, 5052, 10625, 7168, 9708, 1499, 1633, 13166, 7411, 5146, 13167, 10892, 5968, 5037, 11226, 2]
+// Dependencies: [19, 17, 10902, 1084, 21, 4972, 5711, 558, 576, 1120, 13177, 1125, 10661, 10903, 5053, 10628, 7170, 9710, 1496, 1630, 13180, 7413, 5147, 13181, 10895, 5969, 5038, 11229, 2]
 
-// Module 13165 (VoicePanelChatView)
+// Module 13179 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import intl2 from "intl" /* 1128 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7168 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10658 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10899 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10900 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13163 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
+import intl2 from "intl" /* 1125 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7170 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10628 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10661 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10902 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10903 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13177 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { accessibilityLabel: intl.string(intl2.t["5MstTl"]), icon: AssetRegistryDefault, onPress: first };
     const tmp8 = ChatFloatingNavButtonDefault;
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     const tmp9 = metroRequire(tmp8, obj2);
     cResult[1] = tmp9;
     tmp5 = tmp9;

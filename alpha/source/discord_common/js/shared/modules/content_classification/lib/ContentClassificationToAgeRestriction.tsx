@@ -1,20 +1,20 @@
-// Module ID: 5613
-// Function ID: 5614
+// Module ID: 5614
+// Function ID: 5615
 // Name: ContentClassificationToAgeRestriction
-// Dependencies: [5614, 5615, 1099, 5616, 5617, 5618, 5619, 5620, 5621, 5622, 2]
+// Dependencies: [5615, 5616, 1096, 5617, 5618, 5619, 5620, 5621, 5622, 5623, 2]
 // Exports: contentClassificationToAgeRestriction
 
-// Module 5613 (ContentClassificationToAgeRestriction)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import AgeRestrictionSource from "AgeRestrictionSource" /* 5614 */;
-import AgeRestrictionStatus9 from "AgeRestrictionStatus" /* 5615 */;
-import DiscordContentClassificationFlags from "DiscordContentClassificationFlags" /* 5616 */;
-import ContentRatingESRBRating from "ContentRatingESRBRating" /* 5617 */;
-import ContentRatingPEGIRating from "ContentRatingPEGIRating" /* 5618 */;
-import ContentRatingGOPClassification from "ContentRatingGOPClassification" /* 5619 */;
-import ContentRatingIGDBTheme from "ContentRatingIGDBTheme" /* 5620 */;
-import ContentRatingAppleRating from "ContentRatingAppleRating" /* 5621 */;
-import AgeRestrictionUtilsAll from "AgeRestrictionUtils" /* 5622 */;
+// Module 5614 (ContentClassificationToAgeRestriction)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
+import AgeRestrictionSource from "AgeRestrictionSource" /* 5615 */;
+import AgeRestrictionStatus9 from "AgeRestrictionStatus" /* 5616 */;
+import DiscordContentClassificationFlags from "DiscordContentClassificationFlags" /* 5617 */;
+import ContentRatingESRBRating from "ContentRatingESRBRating" /* 5618 */;
+import ContentRatingPEGIRating from "ContentRatingPEGIRating" /* 5619 */;
+import ContentRatingGOPClassification from "ContentRatingGOPClassification" /* 5620 */;
+import ContentRatingIGDBTheme from "ContentRatingIGDBTheme" /* 5621 */;
+import ContentRatingAppleRating from "ContentRatingAppleRating" /* 5622 */;
+import AgeRestrictionUtilsAll from "AgeRestrictionUtils" /* 5623 */;
 import size from "module_2" /* 2 */;
 
 function contentClassificationToAgeRestrictionConclusion(data) {
@@ -63,9 +63,9 @@ function contentClassificationToAgeRestrictionConclusion(data) {
           obj.status = AgeRestrictionStatus9.AgeRestrictionStatus.ADULT;
           tmp12 = obj;
         } else {
-          const tmp36Result = tmp36(1099);
+          const tmp36Result = tmp36(1096);
           const hasAnyResult = tmp36Result.hasAny(deserializeResult, DiscordContentClassificationFlags.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
-          const AgeRestrictionStatus3 = tmp34(5615).AgeRestrictionStatus;
+          const AgeRestrictionStatus3 = tmp34(5616).AgeRestrictionStatus;
           obj.status = hasAnyResult ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE;
           tmp12 = obj;
         }
@@ -84,12 +84,12 @@ function contentClassificationToAgeRestrictionConclusion(data) {
       obj2 = BigFlagUtilsAll;
       const obj3 = { source: MANUAL_CLASSIFICATION, status: null };
       if (obj2.has(deserializeResult1, DiscordContentClassificationFlags.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
-        obj3.status = tmp4(5615).AgeRestrictionStatus.ADULT;
+        obj3.status = tmp4(5616).AgeRestrictionStatus.ADULT;
         tmp9 = obj3;
       } else {
-        const tmp6Result = tmp6(1099);
-        const hasAnyResult1 = tmp6Result.hasAny(deserializeResult1, tmp4(5616).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
-        const AgeRestrictionStatus2 = tmp4(5615).AgeRestrictionStatus;
+        const tmp6Result = tmp6(1096);
+        const hasAnyResult1 = tmp6Result.hasAny(deserializeResult1, tmp4(5617).DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
+        const AgeRestrictionStatus2 = tmp4(5616).AgeRestrictionStatus;
         obj3.status = hasAnyResult1 ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE;
         tmp9 = obj3;
       }
@@ -108,9 +108,9 @@ function contentClassificationToAgeRestrictionConclusion(data) {
         obj4.status = AgeRestrictionStatus9.AgeRestrictionStatus.ADULT;
         tmp2 = obj4;
       } else {
-        const tmp32Result = tmp32(1099);
+        const tmp32Result = tmp32(1096);
         const hasAnyResult2 = tmp32Result.hasAny(deserializeResult2, DiscordContentClassificationFlags.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
-        const AgeRestrictionStatus = tmp30(5615).AgeRestrictionStatus;
+        const AgeRestrictionStatus = tmp30(5616).AgeRestrictionStatus;
         obj4.status = hasAnyResult2 ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
         tmp2 = obj4;
       }
@@ -167,7 +167,7 @@ function contentClassificationToAgeRestrictionConclusion(data) {
           EVERYONE = AgeRestrictionStatus4.EVERYONE;
           tmp24 = tmp21;
         }
-        const obj8 = { source: tmp24(5614).AgeRestrictionSource.AGENCY_CLASSIFICATION_IGDB, status: EVERYONE };
+        const obj8 = { source: tmp24(5615).AgeRestrictionSource.AGENCY_CLASSIFICATION_IGDB, status: EVERYONE };
         push7(obj8);
       }
       if (null != data.agency_ratings.apple) {

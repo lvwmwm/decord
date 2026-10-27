@@ -1,11 +1,11 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 10008
+// Function ID: 10009
 // Name: GuestUtils
-// Dependencies: [4889, 1405, 8880, 2]
+// Dependencies: [4890, 1402, 8880, 2]
 
-// Module 10006 (GuestUtils)
-import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4889 */;
+// Module 10008 (GuestUtils)
+import FlagUtils from "FlagUtils" /* 1402 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;

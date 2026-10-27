@@ -1,12 +1,12 @@
 // Module ID: 8756
 // Function ID: 8757
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 4823, 558, 576, 8752, 8757, 573, 8763, 2]
+// Dependencies: [19, 4824, 558, 576, 8752, 8757, 573, 8763, 2]
 
 // Module 8756 (useMediaItemHasSpoiler)
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

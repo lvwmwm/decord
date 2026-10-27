@@ -1,26 +1,26 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16326
+// Function ID: 16327
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1087, 21, 558, 576, 7529, 11040, 9519, 1202, 11209, 1128, 12888, 2065, 14868, 2]
+// Dependencies: [19, 1084, 21, 558, 576, 7530, 11043, 9518, 1199, 11212, 1125, 12897, 2062, 14904, 2]
 
-// Module 16288 (PremiumGiftingSetting)
+// Module 16326 (PremiumGiftingSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7529 */;
-import PromotionsHooks from "PromotionsHooks" /* 9519 */;
-import GiftIcon from "GiftIcon" /* 12888 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2062 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7530 */;
+import PromotionsHooks from "PromotionsHooks" /* 9518 */;
+import GiftIcon from "GiftIcon" /* 12897 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const native = tmp(1202);
+const native = tmp(1199);
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;

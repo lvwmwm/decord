@@ -1,41 +1,22 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13041
+// Function ID: 13042
 // Name: showNitroLockedToast
-// Dependencies: [6039, 3088, 1128, 5662, 2]
-// Exports: default, getNitroLockedMessage
+// Dependencies: [6364, 5663, 2]
+// Exports: default
 
-// Module 13027 (showNitroLockedToast)
-import intl2 from "intl" /* 1128 */;
-import _modDef3088 from "module_3088" /* 3088 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import CheckpointTrait from "CheckpointTrait" /* 6039 */;
+// Module 13041 (showNitroLockedToast)
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
 import size from "module_2" /* 2 */;
 
-let obj = {};
-obj[CheckpointTrait.CheckpointTrait.FACE] = _modDef3088["4IdR/H"];
-obj[CheckpointTrait.CheckpointTrait.OUTFIT] = _modDef3088.NuujPd;
-obj[CheckpointTrait.CheckpointTrait.HAT] = _modDef3088.o1Zign;
-obj[CheckpointTrait.CheckpointTrait.WEARABLE] = _modDef3088.C0CzoH;
-obj[CheckpointTrait.CheckpointTrait.AURA] = _modDef3088["+9TbTS"];
-obj[CheckpointTrait.CheckpointTrait.SHOES] = _modDef3088.sTG4TS;
+let tmp;
+const ToastUtils = tmp(5663);
 const result = size.fileFinishedImporting("modules/checkpoint/native/showNitroLockedToast.tsx");
 
-export default function showNitroLockedToast(arg0) {
-  let stringResult;
-  if (null != obj[arg0]) {
-    const intl = intl2.intl;
-    stringResult = intl.string(tmp);
+export default function showNitroLockedToast(nextBlockedTrait) {
+  const obj = CheckpointCustomizationUtils;
+  const nitroLockedMessage = obj.getNitroLockedMessage(nextBlockedTrait);
+  if (null != nitroLockedMessage) {
+    const tmpResult = ToastUtils;
+    tmpResult.presentError(nitroLockedMessage);
   }
-  if (null != stringResult) {
-    obj = ToastUtils;
-    obj.presentError(stringResult);
-  }
-};
-export const getNitroLockedMessage = function getNitroLockedMessage(nextBlockedTrait) {
-  let stringResult;
-  if (null != obj[nextBlockedTrait]) {
-    const intl = intl2.intl;
-    stringResult = intl.string(tmp);
-  }
-  return stringResult;
 };

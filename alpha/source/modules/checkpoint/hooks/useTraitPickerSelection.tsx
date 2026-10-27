@@ -1,13 +1,13 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13043
+// Function ID: 13044
 // Name: useTraitPickerSelection
-// Dependencies: [19, 12956, 6362, 6364, 6101, 558, 576, 504, 2]
+// Dependencies: [19, 12968, 6364, 6040, 6104, 558, 576, 504, 2]
 
-// Module 13029 (useTraitPickerSelection)
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6364 */;
+// Module 13043 (useTraitPickerSelection)
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6040 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
 import react_mod from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12956 */;
+import CheckpointStore from "CheckpointStore" /* 12968 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTraitPick
   const cResult = obj.c(15);
   customizationOption = customizationOption.customizationOption;
   onSelectOption = customizationOption.onSelectOption;
-  const tmp4 = customizationOption(onSelectOption[2]).CUSTOMIZATION_OPTION_TRAITS[customizationOption];
+  const tmp4 = customizationOption(onSelectOption[2]).CUSTOMIZATION_OPTION_TO_TRAIT[customizationOption];
   let closure_2 = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [selectedOptionId];
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTraitPick
   let selectedOptionId;
   let tmp = customizationOption;
   let tmp2 = onSelectOption;
-  react = customizationOption(onSelectOption[2]).CUSTOMIZATION_OPTION_TRAITS[customizationOption];
+  react = customizationOption(onSelectOption[2]).CUSTOMIZATION_OPTION_TO_TRAIT[customizationOption];
   let obj = customizationOption(onSelectOption[7]);
   const items = [selectedOptionId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {

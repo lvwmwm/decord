@@ -1,12 +1,12 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10894
+// Function ID: 10895
 // Name: StatusBarManager
-// Dependencies: [17, 12, 1645, 2]
+// Dependencies: [17, 12, 1642, 2]
 
-// Module 10891 (StatusBarManager)
+// Module 10894 (StatusBarManager)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 1645 */;
+import react_nativeDefault from "react-native" /* 1642 */;
 import size from "module_2" /* 2 */;
 
 const StatusBar = react_native.StatusBar;

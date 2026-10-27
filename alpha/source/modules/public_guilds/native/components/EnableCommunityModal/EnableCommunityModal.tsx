@@ -1,17 +1,17 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19212
+// Function ID: 19213
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 19173, 558, 576, 6930, 6924, 1128, 7485, 8115, 19175, 19176, 19188, 19189, 7095, 2]
+// Dependencies: [19, 21, 19211, 558, 576, 6932, 6926, 1125, 7486, 8113, 19213, 19214, 19226, 19227, 7097, 2]
 
-// Module 19174 (EnableCommunityModal)
+// Module 19212 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6930 */;
-import Navigator2 from "Navigator" /* 7095 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19173 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 19175 */;
+import intl2 from "intl" /* 1125 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6932 */;
+import Navigator2 from "Navigator" /* 7097 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19211 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 19213 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (function Head
   if (cResult[1] !== arg0) {
     const getHeaderTextButton = NavigatorHeader.getHeaderTextButton;
     NavigatorHeader;
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const tmp9 = getHeaderTextButton(intl.string(intl2.t["13/7kX"]), onModalClose)(arg0);
     cResult[1] = arg0;
     cResult[2] = tmp9;
@@ -110,8 +110,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableComm
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(7095).Navigator;
-    const intl = tmp(1128).intl;
+    const Navigator = tmp(7097).Navigator;
+    const intl = tmp(1125).intl;
     const tmp8 = <Navigator screens={first} initialRouteName={EnableCommunitySharedNavigation.EnableCommunityModalSteps.STEP_1} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp8;
     tmp6 = tmp8;

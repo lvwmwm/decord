@@ -1,17 +1,17 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 15981
+// Function ID: 15982
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4972, 21, 4971, 7253, 7278, 2053, 8648, 8658, 15936, 5210, 15937, 2002, 15850, 15850, 8646, 8655, 504, 4799, 8747, 15944, 15852, 1128, 6908, 12165, 1202, 2]
+// Dependencies: [19, 17, 4973, 21, 4972, 7255, 7280, 2050, 8648, 8658, 15974, 5211, 15975, 1999, 15888, 15888, 8646, 8655, 504, 4800, 8747, 15982, 15890, 1125, 6910, 12171, 1199, 2]
 // Exports: default
 
-// Module 15943 (EditUserProfileAvatar)
+// Module 15981 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -110,7 +110,7 @@ export default function EditUserProfileAvatar(user) {
       handleEditAvatarDecorationSelect: editAvatarDecoration,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(15937, dependencyMap.paths);
+    const tmp4 = asyncRequire(15975, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

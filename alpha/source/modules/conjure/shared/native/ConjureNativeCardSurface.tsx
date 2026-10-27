@@ -1,20 +1,20 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12188
+// Function ID: 12189
 // Name: ConjureNativeCardSurface
-// Dependencies: [19, 21, 4971, 587, 558, 576, 6905, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 6907, 2]
 
-// Module 12168 (ConjureNativeCardSurface)
+// Module 12188 (ConjureNativeCardSurface)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Card_Card = tmp(6905);
+const Card_Card = tmp(6907);
 const jsx = Fragment.jsx;
 let obj = { surface: obj2 };
 obj2 = { padding: nativeDefault.space.PX_12 };

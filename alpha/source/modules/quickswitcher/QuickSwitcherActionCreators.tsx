@@ -1,39 +1,39 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12929
+// Function ID: 12930
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 6709, 4827, 4823, 2043, 4874, 5002, 9066, 1087, 4830, 1089, 9067, 1267, 7420, 584, 7449, 5707, 5710, 6634, 7411, 11223, 9251, 9245, 7347, 12921, 7649, 7278, 12922, 8866, 2]
+// Dependencies: [5, 32, 6710, 4828, 4824, 2040, 4875, 5003, 9066, 1084, 4831, 1086, 9067, 1264, 7422, 584, 7450, 5708, 5711, 6635, 7413, 11226, 9251, 9245, 7349, 12930, 7650, 7280, 12931, 8866, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 12920 (QuickSwitcherActionCreators)
+// Module 12929 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6634 */;
-import InAppNavigationRecord from "InAppNavigationRecord" /* 6709 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7347 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7420 */;
-import transitionToGuild from "transitionToGuild" /* 7449 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import transitionToChannel from "transitionToChannel" /* 5708 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6635 */;
+import InAppNavigationRecord from "InAppNavigationRecord" /* 6710 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 7349 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7422 */;
+import transitionToGuild from "transitionToGuild" /* 7450 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8866 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9251 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11223 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 12921 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11226 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 12930 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2040 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 9066 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -535,7 +535,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
     let obj6 = DispatcherDefault;
     let obj4 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
     obj6.dispatch(obj4);
-    const tmpResult = tmp(12922);
+    const tmpResult = tmp(12931);
     tmpResult.openChannelTabActive(id, guildId);
   }
 };

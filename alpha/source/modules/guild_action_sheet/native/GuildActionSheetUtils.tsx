@@ -1,11 +1,11 @@
-// Module ID: 15210
-// Function ID: 15211
+// Module ID: 15246
+// Function ID: 15247
 // Name: GuildActionSheetUtils
-// Dependencies: [4903, 1087, 558, 576, 504, 2]
+// Dependencies: [4904, 1084, 558, 576, 504, 2]
 
-// Module 15210 (GuildActionSheetUtils)
-import Constants from "Constants" /* 1087 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+// Module 15246 (GuildActionSheetUtils)
+import Constants from "Constants" /* 1084 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

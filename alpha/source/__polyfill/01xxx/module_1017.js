@@ -1,89 +1,143 @@
 // Module ID: 1017
 // Function ID: 1018
-// Dependencies: []
+// Dependencies: [693]
+// Exports: createReduxEnhancer
 
 // Module 1017
-function getStatics($$typeof) {
-  let tmp = typeof $$typeof === "object";
-  if (typeof $$typeof === "object") {
-    tmp = null !== $$typeof;
-  }
-  if (tmp) {
-    tmp = $$typeof.$$typeof === forResult1;
-  }
-  if (tmp) {
-    return obj;
-  } else {
-    $$typeof = $$typeof.$$typeof;
-    return $$typeof && obj2[$$typeof] || closure_0;
-  }
-}
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_0 = { childContextTypes: true, contextType: true, contextTypes: true, defaultProps: true, displayName: true, getDefaultProps: true, getDerivedStateFromError: true, getDerivedStateFromProps: true, mixins: true, propTypes: true, type: true };
-let closure_1 = { name: true, length: true, prototype: true, caller: true, callee: true, arguments: true, arity: true };
-let obj = { $$typeof: true, compare: true, defaultProps: true, displayName: true, propTypes: true, type: true };
-const forResult = Symbol.for("react.forward_ref");
-const forResult1 = Symbol.for("react.memo");
-const obj2 = {};
-obj2[forResult] = { $$typeof: true, render: true, defaultProps: true, displayName: true, propTypes: true };
-obj2[forResult1] = obj;
-let closure_6 = defineProperty.bind(Object);
-let closure_7 = getOwnPropertyNames.bind(Object);
-let bindResult;
-if (getOwnPropertySymbols != null) {
-  const _Object = Object;
-  bindResult = getOwnPropertySymbols.bind(Object);
-}
-const metroImportAll = bindResult;
-let closure_9 = getOwnPropertyDescriptor.bind(Object);
-let closure_10 = getPrototypeOf.bind(Object);
-let closure_11 = Object.prototype;
-function hoistNonReactStatics(arg0, str, arg2) {
-  if (typeof str !== "string") {
-    if (closure_11) {
-      const tmp2 = closure_10(str);
-      const tmp3 = tmp2 && tmp2 !== tmp32;
-      if (tmp3) {
-        hoistNonReactStatics(arg0, tmp2);
-      }
-    }
-    obj = closure_7(str);
-    let combined = obj;
-    if (metroImportAll) {
-      combined = obj.concat(tmp7(str));
-    }
-    const tmp10 = getStatics(arg0);
-    const tmp11 = getStatics(str);
-    const iter = combined[Symbol.iterator]();
-    const nextResult = iter.next();
-    if (iter !== undefined) {
-      if (!closure_1[nextResult]) {
-        let tmp19;
-        if (tmp11 != null) {
-          tmp19 = tmp11[tmp17];
-        }
-        if (!tmp19) {
-          let tmp21;
-          if (tmp10 != null) {
-            tmp21 = tmp10[tmp17];
-          }
-          if (!tmp21) {
-            const tmp23 = closure_9;
-            if (!closure_9(arg0, nextResult)) {
-              const tmp23Result = tmp23(str, nextResult);
-              if (tmp23Result) {
-                try {
-                  closure_6(arg0, nextResult, tmp27);
-                } catch (err) {
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  return arg0;
-}
+import _mod693 from "module_693" /* 693 */;
 
-export { hoistNonReactStatics };
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let obj = {
+  attachReduxState: true,
+  actionTransformer(arg0) {
+    return arg0;
+  },
+  stateTransformer(arg0) {
+    return arg0 || null;
+  }
+};
+
+export const createReduxEnhancer = function createReduxEnhancer(arg0) {
+  obj = {};
+  const merged = Object.assign(obj);
+  const merged1 = Object.assign(arg0);
+  return (arg0) => {
+    let closure_0 = arg0;
+    return (arg0, arg1) => {
+      if (obj.attachReduxState) {
+        let tmp = require;
+        let tmp2 = dependencyMap;
+        obj = _mod693;
+        const globalScope = obj.getGlobalScope();
+        globalScope.addEventProcessor((type, attachments) => {
+          try {
+            const tmp2 = undefined === type.type && "redux" === type.contexts.state.state.type;
+            if (tmp2) {
+              attachments = attachments.attachments || [];
+              const items = [];
+              const _JSON = JSON;
+              obj = { filename: "redux_state.json", data: JSON.stringify(type.contexts.state.state.value) };
+              items[HermesBuiltin.arraySpread(items, attachments, 0)] = obj;
+              attachments.attachments = items;
+              const arraySpreadResult = HermesBuiltin.arraySpread(items, attachments, 0);
+            }
+          } catch (err) {
+          }
+          return type;
+        });
+      }
+      closure_0 = arg0;
+      const tmp4 = closure_0((arg0, arg1) => {
+        let obj5;
+        const tmp = closure_0(arg0, arg1);
+        obj = closure_0(closure_3_1[0]);
+        const currentScope = obj.getCurrentScope();
+        const actionTransformerResult = closure_2_0.actionTransformer(arg1);
+        if (null != actionTransformerResult) {
+          const obj2 = { category: "redux.action", data: actionTransformerResult, type: "info" };
+          const tmp2Result = closure_0(closure_3_1[0]);
+          tmp2Result.addBreadcrumb(obj2);
+        }
+        const stateTransformerResult = closure_2_0.stateTransformer(tmp);
+        if (null != stateTransformerResult) {
+          const tmp2Result3 = closure_0(closure_3_1[0]);
+          const client = tmp2Result3.getClient();
+          let options;
+          if (client != null) {
+            options = client.getOptions();
+          }
+          let num;
+          if (options != null) {
+            num = options.normalizeDepth;
+          }
+          if (!num) {
+            num = 3;
+          }
+          const obj4 = { state: obj5 };
+          obj5 = { type: "redux", value: stateTransformerResult };
+          const tmp2Result4 = closure_0(closure_3_1[0]);
+          const result = tmp2Result4.addNonEnumerableProperty(obj4, "__sentry_override_normalization_depth__", 3 + num);
+          currentScope.setContext("state", obj4);
+        } else {
+          currentScope.setContext("state", null);
+        }
+        const configureScopeWithState = obj3.configureScopeWithState;
+        if (typeof configureScopeWithState === "function") {
+          const result1 = configureScopeWithState(currentScope, tmp);
+        }
+        return tmp;
+      }, arg1);
+      let obj2 = {
+        apply(apply, arg1, arg2) {
+          closure_0 = arg2[0];
+          const items = [
+            (arg0, arg1) => {
+              let obj5;
+              const tmp = closure_0(arg0, arg1);
+              obj = closure_0(closure_3_1[0]);
+              const currentScope = obj.getCurrentScope();
+              const actionTransformerResult = closure_2_0.actionTransformer(arg1);
+              if (null != actionTransformerResult) {
+                const obj2 = { category: "redux.action", data: actionTransformerResult, type: "info" };
+                const tmp2Result = closure_0(closure_3_1[0]);
+                tmp2Result.addBreadcrumb(obj2);
+              }
+              const stateTransformerResult = closure_2_0.stateTransformer(tmp);
+              if (null != stateTransformerResult) {
+                const tmp2Result3 = closure_0(closure_3_1[0]);
+                const client = tmp2Result3.getClient();
+                let options;
+                if (client != null) {
+                  options = client.getOptions();
+                }
+                let num;
+                if (options != null) {
+                  num = options.normalizeDepth;
+                }
+                if (!num) {
+                  num = 3;
+                }
+                const obj4 = { state: obj5 };
+                obj5 = { type: "redux", value: stateTransformerResult };
+                const tmp2Result4 = closure_0(closure_3_1[0]);
+                const result = tmp2Result4.addNonEnumerableProperty(obj4, "__sentry_override_normalization_depth__", 3 + num);
+                currentScope.setContext("state", obj4);
+              } else {
+                currentScope.setContext("state", null);
+              }
+              const configureScopeWithState = obj3.configureScopeWithState;
+              if (typeof configureScopeWithState === "function") {
+                const result1 = configureScopeWithState(currentScope, tmp);
+              }
+              return tmp;
+            }
+          ];
+          apply.apply(arg1, items);
+        }
+      };
+      const proxy = new Proxy(tmp4.replaceReducer, obj2);
+      tmp4.replaceReducer = proxy;
+      return tmp4;
+    };
+  };
+};

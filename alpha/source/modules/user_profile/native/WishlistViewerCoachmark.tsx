@@ -1,18 +1,18 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14481
+// Function ID: 14482
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 4820, 21, 4971, 558, 576, 14446, 5669, 1128, 9840, 2]
+// Dependencies: [19, 17, 4821, 21, 4972, 558, 576, 14482, 5670, 1125, 9842, 2]
 
-// Module 14445 (WishlistViewerCoachmark)
+// Module 14481 (WishlistViewerCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import _modDef14446 from "module_14446" /* 14446 */;
+import intl4 from "intl" /* 1125 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import _modDef14482 from "module_14482" /* 14482 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp3 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef14446 };
+    const obj2 = { uri: _modDef14482 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -56,7 +56,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   tmp10 = tmp11;
 }) : (function CoachmarkImage() {
   const tmp = closure_7();
-  const obj3 = { uri: _modDef14446 };
+  const obj3 = { uri: _modDef14482 };
   FastImageDefault;
   return <View style={tmp.imageContainer}>{null}</View>;
 });
@@ -86,10 +86,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistVi
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(markAsDismissed(1128).t["+b6iUl"]);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(markAsDismissed(1128).t.Howsng);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(markAsDismissed(1125).t["+b6iUl"]);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(markAsDismissed(1125).t.Howsng);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp6 = stringResult1;
@@ -112,8 +112,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistVi
     const fn3 = function _() {
       return <closure_1_8 />;
     };
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(markAsDismissed(1128).t.TxBQzD);
+    const intl3 = tmp(1125).intl;
+    const stringResult2 = intl3.string(markAsDismissed(1125).t.TxBQzD);
     cResult[6] = fn3;
     cResult[7] = stringResult2;
     tmp11 = stringResult2;
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistVi
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9840);
+      const tmpResult = markAsDismissed(9842);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }

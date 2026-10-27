@@ -1,145 +1,62 @@
 // Module ID: 1753
 // Function ID: 1754
-// Dependencies: [41, 42, 17, 1661, 1665]
+// Dependencies: [1699]
+// Exports: makeViewDescriptorsSet
 
 // Module 1753
-import setupMicrotasks from "setupMicrotasks" /* 1665 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import react_native from "react-native" /* 17 */;
-import module_1661_mod from "module_1661" /* 1661 */;
+let set;
 
-let Platform;
-let closure_4;
-({ NativeEventEmitter: closure_4, Platform } = react_native);
-let module_1661 = module_1661_mod;
-class JSPropsUpdaterPaper {
-  constructor() {
-    _classCallCheck(this, JSPropsUpdaterPaper);
-    this._reanimatedEventEmitter = new React3(undefined);
-    new React3(undefined);
-  }
-}
-const entry = {
-  key: "addOnJSPropsChangeListener",
-  value: function addOnJSPropsChangeListener(getComponentViewTag) {
-    let _tagToComponentMapping = JSPropsUpdaterPaper._tagToComponentMapping;
-    const result = _tagToComponentMapping.set(getComponentViewTag.getComponentViewTag(), getComponentViewTag);
-    if (1 === JSPropsUpdaterPaper._tagToComponentMapping.size) {
-      const self = this;
-      const _reanimatedEventEmitter = this._reanimatedEventEmitter;
-      _reanimatedEventEmitter.addListener("onReanimatedPropsChange", (viewTag) => {
-        const _tagToComponentMapping = JSPropsUpdaterPaper._tagToComponentMapping;
-        const value = _tagToComponentMapping.get(viewTag.viewTag);
-        if (value != null) {
-          value._updateFromNative(viewTag.props);
-        }
-      });
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "removeOnJSPropsChangeListener",
-    value: function removeOnJSPropsChangeListener(getComponentViewTag) {
-      const _tagToComponentMapping = JSPropsUpdaterPaper._tagToComponentMapping;
-      _tagToComponentMapping.delete(getComponentViewTag.getComponentViewTag());
-      if (0 === JSPropsUpdaterPaper._tagToComponentMapping.size) {
-        const self = this;
-        const _reanimatedEventEmitter = this._reanimatedEventEmitter;
-        _reanimatedEventEmitter.removeAllListeners("onReanimatedPropsChange");
+let closure_2 = { code: "function pnpm_ViewDescriptorsSetTs1(descriptors){const{item,updater}=this.__closure;var _updater;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===item.tag;});if(index!==-1){descriptors[index]=item;}else{descriptors.push(item);}(_updater=updater)===null||_updater===void 0||_updater(true);return descriptors;}" };
+let closure_3 = { code: "function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}" };
+
+export const makeViewDescriptorsSet = function makeViewDescriptorsSet() {
+  let mutable;
+  const obj = mutable(set[0]);
+  mutable = obj.makeMutable([]);
+  set = new Set();
+  return {
+    shareableViewDescriptors: mutable,
+    add(tag, current) {
+      let closure_0 = tag;
+      set.add(tag.tag);
+      current = undefined;
+      if (current != null) {
+        current = current.current;
       }
-    }
-  }
-];
-module_1661 = module_1661.shouldBeUseWeb();
-let importDefaultResultResult = _createClass(JSPropsUpdaterPaper, items);
-importDefaultResultResult._tagToComponentMapping = new Map();
-let closure_5 = { code: "function pnpm_JSPropsUpdaterTs1(){const{runOnJS,updater}=this.__closure;global.updateJSProps=function(viewTag,props){runOnJS(updater)(viewTag,props);};}" };
-new Map();
-class JSPropsUpdaterFabric {
-  constructor() {
-    let updater;
-    _classCallCheck(this, updater);
-    const tmp = updater;
-    if (!updater.isInitialized) {
-      updater = function updater(value, props) {
-        const _tagToComponentMapping = updater._tagToComponentMapping;
-        value = _tagToComponentMapping.get(value);
-        if (value != null) {
-          value._updateFromNative(props);
+      const fn = function u(arr) {
+        const findIndexResult = arr.findIndex((tag) => tag.tag === tag.tag);
+        if (-1 !== findIndexResult) {
+          arr[findIndexResult] = tag;
+        } else {
+          arr.push(tag);
         }
+        if (current != null) {
+          tmp5(true);
+        }
+        return arr;
       };
-      const fn = function t() {
-        global.updateJSProps = (arg0, arg1) => {
-          const obj = setupMicrotasks;
-          obj.runOnJS(updater)(arg0, arg1);
-        };
-      };
-      let obj = { runOnJS: setupMicrotasks.runOnJS, updater };
-      const runOnUIImmediately = setupMicrotasks.runOnUIImmediately;
-      setupMicrotasks;
-      fn.__closure = obj;
-      fn.__workletHash = 2068327241111;
+      fn.__closure = { item: tag, updater: current };
+      fn.__workletHash = 1368679644593;
       fn.__initData = __initData;
-      runOnUIImmediately(fn)();
-      tmp.isInitialized = true;
+      mutable.modify(fn, false);
+    },
+    remove(viewTag) {
+      let closure_0 = viewTag;
+      set.delete(viewTag);
+      const fn = function c(arr) {
+        const findIndexResult = arr.findIndex((tag) => tag.tag === closure_1_0);
+        if (-1 !== findIndexResult) {
+          arr.splice(findIndexResult, 1);
+        }
+        return arr;
+      };
+      fn.__closure = { viewTag };
+      fn.__workletHash = 5508648561577;
+      fn.__initData = __initData2;
+      mutable.modify(fn, false);
+    },
+    has(arg0) {
+      return set.has(arg0);
     }
-  }
-}
-const entry1 = {
-  key: "addOnJSPropsChangeListener",
-  value: function addOnJSPropsChangeListener(getComponentViewTag) {
-    if (JSPropsUpdaterFabric.isInitialized) {
-      const _tagToComponentMapping = tmp._tagToComponentMapping;
-      const result = _tagToComponentMapping.set(getComponentViewTag.getComponentViewTag(), getComponentViewTag);
-    }
-  }
+  };
 };
-const items1 = [
-  entry1,
-  {
-    key: "removeOnJSPropsChangeListener",
-    value: function removeOnJSPropsChangeListener(getComponentViewTag) {
-      if (JSPropsUpdaterFabric.isInitialized) {
-        const _tagToComponentMapping = tmp._tagToComponentMapping;
-        _tagToComponentMapping.delete(getComponentViewTag.getComponentViewTag());
-      }
-    }
-  }
-];
-const importDefaultResultResult1 = _createClass(JSPropsUpdaterFabric, items1);
-importDefaultResultResult1._tagToComponentMapping = new Map();
-importDefaultResultResult1.isInitialized = false;
-new Map();
-if (module_1661) {
-  class JSPropsUpdaterWeb {
-    constructor() {
-      _classCallCheck(this, JSPropsUpdaterWeb);
-    }
-  }
-  const entry2 = {
-    key: "addOnJSPropsChangeListener",
-    value: function addOnJSPropsChangeListener(arg0) {
-
-      }
-  };
-  const items2 = [entry2, ];
-  const entry3 = {
-    key: "removeOnJSPropsChangeListener",
-    value: function removeOnJSPropsChangeListener(arg0) {
-
-      }
-  };
-  items2[1] = entry3;
-  importDefaultResultResult = _createClass(JSPropsUpdaterWeb, items2);
-} else {
-  class JSPropsUpdaterWeb {
-    constructor() {
-      _classCallCheck(this, JSPropsUpdaterWeb);
-    }
-  }
-}
-
-export default importDefaultResultResult;

@@ -1,15 +1,14 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11769
+// Function ID: 11770
 // Name: conjurePublishAction
-// Dependencies: [10805, 1128, 3830, 11758, 11768, 2]
-// Exports: conjurePublishTooltip, resolveConjurePublishAction
+// Dependencies: [10808, 1125, 3831, 11760, 2]
+// Exports: resolveConjurePublishAction
 
-// Module 11767 (conjurePublishAction)
-import intl5 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11758 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11768 */;
+// Module 11769 (conjurePublishAction)
+import intl5 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10808 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11760 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -72,7 +71,7 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
     if (false === tmp12) {
       const intl = intl5.intl;
       const format = intl.format;
-      const N4NkyR = _modDef3830.N4NkyR;
+      const N4NkyR = _modDef3831.N4NkyR;
       if (str4 == null) {
         str4 = "";
       }
@@ -113,9 +112,9 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
       if (tmp26) {
         format2Result = null;
         if (false === tmp25) {
-          const intl2 = tmp17(1128).intl;
+          const intl2 = tmp17(1125).intl;
           const format2 = intl2.format;
-          const eHYXFg = _modDef3830.eHYXFg;
+          const eHYXFg = _modDef3831.eHYXFg;
           if (str6 == null) {
             str6 = "";
           }
@@ -141,50 +140,14 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
       prop2 = integrationStatus.bot_permissions_changed;
     }
     if (true === prop2) {
-      const obj9 = { label: intl4.string(_modDef3830["tUeY/h"]), action: "review_permissions" };
+      const obj9 = { label: intl4.string(_modDef3831["tUeY/h"]), action: "review_permissions" };
       const merged2 = Object.assign(obj7);
-      intl4 = tmp17(1128).intl;
+      intl4 = tmp17(1125).intl;
       obj10 = obj9;
     }
     return obj10;
   }
-  obj10 = { label: intl3.string(_modDef3830["120EFN"]), action: "publish" };
+  obj10 = { label: intl3.string(_modDef3831["120EFN"]), action: "publish" };
   const merged3 = Object.assign(obj7);
-  intl3 = tmp17(1128).intl;
-};
-export const conjurePublishTooltip = function conjurePublishTooltip(status) {
-  let publishedRevision;
-  let tmp6Result;
-  let publishedAt;
-  if (status != null) {
-    publishedAt = status.publishedAt;
-  }
-  let parseTimestampMsResult = null;
-  if (null != publishedAt) {
-    const obj = ConjureHistoryFormat;
-    parseTimestampMsResult = obj.parseTimestampMs(status.publishedAt);
-  }
-  if (status != null) {
-    publishedRevision = status.publishedRevision;
-  }
-  let formatToPlainStringResult = null;
-  if (null != status) {
-    formatToPlainStringResult = null;
-    const obj2 = ConjurePublishTypes;
-    if (obj2.isConjureLive(status.publishState)) {
-      formatToPlainStringResult = null;
-      if (null != parseTimestampMsResult) {
-        formatToPlainStringResult = null;
-        if (null != publishedRevision) {
-          const intl = tmp6(1128).intl;
-          const formatToPlainString = intl.formatToPlainString;
-          const obj3 = { time: tmp6Result.formatHistoryDateTime(parseTimestampMsResult), version: publishedRevision };
-          const D9erxW = _modDef3830.D9erxW;
-          tmp6Result = ConjureHistoryFormat;
-          formatToPlainStringResult = formatToPlainString(D9erxW, obj3);
-        }
-      }
-    }
-  }
-  return formatToPlainStringResult;
+  intl3 = tmp17(1125).intl;
 };

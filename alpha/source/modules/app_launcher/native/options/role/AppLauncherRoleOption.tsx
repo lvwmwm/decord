@@ -1,17 +1,17 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 12089
+// Function ID: 12090
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 4877, 21, 573, 12081, 5210, 12084, 2002, 12084, 2]
+// Dependencies: [32, 19, 4878, 21, 573, 12082, 5211, 12085, 1999, 12085, 2]
 // Exports: default
 
-// Module 12088 (AppLauncherRoleOption)
+// Module 12089 (AppLauncherRoleOption)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12084 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,6 @@ export default function AppLauncherRoleOption(option) {
   let name;
   let onActionSheetDismiss;
   let onRolePress;
-  let style;
   option = option.option;
   ({ initialValue: importDefault, onRolePress } = option);
   ({ onActionSheetDismiss: _slicedToArray, channel } = option);
@@ -36,7 +35,7 @@ export default function AppLauncherRoleOption(option) {
   first = undefined;
   closure_8 = undefined;
   const guild_id = channel.guild_id;
-  ({ style, autoFocus, hasError } = option);
+  ({ autoFocus, hasError } = option);
   [first, closure_8] = channel.useState(() => {
     let roleId = null;
     if (null != importDefault) {
@@ -68,7 +67,6 @@ export default function AppLauncherRoleOption(option) {
     }
   }, items1);
   const obj2 = {
-    style,
     option,
     hasError,
     selected: null != stateFromStores,
@@ -89,7 +87,7 @@ export default function AppLauncherRoleOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(12084, dependencyMap.paths);
+      const tmp4 = asyncRequire(12085, dependencyMap.paths);
       openLazy(tmp4, AppLauncherRoleListActionSheet.APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, obj);
     },
     leading: guild_id(tmp3(tmp4[9]).RoleIcon, { role: stateFromStores }),

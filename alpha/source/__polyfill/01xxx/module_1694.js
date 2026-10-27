@@ -1,280 +1,251 @@
 // Module ID: 1694
 // Function ID: 1695
-// Dependencies: [1661, 1683, 1695, 1697, 1665]
+// Dependencies: [1695, 1698, 1706, 1659]
+// Exports: withStyleAnimation
 
 // Module 1694
-import LayoutAnimationType from "LayoutAnimationType" /* 1683 */;
-import _mod1695 from "module_1695" /* 1695 */;
-import _mod1697 from "module_1697" /* 1697 */;
-import module_1661_mod from "module_1661" /* 1661 */;
-import setupMicrotasks from "setupMicrotasks" /* 1665 */;
-
 const require = globalThis.__r;
-let _require, dependencyMap, map, map1;
+let _require;
 
-let module_1661 = module_1661_mod;
-module_1661 = module_1661.isAndroid();
-function startObservingProgress(arg0, addListener, arg2) {
-  let closure_2;
-  let closure_0 = arg0;
-  _require = addListener;
-  dependencyMap = arg2 === require("LayoutAnimationType").LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-  addListener.addListener(arg0 + 1000000000, () => {
-    closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-  });
-}
-let obj = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, TAG_OFFSET: 1000000000 };
-startObservingProgress.__closure = obj;
-startObservingProgress.__workletHash = 15816248532180;
-startObservingProgress.__initData = { code: "function startObservingProgress_Pnpm_animationsManagerTs1(tag,sharedValue,animationType){const{LayoutAnimationType,TAG_OFFSET}=this.__closure;const isSharedTransition=animationType===LayoutAnimationType.SHARED_ELEMENT_TRANSITION;sharedValue.addListener(tag+TAG_OFFSET,function(){global._notifyAboutProgress(tag,sharedValue.value,isSharedTransition);});}" };
-function stopObservingProgress(arg0, removeListener) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+function resolvePath(arg0, arg1) {
+  let arr = arg1;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    arr = items;
   }
-  removeListener.removeListener(arg0 + 1000000000);
-  global._notifyAboutEnd(arg0, flag);
+  return arr.reduce((acc, item) => {
+    if (!Array.isArray(acc)) {
+      let tmp2;
+      return tmp2;
+    }
+    tmp2 = acc[item];
+  }, arg0);
 }
-stopObservingProgress.__closure = { TAG_OFFSET: 1000000000 };
-stopObservingProgress.__workletHash = 8517596296348;
-stopObservingProgress.__initData = { code: "function stopObservingProgress_Pnpm_animationsManagerTs2(tag,sharedValue,removeView=false){const{TAG_OFFSET}=this.__closure;sharedValue.removeListener(tag+TAG_OFFSET);global._notifyAboutEnd(tag,removeView);}" };
-function createLayoutAnimationManager() {
-  map = new Map();
-  map1 = new Map();
-  function startActually(arg0, arg1, arg2, fn) {
-    let closure_0;
-    let closure_1;
-    map = arg0;
-    map1 = arg1;
-    let tmp = map1;
-    if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
-      const tmp6 = fn(arg2);
-      let closure_2 = tmp6;
-      let animations = tmp6.animations;
-      let obj = map;
-      const value = map.get(arg0);
-      if (value) {
-        const obj2 = {};
-        const merged = Object.assign(value);
-        let tmp11 = obj2;
-        const merged1 = Object.assign(tmp6.animations);
-        animations = obj2;
-      }
-      const result = obj.set(arg0, animations);
-      let value2 = map1.get(arg0);
-      let mutableUI = value2;
-      const obj3 = map1;
-      if (undefined === value2) {
-        const tmpResult = tmp(startActually[2]);
-        mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
-        const result1 = obj3.set(arg0, mutableUI);
-        value2 = mutableUI;
-      } else {
-        let tmp15 = stopObservingProgress;
-        if (typeof stopObservingProgress === "function") {
-          value2.removeListener(arg0 + 1000000000);
-          map._notifyAboutEnd(arg0, false);
-          value2._value = tmp6.initialValues;
+resolvePath.__closure = {};
+resolvePath.__workletHash = 6511886988303;
+resolvePath.__initData = { code: "function resolvePath_Pnpm_styleAnimationTs1(obj,path){const keys=Array.isArray(path)?path:[path];return keys.reduce(function(acc,current){if(Array.isArray(acc)&&typeof current==='number'){return acc[current];}else if(acc!==null&&typeof acc==='object'&&current in acc){return acc[current];}return undefined;},obj);}" };
+function setPath(arg0, arg1, arg2) {
+  let arr = arg1;
+  if (!Array.isArray(arg1)) {
+    const items = [arg1];
+    arr = items;
+  }
+  let tmp = arg0;
+  let tmp2 = arg0;
+  let num = 0;
+  if (0 < arr.length - 1) {
+    do {
+      if (!(arr[num] in tmp)) {
+        if (typeof arr[num + 1] === "number") {
+          tmp[arr[num]] = [];
         } else {
-          throw new TypeError("Trying to call a non-function");
+          tmp[arr[num]] = {};
         }
       }
-      const tmpResult2 = tmp(startActually[3]);
-      const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
-      withStyleAnimationResult.callback = (arg0) => {
+      tmp = tmp[arr[num]];
+      num = num + 1;
+      tmp2 = tmp;
+    } while (num < arr.length - 1);
+  }
+  tmp2[arr[arr.length - 1]] = arg2;
+}
+setPath.__closure = {};
+setPath.__workletHash = 1936400546748;
+setPath.__initData = { code: "function setPath_Pnpm_styleAnimationTs2(obj,path,value){const keys=Array.isArray(path)?path:[path];let currObj=obj;for(let i=0;i<keys.length-1;i++){currObj=currObj;if(!(keys[i]in currObj)){if(typeof keys[i+1]==='number'){currObj[keys[i]]=[];}else{currObj[keys[i]]={};}}currObj=currObj[keys[i]];}currObj[keys[keys.length-1]]=value;}" };
+const __initData = { code: "function pnpm_styleAnimationTs4(){const{ColorProperties,setPath,processColor,styleAnimations,resolvePath,__DEV__,logger,isValidLayoutAnimationProp,withTiming}=this.__closure;const onFrame=function(animation,now){let stillGoing=false;const entriesToCheck=[{value:animation.styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onFrame===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const currentStyleAnimation=currentEntry.value;if(currentStyleAnimation.finished){continue;}const finished=currentStyleAnimation.onFrame(currentStyleAnimation,now);if(finished){currentStyleAnimation.finished=true;if(currentStyleAnimation.callback){currentStyleAnimation.callback(true);}}else{stillGoing=true;}const isAnimatingColorProp=ColorProperties.includes(currentEntry.path[0]);setPath(animation.current,currentEntry.path,isAnimatingColorProp?processColor(currentStyleAnimation.current):currentStyleAnimation.current);}}return!stillGoing;};const onStart=function(animation,value,now,previousAnimation){const entriesToCheck=[{value:styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onStart===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const prevAnimation=resolvePath(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.styleAnimations,currentEntry.path);let prevVal=resolvePath(value,currentEntry.path);if(prevAnimation&&!prevVal){prevVal=prevAnimation.current;}if(__DEV__){if(prevVal===undefined){logger.warn(\"Initial values for animation are missing for property \"+currentEntry.path.join('.'));}const propName=currentEntry.path[0];if(typeof propName==='string'&&!isValidLayoutAnimationProp(propName.trim())){logger.warn(\"'\"+propName+\"' property is not officially supported for layout animations. It may not work as expected.\");}}setPath(animation.current,currentEntry.path,prevVal);let currentAnimation;if(typeof currentEntry.value!=='object'||!currentEntry.value.onStart){currentAnimation=withTiming(currentEntry.value,{duration:0});setPath(animation.styleAnimations,currentEntry.path,currentAnimation);}else{currentAnimation=currentEntry.value;}currentAnimation.onStart(currentAnimation,prevVal,now,prevAnimation);}}};const callback=function(finished){if(!finished){const animationsToCheck=[styleAnimations];while(animationsToCheck.length>0){const currentAnimation=animationsToCheck.pop();if(Array.isArray(currentAnimation)){for(const element of currentAnimation){animationsToCheck.push(element);}}else if(typeof currentAnimation==='object'&&currentAnimation.onStart===undefined){for(const value of Object.values(currentAnimation)){animationsToCheck.push(value);}}else{const currentStyleAnimation=currentAnimation;if(!currentStyleAnimation.finished&&currentStyleAnimation.callback){currentStyleAnimation.callback(false);}}}}};return{isHigherOrder:true,onFrame:onFrame,onStart:onStart,current:{},styleAnimations:styleAnimations,callback:callback};}" };
+function withStyleAnimation(animations) {
+  _require = animations;
+  let obj = require("module_1695");
+  const fn = function i() {
+    let obj = {
+      isHigherOrder: true,
+      onFrame(styleAnimations, arg1) {
+        let length;
+        let path3;
+        const items = [];
+        const obj = { value: styleAnimations.styleAnimations, path: [] };
+        items[0] = obj;
+        let flag = false;
+        let flag2 = false;
+        while (items.length > 0) {
+          let tmp2;
+          let iter = items.pop();
+          let _Array = Array;
+          let value2 = iter.value;
+          if (Array.isArray(iter.value)) {
+            let num = 0;
+            tmp2 = flag;
+            if (0 < value2.length) {
+              do {
+                let obj2 = { value: iter.value[num], path: path3.concat(num) };
+                path3 = iter.path;
+                let push2 = items.push;
+                let push2Result = push2(obj2);
+                num = num + 1;
+                tmp2 = flag;
+                length = iter.value.length;
+              } while (num < length);
+            }
+          } else {
+            if (typeof value2 === "object") {
+              if (undefined === iter.value.onFrame) {
+                let _Object = Object;
+                let keys = Object.keys(iter.value);
+                tmp2 = flag;
+                for (const item10057 of keys) {
+                  let obj3 = { value: iter.value[item10057], path: path2.concat(item10057) };
+                  let path2 = iter.path;
+                  let push = items.push;
+                  let arr = push(obj3);
+                  continue;
+                }
+              }
+            }
+            value = iter.value;
+            tmp2 = flag;
+            if (!value.finished) {
+              let current2;
+              let flag3 = true;
+              if (value.onFrame(value, arg1)) {
+                value.finished = true;
+                flag3 = flag;
+                if (value.callback) {
+                  let callbackResult = value.callback(true);
+                  flag3 = flag;
+                }
+              }
+              let tmp4 = value;
+              let tmp5 = closure_1_1;
+              let ColorProperties = value(closure_1_1[1]).ColorProperties;
+              let tmp6 = closure_1_3;
+              let current = styleAnimations.current;
+              let path = iter.path;
+              if (ColorProperties.includes(iter.path[0])) {
+                let tmp4Result = tmp4(tmp5[1]);
+                current2 = tmp4Result.processColor(value.current);
+              } else {
+                current2 = value.current;
+              }
+              let tmp6Result = tmp6(current, path, current2);
+              tmp2 = flag3;
+            }
+          }
+          flag = tmp2;
+          flag2 = tmp2;
+        }
+        return !flag2;
+      },
+      onStart(current, arg1, arg2, styleAnimations) {
+        let length;
+        let path2;
+        const items = [];
+        const obj = { value, path: [] };
+        items[0] = obj;
+        if (items.length > 0) {
+          do {
+            let iter = items.pop();
+            let _Array = Array;
+            let value2 = iter.value;
+            if (Array.isArray(iter.value)) {
+              let num = 0;
+              if (0 < value2.length) {
+                do {
+                  let obj3 = { value: iter.value[num], path: path2.concat(num) };
+                  path2 = iter.path;
+                  let push2 = items.push;
+                  let push2Result = push2(obj3);
+                  num = num + 1;
+                  length = iter.value.length;
+                } while (num < length);
+              }
+            } else {
+              if (typeof value2 === "object") {
+                if (undefined === iter.value.onStart) {
+                  let _Object = Object;
+                  let keys = Object.keys(iter.value);
+                  for (const item10061 of keys) {
+                    let obj4 = { value: iter.value[item10061], path: path.concat(item10061) };
+                    let path = iter.path;
+                    let push = items.push;
+                    let arr = push(obj4);
+                    continue;
+                  }
+                }
+              }
+              let tmp = resolvePath;
+              styleAnimations = undefined;
+              if (styleAnimations != null) {
+                styleAnimations = styleAnimations.styleAnimations;
+              }
+              let tmpResult = tmp(styleAnimations, iter.path);
+              current = tmp(arg1, iter.path);
+              let tmp4 = tmpResult && !current;
+              if (tmp4) {
+                current = tmpResult.current;
+              }
+              let tmp5 = setPath;
+              let tmp6 = setPath(current.current, iter.path, current);
+              if (typeof iter.value === "object") {
+                if (iter.value.onStart) {
+                  value = iter.value;
+                  let onStartResult = value.onStart(value, tmp7, arg2, tmpResult);
+                }
+              }
+              let obj2 = value(dependencyMap[2]);
+              let withTimingResult = obj2.withTiming(iter.value, { duration: 0 });
+              let tmp5Result = tmp5(current.styleAnimations, iter.path, withTimingResult);
+              value = withTimingResult;
+            }
+          } while (items.length > 0);
+        }
+      },
+      current: {},
+      styleAnimations,
+      callback(arg0) {
         const tmp = arg0;
-        if (tmp) {
-          map.delete(closure_0);
-          map1.delete(closure_0);
-          const obj = mutableUI;
-          const tmp7 = closure_1;
-          if (typeof stopObservingProgress === "function") {
-            const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
-            obj.removeListener(closure_0 + 1000000000);
-            global._notifyAboutEnd(closure_0, tmp11);
-          } else {
-            throw new TypeError("Trying to call a non-function");
+        if (!tmp) {
+          const items = [styleAnimations];
+          if (items.length > 0) {
+            do {
+              let arr = items.pop();
+              let _Array = Array;
+              if (Array.isArray(arr)) {
+                for (const item10031 of arr) {
+                  let arr4 = items.push(item10031);
+                  continue;
+                }
+              } else {
+                if (typeof arr === "object") {
+                  if (undefined === arr.onStart) {
+                    let _Object = Object;
+                    let values = Object.values(arr);
+                    for (const item10023 of values) {
+                      let arr5 = items.push(item10023);
+                      continue;
+                    }
+                  }
+                }
+                let tmp4 = !arr.finished && arr.callback;
+                if (tmp4) {
+                  let callbackResult = arr.callback(false);
+                }
+              }
+            } while (items.length > 0);
           }
         }
-        const tmp15 = closure_2;
-        if (closure_2.callback) {
-          let tmp16 = undefined !== arg0;
-          const callback = tmp15.callback;
-          if (tmp16) {
-            tmp16 = arg0;
-          }
-          callback(tmp16);
-        }
-      };
-      if (typeof startObservingProgress === "function") {
-        map = arg0;
-        closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-        value2.addListener(arg0 + 1000000000, () => {
-          closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-        });
-        value2.value = withStyleAnimationResult;
-      } else {
-        throw new TypeError("Trying to call a non-function");
       }
-    } else {
-      const ProgressTransitionRegister = map.ProgressTransitionRegister;
-      ProgressTransitionRegister.onTransitionStart(arg0, arg2);
-    }
-  }
-  const tmp3 = module_1661;
-  if (tmp3) {
-    startActually = (arg0, arg1, arg2, arg3) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      let closure_2 = arg2;
-      let closure_3 = arg3;
-      return requestAnimationFrame(() => {
-        startActually(closure_0, closure_1, closure_2, closure_3);
-      });
     };
-  }
-  let obj = {
-    start: startActually,
-    stop(arg0) {
-      const value = map1.get(arg0);
-      if (value) {
-        if (typeof stopObservingProgress === "function") {
-          value.removeListener(arg0 + 1000000000);
-          global._notifyAboutEnd(arg0, false);
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
-    }
+    return obj;
   };
-  return obj;
+  let obj2 = { ColorProperties: require("clampRGBA").ColorProperties, setPath, processColor: require("clampRGBA").processColor, styleAnimations: animations, resolvePath, __DEV__: false, logger: require("react-native").logger, isValidLayoutAnimationProp: require("module_1695").isValidLayoutAnimationProp, withTiming: require("module_1706").withTiming };
+  fn.__closure = obj2;
+  fn.__workletHash = 1293354823532;
+  fn.__initData = __initData;
+  return obj.defineAnimation({}, fn);
 }
-let obj2 = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, makeMutableUI: _mod1695.makeMutableUI, stopObservingProgress, withStyleAnimation: _mod1697.withStyleAnimation, startObservingProgress, IS_ANDROID: module_1661 };
-createLayoutAnimationManager.__closure = obj2;
-createLayoutAnimationManager.__workletHash = 8526874600063;
-createLayoutAnimationManager.__initData = { code: "function createLayoutAnimationManager_Pnpm_animationsManagerTs3(){const{LayoutAnimationType,makeMutableUI,stopObservingProgress,withStyleAnimation,startObservingProgress,IS_ANDROID}=this.__closure;const currentAnimationForTag=new Map();const mutableValuesForTag=new Map();const startActually=function(tag,type,yogaValues,config){if(type===LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS){global.ProgressTransitionRegister.onTransitionStart(tag,yogaValues);return;}const style=config(yogaValues);let currentAnimation=style.animations;const previousAnimation=currentAnimationForTag.get(tag);if(previousAnimation){currentAnimation={...previousAnimation,...style.animations};}currentAnimationForTag.set(tag,currentAnimation);let value=mutableValuesForTag.get(tag);if(value===undefined){value=makeMutableUI(style.initialValues);mutableValuesForTag.set(tag,value);}else{stopObservingProgress(tag,value);value._value=style.initialValues;}const animation=withStyleAnimation(currentAnimation);animation.callback=function(finished){if(finished){currentAnimationForTag.delete(tag);mutableValuesForTag.delete(tag);const shouldRemoveView=type===LayoutAnimationType.EXITING;stopObservingProgress(tag,value,shouldRemoveView);}style.callback&&style.callback(finished===undefined?false:finished);};startObservingProgress(tag,value,type);value.value=animation;};let start;if(IS_ANDROID){start=function(tag,type,yogaValues,config){return requestAnimationFrame(function(){startActually(tag,type,yogaValues,config);});};}else{start=startActually;}return{start:start,stop:function(tag){const value=mutableValuesForTag.get(tag);if(!value){return;}stopObservingProgress(tag,value);}};}" };
-const fn = function t() {
-  if (typeof createLayoutAnimationManager === "function") {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    new Map();
-    const _Map2 = Map;
-    const self3 = this;
-    const self4 = this;
-    new Map();
-    function startActually(arg0, arg1, arg2, fn) {
-      let closure_0;
-      let closure_1;
-      map = arg0;
-      map1 = arg1;
-      let tmp = map1;
-      if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
-        const tmp6 = fn(arg2);
-        let closure_2 = tmp6;
-        let animations = tmp6.animations;
-        let obj = map;
-        const value = map.get(arg0);
-        if (value) {
-          const obj2 = {};
-          const merged = Object.assign(value);
-          let tmp11 = obj2;
-          const merged1 = Object.assign(tmp6.animations);
-          animations = obj2;
-        }
-        const result = obj.set(arg0, animations);
-        let value2 = map1.get(arg0);
-        let mutableUI = value2;
-        const obj3 = map1;
-        if (undefined === value2) {
-          const tmpResult = tmp(startActually[2]);
-          mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
-          const result1 = obj3.set(arg0, mutableUI);
-          value2 = mutableUI;
-        } else {
-          let tmp15 = stopObservingProgress;
-          if (typeof stopObservingProgress === "function") {
-            value2.removeListener(arg0 + 1000000000);
-            map._notifyAboutEnd(arg0, false);
-            value2._value = tmp6.initialValues;
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        const tmpResult2 = tmp(startActually[3]);
-        const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
-        withStyleAnimationResult.callback = (arg0) => {
-          const tmp = arg0;
-          if (tmp) {
-            map.delete(closure_0);
-            map1.delete(closure_0);
-            const obj = mutableUI;
-            const tmp7 = closure_1;
-            if (typeof stopObservingProgress === "function") {
-              const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
-              obj.removeListener(closure_0 + 1000000000);
-              global._notifyAboutEnd(closure_0, tmp11);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          const tmp15 = closure_2;
-          if (closure_2.callback) {
-            let tmp16 = undefined !== arg0;
-            const callback = tmp15.callback;
-            if (tmp16) {
-              tmp16 = arg0;
-            }
-            callback(tmp16);
-          }
-        };
-        if (typeof startObservingProgress === "function") {
-          map = arg0;
-          closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
-          value2.addListener(arg0 + 1000000000, () => {
-            closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
-          });
-          value2.value = withStyleAnimationResult;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        const ProgressTransitionRegister = map.ProgressTransitionRegister;
-        ProgressTransitionRegister.onTransitionStart(arg0, arg2);
-      }
-    }
-    const tmp7 = module_1661;
-    if (tmp7) {
-      startActually = (arg0, arg1, arg2, arg3) => {
-        let closure_0 = arg0;
-        let closure_1 = arg1;
-        let closure_2 = arg2;
-        let closure_3 = arg3;
-        return requestAnimationFrame(() => {
-          startActually(closure_0, closure_1, closure_2, closure_3);
-        });
-      };
-    }
-    const obj = {
-      start: startActually,
-      stop(arg0) {
-          const value = map1.get(arg0);
-          if (value) {
-            if (typeof stopObservingProgress === "function") {
-              value.removeListener(arg0 + 1000000000);
-              global._notifyAboutEnd(arg0, false);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-        }
-    };
-    tmp.LayoutAnimationsManager = obj;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-fn.__closure = { createLayoutAnimationManager };
-fn.__workletHash = 11408639565737;
-fn.__initData = { code: "function pnpm_animationsManagerTs4(){const{createLayoutAnimationManager}=this.__closure;global.LayoutAnimationsManager=createLayoutAnimationManager();}" };
-const tmp2 = setupMicrotasks.runOnUIImmediately(fn)();
+let obj = { defineAnimation: require("module_1695").defineAnimation, ColorProperties: require("clampRGBA").ColorProperties, setPath, processColor: require("clampRGBA").processColor, resolvePath, __DEV__: false, logger: require("react-native").logger, isValidLayoutAnimationProp: require("module_1695").isValidLayoutAnimationProp, withTiming: require("module_1706").withTiming };
+withStyleAnimation.__closure = obj;
+withStyleAnimation.__workletHash = 3046356752495;
+withStyleAnimation.__initData = { code: "function withStyleAnimation_Pnpm_styleAnimationTs3(styleAnimations){const{defineAnimation,ColorProperties,setPath,processColor,resolvePath,__DEV__,logger,isValidLayoutAnimationProp,withTiming}=this.__closure;return defineAnimation({},function(){'worklet';const onFrame=function(animation,now){let stillGoing=false;const entriesToCheck=[{value:animation.styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onFrame===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const currentStyleAnimation=currentEntry.value;if(currentStyleAnimation.finished){continue;}const finished=currentStyleAnimation.onFrame(currentStyleAnimation,now);if(finished){currentStyleAnimation.finished=true;if(currentStyleAnimation.callback){currentStyleAnimation.callback(true);}}else{stillGoing=true;}const isAnimatingColorProp=ColorProperties.includes(currentEntry.path[0]);setPath(animation.current,currentEntry.path,isAnimatingColorProp?processColor(currentStyleAnimation.current):currentStyleAnimation.current);}}return!stillGoing;};const onStart=function(animation,value,now,previousAnimation){const entriesToCheck=[{value:styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onStart===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const prevAnimation=resolvePath(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.styleAnimations,currentEntry.path);let prevVal=resolvePath(value,currentEntry.path);if(prevAnimation&&!prevVal){prevVal=prevAnimation.current;}if(__DEV__){if(prevVal===undefined){logger.warn(\"Initial values for animation are missing for property \"+currentEntry.path.join('.'));}const propName=currentEntry.path[0];if(typeof propName==='string'&&!isValidLayoutAnimationProp(propName.trim())){logger.warn(\"'\"+propName+\"' property is not officially supported for layout animations. It may not work as expected.\");}}setPath(animation.current,currentEntry.path,prevVal);let currentAnimation;if(typeof currentEntry.value!=='object'||!currentEntry.value.onStart){currentAnimation=withTiming(currentEntry.value,{duration:0});setPath(animation.styleAnimations,currentEntry.path,currentAnimation);}else{currentAnimation=currentEntry.value;}currentAnimation.onStart(currentAnimation,prevVal,now,prevAnimation);}}};const callback=function(finished){if(!finished){const animationsToCheck=[styleAnimations];while(animationsToCheck.length>0){const currentAnimation=animationsToCheck.pop();if(Array.isArray(currentAnimation)){for(const element of currentAnimation){animationsToCheck.push(element);}}else if(typeof currentAnimation==='object'&&currentAnimation.onStart===undefined){for(const value of Object.values(currentAnimation)){animationsToCheck.push(value);}}else{const currentStyleAnimation=currentAnimation;if(!currentStyleAnimation.finished&&currentStyleAnimation.callback){currentStyleAnimation.callback(false);}}}}};return{isHigherOrder:true,onFrame:onFrame,onStart:onStart,current:{},styleAnimations:styleAnimations,callback:callback};});}" };
+
+export { withStyleAnimation };

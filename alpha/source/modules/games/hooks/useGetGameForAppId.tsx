@@ -1,14 +1,14 @@
 // Module ID: 9224
 // Function ID: 9225
 // Name: useGetGameForAppId
-// Dependencies: [19, 2022, 558, 576, 7257, 7406, 1388, 504, 2]
+// Dependencies: [19, 2019, 558, 576, 7259, 7408, 1385, 504, 2]
 
 // Module 9224 (useGetGameForAppId)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7257 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2022 */;
+import GameStore from "GameStore" /* 2019 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const useGetOrFetchApplicationsDefault = useGetOrFetchApplications;
 let _require;
 
 let tmp;
-const useGame = tmp(7406);
+const useGame = tmp(7408);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGameForAppId(arg0) {
   let tmp4;
@@ -103,9 +103,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGame
     } else {
       tmp6 = cResult[2];
     }
-    const found = arr.filter(tmp(1388).isNotNullish);
+    const found = arr.filter(tmp(1385).isNotNullish);
     let mapped = found.map(tmp6);
-    const found1 = mapped.filter(tmp(1388).isNotNullish);
+    const found1 = mapped.filter(tmp(1385).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found1;
     tmp4 = found1;
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGame
 }) : (function useGetGamesForAppIds(arg0) {
   let closure_0;
   let memo;
-  const tmp = memo(7257)(arg0);
+  const tmp = memo(7259)(arg0);
   _require = tmp;
   const items = [tmp];
   memo = react.useMemo(() => {

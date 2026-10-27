@@ -1,14 +1,14 @@
-// Module ID: 19056
-// Function ID: 19057
+// Module ID: 19094
+// Function ID: 19095
 // Name: ListBulletsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 19057, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 19095, 5669, 2]
 
-// Module 19056 (ListBulletsIcon)
+// Module 19094 (ListBulletsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 19057 */;
+import BaseIconImage2 from "BaseIconImage" /* 5669 */;
+import AssetRegistry from "AssetRegistry" /* 19095 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListBullet
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5668).BaseIconImage;
+  const BaseIconImage = tmp(5669).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

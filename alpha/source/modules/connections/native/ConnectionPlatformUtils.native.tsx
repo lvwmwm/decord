@@ -1,12 +1,12 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16294
+// Function ID: 16295
 // Name: ConnectionPlatformUtils
-// Dependencies: [1087, 587, 2]
+// Dependencies: [1084, 587, 2]
 // Exports: getConnectionBackgroundColor
 
-// Module 16256 (ConnectionPlatformUtils)
+// Module 16294 (ConnectionPlatformUtils)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let BATTLENET;

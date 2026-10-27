@@ -1,21 +1,21 @@
-// Module ID: 9838
-// Function ID: 9839
+// Module ID: 9840
+// Function ID: 9841
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4972, 4820, 21, 5052, 558, 576, 504, 5252, 587, 5206, 5247, 4971, 9839, 1128, 9806, 2]
+// Dependencies: [19, 17, 4973, 4821, 21, 5053, 558, 576, 504, 5253, 587, 5207, 5248, 4972, 9841, 1125, 9808, 2]
 
-// Module 9838 (BurstReactionToggle)
+// Module 9840 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
+import intl2 from "intl" /* 1125 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import spring from "spring" /* 5248 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp6 = tmp5;
   }
   const ref = react.useRef(null);
-  const tmp8 = tmp6(9839)(ref);
+  const tmp8 = tmp6(9841)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     let tmp9;
@@ -225,9 +225,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     const containerStyle = closure_12(isActive).containerStyle;
     if (cResult[3] !== isActive) {
       let stringResult;
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const string = intl.string;
-      const t = tmp(1128).t;
+      const t = tmp(1125).t;
       if (isActive) {
         stringResult = string(t["5cRA/b"]);
       } else {
@@ -254,7 +254,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         tmp14 = cResult[9];
       }
       if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
-        const tmp17 = jsx(onPress(9806).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+        const tmp17 = jsx(onPress(9808).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
         cResult[10] = INTERACTIVE_TEXT_DEFAULT;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -285,7 +285,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         cResult[19] = tmp24;
         tmp21 = tmp24;
       }
-      const tmp20 = jsx(tmp6(5052).View, { style: tmp14, ref, children: tmp15 });
+      const tmp20 = jsx(tmp6(5053).View, { style: tmp14, ref, children: tmp15 });
       cResult[12] = tmp14;
       cResult[13] = tmp15;
       cResult[14] = tmp20;
@@ -322,7 +322,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp5 = tmp2;
   }
   const ref = react.useRef(null);
-  importDefault = tmp5(9839)(ref);
+  importDefault = tmp5(9841)(ref);
   const containerStyle = closure_12(isActive).containerStyle;
   const intl = intl2.intl;
   const string = intl.string;
@@ -333,7 +333,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     stringResult = string(t.buV4av);
   }
   const items = [tmp.container, containerStyle];
-  const View = tmp5(5052).View;
+  const View = tmp5(5053).View;
   return <tmp8 onPress={function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
     require();

@@ -1,22 +1,22 @@
-// Module ID: 18362
-// Function ID: 18363
+// Module ID: 18396
+// Function ID: 18397
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 6010, 21, 4971, 18363, 587, 558, 576, 8552, 5234, 1128, 5686, 4796, 7253, 504, 8668, 8133, 18364, 9772, 6908, 18365, 2]
+// Dependencies: [19, 17, 6011, 21, 4972, 18397, 587, 558, 576, 8552, 5235, 1125, 5687, 4797, 7255, 504, 8668, 8131, 18398, 9774, 6910, 18399, 2]
 
-// Module 18362 (RestrictedMessagePreviewList)
+// Module 18396 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import DateUtils from "DateUtils" /* 4796 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl2 from "intl" /* 1125 */;
+import DateUtils from "DateUtils" /* 4797 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8552 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18363 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 18365 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18397 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 18399 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6010 */;
+import MessageStore from "MessageStore" /* 6011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -111,8 +111,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Hidden
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(require("intl").t["VGf+K3"]) };
-      let Text = tmp(5234).Text;
-      intl = tmp(1128).intl;
+      let Text = tmp(5235).Text;
+      intl = tmp(1125).intl;
       const tmp14 = closure_6(Text, obj2);
       cResult[6] = tmp14;
       tmp12 = tmp14;

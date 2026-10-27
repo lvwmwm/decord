@@ -1,23 +1,23 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 9703
+// Function ID: 9704
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 4823, 6814, 4874, 21, 4971, 1202, 587, 558, 576, 504, 5252, 5144, 1128, 5669, 9702, 9703, 9705, 6908, 2]
+// Dependencies: [109, 19, 17, 4824, 6816, 4875, 21, 4972, 1199, 587, 558, 576, 504, 5253, 5145, 1125, 5670, 9704, 9705, 9707, 6910, 2]
 
-// Module 9701 (PressableNavigatorBackIcon)
+// Module 9703 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9702 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9703 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;
+import native from "native" /* 1199 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9704 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9705 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9707 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6816 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
       let tmp21;
       const _Symbol2 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { minWidth: tmp(1202).BADGE_SIZE + 8 };
+        const obj2 = { minWidth: tmp(1199).BADGE_SIZE + 8 };
         cResult[8] = obj2;
         tmp21 = obj2;
       } else {
@@ -126,7 +126,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
       let tmp20;
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { minWidth: tmp(1202).BADGE_SIZE + 12 };
+        const obj3 = { minWidth: tmp(1199).BADGE_SIZE + 12 };
         cResult[9] = obj3;
         tmp20 = obj3;
       } else {
@@ -135,12 +135,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
       tmp19 = tmp20;
     }
   }
-  const tmpResult3 = tmp(5252);
+  const tmpResult3 = tmp(5253);
   let backgroundColor = tmpResult3.useToken(tmp4);
-  const useGradientValue = tmp(5144).useGradientValue;
-  tmp(5144);
+  const useGradientValue = tmp(5145).useGradientValue;
+  tmp(5145);
   if (backgroundColor == null) {
-    backgroundColor = useGradientValue(tmp(5144).GradientPercentage.START);
+    backgroundColor = useGradientValue(tmp(5145).GradientPercentage.START);
   }
   if (backgroundColor == null) {
     backgroundColor = tmp12.maskStroke.backgroundColor;
@@ -155,12 +155,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
     if (cResult[13] !== stateFromStores) {
       let formatToPlainStringResult;
       if (stateFromStores > 0) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const obj4 = { mentionCount: stateFromStores };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.vxFYaM, obj4);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.vxFYaM, obj4);
       } else {
-        const intl = tmp(1128).intl;
-        formatToPlainStringResult = intl.string(tmp(1128).t["13/7kX"]);
+        const intl = tmp(1125).intl;
+        formatToPlainStringResult = intl.string(tmp(1125).t["13/7kX"]);
       }
       cResult[13] = stateFromStores;
       cResult[14] = formatToPlainStringResult;
@@ -209,7 +209,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
             const obj7 = { children: closure_10(PressableOpacity, obj8) };
             obj8 = { ref: tmp8, accessibilityRole: "button", accessibilityLabel: tmp24, onPress: tmp23, style: tmp12.actionButtonPressable, children: tmp36 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(6908).PressableOpacity;
+            PressableOpacity = tmp(6910).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_10(tmp43, obj7);
             cResult[25] = tmp23;

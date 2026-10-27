@@ -1,14 +1,14 @@
-// Module ID: 18771
-// Function ID: 18772
+// Module ID: 18807
+// Function ID: 18808
 // Name: openChangelog
-// Dependencies: [4873, 5150, 6672, 16901, 2002, 2]
+// Dependencies: [4874, 5151, 6673, 16943, 1999, 2]
 // Exports: openChangelog
 
-// Module 18771 (openChangelog)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ChangelogConstants from "ChangelogConstants" /* 4873 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
+// Module 18807 (openChangelog)
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ChangelogConstants from "ChangelogConstants" /* 4874 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
 import size from "module_2" /* 2 */;
 
 const CHANGELOG_MODAL_KEY = ChangelogConstants.CHANGELOG_MODAL_KEY;
@@ -26,6 +26,6 @@ export const openChangelog = function openChangelog() {
   }
   if (!isModalOpenResult) {
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(16901, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    obj2.pushLazy(asyncRequire(16943, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
   }
 };

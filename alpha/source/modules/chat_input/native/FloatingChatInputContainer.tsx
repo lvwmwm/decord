@@ -1,26 +1,26 @@
-// Module ID: 13310
-// Function ID: 13311
+// Module ID: 13324
+// Function ID: 13325
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 5052, 558, 576, 5252, 587, 1647, 5161, 1631, 5206, 5209, 2]
+// Dependencies: [32, 19, 21, 5053, 558, 576, 5253, 587, 1644, 5162, 1628, 5207, 5210, 2]
 
-// Module 13310 (FloatingChatInputContainer)
+// Module 13324 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let dependencyMap, set;
+let closure_2, dependencyMap, set;
 
 let tmp2;
 let tmp4;
-const useKeyboardTypeDefault = tmp4(5161);
-const timingPresets = tmp2(5209);
+const useKeyboardTypeDefault = tmp4(5162);
+const timingPresets = tmp2(5210);
 const jsx = Fragment.jsx;
 const Easing = ReanimatedRexport.Easing;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
@@ -72,7 +72,6 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingChatInpu
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardOpenPaddingStyle() {
-  let closure_2;
   let easing;
   let first;
   let sharedValue;
@@ -83,7 +82,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   let tmp2 = dependencyMap;
   let obj = token(576);
   const cResult = obj.c(8);
-  const obj2 = token(5252);
+  const obj2 = token(5253);
   token = obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -107,14 +106,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   [tmp8, importDefault] = sharedValue(react.useState(first), 2);
   sharedValue(react.useState(first), 2);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function c() {
+    const fn2 = function b() {
       const KeyboardEvents = token(closure_2[8]).KeyboardEvents;
-      let closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => closure_1(true));
+      let closure_0 = KeyboardEvents.addListener("keyboardWillShow", (height) => closure_1(height.height > 0));
       const KeyboardEvents2 = token(closure_2[8]).KeyboardEvents;
-      let closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => closure_1(false));
+      let closure_1 = KeyboardEvents2.addListener("keyboardDidShow", (height) => closure_1(height.height > 0));
+      const KeyboardEvents3 = token(closure_2[8]).KeyboardEvents;
+      closure_2 = KeyboardEvents3.addListener("keyboardWillHide", () => closure_1(false));
+      const KeyboardEvents4 = token(closure_2[8]).KeyboardEvents;
+      let closure_3 = KeyboardEvents4.addListener("keyboardDidHide", () => closure_1(false));
       return () => {
         closure_0.remove();
         closure_1.remove();
+        closure_2.remove();
+        closure_3.remove();
       };
     };
     const items = [];
@@ -127,10 +132,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
     tmp10 = cResult[2];
   }
   const effect = obj3.useEffect(tmp9, tmp10);
-  const tmpResult = token(5161);
-  const keyboardWillOpen = tmpResult.useKeyboardContextForType(tmp(1631).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const tmpResult = token(5162);
+  const keyboardWillOpen = tmpResult.useKeyboardContextForType(tmp(1628).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp12 = useKeyboardTypeDefault();
-  const SYSTEM = tmp(1631).KeyboardTypes.SYSTEM;
+  const SYSTEM = tmp(1628).KeyboardTypes.SYSTEM;
   if (!tmp8) {
     tmp8 = true === keyboardWillOpen;
   }
@@ -139,8 +144,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   }
   dependencyMap = tmp8;
   let num3 = 0;
-  const useSharedValue = tmp(5052).useSharedValue;
-  token(5052);
+  const useSharedValue = tmp(5053).useSharedValue;
+  token(5053);
   if (tmp8) {
     num3 = token;
   }
@@ -154,19 +159,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
         tmp16 = cResult[7];
       }
       const effect1 = obj3.useEffect(tmp15, tmp16);
-      const fn4 = function f() {
-        const obj = { paddingBottom: sharedValue.get() };
-        return obj;
-      };
+      const tmpResult4 = token(5053);
+      class E {
+        constructor() {
+          const obj = { paddingBottom: sharedValue.get() };
+          return obj;
+        }
+      }
       const obj4 = { paddingSV: sharedValue };
-      fn4.__closure = obj4;
-      fn4.__workletHash = 5673482424037;
-      fn4.__initData = __initData;
-      const tmpResult4 = token(5052);
-      return tmpResult4.useAnimatedStyle(fn4);
+      E.__closure = obj4;
+      E.__workletHash = 5673482424037;
+      E.__initData = __initData;
+      return tmpResult4.useAnimatedStyle(E);
     }
   }
-  const fn3 = function h() {
+  const fn3 = function v() {
     let num = 0;
     set = sharedValue.set;
     const withTiming = timing.withTiming;
@@ -186,13 +193,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   tmp16 = items1;
   tmp15 = fn3;
 }) : (function useKeyboardOpenPaddingStyle() {
-  let closure_2;
   let easing;
   let sharedValue;
   let tmp5;
   let token;
   let tmp2 = dependencyMap;
-  let obj = token(5252);
+  let obj = token(5253);
   token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   const tmp4 = sharedValue(react.useState(() => {
     const KeyboardController = token(closure_2[8]).KeyboardController;
@@ -209,18 +215,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   [tmp5, importDefault] = tmp4;
   const effect = react.useEffect(() => {
     const KeyboardEvents = token(closure_2[8]).KeyboardEvents;
-    let closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => closure_1(true));
+    let closure_0 = KeyboardEvents.addListener("keyboardWillShow", (height) => closure_1(height.height > 0));
     const KeyboardEvents2 = token(closure_2[8]).KeyboardEvents;
-    let closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => closure_1(false));
+    let closure_1 = KeyboardEvents2.addListener("keyboardDidShow", (height) => closure_1(height.height > 0));
+    const KeyboardEvents3 = token(closure_2[8]).KeyboardEvents;
+    closure_2 = KeyboardEvents3.addListener("keyboardWillHide", () => closure_1(false));
+    const KeyboardEvents4 = token(closure_2[8]).KeyboardEvents;
+    let closure_3 = KeyboardEvents4.addListener("keyboardDidHide", () => closure_1(false));
     return () => {
       closure_0.remove();
       closure_1.remove();
+      closure_2.remove();
+      closure_3.remove();
     };
   }, []);
-  const obj3 = token(5161);
-  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1631).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const obj3 = token(5162);
+  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1628).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp7 = useKeyboardTypeDefault();
-  const SYSTEM = token(1631).KeyboardTypes.SYSTEM;
+  const SYSTEM = token(1628).KeyboardTypes.SYSTEM;
   const obj2 = react;
   if (!tmp5) {
     tmp5 = true === keyboardWillOpen;
@@ -230,8 +242,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
   }
   dependencyMap = tmp5;
   let num = 0;
-  const useSharedValue = tmp(5052).useSharedValue;
-  token(5052);
+  const useSharedValue = tmp(5053).useSharedValue;
+  token(5053);
   if (tmp5) {
     num = token;
   }
@@ -248,14 +260,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardO
     const obj = { duration: timingPresets.timingStandardDuration, easing };
     const result = set(withTiming(num, obj));
   }, items);
-  const fn = function p() {
+  const fn = function h() {
     const obj = { paddingBottom: sharedValue.get() };
     return obj;
   };
   fn.__closure = { paddingSV: sharedValue };
   fn.__workletHash = 12921006654950;
   fn.__initData = __initData2;
-  const tmpResult2 = token(5052);
+  const tmpResult2 = token(5053);
   return tmpResult2.useAnimatedStyle(fn);
 });
 let closure_9 = tmp3;

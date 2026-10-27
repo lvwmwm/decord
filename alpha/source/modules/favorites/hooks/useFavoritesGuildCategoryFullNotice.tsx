@@ -1,17 +1,17 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 17575
+// Function ID: 17576
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4826, 4836, 1087, 558, 576, 504, 10846, 4848, 1128, 3412, 2]
+// Dependencies: [4827, 4837, 1084, 558, 576, 504, 10849, 4849, 1125, 3413, 2]
 
-// Module 17534 (useFavoritesGuildCategoryFullNotice)
+// Module 17575 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import _modDef3412 from "module_3412" /* 3412 */;
-import FavoritesConstants from "FavoritesConstants" /* 4836 */;
-import FavoritesUtils from "FavoritesUtils" /* 4848 */;
-import FavoritesHooks from "FavoritesHooks" /* 10846 */;
-import FavoriteStore from "FavoriteStore" /* 4826 */;
+import Constants from "Constants" /* 1084 */;
+import _modDef3413 from "module_3413" /* 3413 */;
+import FavoritesConstants from "FavoritesConstants" /* 4837 */;
+import FavoritesUtils from "FavoritesUtils" /* 4849 */;
+import FavoritesHooks from "FavoritesHooks" /* 10849 */;
+import FavoriteStore from "FavoriteStore" /* 4827 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -58,9 +58,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
               let tmp14;
               const _Symbol = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { label: intl.string(_modDef3412.WsUrMD), tooltip: intl2.string(_modDef3412.dW9Kov) };
-                intl = tmp(1128).intl;
-                intl2 = tmp(1128).intl;
+                const obj2 = { label: intl.string(_modDef3413.WsUrMD), tooltip: intl2.string(_modDef3413.dW9Kov) };
+                intl = tmp(1125).intl;
+                intl2 = tmp(1125).intl;
                 cResult[2] = obj2;
                 tmp14 = obj2;
               } else {
@@ -97,9 +97,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3412.WsUrMD), tooltip: intl2.string(_modDef3412.dW9Kov) };
-              intl = tmp(1128).intl;
-              intl2 = tmp(1128).intl;
+              const obj2 = { label: intl.string(_modDef3413.WsUrMD), tooltip: intl2.string(_modDef3413.dW9Kov) };
+              intl = tmp(1125).intl;
+              intl2 = tmp(1125).intl;
               tmp6 = obj2;
             }
           }

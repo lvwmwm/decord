@@ -1,23 +1,23 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7225
+// Function ID: 7226
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 4972, 6725, 1395, 21, 5052, 4971, 587, 558, 576, 504, 5206, 5247, 7224, 4980, 1128, 5252, 5039, 7227, 1417, 5234, 6908, 7230, 1202, 2]
+// Dependencies: [32, 19, 17, 4973, 6726, 1392, 21, 5053, 4972, 587, 558, 576, 504, 5207, 5248, 7226, 4981, 1125, 5253, 5040, 7229, 1414, 5235, 6910, 7232, 1199, 2]
 
-// Module 7223 (GuildOnboardingPromptOptionButton)
+// Module 7225 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
+import intl4 from "intl" /* 1125 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import spring from "spring" /* 5248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import EmojiStore from "EmojiStore" /* 6725 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import EmojiStore from "EmojiStore" /* 6726 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1260,7 +1260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(5052);
+  let obj3 = option(5053);
   class S {
     constructor() {
       let Easing;
@@ -1292,12 +1292,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(5206).withTiming, Easing: option(5052).Easing, useReducedMotion: stateFromStores1, withSequence: option(5052).withSequence, withSpring: option(5247).withSpring };
+  let obj4 = { selected, withTiming: option(5207).withTiming, Easing: option(5053).Easing, useReducedMotion: stateFromStores1, withSequence: option(5053).withSequence, withSpring: option(5248).withSpring };
   S.__closure = obj4;
   S.__workletHash = 8205438722579;
   S.__initData = derivedValue1;
   const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(7224)(guildId);
+  const tmp9 = selected(7226)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1351,7 +1351,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(5052);
+  const tmp3Result = tmp3(5053);
   class V {
     constructor() {
       let Easing;
@@ -1370,7 +1370,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(5052).Easing;
+      Easing = tmp2(5053).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -1388,19 +1388,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(5052).Easing;
+        Easing2 = tmp2(5053).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(5052).withDelay, withTiming: tmp3(5206).withTiming, Easing: tmp3(5052).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(5053).withDelay, withTiming: tmp3(5207).withTiming, Easing: tmp3(5053).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
   V.__workletHash = 10755800239871;
   V.__initData = __initData3;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(5052);
+  const tmp3Result11 = tmp3(5053);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -1469,13 +1469,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(5252);
+  const tmp3Result12 = tmp3(5253);
   token = tmp3Result12.useToken(tmp8(587).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(5252);
+  const tmp3Result13 = tmp3(5253);
   token1 = tmp3Result13.useToken(tmp8(587).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(5252);
+  const tmp3Result14 = tmp3(5253);
   token2 = tmp3Result14.useToken(tmp8(587).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(5252);
+  const tmp3Result15 = tmp3(5253);
   token3 = tmp3Result15.useToken(tmp8(587).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
@@ -1486,13 +1486,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(5052);
-  fn.__closure = { withTiming: tmp3(5206).withTiming, selected, SELECTION_TIMING: sharedValue };
+  const tmp3Result16 = tmp3(5053);
+  fn.__closure = { withTiming: tmp3(5207).withTiming, selected, SELECTION_TIMING: sharedValue };
   fn.__workletHash = 12520862943769;
   fn.__initData = __initData4;
-  ({ withTiming: tmp3(5206).withTiming, selected, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5207).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
-  const tmp3Result17 = tmp3(5052);
+  const tmp3Result17 = tmp3(5053);
   class W {
     constructor() {
       num = 0;
@@ -1504,12 +1504,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return withTiming(num, obj);
     }
   }
-  W.__closure = { withTiming: tmp3(5206).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  W.__closure = { withTiming: tmp3(5207).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
   W.__workletHash = 6695066984001;
   W.__initData = __initData5;
-  ({ withTiming: tmp3(5206).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5207).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
   derivedValue1 = tmp3Result17.useDerivedValue(W);
-  const tmp3Result18 = tmp3(5052);
+  const tmp3Result18 = tmp3(5053);
   class X {
     constructor() {
       let items1;
@@ -1527,10 +1527,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  X.__closure = { interpolateColor: tmp3(5052).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  X.__closure = { interpolateColor: tmp3(5053).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
   X.__workletHash = 11103701630825;
   X.__initData = __initData6;
-  ({ interpolateColor: tmp3(5052).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  ({ interpolateColor: tmp3(5053).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
   const animatedStyle2 = tmp3Result18.useAnimatedStyle(X);
   const fn2 = function z() {
     let items;
@@ -1547,14 +1547,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   fn2.__closure = { useReducedMotion: stateFromStores1, scale_0: sharedValue };
   fn2.__workletHash = 15537308682382;
   fn2.__initData = __initData7;
-  const tmp3Result19 = tmp3(5052);
+  const tmp3Result19 = tmp3(5053);
   const animatedStyle3 = tmp3Result19.useAnimatedStyle(fn2);
-  const tmp3Result20 = tmp3(5039);
+  const tmp3Result20 = tmp3(5040);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = { style: items6, children: items9 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(5052).View;
+  View = tmp8(5053).View;
   let id1;
   const obj10 = {
     activeOpacity: 0.6,
@@ -1594,7 +1594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6908).PressableOpacity;
+  const PressableOpacity = tmp3(6910).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1618,11 +1618,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(7227);
+    tmp8Result = selected(7229);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1417);
+      const tmp8Result2 = selected(1414);
       emojiURL = tmp8Result2.getEmojiURL(obj13);
     }
     str = undefined;
@@ -1641,12 +1641,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   const obj14 = { style: tmp2.optionText, children: items8 };
   items8 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items8[0] = closure_9(tmp3(5234).Text, obj15);
+  items8[0] = closure_9(tmp3(5235).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(5234).Text, obj16);
+    tmp47Result = tmp47(tmp3(5235).Text, obj16);
   }
   items8[1] = tmp47Result;
   items7[1] = ref(tmp46, obj14);
@@ -1655,19 +1655,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   if (num > 0) {
     const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
     items10 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(5052).View;
-    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1128).t.EgKsZA, obj19) };
-    Text = tmp3(5234).Text;
-    intl = tmp3(1128).intl;
+    const View2 = tmp8(5053).View;
+    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1125).t.EgKsZA, obj19) };
+    Text = tmp3(5235).Text;
+    intl = tmp3(1125).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
   }
   items9[1] = tmp47Result2;
   const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
   items11 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(5052).View;
+  const View3 = tmp8(5053).View;
   obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7230).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(7232).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;
@@ -1676,9 +1676,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1202).BadgeColors.BRAND, text: intl2.string(tmp3(1128).t.y2b7CA), style: null, textStyle: null };
-    const TextBadge = tmp3(1202).TextBadge;
-    intl2 = tmp3(1128).intl;
+    const obj22 = { color: tmp3(1199).BadgeColors.BRAND, text: intl2.string(tmp3(1125).t.y2b7CA), style: null, textStyle: null };
+    const TextBadge = tmp3(1199).TextBadge;
+    intl2 = tmp3(1125).intl;
     ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
     canBeNew = tmp47(TextBadge, obj22);
   }

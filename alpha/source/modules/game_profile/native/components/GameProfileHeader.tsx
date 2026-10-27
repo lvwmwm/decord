@@ -1,22 +1,22 @@
 // Module ID: 9302
 // Function ID: 9303
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9300, 21, 4971, 587, 558, 576, 5052, 9303, 9304, 5669, 5258, 9305, 9307, 5234, 9309, 2]
+// Dependencies: [19, 17, 9300, 21, 4972, 587, 558, 576, 5053, 9303, 9304, 5670, 5259, 9305, 9307, 5235, 9309, 2]
 
 // Module 9302 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import LinearGradientDefault from "LinearGradient" /* 5259 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9304 */;
 import GameCoverArtDefault from "GameCoverArt" /* 9305 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9309 */;
 import react from "react" /* 19 */;
 import GameProfileConstants from "GameProfileConstants" /* 9300 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -185,7 +185,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj5 = { source: obj6, style: tmp4.artHeroImage };
       obj6 = { uri: tmp9 };
-      tmp13 = metroRequire(tmp8(5669), obj5);
+      tmp13 = metroRequire(tmp8(5670), obj5);
     }
     cResult[7] = tmp9;
     cResult[8] = tmp4.artHeroImage;
@@ -248,7 +248,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   if (tmp10) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp7 };
-    tmp10 = metroRequire(tmp6(5669), obj4);
+    tmp10 = metroRequire(tmp6(5670), obj4);
   }
   items2 = [tmp10, ];
   const obj6 = { colors: items3, style: tmp.artHeroGradient };
@@ -270,7 +270,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   items7 = [, ];
   const obj12 = { style: tmp.titleRow, children: items8 };
   ({ textShadow: arr9[0], title: arr9[1] } = tmp);
-  items8 = [metroRequire(tmp2(5234).Text, obj13), ];
+  items8 = [metroRequire(tmp2(5235).Text, obj13), ];
   let tmp12Result3 = game.id === hasOwnProperty;
   if (tmp12Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -284,7 +284,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     tmp12Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp12Result4 = tmp12(tmp2(5234).Text, obj15);
+      tmp12Result4 = tmp12(tmp2(5235).Text, obj15);
     }
   }
   items6[2] = tmp12Result4;

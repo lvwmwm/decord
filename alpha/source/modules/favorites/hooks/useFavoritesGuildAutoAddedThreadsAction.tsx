@@ -1,13 +1,13 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17608
+// Function ID: 17609
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1392, 4826, 558, 576, 504, 10845, 1128, 3412, 2]
+// Dependencies: [19, 1389, 4827, 558, 576, 504, 10848, 1125, 3413, 2]
 
-// Module 17567 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10845 */;
+// Module 17608 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10848 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import FavoriteStore from "FavoriteStore" /* 4826 */;
+import UserStore from "UserStore" /* 1389 */;
+import FavoriteStore from "FavoriteStore" /* 4827 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,10 +69,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(stateFromStores1(3412).DIyQIF);
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(stateFromStores1(3412).g2vHYJ);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(stateFromStores1(3413).DIyQIF);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(stateFromStores1(3413).g2vHYJ);
       cResult[7] = stringResult;
       cResult[8] = stringResult1;
       tmp14 = stringResult1;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const obj2 = stateFromStores(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => autoAddJoinedThreads.autoAddJoinedThreads);
   const items2 = [stateFromStores, stateFromStores1];
-  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3412).DIyQIF), subLabel: intl2.string(stateFromStores1(3412).g2vHYJ), toggle: callback };
+  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3413).DIyQIF), subLabel: intl2.string(stateFromStores1(3413).g2vHYJ), toggle: callback };
   callback = react.useCallback(() => {
     const tmp = stateFromStores;
     if (tmp) {
@@ -141,8 +141,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       const result = obj.setFavoritesAutoAddJoinedThreads(!stateFromStores1);
     }
   }, items2);
-  intl = stateFromStores(1128).intl;
-  intl2 = stateFromStores(1128).intl;
+  intl = stateFromStores(1125).intl;
+  intl2 = stateFromStores(1125).intl;
   return obj3;
 });
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");

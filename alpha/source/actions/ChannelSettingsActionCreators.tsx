@@ -1,17 +1,17 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10095
+// Function ID: 10096
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 10094, 4823, 1087, 584, 5151, 8287, 1297, 7424, 2]
+// Dependencies: [5, 10096, 4824, 1084, 584, 5152, 8285, 1294, 7426, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 10093 (ChannelSettingsActionCreators)
+// Module 10095 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10094 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10096 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let application_id, auto_archive_duration, default_auto_archive_duration, default_forum_layout, default_sort_order, default_tag_setting, default_thread_rate_limit_per_user, permission_overwrites, position, rate_limit_per_user, rtc_region, theme_color, user, user_limit, video_quality_mode;

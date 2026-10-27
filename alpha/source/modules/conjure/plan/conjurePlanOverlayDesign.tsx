@@ -1,11 +1,12 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12433
+// Function ID: 12434
 // Name: conjurePlanOverlayDesign
-// Dependencies: [12427, 2]
-// Exports: conjurePlanOverlayWidgetBox, conjurePlanOverlayWidgetSize
+// Dependencies: [12434, 12437, 2]
+// Exports: conjurePlanDesignPreviews, conjurePlanOverlayWidgetBox
 
-// Module 12426 (conjurePlanOverlayDesign)
-import conjureOverlayPreview from "conjureOverlayPreview" /* 12427 */;
+// Module 12433 (conjurePlanOverlayDesign)
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12434 */;
+import conjureOverlayPreview from "conjureOverlayPreview" /* 12437 */;
 import size_mod from "module_2" /* 2 */;
 
 const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";
@@ -16,23 +17,99 @@ let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanOverlay
 export const CONJURE_PLAN_OVERLAY_SCENE_ASPECT_RATIO = 1.8860510805500983;
 export const CONJURE_PLAN_OVERLAY_WIDGET_TOP = combined;
 export const CONJURE_PLAN_OVERLAY_WIDGET_END = combined1;
-export const conjurePlanOverlayWidgetSize = function conjurePlanOverlayWidgetSize(proposal) {
+export const conjurePlanDesignPreviews = function conjurePlanDesignPreviews(proposal) {
+  let overlayWidgetPreviewSize;
+  let overlay_design_image1;
+  let overlay_widget;
+  let tmp15;
+  const obj = conjurePlanExperienceSurfaces;
+  const result = obj.conjurePlanDesignExperienceId(proposal);
   const design_image = proposal.design_image;
-  let name;
-  if (design_image != null) {
-    name = design_image.name;
-  }
-  let result = null;
-  if ("overlay-design-v2.png" === name) {
-    let overlay_widget = proposal.overlay_widget;
-    const overlayWidgetPreviewSize = conjureOverlayPreview.overlayWidgetPreviewSize;
-    conjureOverlayPreview;
-    if (overlay_widget == null) {
-      overlay_widget = null;
+  let tmp4 = null;
+  if (null != design_image) {
+    let overlay_design_image;
+    const id = design_image.id;
+    if (null != proposal.overlay_design_image) {
+      overlay_design_image = proposal.overlay_design_image;
+    } else {
+      const design_image2 = proposal.design_image;
+      let name;
+      if (design_image2 != null) {
+        name = design_image2.name;
+      }
+      overlay_design_image = null;
+      if ("overlay-design-v2.png" === name) {
+        overlay_design_image = proposal.design_image;
+      }
     }
-    result = overlayWidgetPreviewSize(overlay_widget);
+    let id1;
+    if (overlay_design_image != null) {
+      id1 = overlay_design_image.id;
+    }
+    tmp4 = null;
+    if (id !== id1) {
+      tmp4 = design_image;
+    }
   }
-  return result;
+  if (null != proposal.overlay_design_image) {
+    overlay_design_image1 = proposal.overlay_design_image;
+  } else {
+    const design_image3 = proposal.design_image;
+    let name1;
+    if (design_image3 != null) {
+      name1 = design_image3.name;
+    }
+    overlay_design_image1 = null;
+    if ("overlay-design-v2.png" === name1) {
+      overlay_design_image1 = proposal.design_image;
+    }
+  }
+  const experiences = proposal.experiences;
+  let id2;
+  if (experiences != null) {
+    const found = experiences.find((kind) => "frame" === kind.kind);
+    if (found != null) {
+      id2 = found.id;
+    }
+  }
+  if (id2 == null) {
+    id2 = result;
+  }
+  const experiences1 = proposal.experiences;
+  let id3;
+  if (experiences1 != null) {
+    const found1 = experiences1.find((kind) => "overlay_widget" === kind.kind);
+    if (found1 != null) {
+      id3 = found1.id;
+    }
+  }
+  if (id3 == null) {
+    id3 = result;
+  }
+  let tmp14 = null;
+  if (null != tmp4) {
+    tmp14 = null;
+    if (null != id2) {
+      tmp14 = { experienceId: id2, design: tmp4 };
+      const obj2 = { experienceId: id2, design: tmp4 };
+    }
+  }
+  const obj3 = { ui: tmp14, overlay: tmp15 };
+  tmp15 = null;
+  if (null != overlay_design_image1) {
+    tmp15 = null;
+    if (null != id3) {
+      const obj4 = { experienceId: id3, design: overlay_design_image1, size: overlayWidgetPreviewSize(overlay_widget) };
+      overlay_widget = proposal.overlay_widget;
+      overlayWidgetPreviewSize = tmp(12437).overlayWidgetPreviewSize;
+      conjureOverlayPreview;
+      if (overlay_widget == null) {
+        overlay_widget = null;
+      }
+      tmp15 = obj4;
+    }
+  }
+  return obj3;
 };
 export const conjurePlanOverlayWidgetBox = function conjurePlanOverlayWidgetBox(size) {
   let result;

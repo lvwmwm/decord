@@ -1,25 +1,25 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 17995
+// Function ID: 17996
 // Name: ReactActionSheet
-// Dependencies: [13138, 5, 32, 19, 17, 5266, 1395, 21, 1128, 4971, 587, 558, 576, 9825, 5225, 9350, 6908, 8613, 8841, 9829, 5146, 9708, 1499, 5234, 10625, 5144, 17956, 5037, 5669, 1417, 5025, 7008, 5680, 7959, 7298, 17909, 2]
+// Dependencies: [13152, 5, 32, 19, 17, 5267, 1392, 21, 1125, 4972, 587, 558, 576, 9827, 5226, 9349, 6910, 8613, 8841, 9831, 5147, 9710, 1496, 5235, 10628, 5145, 17990, 5038, 5670, 1414, 5026, 7010, 5681, 7957, 7300, 17943, 2]
 // Exports: getStatusReplyContent
 
-// Module 17961 (ReactActionSheet)
+// Module 17995 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5225 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5266 */;
+import intl6 from "intl" /* 1125 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5226 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5267 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9825 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13138 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9827 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13152 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const ICYMIContext = tmp(17909);
+const ICYMIContext = tmp(17943);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -1147,10 +1147,10 @@ export const getStatusReplyContent = function getStatusReplyContent(reply) {
   }
   if (null != attachments) {
     if (attachments.length > 0) {
-      const intl2 = tmp5(1128).intl;
+      const intl2 = tmp5(1125).intl;
       const _HermesInternal2 = HermesInternal;
       const obj3 = { attachmentsCount: attachments.length };
-      items.push("> -# *" + intl2.formatToPlainString(tmp5(1128).t["JiNPo+"], obj3) + "*");
+      items.push("> -# *" + intl2.formatToPlainString(tmp5(1125).t["JiNPo+"], obj3) + "*");
     }
   }
   items.push(reply);

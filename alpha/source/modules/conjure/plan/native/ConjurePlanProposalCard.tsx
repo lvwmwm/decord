@@ -1,39 +1,51 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12432
+// Function ID: 12433
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 6773, 21, 4971, 587, 12426, 558, 576, 12428, 12429, 5669, 12180, 5705, 12229, 12430, 12432, 12435, 12438, 504, 12436, 1128, 12439, 12440, 12441, 12443, 3830, 12424, 5234, 12447, 12448, 5244, 12168, 2]
+// Dependencies: [32, 19, 17, 6774, 21, 4972, 587, 12433, 558, 576, 12438, 12439, 5670, 12200, 12428, 1125, 3831, 12440, 5235, 12435, 12236, 5706, 12248, 12441, 12443, 12446, 504, 12447, 12448, 12449, 12451, 12431, 12455, 12456, 5245, 12188, 2]
 
-// Module 12425 (ConjurePlanProposalCard)
+// Module 12432 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl9 from "intl" /* 1128 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12180 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12229 */;
-import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12426 */;
-import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12428 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12429 */;
-import conjurePlanBot from "conjurePlanBot" /* 12436 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12439 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12440 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12441 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12443 */;
+import intl9 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5706 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12200 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12248 */;
+import openConjureNativeImages from "openConjureNativeImages" /* 12428 */;
+import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12433 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12435 */;
+import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12438 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12439 */;
+import conjurePlanBot from "conjurePlanBot" /* 12447 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12448 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12449 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12451 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
+
+let dependencyMap, importDefault, obj1;
 
 let c10;
-let c9;
-let closure_4;
+let closure_12;
 let hasOwnProperty;
 let items;
 let metroImportAll;
+let metroImportDefault;
 let metroRequire;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj16;
 let obj2;
 let obj3;
 let obj4;
@@ -41,11 +53,13 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
+let obj9;
+let unpackModuleId;
 let react = react_mod;
-({ ActivityIndicator: closure_4, StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
+({ ActivityIndicator: hasOwnProperty, Pressable: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll } = react_native);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { surface: { padding: 0, overflow: "hidden" }, content: obj2, whatChanged: obj3, footer: obj4, replyHint: { flexShrink: 1 }, design: obj5, overlayDesign: obj6, blurredBackground: obj7, overlayWidget: obj8 };
+let obj = { surface: { padding: 0, overflow: "hidden" }, content: obj2, whatChanged: obj3, footer: obj4, replyHint: { flexShrink: 1 }, design: obj5, overlayDesign: obj6, blurredBackground: obj7, overlayWidget: obj8, stack: obj9, overlayWidgetSlide: obj10, overlayFullWidget: { width: "100%", height: "100%" }, slidePicker: obj11, slideButton: obj12, slideButtonActive: obj13, look: obj14, referenceList: obj15, reference: obj16, referenceImage: { width: "100%", height: "100%" } };
 obj2 = { padding: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_8 };
@@ -55,9 +69,17 @@ obj6 = { width: "100%", aspectRatio: conjurePlanOverlayDesign.CONJURE_PLAN_OVERL
 obj7 = { transform: items };
 items = [{ scale: 1.04 }];
 obj8 = { position: "absolute", top: conjurePlanOverlayDesign.CONJURE_PLAN_OVERLAY_WIDGET_TOP, end: conjurePlanOverlayDesign.CONJURE_PLAN_OVERLAY_WIDGET_END };
-let closure_11 = createStyles(obj);
+obj9 = { gap: nativeDefault.space.PX_8 };
+obj10 = { padding: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "center" };
+obj11 = { flexDirection: "row", gap: nativeDefault.space.PX_4 };
+obj12 = { paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
+obj13 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+obj14 = { alignItems: "flex-start", gap: nativeDefault.space.PX_12 };
+obj15 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
+obj16 = { height: 64, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOverlayWidget(projectId) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOverlayWidget(projectId) {
   let alt;
   let items;
   let items2;
@@ -69,7 +91,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   const cResult = obj.c(24);
   ({ src, alt, size, onError } = projectId);
   projectId = projectId.projectId;
-  const tmp4 = closure_11();
+  const tmp4 = closure_13();
   const tmp6 = useConjureOverlayBackgroundDefault;
   const tmp6Result = tmp6(projectId, AssetRegistryDefault);
   if (cResult[0] !== size) {
@@ -125,7 +147,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                   }
                   const obj3 = { style: tmp4.overlayDesign, children: items };
                   items = [tmp9, tmp17];
-                  const tmp23 = React4(metroRequire, obj3);
+                  const tmp23 = unpackModuleId(metroImportAll, obj3);
                   cResult[20] = tmp4.overlayDesign;
                   cResult[21] = tmp9;
                   cResult[22] = tmp17;
@@ -135,7 +157,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
               }
             }
             const obj4 = { source: tmp14, style: tmp16, resizeMode: "contain", onError, accessible: true, accessibilityRole: "image", accessibilityLabel: alt };
-            const tmp19 = metroImportAll(FastImageDefault, obj4);
+            const tmp19 = authStore(FastImageDefault, obj4);
             cResult[15] = alt;
             cResult[16] = onError;
             cResult[17] = tmp14;
@@ -161,7 +183,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   let tmp11Result = null;
   if (null != tmp6Result.src) {
     let src2;
-    const tmp11 = metroImportAll;
+    const tmp11 = authStore;
     const tmp5Result = FastImageDefault;
     if (typeof tmp6Result.src === "string") {
       src2 = { uri: tmp6Result.src };
@@ -170,7 +192,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
       src2 = tmp6Result.src;
     }
     const obj7 = { source: src2, style: items2, resizeMode: "cover", blurRadius: num3, onError: tmp6Result.handleError, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-    items2 = [hasOwnProperty.absoluteFill, tmp6Result.blurred && tmp4.blurredBackground];
+    items2 = [metroImportDefault.absoluteFill, tmp6Result.blurred && tmp4.blurredBackground];
     num3 = undefined;
     if (tmp6Result.blurred) {
       num3 = 4;
@@ -193,19 +215,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   let projectId;
   let src;
   ({ projectId, src, alt, size, onError } = arg0);
-  const tmp = closure_11();
+  const tmp = closure_13();
   const tmp4 = useConjureOverlayBackgroundDefault;
   const tmp4Result = tmp4(projectId, AssetRegistryDefault);
   const obj = conjurePlanOverlayDesign;
   const size2 = obj.conjurePlanOverlayWidgetBox(size);
   let tmp9Result = null;
   const obj2 = { style: tmp.overlayDesign, children: items1 };
-  const tmp6 = React4;
-  const tmp7 = metroRequire;
+  const tmp6 = unpackModuleId;
+  const tmp7 = metroImportAll;
   if (null != tmp4Result.src) {
     let src2;
     const tmp2Result = FastImageDefault;
-    const tmp9 = metroImportAll;
+    const tmp9 = authStore;
     if (typeof tmp4Result.src === "string") {
       src2 = { uri: tmp4Result.src };
       const obj3 = { uri: tmp4Result.src };
@@ -213,7 +235,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
       src2 = tmp4Result.src;
     }
     const obj4 = { source: src2, style: items, resizeMode: "cover", blurRadius: num, onError: tmp4Result.handleError, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-    items = [hasOwnProperty.absoluteFill, tmp4Result.blurred && tmp.blurredBackground];
+    items = [metroImportDefault.absoluteFill, tmp4Result.blurred && tmp.blurredBackground];
     num = undefined;
     if (tmp4Result.blurred) {
       num = 4;
@@ -223,145 +245,1074 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   items1 = [tmp9Result, ];
   const obj5 = { source: { uri: src }, style: items2, resizeMode: "contain", onError, accessible: true, accessibilityRole: "image", accessibilityLabel: alt };
   items2 = [tmp.overlayWidget, { width: size2.width, height: size2.height }];
-  items1[1] = metroImportAll(FastImageDefault, obj5);
+  items1[1] = authStore(FastImageDefault, obj5);
   return tmp6(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanDesign(design) {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanDesign(projectId) {
   let alt;
   let handleError;
-  let obj5;
-  let obj7;
-  let overlayWidgetSize;
-  let projectId;
+  let obj6;
   let src;
-  const obj = react2;
+  let obj = projectId(alt[9]);
   const cResult = obj.c(13);
-  ({ projectId, alt, overlayWidgetSize } = design);
-  design = design.design;
-  const tmp3 = closure_11();
-  const obj2 = useConjureAttachmentImage;
+  const tmp = projectId;
+  projectId = projectId.projectId;
+  const design = projectId.design;
+  alt = projectId.alt;
+  const tmp4 = closure_13();
+  let obj2 = projectId(alt[13]);
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, design.id);
   ({ src, handleError } = conjureAttachmentImage);
-  let tmp5 = null;
+  let tmp6 = null;
   if (!conjureAttachmentImage.gone) {
-    let tmp6;
-    let tmp10Result;
-    if (null != src) {
-      if (null != overlayWidgetSize) {
-        if (cResult[0] === alt) {
-          if (cResult[1] === handleError) {
-            if (cResult[2] === overlayWidgetSize) {
-              if (cResult[3] === projectId) {
-                let tmp13;
-                if (cResult[4] === src) {
-                  tmp13 = cResult[5];
+    if (cResult[0] === alt) {
+      if (cResult[1] === design.id) {
+        let tmp7;
+        let tmp9;
+        let tmp15;
+        if (cResult[2] === projectId) {
+          tmp7 = cResult[3];
+        }
+        const _Symbol = Symbol;
+        if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(tmp2[15]).intl;
+          const stringResult = intl.string(design(alt[16]).TvAPIm);
+          cResult[4] = stringResult;
+          tmp9 = stringResult;
+        } else {
+          tmp9 = cResult[4];
+        }
+        if (cResult[5] === handleError) {
+          if (cResult[6] === src) {
+            let tmp12;
+            if (cResult[7] === tmp4.design) {
+              tmp12 = cResult[8];
+            }
+            if (cResult[9] === alt) {
+              if (cResult[10] === tmp7) {
+                let tmp19;
+                if (cResult[11] === tmp12) {
+                  tmp19 = cResult[12];
                 }
-                tmp6 = tmp13;
+                tmp6 = tmp19;
               }
             }
+            const obj3 = { onPress: tmp7, accessibilityRole: "imagebutton", accessibilityLabel: alt, accessibilityHint: tmp9, children: tmp12 };
+            const tmp22 = closure_10(closure_6, obj3);
+            cResult[9] = alt;
+            cResult[10] = tmp7;
+            cResult[11] = tmp12;
+            cResult[12] = tmp22;
+            tmp19 = tmp22;
           }
         }
-        const obj3 = { projectId, src, alt, size: overlayWidgetSize, onError: handleError };
-        const tmp16 = metroImportAll(closure_12, obj3);
-        cResult[0] = alt;
-        cResult[1] = handleError;
-        cResult[2] = overlayWidgetSize;
-        cResult[3] = projectId;
-        cResult[4] = src;
-        cResult[5] = tmp16;
-        tmp13 = tmp16;
-      }
-      tmp5 = tmp6;
-    }
-    if (cResult[6] === alt) {
-      if (cResult[7] === handleError) {
-        if (cResult[8] === overlayWidgetSize) {
-          if (cResult[9] === src) {
-            if (cResult[10] === tmp3.design) {
-              if (cResult[11] === tmp3.overlayDesign) {
-                tmp6 = cResult[12];
-              }
-            }
-          }
+        if (null == src) {
+          const obj4 = { style: tmp4.design, children: closure_10(closure_5, { size: "small" }) };
+          tmp15 = closure_10(closure_8, obj4);
+        } else {
+          const obj5 = { source: obj6, style: tmp4.design, resizeMode: "contain", onError: handleError };
+          obj6 = { uri: src };
+          tmp15 = closure_10(design(tmp2[12]), obj5);
         }
+        cResult[5] = handleError;
+        cResult[6] = src;
+        cResult[7] = tmp4.design;
+        cResult[8] = tmp15;
+        tmp12 = tmp15;
       }
     }
-    if (null == src) {
-      const items = [tmp3.design, ];
-      let overlayDesign = null != overlayWidgetSize;
-      const tmp11 = metroRequire;
-      if (overlayDesign) {
-        overlayDesign = tmp3.overlayDesign;
-      }
-      items[1] = overlayDesign;
-      const obj4 = { style: items, children: metroImportAll(React3, obj5) };
-      obj5 = { size: "small", accessibilityLabel: alt };
-      tmp10Result = tmp10(tmp11, obj4);
-    } else {
-      const obj6 = { source: obj7, style: tmp3.design, resizeMode: "contain", onError: handleError, accessible: true, accessibilityRole: "image", accessibilityLabel: alt };
-      obj7 = { uri: src };
-      tmp10Result = metroImportAll(FastImageDefault, obj6);
-    }
-    cResult[6] = alt;
-    cResult[7] = handleError;
-    cResult[8] = overlayWidgetSize;
-    cResult[9] = src;
-    cResult[10] = tmp3.design;
-    cResult[11] = tmp3.overlayDesign;
-    cResult[12] = tmp10Result;
-    tmp6 = tmp10Result;
+    const fn = function t() {
+      const items = [];
+      const obj2 = { id: design.id, alt };
+      items[0] = obj2;
+      const obj = openConjureNativeImages;
+      return obj.openConjureNativeImages(projectId, items, 0);
+    };
+    cResult[0] = alt;
+    cResult[1] = design.id;
+    cResult[2] = projectId;
+    cResult[3] = fn;
+    tmp7 = fn;
   }
-  return tmp5;
-}) : (function PlanDesign(design) {
-  let alt;
+  return tmp6;
+}) : (function PlanDesign(projectId) {
+  let intl;
+  let obj5;
+  let tmp7Result;
+  projectId = projectId.projectId;
+  const design = projectId.design;
+  const alt = projectId.alt;
+  const tmp = closure_13();
+  let obj = projectId(alt[13]);
+  const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
+  const src = conjureAttachmentImage.src;
+  let tmp7Result2 = null;
+  const tmp2 = projectId;
+  if (!conjureAttachmentImage.gone) {
+    let obj2 = {
+      onPress() {
+          const items = [];
+          const obj2 = { id: design.id, alt };
+          items[0] = obj2;
+          const obj = openConjureNativeImages;
+          return obj.openConjureNativeImages(projectId, items, 0);
+        },
+      accessibilityRole: "imagebutton",
+      accessibilityLabel: alt,
+      accessibilityHint: intl.string(design(alt[16]).TvAPIm),
+      children: tmp7Result
+    };
+    intl = tmp2(tmp3[15]).intl;
+    const tmp8 = closure_6;
+    const tmp9 = design;
+    if (null == src) {
+      const obj3 = { style: tmp.design, children: closure_10(closure_5, { size: "small" }) };
+      tmp7Result = tmp7(closure_8, obj3);
+    } else {
+      const obj4 = { source: obj5, style: tmp.design, resizeMode: "contain", onError: tmp5 };
+      obj5 = { uri: src };
+      tmp7Result = tmp7(tmp9(tmp3[12]), obj4);
+    }
+    tmp7Result2 = tmp7(tmp8, obj2);
+  }
+  return tmp7Result2;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOverlayDesign(projectId) {
+  let closure_2;
   let handleError;
-  let obj4;
+  let items;
+  let items1;
+  let items2;
+  let labels;
+  let pick;
+  let src;
+  let tmp7;
+  let tmp2 = dependencyMap;
+  let obj = projectId(576);
+  const cResult = obj.c(41);
+  projectId = projectId.projectId;
+  const design = projectId.design;
+  size = projectId.size;
+  const tmp4 = closure_13();
+  dependencyMap = tmp4;
+  let obj2 = projectId(12200);
+  const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, design.id);
+  ({ src, handleError } = conjureAttachmentImage);
+  const gone = conjureAttachmentImage.gone;
+  if (cResult[0] !== (null != src)) {
+    const obj3 = { ready: null != src };
+    cResult[0] = null != src;
+    cResult[1] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[1];
+  }
+  const tmpResult = projectId(12440);
+  const conjurePlanOverlaySlides = tmpResult.useConjurePlanOverlaySlides(tmp7);
+  const slide = conjurePlanOverlaySlides.slide;
+  ({ labels, pick } = conjurePlanOverlaySlides);
+  const hold = conjurePlanOverlaySlides.hold;
+  if (gone) {
+    return null;
+  } else {
+    let tmp10;
+    let tmp13;
+    const _Symbol = Symbol;
+    let str = "react.memo_cache_sentinel";
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(design(3831).mjryK4);
+      cResult[2] = stringResult;
+      tmp10 = stringResult;
+    } else {
+      tmp10 = cResult[2];
+    }
+    const alt = tmp10;
+    const _Symbol2 = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(design(3831)["rPpf5/"]);
+      cResult[3] = stringResult1;
+      tmp13 = stringResult1;
+    } else {
+      tmp13 = cResult[3];
+    }
+    if (cResult[4] === design.id) {
+      let tmp17;
+      let tmp20;
+      let tmp49Result;
+      if (cResult[5] === projectId) {
+        tmp17 = cResult[6];
+      }
+      let tmp19 = tmp13;
+      if (0 === slide) {
+        tmp19 = tmp10;
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl3 = tmp(1125).intl;
+        const stringResult2 = intl3.string(design(3831).TvAPIm);
+        cResult[7] = stringResult2;
+        tmp20 = stringResult2;
+      } else {
+        tmp20 = cResult[7];
+      }
+      if (cResult[8] === handleError) {
+        if (cResult[9] === projectId) {
+          if (cResult[10] === size) {
+            if (cResult[11] === slide) {
+              if (cResult[12] === src) {
+                if (cResult[13] === tmp4.overlayDesign) {
+                  if (cResult[14] === tmp4.overlayFullWidget) {
+                    let tmp23;
+                    if (cResult[15] === tmp4.overlayWidgetSlide) {
+                      tmp23 = cResult[16];
+                    }
+                    if (cResult[17] === hold) {
+                      if (cResult[18] === tmp17) {
+                        if (cResult[19] === tmp19) {
+                          let tmp31;
+                          let tmp35;
+                          let tmp38;
+                          if (cResult[20] === tmp23) {
+                            tmp31 = cResult[21];
+                          }
+                          const _Symbol4 = Symbol;
+                          const slidePicker = tmp4.slidePicker;
+                          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
+                            const intl4 = tmp(1125).intl;
+                            const stringResult3 = intl4.string(design(3831).EH36X6);
+                            cResult[22] = stringResult3;
+                            tmp35 = stringResult3;
+                          } else {
+                            tmp35 = cResult[22];
+                          }
+                          if (cResult[23] === labels) {
+                            if (cResult[24] === pick) {
+                              if (cResult[25] === slide) {
+                                if (cResult[26] === tmp4.slideButton) {
+                                  if (cResult[27] === tmp4.slideButtonActive) {
+                                    tmp38 = cResult[28];
+                                  }
+                                  if (cResult[34] === tmp4.slidePicker) {
+                                    let tmp41;
+                                    if (cResult[35] === tmp38) {
+                                      tmp41 = cResult[36];
+                                    }
+                                    if (cResult[37] === tmp4.stack) {
+                                      if (cResult[38] === tmp31) {
+                                        let tmp45;
+                                        if (cResult[39] === tmp41) {
+                                          tmp45 = cResult[40];
+                                        }
+                                        return tmp45;
+                                      }
+                                    }
+                                    const obj4 = { style: tmp16, children: items };
+                                    items = [, ];
+                                    class F {
+                                      constructor(arg0, arg1) {
+                                        closure_0 = arg1;
+                                        tmp = closure_1_10;
+                                        items = [, ];
+                                        items[0] = closure_2.slideButton;
+                                        tmp3 = slide === arg1;
+                                        slideButtonActive = tmp3;
+                                        tmp2 = closure_1_6;
+                                        if (tmp3) {
+                                          slideButtonActive = closure_2.slideButtonActive;
+                                        }
+                                        obj = {
+                                          style: items,
+                                          onPress() {
+                                                                                  return pick(closure_0);
+                                                                                },
+                                          accessibilityRole: "tab",
+                                          accessibilityState: { selected: tmp3 },
+                                          children: null
+                                        };
+                                        items[1] = slideButtonActive;
+                                        str = "text-muted";
+                                        Text = projectId(closure_2[18]).Text;
+                                        if (tmp3) {
+                                          str = "text-default";
+                                        }
+                                        obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+                                        obj.children = tmp(Text, obj1);
+                                        return tmp(tmp2, obj, projectId);
+                                      }
+                                    }
+                                    items[1] = tmp41;
+                                    const tmp48 = closure_11(closure_8, obj4);
+                                    cResult[37] = tmp4.stack;
+                                    cResult[38] = tmp31;
+                                    cResult[39] = tmp41;
+                                    cResult[40] = tmp48;
+                                    tmp45 = tmp48;
+                                  }
+                                  const obj5 = { style: slidePicker, accessibilityRole: "tablist", accessibilityLabel: tmp35, children: null };
+                                  class F {
+                                    constructor(arg0, arg1) {
+                                      closure_0 = arg1;
+                                      tmp = closure_1_10;
+                                      items = [, ];
+                                      items[0] = closure_2.slideButton;
+                                      tmp3 = slide === arg1;
+                                      slideButtonActive = tmp3;
+                                      tmp2 = closure_1_6;
+                                      if (tmp3) {
+                                        slideButtonActive = closure_2.slideButtonActive;
+                                      }
+                                      obj = {
+                                        style: items,
+                                        onPress() {
+                                                                              return pick(closure_0);
+                                                                            },
+                                        accessibilityRole: "tab",
+                                        accessibilityState: { selected: tmp3 },
+                                        children: null
+                                      };
+                                      items[1] = slideButtonActive;
+                                      str = "text-muted";
+                                      Text = projectId(closure_2[18]).Text;
+                                      if (tmp3) {
+                                        str = "text-default";
+                                      }
+                                      obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+                                      obj.children = tmp(Text, obj1);
+                                      return tmp(tmp2, obj, projectId);
+                                    }
+                                  }
+                                  const tmp44 = closure_10(closure_8, obj5);
+                                  cResult[34] = tmp4.slidePicker;
+                                  cResult[35] = tmp38;
+                                  cResult[36] = tmp44;
+                                  tmp41 = tmp44;
+                                }
+                              }
+                            }
+                          }
+                          if (cResult[29] === pick) {
+                            if (cResult[30] === slide) {
+                              if (cResult[31] === tmp4.slideButton) {
+                                let tmp39;
+                                if (cResult[32] === tmp4.slideButtonActive) {
+                                  tmp39 = cResult[33];
+                                }
+                                const mapped = labels.map(tmp39);
+                                cResult[23] = labels;
+                                cResult[24] = pick;
+                                class F {
+                                  constructor(arg0, arg1) {
+                                    closure_0 = arg1;
+                                    tmp = closure_1_10;
+                                    items = [, ];
+                                    items[0] = closure_2.slideButton;
+                                    tmp3 = slide === arg1;
+                                    slideButtonActive = tmp3;
+                                    tmp2 = closure_1_6;
+                                    if (tmp3) {
+                                      slideButtonActive = closure_2.slideButtonActive;
+                                    }
+                                    obj = {
+                                      style: items,
+                                      onPress() {
+                                                                          return pick(closure_0);
+                                                                        },
+                                      accessibilityRole: "tab",
+                                      accessibilityState: { selected: tmp3 },
+                                      children: null
+                                    };
+                                    items[1] = slideButtonActive;
+                                    str = "text-muted";
+                                    Text = projectId(closure_2[18]).Text;
+                                    if (tmp3) {
+                                      str = "text-default";
+                                    }
+                                    obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+                                    obj.children = tmp(Text, obj1);
+                                    return tmp(tmp2, obj, projectId);
+                                  }
+                                }
+                                cResult[26] = tmp4.slideButton;
+                                cResult[27] = tmp4.slideButtonActive;
+                                cResult[28] = mapped;
+                                tmp38 = mapped;
+                              }
+                            }
+                          }
+                          class F {
+                            constructor(arg0, arg1) {
+                              closure_0 = arg1;
+                              tmp = closure_1_10;
+                              items = [, ];
+                              items[0] = closure_2.slideButton;
+                              tmp3 = slide === arg1;
+                              slideButtonActive = tmp3;
+                              tmp2 = closure_1_6;
+                              if (tmp3) {
+                                slideButtonActive = closure_2.slideButtonActive;
+                              }
+                              obj = {
+                                style: items,
+                                onPress() {
+                                                              return pick(closure_0);
+                                                            },
+                                accessibilityRole: "tab",
+                                accessibilityState: { selected: tmp3 },
+                                children: null
+                              };
+                              items[1] = slideButtonActive;
+                              str = "text-muted";
+                              Text = projectId(closure_2[18]).Text;
+                              if (tmp3) {
+                                str = "text-default";
+                              }
+                              obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+                              obj.children = tmp(Text, obj1);
+                              return tmp(tmp2, obj, projectId);
+                            }
+                          }
+                          cResult[29] = pick;
+                          cResult[30] = slide;
+                          cResult[31] = tmp4.slideButton;
+                          cResult[32] = tmp4.slideButtonActive;
+                          cResult[33] = F;
+                          tmp39 = F;
+                        }
+                      }
+                    }
+                    const obj6 = { onPressIn: hold, onPress: tmp17, accessibilityRole: "imagebutton", accessibilityLabel: null, accessibilityHint: tmp20, children: tmp23 };
+                    const tmp34 = closure_10(closure_6, obj6);
+                    cResult[17] = hold;
+                    cResult[18] = tmp17;
+                    cResult[19] = tmp19;
+                    cResult[20] = tmp23;
+                    cResult[21] = tmp34;
+                    tmp31 = tmp34;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if (null == src) {
+        const obj7 = { style: items1, children: closure_10(alt, { size: "small" }) };
+        items1 = [, ];
+        ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp4);
+        class F {
+          constructor(arg0, arg1) {
+            closure_0 = arg1;
+            tmp = closure_1_10;
+            items = [, ];
+            items[0] = closure_2.slideButton;
+            tmp3 = slide === arg1;
+            slideButtonActive = tmp3;
+            tmp2 = closure_1_6;
+            if (tmp3) {
+              slideButtonActive = closure_2.slideButtonActive;
+            }
+            obj = {
+              style: items,
+              onPress() {
+                          return pick(closure_0);
+                        },
+              accessibilityRole: "tab",
+              accessibilityState: { selected: tmp3 },
+              children: null
+            };
+            items[1] = slideButtonActive;
+            str = "text-muted";
+            Text = projectId(closure_2[18]).Text;
+            if (tmp3) {
+              str = "text-default";
+            }
+            obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+            obj.children = tmp(Text, obj1);
+            return tmp(tmp2, obj, projectId);
+          }
+        }
+        tmp49Result = closure_10(closure_8, obj7);
+      } else if (0 === slide) {
+        const obj8 = { style: items2, children: closure_10(design(5670), tmp28) };
+        items2 = [, ];
+        ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp4);
+        class F {
+          constructor(arg0, arg1) {
+            closure_0 = arg1;
+            tmp = closure_1_10;
+            items = [, ];
+            items[0] = closure_2.slideButton;
+            tmp3 = slide === arg1;
+            slideButtonActive = tmp3;
+            tmp2 = closure_1_6;
+            if (tmp3) {
+              slideButtonActive = closure_2.slideButtonActive;
+            }
+            obj = {
+              style: items,
+              onPress() {
+                          return pick(closure_0);
+                        },
+              accessibilityRole: "tab",
+              accessibilityState: { selected: tmp3 },
+              children: null
+            };
+            items[1] = slideButtonActive;
+            str = "text-muted";
+            Text = projectId(closure_2[18]).Text;
+            if (tmp3) {
+              str = "text-default";
+            }
+            obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+            obj.children = tmp(Text, obj1);
+            return tmp(tmp2, obj, projectId);
+          }
+        }
+        const obj9 = { uri: src };
+        tmp28[0] = obj9;
+        tmp28[1] = tmp4.overlayFullWidget;
+        tmp28[3] = handleError;
+        tmp49Result = tmp49(closure_8, obj8);
+      } else {
+        class F {
+          constructor(arg0, arg1) {
+            closure_0 = arg1;
+            tmp = closure_1_10;
+            items = [, ];
+            items[0] = closure_2.slideButton;
+            tmp3 = slide === arg1;
+            slideButtonActive = tmp3;
+            tmp2 = closure_1_6;
+            if (tmp3) {
+              slideButtonActive = closure_2.slideButtonActive;
+            }
+            obj = {
+              style: items,
+              onPress() {
+                          return pick(closure_0);
+                        },
+              accessibilityRole: "tab",
+              accessibilityState: { selected: tmp3 },
+              children: null
+            };
+            items[1] = slideButtonActive;
+            str = "text-muted";
+            Text = projectId(closure_2[18]).Text;
+            if (tmp3) {
+              str = "text-default";
+            }
+            obj1 = { variant: "text-xs/medium", color: str, children: projectId };
+            obj.children = tmp(Text, obj1);
+            return tmp(tmp2, obj, projectId);
+          }
+        }
+      }
+      cResult[8] = handleError;
+      cResult[9] = projectId;
+      cResult[10] = size;
+      cResult[11] = slide;
+      cResult[12] = src;
+      cResult[13] = tmp4.overlayDesign;
+      cResult[14] = tmp4.overlayFullWidget;
+      cResult[15] = tmp4.overlayWidgetSlide;
+      cResult[16] = tmp49Result;
+      tmp23 = tmp49Result;
+    }
+    const fn = function k() {
+      const items = [];
+      const obj2 = { id: design.id, alt };
+      items[0] = obj2;
+      const obj = openConjureNativeImages;
+      return obj.openConjureNativeImages(projectId, items, 0);
+    };
+    cResult[4] = design.id;
+    cResult[5] = projectId;
+    cResult[6] = fn;
+    tmp17 = fn;
+  }
+}) : (function PlanOverlayDesign(projectId) {
+  let alt;
+  let c4;
+  let closure_2;
+  let gone;
+  let handleError;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items2;
+  let labels;
+  let obj8;
+  let obj9;
+  let src;
+  let tmp12Result;
+  let tmp15;
+  projectId = projectId.projectId;
+  const design = projectId.design;
+  c4 = undefined;
+  let c5;
+  size = projectId.size;
+  const tmp = closure_13();
+  dependencyMap = tmp;
+  let tmp2 = projectId;
+  const tmp3 = dependencyMap;
+  let obj = projectId(12200);
+  const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
+  ({ src, handleError, gone } = conjureAttachmentImage);
+  let obj2 = projectId(12440);
+  const obj3 = { ready: null != src };
+  const conjurePlanOverlaySlides = obj2.useConjurePlanOverlaySlides(obj3);
+  const slide = conjurePlanOverlaySlides.slide;
+  ({ labels, pick: c4 } = conjurePlanOverlaySlides);
+  if (gone) {
+    return null;
+  } else {
+    const intl = tmp2(1125).intl;
+    const stringResult = intl.string(design(3831).mjryK4);
+    c5 = stringResult;
+    const intl2 = tmp2(1125).intl;
+    const stringResult1 = intl2.string(design(3831)["rPpf5/"]);
+    const obj4 = { style: tmp.stack, children: items2 };
+    const obj5 = {
+      onPressIn: tmp6,
+      onPress() {
+          const items = [];
+          const obj2 = { id: design.id, alt };
+          items[0] = obj2;
+          const obj = openConjureNativeImages;
+          return obj.openConjureNativeImages(projectId, items, 0);
+        },
+      accessibilityRole: "imagebutton",
+      accessibilityLabel: tmp15,
+      accessibilityHint: intl3.string(design(3831).TvAPIm),
+      children: tmp12Result
+    };
+    tmp15 = stringResult1;
+    const tmp10 = closure_11;
+    const tmp13 = closure_6;
+    if (0 === slide) {
+      tmp15 = stringResult;
+    }
+    intl3 = tmp2(1125).intl;
+    if (null == src) {
+      const obj6 = { style: items, children: closure_10(c5, { size: "small" }) };
+      items = [, ];
+      ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp);
+      tmp12Result = tmp12(tmp11, obj6);
+    } else if (0 === slide) {
+      const obj7 = { style: items1, children: closure_10(design(5670), obj8) };
+      items1 = [, ];
+      ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp);
+      obj8 = { source: obj9, style: tmp.overlayFullWidget, resizeMode: "contain", onError: handleError };
+      obj9 = { uri: src };
+      tmp12Result = tmp12(tmp11, obj7);
+    } else {
+      const obj10 = { projectId, src, alt: stringResult1, size, onError: handleError };
+      tmp12Result = tmp12(closure_14, obj10);
+    }
+    items2 = [closure_10(tmp13, obj5), ];
+    const obj11 = {
+      style: tmp.slidePicker,
+      accessibilityRole: "tablist",
+      accessibilityLabel: intl4.string(design(3831).EH36X6),
+      children: labels.map((children, index) => {
+          let Text;
+          let obj2;
+          let closure_0 = index;
+          const items = [closure_2.slideButton, ];
+          let slideButtonActive = tmp3;
+          const tmp2 = closure_1_6;
+          if (slide === index) {
+            slideButtonActive = closure_2.slideButtonActive;
+          }
+          items[1] = slideButtonActive;
+          let str = "text-muted";
+          const obj = {
+            style: items,
+            onPress() {
+              return c4(index);
+            },
+            accessibilityRole: "tab",
+            accessibilityState: { selected: slide === index },
+            children: closure_1_10(Text, obj2)
+          };
+          Text = projectId(closure_2[18]).Text;
+          if (slide === index) {
+            str = "text-default";
+          }
+          obj2 = { variant: "text-xs/medium", color: str, children };
+          return closure_1_10(tmp2, obj, children);
+        })
+    };
+    intl4 = tmp2(1125).intl;
+    items2[1] = closure_10(closure_8, obj11);
+    return tmp10(closure_8, obj4);
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanReference(arg0) {
+  let alt;
+  let closure_129_0;
+  let handleError;
+  let id;
   let obj6;
-  let overlayWidgetSize;
+  let onOpen;
   let projectId;
   let src;
-  ({ projectId, alt, overlayWidgetSize } = design);
-  design = design.design;
-  const tmp = closure_11();
-  const obj = useConjureAttachmentImage;
-  const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
+  let tmp6;
+  let tmp = dependencyMap;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ alt, onOpen } = arg0);
+  ({ projectId, id } = arg0);
+  const tmp3 = closure_13();
+  const obj2 = useConjureAttachmentImage;
+  const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, id);
   ({ src, handleError } = conjureAttachmentImage);
-  let tmp4 = null;
-  if (!conjureAttachmentImage.gone) {
-    let tmp8Result;
-    if (null != src) {
-      if (null != overlayWidgetSize) {
-        const obj2 = { projectId, src, alt, size: overlayWidgetSize, onError: handleError };
-        tmp8Result = metroImportAll(closure_12, obj2);
-      }
-      tmp4 = tmp8Result;
+  const gone = conjureAttachmentImage.gone;
+  [tmp6, closure_129_0] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  if (gone) {
+    return null;
+  } else {
+    let tmp8;
+    let num2 = 64;
+    if (null != tmp6) {
+      const _Math = Math;
+      num2 = Math.min(192, 64 * tmp6);
     }
-    if (null == src) {
-      const items = [tmp.design, ];
-      let overlayDesign = null != overlayWidgetSize;
-      const tmp9 = metroRequire;
-      if (overlayDesign) {
-        overlayDesign = tmp.overlayDesign;
-      }
-      items[1] = overlayDesign;
-      const obj3 = { style: items, children: metroImportAll(React3, obj4) };
-      obj4 = { size: "small", accessibilityLabel: alt };
-      tmp8Result = tmp8(tmp9, obj3);
+    if (cResult[0] !== num2) {
+      const obj3 = { width: num2 };
+      cResult[0] = num2;
+      cResult[1] = obj3;
+      tmp8 = obj3;
     } else {
-      const obj5 = { source: obj6, style: tmp.design, resizeMode: "contain", onError: handleError, accessible: true, accessibilityRole: "image", accessibilityLabel: alt };
-      obj6 = { uri: src };
-      tmp8Result = metroImportAll(FastImageDefault, obj5);
+      tmp8 = cResult[1];
+    }
+    if (cResult[2] === tmp3.reference) {
+      let tmp9;
+      if (cResult[3] === tmp8) {
+        tmp9 = cResult[4];
+      }
+      if (cResult[5] === handleError) {
+        if (cResult[6] === src) {
+          let tmp10;
+          if (cResult[7] === tmp3.referenceImage) {
+            tmp10 = cResult[8];
+          }
+          if (cResult[9] === alt) {
+            if (cResult[10] === onOpen) {
+              if (cResult[11] === tmp9) {
+                let tmp14;
+                if (cResult[12] === tmp10) {
+                  tmp14 = cResult[13];
+                }
+                return tmp14;
+              }
+            }
+          }
+          const obj4 = { onPress: onOpen, style: tmp9, accessibilityRole: "imagebutton", accessibilityLabel: alt, children: tmp10 };
+          const tmp17 = authStore(metroRequire, obj4);
+          cResult[9] = alt;
+          cResult[10] = onOpen;
+          cResult[11] = tmp9;
+          cResult[12] = tmp10;
+          cResult[13] = tmp17;
+          tmp14 = tmp17;
+        }
+      }
+      let tmp11 = null;
+      if (null != src) {
+        const obj5 = {
+          source: obj6,
+          style: tmp3.referenceImage,
+          resizeMode: "contain",
+          onLoad(nativeEvent) {
+                  nativeEvent = nativeEvent.nativeEvent;
+                  let source = nativeEvent;
+                  if ("source" in nativeEvent) {
+                    source = nativeEvent.source;
+                  }
+                  const tmp = source.width > 0 && source.height > 0;
+                  if (tmp) {
+                    closure_1_0(source.width / source.height);
+                  }
+                },
+          onError: handleError,
+          accessible: false
+        };
+        obj6 = { uri: src };
+        tmp11 = authStore(FastImageDefault, obj5);
+      }
+      cResult[5] = handleError;
+      cResult[6] = src;
+      cResult[7] = tmp3.referenceImage;
+      cResult[8] = tmp11;
+      tmp10 = tmp11;
+    }
+    const items = [tmp3.reference, tmp8];
+    cResult[2] = tmp3.reference;
+    cResult[3] = tmp8;
+    cResult[4] = items;
+    tmp9 = items;
+  }
+}) : (function PlanReference(arg0) {
+  let alt;
+  let c0;
+  let gone;
+  let handleError;
+  let id;
+  let items;
+  let obj5;
+  let onOpen;
+  let projectId;
+  let tmp5;
+  let tmp7Result;
+  c0 = undefined;
+  ({ projectId, id, alt, onOpen } = arg0);
+  let tmp = closure_13();
+  const obj = useConjureAttachmentImage;
+  const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, id);
+  const src = conjureAttachmentImage.src;
+  ({ gone, handleError } = conjureAttachmentImage);
+  [tmp5, c0] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  if (gone) {
+    return null;
+  } else {
+    let num2 = 64;
+    if (null != tmp5) {
+      const _Math = Math;
+      num2 = Math.min(192, 64 * tmp5);
+    }
+    const obj2 = { onPress: onOpen, style: items, accessibilityRole: "imagebutton", accessibilityLabel: alt, children: tmp7Result };
+    items = [tmp.reference, ];
+    const obj3 = { width: num2 };
+    items[1] = obj3;
+    tmp7Result = null;
+    const tmp8 = metroRequire;
+    if (null != src) {
+      const obj4 = {
+        source: obj5,
+        style: tmp.referenceImage,
+        resizeMode: "contain",
+        onLoad(nativeEvent) {
+              nativeEvent = nativeEvent.nativeEvent;
+              let source = nativeEvent;
+              if ("source" in nativeEvent) {
+                source = nativeEvent.source;
+              }
+              const tmp = source.width > 0 && source.height > 0;
+              if (tmp) {
+                _undefined(source.width / source.height);
+              }
+            },
+        onError: handleError,
+        accessible: false
+      };
+      obj5 = { uri: src };
+      tmp7Result = tmp7(FastImageDefault, obj4);
+    }
+    return authStore(tmp8, obj2);
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanLook(projectId) {
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let tmp11;
+  let obj = projectId(576);
+  const cResult = obj.c(17);
+  projectId = projectId.projectId;
+  const proposal = projectId.proposal;
+  const tmp4 = closure_13();
+  if (cResult[0] === projectId) {
+    if (cResult[1] === proposal) {
+      let tmp5;
+      let tmp6;
+      let tmp7;
+      let tmp8;
+      let tmp9;
+      if (cResult[2] === tmp4) {
+        tmp5 = cResult[3];
+        tmp6 = cResult[4];
+        tmp7 = cResult[5];
+        tmp8 = cResult[6];
+        tmp9 = cResult[7];
+      }
+      const _Symbol = Symbol;
+      if (tmp9 === Symbol.for("react.early_return_sentinel")) {
+        if (cResult[12] === tmp5) {
+          if (cResult[13] === tmp6) {
+            if (cResult[14] === tmp7) {
+              let tmp27;
+              if (cResult[15] === tmp8) {
+                tmp27 = cResult[16];
+              }
+              tmp9 = tmp27;
+            }
+          }
+        }
+        const obj2 = { style: tmp6, children: items };
+        items = [tmp7, tmp8];
+        const tmp29 = closure_11(tmp5, obj2);
+        cResult[12] = tmp5;
+        cResult[13] = tmp6;
+        cResult[14] = tmp7;
+        cResult[15] = tmp8;
+        cResult[16] = tmp29;
+        tmp27 = tmp29;
+      }
+      return tmp9;
     }
   }
-  return tmp4;
+  const forResult = Symbol.for("react.early_return_sentinel");
+  const tmpResult = projectId(12435);
+  const result = tmpResult.conjurePlanReferenceImages(proposal);
+  importDefault = result;
+  if (null != proposal.style) {
+    let tmp16;
+    if (cResult[8] !== proposal.style) {
+      let stringResult = null;
+      if (null != proposal.style) {
+        const intl = tmp(1125).intl;
+        stringResult = intl.string(tmp(12435).CONJURE_PLAN_STYLE_LABELS[proposal.style]);
+      }
+      cResult[8] = proposal.style;
+      cResult[9] = stringResult;
+      tmp16 = stringResult;
+    } else {
+      tmp16 = cResult[9];
+    }
+    const look = tmp4.look;
+    if (cResult[10] !== tmp16) {
+      let tmp20 = null;
+      if (null != tmp16) {
+        const obj3 = { label: tmp16, items: items1, size: "sm", variant: "filter" };
+        items1 = [{ id: "style", label: tmp16 }];
+        const obj4 = { id: "style", label: tmp16 };
+        tmp20 = closure_10(tmp(12236).TagGroup, obj3);
+      }
+      cResult[10] = tmp16;
+      cResult[11] = tmp20;
+    }
+    if (result.length > 0) {
+      const obj5 = { style: tmp4.stack, children: items2 };
+      const obj6 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(_modDef3831.ubBJcy) };
+      const Text = tmp(5235).Text;
+      intl2 = tmp(1125).intl;
+      items2 = [closure_10(Text, obj6), ];
+      const obj7 = {
+        style: tmp4.referenceList,
+        children: result.map((alt, index) => {
+              projectId = index;
+              const id = alt.id;
+              let obj = {
+                projectId,
+                id,
+                alt: alt.alt,
+                onOpen() {
+                  const obj = openConjureNativeImages;
+                  return obj.openConjureNativeImages(projectId, importDefault, index);
+                }
+              };
+              return closure_1_10(closure_1_17, obj, id);
+            })
+      };
+      items2[1] = closure_10(closure_8, obj7);
+      closure_11(tmp18, obj5);
+    }
+    tmp11 = forResult;
+  } else {
+    tmp11 = null;
+  }
+  cResult[0] = projectId;
+  cResult[1] = proposal;
+  cResult[2] = tmp4;
+  cResult[3] = tmp15;
+  cResult[4] = tmp14;
+  cResult[5] = tmp13;
+  cResult[6] = tmp12;
+  cResult[7] = tmp11;
+  tmp9 = tmp11;
+  tmp8 = tmp12;
+  tmp7 = tmp13;
+  tmp6 = tmp14;
+  tmp5 = tmp15;
+}) : (function PlanLook(arg0) {
+  let c1;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let proposal;
+  let require;
+  ({ projectId: require, proposal } = arg0);
+  const tmp = closure_13();
+  let obj = conjurePlanDesign;
+  const result = obj.conjurePlanReferenceImages(proposal);
+  importDefault = result;
+  if (null == proposal.style) {
+    if (0 === result.length) {
+      return null;
+    }
+  }
+  let stringResult = null;
+  if (null != proposal.style) {
+    const intl = tmp2(1125).intl;
+    stringResult = intl.string(tmp2(12435).CONJURE_PLAN_STYLE_LABELS[proposal.style]);
+  }
+  let tmp7 = null;
+  const obj2 = { style: tmp.look, children: items1 };
+  if (null != stringResult) {
+    const obj3 = { label: stringResult, items, size: "sm", variant: "filter" };
+    items = [{ id: "style", label: stringResult }];
+    const obj4 = { id: "style", label: stringResult };
+    tmp7 = closure_10(tmp2(12236).TagGroup, obj3);
+  }
+  items1 = [tmp7, ];
+  let tmp5Result = null;
+  if (result.length > 0) {
+    const obj5 = { style: tmp.stack, children: items2 };
+    const obj6 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(_modDef3831.ubBJcy) };
+    const Text = tmp2(5235).Text;
+    intl2 = tmp2(1125).intl;
+    items2 = [closure_10(Text, obj6), ];
+    const obj7 = {
+      style: tmp.referenceList,
+      children: result.map((alt, index) => {
+          const id = alt.id;
+          projectId = index;
+          let obj = {
+            projectId,
+            id,
+            alt: alt.alt,
+            onOpen() {
+              const obj = openConjureNativeImages;
+              return obj.openConjureNativeImages(require, c1, index);
+            }
+          };
+          return closure_1_10(closure_1_17, obj, id);
+        })
+    };
+    items2[1] = closure_10(closure_8, obj7);
+    tmp5Result = tmp5(tmp6, obj5);
+  }
+  items1[1] = tmp5Result;
+  return closure_11(closure_8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanProposalCard(projectId) {
-  let conjurePlanWidget;
   let expanded;
   let onApprove;
   let onToggleExpanded;
+  let stack;
   let superseded;
   let tmp15;
   let tmp17;
@@ -371,12 +1322,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   let tmp5;
   let version;
   const tmp = projectId;
-  let obj = projectId(conjurePlanWidget[8]);
-  const cResult = obj.c(69);
+  let obj = projectId(576);
+  const cResult = obj.c(74);
   projectId = projectId.projectId;
   const proposal = projectId.proposal;
   ({ version, superseded, expanded, onToggleExpanded, onApprove } = projectId);
-  closure_11();
+  dependencyMap = closure_13();
+  const tmp4 = closure_13();
   if (cResult[0] !== proposal.summary) {
     const str = proposal.summary;
     const trimmed = str.trim();
@@ -399,29 +1351,29 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   }
   if (cResult[4] !== tmp5) {
     let tmp10 = proposal;
-    let obj2 = proposal(tmp2[13]);
-    const parsed = obj2.parse(tmp5, true, tmp(tmp2[14]).CONJURE_MARKUP_OPTIONS);
+    let obj2 = proposal(5706);
+    const parsed = obj2.parse(tmp5, true, tmp(12248).CONJURE_MARKUP_OPTIONS);
     cResult[4] = tmp5;
     cResult[5] = parsed;
   }
-  const tmpResult = tmp(conjurePlanWidget[15]);
+  const tmpResult = tmp(12441);
   const conjurePlanSlashCommandNames = tmpResult.useConjurePlanSlashCommandNames(proposal.commands);
-  const tmpResult6 = tmp(conjurePlanWidget[16]);
-  conjurePlanWidget = tmpResult6.useConjurePlanWidget(projectId, proposal);
-  const tmpResult7 = tmp(conjurePlanWidget[17]);
+  const tmpResult6 = tmp(12443);
+  const conjurePlanWidget = tmpResult6.useConjurePlanWidget(projectId, proposal);
+  const tmpResult7 = tmp(12446);
   const botExchanges = tmpResult7.useConjurePlanBotExchanges(proposal).botExchanges;
-  const tmpResult8 = tmp(conjurePlanWidget[17]);
+  const tmpResult8 = tmp(12446);
   const conjurePlanCommandExchanges = tmpResult8.useConjurePlanCommandExchanges(proposal);
   if (cResult[6] !== proposal) {
-    const tmpResult9 = tmp(conjurePlanWidget[18]);
-    const result = tmpResult9.conjurePlanDesignExperienceId(proposal);
+    const tmpResult9 = tmp(12433);
+    const result = tmpResult9.conjurePlanDesignPreviews(proposal);
     cResult[6] = proposal;
     cResult[7] = result;
     tmp15 = result;
   } else {
     tmp15 = cResult[7];
   }
-  let closure_5 = tmp15;
+  let ui = tmp15;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ConjureProjectStore];
     cResult[8] = items;
@@ -430,9 +1382,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     tmp17 = cResult[8];
   }
   if (cResult[9] !== projectId) {
-    class B {
+    class W {
       constructor() {
-        project = closure_7.getProject(projectId);
+        project = closure_9.getProject(projectId);
         name = undefined;
         if (project != null) {
           name = project.name;
@@ -440,16 +1392,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
         return name;
       }
     }
-    const items1 = [projectId];
+    let items1 = [projectId];
     cResult[9] = projectId;
-    cResult[10] = B;
+    cResult[10] = W;
     cResult[11] = items1;
     tmp20 = items1;
-    tmp19 = B;
+    tmp19 = W;
   } else {
-    class B {
+    class W {
       constructor() {
-        project = closure_7.getProject(projectId);
+        project = closure_9.getProject(projectId);
         name = undefined;
         if (project != null) {
           name = project.name;
@@ -459,12 +1411,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
     tmp20 = cResult[11];
   }
-  const tmpResult10 = tmp(conjurePlanWidget[19]);
+  const tmpResult10 = tmp(504);
   const stateFromStores = tmpResult10.useStateFromStores(tmp17, tmp19, tmp20);
   if (cResult[12] === botExchanges) {
-    class B {
+    class W {
       constructor() {
-        project = closure_7.getProject(projectId);
+        project = closure_9.getProject(projectId);
         name = undefined;
         if (project != null) {
           name = project.name;
@@ -474,7 +1426,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
   }
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class H {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -485,10 +1437,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
         return tmp;
       }
     }
-    cResult[16] = F;
-    tmp23 = F;
+    cResult[16] = H;
+    tmp23 = H;
   } else {
-    class F {
+    class H {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -501,7 +1453,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
   }
   if (cResult[17] === botExchanges) {
-    class F {
+    class H {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -515,7 +1467,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     const experiences = proposal.experiences;
     const _Map = Map;
     if (experiences == null) {
-      class F {
+      class H {
         constructor(arg0) {
           kind = projectId.kind;
           tmp = "bot" === kind;
@@ -530,26 +1482,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     const found = experiences.filter(tmp23);
     const self = this;
     const self2 = this;
-    const _Map1 = new _Map(found.map(G));
+    const _Map1 = new _Map(found.map(X));
     cResult[12] = botExchanges;
     cResult[13] = conjurePlanCommandExchanges;
     cResult[14] = proposal.experiences;
     cResult[15] = _Map1;
   }
-  class G {
+  class X {
     constructor(arg0) {
       items = [, ];
       items[0] = projectId.id;
-      obj = closure_0(closure_2[20]);
-      items[1] = obj.getConjurePlanSectionBotExchanges(projectId, botExchanges, closure_4);
+      obj = closure_0(closure_2[27]);
+      items[1] = obj.getConjurePlanSectionBotExchanges(projectId, botExchanges, closure_5);
       return items;
     }
   }
   cResult[17] = botExchanges;
   cResult[18] = conjurePlanCommandExchanges;
-  cResult[19] = G;
+  cResult[19] = X;
 }) : (function ConjurePlanProposalCard(projectId) {
-  let closure_3;
+  let closure_4;
   let intl3;
   let intl4;
   let intl5;
@@ -560,8 +1512,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   let items7;
   let obj12;
   let obj14;
-  let obj18;
   let obj19;
+  let obj20;
+  let stack;
   let superseded;
   let tmp10Result;
   let tmp12Result;
@@ -581,10 +1534,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   react = undefined;
   let botExchanges;
   let conjurePlanCommandExchanges;
-  let closure_6;
-  let closure_7;
+  let ui;
+  let closure_8;
   const onToggleExpanded = projectId.onToggleExpanded;
-  const tmp = closure_11();
+  const tmp = closure_13();
+  dependencyMap = tmp;
   const str = proposal.summary;
   const trimmed = str.trim();
   let str3;
@@ -599,18 +1553,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     const obj = MarkupUtilsDefault;
     return obj.parse(trimmed, true, ConjureNativeMarkdown.CONJURE_MARKUP_OPTIONS);
   }, items);
-  let obj = projectId(trimmed[15]);
+  let obj = projectId(12441);
   const conjurePlanSlashCommandNames = obj.useConjurePlanSlashCommandNames(proposal.commands);
-  let obj2 = projectId(trimmed[16]);
+  let obj2 = projectId(12443);
   react = obj2.useConjurePlanWidget(projectId, proposal);
-  let obj3 = projectId(trimmed[17]);
+  let obj3 = projectId(12446);
   botExchanges = obj3.useConjurePlanBotExchanges(proposal).botExchanges;
-  let obj4 = projectId(trimmed[17]);
+  let obj4 = projectId(12446);
   conjurePlanCommandExchanges = obj4.useConjurePlanCommandExchanges(proposal);
-  let obj5 = projectId(trimmed[18]);
-  closure_6 = obj5.conjurePlanDesignExperienceId(proposal);
-  let obj6 = projectId(trimmed[19]);
-  const items1 = [closure_7];
+  let obj5 = projectId(12433);
+  ui = obj5.conjurePlanDesignPreviews(proposal);
+  let obj6 = projectId(504);
+  let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStores = obj6.useStateFromStores(items1, () => {
     const project = ConjureProjectStore.getProject(projectId);
@@ -621,7 +1575,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     return name;
   }, items2);
   const items3 = [proposal.experiences, botExchanges, conjurePlanCommandExchanges];
-  closure_7 = react.useMemo(() => {
+  closure_8 = react.useMemo(() => {
     let experiences = proposal.experiences;
     const _Map = Map;
     if (experiences == null) {
@@ -633,35 +1587,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     });
     const _Map1 = new _Map(found.map((id) => {
       const items = [id.id, ];
-      const obj = projectId(trimmed[20]);
+      const obj = projectId(stack[27]);
       items[1] = obj.getConjurePlanSectionBotExchanges(id, botExchanges, conjurePlanCommandExchanges);
       return items;
     }));
     return _Map1;
   }, items3);
   let tmp10 = proposal;
-  const obj7 = { style: tmp.surface, children: null };
+  let obj7 = { style: tmp.surface, children: null };
   const obj8 = { style: tmp.content, children: null };
-  const tmp11 = proposal(trimmed[32]);
+  const tmp11 = proposal(12188);
   if (superseded) {
     let formatToPlainStringResult;
     if (null != version) {
-      const intl2 = tmp4(tmp5[21]).intl;
+      const intl2 = tmp4(1125).intl;
       const obj9 = { version };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp10(tmp5[26]).YZ3qJs, obj9);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp10(3831).YZ3qJs, obj9);
     }
-    const obj10 = { title: formatToPlainStringResult, meta: tmp12Result, superseded, expanded: flag, onToggleExpanded, showLabel: intl4.string(tmp10(trimmed[26]).yD8EJS), hideLabel: intl5.string(tmp10(trimmed[26]).nSPGNb), children: closure_8(tmp10Result, obj12) };
+    const obj10 = { title: formatToPlainStringResult, meta: tmp12Result, superseded, expanded: flag, onToggleExpanded, showLabel: intl4.string(tmp10(3831).yD8EJS), hideLabel: intl5.string(tmp10(3831).nSPGNb), children: closure_10(tmp10Result, obj12) };
     tmp12Result = null;
     if (superseded) {
-      const obj11 = { children: intl3.string(tmp10(trimmed[26]).hF2c41) };
-      const ConjureNativeCollapsibleMeta = tmp4(tmp5[27]).ConjureNativeCollapsibleMeta;
-      intl3 = tmp4(tmp5[21]).intl;
+      const obj11 = { children: intl3.string(tmp10(3831).hF2c41) };
+      const ConjureNativeCollapsibleMeta = tmp4(12431).ConjureNativeCollapsibleMeta;
+      intl3 = tmp4(1125).intl;
       tmp12Result = tmp12(ConjureNativeCollapsibleMeta, obj11);
     }
-    intl4 = tmp4(tmp5[21]).intl;
-    intl5 = tmp4(tmp5[21]).intl;
+    intl4 = tmp4(1125).intl;
+    intl5 = tmp4(1125).intl;
     let str4 = stateFromStores;
-    tmp10Result = tmp10(trimmed[30]);
+    tmp10Result = tmp10(12456);
     if (stateFromStores == null) {
       let experiences = proposal.experiences;
       let name;
@@ -679,22 +1633,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     let tmp12Result2 = null;
     obj12 = {
       appName: str4,
-      intro: closure_9(tmp20, obj19),
+      intro: closure_11(tmp20, obj20),
       proposal,
       renderPreview(kind) {
+          let items;
           let obj5;
-          let obj6;
           let string;
+          let tmp38;
           kind = kind.kind;
           if ("frame" !== kind) {
             if ("overlay_widget" !== kind) {
               if ("user_widget" === kind) {
                 let tmp15 = null;
-                if (null != closure_3) {
+                if (null != closure_4) {
                   const obj2 = {};
                   const tmp19 = ConjurePlanWidgetDefault;
                   const merged = Object.assign(tmp14);
-                  tmp15 = metroImportAll(tmp19, obj2);
+                  tmp15 = authStore(tmp19, obj2);
                 }
                 return tmp15;
               } else if ("automod" === kind) {
@@ -703,88 +1658,111 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                   tmp10 = null;
                   if (proposal.automod.examples.length > 0) {
                     const obj3 = { automod: proposal.automod };
-                    tmp10 = metroImportAll(ConjurePlanAutomodExamplesDefault, obj3);
+                    tmp10 = authStore(ConjurePlanAutomodExamplesDefault, obj3);
                   }
                 }
                 return tmp10;
               } else {
-                let items = closure_7.get(kind.id);
-                if (items == null) {
-                  items = [];
+                let items1 = metroImportAll.get(kind.id);
+                if (items1 == null) {
+                  items1 = [];
                 }
                 let tmp3 = null;
-                if (items.length > 0) {
-                  const obj = { projectId, exchanges: items };
-                  tmp3 = metroImportAll(ConjurePlanBotPreviewDefault, obj);
+                if (items1.length > 0) {
+                  const obj = { projectId, exchanges: items1 };
+                  tmp3 = authStore(ConjurePlanBotPreviewDefault, obj);
                 }
                 return tmp3;
               }
             }
           }
-          let tmp23 = null;
-          if (kind.id === closure_6) {
-            tmp23 = null;
-            if (null != proposal.design_image) {
-              const obj4 = { projectId, design: proposal.design_image, alt: string(obj5.conjurePlanDesignAlt(proposal)), overlayWidgetSize: obj6.conjurePlanOverlayWidgetSize(proposal) };
-              const intl = intl9.intl;
-              string = intl.string;
-              obj5 = conjurePlanDesign;
-              obj6 = conjurePlanOverlayDesign;
-              tmp23 = metroImportAll(closure_13, obj4);
-            }
+          ui = ui.ui;
+          let experienceId;
+          const id = kind.id;
+          if (ui != null) {
+            experienceId = ui.experienceId;
           }
-          return tmp23;
+          let tmp25 = null;
+          if (id === experienceId) {
+            const obj4 = { projectId, design: ui.ui.design, alt: string(obj5.conjurePlanDesignAlt(proposal)) };
+            const intl = intl9.intl;
+            string = intl.string;
+            obj5 = conjurePlanDesign;
+            tmp25 = authStore(closure_15, obj4);
+          }
+          const overlay = tmp23.overlay;
+          let experienceId1;
+          const id2 = kind.id;
+          if (overlay != null) {
+            experienceId1 = overlay.experienceId;
+          }
+          let tmp34 = null;
+          if (id2 === experienceId1) {
+            const obj6 = { projectId, design: ui.overlay.design, size: ui.overlay.size };
+            tmp34 = authStore(closure_16, obj6);
+          }
+          if (null != tmp25) {
+            const obj7 = { style: stack.stack, children: items };
+            items = [tmp25, tmp34];
+            tmp38 = unpackModuleId(metroImportAll, obj7);
+          } else {
+            tmp38 = null;
+          }
+          return tmp38;
         },
       commandNames: conjurePlanSlashCommandNames
     };
-    tmp20 = closure_10;
+    tmp20 = closure_12;
     if ("" !== trimmed) {
-      const obj13 = { variant: "text-md/normal", color: "text-default", children: closure_8(projectId(trimmed[29]).ConjurePlanCommandMarkup, obj14) };
-      const Text = tmp4(tmp5[28]).Text;
+      const obj13 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12455).ConjurePlanCommandMarkup, obj14) };
+      const Text = tmp4(5235).Text;
       obj14 = { markup: memo, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
       tmp12Result2 = tmp12(Text, obj13);
     }
-    const items4 = [tmp12Result2, ];
+    const items4 = [tmp12Result2, , ];
+    const obj15 = { projectId, proposal };
+    items4[1] = closure_10(closure_18, obj15);
     let tmp9Result = null;
     if ("" !== str3) {
-      const obj15 = { style: tmp.whatChanged, children: items5 };
-      const obj16 = { variant: "text-xs/medium", color: "text-muted", children: intl8.string(tmp10(trimmed[26]).iNS4dl) };
-      const Text3 = tmp4(tmp5[28]).Text;
-      intl8 = tmp4(tmp5[21]).intl;
-      items5 = [tmp12(Text3, obj16), ];
-      const obj17 = { variant: "text-md/normal", color: "text-default", children: closure_8(projectId(trimmed[29]).ConjurePlanCommandText, obj18) };
-      const Text4 = tmp4(tmp5[28]).Text;
-      obj18 = { text: str3, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
-      items5[1] = closure_8(Text4, obj17);
-      tmp9Result = tmp9(tmp13, obj15);
+      const obj16 = { style: tmp.whatChanged, children: items5 };
+      const obj17 = { variant: "text-xs/medium", color: "text-muted", children: intl8.string(tmp10(3831).iNS4dl) };
+      const Text3 = tmp4(5235).Text;
+      intl8 = tmp4(1125).intl;
+      items5 = [tmp12(Text3, obj17), ];
+      const obj18 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12455).ConjurePlanCommandText, obj19) };
+      const Text4 = tmp4(5235).Text;
+      obj19 = { text: str3, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
+      items5[1] = closure_10(Text4, obj18);
+      tmp9Result = tmp9(tmp13, obj16);
     }
-    obj19 = { children: items4 };
-    items4[1] = tmp9Result;
-    obj8.children = closure_8(tmp14, obj10);
+    obj20 = { children: items4 };
+    items4[2] = tmp9Result;
+    obj8.children = closure_10(tmp14, obj10);
     const items6 = [tmp12(tmp13, obj8), ];
     let tmp9Result2 = null;
     if (null != onApprove) {
       tmp9Result2 = null;
       if (!superseded) {
-        const obj20 = { style: tmp.footer, children: items7 };
-        const obj21 = { text: intl6.string(tmp10(trimmed[26])["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
-        const Button = tmp4(tmp5[31]).Button;
-        intl6 = tmp4(tmp5[21]).intl;
-        items7 = [tmp12(Button, obj21), ];
-        const obj22 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(trimmed[26]).IZoqbR) };
-        const Text2 = tmp4(tmp5[28]).Text;
-        intl7 = tmp4(tmp5[21]).intl;
-        items7[1] = closure_8(Text2, obj22);
-        tmp9Result2 = tmp9(tmp13, obj20);
+        const obj21 = { style: tmp.footer, children: items7 };
+        const obj22 = { text: intl6.string(tmp10(3831)["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
+        const Button = tmp4(5245).Button;
+        intl6 = tmp4(1125).intl;
+        items7 = [tmp12(Button, obj22), ];
+        const obj23 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(3831).IZoqbR) };
+        const Text2 = tmp4(5235).Text;
+        intl7 = tmp4(1125).intl;
+        items7[1] = closure_10(Text2, obj23);
+        tmp9Result2 = tmp9(tmp13, obj21);
       }
     }
     items6[1] = tmp9Result2;
     obj7.children = items6;
-    return closure_9(tmp11, obj7);
+    return closure_11(tmp11, obj7);
   }
-  let intl = tmp4(tmp5[21]).intl;
-  formatToPlainStringResult = intl.string(tmp10(tmp5[26])["3b6e7o"]);
+  let intl = tmp4(1125).intl;
+  formatToPlainStringResult = intl.string(tmp10(3831)["3b6e7o"]);
 });
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanProposalCard.tsx");
 
 export default tmp5;

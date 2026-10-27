@@ -1,11 +1,11 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13478
+// Function ID: 13479
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1087, 3, 558, 576, 7515, 10448, 7514, 1267, 5909, 1128, 6697, 2]
+// Dependencies: [5, 19, 1084, 3, 558, 576, 7516, 10450, 7515, 1264, 5910, 1125, 6698, 2]
 
-// Module 13464 (useGuildBoostPurchaseHandler)
+// Module 13478 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
   let obj = require("react");
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7515);
+    const tmpResult = tmp(7516);
     const result = tmpResult.isMobileWebRedirectCheckoutEnabled();
     cResult[0] = result;
     first = result;

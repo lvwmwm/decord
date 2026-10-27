@@ -1,24 +1,24 @@
 // Module ID: 8848
 // Function ID: 8849
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7403, 4823, 6010, 1392, 1087, 1105, 5999, 4799, 1405, 1386, 1388, 558, 576, 6014, 2000, 6021, 11, 2]
+// Dependencies: [19, 7405, 4824, 6011, 1389, 1084, 1102, 6000, 4800, 1402, 1383, 1385, 558, 576, 6015, 1997, 6022, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
 // Module 8848 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5999 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6000 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7403 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import MessageStore from "MessageStore" /* 6010 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7405 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import MessageStore from "MessageStore" /* 6011 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let _require, type;
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(6014);
+const InteractionComponentUtils = tmp(6015);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -280,7 +280,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
             tmp10 = cResult[6];
           }
           const mapped = embeds1.map(tmp10);
-          const found = mapped.filter(tmp(1388).isNotNullish);
+          const found = mapped.filter(tmp(1385).isNotNullish);
           cResult[2] = embeds1;
           cResult[3] = spoiler;
           cResult[4] = found;
@@ -371,7 +371,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
               }
             }
           });
-          found = mapped.filter(tmp(1388).isNotNullish);
+          found = mapped.filter(tmp(1385).isNotNullish);
         }
         return found;
       }

@@ -1,18 +1,18 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12726
+// Function ID: 12727
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2021, 6642, 502, 4823, 4845, 4903, 5712, 5714, 1087, 11589, 1384, 11349, 558, 576, 504, 2]
+// Dependencies: [2018, 6643, 502, 4824, 4846, 4904, 5713, 5715, 1084, 11591, 1381, 11352, 558, 576, 504, 2]
 
-// Module 12718 (useCanFulfillStreamRequest)
-import RunningGameStore from "RunningGameStore" /* 2021 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+// Module 12726 (useCanFulfillStreamRequest)
+import RunningGameStore from "RunningGameStore" /* 2018 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,17 +55,17 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     const application = channel_id.application;
     id = undefined;
     const tmp16 = null != obj.getCurrentUserActiveStream();
-    const obj8 = flag(11589);
+    const obj8 = flag(11591);
     const videoPermission = obj8.getVideoPermission(channel);
     const tmp17 = flag;
     if (application != null) {
       id = application.id;
     }
-    const tmp17Result = tmp17(1384);
+    const tmp17Result = tmp17(1381);
     dependencyMap = tmp17Result.isAndroid() ? tmp3.ANDROID : tmp3.IOS;
     let tmp4 = id;
     const obj5 = { guildId: channel.guild_id, location: "canFulfillStreamRequest" };
-    const obj6 = id(11349);
+    const obj6 = id(11352);
     const tmp5 = obj6.getConfig(obj5).enabled && null == id;
     if (null == id) {
       if (!tmp5) {

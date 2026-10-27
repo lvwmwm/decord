@@ -1,8 +1,8 @@
-// Module ID: 6293
-// Function ID: 6294
+// Module ID: 6296
+// Function ID: 6297
 // Dependencies: [2]
 
-// Module 6293
+// Module 6296
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/hat/fire.png.js");

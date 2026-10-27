@@ -1,9 +1,9 @@
 // Module ID: 8872
 // Function ID: 8873
-// Dependencies: [8873, 8874, 8875, 5795]
+// Dependencies: [8873, 8874, 8875, 5796]
 
 // Module 8872
-import baseFlatten from "baseFlatten" /* 5795 */;
+import baseFlatten from "baseFlatten" /* 5796 */;
 import baseRest from "baseRest" /* 8873 */;
 import isIterateeCall from "isIterateeCall" /* 8874 */;
 import baseOrderBy from "baseOrderBy" /* 8875 */;

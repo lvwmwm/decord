@@ -1,24 +1,24 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18761
+// Function ID: 18762
 // Name: CaptchaModal
-// Dependencies: [19, 17, 17362, 17363, 21, 4971, 558, 576, 7037, 1506, 18726, 6466, 18727, 17370, 18730, 1128, 5234, 5244, 5265, 5977, 2]
+// Dependencies: [19, 17, 17403, 17404, 21, 4972, 558, 576, 7039, 1503, 18762, 6467, 18763, 17411, 18766, 1125, 5235, 5245, 5266, 5978, 2]
 
-// Module 18725 (CaptchaModal)
-import intl4 from "intl" /* 1128 */;
-import Link from "Link" /* 1506 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6466 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17362 */;
-import RegistrationUtils from "RegistrationUtils" /* 17370 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 18727 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18730 */;
+// Module 18761 (CaptchaModal)
+import intl4 from "intl" /* 1125 */;
+import Link from "Link" /* 1503 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5266 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6467 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17403 */;
+import RegistrationUtils from "RegistrationUtils" /* 17411 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 18763 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18766 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 17363 */;
+import RegistrationConstants from "RegistrationConstants" /* 17404 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -188,7 +188,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let tmp = dependencyMap;
-  const tmp2 = closure_11(onReject(7037)());
+  const tmp2 = closure_11(onReject(7039)());
   let obj = Link;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     }
     return str;
   }, items);
-  let closure_9 = onReject(18726)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(18762)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);
@@ -221,15 +221,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   const Text = Text_Text.Text;
   const tmp9 = closure_5;
   if (headerText == null) {
-    const intl = tmp3(1128).intl;
-    headerText = intl.string(tmp3(1128).t.FpoiHe);
+    const intl = tmp3(1125).intl;
+    headerText = intl.string(tmp3(1125).t.FpoiHe);
   }
   const items2 = [tmp7(Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
-  const Text2 = tmp3(5234).Text;
+  const Text2 = tmp3(5235).Text;
   if (bodyText == null) {
-    const intl2 = tmp3(1128).intl;
-    bodyText = intl2.string(tmp3(1128).t["/CidxO"]);
+    const intl2 = tmp3(1125).intl;
+    bodyText = intl2.string(tmp3(1125).t["/CidxO"]);
   }
   let obj4 = { startHeight: 900, startExpanded: true, children: tmp8(Stack, obj2) };
   let obj5 = { children: items2 };
@@ -284,8 +284,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     },
     text: intl3.string(intl4.t["cY+Oob"])
   };
-  const Button = tmp3(5244).Button;
-  intl3 = tmp3(1128).intl;
+  const Button = tmp3(5245).Button;
+  intl3 = tmp3(1125).intl;
   items1[2] = closure_9(Button, obj6);
   return closure_9(BottomSheet, obj4);
 });

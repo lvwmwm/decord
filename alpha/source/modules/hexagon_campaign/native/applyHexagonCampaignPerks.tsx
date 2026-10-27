@@ -1,18 +1,18 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16418
+// Function ID: 16419
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 4995, 1392, 15643, 4996, 9865, 1255, 7078, 14767, 4998, 16380, 15856, 16381, 9866, 2053, 2]
+// Dependencies: [5, 4996, 1389, 15679, 4997, 9867, 1252, 7080, 14803, 4999, 16419, 15894, 16420, 9868, 2050, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 16379 (applyHexagonCampaignPerks)
-import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7078 */;
-import AppIconConstants from "AppIconConstants" /* 9865 */;
+// Module 16418 (applyHexagonCampaignPerks)
+import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7080 */;
+import AppIconConstants from "AppIconConstants" /* 9867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
-import UserStore from "UserStore" /* 1392 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15643 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
+import UserStore from "UserStore" /* 1389 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15679 */;
 import size from "module_2" /* 2 */;
 
 let c5;

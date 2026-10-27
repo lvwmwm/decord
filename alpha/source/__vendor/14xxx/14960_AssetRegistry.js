@@ -1,0 +1,10 @@
+// Module ID: 14960
+// Function ID: 14961
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 14960 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/light", width: 24, height: 24, scales: [2, 3], hash: "1b5f32142ab22998fa2540426f00d327", name: "tier_0_24px", type: "png" });

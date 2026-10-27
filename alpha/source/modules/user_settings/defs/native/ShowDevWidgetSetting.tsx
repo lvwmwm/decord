@@ -1,16 +1,16 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 16978
+// Function ID: 16979
 // Name: ShowDevWidgetSetting
-// Dependencies: [7793, 16937, 558, 576, 504, 11209, 16938, 16134, 2]
+// Dependencies: [7794, 16979, 558, 576, 504, 11212, 16980, 16172, 2]
 
-// Module 16936 (ShowDevWidgetSetting)
+// Module 16978 (ShowDevWidgetSetting)
 import react from "react" /* 576 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16134 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 16937 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 16938 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7793 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16172 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 16979 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 16980 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7794 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

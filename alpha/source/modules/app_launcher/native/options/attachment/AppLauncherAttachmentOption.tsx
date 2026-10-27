@@ -1,25 +1,25 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12062
+// Function ID: 12063
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 7631, 8293, 21, 4971, 587, 558, 576, 12062, 12064, 2000, 12043, 504, 9665, 1128, 8145, 12079, 12081, 2]
+// Dependencies: [19, 17, 7632, 8291, 21, 4972, 587, 558, 576, 12063, 12065, 1997, 12044, 504, 9667, 1125, 8143, 12080, 12082, 2]
 
-// Module 12061 (AppLauncherAttachmentOption)
+// Module 12062 (AppLauncherAttachmentOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DraftStore from "DraftStore" /* 7631 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12064 */;
+import DraftStore from "DraftStore" /* 7632 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12065 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 let size1;
 let tmp;
-const FileIcon = tmp(12062);
+const FileIcon = tmp(12063);
 let View = react_native.View;
 const DraftType = DraftStore.DraftType;
 const jsx = Fragment.jsx;
@@ -93,13 +93,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let onPress;
   let onSelectAttachment;
   let ref;
-  let style;
   const tmp = option;
   let obj = option(onSelectAttachment[8]);
-  const cResult = obj.c(29);
+  const cResult = obj.c(28);
   option = option.option;
   const channel = option.channel;
-  ({ style, autoFocus, hasError, onPress, onSelectAttachment } = option);
+  ({ autoFocus, hasError, onPress, onSelectAttachment } = option);
   const tmp4 = closure_8();
   let fileTypes;
   if (option.type === option(onSelectAttachment[11]).ApplicationCommandOptionType.ATTACHMENT) {
@@ -134,24 +133,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       const effect = stateFromStores.useEffect(tmp11, tmp12);
       View = stateFromStores.useRef(onSelectAttachment);
       if (cResult[8] !== onSelectAttachment) {
-        class P {
-          constructor() {
-            ref.current = onSelectAttachment;
-          }
-        }
+        const fn3 = function w() {
+          ref.current = onSelectAttachment;
+        };
         cResult[8] = onSelectAttachment;
-        cResult[9] = P;
-        tmp14 = P;
+        cResult[9] = fn3;
+        tmp14 = fn3;
       } else {
-        class P {
-          constructor() {
-            ref.current = onSelectAttachment;
-          }
-        }
+        tmp14 = cResult[9];
       }
       const effect1 = obj4.useEffect(tmp14);
       if (cResult[10] !== stateFromStores) {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -166,10 +159,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
           }
         }
         cResult[10] = stateFromStores;
-        cResult[11] = V;
-        tmp16 = V;
+        cResult[11] = P;
+        tmp16 = P;
       } else {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -185,7 +178,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         }
       }
       if (stateFromStores != null) {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -201,7 +194,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         }
       }
       if (cResult[12] !== undefined) {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -220,7 +213,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         cResult[13] = tmp20;
         tmp19 = tmp20;
       } else {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -237,7 +230,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       const effect2 = obj4.useEffect(tmp16, tmp19);
       if (null != stateFromStores) {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -254,7 +247,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       if (cResult[14] !== fileTypesFormattedString) {
         let formatResult;
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -269,7 +262,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
           }
         }
         if (null != fileTypesFormattedString) {
-          class V {
+          class P {
             constructor() {
               let filename;
               if (stateFromStores != null) {
@@ -289,7 +282,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         cResult[14] = fileTypesFormattedString;
         cResult[15] = formatResult;
       } else {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -305,7 +298,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         }
       }
       if (cResult[16] === stateFromStores) {
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -320,7 +313,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
           }
         }
         if (cResult[19] === autoFocus) {
-          class V {
+          class P {
             constructor() {
               let filename;
               if (stateFromStores != null) {
@@ -339,17 +332,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         cResult[20] = hasError;
         cResult[21] = onPress;
         cResult[22] = option;
-        cResult[23] = style;
-        cResult[24] = tmp23;
-        cResult[25] = tmp24;
-        cResult[26] = tmp26;
-        cResult[27] = null != stateFromStores;
-        cResult[28] = jsx(channel(onSelectAttachment[18]), { style, hasError, option, selected: null != stateFromStores, selectedItemName: tmp23, unselectedSubLabel: tmp24, leading: tmp26, onPress, autoFocus });
-        const tmp35 = jsx(channel(onSelectAttachment[18]), { style, hasError, option, selected: null != stateFromStores, selectedItemName: tmp23, unselectedSubLabel: tmp24, leading: tmp26, onPress, autoFocus });
+        cResult[23] = tmp23;
+        cResult[24] = tmp24;
+        cResult[25] = tmp26;
+        cResult[26] = null != stateFromStores;
+        cResult[27] = jsx(channel(onSelectAttachment[18]), { hasError, option, selected: null != stateFromStores, selectedItemName: tmp23, unselectedSubLabel: tmp24, leading: tmp26, onPress, autoFocus });
+        const tmp35 = jsx(channel(onSelectAttachment[18]), { hasError, option, selected: null != stateFromStores, selectedItemName: tmp23, unselectedSubLabel: tmp24, leading: tmp26, onPress, autoFocus });
       }
       if (null != stateFromStores) {
         let tmp30;
-        class V {
+        class P {
           constructor() {
             let filename;
             if (stateFromStores != null) {
@@ -364,7 +356,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
           }
         }
         if (tmp27 === tmp(onSelectAttachment[16]).UploadPlatform.REACT_NATIVE) {
-          class V {
+          class P {
             constructor() {
               let filename;
               if (stateFromStores != null) {
@@ -387,7 +379,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       tmp30 = <View style={tmp4.imageIconWrapper}>{jsx(tmp(onSelectAttachment[17]).ImageFileIcon, { size: "sm", color: "interactive-text-default" })}</View>;
     }
-    const fn2 = function b() {
+    const fn2 = function _() {
       let id;
       let name;
       return () => {
@@ -416,13 +408,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let formatResult;
   let hasError;
   let onPress;
-  let style;
   option = option.option;
   const channel = option.channel;
   const onSelectAttachment = option.onSelectAttachment;
   let stateFromStores;
   let ref;
-  ({ style, autoFocus, hasError, onPress } = option);
+  ({ autoFocus, hasError, onPress } = option);
   const tmp = closure_8();
   let fileTypes;
   if (option.type === option(onSelectAttachment[11]).ApplicationCommandOptionType.ATTACHMENT) {
@@ -464,7 +455,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
     }
   }, items2);
-  let obj = { style, hasError, option, selected: null != stateFromStores, selectedItemName: filename1, unselectedSubLabel: formatResult, leading: null, onPress: null, autoFocus: null };
+  let obj = { hasError, option, selected: null != stateFromStores, selectedItemName: filename1, unselectedSubLabel: formatResult, leading: null, onPress: null, autoFocus: null };
   filename1 = undefined;
   channel(onSelectAttachment[18]);
   if (null != stateFromStores) {

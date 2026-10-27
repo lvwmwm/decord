@@ -1,13 +1,13 @@
-// Module ID: 14233
-// Function ID: 14234
+// Module ID: 14260
+// Function ID: 14261
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 558, 576, 14234, 14235, 8790, 14236, 2]
+// Dependencies: [19, 21, 558, 576, 14261, 14262, 8790, 14263, 2]
 
-// Module 14233 (MediaModalVideo)
+// Module 14260 (MediaModalVideo)
 import react2 from "react" /* 576 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14234 */;
-import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 14235 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14236 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14261 */;
+import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 14262 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14263 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -119,7 +119,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                           let tmp13 = null;
                           if (isLoadingVisible) {
                             const obj6 = { style, status: "loading" };
-                            tmp13 = React3(tmp5(14235), obj6);
+                            tmp13 = React3(tmp5(14262), obj6);
                           }
                           cResult[19] = isLoadingVisible;
                           cResult[20] = style;
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = react;
   if (hasError) {
     const obj2 = { style, status: "error" };
-    tmp6Result = React3(tmp(14235), obj2);
+    tmp6Result = React3(tmp(14262), obj2);
   } else {
     const Fragment = tmp4.Fragment;
     const obj = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp5, style };
@@ -200,7 +200,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmp6 = hasOwnProperty;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading" };
-      tmp7Result = tmp7(tmp(14235), obj3);
+      tmp7Result = tmp7(tmp(14262), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp7Result;

@@ -1,14 +1,14 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18343
+// Function ID: 18344
 // Name: WebhookEmpty
-// Dependencies: [19, 21, 8724, 18310, 18311, 18312, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 18344, 18345, 18346, 558, 576, 4979, 5670, 2]
 // Exports: getWebhookEmptySource
 
-// Module 18309 (WebhookEmpty)
+// Module 18343 (WebhookEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4978 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import shared from "shared" /* 4979 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

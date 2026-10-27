@@ -1,21 +1,19 @@
 // Module ID: 1595
 // Function ID: 1596
 // Name: react
-// Dependencies: [19, 1554]
-// Exports: useCurrentRender
+// Dependencies: [19, 1528]
+// Exports: useNavigationContainerRef
 
 // Module 1595 (react)
-import react2 from "react" /* 1554 */;
+import NOT_INITIALIZED_ERROR from "NOT_INITIALIZED_ERROR" /* 1528 */;
 import react from "react" /* 19 */;
 
 
-export const useCurrentRender = function useCurrentRender(descriptors) {
-  let state;
-  ({ state, navigation } = descriptors);
-  descriptors = descriptors.descriptors;
-  const context = react.useContext(react2.CurrentRenderContext);
-  const tmp2 = context && navigation.isFocused();
-  if (tmp2) {
-    context.options = descriptors[state.routes[state.index].key].options;
+export const useNavigationContainerRef = function useNavigationContainerRef() {
+  const ref = react.useRef(null);
+  if (null == ref.current) {
+    const obj = NOT_INITIALIZED_ERROR;
+    ref.current = obj.createNavigationContainerRef();
   }
+  return ref.current;
 };

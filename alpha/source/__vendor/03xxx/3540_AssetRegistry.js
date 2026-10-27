@@ -1,0 +1,10 @@
+// Module ID: 3540
+// Function ID: 3541
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 3540 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/youtube_3pp", scales: [1], hash: "52c2982d538f4cadc6393d3f651b1a67", name: "Youtube3PP.compiled.messages", type: "jsona" });

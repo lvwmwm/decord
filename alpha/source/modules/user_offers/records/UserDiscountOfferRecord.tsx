@@ -1,11 +1,11 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8433
+// Function ID: 8434
 // Name: UserDiscountOfferRecord
-// Dependencies: [1407, 7561, 2]
+// Dependencies: [1404, 7562, 2]
 
-// Module 8434 (UserDiscountOfferRecord)
-import Record from "Record" /* 1407 */;
-import DiscountRecord from "DiscountRecord" /* 7561 */;
+// Module 8433 (UserDiscountOfferRecord)
+import Record from "Record" /* 1404 */;
+import DiscountRecord from "DiscountRecord" /* 7562 */;
 import size from "module_2" /* 2 */;
 
 class UserDiscountOfferRecord extends Record {

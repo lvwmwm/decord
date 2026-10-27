@@ -1,25 +1,18 @@
 // Module ID: 11737
 // Function ID: 11738
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5013, 5010]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 5014]
 
 // Module 11737
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import MemoryRouter from "MemoryRouter" /* 5014 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
-import module_5010_mod from "module_5010" /* 5010 */;
 
-const require = globalThis.__r;
-let _require;
-
-let items1;
-let module_5010;
-let oneOfType;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -35,20 +28,19 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_2 = ["component", "to", "replace"];
-const TouchableHighlight = react_native.TouchableHighlight;
+const BackHandler = react_native.BackHandler;
 const jsx = Fragment.jsx;
-class Link {
+class BackButton {
   constructor() {
     let constructResult;
     const self = this;
     const items = [...arguments];
     let closure_0;
-    const tmp = _classCallCheck(this, Link);
+    _classCallCheck(this, BackButton);
     const items1 = [...items];
-    const obj = _getPrototypeOf(Link);
+    const obj = _getPrototypeOf(BackButton);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = hasOwnProperty;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
@@ -57,51 +49,45 @@ class Link {
     }
     const tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
-    tmp3Result.handlePress = (defaultPrevented, str) => {
-      if (props.props.onPress) {
-        props = tmp.props;
-        props.onPress(defaultPrevented);
+    tmp3Result.handleBack = () => {
+      let flag = 0 !== closure_0.history.index;
+      if (flag) {
+        const history = closure_0.history;
+        history.goBack();
+        flag = true;
       }
-      if (!defaultPrevented.defaultPrevented) {
-        const to = str.to;
-        if (props.props.replace) {
-          const replaced = str.replace(to);
-        } else {
-          str.push(to);
-        }
-      }
+      return flag;
     };
     return tmp3Result;
   }
 }
-_inherits(Link, react.Component);
+_inherits(BackButton, react.Component);
 const entry = {
-  key: "render",
-  value: function render() {
-    let replace;
-    let to;
-    const self = this;
-    const props = this.props;
-    ({ component: dependencyMap, to, replace } = props);
-    _require = _objectWithoutProperties(props, self);
-    return jsx(require("MemoryRouter").__HistoryContext.Consumer, {
-      children(arg0) {
-        closure_0 = arg0;
-        const merged = Object.assign(closure_0);
-        return <closure_1 onPress={function onPress(arg0) {
-          return self.handlePress(arg0, closure_0);
-        }} />;
-      }
-    });
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const listener = BackHandler.addEventListener("hardwareBackPress", this.handleBack);
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(Link, items);
-importDefaultResultResult.defaultProps = { component: TouchableHighlight, replace: false };
-let obj = { onPress: module_5010.func, component: module_5010.elementType, replace: module_5010.bool, to: oneOfType(items1) };
-module_5010 = module_5010_mod;
-oneOfType = module_5010.oneOfType;
-items1 = [module_5010.string, module_5010.object];
-importDefaultResultResult.propTypes = obj;
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const removed = BackHandler.removeEventListener("hardwareBackPress", this.handleBack);
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      return jsx(MemoryRouter.__HistoryContext.Consumer, {
+        children(history) {
+          self.history = history;
+          return self.props.children || null;
+        }
+      });
+    }
+  }
+];
 
-export default importDefaultResultResult;
+export default _createClass(BackButton, items);

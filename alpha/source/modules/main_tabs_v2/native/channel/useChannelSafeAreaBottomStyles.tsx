@@ -1,24 +1,24 @@
-// Module ID: 10921
-// Function ID: 10922
+// Module ID: 10924
+// Function ID: 10925
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 6496, 4904, 4823, 2014, 5714, 1087, 4830, 4971, 587, 558, 576, 10922, 5993, 5161, 1631, 1384, 573, 5252, 9708, 2]
+// Dependencies: [19, 6497, 4905, 4824, 2011, 5715, 1084, 4831, 4972, 587, 558, 576, 10925, 5994, 5162, 1628, 1381, 573, 5253, 9710, 2]
 
-// Module 10921 (useChannelSafeAreaBottomStyles)
+// Module 10924 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import useToken from "useToken" /* 5252 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9708 */;
+import Constants from "Constants" /* 1084 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import useToken from "useToken" /* 5253 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9710 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
-import LurkingStore from "LurkingStore" /* 4904 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import createStyles from "createStyles" /* 4971 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
+import LurkingStore from "LurkingStore" /* 4905 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -347,9 +347,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSa
   let closure_1;
   let closure_2;
   let gradientBottom;
-  let obj = gradientBottom(5252);
+  let obj = gradientBottom(5253);
   const token = obj.useToken(nativeDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND);
-  let obj2 = gradientBottom(9708);
+  let obj2 = gradientBottom(9710);
   gradientBottom = obj2.useGradientBottom();
   let backgroundColor1;
   if (gradientBottom != null) {

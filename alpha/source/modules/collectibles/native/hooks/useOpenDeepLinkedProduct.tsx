@@ -1,13 +1,13 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17243
+// Function ID: 17244
 // Name: useOpenDeepLinkedProduct
-// Dependencies: [19, 7689, 558, 576, 504, 9476, 7661, 5210, 8665, 2]
+// Dependencies: [19, 7690, 558, 576, 504, 9475, 7662, 5211, 8665, 2]
 
-// Module 17202 (useOpenDeepLinkedProduct)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
+// Module 17243 (useOpenDeepLinkedProduct)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7689 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7690 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

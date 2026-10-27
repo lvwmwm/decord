@@ -1,91 +1,106 @@
 // Module ID: 8230
 // Function ID: 8231
-// Dependencies: [8231]
+// Dependencies: [8229]
 
 // Module 8230
-import _modDef8231 from "module_8231" /* 8231 */;
+import _modDef8229 from "module_8229" /* 8229 */;
 
 
 export default {
-  read(dataView, sum) {
+  read(buffer, sum) {
     let str6;
-    let tmp11;
-    let tmp14;
-    let tmp8;
-    const obj = _modDef8231;
-    const shortAt = obj.getShortAt(dataView, sum);
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    const obj = _modDef8229;
+    const shortAt = obj.getShortAt(buffer, sum);
     let tmp4;
-    if (8 <= shortAt) {
-      const tmpResult = _modDef8231;
-      const byteAt = tmpResult.getByteAt(dataView, sum + 7);
-      tmp4 = { value: byteAt, description: "" + byteAt };
-      const obj2 = { value: byteAt, description: "" + byteAt };
-    }
-    let tmp6;
-    if (3 <= shortAt) {
-      const tmpResult4 = _modDef8231;
-      const byteAt1 = tmpResult4.getByteAt(dataView, sum + 2);
-      tmp6 = { value: byteAt1, description: "" + byteAt1 };
-      const obj3 = { value: byteAt1, description: "" + byteAt1 };
-    }
-    const obj4 = { "Bits Per Sample": tmp6, "Image Height": tmp8, "Image Width": tmp11, "Color Components": tmp4, Subsampling: tmp14 };
-    tmp8 = undefined;
-    if (5 <= shortAt) {
-      const tmpResult5 = _modDef8231;
-      const shortAt1 = tmpResult5.getShortAt(dataView, sum + 3);
+    if (15 <= shortAt) {
+      const tmpResult = _modDef8229;
+      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
       const _HermesInternal = HermesInternal;
-      tmp8 = { value: shortAt1, description: "" + shortAt1 + "px" };
-      const obj5 = { value: shortAt1, description: "" + shortAt1 + "px" };
+      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
+      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
     }
-    tmp11 = undefined;
-    if (7 <= shortAt) {
-      const tmpResult6 = _modDef8231;
-      const shortAt2 = tmpResult6.getShortAt(dataView, sum + 5);
+    let tmp7;
+    if (16 <= shortAt) {
+      const tmpResult7 = _modDef8229;
+      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
       const _HermesInternal2 = HermesInternal;
-      tmp11 = { value: shortAt2, description: "" + shortAt2 + "px" };
-      const obj6 = { value: shortAt2, description: "" + shortAt2 + "px" };
+      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
+      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
     }
-    tmp14 = tmp4;
-    if (tmp14) {
-      const value = tmp4.value;
-      let tmp15;
-      if (8 + 3 * value <= shortAt) {
-        let num6;
-        const items = [];
-        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
-          sum = sum + 8 + 3 * num6;
-          let push = items.push;
-          let obj11 = _modDef8231;
-          let items1 = [obj11.getByteAt(dataView, sum), , ];
-          let obj12 = _modDef8231;
-          items1[1] = obj12.getByteAt(dataView, sum + 1);
-          let obj13 = _modDef8231;
-          items1[2] = obj13.getByteAt(dataView, sum + 2);
-          let arr = push(items1);
-        }
-        const obj7 = { value: items, description: str6 };
-        str6 = "";
-        if (items.length > 1) {
-          let closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
-          const mapped = items.map((item) => closure_0[item[0]]);
-          let str7 = "";
-          const joined = mapped.join("");
-          if (0 !== items.length) {
-            str7 = "";
-            if (undefined !== items[0][1]) {
-              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
-              str7 = "";
-              if (undefined !== obj8[items[0][1]]) {
-                str7 = obj8[items[0][1]];
-              }
-            }
+    let tmp10;
+    if (9 <= shortAt) {
+      const tmpResult8 = _modDef8229;
+      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
+      const tmpResult9 = _modDef8229;
+      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
+      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+    }
+    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
+    tmp13 = undefined;
+    if (10 <= shortAt) {
+      const tmpResult10 = _modDef8229;
+      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: str6 };
+      str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
           }
-          str6 = joined + str7;
+          str7 = str8;
         }
-        tmp15 = obj7;
+        str6 = str7;
       }
-      tmp14 = tmp15;
+      tmp13 = obj6;
     }
-    return obj4;
+    tmp15 = undefined;
+    if (12 <= shortAt) {
+      const tmpResult11 = _modDef8229;
+      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
+      tmp15 = { value: shortAt1, description: "" + shortAt1 };
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
+    }
+    tmp17 = undefined;
+    if (14 <= shortAt) {
+      const tmpResult12 = _modDef8229;
+      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
+      tmp17 = { value: shortAt2, description: "" + shortAt2 };
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
+    }
+    if (undefined !== tmp4) {
+      if (undefined !== tmp7) {
+        const result = 3 * tmp4.value * tmp7.value;
+        let tmp20;
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+          }
+        }
+        if (tmp20) {
+          obj5["JFIF Thumbnail"] = tmp20;
+        }
+      }
+    }
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp22]) {
+          continue;
+        } else {
+          delete obj9[tmp23];
+          continue;
+        }
+        continue;
+      }
+    }
+    return obj5;
   }
 };

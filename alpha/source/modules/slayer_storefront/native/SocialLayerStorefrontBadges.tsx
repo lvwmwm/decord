@@ -1,19 +1,19 @@
-// Module ID: 10570
-// Function ID: 10571
+// Module ID: 10573
+// Function ID: 10574
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 4971, 587, 1384, 558, 576, 10571, 1128, 5234, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 1381, 558, 576, 10574, 1125, 5235, 2]
 
-// Module 10570 (SocialLayerStorefrontBadges)
+// Module 10573 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ClydeIcon2 from "ClydeIcon" /* 10571 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ClydeIcon2 from "ClydeIcon" /* 10574 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExclusiveB
   const exclusiveBadge = tmp4.exclusiveBadge;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const ClydeIcon = tmp(10571).ClydeIcon;
+    const ClydeIcon = tmp(10574).ClydeIcon;
     const tmp8 = React3(ClydeIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -54,7 +54,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExclusiveB
   }
   const exclusiveBadgeText = tmp4.exclusiveBadgeText;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.RiDMFz);
     cResult[1] = stringResult;
     tmp9 = stringResult;

@@ -1,18 +1,18 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9576
+// Function ID: 9577
 // Name: BrandSafetyContext
-// Dependencies: [9572, 4823, 4845, 4913, 5002, 1392, 9575, 7772, 1417, 5604, 2]
+// Dependencies: [9574, 4824, 4846, 4914, 5003, 1389, 9577, 7773, 1414, 5605, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9574 (BrandSafetyContext)
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9575 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9572 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 9576 (BrandSafetyContext)
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9577 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9574 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,12 +24,12 @@ let closure_4;
 let closure_10 = ContentImpressionTrackerConstants.MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN;
 let result = size.fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
-export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
+export const getBrandSafetyContext = function getBrandSafetyContext(surfaceId) {
   let closure_0;
   let obj = require("QuestDataUtils");
-  const result = obj.isBillableQuestContent(questContent);
+  const result = obj.isBillableQuestContent(surfaceId);
   let obj2 = require("QuestDataUtils");
-  const adContext = obj2.getAdContext(questContent);
+  const adContext = obj2.getAdContext(surfaceId);
   const tmp4 = closure_4();
   const tmp5 = closure_3();
   let prop;

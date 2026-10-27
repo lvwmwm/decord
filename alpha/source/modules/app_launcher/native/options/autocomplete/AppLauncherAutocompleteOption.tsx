@@ -1,51 +1,45 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 12056
+// Function ID: 12057
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1087, 21, 4971, 587, 1896, 5210, 12056, 2002, 12053, 6908, 5234, 2]
+// Dependencies: [32, 19, 17, 1203, 21, 4972, 7025, 5253, 587, 1893, 5211, 12057, 1999, 12054, 6910, 5235, 2]
 // Exports: default
 
-// Module 12055 (AppLauncherAutocompleteOption)
+// Module 12056 (AppLauncherAutocompleteOption)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Pressables from "Pressables" /* 6908 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12053 */;
+import FormConstants from "FormConstants" /* 1203 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import useToken from "useToken" /* 5253 */;
+import Pressables from "Pressables" /* 6910 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7025 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
-let obj3;
 let tmp4;
-const Text_Text = tmp4(5234);
-const Fonts = Constants.Fonts;
+const Text_Text = tmp4(5235);
+const View = react_native.View;
+const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { container: obj2, hasError: obj3, inputText: { fontSize: 16, alignSelf: "center", fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT } };
-obj2 = { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
-createStyles = createStyles.createStyles;
-obj3 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-({ fontSize: 16, alignSelf: "center", fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT });
-let closure_6 = createStyles(obj);
+let closure_8 = createStyles.createStyles({ content: { flex: 1 } });
 let result = size.fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
 
 export default function AppLauncherAutocompleteOption(arg0) {
   let activeCommand;
   let autoFocus;
   let channel;
-  let closure_7;
   let closure_9;
   let hasError;
   let initChoice;
   let onDismissAutocompleteSheet;
   let option;
-  let str;
-  let style;
-  ({ option: require, onSelect: importDefault, onOpenAutocompleteSheet: dependencyMap, onDismissAutocompleteSheet: _slicedToArray, channel: react, activeCommand: jsx, optionValues: closure_6, initialValue: closure_7, hasError } = arg0);
+  let ref;
+  ({ option: require, onSelect: importDefault, onOpenAutocompleteSheet: dependencyMap, onDismissAutocompleteSheet: _slicedToArray, channel: react, activeCommand: View, optionValues: ANDROID_FOREGROUND_RIPPLE, initialValue: jsx } = arg0);
   initChoice = undefined;
   closure_9 = undefined;
   function onPress() {
@@ -63,39 +57,39 @@ export default function AppLauncherAutocompleteOption(arg0) {
         closure_1_1(arg0);
       },
       channel: react,
-      activeCommand: jsx,
+      activeCommand: View,
       onDismissAutocompleteSheet: _slicedToArray,
-      optionValues: ref.current
+      optionValues: ANDROID_FOREGROUND_RIPPLE.current
     };
-    obj2.openLazy(asyncRequire(12056, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(12057, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
-  ({ style, autoFocus } = arg0);
+  ({ autoFocus, hasError } = arg0);
   [initChoice, closure_9] = react.useState(() => {
-    if (null != closure_7) {
-      if ("text" === closure_7.type) {
-        if ("" !== closure_7.text) {
+    if (null != jsx) {
+      if ("text" === jsx.type) {
+        if ("" !== jsx.text) {
           const obj = { displayName: null, name: null, value: null };
-          ({ text: obj.displayName, text: obj.name, text: obj.value } = closure_7);
+          ({ text: obj.displayName, text: obj.name, text: obj.value } = jsx);
           return obj;
         }
       }
     }
   });
-  const tmp3 = ref();
-  let obj = useAnimationDelayedAutoFocus;
-  const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
-  const items = [tmp3.container, , ];
+  const tmp3 = initChoice();
+  let obj = InputFieldContainer2;
+  const inputStyles = obj.useInputStyles({});
+  let obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.modules.mobile.INPUT_FIELD_TEXT_STYLE_LG);
+  let obj3 = useAnimationDelayedAutoFocus;
+  const animationDelayedAutoFocus = obj3.useAnimationDelayedAutoFocus(autoFocus, onPress);
   const PressableOpacity = Pressables.PressableOpacity;
+  let str = "default";
+  const InputFieldContainer = InputFieldContainer2.InputFieldContainer;
   if (hasError) {
-    hasError = tmp3.hasError;
+    str = "error";
   }
-  items[1] = hasError;
-  items[2] = style;
-  let obj3 = { variant: "text-md/normal", style: tmp3.inputText, children: str };
-  str = " ";
+  const items = [inputStyles.padding, tmp3.content];
+  const str2 = " ";
   const Text = Text_Text.Text;
-  if (null != initChoice) {
-    str = initChoice.displayName;
-  }
-  return <PressableOpacity onPress={onPress} style={items}>{null}</PressableOpacity>;
+  return <PressableOpacity onPress={onPress} style={inputStyles.radius} androidRippleConfig={ANDROID_FOREGROUND_RIPPLE}>{null}</PressableOpacity>;
 };

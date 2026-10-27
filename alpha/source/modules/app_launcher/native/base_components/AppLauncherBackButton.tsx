@@ -1,13 +1,13 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 12015
+// Function ID: 12016
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 558, 576, 1506, 6929, 6932, 1128, 7959, 2]
+// Dependencies: [19, 21, 558, 576, 1503, 6931, 6934, 1125, 7957, 2]
 
-// Module 12014 (AppLauncherBackButton)
+// Module 12015 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Link from "Link" /* 1506 */;
-import IconButton2 from "IconButton" /* 7959 */;
+import Link from "Link" /* 1503 */;
+import IconButton2 from "IconButton" /* 7957 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,11 +31,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   } else {
     tmp4 = cResult[1];
   }
-  const tmp6 = importDefault(tmp4 ? 6929 : 6932);
+  const tmp6 = importDefault(tmp4 ? 6931 : 6934);
   if (cResult[2] !== tmp4) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     const stringResult = string(tmp4 ? t["13/7kX"] : t.cpT0Cq);
     cResult[2] = tmp4;
     cResult[3] = stringResult;
@@ -64,10 +64,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   navigation = obj.useNavigation();
   const canGoBackResult = navigation.canGoBack();
   const IconButton = IconButton2.IconButton;
-  const intl = tmp(1128).intl;
+  const intl = tmp(1125).intl;
   const string = intl.string;
-  const t = tmp(1128).t;
-  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 6929 : 6932)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
+  const t = tmp(1125).t;
+  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 6931 : 6934)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
 });
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherBackButton.tsx");
 

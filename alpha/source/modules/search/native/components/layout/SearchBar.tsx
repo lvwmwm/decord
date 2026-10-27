@@ -1,28 +1,28 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18105
+// Function ID: 18106
 // Name: SearchBar
-// Dependencies: [19, 17, 4823, 4845, 4913, 1392, 13239, 9714, 9713, 1087, 21, 4971, 1128, 5604, 558, 576, 504, 18068, 5253, 13225, 13250, 4980, 13246, 13233, 18072, 8993, 2]
+// Dependencies: [19, 17, 4824, 4846, 4914, 1389, 13253, 9716, 9715, 1084, 21, 4972, 1125, 5605, 558, 576, 504, 18102, 5254, 13239, 13264, 4981, 13260, 13247, 18106, 8993, 2]
 
-// Module 18071 (SearchBar)
+// Module 18105 (SearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import intl8 from "intl" /* 1128 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import TrackingConstants from "TrackingConstants" /* 9713 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13225 */;
-import SearchTokens from "SearchTokens" /* 13233 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13246 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13250 */;
+import Constants from "Constants" /* 1084 */;
+import intl8 from "intl" /* 1125 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
+import useChannelName from "useChannelName" /* 5605 */;
+import TrackingConstants from "TrackingConstants" /* 9715 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13239 */;
+import SearchTokens from "SearchTokens" /* 13247 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13260 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13264 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import SearchQueryStore from "SearchQueryStore" /* 13239 */;
-import SearchConstants from "SearchConstants" /* 9714 */;
-import createStyles from "createStyles" /* 4971 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import SearchQueryStore from "SearchQueryStore" /* 13253 */;
+import SearchConstants from "SearchConstants" /* 9716 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1431,7 +1431,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp2 = importDefault;
       if (!SearchQueryStore.isAutocompleteVisible(searchContext)) {
         const isInitialSearchQueryResult = SearchQueryStore.isInitialSearchQuery(searchContext);
-        const tmp2Result = tmp2(13225);
+        const tmp2Result = tmp2(13239);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
@@ -1469,7 +1469,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
       const tmp6 = importDefault;
       if (queryString !== searchResultsQuery) {
-        const tmp6Result = tmp6(13225);
+        const tmp6Result = tmp6(13239);
         if (tmp11) {
           const initialMessages = tmp6Result.fetchInitialMessages(tmp);
         } else {

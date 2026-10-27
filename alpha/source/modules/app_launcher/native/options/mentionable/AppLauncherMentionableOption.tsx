@@ -1,29 +1,29 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12087
+// Function ID: 12088
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 4972, 4877, 1392, 1098, 21, 4971, 587, 558, 576, 504, 10819, 12085, 12083, 1202, 12084, 12087, 12081, 5210, 12083, 2002, 2]
+// Dependencies: [32, 19, 4973, 4878, 1389, 1095, 21, 4972, 587, 558, 576, 504, 10822, 12086, 12084, 1199, 12085, 12088, 12082, 5211, 12084, 1999, 2]
 // Exports: default
 
-// Module 12086 (AppLauncherMentionableOption)
+// Module 12087 (AppLauncherMentionableOption)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import native from "native" /* 1202 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import UserCircleIcon from "UserCircleIcon" /* 10819 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12083 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12084 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12085 */;
-import UsernameTextDefault from "UsernameText" /* 12087 */;
+import Constants from "Constants" /* 1095 */;
+import native from "native" /* 1199 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import UserCircleIcon from "UserCircleIcon" /* 10822 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12084 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12085 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12086 */;
+import UsernameTextDefault from "UsernameText" /* 12088 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function o() {
+    const fn = function l() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -89,7 +89,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
           return tmp20;
         }
       }
-      const Avatar = tmp(1202).Avatar;
+      const Avatar = tmp(1199).Avatar;
       const tmp22 = <Avatar user={user} guildId={guildId} animate={!stateFromStores} size={native.AvatarSizes.REFRESH_MEDIUM_32} />;
       cResult[5] = guildId;
       cResult[6] = !stateFromStores;
@@ -109,7 +109,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
       }
       return tmp16;
     } else {
-      const GLOBAL = tmp(12083).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp(12084).MentionableItemTypes.GLOBAL;
       return tmp12;
     }
   }
@@ -128,12 +128,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
   } else {
     const type = mentionable.type;
     if (AppLauncherMentionableListActionSheet.MentionableItemTypes.USER === type) {
-      const Avatar = tmp2(1202).Avatar;
+      const Avatar = tmp2(1199).Avatar;
       return <Avatar user={mentionable.result.user} guildId={guildId} animate={!stateFromStores} size={native.AvatarSizes.REFRESH_MEDIUM_32} />;
     } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
       return jsx(AppLauncherRoleListActionSheet.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = tmp2(12083).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(12084).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -147,7 +147,6 @@ export default function AppLauncherMentionableOption(option) {
   let hasError;
   let mentionable;
   let onActionSheetDismiss;
-  let style;
   let tmp7;
   option = option.option;
   const initialValue = option.initialValue;
@@ -157,7 +156,7 @@ export default function AppLauncherMentionableOption(option) {
   mentionable = undefined;
   closure_8 = undefined;
   const guild_id = channel.guild_id;
-  ({ style, autoFocus, hasError } = option);
+  ({ autoFocus, hasError } = option);
   [mentionable, closure_8] = channel.useState(() => {
     let obj9;
     if (null != initialValue) {
@@ -205,7 +204,6 @@ export default function AppLauncherMentionableOption(option) {
     }
   }, items1);
   let obj = {
-    style,
     option,
     hasError,
     selected: null != mentionable,
@@ -227,7 +225,7 @@ export default function AppLauncherMentionableOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(12083, dependencyMap.paths);
+      const tmp4 = asyncRequire(12084, dependencyMap.paths);
       openLazy(tmp4, AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

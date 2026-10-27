@@ -1,28 +1,28 @@
-// Module ID: 18091
-// Function ID: 18092
+// Module ID: 18125
+// Function ID: 18126
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7701, 4823, 13239, 9714, 18092, 9713, 1087, 4830, 13225, 13250, 558, 576, 1386, 5662, 1128, 8860, 5660, 1505, 13335, 18093, 13228, 9736, 9754, 1123, 6682, 8751, 7411, 5707, 7867, 2002, 6662, 14185, 5993, 8531, 6871, 1114, 13246, 2]
+// Dependencies: [5, 19, 7702, 4824, 13253, 9716, 18126, 9715, 1084, 4831, 13239, 13264, 558, 576, 1383, 5663, 1125, 8860, 5661, 1502, 13349, 18127, 13242, 9738, 9756, 1120, 6683, 8751, 7413, 5708, 7868, 1999, 6663, 14212, 5994, 8531, 6873, 1111, 13260, 2]
 // Exports: useOnPressMediaItem
 
-// Module 18091 (useOnPressSearchItem)
-import intl2 from "intl" /* 1128 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
+// Module 18125 (useOnPressSearchItem)
+import intl2 from "intl" /* 1125 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8860 */;
-import TrackingConstants from "TrackingConstants" /* 9713 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13225 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13246 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13250 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18092 */;
+import TrackingConstants from "TrackingConstants" /* 9715 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13239 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13260 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13264 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7701 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SearchQueryStore from "SearchQueryStore" /* 13239 */;
-import SearchConstants from "SearchConstants" /* 9714 */;
-import Constants from "Constants" /* 1087 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7702 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import SearchQueryStore from "SearchQueryStore" /* 13253 */;
+import SearchConstants from "SearchConstants" /* 9716 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_15;
 let closure_16;
 let map1;
 let metroImportAll;
-const f154568 = async (arg0, value) => {
+const f154919 = async (arg0, value) => {
   let c2;
   closure_0 = arg0;
   if (c3 === 2) {
@@ -641,7 +641,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPress
   obj = searchContext(576);
   const cResult = obj.c(3);
   searchContext = searchContext.searchContext;
-  let obj2 = searchContext(1505);
+  let obj2 = searchContext(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp3;
@@ -679,7 +679,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPress
   tmp3 = fn;
 }) : (function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1505);
+  obj = searchContext(1502);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((channelId) => {
@@ -711,7 +711,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressDM
   obj = searchContext(576);
   const cResult = obj.c(3);
   searchContext = searchContext.searchContext;
-  let obj2 = searchContext(1505);
+  let obj2 = searchContext(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp3;
@@ -750,7 +750,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressDM
   tmp3 = fn;
 }) : (function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1505);
+  obj = searchContext(1502);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((userId, arg1) => {
@@ -851,7 +851,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   const obj2 = searchContext(callback[19]);
   navigation = obj2.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f154568);
+  let closure_0 = _asyncToGenerator(f154919);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);
@@ -897,7 +897,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   obj = searchContext(callback[19]);
   navigation = obj.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f154568);
+  let closure_0 = _asyncToGenerator(f154919);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);

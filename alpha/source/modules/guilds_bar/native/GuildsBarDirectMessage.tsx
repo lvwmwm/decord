@@ -1,24 +1,24 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17828
+// Function ID: 17829
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6497, 4823, 6814, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 17743, 504, 9018, 1128, 17746, 5707, 10691, 17788, 10688, 1202, 5669, 2]
+// Dependencies: [19, 502, 6498, 4824, 6816, 4914, 1389, 1084, 21, 4972, 587, 558, 576, 17784, 504, 9018, 1125, 17787, 5708, 10694, 17829, 10691, 1199, 5670, 2]
 
-// Module 17787 (GuildsBarDirectMessage)
+// Module 17828 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import transitionToChannel from "transitionToChannel" /* 5708 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9018 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10694 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6497 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import CallStore from "CallStore" /* 6498 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6816 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

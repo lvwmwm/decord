@@ -1,9 +1,9 @@
-// Module ID: 4920
-// Function ID: 4921
+// Module ID: 4921
+// Function ID: 4922
 // Name: EmojiTypes
 // Dependencies: [2]
 
-// Module 4920 (EmojiTypes)
+// Module 4921 (EmojiTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/EmojiTypes.tsx");

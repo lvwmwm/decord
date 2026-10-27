@@ -1,12 +1,12 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11190
+// Function ID: 11191
 // Name: getCurrentUserProfile
-// Dependencies: [1392, 7703, 2]
+// Dependencies: [1389, 7704, 2]
 // Exports: default
 
-// Module 11187 (getCurrentUserProfile)
-import UserStore from "UserStore" /* 1392 */;
-import UserProfileStore from "UserProfileStore" /* 7703 */;
+// Module 11190 (getCurrentUserProfile)
+import UserStore from "UserStore" /* 1389 */;
+import UserProfileStore from "UserProfileStore" /* 7704 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 6498
-// Function ID: 6499
+// Module ID: 6499
+// Function ID: 6500
 // Name: SelfPresenceStore
-// Dependencies: [6499, 1246, 2039, 6633, 2043, 11195, 5712, 5716, 1087, 7507, 4799, 10651, 1357, 12, 504, 584, 2]
+// Dependencies: [6500, 1243, 2036, 6634, 2040, 11198, 5713, 5717, 1084, 7508, 4800, 10654, 1354, 12, 504, 584, 2]
 
-// Module 6498 (SelfPresenceStore)
+// Module 6499 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef1357 from "module_1357" /* 1357 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import PresenceStore2 from "PresenceStore" /* 5712 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7507 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10651 */;
-import SpotifyStore from "SpotifyStore" /* 6499 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import DetectableGameStore from "DetectableGameStore" /* 2039 */;
-import IdleStore from "IdleStore" /* 6633 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2043 */;
-import LocalActivityStore from "LocalActivityStore" /* 11195 */;
-import SessionsStore from "SessionsStore" /* 5716 */;
-import Constants from "Constants" /* 1087 */;
+import _modDef1354 from "module_1354" /* 1354 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import PresenceStore2 from "PresenceStore" /* 5713 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7508 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10654 */;
+import SpotifyStore from "SpotifyStore" /* 6500 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import DetectableGameStore from "DetectableGameStore" /* 2036 */;
+import IdleStore from "IdleStore" /* 6634 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2040 */;
+import LocalActivityStore from "LocalActivityStore" /* 11198 */;
+import SessionsStore from "SessionsStore" /* 5717 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const PresenceStore = PresenceStore2;
@@ -142,7 +142,7 @@ function handleUpdate() {
     }
     let flag = false;
     const tmp15 = importDefault;
-    if (!_modDef1357(found, found)) {
+    if (!_modDef1354(found, found)) {
       let closure_20 = filterPlayingActivities(found);
       flag = true;
     }

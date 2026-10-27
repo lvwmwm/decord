@@ -1,20 +1,20 @@
-// Module ID: 19121
-// Function ID: 19122
+// Module ID: 19159
+// Function ID: 19160
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 4883, 1392, 19112, 1087, 558, 576, 504, 5025, 7226, 6829, 1267, 6827, 1388, 2]
+// Dependencies: [19, 4884, 1389, 19150, 1084, 558, 576, 504, 5026, 7228, 6831, 1264, 6829, 1385, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName
 
-// Module 19121 (GuildSettingsRolesUtils)
-import Constants from "Constants" /* 1087 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
-import GuildUtilsDefault from "GuildUtils" /* 6829 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7226 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19112 */;
+// Module 19159 (GuildSettingsRolesUtils)
+import Constants from "Constants" /* 1084 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6829 */;
+import GuildUtilsDefault from "GuildUtils" /* 6831 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7228 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19150 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import UserStore from "UserStore" /* 1392 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault, user;
 
 let tmp;
-const AnalyticsUtilsDefault = tmp(1267);
+const AnalyticsUtilsDefault = tmp(1264);
 let react = react_mod;
 const constants = GuildSettingsConstants.GuildSettingsRoleEditSections;
 const AnalyticEvents = Constants.AnalyticEvents;

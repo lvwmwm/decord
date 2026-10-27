@@ -1,14 +1,14 @@
-// Module ID: 5204
-// Function ID: 5205
+// Module ID: 5205
+// Function ID: 5206
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [32, 1253, 558, 576, 504, 1254, 2]
+// Dependencies: [32, 1250, 558, 576, 504, 1251, 2]
 
-// Module 5204 (useCustomThemeDisplaySettings)
+// Module 5205 (useCustomThemeDisplaySettings)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1253 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,14 +107,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomT
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f94403 = () => {
+  const f94609 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f94403);
-  _slicedToArray(obj.useStateFromStoresArray(items, f94403), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f94609);
+  _slicedToArray(obj.useStateFromStoresArray(items, f94609), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

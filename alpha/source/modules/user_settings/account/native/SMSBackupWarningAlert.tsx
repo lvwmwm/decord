@@ -1,14 +1,14 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7174
+// Function ID: 7175
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4971, 558, 576, 5909, 1128, 5234, 5978, 2]
+// Dependencies: [19, 21, 4972, 558, 576, 5910, 1125, 5235, 5979, 2]
 
-// Module 7172 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import AlertDefault from "Alert" /* 5978 */;
+// Module 7174 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import AlertDefault from "Alert" /* 5979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,10 +43,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(onConfirm(1128).t["ETE/oC"]);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(onConfirm(1128).t.N86XcP);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(onConfirm(1125).t["ETE/oC"]);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(onConfirm(1125).t.N86XcP);
     cResult[2] = stringResult;
     cResult[3] = stringResult1;
     tmp7 = stringResult1;
@@ -67,8 +67,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   const title = tmp4.title;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(onConfirm(1128).t.Ed4XQB);
+    const intl3 = tmp(1125).intl;
+    const stringResult2 = intl3.string(onConfirm(1125).t.Ed4XQB);
     cResult[5] = stringResult2;
     tmp11 = stringResult2;
   } else {
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   if (cResult[6] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = closure_3(onConfirm(5234).Text, obj2);
+    const tmp15 = closure_3(onConfirm(5235).Text, obj2);
     cResult[6] = tmp4.title;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -85,8 +85,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   const body = tmp4.body;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1128).intl;
-    const stringResult3 = intl4.string(onConfirm(1128).t.EDU2Eg);
+    const intl4 = tmp(1125).intl;
+    const stringResult3 = intl4.string(onConfirm(1125).t.EDU2Eg);
     cResult[8] = stringResult3;
     tmp16 = stringResult3;
   } else {
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   if (cResult[9] !== tmp4.body) {
     const obj3 = { style: body, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = closure_3(onConfirm(5234).Text, obj3);
+    const tmp20 = closure_3(onConfirm(5235).Text, obj3);
     cResult[9] = tmp4.body;
     cResult[10] = tmp20;
     tmp18 = tmp20;
@@ -127,8 +127,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   onConfirm = onConfirm.onConfirm;
   const tmp = closure_5();
   let obj = {
-    cancelText: intl.string(onConfirm(1128).t["ETE/oC"]),
-    confirmText: intl2.string(onConfirm(1128).t.N86XcP),
+    cancelText: intl.string(onConfirm(1125).t["ETE/oC"]),
+    confirmText: intl2.string(onConfirm(1125).t.N86XcP),
     onConfirm: function handleConfirm() {
       onConfirm();
       const obj = actions_AlertActionCreatorsDefault;
@@ -141,15 +141,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
     children: items
   };
   const tmp2 = AlertDefault;
-  intl = onConfirm(1128).intl;
-  intl2 = onConfirm(1128).intl;
-  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1128).t.Ed4XQB) };
-  const Text = onConfirm(5234).Text;
-  intl3 = onConfirm(1128).intl;
+  intl = onConfirm(1125).intl;
+  intl2 = onConfirm(1125).intl;
+  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1125).t.Ed4XQB) };
+  const Text = onConfirm(5235).Text;
+  intl3 = onConfirm(1125).intl;
   items = [closure_3(Text, obj2), ];
-  const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl4.string(onConfirm(1128).t.EDU2Eg) };
-  const Text2 = onConfirm(5234).Text;
-  intl4 = onConfirm(1128).intl;
+  const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl4.string(onConfirm(1125).t.EDU2Eg) };
+  const Text2 = onConfirm(5235).Text;
+  intl4 = onConfirm(1125).intl;
   items[1] = closure_3(Text2, obj3);
   return closure_4(tmp2, obj);
 });

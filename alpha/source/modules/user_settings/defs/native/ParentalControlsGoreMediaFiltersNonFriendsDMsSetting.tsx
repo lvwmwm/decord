@@ -1,18 +1,18 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17346
+// Function ID: 17347
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7645, 8332, 558, 576, 16109, 8586, 16113, 16118, 1128, 1211, 11209, 2]
+// Dependencies: [7646, 8331, 558, 576, 16147, 8586, 16151, 16156, 1125, 1208, 11212, 2]
 // Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 17305 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 17346 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16109 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16113 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
+import intl3 from "intl" /* 1125 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16147 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16151 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7646 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -62,11 +62,11 @@ function onGoreContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(16113);
+    let obj = selectedTeenId(16151);
     const goreContentNonFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     let obj2 = {
-      title: intl.string(selectedTeenId(1128).t["16/3Bi"]),
-      subtitle: intl2.string(selectedTeenId(1128).t["Yh+HX1"]),
+      title: intl.string(selectedTeenId(1125).t["16/3Bi"]),
+      subtitle: intl2.string(selectedTeenId(1125).t["Yh+HX1"]),
       handlePress(goreContentNonFriendDm) {
           const obj = FamilyCenterControlledSettingsUtils;
           const obj2 = { goreContentNonFriendDm };
@@ -75,11 +75,11 @@ function onGoreContentNonFriendsDmOnPress() {
       currentValue: goreContentNonFriendDm,
       excluded: items
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(16118).handleSensitiveMediaFilterPress;
-    selectedTeenId(16118);
-    intl = selectedTeenId(1128).intl;
-    intl2 = selectedTeenId(1128).intl;
-    items = [selectedTeenId(1211).ExplicitContentRedaction.SHOW];
+    const handleSensitiveMediaFilterPress = selectedTeenId(16156).handleSensitiveMediaFilterPress;
+    selectedTeenId(16156);
+    intl = selectedTeenId(1125).intl;
+    intl2 = selectedTeenId(1125).intl;
+    items = [selectedTeenId(1208).ExplicitContentRedaction.SHOW];
     const result = handleSensitiveMediaFilterPress(obj2);
   }
 }

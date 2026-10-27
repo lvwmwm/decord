@@ -1,20 +1,20 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15170
+// Function ID: 15171
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5669, 14078, 5234, 15132, 1128, 5244, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 5670, 14092, 5235, 15168, 1125, 5245, 2]
 
-// Module 15134 (ActivateDeviceError)
+// Module 15170 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14078 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15132 */;
+import intl4 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14092 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15168 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
-    const Text = tmp(5234).Text;
-    intl = tmp(1128).intl;
+    const Text = tmp(5235).Text;
+    intl = tmp(1125).intl;
     const tmp13 = React3(Text, obj3);
     cResult[2] = tmp13;
     tmp10 = tmp13;
@@ -62,8 +62,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
     const obj4 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
     items = [tmp10, ];
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
-    const Text2 = tmp(5234).Text;
-    intl2 = tmp(1128).intl;
+    const Text2 = tmp(5235).Text;
+    intl2 = tmp(1125).intl;
     items[1] = React3(Text2, obj5);
     const tmp19 = hasOwnProperty(View, obj4);
     cResult[3] = tmp19;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
     tmp14 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult = intl3.string(intl4.t["5911Lb"]);
     cResult[4] = stringResult;
     tmp20 = stringResult;

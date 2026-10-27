@@ -1,18 +1,18 @@
-// Module ID: 5210
-// Function ID: 5211
+// Module ID: 5211
+// Function ID: 5212
 // Name: ActionSheetActionCreators
-// Dependencies: [109, 19, 5211, 21, 5212, 5213, 1896, 584, 2]
+// Dependencies: [109, 19, 5212, 21, 5213, 5214, 1893, 584, 2]
 // Exports: showActionSheet
 
-// Module 5210 (ActionSheetActionCreators)
+// Module 5211 (ActionSheetActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5214 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5211 */;
+import ActionSheetStore from "ActionSheetStore" /* 5212 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["impressionName", "impressionProperties", "backdropKind", "disableHapticOnOpen", "appEntryKey"];
@@ -28,7 +28,7 @@ let obj = {
     } else {
       nextPromise = promise();
     }
-    nextPromise.then((result) => {
+    return nextPromise.then((result) => {
       let appEntryKey;
       let backdropKind;
       let disableHapticOnOpen;

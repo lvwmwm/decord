@@ -1,10 +1,10 @@
-// Module ID: 5140
-// Function ID: 5141
+// Module ID: 5141
+// Function ID: 5142
 // Name: getNodeText
-// Dependencies: [2, 5041]
+// Dependencies: [2, 5042]
 
-// Module 5140 (getNodeText)
-import react from "react" /* 5041 */;
+// Module 5141 (getNodeText)
+import react from "react" /* 5042 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/utils/shared/getNodeText.tsx");

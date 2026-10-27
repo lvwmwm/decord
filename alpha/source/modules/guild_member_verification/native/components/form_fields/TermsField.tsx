@@ -1,17 +1,17 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6898
+// Function ID: 6899
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4971, 558, 576, 6897, 1128, 6900, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 6899, 1125, 6902, 2]
 
-// Module 6896 (TermsField)
+// Module 6898 (TermsField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import TermsFieldListDefault from "TermsFieldList" /* 6897 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6900 */;
+import intl2 from "intl" /* 1125 */;
+import TermsFieldListDefault from "TermsFieldList" /* 6899 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6902 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsField(a
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t["2EXfGJ"]);
       cResult[3] = stringResult;
       tmp9 = stringResult;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsField(a
     flag = false;
   }
   const obj2 = { start: true, end: true, checked: flag, label: intl.string(intl2.t["2EXfGJ"]), onPress: onChange };
-  intl = tmp5(1128).intl;
+  intl = tmp5(1125).intl;
   items[1] = tmp3(TableCheckboxRow, obj2);
   return tmp(tmp2, obj);
 });

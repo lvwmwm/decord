@@ -1,12 +1,12 @@
-// Module ID: 6855
-// Function ID: 6856
+// Module ID: 6857
+// Function ID: 6858
 // Name: ContextMenuActionCreators
-// Dependencies: [1087, 584, 6856, 1384, 6858, 2]
+// Dependencies: [1084, 584, 6858, 1381, 6860, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 6855 (ContextMenuActionCreators)
+// Module 6857 (ContextMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault;
@@ -113,7 +113,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const self = this;
     const self2 = this;
     dOMRect = new DOMRect(tmp3, sum1, 0, 0);
-    const obj3 = contextMenu(6856);
+    const obj3 = contextMenu(6858);
     let APP = obj3.getCurrentlyInteractingAppContext();
     if (APP == null) {
       APP = AppContext.APP;
@@ -129,10 +129,10 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
       enableSpellCheck = enableSpellCheck.enableSpellCheck;
     }
     if (enableSpellCheck) {
-      const tmp14Result = contextMenu(1384);
+      const tmp14Result = contextMenu(1381);
       if (tmp14Result.isDesktop()) {
         if (nativeEvent.isTrusted) {
-          const tmp14Result2 = contextMenu(6858);
+          const tmp14Result2 = contextMenu(6860);
           importDefault = tmp14Result2.addResultListener(function handler() {
             closure_1();
             contextMenu = DispatcherDefault;

@@ -1,11 +1,11 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17786
+// Function ID: 17787
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 558, 576, 1128, 5150, 4980, 2]
+// Dependencies: [19, 558, 576, 1125, 5151, 4981, 2]
 
-// Module 17745 (useHomeDrawerToggleAccessibilityAction)
-import intl2 from "intl" /* 1128 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
+// Module 17786 (useHomeDrawerToggleAccessibilityAction)
+import intl2 from "intl" /* 1125 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4980);
+const AccessibilityAnnouncer2 = tmp(4981);
 let c3 = "toggle-home-drawer";
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
   let closure_0;
@@ -28,9 +28,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
     let tmp7;
     if (cResult[0] !== arg1) {
       let stringResult;
-      let intl = tmp(1128).intl;
+      let intl = tmp(1125).intl;
       let string = intl.string;
-      let t = tmp(1128).t;
+      let t = tmp(1125).t;
       if (arg1) {
         stringResult = string(t.h8xFEv);
       } else {

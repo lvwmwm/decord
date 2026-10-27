@@ -1,15 +1,15 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16820
+// Function ID: 16821
 // Name: LanguageSetting
-// Dependencies: [2068, 1087, 558, 576, 504, 1128, 11209, 9514, 16779, 2]
+// Dependencies: [2065, 1084, 558, 576, 504, 1125, 11212, 9513, 16821, 2]
 
-// Module 16778 (LanguageSetting)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import LanguageIcon from "LanguageIcon" /* 9514 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+// Module 16820 (LanguageSetting)
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import LanguageIcon from "LanguageIcon" /* 9513 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,12 +39,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguag
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const tmpResult2 = stateFromStores(1128);
+    const tmpResult2 = stateFromStores(1125);
     const availableLocales = tmpResult2.getAvailableLocales();
     const found = availableLocales.find((value) => value.value === stateFromStores);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       stringResult = intl.string(found.localizedName);
     }
     cResult[2] = stateFromStores;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguag
   const found = availableLocales.find((value) => value.value === closure_0);
   let stringResult = null;
   if (null != found) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     stringResult = intl.string(found.localizedName);
   }
   return stringResult;

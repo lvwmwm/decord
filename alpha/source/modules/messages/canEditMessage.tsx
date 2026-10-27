@@ -1,14 +1,14 @@
-// Module ID: 11340
-// Function ID: 11341
+// Module ID: 11343
+// Function ID: 11344
 // Name: canEditMessage
-// Dependencies: [1087, 6816, 6012, 5602, 2]
+// Dependencies: [1084, 6818, 6013, 5603, 2]
 // Exports: default
 
-// Module 11340 (canEditMessage)
-import isForwardMessageDefault from "isForwardMessage" /* 5602 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6816 */;
-import Constants from "Constants" /* 1087 */;
+// Module 11343 (canEditMessage)
+import isForwardMessageDefault from "isForwardMessage" /* 5603 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6013 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6818 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -38,7 +38,7 @@ export default function canEditMessage(author, arg1) {
                 let tmp17 = !author.isPoll();
                 author.isPoll();
                 if (tmp17) {
-                  let tmp19 = !tmp6(5602)(author);
+                  let tmp19 = !tmp6(5603)(author);
                   isForwardMessageDefault(author);
                   if (tmp19) {
                     tmp19 = author.type !== hasOwnProperty.MEDIA_MENTION_MESSAGE;

@@ -1,21 +1,21 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14033
+// Function ID: 14034
 // Name: useActivityStatusLabel
-// Dependencies: [6642, 4823, 4903, 5712, 4913, 5630, 1087, 558, 576, 504, 10638, 10636, 10637, 10644, 1128, 10648, 10653, 2]
+// Dependencies: [6643, 4824, 4904, 5713, 4914, 5631, 1084, 558, 576, 504, 10641, 10639, 10640, 10647, 1125, 10651, 10656, 2]
 
-// Module 14019 (useActivityStatusLabel)
-import Constants from "Constants" /* 1087 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10636 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10637 */;
-import isGameActivityDefault from "isGameActivity" /* 10644 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10648 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10653 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+// Module 14033 (useActivityStatusLabel)
+import Constants from "Constants" /* 1084 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10639 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10640 */;
+import isGameActivityDefault from "isGameActivity" /* 10647 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10651 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10656 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -134,14 +134,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
         if (null != name) {
           let formatToPlainStringResult;
           if ("" !== name) {
-            const intl2 = tmp4(1128).intl;
+            const intl2 = tmp4(1125).intl;
             const obj5 = { name };
-            formatToPlainStringResult = intl2.formatToPlainString(tmp4(1128).t["0wJXSh"], obj5);
+            formatToPlainStringResult = intl2.formatToPlainString(tmp4(1125).t["0wJXSh"], obj5);
           }
           voiceActivityStatusText = formatToPlainStringResult;
         }
-        const intl = tmp4(1128).intl;
-        formatToPlainStringResult = intl.string(tmp4(1128).t.eXan7B);
+        const intl = tmp4(1125).intl;
+        formatToPlainStringResult = intl.string(tmp4(1125).t.eXan7B);
       } else {
         let found1;
         if (activities != null) {
@@ -246,14 +246,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       if (null != name) {
         let formatToPlainStringResult;
         if ("" !== name) {
-          const intl2 = tmp4(1128).intl;
+          const intl2 = tmp4(1125).intl;
           const obj5 = { name };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1128).t["0wJXSh"], obj5);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1125).t["0wJXSh"], obj5);
         }
         voiceActivityStatusText = formatToPlainStringResult;
       }
-      const intl = tmp4(1128).intl;
-      formatToPlainStringResult = intl.string(tmp4(1128).t.eXan7B);
+      const intl = tmp4(1125).intl;
+      formatToPlainStringResult = intl.string(tmp4(1125).t.eXan7B);
     } else {
       let found1;
       if (activities != null) {

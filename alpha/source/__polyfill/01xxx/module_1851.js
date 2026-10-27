@@ -1,41 +1,38 @@
 // Module ID: 1851
 // Function ID: 1852
-// Dependencies: [19, 17]
-// Exports: useKeyboardContext
+// Dependencies: [32, 19, 17, 1645]
+// Exports: useWindowDimensions
 
 // Module 1851
 import react_native from "react-native" /* 17 */;
+import KeyboardControllerNative from "KeyboardControllerNative" /* 1645 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
-let _window;
-let createContext;
-let obj2;
-let obj4;
-let value;
-let value2;
-function get() {
-  return c0;
-}
-({ useContext: _window, createContext } = react);
-const Animated = react_native.Animated;
-class NOOP {
-  constructor() {
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+const Dimensions = react_native.Dimensions;
+const size = Dimensions.get("window");
+let closure_5 = { width: size.width, height: size.height };
+let WindowDimensionsEvents = KeyboardControllerNative.WindowDimensionsEvents;
+WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+  closure_5 = arg0;
+});
 
-  }
-}
-class NESTED_NOOP {
-  constructor() {
-    return NOOP;
-  }
-}
-const obj = { value: 0, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-let c0 = null;
-const obj3 = { enabled: true, animated: obj4, reanimated: { progress: obj, height: obj }, layout: obj2, update: Promise.resolve, setKeyboardHandlers: NESTED_NOOP, setInputHandlers: NESTED_NOOP, setEnabled: NOOP };
-obj2 = { value: null, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-obj4 = { progress: value, height: value2 };
-value = new Animated.Value(0);
-value2 = new Animated.Value(0);
-const context = createContext(obj3);
-
-export const KeyboardContext = context;
-export const useKeyboardContext = () => React(context);
+export const useWindowDimensions = () => {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_4(closure_5);
+  closure_3(() => {
+    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
+    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+      closure_0(arg0);
+    });
+    closure_0(closure_1_5);
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
+};

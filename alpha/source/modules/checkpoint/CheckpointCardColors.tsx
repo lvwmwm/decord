@@ -1,11 +1,11 @@
 // Module ID: 8624
 // Function ID: 8625
 // Name: CheckpointCardColors
-// Dependencies: [8625, 8626, 8627, 8628, 8629, 8630, 8631, 8632, 8633, 8634, 8635, 8636, 8637, 8638, 8639, 8640, 8641, 8642, 6041, 2]
+// Dependencies: [8625, 8626, 8627, 8628, 8629, 8630, 8631, 8632, 8633, 8634, 8635, 8636, 8637, 8638, 8639, 8640, 8641, 8642, 6044, 2]
 // Exports: getCardColors
 
 // Module 8624 (CheckpointCardColors)
-import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6041 */;
+import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6044 */;
 import _modDef8625 from "module_8625" /* 8625 */;
 import _modDef8626 from "module_8626" /* 8626 */;
 import _modDef8627 from "module_8627" /* 8627 */;

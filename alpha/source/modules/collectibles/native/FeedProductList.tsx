@@ -1,17 +1,17 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17266
+// Function ID: 17267
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 4971, 9357, 558, 576, 17226, 9474, 17227, 2]
+// Dependencies: [19, 17, 21, 4972, 9356, 558, 576, 17267, 9473, 17268, 2]
 
-// Module 17225 (FeedProductList)
+// Module 17266 (FeedProductList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9357 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9474 */;
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 17227 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9356 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9473 */;
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 17268 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Skeleto
   const cResult = obj.c(11);
   ({ loadingCardsNum, accessibilityLabel } = arg0);
   const tmp2 = closure_5();
-  let obj2 = cardWidth(17226);
+  let obj2 = cardWidth(17267);
   const cardLayout = obj2.useCardLayout();
   ({ columns, cardWidth } = cardLayout);
   const rowWidth = cardLayout.rowWidth;

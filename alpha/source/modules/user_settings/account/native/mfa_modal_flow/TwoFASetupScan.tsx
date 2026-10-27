@@ -1,15 +1,15 @@
-// Module ID: 16053
-// Function ID: 16054
+// Module ID: 16091
+// Function ID: 16092
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4971, 587, 558, 576, 7285, 16051, 1128, 1202, 5234, 6908, 16047, 7221, 2]
+// Dependencies: [32, 19, 21, 4972, 587, 558, 576, 7287, 16089, 1125, 1199, 5235, 6910, 16085, 7223, 2]
 
-// Module 16053 (TwoFASetupScan)
+// Module 16091 (TwoFASetupScan)
 import nativeDefault from "native" /* 587 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = totpSecret(16051);
+  const tmpResult = totpSecret(16089);
   const twoFASetupStyles = tmpResult.useTwoFASetupStyles();
   if (cResult[2] === twoFASetupStyles.modalHeader) {
     let tmp10;
@@ -56,8 +56,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(totpSecret(1128).t["hg/+aT"]);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(totpSecret(1125).t["hg/+aT"]);
       cResult[5] = stringResult;
       tmp12 = stringResult;
     } else {
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
     }
     if (cResult[6] !== tmp10) {
       const obj2 = { style: tmp10, children: tmp12 };
-      const tmp16 = closure_4(totpSecret(1202).LegacyText, obj2);
+      const tmp16 = closure_4(totpSecret(1199).LegacyText, obj2);
       cResult[6] = tmp10;
       cResult[7] = tmp16;
       tmp14 = tmp16;
@@ -84,8 +84,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult1 = intl2.string(totpSecret(1128).t["UQR+Qy"]);
+        const intl2 = tmp(1125).intl;
+        const stringResult1 = intl2.string(totpSecret(1125).t["UQR+Qy"]);
         cResult[11] = stringResult1;
         tmp18 = stringResult1;
       } else {
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
       }
       if (cResult[12] !== tmp17) {
         const obj3 = { style: tmp17, children: tmp18 };
-        const tmp22 = closure_4(totpSecret(1202).LegacyText, obj3);
+        const tmp22 = closure_4(totpSecret(1199).LegacyText, obj3);
         cResult[12] = tmp17;
         cResult[13] = tmp22;
         tmp20 = tmp22;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
       }
       if (cResult[15] !== totpSecret) {
         const obj5 = { variant: "text-md/bold", style: tmp23, children: totpSecret };
-        const tmp26 = closure_4(totpSecret(5234).Text, obj5);
+        const tmp26 = closure_4(totpSecret(5235).Text, obj5);
         cResult[15] = totpSecret;
         cResult[16] = tmp26;
         tmp24 = tmp26;
@@ -119,9 +119,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
       }
       if (cResult[17] !== tmp6) {
         let stringResult2;
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const string = intl3.string;
-        const t = tmp(1128).t;
+        const t = tmp(1125).t;
         if (tmp6) {
           stringResult2 = string(t.mGZ66D);
         } else {
@@ -156,8 +156,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
               }
             }
           }
-          const obj6 = { children: closure_5(totpSecret(7221).SafeAreaPaddingView, obj7) };
-          const TwoFASetupModalScreen = tmp(16047).TwoFASetupModalScreen;
+          const obj6 = { children: closure_5(totpSecret(7223).SafeAreaPaddingView, obj7) };
+          const TwoFASetupModalScreen = tmp(16085).TwoFASetupModalScreen;
           obj7 = { bottom: true, style: tmp9, children: items };
           items = [tmp14, tmp20, tmp24, tmp32];
           const tmp38 = closure_4(TwoFASetupModalScreen, obj6);
@@ -170,14 +170,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
           tmp35 = tmp38;
         }
         const obj8 = { accessibilityRole: "button", onPress: tmp7, children: tmp29 };
-        const tmp34 = closure_4(totpSecret(6908).PressableOpacity, obj8);
+        const tmp34 = closure_4(totpSecret(6910).PressableOpacity, obj8);
         cResult[22] = tmp7;
         cResult[23] = tmp29;
         cResult[24] = tmp34;
         tmp32 = tmp34;
       }
       const obj9 = { style: tmp4.copy, children: tmp27 };
-      const tmp31 = closure_4(totpSecret(1202).LegacyText, obj9);
+      const tmp31 = closure_4(totpSecret(1199).LegacyText, obj9);
       cResult[19] = tmp4.copy;
       cResult[20] = tmp27;
       cResult[21] = tmp31;
@@ -216,31 +216,31 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetup
     const obj = ClipboardUtils;
     obj.copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(16051);
+  let obj = totpSecret(16089);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  const TwoFASetupModalScreen = totpSecret(16047).TwoFASetupModalScreen;
+  const TwoFASetupModalScreen = totpSecret(16085).TwoFASetupModalScreen;
   const obj2 = { bottom: true, style: tmp.container, children: items2 };
-  const SafeAreaPaddingView = totpSecret(7221).SafeAreaPaddingView;
-  const obj3 = { style: items1, children: intl.string(totpSecret(1128).t["hg/+aT"]) };
+  const SafeAreaPaddingView = totpSecret(7223).SafeAreaPaddingView;
+  const obj3 = { style: items1, children: intl.string(totpSecret(1125).t["hg/+aT"]) };
   items1 = [, ];
   ({ modalHeader: arr2[0], text: arr2[1] } = twoFASetupStyles);
-  const LegacyText = totpSecret(1202).LegacyText;
-  intl = totpSecret(1128).intl;
+  const LegacyText = totpSecret(1199).LegacyText;
+  intl = totpSecret(1125).intl;
   items2 = [closure_4(LegacyText, obj3), , , ];
-  const obj4 = { style: items3, children: intl2.string(totpSecret(1128).t["UQR+Qy"]) };
+  const obj4 = { style: items3, children: intl2.string(totpSecret(1125).t["UQR+Qy"]) };
   items3 = [, ];
   ({ modalBody: arr4[0], text: arr4[1] } = twoFASetupStyles);
-  const LegacyText2 = totpSecret(1202).LegacyText;
-  intl2 = totpSecret(1128).intl;
+  const LegacyText2 = totpSecret(1199).LegacyText;
+  intl2 = totpSecret(1125).intl;
   items2[1] = closure_4(LegacyText2, obj4);
-  items2[2] = closure_4(totpSecret(5234).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = closure_4(totpSecret(5235).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
   const obj5 = { accessibilityRole: "button", onPress: callback, children: closure_4(LegacyText3, obj6) };
-  const PressableOpacity = totpSecret(6908).PressableOpacity;
+  const PressableOpacity = totpSecret(6910).PressableOpacity;
   obj6 = { style: tmp.copy, children: stringResult };
-  LegacyText3 = totpSecret(1202).LegacyText;
-  const intl3 = totpSecret(1128).intl;
+  LegacyText3 = totpSecret(1199).LegacyText;
+  const intl3 = totpSecret(1125).intl;
   const string = intl3.string;
-  const t = totpSecret(1128).t;
+  const t = totpSecret(1125).t;
   const tmp7 = closure_5;
   if (first) {
     stringResult = string(t.mGZ66D);

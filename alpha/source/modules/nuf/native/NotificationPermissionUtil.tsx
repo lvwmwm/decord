@@ -1,21 +1,21 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13328
+// Function ID: 13329
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 13312, 13313, 1087, 7868, 7891, 10757, 1267, 13315, 13321, 558, 576, 13322, 504, 2]
+// Dependencies: [32, 5, 19, 17, 13326, 13327, 1084, 7869, 7892, 10760, 1264, 13329, 13335, 558, 576, 13336, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 13314 (NotificationPermissionUtil)
+// Module 13328 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
-import react_nativeDefault from "react-native" /* 7891 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13313 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13322 */;
+import Constants from "Constants" /* 1084 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7869 */;
+import react_nativeDefault from "react-native" /* 7892 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13327 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13312 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13326 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _requestPushNotificationPermission() {
     let c6 = 0;
     return (async (arg0, value, arg2) => {
       let action_type;
-      let obj6;
+      let obj8;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -59,43 +59,60 @@ let obj = function _requestPushNotificationPermission() {
               closure_3 = undefined;
               c5 = 1;
               c6 = 1;
-              const obj7 = { value: obj6.getNotificationAuthorizationStatus(), done: false };
-              obj6 = react_nativeDefault;
+              const obj7 = { value: obj8.getNotificationAuthorizationStatus(), done: false };
+              obj8 = react_nativeDefault;
               return obj7;
             }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
           } else {
-            closure_3 = value;
-            if (closure_3 === closure_132_10.DENIED) {
-              closure_132_1(closure_132_2[9])();
-              const obj9 = { action_type: closure_132_8.TO_SETTINGS, action_location };
-              const obj3 = closure_132_1(closure_132_2[10]);
-              obj3.track(closure_132_9.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj9);
-              closure_2();
-            } else if (closure_3 === closure_132_10.AUTHORIZED) {
-              let obj2 = closure_132_0(closure_132_2[11]);
-              const result = obj2.updateNotificationAuthorizationStatus(closure_3);
-              closure_2();
-            } else {
-              obj = closure_132_1(closure_132_2[12]);
-              const permission = obj.requestPermission((permission_granted) => {
-                obj = action_location(closure_2[10]);
-                const obj2 = { action_type, action_location, permission_granted };
-                obj.track(constants.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
-                closure_1_2();
-              });
+            if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                closure_3 = value;
+                if (closure_3 === closure_132_10.DENIED) {
+                  closure_132_1(closure_132_2[9])();
+                  const obj10 = { action_type: closure_132_8.TO_SETTINGS, action_location };
+                  const obj5 = closure_132_1(closure_132_2[10]);
+                  obj5.track(closure_132_9.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj10);
+                  closure_2();
+                } else if (closure_3 === closure_132_10.AUTHORIZED) {
+                  const obj4 = closure_132_0(closure_132_2[11]);
+                  const result = obj4.updateNotificationAuthorizationStatus(closure_3);
+                  closure_2();
+                } else {
+                  let obj2 = closure_132_1(closure_132_2[12]);
+                  c5 = 2;
+                  c6 = 1;
+                  const obj11 = {
+                    value: obj2.requestPermission((permission_granted) => {
+                                  obj = action_location(closure_2[10]);
+                                  const obj2 = { action_type, action_location, permission_granted };
+                                  obj.track(constants.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+                                  closure_1_2();
+                                }),
+                    done: false
+                  };
+                  return obj11;
+                }
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value, done: true };
+              return obj;
             }
             c6 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp36) {
+        } catch (tmp35) {
           c6 = 3;
-          throw tmp36;
+          throw tmp35;
         }
       }
     })();

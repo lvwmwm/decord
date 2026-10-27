@@ -1,14 +1,14 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16463
+// Function ID: 16464
 // Name: OrbsArcadeRewardRing
-// Dependencies: [19, 17, 21, 5052, 7962, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5053, 7960, 558, 576, 2]
 
-// Module 16424 (OrbsArcadeRewardRing)
+// Module 16463 (OrbsArcadeRewardRing)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

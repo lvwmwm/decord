@@ -1,43 +1,20 @@
 // Module ID: 1837
 // Function ID: 1838
-// Dependencies: [1662, 1661]
-// Exports: setGestureState
+// Dependencies: [1754]
+// Exports: createAnimatedPropAdapter
 
 // Module 1837
-import react_native from "react-native" /* 1662 */;
-import module_1661 from "module_1661" /* 1661 */;
+import configureProps from "configureProps" /* 1754 */;
 
-function setGestureStateNative(arg0, arg1) {
-  if (globalThis._WORKLET) {
-    global._setGestureState(arg0, arg1);
-  } else {
-    const logger = react_native.logger;
-    logger.warn("You can not use setGestureState in non-worklet function.");
-  }
-}
-setGestureStateNative.__closure = { logger: react_native.logger };
-setGestureStateNative.__workletHash = 13301434022691;
-setGestureStateNative.__initData = { code: "function setGestureStateNative_Pnpm_setGestureStateTs1(handlerTag,newState){const{logger}=this.__closure;if(!_WORKLET){logger.warn('You can not use setGestureState in non-worklet function.');return;}global._setGestureState(handlerTag,newState);}" };
-({ logger: react_native.logger });
-if (module_1661.shouldBeUseWeb()) {
-  let setGestureStateJest;
-  const _module1 = module_1661;
-  if (_module1.isJest()) {
-    setGestureStateJest = function setGestureStateJest() {
-      const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Jest.");
-    };
-  } else {
-    const _module2 = module_1661;
-    setGestureStateJest = _module2.isChromeDebugger() ? (function setGestureStateChromeDebugger() {
-      const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Chrome Debugger.");
-    }) : (function setGestureStateDefault() {
-      const logger = react_native.logger;
-      logger.warn("setGestureState() is not supported on this configuration.");
+
+export const createAnimatedPropAdapter = function createAnimatedPropAdapter(arg0, arr) {
+  const obj = {};
+  if (arr != null) {
+    const item = arr.forEach((item) => {
+      obj[item] = true;
     });
   }
-  setGestureStateNative = setGestureStateJest;
-}
-
-export const setGestureState = setGestureStateNative;
+  const obj2 = configureProps;
+  const result = obj2.addWhitelistedNativeProps(obj);
+  return arg0;
+};

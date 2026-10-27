@@ -1,14 +1,14 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14968
+// Function ID: 14969
 // Name: GuildSubscriptionRemoval
-// Dependencies: [19, 21, 8724, 14933, 14934, 14935, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 14969, 14970, 14971, 558, 576, 4979, 5670, 2]
 // Exports: getGuildSubscriptionRemovalSource
 
-// Module 14932 (GuildSubscriptionRemoval)
+// Module 14968 (GuildSubscriptionRemoval)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4978 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import shared from "shared" /* 4979 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

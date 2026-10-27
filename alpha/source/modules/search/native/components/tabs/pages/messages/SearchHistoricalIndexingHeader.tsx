@@ -1,15 +1,15 @@
-// Module ID: 18168
-// Function ID: 18169
+// Module ID: 18202
+// Function ID: 18203
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2068, 9714, 21, 4971, 558, 576, 13246, 1128, 5234, 6905, 2]
+// Dependencies: [19, 2065, 9716, 21, 4972, 558, 576, 13260, 1125, 5235, 6907, 2]
 
-// Module 18168 (SearchHistoricalIndexingHeader)
+// Module 18202 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13246 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13260 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import SearchConstants from "SearchConstants" /* 9714 */;
-import createStyles from "createStyles" /* 4971 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import SearchConstants from "SearchConstants" /* 9716 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -58,9 +58,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         tmp13 = cResult[8];
       }
       if (cResult[9] !== tmp5) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         let obj2 = { count: tmp5 };
-        const formatResult = intl.format(searchContext(1128).t["4Y3O+O"], obj2);
+        const formatResult = intl.format(searchContext(1125).t["4Y3O+O"], obj2);
         cResult[9] = tmp5;
         cResult[10] = formatResult;
         tmp14 = formatResult;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp14) {
-        const tmp18 = jsx(searchContext(5234).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        const tmp18 = jsx(searchContext(5235).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
         cResult[11] = tmp14;
         cResult[12] = tmp18;
         tmp16 = tmp18;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6905).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6907).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;

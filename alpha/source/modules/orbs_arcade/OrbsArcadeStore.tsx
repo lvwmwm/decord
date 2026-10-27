@@ -1,12 +1,12 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16434
+// Function ID: 16435
 // Name: OrbsArcadeStore
-// Dependencies: [502, 16396, 504, 584, 2]
+// Dependencies: [502, 16435, 504, 584, 2]
 
-// Module 16395 (OrbsArcadeStore)
+// Module 16434 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

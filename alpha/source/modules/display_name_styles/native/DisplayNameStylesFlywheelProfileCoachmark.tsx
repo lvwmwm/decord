@@ -1,25 +1,25 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18287
+// Function ID: 18288
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1392, 4820, 21, 4971, 558, 576, 504, 2053, 1128, 2928, 9840, 18254, 2]
+// Dependencies: [19, 17, 1389, 4821, 21, 4972, 558, 576, 504, 2050, 1125, 2929, 9842, 18288, 2]
 
-// Module 18253 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 18287 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import _modDef2928 from "module_2928" /* 2928 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import _modDef2929 from "module_2929" /* 2929 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const DisplayNameLockeAbstractUI = tmp(18254);
+const DisplayNameLockeAbstractUI = tmp(18288);
 let react = react_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -65,9 +65,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   }
   if (cResult[4] !== tmp8) {
     let stringResult;
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const tmp13 = _modDef2928;
+    const tmp13 = _modDef2929;
     if (tmp8) {
       stringResult = string(tmp13.h6sykk);
     } else {
@@ -81,9 +81,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   }
   if (cResult[6] !== tmp8) {
     let string2Result;
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const string2 = intl2.string;
-    const tmp17 = _modDef2928;
+    const tmp17 = _modDef2929;
     if (tmp8) {
       string2Result = string2(tmp17.TyUdka);
     } else {
@@ -148,11 +148,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const items = [UserStore];
   const obj = visible(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = markAsDismissed(2053);
+  const obj2 = markAsDismissed(2050);
   const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
-  const intl = visible(1128).intl;
+  const intl = visible(1125).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(2928);
+  const tmp6 = markAsDismissed(2929);
   const tmp4 = markAsDismissed;
   if (result) {
     stringResult = string(tmp6.h6sykk);
@@ -160,9 +160,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     stringResult = string(tmp6.M5amXH);
   }
   dependencyMap = stringResult;
-  const intl2 = tmp(1128).intl;
+  const intl2 = tmp(1125).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(2928);
+  const tmp4Result = tmp4(2929);
   if (result) {
     string2Result = string2(tmp4Result.TyUdka);
   } else {
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(9840);
+  const tmpResult = visible(9842);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 });

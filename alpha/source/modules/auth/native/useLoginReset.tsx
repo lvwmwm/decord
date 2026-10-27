@@ -1,9 +1,9 @@
-// Module ID: 7047
-// Function ID: 7048
+// Module ID: 7049
+// Function ID: 7050
 // Name: useLoginReset
-// Dependencies: [19, 502, 558, 576, 6668, 2]
+// Dependencies: [19, 502, 558, 576, 6669, 2]
 
-// Module 7047 (useLoginReset)
+// Module 7049 (useLoginReset)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

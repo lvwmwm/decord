@@ -1,77 +1,34 @@
 // Module ID: 1584
 // Function ID: 1585
 // Name: react
-// Dependencies: [19, 1549]
-// Exports: useFocusEvents
+// Dependencies: [19, 1532]
+// Exports: useOnRouteFocus
 
 // Module 1584 (react)
-import react2 from "react" /* 1549 */;
+import react2 from "react" /* 1532 */;
 import react from "react" /* 19 */;
 
 
-export const useFocusEvents = function useFocusEvents(arg0) {
-  let emitter;
-  let state;
-  ({ state, emitter } = arg0);
-  const context = react.useContext(react2.NavigationContext);
-  let closure_2 = react.useRef(undefined);
-  const key = state.routes[state.index].key;
-  const items = [key, emitter, context];
-  const effect = react.useEffect(() => {
-    let obj = context;
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = obj.addListener("focus", () => {
-        ref.current = target;
-        const obj = { type: "focus", target };
-        emitter.emit(obj);
-      });
+export const useOnRouteFocus = function useOnRouteFocus(router) {
+  router = router.router;
+  const getState = router.getState;
+  const key = router.key;
+  const setState = router.setState;
+  const onRouteFocus = react.useContext(react2.NavigationBuilderContext).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return react.useCallback((arg0) => {
+    const tmp = getState();
+    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
+    if (stateForRouteFocus !== tmp) {
+      setState(stateForRouteFocus);
     }
-    return addListenerResult;
+    let tmp6 = undefined !== onRouteFocus;
+    const tmp5 = onRouteFocus;
+    if (tmp6) {
+      tmp6 = undefined !== key;
+    }
+    if (tmp6) {
+      tmp5(key);
+    }
   }, items);
-  const items1 = [key, emitter, context];
-  const effect1 = react.useEffect(() => {
-    let target;
-    let obj = context;
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = obj.addListener("blur", () => {
-        ref.current = undefined;
-        const obj = { type: "blur", target };
-        emitter.emit(obj);
-      });
-    }
-    return addListenerResult;
-  }, items1);
-  const items2 = [key, emitter, context];
-  const effect2 = react.useEffect(() => {
-    const current = ref.current;
-    let isFocusedResult = !context;
-    const tmp = ref;
-    if (context) {
-      isFocusedResult = obj.isFocused();
-    }
-    if (isFocusedResult) {
-      tmp.current = key;
-    }
-    const tmp5 = undefined !== current || context;
-    if (!tmp5) {
-      const obj2 = { type: "focus", target: key };
-      emitter.emit(obj2);
-    }
-    let tmp10 = current !== key;
-    const tmp9 = key;
-    if (tmp10) {
-      tmp10 = isFocusedResult;
-    }
-    if (tmp10) {
-      tmp10 = tmp4;
-    }
-    if (tmp10) {
-      const obj3 = { type: "blur", target: current };
-      emitter.emit(obj3);
-      const obj4 = { type: "focus", target: tmp9 };
-      emitter.emit(obj4);
-    }
-  }, items2);
 };

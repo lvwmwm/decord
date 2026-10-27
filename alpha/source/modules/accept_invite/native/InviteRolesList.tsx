@@ -1,15 +1,15 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13679
+// Function ID: 13680
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4971, 558, 576, 4881, 5234, 1128, 10838, 5977, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 4882, 5235, 1125, 10841, 5978, 2]
 
-// Module 13665 (InviteRolesList)
+// Module 13679 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 4881 */;
-import RolePillDefault from "RolePill" /* 10838 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 4882 */;
+import RolePillDefault from "RolePill" /* 10841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
         }
         const items = [];
         HermesBuiltin.arraySpread(items, roles, 0);
-        const sorted = items.sort(tmp2(4881).sortInviteRoles);
+        const sorted = items.sort(tmp2(4882).sortInviteRoles);
         const mapped = sorted.map(tmp7);
         cResult[1] = guild;
         cResult[2] = roles;
@@ -68,9 +68,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
           let tmp17;
           const _Symbol = Symbol;
           if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1128).t.stcSfI) };
-            const Text = tmp2(5234).Text;
-            intl = tmp2(1128).intl;
+            const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1125).t.stcSfI) };
+            const Text = tmp2(5235).Text;
+            intl = tmp2(1125).intl;
             const tmp14 = closure_5(Text, obj2);
             cResult[6] = tmp14;
             tmp12 = tmp14;
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
               }
               const obj3 = { spacing: 4, style, children: items1 };
               items1 = [tmp12, tmp19];
-              const tmp25 = closure_6(guild(5977).Stack, obj3);
+              const tmp25 = closure_6(guild(5978).Stack, obj3);
               cResult[15] = style;
               cResult[16] = tmp19;
               cResult[17] = tmp25;
@@ -168,10 +168,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(5977).Stack;
-      const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1128).t.stcSfI) };
-      const Text = guild(5234).Text;
-      intl = guild(1128).intl;
+      const Stack = guild(5978).Stack;
+      const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1125).t.stcSfI) };
+      const Text = guild(5235).Text;
+      intl = guild(1125).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {
         style: tmp.rolesRow,

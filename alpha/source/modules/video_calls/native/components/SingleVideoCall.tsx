@@ -1,14 +1,14 @@
-// Module ID: 11685
-// Function ID: 11686
+// Module ID: 11687
+// Function ID: 11688
 // Name: SingleVideoCall
-// Dependencies: [19, 10883, 21, 558, 576, 1633, 7253, 5710, 8668, 11444, 1202, 11434, 2]
+// Dependencies: [19, 10886, 21, 558, 576, 1630, 7255, 5711, 8668, 11447, 1199, 11437, 2]
 
-// Module 11685 (SingleVideoCall)
+// Module 11687 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10883 */;
+import ChannelCallStore from "ChannelCallStore" /* 10886 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,10 +26,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
   let obj = channel(576);
   const cResult = obj.c(13);
   ({ participant, channel } = arg0);
-  ({ bottom, right } = analyticsLocations(1633)());
-  analyticsLocations(1633)();
+  ({ bottom, right } = analyticsLocations(1630)());
+  analyticsLocations(1630)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(7253)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7255)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     function handleDoubleTap() {
       React3();
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
           }
         }
       }
-      tmp4(11444);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1202).AvatarSizes.PROFILE} resizeMode={channel(11434).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(11447);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1199).AvatarSizes.PROFILE} resizeMode={channel(11437).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

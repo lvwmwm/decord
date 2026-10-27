@@ -1,15 +1,15 @@
-// Module ID: 4999
-// Function ID: 5000
+// Module ID: 5000
+// Function ID: 5001
 // Name: HexagonCampaignPerkAvailability
-// Dependencies: [1392, 558, 576, 5000, 504, 4998, 2]
+// Dependencies: [1389, 558, 576, 5001, 504, 4999, 2]
 // Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser
 
-// Module 4999 (HexagonCampaignPerkAvailability)
+// Module 5000 (HexagonCampaignPerkAvailability)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4998 */;
-import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5000 */;
-import UserStore from "UserStore" /* 1392 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4999 */;
+import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5001 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

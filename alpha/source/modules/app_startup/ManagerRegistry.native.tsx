@@ -1,14 +1,19 @@
-// Module ID: 18741
-// Function ID: 18742
+// Module ID: 18777
+// Function ID: 18778
 // Name: ManagerRegistry
-// Dependencies: [18742, 18745, 18752, 18753, 18754, 18755, 14106, 18758, 18759, 18762, 18763, 18765, 13799, 18766, 18767, 18768, 18772, 18773, 18774, 18776, 13386, 18781, 18782, 13586, 18783, 18784, 18785, 18786, 18791, 18792, 18796, 18797, 18800, 18802, 18820, 10119, 8296, 15799, 18821, 18822, 18824, 18826, 18827, 18828, 8887, 18829, 18830, 18831, 18832, 18840, 18841, 18857, 16930, 18859, 18860, 18864, 18866, 18868, 18869, 9717, 18882, 16678, 18883, 18884, 18889, 18891, 18905, 18922, 18925, 14605, 18926, 18927, 18936, 18937, 18939, 18940, 18942, 18943, 18946, 18948, 18949, 18951, 18952, 18953, 18954, 18955, 18956, 18960, 18961, 11525, 18963, 18966, 18967, 18969, 18970, 18974, 7212, 9070, 18975, 18976, 8741, 18977, 18760, 18978, 18979, 19366, 19367, 19368, 19370, 19371, 19372, 19374, 19375, 19377, 19378, 19380, 19381, 19382, 19386, 19387, 19388, 19389, 17049, 19391, 19392, 19395, 19396, 19418, 19422, 19423, 19426, 19427, 19454, 19455, 19456, 19457, 19458, 19459, 19462, 2]
+// Dependencies: [18778, 18781, 18788, 18789, 18790, 18791, 14120, 1381, 18794, 18795, 18798, 18799, 18801, 13813, 18802, 18803, 18804, 18808, 18809, 18810, 18812, 13400, 18817, 18818, 13600, 18819, 18820, 18821, 18822, 18827, 18828, 18834, 18835, 18838, 18840, 18858, 10121, 8294, 15837, 18859, 18860, 18862, 18864, 18865, 18866, 8887, 18867, 18868, 18869, 18870, 18878, 18879, 18895, 16972, 18897, 18898, 18902, 18904, 18906, 18907, 9719, 18920, 16720, 18921, 18922, 18927, 18929, 18943, 18960, 18963, 14641, 18964, 18965, 18974, 18975, 18977, 18978, 18980, 18981, 18984, 18986, 18987, 18989, 18990, 18991, 18992, 18993, 18994, 18998, 18999, 11527, 19001, 19004, 19005, 19007, 19008, 19012, 7214, 9070, 19013, 19014, 8741, 19015, 18796, 19016, 19017, 19404, 19405, 19406, 19408, 19409, 19410, 19412, 19413, 19415, 19416, 19418, 19419, 19420, 19423, 19424, 19425, 19426, 17091, 19428, 19429, 19432, 19433, 19455, 19459, 19460, 19461, 19464, 19465, 19492, 19493, 19494, 19495, 19496, 19497, 19500, 2]
 
-// Module 18741 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 19462 */;
+// Module 18777 (ManagerRegistry)
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import ManagerRegistryShared from "ManagerRegistryShared" /* 19500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let PlatformUtils;
+function inlineRequire() {
+  return require("ATTManager").default;
+}
 const obj = {
   AcceptInviteManager: {
     actions: ["DISPLAYED_INVITE_SHOW", "DISPLAYED_INVITE_CLEAR", "DEFERRED_INVITE_SHOW", "REGISTER_SUCCESS"],
@@ -55,13 +60,7 @@ const obj = {
       return require("AppStoreOverlayTelemetryManager").default;
     }
   },
-  ATTManager: {
-    actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire() {
-      return require("ATTManager").default;
-    },
-    neverLoadBeforeConnectionOpen: true
-  },
+  ATTManager: { actions: PlatformUtils.isIOS() ? ["POST_CONNECTION_OPEN", "APP_STATE_UPDATE", "PUSH_NOTIFICATION_AUTHORIZATION_STATUS_UPDATE"] : ["POST_CONNECTION_OPEN"], inlineRequire, neverLoadBeforeConnectionOpen: true },
   AudioSessionModeManager: {
     inlineRequire() {
       return require("AudioSessionModeManager").default;
@@ -846,6 +845,13 @@ const obj = {
     },
     neverLoadBeforeConnectionOpen: true
   },
+  RequestToStreamManager: {
+    actions: ["VOICE_STATE_UPDATES"],
+    inlineRequire() {
+      return require("RequestToStreamManager").default;
+    },
+    neverLoadBeforeConnectionOpen: true
+  },
   LibdiscoreExperimentManager: {
     actions: [],
     inlineRequire() {
@@ -917,6 +923,8 @@ const obj = {
     loadRightBeforeConnectionOpen: true
   }
 };
+PlatformUtils = PlatformUtils_mod;
+({ actions: PlatformUtils.isIOS() ? ["POST_CONNECTION_OPEN", "APP_STATE_UPDATE", "PUSH_NOTIFICATION_AUTHORIZATION_STATUS_UPDATE"] : ["POST_CONNECTION_OPEN"], inlineRequire, neverLoadBeforeConnectionOpen: true });
 ManagerRegistryShared.initialize(obj);
 const result = size.fileFinishedImporting("modules/app_startup/ManagerRegistry.native.tsx");
 

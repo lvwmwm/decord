@@ -1,22 +1,22 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8287
+// Function ID: 8288
 // Name: Tracking
-// Dependencies: [4823, 7631, 7384, 8290, 1087, 5711, 8291, 1267, 8297, 8298, 1384, 8302, 2]
+// Dependencies: [4824, 7632, 7386, 8288, 1084, 5712, 8289, 1264, 8295, 8296, 1381, 8300, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 8289 (Tracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import DraftStore2 from "DraftStore" /* 7631 */;
-import TrackingUtils from "TrackingUtils" /* 8291 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8297 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8298 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8302 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7384 */;
-import ForumSearchStore from "ForumSearchStore" /* 8290 */;
-import Constants from "Constants" /* 1087 */;
+// Module 8287 (Tracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
+import DraftStore2 from "DraftStore" /* 7632 */;
+import TrackingUtils from "TrackingUtils" /* 8289 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8295 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8296 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8300 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7386 */;
+import ForumSearchStore from "ForumSearchStore" /* 8288 */;
+import Constants from "Constants" /* 1084 */;
 import size_mod from "module_2" /* 2 */;
 
 const AppAnalyticsUtilsDefault = AppAnalyticsUtils;

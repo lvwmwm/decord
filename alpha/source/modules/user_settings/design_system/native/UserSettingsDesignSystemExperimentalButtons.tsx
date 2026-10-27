@@ -1,23 +1,23 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17180
+// Function ID: 17181
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1087, 21, 558, 576, 5252, 587, 8913, 6987, 6913, 7147, 5977, 5683, 5244, 5234, 5037, 5258, 8953, 7489, 2]
+// Dependencies: [19, 17, 1084, 21, 558, 576, 5253, 587, 8913, 6989, 6915, 7149, 5978, 5684, 5245, 5235, 5038, 5259, 8953, 7490, 2]
 
-// Module 17139 (UserSettingsDesignSystemExperimentalButtons)
+// Module 17180 (UserSettingsDesignSystemExperimentalButtons)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 5037 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import useToken from "useToken" /* 5252 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5683 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6913 */;
-import TableRowGroup7 from "TableRowGroup" /* 6987 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7147 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7489 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 5038 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import useToken from "useToken" /* 5253 */;
+import LinearGradientDefault from "LinearGradient" /* 5259 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5684 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6915 */;
+import TableRowGroup7 from "TableRowGroup" /* 6989 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7149 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7490 */;
 import native2 from "native" /* 8913 */;
 import RowButton2 from "RowButton" /* 8953 */;
 import react from "react" /* 19 */;
@@ -96,7 +96,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { title: "Header Button", description: "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button.", hasIcons: false, children: metroRequire(_false, obj8) };
     obj8 = { style: tmp9, children: metroRequire(HeaderButton, obj9) };
-    const TableRowGroup = tmp(6987).TableRowGroup;
+    const TableRowGroup = tmp(6989).TableRowGroup;
     obj9 = {
       onPress() {
 
@@ -133,9 +133,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj11 = { title: "Input Button", description: "A specialized button which looks like a text field, but functions as a button.", hasIcons: false, children: metroImportDefault(Stack, obj12) };
-    const TableRowGroup2 = tmp(6987).TableRowGroup;
+    const TableRowGroup2 = tmp(6989).TableRowGroup;
     obj12 = { spacing: nativeDefault.space.PX_24, children: items };
-    Stack = tmp(5977).Stack;
+    Stack = tmp(5978).Stack;
     items = [tmp14, ];
     const obj13 = {
       onPress() {
@@ -170,7 +170,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj15 = { title: "Twin Buttons", description: "TwinButtons is a specialized layout component, which renders two text buttons horizontally next to each other. A horizontal layout for text buttons is often problematic, since internationalization and font size settings can easily render these buttons unreadable. But TwinButtons will force the two buttons to stack vertically under certain conditions to avoid these issues.", hasIcons: false, children: metroImportDefault(TwinButtons, obj16) };
-    const TableRowGroup3 = tmp(6987).TableRowGroup;
+    const TableRowGroup3 = tmp(6989).TableRowGroup;
     obj16 = { children: items1 };
     items1 = [tmp21, ];
     TwinButtons = tmp(8913).TwinButtons;
@@ -217,7 +217,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   if (cResult[12] !== tmp28) {
     const obj21 = { title: "PressableScale", description: "If no button in our catelog of components is compatible with a particular design, then PressableScale can fill some gaps. It will apply the same onPress animation to a custom button.", hasIcons: false, children: metroRequire(_false, obj22) };
     obj22 = { style: tmp28, children: tmp30 };
-    const TableRowGroup4 = tmp(6987).TableRowGroup;
+    const TableRowGroup4 = tmp(6989).TableRowGroup;
     const tmp37 = metroRequire(TableRowGroup4, obj21);
     cResult[12] = tmp28;
     cResult[13] = tmp37;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const obj23 = { title: "Experimental Blur Background Row Button", description: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.", hasIcons: false, children: metroRequire(_false, {}) };
-    const TableRowGroup5 = tmp(6987).TableRowGroup;
+    const TableRowGroup5 = tmp(6989).TableRowGroup;
     const tmp41 = metroRequire(TableRowGroup5, obj23);
     cResult[14] = tmp41;
     tmp38 = tmp41;
@@ -255,7 +255,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
     const obj25 = { theme: ThemeTypes.DARK, children: metroRequire(tmp4Result, obj26) };
-    const ThemeContextProvider = tmp(5037).ThemeContextProvider;
+    const ThemeContextProvider = tmp(5038).ThemeContextProvider;
     obj26 = { style: tmp42, start: tmp43, end: tmp44, colors: tmp45, children: metroRequire(RowButton, obj27) };
     obj27 = {
       icon: AssetRegistryDefault4,
@@ -277,7 +277,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
     const obj28 = { title: "Collapsible Floating Action Button", description: "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.", hasIcons: false, children: metroRequire(_false, obj29) };
     obj29 = { style: { padding: 48 } };
-    const TableRowGroup6 = tmp(6987).TableRowGroup;
+    const TableRowGroup6 = tmp(6989).TableRowGroup;
     const tmp54 = metroRequire(TableRowGroup6, obj28);
     cResult[20] = tmp54;
     tmp51 = tmp54;
@@ -339,7 +339,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp57 = tmp60;
   }
   const obj33 = { spacing: nativeDefault.space.PX_24, style: tmp8, children: items4 };
-  const Stack2 = tmp(5977).Stack;
+  const Stack2 = tmp(5978).Stack;
   items4 = [tmp10, tmp17, tmp24, tmp34, tmp38, tmp46, tmp51];
   const tmp56 = metroImportDefault(Stack2, obj33);
   cResult[21] = tmp8;

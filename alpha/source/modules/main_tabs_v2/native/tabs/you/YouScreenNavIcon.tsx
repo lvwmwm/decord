@@ -1,21 +1,21 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14176
+// Function ID: 14177
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 14155, 587, 9406, 4971, 558, 576, 14156, 1128, 5141, 5234, 8913, 2]
+// Dependencies: [19, 17, 21, 14175, 587, 9405, 4972, 558, 576, 14177, 1125, 5142, 5235, 8913, 2]
 
-// Module 14154 (YouScreenNavIcon)
+// Module 14176 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import mergeProps from "mergeProps" /* 5141 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ClipView from "ClipView" /* 9406 */;
-import getIconSize from "getIconSize" /* 14155 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14156 */;
+import intl2 from "intl" /* 1125 */;
+import mergeProps from "mergeProps" /* 5142 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ClipView from "ClipView" /* 9405 */;
+import getIconSize from "getIconSize" /* 14175 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14177 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,176 +46,195 @@ let closure_10 = createStyles.createStyles((width) => {
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenNavIcon(arg0) {
   let IconComponent;
   let accessibilityLabel;
+  let dotStyle;
+  let icon;
   let intl;
   let items1;
+  let items2;
   let label;
   let onPress;
   let ref;
   let showRedDot;
   let testID;
-  let tmp7;
   const obj = react2;
-  const cResult = obj.c(23);
-  ({ onPress, IconComponent, accessibilityLabel, label, showRedDot, ref, testID } = arg0);
+  const cResult = obj.c(25);
+  ({ onPress, IconComponent, icon, accessibilityLabel, label, showRedDot, dotStyle, ref, testID } = arg0);
   const tmpResult = YouScreenNavIconMeasurer;
   const youScreenNavIconMeasurement = tmpResult.useYouScreenNavIconMeasurement();
   const containerRef = youScreenNavIconMeasurement.containerRef;
   const tmp6 = closure_10(youScreenNavIconMeasurement.width);
-  if (cResult[0] !== IconComponent) {
-    const obj2 = { size: "md", color: TEXT_DEFAULT };
-    const tmp10 = React3(IconComponent, obj2);
-    cResult[0] = IconComponent;
-    cResult[1] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === tmp7) {
-    if (cResult[3] === (undefined !== showRedDot && showRedDot)) {
-      let tmp11;
-      let tmp18;
-      if (cResult[4] === tmp6.dot) {
-        tmp11 = cResult[5];
-      }
-      if (cResult[6] !== (undefined !== showRedDot && showRedDot)) {
-        let tmp19;
-        if (undefined !== showRedDot && showRedDot) {
-          const obj3 = { text: intl.string(intl2.t.y2b7CA) };
-          intl = tmp(1128).intl;
-          tmp19 = obj3;
-        }
-        cResult[6] = undefined !== showRedDot && showRedDot;
-        cResult[7] = tmp19;
-        tmp18 = tmp19;
-      } else {
-        tmp18 = cResult[7];
-      }
-      if (cResult[8] === containerRef) {
-        let tmp20;
-        if (cResult[9] === ref) {
-          tmp20 = cResult[10];
-        }
-        if (label == null) {
-          label = accessibilityLabel;
-        }
-        if (cResult[11] === tmp6.label) {
-          let tmp23;
-          if (cResult[12] === label) {
-            tmp23 = cResult[13];
+  if (cResult[0] === IconComponent) {
+    let tmp7;
+    if (cResult[1] === icon) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === dotStyle) {
+      if (cResult[4] === tmp7) {
+        if (cResult[5] === (undefined !== showRedDot && showRedDot)) {
+          let tmp11;
+          let tmp18;
+          if (cResult[6] === tmp6.dot) {
+            tmp11 = cResult[7];
           }
-          if (cResult[14] === accessibilityLabel) {
-            if (cResult[15] === tmp18) {
-              if (cResult[16] === tmp11) {
-                if (cResult[17] === onPress) {
-                  if (cResult[18] === tmp6.container) {
-                    if (cResult[19] === tmp20) {
-                      if (cResult[20] === tmp23) {
-                        let tmp27;
-                        if (cResult[21] === testID) {
-                          tmp27 = cResult[22];
+          if (cResult[8] !== (undefined !== showRedDot && showRedDot)) {
+            let tmp19;
+            if (undefined !== showRedDot && showRedDot) {
+              const obj2 = { text: intl.string(intl2.t.y2b7CA) };
+              intl = tmp(1125).intl;
+              tmp19 = obj2;
+            }
+            cResult[8] = undefined !== showRedDot && showRedDot;
+            cResult[9] = tmp19;
+            tmp18 = tmp19;
+          } else {
+            tmp18 = cResult[9];
+          }
+          if (cResult[10] === containerRef) {
+            let tmp20;
+            if (cResult[11] === ref) {
+              tmp20 = cResult[12];
+            }
+            if (label == null) {
+              label = accessibilityLabel;
+            }
+            if (cResult[13] === tmp6.label) {
+              let tmp23;
+              if (cResult[14] === label) {
+                tmp23 = cResult[15];
+              }
+              if (cResult[16] === accessibilityLabel) {
+                if (cResult[17] === tmp18) {
+                  if (cResult[18] === tmp11) {
+                    if (cResult[19] === onPress) {
+                      if (cResult[20] === tmp6.container) {
+                        if (cResult[21] === tmp20) {
+                          if (cResult[22] === tmp23) {
+                            let tmp27;
+                            if (cResult[23] === testID) {
+                              tmp27 = cResult[24];
+                            }
+                            return tmp27;
+                          }
                         }
-                        return tmp27;
                       }
                     }
                   }
                 }
               }
+              const obj3 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items };
+              const PressableScale = tmp(8913).PressableScale;
+              items = [tmp11, tmp23];
+              const tmp30 = hasOwnProperty(PressableScale, obj3);
+              cResult[16] = accessibilityLabel;
+              cResult[17] = tmp18;
+              cResult[18] = tmp11;
+              cResult[19] = onPress;
+              cResult[20] = tmp6.container;
+              cResult[21] = tmp20;
+              cResult[22] = tmp23;
+              cResult[23] = testID;
+              cResult[24] = tmp30;
+              tmp27 = tmp30;
             }
+            const obj4 = { style: tmp6.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
+            const tmp26 = React3(Text_Text.Text, obj4);
+            cResult[13] = tmp6.label;
+            cResult[14] = label;
+            cResult[15] = tmp26;
+            tmp23 = tmp26;
           }
-          const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items };
-          const PressableScale = tmp(8913).PressableScale;
-          items = [tmp11, tmp23];
-          const tmp30 = hasOwnProperty(PressableScale, obj4);
-          cResult[14] = accessibilityLabel;
-          cResult[15] = tmp18;
-          cResult[16] = tmp11;
-          cResult[17] = onPress;
-          cResult[18] = tmp6.container;
-          cResult[19] = tmp20;
-          cResult[20] = tmp23;
-          cResult[21] = testID;
-          cResult[22] = tmp30;
-          tmp27 = tmp30;
+          const tmpResult2 = mergeProps;
+          const mergeRefsResult = tmpResult2.mergeRefs(ref, containerRef);
+          cResult[10] = containerRef;
+          cResult[11] = ref;
+          cResult[12] = mergeRefsResult;
+          tmp20 = mergeRefsResult;
         }
-        const obj5 = { style: tmp6.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
-        const tmp26 = React3(Text_Text.Text, obj5);
-        cResult[11] = tmp6.label;
-        cResult[12] = label;
-        cResult[13] = tmp26;
-        tmp23 = tmp26;
       }
-      const tmpResult2 = mergeProps;
-      const mergeRefsResult = tmpResult2.mergeRefs(ref, containerRef);
-      cResult[8] = containerRef;
-      cResult[9] = ref;
-      cResult[10] = mergeRefsResult;
-      tmp20 = mergeRefsResult;
     }
+    let tmp12 = tmp7;
+    if (undefined !== showRedDot && showRedDot) {
+      const obj5 = { children: items1 };
+      const obj6 = { cutouts: items, children: tmp7 };
+      items1 = [React3(ClipViewDefault, obj6), ];
+      const obj7 = { style: items2 };
+      items2 = [tmp6.dot, dotStyle];
+      items1[1] = React3(View, obj7);
+      tmp12 = hasOwnProperty(View, obj5);
+    }
+    cResult[3] = dotStyle;
+    cResult[4] = tmp7;
+    cResult[5] = undefined !== showRedDot && showRedDot;
+    cResult[6] = tmp6.dot;
+    cResult[7] = tmp12;
+    tmp11 = tmp12;
   }
-  let tmp12 = tmp7;
-  if (undefined !== showRedDot && showRedDot) {
-    const obj6 = { children: items1 };
-    const obj7 = { cutouts: items, children: tmp7 };
-    items1 = [React3(ClipViewDefault, obj7), ];
-    const obj8 = { style: tmp6.dot };
-    items1[1] = React3(View, obj8);
-    tmp12 = hasOwnProperty(View, obj6);
+  let tmp8 = icon;
+  if (icon == null) {
+    const obj8 = { size: "md", color: TEXT_DEFAULT };
+    tmp8 = React3(IconComponent, obj8);
   }
-  cResult[2] = tmp7;
-  cResult[3] = undefined !== showRedDot && showRedDot;
-  cResult[4] = tmp6.dot;
-  cResult[5] = tmp12;
-  tmp11 = tmp12;
+  cResult[0] = IconComponent;
+  cResult[1] = icon;
+  cResult[2] = tmp8;
+  tmp7 = tmp8;
 }) : (function YouScreenNavIcon(arg0) {
   let IconComponent;
   let accessibilityLabel;
+  let dotStyle;
+  let icon;
   let intl;
   let items1;
+  let items2;
   let label;
   let onPress;
   let ref;
   let showRedDot;
   let testID;
   let tmpResult;
-  ({ accessibilityLabel, label, showRedDot } = arg0);
+  ({ icon, accessibilityLabel, label, showRedDot } = arg0);
   ({ onPress, IconComponent } = arg0);
   if (showRedDot === undefined) {
     showRedDot = false;
   }
-  ({ ref, testID } = arg0);
+  ({ dotStyle, ref, testID } = arg0);
   const obj = YouScreenNavIconMeasurer;
   const youScreenNavIconMeasurement = obj.useYouScreenNavIconMeasurement();
   const containerRef = youScreenNavIconMeasurement.containerRef;
   const tmp4 = closure_10(youScreenNavIconMeasurement.width);
-  const obj2 = { size: "md", color: TEXT_DEFAULT };
-  const tmp6 = React3(IconComponent, obj2);
-  let tmp7 = tmp6;
+  if (icon == null) {
+    const obj2 = { size: "md", color: TEXT_DEFAULT };
+    icon = React3(IconComponent, obj2);
+  }
+  let tmp7 = icon;
   if (showRedDot) {
     const obj3 = { children: items };
-    const obj4 = { cutouts: items, children: tmp6 };
+    const obj4 = { cutouts: items, children: icon };
     items = [React3(ClipViewDefault, obj4), ];
-    const obj5 = { style: tmp4.dot };
+    const obj5 = { style: items1 };
+    items1 = [tmp4.dot, dotStyle];
     items[1] = React3(View, obj5);
     tmp7 = hasOwnProperty(View, obj3);
   }
-  let tmp12;
+  let tmp13;
   if (showRedDot) {
     const obj6 = { text: intl.string(intl2.t.y2b7CA) };
-    intl = tmp(1128).intl;
-    tmp12 = obj6;
+    intl = tmp(1125).intl;
+    tmp13 = obj6;
   }
-  const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items1 };
+  const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp13, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items2 };
   const PressableScale = tmp(8913).PressableScale;
-  items1 = [tmp7, ];
+  items2 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5234).Text;
-  const tmp13 = hasOwnProperty;
+  const Text = tmp(5235).Text;
+  const tmp14 = hasOwnProperty;
+  const tmp15 = React3;
   if (label == null) {
     label = accessibilityLabel;
   }
-  items1[1] = React3(Text, obj8);
-  return tmp13(PressableScale, obj7);
+  items2[1] = tmp15(Text, obj8);
+  return tmp14(PressableScale, obj7);
 }));
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");

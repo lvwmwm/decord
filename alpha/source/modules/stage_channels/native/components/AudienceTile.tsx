@@ -1,19 +1,19 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11727
+// Function ID: 11728
 // Name: AudienceTile
-// Dependencies: [19, 17, 4883, 21, 4971, 587, 558, 576, 5996, 1202, 11561, 1499, 504, 6688, 7878, 5989, 5297, 1128, 11705, 4978, 11726, 2]
+// Dependencies: [19, 17, 4884, 21, 4972, 587, 558, 576, 5997, 1199, 11563, 1496, 504, 6689, 7879, 5990, 5298, 1125, 11707, 4979, 11728, 2]
 // Exports: getTileWidthStyle
 
-// Module 11725 (AudienceTile)
+// Module 11727 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5996 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5997 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7879 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(1202);
+const native = tmp(1199);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -79,7 +79,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const obj3 = { style: tmp4.raisedHand, source: tmp6(11561), color: PRIMARY_800 };
+    const obj3 = { style: tmp4.raisedHand, source: tmp6(11563), color: PRIMARY_800 };
     const Icon = native.Icon;
     const tmp10 = hasOwnProperty(Icon, obj3);
     cResult[3] = PRIMARY_800;
@@ -115,7 +115,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
   }
   items[1] = activeBackground;
   const obj = { style: items, children: hasOwnProperty(Icon, obj2) };
-  obj2 = { style: tmp.raisedHand, source: tmp5(11561), color: PRIMARY_800 };
+  obj2 = { style: tmp.raisedHand, source: tmp5(11563), color: PRIMARY_800 };
   Icon = native.Icon;
   return hasOwnProperty(tmp7, obj);
 });
@@ -145,7 +145,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const user = participant.user;
   ({ rtsState, blocked, ignored } = participant);
   const tmp4 = styles();
-  const diff = user(1499)().width - 46;
+  const diff = user(1496)().width - 46;
   if (cResult[0] !== channel) {
     const guildId = channel.getGuildId();
     cResult[0] = channel;
@@ -173,7 +173,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11, tmp12);
     if (cResult[7] !== rtsState) {
-      const tmpResult3 = tmp(6688);
+      const tmpResult3 = tmp(6689);
       const result = tmpResult3.isRequestedToSpeakAll(rtsState);
       cResult[7] = rtsState;
       cResult[8] = result;
@@ -234,7 +234,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp37 = cResult[37];
                             }
                             if (cResult[38] !== blocked) {
-                              const tmp42 = blocked && closure_5(tmp(11705).BlockedStatus, {});
+                              const tmp42 = blocked && closure_5(tmp(11707).BlockedStatus, {});
                               cResult[38] = blocked;
                               cResult[39] = tmp42;
                               tmp41 = tmp42;
@@ -242,7 +242,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp41 = cResult[39];
                             }
                             if (cResult[40] !== ignored) {
-                              const tmp45 = ignored && closure_5(tmp(11705).IgnoredStatus, {});
+                              const tmp45 = ignored && closure_5(tmp(11707).IgnoredStatus, {});
                               cResult[40] = ignored;
                               cResult[41] = tmp45;
                               tmp44 = tmp45;
@@ -259,7 +259,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                 if (cResult[46] !== theme) {
                                   let tmp50 = null != theme;
                                   if (tmp50) {
-                                    const tmpResult4 = tmp(4978);
+                                    const tmpResult4 = tmp(4979);
                                     const isThemeDarkResult = tmpResult4.isThemeDark(theme);
                                     const unsafe_rawColors = tmp5(587).unsafe_rawColors;
                                     tmp50 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860 };
@@ -286,8 +286,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       if (cResult[55] !== stateFromStores) {
                                         let tmp57 = stateFromStores;
                                         if (tmp57) {
-                                          const obj4 = { source: user(11726), size: tmp(1202).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-                                          const Icon = tmp(1202).Icon;
+                                          const obj4 = { source: user(11728), size: tmp(1199).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
+                                          const Icon = tmp(1199).Icon;
                                           tmp57 = closure_5(Icon, obj4);
                                         }
                                         cResult[55] = stateFromStores;
@@ -346,7 +346,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       tmp59 = tmp62;
                                     }
                                     const obj7 = { style: tmp52, numberOfLines: 1, children: tmp19 };
-                                    const tmp55 = closure_5(tmp(1202).LegacyText, obj7);
+                                    const tmp55 = closure_5(tmp(1199).LegacyText, obj7);
                                     cResult[52] = tmp19;
                                     cResult[53] = tmp52;
                                     cResult[54] = tmp55;
@@ -400,8 +400,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       tmp33 = tmp34;
                     }
                   }
-                  const obj11 = { user, guildId: tmp7, size: tmp(1202).AvatarSizes.LARGE, style: tmp18 && tmp4.faded };
-                  const CutoutableAvatarImage = tmp(1202).CutoutableAvatarImage;
+                  const obj11 = { user, guildId: tmp7, size: tmp(1199).AvatarSizes.LARGE, style: tmp18 && tmp4.faded };
+                  const CutoutableAvatarImage = tmp(1199).CutoutableAvatarImage;
                   const tmp32 = closure_5(CutoutableAvatarImage, obj11);
                   cResult[27] = tmp7;
                   cResult[28] = tmp18 && tmp4.faded;
@@ -422,13 +422,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const tmp5Result = user(5989);
+      const tmp5Result = user(5990);
       const name = tmp5Result.getName(tmp7, channel.id, user);
       const tmp22 = blocked || ignored;
-      const LegacyPressable = tmp(5297).LegacyPressable;
-      const intl = tmp(1128).intl;
+      const LegacyPressable = tmp(5298).LegacyPressable;
+      const intl = tmp(1125).intl;
       const obj12 = { name };
-      const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.QLMGhv, obj12);
+      const formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.QLMGhv, obj12);
       cResult[12] = blocked;
       cResult[13] = channel.id;
       cResult[14] = tmp7;

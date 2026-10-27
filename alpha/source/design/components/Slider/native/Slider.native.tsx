@@ -1,19 +1,19 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15314
+// Function ID: 15315
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 5212, 5213, 1384, 8769, 2]
+// Dependencies: [32, 19, 17, 21, 4972, 587, 558, 576, 5213, 5214, 1381, 8769, 2]
 
-// Module 15278 (Slider)
+// Module 15314 (Slider)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5214 */;
 import _modDef8769 from "module_8769" /* 8769 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(onCha
           const _Symbol = Symbol;
           if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
             let fn;
-            const tmpResult = tmp(1384);
+            const tmpResult = tmp(1381);
             if (tmpResult.isAndroid()) {
               fn = () => true;
             }
@@ -372,7 +372,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(onCha
     const obj4 = { text: formatValue(first1) };
   }
   fn = undefined;
-  const obj5 = step(1384);
+  const obj5 = step(1381);
   if (obj5.isAndroid()) {
     fn = () => true;
   }

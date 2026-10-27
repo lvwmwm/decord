@@ -1,17 +1,17 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7557
+// Function ID: 7558
 // Name: MobileTrialUtils
-// Dependencies: [1394, 558, 7557, 5001, 4807, 576, 14647, 2053, 1128, 2]
+// Dependencies: [1391, 558, 7558, 5002, 4808, 576, 14683, 2050, 1125, 2]
 
-// Module 7556 (MobileTrialUtils)
+// Module 7557 (MobileTrialUtils)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7557 */;
-import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 14647 */;
+import intl2 from "intl" /* 1125 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumUtils from "PremiumUtils" /* 2050 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7558 */;
+import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 14683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNitroTr
       ({ interval: obj4.intervalType, intervalCount: obj4.intervalCount } = subscriptionTrial);
       const tmpResult2 = PremiumUtils;
       const result = tmpResult2.formatIntervalDuration(obj5);
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj6 = { duration: result };
       const formatToPlainStringResult = intl.formatToPlainString(intl2.t["6xpY54"], obj6);
       cResult[0] = subscriptionTrial.interval;
@@ -131,7 +131,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNitroTr
       ({ interval: obj3.intervalType, intervalCount: obj3.intervalCount } = subscriptionTrial);
       const tmpResult2 = PremiumUtils;
       const result = tmpResult2.formatIntervalDuration(obj4);
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj5 = { duration: result };
       return intl.formatToPlainString(intl2.t["6xpY54"], obj5);
     } else {

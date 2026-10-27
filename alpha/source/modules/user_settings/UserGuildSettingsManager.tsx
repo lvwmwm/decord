@@ -1,16 +1,16 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7214
+// Function ID: 7215
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7213, 4823, 1087, 1104, 1297, 7214, 2]
+// Dependencies: [5, 7215, 4824, 1084, 1101, 1294, 7216, 2]
 
-// Module 7212 (UserGuildSettingsManager)
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 7214 (UserGuildSettingsManager)
+import DurationsDefault from "Durations" /* 1101 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7213 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7215 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import Constants from "Constants" /* 1084 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;

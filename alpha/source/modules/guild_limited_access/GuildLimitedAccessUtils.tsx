@@ -1,11 +1,11 @@
-// Module ID: 18734
-// Function ID: 18735
+// Module ID: 18770
+// Function ID: 18771
 // Name: GuildLimitedAccessUtils
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 18734 (GuildLimitedAccessUtils)
-import Constants from "Constants" /* 1087 */;
+// Module 18770 (GuildLimitedAccessUtils)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

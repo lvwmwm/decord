@@ -1,12 +1,12 @@
 // Module ID: 9213
 // Function ID: 9214
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 558, 576, 5662, 7285, 5682, 1128, 7959, 2]
+// Dependencies: [19, 21, 558, 576, 5663, 7287, 5683, 1125, 7957, 2]
 
 // Module 9213 (SecureFramesCopyIcon)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     tmp7 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(require("intl").t.e7GWjQ);
     cResult[5] = stringResult;
     tmp10 = stringResult;

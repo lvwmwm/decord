@@ -1,17 +1,47 @@
 // Module ID: 15601
 // Function ID: 15602
-// Dependencies: [15548, 15599, 15582]
+// Dependencies: [15581, 15602]
 
 // Module 15601
-import _mod15548 from "module_15548" /* 15548 */;
-import _mod15582 from "module_15582" /* 15582 */;
-import defineProperty2 from "defineProperty2" /* 15599 */;
+import _mod15581 from "module_15581" /* 15581 */;
+import _mod15602 from "module_15602" /* 15602 */;
 
+let tmp4;
+let tmp = _mod15581.process && _mod15581.process.versions;
+if (!tmp) {
+  tmp = _mod15581.Deno && _mod15581.Deno.version;
+  _mod15581.Deno && _mod15581.Deno.version;
+}
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
+  }
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod15602;
+if (match1) {
+  const str3 = _mod15602;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod15602;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
 
-export default _mod15548 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod15582(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default tmp3;

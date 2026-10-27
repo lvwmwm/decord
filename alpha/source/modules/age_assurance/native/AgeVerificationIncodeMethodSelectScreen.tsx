@@ -1,18 +1,18 @@
-// Module ID: 7895
-// Function ID: 7896
+// Module ID: 7896
+// Function ID: 7897
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1207, 6656, 7884, 21, 4971, 7896, 7900, 7901, 5977, 6880, 7902, 5234, 1128, 3090, 6987, 6903, 2]
+// Dependencies: [5, 32, 19, 1204, 6657, 7885, 21, 4972, 7897, 7901, 7902, 5978, 6882, 7903, 5235, 1125, 3091, 6989, 6905, 2]
 // Exports: default
 
-// Module 7895 (AgeVerificationIncodeMethodSelectScreen)
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6656 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7884 */;
+// Module 7896 (AgeVerificationIncodeMethodSelectScreen)
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6657 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7885 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -153,65 +153,65 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     return closure_0(...arguments);
   }, items);
   const obj = { children: null };
-  const ModalScreen = onMethodSelected(7900).ModalScreen;
-  const ModalContent = onMethodSelected(7901).ModalContent;
+  const ModalScreen = onMethodSelected(7901).ModalScreen;
+  const ModalContent = onMethodSelected(7902).ModalContent;
   const obj2 = { children: null };
   if (tmp2) {
-    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6880).ActivityIndicator, { size: "large" }) };
-    const Stack4 = tmp7(5977).Stack;
+    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6882).ActivityIndicator, { size: "large" }) };
+    const Stack4 = tmp7(5978).Stack;
     obj2.children = closure_9(Stack4, obj3);
     obj.children = closure_9(ModalContent, obj2);
     tmp11 = obj;
   } else {
     const obj4 = { align: "stretch", spacing: 24, style: tmp5.container, children: items3 };
-    const Stack = tmp7(5977).Stack;
+    const Stack = tmp7(5978).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-    const Stack2 = tmp7(5977).Stack;
-    items1 = [tmp6(tmp7(7902).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+    const Stack2 = tmp7(5978).Stack;
+    items1 = [tmp6(tmp7(7903).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-    const Stack3 = tmp7(5977).Stack;
-    let obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3090).eZvwAe) };
-    const Text = tmp7(5234).Text;
-    intl = tmp7(1128).intl;
+    const Stack3 = tmp7(5978).Stack;
+    let obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3091).eZvwAe) };
+    const Text = tmp7(5235).Text;
+    intl = tmp7(1125).intl;
     items2 = [tmp6(Text, obj7), ];
-    const obj8 = { variant: "text-md/medium", color: "text-strong", style: tmp5.header, children: intl2.string(trustedOrigin(3090)["5yWXmT"]) };
-    const Text2 = tmp7(5234).Text;
-    intl2 = tmp7(1128).intl;
+    const obj8 = { variant: "text-md/medium", color: "text-strong", style: tmp5.header, children: intl2.string(trustedOrigin(3091)["5yWXmT"]) };
+    const Text2 = tmp7(5235).Text;
+    intl2 = tmp7(1125).intl;
     items2[1] = closure_9(Text2, obj8);
     items1[1] = closure_10(Stack3, obj6);
     items3 = [closure_10(Stack2, obj5), , ];
     if (tmp6Result) {
-      const obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp5.header, children: intl3.string(onMethodSelected(1128).t.c6kn6F) };
-      const Text3 = tmp7(5234).Text;
-      intl3 = tmp7(1128).intl;
+      const obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp5.header, children: intl3.string(onMethodSelected(1125).t.c6kn6F) };
+      const Text3 = tmp7(5235).Text;
+      intl3 = tmp7(1125).intl;
       tmp6Result = closure_9(Text3, obj9);
     }
     items3[1] = tmp6Result;
     const obj10 = { hasIcons: false, children: items4 };
-    const TableRowGroup = tmp7(6987).TableRowGroup;
+    const TableRowGroup = tmp7(6989).TableRowGroup;
     const obj11 = {
       arrow: true,
-      label: intl4.string(trustedOrigin(3090).rgXXcW),
-      subLabel: intl5.string(trustedOrigin(3090).fm7qBC),
+      label: intl4.string(trustedOrigin(3091).rgXXcW),
+      subLabel: intl5.string(trustedOrigin(3091).fm7qBC),
       onPress() {
           closure_4(VerificationMethod.FACIAL_AGE_ESTIMATION);
         }
     };
-    const TableRow = tmp7(6903).TableRow;
-    intl4 = tmp7(1128).intl;
-    intl5 = tmp7(1128).intl;
+    const TableRow = tmp7(6905).TableRow;
+    intl4 = tmp7(1125).intl;
+    intl5 = tmp7(1125).intl;
     items4 = [tmp6(TableRow, obj11), ];
     const obj12 = {
       arrow: true,
-      label: intl6.string(trustedOrigin(3090)["NeVlw/"]),
-      subLabel: intl7.string(trustedOrigin(3090).ARmJ0M),
+      label: intl6.string(trustedOrigin(3091)["NeVlw/"]),
+      subLabel: intl7.string(trustedOrigin(3091).ARmJ0M),
       onPress() {
           closure_4(VerificationMethod.ID_VERIFICATION);
         }
     };
-    const TableRow2 = tmp7(6903).TableRow;
-    intl6 = tmp7(1128).intl;
-    intl7 = tmp7(1128).intl;
+    const TableRow2 = tmp7(6905).TableRow;
+    intl6 = tmp7(1125).intl;
+    intl7 = tmp7(1125).intl;
     items4[1] = closure_9(TableRow2, obj12);
     items3[2] = closure_10(TableRowGroup, obj10);
     obj2.children = closure_10(Stack, obj4);

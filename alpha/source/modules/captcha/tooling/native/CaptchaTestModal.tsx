@@ -1,22 +1,22 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17095
+// Function ID: 17096
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 17054, 17055, 5663, 5234, 1202, 7221, 5244, 6672, 6924, 558, 576, 1128, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4972, 587, 17096, 17097, 5664, 5235, 1199, 7223, 5245, 6673, 6926, 558, 576, 1125, 7097, 2]
 
-// Module 17053 (CaptchaTestModal)
+// Module 17095 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import Navigator2 from "Navigator" /* 7095 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17054 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17055 */;
+import intl2 from "intl" /* 1125 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import Navigator2 from "Navigator" /* 7097 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17096 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaTestM
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t["13/7kX"]);
     cResult[2] = stringResult;
     tmp7 = stringResult;

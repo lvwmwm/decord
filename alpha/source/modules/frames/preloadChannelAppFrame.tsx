@@ -1,21 +1,21 @@
-// Module ID: 17657
-// Function ID: 17658
+// Module ID: 17698
+// Function ID: 17699
 // Name: preloadChannelAppFrame
-// Dependencies: [4823, 4903, 6775, 6776, 1087, 6662, 6682, 5623, 10730, 6778, 10772, 6809, 2]
+// Dependencies: [4824, 4904, 6776, 6777, 1084, 6663, 6683, 5624, 10733, 6779, 10775, 6811, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 17657 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 5623 */;
-import AgeGateUtils from "AgeGateUtils" /* 6662 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6682 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
-import createProxyTicket from "createProxyTicket" /* 10730 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10772 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import FramesStore from "FramesStore" /* 6775 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import Constants from "Constants" /* 1087 */;
+// Module 17698 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5624 */;
+import AgeGateUtils from "AgeGateUtils" /* 6663 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6683 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6779 */;
+import createProxyTicket from "createProxyTicket" /* 10733 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10775 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import FramesStore from "FramesStore" /* 6776 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -55,7 +55,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
         tmp11Result2.prefetchProxyTicket(application_id, getChannelIdForEmbeddedSurfaceDefault(tmp4), tmp4.type);
         const promise = loadEmbeddedAppCSPForLaunchDefault(application_id);
         promise.catch(React4);
-        const useApplication = tmp11(6809).useApplication;
+        const useApplication = tmp11(6811).useApplication;
         const items = [application_id];
         const many = useApplication.fetchMany(items);
         many.catch(React4);

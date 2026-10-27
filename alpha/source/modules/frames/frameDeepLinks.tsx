@@ -1,12 +1,12 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7436
+// Function ID: 7437
 // Name: frameDeepLinks
-// Dependencies: [32, 584, 5626, 2]
+// Dependencies: [32, 584, 5627, 2]
 // Exports: clearFrameDeepLinks, getFrameDeepLinkChannelId, queueFrameDeepLink, queueFrameDeepLinkFromUrl, setFrameRelaunchDeepLink, takeFrameDeepLink
 
-// Module 7434 (frameDeepLinks)
+// Module 7436 (frameDeepLinks)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5627 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

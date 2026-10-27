@@ -1,15 +1,15 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12295
+// Function ID: 12296
 // Name: useConjureHeldPrompt
-// Dependencies: [32, 19, 10699, 10698, 6773, 558, 576, 504, 12290, 2]
+// Dependencies: [32, 19, 10702, 10701, 6774, 558, 576, 504, 12296, 2]
 
-// Module 12289 (useConjureHeldPrompt)
-import conjureScopeSetup from "conjureScopeSetup" /* 12290 */;
+// Module 12295 (useConjureHeldPrompt)
+import conjureScopeSetup from "conjureScopeSetup" /* 12296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10699 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureChatStore from "ConjureChatStore" /* 10702 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10701 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

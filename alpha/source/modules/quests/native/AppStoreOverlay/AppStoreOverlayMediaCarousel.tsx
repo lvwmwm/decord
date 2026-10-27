@@ -1,21 +1,21 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14129
+// Function ID: 14130
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4972, 1098, 21, 587, 4971, 14116, 558, 576, 14117, 1128, 5669, 504, 8790, 9312, 7792, 7801, 5297, 2]
+// Dependencies: [32, 19, 17, 4973, 1095, 21, 587, 4972, 14130, 558, 576, 14131, 1125, 5670, 504, 8790, 9312, 7793, 7802, 5298, 2]
 
-// Module 14115 (AppStoreOverlayMediaCarousel)
+// Module 14129 (AppStoreOverlayMediaCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import AnalyticsActions from "AnalyticsActions" /* 7792 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 14116 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 14117 */;
+import Constants from "Constants" /* 1095 */;
+import AnalyticsActions from "AnalyticsActions" /* 7793 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 14130 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 14131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -558,9 +558,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
                 if (num5 !== current) {
                   const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
                   if (num5 > current) {
-                    LEFT = tmp12(7801).HorizontalScrollingDirection.RIGHT;
+                    LEFT = tmp12(7802).HorizontalScrollingDirection.RIGHT;
                   } else {
-                    LEFT = tmp12(7801).HorizontalScrollingDirection.LEFT;
+                    LEFT = tmp12(7802).HorizontalScrollingDirection.LEFT;
                   }
                   tmp(obj);
                   tmp11.current = num5;
@@ -774,9 +774,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(7801).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(7802).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7801).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7802).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

@@ -1,18 +1,18 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14774
+// Function ID: 14775
 // Name: PromotionStringUtils
-// Dependencies: [2057, 1394, 558, 576, 504, 2053, 7339, 1128, 2067, 2]
+// Dependencies: [2054, 1391, 558, 576, 504, 2050, 7341, 1125, 2064, 2]
 // Exports: getHelpArticleLinkProps
 
-// Module 14738 (PromotionStringUtils)
+// Module 14774 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import PriceUtils from "PriceUtils" /* 7339 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2057 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import intl2 from "intl" /* 1125 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import PriceUtils from "PriceUtils" /* 7341 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2054 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

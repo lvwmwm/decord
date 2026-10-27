@@ -1,21 +1,23 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 11988
+// Function ID: 11989
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11988, 9649, 11989, 5634, 558, 576, 6912, 5244, 1128, 5680, 2]
+// Dependencies: [5, 32, 19, 21, 11989, 9651, 11990, 5635, 558, 576, 6914, 5245, 1125, 5681, 587, 2]
 // Exports: useCommandRowSend
 
-// Module 11987 (CommandRowButton)
+// Module 11988 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c4, closure_2;
+let c1, c4;
 
+let react = react_mod;
 const jsx = Fragment.jsx;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIcon(arg0) {
   let hasOptions;
@@ -36,11 +38,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6912).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6914).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5244).Button;
-    intl = tmp(1128).intl;
+    const Button = tmp(5245).Button;
+    intl = tmp(1125).intl;
+    ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
+    const SendMessageIcon = tmp(5681).SendMessageIcon;
     tmp5Result = tmp5(Button, obj2);
   }
   cResult[0] = hasOptions;
@@ -52,11 +56,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6912).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6914).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5244).Button;
-    intl = tmp4(1128).intl;
+    const Button = tmp4(5245).Button;
+    intl = tmp4(1125).intl;
+    ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
+    const SendMessageIcon = tmp4(5681).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
@@ -65,13 +71,14 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/base_comp
 
 export default tmp2;
 export const useCommandRowSend = function useCommandRowSend(command) {
+  let closure_5;
   let items1;
   command = command.command;
-  let beforeExecuteCommand = command.beforeExecuteCommand;
-  const onExecuteCommand = command.onExecuteCommand;
+  const beforeExecuteCommand = command.beforeExecuteCommand;
+  let onExecuteCommand = command.onExecuteCommand;
   const tryExecuteCommand = command.tryExecuteCommand;
   const sectionName = command.sectionName;
-  let closure_5;
+  react = undefined;
   let commandContext;
   let callback;
   let options = command.options;
@@ -80,15 +87,15 @@ export const useCommandRowSend = function useCommandRowSend(command) {
     options = [];
   }
   const tmp = options.length > 0;
-  const tmp2 = tryExecuteCommand(sectionName.useState(false), 2);
-  closure_5 = tmp2[1];
+  const tmp2 = sectionName(react.useState(false), 2);
+  react = tmp2[1];
   const first = tmp2[0];
-  let obj = command(beforeExecuteCommand[4]);
+  let obj = command(onExecuteCommand[4]);
   commandContext = obj.useCommandContext(context);
   const items = [onExecuteCommand, command, commandContext, beforeExecuteCommand, sectionName];
-  callback = sectionName.useCallback(onExecuteCommand(function*(arg0, value) {
-    let c1;
+  callback = react.useCallback(tryExecuteCommand(function*(arg0, value) {
     let closure_0;
+    let closure_2;
     let obj3;
     if (c4 === 2) {
       c4 = 3;
@@ -106,7 +113,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
       let c3;
       try {
         c4 = 2;
-        if (0 === beforeExecuteCommand) {
+        if (0 === c1) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -120,11 +127,11 @@ export const useCommandRowSend = function useCommandRowSend(command) {
               beforeExecuteCommand();
             }
             c3 = 1;
-            const obj5 = { command, optionValues: obj3.parseOptionValuesForSend(commandContext.channel, command, {}), context: commandContext, sectionName, commandOrigin: tmp(beforeExecuteCommand[7]).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW };
-            const executeAppLauncherCommand = tmp(beforeExecuteCommand[5]).executeAppLauncherCommand;
-            const tmp21 = tmp(beforeExecuteCommand[5]);
-            obj3 = tmp(beforeExecuteCommand[6]);
-            beforeExecuteCommand = 2;
+            const obj5 = { command, optionValues: obj3.parseOptionValuesForSend(commandContext.channel, command, {}), context: commandContext, sectionName, commandOrigin: tmp(onExecuteCommand[7]).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW };
+            const executeAppLauncherCommand = tmp(onExecuteCommand[5]).executeAppLauncherCommand;
+            const tmp21 = tmp(onExecuteCommand[5]);
+            obj3 = tmp(onExecuteCommand[6]);
+            c1 = 2;
             c4 = 1;
             const obj6 = { value: executeAppLauncherCommand(obj5), done: false };
             return obj6;
@@ -132,7 +139,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         } else if (1 === tmp4) {
           c3 = 0;
           closure_128_5(false);
-          throw closure_2;
+          throw onExecuteCommand;
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -152,12 +159,12 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
-        closure_2 = tmp25;
+        onExecuteCommand = tmp25;
         if (0 === c3) {
           c4 = 3;
           throw tmp25;
         } else {
-          beforeExecuteCommand = 1;
+          c1 = 1;
         }
       }
     }
@@ -165,7 +172,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
   let obj2 = {
     hasOptions: tmp,
     sending: first,
-    onPressSend: sectionName.useCallback(() => {
+    onPressSend: react.useCallback(() => {
       if (null != tryExecuteCommand) {
         tmp(callback);
       } else {

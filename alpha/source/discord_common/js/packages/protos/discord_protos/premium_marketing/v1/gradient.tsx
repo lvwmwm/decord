@@ -1,15 +1,15 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9532
+// Function ID: 9533
 // Name: gradient
-// Dependencies: [32, 1212, 2]
+// Dependencies: [32, 1209, 2]
 
-// Module 9533 (gradient)
-import _mod1212 from "module_1212" /* 1212 */;
+// Module 9532 (gradient)
+import _mod1209 from "module_1209" /* 1209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1209.MessageType;
 class Gradient$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "colors", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "angle", kind: "scalar", T: 2 }];
@@ -20,9 +20,9 @@ class Gradient$Type extends MessageType {
     const obj = { colors: [], angle: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1209;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -62,7 +62,7 @@ class Gradient$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1212.UnknownFieldHandler.onRead;
+                onRead = _mod1209.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -77,20 +77,20 @@ class Gradient$Type extends MessageType {
     let num = 0;
     if (0 < colors.colors.length) {
       do {
-        let tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
         let stringResult = tagResult.string(colors.colors[num]);
         num = num + 1;
         length = colors.colors.length;
       } while (num < length);
     }
     if (0 !== colors.angle) {
-      const tagResult1 = tag.tag(2, _mod1212.WireType.Bit32);
+      const tagResult1 = tag.tag(2, _mod1209.WireType.Bit32);
       tagResult1.float(colors.angle);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1209.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, colors, tag);

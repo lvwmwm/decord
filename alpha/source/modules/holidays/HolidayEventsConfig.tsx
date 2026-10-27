@@ -1,15 +1,15 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18871
+// Function ID: 18872
 // Name: HolidayEventsConfig
-// Dependencies: [11528, 18834, 1128, 18835, 18836, 4807, 2]
+// Dependencies: [11530, 18872, 1125, 18873, 18874, 4808, 2]
 
-// Module 18833 (HolidayEventsConfig)
-import intl14 from "intl" /* 1128 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import Constants from "Constants" /* 11528 */;
-import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 18834 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18835 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18836 */;
+// Module 18871 (HolidayEventsConfig)
+import intl14 from "intl" /* 1125 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import Constants from "Constants" /* 11530 */;
+import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 18872 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18873 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18874 */;
 import size from "module_2" /* 2 */;
 
 let Soundpacks;

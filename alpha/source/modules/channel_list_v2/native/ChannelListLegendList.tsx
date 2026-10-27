@@ -1,11 +1,11 @@
-// Module ID: 17687
-// Function ID: 17688
+// Module ID: 17728
+// Function ID: 17729
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17688, 5052, 7167, 13873, 2]
+// Dependencies: [19, 21, 17729, 5053, 7169, 13887, 2]
 
-// Module 17687 (ChannelListLegendList)
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import FastList from "FastList" /* 7167 */;
+// Module 17728 (ChannelListLegendList)
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import FastList from "FastList" /* 7169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "emoji", positionPercentage: false };
+let closure_8 = { item: "enabled", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "function ChannelListLegendListTsx1(event){const{scrollPosValue,onScrollWorklet,onScroll,runOnJS}=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){runOnJS(onScroll)();}}" };
 const memoResult = react.memo(function ChannelListLegendList(listViewportHeight) {
@@ -342,7 +342,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   if (listViewportHeight > 0) {
     num = endReachedThreshold / listViewportHeight;
   }
-  const obj4 = { ref: ref1, contentContainerStyle: memo3, data: listData, drawDistance: num2, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
+  const obj4 = { ref: ref1, contentContainerStyle: memo3, data: listData, drawDistance: num2, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionHeader, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4, automaticallyAdjustsScrollIndicatorInsets: false };
   const AnimatedLegendList = tmp5(tmp2[5]).AnimatedLegendList;
   const tmp19 = renderHeader;
   const tmp20 = onScroll;

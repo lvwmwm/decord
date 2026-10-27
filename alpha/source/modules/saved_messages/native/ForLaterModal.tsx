@@ -1,18 +1,18 @@
-// Module ID: 13806
-// Function ID: 13807
+// Module ID: 13820
+// Function ID: 13821
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 1128, 10078, 9699, 1384, 6924, 6672, 6933, 13807, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1630, 1125, 10080, 9701, 1381, 6926, 6673, 6935, 13821, 2]
 
-// Module 13806 (ForLaterModal)
+// Module 13820 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 13807 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import HeaderShared from "HeaderShared" /* 9701 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 13821 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,12 +47,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
   const top = useSafeAreaInsetsDefault().top;
   if (cResult[0] !== type) {
     let aUXxzT;
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
     if (type === require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER) {
-      aUXxzT = tmp(1128).t.aUXxzT;
+      aUXxzT = tmp(1125).t.aUXxzT;
     } else {
-      aUXxzT = tmp(1128).t["2pAkDA"];
+      aUXxzT = tmp(1125).t["2pAkDA"];
     }
     const stringResult = string(aUXxzT);
     cResult[0] = type;
@@ -89,7 +89,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
   const sum = tmp10 + tmp5(587).space.PX_8;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult2 = require("NavigatorHeader");
-    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(6672).pop);
+    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(6673).pop);
     cResult[6] = headerCloseButton;
     tmp12 = headerCloseButton;
   } else {
@@ -136,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
     }
   }
   const obj4 = { title: tmp6, headerTitle: tmp9, headerTitleAlign: "center", headerStatusBarHeight: sum, headerLeft: tmp12, headerLeftContainerStyle: tmp4.headerLeftContainer, headerRightContainerStyle: tmp4.headerRightContainer };
-  const tmp15 = closure_4(require("module_6933").Header, obj4);
+  const tmp15 = closure_4(require("module_6935").Header, obj4);
   cResult[7] = tmp4.headerLeftContainer;
   cResult[8] = tmp4.headerRightContainer;
   cResult[9] = tmp9;
@@ -157,9 +157,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
   const intl = require("intl").intl;
   const string = intl.string;
   if (type === require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER) {
-    aUXxzT = tmp4(1128).t.aUXxzT;
+    aUXxzT = tmp4(1125).t.aUXxzT;
   } else {
-    aUXxzT = tmp4(1128).t["2pAkDA"];
+    aUXxzT = tmp4(1125).t["2pAkDA"];
   }
   const stringResult = string(aUXxzT);
   _require = stringResult;
@@ -176,7 +176,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(6933).Header;
+  const Header = tmp4(6935).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;

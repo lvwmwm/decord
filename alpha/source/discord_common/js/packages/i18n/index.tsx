@@ -1,11 +1,11 @@
-// Module ID: 1905
-// Function ID: 1906
+// Module ID: 1902
+// Function ID: 1903
 // Name: I18N
-// Dependencies: [1906, 2, 1949]
+// Dependencies: [1903, 2, 1946]
 
-// Module 1905 (I18N)
-import i18n from "i18n" /* 1906 */;
-import parse from "parse" /* 1949 */;
+// Module 1902 (I18N)
+import i18n from "i18n" /* 1903 */;
+import parse from "parse" /* 1946 */;
 import size from "module_2" /* 2 */;
 
 const I18N = i18n.I18N;

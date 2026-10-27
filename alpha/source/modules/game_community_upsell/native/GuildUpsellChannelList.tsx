@@ -1,28 +1,28 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17743
+// Function ID: 17744
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 15026, 6670, 17703, 1087, 21, 4971, 587, 1128, 14271, 17704, 17708, 558, 576, 504, 17712, 1267, 13614, 5234, 6905, 5244, 16446, 17713, 2]
+// Dependencies: [19, 17, 15062, 6671, 17744, 1084, 21, 4972, 587, 1125, 14299, 17745, 17749, 558, 576, 504, 17753, 1264, 13628, 5235, 6907, 5245, 16485, 17754, 2]
 
-// Module 17702 (GuildUpsellChannelList)
+// Module 17743 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import Card_Card from "Card/Card" /* 6905 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13614 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14271 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17703 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17704 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17708 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17712 */;
+import intl7 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import Card_Card from "Card/Card" /* 6907 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13628 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 14299 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17744 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17745 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17749 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17753 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15026 */;
-import ConsentStore from "ConsentStore" /* 6670 */;
-import Constants from "Constants" /* 1087 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15062 */;
+import ConsentStore from "ConsentStore" /* 6671 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -200,8 +200,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
       }
     }
     let obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["abaDI+"]) };
-    let Text = tmp(5234).Text;
-    intl = tmp(1128).intl;
+    let Text = tmp(5235).Text;
+    intl = tmp(1125).intl;
     cResult[9] = closure_12(Text, obj2);
     const tmp19 = closure_12(Text, obj2);
   } else {
@@ -400,12 +400,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
     if (tmpResult) {
       const obj8 = { style: closure_0.joinSection, children: items2 };
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl5.string(intl7.t.rJRote) };
-      const Text3 = tmp5(5234).Text;
-      intl5 = tmp5(1128).intl;
+      const Text3 = tmp5(5235).Text;
+      intl5 = tmp5(1125).intl;
       items2 = [authStore2(Text3, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: closure_0.descriptionSpacing, children: intl6.string(intl7.t.pJT2DK) };
-      const Text4 = tmp5(5234).Text;
-      intl6 = tmp5(1128).intl;
+      const Text4 = tmp5(5235).Text;
+      intl6 = tmp5(1125).intl;
       items2[1] = authStore2(Text4, obj10);
       tmpResult = tmp(tmp2, obj8);
     }

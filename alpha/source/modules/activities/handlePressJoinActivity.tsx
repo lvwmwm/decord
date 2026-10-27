@@ -1,22 +1,22 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11462
+// Function ID: 11463
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2024, 4823, 4845, 4903, 1392, 5630, 4822, 11456, 11417, 5908, 1128, 6809, 6662, 11387, 11364, 2]
+// Dependencies: [5, 2021, 4824, 4846, 4904, 1389, 5631, 4823, 11459, 11420, 5909, 1125, 6811, 6663, 11390, 11367, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 11459 (handlePressJoinActivity)
-import intl11 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11417 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11456 */;
+// Module 11462 (handlePressJoinActivity)
+import intl11 from "intl" /* 1125 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11420 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11459 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -46,36 +46,36 @@ function handlePressJoinActivity(arg0) {
     const obj2 = { title: intl9.string(intl11.t.PtobXW), body: intl10.string(intl11.t.UXoQTp), hideActionSheet: false };
     const show5 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl9 = tmp(1128).intl;
-    intl10 = tmp(1128).intl;
+    intl9 = tmp(1125).intl;
+    intl10 = tmp(1125).intl;
     show5(obj2);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     const obj3 = { title: intl7.string(intl11.t.PtobXW), body: intl8.string(intl11.t.uGDCcw), hideActionSheet: false };
     const show4 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl7 = tmp(1128).intl;
-    intl8 = tmp(1128).intl;
+    intl7 = tmp(1125).intl;
+    intl8 = tmp(1125).intl;
     show4(obj3);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
     const obj4 = { title: intl5.string(intl11.t.PtobXW), body: intl6.string(intl11.t["4WuFRE"]), hideActionSheet: false };
     const show3 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl5 = tmp(1128).intl;
-    intl6 = tmp(1128).intl;
+    intl5 = tmp(1125).intl;
+    intl6 = tmp(1125).intl;
     show3(obj4);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === embeddedActivityJoinability) {
     const obj5 = { title: intl3.string(intl11.t.PtobXW), body: intl4.string(intl11.t.pKLV22), hideActionSheet: false };
     const show2 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl3 = tmp(1128).intl;
-    intl4 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
+    intl4 = tmp(1125).intl;
     show2(obj5);
   } else {
     obj = { title: intl.string(intl11.t.PtobXW), body: intl2.string(intl11.t.FUCQco), hideActionSheet: false };
     const show = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl = tmp(1128).intl;
-    intl2 = tmp(1128).intl;
+    intl = tmp(1125).intl;
+    intl2 = tmp(1125).intl;
     show(obj);
   }
 }

@@ -1,12 +1,12 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6693
+// Function ID: 6694
 // Name: useGuildMemberDisplayRole
-// Dependencies: [4883, 4845, 4908, 558, 576, 504, 2]
+// Dependencies: [4884, 4846, 4909, 558, 576, 504, 2]
 
-// Module 6692 (useGuildMemberDisplayRole)
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
+// Module 6693 (useGuildMemberDisplayRole)
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

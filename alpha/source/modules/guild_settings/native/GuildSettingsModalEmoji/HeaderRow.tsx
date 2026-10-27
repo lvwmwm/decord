@@ -1,22 +1,22 @@
-// Module ID: 19076
-// Function ID: 19077
+// Module ID: 19114
+// Function ID: 19115
 // Name: HeaderRow
-// Dependencies: [13138, 5, 32, 19, 17, 19070, 1087, 1395, 21, 4971, 587, 8944, 9943, 1267, 1128, 1281, 8154, 5244, 5234, 558, 576, 504, 2]
+// Dependencies: [13152, 5, 32, 19, 17, 19108, 1084, 1392, 21, 4972, 587, 8944, 9945, 1264, 1125, 1278, 8152, 5245, 5235, 558, 576, 504, 2]
 
-// Module 19076 (HeaderRow)
+// Module 19114 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13138 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19070 */;
-import Constants from "Constants" /* 1087 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19108 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,30 +235,30 @@ function HeaderRow(guild) {
   let tmp8 = dependencyMap;
   obj = guild(8944);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
-  let intl = guild(1128).intl;
+  let intl = guild(1125).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };
-  stringResult = intl.string(guild(1128).t.N2qTQ3);
+  stringResult = intl.string(guild(1125).t.N2qTQ3);
   let items = [obj2, , , ];
-  let intl2 = guild(1128).intl;
+  let intl2 = guild(1125).intl;
   let obj3 = { maxSize: EMOJI_MAX_FILESIZE_KB };
   let obj4 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 2, text: formatToPlainStringResult };
   items[1] = obj4;
-  formatToPlainStringResult = intl2.formatToPlainString(guild(1128).t.gfAXoR, obj3);
-  let intl3 = guild(1128).intl;
+  formatToPlainStringResult = intl2.formatToPlainString(guild(1125).t.gfAXoR, obj3);
+  let intl3 = guild(1125).intl;
   let obj5 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 3, text: stringResult1 };
   items[2] = obj5;
-  stringResult1 = intl3.string(guild(1128).t.rnwKPH);
-  const intl4 = guild(1128).intl;
+  stringResult1 = intl3.string(guild(1125).t.rnwKPH);
+  const intl4 = guild(1125).intl;
   let obj6 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 4, text: stringResult2 };
   items[3] = obj6;
   let tmp13 = closure_14;
   let tmp15 = closure_13;
   let tmp16 = c7;
   let obj7 = { style: tmp.headerContainer, children: items1 };
-  stringResult2 = intl4.string(guild(1128).t["8Vr5Qd"]);
+  stringResult2 = intl4.string(guild(1125).t["8Vr5Qd"]);
   const tmp14 = closure_15;
   if (canCreateExpressions) {
-    const Button = tmp7(5244).Button;
+    const Button = tmp7(5245).Button;
     if (!tmp3) {
       tmp3 = isUploading;
     }
@@ -268,26 +268,26 @@ function HeaderRow(guild) {
       onPress: function handleImagePicker() {
           return obj(...arguments);
         },
-      text: intl5.string(tmp7(1128).t["DU0dy/"]),
+      text: intl5.string(tmp7(1125).t["DU0dy/"]),
       disabled: uploadDisabled
     };
-    intl5 = tmp7(1128).intl;
+    intl5 = tmp7(1125).intl;
     canCreateExpressions = tmp13(Button, obj8);
   }
   items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;
   if (tmp13Result) {
     let obj9 = { style: tmp.errorText, variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp13Result = tmp13(tmp7(5234).Text, obj9);
+    tmp13Result = tmp13(tmp7(5235).Text, obj9);
   }
   let obj10 = { children: tmp15(tmp16, obj7) };
   items1[1] = tmp13Result;
   let obj11 = { style: tmp.uploadInstructionsContainer, children: items2 };
-  items2 = [tmp13(tmp7(5234).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
+  items2 = [tmp13(tmp7(5235).Text, { variant: "text-sm/medium", color: "text-muted", children: description }), , ];
   const obj12 = { variant: "text-xs/bold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: str.toUpperCase() };
-  const Text = tmp7(5234).Text;
-  const intl6 = tmp7(1128).intl;
-  str = intl6.string(tmp7(1128).t.jrXfyw);
+  const Text = tmp7(5235).Text;
+  const intl6 = tmp7(1125).intl;
+  str = intl6.string(tmp7(1125).t.jrXfyw);
   items2[1] = tmp13(Text, obj12);
   const obj13 = {
     style: tmp.uploadInstructionsList,

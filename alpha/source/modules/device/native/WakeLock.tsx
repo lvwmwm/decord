@@ -1,10 +1,10 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11506
+// Function ID: 11507
 // Name: WakeLock
-// Dependencies: [19, 558, 576, 11505, 2]
+// Dependencies: [19, 558, 576, 11507, 2]
 
-// Module 11504 (WakeLock)
-import react_nativeDefault from "react-native" /* 11505 */;
+// Module 11506 (WakeLock)
+import react_nativeDefault from "react-native" /* 11507 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

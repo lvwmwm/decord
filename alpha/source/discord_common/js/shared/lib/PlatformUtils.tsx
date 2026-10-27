@@ -1,13 +1,13 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5903
+// Function ID: 5904
 // Name: shared/PlatformUtils
-// Dependencies: [1367, 2]
+// Dependencies: [1364, 2]
 
-// Module 5902 (shared/PlatformUtils)
-import module_1367_mod from "module_1367" /* 1367 */;
+// Module 5903 (shared/PlatformUtils)
+import module_1364_mod from "module_1364" /* 1364 */;
 import size from "module_2" /* 2 */;
 
-let module_1367;
+let module_1364;
 const set = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]);
 let platform;
 const set1 = new Set(["Android", "iOS", "Windows Phone"]);
@@ -39,7 +39,7 @@ if (tmp5) {
   tmp5 = maxTouchPoints > 1;
 }
 const has = set.has;
-let str = module_1367.product;
+let str = module_1364.product;
 if (str == null) {
   str = "";
 }
@@ -47,7 +47,7 @@ const tmp8 = has(str) || tmp5;
 let has2Result = !tmp8;
 if (has2Result) {
   const has2 = set1.has;
-  const importDefaultResult = module_1367;
+  const importDefaultResult = module_1364;
   let str2;
   if (importDefaultResult != null) {
     const os = importDefaultResult.os;
@@ -60,18 +60,18 @@ if (has2Result) {
   }
   has2Result = has2(str2);
 }
-module_1367 = module_1367_mod;
+module_1364 = module_1364_mod;
 let family;
-if (module_1367 != null) {
-  const os2 = module_1367.os;
+if (module_1364 != null) {
+  const os2 = module_1364.os;
   if (os2 != null) {
     family = os2.family;
   }
 }
-module_1367 = module_1367_mod;
+module_1364 = module_1364_mod;
 let family1;
-if (module_1367 != null) {
-  const os3 = module_1367.os;
+if (module_1364 != null) {
+  const os3 = module_1364.os;
   if (os3 != null) {
     family1 = os3.family;
   }

@@ -1,13 +1,13 @@
-// Module ID: 9551
-// Function ID: 9552
+// Module ID: 9550
+// Function ID: 9551
 // Name: guild_boost_tab_banner
-// Dependencies: [32, 1212, 9535, 9525, 9526, 2]
+// Dependencies: [32, 1209, 9534, 9524, 9525, 2]
 
-// Module 9551 (guild_boost_tab_banner)
-import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9525 */;
-import help_article from "help_article" /* 9526 */;
-import theme_aware_asset from "theme_aware_asset" /* 9535 */;
+// Module 9550 (guild_boost_tab_banner)
+import _mod1209 from "module_1209" /* 1209 */;
+import localized_string from "localized_string" /* 9524 */;
+import help_article from "help_article" /* 9525 */;
+import theme_aware_asset from "theme_aware_asset" /* 9534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const T3 = function T() {
 const T4 = function T() {
   return require("help_article").HelpArticle;
 };
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1209.MessageType;
 class GuildBoostTabBanner$Type extends MessageType {
   constructor() {
     const items = [, , , , , ];
@@ -48,9 +48,9 @@ class GuildBoostTabBanner$Type extends MessageType {
     const obj = { header: "", body: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1209;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -101,7 +101,7 @@ class GuildBoostTabBanner$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1212.UnknownFieldHandler.onRead;
+                onRead = _mod1209.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -116,7 +116,7 @@ class GuildBoostTabBanner$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -124,7 +124,7 @@ class GuildBoostTabBanner$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const headerLocalized = asset.headerLocalized;
-      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(headerLocalized, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -132,7 +132,7 @@ class GuildBoostTabBanner$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = asset.bodyLocalized;
-      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(bodyLocalized, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -140,22 +140,22 @@ class GuildBoostTabBanner$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite4 = HelpArticle.internalBinaryWrite;
       const helpArticle = asset.helpArticle;
-      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(helpArticle, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if ("" !== asset.header) {
-      const tagResult4 = tag.tag(5, _mod1212.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1209.WireType.LengthDelimited);
       tagResult4.string(asset.header);
     }
     if ("" !== asset.body) {
-      const tagResult5 = tag.tag(6, _mod1212.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1209.WireType.LengthDelimited);
       tagResult5.string(asset.body);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1209.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

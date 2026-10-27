@@ -1,21 +1,21 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17769
+// Function ID: 17770
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 4883, 4845, 1392, 7315, 1087, 21, 4971, 587, 558, 576, 504, 1267, 7316, 17562, 6651, 1128, 2067, 1202, 2]
+// Dependencies: [19, 17, 4884, 4846, 1389, 7317, 1084, 21, 4972, 587, 558, 576, 504, 1264, 7318, 17603, 6652, 1125, 2064, 1199, 2]
 
-// Module 17728 (NsfwGateGuildSidebar)
+// Module 17769 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 7315 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7316 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants2 from "Constants" /* 7317 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7318 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         if (cResult[11] !== stateFromStores) {
           let obj2 = { guild: stateFromStores, showExtraButtons: false };
-          const tmp21 = closure_12(stateFromStores(17562), obj2);
+          const tmp21 = closure_12(stateFromStores(17603), obj2);
           cResult[11] = stateFromStores;
           cResult[12] = tmp21;
           tmp18 = tmp21;
@@ -108,8 +108,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp26 = stateFromStores(6651)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
-          const tmp27 = stateFromStores(6651)(constants3.PRIMARY_NORMAL, undefined, 14);
+          const tmp26 = stateFromStores(6652)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
+          const tmp27 = stateFromStores(6652)(constants3.PRIMARY_NORMAL, undefined, 14);
           cResult[13] = tmp26;
           cResult[14] = tmp27;
           tmp23 = tmp27;
@@ -121,13 +121,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         const _Symbol2 = Symbol;
         const emptyStateContainer = tmp4.emptyStateContainer;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
-          const stringResult = intl.string(tmp(1128).t.bAVpRR);
-          const intl2 = tmp(1128).intl;
+          const intl = tmp(1125).intl;
+          const stringResult = intl.string(tmp(1125).t.bAVpRR);
+          const intl2 = tmp(1125).intl;
           const format = intl2.format;
           const obj3 = { helpURL: obj5.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
-          const NQuXf0 = tmp(1128).t.NQuXf0;
-          obj5 = stateFromStores(2067);
+          const NQuXf0 = tmp(1125).t.NQuXf0;
+          obj5 = stateFromStores(2064);
           const formatResult = format(NQuXf0, obj3);
           cResult[15] = stringResult;
           cResult[16] = formatResult;
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
           tmp37 = tmp40;
         }
         const obj6 = { titleStyle: tmp22, bodyStyle: tmp23, containerStyle: emptyStateContainer, title: tmp28, body: tmp29 };
-        const tmp36 = closure_12(tmp(1202).RefreshEmptyState, obj6);
+        const tmp36 = closure_12(tmp(1199).RefreshEmptyState, obj6);
         cResult[17] = tmp4.emptyStateContainer;
         cResult[18] = tmp29;
         cResult[19] = tmp36;

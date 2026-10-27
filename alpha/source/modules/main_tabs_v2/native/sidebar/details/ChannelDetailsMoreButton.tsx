@@ -1,13 +1,13 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18230
+// Function ID: 18231
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10691, 1128, 9705, 9699, 9032, 2]
+// Dependencies: [19, 21, 558, 576, 10694, 1125, 9707, 9701, 9032, 2]
 
-// Module 18196 (ChannelDetailsMoreButton)
+// Module 18230 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9032 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9707 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10694 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,8 +44,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
       let tmp9;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(tmp(1128).t["UKOtz+"]);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(tmp(1125).t["UKOtz+"]);
         cResult[2] = stringResult;
         tmp7 = stringResult;
       } else {
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
       if (cResult[3] !== tmp4) {
         ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
         PressableNavigatorButtonWrapperDefault;
-        const HeaderIconButton = tmp(9699).HeaderIconButton;
+        const HeaderIconButton = tmp(9701).HeaderIconButton;
         const tmp13 = <tmp12>{null}</tmp12>;
         cResult[3] = tmp4;
         cResult[4] = tmp13;
@@ -76,10 +76,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
   let tmp2 = null;
   if (null != channel) {
     if (channel.isDM()) {
-      let obj2 = { accessibilityLabel: intl.string(channel(1128).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
+      let obj2 = { accessibilityLabel: intl.string(channel(1125).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(9699).HeaderIconButton;
-      intl = channel(1128).intl;
+      const HeaderIconButton = channel(9701).HeaderIconButton;
+      intl = channel(1125).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {
       tmp2 = null;

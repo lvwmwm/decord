@@ -1,17 +1,17 @@
-// Module ID: 9660
-// Function ID: 9661
+// Module ID: 9662
+// Function ID: 9663
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4913, 1392, 5983, 2000, 5634, 1128, 5604, 5908, 7411, 7566, 2]
+// Dependencies: [4914, 1389, 5984, 1997, 5635, 1125, 5605, 5909, 7413, 7567, 2]
 
-// Module 9660 (application_commands/ApplicationCommandBuiltIns)
-import Server from "Server" /* 2000 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5634 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 9662 (application_commands/ApplicationCommandBuiltIns)
+import Server from "Server" /* 1997 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5635 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5984 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7567 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,28 +34,28 @@ let obj = {
     let intl4;
     channel = channel.channel;
     if (null != channel) {
-      const obj4 = channel(5604);
+      const obj4 = channel(5605);
       const channelName = obj4.computeChannelName(channel, UserStore, RelationshipStore);
-      const intl5 = channel(1128).intl;
+      const intl5 = channel(1125).intl;
       const obj2 = { name: channelName };
-      const formatToPlainStringResult = intl5.formatToPlainString(channel(1128).t.hJ5Ap4, obj2);
-      const intl6 = channel(1128).intl;
+      const formatToPlainStringResult = intl5.formatToPlainString(channel(1125).t.hJ5Ap4, obj2);
+      const intl6 = channel(1125).intl;
       const obj3 = { name: channelName };
-      let formatResult = intl6.format(channel(1128).t.SSIVOu, obj3);
+      let formatResult = intl6.format(channel(1125).t.SSIVOu, obj3);
       let formatToPlainStringResult1 = formatToPlainStringResult;
       if (channel.isManaged()) {
-        let intl = tmp6(1128).intl;
+        let intl = tmp6(1125).intl;
         let obj = { name: channelName };
-        formatToPlainStringResult1 = intl.formatToPlainString(tmp6(1128).t.hVGjEW, obj);
-        const intl2 = tmp6(1128).intl;
+        formatToPlainStringResult1 = intl.formatToPlainString(tmp6(1125).t.hVGjEW, obj);
+        const intl2 = tmp6(1125).intl;
         const obj5 = { name: channelName };
-        formatResult = intl2.format(tmp6(1128).t.IK1Qvs, obj5);
+        formatResult = intl2.format(tmp6(1125).t.IK1Qvs, obj5);
       }
       const obj6 = {
         title: formatToPlainStringResult1,
         body: formatResult,
-        confirmText: intl3.string(channel(1128).t["26C4oi"]),
-        cancelText: intl4.string(channel(1128).t["ETE/oC"]),
+        confirmText: intl3.string(channel(1125).t["26C4oi"]),
+        cancelText: intl4.string(channel(1125).t["ETE/oC"]),
         onConfirm() {
             try {
               const obj = ChannelActionCreatorsDefault;
@@ -71,8 +71,8 @@ let obj = {
       };
       const show = AlertActionCreatorsDefault.show;
       AlertActionCreatorsDefault;
-      intl3 = tmp6(1128).intl;
-      intl4 = tmp6(1128).intl;
+      intl3 = tmp6(1125).intl;
+      intl4 = tmp6(1125).intl;
       show(obj6);
     }
   }

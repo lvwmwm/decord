@@ -1,56 +1,56 @@
 // Module ID: 1772
 // Function ID: 1773
-// Dependencies: [1661, 1702]
+// Dependencies: [1773, 1774, 1775, 1776, 1777, 1778, 1779, 1780, 1781, 1782]
 
 // Module 1772
-import startMapper from "startMapper" /* 1702 */;
-import module_1661 from "module_1661" /* 1661 */;
+import BounceIn from "BounceIn" /* 1773 */;
+import FadeIn from "FadeIn" /* 1774 */;
+import FlipInXUp from "FlipInXUp" /* 1775 */;
+import LightSpeedInRight from "LightSpeedInRight" /* 1776 */;
+import PinwheelIn from "PinwheelIn" /* 1777 */;
+import RollInLeft from "RollInLeft" /* 1778 */;
+import RotateInDownLeft from "RotateInDownLeft" /* 1779 */;
+import SlideInRight from "SlideInRight" /* 1780 */;
+import StretchInX from "StretchInX" /* 1781 */;
+import ZoomIn from "ZoomIn" /* 1782 */;
 
-let fn;
-if (module_1661.shouldBeUseWeb()) {
-  fn = function t() {
-
-  };
-} else {
-  let closure_0 = [];
-  let closure_1 = [];
-  let obj = {
-    update(arg0, arg1) {
-        const tmp = arg1;
-        if (tmp) {
-          closure_1.push(arg0);
-        } else {
-          closure_0.push(arg0);
-        }
-        if (closure_0.length + closure_1.length === 1) {
-          const self = this;
-          obj = module_1661;
-          if (obj.isFabric()) {
-            self.flush();
-          } else {
-            const _setImmediate = setImmediate;
-            setImmediate(self.flush);
-          }
-        }
-      },
-    flush() {
-        obj = startMapper;
-        const result = obj.configureLayoutAnimationBatch(closure_0.concat(closure_1));
-        closure_0.length = 0;
-        closure_1.length = 0;
-      }
-  };
-  fn = function t(viewTag, type, arg2, sharedTransitionTag, arg4) {
-    let shareableCloneRecursive;
-    obj = { viewTag, type, config: shareableCloneRecursive, sharedTransitionTag };
-    shareableCloneRecursive = undefined;
-    const update = obj.update;
-    if (arg2) {
-      const obj2 = startMapper;
-      shareableCloneRecursive = obj2.makeShareableCloneRecursive(arg2);
-    }
-    return update(obj, arg4);
-  };
+for (const key10013 in BounceIn) {
+  exports[key10013] = BounceIn[key10013];
+  continue;
 }
-
-export const updateLayoutAnimations = fn;
+for (const key10017 in FadeIn) {
+  exports[key10017] = FadeIn[key10017];
+  continue;
+}
+for (const key10021 in FlipInXUp) {
+  exports[key10021] = FlipInXUp[key10021];
+  continue;
+}
+for (const key10025 in LightSpeedInRight) {
+  exports[key10025] = LightSpeedInRight[key10025];
+  continue;
+}
+for (const key10029 in PinwheelIn) {
+  exports[key10029] = PinwheelIn[key10029];
+  continue;
+}
+for (const key10033 in RollInLeft) {
+  exports[key10033] = RollInLeft[key10033];
+  continue;
+}
+for (const key10037 in RotateInDownLeft) {
+  exports[key10037] = RotateInDownLeft[key10037];
+  continue;
+}
+for (const key10041 in SlideInRight) {
+  exports[key10041] = SlideInRight[key10041];
+  continue;
+}
+for (const key10045 in StretchInX) {
+  exports[key10045] = StretchInX[key10045];
+  continue;
+}
+for (const key10049 in ZoomIn) {
+  exports[key10049] = ZoomIn[key10049];
+  continue;
+}

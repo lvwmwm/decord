@@ -1,14 +1,14 @@
-// Module ID: 19077
-// Function ID: 19078
+// Module ID: 19115
+// Function ID: 19116
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 21, 8724, 19078, 19079, 19080, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 19116, 19117, 19118, 558, 576, 4979, 5670, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 19077 (EmptyServerSettingsEmoji)
+// Module 19115 (EmptyServerSettingsEmoji)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4978 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import shared from "shared" /* 4979 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

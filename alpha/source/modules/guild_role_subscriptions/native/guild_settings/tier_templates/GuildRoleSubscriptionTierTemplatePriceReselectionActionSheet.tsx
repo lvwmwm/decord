@@ -1,24 +1,24 @@
-// Module ID: 19341
-// Function ID: 19342
+// Module ID: 19379
+// Function ID: 19380
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1394, 1098, 21, 4971, 587, 558, 576, 5039, 6988, 1128, 7339, 16588, 5234, 9041, 1633, 1202, 5244, 5210, 5269, 5265, 2]
+// Dependencies: [32, 19, 17, 1391, 1095, 21, 4972, 587, 558, 576, 5040, 6990, 1125, 7341, 16630, 5235, 9041, 1630, 1199, 5245, 5211, 5270, 5266, 2]
 
-// Module 19341 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 19379 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import react_native from "react-native" /* 5039 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FormRadio from "FormRadio" /* 6988 */;
-import PriceUtils from "PriceUtils" /* 7339 */;
+import Constants from "Constants" /* 1095 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import react_native from "react-native" /* 5040 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FormRadio from "FormRadio" /* 6990 */;
+import PriceUtils from "PriceUtils" /* 7341 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16588 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16630 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,10 +99,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
         tmp12 = cResult[9];
       }
       if (cResult[10] !== price) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const format = intl.format;
         const obj4 = { price: tmpResult3.formatPrice(price, CurrencyCodes.USD), interval: tmpResult4.formatPlanInterval(obj5) };
-        const CgmBaG = tmp(1128).t.CgmBaG;
+        const CgmBaG = tmp(1125).t.CgmBaG;
         obj5 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
         tmpResult3 = PriceUtils;
         tmpResult4 = GuildRoleSubscriptionTypeUtils;
@@ -192,11 +192,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
   const obj3 = { style: tmp.rowStatusIcon, children: React4(FormRadio.FormRadio, { selected }) };
   items1[0] = React4(metroRequire, obj3);
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(5234).Text;
-  const intl = tmp2(1128).intl;
+  const Text = tmp2(5235).Text;
+  const intl = tmp2(1125).intl;
   format = intl.format;
   obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };
-  CgmBaG = tmp2(1128).t.CgmBaG;
+  CgmBaG = tmp2(1125).t.CgmBaG;
   obj6 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
   tmp2Result = PriceUtils;
   tmp2Result2 = GuildRoleSubscriptionTypeUtils;

@@ -1,7 +1,7 @@
 // Module ID: 9029
 // Function ID: 9030
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 6784, 558, 576, 504, 9030, 8890, 12, 11, 1104, 8887, 2]
+// Dependencies: [32, 19, 6785, 558, 576, 504, 9030, 8890, 12, 11, 1101, 8887, 2]
 
 // Module 9029 (useGuildEventRecurrences)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,7 +10,7 @@ import ScheduleUtils from "ScheduleUtils" /* 8890 */;
 import reactDefault from "react" /* 9030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 9630
-// Function ID: 9631
+// Module ID: 9632
+// Function ID: 9633
 // Name: Authorize
-// Dependencies: [4823, 5002, 1087, 9631, 8827, 6722, 4908, 1099, 5702, 2]
+// Dependencies: [4824, 5003, 1084, 9633, 8827, 6723, 4909, 1096, 5703, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9630 (Authorize)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import _mod6722 from "module_6722" /* 6722 */;
+// Module 9632 (Authorize)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import _mod6723 from "module_6723" /* 6723 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
-import scopes from "scopes" /* 9631 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import Constants from "Constants" /* 1087 */;
+import scopes from "scopes" /* 9633 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(5702);
+const QueryStringUtils = tmp(5703);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
@@ -44,12 +44,12 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
       return guild_id;
     }
   }
-  const obj = _mod6722;
+  const obj = _mod6723;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {
     let str2 = "0";
-    const deserialize = tmp4(1099).deserialize;
+    const deserialize = tmp4(1096).deserialize;
     BigFlagUtilsAll;
     if (null != parsed.permissions) {
       str2 = "0";

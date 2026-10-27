@@ -1,34 +1,17 @@
 // Module ID: 8239
 // Function ID: 8240
-// Dependencies: []
-// Exports: getCalculatedGpsValue, getEncodedString, getStringValue
+// Dependencies: [8237]
 
 // Module 8239
-const f100671 = (item) => String.fromCharCode(item);
+import _mod8237 from "module_8237" /* 8237 */;
 
-export const getStringValue = function getStringValue(value) {
-  const mapped = value.map(f100671);
-  return mapped.join("");
-};
-export const getEncodedString = function getEncodedString(arr) {
-  if (arr.length >= 8) {
-    const substr = arr.slice(0, 8);
-    const mapped = substr.map(f100671);
-    const joined = mapped.join("");
-    if ("ASCII\0\0\0" === joined) {
-      const substr1 = arr.slice(8);
-      const mapped1 = substr1.map(f100671);
-      return mapped1.join("");
-    } else if ("JIS\0\0\0\0\0" === joined) {
-      return "[JIS encoded text]";
-    } else if ("UNICODE\0" === joined) {
-      return "[Unicode encoded text]";
-    } else if ("\0\0\0\0\0\0\0\0" === joined) {
-      return "[Undefined encoding]";
-    }
+let obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
+  description(value) {
+    const obj = _mod8237;
+    return obj.getStringValue(value);
   }
-  return "Undefined";
 };
-export const getCalculatedGpsValue = function getCalculatedGpsValue(value) {
-  return value[0][0] / value[0][1] + value[1][0] / value[1][1] / 60 + value[2][0] / value[2][1] / 3600;
-};
+
+export default obj;

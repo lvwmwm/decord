@@ -1,25 +1,25 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9393
+// Function ID: 9394
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4972, 2001, 21, 4971, 558, 576, 1499, 9395, 9396, 9397, 9399, 504, 1107, 9400, 9398, 5669, 8717, 2]
+// Dependencies: [32, 19, 17, 4973, 1998, 21, 4972, 558, 576, 1496, 9394, 9395, 9396, 9398, 504, 1104, 9399, 9397, 5670, 8717, 2]
 
-// Module 9394 (ProfileEffect)
+// Module 9393 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import ConstantsIOS from "ConstantsIOS" /* 1104 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useProfileEffectDefault from "useProfileEffect" /* 8717 */;
-import utils from "utils" /* 9395 */;
-import constants from "constants" /* 9396 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9397 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9400 */;
+import utils from "utils" /* 9394 */;
+import profile_effects_constants from "profile_effects/constants" /* 9395 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9396 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9399 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import AppStateStore from "AppStateStore" /* 2001 */;
-import createStyles from "createStyles" /* 4971 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -216,7 +216,7 @@ function ProfileEffect(profileEffect) {
   const effect = width.useEffect(() => {
     ref4.current = memo;
     ref3.current = false;
-    ref.current = -constants.PROFILE_EFFECT_INTRO_DELAY;
+    ref.current = -profile_effects_constants.PROFILE_EFFECT_INTRO_DELAY;
     const mapped = memo.map((item) => {
       const obj = profileEffect(paused[12]);
       return obj.shouldAnimate(item, ref.current);

@@ -1,13 +1,13 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15815
+// Function ID: 15816
 // Name: frameRelaunchDeepLink
-// Dependencies: [6378, 1087, 15725, 15709, 9264, 7434, 10728, 2]
+// Dependencies: [6379, 1084, 15761, 15745, 9264, 7436, 10731, 2]
 
-// Module 15777 (frameRelaunchDeepLink)
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15709 */;
-import Constants_mod from "Constants" /* 6378 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+// Module 15815 (frameRelaunchDeepLink)
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15745 */;
+import Constants_mod from "Constants" /* 6379 */;
+import Constants_mod2 from "Constants" /* 1084 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15761 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -48,20 +48,20 @@ let obj2 = {
       } else {
         substr = hash1;
       }
-      const obj = socket(7434);
+      const obj = socket(7436);
       const frameDeepLinkChannelId = obj.getFrameDeepLinkChannelId(frame);
       const subscriptions = server.subscriptions;
       let tmp8 = null != frameDeepLinkChannelId;
       const someResult = subscriptions.some((socket) => socket.socket === socket && socket.evt === constants.FRAME_DEEP_LINK);
       if (tmp8) {
-        const tmp4Result = socket(10728);
+        const tmp4Result = socket(10731);
         tmp8 = !tmp4Result.isConjurePreviewSurface(frame.surface);
       }
       if (tmp8) {
         tmp8 = someResult;
       }
       if (tmp8) {
-        const tmp4Result2 = socket(7434);
+        const tmp4Result2 = socket(7436);
         const result = tmp4Result2.setFrameRelaunchDeepLink(frameDeepLinkChannelId, frame.applicationId, substr);
       }
       return { hash: substr };

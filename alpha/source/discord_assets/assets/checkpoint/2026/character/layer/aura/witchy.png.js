@@ -1,8 +1,8 @@
-// Module ID: 6358
-// Function ID: 6359
+// Module ID: 6361
+// Function ID: 6362
 // Dependencies: [2]
 
-// Module 6358
+// Module 6361
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/witchy.png.js");

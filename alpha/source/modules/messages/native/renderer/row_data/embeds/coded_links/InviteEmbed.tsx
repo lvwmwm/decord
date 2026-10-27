@@ -1,23 +1,23 @@
-// Module ID: 14533
-// Function ID: 14534
+// Module ID: 14569
+// Function ID: 14570
 // Name: InviteEmbed
-// Dependencies: [5700, 1392, 1087, 7809, 14534, 7808, 14536, 14537, 14538, 14541, 14543, 10001, 10002, 2]
+// Dependencies: [5701, 1389, 1084, 7810, 14570, 7809, 14572, 14573, 14574, 14577, 14579, 10003, 10004, 2]
 // Exports: createInviteEmbed
 
-// Module 14533 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7808 */;
-import Constants2 from "Constants" /* 7809 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10001 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10002 */;
-import invite_GuildInvite from "invite/GuildInvite" /* 14534 */;
-import GroupDMInvite from "GroupDMInvite" /* 14536 */;
-import FriendInvite from "FriendInvite" /* 14537 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14538 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14541 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 14543 */;
-import InviteStore from "InviteStore" /* 5700 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+// Module 14569 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7809 */;
+import Constants2 from "Constants" /* 7810 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10003 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10004 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 14570 */;
+import GroupDMInvite from "GroupDMInvite" /* 14572 */;
+import FriendInvite from "FriendInvite" /* 14573 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14574 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14577 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 14579 */;
+import InviteStore from "InviteStore" /* 5701 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

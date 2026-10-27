@@ -1,16 +1,16 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 11378
+// Function ID: 11379
 // Name: useShouldForcePipOrientation
-// Dependencies: [4822, 6772, 502, 2026, 5632, 558, 576, 11376, 504, 6780, 8820, 2]
+// Dependencies: [4823, 6773, 502, 2023, 5633, 558, 576, 11379, 504, 6781, 8820, 2]
 
-// Module 11375 (useShouldForcePipOrientation)
-import Constants from "Constants" /* 2026 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6780 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11376 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+// Module 11378 (useShouldForcePipOrientation)
+import Constants from "Constants" /* 2023 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6781 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 11379 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 5632 */;
+import CallConstants from "CallConstants" /* 5633 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

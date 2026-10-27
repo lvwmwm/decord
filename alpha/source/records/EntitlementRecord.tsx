@@ -1,15 +1,15 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2043
+// Function ID: 2044
 // Name: EntitlementRecord
-// Dependencies: [1407, 2047, 1406, 1087, 2053, 15296, 2]
+// Dependencies: [1404, 2044, 1403, 1084, 2050, 15332, 2]
 
-// Module 2046 (EntitlementRecord)
-import Constants from "Constants" /* 1087 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15296 */;
-import Record from "Record" /* 1407 */;
-import SKURecord from "SKURecord" /* 2047 */;
-import UserRecord from "UserRecord" /* 1406 */;
+// Module 2043 (EntitlementRecord)
+import Constants from "Constants" /* 1084 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15332 */;
+import Record from "Record" /* 1404 */;
+import SKURecord from "SKURecord" /* 2044 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import size from "module_2" /* 2 */;
 
 const EntitlementTypes = Constants.EntitlementTypes;

@@ -1,22 +1,22 @@
-// Module ID: 17652
-// Function ID: 17653
+// Module ID: 17693
+// Function ID: 17694
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 17653, 4845, 21, 587, 5052, 5258, 4971, 558, 576, 573, 17654, 17655, 5206, 13405, 7278, 1128, 2568, 5234, 7305, 8913, 2]
+// Dependencies: [19, 17, 17694, 4846, 21, 587, 5053, 5259, 4972, 558, 576, 573, 17695, 17696, 5207, 13419, 7280, 1125, 2567, 5235, 7307, 8913, 2]
 
-// Module 17652 (GuildPowerupsProgressBar)
+// Module 17693 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5206 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13405 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17655 */;
+import timing from "timing" /* 5207 */;
+import LinearGradientDefault from "LinearGradient" /* 5259 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13419 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17696 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17653 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17694 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  stateFromStores1(17654)(stateFromStores);
+  stateFromStores1(17695)(stateFromStores);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [GuildBoostingProgressBarPersistedStore];
     cResult[4] = items2;

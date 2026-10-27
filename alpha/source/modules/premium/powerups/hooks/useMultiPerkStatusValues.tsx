@@ -1,18 +1,18 @@
-// Module ID: 13499
-// Function ID: 13500
+// Module ID: 13513
+// Function ID: 13514
 // Name: useMultiPerkStatusValues
-// Dependencies: [5182, 558, 576, 13426, 1128, 2568, 2]
+// Dependencies: [5183, 558, 576, 13440, 1125, 2567, 2]
 
-// Module 13499 (useMultiPerkStatusValues)
+// Module 13513 (useMultiPerkStatusValues)
 import react from "react" /* 576 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5182 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13426 */;
+import _modDef2567 from "module_2567" /* 2567 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5183 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl2 = tmp(1128);
+const intl2 = tmp(1125);
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerkStatusValues(arg0) {
   let guildId;
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerk
       let tmp15;
       const _Symbol3 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
+        const obj4 = { type: "active", statusText: intl.string(_modDef2567.FFLkmx) };
         intl = intl2.intl;
         cResult[8] = obj4;
         tmp15 = obj4;
@@ -374,7 +374,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerk
       tmp4 = { type: "expiring", expiringAt: reduced };
       const obj2 = { type: "expiring", expiringAt: reduced };
     } else if (someResult) {
-      const obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
+      const obj3 = { type: "active", statusText: intl.string(_modDef2567.FFLkmx) };
       intl = intl2.intl;
       tmp4 = obj3;
     }

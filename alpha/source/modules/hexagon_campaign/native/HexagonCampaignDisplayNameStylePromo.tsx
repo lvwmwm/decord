@@ -1,18 +1,18 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15911
+// Function ID: 15912
 // Name: HexagonCampaignDisplayNameStylePromo
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 15874, 15875, 1128, 4247, 5037, 15877, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5235, 15912, 15913, 1125, 4248, 5038, 15915, 2]
 
-// Module 15873 (HexagonCampaignDisplayNameStylePromo)
+// Module 15911 (HexagonCampaignDisplayNameStylePromo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef4247 from "module_4247" /* 4247 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 15874 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15875 */;
+import _modDef4248 from "module_4248" /* 4248 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 15912 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
       return tmp18;
     }
     const obj3 = { theme: require("shared/ThemeTypes").ThemeTypes.DARK, children: closure_5(View, obj4) };
-    const ThemeContextProvider = tmp(5037).ThemeContextProvider;
+    const ThemeContextProvider = tmp(5038).ThemeContextProvider;
     obj4 = { style: tmp5.promo, children: items };
     items = [tmp7, tmp15];
     const tmp22 = closure_4(ThemeContextProvider, obj3);
@@ -90,12 +90,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
     cResult[10] = tmp22;
     tmp18 = tmp22;
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1125).intl;
   if (undefined !== showLearnMore && showLearnMore) {
     const obj5 = { learnMoreHook: tmp6 };
-    formatResult = intl.format(_modDef4247.eb99JA, obj5);
+    formatResult = intl.format(_modDef4248.eb99JA, obj5);
   } else {
-    formatResult = intl.string(_modDef4247.WyZOg3);
+    formatResult = intl.string(_modDef4248.WyZOg3);
   }
   cResult[3] = tmp6;
   cResult[4] = undefined !== showLearnMore && showLearnMore;
@@ -130,9 +130,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           return React3(Text, obj, arg1);
         }
     };
-    formatResult = intl.format(tmp6(4247).eb99JA, obj3);
+    formatResult = intl.format(tmp6(4248).eb99JA, obj3);
   } else {
-    formatResult = intl.string(tmp6(4247).WyZOg3);
+    formatResult = intl.string(tmp6(4248).WyZOg3);
   }
   items[1] = closure_4(Text, { variant: "text-xxs/medium", color: "text-default", lineClamp: 1, children: formatResult });
   return closure_4(ThemeContextProvider, obj);

@@ -1,20 +1,20 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13927
+// Function ID: 13928
 // Name: PremiumGiftPurchaseButton
-// Dependencies: [19, 17, 8681, 9520, 1087, 21, 4971, 587, 558, 576, 5593, 1505, 10450, 13914, 10495, 504, 10508, 10496, 8673, 10448, 10447, 5159, 11052, 1128, 10509, 10512, 2600, 10120, 10514, 10502, 7278, 5234, 2067, 5244, 2]
+// Dependencies: [19, 17, 8681, 9519, 1084, 21, 4972, 587, 558, 576, 5594, 1502, 10452, 13928, 10498, 504, 10511, 10499, 8673, 10450, 10449, 5160, 11055, 1125, 10512, 10515, 2599, 10122, 10517, 10505, 7280, 5235, 2064, 5245, 2]
 
-// Module 13913 (PremiumGiftPurchaseButton)
+// Module 13927 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ChatInputUtils from "ChatInputUtils" /* 5159 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10448 */;
+import Constants from "Constants" /* 1084 */;
+import ChatInputUtils from "ChatInputUtils" /* 5160 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10450 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
-import PromotionsStore from "PromotionsStore" /* 9520 */;
+import PromotionsStore from "PromotionsStore" /* 9519 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,12 +25,12 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const HelpdeskUtilsDefault = tmp(2067);
-const _modDef2600 = tmp(2600);
-const AnalyticsLocationDefault = tmp(7278);
-const useShouldShowGiftingPromotionDecoDefault = tmp(10508);
-const PremiumGiftPromotionDetailsDefault = tmp(10512);
-const GiftingBadgeProgressBannerDefault = tmp(10514);
+const HelpdeskUtilsDefault = tmp(2064);
+const _modDef2599 = tmp(2599);
+const AnalyticsLocationDefault = tmp(7280);
+const useShouldShowGiftingPromotionDecoDefault = tmp(10511);
+const PremiumGiftPromotionDetailsDefault = tmp(10515);
+const GiftingBadgeProgressBannerDefault = tmp(10517);
 let react = react_mod;
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 let HelpdeskArticles = Constants.HelpdeskArticles;
@@ -257,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
           }
       };
       items = allRewards;
-      const REWARD_SELECT = tmp4(10447).PremiumGiftScreens.REWARD_SELECT;
+      const REWARD_SELECT = tmp4(10449).PremiumGiftScreens.REWARD_SELECT;
       if (allRewards == null) {
         items = [];
       }
@@ -317,15 +317,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   let tmp2 = dependencyMap;
   const tmp3 = closure_11(useSafeAreaInsetsKeyboardAwareDefault().insets.bottom);
   let tmp4 = defaultSelection;
-  let obj = defaultSelection(1505);
+  let obj = defaultSelection(1502);
   importDefault = obj.useNavigation();
-  let obj2 = defaultSelection(10450);
+  let obj2 = defaultSelection(10452);
   const nativeGiftContext = obj2.useNativeGiftContext();
   ({ onPurchase: c2, isPurchasing, allRewards: c3, claimableRewards } = nativeGiftContext);
   const selectedGiftingPromotionReward = nativeGiftContext.selectedGiftingPromotionReward;
   const setSelectedGiftingPromotionReward = nativeGiftContext.setSelectedGiftingPromotionReward;
   ({ setCurrentAnalyticsStep: c7, productId } = nativeGiftContext);
-  const obj3 = defaultSelection(13914);
+  const obj3 = defaultSelection(13928);
   const canPurchaseIAP = obj3.useCanPurchaseIAP(productId);
   let items = [c7];
   const obj4 = defaultSelection(504);
@@ -344,7 +344,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   let closure_9 = tmp9;
   const tmp10 = useShouldShowGiftingPromotionDecoDefault();
   let closure_10 = tmp11;
-  const GiftingBadgeExperiment = tmp4(10496).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp4(10499).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftPurchaseButton" }).enabled;
   let items1 = [setSelectedGiftingPromotionReward];
   const tmp4Result = tmp4(504);
@@ -361,12 +361,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       setSelectedGiftingPromotionReward(claimableRewards[0]);
     }
   }, items2);
-  const tmp4Result4 = tmp4(11052);
+  const tmp4Result4 = tmp4(11055);
   const product = tmp4Result4.useFetchCollectiblesProduct(selectedGiftingPromotionReward).product;
   const tmp14 = null != product && product.items.length > 0;
-  const intl = tmp4(1128).intl;
+  const intl = tmp4(1125).intl;
   const string = intl.string;
-  const t = tmp4(1128).t;
+  const t = tmp4(1125).t;
   if (tmp10 && null == selectedGiftingPromotionReward) {
     stringResult = string(t["gNZY/B"]);
   } else {
@@ -376,35 +376,35 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   if (tmp10 && null == selectedGiftingPromotionReward) {
     str = "primary";
   }
-  tmp4(10509);
+  tmp4(10512);
   if (stateFromStores != null) {
     const asset = stateFromStores.asset;
   }
   const obj5 = { style: tmp3.container, children: null };
   if (tmp10 && null == selectedGiftingPromotionReward) {
     if (null != claimableRewards && claimableRewards.length > 0) {
-      const obj6 = { style: tmp3.promoDetails, imageUrl: tmp17, title: intl4.string(_modDef2600["7yaXr8"]), subtitle: intl5.string(_modDef2600.QojGXK) };
+      const obj6 = { style: tmp3.promoDetails, imageUrl: tmp17, title: intl4.string(_modDef2599["7yaXr8"]), subtitle: intl5.string(_modDef2599.QojGXK) };
       const tmpResult = PremiumGiftPromotionDetailsDefault;
-      intl4 = tmp4(1128).intl;
-      intl5 = tmp4(1128).intl;
+      intl4 = tmp4(1125).intl;
+      intl5 = tmp4(1125).intl;
       tmp21Result = closure_9(tmpResult, obj6);
     }
     const items3 = [tmp21Result, , ];
     let tmp30 = !tmp11;
     if (tmp30) {
       const obj7 = { variant: "text-sm/normal", children: format(hYoGUM, obj8) };
-      const Text = tmp4(5234).Text;
-      const intl6 = tmp4(1128).intl;
+      const Text = tmp4(5235).Text;
+      const intl6 = tmp4(1125).intl;
       format = intl6.format;
       obj8 = { paidURL: tmpResult3.getArticleURL(HelpdeskArticles.PAID_TERMS) };
-      hYoGUM = tmp4(1128).t.hYoGUM;
+      hYoGUM = tmp4(1125).t.hYoGUM;
       tmpResult3 = HelpdeskUtilsDefault;
       tmp30 = closure_9(Text, obj7);
     }
     items3[1] = tmp30;
     const obj9 = { loading: isPurchasing, variant: str, text: stringResult, disabled: tmp34, onPress };
     tmp34 = !canPurchaseIAP;
-    const Button = tmp4(5244).Button;
+    const Button = tmp4(5245).Button;
     const tmp33 = closure_9;
     if (canPurchaseIAP) {
       tmp34 = isPurchasing;
@@ -424,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
               const navigate = navigation.navigate;
               const obj2 = { defaultHighlightedReward: defaultSelection, allRewards: items, claimableRewards: items1, onSelect };
               items = c3;
-              const REWARD_SELECT = tmp(10447).PremiumGiftScreens.REWARD_SELECT;
+              const REWARD_SELECT = tmp(10449).PremiumGiftScreens.REWARD_SELECT;
               if (c3 == null) {
                 items = [];
               }
@@ -464,7 +464,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
                     const navigate = navigation.navigate;
                     const obj = { defaultHighlightedReward: tmp, allRewards: items, claimableRewards: items1, onSelect };
                     items = c3;
-                    const REWARD_SELECT = tmp4(10447).PremiumGiftScreens.REWARD_SELECT;
+                    const REWARD_SELECT = tmp4(10449).PremiumGiftScreens.REWARD_SELECT;
                     if (c3 == null) {
                       items = [];
                     }
@@ -485,19 +485,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
         formatToPlainStringResult = undefined;
         const tmp23 = claimableRewards;
         if (!(null != claimableRewards && 1 === claimableRewards.length)) {
-          const intl2 = tmp4(1128).intl;
+          const intl2 = tmp4(1125).intl;
           const obj11 = { rewardName: product.name };
-          formatToPlainStringResult = intl2.formatToPlainString(_modDef2600.qbJihM, obj11);
+          formatToPlainStringResult = intl2.formatToPlainString(_modDef2599.qbJihM, obj11);
         }
-        const obj12 = { style: tmp3.previewDetails, product, title: intl3.string(tmp4(1128).t.Rh4oem), subtitle: name };
-        const PremiumGiftPromotionCollectibleRewardDetails = tmp4(10512).PremiumGiftPromotionCollectibleRewardDetails;
-        intl3 = tmp4(1128).intl;
+        const obj12 = { style: tmp3.previewDetails, product, title: intl3.string(tmp4(1125).t.Rh4oem), subtitle: name };
+        const PremiumGiftPromotionCollectibleRewardDetails = tmp4(10515).PremiumGiftPromotionCollectibleRewardDetails;
+        intl3 = tmp4(1125).intl;
         name = undefined;
         if (product != null) {
           name = product.name;
         }
-        items5 = [closure_9(PremiumGiftPromotionCollectibleRewardDetails, obj12), !tmp9 && closure_9(tmp4(10120).PencilIcon, { size: "sm" })];
-        !(null != claimableRewards && 1 === claimableRewards.length) && closure_9(tmp4(10120).PencilIcon, { size: "sm" });
+        items5 = [closure_9(PremiumGiftPromotionCollectibleRewardDetails, obj12), !tmp9 && closure_9(tmp4(10122).PencilIcon, { size: "sm" })];
+        !(null != claimableRewards && 1 === claimableRewards.length) && closure_9(tmp4(10122).PencilIcon, { size: "sm" });
         tmp21Result = tmp18(tmp23, obj10);
       }
     }
@@ -513,7 +513,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       if (str2 == null) {
         str2 = "";
       }
-      tmp4Result6 = tmp4(10502);
+      tmp4Result6 = tmp4(10505);
       tmp21Result = tmp21(tmpResult4, obj13);
     }
   }

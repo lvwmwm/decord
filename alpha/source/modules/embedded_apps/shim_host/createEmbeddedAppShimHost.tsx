@@ -1,49 +1,45 @@
-// Module ID: 18793
-// Function ID: 18794
+// Module ID: 18832
+// Function ID: 18833
 // Name: createEmbeddedAppShimHost
-// Dependencies: [18794, 18795, 2]
+// Dependencies: [18833, 12, 18829, 2]
 // Exports: createEmbeddedAppShimHost
 
-// Module 18793 (createEmbeddedAppShimHost)
-import protocol from "protocol" /* 18794 */;
-import connection from "connection" /* 18795 */;
+// Module 18832 (createEmbeddedAppShimHost)
+import _mod12 from "module_12" /* 12 */;
+import protocol from "protocol" /* 18829 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let map;
 
-const result = size.fileFinishedImporting("modules/embedded_apps/shim_host/createEmbeddedAppShimHost.tsx");
+let result = size.fileFinishedImporting("modules/embedded_apps/shim_host/createEmbeddedAppShimHost.tsx");
 
-export const createEmbeddedAppShimHost = function createEmbeddedAppShimHost(state, arg1) {
-  ({ onChildState: require, onDisconnect: dependencyMap } = arg1);
-  let obj = connection;
-  let closure_3 = obj.createChildConnector(function handleMessage(type) {
-    if (type.type === protocol.ChildToParentEvent.STATE_UPDATED) {
-      require(type.state);
-    } else if (type.type === protocol.ChildToParentEvent.DISCONNECTED) {
-      dependencyMap();
-    }
-  }, function sendParentState() {
-    const obj = { type: protocol.ParentToChildEvent.STATE_UPDATED, state };
-    closure_3.dispatch(obj);
+export const createEmbeddedAppShimHost = function createEmbeddedAppShimHost(arg0) {
+  let onMessage;
+  ({ onConnect: require, onMessage } = arg0);
+  map = new Map();
+  let obj = require("connection");
+  let closure_3 = obj.createChildConnector(onMessage, () => {
+    map.clear();
+    require(obj2);
   });
-  return {
+  let obj2 = {
     offer(arg0) {
       return closure_3.offer(arg0);
     },
-    setParentState(parentState) {
-      let closure_0 = parentState;
-      let closure_1 = state;
-      const keys = Object.keys(parentState);
-      if (!keys.every((item) => closure_0[item] === closure_1[item])) {
-        state = parentState;
-        const dispatch = closure_3.dispatch;
-        const obj = { type: protocol.ParentToChildEvent.STATE_UPDATED, state };
-        dispatch(obj);
+    dispatch(type) {
+      const obj = _mod12;
+      obj2 = map;
+      if (!obj.isEqual(map.get(type.type), type)) {
+        const result = obj2.set(type.type, type);
+        closure_3.dispatch(type);
       }
     },
     close() {
       closure_3.close();
-      dependencyMap();
+      const obj = { type: protocol.ChildToParentEvent.DISCONNECTED };
+      onMessage(obj);
     }
   };
+  return obj2;
 };

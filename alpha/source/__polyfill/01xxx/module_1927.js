@@ -4,35 +4,49 @@
 
 // Module 1927
 const obj = {
-  locale: "it",
+  locale: "lt",
   pluralRuleFunction(arg0, arg1) {
-    let str3;
     const str = String(arg0);
-    const tmp = str.split(".")[1];
-    const tmp2 = arg1;
-    if (tmp2) {
-      if (11 != arg0) {
-        if (8 != arg0) {
-          let str4;
-          if (80 != arg0) {
-            str4 = "other";
+    const parts = str.split(".");
+    const tmp2 = parts[1] || "";
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-1);
+    }
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
+    let str2 = "other";
+    let str3 = "other";
+    if (!arg1) {
+      let str5;
+      if (1 != substr) {
+        if (substr >= 2) {
+          let str7;
+          if (substr <= 9) {
+            str7 = "few";
+            if (substr1 >= 11) {
+              str7 = "few";
+            }
           }
-          str3 = str4;
+          str5 = str7;
+        }
+        if (0 != tmp2) {
+          str2 = "many";
+        }
+        str7 = str2;
+      } else {
+        str5 = "one";
+        if (substr1 >= 11) {
+          str5 = "one";
         }
       }
-      str4 = "many";
-    } else {
-      str3 = "other";
-      if (1 == arg0) {
-        str3 = "other";
-        if (!tmp) {
-          str3 = "one";
-        }
-      }
+      str3 = str5;
     }
     return str3;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-CH", parentLocale: "it" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-SM", parentLocale: "it" });

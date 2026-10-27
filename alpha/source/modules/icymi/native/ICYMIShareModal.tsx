@@ -1,28 +1,28 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 17992
+// Function ID: 17993
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4823, 1087, 10616, 4976, 21, 4971, 587, 558, 576, 8905, 1128, 17959, 5663, 5593, 12928, 12937, 5244, 6672, 12907, 1388, 7755, 7566, 1633, 1499, 1384, 12917, 12918, 2]
+// Dependencies: [32, 5, 19, 17, 4824, 1084, 10619, 4977, 21, 4972, 587, 558, 576, 8905, 1125, 17993, 5664, 5594, 12937, 12949, 5245, 6673, 12916, 1385, 7756, 7567, 1630, 1496, 1381, 12926, 12927, 2]
 
-// Module 17958 (ICYMIShareModal)
+// Module 17992 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import MessageConstants from "MessageConstants" /* 4976 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import MessageConstants from "MessageConstants" /* 4977 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
 import ShareEventUtils from "ShareEventUtils" /* 8905 */;
-import UserRowConstants from "UserRowConstants" /* 10616 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 12928 */;
+import UserRowConstants from "UserRowConstants" /* 10619 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 12937 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_12;
 let obj2;
 let tmp9;
 let unpackModuleId;
-const ShareChatInputDefault = tmp9(12937);
+const ShareChatInputDefault = tmp9(12949);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -58,7 +58,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventSh
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl3.t["7TVSLK"]);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -126,8 +126,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
   const cResult = obj.c(3);
   content = content.content;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1128).intl;
-    let stringResult = intl.string(tmp(1128).t["59CWHK"]);
+    let intl = tmp(1125).intl;
+    let stringResult = intl.string(tmp(1125).t["59CWHK"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -237,13 +237,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
   let intl;
   content = content.content;
   let obj = {
-    title: intl.string(content(1128).t["59CWHK"]),
+    title: intl.string(content(1125).t["59CWHK"]),
     linkText: "",
     forwardToChannel: function() {
       return closure_0(...arguments);
     }
   };
-  intl = content(1128).intl;
+  intl = content(1125).intl;
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let obj3;
     if (c6 === 2) {
@@ -368,12 +368,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     if (cResult[4] !== count) {
       let stringResult;
       if (count <= 1) {
-        const intl2 = tmp(1128).intl;
-        stringResult = intl2.string(tmp(1128).t.TXNS7S);
+        const intl2 = tmp(1125).intl;
+        stringResult = intl2.string(tmp(1125).t.TXNS7S);
       } else {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const obj3 = { count };
-        stringResult = intl.formatToPlainString(tmp(1128).t.jWtYUm, obj3);
+        stringResult = intl.formatToPlainString(tmp(1125).t.jWtYUm, obj3);
       }
       cResult[4] = count;
       cResult[5] = stringResult;
@@ -508,12 +508,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = tmp7(1128).intl;
-    stringResult = intl2.string(tmp7(1128).t.TXNS7S);
+    const intl2 = tmp7(1125).intl;
+    stringResult = intl2.string(tmp7(1125).t.TXNS7S);
   } else {
-    const intl = tmp7(1128).intl;
+    const intl = tmp7(1125).intl;
     const obj2 = { count };
-    stringResult = intl.formatToPlainString(tmp7(1128).t.jWtYUm, obj2);
+    stringResult = intl.formatToPlainString(tmp7(1125).t.jWtYUm, obj2);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp14Result = null;
@@ -523,7 +523,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5244).Button;
+    const Button = tmp7(5245).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;

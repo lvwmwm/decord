@@ -1,16 +1,16 @@
-// Module ID: 19399
-// Function ID: 19400
+// Module ID: 19436
+// Function ID: 19437
 // Name: AVErrorContext
-// Dependencies: [2014, 5714, 4874, 7814, 5739, 6645, 2]
+// Dependencies: [2011, 5715, 4875, 7815, 5740, 6646, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 19399 (AVErrorContext)
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5739 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7814 */;
+// Module 19436 (AVErrorContext)
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5740 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6646 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7815 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");

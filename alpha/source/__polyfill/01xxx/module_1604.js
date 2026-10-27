@@ -1,221 +1,118 @@
 // Module ID: 1604
 // Function ID: 1605
-// Dependencies: [19, 1508, 1605]
-// Exports: useLinkBuilder
+// Dependencies: [19, 21, 1505, 1605]
+// Exports: createStaticNavigation
 
 // Module 1604
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1508 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1505 */;
 import react from "react" /* 19 */;
 
-function useBuildHref() {
-  let context;
-  let context1;
-  let options;
-  let tmp = options;
-  let tmp3 = context1;
-  const tmp2 = context;
-  context = options.useContext(context(context1[1]).NavigationHelpersContext);
-  context1 = options.useContext(context(context1[1]).NavigationRouteContext);
-  options = options.useContext(context(context1[2]).LinkingContext).options;
-  let obj = context(context1[1]);
-  const stateForPath = obj.useStateForPath();
-  let getPathFromState;
-  if (options != null) {
-    getPathFromState = options.getPathFromState;
-  }
-  if (getPathFromState == null) {
-    getPathFromState = tmp2(tmp3[1]).getPathFromState;
-  }
-  let enabled;
-  const useCallback = tmp.useCallback;
-  if (options != null) {
-    enabled = options.enabled;
-  }
-  let items = [enabled, , , , , ];
-  let config;
-  if (options != null) {
-    config = options.config;
-  }
-  items[1] = config;
-  let key;
-  if (context1 != null) {
-    key = context1.key;
-  }
-  items[2] = key;
-  items[3] = context;
-  items[4] = stateForPath;
-  items[5] = getPathFromState;
-  return useCallback((name, params) => {
-    let constructState;
-    let items;
-    let items1;
-    let items2;
-    let obj3;
-    let tmp21;
-    let tmp = constructState;
+const jsx = Fragment.jsx;
+
+export const createStaticNavigation = function createStaticNavigation(getComponent) {
+  let closure_1;
+  const component = getComponent.getComponent();
+  return react.forwardRef(function Navigation(linking, ref) {
+    linking = linking.linking;
+    let merged = Object.assign(linking, Object.assign({ linking: 0 }));
+    let memo;
+    let obj = React;
     let enabled;
-    if (constructState != null) {
-      enabled = tmp.enabled;
+    const useMemo = React.useMemo;
+    if (linking != null) {
+      enabled = linking.enabled;
     }
-    if (false !== enabled) {
-      let obj = context;
-      let tmp3 = context;
-      if (tmp3) {
-        let key1;
-        if (obj3 != null) {
-          key1 = obj3.key;
-        }
-        tmp3 = key1;
+    const items = [enabled, , ];
+    let path;
+    if (linking != null) {
+      let config = linking.config;
+      if (config != null) {
+        path = config.path;
       }
-      if (tmp3) {
-        tmp3 = stateForPath;
-      }
-      let tmp5 = tmp3;
-      if (tmp5) {
-        const key = obj3.key;
-        let obj2 = context(context1[1]);
-        const findFocusedRouteResult = obj2.findFocusedRoute(stateForPath);
-        let key2;
-        if (findFocusedRouteResult != null) {
-          key2 = findFocusedRouteResult.key;
-        }
-        let someResult = key === key2;
-        if (someResult) {
-          const routes = obj.getState().routes;
-          someResult = routes.some((key) => key.key === obj3.key);
-        }
-        tmp5 = someResult;
-      }
-      context = tmp5;
-      obj3 = { routes: items };
-      items = [{ name, params }];
-      constructState = function constructState(state) {
-        let items;
-        const tmp = state;
-        if (tmp) {
-          const first = state.routes[0];
-          const tmp4 = context;
-          if (tmp4) {
-            let tmp5;
-            if (!first.state) {
-              tmp5 = obj3;
-            }
-            return tmp5;
-          }
-          const obj = { routes: items };
-          const obj2 = { state: constructState(first.state) };
-          const merged = Object.assign(first);
-          items = [obj2];
-          tmp5 = obj;
-        } else {
-          return obj3;
-        }
-      };
-      let tmp15 = obj3;
-      const obj4 = { name, params };
-      if (stateForPath) {
-        let tmp17;
-        let first = stateForPath.routes[0];
-        if (!tmp5) {
-          const obj5 = { state: tmp21 };
-          let merged = Object.assign(first);
-          const state = first.state;
-          tmp21 = obj3;
-          if (state) {
-            const first1 = state.routes[0];
-            if (!tmp5) {
-              const obj6 = { routes: items1 };
-              const obj7 = { state: constructState(first1.state) };
-              const merged1 = Object.assign(first1);
-              items1 = [obj7];
-              obj3 = obj6;
-            }
-            tmp21 = obj3;
-          }
-          const obj8 = { routes: items2 };
-          items2 = [obj5];
-          tmp17 = obj8;
-        } else {
-          tmp17 = obj3;
-        }
-        tmp15 = tmp17;
-      }
-      let config;
-      const tmp26 = getPathFromState;
-      if (tmp != null) {
-        config = tmp.config;
-      }
-      return tmp26(tmp15, config);
     }
-  }, items);
-}
-function useBuildAction() {
-  let getActionFromState;
-  let getStateFromPath;
-  let options;
-  options = getActionFromState.useContext(options(getStateFromPath[2]).LinkingContext).options;
-  getStateFromPath = undefined;
-  const tmp = getActionFromState;
-  if (options != null) {
-    getStateFromPath = options.getStateFromPath;
-  }
-  if (getStateFromPath == null) {
-    getStateFromPath = tmp2(tmp3[1]).getStateFromPath;
-  }
-  getActionFromState = undefined;
-  if (options != null) {
-    getActionFromState = options.getActionFromState;
-  }
-  if (getActionFromState == null) {
-    getActionFromState = tmp2(tmp3[1]).getActionFromState;
-  }
-  let config;
-  const useCallback = tmp.useCallback;
-  if (options != null) {
-    config = options.config;
-  }
-  const items = [config, getStateFromPath, getActionFromState];
-  return useCallback(function(str) {
-    if (str.startsWith("/")) {
-      let config;
-      const tmp4 = getStateFromPath;
-      if (options != null) {
-        config = tmp5.config;
+    items[1] = path;
+    let initialRouteName;
+    if (linking != null) {
+      let config2 = linking.config;
+      if (config2 != null) {
+        initialRouteName = config2.initialRouteName;
       }
-      const tmp4Result = tmp4(str, config);
-      if (tmp4Result) {
-        let config1;
-        const tmp12 = getActionFromState;
-        if (options != null) {
-          config1 = tmp5.config;
+    }
+    items[2] = initialRouteName;
+    memo = useMemo(() => {
+      let initialRouteName1;
+      let initialRouteName;
+      const createPathConfigForStaticNavigation = BaseNavigationContainer.createPathConfigForStaticNavigation;
+      BaseNavigationContainer;
+      const tmp2 = getComponent;
+      if (linking != null) {
+        const config = tmp3.config;
+        if (config != null) {
+          initialRouteName = config.initialRouteName;
         }
-        let resetResult = tmp12(tmp4Result, config1);
-        if (resetResult == null) {
-          const CommonActions = BaseNavigationContainer.CommonActions;
-          resetResult = CommonActions.reset(tmp4Result);
+      }
+      let enabled;
+      if (linking != null) {
+        enabled = tmp3.enabled;
+      }
+      const pathConfigForStaticNavigation = createPathConfigForStaticNavigation(tmp2, { initialRouteName }, "auto" === enabled);
+      if (pathConfigForStaticNavigation) {
+        let path;
+        if (linking != null) {
+          const config2 = tmp3.config;
+          if (config2 != null) {
+            path = config2.path;
+          }
         }
-        return resetResult;
-      } else {
-        const _Error2 = Error;
-        const self3 = this;
-        const self4 = this;
-        const error = new Error("Failed to parse the href to a navigation state.");
+        const obj = { path, initialRouteName: initialRouteName1, screens: pathConfigForStaticNavigation };
+        initialRouteName1 = undefined;
+        if (linking != null) {
+          const config3 = tmp3.config;
+          if (config3 != null) {
+            initialRouteName1 = config3.initialRouteName;
+          }
+        }
+        return obj;
+      }
+    }, items);
+    const items1 = [linking, memo];
+    let enabled1;
+    const memo1 = obj.useMemo(() => {
+      if (linking) {
+        let enabled;
+        if (typeof linking.enabled === "boolean") {
+          enabled = tmp.enabled;
+        } else {
+          let screens;
+          if (memo != null) {
+            screens = memo.screens;
+          }
+          enabled = null != screens;
+        }
+        const obj = { enabled, config: memo };
+        const merged = Object.assign(tmp);
+        return obj;
+      }
+    }, items1);
+    if (linking != null) {
+      enabled1 = linking.enabled;
+    }
+    if (true === enabled1) {
+      let screens;
+      if (memo != null) {
+        screens = memo.screens;
+      }
+      if (null == screens) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Linking is enabled but no linking configuration was found for the screens.\n\nTo solve this:\n- Specify a 'linking' property for the screens you want to link to.\n- Or set 'linking.enabled' to 'auto' to generate paths automatically.\n\nSee usage guide: https://reactnavigation.org/docs/static-configuration#linking");
         throw error;
       }
-    } else {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error1 = new Error("The href must start with '/' (" + str + ").");
-      throw error1;
     }
-  }, items);
-}
-
-export { useBuildHref };
-export { useBuildAction };
-export const useLinkBuilder = function useLinkBuilder() {
-  const obj = { buildHref: useBuildHref(), buildAction: useBuildAction() };
-  return obj;
+    const NavigationContainer = getComponent(closure_1[3]).NavigationContainer;
+    const merged1 = Object.assign(merged);
+    return <NavigationContainer ref={arg1} linking={memo1}><memo /></NavigationContainer>;
+  });
 };

@@ -1,18 +1,18 @@
-// Module ID: 7448
-// Function ID: 7449
+// Module ID: 7449
+// Function ID: 7450
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4904, 5194, 4845, 1087, 1114, 7449, 7347, 6830, 1267, 1297, 1493, 2]
+// Dependencies: [5, 4905, 5195, 4846, 1084, 1111, 7450, 7349, 6832, 1264, 1294, 1490, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7448 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef1493 from "module_1493" /* 1493 */;
+// Module 7449 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import _modDef1490 from "module_1490" /* 1490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4904 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import Constants from "Constants" /* 1087 */;
+import LurkingStore from "LurkingStore" /* 4905 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5195 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let guild_ids, joinedAt, lurkLocation, openChannel, page;
@@ -192,7 +192,7 @@ obj = function _getDiscoverableGuild() {
       const request = { url: constants.GUILD_DISCOVERY, query: obj7.stringify(obj4), oldFormErrors: true, rejectWithError: true };
       const get = HTTP.get;
       obj4 = { guild_ids };
-      obj7 = _modDef1493;
+      obj7 = _modDef1490;
       guild_ids = await get(request);
       const body = guild_ids.body;
       if (body != null) {

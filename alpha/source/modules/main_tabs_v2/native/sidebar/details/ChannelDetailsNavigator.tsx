@@ -1,24 +1,24 @@
-// Module ID: 18264
-// Function ID: 18265
+// Module ID: 18298
+// Function ID: 18299
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 4823, 10024, 1087, 18092, 21, 9743, 558, 576, 573, 7369, 13349, 1128, 9699, 13723, 1267, 10093, 18265, 7095, 5151, 6930, 1633, 18322, 1384, 18323, 18324, 9754, 9755, 9776, 18325, 18326, 18174, 2]
+// Dependencies: [32, 19, 17, 4824, 10026, 1084, 18126, 21, 9745, 558, 576, 573, 7371, 13363, 1125, 9701, 13737, 1264, 10095, 18299, 7097, 5152, 6932, 1630, 18356, 1381, 18357, 18358, 9756, 9757, 9778, 18359, 18360, 18208, 2]
 
-// Module 18264 (ChannelDetailsNavigator)
+// Module 18298 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10024 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 13349 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13723 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18092 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 18265 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HeaderShared from "HeaderShared" /* 9701 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10026 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 13363 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13737 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18126 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 18299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
+import NativeStackView from "NativeStackView" /* 9745 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
   let obj = channel(576);
   const cResult = obj.c(5);
   channel = channel.channel;
-  const obj2 = channel(7369);
+  const obj2 = channel(7371);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] !== channel) {
     const fn = function t() {
@@ -110,8 +110,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(channel(1128).t.rBIGBL);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(channel(1125).t.rBIGBL);
       cResult[2] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -119,7 +119,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
     }
     if (cResult[3] !== tmp5) {
       const obj3 = { accessibilityLabel: tmp8, onPress: tmp5, source: AssetRegistryDefault };
-      const HeaderIconButton = tmp(9699).HeaderIconButton;
+      const HeaderIconButton = tmp(9701).HeaderIconButton;
       const tmp13 = closure_10(HeaderIconButton, obj3);
       cResult[3] = tmp5;
       cResult[4] = tmp13;
@@ -133,14 +133,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
 }) : (function CreateThreadHeaderButton(channel) {
   let intl;
   channel = channel.channel;
-  let obj = channel(7369);
+  let obj = channel(7371);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
-    const obj2 = { accessibilityLabel: intl.string(channel(1128).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(9699).HeaderIconButton;
-    intl = tmp(1128).intl;
+    const obj2 = { accessibilityLabel: intl.string(channel(1125).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
+    const HeaderIconButton = tmp(9701).HeaderIconButton;
+    intl = tmp(1125).intl;
     tmp5 = closure_10(HeaderIconButton, obj2);
   }
   return tmp5;

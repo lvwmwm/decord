@@ -1,12 +1,12 @@
-// Module ID: 5828
-// Function ID: 5829
+// Module ID: 5829
+// Function ID: 5830
 // Name: DesktopGamePerfExperiment
-// Dependencies: [1455, 1384, 2]
+// Dependencies: [1452, 1381, 2]
 // Exports: getDesktopGamePerfExperimentConfig, getIsFullscreenPopupOcclusionEnabled, getIsNativeSystemCpuTimesEnabled, getIsNotificationIconCpuCanvasEnabled, getIsOverlayHiddenWavePausedEnabled, getIsOverlayOnlyAnimatesItselfEnabled, getIsRenderOverlayWhileMinimizedEnabled
 
-// Module 5828 (DesktopGamePerfExperiment)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 5829 (DesktopGamePerfExperiment)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-desktop-game-perf", kind: "user", defaultConfig: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false, renderOverlayWhileMinimized: false, notificationIconCpuCanvas: false }, variations: { 0: { nativeSystemCpuTimes: false, overlayOnlyAnimatesItself: false, fullscreenPopupOcclusion: false, overlayHiddenWavePaused: false, renderOverlayWhileMinimized: false, notificationIconCpuCanvas: false }, 1: { nativeSystemCpuTimes: true, overlayOnlyAnimatesItself: true, fullscreenPopupOcclusion: true, overlayHiddenWavePaused: true, renderOverlayWhileMinimized: true, notificationIconCpuCanvas: true } } };

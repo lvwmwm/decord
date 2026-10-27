@@ -1,17 +1,17 @@
-// Module ID: 11219
-// Function ID: 11220
+// Module ID: 11222
+// Function ID: 11223
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5190, 5191, 8488, 5195, 8486, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5191, 5192, 8487, 5196, 8485, 558, 576, 504, 2]
 // Exports: getLegacyExperiments
 
-// Module 11219 (useLegacyExperiments)
+// Module 11222 (useLegacyExperiments)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ExperimentManager from "ExperimentManager" /* 5195 */;
+import ExperimentManager from "ExperimentManager" /* 5196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5190 */;
-import ExperimentConstants from "ExperimentConstants" /* 5191 */;
+import ExperimentStore from "ExperimentStore" /* 5191 */;
+import ExperimentConstants from "ExperimentConstants" /* 5192 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,12 @@
 // Module ID: 8201
 // Function ID: 8202
-// Dependencies: [8202]
+// Dependencies: [8202, 8203, 8204, 8205]
 
 // Module 8201
 import _mod8202 from "module_8202" /* 8202 */;
+import _mod8203 from "module_8203" /* 8203 */;
+import _mod8204 from "module_8204" /* 8204 */;
+import _mod8205 from "module_8205" /* 8205 */;
 
 let hasOwnProperty;
 
@@ -65,3 +68,6 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
   }
 });
 tmp3(_mod8202, exports);
+tmp3(_mod8203, exports);
+tmp3(_mod8204, exports);
+tmp3(_mod8205, exports);

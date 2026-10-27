@@ -1,21 +1,21 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12092
+// Function ID: 12093
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 4823, 4913, 1392, 1087, 21, 558, 576, 7253, 504, 12, 1388, 11288, 11294, 11293, 5252, 587, 12092, 1128, 9425, 12093, 8668, 10622, 2]
+// Dependencies: [32, 19, 17, 4824, 4914, 1389, 1084, 21, 558, 576, 7255, 504, 12, 1385, 11291, 11297, 11296, 5253, 587, 12093, 1125, 9424, 12094, 8668, 10625, 2]
 
-// Module 12091 (PrivateChannelUserList)
+// Module 12092 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import intl2 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12093 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(9425);
+const NitroWheelIcon2 = tmp(9424);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);

@@ -1,16 +1,16 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14110
+// Function ID: 14111
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 14093, 1087, 8826, 21, 4971, 558, 576, 1505, 1128, 9623, 14097, 2]
+// Dependencies: [19, 14107, 1084, 8826, 21, 4972, 558, 576, 1502, 1125, 9625, 14111, 2]
 
-// Module 14096 (CrunchyrollLinkPreConnect)
+// Module 14110 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8826 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14093 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14097 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14107 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14111 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const obj = navigation(576);
   const cResult = obj.c(10);
   const tmp4 = closure_8();
-  const obj2 = navigation(1505);
+  const obj2 = navigation(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function n(arg0) {
@@ -61,9 +61,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
         navigation.push(constants.ERROR);
       }
     }
-    const stringResult = obj3.string(navigation(1128).t.siPkNp);
-    const intl = tmp(1128).intl;
-    const stringResult1 = intl.string(navigation(1128).t.oS4NEH);
+    const stringResult = obj3.string(navigation(1125).t.siPkNp);
+    const intl = tmp(1125).intl;
+    const stringResult1 = intl.string(navigation(1125).t.oS4NEH);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
     tmp9 = stringResult1;
@@ -83,14 +83,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
     }
   }
   ({ platformType: PlatformTypes.CRUNCHYROLL, onError: tmp7, onNext: tmp6, img: AssetRegistryDefault, imgStyle: image, title: tmp8, body: tmp9, redirectDestination });
-  const TwoWayLinkPreConnect = tmp(9623).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = tmp(9625).TwoWayLinkPreConnect;
   cResult[6] = tmp7;
   cResult[7] = tmp6;
   cResult[8] = tmp4.image;
   cResult[9] = <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={tmp7} onNext={tmp6} img={AssetRegistryDefault} imgStyle={image} title={tmp8} body={tmp9} redirectDestination={redirectDestination} />;
 }) : (function CrunchyrollLinkPreConnect() {
   const tmp = closure_8();
-  const obj = navigation(1505);
+  const obj = navigation(1502);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -100,10 +100,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const TwoWayLinkPreConnect = navigation(9623).TwoWayLinkPreConnect;
-  const intl = navigation(1128).intl;
-  const intl2 = navigation(1128).intl;
-  return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1128).t.siPkNp)} body={intl2.string(navigation(1128).t.oS4NEH)} redirectDestination={redirectDestination} />;
+  const TwoWayLinkPreConnect = navigation(9625).TwoWayLinkPreConnect;
+  const intl = navigation(1125).intl;
+  const intl2 = navigation(1125).intl;
+  return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1125).t.siPkNp)} body={intl2.string(navigation(1125).t.oS4NEH)} redirectDestination={redirectDestination} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkPreConnect.tsx");
 

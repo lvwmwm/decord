@@ -1,22 +1,22 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 18009
+// Function ID: 18010
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4845, 8823, 21, 4971, 587, 558, 576, 9406, 6883, 504, 5205, 8836, 8840, 5052, 5247, 1508, 12571, 5234, 1128, 6908, 4978, 2]
+// Dependencies: [32, 19, 17, 4846, 8823, 21, 4972, 587, 558, 576, 9405, 6885, 504, 5206, 8836, 8840, 5053, 5248, 1505, 12579, 5235, 1125, 6910, 4979, 2]
 
-// Module 17975 (NewContentPill)
+// Module 18009 (NewContentPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5247 */;
-import GuildIcon from "GuildIcon" /* 6883 */;
+import spring from "spring" /* 5248 */;
+import GuildIcon from "GuildIcon" /* 6885 */;
 import ICYMITypes from "ICYMITypes" /* 8836 */;
-import ClipView from "ClipView" /* 9406 */;
+import ClipView from "ClipView" /* 9405 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 4845 */;
+import GuildStore_mod from "GuildStore" /* 4846 */;
 import ICYMIStore_mod from "ICYMIStore" /* 8823 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewContentPi
       items = [{ translateY: withSpring(num, springConfig) }];
       ({ translateY: withSpring(num, springConfig) });
       num2 = 0;
-      withSpring2 = tmp(5247).withSpring;
+      withSpring2 = tmp(5248).withSpring;
       spring;
       tmp5 = springConfig;
       if (closure_8) {
@@ -400,7 +400,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewContentPi
     items = [{ translateY: withSpring(num, springConfig) }];
     ({ translateY: withSpring(num, springConfig) });
     num2 = 0;
-    withSpring2 = tmp(5247).withSpring;
+    withSpring2 = tmp(5248).withSpring;
     spring;
     tmp5 = springConfig;
     if (closure_8) {

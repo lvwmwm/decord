@@ -1,13 +1,13 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12317
+// Function ID: 12318
 // Name: ConjureStatusLabels
-// Dependencies: [3830, 1128, 10706, 2]
+// Dependencies: [3831, 1125, 10709, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 12311 (ConjureStatusLabels)
-import intl5 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10706 */;
+// Module 12317 (ConjureStatusLabels)
+import intl5 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10709 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -48,19 +48,19 @@ function thinkingLabel(saving) {
   }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag5) {
-    xnCAaP = _modDef3830["1jqaAc"];
+    xnCAaP = _modDef3831["1jqaAc"];
   } else if (flag6) {
-    xnCAaP = _modDef3830.xCdlEF;
+    xnCAaP = _modDef3831.xCdlEF;
   } else if (flag7) {
-    xnCAaP = _modDef3830.Rhx0rn;
+    xnCAaP = _modDef3831.Rhx0rn;
   } else if (flag2) {
-    xnCAaP = _modDef3830.M4KI5F;
+    xnCAaP = _modDef3831.M4KI5F;
   } else if (flag3) {
-    xnCAaP = _modDef3830.j8tmjK;
+    xnCAaP = _modDef3831.j8tmjK;
   } else if (flag4) {
     xnCAaP = items[0];
   } else {
-    const tmp4 = _modDef3830;
+    const tmp4 = _modDef3831;
     if (flag) {
       xnCAaP = tmp4.mKK6wB;
     } else if (compacting) {
@@ -71,7 +71,7 @@ function thinkingLabel(saving) {
   }
   return xnCAaP;
 }
-const items = [_modDef3830["AX+5lk"], _modDef3830.VAU6A7, _modDef3830["1emysd"], _modDef3830.EXHX3L, _modDef3830.ChslmX];
+const items = [_modDef3831["AX+5lk"], _modDef3831.VAU6A7, _modDef3831["1emysd"], _modDef3831.EXHX3L, _modDef3831.ChslmX];
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
@@ -79,16 +79,16 @@ export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
 export const isPublishLineSwitch = function isPublishLineSwitch(line, arg1) {
   const intl = intl5.intl;
-  let tmp4 = line === intl.string(_modDef3830.xCdlEF);
+  let tmp4 = line === intl.string(_modDef3831.xCdlEF);
   if (!tmp4) {
-    const intl2 = tmp(1128).intl;
-    tmp4 = line === intl2.string(tmp3(3830).Rhx0rn);
+    const intl2 = tmp(1125).intl;
+    tmp4 = line === intl2.string(tmp3(3831).Rhx0rn);
   }
-  const intl3 = tmp(1128).intl;
-  let tmp5 = arg1 === intl3.string(tmp3(3830).xCdlEF);
+  const intl3 = tmp(1125).intl;
+  let tmp5 = arg1 === intl3.string(tmp3(3831).xCdlEF);
   if (!tmp5) {
-    const intl4 = tmp(1128).intl;
-    tmp5 = arg1 === intl4.string(tmp3(3830).Rhx0rn);
+    const intl4 = tmp(1125).intl;
+    tmp5 = arg1 === intl4.string(tmp3(3831).Rhx0rn);
   }
   return tmp4 !== tmp5;
 };
@@ -106,13 +106,13 @@ export const isRecallingLine = function isRecallingLine(current) {
 export const connectionLabel = function connectionLabel(stateFromStores8) {
   if ("connecting" === stateFromStores8) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3830["ECl+Dx"]);
+    return intl3.string(_modDef3831["ECl+Dx"]);
   } else if ("closed" === stateFromStores8) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3830.mQZSp1);
+    return intl2.string(_modDef3831.mQZSp1);
   } else if ("failed" === stateFromStores8) {
     const intl = intl5.intl;
-    return intl.string(_modDef3830.xzJSZ6);
+    return intl.string(_modDef3831.xzJSZ6);
   }
 };
 export { thinkingLabel };
@@ -127,11 +127,11 @@ export const runesUsedLabels = function runesUsedLabels(projectUsage) {
   let obj3;
   const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3830.Z4LvGa, obj4) };
+  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3831.Z4LvGa, obj4) };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { runes: runesFromUsdResult.toLocaleString() };
-  gMuw5d = _modDef3830.gMuw5d;
+  gMuw5d = _modDef3831.gMuw5d;
   intl2 = intl5.intl;
   return obj2;
 };

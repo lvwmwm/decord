@@ -1,18 +1,18 @@
-// Module ID: 17867
-// Function ID: 17868
+// Module ID: 17901
+// Function ID: 17902
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 6815, 6787, 17866, 6705, 558, 576, 504, 17868, 7206, 8740, 2]
+// Dependencies: [5, 32, 19, 6817, 6788, 17900, 6706, 558, 576, 504, 17902, 7208, 8740, 2]
 
-// Module 17867 (useNotificationCenterItemsLoader)
-import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7206 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17868 */;
+// Module 17901 (useNotificationCenterItemsLoader)
+import ReadStateConstants from "ReadStateConstants" /* 6706 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7208 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 6815 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6787 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 17866 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6817 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6788 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 17900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

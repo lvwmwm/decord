@@ -1,18 +1,18 @@
-// Module ID: 18372
-// Function ID: 18373
+// Module ID: 18406
+// Function ID: 18407
 // Name: ConjureHomeScreen
-// Dependencies: [19, 17, 6496, 21, 4971, 587, 558, 576, 1506, 12304, 504, 11750, 11745, 5234, 1128, 3830, 5244, 2]
+// Dependencies: [19, 17, 6497, 21, 4972, 587, 558, 576, 1503, 12310, 504, 11752, 11747, 5235, 1125, 3831, 5245, 2]
 
-// Module 18372 (ConjureHomeScreen)
+// Module 18406 (ConjureHomeScreen)
 import nativeDefault from "native" /* 587 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureStandaloneScreenDefault from "ConjureStandaloneScreen" /* 11745 */;
-import reactDefault from "react" /* 11750 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureStandaloneScreenDefault from "ConjureStandaloneScreen" /* 11747 */;
+import reactDefault from "react" /* 11752 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHom
   const route = navigation.route;
   const tmp4 = closure_10();
   ({ projectId, requestId } = route.params);
-  const obj2 = navigation(1506);
+  const obj2 = navigation(1503);
   const isFocused = obj2.useIsFocused();
   if (cResult[0] !== navigation) {
     const fn = function n() {
@@ -65,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHom
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult = navigation(12304);
+  const tmpResult = navigation(12310);
   const conjureForMeGuildId = tmpResult.useConjureForMeGuildId(ConjureHomeScreen_str);
   if (cResult[2] === isFocused) {
     if (cResult[3] === projectId) {
@@ -141,17 +141,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHom
             return connectedOrOverlay.isConnectedOrOverlay();
           }
         }
-        const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(_modDef3830["c+8IMp"]) };
-        const Text = tmp(5234).Text;
-        intl = tmp(1128).intl;
+        const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(_modDef3831["c+8IMp"]) };
+        const Text = tmp(5235).Text;
+        intl = tmp(1125).intl;
         items1 = [closure_7(Text, obj7), , ];
-        const obj8 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef3830["5PqGKy"]) };
-        const Text2 = tmp(5234).Text;
-        intl2 = tmp(1128).intl;
+        const obj8 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef3831["5PqGKy"]) };
+        const Text2 = tmp(5235).Text;
+        intl2 = tmp(1125).intl;
         items1[1] = closure_7(Text2, obj8);
-        const obj9 = { variant: "secondary", size: "sm", text: intl3.string(navigation(1128).t["13/7kX"]), onPress: tmp6 };
-        const Button = tmp(5244).Button;
-        intl3 = tmp(1128).intl;
+        const obj9 = { variant: "secondary", size: "sm", text: intl3.string(navigation(1125).t["13/7kX"]), onPress: tmp6 };
+        const Button = tmp(5245).Button;
+        intl3 = tmp(1125).intl;
         items1[2] = closure_7(Button, obj9);
         tmp19 = closure_8(closure_5, obj6);
       } else {

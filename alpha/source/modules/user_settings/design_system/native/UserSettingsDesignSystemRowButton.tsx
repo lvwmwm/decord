@@ -1,14 +1,14 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17178
+// Function ID: 17179
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 558, 576, 8951, 5977, 587, 5234, 8953, 7489, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8951, 5978, 587, 5235, 8953, 7490, 2]
 
-// Module 17137 (UserSettingsDesignSystemRowButton)
+// Module 17178 (UserSettingsDesignSystemRowButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7489 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7490 */;
 import Form from "Form" /* 8951 */;
 import RowButton8 from "RowButton" /* 8953 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const FormSection = tmp(8951).FormSection;
     obj3 = { style: obj4, children: items };
     obj4 = { padding: nativeDefault.space.PX_16 };
-    Stack = tmp(5977).Stack;
+    Stack = tmp(5978).Stack;
     items = [hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
     const tmp9 = hasOwnProperty(FormSection, obj2);
     cResult[0] = tmp9;
@@ -175,7 +175,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     const obj14 = { style: tmp10, children: metroRequire(Stack2, obj15) };
     obj15 = { children: items2 };
     items2 = [tmp11, tmp15, tmp19, tmp23, tmp27, tmp35, ];
-    Stack2 = tmp(5977).Stack;
+    Stack2 = tmp(5978).Stack;
     const obj16 = {
       icon: AssetRegistryDefault,
       label: "Row Button",

@@ -1,113 +1,77 @@
 // Module ID: 1835
 // Function ID: 1836
-// Dependencies: [1662, 1661]
-// Exports: measure
+// Dependencies: [1659, 1698, 1658]
+// Exports: setNativeProps
 
 // Module 1835
-import react_native from "react-native" /* 1662 */;
-import module_1661_mod from "module_1661" /* 1661 */;
+import react_native from "react-native" /* 1659 */;
+import clampRGBA from "clampRGBA" /* 1698 */;
+import module_1658_mod from "module_1658" /* 1658 */;
 
-function measureFabric(fn) {
+function setNativePropsFabric(fn, updates) {
   if (globalThis._WORKLET) {
-    const tmp3 = fn();
-    if (-1 === tmp3) {
-      const logger4 = react_native.logger;
-      const _HermesInternal = HermesInternal;
-      logger4.warn("The view with tag " + tmp3 + " is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
-      return null;
-    } else {
-      let _measureFabricResult = global._measureFabric(tmp3);
-      if (null === _measureFabricResult) {
-        const logger3 = react_native.logger;
-        logger3.warn("The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
-        _measureFabricResult = null;
-      } else if (-1234567 === _measureFabricResult.x) {
-        const logger2 = react_native.logger;
-        logger2.warn("The view returned an invalid measurement response. Please make sure the view is currently rendered.");
-        _measureFabricResult = null;
-      } else {
-        const _isNaN = isNaN;
-        if (isNaN(_measureFabricResult.x)) {
-          const logger = react_native.logger;
-          logger.warn("The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");
-          _measureFabricResult = null;
-        }
-      }
-      return _measureFabricResult;
-    }
+    const tmp6 = fn();
+    const obj = clampRGBA;
+    obj.processColorsInProps(updates);
+    const items = [{ shadowNodeWrapper: tmp6, updates }];
+    const obj2 = { shadowNodeWrapper: tmp6, updates };
+    global._updatePropsFabric(items);
   } else {
-    return null;
+    const logger = react_native.logger;
+    logger.warn("setNativeProps() can only be used on the UI runtime.");
   }
 }
-measureFabric.__closure = { logger: react_native.logger };
-measureFabric.__workletHash = 11588690892656;
-measureFabric.__initData = { code: "function measureFabric_Pnpm_measureTs1(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn(\"The view with tag \"+viewTag+\" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}const measured=global._measureFabric(viewTag);if(measured===null){logger.warn(\"The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}else if(measured.x===-1234567){logger.warn(\"The view returned an invalid measurement response. Please make sure the view is currently rendered.\");return null;}else if(isNaN(measured.x)){logger.warn(\"The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.\");return null;}else{return measured;}}" };
-function measurePaper(fn) {
+let obj = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
+setNativePropsFabric.__closure = obj;
+setNativePropsFabric.__workletHash = 13825557000530;
+setNativePropsFabric.__initData = { code: "function setNativePropsFabric_Pnpm_setNativePropsTs1(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const shadowNodeWrapper=animatedRef();processColorsInProps(updates);global._updatePropsFabric([{shadowNodeWrapper:shadowNodeWrapper,updates:updates}]);}" };
+function setNativePropsPaper(viewName, updates) {
   if (globalThis._WORKLET) {
-    const tmp3 = fn();
-    if (-1 === tmp3) {
-      const logger4 = react_native.logger;
-      const _HermesInternal4 = HermesInternal;
-      logger4.warn("The view with tag " + tmp3 + " is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
-      return null;
-    } else {
-      let _measurePaperResult = global._measurePaper(tmp3);
-      if (null === _measurePaperResult) {
-        const logger3 = react_native.logger;
-        const _HermesInternal3 = HermesInternal;
-        logger3.warn("The view with tag " + tmp3 + " has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");
-        _measurePaperResult = null;
-      } else if (-1234567 === _measurePaperResult.x) {
-        const logger2 = react_native.logger;
-        const _HermesInternal2 = HermesInternal;
-        logger2.warn("The view with tag " + tmp3 + " returned an invalid measurement response. Please make sure the view is currently rendered.");
-        _measurePaperResult = null;
-      } else {
-        const _isNaN = isNaN;
-        if (isNaN(_measurePaperResult.x)) {
-          const logger = react_native.logger;
-          const _HermesInternal = HermesInternal;
-          logger.warn("The view with tag " + tmp3 + " gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");
-          _measurePaperResult = null;
-        }
-      }
-      return _measurePaperResult;
+    let value;
+    const tmp5 = viewName();
+    if (viewName.viewName != null) {
+      value = iter.value;
     }
+    if (value == null) {
+      value = null;
+    }
+    const obj = clampRGBA;
+    obj.processColorsInProps(updates);
+    const items = [{ tag: tmp5, name: value, updates }];
+    const obj2 = { tag: tmp5, name: value, updates };
+    global._updatePropsPaper(items);
   } else {
-    return null;
+    const logger = react_native.logger;
+    logger.warn("setNativeProps() can only be used on the UI runtime.");
   }
 }
-({ logger: react_native.logger });
-measurePaper.__closure = { logger: react_native.logger };
-measurePaper.__workletHash = 12497864483036;
-measurePaper.__initData = { code: "function measurePaper_Pnpm_measureTs2(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn(\"The view with tag \"+viewTag+\" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}const measured=global._measurePaper(viewTag);if(measured===null){logger.warn(\"The view with tag \"+viewTag+\" has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).\");return null;}else if(measured.x===-1234567){logger.warn(\"The view with tag \"+viewTag+\" returned an invalid measurement response. Please make sure the view is currently rendered.\");return null;}else if(isNaN(measured.x)){logger.warn(\"The view with tag \"+viewTag+\" gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.\");return null;}else{return measured;}}" };
-({ logger: react_native.logger });
-let module_1661 = module_1661_mod;
-module_1661.shouldBeUseWeb();
-module_1661 = module_1661_mod;
-if (module_1661) {
-  let measureJest;
-  if (module_1661.isJest()) {
-    measureJest = function measureJest() {
+let obj2 = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
+setNativePropsPaper.__closure = obj2;
+setNativePropsPaper.__workletHash = 9895881337862;
+setNativePropsPaper.__initData = { code: "function setNativePropsPaper_Pnpm_setNativePropsTs2(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;var _viewName$value,_viewName;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const tag=animatedRef();const name=(_viewName$value=(_viewName=animatedRef.viewName)===null||_viewName===void 0?void 0:_viewName.value)!==null&&_viewName$value!==void 0?_viewName$value:null;processColorsInProps(updates);global._updatePropsPaper([{tag:tag,name:name,updates:updates}]);}" };
+let module_1658 = module_1658_mod;
+module_1658.shouldBeUseWeb();
+module_1658 = module_1658_mod;
+if (module_1658) {
+  let setNativePropsJest;
+  if (module_1658.isJest()) {
+    setNativePropsJest = function setNativePropsJest() {
       const logger = react_native.logger;
-      logger.warn("measure() cannot be used with Jest.");
-      return null;
+      logger.warn("setNativeProps() is not supported with Jest.");
     };
   } else {
-    const _module2 = module_1661;
-    measureJest = _module2.isChromeDebugger() ? (function measureChromeDebugger() {
+    const _module2 = module_1658;
+    setNativePropsJest = _module2.isChromeDebugger() ? (function setNativePropsChromeDebugger() {
       const logger = react_native.logger;
-      logger.warn("measure() cannot be used with Chrome Debugger.");
-      return null;
-    }) : (function measureDefault() {
+      logger.warn("setNativeProps() is not supported with Chrome Debugger.");
+    }) : (function setNativePropsDefault() {
       const logger = react_native.logger;
-      logger.warn("measure() is not supported on this configuration.");
-      return null;
+      logger.warn("setNativeProps() is not supported on this configuration.");
     });
   }
-  measurePaper = measureJest;
-} else if (module_1661.isFabric()) {
-  measurePaper = measureFabric;
+  setNativePropsPaper = setNativePropsJest;
+} else if (module_1658.isFabric()) {
+  setNativePropsPaper = setNativePropsFabric;
 }
 
-export const measure = measurePaper;
+export const setNativeProps = setNativePropsPaper;

@@ -1,20 +1,20 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15466
+// Function ID: 15467
 // Name: defaultMessageProxy
-// Dependencies: [1167, 1131, 15431, 15433, 2]
+// Dependencies: [1164, 1128, 15467, 15469, 2]
 
-// Module 15430 (defaultMessageProxy)
-import _modDef15433 from "module_15433" /* 15433 */;
-import module_1167_mod from "module_1167" /* 1167 */;
-import "module_1131";
-import messagesProxy from "module_15431" /* 15431 */;
+// Module 15466 (defaultMessageProxy)
+import _modDef15469 from "module_15469" /* 15469 */;
+import module_1164_mod from "module_1164" /* 1164 */;
+import "module_1128";
+import messagesProxy from "module_15467" /* 15467 */;
 import size from "module_2" /* 2 */;
 
-let module_1167 = module_1167_mod;
-const chainMessagesObjects = module_1167.chainMessagesObjects;
-module_1167 = module_1167_mod;
-const chainMessagesObjects2 = module_1167.chainMessagesObjects;
-const chainMessagesObjectsResult = chainMessagesObjects(messagesProxy, chainMessagesObjects2(messagesProxy, _modDef15433));
+let module_1164 = module_1164_mod;
+const chainMessagesObjects = module_1164.chainMessagesObjects;
+module_1164 = module_1164_mod;
+const chainMessagesObjects2 = module_1164.chainMessagesObjects;
+const chainMessagesObjectsResult = chainMessagesObjects(messagesProxy, chainMessagesObjects2(messagesProxy, _modDef15469));
 const result = size.fileFinishedImporting("intl/defaultMessageProxy.tsx");
 
 export const _defaultMessages = chainMessagesObjectsResult;

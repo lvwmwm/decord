@@ -1,18 +1,18 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 17733
+// Function ID: 17734
 // Name: useGuildActionRows
-// Dependencies: [32, 7325, 7643, 1087, 558, 576, 13269, 7364, 7350, 7362, 7330, 7324, 573, 7345, 7326, 13175, 17693, 17696, 7365, 7328, 13437, 17654, 7367, 5200, 17697, 4807, 7496, 2]
+// Dependencies: [32, 7327, 7644, 1084, 558, 576, 13283, 7366, 7352, 7364, 7332, 7326, 573, 7347, 7328, 13189, 17734, 17737, 7367, 7330, 13451, 17695, 7369, 5201, 17738, 4808, 7497, 2]
 
-// Module 17692 (useGuildActionRows)
-import Constants from "Constants" /* 1087 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7326 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7643 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13269 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13437 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17654 */;
-import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17693 */;
+// Module 17733 (useGuildActionRows)
+import Constants from "Constants" /* 1084 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7328 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7644 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 13283 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13451 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 17695 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 17734 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7325 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7327 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

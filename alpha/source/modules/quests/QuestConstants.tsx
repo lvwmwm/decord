@@ -1,18 +1,18 @@
-// Module ID: 6710
-// Function ID: 6711
+// Module ID: 6711
+// Function ID: 6712
 // Name: QuestConstants
-// Dependencies: [6711, 1104, 6712, 1297, 6713, 6717, 6718, 12, 2, 6719]
+// Dependencies: [6712, 1101, 6713, 1294, 6714, 6718, 6719, 12, 2, 6720]
 // Exports: getQuestCdnUrlBase, getQuestHomeFilterOptionItem
 
-// Module 6710 (QuestConstants)
-import DurationsDefault from "Durations" /* 1104 */;
-import QuestVariants from "QuestVariants" /* 6711 */;
-import Quests from "Quests" /* 6712 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import AdCreativeType from "AdCreativeType" /* 6717 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6718 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6719 */;
-import HTTPUtils_mod from "HTTPUtils" /* 1297 */;
+// Module 6711 (QuestConstants)
+import DurationsDefault from "Durations" /* 1101 */;
+import QuestVariants from "QuestVariants" /* 6712 */;
+import Quests from "Quests" /* 6713 */;
+import QuestTypes from "QuestTypes" /* 6714 */;
+import AdCreativeType from "AdCreativeType" /* 6718 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6719 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6720 */;
+import HTTPUtils_mod from "HTTPUtils" /* 1294 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

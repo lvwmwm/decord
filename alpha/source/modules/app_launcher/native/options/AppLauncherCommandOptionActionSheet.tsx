@@ -1,17 +1,17 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12053
+// Function ID: 12054
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [109, 19, 17, 1504, 21, 4971, 587, 558, 576, 7293, 5210, 1202, 7248, 5265, 2]
+// Dependencies: [109, 19, 17, 1501, 21, 4972, 587, 558, 576, 7295, 5211, 7250, 5266, 2]
 
-// Module 12052 (AppLauncherCommandOptionActionSheet)
+// Module 12053 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_3 = ["option", "children", "contentContainerStyles", "scrollable", "
 const View = react_native.View;
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
-let obj = { actionSheetBackground: obj2, titleContainer: { backgroundColor: "transparent" }, titleWrapper: { alignItems: "center" }, subtitleWrapper: { paddingHorizontal: 12, textAlign: "center" }, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
+let obj = { actionSheetBackground: obj2, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 let closure_7 = createStyles.createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandOptionActionSheet(arg0) {
@@ -34,14 +34,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let startExpanded;
   let tmp16;
   let tmp17;
-  let tmp21;
   let tmp4;
   let tmp5;
   let tmp6;
   let tmp8;
   let tmp9;
   let obj = require("react");
-  const cResult = obj.c(32);
+  const cResult = obj.c(28);
   if (cResult[0] !== arg0) {
     ({ option, children, contentContainerStyles, scrollable, startExpanded } = arg0);
     const tmp12 = _objectWithoutProperties(arg0, closure_3);
@@ -82,87 +81,71 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   } else {
     tmp17 = cResult[9];
   }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = jsx(require("native").Spacer, { size: 24 });
-    cResult[10] = tmp23;
-    tmp21 = tmp23;
-  } else {
-    tmp21 = cResult[10];
-  }
-  if (cResult[11] === tmp6.displayDescription) {
-    if (cResult[12] === tmp6.displayName) {
-      if (cResult[13] === tmp15.subtitleWrapper) {
-        if (cResult[14] === tmp15.titleContainer) {
-          if (cResult[15] === tmp15.titleWrapper) {
-            let tmp24;
-            if (cResult[16] === tmp17) {
-              tmp24 = cResult[17];
-            }
-            if (cResult[18] === tmp5) {
-              let tmp26;
-              if (cResult[19] === tmp15.contentContainer) {
-                tmp26 = cResult[20];
-              }
-              if (cResult[21] === tmp4) {
-                let tmp27;
-                if (cResult[22] === tmp26) {
-                  tmp27 = cResult[23];
-                }
-                if (cResult[24] === tmp6.name) {
-                  if (cResult[25] === tmp7) {
-                    if (cResult[26] === (undefined === tmp8 || tmp8)) {
-                      if (cResult[27] === (undefined === tmp9 || tmp9)) {
-                        if (cResult[28] === tmp15.actionSheetBackground) {
-                          if (cResult[29] === tmp24) {
-                            let tmp31;
-                            if (cResult[30] === tmp27) {
-                              tmp31 = cResult[31];
-                            }
-                            return tmp31;
-                          }
-                        }
+  if (cResult[10] === tmp6.displayDescription) {
+    if (cResult[11] === tmp6.displayName) {
+      let tmp21;
+      if (cResult[12] === tmp17) {
+        tmp21 = cResult[13];
+      }
+      if (cResult[14] === tmp5) {
+        let tmp23;
+        if (cResult[15] === tmp15.contentContainer) {
+          tmp23 = cResult[16];
+        }
+        if (cResult[17] === tmp4) {
+          let tmp24;
+          if (cResult[18] === tmp23) {
+            tmp24 = cResult[19];
+          }
+          if (cResult[20] === tmp6.name) {
+            if (cResult[21] === tmp7) {
+              if (cResult[22] === (undefined === tmp8 || tmp8)) {
+                if (cResult[23] === (undefined === tmp9 || tmp9)) {
+                  if (cResult[24] === tmp15.actionSheetBackground) {
+                    if (cResult[25] === tmp21) {
+                      let tmp28;
+                      if (cResult[26] === tmp24) {
+                        tmp28 = cResult[27];
                       }
+                      return tmp28;
                     }
                   }
                 }
-                BottomSheet = tmp(5265).BottomSheet;
-                const merged = Object.assign(tmp7);
-                const tmp36 = <BottomSheet key={tmp6.name} backgroundStyles={tmp15.actionSheetBackground} scrollable={undefined === tmp8 || tmp8} startExpanded={undefined === tmp9 || tmp9} header={tmp24}>{tmp27}</BottomSheet>;
-                cResult[24] = tmp6.name;
-                cResult[25] = tmp7;
-                cResult[26] = undefined === tmp8 || tmp8;
-                cResult[27] = undefined === tmp9 || tmp9;
-                cResult[28] = tmp15.actionSheetBackground;
-                cResult[29] = tmp24;
-                cResult[30] = tmp27;
-                cResult[31] = tmp36;
-                tmp31 = tmp36;
               }
-              const tmp30 = <View style={tmp26}>{tmp4}</View>;
-              cResult[21] = tmp4;
-              cResult[22] = tmp26;
-              cResult[23] = tmp30;
-              tmp27 = tmp30;
             }
-            const items = [tmp15.contentContainer, tmp5];
-            cResult[18] = tmp5;
-            cResult[19] = tmp15.contentContainer;
-            cResult[20] = items;
-            tmp26 = items;
           }
+          BottomSheet = tmp(5266).BottomSheet;
+          const merged = Object.assign(tmp7);
+          const tmp33 = <BottomSheet key={tmp6.name} backgroundStyles={tmp15.actionSheetBackground} scrollable={undefined === tmp8 || tmp8} startExpanded={undefined === tmp9 || tmp9} header={tmp21}>{tmp24}</BottomSheet>;
+          cResult[20] = tmp6.name;
+          cResult[21] = tmp7;
+          cResult[22] = undefined === tmp8 || tmp8;
+          cResult[23] = undefined === tmp9 || tmp9;
+          cResult[24] = tmp15.actionSheetBackground;
+          cResult[25] = tmp21;
+          cResult[26] = tmp24;
+          cResult[27] = tmp33;
+          tmp28 = tmp33;
         }
+        const tmp27 = <View style={tmp23}>{tmp4}</View>;
+        cResult[17] = tmp4;
+        cResult[18] = tmp23;
+        cResult[19] = tmp27;
+        tmp24 = tmp27;
       }
+      const items = [tmp15.contentContainer, tmp5];
+      cResult[14] = tmp5;
+      cResult[15] = tmp15.contentContainer;
+      cResult[16] = items;
+      tmp23 = items;
     }
   }
-  const tmp25 = jsx(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { titleContainerStyle: tmp15.titleContainer, titleWrapperStyle: tmp15.titleWrapper, subtitleStyle: tmp15.subtitleWrapper, leading: tmp17, title: tmp6.displayName, subtitle: tmp6.displayDescription, trailing: tmp21 });
-  cResult[11] = tmp6.displayDescription;
-  cResult[12] = tmp6.displayName;
-  cResult[13] = tmp15.subtitleWrapper;
-  cResult[14] = tmp15.titleContainer;
-  cResult[15] = tmp15.titleWrapper;
-  cResult[16] = tmp17;
-  cResult[17] = tmp25;
-  tmp24 = tmp25;
+  const tmp22 = jsx(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { leading: tmp17, title: tmp6.displayName, subtitle: tmp6.displayDescription });
+  cResult[10] = tmp6.displayDescription;
+  cResult[11] = tmp6.displayName;
+  cResult[12] = tmp17;
+  cResult[13] = tmp22;
+  tmp21 = tmp22;
 }) : (function AppLauncherCommandOptionActionSheet(startExpanded) {
   let children;
   let contentContainerStyles;
@@ -179,12 +162,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
   const tmp2 = closure_7();
-  BottomSheet = merged(5265).BottomSheet;
+  BottomSheet = merged(5266).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(7248).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(7250).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
-  return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader titleContainerStyle={tmp2.titleContainer} titleWrapperStyle={tmp2.titleWrapper} subtitleStyle={tmp2.subtitleWrapper} leading={null} title={null} subtitle={null} trailing={null} />}><View style={items}>{children}</View></BottomSheet>;
+  return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader leading={null} title={null} subtitle={null} />}><View style={items}>{children}</View></BottomSheet>;
 });
 const result = size.fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
 

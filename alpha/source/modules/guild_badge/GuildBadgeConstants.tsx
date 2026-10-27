@@ -1,11 +1,11 @@
 // Module ID: 9233
 // Function ID: 9234
 // Name: GuildBadgeConstants
-// Dependencies: [9234, 1128, 9235, 2]
+// Dependencies: [9234, 1125, 9235, 2]
 // Exports: getBadgeTooltip
 
 // Module 9233 (GuildBadgeConstants)
-import intl17 from "intl" /* 1128 */;
+import intl17 from "intl" /* 1125 */;
 import GuildTraits from "GuildTraits" /* 9234 */;
 import BadgeCategory from "BadgeCategory" /* 9235 */;
 import size from "module_2" /* 2 */;
@@ -28,48 +28,48 @@ export const getBadgeTooltip = function getBadgeTooltip(badgeCategory, visibilit
   let intl9;
   let stringResult;
   if (visibility === GuildTraits.GuildVisibility.PUBLIC) {
-    const intl3 = tmp(1128).intl;
-    stringResult = intl3.string(tmp(1128).t.op2cJ6);
+    const intl3 = tmp(1125).intl;
+    stringResult = intl3.string(tmp(1125).t.op2cJ6);
   } else if (visibility === GuildTraits.GuildVisibility.APPLY_TO_JOIN) {
-    const intl2 = tmp(1128).intl;
-    stringResult = intl2.string(tmp(1128).t.YwZfbt);
+    const intl2 = tmp(1125).intl;
+    stringResult = intl2.string(tmp(1125).t.YwZfbt);
   } else {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t.TME4LJ);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t.TME4LJ);
   }
   if (BadgeCategory.BadgeCategory.STAFF === badgeCategory) {
     const obj2 = { tooltipTitle: intl14.string(intl17.t.lMrv96), tooltipSubtitle: intl15.string(intl17.t.lMrv96), tooltipDescription: intl16.string(intl17.t.lMrv96) };
-    intl14 = tmp(1128).intl;
-    intl15 = tmp(1128).intl;
-    intl16 = tmp(1128).intl;
+    intl14 = tmp(1125).intl;
+    intl15 = tmp(1125).intl;
+    intl16 = tmp(1125).intl;
     return obj2;
   } else if (BadgeCategory.BadgeCategory.VERIFIED === badgeCategory) {
     const obj3 = { tooltipTitle: intl12.string(intl17.t.K7iRig), tooltipSubtitle: intl13.string(intl17.t.iCehw9), tooltipDescription: stringResult };
-    intl12 = tmp(1128).intl;
-    intl13 = tmp(1128).intl;
+    intl12 = tmp(1125).intl;
+    intl13 = tmp(1125).intl;
     return obj3;
   } else if (BadgeCategory.BadgeCategory.PARTNERED === badgeCategory) {
     const obj4 = { tooltipTitle: intl10.string(intl17.t.K7iRig), tooltipSubtitle: intl11.string(intl17.t.hfYfEE), tooltipDescription: stringResult };
-    intl10 = tmp(1128).intl;
-    intl11 = tmp(1128).intl;
+    intl10 = tmp(1125).intl;
+    intl11 = tmp(1125).intl;
     return obj4;
   } else if (BadgeCategory.BadgeCategory.VERIFIED_AND_PARTNERED === badgeCategory) {
     const obj5 = { tooltipTitle: intl8.string(intl17.t.K7iRig), tooltipSubtitle: intl9.string(intl17.t["TX+iFC"]), tooltipDescription: stringResult };
-    intl8 = tmp(1128).intl;
-    intl9 = tmp(1128).intl;
+    intl8 = tmp(1125).intl;
+    intl9 = tmp(1125).intl;
     return obj5;
   } else if (BadgeCategory.BadgeCategory.COMMUNITY === badgeCategory) {
     const obj6 = { tooltipTitle: intl7.string(intl17.t.K7iRig), tooltipDescription: stringResult };
-    intl7 = tmp(1128).intl;
+    intl7 = tmp(1125).intl;
     return obj6;
   } else if (BadgeCategory.BadgeCategory.DISCOVERABLE === badgeCategory) {
     const obj7 = { tooltipTitle: intl5.string(intl17.t.K7iRig), tooltipDescription: intl6.string(intl17.t.op2cJ6) };
-    intl5 = tmp(1128).intl;
-    intl6 = tmp(1128).intl;
+    intl5 = tmp(1125).intl;
+    intl6 = tmp(1125).intl;
     return obj7;
   } else {
     const obj = { tooltipTitle: intl4.string(intl17.t["iZRkC/"]) };
-    intl4 = tmp(1128).intl;
+    intl4 = tmp(1125).intl;
     return obj;
   }
 };

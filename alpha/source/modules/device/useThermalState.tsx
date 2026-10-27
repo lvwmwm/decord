@@ -1,13 +1,13 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15750
+// Function ID: 15751
 // Name: useThermalState
-// Dependencies: [1384, 5904, 558, 576, 2]
+// Dependencies: [1381, 5905, 558, 576, 2]
 // Exports: getThermalState
 
-// Module 15714 (useThermalState)
+// Module 15750 (useThermalState)
 import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5904 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5905 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThermal
     const obj3 = PlatformUtils;
     const tmp11 = require;
     if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1384);
+      const tmp11Result = tmp11(1381);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;
@@ -119,7 +119,7 @@ export const getThermalState = function getThermalState() {
     const obj3 = PlatformUtils;
     const tmp11 = require;
     if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1384);
+      const tmp11Result = tmp11(1381);
       if (tmp11Result.isAndroid()) {
         if (obj2.NONE === rawThermalState) {
           UNHANDLED = obj.NOMINAL;

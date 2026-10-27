@@ -1,16 +1,16 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17134
+// Function ID: 17135
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7650, 21, 4971, 587, 558, 576, 504, 7649, 5234, 5977, 2]
+// Dependencies: [19, 17, 7651, 21, 4972, 587, 558, 576, 504, 7650, 5235, 5978, 2]
 
-// Module 17093 (ShopSkipCategoriesFilter)
+// Module 17134 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 587 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
   }
   if (cResult[6] !== tmp4.label) {
     const obj2 = { variant: "text-md/normal", style: tmp4.label, children: "Hide first # of categories" };
-    const tmp15 = closure_5(tmp(5234).Text, obj2);
+    const tmp15 = closure_5(tmp(5235).Text, obj2);
     cResult[6] = tmp4.label;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -103,7 +103,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = closure_5(tmp(5234).Text, { variant: "text-lg/semibold", children: "\u2212" });
+      const tmp20 = closure_5(tmp(5235).Text, { variant: "text-lg/semibold", children: "\u2212" });
       cResult[11] = tmp20;
       tmp18 = tmp20;
     } else {
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
             }
             const _Symbol2 = Symbol;
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp32 = closure_5(tmp(5234).Text, { variant: "text-lg/semibold", children: "+" });
+              const tmp32 = closure_5(tmp(5235).Text, { variant: "text-lg/semibold", children: "+" });
               cResult[22] = tmp32;
               tmp30 = tmp32;
             } else {
@@ -168,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
                       }
                       const obj4 = { spacing: 8, children: items1 };
                       items1 = [tmp13, tmp37];
-                      const tmp43 = closure_6(tmp(5977).Stack, obj4);
+                      const tmp43 = closure_6(tmp(5978).Stack, obj4);
                       cResult[32] = tmp37;
                       cResult[33] = tmp13;
                       cResult[34] = tmp43;
@@ -202,7 +202,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
           tmp29 = items3;
         }
         const obj7 = { variant: "text-md/semibold", style: tmp4.valueText, children: stateFromStores };
-        const tmp27 = closure_5(tmp(5234).Text, obj7);
+        const tmp27 = closure_5(tmp(5235).Text, obj7);
         cResult[16] = stateFromStores;
         cResult[17] = tmp4.valueText;
         cResult[18] = tmp27;
@@ -233,10 +233,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
   const items = [CollectiblesCategoryStore];
   stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
   const obj2 = { style: tmp.container, children: closure_6(Stack, obj7) };
-  Stack = stateFromStores(5977).Stack;
+  Stack = stateFromStores(5978).Stack;
   const items1 = [, ];
   const obj3 = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
-  items1[0] = closure_5(stateFromStores(5234).Text, obj3);
+  items1[0] = closure_5(stateFromStores(5235).Text, obj3);
   const items2 = [tmp.stepperButton, ];
   const obj4 = { style: tmp.stepperContainer, children: items3 };
   const tmp11 = stateFromStores <= 0 && tmp.stepperButtonDisabled;
@@ -251,11 +251,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
       }
     },
     disabled: stateFromStores <= 0,
-    children: closure_5(stateFromStores(5234).Text, { variant: "text-lg/semibold", children: "\u2212" })
+    children: closure_5(stateFromStores(5235).Text, { variant: "text-lg/semibold", children: "\u2212" })
   };
   items3[0] = closure_5(closure_3, obj5);
   const obj6 = { variant: "text-md/semibold", style: tmp.valueText, children: stateFromStores };
-  items3[1] = closure_5(stateFromStores(5234).Text, obj6);
+  items3[1] = closure_5(stateFromStores(5235).Text, obj6);
   const items4 = [tmp.stepperButton, ];
   obj7 = { spacing: 8, children: items1 };
   const tmp12 = stateFromStores >= 100 && tmp.stepperButtonDisabled;
@@ -269,7 +269,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
       }
     },
     disabled: stateFromStores >= 100,
-    children: closure_5(stateFromStores(5234).Text, { variant: "text-lg/semibold", children: "+" })
+    children: closure_5(stateFromStores(5235).Text, { variant: "text-lg/semibold", children: "+" })
   };
   items3[2] = closure_5(closure_3, obj8);
   items1[1] = closure_6(closure_2, obj4);

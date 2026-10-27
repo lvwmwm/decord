@@ -4,4 +4,4 @@
 
 // Module 1325
 
-export default Error;
+export default ReferenceError;

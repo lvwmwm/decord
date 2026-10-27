@@ -1,32 +1,32 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18573
+// Function ID: 18574
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 18522, 1392, 1087, 21, 4971, 587, 558, 576, 7445, 6883, 1128, 10159, 5691, 18537, 9308, 1202, 8566, 6908, 5297, 5212, 5213, 2053, 504, 9683, 1633, 8736, 7220, 5166, 2]
+// Dependencies: [109, 19, 17, 18556, 1389, 1084, 21, 4972, 587, 558, 576, 7446, 6885, 1125, 10161, 5692, 18571, 9308, 1199, 8566, 6910, 5298, 5213, 5214, 2050, 504, 9685, 1630, 8736, 7222, 5167, 2]
 
-// Module 18539 (SoundboardSoundPickerCategories)
+// Module 18573 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
-import ClockIcon from "ClockIcon" /* 5691 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
-import Pressables from "Pressables" /* 6908 */;
-import SoundboardTypes from "SoundboardTypes" /* 7445 */;
+import intl6 from "intl" /* 1125 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5214 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import ClockIcon from "ClockIcon" /* 5692 */;
+import GuildIconDefault from "GuildIcon" /* 6885 */;
+import Pressables from "Pressables" /* 6910 */;
+import SoundboardTypes from "SoundboardTypes" /* 7446 */;
 import LockIcon from "LockIcon" /* 8566 */;
 import TrophyIcon from "TrophyIcon" /* 9308 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9683 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10159 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18522 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18537 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9685 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10161 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18556 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18571 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp30;
     const _Symbol4 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl5 = tmp(1128).intl;
+      const intl5 = tmp(1125).intl;
       const stringResult = intl5.string(intl6.t.y3LQCG);
       cResult[3] = stringResult;
       tmp30 = stringResult;
@@ -118,7 +118,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp26;
     const _Symbol3 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1128).intl;
+      const intl4 = tmp(1125).intl;
       const stringResult1 = intl4.string(intl6.t["+cGVV6"]);
       cResult[4] = stringResult1;
       tmp24 = stringResult1;
@@ -142,7 +142,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp20;
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
+      const intl3 = tmp(1125).intl;
       const stringResult2 = intl3.string(intl6.t.Rtvk9X);
       cResult[7] = stringResult2;
       tmp20 = stringResult2;
@@ -157,7 +157,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     let tmp16;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const stringResult3 = intl2.string(intl6.t.sKt3xS);
       cResult[8] = stringResult3;
       tmp16 = stringResult3;
@@ -177,7 +177,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       let tmp6;
       let tmp8;
       if (cResult[9] !== category.categoryInfo.guild.name) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const obj4 = { guildName: category.categoryInfo.guild.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl6.t.GXs41w, obj4);
         cResult[9] = category.categoryInfo.guild.name;
@@ -278,7 +278,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       }
       if (tmp42 == null) {
         const obj10 = { style: tmp5.keyboardItem, source: tmp12 };
-        tmp42 = authStore2(tmp(1202).Icon, obj10);
+        tmp42 = authStore2(tmp(1199).Icon, obj10);
       }
       cResult[19] = tmp11;
       cResult[20] = tmp13;
@@ -329,27 +329,27 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     tmp6 = null;
     tmp7 = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl4 = tmp2(1128).intl;
-    name = intl4.string(tmp2(1128).t.y3LQCG);
+    const intl4 = tmp2(1125).intl;
+    name = intl4.string(tmp2(1125).t.y3LQCG);
     tmp6 = AssetRegistryDefault;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl3 = tmp2(1128).intl;
-    name = intl3.string(tmp2(1128).t["+cGVV6"]);
+    const intl3 = tmp2(1125).intl;
+    name = intl3.string(tmp2(1125).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = authStore2(tmp2(5691).ClockIcon, obj);
+    tmp7 = authStore2(tmp2(5692).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl2 = tmp2(1128).intl;
-    name = intl2.string(tmp2(1128).t.Rtvk9X);
+    const intl2 = tmp2(1125).intl;
+    name = intl2.string(tmp2(1125).t.Rtvk9X);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.SEARCH === type) {
-    const intl = tmp2(1128).intl;
-    name = intl.string(tmp2(1128).t.sKt3xS);
+    const intl = tmp2(1125).intl;
+    name = intl.string(tmp2(1125).t.sKt3xS);
     tmp6 = AssetRegistryDefault2;
     tmp7 = null;
     tmp14Result = null;
@@ -359,9 +359,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     tmp14Result = null;
     name = null;
     if (SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
-      const intl5 = tmp2(1128).intl;
+      const intl5 = tmp2(1125).intl;
       const obj3 = { guildName: category.categoryInfo.guild.name };
-      name = intl5.formatToPlainString(tmp2(1128).t.GXs41w, obj3);
+      name = intl5.formatToPlainString(tmp2(1125).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
       tmp7 = authStore2(tmp2(9308).TrophyIcon, obj4);
       tmp6 = null;
@@ -378,14 +378,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6908).PressableOpacity;
+  const PressableOpacity = tmp2(6910).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;
   }
   if (tmp14Result == null) {
     const obj7 = { style: tmp.keyboardItem, source: tmp6 };
-    tmp14Result = tmp14(tmp2(1202).Icon, obj7);
+    tmp14Result = tmp14(tmp2(1199).Icon, obj7);
   }
   items1 = [tmp14Result, ];
   if (locked) {

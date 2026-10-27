@@ -1,13 +1,13 @@
-// Module ID: 4800
-// Function ID: 4801
+// Module ID: 4801
+// Function ID: 4802
 // Name: UserSettingsOverridesStore
-// Dependencies: [1246, 504, 510, 584, 2]
+// Dependencies: [1243, 504, 510, 584, 2]
 
-// Module 4800 (UserSettingsOverridesStore)
+// Module 4801 (UserSettingsOverridesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

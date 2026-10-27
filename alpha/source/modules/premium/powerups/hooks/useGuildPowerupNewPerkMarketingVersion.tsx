@@ -1,16 +1,16 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13443
+// Function ID: 13444
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 4845, 4903, 5182, 1087, 558, 576, 5200, 504, 5187, 5186, 5185, 9008, 2]
+// Dependencies: [19, 4846, 4904, 5183, 1084, 558, 576, 5201, 504, 5188, 5187, 5186, 9008, 2]
 
-// Module 13429 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 5185 */;
+// Module 13443 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 5186 */;
 import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9008 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5182 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5183 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(5187);
+  const tmpResult5 = tmp(5188);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(5186);
+  const tmpResult6 = tmp(5187);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(5187);
+  const tmpResult7 = tmp(5188);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

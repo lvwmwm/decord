@@ -1,20 +1,20 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 12932
+// Function ID: 12933
 // Name: ChannelTabsStore
-// Dependencies: [32, 4874, 5002, 4830, 12924, 1385, 504, 584, 2]
+// Dependencies: [32, 4875, 5003, 4831, 12933, 1382, 504, 584, 2]
 
-// Module 12923 (ChannelTabsStore)
+// Module 12932 (ChannelTabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import TabsExperimentDefault from "TabsExperiment" /* 12924 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import TabsExperimentDefault from "TabsExperiment" /* 12933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
 import size from "module_2" /* 2 */;
 
-const f116478 = (id) => id.id === activeTabId;
+const f116738 = (id) => id.id === activeTabId;
 function handleChannelDelete(channel) {
   let found;
   channel = channel.channel;
@@ -26,7 +26,7 @@ function handleChannelDelete(channel) {
   }
   if (enabled) {
     let tmp3 = channel;
-    const obj2 = channel(1385);
+    const obj2 = channel(1382);
     enabled = obj2.isDesktop();
   }
   if (enabled) {
@@ -46,7 +46,7 @@ function handleChannelDelete(channel) {
         enabled2 = obj3.getConfig({ location: "ChannelTabsStore" }).enabled;
       }
       if (enabled2) {
-        const obj4 = channel(1385);
+        const obj4 = channel(1382);
         enabled2 = obj4.isDesktop();
       }
       let tmp10 = !enabled2;
@@ -345,7 +345,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_7;
-    const found = tabs.find(f116478);
+    const found = tabs.find(f116738);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -371,7 +371,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_7;
-    const found = tabs.find(f116478);
+    const found = tabs.find(f116738);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;
@@ -453,7 +453,7 @@ let obj = {
       enabled = obj.getConfig({ location: "ChannelTabsStore" }).enabled;
     }
     if (enabled) {
-      const obj2 = obj3(1385);
+      const obj2 = obj3(1382);
       enabled = obj2.isDesktop();
     }
     if (enabled) {
@@ -525,7 +525,7 @@ let obj = {
       enabled = obj.getConfig({ location: "ChannelTabsStore" }).enabled;
     }
     if (enabled) {
-      const obj2 = obj3(1385);
+      const obj2 = obj3(1382);
       enabled = obj2.isDesktop();
     }
     if (enabled) {

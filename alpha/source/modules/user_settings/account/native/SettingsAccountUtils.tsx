@@ -1,12 +1,12 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 16011
+// Function ID: 16012
 // Name: SettingsAccountUtils
-// Dependencies: [502, 1392, 558, 576, 573, 2]
+// Dependencies: [502, 1389, 558, 576, 573, 2]
 
-// Module 15973 (SettingsAccountUtils)
+// Module 16011 (SettingsAccountUtils)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

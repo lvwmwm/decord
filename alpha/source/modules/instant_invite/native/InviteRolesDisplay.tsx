@@ -1,15 +1,15 @@
-// Module ID: 10837
-// Function ID: 10838
+// Module ID: 10840
+// Function ID: 10841
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 4877, 21, 4971, 558, 576, 504, 1128, 5234, 10838, 2]
+// Dependencies: [19, 17, 4878, 21, 4972, 558, 576, 504, 1125, 5235, 10841, 2]
 
-// Module 10837 (InviteRolesDisplay)
+// Module 10840 (InviteRolesDisplay)
 import react_native from "react-native" /* 17 */;
-import RolePillDefault from "RolePill" /* 10838 */;
+import RolePillDefault from "RolePill" /* 10841 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,8 +54,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRolesD
       const _Symbol = Symbol;
       ({ container, label } = tmp4);
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(roleIds(1128).t.stcSfI);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(roleIds(1125).t.stcSfI);
         cResult[5] = stringResult;
         tmp9 = stringResult;
       } else {
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRolesD
       }
       if (cResult[6] !== tmp4.label) {
         const obj2 = { variant: "text-xs/semibold", color: "text-muted", style: label, children: tmp9 };
-        const tmp13 = closure_5(roleIds(5234).Text, obj2);
+        const tmp13 = closure_5(roleIds(5235).Text, obj2);
         cResult[6] = tmp4.label;
         cResult[7] = tmp13;
         tmp11 = tmp13;
@@ -158,9 +158,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRolesD
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.container, children: items2 };
-    const obj3 = { variant: "text-xs/semibold", color: "text-muted", style: tmp.label, children: intl.string(roleIds(1128).t.stcSfI) };
-    const Text = tmp2(5234).Text;
-    intl = tmp2(1128).intl;
+    const obj3 = { variant: "text-xs/semibold", color: "text-muted", style: tmp.label, children: intl.string(roleIds(1125).t.stcSfI) };
+    const Text = tmp2(5235).Text;
+    intl = tmp2(1125).intl;
     items2 = [closure_5(Text, obj3), ];
     const obj4 = {
       style: tmp.rolesRow,

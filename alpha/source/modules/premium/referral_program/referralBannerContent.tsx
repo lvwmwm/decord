@@ -1,17 +1,17 @@
-// Module ID: 14761
-// Function ID: 14762
+// Module ID: 14797
+// Function ID: 14798
 // Name: referralBannerContent
-// Dependencies: [14744, 1087, 14745, 14746, 7563, 1128, 2067, 2]
+// Dependencies: [14780, 1084, 14781, 14782, 7564, 1125, 2064, 2]
 // Exports: getAllReferralsSent, getReferralBannerBodyText, getReferralBannerHeadingText, getReferralStatus, getShouldShowSpendOrbsCta
 
-// Module 14761 (referralBannerContent)
-import Constants2 from "Constants" /* 1087 */;
-import intl12 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7563 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14745 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14746 */;
-import Constants from "Constants" /* 14744 */;
+// Module 14797 (referralBannerContent)
+import Constants2 from "Constants" /* 1084 */;
+import intl12 from "intl" /* 1125 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7564 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14781 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14782 */;
+import Constants from "Constants" /* 14780 */;
 import size from "module_2" /* 2 */;
 
 let _require, closure_0, closure_1, closure_2, dependencyMap, importDefault;
@@ -56,15 +56,15 @@ export const getReferralStatus = function getReferralStatus(numSent) {
 export const getReferralBannerHeadingText = function getReferralBannerHeadingText(arg0) {
   let stringResult;
   if (arg0 === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
-    const intl3 = tmp(1128).intl;
-    stringResult = intl3.string(tmp(1128).t.tAlkl4);
+    const intl3 = tmp(1125).intl;
+    stringResult = intl3.string(tmp(1125).t.tAlkl4);
   } else if (arg0 === PremiumReferralIncentivesExperiment.ReferralRewardType.DISCOUNT) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj = { discountPercent };
-    stringResult = intl2.formatToPlainString(tmp(1128).t["/JJ9I5"], obj);
+    stringResult = intl2.formatToPlainString(tmp(1125).t["/JJ9I5"], obj);
   } else {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t.USo4s7);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t.USo4s7);
   }
   return stringResult;
 };
@@ -79,61 +79,61 @@ export const getReferralBannerBodyText = function getReferralBannerBodyText(arg0
       if (numRewardGranted.numRewardGranted === useReferralProgramBannerDetails.MAX_REFERRALS_SENT) {
         let formatResult;
         if (arg2 === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
-          const intl11 = tmp10(1128).intl;
+          const intl11 = tmp10(1125).intl;
           const obj2 = { helpdeskArticle: articleURL };
-          formatResult = intl11.format(tmp10(1128).t.OluhLp, obj2);
+          formatResult = intl11.format(tmp10(1125).t.OluhLp, obj2);
         } else {
-          const intl10 = tmp10(1128).intl;
+          const intl10 = tmp10(1125).intl;
           const obj3 = { helpdeskArticle: articleURL };
-          formatResult = intl10.format(tmp10(1128).t["8BYihN"], obj3);
+          formatResult = intl10.format(tmp10(1125).t["8BYihN"], obj3);
         }
         formatResult3 = formatResult;
       } else if (numRewardGranted.numSent === useReferralProgramBannerDetails.MAX_REFERRALS_SENT) {
         let formatResult1;
         if (arg2 === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
-          const intl9 = tmp10(1128).intl;
+          const intl9 = tmp10(1125).intl;
           const obj4 = { helpdeskArticle: articleURL };
-          formatResult1 = intl9.format(tmp10(1128).t["1aV1j9"], obj4);
+          formatResult1 = intl9.format(tmp10(1125).t["1aV1j9"], obj4);
         } else {
-          const intl8 = tmp10(1128).intl;
+          const intl8 = tmp10(1125).intl;
           const obj5 = { helpdeskArticle: articleURL };
-          formatResult1 = intl8.format(tmp10(1128).t.QNrPuS, obj5);
+          formatResult1 = intl8.format(tmp10(1125).t.QNrPuS, obj5);
         }
         formatResult3 = formatResult1;
       } else if (arg0) {
         let formatResult2;
         if (arg2 === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
-          const intl7 = tmp10(1128).intl;
+          const intl7 = tmp10(1125).intl;
           const obj6 = { numOrbs, helpdeskArticle: articleURL };
-          formatResult2 = intl7.format(tmp10(1128).t.cfE0uG, obj6);
+          formatResult2 = intl7.format(tmp10(1125).t.cfE0uG, obj6);
         } else {
-          const intl6 = tmp10(1128).intl;
+          const intl6 = tmp10(1125).intl;
           const obj7 = { helpdeskArticle: articleURL };
-          formatResult2 = intl6.format(tmp10(1128).t["+fcvlI"], obj7);
+          formatResult2 = intl6.format(tmp10(1125).t["+fcvlI"], obj7);
         }
         formatResult3 = formatResult2;
       } else {
-        const intl5 = tmp10(1128).intl;
+        const intl5 = tmp10(1125).intl;
         const obj8 = { helpdeskArticle: articleURL };
-        formatResult3 = intl5.format(tmp10(1128).t["a0+Jwv"], obj8);
+        formatResult3 = intl5.format(tmp10(1125).t["a0+Jwv"], obj8);
       }
       formatResult5 = formatResult3;
     } else if (numRewardGranted.numSent === useReferralProgramBannerDetails.MAX_REFERRALS_SENT) {
       let formatResult4;
       if (numRewardGranted.numRedeemed === useReferralProgramBannerDetails.MAX_REFERRALS_SENT) {
-        const intl4 = tmp16(1128).intl;
+        const intl4 = tmp16(1125).intl;
         const obj9 = { helpdeskArticle: articleURL };
-        formatResult4 = intl4.format(tmp16(1128).t["1aEjsH"], obj9);
+        formatResult4 = intl4.format(tmp16(1125).t["1aEjsH"], obj9);
       } else {
-        const intl3 = tmp16(1128).intl;
+        const intl3 = tmp16(1125).intl;
         const obj10 = { helpdeskArticle: articleURL };
-        formatResult4 = intl3.format(tmp16(1128).t["+u3AOO"], obj10);
+        formatResult4 = intl3.format(tmp16(1125).t["+u3AOO"], obj10);
       }
       formatResult5 = formatResult4;
     } else {
-      const intl2 = tmp16(1128).intl;
+      const intl2 = tmp16(1125).intl;
       const obj11 = { helpdeskArticle: articleURL };
-      formatResult5 = intl2.format(tmp16(1128).t["omMr+V"], obj11);
+      formatResult5 = intl2.format(tmp16(1125).t["omMr+V"], obj11);
     }
     formatResult6 = formatResult5;
   } else {

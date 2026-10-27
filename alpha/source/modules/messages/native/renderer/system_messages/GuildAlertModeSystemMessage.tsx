@@ -1,21 +1,21 @@
-// Module ID: 8403
-// Function ID: 8404
+// Module ID: 8402
+// Function ID: 8403
 // Name: GuildAlertModeSystemMessage
-// Dependencies: [4823, 4971, 587, 8311, 8318, 8320, 1128, 8404, 8322, 1420, 1417, 2]
+// Dependencies: [4824, 4972, 587, 8310, 8317, 8319, 1125, 8403, 8321, 1417, 1414, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 8403 (GuildAlertModeSystemMessage)
+// Module 8402 (GuildAlertModeSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8311 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8318 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8320 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8322 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8404 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import createStyles from "createStyles" /* 4971 */;
+import intl3 from "intl" /* 1125 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8310 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8317 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8319 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8321 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8403 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let obj = { automodUsernameColor: nativeDefault.colors.TEXT_BRAND };
@@ -46,13 +46,13 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
     const self = this;
     const self2 = this;
     const date = new Date(message.content);
-    str = date.toLocaleString(tmp5(1128).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+    str = date.toLocaleString(tmp5(1125).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
   }
   const obj3 = { content: intl.formatToParts(intl3.t.ig55n6, obj2), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp5Result4.getAutomodAvatarURL())).uri };
   const tmp10 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(8322)(roleStyle));
-  intl = tmp5(1128).intl;
-  intl2 = tmp5(1128).intl;
+  const merged = Object.assign(tmp(8321)(roleStyle));
+  intl = tmp5(1125).intl;
+  intl2 = tmp5(1125).intl;
   if (automodUsernameColor == null) {
     automodUsernameColor = null;
   }

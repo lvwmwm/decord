@@ -1,18 +1,18 @@
-// Module ID: 19438
-// Function ID: 19439
+// Module ID: 19476
+// Function ID: 19477
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4971, 558, 576, 5234, 5977, 7901, 12730, 19436, 12940, 7900, 2]
+// Dependencies: [19, 21, 4972, 558, 576, 5235, 5978, 7902, 12739, 19474, 12952, 7901, 2]
 
-// Module 19438 (SafetyFlowTaskScreen)
+// Module 19476 (SafetyFlowTaskScreen)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import ModalScreen2 from "ModalScreen" /* 7900 */;
-import ModalContent2 from "ModalContent" /* 7901 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19436 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import ModalScreen2 from "ModalScreen" /* 7901 */;
+import ModalContent2 from "ModalContent" /* 7902 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19474 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowTa
               let tmp29Result = footer;
               if (undefined === footer) {
                 let tmp23 = tmp5;
-                const ModalFooter = tmp(12730).ModalFooter;
+                const ModalFooter = tmp(12739).ModalFooter;
                 const tmp29 = React3;
                 if (undefined === withLogout || withLogout) {
                   tmp23 = _false(LogOutDisclaimerDefault, {});
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowTa
                 let tmp24 = null != tmp4;
                 if (tmp24) {
                   const obj3 = { variant: "primary", text: tmp4, onPress: onAction, loading: submitting };
-                  tmp24 = _false(tmp(12940).ModalActionButton, obj3);
+                  tmp24 = _false(tmp(12952).ModalActionButton, obj3);
                 }
                 const obj4 = { children: items1 };
                 items1[1] = tmp24;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowTa
     let tmp11 = null != subtitle;
     if (tmp11) {
       const obj7 = { variant: "text-md/medium", color: str, style: tmp6.header, children: subtitle };
-      tmp11 = _false(tmp(5234).Text, obj7);
+      tmp11 = _false(tmp(5235).Text, obj7);
     }
     cResult[3] = tmp6.header;
     cResult[4] = subtitle;
@@ -193,14 +193,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowTa
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(5234).Text, obj2);
+    tmp7Result = tmp7(tmp4(5235).Text, obj2);
   }
   const obj3 = { children: items1 };
   items[2] = tmp7Result;
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(12730).ModalFooter;
+    const ModalFooter = tmp4(12739).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -208,7 +208,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowTa
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(12940).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(12952).ModalActionButton, obj4);
     }
     const obj5 = { children: items3 };
     items3[1] = tmp7Result2;

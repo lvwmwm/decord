@@ -1,11 +1,11 @@
 // Module ID: 8678
 // Function ID: 8679
 // Name: DisplayProfile
-// Dependencies: [1394, 7705, 2053, 1417, 8655, 2]
+// Dependencies: [1391, 7706, 2050, 1414, 8655, 2]
 
 // Module 8678 (DisplayProfile)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8655 */;
 import size from "module_2" /* 2 */;
 

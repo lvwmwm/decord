@@ -1,27 +1,27 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15728
+// Function ID: 15729
 // Name: NotificationTokenManager
-// Dependencies: [17, 1261, 13316, 14949, 502, 15693, 1087, 2004, 584, 10753, 15696, 1257, 1128, 2864, 1384, 15697, 1267, 13315, 2]
+// Dependencies: [17, 1258, 13330, 14985, 502, 15729, 1084, 2001, 584, 10756, 15732, 1254, 1125, 2865, 1381, 15733, 1264, 13329, 2]
 
-// Module 15692 (NotificationTokenManager)
+// Module 15728 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import intl32 from "intl" /* 1128 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import _modDef2864 from "module_2864" /* 2864 */;
-import PushNotificationDefault from "PushNotification" /* 10753 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13315 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15693 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15696 */;
-import react_nativeDefault from "react-native" /* 15697 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import MultiAccountStore from "MultiAccountStore" /* 13316 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14949 */;
+import Constants from "Constants" /* 1084 */;
+import intl32 from "intl" /* 1125 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import _modDef2865 from "module_2865" /* 2865 */;
+import PushNotificationDefault from "PushNotification" /* 10756 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13329 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15729 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15732 */;
+import react_nativeDefault from "react-native" /* 15733 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import MultiAccountStore from "MultiAccountStore" /* 13330 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14985 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 2004 */;
+import LifecycleManager from "LifecycleManager" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -206,7 +206,7 @@ class NotificationTokenManager extends LifecycleManager {
     const registerNotificationCategories = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategories;
     const registerNotificationCategoriesAndGroups = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategoriesAndGroups;
     if (null != registerNotificationCategoriesAndGroups) {
-      const obj = { calls: intl.string(_modDef2864["IUH/Oe"]), mediaConnections: intl2.string(_modDef2864.VeBD1N), messages: intl3.string(_modDef2864["4qWUAO"]), directMessages: intl4.string(_modDef2864.NGdNZb), friendRequests: intl5.string(_modDef2864.NxgGZA), polls: intl6.string(_modDef2864.MOjygY), social: intl7.string(_modDef2864["UzRF+8"]), stageLive: intl8.string(_modDef2864["4n388K"]), guildEventLive: intl9.string(_modDef2864["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef2864.HibKoy), systemMessages: intl12.string(_modDef2864.zJlwvV), other: intl13.string(_modDef2864.kIrLfg), default: intl14.string(_modDef2864["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
+      const obj = { calls: intl.string(_modDef2865["IUH/Oe"]), mediaConnections: intl2.string(_modDef2865.VeBD1N), messages: intl3.string(_modDef2865["4qWUAO"]), directMessages: intl4.string(_modDef2865.NGdNZb), friendRequests: intl5.string(_modDef2865.NxgGZA), polls: intl6.string(_modDef2865.MOjygY), social: intl7.string(_modDef2865["UzRF+8"]), stageLive: intl8.string(_modDef2865["4n388K"]), guildEventLive: intl9.string(_modDef2865["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef2865.HibKoy), systemMessages: intl12.string(_modDef2865.zJlwvV), other: intl13.string(_modDef2865.kIrLfg), default: intl14.string(_modDef2865["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
       intl = intl32.intl;
       intl2 = intl32.intl;
       intl3 = intl32.intl;
@@ -222,7 +222,7 @@ class NotificationTokenManager extends LifecycleManager {
       intl13 = intl32.intl;
       intl14 = intl32.intl;
       intl15 = intl32.intl;
-      const obj2 = { realtime: intl16.string(_modDef2864.S5cB9e), social: intl17.string(_modDef2864["UzRF+8"]), server: intl18.string(_modDef2864.zRKbpz), other: intl19.string(_modDef2864.q5M7HV) };
+      const obj2 = { realtime: intl16.string(_modDef2865.S5cB9e), social: intl17.string(_modDef2865["UzRF+8"]), server: intl18.string(_modDef2865.zRKbpz), other: intl19.string(_modDef2865.q5M7HV) };
       intl16 = intl32.intl;
       intl17 = intl32.intl;
       intl18 = intl32.intl;
@@ -266,7 +266,7 @@ class NotificationTokenManager extends LifecycleManager {
             return hasItem;
           });
           const obj2 = { disabled_channels: found.map((channelId) => channelId.channelId) };
-          const track = tmp4(1267).track;
+          const track = tmp4(1264).track;
           const ANDROID_NOTIFICATION_CHANNELS_SYNCED = AnalyticEvents.ANDROID_NOTIFICATION_CHANNELS_SYNCED;
           AnalyticsUtilsDefault;
           track(ANDROID_NOTIFICATION_CHANNELS_SYNCED, obj2);

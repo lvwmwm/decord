@@ -1,24 +1,24 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 12372
+// Function ID: 12373
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4845, 4913, 1392, 21, 4971, 587, 558, 576, 5593, 12367, 5210, 12184, 1128, 3830, 7248, 7180, 5234, 5604, 5244, 7298, 2]
+// Dependencies: [5, 32, 19, 17, 4846, 4914, 1389, 21, 4972, 587, 558, 576, 5594, 12373, 5211, 12204, 1125, 3831, 7250, 7182, 5235, 5605, 5245, 7300, 2]
 
-// Module 12366 (ConjurePublishNotesSheet)
+// Module 12372 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12184 */;
+import intl10 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5211 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c1, dependencyMap, importDefault;
 let c10;
 let tmp4;
 let unpackModuleId;
-const useConjurePatchNotesComposerDefault = tmp4(12367);
+const useConjurePatchNotesComposerDefault = tmp4(12373);
 const View = react_native.View;
 let RelationshipStore = RelationshipStore_mod;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -154,7 +154,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
               return pickChannel(id.id);
             }
           };
-          obj3 = { title: intl.string(_modDef3830.Gd63Fl) };
+          obj3 = { title: intl.string(_modDef3831.Gd63Fl) };
           ActionSheetActionCreators;
           tmp2 = ChannelPickerActionSheetDefault;
           intl = intl10.intl;
@@ -251,7 +251,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
         return pickChannel(id.id);
       }
     };
-    obj3 = { title: intl.string(_modDef3830.Gd63Fl) };
+    obj3 = { title: intl.string(_modDef3831.Gd63Fl) };
     ActionSheetActionCreators;
     tmp2 = ChannelPickerActionSheetDefault;
     intl = intl10.intl;
@@ -319,43 +319,43 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     }
   }), items2);
   let obj = { startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = guildId(7298).ActionSheet;
-  obj2 = { title: intl.formatToPlainString(_modDef3830.lsYQII, { projectName }) };
-  BottomSheetTitleHeader = guildId(7248).BottomSheetTitleHeader;
-  intl = guildId(1128).intl;
+  const ActionSheet = guildId(7300).ActionSheet;
+  obj2 = { title: intl.formatToPlainString(_modDef3831.lsYQII, { projectName }) };
+  BottomSheetTitleHeader = guildId(7250).BottomSheetTitleHeader;
+  intl = guildId(1125).intl;
   obj3 = { style: tmp3.container, children: items4 };
   let tmp15Result = null;
   if (channels.length > 0) {
     let combined;
     let obj4 = { style: tmp3.notesSection, children: items3 };
-    const obj5 = { label: intl2.string(_modDef3830.r4du8k), placeholder: string(drafting ? tmpResult.aYQksU : tmpResult["3hV1Gc"]), description: stringResult, errorMessage: stringResult1, maxLength: maxNotesLength, value: str, onChange: callback, disabled: sending };
-    const TextArea = tmp14(7180).TextArea;
-    intl2 = tmp14(1128).intl;
-    const intl3 = tmp14(1128).intl;
+    const obj5 = { label: intl2.string(_modDef3831.r4du8k), placeholder: string(drafting ? tmpResult.aYQksU : tmpResult["3hV1Gc"]), description: stringResult, errorMessage: stringResult1, maxLength: maxNotesLength, value: str, onChange: callback, disabled: sending };
+    const TextArea = tmp14(7182).TextArea;
+    intl2 = tmp14(1125).intl;
+    const intl3 = tmp14(1125).intl;
     string = intl3.string;
-    tmpResult = _modDef3830;
+    tmpResult = _modDef3831;
     stringResult = undefined;
     if (draftFailed) {
-      const intl4 = tmp14(1128).intl;
-      stringResult = intl4.string(_modDef3830["Em8bo+"]);
+      const intl4 = tmp14(1125).intl;
+      stringResult = intl4.string(_modDef3831["Em8bo+"]);
     }
     stringResult1 = undefined;
     if (tmp7) {
-      const intl5 = tmp14(1128).intl;
-      stringResult1 = intl5.string(_modDef3830["6oEjjD"]);
+      const intl5 = tmp14(1125).intl;
+      stringResult1 = intl5.string(_modDef3831["6oEjjD"]);
     }
     items3 = [tmp13(TextArea, obj5), ];
-    const Text = tmp14(5234).Text;
-    const intl6 = tmp14(1128).intl;
+    const Text = tmp14(5235).Text;
+    const intl6 = tmp14(1125).intl;
     const format = intl6.format;
-    const prop = _modDef3830["1lVhj/"];
+    const prop = _modDef3831["1lVhj/"];
     if (null != selectedChannel) {
       const _HermesInternal = HermesInternal;
-      const tmp14Result = guildId(5604);
+      const tmp14Result = guildId(5605);
       combined = "#" + tmp14Result.computeChannelName(selectedChannel, callback2, trimmed);
     } else {
-      const intl7 = tmp14(1128).intl;
-      combined = intl7.string(_modDef3830["7CvxMC"]);
+      const intl7 = tmp14(1125).intl;
+      combined = intl7.string(_modDef3831["7CvxMC"]);
     }
     const obj6 = { channel: combined, onPick: fn };
     fn = callback1;
@@ -370,13 +370,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
   }
   items4 = [tmp15Result, ];
   const obj8 = { style: tmp3.actions, children: items5 };
-  const obj9 = { variant: "tertiary", grow: true, text: intl8.string(guildId(1128).t["ETE/oC"]), onPress: callback2 };
-  const Button = tmp14(5244).Button;
-  intl8 = tmp14(1128).intl;
+  const obj9 = { variant: "tertiary", grow: true, text: intl8.string(guildId(1125).t["ETE/oC"]), onPress: callback2 };
+  const Button = tmp14(5245).Button;
+  intl8 = tmp14(1125).intl;
   items5 = [tmp13(Button, obj9), ];
-  const obj10 = { variant: "primary", grow: true, text: intl9.string(_modDef3830["69aIG4"]), loading: sending, disabled: "" === trimmed || trimmed.length > maxNotesLength || null == selectedChannel || sending, onPress: callback3 };
-  const Button2 = tmp14(5244).Button;
-  intl9 = tmp14(1128).intl;
+  const obj10 = { variant: "primary", grow: true, text: intl9.string(_modDef3831["69aIG4"]), loading: sending, disabled: "" === trimmed || trimmed.length > maxNotesLength || null == selectedChannel || sending, onPress: callback3 };
+  const Button2 = tmp14(5245).Button;
+  intl9 = tmp14(1125).intl;
   items5[1] = tmp13(Button2, obj10);
   items4[1] = closure_11(markEdited, obj8);
   return tmp13(ActionSheet, obj);

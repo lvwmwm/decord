@@ -1,10 +1,10 @@
 // Module ID: 17048
 // Function ID: 17049
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1131]
 
 // Module 17048 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 762, height: 525, scales: [1], hash: "685e4a9eb5133a148de7ce27d400a483", name: "img_register_header", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "99ca2b0cb6c6ab32f98726cbd8d2cd48", name: "pl.messages.99ca2b0cb6c6ab32f98726cbd8d2cd48.compiled.messages", type: "jsona" });

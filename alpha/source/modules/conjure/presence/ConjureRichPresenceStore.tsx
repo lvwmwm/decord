@@ -1,22 +1,22 @@
-// Module ID: 11198
-// Function ID: 11199
+// Module ID: 11201
+// Function ID: 11202
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 6633, 4874, 5002, 6773, 1087, 4830, 10646, 6808, 1297, 10698, 2002, 504, 584, 2]
+// Dependencies: [32, 5, 6634, 4875, 5003, 6774, 1084, 4831, 10649, 6809, 1294, 10701, 1999, 504, 584, 2]
 
-// Module 11198 (ConjureRichPresenceStore)
+// Module 11201 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6808 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10646 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6809 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10649 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import IdleStore from "IdleStore" /* 6633 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import Constants from "Constants" /* 1087 */;
+import IdleStore from "IdleStore" /* 6634 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let _null, c3, c4;
@@ -28,7 +28,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f109523 = () => {
+  const f109748 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -46,7 +46,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f109523, closure_1_11);
+      timeout = setTimeout(f109748, closure_1_11);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -181,7 +181,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f109523, c11);
+        timeout2 = setTimeout(f109748, c11);
         flag = true;
       }
     }

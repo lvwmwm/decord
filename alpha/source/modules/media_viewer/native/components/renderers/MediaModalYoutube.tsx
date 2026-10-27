@@ -1,11 +1,11 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14253
+// Function ID: 14254
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 1087, 21, 558, 576, 8788, 6660, 8753, 8757, 14227, 1384, 2]
+// Dependencies: [32, 19, 1084, 21, 558, 576, 8788, 6661, 8753, 8757, 14254, 1381, 2]
 
-// Module 14226 (MediaModalYoutube)
+// Module 14253 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8753 */;
 import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8788 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -47,9 +47,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   [playerState, dependencyMap] = react.useState(visible(8788).PlayerState.UNREADY);
   const tmp6 = _slicedToArray(react.useState(undefined), 2);
   [tmp7, _slicedToArray] = tmp6;
-  const tmp9 = playerState(6660)(playerState);
+  const tmp9 = playerState(6661)(playerState);
   react = tmp9;
-  const tmp10 = playerState(6660)(visible);
+  const tmp10 = playerState(6661)(visible);
   let closure_5 = tmp10;
   const ref = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -256,12 +256,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             if ("embed_not_allowed" === tmp7) {
               const tmp35 = ref;
               const obj5 = { videoId: youtubeVideoIdFromURI.videoId };
-              tmp32 = ref(tmp8(14227), obj5);
+              tmp32 = ref(tmp8(14254), obj5);
             }
           }
           let str3 = "";
           let str4 = "";
-          const tmpResult4 = tmp(1384);
+          const tmpResult4 = tmp(1381);
           const videoId = youtubeVideoIdFromURI.videoId;
           const isAndroidResult = tmpResult4.isAndroid();
           const tmp8Result = playerState(8788);
@@ -388,9 +388,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   [playerState, dependencyMap] = react.useState(visible(8788).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
-  const tmp8 = playerState(6660)(playerState);
+  const tmp8 = playerState(6661)(playerState);
   react = tmp8;
-  const tmp9 = playerState(6660)(visible);
+  const tmp9 = playerState(6661)(visible);
   let closure_5 = tmp9;
   const ref = react.useRef(null);
   const effect = react.useEffect(() => {
@@ -484,10 +484,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (playerState === tmp(8788).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
         let obj2 = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(tmp7(14227), obj2);
+        return ref(tmp7(14254), obj2);
       }
     }
-    const tmpResult2 = tmp(1384);
+    const tmpResult2 = tmp(1381);
     const isAndroidResult = tmpResult2.isAndroid();
     let str2 = "";
     let str3 = "";

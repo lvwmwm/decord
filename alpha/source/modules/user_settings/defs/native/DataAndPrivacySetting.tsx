@@ -1,18 +1,18 @@
-// Module ID: 17267
-// Function ID: 17268
+// Module ID: 17308
+// Function ID: 17309
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1087, 558, 576, 16147, 16150, 11209, 1128, 14178, 17268, 2]
+// Dependencies: [19, 1084, 558, 576, 16185, 16188, 11212, 1125, 14205, 17309, 2]
 
-// Module 17267 (DataAndPrivacySetting)
+// Module 17308 (DataAndPrivacySetting)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 14178 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16147 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 16150 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 14205 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16185 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 16188 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

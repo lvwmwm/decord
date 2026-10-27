@@ -1,53 +1,53 @@
-// Module ID: 10092
-// Function ID: 10093
+// Module ID: 10094
+// Function ID: 10095
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 4972, 1207, 7631, 4883, 4903, 4874, 7760, 8293, 1392, 1087, 4830, 4820, 1243, 1127, 1098, 21, 4971, 587, 7253, 504, 4978, 5161, 9662, 5604, 9725, 7755, 7382, 5025, 5593, 5052, 8304, 5707, 7566, 12, 9727, 10093, 10095, 10106, 5909, 1128, 10107, 10109, 1384, 10110, 10111, 10114, 4807, 10115, 2002, 10116, 10117, 8951, 1202, 7381, 1631, 1503, 7033, 8668, 10121, 5234, 10122, 10194, 10408, 10409, 558, 576, 9463, 10410, 10414, 7485, 13977, 8558, 10418, 8289, 5210, 11006, 9350, 5244, 8542, 2]
+// Dependencies: [5, 32, 19, 17, 4973, 1204, 7632, 4884, 4904, 4875, 7761, 8291, 1389, 1084, 4831, 4821, 1240, 1124, 1095, 21, 4972, 587, 7255, 504, 4979, 5162, 9664, 5605, 9727, 7756, 7384, 5026, 5594, 5053, 8302, 5708, 7567, 12, 9729, 10095, 10097, 10108, 5910, 1125, 10109, 10111, 1381, 10112, 10113, 10116, 4808, 10117, 1999, 10118, 10119, 8951, 1199, 7383, 1628, 1500, 7035, 8668, 10123, 5235, 10124, 10196, 10410, 10411, 558, 576, 9462, 10412, 10416, 7486, 13991, 8558, 10420, 8287, 5211, 11009, 9349, 5245, 8542, 2]
 // Exports: default
 
-// Module 10092 (ForumComposer)
+// Module 10094 (ForumComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ThreadConstants from "ThreadConstants" /* 1127 */;
-import intl6 from "intl" /* 1128 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1503 */;
-import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5161 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7381 */;
-import DraftStore2 from "DraftStore" /* 7631 */;
-import MessageParser from "MessageParser" /* 7755 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7760 */;
-import Tracking from "Tracking" /* 8289 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8304 */;
+import ThreadConstants from "ThreadConstants" /* 1124 */;
+import intl6 from "intl" /* 1125 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5162 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import transitionToChannel from "transitionToChannel" /* 5708 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7383 */;
+import DraftStore2 from "DraftStore" /* 7632 */;
+import MessageParser from "MessageParser" /* 7756 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7761 */;
+import Tracking from "Tracking" /* 8287 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import useFocusHandlers from "useFocusHandlers" /* 10109 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10117 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10122 */;
-import AppliedForumTag from "AppliedForumTag" /* 10410 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
+import useFocusHandlers from "useFocusHandlers" /* 10111 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10119 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10124 */;
+import AppliedForumTag from "AppliedForumTag" /* 10412 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10420 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants_mod from "Constants" /* 1087 */;
-import Constants_mod2 from "Constants" /* 1098 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants_mod from "Constants" /* 1084 */;
+import Constants_mod2 from "Constants" /* 1095 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -77,9 +77,9 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const TagIcon = tmp(9463);
-const DismissibleActionSheet = tmp(10409);
-const ImageCarouselDefault = tmp5(10414);
+const TagIcon = tmp(9462);
+const DismissibleActionSheet = tmp(10411);
+const ImageCarouselDefault = tmp5(10416);
 function ActionBar(channel) {
   let Button;
   let ChatIcon;
@@ -123,7 +123,7 @@ function ActionBar(channel) {
   const tmp6 = useKeyboardTypeDefault();
   let closure_7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
-  const tmp8 = tmp6 === channel(1631).KeyboardTypes.MEDIA;
+  const tmp8 = tmp6 === channel(1628).KeyboardTypes.MEDIA;
   let closure_8 = tmp8;
   if (!isMediaChannelResult) {
     isMediaChannelResult = stateFromStores1 && stateFromStores.length > 0;
@@ -149,7 +149,7 @@ function ActionBar(channel) {
   const obj5 = { style: tmp.actions, children: items5 };
   if (tmp16Result) {
     const obj6 = {
-      accessibilityLabel: intl.string(tmp2(1128).t.aDZSuz),
+      accessibilityLabel: intl.string(tmp2(1125).t.aDZSuz),
       style: items4,
       IconComponent: ImageIcon,
       onPress: function handlePressMediaButton() {
@@ -166,13 +166,13 @@ function ActionBar(channel) {
         },
       foregroundRipple: true
     };
-    const HeaderActionButton = tmp2(7485).HeaderActionButton;
-    intl = tmp2(1128).intl;
+    const HeaderActionButton = tmp2(7486).HeaderActionButton;
+    intl = tmp2(1125).intl;
     items4 = [, ];
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(13977).KeyboardIcon;
+      ImageIcon = tmp2(13991).KeyboardIcon;
     } else {
       ImageIcon = tmp2(8558).ImageIcon;
     }
@@ -181,9 +181,9 @@ function ActionBar(channel) {
   items5 = [tmp16Result, , , ];
   if (tmp10) {
     const obj7 = {
-      accessibilityLabel: intl2.string(tmp2(1128).t["112vVE"]),
+      accessibilityLabel: intl2.string(tmp2(1125).t["112vVE"]),
       style: items6,
-      IconComponent: tmp2(9463).TagIcon,
+      IconComponent: tmp2(9462).TagIcon,
       onPress: function handlePressTagsButton() {
           let intl;
           metroRequire.dismiss();
@@ -206,32 +206,32 @@ function ActionBar(channel) {
               }
             }
           };
-          const tmp3 = asyncRequire(11006, dependencyMap.paths);
+          const tmp3 = asyncRequire(11009, dependencyMap.paths);
           intl = intl6.intl;
           openLazy(tmp3, "ForumPostTagsActionSheet", obj);
         },
       foregroundRipple: true
     };
-    const HeaderActionButton2 = tmp2(7485).HeaderActionButton;
-    intl2 = tmp2(1128).intl;
+    const HeaderActionButton2 = tmp2(7486).HeaderActionButton;
+    intl2 = tmp2(1125).intl;
     items6 = [, ];
     ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(10109).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(10111).PostComposerInputs.CONTENT;
   if (tmp18) {
-    const obj8 = { accessibilityLabel: intl3.string(tmp2(1128).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9350).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
-    const HeaderActionButton3 = tmp2(7485).HeaderActionButton;
-    intl3 = tmp2(1128).intl;
+    const obj8 = { accessibilityLabel: intl3.string(tmp2(1125).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9349).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
+    const HeaderActionButton3 = tmp2(7486).HeaderActionButton;
+    intl3 = tmp2(1125).intl;
     tmp18 = closure_29(HeaderActionButton3, obj8);
   }
   items5[2] = tmp18;
   const obj9 = { style: tmp.postButtonWrapper, children: closure_29(Button, obj10) };
-  Button = tmp2(5244).Button;
-  const intl4 = tmp2(1128).intl;
+  Button = tmp2(5245).Button;
+  const intl4 = tmp2(1125).intl;
   const string = intl4.string;
-  const t = tmp2(1128).t;
+  const t = tmp2(1125).t;
   if (isEdit) {
     stringResult = string(t["R3BPH+"]);
   } else {
@@ -1190,7 +1190,7 @@ export default function ForumComposer(parentChannel) {
               }
               if (tmp7Result !== name2) {
                 const obj = { name: tmp7Result };
-                const tmp5Result = tmp5(8304);
+                const tmp5Result = tmp5(8302);
                 tmp5Result.changeThreadSettings(parentChannel.id, obj);
                 closure_15(tmp7Result);
               }

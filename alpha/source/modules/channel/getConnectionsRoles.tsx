@@ -1,14 +1,14 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7279
+// Function ID: 7280
 // Name: getConnectionsRoles
-// Dependencies: [4877, 4845, 1087, 1099, 2]
+// Dependencies: [4878, 4846, 1084, 1096, 2]
 // Exports: default
 
-// Module 7277 (getConnectionsRoles)
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import Constants from "Constants" /* 1087 */;
-import BigFlagUtils from "BigFlagUtils" /* 1099 */;
+// Module 7279 (getConnectionsRoles)
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import Constants from "Constants" /* 1084 */;
+import BigFlagUtils from "BigFlagUtils" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 let ChannelTypes;

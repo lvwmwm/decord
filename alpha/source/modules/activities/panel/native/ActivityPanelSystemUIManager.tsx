@@ -1,14 +1,14 @@
-// Module ID: 18487
-// Function ID: 18488
+// Module ID: 18521
+// Function ID: 18522
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 5609, 21, 558, 576, 18466, 1384, 10890, 11370, 2]
+// Dependencies: [19, 5610, 21, 558, 576, 18500, 1381, 10893, 11373, 2]
 
-// Module 18487 (ActivityPanelSystemUIManager)
+// Module 18521 (ActivityPanelSystemUIManager)
 import react2 from "react" /* 576 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import StatusBarDefault from "StatusBar" /* 10890 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 11370 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18466 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5610 */;
+import StatusBarDefault from "StatusBar" /* 10893 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 11373 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18500 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1384);
+const PlatformUtils = tmp(1381);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const memo = react.memo;

@@ -1,19 +1,19 @@
-// Module ID: 19049
-// Function ID: 19050
+// Module ID: 19087
+// Function ID: 19088
 // Name: GuildSettingsAuditLogStore
-// Dependencies: [19050, 4827, 4878, 4883, 4877, 4845, 1087, 1099, 12, 504, 584, 2]
+// Dependencies: [19088, 4828, 4879, 4884, 4878, 4846, 1084, 1096, 12, 504, 584, 2]
 
-// Module 19049 (GuildSettingsAuditLogStore)
+// Module 19087 (GuildSettingsAuditLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4878 */;
-import AuditLogRecord2 from "AuditLogRecord" /* 19050 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import Constants from "Constants" /* 1087 */;
-import BigFlagUtils from "BigFlagUtils" /* 1099 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4879 */;
+import AuditLogRecord2 from "AuditLogRecord" /* 19088 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import Constants from "Constants" /* 1084 */;
+import BigFlagUtils from "BigFlagUtils" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f138885 = function(id) {
+const f139221 = function(id) {
   function shouldMergeEntries(items, action2, c1) {
     let isEqualResult = null != items && items.action === action2.action && items.targetId === action2.targetId && items.userId === action2.userId;
     if (isEqualResult) {
@@ -201,7 +201,7 @@ const f138885 = function(id) {
     items.unshift(tmp45);
   }
 };
-const f138887 = (userId) => userId.userId;
+const f139223 = (userId) => userId.userId;
 const AuditLogChange = AuditLogRecord2.AuditLogChange;
 let closure_4 = ChannelRecord.isGuildSelectableChannelType;
 const hasAnyPermission = GuildRoleRecord.hasAnyPermission;
@@ -358,7 +358,7 @@ let obj = {
     const items = [];
     let c1 = 0;
     const reversed = logs.reverse();
-    const item = reversed.forEach(f138885);
+    const item = reversed.forEach(f139221);
     ({ integrations: closure_18, webhooks: closure_20, guildScheduledEvents: closure_21, automodRules } = logs);
     if (automodRules == null) {
       automodRules = [];
@@ -395,7 +395,7 @@ let obj = {
       let items = [];
       let c1 = 0;
       const reversed = logs.reverse();
-      const item = reversed.forEach(f138885);
+      const item = reversed.forEach(f139221);
       let items1 = [];
       let num = 0;
       let tmp7 = items1;
@@ -445,7 +445,7 @@ let obj = {
           }
         });
       });
-      const iter = found.map(f138887);
+      const iter = found.map(f139223);
       closure_19 = iter.value();
     }
   },
@@ -483,7 +483,7 @@ let obj = {
           }
         });
       });
-      const iter = found.map(f138887);
+      const iter = found.map(f139223);
       closure_19 = iter.value();
     }
     return false;

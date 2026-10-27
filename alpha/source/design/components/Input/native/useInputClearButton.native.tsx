@@ -1,14 +1,14 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7019
+// Function ID: 7020
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 558, 576, 7018, 1128, 2]
+// Dependencies: [19, 17, 21, 558, 576, 7020, 1125, 2]
 
-// Module 7017 (useInputClearButton)
+// Module 7019 (useInputClearButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import CircleXIcon from "CircleXIcon" /* 7018 */;
+import intl2 from "intl" /* 1125 */;
+import CircleXIcon from "CircleXIcon" /* 7020 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputClea
         const _Symbol2 = Symbol;
         const clear = hasValue.clear;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult = intl.string(intl2.t.VkKicb);
           cResult[1] = stringResult;
           tmp9 = stringResult;

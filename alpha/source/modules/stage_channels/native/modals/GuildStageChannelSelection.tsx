@@ -1,20 +1,20 @@
 // Module ID: 9045
 // Function ID: 9046
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4913, 1392, 21, 4971, 8927, 5604, 1896, 5210, 8925, 2002, 1128, 5234, 2]
+// Dependencies: [19, 4914, 1389, 21, 4972, 8927, 5605, 1893, 5211, 8925, 1999, 1125, 5235, 2]
 // Exports: default
 
 // Module 9045 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl2 from "intl" /* 1125 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

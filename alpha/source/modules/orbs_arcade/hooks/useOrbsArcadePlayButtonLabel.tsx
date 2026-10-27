@@ -1,10 +1,10 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16458
+// Function ID: 16459
 // Name: useOrbsArcadePlayButtonLabel
-// Dependencies: [16395, 558, 576, 504, 1128, 2]
+// Dependencies: [16434, 558, 576, 504, 1125, 2]
 
-// Module 16419 (useOrbsArcadePlayButtonLabel)
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
+// Module 16458 (useOrbsArcadePlayButtonLabel)
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,9 +38,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsArc
     if (tmp11) {
       let tmp18;
       if (cResult[5] !== id.orbCost) {
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const obj2 = { count: id.orbCost };
-        const formatToPlainStringResult = intl3.formatToPlainString(tmp(1128).t.oSWYca, obj2);
+        const formatToPlainStringResult = intl3.formatToPlainString(tmp(1125).t.oSWYca, obj2);
         cResult[5] = id.orbCost;
         cResult[6] = formatToPlainStringResult;
         tmp18 = formatToPlainStringResult;
@@ -65,9 +65,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsArc
         if (null != stateFromStores) {
           let tmp15;
           if (cResult[10] !== stateFromStores) {
-            const intl2 = tmp(1128).intl;
+            const intl2 = tmp(1125).intl;
             const obj4 = { count: stateFromStores };
-            const formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1128).t.onJEzB, obj4);
+            const formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1125).t.onJEzB, obj4);
             cResult[10] = stateFromStores;
             cResult[11] = formatToPlainStringResult1;
             tmp15 = formatToPlainStringResult1;
@@ -90,8 +90,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsArc
       }
       const _Symbol = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(tmp(1128).t["7/xnly"]);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(tmp(1125).t["7/xnly"]);
         cResult[15] = stringResult;
         tmp12 = stringResult;
       } else {
@@ -155,21 +155,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsArc
   }, items1);
   const tmp5 = null != orbCost.orbCost && orbCost.orbCost > 0 && null != stateFromStores && stateFromStores <= 0;
   if (tmp5) {
-    const obj2 = { text: intl3.formatToPlainString(tmp(1128).t.oSWYca, obj3), isPaidPlay: tmp5 };
-    intl3 = tmp(1128).intl;
+    const obj2 = { text: intl3.formatToPlainString(tmp(1125).t.oSWYca, obj3), isPaidPlay: tmp5 };
+    intl3 = tmp(1125).intl;
     obj6 = obj2;
     obj3 = { count: orbCost.orbCost };
   } else {
     if (null != orbCost.orbCost && orbCost.orbCost > 0) {
       if (null != stateFromStores) {
-        const obj4 = { text: intl2.formatToPlainString(tmp(1128).t.onJEzB, obj5), isPaidPlay: tmp5 };
-        intl2 = tmp(1128).intl;
+        const obj4 = { text: intl2.formatToPlainString(tmp(1125).t.onJEzB, obj5), isPaidPlay: tmp5 };
+        intl2 = tmp(1125).intl;
         obj6 = obj4;
         obj5 = { count: stateFromStores };
       }
     }
-    obj6 = { text: intl.string(tmp(1128).t["7/xnly"]), isPaidPlay: tmp5 };
-    intl = tmp(1128).intl;
+    obj6 = { text: intl.string(tmp(1125).t["7/xnly"]), isPaidPlay: tmp5 };
+    intl = tmp(1125).intl;
   }
   return obj6;
 });

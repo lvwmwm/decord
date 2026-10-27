@@ -1,36 +1,34 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 18276
+// Function ID: 18277
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11184, 21, 4971, 587, 558, 576, 1633, 17441, 1499, 5153, 18243, 1385, 2]
+// Dependencies: [19, 17, 11187, 21, 4972, 587, 558, 576, 1630, 17482, 1496, 5154, 18277, 1382, 2]
 
-// Module 18242 (YouScreenContainer)
+// Module 18276 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useChatLayoutDefault from "useChatLayout" /* 5153 */;
-import MainTabsConstants from "MainTabsConstants" /* 11184 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17441 */;
-import YouScreenDefault from "YouScreen" /* 18243 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useChatLayoutDefault from "useChatLayout" /* 5154 */;
+import MainTabsConstants from "MainTabsConstants" /* 11187 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17482 */;
+import YouScreenDefault from "YouScreen" /* 18277 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
-let obj4;
 const View = react_native.View;
 const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, androidContainer: obj3, wrapper: obj4 };
-obj2 = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl };
+let obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center" }, androidContainer: obj2, wrapper: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
 createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
-obj4 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
+obj3 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
 let closure_6 = createStyles(obj);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenContainer(route) {
   let initialTab;
@@ -49,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       initialTab = params.initialTab;
     }
   }
-  const width = tmp5(1499)().width;
+  const width = tmp5(1496)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
     if (cResult[2] === top) {
       let tmp10;
@@ -91,7 +89,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp16Result = tmp16(View, obj4);
         } else {
           const obj7 = { initialTab };
-          tmp16Result = tmp16(tmp5(18243), obj7);
+          tmp16Result = tmp16(tmp5(18277), obj7);
         }
         cResult[8] = initialTab;
         cResult[9] = tmp4.wrapper;
@@ -141,7 +139,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       initialTab = params.initialTab;
     }
   }
-  const width = tmp2(1499)().width;
+  const width = tmp2(1496)().width;
   if (useChatLayoutDefault().isChatBesideChannelList) {
     const items = [tmp.container, ];
     let tmp9;
@@ -162,12 +160,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp6Result = tmp6(tmp8, obj4);
     } else {
       const obj7 = { initialTab };
-      tmp6Result = tmp6(tmp2(18243), obj7);
+      tmp6Result = tmp6(tmp2(18277), obj7);
     }
     tmp6Result2 = tmp6(tmp8, obj3);
   } else {
     const obj8 = { initialTab };
-    tmp6Result2 = tmp6(tmp2(18243), obj8);
+    tmp6Result2 = tmp6(tmp2(18277), obj8);
   }
   return tmp6Result2;
 }));

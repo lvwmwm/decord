@@ -1,12 +1,12 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7044
+// Function ID: 7045
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 6680, 6677, 1128, 1384, 7043, 7044, 1630, 2]
+// Dependencies: [5, 3, 6681, 6678, 1125, 1381, 7045, 7046, 1627, 2]
 
-// Module 7042 (NativeCeremonies)
+// Module 7044 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
-import intl2 from "intl" /* 1128 */;
-import react_nativeDefault from "react-native" /* 6680 */;
+import intl2 from "intl" /* 1125 */;
+import react_nativeDefault from "react-native" /* 6681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -219,7 +219,7 @@ obj = {
   },
   registerAndroidCredentialManagerPasskey(setError) {
     let setRegistering;
-    const registerPasskey = setRegistering(6680).registerPasskey;
+    const registerPasskey = setRegistering(6681).registerPasskey;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -250,7 +250,7 @@ obj = {
   },
   registerAndroidDevicePasskey(setError) {
     let setRegistering;
-    const register = setRegistering(6680).register;
+    const register = setRegistering(6681).register;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -282,9 +282,9 @@ obj = {
   registerPasskey(setError) {
     let cleanupPromise;
     let setRegistering;
-    obj = setError(1384);
+    obj = setError(1381);
     const isAndroidResult = obj.isAndroid();
-    const tmp2 = setRegistering(6680);
+    const tmp2 = setRegistering(6681);
     if (isAndroidResult) {
       const registerPasskey = tmp2.registerPasskey;
       setError = undefined;
@@ -347,7 +347,7 @@ obj = {
     let setRegistering;
     let register = fn;
     if (fn === undefined) {
-      register = setRegistering(6680).register;
+      register = setRegistering(6681).register;
     }
     setError = undefined;
     setError = setError.setError;
@@ -386,7 +386,7 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
     let isAndroidResult = obj.isAndroid();
     const tmp = require;
     if (isAndroidResult) {
-      const tmpResult = tmp(1630);
+      const tmpResult = tmp(1627);
       isAndroidResult = !tmpResult.isMetaQuest();
     }
     return isAndroidResult;

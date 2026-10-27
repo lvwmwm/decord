@@ -1,21 +1,21 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14452
+// Function ID: 14453
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4971, 558, 576, 7257, 1128, 13554, 5234, 7303, 2]
+// Dependencies: [19, 21, 4972, 558, 576, 7259, 1125, 13568, 5235, 7305, 2]
 
-// Module 14416 (UserProfileGameFriendsCard)
+// Module 14452 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7257 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13554 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7259 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13568 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 let tmp5;
-const UserProfileCardDefault = tmp5(7303);
+const UserProfileCardDefault = tmp5(7305);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileGameFriendsCard(style) {
@@ -49,16 +49,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     let tmp12 = null;
     if (0 !== found.length) {
       if (1 === found.length) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const obj2 = {
           applicationName() {
                   return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant: "text-md/normal", iconSize: 16 }, found[0].id);
                 }
         };
-        formatResult = intl2.format(tmp(1128).t.wQ6urw, obj2);
+        formatResult = intl2.format(tmp(1125).t.wQ6urw, obj2);
         tmp12 = forResult;
       } else if (2 === found.length) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const obj3 = {
           applicationName() {
                   return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant: "text-md/normal", iconSize: 16 }, found[0].id);
@@ -67,12 +67,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
                   return jsx(ApplicationIconAndNameDefault, { application: found[1], textVariant: "text-md/normal", iconSize: 16 }, found[1].id);
                 }
         };
-        formatResult = intl.format(tmp(1128).t.C98CSN, obj3);
+        formatResult = intl.format(tmp(1125).t.C98CSN, obj3);
         tmp12 = forResult;
       } else {
         importDefault = found[found.length - 1];
         dependencyMap = found.slice(0, -1);
-        const intl4 = tmp(1128).intl;
+        const intl4 = tmp(1125).intl;
         const obj4 = {
           applications() {
                   return closure_2.map((application) => {
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
                   return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-md/normal", iconSize: 16 });
                 }
         };
-        formatResult = intl4.format(tmp(1128).t.UxpwAh, obj4);
+        formatResult = intl4.format(tmp(1125).t.UxpwAh, obj4);
         tmp12 = forResult;
       }
     }
@@ -107,15 +107,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       }
       const _Symbol3 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1128).intl;
-        const stringResult = intl3.string(found(1128).t["Uv/eTx"]);
+        const intl3 = tmp(1125).intl;
+        const stringResult = intl3.string(found(1125).t["Uv/eTx"]);
         cResult[7] = stringResult;
         tmp14 = stringResult;
       } else {
         tmp14 = cResult[7];
       }
       if (cResult[8] !== tmp7) {
-        const tmp18 = jsx(found(5234).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+        const tmp18 = jsx(found(5235).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
         cResult[8] = tmp7;
         cResult[9] = tmp18;
         tmp16 = tmp18;
@@ -161,16 +161,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     let tmp6;
     importDefault = "text-md/normal";
     if (1 === found.length) {
-      const intl2 = found(1128).intl;
+      const intl2 = found(1125).intl;
       const obj2 = {
         applicationName() {
               return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant, iconSize: 16 }, found[0].id);
             }
       };
-      let formatResult = intl2.format(found(1128).t.wQ6urw, obj2);
+      let formatResult = intl2.format(found(1125).t.wQ6urw, obj2);
       tmp6 = found;
     } else if (2 === found.length) {
-      const intl = found(1128).intl;
+      const intl = found(1125).intl;
       let obj = {
         applicationName() {
               return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant, iconSize: 16 }, found[0].id);
@@ -179,12 +179,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
               return jsx(ApplicationIconAndNameDefault, { application: found[1], textVariant, iconSize: 16 }, found[1].id);
             }
       };
-      formatResult = intl.format(found(1128).t.C98CSN, obj);
+      formatResult = intl.format(found(1125).t.C98CSN, obj);
       tmp6 = found;
     } else {
       dependencyMap = found[found.length - 1];
       jsx = found.slice(0, -1);
-      const intl4 = found(1128).intl;
+      const intl4 = found(1125).intl;
       const obj3 = {
         applications() {
               return closure_3.map((application) => {
@@ -196,13 +196,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
               return jsx(ApplicationIconAndNameDefault, { application, textVariant, iconSize: 16 });
             }
       };
-      formatResult = intl4.format(found(1128).t.UxpwAh, obj3);
+      formatResult = intl4.format(found(1125).t.UxpwAh, obj3);
       tmp6 = found;
     }
     const items = [tmp.card, style];
     UserProfileCardDefault;
-    const intl3 = tmp6(1128).intl;
-    return <tmp2Result style={items} title={intl3.string(tmp6(1128).t["Uv/eTx"])}>{null}</tmp2Result>;
+    const intl3 = tmp6(1125).intl;
+    return <tmp2Result style={items} title={intl3.string(tmp6(1125).t["Uv/eTx"])}>{null}</tmp2Result>;
   }
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendsCard.tsx");

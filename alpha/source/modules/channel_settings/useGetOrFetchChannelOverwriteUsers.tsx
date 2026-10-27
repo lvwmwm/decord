@@ -1,23 +1,23 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18323
+// Function ID: 18324
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 4883, 1392, 2000, 558, 576, 504, 18290, 6830, 1388, 2]
+// Dependencies: [32, 19, 4884, 1389, 1997, 558, 576, 504, 18324, 6832, 1385, 2]
 
-// Module 18289 (useGetOrFetchChannelOverwriteUsers)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
-import createAggregatorDefault from "createAggregator" /* 18290 */;
+// Module 18323 (useGetOrFetchChannelOverwriteUsers)
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
+import createAggregatorDefault from "createAggregator" /* 18324 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import UserStore from "UserStore" /* 1392 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f135067 = (id) => id.id;
+const f135376 = (id) => id.id;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
     const _Object = Object;
     const values = Object.values(arg1);
     const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-    items5 = found.map(f135067);
+    items5 = found.map(f135376);
   }
   const tmp11Result = tmp11(items5, tmp10);
   cResult[4] = stateFromStoresArray;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       const _Object = Object;
       const values = Object.values(tmp2);
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-      items = found.map(f135067);
+      items = found.map(f135376);
     }
     return tmp(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);

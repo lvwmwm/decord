@@ -1,11 +1,11 @@
-// Module ID: 7090
-// Function ID: 7091
+// Module ID: 7092
+// Function ID: 7093
 // Name: useSettingNavigationRoute
-// Dependencies: [558, 1506, 2]
+// Dependencies: [558, 1503, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 7090 (useSettingNavigationRoute)
-import Link from "Link" /* 1506 */;
+// Module 7092 (useSettingNavigationRoute)
+import Link from "Link" /* 1503 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

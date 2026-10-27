@@ -1,13 +1,13 @@
 // Module ID: 9312
 // Function ID: 9313
 // Name: CirclePlayIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9313, 5668, 9314, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 9313, 5669, 9314, 2]
 
 // Module 9312 (CirclePlayIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage3 from "BaseIconImage" /* 5668 */;
+import BaseIconImage3 from "BaseIconImage" /* 5669 */;
 import AssetRegistry from "AssetRegistry" /* 9313 */;
 import AssetRegistry2 from "AssetRegistry" /* 9314 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CirclePlay
         }
       }
       const obj4 = { source: tmp17, color: INTERACTIVE_ICON_DEFAULT, style: tmp19 };
-      const BaseIconImage2 = tmp2(5668).BaseIconImage;
+      const BaseIconImage2 = tmp2(5669).BaseIconImage;
       const merged = Object.assign(tmp5);
       const tmp27 = metroRequire(BaseIconImage2, obj4);
       cResult[14] = INTERACTIVE_ICON_DEFAULT;
@@ -134,7 +134,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CirclePlay
     }
   }
   const obj5 = { source: tmp12, color: str, style: tmp6 };
-  const BaseIconImage = tmp2(5668).BaseIconImage;
+  const BaseIconImage = tmp2(5669).BaseIconImage;
   const merged1 = Object.assign(tmp5);
   const tmp16 = metroRequire(BaseIconImage, obj5);
   cResult[6] = tmp5;

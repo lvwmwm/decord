@@ -1,10 +1,10 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17864
+// Function ID: 17865
 // Name: ManageAccountsConstants
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 
-// Module 17823 (ManageAccountsConstants)
-import Constants from "Constants" /* 1087 */;
+// Module 17864 (ManageAccountsConstants)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const AuthStates = Constants.AuthStates;

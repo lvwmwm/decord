@@ -1,25 +1,25 @@
-// Module ID: 10796
-// Function ID: 10797
+// Module ID: 10799
+// Function ID: 10800
 // Name: conjurePublishConnection
-// Dependencies: [5, 2045, 6773, 10714, 584, 10797, 10801, 10802, 2002, 10799, 10786, 10719, 10805, 2]
+// Dependencies: [5, 2042, 6774, 10717, 584, 10800, 10804, 10805, 1999, 10802, 10789, 10722, 10808, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10796 (conjurePublishConnection)
+// Module 10799 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10786 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10799 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10722 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10789 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10802 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10714 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10717 */;
 import size from "module_2" /* 2 */;
 
 let paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(10797);
+const requestConjureDevicePermissionsDefault = tmp(10800);
 function rejectPendingPatchNotesDraft(projectId, arg1) {
   const value = map1.get(projectId);
   const obj = map1;

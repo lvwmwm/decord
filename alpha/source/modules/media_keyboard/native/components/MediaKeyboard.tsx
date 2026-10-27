@@ -1,34 +1,34 @@
-// Module ID: 12104
-// Function ID: 12105
+// Module ID: 12105
+// Function ID: 12106
 // Name: MediaKeyboard
-// Dependencies: [19, 7631, 8293, 1629, 1087, 1504, 11907, 21, 558, 576, 1267, 5052, 5161, 1631, 12105, 5252, 587, 8882, 12107, 12043, 10418, 8154, 5159, 8144, 1384, 8143, 10416, 12109, 1128, 8577, 8544, 10421, 10423, 8558, 10425, 12143, 12144, 10427, 10428, 12145, 2]
+// Dependencies: [19, 7632, 8291, 1626, 1084, 1501, 11908, 21, 558, 576, 1264, 5053, 5162, 1628, 12106, 5253, 587, 8882, 12108, 12044, 10420, 8152, 5160, 8142, 1381, 8141, 10418, 12110, 1125, 8577, 8544, 10423, 10425, 8558, 10427, 12144, 12145, 10429, 10430, 12146, 2]
 
-// Module 12104 (MediaKeyboard)
-import intl6 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import ChatInputUtils from "ChatInputUtils" /* 5159 */;
-import DraftStore from "DraftStore" /* 7631 */;
-import Upload from "Upload" /* 8144 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8154 */;
+// Module 12105 (MediaKeyboard)
+import intl6 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import ChatInputUtils from "ChatInputUtils" /* 5160 */;
+import DraftStore from "DraftStore" /* 7632 */;
+import Upload from "Upload" /* 8142 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8152 */;
 import ThreadIcon from "ThreadIcon" /* 8544 */;
 import ImageIcon from "ImageIcon" /* 8558 */;
 import AppsIcon from "AppsIcon" /* 8577 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10418 */;
-import PollsIcon from "PollsIcon" /* 10421 */;
-import AttachmentIcon from "AttachmentIcon" /* 10423 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10425 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10427 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11907 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12109 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 12143 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 12144 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10420 */;
+import PollsIcon from "PollsIcon" /* 10423 */;
+import AttachmentIcon from "AttachmentIcon" /* 10425 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10427 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10429 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11908 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12110 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 12144 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 12145 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
-import Constants from "Constants" /* 1087 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                   }
                                 }
                                 const tmp19Result2 = MediaKeyboardUtils;
-                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(8144).UploadOrigin.IMAGE_PICKER);
+                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(8142).UploadOrigin.IMAGE_PICKER);
                               }
                             }
                             cResult[29] = chatInputRef;

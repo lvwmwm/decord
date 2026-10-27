@@ -1,14 +1,14 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 13097
+// Function ID: 13098
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4971, 558, 576, 1413, 1202, 587, 13084, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 1410, 1199, 587, 13098, 2]
 
-// Module 13083 (CustomTypingIndicatorGlyph)
+// Module 13097 (CustomTypingIndicatorGlyph)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 13084 */;
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 13098 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   size = config.size;
   const tmp4 = closure_5();
   if (cResult[0] !== config) {
-    const tmpResult = config(1413);
+    const tmpResult = config(1410);
     const effectiveCustomTypingIndicatorAnimation = tmpResult.getEffectiveCustomTypingIndicatorAnimation(config);
     cResult[0] = config;
     cResult[1] = effectiveCustomTypingIndicatorAnimation;
@@ -35,13 +35,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult3 = config(1413);
+  const tmpResult3 = config(1410);
   if (tmpResult3.hasCustomTypingIndicatorEmojis(config.emojis)) {
     let tmp11;
     let PX_4;
     let tmp15;
     if (cResult[3] !== config.emojis) {
-      const tmpResult4 = config(1413);
+      const tmpResult4 = config(1410);
       const customTypingIndicatorEmojisKey = tmpResult4.getCustomTypingIndicatorEmojisKey(config.emojis);
       cResult[3] = config.emojis;
       cResult[4] = customTypingIndicatorEmojisKey;
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp10 = jsx(config(1202).Ellipsis, {});
+      const tmp10 = jsx(config(1199).Ellipsis, {});
       cResult[2] = tmp10;
       tmp8 = tmp10;
     } else {
@@ -142,12 +142,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   size = config.size;
   let emojisKey;
   const tmp = closure_5();
-  const obj = config(1413);
+  const obj = config(1410);
   dependencyMap = obj.getEffectiveCustomTypingIndicatorAnimation(config);
-  const obj2 = config(1413);
+  const obj2 = config(1410);
   if (obj2.hasCustomTypingIndicatorEmojis(config.emojis)) {
     let PX_4;
-    const tmp2Result = config(1413);
+    const tmp2Result = config(1410);
     emojisKey = tmp2Result.getCustomTypingIndicatorEmojisKey(config.emojis);
     const items = [tmp.emojiRow, ];
     const tmp5 = jsx;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     emojis = config.emojis;
     return tmp5(tmp6, obj3);
   } else {
-    return jsx(config(1202).Ellipsis, {});
+    return jsx(config(1199).Ellipsis, {});
   }
 });
 let size = size_mod;

@@ -1,15 +1,15 @@
-// Module ID: 7447
-// Function ID: 7448
+// Module ID: 7448
+// Function ID: 7449
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 4845, 6006, 558, 576, 573, 2]
+// Dependencies: [19, 4846, 6007, 558, 576, 573, 2]
 // Exports: getGuildIdsToFetchSoundsFor
 
-// Module 7447 (useGuildIdsToFetchSoundsFor)
+// Module 7448 (useGuildIdsToFetchSoundsFor)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import SoundboardStore from "SoundboardStore" /* 6006 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import SoundboardStore from "SoundboardStore" /* 6007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

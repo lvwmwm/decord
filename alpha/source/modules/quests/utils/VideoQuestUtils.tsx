@@ -1,24 +1,24 @@
-// Module ID: 14128
-// Function ID: 14129
+// Module ID: 14142
+// Function ID: 14143
 // Name: VideoQuestUtils
-// Dependencies: [5890, 7776, 7778, 1087, 7782, 9571, 7798, 1128, 7792, 5150, 2, 14129]
+// Dependencies: [5891, 7777, 7779, 1084, 7783, 9573, 7799, 1125, 7793, 5151, 2, 14143]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
-// Module 14128 (VideoQuestUtils)
-import Constants from "Constants" /* 1087 */;
-import intl6 from "intl" /* 1128 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7782 */;
-import AnalyticsActions from "AnalyticsActions" /* 7792 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14129 */;
-import NetworkStore from "NetworkStore" /* 5890 */;
-import QuestStore from "QuestStore" /* 7776 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7778 */;
+// Module 14142 (VideoQuestUtils)
+import Constants from "Constants" /* 1084 */;
+import intl6 from "intl" /* 1125 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7783 */;
+import AnalyticsActions from "AnalyticsActions" /* 7793 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7799 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14143 */;
+import NetworkStore from "NetworkStore" /* 5891 */;
+import QuestStore from "QuestStore" /* 7777 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7779 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5150);
-const QuestActionCreators = tmp(9571);
+const NavigationRouteUtils = tmp(5151);
+const QuestActionCreators = tmp(9573);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -69,7 +69,7 @@ export const getVideoQuestProgressRemainingAccessibilityLabel = function getVide
   let seconds;
   const tmp3 = arg1;
   if (tmp3) {
-    const intl5 = tmp(1128).intl;
+    const intl5 = tmp(1125).intl;
     return intl5.string(intl6.t["ij5E/5"]);
   } else {
     let formatToPlainStringResult;
@@ -78,22 +78,22 @@ export const getVideoQuestProgressRemainingAccessibilityLabel = function getVide
     ({ minutes, seconds } = remainingTaskTime);
     if (minutes > 0) {
       if (seconds > 0) {
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const time = { minutes, seconds };
-        formatToPlainStringResult = intl3.formatToPlainString(tmp(1128).t["lW/66D"], time);
+        formatToPlainStringResult = intl3.formatToPlainString(tmp(1125).t["lW/66D"], time);
       }
-      const intl4 = tmp(1128).intl;
+      const intl4 = tmp(1125).intl;
       const obj = { remainingTime: formatToPlainStringResult };
       return intl4.formatToPlainString(intl6.t.nzYZrt, obj);
     }
     if (minutes > 0) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj2 = { count: minutes };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t["SxnF/O"], obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t["SxnF/O"], obj2);
     } else {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj3 = { count: seconds };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["0BZpdi"], obj3);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t["0BZpdi"], obj3);
     }
   }
 };
@@ -175,7 +175,7 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp6Result = tmp6(9571);
+        const tmp6Result = tmp6(9573);
         tmp6Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }

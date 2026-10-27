@@ -1,7 +1,7 @@
 // Module ID: 9100
 // Function ID: 9101
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 4845, 1392, 1087, 21, 4971, 587, 6883, 558, 576, 504, 1128, 584, 5662, 7248, 9101, 5234, 7298, 2]
+// Dependencies: [19, 17, 4846, 1389, 1084, 21, 4972, 587, 6885, 558, 576, 504, 1125, 584, 5663, 7250, 9101, 5235, 7300, 2]
 
 // Module 9100 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -9,18 +9,18 @@ import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import GuildIcon from "GuildIcon" /* 6883 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7248 */;
-import ActionSheet2 from "ActionSheet" /* 7298 */;
+import intl5 from "intl" /* 1125 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import GuildIcon from "GuildIcon" /* 6885 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7250 */;
+import ActionSheet2 from "ActionSheet" /* 7300 */;
 import components_native_QRCodeDefault from "components_native/QRCode" /* 9101 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,9 +78,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDes
       const guild = GuildStore.getGuild(channel.guild_id);
       if (null != guild) {
         const obj2 = { visible: intl3.format(intl5.t.VK3zyF, obj3), plainText: intl4.formatToPlainString(intl5.t.VK3zyF, obj4) };
-        intl3 = tmp(1128).intl;
+        intl3 = tmp(1125).intl;
         obj3 = { name: guild.name };
-        intl4 = tmp(1128).intl;
+        intl4 = tmp(1125).intl;
         forResult = obj2;
         obj4 = { name: guild.name };
       }
@@ -102,7 +102,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDes
       let tmp13;
       let tmp15;
       if (cResult[4] !== stateFromStores.username) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const obj5 = { name: stateFromStores.username };
         const formatResult = intl.format(intl5.t.zDGAfl, obj5);
         cResult[4] = stateFromStores.username;
@@ -112,7 +112,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDes
         tmp13 = cResult[5];
       }
       if (cResult[6] !== stateFromStores.username) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const obj6 = { name: stateFromStores.username };
         const formatToPlainStringResult = intl2.formatToPlainString(intl5.t.zDGAfl, obj6);
         cResult[6] = stateFromStores.username;
@@ -154,9 +154,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDes
     const guild = GuildStore.getGuild(channel.guild_id);
     if (null != guild) {
       const obj2 = { visible: intl3.format(intl5.t.VK3zyF, obj3), plainText: intl4.formatToPlainString(intl5.t.VK3zyF, obj4) };
-      intl3 = tmp(1128).intl;
+      intl3 = tmp(1125).intl;
       obj3 = { name: guild.name };
-      intl4 = tmp(1128).intl;
+      intl4 = tmp(1125).intl;
       return obj2;
     }
   }
@@ -165,9 +165,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDes
     tmp6 = null;
     if (null != stateFromStores) {
       const obj5 = { visible: intl.format(intl5.t.zDGAfl, obj6), plainText: intl2.formatToPlainString(intl5.t.zDGAfl, obj7) };
-      intl = tmp(1128).intl;
+      intl = tmp(1125).intl;
       obj6 = { name: stateFromStores.username };
-      intl2 = tmp(1128).intl;
+      intl2 = tmp(1125).intl;
       tmp6 = obj5;
       obj7 = { name: stateFromStores.username };
     }
@@ -241,11 +241,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   if (cResult[0] !== link) {
     let stringResult;
     if (link.location === metroImportDefault.ADD_FRIENDS_MODAL) {
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.VUNqoc);
+      const intl2 = tmp(1125).intl;
+      stringResult = intl2.string(tmp(1125).t.VUNqoc);
     } else {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t.DqE26p);
+      const intl = tmp(1125).intl;
+      stringResult = intl.string(tmp(1125).t.DqE26p);
     }
     cResult[0] = link;
     cResult[1] = stringResult;
@@ -308,7 +308,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
               let tmp31 = null != tmp8;
               if (tmp31) {
                 const obj5 = { variant: "text-md/normal", children: tmp8.visible };
-                tmp31 = React4(tmp(5234).Text, obj5);
+                tmp31 = React4(tmp(5235).Text, obj5);
               }
               cResult[17] = tmp8;
               cResult[18] = tmp31;
@@ -400,14 +400,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     tmp9 = null;
     const obj = GuildStore;
     if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6883).GuildIconSizes.LARGE };
+      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6885).GuildIconSizes.LARGE };
       const tmp12 = GuildIconDefault;
       tmp9 = React4(tmp12, obj2);
     }
   }
-  closure_13(tmp5(5662).presentFriendRequestAcceptedToast);
-  const obj3 = { header: React4(tmp5(7248).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
-  const ActionSheet = tmp5(7298).ActionSheet;
+  closure_13(tmp5(5663).presentFriendRequestAcceptedToast);
+  const obj3 = { header: React4(tmp5(7250).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
+  const ActionSheet = tmp5(7300).ActionSheet;
   const obj5 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
   plainText = undefined;
   obj4 = { style: tmp.container, children: items1 };
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
   let tmp14Result2 = null != tmp8;
   if (tmp14Result2) {
     const obj8 = { variant: "text-md/normal", children: tmp8.visible };
-    tmp14Result2 = tmp14(tmp5(5234).Text, obj8);
+    tmp14Result2 = tmp14(tmp5(5235).Text, obj8);
   }
   items1[1] = tmp14Result2;
   return React4(ActionSheet, obj3);

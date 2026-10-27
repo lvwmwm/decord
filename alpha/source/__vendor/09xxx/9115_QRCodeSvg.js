@@ -1,10 +1,10 @@
 // Module ID: 9115
 // Function ID: 9116
 // Name: QRCodeSvg
-// Dependencies: [9112, 19, 7962]
+// Dependencies: [9112, 19, 7960]
 
 // Module 9115 (QRCodeSvg)
-import inlineStyles from "inlineStyles" /* 7962 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
 import module_9112 from "module_9112" /* 9112 */;
 import react_mod from "react" /* 19 */;
 

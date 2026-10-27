@@ -1,26 +1,26 @@
-// Module ID: 13685
-// Function ID: 13686
+// Module ID: 13699
+// Function ID: 13700
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13663, 1087, 21, 4971, 587, 1505, 5593, 13677, 6374, 13672, 1202, 1128, 5234, 7007, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 13677, 1084, 21, 4972, 587, 1502, 5594, 13691, 6375, 13686, 1199, 1125, 5235, 7009, 5245, 2]
 // Exports: default
 
-// Module 13685 (HubEmailConnectionSubmitSchool)
+// Module 13699 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl6 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import useNavigation from "useNavigation" /* 1505 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7007 */;
-import HubConstants from "HubConstants" /* 13663 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13672 */;
+import Constants from "Constants" /* 1084 */;
+import intl6 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7009 */;
+import HubConstants from "HubConstants" /* 13677 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13686 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, dependencyMap;
@@ -233,8 +233,8 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5244).Button;
-  intl5 = tmp2(1128).intl;
+  Button = tmp2(5245).Button;
+  intl5 = tmp2(1125).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);
 };

@@ -1,28 +1,28 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9933
+// Function ID: 9934
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 5714, 1394, 1087, 7544, 21, 5030, 2053, 1128, 4971, 587, 558, 576, 9683, 9672, 9932, 1267, 9680, 9916, 1202, 9933, 9934, 5234, 9425, 5258, 1107, 5247, 5248, 7253, 9935, 8759, 5052, 9846, 2]
+// Dependencies: [109, 19, 17, 5715, 1391, 1084, 7545, 21, 5031, 2050, 1125, 4972, 587, 558, 576, 9685, 9674, 9934, 1264, 9682, 9918, 1199, 9935, 9936, 5235, 9424, 5259, 1104, 5248, 5249, 7255, 9937, 8759, 5053, 9848, 2]
 
-// Module 9931 (PremiumFeatureUpsell)
+// Module 9933 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import intl7 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5030 */;
-import spring from "spring" /* 5247 */;
-import springPresets from "springPresets" /* 5248 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import ColorConstants from "ColorConstants" /* 7544 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9680 */;
+import Constants from "Constants" /* 1084 */;
+import ConstantsIOS from "ConstantsIOS" /* 1104 */;
+import intl7 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumUtils from "PremiumUtils" /* 2050 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5031 */;
+import spring from "spring" /* 5248 */;
+import springPresets from "springPresets" /* 5249 */;
+import LinearGradientDefault from "LinearGradient" /* 5259 */;
+import ColorConstants from "ColorConstants" /* 7545 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9682 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,30 +41,30 @@ function getPremiumUpsellLabel(TIER_0, featureName, fn) {
   const obj = PremiumUtils;
   const premiumTypeDisplayName = obj.getPremiumTypeDisplayName(TIER_0);
   if (EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
-    const intl6 = tmp(1128).intl;
+    const intl6 = tmp(1125).intl;
     const obj2 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl6.format(intl7.t["tw/SSq"], obj2);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
-    const intl5 = tmp(1128).intl;
+    const intl5 = tmp(1125).intl;
     const obj3 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl5.format(intl7.t.gMVjeS, obj3);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE === featureName) {
-    const intl4 = tmp(1128).intl;
+    const intl4 = tmp(1125).intl;
     const obj4 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl4.format(intl7.t.eontIh, obj4);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const format = intl3.format;
     const obj5 = { maxFileSize: tmpResult.getMaxFileSizeForPremiumType(TIER_0), nitroTierName: premiumTypeDisplayName, onClick: fn };
-    const zzyLEK = tmp(1128).t.zzyLEK;
+    const zzyLEK = tmp(1125).t.zzyLEK;
     tmpResult = PremiumUtils;
     return format(zzyLEK, obj5);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj6 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl2.format(intl7.t.lyxfbj, obj6);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.APP_ICONS === featureName) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj7 = { onClick: fn };
     return intl.format(intl7.t.x2dQxN, obj7);
   }
@@ -298,13 +298,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(9425).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9424).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
                           const items1 = [closure_3.nitroWheelButton, ];
                           let nitroWheelDisabled = loading;
-                          const NitroWheel = tmp2(1202).NitroWheel;
+                          const NitroWheel = tmp2(1199).NitroWheel;
                           if (loading) {
                             nitroWheelDisabled = closure_3.nitroWheelDisabled;
                           }
@@ -473,13 +473,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       let tmpResult;
       if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9425).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9424).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
         const items1 = [closure_3.nitroWheelButton, ];
         let nitroWheelDisabled = loading;
-        const NitroWheel = tmp2(1202).NitroWheel;
+        const NitroWheel = tmp2(1199).NitroWheel;
         if (loading) {
           nitroWheelDisabled = closure_3.nitroWheelDisabled;
         }

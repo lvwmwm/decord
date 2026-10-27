@@ -1,14 +1,14 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19102
+// Function ID: 19103
 // Name: EmptyServerSettingsAuditLog
-// Dependencies: [19, 21, 8724, 19065, 19066, 19067, 558, 576, 4978, 5669, 2]
+// Dependencies: [19, 21, 8724, 19103, 19104, 19105, 558, 576, 4979, 5670, 2]
 // Exports: getEmptyServerSettingsAuditLogSource
 
-// Module 19064 (EmptyServerSettingsAuditLog)
+// Module 19102 (EmptyServerSettingsAuditLog)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4978 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import shared from "shared" /* 4979 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import _mod8724 from "module_8724" /* 8724 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

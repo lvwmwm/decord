@@ -1,19 +1,19 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16059
+// Function ID: 16060
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8332, 7883, 6657, 558, 576, 6654, 1128, 5644, 15974, 11209, 2]
+// Dependencies: [8331, 7884, 6658, 558, 576, 6655, 1125, 5645, 16012, 11212, 2]
 
-// Module 16021 (AccountAgeGroupNonAdultSetting)
+// Module 16059 (AccountAgeGroupNonAdultSetting)
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5644 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6654 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6657 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7883 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15974 */;
+import intl3 from "intl" /* 1125 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5645 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6655 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6658 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7884 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16012 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
   const obj2 = AgeVerificationUtils;
   const isAgeVerified = obj2.useIsAgeVerified();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.lKDPGA);
     cResult[0] = stringResult;
     first = stringResult;
@@ -35,8 +35,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
   }
   if (cResult[1] !== isAgeVerified) {
     if (isAgeVerified) {
-      const intl2 = tmp(1128).intl;
-      first = intl2.string(tmp(1128).t.sK0dmH);
+      const intl2 = tmp(1125).intl;
+      first = intl2.string(tmp(1125).t.sK0dmH);
     }
     cResult[1] = isAgeVerified;
     cResult[2] = first;
@@ -51,8 +51,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccount
   const intl = intl3.intl;
   let stringResult = intl.string(intl3.t.lKDPGA);
   if (isAgeVerified) {
-    const intl2 = tmp(1128).intl;
-    stringResult = intl2.string(tmp(1128).t.sK0dmH);
+    const intl2 = tmp(1125).intl;
+    stringResult = intl2.string(tmp(1125).t.sK0dmH);
   }
   return stringResult;
 });

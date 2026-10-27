@@ -1,20 +1,20 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10836
+// Function ID: 10837
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1392, 21, 4971, 587, 558, 576, 5989, 5025, 9133, 1202, 504, 8951, 6903, 2]
+// Dependencies: [19, 17, 1389, 21, 4972, 587, 558, 576, 5990, 5026, 9133, 1199, 504, 8951, 6905, 2]
 
-// Module 10833 (DetailedGuildIdentityUserRow)
+// Module 10836 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
+import native from "native" /* 1199 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
 import DiscordTagDefault from "DiscordTag" /* 9133 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp6;
-const UserUtilsDefault = tmp6(5025);
+const UserUtilsDefault = tmp6(5026);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const tmp18 = View;
           if (tmp8) {
             const obj6 = { size: native.AvatarSizes.SIZE_16, style: tmp4.primaryAvatar, user, guildId: "a" };
-            const Avatar = tmp(1202).Avatar;
+            const Avatar = tmp(1199).Avatar;
             tmp19 = hasOwnProperty(Avatar, obj6);
           }
           items1 = [tmp19, ];
@@ -286,8 +286,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
       }
       let tmp20 = leading;
       if (leading == null) {
-        const obj4 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1202).AvatarSizes.SMALL };
-        const Avatar2 = tmp(1202).Avatar;
+        const obj4 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1199).AvatarSizes.SMALL };
+        const Avatar2 = tmp(1199).Avatar;
         tmp20 = closure_5(Avatar2, obj4);
       }
       cResult[3] = guildId;
@@ -334,7 +334,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                 }
               }
               const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp9, label: tmp12, onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp18 = closure_5(userId(6903).TableRow, obj5);
+              const tmp18 = closure_5(userId(6905).TableRow, obj5);
               cResult[29] = accessibilityLabel;
               cResult[30] = accessibilityRole;
               cResult[31] = accessibilityState;
@@ -362,8 +362,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
       }
       let tmp10 = leading;
       if (leading == null) {
-        const obj7 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1202).AvatarSizes.SMALL };
-        const Avatar = tmp(1202).Avatar;
+        const obj7 = { source: stateFromStores.getAvatarSource(guildId), size: userId(1199).AvatarSizes.SMALL };
+        const Avatar = tmp(1199).Avatar;
         tmp10 = closure_5(Avatar, obj7);
       }
       cResult[21] = guildId;
@@ -410,7 +410,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
       const FormRow = tmp(8951).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
-        const Avatar2 = tmp(1202).Avatar;
+        const Avatar2 = tmp(1199).Avatar;
         leading = tmp4(Avatar2, obj3);
       }
       obj4 = { contentHeight, user: stateFromStores, guildId };
@@ -418,10 +418,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     } else {
       const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
       tmp4Result2 = leading;
-      const TableRow = tmp(6903).TableRow;
+      const TableRow = tmp(6905).TableRow;
       if (leading == null) {
         const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
-        const Avatar = tmp(1202).Avatar;
+        const Avatar = tmp(1199).Avatar;
         tmp4Result2 = tmp4(Avatar, obj6);
       }
       obj7 = { contentHeight, user: stateFromStores, guildId };

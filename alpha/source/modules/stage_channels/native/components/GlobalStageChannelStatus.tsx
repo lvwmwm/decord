@@ -1,26 +1,26 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11578
+// Function ID: 11579
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5211, 4828, 1087, 21, 1128, 4971, 587, 558, 576, 5604, 504, 10753, 5263, 8106, 11566, 6687, 7883, 6657, 7873, 7869, 1202, 5234, 5245, 5244, 11568, 11390, 5205, 4993, 10890, 8502, 2]
+// Dependencies: [5, 32, 19, 17, 5212, 4829, 1084, 21, 1125, 4972, 587, 558, 576, 5605, 504, 10756, 5264, 8104, 11568, 6688, 7884, 6658, 7874, 7870, 1199, 5235, 5246, 5245, 11570, 11393, 5206, 4994, 10893, 8502, 2]
 
-// Module 11576 (GlobalStageChannelStatus)
+// Module 11578 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl8 from "intl" /* 1128 */;
-import useChannelNameDefault from "useChannelName" /* 5604 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7873 */;
-import PushNotificationDefault from "PushNotification" /* 10753 */;
-import StatusBarDefault from "StatusBar" /* 10890 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11390 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11568 */;
+import Constants from "Constants" /* 1084 */;
+import intl8 from "intl" /* 1125 */;
+import useChannelNameDefault from "useChannelName" /* 5605 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7874 */;
+import PushNotificationDefault from "PushNotification" /* 10756 */;
+import StatusBarDefault from "StatusBar" /* 10893 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11393 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11570 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5211 */;
-import StageInstanceStore from "StageInstanceStore" /* 4828 */;
+import ActionSheetStore from "ActionSheetStore" /* 5212 */;
+import StageInstanceStore from "StageInstanceStore" /* 4829 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj8;
 let obj9;
 let tmp5;
 let unpackModuleId;
-const useMountEffectDefault = tmp5(5263);
+const useMountEffectDefault = tmp5(5264);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -77,8 +77,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   const tmp4 = closure_12();
   let stringResult = useChannelNameDefault(channel);
   if (stringResult == null) {
-    let intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t["/YzI63"]);
+    let intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t["/YzI63"]);
   }
   importDefault = stringResult;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -134,8 +134,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     useMountEffectDefault(fn);
     [r10071, dependencyMap] = _slicedToArray(react.useState(false), 2);
     const tmp17 = _slicedToArray(react.useState(false), 2);
-    const useStageBlockedUsersCount = tmp(8106).useStageBlockedUsersCount;
-    tmp(8106);
+    const useStageBlockedUsersCount = tmp(8104).useStageBlockedUsersCount;
+    tmp(8104);
     if (channel != null) {
       class S {
         constructor() {
@@ -145,8 +145,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(tmp19);
     let tmp22;
-    const useStageIgnoredUsersCount = tmp(8106).useStageIgnoredUsersCount;
-    tmp(8106);
+    const useStageIgnoredUsersCount = tmp(8104).useStageIgnoredUsersCount;
+    tmp(8104);
     if (channel != null) {
       class S {
         constructor() {
@@ -156,8 +156,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(tmp22);
     let tmp25;
-    const useGetStageRTCPanelHeight = tmp(11566).useGetStageRTCPanelHeight;
-    tmp(11566);
+    const useGetStageRTCPanelHeight = tmp(11568).useGetStageRTCPanelHeight;
+    tmp(11568);
     if (channel != null) {
       class S {
         constructor() {
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
               return StageInstanceStore.getStageInstanceByChannel(channel.id);
             }
           }
-          const stringResult1 = obj3.string(tmp(1128).t.Ul1RJQ);
+          const stringResult1 = obj3.string(tmp(1125).t.Ul1RJQ);
           cResult[16] = stringResult1;
           tmp32 = stringResult1;
         } else {
@@ -324,7 +324,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
             }
           }
           let obj2 = { style: invitedHeaderText, accessibilityRole: "header", children: tmp32 };
-          const tmp35 = closure_10(tmp(1202).LegacyText, obj2);
+          const tmp35 = closure_10(tmp(1199).LegacyText, obj2);
           cResult[17] = tmp4.invitedHeaderText;
           cResult[18] = tmp35;
         } else {
@@ -373,7 +373,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
                 }
               }
               const obj6 = { number: stageIgnoredUsersCount };
-              formatResult = obj9.format(tmp(1128).t["0bU4FO"], obj6);
+              formatResult = obj9.format(tmp(1125).t["0bU4FO"], obj6);
             } else {
               class S {
                 constructor() {
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
                 }
               }
               let obj8 = { number: stageBlockedUsersCount };
-              formatResult = obj7.format(tmp(1128).t.sFzx0G, obj8);
+              formatResult = obj7.format(tmp(1125).t.sFzx0G, obj8);
             }
           } else {
             class S {
@@ -541,8 +541,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   const tmp3 = dependencyMap;
   let stringResult = useChannelNameDefault(channel);
   if (stringResult == null) {
-    let intl = channel(1128).intl;
-    stringResult = intl.string(channel(1128).t["/YzI63"]);
+    let intl = channel(1125).intl;
+    stringResult = intl.string(channel(1125).t["/YzI63"]);
   }
   importDefault = stringResult;
   obj = channel(504);
@@ -567,20 +567,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   [tmp10, c3] = _slicedToArray(react.useState(false), 2);
   const tmp9 = _slicedToArray(react.useState(false), 2);
   let id1;
-  const useStageBlockedUsersCount = channel(8106).useStageBlockedUsersCount;
-  const tmp11 = channel(8106);
+  const useStageBlockedUsersCount = channel(8104).useStageBlockedUsersCount;
+  const tmp11 = channel(8104);
   if (channel != null) {
     id1 = channel.id;
   }
   const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
   let id2;
-  const useStageIgnoredUsersCount = tmp6(8106).useStageIgnoredUsersCount;
-  channel(8106);
+  const useStageIgnoredUsersCount = tmp6(8104).useStageIgnoredUsersCount;
+  channel(8104);
   if (channel != null) {
     id2 = channel.id;
   }
   const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-  channel(11566);
+  channel(11568);
   if (channel != null) {
     let id = channel.id;
   }
@@ -593,31 +593,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
     items2[1] = obj3;
     let tmp22 = closure_10;
     let obj4 = { style: tmp.row, children: closure_10(LegacyText, obj5) };
-    obj5 = { style: tmp.invitedHeaderText, accessibilityRole: "header", children: intl2.string(tmp6(1128).t.Ul1RJQ) };
-    LegacyText = tmp6(1202).LegacyText;
-    intl2 = tmp6(1128).intl;
+    obj5 = { style: tmp.invitedHeaderText, accessibilityRole: "header", children: intl2.string(tmp6(1125).t.Ul1RJQ) };
+    LegacyText = tmp6(1199).LegacyText;
+    intl2 = tmp6(1125).intl;
     items3 = [closure_10(View, obj4), , ];
     if (stageBlockedUsersCount > 0) {
       let formatResult;
       const obj6 = { style: tmp.row, children: null };
       if (stageBlockedUsersCount > 0) {
         if (stageIgnoredUsersCount > 0) {
-          const intl5 = tmp6(1128).intl;
+          const intl5 = tmp6(1125).intl;
           let obj7 = { number: stageBlockedUsersCount + stageIgnoredUsersCount };
-          formatResult = intl5.format(tmp6(1128).t["cXaoI+"], obj7);
+          formatResult = intl5.format(tmp6(1125).t["cXaoI+"], obj7);
         }
         let obj8 = { variant: "text-xs/medium", color: "text-overlay-light", children: formatResult };
         obj6.children = tmp22(tmp24, obj8);
         tmp22Result = tmp22(tmp21, obj6);
       }
       if (stageIgnoredUsersCount > 0) {
-        const intl4 = tmp6(1128).intl;
+        const intl4 = tmp6(1125).intl;
         const obj9 = { number: stageIgnoredUsersCount };
-        formatResult = intl4.format(tmp6(1128).t["0bU4FO"], obj9);
+        formatResult = intl4.format(tmp6(1125).t["0bU4FO"], obj9);
       } else {
-        const intl3 = tmp6(1128).intl;
+        const intl3 = tmp6(1125).intl;
         const obj10 = { number: stageBlockedUsersCount };
-        formatResult = intl3.format(tmp6(1128).t.sFzx0G, obj10);
+        formatResult = intl3.format(tmp6(1125).t.sFzx0G, obj10);
       }
     } else {
       tmp22Result = null;
@@ -635,11 +635,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
         },
       pillStyle: tmp.declineButtonPill,
       size: "sm",
-      text: intl6.string(channel(1128).t["1YDv7a"]),
+      text: intl6.string(channel(1125).t["1YDv7a"]),
       grow: true
     };
-    BaseTextButton = tmp6(5245).BaseTextButton;
-    intl6 = tmp6(1128).intl;
+    BaseTextButton = tmp6(5246).BaseTextButton;
+    intl6 = tmp6(1125).intl;
     items4 = [tmp22(tmp21, obj12), ];
     const obj14 = { style: tmp.buttonWrapper, children: tmp22(Button, obj15) };
     obj15 = {
@@ -648,13 +648,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
           return obj(...arguments);
         },
       size: "sm",
-      text: intl7.string(channel(1128).t.MpO0px),
+      text: intl7.string(channel(1125).t.MpO0px),
       loading: tmp10,
       disabled: tmp10,
       grow: true
     };
-    Button = tmp6(5244).Button;
-    intl7 = tmp6(1128).intl;
+    Button = tmp6(5245).Button;
+    intl7 = tmp6(1125).intl;
     items4[1] = tmp22(View, obj14);
     items3[2] = closure_11(View, obj11);
     tmp20Result = tmp20(tmp21, obj2);
@@ -684,8 +684,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
   }
   let stringResult = useChannelNameDefault(channel);
   if (stringResult == null) {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t["/YzI63"]);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t["/YzI63"]);
   }
   const tmp8 = useIsInvitedToSpeakDefault();
   const tmp9 = useCanSpeakInChannelDefault(id);
@@ -721,7 +721,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     let str;
     if (!tmp8) {
       str = "dark-content";
-      id(4993);
+      id(4994);
     }
     if (null != channel) {
       if (null != guild) {
@@ -813,7 +813,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
                               }
                               const obj5 = { numberOfLines: 1, children: items3 };
                               items3 = [tmp26, tmp30];
-                              const tmp35 = closure_11(id(1202).LegacyText, obj5);
+                              const tmp35 = closure_11(id(1199).LegacyText, obj5);
                               cResult[26] = tmp30;
                               cResult[27] = tmp26;
                               cResult[28] = tmp35;
@@ -826,7 +826,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
                       if (tmp32Result) {
                         const items4 = [tmp4.channel, ];
                         let invitedHeaderText2 = tmp9;
-                        const LegacyText2 = tmp(1202).LegacyText;
+                        const LegacyText2 = tmp(1199).LegacyText;
                         const tmp32 = closure_10;
                         if (tmp9) {
                           invitedHeaderText2 = tmp4.invitedHeaderText;
@@ -850,7 +850,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
               if (tmp28Result) {
                 const items5 = [tmp4.topic, ];
                 let invitedHeaderText = tmp9;
-                const LegacyText = tmp(1202).LegacyText;
+                const LegacyText = tmp(1199).LegacyText;
                 const tmp28 = closure_11;
                 if (tmp9) {
                   invitedHeaderText = tmp4.invitedHeaderText;
@@ -872,8 +872,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
               cResult[19] = tmp28Result;
               tmp26 = tmp28Result;
             }
-            const obj8 = { style: activeSpeakerIcon, size: id(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmp20 };
-            const Icon = tmp(1202).Icon;
+            const obj8 = { style: activeSpeakerIcon, size: id(1199).Icon.Sizes.REFRESH_SMALL_16, source: tmp20 };
+            const Icon = tmp(1199).Icon;
             const tmp24 = closure_10(Icon, obj8);
             cResult[11] = activeSpeakerIcon;
             cResult[12] = tmp20;
@@ -907,11 +907,11 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
   }
   let stringResult = useChannelNameDefault(channel);
   if (stringResult == null) {
-    const intl = id(1128).intl;
-    stringResult = intl.string(id(1128).t["/YzI63"]);
+    const intl = id(1125).intl;
+    stringResult = intl.string(id(1125).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11390)(id);
+  let invitedHeaderText = tmp3(11393)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);
@@ -925,7 +925,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
     let str;
     if (!tmp7) {
       str = "dark-content";
-      id(4993);
+      id(4994);
     }
     if (null != channel) {
       if (null != guild) {
@@ -947,18 +947,18 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
           const obj3 = { style: tmp.noticeContainer, children: items2 };
           const obj4 = { animated: true, barStyle: str };
           items2 = [closure_10(StatusBarDefault, obj4), , ];
-          const obj5 = { style: activeSpeakerIcon, size: id(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
-          const Icon = tmp8(1202).Icon;
+          const obj5 = { style: activeSpeakerIcon, size: id(1199).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
+          const Icon = tmp8(1199).Icon;
           tmp8Result2 = id(8502);
           items2[1] = closure_10(Icon, obj5);
           let tmp13Result = "" !== str2;
-          const LegacyText = tmp8(1202).LegacyText;
+          const LegacyText = tmp8(1199).LegacyText;
           const tmp14 = View;
           const tmp15 = closure_10;
           if (tmp13Result) {
             const items3 = [tmp.topic, ];
             let invitedHeaderText2 = invitedHeaderText;
-            const LegacyText2 = tmp8(1202).LegacyText;
+            const LegacyText2 = tmp8(1199).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText2 = tmp.invitedHeaderText;
             }
@@ -975,7 +975,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStageChann
           let tmp15Result = !tmp12;
           if (tmp15Result) {
             const items6 = [tmp.channel, ];
-            const LegacyText3 = tmp8(1202).LegacyText;
+            const LegacyText3 = tmp8(1199).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText = tmp.invitedHeaderText;
             }

@@ -1,13 +1,13 @@
 // Module ID: 8531
 // Function ID: 8532
 // Name: useShowMemberVerificationGate
-// Dependencies: [4883, 4845, 1392, 6894, 558, 576, 504, 2]
+// Dependencies: [4884, 4846, 1389, 6896, 558, 576, 504, 2]
 
 // Module 8531 (useShowMemberVerificationGate)
-import MemberVerificationUtils from "MemberVerificationUtils" /* 6894 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
+import MemberVerificationUtils from "MemberVerificationUtils" /* 6896 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

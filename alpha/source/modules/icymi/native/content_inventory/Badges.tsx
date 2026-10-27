@@ -1,30 +1,30 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14324
+// Function ID: 14325
 // Name: Badges
-// Dependencies: [19, 17, 2068, 21, 587, 4971, 558, 576, 14292, 8617, 5234, 504, 9616, 11307, 14295, 1128, 14297, 14299, 14164, 11900, 1104, 9308, 2]
+// Dependencies: [19, 17, 2065, 21, 587, 4972, 558, 576, 14322, 8617, 5235, 504, 9618, 11310, 14325, 1125, 14327, 14329, 14191, 11901, 1101, 9308, 2]
 
-// Module 14294 (Badges)
+// Module 14324 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import DurationsDefault from "Durations" /* 1101 */;
+import intl3 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import utils from "utils" /* 8617 */;
 import TrophyIcon from "TrophyIcon" /* 9308 */;
-import GameControllerIcon from "GameControllerIcon" /* 9616 */;
-import TimerIcon2 from "TimerIcon" /* 11307 */;
-import RetryIcon from "RetryIcon" /* 11900 */;
-import FireIcon from "FireIcon" /* 14164 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14292 */;
-import NewUserIcon from "NewUserIcon" /* 14295 */;
-import FlashIcon2 from "FlashIcon" /* 14297 */;
-import TrendingType from "TrendingType" /* 14299 */;
+import GameControllerIcon from "GameControllerIcon" /* 9618 */;
+import TimerIcon2 from "TimerIcon" /* 11310 */;
+import RetryIcon from "RetryIcon" /* 11901 */;
+import FireIcon from "FireIcon" /* 14191 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14322 */;
+import NewUserIcon from "NewUserIcon" /* 14325 */;
+import FlashIcon2 from "FlashIcon" /* 14327 */;
+import TrendingType from "TrendingType" /* 14329 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,14 +137,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimest
 }) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(14292);
+  obj = entry(14322);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
     obj = utils;
     return obj.formatActiveTimestamp(entry, now);
   }, items);
-  return closure_6(entry(5234).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+  return closure_6(entry(5235).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
 });
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -237,7 +237,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         tmp12Result = tmp12(closure_14, obj2);
       } else {
         const obj3 = { variant: "text-sm/medium", color: tmp5.text, children: tmp6Result.formatEndedTimestamp(entry, tmp11) };
-        const Text = tmp6(5234).Text;
+        const Text = tmp6(5235).Text;
         tmp6Result = utils;
         tmp12Result = tmp12(Text, obj3);
       }
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameTimestam
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(9616).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(9618).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);
@@ -555,7 +555,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewGameBadge
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
-      intl = tmp(1128).intl;
+      intl = tmp(1125).intl;
       const tmp10 = metroRequire(closure_16, obj3);
       cResult[0] = tmp10;
       first = tmp10;
@@ -572,7 +572,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewGameBadge
   obj = utils;
   if (obj.isEntryNew(entry)) {
     const obj2 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     tmp3 = metroRequire(closure_16, obj2);
   }
   return tmp3;
@@ -641,14 +641,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(14297).FlashIcon;
-          const intl = tmp(1128).intl;
+          FlashIcon = tmp(14327).FlashIcon;
+          const intl = tmp(1125).intl;
           const obj3 = { days: streakCount };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["Klie/P"], obj3);
+          formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t["Klie/P"], obj3);
           icon = tmp8.icon;
-          const intl2 = tmp(1128).intl;
+          const intl2 = tmp(1125).intl;
           const obj4 = { days: streakCount };
-          formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1128).t.nVLPBf, obj4);
+          formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1125).t.nVLPBf, obj4);
           tmp19 = forResult;
         }
       }
@@ -687,9 +687,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp11 = null;
         if (streakCount >= 2) {
           const obj2 = { Icon: FlashIcon2.FlashIcon, text: intl.formatToPlainString(intl3.t["Klie/P"], obj3), iconColor: tmp6.icon, accessibilityLabel: intl2.formatToPlainString(intl3.t.nVLPBf, obj4) };
-          intl = tmp7(1128).intl;
+          intl = tmp7(1125).intl;
           obj3 = { days: streakCount };
-          intl2 = tmp7(1128).intl;
+          intl2 = tmp7(1125).intl;
           obj4 = { days: streakCount };
           tmp11 = metroRequire(closure_16, obj2);
         }
@@ -719,7 +719,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrendingBad
           let tmp15;
           const _Symbol = Symbol;
           if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1128).intl;
+            const intl = tmp(1125).intl;
             const stringResult = intl.string(intl3.t.TsWCdW);
             cResult[0] = stringResult;
             first = stringResult;
@@ -757,7 +757,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrendingBad
         tmp11 = null;
         if (trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
           const obj2 = { Icon: FireIcon.FireIcon, text: intl.string(intl3.t.TsWCdW), iconColor: tmp6.icon };
-          intl = tmp7(1128).intl;
+          intl = tmp7(1125).intl;
           tmp11 = metroRequire(closure_16, obj2);
         }
       }
@@ -783,7 +783,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resurrected
         let tmp14;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult = intl.string(intl3.t.adnLsB);
           cResult[0] = stringResult;
           first = stringResult;
@@ -817,7 +817,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Resurrected
       obj = utils;
       if (null != obj.getResurrectedEntryLastPlayTime(tmp)) {
         const obj2 = { Icon: RetryIcon.RetryIcon, text: intl.string(intl3.t.adnLsB), iconColor: tmp6.icon };
-        intl = tmp7(1128).intl;
+        intl = tmp7(1125).intl;
         tmp9 = metroRequire(closure_16, obj2);
       }
       return tmp9;
@@ -845,9 +845,9 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TopGameBadg
         let tmp14;
         let tmp17;
         const _Symbol = Symbol;
-        const SDRHgr = tmp(1128).t.SDRHgr;
+        const SDRHgr = tmp(1125).t.SDRHgr;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult = intl.string(intl3.t["/50eHi"]);
           cResult[0] = stringResult;
           first = stringResult;
@@ -855,7 +855,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TopGameBadg
           first = cResult[0];
         }
         if (cResult[1] !== entryDuration) {
-          const intl2 = tmp(1128).intl;
+          const intl2 = tmp(1125).intl;
           const _Math = Math;
           const format = intl2.format;
           const obj2 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };
@@ -908,11 +908,11 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TopGameBadg
         return null;
       } else {
         const obj2 = { Icon: TrophyIcon.TrophyIcon, text: metroImportDefault(metroImportAll, obj3), iconColor: tmp6.icon };
-        const SDRHgr = tmp7(1128).t.SDRHgr;
+        const SDRHgr = tmp7(1125).t.SDRHgr;
         obj3 = { children: items };
-        const intl = tmp7(1128).intl;
+        const intl = tmp7(1125).intl;
         items = [intl.string(intl3.t["/50eHi"]), ": ", ];
-        const intl2 = tmp7(1128).intl;
+        const intl2 = tmp7(1125).intl;
         const _Math = Math;
         const format = intl2.format;
         const obj4 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };

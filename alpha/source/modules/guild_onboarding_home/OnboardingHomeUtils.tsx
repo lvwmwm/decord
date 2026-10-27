@@ -1,19 +1,19 @@
-// Module ID: 7324
-// Function ID: 7325
+// Module ID: 7326
+// Function ID: 7327
 // Name: OnboardingHomeUtils
-// Dependencies: [4876, 4823, 4845, 7325, 1087, 4830, 558, 576, 7326, 4848, 7201, 7327, 573, 2]
+// Dependencies: [4877, 4824, 4846, 7327, 1084, 4831, 558, 576, 7328, 4849, 7329, 573, 7203, 2]
 // Exports: canSeeOnboardingHome
 
-// Module 7324 (OnboardingHomeUtils)
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import FavoritesUtils from "FavoritesUtils" /* 4848 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7326 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7327 */;
-import ImpersonateStore from "ImpersonateStore" /* 4876 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7325 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7326 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import FavoritesUtils from "FavoritesUtils" /* 4849 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7328 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7329 */;
+import ImpersonateStore from "ImpersonateStore" /* 4877 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7327 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
   _require = arg0;
   const tmp = _require;
   const tmp2 = dependencyMap;
-  const obj = require("react");
+  let obj = require("react");
   const cResult = obj.c(5);
   const tmp4 = useIsNewMemberDefault(arg0);
   importDefault = tmp4;
@@ -57,9 +57,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
   }
   const fn = function f() {
     if (closure_0 !== metroImportAll) {
-      const obj3 = FavoritesUtils;
-      const tmp23 = require;
-      if (!obj3.isFavoritesGuildId(closure_0)) {
+      const obj2 = FavoritesUtils;
+      if (!obj2.isFavoritesGuildId(closure_0)) {
         const guild = GuildStore.getGuild(tmp2);
         let hasItem;
         if (guild != null) {
@@ -68,16 +67,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
         }
         let tmp8 = hasItem;
         if (tmp8) {
-          let result;
+          let tmp11;
           if (ImpersonateStore.isFullServerPreview(closure_0)) {
             const id = guild.id;
             let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
-            const obj2 = GuildOnboardingHomeSettingsStore;
+            const obj = GuildOnboardingHomeSettingsStore;
             if (newMemberActions == null) {
               newMemberActions = [];
             }
             let hasItem1 = newMemberActions.length > 0;
-            const enabled = obj2.getEnabled(id);
+            const enabled = obj.getEnabled(id);
             if (hasItem1) {
               const features2 = guild.features;
               hasItem1 = features2.has(metroImportDefault.COMMUNITY);
@@ -87,11 +86,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
               hasItem1 = !(features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled);
               features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled;
             }
-            result = hasItem1;
+            tmp11 = hasItem1;
           } else {
-            const tmp23Result = tmp23(7201);
-            result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
-            if (result) {
+            tmp11 = guildHasOnboardingHomeDefault(guild);
+            if (tmp11) {
               let tmp12 = closure_1;
               if (!tmp12) {
                 const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(tmp2);
@@ -100,19 +98,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
                 if (keys !== undefined) {
                   flag = false;
                   while (keys[tmp] !== undefined) {
-                    let obj4 = mutableGuildChannelsForGuild[tmp17];
+                    let obj3 = mutableGuildChannelsForGuild[tmp17];
                     flag = true;
-                    if (obj4.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
+                    if (obj3.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
                       break;
                     }
                   }
                 }
                 tmp12 = flag;
               }
-              result = tmp12;
+              tmp11 = tmp12;
             }
           }
-          tmp8 = result;
+          tmp8 = tmp11;
         }
         return tmp8;
       }
@@ -132,14 +130,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
   _require = arg0;
   const tmp = useIsNewMemberDefault(arg0);
   importDefault = tmp;
+  let obj = require("useStateFromStores");
   const items = [ChannelStore, GuildStore, ImpersonateStore];
   const items1 = [arg0, tmp];
-  const obj = require("useStateFromStores");
   return obj.useStateFromStores(items, () => {
     if (closure_0 !== metroImportAll) {
-      const obj3 = FavoritesUtils;
-      const tmp23 = require;
-      if (!obj3.isFavoritesGuildId(closure_0)) {
+      const obj2 = FavoritesUtils;
+      if (!obj2.isFavoritesGuildId(closure_0)) {
         const guild = GuildStore.getGuild(tmp2);
         let hasItem;
         if (guild != null) {
@@ -148,16 +145,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
         }
         let tmp8 = hasItem;
         if (tmp8) {
-          let result;
+          let tmp11;
           if (ImpersonateStore.isFullServerPreview(closure_0)) {
             const id = guild.id;
             let newMemberActions = GuildOnboardingHomeSettingsStore.getNewMemberActions(id);
-            const obj2 = GuildOnboardingHomeSettingsStore;
+            const obj = GuildOnboardingHomeSettingsStore;
             if (newMemberActions == null) {
               newMemberActions = [];
             }
             let hasItem1 = newMemberActions.length > 0;
-            const enabled = obj2.getEnabled(id);
+            const enabled = obj.getEnabled(id);
             if (hasItem1) {
               const features2 = guild.features;
               hasItem1 = features2.has(metroImportDefault.COMMUNITY);
@@ -167,11 +164,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
               hasItem1 = !(features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled);
               features3.has(metroImportDefault.GUILD_ONBOARDING) && !enabled;
             }
-            result = hasItem1;
+            tmp11 = hasItem1;
           } else {
-            const tmp23Result = tmp23(7201);
-            result = tmp23Result.isGuildOnboardingSettingsAvailable(tmp2) || guildHasOnboardingHomeDefault(guild);
-            if (result) {
+            tmp11 = guildHasOnboardingHomeDefault(guild);
+            if (tmp11) {
               let tmp12 = closure_1;
               if (!tmp12) {
                 const mutableGuildChannelsForGuild = ChannelStore.getMutableGuildChannelsForGuild(tmp2);
@@ -180,19 +176,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeO
                 if (keys !== undefined) {
                   flag = false;
                   while (keys[tmp] !== undefined) {
-                    let obj4 = mutableGuildChannelsForGuild[tmp17];
+                    let obj3 = mutableGuildChannelsForGuild[tmp17];
                     flag = true;
-                    if (obj4.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
+                    if (obj3.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
                       break;
                     }
                   }
                 }
                 tmp12 = flag;
               }
-              result = tmp12;
+              tmp11 = tmp12;
             }
           }
-          tmp8 = result;
+          tmp8 = tmp11;
         }
         return tmp8;
       }
@@ -232,7 +228,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          const tmp14Result = tmp14(7201);
+          const tmp14Result = tmp14(7203);
           let result = tmp14Result.isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;

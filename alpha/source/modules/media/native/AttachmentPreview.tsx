@@ -1,36 +1,36 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12065
+// Function ID: 12066
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 4971, 587, 12065, 12066, 12067, 12068, 12069, 12070, 12071, 12072, 12073, 12074, 12075, 12076, 12077, 12078, 558, 576, 8150, 5669, 5234, 1384, 1202, 9312, 8790, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 12066, 12067, 12068, 12069, 12070, 12071, 12072, 12073, 12074, 12075, 12076, 12077, 12078, 12079, 558, 576, 8148, 5670, 5235, 1381, 1199, 9312, 8790, 2]
 // Exports: default
 
-// Module 12064 (AttachmentPreview)
+// Module 12065 (AttachmentPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import FileUtils from "FileUtils" /* 8150 */;
+import native from "native" /* 1199 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import FileUtils from "FileUtils" /* 8148 */;
 import common_Video from "common/Video" /* 8790 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12065 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12066 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12067 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12068 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12069 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12070 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 12071 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 12072 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 12073 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 12074 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 12075 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 12076 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 12077 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 12078 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12066 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12067 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12068 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12069 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12070 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12071 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 12072 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 12073 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 12074 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 12075 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 12076 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 12077 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 12078 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 12079 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -169,9 +169,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Filena
   let tmp13 = null != fileName && "" !== fileName;
   if (tmp13) {
     const obj4 = { style: tmp4.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp13 = hasOwnProperty(tmp(5234).Text, obj4);
+    tmp13 = hasOwnProperty(tmp(5235).Text, obj4);
   }
-  const Text = tmp(5234).Text;
+  const Text = tmp(5235).Text;
   const attachmentFileName = tmp4.attachmentFileName;
   let str5 = "UNKNOWN";
   if (null != match) {
@@ -513,7 +513,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
       isIOSResult = uri.startsWith("ph://");
     }
     if (!isIOSResult) {
-      const tmp2Result = tmp2(1384);
+      const tmp2Result = tmp2(1381);
       isIOSResult = tmp2Result.isAndroid() && uri.startsWith("content://");
       const isAndroidResult = tmp2Result.isAndroid() && uri.startsWith("content://");
     }

@@ -1,13 +1,13 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11381
+// Function ID: 11382
 // Name: usePipDimensions
-// Dependencies: [19, 558, 576, 11379, 1499, 8820, 2]
+// Dependencies: [19, 558, 576, 11382, 1496, 8820, 2]
 
-// Module 11378 (usePipDimensions)
+// Module 11381 (usePipDimensions)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import DeviceOrientation from "DeviceOrientation" /* 8820 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 11379 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11382 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

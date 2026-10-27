@@ -1,12 +1,12 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 9489
+// Function ID: 9490
 // Name: useGameProfilePlatforms
-// Dependencies: [19, 8830, 1128, 558, 576, 2]
+// Dependencies: [19, 8830, 1125, 558, 576, 2]
 // Exports: getGameProfilePlatformText
 
-// Module 9490 (useGameProfilePlatforms)
+// Module 9489 (useGameProfilePlatforms)
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1128 */;
+import intl6 from "intl" /* 1125 */;
 import PlatformType from "PlatformType" /* 8830 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -79,19 +79,19 @@ const result = size.fileFinishedImporting("modules/game_profile/hooks/useGamePro
 export default tmp2;
 export const getGameProfilePlatformText = function getGameProfilePlatformText(item) {
   if (PlatformType.PlatformType.DESKTOP === item) {
-    const intl5 = tmp(1128).intl;
+    const intl5 = tmp(1125).intl;
     return intl5.string(intl6.t.KT6uCJ);
   } else if ("mobile" === item) {
-    const intl4 = tmp(1128).intl;
+    const intl4 = tmp(1125).intl;
     return intl4.string(intl6.t["0DvssQ"]);
   } else if (PlatformType.PlatformType.XBOX === item) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     return intl3.string(intl6.t.DDWUJp);
   } else if (PlatformType.PlatformType.PLAYSTATION === item) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     return intl2.string(intl6.t.fzMz2s);
   } else if (PlatformType.PlatformType.NINTENDO === item) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     return intl.string(intl6.t.AMW8je);
   }
 };

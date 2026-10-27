@@ -1,42 +1,34 @@
 // Module ID: 12659
 // Function ID: 12660
-// Dependencies: [12637, 12625, 12660]
+// Dependencies: [12591]
+// Exports: applySdkMetadata
 
 // Module 12659
-import _mod12660 from "module_12660" /* 12660 */;
-import module_12637 from "module_12637" /* 12637 */;
+import _mod12591 from "module_12591" /* 12591 */;
 
 
-export const moduleMetadataIntegration = module_12637.defineIntegration(() => {
-  let obj = {
-    name: "ModuleMetadata",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = _mod12660;
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    }
-  };
-  return obj;
-});
+export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
+  let arr = arg2;
+  if (arg2 === undefined) {
+    const items = [arg1];
+    arr = items;
+  }
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "npm";
+  }
+  const tmp = _metadata._metadata || {};
+  if (!tmp.sdk) {
+    let obj = {
+      name: "sentry.javascript." + arg1,
+      packages: arr.map((item) => {
+          const obj = { name: "" + str + ":@sentry/" + item, version: _mod12591.SDK_VERSION };
+          return obj;
+        }),
+      version: str(12591).SDK_VERSION
+    };
+    const _HermesInternal = HermesInternal;
+    tmp.sdk = obj;
+  }
+  _metadata._metadata = tmp;
+};

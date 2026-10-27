@@ -1,13 +1,13 @@
-// Module ID: 13551
-// Function ID: 13552
+// Module ID: 13565
+// Function ID: 13566
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 558, 576, 1128, 5914, 5914, 2]
+// Dependencies: [19, 21, 558, 576, 1125, 5915, 5915, 2]
 
-// Module 13551 (UserProfileAlertUserReported)
+// Module 13565 (UserProfileAlertUserReported)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
+import intl4 from "intl" /* 1125 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,9 +21,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const obj = react2;
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl4.t.IwHU3R);
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl4.t.qxyRaq);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -33,11 +33,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5914).AlertModal;
-    const AlertActions = tmp(5914).AlertActions;
+    const AlertModal = tmp(5915).AlertModal;
+    const AlertActions = tmp(5915).AlertActions;
     ({ text: intl3.string(intl4.t.BddRzS) });
-    const AlertActionButton = tmp(5914).AlertActionButton;
-    intl3 = tmp(1128).intl;
+    const AlertActionButton = tmp(5915).AlertActionButton;
+    intl3 = tmp(1125).intl;
     const tmp10 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp10;
     tmp8 = tmp10;

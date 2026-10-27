@@ -1,21 +1,21 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16571
+// Function ID: 16572
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1098, 21, 4971, 558, 576, 16469, 16438, 16457, 6713, 7801, 5205, 4978, 16437, 1128, 5234, 16533, 16534, 5669, 16497, 16535, 2]
+// Dependencies: [19, 17, 1095, 21, 4972, 558, 576, 16508, 16477, 16496, 6714, 7802, 5206, 4979, 16476, 1125, 5235, 16572, 16573, 5670, 16536, 16574, 2]
 
-// Module 16532 (QuestDockUnenrolledHeader)
+// Module 16571 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1098 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16457 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16497 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16535 */;
+import Constants from "Constants" /* 1095 */;
+import useThemeDefault from "useTheme" /* 5206 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import QuestTypes from "QuestTypes" /* 6714 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7802 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16496 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16536 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16574 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,11 +36,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp8Result;
   let obj = questCreative(576);
   const cResult = obj.c(21);
-  let obj2 = questCreative(16469);
+  let obj2 = questCreative(16508);
   const questDockQuest = obj2.useQuestDockQuest();
-  const obj3 = questCreative(16469);
+  const obj3 = questCreative(16508);
   questCreative = obj3.useQuestCreative(questDockQuest);
-  const obj4 = questCreative(16438);
+  const obj4 = questCreative(16477);
   const actionSheetPressHandler = obj4.useActionSheetPressHandler(questCreative);
   if (cResult[0] !== questCreative) {
     const fn = function t() {
@@ -56,7 +56,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp7 = cResult[1];
   }
   const tmp9 = useThemeDefault();
-  const tmpResult = questCreative(4978);
+  const tmpResult = questCreative(4979);
   if (tmpResult.isThemeDark(tmp9)) {
     LIGHT = tmp10.DARK;
     tmp11 = tmp10;
@@ -65,13 +65,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp11 = tmp10;
   }
   const tmp12 = closure_8();
-  const tmpResult2 = questCreative(16437);
+  const tmpResult2 = questCreative(16476);
   const questGameLogotypeAssetUrl = tmpResult2.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const getRewardLabel = tmp12.getRewardLabel;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(questCreative(1128).t["3mgEQf"]);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(questCreative(1125).t["3mgEQf"]);
     cResult[2] = stringResult;
     tmp14 = stringResult;
   } else {
@@ -79,7 +79,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[3] !== tmp12.getRewardLabel) {
     const obj5 = { style: getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: tmp14 };
-    const tmp18 = closure_6(questCreative(5234).Text, obj5);
+    const tmp18 = closure_6(questCreative(5235).Text, obj5);
     cResult[3] = tmp12.getRewardLabel;
     cResult[4] = tmp18;
     tmp16 = tmp18;
@@ -87,9 +87,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp16 = cResult[4];
   }
   if (LIGHT === tmp11.DARK) {
-    tmp8Result = tmp8(16533);
+    tmp8Result = tmp8(16572);
   } else {
-    tmp8Result = tmp8(16534);
+    tmp8Result = tmp8(16573);
   }
   if (cResult[5] === tmp12.wreathImage) {
     let tmp20;
@@ -165,11 +165,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp15;
   let tmp16;
   let tmp7Result4;
-  let obj = questCreative(16469);
+  let obj = questCreative(16508);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(16469);
+  let obj2 = questCreative(16508);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(16438);
+  const obj3 = questCreative(16477);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -179,7 +179,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj.showModal(obj2);
   }, items);
   const tmp8 = useThemeDefault();
-  const obj4 = questCreative(4978);
+  const obj4 = questCreative(4979);
   if (obj4.isThemeDark(tmp8)) {
     LIGHT = tmp9.DARK;
     tmp10 = tmp9;
@@ -188,22 +188,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp10 = tmp9;
   }
   const tmp11 = closure_8();
-  const tmpResult = questCreative(16437);
+  const tmpResult = questCreative(16476);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
   const obj5 = { blurHash: questBarHeroBlurhash, collapsedContent: closure_6(Text, obj6), withPressableDisclosure: true, onDisclosurePress: callback, onSubmenuPress: actionSheetPressHandler, children: tmp15(tmp16, obj7) };
-  obj6 = { style: tmp11.getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1128).t["3mgEQf"]) };
-  Text = tmp(5234).Text;
-  intl = tmp(1128).intl;
+  obj6 = { style: tmp11.getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1125).t["3mgEQf"]) };
+  Text = tmp(5235).Text;
+  intl = tmp(1125).intl;
   obj7 = { style: tmp11.primaryContent, children: items1 };
   tmp15 = closure_7;
   tmp16 = View;
   const tmp7Result3 = FastImageDefault;
   if (LIGHT === tmp10.DARK) {
-    tmp7Result4 = tmp7(16533);
+    tmp7Result4 = tmp7(16572);
   } else {
-    tmp7Result4 = tmp7(16534);
+    tmp7Result4 = tmp7(16573);
   }
   items1 = [, ];
   const obj8 = { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage };

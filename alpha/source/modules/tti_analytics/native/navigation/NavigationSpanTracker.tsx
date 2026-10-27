@@ -1,14 +1,14 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 12862
+// Function ID: 12863
 // Name: NavigationSpanTracker
-// Dependencies: [109, 3, 12854, 1281, 12855, 12856, 2]
+// Dependencies: [109, 3, 12863, 1278, 12864, 12865, 2]
 
-// Module 12853 (NavigationSpanTracker)
+// Module 12862 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
-import v1 from "v1" /* 1281 */;
-import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 12854 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 12855 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 12856 */;
+import v1 from "v1" /* 1278 */;
+import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 12863 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 12864 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 12865 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

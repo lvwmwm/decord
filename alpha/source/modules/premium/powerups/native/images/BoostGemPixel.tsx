@@ -1,11 +1,11 @@
-// Module ID: 14865
-// Function ID: 14866
+// Module ID: 14901
+// Function ID: 14902
 // Name: BoostGemPixel
-// Dependencies: [19, 21, 558, 576, 7962, 2]
+// Dependencies: [19, 21, 558, 576, 7960, 2]
 
-// Module 14865 (BoostGemPixel)
+// Module 14901 (BoostGemPixel)
 import react2 from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 7962 */;
+import inlineStylesDefault from "inlineStyles" /* 7960 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const inlineStyles = tmp(7962);
+const inlineStyles = tmp(7960);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostGemPixel(arg0) {
   let height;

@@ -1,11 +1,11 @@
-// Module ID: 14285
-// Function ID: 14286
+// Module ID: 14315
+// Function ID: 14316
 // Name: conjurePresenceActivityImage
-// Dependencies: [14286, 14287, 2]
+// Dependencies: [14316, 14317, 2]
 
-// Module 14285 (conjurePresenceActivityImage)
-import AssetRegistryDefault from "AssetRegistry" /* 14286 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14287 */;
+// Module 14315 (conjurePresenceActivityImage)
+import AssetRegistryDefault from "AssetRegistry" /* 14316 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14317 */;
 import size from "module_2" /* 2 */;
 
 const obj = { light: AssetRegistryDefault, dark: AssetRegistryDefault2 };

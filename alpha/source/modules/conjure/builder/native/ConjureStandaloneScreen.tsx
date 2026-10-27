@@ -1,25 +1,25 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11747
+// Function ID: 11748
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4883, 4845, 4903, 6773, 7321, 1087, 21, 558, 576, 11746, 504, 11747, 1505, 12521, 11762, 11750, 6808, 10720, 6924, 1128, 3830, 12522, 12541, 7095, 11773, 2]
+// Dependencies: [32, 19, 4884, 4846, 4904, 6774, 7323, 1084, 21, 558, 576, 11748, 504, 11749, 1502, 12529, 11764, 11752, 6809, 9567, 10723, 6926, 1125, 3831, 12530, 12549, 7097, 11774, 2]
 
-// Module 11745 (ConjureStandaloneScreen)
-import Constants from "Constants" /* 1087 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6924 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import ConjureActivity from "ConjureActivity" /* 11746 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11747 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11762 */;
-import selectConjureChannelDefault from "selectConjureChannel" /* 12521 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 12522 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12541 */;
+// Module 11747 (ConjureStandaloneScreen)
+import Constants from "Constants" /* 1084 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6926 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10723 */;
+import ConjureActivity from "ConjureActivity" /* 11748 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11749 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11764 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 12529 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 12530 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12549 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7321 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7323 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Global
       return tmp9;
     }
     const obj2 = { guildId: stateFromStores, projectId };
-    const tmp12 = closure_11(fallbackGuildId(11747), obj2);
+    const tmp12 = closure_11(fallbackGuildId(11749), obj2);
     cResult[5] = stateFromStores;
     cResult[6] = projectId;
     cResult[7] = tmp12;
@@ -108,7 +108,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Global
     }
     return result;
   }, items1);
-  return closure_11(fallbackGuildId(11747), { guildId, projectId });
+  return closure_11(fallbackGuildId(11749), { guildId, projectId });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoutedProjectOpener(guildId) {
@@ -146,7 +146,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Routed
           }
         }
       }
-      const fn2 = function u() {
+      const fn2 = function c() {
         const isFocusedResult = null != request && tmp.key !== handledKeyRef.current && navigation.isFocused();
         if (isFocusedResult) {
           handledKeyRef.current = request.key;
@@ -287,18 +287,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     let tmp15;
     let tmp14;
     let tmp17;
-    let tmp20;
-    let tmp22;
     let tmp21;
-    let tmp24;
+    let tmp23;
+    let tmp22;
+    let tmp25;
+    let tmp28;
     let tmp27;
-    let tmp26;
     if (cResult[4] === null != context) {
       tmp10 = cResult[5];
       tmp11 = cResult[6];
     }
-    const tmpResult6 = tmp(tmp2[12]);
-    let projectId = tmpResult6.useStateFromStores(tmp8, tmp10, tmp11);
+    const tmpResult7 = tmp(tmp2[12]);
+    let projectId = tmpResult7.useStateFromStores(tmp8, tmp10, tmp11);
     if (null != context) {
       projectId = context.projectId;
     }
@@ -330,8 +330,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
       tmp15 = cResult[10];
     }
-    const tmpResult7 = tmp(tmp2[12]);
-    stateFromStores = tmpResult7.useStateFromStores(tmp12, tmp14, tmp15);
+    const tmpResult8 = tmp(tmp2[12]);
+    stateFromStores = tmpResult8.useStateFromStores(tmp12, tmp14, tmp15);
     if (cResult[11] !== guildId) {
       class A {
         constructor() {
@@ -349,8 +349,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
         }
       }
     }
-    const tmpResult8 = tmp(tmp2[18]);
-    const isConjureGuildEnabled = tmpResult8.useIsConjureGuildEnabled(tmp17);
+    const tmpResult9 = tmp(tmp2[18]);
+    const isConjureGuildEnabled = tmpResult9.useIsConjureGuildEnabled(tmp17);
+    const tmpResult10 = tmp(tmp2[19]);
+    const isConjureMobileEnabled = tmpResult10.useIsConjureMobileEnabled(isConjureGuildEnabled, "ConjureStandaloneScreen");
     const _Symbol2 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       class A {
@@ -360,7 +362,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
       const items3 = [projectId];
       cResult[13] = items3;
-      tmp20 = items3;
+      tmp21 = items3;
     } else {
       class A {
         constructor() {
@@ -369,7 +371,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
     }
     if (cResult[14] !== guildId) {
-      class L {
+      class K {
         constructor() {
           const selfMember = GuildMemberStore.getSelfMember(guildId);
           let roles;
@@ -384,12 +386,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
       const items4 = [guildId];
       cResult[14] = guildId;
-      cResult[15] = L;
+      cResult[15] = K;
       cResult[16] = items4;
-      tmp22 = items4;
-      tmp21 = L;
+      tmp23 = items4;
+      tmp22 = K;
     } else {
-      class L {
+      class K {
         constructor() {
           const selfMember = GuildMemberStore.getSelfMember(guildId);
           let roles;
@@ -402,13 +404,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
           return roles;
         }
       }
-      tmp22 = cResult[16];
+      tmp23 = cResult[16];
     }
-    const tmpResult9 = tmp(tmp2[12]);
-    const stateFromStoresArray = tmpResult9.useStateFromStoresArray(tmp20, tmp21, tmp22);
+    const tmpResult11 = tmp(tmp2[12]);
+    const stateFromStoresArray = tmpResult11.useStateFromStoresArray(tmp21, tmp22, tmp23);
     const _Symbol3 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
+      class K {
         constructor() {
           const selfMember = GuildMemberStore.getSelfMember(guildId);
           let roles;
@@ -421,11 +423,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
           return roles;
         }
       }
-      const items5 = [stateFromStores, isConjureGuildEnabled];
+      const items5 = [stateFromStores, isConjureMobileEnabled];
       cResult[17] = items5;
-      tmp24 = items5;
+      tmp25 = items5;
     } else {
-      class L {
+      class K {
         constructor() {
           const selfMember = GuildMemberStore.getSelfMember(guildId);
           let roles;
@@ -440,43 +442,61 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
     }
     if (cResult[18] !== guildId) {
-      class Q {
+      class K {
         constructor() {
-          const guild = GuildStore.getGuild(guildId);
-          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-          return canResult;
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
         }
       }
       const items6 = [guildId];
       cResult[18] = guildId;
-      cResult[19] = Q;
+      cResult[19] = tmp29;
       cResult[20] = items6;
-      tmp27 = items6;
-      tmp26 = Q;
+      tmp28 = items6;
+      tmp27 = tmp29;
     } else {
-      class Q {
+      class K {
         constructor() {
-          const guild = GuildStore.getGuild(guildId);
-          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-          return canResult;
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
         }
       }
-      tmp27 = cResult[20];
+      tmp28 = cResult[20];
     }
-    const tmpResult10 = tmp(tmp2[12]);
-    const stateFromStores1 = tmpResult10.useStateFromStores(tmp24, tmp26, tmp27);
+    const tmpResult12 = tmp(tmp2[12]);
+    const stateFromStores1 = tmpResult12.useStateFromStores(tmp25, tmp27, tmp28);
     if (cResult[21] === guildId) {
-      class Q {
+      class K {
         constructor() {
-          const guild = GuildStore.getGuild(guildId);
-          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-          return canResult;
+          const selfMember = GuildMemberStore.getSelfMember(guildId);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          return roles;
         }
       }
     }
-    class V {
+    class W {
       constructor() {
-        const tmp = isConjureGuildEnabled;
+        const tmp = isConjureMobileEnabled;
         if (tmp) {
           let tmp6;
           const listProjects = ConjureActionCreators.listProjects;
@@ -489,19 +509,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       }
     }
     cResult[21] = guildId;
-    class T {
-      constructor() {
-        let tmp;
-        if (!closure_4) {
-          const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
-          tmp = routedProjectId;
-        }
-        return tmp;
-      }
-    }
-    cResult[22] = isConjureGuildEnabled;
+    cResult[22] = isConjureMobileEnabled;
     cResult[23] = null != context;
-    cResult[24] = V;
+    cResult[24] = W;
   }
   class T {
     constructor() {
@@ -539,7 +549,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   let closure_5;
   let projectId;
   let stateFromStores;
-  let isConjureGuildEnabled;
+  let isConjureMobileEnabled;
   let memo;
   let handledKeyRef;
   let tmp = guildId;
@@ -571,14 +581,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   }
   const items3 = [projectId];
   const items4 = [guildId];
-  const tmpResult6 = tmp(tmp2[12]);
-  stateFromStores = tmpResult6.useStateFromStores(items3, () => GuildStore.getGuild(guildId), items4);
-  const tmpResult7 = tmp(tmp2[18]);
-  isConjureGuildEnabled = tmpResult7.useIsConjureGuildEnabled({ guildId, location: "ConjureStandaloneScreen" });
+  const tmpResult7 = tmp(tmp2[12]);
+  stateFromStores = tmpResult7.useStateFromStores(items3, () => GuildStore.getGuild(guildId), items4);
+  const tmpResult8 = tmp(tmp2[18]);
+  const isConjureGuildEnabled = tmpResult8.useIsConjureGuildEnabled({ guildId, location: "ConjureStandaloneScreen" });
+  const tmpResult9 = tmp(tmp2[19]);
+  isConjureMobileEnabled = tmpResult9.useIsConjureMobileEnabled(isConjureGuildEnabled, "ConjureStandaloneScreen");
   const items5 = [closure_5];
   const items6 = [guildId];
-  const tmpResult8 = tmp(tmp2[12]);
-  const stateFromStoresArray = tmpResult8.useStateFromStoresArray(items5, () => {
+  const tmpResult10 = tmp(tmp2[12]);
+  const stateFromStoresArray = tmpResult10.useStateFromStoresArray(items5, () => {
     const selfMember = GuildMemberStore.getSelfMember(guildId);
     let roles;
     if (selfMember != null) {
@@ -591,15 +603,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   }, items6);
   const items7 = [projectId, stateFromStores];
   const items8 = [guildId];
-  const items9 = [isConjureGuildEnabled, tmp6, guildId, stateFromStoresArray, ];
-  const tmpResult9 = tmp(tmp2[12]);
-  items9[4] = tmpResult9.useStateFromStores(items7, () => {
+  const items9 = [isConjureMobileEnabled, tmp6, guildId, stateFromStoresArray, ];
+  const tmpResult11 = tmp(tmp2[12]);
+  items9[4] = tmpResult11.useStateFromStores(items7, () => {
     const guild = GuildStore.getGuild(guildId);
     const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
     return canResult;
   }, items8);
   const effect = obj2.useEffect(() => {
-    const tmp = isConjureGuildEnabled;
+    const tmp = isConjureMobileEnabled;
     if (tmp) {
       let tmp6;
       const listProjects = ConjureActionCreators.listProjects;
@@ -610,9 +622,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
       listProjects(tmp6);
     }
   }, items9);
-  const items10 = [stateFromStores, isConjureGuildEnabled, onClose];
+  const items10 = [stateFromStores, isConjureMobileEnabled, onClose];
   const effect1 = obj2.useEffect(() => {
-    const tmp = null == stateFromStores || isConjureGuildEnabled;
+    const tmp = null == stateFromStores || isConjureMobileEnabled;
     if (!tmp) {
       onClose();
     }
@@ -648,20 +660,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   }
   handledKeyRef = useRef(key);
   const PROJECTS = tmp(tmp2[16]).ConjureScreenScenes.PROJECTS;
-  const tmpResult10 = tmp(tmp2[20]);
+  const tmpResult12 = tmp(tmp2[21]);
   if (tmp6) {
-    headerBackButton = tmpResult10.getHeaderBackButton(onClose, true);
+    headerBackButton = tmpResult12.getHeaderBackButton(onClose, true);
   } else {
-    headerBackButton = tmpResult10.getHeaderCloseButton(onClose);
+    headerBackButton = tmpResult12.getHeaderCloseButton(onClose);
   }
   let obj3 = { [PROJECTS]: obj4 };
   obj4 = {
     headerLeft: headerBackButton,
     headerTitle() {
       let intl;
-      const obj = { title: intl.string(inline(navigation[22]).uk6jhJ) };
-      const NavigatorHeader = guildId(navigation[20]).NavigatorHeader;
-      intl = guildId(navigation[21]).intl;
+      const obj = { title: intl.string(inline(navigation[23]).uk6jhJ) };
+      const NavigatorHeader = guildId(navigation[21]).NavigatorHeader;
+      intl = guildId(navigation[22]).intl;
       return closure_1_11(NavigatorHeader, obj);
     },
     render() {
@@ -715,9 +727,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
   obj3[tmp(tmp2[16]).ConjureScreenScenes.DEBUG] = {
     headerTitle() {
       let intl;
-      const obj = { title: intl.string(inline(navigation[22])["Q4FN+H"]) };
-      const NavigatorHeader = guildId(navigation[20]).NavigatorHeader;
-      intl = guildId(navigation[21]).intl;
+      const obj = { title: intl.string(inline(navigation[23])["Q4FN+H"]) };
+      const NavigatorHeader = guildId(navigation[21]).NavigatorHeader;
+      intl = guildId(navigation[22]).intl;
       return closure_1_11(NavigatorHeader, obj);
     },
     render(projectId) {
@@ -752,10 +764,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     return items1;
   }), 1)[0];
   let obj5 = { value: inline, children: closure_11(Navigator, obj6) };
-  const Provider = tmp(tmp2[26]).ConjureBuilderInlineContext.Provider;
-  obj6 = { screens: obj3, initialRouteStack: first, headerBackTitle: intl.string(tmp4(tmp2[22]).uk6jhJ) };
-  Navigator = tmp(tmp2[25]).Navigator;
-  intl = tmp(tmp2[21]).intl;
+  const Provider = tmp(tmp2[27]).ConjureBuilderInlineContext.Provider;
+  obj6 = { screens: obj3, initialRouteStack: first, headerBackTitle: intl.string(tmp4(tmp2[23]).uk6jhJ) };
+  Navigator = tmp(tmp2[26]).Navigator;
+  intl = tmp(tmp2[22]).intl;
   return closure_11(Provider, obj5);
 });
 let result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStandaloneScreen.tsx");

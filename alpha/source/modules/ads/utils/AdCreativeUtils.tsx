@@ -1,11 +1,11 @@
-// Module ID: 16448
-// Function ID: 16449
+// Module ID: 16487
+// Function ID: 16488
 // Name: AdCreativeUtils
-// Dependencies: [6717, 2]
+// Dependencies: [6718, 2]
 // Exports: getCreativeAnalyticsParams, getQuestDockAdCreativeId, getQuestDockQuest
 
-// Module 16448 (AdCreativeUtils)
-import AdCreativeType from "AdCreativeType" /* 6717 */;
+// Module 16487 (AdCreativeUtils)
+import AdCreativeType from "AdCreativeType" /* 6718 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/utils/AdCreativeUtils.tsx");
@@ -16,7 +16,10 @@ export const getCreativeAnalyticsParams = function getCreativeAnalyticsParams(cr
     const obj2 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: creative.quest.id };
     return obj2;
   } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
-    const obj = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, adCreativeId: creative.bounty.id };
+    const obj3 = { adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, adCreativeId: creative.bounty.id };
+    return obj3;
+  } else if (AdCreativeType.AdCreativeType.PLAYABLE === type) {
+    const obj = { adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, adCreativeId: creative.playable.id };
     return obj;
   }
 };
@@ -33,6 +36,8 @@ export const getQuestDockAdCreativeId = function getQuestDockAdCreativeId(type) 
     return type.quest.id;
   } else if (AdCreativeType.AdCreativeType.BOUNTY === type) {
     return type.bounty.id;
+  } else if (AdCreativeType.AdCreativeType.PLAYABLE === type) {
+    return type.playable.id;
   } else if (AdCreativeType.AdCreativeType.NO_FILL === type) {
     return null;
   }

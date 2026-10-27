@@ -1,24 +1,24 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14450
+// Function ID: 14451
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1392, 8672, 7544, 4820, 21, 4971, 587, 558, 576, 14415, 8679, 504, 2053, 4807, 10408, 1202, 5234, 1128, 6908, 6931, 5244, 9425, 12021, 2]
+// Dependencies: [19, 17, 1389, 8672, 7545, 4821, 21, 4972, 587, 558, 576, 14451, 8679, 504, 2050, 4808, 10410, 1199, 5235, 1125, 6910, 6933, 5245, 9424, 12022, 2]
 
-// Module 14414 (UserProfileDismissibleUpsells)
+// Module 14450 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import XSmallIcon from "XSmallIcon" /* 6931 */;
-import ColorConstants from "ColorConstants" /* 7544 */;
+import intl5 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import XSmallIcon from "XSmallIcon" /* 6933 */;
+import ColorConstants from "ColorConstants" /* 7545 */;
 import Constants from "Constants" /* 8672 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9425 */;
-import ShopIcon from "ShopIcon" /* 12021 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9424 */;
+import ShopIcon from "ShopIcon" /* 12022 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                       if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
                         let stringResult;
                         const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
-                        const GradientBorder = tmp(1202).GradientBorder;
+                        const GradientBorder = tmp(1199).GradientBorder;
                         const obj3 = {};
                         const merged = Object.assign(upsellContainer.upsellContainer);
                         obj = { style: obj3, children: items1 };
@@ -171,8 +171,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         const merged1 = Object.assign(tmp4);
                         const obj4 = { style: upsellContainer.header, children: items };
                         const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-                        const Text = tmp(5234).Text;
-                        intl = tmp(1128).intl;
+                        const Text = tmp(5235).Text;
+                        intl = tmp(1125).intl;
                         items = [metroImportAll(Text, obj5), ];
                         const obj6 = {
                           accessibilityRole: "button",
@@ -182,16 +182,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                             },
                           children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
                         };
-                        const PressableOpacity = tmp(6908).PressableOpacity;
-                        intl2 = tmp(1128).intl;
+                        const PressableOpacity = tmp(6910).PressableOpacity;
+                        intl2 = tmp(1125).intl;
                         items[1] = metroImportAll(PressableOpacity, obj6);
                         items1 = [React4(View, obj4), ];
                         const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
                         const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-                        Button = tmp(5244).Button;
-                        const intl3 = tmp(1128).intl;
+                        Button = tmp(5245).Button;
+                        const intl3 = tmp(1125).intl;
                         const string = intl3.string;
-                        const t = tmp(1128).t;
+                        const t = tmp(1125).t;
                         if (currentUser) {
                           stringResult = string(t["0Q61kF"]);
                         } else {
@@ -201,8 +201,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         items2 = [metroImportAll(View, obj8), ];
                         const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
                         obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-                        Button2 = tmp(5244).Button;
-                        intl4 = tmp(1128).intl;
+                        Button2 = tmp(5245).Button;
+                        intl4 = tmp(1125).intl;
                         items2[1] = metroImportAll(View, obj10);
                         items1[1] = React4(View, obj7);
                         tmp11Result = tmp11(GradientBorder, obj2);
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
           if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
             let stringResult;
             const obj2 = { borderWidth: 2, direction: native.GradientBorder.Direction.VERTICAL, colors, borderRadius: nativeDefault.radii.lg, children: React4(View, obj) };
-            const GradientBorder = tmp(1202).GradientBorder;
+            const GradientBorder = tmp(1199).GradientBorder;
             const obj3 = {};
             const merged = Object.assign(upsellContainer.upsellContainer);
             obj = { style: obj3, children: items1 };
@@ -328,8 +328,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(5234).Text;
-            intl = tmp(1128).intl;
+            const Text = tmp(5235).Text;
+            intl = tmp(1125).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
               accessibilityRole: "button",
@@ -339,16 +339,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(6908).PressableOpacity;
-            intl2 = tmp(1128).intl;
+            const PressableOpacity = tmp(6910).PressableOpacity;
+            intl2 = tmp(1125).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5244).Button;
-            const intl3 = tmp(1128).intl;
+            Button = tmp(5245).Button;
+            const intl3 = tmp(1125).intl;
             const string = intl3.string;
-            const t = tmp(1128).t;
+            const t = tmp(1125).t;
             if (currentUser) {
               stringResult = string(t["0Q61kF"]);
             } else {
@@ -358,8 +358,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5244).Button;
-            intl4 = tmp(1128).intl;
+            Button2 = tmp(5245).Button;
+            intl4 = tmp(1125).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);
             tmp11Result = tmp11(GradientBorder, obj2);

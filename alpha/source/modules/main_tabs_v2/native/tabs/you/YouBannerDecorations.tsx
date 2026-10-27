@@ -1,28 +1,28 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9517
+// Function ID: 9518
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2069, 1392, 4820, 1394, 21, 1385, 587, 4971, 558, 9519, 7559, 5001, 4807, 576, 1128, 504, 8675, 8718, 8729, 4978, 683, 2053, 9563, 9565, 9566, 9567, 6713, 14154, 14157, 14159, 9425, 7488, 14156, 5258, 2]
+// Dependencies: [19, 17, 2066, 1389, 4821, 1391, 21, 1382, 587, 4972, 558, 9518, 7560, 5002, 4808, 576, 1125, 504, 8675, 8718, 8729, 4979, 683, 2050, 9562, 9564, 9565, 9568, 9569, 6714, 14168, 14176, 14184, 14186, 9424, 7489, 14177, 5259, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9518 (YouBannerDecorations)
+// Module 9517 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import useTrialOffer from "useTrialOffer" /* 7559 */;
-import PromotionsHooks from "PromotionsHooks" /* 9519 */;
-import tracking_Tracking from "tracking/Tracking" /* 9566 */;
-import QuestUtils from "QuestUtils" /* 9567 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2066 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
+import QuestTypes from "QuestTypes" /* 6714 */;
+import useTrialOffer from "useTrialOffer" /* 7560 */;
+import PromotionsHooks from "PromotionsHooks" /* 9518 */;
+import tracking_Tracking from "tracking/Tracking" /* 9568 */;
+import QuestUtils from "QuestUtils" /* 9569 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7;
   let tmp = navigateToSettings;
   let obj = navigateToSettings(576);
-  const cResult = obj.c(81);
+  const cResult = obj.c(84);
   navigateToSettings = navigateToSettings.navigateToSettings;
   const navigateToPremium = navigateToSettings.navigateToPremium;
   ({ navigateToShop, shopButtonRef, settingsButtonRef, paddingBottom } = navigateToSettings);
@@ -201,301 +201,321 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               if (cResult[15] === gradientSecondaryBackground) {
                 let tmp20;
                 let tmp36;
+                let placement;
                 if (cResult[16] === tmp18) {
                   tmp20 = cResult[17];
                 }
                 const tmp31 = closure_12(num, tmp20, gradientSecondaryBackground, containerBorderColor);
-                const tmpResult7 = tmp(2053);
+                const tmpResult7 = tmp(2050);
                 const hasPremiumSubscriptionToDisplay = tmpResult7.useHasPremiumSubscriptionToDisplay();
                 const tmp34 = closure_13();
                 dependencyMap = tmp34;
-                const tmp35 = navigateToPremium(9563)();
+                const tmp35 = navigateToPremium(9562)();
                 const showBadge = tmp35.showBadge;
                 const dismissBadge = tmp35.dismissBadge;
                 const _Symbol = Symbol;
                 if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmpResult8 = tmp(9565);
+                  const tmpResult8 = tmp(9564);
                   const isEligibleForQuests = tmpResult8.getIsEligibleForQuests();
                   cResult[18] = isEligibleForQuests;
                   tmp36 = isEligibleForQuests;
                 } else {
                   tmp36 = cResult[18];
                 }
-                const tmpResult9 = tmp(7559);
-                const tmp39 = null != tmpResult9.useTrialOffer(closure_9);
-                let closure_5 = tmp39;
-                if (cResult[19] === tmp39) {
+                const tmp38 = navigateToPremium(9565)("YouBannerDecorations");
+                if (tmp38 != null) {
+                  placement = tmp38.placement;
+                }
+                const tmpResult9 = tmp(7560);
+                const tmp40 = null != tmpResult9.useTrialOffer(closure_9);
+                let closure_5 = tmp40;
+                if (cResult[19] === tmp40) {
                   if (cResult[20] === tmp34) {
-                    let tmp40;
                     let tmp41;
+                    let tmp42;
                     if (cResult[21] === navigateToSettings) {
-                      tmp40 = cResult[22];
+                      tmp41 = cResult[22];
                     }
                     if (cResult[23] !== navigateToPremium) {
-                      function ee() {
+                      function ne() {
                         const obj = tracking_Tracking;
                         const result = obj.trackYouTabNitroIconPress();
                         navigateToPremium();
                       }
                       cResult[23] = navigateToPremium;
-                      cResult[24] = ee;
-                      tmp41 = ee;
+                      cResult[24] = ne;
+                      tmp42 = ne;
                     } else {
-                      tmp41 = cResult[24];
+                      tmp42 = cResult[24];
                     }
                     if (cResult[25] === dismissBadge) {
-                      let tmp42;
+                      let tmp43;
+                      let tmp45;
                       if (cResult[26] === showBadge) {
-                        tmp42 = cResult[27];
+                        tmp43 = cResult[27];
                       }
-                      if (cResult[28] === tmp42) {
-                        let tmp43;
-                        if (cResult[29] === showBadge) {
-                          tmp43 = cResult[30];
+                      if (cResult[28] !== ("you_screen" === placement)) {
+                        let tmp46 = null;
+                        if ("you_screen" === placement) {
+                          tmp46 = closure_10(tmp10(14168), {}, "conjure");
                         }
-                        if (cResult[31] === navigateToShop) {
-                          let tmp47;
-                          if (cResult[32] === shopButtonRef) {
-                            tmp47 = cResult[33];
+                        cResult[28] = "you_screen" === placement;
+                        cResult[29] = tmp46;
+                        tmp45 = tmp46;
+                      } else {
+                        tmp45 = cResult[29];
+                      }
+                      if (cResult[30] === tmp43) {
+                        let tmp48;
+                        if (cResult[31] === showBadge) {
+                          tmp48 = cResult[32];
+                        }
+                        if (cResult[33] === navigateToShop) {
+                          let tmp52;
+                          if (cResult[34] === shopButtonRef) {
+                            tmp52 = cResult[35];
                           }
-                          if (cResult[34] === hasPremiumSubscriptionToDisplay) {
-                            let tmp50;
-                            let tmp54;
-                            if (cResult[35] === tmp41) {
-                              tmp50 = cResult[36];
+                          if (cResult[36] === hasPremiumSubscriptionToDisplay) {
+                            let tmp55;
+                            let tmp59;
+                            if (cResult[37] === tmp42) {
+                              tmp55 = cResult[38];
                             }
                             const _Symbol2 = Symbol;
-                            if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
-                              const intl4 = tmp(1128).intl;
-                              const stringResult = intl4.string(tmp(1128).t["3D5yo/"]);
-                              cResult[37] = stringResult;
-                              tmp54 = stringResult;
+                            if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
+                              const intl4 = tmp(1125).intl;
+                              const stringResult = intl4.string(tmp(1125).t["3D5yo/"]);
+                              cResult[39] = stringResult;
+                              tmp59 = stringResult;
                             } else {
-                              tmp54 = cResult[37];
+                              tmp59 = cResult[39];
                             }
-                            if (cResult[38] === tmp34) {
-                              if (cResult[39] === tmp40) {
-                                let tmp56;
-                                if (cResult[40] === settingsButtonRef) {
-                                  tmp56 = cResult[41];
+                            if (cResult[40] === tmp34) {
+                              if (cResult[41] === tmp41) {
+                                let tmp61;
+                                if (cResult[42] === settingsButtonRef) {
+                                  tmp61 = cResult[43];
                                 }
-                                if (cResult[42] === tmp43) {
-                                  if (cResult[43] === tmp47) {
-                                    if (cResult[44] === tmp50) {
-                                      let tmp60;
-                                      if (cResult[45] === tmp56) {
-                                        tmp60 = cResult[46];
-                                      }
-                                      if (cResult[47] === tmp60) {
-                                        let tmp62;
-                                        if (cResult[48] === tmp5) {
-                                          tmp62 = cResult[49];
+                                if (cResult[44] === tmp45) {
+                                  if (cResult[45] === tmp48) {
+                                    if (cResult[46] === tmp52) {
+                                      if (cResult[47] === tmp55) {
+                                        let tmp65;
+                                        if (cResult[48] === tmp61) {
+                                          tmp65 = cResult[49];
                                         }
-                                        if (cResult[50] === tmp31.buttonsFloating) {
-                                          let tmp65;
-                                          let tmp70;
-                                          let tmp69;
-                                          let tmp71;
-                                          let tmp73;
-                                          if (cResult[51] === tmp62) {
-                                            tmp65 = cResult[52];
+                                        if (cResult[50] === tmp65) {
+                                          let tmp67;
+                                          if (cResult[51] === tmp5) {
+                                            tmp67 = cResult[52];
                                           }
-                                          const color = tmp31.containerFloatingGradient.color;
-                                          const _Symbol3 = Symbol;
-                                          if (cResult[53] === Symbol.for("react.memo_cache_sentinel")) {
-                                            const point = { x: 0, y: 0 };
-                                            const point1 = { x: 0, y: 1 };
-                                            cResult[53] = point;
-                                            cResult[54] = point1;
-                                            tmp70 = point1;
-                                            tmp69 = point;
-                                          } else {
-                                            tmp69 = cResult[53];
-                                            tmp70 = cResult[54];
-                                          }
-                                          if (cResult[55] !== color) {
-                                            const obj21 = navigateToPremium(683)(color);
-                                            const alphaResult = obj21.alpha(0);
-                                            const hexResult = alphaResult.hex();
-                                            cResult[55] = color;
-                                            cResult[56] = hexResult;
-                                            tmp71 = hexResult;
-                                          } else {
-                                            tmp71 = cResult[56];
-                                          }
-                                          if (cResult[57] !== color) {
-                                            const obj23 = navigateToPremium(683)(color);
-                                            const alphaResult1 = obj23.alpha(1);
-                                            const hexResult1 = alphaResult1.hex();
-                                            cResult[57] = color;
-                                            cResult[58] = hexResult1;
-                                            tmp73 = hexResult1;
-                                          } else {
-                                            tmp73 = cResult[58];
-                                          }
-                                          if (cResult[59] === tmp71) {
+                                          if (cResult[53] === tmp31.buttonsFloating) {
+                                            let tmp70;
                                             let tmp75;
-                                            if (cResult[60] === tmp73) {
-                                              tmp75 = cResult[61];
+                                            let tmp74;
+                                            let tmp76;
+                                            let tmp78;
+                                            if (cResult[54] === tmp67) {
+                                              tmp70 = cResult[55];
                                             }
-                                            if (cResult[62] === tmp75) {
-                                              let tmp76;
-                                              let tmp83;
-                                              if (cResult[63] === tmp31.containerFloatingGradient) {
-                                                tmp76 = cResult[64];
+                                            const color = tmp31.containerFloatingGradient.color;
+                                            const _Symbol3 = Symbol;
+                                            if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
+                                              const point = { x: 0, y: 0 };
+                                              const point1 = { x: 0, y: 1 };
+                                              cResult[56] = point;
+                                              cResult[57] = point1;
+                                              tmp75 = point1;
+                                              tmp74 = point;
+                                            } else {
+                                              tmp74 = cResult[56];
+                                              tmp75 = cResult[57];
+                                            }
+                                            if (cResult[58] !== color) {
+                                              const obj21 = navigateToPremium(683)(color);
+                                              const alphaResult = obj21.alpha(0);
+                                              const hexResult = alphaResult.hex();
+                                              cResult[58] = color;
+                                              cResult[59] = hexResult;
+                                              tmp76 = hexResult;
+                                            } else {
+                                              tmp76 = cResult[59];
+                                            }
+                                            if (cResult[60] !== color) {
+                                              const obj23 = navigateToPremium(683)(color);
+                                              const alphaResult1 = obj23.alpha(1);
+                                              const hexResult1 = alphaResult1.hex();
+                                              cResult[60] = color;
+                                              cResult[61] = hexResult1;
+                                              tmp78 = hexResult1;
+                                            } else {
+                                              tmp78 = cResult[61];
+                                            }
+                                            if (cResult[62] === tmp76) {
+                                              let tmp80;
+                                              if (cResult[63] === tmp78) {
+                                                tmp80 = cResult[64];
                                               }
-                                              if (cResult[65] !== tmp31.endcap) {
-                                                let obj2 = { style: tmp31.endcap, pointerEvents: "none" };
-                                                const tmp86 = closure_10(dismissBadge, obj2);
-                                                cResult[65] = tmp31.endcap;
-                                                cResult[66] = tmp86;
-                                                tmp83 = tmp86;
-                                              } else {
-                                                tmp83 = cResult[66];
-                                              }
-                                              if (cResult[67] === tmp65) {
-                                                let tmp87;
-                                                let tmp91;
-                                                if (cResult[68] === tmp31.containerFloatingContent) {
-                                                  tmp87 = cResult[69];
+                                              if (cResult[65] === tmp80) {
+                                                let tmp81;
+                                                let tmp88;
+                                                if (cResult[66] === tmp31.containerFloatingGradient) {
+                                                  tmp81 = cResult[67];
                                                 }
-                                                if (cResult[70] !== tmp31.endcap) {
-                                                  const obj3 = { style: tmp31.endcap, pointerEvents: "none" };
-                                                  const tmp94 = closure_10(dismissBadge, obj3);
-                                                  cResult[70] = tmp31.endcap;
-                                                  cResult[71] = tmp94;
-                                                  tmp91 = tmp94;
+                                                if (cResult[68] !== tmp31.endcap) {
+                                                  let obj2 = { style: tmp31.endcap, pointerEvents: "none" };
+                                                  const tmp91 = closure_10(dismissBadge, obj2);
+                                                  cResult[68] = tmp31.endcap;
+                                                  cResult[69] = tmp91;
+                                                  tmp88 = tmp91;
                                                 } else {
-                                                  tmp91 = cResult[71];
+                                                  tmp88 = cResult[69];
                                                 }
-                                                if (cResult[72] === tmp31.containerFloating) {
-                                                  if (cResult[73] === tmp83) {
-                                                    if (cResult[74] === tmp87) {
-                                                      let tmp95;
-                                                      if (cResult[75] === tmp91) {
-                                                        tmp95 = cResult[76];
-                                                      }
-                                                      if (cResult[77] === tmp31.containerFloatingWrap) {
-                                                        if (cResult[78] === tmp76) {
-                                                          let tmp99;
-                                                          if (cResult[79] === tmp95) {
-                                                            tmp99 = cResult[80];
-                                                          }
-                                                          return tmp99;
+                                                if (cResult[70] === tmp70) {
+                                                  let tmp92;
+                                                  let tmp96;
+                                                  if (cResult[71] === tmp31.containerFloatingContent) {
+                                                    tmp92 = cResult[72];
+                                                  }
+                                                  if (cResult[73] !== tmp31.endcap) {
+                                                    const obj3 = { style: tmp31.endcap, pointerEvents: "none" };
+                                                    const tmp99 = closure_10(dismissBadge, obj3);
+                                                    cResult[73] = tmp31.endcap;
+                                                    cResult[74] = tmp99;
+                                                    tmp96 = tmp99;
+                                                  } else {
+                                                    tmp96 = cResult[74];
+                                                  }
+                                                  if (cResult[75] === tmp31.containerFloating) {
+                                                    if (cResult[76] === tmp88) {
+                                                      if (cResult[77] === tmp92) {
+                                                        let tmp100;
+                                                        if (cResult[78] === tmp96) {
+                                                          tmp100 = cResult[79];
                                                         }
+                                                        if (cResult[80] === tmp31.containerFloatingWrap) {
+                                                          if (cResult[81] === tmp81) {
+                                                            let tmp104;
+                                                            if (cResult[82] === tmp100) {
+                                                              tmp104 = cResult[83];
+                                                            }
+                                                            return tmp104;
+                                                          }
+                                                        }
+                                                        const obj4 = { style: tmp31.containerFloatingWrap, pointerEvents: "box-none", children: items1 };
+                                                        items1 = [tmp81, tmp100];
+                                                        const tmp107 = closure_11(dismissBadge, obj4);
+                                                        cResult[80] = tmp31.containerFloatingWrap;
+                                                        cResult[81] = tmp81;
+                                                        cResult[82] = tmp100;
+                                                        cResult[83] = tmp107;
+                                                        tmp104 = tmp107;
                                                       }
-                                                      const obj4 = { style: tmp31.containerFloatingWrap, pointerEvents: "box-none", children: items1 };
-                                                      items1 = [tmp76, tmp95];
-                                                      const tmp102 = closure_11(dismissBadge, obj4);
-                                                      cResult[77] = tmp31.containerFloatingWrap;
-                                                      cResult[78] = tmp76;
-                                                      cResult[79] = tmp95;
-                                                      cResult[80] = tmp102;
-                                                      tmp99 = tmp102;
                                                     }
                                                   }
+                                                  const obj5 = { style: tmp31.containerFloating, children: items2 };
+                                                  items2 = [tmp88, tmp92, tmp96];
+                                                  const tmp103 = closure_11(dismissBadge, obj5);
+                                                  cResult[75] = tmp31.containerFloating;
+                                                  cResult[76] = tmp88;
+                                                  cResult[77] = tmp92;
+                                                  cResult[78] = tmp96;
+                                                  cResult[79] = tmp103;
+                                                  tmp100 = tmp103;
                                                 }
-                                                const obj5 = { style: tmp31.containerFloating, children: items2 };
-                                                items2 = [tmp83, tmp87, tmp91];
-                                                const tmp98 = closure_11(dismissBadge, obj5);
-                                                cResult[72] = tmp31.containerFloating;
-                                                cResult[73] = tmp83;
-                                                cResult[74] = tmp87;
-                                                cResult[75] = tmp91;
-                                                cResult[76] = tmp98;
-                                                tmp95 = tmp98;
+                                                const obj6 = { style: tmp31.containerFloatingContent, children: tmp70 };
+                                                const tmp95 = closure_10(dismissBadge, obj6);
+                                                cResult[70] = tmp70;
+                                                cResult[71] = tmp31.containerFloatingContent;
+                                                cResult[72] = tmp95;
+                                                tmp92 = tmp95;
                                               }
-                                              const obj6 = { style: tmp31.containerFloatingContent, children: tmp65 };
-                                              const tmp90 = closure_10(dismissBadge, obj6);
-                                              cResult[67] = tmp65;
-                                              cResult[68] = tmp31.containerFloatingContent;
-                                              cResult[69] = tmp90;
-                                              tmp87 = tmp90;
+                                              const obj9 = { style: tmp31.containerFloatingGradient, pointerEvents: "none" };
+                                              const tmp10Result = navigateToPremium(5259);
+                                              const merged = Object.assign(tmp80);
+                                              const tmp87 = closure_10(tmp10Result, obj9);
+                                              cResult[65] = tmp80;
+                                              cResult[66] = tmp31.containerFloatingGradient;
+                                              cResult[67] = tmp87;
+                                              tmp81 = tmp87;
                                             }
-                                            const obj9 = { style: tmp31.containerFloatingGradient, pointerEvents: "none" };
-                                            const tmp10Result = navigateToPremium(5258);
-                                            const merged = Object.assign(tmp75);
-                                            const tmp82 = closure_10(tmp10Result, obj9);
-                                            cResult[62] = tmp75;
-                                            cResult[63] = tmp31.containerFloatingGradient;
-                                            cResult[64] = tmp82;
-                                            tmp76 = tmp82;
+                                            const obj10 = { start: tmp74, end: tmp75, colors: items3 };
+                                            items3 = [tmp76, tmp78];
+                                            cResult[62] = tmp76;
+                                            cResult[63] = tmp78;
+                                            cResult[64] = obj10;
+                                            tmp80 = obj10;
                                           }
-                                          const obj10 = { start: tmp69, end: tmp70, colors: items3 };
-                                          items3 = [tmp71, tmp73];
-                                          cResult[59] = tmp71;
-                                          cResult[60] = tmp73;
-                                          cResult[61] = obj10;
-                                          tmp75 = obj10;
+                                          const obj11 = { style: tmp31.buttonsFloating, pointerEvents: "box-none", children: tmp67 };
+                                          const tmp73 = closure_10(dismissBadge, obj11);
+                                          cResult[53] = tmp31.buttonsFloating;
+                                          cResult[54] = tmp67;
+                                          cResult[55] = tmp73;
+                                          tmp70 = tmp73;
                                         }
-                                        const obj11 = { style: tmp31.buttonsFloating, pointerEvents: "box-none", children: tmp62 };
-                                        const tmp68 = closure_10(dismissBadge, obj11);
-                                        cResult[50] = tmp31.buttonsFloating;
-                                        cResult[51] = tmp62;
-                                        cResult[52] = tmp68;
-                                        tmp65 = tmp68;
+                                        const obj12 = { children: tmp65 };
+                                        const tmp69 = closure_10(tmp(14177).YouScreenNavIconMeasurer, obj12, tmp5);
+                                        cResult[50] = tmp65;
+                                        cResult[51] = tmp5;
+                                        cResult[52] = tmp69;
+                                        tmp67 = tmp69;
                                       }
-                                      const obj12 = { children: tmp60 };
-                                      const tmp64 = closure_10(tmp(14156).YouScreenNavIconMeasurer, obj12, tmp5);
-                                      cResult[47] = tmp60;
-                                      cResult[48] = tmp5;
-                                      cResult[49] = tmp64;
-                                      tmp62 = tmp64;
                                     }
                                   }
                                 }
-                                const items4 = [tmp43, tmp47, tmp50, tmp56];
+                                const items4 = [tmp45, tmp48, tmp52, tmp55, tmp61];
                                 const found = items4.filter((item) => null != item);
-                                cResult[42] = tmp43;
-                                cResult[43] = tmp47;
-                                cResult[44] = tmp50;
-                                cResult[45] = tmp56;
-                                cResult[46] = found;
-                                tmp60 = found;
+                                cResult[44] = tmp45;
+                                cResult[45] = tmp48;
+                                cResult[46] = tmp52;
+                                cResult[47] = tmp55;
+                                cResult[48] = tmp61;
+                                cResult[49] = found;
+                                tmp65 = found;
                               }
                             }
-                            const obj13 = { ref: settingsButtonRef, IconComponent: tmp(7488).SettingsIcon, accessibilityLabel: tmp54, onPress: tmp40, showRedDot: tmp34, testID: "you_tab_settings_button" };
-                            const tmp10Result5 = navigateToPremium(14154);
-                            const tmp59 = closure_10(tmp10Result5, obj13, "settings");
-                            cResult[38] = tmp34;
-                            cResult[39] = tmp40;
-                            cResult[40] = settingsButtonRef;
-                            cResult[41] = tmp59;
-                            tmp56 = tmp59;
+                            const obj13 = { ref: settingsButtonRef, IconComponent: tmp(7489).SettingsIcon, accessibilityLabel: tmp59, onPress: tmp41, showRedDot: tmp34, testID: "you_tab_settings_button" };
+                            const tmp10Result5 = navigateToPremium(14176);
+                            const tmp64 = closure_10(tmp10Result5, obj13, "settings");
+                            cResult[40] = tmp34;
+                            cResult[41] = tmp41;
+                            cResult[42] = settingsButtonRef;
+                            cResult[43] = tmp64;
+                            tmp61 = tmp64;
                           }
-                          let tmp51 = null;
+                          let tmp56 = null;
                           if (!hasPremiumSubscriptionToDisplay) {
-                            const obj14 = { IconComponent: tmp(9425).NitroWheelIcon, accessibilityLabel: intl2.string(tmp(1128).t.Ipxkog), label: intl3.string(tmp(1128).t.Ipxkog), onPress: tmp41 };
-                            const tmp10Result6 = navigateToPremium(14154);
-                            intl2 = tmp(1128).intl;
-                            intl3 = tmp(1128).intl;
-                            tmp51 = closure_10(tmp10Result6, obj14, "nitro");
+                            const obj14 = { IconComponent: tmp(9424).NitroWheelIcon, accessibilityLabel: intl2.string(tmp(1125).t.Ipxkog), label: intl3.string(tmp(1125).t.Ipxkog), onPress: tmp42 };
+                            const tmp10Result6 = navigateToPremium(14176);
+                            intl2 = tmp(1125).intl;
+                            intl3 = tmp(1125).intl;
+                            tmp56 = closure_10(tmp10Result6, obj14, "nitro");
                           }
-                          cResult[34] = hasPremiumSubscriptionToDisplay;
-                          cResult[35] = tmp41;
-                          cResult[36] = tmp51;
-                          tmp50 = tmp51;
+                          cResult[36] = hasPremiumSubscriptionToDisplay;
+                          cResult[37] = tmp42;
+                          cResult[38] = tmp56;
+                          tmp55 = tmp56;
                         }
                         const obj15 = { shopButtonRef, navigateToShop };
-                        const tmp49 = closure_10(navigateToPremium(14159), obj15, "shop");
-                        cResult[31] = navigateToShop;
-                        cResult[32] = shopButtonRef;
-                        cResult[33] = tmp49;
-                        tmp47 = tmp49;
+                        const tmp54 = closure_10(navigateToPremium(14186), obj15, "shop");
+                        cResult[33] = navigateToShop;
+                        cResult[34] = shopButtonRef;
+                        cResult[35] = tmp54;
+                        tmp52 = tmp54;
                       }
-                      let tmp44 = null;
+                      let tmp49 = null;
                       if (tmp36) {
-                        const obj16 = { IconComponent: tmp(14157).QuestsIcon, accessibilityLabel: intl.string(tmp(1128).t.JALI2K), onPress: tmp42, showRedDot: showBadge };
-                        const tmp10Result7 = navigateToPremium(14154);
-                        intl = tmp(1128).intl;
-                        tmp44 = closure_10(tmp10Result7, obj16, "quests");
+                        const obj16 = { IconComponent: tmp(14184).QuestsIcon, accessibilityLabel: intl.string(tmp(1125).t.JALI2K), onPress: tmp43, showRedDot: showBadge };
+                        const tmp10Result7 = navigateToPremium(14176);
+                        intl = tmp(1125).intl;
+                        tmp49 = closure_10(tmp10Result7, obj16, "quests");
                       }
-                      cResult[28] = tmp42;
-                      cResult[29] = showBadge;
-                      cResult[30] = tmp44;
-                      tmp43 = tmp44;
+                      cResult[30] = tmp43;
+                      cResult[31] = showBadge;
+                      cResult[32] = tmp49;
+                      tmp48 = tmp49;
                     }
-                    function te() {
+                    function oe() {
                       const tmp = showBadge;
                       if (tmp) {
                         dismissBadge(ContentDismissActionType.TAKE_ACTION);
@@ -506,8 +526,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     }
                     cResult[25] = dismissBadge;
                     cResult[26] = showBadge;
-                    cResult[27] = te;
-                    tmp42 = te;
+                    cResult[27] = oe;
+                    tmp43 = oe;
                   }
                 }
                 class J {
@@ -519,19 +539,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     let tmp5 = closure_5;
                     if (tmp5) {
                       const tmpResult = DismissibleContentUnsafeUtils;
-                      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4807).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+                      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
                     }
                     if (tmp5) {
                       const tmpResult2 = DismissibleContentUnsafeUtils;
-                      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4807).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+                      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
                     }
                   }
                 }
-                cResult[19] = tmp39;
+                cResult[19] = tmp40;
                 cResult[20] = tmp34;
                 cResult[21] = navigateToSettings;
                 cResult[22] = J;
-                tmp40 = J;
+                tmp41 = J;
               }
               let hexResult3 = null;
               if (null != tmp18) {
@@ -550,7 +570,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
         }
-        const tmpResult10 = tmp(4978);
+        const tmpResult10 = tmp(4979);
         if (!tmpResult10.isThemeLight(theme)) {
           tmp19 = containerBackground;
         } else {
@@ -667,12 +687,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   dismissBadge = tmp15.dismissBadge;
   const tmp2Result7 = navigateToSettings(gradientSecondaryBackground[25]);
   const isEligibleForQuests = tmp2Result7.getIsEligibleForQuests();
+  const tmp17 = tmp5(gradientSecondaryBackground[26])("YouBannerDecorations");
+  let placement;
+  if (tmp17 != null) {
+    placement = tmp17.placement;
+  }
   const tmp2Result8 = navigateToSettings(gradientSecondaryBackground[12]);
-  const tmp17 = null != tmp2Result8.useTrialOffer(closure_9);
-  currentUser = tmp17;
-  const items2 = [tmp14, navigateToSettings, tmp17];
+  const tmp19 = null != tmp2Result8.useTrialOffer(closure_9);
+  currentUser = tmp19;
+  const items2 = [tmp14, navigateToSettings, tmp19];
   const items3 = [navigateToPremium];
-  const callback = react.useCallback(() => {
+  const callback = obj4.useCallback(() => {
     const obj = tracking_Tracking;
     const obj2 = { isBadged };
     const result = obj.trackYouTabSettingsIconPress(obj2);
@@ -680,46 +705,61 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4807).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4807).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];
-  const callback1 = react.useCallback(() => {
+  const callback1 = obj4.useCallback(() => {
     const obj = tracking_Tracking;
     const result = obj.trackYouTabNitroIconPress();
     navigateToPremium();
   }, items3);
-  let tmp21 = null;
-  if (isEligibleForQuests) {
-    let obj2 = { IconComponent: tmp2(tmp3[30]).QuestsIcon, accessibilityLabel: intl.string(tmp2(tmp3[16]).t.JALI2K), onPress: tmp20, showRedDot: showBadge };
-    const tmp5Result = tmp5(gradientSecondaryBackground[29]);
-    intl = tmp2(tmp3[16]).intl;
-    tmp21 = closure_10(tmp5Result, obj2, "quests");
+  let tmp23 = null;
+  const callback2 = obj4.useCallback(() => {
+    const tmp = showBadge;
+    if (tmp) {
+      dismissBadge(ContentDismissActionType.TAKE_ACTION);
+    }
+    const obj = QuestUtils;
+    const obj2 = { fromContent: QuestTypes.QuestContent.USER_PROFILE_HEADER };
+    obj.openQuestHome(obj2);
+  }, items4);
+  if ("you_screen" === placement) {
+    tmp23 = closure_10(tmp5(tmp3[30]), {}, "conjure");
   }
-  const items5 = [tmp21, closure_10(tmp5(tmp3[31]), { shopButtonRef, navigateToShop }, "shop"), , ];
-  let tmp24Result = null;
+  const items5 = [tmp23, , , , ];
+  let tmp25 = null;
+  if (isEligibleForQuests) {
+    let obj2 = { IconComponent: tmp2(tmp3[32]).QuestsIcon, accessibilityLabel: intl.string(tmp2(tmp3[16]).t.JALI2K), onPress: callback2, showRedDot: showBadge };
+    const tmp5Result = tmp5(gradientSecondaryBackground[31]);
+    intl = tmp2(tmp3[16]).intl;
+    tmp25 = closure_10(tmp5Result, obj2, "quests");
+  }
+  items5[1] = tmp25;
+  items5[2] = closure_10(tmp5(gradientSecondaryBackground[33]), { shopButtonRef, navigateToShop }, "shop");
+  let tmp28Result = null;
   if (!hasPremiumSubscriptionToDisplay) {
-    const obj3 = { IconComponent: navigateToSettings(gradientSecondaryBackground[32]).NitroWheelIcon, accessibilityLabel: intl2.string(navigateToSettings(gradientSecondaryBackground[16]).t.Ipxkog), label: intl3.string(navigateToSettings(gradientSecondaryBackground[16]).t.Ipxkog), onPress: callback1 };
-    const tmp5Result4 = tmp5(gradientSecondaryBackground[29]);
+    const obj3 = { IconComponent: navigateToSettings(gradientSecondaryBackground[34]).NitroWheelIcon, accessibilityLabel: intl2.string(navigateToSettings(gradientSecondaryBackground[16]).t.Ipxkog), label: intl3.string(navigateToSettings(gradientSecondaryBackground[16]).t.Ipxkog), onPress: callback1 };
+    const tmp5Result4 = tmp5(gradientSecondaryBackground[31]);
     intl2 = tmp2(tmp3[16]).intl;
     intl3 = tmp2(tmp3[16]).intl;
-    tmp24Result = tmp24(tmp5Result4, obj3, "nitro");
+    tmp28Result = tmp28(tmp5Result4, obj3, "nitro");
   }
-  items5[2] = tmp24Result;
-  const obj5 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[33]).SettingsIcon, accessibilityLabel: intl4.string(navigateToSettings(gradientSecondaryBackground[16]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14, testID: "you_tab_settings_button" };
-  const tmp5Result5 = tmp5(gradientSecondaryBackground[29]);
+  items5[3] = tmp28Result;
+  const obj5 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[35]).SettingsIcon, accessibilityLabel: intl4.string(navigateToSettings(gradientSecondaryBackground[16]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14, testID: "you_tab_settings_button" };
+  const tmp5Result5 = tmp5(gradientSecondaryBackground[31]);
   intl4 = tmp2(tmp3[16]).intl;
-  items5[3] = closure_10(tmp5Result5, obj5, "settings");
-  const obj6 = { style: tmp12.buttonsFloating, pointerEvents: "box-none", children: closure_10(navigateToSettings(gradientSecondaryBackground[34]).YouScreenNavIconMeasurer, { children: found }, tmp) };
+  items5[4] = closure_10(tmp5Result5, obj5, "settings");
+  const obj6 = { style: tmp12.buttonsFloating, pointerEvents: "box-none", children: closure_10(navigateToSettings(gradientSecondaryBackground[36]).YouScreenNavIconMeasurer, { children: found }, tmp) };
   found = items5.filter((item) => null != item);
   color = tmp12.containerFloatingGradient.color;
   const items6 = [color];
   const obj7 = { style: tmp12.containerFloatingWrap, pointerEvents: "box-none", children: items7 };
-  const tmp24Result2 = closure_10(isBadged, obj6);
+  const tmp28Result2 = closure_10(isBadged, obj6);
   const memo = obj4.useMemo(() => {
     let items;
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items };
@@ -733,14 +773,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return obj;
   }, items6);
   const obj8 = { style: tmp12.containerFloatingGradient, pointerEvents: "none" };
-  const tmp5Result6 = tmp5(gradientSecondaryBackground[35]);
+  const tmp5Result6 = tmp5(gradientSecondaryBackground[37]);
   const merged = Object.assign(memo);
   items7 = [closure_10(tmp5Result6, obj8), ];
   const obj9 = { style: tmp12.containerFloating, children: items8 };
   items8 = [, , ];
   const obj10 = { style: tmp12.endcap, pointerEvents: "none" };
   items8[0] = closure_10(isBadged, obj10);
-  const obj11 = { style: tmp12.containerFloatingContent, children: tmp24Result2 };
+  const obj11 = { style: tmp12.containerFloatingContent, children: tmp28Result2 };
   items8[1] = closure_10(isBadged, obj11);
   const obj12 = { style: tmp12.endcap, pointerEvents: "none" };
   items8[2] = closure_10(isBadged, obj12);

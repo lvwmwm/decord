@@ -1,19 +1,25 @@
-// Module ID: 12968
-// Function ID: 12969
+// Module ID: 12980
+// Function ID: 12981
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 12956, 21, 4971, 587, 6039, 1128, 6365, 6364, 558, 576, 504, 5234, 6362, 2]
+// Dependencies: [17, 12968, 21, 4972, 587, 6041, 6366, 1125, 6040, 558, 576, 504, 5235, 6364, 2]
 
-// Module 12968 (CheckpointCharacterStage)
+// Module 12980 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTrait from "CheckpointTrait" /* 6039 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6364 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6365 */;
-import CheckpointStore from "CheckpointStore" /* 12956 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6040 */;
+import CheckpointTrait from "CheckpointTrait" /* 6041 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6366 */;
+import CheckpointStore from "CheckpointStore" /* 12968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
 
 let closure_4;
 let hasOwnProperty;
@@ -28,42 +34,50 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   let items1;
   let items2;
   let stage;
-  let stateFromStores;
   let tmp12;
   let tmp15;
   let tmp17;
   let tmp5;
   let tmp6;
   let tmp9;
-  let obj = stateFromStores(576);
+  let obj = react;
   const cResult = obj.c(17);
   ({ stage, activeCustomizationOption } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CheckpointStore];
-    const fn = function h() {
-      return CheckpointStore.selectedCharacterTraits;
-    };
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = T;
     tmp5 = items;
-    tmp6 = fn;
+    tmp6 = T;
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = stateFromStores(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const container = tmp4.container;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = closure_4(stateFromStores(5234).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
-    cResult[2] = tmp11;
+    const tmp11 = closure_4(Text_Text.Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
     tmp9 = tmp11;
   } else {
     tmp9 = cResult[2];
   }
   if (cResult[3] !== stage) {
-    const obj2 = { color: "text-muted", variant: "text-md/medium", children: stage };
-    const tmp14 = closure_4(stateFromStores(5234).Text, obj2);
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
     cResult[3] = stage;
     cResult[4] = tmp14;
     tmp12 = tmp14;
@@ -71,9 +85,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     tmp12 = cResult[4];
   }
   if (cResult[5] !== activeCustomizationOption) {
-    const tmpResult2 = stateFromStores(6362);
+    const tmpResult2 = CheckpointCustomizationUtils;
     const customizationOptionName = tmpResult2.getCustomizationOptionName(activeCustomizationOption);
-    cResult[5] = activeCustomizationOption;
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
     cResult[6] = customizationOptionName;
     tmp15 = customizationOptionName;
   } else {
@@ -81,8 +99,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   }
   if (cResult[7] !== tmp15) {
     const obj3 = { color: "text-muted", variant: "text-md/medium", children: items1 };
-    items1 = ["Trait: ", tmp15];
-    const tmp19 = closure_5(stateFromStores(5234).Heading, obj3);
+    items1 = ["Trait: "];
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
+    const tmp19 = closure_5(Text_Text.Heading, obj3);
     cResult[7] = tmp15;
     cResult[8] = tmp19;
     tmp17 = tmp19;
@@ -90,51 +113,70 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     tmp17 = cResult[8];
   }
   if (cResult[9] !== stateFromStores) {
-    let tmp21;
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
         constructor(children) {
           const obj = { color: "text-muted", variant: "text-md/medium", children };
-          return closure_1_4(stateFromStores(dependencyMap[12]).Text, obj, children);
+          return closure_1_4(require("Text/Text").Text, obj, children);
         }
       }
       cResult[11] = I;
-      tmp21 = I;
+      class T {
+        constructor() {
+          return CheckpointStore.selectedCharacterTraits;
+        }
+      }
     } else {
       class I {
         constructor(children) {
           const obj = { color: "text-muted", variant: "text-md/medium", children };
-          return closure_1_4(stateFromStores(dependencyMap[12]).Text, obj, children);
+          return closure_1_4(require("Text/Text").Text, obj, children);
         }
       }
     }
+    class T {
+      constructor() {
+        return CheckpointStore.selectedCharacterTraits;
+      }
+    }
     const _Object = Object;
-    const values = Object.values(tmp(6039).CheckpointTrait);
+    const values = Object.values(tmp(6041).CheckpointTrait);
     const flatMapResult = values.flatMap((item) => {
-      let items;
       if (null == stateFromStores[item]) {
-        items = [];
+        return [];
       } else if (item !== CheckpointTrait.CheckpointTrait.OUTFIT) {
-        const intl2 = tmp7(1128).intl;
+        const tmp9 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_TO_OPTION_NAMES[item][stateFromStores[item]];
+        let str9 = "";
+        if (null != tmp9) {
+          const intl3 = tmp11(1125).intl;
+          str9 = intl3.string(tmp9);
+        }
         const _HermesInternal2 = HermesInternal;
-        const items1 = ["" + item + ": " + intl2.string(CheckpointTraitOptionNames.CHECKPOINT_TRAIT_OPTION_NAMES[item][stateFromStores[item]])];
-        items = items1;
+        const items = ["" + item + ": " + str9];
+        return items;
       } else {
-        const intl3 = tmp7(1128).intl;
-        const string = intl3.string;
-        const tmp9 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_OPTION_NAMES[item];
-        const tmp7Result = CheckpointCharacterTraits;
-        let outfitDefaultOptionId = tmp7Result.getOutfitDefaultOptionId(tmp);
+        const tmp11Result = CheckpointCharacterTraits;
+        let outfitDefaultOptionId = tmp11Result.getOutfitDefaultOptionId(tmp);
+        const tmp13 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_TO_OPTION_NAMES[item];
         if (outfitDefaultOptionId == null) {
           outfitDefaultOptionId = tmp;
         }
-        const stringResult = string(tmp9[outfitDefaultOptionId]);
-        const intl = tmp7(1128).intl;
+        const tmp4 = CheckpointTraitOptionNames.CHECKPOINT_OUTFIT_TO_COLOR_NAME[stateFromStores[item]];
+        let str2 = "";
+        if (null != tmp13[outfitDefaultOptionId]) {
+          const intl = tmp11(1125).intl;
+          str2 = intl.string(tmp3);
+        }
+        let str3 = "";
+        if (null != tmp4) {
+          const intl2 = tmp11(1125).intl;
+          str3 = intl2.string(tmp4);
+        }
         const _HermesInternal = HermesInternal;
-        items = ["" + item + ": " + stringResult + " (" + intl.string(CheckpointTraitOptionNames.CHECKPOINT_OUTFIT_COLOR_OPTION_NAMES[stateFromStores[item]]) + ")"];
+        const items1 = ["" + item + ": " + str2 + " (" + str3 + ")"];
+        return items1;
       }
-      return items;
     });
     const mapped = flatMapResult.map(tmp21);
     cResult[9] = stateFromStores;
@@ -143,7 +185,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     class I {
       constructor(children) {
         const obj = { color: "text-muted", variant: "text-md/medium", children };
-        return closure_1_4(stateFromStores(dependencyMap[12]).Text, obj, children);
+        return closure_1_4(require("Text/Text").Text, obj, children);
       }
     }
   }
@@ -151,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     class I {
       constructor(children) {
         const obj = { color: "text-muted", variant: "text-md/medium", children };
-        return closure_1_4(stateFromStores(dependencyMap[12]).Text, obj, children);
+        return closure_1_4(require("Text/Text").Text, obj, children);
       }
     }
   }
@@ -175,38 +217,49 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   let items = [CheckpointStore];
   const obj2 = { style: tmp.container, children: items1 };
   stateFromStores = obj.useStateFromStores(items, () => CheckpointStore.selectedCharacterTraits);
-  items1 = [closure_4(stateFromStores(5234).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" }), closure_4(stateFromStores(5234).Text, { color: "text-muted", variant: "text-md/medium", children: stage }), , ];
+  items1 = [closure_4(stateFromStores(5235).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" }), closure_4(stateFromStores(5235).Text, { color: "text-muted", variant: "text-md/medium", children: stage }), , ];
   const obj3 = { color: "text-muted", variant: "text-md/medium", children: items2 };
-  const Heading = stateFromStores(5234).Heading;
+  const Heading = stateFromStores(5235).Heading;
   items2 = ["Trait: "];
-  const obj4 = stateFromStores(6362);
+  const obj4 = stateFromStores(6364);
   items2[1] = obj4.getCustomizationOptionName(activeCustomizationOption);
   items1[2] = closure_5(Heading, obj3);
-  const values = Object.values(stateFromStores(6039).CheckpointTrait);
+  const values = Object.values(stateFromStores(6041).CheckpointTrait);
   const flatMapResult = values.flatMap((item) => {
-    let items;
     if (null == stateFromStores[item]) {
-      items = [];
+      return [];
     } else if (item !== CheckpointTrait.CheckpointTrait.OUTFIT) {
-      const intl2 = tmp7(1128).intl;
+      const tmp9 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_TO_OPTION_NAMES[item][stateFromStores[item]];
+      let str9 = "";
+      if (null != tmp9) {
+        const intl3 = tmp11(1125).intl;
+        str9 = intl3.string(tmp9);
+      }
       const _HermesInternal2 = HermesInternal;
-      const items1 = ["" + item + ": " + intl2.string(CheckpointTraitOptionNames.CHECKPOINT_TRAIT_OPTION_NAMES[item][stateFromStores[item]])];
-      items = items1;
+      const items = ["" + item + ": " + str9];
+      return items;
     } else {
-      const intl3 = tmp7(1128).intl;
-      const string = intl3.string;
-      const tmp9 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_OPTION_NAMES[item];
-      const tmp7Result = CheckpointCharacterTraits;
-      let outfitDefaultOptionId = tmp7Result.getOutfitDefaultOptionId(tmp);
+      const tmp11Result = CheckpointCharacterTraits;
+      let outfitDefaultOptionId = tmp11Result.getOutfitDefaultOptionId(tmp);
+      const tmp13 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_TO_OPTION_NAMES[item];
       if (outfitDefaultOptionId == null) {
         outfitDefaultOptionId = tmp;
       }
-      const stringResult = string(tmp9[outfitDefaultOptionId]);
-      const intl = tmp7(1128).intl;
+      const tmp4 = CheckpointTraitOptionNames.CHECKPOINT_OUTFIT_TO_COLOR_NAME[stateFromStores[item]];
+      let str2 = "";
+      if (null != tmp13[outfitDefaultOptionId]) {
+        const intl = tmp11(1125).intl;
+        str2 = intl.string(tmp3);
+      }
+      let str3 = "";
+      if (null != tmp4) {
+        const intl2 = tmp11(1125).intl;
+        str3 = intl2.string(tmp4);
+      }
       const _HermesInternal = HermesInternal;
-      items = ["" + item + ": " + stringResult + " (" + intl.string(CheckpointTraitOptionNames.CHECKPOINT_OUTFIT_COLOR_OPTION_NAMES[stateFromStores[item]]) + ")"];
+      const items1 = ["" + item + ": " + str2 + " (" + str3 + ")"];
+      return items1;
     }
-    return items;
   });
   items1[3] = flatMapResult.map((children) => {
     const obj = { color: "text-muted", variant: "text-md/medium", children };

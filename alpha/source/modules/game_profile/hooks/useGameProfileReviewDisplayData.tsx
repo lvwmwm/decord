@@ -1,14 +1,14 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9331
+// Function ID: 9332
 // Name: useGameProfileReviewDisplayData
-// Dependencies: [19, 558, 576, 9275, 9320, 2042, 1128, 9321, 2]
+// Dependencies: [19, 558, 576, 9275, 9321, 2039, 1125, 9322, 2]
 
-// Module 9330 (useGameProfileReviewDisplayData)
+// Module 9331 (useGameProfileReviewDisplayData)
 import react2 from "react" /* 576 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2042 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2039 */;
 import SteamReleaseStatus from "SteamReleaseStatus" /* 9275 */;
-import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9320 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9321 */;
+import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9321 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9322 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     } else if (steam != null) {
       ratingCount = steam.ratingCount;
     }
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     const tmp18 = tmp12 ? t["aWb+V4"] : t["8e4LiB"];
     if (cResult[5] !== reviews) {
       const tmpResult = GameProfileReviewUtils;
@@ -163,7 +163,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     } else if (steam != null) {
       ratingCount = steam.ratingCount;
     }
-    t = tmp3(1128).t;
+    t = tmp3(1125).t;
     tmp3Result2 = GameProfileReviewUtils;
     return obj;
   }, items);

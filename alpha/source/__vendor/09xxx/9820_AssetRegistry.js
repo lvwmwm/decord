@@ -1,10 +1,10 @@
 // Module ID: 9820
 // Function ID: 9821
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1131]
 
 // Module 9820 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 271, height: 163, scales: [2, 3], hash: "37b687db1cd86ac8059d1a0342f2319c", name: "img_tier_2_clouds_bigger", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 188.5, height: 121, scales: [2, 3], hash: "a1c720960ae9ac46d7d61ad850607231", name: "img_tier_0_clouds_bigger", type: "png" });

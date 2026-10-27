@@ -1,20 +1,20 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 14864
+// Function ID: 14865
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1087, 21, 4971, 587, 558, 576, 7012, 5234, 1128, 2067, 5265, 2]
+// Dependencies: [17, 1084, 21, 4972, 587, 558, 576, 7014, 5235, 1125, 2064, 5266, 2]
 
-// Module 14828 (NitroCreditEducationActionSheet)
+// Module 14864 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7012 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5266 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7014 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,10 +75,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroCredi
         const _Symbol = Symbol;
         const helpdeskText = tmp4.helpdeskText;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const format = intl.format;
           const obj4 = { helpCenterLink: obj7.getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT) };
-          const bg3jBj = tmp(1128).t.bg3jBj;
+          const bg3jBj = tmp(1125).t.bg3jBj;
           obj7 = HelpdeskUtilsDefault;
           const formatResult = format(bg3jBj, obj4);
           cResult[11] = formatResult;
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroCredi
         const obj6 = { children: metroRequire(View, obj8) };
         obj8 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(5265).BottomSheet;
+        BottomSheet = tmp(5266).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;

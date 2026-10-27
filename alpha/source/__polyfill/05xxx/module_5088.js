@@ -1,26 +1,26 @@
 // Module ID: 5088
 // Function ID: 5089
-// Dependencies: [32, 576, 5084]
-// Exports: useRiveEnum
+// Dependencies: [32, 576, 5085]
+// Exports: useRiveBoolean
 
 // Module 5088
 import react from "react" /* 576 */;
-import _mod5084 from "module_5084" /* 5084 */;
+import _mod5085 from "module_5085" /* 5085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getEnumProperty(enumProperty, arg1) {
-  return enumProperty.enumProperty(arg1);
+function getBooleanProperty(booleanProperty, arg1) {
+  return booleanProperty.booleanProperty(arg1);
 }
 
-export const useRiveEnum = function useRiveEnum(arg0, arg1) {
+export const useRiveBoolean = function useRiveBoolean(arg0, arg1) {
   let tmp3;
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(4);
-  const obj2 = _mod5084;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getEnumProperty);
-  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getEnumProperty), 3);
+  const obj2 = _mod5085;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getBooleanProperty);
+  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getBooleanProperty), 3);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
       let tmp6;

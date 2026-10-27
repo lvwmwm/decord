@@ -1,33 +1,33 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11447
+// Function ID: 11448
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6006, 11445, 502, 4823, 2014, 1087, 5632, 5718, 21, 4971, 587, 4968, 558, 576, 504, 1202, 11446, 5234, 1128, 8739, 11434, 11433, 11447, 11448, 11449, 11450, 6781, 10906, 11451, 10889, 11422, 5297, 11452, 2]
+// Dependencies: [32, 19, 17, 6007, 11448, 502, 4824, 2011, 1084, 5633, 5719, 21, 4972, 587, 4969, 558, 576, 504, 1199, 11449, 5235, 1125, 8739, 11437, 11436, 11450, 11451, 11452, 11453, 6782, 10909, 11454, 10892, 11425, 5298, 11455, 2]
 
-// Module 11444 (UserTile)
+// Module 11447 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import CallConstants from "CallConstants" /* 5632 */;
-import Constants2 from "Constants" /* 5718 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11445 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11446 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11447 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11448 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11449 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11450 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11451 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import CallConstants from "CallConstants" /* 5633 */;
+import Constants2 from "Constants" /* 5719 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11448 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11449 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11450 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11451 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11452 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11453 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11454 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6006 */;
+import SoundboardStore from "SoundboardStore" /* 6007 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import ColorUtils_mod from "ColorUtils" /* 4968 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import ColorUtils_mod from "ColorUtils" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -426,8 +426,8 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           }
           items3[2] = obj3;
           const obj4 = { style: items3, children: closure_15(Icon2, obj5) };
-          obj5 = { source: tmp12, size: userId(1202).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp12 === AssetRegistryDefault2 };
-          Icon2 = tmp(1202).Icon;
+          obj5 = { source: tmp12, size: userId(1199).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp12 === AssetRegistryDefault2 };
+          Icon2 = tmp(1199).Icon;
           tmp25Result = tmp25(tmp26, obj4);
         }
         cResult[8] = tmp12;
@@ -442,8 +442,8 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     if (tmp10) {
       const obj6 = { style: items4, children: closure_15(Icon, obj7) };
       items4 = [tmp4.statusWrapper, style];
-      obj7 = { source: AssetRegistryDefault5, size: userId(1202).Icon.Sizes.SMALL, disableColor: true };
-      Icon = tmp(1202).Icon;
+      obj7 = { source: AssetRegistryDefault5, size: userId(1199).Icon.Sizes.SMALL, disableColor: true };
+      Icon = tmp(1199).Icon;
       tmp18 = closure_15(View, obj6);
     }
     cResult[4] = tmp10;
@@ -495,8 +495,8 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     if (tmp5) {
       const obj2 = { style: items2, children: closure_15(Icon, obj3) };
       items2 = [tmp.statusWrapper, style];
-      obj3 = { source: AssetRegistryDefault5, size: userId(1202).Icon.Sizes.SMALL, disableColor: true };
-      Icon = tmp2(1202).Icon;
+      obj3 = { source: AssetRegistryDefault5, size: userId(1199).Icon.Sizes.SMALL, disableColor: true };
+      Icon = tmp2(1199).Icon;
       tmp15 = closure_15(View, obj2);
     }
     const items3 = [tmp15, ];
@@ -510,8 +510,8 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       }
       items4[2] = obj4;
       const obj5 = { style: items4, children: closure_15(Icon2, obj6) };
-      obj6 = { source: tmp7, size: userId(1202).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault2 };
-      Icon2 = tmp2(1202).Icon;
+      obj6 = { source: tmp7, size: userId(1199).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault2 };
+      Icon2 = tmp2(1199).Icon;
       tmp20Result = tmp20(tmp21, obj5);
     }
     const obj7 = { children: items3 };

@@ -1,27 +1,27 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16660
+// Function ID: 16661
 // Name: AppearanceSetting
-// Dependencies: [4995, 1210, 1087, 558, 576, 5205, 504, 1254, 9710, 1128, 2768, 11209, 16619, 16621, 2]
+// Dependencies: [4996, 1207, 1084, 558, 576, 5206, 504, 1251, 9712, 1125, 2769, 11212, 16661, 16663, 2]
 
-// Module 16618 (AppearanceSetting)
+// Module 16660 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import useActiveTheme from "useActiveTheme" /* 9710 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16619 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import ThemeConstants from "ThemeConstants" /* 1207 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
+import useThemeDefault from "useTheme" /* 5206 */;
+import useActiveTheme from "useActiveTheme" /* 9712 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16661 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp4;
-const _modDef2768 = tmp4(2768);
+const _modDef2769 = tmp4(2769);
 const ActiveThemeType = ThemeConstants.ActiveThemeType;
 const UserSettingsSections = Constants.UserSettingsSections;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppearanceSettingTrailing() {
@@ -61,8 +61,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
     let tmp19;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
-      const stringResult = intl2.string(_modDef2768.KSBBpC);
+      const intl2 = tmp(1125).intl;
+      const stringResult = intl2.string(_modDef2769.KSBBpC);
       cResult[4] = stringResult;
       tmp19 = stringResult;
     } else {
@@ -95,7 +95,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
     let tmp14;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult1 = intl.string(intl3.t.wFpwSk);
       cResult[8] = stringResult1;
       tmp14 = stringResult1;
@@ -117,8 +117,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
   const obj3 = useActiveTheme;
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
-    const intl2 = tmp4(1128).intl;
-    return intl2.string(_modDef2768.KSBBpC);
+    const intl2 = tmp4(1125).intl;
+    return intl2.string(_modDef2769.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
     }
     return name;
   } else if (ActiveThemeType.SYSTEM === activeThemeType) {
-    const intl = tmp4(1128).intl;
+    const intl = tmp4(1125).intl;
     return intl.string(intl3.t.wFpwSk);
   } else {
     return ActiveThemeType.DEFAULT === activeThemeType ? themeName : undefined;

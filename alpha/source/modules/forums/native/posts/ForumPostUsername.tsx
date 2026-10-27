@@ -1,29 +1,29 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13118
+// Function ID: 13119
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4972, 13100, 21, 4971, 558, 576, 9725, 4833, 11224, 13105, 504, 8319, 1202, 5234, 2]
+// Dependencies: [19, 17, 4973, 13114, 21, 4972, 558, 576, 9727, 4834, 11227, 13119, 504, 8318, 1199, 5235, 2]
 
-// Module 13104 (ForumPostUsername)
+// Module 13118 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1202 */;
-import ForumLayout from "ForumLayout" /* 4833 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8319 */;
-import ForumHooks from "ForumHooks" /* 9725 */;
-import useChatWidthDefault from "useChatWidth" /* 11224 */;
-import ForumChannelStore from "ForumChannelStore" /* 13100 */;
+import native from "native" /* 1199 */;
+import ForumLayout from "ForumLayout" /* 4834 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8318 */;
+import ForumHooks from "ForumHooks" /* 9727 */;
+import useChatWidthDefault from "useChatWidth" /* 11227 */;
+import ForumChannelStore from "ForumChannelStore" /* 13114 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostGridBody = tmp(13105);
+const ForumPostGridBody = tmp(13119);
 const View = react_native.View;
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -473,7 +473,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumP
       }
       items3 = [tmp23, ];
       let tmp25;
-      const Text = tmp3(5234).Text;
+      const Text = tmp3(5235).Text;
       if (tmp17) {
         tmp25 = processColorStringsArray;
       }

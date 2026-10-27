@@ -1,15 +1,15 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11159
+// Function ID: 11160
 // Name: formatClearAfterValue
-// Dependencies: [11064, 4796, 1128, 1104, 1388, 2]
+// Dependencies: [11067, 4797, 1125, 1101, 1385, 2]
 // Exports: default
 
-// Module 11156 (formatClearAfterValue)
-import DurationsDefault from "Durations" /* 1104 */;
-import intl6 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import DateUtils from "DateUtils" /* 4796 */;
-import Constants from "Constants" /* 11064 */;
+// Module 11159 (formatClearAfterValue)
+import DurationsDefault from "Durations" /* 1101 */;
+import intl6 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import DateUtils from "DateUtils" /* 4797 */;
+import Constants from "Constants" /* 11067 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -42,8 +42,8 @@ export default function formatClearAfterValue(arg0) {
     } else {
       const formatToPlainString4 = intl5.formatToPlainString;
       const obj2 = { time: data7.formatTime(sum, { format: "short" }) };
-      const bI7n9i4 = tmp52(1128).t.bI7n9i;
-      data7 = tmp52(1128).intl.data;
+      const bI7n9i4 = tmp52(1125).t.bI7n9i;
+      data7 = tmp52(1125).intl.data;
       formatTimeResult = formatToPlainString4(bI7n9i4, obj2);
     }
     return formatTimeResult;
@@ -70,8 +70,8 @@ export default function formatClearAfterValue(arg0) {
     } else {
       const formatToPlainString3 = intl4.formatToPlainString;
       const obj3 = { time: data5.formatTime(sum1, { format: "short" }) };
-      const bI7n9i3 = tmp39(1128).t.bI7n9i;
-      data5 = tmp39(1128).intl.data;
+      const bI7n9i3 = tmp39(1125).t.bI7n9i;
+      data5 = tmp39(1125).intl.data;
       formatTimeResult1 = formatToPlainString3(bI7n9i3, obj3);
     }
     return formatTimeResult1;
@@ -97,8 +97,8 @@ export default function formatClearAfterValue(arg0) {
     } else {
       const formatToPlainString2 = intl3.formatToPlainString;
       const obj4 = { time: data3.formatTime(sum2, { format: "short" }) };
-      const bI7n9i2 = tmp25(1128).t.bI7n9i;
-      data3 = tmp25(1128).intl.data;
+      const bI7n9i2 = tmp25(1125).t.bI7n9i;
+      data3 = tmp25(1125).intl.data;
       formatTimeResult2 = formatToPlainString2(bI7n9i2, obj4);
     }
     return formatTimeResult2;
@@ -125,8 +125,8 @@ export default function formatClearAfterValue(arg0) {
     } else {
       const formatToPlainString = intl2.formatToPlainString;
       const obj5 = { time: data.formatTime(sum3, { format: "short" }) };
-      const bI7n9i = tmp12(1128).t.bI7n9i;
-      data = tmp12(1128).intl.data;
+      const bI7n9i = tmp12(1125).t.bI7n9i;
+      data = tmp12(1125).intl.data;
       formatTimeResult3 = formatToPlainString(bI7n9i, obj5);
     }
     return formatTimeResult3;

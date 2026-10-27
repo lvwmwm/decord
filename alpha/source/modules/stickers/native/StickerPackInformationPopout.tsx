@@ -1,18 +1,18 @@
-// Module ID: 10164
-// Function ID: 10165
+// Module ID: 10166
+// Function ID: 10167
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4971, 587, 6488, 1128, 558, 576, 5234, 6908, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 6489, 1125, 558, 576, 5235, 6910, 2]
 // Exports: doesStickerPackHavePopoutInformation
 
-// Module 10164 (StickerPackInformationPopout)
+// Module 10166 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import StickersUtils from "StickersUtils" /* 6488 */;
+import intl5 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import StickersUtils from "StickersUtils" /* 6489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
   if (tmpResult.isStickerPackAnimated(stickerPack)) {
     let obj2 = { key: "animated", description: intl.string(require("intl").t.W11rMa) };
     const push = items.push;
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     push(obj2);
   }
   if (cResult[10] === tmp4.informationContent) {
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
         }
         ({ headerContainer, informationHeader } = tmp4);
         if (cResult[17] !== stickerPack.name) {
-          const intl2 = tmp(1128).intl;
+          const intl2 = tmp(1125).intl;
           let obj3 = { stickerPackName: stickerPack.name };
           const formatResult = intl2.format(require("intl").t.XDm6yN, obj3);
           cResult[17] = stickerPack.name;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
           }
           const _Symbol = Symbol;
           if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp(1128).intl;
+            const intl3 = tmp(1125).intl;
             const stringResult = intl3.string(require("intl").t.cpT0Cq);
             cResult[22] = stringResult;
             tmp15 = stringResult;
@@ -115,8 +115,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-            const Text = tmp(5234).Text;
-            intl4 = tmp(1128).intl;
+            const Text = tmp(5235).Text;
+            intl4 = tmp(1125).intl;
             const tmp19 = closure_3(Text, obj4);
             cResult[23] = tmp19;
             tmp17 = tmp19;
@@ -218,23 +218,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
   if (obj.isStickerPackAnimated(stickerPack)) {
     let obj2 = { key: "animated", description: intl.string(require("intl").t.W11rMa) };
     const push = items.push;
-    intl = tmp2(1128).intl;
+    intl = tmp2(1125).intl;
     push(obj2);
   }
   let obj3 = { style: items1, children: items3 };
   items1 = [tmp.informationContainer, style];
   const obj4 = { style: tmp.headerContainer, children: items2 };
   const obj5 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.format(require("intl").t.XDm6yN, obj6) };
-  const Text = tmp2(5234).Text;
-  intl2 = tmp2(1128).intl;
+  const Text = tmp2(5235).Text;
+  intl2 = tmp2(1125).intl;
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_3(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_3(Text2, obj8) };
-  const PressableOpacity = tmp2(6908).PressableOpacity;
-  intl3 = tmp2(1128).intl;
+  const PressableOpacity = tmp2(6910).PressableOpacity;
+  intl3 = tmp2(1125).intl;
   obj8 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-  Text2 = tmp2(5234).Text;
-  intl4 = tmp2(1128).intl;
+  Text2 = tmp2(5235).Text;
+  intl4 = tmp2(1125).intl;
   items2[1] = closure_3(PressableOpacity, obj7);
   items3 = [
     closure_4(View, obj4),
@@ -264,7 +264,7 @@ export const doesStickerPackHavePopoutInformation = function doesStickerPackHave
   if (obj.isStickerPackAnimated(stickerPack)) {
     const push = items.push;
     const obj2 = { key: "animated", description: intl.string(intl5.t.W11rMa) };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     push(obj2);
   }
   return items.length > 0;

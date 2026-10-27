@@ -1,23 +1,23 @@
-// Module ID: 19316
-// Function ID: 19317
+// Module ID: 19354
+// Function ID: 19355
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 16585, 21, 4971, 587, 558, 576, 5039, 1202, 5234, 9041, 1128, 19317, 19318, 2]
+// Dependencies: [19, 17, 16627, 21, 4972, 587, 558, 576, 5040, 1199, 5235, 9041, 1125, 19355, 19356, 2]
 
-// Module 19316 (AllChannelsSwitch)
+// Module 19354 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import react_native2 from "react-native" /* 5039 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import react_native2 from "react-native" /* 5040 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16585 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19317 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19318 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16627 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19355 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19356 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     if (cResult[3] !== icon) {
       const obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-      const Icon = tmp(1202).Icon;
+      const Icon = tmp(1199).Icon;
       const tmp11 = hasOwnProperty(Icon, obj2);
       cResult[3] = icon;
       cResult[4] = tmp11;
@@ -174,11 +174,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
     tmp7 = disabled;
   }
   const obj3 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-  const Icon = tmp2(1202).Icon;
+  const Icon = tmp2(1199).Icon;
   items = [hasOwnProperty(Icon, obj3), , ];
   const obj4 = { style: tmp.rowLabel, variant: str, color: str2, lineClamp: 1, children: label };
   str = "text-md/medium";
-  const Text = tmp2(5234).Text;
+  const Text = tmp2(5235).Text;
   if (selected) {
     str = "text-md/semibold";
   }
@@ -212,8 +212,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(setChannelAccessFormat(1128).t["vs2T+B"]);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(setChannelAccessFormat(1125).t["vs2T+B"]);
       cResult[5] = stringResult;
       tmp9 = stringResult;
     } else {
@@ -242,8 +242,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsS
         }
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1128).intl;
-          const stringResult1 = intl2.string(setChannelAccessFormat(1128).t.l4Tr7X);
+          const intl2 = tmp(1125).intl;
+          const stringResult1 = intl2.string(setChannelAccessFormat(1125).t.l4Tr7X);
           cResult[14] = stringResult1;
           tmp23 = stringResult1;
         } else {

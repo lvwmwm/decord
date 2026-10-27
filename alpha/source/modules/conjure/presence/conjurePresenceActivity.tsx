@@ -1,11 +1,11 @@
-// Module ID: 10646
-// Function ID: 10647
+// Module ID: 10649
+// Function ID: 10650
 // Name: conjurePresenceActivity
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: isConjurePresenceActivity
 
-// Module 10646 (conjurePresenceActivity)
-import Constants from "Constants" /* 1087 */;
+// Module 10649 (conjurePresenceActivity)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;

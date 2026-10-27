@@ -1,18 +1,18 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14079
+// Function ID: 14080
 // Name: Checkbox
-// Dependencies: [17, 21, 4971, 558, 576, 5039, 1128, 6901, 5234, 5977, 2]
+// Dependencies: [17, 21, 4972, 558, 576, 5040, 1125, 6903, 5235, 5978, 2]
 
-// Module 14065 (Checkbox)
+// Module 14079 (Checkbox)
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import react_native from "react-native" /* 5039 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import FormCheckbox from "FormCheckbox" /* 6901 */;
+import intl3 from "intl" /* 1125 */;
+import react_native from "react-native" /* 5040 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import FormCheckbox from "FormCheckbox" /* 6903 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,9 +55,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
   if (cResult[2] !== required) {
     let str = "";
     if (required) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const _HermesInternal = HermesInternal;
-      str = " (" + intl.string(tmp(1128).t.EkokLy) + ")";
+      str = " (" + intl.string(tmp(1125).t.EkokLy) + ")";
     }
     cResult[2] = required;
     cResult[3] = str;
@@ -92,8 +92,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
       let tmp17 = required;
       if (tmp17) {
         const obj4 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-        const Text = tmp(5234).Text;
-        intl2 = tmp(1128).intl;
+        const Text = tmp(5235).Text;
+        intl2 = tmp(1125).intl;
         tmp17 = hasOwnProperty(Text, obj4);
       }
       cResult[9] = required;
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
           let tmp27 = null != description;
           if (tmp27) {
             const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-            tmp27 = React3(tmp(5234).Text, obj5);
+            tmp27 = React3(tmp(5235).Text, obj5);
           }
           cResult[17] = description;
           cResult[18] = tmp27;
@@ -234,25 +234,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
   accessibilityState = checkboxA11yNative.accessibilityState;
   const tmp6 = React2;
   if (required) {
-    const intl = tmp2(1128).intl;
+    const intl = tmp2(1125).intl;
     const _HermesInternal = HermesInternal;
-    str2 = " (" + intl.string(tmp2(1128).t.EkokLy) + ")";
+    str2 = " (" + intl.string(tmp2(1125).t.EkokLy) + ")";
   }
   sum = label + str2;
   if (null != description) {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(5977).Stack;
+  Stack = tmp2(5978).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5234).Text;
+  Text = tmp2(5235).Text;
   if (required) {
     const obj5 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5234).Text;
-    intl2 = tmp2(1128).intl;
+    const Text2 = tmp2(5235).Text;
+    intl2 = tmp2(1125).intl;
     required = tmp10(Text2, obj5);
   }
   items1[1] = required;
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5234).Text, obj6);
+    tmp5Result = tmp5(tmp2(5235).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

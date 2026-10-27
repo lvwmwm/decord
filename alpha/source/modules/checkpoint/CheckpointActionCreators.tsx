@@ -1,18 +1,18 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 12969
+// Function ID: 12970
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4823, 12956, 1087, 584, 1297, 12958, 12959, 7411, 1267, 7755, 7566, 12907, 1388, 2]
+// Dependencies: [5, 4824, 12968, 1084, 584, 1294, 12970, 12971, 7413, 1264, 7756, 7567, 12916, 1385, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
 
-// Module 12957 (CheckpointActionCreators)
+// Module 12969 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import formatResults from "formatResults" /* 12907 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
+import formatResults from "formatResults" /* 12916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import CheckpointStore from "CheckpointStore" /* 12956 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import CheckpointStore from "CheckpointStore" /* 12968 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c1, c10, c9;

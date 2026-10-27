@@ -1,9 +1,9 @@
-// Module ID: 1995
-// Function ID: 1996
+// Module ID: 1992
+// Function ID: 1993
 // Name: CollectiblesItemType
 // Dependencies: [2]
 
-// Module 1995 (CollectiblesItemType)
+// Module 1992 (CollectiblesItemType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesItemType.tsx");

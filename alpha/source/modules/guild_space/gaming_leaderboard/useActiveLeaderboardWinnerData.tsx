@@ -1,12 +1,12 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10674
+// Function ID: 10675
 // Name: useActiveLeaderboardWinnerData
-// Dependencies: [4883, 1104, 558, 576, 504, 2]
+// Dependencies: [4884, 1101, 558, 576, 504, 2]
 // Exports: getActiveLeaderboardLeaderData, getActiveLeaderboardWinnerData
 
-// Module 10671 (useActiveLeaderboardWinnerData)
-import DurationsDefault from "Durations" /* 1104 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+// Module 10674 (useActiveLeaderboardWinnerData)
+import DurationsDefault from "Durations" /* 1101 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

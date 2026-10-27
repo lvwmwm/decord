@@ -1,12 +1,12 @@
-// Module ID: 18790
-// Function ID: 18791
+// Module ID: 18826
+// Function ID: 18827
 // Name: DmSettingsUpsellUtils
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1084, 1264, 2]
 // Exports: trackEvent
 
-// Module 18790 (DmSettingsUpsellUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 18826 (DmSettingsUpsellUtils)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

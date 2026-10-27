@@ -1,17 +1,17 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9580
+// Function ID: 9581
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [7773, 5890, 1087, 6717, 7774, 7569, 1267, 7750, 7572, 2]
+// Dependencies: [7774, 5891, 1084, 6718, 7775, 7570, 1264, 7751, 7573, 2]
 
-// Module 9578 (QuestDecisionRoundtripTracker)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AdCreativeType from "AdCreativeType" /* 6717 */;
-import NetStats from "NetStats" /* 7569 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7750 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7774 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7773 */;
-import NetworkStore from "NetworkStore" /* 5890 */;
+// Module 9580 (QuestDecisionRoundtripTracker)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AdCreativeType from "AdCreativeType" /* 6718 */;
+import NetStats from "NetStats" /* 7570 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7751 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7775 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7774 */;
+import NetworkStore from "NetworkStore" /* 5891 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -58,7 +58,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (fetchedAt == null) {
       fetchedAt = null;
     }
-    tmp2Result = tmp2(7572);
+    tmp2Result = tmp2(7573);
     track(QUEST_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -139,8 +139,11 @@ class QuestDecisionRoundtripTracker {
           if (AdCreativeType.AdCreativeType.QUEST !== type) {
             str4 = "bounty";
             if (AdCreativeType.AdCreativeType.BOUNTY !== type) {
-              if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type) {
-                str4 = "quest_home_hero";
+              str4 = "playable";
+              if (AdCreativeType.AdCreativeType.PLAYABLE !== type) {
+                if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type) {
+                  str4 = "quest_home_hero";
+                }
               }
             }
           }
@@ -157,8 +160,11 @@ class QuestDecisionRoundtripTracker {
           if (AdCreativeType.AdCreativeType.QUEST !== type2) {
             str7 = "bounty";
             if (AdCreativeType.AdCreativeType.BOUNTY !== type2) {
-              if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type2) {
-                str7 = "quest_home_hero";
+              str7 = "playable";
+              if (AdCreativeType.AdCreativeType.PLAYABLE !== type2) {
+                if (AdCreativeType.AdCreativeType.QUEST_HOME_HERO === type2) {
+                  str7 = "quest_home_hero";
+                }
               }
             }
           }
@@ -179,7 +185,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp13(7774).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp13(7775).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;

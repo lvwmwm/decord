@@ -1,13 +1,13 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4979
+// Function ID: 4980
 // Name: shared
-// Dependencies: [2, 4979, 4992, 4993, 4994]
+// Dependencies: [2, 4980, 4993, 4994, 4995]
 
-// Module 4978 (shared)
-import design_shared from "design/shared" /* 4979 */;
-import StickerTypes from "StickerTypes" /* 4992 */;
-import themes from "themes" /* 4993 */;
-import Colors from "Colors" /* 4994 */;
+// Module 4979 (shared)
+import design_shared from "design/shared" /* 4980 */;
+import StickerTypes from "StickerTypes" /* 4993 */;
+import themes from "themes" /* 4994 */;
+import Colors from "Colors" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/shared.tsx");

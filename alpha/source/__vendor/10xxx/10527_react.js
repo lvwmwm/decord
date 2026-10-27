@@ -1,36 +1,51 @@
 // Module ID: 10527
 // Function ID: 10528
 // Name: react
-// Dependencies: [19, 10528]
-// Exports: useLayoutConfig
+// Dependencies: [19]
+// Exports: usePropsErrorBoundary
 
 // Module 10527 (react)
-import Layouts5 from "Layouts" /* 10528 */;
 import react from "react" /* 19 */;
 
+let size;
 
-export const useLayoutConfig = function useLayoutConfig(size) {
-  size = size.size;
-  const vertical = size.vertical;
-  const items = [, , , ];
-  ({ mode: arr[0], modeConfig: arr[1] } = size);
-  items[2] = size;
-  items[3] = vertical;
-  return vertical.useMemo(() => {
-    const obj = { size, vertical };
-    const mode = size.mode;
-    if ("parallax" === mode) {
-      const Layouts4 = Layouts5.Layouts;
-      return Layouts4.parallax(obj, size.modeConfig);
-    } else if ("horizontal-stack" === mode) {
-      const Layouts3 = Layouts5.Layouts;
-      return Layouts3.horizontalStack(size.modeConfig);
-    } else if ("vertical-stack" === mode) {
-      const Layouts2 = Layouts5.Layouts;
-      return Layouts2.verticalStack(size.modeConfig);
-    } else {
-      const Layouts = Layouts5.Layouts;
-      return Layouts.normal(obj);
+
+export const usePropsErrorBoundary = function usePropsErrorBoundary(arg0) {
+  let closure_0 = arg0;
+  const items = [arg0];
+  const effect = react.useEffect(function() {
+    let dataLength;
+    let defaultIndex;
+    size = closure_0;
+    ({ defaultIndex, dataLength } = closure_0);
+    if (typeof defaultIndex === "number") {
+      if (dataLength > 0) {
+        const _Error3 = Error;
+        const self5 = this;
+        const self6 = this;
+        const error = new Error("DefaultIndex must be in the range of data length.");
+        throw error;
+      }
+    }
+    if (!size.mode) {
+      if (!size.vertical) {
+        if (!size.width) {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error1 = new Error("`width` must be specified for horizontal carousels.");
+          throw error1;
+        }
+      }
+      if (size.vertical) {
+        if (!size.height) {
+          const _Error2 = Error;
+          const self3 = this;
+          const self4 = this;
+          const error2 = new Error("`height` must be specified for vertical carousels.");
+          throw error2;
+        }
+      }
     }
   }, items);
 };

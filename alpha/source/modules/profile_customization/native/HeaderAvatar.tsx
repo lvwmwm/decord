@@ -1,20 +1,20 @@
 // Module ID: 8747
 // Function ID: 8748
 // Name: HeaderAvatar
-// Dependencies: [109, 19, 17, 4972, 4883, 5712, 1087, 21, 4971, 587, 558, 576, 1202, 504, 8655, 8748, 8749, 8738, 6908, 2]
+// Dependencies: [109, 19, 17, 4973, 4884, 5713, 1084, 21, 4972, 587, 558, 576, 1199, 504, 8655, 8748, 8749, 8738, 6910, 2]
 
 // Module 8747 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import createStyles from "createStyles" /* 4971 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAvat
     dependencyMap = cResult[12];
   }
   if (undefined === XXLARGE) {
-    XXLARGE = tmp(1202).AvatarSizes.XXLARGE;
+    XXLARGE = tmp(1199).AvatarSizes.XXLARGE;
   }
   closure_11();
   id = tmp14.id;
@@ -263,7 +263,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAvat
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
     const tmp = guildId;
-    size = guildId(1202).AvatarSizes.XXLARGE;
+    size = guildId(1199).AvatarSizes.XXLARGE;
   }
   let flag = animate.animate;
   if (flag === undefined) {
@@ -317,9 +317,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAvat
   }
   if (null != onPress) {
     const obj6 = { ref: animate.ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
-    const PressableOpacity = tmp5(6908).PressableOpacity;
+    const PressableOpacity = tmp5(6910).PressableOpacity;
     const merged1 = Object.assign(merged);
-    const Avatar = tmp5(1202).Avatar;
+    const Avatar = tmp5(1199).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
       tmp5Result = guildId(8738);
@@ -333,7 +333,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAvat
   } else {
     const obj9 = { ref: animate.ref, style, accessibilityRole: "image", accessible: true, children: <Avatar2 {...obj11} /> };
     const merged4 = Object.assign(merged);
-    const Avatar2 = tmp5(1202).Avatar;
+    const Avatar2 = tmp5(1199).Avatar;
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };

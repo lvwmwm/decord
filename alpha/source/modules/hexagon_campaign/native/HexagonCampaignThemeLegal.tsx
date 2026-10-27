@@ -1,19 +1,19 @@
-// Module ID: 16386
-// Function ID: 16387
+// Module ID: 16425
+// Function ID: 16426
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 4996, 21, 4971, 587, 558, 576, 5234, 15874, 1128, 4247, 5669, 16387, 2]
+// Dependencies: [19, 17, 4997, 21, 4972, 587, 558, 576, 5235, 15912, 1125, 4248, 5670, 16426, 2]
 
-// Module 16386 (HexagonCampaignThemeLegal)
+// Module 16425 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef4247 from "module_4247" /* 4247 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16387 */;
+import _modDef4248 from "module_4248" /* 4248 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16426 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(15874);
+const openHexagonCampaignLearnMore = tmp2(15912);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -68,9 +68,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           tmp13 = cResult[6];
         }
         if (cResult[7] !== tmp9) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const obj2 = { nonPremiumEndDate, premiumEndDate, learnMoreHook: tmp9 };
-          const formatResult = intl.format(_modDef4247.y2YmJv, obj2);
+          const formatResult = intl.format(_modDef4248.y2YmJv, obj2);
           cResult[7] = tmp9;
           cResult[8] = formatResult;
           tmp14 = formatResult;
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           }
         }
         const obj5 = { animated: null != animatedStyles, variant: "text-xs/medium", color: "text-muted", style: tmp13, children: tmp14 };
-        const tmp21 = closure_6(tmp(5234).Text, obj5);
+        const tmp21 = closure_6(tmp(5235).Text, obj5);
         cResult[9] = null != animatedStyles;
         cResult[10] = "text-muted";
         cResult[11] = tmp13;
@@ -177,15 +177,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let tmp2 = null != animatedStyles;
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
-  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(_modDef4247.y2YmJv, obj2) };
-  let Text = animatedStyles(5234).Text;
+  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(_modDef4248.y2YmJv, obj2) };
+  let Text = animatedStyles(5235).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {
     headerSecondary = animatedStyles.headerSecondary;
   }
   items = [headerSecondary, flag ? tmp.legalText : tmp.legal];
-  intl = tmp4(1128).intl;
+  intl = tmp4(1125).intl;
   obj2 = {
     nonPremiumEndDate,
     premiumEndDate,

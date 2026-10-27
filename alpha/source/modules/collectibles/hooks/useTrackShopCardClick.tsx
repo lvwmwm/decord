@@ -1,14 +1,14 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 9419
+// Function ID: 9420
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9421, 1087, 558, 576, 9360, 8667, 7662, 7661, 1267, 2]
+// Dependencies: [19, 9420, 1084, 558, 576, 9359, 8667, 7663, 7662, 1264, 2]
 
-// Module 9420 (useTrackShopCardClick)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
-import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 9421 */;
+// Module 9419 (useTrackShopCardClick)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7663 */;
+import CollectiblesShopVariantsUIStore from "CollectiblesShopVariantsUIStore" /* 9420 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 5032
-// Function ID: 5033
+// Module ID: 5033
+// Function ID: 5034
 // Name: NitroFileUploadExperiments
-// Dependencies: [1394, 1455, 558, 576, 2]
+// Dependencies: [1391, 1452, 558, 576, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
 
-// Module 5032 (NitroFileUploadExperiments)
+// Module 5033 (NitroFileUploadExperiments)
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

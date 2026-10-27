@@ -1,14 +1,14 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12434
+// Function ID: 12435
 // Name: conjurePlanExperienceSurfaces
-// Dependencies: [1128, 3830, 6774, 12439, 2]
+// Dependencies: [1125, 3831, 6775, 12435, 2]
 // Exports: conjurePlanDesignExperienceId, conjurePlanExperiencePlacement
 
-// Module 12438 (conjurePlanExperienceSurfaces)
-import intl2 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12439 */;
+// Module 12434 (conjurePlanExperienceSurfaces)
+import intl2 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6775 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12435 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSurfaces.tsx");
@@ -21,7 +21,7 @@ export const conjurePlanExperiencePlacement = function conjurePlanExperiencePlac
     return null;
   } else {
     const intl = intl2.intl;
-    let closure_0 = intl.string(_modDef3830["6/3tGY"]);
+    let closure_0 = intl.string(_modDef3831["6/3tGY"]);
     let items = [];
     const surfaces3 = kind.surfaces;
     if (surfaces3.includes(ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL)) {
@@ -66,12 +66,12 @@ export const conjurePlanExperiencePlacement = function conjurePlanExperiencePlac
     return obj2;
   }
 };
-export const conjurePlanDesignExperienceId = function conjurePlanDesignExperienceId(proposal) {
+export const conjurePlanDesignExperienceId = function conjurePlanDesignExperienceId(experiences) {
   const obj = conjurePlanDesign;
-  const result = obj.conjurePlanDesignSurface(proposal);
+  const result = obj.conjurePlanDesignSurface(experiences);
   let tmp2 = null;
   if (null != result) {
-    const experiences = proposal.experiences;
+    experiences = experiences.experiences;
     let id;
     if (experiences != null) {
       const found = experiences.find((surfaces) => {

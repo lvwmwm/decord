@@ -1,53 +1,48 @@
 // Module ID: 5389
 // Function ID: 5390
-// Dependencies: [5365, 5380, 5356]
-// Exports: useHoverGesture
+// Dependencies: [5366, 5381, 5357]
+// Exports: useRotationGesture
 
 // Module 5389
-import ComposedGestureName from "ComposedGestureName" /* 5356 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5365 */;
-import _mod5380 from "module_5380" /* 5380 */;
+import ComposedGestureName from "ComposedGestureName" /* 5357 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5366 */;
+import _mod5381 from "module_5381" /* 5381 */;
 
-function transformHoverProps(arg0) {
+function transformRotationProps(arg0) {
   const obj = maybeExtractNativeEvent;
   arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
   arg0.fillInDefaultValues = fillInDefaultValues;
   return arg0;
 }
-function diffCalculator(arg0, arg1) {
-  let num2;
-  let num = 0;
-  if (arg1) {
-    num = arg0.x - arg1.x;
+function diffCalculator(rotation, rotation2) {
+  let rotationChange;
+  rotation = rotation.rotation;
+  if (rotation2) {
+    rotationChange = rotation - rotation2.rotation;
+  } else {
+    rotationChange = rotation;
   }
-  const obj = { changeX: num, changeY: num2 };
-  num2 = 0;
-  if (arg1) {
-    num2 = arg0.y - arg1.y;
-  }
-  return obj;
+  return { rotationChange };
 }
 diffCalculator.__closure = {};
-diffCalculator.__workletHash = 622993324586;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+diffCalculator.__workletHash = 14071129947311;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};}" };
 function fillInDefaultValues(arg0) {
-  arg0.changeX = 0;
-  arg0.changeY = 0;
+  arg0.rotationChange = 0;
 }
 fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 11545520927040;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
-const items = [["effect", "hoverEffect"]];
-const map = new Map(items);
+fillInDefaultValues.__workletHash = 2470118803733;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;}" };
+const map = new Map();
 let closure_6 = {};
 
-export const useHoverGesture = function useHoverGesture(cResult) {
+export const useRotationGesture = function useRotationGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
     tmp = closure_6;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
-  const obj2 = _mod5380;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
+  const obj2 = _mod5381;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
 };

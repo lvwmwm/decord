@@ -4,55 +4,43 @@
 
 // Module 1934
 const obj = {
-  locale: "pt",
+  locale: "sv",
   pluralRuleFunction(arg0, arg1) {
-    String(arg0);
-    let str = "other";
-    if (!arg1) {
-      let str2 = "other";
-      if (tmp2) {
-        str2 = "other";
-        if (arg0 >= 0) {
-          str2 = "other";
-          if (arg0 <= 2) {
-            str2 = "other";
-            if (2 != arg0) {
-              str2 = "one";
-            }
-          }
-        }
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-AO", parentLocale: "pt-PT" });
-const obj2 = {
-  locale: "pt-PT",
-  parentLocale: "pt",
-  pluralRuleFunction(arg0, arg1) {
-    let str2 = "other";
+    let str3;
     const str = String(arg0);
-    const tmp = str.split(".")[1];
-    if (!arg1) {
-      let str3 = "other";
+    const parts = str.split(".");
+    const tmp2 = parts[1];
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-1);
+    }
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
+    if (arg1) {
+      if (1 == substr) {
+        let str4;
+        if (11 != substr1) {
+          str4 = "one";
+        }
+        str3 = str4;
+      }
+      str4 = "other";
+    } else {
+      str3 = "other";
       if (1 == arg0) {
         str3 = "other";
-        if (!tmp) {
+        if (!tmp2) {
           str3 = "one";
         }
       }
-      str2 = str3;
     }
-    return str2;
+    return str3;
   }
 };
-globalThis.IntlMessageFormat.__addLocaleData(obj2);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-CV", parentLocale: "pt-PT" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-GW", parentLocale: "pt-PT" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-MO", parentLocale: "pt-PT" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-MZ", parentLocale: "pt-PT" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-ST", parentLocale: "pt-PT" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-TL", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-AX", parentLocale: "sv" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-FI", parentLocale: "sv" });

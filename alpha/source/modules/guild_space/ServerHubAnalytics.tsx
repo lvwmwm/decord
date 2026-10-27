@@ -1,13 +1,13 @@
-// Module ID: 19002
-// Function ID: 19003
+// Module ID: 19040
+// Function ID: 19041
 // Name: ServerHubAnalytics
-// Dependencies: [1087, 1267, 19003, 2]
+// Dependencies: [1084, 1264, 19041, 2]
 // Exports: trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked
 
-// Module 19002 (ServerHubAnalytics)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import editorUtils from "editorUtils" /* 19003 */;
+// Module 19040 (ServerHubAnalytics)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import editorUtils from "editorUtils" /* 19041 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

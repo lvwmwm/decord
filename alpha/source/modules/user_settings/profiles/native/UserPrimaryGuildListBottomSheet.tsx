@@ -1,25 +1,25 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15946
+// Function ID: 15947
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8274, 21, 4971, 1384, 587, 558, 576, 8654, 5039, 5210, 1128, 6883, 9225, 6988, 6903, 14170, 12, 4980, 14173, 7278, 7248, 5244, 7298, 7145, 5234, 8951, 7220, 5265, 2]
+// Dependencies: [32, 19, 17, 8272, 21, 4972, 1381, 587, 558, 576, 8654, 5040, 5211, 1125, 6885, 9225, 6990, 6905, 14197, 12, 4981, 14200, 7280, 7250, 5245, 7300, 7147, 5235, 8951, 7222, 5266, 2]
 
-// Module 15908 (UserPrimaryGuildListBottomSheet)
+// Module 15946 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl11 from "intl" /* 1128 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import GuildTagConstants from "GuildTagConstants" /* 8274 */;
+import intl11 from "intl" /* 1125 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import GuildIconDefault from "GuildIcon" /* 6885 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import GuildTagConstants from "GuildTagConstants" /* 8272 */;
 import Form from "Form" /* 8951 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14173 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14200 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     } else {
       tmp14 = cResult[4];
     }
-    const tmpResult = tmp(5039);
+    const tmpResult = tmp(5040);
     const radioA11yNative = tmpResult.useRadioA11yNative(tmp14);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     let id1;
@@ -103,8 +103,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
         if (null != item) {
           name = item.name;
         } else {
-          const intl = tmp(1128).intl;
-          name = intl.string(tmp(1128).t.PoWNfe);
+          const intl = tmp(1125).intl;
+          name = intl.string(tmp(1125).t.PoWNfe);
         }
         cResult[8] = item;
         cResult[9] = name;
@@ -128,7 +128,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                 }
                 if (cResult[19] !== selected) {
                   const obj3 = { selected };
-                  const tmp32 = closure_7(tmp(6988).FormRadio, obj3);
+                  const tmp32 = closure_7(tmp(6990).FormRadio, obj3);
                   cResult[19] = selected;
                   cResult[20] = tmp32;
                   tmp30 = tmp32;
@@ -161,7 +161,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                       }
                     }
                     const obj4 = { start, end, onPress: tmp18, label: tmp20, icon: tmp21, accessibilityRole, accessibilityState, trailing: tmp33 };
-                    const tmp39 = closure_7(tmp(6903).TableRow, obj4);
+                    const tmp39 = closure_7(tmp(6905).TableRow, obj4);
                     cResult[25] = accessibilityRole;
                     cResult[26] = accessibilityState;
                     cResult[27] = end;
@@ -204,8 +204,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
       }
       let tmp22 = null;
       if (null != item) {
-        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6883).GuildIconSizes.SMALL_32 };
-        const tmp25 = onSelectGuild(6883);
+        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6885).GuildIconSizes.SMALL_32 };
+        const tmp25 = onSelectGuild(6885);
         tmp22 = closure_7(tmp25, obj8);
       }
       cResult[10] = item;
@@ -286,7 +286,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     }
     guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  let obj = item(5039);
+  let obj = item(5040);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = {
@@ -311,16 +311,16 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     accessibilityState,
     trailing: tmp15(tmp16, obj4)
   };
-  const TableRow = item(6903).TableRow;
+  const TableRow = item(6905).TableRow;
   if (null != item) {
     name = item.name;
   } else {
-    const intl = tmp8(1128).intl;
-    name = intl.string(tmp8(1128).t.PoWNfe);
+    const intl = tmp8(1125).intl;
+    name = intl.string(tmp8(1125).t.PoWNfe);
   }
   tmp11Result = null;
   if (null != item) {
-    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6883).GuildIconSizes.SMALL_32 };
+    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6885).GuildIconSizes.SMALL_32 };
     const tmp14 = GuildIconDefault;
     tmp11Result = tmp11(tmp14, obj3);
   }
@@ -338,7 +338,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     const BaseGuildTagChiplet = tmp8(9225).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
-  items = [tmp11Result2, closure_7(item(6988).FormRadio, { selected })];
+  items = [tmp11Result2, closure_7(item(6990).FormRadio, { selected })];
   return closure_7(TableRow, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -366,7 +366,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
   str = tmp5[0];
   const tmp6 = tmp5[1];
   ref = ref.useRef(null);
-  const obj3 = selectedGuildId(14170);
+  const obj3 = selectedGuildId(14197);
   const guildTagCreationUpsell = obj3.useGuildTagCreationUpsell("UserPrimaryGuildListBottomSheet");
   const creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   const isUpsellVisible = guildTagCreationUpsell.isUpsellVisible;
@@ -497,10 +497,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
             }
           }
         }
-        ({ placeholder: intl.string(tmp(1128).t.uohsSv), accessibilityLabel: intl2.string(tmp(1128).t.uohsSv), onChange: tmp6 });
-        const SearchBar = tmp(7145).SearchBar;
-        intl = tmp(1128).intl;
-        intl2 = tmp(1128).intl;
+        ({ placeholder: intl.string(tmp(1125).t.uohsSv), accessibilityLabel: intl2.string(tmp(1125).t.uohsSv), onChange: tmp6 });
+        const SearchBar = tmp(7147).SearchBar;
+        intl = tmp(1125).intl;
+        intl2 = tmp(1125).intl;
         class V {
           constructor() {
             if ("" !== str.trim()) {
@@ -603,11 +603,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPrimaryG
             }
           }
         }
-        const Button = tmp(5244).Button;
-        const intl3 = tmp(1128).intl;
-        tmp37[0] = intl3.string(tmp(1128).t.CumH4u);
-        const intl4 = tmp(1128).intl;
-        tmp37[1] = intl4.string(tmp(1128).t.xO5QzM);
+        const Button = tmp(5245).Button;
+        const intl3 = tmp(1125).intl;
+        tmp37[0] = intl3.string(tmp(1125).t.CumH4u);
+        const intl4 = tmp(1125).intl;
+        tmp37[1] = intl4.string(tmp(1125).t.xO5QzM);
         tmp37[4] = tmp25;
         items[1] = length(Button, tmp37);
         tmp34 = closure_8(creatableGuilds, obj7);

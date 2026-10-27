@@ -1,10 +1,10 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 12933
+// Function ID: 12934
 // Name: TabsExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 
-// Module 12924 (TabsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 12933 (TabsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CONTROL: 0, [0]: "CONTROL", ENABLED: 1, [1]: "ENABLED" };

@@ -1,10 +1,10 @@
-// Module ID: 13788
-// Function ID: 13789
+// Module ID: 13802
+// Function ID: 13803
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1281, 8154, 1257, 2]
+// Dependencies: [5, 3, 1278, 8152, 1254, 2]
 // Exports: getAttachments
 
-// Module 13788 (BugReportUtils)
+// Module 13802 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

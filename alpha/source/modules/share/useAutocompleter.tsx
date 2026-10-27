@@ -1,10 +1,10 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12934
+// Function ID: 12935
 // Name: useAutocompleter
-// Dependencies: [32, 19, 558, 576, 9067, 5599, 2]
+// Dependencies: [32, 19, 558, 576, 9067, 5600, 2]
 
-// Module 12925 (useAutocompleter)
-import useInitialValueDefault from "useInitialValue" /* 5599 */;
+// Module 12934 (useAutocompleter)
+import useInitialValueDefault from "useInitialValue" /* 5600 */;
 import _modDef9067 from "module_9067" /* 9067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

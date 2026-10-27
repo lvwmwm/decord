@@ -1,16 +1,16 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16454
+// Function ID: 16455
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16395, 21, 5663, 1128, 558, 576, 504, 16401, 16400, 16416, 5244, 2]
+// Dependencies: [5, 19, 16434, 21, 5664, 1125, 558, 576, 504, 16440, 16439, 16455, 5245, 2]
 
-// Module 16415 (OrbsArcadeClaimRewardButton)
+// Module 16454 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16401 */;
+import intl2 from "intl" /* 1125 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,12 +82,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       if (cResult[12] !== stateFromStores1) {
         let WK589K;
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const string = intl.string;
         if (stateFromStores1 > 1) {
-          WK589K = tmp(1128).t.DCCcdz;
+          WK589K = tmp(1125).t.DCCcdz;
         } else {
-          WK589K = tmp(1128).t.WK589K;
+          WK589K = tmp(1125).t.WK589K;
         }
         const stringResult = string(WK589K);
         cResult[12] = stateFromStores1;
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           }
         }
       }
-      const tmp20 = jsx(tmp(5244).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
+      const tmp20 = jsx(tmp(5245).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
       cResult[14] = tmp14;
       cResult[15] = stateFromStores;
       cResult[16] = size;
@@ -337,14 +337,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5244).Button;
-  const intl = game(1128).intl;
+  const Button = game(5245).Button;
+  const intl = game(1125).intl;
   string = intl.string;
   const tmp6 = jsx;
   if (stateFromStores1 > 1) {
-    WK589K = tmp(1128).t.DCCcdz;
+    WK589K = tmp(1125).t.DCCcdz;
   } else {
-    WK589K = tmp(1128).t.WK589K;
+    WK589K = tmp(1125).t.WK589K;
   }
   return tmp6(Button, obj3);
 });

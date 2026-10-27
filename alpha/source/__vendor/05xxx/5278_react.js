@@ -1,12 +1,21 @@
 // Module ID: 5278
 // Function ID: 5279
 // Name: react
-// Dependencies: [19]
+// Dependencies: [19, 5279]
+// Exports: useBottomSheetInternal
 
 // Module 5278 (react)
 import react from "react" /* 19 */;
+import react2 from "react" /* 5279 */;
 
-const context = react.createContext(null);
+const useContext = react.useContext;
 
-export const BottomSheetInternalContext = context;
-export const BottomSheetInternalProvider = context.Provider;
+export const useBottomSheetInternal = function useBottomSheetInternal(arg0) {
+  const tmp = useContext(react2.BottomSheetInternalContext);
+  if (true !== arg0) {
+    if (null === tmp) {
+      throw "'useBottomSheetInternal' cannot be used out of the BottomSheet!";
+    }
+  }
+  return tmp;
+};

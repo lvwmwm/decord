@@ -1,20 +1,20 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12137
+// Function ID: 12138
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 5234, 2]
+// Dependencies: [19, 17, 21, 587, 4972, 558, 576, 5235, 2]
 
-// Module 12136 (MessageBlock)
+// Module 12137 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5235);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const MessageBlockColors = { RED: 0, [0]: "RED", YELLOW: 1, [1]: "YELLOW" };

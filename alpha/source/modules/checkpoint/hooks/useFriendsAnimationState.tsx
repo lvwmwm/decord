@@ -1,11 +1,11 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13032
+// Function ID: 13033
 // Name: useFriendsAnimationState
-// Dependencies: [32, 19, 558, 576, 6363, 2]
+// Dependencies: [32, 19, 558, 576, 6365, 2]
 
-// Module 13019 (useFriendsAnimationState)
+// Module 13032 (useFriendsAnimationState)
 import react2 from "react" /* 576 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6363 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6365 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,10 +33,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAn
       tmp12 = !arg1;
       first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
       if (tmp12) {
-        tmp12 = first.route === tmp(6363).CheckpointRoute.SQUAD;
+        tmp12 = first.route === tmp(6365).CheckpointRoute.SQUAD;
       }
       if (tmp12) {
-        tmp12 = route === tmp(6363).CheckpointRoute.SIDEKICK;
+        tmp12 = route === tmp(6365).CheckpointRoute.SIDEKICK;
       }
       tmp8[1](obj2);
     }

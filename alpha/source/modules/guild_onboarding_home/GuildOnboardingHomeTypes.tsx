@@ -1,14 +1,14 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13186
+// Function ID: 13187
 // Name: GuildOnboardingHomeTypes
-// Dependencies: [4823, 1087, 1388, 4908, 2]
+// Dependencies: [4824, 1084, 1385, 4909, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 13172 (GuildOnboardingHomeTypes)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import Constants from "Constants" /* 1087 */;
+// Module 13186 (GuildOnboardingHomeTypes)
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

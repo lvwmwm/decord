@@ -1,21 +1,21 @@
-// Module ID: 18455
-// Function ID: 18456
+// Module ID: 18489
+// Function ID: 18490
 // Name: VoicePanelPIPUtils
-// Dependencies: [6772, 6642, 502, 10901, 18456, 5632, 10902, 6645, 10906, 5627, 587, 2]
+// Dependencies: [6773, 6643, 502, 10904, 18490, 5633, 10905, 6646, 10909, 5628, 587, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 18455 (VoicePanelPIPUtils)
+// Module 18489 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 587 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5627 */;
-import CallConstants from "CallConstants" /* 5632 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
-import participantHasVideo from "participantHasVideo" /* 10906 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5628 */;
+import CallConstants from "CallConstants" /* 5633 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6646 */;
+import participantHasVideo from "participantHasVideo" /* 10909 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10901 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18456 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10902 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10904 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18490 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10905 */;
 import size_mod from "module_2" /* 2 */;
 
 let PIPReferenceDimensions;

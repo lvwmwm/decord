@@ -1,16 +1,16 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 8472
+// Function ID: 8473
 // Name: GifTag
-// Dependencies: [17, 21, 4971, 587, 683, 558, 576, 1128, 5234, 2]
+// Dependencies: [17, 21, 4972, 587, 683, 558, 576, 1125, 5235, 2]
 
-// Module 8473 (GifTag)
+// Module 8472 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GifTag(style
     const _Symbol = Symbol;
     const gifTagText = tmp4.gifTagText;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.I5gL2H);
       cResult[3] = stringResult;
       tmp7 = stringResult;

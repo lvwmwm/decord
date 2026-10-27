@@ -1,29 +1,29 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17774
+// Function ID: 17775
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4845, 6701, 17734, 17731, 5052, 551, 5212, 4978, 12, 1257, 1128, 7167, 17449, 5252, 587, 4886, 11964, 1274, 6830, 5868, 9762, 1384, 1633, 5267, 17735, 17736, 9762, 16445, 5297, 2]
+// Dependencies: [5, 19, 17, 4846, 6702, 17775, 17772, 5053, 551, 5213, 4979, 12, 1254, 1125, 7169, 17490, 5253, 587, 4887, 11965, 1271, 6832, 5869, 9764, 1381, 1630, 5268, 17776, 17777, 9764, 16484, 5298, 2]
 // Exports: default
 
-// Module 17733 (useGuildsBarGesture)
+// Module 17774 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
-import intl15 from "intl" /* 1128 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import react_native2 from "react-native" /* 1274 */;
-import shared from "shared" /* 4978 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6701 */;
-import FastList from "FastList" /* 7167 */;
-import ContextMenuState from "ContextMenuState" /* 9762 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11964 */;
+import intl15 from "intl" /* 1125 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import react_native2 from "react-native" /* 1271 */;
+import shared from "shared" /* 4979 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5268 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6702 */;
+import FastList from "FastList" /* 7169 */;
+import ContextMenuState from "ContextMenuState" /* 9764 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11965 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17734 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17731 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17775 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17772 */;
 import "ReanimatedRexport";
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5052 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5053 */;
 import debounce from "debounce" /* 551 */;
 import module_12_mod from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -139,17 +139,17 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           if ("drop-into" === overState2) {
             let formatToPlainStringResult;
             if (overNode.type === GuildsNodeType.FOLDER) {
-              const intl6 = tmp18(1128).intl;
+              const intl6 = tmp18(1125).intl;
               const obj3 = { folderName: overNode.name };
-              formatToPlainStringResult = intl6.formatToPlainString(tmp18(1128).t.uLDoxR, obj3);
+              formatToPlainStringResult = intl6.formatToPlainString(tmp18(1125).t.uLDoxR, obj3);
             }
             formatToPlainStringResult1 = formatToPlainStringResult;
           } else if ("before" === overState2) {
             let tmp28;
-            const intl3 = tmp18(1128).intl;
+            const intl3 = tmp18(1125).intl;
             const formatToPlainString = intl3.formatToPlainString;
             const type2 = overNode.type;
-            const prop = tmp18(1128).t["A5aDw+"];
+            const prop = tmp18(1125).t["A5aDw+"];
             if (GuildsNodeType.GUILD === type2) {
               const guild1 = GuildStore.getGuild(overNode.id);
               let name5;
@@ -157,15 +157,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
                 name5 = guild1.name;
               }
               if (name5 == null) {
-                const intl5 = tmp18(1128).intl;
-                name5 = intl5.string(tmp18(1128).t.fKYRlM);
+                const intl5 = tmp18(1125).intl;
+                name5 = intl5.string(tmp18(1125).t.fKYRlM);
               }
               tmp28 = name5;
             } else if (tmp27.FOLDER === type2) {
               let name2 = overNode.name;
               if (name2 == null) {
-                const intl4 = tmp18(1128).intl;
-                name2 = intl4.string(tmp18(1128).t.ebAnWE);
+                const intl4 = tmp18(1125).intl;
+                name2 = intl4.string(tmp18(1125).t.ebAnWE);
               }
               tmp28 = name2;
             }
@@ -173,10 +173,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
             formatToPlainStringResult1 = formatToPlainString(prop, obj4);
           } else if ("after" === overState2) {
             let tmp21;
-            const intl14 = tmp18(1128).intl;
+            const intl14 = tmp18(1125).intl;
             const formatToPlainString3 = intl14.formatToPlainString;
             const type5 = overNode.type;
-            const w8FN92 = tmp18(1128).t.w8FN92;
+            const w8FN92 = tmp18(1125).t.w8FN92;
             if (GuildsNodeType.GUILD === type5) {
               const guild2 = GuildStore.getGuild(overNode.id);
               let name6;
@@ -184,15 +184,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
                 name6 = guild2.name;
               }
               if (name6 == null) {
-                const intl2 = tmp18(1128).intl;
-                name6 = intl2.string(tmp18(1128).t.fKYRlM);
+                const intl2 = tmp18(1125).intl;
+                name6 = intl2.string(tmp18(1125).t.fKYRlM);
               }
               tmp21 = name6;
             } else if (tmp67.FOLDER === type5) {
               let name = overNode.name;
               if (name == null) {
-                const intl = tmp18(1128).intl;
-                name = intl.string(tmp18(1128).t.ebAnWE);
+                const intl = tmp18(1125).intl;
+                name = intl.string(tmp18(1125).t.ebAnWE);
               }
               tmp21 = name;
             }
@@ -204,10 +204,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           closure_17(formatToPlainStringResult1);
         }
       }
-      const intl7 = tmp18(1128).intl;
+      const intl7 = tmp18(1125).intl;
       const formatToPlainString2 = intl7.formatToPlainString;
       const type3 = overNode.type;
-      const qiQ0QI = tmp18(1128).t.qiQ0QI;
+      const qiQ0QI = tmp18(1125).t.qiQ0QI;
       if (GuildsNodeType.GUILD === type3) {
         const guild3 = GuildStore.getGuild(overNode.id);
         let name7;
@@ -215,15 +215,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           name7 = guild3.name;
         }
         if (name7 == null) {
-          const intl9 = tmp18(1128).intl;
-          name7 = intl9.string(tmp18(1128).t.fKYRlM);
+          const intl9 = tmp18(1125).intl;
+          name7 = intl9.string(tmp18(1125).t.fKYRlM);
         }
         tmp35 = name7;
       } else if (tmp34.FOLDER === type3) {
         let name3 = overNode.name;
         if (name3 == null) {
-          const intl8 = tmp18(1128).intl;
-          name3 = intl8.string(tmp18(1128).t.ebAnWE);
+          const intl8 = tmp18(1125).intl;
+          name3 = intl8.string(tmp18(1125).t.ebAnWE);
         }
         tmp35 = name3;
       }
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "emoji", positionPercentage: false };
+    sectionItemFromPosition = { item: "enabled", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -285,7 +285,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
             if (null != element) {
               tmp7 = element;
             }
-          } else if (tmp10(7167).FastListItemTypes.ITEM === type) {
+          } else if (tmp10(7169).FastListItemTypes.ITEM === type) {
             if (element.type !== GuildsNodeType.ROOT) {
               let tmp13 = element;
               if (element.type !== GuildsNodeType.FOLDER) {
@@ -688,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "Reflect" });
+    setStateShallow({ dragSpecs: "toCharArray$esjava$1", overSpecs: "Symbol" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -893,7 +893,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9762).ContextMenuStore;
+        const ContextMenuStore = tmp66(9764).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

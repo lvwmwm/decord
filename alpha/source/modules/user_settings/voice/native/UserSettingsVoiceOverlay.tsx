@@ -1,18 +1,18 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11629
+// Function ID: 11630
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 11615, 21, 558, 576, 573, 1128, 11614, 7295, 11628, 2]
+// Dependencies: [19, 11617, 21, 558, 576, 573, 1125, 11616, 7297, 11630, 2]
 
-// Module 11627 (UserSettingsVoiceOverlay)
+// Module 11629 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7295 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 11614 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11628 */;
+import intl4 from "intl" /* 1125 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7297 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 11616 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11630 */;
 import react from "react" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11615 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11617 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const tmpResult = useStateFromStores;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl4.t.bNqkD9);
     cResult[2] = stringResult;
     tmp8 = stringResult;
@@ -50,9 +50,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl4.t["9CSZJm"]);
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult2 = intl3.string(intl4.t.Wfoivk);
     cResult[3] = stringResult1;
     cResult[4] = stringResult2;
@@ -63,9 +63,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp11 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    const UserSettingsTableRowGroup = tmp(11614).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11616).UserSettingsTableRowGroup;
     ({ label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const TableSwitchRow = tmp(7295).TableSwitchRow;
+    const TableSwitchRow = tmp(7297).TableSwitchRow;
     const tmp17 = <UserSettingsTableRowGroup title={tmp8} hasIcons={false}>{null}</UserSettingsTableRowGroup>;
     cResult[5] = stateFromStores;
     cResult[6] = tmp17;

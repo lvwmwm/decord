@@ -1,27 +1,27 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15451
+// Function ID: 15452
 // Name: Avatar
-// Dependencies: [19, 17, 1087, 1203, 21, 4971, 587, 14314, 15404, 15405, 9406, 8646, 558, 576, 9405, 15406, 5246, 11448, 11449, 15416, 2]
+// Dependencies: [19, 17, 1084, 1200, 21, 4972, 587, 14350, 15440, 15441, 9405, 8646, 558, 576, 9404, 15442, 5247, 11451, 11452, 15452, 2]
 
-// Module 15415 (Avatar)
+// Module 15451 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import IconDefault from "Icon" /* 5246 */;
+import Constants from "Constants" /* 1084 */;
+import IconDefault from "Icon" /* 5247 */;
 import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8646 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9405 */;
-import ClipView from "ClipView" /* 9406 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11448 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11449 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14314 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15404 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15405 */;
-import Status from "Status" /* 15406 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 15416 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9404 */;
+import ClipView from "ClipView" /* 9405 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11451 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11452 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14350 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15440 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15441 */;
+import Status from "Status" /* 15442 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 15452 */;
 import react from "react" /* 19 */;
-import StatusConstants from "StatusConstants" /* 1203 */;
+import StatusConstants from "StatusConstants" /* 1200 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 19188
-// Function ID: 19189
+// Module ID: 19226
+// Function ID: 19227
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9006, 4823, 4901, 4913, 1392, 8406, 1087, 21, 5252, 587, 19177, 504, 5604, 1128, 19178, 5210, 8925, 2002, 9005, 19175, 5234, 5669, 5977, 6987, 6903, 2]
+// Dependencies: [19, 17, 9006, 4824, 4902, 4914, 1389, 8405, 1084, 21, 5253, 587, 19215, 504, 5605, 1125, 19216, 5211, 8925, 1999, 9005, 19213, 5235, 5670, 5978, 6989, 6905, 2]
 // Exports: default
 
-// Module 19188 (ChannelSetupScreen)
+// Module 19226 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import intl10 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8406 */;
+import Constants from "Constants" /* 1084 */;
+import intl10 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8405 */;
 import react from "react" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

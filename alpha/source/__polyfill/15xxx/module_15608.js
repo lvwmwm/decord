@@ -1,19 +1,21 @@
 // Module ID: 15608
 // Function ID: 15609
-// Dependencies: [15560, 15567]
+// Dependencies: [15599, 15609, 15607, 15610]
 
 // Module 15608
-import _mod15560 from "module_15560" /* 15560 */;
-import _mod15567 from "module_15567" /* 15567 */;
+import _mod15599 from "module_15599" /* 15599 */;
+import _mod15607 from "module_15607" /* 15607 */;
+import _mod15609 from "module_15609" /* 15609 */;
 
-let closure_2 = _mod15560("keys");
+let tmp;
+const _mod15610 = tmp(15610);
 
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod15567(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
+export default _mod15599 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = _mod15609("Symbol");
+  let tmpResultResult = _mod15607(tmp3);
+  if (tmpResultResult) {
+    const tmpResult = _mod15610;
+    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
   }
-  return tmp2;
-};
+  return tmpResultResult;
+});

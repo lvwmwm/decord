@@ -1,16 +1,16 @@
-// Module ID: 18716
-// Function ID: 18717
+// Module ID: 18752
+// Function ID: 18753
 // Name: updateRules
-// Dependencies: [19, 1087, 21, 558, 576, 4985, 5252, 587, 5660, 1951, 1202, 2]
+// Dependencies: [19, 1084, 21, 558, 576, 4986, 5253, 587, 5661, 1948, 1199, 2]
 // Exports: default
 
-// Module 18716 (updateRules)
+// Module 18752 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import _modDef1951 from "module_1951" /* 1951 */;
-import LinkingDefault from "Linking" /* 5660 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import LinkingDefault from "Linking" /* 5661 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
   const cResult = obj.c(9);
   node = node.node;
   ({ output, state } = node);
-  const alwaysShowLinkDecorations = react.useContext(node(4985).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const obj2 = node(5252);
+  const alwaysShowLinkDecorations = react.useContext(node(4986).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const obj2 = node(5253);
   const token = obj2.useToken(nativeDefault.colors.TEXT_LINK);
   let str = "none";
   if (alwaysShowLinkDecorations) {
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
         const fn = function f() {
           const openURL = LinkingDefault.openURL;
           LinkingDefault;
-          const obj = _modDef1951;
+          const obj = _modDef1948;
           return openURL(obj.sanitizeUrl(node.target));
         };
         cResult[3] = node.target;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
         if (cResult[7] === state) {
           tmp10 = cResult[8];
         }
-        return jsx(tmp(1202).LegacyText, { accessible: true, accessibilityRole: "link", onPress: tmp9, style: tmp5, children: tmp10 });
+        return jsx(tmp(1199).LegacyText, { accessible: true, accessibilityRole: "link", onPress: tmp9, style: tmp5, children: tmp10 });
       }
     }
     const outputResult = output(node.content, state);
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
     obj.onClick = () => {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1951;
+      const obj = _modDef1948;
       return openURL(obj.sanitizeUrl(node.target));
     };
   }

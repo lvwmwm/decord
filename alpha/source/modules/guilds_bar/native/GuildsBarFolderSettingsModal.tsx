@@ -1,22 +1,22 @@
-// Module ID: 17738
-// Function ID: 17739
+// Module ID: 17779
+// Function ID: 17780
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 6701, 17739, 21, 4971, 5868, 5593, 5210, 17740, 2002, 587, 5977, 7008, 1128, 6987, 6903, 1105, 15844, 6924, 558, 576, 504, 17737, 7095, 2]
+// Dependencies: [32, 19, 17, 6702, 17780, 21, 4972, 5869, 5594, 5211, 17781, 1999, 587, 5978, 7010, 1125, 6989, 6905, 1102, 15882, 6926, 558, 576, 504, 17778, 7097, 2]
 
-// Module 17738 (GuildsBarFolderSettingsModal)
-import intl5 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5868 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 17737 */;
+// Module 17779 (GuildsBarFolderSettingsModal)
+import intl5 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5869 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 17778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedGuildStore from "SortedGuildStore" /* 6701 */;
-import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 17739 */;
+import SortedGuildStore from "SortedGuildStore" /* 6702 */;
+import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 17780 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ function GuildFolderSettingsScene(color) {
   let tmp3 = dependencyMap;
   const tmp2 = onColorChange;
   const items = [color, onColorChange];
-  const insets = onColorChange(5593)().insets;
+  const insets = onColorChange(5594)().insets;
   let obj = { style: tmp.scrollView, keyboardShouldPersistTaps: "always", contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, contentContainerStyle: obj2, children: tmp7(Stack, obj3) };
   obj2 = { padding: onColorChange(587).space.PX_16, paddingBottom: 38 + insets.bottom };
   const callback = react.useCallback(() => {
@@ -62,7 +62,7 @@ function GuildFolderSettingsScene(color) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let tmp4 = color;
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(17740, dependencyMap.paths);
+    const tmp3 = asyncRequire(17781, dependencyMap.paths);
     if (color == null) {
       tmp4 = metroImportAll;
     }
@@ -70,27 +70,27 @@ function GuildFolderSettingsScene(color) {
     openLazy(tmp3, "RoleColorPicker", obj);
   }, items);
   obj3 = { spacing: onColorChange(587).space.PX_16, children: items1 };
-  Stack = color(5977).Stack;
-  const obj4 = { label: intl.string(color(1128).t.tGRbjA), placeholder: intl2.string(color(1128).t.xV9hVh), value: name, onChange: onNameChange, maxLength: 32, autoFocus: true, clearable: true };
-  const TextInput = color(7008).TextInput;
-  intl = color(1128).intl;
-  intl2 = color(1128).intl;
+  Stack = color(5978).Stack;
+  const obj4 = { label: intl.string(color(1125).t.tGRbjA), placeholder: intl2.string(color(1125).t.xV9hVh), value: name, onChange: onNameChange, maxLength: 32, autoFocus: true, clearable: true };
+  const TextInput = color(7010).TextInput;
+  intl = color(1125).intl;
+  intl2 = color(1125).intl;
   items1 = [closure_10(TextInput, obj4), ];
-  const TableRowGroup = color(6987).TableRowGroup;
-  const obj5 = { label: intl3.string(color(1128).t.xpurRF), subLabel: int2hexResult, onPress: callback, arrow: true, trailing: closure_10(tmp2Result, obj7) };
-  const TableRow = color(6903).TableRow;
-  intl3 = color(1128).intl;
+  const TableRowGroup = color(6989).TableRowGroup;
+  const obj5 = { label: intl3.string(color(1125).t.xpurRF), subLabel: int2hexResult, onPress: callback, arrow: true, trailing: closure_10(tmp2Result, obj7) };
+  const TableRow = color(6905).TableRow;
+  intl3 = color(1125).intl;
   const tmp6 = closure_6;
   tmp7 = closure_11;
   if (null != color) {
-    const tmp8Result = color(1105);
+    const tmp8Result = color(1102);
     int2hexResult = tmp8Result.int2hex(color);
   } else {
-    const intl4 = tmp8(1128).intl;
-    int2hexResult = intl4.string(tmp8(1128).t.bBvAEH);
+    const intl4 = tmp8(1125).intl;
+    int2hexResult = intl4.string(tmp8(1125).t.bBvAEH);
   }
   let tmp11 = color;
-  tmp2Result = tmp2(15844);
+  tmp2Result = tmp2(15882);
   if (color == null) {
     tmp11 = closure_8;
   }
@@ -222,10 +222,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
           }
         }
       }
-      const obj3 = { render, title: intl.string(tmp(1128).t.Dx7im5), headerLeft: tmpResult2.getHeaderCloseButton(tmp15), headerRight: headerTextButton };
-      intl = tmp(1128).intl;
+      const obj3 = { render, title: intl.string(tmp(1125).t.Dx7im5), headerLeft: tmpResult2.getHeaderCloseButton(tmp15), headerRight: headerTextButton };
+      intl = tmp(1125).intl;
       const tmp19 = c14;
-      tmpResult2 = tmp(6924);
+      tmpResult2 = tmp(6926);
       if (first1 !== initialFolderName || first2 !== initialFolderColor) {
         class P {
           constructor(arg0) {
@@ -233,8 +233,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
           }
         }
         const getHeaderTextButton = tmp21.getHeaderTextButton;
-        const intl2 = tmp(1128).intl;
-        headerTextButton = getHeaderTextButton(intl2.string(tmp(1128).t["R3BPH+"]), tmp14);
+        const intl2 = tmp(1125).intl;
+        headerTextButton = getHeaderTextButton(intl2.string(tmp(1125).t["R3BPH+"]), tmp14);
       } else {
         class P {
           constructor(arg0) {
@@ -365,15 +365,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
     if (closure_5) {
       const getHeaderTextButton = NavigatorHeader.getHeaderTextButton;
       NavigatorHeader;
-      const intl2 = tmp3(1128).intl;
-      fn = getHeaderTextButton(intl2.string(tmp3(1128).t["R3BPH+"]), tmp);
+      const intl2 = tmp3(1125).intl;
+      fn = getHeaderTextButton(intl2.string(tmp3(1125).t["R3BPH+"]), tmp);
     } else {
       fn = () => null;
     }
     return { [tmp2]: obj2 };
   }, items3);
   let obj3 = { screens: memo, initialRouteName };
-  return closure_10(tmp(7095).Navigator, obj3);
+  return closure_10(tmp(7097).Navigator, obj3);
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
 

@@ -1,20 +1,56 @@
 // Module ID: 1881
 // Function ID: 1882
-// Dependencies: [19, 17, 21, 1876]
+// Dependencies: [19, 21, 1874, 1875, 1880, 1847, 1873]
 // Exports: default
 
 // Module 1881
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import TEST_ID_KEYBOARD_TOOLBAR from "TEST_ID_KEYBOARD_TOOLBAR" /* 1876 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+import KeyboardController2 from "KeyboardController" /* 1847 */;
+import _modDef1874 from "module_1874" /* 1874 */;
+import _modDef1875 from "module_1875" /* 1875 */;
 
-let StyleSheet;
-let c2;
-({ StyleSheet, View: c2 } = react_native);
+const useCallback = react2.useCallback;
 const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default function _default(children) {
-  return <React2 style={styles.flex} testID={TEST_ID_KEYBOARD_TOOLBAR.TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</React2>;
+export default function _default(icon) {
+  let button;
+  let children;
+  let disabled;
+  let onPress;
+  let rippleRadius;
+  let style;
+  ({ children, onPress } = icon);
+  ({ disabled, button } = icon);
+  ({ rippleRadius, style } = icon);
+  if (button === undefined) {
+    const tmp = importDefault;
+    button = _modDef1874;
+  }
+  icon = icon.icon;
+  if (icon === undefined) {
+    icon = _modDef1875;
+  }
+  const obj = onPress(1880);
+  const toolbarContext = obj.useToolbarContext();
+  const theme = toolbarContext.theme;
+  const tmp5 = onPress;
+  if (disabled == null) {
+    disabled = toolbarContext.isNextDisabled;
+  }
+  const items = [onPress];
+  const tmp8 = useCallback((isDefaultPrevented) => {
+    if (onPress != null) {
+      tmp(isDefaultPrevented);
+    }
+    if (!isDefaultPrevented.isDefaultPrevented()) {
+      const KeyboardController = KeyboardController2.KeyboardController;
+      KeyboardController.setFocusTo("next");
+    }
+  }, items);
+  if (children == null) {
+    const obj3 = { disabled, theme, type: "next" };
+    children = tmp9(icon, obj3);
+  }
+  return <button accessibilityHint="Moves focus to the next field" accessibilityLabel="Next" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1873).TEST_ID_KEYBOARD_TOOLBAR_NEXT} theme={theme} onPress={tmp8}>{children}</button>;
 };

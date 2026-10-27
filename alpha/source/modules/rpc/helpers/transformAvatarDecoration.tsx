@@ -1,11 +1,11 @@
 // Module ID: 9263
 // Function ID: 9264
 // Name: transformAvatarDecoration
-// Dependencies: [1987, 2]
+// Dependencies: [1984, 2]
 // Exports: default
 
 // Module 9263 (transformAvatarDecoration)
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1984 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/rpc/helpers/transformAvatarDecoration.tsx");

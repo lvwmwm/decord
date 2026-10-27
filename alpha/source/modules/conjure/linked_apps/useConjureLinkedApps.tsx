@@ -1,15 +1,15 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12209
+// Function ID: 12210
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6773, 558, 576, 12192, 504, 1128, 3830, 2]
+// Dependencies: [5, 32, 19, 6774, 558, 576, 12210, 504, 1125, 3831, 2]
 
-// Module 12191 (useConjureLinkedApps)
-import intl2 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
+// Module 12209 (useConjureLinkedApps)
+import intl2 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
           if (name == null) {
             const intl = intl2.intl;
             const obj = { projectId: project_id };
-            name = intl.formatToPlainString(_modDef3830.HHCa93, obj);
+            name = intl.formatToPlainString(_modDef3831.HHCa93, obj);
           }
           items[1] = name;
           return items;
@@ -308,7 +308,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
           if (name == null) {
             const intl = intl2.intl;
             const obj = { projectId: project_id };
-            name = intl.formatToPlainString(_modDef3830.HHCa93, obj);
+            name = intl.formatToPlainString(_modDef3831.HHCa93, obj);
           }
           items[1] = name;
           return items;

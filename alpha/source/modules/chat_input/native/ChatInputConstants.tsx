@@ -1,10 +1,10 @@
-// Module ID: 12512
-// Function ID: 12513
+// Module ID: 12520
+// Function ID: 12521
 // Name: ChatInputConstants
-// Dependencies: [1202, 2]
+// Dependencies: [1199, 2]
 
-// Module 12512 (ChatInputConstants)
-import native from "native" /* 1202 */;
+// Module 12520 (ChatInputConstants)
+import native from "native" /* 1199 */;
 import size from "module_2" /* 2 */;
 
 const obj = { easing: native.STANDARD_EASING, duration: 250 };

@@ -1,11 +1,11 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12489
+// Function ID: 12490
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6773, 558, 576, 504, 10806, 10807, 1128, 3830, 12195, 2]
+// Dependencies: [5, 32, 19, 6774, 558, 576, 504, 10809, 10810, 1125, 3831, 12213, 2]
 
-// Module 12481 (useConjurePublishScheduleProposal)
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6773 */;
+// Module 12489 (useConjurePublishScheduleProposal)
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -147,8 +147,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
       }
       const formatToPlainString = tmp19.formatToPlainString;
       let obj4 = { time: tmpResult2.formatPublishScheduleTime(trigger.next_run_at) };
-      const orZDqY = _modDef3830.orZDqY;
-      tmpResult2 = tmp(12195);
+      const orZDqY = _modDef3831.orZDqY;
+      tmpResult2 = tmp(12213);
       formatToPlainStringResult = formatToPlainString(orZDqY, obj4);
     }
     cResult[8] = trigger.next_run_at;
@@ -343,16 +343,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
   }), items2);
   let formatToPlainStringResult = null;
   if (trigger.next_run_at > _slicedToArray(react.useState(() => Date.now()), 1)[0]) {
-    let intl = tmp(1128).intl;
+    let intl = tmp(1125).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef3830.orZDqY;
-    tmpResult = tmp(12195);
+    const orZDqY = _modDef3831.orZDqY;
+    tmpResult = tmp(12213);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12195);
+  tmpResult2 = tmp(12213);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

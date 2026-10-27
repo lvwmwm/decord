@@ -1,13 +1,13 @@
-// Module ID: 13501
-// Function ID: 13502
+// Module ID: 13515
+// Function ID: 13516
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8372, 558, 576, 504, 13485, 1128, 2568, 2]
+// Dependencies: [19, 8371, 558, 576, 504, 13499, 1125, 2567, 2]
 
-// Module 13501 (useGameServerPowerupStatus)
-import intl2 from "intl" /* 1128 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13485 */;
+// Module 13515 (useGameServerPowerupStatus)
+import intl2 from "intl" /* 1125 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13499 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8372 */;
+import GameServerStore from "GameServerStore" /* 8371 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp8;
-const _modDef2568 = tmp8(2568);
+const _modDef2567 = tmp8(2567);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerPowerupStatus(arg0) {
   let closure_0;
   let first;
@@ -75,8 +75,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
       let tmp10;
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
-        intl = tmp(1128).intl;
+        const obj3 = { type: "active", statusText: intl.string(_modDef2567.FFLkmx) };
+        intl = tmp(1125).intl;
         cResult[6] = obj3;
         tmp10 = obj3;
       } else {
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(13485)(arg0);
+  const tmp2 = stateFromStores(13499)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
         obj3 = { type: "expiring", expiringAt: tmp[0].ends_at };
         const obj2 = { type: "expiring", expiringAt: tmp[0].ends_at };
       } else {
-        obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
+        obj3 = { type: "active", statusText: intl.string(_modDef2567.FFLkmx) };
         intl = intl2.intl;
       }
       return obj3;

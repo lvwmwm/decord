@@ -1,35 +1,35 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18427
+// Function ID: 18428
 // Name: SoundPlayer
-// Dependencies: [19, 4822, 2045, 15711, 6773, 6775, 5715, 4827, 6642, 502, 4823, 4845, 2014, 13747, 5714, 4874, 6685, 5630, 5717, 1087, 6776, 21, 558, 576, 504, 11526, 17666, 5996, 6645, 18394, 4892, 1388, 6778, 10728, 7345, 2]
+// Dependencies: [19, 4823, 2042, 15747, 6774, 6776, 5716, 4828, 6643, 502, 4824, 4846, 2011, 13761, 5715, 4875, 6686, 5631, 5718, 1084, 6777, 21, 558, 576, 504, 11528, 17707, 5997, 6646, 18428, 4893, 1385, 6779, 10731, 7347, 2]
 
-// Module 18393 (SoundPlayer)
+// Module 18427 (SoundPlayer)
 import react2 from "react" /* 576 */;
-import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 4822 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6778 */;
-import SoundUtils from "SoundUtils" /* 11526 */;
-import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17666 */;
-import _modDef18394 from "module_18394" /* 18394 */;
+import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 4823 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6779 */;
+import SoundUtils from "SoundUtils" /* 11528 */;
+import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 17707 */;
+import _modDef18428 from "module_18428" /* 18428 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15711 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import FramesStore from "FramesStore" /* 6775 */;
-import GameConsoleStore from "GameConsoleStore" /* 5715 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15747 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import FramesStore from "FramesStore" /* 6776 */;
+import GameConsoleStore from "GameConsoleStore" /* 5716 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13747 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SpeakingStore from "SpeakingStore" /* 6685 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5717 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13761 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SpeakingStore from "SpeakingStore" /* 6686 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -831,10 +831,10 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
       } else {
         keys = [];
       }
-      const tmp8 = _modDef18394(rtcUserIds, rtcConnected.rtcUserIds);
-      const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18394)(tmp8, keys).length > 0;
-      const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18394)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
-      tmp.current = _modDef18394(keys, tmp8);
+      const tmp8 = _modDef18428(rtcUserIds, rtcConnected.rtcUserIds);
+      const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18428)(tmp8, keys).length > 0;
+      const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18428)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
+      tmp.current = _modDef18428(keys, tmp8);
       if (rtcConnected.voiceChannelId === voiceChannelId) {
         if (null != voiceChannelId) {
           channel = ChannelStore.getChannel(voiceChannelId);
@@ -1041,10 +1041,10 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     } else {
       keys = [];
     }
-    const tmp8 = _modDef18394(rtcUserIds, rtcConnected.rtcUserIds);
-    const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18394)(tmp8, keys).length > 0;
-    const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18394)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
-    tmp.current = _modDef18394(keys, tmp8);
+    const tmp8 = _modDef18428(rtcUserIds, rtcConnected.rtcUserIds);
+    const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18428)(tmp8, keys).length > 0;
+    const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(18428)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
+    tmp.current = _modDef18428(keys, tmp8);
     if (rtcConnected.voiceChannelId === voiceChannelId) {
       if (null != voiceChannelId) {
         channel = ChannelStore.getChannel(voiceChannelId);

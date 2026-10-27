@@ -1,10 +1,10 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13300
+// Function ID: 13301
 // Name: GameSearchRowExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 
-// Module 13286 (GameSearchRowExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 13300 (GameSearchRowExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-game-search-row", kind: "user", defaultConfig: { extraChromeEnabled: false }, variations: { 0: { extraChromeEnabled: false }, 1: { extraChromeEnabled: true } } };

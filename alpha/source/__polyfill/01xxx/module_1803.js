@@ -1,58 +1,74 @@
 // Module ID: 1803
 // Function ID: 1804
-// Dependencies: [19, 1688, 1683, 1669, 1804, 1661]
-// Exports: useHandler
+// Dependencies: [19, 1699, 1680]
+// Exports: useAnimatedKeyboard
 
 // Module 1803
-import _mod1661 from "module_1661" /* 1661 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1683 */;
-import _mod1688 from "module_1688" /* 1688 */;
-import _mod1804 from "module_1804" /* 1804 */;
 import react from "react" /* 19 */;
+
+let dependencyMap;
 
 let c2;
 let c3;
 ({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
+let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
 
-export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
-  let context;
-  let isWebResult;
-  let obj;
-  let savedDependencies;
-  const tmp = _false(null);
-  let closure_0 = tmp;
+export const useAnimatedKeyboard = function useAnimatedKeyboard() {
+  let obj3;
+  let obj4;
+  let ref;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = { isStatusBarTranslucentAndroid: "toCharArray$esjava$1", isNavigationBarTranslucentAndroid: "Symbol" };
+  }
+  let ref2;
+  let obj2;
+  const tmp = ref2(null);
+  dependencyMap = tmp;
+  const tmp2 = ref2(-1);
+  let closure_2 = tmp2;
+  const tmp3 = ref2(false);
+  ref2 = tmp3;
   if (null === tmp.current) {
-    const obj2 = { context: obj.makeShareable({}), savedDependencies: [] };
+    obj2 = { state: obj3.makeMutable(obj(1680).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
+    obj3 = obj(1699);
+    let fn = function c(value, value2) {
+      obj2.state.value = value;
+      obj2.height.value = value2;
+    };
+    const obj6 = { keyboardEventData: obj2 };
+    fn.__closure = obj6;
+    fn.__workletHash = 4393537867728;
+    fn.__initData = obj2;
+    obj4 = obj(1699);
+    const obj5 = obj(1699);
+    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
     tmp.current = obj2;
-    obj = _mod1688;
+    tmp3.current = true;
   }
-  React2(() => () => {
-    closure_1_0.current = null;
-  }, []);
-  ({ context, savedDependencies } = tmp.current);
-  for (const key10024 in memoizedGestureCallbacks) {
-    let tmp12 = require;
-    let obj8 = LayoutAnimationType;
-    if (obj8.isWorkletFunction(memoizedGestureCallbacks[key10024])) {
-      continue;
-    } else {
-      let self = this;
-      let str = "Passed a function that is not a worklet. Please provide a worklet function.";
-      let self2 = this;
-      let reanimatedError = new tmp12(1669).ReanimatedError("Passed a function that is not a worklet. Please provide a worklet function.");
-      throw reanimatedError;
+  closure_2(() => {
+    if (false === ref2.current) {
+      if (null !== ref.current) {
+        const current = ref.current;
+        obj = obj(ref[1]);
+        const fn = function u(value, value2) {
+          current.state.value = value;
+          current.height.value = value2;
+        };
+        obj2 = { _keyboardEventData: current };
+        fn.__closure = obj2;
+        fn.__workletHash = 5041909921996;
+        fn.__initData = __initData;
+        ref.current = obj.subscribeForKeyboardEvents(fn, current);
+        tmp.current = true;
+      }
     }
-  }
-  const obj3 = _mod1804;
-  const dependencies = obj3.buildDependencies(items10, memoizedGestureCallbacks);
-  tmp.current.savedDependencies = dependencies;
-  const obj4 = _mod1804;
-  const obj5 = { context, doDependenciesDiffer: !obj4.areDependenciesEqual(dependencies, savedDependencies), useWeb: isWebResult };
-  const obj6 = _mod1661;
-  isWebResult = obj6.isWeb();
-  if (!isWebResult) {
-    const tmp7Result = _mod1661;
-    isWebResult = tmp7Result.isJest();
-  }
-  return obj5;
+    return () => {
+      obj = obj(closure_1[1]);
+      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
+      ref2.current = false;
+    };
+  }, []);
+  return tmp.current;
 };

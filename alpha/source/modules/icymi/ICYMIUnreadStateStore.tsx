@@ -1,12 +1,12 @@
 // Module ID: 8837
 // Function ID: 8838
 // Name: ICYMIUnreadStateStore
-// Dependencies: [1104, 8836, 8838, 504, 584, 2]
+// Dependencies: [1101, 8836, 8838, 504, 584, 2]
 
 // Module 8837 (ICYMIUnreadStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
+import DurationsDefault from "Durations" /* 1101 */;
 import ICYMITypes from "ICYMITypes" /* 8836 */;
 import size from "module_2" /* 2 */;
 

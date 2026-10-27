@@ -1,31 +1,31 @@
 // Module ID: 8947
 // Function ID: 8948
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 4827, 8948, 8884, 1087, 21, 4971, 587, 6908, 1202, 8115, 5669, 8949, 5234, 1128, 5244, 6672, 8950, 2002, 5210, 2]
+// Dependencies: [32, 19, 17, 4828, 8948, 8884, 1084, 21, 4972, 587, 6910, 1199, 8113, 5670, 8949, 5235, 1125, 5245, 6673, 8950, 1999, 5211, 2]
 // Exports: default
 
 // Module 8947 (StageChannelUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import Pressables from "Pressables" /* 6908 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8115 */;
+import Constants from "Constants" /* 1084 */;
+import intl5 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import Pressables from "Pressables" /* 6910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8113 */;
 import GuildEventModalConstants from "GuildEventModalConstants" /* 8884 */;
 import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8948 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

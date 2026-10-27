@@ -1,21 +1,21 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11625
+// Function ID: 11626
 // Name: VolumeSlider
-// Dependencies: [109, 19, 17, 5718, 21, 1384, 4971, 558, 576, 587, 5252, 11624, 5859, 1128, 8769, 8572, 2]
+// Dependencies: [109, 19, 17, 5719, 21, 1381, 4972, 558, 576, 587, 5253, 11626, 5860, 1125, 8769, 8572, 2]
 
-// Module 11623 (VolumeSlider)
+// Module 11625 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 5252 */;
-import Constants from "Constants" /* 5718 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5859 */;
+import useToken2 from "useToken" /* 5253 */;
+import Constants from "Constants" /* 5719 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5860 */;
 import VoiceNormalIcon from "VoiceNormalIcon" /* 8572 */;
-import VoiceXIcon from "VoiceXIcon" /* 11624 */;
+import VoiceXIcon from "VoiceXIcon" /* 11626 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles from "createStyles" /* 4971 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,8 +120,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VolumeSlider
     if (cResult[16] !== tmp4) {
       let stringResult = tmp4;
       if (tmp4 == null) {
-        const intl = tmp(1128).intl;
-        stringResult = intl.string(tmp(1128).t.xPHVBs);
+        const intl = tmp(1125).intl;
+        stringResult = intl.string(tmp(1125).t.xPHVBs);
       }
       cResult[16] = tmp4;
       cResult[17] = stringResult;
@@ -254,8 +254,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VolumeSlider
   tmp5Result = PerceptualVolumeUtils;
   const tmp9 = closure_8;
   if (accessibilityLabel == null) {
-    const intl = tmp5(1128).intl;
-    accessibilityLabel = intl.string(tmp5(1128).t.xPHVBs);
+    const intl = tmp5(1125).intl;
+    accessibilityLabel = intl.string(tmp5(1125).t.xPHVBs);
   }
   if (onResponderGrant == null) {
     let fn;

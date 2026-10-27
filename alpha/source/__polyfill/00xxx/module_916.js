@@ -1,10 +1,22 @@
 // Module ID: 916
 // Function ID: 917
-// Dependencies: [693]
+// Dependencies: [917]
+// Exports: getActivationStart
 
 // Module 916
-import _mod693 from "module_693" /* 693 */;
+import _mod917 from "module_917" /* 917 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const WINDOW = _mod693.GLOBAL_OBJ;
+export const getActivationStart = () => {
+  const obj = _mod917;
+  const navigationEntry = obj.getNavigationEntry();
+  let num;
+  if (navigationEntry != null) {
+    num = navigationEntry.activationStart;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};

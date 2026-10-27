@@ -1,17 +1,17 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9862
+// Function ID: 9863
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 4845, 4830, 21, 9673, 1128, 558, 576, 1499, 504, 6830, 9861, 9864, 5978, 2]
+// Dependencies: [19, 4846, 4831, 21, 9675, 1125, 558, 576, 1496, 504, 6832, 9863, 9866, 5979, 2]
 
-// Module 9860 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9862 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1128 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9673 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9861 */;
+import intl4 from "intl" /* 1125 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9675 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9863 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
   const cResult = obj.c(18);
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
-  size = onClose(1499)();
+  size = onClose(1496)();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -63,9 +63,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: onClose(9673), title: intl.string(tmp(1128).t.cBjkcx), description: intl2.formatToPlainString(tmp(1128).t["h0u/Hi"], obj3) };
-    intl = tmp(1128).intl;
-    intl2 = tmp(1128).intl;
+    const obj2 = { image: onClose(9675), title: intl.string(tmp(1125).t.cBjkcx), description: intl2.formatToPlainString(tmp(1125).t["h0u/Hi"], obj3) };
+    intl = tmp(1125).intl;
+    intl2 = tmp(1125).intl;
     obj3 = { serverName: name };
     cResult[3] = name;
     cResult[4] = obj2;
@@ -82,8 +82,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     dependencyMap = tmp12;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
-      const stringResult = intl3.string(tmp(1128).t.cpT0Cq);
+      const intl3 = tmp(1125).intl;
+      const stringResult = intl3.string(tmp(1125).t.cpT0Cq);
       cResult[8] = stringResult;
       tmp13 = stringResult;
     } else {
@@ -128,13 +128,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
       cResult[14] = onClose;
       cResult[15] = tmp15;
       cResult[16] = tmp16;
-      cResult[17] = jsx(onClose(5978), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
-      const tmp21 = jsx(onClose(5978), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      cResult[17] = jsx(onClose(5979), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      const tmp21 = jsx(onClose(5979), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
     }
     cResult[11] = diff;
     cResult[12] = tmp11;
-    cResult[13] = jsx(tmp(9864).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
-    const tmp18 = jsx(tmp(9864).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    cResult[13] = jsx(tmp(9866).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(9866).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
   }
   function handleConfirm() {
     const obj = GuildActionCreatorsDefault;

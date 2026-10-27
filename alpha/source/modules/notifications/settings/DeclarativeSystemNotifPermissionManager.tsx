@@ -1,11 +1,11 @@
-// Module ID: 18784
-// Function ID: 18785
+// Module ID: 18820
+// Function ID: 18821
 // Name: DeclarativeSystemNotifPermissionManager
-// Dependencies: [17325, 7214, 2]
+// Dependencies: [17366, 7216, 2]
 
-// Module 18784 (DeclarativeSystemNotifPermissionManager)
-import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 17325 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+// Module 18820 (DeclarativeSystemNotifPermissionManager)
+import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 17366 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 function handleAppStateChanged(state) {

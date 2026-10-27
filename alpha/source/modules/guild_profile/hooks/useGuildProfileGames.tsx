@@ -1,14 +1,14 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14193
+// Function ID: 14194
 // Name: useGuildProfileGames
-// Dependencies: [19, 2023, 2022, 502, 558, 576, 504, 7406, 1388, 2]
+// Dependencies: [19, 2020, 2019, 502, 558, 576, 504, 7408, 1385, 2]
 
-// Module 14166 (useGuildProfileGames)
+// Module 14193 (useGuildProfileGames)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
 import react from "react" /* 19 */;
-import GameRecord from "GameRecord" /* 2023 */;
-import GameStore from "GameStore" /* 2022 */;
+import GameRecord from "GameRecord" /* 2020 */;
+import GameStore from "GameStore" /* 2019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

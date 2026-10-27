@@ -1,13 +1,13 @@
-// Module ID: 17587
-// Function ID: 17588
+// Module ID: 17628
+// Function ID: 17629
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [4845, 5181, 1087, 558, 576, 5185, 504, 2]
+// Dependencies: [4846, 5182, 1084, 558, 576, 5186, 504, 2]
 
-// Module 17587 (useIsGuildThemePerkEnabled)
-import Constants from "Constants" /* 1087 */;
-import Powerups from "Powerups" /* 5185 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5181 */;
+// Module 17628 (useIsGuildThemePerkEnabled)
+import Constants from "Constants" /* 1084 */;
+import Powerups from "Powerups" /* 5186 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5182 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 13996
+// Function ID: 13997
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 13983, 1087, 8287, 1297, 6374, 1128, 5908, 584, 2]
+// Dependencies: [5, 13997, 1084, 8285, 1294, 6375, 1125, 5909, 584, 2]
 
-// Module 13982 (ChannelPinActionCreators)
+// Module 13996 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 13983 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 13997 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

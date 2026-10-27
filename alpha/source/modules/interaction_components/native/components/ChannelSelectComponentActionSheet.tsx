@@ -1,15 +1,15 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12783
+// Function ID: 12784
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 4823, 4845, 21, 558, 576, 8603, 12773, 8605, 1202, 9018, 12190, 2]
+// Dependencies: [19, 4824, 4846, 21, 558, 576, 8603, 12782, 8605, 1199, 9018, 12208, 2]
 
-// Module 12774 (ChannelSelectComponentActionSheet)
+// Module 12783 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8603 */;
 import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 8605 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSelec
                   let tmp8 = null != channelIconData;
                   const tmp5 = require;
                   if (tmp8) {
-                    tmp8 = jsx(tmp5(1202).Icon, { source: channelIconData });
+                    tmp8 = jsx(tmp5(1199).Icon, { source: channelIconData });
                   }
                   return tmp8;
                 }
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSelec
         let tmp8 = null != channelIconData;
         const tmp5 = require;
         if (tmp8) {
-          tmp8 = jsx(tmp5(1202).Icon, { source: channelIconData });
+          tmp8 = jsx(tmp5(1199).Icon, { source: channelIconData });
         }
         return tmp8;
       }

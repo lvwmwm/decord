@@ -1,17 +1,17 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16654
+// Function ID: 16655
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [2014, 8332, 11630, 558, 576, 11631, 1128, 504, 11209, 2]
+// Dependencies: [2011, 8331, 11632, 558, 576, 11633, 1125, 504, 11212, 2]
 
-// Module 16612 (NoiseSuppressionKrispSetting)
+// Module 16654 (NoiseSuppressionKrispSetting)
 import react from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11630 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11631 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import intl4 from "intl" /* 1125 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11632 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11633 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseSu
   const obj2 = NoiseCancellationUtils;
   const noiseCancellationDeferredToSystem = obj2.useNoiseCancellationDeferredToSystem();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl4.t.rdoNzt);
     cResult[0] = stringResult;
     first = stringResult;
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseSu
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl4.t.qXeYHw);
     cResult[3] = stringResult1;
     tmp8 = stringResult1;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseSu
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult2 = intl3.string(intl4.t.wkYAlz);
     cResult[6] = stringResult2;
     tmp11 = stringResult2;

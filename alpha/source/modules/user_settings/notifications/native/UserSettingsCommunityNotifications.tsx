@@ -1,17 +1,17 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16921
+// Function ID: 16922
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 11239, 21, 4971, 558, 576, 504, 11, 8951, 5977, 6987, 7295, 1128, 4804, 2]
+// Dependencies: [19, 11242, 21, 4972, 558, 576, 504, 11, 8951, 5978, 6989, 7297, 1125, 4805, 2]
 
-// Module 16879 (UserSettingsCommunityNotifications)
+// Module 16921 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl3 from "intl" /* 1128 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7295 */;
+import intl3 from "intl" /* 1125 */;
+import TableRowGroup2 from "TableRowGroup" /* 6989 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7297 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11239 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11242 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (0 !== keys.length) {
     let tmp21;
     const Form = tmp(8951).Form;
-    const Stack = tmp(5977).Stack;
+    const Stack = tmp(5978).Stack;
     const container = tmp4.container;
     if (cResult[10] !== stateFromStores) {
       const fn2 = function p(arg0) {
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(5977).Stack;
+    Stack = tmp2(5978).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

@@ -1,14 +1,14 @@
 // Module ID: 8583
 // Function ID: 8584
 // Name: transformNativeMarkupLink
-// Dependencies: [5980, 5986, 5992, 8500, 8584, 6003, 2]
+// Dependencies: [5981, 5987, 5993, 8500, 8584, 6004, 2]
 // Exports: transformNativeLink
 
 // Module 8583 (transformNativeMarkupLink)
-import MarkupTypes from "MarkupTypes" /* 5980 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5986 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5992 */;
-import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6003 */;
+import MarkupTypes from "MarkupTypes" /* 5981 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5987 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5993 */;
+import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6004 */;
 import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8500 */;
 import ChannelLinkUrls from "ChannelLinkUrls" /* 8584 */;
 import size from "module_2" /* 2 */;

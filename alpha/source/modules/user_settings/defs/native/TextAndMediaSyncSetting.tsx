@@ -1,16 +1,16 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16871
+// Function ID: 16872
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1208, 8332, 558, 576, 504, 11209, 1128, 5868, 2]
+// Dependencies: [1205, 8331, 558, 576, 504, 11212, 1125, 5869, 2]
 
-// Module 16829 (TextAndMediaSyncSetting)
+// Module 16871 (TextAndMediaSyncSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5868 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
+import intl2 from "intl" /* 1125 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5869 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

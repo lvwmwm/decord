@@ -1,12 +1,12 @@
-// Module ID: 14730
-// Function ID: 14731
+// Module ID: 14766
+// Function ID: 14767
 // Name: usePremiumPrimaryGradientColors
-// Dependencies: [558, 576, 5252, 587, 2]
+// Dependencies: [558, 576, 5253, 587, 2]
 
-// Module 14730 (usePremiumPrimaryGradientColors)
+// Module 14766 (usePremiumPrimaryGradientColors)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5252 */;
+import useToken from "useToken" /* 5253 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 13867
-// Function ID: 13868
+// Module ID: 13881
+// Function ID: 13882
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6773, 21, 4971, 587, 558, 576, 1417, 5669, 7346, 504, 13868, 1128, 3830, 5025, 2]
+// Dependencies: [19, 6774, 21, 4972, 587, 558, 576, 1414, 5670, 7348, 504, 13882, 1125, 3831, 5026, 2]
 
-// Module 13867 (useConjureAppChannelSheet)
+// Module 13881 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserUtils from "UserUtils" /* 5025 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13868 */;
+import intl2 from "intl" /* 1125 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserUtils from "UserUtils" /* 5026 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import useConjureAppCreatorDefault from "useConjureAppCreator" /* 13882 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import createStyles from "createStyles" /* 4971 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 let tmp15;
-const _modDef3830 = tmp15(3830);
+const _modDef3831 = tmp15(3831);
 const jsx = Fragment.jsx;
 let obj = { icon: size };
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.lg };
@@ -79,8 +79,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
     guild_id = null;
   }
   let tmp6 = null;
-  const useAppChannelApplication = tmp(7346).useAppChannelApplication;
-  tmp(7346);
+  const useAppChannelApplication = tmp(7348).useAppChannelApplication;
+  tmp(7348);
   if (arg1) {
     tmp6 = guild_id;
   }
@@ -157,11 +157,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
     const obj3 = { icon: null, title: tmp8.name, subtitle: formatToPlainStringResult };
     formatToPlainStringResult = undefined;
     if (null != creator) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj5 = { name: tmpResult4.getName(creator) };
-      const prop = _modDef3830["6/x9LD"];
-      tmpResult4 = tmp(5025);
+      const prop = _modDef3831["6/x9LD"];
+      tmpResult4 = tmp(5026);
       formatToPlainStringResult = formatToPlainString(prop, obj5);
     }
     tmp21 = obj3;
@@ -227,7 +227,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
         const intl = intl2.intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj3 = { name: obj4.getName(tmp5) };
-        const prop = _modDef3830["6/x9LD"];
+        const prop = _modDef3831["6/x9LD"];
         obj4 = UserUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj3);
       }

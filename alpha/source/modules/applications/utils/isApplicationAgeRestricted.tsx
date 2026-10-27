@@ -1,12 +1,12 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10208
+// Function ID: 10209
 // Name: isApplicationAgeRestricted
-// Dependencies: [2045, 5612, 2]
+// Dependencies: [2042, 5613, 2]
 // Exports: default
 
-// Module 10206 (isApplicationAgeRestricted)
-import utils from "utils" /* 5612 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+// Module 10208 (isApplicationAgeRestricted)
+import utils from "utils" /* 5613 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");

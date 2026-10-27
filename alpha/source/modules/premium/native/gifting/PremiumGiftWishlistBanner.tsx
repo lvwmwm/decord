@@ -1,24 +1,24 @@
-// Module ID: 10549
-// Function ID: 10550
+// Module ID: 10552
+// Function ID: 10553
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7331, 1394, 1087, 1089, 8672, 21, 587, 4971, 558, 576, 9357, 9369, 10550, 10554, 7253, 7278, 1267, 8668, 10498, 10555, 5151, 5663, 1128, 7649, 13876, 5025, 5234, 13901, 13906, 2]
+// Dependencies: [5, 19, 17, 7333, 1391, 1084, 1086, 8672, 21, 587, 4972, 558, 576, 9356, 9368, 10553, 10557, 7255, 7280, 1264, 8668, 10501, 10558, 5152, 5664, 1125, 7650, 13890, 5026, 5235, 13915, 13920, 2]
 
-// Module 10549 (PremiumGiftWishlistBanner)
+// Module 10552 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7331 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7333 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import Constants2 from "Constants" /* 8672 */;
-import useWishlistHooks from "useWishlistHooks" /* 9369 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10554 */;
+import useWishlistHooks from "useWishlistHooks" /* 9368 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10557 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

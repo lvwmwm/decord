@@ -1,30 +1,30 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15059
+// Function ID: 15060
 // Name: GuildMediaStateStore
-// Dependencies: [4822, 6784, 4828, 4827, 6642, 502, 4823, 4845, 4903, 4913, 4874, 6704, 5630, 1087, 1108, 4892, 15024, 9022, 11, 6639, 8882, 504, 568, 584, 2]
+// Dependencies: [4823, 6785, 4829, 4828, 6643, 502, 4824, 4846, 4904, 4914, 4875, 6705, 5631, 1084, 1105, 4893, 15060, 9022, 11, 6640, 8882, 504, 568, 584, 2]
 
-// Module 15023 (GuildMediaStateStore)
+// Module 15059 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelTypes from "ChannelTypes" /* 1108 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 15024 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
-import StageInstanceStore from "StageInstanceStore" /* 4828 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6642 */;
+import ChannelTypes from "ChannelTypes" /* 1105 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4893 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 15060 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
+import StageInstanceStore from "StageInstanceStore" /* 4829 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -170,7 +170,7 @@ function computeGuildMediaState(id) {
     if (basicChannel != null) {
       type = basicChannel.type;
     }
-    let tmp6 = type !== tmp2(1108).ChannelTypes.GUILD_SPACE;
+    let tmp6 = type !== tmp2(1105).ChannelTypes.GUILD_SPACE;
     if (tmp6) {
       let tmp8 = 0 === closure_1.blockedOrIgnoredUserIds.size;
       if (!tmp8) {

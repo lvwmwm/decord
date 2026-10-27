@@ -1,21 +1,21 @@
-// Module ID: 10569
-// Function ID: 10570
+// Module ID: 10572
+// Function ID: 10573
 // Name: SKUActionCreators
-// Dependencies: [5, 9380, 6824, 1087, 584, 6383, 1297, 4795, 9454, 7692, 6374, 4794, 4787, 6463, 6481, 1388, 2]
-// Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
+// Dependencies: [5, 9379, 6826, 1084, 584, 6384, 1294, 4796, 9453, 7693, 6375, 4795, 4788, 6464, 6482, 1385, 2]
+// Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10569 (SKUActionCreators)
+// Module 10572 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BillingUtils from "BillingUtils" /* 4787 */;
-import StoreUtils from "StoreUtils" /* 6383 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6481 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7692 */;
-import TestModeUtils from "TestModeUtils" /* 9454 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import BillingUtils from "BillingUtils" /* 4788 */;
+import StoreUtils from "StoreUtils" /* 6384 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6482 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7693 */;
+import TestModeUtils from "TestModeUtils" /* 9453 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9380 */;
-import SKUStore from "SKUStore" /* 6824 */;
-import Constants from "Constants" /* 1087 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9379 */;
+import SKUStore from "SKUStore" /* 6826 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let _false, closure_6, closure_7, closure_8, country_code, expected_amount, gift_info_options, load_id, quantity;
@@ -89,6 +89,93 @@ let obj = function _fetchSKU() {
           } else {
             body = value;
             const obj12 = { type: "SKU_FETCH_SUCCESS", sku: body.body };
+            obj = closure_130_1(closure_130_2[4]);
+            obj.dispatch(obj12);
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: null };
+        } catch (tmp32) {
+          closure_3 = tmp32;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp32;
+          } else {
+            c5 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _fetchPublicSKU() {
+  obj = _asyncToGenerator(async (skuId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async function(arg0, value) {
+      let obj9;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              body = undefined;
+              if (null == SKUStore.get(skuId)) {
+                const obj5 = { type: "SKU_FETCH_START", skuId };
+                const obj6 = DispatcherDefault;
+                obj6.dispatch(obj5);
+                c4 = 1;
+                const obj7 = { url: closure_2_7.STORE_SKU_PUBLIC(skuId), rejectWithError: obj9.rejectWithMigratedError() };
+                const httpGetWithCountryCodeQuery = StoreUtils.httpGetWithCountryCodeQuery;
+                StoreUtils;
+                c5 = 2;
+                c6 = 1;
+                obj9 = HTTPUtils;
+                const obj8 = { value: httpGetWithCountryCodeQuery(obj7), done: false };
+                return obj8;
+              }
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            const obj10 = { type: "SKU_FETCH_FAIL", skuId };
+            const obj4 = closure_130_1(closure_130_2[4]);
+            obj4.dispatch(obj10);
+            const _HermesInternal = HermesInternal;
+            const self = this;
+            const self2 = this;
+            const tmp20 = closure_130_1(closure_130_2[7]);
+            const tmp202 = new tmp20("Failed to fetch public SKU " + skuId);
+            throw tmp202;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            body = value;
+            const obj12 = { type: "SKU_FETCH_SUCCESS", sku: body.body.sku };
             obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj12);
             c4 = 0;
@@ -722,7 +809,7 @@ obj = function _purchaseSKU() {
               closure_16 = undefined;
               billingError = undefined;
               const obj5 = {};
-              const merged = Object.assign(closure_2_13);
+              const merged = Object.assign(closure_2_14);
               const merged1 = Object.assign(closure_2);
               paymentSource = obj5.paymentSource;
               ({ expectedAmount: c3, expectedCurrency: c4, analyticsLoadId: c5, isGift } = obj5);
@@ -1004,10 +1091,13 @@ obj = function _resendPaymentVerificationEmail() {
   return obj(...arguments);
 };
 ({ ADYEN_PAYMENT_SOURCES: metroRequire, Endpoints: metroImportDefault } = Constants);
-let closure_13 = { isGift: false };
+let closure_14 = { isGift: false };
 let result = size.fileFinishedImporting("actions/SKUActionCreators.tsx");
 
 export const fetchSKU = function fetchSKU() {
+  return obj(...arguments);
+};
+export const fetchPublicSKU = function fetchPublicSKU() {
   return obj(...arguments);
 };
 export const fetchPublishedSKU = function fetchPublishedSKU() {

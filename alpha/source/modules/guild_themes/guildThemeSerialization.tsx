@@ -1,10 +1,10 @@
-// Module ID: 4844
-// Function ID: 4845
+// Module ID: 4845
+// Function ID: 4846
 // Name: guildThemeSerialization
 // Dependencies: [2]
 // Exports: cloneGuildTheme, cloneGuildThemeSettings, fromServerGuildTheme, fromServerGuildThemeSettings, toServerGuildThemeSettings
 
-// Module 4844 (guildThemeSerialization)
+// Module 4845 (guildThemeSerialization)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/guildThemeSerialization.tsx");

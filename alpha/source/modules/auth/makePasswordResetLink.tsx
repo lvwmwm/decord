@@ -1,11 +1,11 @@
-// Module ID: 7049
-// Function ID: 7050
+// Module ID: 7051
+// Function ID: 7052
 // Name: makePasswordResetLink
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: default
 
-// Module 7049 (makePasswordResetLink)
-import Constants from "Constants" /* 1087 */;
+// Module 7051 (makePasswordResetLink)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

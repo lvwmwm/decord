@@ -1,11 +1,11 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11470
+// Function ID: 11471
 // Name: createEmbeddedAppShimMessageHandler
-// Dependencies: [11468, 11469, 2]
+// Dependencies: [11471, 11472, 2]
 // Exports: createEmbeddedAppShimMessageHandler
 
-// Module 11467 (createEmbeddedAppShimMessageHandler)
-import bridgeProtocol from "bridgeProtocol" /* 11469 */;
+// Module 11470 (createEmbeddedAppShimMessageHandler)
+import bridgeProtocol from "bridgeProtocol" /* 11472 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, map;

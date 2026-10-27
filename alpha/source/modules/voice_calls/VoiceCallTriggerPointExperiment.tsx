@@ -1,11 +1,11 @@
-// Module ID: 18780
-// Function ID: 18781
+// Module ID: 18816
+// Function ID: 18817
 // Name: VoiceCallTriggerPointExperiment
-// Dependencies: [5191, 5188, 2]
+// Dependencies: [5192, 5189, 2]
 
-// Module 18780 (VoiceCallTriggerPointExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 5191 */;
-import createExperiment from "module_5188" /* 5188 */;
+// Module 18816 (VoiceCallTriggerPointExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 5192 */;
+import createExperiment from "module_5189" /* 5189 */;
 import size from "module_2" /* 2 */;
 
 let items;

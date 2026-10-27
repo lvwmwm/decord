@@ -1,13 +1,13 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 9465
+// Function ID: 9466
 // Name: ImprovedMobileShopLoadingExperiment
-// Dependencies: [19, 1455, 558, 576, 2]
+// Dependencies: [19, 1452, 558, 576, 2]
 // Exports: useIsInImprovedMobileShopLoading
 
-// Module 9466 (ImprovedMobileShopLoadingExperiment)
+// Module 9465 (ImprovedMobileShopLoadingExperiment)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

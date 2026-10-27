@@ -1,13 +1,13 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 11935
+// Function ID: 11936
 // Name: AppsBanner
-// Dependencies: [19, 21, 558, 576, 11932, 1128, 2]
+// Dependencies: [19, 21, 558, 576, 11933, 1125, 2]
 
-// Module 11934 (AppsBanner)
+// Module 11935 (AppsBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import BannerBaseDefault from "BannerBase" /* 11932 */;
+import intl2 from "intl" /* 1125 */;
+import BannerBaseDefault from "BannerBase" /* 11933 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppsBaner(
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     BannerBaseDefault;
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const tmp8 = <tmp7 text={intl.string(intl2.t.sjRwMJ)} />;
     cResult[0] = tmp8;
     first = tmp8;

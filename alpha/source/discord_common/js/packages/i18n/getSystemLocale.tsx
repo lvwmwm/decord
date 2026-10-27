@@ -1,11 +1,11 @@
-// Module ID: 1363
-// Function ID: 1364
+// Module ID: 1360
+// Function ID: 1361
 // Name: react-native
-// Dependencies: [1129, 2]
+// Dependencies: [1126, 2]
 // Exports: getSystemLocale
 
-// Module 1363 (react-native)
-import react_native from "react-native" /* 1129 */;
+// Module 1360 (react-native)
+import react_native from "react-native" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/getSystemLocale.tsx");

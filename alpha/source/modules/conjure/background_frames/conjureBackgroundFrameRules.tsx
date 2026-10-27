@@ -1,20 +1,20 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 18090
+// Function ID: 18091
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4822, 6775, 1209, 18057, 15711, 6776, 13866, 15709, 5626, 10728, 2]
+// Dependencies: [4823, 6776, 1206, 18091, 15747, 6777, 13880, 15745, 5627, 10731, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 18056 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13866 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15709 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import FramesStore from "FramesStore" /* 6775 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18057 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15711 */;
+// Module 18090 (conjureBackgroundFrameRules)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5627 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10731 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13880 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15745 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import FramesStore from "FramesStore" /* 6776 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18091 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15747 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;
@@ -37,7 +37,7 @@ export const shouldRunInBackgroundOnRelease = function shouldRunInBackgroundOnRe
     let tmp11 = frame.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
     const tmp10 = require;
     if (tmp11) {
-      const tmp10Result = tmp10(10728);
+      const tmp10Result = tmp10(10731);
       tmp11 = !tmp10Result.isConjurePreviewSurface(frame.surface);
     }
     let isAppVisibleResult = !tmp11;

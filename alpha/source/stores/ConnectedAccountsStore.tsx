@@ -1,21 +1,21 @@
-// Module ID: 6500
-// Function ID: 6501
+// Module ID: 6501
+// Function ID: 6502
 // Name: ConnectedAccountsStore
-// Dependencies: [6501, 1087, 6502, 4837, 6631, 6632, 504, 584, 2]
+// Dependencies: [6502, 1084, 6503, 4838, 6632, 6633, 504, 584, 2]
 
-// Module 6500 (ConnectedAccountsStore)
+// Module 6501 (ConnectedAccountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformsDefault from "Platforms" /* 6502 */;
-import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6631 */;
-import postConnectionCallback from "postConnectionCallback" /* 6632 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 6501 */;
+import Constants from "Constants" /* 1084 */;
+import PlatformsDefault from "Platforms" /* 6503 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6632 */;
+import postConnectionCallback from "postConnectionCallback" /* 6633 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f96399 = (type) => {
+const f96606 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -24,7 +24,7 @@ const f96399 = (type) => {
   }
   return isSupportedResult;
 };
-const f96400 = (type) => set.has(type.type);
+const f96607 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -82,8 +82,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f96399);
-    closure_7 = mapped.filter(f96400);
+    closure_6 = mapped.filter(f96606);
+    closure_7 = mapped.filter(f96607);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -109,8 +109,8 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f96399);
-        closure_7 = mapped.filter(f96400);
+        closure_6 = mapped.filter(f96606);
+        closure_7 = mapped.filter(f96607);
         c5 = false;
       }
     }

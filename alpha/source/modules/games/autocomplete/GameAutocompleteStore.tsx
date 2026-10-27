@@ -1,13 +1,13 @@
 // Module ID: 8579
 // Function ID: 8580
 // Name: GameAutocompleteStore
-// Dependencies: [1104, 1459, 504, 8580, 584, 2]
+// Dependencies: [1101, 1456, 504, 8580, 584, 2]
 
 // Module 8579 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import LRUCacheDefault from "LRUCache" /* 1459 */;
+import DurationsDefault from "Durations" /* 1101 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8580 */;
 import size from "module_2" /* 2 */;
 

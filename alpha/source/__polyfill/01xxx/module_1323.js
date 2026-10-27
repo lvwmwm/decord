@@ -4,4 +4,4 @@
 
 // Module 1323
 
-export default Function.prototype.call;
+export default EvalError;

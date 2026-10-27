@@ -1,10 +1,10 @@
-// Module ID: 12114
-// Function ID: 12115
+// Module ID: 12115
+// Function ID: 12116
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1128, 6375, 2]
+// Dependencies: [5, 32, 19, 1125, 6376, 2]
 // Exports: default
 
-// Module 12114 (useRequest)
+// Module 12115 (useRequest)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

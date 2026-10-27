@@ -1,22 +1,22 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15994
+// Function ID: 15995
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 7304, 21, 4971, 15942, 558, 576, 1633, 5052, 5247, 1128, 2]
+// Dependencies: [19, 7306, 21, 4972, 15980, 558, 576, 1630, 5053, 5248, 1125, 2]
 
-// Module 15956 (UserProfilePremiumTryItOutUpsell)
+// Module 15994 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import spring from "spring" /* 5247 */;
-import Constants from "Constants" /* 7304 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15942 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import spring from "spring" /* 5248 */;
+import Constants from "Constants" /* 7306 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15980 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const ReanimatedRexportDefault = tmp4(5052);
-const UserProfileUpsellCardV2Default = tmp4(15942);
+const ReanimatedRexportDefault = tmp4(5053);
+const UserProfileUpsellCardV2Default = tmp4(15980);
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 const jsx = Fragment.jsx;
 let c5 = 0.9;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp5 = closure_7(useSafeAreaInsetsDefault().bottom);
-  const obj2 = isVisible(5052);
+  const obj2 = isVisible(5053);
   const fn = function c() {
     let items;
     const value = isVisible.get();
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj3 = { isVisible, withSpring: isVisible(5247).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj3 = { isVisible, withSpring: isVisible(5248).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj3;
   fn.__workletHash = 7434922701119;
   fn.__initData = __initData;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   fn2.__closure = { isVisible };
   fn2.__workletHash = 5163998995941;
   fn2.__initData = __initData2;
-  const obj4 = isVisible(5052);
+  const obj4 = isVisible(5053);
   const animatedProps = obj4.useAnimatedProps(fn2);
   if (cResult[0] === animatedStyle) {
     let tmp8;
@@ -102,10 +102,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     let str = "react.memo_cache_sentinel";
     const card = tmp5.card;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(isVisible(1128).t["MswR/h"]);
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(isVisible(1128).t.PxUx8e);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(isVisible(1125).t["MswR/h"]);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(isVisible(1125).t.PxUx8e);
       let num = 3;
       cResult[3] = stringResult;
       let num2 = 4;
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp = closure_7(useSafeAreaInsetsDefault().bottom);
-  let obj = isVisible(5052);
+  let obj = isVisible(5053);
   const fn = function _() {
     let items;
     const value = isVisible.get();
@@ -184,12 +184,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj2 = { isVisible, withSpring: isVisible(5247).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj2 = { isVisible, withSpring: isVisible(5248).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 14790282051517;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = isVisible(5052);
+  const obj3 = isVisible(5053);
   class I {
     constructor() {
       let str2;
@@ -212,9 +212,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const animatedProps = obj3.useAnimatedProps(I);
   let items = [tmp.container, animatedStyle];
   const View = ReanimatedRexportDefault.View;
-  ({ style: tmp.card, text: intl.string(isVisible(1128).t["MswR/h"]), buttonText: intl2.string(isVisible(1128).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
-  intl = isVisible(1128).intl;
-  intl2 = isVisible(1128).intl;
+  ({ style: tmp.card, text: intl.string(isVisible(1125).t["MswR/h"]), buttonText: intl2.string(isVisible(1125).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
+  intl = isVisible(1125).intl;
+  intl2 = isVisible(1125).intl;
   return <View animatedProps={animatedProps} style={items}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePremiumTryItOutUpsell.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11551
+// Function ID: 11552
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10883, 1087, 21, 4971, 587, 558, 576, 4978, 5586, 1202, 6908, 2]
+// Dependencies: [19, 17, 10886, 1084, 21, 4972, 587, 558, 576, 4979, 5587, 1199, 6910, 2]
 
-// Module 11549 (ChannelCallNavigatorIcon)
+// Module 11551 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import shared from "shared" /* 4978 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5586 */;
-import Pressables from "Pressables" /* 6908 */;
-import ChannelCallStore from "ChannelCallStore" /* 10883 */;
+import native from "native" /* 1199 */;
+import shared from "shared" /* 4979 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5587 */;
+import Pressables from "Pressables" /* 6910 */;
+import ChannelCallStore from "ChannelCallStore" /* 10886 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
                     }
                     const obj3 = { accessibilityRole: "button", accessibilityLabel, disabled, style: tmp6.pressable, onPress: tmp7, children: items };
                     items = [tmp24, children];
-                    const tmp30 = closure_8(tmp(6908).PressableOpacity, obj3);
+                    const tmp30 = closure_8(tmp(6910).PressableOpacity, obj3);
                     cResult[21] = accessibilityLabel;
                     cResult[22] = children;
                     cResult[23] = disabled;
@@ -161,7 +161,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
             let tmp22 = null != membersCount && membersCount > 0;
             if (tmp22) {
               const obj5 = { style: tmp6.text, children: membersCount };
-              tmp22 = closure_7(tmp(1202).LegacyText, obj5);
+              tmp22 = closure_7(tmp(1199).LegacyText, obj5);
             }
             cResult[13] = membersCount;
             cResult[14] = tmp6.text;
@@ -173,8 +173,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
           const obj6 = { color: tmp6.iconColor.color, size: "sm" };
           tmp18 = closure_7(IconComponent, obj6);
         } else {
-          const obj7 = { source, color: tmp6.iconColor.color, size: tmp(1202).Icon.Sizes.SMALL_20 };
-          const Icon = tmp(1202).Icon;
+          const obj7 = { source, color: tmp6.iconColor.color, size: tmp(1199).Icon.Sizes.SMALL_20 };
+          const Icon = tmp(1199).Icon;
           tmp18 = closure_7(Icon, obj7);
         }
         cResult[9] = IconComponent;
@@ -184,7 +184,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
         tmp15 = tmp18;
       }
       let tmp11 = null;
-      const tmpResult = tmp(4978);
+      const tmpResult = tmp(4979);
       if (tmpResult.isThemeDark(theme)) {
         tmp11 = null;
         if (!(undefined === disableBackground || disableBackground)) {
@@ -265,14 +265,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
     tmp3Result3 = tmp3(IconComponent, obj5);
   } else {
     const obj6 = { source, color: tmp2.iconColor.color, size: native.Icon.Sizes.SMALL_20 };
-    const Icon = tmp6(1202).Icon;
+    const Icon = tmp6(1199).Icon;
     tmp3Result3 = tmp3(Icon, obj6);
   }
   items1[1] = tmp3Result3;
   let tmp3Result4 = null != membersCount && membersCount > 0;
   if (tmp3Result4) {
     const obj7 = { style: tmp2.text, children: membersCount };
-    tmp3Result4 = tmp3(tmp6(1202).LegacyText, obj7);
+    tmp3Result4 = tmp3(tmp6(1199).LegacyText, obj7);
   }
   items1[2] = tmp3Result4;
   items2 = [closure_8(closure_3, obj3), children];

@@ -1,32 +1,32 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14567
+// Function ID: 14568
 // Name: CodedLinks
-// Dependencies: [32, 4904, 4845, 1392, 7763, 13041, 5703, 14532, 14533, 14544, 14546, 14538, 14548, 14541, 11218, 12755, 11230, 11228, 14549, 11290, 14551, 1388, 2]
+// Dependencies: [32, 4905, 4846, 1389, 7764, 13055, 5704, 14568, 14569, 14580, 14582, 14574, 14584, 14577, 11221, 12764, 11233, 11231, 14585, 11293, 14587, 1385, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 14531 (CodedLinks)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import CodedLink from "CodedLink" /* 5703 */;
-import ApplicationCodedLink from "ApplicationCodedLink" /* 7763 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11218 */;
-import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 11228 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11230 */;
-import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 11290 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 12755 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 13041 */;
-import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14532 */;
-import InviteEmbed from "InviteEmbed" /* 14533 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14538 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14541 */;
-import GuildTemplateEmbed from "GuildTemplateEmbed" /* 14544 */;
-import BuildOverrideEmbed from "BuildOverrideEmbed" /* 14546 */;
-import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 14548 */;
-import QuestEmbed from "QuestEmbed" /* 14549 */;
-import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 14551 */;
+// Module 14567 (CodedLinks)
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import CodedLink from "CodedLink" /* 5704 */;
+import ApplicationCodedLink from "ApplicationCodedLink" /* 7764 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11221 */;
+import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 11231 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11233 */;
+import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 11293 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 12764 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 13055 */;
+import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14568 */;
+import InviteEmbed from "InviteEmbed" /* 14569 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14574 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14577 */;
+import GuildTemplateEmbed from "GuildTemplateEmbed" /* 14580 */;
+import BuildOverrideEmbed from "BuildOverrideEmbed" /* 14582 */;
+import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 14584 */;
+import QuestEmbed from "QuestEmbed" /* 14585 */;
+import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 14587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4904 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
+import LurkingStore from "LurkingStore" /* 4905 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
@@ -57,7 +57,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 return null;
               } else {
                 const applicationId = applicationCodedLinkData.applicationId;
-                const obj2 = { appId: applicationId, channel: tmp29, message, theme };
+                const obj2 = { appId: applicationId, channel: tmp32, message, theme };
                 const tmpResult21 = createAppMessageEmbed;
                 const appLinkGateResult = tmpResult21.getAppLinkGateResult(obj2);
                 if ("unavailable" === appLinkGateResult.state) {
@@ -100,12 +100,12 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
         } else if (CodedLink.CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
-          const obj16 = UserStore;
+          const obj15 = UserStore;
           if (currentUser != null) {
             isStaffResult = currentUser.isStaff();
           }
           if (!isStaffResult) {
-            const currentUser1 = obj16.getCurrentUser();
+            const currentUser1 = obj15.getCurrentUser();
             let isStaffPersonalResult;
             if (currentUser1 != null) {
               isStaffPersonalResult = currentUser1.isStaffPersonal();
@@ -114,7 +114,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
           }
           if (!isStaffResult) {
             isStaffResult = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
-            const tmp21 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
+            const tmp24 = null != GuildStore.getGuild("943265993613008967") && !LurkingStore.isLurking("943265993613008967");
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
@@ -158,8 +158,14 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                               let gameOrganizationInviteEmbed = null;
                               const tmpResult34 = LinkedGameOrgInvitesExperiment;
                               if (tmpResult34.getLinkedGameOrgInvitesEnabled("mobile_coded_link_embed")) {
-                                const tmpResult35 = GameOrganizationInviteEmbed;
-                                gameOrganizationInviteEmbed = tmpResult35.createGameOrganizationInviteEmbed(code, theme);
+                                let id;
+                                const createGameOrganizationInviteEmbed = GameOrganizationInviteEmbed.createGameOrganizationInviteEmbed;
+                                GameOrganizationInviteEmbed;
+                                const tmp6 = theme;
+                                if (currentUser != null) {
+                                  id = currentUser.id;
+                                }
+                                gameOrganizationInviteEmbed = createGameOrganizationInviteEmbed(code, tmp6, id);
                               }
                               return gameOrganizationInviteEmbed;
                             } else {

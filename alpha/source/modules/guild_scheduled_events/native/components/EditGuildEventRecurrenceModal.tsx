@@ -1,14 +1,14 @@
 // Module ID: 8907
 // Function ID: 8908
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 1633, 8897, 8890, 1896, 8908, 8900, 1128, 5244, 8909, 8889, 8910, 8911, 5234, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4972, 587, 558, 576, 1630, 8897, 8890, 1893, 8908, 8900, 1125, 5245, 8909, 8889, 8910, 8911, 5235, 7097, 2]
 
 // Module 8907 (EditGuildEventRecurrenceModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import EditGuildEventUtils from "EditGuildEventUtils" /* 8889 */;
 import useEventExceptionDefault from "useEventException" /* 8897 */;
 import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8900 */;
@@ -20,7 +20,7 @@ import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,8 +59,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   const recurrenceId = guildEvent.recurrenceId;
   let tmp4 = error();
   const tmp5 = onCloseModal;
-  ({ left, right } = onCloseModal(1633)());
-  const tmp6 = onCloseModal(1633)();
+  ({ left, right } = onCloseModal(1630)());
+  const tmp6 = onCloseModal(1630)();
   const tmp7 = onCloseModal(8897)(recurrenceId, guildEvent.id);
   dependencyMap = tmp7;
   if (cResult[0] === tmp7) {
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
                         tmp(anyErrorMessage);
                       }
                     }
-                    const stringResult = obj5.string(tmp(1128).t["R3BPH+"]);
+                    const stringResult = obj5.string(tmp(1125).t["R3BPH+"]);
                     cResult[18] = stringResult;
                     let tmp27 = stringResult;
                   } else {
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
                       return saveGuildEventRecurrenceDefault(guildEvent, recurrenceId, first, closure_3);
                     }
                   }
-                  let tmp32 = closure_8(tmp(5244).Button, obj2);
+                  let tmp32 = closure_8(tmp(5245).Button, obj2);
                   cResult[19] = tmp21;
                   cResult[20] = null != first1;
                   cResult[21] = tmp32;
@@ -524,14 +524,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   }, items);
   let obj3 = {
     size: "md",
-    text: intl.string(guildEvent(1128).t["R3BPH+"]),
+    text: intl.string(guildEvent(1125).t["R3BPH+"]),
     onPress: function handleSave() {
       return obj(...arguments);
     },
     disabled: null != first
   };
-  const Button = guildEvent(5244).Button;
-  intl = guildEvent(1128).intl;
+  const Button = guildEvent(5245).Button;
+  intl = guildEvent(1125).intl;
   action = closure_8(Button, obj3);
   let obj4 = {
     title: "",
@@ -562,7 +562,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
     },
     fullscreen: true
   };
-  let obj5 = { style: items1, children: closure_8(guildEvent(7095).Navigator, obj6) };
+  let obj5 = { style: items1, children: closure_8(guildEvent(7097).Navigator, obj6) };
   items1 = [tmp.container, { paddingLeft: left, paddingRight: right }];
   obj6 = { screens: { [closure_11.TIME]: obj4 }, initialRouteName: obj.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle };
   return closure_8(first, obj5);

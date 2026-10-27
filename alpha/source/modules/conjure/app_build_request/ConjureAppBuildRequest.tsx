@@ -1,19 +1,19 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12308
+// Function ID: 12309
 // Name: ConjureAppBuildRequest
-// Dependencies: [32, 19, 6773, 1128, 3830, 558, 576, 12303, 12293, 10203, 12305, 2]
+// Dependencies: [32, 19, 6774, 1125, 3831, 558, 576, 12309, 12299, 10205, 12311, 2]
 // Exports: appBuildRequestSentToast
 
-// Module 12302 (ConjureAppBuildRequest)
-import intl2 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import createNonce from "createNonce" /* 10203 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12293 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12303 */;
-import conjureSendToProject from "conjureSendToProject" /* 12305 */;
+// Module 12308 (ConjureAppBuildRequest)
+import intl2 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import createNonce from "createNonce" /* 10205 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12299 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12309 */;
+import conjureSendToProject from "conjureSendToProject" /* 12311 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function sentMessage(arr) {
     });
     const targets = mapped.join(", ");
     let intl = require("intl").intl;
-    return "" + intl.formatToPlainString(_modDef3830.jZlNst, { targets }) + "\n\n" + tmp;
+    return "" + intl.formatToPlainString(_modDef3831.jZlNst, { targets }) + "\n\n" + tmp;
   });
   return arr.join("\n\n");
 }
@@ -590,7 +590,7 @@ export const appBuildRequestSentToast = function appBuildRequestSentToast(arr) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { names: mapped.join(", ") };
-  const RZO35O = _modDef3830.RZO35O;
+  const RZO35O = _modDef3831.RZO35O;
   mapped = arr.map((name) => name.name);
   return formatToPlainString(RZO35O, obj);
 };

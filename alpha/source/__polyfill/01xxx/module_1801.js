@@ -1,41 +1,178 @@
 // Module ID: 1801
 // Function ID: 1802
-// Dependencies: [1802, 1806, 1807, 1811, 1812, 1813, 1814, 1808, 1815, 1816, 1805, 1817, 1803, 1820, 1821, 1810, 1822]
+// Dependencies: [1680, 1666]
+// Exports: areDependenciesEqual, buildDependencies, buildWorkletsHash, shallowEqual, validateAnimatedStyles
 
 // Module 1801
-import _mod1802 from "module_1802" /* 1802 */;
-import _mod1803 from "module_1803" /* 1803 */;
-import react from "react" /* 1805 */;
-import _mod1806 from "module_1806" /* 1806 */;
-import _mod1807 from "module_1807" /* 1807 */;
-import _mod1808 from "module_1808" /* 1808 */;
-import _mod1810 from "module_1810" /* 1810 */;
-import _mod1811 from "module_1811" /* 1811 */;
-import _mod1812 from "module_1812" /* 1812 */;
-import _mod1813 from "module_1813" /* 1813 */;
-import _mod1814 from "module_1814" /* 1814 */;
-import _mod1815 from "module_1815" /* 1815 */;
-import _mod1816 from "module_1816" /* 1816 */;
-import react2 from "react" /* 1817 */;
-import _mod1820 from "module_1820" /* 1820 */;
-import _mod1821 from "module_1821" /* 1821 */;
-import react3 from "react" /* 1822 */;
+import ReanimatedError from "ReanimatedError" /* 1666 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1680 */;
 
+const f89845 = (acc, __workletHash) => {
+  const str = __workletHash.__workletHash;
+  return acc + str.toString();
+};
+function isAnimated(onFrame) {
+  let someResult;
+  if (Array.isArray(onFrame)) {
+    someResult = onFrame.some(isAnimated);
+  } else {
+    someResult = typeof onFrame === "object";
+    if (typeof onFrame === "object") {
+      someResult = null !== onFrame;
+    }
+    if (someResult) {
+      let someResult1 = undefined !== onFrame.onFrame;
+      if (!someResult1) {
+        const _Object = Object;
+        const values = Object.values(onFrame);
+        someResult1 = values.some(isAnimated);
+      }
+      someResult = someResult1;
+    }
+  }
+  return someResult;
+}
+isAnimated.__closure = {};
+isAnimated.__workletHash = 4296700641760;
+isAnimated.__initData = { code: "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}" };
+function shallowEqual(arg0, arg1) {
+  const keys = Object.keys(arg0);
+  if (keys.length !== Object.keys(arg1).length) {
+    return false;
+  } else {
+    let num = 0;
+    if (0 < keys.length) {
+      while (arg0[keys[num]] === arg1[keys[num]]) {
+        num = num + 1;
+      }
+      return false;
+    }
+    return true;
+  }
+}
+shallowEqual.__closure = {};
+shallowEqual.__workletHash = 6945711106539;
+shallowEqual.__initData = { code: "function shallowEqual_Pnpm_utilsTs2(a,b){const aKeys=Object.keys(a);const bKeys=Object.keys(b);if(aKeys.length!==bKeys.length){return false;}for(let i=0;i<aKeys.length;i++){if(a[aKeys[i]]!==b[aKeys[i]]){return false;}}return true;}" };
+function validateAnimatedStyles(obj) {
+  if (typeof obj !== "object") {
+    const _HermesInternal = HermesInternal;
+    const self3 = this;
+    const self4 = this;
+    const reanimatedError = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object, found " + typeof obj + " instead.");
+    throw reanimatedError;
+  } else {
+    const _Array = Array;
+    if (Array.isArray(obj)) {
+      const self = this;
+      const self2 = this;
+      const reanimatedError1 = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
+      throw reanimatedError1;
+    }
+  }
+}
+validateAnimatedStyles.__closure = {};
+validateAnimatedStyles.__workletHash = 9250446401049;
+validateAnimatedStyles.__initData = { code: "function validateAnimatedStyles_Pnpm_utilsTs3(styles){if(typeof styles!=='object'){throw new ReanimatedError(\"`useAnimatedStyle` has to return an object, found \"+typeof styles+\" instead.\");}else if(Array.isArray(styles)){throw new ReanimatedError('`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.');}}" };
 
-export const useAnimatedGestureHandler = _mod1802.useAnimatedGestureHandler;
-export const useAnimatedKeyboard = _mod1806.useAnimatedKeyboard;
-export const useAnimatedProps = _mod1807.useAnimatedProps;
-export const useAnimatedReaction = _mod1811.useAnimatedReaction;
-export const useAnimatedRef = _mod1812.useAnimatedRef;
-export const useAnimatedScrollHandler = _mod1813.useAnimatedScrollHandler;
-export const useAnimatedSensor = _mod1814.useAnimatedSensor;
-export const useAnimatedStyle = _mod1808.useAnimatedStyle;
-export const useComposedEventHandler = _mod1815.useComposedEventHandler;
-export const useDerivedValue = _mod1816.useDerivedValue;
-export const useEvent = react.useEvent;
-export const useFrameCallback = react2.useFrameCallback;
-export const useHandler = _mod1803.useHandler;
-export const useReducedMotion = _mod1820.useReducedMotion;
-export const useScrollViewOffset = _mod1821.useScrollViewOffset;
-export const useSharedValue = _mod1810.useSharedValue;
-export const useWorkletCallback = react3.useWorkletCallback;
+export const buildWorkletsHash = function buildWorkletsHash(items1) {
+  const values = Object.values(items1);
+  return values.reduce(f89845, "");
+};
+export const buildDependencies = function buildDependencies(items10, memoizedGestureCallbacks) {
+  const values = Object.values(memoizedGestureCallbacks);
+  const found = values.filter((item) => undefined !== item);
+  let tmp2 = found;
+  if (items10) {
+    const _Object = Object;
+    const push = items10.push;
+    const values2 = Object.values(found);
+    let str = "";
+    push(values2.reduce(f89845, ""));
+    tmp2 = items10;
+  }
+  return tmp2;
+};
+export const areDependenciesEqual = function areDependenciesEqual(dependencies, savedDependencies) {
+  let is;
+  if (typeof Object.is === "function") {
+    const _Object = Object;
+    is = Object.is;
+  } else {
+    is = function is(dependencies, savedDependencies) {
+      let tmp = dependencies === savedDependencies;
+      if (tmp) {
+        tmp = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+        const tmp2 = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
+      }
+      if (!tmp) {
+        const _Number = Number;
+        let isNaNResult = Number.isNaN(dependencies);
+        if (isNaNResult) {
+          const _Number2 = Number;
+          isNaNResult = Number.isNaN(savedDependencies);
+        }
+        tmp = isNaNResult;
+      }
+      return tmp;
+    };
+  }
+  let flag = false;
+  if (dependencies) {
+    let tmp = savedDependencies;
+    flag = false;
+    if (savedDependencies) {
+      flag = false;
+      if (savedDependencies.length === dependencies.length) {
+        let num = 0;
+        flag = true;
+        if (0 < savedDependencies.length) {
+          while (true) {
+            let tmp2 = dependencies[num];
+            let tmp3 = savedDependencies[num];
+            if (is(tmp2, tmp3)) {
+              let sum = num + 1;
+              num = sum;
+              flag = true;
+              if (sum >= savedDependencies.length) {
+                break;
+              }
+            } else {
+              let tmp5 = require;
+              let obj = LayoutAnimationType;
+              flag = false;
+              if (!obj.isWorkletFunction(tmp2)) {
+                break;
+              } else {
+                let tmp5Result = tmp5(1680);
+                flag = false;
+                if (!tmp5Result.isWorkletFunction(tmp3)) {
+                  break;
+                } else {
+                  let closure_0 = tmp2;
+                  let closure_1 = tmp3;
+                  let flag2 = false;
+                  if (tmp2.__workletHash === tmp3.__workletHash) {
+                    let _Object2 = Object;
+                    let keys = Object.keys(tmp2.__closure);
+                    let _Object3 = Object;
+                    let tmp7 = keys.length === Object.keys(tmp3.__closure).length && keys.every((item) => item in __closure2.__closure && __closure.__closure[item] === tmp.__closure[item]);
+                    flag2 = tmp7;
+                  }
+                  flag = false;
+                  if (!flag2) {
+                    break;
+                  }
+                }
+              }
+            }
+            break;
+          }
+        }
+      }
+    }
+  }
+  return flag;
+};
+export { isAnimated };
+export { shallowEqual };
+export { validateAnimatedStyles };

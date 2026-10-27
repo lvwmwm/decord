@@ -1,39 +1,39 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12794
+// Function ID: 12795
 // Name: GuildSettingsModalMemberEdit
-// Dependencies: [19, 17, 4841, 4878, 4883, 4877, 4845, 4903, 1392, 12786, 1087, 21, 4971, 587, 4908, 12, 6900, 12787, 6903, 1128, 6987, 5037, 7485, 6924, 5025, 5234, 9134, 4890, 8951, 5977, 1202, 7008, 12788, 12789, 5662, 12794, 558, 576, 1505, 504, 38, 12784, 7408, 5592, 12799, 12803, 5599, 7095, 2]
+// Dependencies: [19, 17, 4842, 4879, 4884, 4878, 4846, 4904, 1389, 12795, 1084, 21, 4972, 587, 4909, 12, 6902, 12796, 6905, 1125, 6989, 5038, 7486, 6926, 5026, 5235, 9134, 4891, 8951, 5978, 1199, 7010, 12797, 12798, 5663, 12803, 558, 576, 1502, 504, 38, 12793, 7410, 5593, 12808, 12812, 5600, 7097, 2]
 
-// Module 12785 (GuildSettingsModalMemberEdit)
+// Module 12794 (GuildSettingsModalMemberEdit)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4878 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4890 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4908 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import native2 from "native" /* 5037 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6924 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
+import intl7 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4879 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4891 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import native2 from "native" /* 5038 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6926 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7486 */;
 import BotTagDefault from "BotTag" /* 9134 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 12784 */;
-import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 12788 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 12789 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12794 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 12793 */;
+import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 12797 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 12798 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12803 */;
 import react from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 4841 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 12786 */;
-import Constants from "Constants" /* 1087 */;
+import GuildRecord from "GuildRecord" /* 4842 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 12795 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -264,7 +264,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
           return authStore4(HeaderActionButton, obj);
         };
       } else if (null != onClose) {
-        let obj = self(6924);
+        let obj = self(6926);
         fn = obj.getHeaderCloseButton(onClose);
       }
       let obj2 = {
@@ -365,13 +365,13 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
         let tmp16Result3;
         const tmp17Result = CommunicationDisabledUtils;
         const result = tmp17Result.isMemberCommunicationDisabled(member);
-        const TableRowGroup = tmp17(6987).TableRowGroup;
+        const TableRowGroup = tmp17(6989).TableRowGroup;
         const obj4 = { hasIcons: false, children: null };
-        const TableRow = tmp17(6903).TableRow;
+        const TableRow = tmp17(6905).TableRow;
         const obj5 = { variant: "danger", label: null, onPress: null };
-        const intl = tmp17(1128).intl;
+        const intl = tmp17(1125).intl;
         const formatToPlainString = intl.formatToPlainString;
-        const t = tmp17(1128).t;
+        const t = tmp17(1125).t;
         if (result) {
           const RuL6o7 = t.RuL6o7;
           const obj6 = { user: tmp19Result5.getName(user) };
@@ -395,21 +395,21 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       let tmp16Result4;
       if (!bot) {
         const obj8 = { hasIcons: false, children: authStore4(TableRow2, obj9) };
-        const TableRowGroup2 = tmp17(6987).TableRowGroup;
+        const TableRowGroup2 = tmp17(6989).TableRowGroup;
         obj9 = { variant: "danger", label: intl2.string(intl7.t.Z5s7PM), onPress: self.handleTransferOwnership };
-        TableRow2 = tmp17(6903).TableRow;
-        intl2 = tmp17(1128).intl;
+        TableRow2 = tmp17(6905).TableRow;
+        intl2 = tmp17(1125).intl;
         tmp16Result4 = tmp16(TableRowGroup2, obj8);
       }
       const obj10 = { style: tmp.form, contentContainerStyle: items1, children: closure_19(Stack, obj11) };
       items1 = [tmp.formContent, self.props.contentContainerStyle];
       const Form = tmp17(8951).Form;
       obj11 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: items2 };
-      Stack = tmp17(5977).Stack;
+      Stack = tmp17(5978).Stack;
       const obj12 = { hasIcons: true, children: authStore4(TableRow3, obj13) };
-      const TableRowGroup3 = tmp17(6987).TableRowGroup;
+      const TableRowGroup3 = tmp17(6989).TableRowGroup;
       obj13 = { icon: authStore4(native.Avatar, obj14), label: tmp14Result };
-      TableRow3 = tmp17(6903).TableRow;
+      TableRow3 = tmp17(6905).TableRow;
       obj14 = { style: tmp.avatar, user, guildId: guild.id };
       items2 = [authStore4(TableRowGroup3, obj12), , , , , , ];
       if (!canChangeNick) {
@@ -417,12 +417,12 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
       if (canChangeNick) {
         const obj15 = { label: intl3.string(intl7.t["621LJD"]), value: str, placeholder: intl4.string(intl7.t.h7UKXj), onChange: null, onBlur: null, maxLength: 32, errorMessage: tmp3 };
-        const TextInput = tmp17(7008).TextInput;
-        intl3 = tmp17(1128).intl;
+        const TextInput = tmp17(7010).TextInput;
+        intl3 = tmp17(1125).intl;
         if (str == null) {
           str = "";
         }
-        intl4 = tmp17(1128).intl;
+        intl4 = tmp17(1125).intl;
         ({ handleChangeNickname: obj16.onChange, handleSaveNickname: obj16.onBlur } = self);
         canChangeNick = tmp16(TextInput, obj15);
       }
@@ -446,26 +446,26 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       items2[3] = canDisableCommunication;
       if (canKick) {
         const obj19 = { hasIcons: false, children: authStore4(TableRow4, obj20) };
-        const TableRowGroup4 = tmp17(6987).TableRowGroup;
+        const TableRowGroup4 = tmp17(6989).TableRowGroup;
         obj20 = { variant: "danger", label: formatToPlainString2(yOiJHB, obj21), onPress: self.handleKick };
-        TableRow4 = tmp17(6903).TableRow;
-        const intl5 = tmp17(1128).intl;
+        TableRow4 = tmp17(6905).TableRow;
+        const intl5 = tmp17(1125).intl;
         formatToPlainString2 = intl5.formatToPlainString;
         obj21 = { user: tmp19Result7.getName(user) };
-        yOiJHB = tmp17(1128).t.yOiJHB;
+        yOiJHB = tmp17(1125).t.yOiJHB;
         tmp19Result7 = UserUtilsDefault;
         canKick = tmp16(TableRowGroup4, obj19);
       }
       items2[4] = canKick;
       if (canBan) {
         const obj22 = { hasIcons: false, children: authStore4(TableRow5, obj23) };
-        const TableRowGroup5 = tmp17(6987).TableRowGroup;
+        const TableRowGroup5 = tmp17(6989).TableRowGroup;
         obj23 = { variant: "danger", label: formatToPlainString3(TuAZuW, obj24), onPress: self.handleBan };
-        TableRow5 = tmp17(6903).TableRow;
-        const intl6 = tmp17(1128).intl;
+        TableRow5 = tmp17(6905).TableRow;
+        const intl6 = tmp17(1125).intl;
         formatToPlainString3 = intl6.formatToPlainString;
         obj24 = { user: tmp19Result8.getName(user) };
-        TuAZuW = tmp17(1128).t.TuAZuW;
+        TuAZuW = tmp17(1125).t.TuAZuW;
         tmp19Result8 = UserUtilsDefault;
         canBan = tmp16(TableRowGroup5, obj22);
       }
@@ -764,7 +764,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberModalE
   const obj = require("react");
   const cResult = obj.c(9);
   ({ userId, onClose, onRemove } = guildId);
-  const tmp4 = onClose(5599)(guildId.guildId);
+  const tmp4 = onClose(5600)(guildId.guildId);
   const tmp = _require;
   if (cResult[0] === tmp4) {
     if (cResult[1] === onClose) {
@@ -791,7 +791,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberModalE
         return tmp8;
       }
       const obj4 = { screens: tmp5, initialRouteName: constants3.MEMBER_EDIT, initialRouteStack: tmp6 };
-      const tmp11 = closure_18(tmp(7095).Navigator, obj4);
+      const tmp11 = closure_18(tmp(7097).Navigator, obj4);
       cResult[6] = tmp5;
       cResult[7] = tmp6;
       cResult[8] = tmp11;
@@ -837,7 +837,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberModalE
   onClose = onClose.onClose;
   const onRemove = onClose.onRemove;
   ({ guildId, userId } = onClose);
-  let tmp = onRemove(5599)(guildId);
+  let tmp = onRemove(5600)(guildId);
   let closure_2 = tmp;
   const items = [onClose, onRemove, tmp];
   const memo = react.useMemo(() => {
@@ -875,7 +875,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberModalE
   let obj = { screens: memo, initialRouteName: constants3.MEMBER_EDIT, initialRouteStack: items1 };
   items1 = [{ name: constants3.MEMBER_EDIT, params: { userId } }];
   const obj2 = { name: constants3.MEMBER_EDIT, params: { userId } };
-  return closure_18(onClose(7095).Navigator, obj);
+  return closure_18(onClose(7097).Navigator, obj);
 });
 let result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberEdit.tsx");
 

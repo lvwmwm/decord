@@ -1,27 +1,27 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17509
+// Function ID: 17510
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4913, 1087, 21, 4971, 587, 11060, 8668, 2002, 573, 1128, 5025, 17469, 17470, 1267, 6908, 1202, 5234, 5244, 5680, 558, 576, 7220, 13874, 2]
+// Dependencies: [32, 19, 17, 4914, 1084, 21, 4972, 587, 11063, 8668, 1999, 573, 1125, 5026, 17510, 17511, 1264, 6910, 1199, 5235, 5245, 5681, 558, 576, 7222, 13888, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 17468 (MessagesItemSuggestedFriend)
+// Module 17509 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11060 */;
-import LegendList from "LegendList" /* 13874 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17469 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17470 */;
+import intl3 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11063 */;
+import LegendList from "LegendList" /* 13888 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17510 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import Constants from "Constants" /* 1087 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(7220);
+const defaultMVCPConfig = tmp(7222);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);

@@ -1,22 +1,22 @@
-// Module ID: 18108
-// Function ID: 18109
+// Module ID: 18142
+// Function ID: 18143
 // Name: ChannelContent
-// Dependencies: [19, 17, 11953, 6705, 21, 4971, 1384, 558, 576, 11954, 7202, 18109, 8566, 7957, 17557, 5234, 2]
+// Dependencies: [19, 17, 11954, 6706, 21, 4972, 1381, 558, 576, 11955, 7204, 18143, 8566, 7955, 17598, 5235, 2]
 // Exports: renderChannelContent
 
-// Module 18108 (ChannelContent)
+// Module 18142 (ChannelContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7202 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11953 */;
-import ChannelListLayout from "ChannelListLayout" /* 11954 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17557 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18109 */;
+import ReadStateConstants from "ReadStateConstants" /* 6706 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7204 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11954 */;
+import ChannelListLayout from "ChannelListLayout" /* 11955 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 17598 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18143 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -286,7 +286,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
                                           let tmp54 = tmp19;
                                           if (tmp54) {
                                             const obj10 = { variant: "text-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-                                            tmp54 = metroRequire(tmp(5234).Text, obj10);
+                                            tmp54 = metroRequire(tmp(5235).Text, obj10);
                                           }
                                           cResult[44] = lastMessageTimestampString;
                                           cResult[45] = null != lastMessageTimestampString;
@@ -370,7 +370,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
                   let tmp35 = tmp11;
                   if (tmp35) {
                     const obj19 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                    tmp35 = metroRequire(tmp(7957).WarningIcon, obj19);
+                    tmp35 = metroRequire(tmp(7955).WarningIcon, obj19);
                   }
                   items7[1] = tmp35;
                   let tmp37 = isSubscriptionGated;
@@ -502,7 +502,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = tmp10(tmp2(7957).WarningIcon, obj10);
+      isNSFWResult = tmp10(tmp2(7955).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
@@ -536,7 +536,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
   const obj15 = { style: tmp10Result6 ? tmp.rightContentAbsolute : tmp.rightBox, children: items7 };
   if (tmp10Result5) {
     const obj16 = { variant: "text-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-    tmp10Result5 = tmp10(tmp2(5234).Text, obj16);
+    tmp10Result5 = tmp10(tmp2(5235).Text, obj16);
   }
   items7 = [tmp10Result5, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];

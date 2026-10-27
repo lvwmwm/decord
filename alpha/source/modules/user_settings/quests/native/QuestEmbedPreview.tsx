@@ -1,21 +1,21 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16557
+// Function ID: 16558
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4914, 1392, 1087, 21, 558, 576, 8133, 504, 5703, 9594, 1128, 16517, 9772, 2]
+// Dependencies: [19, 4915, 1389, 1084, 21, 558, 576, 8131, 504, 5704, 9596, 1125, 16556, 9774, 2]
 
-// Module 16518 (QuestEmbedPreview)
+// Module 16557 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import CodedLink from "CodedLink" /* 5703 */;
-import RowGeneratorDefault from "RowGenerator" /* 8133 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9594 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 16517 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import CodedLink from "CodedLink" /* 5704 */;
+import RowGeneratorDefault from "RowGenerator" /* 8131 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9596 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 16556 */;
 import react from "react" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4914 */;
-import UserStore from "UserStore" /* 1392 */;
+import MessageRecord from "MessageRecord" /* 4915 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEmbedPr
     let tmp24;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t["habP/M"]);
       cResult[6] = stringResult;
       tmp22 = stringResult;
@@ -148,10 +148,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEmbedPr
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    stateFromStores(16517);
-    const intl = tmp2(1128).intl;
+    stateFromStores(16556);
+    const intl = tmp2(1125).intl;
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
-    tmp6 = <tmp9 title={intl.string(tmp2(1128).t["habP/M"])}>{null}</tmp9>;
+    tmp6 = <tmp9 title={intl.string(tmp2(1125).t["habP/M"])}>{null}</tmp9>;
   }
   return tmp6;
 });

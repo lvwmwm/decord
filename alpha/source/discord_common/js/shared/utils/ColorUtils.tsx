@@ -1,14 +1,14 @@
-// Module ID: 1105
-// Function ID: 1106
+// Module ID: 1102
+// Function ID: 1103
 // Name: utils/ColorUtils
 // Dependencies: [683, 2]
 // Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 1105 (utils/ColorUtils)
+// Module 1102 (utils/ColorUtils)
 import _modDef683 from "module_683" /* 683 */;
 import size from "module_2" /* 2 */;
 
-const f87681 = (item) => {
+const f87852 = (item) => {
   let result1;
   const result = item / 255;
   if (result <= 0.03928) {
@@ -193,12 +193,12 @@ export const hex2rgb = function hex2rgb(gradientValue, alphaResult) {
     return null;
   }
 };
-export const int2rgba = function int2rgba(ColorUtils, arg1) {
+export const int2rgba = function int2rgba(primaryColor, arg1) {
   let result = arg1;
   if (null == arg1) {
-    result = (ColorUtils >> 24 & 255) / 255;
+    result = (primaryColor >> 24 & 255) / 255;
   }
-  return "rgba(" + ColorUtils >> 16 & 255 + ", " + ColorUtils >> 8 & 255 + ", " + 255 & ColorUtils + ", " + result + ")";
+  return "rgba(" + primaryColor >> 16 & 255 + ", " + primaryColor >> 8 & 255 + ", " + 255 & primaryColor + ", " + result + ")";
 };
 export const rgb2int = function rgb2int(dominantColorFromImage) {
   let color;
@@ -260,7 +260,7 @@ export const int2rgbArray = function int2rgbArray(modalV2BackgroundColor) {
 };
 export const getLuminance = function getLuminance(arg0, arg1, arg2) {
   const items = [arg0, arg1, arg2];
-  const mapped = items.map(f87681);
+  const mapped = items.map(f87852);
   return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
 };
 export const getContrast = function getContrast(hex2intResult, hex2intResult1) {
@@ -268,11 +268,11 @@ export const getContrast = function getContrast(hex2intResult, hex2intResult1) {
   const items1 = [hex2intResult1 >> 16 & 255, hex2intResult1 >> 8 & 255, 255 & hex2intResult1];
   const items2 = [, , ];
   [arr3[0], arr3[1], arr3[2]] = items;
-  const mapped = items2.map(f87681);
+  const mapped = items2.map(f87852);
   const sum = 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
   const items3 = [, , ];
   [arr4[0], arr4[1], arr4[2]] = items1;
-  const mapped1 = items3.map(f87681);
+  const mapped1 = items3.map(f87852);
   const sum1 = 0.2126 * mapped1[0] + 0.7152 * mapped1[1] + 0.0722 * mapped1[2];
   const sum2 = Math.max(sum, sum1) + 0.05;
   return sum2 / (Math.min(sum, sum1) + 0.05);

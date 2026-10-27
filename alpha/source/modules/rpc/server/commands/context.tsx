@@ -1,14 +1,14 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15767
+// Function ID: 15768
 // Name: context
-// Dependencies: [6378, 1087, 5626, 15725, 9258, 9264, 2]
+// Dependencies: [6379, 1084, 5627, 15761, 9258, 9264, 2]
 
-// Module 15731 (context)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+// Module 15767 (context)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5627 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 9258 */;
-import Constants_mod from "Constants" /* 6378 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+import Constants_mod from "Constants" /* 6379 */;
+import Constants_mod2 from "Constants" /* 1084 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15761 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

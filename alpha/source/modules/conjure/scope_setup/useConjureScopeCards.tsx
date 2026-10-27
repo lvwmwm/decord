@@ -1,13 +1,13 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 12461
+// Function ID: 12462
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6773, 1128, 3830, 12290, 558, 576, 504, 12304, 2]
+// Dependencies: [5, 32, 19, 6774, 1125, 3831, 12296, 558, 576, 504, 12310, 2]
 
-// Module 12453 (useConjureScopeCards)
-import intl6 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6773 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 12290 */;
+// Module 12461 (useConjureScopeCards)
+import intl6 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6774 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12296 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -30,13 +30,13 @@ function scopeClarification() {
   let items;
   let items1;
   const obj = { id: "scope-setup", questions: items1 };
-  const obj2 = { id, question: intl.string(_modDef3830.ickKBI), recommendation_reason: "", allow_custom: false, options: items };
+  const obj2 = { id, question: intl.string(_modDef3831.ickKBI), recommendation_reason: "", allow_custom: false, options: items };
   intl = intl6.intl;
-  const obj3 = { id: id2, label: intl2.string(_modDef3830.qLYOpH), detail: intl3.string(_modDef3830.QSKvUE) };
+  const obj3 = { id: id2, label: intl2.string(_modDef3831.qLYOpH), detail: intl3.string(_modDef3831.QSKvUE) };
   intl2 = intl6.intl;
   intl3 = intl6.intl;
   items = [obj3, ];
-  const obj4 = { id: id3, label: intl4.string(_modDef3830.QV5C7b), detail: intl5.string(_modDef3830["ZzHR4/"]) };
+  const obj4 = { id: id3, label: intl4.string(_modDef3831.QV5C7b), detail: intl5.string(_modDef3831["ZzHR4/"]) };
   intl4 = intl6.intl;
   intl5 = intl6.intl;
   items[1] = obj4;
@@ -57,18 +57,18 @@ function serverClarification(conjureEligibleGuilds, guild_id) {
   const intl = intl6.intl;
   const string = intl.string;
   if (conjureEligibleGuilds.length > 0) {
-    ZWXDeI = _modDef3830.ZWXDeI;
+    ZWXDeI = _modDef3831.ZWXDeI;
     tmp5 = importDefault;
   } else {
-    ZWXDeI = _modDef3830["u5+Qhu"];
+    ZWXDeI = _modDef3831["u5+Qhu"];
     tmp5 = importDefault;
   }
   const obj2 = { id: "server-setup:q0", question: string(ZWXDeI), recommendation_reason: "", allow_custom: false, options: items };
   if (conjureEligibleGuilds.length > 0) {
     items = [];
   } else {
-    const obj3 = { id: id2, label: intl2.string(tmp5(3830).qLYOpH) };
-    intl2 = tmp(1128).intl;
+    const obj3 = { id: id2, label: intl2.string(tmp5(3831).qLYOpH) };
+    intl2 = tmp(1125).intl;
     items = [obj3];
   }
   const tmpResult = conjureScopeSetup;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult3 = tmp(12304);
+  const tmpResult3 = tmp(12310);
   const conjureEligibleGuilds = tmpResult3.useConjureEligibleGuilds(ConjureScopeSetupCard);
   [tmp11, importDefault] = settle(react.useState(null), 2);
   const tmp10 = settle(react.useState(null), 2);
@@ -273,8 +273,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
             }
             const _Symbol = Symbol;
             if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1128).intl;
-              const stringResult = intl.string(tmp(1128).t["cY+Oob"]);
+              const intl = tmp(1125).intl;
+              const stringResult = intl.string(tmp(1125).t["cY+Oob"]);
               cResult[14] = stringResult;
               tmp26 = stringResult;
             } else {
@@ -290,12 +290,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
                 let stringResult1 = null;
                 if (null != tmp15) {
                   let jNVZ3e;
-                  const intl2 = tmp(1128).intl;
+                  const intl2 = tmp(1125).intl;
                   const string = intl2.string;
                   if ("server" === tmp15) {
-                    jNVZ3e = _modDef3830["XXKd+7"];
+                    jNVZ3e = _modDef3831["XXKd+7"];
                   } else {
-                    jNVZ3e = _modDef3830.jNVZ3e;
+                    jNVZ3e = _modDef3831.jNVZ3e;
                   }
                   stringResult1 = string(jNVZ3e);
                 }
@@ -337,7 +337,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           }
         }
         if (cResult[8] !== tmp19) {
-          const tmpResult4 = tmp(12290);
+          const tmpResult4 = tmp(12296);
           const result = tmpResult4.ownerOnlyClarification(tmp19);
           cResult[8] = tmp19;
           cResult[9] = result;
@@ -513,7 +513,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   } else {
     if (null != stateFromStores) {
       if (settle(stateFromStores)) {
-        let obj4 = { clarification: memo, readOnly: false, onSubmit: handleAnswered, submitText: intl.string(tmp(1128).t["cY+Oob"]), onBack: fn, hideSubmit: false, failure: stringResult };
+        let obj4 = { clarification: memo, readOnly: false, onSubmit: handleAnswered, submitText: intl.string(tmp(1125).t["cY+Oob"]), onBack: fn, hideSubmit: false, failure: stringResult };
         handleAnswered = undefined;
         if (!tmp8) {
           handleAnswered = function handleAnswered(arg0, arg1) {
@@ -540,7 +540,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
             }
           };
         }
-        intl = tmp(1128).intl;
+        intl = tmp(1125).intl;
         fn = undefined;
         if (tmp12) {
           if (!tmp8) {
@@ -550,12 +550,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         stringResult = null;
         if (null != tmp10) {
           let jNVZ3e;
-          const intl2 = tmp(1128).intl;
+          const intl2 = tmp(1125).intl;
           const string = intl2.string;
           if ("server" === tmp10) {
-            jNVZ3e = conjureEligibleGuilds(3830)["XXKd+7"];
+            jNVZ3e = conjureEligibleGuilds(3831)["XXKd+7"];
           } else {
-            jNVZ3e = conjureEligibleGuilds(3830).jNVZ3e;
+            jNVZ3e = conjureEligibleGuilds(3831).jNVZ3e;
           }
           stringResult = string(jNVZ3e);
         }
@@ -563,7 +563,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(12290);
+    tmpResult = tmp(12296);
     return obj5;
   }
 });
@@ -1050,7 +1050,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(12304);
+  let obj2 = projectId(12310);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds(switchTo);
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -1072,7 +1072,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
     const first = _slicedToArray(clarification.questions, 1)[0];
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const tmp7 = _modDef3830;
+    const tmp7 = _modDef3831;
     const tmp = clarification;
     if ("guild" === scope) {
       d7jxeT = tmp7["jh/iy+"];
@@ -1092,8 +1092,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
       tmp12 = obj3;
     } else {
       const _HermesInternal = HermesInternal;
-      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(3830).TVRkVh) };
-      intl2 = tmp3(1128).intl;
+      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(3831).TVRkVh) };
+      intl2 = tmp3(1125).intl;
       const items = [obj4];
       obj3.options = items;
       tmp12 = obj3;
@@ -1125,12 +1125,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
           }
         };
       }
-      let intl = tmp(1128).intl;
+      let intl = tmp(1125).intl;
       let str = "guild";
       tmp11 = "guild" === scope;
       let tmp12 = clarification;
       string = intl.string;
-      const tmp13 = clarification(3830);
+      const tmp13 = clarification(3831);
       if (tmp11) {
         TVRkVh = tmp13.Ua7yKM;
         tmp14 = tmp12;
@@ -1151,18 +1151,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
           }
         };
       }
-      let intl2 = tmp(1128).intl;
+      let intl2 = tmp(1125).intl;
       string2 = intl2.string;
-      tmp14Result = tmp14(3830);
+      tmp14Result = tmp14(3831);
       string3Result = null;
       if (null != tmp8) {
         let jNVZ3e;
-        const intl3 = tmp(1128).intl;
+        const intl3 = tmp(1125).intl;
         const string3 = intl3.string;
         if ("locked" === tmp8) {
-          jNVZ3e = tmp14(3830).irUT0N;
+          jNVZ3e = tmp14(3831).irUT0N;
         } else {
-          jNVZ3e = tmp14(3830).jNVZ3e;
+          jNVZ3e = tmp14(3831).jNVZ3e;
         }
         string3Result = string3(jNVZ3e);
       }
@@ -1170,7 +1170,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(12290);
+  tmpResult = tmp(12296);
   return obj5;
 });
 let result = size.fileFinishedImporting("modules/conjure/scope_setup/useConjureScopeCards.tsx");

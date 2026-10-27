@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15250
+// Function ID: 15251
 // Name: LeaveServerAlert
-// Dependencies: [1087, 21, 558, 576, 1128, 9005, 5914, 5914, 2]
+// Dependencies: [1084, 21, 558, 576, 1125, 9005, 5915, 5915, 2]
 
-// Module 15214 (LeaveServerAlert)
-import Constants from "Constants" /* 1087 */;
+// Module 15250 (LeaveServerAlert)
+import Constants from "Constants" /* 1084 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,9 +31,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
     let stringResult;
     const features = guild.features;
     const hasItem = features.has(GuildFeatures.HUB);
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     if (hasItem) {
       stringResult = string(t.Dv8gFT);
     } else {
@@ -46,9 +46,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
     tmp4 = cResult[1];
   }
   if (cResult[2] !== guild.name) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj2 = { name: guild.name };
-    const formatToPlainStringResult = intl2.formatToPlainString(guild(1128).t.TB1og8, obj2);
+    const formatToPlainStringResult = intl2.formatToPlainString(guild(1125).t.TB1og8, obj2);
     cResult[2] = guild.name;
     cResult[3] = formatToPlainStringResult;
     tmp8 = formatToPlainStringResult;
@@ -67,8 +67,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
-    const stringResult1 = intl3.string(guild(1128).t.p89ACt);
+    const intl3 = tmp(1125).intl;
+    const stringResult1 = intl3.string(guild(1125).t.p89ACt);
     cResult[6] = stringResult1;
     tmp11 = stringResult1;
   } else {
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
   }
   if (cResult[7] !== tmp10) {
     const obj3 = { variant: "destructive", onPress: tmp10, text: tmp11 };
-    const tmp15 = closure_4(guild(5914).AlertActionButton, obj3, "confirm");
+    const tmp15 = closure_4(guild(5915).AlertActionButton, obj3, "confirm");
     cResult[7] = tmp10;
     cResult[8] = tmp15;
     tmp13 = tmp15;
@@ -84,9 +84,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
     tmp13 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { variant: "secondary", text: intl4.string(guild(1128).t.gm1Vej) };
-    const AlertActionButton = tmp(5914).AlertActionButton;
-    intl4 = tmp(1128).intl;
+    const obj4 = { variant: "secondary", text: intl4.string(guild(1125).t.gm1Vej) };
+    const AlertActionButton = tmp(5915).AlertActionButton;
+    intl4 = tmp(1125).intl;
     const tmp18 = closure_4(AlertActionButton, obj4, "cancel");
     cResult[9] = tmp18;
     tmp16 = tmp18;
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
   if (cResult[10] !== tmp13) {
     const obj5 = { children: items };
     items = [tmp13, tmp16];
-    const tmp21 = closure_5(guild(5914).AlertActions, obj5);
+    const tmp21 = closure_5(guild(5915).AlertActions, obj5);
     cResult[10] = tmp13;
     cResult[11] = tmp21;
     tmp19 = tmp21;
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
       return tmp22;
     }
   }
-  const tmp23 = closure_4(guild(5914).AlertModal, { title: tmp4, content: tmp8, actions: tmp19 });
+  const tmp23 = closure_4(guild(5915).AlertModal, { title: tmp4, content: tmp8, actions: tmp19 });
   cResult[12] = tmp4;
   cResult[13] = tmp8;
   cResult[14] = tmp19;
@@ -129,35 +129,35 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveServe
   let stringResult;
   guild = guild.guild;
   const features = guild.features;
-  const AlertModal = guild(5914).AlertModal;
+  const AlertModal = guild(5915).AlertModal;
   const hasItem = features.has(GuildFeatures.HUB);
-  const intl = guild(1128).intl;
+  const intl = guild(1125).intl;
   const string = intl.string;
-  const t = guild(1128).t;
+  const t = guild(1125).t;
   if (hasItem) {
     stringResult = string(t.Dv8gFT);
   } else {
     stringResult = string(t.J2TBi3);
   }
-  let obj = { title: stringResult, content: intl2.formatToPlainString(guild(1128).t.TB1og8, obj2), actions: closure_5(AlertActions, obj3) };
-  intl2 = tmp2(1128).intl;
+  let obj = { title: stringResult, content: intl2.formatToPlainString(guild(1125).t.TB1og8, obj2), actions: closure_5(AlertActions, obj3) };
+  intl2 = tmp2(1125).intl;
   obj2 = { name: guild.name };
   obj3 = { children: items };
-  AlertActions = tmp2(5914).AlertActions;
+  AlertActions = tmp2(5915).AlertActions;
   const obj4 = {
     variant: "destructive",
     onPress() {
       const obj = GuildSettingsActionCreatorsDefault;
       return obj.leaveGuild(guild.id);
     },
-    text: intl3.string(guild(1128).t.p89ACt)
+    text: intl3.string(guild(1125).t.p89ACt)
   };
-  const AlertActionButton = tmp2(5914).AlertActionButton;
-  intl3 = tmp2(1128).intl;
+  const AlertActionButton = tmp2(5915).AlertActionButton;
+  intl3 = tmp2(1125).intl;
   items = [closure_4(AlertActionButton, obj4, "confirm"), ];
-  const obj5 = { variant: "secondary", text: intl4.string(guild(1128).t.gm1Vej) };
-  const AlertActionButton2 = tmp2(5914).AlertActionButton;
-  intl4 = tmp2(1128).intl;
+  const obj5 = { variant: "secondary", text: intl4.string(guild(1125).t.gm1Vej) };
+  const AlertActionButton2 = tmp2(5915).AlertActionButton;
+  intl4 = tmp2(1125).intl;
   items[1] = closure_4(AlertActionButton2, obj5, "cancel");
   return closure_4(AlertModal, obj);
 });

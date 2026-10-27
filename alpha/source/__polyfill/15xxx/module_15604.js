@@ -1,15 +1,14 @@
 // Module ID: 15604
 // Function ID: 15605
-// Dependencies: [15552, 15571, 15561]
+// Dependencies: [15588, 15605]
 
 // Module 15604
-import _mod15552 from "module_15552" /* 15552 */;
-import _mod15561 from "module_15561" /* 15561 */;
-import module_15571 from "module_15571" /* 15571 */;
+import _mod15588 from "module_15588" /* 15588 */;
+import _mod15605 from "module_15605" /* 15605 */;
 
-let closure_0 = _mod15552(Function.toString);
-if (!module_15571(_mod15561.inspectSource)) {
-  _mod15561.inspectSource = (arg0) => closure_0(arg0);
-}
+let closure_2 = _mod15588({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod15605(arg0), arg1);
+});
 
-export default _mod15561.inspectSource;
+export default tmp;

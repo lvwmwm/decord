@@ -1,11 +1,11 @@
-// Module ID: 9555
-// Function ID: 9556
+// Module ID: 9554
+// Function ID: 9555
 // Name: outbound_promotion_popover
-// Dependencies: [32, 1212, 9535, 2]
+// Dependencies: [32, 1209, 9534, 2]
 
-// Module 9555 (outbound_promotion_popover)
-import _mod1212 from "module_1212" /* 1212 */;
-import theme_aware_asset from "theme_aware_asset" /* 9535 */;
+// Module 9554 (outbound_promotion_popover)
+import _mod1209 from "module_1209" /* 1209 */;
+import theme_aware_asset from "theme_aware_asset" /* 9534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let tmp;
 function T() {
   return theme_aware_asset.ThemeAwareAsset;
 }
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1209.MessageType;
 class OutboundPromotionPopover$Type extends MessageType {
   constructor() {
     const items = [];
@@ -28,9 +28,9 @@ class OutboundPromotionPopover$Type extends MessageType {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1209;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -68,7 +68,7 @@ class OutboundPromotionPopover$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1212.UnknownFieldHandler.onRead;
+                onRead = _mod1209.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -83,14 +83,14 @@ class OutboundPromotionPopover$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1209.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

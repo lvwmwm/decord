@@ -1,14 +1,14 @@
-// Module ID: 6894
-// Function ID: 6895
+// Module ID: 6896
+// Function ID: 6897
 // Name: MemberVerificationUtils
-// Dependencies: [6873, 1087, 5005, 1388, 2]
+// Dependencies: [6875, 1084, 5006, 1385, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 6894 (MemberVerificationUtils)
-import Constants from "Constants" /* 1087 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5005 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 6873 */;
+// Module 6896 (MemberVerificationUtils)
+import Constants from "Constants" /* 1084 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5006 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 6875 */;
 import size from "module_2" /* 2 */;
 
 let has;

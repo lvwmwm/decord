@@ -1,16 +1,16 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13434
+// Function ID: 13435
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1246, 1087, 4820, 1097, 4806, 558, 576, 504, 4804, 1267, 4807, 2]
+// Dependencies: [1243, 1084, 4821, 1094, 4807, 558, 576, 504, 4805, 1264, 4808, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed
 
-// Module 13420 (GuildDismissibleContentUtils)
-import Constants from "Constants" /* 1087 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4806 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+// Module 13434 (GuildDismissibleContentUtils)
+import Constants from "Constants" /* 1084 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4807 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
   const tmp4 = arg2;
   if (tmp4) {
     let UNKNOWN = AUTO_DISMISS;
-    const obj2 = { type: tmp(4807).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
+    const obj2 = { type: tmp(4808).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
     const track = AnalyticsUtilsDefault.track;
     const DISMISSIBLE_CONTENT_DISMISSED = AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED;
     AnalyticsUtilsDefault;

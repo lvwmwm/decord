@@ -1,25 +1,25 @@
-// Module ID: 5878
-// Function ID: 5879
+// Module ID: 5879
+// Function ID: 5880
 // Name: StreamQualityUtils
-// Dependencies: [19, 5879, 502, 4845, 5714, 1392, 1087, 5814, 1394, 5718, 1128, 558, 576, 504, 5880, 1267, 2]
+// Dependencies: [19, 5880, 502, 4846, 5715, 1389, 1084, 5815, 1391, 5719, 1125, 558, 576, 504, 5881, 1264, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate
 
-// Module 5878 (StreamQualityUtils)
+// Module 5879 (StreamQualityUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Constants2 from "Constants" /* 5718 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5880 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import Constants2 from "Constants" /* 5719 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5881 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5879 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5880 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import UserStore from "UserStore" /* 1392 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import UserStore from "UserStore" /* 1389 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5815 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

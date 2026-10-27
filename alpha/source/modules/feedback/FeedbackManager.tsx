@@ -1,16 +1,16 @@
-// Module ID: 18803
-// Function ID: 18804
+// Module ID: 18841
+// Function ID: 18842
 // Name: feedback/FeedbackManager
-// Dependencies: [7309, 18804, 10045, 18805, 4799, 510, 12, 7214, 2]
+// Dependencies: [7311, 18842, 10047, 18843, 4800, 510, 12, 7216, 2]
 
-// Module 18803 (feedback/FeedbackManager)
+// Module 18841 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import FeedbackConfig from "FeedbackConfig" /* 18805 */;
-import HotspotStore from "hotspot/HotspotStore" /* 7309 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18804 */;
-import Constants from "Constants" /* 10045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import FeedbackConfig from "FeedbackConfig" /* 18843 */;
+import HotspotStore from "hotspot/HotspotStore" /* 7311 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18842 */;
+import Constants from "Constants" /* 10047 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 let _require, optOutExpiryTime;
@@ -41,7 +41,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp10 = !tmp5;
   }
   if (tmp10) {
-    const InAppFeedbackStates2 = tmp(4799).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(4800).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
@@ -87,7 +87,7 @@ function recencyEligibilityCheck(cooldown, storageKey) {
     isNaNResult = Number.isNaN(tmp7);
   }
   if (!isNaNResult) {
-    const InAppFeedbackStates2 = tmp(4799).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(4800).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);

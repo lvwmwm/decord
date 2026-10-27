@@ -1,23 +1,23 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11424
+// Function ID: 11425
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 11422, 1202, 5669, 11423, 1128, 5234, 5297, 2]
+// Dependencies: [19, 17, 1084, 21, 4972, 587, 558, 576, 11425, 1199, 5670, 11426, 1125, 5235, 5298, 2]
 
-// Module 11421 (ScreenshareTile)
+// Module 11424 (ScreenshareTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11422 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11423 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11425 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11426 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenShareT
     const _Symbol2 = Symbol;
     const label = tmp4.label;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.G84gtR);
       cResult[8] = stringResult;
       tmp20 = stringResult;

@@ -1,11 +1,11 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 7769
+// Function ID: 7770
 // Name: appMessageEmbedTrackingConfig
-// Dependencies: [502, 7762, 2]
+// Dependencies: [502, 7763, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7768 (appMessageEmbedTrackingConfig)
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7762 */;
+// Module 7769 (appMessageEmbedTrackingConfig)
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7763 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -14,6 +14,7 @@ const result = size.fileFinishedImporting("modules/applications/message_embed/we
 
 export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id) {
   let activityCustomId;
+  let analyticsLocations;
   let appEmbedState;
   let channelId;
   let flag;
@@ -30,7 +31,7 @@ export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id
   if (str == null) {
     str = "0";
   }
-  const obj = { id: str, linkType, referrerId, activityCustomId, onView, onLinkCopied, guildId, channelId, messageId, isDeadEnd: flag, appEmbedState };
+  const obj = { id: str, linkType, referrerId, activityCustomId, onView, onLinkCopied, guildId, channelId, messageId, isDeadEnd: flag, appEmbedState, analyticsLocations };
   linkType = undefined;
   if (id != null) {
     linkType = id.linkType;
@@ -79,6 +80,10 @@ export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id
   appEmbedState = undefined;
   if (id != null) {
     appEmbedState = id.appEmbedState;
+  }
+  analyticsLocations = undefined;
+  if (id != null) {
+    analyticsLocations = id.analyticsLocations;
   }
   return obj;
 };

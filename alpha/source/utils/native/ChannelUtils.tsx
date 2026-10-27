@@ -1,12 +1,12 @@
 // Module ID: 8502
 // Function ID: 8503
 // Name: utils/ChannelUtils
-// Dependencies: [4823, 4883, 4845, 1392, 1087, 8503, 8504, 8505, 8506, 8507, 8508, 8509, 8510, 8511, 8512, 8513, 8514, 8515, 8516, 8517, 8518, 8519, 8520, 8521, 8522, 8523, 8524, 8525, 8526, 8527, 8528, 8529, 8530, 8531, 8532, 8533, 7202, 8534, 8535, 8536, 8537, 8538, 8539, 8540, 8541, 8542, 8543, 8544, 8545, 8546, 8547, 8548, 8549, 8550, 8551, 8552, 8553, 8554, 8555, 8556, 8557, 8558, 8559, 8560, 8561, 8562, 8563, 8564, 8565, 8566, 8567, 8568, 8569, 8570, 8571, 8572, 8573, 8574, 8575, 8576, 8577, 2]
+// Dependencies: [4824, 4884, 4846, 1389, 1084, 8503, 8504, 8505, 8506, 8507, 8508, 8509, 8510, 8511, 8512, 8513, 8514, 8515, 8516, 8517, 8518, 8519, 8520, 8521, 8522, 8523, 8524, 8525, 8526, 8527, 8528, 8529, 8530, 8531, 8532, 8533, 7204, 8534, 8535, 8536, 8537, 8538, 8539, 8540, 8541, 8542, 8543, 8544, 8545, 8546, 8547, 8548, 8549, 8550, 8551, 8552, 8553, 8554, 8555, 8556, 8557, 8558, 8559, 8560, 8561, 8562, 8563, 8564, 8565, 8566, 8567, 8568, 8569, 8570, 8571, 8572, 8573, 8574, 8575, 8576, 8577, 2]
 // Exports: getChannelIconComponentWithGuild, getChannelIconWithGuild, getChannelMentionIcon, getSimpleChannelIcon, getSimpleChannelIconComponent, getThreadChannelIcon
 
 // Module 8502 (utils/ChannelUtils)
-import Constants from "Constants" /* 1087 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7202 */;
+import Constants from "Constants" /* 1084 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7204 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8503 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8504 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 8505 */;
@@ -39,10 +39,10 @@ import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 853
 import AssetRegistryDefault29 from "AssetRegistry" /* 8532 */;
 import AssetRegistryDefault30 from "AssetRegistry" /* 8533 */;
 import AssetRegistryDefault31 from "AssetRegistry" /* 8539 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

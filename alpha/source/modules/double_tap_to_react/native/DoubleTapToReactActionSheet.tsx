@@ -1,28 +1,28 @@
-// Module ID: 13279
-// Function ID: 13280
+// Module ID: 13293
+// Function ID: 13294
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 4972, 6725, 1087, 1395, 21, 4971, 1384, 587, 5052, 5206, 558, 576, 5263, 504, 5247, 4799, 4917, 8326, 1417, 7227, 1267, 7278, 9837, 5210, 5234, 1128, 13178, 13280, 5244, 7298, 2]
+// Dependencies: [5, 32, 19, 17, 4973, 6726, 1084, 1392, 21, 4972, 1381, 587, 5053, 5207, 558, 576, 5264, 504, 5248, 4800, 4918, 8325, 1414, 7229, 1264, 7280, 9839, 5211, 5235, 1125, 13192, 13294, 5245, 7300, 2]
 
-// Module 13279 (DoubleTapToReactActionSheet)
+// Module 13293 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4917 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
+import Constants from "Constants" /* 1084 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4918 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import spring from "spring" /* 5248 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import EmojiStore from "EmojiStore" /* 6725 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import EmojiStore from "EmojiStore" /* 6726 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8326);
+const DoubleTapToReactUtils = tmp(8325);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;
@@ -227,20 +227,20 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiC
   ({ bottom, left } = top);
   ({ right, leading: dependencyMap } = top);
   const children = top.emojiComponent;
-  let obj = top(5052);
+  let obj = top(5053);
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = top(5052);
+  const obj2 = top(5053);
   const sharedValue1 = obj2.useSharedValue(0);
-  const obj3 = top(5052);
+  const obj3 = top(5053);
   const sharedValue2 = obj3.useSharedValue(0.2);
-  let obj4 = top(5052);
+  let obj4 = top(5053);
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = top(5263);
+  const obj5 = top(5264);
   const mountLayoutEffect = obj5.useMountLayoutEffect(() => {
     const obj = { positionValue: sharedValue, rotationValue: sharedValue1, sizeValue: sharedValue2, opacityValue: sharedValue3, leading: dependencyMap };
     randomizeAnimationValues(obj);
   });
-  const obj6 = top(5052);
+  const obj6 = top(5053);
   class S {
     constructor() {
       let obj4;
@@ -275,7 +275,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiC
   S.__workletHash = 17194622427708;
   S.__initData = __initData2;
   const style = obj6.useAnimatedStyle(S);
-  return closure_11(left(5052).View, { style, children });
+  return closure_11(left(5053).View, { style, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiBurstAnimation(emojiComponent) {

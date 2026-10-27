@@ -1,27 +1,27 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9356
+// Function ID: 9357
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1207, 7650, 1089, 21, 4971, 587, 558, 576, 9358, 7661, 9359, 8667, 9362, 9363, 1128, 5663, 7253, 9420, 9422, 4978, 504, 7662, 5234, 9423, 9426, 9428, 9425, 9429, 9431, 9436, 9447, 6908, 9360, 5210, 8665, 2053, 9434, 9471, 9472, 1281, 2]
+// Dependencies: [19, 17, 1204, 7651, 1086, 21, 4972, 587, 558, 576, 9357, 7662, 9358, 8667, 9361, 9362, 1125, 5664, 7255, 9419, 9421, 4979, 504, 7663, 5235, 9422, 9425, 9427, 9424, 9428, 9430, 9435, 9446, 6910, 9359, 5211, 8665, 2050, 9433, 9470, 9471, 1278, 2]
 
-// Module 9357 (CollectiblesShopCardV2)
+// Module 9356 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
+import intl4 from "intl" /* 1125 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7663 */;
 import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8665 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9360 */;
-import DiceIcon from "DiceIcon" /* 9426 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9428 */;
-import OrbsIcon from "OrbsIcon" /* 9429 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9359 */;
+import DiceIcon from "DiceIcon" /* 9425 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9427 */;
+import OrbsIcon from "OrbsIcon" /* 9428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7651 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7768
+// Function ID: 7769
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1087, 1267, 558, 576, 7768, 7769, 2]
+// Dependencies: [19, 1084, 1264, 558, 576, 7769, 7770, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed
 
-// Module 7767 (appMessageEmbedTracking)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 7768 (appMessageEmbedTracking)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppE
   let obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] !== id) {
-    const tmpResult = tmp(7768);
+    const tmpResult = tmp(7769);
     const result = tmpResult.trackingConfigWithDefaults(id);
     cResult[0] = id;
     cResult[1] = result;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppE
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult2 = tmp(7769);
+  const tmpResult2 = tmp(7770);
   return tmpResult2.useIsVisible(tmp6, undefined);
 }) : (function useTrackAppEmbedViewed(id) {
   let obj = require("appMessageEmbedTrackingConfig");
@@ -121,6 +121,7 @@ let result = size.fileFinishedImporting("modules/applications/message_embed/web/
 
 export const ClickArea = { VIEW: "view", PLAY: "play", CLOUD_PLAY: "cloud_play", JOIN: "join", ADD_APP: "add_app", JOIN_SERVER: "join_server", INVITE: "invite", SYNC: "sync", CONTENT: "content", BANNER: "banner", STREAM: "stream", CONNECT_ACCOUNT: "connect_account" };
 export const trackAppEmbedClick = function trackAppEmbedClick(arg0) {
+  let analyticsLocations;
   let applicationId;
   let area;
   let customId;
@@ -128,9 +129,9 @@ export const trackAppEmbedClick = function trackAppEmbedClick(arg0) {
   let linkType;
   let messageId;
   let referrerId;
-  ({ applicationId, linkType, area, referrerId, customId, isDeadEnd, messageId } = arg0);
+  ({ applicationId, linkType, area, referrerId, customId, isDeadEnd, messageId, analyticsLocations } = arg0);
   const obj = AnalyticsUtilsDefault;
-  obj.track(AnalyticEvents.APP_EMBED_CLICKED, { application_id: applicationId, link_type: linkType, area, referrer_id: referrerId, custom_id: customId, is_dead_end: isDeadEnd, message_id: messageId });
+  obj.track(AnalyticEvents.APP_EMBED_CLICKED, { application_id: applicationId, link_type: linkType, area, referrer_id: referrerId, custom_id: customId, is_dead_end: isDeadEnd, message_id: messageId, location_stack: analyticsLocations });
 };
 export { trackAppEmbedViewed };
 export const useTrackAppEmbedViewed = tmp2;

@@ -1,40 +1,24 @@
 // Module ID: 9751
 // Function ID: 9752
 // Name: react
-// Dependencies: [19, 1506]
-// Exports: useInvalidPreventRemoveError
+// Dependencies: [19]
+// Exports: useAnimatedHeaderHeight
 
 // Module 9751 (react)
-import Link from "Link" /* 1506 */;
 import react from "react" /* 19 */;
 
+let context = react.createContext(undefined);
 
-export const useInvalidPreventRemoveError = function useInvalidPreventRemoveError(descriptors) {
-  const obj = Link;
-  const first = Object.keys(obj.usePreventRemoveContext().preventedRoutes)[0];
-  let prop;
-  if (descriptors[first] != null) {
-    const options = tmp2.options;
-    if (options != null) {
-      prop = options.headerBackButtonMenuEnabled;
-    }
+export const AnimatedHeaderHeightContext = context;
+export const useAnimatedHeaderHeight = function useAnimatedHeaderHeight() {
+  context = react.useContext(context);
+  if (undefined === context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Couldn't find the header height. Are you inside a screen in a native stack navigator?");
+    throw error;
+  } else {
+    return context;
   }
-  let name;
-  if (descriptors[first] != null) {
-    const route = tmp2.route;
-    if (route != null) {
-      name = route.name;
-    }
-  }
-  const items = [first, prop, name];
-  const effect = react.useEffect(() => {
-    if (null != first) {
-      const tmp = prop;
-      if (tmp) {
-        const _HermesInternal = HermesInternal;
-        const _console = console;
-        console.error("The screen " + name + " uses 'usePreventRemove' hook alongside 'headerBackButtonMenuEnabled: true', which is not supported. \n\nConsider removing 'headerBackButtonMenuEnabled: true' from " + name + " screen to get rid of this error.");
-      }
-    }
-  }, items);
 };

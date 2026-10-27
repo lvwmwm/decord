@@ -1,11 +1,11 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15086
+// Function ID: 15087
 // Name: SocialLayerStorefrontConfigManager
-// Dependencies: [7214, 10556, 2]
+// Dependencies: [7216, 10559, 2]
 
-// Module 15050 (SocialLayerStorefrontConfigManager)
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10556 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+// Module 15086 (SocialLayerStorefrontConfigManager)
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10559 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 class SocialLayerStorefrontConfigManager extends AutomaticLifecycleManager {

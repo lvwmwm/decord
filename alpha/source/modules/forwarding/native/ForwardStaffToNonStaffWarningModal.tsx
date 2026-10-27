@@ -1,12 +1,12 @@
-// Module ID: 12912
-// Function ID: 12913
+// Module ID: 12921
+// Function ID: 12922
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 558, 576, 1128, 5914, 2]
+// Dependencies: [21, 558, 576, 1125, 5915, 2]
 
-// Module 12912 (ForwardStaffToNonStaffWarningModal)
+// Module 12921 (ForwardStaffToNonStaffWarningModal)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
+import intl5 from "intl" /* 1125 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardSta
   const cResult = obj.c(11);
   ({ onConfirm, onBack } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl5.t.YrV3I9);
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl5.t.MXSMtl);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -42,7 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardSta
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult2 = intl3.string(intl5.t.X7eUJq);
     cResult[2] = stringResult2;
     tmp8 = stringResult2;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardSta
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1128).intl;
+    const intl4 = tmp(1125).intl;
     const stringResult3 = intl4.string(intl5.t["13/7kX"]);
     cResult[5] = stringResult3;
     tmp13 = stringResult3;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardSta
   const obj4 = { title: tmp4, content: tmp5, actions: React3(_false, obj5) };
   obj5 = { children: items };
   items = [tmp10, tmp15];
-  const AlertModal = tmp(5914).AlertModal;
+  const AlertModal = tmp(5915).AlertModal;
   const tmp19 = React2(AlertModal, obj4);
   cResult[8] = tmp10;
   cResult[9] = tmp15;

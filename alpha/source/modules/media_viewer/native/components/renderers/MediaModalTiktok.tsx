@@ -1,7 +1,7 @@
 // Module ID: 8787
 // Function ID: 8788
 // Name: MediaModalTiktok
-// Dependencies: [32, 19, 21, 8788, 558, 576, 6660, 8753, 8754, 8755, 2]
+// Dependencies: [32, 19, 21, 8788, 558, 576, 6661, 8753, 8754, 8755, 2]
 // Exports: createTiktokVideoControls
 
 // Module 8787 (MediaModalTiktok)

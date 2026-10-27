@@ -1,28 +1,28 @@
 // Module ID: 8989
 // Function ID: 8990
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1392, 7875, 21, 4971, 5914, 1128, 7411, 5662, 558, 576, 7018, 6908, 8990, 8972, 6903, 5234, 1202, 8991, 8992, 5039, 6901, 2]
+// Dependencies: [109, 19, 17, 1389, 7876, 21, 4972, 5915, 1125, 7413, 5663, 558, 576, 7020, 6910, 8990, 8972, 6905, 5235, 1199, 8991, 8992, 5040, 6903, 2]
 
 // Module 8989 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import react_native2 from "react-native" /* 5039 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AlertModal from "AlertModal" /* 5914 */;
-import FormCheckbox from "FormCheckbox" /* 6901 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7875 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import react_native2 from "react-native" /* 5040 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import AlertModal from "AlertModal" /* 5915 */;
+import FormCheckbox from "FormCheckbox" /* 6903 */;
+import TableRow2 from "TableRow" /* 6905 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7876 */;
 import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8972 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 8990 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8991 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8992 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     const _Symbol = Symbol;
     const disabled = item.disabled;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1128).intl;
-      const stringResult = intl.string(tmp(1128).t.N86XcP);
+      let intl = tmp(1125).intl;
+      const stringResult = intl.string(tmp(1125).t.N86XcP);
       cResult[0] = stringResult;
       first = stringResult;
     } else {
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         if (cResult[5] !== prop) {
           let obj2 = { style: prop };
           cResult[5] = prop;
-          const tmp11 = closure_10(tmp(7018).CircleXIcon, obj2);
+          const tmp11 = closure_10(tmp(7020).CircleXIcon, obj2);
           class R {
             constructor() {
               if (null != onRemove) {
@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F102295 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F102502 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,13 +147,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F102295 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F102502 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
           }
         }
-        const tmp14 = closure_10(tmp(6908).PressableOpacity, obj3);
+        const tmp14 = closure_10(tmp(6910).PressableOpacity, obj3);
         cResult[7] = item.disabled;
         cResult[8] = tmp7;
         cResult[9] = tmp9;
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F102295 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F102502 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }
@@ -212,7 +212,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
     let obj = {
       disabled: item.disabled,
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(item(1128).t.N86XcP),
+      accessibilityLabel: intl.string(item(1125).t.N86XcP),
       onPress() {
           let id;
           let intl;
@@ -251,10 +251,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(6908).PressableOpacity;
-    intl = item(1128).intl;
+    const PressableOpacity = item(6910).PressableOpacity;
+    intl = item(1125).intl;
     let prop;
-    CircleXIcon = item(7018).CircleXIcon;
+    CircleXIcon = item(7020).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -449,7 +449,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
               }
               if (cResult[16] !== tmp18) {
                 const obj2 = { source: tmp18, size: native.AvatarSizes.SMALL };
-                const Avatar = tmp(1202).Avatar;
+                const Avatar = tmp(1199).Avatar;
                 const tmp24 = authStore(Avatar, obj2);
                 cResult[16] = tmp18;
                 cResult[17] = tmp24;
@@ -545,7 +545,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
       let tmp11 = null;
       if (item.rowType === RowType.OWNER) {
         const obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp4.ownerIcon };
-        const Icon = tmp(1202).Icon;
+        const Icon = tmp(1199).Icon;
         tmp11 = authStore(Icon, obj6);
       }
       cResult[6] = item.rowType;
@@ -596,13 +596,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   const tmp3 = View;
   if (item.rowType === RowType.OWNER) {
     const obj3 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp.ownerIcon };
-    const Icon = tmp5(1202).Icon;
+    const Icon = tmp5(1199).Icon;
     tmp4Result = tmp4(Icon, obj3);
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(6903).TableRow;
-  const Avatar = tmp5(1202).Avatar;
+  const TableRow = tmp5(6905).TableRow;
+  const Avatar = tmp5(1199).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;
   if (user != null) {
@@ -642,7 +642,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyR
     tmp7 = tmp9;
   }
   const obj3 = { source: AssetRegistryDefault2, color: item.colorString, size: native.IconSizes.MEDIUM, style: tmp4.roleIcon };
-  const Icon = tmp(1202).Icon;
+  const Icon = tmp(1199).Icon;
   const tmp6 = authStore(Icon, obj3);
   cResult[0] = item.colorString;
   cResult[1] = tmp4.roleIcon;

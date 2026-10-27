@@ -1,18 +1,10 @@
 // Module ID: 6424
 // Function ID: 6425
 // Name: mod
-// Dependencies: [1333]
+// Dependencies: [6425]
 
 // Module 6424 (mod)
-import _mod1333 from "module_1333" /* 1333 */;
+import mod from "mod" /* 6425 */;
 
 
-export default function mod(arg0, arg1) {
-  const result = arg0 % arg1;
-  let sum = result;
-  const tmp2 = _mod1333;
-  if (result < 0) {
-    sum = result + arg1;
-  }
-  return tmp2(sum);
-};
+export default mod;

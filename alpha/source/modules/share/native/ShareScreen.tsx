@@ -1,26 +1,26 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15183
+// Function ID: 15184
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4827, 4823, 4903, 1087, 12906, 10616, 21, 4971, 587, 1128, 15148, 12907, 15149, 15150, 1267, 9717, 5707, 1384, 8852, 9667, 12942, 2002, 5910, 15151, 15152, 6933, 12917, 1630, 12918, 15153, 2]
+// Dependencies: [5, 32, 19, 17, 4828, 4824, 4904, 1084, 12915, 10619, 21, 4972, 587, 1125, 15184, 12916, 15185, 15186, 1264, 9719, 5708, 1381, 8852, 9669, 12954, 1999, 5911, 15187, 15188, 6935, 12926, 1627, 12927, 15189, 2]
 // Exports: default
 
-// Module 15147 (ShareScreen)
+// Module 15183 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import UserRowConstants from "UserRowConstants" /* 10616 */;
-import ForwardConstants from "ForwardConstants" /* 12906 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15151 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15152 */;
+import intl6 from "intl" /* 1125 */;
+import UserRowConstants from "UserRowConstants" /* 10619 */;
+import ForwardConstants from "ForwardConstants" /* 12915 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15187 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15188 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;

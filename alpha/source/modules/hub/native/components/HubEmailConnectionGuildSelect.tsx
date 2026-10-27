@@ -1,26 +1,26 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 13700
+// Function ID: 13701
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 13663, 21, 4971, 587, 558, 576, 4837, 6883, 8951, 1128, 5234, 1633, 5244, 1202, 1505, 7485, 7146, 13677, 6374, 13672, 7220, 2]
+// Dependencies: [5, 32, 19, 17, 13677, 21, 4972, 587, 558, 576, 4838, 6885, 8951, 1125, 5235, 1630, 5245, 1199, 1502, 7486, 7148, 13691, 6375, 13686, 7222, 2]
 // Exports: default
 
-// Module 13686 (HubEmailConnectionGuildSelect)
+// Module 13700 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
+import intl2 from "intl" /* 1125 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4838 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import GuildIconDefault from "GuildIcon" /* 6885 */;
 import Form from "Form" /* 8951 */;
-import HubConstants from "HubConstants" /* 13663 */;
+import HubConstants from "HubConstants" /* 13677 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp6;
-const native = tmp6(1202);
+const native = tmp6(1199);
 let react = react_mod;
 const View = react_native.View;
 const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
@@ -145,7 +145,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
   const tmp4 = closure_10();
   ({ header, title } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.mOMeiR);
     cResult[0] = stringResult;
     first = stringResult;
@@ -214,7 +214,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
     const _Symbol = Symbol;
     const footerContainer = tmp4.footerContainer;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.G3Zk7V);
       cResult[5] = stringResult;
       tmp8 = stringResult;
@@ -265,7 +265,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
       if (tmp16Result) {
         const obj5 = { style: tmp4.error, children: anyErrorMessage };
         anyErrorMessage = undefined;
-        const LegacyText = tmp(1202).LegacyText;
+        const LegacyText = tmp(1199).LegacyText;
         const tmp16 = metroImportAll;
         if (errors != null) {
           anyErrorMessage = errors.getAnyErrorMessage();

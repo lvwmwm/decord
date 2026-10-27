@@ -1,25 +1,25 @@
-// Module ID: 17680
-// Function ID: 17681
+// Module ID: 17721
+// Function ID: 17722
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4972, 1087, 4820, 21, 4971, 587, 558, 576, 9005, 8691, 573, 1128, 8790, 5234, 5244, 5210, 5265, 2]
+// Dependencies: [32, 19, 17, 4973, 1084, 4821, 21, 4972, 587, 558, 576, 9005, 8691, 573, 1125, 8790, 5235, 5245, 5211, 5266, 2]
 
-// Module 17680 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 17721 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
+import intl6 from "intl" /* 1125 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5266 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8691 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import Constants from "Constants" /* 1087 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
           return closure_4(nativeEvent.nativeEvent.layout.width);
         }
       }
-      const stringResult = obj5.string(guildId(1128).t.gCgirr);
+      const stringResult = obj5.string(guildId(1125).t.gCgirr);
       class C {
         constructor() {
           return useReducedMotion.useReducedMotion;

@@ -1,15 +1,15 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 10785
+// Function ID: 10786
 // Name: IntlLink
-// Dependencies: [19, 21, 4971, 587, 558, 576, 4985, 5660, 1951, 1202, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 4986, 5661, 1948, 1199, 2]
 
-// Module 10782 (IntlLink)
+// Module 10785 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef1951 from "module_1951" /* 1951 */;
-import LinkingDefault from "Linking" /* 5660 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import LinkingDefault from "Linking" /* 5661 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,14 +34,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
   const cResult = obj.c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(4985).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(react.useContext(target(4986).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     let tmp6;
     if (cResult[0] !== target) {
       const fn = function s() {
         const openURL = LinkingDefault.openURL;
         LinkingDefault;
-        const obj = _modDef1951;
+        const obj = _modDef1948;
         return openURL(obj.sanitizeUrl(target));
       };
       cResult[0] = target;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
       }
     }
   }
-  const tmp8 = jsx(tmp(1202).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
+  const tmp8 = jsx(tmp(1199).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
   cResult[2] = str;
   cResult[3] = children;
   cResult[4] = tmp5;
@@ -94,12 +94,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4985).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4986).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1951;
+      const obj = _modDef1948;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
       }
     }
   }
-  return jsx(tmp(1202).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+  return jsx(tmp(1199).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
 });
 const result = size.fileFinishedImporting("intl/native/IntlLink.tsx");
 

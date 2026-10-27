@@ -1,9 +1,9 @@
-// Module ID: 15293
-// Function ID: 15294
+// Module ID: 15329
+// Function ID: 15330
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 558, 576, 1506, 7133, 2]
+// Dependencies: [19, 558, 576, 1503, 7135, 2]
 
-// Module 15293 (useFocusRefOnNavigation)
+// Module 15329 (useFocusRefOnNavigation)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusRe
   inputRef = inputRef.inputRef;
   const enabled = inputRef.enabled;
   dependencyMap = tmp4;
-  const tmpResult = tmp(1506);
+  const tmpResult = tmp(1503);
   const isFocused = tmpResult.useIsFocused();
   if (cResult[0] === (undefined === enabled || enabled)) {
     if (cResult[1] === inputRef) {

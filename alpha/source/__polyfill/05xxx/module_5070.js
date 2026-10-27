@@ -1,7 +1,15 @@
 // Module ID: 5070
 // Function ID: 5071
 // Dependencies: []
+// Exports: callback
 
 // Module 5070
 
-export default { uiViewClassName: "RiveView", supportsRawText: false, bubblingEventTypes: {}, directEventTypes: {}, validAttributes: { artboardName: true, stateMachineName: true, autoPlay: true, file: true, alignment: true, fit: true, layoutScaleFactor: true, dataBind: true, onError: true, hybridRef: true } };
+export const callback = function callback(f) {
+  let tmp = f;
+  if (typeof f === "function") {
+    tmp = { f };
+    const obj = { f };
+  }
+  return tmp;
+};

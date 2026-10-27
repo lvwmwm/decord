@@ -1,52 +1,29 @@
 // Module ID: 1543
 // Function ID: 1544
-// Dependencies: [19, 1544, 1552, 1553]
-// Exports: createNavigatorFactory
+// Dependencies: [19, 21, 1544, 1546]
+// Exports: NavigationProvider
 
 // Module 1543
+import Fragment from "Fragment" /* 21 */;
+import _mod1544 from "module_1544" /* 1544 */;
 import react from "react" /* 19 */;
 
+const jsx = Fragment.jsx;
+let context = react.createContext(undefined);
 
-export const createNavigatorFactory = function createNavigatorFactory(NativeStackNavigator) {
-  let Navigator = NativeStackNavigator;
-  let str = NativeStackNavigator.displayName;
-  if (str == null) {
-    str = NativeStackNavigator.name;
+export const NavigationRouteContext = context;
+export const NamedRouteContextListContext = react.createContext(undefined);
+export const NavigationProvider = function NavigationProvider(route) {
+  let children;
+  route = route.route;
+  ({ navigation, children } = route);
+  context = react.useContext(_mod1544.IsFocusedContext);
+  let tmp5 = null != context;
+  const context1 = react.useContext(_mod1544.FocusedRouteKeyContext);
+  if (tmp5) {
+    tmp5 = !context;
   }
-  if (str == null) {
-    str = "Navigator";
-  }
-  return function createNavigator(config) {
-    Navigator = config;
-    if (null != config) {
-      const obj2 = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group, config };
-      const createComponentForStaticNavigation = Navigator(str[1]).createComponentForStaticNavigation;
-      Navigator(str[1]);
-      Navigator = createComponentForStaticNavigation(obj2, Navigator);
-      return {
-        config,
-        with: (IMAGE_ONLY_ANSWERS) => {
-            config = IMAGE_ONLY_ANSWERS;
-            class WithComponent {
-              constructor() {
-                return <IMAGE_ONLY_ANSWERS Navigator={Navigator} />;
-              }
-            }
-            WithComponent.displayName = "" + Navigator + "With";
-            return {
-              config,
-              getComponent() {
-                return WithComponent;
-              }
-            };
-          },
-        getComponent() {
-            return Navigator;
-          }
-      };
-    } else {
-      const obj = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group };
-      return obj;
-    }
-  };
+  const Provider = context.Provider;
+  const Provider2 = tmp(1546).NavigationContext.Provider;
+  return <Provider value={route}>{null}</Provider>;
 };

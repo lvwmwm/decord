@@ -1,27 +1,27 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10011
+// Function ID: 10012
 // Name: SummaryStore
-// Dependencies: [32, 5190, 9066, 4823, 4845, 6771, 4874, 6704, 1392, 10010, 9067, 504, 11, 1104, 10011, 584, 10012, 12, 2]
+// Dependencies: [32, 5191, 9066, 4824, 4846, 6772, 4875, 6705, 1389, 10012, 9067, 504, 11, 1101, 10013, 584, 10014, 12, 2]
 
-// Module 10009 (SummaryStore)
+// Module 10011 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
+import DurationsDefault from "Durations" /* 1101 */;
 import _mod9067 from "module_9067" /* 9067 */;
-import SummaryConstants from "SummaryConstants" /* 10010 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10011 */;
-import Summary from "Summary" /* 10012 */;
+import SummaryConstants from "SummaryConstants" /* 10012 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10013 */;
+import Summary from "Summary" /* 10014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5190 */;
+import ExperimentStore from "ExperimentStore" /* 5191 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 9066 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

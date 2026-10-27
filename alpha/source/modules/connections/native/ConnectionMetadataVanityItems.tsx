@@ -1,25 +1,25 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 11274
+// Function ID: 11275
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7276, 21, 4971, 587, 1128, 11272, 11273, 558, 576, 12, 1903, 5234, 1202, 7275, 2]
+// Dependencies: [19, 17, 7278, 21, 4972, 587, 1125, 11275, 11276, 558, 576, 12, 1900, 5235, 1199, 7277, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11271 (ConnectionMetadataVanityItems)
+// Module 11274 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import NumberUtils from "NumberUtils" /* 1903 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7275 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11272 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11273 */;
+import intl5 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import NumberUtils from "NumberUtils" /* 1900 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7277 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11275 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11276 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7276 */;
+import Constants from "Constants" /* 7278 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalV
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl5.t.IhXLyx);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -119,7 +119,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
       }
       tmp7 = tmp9;
     }
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj3 = { name: label, value: sum };
     const formatResult = intl2.format(intl5.t.HLoinF, obj3);
     cResult[0] = label;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
         tmp7 = cResult[5];
       }
     }
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj4 = { value: sum };
     const formatResult1 = intl.format(label, obj4);
     cResult[3] = label;
@@ -181,11 +181,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1128).intl;
+    const intl = tmp2(1125).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1128).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1125).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1128).intl;
+    const intl2 = tmp2(1125).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
@@ -383,10 +383,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
         tmp8 = tmp10;
       }
     }
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const format = intl.format;
     const obj3 = { value: tmpResult.getCreatedAtDate(date, locale), name: label };
-    const HLoinF = tmp(1128).t.HLoinF;
+    const HLoinF = tmp(1125).t.HLoinF;
     tmpResult = ConnectionsUtils;
     const formatResult = format(HLoinF, obj3);
     cResult[3] = date;

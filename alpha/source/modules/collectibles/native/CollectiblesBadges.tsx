@@ -1,21 +1,21 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9422
+// Function ID: 9423
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1394, 21, 4971, 587, 558, 576, 1128, 5234, 9424, 8566, 9425, 2]
+// Dependencies: [19, 17, 1391, 21, 4972, 587, 558, 576, 1125, 5235, 9423, 8566, 9424, 2]
 
-// Module 9423 (CollectiblesBadges)
+// Module 9422 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl2 from "intl" /* 1125 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import LockIcon3 from "LockIcon" /* 8566 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9424 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9425 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9423 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9424 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge(sty
     const _Symbol = Symbol;
     const badgeTextUppercase = tmp4.badgeTextUppercase;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t.y2b7CA);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -142,8 +142,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     const LockIcon2 = tmp(8566).LockIcon;
     items1 = [hasOwnProperty(LockIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5234).Text;
-    intl = tmp(1128).intl;
+    const Text = tmp(5235).Text;
+    intl = tmp(1125).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
   } else {
@@ -228,18 +228,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const NitroWheelIcon2 = tmp(9425).NitroWheelIcon;
+    const NitroWheelIcon2 = tmp(9424).NitroWheelIcon;
     items1 = [hasOwnProperty(NitroWheelIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5234).Text;
-    intl = tmp(1128).intl;
+    const Text = tmp(5235).Text;
+    intl = tmp(1125).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
   } else {
     const obj5 = { style: items2, children: hasOwnProperty(NitroWheelIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    NitroWheelIcon = tmp(9425).NitroWheelIcon;
+    NitroWheelIcon = tmp(9424).NitroWheelIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -300,7 +300,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitedTimeB
     const _Symbol = Symbol;
     const badgeTextUppercase = tmp4.badgeTextUppercase;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl2.t["h/uBCR"]);
       cResult[3] = stringResult;
       tmp7 = stringResult;

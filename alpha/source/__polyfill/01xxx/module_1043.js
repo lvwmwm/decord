@@ -1,122 +1,52 @@
 // Module ID: 1043
 // Function ID: 1044
-// Dependencies: [879, 1037, 690, 901, 693]
-// Exports: getCurrentReactNativeTracingIntegration, getReactNativeTracingIntegration, reactNativeTracingIntegration
+// Dependencies: [1037]
+// Exports: addTimeToInitialDisplayFallback, getTimeToInitialDisplayFallback
 
 // Module 1043
-import _mod693 from "module_693" /* 693 */;
-import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 901 */;
-import DEFAULT_NAVIGATION_SPAN_NAME from "DEFAULT_NAVIGATION_SPAN_NAME" /* 1037 */;
-import module_879_mod from "module_879" /* 879 */;
+import AsyncExpiringMap from "AsyncExpiringMap" /* 1037 */;
 
-let module_879;
-const ReactNativeTracing = "ReactNativeTracing";
-const defaultReactNativeTracingOptions = { traceFetch: module_879.isWeb(), traceXHR: true, enableHTTPTimings: true };
-module_879 = module_879_mod;
+let c0;
 
-export const INTEGRATION_NAME = "ReactNativeTracing";
-export { defaultReactNativeTracingOptions };
-export const reactNativeTracingIntegration = () => {
-  let finalTimeout;
-  let idleTimeout;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let obj5;
-  let fn2;
-  let url;
-  let obj2 = { currentRoute: "Array" };
-  let _Object = Object;
-  let fn = obj.beforeStartSpan;
-  const merged = Object.assign(Object.assign({}, url), obj);
-  if (null === fn) {
-    fn = (arg0) => arg0;
-  }
-  let obj3 = { beforeStartSpan: fn, finalTimeoutMs: finalTimeout, idleTimeoutMs: idleTimeout };
-  finalTimeout = obj.finalTimeoutMs;
-  if (null === finalTimeout) {
-    let tmp2 = obj2;
-    const tmp3 = obj5;
-    finalTimeout = obj2(obj5[1]).defaultIdleOptions.finalTimeout;
-  }
-  idleTimeout = obj.idleTimeoutMs;
-  if (null === idleTimeout) {
-    idleTimeout = obj2(obj5[1]).defaultIdleOptions.idleTimeout;
-  }
-  obj5 = assign(merged, obj3);
-  fn2 = obj5.shouldCreateSpanForRequest;
-  const obj4 = obj2(obj5[2]);
-  const devServer = obj4.getDevServer();
-  url = undefined;
-  if (null !== devServer) {
-    if (undefined !== devServer) {
-      url = devServer.url;
-    }
-  }
-  if (undefined !== url) {
-    fn2 = (str) => {
-      let tmp2 = !str.startsWith(url);
-      str.startsWith(url);
-      if (tmp2) {
-        let tmp3Result = !fn2;
-        if (fn2) {
-          tmp3Result = tmp3(str);
-        }
-        tmp2 = tmp3Result;
-      }
-      return tmp2;
-    };
-  }
-  obj5.shouldCreateSpanForRequest = fn2;
-  return {
-    name: fn2,
-    setup(getOptions) {
-      let tracePropagationTargets;
-      const obj = DEFAULT_NAVIGATION_SPAN_NAME;
-      const result = obj.addDefaultOpForSpanFrom(getOptions);
-      obj2 = DEFAULT_NAVIGATION_SPAN_NAME;
-      obj2.addThreadInfoToSpan(getOptions);
-      const obj3 = { traceFetch: obj5.traceFetch, traceXHR: obj5.traceXHR, shouldCreateSpanForRequest: obj5.shouldCreateSpanForRequest, tracePropagationTargets };
-      const instrumentOutgoingRequests = feedbackAsyncIntegration.instrumentOutgoingRequests;
-      feedbackAsyncIntegration;
-      tracePropagationTargets = getOptions.getOptions().tracePropagationTargets;
-      if (!tracePropagationTargets) {
-        let tmp6;
-        const tmpResult = module_879;
-        if (!tmpResult.isWeb()) {
-          const items = [/.*/];
-          tmp6 = items;
-        }
-        tracePropagationTargets = tmp6;
-      }
-      const result1 = instrumentOutgoingRequests(getOptions, obj3);
-    },
-    processEvent(contexts) {
-      let items;
-      const currentRoute = contexts.contexts && obj2.currentRoute;
-      if (currentRoute) {
-        const _Object = Object;
-        const obj = { view_names: items };
-        items = [obj2.currentRoute];
-        contexts.contexts.app = Object.assign(obj, contexts.contexts.app);
-      }
-      return contexts;
-    },
-    options: obj5,
-    state: obj2,
-    setCurrentRoute(componentName) {
-      obj2.currentRoute = componentName;
-    }
-  };
+const asyncExpiringMap = new AsyncExpiringMap.AsyncExpiringMap({ ttl: 60000 });
+
+export const addTimeToInitialDisplayFallback = (arg0, arg1) => {
+  const result = asyncExpiringMap.set(arg0, arg1);
 };
-export const getCurrentReactNativeTracingIntegration = function getCurrentReactNativeTracingIntegration() {
-  const obj = _mod693;
-  const client = obj.getClient();
-  if (client) {
-    return client.getIntegrationByName(ReactNativeTracing);
-  }
-};
-export const getReactNativeTracingIntegration = function getReactNativeTracingIntegration(getIntegrationByName) {
-  return getIntegrationByName.getIntegrationByName(ReactNativeTracing);
+export const getTimeToInitialDisplayFallback = (arg0) => {
+  let closure_0 = arg0;
+  return closure_0(undefined, undefined, undefined, function*(arg0, value) {
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          c0 = 3;
+          const obj = { value: asyncExpiringMap.get(closure_0), done: true };
+          return obj;
+        }
+      } catch (tmp5) {
+        c0 = 3;
+        throw tmp5;
+      }
+    }
+  });
 };

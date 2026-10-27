@@ -1,23 +1,23 @@
-// Module ID: 18727
-// Function ID: 18728
+// Module ID: 18763
+// Function ID: 18764
 // Name: CaptchaUtils
-// Dependencies: [109, 19, 17, 2068, 1207, 1087, 21, 1267, 6468, 6473, 558, 576, 504, 1281, 1351, 6466, 18728, 6672, 18729, 2002, 2]
+// Dependencies: [109, 19, 17, 2065, 1204, 1084, 21, 1264, 6469, 6474, 558, 576, 504, 1278, 1348, 6467, 18764, 6673, 18765, 1999, 2]
 
-// Module 18727 (CaptchaUtils)
+// Module 18763 (CaptchaUtils)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import V8APIError from "V8APIError" /* 1351 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6466 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6468 */;
-import MetricEvents from "MetricEvents" /* 6473 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import _modDef18728 from "module_18728" /* 18728 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import V8APIError from "V8APIError" /* 1348 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6467 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6469 */;
+import MetricEvents from "MetricEvents" /* 6474 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import _modDef18764 from "module_18764" /* 18764 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import Constants from "Constants" /* 1087 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let obj = {
             if (data !== SharedCaptchaUtils.CaptchaError.CANCEL) {
               if (data !== SharedCaptchaUtils.CaptchaError.ERROR) {
                 if (data !== SharedCaptchaUtils.CaptchaError.EXPIRED) {
-                  const HCAPTCHA2 = tmp18(1351).CaptchaTypes.HCAPTCHA;
+                  const HCAPTCHA2 = tmp18(1348).CaptchaTypes.HCAPTCHA;
                   const obj2 = { captcha_event_name: "verify", captcha_service: HCAPTCHA2, sitekey, captcha_flow_key };
                   const obj6 = AnalyticsUtilsDefault;
                   obj6.track(unpackModuleId.CAPTCHA_EVENT, obj2);
@@ -108,7 +108,7 @@ let obj = {
                 }
               }
             }
-            const HCAPTCHA = tmp18(1351).CaptchaTypes.HCAPTCHA;
+            const HCAPTCHA = tmp18(1348).CaptchaTypes.HCAPTCHA;
             const obj5 = { captcha_event_name: data, captcha_service: HCAPTCHA, sitekey, captcha_flow_key };
             const obj = AnalyticsUtilsDefault;
             obj.track(unpackModuleId.CAPTCHA_EVENT, obj5);
@@ -309,7 +309,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
       if (data !== SharedCaptchaUtils.CaptchaError.CANCEL) {
         if (data !== SharedCaptchaUtils.CaptchaError.ERROR) {
           if (data !== SharedCaptchaUtils.CaptchaError.EXPIRED) {
-            const HCAPTCHA2 = tmp11(1351).CaptchaTypes.HCAPTCHA;
+            const HCAPTCHA2 = tmp11(1348).CaptchaTypes.HCAPTCHA;
             const obj2 = { captcha_event_name: "verify", captcha_service: HCAPTCHA2, sitekey, captcha_flow_key };
             const obj6 = AnalyticsUtilsDefault;
             obj6.track(unpackModuleId.CAPTCHA_EVENT, obj2);
@@ -325,7 +325,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
           }
         }
       }
-      const HCAPTCHA = tmp11(1351).CaptchaTypes.HCAPTCHA;
+      const HCAPTCHA = tmp11(1348).CaptchaTypes.HCAPTCHA;
       const obj5 = { captcha_event_name: data, captcha_service: HCAPTCHA, sitekey, captcha_flow_key };
       const obj = AnalyticsUtilsDefault;
       obj.track(unpackModuleId.CAPTCHA_EVENT, obj5);
@@ -357,7 +357,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
   let obj = siteKey(504);
   let items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = siteKey(1281);
+  let obj2 = siteKey(1278);
   const v4Result = obj2.v4();
   let c3 = v4Result;
   let items1 = [v4Result, siteKey];
@@ -373,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
     items = ["event_name:" + "initial-load", "captcha_service:" + HCAPTCHA];
     increment(obj3);
   }, items1);
-  _modDef18728;
+  _modDef18764;
   const merged1 = Object.assign(merged);
   return <tmp5 siteKey={siteKey} onMessage={function onMessage(nativeEvent) {
     let items;
@@ -383,7 +383,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
       if (data !== SharedCaptchaUtils.CaptchaError.CANCEL) {
         if (data !== SharedCaptchaUtils.CaptchaError.ERROR) {
           if (data !== SharedCaptchaUtils.CaptchaError.EXPIRED) {
-            const HCAPTCHA2 = tmp11(1351).CaptchaTypes.HCAPTCHA;
+            const HCAPTCHA2 = tmp11(1348).CaptchaTypes.HCAPTCHA;
             const obj2 = { captcha_event_name: "verify", captcha_service: HCAPTCHA2, sitekey: siteKey, captcha_flow_key };
             const obj6 = AnalyticsUtilsDefault;
             obj6.track(unpackModuleId.CAPTCHA_EVENT, obj2);
@@ -399,7 +399,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
           }
         }
       }
-      const HCAPTCHA = tmp11(1351).CaptchaTypes.HCAPTCHA;
+      const HCAPTCHA = tmp11(1348).CaptchaTypes.HCAPTCHA;
       const obj5 = { captcha_event_name: data, captcha_service: HCAPTCHA, sitekey: siteKey, captcha_flow_key };
       const obj = AnalyticsUtilsDefault;
       obj.track(unpackModuleId.CAPTCHA_EVENT, obj5);

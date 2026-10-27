@@ -1,11 +1,11 @@
 // Module ID: 8687
 // Function ID: 8688
 // Name: UserProfilePerformanceAnalyticsExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
 // Module 8687 (UserProfilePerformanceAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { 0: { performanceAnalyticsEnabled: false }, 1: { performanceAnalyticsEnabled: true } } };

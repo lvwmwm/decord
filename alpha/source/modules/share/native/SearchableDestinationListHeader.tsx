@@ -1,18 +1,18 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12926
+// Function ID: 12927
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4971, 587, 558, 576, 1633, 1506, 1384, 9699, 6924, 6933, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 1630, 1503, 1381, 9701, 6926, 6935, 2]
 
-// Module 12917 (SearchableDestinationListHeader)
+// Module 12926 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Link from "Link" /* 1506 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Link from "Link" /* 1503 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import HeaderShared from "HeaderShared" /* 9701 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,9 +39,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
   subtitleColor = subtitleColor.subtitleColor;
   ({ headerRight, headerStatusBarHeight, onClose } = subtitleColor);
   const tmp4 = closure_5();
-  const top = subtitleColor(1633)().top;
-  const context = react.useContext(subtitle(1506).NavigationRouteContext);
-  const obj2 = subtitle(1384);
+  const top = subtitleColor(1630)().top;
+  const context = react.useContext(subtitle(1503).NavigationRouteContext);
+  const obj2 = subtitle(1381);
   let isIOSResult = obj2.isIOS();
   const tmp5 = subtitleColor;
   if (isIOSResult) {
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     if (cResult[3] !== onClose) {
       let headerCloseButton;
       if (null != onClose) {
-        const tmpResult = subtitle(6924);
+        const tmpResult = subtitle(6926);
         headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       }
       cResult[3] = onClose;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
       }
     }
     ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp4);
-    const tmp17 = jsx(subtitle(6933).Header, { headerStyle: tmp4.header, title, headerTitle: tmp10, headerTitleAlign: "center", headerLeft: tmp11, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight });
+    const tmp17 = jsx(subtitle(6935).Header, { headerStyle: tmp4.header, title, headerTitle: tmp10, headerTitleAlign: "center", headerLeft: tmp11, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight });
     cResult[5] = headerRight;
     cResult[6] = tmp4.header;
     cResult[7] = tmp4.headerLeftContainer;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(6933).Header;
+  const Header = tmp4(6935).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;

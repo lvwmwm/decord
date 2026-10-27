@@ -1,13 +1,13 @@
-// Module ID: 7156
-// Function ID: 7157
+// Module ID: 7158
+// Function ID: 7159
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7157, 4968, 558, 576, 2]
+// Dependencies: [19, 17, 7159, 4969, 558, 576, 2]
 
-// Module 7156 (useFastestListPropsPlaceholder)
+// Module 7158 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4968 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7157 */;
+import ColorUtils from "ColorUtils" /* 4969 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7159 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "k", borderBottomRightRadius: "substring_i", divider: "ind", dividerColor: "Map", dividerPaddingLeft: "message", dividerPaddingRight: "body", placeholderShape: "substring_i", placeholderShapeColor: "ref", placeholderShapeCount: "analyticsLocations", placeholderShapeGap: "substring_i", placeholderShapePaddingHorizontal: "ind", placeholderShapePaddingVertical: "Map", placeholderFeedBackgroundColor: "message", placeholderFeedColor: "body", placeholderFeedLabelPadding: "substring_i", placeholderFeedLabelPaddingInnerRatio: "ref", placeholderFeedLabelSize: "analyticsLocations", placeholderFeedLabelSecondarySize: "useRef", placeholderFeedPadding: "runOnJS", placeholderFeedShape: "channel_id", placeholderFeedShapeSize: "ddd", placeholderType: NONE, width: "numpad /", height: "SETTINGS_TYPING_INDICATOR", verticalAlignment: "onLoadingStart", horizontalAlignment: "STREAMER_FLAMES" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "op", borderTopRightRadius: "code", borderBottomLeftRadius: "exports", borderBottomRightRadius: "context", divider: "fileFinishedImporting", dividerColor: "context", dividerPaddingLeft: "withSpring", dividerPaddingRight: "HermesInternal", placeholderShape: "WireType", placeholderShapeColor: "t", placeholderShapeCount: "radii", placeholderShapeGap: "start", placeholderShapePaddingHorizontal: "PX_16", placeholderShapePaddingVertical: "formatToPlainString", placeholderFeedBackgroundColor: "Number", placeholderFeedColor: "formatToPlainString", placeholderFeedLabelPadding: "Object", placeholderFeedLabelPaddingInnerRatio: "formatToPlainString", placeholderFeedLabelSize: "length", placeholderFeedLabelSecondarySize: "nm", placeholderFeedPadding: "substring_i", placeholderFeedShape: "Object", placeholderFeedShapeSize: "apply", placeholderType: NONE, width: 256288806806630140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027941951255810712, verticalAlignment: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012780487820385914, horizontalAlignment: 39352503571782300000 };
   if (null == listFooter) {
     return size;
   } else {

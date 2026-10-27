@@ -1,23 +1,23 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18633
+// Function ID: 18634
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7406, 9245, 9246, 1128, 14180, 6903, 18598, 9164, 2]
+// Dependencies: [19, 21, 558, 576, 7408, 9245, 9246, 1125, 14207, 6905, 18634, 9164, 2]
 
-// Module 18597 (VoicePanelGamesSection)
+// Module 18633 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import useGame from "useGame" /* 7406 */;
+import intl3 from "intl" /* 1125 */;
+import useGame from "useGame" /* 7408 */;
 import FormComponents from "FormComponents" /* 9164 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18598 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(14180);
+const GameActivityIconDefault = tmp5(14207);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {
@@ -62,8 +62,8 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1128).intl;
-      name = intl.string(tmp(1128).t.GIWFlF);
+      const intl = tmp(1125).intl;
+      name = intl.string(tmp(1125).t.GIWFlF);
     }
     if (cResult[6] !== data) {
       const tmp13 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
@@ -85,13 +85,13 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
       } else {
         tmp17 = cResult[9];
       }
-      const TableRow = tmp(6903).TableRow;
-      const intl2 = tmp(1128).intl;
+      const TableRow = tmp(6905).TableRow;
+      const intl2 = tmp(1125).intl;
       const obj6 = { gameName: name };
       tmp16 = <TableRow icon={tmp11} label={name} arrow onPress={tmp17} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
       tmp15 = forResult;
     } else {
-      tmp15 = jsx(tmp(6903).TableRow, { icon: tmp11, label: name, disabled: true });
+      tmp15 = jsx(tmp(6905).TableRow, { icon: tmp11, label: name, disabled: true });
     }
     cResult[2] = data;
     cResult[3] = tmp6;
@@ -118,11 +118,11 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1128).intl;
-      name = intl.string(tmp(1128).t.GIWFlF);
+      const intl = tmp(1125).intl;
+      name = intl.string(tmp(1125).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6903).TableRow;
+    const TableRow = tmp(6905).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };
@@ -138,7 +138,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
         accessibilityRole: "button",
         accessibilityLabel: intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)
       };
-      intl2 = tmp(1128).intl;
+      intl2 = tmp(1125).intl;
       obj6 = { gameName: name };
     }
     return tmp6(TableRow, obj5);
@@ -160,7 +160,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp9;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl3.t.crRMpG);
       cResult[0] = stringResult;
       first = stringResult;

@@ -1,20 +1,20 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 11703
+// Function ID: 11704
 // Name: SpeakerTile
-// Dependencies: [19, 17, 6772, 5632, 21, 4971, 587, 4968, 11702, 558, 576, 1499, 8691, 504, 7878, 11703, 6908, 1128, 8739, 1202, 11705, 11707, 7062, 5234, 2]
+// Dependencies: [19, 17, 6773, 5633, 21, 4972, 587, 4969, 11704, 558, 576, 1496, 8691, 504, 7879, 11705, 6910, 1125, 8739, 1199, 11707, 11709, 7064, 5235, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 11701 (SpeakerTile)
+// Module 11703 (SpeakerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import CallConstants from "CallConstants" /* 5632 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
-import StageTileTypes from "StageTileTypes" /* 11702 */;
+import CallConstants from "CallConstants" /* 5633 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7879 */;
+import StageTileTypes from "StageTileTypes" /* 11704 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import ColorUtils_mod from "ColorUtils" /* 4968 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import ColorUtils_mod from "ColorUtils" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14918
+// Function ID: 14919
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1394, 21, 4971, 4968, 587, 558, 576, 2053, 1128, 1202, 2]
+// Dependencies: [19, 17, 1391, 21, 4972, 4969, 587, 558, 576, 2050, 1125, 1199, 2]
 // Exports: default
 
-// Module 14882 (renderPremiumButtonText)
+// Module 14918 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import ColorUtils_mod from "ColorUtils" /* 4968 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import ColorUtils_mod from "ColorUtils" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const text = isGift.text;
   const tmp4 = closure_9();
   if (cResult[0] !== basePlanId) {
-    let obj2 = isGift(2053);
+    let obj2 = isGift(2050);
     const interval = obj2.getInterval(basePlanId);
     cResult[0] = basePlanId;
     cResult[1] = interval;
@@ -146,7 +146,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         }
                         let tmp32 = null;
                         if (null != combined) {
-                          let obj4 = { style: tmp4.discount, children: closure_7(isCurrentPlan(1202).LegacyText, obj5) };
+                          let obj4 = { style: tmp4.discount, children: closure_7(isCurrentPlan(1199).LegacyText, obj5) };
                           obj5 = { style, numberOfLines: 1, children: combined };
                           tmp32 = closure_7(intervalType, obj4);
                         }
@@ -177,11 +177,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
           tmp13Result = tmp13();
         }
         const premiumText = tmp4.premiumText;
-        const LegacyText = tmp(1202).LegacyText;
-        let intl = tmp(1128).intl;
+        const LegacyText = tmp(1199).LegacyText;
+        let intl = tmp(1125).intl;
         let formatToPlainString = intl.formatToPlainString;
         let title1;
-        const E0lS2r = tmp(1128).t.E0lS2r;
+        const E0lS2r = tmp(1125).t.E0lS2r;
         if (product != null) {
           title1 = product.title;
         }
@@ -235,9 +235,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       const formatToPlainString = intl.formatToPlainString;
       if (isGift) {
         const obj2 = { price: priceString };
-        formatToPlainStringResult = formatToPlainString(tmp5(1128).t.FIjgMp, obj2);
+        formatToPlainStringResult = formatToPlainString(tmp5(1125).t.FIjgMp, obj2);
       } else {
-        const t2 = tmp5(1128).t;
+        const t2 = tmp5(1125).t;
         const obj3 = { price: priceString };
         formatToPlainStringResult = formatToPlainString(isCurrentPlan ? t2.V6iX43 : t2.AbOLNu, obj3);
       }
@@ -247,9 +247,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       const formatToPlainString2 = intl2.formatToPlainString;
       if (isGift) {
         const obj4 = { price: priceString };
-        formatToPlainString2Result = formatToPlainString2(tmp10(1128).t.rm53bV, obj4);
+        formatToPlainString2Result = formatToPlainString2(tmp10(1125).t.rm53bV, obj4);
       } else {
-        const t = tmp10(1128).t;
+        const t = tmp10(1125).t;
         const obj = { price: priceString };
         formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.dFbQCa : t["rS8FA+"], obj);
       }

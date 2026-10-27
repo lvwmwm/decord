@@ -1,9 +1,9 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 10031
+// Function ID: 10032
 // Name: useNavigatorBackHandler
-// Dependencies: [19, 558, 576, 1505, 1384, 2]
+// Dependencies: [19, 558, 576, 1502, 1381, 2]
 
-// Module 10029 (useNavigatorBackHandler)
+// Module 10031 (useNavigatorBackHandler)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

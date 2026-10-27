@@ -1,11 +1,11 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 13557
+// Function ID: 13558
 // Name: getMutualFriendsLabel
-// Dependencies: [1128, 2]
+// Dependencies: [1125, 2]
 // Exports: default
 
-// Module 13543 (getMutualFriendsLabel)
-import intl4 from "intl" /* 1128 */;
+// Module 13557 (getMutualFriendsLabel)
+import intl4 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/getMutualFriendsLabel.tsx");

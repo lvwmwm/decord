@@ -1,11 +1,11 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12168
+// Function ID: 12169
 // Name: ConjureAttachmentTypes
-// Dependencies: [6379, 2]
+// Dependencies: [6380, 2]
 // Exports: conjureAttachmentLimit, formatConjureAttachmentLimit, isConjureAttachmentWithinLimit
 
-// Module 12162 (ConjureAttachmentTypes)
-import FileSizeUtils from "FileSizeUtils" /* 6379 */;
+// Module 12168 (ConjureAttachmentTypes)
+import FileSizeUtils from "FileSizeUtils" /* 6380 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["image/png", "image/jpeg", "image/gif", "image/webp"]);

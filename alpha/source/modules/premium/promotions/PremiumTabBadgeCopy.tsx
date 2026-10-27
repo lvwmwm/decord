@@ -1,12 +1,12 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16315
+// Function ID: 16316
 // Name: PremiumTabBadgeCopy
-// Dependencies: [1128, 16278, 2]
+// Dependencies: [1125, 16316, 2]
 // Exports: getPremiumTabBadgeCopy
 
-// Module 16277 (PremiumTabBadgeCopy)
-import intl from "intl" /* 1128 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 16278 */;
+// Module 16315 (PremiumTabBadgeCopy)
+import intl from "intl" /* 1125 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 16316 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/promotions/PremiumTabBadgeCopy.tsx");
@@ -21,7 +21,7 @@ export const getPremiumTabBadgeCopy = function getPremiumTabBadgeCopy(promotionM
     const result = obj3.formatMarketingPlainString(premiumTab.badgeLabel, formatVariableValues);
     const tmp5 = require;
     if (result.ok) {
-      const tmp5Result = tmp5(16278);
+      const tmp5Result = tmp5(16316);
       const result1 = tmp5Result.formatMarketingPlainString(premiumTab.acknowledgedBadgeLabel, formatVariableValues);
       let tmp3 = null;
       if (result1.ok) {

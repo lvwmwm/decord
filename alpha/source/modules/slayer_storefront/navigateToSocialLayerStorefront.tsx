@@ -1,17 +1,17 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14772
+// Function ID: 14773
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 4845, 7332, 1087, 10556, 7330, 1114, 7448, 8866, 2]
+// Dependencies: [5, 4846, 7334, 1084, 10559, 7332, 1111, 7449, 8866, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 14736 (navigateToSocialLayerStorefront)
-import router_utils from "router_utils" /* 1114 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7330 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10556 */;
+// Module 14772 (navigateToSocialLayerStorefront)
+import router_utils from "router_utils" /* 1111 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7332 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10559 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7332 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7334 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

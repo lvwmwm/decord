@@ -1,21 +1,21 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17606
+// Function ID: 17607
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 5002, 1087, 558, 576, 10845, 4848, 1114, 1128, 3412, 2]
+// Dependencies: [19, 5003, 1084, 558, 576, 10848, 4849, 1111, 1125, 3413, 2]
 
-// Module 17565 (useFavoritesGuildHideAction)
+// Module 17606 (useFavoritesGuildHideAction)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import _modDef3412 from "module_3412" /* 3412 */;
-import FavoritesUtils from "FavoritesUtils" /* 4848 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10845 */;
+import Constants from "Constants" /* 1084 */;
+import _modDef3413 from "module_3413" /* 3413 */;
+import FavoritesUtils from "FavoritesUtils" /* 4849 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10848 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl3 = tmp(1128);
+const intl3 = tmp(1125);
 const Routes = Constants.Routes;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildHideAction() {
   let first;
@@ -45,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { label: intl.string(_modDef3412["8FO0y9"]), subLabel: intl2.string(_modDef3412.FaHxWl), perform: first };
+    let obj2 = { label: intl.string(_modDef3413["8FO0y9"]), subLabel: intl2.string(_modDef3413.FaHxWl), perform: first };
     intl = intl3.intl;
     intl2 = intl3.intl;
     cResult[1] = obj2;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   let guildId;
   let intl;
   let intl2;
-  let obj = { label: intl.string(_modDef3412["8FO0y9"]), subLabel: intl2.string(_modDef3412.FaHxWl), perform: callback };
+  let obj = { label: intl.string(_modDef3413["8FO0y9"]), subLabel: intl2.string(_modDef3413.FaHxWl), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesActionCreators;
     const result = obj.setFavoritesGuildVisibility(false, "server_context_menu");

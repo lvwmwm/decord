@@ -1,22 +1,22 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 17719
+// Function ID: 17720
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1087, 4820, 21, 4971, 558, 576, 9005, 1128, 5234, 5669, 17679, 5244, 5265, 2]
+// Dependencies: [19, 17, 1084, 4821, 21, 4972, 558, 576, 9005, 1125, 5235, 5670, 17720, 5245, 5266, 2]
 
-// Module 17678 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17719 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import FastImageDefault from "FastImage" /* 5669 */;
+import Constants from "Constants" /* 1084 */;
+import intl5 from "intl" /* 1125 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5266 */;
+import FastImageDefault from "FastImage" /* 5670 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17679 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17720 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult = obj2.string(guildId(1128).t["v+Jm6X"]);
+      const stringResult = obj2.string(guildId(1125).t["v+Jm6X"]);
       cResult[5] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -88,8 +88,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp8 };
       cResult[6] = tmp4.title;
-      cResult[7] = closure_6(guildId(5234).Text, obj3);
-      const tmp11 = closure_6(guildId(5234).Text, obj3);
+      cResult[7] = closure_6(guildId(5235).Text, obj3);
+      const tmp11 = closure_6(guildId(5235).Text, obj3);
     } else {
       class N {
         constructor() {
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult1 = obj4.string(guildId(1128).t.kUUFbG);
+      const stringResult1 = obj4.string(guildId(1125).t.kUUFbG);
       cResult[8] = stringResult1;
       tmp12 = stringResult1;
     } else {
@@ -123,8 +123,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj5 = { style: description, accessibilityRole: "text", variant: "text-sm/medium", color: "text-default", children: tmp12 };
       cResult[9] = tmp4.description;
-      cResult[10] = closure_6(guildId(5234).Text, obj5);
-      const tmp15 = closure_6(guildId(5234).Text, obj5);
+      cResult[10] = closure_6(guildId(5235).Text, obj5);
+      const tmp15 = closure_6(guildId(5235).Text, obj5);
     } else {
       class N {
         constructor() {
@@ -138,8 +138,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17679) };
-      const tmp18 = markAsDismissed(5669);
+      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17720) };
+      const tmp18 = markAsDismissed(5670);
       cResult[11] = tmp4.image;
       cResult[12] = closure_6(tmp18, obj6);
       const tmp19 = closure_6(tmp18, obj6);
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult2 = obj7.string(guildId(1128).t.OgQQbG);
+      const stringResult2 = obj7.string(guildId(1125).t.OgQQbG);
       cResult[13] = stringResult2;
       tmp20 = stringResult2;
     } else {
@@ -175,8 +175,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj8 = { onPress: tmp5, text: tmp20 };
       cResult[14] = tmp5;
-      cResult[15] = closure_6(guildId(5244).Button, obj8);
-      const tmp23 = closure_6(guildId(5244).Button, obj8);
+      cResult[15] = closure_6(guildId(5245).Button, obj8);
+      const tmp23 = closure_6(guildId(5245).Button, obj8);
     } else {
       class N {
         constructor() {
@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const stringResult3 = obj9.string(guildId(1128).t.WAI6xu);
+      const stringResult3 = obj9.string(guildId(1125).t.WAI6xu);
       cResult[18] = stringResult3;
       tmp25 = stringResult3;
     } else {
@@ -225,8 +225,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj10 = { onPress: tmp24, text: tmp25, variant: "secondary" };
       cResult[19] = tmp24;
-      cResult[20] = closure_6(guildId(5244).Button, obj10);
-      const tmp28 = closure_6(guildId(5244).Button, obj10);
+      cResult[20] = closure_6(guildId(5245).Button, obj10);
+      const tmp28 = closure_6(guildId(5245).Button, obj10);
     } else {
       class A {
         constructor() {

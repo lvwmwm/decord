@@ -1,11 +1,11 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7335
+// Function ID: 7336
 // Name: SocialLayerStorefrontConstants
-// Dependencies: [1404, 2]
+// Dependencies: [1401, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 7333 (SocialLayerStorefrontConstants)
-import UserStoreConstants from "UserStoreConstants" /* 1404 */;
+// Module 7335 (SocialLayerStorefrontConstants)
+import UserStoreConstants from "UserStoreConstants" /* 1401 */;
 import size from "module_2" /* 2 */;
 
 const Environments = UserStoreConstants.Environments;
@@ -18,6 +18,7 @@ if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   tmp2 = null;
 }
 const re0 = /^\/(?:channels\/\d+\/)?game-shop(?:\/|$)/;
+const set = new Set(["1560340689907089505", "1560711732412940429", "1560711810007699506"]);
 const result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
 
 export const STOREFRONT_MARKETING_GUILD_ID = str;
@@ -27,6 +28,7 @@ export const SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL_TYPE = "Social Layer Gift Code C
 export const SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_TYPE = "Social Layer Storefront Product Details Modal";
 export const MARVEL_RIVALS_APPLICATION_ID = "1346069614634864772";
 export const RUST_APPLICATION_ID = "1288512934112264234";
+export const BLOONS_TD6_SPLIT_TENDER_COUPON_SKU_IDS = set;
 export const SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM = 14;
 export const SOCIAL_LAYER_COMMERCE_PARTNER_DOCUMENTATION_URL = "https://docs.discord.com/partners/commerce/overview";
 export const getChannelsGameShopPrefix = function getChannelsGameShopPrefix(arg0) {

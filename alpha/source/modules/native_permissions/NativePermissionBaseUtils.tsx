@@ -1,14 +1,14 @@
-// Module ID: 7887
-// Function ID: 7888
+// Module ID: 7888
+// Function ID: 7889
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 7888, 7868, 1087, 1267, 7889, 1128, 2]
+// Dependencies: [5, 7889, 7869, 1084, 1264, 7890, 1125, 2]
 
-// Module 7887 (NativePermissionBaseUtils)
-import Constants from "Constants" /* 1087 */;
-import intl14 from "intl" /* 1128 */;
+// Module 7888 (NativePermissionBaseUtils)
+import Constants from "Constants" /* 1084 */;
+import intl14 from "intl" /* 1125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 7888 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
+import NativePermissionStore from "NativePermissionStore" /* 7889 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7869 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -109,9 +109,9 @@ class NativePermissionBaseUtils {
         cancelText: intl12.string(intl14.t["ETE/oC"]),
         confirmText: intl13.string(intl14.t["XgZk+u"])
       };
-      intl11 = tmp(1128).intl;
-      intl12 = tmp(1128).intl;
-      intl13 = tmp(1128).intl;
+      intl11 = tmp(1125).intl;
+      intl12 = tmp(1125).intl;
+      intl13 = tmp(1125).intl;
       openAlertModal(obj2);
     }
   }

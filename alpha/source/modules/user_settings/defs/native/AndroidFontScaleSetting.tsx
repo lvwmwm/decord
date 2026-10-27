@@ -1,21 +1,21 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16712
+// Function ID: 16713
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 16622, 1097, 8332, 21, 558, 576, 1274, 16671, 11157, 11209, 1128, 1384, 2]
+// Dependencies: [19, 16664, 1094, 8331, 21, 558, 576, 1271, 16713, 11160, 11212, 1125, 1381, 2]
 
-// Module 16670 (AndroidFontScaleSetting)
+// Module 16712 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import intl2 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11157 */;
-import FontScaleStore from "FontScaleStore" /* 16622 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16671 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
+import intl2 from "intl" /* 1125 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11160 */;
+import FontScaleStore from "FontScaleStore" /* 16664 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16713 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 function formatFontScale(arg0) {

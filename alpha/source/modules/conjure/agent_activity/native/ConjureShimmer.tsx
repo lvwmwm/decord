@@ -1,18 +1,18 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12335
+// Function ID: 12336
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 4972, 21, 4971, 558, 576, 504, 5052, 5206, 683, 6966, 5258, 2]
+// Dependencies: [32, 19, 17, 4973, 21, 4972, 558, 576, 504, 5053, 5207, 683, 6968, 5259, 2]
 
-// Module 12329 (ConjureShimmer)
+// Module 12335 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
                 }
                 obj6 = { style: closure_5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
                 obj7 = { children: renderFace() };
-                tmp32 = require("module_6966");
+                tmp32 = require("module_6968");
                 obj8 = { style: items1, children: closure_8(require("LinearGradient"), obj10) };
                 items1 = [tmp4.band, , ];
                 const obj9 = { width: result };
@@ -410,7 +410,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
   const tmp5 = sharedValue(live.useState(0), 2);
   const width = tmp5[0];
   dependencyMap = tmp5[1];
-  const obj3 = tint(5052);
+  const obj3 = tint(5053);
   sharedValue = obj3.useSharedValue(0);
   const tmp2 = tint;
   if (live) {
@@ -457,7 +457,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
     items[4] = cssResult;
     return items;
   }, items2);
-  const tmp2Result = tmp2(5052);
+  const tmp2Result = tmp2(5053);
   class R {
     constructor() {
       let items;
@@ -492,13 +492,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(6966);
-    obj8 = { style: items4, children: closure_8(width(5258), obj10) };
+    tmp18 = width(6968);
+    obj8 = { style: items4, children: closure_8(width(5259), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;
     items4[2] = animatedStyle;
-    View = width(5052).View;
+    View = width(5053).View;
     obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp14 = closure_8(tmp13, obj5);
   }

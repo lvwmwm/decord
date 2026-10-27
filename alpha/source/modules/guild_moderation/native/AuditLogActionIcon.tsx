@@ -1,40 +1,40 @@
-// Module ID: 19055
-// Function ID: 19056
+// Module ID: 19093
+// Function ID: 19094
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 19050, 1087, 21, 4971, 587, 19056, 18992, 9350, 5686, 16249, 5678, 9971, 8560, 18193, 8568, 9047, 8544, 13457, 11167, 13452, 19058, 13965, 8542, 12240, 19060, 19061, 19062, 558, 576, 1202, 2]
+// Dependencies: [19, 17, 19088, 1084, 21, 4972, 587, 19094, 19030, 9349, 5687, 16287, 5679, 9973, 8560, 18227, 8568, 9047, 8544, 13471, 11170, 13466, 19096, 13979, 8542, 12155, 19098, 19099, 19100, 558, 576, 1199, 2]
 
-// Module 19055 (AuditLogActionIcon)
+// Module 19093 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import LinkIcon from "LinkIcon" /* 5678 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
+import native from "native" /* 1199 */;
+import LinkIcon from "LinkIcon" /* 5679 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5687 */;
 import ChatIcon from "ChatIcon" /* 8542 */;
 import ThreadIcon from "ThreadIcon" /* 8544 */;
 import GroupIcon from "GroupIcon" /* 8560 */;
 import StageIcon from "StageIcon" /* 8568 */;
 import CalendarIcon from "CalendarIcon" /* 9047 */;
-import ReactionIcon from "ReactionIcon" /* 9350 */;
-import FlagIcon from "FlagIcon" /* 9971 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 11167 */;
-import RobotIcon2 from "RobotIcon" /* 12240 */;
-import SoundboardIcon from "SoundboardIcon" /* 13452 */;
-import StickerIcon from "StickerIcon" /* 13457 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13965 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16249 */;
-import WebhookIcon from "WebhookIcon" /* 18193 */;
-import ChannelListIcon from "ChannelListIcon" /* 18992 */;
-import ListBulletsIcon from "ListBulletsIcon" /* 19056 */;
-import HomeIcon from "HomeIcon" /* 19058 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19060 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19061 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19062 */;
+import ReactionIcon from "ReactionIcon" /* 9349 */;
+import FlagIcon from "FlagIcon" /* 9973 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 11170 */;
+import RobotIcon2 from "RobotIcon" /* 12155 */;
+import SoundboardIcon from "SoundboardIcon" /* 13466 */;
+import StickerIcon from "StickerIcon" /* 13471 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 13979 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16287 */;
+import WebhookIcon from "WebhookIcon" /* 18227 */;
+import ChannelListIcon from "ChannelListIcon" /* 19030 */;
+import ListBulletsIcon from "ListBulletsIcon" /* 19094 */;
+import HomeIcon from "HomeIcon" /* 19096 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19098 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19099 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19100 */;
 import react from "react" /* 19 */;
-import AuditLogRecord from "AuditLogRecord" /* 19050 */;
-import Constants from "Constants" /* 1087 */;
+import AuditLogRecord from "AuditLogRecord" /* 19088 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
           }
         }
       }
-      RobotIcon = tmp(12240).RobotIcon;
+      RobotIcon = tmp(12155).RobotIcon;
     }
     cResult[2] = action;
     cResult[3] = RobotIcon;

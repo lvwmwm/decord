@@ -1,23 +1,23 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7722
+// Function ID: 7723
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6496, 4827, 502, 4823, 4877, 4845, 4903, 4824, 3, 4849, 7722, 1099, 4912, 2]
+// Dependencies: [32, 5, 6497, 4828, 502, 4824, 4878, 4846, 4904, 4825, 3, 4850, 7723, 1096, 4913, 2]
 
-// Module 7721 (GuildBasicChannels)
+// Module 7722 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import ChannelStore2 from "ChannelStore" /* 4823 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4849 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4912 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
+import ChannelStore2 from "ChannelStore" /* 4824 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4850 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4913 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4824 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -332,7 +332,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "Array" }, done: true };
+                              return { value: { v: "rejectWithError" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;

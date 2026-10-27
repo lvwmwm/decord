@@ -1,12 +1,12 @@
-// Module ID: 15198
-// Function ID: 15199
+// Module ID: 15234
+// Function ID: 15235
 // Name: GuildBadgeClover
-// Dependencies: [109, 19, 21, 558, 576, 15166, 7962, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15202, 7960, 2]
 
-// Module 15198 (GuildBadgeClover)
+// Module 15234 (GuildBadgeClover)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15166 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15202 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeCl
     }
   }
   const obj6 = { width: num7, height: num6, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(7962).Svg;
+  const Svg = tmp(7960).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp25, tmp28, tmp29];
   const tmp35 = hasOwnProperty(Svg, obj6);

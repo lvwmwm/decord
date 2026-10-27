@@ -1,25 +1,25 @@
 // Module ID: 8996
 // Function ID: 8997
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1128, 8997, 5234, 6908, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1125, 8997, 5235, 6910, 2]
 
 // Module 8996 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6908 */;
+import intl2 from "intl" /* 1125 */;
+import Pressables from "Pressables" /* 6910 */;
 import useAccessibilityPressDefault from "useAccessibilityPress" /* 8997 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const Text_Text = tmp2(5234);
+const Text_Text = tmp2(5235);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const tmp5 = undefined !== end && end;
   const tmp6 = closure_6();
   if (cResult[0] !== tag.text) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { text: tag.text };
     const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj2);
     cResult[0] = tag.text;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   let start;
   let str;
   let tag;
-  const f102324 = () => closure_1_0("remove");
+  const f102531 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -129,10 +129,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f102324, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f102531, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  useAccessibilityPressDefault(f102324, formatToPlainStringResult);
+  useAccessibilityPressDefault(f102531, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

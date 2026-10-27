@@ -1,15 +1,15 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 10783
+// Function ID: 10784
 // Name: fetchDeveloperApplications
-// Dependencies: [5, 2024, 1087, 584, 1297, 2]
+// Dependencies: [5, 2021, 1084, 584, 1294, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 10780 (fetchDeveloperApplications)
+// Module 10783 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+import Constants from "Constants" /* 1084 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

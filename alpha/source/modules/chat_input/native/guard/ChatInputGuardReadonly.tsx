@@ -1,27 +1,27 @@
-// Module ID: 13390
-// Function ID: 13391
+// Module ID: 13404
+// Function ID: 13405
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 4827, 4823, 4901, 4903, 6771, 4913, 1392, 12512, 1087, 21, 558, 576, 13175, 504, 1388, 1128, 5604, 5711, 1114, 11, 13358, 2]
+// Dependencies: [19, 4828, 4824, 4902, 4904, 6772, 4914, 1389, 12520, 1084, 21, 558, 576, 13189, 504, 1385, 1125, 5605, 5712, 1111, 11, 13372, 2]
 
-// Module 13390 (ChatInputGuardReadonly)
+// Module 13404 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import router_utils from "router_utils" /* 1114 */;
-import intl4 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import ChatInputConstants from "ChatInputConstants" /* 12512 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13358 */;
+import router_utils from "router_utils" /* 1111 */;
+import intl4 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
+import ChatInputConstants from "ChatInputConstants" /* 12520 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13372 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -472,7 +472,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ text, handlePress } = closure_15(guildId.guildId, guildId.channel));
   closure_15(guildId.guildId, guildId.channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl4.t["9cs5LM"]);
     cResult[0] = stringResult;
     first = stringResult;

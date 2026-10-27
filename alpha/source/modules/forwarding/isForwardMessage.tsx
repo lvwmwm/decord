@@ -1,11 +1,11 @@
-// Module ID: 5602
-// Function ID: 5603
+// Module ID: 5603
+// Function ID: 5604
 // Name: isForwardMessage
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 5602 (isForwardMessage)
-import Constants from "Constants" /* 1087 */;
+// Module 5603 (isForwardMessage)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const MessageReferenceTypes = Constants.MessageReferenceTypes;

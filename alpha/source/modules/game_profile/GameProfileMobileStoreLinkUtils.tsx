@@ -1,11 +1,11 @@
-// Module ID: 9322
-// Function ID: 9323
+// Module ID: 9323
+// Function ID: 9324
 // Name: GameProfileMobileStoreLinkUtils
-// Dependencies: [9273, 1106, 2]
+// Dependencies: [9273, 1103, 2]
 // Exports: getMobileStoreLink
 
-// Module 9322 (GameProfileMobileStoreLinkUtils)
-import ApplicationDistributors from "ApplicationDistributors" /* 1106 */;
+// Module 9323 (GameProfileMobileStoreLinkUtils)
+import ApplicationDistributors from "ApplicationDistributors" /* 1103 */;
 import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9273 */;
 import size from "module_2" /* 2 */;
 

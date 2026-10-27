@@ -1,23 +1,23 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16309
+// Function ID: 16310
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 8332, 1087, 558, 16109, 576, 4799, 7091, 1405, 11209, 1128, 2]
+// Dependencies: [19, 8331, 1084, 558, 16147, 576, 4800, 7093, 1402, 11212, 1125, 2]
 
-// Module 16271 (FriendRequestsMutualFriendsSetting)
+// Module 16309 (FriendRequestsMutualFriendsSetting)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import FlagUtilsAll from "FlagUtils" /* 1405 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16109 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import FlagUtilsAll from "FlagUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16147 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(7091);
+const UserSettingsUtils = tmp(7093);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendR
   return tmp5.mutualFriends;
 }) : (function useFriendRequestsMutualFriendsSettingValue() {
   let setting;
-  const FriendSourceFlagsSetting = setting(4799).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(4800).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   return react.useMemo(() => {

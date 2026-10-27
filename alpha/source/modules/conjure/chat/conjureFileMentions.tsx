@@ -1,17 +1,17 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12194
+// Function ID: 12195
 // Name: conjureFileMentions
-// Dependencies: [19, 1951, 2]
+// Dependencies: [19, 1948, 2]
 // Exports: conjureFileMentionIds, createConjureFileMentionRule, filterConjureFileCandidates, hasConjureFileMentions, withoutInlineFileMentions
 
-// Module 12174 (conjureFileMentions)
-import _modDef1951 from "module_1951" /* 1951 */;
+// Module 12194 (conjureFileMentions)
+import _modDef1948 from "module_1948" /* 1948 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const f113615 = (arg0) => arg0[1];
+const f113873 = (arg0) => arg0[1];
 let c2 = "<file:(\\d{16}-[a-z0-9]{6})>";
 let regExp = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>", "g");
 const regExp1 = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>");
@@ -24,8 +24,8 @@ export const hasConjureFileMentions = function hasConjureFileMentions(arg0) {
   return regExp1.test(arg0);
 };
 export const conjureFileMentionIds = function conjureFileMentionIds(str) {
-  const items = [...new Set(Array.from(str.matchAll(regExp), f113615))];
-  new Set(Array.from(str.matchAll(regExp), f113615));
+  const items = [...new Set(Array.from(str.matchAll(regExp), f113873))];
+  new Set(Array.from(str.matchAll(regExp), f113873));
   return items;
 };
 export const filterConjureFileCandidates = function filterConjureFileCandidates(arr, text) {
@@ -61,7 +61,7 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
       const self = this;
       const self2 = this;
       const items = [];
-      set = new Set(Array.from(content.matchAll(regExp), f113615));
+      set = new Set(Array.from(content.matchAll(regExp), f113873));
       HermesBuiltin.arraySpread(items, set, 0);
       const self3 = this;
       const self4 = this;
@@ -77,8 +77,8 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
 export const createConjureFileMentionRule = function createConjureFileMentionRule(arg0) {
   let closure_0 = arg0;
   regExp = new RegExp("^" + c2);
-  const obj = {
-    order: _modDef1951.defaultRules.autolink.order - 0.5,
+  let obj = {
+    order: _modDef1948.defaultRules.autolink.order - 0.5,
     requiredFirstCharacters: ["<"],
     match(arg0) {
       return regExp.exec(arg0);
@@ -87,7 +87,7 @@ export const createConjureFileMentionRule = function createConjureFileMentionRul
       return { attachmentId: attachmentId[1] };
     },
     react(attachmentId, arg1, key) {
-      return closure_0(attachmentId.attachmentId, key.key);
+      return channel(attachmentId.attachmentId, key.key);
     }
   };
   return obj;

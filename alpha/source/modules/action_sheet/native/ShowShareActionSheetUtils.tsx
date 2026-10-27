@@ -1,15 +1,15 @@
 // Module ID: 8853
 // Function ID: 8854
 // Name: ShowShareActionSheetUtils
-// Dependencies: [1087, 8854, 1267, 8855, 1386, 1384, 6870, 2]
+// Dependencies: [1084, 8854, 1264, 8855, 1383, 1381, 6872, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
 // Module 8853 (ShowShareActionSheetUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import FileExtensionUtils from "FileExtensionUtils" /* 6870 */;
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import FileExtensionUtils from "FileExtensionUtils" /* 6872 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8854 */;
 import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8855 */;
 import size from "module_2" /* 2 */;

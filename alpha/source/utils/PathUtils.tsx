@@ -1,11 +1,11 @@
-// Module ID: 15298
-// Function ID: 15299
+// Module ID: 15334
+// Function ID: 15335
 // Name: PathUtils
-// Dependencies: [1384, 2]
+// Dependencies: [1381, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 15298 (PathUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+// Module 15334 (PathUtils)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PathUtils.tsx");

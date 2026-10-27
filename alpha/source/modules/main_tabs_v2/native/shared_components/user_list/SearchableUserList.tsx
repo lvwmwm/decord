@@ -1,21 +1,21 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10620
+// Function ID: 10621
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1392, 10616, 21, 4971, 587, 558, 576, 10618, 1388, 10619, 4978, 1128, 10620, 10622, 12926, 10625, 8993, 2]
+// Dependencies: [32, 19, 17, 1389, 10619, 21, 4972, 587, 558, 576, 10621, 1385, 10622, 4979, 1125, 10623, 10625, 12935, 10628, 8993, 2]
 
-// Module 10617 (SearchableUserList)
+// Module 10620 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import shared from "shared" /* 4978 */;
-import UserRowConstants from "UserRowConstants" /* 10616 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10619 */;
+import intl2 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import shared from "shared" /* 4979 */;
+import UserRowConstants from "UserRowConstants" /* 10619 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1392 */;
+import UserStore_mod from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let UserStore = UserStore_mod;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "emoji", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "enabled", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

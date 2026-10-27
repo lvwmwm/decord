@@ -1,12 +1,12 @@
 // Module ID: 9007
 // Function ID: 9008
 // Name: GlobalDiscoveryServersConstants
-// Dependencies: [1104, 1128, 2]
+// Dependencies: [1101, 1125, 2]
 // Exports: getLanguageOptions
 
 // Module 9007 (GlobalDiscoveryServersConstants)
-import DurationsDefault from "Durations" /* 1104 */;
-import intl2 from "intl" /* 1128 */;
+import DurationsDefault from "Durations" /* 1101 */;
+import intl2 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 let obj = { FEATURED: "featured", GAMING: "gaming", MUSIC: "music", ENTERTAINMENT: "entertainment", TECH: "tech", EDUCATION: "education", HUBS: "hubs" };

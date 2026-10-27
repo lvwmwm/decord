@@ -1,20 +1,20 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11114
+// Function ID: 11115
 // Name: useTenureBadging
-// Dependencies: [19, 7703, 1392, 2058, 1394, 558, 576, 504, 11112, 1991, 7712, 11113, 2]
+// Dependencies: [19, 7704, 1389, 2055, 1391, 558, 576, 504, 11115, 1988, 7713, 11116, 2]
 
-// Module 11111 (useTenureBadging)
+// Module 11114 (useTenureBadging)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7712 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 11112 */;
-import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 11113 */;
-import UserProfileStore from "UserProfileStore" /* 7703 */;
-import UserStore from "UserStore" /* 1392 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7713 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 11115 */;
+import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 11116 */;
+import UserProfileStore from "UserProfileStore" /* 7704 */;
+import UserStore from "UserStore" /* 1389 */;
+import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -414,7 +414,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTen
   const obj3 = PremiumTypeUtils;
   if (obj3.isPremiumExactly(stateFromStores, metroRequire.TIER_2)) {
     let premiumSince;
-    const getEarnedTenureBadge = tmp(7712).getEarnedTenureBadge;
+    const getEarnedTenureBadge = tmp(7713).getEarnedTenureBadge;
     TieredTenureBadgeUtils;
     if (stateFromStores1 != null) {
       premiumSince = stateFromStores1.premiumSince;

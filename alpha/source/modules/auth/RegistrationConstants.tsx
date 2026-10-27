@@ -1,11 +1,11 @@
-// Module ID: 17363
-// Function ID: 17364
+// Module ID: 17404
+// Function ID: 17405
 // Name: RegistrationConstants
-// Dependencies: [1107, 2]
+// Dependencies: [1104, 2]
 // Exports: authStateToRegisterTransitionStep
 
-// Module 17363 (RegistrationConstants)
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+// Module 17404 (RegistrationConstants)
+import ConstantsIOS from "ConstantsIOS" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 const RegisterTransitionSteps = { ACCOUNT_IDENTITY: "Account Identity", ACCOUNT_DISPLAY_NAME: "Account Display Name", ACCOUNT_INFORMATION: "Account Information", AGE_GATE: "Age Gate", AGE_GATE_UNDERAGE: "Age Gate Underage", PHONE_VERIFICATION: "Phone Verification", REGISTER: "Register", CAPTCHA: "Captcha" };

@@ -1,17 +1,17 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17416
+// Function ID: 17417
 // Name: trackAgeGateSubmitted
-// Dependencies: [1087, 1267, 2049, 17376, 2]
+// Dependencies: [1084, 1264, 2046, 17417, 2]
 // Exports: default
 
-// Module 17375 (trackAgeGateSubmitted)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import _modDef2049 from "module_2049" /* 2049 */;
+// Module 17416 (trackAgeGateSubmitted)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import _modDef2046 from "module_2046" /* 2046 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const formatDateForAPIDefault = tmp(17376);
+const formatDateForAPIDefault = tmp(17417);
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 
@@ -20,7 +20,7 @@ export default function trackAgeGateSubmitted(date, section) {
   const AGE_GATE_SUBMITTED = AnalyticEvents.AGE_GATE_SUBMITTED;
   AnalyticsUtilsDefault;
   let tmp4 = null;
-  const obj = _modDef2049();
+  const obj = _modDef2046();
   if (obj.diff(date, "years") < 18) {
     tmp4 = formatDateForAPIDefault(date);
   }

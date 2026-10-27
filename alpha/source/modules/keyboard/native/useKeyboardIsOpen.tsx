@@ -1,14 +1,14 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7029
+// Function ID: 7030
 // Name: useKeyboardIsOpen
-// Dependencies: [1501, 1502, 1503, 1631, 558, 576, 2]
+// Dependencies: [1498, 1499, 1500, 1628, 558, 576, 2]
 // Exports: getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7027 (useKeyboardIsOpen)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1503 */;
-import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
+// Module 7029 (useKeyboardIsOpen)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
+import KeyboardTypes from "KeyboardTypes" /* 1628 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,14 +28,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
   }
   const includeCustomKeyboard = tmp.includeCustomKeyboard;
   _require = tmp5;
-  const tmp2Result = tmp2(1502);
+  const tmp2Result = tmp2(1499);
   const appEntryKey = tmp2Result.useAppEntryKey();
   if (cResult[0] === appEntryKey) {
     let tmp7;
     if (cResult[1] === (undefined !== includeCustomKeyboard && includeCustomKeyboard)) {
       tmp7 = cResult[2];
     }
-    return appEntryKey(1503)(tmp7);
+    return appEntryKey(1500)(tmp7);
   }
   const fn = function o(arg0) {
     let tmp2;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
   if (flag === undefined) {
     flag = false;
   }
-  const obj = flag(1502);
+  const obj = flag(1499);
   importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
     let tmp2;

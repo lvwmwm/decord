@@ -1,15 +1,15 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7563
+// Function ID: 7564
 // Name: ReferralTrialStore
-// Dependencies: [1392, 1087, 7563, 1103, 504, 584, 2]
+// Dependencies: [1389, 1084, 7564, 1100, 504, 584, 2]
 
-// Module 7562 (ReferralTrialStore)
+// Module 7563 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import MessageTypes from "MessageTypes" /* 1103 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7563 */;
-import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1084 */;
+import MessageTypes from "MessageTypes" /* 1100 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7564 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let closure_14;

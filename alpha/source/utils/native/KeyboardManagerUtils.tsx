@@ -1,11 +1,11 @@
-// Module ID: 1896
-// Function ID: 1897
+// Module ID: 1893
+// Function ID: 1894
 // Name: KeyboardManagerUtils
-// Dependencies: [1897, 2]
+// Dependencies: [1894, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1896 (KeyboardManagerUtils)
-import react_nativeDefault from "react-native" /* 1897 */;
+// Module 1893 (KeyboardManagerUtils)
+import react_nativeDefault from "react-native" /* 1894 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");

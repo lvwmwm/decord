@@ -1,8 +1,8 @@
-// Module ID: 18414
-// Function ID: 18415
+// Module ID: 18448
+// Function ID: 18449
 // Dependencies: [2]
 
-// Module 18414
+// Module 18448
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/gifting/new_gifting_badges.png.js");

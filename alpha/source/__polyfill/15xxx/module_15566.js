@@ -1,15 +1,7 @@
 // Module ID: 15566
 // Function ID: 15567
-// Dependencies: [15545]
+// Dependencies: []
 
 // Module 15566
-import _mod15545 from "module_15545" /* 15545 */;
 
-const tmp = _mod15545.navigator && _mod15545.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
-
-export default str;
+export const collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];

@@ -1,35 +1,35 @@
 // Module ID: 8666
 // Function ID: 8667
 // Name: ProductDetailsActionSheet
-// Dependencies: [109, 32, 19, 17, 7650, 1089, 1087, 1098, 21, 3, 4971, 587, 5250, 5037, 558, 576, 4978, 1128, 7063, 1995, 8667, 8668, 8665, 7661, 9796, 7278, 7253, 14448, 14449, 9360, 1275, 9361, 1267, 504, 14450, 9423, 9426, 7662, 9428, 9429, 9431, 14451, 14461, 14472, 1202, 5269, 14473, 14484, 5265, 9476, 10490, 8723, 5244, 14487, 8663, 2]
+// Dependencies: [109, 32, 19, 17, 7651, 1086, 1084, 1095, 21, 3, 4972, 587, 5251, 5038, 558, 576, 4979, 1125, 7065, 1992, 8667, 8668, 8665, 7662, 9798, 7280, 7255, 14484, 14485, 9359, 1272, 9360, 1264, 504, 14486, 9422, 9425, 7663, 9427, 9428, 9430, 14487, 14497, 14508, 1199, 5270, 14509, 14520, 5266, 9475, 10493, 8723, 5245, 14523, 8663, 2]
 
 // Module 8666 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import Constants2 from "Constants" /* 1098 */;
-import intl4 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import ButtonConstants from "ButtonConstants" /* 5250 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
+import Constants from "Constants" /* 1084 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
+import Constants2 from "Constants" /* 1095 */;
+import intl4 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import ButtonConstants from "ButtonConstants" /* 5251 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
 import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8663 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
 import generated_NoResults from "generated/NoResults" /* 8723 */;
-import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9476 */;
-import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10490 */;
-import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14487 */;
+import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9475 */;
+import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10493 */;
+import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 14523 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import "react";
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import native_mod from "native" /* 5037 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import native_mod from "native" /* 5038 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let rect;
 let rect1;
 let size;
 let tmp;
-const Sheet_BottomSheet = tmp(5265);
-const CollectiblesAnalyticsContext = tmp(9360);
+const Sheet_BottomSheet = tmp(5266);
+const CollectiblesAnalyticsContext = tmp(9359);
 let closure_3 = ["shopAnalyticsContext"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -88,9 +88,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp4 = closure_19();
   dependencyMap = tmp4;
-  const obj2 = handlePreviewPress(5037);
+  const obj2 = handlePreviewPress(5038);
   const theme = obj2.useThemeContext().theme;
-  const obj3 = handlePreviewPress(4978);
+  const obj3 = handlePreviewPress(4979);
   const isThemeLightResult = obj3.isThemeLight(theme);
   closure_3 = tmp6;
   const tmp7 = isThemeLightResult ? tmp4.previewProfileButtonLight : tmp4.previewProfileButtonDark;
@@ -114,10 +114,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
             }
             const _Symbol = Symbol;
             if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1128).intl;
-              const stringResult = intl.string(handlePreviewPress(1128).t["3Qcx6K"]);
+              const intl = tmp(1125).intl;
+              const stringResult = intl.string(handlePreviewPress(1125).t["3Qcx6K"]);
               const obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-              const EyeIcon = tmp(7063).EyeIcon;
+              const EyeIcon = tmp(7065).EyeIcon;
               const tmp17 = closure_15(EyeIcon, obj4);
               cResult[9] = stringResult;
               cResult[10] = tmp17;
@@ -178,9 +178,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_19();
   dependencyMap = tmp;
-  const obj = handlePreviewPress(5037);
+  const obj = handlePreviewPress(5038);
   const theme = obj.useThemeContext().theme;
-  const obj2 = handlePreviewPress(4978);
+  const obj2 = handlePreviewPress(4979);
   const isThemeLightResult = obj2.isThemeLight(theme);
   closure_3 = theme === ThemeTypes.ONYX;
   let closure_4 = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
@@ -201,12 +201,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
       handlePreviewPress();
     }, items),
     accessibilityRole: "button",
-    accessibilityLabel: intl.string(handlePreviewPress(1128).t["3Qcx6K"]),
+    accessibilityLabel: intl.string(handlePreviewPress(1125).t["3Qcx6K"]),
     children: closure_15(EyeIcon, obj4)
   };
-  intl = tmp2(1128).intl;
+  intl = tmp2(1125).intl;
   obj4 = { size: "md", color: onTrackPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-  EyeIcon = tmp2(7063).EyeIcon;
+  EyeIcon = tmp2(7065).EyeIcon;
   return closure_15(closure_9, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1003,7 +1003,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp48;
   let tmp50;
   let type;
-  const f101303 = () => {
+  const f101510 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -1105,8 +1105,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   const tmp32Result = closure_21(obj7);
   const tmp34 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   react = tmp34;
-  [type, c7] = obj.useState(f101303);
-  _slicedToArray(obj.useState(f101303), 2);
+  [type, c7] = obj.useState(f101510);
+  _slicedToArray(obj.useState(f101510), 2);
   const tmp36 = c7((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -1457,7 +1457,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         }
       }
       const obj3 = { Illustration: generated_NoResults.NoResults, body: tmp17, children: closure_15(components_Button_Button.Button, obj4) };
-      const EmptyState = tmp(1202).EmptyState;
+      const EmptyState = tmp(1199).EmptyState;
       obj4 = { text: tmp19, onPress: retry };
       const tmp22 = closure_15(EmptyState, obj3);
       cResult[13] = retry;
@@ -1509,12 +1509,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   const initialVariantIndex = skuId.initialVariantIndex;
   const tmp = skuId;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(9476);
+  let obj = skuId(9475);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(10490);
+  const obj2 = skuId(10493);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
   const ref = react.useRef(null);
@@ -1551,21 +1551,21 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         ref,
         children: tmp10
       };
-      return tmp8(tmp(5265).BottomSheet, obj4);
+      return tmp8(tmp(5266).BottomSheet, obj4);
     }
   }
   if ("error" === state) {
-    const obj5 = { Illustration: tmp(8723).NoResults, body: intl.string(tmp(1128).t.eAn6z2), children: closure_15(Button, obj6) };
-    const EmptyState = tmp(1202).EmptyState;
-    intl = tmp(1128).intl;
-    obj6 = { text: intl2.string(tmp(1128).t["+hivLW"]), onPress: retry };
-    Button = tmp(5244).Button;
-    intl2 = tmp(1128).intl;
+    const obj5 = { Illustration: tmp(8723).NoResults, body: intl.string(tmp(1125).t.eAn6z2), children: closure_15(Button, obj6) };
+    const EmptyState = tmp(1199).EmptyState;
+    intl = tmp(1125).intl;
+    obj6 = { text: intl2.string(tmp(1125).t["+hivLW"]), onPress: retry };
+    Button = tmp(5245).Button;
+    intl2 = tmp(1125).intl;
     tmp13 = closure_15(EmptyState, obj5);
     tmp11 = closure_15;
   } else {
     tmp11 = closure_15;
-    tmp13 = closure_15(initialVariantIndex(14487), {});
+    tmp13 = closure_15(initialVariantIndex(14523), {});
   }
   tmp8 = tmp11;
   tmp10 = tmp13;

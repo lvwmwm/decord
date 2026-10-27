@@ -1,21 +1,21 @@
-// Module ID: 9369
-// Function ID: 9370
+// Module ID: 9368
+// Function ID: 9369
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7703, 502, 1392, 9370, 9371, 558, 576, 9376, 504, 9377, 12, 9378, 8676, 9384, 9389, 2]
+// Dependencies: [32, 19, 7704, 502, 1389, 9369, 9370, 558, 576, 9375, 504, 9376, 12, 9377, 8676, 9383, 9388, 2]
 
-// Module 9369 (useWishlistHooks)
+// Module 9368 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import WishlistRecord from "WishlistRecord" /* 9371 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9377 */;
-import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9384 */;
+import WishlistRecord from "WishlistRecord" /* 9370 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9376 */;
+import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9383 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7703 */;
+import UserProfileStore from "UserProfileStore" /* 7704 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1392 */;
-import WishlistStore from "WishlistStore" /* 9370 */;
+import UserStore from "UserStore" /* 1389 */;
+import WishlistStore from "WishlistStore" /* 9369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -824,7 +824,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
       tmp17 = cResult[11];
     }
     const wishlist = closure_12(tmp17).wishlist;
-    tmp(9389);
+    tmp(9388);
     let flag2 = false;
     if (true === isGift) {
       flag2 = false;

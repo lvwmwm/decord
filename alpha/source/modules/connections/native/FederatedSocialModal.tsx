@@ -1,16 +1,16 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14118
+// Function ID: 14119
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1087, 21, 4971, 6502, 1128, 7274, 5660, 14105, 7221, 5234, 7007, 1202, 5244, 558, 576, 6924, 7095, 2]
+// Dependencies: [5, 32, 19, 1084, 21, 4972, 6503, 1125, 7276, 5661, 14119, 7223, 5235, 7009, 1199, 5245, 558, 576, 6926, 7097, 2]
 
-// Module 14104 (FederatedSocialModal)
-import Constants from "Constants" /* 1087 */;
-import PlatformsDefault from "Platforms" /* 6502 */;
+// Module 14118 (FederatedSocialModal)
+import Constants from "Constants" /* 1084 */;
+import PlatformsDefault from "Platforms" /* 6503 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,10 +187,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FederatedS
       name = value.name;
     }
     if (name == null) {
-      const intl = tmp(1128).intl;
-      name = intl.string(tmp(1128).t["bU/GZm"]);
+      const intl = tmp(1125).intl;
+      name = intl.string(tmp(1125).t["bU/GZm"]);
     }
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj3 = { serviceName: name };
     const formatToPlainStringResult = intl2.formatToPlainString(require("intl").t["ImMhq+"], obj3);
     cResult[0] = platformType.platformType;

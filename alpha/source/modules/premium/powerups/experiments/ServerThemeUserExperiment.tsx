@@ -1,12 +1,12 @@
-// Module ID: 5186
-// Function ID: 5187
+// Module ID: 5187
+// Function ID: 5188
 // Name: ServerThemeUserExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [1452, 558, 576, 2]
 // Exports: getServerThemeUserEnabled
 
-// Module 5186 (ServerThemeUserExperiment)
+// Module 5187 (ServerThemeUserExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

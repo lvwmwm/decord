@@ -1,28 +1,28 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 9481
+// Function ID: 9482
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8839, 21, 8830, 9483, 7053, 9292, 9485, 9487, 4971, 587, 558, 576, 5660, 9489, 9490, 9303, 1128, 2000, 4796, 9491, 5234, 2]
+// Dependencies: [19, 17, 8839, 21, 8830, 9482, 7055, 9292, 9484, 9486, 4972, 587, 558, 576, 5661, 9488, 9489, 9303, 1125, 1997, 4797, 9490, 5235, 2]
 
-// Module 9482 (GameProfileDetails)
+// Module 9481 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
-import intl13 from "intl" /* 1128 */;
-import Server from "Server" /* 2000 */;
-import DateUtilsAll from "DateUtils" /* 4796 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7053 */;
+import intl13 from "intl" /* 1125 */;
+import Server from "Server" /* 1997 */;
+import DateUtilsAll from "DateUtils" /* 4797 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7055 */;
 import PlatformType from "PlatformType" /* 8830 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 8839 */;
 import XboxNeutralIcon from "XboxNeutralIcon" /* 9292 */;
 import SKUUtils from "SKUUtils" /* 9303 */;
-import ScreenIcon from "ScreenIcon" /* 9483 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9485 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9487 */;
-import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9490 */;
+import ScreenIcon from "ScreenIcon" /* 9482 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9484 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9486 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9489 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   ({ game, trackAction } = arg0);
   const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9489);
+  let obj2 = trackAction(9488);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
   const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
@@ -198,11 +198,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         if (cResult[10] !== game.genres.length) {
           let stringResult;
           if (1 !== game.genres.length) {
-            const intl2 = tmp(1128).intl;
-            stringResult = intl2.string(tmp(1128).t.pDgwYB);
+            const intl2 = tmp(1125).intl;
+            stringResult = intl2.string(tmp(1125).t.pDgwYB);
           } else {
-            const intl = tmp(1128).intl;
-            stringResult = intl.string(tmp(1128).t.mjFKqn);
+            const intl = tmp(1125).intl;
+            stringResult = intl.string(tmp(1125).t.mjFKqn);
           }
           cResult[10] = game.genres.length;
           cResult[11] = stringResult;
@@ -228,7 +228,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let tmp20;
       let companyByRole;
       if (game != null) {
-        companyByRole = game.getCompanyByRole(tmp(2000).GameCompanyRole.PUBLISHER);
+        companyByRole = game.getCompanyByRole(tmp(1997).GameCompanyRole.PUBLISHER);
       }
       const _Symbol2 = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
@@ -301,7 +301,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             return name.name;
           }
         }
-        tmp27Result = tmp27(tmp(2000).GameCompanyRole.DEVELOPER);
+        tmp27Result = tmp27(tmp(1997).GameCompanyRole.DEVELOPER);
       }
       const _Symbol3 = Symbol;
       if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
@@ -388,7 +388,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
               return name.name;
             }
           }
-          const stringResult1 = obj9.string(tmp(1128).t.H3mPDT);
+          const stringResult1 = obj9.string(tmp(1125).t.H3mPDT);
           cResult[33] = stringResult1;
           tmp35 = stringResult1;
         } else {
@@ -407,8 +407,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr3(4796).dateFormat;
-          arr3(4796);
+          const dateFormat = arr3(4797).dateFormat;
+          arr3(4797);
           const date = new Date(undefined);
           cResult[34] = undefined;
           cResult[35] = dateFormat(date, "LL");
@@ -558,7 +558,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             return null != arg0;
           }
         }
-        const stringResult2 = obj12.string(tmp(1128).t["Oj3o1/"]);
+        const stringResult2 = obj12.string(tmp(1125).t["Oj3o1/"]);
         cResult[51] = stringResult2;
         tmp60 = stringResult2;
       } else {
@@ -621,10 +621,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             return null != arg0;
           }
         }
-        const stringResult3 = obj14.string(tmp(1128).t["BwQ+9e"]);
-        const intl3 = tmp(1128).intl;
+        const stringResult3 = obj14.string(tmp(1125).t["BwQ+9e"]);
+        const intl3 = tmp(1125).intl;
         const obj10 = { igdbLink: IGDB_ATTRIBUTION_LINK };
-        const formatResult = intl3.format(tmp(1128).t.XPFZVl, obj10);
+        const formatResult = intl3.format(tmp(1125).t.XPFZVl, obj10);
         cResult[56] = stringResult3;
         cResult[57] = formatResult;
         tmp71 = formatResult;
@@ -709,7 +709,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           return null != arg0;
         }
       }
-      const stringResult4 = obj16.string(tmp(1128).t["7OjmmH"]);
+      const stringResult4 = obj16.string(tmp(1125).t["7OjmmH"]);
       cResult[60] = stringResult4;
       tmp78 = stringResult4;
     } else {
@@ -727,8 +727,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
       const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
       cResult[61] = tmp4.headerText;
-      cResult[62] = closure_8(tmp(5234).Text, obj11);
-      const tmp81 = closure_8(tmp(5234).Text, obj11);
+      cResult[62] = closure_8(tmp(5235).Text, obj11);
+      const tmp81 = closure_8(tmp(5235).Text, obj11);
     } else {
       class F {
         constructor(arg0) {

@@ -1,17 +1,17 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10427
+// Function ID: 10428
 // Name: MediaKeyboardBottomSheetHeaderSimple
-// Dependencies: [19, 17, 1629, 21, 4971, 587, 558, 576, 10426, 2]
+// Dependencies: [19, 17, 1626, 21, 4972, 587, 558, 576, 10428, 2]
 
-// Module 10425 (MediaKeyboardBottomSheetHeaderSimple)
+// Module 10427 (MediaKeyboardBottomSheetHeaderSimple)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
-import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10426 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10428 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

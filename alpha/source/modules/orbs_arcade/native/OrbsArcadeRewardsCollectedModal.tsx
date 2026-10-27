@@ -1,38 +1,38 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16456
+// Function ID: 16457
 // Name: OrbsArcadeRewardsCollectedModal
-// Dependencies: [32, 19, 17, 4972, 1087, 1394, 21, 4971, 587, 558, 576, 13948, 5234, 8667, 504, 11052, 8660, 9403, 16404, 1128, 7662, 11183, 5244, 7691, 9438, 16416, 7490, 5252, 5258, 1107, 7959, 10658, 16396, 6696, 7221, 2]
+// Dependencies: [32, 19, 17, 4973, 1084, 1391, 21, 4972, 587, 558, 576, 13962, 5235, 8667, 504, 11055, 8660, 9402, 16443, 1125, 7663, 11186, 5245, 7692, 9437, 16455, 7491, 5253, 5259, 1104, 7957, 10661, 16435, 6697, 7223, 2]
 
-// Module 16417 (OrbsArcadeRewardsCollectedModal)
+// Module 16456 (OrbsArcadeRewardsCollectedModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import openUserSettings from "openUserSettings" /* 7490 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7662 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7691 */;
+import Constants from "Constants" /* 1084 */;
+import intl4 from "intl" /* 1125 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import LinearGradientDefault from "LinearGradient" /* 5259 */;
+import openUserSettings from "openUserSettings" /* 7491 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7663 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7692 */;
 import useShopProductItems from "useShopProductItems" /* 8660 */;
 import useCurrentUser from "useCurrentUser" /* 8667 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9403 */;
-import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9438 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10658 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11052 */;
-import useHandleUseNow from "useHandleUseNow" /* 11183 */;
-import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 13948 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16404 */;
-import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 16416 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9402 */;
+import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9437 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10661 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11055 */;
+import useHandleUseNow from "useHandleUseNow" /* 11186 */;
+import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 13962 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16443 */;
+import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 16455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -244,7 +244,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
               tmp13 = cResult[10];
             }
             if (cResult[11] !== name) {
-              const intl = tmp(1128).intl;
+              const intl = tmp(1125).intl;
               const obj3 = { itemName: name };
               const formatResult = intl.format(intl4.t.YNaxMp, obj3);
               cResult[11] = name;
@@ -278,18 +278,18 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
               let formatResult1;
               const tmpResult8 = CollectiblesUtils;
               if (tmpResult8.isPremiumCollectiblesProduct(product)) {
-                const intl3 = tmp(1128).intl;
+                const intl3 = tmp(1125).intl;
                 const obj5 = { itemName: name };
-                formatResult1 = intl3.format(tmp(1128).t.nW6E3m, obj5);
+                formatResult1 = intl3.format(tmp(1125).t.nW6E3m, obj5);
               }
               cResult[13] = name;
               cResult[14] = product;
               cResult[15] = formatResult1;
               tmp22 = formatResult1;
             }
-            const intl2 = tmp(1128).intl;
+            const intl2 = tmp(1125).intl;
             const obj6 = { itemName: name };
-            formatResult1 = intl2.format(tmp(1128).t["4kp0AB"], obj6);
+            formatResult1 = intl2.format(tmp(1125).t["4kp0AB"], obj6);
           }
         }
       }
@@ -350,20 +350,20 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     tmp7Result = tmp7(OrbsArcadeRewardPreviewDefault, obj6);
   }
   const obj7 = { preview: tmp7Result, title: intl.format(intl4.t.YNaxMp, { itemName: name }), description: null };
-  intl = tmp(1128).intl;
+  intl = tmp(1125).intl;
   if (null != product) {
     let formatResult;
     const tmpResult2 = CollectiblesUtils;
     if (tmpResult2.isPremiumCollectiblesProduct(product)) {
-      const intl3 = tmp(1128).intl;
+      const intl3 = tmp(1125).intl;
       const obj8 = { itemName: name };
-      formatResult = intl3.format(tmp(1128).t.nW6E3m, obj8);
+      formatResult = intl3.format(tmp(1125).t.nW6E3m, obj8);
     }
     obj7.description = formatResult;
     return authStore(tmp8, obj7);
   }
-  const intl2 = tmp(1128).intl;
-  formatResult = intl2.format(tmp(1128).t["4kp0AB"], { itemName: name });
+  const intl2 = tmp(1125).intl;
+  formatResult = intl2.format(tmp(1125).t["4kp0AB"], { itemName: name });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectibleRewardUseNowButton(product) {
@@ -400,15 +400,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
       }
     }
   }
-  const Button = tmp(5244).Button;
+  const Button = tmp(5245).Button;
   const tmp7 = authStore;
   if (canUseNow) {
     const obj3 = { size: "lg", text: intl2.string(intl4.t.MAS7uK), loading: isApplying, disabled: isApplying, onPress: handleUseNow };
-    intl2 = tmp(1128).intl;
+    intl2 = tmp(1125).intl;
     obj4 = obj3;
   } else {
     obj4 = { size: "lg", text: intl.string(intl4.t["2p2aYz"]), onPress: handleEditProfile };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
   }
   const tmp7Result = tmp7(Button, obj4);
   cResult[2] = canUseNow;
@@ -433,11 +433,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const tmp4 = authStore;
   if (canUseNow) {
     const obj2 = { size: "lg", text: intl2.string(intl4.t.MAS7uK), loading: isApplying, disabled: isApplying, onPress: handleUseNow };
-    intl2 = tmp(1128).intl;
+    intl2 = tmp(1125).intl;
     obj3 = obj2;
   } else {
     obj3 = { size: "lg", text: intl.string(intl4.t["2p2aYz"]), onPress: handleEditProfile };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
   }
   return tmp4(Button, obj3);
 });
@@ -465,8 +465,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
 
             }
       };
-      const Button = tmp(5244).Button;
-      intl = tmp(1128).intl;
+      const Button = tmp(5245).Button;
+      intl = tmp(1125).intl;
       tmp7 = authStore(Button, obj4);
     }
     cResult[0] = product;
@@ -495,8 +495,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
 
         }
     };
-    const Button = tmp(5244).Button;
-    intl = tmp(1128).intl;
+    const Button = tmp(5245).Button;
+    intl = tmp(1125).intl;
     tmp4 = authStore(Button, obj3);
   }
   return tmp4;
@@ -536,10 +536,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
       }
     }
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1125).intl;
   const formatToPlainString = intl.formatToPlainString;
   let num;
-  const Cz1G97 = tmp(1128).t.Cz1G97;
+  const Cz1G97 = tmp(1125).t.Cz1G97;
   if (closure_9[reward.skuId] != null) {
     num = tmp5[1];
   }
@@ -555,7 +555,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const stringResult = intl2.string(intl4.t.m2zEFB);
       cResult[10] = stringResult;
       tmp14 = stringResult;
@@ -563,17 +563,17 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
       tmp14 = cResult[10];
     }
     const obj4 = { preview: tmp11, title: tmp14, description: formatResult };
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const tmp16 = authStore;
     const tmp17 = closure_16;
     if (consumed) {
       const obj5 = { duration: formatToPlainStringResult, expirationDate: expiresAt };
-      formatResult = intl3.format(tmp(1128).t["93PGOI"], obj5);
+      formatResult = intl3.format(tmp(1125).t["93PGOI"], obj5);
     } else if (isFractionalPremiumActive) {
-      formatResult = intl3.string(tmp(1128).t.fBmhE9);
+      formatResult = intl3.string(tmp(1125).t.fBmhE9);
     } else {
       const obj6 = { duration: formatToPlainStringResult };
-      formatResult = intl3.format(tmp(1128).t["8fyBPf"], obj6);
+      formatResult = intl3.format(tmp(1125).t["8fyBPf"], obj6);
     }
     const tmp16Result = tmp16(tmp17, obj4);
     cResult[0] = avatarDecorationSize;
@@ -620,18 +620,18 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
   const formatToPlainStringResult = formatToPlainString(Cz1G97, { days: num });
   const obj3 = { preview: authStore(FractionalNitroCoinIllustration.FractionalNitroCoinIllustration, size), title: intl2.string(intl4.t.m2zEFB), description: formatResult };
   size = { skuId: reward.skuId, width: avatarDecorationSize, height: avatarDecorationSize };
-  intl2 = tmp(1128).intl;
-  const intl3 = tmp(1128).intl;
+  intl2 = tmp(1125).intl;
+  const intl3 = tmp(1125).intl;
   const tmp6 = authStore;
   const tmp7 = closure_16;
   if (consumed) {
     const obj4 = { duration: formatToPlainStringResult, expirationDate: expiresAt };
-    formatResult = intl3.format(tmp(1128).t["93PGOI"], obj4);
+    formatResult = intl3.format(tmp(1125).t["93PGOI"], obj4);
   } else if (isFractionalPremiumActive) {
-    formatResult = intl3.string(tmp(1128).t.fBmhE9);
+    formatResult = intl3.string(tmp(1125).t.fBmhE9);
   } else {
     const obj5 = { duration: formatToPlainStringResult };
-    formatResult = intl3.format(tmp(1128).t["8fyBPf"], obj5);
+    formatResult = intl3.format(tmp(1125).t["8fyBPf"], obj5);
   }
   return tmp6(tmp7, obj3);
 });
@@ -643,9 +643,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
   const cResult = obj.c(7);
   consumed = consumed.consumed;
   if (cResult[0] !== consumed) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     const stringResult = string(consumed ? t.ERKK6v : t["Jr6N+s"]);
     cResult[0] = consumed;
     cResult[1] = stringResult;
@@ -674,17 +674,17 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
     }
     return tmp7;
   }
-  const tmp8 = closure_10(consumed(5244).Button, { size: "lg", text: tmp4, onPress: tmp6 });
+  const tmp8 = closure_10(consumed(5245).Button, { size: "lg", text: tmp4, onPress: tmp6 });
   cResult[4] = tmp4;
   cResult[5] = tmp6;
   cResult[6] = tmp8;
   tmp7 = tmp8;
 }) : (function NitroCreditRewardPrimaryAction(consumed) {
   consumed = consumed.consumed;
-  const Button = consumed(5244).Button;
-  const intl = consumed(1128).intl;
+  const Button = consumed(5245).Button;
+  const intl = consumed(1125).intl;
   const string = intl.string;
-  const t = consumed(1128).t;
+  const t = consumed(1125).t;
   let obj = {
     size: "lg",
     text: string(consumed ? t.ERKK6v : t["Jr6N+s"]),
@@ -857,11 +857,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   importDefault = tmp;
   let tmp2 = entitlements;
   let tmp3 = dependencyMap;
-  let obj = entitlements(5252);
+  let obj = entitlements(5253);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  let obj2 = entitlements(5252);
+  let obj2 = entitlements(5253);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  let obj3 = entitlements(5252);
+  let obj3 = entitlements(5253);
   const token2 = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
   const items = [c7];
   const obj4 = entitlements(504);
@@ -891,16 +891,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     let cpT0Cq;
     closure_9 = tmp24;
     const obj5 = { style: tmp.root, children: items3 };
-    const obj6 = { style: tmp.backdrop, start: tmp2(1107).VerticalGradient.START, end: tmp2(1107).VerticalGradient.END, locations, colors: items2 };
+    const obj6 = { style: tmp.backdrop, start: tmp2(1104).VerticalGradient.START, end: tmp2(1104).VerticalGradient.END, locations, colors: items2 };
     items2 = [token, token1, token2];
     const tmp4Result = LinearGradientDefault;
     items3 = [closure_10(tmp4Result, obj6), ];
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items4 };
     const obj7 = { style: tmp.header, children: closure_10(IconButton, obj8) };
-    const SafeAreaPaddingView = tmp2(7221).SafeAreaPaddingView;
-    obj8 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1128).t.cpT0Cq), onPress: tmp2(16416).closeOrbsArcadeRewardsCollectedModal };
-    IconButton = tmp2(7959).IconButton;
-    intl3 = tmp2(1128).intl;
+    const SafeAreaPaddingView = tmp2(7223).SafeAreaPaddingView;
+    obj8 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1125).t.cpT0Cq), onPress: tmp2(16455).closeOrbsArcadeRewardsCollectedModal };
+    IconButton = tmp2(7957).IconButton;
+    intl3 = tmp2(1125).intl;
     items4 = [closure_10(page, obj7), , ];
     const obj9 = { style: tmp.pager, onLayout: callback, children: tmp28Result };
     tmp28Result = null;
@@ -946,7 +946,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       const obj12 = {
         style: tmp.pageDots,
         accessible: true,
-        accessibilityLabel: intl.formatToPlainString(tmp2(1128).t.qD8TVH, obj13),
+        accessibilityLabel: intl.formatToPlainString(tmp2(1125).t.qD8TVH, obj13),
         children: Array.from(obj14, (arg0, arg1) => {
               const style = [closure_1.pageDot, ];
               let currentPageDot;
@@ -959,15 +959,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
               return tmp(tmp2, { style }, arg1);
             })
       };
-      intl = tmp2(1128).intl;
+      intl = tmp2(1125).intl;
       const _Array = Array;
       obj13 = { current: bound + 1, total: rewards.length };
       obj14 = { length: rewards.length };
       tmp28Result3 = tmp28(tmp27, obj12);
     }
     items5 = [tmp28Result3, ];
-    const ButtonGroup = tmp2(6696).ButtonGroup;
-    if (rewards[bound].type === tmp2(16396).OrbsArcadeRewardType.COLLECTIBLE) {
+    const ButtonGroup = tmp2(6697).ButtonGroup;
+    if (rewards[bound].type === tmp2(16435).OrbsArcadeRewardType.COLLECTIBLE) {
       const obj15 = { reward: rewards[bound] };
       tmp28Result4 = tmp28(closure_19, obj15, tmp16.id);
     } else {
@@ -985,10 +985,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       tmp28Result4 = tmp28(tmp20, obj16, tmp16.id);
     }
     const items6 = [tmp28Result4, ];
-    const Button = tmp2(5244).Button;
-    const intl2 = tmp2(1128).intl;
+    const Button = tmp2(5245).Button;
+    const intl2 = tmp2(1125).intl;
     const string = intl2.string;
-    const t = tmp2(1128).t;
+    const t = tmp2(1125).t;
     if (1 === rewards.length) {
       cpT0Cq = t.cpT0Cq;
     } else {

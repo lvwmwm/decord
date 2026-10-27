@@ -1,154 +1,72 @@
 // Module ID: 1027
 // Function ID: 1028
-// Dependencies: [1026, 901, 1019, 693]
-// Exports: handleAsyncHandlerResult
+// Dependencies: [879, 693, 874, 1028]
+// Exports: appRegistryIntegration, getAppRegistryIntegration
 
 // Module 1027
-import _mod1026 from "module_1026" /* 1026 */;
+import _mod693 from "module_693" /* 693 */;
+import ReactNativeLibraries from "ReactNativeLibraries" /* 874 */;
+import _mod879 from "module_879" /* 879 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-let tmp2;
-const _mod693 = tmp2(693);
-const f87461 = (error) => {
-  const tmp = item10034;
-  const tmp2 = item10008;
-  if (item10034(item10008[2]).DEBUG_BUILD) {
-    const debug = tmp(tmp2[3]).debug;
-    const _HermesInternal = HermesInternal;
-    debug.warn("Error resolving async handler '" + closure_1 + "' for route", closure_0, error);
-  }
+let tmp;
+const fillTyped = tmp(1028);
+const f87642 = (arg0) => {
+  closure_0 = arg0;
+  return () => {
+    const items = [...arguments];
+    const item = closure_0.forEach((fn) => fn());
+    return closure_0(...items);
+  };
 };
-function createAsyncHandlerProxy(arg0, item10034, item10008, processResolvedRoutes) {
-  _require = item10034;
-  dependencyMap = item10008;
-  let closure_2 = processResolvedRoutes;
+let AppRegistry = "AppRegistry";
+function patchAppRegistryRunApplication(arg0) {
+  let closure_0 = arg0;
+  AppRegistry = ReactNativeLibraries.ReactNativeLibraries.AppRegistry;
+  if (AppRegistry) {
+    const tmpResult = fillTyped;
+    tmpResult.fillTyped(AppRegistry, "runApplication", f87642);
+  }
+}
+
+export const INTEGRATION_NAME = "AppRegistry";
+export const appRegistryIntegration = () => {
+  let closure_0 = [];
   let obj = {
-    apply(apply, arg1, arg2) {
-      let span;
-      function captureCurrentLocation() {
-        let search;
-        const obj = item10034(item10008[0]);
-        const navigationContext = obj.getNavigationContext();
-        if (navigationContext) {
-          let tmp8 = null;
-          if (navigationContext.targetPath) {
-            tmp8 = { pathname: navigationContext.targetPath, search: "", hash: "", state: null, key: "default" };
-            const obj3 = { pathname: navigationContext.targetPath, search: "", hash: "", state: null, key: "default" };
+    name: AppRegistry,
+    setupOnce() {
+      const obj = _mod879;
+      if (!obj.isWeb()) {
+        if (typeof patchAppRegistryRunApplication === "function") {
+          AppRegistry = tmp(874).ReactNativeLibraries.AppRegistry;
+          if (AppRegistry) {
+            const tmpResult = fillTyped;
+            tmpResult.fillTyped(AppRegistry, "runApplication", f87642);
           }
-          return tmp8;
         } else {
-          if (undefined !== item10034(item10008[1]).WINDOW) {
-            try {
-              const _location = tmp(tmp2[1]).WINDOW.location;
-              if (_location) {
-                const obj5 = { pathname: null, search, hash: str, state: null, key: "default" };
-                ({ pathname: obj2.pathname, search } = _location);
-                if (!search) {
-                  search = "";
-                }
-                return obj5;
-              }
-            } catch (err) {
-              if (item10034(item10008[2]).DEBUG_BUILD) {
-                const debug = tmp(tmp2[3]).debug;
-                debug.warn("[React Router] Could not access window.location");
-              }
-            }
-          }
-          return null;
+          throw new TypeError("Trying to call a non-function");
         }
       }
-      let tmp = captureCurrentLocation();
-      let tmp2 = require;
-      let obj = _mod1026;
-      let navigationContext = obj.getNavigationContext();
-      if (navigationContext) {
-        span = navigationContext.span;
+    },
+    onRunApplication(onRunApplicationHook) {
+      const arr = closure_0;
+      if (closure_0.includes(onRunApplicationHook)) {
+        const debug = _mod693.debug;
+        debug.log("[AppRegistryIntegration] Callback already registered.");
       } else {
-        const tmp2Result = _mod1026;
-        span = tmp2Result.getActiveRootSpan();
+        arr.push(onRunApplicationHook);
       }
-      const applyResult = apply.apply(arg1, arg2);
-      let closure_3 = tmp;
-      const tmp2Result2 = _mod693;
-      const tmp5 = item10034;
-      const tmp6 = closure_2;
-      if (tmp2Result2.isThenable(applyResult)) {
-        const nextPromise = applyResult.then((result) => {
-          if (Array.isArray(result)) {
-            closure_2(result, closure_0, closure_3, span);
-          }
-        });
-        nextPromise.catch(f87461);
-      } else {
-        const _Array = Array;
-        if (Array.isArray(applyResult)) {
-          let tmp8 = null;
-          tmp6(applyResult, tmp5, tmp, span);
-        }
-      }
-      return applyResult;
     }
   };
-  const proxy = new Proxy(arg0, obj);
-  const obj2 = require("module_693");
-  const result = obj2.addNonEnumerableProperty(proxy, "__sentry_proxied__", true);
-  return proxy;
-}
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-function checkRouteForAsyncHandler(item10034, processResolvedRoutes) {
-  if (item10034.handle) {
-    if (typeof item10034.handle === "object") {
-      const _Object = Object;
-      const keys = Object.keys(item10034.handle);
-      for (const item10008 of keys) {
-        let tmp2 = item10008;
-        let tmp3 = item10034.handle[item10008];
-        let tmp4 = tmp3;
-        let __sentry_proxied__ = typeof tmp3 !== "function";
-        if (!__sentry_proxied__) {
-          __sentry_proxied__ = tmp4.__sentry_proxied__;
-        }
-        if (!__sentry_proxied__) {
-          item10034.handle[tmp2] = createAsyncHandlerProxy(tmp4, item10034, item10008, processResolvedRoutes);
-        }
-        continue;
-      }
-    }
+  return obj;
+};
+export { patchAppRegistryRunApplication };
+export const getAppRegistryIntegration = () => {
+  let client = arg0;
+  if (arg0 === undefined) {
+    const obj2 = _mod693;
+    client = obj2.getClient();
   }
-  if (Array.isArray(item10034.children)) {
-    const children = item10034.children;
-    for (const item10034 of children) {
-      let tmp14 = checkRouteForAsyncHandler(item10034, processResolvedRoutes);
-      continue;
-    }
-  }
-}
-
-export { checkRouteForAsyncHandler };
-export { createAsyncHandlerProxy };
-export const handleAsyncHandlerResult = function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
-  let closure_0;
-  let closure_1;
-  _require = arg1;
-  dependencyMap = arg2;
-  let closure_2 = fn;
-  let closure_3 = arg4;
-  let closure_4 = arg5;
-  const obj = require("module_693");
-  if (obj.isThenable(promise)) {
-    const nextPromise = promise.then((result) => {
-      if (Array.isArray(result)) {
-        closure_2(result, closure_0, closure_3, span);
-      }
-    });
-    nextPromise.catch(f87461);
-  } else {
-    const _Array = Array;
-    if (Array.isArray(promise)) {
-      fn(promise, arg1, arg4, arg5);
-    }
+  if (client) {
+    return client.getIntegrationByName(AppRegistry);
   }
 };

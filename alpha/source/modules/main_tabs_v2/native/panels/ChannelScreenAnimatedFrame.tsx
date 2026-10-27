@@ -1,16 +1,16 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17471
+// Function ID: 17472
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 4971, 587, 558, 576, 5052, 5206, 1202, 17428, 9708, 7221, 2]
+// Dependencies: [19, 21, 4972, 587, 558, 576, 5053, 5207, 1199, 17469, 9710, 7223, 2]
 
-// Module 17430 (ChannelScreenAnimatedFrame)
+// Module 17471 (ChannelScreenAnimatedFrame)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import timing from "timing" /* 5206 */;
-import PanelsConfig from "PanelsConfig" /* 17428 */;
+import native from "native" /* 1199 */;
+import timing from "timing" /* 5207 */;
+import PanelsConfig from "PanelsConfig" /* 17469 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

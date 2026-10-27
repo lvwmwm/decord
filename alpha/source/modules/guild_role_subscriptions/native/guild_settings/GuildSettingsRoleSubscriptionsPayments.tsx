@@ -1,13 +1,13 @@
-// Module ID: 19331
-// Function ID: 19332
+// Module ID: 19369
+// Function ID: 19370
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 558, 576, 17995, 1128, 2]
+// Dependencies: [19, 21, 558, 576, 18029, 1125, 2]
 
-// Module 19331 (GuildSettingsRoleSubscriptionsPayments)
+// Module 19369 (GuildSettingsRoleSubscriptionsPayments)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17995 */;
+import intl3 from "intl" /* 1125 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 18029 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,8 +19,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     UnavailableNoticeDefault;
-    const intl = tmp(1128).intl;
-    const intl2 = tmp(1128).intl;
+    const intl = tmp(1125).intl;
+    const intl2 = tmp(1125).intl;
     const tmp8 = <tmp7 title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
     cResult[0] = tmp8;
     first = tmp8;

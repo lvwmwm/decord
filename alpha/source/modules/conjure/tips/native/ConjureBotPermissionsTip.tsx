@@ -1,13 +1,13 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12331
+// Function ID: 12332
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 558, 576, 11765, 1128, 3830, 12326, 10954, 12330, 2]
+// Dependencies: [5, 19, 21, 558, 576, 11767, 1125, 3831, 12332, 10957, 12336, 2]
 
-// Module 12325 (ConjureBotPermissionsTip)
+// Module 12331 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12326 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12330 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12332 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -108,16 +108,16 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(11765).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(11767).ConjurePublishActionContext);
   ConjureTipHintDefault;
-  const intl = projectId(1128).intl;
+  const intl = projectId(1125).intl;
   const format = intl.format;
   let obj2 = {
     onReview() {
       return closure_1(...arguments);
     }
   };
-  const v0S9HY8 = _modDef3830["0S9HY8"];
+  const v0S9HY8 = _modDef3831["0S9HY8"];
   importDefault = _asyncToGenerator(async (arg0, value) => {
     let v3;
     if (projectId === 2) {
@@ -166,7 +166,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
       }
     }
   });
-  return <tmp icon={projectId(10954).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(10957).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {

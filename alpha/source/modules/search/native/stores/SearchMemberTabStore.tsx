@@ -1,15 +1,15 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13267
+// Function ID: 13268
 // Name: SearchMemberTabStore
-// Dependencies: [4823, 1087, 9067, 4908, 6829, 504, 584, 2]
+// Dependencies: [4824, 1084, 9067, 4909, 6831, 504, 584, 2]
 
-// Module 13253 (SearchMemberTabStore)
+// Module 13267 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import GuildUtilsDefault from "GuildUtils" /* 6829 */;
+import Constants from "Constants" /* 1084 */;
+import GuildUtilsDefault from "GuildUtils" /* 6831 */;
 import _modDef9067 from "module_9067" /* 9067 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import size from "module_2" /* 2 */;
 
 let results;

@@ -1,13 +1,13 @@
-// Module ID: 18238
-// Function ID: 18239
+// Module ID: 18272
+// Function ID: 18273
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 7414, 558, 576, 1128, 5914, 5914, 2]
+// Dependencies: [5, 19, 21, 7416, 558, 576, 1125, 5915, 5915, 2]
 
-// Module 18238 (ClearAllIncomingRequestsAlertModal)
+// Module 18272 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
+import intl5 from "intl" /* 1125 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7416 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   const cResult = obj.c(7);
   incomingRequestCount = incomingRequestCount.incomingRequestCount;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl5.t.z2pFjo);
     cResult[0] = stringResult;
     first = stringResult;
@@ -95,7 +95,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
     first = cResult[0];
   }
   if (cResult[1] !== incomingRequestCount) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj2 = { incomingRequestCount };
     const formatToPlainStringResult = intl2.formatToPlainString(intl5.t["0nTvEw"], obj2);
     cResult[1] = incomingRequestCount;
@@ -106,8 +106,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "destructive", onPress: handleConfirm, text: intl3.string(intl5.t["cY+Oob"]) };
-    const AlertActionButton = tmp(5914).AlertActionButton;
-    intl3 = tmp(1128).intl;
+    const AlertActionButton = tmp(5915).AlertActionButton;
+    intl3 = tmp(1125).intl;
     const tmp11 = React3(AlertActionButton, obj3, "confirm");
     cResult[3] = tmp11;
     tmp8 = tmp11;
@@ -117,10 +117,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: items };
     items = [tmp8, ];
-    const AlertActions = tmp(5914).AlertActions;
+    const AlertActions = tmp(5915).AlertActions;
     const obj5 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
-    const AlertActionButton2 = tmp(5914).AlertActionButton;
-    intl4 = tmp(1128).intl;
+    const AlertActionButton2 = tmp(5915).AlertActionButton;
+    intl4 = tmp(1125).intl;
     items[1] = React3(AlertActionButton2, obj5, "cancel");
     const tmp15 = hasOwnProperty(AlertActions, obj4);
     cResult[4] = tmp15;

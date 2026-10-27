@@ -1,22 +1,22 @@
 // Module ID: 8857
 // Function ID: 8858
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5584, 1128, 6931, 8858, 8859, 6880, 5234, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5585, 1125, 6933, 8858, 8859, 6882, 5235, 2]
 
 // Module 8857 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Backdrop from "Backdrop" /* 5584 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6880 */;
-import XSmallIcon from "XSmallIcon" /* 6931 */;
+import intl3 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import Backdrop from "Backdrop" /* 5585 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6882 */;
+import XSmallIcon from "XSmallIcon" /* 6933 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8858 */;
 import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8859 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
   }
   ({ topBar, topBarEnd } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.cpT0Cq);
     const tmp15 = hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" });
     cResult[4] = stringResult;
@@ -118,8 +118,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
-        const Text = tmp(5234).Text;
-        intl2 = tmp(1128).intl;
+        const Text = tmp(5235).Text;
+        intl2 = tmp(1125).intl;
         const tmp31 = hasOwnProperty(Text, obj3);
         cResult[15] = tmp31;
         tmp29 = tmp31;

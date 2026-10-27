@@ -1,14 +1,14 @@
-// Module ID: 18212
-// Function ID: 18213
+// Module ID: 18246
+// Function ID: 18247
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7731, 4913, 558, 576, 504, 2]
+// Dependencies: [32, 7732, 4914, 558, 576, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount
 
-// Module 18212 (useFriendRequestCounts)
+// Module 18246 (useFriendRequestCounts)
 import react from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7731 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7732 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

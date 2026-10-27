@@ -1,13 +1,13 @@
-// Module ID: 18560
-// Function ID: 18561
+// Module ID: 18594
+// Function ID: 18595
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 558, 576, 18561, 17152, 8507, 1128, 3928, 13850, 18485, 11539, 2]
+// Dependencies: [19, 21, 558, 576, 18595, 17193, 8507, 1125, 3929, 13864, 18519, 11541, 2]
 
-// Module 18560 (VoiceChannelAppHeaderButtons)
-import _modDef3928 from "module_3928" /* 3928 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11539 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13850 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18485 */;
+// Module 18594 (VoiceChannelAppHeaderButtons)
+import _modDef3929 from "module_3929" /* 3929 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11541 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13864 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18519 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,25 +26,25 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   let obj = id(576);
   const cResult = obj.c(14);
   ({ channel, inCall } = arg0);
-  const obj2 = id(18561);
+  const obj2 = id(18595);
   const voiceChannelAppAvailable = obj2.useVoiceChannelAppAvailable(channel, inCall);
-  const obj3 = id(18561);
+  const obj3 = id(18595);
   const voiceChannelAppOpen = obj3.useVoiceChannelAppOpen(channel, inCall);
-  const obj4 = id(18561);
+  const obj4 = id(18595);
   const voiceChannelAppVisible = obj4.useVoiceChannelAppVisible(channel);
   id = channel.id;
   if (voiceChannelAppAvailable) {
     let tmp10;
     let tmp12;
-    const tmp8Result = importDefault(voiceChannelAppVisible ? 17152 : 8507);
+    const tmp8Result = importDefault(voiceChannelAppVisible ? 17193 : 8507);
     if (cResult[0] !== voiceChannelAppVisible) {
       let ZtYyOx;
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const string = intl.string;
       if (voiceChannelAppVisible) {
-        ZtYyOx = tmp(1128).t["3jrUBj"];
+        ZtYyOx = tmp(1125).t["3jrUBj"];
       } else {
-        ZtYyOx = tmp8(3928).ZtYyOx;
+        ZtYyOx = tmp8(3929).ZtYyOx;
       }
       const stringResult = string(ZtYyOx);
       cResult[0] = voiceChannelAppVisible;
@@ -94,14 +94,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
         if (voiceChannelAppOpen) {
           const obj6 = {
             icon: AssetRegistryDefault,
-            accessibilityLabel: intl2.string(_modDef3928["D+wwh8"]),
+            accessibilityLabel: intl2.string(_modDef3929["D+wwh8"]),
             onPress() {
                       const obj = VoiceChannelAppActionCreators;
                       return obj.closeVoiceChannelApp(id);
                     }
           };
           const tmp8Result2 = VoicePanelIconButtonDefault;
-          intl2 = tmp(1128).intl;
+          intl2 = tmp(1125).intl;
           tmp17 = closure_3(tmp8Result2, obj6);
         }
         cResult[8] = id;
@@ -128,17 +128,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
   let string;
   ({ channel, inCall } = arg0);
   let id;
-  let obj = id(18561);
+  let obj = id(18595);
   const voiceChannelAppAvailable = obj.useVoiceChannelAppAvailable(channel, inCall);
-  const obj2 = id(18561);
+  const obj2 = id(18595);
   const voiceChannelAppOpen = obj2.useVoiceChannelAppOpen(channel, inCall);
-  const obj3 = id(18561);
+  const obj3 = id(18595);
   const voiceChannelAppVisible = obj3.useVoiceChannelAppVisible(channel);
   id = channel.id;
   let tmp7Result = null;
   if (voiceChannelAppAvailable) {
     const obj4 = {
-      icon: importDefault(voiceChannelAppVisible ? 17152 : 8507),
+      icon: importDefault(voiceChannelAppVisible ? 17193 : 8507),
       accessibilityLabel: string(ZtYyOx),
       onPress() {
           const obj = VoiceChannelAppActionCreators;
@@ -146,28 +146,28 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChann
         }
     };
     const tmp11 = VoicePanelIconButtonDefault;
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     string = intl.string;
     const tmp7 = closure_5;
     const tmp8 = closure_4;
     if (voiceChannelAppVisible) {
-      ZtYyOx = tmp(1128).t["3jrUBj"];
+      ZtYyOx = tmp(1125).t["3jrUBj"];
     } else {
-      ZtYyOx = tmp10(3928).ZtYyOx;
+      ZtYyOx = tmp10(3929).ZtYyOx;
     }
     const items = [closure_3(tmp11, obj4), ];
     let tmp9Result = null;
     if (voiceChannelAppOpen) {
       const obj5 = {
         icon: AssetRegistryDefault,
-        accessibilityLabel: intl2.string(_modDef3928["D+wwh8"]),
+        accessibilityLabel: intl2.string(_modDef3929["D+wwh8"]),
         onPress() {
               const obj = VoiceChannelAppActionCreators;
               return obj.closeVoiceChannelApp(id);
             }
       };
       const tmp10Result = VoicePanelIconButtonDefault;
-      intl2 = tmp(1128).intl;
+      intl2 = tmp(1125).intl;
       tmp9Result = tmp9(tmp10Result, obj5);
     }
     const obj6 = { children: items };

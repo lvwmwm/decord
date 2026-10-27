@@ -1,16 +1,16 @@
-// Module ID: 11240
-// Function ID: 11241
+// Module ID: 11243
+// Function ID: 11244
 // Name: handleMessagesTapImage
-// Dependencies: [7696, 4913, 1392, 1087, 8760, 10021, 1110, 8757, 5660, 6022, 8751, 5604, 8502, 2]
+// Dependencies: [7697, 4914, 1389, 1084, 8760, 10023, 1107, 8757, 5661, 6023, 8751, 5605, 8502, 2]
 // Exports: handleMessagesTapImage
 
-// Module 11240 (handleMessagesTapImage)
-import Constants from "Constants" /* 1087 */;
-import LinkingDefault from "Linking" /* 5660 */;
+// Module 11243 (handleMessagesTapImage)
+import Constants from "Constants" /* 1084 */;
+import LinkingDefault from "Linking" /* 5661 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7696 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7697 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -82,7 +82,7 @@ export const handleMessagesTapImage = function handleMessagesTapImage(tapImageDa
       type1 = messageReference.type;
     }
     let tmp12 = tmp7;
-    if (type1 !== embedId(1110).MessageReferenceTypes.FORWARD) {
+    if (type1 !== embedId(1107).MessageReferenceTypes.FORWARD) {
       let found2;
       let tmp25;
       const attachments = tmp7.attachments;
@@ -125,7 +125,7 @@ export const handleMessagesTapImage = function handleMessagesTapImage(tapImageDa
           const openMediaModal = tmp25(8751).openMediaModal;
           tmp25(8751);
           if (showContextName) {
-            const tmp25Result3 = tmp25(5604);
+            const tmp25Result3 = tmp25(5605);
             channelName = tmp25Result3.computeChannelName(messageChannel, UserStore, RelationshipStore, false);
           }
           channelIcon = undefined;
@@ -168,7 +168,7 @@ export const handleMessagesTapImage = function handleMessagesTapImage(tapImageDa
                 const extractMediaSourcesFromComponent = embedId(8757).extractMediaSourcesFromComponent;
                 const guild_id = messageChannel.guild_id;
                 const tmp10Result13 = embedId(8757);
-                const tmp10Result14 = embedId(6022);
+                const tmp10Result14 = embedId(6023);
                 const result2 = extractMediaSourcesFromComponent(tmp7, components, guild_id, tmp10Result14.asComponentId(componentId), componentMediaIndex);
                 if (null != result2) {
                   ({ sources, initialIndex: closure_1 } = result2);
@@ -241,6 +241,6 @@ export const handleMessagesTapImage = function handleMessagesTapImage(tapImageDa
       tmp12 = message1;
     }
   } else {
-    embedId(10021);
+    embedId(10023);
   }
 };

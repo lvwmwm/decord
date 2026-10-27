@@ -1,12 +1,12 @@
-// Module ID: 19086
-// Function ID: 19087
+// Module ID: 19124
+// Function ID: 19125
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 558, 576, 10027, 1128, 19087, 10030, 2]
+// Dependencies: [19, 21, 558, 576, 10029, 1125, 19125, 10032, 2]
 
-// Module 19086 (GuildSettingsStickerCreateModal)
+// Module 19124 (GuildSettingsStickerCreateModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19087 */;
+import intl2 from "intl" /* 1125 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 19125 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -84,16 +84,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   ({ guildId: require, stickerId } = arg0);
   dependencyMap = undefined;
   c3 = undefined;
-  ({ onGoBack: c2, ref: c3 } = stickerId(10027)());
-  stickerId(10027)();
-  const tmp4 = stickerId(10030);
+  ({ onGoBack: c2, ref: c3 } = stickerId(10029)());
+  stickerId(10029)();
+  const tmp4 = stickerId(10032);
   const intl = intl2.intl;
   const string = intl.string;
   const tmp3 = c3;
   if (null != stickerId) {
-    tdhW5b = tmp5(1128).t.tdhW5b;
+    tdhW5b = tmp5(1125).t.tdhW5b;
   } else {
-    tdhW5b = tmp5(1128).t["3DzNjU"];
+    tdhW5b = tmp5(1125).t["3DzNjU"];
   }
   const obj = {
     screenKey: "guild-settings-sticker-create",

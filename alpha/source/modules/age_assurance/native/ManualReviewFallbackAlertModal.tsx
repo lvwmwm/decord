@@ -1,14 +1,14 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8100
+// Function ID: 8101
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 558, 576, 1128, 3154, 5914, 5914, 8103, 2]
+// Dependencies: [19, 21, 558, 576, 1125, 3155, 5915, 5915, 8101, 2]
 
-// Module 8102 (ManualReviewFallbackAlertModal)
+// Module 8100 (ManualReviewFallbackAlertModal)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import _modDef3154 from "module_3154" /* 3154 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8103 */;
+import intl5 from "intl" /* 1125 */;
+import _modDef3155 from "module_3155" /* 3155 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8101 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,10 +30,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   let obj = react2;
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3154["+c5sxg"]);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef3154["RFLH++"]);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(_modDef3155["+c5sxg"]);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(_modDef3155["RFLH++"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -43,8 +43,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl3.string(intl5.t["NX+WJN"]) };
-    const AlertActionButton = tmp(5914).AlertActionButton;
-    intl3 = tmp(1128).intl;
+    const AlertActionButton = tmp(5915).AlertActionButton;
+    intl3 = tmp(1125).intl;
     const tmp11 = _false(AlertActionButton, obj2, "got-it");
     cResult[2] = tmp11;
     tmp9 = tmp11;
@@ -53,20 +53,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { title: tmp4, content: tmp5, actions: React3(AlertActions, obj4) };
-    const AlertModal = tmp(5914).AlertModal;
+    const AlertModal = tmp(5915).AlertModal;
     obj4 = { children: items };
     items = [tmp9, ];
-    AlertActions = tmp(5914).AlertActions;
+    AlertActions = tmp(5915).AlertActions;
     const obj5 = {
       variant: "secondary",
-      text: intl4.string(_modDef3154.Z61nkt),
+      text: intl4.string(_modDef3155.Z61nkt),
       onPress() {
           const obj = ManualReviewActionCreators;
           return obj.handleManualReviewCta();
         }
     };
-    const AlertActionButton2 = tmp(5914).AlertActionButton;
-    intl4 = tmp(1128).intl;
+    const AlertActionButton2 = tmp(5915).AlertActionButton;
+    intl4 = tmp(1125).intl;
     items[1] = _false(AlertActionButton2, obj5, "request-manual-review");
     const tmp16 = _false(AlertModal, obj3);
     cResult[3] = tmp16;
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   let intl4;
   let items;
   let obj2;
-  let obj = { title: intl.string(_modDef3154["+c5sxg"]), content: intl2.string(_modDef3154["RFLH++"]), actions: React3(AlertActions, obj2) };
+  let obj = { title: intl.string(_modDef3155["+c5sxg"]), content: intl2.string(_modDef3155["RFLH++"]), actions: React3(AlertActions, obj2) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl5.intl;
   intl2 = intl5.intl;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReview
   items = [_false(AlertActionButton, obj3, "got-it"), ];
   const obj4 = {
     variant: "secondary",
-    text: intl4.string(_modDef3154.Z61nkt),
+    text: intl4.string(_modDef3155.Z61nkt),
     onPress() {
       const obj = ManualReviewActionCreators;
       return obj.handleManualReviewCta();

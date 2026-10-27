@@ -1,21 +1,21 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8330
+// Function ID: 8331
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8327, 1087, 8332, 21, 4971, 558, 576, 7490, 5910, 7012, 1128, 5914, 2]
+// Dependencies: [19, 17, 8326, 1084, 8331, 21, 4972, 558, 576, 7491, 5911, 7014, 1125, 5915, 2]
 
-// Module 8331 (DoubleTapNitroAlert)
+// Module 8330 (DoubleTapNitroAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7012 */;
-import openUserSettings from "openUserSettings" /* 7490 */;
-import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8327 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
+import Constants from "Constants" /* 1084 */;
+import intl5 from "intl" /* 1125 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7014 */;
+import openUserSettings from "openUserSettings" /* 7491 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8326 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl5.t.HRAWfC);
     cResult[5] = stringResult;
     tmp14 = stringResult;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
     tmp14 = cResult[5];
   }
   if (cResult[6] !== emojiName) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj4 = { emojiName, onRenewNitro: tmp6 };
     const formatResult = intl2.format(intl5.t["3u/Je4"], obj4);
     cResult[6] = emojiName;
@@ -109,8 +109,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { onPress: first, text: intl3.string(intl5.t.LIIHRy) };
-    const AlertActionButton = tmp(5914).AlertActionButton;
-    intl3 = tmp(1128).intl;
+    const AlertActionButton = tmp(5915).AlertActionButton;
+    intl3 = tmp(1125).intl;
     const tmp20 = metroImportDefault(AlertActionButton, obj5, "confirm");
     cResult[8] = tmp20;
     tmp18 = tmp20;
@@ -121,8 +121,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
     const obj6 = { children: items };
     items = [tmp18, ];
     const obj7 = { variant: "secondary", text: intl4.string(intl5.t["Nr6v2+"]) };
-    const AlertActionButton2 = tmp(5914).AlertActionButton;
-    intl4 = tmp(1128).intl;
+    const AlertActionButton2 = tmp(5915).AlertActionButton;
+    intl4 = tmp(1125).intl;
     items[1] = metroImportDefault(AlertActionButton2, obj7, "cancel");
     const tmp25 = React4(metroImportAll, obj6);
     cResult[9] = tmp25;

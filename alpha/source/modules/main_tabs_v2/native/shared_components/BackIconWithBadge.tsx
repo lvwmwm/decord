@@ -1,24 +1,24 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 17892
+// Function ID: 17893
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6814, 21, 4971, 587, 558, 576, 504, 17849, 1202, 9406, 1385, 6928, 6931, 10657, 2]
+// Dependencies: [19, 17, 6816, 21, 4972, 587, 558, 576, 504, 17883, 1199, 9405, 1382, 6930, 6933, 10660, 2]
 
-// Module 17858 (BackIconWithBadge)
+// Module 17892 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6928 */;
-import XSmallIcon from "XSmallIcon" /* 6931 */;
-import ClipView from "ClipView" /* 9406 */;
-import XLargeIcon from "XLargeIcon" /* 10657 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17849 */;
+import native from "native" /* 1199 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6930 */;
+import XSmallIcon from "XSmallIcon" /* 6933 */;
+import ClipView from "ClipView" /* 9405 */;
+import XLargeIcon from "XLargeIcon" /* 10660 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17883 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6816 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp10;
-const ClipViewDefault = tmp10(9406);
+const ClipViewDefault = tmp10(9405);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: obj2 };
@@ -79,12 +79,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   }
   const sum = num3 + num4;
   if (sum < 10) {
-    BADGE_SIZE = tmp(1202).BADGE_SIZE;
+    BADGE_SIZE = tmp(1199).BADGE_SIZE;
   } else {
-    BADGE_SIZE = tmp(1202).BADGE_SIZE + 8;
+    BADGE_SIZE = tmp(1199).BADGE_SIZE + 8;
   }
   if (0 !== sum) {
-    const sum1 = BADGE_SIZE + 2 * tmp(1202).BADGE_PADDING;
+    const sum1 = BADGE_SIZE + 2 * tmp(1199).BADGE_PADDING;
     if (cResult[2] !== sum1) {
       size = { shape: ClipView.CutoutShape.RoundedRect, x: null, y: 16 - native.BADGE_PADDING, width: sum1, height: native.BADGE_SIZE + 2 * native.BADGE_PADDING, cornerRadius: (native.BADGE_SIZE + 2 * native.BADGE_PADDING) / 2 };
       class I {
@@ -225,7 +225,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(17849)().value;
+  const value = memo(17883)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -262,7 +262,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(9406);
+  const tmp5Result = tmp5(9405);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;
@@ -383,7 +383,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CloseIconWit
     let tmp9 = null;
     if (count > 0) {
       const obj2 = { value: count };
-      tmp9 = metroRequire(tmp(1202).Badge, obj2);
+      tmp9 = metroRequire(tmp(1199).Badge, obj2);
     }
     cResult[1] = count;
     cResult[2] = tmp9;

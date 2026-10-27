@@ -1,17 +1,17 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13869
+// Function ID: 13870
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 4823, 4903, 4826, 1087, 558, 576, 504, 9067, 4848, 1388, 2]
+// Dependencies: [19, 4824, 4904, 4827, 1084, 558, 576, 504, 9067, 4849, 1385, 2]
 
-// Module 13855 (useFavoritesGuildChannelFilter)
-import Constants from "Constants" /* 1087 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import FavoritesUtils from "FavoritesUtils" /* 4848 */;
+// Module 13869 (useFavoritesGuildChannelFilter)
+import Constants from "Constants" /* 1084 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import FavoritesUtils from "FavoritesUtils" /* 4849 */;
 import _mod9067 from "module_9067" /* 9067 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import FavoriteStore from "FavoriteStore" /* 4826 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import FavoriteStore from "FavoriteStore" /* 4827 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 17234
+// Function ID: 17235
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 5190, 7650, 5639, 1089, 558, 576, 504, 7692, 7649, 17194, 2]
+// Dependencies: [32, 19, 5191, 7651, 5640, 1086, 558, 576, 504, 7693, 7650, 17235, 2]
 
-// Module 17193 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7692 */;
+// Module 17234 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7693 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5190 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5639 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import ExperimentStore from "ExperimentStore" /* 5191 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7651 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5640 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
       }
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7692).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16, skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7693).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16, skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
   cResult[8] = tmp16;

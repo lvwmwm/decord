@@ -1,33 +1,33 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13586
+// Function ID: 13587
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4972, 4823, 13062, 13063, 1087, 12512, 21, 5052, 1202, 5234, 12, 7962, 4971, 587, 6707, 558, 576, 504, 5252, 6885, 1128, 5206, 8539, 11003, 13573, 5593, 13310, 5267, 5971, 1123, 12824, 11504, 13157, 13152, 7959, 5690, 5680, 11646, 12508, 13574, 2]
+// Dependencies: [32, 19, 17, 4973, 4824, 13076, 13077, 1084, 12520, 21, 5053, 1199, 5235, 12, 7960, 4972, 587, 6708, 558, 576, 504, 5253, 6887, 1125, 5207, 8539, 11006, 13587, 5594, 13324, 5268, 5972, 1120, 12833, 11506, 13171, 13166, 7957, 5691, 5681, 11648, 12516, 13588, 2]
 
-// Module 13572 (VoiceMessageOverlay)
+// Module 13586 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import intl7 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
-import LegacyTokens from "LegacyTokens" /* 6707 */;
-import useRefValueDefault from "useRefValue" /* 6885 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
-import ChatInputConstants from "ChatInputConstants" /* 12512 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13062 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13063 */;
+import Constants from "Constants" /* 1084 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
+import intl7 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5268 */;
+import LegacyTokens from "LegacyTokens" /* 6708 */;
+import useRefValueDefault from "useRefValue" /* 6887 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
+import ChatInputConstants from "ChatInputConstants" /* 12520 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13076 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13077 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(5971);
+const react_native = tmp(5972);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
@@ -460,7 +460,7 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
         }
       }
-      stringResult4 = obj5.string(tmp(1128).t["3qvtks"]);
+      stringResult4 = obj5.string(tmp(1125).t["3qvtks"]);
       tmp11 = stringResult4;
     }
   }

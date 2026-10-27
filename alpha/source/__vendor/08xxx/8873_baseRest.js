@@ -1,12 +1,12 @@
 // Module ID: 8873
 // Function ID: 8874
 // Name: baseRest
-// Dependencies: [5788, 5792, 549]
+// Dependencies: [5789, 5793, 549]
 
 // Module 8873 (baseRest)
 import identity from "identity" /* 549 */;
-import shortOut from "shortOut" /* 5788 */;
-import overRest from "overRest" /* 5792 */;
+import shortOut from "shortOut" /* 5789 */;
+import overRest from "overRest" /* 5793 */;
 
 
 export default function baseRest(arg0, arg1) {

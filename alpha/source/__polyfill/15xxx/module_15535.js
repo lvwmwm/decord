@@ -1,30 +1,23 @@
 // Module ID: 15535
 // Function ID: 15536
-// Dependencies: [15448, 15536]
-// Exports: getSupportedTimeZones
+// Dependencies: [15525, 15528]
+// Exports: LookupSupportedLocales
 
 // Module 15535
-const require = globalThis.__r;
-let _require;
+import _mod15525 from "module_15525" /* 15525 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 15528 */;
 
 
-export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
-  _require = locale;
-  const timezones = require("module_15536").timezones;
-  return timezones.filter((item) => {
-    function isSupported(timeZone, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const obj = { timeZone };
-        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
-        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
-      } catch (err) {
-        return false;
-      }
+export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  let num;
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod15525.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
-    return isSupported(item, locale);
-  });
+  }
+  return items;
 };

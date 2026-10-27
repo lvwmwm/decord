@@ -1,22 +1,22 @@
-// Module ID: 17417
-// Function ID: 17418
+// Module ID: 17456
+// Function ID: 17457
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 13312, 13313, 1087, 21, 4971, 587, 558, 576, 13314, 1267, 13315, 17418, 1128, 13593, 2]
+// Dependencies: [19, 17, 13326, 13327, 1084, 21, 4972, 587, 558, 576, 13328, 1264, 13329, 17457, 1125, 13607, 2]
 
-// Module 17417 (RedesignNotificationModal)
+// Module 17456 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13312 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13314 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13315 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13593 */;
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13326 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13328 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13329 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13607 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13313 */;
-import createStyles from "createStyles" /* 4971 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13327 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNo
         }
       }
     }
-    const tmp8 = jsx(tmp(17418).BellSpotIllustration, { width: 245, accessible: false });
+    const tmp8 = jsx(tmp(17457).BellSpotIllustration, { width: 245, accessible: false });
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {
@@ -142,9 +142,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNo
         }
       }
     }
-    const stringResult = obj2.string(tmp(1128).t["3nx0b5"]);
-    const intl = tmp(1128).intl;
-    const stringResult1 = intl.string(tmp(1128).t.Gf7U1T);
+    const stringResult = obj2.string(tmp(1125).t["3nx0b5"]);
+    const intl = tmp(1125).intl;
+    const stringResult1 = intl.string(tmp(1125).t.Gf7U1T);
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
     tmp10 = stringResult1;
@@ -235,10 +235,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNo
       tmp4(true);
     }
   }, items1);
-  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, headerInsideCard: true, title: intl.string(onComplete(1128).t["3nx0b5"]), subtitle: intl2.string(onComplete(1128).t.Gf7U1T) };
+  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, headerInsideCard: true, title: intl.string(onComplete(1125).t["3nx0b5"]), subtitle: intl2.string(onComplete(1125).t.Gf7U1T) };
   const tmp4 = NewUserPermissionsOnboardingDefault;
-  intl = onComplete(1128).intl;
-  intl2 = onComplete(1128).intl;
+  intl = onComplete(1125).intl;
+  intl2 = onComplete(1125).intl;
   return <View style={tmp.container}>{null}</View>;
 });
 let closure_11 = tmp3;

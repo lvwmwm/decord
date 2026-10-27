@@ -1,19 +1,19 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13520
+// Function ID: 13521
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 13488, 6689, 4883, 4845, 558, 576, 504, 13507, 8368, 11, 1128, 2]
+// Dependencies: [32, 19, 13502, 6690, 4884, 4846, 558, 576, 504, 13521, 8367, 11, 1125, 2]
 
-// Module 13506 (useMaybeGetSortedBoosts)
+// Module 13520 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl2 from "intl" /* 1128 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8368 */;
-import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 13507 */;
+import intl2 from "intl" /* 1125 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8367 */;
+import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 13521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13488 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6689 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13502 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6690 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

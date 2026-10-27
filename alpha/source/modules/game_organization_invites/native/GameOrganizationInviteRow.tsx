@@ -1,15 +1,15 @@
-// Module ID: 15213
-// Function ID: 15214
+// Module ID: 15249
+// Function ID: 15250
 // Name: GameOrganizationInviteRow
-// Dependencies: [19, 7809, 21, 558, 576, 1202, 5025, 9133, 9136, 6903, 2]
+// Dependencies: [19, 7810, 21, 558, 576, 1199, 5026, 9133, 9136, 6905, 2]
 
-// Module 15213 (GameOrganizationInviteRow)
+// Module 15249 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1202 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import Constants from "Constants" /* 7809 */;
+import native from "native" /* 1199 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import TableRow2 from "TableRow" /* 6905 */;
+import Constants from "Constants" /* 7810 */;
 import DiscordTagDefault from "DiscordTag" /* 9133 */;
 import InviteButtonDefault from "InviteButton" /* 9136 */;
 import react from "react" /* 19 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp5 = cResult[4];
     }
     if (cResult[5] !== tmp5) {
-      const Avatar = tmp(1202).Avatar;
+      const Avatar = tmp(1199).Avatar;
       const tmp9 = <Avatar source={tmp5} size={native.AvatarSizes.REFRESH_MEDIUM_32} />;
       cResult[5] = tmp5;
       cResult[6] = tmp9;

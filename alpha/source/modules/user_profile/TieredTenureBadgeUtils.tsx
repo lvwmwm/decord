@@ -1,12 +1,12 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7713
+// Function ID: 7714
 // Name: TieredTenureBadgeUtils
-// Dependencies: [1394, 2049, 2]
+// Dependencies: [1391, 2046, 2]
 // Exports: getEarnedOnDate, getEarnedTenureBadge, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 7712 (TieredTenureBadgeUtils)
-import _modDef2049 from "module_2049" /* 2049 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+// Module 7713 (TieredTenureBadgeUtils)
+import _modDef2046 from "module_2046" /* 2046 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -30,7 +30,7 @@ export const getEarnedOnDate = function getEarnedOnDate(earnedTenureBadge, premi
   } else if (null == React2[earnedTenureBadge]) {
     return null;
   } else {
-    const obj = _modDef2049(premiumSince);
+    const obj = _modDef2046(premiumSince);
     obj.add(React2[earnedTenureBadge].tenureReqNumMonths, "months");
     obj.add(1, "days");
     return obj.toDate();
@@ -54,7 +54,7 @@ export const getEarnedTenureBadge = function getEarnedTenureBadge(premiumSince) 
           let tmp6 = React2[tmp2];
           toDateResult = null;
           if (null != tmp6) {
-            let obj = _modDef2049(premiumSince);
+            let obj = _modDef2046(premiumSince);
             let addResult = obj.add(tmp6.tenureReqNumMonths, "months");
             let addResult1 = obj.add(1, "days");
             toDateResult = obj.toDate();

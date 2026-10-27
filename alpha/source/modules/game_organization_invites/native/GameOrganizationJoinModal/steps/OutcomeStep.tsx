@@ -1,34 +1,30 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 12742
+// Function ID: 12743
 // Name: OutcomeStep
-// Dependencies: [19, 11030, 12725, 21, 4971, 1128, 2406, 558, 576, 12727, 12728, 5234, 7901, 5977, 587, 12730, 5244, 7900, 2]
+// Dependencies: [32, 19, 4846, 11033, 12734, 21, 4972, 1125, 2403, 558, 576, 12736, 504, 7450, 12737, 5235, 7902, 5978, 587, 12739, 5245, 7901, 2]
 
-// Module 12733 (OutcomeStep)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl14 from "intl" /* 1128 */;
-import _modDef2406 from "module_2406" /* 2406 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import ModalScreen2 from "ModalScreen" /* 7900 */;
-import ModalContent2 from "ModalContent" /* 7901 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12727 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12728 */;
+// Module 12742 (OutcomeStep)
+import intl14 from "intl" /* 1125 */;
+import _modDef2403 from "module_2403" /* 2403 */;
+import transitionToGuild from "transitionToGuild" /* 7450 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12734 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11030 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
+let dependencyMap, num;
+
+let c10;
 let metroImportAll;
 let metroImportDefault;
-function getOutcomeContent(arg0, arg1, arg2, noun, arg4) {
+let metroRequire;
+let unpackModuleId;
+function getOutcomeContent(arg0, arg1, arg2, noun, onGoToServer) {
   let accountName;
   let intl;
   let intl10;
@@ -49,245 +45,488 @@ function getOutcomeContent(arg0, arg1, arg2, noun, arg4) {
   let obj5;
   let obj7;
   let obj9;
-  let onClose;
-  let onGoToServer;
   let orgName;
+  onGoToServer = onGoToServer.onGoToServer;
   noun = noun.noun;
-  const obj = { text: intl.string(_modDef2406.H1wMHV), onPress: onGoToServer };
-  ({ onClose, onGoToServer } = arg4);
+  const obj = { text: intl.string(intl14.t.cpT0Cq), onPress: onClose };
+  onClose = onGoToServer.onClose;
   intl = intl14.intl;
-  const obj2 = { text: intl2.string(intl14.t.cpT0Cq), onPress: onClose };
-  intl2 = intl14.intl;
-  if (arg0 === constants2.JOINED) {
+  let tmp3 = obj;
+  if (null != onGoToServer) {
+    const obj2 = { text: intl2.string(_modDef2403.H1wMHV), onPress: onGoToServer };
+    intl2 = tmp(1125).intl;
+    tmp3 = obj2;
+  }
+  if (arg0 === metroImportDefault.JOINED) {
     ({ noun: noun2, orgName, accountName } = noun);
-    const intl9 = tmp(1128).intl;
+    const intl9 = tmp(1125).intl;
     const obj3 = { noun: noun2 };
-    const formatToPlainStringResult = intl9.formatToPlainString(_modDef2406["w/spGp"], obj3);
-    if (hasOwnProperty.NEW_MEMBER !== arg2) {
+    const formatToPlainStringResult = intl9.formatToPlainString(_modDef2403["w/spGp"], obj3);
+    if (metroImportAll.NEW_MEMBER !== arg2) {
       let obj8;
-      if (hasOwnProperty.ALREADY_MEMBER !== arg2) {
-        if (hasOwnProperty.PENDING_VERIFICATION === arg2) {
-          const obj4 = { title: formatToPlainStringResult, subtitle: intl12.formatToPlainString(_modDef2406["9K7Jdt"], obj5), cta: obj };
-          intl12 = tmp(1128).intl;
+      if (metroImportAll.ALREADY_MEMBER !== arg2) {
+        if (metroImportAll.PENDING_VERIFICATION === arg2) {
+          const obj4 = { title: formatToPlainStringResult, subtitle: intl12.formatToPlainString(_modDef2403["9K7Jdt"], obj5), cta: tmp3 };
+          intl12 = tmp(1125).intl;
           obj8 = obj4;
           obj5 = { noun: noun2, orgName };
-        } else if (hasOwnProperty.APPLICATION === arg2) {
-          const obj6 = { title: formatToPlainStringResult, subtitle: intl11.formatToPlainString(_modDef2406.ODHuua, obj7), cta: obj2 };
-          intl11 = tmp(1128).intl;
+        } else if (metroImportAll.APPLICATION === arg2) {
+          const obj6 = { title: formatToPlainStringResult, subtitle: intl11.formatToPlainString(_modDef2403.ODHuua, obj7), cta: obj };
+          intl11 = tmp(1125).intl;
           obj8 = obj6;
           obj7 = { noun: noun2, orgName };
         } else {
-          const FAILED = tmp6.FAILED;
-          obj8 = { title: formatToPlainStringResult, subtitle: intl10.formatToPlainString(_modDef2406.Qo94hd, obj9), cta: obj2 };
-          intl10 = tmp(1128).intl;
+          const FAILED = tmp12.FAILED;
+          obj8 = { title: formatToPlainStringResult, subtitle: intl10.formatToPlainString(_modDef2403.Qo94hd, obj9), cta: obj };
+          intl10 = tmp(1125).intl;
           obj9 = { noun: noun2, orgName };
         }
       }
       return obj8;
     }
-    const obj10 = { title: formatToPlainStringResult, subtitle: intl13.formatToPlainString(_modDef2406.WF9Qgb, obj11), cta: obj };
-    intl13 = tmp(1128).intl;
+    const obj10 = { title: formatToPlainStringResult, subtitle: intl13.formatToPlainString(_modDef2403.WF9Qgb, obj11), cta: tmp3 };
+    intl13 = tmp(1125).intl;
     obj8 = obj10;
     obj11 = { noun: noun2, orgName, accountName };
-  } else if (constants.ALREADY_JOINED === arg1) {
-    const obj12 = { title: intl8.formatToPlainString(_modDef2406["1PMPYk"], obj13), cta: obj };
-    intl8 = tmp(1128).intl;
+  } else if (metroRequire.ALREADY_JOINED === arg1) {
+    const obj12 = { title: intl8.formatToPlainString(_modDef2403["1PMPYk"], obj13), cta: tmp3 };
+    intl8 = tmp(1125).intl;
     return obj12;
-  } else if (constants.IN_ANOTHER_ORGANIZATION === arg1) {
-    const obj14 = { title: intl6.formatToPlainString(_modDef2406.vSlR1j, obj15), subtitle: intl7.formatToPlainString(_modDef2406.kvDHqp, obj16), cta: obj2 };
-    intl6 = tmp(1128).intl;
+  } else if (metroRequire.IN_ANOTHER_ORGANIZATION === arg1) {
+    const obj14 = { title: intl6.formatToPlainString(_modDef2403.vSlR1j, obj15), subtitle: intl7.formatToPlainString(_modDef2403.kvDHqp, obj16), cta: obj };
+    intl6 = tmp(1125).intl;
     obj15 = { noun };
-    intl7 = tmp(1128).intl;
+    intl7 = tmp(1125).intl;
     return obj14;
-  } else if (constants.GUILD_FULL === arg1) {
-    const obj17 = { title: intl4.formatToPlainString(_modDef2406["/7Gy4g"], obj18), subtitle: intl5.string(_modDef2406["8TGo9L"]), cta: obj2 };
-    intl4 = tmp(1128).intl;
+  } else if (metroRequire.GUILD_FULL === arg1) {
+    const obj17 = { title: intl4.formatToPlainString(_modDef2403["/7Gy4g"], obj18), subtitle: intl5.string(_modDef2403["8TGo9L"]), cta: obj };
+    intl4 = tmp(1125).intl;
     obj18 = { noun };
-    intl5 = tmp(1128).intl;
+    intl5 = tmp(1125).intl;
     return obj17;
   } else {
-    const OTHER = tmp8.OTHER;
-    const obj19 = { title: intl3.string(_modDef2406.sXbaMb), cta: obj2 };
-    intl3 = tmp(1128).intl;
+    const OTHER = tmp14.OTHER;
+    const obj19 = { title: intl3.string(_modDef2403.sXbaMb), cta: obj };
+    intl3 = tmp(1125).intl;
     return obj19;
   }
 }
-({ GameOrganizationInviteAcceptFailureReason: c3, GameOrganizationInviteAcceptStatus: closure_4, GameOrganizationLinkedGuildJoinStatus: hasOwnProperty } = GameOrganizationInviteConstants);
-let closure_6 = GameOrganizationJoinModalConstants.closeGameOrganizationJoinModal;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ text: { textAlign: "center" } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(code) {
-  let Stack;
-  let cta;
+let _slicedToArray = _slicedToArray_mod;
+({ GameOrganizationInviteAcceptFailureReason: metroRequire, GameOrganizationInviteAcceptStatus: metroImportDefault, GameOrganizationLinkedGuildJoinStatus: metroImportAll } = GameOrganizationInviteConstants);
+let onClose = GameOrganizationJoinModalConstants.closeGameOrganizationJoinModal;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let closure_12 = createStyles.createStyles({ text: { textAlign: "center" } });
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(code) {
+  let closure_3;
   let failureReason;
+  let first;
+  let guildId;
   let guildJoinStatus;
-  let items;
-  let items1;
   let joinStatus;
   let obj4;
-  let obj6;
-  let str;
-  let subtitle;
-  let title;
-  const obj = react2;
-  const cResult = obj.c(21);
+  let stateFromStores;
+  let tmp10;
+  let tmp13;
+  let tmp19;
+  let tmp = guildId;
+  let tmp2 = dependencyMap;
+  let obj = guildId(576);
+  const cResult = obj.c(39);
   ({ joinStatus, failureReason, guildJoinStatus } = code);
   code = code.code;
-  const tmp4 = closure_9();
-  const tmp6 = useResolvedGameOrganizationInviteDefault(code);
-  if (cResult[0] === failureReason) {
-    if (cResult[1] === guildJoinStatus) {
-      let displayNoun;
-      const tmp7 = cResult[2];
-      if (tmp6 != null) {
-        displayNoun = tmp6.displayNoun;
-      }
-      if (tmp7 === displayNoun) {
-        let organization;
-        const tmp10 = cResult[3];
-        if (tmp6 != null) {
-          organization = tmp6.organization;
+  closure_12();
+  const tmp6 = stateFromStores(12736)(code);
+  guildId = undefined;
+  const tmp5 = stateFromStores;
+  if (tmp6 != null) {
+    guildId = tmp6.guildId;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function u() {
+      const tmp2 = null != guildId && null != GuildStore.getGuild(tmp);
+      return tmp2;
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(first, tmp10);
+  [tmp13, dependencyMap] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const obj3 = react;
+  if (cResult[3] === guildJoinStatus) {
+    if (cResult[4] === tmp13) {
+      if (cResult[5] === stateFromStores) {
+        let tmp14;
+        let tmp17;
+        let tmp16;
+        if (cResult[6] === joinStatus) {
+          tmp14 = cResult[7];
         }
-        if (tmp10 === organization) {
-          let tmp12;
-          if (cResult[4] === joinStatus) {
-            tmp12 = cResult[5];
-          }
-          ({ title, subtitle, cta } = tmp12);
-          if (cResult[6] === tmp4.text) {
-            let tmp19;
-            if (cResult[7] === title) {
-              tmp19 = cResult[8];
-            }
-            if (cResult[9] === tmp4.text) {
-              let tmp22;
-              if (cResult[10] === subtitle) {
-                tmp22 = cResult[11];
+        _slicedToArray = tmp14;
+        if (cResult[8] !== tmp14) {
+          class C {
+            constructor() {
+              if (closure_3) {
+                tmp = globalThis;
+                _setTimeout = setTimeout;
+                num = 5000;
+                closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                return () => clearTimeout(closure_0);
+              } else {
+                return;
               }
-              if (cResult[12] === tmp19) {
-                let tmp26;
-                if (cResult[13] === tmp22) {
-                  tmp26 = cResult[14];
-                }
-                if (cResult[15] === cta.onPress) {
-                  let tmp30;
-                  if (cResult[16] === cta.text) {
-                    tmp30 = cResult[17];
-                  }
-                  if (cResult[18] === tmp26) {
-                    let tmp33;
-                    if (cResult[19] === tmp30) {
-                      tmp33 = cResult[20];
-                    }
-                    return tmp33;
-                  }
-                  const obj2 = { children: items };
-                  items = [tmp26, tmp30];
-                  const tmp35 = metroImportAll(ModalScreen2.ModalScreen, obj2);
-                  cResult[18] = tmp26;
-                  cResult[19] = tmp30;
-                  cResult[20] = tmp35;
-                  tmp33 = tmp35;
-                }
-                const obj3 = { children: metroImportDefault(components_Button_Button.Button, obj4) };
-                const ModalFooter = tmp(12730).ModalFooter;
-                obj4 = { text: null, size: "lg", onPress: null };
-                ({ text: obj9.text, onPress: obj9.onPress } = cta);
-                const tmp32 = metroImportDefault(ModalFooter, obj3);
-                cResult[15] = cta.onPress;
-                cResult[16] = cta.text;
-                cResult[17] = tmp32;
-                tmp30 = tmp32;
-              }
-              const obj5 = { children: metroImportAll(Stack, obj6) };
-              const ModalContent = tmp(7901).ModalContent;
-              obj6 = { spacing: nativeDefault.space.PX_8, children: items1 };
-              Stack = tmp(5977).Stack;
-              items1 = [tmp19, tmp22];
-              const tmp29 = metroImportDefault(ModalContent, obj5);
-              cResult[12] = tmp19;
-              cResult[13] = tmp22;
-              cResult[14] = tmp29;
-              tmp26 = tmp29;
             }
-            let tmp24 = null != subtitle;
-            if (tmp24) {
-              const obj7 = { variant: "text-md/normal", color: "text-muted", style: tmp4.text, children: subtitle };
-              tmp24 = metroImportDefault(tmp(5234).Text, obj7);
-            }
-            cResult[9] = tmp4.text;
-            cResult[10] = subtitle;
-            cResult[11] = tmp24;
-            tmp22 = tmp24;
           }
-          const obj8 = { variant: "heading-xl/semibold", style: tmp4.text, accessibilityRole: "header", children: title };
-          const tmp21 = metroImportDefault(Text_Text.Text, obj8);
-          cResult[6] = tmp4.text;
-          cResult[7] = title;
-          cResult[8] = tmp21;
-          tmp19 = tmp21;
+          const items1 = [tmp14];
+          cResult[8] = tmp14;
+          cResult[9] = C;
+          cResult[10] = items1;
+          tmp17 = items1;
+          tmp16 = C;
+        } else {
+          class C {
+            constructor() {
+              if (closure_3) {
+                tmp = globalThis;
+                _setTimeout = setTimeout;
+                num = 5000;
+                closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                return () => clearTimeout(closure_0);
+              } else {
+                return;
+              }
+            }
+          }
+          tmp17 = cResult[10];
         }
+        const effect = obj3.useEffect(tmp16, tmp17);
+        if (cResult[11] === guildId) {
+          class C {
+            constructor() {
+              if (closure_3) {
+                tmp = globalThis;
+                _setTimeout = setTimeout;
+                num = 5000;
+                closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                return () => clearTimeout(closure_0);
+              } else {
+                return;
+              }
+            }
+          }
+          if (cResult[14] === failureReason) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          const tmp21 = getOutcomeContent;
+          const tmp5Result = tmp5(12737);
+          if (tmp6 != null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          if (undefined == null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          const obj2 = { noun: tmp5Result(obj4), orgName: undefined, accountName: "[Account/Username]" };
+          obj4 = { displayNoun: undefined, lowercase: true };
+          if (tmp6 != null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          if (undefined == null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          const obj5 = { onClose, onGoToServer: tmp26 };
+          if (stateFromStores) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          } else {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          cResult[14] = failureReason;
+          cResult[15] = guildJoinStatus;
+          cResult[16] = tmp19;
+          cResult[17] = stateFromStores;
+          const tmp21Result = tmp21(joinStatus, failureReason, guildJoinStatus, obj2, obj5);
+          if (tmp6 != null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          cResult[18] = undefined;
+          if (tmp6 != null) {
+            class C {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          cResult[19] = undefined;
+          cResult[20] = tmp14;
+          cResult[21] = joinStatus;
+          cResult[22] = tmp21Result;
+        }
+        const fn2 = function y() {
+          let tmp2 = null != guildId;
+          const tmp = guildId;
+          if (tmp2) {
+            tmp2 = stateFromStores;
+          }
+          if (tmp2) {
+            onClose();
+            const obj = transitionToGuild;
+            obj.transitionToGuild(tmp);
+          }
+        };
+        cResult[11] = guildId;
+        cResult[12] = stateFromStores;
+        cResult[13] = fn2;
+        tmp19 = fn2;
       }
     }
   }
-  let displayNoun1;
-  const tmp13 = getOutcomeContent;
-  const tmp5Result = getGameOrganizationDisplayNounDefault;
-  if (tmp6 != null) {
-    displayNoun1 = tmp6.displayNoun;
+  let tmp15 = !stateFromStores && !tmp13;
+  if (tmp15) {
+    class C {
+      constructor() {
+        if (closure_3) {
+          tmp = globalThis;
+          _setTimeout = setTimeout;
+          num = 5000;
+          closure_0 = setTimeout(() => closure_1_2(true), 5000);
+          return () => clearTimeout(closure_0);
+        } else {
+          return;
+        }
+      }
+    }
+    let flag = false;
+    if (joinStatus === constants2.JOINED) {
+      class C {
+        constructor() {
+          if (closure_3) {
+            tmp = globalThis;
+            _setTimeout = setTimeout;
+            num = 5000;
+            closure_0 = setTimeout(() => closure_1_2(true), 5000);
+            return () => clearTimeout(closure_0);
+          } else {
+            return;
+          }
+        }
+      }
+      if (constants3.NEW_MEMBER !== guildJoinStatus) {
+        class C {
+          constructor() {
+            if (closure_3) {
+              tmp = globalThis;
+              _setTimeout = setTimeout;
+              num = 5000;
+              closure_0 = setTimeout(() => closure_1_2(true), 5000);
+              return () => clearTimeout(closure_0);
+            } else {
+              return;
+            }
+          }
+        }
+      }
+      flag = true;
+    }
+    tmp15 = flag;
   }
-  if (displayNoun1 == null) {
-    displayNoun1 = null;
-  }
-  const obj10 = { noun: tmp5Result({ displayNoun: displayNoun1, lowercase: true }), orgName: str, accountName: "[Account/Username]" };
-  str = undefined;
-  if (tmp6 != null) {
-    str = tmp6.organization.name;
-  }
-  if (str == null) {
-    str = "";
-  }
-  const obj19 = { onClose: onGoToServer, onGoToServer };
-  const tmp13Result = tmp13(joinStatus, failureReason, guildJoinStatus, obj10, obj19);
-  cResult[0] = failureReason;
-  cResult[1] = guildJoinStatus;
-  let displayNoun2;
-  if (tmp6 != null) {
-    displayNoun2 = tmp6.displayNoun;
-  }
-  cResult[2] = displayNoun2;
-  let organization1;
-  if (tmp6 != null) {
-    organization1 = tmp6.organization;
-  }
-  cResult[3] = organization1;
-  cResult[4] = joinStatus;
-  cResult[5] = tmp13Result;
-  tmp12 = tmp13Result;
+  cResult[3] = guildJoinStatus;
+  cResult[4] = tmp13;
+  cResult[5] = stateFromStores;
+  cResult[6] = joinStatus;
+  cResult[7] = tmp15;
+  tmp14 = tmp15;
 }) : (function OutcomeStep(code) {
+  let closure_2;
   let cta;
   let failureReason;
   let guildJoinStatus;
-  let items;
-  let items1;
+  let items3;
+  let items4;
   let joinStatus;
-  let obj9;
+  let obj11;
   let str;
   let subtitle;
+  let tmp17;
   ({ joinStatus, failureReason, guildJoinStatus } = code);
+  let stateFromStores;
+  dependencyMap = undefined;
+  let flag;
   code = code.code;
-  const tmp = closure_9();
-  const tmp4 = useResolvedGameOrganizationInviteDefault(code);
+  let tmp = closure_12();
+  let tmp2 = stateFromStores;
+  const tmp4 = stateFromStores(12736)(code);
+  let guildId;
+  if (tmp4 != null) {
+    guildId = tmp4.guildId;
+  }
+  let obj = guildId(504);
+  const items = [GuildStore];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const tmp2 = null != guildId && null != GuildStore.getGuild(tmp);
+    return tmp2;
+  });
+  const tmp8 = flag(react.useState(false), 2);
+  dependencyMap = tmp8[1];
+  let tmp9 = !stateFromStores && !tmp8[0];
+  if (tmp9) {
+    flag = false;
+    if (joinStatus === constants2.JOINED) {
+      if (constants3.NEW_MEMBER !== guildJoinStatus) {
+        if (constants3.ALREADY_MEMBER !== guildJoinStatus) {
+          flag = false;
+        }
+      }
+      flag = true;
+    }
+    tmp9 = flag;
+  }
+  flag = tmp9;
+  const items1 = [tmp9];
+  const effect = obj2.useEffect(() => {
+    let closure_0;
+    if (flag) {
+      const _setTimeout = setTimeout;
+      const timeout = setTimeout(() => closure_1_2(true), 5000);
+      return () => clearTimeout(closure_0);
+    }
+  }, items1);
+  const items2 = [guildId, stateFromStores];
+  const callback = obj2.useCallback(() => {
+    let tmp2 = null != guildId;
+    const tmp = guildId;
+    if (tmp2) {
+      tmp2 = stateFromStores;
+    }
+    if (tmp2) {
+      onClose();
+      const obj = transitionToGuild;
+      obj.transitionToGuild(tmp);
+    }
+  }, items2);
   let displayNoun;
-  const tmp5 = getOutcomeContent;
-  const tmp6 = getGameOrganizationDisplayNounDefault;
+  const tmp14 = getOutcomeContent;
+  const tmp2Result = tmp2(12737);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
   if (displayNoun == null) {
     displayNoun = null;
   }
-  const obj = { noun: tmp6({ displayNoun, lowercase: true }), orgName: str, accountName: "[Account/Username]" };
+  const obj3 = { noun: tmp2Result({ displayNoun, lowercase: true }), orgName: str, accountName: "[Account/Username]" };
   str = undefined;
   if (tmp4 != null) {
     str = tmp4.organization.name;
@@ -295,33 +534,38 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   if (str == null) {
     str = "";
   }
-  const obj2 = { onClose: onGoToServer, onGoToServer };
-  const tmp5Result = tmp5(joinStatus, failureReason, guildJoinStatus, obj, obj2);
-  ({ subtitle, cta } = tmp5Result);
-  const title = tmp5Result.title;
-  const ModalScreen = ModalScreen2.ModalScreen;
-  const ModalContent = ModalContent2.ModalContent;
-  const obj3 = { spacing: nativeDefault.space.PX_8, children: items };
-  const Stack = Stack_Stack.Stack;
-  items = [, ];
-  const obj4 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
-  items[0] = metroImportDefault(Text_Text.Text, obj4);
-  let tmp11Result = null != subtitle;
-  if (tmp11Result) {
-    const obj5 = { variant: "text-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-    tmp11Result = tmp11(tmp10(5234).Text, obj5);
+  const obj4 = { onClose, onGoToServer: tmp17 };
+  if (stateFromStores) {
+    tmp17 = callback;
+  } else {
+    tmp17 = null;
   }
-  const obj6 = { children: items1 };
-  items[1] = tmp11Result;
-  items1 = [, ];
-  const obj7 = { children: metroImportAll(Stack, obj3) };
-  items1[0] = metroImportDefault(ModalContent, obj7);
-  const obj8 = { children: metroImportDefault(components_Button_Button.Button, obj9) };
-  const ModalFooter = tmp10(12730).ModalFooter;
-  obj9 = { text: cta.text, size: "lg", onPress: cta.onPress };
-  items1[1] = metroImportDefault(ModalFooter, obj8);
-  return metroImportAll(ModalScreen, obj6);
+  const tmp14Result = tmp14(joinStatus, failureReason, guildJoinStatus, obj3, obj4);
+  ({ subtitle, cta } = tmp14Result);
+  const title = tmp14Result.title;
+  const ModalScreen = tmp6(7901).ModalScreen;
+  const ModalContent = tmp6(7902).ModalContent;
+  const obj5 = { spacing: tmp2(587).space.PX_8, children: items3 };
+  const Stack = tmp6(5978).Stack;
+  items3 = [, ];
+  const obj6 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
+  items3[0] = closure_10(guildId(5235).Text, obj6);
+  let tmp20Result = null != subtitle;
+  if (tmp20Result) {
+    const obj7 = { variant: "text-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
+    tmp20Result = tmp20(tmp6(5235).Text, obj7);
+  }
+  const obj8 = { children: items4 };
+  items3[1] = tmp20Result;
+  items4 = [, ];
+  const obj9 = { children: closure_11(Stack, obj5) };
+  items4[0] = closure_10(ModalContent, obj9);
+  const obj10 = { children: closure_10(guildId(5245).Button, obj11) };
+  const ModalFooter = tmp6(12739).ModalFooter;
+  obj11 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
+  items4[1] = closure_10(ModalFooter, obj10);
+  return closure_11(ModalScreen, obj8);
 });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/steps/OutcomeStep.tsx");
 
-export const OutcomeStep = tmp5;
+export const OutcomeStep = tmp4;

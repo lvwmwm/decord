@@ -1,18 +1,18 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14313
+// Function ID: 14314
 // Name: ContentInventoryActivityStore
-// Dependencies: [5712, 8824, 1087, 8613, 8617, 8847, 8829, 8825, 12, 504, 584, 2]
+// Dependencies: [5713, 8824, 1084, 8613, 8617, 8847, 8829, 8825, 12, 504, 584, 2]
 
-// Module 14283 (ContentInventoryActivityStore)
+// Module 14313 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8613 */;
 import utils from "utils" /* 8617 */;
 import matchUtils from "matchUtils" /* 8825 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8829 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 8824 */;
 import size from "module_2" /* 2 */;
 

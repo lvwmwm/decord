@@ -1,10 +1,10 @@
-// Module ID: 1418
-// Function ID: 1419
+// Module ID: 1415
+// Function ID: 1416
 // Name: AvatarDecorationConstants
-// Dependencies: [1419, 2]
+// Dependencies: [1416, 2]
 
-// Module 1418 (AvatarDecorationConstants)
-import AvatarConstants from "AvatarConstants" /* 1419 */;
+// Module 1415 (AvatarDecorationConstants)
+import AvatarConstants from "AvatarConstants" /* 1416 */;
 import size from "module_2" /* 2 */;
 
 const AvatarSizes = AvatarConstants.AvatarSizes;

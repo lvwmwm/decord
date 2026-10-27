@@ -1,11 +1,11 @@
-// Module ID: 18975
-// Function ID: 18976
+// Module ID: 19013
+// Function ID: 19014
 // Name: UserSettingsManager
-// Dependencies: [7214, 4799, 2]
+// Dependencies: [7216, 4800, 2]
 
-// Module 18975 (UserSettingsManager)
-import UserSettings from "UserSettings" /* 4799 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+// Module 19013 (UserSettingsManager)
+import UserSettings from "UserSettings" /* 4800 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 let c2 = false;
@@ -33,7 +33,7 @@ class UserSettingsManager extends AutomaticLifecycleManager {
       const self2 = this;
       const date = new Date();
       const timezoneOffset = date.getTimezoneOffset();
-      let TimezoneOffset = timezoneOffset(4799).TimezoneOffset;
+      let TimezoneOffset = timezoneOffset(4800).TimezoneOffset;
       if (TimezoneOffset.getSetting() !== timezoneOffset) {
         const _setImmediate = setImmediate;
         setImmediate(() => {

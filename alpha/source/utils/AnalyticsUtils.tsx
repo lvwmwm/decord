@@ -1,28 +1,28 @@
-// Module ID: 1267
-// Function ID: 1268
+// Module ID: 1264
+// Function ID: 1265
 // Name: AnalyticsUtils
-// Dependencies: [109, 19, 1268, 1372, 1087, 1374, 1375, 562, 1376, 1275, 1377, 1257, 584, 1378, 1128, 7, 1281, 2, 1380]
+// Dependencies: [109, 19, 1265, 1369, 1084, 1371, 1372, 562, 1373, 1272, 1374, 1254, 584, 1375, 1125, 7, 1278, 2, 1377]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
-// Module 1267 (AnalyticsUtils)
+// Module 1264 (AnalyticsUtils)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl from "intl" /* 1128 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import v1 from "v1" /* 1281 */;
-import AccessibilityConstants from "AccessibilityConstants" /* 1374 */;
-import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import utils_GlobalUtils from "utils/GlobalUtils" /* 1376 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1377 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1380 */;
+import intl from "intl" /* 1125 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import v1 from "v1" /* 1278 */;
+import AccessibilityConstants from "AccessibilityConstants" /* 1371 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import utils_GlobalUtils from "utils/GlobalUtils" /* 1373 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1374 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1375 */;
+import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1377 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ImpressionStore from "ImpressionStore" /* 1268 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import Constants from "Constants" /* 1087 */;
+import ImpressionStore from "ImpressionStore" /* 1265 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
+import Constants from "Constants" /* 1084 */;
 import shim from "shim" /* 562 */;
-import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1275 */;
+import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1272 */;
 import size from "module_2" /* 2 */;
 
 let AnalyticEvents;

@@ -1,20 +1,20 @@
-// Module ID: 17311
-// Function ID: 17312
+// Module ID: 17352
+// Function ID: 17353
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 8332, 558, 576, 1211, 1128, 4799, 16143, 5210, 17312, 2002, 11209, 2]
+// Dependencies: [19, 8331, 558, 576, 1208, 1125, 4800, 16181, 5211, 17353, 1999, 11212, 2]
 
-// Module 17311 (ActivityPrivacyDefaultSharingSetting)
+// Module 17352 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16143 */;
+import intl6 from "intl" /* 1125 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16181 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -32,8 +32,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptions
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: intl.string(intl6.t.FzgQna), subLabel: intl2.string(intl6.t.SQxoyc) };
-    intl = tmp(1128).intl;
-    intl2 = tmp(1128).intl;
+    intl = tmp(1125).intl;
+    intl2 = tmp(1125).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -41,8 +41,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptions
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: intl3.string(intl6.t["1hvuGH"]), subLabel: intl4.string(intl6.t.odUCPE) };
-    intl3 = tmp(1128).intl;
-    intl4 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
+    intl4 = tmp(1125).intl;
     cResult[1] = obj3;
     tmp5 = obj3;
   } else {
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptions
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp5, ];
     const obj4 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: intl5.string(intl6.t.fQc5la) };
-    intl5 = tmp(1128).intl;
+    intl5 = tmp(1125).intl;
     items[2] = obj4;
     cResult[2] = items;
     tmp6 = items;
@@ -108,7 +108,7 @@ let obj = {
       const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
       ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(17312, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+      obj3.openLazy(asyncRequire(17353, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

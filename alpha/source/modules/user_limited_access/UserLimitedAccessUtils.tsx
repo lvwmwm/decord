@@ -1,11 +1,11 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7420
+// Function ID: 7421
 // Name: UserLimitedAccessUtils
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 7418 (UserLimitedAccessUtils)
-import Constants from "Constants" /* 1087 */;
+// Module 7420 (UserLimitedAccessUtils)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

@@ -1,17 +1,17 @@
-// Module ID: 7654
-// Function ID: 7655
+// Module ID: 7655
+// Function ID: 7656
 // Name: CollectiblesItemRecord
-// Dependencies: [7655, 1993, 7656, 7657, 7658, 1087, 1995, 2]
+// Dependencies: [7656, 1990, 7657, 7658, 7659, 1084, 1992, 2]
 // Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 7654 (CollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7655 */;
-import NameplateRecord from "NameplateRecord" /* 1993 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7656 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7657 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7658 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7655 (CollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7656 */;
+import NameplateRecord from "NameplateRecord" /* 1990 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7657 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7658 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7659 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

@@ -1,26 +1,26 @@
-// Module ID: 18567
-// Function ID: 18568
+// Module ID: 18601
+// Function ID: 18602
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 10901, 10899, 18456, 10902, 21, 5052, 11439, 4971, 558, 576, 10900, 5247, 9976, 5212, 5297, 5838, 18501, 11436, 11435, 18568, 10905, 18453, 5824, 5252, 587, 5206, 7168, 11438, 2]
+// Dependencies: [32, 19, 17, 10904, 10902, 18490, 10905, 21, 5053, 11442, 4972, 558, 576, 10903, 5248, 9978, 5213, 5298, 5839, 18535, 11439, 11438, 18602, 10908, 18487, 5825, 5253, 587, 5207, 7170, 11441, 2]
 
-// Module 18567 (VoicePanelVideoRenderer)
+// Module 18601 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9976 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10899 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10902 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10905 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11439 */;
-import VideoActionCreators from "VideoActionCreators" /* 18453 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18456 */;
+import timing from "timing" /* 5207 */;
+import spring from "spring" /* 5248 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9978 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10902 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10905 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10908 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11442 */;
+import VideoActionCreators from "VideoActionCreators" /* 18487 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10901 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10904 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import createStyles from "createStyles" /* 4971 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let set, set2, set3, set4, tmp11, tmp9;
 let closure_12;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport2 = tmp2(5052);
+const ReanimatedRexport2 = tmp2(5053);
 const PixelRatio = react_native.PixelRatio;
 let VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
@@ -1876,7 +1876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                         const tmp = safeAreaState2;
                                                         const tmp2 = require;
                                                         if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-                                                          const tmp2Result = tmp2(5052);
+                                                          const tmp2Result = tmp2(5053);
                                                           tmp2Result.runOnJS(closure_25)();
                                                         }
                                                       }
@@ -2195,7 +2195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                               const tmp = safeAreaState2;
                                                               const tmp2 = require;
                                                               if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-                                                                const tmp2Result = tmp2(5052);
+                                                                const tmp2Result = tmp2(5053);
                                                                 tmp2Result.runOnJS(closure_25)();
                                                               }
                                                             }
@@ -2564,7 +2564,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const tmp = safeAreaState2;
         const tmp2 = require;
         if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-          const tmp2Result = tmp2(5052);
+          const tmp2Result = tmp2(5053);
           tmp2Result.runOnJS(callback2)();
         }
       }

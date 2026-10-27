@@ -1,14 +1,14 @@
-// Module ID: 10775
-// Function ID: 10776
+// Module ID: 10778
+// Function ID: 10779
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 10773, 504, 10776, 558, 576, 10774, 5623, 2]
+// Dependencies: [5, 10776, 504, 10779, 558, 576, 10777, 5624, 2]
 
-// Module 10775 (useEmbeddedAppCSP)
+// Module 10778 (useEmbeddedAppCSP)
 import react from "react" /* 576 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10774 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10776 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10777 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10779 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10773 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10776 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5623);
+const getURLForApplication = tmp(5624);
 let obj = {
   getQueryId(arg0) {
     let combined = null;
@@ -88,7 +88,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 const fetchStore = createFetchStore(EmbeddedAppCSPStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppCSP(url) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppCSP(embeddedAppUrl) {
   let data;
   let error;
   const obj = react;
@@ -98,7 +98,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
   if (cResult[0] === isEmbeddedAppFramePolicyEnabled) {
     let tmp5;
     let tmp11;
-    if (cResult[1] === url) {
+    if (cResult[1] === embeddedAppUrl) {
       tmp5 = cResult[2];
     }
     ({ data, error } = fetchStore(tmp5));
@@ -153,25 +153,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
   let applicationRouterOrigin = null;
   if (isEmbeddedAppFramePolicyEnabled) {
     applicationRouterOrigin = null;
-    if (null != url) {
+    if (null != embeddedAppUrl) {
       const tmpResult = getURLForApplication;
-      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(url);
+      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(embeddedAppUrl);
     }
   }
   cResult[0] = isEmbeddedAppFramePolicyEnabled;
-  cResult[1] = url;
+  cResult[1] = embeddedAppUrl;
   cResult[2] = applicationRouterOrigin;
   tmp5 = applicationRouterOrigin;
-}) : (function useEmbeddedAppCSP(url) {
+}) : (function useEmbeddedAppCSP(embeddedAppUrl) {
   let obj4;
   const obj = EmbeddedAppFramePolicyExperiment;
   const isEmbeddedAppFramePolicyEnabled = obj.useIsEmbeddedAppFramePolicyEnabled("useEmbeddedAppCSP");
   let applicationRouterOrigin = null;
   if (isEmbeddedAppFramePolicyEnabled) {
     applicationRouterOrigin = null;
-    if (null != url) {
+    if (null != embeddedAppUrl) {
       const tmpResult = getURLForApplication;
-      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(url);
+      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(embeddedAppUrl);
     }
   }
   const data = fetchStore(applicationRouterOrigin).data;

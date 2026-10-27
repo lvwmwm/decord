@@ -1,13 +1,13 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 11574
+// Function ID: 11575
 // Name: VoicePanelUtils
-// Dependencies: [4823, 5714, 6804, 558, 576, 573, 2]
+// Dependencies: [4824, 5715, 6805, 558, 576, 573, 2]
 
-// Module 11572 (VoicePanelUtils)
+// Module 11574 (VoicePanelUtils)
 import react from "react" /* 576 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import VoicePanelStore from "VoicePanelStore" /* 6804 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import VoicePanelStore from "VoicePanelStore" /* 6805 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

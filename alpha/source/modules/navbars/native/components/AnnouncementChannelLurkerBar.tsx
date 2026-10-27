@@ -1,15 +1,15 @@
-// Module ID: 13845
-// Function ID: 13846
+// Module ID: 13859
+// Function ID: 13860
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 13366, 1128, 5234, 5244, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 13380, 1125, 5235, 5245, 2]
 
-// Module 13845 (AnnouncementChannelLurkerBar)
+// Module 13859 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13366 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13380 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   }
   ({ wrapper, text } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(channel(1128).t.Hl0Mqh);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(channel(1125).t.Hl0Mqh);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   }
   if (cResult[3] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp10 = closure_3(channel(5234).Text, obj2);
+    const tmp10 = closure_3(channel(5235).Text, obj2);
     cResult[3] = tmp4.text;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -68,8 +68,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
     tmp8 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(channel(1128).t["4z5PU1"]);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(channel(1125).t["4z5PU1"]);
     cResult[5] = stringResult1;
     tmp11 = stringResult1;
   } else {
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   }
   if (cResult[6] !== tmp5) {
     const obj3 = { onPress: tmp5, text: tmp11, size: "sm", variant: "secondary", grow: true };
-    const tmp15 = closure_3(channel(5244).Button, obj3);
+    const tmp15 = closure_3(channel(5245).Button, obj3);
     cResult[6] = tmp5;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -108,9 +108,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   channel = channel.channel;
   const tmp = closure_5();
   let obj = { style: tmp.wrapper, children: items };
-  const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1128).t.Hl0Mqh) };
-  const Text = channel(5234).Text;
-  intl = channel(1128).intl;
+  const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1125).t.Hl0Mqh) };
+  const Text = channel(5235).Text;
+  intl = channel(1125).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = {
     onPress: function handleFollowing() {
@@ -121,13 +121,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
         const result = obj.showChannelFollowingActionSheet(id, guildId);
       }
     },
-    text: intl2.string(channel(1128).t["4z5PU1"]),
+    text: intl2.string(channel(1125).t["4z5PU1"]),
     size: "sm",
     variant: "secondary",
     grow: true
   };
-  const Button = channel(5244).Button;
-  intl2 = channel(1128).intl;
+  const Button = channel(5245).Button;
+  intl2 = channel(1125).intl;
   items[1] = closure_3(Button, obj3);
   return closure_4(View, obj);
 });

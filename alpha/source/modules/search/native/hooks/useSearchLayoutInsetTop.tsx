@@ -1,11 +1,11 @@
-// Module ID: 18330
-// Function ID: 18331
+// Module ID: 18364
+// Function ID: 18365
 // Name: useSearchLayoutInsetTop
-// Dependencies: [558, 1633, 2]
+// Dependencies: [558, 1630, 2]
 // Exports: default
 
-// Module 18330 (useSearchLayoutInsetTop)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+// Module 18364 (useSearchLayoutInsetTop)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 6833
-// Function ID: 6834
+// Module ID: 6835
+// Function ID: 6836
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1087, 21, 4971, 6651, 587, 558, 576, 1128, 1202, 5234, 5978, 2]
+// Dependencies: [19, 1084, 21, 4972, 6652, 587, 558, 576, 1125, 1199, 5235, 5979, 2]
 
-// Module 6833 (QuarantineModeInfoAlert)
+// Module 6835 (QuarantineModeInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AlertDefault from "Alert" /* 5978 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import AlertDefault from "Alert" /* 5979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import TextStyles from "TextStyles" /* 6652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuarantineMo
   const tmp4 = closure_5();
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.EouHwv);
     cResult[0] = stringResult;
     first = stringResult;
@@ -59,7 +59,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuarantineMo
   }
   const text = tmp4.text;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl3.t.zNPBMA);
     cResult[3] = stringResult1;
     tmp10 = stringResult1;

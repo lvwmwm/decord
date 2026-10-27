@@ -1,12 +1,12 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 5877
+// Function ID: 5878
 // Name: isVideoBackgroundSupported
-// Dependencies: [2014, 5718, 2]
+// Dependencies: [2011, 5719, 2]
 // Exports: default
 
-// Module 5876 (isVideoBackgroundSupported)
-import Constants from "Constants" /* 5718 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+// Module 5877 (isVideoBackgroundSupported)
+import Constants from "Constants" /* 5719 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;

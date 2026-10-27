@@ -1,14 +1,14 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17307
+// Function ID: 17308
 // Name: DisableStreamPreviewsSetting
-// Dependencies: [8332, 558, 4799, 11209, 1128, 2]
+// Dependencies: [8331, 558, 4800, 11212, 1125, 2]
 
-// Module 17266 (DisableStreamPreviewsSetting)
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
+// Module 17307 (DisableStreamPreviewsSetting)
+import intl2 from "intl" /* 1125 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

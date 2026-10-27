@@ -1,19 +1,19 @@
-// Module ID: 13038
-// Function ID: 13039
+// Module ID: 13052
+// Function ID: 13053
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6015, 21, 4971, 13013, 587, 558, 576, 5252, 12974, 2]
+// Dependencies: [19, 17, 6016, 21, 4972, 13026, 587, 558, 576, 5253, 12986, 2]
 
-// Module 13038 (CheckpointButton)
+// Module 13052 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5252 */;
-import CheckpointTextDefault from "CheckpointText" /* 12974 */;
-import CheckpointPressable from "CheckpointPressable" /* 13013 */;
+import useToken from "useToken" /* 5253 */;
+import CheckpointTextDefault from "CheckpointText" /* 12986 */;
+import CheckpointPressable from "CheckpointPressable" /* 13026 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

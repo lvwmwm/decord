@@ -1,17 +1,17 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 4827
+// Function ID: 4828
 // Name: FavoriteStore
-// Dependencies: [1246, 4827, 4836, 1087, 1211, 12, 504, 584, 2]
+// Dependencies: [1243, 4828, 4837, 1084, 1208, 12, 504, 584, 2]
 
-// Module 4826 (FavoriteStore)
+// Module 4827 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import FavoritesConstants from "FavoritesConstants" /* 4836 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import Constants from "Constants" /* 1087 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import FavoritesConstants from "FavoritesConstants" /* 4837 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

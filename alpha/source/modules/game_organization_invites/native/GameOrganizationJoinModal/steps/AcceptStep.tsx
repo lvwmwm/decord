@@ -1,25 +1,25 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12740
+// Function ID: 12741
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12725, 21, 4971, 587, 558, 576, 5669, 5234, 5977, 12727, 1505, 11321, 5663, 1128, 7900, 7901, 2406, 12732, 12730, 6696, 5244, 2]
+// Dependencies: [5, 32, 19, 17, 12734, 21, 4972, 587, 558, 576, 5670, 5235, 5978, 12736, 1502, 11324, 5664, 1125, 7901, 7902, 2403, 12741, 12739, 6697, 5245, 2]
 // Exports: AcceptStep
 
-// Module 12731 (AcceptStep)
+// Module 12740 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2406 from "module_2406" /* 2406 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12727 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12732 */;
+import _modDef2403 from "module_2403" /* 2403 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5670 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12736 */;
+import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12725 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
       }
     }
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp4.benefitCard, children: items };
-    const Stack = tmp(5977).Stack;
+    const Stack = tmp(5978).Stack;
     items = [tmp5, tmp11];
     const tmp17 = authStore(Stack, obj3);
     cResult[5] = tmp4.benefitCard;
@@ -239,7 +239,7 @@ export const AcceptStep = function AcceptStep(code) {
   const tmp3 = dependencyMap;
   const tmp = closure_11();
   const tmp4 = useResolvedGameOrganizationInviteDefault(code);
-  obj = code(1505);
+  obj = code(1502);
   importDefault = obj.useNavigation();
   [tmp7, c2] = _slicedToArray(react.useState(false), 2);
   const tmp6 = _slicedToArray(react.useState(false), 2);
@@ -249,17 +249,17 @@ export const AcceptStep = function AcceptStep(code) {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
     let tmp11 = closure_9;
-    const ModalScreen = tmp5(7900).ModalScreen;
-    const ModalContent = tmp5(7901).ModalContent;
+    const ModalScreen = tmp5(7901).ModalScreen;
+    const ModalContent = tmp5(7902).ModalContent;
     let obj2 = { spacing: tmp2(587).space.PX_48, children: items1 };
-    const Stack3 = tmp5(5977).Stack;
+    const Stack3 = tmp5(5978).Stack;
     let obj3 = { spacing: tmp2(587).space.PX_24, children: items };
-    const Stack4 = tmp5(5977).Stack;
+    const Stack4 = tmp5(5978).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5234).Text;
-    const intl6 = tmp5(1128).intl;
+    const Text2 = tmp5(5235).Text;
+    const intl6 = tmp5(1125).intl;
     formatToPlainString = intl6.formatToPlainString;
-    WmxMAI = tmp2(2406).WmxMAI;
+    WmxMAI = tmp2(2403).WmxMAI;
     if (str == null) {
       str = "other";
     }
@@ -271,28 +271,28 @@ export const AcceptStep = function AcceptStep(code) {
     items[1] = tmp11(GameOrganizationLinkedServerCardDefault, obj8);
     items1 = [tmp10(Stack4, obj3), ];
     const obj9 = { spacing: nativeDefault.space.PX_24, children: items2 };
-    const Stack = tmp5(5977).Stack;
-    const obj10 = { variant: "heading-lg/semibold", children: intl.string(_modDef2406.yFqGy8) };
-    const Text = tmp5(5234).Text;
-    intl = tmp5(1128).intl;
+    const Stack = tmp5(5978).Stack;
+    const obj10 = { variant: "heading-lg/semibold", children: intl.string(_modDef2403.yFqGy8) };
+    const Text = tmp5(5235).Text;
+    intl = tmp5(1125).intl;
     items2 = [tmp11(Text, obj10), ];
     const obj11 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, children: items3 };
-    const Stack2 = tmp5(5977).Stack;
-    const obj12 = { text: intl2.string(_modDef2406.WUVzdk) };
-    intl2 = tmp5(1128).intl;
+    const Stack2 = tmp5(5978).Stack;
+    const obj12 = { text: intl2.string(_modDef2403.WUVzdk) };
+    intl2 = tmp5(1125).intl;
     items3 = [tmp11(closure_12, obj12), ];
-    const obj13 = { text: intl3.string(_modDef2406.MEQJ1m) };
-    intl3 = tmp5(1128).intl;
+    const obj13 = { text: intl3.string(_modDef2403.MEQJ1m) };
+    intl3 = tmp5(1125).intl;
     items3[1] = tmp11(closure_12, obj13);
     items2[1] = closure_10(Stack2, obj11);
     items1[1] = closure_10(Stack, obj9);
     items4 = [tmp11(ModalContent, obj6), ];
     const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(12730).ModalFooter;
+    const ModalFooter = tmp5(12739).ModalFooter;
     obj15 = { children: items5 };
-    ButtonGroup = tmp5(6696).ButtonGroup;
+    ButtonGroup = tmp5(6697).ButtonGroup;
     const obj16 = {
-      text: intl4.string(_modDef2406.BaZ6nt),
+      text: intl4.string(_modDef2403.BaZ6nt),
       size: "lg",
       loading: tmp7,
       disabled: tmp7,
@@ -300,12 +300,12 @@ export const AcceptStep = function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5244).Button;
-    intl4 = tmp5(1128).intl;
+    const Button = tmp5(5245).Button;
+    intl4 = tmp5(1125).intl;
     items5 = [tmp11(Button, obj16), ];
-    const obj17 = { text: intl5.string(code(1128).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5244).Button;
-    intl5 = tmp5(1128).intl;
+    const obj17 = { text: intl5.string(code(1125).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
+    const Button2 = tmp5(5245).Button;
+    intl5 = tmp5(1125).intl;
     items5[1] = tmp11(Button2, obj17);
     items4[1] = tmp11(ModalFooter, obj14);
     return closure_10(ModalScreen, obj5);

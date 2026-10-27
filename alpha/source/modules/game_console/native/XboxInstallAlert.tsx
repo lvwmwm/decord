@@ -1,18 +1,18 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11669
+// Function ID: 11670
 // Name: XboxInstallAlert
-// Dependencies: [19, 9626, 21, 4971, 587, 558, 576, 1128, 1202, 11668, 1384, 5660, 5978, 2]
+// Dependencies: [19, 9628, 21, 4972, 587, 558, 576, 1125, 1199, 11670, 1381, 5661, 5979, 2]
 
-// Module 11667 (XboxInstallAlert)
+// Module 11669 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import AlertDefault from "Alert" /* 5978 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11668 */;
+import native from "native" /* 1199 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import AlertDefault from "Alert" /* 5979 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11670 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9626 */;
-import createStyles from "createStyles" /* 4971 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9628 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,13 +40,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxInstallA
   const tmp4 = closure_6();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(require("intl").t["12Kx2v"]);
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(require("intl").t.msZW3j);
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     const stringResult2 = intl3.string(require("intl").t["n+VrqG"]);
-    const intl4 = tmp(1128).intl;
+    const intl4 = tmp(1125).intl;
     const stringResult3 = intl4.string(require("intl").t.kYaBOg);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

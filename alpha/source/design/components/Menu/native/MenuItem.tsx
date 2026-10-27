@@ -1,17 +1,17 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15279
+// Function ID: 15280
 // Name: MenuItem
-// Dependencies: [19, 21, 4971, 558, 576, 15237, 5246, 7239, 7237, 2]
+// Dependencies: [19, 21, 4972, 558, 576, 15273, 5247, 7241, 7239, 2]
 
-// Module 15243 (MenuItem)
+// Module 15279 (MenuItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5246 */;
-import FormRowDefault from "FormRow" /* 7237 */;
-import FormLabelDefault from "FormLabel" /* 7239 */;
-import Menu from "Menu" /* 15237 */;
+import IconDefault from "Icon" /* 5247 */;
+import FormRowDefault from "FormRow" /* 7239 */;
+import FormLabelDefault from "FormLabel" /* 7241 */;
+import Menu from "Menu" /* 15273 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
 // Module ID: 8746
 // Function ID: 8747
 // Name: UserProfileAvatar
-// Dependencies: [109, 19, 17, 8672, 7304, 21, 558, 576, 8732, 8747, 8679, 8750, 1128, 2]
+// Dependencies: [109, 19, 17, 8672, 7306, 21, 558, 576, 8732, 8747, 8679, 8750, 1125, 2]
 
 // Module 8746 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 7304 */;
+import Constants from "Constants" /* 7306 */;
 import Constants2 from "Constants" /* 8672 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8732 */;
 import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8750 */;
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenableUser
             tmp17 = tmp22;
           }
           if (tmp12) {
-            const string = tmp(1128).intl.string;
+            const string = tmp(1125).intl.string;
             class C {
               constructor() {
                 obj = { action: TrackUserProfileActions.VIEW_AVATAR };

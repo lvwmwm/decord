@@ -1,32 +1,32 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17890
+// Function ID: 17891
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 11184, 4820, 21, 4971, 587, 5151, 558, 576, 7038, 17857, 6908, 1128, 17858, 5234, 17859, 10078, 17860, 7221, 7253, 7278, 7584, 6930, 17864, 17865, 12857, 5597, 5146, 1633, 17441, 10625, 5037, 2]
+// Dependencies: [19, 17, 11187, 4821, 21, 4972, 587, 5152, 558, 576, 7040, 17891, 6910, 1125, 17892, 5235, 17893, 10080, 17894, 7223, 7255, 7280, 7585, 6932, 17898, 17899, 12866, 5598, 5147, 1630, 17482, 10628, 5038, 2]
 
-// Module 17856 (notifications/Notifications)
+// Module 17890 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import native from "native" /* 5037 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
-import LayerScope2 from "LayerScope" /* 5597 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6930 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7038 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7253 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import MainTabsConstants from "MainTabsConstants" /* 11184 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12857 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17441 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17857 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17859 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 17860 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 17865 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import native from "native" /* 5038 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5147 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
+import LayerScope2 from "LayerScope" /* 5598 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6932 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7040 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7255 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import MainTabsConstants from "MainTabsConstants" /* 11187 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12866 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17482 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17891 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17893 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 17894 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 17899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ let size;
 let size1;
 let tmp4;
 let tmp7;
-const ThemedGradientDefault = tmp4(10625);
-const NotificationCenterPermissionNudgeDefault = tmp7(17864);
+const ThemedGradientDefault = tmp4(10628);
+const NotificationCenterPermissionNudgeDefault = tmp7(17898);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();
@@ -148,12 +148,12 @@ let closure_11 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   if (!nestedInLaunchPad) {
     const obj5 = { style: tmp4.headerTitle, children: items1 };
     const obj6 = { style: tmp4.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp(6908).PressableOpacity;
-    intl = tmp(1128).intl;
+    const PressableOpacity = tmp(6910).PressableOpacity;
+    intl = tmp(1125).intl;
     items1 = [closure_7(PressableOpacity, obj6), , ];
     const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp(5234).Text;
-    intl2 = tmp(1128).intl;
+    const Text = tmp(5235).Text;
+    intl2 = tmp(1125).intl;
     items1[1] = closure_7(Text, obj7);
     const obj8 = { style: tmp4.actionButtons, children: items2 };
     const obj9 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: tmp9 };
@@ -200,12 +200,12 @@ let closure_11 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   if (!nestedInLaunchPad) {
     const obj2 = { style: tmp.headerTitle, children: items1 };
     const obj3 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp11(6908).PressableOpacity;
-    intl = tmp11(1128).intl;
+    const PressableOpacity = tmp11(6910).PressableOpacity;
+    intl = tmp11(1125).intl;
     items1 = [closure_7(PressableOpacity, obj3), , ];
     const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp11(5234).Text;
-    intl2 = tmp11(1128).intl;
+    const Text = tmp11(5235).Text;
+    intl2 = tmp11(1125).intl;
     items1[1] = closure_7(Text, obj4);
     const obj5 = { style: tmp.actionButtons, children: items2 };
     const obj6 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: callback };
@@ -326,7 +326,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifications(ar
             return tmp32;
           }
           const obj3 = { zIndex: 1, children: metroImportDefault(useAnalyticsLocations.AnalyticsLocationProvider, obj4) };
-          const LayerScope = tmp(5597).LayerScope;
+          const LayerScope = tmp(5598).LayerScope;
           obj4 = { value: analyticsLocations, children: tmp28 };
           const tmp34 = metroImportDefault(LayerScope, obj3);
           cResult[17] = analyticsLocations;

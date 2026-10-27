@@ -1,13 +1,13 @@
-// Module ID: 1633
-// Function ID: 1634
+// Module ID: 1630
+// Function ID: 1631
 // Name: useSafeAreaInsets
-// Dependencies: [1502, 1634, 558, 576, 2]
+// Dependencies: [1499, 1631, 558, 576, 2]
 // Exports: getSafeAreaInsets
 
-// Module 1633 (useSafeAreaInsets)
+// Module 1630 (useSafeAreaInsets)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1634 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1631 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

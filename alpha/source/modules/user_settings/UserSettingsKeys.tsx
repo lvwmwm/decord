@@ -1,9 +1,9 @@
-// Module ID: 6721
-// Function ID: 6722
+// Module ID: 6722
+// Function ID: 6723
 // Name: UserSettingsKeys
 // Dependencies: [2]
 
-// Module 6721 (UserSettingsKeys)
+// Module 6722 (UserSettingsKeys)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsKeys.tsx");

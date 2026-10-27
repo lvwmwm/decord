@@ -1,35 +1,35 @@
-// Module ID: 13654
-// Function ID: 13655
+// Module ID: 13668
+// Function ID: 13669
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9131, 4823, 9051, 4901, 9065, 7073, 1087, 21, 4971, 5268, 587, 1267, 558, 576, 8560, 1128, 6903, 9130, 7220, 1505, 5267, 504, 5971, 9082, 5263, 6924, 4978, 9061, 13614, 9050, 5711, 5234, 13655, 1202, 9097, 6908, 9128, 5244, 7221, 2]
+// Dependencies: [32, 19, 17, 9131, 4824, 9051, 4902, 9065, 7075, 1084, 21, 4972, 5269, 587, 1264, 558, 576, 8560, 1125, 6905, 9130, 7222, 1502, 5268, 504, 5972, 9082, 5264, 6926, 4979, 9061, 13628, 9050, 5712, 5235, 13669, 1199, 9097, 6910, 9128, 5245, 7223, 2]
 
-// Module 13654 (GuildInvite)
+// Module 13668 (GuildInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import react_native from "react-native" /* 5971 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7073 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7220 */;
+import intl5 from "intl" /* 1125 */;
+import NavigatorConstants from "NavigatorConstants" /* 5269 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
+import react_native from "react-native" /* 5972 */;
+import TableRow2 from "TableRow" /* 6905 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7075 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7222 */;
 import GroupIcon from "GroupIcon" /* 8560 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9082 */;
 import InstantInviteRowDefault from "InstantInviteRow" /* 9130 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9131 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13614 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 9051 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4902 */;
 import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9065 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMor
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl5.t.zrLIIz);
     cResult[3] = stringResult;
     tmp12 = stringResult;
@@ -221,7 +221,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
         }
       }
       const obj3 = { data: tmp5, renderItem: tmp7, contentContainerStyle: tmp4.suggestionRowsContainer, ListFooterComponent: tmp8, ItemSeparatorComponent: tmp12, keyExtractor: tmp14, getItemType: tmp15 };
-      const tmp18 = closure_17(tmp(7220).FlashList, obj3);
+      const tmp18 = closure_17(tmp(7222).FlashList, obj3);
       cResult[11] = tmp5;
       cResult[12] = tmp7;
       cResult[13] = tmp4.suggestionRowsContainer;

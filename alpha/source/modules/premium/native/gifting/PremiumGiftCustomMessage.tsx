@@ -1,19 +1,19 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 10617
+// Function ID: 10618
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1394, 21, 4971, 587, 558, 576, 1128, 7180, 10450, 2]
+// Dependencies: [19, 17, 1391, 21, 4972, 587, 558, 576, 1125, 7182, 10452, 2]
 
-// Module 10614 (PremiumGiftCustomMessage)
+// Module 10617 (PremiumGiftCustomMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import TextArea2 from "TextArea" /* 7180 */;
-import NativeGiftContext from "NativeGiftContext" /* 10450 */;
+import intl3 from "intl" /* 1125 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import TextArea2 from "TextArea" /* 7182 */;
+import NativeGiftContext from "NativeGiftContext" /* 10452 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCustomMe
   ({ customGiftMessage, setCustomGiftMessage } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.ZkOo1U);
     cResult[0] = stringResult;
     first = stringResult;
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCustomMe
     tmp8 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl3.t.B3miE8);
     cResult[5] = stringResult1;
     tmp9 = stringResult1;

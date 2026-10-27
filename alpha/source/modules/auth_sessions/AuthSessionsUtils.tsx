@@ -1,15 +1,15 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16111
+// Function ID: 16112
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 16074, 558, 576, 504, 1128, 2049, 2]
+// Dependencies: [19, 502, 16112, 558, 576, 504, 1125, 2046, 2]
 // Exports: formatDate
 
-// Module 16073 (AuthSessionsUtils)
-import intl2 from "intl" /* 1128 */;
-import _modDef2049 from "module_2049" /* 2049 */;
+// Module 16111 (AuthSessionsUtils)
+import intl2 from "intl" /* 1125 */;
+import _modDef2046 from "module_2046" /* 2046 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 16074 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 16112 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ export const formatDate = function formatDate(arg0) {
     const intl = intl2.intl;
     stringResult = intl.string(intl2.t.TXCmfL);
   } else {
-    const obj = _modDef2049(arg0);
+    const obj = _modDef2046(arg0);
     stringResult = obj.fromNow();
   }
   return stringResult;

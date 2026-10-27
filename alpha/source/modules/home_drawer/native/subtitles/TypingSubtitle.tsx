@@ -1,14 +1,14 @@
-// Module ID: 17773
-// Function ID: 17774
+// Module ID: 17814
+// Function ID: 17815
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17772, 8502, 8551, 5234, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17813, 8502, 8551, 5235, 2]
 
-// Module 17773 (TypingSubtitle)
+// Module 17814 (TypingSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 17772 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 17813 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TypingSubt
           if (null != channelName) {
             const obj3 = { variant: "text-xs/medium", children: items };
             items = [channelName, "  \u00B7  "];
-            tmp11 = React3(tmp(5234).Text, obj3);
+            tmp11 = React3(tmp(5235).Text, obj3);
           }
           cResult[7] = channelName;
           cResult[8] = tmp11;
@@ -144,11 +144,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TypingSubt
   items = [tmp7, ];
   let tmp5Result = null;
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: items2 };
-  const Text = tmp(5234).Text;
+  const Text = tmp(5235).Text;
   if (null != channelName) {
     const obj5 = { variant: "text-xs/medium", children: items1 };
     items1 = [channelName, "  \u00B7  "];
-    tmp5Result = tmp5(tmp(5234).Text, obj5);
+    tmp5Result = tmp5(tmp(5235).Text, obj5);
   }
   items2 = [tmp5Result, text];
   items[1] = React3(Text, obj4);

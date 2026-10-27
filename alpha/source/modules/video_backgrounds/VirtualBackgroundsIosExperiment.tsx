@@ -1,10 +1,10 @@
-// Module ID: 5877
-// Function ID: 5878
+// Module ID: 5878
+// Function ID: 5879
 // Name: VirtualBackgroundsIosExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 
-// Module 5877 (VirtualBackgroundsIosExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 5878 (VirtualBackgroundsIosExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

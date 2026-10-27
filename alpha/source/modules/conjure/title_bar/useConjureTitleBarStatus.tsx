@@ -1,11 +1,11 @@
-// Module ID: 17842
-// Function ID: 17843
+// Module ID: 14170
+// Function ID: 14171
 // Name: useConjureTitleBarStatus
-// Dependencies: [17839, 10722, 558, 576, 17841, 504, 2]
+// Dependencies: [14171, 10725, 558, 576, 14172, 504, 2]
 
-// Module 17842 (useConjureTitleBarStatus)
-import conjureHomeProjectState2 from "conjureHomeProjectState" /* 17839 */;
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 17841 */;
+// Module 14170 (useConjureTitleBarStatus)
+import conjureHomeProjectState2 from "conjureHomeProjectState" /* 14171 */;
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14172 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ function summarize(arg0) {
         id = tmp5.id;
       }
     } else if ("unread" === tmp9) {
-      let tmp6Result = tmp6(10722);
+      let tmp6Result = tmp6(10725);
       let conjureProjectMentionCount = tmp6Result.getConjureProjectMentionCount(tmp5.id);
       num = num + conjureProjectMentionCount;
       if (conjureProjectMentionCount > 0) {

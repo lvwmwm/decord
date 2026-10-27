@@ -1,11 +1,11 @@
-// Module ID: 14385
-// Function ID: 14386
+// Module ID: 14421
+// Function ID: 14422
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 7406, 1128, 2]
+// Dependencies: [558, 576, 7408, 1125, 2]
 
-// Module 14385 (useGameNameAndCoverImage)
+// Module 14421 (useGameNameAndCoverImage)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 7406 */;
+import useGame from "useGame" /* 7408 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,8 +56,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
       name1 = arg1;
     }
     if (name1 == null) {
-      const intl = tmp(1128).intl;
-      name1 = intl.string(tmp(1128).t.GIWFlF);
+      const intl = tmp(1125).intl;
+      name1 = intl.string(tmp(1125).t.GIWFlF);
     }
     let name2;
     if (data != null) {
@@ -95,8 +95,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
     name = arg1;
   }
   if (name == null) {
-    const intl = tmp(1128).intl;
-    name = intl.string(tmp(1128).t.GIWFlF);
+    const intl = tmp(1125).intl;
+    name = intl.string(tmp(1125).t.GIWFlF);
   }
   return obj2;
 });

@@ -1,17 +1,17 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14621
+// Function ID: 14622
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 4823, 4913, 1087, 21, 558, 576, 504, 5989, 5711, 7414, 1128, 7061, 14586, 2]
+// Dependencies: [19, 4824, 4914, 1084, 21, 558, 576, 504, 5990, 5712, 7416, 1125, 7063, 14622, 2]
 
-// Module 14585 (InAppReportsIgnoreUserElement)
+// Module 14621 (InAppReportsIgnoreUserElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
+import Constants from "Constants" /* 1084 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7416 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

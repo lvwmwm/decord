@@ -1,19 +1,19 @@
 // Module ID: 9134
 // Function ID: 9135
 // Name: BotTag
-// Dependencies: [19, 17, 1375, 21, 4971, 587, 1128, 558, 576, 9135, 5234, 2]
+// Dependencies: [19, 17, 1372, 21, 4972, 587, 1125, 558, 576, 9135, 5235, 2]
 
 // Module 9134 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl5 from "intl" /* 1125 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9135 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     let tmp30;
     const _Symbol4 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1128).intl;
+      const intl4 = tmp(1125).intl;
       const stringResult = intl4.string(intl5.t["7s687k"]);
       cResult[4] = stringResult;
       tmp30 = stringResult;
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     let tmp27;
     const _Symbol3 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
+      const intl3 = tmp(1125).intl;
       const stringResult1 = intl3.string(intl5.t.g76OcH);
       cResult[5] = stringResult1;
       tmp27 = stringResult1;
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     let tmp24;
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const stringResult2 = intl2.string(intl5.t["39trQT"]);
       cResult[6] = stringResult2;
       tmp24 = stringResult2;
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   } else {
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult3 = intl.string(intl5.t.qwJHjo);
       cResult[7] = stringResult3;
       tmp21 = stringResult3;
@@ -279,7 +279,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
   items = [tmp2.tag, tmp11, style, prop];
   items1 = [tmp7Result, ];
   let str3 = "text-xs/semibold";
-  const Text = tmp17(5234).Text;
+  const Text = tmp17(5235).Text;
   const tmp24 = metroRequire;
   const tmp25 = View;
   const tmp26 = hasOwnProperty;

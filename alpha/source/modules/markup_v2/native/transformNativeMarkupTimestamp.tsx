@@ -1,11 +1,11 @@
 // Module ID: 8498
 // Function ID: 8499
 // Name: transformNativeMarkupTimestamp
-// Dependencies: [8499, 5980, 2]
+// Dependencies: [8499, 5981, 2]
 // Exports: transformNativeTimestamp
 
 // Module 8498 (transformNativeMarkupTimestamp)
-import MarkupTypes from "MarkupTypes" /* 5980 */;
+import MarkupTypes from "MarkupTypes" /* 5981 */;
 import TimestampUtils from "TimestampUtils" /* 8499 */;
 import size from "module_2" /* 2 */;
 

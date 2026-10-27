@@ -1,17 +1,17 @@
-// Module ID: 13387
-// Function ID: 13388
+// Module ID: 13401
+// Function ID: 13402
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 4883, 4889, 21, 558, 576, 4909, 504, 12813, 1128, 13388, 13358, 2]
+// Dependencies: [19, 502, 4884, 4890, 21, 558, 576, 4910, 504, 12822, 1125, 13402, 13372, 2]
 
-// Module 13387 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 13401 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4889 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4909 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12813 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13358 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4890 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4910 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12822 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13372 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return;
         }
       }
-      stringResult = obj5.string(tmp(1128).t.Viksoo);
+      stringResult = obj5.string(tmp(1125).t.Viksoo);
     } else {
       class R {
         constructor() {
@@ -154,7 +154,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return;
         }
       }
-      stringResult = obj4.string(tmp(1128).t["/PGQf0"]);
+      stringResult = obj4.string(tmp(1125).t["/PGQf0"]);
     }
     cResult[8] = tmp11;
     cResult[9] = stringResult;
@@ -184,7 +184,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return;
         }
       }
-      stringResult1 = obj7.string(tmp(1128).t.ml72ZU);
+      stringResult1 = obj7.string(tmp(1125).t.ml72ZU);
     } else {
       class R {
         constructor() {
@@ -193,7 +193,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return;
         }
       }
-      stringResult1 = obj6.string(tmp(1128).t["8HW7r9"]);
+      stringResult1 = obj6.string(tmp(1125).t["8HW7r9"]);
     }
     cResult[10] = tmp11;
     cResult[11] = stringResult1;
@@ -214,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return;
       }
     }
-    const tmp18 = jsx(tmp(13388).ChatXIcon, {});
+    const tmp18 = jsx(tmp(13402).ChatXIcon, {});
     cResult[12] = tmp18;
   } else {
     class R {
@@ -265,22 +265,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = GuildAutomodActionActionCreators;
     const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj2 = guildId(4909);
+  const obj2 = guildId(4910);
   const automodReason = obj2.getAutomodReason(stateFromStores);
   const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl2 = tmp(1128).intl;
-    stringResult = intl2.string(tmp(1128).t.Viksoo);
+    const intl2 = tmp(1125).intl;
+    stringResult = intl2.string(tmp(1125).t.Viksoo);
   } else {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t["/PGQf0"]);
+    const intl = tmp(1125).intl;
+    stringResult = intl.string(tmp(1125).t["/PGQf0"]);
   }
   if (automodReason === tmp6.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl4 = tmp(1128).intl;
-    stringResult1 = intl4.string(tmp(1128).t.ml72ZU);
+    const intl4 = tmp(1125).intl;
+    stringResult1 = intl4.string(tmp(1125).t.ml72ZU);
   } else {
-    const intl3 = tmp(1128).intl;
-    stringResult1 = intl3.string(tmp(1128).t["8HW7r9"]);
+    const intl3 = tmp(1125).intl;
+    stringResult1 = intl3.string(tmp(1125).t["8HW7r9"]);
   }
   ChatInputGuardDefault;
   return <tmp9 type="simple-action" actionOnPress={callback} actionLabel={stringResult} icon={null} message={stringResult1} />;

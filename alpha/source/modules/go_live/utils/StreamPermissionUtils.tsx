@@ -1,20 +1,20 @@
-// Module ID: 6652
-// Function ID: 6653
+// Module ID: 6653
+// Function ID: 6654
 // Name: StreamPermissionUtils
-// Dependencies: [5715, 4827, 4901, 4845, 4903, 5630, 1087, 6639, 5994, 6653, 6662, 558, 576, 504, 2]
+// Dependencies: [5716, 4828, 4902, 4846, 4904, 5631, 1084, 6640, 5995, 6654, 6663, 558, 576, 504, 2]
 // Exports: getStreamEligibleChannels
 
-// Module 6652 (StreamPermissionUtils)
-import Constants from "Constants" /* 1087 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import ChannelUtils from "ChannelUtils" /* 5994 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6639 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6653 */;
-import GameConsoleStore from "GameConsoleStore" /* 5715 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+// Module 6653 (StreamPermissionUtils)
+import Constants from "Constants" /* 1084 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import GuildChannelStore from "GuildChannelStore" /* 4902 */;
+import ChannelUtils from "ChannelUtils" /* 5995 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6640 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6654 */;
+import GameConsoleStore from "GameConsoleStore" /* 5716 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6662);
+      const tmp11Result = tmp11(6663);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

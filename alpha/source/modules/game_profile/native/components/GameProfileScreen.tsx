@@ -1,16 +1,16 @@
 // Module ID: 9252
 // Function ID: 9253
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9253, 21, 4971, 587, 558, 576, 1128, 5244, 8659, 9254, 5660, 9245, 7406, 8581, 5052, 9251, 9271, 5206, 9272, 9277, 9294, 5210, 9296, 5269, 9297, 9295, 9299, 9506, 9516, 9517, 5582, 5265, 2]
+// Dependencies: [32, 19, 17, 9253, 21, 4972, 587, 558, 576, 1125, 5245, 8659, 9254, 5661, 9245, 7408, 8581, 5053, 9251, 9271, 5207, 9272, 9277, 9294, 5211, 9296, 5270, 9297, 9295, 9299, 9505, 9515, 9516, 5583, 5266, 2]
 
 // Module 9252 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
+import intl3 from "intl" /* 1125 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5211 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9251 */;
 import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9277 */;
@@ -20,7 +20,7 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GameProfileStore from "GameProfileStore" /* 9253 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetBut
   const cResult = obj.c(4);
   onPress = onPress.onPress;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t.l8JeHg);
     cResult[0] = stringResult;
     first = stringResult;
@@ -60,7 +60,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GetBut
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const stringResult1 = intl2.string(intl3.t.Vsxqmz);
     cResult[1] = stringResult1;
     tmp6 = stringResult1;

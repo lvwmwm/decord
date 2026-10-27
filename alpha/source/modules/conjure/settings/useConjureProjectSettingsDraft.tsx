@@ -1,16 +1,16 @@
-// Module ID: 12152
-// Function ID: 12153
+// Module ID: 12180
+// Function ID: 12181
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6773, 504, 12153, 12156, 12158, 10735, 6774, 7345, 12159, 1128, 3830, 12160, 10720, 2]
+// Dependencies: [5, 32, 19, 6774, 504, 12181, 12163, 12184, 10738, 6775, 7347, 12185, 1125, 3831, 12166, 10723, 2]
 // Exports: default
 
-// Module 12152 (useConjureProjectSettingsDraft)
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
+// Module 12180 (useConjureProjectSettingsDraft)
+import _modDef3831 from "module_3831" /* 3831 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6775 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -209,10 +209,10 @@ export default function useConjureProjectSettingsDraft(arg0, guild_id) {
   const items5 = [setChecked2];
   const callback5 = obj5.useCallback((arg0) => {
     if (arg0.length > ConjureProjectTypes.MAX_PROJECT_COLLABORATOR_ROLES) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { max: ConjureProjectTypes.MAX_PROJECT_COLLABORATOR_ROLES };
-      prop = _modDef3830["dH7+/Z"];
+      prop = _modDef3831["dH7+/Z"];
       closure_19(formatToPlainString(prop, obj));
     } else {
       closure_15(arg0);

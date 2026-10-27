@@ -1,12 +1,12 @@
 // Module ID: 8792
 // Function ID: 8793
 // Name: MediaPlaybackExperiment
-// Dependencies: [1455, 8793, 2]
+// Dependencies: [1452, 8793, 2]
 // Exports: initializeMediaPlaybackExperiment, isNativeMediaPlaybackEnabled
 
 // Module 8792 (MediaPlaybackExperiment)
 import react_nativeDefault from "react-native" /* 8793 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;

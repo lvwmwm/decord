@@ -1,18 +1,18 @@
-// Module ID: 18331
-// Function ID: 18332
+// Module ID: 18365
+// Function ID: 18366
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 9743, 4971, 587, 558, 576, 7584, 7095, 1633, 9699, 1128, 18332, 18334, 2]
+// Dependencies: [109, 19, 17, 21, 9745, 4972, 587, 558, 576, 7585, 7097, 1630, 9701, 1125, 18366, 18368, 2]
 
-// Module 18331 (ContextMenuCommandNavigator)
+// Module 18365 (ContextMenuCommandNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import HeaderShared from "HeaderShared" /* 9701 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
-import createStyles from "createStyles" /* 4971 */;
+import NativeStackView from "NativeStackView" /* 9745 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,10 +57,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(7095);
+  const tmpResult = tmp(7097);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
-  ({ left, right } = accessibilityNativeStackOptions(1633)());
-  accessibilityNativeStackOptions(1633)();
+  ({ left, right } = accessibilityNativeStackOptions(1630)());
+  accessibilityNativeStackOptions(1630)();
   if (cResult[2] === left) {
     let tmp10;
     if (cResult[3] === right) {
@@ -88,9 +88,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
                       return closure_0(dependencyMap[14]).default;
                     }
           };
-          obj3 = { title: intl.string(tmp(1128).t.PHjkRE) };
+          obj3 = { title: intl.string(tmp(1125).t.PHjkRE) };
           const Screen = closure_9.Screen;
-          intl = tmp(1128).intl;
+          intl = tmp(1125).intl;
           const tmp16 = closure_7(Screen, obj2);
           cResult[11] = tmp16;
           tmp13 = tmp16;

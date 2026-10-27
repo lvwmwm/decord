@@ -1,19 +1,19 @@
-// Module ID: 7480
-// Function ID: 7481
+// Module ID: 7481
+// Function ID: 7482
 // Name: trackSoundPlayed
-// Dependencies: [2021, 4823, 5714, 4874, 6008, 1087, 1394, 7445, 1267, 2]
+// Dependencies: [2018, 4824, 5715, 4875, 6009, 1084, 1391, 7446, 1264, 2]
 // Exports: default
 
-// Module 7480 (trackSoundPlayed)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import SoundboardConstants from "SoundboardConstants" /* 6008 */;
-import SoundboardTypes from "SoundboardTypes" /* 7445 */;
-import RunningGameStore from "RunningGameStore" /* 2021 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+// Module 7481 (trackSoundPlayed)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SoundboardConstants from "SoundboardConstants" /* 6009 */;
+import SoundboardTypes from "SoundboardTypes" /* 7446 */;
+import RunningGameStore from "RunningGameStore" /* 2018 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
 let c10;

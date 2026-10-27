@@ -1,20 +1,20 @@
-// Module ID: 18371
-// Function ID: 18372
+// Module ID: 18405
+// Function ID: 18406
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2068, 8332, 21, 1128, 1388, 16845, 558, 576, 2053, 504, 11209, 15979, 2]
+// Dependencies: [19, 2065, 8331, 21, 1125, 1385, 16887, 558, 576, 2050, 504, 11212, 16017, 2]
 
-// Module 18371 (SettingsOverviewScreen)
+// Module 18405 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl8 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16845 */;
+import intl8 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 2050 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16887 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ function getOverviewSettings(isPremiumUser) {
   ({ ACCOUNT: arr[1], CONTENT_AND_SOCIAL: arr[2], DATA_AND_PRIVACY: arr[3], SPONSORED_CONTENT_PREFERENCES: arr[4], FAMILY_CENTER: arr[5], AUTHORIZED_APPS: arr[6], DEVICES: arr[7], CONNECTIONS: arr[8], CLIPS: arr[9], SCAN_QR_CODE: arr[10] } = MobileUserSettings);
   const items1 = [obj, , , , , , , , , ];
   const obj2 = { label: intl2.string(intl8.t["SuS+RB"]), settings: items2.filter(GlobalUtils.isNotNullish) };
-  intl2 = tmp(1128).intl;
+  intl2 = tmp(1125).intl;
   items2 = [, , , , , , , ];
   ({ COLLECTIBLES_SHOP: arr3[0], QUEST_HOME: arr3[1] } = MobileUserSettings);
   let PREMIUM1 = null;
@@ -58,31 +58,31 @@ function getOverviewSettings(isPremiumUser) {
   ({ PREMIUM_MANAGE_SUBSCRIPTIONS: arr3[3], PREMIUM_GUILD_BOOSTING: arr3[4], PREMIUM_GIFTING: arr3[5], GUILD_ROLE_SUBSCRIPTIONS: arr3[6], PREMIUM_RESTORE_SUBSCRIPTION: arr3[7] } = MobileUserSettings);
   items1[1] = obj2;
   const obj3 = { label: intl3.string(intl8.t.f2n1TP), settings: items3.filter(GlobalUtils.isNotNullish) };
-  intl3 = tmp(1128).intl;
+  intl3 = tmp(1125).intl;
   items3 = [, , , , , , , , , , ];
   ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7] } = MobileUserSettings);
   items3[8] = MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN;
   ({ APP_ICONS: arr4[9], ADVANCED: arr4[10] } = MobileUserSettings);
   items1[2] = obj3;
   const obj4 = { label: intl4.string(intl8.t["Yl/Riu"]), settings: items4 };
-  intl4 = tmp(1128).intl;
+  intl4 = tmp(1125).intl;
   items4 = [, , ];
   ({ SUPPORT: arr5[0], UPLOAD_DEBUG_LOGS: arr5[1], ACKNOWLEDGEMENTS: arr5[2] } = MobileUserSettings);
   items1[3] = obj4;
   const obj5 = { label: intl5.string(intl8.t.LRmNAl), settings: items5 };
-  intl5 = tmp(1128).intl;
+  intl5 = tmp(1125).intl;
   items5 = [MobileUserSettings.CHANGE_LOG];
   items1[4] = obj5;
   const obj6 = { settings: items6 };
   items6 = [MobileUserSettings.LOGOUT];
   items1[5] = obj6;
   const obj7 = { label: intl6.string(intl8.t.CbItOL), settings: items7 };
-  intl6 = tmp(1128).intl;
+  intl6 = tmp(1125).intl;
   items7 = [, , , , , , ];
   ({ APP_VERSION: arr8[0], DEVICE_INFO: arr8[1], COPY_CLIENT_INFO: arr8[2], VIEW_DEBUG_LOGS: arr8[3], CACHE_ACTIONS: arr8[4], REACT_COMPILER: arr8[5], UPLOAD_INTL_DATA: arr8[6] } = MobileUserSettings);
   items1[6] = obj7;
   const obj8 = { label: intl7.string(intl8.t["/tZh0A"]), settings: items8 };
-  intl7 = tmp(1128).intl;
+  intl7 = tmp(1125).intl;
   items8 = [, ];
   ({ BUG_REPORTER: arr9[0], CREATE_BUG_REPORT: arr9[1] } = MobileUserSettings);
   items1[7] = obj8;

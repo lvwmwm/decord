@@ -1,18 +1,18 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14491
+// Function ID: 14492
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4971, 558, 576, 8667, 8660, 1128, 1202, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 8667, 8660, 1125, 1199, 2]
 
-// Module 14455 (AvatarDecorationProductPreview)
+// Module 14491 (AvatarDecorationProductPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
 import useShopProductItems from "useShopProductItems" /* 8660 */;
 import useCurrentUser from "useCurrentUser" /* 8667 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDeco
     let tmp6;
     const fullSizePreview = tmp4.fullSizePreview;
     if (cResult[0] !== firstAvatarDecoration.label) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj4 = { a11y_text: firstAvatarDecoration.label };
       const formatToPlainStringResult = intl.formatToPlainString(intl2.t.Do2lxE, obj4);
       cResult[0] = firstAvatarDecoration.label;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDeco
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const Avatar = tmp(1202).Avatar;
+    const Avatar = tmp(1199).Avatar;
     const tmp10 = <Avatar user={currentUser} guildId="r" size={native.AvatarSizes.GIFT_START} avatarDecoration={firstAvatarDecoration} animate={null} />;
     cResult[2] = firstAvatarDecoration;
     cResult[3] = currentUser;
@@ -80,10 +80,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDeco
   const firstAvatarDecoration = obj2.useShopProductItems(product).firstAvatarDecoration;
   let tmp5 = null;
   if (null != firstAvatarDecoration) {
-    const intl = tmp2(1128).intl;
+    const intl = tmp2(1125).intl;
     const obj4 = { a11y_text: firstAvatarDecoration.label };
     ({ user: currentUser, guildId: "r", size: native.AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: null });
-    const Avatar = tmp2(1202).Avatar;
+    const Avatar = tmp2(1199).Avatar;
     tmp5 = <View style={tmp.fullSizePreview} pointerEvents="box-none" accessibilityLabel={intl.formatToPlainString(intl2.t.Do2lxE, obj4)} accessibilityRole="image" accessible>{null}</View>;
   }
   return tmp5;

@@ -1,20 +1,20 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13014
+// Function ID: 13015
 // Name: EmojiCube
-// Dependencies: [17, 4972, 6015, 21, 13002, 4971, 1385, 587, 558, 576, 504, 1417, 1499, 7227, 2]
+// Dependencies: [17, 4973, 6016, 21, 13015, 4972, 1382, 587, 558, 576, 504, 1414, 1496, 7229, 2]
 
-// Module 13001 (EmojiCube)
+// Module 13014 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
-import EmojiDefault from "Emoji" /* 7227 */;
-import glMatrix from "glMatrix" /* 13002 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
+import EmojiDefault from "Emoji" /* 7229 */;
+import glMatrix from "glMatrix" /* 13015 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -262,8 +262,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   if (null != emoji.id) {
     const obj2 = { id: emoji.id, animated: tmp6, size: 48 };
     tmp6 = !stateFromStores;
-    const getEmojiURL = emojiURL(1417).getEmojiURL;
-    emojiURL(1417);
+    const getEmojiURL = emojiURL(1414).getEmojiURL;
+    emojiURL(1414);
     if (!stateFromStores) {
       tmp6 = true === emoji.animated;
     }
@@ -273,12 +273,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   dependencyMap = tmp7;
   const items1 = [tmp7.container, , ];
   const obj4 = { transform: items2 };
-  items2 = [{ scale: emojiURL(1499)().width / 392 }];
+  items2 = [{ scale: emojiURL(1496)().width / 392 }];
   items1[1] = obj4;
   items1[2] = style;
   const items3 = [, , ];
   ({ topFace: arr4[0], leftFace: arr4[1], rightFace: arr4[2] } = tmp7);
-  ({ scale: emojiURL(1499)().width / 392 });
+  ({ scale: emojiURL(1496)().width / 392 });
   return <View style={items1}>{items3.map((item, index) => {
     let items;
     let str;

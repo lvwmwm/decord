@@ -1,34 +1,36 @@
-// Module ID: 18366
-// Function ID: 18367
+// Module ID: 18400
+// Function ID: 18401
 // Name: Settings
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 18244, 1633, 7038, 4928, 18367, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 18278, 1630, 7040, 4929, 18401, 2]
 
-// Module 18366 (Settings)
+// Module 18400 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7038 */;
-import profileModalTransition from "profileModalTransition" /* 18244 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7040 */;
+import profileModalTransition from "profileModalTransition" /* 18278 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
+let obj4;
 let tmp;
 let tmp5;
-const DeviceUtils = tmp(4928);
-const SettingsNavigatorDefault = tmp5(18367);
+const DeviceUtils = tmp(4929);
+const SettingsNavigatorDefault = tmp5(18401);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: obj2, container: { flex: 1 }, containerTablet: obj3 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
+let obj = { containerOuter: obj2, containerOuterTablet: obj3, container: { flex: 1 }, containerTablet: obj4 };
+obj2 = { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
-obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
+obj4 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
 let closure_6 = createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settings() {
   let items1;

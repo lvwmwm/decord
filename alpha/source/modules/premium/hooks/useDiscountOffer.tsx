@@ -1,14 +1,14 @@
-// Module ID: 8432
-// Function ID: 8433
+// Module ID: 8431
+// Function ID: 8432
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1392, 7560, 1394, 558, 576, 504, 2053, 4818, 2]
+// Dependencies: [32, 19, 1389, 7561, 1391, 558, 576, 504, 2050, 4819, 2]
 
-// Module 8432 (useDiscountOffer)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+// Module 8431 (useDiscountOffer)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import UserOfferStore from "UserOfferStore" /* 7560 */;
+import UserStore from "UserStore" /* 1389 */;
+import UserOfferStore from "UserOfferStore" /* 7561 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
               }
               const obj2 = timeout;
               if (timeout != null) {
-                obj2.start(num, f159205);
+                obj2.start(num, f159554);
               }
             }
           });
@@ -207,7 +207,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
   const items2 = [first, stateFromStores];
   const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(function() {
-    const f159206 = () => {
+    const f159555 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired()) {
@@ -228,7 +228,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
         }
         const obj2 = timeout;
         if (timeout != null) {
-          obj2.start(num, f159206);
+          obj2.start(num, f159555);
         }
       }
     };
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountO
           let time = expiresAt.getTime();
           num = time - Date.now();
         }
-        timeout.start(num, f159206);
+        timeout.start(num, f159555);
       }
       return () => timeout.stop();
     }

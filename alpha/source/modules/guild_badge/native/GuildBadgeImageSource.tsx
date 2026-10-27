@@ -1,13 +1,13 @@
 // Module ID: 9237
 // Function ID: 9238
 // Name: GuildBadgeImageSource
-// Dependencies: [9235, 6888, 6889, 9238, 9239, 9240, 9241, 9242, 9243, 4978, 9234, 2]
+// Dependencies: [9235, 6890, 6891, 9238, 9239, 9240, 9241, 9242, 9243, 4979, 9234, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
 // Module 9237 (GuildBadgeImageSource)
-import shared from "shared" /* 4978 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6888 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6889 */;
+import shared from "shared" /* 4979 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6890 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6891 */;
 import GuildTraits from "GuildTraits" /* 9234 */;
 import BadgeCategory from "BadgeCategory" /* 9235 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9238 */;

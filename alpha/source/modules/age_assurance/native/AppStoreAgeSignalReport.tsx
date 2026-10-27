@@ -1,17 +1,17 @@
-// Module ID: 8086
-// Function ID: 8087
+// Module ID: 8084
+// Function ID: 8085
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1392, 2001, 1087, 8082, 7931, 1257, 1384, 8078, 8079, 1267, 5644, 5722, 2]
+// Dependencies: [32, 5, 1389, 1998, 1084, 8080, 7932, 1254, 1381, 8076, 8077, 1264, 5645, 5723, 2]
 // Exports: beginAppStoreAgeSignalReport, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 8086 (AppStoreAgeSignalReport)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7931 */;
+// Module 8084 (AppStoreAgeSignalReport)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1392 */;
-import AppStateStore from "AppStateStore" /* 2001 */;
-import Constants from "Constants" /* 1087 */;
+import UserStore from "UserStore" /* 1389 */;
+import AppStateStore from "AppStateStore" /* 1998 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -463,7 +463,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp4 = _require;
     if (result) {
-      const tmp4Result = tmp4(5644);
+      const tmp4Result = tmp4(5645);
       result = tmp4Result.shouldCollectAppStoreSignal();
     }
     tmp3 = result;
@@ -608,7 +608,7 @@ export const resumeAppStoreAgeSignalReport = function resumeAppStoreAgeSignalRep
       let result = obj.isAppStoreAgeSignalSupported();
       const tmp2 = require;
       if (result) {
-        const tmp2Result = tmp2(5644);
+        const tmp2Result = tmp2(5645);
         result = tmp2Result.shouldCollectAppStoreSignal();
       }
       tmp5 = result;

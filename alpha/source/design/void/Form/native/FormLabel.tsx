@@ -1,9 +1,9 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7241
+// Function ID: 7242
 // Name: FormLabel
-// Dependencies: [19, 21, 558, 576, 5234, 2]
+// Dependencies: [19, 21, 558, 576, 5235, 2]
 
-// Module 7239 (FormLabel)
+// Module 7241 (FormLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5235);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormLabel(arg0) {
   let accessible;

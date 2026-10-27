@@ -1,41 +1,45 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12083
+// Function ID: 12084
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4971, 587, 558, 576, 8951, 2]
+// Dependencies: [32, 19, 21, 4972, 587, 558, 576, 5040, 6903, 8951, 2]
 
-// Module 12082 (AppLauncherBooleanOption)
+// Module 12083 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
+const react_native = tmp(5040);
+const FormCheckbox = tmp(6903);
 const Form = tmp(8951);
 const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center" };
+let obj = { container: obj2, checkboxWrapper: { flexShrink: 0 } };
+obj2 = { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center" };
 let closure_5 = createStyles.createStyles(obj);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherBooleanOption(onPress) {
-  let closure_3;
+  let accessibilityRole;
+  let accessibilityState;
   let first;
   let initialValue;
   let option;
-  let style;
+  let tmp10;
   let tmp5;
+  let tmp8;
   const tmp = require;
   const obj = react2;
-  const cResult = obj.c(14);
-  ({ style, option, initialValue } = onPress);
+  const cResult = obj.c(18);
+  ({ option, initialValue } = onPress);
   onPress = onPress.onPress;
   const hasError = onPress.hasError;
   const tmp4 = closure_5();
   if (cResult[0] !== initialValue) {
-    const fn = function c() {
+    const fn = function s() {
       return null != initialValue && "text" === tmp.type && "true" === tmp.text;
     };
     cResult[0] = initialValue;
@@ -44,80 +48,100 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
   } else {
     tmp5 = cResult[1];
   }
-  [first, closure_3] = react.useState(tmp5);
-  if (cResult[2] === style) {
-    let tmp8;
-    if (cResult[3] === tmp4.container) {
-      tmp8 = cResult[4];
+  [first, react] = react.useState(tmp5);
+  if (cResult[2] !== first) {
+    const obj2 = { checked: first };
+    cResult[2] = first;
+    cResult[3] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[3];
+  }
+  const tmpResult = react_native;
+  const checkboxA11yNative = tmpResult.useCheckboxA11yNative(tmp8);
+  ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
+  if (cResult[4] !== first) {
+    const tmp12 = jsx(FormCheckbox.FormCheckbox, { checked: first });
+    cResult[4] = first;
+    cResult[5] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === onPress) {
+    let tmp13;
+    if (cResult[7] === first) {
+      tmp13 = cResult[8];
     }
-    if (cResult[5] === onPress) {
-      let tmp9;
-      if (cResult[6] === first) {
-        tmp9 = cResult[7];
-      }
-      if (cResult[8] === hasError) {
-        if (cResult[9] === option.displayName) {
-          if (cResult[10] === first) {
-            if (cResult[11] === tmp8) {
-              let tmp10;
-              if (cResult[12] === tmp9) {
-                tmp10 = cResult[13];
+    if (cResult[9] === accessibilityRole) {
+      if (cResult[10] === accessibilityState) {
+        if (cResult[11] === hasError) {
+          if (cResult[12] === option.displayName) {
+            if (cResult[13] === tmp4.checkboxWrapper) {
+              if (cResult[14] === tmp4.container) {
+                if (cResult[15] === tmp10) {
+                  let tmp14;
+                  if (cResult[16] === tmp13) {
+                    tmp14 = cResult[17];
+                  }
+                  return tmp14;
+                }
               }
-              return tmp10;
             }
           }
         }
       }
-      const tmp12 = jsx(Form.FormCheckboxRow, { start: true, end: true, style: tmp8, hasError, label: option.displayName, selected: first, onPress: tmp9 });
-      cResult[8] = hasError;
-      cResult[9] = option.displayName;
-      cResult[10] = first;
-      cResult[11] = tmp8;
-      cResult[12] = tmp9;
-      cResult[13] = tmp12;
-      tmp10 = tmp12;
     }
-    const fn2 = function v() {
+    cResult[9] = accessibilityRole;
+    cResult[10] = accessibilityState;
+    cResult[11] = hasError;
+    cResult[12] = option.displayName;
+    cResult[13] = tmp4.checkboxWrapper;
+    cResult[14] = tmp4.container;
+    cResult[15] = tmp10;
+    cResult[16] = tmp13;
+    const tmp16 = jsx(Form.FormRow, { start: true, end: true, style: tmp4.container, hasError, label: option.displayName, accessibilityRole, accessibilityState, trailing: tmp10, trailingWrapperStyle: tmp4.checkboxWrapper, onPress: tmp13 });
+    class W {
+      constructor() {
+        closure_3(!first);
+        onPress(!first);
+      }
+    }
+    tmp14 = tmp16;
+  }
+  class W {
+    constructor() {
       closure_3(!first);
       onPress(!first);
-    };
-    cResult[5] = onPress;
-    cResult[6] = first;
-    cResult[7] = fn2;
-    tmp9 = fn2;
+    }
   }
-  const items = [tmp4.container, style];
-  cResult[2] = style;
-  cResult[3] = tmp4.container;
-  cResult[4] = items;
-  tmp8 = items;
+  cResult[6] = onPress;
+  cResult[7] = first;
+  cResult[8] = W;
+  tmp13 = W;
 }) : (function AppLauncherBooleanOption(arg0) {
+  let accessibilityRole;
+  let accessibilityState;
   let closure_129_0;
   let closure_129_1;
   let closure_3;
   let first;
   let hasError;
   let option;
-  let style;
   ({ initialValue: closure_129_0, onPress: closure_129_1 } = arg0);
   first = undefined;
   closure_3 = undefined;
-  ({ style, option, hasError } = arg0);
+  ({ option, hasError } = arg0);
   const tmp = closure_5();
   [first, closure_3] = react.useState(() => null != closure_1_0 && "text" === tmp.type && "true" === tmp.text);
-  const items = [tmp.container, style];
-  return jsx(Form.FormCheckboxRow, {
-    start: true,
-    end: true,
-    style: items,
-    hasError,
-    label: option.displayName,
-    selected: first,
-    onPress() {
-      closure_3(!first);
-      closure_1_1(!first);
-    }
-  });
+  const obj = react_native;
+  const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: first });
+  ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
+  const FormRow = Form.FormRow;
+  return <FormRow start end style={tmp.container} hasError={hasError} label={option.displayName} accessibilityRole={accessibilityRole} accessibilityState={accessibilityState} trailing={null} trailingWrapperStyle={tmp.checkboxWrapper} onPress={function onPress() {
+    closure_3(!first);
+    closure_1_1(!first);
+  }} />;
 });
 const result = size.fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
 

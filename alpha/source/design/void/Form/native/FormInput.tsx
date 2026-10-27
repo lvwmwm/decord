@@ -1,22 +1,22 @@
 // Module ID: 8957
 // Function ID: 8958
 // Name: FormInput
-// Dependencies: [109, 19, 1087, 21, 4971, 587, 558, 576, 1384, 5037, 4978, 6986, 7180, 7008, 1202, 2]
+// Dependencies: [109, 19, 1084, 21, 4972, 587, 558, 576, 1381, 5038, 4979, 6988, 7182, 7010, 1199, 2]
 
 // Module 8957 (FormInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import shared from "shared" /* 4978 */;
-import native from "native" /* 5037 */;
-import RedesignCompat from "RedesignCompat" /* 6986 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7008 */;
-import TextArea2 from "TextArea" /* 7180 */;
+import Constants from "Constants" /* 1084 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import shared from "shared" /* 4979 */;
+import native from "native" /* 5038 */;
+import RedesignCompat from "RedesignCompat" /* 6988 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7010 */;
+import TextArea2 from "TextArea" /* 7182 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -409,7 +409,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormInput(
         str7 = "";
       }
       if (undefined !== tmp22 && tmp22) {
-        NEVER = tmp(1202).ClearButtonVisibility.NEVER;
+        NEVER = tmp(1199).ClearButtonVisibility.NEVER;
       }
       if (cResult[61] === str4) {
         if (cResult[62] === tmp45) {
@@ -462,7 +462,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormInput(
           }
         }
       }
-      const InputView = tmp(1202).InputView;
+      const InputView = tmp(1199).InputView;
       const merged = Object.assign(tmp11);
       const tmp56 = <InputView ref={ref2} inputTextColor={tmp39.inputText.color} multiline={undefined !== tmp22 && tmp22} returnKeyType={str5} onChangeText={tmp10} keyboardAppearance={tmp8} keyboardType={str4} placeholderTextColor={tmp39.placeholderText.color} title={str} helpText={str2} error={str6} placeholder={str3} secureTextEntry={tmp45} disabled={tmp31} autoFocus={undefined !== tmp23 && tmp23} numberOfLines={num26} autoCapitalize={tmp4} autoCorrect={tmp5} showBorder={tmp34} showCharactersRemaining={undefined !== tmp15 && tmp15} style={tmp50} inputTextStyle={tmp7} value={str7} clearButtonVisibility={NEVER} />;
       cResult[61] = str4;
@@ -661,18 +661,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormInput(
     if (flag3) {
       const obj2 = { ref: ref1, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, maxLength: null, onEndEditing: null, value, errorMessage: error };
       ({ maxLength: obj8.maxLength, onEndEditing: obj8.onEndEditing } = merged);
-      const TextArea = tmp5(7180).TextArea;
+      const TextArea = tmp5(7182).TextArea;
       tmp16Result = tmp16(TextArea, obj2);
     } else {
       const obj4 = { ref: ref1, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: merged.onEndEditing, value: tmp21, errorMessage: error };
-      const TextInput = tmp5(7008).TextInput;
+      const TextInput = tmp5(7010).TextInput;
       tmp16Result = tmp16(TextInput, obj4);
       tmp21 = value;
     }
     tmp16Result2 = tmp16Result;
   } else {
     const obj5 = { ref: ref2, inputTextColor: tmp4.inputText.color, multiline: flag3, returnKeyType: str3, onChangeText: onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, title, helpText: str, error: str4, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, numberOfLines: num, autoCapitalize, autoCorrect, showBorder, showCharactersRemaining: flag5, style: items, inputTextStyle, value: str5, clearButtonVisibility };
-    const InputView = tmp5(1202).InputView;
+    const InputView = tmp5(1199).InputView;
     if (null != merged.returnKeyType) {
       str3 = merged.returnKeyType;
     } else {
@@ -691,7 +691,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormInput(
       str5 = "";
     }
     if (flag3) {
-      clearButtonVisibility = tmp5(1202).ClearButtonVisibility.NEVER;
+      clearButtonVisibility = tmp5(1199).ClearButtonVisibility.NEVER;
     }
     const merged1 = Object.assign(merged);
     tmp16Result2 = tmp16(InputView, obj5);

@@ -1,12 +1,12 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15732
+// Function ID: 15733
 // Name: NotifSettingsUtils
-// Dependencies: [15693, 1128, 15697, 15698, 1257, 2]
+// Dependencies: [15729, 1125, 15733, 15734, 1254, 2]
 
-// Module 15696 (NotifSettingsUtils)
-import intl2 from "intl" /* 1128 */;
-import react_nativeDefault from "react-native" /* 15697 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15693 */;
+// Module 15732 (NotifSettingsUtils)
+import intl2 from "intl" /* 1125 */;
+import react_nativeDefault from "react-native" /* 15733 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15729 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, notifType;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const SentryUtilsDefault = tmp(1257);
+const SentryUtilsDefault = tmp(1254);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;
@@ -123,7 +123,7 @@ function buildChannelsAndMapping() {
       return map;
     }
   }
-  const obj = map(15698);
+  const obj = map(15734);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = computeInheritedImportances(mappings);

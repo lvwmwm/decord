@@ -1,20 +1,20 @@
 // Module ID: 8860
 // Function ID: 8861
 // Name: MaskedLinkUtils
-// Dependencies: [8861, 4823, 4845, 8862, 6010, 4913, 4874, 1087, 1951, 5908, 1128, 1267, 8863, 6821, 8864, 8865, 5656, 14199, 14203, 5985, 14204, 14206, 2]
+// Dependencies: [8861, 4824, 4846, 8862, 6011, 4914, 4875, 1084, 1948, 5909, 1125, 1264, 8863, 6823, 8864, 8865, 5657, 14226, 14230, 5986, 14231, 14233, 2]
 // Exports: handleClick, isLinkTrusted
 
 // Module 8860 (MaskedLinkUtils)
-import openURLDefault from "openURL" /* 5656 */;
+import openURLDefault from "openURL" /* 5657 */;
 import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 8864 */;
 import BlockedDomainStore from "BlockedDomainStore" /* 8861 */;
-import ChannelStore_mod from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import ChannelStore_mod from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import MaskedLinkStore from "MaskedLinkStore" /* 8862 */;
-import MessageStore from "MessageStore" /* 6010 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import Constants from "Constants" /* 1087 */;
+import MessageStore from "MessageStore" /* 6011 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,15 +73,15 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
     };
   }
   let tmp = channelId;
-  let obj = channelId(1951);
+  let obj = channelId(1948);
   const sanitizeUrlResult = obj.sanitizeUrl(href.href);
   if (null == sanitizeUrlResult) {
     if (null != preventDefault) {
       preventDefault.preventDefault();
     }
     let obj2 = { title: intl.string(require("intl").t.x87gan), body: intl2.format(require("intl").t["9rqRwl"], obj3), isDismissable: true, contextKey };
-    const show3 = tmp(5908).show;
-    tmp(5908);
+    const show3 = tmp(5909).show;
+    tmp(5909);
     intl = require("intl").intl;
     intl2 = require("intl").intl;
     obj3 = { url: href.href };
@@ -222,15 +222,15 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       }
       if (hasItem1) {
         const obj5 = { url_domain: obj4.getHostname(tmp6), guild_id: guild1.id, channel_id: channel.id };
-        const track = tmp(1267).track;
+        const track = tmp(1264).track;
         const URL_CLICKED = constants2.URL_CLICKED;
-        tmp(1267);
+        tmp(1264);
         obj4 = require("MaskedLinkStoreMethodsAdditional");
         track(URL_CLICKED, obj5);
       }
-      if (tmp(6821)(channelId)) {
+      if (tmp(6823)(channelId)) {
         const obj6 = { cta_type: "inline_link", target: tmp6 };
-        const tmpResult9 = tmp(1267);
+        const tmpResult9 = tmp(1264);
         tmpResult9.track(constants2.CHANGE_LOG_CTA_CLICKED, obj6);
       }
     }
@@ -244,7 +244,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       if (preventDefault != null) {
         preventDefault.preventDefault();
       }
-      const tmpResult11 = tmp(14199);
+      const tmpResult11 = tmp(14226);
       tmpResult11.show(tmp6);
       onCancel();
     } else {
@@ -277,8 +277,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         }
         if (!("http:" === protocol || "https:" === protocol)) {
           const obj8 = { url: tmp6, trustUrl: require("MaskedLinkActionCreators").trustProtocol, onConfirm: handleConfirm, onCancel, isProtocol: true, contextKey };
-          const show2 = tmp(14204).show;
-          tmp(14204);
+          const show2 = tmp(14231).show;
+          tmp(14231);
           show2(obj8);
         } else {
           const tmp52Result = require("MarkupLinkRule");
@@ -288,8 +288,8 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             displayTarget = punycodeLinkResult.displayTarget;
           }
           const obj10 = { url: displayTarget, trustUrl: require("MaskedLinkActionCreators").trustDomain, onConfirm: handleConfirm, onCancel, isProtocol: false, contextKey };
-          const show = tmp(14204).show;
-          tmp(14204);
+          const show = tmp(14231).show;
+          tmp(14231);
           show(obj10);
         }
       }

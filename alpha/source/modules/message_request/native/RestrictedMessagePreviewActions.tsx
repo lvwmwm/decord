@@ -1,25 +1,25 @@
-// Module ID: 18361
-// Function ID: 18362
+// Module ID: 18395
+// Function ID: 18396
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4913, 1087, 10960, 21, 4971, 587, 13519, 504, 7414, 10629, 13546, 5025, 5210, 10961, 2002, 8108, 7411, 5244, 1128, 5234, 2]
+// Dependencies: [19, 17, 4914, 1084, 10963, 21, 4972, 587, 13533, 504, 7416, 10632, 13560, 5026, 5211, 10964, 1999, 8106, 7413, 5245, 1125, 5235, 2]
 // Exports: default
 
-// Module 18361 (RestrictedMessagePreviewActions)
+// Module 18395 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
-import ReportModals from "ReportModals" /* 8108 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10629 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10960 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13546 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7416 */;
+import ReportModals from "ReportModals" /* 8106 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10632 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10963 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13560 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import Constants from "Constants" /* 1087 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -111,7 +111,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const callback4 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { userId: user.id, channelId: channel.id };
-    obj.openLazy(asyncRequire(10961, dependencyMap.paths), closure_8, obj2);
+    obj.openLazy(asyncRequire(10964, dependencyMap.paths), closure_8, obj2);
   }, items6);
   const items8 = [message, channel.id];
   const callback5 = react.useCallback(() => {

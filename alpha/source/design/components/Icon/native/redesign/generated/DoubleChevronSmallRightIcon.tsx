@@ -1,14 +1,14 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12350
+// Function ID: 12351
 // Name: DoubleChevronSmallRightIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12345, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12351, 5669, 2]
 
-// Module 12344 (DoubleChevronSmallRightIcon)
+// Module 12350 (DoubleChevronSmallRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 12345 */;
+import BaseIconImage2 from "BaseIconImage" /* 5669 */;
+import AssetRegistry from "AssetRegistry" /* 12351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleChev
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5668).BaseIconImage;
+  const BaseIconImage = tmp(5669).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

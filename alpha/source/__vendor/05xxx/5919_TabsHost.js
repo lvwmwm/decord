@@ -1,10 +1,11 @@
 // Module ID: 5919
 // Function ID: 5920
 // Name: TabsHost
-// Dependencies: [5920]
+// Dependencies: [5920, 5928]
 
 // Module 5919 (TabsHost)
-import TabsHostDefault from "TabsHost" /* 5920 */;
+const require = globalThis.__r;
 
+({ Host: require("TabsHost").TabsHost, Screen: require("TabsScreen").TabsScreen });
 
-export const TabsHost = TabsHostDefault;
+export const Tabs = { Host: require("TabsHost").TabsHost, Screen: require("TabsScreen").TabsScreen };

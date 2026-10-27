@@ -1,25 +1,25 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12102
+// Function ID: 12103
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10090, 21, 1384, 4971, 587, 8913, 558, 576, 5267, 5052, 12102, 5037, 5581, 12103, 504, 5269, 5212, 6802, 1896, 5263, 5252, 1633, 1499, 5166, 5146, 5968, 9852, 5592, 2]
+// Dependencies: [32, 19, 17, 10092, 21, 1381, 4972, 587, 8913, 558, 576, 5268, 5053, 12103, 5038, 5582, 12104, 504, 5270, 5213, 6803, 1893, 5264, 5253, 1630, 1496, 5167, 5147, 5969, 9854, 5593, 2]
 
-// Module 12101 (PortalKeyboardBottomSheet)
+// Module 12102 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
-import BottomSheetModal from "BottomSheetModal" /* 5269 */;
-import isChannelFocused from "isChannelFocused" /* 6802 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5268 */;
+import BottomSheetModal from "BottomSheetModal" /* 5270 */;
+import isChannelFocused from "isChannelFocused" /* 6803 */;
 import native from "native" /* 8913 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 10090 */;
+import NativeMenuStore from "NativeMenuStore" /* 10092 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

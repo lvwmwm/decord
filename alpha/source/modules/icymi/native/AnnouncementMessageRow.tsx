@@ -1,25 +1,25 @@
-// Module ID: 17945
-// Function ID: 17946
+// Module ID: 17979
+// Function ID: 17980
 // Name: AnnouncementMessageRow
-// Dependencies: [19, 17, 4823, 4845, 4913, 6704, 1392, 17946, 21, 17908, 587, 558, 576, 504, 6830, 8841, 10691, 10074, 17947, 17911, 1128, 11, 9018, 17949, 6908, 17953, 17954, 2]
+// Dependencies: [19, 17, 4824, 4846, 4914, 6705, 1389, 17980, 21, 17942, 587, 558, 576, 504, 6832, 8841, 10694, 10076, 17981, 17945, 1125, 11, 9018, 17983, 6910, 17987, 17988, 2]
 
-// Module 17945 (AnnouncementMessageRow)
+// Module 17979 (AnnouncementMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10074 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
-import DesignConstants from "DesignConstants" /* 17946 */;
-import ICYMIShared from "ICYMIShared" /* 17947 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10076 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10694 */;
+import DesignConstants from "DesignConstants" /* 17980 */;
+import ICYMIShared from "ICYMIShared" /* 17981 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17908 */;
+import createICYMIStyles from "createICYMIStyles" /* 17942 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

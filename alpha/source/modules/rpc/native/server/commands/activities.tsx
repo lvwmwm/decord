@@ -1,18 +1,18 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15809
+// Function ID: 15810
 // Name: commands/activities
-// Dependencies: [5, 6378, 1087, 7868, 15725, 8827, 15735, 9264, 9050, 9258, 6778, 10728, 8155, 7885, 11394, 6375, 2]
+// Dependencies: [5, 6379, 1084, 7869, 15761, 8827, 15771, 9264, 9050, 9258, 6779, 10731, 8153, 7886, 11397, 6376, 2]
 
-// Module 15771 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
+// Module 15809 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7869 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
 import RPCErrorDefault from "RPCError" /* 9264 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15735 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15771 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6378 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15725 */;
+import Constants_mod from "Constants" /* 6379 */;
+import Constants_mod2 from "Constants" /* 1084 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15761 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;

@@ -1,20 +1,20 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14053
+// Function ID: 14054
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4971, 587, 558, 576, 13339, 1128, 5234, 10423, 12133, 10842, 2]
+// Dependencies: [17, 21, 4972, 587, 558, 576, 13353, 1125, 5235, 10425, 12134, 10845, 2]
 
-// Module 14039 (ScheduledMessagesIntro)
+// Module 14053 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AttachmentIcon from "AttachmentIcon" /* 10423 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10842 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12133 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13339 */;
+import intl6 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import AttachmentIcon from "AttachmentIcon" /* 10425 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10845 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12134 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 13353 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
   }
   ({ textContainer, text } = tmp4);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl6.t["C/j9NE"]);
     cResult[3] = stringResult;
     tmp12 = stringResult;
@@ -109,7 +109,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
   }
   const text2 = tmp4.text;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const formatResult = intl2.format(intl6.t.PqmI8J, {});
     cResult[6] = formatResult;
     tmp17 = formatResult;
@@ -137,7 +137,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
       const _Symbol = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { icon: AttachmentIcon.AttachmentIcon, label: intl3.string(intl6.t["8Hvr3+"]), highlighted: false };
-        intl3 = tmp(1128).intl;
+        intl3 = tmp(1125).intl;
         const tmp27 = hasOwnProperty(closure_8, obj5);
         cResult[13] = tmp27;
         tmp24 = tmp27;
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
       const _Symbol2 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         const obj7 = { icon: CalendarPlusIcon.CalendarPlusIcon, label: intl4.string(intl6.t["3+ii4F"]), highlighted: true };
-        intl4 = tmp(1128).intl;
+        intl4 = tmp(1125).intl;
         const tmp35 = hasOwnProperty(closure_8, obj7);
         cResult[16] = tmp35;
         tmp32 = tmp35;
@@ -174,7 +174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         const _Symbol3 = Symbol;
         if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10842).PlusLargeIcon;
+          const PlusLargeIcon = tmp(10845).PlusLargeIcon;
           const tmp43 = hasOwnProperty(PlusLargeIcon, obj8);
           cResult[20] = tmp43;
           tmp40 = tmp43;
@@ -193,8 +193,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         const _Symbol4 = Symbol;
         if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
-          const Text = tmp(5234).Text;
-          intl5 = tmp(1128).intl;
+          const Text = tmp(5235).Text;
+          intl5 = tmp(1125).intl;
           const tmp50 = hasOwnProperty(Text, obj10);
           cResult[23] = tmp50;
           tmp48 = tmp50;

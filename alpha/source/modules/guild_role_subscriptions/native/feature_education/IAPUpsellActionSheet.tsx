@@ -1,15 +1,15 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 17716
+// Function ID: 17717
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1087, 4830, 4820, 21, 558, 576, 1114, 1128, 17676, 17677, 2]
+// Dependencies: [19, 1084, 4831, 4821, 21, 558, 576, 1111, 1125, 17717, 17718, 2]
 
-// Module 17675 (IAPUpsellActionSheet)
+// Module 17716 (IAPUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import router_utils from "router_utils" /* 1114 */;
-import intl4 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
+import Constants from "Constants" /* 1084 */;
+import router_utils from "router_utils" /* 1111 */;
+import intl4 from "intl" /* 1125 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,12 +33,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(guildId(1128).t.rBw4cE);
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(guildId(1128).t.mKHibc);
-      const intl3 = tmp(1128).intl;
-      const stringResult2 = intl3.string(guildId(1128).t.RzWDqY);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(guildId(1125).t.rBw4cE);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(guildId(1125).t.mKHibc);
+      const intl3 = tmp(1125).intl;
+      const stringResult2 = intl3.string(guildId(1125).t.RzWDqY);
       cResult[3] = stringResult;
       cResult[4] = stringResult1;
       cResult[5] = stringResult2;
@@ -57,8 +57,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
       }
       return tmp12;
     }
-    markAsDismissed(17676);
-    const tmp16 = <tmp15 imageSource={markAsDismissed(17677)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
+    markAsDismissed(17717);
+    const tmp16 = <tmp15 imageSource={markAsDismissed(17718)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
     cResult[6] = tmp4;
     cResult[7] = markAsDismissed;
     cResult[8] = tmp16;
@@ -76,11 +76,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
 }) : (function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  markAsDismissed(17676);
+  markAsDismissed(17717);
   const intl = intl4.intl;
   const intl2 = intl4.intl;
   const intl3 = intl4.intl;
-  return <tmp imageSource={markAsDismissed(17677)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
+  return <tmp imageSource={markAsDismissed(17718)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);

@@ -1,18 +1,18 @@
-// Module ID: 5852
-// Function ID: 5853
+// Module ID: 5853
+// Function ID: 5854
 // Name: SpatialAudioStore
-// Dependencies: [1261, 2014, 5714, 5853, 5718, 12, 510, 5854, 504, 5739, 584, 2]
+// Dependencies: [1258, 2011, 5715, 5854, 5719, 12, 510, 5855, 504, 5740, 584, 2]
 
-// Module 5852 (SpatialAudioStore)
+// Module 5853 (SpatialAudioStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5853 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5854 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import Constants from "Constants" /* 5718 */;
+import SpatialAudioConstants from "SpatialAudioConstants" /* 5854 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5855 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
+import Constants from "Constants" /* 5719 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -104,8 +104,8 @@ class SpatialAudioStore extends DeviceSettingsStore {
     const items = [ApexExperimentStore];
     self.syncWith(items, handleExperimentChange);
     const mediaEngine = MediaEngineStore.getMediaEngine();
-    mediaEngine.on(self(5739).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
-    mediaEngine.on(self(5739).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
+    mediaEngine.on(self(5740).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
+    mediaEngine.on(self(5740).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
       let flag = arg0 !== UNKNOWN;
       if (flag) {
         UNKNOWN = arg0;

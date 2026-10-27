@@ -1,15 +1,15 @@
-// Module ID: 19302
-// Function ID: 19303
+// Module ID: 19340
+// Function ID: 19341
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 15144, 1128, 16588, 5210, 8925, 2002, 2]
+// Dependencies: [19, 21, 15180, 1125, 16630, 5211, 8925, 1999, 2]
 // Exports: default
 
-// Module 19302 (FormTrialIntervalPicker)
+// Module 19340 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import FormDropdownDefault from "FormDropdown" /* 15144 */;
+import intl2 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import FormDropdownDefault from "FormDropdown" /* 15180 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ export default function FormTrialIntervalPicker(interval) {
   let tmp = jsx;
   let tmp3 = FormDropdownDefault;
   if (null == interval) {
-    let intl = interval(1128).intl;
-    stringResult = intl.string(interval(1128).t.WZG1BU);
+    let intl = interval(1125).intl;
+    stringResult = intl.string(interval(1125).t.WZG1BU);
   } else {
     let tmp4 = interval;
-    let obj = interval(16588);
+    let obj = interval(16630);
     stringResult = obj.formatPlanIntervalDuration(interval);
   }
   const obj2 = {

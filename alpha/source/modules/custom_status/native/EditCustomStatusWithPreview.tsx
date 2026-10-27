@@ -1,37 +1,37 @@
-// Module ID: 11063
-// Function ID: 11064
+// Module ID: 11066
+// Function ID: 11067
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1392, 11064, 1087, 1395, 21, 4971, 587, 558, 576, 1128, 1202, 7032, 6908, 11065, 1267, 11058, 504, 11066, 11067, 4978, 11069, 5971, 9825, 5593, 11070, 11072, 11074, 7485, 6924, 5234, 10655, 8957, 6987, 6903, 5159, 5210, 11154, 2002, 11156, 5689, 1385, 1647, 9699, 6672, 7095, 2]
+// Dependencies: [32, 19, 17, 1389, 11067, 1084, 1392, 21, 4972, 587, 558, 576, 1125, 1199, 7034, 6910, 11068, 1264, 11061, 504, 11069, 11070, 4979, 11072, 5972, 9827, 5594, 11073, 11075, 11077, 7486, 6926, 5235, 10658, 8957, 6989, 6905, 5160, 5211, 11157, 1999, 11159, 5690, 1382, 1644, 9701, 6673, 7097, 2]
 
-// Module 11063 (EditCustomStatusWithPreview)
+// Module 11066 (EditCustomStatusWithPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import shared from "shared" /* 4978 */;
-import ChatInputUtils from "ChatInputUtils" /* 5159 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import react_native from "react-native" /* 5971 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import Pressables from "Pressables" /* 6908 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7032 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9825 */;
-import Constants2 from "Constants" /* 11064 */;
-import setCustomStatusDefault from "setCustomStatus" /* 11067 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 11069 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11072 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 11074 */;
+import intl7 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import EmojiConstants from "EmojiConstants" /* 1392 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import shared from "shared" /* 4979 */;
+import ChatInputUtils from "ChatInputUtils" /* 5160 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import react_native from "react-native" /* 5972 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import Pressables from "Pressables" /* 6910 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7034 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9827 */;
+import Constants2 from "Constants" /* 11067 */;
+import setCustomStatusDefault from "setCustomStatus" /* 11070 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 11072 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11075 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 11077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -317,7 +317,7 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(11154, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(11157, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
       trailing: callback1(Text, obj19)
     };
@@ -385,7 +385,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearI
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl7.t.VkKicb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -401,7 +401,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearI
   }
   if (cResult[3] !== tmp4.closeIcon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.SMALL };
-    const Icon = tmp(1202).Icon;
+    const Icon = tmp(1199).Icon;
     const tmp12 = map1(Icon, obj3);
     cResult[3] = tmp4.closeIcon;
     cResult[4] = tmp12;
@@ -454,7 +454,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2;
-      const tmpResult = analyticsLocations(1385);
+      const tmpResult = analyticsLocations(1382);
       if (!tmpResult.isAndroid()) {
         obj2 = { height: 56 };
       }
@@ -465,8 +465,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     }
     if (cResult[4] !== tmp4) {
       const obj3 = { initialRouteName: "root", screens: tmp4, headerStatusBarHeight: 12, headerStyle: tmp6 };
-      const Navigator = tmp(7095).Navigator;
-      analyticsLocations(1385);
+      const Navigator = tmp(7097).Navigator;
+      analyticsLocations(1382);
       const tmp8Result = closure_13(Navigator, obj3);
       cResult[4] = tmp4;
       cResult[5] = tmp8Result;
@@ -478,7 +478,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
   }
   const obj4 = { root: obj5 };
   obj5 = {
-    title: intl.string(analyticsLocations(1128).t.Iuzg8R),
+    title: intl.string(analyticsLocations(1125).t.Iuzg8R),
     headerTitle() {
       let intl;
       const obj = { title: intl.string(analyticsLocations(closure_1_2[12]).t.Iuzg8R) };
@@ -486,19 +486,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
       intl = analyticsLocations(closure_1_2[12]).intl;
       return closure_1_13(GenericHeaderTitle, obj);
     },
-    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(6672).pop),
+    headerLeft: tmpResult4.getHeaderCloseButton(_prompt(6673).pop),
     ignoreKeyboard: true,
     render(arg0, navigation) {
       const obj = { navigation, onClose: _prompt(closure_2_2[46]).pop, analyticsLocations, prompt: _prompt };
       return closure_2_13(closure_2_17, obj);
     }
   };
-  intl = tmp(1128).intl;
+  intl = tmp(1125).intl;
   cResult[0] = analyticsLocations;
   cResult[1] = _prompt;
   cResult[2] = obj4;
   tmp4 = obj4;
-  tmpResult4 = analyticsLocations(6924);
+  tmpResult4 = analyticsLocations(6926);
 }) : (function EditCustomStatusWithPreviewModal(analyticsLocations) {
   let obj3;
   analyticsLocations = analyticsLocations.analyticsLocations;
@@ -530,11 +530,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCustomSt
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: obj3 };
-  const Navigator = analyticsLocations(7095).Navigator;
-  let obj2 = analyticsLocations(1385);
+  const Navigator = analyticsLocations(7097).Navigator;
+  let obj2 = analyticsLocations(1382);
   obj3 = undefined;
   const tmp2 = closure_13;
-  const tmp3Result = analyticsLocations(1385);
+  const tmp3Result = analyticsLocations(1382);
   if (!tmp3Result.isAndroid()) {
     obj3 = { height: 56 };
   }

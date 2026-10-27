@@ -1,41 +1,41 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17071
+// Function ID: 17072
 // Name: DevToolsQuickActionsScreen
-// Dependencies: [32, 5, 19, 17, 4972, 6496, 1393, 2068, 1207, 1209, 1392, 7793, 1087, 13611, 1394, 10927, 1210, 21, 4971, 587, 13695, 13610, 5868, 15687, 6672, 17030, 2002, 17046, 10980, 4804, 4807, 16046, 16048, 15012, 5663, 16921, 558, 576, 6037, 1633, 504, 4799, 17050, 16937, 6987, 7295, 1202, 16626, 4978, 16686, 17051, 10120, 1128, 9514, 6912, 6903, 7051, 12957, 12954, 5662, 12958, 17052, 7061, 1257, 562, 584, 1384, 2]
+// Dependencies: [32, 5, 19, 17, 4973, 6497, 1390, 2065, 1204, 1206, 1389, 7794, 1084, 13625, 1391, 10930, 1207, 21, 4972, 587, 13709, 13624, 5869, 15723, 6673, 17072, 1999, 17088, 10983, 4805, 4808, 16084, 16086, 15048, 5664, 16963, 558, 576, 6038, 1630, 504, 4800, 17092, 16979, 6989, 7297, 1199, 16668, 4979, 16728, 17093, 10122, 1125, 9513, 6914, 6905, 7053, 12969, 12966, 5663, 12970, 17094, 7063, 1254, 562, 584, 1381, 2]
 
-// Module 17029 (DevToolsQuickActionsScreen)
+// Module 17071 (DevToolsQuickActionsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5868 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import Constants2 from "Constants" /* 10927 */;
-import NUFActionCreators from "NUFActionCreators" /* 13610 */;
-import NUFConstants from "NUFConstants" /* 13611 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13695 */;
-import requestReviewModalDefault from "requestReviewModal" /* 15012 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15687 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 16937 */;
-import OverridePremiumTypeActions from "OverridePremiumTypeActions" /* 17051 */;
+import Constants from "Constants" /* 1084 */;
+import ThemeConstants from "ThemeConstants" /* 1207 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5869 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import Constants2 from "Constants" /* 10930 */;
+import NUFActionCreators from "NUFActionCreators" /* 13624 */;
+import NUFConstants from "NUFConstants" /* 13625 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13709 */;
+import requestReviewModalDefault from "requestReviewModal" /* 15048 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15723 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 16979 */;
+import OverridePremiumTypeActions from "OverridePremiumTypeActions" /* 17093 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1393 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import UserStore from "UserStore" /* 1392 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7793 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1390 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
+import UserStore from "UserStore" /* 1389 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7794 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ function handleReducedMotionChange(arg0) {
 function launchPasskeyPromoSheet() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const promise = asyncRequire(17046, dependencyMap.paths);
+  const promise = asyncRequire(17088, dependencyMap.paths);
   promise.then((result) => {
     const _default = result.default;
     result = _default.openPasskeyUpsellPromoSheet();
@@ -83,7 +83,7 @@ function showVibingWumpus() {
 
     }
   };
-  obj.pushLazy(asyncRequire(10980, dependencyMap.paths), obj2, VIBING_WUMPUS_MODAL_KEY);
+  obj.pushLazy(asyncRequire(10983, dependencyMap.paths), obj2, VIBING_WUMPUS_MODAL_KEY);
 }
 function handleResetDoubleTapState() {
   obj = UserSettingsProtoActionCreators;
@@ -98,7 +98,7 @@ function handleResetDoubleTapState() {
 function launchTotpSetupSuccess() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const items = [asyncRequire(16046, dependencyMap.paths), asyncRequire(16048, dependencyMap.paths)];
+  const items = [asyncRequire(16084, dependencyMap.paths), asyncRequire(16086, dependencyMap.paths)];
   const allResult = all(items);
   allResult.then((result) => {
     const iter = result[Symbol.iterator]();
@@ -207,7 +207,7 @@ let closure_24 = createStyles(obj);
 function launchMFA() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
-  const promise = asyncRequire(17030, dependencyMap.paths);
+  const promise = asyncRequire(17072, dependencyMap.paths);
   promise.then((openMFAModal) => {
     let items;
     obj = { ticket: "ticket", methods: items };
@@ -555,9 +555,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
   const tmp = closure_24();
   const tmp2 = locale;
   const tmp3 = dependencyMap;
-  obj = locale(6037);
+  obj = locale(6038);
   let isCheckpointEnabled = obj.useIsCheckpointEnabled("DevToolsQuickActionsScreen");
-  const tmp6 = showDevWidget(1633)();
+  const tmp6 = showDevWidget(1630)();
   let obj2 = locale(504);
   const items = [ThemeStore, LocaleStore, UnsyncedUserSettingsStore, DevToolsSettingsStore];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => ({ theme: theme.theme, usingSystemTheme: useSystemTheme.useSystemTheme === constants.ON, locale: locale.locale, showDevWidget: showDevWidget.showDevWidget }));
@@ -572,14 +572,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
   _slicedToArray = obj4.useStateFromStores(items2, () => premiumTypeOverride.getPremiumTypeOverride());
   [tmp9, _asyncToGenerator] = _slicedToArray(setting.useState(false), 2);
   const tmp8 = _slicedToArray(setting.useState(false), 2);
-  let IgnoreProfileSpeedbumpDisabled = locale(4799).IgnoreProfileSpeedbumpDisabled;
+  let IgnoreProfileSpeedbumpDisabled = locale(4800).IgnoreProfileSpeedbumpDisabled;
   setting = IgnoreProfileSpeedbumpDisabled.useSetting();
   let obj5 = locale(504);
   const items3 = [AccessibilityStore];
   [][0] = locale;
   const stateFromStores = obj5.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   if (tmp9) {
-    return closure_21(tmp2(17050).default, {});
+    return closure_21(tmp2(17092).default, {});
   } else {
     const tmp13 = closure_22;
     let obj6 = { style: tmp.container, contentContainerStyle: items4, children: items5 };
@@ -587,8 +587,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     let obj7 = { paddingBottom: tmp.content.padding + tmp6.bottom };
     items4[1] = obj7;
     const tmp15 = closure_21;
-    const obj8 = { title: "General", hasIcons: false, children: closure_21(tmp2(7295).TableSwitchRow, obj9) };
-    const TableRowGroup = tmp2(6987).TableRowGroup;
+    const obj8 = { title: "General", hasIcons: false, children: closure_21(tmp2(7297).TableSwitchRow, obj9) };
+    const TableRowGroup = tmp2(6989).TableRowGroup;
     obj9 = {
       label: "Show Dev Widget",
       value: showDevWidget,
@@ -600,25 +600,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
     };
     items5 = [closure_21(TableRowGroup, obj8), , , , , , , , , ];
     const obj10 = { size: showDevWidget(587).space.PX_16 };
-    const Spacer = tmp2(1202).Spacer;
+    const Spacer = tmp2(1199).Spacer;
     items5[1] = closure_21(Spacer, obj10);
-    const TableRowGroup2 = tmp2(6987).TableRowGroup;
+    const TableRowGroup2 = tmp2(6989).TableRowGroup;
     let str = "Light Theme";
-    let TableSwitchRow = tmp2(7295).TableSwitchRow;
+    let TableSwitchRow = tmp2(7297).TableSwitchRow;
     const tmp14 = ScrollView;
     if (usingSystemTheme) {
       str = "(using system theme)";
     }
     const obj11 = { title: "Appearance", hasIcons: true, children: items6 };
-    const obj12 = { label: str, disabled: usingSystemTheme, icon: tmp15(tmp2(16626).ThemeLightIcon, {}), value: tmp2Result.isThemeLight(theme), onValueChange: handleThemeChange };
-    tmp2Result = tmp2(4978);
+    const obj12 = { label: str, disabled: usingSystemTheme, icon: tmp15(tmp2(16668).ThemeLightIcon, {}), value: tmp2Result.isThemeLight(theme), onValueChange: handleThemeChange };
+    tmp2Result = tmp2(4979);
     items6 = [tmp15(TableSwitchRow, obj12), ];
-    const obj13 = { label: "Reduced Motion", icon: tmp15(tmp2(16686).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
-    const TableSwitchRow2 = tmp2(7295).TableSwitchRow;
+    const obj13 = { label: "Reduced Motion", icon: tmp15(tmp2(16728).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
+    const TableSwitchRow2 = tmp2(7297).TableSwitchRow;
     items6[1] = tmp15(TableSwitchRow2, obj13);
     items5[2] = tmp13(TableRowGroup2, obj11);
     const obj14 = { size: showDevWidget(587).space.PX_16 };
-    const Spacer2 = tmp2(1202).Spacer;
+    const Spacer2 = tmp2(1199).Spacer;
     items5[3] = tmp15(Spacer2, obj14);
     const obj15 = {
       title: "Override Client-Side Premium Type",
@@ -641,39 +641,39 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
           return closure_1_21(TableSwitchRow, obj, label);
         })
     };
-    const TableRowGroup3 = tmp2(6987).TableRowGroup;
+    const TableRowGroup3 = tmp2(6989).TableRowGroup;
     items5[4] = tmp15(TableRowGroup3, obj15);
     const obj16 = { size: showDevWidget(587).space.PX_16 };
-    const Spacer3 = tmp2(1202).Spacer;
+    const Spacer3 = tmp2(1199).Spacer;
     items5[5] = tmp15(Spacer3, obj16);
-    const obj17 = { title: intl.string(tmp2(1128).t["Aojq+L"]), hasIcons: true, children: items7 };
-    const TableRowGroup4 = tmp2(6987).TableRowGroup;
-    intl = tmp2(1128).intl;
+    const obj17 = { title: intl.string(tmp2(1125).t["Aojq+L"]), hasIcons: true, children: items7 };
+    const TableRowGroup4 = tmp2(6989).TableRowGroup;
+    intl = tmp2(1125).intl;
     let str2 = "Change to en-US";
-    const TableRow = tmp2(6903).TableRow;
+    const TableRow = tmp2(6905).TableRow;
     if ("en-US" === locale) {
       str2 = "Change to pt-BR";
     }
-    const obj18 = { label: str2, subLabel: "Toggle to a non-english locale for change log testing, etc.", onPress: tmp12, icon: tmp15(tmp2(9514).LanguageIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
+    const obj18 = { label: str2, subLabel: "Toggle to a non-english locale for change log testing, etc.", onPress: tmp12, icon: tmp15(tmp2(9513).LanguageIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
     items7 = [tmp15(TableRow, obj18), , , , , , , , , , , , , , ];
-    const obj19 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: handleResetDoubleTapState, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow2 = tmp2(6903).TableRow;
+    const obj19 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: handleResetDoubleTapState, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow2 = tmp2(6905).TableRow;
     items7[1] = tmp15(TableRow2, obj19);
-    const obj20 = { label: intl2.string(tmp2(1128).t.yoWDXU), subLabel: "Dismisses dev tools when launching.", onPress: handleNewUserOnboarding, icon: tmp15(tmp2(16921).WrenchIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow3 = tmp2(6903).TableRow;
-    intl2 = tmp2(1128).intl;
+    const obj20 = { label: intl2.string(tmp2(1125).t.yoWDXU), subLabel: "Dismisses dev tools when launching.", onPress: handleNewUserOnboarding, icon: tmp15(tmp2(16963).WrenchIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow3 = tmp2(6905).TableRow;
+    intl2 = tmp2(1125).intl;
     items7[2] = tmp15(TableRow3, obj20);
-    const obj21 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: launchMFA, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow4 = tmp2(6903).TableRow;
+    const obj21 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: launchMFA, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow4 = tmp2(6905).TableRow;
     items7[3] = tmp15(TableRow4, obj21);
-    const obj22 = { label: "Show Passkey Promo Sheet", subLabel: "Skips eligibility checks. Dismisses dev tools when launching.", onPress: launchPasskeyPromoSheet, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow5 = tmp2(6903).TableRow;
+    const obj22 = { label: "Show Passkey Promo Sheet", subLabel: "Skips eligibility checks. Dismisses dev tools when launching.", onPress: launchPasskeyPromoSheet, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow5 = tmp2(6905).TableRow;
     items7[4] = tmp15(TableRow5, obj22);
-    const obj23 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: launchTotpSetupSuccess, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow6 = tmp2(6903).TableRow;
+    const obj23 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: launchTotpSetupSuccess, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow6 = tmp2(6905).TableRow;
     items7[5] = tmp15(TableRow6, obj23);
-    const obj24 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: showVibingWumpus, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow7 = tmp2(6903).TableRow;
+    const obj24 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: showVibingWumpus, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow7 = tmp2(6905).TableRow;
     items7[6] = tmp15(TableRow7, obj24);
     let tmp15Result = isCheckpointEnabled;
     if (tmp15Result) {
@@ -686,10 +686,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
               const obj2 = locale(closure_2[58]);
               obj2.openCheckpoint("devtools");
             },
-        icon: tmp15(tmp2(7051).KeyIcon, {}),
-        trailing: tmp15(tmp2(6912).TableRowArrow, {})
+        icon: tmp15(tmp2(7053).KeyIcon, {}),
+        trailing: tmp15(tmp2(6914).TableRowArrow, {})
       };
-      const TableRow8 = tmp2(6903).TableRow;
+      const TableRow8 = tmp2(6905).TableRow;
       tmp15Result = tmp15(TableRow8, obj25);
     }
     items7[7] = tmp15Result;
@@ -754,10 +754,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
                 }
               }
             }),
-        icon: tmp15(tmp2(7051).KeyIcon, {}),
-        trailing: tmp15(tmp2(6912).TableRowArrow, {})
+        icon: tmp15(tmp2(7053).KeyIcon, {}),
+        trailing: tmp15(tmp2(6914).TableRowArrow, {})
       };
-      const TableRow9 = tmp2(6903).TableRow;
+      const TableRow9 = tmp2(6905).TableRow;
       tmp15Result4 = tmp15(TableRow9, obj26);
     }
     items7[8] = tmp15Result4;
@@ -772,10 +772,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
               const obj2 = locale(closure_2[58]);
               obj2.openCheckpoint("devtools");
             },
-        icon: tmp15(tmp2(7051).KeyIcon, {}),
-        trailing: tmp15(tmp2(6912).TableRowArrow, {})
+        icon: tmp15(tmp2(7053).KeyIcon, {}),
+        trailing: tmp15(tmp2(6914).TableRowArrow, {})
       };
-      const TableRow10 = tmp2(6903).TableRow;
+      const TableRow10 = tmp2(6905).TableRow;
       tmp15Result5 = tmp15(TableRow10, obj27);
     }
     items7[9] = tmp15Result5;
@@ -790,10 +790,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
               const obj2 = locale(closure_2[58]);
               obj2.openCheckpoint("devtools", false);
             },
-        icon: tmp15(tmp2(7051).KeyIcon, {}),
-        trailing: tmp15(tmp2(6912).TableRowArrow, {})
+        icon: tmp15(tmp2(7053).KeyIcon, {}),
+        trailing: tmp15(tmp2(6914).TableRowArrow, {})
       };
-      const TableRow11 = tmp2(6903).TableRow;
+      const TableRow11 = tmp2(6905).TableRow;
       tmp15Result6 = tmp15(TableRow11, obj28);
     }
     items7[10] = tmp15Result6;
@@ -807,78 +807,78 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
               const obj2 = locale(closure_2[58]);
               obj2.openCheckpoint("devtools");
             },
-        icon: tmp15(tmp2(7051).KeyIcon, {}),
-        trailing: tmp15(tmp2(6912).TableRowArrow, {})
+        icon: tmp15(tmp2(7053).KeyIcon, {}),
+        trailing: tmp15(tmp2(6914).TableRowArrow, {})
       };
-      const TableRow12 = tmp2(6903).TableRow;
+      const TableRow12 = tmp2(6905).TableRow;
       isCheckpointEnabled = tmp15(TableRow12, obj29);
     }
     items7[11] = isCheckpointEnabled;
-    const obj30 = { label: "Test captcha", onPress: tmp2(17052).showCaptchaTestModal, icon: tmp15(tmp2(7051).KeyIcon, {}), trailing: tmp15(tmp2(6912).TableRowArrow, {}) };
-    const TableRow13 = tmp2(6903).TableRow;
+    const obj30 = { label: "Test captcha", onPress: tmp2(17094).showCaptchaTestModal, icon: tmp15(tmp2(7053).KeyIcon, {}), trailing: tmp15(tmp2(6914).TableRowArrow, {}) };
+    const TableRow13 = tmp2(6905).TableRow;
     items7[12] = tmp15(TableRow13, obj30);
     const obj31 = {
       label: "Ignored Profile Speedbump Suppression",
       subLabel: "Suppresses the speedbump for ignored profiles.",
-      icon: tmp15(tmp2(7061).EyeSlashIcon, {}),
+      icon: tmp15(tmp2(7063).EyeSlashIcon, {}),
       value: setting,
       onValueChange() {
           const IgnoreProfileSpeedbumpDisabled = UserSettings.IgnoreProfileSpeedbumpDisabled;
           return IgnoreProfileSpeedbumpDisabled.updateSetting(!setting);
         }
     };
-    const TableSwitchRow3 = tmp2(7295).TableSwitchRow;
+    const TableSwitchRow3 = tmp2(7297).TableSwitchRow;
     items7[13] = tmp15(TableSwitchRow3, obj31);
-    const obj32 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: handleShowAppRatingModal, icon: tmp15(tmp2(16921).WrenchIcon, {}) };
-    const TableRow14 = tmp2(6903).TableRow;
+    const obj32 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: handleShowAppRatingModal, icon: tmp15(tmp2(16963).WrenchIcon, {}) };
+    const TableRow14 = tmp2(6905).TableRow;
     items7[14] = tmp15(TableRow14, obj32);
     items5[6] = tmp13(TableRowGroup4, obj17);
     const obj33 = { size: showDevWidget(587).space.PX_16 };
-    const Spacer4 = tmp2(1202).Spacer;
+    const Spacer4 = tmp2(1199).Spacer;
     items5[7] = tmp15(Spacer4, obj33);
     const obj34 = { title: "Crash Actions", hasIcons: true, children: items8 };
-    const TableRowGroup5 = tmp2(6987).TableRowGroup;
+    const TableRowGroup5 = tmp2(6989).TableRowGroup;
     const obj35 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force Native Crash",
       onPress() {
           obj = showDevWidget(closure_2[63]);
           return obj.crash();
         }
     };
-    const TableRow15 = tmp2(6903).TableRow;
+    const TableRow15 = tmp2(6905).TableRow;
     items8 = [tmp15(TableRow15, obj35), , , , , ];
     const obj36 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force JS Crash",
       onPress() {
           const error = new Error("Force JS Crash");
           throw error;
         }
     };
-    const TableRow16 = tmp2(6903).TableRow;
+    const TableRow16 = tmp2(6905).TableRow;
     items8[1] = tmp15(TableRow16, obj36);
     const obj37 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force JS Boundary Crash",
       onPress() {
           _asyncToGenerator(true);
         }
     };
-    const TableRow17 = tmp2(6903).TableRow;
+    const TableRow17 = tmp2(6905).TableRow;
     items8[2] = tmp15(TableRow17, obj37);
     const obj38 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force libdiscore Crash",
       onPress() {
           obj = locale(closure_2[64]);
           obj.crash();
         }
     };
-    const TableRow18 = tmp2(6903).TableRow;
+    const TableRow18 = tmp2(6905).TableRow;
     items8[3] = tmp15(TableRow18, obj38);
     const obj39 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force libdiscore Store Crash",
       subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore",
       onPress() {
@@ -886,10 +886,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
           obj.dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
         }
     };
-    const TableRow19 = tmp2(6903).TableRow;
+    const TableRow19 = tmp2(6905).TableRow;
     items8[4] = tmp15(TableRow19, obj39);
     const obj40 = {
-      icon: tmp15(tmp2(16921).WrenchIcon, {}),
+      icon: tmp15(tmp2(16963).WrenchIcon, {}),
       label: "Force libdiscore Store Error",
       subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset",
       onPress() {
@@ -902,20 +902,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
           });
         }
     };
-    const TableRow20 = tmp2(6903).TableRow;
+    const TableRow20 = tmp2(6905).TableRow;
     items8[5] = tmp15(TableRow20, obj40);
     items5[8] = tmp13(TableRowGroup5, obj34);
-    const tmp2Result2 = tmp2(1384);
+    const tmp2Result2 = tmp2(1381);
     let isIOSResult = tmp2Result2.isIOS();
     if (isIOSResult) {
       const obj41 = { children: items9 };
       const obj42 = { size: showDevWidget(587).space.PX_16 };
-      const Spacer5 = tmp2(1202).Spacer;
+      const Spacer5 = tmp2(1199).Spacer;
       items9 = [tmp15(Spacer5, obj42), ];
       const obj43 = { title: "Memory Actions", hasIcons: true, children: tmp15(TableRow21, obj44) };
-      const TableRowGroup6 = tmp2(6987).TableRowGroup;
+      const TableRowGroup6 = tmp2(6989).TableRowGroup;
       obj44 = {
-        icon: tmp15(tmp2(16921).WrenchIcon, {}),
+        icon: tmp15(tmp2(16963).WrenchIcon, {}),
         label: "Trigger Memory Warning",
         subLabel: "Simulates a memory warning to test cache-eviction behavior (e.g. SDWebImage).",
         onPress() {
@@ -923,7 +923,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsQu
               return obj.triggerMemoryWarning();
             }
       };
-      TableRow21 = tmp2(6903).TableRow;
+      TableRow21 = tmp2(6905).TableRow;
       items9[1] = tmp15(TableRowGroup6, obj43);
       isIOSResult = tmp13(closure_23, obj41);
     }

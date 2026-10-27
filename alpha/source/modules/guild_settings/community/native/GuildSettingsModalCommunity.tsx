@@ -1,27 +1,27 @@
-// Module ID: 19167
-// Function ID: 19168
+// Module ID: 19205
+// Function ID: 19206
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 4823, 4901, 4903, 4913, 1392, 9006, 17935, 1087, 21, 4971, 587, 5252, 1505, 504, 9005, 1128, 7485, 6924, 5604, 5210, 8925, 2002, 8951, 5977, 6987, 6903, 2]
+// Dependencies: [19, 4824, 4902, 4904, 4914, 1389, 9006, 17969, 1084, 21, 4972, 587, 5253, 1502, 504, 9005, 1125, 7486, 6926, 5605, 5211, 8925, 1999, 8951, 5978, 6989, 6905, 2]
 // Exports: default
 
-// Module 19167 (GuildSettingsModalCommunity)
+// Module 19205 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 587 */;
-import intl11 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4901 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
+import intl11 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7486 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17935 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17969 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;

@@ -1,563 +1,533 @@
 // Module ID: 9747
 // Function ID: 9748
-// Dependencies: [32, 109, 17, 21, 6942, 1506, 9748, 6933, 5916]
-// Exports: useHeaderConfigProps
+// Dependencies: [32, 19, 17, 21, 1503, 1633, 6935, 9748, 5917, 9749, 9751, 9752, 9753, 9754]
+// Exports: NativeStackView
 
 // Module 9747
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import Link from "Link" /* 1503 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 
+const require = globalThis.__r;
+let dependencyMap, set;
+
 let Platform;
+let StyleSheet;
 let c10;
 let c9;
-let closure_12;
+let hasOwnProperty;
 let metroImportAll;
+let metroRequire;
 let unpackModuleId;
-let closure_3 = ["badge", "label", "labelStyle", "icon"];
-let closure_4 = ["label", "icon", "inline", "layout", "items", "multiselectable"];
-let closure_5 = ["label", "icon", "description"];
-({ Platform, StyleSheet: metroImportAll, View: c9 } = react_native);
-({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
-function processBarButtonItems(arg0, arg1, arg2) {
-
-}
-function transformIcon(arg0) {
-
-}
-function getMenuItem(type) {
-  let description;
-  let icon;
-  let inline;
-  let items;
-  let label;
-  let label2;
-  let layout;
-  let multiselectable;
-  if ("submenu" === type.type) {
-    ({ icon, items, multiselectable } = type);
-    const obj2 = {};
-    ({ label, inline, layout } = type);
-    const merged = Object.assign(_objectWithoutProperties(type, closure_4));
-    if (typeof transformIcon === "function") {
-      type = undefined;
-      if (icon != null) {
-        type = icon.type;
-      }
-      let tmp11 = icon;
-      if ("image" === type) {
-        let obj4;
-        if (false === icon.tinted) {
-          obj4 = { type: "imageSource", imageSource: icon.source };
-          const obj3 = { type: "imageSource", imageSource: icon.source };
-        } else {
-          obj4 = { type: "templateSource", templateSource: icon.source };
-        }
-        tmp11 = obj4;
-      }
-      obj2.icon = tmp11;
-      obj2.title = label;
-      obj2.displayAsPalette = "palette" === layout;
-      obj2.displayInline = inline;
-      let tmp12;
-      if (typeof multiselectable === "boolean") {
-        tmp12 = !multiselectable;
-      }
-      obj2.singleSelection = tmp12;
-      obj2.items = items.map(getMenuItem);
-      return obj2;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    const icon2 = type.icon;
-    const obj5 = {};
-    ({ label: label2, description } = type);
-    const merged1 = Object.assign(_objectWithoutProperties(type, closure_5));
-    if (typeof transformIcon === "function") {
-      let type1;
-      if (icon2 != null) {
-        type1 = icon2.type;
-      }
-      let tmp3 = icon2;
-      if ("image" === type1) {
-        let obj;
-        if (false === icon2.tinted) {
-          obj = { type: "imageSource", imageSource: icon2.source };
-          const obj6 = { type: "imageSource", imageSource: icon2.source };
-        } else {
-          obj = { type: "templateSource", templateSource: icon2.source };
-        }
-        tmp3 = obj;
-      }
-      obj5.icon = tmp3;
-      obj5.title = label2;
-      obj5.subtitle = description;
-      return obj5;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-}
-
-export const useHeaderConfigProps = function useHeaderConfigProps(headerLargeTitle) {
-  let SearchBar;
-  let colors;
-  let fonts;
-  let headerBack;
-  let headerBackButtonDisplayMode;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ Animated: hasOwnProperty, Platform, StatusBar: metroRequire, StyleSheet } = react_native);
+({ useAnimatedValue: metroImportAll, View: c9 } = react_native);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+function SceneView(arg0) {
+  let Provider;
+  let Provider2;
+  let Provider4;
+  let ScreenStackItem;
+  let _undefined;
+  let animation;
+  let animationDuration;
+  let animationMatchesGesture;
+  let autoHideHomeIndicator;
+  let c3;
+  let closure_5;
+  let contentStyle;
+  let descriptor;
+  let focused;
+  let freezeOnBlur;
+  let fullScreenGestureEnabled;
+  let gestureDirection;
+  let gestureEnabled;
+  let gestureResponseDistance;
+  let header;
   let headerBackButtonMenuEnabled;
-  let headerBackIcon;
-  let headerBackImageSource;
   let headerBackTitle;
-  let headerBackTitleStyle;
-  let headerBackVisible;
   let headerBackground;
-  let headerBlurEffect;
-  let headerLargeStyle;
-  let headerLargeTitleEnabled;
-  let headerLargeTitleShadowVisible;
-  let headerLargeTitleStyle;
-  let headerLeft;
-  let headerRight;
-  let headerSearchBarOptions;
-  let headerShadowVisible;
   let headerShown;
-  let headerStyle;
-  let headerTintColor;
-  let headerTitle;
-  let headerTitleAlign;
-  let headerTitleStyle;
-  let headerTopInsetEnabled;
   let headerTransparent;
+  let index;
+  let isPreloaded;
+  let items3;
   let items5;
-  let obj14;
-  let obj20;
-  let result;
+  let keyboardHandlingEnabled;
+  let navigationBarColor;
+  let navigationBarHidden;
+  let navigationBarTranslucent;
+  let nextDescriptor;
+  let obj10;
+  let obj12;
+  let obj13;
+  let obj18;
+  let obj19;
+  let obj21;
+  let obj7;
+  let onAppear;
+  let onDisappear;
+  let onDismissed;
+  let onGestureCancel;
+  let onHeaderBackButtonClicked;
+  let onNativeDismissCancelled;
+  let onSheetDetentChanged;
+  let onWillAppear;
+  let onWillDisappear;
+  let options;
+  let orientation;
+  let previousDescriptor;
+  let rect;
   let route;
-  let title;
-  let tmp11;
-  let tmp12;
-  let tmp13;
-  let tmp21;
-  let tmp34Result;
-  let tmp34Result2;
-  let tmp41Result;
-  let tmp51;
-  let tmp53;
-  let tmp55;
-  let tmp57;
-  let tmp59;
+  let scrollEdgeEffects;
+  let sheetAllowedDetents;
+  let shouldFreeze;
+  let statusBarAnimation;
+  let statusBarBackgroundColor;
+  let statusBarHidden;
+  let statusBarStyle;
+  let statusBarTranslucent;
+  let str10;
+  let str8;
+  let str9;
+  let tmp;
+  let tmp17;
+  let tmp18;
+  let tmp39;
   let unstable_headerInsets;
-  let unstable_headerLeftItems;
-  let unstable_headerRightItems;
-  const f104695 = function(type, index) {
-    let badge;
-    let icon;
-    let items;
-    let label;
-    let labelStyle;
-    let obj10;
-    let obj2;
-    let obj6;
-    let obj9;
-    let tmp29;
-    if ("custom" === type.type) {
-      return null;
-    } else if ("spacing" === type.type) {
-      if (null == type.spacing) {
-        const _Error4 = Error;
-        const _JSON4 = JSON;
-        const _HermesInternal4 = HermesInternal;
-        const self7 = this;
-        const self8 = this;
-        const error = new Error("Spacing item must have a 'spacing' property defined: " + JSON.stringify(type));
-        throw error;
-      } else {
-        return type;
+  let unstable_sheetFooter;
+  let value;
+  ({ descriptor, previousDescriptor, nextDescriptor } = arg0);
+  let safeAreaInsets;
+  let num6;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
+  set = undefined;
+  let title;
+  ({ route, navigation, options } = descriptor);
+  let str = options.presentation;
+  ({ index, focused, shouldFreeze, isPreloaded, onWillDisappear, onWillAppear, onAppear, onDisappear, onDismissed, onHeaderBackButtonClicked, onNativeDismissCancelled, onGestureCancel, onSheetDetentChanged } = arg0);
+  const render = descriptor.render;
+  ({ animation, animationMatchesGesture } = options);
+  if (undefined === str) {
+    let str2 = "card";
+    if (tmp) {
+      str2 = "modal";
+    }
+    str = str2;
+  }
+  const animationTypeForReplace = options.animationTypeForReplace;
+  let str3 = "push";
+  let str4 = "push";
+  ({ fullScreenGestureEnabled, animationDuration } = options);
+  if (undefined !== animationTypeForReplace) {
+    str4 = animationTypeForReplace;
+  }
+  const fullScreenGestureShadowEnabled = options.fullScreenGestureShadowEnabled;
+  const tmp2 = undefined === fullScreenGestureShadowEnabled || fullScreenGestureShadowEnabled;
+  ({ gestureEnabled, gestureDirection } = options);
+  if (undefined === gestureDirection) {
+    let str5 = "vertical";
+    if ("card" === str) {
+      str5 = "horizontal";
+    }
+    gestureDirection = str5;
+  }
+  ({ header, headerBackButtonMenuEnabled, headerShown, headerBackground, headerTransparent, sheetAllowedDetents, gestureResponseDistance, autoHideHomeIndicator, keyboardHandlingEnabled, navigationBarColor, navigationBarTranslucent, navigationBarHidden, orientation } = options);
+  if (undefined === sheetAllowedDetents) {
+    sheetAllowedDetents = [1];
+  }
+  const sheetLargestUndimmedDetentIndex = options.sheetLargestUndimmedDetentIndex;
+  let num = -1;
+  let num2 = -1;
+  if (undefined !== sheetLargestUndimmedDetentIndex) {
+    num2 = sheetLargestUndimmedDetentIndex;
+  }
+  const sheetGrabberVisible = options.sheetGrabberVisible;
+  const sheetCornerRadius = options.sheetCornerRadius;
+  const tmp3 = undefined !== sheetGrabberVisible && sheetGrabberVisible;
+  if (undefined !== sheetCornerRadius) {
+    num = sheetCornerRadius;
+  }
+  const sheetElevation = options.sheetElevation;
+  let num3 = 24;
+  if (undefined !== sheetElevation) {
+    num3 = sheetElevation;
+  }
+  const sheetExpandsWhenScrolledToEdge = options.sheetExpandsWhenScrolledToEdge;
+  const sheetInitialDetentIndex = options.sheetInitialDetentIndex;
+  let num4 = 0;
+  const tmp4 = undefined === sheetExpandsWhenScrolledToEdge || sheetExpandsWhenScrolledToEdge;
+  if (undefined !== sheetInitialDetentIndex) {
+    num4 = sheetInitialDetentIndex;
+  }
+  const sheetShouldOverflowTopInset = options.sheetShouldOverflowTopInset;
+  const sheetResizeAnimationEnabled = options.sheetResizeAnimationEnabled;
+  const tmp5 = undefined !== sheetShouldOverflowTopInset && sheetShouldOverflowTopInset;
+  const tmp6 = undefined === sheetResizeAnimationEnabled || sheetResizeAnimationEnabled;
+  ({ statusBarTranslucent, scrollEdgeEffects, unstable_headerInsets } = options);
+  let gestureDirection1;
+  ({ statusBarAnimation, statusBarHidden, statusBarStyle, statusBarBackgroundColor, unstable_sheetFooter, freezeOnBlur, contentStyle } = options);
+  if (nextDescriptor != null) {
+    gestureDirection1 = nextDescriptor.options.gestureDirection;
+  }
+  if (null != gestureDirection1) {
+    gestureDirection = gestureDirection1;
+  }
+  if (0 === index) {
+    str = "card";
+  }
+  const obj = num6(1503);
+  const colors = obj.useTheme().colors;
+  const obj2 = num6(1633);
+  safeAreaInsets = obj2.useSafeAreaInsets();
+  const context = react.useContext(num6(6935).HeaderShownContext);
+  let num5 = react.useContext(num6(6935).HeaderHeightContext);
+  const context1 = react.useContext(num6(6935).HeaderBackContext);
+  const obj4 = num6(6935);
+  const frameSize = obj4.useFrameSize((width) => width.width > width.height);
+  num6 = 0;
+  if (!context) {
+    let top;
+    if (unstable_headerInsets != null) {
+      top = unstable_headerInsets.top;
+    }
+    num6 = 0;
+    if (false !== top) {
+      num6 = safeAreaInsets.top;
+    }
+  }
+  const tmp8Result = num6(6935);
+  const frameSize1 = tmp8Result.useFrameSize((arg0) => 56 + num6);
+  const tmp8Result5 = num6(1503);
+  const preventedRoutes = tmp8Result5.usePreventRemoveContext().preventedRoutes;
+  let num7 = 2;
+  [tmp17, tmp18] = react.useState(frameSize1);
+  dependencyMap = tmp18;
+  _slicedToArray(react.useState(frameSize1), 2);
+  const useCallback = react.useCallback;
+  const tmp8Result6 = num6(9748);
+  const callback = useCallback(tmp8Result6.debounce(tmp18, 100), []);
+  _slicedToArray = 0;
+  let num8 = 0;
+  const tmp21 = "usesNewAndroidHeaderHeightImplementation" in tmp8(5917).compatibilityFlags && true === tmp8(5917).compatibilityFlags.usesNewAndroidHeaderHeightImplementation;
+  if (null == header) {
+    num8 = 0;
+    if (!tmp21) {
+      let num9 = title.currentHeight;
+      if (num9 == null) {
+        num9 = 0;
       }
-    } else {
-      if ("button" !== type.type) {
-        if ("menu" !== type.type) {
-          const _Error = Error;
-          const _JSON = JSON;
-          const _HermesInternal = HermesInternal;
-          const self = this;
-          const self2 = this;
-          const error1 = new Error("Invalid item type: " + JSON.stringify(type) + ". Valid types are 'button', 'menu', 'custom' and 'spacing'.");
-          throw error1;
-        }
-      }
-      if ("menu" === type.type) {
-        if (null == type.menu) {
-          const _Error3 = Error;
-          const _JSON3 = JSON;
-          const _HermesInternal3 = HermesInternal;
-          const self5 = this;
-          const self6 = this;
-          const error2 = new Error("Menu item must have a 'menu' property defined: " + JSON.stringify(type));
-          throw error2;
-        }
-      }
-      ({ badge, labelStyle, icon } = type);
-      const obj = { index, title: label, titleStyle: obj2 };
-      label = type.label;
-      const merged = Object.assign(_objectWithoutProperties(type, closure_2_3));
-      obj2 = {};
-      const merged1 = Object.assign(fonts.regular);
-      const merged2 = Object.assign(labelStyle);
-      const tmp10 = fonts;
-      if (typeof transformIcon === "function") {
-        let tmp20;
-        type = undefined;
-        if (icon != null) {
-          type = icon.type;
-        }
-        let tmp19 = icon;
-        if ("image" === type) {
-          let obj4;
-          if (false === icon.tinted) {
-            obj4 = { type: "imageSource", imageSource: icon.source };
-            const obj3 = { type: "imageSource", imageSource: icon.source };
-          } else {
-            obj4 = { type: "templateSource", templateSource: icon.source };
+      const sum = -num9 + num6;
+      _slicedToArray = sum;
+      num8 = sum;
+    }
+  }
+  const tmp24 = closure_8(frameSize1);
+  react = tmp24;
+  const items = [num8, tmp24];
+  let tmp26 = statusBarTranslucent;
+  const memo = obj3.useMemo(() => hasOwnProperty.add(react, c3), items);
+  if (typeof statusBarTranslucent !== "boolean") {
+    tmp26 = 0 !== num6;
+  }
+  set = tmp27;
+  if (previousDescriptor) {
+    const tmp8Result7 = num6(6935);
+    title = tmp8Result7.getHeaderTitle(previousDescriptor.options, previousDescriptor.route.name);
+  } else if (context1 != null) {
+    title = context1.title;
+  }
+  const items1 = [null != previousDescriptor || null != context1, title];
+  const memo1 = obj3.useMemo(() => {
+    const tmp = closure_5;
+    if (tmp) {
+      return { href: "Array", title };
+    }
+  }, items1);
+  let preventRemove;
+  if (preventedRoutes[route.key] != null) {
+    preventRemove = tmp29.preventRemove;
+  }
+  const obj5 = { route, headerBackButtonMenuEnabled, headerBackTitle, headerHeight: tmp17, headerShown: undefined === header && headerShown, headerTopInsetEnabled: tmp26, headerTransparent, headerBack: memo1 };
+  const useHeaderConfigProps = num6(9749).useHeaderConfigProps;
+  num6(9749);
+  const merged = Object.assign(options);
+  if (undefined !== preventRemove) {
+    headerBackButtonMenuEnabled = !preventRemove;
+  }
+  headerBackTitle = undefined;
+  if (undefined !== options.headerBackTitle) {
+    headerBackTitle = options.headerBackTitle;
+  }
+  let eventResult;
+  const headerConfigProps = useHeaderConfigProps(obj5);
+  if (null == header) {
+    const obj6 = { nativeEvent: obj7 };
+    const items2 = [obj6];
+    obj7 = { headerHeight: tmp24 };
+    const obj8 = {
+      useNativeDriver: true,
+      listener(nativeEvent) {
+          if (nativeEvent.nativeEvent) {
+            if (typeof nativeEvent.nativeEvent === "object") {
+              if ("headerHeight" in nativeEvent.nativeEvent) {
+                if (typeof nativeEvent.nativeEvent.headerHeight === "number") {
+                  const headerHeight = nativeEvent.nativeEvent.headerHeight;
+                  if (0 !== headerHeight) {
+                    const _Math = Math;
+                    if (Math.round(headerHeight) <= 56) {
+                      _undefined(headerHeight + safeAreaInsets.top);
+                    }
+                  }
+                  _undefined(headerHeight);
+                }
+              }
+            }
           }
-          tmp19 = obj4;
         }
-        obj.icon = tmp19;
-        if ("menu" === obj.type) {
-          if ("menu" === type.type) {
-            const menu = type.menu;
-            const multiselectable = menu.multiselectable;
-            const layout = menu.layout;
-            const obj5 = { menu: obj6 };
-            const merged3 = Object.assign(obj);
-            obj6 = { singleSelection: tmp29, displayAsPalette: "palette" === layout, items: items.map(getMenuItem) };
-            const merged4 = Object.assign(obj.menu);
-            tmp29 = undefined;
-            if (typeof multiselectable === "boolean") {
-              tmp29 = !multiselectable;
-            }
-            items = type.menu.items;
-            tmp20 = obj5;
-          }
-          let tmp31 = tmp20;
-          if (badge) {
-            const style = badge.style;
-            let backgroundColor;
-            if (style != null) {
-              backgroundColor = style.backgroundColor;
-            }
-            if (backgroundColor == null) {
-              backgroundColor = colors.notification;
-            }
-            let str9 = "white";
-            const obj7 = fonts(dependencyMap[4])(backgroundColor);
-            if (obj7.isLight()) {
-              str9 = "black";
-            }
-            const obj8 = { badge: obj9 };
-            const merged5 = Object.assign(tmp20);
-            obj9 = { value: String(badge.value), style: obj10 };
-            const merged6 = Object.assign(badge);
-            const _String = String;
-            obj10 = { backgroundColor, color: str9 };
-            const merged7 = Object.assign(tmp10.regular);
-            const merged8 = Object.assign(badge.style);
-            tmp31 = obj8;
-          }
-          return tmp31;
-        }
-        if ("button" === obj.type) {
-          tmp20 = obj;
-        }
-        const _Error2 = Error;
-        const _JSON2 = JSON;
-        const _HermesInternal2 = HermesInternal;
-        const self3 = this;
-        const self4 = this;
-        const error3 = new Error("Invalid item type: " + JSON.stringify(type) + ". Valid types are 'button' and 'menu'.");
-        throw error3;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
+    };
+    eventResult = set.event(items2, obj8);
+  }
+  const obj9 = { route, navigation, children: closure_10(ScreenStackItem, obj10) };
+  const NavigationProvider = tmp8(1503).NavigationProvider;
+  obj10 = { screenId: route.key, activityState: num7, style: StyleSheet.absoluteFill, "aria-hidden": !focused, customAnimationOnSwipe: animationMatchesGesture, fullScreenSwipeEnabled: fullScreenGestureEnabled, fullScreenSwipeShadowEnabled: tmp2, freezeOnBlur, gestureEnabled: false, homeIndicatorHidden: autoHideHomeIndicator, hideKeyboardOnSwipe: keyboardHandlingEnabled, navigationBarColor, navigationBarTranslucent, navigationBarHidden, replaceAnimation: str4, stackPresentation: str3, stackAnimation: animation, screenOrientation: orientation, sheetAllowedDetents, sheetLargestUndimmedDetentIndex: num2, sheetGrabberVisible: tmp3, sheetInitialDetentIndex: num4, sheetCornerRadius: num, sheetElevation: num3, sheetExpandsWhenScrolledToEdge: tmp4, sheetShouldOverflowTopInset: tmp5, sheetDefaultResizeAnimationEnabled: tmp6, statusBarAnimation, statusBarHidden, statusBarStyle, statusBarColor: statusBarBackgroundColor, statusBarTranslucent, swipeDirection: gestureDirection, transitionDuration: animationDuration, onWillAppear, onWillDisappear, onAppear, onDisappear, onDismissed, onGestureCancel, onSheetDetentChanged, gestureResponseDistance, nativeBackButtonDismissalEnabled: false, onHeaderBackButtonClicked, preventNativeDismiss: preventRemove, scrollEdgeEffects: rect, onNativeDismissCancelled, onHeaderHeightChange: eventResult, contentStyle: items3, headerConfig: headerConfigProps, unstable_sheetFooter, shouldFreeze, children: closure_10(Provider, obj12) };
+  ScreenStackItem = tmp8(5917).ScreenStackItem;
+  if (isPreloaded) {
+    num7 = 0;
+  }
+  if ("card" !== str) {
+    str3 = str;
+  }
+  let str7;
+  if (scrollEdgeEffects != null) {
+    str7 = scrollEdgeEffects.bottom;
+  }
+  if (str7 == null) {
+    str7 = "automatic";
+  }
+  rect = { bottom: str7, top: str8, left: str9, right: str10 };
+  str8 = undefined;
+  if (scrollEdgeEffects != null) {
+    str8 = scrollEdgeEffects.top;
+  }
+  if (str8 == null) {
+    str8 = "automatic";
+  }
+  str9 = undefined;
+  if (scrollEdgeEffects != null) {
+    str9 = scrollEdgeEffects.left;
+  }
+  if (str9 == null) {
+    str9 = "automatic";
+  }
+  str10 = undefined;
+  if (scrollEdgeEffects != null) {
+    str10 = scrollEdgeEffects.right;
+  }
+  if (str10 == null) {
+    str10 = "automatic";
+  }
+  let tmp38 = "transparentModal" !== str && "containedTransparentModal" !== str;
+  if (tmp38) {
+    tmp38 = { backgroundColor: colors.background };
+    const obj11 = { backgroundColor: colors.background };
+  }
+  items3 = [tmp38, contentStyle];
+  obj12 = { value: memo, children: tmp39(Provider2, obj13) };
+  Provider = tmp8(9751).AnimatedHeaderHeightContext.Provider;
+  let tmp41 = tmp17;
+  Provider2 = tmp8(6935).HeaderHeightContext.Provider;
+  tmp39 = closure_11;
+  if (false === headerShown) {
+    if (num5 == null) {
+      num5 = 0;
     }
-  };
-  const f104696 = (item) => null != item;
-  ({ headerBackIcon, headerBackImageSource, headerBackTitle, headerBackVisible, headerShadowVisible, headerLargeTitleEnabled } = headerLargeTitle);
-  ({ headerBackButtonDisplayMode, headerBackButtonMenuEnabled, headerBackTitleStyle, headerLargeStyle } = headerLargeTitle);
-  if (headerLargeTitleEnabled === undefined) {
-    headerLargeTitleEnabled = headerLargeTitle.headerLargeTitle;
+    tmp41 = num5;
   }
-  ({ headerBackground, headerLeft, headerRight, headerTintColor, headerTitle, headerTitleAlign, headerTransparent, headerSearchBarOptions, headerTopInsetEnabled, headerBack, unstable_headerInsets, unstable_headerLeftItems, unstable_headerRightItems } = headerLargeTitle);
-  ({ headerLargeTitleShadowVisible, headerLargeTitleStyle, headerShown, headerStyle, headerBlurEffect, headerTitleStyle, route, title } = headerLargeTitle);
-  let obj = colors(1506);
-  const direction = obj.useLocale().direction;
-  let obj2 = colors(1506);
-  const theme = obj2.useTheme();
-  ({ colors, fonts } = theme);
-  let text = headerTintColor;
-  const dark = theme.dark;
-  if (headerTintColor == null) {
-    text = colors.text;
-  }
-  let obj3 = closure_8;
-  let items = [fonts.regular, headerBackTitleStyle];
-  const tmp5 = closure_8.flatten(items) || {};
-  const items1 = [fonts.medium, headerLargeTitleStyle];
-  const tmp6 = obj3.flatten(items1) || {};
-  const items2 = [fonts.medium, headerTitleStyle];
-  const tmp7 = obj3.flatten(items2) || {};
-  let backgroundColor = (obj3.flatten(headerStyle) || {}).backgroundColor;
-  const tmp8 = obj3.flatten(headerStyle) || {};
-  const tmp9 = obj3.flatten(headerLargeStyle) || {};
-  if (backgroundColor == null) {
-    let str2 = "transparent";
-    if (null == headerBackground) {
-      str2 = "transparent";
-      if (!headerTransparent) {
-        str2 = colors.card;
-      }
-    }
-    backgroundColor = str2;
-  }
-  const items3 = [tmp5.fontFamily, tmp6.fontFamily, tmp7.fontFamily];
-  const tmp2Result = colors(9748);
-  let tmp10 = _slicedToArray(tmp2Result.processFonts(items3), 3);
-  let fontSize;
-  [tmp11, tmp12, tmp13] = tmp10;
-  if ("fontSize" in tmp5) {
-    fontSize = tmp5.fontSize;
-  }
-  const tmp2Result2 = colors(6933);
-  const headerTitle1 = tmp2Result2.getHeaderTitle({ title, headerTitle }, route.name);
-  if ("color" in tmp7) {
-    headerTintColor = tmp7.color;
-  } else if (headerTintColor == null) {
-    headerTintColor = colors.text;
-  }
-  let fontSize1;
-  if ("fontSize" in tmp7) {
-    fontSize1 = tmp7.fontSize;
-  }
-  const fontWeight = tmp7.fontWeight;
-  let color;
-  const backgroundColor2 = tmp9.backgroundColor;
-  if ("color" in tmp6) {
-    color = tmp6.color;
-  }
-  let fontSize2;
-  if ("fontSize" in tmp6) {
-    fontSize2 = tmp6.fontSize;
-  }
-  let obj4 = { color: headerTintColor };
-  const fontWeight2 = tmp6.fontWeight;
-  if (null != tmp7.fontFamily) {
-    obj4.fontFamily = tmp7.fontFamily;
-  }
-  if (null != fontSize1) {
-    obj4.fontSize = fontSize1;
-  }
-  if (null != fontWeight) {
-    obj4.fontWeight = fontWeight;
-  }
-  let tmp19 = null != headerBack;
-  let headerLeftResult;
-  if (headerLeft != null) {
-    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "a" };
-    tmp21 = headerBackTitle;
-    if (headerBackTitle == null) {
-      let title1;
-      if (headerBack != null) {
-        title1 = headerBack.title;
-      }
-      tmp21 = title1;
-    }
-    headerLeftResult = headerLeft(obj5);
-  }
-  let headerRightResult;
-  if (headerRight != null) {
-    let obj6 = { tintColor: text, canGoBack: tmp19 };
-    headerRightResult = headerRight(obj6);
-  }
-  let headerTitleResult = null;
-  if (typeof headerTitle === "function") {
-    let obj7 = { tintColor: text, children: headerTitle1 };
-    headerTitleResult = headerTitle(obj7);
-  }
-  const isSearchBarAvailableForCurrentPlatform = tmp2(5916).isSearchBarAvailableForCurrentPlatform;
-  let isSearchBarAvailableForCurrentPlatform2 = typeof isSearchBarAvailableForCurrentPlatform === "boolean";
-  if (typeof isSearchBarAvailableForCurrentPlatform === "boolean") {
-    isSearchBarAvailableForCurrentPlatform2 = tmp2(5916).isSearchBarAvailableForCurrentPlatform;
-  }
-  if (isSearchBarAvailableForCurrentPlatform2) {
-    isSearchBarAvailableForCurrentPlatform2 = null != headerSearchBarOptions;
-  }
-  let tmp25 = headerBackVisible;
-  if (!tmp25) {
-    tmp25 = null != headerTitleResult && null == headerLeftResult;
-  }
-  let tmp27 = null != headerBackground || headerTransparent;
-  if (!tmp27) {
-    tmp27 = (isSearchBarAvailableForCurrentPlatform2 || headerLargeTitleEnabled) && false;
-  }
-  if (unstable_headerLeftItems != null) {
-    let obj8 = { tintColor: text, canGoBack: tmp19 };
-    result = unstable_headerLeftItems(obj8);
-  }
-  let result1;
-  if (unstable_headerRightItems != null) {
-    let obj9 = { tintColor: text, canGoBack: tmp19 };
-    result1 = unstable_headerRightItems(obj9);
-  }
-  let reversed = result1;
-  if (reversed) {
-    const items4 = [];
-    let tmp31 = result1;
-    HermesBuiltin.arraySpread(items4, result1, 0);
-    reversed = items4.reverse();
-  }
-  if (null != headerLeftResult) {
-    let obj10 = null;
-    const ScreenStackHeaderLeftView = tmp2(5916).ScreenStackHeaderLeftView;
-    if ("center" !== headerTitleAlign) {
-      obj10 = { flex: 1 };
-    }
-    const obj11 = { style: obj10, children: items5 };
-    items5 = [headerLeftResult, ];
-    let tmp63Result = null;
-    if ("center" !== headerTitleAlign) {
-      let obj13;
-      const tmp64 = closure_9;
-      if (typeof headerTitle === "function") {
-        obj13 = { style: { flex: 1 }, children: headerTitleResult };
-        const obj12 = { style: { flex: 1 }, children: headerTitleResult };
-      } else {
-        obj13 = { style: { flex: 1 }, children: closure_10(colors(6933).HeaderTitle, obj14) };
-        obj14 = { tintColor: text, style: obj4, children: headerTitle1 };
-      }
-      tmp63Result = tmp63(tmp64, obj13);
-    }
-    items5[1] = tmp63Result;
-    tmp34Result = tmp34(ScreenStackHeaderLeftView, obj11);
-  } else {
-    tmp34Result = null;
-  }
-  const items6 = [tmp34Result, ];
-  let tmp39Result = null;
-  if ("center" === headerTitleAlign) {
-    const ScreenStackHeaderCenterView = tmp2(5916).ScreenStackHeaderCenterView;
-    if (typeof headerTitle !== "function") {
-      const obj15 = { tintColor: text, style: obj4, children: headerTitle1 };
-      headerTitleResult = tmp39(tmp2(6933).HeaderTitle, obj15);
-    }
-    const obj16 = { children: headerTitleResult };
-    tmp39Result = tmp39(ScreenStackHeaderCenterView, obj16);
-  }
-  items6[1] = tmp39Result;
-  const items7 = [tmp34(tmp35, { children: items6 }), , , ];
-  if (undefined !== headerBackIcon) {
-    let source;
-    const ScreenStackHeaderBackButtonImage = tmp2(5916).ScreenStackHeaderBackButtonImage;
-    const tmp41 = closure_10;
-    if (headerBackIcon != null) {
-      source = headerBackIcon.source;
-    }
-    if (source == null) {
-      source = headerBackImageSource;
-    }
-    const obj17 = { source };
-    tmp41Result = tmp41(ScreenStackHeaderBackButtonImage, obj17);
-  } else {
-    tmp41Result = null;
-  }
-  items7[1] = tmp41Result;
-  let tmp43 = null;
-  if (null != headerRightResult) {
-    const obj18 = { hidesSharedBackground: true, children: headerRightResult };
-    tmp43 = closure_10(tmp2(5916).ScreenStackHeaderRightView, obj18);
-  }
-  items7[2] = tmp43;
-  let tmp45 = null;
-  if (isSearchBarAvailableForCurrentPlatform2) {
-    const obj19 = { children: closure_10(SearchBar, obj20) };
-    const ScreenStackHeaderSearchBarView = tmp2(5916).ScreenStackHeaderSearchBarView;
-    obj20 = {};
-    SearchBar = tmp2(5916).SearchBar;
-    let merged = Object.assign(headerSearchBarOptions);
-    tmp45 = closure_10(ScreenStackHeaderSearchBarView, obj19);
-  }
-  items7[3] = tmp45;
-  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "gap", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: "lso", headerRightBarButtonItems: "sgn", experimental_userInterfaceStyle: "lsp" };
-  tmp51 = false === headerShadowVisible;
-  tmp34Result2 = closure_12(closure_11, { children: items7 });
-  if (!tmp51) {
-    tmp51 = null != headerBackground;
-  }
-  if (!tmp51) {
+  let tmp37Result = null;
+  obj13 = { value: tmp41, children: items5 };
+  if (null != headerBackground) {
+    const items4 = [closure_13.background, , ];
+    let translucent = null;
+    const tmp43 = closure_9;
     if (headerTransparent) {
-      headerTransparent = true !== headerShadowVisible;
+      translucent = closure_13.translucent;
     }
-    tmp51 = headerTransparent;
+    items4[1] = translucent;
+    const obj15 = { height: tmp17 };
+    items4[2] = obj15;
+    const obj14 = { style: items4, children: headerBackground() };
+    tmp37Result = tmp37(tmp43, obj14);
   }
-  let top;
-  if (unstable_headerInsets != null) {
-    top = unstable_headerInsets.top;
-  }
-  if (undefined !== top) {
-    tmp53 = !unstable_headerInsets.top;
-  } else {
-    tmp53 = !headerTopInsetEnabled;
-  }
-  let left;
-  if (unstable_headerInsets != null) {
-    left = unstable_headerInsets.left;
-  }
-  tmp55 = undefined;
-  if (undefined !== left) {
-    tmp55 = !unstable_headerInsets.left;
-  }
-  let right;
-  if (unstable_headerInsets != null) {
-    right = unstable_headerInsets.right;
-  }
-  tmp57 = undefined;
-  if (undefined !== right) {
-    tmp57 = !unstable_headerInsets.right;
-  }
-  let bottom;
-  if (unstable_headerInsets != null) {
-    bottom = unstable_headerInsets.bottom;
-  }
-  tmp59 = undefined;
-  if (undefined !== bottom) {
-    tmp59 = !unstable_headerInsets.bottom;
-  }
-  if (typeof processBarButtonItems === "function") {
-    let found;
-    if (result != null) {
-      const mapped = result.map(f104695);
-      found = mapped.filter(f104696);
-    }
-    obj21.headerLeftBarButtonItems = found;
-    if (typeof tmp60 === "function") {
-      let found1;
-      if (reversed != null) {
-        const mapped1 = reversed.map(f104695);
-        found1 = mapped1.filter(f104696);
+  items5 = [tmp37Result, , ];
+  let tmp37Result2 = null;
+  if (null != header) {
+    tmp37Result2 = null;
+    if (false !== headerShown) {
+      const items6 = [closure_13.header, ];
+      let tmp47 = null;
+      if (headerTransparent) {
+        const items7 = [closure_13.absolute, ];
+        const obj16 = { minHeight: tmp17 };
+        items7[1] = obj16;
+        tmp47 = items7;
       }
-      obj21.headerRightBarButtonItems = found1;
-      let str3 = "light";
-      if (dark) {
-        str3 = "dark";
-      }
-      obj21.experimental_userInterfaceStyle = str3;
-      return obj21;
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      items6[1] = tmp47;
+      const obj17 = { style: items6, children: closure_10(closure_9, obj18) };
+      obj18 = {
+        onLayout(nativeEvent) {
+              const height = nativeEvent.nativeEvent.layout.height;
+              _undefined(height);
+              value.setValue(height);
+            },
+        style: { pointerEvents: "box-none" },
+        children: header(obj19)
+      };
+      obj19 = { back: memo1, options, route, navigation };
+      tmp37Result2 = tmp37(tmp46, obj17);
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
+  items5[1] = tmp37Result2;
+  let tmp48 = context;
+  const Provider3 = tmp8(6935).HeaderShownContext.Provider;
+  if (!context) {
+    tmp48 = tmp40;
+  }
+  const obj20 = { value: tmp48, children: closure_10(Provider4, obj21) };
+  obj21 = { value: memo1, children: render() };
+  Provider4 = tmp8(6935).HeaderBackContext.Provider;
+  items5[2] = closure_10(Provider3, obj20);
+  return closure_10(NavigationProvider, obj9);
+}
+const styles = StyleSheet.create({ container: { flex: 1 }, header: { zIndex: 1 }, absolute: { position: "absolute", top: 0, start: 0, end: 0 }, translucent: { position: "absolute", top: 0, start: 0, end: 0, zIndex: 1, elevation: 1 }, background: { overflow: "hidden" } });
+
+export const NativeStackView = function NativeStackView(state) {
+  let ScreenStack;
+  let closure_5;
+  let combined;
+  let descriptors;
+  let obj5;
+  state = state.state;
+  ({ navigation: require, descriptors } = state);
+  const describe = state.describe;
+  let obj = require("_slicedToArray");
+  const setNextDismissedKey = obj.useDismissedRouteError(state).setNextDismissedKey;
+  const obj2 = require("react");
+  const invalidPreventRemoveError = obj2.useInvalidPreventRemoveError(descriptors);
+  const obj3 = require("module_9754");
+  const modalRouteKeys = obj3.getModalRouteKeys(state.routes, descriptors);
+  const preloadedRoutes = state.preloadedRoutes;
+  let closure_6 = preloadedRoutes.reduce((acc, key) => {
+    let tmp = acc[key.key];
+    key = key.key;
+    if (!tmp) {
+      tmp = describe(key, true);
+    }
+    acc[key] = tmp;
+    return acc;
+  }, {});
+  const obj4 = { children: closure_10(ScreenStack, obj5) };
+  const SafeAreaProviderCompat = require("module_6935").SafeAreaProviderCompat;
+  const routes = state.routes;
+  obj5 = {
+    style: closure_13.container,
+    children: combined.map((key, index) => {
+      let tmp16;
+      state = key;
+      let tmp2 = descriptors[key.key];
+      if (tmp2 == null) {
+        tmp2 = closure_6[key.key];
+      }
+      key = undefined;
+      index = state.index;
+      const diff = state.index - 1;
+      const tmp4 = state;
+      if (state.routes[index - 1] != null) {
+        key = tmp6.key;
+      }
+      let key1;
+      if (tmp4.routes[index + 1] != null) {
+        key1 = tmp8.key;
+      }
+      let tmp10;
+      if (key) {
+        tmp10 = tmp[key];
+      }
+      let tmp11;
+      if (key1) {
+        tmp11 = tmp[key1];
+      }
+      const hasItem = closure_5.includes(key.key);
+      if ("nativeFabricUIManager" in state) {
+        tmp16 = !(undefined !== closure_6[key.key] && undefined === descriptors[key.key] || index === index || diff === index || hasItem && false);
+      } else {
+        tmp16 = !tmp14 && !tmp15 && !tmp13;
+      }
+      let obj = {
+        index,
+        focused: tmp15,
+        shouldFreeze: tmp16,
+        descriptor: tmp2,
+        previousDescriptor: tmp10,
+        nextDescriptor: tmp11,
+        isPresentationModal: hasItem,
+        isPreloaded: tmp14,
+        onWillDisappear() {
+          const obj = { type: "transitionStart", data: { closing: true }, target: key.key };
+          require.emit(obj);
+        },
+        onWillAppear() {
+          const obj = { type: "transitionStart", data: { closing: false }, target: key.key };
+          require.emit(obj);
+        },
+        onAppear() {
+          const obj = { type: "transitionEnd", data: { closing: false }, target: key.key };
+          require.emit(obj);
+        },
+        onDisappear() {
+          const obj = { type: "transitionEnd", data: { closing: true }, target: key.key };
+          require.emit(obj);
+        },
+        onDismissed(nativeEvent) {
+          const dispatch = require.dispatch;
+          const obj = { source: key.key, target: state.key };
+          const StackActions = Link.StackActions;
+          const merged = Object.assign(StackActions.pop(nativeEvent.nativeEvent.dismissCount));
+          dispatch(obj);
+          setNextDismissedKey(key.key);
+        },
+        onHeaderBackButtonClicked() {
+          const dispatch = require.dispatch;
+          const obj = { source: key.key, target: state.key };
+          const StackActions = Link.StackActions;
+          const merged = Object.assign(StackActions.pop());
+          dispatch(obj);
+        },
+        onNativeDismissCancelled(nativeEvent) {
+          const dispatch = require.dispatch;
+          const obj = { source: key.key, target: state.key };
+          const StackActions = Link.StackActions;
+          const merged = Object.assign(StackActions.pop(nativeEvent.nativeEvent.dismissCount));
+          dispatch(obj);
+        },
+        onGestureCancel() {
+          const obj = { type: "gestureCancel", target: key.key };
+          require.emit(obj);
+        },
+        onSheetDetentChanged(nativeEvent) {
+          const obj = { type: "sheetDetentChange", target: key.key, data: { index: nativeEvent.nativeEvent.index, stable: nativeEvent.nativeEvent.isStable } };
+          require.emit(obj);
+        }
+      };
+      return closure_1_10(SceneView, obj, key.key);
+    })
+  };
+  ScreenStack = require("enableScreens").ScreenStack;
+  combined = routes.concat(state.preloadedRoutes);
+  return closure_10(SafeAreaProviderCompat, obj4);
 };

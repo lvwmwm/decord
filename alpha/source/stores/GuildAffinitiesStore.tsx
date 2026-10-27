@@ -1,13 +1,13 @@
 // Module ID: 8833
 // Function ID: 8834
 // Name: GuildAffinitiesStore
-// Dependencies: [4845, 8834, 504, 584, 2]
+// Dependencies: [4846, 8834, 504, 584, 2]
 
 // Module 8833 (GuildAffinitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 8834 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

@@ -1,20 +1,20 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16700
+// Function ID: 16701
 // Name: SettingsAppearancePickerUtils
-// Dependencies: [19, 1098, 5202, 1256, 4969, 4968, 587, 558, 576, 1245, 5252, 1128, 2]
+// Dependencies: [19, 1095, 5203, 1253, 4970, 4969, 587, 558, 576, 1242, 5253, 1125, 2]
 // Exports: convertThemesToAnimatedThemes
 
-// Module 16658 (SettingsAppearancePickerUtils)
+// Module 16700 (SettingsAppearancePickerUtils)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import intl2 from "intl" /* 1128 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1245 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import ColorUtils from "ColorUtils" /* 4968 */;
-import utils_ColorDefault from "utils/Color" /* 4969 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5202 */;
-import useToken from "useToken" /* 5252 */;
+import Constants from "Constants" /* 1095 */;
+import intl2 from "intl" /* 1125 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
+import ColorUtils from "ColorUtils" /* 4969 */;
+import utils_ColorDefault from "utils/Color" /* 4970 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5203 */;
+import useToken from "useToken" /* 5253 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,10 +32,10 @@ function getMaxColors() {
     if (ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let _Math3 = Math;
       num = Math.max(1, num);
-    } else if (tmp5(1256).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+    } else if (tmp5(1253).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
       let _Math2 = Math;
       num = Math.max(tmp3.colors.length, num);
-    } else if (tmp5(1256).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+    } else if (tmp5(1253).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
       let _Math = Math;
       num = Math.max(tmp3.customThemeSettings.colors.length, num);
     }
@@ -82,7 +82,7 @@ function convertBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       num8 = 0.3;
     }
     const obj2 = { hex: mixColorsResult.toHexString(), stop: stop.stop };
-    const mixColors = tmp13(4968).mixColors;
+    const mixColors = tmp13(4969).mixColors;
     ColorUtils;
     const tmp16 = new utils_ColorDefault(r, g, b, num8);
     mixColorsResult = mixColors(tmp72, tmp16);
@@ -175,9 +175,9 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme, prop, prop1) {
       num8 = 0.3;
     }
     const obj2 = { hex: mixColorsResult.toHexString(), stop: num9 };
-    const mixColors = tmp15(4968).mixColors;
+    const mixColors = tmp15(4969).mixColors;
     ColorUtils;
-    const tmp18 = new tmp11(4969)(r, g, b, num8);
+    const tmp18 = new tmp11(4970)(r, g, b, num8);
     num9 = 0;
     mixColorsResult = mixColors(tmp72, tmp18);
     if (theme.customThemeSettings.colors.length > 1) {
@@ -212,7 +212,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchW
   const tmpResult = useToken;
   const token = tmpResult.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.zlvNOj);
     cResult[0] = stringResult;
     first = stringResult;
@@ -263,7 +263,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLaunchW
   let token;
   let tmp = importDefault;
   const tmp4 = getSystemThemeDefault() === ThemeTypes.LIGHT ? ThemeTypes.LIGHT : ThemeTypes.DARK;
-  let obj = token(5252);
+  let obj = token(5253);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW, tmp4);
   let items = [token];
   return react.useMemo(() => {
@@ -322,9 +322,9 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
     let tmp6 = require;
     if (ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let arr = items1.push(convertStandardThemeToAnimatedTheme(tmp5, items, BACKGROUND_SURFACE_HIGH));
-    } else if (tmp6(1256).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+    } else if (tmp6(1253).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
       let arr2 = items1.push(convertBackgroundGradientToAnimatedTheme(tmp5, num, num2));
-    } else if (tmp6(1256).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+    } else if (tmp6(1253).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
       let arr5 = items1.push(convertCustomBackgroundGradientToAnimatedTheme(tmp5, num, num2));
     }
     continue;

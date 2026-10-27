@@ -1,29 +1,29 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13817
+// Function ID: 13818
 // Name: ReminderNotification
-// Dependencies: [19, 17, 4823, 4845, 13759, 1087, 21, 4971, 1202, 558, 576, 5691, 587, 13758, 13782, 504, 1108, 13780, 13767, 13769, 5643, 38, 1128, 6672, 13804, 10078, 1267, 13778, 2]
+// Dependencies: [19, 17, 4824, 4846, 13773, 1084, 21, 4972, 1199, 558, 576, 5692, 587, 13772, 13796, 504, 1105, 13794, 13781, 13783, 5644, 38, 1125, 6673, 13818, 10080, 1264, 13792, 2]
 
-// Module 13803 (ReminderNotification)
+// Module 13817 (ReminderNotification)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ClockIcon2 from "ClockIcon" /* 5691 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10078 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13758 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 13767 */;
-import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 13780 */;
-import showForLaterModal from "showForLaterModal" /* 13804 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import ClockIcon2 from "ClockIcon" /* 5692 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10080 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13772 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 13781 */;
+import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 13794 */;
+import showForLaterModal from "showForLaterModal" /* 13818 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13759 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13773 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const MediaPreviewRightAccessory = tmp(13782);
+const MediaPreviewRightAccessory = tmp(13796);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroImportDefault, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportAll, RIGHT_ACCESSORY_LEFT_MARGIN } = InAppNotificationConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -61,7 +61,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       obj2 = { size: "xs", color: nativeDefault.colors.ICON_SUBTLE };
-      const ClockIcon = tmp(5691).ClockIcon;
+      const ClockIcon = tmp(5692).ClockIcon;
       const tmp11 = authStore(ClockIcon, obj2);
       cResult[3] = tmp11;
       tmp8 = tmp11;
@@ -96,7 +96,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     tmp16 = tmp19;
   }
   const obj5 = { user, guildId, size: native.AvatarSizes.NORMAL, cutout: obj2 };
-  const Avatar = tmp(1202).Avatar;
+  const Avatar = tmp(1199).Avatar;
   const tmp6 = authStore(Avatar, obj5);
   cResult[0] = guildId;
   cResult[1] = user;
@@ -218,15 +218,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   }
   const tmpResult4 = channel(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp10);
-  const tmpResult5 = channel(13758);
+  const tmpResult5 = channel(13772);
   const hasPreviewableMedia = tmpResult5.useHasPreviewableMedia(message);
-  const tmp13 = channel.type === channel(1108).ChannelTypes.DM;
+  const tmp13 = channel.type === channel(1105).ChannelTypes.DM;
   let num7 = 1;
   if (tmp13) {
     num7 = closure_8;
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult6 = channel(13758);
+    const tmpResult6 = channel(13772);
     const messagePreviewTextVariant = tmpResult6.getMessagePreviewTextVariant();
     cResult[6] = messagePreviewTextVariant;
     tmp14 = messagePreviewTextVariant;
@@ -267,8 +267,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
         if (!hasPreviewableMedia) {
           let tmp23;
           if (null == message.poll) {
-            const obj3 = { channel, message, color: "text-default", layout: channel(5643).ChannelListLayoutTypes.COZY, variant: tmp14, muted: false, lineClamp: num7 };
-            const ChannelRowPreview = tmp(13769).ChannelRowPreview;
+            const obj3 = { channel, message, color: "text-default", layout: channel(5644).ChannelListLayoutTypes.COZY, variant: tmp14, muted: false, lineClamp: num7 };
+            const ChannelRowPreview = tmp(13783).ChannelRowPreview;
             tmp23 = closure_10(ChannelRowPreview, obj3);
           }
           cResult[12] = channel;
@@ -303,15 +303,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   const items1 = [ChannelStore];
   obj2 = channel(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
-  const obj3 = channel(13758);
+  const obj3 = channel(13772);
   const hasPreviewableMedia = obj3.useHasPreviewableMedia(message);
-  const tmp6 = channel.type === channel(1108).ChannelTypes.DM;
+  const tmp6 = channel.type === channel(1105).ChannelTypes.DM;
   let num = 1;
   if (tmp6) {
     num = closure_8;
   }
   let tmp10 = null;
-  const tmpResult = channel(13758);
+  const tmpResult = channel(13772);
   const messagePreviewTextVariant = tmpResult.getMessagePreviewTextVariant();
   const tmp8 = closure_11;
   const tmp9 = closure_12;
@@ -323,8 +323,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   if (!hasPreviewableMedia) {
     let tmp14;
     if (null == message.poll) {
-      const obj5 = { channel, message, color: "text-default", layout: channel(5643).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
-      const ChannelRowPreview = tmp(13769).ChannelRowPreview;
+      const obj5 = { channel, message, color: "text-default", layout: channel(5644).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      const ChannelRowPreview = tmp(13783).ChannelRowPreview;
       tmp14 = closure_10(ChannelRowPreview, obj5);
     }
     const obj6 = { children: items2 };
@@ -355,8 +355,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      obj2 = { type: "simple", text: intl.string(notification(1128).t.Whs8tE) };
-      intl = tmp(1128).intl;
+      obj2 = { type: "simple", text: intl.string(notification(1125).t.Whs8tE) };
+      intl = tmp(1125).intl;
       cResult[3] = obj2;
       tmp8 = obj2;
     } else {
@@ -409,7 +409,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       let obj4 = { icon: tmp5, header: tmp8, onPress: tmp9, notification, rightAccessory: tmp10, children: tmp14 };
-      const tmp20 = closure_10(notification(13778).NotificationPressable, obj4);
+      const tmp20 = closure_10(notification(13792).NotificationPressable, obj4);
       cResult[11] = tmp5;
       cResult[12] = notification;
       cResult[13] = tmp9;
@@ -459,7 +459,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj3.track(AnalyticEvents.FOR_LATER_REMINDER_NOTIFICATION_CLICKED, obj4);
   }, items);
   obj2 = { icon: tmp2, header: memo, onPress: callback, notification, rightAccessory: closure_10(closure_16, { message }), children: closure_10(closure_17, { channel, message }) };
-  const NotificationPressable = notification(13778).NotificationPressable;
+  const NotificationPressable = notification(13792).NotificationPressable;
   return closure_10(NotificationPressable, obj2);
 }));
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/ReminderNotification.tsx");

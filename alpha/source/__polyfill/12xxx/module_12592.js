@@ -1,205 +1,148 @@
 // Module ID: 12592
 // Function ID: 12593
-// Dependencies: [12582, 12590, 12587]
-// Exports: addContextToFrame, addExceptionMechanism, addExceptionTypeValue, arrayify, checkOrSetAlreadyCaught, getEventDescription, parseSemver, uuid4
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12592
-import _mod12582 from "module_12582" /* 12582 */;
-import _mod12587 from "module_12587" /* 12587 */;
-import _mod12590 from "module_12590" /* 12590 */;
+let filename;
 
-const re2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
-
-export const addContextToFrame = function addContextToFrame(arr, lineno) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 5;
-  }
-  if (undefined !== lineno.lineno) {
-    const _Math2 = Math;
-    const _Math3 = Math;
-    const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
-    const _Math4 = Math;
-    const substr = arr.slice(Math.max(0, bound - num), bound);
-    lineno.pre_context = substr.map((item) => {
-      const obj = _mod12590;
-      return obj.snipLine(item, 0);
-    });
-    const _Math5 = Math;
-    const bound1 = Math.min(length - 1, bound);
-    let num2 = lineno.colno;
-    const snipLine = _mod12590.snipLine;
-    _mod12590;
-    const tmp8 = arr[bound1];
-    if (!num2) {
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
+    }
+    let num2 = arg2;
+    if (arg2 === undefined) {
       num2 = 0;
     }
-    lineno.context_line = snipLine(tmp8, num2);
-    const _Math = Math;
-    const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
-    lineno.post_context = substr1.map((item) => {
-      const obj = _mod12590;
-      return obj.snipLine(item, 0);
-    });
-  }
-};
-export const addExceptionMechanism = function addExceptionMechanism(exception, data) {
-  let first;
-  if (exception.exception) {
-    if (exception.exception.values) {
-      first = exception.exception.values[0];
-    }
-  }
-  if (first) {
-    const mechanism = first.mechanism;
-    const obj = { type: "generic", handled: true };
-    const merged = Object.assign(mechanism);
-    const merged1 = Object.assign(data);
-    first.mechanism = obj;
-    if (data) {
-      if ("data" in data) {
-        const obj2 = {};
-        const merged2 = Object.assign(tmp9);
-        const merged3 = Object.assign(data.data);
-        first.mechanism.data = obj2;
-      }
-    }
-  }
-};
-export const addExceptionTypeValue = function addExceptionTypeValue(exception, arg1, arg2) {
-  const tmp = exception.exception || {};
-  exception.exception = tmp;
-  const tmp2 = tmp.values || [];
-  tmp.values = tmp2;
-  const iter = tmp2[0] || {};
-  tmp2[0] = iter;
-  if (!iter.value) {
-    iter.value = arg1 || "";
-  }
-  if (!iter.type) {
-    iter.type = arg2 || "Error";
-  }
-};
-export const arrayify = function arrayify(arg0) {
-  let tmp = arg0;
-  if (!Array.isArray(arg0)) {
-    const items = [arg0];
-    tmp = items;
-  }
-  return tmp;
-};
-export const checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry_captured__) {
-  function isAlreadyCaptured(__sentry_captured__) {
-    try {
-      return __sentry_captured__.__sentry_captured__;
-    } catch (err) {
-    }
-  }
-  if (isAlreadyCaptured(__sentry_captured__)) {
-    return true;
-  } else {
-    try {
-      const obj = _mod12587;
-      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
-    } catch (err) {
-    }
-    return false;
-  }
-};
-export const getEventDescription = function getEventDescription(exception) {
-  let event_id;
-  let message;
-  ({ message, event_id } = exception);
-  if (message) {
-    return message;
-  } else {
-    let tmp2;
-    let first;
-    if (exception.exception) {
-      if (exception.exception.values) {
-        first = exception.exception.values[0];
-      }
-    }
-    if (first) {
-      if (first.type) {
-        let combined;
-        if (first.value) {
-          const _HermesInternal = HermesInternal;
-          combined = "" + first.type + ": " + first.value;
+    const items = [];
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
         }
-        tmp2 = combined;
-      }
-      combined = first.type || first.value || event_id || "<unknown>";
-    } else {
-      tmp2 = event_id || "<unknown>";
-    }
-    return tmp2;
-  }
-};
-export const parseSemver = function parseSemver(str) {
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  const tmp = str.match(re2) || [];
-  str = tmp[1];
-  const _parseInt = parseInt;
-  if (!str) {
-    str = "";
-  }
-  const _parseIntResult = _parseInt(str, 10);
-  let str2 = tmp[2];
-  const _parseInt2 = parseInt;
-  if (!str2) {
-    str2 = "";
-  }
-  const _parseInt2Result = _parseInt2(str2, 10);
-  let str3 = tmp[3];
-  const _parseInt3 = parseInt;
-  if (!str3) {
-    str3 = "";
-  }
-  const _parseInt3Result = _parseInt3(str3, 10);
-  const obj = { buildmetadata: tmp[5], major: tmp5, minor: tmp6, patch: tmp7, prerelease: tmp[4] };
-  tmp5 = undefined;
-  if (!isNaN(_parseIntResult)) {
-    tmp5 = _parseIntResult;
-  }
-  tmp6 = undefined;
-  if (!isNaN(_parseInt2Result)) {
-    tmp6 = _parseInt2Result;
-  }
-  tmp7 = undefined;
-  if (!isNaN(_parseInt3Result)) {
-    tmp7 = _parseInt3Result;
-  }
-  return obj;
-};
-export const uuid4 = function uuid4() {
-  const GLOBAL_OBJ = _mod12582.GLOBAL_OBJ;
-  const obj = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
-  function getRandomByte() {
-    return 16 * Math.random();
-  }
-  try {
-    if (obj) {
-      if (obj.randomUUID) {
-        let str = obj.randomUUID();
-        return str.replace(/-/g, "");
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
+        }
       }
     }
-    const getRandomValues = obj && obj.getRandomValues;
-    if (getRandomValues) {
-      getRandomByte = function getRandomByte() {
-        const uint8Array = new Uint8Array(1);
-        const randomValues = obj.getRandomValues(uint8Array);
-        return uint8Array[0];
-      };
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
     }
-    const replace = "10000000100040008000100000000000".replace;
-    return "10000000100040008000100000000000".replace(/[018]/g, (arg0) => {
-      const str = arg0 ^ (15 & getRandomByte()) >> arg0 / 4;
-      return str.toString(16);
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
     });
-  } catch (err) {
+  } else {
+    return [];
+  }
+}
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
+
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
+    }
   }
 };
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
+  }
+};
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
+  if (Array.isArray(arg0)) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
+  }
+  return applyResult;
+};
+export { stripSentryFramesAndReverse };

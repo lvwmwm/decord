@@ -1,25 +1,25 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11579
+// Function ID: 11580
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10883, 10884, 1087, 21, 1384, 4971, 587, 6651, 1202, 558, 576, 1633, 5052, 11578, 1107, 1128, 5582, 5206, 5297, 10139, 1499, 11383, 1123, 5037, 4978, 5586, 11580, 2]
+// Dependencies: [32, 19, 17, 10886, 10887, 1084, 21, 1381, 4972, 587, 6652, 1199, 558, 576, 1630, 5053, 11580, 1104, 1125, 5583, 5207, 5298, 10141, 1496, 11386, 1120, 5038, 4979, 5587, 11582, 2]
 
-// Module 11577 (FocusedControlsBottomControls)
+// Module 11579 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 11580 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
+import native from "native" /* 1199 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import timing from "timing" /* 5207 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 11582 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10883 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10884 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelCallStore from "ChannelCallStore" /* 10886 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10887 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import TextStyles from "TextStyles" /* 6652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(11580);
+const CallPTTButton = tmp(11582);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -236,8 +236,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(11578);
-  const canShowTooltip = obj2.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  const obj2 = positionY(11580);
+  const canShowTooltip = obj2.useCanShowTooltip(positionY(1104).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
     return obj;
@@ -246,15 +246,15 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__closure = obj4;
   fn.__workletHash = 15386908151356;
   fn.__initData = __initData3;
-  const obj3 = positionY(5052);
+  const obj3 = positionY(5053);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   if (canShowTooltip) {
     let first;
     const _Symbol = Symbol;
     ({ tooltipStyle, containerStyle, labelStyle } = tmp4);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(positionY(1128).t.zYzy2i);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(positionY(1125).t.zYzy2i);
       cResult[0] = stringResult;
       first = stringResult;
     } else {
@@ -281,8 +281,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
         tmp14 = tmp17;
       }
     }
-    const obj6 = { style: tooltipStyle, arrowPosition: positionY(1202).TooltipArrowPositions.CENTER, arrowDirection: positionY(1202).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle, labelStyle, label: first };
-    const Tooltip = tmp(1202).Tooltip;
+    const obj6 = { style: tooltipStyle, arrowPosition: positionY(1199).TooltipArrowPositions.CENTER, arrowDirection: positionY(1199).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle, labelStyle, label: first };
+    const Tooltip = tmp(1199).Tooltip;
     const tmp13 = closure_13(Tooltip, obj6);
     cResult[1] = tmp4.containerStyle;
     cResult[2] = tmp4.labelStyle;
@@ -298,9 +298,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(11578);
-  const canShowTooltip = obj.useCanShowTooltip(positionY(1107).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(5052);
+  let obj = positionY(11580);
+  const canShowTooltip = obj.useCanShowTooltip(positionY(1104).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  positionY(5053);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
     return obj;
@@ -313,10 +313,10 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   if (canShowTooltip) {
     const obj3 = { style: tmp6, children: closure_13(Tooltip, obj7) };
     const View = ReanimatedRexportDefault.View;
-    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1202).TooltipArrowPositions.CENTER, arrowDirection: positionY(1202).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1128).t.zYzy2i) };
-    Tooltip = tmp2(1202).Tooltip;
+    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1199).TooltipArrowPositions.CENTER, arrowDirection: positionY(1199).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1125).t.zYzy2i) };
+    Tooltip = tmp2(1199).Tooltip;
     ({ containerStyle: obj4.containerStyle, labelStyle: obj4.labelStyle } = tmp);
-    intl = tmp2(1128).intl;
+    intl = tmp2(1125).intl;
     tmp7 = closure_13(View, obj3);
   }
   return tmp7;
@@ -348,7 +348,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   fn.__closure = obj3;
   fn.__workletHash = 16821998405506;
   fn.__initData = __initData5;
-  const obj2 = positionY(5052);
+  const obj2 = positionY(5053);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] !== isExpanded) {
     obj4 = { expanded: isExpanded };
@@ -368,7 +368,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(5582).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(5583).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -418,7 +418,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   if (tmp15) {
     const obj8 = { style: items1, children: aboveActionBar };
     items1 = [tmp4.aboveActionBarChildrenContainer, animatedStyle];
-    tmp15 = closure_13(offsetY(5052).View, obj8);
+    tmp15 = closure_13(offsetY(5053).View, obj8);
   }
   cResult[5] = aboveActionBar;
   cResult[6] = animatedStyle;
@@ -437,7 +437,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = closure_19();
-  let obj = positionY(5052);
+  let obj = positionY(5053);
   const fn = function h() {
     const obj = { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - c16), 0) };
     return obj;
@@ -449,7 +449,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(closure_27, { positionY }), closure_13(positionY(5582).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(closure_27, { positionY }), closure_13(positionY(5583).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;
@@ -457,7 +457,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   if (tmp4Result) {
     obj5 = { style: items1, children: aboveActionBar };
     items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp4Result = tmp4(offsetY(5052).View, obj5);
+    tmp4Result = tmp4(offsetY(5053).View, obj5);
   }
   items[2] = tmp4Result;
   return closure_13(tmp5, obj3);

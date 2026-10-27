@@ -1,12 +1,12 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 11075
+// Function ID: 11076
 // Name: maybeShowUnsavedChangesAlert
-// Dependencies: [5, 32, 19, 21, 5910, 5914, 1128, 5159, 11073, 5210, 5909, 2]
+// Dependencies: [5, 32, 19, 21, 5911, 5915, 1125, 5160, 11076, 5211, 5910, 2]
 // Exports: default
 
-// Module 11072 (maybeShowUnsavedChangesAlert)
-import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
+// Module 11075 (maybeShowUnsavedChangesAlert)
+import intl5 from "intl" /* 1125 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -154,23 +154,23 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
   onReset = onReset.onReset;
   const onContinue = onReset.onContinue;
   if (onReset.hasUnsavedChanges) {
-    let obj = onReset(5159);
+    let obj = onReset(5160);
     obj.dismissKeyboard();
-    const obj2 = onReset(11073);
+    const obj2 = onReset(11076);
     if (obj2.getIsUserProfileMobileSavePromptEnabled(tmp)) {
-      const tmp7Result = onContinue(5210);
+      const tmp7Result = onContinue(5211);
       tmp7Result.hideActionSheet();
-      const tmp7Result3 = onContinue(5909);
+      const tmp7Result3 = onContinue(5910);
       tmp7Result3.close();
       const obj3 = { onReset, onContinue, onSave: tmp2 };
-      const tmp4Result = onReset(5910);
+      const tmp4Result = onReset(5911);
       tmp4Result.openAlert(c9, closure_6(UnsavedChangesSavePromptAlert, obj3), undefined, { dismissable: true });
     } else {
       const obj4 = {
-        title: intl.string(onReset(1128).t.pvRCSu),
-        body: intl2.string(onReset(1128).t.DRi46S),
-        confirmText: intl3.string(onReset(1128).t["6GQDFu"]),
-        cancelText: intl4.string(onReset(1128).t.DmDzZB),
+        title: intl.string(onReset(1125).t.pvRCSu),
+        body: intl2.string(onReset(1125).t.DRi46S),
+        confirmText: intl3.string(onReset(1125).t["6GQDFu"]),
+        cancelText: intl4.string(onReset(1125).t.DmDzZB),
         onConfirm() {
               onReset();
               onContinue();
@@ -181,12 +181,12 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
             },
         isDismissable: false
       };
-      const show = onContinue(5909).show;
-      onContinue(5909);
-      intl = tmp4(1128).intl;
-      intl2 = tmp4(1128).intl;
-      intl3 = tmp4(1128).intl;
-      intl4 = tmp4(1128).intl;
+      const show = onContinue(5910).show;
+      onContinue(5910);
+      intl = tmp4(1125).intl;
+      intl2 = tmp4(1125).intl;
+      intl3 = tmp4(1125).intl;
+      intl4 = tmp4(1125).intl;
       show(obj4);
     }
   } else {

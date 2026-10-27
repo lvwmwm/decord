@@ -1,16 +1,16 @@
-// Module ID: 13881
-// Function ID: 13882
+// Module ID: 13895
+// Function ID: 13896
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4971, 587, 558, 576, 9429, 1128, 5234, 2]
+// Dependencies: [17, 21, 4972, 587, 558, 576, 9428, 1125, 5235, 2]
 
-// Module 13881 (OrbCheckoutAmountTag)
+// Module 13895 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import OrbsIcon from "OrbsIcon" /* 9429 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import OrbsIcon from "OrbsIcon" /* 9428 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,12 +42,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutA
   if (cResult[2] !== orbAmount) {
     let stringResult;
     if (null == orbAmount) {
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.pfChQr);
+      const intl2 = tmp(1125).intl;
+      stringResult = intl2.string(tmp(1125).t.pfChQr);
     } else {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj3 = { orbAmount };
-      stringResult = intl.formatToPlainString(tmp(1128).t.W4DfeF, obj3);
+      stringResult = intl.formatToPlainString(tmp(1125).t.W4DfeF, obj3);
     }
     cResult[2] = orbAmount;
     cResult[3] = stringResult;
@@ -102,12 +102,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutA
   const tmp3 = View;
   const tmp4 = _false;
   if (null == orbAmount) {
-    const intl2 = tmp5(1128).intl;
-    stringResult = intl2.string(tmp5(1128).t.pfChQr);
+    const intl2 = tmp5(1125).intl;
+    stringResult = intl2.string(tmp5(1125).t.pfChQr);
   } else {
-    const intl = tmp5(1128).intl;
+    const intl = tmp5(1125).intl;
     const obj3 = { orbAmount };
-    stringResult = intl.formatToPlainString(tmp5(1128).t.W4DfeF, obj3);
+    stringResult = intl.formatToPlainString(tmp5(1125).t.W4DfeF, obj3);
   }
   const obj4 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: str };
   str = "--";

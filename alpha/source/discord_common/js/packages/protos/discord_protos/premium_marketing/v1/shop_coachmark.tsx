@@ -1,12 +1,12 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9556
+// Function ID: 9557
 // Name: shop_coachmark
-// Dependencies: [32, 1212, 9535, 9525, 2]
+// Dependencies: [32, 1209, 9534, 9524, 2]
 
-// Module 9557 (shop_coachmark)
-import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9525 */;
-import theme_aware_asset from "theme_aware_asset" /* 9535 */;
+// Module 9556 (shop_coachmark)
+import _mod1209 from "module_1209" /* 1209 */;
+import localized_string from "localized_string" /* 9524 */;
+import theme_aware_asset from "theme_aware_asset" /* 9534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const T7 = function T() {
   return require("theme_aware_asset").ThemeAwareAsset;
 };
 const ShopCoachmarkDisplayType = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", SM_TILE: 1, [1]: "SM_TILE", MD_TILE: 2, [2]: "MD_TILE", LG_TILE: 3, [3]: "LG_TILE", VIDEO_TILE: 4, [4]: "VIDEO_TILE" };
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1209.MessageType;
 class ShopCoachmark$Type extends MessageType {
   constructor() {
     let items = [, , , , , , , , , , , , , ];
@@ -66,9 +66,9 @@ class ShopCoachmark$Type extends MessageType {
     const obj = { displayType: 0, badgeIcon: "", badgeCountdownEndsAt: "", showHoverGradient: false, header: "", body: "", buttonLabel: "", badgeText: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1209;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -90,7 +90,7 @@ class ShopCoachmark$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -98,7 +98,7 @@ class ShopCoachmark$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const headerLocalized = asset.headerLocalized;
-      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(headerLocalized, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -106,7 +106,7 @@ class ShopCoachmark$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = asset.bodyLocalized;
-      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(bodyLocalized, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -114,62 +114,62 @@ class ShopCoachmark$Type extends MessageType {
       const LocalizedString3 = localized_string.LocalizedString;
       internalBinaryWrite4 = LocalizedString3.internalBinaryWrite;
       const buttonLabelLocalized = asset.buttonLabelLocalized;
-      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(buttonLabelLocalized, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if (0 !== asset.displayType) {
-      const tagResult4 = tag.tag(5, _mod1212.WireType.Varint);
+      const tagResult4 = tag.tag(5, _mod1209.WireType.Varint);
       tagResult4.int32(asset.displayType);
     }
     if (asset.badgeTextLocalized) {
       const LocalizedString4 = localized_string.LocalizedString;
       internalBinaryWrite5 = LocalizedString4.internalBinaryWrite;
       const badgeTextLocalized = asset.badgeTextLocalized;
-      const tagResult5 = tag.tag(6, _mod1212.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(badgeTextLocalized, tagResult5.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     if ("" !== asset.badgeIcon) {
-      const tagResult6 = tag.tag(7, _mod1212.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1209.WireType.LengthDelimited);
       tagResult6.string(asset.badgeIcon);
     }
     if ("" !== asset.badgeCountdownEndsAt) {
-      const tagResult7 = tag.tag(8, _mod1212.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1209.WireType.LengthDelimited);
       tagResult7.string(asset.badgeCountdownEndsAt);
     }
     if (false !== asset.showHoverGradient) {
-      const tagResult8 = tag.tag(9, _mod1212.WireType.Varint);
+      const tagResult8 = tag.tag(9, _mod1209.WireType.Varint);
       tagResult8.bool(asset.showHoverGradient);
     }
     if (asset.hoverBackground) {
       const ThemeAwareAsset2 = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite6 = ThemeAwareAsset2.internalBinaryWrite;
       const hoverBackground = asset.hoverBackground;
-      const tagResult9 = tag.tag(10, _mod1212.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(10, _mod1209.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(hoverBackground, tagResult9.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if ("" !== asset.header) {
-      const tagResult10 = tag.tag(11, _mod1212.WireType.LengthDelimited);
+      const tagResult10 = tag.tag(11, _mod1209.WireType.LengthDelimited);
       tagResult10.string(asset.header);
     }
     if ("" !== asset.body) {
-      const tagResult11 = tag.tag(12, _mod1212.WireType.LengthDelimited);
+      const tagResult11 = tag.tag(12, _mod1209.WireType.LengthDelimited);
       tagResult11.string(asset.body);
     }
     if ("" !== asset.buttonLabel) {
-      const tagResult12 = tag.tag(13, _mod1212.WireType.LengthDelimited);
+      const tagResult12 = tag.tag(13, _mod1209.WireType.LengthDelimited);
       tagResult12.string(asset.buttonLabel);
     }
     if ("" !== asset.badgeText) {
-      const tagResult13 = tag.tag(14, _mod1212.WireType.LengthDelimited);
+      const tagResult13 = tag.tag(14, _mod1209.WireType.LengthDelimited);
       tagResult13.string(asset.badgeText);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1209.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

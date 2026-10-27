@@ -1,22 +1,22 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11263
+// Function ID: 11264
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1087, 21, 4971, 558, 576, 7282, 7301, 587, 1105, 1202, 11261, 11262, 2]
+// Dependencies: [19, 17, 1084, 21, 4972, 558, 576, 7284, 7303, 587, 1102, 1199, 11264, 11265, 2]
 
-// Module 11260 (OfficialConnectionIcon)
+// Module 11263 (OfficialConnectionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import native from "native" /* 1202 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7282 */;
-import RoleIconDefault from "RoleIcon" /* 7301 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11261 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11262 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
+import native from "native" /* 1199 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7284 */;
+import RoleIconDefault from "RoleIcon" /* 7303 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11264 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11265 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfficialConn
                 tmp22 = tmp25;
               }
               const obj5 = { style: tmp18, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
-              const Icon2 = tmp(1202).Icon;
+              const Icon2 = tmp(1199).Icon;
               const tmp21 = metroRequire(Icon2, obj5);
               cResult[26] = PRIMARY_630;
               cResult[27] = tmp18;
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfficialConn
             tmp18 = items2;
           }
           const obj6 = { style: tmp14, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
-          const Icon = tmp(1202).Icon;
+          const Icon = tmp(1199).Icon;
           const tmp17 = metroRequire(Icon, obj6);
           cResult[20] = roleColor;
           cResult[21] = tmp14;
@@ -271,11 +271,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfficialConn
   items1 = [style, size1];
   const obj5 = { style: items2, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
   items2 = [tmp.verifiedCheck, size1];
-  const Icon = tmp2(1202).Icon;
+  const Icon = tmp2(1199).Icon;
   items3 = [metroRequire(Icon, obj5), ];
   const obj6 = { style: items4, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
   items4 = [tmp.verifiedCheck, size1];
-  const Icon2 = tmp2(1202).Icon;
+  const Icon2 = tmp2(1199).Icon;
   items3[1] = metroRequire(Icon2, obj6);
   return metroImportDefault(View, obj4);
 });

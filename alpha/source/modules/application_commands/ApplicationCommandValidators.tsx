@@ -1,17 +1,17 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12042
+// Function ID: 12043
 // Name: ApplicationCommandValidators
-// Dependencies: [2068, 8293, 2000, 10201, 38, 1128, 10199, 7630, 10202, 2]
+// Dependencies: [2065, 8291, 1997, 10203, 38, 1125, 10201, 7631, 10204, 2]
 
-// Module 12041 (ApplicationCommandValidators)
+// Module 12042 (ApplicationCommandValidators)
 import _modDef38 from "module_38" /* 38 */;
-import intl5 from "intl" /* 1128 */;
-import Server from "Server" /* 2000 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7630 */;
-import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 10199 */;
-import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 10201 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
+import intl5 from "intl" /* 1125 */;
+import Server from "Server" /* 1997 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7631 */;
+import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 10201 */;
+import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 10203 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
 import size from "module_2" /* 2 */;
 
 function validateNumericOptionRange(NumberResult, minValue, v8Y5zsp, CyRLmH, VD3Q_S) {
@@ -113,10 +113,10 @@ let obj = {
         if (null == surrogate) {
           return { success: false };
         } else {
-          const prop = tmp3(1128).t["e+9/SY"];
-          const IE1sTh = tmp3(1128).t.IE1sTh;
-          const rXAFQD = tmp3(1128).t.rXAFQD;
-          const prop1 = tmp3(1128).t["ycEPx/"];
+          const prop = tmp3(1125).t["e+9/SY"];
+          const IE1sTh = tmp3(1125).t.IE1sTh;
+          const rXAFQD = tmp3(1125).t.rXAFQD;
+          const prop1 = tmp3(1125).t["ycEPx/"];
           if (undefined === type2.minLength) {
             if (undefined !== type2.maxLength) {
               if (!obj2.success) {
@@ -129,7 +129,7 @@ let obj = {
             if (undefined !== type2.minLength) {
               if (type2.minLength === type2.maxLength) {
                 const obj3 = { success: false, error: formatToPlainString4(prop, obj4) };
-                const intl4 = tmp3(1128).intl;
+                const intl4 = tmp3(1125).intl;
                 obj4 = { value: minLength3.toLocaleString(intl5.intl.currentLocale, { useGrouping: false }) };
                 minLength3 = type2.minLength;
                 formatToPlainString4 = intl4.formatToPlainString;
@@ -140,7 +140,7 @@ let obj = {
           if (undefined !== type2.maxLength) {
             if (undefined !== type2.minLength) {
               const obj5 = { success: false, error: formatToPlainString3(IE1sTh, obj6) };
-              const intl3 = tmp3(1128).intl;
+              const intl3 = tmp3(1125).intl;
               obj6 = { minimum: minLength2.toLocaleString(intl5.intl.currentLocale, { useGrouping: false }), maximum: maxLength2.toLocaleString(intl5.intl.currentLocale, { useGrouping: false }) };
               minLength2 = type2.minLength;
               formatToPlainString3 = intl3.formatToPlainString;
@@ -150,14 +150,14 @@ let obj = {
           }
           if (undefined !== type2.minLength) {
             const obj7 = { success: false, error: formatToPlainString2(rXAFQD, obj8) };
-            const intl2 = tmp3(1128).intl;
+            const intl2 = tmp3(1125).intl;
             obj8 = { minimum: minLength.toLocaleString(intl5.intl.currentLocale, { useGrouping: false }) };
             minLength = type2.minLength;
             formatToPlainString2 = intl2.formatToPlainString;
             obj2 = obj7;
           } else if (undefined !== type2.maxLength) {
             const obj9 = { success: false, error: formatToPlainString(prop1, obj10) };
-            const intl = tmp3(1128).intl;
+            const intl = tmp3(1125).intl;
             obj10 = { maximum: maxLength.toLocaleString(intl5.intl.currentLocale, { useGrouping: false }) };
             maxLength = type2.maxLength;
             formatToPlainString = intl.formatToPlainString;
@@ -201,8 +201,8 @@ let obj = {
                 let obj3;
                 const _Number3 = Number;
                 if (Number.isSafeInteger(NumberResult)) {
-                  const v8Y5zsp = tmp3(1128).t["8Y5zsp"];
-                  obj3 = validateNumericOptionRange(NumberResult, type2, v8Y5zsp, tmp3(1128).t.CyRLmH, tmp3(1128).t["VD3Q+S"]);
+                  const v8Y5zsp = tmp3(1125).t["8Y5zsp"];
+                  obj3 = validateNumericOptionRange(NumberResult, type2, v8Y5zsp, tmp3(1125).t.CyRLmH, tmp3(1125).t["VD3Q+S"]);
                 }
                 return obj3;
               }
@@ -246,8 +246,8 @@ let obj = {
               let obj3;
               const _Number3 = Number;
               if (NumberResult >= Number.MIN_SAFE_INTEGER) {
-                const v8Y5zsp = tmp3(1128).t["8Y5zsp"];
-                obj3 = validateNumericOptionRange(NumberResult, type2, v8Y5zsp, tmp3(1128).t.CyRLmH, tmp3(1128).t["VD3Q+S"]);
+                const v8Y5zsp = tmp3(1125).t["8Y5zsp"];
+                obj3 = validateNumericOptionRange(NumberResult, type2, v8Y5zsp, tmp3(1125).t.CyRLmH, tmp3(1125).t["VD3Q+S"]);
               }
               return obj3;
             }
@@ -265,7 +265,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(10202);
+        const tmpResult = tmp(10204);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, id5, id, { allowRoles: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -284,7 +284,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(10202);
+        const tmpResult = tmp(10204);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, id5, id);
         type = undefined;
         if (applicationCommandOption != null) {
@@ -303,7 +303,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp3Result = tmp3(10202);
+        const tmp3Result = tmp3(10204);
         const applicationCommandOption = tmp3Result.resolveApplicationCommandOption(type.text, id5, id, { allowUsers: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -327,7 +327,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp4Result = tmp4(10202);
+        const tmp4Result = tmp4(10204);
         const applicationCommandOption = tmp4Result.resolveApplicationCommandOption(type.text, id5, id);
         let tmp10 = null != applicationCommandOption;
         if (tmp10) {

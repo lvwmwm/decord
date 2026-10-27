@@ -1,11 +1,11 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11357
+// Function ID: 11358
 // Name: getIsAskToJoin
-// Dependencies: [1087, 2]
+// Dependencies: [1084, 2]
 // Exports: getIsAskToJoin
 
-// Module 11354 (getIsAskToJoin)
-import Constants from "Constants" /* 1087 */;
+// Module 11357 (getIsAskToJoin)
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const ActivityActionTypes = Constants.ActivityActionTypes;

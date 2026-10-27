@@ -1,15 +1,15 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11375
+// Function ID: 11376
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4874, 10884, 8820, 1357, 504, 584, 2]
+// Dependencies: [4875, 10887, 8820, 1354, 504, 584, 2]
 
-// Module 11372 (ChannelCallLifecycleStore)
+// Module 11375 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef1357 from "module_1357" /* 1357 */;
+import _modDef1354 from "module_1354" /* 1354 */;
 import DeviceOrientation from "DeviceOrientation" /* 8820 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10884 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10887 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
 import size_mod from "module_2" /* 2 */;
 
 let voiceChannelId;
@@ -20,9 +20,9 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+let size = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+const size1 = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;

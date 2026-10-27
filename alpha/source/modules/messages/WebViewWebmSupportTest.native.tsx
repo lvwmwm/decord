@@ -1,15 +1,15 @@
-// Module ID: 6000
-// Function ID: 6001
+// Module ID: 6001
+// Function ID: 6002
 // Name: WebViewWebmSupportTest
-// Dependencies: [1384, 4928, 2]
+// Dependencies: [1381, 4929, 2]
 // Exports: isIOSWithWebM
 
-// Module 6000 (WebViewWebmSupportTest)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+// Module 6001 (WebViewWebmSupportTest)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DeviceUtils = tmp(4928);
+const DeviceUtils = tmp(4929);
 const ARM64_ = "ARM64_";
 const result = size.fileFinishedImporting("modules/messages/WebViewWebmSupportTest.native.tsx");
 

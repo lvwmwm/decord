@@ -1,10 +1,10 @@
 // Module ID: 11450
 // Function ID: 11451
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1131]
 
 // Module 11450 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/user_profile", width: 24, height: 24, scales: [2, 3], hash: "af427c90f62cf9f5d8fe96c2adf6bb3f", name: "ic_video_disabled_white", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/dark_theme", width: 24, height: 24, scales: [2, 3], hash: "530ba220f07acfc32feb554b142fc895", name: "voice_bar_mute_on", type: "png" });

@@ -1,13 +1,13 @@
 // Module ID: 8840
 // Function ID: 8841
 // Name: ICYMIUtils
-// Dependencies: [5, 6784, 4827, 4823, 4845, 8837, 1087, 8836, 8841, 8846, 6012, 8847, 8613, 8848, 1128, 2]
+// Dependencies: [5, 6785, 4828, 4824, 4846, 8837, 1084, 8836, 8841, 8846, 6013, 8847, 8613, 8848, 1125, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
 // Module 8840 (ICYMIUtils)
-import intl11 from "intl" /* 1128 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
+import intl11 from "intl" /* 1125 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6013 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8613 */;
 import ICYMITypes from "ICYMITypes" /* 8836 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
@@ -15,11 +15,11 @@ import generateHydrationId from "generateHydrationId" /* 8846 */;
 import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8847 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8848 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8837 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -391,34 +391,34 @@ export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentio
     flag = false;
   }
   if (ICYMITypes.ContentType.POPULAR_MESSAGE === ANNOUNCEMENT) {
-    const intl10 = tmp(1128).intl;
+    const intl10 = tmp(1125).intl;
     return intl10.string(intl11.t["H/2+cl"]);
   } else if (ICYMITypes.ContentType.IMAGE === ANNOUNCEMENT) {
-    const intl9 = tmp(1128).intl;
+    const intl9 = tmp(1125).intl;
     return intl9.string(intl11.t.gmOWAo);
   } else if (ICYMITypes.ContentType.VIDEO === ANNOUNCEMENT) {
-    const intl8 = tmp(1128).intl;
+    const intl8 = tmp(1125).intl;
     return intl8.string(intl11.t.swhcPM);
   } else if (ICYMITypes.ContentType.LINK === ANNOUNCEMENT) {
-    const intl7 = tmp(1128).intl;
+    const intl7 = tmp(1125).intl;
     return intl7.string(intl11.t.oj5yvD);
   } else if (ICYMITypes.ContentType.THREAD === ANNOUNCEMENT) {
-    const intl6 = tmp(1128).intl;
+    const intl6 = tmp(1125).intl;
     return intl6.string(intl11.t.DwLrLK);
   } else if (ICYMITypes.ContentType.FORUM_POST === ANNOUNCEMENT) {
-    const intl5 = tmp(1128).intl;
+    const intl5 = tmp(1125).intl;
     return intl5.string(intl11.t["Q9/6BS"]);
   } else if (ICYMITypes.ContentType.CHANGED_STATUS === ANNOUNCEMENT) {
-    const intl4 = tmp(1128).intl;
+    const intl4 = tmp(1125).intl;
     return intl4.string(intl11.t.TGrUmi);
   } else if (ICYMITypes.ContentType.INTERESTING === ANNOUNCEMENT) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     return intl3.string(intl11.t["TahE/i"]);
   } else if (ICYMITypes.ContentType.ANNOUNCEMENT === ANNOUNCEMENT) {
     let stringResult;
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const string = intl2.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     if (flag) {
       stringResult = string(t.E0MW8I);
     } else {
@@ -426,7 +426,7 @@ export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentio
     }
     return stringResult;
   } else if (ICYMITypes.ContentType.FILE === ANNOUNCEMENT) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     return intl.string(intl11.t.pYrnTY);
   }
 };

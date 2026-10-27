@@ -1,19 +1,19 @@
-// Module ID: 6990
-// Function ID: 6991
+// Module ID: 6992
+// Function ID: 6993
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1392, 6983, 1087, 21, 4971, 587, 558, 576, 1505, 504, 1267, 1107, 6991, 1128, 5234, 5244, 6921, 2]
+// Dependencies: [19, 17, 1389, 6985, 1084, 21, 4972, 587, 558, 576, 1502, 504, 1264, 1104, 6993, 1125, 5235, 5245, 6923, 2]
 
-// Module 6990 (ChangeEmailWarning)
+// Module 6992 (ChangeEmailWarning)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import VerificationConstants from "VerificationConstants" /* 6983 */;
+import Constants from "Constants" /* 1084 */;
+import ConstantsIOS from "ConstantsIOS" /* 1104 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import VerificationConstants from "VerificationConstants" /* 6985 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   const cResult = obj.c(26);
   changeEmailReason = changeEmailReason.changeEmailReason;
   const tmp4 = closure_11();
-  let obj2 = changeEmailReason(1505);
+  let obj2 = changeEmailReason(1502);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -81,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       const _Symbol6 = Symbol;
       const container = tmp4.container;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp15 = closure_9(changeEmailReason(6991).TrafficConeSpotIllustration, {});
+        const tmp15 = closure_9(changeEmailReason(6993).TrafficConeSpotIllustration, {});
         cResult[5] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -90,8 +90,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       const _Symbol = Symbol;
       const title = tmp4.title;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(changeEmailReason(1128).t.hhR7gX);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(changeEmailReason(1125).t.hhR7gX);
         cResult[6] = stringResult;
         tmp16 = stringResult;
       } else {
@@ -99,7 +99,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       }
       if (cResult[7] !== tmp4.title) {
         const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
-        const tmp20 = closure_9(changeEmailReason(5234).Text, obj3);
+        const tmp20 = closure_9(changeEmailReason(5235).Text, obj3);
         cResult[7] = tmp4.title;
         cResult[8] = tmp20;
         tmp18 = tmp20;
@@ -109,9 +109,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       const _Symbol2 = Symbol;
       const body = tmp4.body;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const obj4 = { hcArticle };
-        const formatResult = intl2.format(changeEmailReason(1128).t.rqWXUf, obj4);
+        const formatResult = intl2.format(changeEmailReason(1125).t.rqWXUf, obj4);
         cResult[9] = formatResult;
         tmp21 = formatResult;
       } else {
@@ -119,8 +119,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       }
       const _Symbol3 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1128).intl;
-        const stringResult1 = intl3.string(changeEmailReason(1128).t["3LW10C"]);
+        const intl3 = tmp(1125).intl;
+        const stringResult1 = intl3.string(changeEmailReason(1125).t["3LW10C"]);
         cResult[10] = stringResult1;
         tmp24 = stringResult1;
       } else {
@@ -137,8 +137,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         const _Symbol4 = Symbol;
         const buttonContainer = tmp4.buttonContainer;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1128).intl;
-          const stringResult2 = intl4.string(changeEmailReason(1128).t.rwTBFs);
+          const intl4 = tmp(1125).intl;
+          const stringResult2 = intl4.string(changeEmailReason(1125).t.rwTBFs);
           cResult[14] = stringResult2;
           tmp29 = stringResult2;
         } else {
@@ -146,7 +146,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         }
         if (cResult[15] !== tmp11) {
           const obj5 = { size: "md", variant: "tertiary", text: tmp29, onPress: tmp11, shrink: true };
-          const tmp33 = closure_9(changeEmailReason(5244).Button, obj5);
+          const tmp33 = closure_9(changeEmailReason(5245).Button, obj5);
           cResult[15] = tmp11;
           cResult[16] = tmp33;
           tmp31 = tmp33;
@@ -158,15 +158,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
           const obj6 = {
             size: "md",
             variant: "primary",
-            text: intl5.string(changeEmailReason(1128).t["ETE/oC"]),
+            text: intl5.string(changeEmailReason(1125).t["ETE/oC"]),
             onPress() {
                       const obj = navigation(dependencyMap[18]);
                       return obj.close();
                     },
             shrink: true
           };
-          const Button = tmp(5244).Button;
-          intl5 = tmp(1128).intl;
+          const Button = tmp(5245).Button;
+          intl5 = tmp(1125).intl;
           const tmp36 = closure_9(Button, obj6);
           cResult[17] = tmp36;
           tmp34 = tmp36;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
       }
       const obj10 = { style: body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
       items3 = [tmp21, "\n\n", tmp24];
-      const tmp28 = closure_10(changeEmailReason(5234).Text, obj10);
+      const tmp28 = closure_10(changeEmailReason(5235).Text, obj10);
       cResult[11] = tmp4.body;
       cResult[12] = tmp21;
       cResult[13] = tmp28;
@@ -238,7 +238,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   let obj4;
   changeEmailReason = changeEmailReason.changeEmailReason;
   const tmp = closure_11();
-  let obj = changeEmailReason(1505);
+  let obj = changeEmailReason(1502);
   navigation = obj.useNavigation();
   let obj2 = changeEmailReason(504);
   const items = [UserStore];
@@ -248,36 +248,36 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   if (null != stateFromStores) {
     const obj3 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_4, obj4) };
     obj4 = { style: tmp.container, children: items2 };
-    items2 = [closure_9(changeEmailReason(6991).TrafficConeSpotIllustration, {}), , , ];
-    const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1128).t.hhR7gX) };
-    const Text = tmp2(5234).Text;
-    intl = tmp2(1128).intl;
+    items2 = [closure_9(changeEmailReason(6993).TrafficConeSpotIllustration, {}), , , ];
+    const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1125).t.hhR7gX) };
+    const Text = tmp2(5235).Text;
+    intl = tmp2(1125).intl;
     items2[1] = closure_9(Text, obj5);
     const obj6 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
-    const Text2 = tmp2(5234).Text;
-    const intl2 = tmp2(1128).intl;
+    const Text2 = tmp2(5235).Text;
+    const intl2 = tmp2(1125).intl;
     const obj7 = { hcArticle };
-    items3 = [intl2.format(changeEmailReason(1128).t.rqWXUf, obj7), "\n\n", ];
-    const intl3 = tmp2(1128).intl;
-    items3[2] = intl3.string(changeEmailReason(1128).t["3LW10C"]);
+    items3 = [intl2.format(changeEmailReason(1125).t.rqWXUf, obj7), "\n\n", ];
+    const intl3 = tmp2(1125).intl;
+    items3[2] = intl3.string(changeEmailReason(1125).t["3LW10C"]);
     items2[2] = closure_10(Text2, obj6);
     const obj8 = { style: tmp.buttonContainer, children: items4 };
-    const obj9 = { size: "md", variant: "tertiary", text: intl4.string(changeEmailReason(1128).t.rwTBFs), onPress: tmp6, shrink: true };
-    const Button = tmp2(5244).Button;
-    intl4 = tmp2(1128).intl;
+    const obj9 = { size: "md", variant: "tertiary", text: intl4.string(changeEmailReason(1125).t.rwTBFs), onPress: tmp6, shrink: true };
+    const Button = tmp2(5245).Button;
+    intl4 = tmp2(1125).intl;
     items4 = [closure_9(Button, obj9), ];
     const obj10 = {
       size: "md",
       variant: "primary",
-      text: intl5.string(changeEmailReason(1128).t["ETE/oC"]),
+      text: intl5.string(changeEmailReason(1125).t["ETE/oC"]),
       onPress() {
           const obj = navigation(dependencyMap[18]);
           return obj.close();
         },
       shrink: true
     };
-    const Button2 = tmp2(5244).Button;
-    intl5 = tmp2(1128).intl;
+    const Button2 = tmp2(5245).Button;
+    intl5 = tmp2(1125).intl;
     items4[1] = closure_9(Button2, obj10);
     items2[3] = closure_10(closure_4, obj8);
     tmp7 = closure_9(closure_5, obj3);

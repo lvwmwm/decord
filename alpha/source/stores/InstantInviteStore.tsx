@@ -1,12 +1,12 @@
 // Module ID: 8867
 // Function ID: 8868
 // Name: InstantInviteStore
-// Dependencies: [8868, 7809, 8869, 8871, 8872, 504, 584, 2]
+// Dependencies: [8868, 7810, 8869, 8871, 8872, 504, 584, 2]
 
 // Module 8867 (InstantInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 7809 */;
+import Constants from "Constants" /* 7810 */;
 import headDefault from "head" /* 8869 */;
 import reverseDefault from "reverse" /* 8871 */;
 import _modDef8872 from "module_8872" /* 8872 */;

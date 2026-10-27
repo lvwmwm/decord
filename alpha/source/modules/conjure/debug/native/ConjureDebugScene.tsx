@@ -1,25 +1,25 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12549
+// Function ID: 12550
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 10698, 10704, 21, 4971, 587, 1128, 3830, 558, 576, 1505, 1633, 12234, 8901, 504, 10733, 11761, 12542, 7285, 12551, 5663, 5682, 12280, 9146, 12552, 12558, 12560, 2]
+// Dependencies: [32, 19, 17, 10701, 10707, 21, 4972, 587, 1125, 3831, 558, 576, 1502, 1630, 12253, 8901, 504, 10736, 11763, 12550, 7287, 12559, 5664, 5683, 12285, 9146, 12560, 12566, 12568, 2]
 
-// Module 12541 (ConjureDebugScene)
+// Module 12549 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import CopyIcon from "CopyIcon" /* 5682 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10733 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 11761 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12551 */;
+import intl4 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import CopyIcon from "CopyIcon" /* 5683 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10701 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10736 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 11763 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 12559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10704 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
         const tmp4 = projectId;
         if (null != result) {
           setActiveIndex(arr.indexOf("trace"), false);
-          const tmp2Result = tmp2(12542);
+          const tmp2Result = tmp2(12550);
           tmp2Result.openPerfTrace(tmp4, result);
         }
       }
@@ -360,7 +360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(12542);
+        const tmp2Result = tmp2(12550);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }
@@ -376,7 +376,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDeb
     ClipboardUtils;
     const obj = ConjureDebugSnapshot;
     copy(obj.conjureDebugSnapshot(projectId));
-    const obj2 = { text: intl.string(_modDef3830.wI6fhl), icon: CopyIcon.CopyIcon };
+    const obj2 = { text: intl.string(_modDef3831.wI6fhl), icon: CopyIcon.CopyIcon };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl4.intl;

@@ -1,15 +1,15 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13568
+// Function ID: 13569
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4971, 587, 558, 576, 1202, 5234, 2]
+// Dependencies: [21, 4972, 587, 558, 576, 1199, 5235, 2]
 
-// Module 13554 (ApplicationIconAndName)
+// Module 13568 (ApplicationIconAndName)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import native from "native" /* 1199 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

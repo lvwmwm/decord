@@ -1,20 +1,20 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12747
+// Function ID: 12748
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 4883, 4845, 5700, 1392, 1087, 558, 576, 504, 1405, 8880, 12739, 8654, 6852, 2]
+// Dependencies: [19, 502, 4884, 4846, 5701, 1389, 1084, 558, 576, 504, 1402, 8880, 12748, 8654, 6854, 2]
 // Exports: getGuildProfileCTAType
 
-// Module 12738 (useGuildProfileCTA)
-import FlagUtils from "FlagUtils" /* 1405 */;
+// Module 12747 (useGuildProfileCTA)
+import FlagUtils from "FlagUtils" /* 1402 */;
 import GuildTagUtils from "GuildTagUtils" /* 8654 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12739 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12748 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import InviteStore from "InviteStore" /* 5700 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import InviteStore from "InviteStore" /* 5701 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

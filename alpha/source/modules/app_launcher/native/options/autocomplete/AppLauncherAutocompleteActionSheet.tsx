@@ -1,29 +1,29 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 12057
+// Function ID: 12058
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8306, 4845, 1087, 5983, 21, 12, 10198, 4971, 587, 558, 576, 573, 5210, 1128, 12050, 12052, 38, 6903, 5234, 6484, 1202, 12051, 2]
+// Dependencies: [32, 19, 17, 8304, 4846, 1084, 5984, 21, 12, 10200, 4972, 587, 558, 576, 573, 5211, 1125, 12051, 12053, 38, 6905, 5235, 6485, 1199, 12052, 2]
 
-// Module 12056 (AppLauncherAutocompleteActionSheet)
+// Module 12057 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
-import merged5 from "merged5" /* 6484 */;
-import TableRow from "TableRow" /* 6903 */;
-import executeCommandDefault from "executeCommand" /* 10198 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12051 */;
+import Constants from "Constants" /* 1084 */;
+import intl2 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5984 */;
+import merged5 from "merged5" /* 6485 */;
+import TableRow from "TableRow" /* 6905 */;
+import executeCommandDefault from "executeCommand" /* 10200 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12052 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8306 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8304 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -976,7 +976,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Autoco
   const tmp4 = closure_12();
   const emptyState = tmp4.emptyState;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.rTAbPn);
     cResult[0] = stringResult;
     first = stringResult;
@@ -985,7 +985,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Autoco
   }
   if (cResult[1] !== tmp4.emptyState) {
     const obj2 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, title: first };
-    const EmptyState = tmp(1202).EmptyState;
+    const EmptyState = tmp(1199).EmptyState;
     const tmp10 = React4(EmptyState, obj2);
     cResult[1] = tmp4.emptyState;
     cResult[2] = tmp10;

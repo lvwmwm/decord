@@ -1,27 +1,27 @@
-// Module ID: 1207
-// Function ID: 1208
+// Module ID: 1204
+// Function ID: 1205
 // Name: ThemeStore
-// Dependencies: [1208, 1209, 1246, 1210, 1097, 1087, 1245, 1252, 15385, 504, 4804, 584, 2]
+// Dependencies: [1205, 1206, 1243, 1207, 1094, 1084, 1242, 1249, 15421, 504, 4805, 584, 2]
 
-// Module 1207 (ThemeStore)
+// Module 1204 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1245 */;
-import resolveThemeDefault from "resolveTheme" /* 1252 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4804 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
+import Constants from "Constants" /* 1084 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
+import resolveThemeDefault from "resolveTheme" /* 1249 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import ThemeConstants from "ThemeConstants" /* 1207 */;
 import size from "module_2" /* 2 */;
 
 let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(15385);
+const updateBackgroundColorDefault = tmp(15421);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -160,7 +160,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(15385)(closure_13);
+        tmp2(15421)(closure_13);
         flag = true;
       }
       tmp = flag;

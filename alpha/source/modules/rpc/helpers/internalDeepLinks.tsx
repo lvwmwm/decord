@@ -1,12 +1,12 @@
-// Module ID: 15738
-// Function ID: 15739
+// Module ID: 15774
+// Function ID: 15775
 // Name: internalDeepLinks
-// Dependencies: [32, 1386, 5656, 8865, 2]
+// Dependencies: [32, 1383, 5657, 8865, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 15738 (internalDeepLinks)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import openURL from "openURL" /* 5656 */;
+// Module 15774 (internalDeepLinks)
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import openURL from "openURL" /* 5657 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -14,14 +14,14 @@ const set = new Set(["channels", "users", "events"]);
 const set1 = new Set(["", "-"]);
 const result = size.fileFinishedImporting("modules/rpc/helpers/internalDeepLinks.tsx");
 
-export const resolveInternalDeepLink = function resolveInternalDeepLink(url) {
+export const resolveInternalDeepLink = function resolveInternalDeepLink(src) {
   let host;
   let hostname;
   let hostname2;
   let pathname;
   let protocol;
   const obj = URLUtilsDefault;
-  const toURLSafeResult = obj.toURLSafe(url);
+  const toURLSafeResult = obj.toURLSafe(src);
   if (null == toURLSafeResult) {
     return null;
   } else {

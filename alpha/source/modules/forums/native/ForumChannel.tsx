@@ -1,41 +1,41 @@
-// Module ID: 13710
-// Function ID: 13711
+// Module ID: 13724
+// Function ID: 13725
 // Name: ForumChannel
-// Dependencies: [19, 17, 4904, 6790, 4823, 7631, 6636, 13100, 1087, 1098, 21, 4971, 587, 6651, 558, 576, 9708, 1128, 5234, 9725, 7401, 504, 13711, 7379, 9, 9245, 9247, 9251, 7261, 6908, 5210, 13713, 2002, 5244, 12035, 13714, 9463, 9729, 13715, 5604, 13127, 13099, 13716, 8289, 7220, 10625, 5663, 5686, 7369, 7253, 7278, 8531, 11024, 9727, 13719, 8304, 10088, 10119, 5212, 5213, 10117, 6871, 5593, 11022, 8920, 13723, 13174, 2]
+// Dependencies: [19, 17, 4905, 6791, 4824, 7632, 6637, 13114, 1084, 1095, 21, 4972, 587, 6652, 558, 576, 9710, 1125, 5235, 9727, 7403, 504, 13725, 7381, 9, 9245, 9247, 9251, 7263, 6910, 5211, 13727, 1999, 5245, 12036, 13728, 9462, 9731, 13729, 5605, 13141, 13113, 13730, 8287, 7222, 10628, 5664, 5687, 7371, 7255, 7280, 8531, 11027, 9729, 13733, 8302, 10090, 10121, 5213, 5214, 10119, 6873, 5594, 11025, 8920, 13737, 13188, 2]
 
-// Module 13710 (ForumChannel)
+// Module 13724 (ForumChannel)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1098 */;
-import intl3 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 7401 */;
-import Tracking from "Tracking" /* 8289 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8304 */;
+import Constants2 from "Constants" /* 1095 */;
+import intl3 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5687 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 7403 */;
+import Tracking from "Tracking" /* 8287 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9251 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9708 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10088 */;
-import ForumPostDefault from "ForumPost" /* 13099 */;
-import ForumChannelStore from "ForumChannelStore" /* 13100 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 13127 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13719 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9710 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10090 */;
+import ForumPostDefault from "ForumPost" /* 13113 */;
+import ForumChannelStore from "ForumChannelStore" /* 13114 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 13141 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13733 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4904 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6790 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import DraftStore from "DraftStore" /* 7631 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6636 */;
-import Constants from "Constants" /* 1087 */;
+import LurkingStore from "LurkingStore" /* 4905 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6791 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import DraftStore from "DraftStore" /* 7632 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6637 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles_mod from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import TextStyles_mod from "TextStyles" /* 6652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const MemberVerificationModalActionCreators = tmp(6871);
+const MemberVerificationModalActionCreators = tmp(6873);
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === loading_section) {
@@ -78,20 +78,20 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(13713, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(13727, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  const Button = id(5244).Button;
-  const intl = id(1128).intl;
+  const Button = id(5245).Button;
+  const intl = id(1125).intl;
   const string = intl.string;
-  const t = id(1128).t;
+  const t = id(1125).t;
   const tmp4 = id;
   if (isMediaChannelResult) {
     stringResult = string(t.JxU0wr);
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12035).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12036).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_14(Button, obj);
 }
 function TagFilter(channel) {
@@ -99,17 +99,17 @@ function TagFilter(channel) {
   channel = channel.channel;
   let obj = {
     variant: "secondary",
-    text: intl.string(channel(1128).t["112vVE"]),
+    text: intl.string(channel(1125).t["112vVE"]),
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(13714, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(13728, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_14(channel(9463).TagIcon, { size: "xxs" })
+    icon: closure_14(channel(9462).TagIcon, { size: "xxs" })
   };
-  const Button = channel(5244).Button;
-  intl = channel(1128).intl;
+  const Button = channel(5245).Button;
+  intl = channel(1125).intl;
   return closure_14(Button, obj);
 }
 function getForumItemType(arg0) {
@@ -194,7 +194,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
     const _Symbol = Symbol;
     const divider = tmp4.divider;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const stringResult = intl.string(intl3.t["3+LO1w"]);
       cResult[3] = stringResult;
       tmp8 = stringResult;
@@ -285,12 +285,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     tmp7 = tmp9;
   }
   if (0 === numPosts) {
-    const intl2 = tmp(1128).intl;
-    stringResult = intl2.string(tmp(1128).t.DbgHxi);
+    const intl2 = tmp(1125).intl;
+    stringResult = intl2.string(tmp(1125).t.DbgHxi);
   } else {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj4 = { numPosts, query: searchQuery };
-    stringResult = intl.formatToPlainString(tmp(1128).t["tBz/8b"], obj4);
+    stringResult = intl.formatToPlainString(tmp(1125).t["tBz/8b"], obj4);
   }
   cResult[0] = numPosts;
   cResult[1] = searchQuery;
@@ -308,12 +308,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   Text = Text_Text.Text;
   const tmp3 = View;
   if (0 === numPosts) {
-    const intl2 = tmp4(1128).intl;
-    stringResult = intl2.string(tmp4(1128).t.DbgHxi);
+    const intl2 = tmp4(1125).intl;
+    stringResult = intl2.string(tmp4(1125).t.DbgHxi);
   } else {
-    const intl = tmp4(1128).intl;
+    const intl = tmp4(1125).intl;
     const obj3 = { numPosts, query: searchQuery };
-    stringResult = intl.formatToPlainString(tmp4(1128).t["tBz/8b"], obj3);
+    stringResult = intl.formatToPlainString(tmp4(1125).t["tBz/8b"], obj3);
   }
   return syncedClientThemes(tmp3, obj);
 });
@@ -328,7 +328,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
   const tmp4 = closure_24();
   ({ missingPermissionContainer, missingPermissionText } = tmp4);
   if (cResult[0] !== channelName) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { channelName };
     const formatResult = intl.format(intl3.t.TycmzM, obj2);
     cResult[0] = channelName;
@@ -384,7 +384,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   const tmp4 = closure_24();
   ({ section, missingPermissionText } = tmp4);
   if (cResult[0] !== channelName) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { channelName };
     const formatResult = intl.format(intl3.t.OWZJdS, obj2);
     cResult[0] = channelName;
@@ -1617,7 +1617,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8304).changeThreadSettings;
+        const changeThreadSettings = tmp2(8302).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {
@@ -1716,7 +1716,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8304).changeThreadSettings;
+        const changeThreadSettings = tmp2(8302).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {

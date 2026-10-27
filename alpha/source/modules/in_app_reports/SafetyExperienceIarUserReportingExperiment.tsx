@@ -1,12 +1,12 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14285
+// Function ID: 14286
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [5188, 558, 576, 2]
+// Dependencies: [5189, 558, 576, 2]
 // Exports: isIarUserReportingEnabled
 
-// Module 14258 (SafetyExperienceIarUserReportingExperiment)
+// Module 14285 (SafetyExperienceIarUserReportingExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5188" /* 5188 */;
+import createExperiment from "module_5189" /* 5189 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

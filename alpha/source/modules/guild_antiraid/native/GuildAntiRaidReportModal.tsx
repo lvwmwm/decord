@@ -1,23 +1,23 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15252
+// Function ID: 15253
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15217, 21, 4971, 587, 558, 576, 1633, 5234, 5660, 1128, 6900, 6987, 5244, 6924, 10033, 12778, 7057, 7095, 2]
+// Dependencies: [5, 32, 19, 17, 15253, 21, 4972, 587, 558, 576, 1630, 5235, 5661, 1125, 6902, 6989, 5245, 6926, 10035, 12787, 7059, 7097, 2]
 
-// Module 15216 (GuildAntiRaidReportModal)
+// Module 15252 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
+import intl3 from "intl" /* 1125 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import NavigatorHeader from "NavigatorHeader" /* 6926 */;
+import TableRowGroup2 from "TableRowGroup" /* 6989 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15217 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15253 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   const onSubmit = raidTypes.onSubmit;
   const tmp4 = closure_13();
   dependencyMap = tmp4;
-  const bottom = onChange(1633)().bottom;
+  const bottom = onChange(1630)().bottom;
   if (cResult[0] !== tmp4.formRow) {
     const fn = function n(arg0) {
       const obj = { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
@@ -86,9 +86,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   }
   ({ container, headerSubtitle } = tmp4);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { onClick: tmp6 };
-    const formatResult = intl.format(raidTypes(1128).t.Hg8Ee7, obj2);
+    const formatResult = intl.format(raidTypes(1125).t.Hg8Ee7, obj2);
     cResult[3] = formatResult;
     tmp7 = formatResult;
   } else {
@@ -96,7 +96,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   }
   if (cResult[4] !== tmp4.headerSubtitle) {
     const obj3 = { style: headerSubtitle, variant: "text-sm/medium", color: "text-default", children: tmp7 };
-    const tmp11 = closure_10(raidTypes(5234).Text, obj3);
+    const tmp11 = closure_10(raidTypes(5235).Text, obj3);
     cResult[4] = tmp4.headerSubtitle;
     cResult[5] = tmp11;
     tmp9 = tmp11;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
       }
       if (cResult[10] !== tmp13) {
         const obj4 = { hasIcons: false, children: tmp13 };
-        const tmp17 = closure_10(raidTypes(6987).TableRowGroup, obj4);
+        const tmp17 = closure_10(raidTypes(6989).TableRowGroup, obj4);
         cResult[10] = tmp13;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -143,8 +143,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           }
           const _Symbol = Symbol;
           if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp(1128).intl;
-            const stringResult = intl2.string(raidTypes(1128).t.geKm7t);
+            const intl2 = tmp(1125).intl;
+            const stringResult = intl2.string(raidTypes(1125).t.geKm7t);
             cResult[20] = stringResult;
             tmp25 = stringResult;
           } else {
@@ -152,7 +152,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           }
           if (cResult[21] !== onSubmit) {
             const obj6 = { size: "md", text: tmp25, onPress: onSubmit };
-            const tmp29 = closure_10(raidTypes(5244).Button, obj6);
+            const tmp29 = closure_10(raidTypes(5245).Button, obj6);
             cResult[21] = onSubmit;
             cResult[22] = tmp29;
             tmp27 = tmp29;

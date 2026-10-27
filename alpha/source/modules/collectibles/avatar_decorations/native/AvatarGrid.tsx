@@ -1,18 +1,18 @@
-// Module ID: 14501
-// Function ID: 14502
+// Module ID: 14537
+// Function ID: 14538
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4972, 5712, 21, 4971, 587, 558, 576, 504, 8738, 1202, 2]
+// Dependencies: [19, 17, 4973, 5713, 21, 4972, 587, 558, 576, 504, 8738, 1199, 2]
 
-// Module 14501 (AvatarGrid)
+// Module 14537 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
+import native from "native" /* 1199 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
                   }
                 }
                 tmp29[0] = tmp21;
-                const Avatar2 = tmp(1202).Avatar;
+                const Avatar2 = tmp(1199).Avatar;
                 const merged = Object.assign(tmp14);
                 const tmp33 = closure_5(Avatar2, tmp29);
                 cResult[15] = tmp14;
@@ -149,7 +149,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
               return useReducedMotion.useReducedMotion;
             }
           }
-          const Avatar = tmp(1202).Avatar;
+          const Avatar = tmp(1199).Avatar;
           const merged1 = Object.assign(tmp14);
           const tmp20 = closure_5(Avatar, obj2);
           cResult[18] = guildId;
@@ -196,7 +196,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAva
   if (showStatus) {
     tmp6 = stateFromStores;
   }
-  const Avatar = tmp2(1202).Avatar;
+  const Avatar = tmp2(1199).Avatar;
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };

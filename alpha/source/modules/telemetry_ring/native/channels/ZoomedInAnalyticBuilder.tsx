@@ -1,14 +1,14 @@
-// Module ID: 2011
-// Function ID: 2012
+// Module ID: 2008
+// Function ID: 2009
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1087, 1378, 2012, 2013, 2]
+// Dependencies: [1084, 1375, 2009, 2010, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 2011 (ZoomedInAnalyticBuilder)
-import Constants from "Constants" /* 1087 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2012 */;
-import RTCControlSocket from "RTCControlSocket" /* 2013 */;
+// Module 2008 (ZoomedInAnalyticBuilder)
+import Constants from "Constants" /* 1084 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1375 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2009 */;
+import RTCControlSocket from "RTCControlSocket" /* 2010 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -531,7 +531,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "application" };
+      obj = { message_identity: "unknown", socket_kind: "applicationId" };
     } else {
       const url = data.url;
       let tmp58 = null;

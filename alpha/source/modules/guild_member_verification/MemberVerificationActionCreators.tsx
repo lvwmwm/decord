@@ -1,20 +1,20 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6851
+// Function ID: 6852
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 4876, 4883, 5700, 1392, 1087, 1297, 5701, 584, 6850, 6854, 5005, 6855, 5908, 1128, 6374, 1267, 2]
+// Dependencies: [5, 4877, 4884, 5701, 1389, 1084, 1294, 5702, 584, 6852, 6856, 5006, 6857, 5909, 1125, 6375, 1264, 2]
 // Exports: showCoachmark
 
-// Module 6849 (MemberVerificationActionCreators)
+// Module 6851 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5701 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 4876 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import InviteStore from "InviteStore" /* 5700 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ImpersonateStore from "ImpersonateStore" /* 4877 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import InviteStore from "InviteStore" /* 5701 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, currentUser, isMember, message, status;

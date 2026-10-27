@@ -1,20 +1,20 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 14017
+// Function ID: 14018
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6776, 558, 576, 5626, 11776, 7346, 1128, 10765, 12270, 13848, 11538, 5686, 8668, 9971, 14004, 2]
+// Dependencies: [19, 6777, 558, 576, 5627, 11777, 7348, 1125, 10768, 12275, 13862, 11540, 5687, 8668, 9973, 14018, 2]
 
-// Module 14003 (useAppChannelOverflowMenuItems)
-import intl5 from "intl" /* 1128 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
+// Module 14017 (useAppChannelOverflowMenuItems)
+import intl5 from "intl" /* 1125 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5627 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5687 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import FlagIcon from "FlagIcon" /* 9971 */;
-import restartFrames from "restartFrames" /* 10765 */;
-import DoorExitIcon from "DoorExitIcon" /* 11538 */;
-import RefreshIcon from "RefreshIcon" /* 12270 */;
-import closeFrameDefault from "closeFrame" /* 13848 */;
-import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 14004 */;
+import FlagIcon from "FlagIcon" /* 9973 */;
+import restartFrames from "restartFrames" /* 10768 */;
+import DoorExitIcon from "DoorExitIcon" /* 11540 */;
+import RefreshIcon from "RefreshIcon" /* 12275 */;
+import closeFrameDefault from "closeFrame" /* 13862 */;
+import openAppChannelReportModalDefault from "openAppChannelReportModal" /* 14018 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     if (cResult[1] === application_id.id) {
       tmp5 = cResult[2];
     }
-    const tmp7 = application_id(11776)(application_id, tmp5);
+    const tmp7 = application_id(11777)(application_id, tmp5);
     dependencyMap = tmp7;
     const tmpResult = require("useAppChannelApplication");
     const appChannelApplication = tmpResult.useAppChannelApplication(application_id);
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
           let tmp21;
           const _Symbol2 = Symbol;
           if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1128).intl;
+            const intl = tmp(1125).intl;
             const stringResult = intl.string(require("intl").t.kHie4V);
             cResult[6] = stringResult;
             tmp15 = stringResult;
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
           items.push(tmp17);
           const _Symbol3 = Symbol;
           if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp(1128).intl;
+            const intl2 = tmp(1125).intl;
             const stringResult1 = intl2.string(require("intl").t.VkMnR2);
             cResult[9] = stringResult1;
             tmp19 = stringResult1;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
         let tmp24;
         const _Symbol5 = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1128).intl;
+          const intl3 = tmp(1125).intl;
           const stringResult2 = intl3.string(require("intl").t.Sh2z9g);
           cResult[16] = stringResult2;
           tmp24 = stringResult2;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
       }
       const _Symbol4 = Symbol;
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1128).intl;
+        const intl4 = tmp(1125).intl;
         const stringResult3 = intl4.string(require("intl").t.NgA5vp);
         cResult[20] = stringResult3;
         tmp29 = stringResult3;
@@ -225,7 +225,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: application_id.id, guildId: application_id.guild_id };
     return obj;
   }, items);
-  const tmp3 = application_id(11776)(application_id, memo);
+  const tmp3 = application_id(11777)(application_id, memo);
   dependencyMap = tmp3;
   let obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(application_id);

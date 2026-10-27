@@ -1,13 +1,13 @@
-// Module ID: 13552
-// Function ID: 13553
+// Module ID: 13566
+// Function ID: 13567
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 558, 576, 5025, 1128, 5914, 5914, 2]
+// Dependencies: [19, 21, 558, 576, 5026, 1125, 5915, 5915, 2]
 
-// Module 13552 (UserProfileConfirmThreadRemove)
+// Module 13566 (UserProfileConfirmThreadRemove)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
+import intl5 from "intl" /* 1125 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import AlertModal2 from "AlertModal" /* 5915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -29,9 +29,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const obj2 = UserUtilsDefault;
   const name = obj2.useName(user);
   if (cResult[0] !== isForumPost) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     const stringResult = string(isForumPost ? t["8sKSjm"] : t.ZPm8jN);
     cResult[0] = isForumPost;
     cResult[1] = stringResult;
@@ -50,7 +50,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
+      const intl3 = tmp(1125).intl;
       const stringResult1 = intl3.string(intl5.t.N86XcP);
       cResult[5] = stringResult1;
       tmp10 = stringResult1;
@@ -69,8 +69,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-      const AlertActionButton = tmp(5914).AlertActionButton;
-      intl4 = tmp(1128).intl;
+      const AlertActionButton = tmp(5915).AlertActionButton;
+      intl4 = tmp(1125).intl;
       const tmp17 = _false(AlertActionButton, obj4, "cancel-remove-user-from-thread");
       cResult[8] = tmp17;
       tmp15 = tmp17;
@@ -104,9 +104,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     cResult[14] = tmp23;
     tmp21 = tmp23;
   }
-  const intl2 = tmp(1128).intl;
+  const intl2 = tmp(1125).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t2 = tmp(1128).t;
+  const t2 = tmp(1125).t;
   const formatToPlainStringResult = formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
   cResult[2] = isForumPost;
   cResult[3] = name;
@@ -131,18 +131,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const string = intl.string;
   const t = intl5.t;
   const obj2 = { title: string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name }), actions: React3(AlertActions, obj3) };
-  const intl2 = tmp4(1128).intl;
+  const intl2 = tmp4(1125).intl;
   formatToPlainString = intl2.formatToPlainString;
-  t2 = tmp4(1128).t;
+  t2 = tmp4(1125).t;
   obj3 = { children: items };
-  AlertActions = tmp4(5914).AlertActions;
+  AlertActions = tmp4(5915).AlertActions;
   const obj4 = { variant: "destructive", text: intl3.string(intl5.t.N86XcP), onPress: onConfirm };
-  const AlertActionButton = tmp4(5914).AlertActionButton;
-  intl3 = tmp4(1128).intl;
+  const AlertActionButton = tmp4(5915).AlertActionButton;
+  intl3 = tmp4(1125).intl;
   items = [_false(AlertActionButton, obj4, "remove-user-from-thread"), ];
   const obj5 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-  const AlertActionButton2 = tmp4(5914).AlertActionButton;
-  intl4 = tmp4(1128).intl;
+  const AlertActionButton2 = tmp4(5915).AlertActionButton;
+  intl4 = tmp4(1125).intl;
   items[1] = _false(AlertActionButton2, obj5, "cancel-remove-user-from-thread");
   return _false(AlertModal, obj2);
 });

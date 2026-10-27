@@ -1,41 +1,41 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11234
+// Function ID: 11235
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 9782, 4883, 4903, 6771, 6824, 8134, 1087, 21, 9, 11232, 9781, 11223, 9779, 8133, 9995, 11215, 12, 11, 11235, 9571, 9999, 9994, 11237, 7566, 11238, 13050, 5201, 1257, 9997, 12853, 13056, 11222, 568, 5703, 7808, 13057, 12850, 10073, 1384, 1631, 6713, 13058, 2]
+// Dependencies: [5, 32, 19, 9784, 4884, 4904, 6772, 6826, 8132, 1084, 21, 9, 11235, 9783, 11226, 9781, 8131, 9997, 11218, 12, 11, 11238, 9573, 10001, 9996, 11240, 7567, 11241, 13064, 5202, 1254, 9999, 12862, 13070, 11225, 568, 5704, 7809, 13071, 12859, 10075, 1381, 1628, 6714, 13072, 2]
 
-// Module 11231 (MessagesRenderer)
+// Module 11234 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import flow_Client from "flow/Client" /* 5201 */;
-import CodedLink from "CodedLink" /* 5703 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7808 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8134 */;
-import QuestActionCreators from "QuestActionCreators" /* 9571 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9781 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9782 */;
-import computeScrollData from "computeScrollData" /* 9994 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 9995 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9997 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 9999 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10073 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11232 */;
-import MessagesHandlers from "MessagesHandlers" /* 11238 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12853 */;
-import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13056 */;
-import MessagesUtilsDefault from "MessagesUtils" /* 13057 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import flow_Client from "flow/Client" /* 5202 */;
+import CodedLink from "CodedLink" /* 5704 */;
+import QuestTypes from "QuestTypes" /* 6714 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7567 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7809 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8132 */;
+import QuestActionCreators from "QuestActionCreators" /* 9573 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9783 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9784 */;
+import computeScrollData from "computeScrollData" /* 9996 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 9997 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9999 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10001 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10075 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11235 */;
+import MessagesHandlers from "MessagesHandlers" /* 11241 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12862 */;
+import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13070 */;
+import MessagesUtilsDefault from "MessagesUtils" /* 13071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import SKUStore from "SKUStore" /* 6824 */;
-import Constants from "Constants" /* 1087 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
+import SKUStore from "SKUStore" /* 6826 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp;
-const KeyboardTypes = tmp(1631);
+const KeyboardTypes = tmp(1628);
 function handleTapShowAltText(description) {
   openMediaModalOverlayAltTextSheetDefault({ description: description.nativeEvent.description });
 }
@@ -109,7 +109,7 @@ class MessagesRenderer {
     let loadMoreBefore;
     let scrollToTopMessage;
     let updateNativeRows;
-    const f109637 = (id) => id.id;
+    const f109862 = (id) => id.id;
     ref = ref.ref;
     const merged = Object.assign(ref, Object.assign({ ref: 0 }));
     dependencyMap = undefined;
@@ -361,7 +361,7 @@ class MessagesRenderer {
       obj.updateRows(ref6.current, { rows, isLoadingAtTop: tmp, scrollData, HACK_iOSForceAnimations, forceReload, isAnimated });
       ref2.current = hasMoreMessagesAfter;
     }, []);
-    current = merged(11215);
+    current = merged(11218);
     const chatUpdatesQueue = current.useChatUpdatesQueue(ref6, callback);
     let items = [, ];
     ({ canChat: arr[0], channel: arr[1] } = merged);
@@ -396,7 +396,7 @@ class MessagesRenderer {
       return isForumPostResult;
     }, items2);
     let obj2 = { channelId: merged.channelId, jumpTargetId: merged.messages.jumpTargetId, oldestUnreadMessageId: merged.oldestUnreadMessageId, shouldJumpToOriginalPost: callback3 };
-    let tmp18 = chatManager(11235)(obj2);
+    let tmp18 = chatManager(11238)(obj2);
     ({ startOrCancelLatestMessagesLoad: c15, channelLatestMessageLoadingStatsManager } = tmp18);
     let obj3 = {
       chatRef: ref6,
@@ -455,8 +455,8 @@ class MessagesRenderer {
       isStaff: merged.isStaff,
       visibleMessagesWindowHandler: merged.visibleMessagesWindowHandler
     };
-    ({ hasHandledScrollRef: c18, isAtBottomRef: c19, isNearBottomRef: c20, isNearTopRef: c21, deceleratingRef: c22, draggingRef: c23, firstIgnoredScrollEventTimestampRef: c24, scrollToTop: c25, handleScrollCallbacks: c26, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = chatManager(11237)(obj3));
-    const tmp19 = chatManager(11237)(obj3);
+    ({ hasHandledScrollRef: c18, isAtBottomRef: c19, isNearBottomRef: c20, isNearTopRef: c21, deceleratingRef: c22, draggingRef: c23, firstIgnoredScrollEventTimestampRef: c24, scrollToTop: c25, handleScrollCallbacks: c26, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = chatManager(11240)(obj3));
+    const tmp19 = chatManager(11240)(obj3);
     const ref7 = react.useRef(null);
     ref7.current = { getMessage: callback2, chatInputRef: merged.chatInputRef, selectedChannelId: merged.channelId, revealedMessageId: merged.messages.revealedMessageId, uploads: merged.uploads, paymentsBlocked: merged.paymentsBlocked, loadMoreBefore, loadMoreAfter };
     const first3 = first2(react.useState(() => {
@@ -465,7 +465,7 @@ class MessagesRenderer {
     }), 1)[0];
     const imperativeHandle = react.useImperativeHandle(ref, () => ({ scrollToBottom, jumpToPresent, scrollToNewMessages, getChatRef }));
     let obj4 = { chatManager, rowGenerator: first1, animatingStickerMessageIdRef: ref4, canAddNewReactions: callback1, channel: merged.channel, messages: merged.messages, isMessagesReady: merged.isMessagesReady, uploads: merged.uploads, roleStyle: merged.roleStyle, oldestUnreadMessageId: merged.oldestUnreadMessageId, replyingMessageId: merged.replyingMessageId, inlineAttachmentMedia: merged.inlineAttachmentMedia, inlineEmbedMedia: merged.inlineEmbedMedia, renderEmbeds: merged.renderEmbeds, renderReactions: merged.renderReactions, animateEmoji: merged.animateEmoji, gifAutoPlay: merged.gifAutoPlay, timestampHourCycle: merged.timestampHourCycle, currentUserId: merged.currentUserId, renderCommunicationDisabled: merged.renderCommunicationDisabled, selectedSummary: merged.selectedSummary, selectedConversation: merged.selectedConversation, enableSwipeActions: merged.enableSwipeActions, isResourceChannel: merged.isResourceChannel, shouldObscureSpoiler: merged.shouldObscureSpoiler, shouldDisableInteractiveComponents: merged.shouldDisableInteractiveComponents, unloadableContentEntryMessageIds: merged.unloadableContentEntryMessageIds, containerWidth: merged.containerWidth, chatRef: ref6, loadedRef: ref5, animatedRef: ref1, hasMoreMessagesAfterForLastUpdateRef: ref2, updateNativeRows, isLoadingAtTop, channelLatestMessageLoadingStatsManager, channelId: merged.channelId, isMessagesCached: merged.isMessagesCached, chatUpdatesQueue, shouldJumpToOriginalPost: callback3, findMessageIndex, scrollToTopMessage, useReducedMotion: merged.useReducedMotion };
-    let tmp23 = chatManager(13050)(obj4);
+    let tmp23 = chatManager(13064)(obj4);
     ({ updateRows: c33, scrollToMessageId: c34 } = tmp23);
     const effect = react.useEffect(() => {
       let channelId;
@@ -499,7 +499,7 @@ class MessagesRenderer {
       ({ channelId, messages: messages2 } = messages);
       const recordMessageRender = first(hasJumpedToOriginalPost[11]).recordMessageRender;
       first(hasJumpedToOriginalPost[11]);
-      const mapped = messages2.map(f109637);
+      const mapped = messages2.map(f109862);
       let hasFetched = messages2.hasFetched;
       if (!hasFetched) {
         hasFetched = messages2.ready && !messages2.cached;
@@ -508,7 +508,7 @@ class MessagesRenderer {
       ({ channelId: channelId2, messages: messages3 } = messages);
       const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[11]).recordMessageRender;
       first(hasJumpedToOriginalPost[11]);
-      const mapped1 = messages3.map(f109637);
+      const mapped1 = messages3.map(f109862);
       let hasFetched2 = messages3.hasFetched;
       if (!hasFetched2) {
         hasFetched2 = messages3.ready && !messages3.cached;
@@ -692,67 +692,69 @@ class MessagesRenderer {
                                   if (props.appDirectoryEmbedApplicationFetchStates === tmp2.appDirectoryEmbedApplicationFetchStates) {
                                     if (props.guildTemplates === tmp2.guildTemplates) {
                                       if (props.gameOrganizationInvites === tmp2.gameOrganizationInvites) {
-                                        if (props.buildOverrides === tmp2.buildOverrides) {
-                                          if (props.experimentEmbeds === tmp2.experimentEmbeds) {
-                                            if (props.quests === tmp2.quests) {
-                                              if (props.isFetchingCurrentQuests === tmp2.isFetchingCurrentQuests) {
-                                                if (props.participantsLength === tmp2.participantsLength) {
-                                                  if (props.isMessagesReady === tmp2.isMessagesReady) {
-                                                    if (props.channelThreadsVersion === tmp2.channelThreadsVersion) {
-                                                      if (props.rsvpVersion === tmp2.rsvpVersion) {
-                                                        if (props.repliedIds === tmp2.repliedIds) {
-                                                          if (props.hasLoadedExperiments === tmp2.hasLoadedExperiments) {
-                                                            if (props.isMessageRequest === tmp2.isMessageRequest) {
-                                                              if (props.isSpamMessageRequest === tmp2.isSpamMessageRequest) {
-                                                                if (props.currentUserCommunicationDisabled === tmp2.currentUserCommunicationDisabled) {
-                                                                  if (props.userSettingsLocale === tmp2.userSettingsLocale) {
-                                                                    if (props.selectedSummary === tmp2.selectedSummary) {
-                                                                      if (props.selectedConversation === tmp2.selectedConversation) {
-                                                                        if (props.showPushFeedback === tmp2.showPushFeedback) {
-                                                                          if (props.cacheStoreLoaded === tmp2.cacheStoreLoaded) {
-                                                                            if (props.currentClientVoiceChannelId === tmp2.currentClientVoiceChannelId) {
-                                                                              if (props.communicationDisabledVersion === tmp2.communicationDisabledVersion) {
-                                                                                if (props.messageAuthorMembers === tmp2.messageAuthorMembers) {
-                                                                                  if (!tmp40) {
-                                                                                    if (forwardGuildsVersion === forwardGuildsVersion2) {
-                                                                                      if (props.renderCommunicationDisabled === tmp2.renderCommunicationDisabled) {
-                                                                                        if (tmp34) {
-                                                                                          if (props.interactionComponentStatesVersion === tmp2.interactionComponentStatesVersion) {
-                                                                                            if (!tmp42) {
-                                                                                              if (null == jumpTargetId) {
-                                                                                                if (null == focusTargetId) {
-                                                                                                  if (props.androidKeyboardHeight === tmp2.androidKeyboardHeight) {
-                                                                                                    if (props.mediaPostPreviewEmbeds === tmp2.mediaPostPreviewEmbeds) {
-                                                                                                      if (props.shouldObscureSpoiler === tmp2.shouldObscureSpoiler) {
-                                                                                                        if (props.shouldDisableInteractiveComponents === tmp2.shouldDisableInteractiveComponents) {
-                                                                                                          if (props.channelPolls === tmp2.channelPolls) {
-                                                                                                            if (props.messageReferencePolls === tmp2.messageReferencePolls) {
-                                                                                                              if (props.showMediaPostSharePrompt === tmp2.showMediaPostSharePrompt) {
-                                                                                                                if (props.threadStartingReferenceMessage === tmp2.threadStartingReferenceMessage) {
-                                                                                                                  if (props.unloadedContentEntryMessageIds === tmp2.unloadedContentEntryMessageIds) {
-                                                                                                                    if (result2) {
-                                                                                                                      if (!tmp52) {
-                                                                                                                        if (props.guildInviteColorsFetched === tmp2.guildInviteColorsFetched) {
-                                                                                                                          if (guildEmojis === guildEmojis2) {
-                                                                                                                            if (props.selfActivities === tmp2.selfActivities) {
-                                                                                                                              if (!tmp57) {
-                                                                                                                                if (props.authorizedAppsTokens === tmp2.authorizedAppsTokens) {
-                                                                                                                                  if (displayNameStylesEnabled === displayNameStylesEnabled2) {
-                                                                                                                                    if (fontId === fontId1) {
-                                                                                                                                      if (!tmp56) {
-                                                                                                                                        if (props.voiceInviteDataByChannelId === tmp2.voiceInviteDataByChannelId) {
-                                                                                                                                          if (result4) {
-                                                                                                                                            ({ channelId: channelId2, messages } = tmp2);
-                                                                                                                                            let tmp67 = hasJumpedToOriginalPost;
-                                                                                                                                            const tmp68 = first(hasJumpedToOriginalPost[11]);
-                                                                                                                                            const recordMessageRender = tmp68.recordMessageRender;
-                                                                                                                                            const mapped = messages.map(f109637);
-                                                                                                                                            let hasFetched = messages.hasFetched;
-                                                                                                                                            if (!hasFetched) {
-                                                                                                                                              hasFetched = messages.ready && !messages.cached;
+                                        if (props.joinedGameOrganizationGuildIds === tmp2.joinedGameOrganizationGuildIds) {
+                                          if (props.buildOverrides === tmp2.buildOverrides) {
+                                            if (props.experimentEmbeds === tmp2.experimentEmbeds) {
+                                              if (props.quests === tmp2.quests) {
+                                                if (props.isFetchingCurrentQuests === tmp2.isFetchingCurrentQuests) {
+                                                  if (props.participantsLength === tmp2.participantsLength) {
+                                                    if (props.isMessagesReady === tmp2.isMessagesReady) {
+                                                      if (props.channelThreadsVersion === tmp2.channelThreadsVersion) {
+                                                        if (props.rsvpVersion === tmp2.rsvpVersion) {
+                                                          if (props.repliedIds === tmp2.repliedIds) {
+                                                            if (props.hasLoadedExperiments === tmp2.hasLoadedExperiments) {
+                                                              if (props.isMessageRequest === tmp2.isMessageRequest) {
+                                                                if (props.isSpamMessageRequest === tmp2.isSpamMessageRequest) {
+                                                                  if (props.currentUserCommunicationDisabled === tmp2.currentUserCommunicationDisabled) {
+                                                                    if (props.userSettingsLocale === tmp2.userSettingsLocale) {
+                                                                      if (props.selectedSummary === tmp2.selectedSummary) {
+                                                                        if (props.selectedConversation === tmp2.selectedConversation) {
+                                                                          if (props.showPushFeedback === tmp2.showPushFeedback) {
+                                                                            if (props.cacheStoreLoaded === tmp2.cacheStoreLoaded) {
+                                                                              if (props.currentClientVoiceChannelId === tmp2.currentClientVoiceChannelId) {
+                                                                                if (props.communicationDisabledVersion === tmp2.communicationDisabledVersion) {
+                                                                                  if (props.messageAuthorMembers === tmp2.messageAuthorMembers) {
+                                                                                    if (!tmp40) {
+                                                                                      if (forwardGuildsVersion === forwardGuildsVersion2) {
+                                                                                        if (props.renderCommunicationDisabled === tmp2.renderCommunicationDisabled) {
+                                                                                          if (tmp34) {
+                                                                                            if (props.interactionComponentStatesVersion === tmp2.interactionComponentStatesVersion) {
+                                                                                              if (!tmp42) {
+                                                                                                if (null == jumpTargetId) {
+                                                                                                  if (null == focusTargetId) {
+                                                                                                    if (props.androidKeyboardHeight === tmp2.androidKeyboardHeight) {
+                                                                                                      if (props.mediaPostPreviewEmbeds === tmp2.mediaPostPreviewEmbeds) {
+                                                                                                        if (props.shouldObscureSpoiler === tmp2.shouldObscureSpoiler) {
+                                                                                                          if (props.shouldDisableInteractiveComponents === tmp2.shouldDisableInteractiveComponents) {
+                                                                                                            if (props.channelPolls === tmp2.channelPolls) {
+                                                                                                              if (props.messageReferencePolls === tmp2.messageReferencePolls) {
+                                                                                                                if (props.showMediaPostSharePrompt === tmp2.showMediaPostSharePrompt) {
+                                                                                                                  if (props.threadStartingReferenceMessage === tmp2.threadStartingReferenceMessage) {
+                                                                                                                    if (props.unloadedContentEntryMessageIds === tmp2.unloadedContentEntryMessageIds) {
+                                                                                                                      if (result2) {
+                                                                                                                        if (!tmp52) {
+                                                                                                                          if (props.guildInviteColorsFetched === tmp2.guildInviteColorsFetched) {
+                                                                                                                            if (guildEmojis === guildEmojis2) {
+                                                                                                                              if (props.selfActivities === tmp2.selfActivities) {
+                                                                                                                                if (!tmp57) {
+                                                                                                                                  if (props.authorizedAppsTokens === tmp2.authorizedAppsTokens) {
+                                                                                                                                    if (displayNameStylesEnabled === displayNameStylesEnabled2) {
+                                                                                                                                      if (fontId === fontId1) {
+                                                                                                                                        if (!tmp56) {
+                                                                                                                                          if (props.voiceInviteDataByChannelId === tmp2.voiceInviteDataByChannelId) {
+                                                                                                                                            if (result4) {
+                                                                                                                                              ({ channelId: channelId2, messages } = tmp2);
+                                                                                                                                              let tmp67 = hasJumpedToOriginalPost;
+                                                                                                                                              const tmp68 = first(hasJumpedToOriginalPost[11]);
+                                                                                                                                              const recordMessageRender = tmp68.recordMessageRender;
+                                                                                                                                              const mapped = messages.map(f109862);
+                                                                                                                                              let hasFetched = messages.hasFetched;
+                                                                                                                                              if (!hasFetched) {
+                                                                                                                                                hasFetched = messages.ready && !messages.cached;
+                                                                                                                                              }
+                                                                                                                                              let tmp73 = mapped;
+                                                                                                                                              recordMessageRender(channelId2, mapped, hasFetched, messages.hasMoreAfter);
                                                                                                                                             }
-                                                                                                                                            let tmp73 = mapped;
-                                                                                                                                            recordMessageRender(channelId2, mapped, hasFetched, messages.hasMoreAfter);
                                                                                                                                           }
                                                                                                                                         }
                                                                                                                                       }
@@ -1172,7 +1174,7 @@ class MessagesRenderer {
             let tmp99 = hasJumpedToOriginalPost;
             let tmp100 = first(hasJumpedToOriginalPost[11]);
             const recordMessageRender2 = tmp100.recordMessageRender;
-            const mapped1 = messages3.map(f109637);
+            const mapped1 = messages3.map(f109862);
             let hasFetched2 = messages3.hasFetched;
             if (!hasFetched2) {
               let tmp102 = messages3.ready && !messages3.cached;
@@ -1340,9 +1342,9 @@ class MessagesRenderer {
         handleVisibleMessagesChange(obj);
       }
     };
-    items4 = [findMessageIndex(chatManager(12850), obj6), ];
+    items4 = [findMessageIndex(chatManager(12859), obj6), ];
     let obj7 = { messages: merged.messages };
-    items4[1] = findMessageIndex(merged(13058).ChatTTITracker, obj7);
+    items4[1] = findMessageIndex(merged(13072).ChatTTITracker, obj7);
     return c19(c18, obj5);
   }
 }

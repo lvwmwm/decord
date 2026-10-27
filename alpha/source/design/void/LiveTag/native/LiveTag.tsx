@@ -1,18 +1,18 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15456
+// Function ID: 15457
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4971, 587, 1384, 558, 576, 1128, 5234, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 1381, 558, 576, 1125, 5235, 2]
 
-// Module 15420 (LiveTag)
+// Module 15456 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveTag(arg0
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const str2 = intl.string(intl2.t.dI3q4h);
         const formatted = str2.toUpperCase();
         cResult[6] = formatted;

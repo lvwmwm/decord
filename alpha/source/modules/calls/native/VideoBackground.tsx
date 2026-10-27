@@ -1,13 +1,13 @@
 // Module ID: 8739
 // Function ID: 8740
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1087, 21, 4971, 12, 8740, 8741, 4968, 587, 1901, 558, 576, 8742, 1202, 5258, 2]
+// Dependencies: [109, 32, 19, 17, 1084, 21, 4972, 12, 8740, 8741, 4969, 587, 1898, 558, 576, 8742, 1199, 5259, 2]
 
 // Module 8739 (VideoBackground)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import react_nativeDefault from "react-native" /* 1901 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import react_nativeDefault from "react-native" /* 1898 */;
 import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8741 */;
 import useProfileTileGradientDefault from "useProfileTileGradient" /* 8742 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -15,7 +15,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5258);
+const LinearGradientDefault = tmp5(5259);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -271,7 +271,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackgro
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = unpackModuleId(tmp23(5258), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5259), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;

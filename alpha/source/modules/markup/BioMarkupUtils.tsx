@@ -1,17 +1,17 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11165
+// Function ID: 11166
 // Name: BioMarkupUtils
-// Dependencies: [5981, 5982, 5706, 1459, 8344, 5705, 1951, 12, 2]
+// Dependencies: [5982, 5983, 5707, 1456, 8343, 5706, 1948, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 11162 (BioMarkupUtils)
-import LRUCacheDefault from "LRUCache" /* 1459 */;
-import _modDef1951 from "module_1951" /* 1951 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 5706 */;
-import MarkupRulesDefault from "MarkupRules" /* 5982 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5981 */;
-import MarkupParser_mod from "MarkupParser" /* 8344 */;
-import MarkupUtils from "MarkupUtils" /* 5705 */;
+// Module 11165 (BioMarkupUtils)
+import LRUCacheDefault from "LRUCache" /* 1456 */;
+import _modDef1948 from "module_1948" /* 1948 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 5707 */;
+import MarkupRulesDefault from "MarkupRules" /* 5983 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5982 */;
+import MarkupParser_mod from "MarkupParser" /* 8343 */;
+import MarkupUtils from "MarkupUtils" /* 5706 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -83,9 +83,9 @@ export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(cR
       const result = obj.set(combined, tmp5);
       value = tmp5;
     }
-    const reactFor = _modDef1951.reactFor;
-    _modDef1951;
-    const obj3 = _modDef1951;
+    const reactFor = _modDef1948.reactFor;
+    _modDef1948;
+    const obj3 = _modDef1948;
     return reactFor(obj3.ruleOutput(c2, "react"))(value);
   }
 };

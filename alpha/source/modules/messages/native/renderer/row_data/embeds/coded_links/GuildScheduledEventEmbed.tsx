@@ -1,20 +1,20 @@
-// Module ID: 14538
-// Function ID: 14539
+// Module ID: 14574
+// Function ID: 14575
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 6784, 4841, 4823, 4845, 4913, 1392, 10004, 4829, 7809, 5705, 8275, 8277, 8903, 8898, 8890, 9143, 1128, 8280, 9093, 8137, 587, 14539, 8893, 5604, 9016, 8887, 14540, 8888, 4837, 8894, 8895, 2]
+// Dependencies: [5, 32, 17, 6785, 4842, 4824, 4846, 4914, 1389, 10006, 4830, 7810, 5706, 8273, 8275, 8903, 8898, 8890, 9143, 1125, 8278, 9093, 8135, 587, 14575, 8893, 5605, 9016, 8887, 14576, 8888, 4838, 8894, 8895, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 14538 (GuildScheduledEventEmbed)
+// Module 14574 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
-import intl5 from "intl" /* 1128 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
-import GuildRecord from "GuildRecord" /* 4841 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import Constants from "Constants" /* 7809 */;
-import react_native2 from "react-native" /* 8137 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8275 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
+import intl5 from "intl" /* 1125 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4838 */;
+import GuildRecord from "GuildRecord" /* 4842 */;
+import useChannelName from "useChannelName" /* 5605 */;
+import Constants from "Constants" /* 7810 */;
+import react_native2 from "react-native" /* 8135 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8273 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8275 */;
 import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8887 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8888 */;
 import ScheduleUtils from "ScheduleUtils" /* 8890 */;
@@ -23,16 +23,16 @@ import useEventSchedule from "useEventSchedule" /* 8898 */;
 import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8903 */;
 import GuildEventUtils from "GuildEventUtils" /* 9016 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9143 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10004 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14540 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10006 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6784 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import MarkupUtils from "MarkupUtils" /* 5705 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6785 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import MarkupUtils from "MarkupUtils" /* 5706 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -110,10 +110,10 @@ function createGuildScheduledEventEmbed(type) {
   const color = guildScheduledEventHeaderProps.color;
   const obj4 = { titleColor: colors.titleColor, borderColor: colors.borderColor, backgroundColor: colors.backgroundColor, thumbnailCornerRadius: 15, embedCanBeTapped: null != guild };
   ({ icon, shouldChangeTextColor, text } = guildScheduledEventHeaderProps);
-  const intl = tmp7(1128).intl;
+  const intl = tmp7(1125).intl;
   const stringResult = intl.string(intl5.t.DlcqlU);
   const tmp7Result12 = renderer_EmbedUtils;
-  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8280));
+  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8278));
   const tmp7Result13 = renderer_EmbedUtils;
   const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(9093));
   if (null != guild) {
@@ -121,11 +121,11 @@ function createGuildScheduledEventEmbed(type) {
       let stringResult1;
       const acceptLabelActiveBackgroundColor2 = colors.acceptLabelActiveBackgroundColor;
       if (entity_type === EXTERNAL) {
-        const intl4 = tmp7(1128).intl;
-        stringResult1 = intl4.string(tmp7(1128).t.GoCQxU);
+        const intl4 = tmp7(1125).intl;
+        stringResult1 = intl4.string(tmp7(1125).t.GoCQxU);
       } else {
-        const intl3 = tmp7(1128).intl;
-        stringResult1 = intl3.string(tmp7(1128).t.IaYdtW);
+        const intl3 = tmp7(1125).intl;
+        stringResult1 = intl3.string(tmp7(1125).t.IaYdtW);
       }
       acceptLabelGreenColor = colors.acceptLabelGreenColor;
       flag2 = false;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14539));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14575));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;
@@ -150,8 +150,8 @@ function createGuildScheduledEventEmbed(type) {
   } else {
     const tmp7Result15 = react_native2;
     acceptLabelActiveBackgroundColor = tmp7Result15.processColorOrThrow(tmp(587).unsafe_rawColors.GREEN_360);
-    const intl2 = tmp7(1128).intl;
-    stringResult2 = intl2.string(tmp7(1128).t.XpeFYr);
+    const intl2 = tmp7(1125).intl;
+    stringResult2 = intl2.string(tmp7(1125).t.XpeFYr);
     acceptLabelGreenColor = colors.acceptLabelGreenColor;
     flag2 = false;
   }

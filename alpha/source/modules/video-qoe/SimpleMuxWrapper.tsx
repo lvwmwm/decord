@@ -1,13 +1,13 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16523
+// Function ID: 16524
 // Name: modules/SimpleMuxWrapper
-// Dependencies: [4, 16485, 16486, 16487, 2]
+// Dependencies: [4, 16524, 16525, 16526, 2]
 
-// Module 16484 (modules/SimpleMuxWrapper)
+// Module 16523 (modules/SimpleMuxWrapper)
 import logger_Logger from "logger/Logger" /* 4 */;
-import SessionManager2 from "SessionManager" /* 16485 */;
-import MuxIntegration2 from "MuxIntegration" /* 16486 */;
-import _modDef16487 from "module_16487" /* 16487 */;
+import SessionManager2 from "SessionManager" /* 16524 */;
+import MuxIntegration2 from "MuxIntegration" /* 16525 */;
+import _modDef16526 from "module_16526" /* 16526 */;
 import size from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("SimpleMuxWrapper");
@@ -36,7 +36,7 @@ class SimpleMuxWrapper {
       obj.Hls = self.hlsInstance.constructor;
     }
     try {
-      const obj2 = _modDef16487;
+      const obj2 = _modDef16526;
       obj2.monitor(self.videoElement, obj);
       self.isMonitoring = true;
     } catch (tmp4) {
@@ -49,8 +49,8 @@ class SimpleMuxWrapper {
     if (this.isMonitoring) {
       try {
         const tmp = importDefault;
-        if (typeof _modDef16487.destroyMonitor === "function") {
-          const tmpResult = tmp(16487);
+        if (typeof _modDef16526.destroyMonitor === "function") {
+          const tmpResult = tmp(16526);
           tmpResult.destroyMonitor(self.videoElement);
         }
         self.isMonitoring = false;
@@ -64,8 +64,8 @@ class SimpleMuxWrapper {
     if (this.isMonitoring) {
       try {
         const tmp = importDefault;
-        if (typeof _modDef16487.destroyMonitor === "function") {
-          const tmpResult = tmp(16487);
+        if (typeof _modDef16526.destroyMonitor === "function") {
+          const tmpResult = tmp(16526);
           tmpResult.destroyMonitor(self.videoElement);
         }
         self.isMonitoring = false;

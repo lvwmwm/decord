@@ -1,7 +1,7 @@
 // Module ID: 9034
 // Function ID: 9035
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 9035, 9036, 6374, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9035, 9036, 6375, 2]
 
 // Module 9034 (useStartEvent)
 import react2 from "react" /* 576 */;

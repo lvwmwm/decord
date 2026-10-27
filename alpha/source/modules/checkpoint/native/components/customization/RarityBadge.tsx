@@ -1,21 +1,21 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13050
+// Function ID: 13051
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 6015, 21, 4971, 587, 558, 576, 6016, 7962, 6362, 1128, 5234, 9425, 2]
+// Dependencies: [32, 19, 17, 6016, 21, 4972, 587, 558, 576, 6017, 7960, 6364, 1125, 5235, 9424, 2]
 
-// Module 13036 (RarityBadge)
+// Module 13050 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6016 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6017 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import CheckpointConstants from "CheckpointConstants" /* 6016 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let unpackModuleId;
 const View = react_native.View;
-({ CHECKPOINT_NITRO_GRADIENT_COLORS: metroRequire, CHECKPOINT_NITRO_BADGE_GRADIENT_ID: metroImportDefault, CHECKPOINT_RARITY_COLORS: metroImportAll, CHECKPOINT_RARITY_LABEL_MESSAGES: c9 } = CheckpointConstants);
+({ CHECKPOINT_NITRO_GRADIENT_COLORS: metroRequire, CHECKPOINT_NITRO_BADGE_GRADIENT_ID: metroImportDefault, CHECKPOINT_RARITY_TO_COLOR: metroImportAll, CHECKPOINT_RARITY_TO_LABEL_MESSAGE: c9 } = CheckpointConstants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { badge: obj2, badgeShape: { position: "absolute", top: 0, left: 0 }, badgeContent: obj3, badgeLabel: obj4, badgeHidden: { opacity: 0 } };
@@ -109,7 +109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
           }
           ({ badgeContent, badgeLabel } = tmp4);
           if (cResult[9] !== rarity) {
-            const intl = tmp(1128).intl;
+            const intl = tmp(1125).intl;
             const stringResult = intl.string(React4[rarity]);
             cResult[9] = rarity;
             cResult[10] = stringResult;
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
               let tmp28 = tmp9;
               if (tmp28) {
                 const obj3 = { size: "xxs", color: nativeDefault.colors.BLACK };
-                const NitroWheelIcon = tmp(9425).NitroWheelIcon;
+                const NitroWheelIcon = tmp(9424).NitroWheelIcon;
                 tmp28 = authStore(NitroWheelIcon, obj3);
               }
               cResult[14] = rarity === NITRO;
@@ -187,18 +187,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
       const tmp14 = inlineStylesDefault;
       if (rarity === NITRO) {
         const obj7 = { children: unpackModuleId(LinearGradient, obj8) };
-        const Defs = tmp(7962).Defs;
+        const Defs = tmp(7960).Defs;
         obj8 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items2 };
-        LinearGradient = tmp(7962).LinearGradient;
+        LinearGradient = tmp(7960).LinearGradient;
         const obj9 = { offset: "0", stopColor: metroRequire[0] };
-        items2 = [authStore(tmp(7962).Stop, obj9), ];
+        items2 = [authStore(tmp(7960).Stop, obj9), ];
         const obj10 = { offset: "1", stopColor: metroRequire[1] };
         items2[1] = authStore(inlineStyles.Stop, obj10);
         tmp15 = authStore(Defs, obj7);
       }
       items3 = [tmp15, ];
       const obj11 = { points: tmpResult.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-      const Polygon = tmp(7962).Polygon;
+      const Polygon = tmp(7960).Polygon;
       tmpResult = CheckpointCustomizationUtils;
       items3[1] = authStore(Polygon, obj11);
       tmp12Result = tmp12(tmp14, size1);
@@ -273,9 +273,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     const tmp10 = inlineStylesDefault;
     if (tmp17Result) {
       const obj3 = { children: unpackModuleId(LinearGradient, obj4) };
-      const Defs = tmp3(7962).Defs;
+      const Defs = tmp3(7960).Defs;
       obj4 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-      LinearGradient = tmp3(7962).LinearGradient;
+      LinearGradient = tmp3(7960).LinearGradient;
       const obj5 = { offset: "0", stopColor: metroRequire[0] };
       items1 = [authStore(inlineStyles.Stop, obj5), ];
       const obj6 = { offset: "1", stopColor: metroRequire[1] };
@@ -284,7 +284,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     }
     items2 = [tmp11, ];
     const obj7 = { points: tmp3Result.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-    const Polygon = tmp3(7962).Polygon;
+    const Polygon = tmp3(7960).Polygon;
     tmp3Result = CheckpointCustomizationUtils;
     items2[1] = authStore(Polygon, obj7);
     tmp5Result = tmp5(tmp10, size1);
@@ -292,13 +292,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
   items3 = [tmp5Result, ];
   const obj8 = { style: tmp.badgeContent, children: items4 };
   const obj9 = { variant: "experimental/mono-md/bold", style: tmp.badgeLabel, children: intl.string(React4[rarity]) };
-  const Text = tmp3(5234).Text;
-  intl = tmp3(1128).intl;
+  const Text = tmp3(5235).Text;
+  intl = tmp3(1125).intl;
   items4 = [authStore(Text, obj9), ];
   const tmp17 = authStore;
   if (tmp17Result) {
     const obj10 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const NitroWheelIcon = tmp3(9425).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9424).NitroWheelIcon;
     tmp17Result = tmp17(NitroWheelIcon, obj10);
   }
   items4[1] = tmp17Result;

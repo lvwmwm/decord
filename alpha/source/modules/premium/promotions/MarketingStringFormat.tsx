@@ -1,13 +1,13 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16316
+// Function ID: 16317
 // Name: MarketingStringFormat
-// Dependencies: [3, 1130, 1128, 2]
+// Dependencies: [3, 1127, 1125, 2]
 // Exports: formatMarketingPlainString, formatMarketingString
 
-// Module 16278 (MarketingStringFormat)
+// Module 16316 (MarketingStringFormat)
 import LoggerDefault from "Logger" /* 3 */;
-import intl2 from "intl" /* 1128 */;
-import intl_util from "intl/util" /* 1130 */;
+import intl2 from "intl" /* 1125 */;
+import intl_util from "intl/util" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 function formatWith(acknowledgedBadgeLabel, arg1, fn) {

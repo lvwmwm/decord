@@ -1,19 +1,19 @@
-// Module ID: 6897
-// Function ID: 6898
+// Module ID: 6899
+// Function ID: 6900
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1128, 5234, 5705, 6898, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1125, 5235, 5706, 6900, 2]
 
-// Module 6897 (TermsFieldList)
+// Module 6899 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import TableRowDivider from "TableRowDivider" /* 6898 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5706 */;
+import TableRowDivider from "TableRowDivider" /* 6900 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFi
     cResult[6] = tmp13;
     tmp11 = tmp13;
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1125).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t.XpgzeO, { number: rowNumber, total: rowCount });
   cResult[0] = rowCount;
   cResult[1] = rowNumber;
@@ -155,8 +155,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldLi
   dependencyMap = tmp4;
   const title = tmp4.title;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(tmp(1128).t.prJqwT);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(tmp(1125).t.prJqwT);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldLi
   }
   if (cResult[1] !== tmp4.title) {
     let obj2 = { style: title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_5(tmp(5234).Text, obj2);
+    const tmp9 = closure_5(tmp(5235).Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -268,9 +268,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsFieldLi
   let tmp = closure_8();
   dependencyMap = tmp;
   let obj = { children: items };
-  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1128).t.prJqwT) };
-  const Text = rules(5234).Text;
-  intl = rules(1128).intl;
+  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1125).t.prJqwT) };
+  const Text = rules(5235).Text;
+  intl = rules(1125).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {
     accessibilityRole: "list",

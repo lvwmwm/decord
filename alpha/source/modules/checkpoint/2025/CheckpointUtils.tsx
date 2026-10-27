@@ -1,13 +1,12 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6025
+// Function ID: 6026
 // Name: CheckpointUtils
-// Dependencies: [5722, 6025, 1128, 6026, 6027, 6028, 6029, 6030, 6031, 6032, 6033, 6034, 6035, 2]
+// Dependencies: [5723, 6026, 1125, 6027, 6028, 6029, 6030, 6031, 6032, 6033, 6034, 6035, 6036, 2]
 // Exports: getAccessibleVoiceDurationString, getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString
 
-// Module 6024 (CheckpointUtils)
-import TimeUtils from "TimeUtils" /* 5722 */;
-import getTimestampString from "getTimestampString" /* 6025 */;
-import _modDef6026 from "module_6026" /* 6026 */;
+// Module 6025 (CheckpointUtils)
+import TimeUtils from "TimeUtils" /* 5723 */;
+import getTimestampString from "getTimestampString" /* 6026 */;
 import _modDef6027 from "module_6027" /* 6027 */;
 import _modDef6028 from "module_6028" /* 6028 */;
 import _modDef6029 from "module_6029" /* 6029 */;
@@ -17,6 +16,7 @@ import _modDef6032 from "module_6032" /* 6032 */;
 import _modDef6033 from "module_6033" /* 6033 */;
 import _modDef6034 from "module_6034" /* 6034 */;
 import _modDef6035 from "module_6035" /* 6035 */;
+import _modDef6036 from "module_6036" /* 6036 */;
 import size from "module_2" /* 2 */;
 
 const items = [TimeUtils.TimeUnits.HOURS, TimeUtils.TimeUnits.MINUTES];
@@ -31,18 +31,18 @@ export const getVoiceDurationString = function getVoiceDurationString(rounded) {
   const obj2 = getTimestampString;
   const time2 = obj2.getAbbreviatedFormatter();
   if (null == time) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     return intl3.formatToPlainString(time2.minutes, { minutes: 0 });
   } else {
     let formatToPlainStringResult;
     const _Math = Math;
     rounded = Math.round(time);
     if (unit === TimeUtils.TimeUnits.HOURS) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj3 = { hours: rounded };
       formatToPlainStringResult = intl2.formatToPlainString(time2.hours, obj3);
     } else {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj4 = { minutes: rounded };
       formatToPlainStringResult = intl.formatToPlainString(time2.minutes, obj4);
     }
@@ -61,37 +61,37 @@ export const getAccessibleVoiceDurationString = function getAccessibleVoiceDurat
   }
   const roundResult = round(num);
   if (unit === TimeUtils.TimeUnits.HOURS) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj2 = { hours: roundResult };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.xCjYxK, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.xCjYxK, obj2);
   } else {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj3 = { minutes: roundResult };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.iXLF9W, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.iXLF9W, obj3);
   }
   return formatToPlainStringResult;
 };
 export const getCardAssetUrl = function getCardAssetUrl(cardId) {
   if (0 === cardId) {
-    return _modDef6026;
-  } else if (1 === cardId) {
     return _modDef6027;
-  } else if (2 === cardId) {
+  } else if (1 === cardId) {
     return _modDef6028;
-  } else if (3 === cardId) {
+  } else if (2 === cardId) {
     return _modDef6029;
-  } else if (4 === cardId) {
+  } else if (3 === cardId) {
     return _modDef6030;
-  } else if (5 === cardId) {
+  } else if (4 === cardId) {
     return _modDef6031;
-  } else if (6 === cardId) {
+  } else if (5 === cardId) {
     return _modDef6032;
-  } else if (7 === cardId) {
+  } else if (6 === cardId) {
     return _modDef6033;
-  } else if (8 === cardId) {
+  } else if (7 === cardId) {
     return _modDef6034;
-  } else {
+  } else if (8 === cardId) {
     return _modDef6035;
+  } else {
+    return _modDef6036;
   }
 };
 export const getCheckpointPowerBarUnits = function getCheckpointPowerBarUnits(checkpointData) {

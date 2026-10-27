@@ -1,16 +1,16 @@
-// Module ID: 7382
-// Function ID: 7383
+// Module ID: 7384
+// Function ID: 7385
 // Name: ForumTagHooks
-// Dependencies: [19, 4823, 4903, 1098, 558, 576, 504, 1388, 7383, 2]
+// Dependencies: [19, 4824, 4904, 1095, 558, 576, 504, 1385, 7385, 2]
 
-// Module 7382 (ForumTagHooks)
+// Module 7384 (ForumTagHooks)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1098 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReportToModUtils from "ReportToModUtils" /* 7383 */;
+import Constants from "Constants" /* 1095 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import ReportToModUtils from "ReportToModUtils" /* 7385 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplied
     if (appliedTags != null) {
       const mapped = appliedTags.map((item) => closure_0[item]);
       if (mapped != null) {
-        found = mapped.filter(tmp(1388).isNotNullish);
+        found = mapped.filter(tmp(1385).isNotNullish);
       }
     }
   }

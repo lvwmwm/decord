@@ -1,13 +1,13 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11461
+// Function ID: 11462
 // Name: getDefaultOrientationLockState
-// Dependencies: [1499, 5154, 584, 2]
+// Dependencies: [1496, 5155, 584, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 11458 (getDefaultOrientationLockState)
+// Module 11461 (getDefaultOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import useWindowDimensions from "useWindowDimensions" /* 1499 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5154 */;
+import useWindowDimensions from "useWindowDimensions" /* 1496 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5155 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

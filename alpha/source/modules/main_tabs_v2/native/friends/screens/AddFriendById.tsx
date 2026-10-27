@@ -1,24 +1,24 @@
-// Module ID: 15098
-// Function ID: 15099
+// Module ID: 15134
+// Function ID: 15135
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 1128, 558, 576, 5234, 7015, 15099, 7419, 7414, 5662, 1267, 4980, 7180, 5244, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 4972, 587, 1125, 558, 576, 5235, 7017, 15135, 7421, 7416, 5663, 1264, 4981, 7182, 5245, 2]
 
-// Module 15098 (AddFriendById)
+// Module 15134 (AddFriendById)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import TextField2 from "TextField" /* 7015 */;
-import FriendsUtils from "FriendsUtils" /* 7419 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 15099 */;
+import intl4 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import TextField2 from "TextField" /* 7017 */;
+import FriendsUtils from "FriendsUtils" /* 7421 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 15135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj8;
 let obj9;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5235);
 let react = react_mod;
 ({ View: hasOwnProperty, Keyboard: metroRequire } = react_native);
 ({ PLACEHOLDER_TAG: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
@@ -150,7 +150,7 @@ function AddFriendByIdInput(arg0) {
   if (validationState.status === tmp4.ERROR) {
     a11yMessage = validationState.a11yMessage;
   }
-  intl3 = tmp10(1128).intl;
+  intl3 = tmp10(1125).intl;
   str2 = undefined;
   if (null != message) {
     str2 = "error";
@@ -474,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                                         }
                                                       }
                                                       if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
-                                                        const string = tmp(1128).intl.string;
+                                                        const string = tmp(1125).intl.string;
                                                         class Q {
                                                           constructor(str) {
                                                             closure_8(str.replace(/\n/g, ""));
@@ -534,7 +534,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                                         }
                                                       }
                                                       const obj7 = { size: "lg", text: tmp52, disabled: tmp28 <= 0, onPress: tmp21, loading: first2.status === constants.LOADING, grow: false };
-                                                      const tmp59 = closure_9(tmp(5244).Button, obj7);
+                                                      const tmp59 = closure_9(tmp(5245).Button, obj7);
                                                       cResult[57] = tmp21;
                                                       cResult[58] = tmp28 <= 0;
                                                       cResult[59] = first2.status === constants.LOADING;
@@ -605,15 +605,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                   }
                                 }
                               }
-                              const obj10 = { style: items4, variant: "text-sm/semibold", color: "text-muted", children: intl.string(tmp(1128).t.Yi6Mpu) };
+                              const obj10 = { style: items4, variant: "text-sm/semibold", color: "text-muted", children: intl.string(tmp(1125).t.Yi6Mpu) };
                               items4 = [, , ];
                               ({ messageLabel: arr4[0], inputHeaderText: arr4[1] } = tmp4);
                               items4[2] = headerTextStyle;
-                              const Text = tmp(5234).Text;
-                              intl = tmp(1128).intl;
+                              const Text = tmp(5235).Text;
+                              intl = tmp(1125).intl;
                               const items5 = [closure_9(Text, obj10), , ];
                               const obj11 = { returnKeyType: "done", submitBehavior: "submit", value: first3, maxLength: 120, onSubmitEditing: tmp21, onChange: tmp18, status: undefined };
-                              const TextArea = tmp(7180).TextArea;
+                              const TextArea = tmp(7182).TextArea;
                               const tmp35 = closure_10;
                               const tmp36 = first2;
                               const tmp38 = constants2;
@@ -671,9 +671,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                 }
                                 tmp35Result = tmp35(tmp36, obj9);
                               }
-                              const obj13 = { style: tmp4.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp(1128).t.UtfQNw) };
-                              const Text2 = tmp(5234).Text;
-                              intl2 = tmp(1128).intl;
+                              const obj13 = { style: tmp4.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp(1125).t.UtfQNw) };
+                              const Text2 = tmp(5235).Text;
+                              intl2 = tmp(1125).intl;
                               tmp37Result = tmp37(Text2, obj13);
                             }
                             cResult[37] = first3;
@@ -1153,16 +1153,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   if (enabled) {
     let obj5 = { style: tmp.friendMessageContainer, children: null };
     const tmp18 = sourcePage;
-    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1128).t.Yi6Mpu) };
+    const obj6 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1125).t.Yi6Mpu) };
     items6 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items6[2] = headerTextStyle;
-    const Text = sourcePage(5234).Text;
-    intl = sourcePage(1128).intl;
+    const Text = sourcePage(5235).Text;
+    intl = sourcePage(1125).intl;
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(7180).TextArea;
+    const TextArea = sourcePage(7182).TextArea;
     const tmp19 = constants2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {
@@ -1180,9 +1180,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
       obj5.children = items7;
       enabled = tmp14(tmp16, obj5);
     }
-    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1128).t.UtfQNw) };
-    const Text2 = tmp18(5234).Text;
-    intl2 = tmp18(1128).intl;
+    const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1125).t.UtfQNw) };
+    const Text2 = tmp18(5235).Text;
+    intl2 = tmp18(1125).intl;
     tmp17Result = tmp17(Text2, obj9);
   }
   const obj10 = { children: items8 };
@@ -1190,9 +1190,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   items8 = [tmp14(tmp16, obj3), , ];
   const obj11 = { style: tmp.redesignGrow };
   items8[1] = closure_9(tmp16, obj11);
-  const obj12 = { size: "lg", text: intl3.string(sourcePage(1128).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-  const Button = sourcePage(5244).Button;
-  intl3 = sourcePage(1128).intl;
+  const obj12 = { size: "lg", text: intl3.string(sourcePage(1125).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
+  const Button = sourcePage(5245).Button;
+  intl3 = sourcePage(1125).intl;
   items8[2] = closure_9(Button, obj12);
   return tmp14(tmp15, obj10);
 });

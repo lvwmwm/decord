@@ -1,15 +1,15 @@
-// Module ID: 1386
-// Function ID: 1387
+// Module ID: 1383
+// Function ID: 1384
 // Name: URLUtils
-// Dependencies: [1087, 1387, 1388, 1389, 1386, 12, 2]
+// Dependencies: [1084, 1384, 1385, 1386, 1383, 12, 2]
 
-// Module 1386 (URLUtils)
+// Module 1383 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1087 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import urlParseAll from "urlParse" /* 1389 */;
-import ip from "ip" /* 1387 */;
+import Constants from "Constants" /* 1084 */;
+import URLUtilsDefault from "URLUtils" /* 1383 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import urlParseAll from "urlParse" /* 1386 */;
+import ip from "ip" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 function isDiscordDirectAssetUrl(shareURI) {
@@ -66,14 +66,14 @@ function isDiscordDirectAssetUrl(shareURI) {
     return tmp18;
   }
 }
-function isDiscordProxiedAssetUrl(url, arg1, arg2) {
+function isDiscordProxiedAssetUrl(src, arg1, arg2) {
   const tmp = null != arg1 && null != arg2 && arg1 !== arg2;
   if (tmp) {
-    if (null == url) {
+    if (null == src) {
       return false;
     } else {
       const obj4 = URLUtilsDefault;
-      url = obj4.toURLSafe(url);
+      const url = obj4.toURLSafe(src);
       let tmp15 = null != url;
       if (tmp15) {
         const obj = GlobalUtils;
@@ -227,25 +227,25 @@ let obj = {
   },
   isDiscordDirectAssetUrl,
   isDiscordProxiedAssetUrl,
-  isAllowedGifProviderUrl(url) {
-    if (null == url) {
+  isAllowedGifProviderUrl(src) {
+    if (null == src) {
       return false;
     } else {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(url);
+      const toURLSafeResult = obj.toURLSafe(src);
       const hasItem = null != toURLSafeResult && set.has(toURLSafeResult.hostname);
       return hasItem;
     }
   },
-  isDiscordAssetUrl(url, arg1, arg2) {
-    let tmp = isDiscordDirectAssetUrl(url);
+  isDiscordAssetUrl(src, arg1, arg2) {
+    let tmp = isDiscordDirectAssetUrl(src);
     if (!tmp) {
-      let tmp5 = isDiscordProxiedAssetUrl(url, arg1, arg2);
+      let tmp5 = isDiscordProxiedAssetUrl(src, arg1, arg2);
       if (!tmp5) {
         let flag = false;
-        if (null != url) {
+        if (null != src) {
           const obj = URLUtilsDefault;
-          const toURLSafeResult = obj.toURLSafe(url);
+          const toURLSafeResult = obj.toURLSafe(src);
           const hasItem = null != toURLSafeResult && set.has(toURLSafeResult.hostname);
           flag = hasItem;
         }
@@ -255,11 +255,11 @@ let obj = {
     }
     return tmp;
   },
-  isDiscordUrlOrUri(url) {
+  isDiscordUrlOrUri(src) {
     let flag = false;
-    if (null != url) {
+    if (null != src) {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(url);
+      const toURLSafeResult = obj.toURLSafe(src);
       let hostname;
       if (toURLSafeResult != null) {
         hostname = toURLSafeResult.hostname;
@@ -278,10 +278,10 @@ let obj = {
       }
     }
     if (!flag) {
-      let tmp8 = null != url;
+      let tmp8 = null != src;
       if (tmp8) {
         const obj2 = urlParseAll;
-        const protocol = obj2.parse(url).protocol;
+        const protocol = obj2.parse(src).protocol;
         tmp8 = null != protocol && "discord:" === protocol;
         const tmp11 = null != protocol && "discord:" === protocol;
       }
@@ -322,16 +322,32 @@ let obj = {
       return null;
     }
   },
-  toURLSafe(url, arg1) {
+  toURLSafe(src, arg1) {
     try {
       const _URL = URL;
       const self = this;
       const self2 = this;
-      const uRL = new URL(url, arg1);
+      const uRL = new URL(src, arg1);
       return uRL;
     } catch (err) {
       return null;
     }
+  },
+  toOriginSafe(src) {
+    let tmp = null;
+    if (null != src) {
+      const obj = URLUtilsDefault;
+      const toURLSafeResult = obj.toURLSafe(src);
+      let origin;
+      if (toURLSafeResult != null) {
+        origin = toURLSafeResult.origin;
+      }
+      if (origin == null) {
+        origin = null;
+      }
+      tmp = origin;
+    }
+    return tmp;
   },
   safeDecodeURIComponent(parts) {
     try {

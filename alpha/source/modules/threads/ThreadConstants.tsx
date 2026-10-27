@@ -1,12 +1,12 @@
-// Module ID: 1127
-// Function ID: 1128
+// Module ID: 1124
+// Function ID: 1125
 // Name: ThreadConstants
-// Dependencies: [1087, 1128, 2]
+// Dependencies: [1084, 1125, 2]
 // Exports: getThreadNotificationOptions
 
-// Module 1127 (ThreadConstants)
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
+// Module 1124 (ThreadConstants)
+import Constants from "Constants" /* 1084 */;
+import intl4 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

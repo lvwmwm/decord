@@ -1,10 +1,10 @@
-// Module ID: 2025
-// Function ID: 2026
+// Module ID: 2022
+// Function ID: 2023
 // Name: CompanyRecord
-// Dependencies: [1407, 2]
+// Dependencies: [1404, 2]
 
-// Module 2025 (CompanyRecord)
-import Record from "Record" /* 1407 */;
+// Module 2022 (CompanyRecord)
+import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 class CompanyRecord extends Record {

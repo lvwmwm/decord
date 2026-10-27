@@ -1,14 +1,14 @@
-// Module ID: 18639
-// Function ID: 18640
+// Module ID: 18675
+// Function ID: 18676
 // Name: useSoundboardConfig
-// Dependencies: [19, 4823, 2014, 558, 576, 18486, 504, 18520, 7483, 1128, 2]
+// Dependencies: [19, 4824, 2011, 558, 576, 18520, 504, 18554, 7484, 1125, 2]
 
-// Module 18639 (useSoundboardConfig)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18486 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18520 */;
+// Module 18675 (useSoundboardConfig)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18520 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18554 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const canChannelUseSoundboardDefault = tmp4(7483);
+const canChannelUseSoundboardDefault = tmp4(7484);
 const SoundboardButtonLocation = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
@@ -80,7 +80,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
       }
       if (cResult[10] !== stateFromStores) {
         if (stateFromStores) {
-          const string = tmp(1128).intl.string;
+          const string = tmp(1125).intl.string;
           class C {
             constructor() {
               const channel = ChannelStore.getChannel(closure_0);
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
   let closure_0;
   let deaf;
   let stringResult;
-  const f137107 = () => {
+  const f137442 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -190,12 +190,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f137107, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f137442, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f137107, items2);
+  stateFromStores || !react.useMemo(f137442, items2);
   if (stateFromStores) {
-    const intl = tmp3(1128).intl;
-    stringResult = intl.string(tmp3(1128).t.X1lQli);
+    const intl = tmp3(1125).intl;
+    stringResult = intl.string(tmp3(1125).t.X1lQli);
   }
   return obj2;
 });

@@ -1,20 +1,20 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13270
+// Function ID: 13271
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1392, 21, 4971, 587, 1384, 558, 576, 1388, 10619, 6908, 1128, 13257, 11157, 5234, 4980, 8993, 2]
+// Dependencies: [19, 17, 1389, 21, 4972, 587, 1381, 558, 576, 1385, 10622, 6910, 1125, 13271, 11160, 5235, 4981, 8993, 2]
 
-// Module 13256 (NewMessagesTagListInput)
+// Module 13270 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10619 */;
+import intl4 from "intl" /* 1125 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10622 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,8 +60,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       items = [];
     }
     const mapped = items.map(UserStore.getUser);
-    const found = mapped.filter(tmp(1388).isNotNullish);
-    const mapped1 = found.map(tags(10619));
+    const found = mapped.filter(tmp(1385).isNotNullish);
+    const mapped1 = found.map(tags(10622));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -81,15 +81,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const _Symbol = Symbol;
           const header = tmp4.header;
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp(1128).intl;
-            const stringResult = intl2.string(tmp(1128).t.kHyiXs);
+            const intl2 = tmp(1125).intl;
+            const stringResult = intl2.string(tmp(1125).t.kHyiXs);
             cResult[8] = stringResult;
             tmp15 = stringResult;
           } else {
             tmp15 = cResult[8];
           }
           if (cResult[9] !== tmp4.header) {
-            const tmp19 = jsx(tmp(5234).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            const tmp19 = jsx(tmp(5235).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             cResult[9] = tmp4.header;
             cResult[10] = tmp19;
             tmp17 = tmp19;
@@ -104,8 +104,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
             const _Symbol2 = Symbol;
             if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1128).intl;
-              const stringResult1 = intl3.string(tmp(1128).t.CaEER6);
+              const intl3 = tmp(1125).intl;
+              const stringResult1 = intl3.string(tmp(1125).t.CaEER6);
               cResult[14] = stringResult1;
               tmp21 = stringResult1;
             } else {
@@ -177,10 +177,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(6908).PressableOpacity;
-      let intl = tmp(1128).intl;
+      const PressableOpacity = tmp(6910).PressableOpacity;
+      let intl = tmp(1125).intl;
       const string = intl.string;
-      const t = tmp(1128).t;
+      const t = tmp(1125).t;
       if (forceSearchResults) {
         stringResult2 = string(t["4wv+DE"]);
       } else {
@@ -188,9 +188,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(13257).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(13271).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(11157).CirclePlusIcon;
+        CirclePlusIcon = tmp(11160).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

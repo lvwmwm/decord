@@ -1,7 +1,7 @@
 // Module ID: 9271
 // Function ID: 9272
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9253, 558, 576, 1385, 5693, 9251, 9245, 2]
+// Dependencies: [19, 9253, 558, 576, 1382, 5694, 9251, 9245, 2]
 
 // Module 9271 (useInAppBrowserReturn)
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;

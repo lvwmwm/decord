@@ -1,17 +1,17 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12028
+// Function ID: 12029
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2024, 558, 576, 11416, 11928, 8882, 5633, 1384, 1128, 2]
+// Dependencies: [2021, 558, 576, 11419, 11929, 8882, 5634, 1381, 1125, 2]
 
-// Module 12027 (useIsPrimaryEntryPointDisabled)
+// Module 12028 (useIsPrimaryEntryPointDisabled)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import getPlatformDefault from "getPlatform" /* 5633 */;
+import intl5 from "intl" /* 1125 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import getPlatformDefault from "getPlatform" /* 5634 */;
 import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8882 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11416 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11928 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11419 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11929 */;
+import ApplicationRecord from "ApplicationRecord" /* 2021 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp(11416).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp(11419).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmpResult5 = ActivitiesInTextUtils;
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
         let tmp24;
         const _Symbol3 = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1128).intl;
+          const intl3 = tmp(1125).intl;
           const stringResult = intl3.string(intl5.t.pKLV22);
           cResult[6] = stringResult;
           tmp24 = stringResult;
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
       if (!supported_platforms.includes(tmp14Result)) {
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const stringResult1 = intl.string(intl5.t.z2YTgJ);
           cResult[7] = stringResult1;
           tmp17 = stringResult1;
@@ -141,7 +141,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
       let tmp21;
       const _Symbol2 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const stringResult2 = intl2.string(intl5.t.ddSR3v);
         cResult[8] = stringResult2;
         tmp21 = stringResult2;
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
     let tmp28;
     const _Symbol4 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1128).intl;
+      const intl4 = tmp(1125).intl;
       const stringResult3 = intl4.string(intl5.t.f41E1g);
       cResult[9] = stringResult3;
       tmp28 = stringResult3;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp2(11416).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp2(11419).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmp2Result3 = ActivitiesInTextUtils;
@@ -244,16 +244,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
     const tmp12Result = tmp12(tmp2Result4.getOS());
     if (flag) {
       if (embeddedActivityLaunchability === getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.CHANNEL_CONTENT_GATED) {
-        const intl3 = tmp2(1128).intl;
-        reason = intl3.string(tmp2(1128).t.pKLV22);
+        const intl3 = tmp2(1125).intl;
+        reason = intl3.string(tmp2(1125).t.pKLV22);
         disabled = flag;
       }
     }
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;
       if (!supported_platforms.includes(tmp12Result)) {
-        const intl = tmp2(1128).intl;
-        reason = intl.string(tmp2(1128).t.z2YTgJ);
+        const intl = tmp2(1125).intl;
+        reason = intl.string(tmp2(1125).t.z2YTgJ);
         disabled = false;
       }
     }
@@ -263,15 +263,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
     }
     disabled = flag;
     if (isThreadResult) {
-      const intl2 = tmp2(1128).intl;
-      reason = intl2.string(tmp2(1128).t.ddSR3v);
+      const intl2 = tmp2(1125).intl;
+      reason = intl2.string(tmp2(1125).t.ddSR3v);
       disabled = true;
     }
   }
   const tmp15 = disabled && null == reason;
   if (tmp15) {
-    const intl4 = tmp2(1128).intl;
-    reason = intl4.string(tmp2(1128).t.f41E1g);
+    const intl4 = tmp2(1125).intl;
+    reason = intl4.string(tmp2(1125).t.f41E1g);
   }
   return { disabled, reason };
 });

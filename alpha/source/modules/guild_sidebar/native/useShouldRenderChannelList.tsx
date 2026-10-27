@@ -1,17 +1,17 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 17732
+// Function ID: 17733
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7585, 6496, 1087, 558, 576, 5150, 5151, 1123, 2]
+// Dependencies: [32, 19, 7586, 6497, 1084, 558, 576, 5151, 5152, 1120, 2]
 
-// Module 17691 (useShouldRenderChannelList)
-import Constants from "Constants" /* 1087 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
+// Module 17732 (useShouldRenderChannelList)
+import Constants from "Constants" /* 1084 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7585 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
+import CacheStore from "CacheStore" /* 7586 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,10 +35,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F153971 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153972 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153973 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F153974 */ };
+          allowRender = function allowRender() { /* body not rendered: F154331 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154332 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154333 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F154334 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F153975 */ };
+          return () => { /* body not rendered: F154335 */ };
         }
       }
     }
@@ -85,10 +85,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F153971 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F153972 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F153973 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F153974 */ };
+          allowRender = function allowRender() { /* body not rendered: F154331 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154332 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154333 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F154334 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F153975 */ };
+          return () => { /* body not rendered: F154335 */ };
         }
       }
     }

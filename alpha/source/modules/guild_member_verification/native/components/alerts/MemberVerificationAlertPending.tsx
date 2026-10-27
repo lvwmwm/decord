@@ -1,11 +1,11 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6840
+// Function ID: 6841
 // Name: MemberVerificationAlertPending
-// Dependencies: [109, 19, 21, 558, 576, 6835, 1128, 5244, 6839, 6840, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6837, 1125, 5245, 6841, 6842, 2]
 
-// Module 6838 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6835 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6839 */;
+// Module 6840 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6837 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6841 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,10 +56,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(tmp(1128).t.zhfXbs);
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(tmp(1128).t["SRM/e/"]);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(tmp(1125).t.zhfXbs);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(tmp(1125).t["SRM/e/"]);
       cResult[7] = stringResult;
       cResult[8] = stringResult1;
       tmp13 = stringResult1;
@@ -70,8 +70,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1128).intl;
-      const stringResult2 = intl3.string(tmp(1128).t.f293OM);
+      const intl3 = tmp(1125).intl;
+      const stringResult2 = intl3.string(tmp(1125).t.f293OM);
       cResult[9] = stringResult2;
       tmp16 = stringResult2;
     } else {
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     if (cResult[10] !== tmp5) {
       let obj2 = { variant: "secondary", text: tmp16, onPress: tmp5 };
-      const tmp20 = closure_6(tmp(5244).Button, obj2);
+      const tmp20 = closure_6(tmp(5245).Button, obj2);
       cResult[10] = tmp5;
       cResult[11] = tmp20;
       tmp18 = tmp20;
@@ -88,8 +88,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1128).intl;
-      const stringResult3 = intl4.string(tmp(1128).t.mqtdmQ);
+      const intl4 = tmp(1125).intl;
+      const stringResult3 = intl4.string(tmp(1125).t.mqtdmQ);
       cResult[12] = stringResult3;
       tmp21 = stringResult3;
     } else {
@@ -97,7 +97,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     }
     if (cResult[13] !== tmp10) {
       const obj3 = { text: tmp21, variant: "destructive", onPress: tmp10 };
-      const tmp25 = closure_6(tmp(5244).Button, obj3);
+      const tmp25 = closure_6(tmp(5245).Button, obj3);
       cResult[13] = tmp10;
       cResult[14] = tmp25;
       tmp23 = tmp25;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         }
         return tmp30;
       }
-      const obj4 = { icon: tmp(6840).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
+      const obj4 = { icon: tmp(6842).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
       const tmp33 = MemberVerificationAlertDefault;
       const merged = Object.assign(tmp6);
       const tmp37 = closure_6(tmp33, obj4);
@@ -164,19 +164,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     const obj2 = { guildId };
     const result = obj.openMemberVerificationCancelPendingAlert(obj2);
   }, items);
-  let obj = { icon: guildId(6840).ClipboardListIcon, header: intl.string(guildId(1128).t.zhfXbs), subtitle: intl2.string(guildId(1128).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
-  const tmp3 = onClose(6839);
+  let obj = { icon: guildId(6842).ClipboardListIcon, header: intl.string(guildId(1125).t.zhfXbs), subtitle: intl2.string(guildId(1125).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
+  const tmp3 = onClose(6841);
   const merged1 = Object.assign(merged);
-  intl = guildId(1128).intl;
-  intl2 = guildId(1128).intl;
+  intl = guildId(1125).intl;
+  intl2 = guildId(1125).intl;
   obj2 = { children: items1 };
-  const obj3 = { variant: "secondary", text: intl3.string(guildId(1128).t.f293OM), onPress: onClose };
-  const Button = guildId(5244).Button;
-  intl3 = guildId(1128).intl;
+  const obj3 = { variant: "secondary", text: intl3.string(guildId(1125).t.f293OM), onPress: onClose };
+  const Button = guildId(5245).Button;
+  intl3 = guildId(1125).intl;
   items1 = [closure_6(Button, obj3), ];
-  const obj4 = { text: intl4.string(guildId(1128).t.mqtdmQ), variant: "destructive", onPress: callback };
-  const Button2 = guildId(5244).Button;
-  intl4 = guildId(1128).intl;
+  const obj4 = { text: intl4.string(guildId(1125).t.mqtdmQ), variant: "destructive", onPress: callback };
+  const Button2 = guildId(5245).Button;
+  intl4 = guildId(1125).intl;
   items1[1] = closure_6(Button2, obj4);
   return closure_6(tmp3, obj);
 });

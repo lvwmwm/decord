@@ -1,21 +1,21 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 18394
+// Function ID: 18395
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 13353, 21, 4971, 587, 7253, 5025, 8668, 7285, 5662, 5210, 13532, 2002, 8680, 7449, 6672, 6908, 1128, 1202, 5234, 18343, 6883, 18361, 2]
+// Dependencies: [19, 17, 13367, 21, 4972, 587, 7255, 5026, 8668, 7287, 5663, 5211, 13546, 1999, 8680, 7450, 6673, 6910, 1125, 1199, 5235, 18377, 6885, 18395, 2]
 // Exports: default
 
-// Module 18360 (RestrictedMessagePreviewHeader)
+// Module 18394 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13353 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13367 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(13532, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(13546, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

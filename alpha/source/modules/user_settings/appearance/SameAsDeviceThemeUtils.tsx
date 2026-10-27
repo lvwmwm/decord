@@ -1,18 +1,18 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16422
+// Function ID: 16423
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [4995, 1207, 1210, 5868, 1254, 4978, 4998, 5036, 2]
+// Dependencies: [4996, 1204, 1207, 5869, 1251, 4979, 4999, 5037, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 16383 (SameAsDeviceThemeUtils)
-import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import shared from "shared" /* 4978 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4998 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5036 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5868 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4995 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
+// Module 16422 (SameAsDeviceThemeUtils)
+import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
+import shared from "shared" /* 4979 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4999 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5037 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5869 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import ThemeConstants from "ThemeConstants" /* 1207 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

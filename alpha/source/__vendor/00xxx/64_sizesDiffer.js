@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "Array", height: "Reflect" };
+let closure_0 = { width: "toCharArray$esjava$1", height: "Symbol" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

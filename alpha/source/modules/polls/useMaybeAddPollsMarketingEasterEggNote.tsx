@@ -1,12 +1,12 @@
-// Module ID: 9942
-// Function ID: 9943
+// Module ID: 9944
+// Function ID: 9945
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2068, 558, 576, 504, 1128, 2]
+// Dependencies: [2065, 558, 576, 504, 1125, 2]
 
-// Module 9942 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 9944 (useMaybeAddPollsMarketingEasterEggNote)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,9 +43,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeAd
   if (":pizza:" === emojiName) {
     formatToPlainStringResult = emojiName;
     if (stateFromStores) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj2 = { emojiName };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["1knDPI"], obj2);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t["1knDPI"], obj2);
     }
   }
   cResult[2] = emojiName;
@@ -59,9 +59,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeAd
   if (":pizza:" === emojiName) {
     formatToPlainStringResult = emojiName;
     if (tmp4) {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const obj = { emojiName };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t["1knDPI"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t["1knDPI"], obj);
     }
   }
   return formatToPlainStringResult;

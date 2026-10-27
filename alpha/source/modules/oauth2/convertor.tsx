@@ -1,11 +1,11 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9640
+// Function ID: 9641
 // Name: convertor
-// Dependencies: [1099, 2]
+// Dependencies: [1096, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 9638 (convertor)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+// Module 9640 (convertor)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/oauth2/convertor.tsx");

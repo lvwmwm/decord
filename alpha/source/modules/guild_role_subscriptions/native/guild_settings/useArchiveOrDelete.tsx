@@ -1,12 +1,12 @@
-// Module ID: 19294
-// Function ID: 19295
+// Module ID: 19332
+// Function ID: 19333
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 16569, 16584, 1128, 5909, 1202, 38, 5662, 2]
+// Dependencies: [5, 32, 19, 558, 576, 16611, 16626, 1125, 5910, 1199, 38, 5663, 2]
 
-// Module 19294 (useArchiveOrDelete)
-import intl13 from "intl" /* 1128 */;
-import ToastUtilsAll from "ToastUtils" /* 5662 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+// Module 19332 (useArchiveOrDelete)
+import intl13 from "intl" /* 1125 */;
+import ToastUtilsAll from "ToastUtils" /* 5663 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16626 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -336,7 +336,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
       }
     }
     const obj10 = { tierName: first };
-    const formatToPlainStringResult = obj7.formatToPlainString(tmp(1128).t.x2qwWL, obj10);
+    const formatToPlainStringResult = obj7.formatToPlainString(tmp(1125).t.x2qwWL, obj10);
     cResult[9] = first;
     cResult[10] = formatToPlainStringResult;
   } else {
@@ -374,7 +374,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
         }
       }
     }
-    const stringResult = obj9.string(tmp(1128).t.GMtG6p);
+    const stringResult = obj9.string(tmp(1125).t.GMtG6p);
     cResult[11] = stringResult;
   } else {
     class F {
@@ -412,7 +412,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
       }
     }
     const string = tmp28.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     if (undefined === subscriptionListing) {
       class F {
         constructor() {
@@ -468,12 +468,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
       }
     }
   }
-  let intl = tmp(1128).intl;
-  stringResult1 = intl.string(tmp(1128).t["4H6RLl"]);
-  const intl2 = tmp(1128).intl;
-  stringResult2 = intl2.string(tmp(1128).t.uG6b1w);
-  const intl3 = tmp(1128).intl;
-  stringResult3 = intl3.string(tmp(1128).t.JoCdPC);
+  let intl = tmp(1125).intl;
+  stringResult1 = intl.string(tmp(1125).t["4H6RLl"]);
+  const intl2 = tmp(1125).intl;
+  stringResult2 = intl2.string(tmp(1125).t.uG6b1w);
+  const intl3 = tmp(1125).intl;
+  stringResult3 = intl3.string(tmp(1125).t.JoCdPC);
 }) : (function useArchiveOrDelete(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_2;
@@ -620,19 +620,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
     let stringResult1;
     let closure_6;
     if (!tmp9) {
-      let intl = tmp(1128).intl;
+      let intl = tmp(1125).intl;
       let obj6 = { tierName: first };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.OuuIOY, obj6);
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.RL0wjm);
-      const intl3 = tmp(1128).intl;
-      stringResult1 = intl3.string(tmp(1128).t["5/Jeg2"]);
-      const intl4 = tmp(1128).intl;
-      let closure_4 = intl4.string(tmp(1128).t.N5AIuE);
-      const intl5 = tmp(1128).intl;
-      _slicedToArray = intl5.string(tmp(1128).t.TEKiiP);
-      const intl6 = tmp(1128).intl;
-      closure_6 = intl6.string(tmp(1128).t["170XOL"]);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.OuuIOY, obj6);
+      const intl2 = tmp(1125).intl;
+      stringResult = intl2.string(tmp(1125).t.RL0wjm);
+      const intl3 = tmp(1125).intl;
+      stringResult1 = intl3.string(tmp(1125).t["5/Jeg2"]);
+      const intl4 = tmp(1125).intl;
+      let closure_4 = intl4.string(tmp(1125).t.N5AIuE);
+      const intl5 = tmp(1125).intl;
+      _slicedToArray = intl5.string(tmp(1125).t.TEKiiP);
+      const intl6 = tmp(1125).intl;
+      closure_6 = intl6.string(tmp(1125).t["170XOL"]);
     }
     const items = [error];
     closure_6(() => {
@@ -661,24 +661,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
     };
     return obj7;
   }
-  const intl7 = tmp(1128).intl;
-  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1128).t.x2qwWL, { tierName: first });
-  const intl8 = tmp(1128).intl;
-  const stringResult2 = intl8.string(tmp(1128).t.GMtG6p);
-  const intl9 = tmp(1128).intl;
+  const intl7 = tmp(1125).intl;
+  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1125).t.x2qwWL, { tierName: first });
+  const intl8 = tmp(1125).intl;
+  const stringResult2 = intl8.string(tmp(1125).t.GMtG6p);
+  const intl9 = tmp(1125).intl;
   const string = intl9.string;
-  const t = tmp(1128).t;
+  const t = tmp(1125).t;
   if (tmp9) {
     stringResult3 = string(t.DHWKJS);
   } else {
     stringResult3 = string(t.Y4KjUN);
   }
-  const intl10 = tmp(1128).intl;
-  closure_4 = intl10.string(tmp(1128).t["4H6RLl"]);
-  const intl11 = tmp(1128).intl;
-  _slicedToArray = intl11.string(tmp(1128).t.uG6b1w);
-  const intl12 = tmp(1128).intl;
-  closure_6 = intl12.string(tmp(1128).t.JoCdPC);
+  const intl10 = tmp(1125).intl;
+  closure_4 = intl10.string(tmp(1125).t["4H6RLl"]);
+  const intl11 = tmp(1125).intl;
+  _slicedToArray = intl11.string(tmp(1125).t.uG6b1w);
+  const intl12 = tmp(1125).intl;
+  closure_6 = intl12.string(tmp(1125).t.JoCdPC);
   stringResult1 = stringResult3;
   stringResult = stringResult2;
   formatToPlainStringResult = formatToPlainStringResult1;

@@ -1,21 +1,21 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11492
+// Function ID: 11493
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1502, 1384, 1645, 1633, 558, 576, 10918, 2]
+// Dependencies: [32, 19, 1499, 1381, 1642, 1630, 558, 576, 10921, 2]
 // Exports: getStableSafeAreaInsets
 
-// Module 11491 (useStableSafeAreaInsets)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
-import react_nativeDefault from "react-native" /* 1645 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10918 */;
+// Module 11492 (useStableSafeAreaInsets)
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import react_nativeDefault from "react-native" /* 1642 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const useSafeAreaInsets = tmp3(1633);
+const useSafeAreaInsets = tmp3(1630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableSafeAreaInsets() {
   let appEntryKey;
   let tmp3;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableS
   let tmp7;
   let obj = appEntryKey(576);
   const cResult = obj.c(5);
-  const obj2 = appEntryKey(1502);
+  const obj2 = appEntryKey(1499);
   appEntryKey = obj2.useAppEntryKey();
   if (cResult[0] !== appEntryKey) {
     const fn = function n() {
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableS
   let appEntryKey;
   let closure_1;
   let first;
-  let obj = appEntryKey(1502);
+  let obj = appEntryKey(1499);
   appEntryKey = obj.useAppEntryKey();
   [first, closure_1] = react.useState(() => {
     let stableSafeAreaInsets;

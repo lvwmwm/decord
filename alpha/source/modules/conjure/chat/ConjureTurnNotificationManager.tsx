@@ -1,25 +1,25 @@
-// Module ID: 18782
-// Function ID: 18783
+// Module ID: 18818
+// Function ID: 18819
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7645, 1246, 13747, 4874, 5002, 6498, 6773, 1087, 4830, 7214, 10742, 4799, 10723, 11526, 7345, 12340, 2]
+// Dependencies: [7646, 1243, 13761, 4875, 5003, 6499, 6774, 1084, 4831, 7216, 10745, 4800, 10726, 11528, 7347, 12346, 2]
 
-// Module 18782 (ConjureTurnNotificationManager)
-import UserSettings from "UserSettings" /* 4799 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import ConjureUtils from "ConjureUtils" /* 7345 */;
-import conjureProjectMute from "conjureProjectMute" /* 10723 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10742 */;
-import SoundUtils from "SoundUtils" /* 11526 */;
-import conjureMentions from "conjureMentions" /* 12340 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7645 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13747 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+// Module 18818 (ConjureTurnNotificationManager)
+import UserSettings from "UserSettings" /* 4800 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import ConjureUtils from "ConjureUtils" /* 7347 */;
+import conjureProjectMute from "conjureProjectMute" /* 10726 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10745 */;
+import SoundUtils from "SoundUtils" /* 11528 */;
+import conjureMentions from "conjureMentions" /* 12346 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7646 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13761 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import Constants from "Constants" /* 1084 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 let c10;

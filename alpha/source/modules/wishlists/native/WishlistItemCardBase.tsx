@@ -1,21 +1,21 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9365
+// Function ID: 9366
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 5663, 9367, 5037, 8729, 5252, 9369, 1128, 1388, 9216, 8566, 2]
+// Dependencies: [19, 17, 21, 587, 4972, 558, 576, 5664, 9366, 5038, 8729, 5253, 9368, 1125, 1385, 9216, 8566, 2]
 
-// Module 9366 (WishlistItemCardBase)
+// Module 9365 (WishlistItemCardBase)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 5037 */;
-import useToken from "useToken" /* 5252 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 5038 */;
+import useToken from "useToken" /* 5253 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
 import useUserProfileColors from "useUserProfileColors" /* 8729 */;
-import useWishlistHooks from "useWishlistHooks" /* 9369 */;
+import useWishlistHooks from "useWishlistHooks" /* 9368 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-    const HeartIcon = tmp(9367).HeartIcon;
+    const HeartIcon = tmp(9366).HeartIcon;
     const tmp9 = closure_5(HeartIcon, obj2);
     cResult[2] = tmp9;
     tmp6 = tmp9;
@@ -103,7 +103,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(9367).HeartIcon;
+  HeartIcon = toastText(9366).HeartIcon;
   return closure_5(closure_3, obj);
 });
 let obj6 = { OWNED: "owned", LOCKED: "locked" };
@@ -359,18 +359,18 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
               }
             }
           }
-          const intl = tmp(1128).intl;
+          const intl = tmp(1125).intl;
           const obj15 = { username: recipientName };
           const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, obj15);
           const items2 = [accessibilityLabel, , ];
           if (obj6.OWNED === overlay) {
-            const intl3 = tmp(1128).intl;
-            stringResult = intl3.string(tmp(1128).t["6cfuDj"]);
+            const intl3 = tmp(1125).intl;
+            stringResult = intl3.string(tmp(1125).t["6cfuDj"]);
           } else {
             stringResult = null;
             if (tmp16.LOCKED === overlay) {
-              const intl2 = tmp(1128).intl;
-              stringResult = intl2.string(tmp(1128).t.wu4gyV);
+              const intl2 = tmp(1125).intl;
+              stringResult = intl2.string(tmp(1125).t.wu4gyV);
             }
           }
           items2[1] = stringResult;
@@ -379,7 +379,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
             tmp18 = formatToPlainStringResult;
           }
           items2[2] = tmp18;
-          const found = items2.filter(tmp(1388).isNotNullish);
+          const found = items2.filter(tmp(1385).isNotNullish);
           cResult[12] = accessibilityLabel;
           cResult[13] = tmp13;
           cResult[14] = overlay;
@@ -450,18 +450,18 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
     obj5 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj5;
-  const WISHLIST = tmp2(9369).WishlistItemSource.WISHLIST;
-  const intl = tmp2(1128).intl;
+  const WISHLIST = tmp2(9368).WishlistItemSource.WISHLIST;
+  const intl = tmp2(1125).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
   if (obj6.OWNED === overlay) {
-    const intl3 = tmp2(1128).intl;
-    stringResult = intl3.string(tmp2(1128).t["6cfuDj"]);
+    const intl3 = tmp2(1125).intl;
+    stringResult = intl3.string(tmp2(1125).t["6cfuDj"]);
   } else {
     stringResult = null;
     if (obj6.LOCKED === overlay) {
-      const intl2 = tmp2(1128).intl;
-      stringResult = intl2.string(tmp2(1128).t.wu4gyV);
+      const intl2 = tmp2(1125).intl;
+      stringResult = intl2.string(tmp2(1125).t.wu4gyV);
     }
   }
   let tmp15Result4 = source === WISHLIST;
@@ -471,7 +471,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
     tmp11 = formatToPlainStringResult;
   }
   items1[2] = tmp11;
-  const found = items1.filter(tmp2(1388).isNotNullish);
+  const found = items1.filter(tmp2(1385).isNotNullish);
   const joined = found.join(", ");
   const items2 = [tmp.previewWrap, ];
   let dimmedPreview = overlay === tmp8.OWNED;

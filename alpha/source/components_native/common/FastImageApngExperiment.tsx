@@ -1,14 +1,14 @@
-// Module ID: 5670
-// Function ID: 5671
+// Module ID: 5671
+// Function ID: 5672
 // Name: FastImageApngExperiment
-// Dependencies: [1455, 1384, 504, 1901, 2]
+// Dependencies: [1452, 1381, 504, 1898, 2]
 // Exports: initializeFastImageApngExperiment
 
-// Module 5670 (FastImageApngExperiment)
+// Module 5671 (FastImageApngExperiment)
 import get_initializedDefault from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 1901 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import react_nativeDefault from "react-native" /* 1898 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-10-android-fastimage-apng", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

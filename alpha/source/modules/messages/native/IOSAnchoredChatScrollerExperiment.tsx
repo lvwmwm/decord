@@ -1,13 +1,13 @@
-// Module ID: 7748
-// Function ID: 7749
+// Module ID: 7749
+// Function ID: 7750
 // Name: IOSAnchoredChatScrollerExperiment
-// Dependencies: [17, 1455, 1384, 2]
+// Dependencies: [17, 1452, 1381, 2]
 // Exports: isIOSAnchoredChatScrollerEnabled, shouldUseIOSAnchoredChatScroller
 
-// Module 7748 (IOSAnchoredChatScrollerExperiment)
+// Module 7749 (IOSAnchoredChatScrollerExperiment)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

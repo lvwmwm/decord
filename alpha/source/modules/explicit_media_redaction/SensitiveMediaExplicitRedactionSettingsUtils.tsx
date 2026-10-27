@@ -1,16 +1,16 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7398
+// Function ID: 7399
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1392, 4801, 1211, 5644, 5651, 4799, 7397, 2]
+// Dependencies: [1389, 4802, 1208, 5645, 5652, 4800, 7399, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 7396 (SensitiveMediaExplicitRedactionSettingsUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4801 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5644 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5651 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 7398 (SensitiveMediaExplicitRedactionSettingsUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+import UserSettings from "UserSettings" /* 4800 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4802 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5645 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5652 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -42,11 +42,11 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
     if (isDm) {
       let BLUR2;
       if (!flag) {
-        BLUR2 = tmp4(1211).ExplicitContentRedaction.BLOCK;
+        BLUR2 = tmp4(1208).ExplicitContentRedaction.BLOCK;
       }
       SHOW = BLUR2;
     }
-    BLUR2 = tmp4(1211).ExplicitContentRedaction.BLUR;
+    BLUR2 = tmp4(1208).ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
     if (currentUser != null) {
@@ -64,7 +64,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
       }
       if (flag5) {
         let tmp12;
-        const ExplicitContentFilter2 = tmp4(4799).ExplicitContentFilter;
+        const ExplicitContentFilter2 = tmp4(4800).ExplicitContentFilter;
         const setting1 = ExplicitContentFilter2.getSetting();
         if (flag6) {
           tmp12 = obj3[setting1];
@@ -73,7 +73,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         }
         BLUR = tmp12;
       } else {
-        BLUR = tmp4(1211).ExplicitContentRedaction.BLUR;
+        BLUR = tmp4(1208).ExplicitContentRedaction.BLUR;
       }
       SHOW = BLUR;
     } else {
@@ -86,7 +86,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(4799).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(4800).ExplicitContentFilter;
         const setting2 = ExplicitContentFilter.getSetting();
         if (flag4) {
           SHOW = obj[setting2];
@@ -94,7 +94,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
           SHOW = obj2[setting2];
         }
       } else {
-        SHOW = tmp4(1211).ExplicitContentRedaction.SHOW;
+        SHOW = tmp4(1208).ExplicitContentRedaction.SHOW;
       }
     }
   }
@@ -157,7 +157,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
   }
   if (flag) {
     let tmp5;
-    const ExplicitContentFilter = tmp(4799).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(4800).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       tmp5 = obj3[setting];
@@ -242,7 +242,7 @@ export const shouldRedactMessageMediaForForum = function shouldRedactMessageMedi
     }
     obj3 = { setting: prop2, isDm: true, isFriend: true };
     resolveExplicitContentSettingWithDefaults(obj3);
-    const tmp7Result = tmp7(7397);
+    const tmp7Result = tmp7(7399);
     return tmp7Result.getShouldObscureForSetting(tmp10Result);
   }
 };

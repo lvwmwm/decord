@@ -1,28 +1,28 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19091
+// Function ID: 19092
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1392, 19049, 1087, 21, 4971, 587, 1128, 5025, 19051, 558, 576, 5039, 6988, 10833, 1633, 1505, 6827, 19054, 1202, 11688, 19055, 6984, 7145, 8723, 7220, 5592, 2]
+// Dependencies: [32, 19, 17, 1389, 19087, 1084, 21, 4972, 587, 1125, 5026, 19089, 558, 576, 5040, 6990, 10836, 1630, 1502, 6829, 19092, 1199, 11690, 19093, 6986, 7147, 8723, 7222, 5593, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 19053 (GuildSettingsModalAuditLogFilter)
+// Module 19091 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl6 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import react_native2 from "react-native" /* 5039 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
-import FormRadio from "FormRadio" /* 6988 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10833 */;
-import AuditLogUtils from "AuditLogUtils" /* 19051 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19054 */;
+import Constants from "Constants" /* 1084 */;
+import intl6 from "intl" /* 1125 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import react_native2 from "react-native" /* 5040 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6829 */;
+import FormRadio from "FormRadio" /* 6990 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10836 */;
+import AuditLogUtils from "AuditLogUtils" /* 19089 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19049 */;
+import UserStore from "UserStore" /* 1389 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,8 +137,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   guildId = guildId.guildId;
   let tmp4 = closure_12();
   dependencyMap = tmp4;
-  const bottom = guildId(1633)().bottom;
-  let obj2 = filterType(1505);
+  const bottom = guildId(1630)().bottom;
+  let obj2 = filterType(1502);
   navigation = obj2.useNavigation();
   let obj3 = first;
   let tmp6 = navigation(first.useState(""), 2);
@@ -201,14 +201,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                     if (cResult[23] !== filterType) {
                       let stringResult;
                       if (filterType === AuditLogFilterTypes.USER) {
-                        let intl3 = tmp(1128).intl;
-                        stringResult = intl3.string(tmp(1128).t.pYHobK);
+                        let intl3 = tmp(1125).intl;
+                        stringResult = intl3.string(tmp(1125).t.pYHobK);
                       } else if (filterType === tmp21.ACTION) {
-                        let intl2 = tmp(1128).intl;
-                        stringResult = intl2.string(tmp(1128).t.I288Zx);
+                        let intl2 = tmp(1125).intl;
+                        stringResult = intl2.string(tmp(1125).t.I288Zx);
                       } else {
-                        let intl = tmp(1128).intl;
-                        stringResult = intl.string(tmp(1128).t["5h0QOP"]);
+                        let intl = tmp(1125).intl;
+                        stringResult = intl.string(tmp(1125).t["5h0QOP"]);
                       }
                       cResult[23] = filterType;
                       class B {
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           }
                         }
                       }
-                      const tmp25 = closure_9(tmp(7145).SearchBar, obj5);
+                      const tmp25 = closure_9(tmp(7147).SearchBar, obj5);
                       cResult[25] = tmp20;
                       cResult[26] = tmp25;
                       tmp23 = tmp25;

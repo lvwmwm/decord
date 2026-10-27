@@ -1,23 +1,23 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10194
+// Function ID: 10195
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 4845, 10157, 1087, 1243, 21, 4971, 587, 558, 576, 4799, 6488, 6489, 1267, 1202, 1417, 6883, 10170, 8566, 6908, 5212, 5213, 9973, 7150, 1128, 10193, 9974, 2]
+// Dependencies: [32, 19, 17, 4846, 10159, 1084, 1240, 21, 4972, 587, 558, 576, 4800, 6489, 6490, 1264, 1199, 1414, 6885, 10172, 8566, 6910, 5213, 5214, 9975, 7152, 1125, 10195, 9976, 2]
 
-// Module 10192 (StickerPickerCategories)
+// Module 10194 (StickerPickerCategories)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
-import StickersTypes from "StickersTypes" /* 6489 */;
-import StickerPickerStore from "StickerPickerStore" /* 10157 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import HapticUtils from "HapticUtils" /* 5213 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5214 */;
+import StickersTypes from "StickersTypes" /* 6490 */;
+import StickerPickerStore from "StickerPickerStore" /* 10159 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import Constants from "Constants" /* 1087 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1086,21 +1086,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((categories) => {
   }, items8);
   let obj = { portalHostName: "expression-footer", style, children: items9 };
   items9 = [, ];
-  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(9973)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const tmp21 = categoryIndex(9974);
-  items9[0] = closure_14(categoryIndex(7150), obj2);
+  const obj2 = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: categoryIndex(9975)(), ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
+  const tmp21 = categoryIndex(9976);
+  items9[0] = closure_14(categoryIndex(7152), obj2);
   let tmp22Result = null != first && first1;
   const tmp17 = categoryIndex;
   const tmp20 = closure_15;
   if (tmp22Result) {
-    const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: intl.string(categories(1128).t.rzCcjK), children: closure_14(closure_5, obj4) };
-    const PressableOpacity = categories(6908).PressableOpacity;
-    intl = categories(1128).intl;
+    const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: intl.string(categories(1125).t.rzCcjK), children: closure_14(closure_5, obj4) };
+    const PressableOpacity = categories(6910).PressableOpacity;
+    intl = categories(1125).intl;
     obj4 = { style: items10, children: closure_14(Icon, obj5) };
     items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
-    obj5 = { style: tmp.guildIcon, source: tmp17(10193) };
-    Icon = categories(1202).Icon;
+    obj5 = { style: tmp.guildIcon, source: tmp17(10195) };
+    Icon = categories(1199).Icon;
     tmp22Result = tmp22(PressableOpacity, obj3);
   }
   items9[1] = tmp22Result;

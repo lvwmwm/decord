@@ -1,15 +1,15 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17385
+// Function ID: 17386
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4972, 21, 558, 576, 504, 4985, 2]
+// Dependencies: [19, 4973, 21, 558, 576, 504, 4986, 2]
 
-// Module 17344 (AccessibilityPreferencesContextProvider)
+// Module 17385 (AccessibilityPreferencesContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4985 */;
+import react3 from "react" /* 4986 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

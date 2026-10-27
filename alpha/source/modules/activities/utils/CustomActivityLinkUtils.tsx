@@ -1,14 +1,14 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14220
+// Function ID: 14221
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14194, 1087, 14196, 1297, 584, 2]
+// Dependencies: [5, 14221, 1084, 14223, 1294, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14193 (CustomActivityLinkUtils)
-import Constants from "Constants" /* 1087 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14196 */;
+// Module 14220 (CustomActivityLinkUtils)
+import Constants from "Constants" /* 1084 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14223 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14194 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14221 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "Array" }, done: true };
+            return { value: { customId: "rejectWithError" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "Array" };
+              obj = { customId: "rejectWithError" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

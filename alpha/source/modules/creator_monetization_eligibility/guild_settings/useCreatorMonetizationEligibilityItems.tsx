@@ -1,13 +1,13 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19259
+// Function ID: 19260
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1087, 558, 576, 19222, 19223, 5656, 2067, 1128, 19224, 2]
+// Dependencies: [5, 19, 1084, 558, 576, 19260, 19261, 5657, 2064, 1125, 19262, 2]
 // Exports: default
 
-// Module 19221 (useCreatorMonetizationEligibilityItems)
-import Constants from "Constants" /* 1087 */;
-import intl27 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+// Module 19259 (useCreatorMonetizationEligibilityItems)
+import Constants from "Constants" /* 1084 */;
+import intl27 from "intl" /* 1125 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -638,8 +638,8 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         obj12 = HelpdeskUtilsDefault;
         const tmp25 = importDefault;
         if (!noRecentViolations) {
-          const intl = tmp23(1128).intl;
-          stringResult = intl.string(tmp23(1128).t["xU2fl+"]);
+          const intl = tmp23(1125).intl;
+          stringResult = intl.string(tmp23(1125).t["xU2fl+"]);
         }
         handleContactSupportClick = undefined;
         if (!noRecentViolations) {
@@ -654,9 +654,9 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         if (tmp3) {
           let obj = { key: "owner_age_requirement", checkedLabel: intl2.string(intl27.t["+F8haD"]), uncheckedLabel: intl3.string(intl27.t["5BwC/O"]), description: intl4.formatToPlainString(intl27.t.DW1Vae, obj4), checked: tmp.meetsOwnerAgeRequirement };
           const push = items.push;
-          intl2 = tmp23(1128).intl;
-          intl3 = tmp23(1128).intl;
-          intl4 = tmp23(1128).intl;
+          intl2 = tmp23(1125).intl;
+          intl3 = tmp23(1125).intl;
+          intl4 = tmp23(1125).intl;
           obj4 = { minimumOwnerAgeInYears };
           push(obj);
         }
@@ -664,9 +664,9 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         if (tmp5) {
           const push2 = items.push;
           const obj5 = { key: "member_count_requirement", checkedLabel: intl5.string(intl27.t.j7wXWo), uncheckedLabel: intl6.string(intl27.t.W0suNz), description: intl7.formatToPlainString(intl27.t.up53zR, obj6), checked: tmp.hasSufficientMembers };
-          intl5 = tmp23(1128).intl;
-          intl6 = tmp23(1128).intl;
-          intl7 = tmp23(1128).intl;
+          intl5 = tmp23(1125).intl;
+          intl6 = tmp23(1125).intl;
+          intl7 = tmp23(1125).intl;
           obj6 = { minimumSize };
           push2(obj5);
         }
@@ -674,35 +674,35 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
         if (tmp7) {
           const push3 = items.push;
           const obj7 = { key: "server_age_requirement", checkedLabel: intl8.string(intl27.t.mjbvWw), uncheckedLabel: intl9.string(intl27.t["9BV6L6"]), description: formatToPlainString(Zwv84O, obj8), checked: tmp.meetsServerAgeRequirement };
-          intl8 = tmp23(1128).intl;
-          intl9 = tmp23(1128).intl;
-          const intl10 = tmp23(1128).intl;
+          intl8 = tmp23(1125).intl;
+          intl9 = tmp23(1125).intl;
+          const intl10 = tmp23(1125).intl;
           formatToPlainString = intl10.formatToPlainString;
-          obj8 = { minimumAge: tmp25(19224)(tmp.minimumAgeInDays) };
-          Zwv84O = tmp23(1128).t.Zwv84O;
+          obj8 = { minimumAge: tmp25(19262)(tmp.minimumAgeInDays) };
+          Zwv84O = tmp23(1125).t.Zwv84O;
           push3(obj7);
         }
         if (null != tmp.weeklyCommunicators) {
           const push6 = items.push;
           const obj9 = { key: "weekly_communicator_count_requirement", checkedLabel: intl21.string(intl27.t.Qw7qv4), uncheckedLabel: intl22.string(intl27.t.b45kGG), description: intl23.string(intl27.t.NbtjEC), checked: tmp.weeklyCommunicators };
-          intl21 = tmp23(1128).intl;
-          intl22 = tmp23(1128).intl;
-          intl23 = tmp23(1128).intl;
+          intl21 = tmp23(1125).intl;
+          intl22 = tmp23(1125).intl;
+          intl23 = tmp23(1125).intl;
           push6(obj9);
         }
         if (null != tmp.hasMemberRetention) {
           const push7 = items.push;
           const obj10 = { key: "member_retention_requirement", checkedLabel: intl24.string(intl27.t.Qvq39M), uncheckedLabel: intl25.string(intl27.t.azHboI), description: intl26.string(intl27.t.u4rCYO), checked: tmp.hasMemberRetention };
-          intl24 = tmp23(1128).intl;
-          intl25 = tmp23(1128).intl;
-          intl26 = tmp23(1128).intl;
+          intl24 = tmp23(1125).intl;
+          intl25 = tmp23(1125).intl;
+          intl26 = tmp23(1125).intl;
           push7(obj10);
         }
         const push4 = items.push;
         const obj11 = { key: "nsfw_requirement", checkedLabel: intl11.string(intl27.t.bymfTb), uncheckedLabel: intl12.string(intl27.t["718pRA"]), description: intl13.string(intl27.t["5ZqX+j"]), checked: tmp.notNSFW };
-        intl11 = tmp23(1128).intl;
-        intl12 = tmp23(1128).intl;
-        intl13 = tmp23(1128).intl;
+        intl11 = tmp23(1125).intl;
+        intl12 = tmp23(1125).intl;
+        intl13 = tmp23(1125).intl;
         push4(obj11);
         if (null != tmp.hasEnabled2FA) {
           let tmp11 = !tmp.hasEnabled2FA && !isUserMFAEnabled;
@@ -726,14 +726,14 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           }
           const push5 = items.push;
           const obj13 = { key: "2fa_requirement", checkedLabel: intl14.string(intl27.t.NqVyFk), uncheckedLabel: intl15.string(intl27.t.VcDNIV), description: intl16.format(intl27.t["7NzkfV"], obj14), checked: tmp.hasEnabled2FA, actionLabel: stringResult1, actionHandler: tmp18 };
-          intl14 = tmp23(1128).intl;
-          intl15 = tmp23(1128).intl;
-          intl16 = tmp23(1128).intl;
+          intl14 = tmp23(1125).intl;
+          intl15 = tmp23(1125).intl;
+          intl16 = tmp23(1125).intl;
           stringResult1 = undefined;
           obj14 = { enableMFAHook: enableMFAHook1 };
           if (tmp11) {
-            const intl17 = tmp23(1128).intl;
-            stringResult1 = intl17.string(tmp23(1128).t.BU4Diu);
+            const intl17 = tmp23(1125).intl;
+            stringResult1 = intl17.string(tmp23(1125).t.BU4Diu);
           }
           tmp18 = undefined;
           if (tmp11) {

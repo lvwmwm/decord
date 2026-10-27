@@ -1,16 +1,16 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18222
+// Function ID: 18223
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 13239, 13241, 558, 576, 9083, 13250, 12, 13225, 2]
+// Dependencies: [19, 13253, 13255, 558, 576, 9083, 13264, 12, 13239, 2]
 
-// Module 18188 (useAutoSearchPeopleTab)
+// Module 18222 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
 import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9083 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13225 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13241 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13250 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13239 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13255 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13264 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 13239 */;
+import SearchQueryStore from "SearchQueryStore" /* 13253 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

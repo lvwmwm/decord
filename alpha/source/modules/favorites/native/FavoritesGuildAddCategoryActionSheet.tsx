@@ -1,18 +1,18 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17623
+// Function ID: 17624
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 4836, 21, 4971, 587, 558, 576, 4848, 10845, 5210, 7248, 1128, 7008, 5244, 5265, 2]
+// Dependencies: [32, 19, 4837, 21, 4972, 587, 558, 576, 4849, 10848, 5211, 7250, 1125, 7010, 5245, 5266, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 17582 (FavoritesGuildAddCategoryActionSheet)
+// Module 17623 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 587 */;
-import FavoritesConstants from "FavoritesConstants" /* 4836 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10845 */;
+import FavoritesConstants from "FavoritesConstants" /* 4837 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5211 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10848 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
   const tmp4 = closure_9();
   [value, tmp7] = react.useState("");
   if (cResult[0] !== value) {
-    const tmpResult = tmp(4848);
+    const tmpResult = tmp(4849);
     const result = tmpResult.isFavoritesGuildCategoryNameValid(value);
     cResult[0] = value;
     cResult[1] = result;
@@ -66,9 +66,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     const _Symbol = Symbol;
     ({ content, body } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { title: intl.string(tmp(1128).t["ISN+NM"]) };
-      const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
-      intl = tmp(1128).intl;
+      let obj2 = { title: intl.string(tmp(1125).t["ISN+NM"]) };
+      const BottomSheetTitleHeader = tmp(7250).BottomSheetTitleHeader;
+      intl = tmp(1125).intl;
       const tmp14 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[5] = tmp14;
       tmp12 = tmp14;
@@ -77,10 +77,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1128).intl;
-      const stringResult = intl2.string(tmp(1128).t.OCAkGP);
-      const intl3 = tmp(1128).intl;
-      const stringResult1 = intl3.string(tmp(1128).t.eTVbtx);
+      const intl2 = tmp(1125).intl;
+      const stringResult = intl2.string(tmp(1125).t.OCAkGP);
+      const intl3 = tmp(1125).intl;
+      const stringResult1 = intl3.string(tmp(1125).t.eTVbtx);
       cResult[6] = stringResult;
       cResult[7] = stringResult1;
       tmp16 = stringResult1;
@@ -97,8 +97,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
       }
       const _Symbol3 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1128).intl;
-        const stringResult2 = intl4.string(tmp(1128).t.CumH4u);
+        const intl4 = tmp(1125).intl;
+        const stringResult2 = intl4.string(tmp(1125).t.CumH4u);
         cResult[11] = stringResult2;
         tmp23 = stringResult2;
       } else {
@@ -122,7 +122,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
         }
         const obj3 = { contentStyles: content, bodyStyles: body, keyboardShouldPersistTaps: "always", header: tmp12, children: items };
         items = [tmp19, tmp26];
-        const tmp31 = closure_7(tmp(5265).BottomSheet, obj3);
+        const tmp31 = closure_7(tmp(5266).BottomSheet, obj3);
         cResult[15] = tmp4.body;
         cResult[16] = tmp4.content;
         cResult[17] = tmp26;
@@ -131,14 +131,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
         tmp29 = tmp31;
       }
       const obj4 = { text: tmp23, onPress: tmp10, disabled: !tmp8 };
-      const tmp28 = closure_6(tmp(5244).Button, obj4);
+      const tmp28 = closure_6(tmp(5245).Button, obj4);
       cResult[12] = tmp10;
       cResult[13] = !tmp8;
       cResult[14] = tmp28;
       tmp26 = tmp28;
     }
     const obj5 = { label: tmp15, placeholder: tmp16, value, onChange: tmp7, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: tmp10 };
-    const tmp22 = closure_6(tmp(7008).TextInput, obj5);
+    const tmp22 = closure_6(tmp(7010).TextInput, obj5);
     cResult[8] = tmp10;
     cResult[9] = value;
     cResult[10] = tmp22;
@@ -169,7 +169,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
   let value;
   let tmp = closure_9();
   [value, tmp4] = react.useState("");
-  let obj = value(4848);
+  let obj = value(4849);
   const result = obj.isFavoritesGuildCategoryNameValid(value);
   importDefault = result;
   const items = [result, value];
@@ -183,18 +183,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     }
   }, items);
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
-  BottomSheet = value(5265).BottomSheet;
-  obj3 = { title: intl.string(value(1128).t["ISN+NM"]) };
-  BottomSheetTitleHeader = value(7248).BottomSheetTitleHeader;
-  intl = value(1128).intl;
-  const obj4 = { label: intl2.string(value(1128).t.OCAkGP), placeholder: intl3.string(value(1128).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
-  const TextInput = value(7008).TextInput;
-  intl2 = value(1128).intl;
-  intl3 = value(1128).intl;
+  BottomSheet = value(5266).BottomSheet;
+  obj3 = { title: intl.string(value(1125).t["ISN+NM"]) };
+  BottomSheetTitleHeader = value(7250).BottomSheetTitleHeader;
+  intl = value(1125).intl;
+  const obj4 = { label: intl2.string(value(1125).t.OCAkGP), placeholder: intl3.string(value(1125).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
+  const TextInput = value(7010).TextInput;
+  intl2 = value(1125).intl;
+  intl3 = value(1125).intl;
   items1 = [closure_6(TextInput, obj4), ];
-  const obj5 = { text: intl4.string(value(1128).t.CumH4u), onPress: callback, disabled: !result };
-  const Button = value(5244).Button;
-  intl4 = value(1128).intl;
+  const obj5 = { text: intl4.string(value(1125).t.CumH4u), onPress: callback, disabled: !result };
+  const Button = value(5245).Button;
+  intl4 = value(1125).intl;
   items1[1] = closure_6(Button, obj5);
   return closure_7(BottomSheet, obj2);
 });

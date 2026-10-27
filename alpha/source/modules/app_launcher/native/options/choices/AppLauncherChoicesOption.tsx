@@ -1,24 +1,24 @@
-// Module ID: 12048
-// Function ID: 12049
+// Module ID: 12049
+// Function ID: 12050
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 4971, 587, 1896, 5210, 12049, 2002, 12053, 8951, 5234, 2]
+// Dependencies: [32, 19, 21, 4972, 587, 1893, 5211, 12050, 1999, 12054, 8951, 5235, 6914, 2]
 // Exports: default
 
-// Module 12048 (AppLauncherChoicesOption)
+// Module 12049 (AppLauncherChoicesOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", padding: 12 };
+obj2 = { backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", padding: 12 };
 let closure_6 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/app_launcher/native/options/choices/AppLauncherChoicesOption.tsx");
 
@@ -26,11 +26,9 @@ export default function AppLauncherChoicesOption(option) {
   let Text;
   let autoFocus;
   let hasError;
-  let items1;
   let obj3;
   let onSelect;
   let str2;
-  let style;
   let tmp10Result;
   let type;
   option = option.option;
@@ -38,7 +36,7 @@ export default function AppLauncherChoicesOption(option) {
   const onOpenChoicesSheet = option.onOpenChoicesSheet;
   const onDismissChoicesSheet = option.onDismissChoicesSheet;
   closure_6 = undefined;
-  ({ style, autoFocus, hasError } = option);
+  ({ autoFocus, hasError } = option);
   let tmp = closure_6();
   const tmp3 = onOpenChoicesSheet(onDismissChoicesSheet.useState(() => {
     let choices1;
@@ -86,7 +84,7 @@ export default function AppLauncherChoicesOption(option) {
     };
     index = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(12049, dependencyMap.paths);
+    const tmp4 = asyncRequire(12050, dependencyMap.paths);
     if (first != null) {
       index = first.index;
     }
@@ -94,8 +92,7 @@ export default function AppLauncherChoicesOption(option) {
   }, items);
   let obj = option(onSelect[9]);
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, callback);
-  let obj2 = { start: true, end: true, style: items1, hasError, label: first(Text, obj3), subLabel: tmp10Result, trailing: first(option(onSelect[10]).FormArrow, {}), onPress: callback };
-  items1 = [tmp.container, style];
+  let obj2 = { start: true, end: true, style: tmp.container, hasError, label: first(Text, obj3), subLabel: tmp10Result, trailing: first(option(onSelect[12]).TableRowArrow, {}), onPress: callback };
   const FormRow = option(onSelect[10]).FormRow;
   let str = "text-sm/medium";
   Text = option(onSelect[11]).Text;

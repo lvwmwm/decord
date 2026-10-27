@@ -1,0 +1,10 @@
+// Module ID: 14566
+// Function ID: 14567
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 14566 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 80, height: 80, scales: [1, 2, 3], hash: "80a5ad242e4f3350ec4e12c04784e6bf", name: "img_premium_icon_80px", type: "png" });

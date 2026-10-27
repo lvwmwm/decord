@@ -1,12 +1,12 @@
-// Module ID: 14240
-// Function ID: 14241
+// Module ID: 14267
+// Function ID: 14268
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 558, 576, 5052, 8754, 8753, 5247, 7057, 5297, 2]
+// Dependencies: [19, 558, 576, 5053, 8754, 8753, 5248, 7059, 5298, 2]
 
-// Module 14240 (useMediaViewerPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import spring from "spring" /* 5247 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5297 */;
+// Module 14267 (useMediaViewerPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import spring from "spring" /* 5248 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
 import useVideoControls from "useVideoControls" /* 8754 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

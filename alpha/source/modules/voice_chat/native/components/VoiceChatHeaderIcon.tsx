@@ -1,22 +1,22 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11643
+// Function ID: 11644
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6771, 1087, 21, 4971, 587, 5268, 558, 576, 504, 12, 11549, 5037, 1202, 6908, 2]
+// Dependencies: [19, 17, 6772, 1084, 21, 4972, 587, 5269, 558, 576, 504, 12, 11551, 5038, 1199, 6910, 2]
 
-// Module 11641 (VoiceChatHeaderIcon)
+// Module 11643 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import Pressables from "Pressables" /* 6908 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11549 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import NavigatorConstants from "NavigatorConstants" /* 5269 */;
+import Pressables from "Pressables" /* 6910 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11551 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
+import ReadStateStore from "ReadStateStore" /* 6772 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native2 = tmp(5037);
+const native2 = tmp(5038);
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -227,7 +227,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChatHea
       tmp10 = tmp12;
     }
     const obj3 = { source, color: tmp4.badge.backgroundColor, size: native.Icon.Sizes.SMALL_20 };
-    const Icon = tmp(1202).Icon;
+    const Icon = tmp(1199).Icon;
     const tmp9 = metroRequire(Icon, obj3);
     cResult[3] = source;
     cResult[4] = tmp4.badge.backgroundColor;
@@ -258,7 +258,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChatHea
   }
   items[1] = disabledOpacity;
   const obj2 = { source, color: tmp.badge.backgroundColor, size: native.Icon.Sizes.SMALL_20 };
-  const Icon = tmp3(1202).Icon;
+  const Icon = tmp3(1199).Icon;
   items1 = [metroRequire(Icon, obj2), children];
   return tmp2(PressableOpacity, obj);
 });

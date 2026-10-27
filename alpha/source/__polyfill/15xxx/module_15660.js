@@ -3,60 +3,42 @@
 // Dependencies: []
 
 // Module 15660
-let map;
-
-
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-  }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
-        }
-      }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
+const obj = {
+  isASCIIDigit(decodeResult) {
+    return decodeResult >= 48 && decodeResult <= 57;
+  },
+  isASCIIAlpha(input) {
+    let tmp = input >= 65 && input <= 90;
+    if (!tmp) {
+      tmp = input >= 97 && input <= 122;
+      const tmp2 = input >= 97 && input <= 122;
     }
-  };
-  return obj;
+    return tmp;
+  },
+  isASCIIAlphanumeric(arg0) {
+    let tmp = arg0 >= 65 && arg0 <= 90;
+    if (!tmp) {
+      tmp = arg0 >= 97 && arg0 <= 122;
+      const tmp2 = arg0 >= 97 && arg0 <= 122;
+    }
+    if (!tmp) {
+      tmp = arg0 >= 48 && arg0 <= 57;
+      const tmp3 = arg0 >= 48 && arg0 <= 57;
+    }
+    return tmp;
+  },
+  isASCIIHex(decodeResult) {
+    let tmp = decodeResult >= 48 && decodeResult <= 57;
+    if (!tmp) {
+      tmp = decodeResult >= 65 && decodeResult <= 70;
+      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
+    }
+    if (!tmp) {
+      tmp = decodeResult >= 97 && decodeResult <= 102;
+      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
+    }
+    return tmp;
+  }
 };
+
+export default obj;

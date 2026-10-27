@@ -1,12 +1,12 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17085
+// Function ID: 17086
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 17041, 5234, 1128, 558, 576, 7037, 17042, 17036, 17037, 2]
+// Dependencies: [5, 32, 19, 21, 17083, 5235, 1125, 558, 576, 7039, 17084, 17078, 17079, 2]
 
-// Module 17043 (BackupScreen)
-import intl6 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import MFA from "MFA" /* 17041 */;
+// Module 17085 (BackupScreen)
+import intl6 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import MFA from "MFA" /* 17083 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -38,17 +38,17 @@ function getFormattedExplainer(first1) {
   const tmp = metroRequire;
   if (first1 > 0) {
     const obj = { variant: "text-md/normal", children: items };
-    const intl = tmp2(1128).intl;
+    const intl = tmp2(1125).intl;
     items = [intl.string(intl6.t.RRtlLg), ];
-    const intl2 = tmp2(1128).intl;
+    const intl2 = tmp2(1125).intl;
     const obj2 = { countdown: first1 };
     items[1] = intl2.format(intl6.t.tsWkAE, obj2);
     obj3 = obj;
   } else {
     obj3 = { variant: "text-md/normal", children: items1 };
-    const intl3 = tmp2(1128).intl;
+    const intl3 = tmp2(1125).intl;
     items1 = [intl3.string(intl6.t.RRtlLg), ];
-    const intl4 = tmp2(1128).intl;
+    const intl4 = tmp2(1125).intl;
     items1[1] = intl4.string(intl6.t.v3a6Pd);
   }
   return tmp(Text, obj3);

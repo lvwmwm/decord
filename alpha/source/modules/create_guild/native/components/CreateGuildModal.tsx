@@ -1,23 +1,23 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13629
+// Function ID: 13630
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 4901, 7073, 1087, 21, 13397, 9057, 1267, 6830, 13614, 1275, 6924, 13616, 13645, 13220, 1128, 13654, 9699, 13659, 13660, 13672, 558, 576, 9731, 7095, 2]
+// Dependencies: [19, 17, 4902, 7075, 1084, 21, 13411, 9057, 1264, 6832, 13628, 1272, 6926, 13630, 13659, 13234, 1125, 13668, 9701, 13673, 13674, 13686, 558, 576, 9733, 7097, 2]
 
-// Module 13615 (CreateGuildModal)
+// Module 13629 (CreateGuildModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
-import Navigator2 from "Navigator" /* 7095 */;
-import useIsWindowSmall from "useIsWindowSmall" /* 9731 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13614 */;
-import components_JoinServerDefault from "components/JoinServer" /* 13659 */;
+import intl2 from "intl" /* 1125 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
+import Navigator2 from "Navigator" /* 7097 */;
+import useIsWindowSmall from "useIsWindowSmall" /* 9733 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13628 */;
+import components_JoinServerDefault from "components/JoinServer" /* 13673 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7073 */;
-import Constants from "Constants" /* 1087 */;
+import GuildChannelStore from "GuildChannelStore" /* 4902 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7075 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ function getScreens(arg0, initialRoute, arg2) {
     }
   };
   impressionProperties[constants.JOIN_SERVER] = obj7;
-  impressionProperties[tmp.ACCEPT_INVITE] = { impressionName: tmp2(1275).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 };
+  impressionProperties[tmp.ACCEPT_INVITE] = { impressionName: tmp2(1272).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 };
   const obj9 = {
     impressionName: "Array",
     impressionProperties,
@@ -169,7 +169,7 @@ function getScreens(arg0, initialRoute, arg2) {
     }
   };
   impressionProperties[tmp.JOIN_STUDENT_HUB] = obj9;
-  ({ impressionName: tmp2(1275).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 });
+  ({ impressionName: tmp2(1272).ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, headerLeft, render: render2 });
   return impressionProperties;
 }
 const Keyboard = react_native.Keyboard;
@@ -230,7 +230,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuil
       }
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const stringResult = intl.string(intl2.t["13/7kX"]);
         cResult[7] = stringResult;
         tmp14 = stringResult;

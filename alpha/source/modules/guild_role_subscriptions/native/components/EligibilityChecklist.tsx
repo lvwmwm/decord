@@ -1,18 +1,18 @@
-// Module ID: 19225
-// Function ID: 19226
+// Module ID: 19263
+// Function ID: 19264
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 4971, 558, 576, 7267, 587, 7018, 5234, 5244, 16574, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 7269, 587, 7020, 5235, 5245, 16616, 2]
 
-// Module 19225 (EligibilityChecklist)
+// Module 19263 (EligibilityChecklist)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import FormSeparatorDefault from "FormSeparator" /* 16574 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import FormSeparatorDefault from "FormSeparator" /* 16616 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -167,11 +167,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Eligibi
   }
   if (item.checked) {
     const obj12 = { style: tmp4.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleCheckIcon = tmp(7267).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7269).CircleCheckIcon;
     tmp6Result = tmp6(CircleCheckIcon, obj12);
   } else {
     const obj23 = { style: tmp4.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(7018).CircleXIcon;
+    const CircleXIcon = tmp(7020).CircleXIcon;
     tmp6Result = tmp6(CircleXIcon, obj23);
   }
   cResult[0] = item.checked;
@@ -194,14 +194,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Eligibi
   const tmp3 = metroRequire;
   if (item.checked) {
     const obj2 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleCheckIcon = tmp6(7267).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(7269).CircleCheckIcon;
     tmp5Result = tmp5(CircleCheckIcon, obj2);
     tmp10 = tmp6;
     tmp12 = importDefault;
     tmp13 = tmp5;
   } else {
     const obj3 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp6(7018).CircleXIcon;
+    const CircleXIcon = tmp6(7020).CircleXIcon;
     tmp5Result = tmp5(CircleXIcon, obj3);
     tmp10 = tmp6;
     tmp12 = importDefault;
@@ -214,12 +214,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Eligibi
   items1[1] = tmp15;
   items2 = [, , ];
   const obj5 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
-  items2[0] = tmp13(tmp10(5234).Text, obj5);
+  items2[0] = tmp13(tmp10(5235).Text, obj5);
   const obj6 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
-  items2[1] = tmp13(tmp10(5234).Text, obj6);
+  items2[1] = tmp13(tmp10(5235).Text, obj6);
   let tmp13Result = null != item.actionHandler && null != item.actionLabel;
   if (tmp13Result) {
-    const obj7 = { style: tmp.actionButtonWrapper, children: tmp13(tmp10(5244).Button, obj9) };
+    const obj7 = { style: tmp.actionButtonWrapper, children: tmp13(tmp10(5245).Button, obj9) };
     obj9 = { text: null, onPress: null, grow: true };
     ({ actionLabel: obj8.text, actionHandler: obj8.onPress } = item);
     tmp13Result = tmp13(tmp4, obj7);
@@ -233,7 +233,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Eligibi
     tmp13Result2 = tmp13(tmp4, obj17);
   } else {
     obj17.style = tmp.divider;
-    tmp13Result2 = tmp13(tmp12(16574), obj17);
+    tmp13Result2 = tmp13(tmp12(16616), obj17);
   }
   children[1] = tmp13Result2;
   return hasOwnProperty(tmp3, { children });

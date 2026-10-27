@@ -1,20 +1,20 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12179
+// Function ID: 12180
 // Name: useConjureProjectSettingsForm
-// Dependencies: [32, 19, 17, 4877, 1087, 21, 4971, 587, 558, 576, 504, 6774, 5210, 1128, 3830, 5234, 7248, 8934, 7145, 6987, 6900, 7298, 12152, 12161, 6903, 12166, 2]
+// Dependencies: [32, 19, 17, 4878, 1084, 21, 4972, 587, 558, 576, 504, 6775, 5211, 1125, 3831, 5235, 7250, 8934, 7147, 6989, 6902, 7300, 12180, 12167, 6905, 12186, 2]
 
-// Module 12151 (useConjureProjectSettingsForm)
+// Module 12179 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
+import Constants from "Constants" /* 1084 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5211 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6775 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore_mod from "GuildRoleStore" /* 4877 */;
+import GuildRoleStore_mod from "GuildRoleStore" /* 4878 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148915 */ });
+          tmp = closure_5(() => { /* body not rendered: F149260 */ });
           return;
         }
       }
@@ -179,7 +179,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148915 */ });
+          tmp = closure_5(() => { /* body not rendered: F149260 */ });
           return;
         }
       }
@@ -190,7 +190,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         constructor(arg0, arg1) {
           closure_0 = guildId;
           closure_1 = arg1;
-          tmp = closure_5(() => { /* body not rendered: F148915 */ });
+          tmp = closure_5(() => { /* body not rendered: F149260 */ });
           return;
         }
       }
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -223,7 +223,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -234,7 +234,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -254,7 +254,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -264,7 +264,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -286,7 +286,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           constructor(arg0, arg1) {
             closure_0 = guildId;
             closure_1 = arg1;
-            tmp = closure_5(() => { /* body not rendered: F148915 */ });
+            tmp = closure_5(() => { /* body not rendered: F149260 */ });
             return;
           }
         }
@@ -325,7 +325,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       constructor(arg0, arg1) {
         closure_0 = guildId;
         closure_1 = arg1;
-        tmp = closure_5(() => { /* body not rendered: F148915 */ });
+        tmp = closure_5(() => { /* body not rendered: F149260 */ });
         return;
       }
     }
@@ -422,13 +422,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let intl = guildId(onSave[13]).intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj2 = { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES };
-  const g5I05P = require("module_3830").g5I05P;
+  const g5I05P = require("module_3831").g5I05P;
   let formatToPlainStringResult = formatToPlainString(g5I05P, obj2);
-  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3830").un99lK), footer: closure_8(first, obj4), header: closure_8(BottomSheetTitleHeader, obj5), children: items4 };
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3831").un99lK), footer: closure_8(first, obj4), header: closure_8(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[21]).ActionSheet;
   intl2 = guildId(onSave[13]).intl;
   obj4 = { style: tmp.roleListFooter, children: closure_8(guildId(onSave[15]).Text, { variant: "text-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
-  obj5 = { title: intl3.string(require("module_3830")["pO3+p5"]), trailing: closure_8(ActionSheetHeaderPressableText, obj6) };
+  obj5 = { title: intl3.string(require("module_3831")["pO3+p5"]), trailing: closure_8(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[16]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[13]).intl;
   obj6 = { label: intl4.string(guildId(onSave[13]).t.i4jeWR), onPress: callback };
@@ -492,7 +492,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const intl = guildId(onSave[13]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj4 = { max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES };
-            const prop = require("module_3830")["dH7+/Z"];
+            const prop = require("module_3831")["dH7+/Z"];
             formatToPlainStringResult = formatToPlainString(prop, obj4);
           }
           return closure_8(TableCheckboxRow, obj2, children.id);
@@ -1000,7 +1000,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   let supportsVisibility;
   _require = arg1;
   const tmp = closure_11();
-  const tmp4 = selectedRoleIds(12152)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12180)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: dependencyMap, handleRoleSelectionChange } = tmp4);
   let items = [arg1, handleRoleSelectionChange, selectedRoleIds];
@@ -1031,19 +1031,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   let tmp8Result = null;
   if (supportsVisibility) {
     let obj2 = { hasIcons: false, children: tmp8(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp9(6987).TableRowGroup;
+    const TableRowGroup = tmp9(6989).TableRowGroup;
     obj3 = {
-      label: intl.string(selectedRoleIds(3830).ujIxRm),
-      subLabel: intl2.string(selectedRoleIds(3830).gT8zk1),
+      label: intl.string(selectedRoleIds(3831).ujIxRm),
+      subLabel: intl2.string(selectedRoleIds(3831).gT8zk1),
       checked: isPublic,
       disabled: saving,
       onPress(arg0) {
           return dependencyMap(ConjureProjectTypes.ConjureProjectFlags.PUBLIC, arg0);
         }
     };
-    TableCheckboxRow = tmp9(6900).TableCheckboxRow;
-    intl = tmp9(1128).intl;
-    intl2 = tmp9(1128).intl;
+    TableCheckboxRow = tmp9(6902).TableCheckboxRow;
+    intl = tmp9(1125).intl;
+    intl2 = tmp9(1125).intl;
     tmp8Result = tmp8(TableRowGroup, obj2);
   }
   items1[1] = tmp8Result;
@@ -1052,19 +1052,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     tmp8Result6 = null;
     if (supportsCollaboration) {
       const obj4 = { hasIcons: false, children: closure_8(TableCheckboxRow2, obj5) };
-      const TableRowGroup2 = tmp9(6987).TableRowGroup;
+      const TableRowGroup2 = tmp9(6989).TableRowGroup;
       obj5 = {
-        label: intl3.string(selectedRoleIds(3830).lVvR4E),
-        subLabel: intl4.string(selectedRoleIds(3830).SQZGoV),
+        label: intl3.string(selectedRoleIds(3831).lVvR4E),
+        subLabel: intl4.string(selectedRoleIds(3831).SQZGoV),
         checked: isGuildCollaboration,
         disabled: saving,
         onPress(arg0) {
               return dependencyMap(ConjureProjectTypes.ConjureProjectFlags.GUILD_COLLABORATION, arg0);
             }
       };
-      TableCheckboxRow2 = tmp9(6900).TableCheckboxRow;
-      intl3 = tmp9(1128).intl;
-      intl4 = tmp9(1128).intl;
+      TableCheckboxRow2 = tmp9(6902).TableCheckboxRow;
+      intl3 = tmp9(1125).intl;
+      intl4 = tmp9(1125).intl;
       tmp8Result6 = tmp8(TableRowGroup2, obj4);
     }
   }
@@ -1072,25 +1072,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   let tmp8Result7 = null;
   if (liveReload.available) {
     const obj6 = { hasIcons: false, children: closure_8(TableCheckboxRow3, obj8) };
-    const TableRowGroup3 = tmp9(6987).TableRowGroup;
-    obj8 = { label: intl5.string(selectedRoleIds(3830).eEo0ye), subLabel: null, checked: null, disabled: saving, onPress: handleLiveReloadChange };
-    TableCheckboxRow3 = tmp9(6900).TableCheckboxRow;
-    intl5 = tmp9(1128).intl;
+    const TableRowGroup3 = tmp9(6989).TableRowGroup;
+    obj8 = { label: intl5.string(selectedRoleIds(3831).eEo0ye), subLabel: null, checked: null, disabled: saving, onPress: handleLiveReloadChange };
+    TableCheckboxRow3 = tmp9(6902).TableCheckboxRow;
+    intl5 = tmp9(1125).intl;
     ({ description: obj7.subLabel, checked: obj7.checked } = liveReload);
     tmp8Result7 = tmp8(TableRowGroup3, obj6);
   }
   items1[3] = tmp8Result7;
   let tmp8Result8 = null;
   if (supportsCollaboratorRoles) {
-    const TableRowGroup4 = tmp9(6987).TableRowGroup;
-    const obj9 = { label: intl6.string(selectedRoleIds(3830)["pO3+p5"]), subLabel: intl7.string(selectedRoleIds(3830)["9MdtK9"]), arrow: true, disabled: saving || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback };
-    const TableRow = tmp9(6903).TableRow;
-    intl6 = tmp9(1128).intl;
-    intl7 = tmp9(1128).intl;
+    const TableRowGroup4 = tmp9(6989).TableRowGroup;
+    const obj9 = { label: intl6.string(selectedRoleIds(3831)["pO3+p5"]), subLabel: intl7.string(selectedRoleIds(3831)["9MdtK9"]), arrow: true, disabled: saving || !isGuildCollaboration, accessibilityHint: stringResult, onPress: callback };
+    const TableRow = tmp9(6905).TableRow;
+    intl6 = tmp9(1125).intl;
+    intl7 = tmp9(1125).intl;
     stringResult = undefined;
     if (!isGuildCollaboration) {
-      const intl8 = tmp9(1128).intl;
-      stringResult = intl8.string(tmp2(3830).nZw5r9);
+      const intl8 = tmp9(1125).intl;
+      stringResult = intl8.string(tmp2(3831).nZw5r9);
     }
     const obj10 = { hasIcons: false, children: closure_8(TableRow, obj9) };
     tmp8Result8 = tmp8(TableRowGroup4, obj10);
@@ -1106,16 +1106,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   const obj13 = { fields: closure_9(View, obj), experimentalFields: closure_9(View, obj14), canSave, saving, nameChanged, submit };
   obj14 = { style: tmp.content, children: items3 };
   const obj15 = { hasIcons: false, children: items2 };
-  const TableRowGroup5 = tmp9(6987).TableRowGroup;
-  const obj16 = { label: intl9.string(selectedRoleIds(3830)["4liZ45"]), subLabel: intl10.string(selectedRoleIds(3830).I5cl7p), checked: smartContext.checked, disabled: saving, onPress: handleSmartContextChange };
-  const TableCheckboxRow4 = tmp9(6900).TableCheckboxRow;
-  intl9 = tmp9(1128).intl;
-  intl10 = tmp9(1128).intl;
+  const TableRowGroup5 = tmp9(6989).TableRowGroup;
+  const obj16 = { label: intl9.string(selectedRoleIds(3831)["4liZ45"]), subLabel: intl10.string(selectedRoleIds(3831).I5cl7p), checked: smartContext.checked, disabled: saving, onPress: handleSmartContextChange };
+  const TableCheckboxRow4 = tmp9(6902).TableCheckboxRow;
+  intl9 = tmp9(1125).intl;
+  intl10 = tmp9(1125).intl;
   items2 = [tmp8(TableCheckboxRow4, obj16), ];
-  const obj17 = { label: intl11.string(selectedRoleIds(3830).mpjaVm), subLabel: intl12.string(selectedRoleIds(3830)["2PxChh"]), checked: hostApproval.checked, disabled: saving, onPress: handleRequireHostApprovalChange };
-  const TableCheckboxRow5 = tmp9(6900).TableCheckboxRow;
-  intl11 = tmp9(1128).intl;
-  intl12 = tmp9(1128).intl;
+  const obj17 = { label: intl11.string(selectedRoleIds(3831).mpjaVm), subLabel: intl12.string(selectedRoleIds(3831)["2PxChh"]), checked: hostApproval.checked, disabled: saving, onPress: handleRequireHostApprovalChange };
+  const TableCheckboxRow5 = tmp9(6902).TableCheckboxRow;
+  intl11 = tmp9(1125).intl;
+  intl12 = tmp9(1125).intl;
   items2[1] = closure_8(TableCheckboxRow5, obj17);
   items3 = [tmp6(TableRowGroup5, obj15), , ];
   const obj18 = { projectId };

@@ -1,27 +1,27 @@
 // Module ID: 894
 // Function ID: 895
 // Name: polyfillPromise
-// Dependencies: [874, 693, 895, 897, 898, 899, 692]
+// Dependencies: [874, 693, 895, 176, 178, 896, 692]
 // Exports: checkPromiseAndWarn, polyfillPromise, requireRejectionTracking
 
 // Module 894 (polyfillPromise)
+import _mod176 from "module_176" /* 176 */;
 import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 692 */;
 import _mod693 from "module_693" /* 693 */;
 import ReactNativeLibraries from "ReactNativeLibraries" /* 874 */;
 import _mod895 from "module_895" /* 895 */;
-import _mod897 from "module_897" /* 897 */;
 
 const require = globalThis.__r;
 
 function getPromisePolyfill() {
-  return require("module_898");
+  return require("module_178");
 }
 
 export const polyfillPromise = function polyfillPromise() {
   if (ReactNativeLibraries.ReactNativeLibraries.Utilities) {
-    let closure_0 = tmp(898);
+    let closure_0 = tmp(178);
     _mod895;
-    _mod897;
+    _mod176;
     const Utilities = tmp(874).ReactNativeLibraries.Utilities;
     Utilities.polyfillGlobal("Promise", () => closure_0);
   } else {
@@ -36,7 +36,7 @@ export const requireRejectionTracking = function requireRejectionTracking() {
 export const checkPromiseAndWarn = function checkPromiseAndWarn() {
   try {
     const _Promise = ReactNativeLibraries.ReactNativeLibraries.Promise;
-    const tmp5 = require("module_898");
+    const tmp5 = require("module_178");
     const tmp7 = getPromisePolyfill();
     if (_Promise !== tmp5) {
       const debug = tmp2(693).debug;

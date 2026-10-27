@@ -1,40 +1,40 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12778
+// Function ID: 12779
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1406, 502, 4883, 4877, 4845, 12770, 7276, 1087, 21, 4971, 587, 558, 576, 1128, 7275, 6919, 5234, 5205, 12, 5252, 6502, 11260, 9134, 1202, 1417, 4978, 38, 7253, 7278, 504, 1267, 5711, 6830, 8668, 5210, 11264, 7299, 5244, 5265, 2]
+// Dependencies: [32, 19, 17, 1403, 502, 4884, 4878, 4846, 12779, 7278, 1084, 21, 4972, 587, 558, 576, 1125, 7277, 6921, 5235, 5206, 12, 5253, 6503, 11263, 9134, 1199, 1414, 4979, 38, 7255, 7280, 504, 1264, 5712, 6832, 8668, 5211, 11267, 7301, 5245, 5266, 2]
 
-// Module 12769 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 12778 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import shared from "shared" /* 4978 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import PlatformsDefault from "Platforms" /* 6502 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6830 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6919 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7275 */;
-import Constants2 from "Constants" /* 7276 */;
+import intl6 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 4979 */;
+import useThemeDefault from "useTheme" /* 5206 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
+import PlatformsDefault from "Platforms" /* 6503 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6921 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7277 */;
+import Constants2 from "Constants" /* 7278 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11264 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11267 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRecord from "UserRecord" /* 1406 */;
+import UserRecord from "UserRecord" /* 1403 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12770 */;
-import Constants from "Constants" /* 1087 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 4884 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 12779 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,12 +85,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Popout
         }
         tmp5 = tmp12;
       }
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const format2 = intl2.format;
       const _Math2 = Math;
       const _Number2 = Number;
       const obj2 = { description, count: Math.max(0, Number(value) - 1) };
-      const v2p7dA3 = tmp(1128).t["2p7dA3"];
+      const v2p7dA3 = tmp(1125).t["2p7dA3"];
       const format2Result = format2(v2p7dA3, obj2);
       cResult[0] = description;
       cResult[1] = value;
@@ -106,12 +106,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Popout
           }
           tmp5 = tmp8;
         }
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const format = intl.format;
         const _Math = Math;
         const _Number = Number;
         const obj3 = { description, count: Math.max(0, Number(value) + 1) };
-        const v2p7dA31 = tmp(1128).t["2p7dA3"];
+        const v2p7dA31 = tmp(1125).t["2p7dA3"];
         const formatResult = format(v2p7dA31, obj3);
         cResult[3] = description;
         cResult[4] = value;
@@ -252,7 +252,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
   _slicedToArray = groupByResult;
   const keys = Object.keys(groupByResult);
   let closure_4 = keys.length - 1;
-  let obj3 = guildId(5252);
+  let obj3 = guildId(5253);
   const roleColor = obj3.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   const mapped = keys.map(function(item, index) {
     let icon;
@@ -290,7 +290,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     }
     if (includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      tmp10 = authStore3(tmp2(11260), obj2);
+      tmp10 = authStore3(tmp2(11263), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
       tmp10 = authStore3(tmp2(9134), obj3);
@@ -306,7 +306,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     const obj5 = { style: closure_1.popoutCheckGroupName, children: items1 };
     if (null != value) {
       const obj6 = { style: closure_1.popoutCheckGroupPlatformIcon, source: makeSource(tmp9Result2.isThemeDark(closure_2) ? icon.darkPNG : icon.lightPNG), disableColor: true, size: native.Icon.Sizes.MEDIUM };
-      const Icon = tmp9(1202).Icon;
+      const Icon = tmp9(1199).Icon;
       makeSource = AvatarUtils.makeSource;
       AvatarUtils;
       icon = value.icon;
@@ -317,12 +317,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
     let tmp25 = null;
     if (null != tmp7) {
       const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
-      const Avatar = tmp9(1202).Avatar;
+      const Avatar = tmp9(1199).Avatar;
       tmp25 = authStore3(Avatar, obj7);
     }
     items1[1] = tmp25;
     let name;
-    const Text = tmp9(5234).Text;
+    const Text = tmp9(5235).Text;
     const tmp27 = authStore3;
     if (value != null) {
       name = value.name;
@@ -384,7 +384,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
   let c3 = groupByResult;
   const keys = Object.keys(groupByResult);
   let closure_4 = keys.length - 1;
-  let obj2 = guildId(5252);
+  let obj2 = guildId(5253);
   const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = {
     children: keys.map(function(item, index) {
@@ -423,7 +423,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       }
       if (includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        tmp10 = authStore3(tmp2(11260), obj2);
+        tmp10 = authStore3(tmp2(11263), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
         tmp10 = authStore3(tmp2(9134), obj3);
@@ -439,7 +439,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       const obj5 = { style: closure_1.popoutCheckGroupName, children: items1 };
       if (null != value) {
         const obj6 = { style: closure_1.popoutCheckGroupPlatformIcon, source: makeSource(tmp9Result2.isThemeDark(closure_2) ? icon.darkPNG : icon.lightPNG), disableColor: true, size: native.Icon.Sizes.MEDIUM };
-        const Icon = tmp9(1202).Icon;
+        const Icon = tmp9(1199).Icon;
         makeSource = AvatarUtils.makeSource;
         AvatarUtils;
         icon = value.icon;
@@ -450,12 +450,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutChec
       let tmp25 = null;
       if (null != tmp7) {
         const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
-        const Avatar = tmp9(1202).Avatar;
+        const Avatar = tmp9(1199).Avatar;
         tmp25 = authStore3(Avatar, obj7);
       }
       items1[1] = tmp25;
       let name;
-      const Text = tmp9(5234).Text;
+      const Text = tmp9(5235).Text;
       const tmp27 = authStore3;
       if (value != null) {
         name = value.name;

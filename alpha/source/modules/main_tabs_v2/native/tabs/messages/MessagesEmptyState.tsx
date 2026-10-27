@@ -1,23 +1,23 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17518
+// Function ID: 17519
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 4971, 558, 576, 1505, 1275, 9361, 8691, 16446, 17478, 1128, 5234, 5244, 2]
+// Dependencies: [19, 17, 21, 4972, 558, 576, 1502, 1272, 9360, 8691, 16485, 17519, 1125, 5235, 5245, 2]
 
-// Module 17477 (MessagesEmptyState)
+// Module 17518 (MessagesEmptyState)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import useNavigation from "useNavigation" /* 1505 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
+import intl4 from "intl" /* 1125 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8691 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9361 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16446 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17478 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9360 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16485 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17519 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmpt
       const _Symbol2 = Symbol;
       ({ textWrapper, title } = tmp4);
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const stringResult = intl.string(intl4.t["8JZof8"]);
         cResult[12] = stringResult;
         tmp21 = stringResult;
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmpt
       const _Symbol3 = Symbol;
       const body = tmp4.body;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
+        const intl2 = tmp(1125).intl;
         const stringResult1 = intl2.string(intl4.t["qm+H7x"]);
         cResult[15] = stringResult1;
         tmp26 = stringResult1;
@@ -156,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmpt
               const _Symbol4 = Symbol;
               const buttonWrapper = tmp4.buttonWrapper;
               if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl3 = tmp(1128).intl;
+                const intl3 = tmp(1125).intl;
                 const stringResult2 = intl3.string(intl4.t.zIJnA6);
                 cResult[26] = stringResult2;
                 tmp39 = stringResult2;
@@ -288,19 +288,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesEmpt
   items2[0] = metroRequire(React3, obj8);
   const obj9 = { style: tmp.textWrapper, children: items3 };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp2(5234).Heading;
-  intl = tmp2(1128).intl;
+  const Heading = tmp2(5235).Heading;
+  intl = tmp2(1125).intl;
   items3 = [metroRequire(Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp2(5234).Text;
-  intl2 = tmp2(1128).intl;
+  const Text = tmp2(5235).Text;
+  intl2 = tmp2(1125).intl;
   items3[1] = metroRequire(Text, obj11);
   items2[1] = metroImportDefault(React3, obj9);
   items4 = [metroImportDefault(React3, obj7), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroRequire(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback, size: "lg" };
-  Button = tmp2(5244).Button;
-  intl3 = tmp2(1128).intl;
+  Button = tmp2(5245).Button;
+  intl3 = tmp2(1125).intl;
   items4[1] = metroRequire(React3, obj12);
   return metroRequire(tmp12, obj5);
 });

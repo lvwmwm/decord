@@ -1,14 +1,14 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11570
+// Function ID: 11571
 // Name: useIsInvitedToSpeak
-// Dependencies: [502, 4874, 558, 576, 504, 5996, 2]
+// Dependencies: [502, 4875, 558, 576, 504, 5997, 2]
 
-// Module 11568 (useIsInvitedToSpeak)
+// Module 11570 (useIsInvitedToSpeak)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5996 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5997 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 12917
+// Function ID: 12918
 // Name: ShareConstants
 // Dependencies: [9067, 2]
 // Exports: isAllowedType
 
-// Module 12908 (ShareConstants)
+// Module 12917 (ShareConstants)
 import _mod9067 from "module_9067" /* 9067 */;
 import size from "module_2" /* 2 */;
 

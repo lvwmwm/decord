@@ -1,12 +1,12 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16363
+// Function ID: 16364
 // Name: pickBountyVideoRendition
-// Dependencies: [9583, 38, 2]
+// Dependencies: [9585, 38, 2]
 // Exports: pickBountyVideoRenditionWithFallback
 
-// Module 16324 (pickBountyVideoRendition)
+// Module 16363 (pickBountyVideoRendition)
 import _modDef38 from "module_38" /* 38 */;
-import BountyAspectRatio from "BountyAspectRatio" /* 9583 */;
+import BountyAspectRatio from "BountyAspectRatio" /* 9585 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -72,8 +72,8 @@ export const pickBountyVideoRenditionWithFallback = function pickBountyVideoRend
     let tmp5 = null;
     const tmp3 = require;
     if (supported.includes(BountyAspectRatio.BountyAspectRatio.PORTRAIT)) {
-      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9583).BountyAspectRatio.PORTRAIT };
-      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9583).BountyAspectRatio.PORTRAIT };
+      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9585).BountyAspectRatio.PORTRAIT };
+      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9585).BountyAspectRatio.PORTRAIT };
     }
     tmp2 = tmp5;
   } else {

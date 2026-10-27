@@ -1,39 +1,39 @@
-// Module ID: 8287
-// Function ID: 8288
+// Module ID: 8285
+// Function ID: 8286
 // Name: ThreadActionCreators
-// Dependencies: [5, 4827, 502, 4823, 4903, 8288, 4905, 8303, 1087, 4830, 1297, 584, 5908, 1128, 5711, 8304, 8305, 8308, 8309, 1388, 4834, 2]
+// Dependencies: [5, 4828, 502, 4824, 4904, 8286, 4906, 8301, 1084, 4831, 1294, 584, 5909, 1125, 5712, 8302, 8303, 8306, 8307, 8308, 1385, 4835, 2]
 
-// Module 8287 (ThreadActionCreators)
+// Module 8285 (ThreadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl11 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8288 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8304 */;
+import intl11 from "intl" /* 1125 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import ChannelRecord from "ChannelRecord" /* 4828 */;
+import ChannelConstants from "ChannelConstants" /* 4831 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
+import ArchivedThreadsStore2 from "ArchivedThreadsStore" /* 8286 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
-import ThreadSummaryStore from "ThreadSummaryStore" /* 8303 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4906 */;
+import ThreadSummaryStore from "ThreadSummaryStore" /* 8301 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ArchivedThreadsStore = ArchivedThreadsStore2;
-let _require, c0, c1, c2, dependencyMap;
+let _require, c0, c1, c2;
 
 let closure_12;
 let closure_14;
 let closure_15;
 let map1;
 let tmp;
-const ApplicationCommandActionCreators = tmp(8305);
-const f100729 = (body) => {
+const ApplicationCommandActionCreators = tmp(8303);
+const f100936 = (body) => {
   const obj = DispatcherDefault;
   const obj2 = { type: "THREAD_UPDATE", channel: closure_4(body.body) };
   obj.dispatch(obj2);
@@ -56,7 +56,7 @@ function patchThread(id, body) {
   const patch = HTTP.patch;
   obj2 = require("HTTPUtils");
   const patchResult = patch(request);
-  return patchResult.then(f100729);
+  return patchResult.then(f100936);
 }
 function dispatchThreadMemberLocalUpdate(id, isJoining) {
   const obj = DispatcherDefault;
@@ -82,7 +82,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f100729);
+    return patchResult.then(f100936);
   },
   lockThread(channel) {
     let closure_0 = channel;
@@ -445,7 +445,7 @@ let obj = {
     const patch = HTTP.patch;
     obj3 = require("HTTPUtils");
     const patchResult = patch(request);
-    return patchResult.then(f100729);
+    return patchResult.then(f100936);
   },
   joinThread(channel, arg1) {
     let closure_0 = channel;
@@ -608,9 +608,9 @@ let obj = {
     obj3 = HTTPUtils;
     return patch(request);
   },
-  pin(thread) {
-    const tmp = thread.flags | ChannelFlags.PINNED;
-    this.updateFlags(thread, tmp, thread.isArchivedThread());
+  pin(dependencyMap) {
+    const tmp = dependencyMap.flags | ChannelFlags.PINNED;
+    this.updateFlags(dependencyMap, tmp, dependencyMap.isArchivedThread());
   },
   unpin(thread) {
     this.updateFlags(thread, thread.flags & ~ChannelFlags.PINNED);
@@ -781,16 +781,16 @@ let obj = {
     }
   },
   setNotificationSettings(channel, muteSettings) {
-    let closure_0 = channel;
     let closure_1 = muteSettings;
     const self = this;
     return (async (arg0, value) => {
       let closure_0;
-      let obj4;
-      if (c2 === 2) {
-        c2 = 3;
+      let closure_1;
+      let obj7;
+      if (c5 === 2) {
+        c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
@@ -800,44 +800,82 @@ let obj = {
           return { value: "IconComponent", done: null };
         }
       } else {
+        let c3;
         try {
-          c2 = 2;
-          if (0 === c1) {
+          c5 = 2;
+          if (0 === c4) {
             if (arg0 === 1) {
-              c2 = 3;
+              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c2 = 3;
+              c5 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj8 = tmp3(c2[17]);
-              const result = obj8.trackThreadNotificationSettingsUpdated(tmp3, closure_1);
-              if (!JoinedThreadsStore.hasJoined(tmp3.id)) {
-                c1 = 1;
-                c2 = 1;
-                const obj5 = { value: self.joinThread(tmp3, "Change Notification Settings"), done: false };
-                return obj5;
+              channel = tmp4;
+              const obj11 = channel(closure_2[17]);
+              const result = obj11.trackThreadNotificationSettingsUpdated(channel, tmp);
+              if (!JoinedThreadsStore.hasJoined(channel.id)) {
+                c4 = 1;
+                c5 = 1;
+                const obj4 = { value: self.joinThread(channel, "Change Notification Settings"), done: false };
+                return obj4;
               }
             }
+          } else if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj5 = { value, done: true };
+              return obj5;
+            }
+          } else if (2 === c4) {
+            c3 = 0;
+            channel = closure_2;
+            if (429 === channel.status) {
+              const showError = tmp(closure_2[18]).showError;
+              const tmp14 = tmp(closure_2[18]);
+              const intl = channel(closure_2[13]).intl;
+              showError(intl.string(channel(closure_2[13]).t.T15lqn));
+              c5 = 3;
+              const obj6 = { value: undefined, done: true };
+              return obj6;
+            } else {
+              throw channel;
+            }
           } else if (arg0 === 1) {
-            c2 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c2 = 3;
+            c3 = 0;
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            c3 = 0;
+            c5 = 3;
             const obj = { value, done: true };
             return obj;
           }
-          const HTTP = tmp3(c2[10]).HTTP;
-          const request = { url: closure_1_12.THREAD_MEMBER_SETTINGS(closure_128_0.id), body: closure_128_1, rejectWithError: obj4.rejectWithMigratedError() };
+          c3 = 1;
+          const HTTP = channel(closure_2[10]).HTTP;
+          const request = { url: closure_1_12.THREAD_MEMBER_SETTINGS(closure_129_0.id), body: closure_129_1, rejectWithError: obj7.rejectWithMigratedError(), failImmediatelyWhenRateLimited: true };
           const patch = HTTP.patch;
-          obj4 = tmp3(c2[10]);
-          c2 = 3;
-          const obj6 = { value: patch(request), done: true };
-          return obj6;
-        } catch (tmp14) {
-          c2 = 3;
-          throw tmp14;
+          obj7 = channel(closure_2[10]);
+          c4 = 3;
+          c5 = 1;
+          const obj9 = { value: patch(request), done: false };
+          return obj9;
+        } catch (tmp30) {
+          closure_2 = tmp30;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp30;
+          } else {
+            c4 = 2;
+          }
         }
       }
     })();
@@ -880,7 +918,7 @@ let obj = {
           const obj = DispatcherDefault;
           obj.dispatch(obj2);
         } else {
-          const obj3 = { type: "LOAD_ARCHIVED_THREADS_SUCCESS", guildId: require, channelId, offset, sortOrder, tagFilter, tagSetting, threads, firstMessages: tmp2, mostRecentMessages: tmp3, members: members.map((item) => channelId(sortOrder[18])(item)), owners: mapped.filter(GlobalUtils.isNotNullish), hasMore: tmp };
+          const obj3 = { type: "LOAD_ARCHIVED_THREADS_SUCCESS", guildId: require, channelId, offset, sortOrder, tagFilter, tagSetting, threads, firstMessages: tmp2, mostRecentMessages: tmp3, members: members.map((item) => channelId(sortOrder[19])(item)), owners: mapped.filter(GlobalUtils.isNotNullish), hasMore: tmp };
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
           if (members == null) {
@@ -954,7 +992,7 @@ let obj = {
           flag = true;
         }
         obj2 = { ephemeral: flag };
-        tmp5Result = tmp5(1297);
+        tmp5Result = tmp5(1294);
         const postResult = post(request);
         const nextPromise = postResult.then(() => {
           const obj = DispatcherDefault;

@@ -1,7 +1,7 @@
 // Module ID: 8922
 // Function ID: 8923
 // Name: BackgroundBlurView
-// Dependencies: [109, 19, 17, 21, 4971, 558, 576, 8923, 2]
+// Dependencies: [109, 19, 17, 21, 4972, 558, 576, 8923, 2]
 
 // Module 8922 (BackgroundBlurView)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import BackgroundBlurFill from "BackgroundBlurFill" /* 8923 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

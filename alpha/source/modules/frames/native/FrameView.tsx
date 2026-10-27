@@ -1,19 +1,20 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18475
+// Function ID: 18476
 // Name: FrameView
-// Dependencies: [32, 19, 6773, 6776, 21, 558, 576, 6809, 504, 584, 10766, 18442, 11460, 5909, 1128, 6777, 18443, 11475, 11506, 18446, 2]
+// Dependencies: [32, 19, 6774, 6777, 21, 558, 576, 6811, 504, 584, 10769, 18476, 11463, 5910, 1125, 6778, 18477, 11478, 11782, 11508, 18480, 2]
 
-// Module 18441 (FrameView)
+// Module 18475 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl3 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import leaveFrame from "leaveFrame" /* 10766 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 18442 */;
+import intl3 from "intl" /* 1125 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import FramesConstants from "FramesConstants" /* 6777 */;
+import leaveFrame from "leaveFrame" /* 10769 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11782 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 18476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,20 +22,22 @@ const FrameLayoutModes = FramesConstants.FrameLayoutModes;
 const jsx = Fragment.jsx;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(frame) {
   let first;
-  let iframeId;
   let landscapeSafeAreasConfig;
+  let layoutMode;
   let onActivityCrash;
   let portraitSafeAreasConfig;
   let presentation;
   let tmp6;
-  let obj = frame(576);
-  const cResult = obj.c(44);
+  const tmp2 = layoutMode;
+  let obj = frame(layoutMode[6]);
+  const cResult = obj.c(48);
   const tmp = frame;
   frame = frame.frame;
-  ({ iframeId, onActivityCrash, presentation } = frame);
-  const layoutMode = presentation.layoutMode;
+  const iframeId = frame.iframeId;
+  ({ onActivityCrash, presentation } = frame);
+  layoutMode = presentation.layoutMode;
   ({ portraitSafeAreasConfig, landscapeSafeAreasConfig } = presentation);
-  let obj2 = frame(6809);
+  let obj2 = frame(layoutMode[7]);
   const data = obj2.useApplication(frame.applicationId).data;
   const orientationLock = frame.data.orientationLock;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -54,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(504);
+  const tmpResult = tmp(tmp2[8]);
   let stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (!stateFromStores) {
     let conjureProjectId;
@@ -76,16 +79,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
       }
       const layoutEffect = obj4.useLayoutEffect(tmp12, tmp13);
       if (cResult[8] !== frame.id) {
-        class E {
+        class C {
           constructor() {
             const obj = leaveFrame;
             obj.leaveFrame(frame.id);
           }
         }
         cResult[8] = frame.id;
-        cResult[9] = E;
+        cResult[9] = C;
       } else {
-        class E {
+        class C {
           constructor() {
             const obj = leaveFrame;
             obj.leaveFrame(frame.id);
@@ -93,35 +96,35 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
         }
       }
       if (cResult[10] !== frame.id) {
-        class R {
-          constructor(arg0, arg1) {
-            const obj = frames_getDefaultOrientationLockState;
-            return obj.setOrientationLockState(frame.id, arg0, arg1);
+        class C {
+          constructor() {
+            const obj = leaveFrame;
+            obj.leaveFrame(frame.id);
           }
         }
         cResult[10] = frame.id;
-        cResult[11] = R;
+        cResult[11] = tmp17;
       } else {
-        class R {
-          constructor(arg0, arg1) {
-            const obj = frames_getDefaultOrientationLockState;
-            return obj.setOrientationLockState(frame.id, arg0, arg1);
+        class C {
+          constructor() {
+            const obj = leaveFrame;
+            obj.leaveFrame(frame.id);
           }
         }
       }
       if (!first1) {
-        class R {
-          constructor(arg0, arg1) {
-            const obj = frames_getDefaultOrientationLockState;
-            return obj.setOrientationLockState(frame.id, arg0, arg1);
+        class C {
+          constructor() {
+            const obj = leaveFrame;
+            obj.leaveFrame(frame.id);
           }
         }
       }
       if (cResult[12] === data) {
-        class R {
-          constructor(arg0, arg1) {
-            const obj = frames_getDefaultOrientationLockState;
-            return obj.setOrientationLockState(frame.id, arg0, arg1);
+        class C {
+          constructor() {
+            const obj = leaveFrame;
+            obj.leaveFrame(frame.id);
           }
         }
       }
@@ -133,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
       cResult[16] = obj3;
     }
   }
-  class F {
+  class E {
     constructor() {
       const obj = DispatcherDefault;
       const obj2 = { type: "FRAME_UPDATE_LAYOUT_MODE", layoutMode, applicationId: frame.applicationId, frameId: frame.id };
@@ -145,31 +148,31 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
   cResult[3] = frame.applicationId;
   cResult[4] = frame.id;
   cResult[5] = layoutMode;
-  cResult[6] = F;
+  cResult[6] = E;
   cResult[7] = items1;
   tmp13 = items1;
-  tmp12 = F;
+  tmp12 = E;
 }) : (function FrameView(frame) {
   let first;
-  let iframeId;
   let isLandscape;
   let isResetting;
   let obj4;
-  let onActivityCrash;
   let tmp14;
   let tmp7;
   let tmpResult4;
   frame = frame.frame;
+  const iframeId = frame.iframeId;
   const presentation = frame.presentation;
   const layoutMode = presentation.layoutMode;
   let portraitSafeAreasConfig = presentation.portraitSafeAreasConfig;
-  ({ iframeId, onActivityCrash } = frame);
+  const tmp2 = layoutMode;
+  const onActivityCrash = frame.onActivityCrash;
   const landscapeSafeAreasConfig = presentation.landscapeSafeAreasConfig;
-  let obj = frame(6809);
+  let obj = frame(layoutMode[7]);
   const data = obj.useApplication(frame.applicationId).data;
   const orientationLock = frame.data.orientationLock;
   const items = [ConjureProjectStore];
-  const tmpResult = frame(504);
+  const tmpResult = frame(tmp2[8]);
   let stateFromStores = tmpResult.useStateFromStores(items, () => ConjureProjectStore.isConjureProjectApplication(frame.applicationId));
   if (!stateFromStores) {
     let conjureProjectId;
@@ -199,10 +202,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
   if (!first) {
     first = null == data;
   }
-  const tmpResult3 = frame(11460);
+  const tmpResult3 = frame(tmp2[12]);
   const baseActivityView = tmpResult3.useBaseActivityView({ orientationLockState: orientationLock, showLoadingIndicator: first, setShowLoadingStateForLockingOrientation: tmp7, application: data, setOrientationLockState: callback1 });
   ({ isResetting, isLandscape } = baseActivityView);
-  const BaseActivityView = tmp(11460).BaseActivityView;
+  const BaseActivityView = tmp(tmp2[12]).BaseActivityView;
   ({
     onActivityCrash,
     applicationId: frame.applicationId,
@@ -225,18 +228,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
     },
     activityUrl: frame.data.url,
     contextSource: obj4,
-    queryParams: tmp14(frame, frame(11475).ActivityPlatform.MOBILE),
+    queryParams: tmp14(frame, frame(tmp2[17]).ActivityPlatform.MOBILE),
     onLoadError: callback,
+    onLoadEnd() {
+      const obj = FramePoolManagerDefault;
+      return obj.setWebViewLoaded(frame.id, iframeId);
+    },
     allowPopups: tmpResult4.allowPopups(data),
     referrerPolicy: "origin",
     isPipOrGridMode: layoutMode === FrameLayoutModes.PIP,
     safeAreasConfig: portraitSafeAreasConfig,
     ignoreSilentHardwareSwitch: !stateFromStores
   });
-  obj4 = { type: frame(6777).EmbeddedContextSourceType.FRAME, frameId: frame.id };
-  layoutMode(18446);
-  tmp14 = layoutMode(18443);
-  tmpResult4 = frame(11506);
+  obj4 = { type: frame(tmp2[15]).EmbeddedContextSourceType.FRAME, frameId: frame.id };
+  iframeId(tmp2[20]);
+  tmp14 = iframeId(tmp2[16]);
+  tmpResult4 = frame(tmp2[19]);
   if (isLandscape) {
     portraitSafeAreasConfig = landscapeSafeAreasConfig;
   }

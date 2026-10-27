@@ -1,33 +1,28 @@
-// Module ID: 11489
-// Function ID: 11490
+// Module ID: 11490
+// Function ID: 11491
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5625, 1087, 2026, 21, 4971, 3, 1384, 558, 576, 10775, 11490, 7907, 11491, 11492, 1383, 11475, 11493, 11494, 11495, 11486, 1267, 573, 5908, 1128, 11496, 5623, 1297, 11497, 11498, 1386, 10759, 6660, 2]
+// Dependencies: [5, 32, 19, 5626, 1084, 21, 4972, 3, 558, 576, 10778, 11491, 7908, 11492, 11493, 1380, 11478, 11494, 11495, 11496, 11497, 1264, 573, 5909, 1125, 11503, 10762, 6661, 2]
 
-// Module 11489 (BaseEmbeddedAppWebView)
+// Module 11490 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import Constants2 from "Constants" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import usePreviousDefault from "usePrevious" /* 6660 */;
-import WebView2 from "WebView" /* 7907 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10775 */;
-import isAllowedFrameNavigation from "isAllowedFrameNavigation" /* 11498 */;
+import Constants from "Constants" /* 1084 */;
+import intl4 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
+import usePreviousDefault from "usePrevious" /* 6661 */;
+import WebView2 from "WebView" /* 7908 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5625 */;
-import createStyles from "createStyles" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5626 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c3, c4, c5, c8, c9, constants, content_security_policy;
+let c1, c2, c3, c8, c9, constants;
 
 function getSafeArea(disable, arg1) {
   let tmp = arg1;
@@ -51,14 +46,11 @@ function getSafeArea(disable, arg1) {
   }
   return tmp;
 }
-const Linking = react_native.Linking;
 const AnalyticEvents = Constants.AnalyticEvents;
-let closure_10 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
 const jsx = Fragment.jsx;
-let closure_12 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
+let closure_10 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
 let tmp2 = new LoggerDefault("BaseEmbeddedAppWebView");
-let closure_13 = tmp2;
-let closure_14 = PlatformUtils.isIOS();
+let closure_11 = tmp2;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebView(onLoadError) {
   let policy;
@@ -97,7 +89,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
                   return tmp8;
                 }
                 const merged = Object.assign(onLoadError);
-                const tmp14 = <closure_16 framePolicy={tmp7} />;
+                const tmp14 = <closure_13 framePolicy={tmp7} />;
                 cResult[9] = onLoadError;
                 cResult[10] = tmp7;
                 cResult[11] = tmp14;
@@ -113,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
         }
         if (cResult[4] !== onLoadError) {
           const merged1 = Object.assign(onLoadError);
-          const tmp22 = <closure_16 framePolicy={null} />;
+          const tmp22 = <closure_13 framePolicy={null} />;
           cResult[4] = onLoadError;
           cResult[5] = tmp22;
           tmp15 = tmp22;
@@ -157,1363 +149,923 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbedded
           if ("ready" === status) {
             ({ policy, routerOrigin } = tmp);
             const merged = Object.assign(onLoadError);
-            return <closure_16 framePolicy={{ policy, routerOrigin }} />;
+            return <closure_13 framePolicy={{ policy, routerOrigin }} />;
           }
         }
       }
       const merged1 = Object.assign(onLoadError);
-      return <closure_16 framePolicy={null} />;
+      return <closure_13 framePolicy={null} />;
     }
   }
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebViewContent(framePolicy) {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEmbeddedAppWebViewContent(onInvalidUrl) {
+  let activityUrl;
   let allowPopups;
   let applicationId;
+  let combined;
   let deepLinkQueryParams;
+  let framePolicy;
+  let hadInvalidUrlError;
+  let iframeId;
   let ignoreSilentHardwareSwitch;
+  let isPipOrGridMode;
   let onActivityCrash;
+  let onLoadEnd;
   let queryParams;
   let referrerPolicy;
   let safeAreasConfig;
+  let shellBridgeSecret;
   let tmp10;
-  let tmp11;
-  let tmp14;
-  let tmp15;
-  let tmp22;
-  let tmp26;
+  let tmp17;
+  let tmp21;
+  let tmp8;
   let tmp9;
-  let tmp = framePolicy;
-  let tmp2 = applicationId;
-  let obj = framePolicy(applicationId[12]);
-  const cResult = obj.c(117);
-  framePolicy = framePolicy.framePolicy;
-  let iframeId = framePolicy.iframeId;
-  let shellBridgeSecret = framePolicy.shellBridgeSecret;
-  ({ deepLinkQueryParams, applicationId } = framePolicy);
-  ({ queryParams, onActivityCrash } = framePolicy);
-  const onLoadError = framePolicy.onLoadError;
-  const onInvalidUrl = framePolicy.onInvalidUrl;
-  ({ allowPopups, referrerPolicy } = framePolicy);
-  const isPipOrGridMode = framePolicy.isPipOrGridMode;
-  ({ ignoreSilentHardwareSwitch, safeAreasConfig } = framePolicy);
-  const channelId = framePolicy.channelId;
-  const guildId = framePolicy.guildId;
-  const activitySessionId = framePolicy.activitySessionId;
-  const activityUrl = framePolicy.activityUrl;
+  let tmp = applicationId;
+  let tmp2 = isPipOrGridMode;
+  let obj = applicationId(isPipOrGridMode[9]);
+  const cResult = obj.c(99);
+  ({ framePolicy, iframeId, shellBridgeSecret, deepLinkQueryParams, activityUrl, applicationId } = onInvalidUrl);
+  ({ queryParams, onActivityCrash } = onInvalidUrl);
+  onInvalidUrl = onInvalidUrl.onInvalidUrl;
+  ({ onLoadEnd, allowPopups, referrerPolicy, isPipOrGridMode } = onInvalidUrl);
+  ({ ignoreSilentHardwareSwitch, safeAreasConfig } = onInvalidUrl);
+  const channelId = onInvalidUrl.channelId;
+  const guildId = onInvalidUrl.guildId;
+  const activitySessionId = onInvalidUrl.activitySessionId;
   if (undefined === deepLinkQueryParams) {
     deepLinkQueryParams = {};
   }
-  let tmp4 = activitySessionId();
-  let obj2 = onInvalidUrl;
-  const context = onInvalidUrl.useContext(tmp(tmp2[14]).WebViewContext);
-  const tmp6 = closure_17();
+  let tmp4 = hadInvalidUrlError();
+  let obj2 = guildId;
+  const context = guildId.useContext(tmp(tmp2[11]).WebViewContext);
+  const tmp6 = combined();
   const hasInvalidUrlError = tmp6.hasInvalidUrlError;
   const setHasInvalidUrlError = tmp6.setHasInvalidUrlError;
-  const hadInvalidUrlError = tmp6.hadInvalidUrlError;
-  const tmp7 = onLoadError;
-  let tmp8 = onLoadError(onInvalidUrl.useState(null), 2);
-  [tmp9, tmp10] = tmp8;
+  hadInvalidUrlError = tmp6.hadInvalidUrlError;
+  const tmp7 = channelId(guildId.useState(null), 2);
+  [tmp8, tmp9] = tmp7;
+  const logger = tmp9;
   if (cResult[0] !== iframeId) {
-    const tmpResult = tmp(tmp2[15]);
+    const tmpResult = tmp(tmp2[12]);
     const webViewProxy = tmpResult.getWebViewProxy(iframeId);
     cResult[0] = iframeId;
     cResult[1] = webViewProxy;
-    tmp11 = webViewProxy;
+    tmp10 = webViewProxy;
   } else {
-    tmp11 = cResult[1];
+    tmp10 = cResult[1];
   }
-  closure_17 = tmp11;
-  [tmp14, tmp15] = tmp7(obj2.useState(null), 2);
-  let closure_18 = tmp15;
-  const tmp16 = iframeId;
-  tmp7(obj2.useState(null), 2);
-  const tmp17 = iframeId(tmp2[16])();
-  let closure_19 = tmp17;
-  let num3 = 1;
-  const tmpResult5 = tmp(tmp2[17]);
-  if (!setHasInvalidUrlError) {
-    num3 = tmpResult5.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
-  }
-  let obj5 = shellBridgeSecret(tmp2[18]);
-  let obj3 = { frame_id: iframeId, platform: tmp(tmp2[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
+  let closure_12 = tmp10;
+  let rect = onActivityCrash(tmp2[13])();
+  const tmpResult4 = tmp(tmp2[14]);
+  const embeddedAppShimVersion = tmpResult4.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
+  let obj5 = onInvalidUrl(tmp2[15]);
+  let obj3 = { frame_id: iframeId, platform: tmp(tmp2[16]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj5.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj3[tmp(tmp2[20]).SHIM_VERSION_PARAM] = "" + num3;
+  obj3[tmp(tmp2[17]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
   if (cResult[2] !== allowPopups) {
     let obj4 = { allowPopups };
-    const tmp23 = tmp16(tmp2[21])(obj4);
+    const tmp18 = tmp12(tmp2[18])(obj4);
     cResult[2] = allowPopups;
-    cResult[3] = tmp23;
-    tmp22 = tmp23;
+    cResult[3] = tmp18;
+    tmp17 = tmp18;
   } else {
-    tmp22 = cResult[3];
+    tmp17 = cResult[3];
   }
-  let closure_21 = tmp22;
   const uRLSearchParams = new URLSearchParams(obj3);
-  const combined = "" + activityUrl + "?" + uRLSearchParams;
+  combined = "" + activityUrl + "?" + uRLSearchParams;
   if (cResult[4] !== framePolicy) {
     let result;
     if (null != framePolicy) {
-      const tmpResult6 = tmp(tmp2[22]);
-      result = tmpResult6.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
+      const tmpResult5 = tmp(tmp2[19]);
+      result = tmpResult5.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
     }
     cResult[4] = framePolicy;
     cResult[5] = result;
-    tmp26 = result;
+    tmp21 = result;
   } else {
-    tmp26 = cResult[5];
+    tmp21 = cResult[5];
   }
-  let closure_23 = tmp26;
-  if (cResult[6] === tmp26) {
-    if (cResult[7] === iframeId) {
-      if (cResult[8] === tmp22) {
+  if (cResult[6] === activityUrl) {
+    if (cResult[7] === tmp21) {
+      if (cResult[8] === tmp17) {
         if (cResult[9] === combined) {
-          if (cResult[10] === onLoadError) {
-            if (cResult[11] === referrerPolicy) {
-              if (cResult[12] === tmp15) {
-                if (cResult[13] === shellBridgeSecret) {
-                  let tmp28;
-                  if (cResult[14] === num3) {
-                    tmp28 = cResult[15];
-                  }
-                  if (cResult[16] === tmp26) {
-                    if (cResult[17] === iframeId) {
-                      if (cResult[18] === tmp22) {
-                        if (cResult[19] === combined) {
-                          if (cResult[20] === onLoadError) {
-                            if (cResult[21] === referrerPolicy) {
-                              if (cResult[22] === shellBridgeSecret) {
-                                let tmp29;
-                                if (cResult[23] === num3) {
-                                  tmp29 = cResult[24];
+          if (cResult[10] === referrerPolicy) {
+            if (cResult[11] === shellBridgeSecret) {
+              let tmp23;
+              if (cResult[12] === embeddedAppShimVersion) {
+                tmp23 = cResult[13];
+              }
+              const tmp24 = tmp12(tmp2[20])(tmp23);
+              if (cResult[14] !== applicationId) {
+                function oe(nativeEvent) {
+                  logger.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                }
+                cResult[14] = applicationId;
+                cResult[15] = oe;
+              }
+              if (cResult[16] !== applicationId) {
+                function se(nativeEvent) {
+                  logger.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                }
+                cResult[16] = applicationId;
+                cResult[17] = se;
+              }
+              if (cResult[18] === activitySessionId) {
+                if (cResult[19] === applicationId) {
+                  if (cResult[20] === channelId) {
+                    if (cResult[21] === guildId) {
+                      let tmp29;
+                      let tmp28;
+                      const _Symbol = Symbol;
+                      if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+                        let tmp30 = activitySessionId;
+                        const items = [activitySessionId];
+                        function pe() {
+                          return activitySessionId.getUseActivityUrlOverride();
+                        }
+                        cResult[24] = items;
+                        cResult[25] = pe;
+                        tmp29 = pe;
+                        tmp28 = items;
+                      } else {
+                        tmp28 = cResult[24];
+                        tmp29 = cResult[25];
+                      }
+                      const tmpResult6 = tmp(tmp2[22]);
+                      const stateFromStores = tmpResult6.useStateFromStores(tmp28, tmp29);
+                      if (cResult[26] === combined) {
+                        if (cResult[27] === stateFromStores) {
+                          if (cResult[28] === setHasInvalidUrlError) {
+                            let tmp32;
+                            if (cResult[29] === tmp9) {
+                              tmp32 = cResult[30];
+                            }
+                            if (cResult[31] === combined) {
+                              if (cResult[32] === stateFromStores) {
+                                let tmp33;
+                                if (cResult[33] === setHasInvalidUrlError) {
+                                  tmp33 = cResult[34];
                                 }
-                                const effect = obj2.useEffect(tmp28, tmp29);
-                                if (cResult[25] !== applicationId) {
-                                  function ve(nativeEvent) {
-                                    hasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+                                const effect = obj2.useEffect(tmp32, tmp33);
+                                if (cResult[35] === hadInvalidUrlError) {
+                                  let tmp35;
+                                  let tmp36;
+                                  if (cResult[36] === hasInvalidUrlError) {
+                                    tmp35 = cResult[37];
+                                    tmp36 = cResult[38];
                                   }
-                                  cResult[25] = applicationId;
-                                  cResult[26] = ve;
-                                  let tmp31 = ve;
-                                } else {
-                                  tmp31 = cResult[26];
-                                }
-                                if (cResult[27] !== applicationId) {
-                                  function ge(nativeEvent) {
-                                    hasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
-                                  }
-                                  cResult[27] = applicationId;
-                                  cResult[28] = ge;
-                                }
-                                if (cResult[29] === activitySessionId) {
-                                  if (cResult[30] === applicationId) {
-                                    if (cResult[31] === channelId) {
-                                      if (cResult[32] === guildId) {
-                                        let tmp35;
-                                        let tmp34;
-                                        const _Symbol = Symbol;
-                                        let str = "react.memo_cache_sentinel";
-                                        if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
-                                          let items = [isPipOrGridMode];
-                                          function we() {
-                                            return isPipOrGridMode.getUseActivityUrlOverride();
+                                  const effect1 = obj2.useEffect(tmp35, tmp36);
+                                  if (cResult[39] === hadInvalidUrlError) {
+                                    if (cResult[40] === hasInvalidUrlError) {
+                                      let tmp39;
+                                      let tmp40;
+                                      if (cResult[41] === onInvalidUrl) {
+                                        tmp39 = cResult[42];
+                                        tmp40 = cResult[43];
+                                      }
+                                      const effect2 = obj2.useEffect(tmp39, tmp40);
+                                      class Se {
+                                        constructor() {
+                                          let tmp2 = null != onInvalidUrl;
+                                          const tmp = onInvalidUrl;
+                                          if (tmp2) {
+                                            tmp2 = !hadInvalidUrlError;
                                           }
-                                          cResult[35] = items;
-                                          cResult[36] = we;
-                                          tmp35 = we;
-                                          class Ae {
+                                          if (tmp2) {
+                                            tmp2 = hasInvalidUrlError;
+                                          }
+                                          if (tmp2) {
+                                            tmp();
+                                          }
+                                        }
+                                      }
+                                      let num36;
+                                      if (rect != null) {
+                                        num36 = rect.left;
+                                      }
+                                      if (num36 == null) {
+                                        num36 = 0;
+                                      }
+                                      if (cResult[44] === undefined) {
+                                        let tmp43;
+                                        let num42;
+                                        if (cResult[45] === num36) {
+                                          tmp43 = cResult[46];
+                                        }
+                                        let right;
+                                        if (safeAreasConfig != null) {
+                                          right = safeAreasConfig.right;
+                                        }
+                                        class Se {
+                                          constructor() {
+                                            let tmp2 = null != onInvalidUrl;
+                                            const tmp = onInvalidUrl;
+                                            if (tmp2) {
+                                              tmp2 = !hadInvalidUrlError;
+                                            }
+                                            if (tmp2) {
+                                              tmp2 = hasInvalidUrlError;
+                                            }
+                                            if (tmp2) {
+                                              tmp();
+                                            }
+                                          }
+                                        }
+                                        if (rect != null) {
+                                          num42 = rect.right;
+                                        }
+                                        if (num42 == null) {
+                                          num42 = 0;
+                                        }
+                                        if (cResult[47] === right) {
+                                          let tmp47;
+                                          let num48;
+                                          if (cResult[48] === num42) {
+                                            tmp47 = cResult[49];
+                                          }
+                                          let top;
+                                          if (safeAreasConfig != null) {
+                                            top = safeAreasConfig.top;
+                                          }
+                                          class Se {
                                             constructor() {
-                                              let tmp10;
-                                              try {
-                                                const _URL = URL;
-                                                const self = this;
-                                                const self2 = this;
-                                                const uRL = new URL(combined);
-                                                tmp10(uRL);
-                                              } catch (tmp7) {
-                                                const tmp8 = stateFromStores;
-                                                if (tmp8) {
-                                                  tmp10 = setHasInvalidUrlError(true);
-                                                } else {
-                                                  throw tmp7;
-                                                }
+                                              let tmp2 = null != onInvalidUrl;
+                                              const tmp = onInvalidUrl;
+                                              if (tmp2) {
+                                                tmp2 = !hadInvalidUrlError;
+                                              }
+                                              if (tmp2) {
+                                                tmp2 = hasInvalidUrlError;
+                                              }
+                                              if (tmp2) {
+                                                tmp();
                                               }
                                             }
                                           }
-                                        } else {
-                                          tmp35 = cResult[36];
-                                          tmp34 = cResult[35];
-                                        }
-                                        const tmpResult7 = tmp(tmp2[25]);
-                                        const stateFromStores = tmpResult7.useStateFromStores(tmp34, tmp35);
-                                        if (cResult[37] === combined) {
-                                          if (cResult[38] === stateFromStores) {
-                                            if (cResult[39] === setHasInvalidUrlError) {
-                                              let tmp38;
-                                              if (cResult[40] === tmp10) {
-                                                tmp38 = cResult[41];
+                                          if (rect != null) {
+                                            num48 = rect.top;
+                                          }
+                                          if (num48 == null) {
+                                            num48 = 0;
+                                          }
+                                          if (cResult[50] === top) {
+                                            let tmp51;
+                                            let num54;
+                                            if (cResult[51] === num48) {
+                                              tmp51 = cResult[52];
+                                            }
+                                            let bottom1;
+                                            if (safeAreasConfig != null) {
+                                              bottom1 = safeAreasConfig.bottom;
+                                            }
+                                            class Se {
+                                              constructor() {
+                                                let tmp2 = null != onInvalidUrl;
+                                                const tmp = onInvalidUrl;
+                                                if (tmp2) {
+                                                  tmp2 = !hadInvalidUrlError;
+                                                }
+                                                if (tmp2) {
+                                                  tmp2 = hasInvalidUrlError;
+                                                }
+                                                if (tmp2) {
+                                                  tmp();
+                                                }
                                               }
-                                              if (cResult[42] === combined) {
-                                                if (cResult[43] === stateFromStores) {
-                                                  let tmp39;
-                                                  if (cResult[44] === setHasInvalidUrlError) {
-                                                    tmp39 = cResult[45];
-                                                  }
-                                                  const effect1 = obj2.useEffect(tmp38, tmp39);
-                                                  if (cResult[46] === hadInvalidUrlError) {
-                                                    let tmp41;
-                                                    let tmp42;
-                                                    if (cResult[47] === hasInvalidUrlError) {
-                                                      tmp41 = cResult[48];
-                                                      tmp42 = cResult[49];
+                                            }
+                                            if (rect != null) {
+                                              num54 = rect.bottom;
+                                            }
+                                            if (num54 == null) {
+                                              num54 = 0;
+                                            }
+                                            if (cResult[53] === bottom1) {
+                                              let tmp55;
+                                              if (cResult[54] === num54) {
+                                                tmp55 = cResult[55];
+                                              }
+                                              if (cResult[56] === tmp43) {
+                                                if (cResult[57] === tmp47) {
+                                                  if (cResult[58] === tmp51) {
+                                                    let tmp58;
+                                                    if (cResult[59] === tmp55) {
+                                                      tmp58 = cResult[60];
                                                     }
-                                                    const effect2 = obj2.useEffect(tmp41, tmp42);
-                                                    if (cResult[50] === hadInvalidUrlError) {
-                                                      if (cResult[51] === hasInvalidUrlError) {
-                                                        let tmp44;
-                                                        let tmp45;
-                                                        let androidWebViewShellConfig;
-                                                        if (cResult[52] === onInvalidUrl) {
-                                                          tmp44 = cResult[53];
-                                                          tmp45 = cResult[54];
-                                                        }
-                                                        const effect3 = obj2.useEffect(tmp44, tmp45);
-                                                        if (cResult[55] === tmp9) {
-                                                          let tmp48;
-                                                          let combined1;
-                                                          if (cResult[56] === tmp14) {
-                                                            tmp48 = cResult[57];
-                                                          }
-                                                          const tmp50 = cResult[58];
-                                                          class Pe {
-                                                            constructor() {
-                                                              let intl;
-                                                              let intl2;
-                                                              let intl3;
-                                                              const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                              if (tmp) {
-                                                                const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                const show = AlertActionCreatorsDefault.show;
-                                                                AlertActionCreatorsDefault;
-                                                                intl = intl4.intl;
-                                                                intl2 = intl4.intl;
-                                                                intl3 = intl4.intl;
-                                                                show(obj);
+                                                    if (cResult[61] === applicationId) {
+                                                      if (cResult[62] === tmp58) {
+                                                        if (cResult[63] === framePolicy) {
+                                                          if (cResult[64] === tmp8) {
+                                                            let tmp59;
+                                                            if (cResult[65] === tmp24.url) {
+                                                              tmp59 = cResult[66];
+                                                            }
+                                                            const tmp61 = null != onActivityCrash(tmp2[25])(tmp59);
+                                                            class Se {
+                                                              constructor() {
+                                                                let tmp2 = null != onInvalidUrl;
+                                                                const tmp = onInvalidUrl;
+                                                                if (tmp2) {
+                                                                  tmp2 = !hadInvalidUrlError;
+                                                                }
+                                                                if (tmp2) {
+                                                                  tmp2 = hasInvalidUrlError;
+                                                                }
+                                                                if (tmp2) {
+                                                                  tmp();
+                                                                }
                                                               }
                                                             }
-                                                          }
-                                                          if (tmp50 === undefined) {
-                                                            if (cResult[59] === tmp9) {
-                                                              if (cResult[60] === tmp14) {
-                                                                combined1 = cResult[61];
-                                                              }
-                                                              let closure_26 = tmp56;
-                                                              class Pe {
-                                                                constructor() {
-                                                                  let intl;
-                                                                  let intl2;
-                                                                  let intl3;
-                                                                  const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                    const show = AlertActionCreatorsDefault.show;
-                                                                    AlertActionCreatorsDefault;
-                                                                    intl = intl4.intl;
-                                                                    intl2 = intl4.intl;
-                                                                    intl3 = intl4.intl;
-                                                                    show(obj);
+                                                            const ref = obj2.useRef(null);
+                                                            let origin;
+                                                            if (tmp8 != null) {
+                                                              origin = tmp8.origin;
+                                                            }
+                                                            if (cResult[67] === origin) {
+                                                              if (cResult[68] === rect) {
+                                                                if (cResult[69] === isPipOrGridMode) {
+                                                                  if (safeAreasConfig != null) {
+                                                                    let bottom = safeAreasConfig.bottom;
                                                                   }
-                                                                }
-                                                              }
-                                                              const tmp7Result3 = tmp7(obj2.useState(false), 2);
-                                                              let closure_27 = tmp7Result3[1];
-                                                              const _Symbol2 = Symbol;
-                                                              const first = tmp7Result3[0];
-                                                              class Ae {
-                                                                constructor() {
-                                                                  let tmp10;
-                                                                  try {
-                                                                    const _URL = URL;
-                                                                    const self = this;
-                                                                    const self2 = this;
-                                                                    const uRL = new URL(combined);
-                                                                    tmp10(uRL);
-                                                                  } catch (tmp7) {
-                                                                    const tmp8 = stateFromStores;
-                                                                    if (tmp8) {
-                                                                      tmp10 = setHasInvalidUrlError(true);
-                                                                    } else {
-                                                                      throw tmp7;
+                                                                  class Se {
+                                                                    constructor() {
+                                                                      let tmp2 = null != onInvalidUrl;
+                                                                      const tmp = onInvalidUrl;
+                                                                      if (tmp2) {
+                                                                        tmp2 = !hadInvalidUrlError;
+                                                                      }
+                                                                      if (tmp2) {
+                                                                        tmp2 = hasInvalidUrlError;
+                                                                      }
+                                                                      if (tmp2) {
+                                                                        tmp();
+                                                                      }
                                                                     }
                                                                   }
                                                                 }
                                                               }
-                                                              const tmp7Result4 = tmp7(obj2.useState(tmp60), 2);
-                                                              const first1 = tmp7Result4[0];
-                                                              let closure_29 = tmp7Result4[1];
-                                                              if (cResult[63] === applicationId) {
-                                                                let tmp63;
-                                                                let tmp64;
-                                                                if (cResult[64] === (setHasInvalidUrlError && null == framePolicy)) {
-                                                                  tmp63 = cResult[65];
-                                                                  tmp64 = cResult[66];
-                                                                }
-                                                                const effect4 = obj2.useEffect(tmp63, tmp64);
-                                                                if (cResult[67] === first1) {
-                                                                  if (cResult[68] === framePolicy) {
-                                                                    let bottom2;
-                                                                    let closure_30 = tmp68;
-                                                                    class Pe {
-                                                                      constructor() {
-                                                                        let intl;
-                                                                        let intl2;
-                                                                        let intl3;
-                                                                        const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                                        if (tmp) {
-                                                                          const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                          const show = AlertActionCreatorsDefault.show;
-                                                                          AlertActionCreatorsDefault;
-                                                                          intl = intl4.intl;
-                                                                          intl2 = intl4.intl;
-                                                                          intl3 = intl4.intl;
-                                                                          show(obj);
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    let closure_31 = tmp69;
-                                                                    let origin;
-                                                                    if (tmp9 != null) {
-                                                                      origin = tmp9.origin;
-                                                                    }
-                                                                    if (cResult[71] === origin) {
-                                                                      if (cResult[72] === tmp17) {
-                                                                        if (cResult[73] === isPipOrGridMode) {
-                                                                          if (safeAreasConfig != null) {
-                                                                            let bottom = safeAreasConfig.bottom;
-                                                                          }
-                                                                          class Pe {
-                                                                            constructor() {
-                                                                              let intl;
-                                                                              let intl2;
-                                                                              let intl3;
-                                                                              const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                                              if (tmp) {
-                                                                                const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                                const show = AlertActionCreatorsDefault.show;
-                                                                                AlertActionCreatorsDefault;
-                                                                                intl = intl4.intl;
-                                                                                intl2 = intl4.intl;
-                                                                                intl3 = intl4.intl;
-                                                                                show(obj);
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    class Ae {
-                                                                      constructor() {
-                                                                        let tmp10;
-                                                                        try {
-                                                                          const _URL = URL;
-                                                                          const self = this;
-                                                                          const self2 = this;
-                                                                          const uRL = new URL(combined);
-                                                                          tmp10(uRL);
-                                                                        } catch (tmp7) {
-                                                                          const tmp8 = stateFromStores;
-                                                                          if (tmp8) {
-                                                                            tmp10 = setHasInvalidUrlError(true);
-                                                                          } else {
-                                                                            throw tmp7;
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    cResult[71] = origin;
-                                                                    cResult[72] = tmp17;
-                                                                    cResult[73] = isPipOrGridMode;
-                                                                    class Je {
-                                                                      constructor() {
-                                                                        tmp = closure_26;
-                                                                        if (tmp) {
-                                                                          closure_0 = ["'self'"];
-                                                                          parseCsp = function parseCsp(arg0, str) {
-                                                                            const match = str.match(arg0);
-                                                                            if (null !== match) {
-                                                                              if (match.length >= 2) {
-                                                                                str = match[1];
-                                                                                const parts = str.split(" ");
-                                                                                const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                              }
-                                                                              return [];
-                                                                            }
-                                                                          };
-                                                                          closure_0 = undefined;
-                                                                          tmp2 = onActivityCrash;
-                                                                          closure_0 = onActivityCrash(function*(arg0, value) {
-                                                                            if (c5 === 2) {
-                                                                              c5 = 3;
-                                                                              throw new TypeError("Generator functions may not be called on executing generators");
-                                                                            } else if (tmp5 === 3) {
-                                                                              if (arg0 === 1) {
-                                                                                throw value;
-                                                                              } else if (arg0 === 2) {
-                                                                                const obj2 = { value, done: true };
-                                                                                return obj2;
-                                                                              } else {
-                                                                                return { value: "IconComponent", done: null };
-                                                                              }
-                                                                            } else {
-                                                                              try {
-                                                                                let items;
-                                                                                c5 = 2;
-                                                                                if (0 === c4) {
-                                                                                  if (arg0 === 1) {
-                                                                                    c5 = 3;
-                                                                                    throw value;
-                                                                                  } else if (arg0 === 2) {
-                                                                                    c5 = 3;
-                                                                                    const obj3 = { value, done: true };
-                                                                                    return obj3;
-                                                                                  } else {
-                                                                                    let closure_3 = tmp2;
-                                                                                    let closure_2 = tmp;
-                                                                                    closure_0 = undefined;
-                                                                                    content_security_policy = undefined;
-                                                                                    items = undefined;
-                                                                                    const obj6 = closure_0(applicationId[29]);
-                                                                                    const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
-                                                                                    const tmp29 = closure_0;
-                                                                                    closure_0 = nonTestModeUrlForApplication;
-                                                                                    const tmp30 = applicationId;
-                                                                                    const tmp31 = closure_2_3;
-                                                                                    if (nonTestModeUrlForApplication == null) {
-                                                                                      const _HermesInternal = HermesInternal;
-                                                                                      let str = ".discordsays.com";
-                                                                                      closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                                    }
-                                                                                    const HTTP = tmp29(tmp30[30]).HTTP;
-                                                                                    const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                                    const _HermesInternal2 = HermesInternal;
-                                                                                    const get = HTTP.get;
-                                                                                    c4 = 1;
-                                                                                    c5 = 1;
-                                                                                    const obj5 = { value: get(obj4), done: false };
-                                                                                    return obj5;
-                                                                                  }
-                                                                                } else if (arg0 === 1) {
-                                                                                  c5 = 3;
-                                                                                  throw value;
-                                                                                } else if (arg0 === 2) {
-                                                                                  c5 = 3;
-                                                                                  const obj = { value, done: true };
-                                                                                  return obj;
-                                                                                } else {
-                                                                                  content_security_policy = value.headers["content-security-policy"];
-                                                                                  items = ["about:blank", "file://*", closure_0];
-                                                                                  let closure_1 = 3;
-                                                                                  closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                                  closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                                  closure_2_29(items.map((item) => {
-                                                                                    const str = closure_1_1(closure_1_3[31])(item);
-                                                                                    return "^" + str.replace(/\\\*/g, ".*");
-                                                                                  }));
-                                                                                  closure_2_27(true);
-                                                                                  c5 = 3;
-                                                                                  return { value: "IconComponent", done: null };
-                                                                                }
-                                                                              } catch (tmp10) {
-                                                                                c5 = 3;
-                                                                                throw tmp10;
-                                                                              }
-                                                                            }
-                                                                          });
-                                                                          tmp3 = (function fetchAndParseCSP() {
-                                                                            return closure_0(...arguments);
-                                                                          })();
-                                                                        }
-                                                                        return;
-                                                                      }
-                                                                    }
-                                                                    if (safeAreasConfig != null) {
-                                                                      bottom2 = safeAreasConfig.bottom;
-                                                                    }
-                                                                    cResult[74] = bottom2;
-                                                                    let left;
-                                                                    if (safeAreasConfig != null) {
-                                                                      left = safeAreasConfig.left;
-                                                                    }
-                                                                    cResult[75] = left;
+                                                            }
+                                                            cResult[67] = origin;
+                                                            cResult[68] = rect;
+                                                            cResult[69] = isPipOrGridMode;
+                                                            let bottom2;
+                                                            if (safeAreasConfig != null) {
+                                                              bottom2 = safeAreasConfig.bottom;
+                                                            }
+                                                            cResult[70] = bottom2;
+                                                            let left;
+                                                            if (safeAreasConfig != null) {
+                                                              left = safeAreasConfig.left;
+                                                            }
+                                                            cResult[71] = left;
+                                                            let right1;
+                                                            if (safeAreasConfig != null) {
+                                                              right1 = safeAreasConfig.right;
+                                                            }
+                                                            cResult[72] = right1;
+                                                            let top1;
+                                                            if (safeAreasConfig != null) {
+                                                              top1 = safeAreasConfig.top;
+                                                            }
+                                                            function xe() {
+                                                              function tryInjectJavaScript() {
+                                                                return closure_0(...arguments);
+                                                              }
+                                                              const tmp = closure_16;
+                                                              if (tmp) {
+                                                                const tmp3 = null;
+                                                                if (null != closure_12) {
+                                                                  const tmp4 = safeAreasConfig;
+                                                                  let closure_0 = safeAreasConfig(function*(arg0, value) {
+                                                                    let bottom;
+                                                                    let obj5;
                                                                     let right;
-                                                                    if (safeAreasConfig != null) {
-                                                                      right = safeAreasConfig.right;
-                                                                    }
-                                                                    cResult[76] = right;
                                                                     let top;
-                                                                    if (safeAreasConfig != null) {
-                                                                      top = safeAreasConfig.top;
-                                                                    }
-                                                                    function qe() {
-                                                                      function tryInjectJavaScript() {
-                                                                        return closure_0(...arguments);
-                                                                      }
-                                                                      const tmp = closure_30;
-                                                                      if (tmp) {
-                                                                        const tmp3 = null;
-                                                                        if (null != closure_17) {
-                                                                          const tmp4 = onActivityCrash;
-                                                                          let closure_0 = onActivityCrash(function*(arg0, value) {
-                                                                            let bottom;
-                                                                            let obj5;
-                                                                            let right;
-                                                                            let top;
-                                                                            if (c9 === 2) {
-                                                                              c9 = 3;
-                                                                              throw new TypeError("Generator functions may not be called on executing generators");
-                                                                            } else if (tmp3 === 3) {
-                                                                              if (arg0 === 1) {
-                                                                                throw value;
-                                                                              } else if (arg0 === 2) {
-                                                                                const obj2 = { value, done: true };
-                                                                                return obj2;
-                                                                              } else {
-                                                                                return { value: "IconComponent", done: null };
-                                                                              }
-                                                                            } else {
-                                                                              let c7;
-                                                                              try {
-                                                                                c9 = 2;
-                                                                                if (0 === c8) {
-                                                                                  if (arg0 === 1) {
-                                                                                    c9 = 3;
-                                                                                    throw value;
-                                                                                  } else if (arg0 === 2) {
-                                                                                    c9 = 3;
-                                                                                    const obj3 = { value, done: true };
-                                                                                    return obj3;
-                                                                                  } else {
-                                                                                    let closure_5 = tmp;
-                                                                                    let closure_4 = tmp4;
-                                                                                    closure_0 = undefined;
-                                                                                    const obj8 = closure_1_17;
-                                                                                    if (null != closure_1_17) {
-                                                                                      if (null != origin) {
-                                                                                        let rect;
-                                                                                        const tmp14 = c8;
-                                                                                        if (tmp14) {
-                                                                                          rect = { top: 0, bottom: 0, left: 0, right: 0 };
-                                                                                        } else {
-                                                                                          rect = closure_1_19;
-                                                                                        }
-                                                                                        const rect2 = c9;
-                                                                                        let left;
-                                                                                        if (c9 != null) {
-                                                                                          left = rect2.left;
-                                                                                        }
-                                                                                        let left1;
-                                                                                        if (rect != null) {
-                                                                                          left1 = rect.left;
-                                                                                        }
-                                                                                        let c0 = left1;
-                                                                                        if (left1 == null) {
-                                                                                          c0 = 0;
-                                                                                        }
-                                                                                        const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
-                                                                                        right = undefined;
-                                                                                        if (rect2 != null) {
-                                                                                          right = rect2.right;
-                                                                                        }
-                                                                                        let right1;
-                                                                                        if (rect != null) {
-                                                                                          right1 = rect.right;
-                                                                                        }
-                                                                                        c1 = right1;
-                                                                                        if (right1 == null) {
-                                                                                          c1 = 0;
-                                                                                        }
-                                                                                        top = undefined;
-                                                                                        if (rect2 != null) {
-                                                                                          top = rect2.top;
-                                                                                        }
-                                                                                        let top1;
-                                                                                        if (rect != null) {
-                                                                                          top1 = rect.top;
-                                                                                        }
-                                                                                        c2 = top1;
-                                                                                        if (top1 == null) {
-                                                                                          c2 = 0;
-                                                                                        }
-                                                                                        bottom = undefined;
-                                                                                        if (rect2 != null) {
-                                                                                          bottom = rect2.bottom;
-                                                                                        }
-                                                                                        let bottom1;
-                                                                                        if (rect != null) {
-                                                                                          bottom1 = rect.bottom;
-                                                                                        }
-                                                                                        c3 = bottom1;
-                                                                                        if (bottom1 == null) {
-                                                                                          c3 = 0;
-                                                                                        }
-                                                                                        const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
-                                                                                        obj5 = { insets: rect1 };
-                                                                                        const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
-                                                                                        closure_0 = tmp30;
-                                                                                        c7 = 1;
-                                                                                        c8 = 2;
-                                                                                        c9 = 1;
-                                                                                        const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
-                                                                                        return obj6;
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                } else if (1 === c8) {
-                                                                                  c7 = 0;
-                                                                                  if (null != ref.current) {
-                                                                                    const current = ref.current;
-                                                                                    current.injectJavaScript(closure_0);
-                                                                                  }
-                                                                                } else if (arg0 === 1) {
-                                                                                  c9 = 3;
-                                                                                  throw value;
-                                                                                } else if (arg0 === 2) {
-                                                                                  c7 = 0;
-                                                                                  c9 = 3;
-                                                                                  const obj = { value, done: true };
-                                                                                  return obj;
-                                                                                } else {
-                                                                                  c7 = 0;
-                                                                                }
-                                                                                c9 = 3;
-                                                                                return { value: "IconComponent", done: null };
-                                                                              } catch (tmp31) {
-                                                                                let closure_6 = tmp31;
-                                                                                if (0 === c7) {
-                                                                                  c9 = 3;
-                                                                                  throw tmp31;
-                                                                                } else {
-                                                                                  c8 = 1;
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          });
-                                                                          tryInjectJavaScript();
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                    cResult[77] = top;
-                                                                    cResult[78] = null != tmp52 && null != tmp9 && null != tmp14;
-                                                                    cResult[79] = tmp11;
-                                                                    cResult[80] = qe;
-                                                                  }
-                                                                }
-                                                                class Pe {
-                                                                  constructor() {
-                                                                    let intl;
-                                                                    let intl2;
-                                                                    let intl3;
-                                                                    const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                                    if (tmp) {
-                                                                      const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                      const show = AlertActionCreatorsDefault.show;
-                                                                      AlertActionCreatorsDefault;
-                                                                      intl = intl4.intl;
-                                                                      intl2 = intl4.intl;
-                                                                      intl3 = intl4.intl;
-                                                                      show(obj);
-                                                                    }
-                                                                  }
-                                                                }
-                                                                cResult[67] = first1;
-                                                                cResult[68] = framePolicy;
-                                                                class Ae {
-                                                                  constructor() {
-                                                                    let tmp10;
-                                                                    try {
-                                                                      const _URL = URL;
-                                                                      const self = this;
-                                                                      const self2 = this;
-                                                                      const uRL = new URL(combined);
-                                                                      tmp10(uRL);
-                                                                    } catch (tmp7) {
-                                                                      const tmp8 = stateFromStores;
-                                                                      if (tmp8) {
-                                                                        tmp10 = setHasInvalidUrlError(true);
+                                                                    if (c9 === 2) {
+                                                                      c9 = 3;
+                                                                      throw new TypeError("Generator functions may not be called on executing generators");
+                                                                    } else if (tmp3 === 3) {
+                                                                      if (arg0 === 1) {
+                                                                        throw value;
+                                                                      } else if (arg0 === 2) {
+                                                                        const obj2 = { value, done: true };
+                                                                        return obj2;
                                                                       } else {
-                                                                        throw tmp7;
+                                                                        return { value: "IconComponent", done: null };
                                                                       }
-                                                                    }
-                                                                  }
-                                                                }
-                                                                cResult[70] = tmp67;
-                                                              }
-                                                              class Je {
-                                                                constructor() {
-                                                                  tmp = closure_26;
-                                                                  if (tmp) {
-                                                                    closure_0 = ["'self'"];
-                                                                    parseCsp = function parseCsp(arg0, str) {
-                                                                      const match = str.match(arg0);
-                                                                      if (null !== match) {
-                                                                        if (match.length >= 2) {
-                                                                          str = match[1];
-                                                                          const parts = str.split(" ");
-                                                                          const found = parts.filter((item) => !closure_1_0.includes(item));
-                                                                        }
-                                                                        return [];
-                                                                      }
-                                                                    };
-                                                                    closure_0 = undefined;
-                                                                    tmp2 = onActivityCrash;
-                                                                    closure_0 = onActivityCrash(function*(arg0, value) {
-                                                                      if (c5 === 2) {
-                                                                        c5 = 3;
-                                                                        throw new TypeError("Generator functions may not be called on executing generators");
-                                                                      } else if (tmp5 === 3) {
-                                                                        if (arg0 === 1) {
-                                                                          throw value;
-                                                                        } else if (arg0 === 2) {
-                                                                          const obj2 = { value, done: true };
-                                                                          return obj2;
-                                                                        } else {
-                                                                          return { value: "IconComponent", done: null };
-                                                                        }
-                                                                      } else {
-                                                                        try {
-                                                                          let items;
-                                                                          c5 = 2;
-                                                                          if (0 === c4) {
-                                                                            if (arg0 === 1) {
-                                                                              c5 = 3;
-                                                                              throw value;
-                                                                            } else if (arg0 === 2) {
-                                                                              c5 = 3;
-                                                                              const obj3 = { value, done: true };
-                                                                              return obj3;
-                                                                            } else {
-                                                                              let closure_3 = tmp2;
-                                                                              let closure_2 = tmp;
-                                                                              closure_0 = undefined;
-                                                                              content_security_policy = undefined;
-                                                                              items = undefined;
-                                                                              const obj6 = closure_0(applicationId[29]);
-                                                                              const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_2_3);
-                                                                              const tmp29 = closure_0;
-                                                                              closure_0 = nonTestModeUrlForApplication;
-                                                                              const tmp30 = applicationId;
-                                                                              const tmp31 = closure_2_3;
-                                                                              if (nonTestModeUrlForApplication == null) {
-                                                                                const _HermesInternal = HermesInternal;
-                                                                                let str = ".discordsays.com";
-                                                                                closure_0 = "https://" + tmp31 + ".discordsays.com";
-                                                                              }
-                                                                              const HTTP = tmp29(tmp30[30]).HTTP;
-                                                                              const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                                                                              const _HermesInternal2 = HermesInternal;
-                                                                              const get = HTTP.get;
-                                                                              c4 = 1;
-                                                                              c5 = 1;
-                                                                              const obj5 = { value: get(obj4), done: false };
-                                                                              return obj5;
-                                                                            }
-                                                                          } else if (arg0 === 1) {
-                                                                            c5 = 3;
+                                                                    } else {
+                                                                      let c7;
+                                                                      try {
+                                                                        c9 = 2;
+                                                                        if (0 === c8) {
+                                                                          if (arg0 === 1) {
+                                                                            c9 = 3;
                                                                             throw value;
                                                                           } else if (arg0 === 2) {
-                                                                            c5 = 3;
-                                                                            const obj = { value, done: true };
-                                                                            return obj;
+                                                                            c9 = 3;
+                                                                            const obj3 = { value, done: true };
+                                                                            return obj3;
                                                                           } else {
-                                                                            content_security_policy = value.headers["content-security-policy"];
-                                                                            items = ["about:blank", "file://*", closure_0];
-                                                                            let closure_1 = 3;
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_1 = HermesBuiltin.arraySpread(items, closure_1(/child-src (.*?);/, content_security_policy), closure_1);
-                                                                            closure_2_29(items.map((item) => {
-                                                                              const str = closure_1_1(closure_1_3[31])(item);
-                                                                              return "^" + str.replace(/\\\*/g, ".*");
-                                                                            }));
-                                                                            closure_2_27(true);
-                                                                            c5 = 3;
-                                                                            return { value: "IconComponent", done: null };
+                                                                            let closure_5 = tmp;
+                                                                            let closure_4 = tmp4;
+                                                                            closure_0 = undefined;
+                                                                            const obj8 = closure_1_12;
+                                                                            if (null != closure_1_12) {
+                                                                              if (null != origin) {
+                                                                                const tmp14 = c3;
+                                                                                if (tmp14) {
+                                                                                  rect = { top: 0, bottom: 0, left: 0, right: 0 };
+                                                                                } else {
+                                                                                  rect = closure_1_13;
+                                                                                }
+                                                                                const rect2 = closure_4;
+                                                                                let left;
+                                                                                if (closure_4 != null) {
+                                                                                  left = rect2.left;
+                                                                                }
+                                                                                let left1;
+                                                                                if (rect != null) {
+                                                                                  left1 = rect.left;
+                                                                                }
+                                                                                let c0 = left1;
+                                                                                if (left1 == null) {
+                                                                                  c0 = 0;
+                                                                                }
+                                                                                const rect1 = { left: closure_2_12(left, c0), right: closure_2_12(right, c1), top: closure_2_12(top, c2), bottom: closure_2_12(bottom, c3) };
+                                                                                right = undefined;
+                                                                                if (rect2 != null) {
+                                                                                  right = rect2.right;
+                                                                                }
+                                                                                let right1;
+                                                                                if (rect != null) {
+                                                                                  right1 = rect.right;
+                                                                                }
+                                                                                c1 = right1;
+                                                                                if (right1 == null) {
+                                                                                  c1 = 0;
+                                                                                }
+                                                                                top = undefined;
+                                                                                if (rect2 != null) {
+                                                                                  top = rect2.top;
+                                                                                }
+                                                                                let top1;
+                                                                                if (rect != null) {
+                                                                                  top1 = rect.top;
+                                                                                }
+                                                                                c2 = top1;
+                                                                                if (top1 == null) {
+                                                                                  c2 = 0;
+                                                                                }
+                                                                                bottom = undefined;
+                                                                                if (rect2 != null) {
+                                                                                  bottom = rect2.bottom;
+                                                                                }
+                                                                                let bottom1;
+                                                                                if (rect != null) {
+                                                                                  bottom1 = rect.bottom;
+                                                                                }
+                                                                                c3 = bottom1;
+                                                                                if (bottom1 == null) {
+                                                                                  c3 = 0;
+                                                                                }
+                                                                                const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
+                                                                                obj5 = { insets: rect1 };
+                                                                                const tmp30 = onActivityCrash(isPipOrGridMode[26])(obj4, tmp13);
+                                                                                closure_0 = tmp30;
+                                                                                c7 = 1;
+                                                                                c8 = 2;
+                                                                                c9 = 1;
+                                                                                const obj6 = { value: obj8.injectJavaScript(tmp30), done: false };
+                                                                                return obj6;
+                                                                              }
+                                                                            }
                                                                           }
-                                                                        } catch (tmp10) {
-                                                                          c5 = 3;
-                                                                          throw tmp10;
+                                                                        } else if (1 === c8) {
+                                                                          c7 = 0;
+                                                                          if (null != ref.current) {
+                                                                            const current = ref.current;
+                                                                            current.injectJavaScript(closure_0);
+                                                                          }
+                                                                        } else if (arg0 === 1) {
+                                                                          c9 = 3;
+                                                                          throw value;
+                                                                        } else if (arg0 === 2) {
+                                                                          c7 = 0;
+                                                                          c9 = 3;
+                                                                          const obj = { value, done: true };
+                                                                          return obj;
+                                                                        } else {
+                                                                          c7 = 0;
+                                                                        }
+                                                                        c9 = 3;
+                                                                        return { value: "IconComponent", done: null };
+                                                                      } catch (tmp31) {
+                                                                        let closure_6 = tmp31;
+                                                                        if (0 === c7) {
+                                                                          c9 = 3;
+                                                                          throw tmp31;
+                                                                        } else {
+                                                                          c8 = 1;
                                                                         }
                                                                       }
-                                                                    });
-                                                                    tmp3 = (function fetchAndParseCSP() {
-                                                                      return closure_0(...arguments);
-                                                                    })();
-                                                                  }
-                                                                  return;
-                                                                }
-                                                              }
-                                                              const items1 = [applicationId, tmp18 && null == framePolicy];
-                                                              cResult[63] = applicationId;
-                                                              cResult[64] = setHasInvalidUrlError && null == framePolicy;
-                                                              cResult[65] = Je;
-                                                              cResult[66] = items1;
-                                                              tmp64 = items1;
-                                                              tmp63 = Je;
-                                                            }
-                                                          }
-                                                          combined1 = null;
-                                                          let tmp53 = null;
-                                                          if (null != tmp9) {
-                                                            if (setHasInvalidUrlError) {
-                                                              let _HermesInternal = HermesInternal;
-                                                              combined1 = "file://" + tmp14;
-                                                            } else {
-                                                              combined1 = undefined;
-                                                              if (tmp48 != null) {
-                                                                combined1 = tmp48.uri;
-                                                              }
-                                                              if (combined1 == null) {
-                                                                combined1 = null;
-                                                              }
-                                                            }
-                                                            tmp53 = combined1;
-                                                          }
-                                                          class Ae {
-                                                            constructor() {
-                                                              let tmp10;
-                                                              try {
-                                                                const _URL = URL;
-                                                                const self = this;
-                                                                const self2 = this;
-                                                                const uRL = new URL(combined);
-                                                                tmp10(uRL);
-                                                              } catch (tmp7) {
-                                                                const tmp8 = stateFromStores;
-                                                                if (tmp8) {
-                                                                  tmp10 = setHasInvalidUrlError(true);
-                                                                } else {
-                                                                  throw tmp7;
+                                                                    }
+                                                                  });
+                                                                  tryInjectJavaScript();
                                                                 }
                                                               }
                                                             }
-                                                          }
-                                                          cResult[58] = undefined;
-                                                          cResult[59] = tmp9;
-                                                          cResult[61] = tmp53;
-                                                        }
-                                                        class Pe {
-                                                          constructor() {
-                                                            let intl;
-                                                            let intl2;
-                                                            let intl3;
-                                                            const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                            if (tmp) {
-                                                              const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                              const show = AlertActionCreatorsDefault.show;
-                                                              AlertActionCreatorsDefault;
-                                                              intl = intl4.intl;
-                                                              intl2 = intl4.intl;
-                                                              intl3 = intl4.intl;
-                                                              show(obj);
-                                                            }
+                                                            cResult[73] = top1;
+                                                            cResult[74] = tmp61;
+                                                            cResult[75] = tmp10;
+                                                            cResult[76] = xe;
                                                           }
                                                         }
-                                                        if (!setHasInvalidUrlError) {
-                                                          androidWebViewShellConfig = null;
-                                                          if (null != tmp9) {
-                                                            androidWebViewShellConfig = null;
-                                                            if (null != tmp14) {
-                                                              let obj6 = { iframeUrl: tmp9, shellFilePath: null };
-                                                              const tmpResult8 = tmp(tmp2[28]);
-                                                              class Pe {
-                                                                constructor() {
-                                                                  let intl;
-                                                                  let intl2;
-                                                                  let intl3;
-                                                                  const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                                  if (tmp) {
-                                                                    const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                                    const show = AlertActionCreatorsDefault.show;
-                                                                    AlertActionCreatorsDefault;
-                                                                    intl = intl4.intl;
-                                                                    intl2 = intl4.intl;
-                                                                    intl3 = intl4.intl;
-                                                                    show(obj);
-                                                                  }
-                                                                }
-                                                              }
-                                                              androidWebViewShellConfig = tmpResult8.getAndroidWebViewShellConfig(obj6);
-                                                            }
-                                                          }
-                                                        }
-                                                        cResult[55] = tmp9;
-                                                        cResult[56] = tmp14;
-                                                        class Ae {
-                                                          constructor() {
-                                                            let tmp10;
-                                                            try {
-                                                              const _URL = URL;
-                                                              const self = this;
-                                                              const self2 = this;
-                                                              const uRL = new URL(combined);
-                                                              tmp10(uRL);
-                                                            } catch (tmp7) {
-                                                              const tmp8 = stateFromStores;
-                                                              if (tmp8) {
-                                                                tmp10 = setHasInvalidUrlError(true);
-                                                              } else {
-                                                                throw tmp7;
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                        cResult[57] = androidWebViewShellConfig;
-                                                        tmp48 = androidWebViewShellConfig;
                                                       }
                                                     }
-                                                    class Pe {
+                                                    let obj6 = { applicationId: null, shellUrl: tmp24.url, iframeUrl: tmp8, framePolicy, frameInsets: tmp58 };
+                                                    class Se {
                                                       constructor() {
-                                                        let intl;
-                                                        let intl2;
-                                                        let intl3;
-                                                        const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                        if (tmp) {
-                                                          const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                          const show = AlertActionCreatorsDefault.show;
-                                                          AlertActionCreatorsDefault;
-                                                          intl = intl4.intl;
-                                                          intl2 = intl4.intl;
-                                                          intl3 = intl4.intl;
-                                                          show(obj);
+                                                        let tmp2 = null != onInvalidUrl;
+                                                        const tmp = onInvalidUrl;
+                                                        if (tmp2) {
+                                                          tmp2 = !hadInvalidUrlError;
+                                                        }
+                                                        if (tmp2) {
+                                                          tmp2 = hasInvalidUrlError;
+                                                        }
+                                                        if (tmp2) {
+                                                          tmp();
                                                         }
                                                       }
                                                     }
-                                                    const items2 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
-                                                    class Ae {
-                                                      constructor() {
-                                                        let tmp10;
-                                                        try {
-                                                          const _URL = URL;
-                                                          const self = this;
-                                                          const self2 = this;
-                                                          const uRL = new URL(combined);
-                                                          tmp10(uRL);
-                                                        } catch (tmp7) {
-                                                          const tmp8 = stateFromStores;
-                                                          if (tmp8) {
-                                                            tmp10 = setHasInvalidUrlError(true);
-                                                          } else {
-                                                            throw tmp7;
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                    cResult[51] = hasInvalidUrlError;
-                                                    cResult[52] = onInvalidUrl;
-                                                    cResult[54] = items2;
-                                                    tmp45 = items2;
-                                                    tmp44 = tmp46;
+                                                    cResult[61] = applicationId;
+                                                    cResult[62] = tmp58;
+                                                    cResult[63] = framePolicy;
+                                                    cResult[64] = tmp8;
+                                                    cResult[65] = tmp24.url;
+                                                    cResult[66] = obj6;
+                                                    tmp59 = obj6;
                                                   }
-                                                  class Pe {
-                                                    constructor() {
-                                                      let intl;
-                                                      let intl2;
-                                                      let intl3;
-                                                      const tmp = !hadInvalidUrlError && hasInvalidUrlError;
-                                                      if (tmp) {
-                                                        const obj = { title: intl.string(intl4.t.PtobXW), body: intl2.string(intl4.t["55iAUT"]), confirmText: intl3.string(intl4.t.BddRzS) };
-                                                        const show = AlertActionCreatorsDefault.show;
-                                                        AlertActionCreatorsDefault;
-                                                        intl = intl4.intl;
-                                                        intl2 = intl4.intl;
-                                                        intl3 = intl4.intl;
-                                                        show(obj);
-                                                      }
-                                                    }
-                                                  }
-                                                  const items3 = [hadInvalidUrlError, hasInvalidUrlError];
-                                                  cResult[46] = hadInvalidUrlError;
-                                                  class Ae {
-                                                    constructor() {
-                                                      let tmp10;
-                                                      try {
-                                                        const _URL = URL;
-                                                        const self = this;
-                                                        const self2 = this;
-                                                        const uRL = new URL(combined);
-                                                        tmp10(uRL);
-                                                      } catch (tmp7) {
-                                                        const tmp8 = stateFromStores;
-                                                        if (tmp8) {
-                                                          tmp10 = setHasInvalidUrlError(true);
-                                                        } else {
-                                                          throw tmp7;
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                  cResult[47] = hasInvalidUrlError;
-                                                  cResult[48] = Pe;
-                                                  cResult[49] = items3;
-                                                  tmp41 = Pe;
                                                 }
                                               }
-                                              const items4 = [, stateFromStores, setHasInvalidUrlError];
-                                              cResult[42] = combined;
-                                              class Ae {
+                                              let rect1 = { left: null, right: tmp47, top: tmp51, bottom: tmp55 };
+                                              class Se {
                                                 constructor() {
-                                                  let tmp10;
-                                                  try {
-                                                    const _URL = URL;
-                                                    const self = this;
-                                                    const self2 = this;
-                                                    const uRL = new URL(combined);
-                                                    tmp10(uRL);
-                                                  } catch (tmp7) {
-                                                    const tmp8 = stateFromStores;
-                                                    if (tmp8) {
-                                                      tmp10 = setHasInvalidUrlError(true);
-                                                    } else {
-                                                      throw tmp7;
-                                                    }
+                                                  let tmp2 = null != onInvalidUrl;
+                                                  const tmp = onInvalidUrl;
+                                                  if (tmp2) {
+                                                    tmp2 = !hadInvalidUrlError;
+                                                  }
+                                                  if (tmp2) {
+                                                    tmp2 = hasInvalidUrlError;
+                                                  }
+                                                  if (tmp2) {
+                                                    tmp();
                                                   }
                                                 }
                                               }
-                                              cResult[44] = setHasInvalidUrlError;
-                                              cResult[45] = items4;
-                                              tmp39 = items4;
+                                              cResult[56] = tmp43;
+                                              cResult[57] = tmp47;
+                                              cResult[58] = tmp51;
+                                              cResult[59] = tmp55;
+                                              cResult[60] = rect1;
+                                              tmp58 = rect1;
+                                            }
+                                            if (null != bottom1) {
+                                              if (!bottom1.disable) {
+                                                if (null != bottom1.override) {
+                                                  const _Math8 = Math;
+                                                  let bound = Math.max(0, bottom1.override);
+                                                } else {
+                                                  bound = num54;
+                                                  if (null != bottom1.offset) {
+                                                    const _Math7 = Math;
+                                                    bound = Math.max(0, num54 + bottom1.offset);
+                                                  }
+                                                }
+                                              }
+                                              class Se {
+                                                constructor() {
+                                                  let tmp2 = null != onInvalidUrl;
+                                                  const tmp = onInvalidUrl;
+                                                  if (tmp2) {
+                                                    tmp2 = !hadInvalidUrlError;
+                                                  }
+                                                  if (tmp2) {
+                                                    tmp2 = hasInvalidUrlError;
+                                                  }
+                                                  if (tmp2) {
+                                                    tmp();
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            cResult[53] = bottom1;
+                                            cResult[54] = num54;
+                                            cResult[55] = num54;
+                                            tmp55 = tmp56;
+                                          }
+                                          if (null != top) {
+                                            if (!top.disable) {
+                                              if (null != top.override) {
+                                                const _Math6 = Math;
+                                                let bound1 = Math.max(0, top.override);
+                                              } else {
+                                                bound1 = num48;
+                                                if (null != top.offset) {
+                                                  const _Math5 = Math;
+                                                  bound1 = Math.max(0, num48 + top.offset);
+                                                }
+                                              }
+                                            }
+                                            class Se {
+                                              constructor() {
+                                                let tmp2 = null != onInvalidUrl;
+                                                const tmp = onInvalidUrl;
+                                                if (tmp2) {
+                                                  tmp2 = !hadInvalidUrlError;
+                                                }
+                                                if (tmp2) {
+                                                  tmp2 = hasInvalidUrlError;
+                                                }
+                                                if (tmp2) {
+                                                  tmp();
+                                                }
+                                              }
                                             }
                                           }
+                                          cResult[50] = top;
+                                          cResult[51] = num48;
+                                          cResult[52] = num48;
+                                          tmp51 = tmp52;
                                         }
-                                        class Ae {
-                                          constructor() {
-                                            let tmp10;
-                                            try {
-                                              const _URL = URL;
-                                              const self = this;
-                                              const self2 = this;
-                                              const uRL = new URL(combined);
-                                              tmp10(uRL);
-                                            } catch (tmp7) {
-                                              const tmp8 = stateFromStores;
-                                              if (tmp8) {
-                                                tmp10 = setHasInvalidUrlError(true);
-                                              } else {
-                                                throw tmp7;
+                                        if (null != right) {
+                                          if (!right.disable) {
+                                            if (null != right.override) {
+                                              const _Math4 = Math;
+                                              let bound2 = Math.max(0, right.override);
+                                            } else {
+                                              bound2 = num42;
+                                              if (null != right.offset) {
+                                                const _Math3 = Math;
+                                                bound2 = Math.max(0, num42 + right.offset);
+                                              }
+                                            }
+                                          }
+                                          class Se {
+                                            constructor() {
+                                              let tmp2 = null != onInvalidUrl;
+                                              const tmp = onInvalidUrl;
+                                              if (tmp2) {
+                                                tmp2 = !hadInvalidUrlError;
+                                              }
+                                              if (tmp2) {
+                                                tmp2 = hasInvalidUrlError;
+                                              }
+                                              if (tmp2) {
+                                                tmp();
                                               }
                                             }
                                           }
                                         }
-                                        cResult[37] = combined;
-                                        cResult[38] = stateFromStores;
-                                        cResult[40] = tmp10;
-                                        cResult[41] = Ae;
-                                        tmp38 = Ae;
+                                        cResult[47] = right;
+                                        cResult[48] = num42;
+                                        cResult[49] = num42;
+                                        tmp47 = tmp48;
+                                      }
+                                      if (null != undefined) {
+                                        if (!undefined.disable) {
+                                          if (null != undefined.override) {
+                                            const _Math2 = Math;
+                                            let bound3 = Math.max(0, tmp42.override);
+                                          } else {
+                                            bound3 = num36;
+                                            if (null != undefined.offset) {
+                                              const _Math = Math;
+                                              bound3 = Math.max(0, num36 + tmp42.offset);
+                                            }
+                                          }
+                                        }
+                                        class Se {
+                                          constructor() {
+                                            let tmp2 = null != onInvalidUrl;
+                                            const tmp = onInvalidUrl;
+                                            if (tmp2) {
+                                              tmp2 = !hadInvalidUrlError;
+                                            }
+                                            if (tmp2) {
+                                              tmp2 = hasInvalidUrlError;
+                                            }
+                                            if (tmp2) {
+                                              tmp();
+                                            }
+                                          }
+                                        }
+                                      }
+                                      cResult[44] = undefined;
+                                      cResult[45] = num36;
+                                      cResult[46] = num36;
+                                      tmp43 = tmp44;
+                                    }
+                                  }
+                                  class Se {
+                                    constructor() {
+                                      let tmp2 = null != onInvalidUrl;
+                                      const tmp = onInvalidUrl;
+                                      if (tmp2) {
+                                        tmp2 = !hadInvalidUrlError;
+                                      }
+                                      if (tmp2) {
+                                        tmp2 = hasInvalidUrlError;
+                                      }
+                                      if (tmp2) {
+                                        tmp();
                                       }
                                     }
                                   }
+                                  const items1 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
+                                  cResult[39] = hadInvalidUrlError;
+                                  cResult[40] = hasInvalidUrlError;
+                                  cResult[41] = onInvalidUrl;
+                                  cResult[42] = Se;
+                                  cResult[43] = items1;
+                                  tmp40 = items1;
+                                  tmp39 = Se;
                                 }
-                                function ye() {
-                                  hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
-                                  const obj = AnalyticsUtilsDefault;
-                                  const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
-                                  obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
-                                  onActivityCrash();
-                                }
-                                cResult[29] = activitySessionId;
-                                cResult[31] = channelId;
-                                cResult[32] = guildId;
-                                cResult[34] = ye;
+                                const items2 = [hadInvalidUrlError, hasInvalidUrlError];
+                                cResult[35] = hadInvalidUrlError;
+                                cResult[36] = hasInvalidUrlError;
+                                cResult[37] = tmp37;
+                                cResult[38] = items2;
+                                tmp36 = items2;
+                                tmp35 = tmp37;
                               }
                             }
+                            const items3 = [, stateFromStores, setHasInvalidUrlError];
+                            cResult[31] = combined;
+                            cResult[32] = stateFromStores;
+                            cResult[33] = setHasInvalidUrlError;
+                            cResult[34] = items3;
+                            tmp33 = items3;
                           }
                         }
                       }
+                      function me() {
+                        try {
+                          const _URL = URL;
+                          const self = this;
+                          const self2 = this;
+                          const uRL = new URL(combined);
+                          logger(uRL);
+                        } catch (tmp7) {
+                          const tmp8 = stateFromStores;
+                          if (tmp8) {
+                            setHasInvalidUrlError(true);
+                          } else {
+                            throw tmp7;
+                          }
+                        }
+                      }
+                      cResult[26] = combined;
+                      cResult[27] = stateFromStores;
+                      cResult[28] = setHasInvalidUrlError;
+                      cResult[29] = tmp9;
+                      cResult[30] = me;
+                      tmp32 = me;
                     }
                   }
-                  const items5 = [, tmp22, onLoadError, referrerPolicy, iframeId, num3, , tmp26];
-                  cResult[16] = tmp26;
-                  cResult[17] = iframeId;
-                  cResult[18] = tmp22;
-                  cResult[19] = combined;
-                  cResult[20] = onLoadError;
-                  cResult[21] = referrerPolicy;
-                  cResult[22] = shellBridgeSecret;
-                  cResult[23] = num3;
-                  cResult[24] = items5;
-                  tmp29 = items5;
                 }
               }
+              function ce() {
+                logger.warn("activity WebView content process terminated for appId " + applicationId);
+                const obj = AnalyticsUtilsDefault;
+                const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
+                obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
+                onActivityCrash();
+              }
+              cResult[18] = activitySessionId;
+              cResult[19] = applicationId;
+              cResult[20] = channelId;
+              cResult[21] = guildId;
+              cResult[22] = onActivityCrash;
+              cResult[23] = ce;
             }
           }
         }
       }
     }
   }
-  function fe() {
-    function loadHtml() {
-      return closure_0(...arguments);
-    }
-    let closure_0 = onActivityCrash(function*(arg0, value) {
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === shellBridgeSecret) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              iframeId = tmp;
-              closure_0 = undefined;
-              const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret, iframeCsp };
-              shellBridgeSecret = 1;
-              c3 = 1;
-              const obj5 = { value: iframeId(applicationId[23])(obj4), done: false };
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            closure_0 = value;
-            if (null != closure_0) {
-              closure_1_18(closure_0);
-            } else {
-              onLoadError();
-            }
-            c3 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp16) {
-          c3 = 3;
-          throw tmp16;
-        }
-      }
-    });
-    const tmp = loadHtml();
-  }
-  cResult[6] = tmp26;
-  cResult[7] = iframeId;
-  cResult[8] = tmp22;
+  const obj7 = { embeddedAppUrl: activityUrl, iframeUri: combined, iframeSandboxAttributes: tmp17, iframeCsp: tmp21, referrerPolicy, shimVersion: embeddedAppShimVersion, shellBridgeSecret };
+  cResult[6] = activityUrl;
+  cResult[7] = tmp21;
+  cResult[8] = tmp17;
   cResult[9] = combined;
-  cResult[10] = onLoadError;
-  cResult[11] = referrerPolicy;
-  cResult[12] = tmp15;
-  cResult[13] = shellBridgeSecret;
-  cResult[14] = num3;
-  cResult[15] = fe;
-  tmp28 = fe;
-}) : (function BaseEmbeddedAppWebViewContent(framePolicy) {
+  cResult[10] = referrerPolicy;
+  cResult[11] = shellBridgeSecret;
+  cResult[12] = embeddedAppShimVersion;
+  cResult[13] = obj7;
+  tmp23 = obj7;
+}) : (function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
   let _undefined;
   let activityUrl;
   let allowPopups;
-  let assetLoaderConfig;
-  let c16;
-  let c18;
-  let c27;
+  let applicationId;
+  let c12;
+  let framePolicy;
+  let iframeId;
   let ignoreSilentHardwareSwitch;
-  let obj8;
+  let obj7;
   let onActivityCrash;
+  let onLoadEnd;
   let queryParams;
-  let str2;
-  let tmp11;
-  let tmp34;
-  let tmp47;
-  let tmp50;
-  let tmp53;
-  let tmp56;
-  let tmp62;
-  let tmp63;
-  let tmp64;
-  let tmp8;
-  framePolicy = framePolicy.framePolicy;
-  let iframeId = framePolicy.iframeId;
-  let shellBridgeSecret = framePolicy.shellBridgeSecret;
-  let deepLinkQueryParams = framePolicy.deepLinkQueryParams;
+  let referrerPolicy;
+  let tmp30;
+  let tmp33;
+  let tmp36;
+  let tmp7;
+  ({ framePolicy, iframeId } = deepLinkQueryParams);
+  deepLinkQueryParams = deepLinkQueryParams.deepLinkQueryParams;
+  const shellBridgeSecret = deepLinkQueryParams.shellBridgeSecret;
   if (deepLinkQueryParams === undefined) {
     deepLinkQueryParams = {};
   }
-  const applicationId = framePolicy.applicationId;
-  ({ queryParams, onActivityCrash } = framePolicy);
-  const onLoadError = framePolicy.onLoadError;
-  const onInvalidUrl = framePolicy.onInvalidUrl;
-  const referrerPolicy = framePolicy.referrerPolicy;
-  const isPipOrGridMode = framePolicy.isPipOrGridMode;
-  ({ ignoreSilentHardwareSwitch, activityUrl, allowPopups } = framePolicy);
+  ({ activityUrl, applicationId } = deepLinkQueryParams);
+  ({ queryParams, onActivityCrash } = deepLinkQueryParams);
+  const onInvalidUrl = deepLinkQueryParams.onInvalidUrl;
+  const isPipOrGridMode = deepLinkQueryParams.isPipOrGridMode;
+  ({ ignoreSilentHardwareSwitch, onLoadEnd, allowPopups, referrerPolicy } = deepLinkQueryParams);
   if (ignoreSilentHardwareSwitch === undefined) {
     ignoreSilentHardwareSwitch = true;
   }
-  const safeAreasConfig = framePolicy.safeAreasConfig;
-  const channelId = framePolicy.channelId;
-  const guildId = framePolicy.guildId;
-  const activitySessionId = framePolicy.activitySessionId;
-  c16 = undefined;
-  let memo;
-  c18 = undefined;
-  let closure_21;
-  let combined;
-  let c23;
+  const safeAreasConfig = deepLinkQueryParams.safeAreasConfig;
+  const channelId = deepLinkQueryParams.channelId;
+  const guildId = deepLinkQueryParams.guildId;
+  const activitySessionId = deepLinkQueryParams.activitySessionId;
+  let setHasInvalidUrlError;
+  c12 = undefined;
+  let rect;
   let stateFromStores;
-  let combined1;
-  let closure_26;
-  c27 = undefined;
-  let first;
-  let closure_29;
-  let closure_30;
+  let closure_17;
   let ref;
   let origin;
-  let obj2 = onInvalidUrl;
-  let tmp2 = framePolicy;
-  let tmp3 = applicationId;
-  let tmp = activitySessionId();
-  const context = onInvalidUrl.useContext(framePolicy(applicationId[14]).WebViewContext);
-  const tmp5 = memo();
+  let obj2 = channelId;
+  let tmp2 = iframeId;
+  let tmp3 = onInvalidUrl;
+  let tmp = setHasInvalidUrlError();
+  const context = channelId.useContext(iframeId(onInvalidUrl[11]).WebViewContext);
+  const tmp5 = rect();
   const hasInvalidUrlError = tmp5.hasInvalidUrlError;
-  const setHasInvalidUrlError = tmp5.setHasInvalidUrlError;
+  setHasInvalidUrlError = tmp5.setHasInvalidUrlError;
   const hadInvalidUrlError = tmp5.hadInvalidUrlError;
-  const tmp7 = onLoadError(onInvalidUrl.useState(null), 2);
-  [tmp8, c16] = tmp7;
-  let items = [iframeId];
-  memo = onInvalidUrl.useMemo(() => {
+  [tmp7, c12] = safeAreasConfig(channelId.useState(null), 2);
+  const items = [iframeId];
+  const tmp6 = safeAreasConfig(channelId.useState(null), 2);
+  const memo = channelId.useMemo(() => {
     const obj = WebView2;
     return obj.getWebViewProxy(iframeId);
   }, items);
-  let tmp10 = onLoadError(onInvalidUrl.useState(null), 2);
-  [tmp11, c18] = tmp10;
-  let rect = iframeId(applicationId[16])();
-  let obj3 = framePolicy(applicationId[17]);
-  let tmp13 = setHasInvalidUrlError;
-  let num = 1;
-  const tmp12 = iframeId;
-  if (!setHasInvalidUrlError) {
-    num = obj3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
-  }
-  let obj4 = shellBridgeSecret(tmp3[18]);
-  let obj = { frame_id: iframeId, platform: tmp2(tmp3[19]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
+  rect = applicationId(onInvalidUrl[13])();
+  let obj3 = iframeId(onInvalidUrl[14]);
+  const embeddedAppShimVersion = obj3.useEmbeddedAppShimVersion("BaseEmbeddedAppWebView");
+  let obj4 = onActivityCrash(onInvalidUrl[15]);
+  let obj = { frame_id: iframeId, platform: iframeId(onInvalidUrl[16]).ActivityPlatform.MOBILE, mobile_app_version: constants.Version };
   constants = obj4.getConstants();
   const merged = Object.assign(queryParams);
   const merged1 = Object.assign(deepLinkQueryParams);
-  obj[tmp2(tmp3[20]).SHIM_VERSION_PARAM] = "" + num;
-  const tmp17 = tmp12(tmp3[21])({ allowPopups });
-  closure_21 = tmp17;
+  obj[iframeId(onInvalidUrl[17]).SHIM_VERSION_PARAM] = "" + embeddedAppShimVersion;
+  let tmp14 = applicationId(onInvalidUrl[18])({ allowPopups });
   const uRLSearchParams = new URLSearchParams(obj);
-  combined = "" + activityUrl + "?" + uRLSearchParams;
+  const combined = "" + activityUrl + "?" + uRLSearchParams;
   let result;
   if (null != framePolicy) {
-    const tmp2Result = tmp2(tmp3[22]);
+    const tmp2Result = tmp2(tmp3[19]);
     result = tmp2Result.deriveIframeCSPAttributeFromPolicy(framePolicy.policy);
   }
-  c23 = result;
-  const items1 = [combined, tmp17, onLoadError, referrerPolicy, iframeId, num, shellBridgeSecret, result];
-  const effect = obj2.useEffect(() => {
-    function loadHtml() {
-      return obj(...arguments);
-    }
-    let obj = function _loadHtml2() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let closure_0;
-            c3 = 2;
-            if (0 === shellBridgeSecret) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                iframeId = tmp;
-                closure_0 = undefined;
-                const obj4 = { iframeId, iframeUri, iframeSandboxAttributes, referrerPolicy, shimVersion, shellBridgeSecret, iframeCsp };
-                shellBridgeSecret = 1;
-                c3 = 1;
-                const obj5 = { value: closure_2_1(applicationId[23])(obj4), done: false };
-                return obj5;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              closure_0 = value;
-              if (null != closure_0) {
-                closure_1_18(closure_0);
-              } else {
-                closure_1_5();
-              }
-              c3 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp16) {
-            c3 = 3;
-            throw tmp16;
-          }
-        }
-      });
-      return obj(...arguments);
-    };
-    const tmp = !loadHtml();
-  }, items1);
+  const tmp18 = applicationId(tmp3[20])({ embeddedAppUrl: activityUrl, iframeUri: combined, iframeSandboxAttributes: tmp14, iframeCsp: result, referrerPolicy, shimVersion: embeddedAppShimVersion, shellBridgeSecret });
+  const items1 = [applicationId];
   const items2 = [applicationId];
-  const items3 = [applicationId];
   const callback = obj2.useCallback((nativeEvent) => {
-    hasInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
-  }, items2);
-  const items4 = [applicationId, channelId, guildId, activitySessionId, onActivityCrash];
+    hadInvalidUrlError.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+  }, items1);
+  const items3 = [applicationId, channelId, guildId, activitySessionId, onActivityCrash];
   const callback1 = obj2.useCallback((nativeEvent) => {
-    hasInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
-  }, items3);
+    hadInvalidUrlError.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
+  }, items2);
   const callback2 = obj2.useCallback(() => {
-    hasInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
+    hadInvalidUrlError.warn("activity WebView content process terminated for appId " + applicationId);
     const obj = AnalyticsUtilsDefault;
     const obj2 = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
     obj.track(AnalyticEvents.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj2);
     onActivityCrash();
-  }, items4);
-  const items5 = [isPipOrGridMode];
-  const tmp2Result4 = tmp2(tmp3[25]);
-  stateFromStores = tmp2Result4.useStateFromStores(items5, () => isPipOrGridMode.getUseActivityUrlOverride());
-  const items6 = [combined, stateFromStores, setHasInvalidUrlError];
-  const effect1 = obj2.useEffect(function() {
+  }, items3);
+  const items4 = [guildId];
+  const tmp2Result2 = tmp2(tmp3[22]);
+  stateFromStores = tmp2Result2.useStateFromStores(items4, () => guildId.getUseActivityUrlOverride());
+  const items5 = [combined, stateFromStores, setHasInvalidUrlError];
+  const effect = obj2.useEffect(function() {
     try {
       const _URL = URL;
       const self = this;
@@ -1528,9 +1080,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
         throw tmp7;
       }
     }
-  }, items6);
-  const items7 = [hadInvalidUrlError, hasInvalidUrlError];
-  const effect2 = obj2.useEffect(() => {
+  }, items5);
+  const items6 = [hadInvalidUrlError, hasInvalidUrlError];
+  const effect1 = obj2.useEffect(() => {
     let intl;
     let intl2;
     let intl3;
@@ -1544,9 +1096,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
       intl3 = intl4.intl;
       show(obj);
     }
-  }, items7);
-  const items8 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
-  const effect3 = obj2.useEffect(() => {
+  }, items6);
+  const items7 = [hasInvalidUrlError, hadInvalidUrlError, onInvalidUrl];
+  const effect2 = obj2.useEffect(() => {
     let tmp2 = null != onInvalidUrl;
     const tmp = onInvalidUrl;
     if (tmp2) {
@@ -1558,206 +1110,142 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
     if (tmp2) {
       tmp();
     }
-  }, items8);
-  let androidWebViewShellConfig = null;
-  if (!tmp13) {
-    androidWebViewShellConfig = null;
-    if (null != tmp8) {
-      androidWebViewShellConfig = null;
-      if (null != tmp11) {
-        let obj5 = { iframeUrl: tmp8, shellFilePath: tmp11 };
-        const tmp2Result5 = tmp2(tmp3[28]);
-        androidWebViewShellConfig = tmp2Result5.getAndroidWebViewShellConfig(obj5);
-      }
-    }
+  }, items7);
+  let left;
+  if (safeAreasConfig != null) {
+    left = safeAreasConfig.left;
   }
-  combined1 = null;
-  let tmp30 = null;
-  if (null != tmp8) {
-    if (tmp13) {
-      let _HermesInternal = HermesInternal;
-      let str = "file://";
-      combined1 = "file://" + tmp11;
-    } else {
-      combined1 = undefined;
-      if (androidWebViewShellConfig != null) {
-        combined1 = androidWebViewShellConfig.uri;
-      }
-      if (combined1 == null) {
-        combined1 = null;
-      }
-    }
-    tmp30 = combined1;
+  let num;
+  if (rect != null) {
+    num = rect.left;
   }
-  closure_26 = tmp32;
-  [tmp34, c27] = onLoadError(obj2.useState(false), 2);
-  onLoadError(obj2.useState(false), 2);
-  const tmp6Result2 = onLoadError(obj2.useState([]), 2);
-  first = tmp6Result2[0];
-  closure_29 = tmp6Result2[1];
-  const items9 = [applicationId, tmp32];
-  const effect4 = obj2.useEffect(() => {
-    function fetchAndParseCSP() {
-      return obj(...arguments);
-    }
-    const tmp = closure_26;
-    if (tmp) {
-      function parseCsp(arg0, str) {
-        const match = str.match(arg0);
-        if (null !== match) {
-          if (match.length >= 2) {
-            str = match[1];
-            const parts = str.split(" ");
-            const found = parts.filter((item) => !closure_1_0.includes(item));
-          }
-          return [];
+  if (num == null) {
+    num = 0;
+  }
+  let tmp27 = num;
+  if (null != left) {
+    let num3 = 0;
+    if (!left.disable) {
+      let bound;
+      if (null != left.override) {
+        const _Math2 = Math;
+        bound = Math.max(0, left.override);
+      } else {
+        bound = num;
+        if (null != left.offset) {
+          const _Math = Math;
+          bound = Math.max(0, num + left.offset);
         }
       }
-      let obj = function _fetchAndParseCSP2() {
-        obj = _asyncToGenerator(async (arg0, value) => {
-          if (c5 === 2) {
-            c5 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp5 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              let items;
-              c5 = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  c5 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_3 = tmp2;
-                  let closure_2 = tmp;
-                  content_security_policy = undefined;
-                  items = undefined;
-                  const obj6 = closure_2_0(applicationId[29]);
-                  const nonTestModeUrlForApplication = obj6.getNonTestModeUrlForApplication(closure_3);
-                  closure_0 = nonTestModeUrlForApplication;
-                  const tmp29 = closure_2_0;
-                  const tmp30 = applicationId;
-                  const tmp31 = closure_3;
-                  if (nonTestModeUrlForApplication == null) {
-                    const _HermesInternal = HermesInternal;
-                    let str = ".discordsays.com";
-                    closure_0 = "https://" + tmp31 + ".discordsays.com";
-                  }
-                  const HTTP = tmp29(tmp30[30]).HTTP;
-                  const obj4 = { url: "" + closure_0 + "/.discord/csp", rejectWithError: false };
-                  const _HermesInternal2 = HermesInternal;
-                  const get = HTTP.get;
-                  c4 = 1;
-                  c5 = 1;
-                  const obj5 = { value: get(obj4), done: false };
-                  return obj5;
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj = { value, done: true };
-                return obj;
-              } else {
-                content_security_policy = value.headers["content-security-policy"];
-                items = ["about:blank", "file://*", closure_0];
-                let closure_1 = 3;
-                closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/frame-src (.*?);/, content_security_policy), closure_1);
-                closure_1 = HermesBuiltin.arraySpread(items, closure_131_1(/child-src (.*?);/, content_security_policy), closure_1);
-                closure_1_29(items.map((item) => {
-                  const str = closure_1_1(closure_1_3[31])(item);
-                  return "^" + str.replace(/\\\*/g, ".*");
-                }));
-                closure_1_27(true);
-                c5 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp10) {
-              c5 = 3;
-              throw tmp10;
-            }
-          }
-        });
-        return obj(...arguments);
-      };
-      let closure_0 = ["'self'"];
-      const tmp2 = fetchAndParseCSP();
+      num3 = bound;
     }
-  }, items9);
-  const items10 = [tmp30, first, framePolicy];
-  let tmp39 = null != tmp30;
-  const callback3 = obj2.useCallback(function(mainDocumentURL) {
-    mainDocumentURL = mainDocumentURL.mainDocumentURL;
-    if (null != combined1) {
-      if (null != mainDocumentURL) {
-        if (mainDocumentURL !== combined1) {
-          Linking.openURL(mainDocumentURL.url);
-          return false;
+    tmp27 = num3;
+  }
+  let rect1 = { left: tmp27, right: tmp30, top: tmp33, bottom: tmp36 };
+  let right;
+  if (safeAreasConfig != null) {
+    right = safeAreasConfig.right;
+  }
+  let num4;
+  if (rect != null) {
+    num4 = rect.right;
+  }
+  if (num4 == null) {
+    num4 = 0;
+  }
+  tmp30 = num4;
+  if (null != right) {
+    let num6 = 0;
+    if (!right.disable) {
+      let bound1;
+      if (null != right.override) {
+        const _Math4 = Math;
+        bound1 = Math.max(0, right.override);
+      } else {
+        bound1 = num4;
+        if (null != right.offset) {
+          const _Math3 = Math;
+          bound1 = Math.max(0, num4 + right.offset);
         }
       }
+      num6 = bound1;
     }
-    if (null != framePolicy) {
-      const obj2 = isAllowedFrameNavigation;
-      if (obj2.isAllowedFrameNavigation(mainDocumentURL.url, framePolicy.routerOrigin, framePolicy.policy)) {
-        return true;
-      }
-    } else {
-      const iter = first[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let _RegExp = RegExp;
-        let self = this;
-        let self2 = this;
-        let regExp = new RegExp(nextResult);
-        if (regExp.test(mainDocumentURL.url)) {
-          iter.return();
-          let flag = true;
-          return true;
+    tmp30 = num6;
+  }
+  let top;
+  if (safeAreasConfig != null) {
+    top = safeAreasConfig.top;
+  }
+  let num7;
+  if (rect != null) {
+    num7 = rect.top;
+  }
+  if (num7 == null) {
+    num7 = 0;
+  }
+  tmp33 = num7;
+  if (null != top) {
+    let num9 = 0;
+    if (!top.disable) {
+      let bound2;
+      if (null != top.override) {
+        const _Math6 = Math;
+        bound2 = Math.max(0, top.override);
+      } else {
+        bound2 = num7;
+        if (null != top.offset) {
+          const _Math5 = Math;
+          bound2 = Math.max(0, num7 + top.offset);
         }
       }
+      num9 = bound2;
     }
-    const toURLSafe = URLUtilsDefault.toURLSafe;
-    URLUtilsDefault;
-    let str = DeveloperActivityShelfStore.getActivityUrlOverride();
-    if (str == null) {
-      str = "";
+    tmp33 = num9;
+  }
+  let bottom;
+  if (safeAreasConfig != null) {
+    bottom = safeAreasConfig.bottom;
+  }
+  let num10;
+  if (rect != null) {
+    num10 = rect.bottom;
+  }
+  if (num10 == null) {
+    num10 = 0;
+  }
+  tmp36 = num10;
+  if (null != bottom) {
+    let num12 = 0;
+    if (!bottom.disable) {
+      let bound3;
+      if (null != bottom.override) {
+        const _Math8 = Math;
+        bound3 = Math.max(0, bottom.override);
+      } else {
+        bound3 = num10;
+        if (null != bottom.offset) {
+          const _Math7 = Math;
+          bound3 = Math.max(0, num10 + bottom.offset);
+        }
+      }
+      num12 = bound3;
     }
-    const toURLSafeResult = toURLSafe(str);
-    const tmp13Result = URLUtilsDefault;
-    const toURLSafeResult1 = tmp13Result.toURLSafe(mainDocumentURL.url);
-    return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
-  }, items10);
-  if (tmp39) {
-    tmp39 = null != tmp8;
+    tmp36 = num12;
   }
-  if (tmp39) {
-    tmp39 = null != tmp11;
-  }
-  closure_30 = tmp39;
+  let obj5 = { applicationId, shellUrl: tmp18.url, iframeUrl: tmp7, framePolicy, frameInsets: rect1 };
+  const tmp38 = applicationId(tmp3[25])(obj5);
+  closure_17 = tmp39;
   ref = obj2.useRef(null);
   origin = undefined;
-  if (tmp8 != null) {
-    origin = tmp8.origin;
+  if (tmp7 != null) {
+    origin = tmp7.origin;
   }
-  const items11 = [rect, isPipOrGridMode, tmp39, memo, origin, safeAreasConfig];
-  const effect5 = obj2.useEffect(() => {
+  const items8 = [rect, isPipOrGridMode, null != tmp38, memo, origin, safeAreasConfig];
+  const effect3 = obj2.useEffect(() => {
     function tryInjectJavaScript() {
       return obj(...arguments);
     }
-    const tmp = closure_30;
+    const tmp = closure_17;
     if (tmp) {
       const tmp3 = null;
       if (null != memo) {
@@ -1796,18 +1284,18 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                     let closure_5 = tmp;
                     let closure_4 = tmp4;
                     closure_0 = undefined;
-                    const obj8 = closure_1_17;
-                    if (null != closure_1_17) {
-                      if (null != closure_1_32) {
-                        const tmp14 = c8;
+                    const obj8 = closure_1_13;
+                    if (null != closure_1_13) {
+                      if (null != closure_1_19) {
+                        const tmp14 = closure_4;
                         if (tmp14) {
                           rect = { top: 0, bottom: 0, left: 0, right: 0 };
                         } else {
-                          rect = closure_1_19;
+                          rect = closure_1_14;
                         }
-                        const rect2 = c9;
+                        const rect2 = closure_5;
                         let left;
-                        if (c9 != null) {
+                        if (closure_5 != null) {
                           left = rect2.left;
                         }
                         let left1;
@@ -1818,7 +1306,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                         if (left1 == null) {
                           c0 = 0;
                         }
-                        const rect1 = { left: hadInvalidUrlError(left, c0), right: hadInvalidUrlError(right, c1), top: hadInvalidUrlError(top, c2), bottom: hadInvalidUrlError(bottom, c3) };
+                        const rect1 = { left: _undefined(left, c0), right: _undefined(right, c1), top: _undefined(top, c2), bottom: _undefined(bottom, c3) };
                         right = undefined;
                         if (rect2 != null) {
                           right = rect2.right;
@@ -1857,7 +1345,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
                         }
                         const obj4 = { type: "safeAreaUpdateEvent", data: obj5 };
                         obj5 = { insets: rect1 };
-                        const tmp30 = iframeId(applicationId[34])(obj4, tmp13);
+                        const tmp30 = applicationId(onInvalidUrl[26])(obj4, tmp13);
                         closure_0 = tmp30;
                         c7 = 1;
                         c8 = 2;
@@ -1902,179 +1390,20 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseEm
         const tmp4 = tryInjectJavaScript();
       }
     }
-  }, items11);
-  if (null != tmp30) {
-    if (null != tmp8) {
-      let left;
-      if (safeAreasConfig != null) {
-        left = safeAreasConfig.left;
-      }
-      let num2;
-      if (rect != null) {
-        num2 = rect.left;
-      }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      let tmp44 = num2;
-      if (null != left) {
-        let num4 = 0;
-        if (!left.disable) {
-          let bound;
-          if (null != left.override) {
-            const _Math2 = Math;
-            bound = Math.max(0, left.override);
-          } else {
-            bound = num2;
-            if (null != left.offset) {
-              const _Math = Math;
-              bound = Math.max(0, num2 + left.offset);
-            }
-          }
-          num4 = bound;
-        }
-        tmp44 = num4;
-      }
-      let rect1 = { left: tmp44, right: tmp47, top: tmp50, bottom: tmp53 };
-      let right;
-      if (safeAreasConfig != null) {
-        right = safeAreasConfig.right;
-      }
-      let num5;
-      if (rect != null) {
-        num5 = rect.right;
-      }
-      if (num5 == null) {
-        num5 = 0;
-      }
-      tmp47 = num5;
-      if (null != right) {
-        let num7 = 0;
-        if (!right.disable) {
-          let bound1;
-          if (null != right.override) {
-            const _Math4 = Math;
-            bound1 = Math.max(0, right.override);
-          } else {
-            bound1 = num5;
-            if (null != right.offset) {
-              const _Math3 = Math;
-              bound1 = Math.max(0, num5 + right.offset);
-            }
-          }
-          num7 = bound1;
-        }
-        tmp47 = num7;
-      }
-      let top;
-      if (safeAreasConfig != null) {
-        top = safeAreasConfig.top;
-      }
-      let num8;
-      if (rect != null) {
-        num8 = rect.top;
-      }
-      if (num8 == null) {
-        num8 = 0;
-      }
-      tmp50 = num8;
-      if (null != top) {
-        let num10 = 0;
-        if (!top.disable) {
-          let bound2;
-          if (null != top.override) {
-            const _Math6 = Math;
-            bound2 = Math.max(0, top.override);
-          } else {
-            bound2 = num8;
-            if (null != top.offset) {
-              const _Math5 = Math;
-              bound2 = Math.max(0, num8 + top.offset);
-            }
-          }
-          num10 = bound2;
-        }
-        tmp50 = num10;
-      }
-      let bottom;
-      if (safeAreasConfig != null) {
-        bottom = safeAreasConfig.bottom;
-      }
-      let num11;
-      if (rect != null) {
-        num11 = rect.bottom;
-      }
-      if (num11 == null) {
-        num11 = 0;
-      }
-      tmp53 = num11;
-      if (null != bottom) {
-        let num13 = 0;
-        if (!bottom.disable) {
-          let bound3;
-          if (null != bottom.override) {
-            const _Math8 = Math;
-            bound3 = Math.max(0, bottom.override);
-          } else {
-            bound3 = num11;
-            if (null != bottom.offset) {
-              const _Math7 = Math;
-              bound3 = Math.max(0, num11 + bottom.offset);
-            }
-          }
-          num13 = bound3;
-        }
-        tmp53 = num13;
-      }
-      let obj6 = { insets: rect1, messageForDisallowedNavigationError: tmp56 };
-      tmp56 = undefined;
-      const createActivityFrameInjectedJavaScript = tmp2(tmp3[23]).createActivityFrameInjectedJavaScript;
-      tmp2(tmp3[23]);
-      if (!tmp13) {
-        tmp56 = channelId;
-      }
-      const activityFrameInjectedJavaScript = createActivityFrameInjectedJavaScript(obj6);
-      let tmp59Result = null;
-      if (null != tmp11) {
-        const obj7 = { style: tmp.webView, ref, source: obj8, androidAssetLoaderConfig: assetLoaderConfig, mixedContentMode: str2, androidInjectedJavaScriptForOrigins: tmp62, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, allowFileAccess: tmp13, injectedJavaScript: tmp63, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: tmp64, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
-        obj8 = { uri: tmp30 };
-        assetLoaderConfig = undefined;
-        const WebView = tmp2(tmp3[15]).WebView;
-        const tmp59 = guildId;
-        if (androidWebViewShellConfig != null) {
-          assetLoaderConfig = androidWebViewShellConfig.assetLoaderConfig;
-        }
-        let allowMixedContent;
-        if (androidWebViewShellConfig != null) {
-          allowMixedContent = androidWebViewShellConfig.allowMixedContent;
-        }
-        str2 = "never";
-        let flag = true;
-        if (true === allowMixedContent) {
-          str2 = "always";
-        }
-        tmp62 = undefined;
-        if (null != androidWebViewShellConfig) {
-          tmp62 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
-          const obj9 = { script: activityFrameInjectedJavaScript, allowedOriginRules: androidWebViewShellConfig.documentStartOriginRules };
-        }
-        tmp63 = undefined;
-        if (tmp13) {
-          tmp63 = activityFrameInjectedJavaScript;
-        }
-        tmp64 = undefined;
-        if (tmp13) {
-          tmp64 = callback3;
-        }
-        tmp59Result = tmp59(WebView, obj7);
-      }
-      return tmp59Result;
-    }
+  }, items8);
+  let tmp43 = null;
+  if (null != tmp38) {
+    let obj6 = { style: tmp.webView, ref, source: obj7, originWhitelist: ["*"], overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: callback, onLoadEnd, onContentProcessDidTerminate: callback2, onRenderProcessGone: callback1, webViewKey: iframeId, temporaryParentNodeTag: context, messagingWithWebViewKeyEnabled: true, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
+    obj7 = { html: null, baseUrl: null };
+    ({ html: obj11.html, url: obj11.baseUrl } = tmp18);
+    const WebView = tmp2(tmp3[12]).WebView;
+    const merged2 = Object.assign(tmp38);
+    tmp43 = hasInvalidUrlError(WebView, obj6);
   }
-  return null;
+  return tmp43;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInvalidUrlErrorState() {
   let first;
   let tmp4;
   const obj = react2;

@@ -1,15 +1,17 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11324
+// Function ID: 11325
 // Name: GameOrganizationInviteActionCreators
-// Dependencies: [5, 1087, 584, 1297, 6375, 2]
+// Dependencies: [5, 11033, 1084, 584, 1294, 6376, 2]
 
-// Module 11321 (GameOrganizationInviteActionCreators)
-import Constants from "Constants" /* 1087 */;
+// Module 11324 (GameOrganizationInviteActionCreators)
+import Constants from "Constants" /* 1084 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c2, c4, c5, closure_2;
+let c2, c4, c5, closure_2, constants;
 
+let closure_4 = GameOrganizationInviteConstants.GameOrganizationInviteAcceptStatus;
 const Endpoints = Constants.Endpoints;
 let obj = {
   resolveGameOrganizationInvite(arg0) {
@@ -47,7 +49,7 @@ let obj = {
               const code = tmp4;
               body = undefined;
               tmp = undefined;
-              const obj16 = tmp(closure_2[2]);
+              const obj16 = tmp(closure_2[3]);
               if (obj16.isDispatching()) {
                 c4 = 1;
                 c5 = 1;
@@ -55,11 +57,11 @@ let obj = {
                 return obj5;
               } else {
                 const obj6 = { type: "GAME_ORGANIZATION_INVITE_RESOLVE", code };
-                const obj9 = tmp(closure_2[2]);
+                const obj9 = tmp(closure_2[3]);
                 obj9.dispatch(obj6);
                 c3 = 1;
-                const HTTP = code(closure_2[3]).HTTP;
-                const obj7 = { url: c4.GAME_ORGANIZATION_INVITE(code), rejectWithError: true };
+                const HTTP = code(closure_2[4]).HTTP;
+                const obj7 = { url: c5.GAME_ORGANIZATION_INVITE(code), rejectWithError: true };
                 const get = HTTP.get;
                 c4 = 3;
                 c5 = 1;
@@ -77,18 +79,18 @@ let obj = {
               return obj10;
             } else {
               c5 = 3;
-              const obj11 = { value: c5.resolveGameOrganizationInvite(closure_129_0), done: true };
+              const obj11 = { value: closure_1_6.resolveGameOrganizationInvite(closure_129_0), done: true };
               return obj11;
             }
           } else if (2 === c4) {
             c3 = 0;
             const self = this;
             const self2 = this;
-            const tmp19 = new tmp(closure_2[4])(closure_2);
+            const tmp19 = new tmp(closure_2[5])(closure_2);
             tmp = tmp19;
             const obj12 = { type: "GAME_ORGANIZATION_INVITE_RESOLVE_FAILURE", code: closure_129_0, error: obj13 };
             obj13 = { code: tmp.code, message: tmp.message };
-            const obj4 = tmp(closure_2[2]);
+            const obj4 = tmp(closure_2[3]);
             obj4.dispatch(obj12);
             throw closure_2;
           } else if (arg0 === 1) {
@@ -102,7 +104,7 @@ let obj = {
           } else {
             body = value.body;
             const obj15 = { type: "GAME_ORGANIZATION_INVITE_RESOLVE_SUCCESS", code: closure_129_0, invite: body };
-            obj = tmp(closure_2[2]);
+            obj = tmp(closure_2[3]);
             obj.dispatch(obj15);
             c3 = 0;
             c5 = 3;
@@ -152,7 +154,7 @@ let obj = {
             } else {
               const guild_ids = tmp4;
               body = undefined;
-              const HTTP = guild_ids(c2[3]).HTTP;
+              const HTTP = guild_ids(c2[4]).HTTP;
               const request = { url: constants.GAME_ORGANIZATIONS_INVITABLE, query: obj4, rejectWithError: true };
               obj4 = { guild_ids };
               c2 = 1;
@@ -170,7 +172,7 @@ let obj = {
           } else {
             body = value.body;
             const obj7 = { type: "INVITABLE_GAME_ORGANIZATIONS_FETCH_SUCCESS", guildIds: closure_129_0, gameOrganizations: body };
-            obj = tmp(c2[2]);
+            obj = tmp(c2[3]);
             obj.dispatch(obj7);
             c3 = 3;
             return { value: "IconComponent", done: null };
@@ -203,8 +205,9 @@ let obj = {
         let c3;
         try {
           let character_id;
+          let body;
           c5 = 2;
-          if (0 === c4) {
+          if (0 === constants) {
             if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -215,23 +218,24 @@ let obj = {
             } else {
               character_id = tmp;
               closure_0 = tmp4;
+              body = undefined;
               c3 = 1;
-              const HTTP = closure_0(closure_2[3]).HTTP;
-              const request = { url: c4.GAME_ORGANIZATION_INVITE_JOIN(closure_0), body: obj4, rejectWithError: true };
+              const HTTP = closure_0(closure_2[4]).HTTP;
+              const request = { url: c5.GAME_ORGANIZATION_INVITE_JOIN(closure_0), body: obj4, rejectWithError: true };
               const post = HTTP.post;
               obj4 = { character_id };
-              c4 = 2;
+              constants = 2;
               c5 = 1;
               const obj5 = { value: post(request), done: false };
               return obj5;
             }
-          } else if (1 === c4) {
+          } else if (1 === constants) {
             c3 = 0;
-            closure_0 = closure_2;
+            character_id = closure_2;
             const self = this;
             const self2 = this;
-            const tmp12 = new character_id(closure_2[4])(closure_0);
-            throw tmp12;
+            const tmp18 = new character_id(closure_2[5])(character_id);
+            throw tmp18;
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -241,18 +245,24 @@ let obj = {
             const obj6 = { value, done: true };
             return obj6;
           } else {
+            body = value.body;
+            if (body.game_organization_join_status === constants.JOINED) {
+              const obj7 = { type: "GAME_ORGANIZATION_INVITE_ACCEPT_SUCCESS", code: closure_129_0 };
+              obj = character_id(closure_2[3]);
+              obj.dispatch(obj7);
+            }
             c3 = 0;
             c5 = 3;
-            obj = { value: value.body, done: true };
-            return obj;
+            const obj8 = { value: body, done: true };
+            return obj8;
           }
-        } catch (tmp14) {
-          closure_2 = tmp14;
+        } catch (tmp20) {
+          closure_2 = tmp20;
           if (0 === c3) {
             c5 = 3;
-            throw tmp14;
+            throw tmp20;
           } else {
-            c4 = 1;
+            constants = 1;
           }
         }
       }

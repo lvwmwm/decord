@@ -1,21 +1,21 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10149
+// Function ID: 10150
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10132, 10136, 1499, 5210, 5663, 1128, 10148, 7285, 5662, 5244, 5669, 6696, 5265, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 10134, 10138, 1496, 5211, 5664, 1125, 10150, 7287, 5663, 5245, 5670, 6697, 5266, 2]
 
-// Module 10147 (GIFPickerItemActionSheet)
+// Module 10149 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10132 */;
-import GifIcon from "GifIcon" /* 10148 */;
+import intl3 from "intl" /* 1125 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10134 */;
+import GifIcon from "GifIcon" /* 10150 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
   item = item.item;
   const tmp4 = closure_7();
   if (cResult[0] !== item.url) {
-    const tmpResult = tmp(10132);
+    const tmpResult = tmp(10134);
     const gifUrlKeyResult = tmpResult.gifUrlKey(item.url);
     cResult[0] = item.url;
     cResult[1] = gifUrlKeyResult;
@@ -56,10 +56,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(10136);
+  const tmpResult2 = tmp(10138);
   const isFavoriteGIF = tmpResult2.useIsFavoriteGIF(tmp5);
-  ({ width, height } = isFavoriteGIF(1499)());
-  const tmp8 = isFavoriteGIF(1499)();
+  ({ width, height } = isFavoriteGIF(1496)());
+  const tmp8 = isFavoriteGIF(1496)();
   const bound = Math.min((width - 2 * isFavoriteGIF(587).space.PX_16) / item.width, 0.5 * height / item.height);
   const result = item.width * bound;
   const result1 = item.height * bound;
@@ -107,9 +107,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
               str = "destructive";
             }
             const obj = { variant: str, onPress, text: stringResult, grow: true };
-            const intl = tmp2(1128).intl;
+            const intl = tmp2(1125).intl;
             const string = intl.string;
-            const t = tmp2(1128).t;
+            const t = tmp2(1125).t;
             if (isFavoriteGIF) {
               stringResult = string(t["5/NS74"]);
             } else {
@@ -163,9 +163,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                   str = "destructive";
                 }
                 const obj = { variant: str, onPress, text: stringResult, grow: true };
-                const intl = tmp2(1128).intl;
+                const intl = tmp2(1125).intl;
                 const string = intl.string;
-                const t = tmp2(1128).t;
+                const t = tmp2(1125).t;
                 if (isFavoriteGIF) {
                   stringResult = string(t["5/NS74"]);
                 } else {
@@ -211,9 +211,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                     str = "destructive";
                   }
                   const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1128).intl;
+                  const intl = tmp2(1125).intl;
                   const string = intl.string;
-                  const t = tmp2(1128).t;
+                  const t = tmp2(1125).t;
                   if (isFavoriteGIF) {
                     stringResult = string(t["5/NS74"]);
                   } else {
@@ -242,9 +242,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                   str = "destructive";
                 }
                 const obj = { variant: str, onPress, text: stringResult, grow: true };
-                const intl = tmp2(1128).intl;
+                const intl = tmp2(1125).intl;
                 const string = intl.string;
-                const t = tmp2(1128).t;
+                const t = tmp2(1125).t;
                 if (isFavoriteGIF) {
                   stringResult = string(t["5/NS74"]);
                 } else {
@@ -272,9 +272,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                     str = "destructive";
                   }
                   const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1128).intl;
+                  const intl = tmp2(1125).intl;
                   const string = intl.string;
-                  const t = tmp2(1128).t;
+                  const t = tmp2(1125).t;
                   if (isFavoriteGIF) {
                     stringResult = string(t["5/NS74"]);
                   } else {
@@ -344,9 +344,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                     str = "destructive";
                   }
                   const obj = { variant: str, onPress, text: stringResult, grow: true };
-                  const intl = tmp2(1128).intl;
+                  const intl = tmp2(1125).intl;
                   const string = intl.string;
-                  const t = tmp2(1128).t;
+                  const t = tmp2(1125).t;
                   if (isFavoriteGIF) {
                     stringResult = string(t["5/NS74"]);
                   } else {
@@ -415,8 +415,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
             items1 = [tmp25, tmp29];
             cResult[27] = tmp25;
             cResult[28] = tmp29;
-            cResult[29] = closure_6(tmp(6696).ButtonGroup, obj3);
-            const tmp32 = closure_6(tmp(6696).ButtonGroup, obj3);
+            cResult[29] = closure_6(tmp(6697).ButtonGroup, obj3);
+            const tmp32 = closure_6(tmp(6697).ButtonGroup, obj3);
           }
           class P {
             constructor() {
@@ -428,9 +428,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
                 str = "destructive";
               }
               const obj = { variant: str, onPress, text: stringResult, grow: true };
-              const intl = tmp2(1128).intl;
+              const intl = tmp2(1125).intl;
               const string = intl.string;
-              const t = tmp2(1128).t;
+              const t = tmp2(1125).t;
               if (isFavoriteGIF) {
                 stringResult = string(t["5/NS74"]);
               } else {
@@ -480,9 +480,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
               str = "destructive";
             }
             const obj = { variant: str, onPress, text: stringResult, grow: true };
-            const intl = tmp2(1128).intl;
+            const intl = tmp2(1125).intl;
             const string = intl.string;
-            const t = tmp2(1128).t;
+            const t = tmp2(1125).t;
             if (isFavoriteGIF) {
               stringResult = string(t["5/NS74"]);
             } else {
@@ -529,9 +529,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
             str = "destructive";
           }
           const obj = { variant: str, onPress, text: stringResult, grow: true };
-          const intl = tmp2(1128).intl;
+          const intl = tmp2(1125).intl;
           const string = intl.string;
-          const t = tmp2(1128).t;
+          const t = tmp2(1125).t;
           if (isFavoriteGIF) {
             stringResult = string(t["5/NS74"]);
           } else {
@@ -668,9 +668,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
       str = "destructive";
     }
     const obj = { variant: str, onPress: callback1, text: stringResult, grow: true };
-    const intl = tmp2(1128).intl;
+    const intl = tmp2(1125).intl;
     const string = intl.string;
-    const t = tmp2(1128).t;
+    const t = tmp2(1125).t;
     if (isFavoriteGIF) {
       stringResult = string(t["5/NS74"]);
     } else {

@@ -1,17 +1,17 @@
-// Module ID: 18869
-// Function ID: 18870
+// Module ID: 18907
+// Function ID: 18908
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7567, 4823, 5700, 1098, 5699, 5703, 18870, 8866, 7425, 11290, 18877, 12737, 18878, 11941, 7214, 18881, 2]
+// Dependencies: [5, 7568, 4824, 5701, 1095, 5700, 5704, 18908, 8866, 7427, 11293, 18915, 12746, 18916, 11942, 7216, 18919, 2]
 
-// Module 18869 (MessageCodedLinkManager)
-import Constants from "Constants" /* 1098 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5699 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18881 */;
+// Module 18907 (MessageCodedLinkManager)
+import Constants from "Constants" /* 1095 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5700 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7567 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import InviteStore from "InviteStore" /* 5700 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7568 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import InviteStore from "InviteStore" /* 5701 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -20,7 +20,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f138194 = (item) => {
+  const f138530 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -253,7 +253,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f138194);
+    let item = arr.forEach(f138530);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -264,7 +264,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f138194);
+        const item = arr.forEach(f138530);
       }
     });
   }

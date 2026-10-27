@@ -1,22 +1,22 @@
-// Module ID: 18029
-// Function ID: 18030
+// Module ID: 18063
+// Function ID: 18064
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9710, 10625, 1505, 1633, 9005, 6924, 1128, 18030, 12785, 12799, 12803, 7095, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 9712, 10628, 1502, 1630, 9005, 6926, 1125, 18064, 12794, 12808, 12812, 7097, 2]
 
-// Module 18029 (StandaloneMembersView)
+// Module 18063 (StandaloneMembersView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import useActiveTheme from "useActiveTheme" /* 9710 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12785 */;
-import KickConfirmDefault from "KickConfirm" /* 12799 */;
-import BanConfirmDefault from "BanConfirm" /* 12803 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 18030 */;
+import useActiveTheme from "useActiveTheme" /* 9712 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10628 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12794 */;
+import KickConfirmDefault from "KickConfirm" /* 12808 */;
+import BanConfirmDefault from "BanConfirm" /* 12812 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 18064 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,9 +124,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   const cResult = obj.c(31);
   guildId = guildId.guildId;
   closure_10();
-  let obj2 = guildId(1505);
+  let obj2 = guildId(1502);
   navigation = obj2.useNavigation();
-  const bottom = navigation(1633)().bottom;
+  const bottom = navigation(1630)().bottom;
   if (cResult[0] !== guildId) {
     const fn = function o() {
       const obj = GuildSettingsActionCreatorsDefault;
@@ -155,7 +155,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   }
   dependencyMap = tmp10;
   if (cResult[5] !== navigation) {
-    const tmpResult = tmp(6924);
+    const tmpResult = tmp(6926);
     const headerCloseButton = tmpResult.getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;

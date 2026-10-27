@@ -1,25 +1,25 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17409
+// Function ID: 17410
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1406, 5026, 1392, 13316, 21, 4971, 558, 576, 504, 7267, 587, 5686, 5234, 1128, 6908, 5039, 1202, 5025, 2]
+// Dependencies: [19, 17, 1403, 5027, 1389, 13330, 21, 4972, 558, 576, 504, 7269, 587, 5687, 5235, 1125, 6910, 5040, 1199, 5026, 2]
 
-// Module 17368 (AccountSwitcherListItem)
+// Module 17409 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import react_native from "react-native" /* 5039 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import MultiAccountStore from "MultiAccountStore" /* 13316 */;
+import intl4 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import UserUtilsDefault from "UserUtils" /* 5026 */;
+import react_native from "react-native" /* 5040 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import MultiAccountStore from "MultiAccountStore" /* 13330 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import StreamerModeStore from "StreamerModeStore" /* 5026 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserRecord from "UserRecord" /* 1403 */;
+import StreamerModeStore from "StreamerModeStore" /* 5027 */;
+import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-      const CircleCheckIcon = tmp(7267).CircleCheckIcon;
+      const CircleCheckIcon = tmp(7269).CircleCheckIcon;
       const tmp17 = React4(CircleCheckIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;
@@ -79,7 +79,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        const CircleInformationIcon = tmp(5686).CircleInformationIcon;
+        const CircleInformationIcon = tmp(5687).CircleInformationIcon;
         const tmp12 = React4(CircleInformationIcon, obj3);
         cResult[3] = tmp12;
         tmp9 = tmp12;
@@ -104,13 +104,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
   }
   if (id === id1) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    const CircleCheckIcon = tmp(7267).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7269).CircleCheckIcon;
     tmp6 = React4(CircleCheckIcon, obj2);
   } else {
     tmp6 = null;
     if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
       const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      const CircleInformationIcon = tmp(5686).CircleInformationIcon;
+      const CircleInformationIcon = tmp(5687).CircleInformationIcon;
       tmp6 = React4(CircleInformationIcon, obj3);
     }
   }
@@ -204,7 +204,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-sm/semibold", color: "text-brand", children: obj8.string(intl4.t.seV8yt) };
-        const Text2 = tmp(5234).Text;
+        const Text2 = tmp(5235).Text;
         class U {
           constructor() {
             return currentUser.getCurrentUser();
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp(6908).PressableOpacity;
+      PressableOpacity = tmp(6910).PressableOpacity;
     }
     if (cResult[8] !== (id === id1)) {
       const obj3 = { selected: id === id1 };
@@ -247,8 +247,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (cResult[10] !== (id === id1)) {
       let stringResult;
       if (id !== id1) {
-        const intl = tmp(1128).intl;
-        stringResult = intl.string(tmp(1128).t.wY4y0R);
+        const intl = tmp(1125).intl;
+        stringResult = intl.string(tmp(1125).t.wY4y0R);
       }
       class U {
         constructor() {
@@ -464,7 +464,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj13 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: obj6.string(intl4.t.tYX2ps) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5235).Text;
       class U {
         constructor() {
           return currentUser.getCurrentUser();
@@ -521,14 +521,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     let PressableOpacity;
     if (showActiveAccountLabel) {
       const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
-      const Text = tmp2(5234).Text;
-      intl = tmp2(1128).intl;
+      const Text = tmp2(5235).Text;
+      intl = tmp2(1125).intl;
       tmp8 = React4(Text, obj4);
     }
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp2(6908).PressableOpacity;
+      PressableOpacity = tmp2(6910).PressableOpacity;
     }
     const obj5 = { selected: id === id1 };
     const tmp2Result = react_native;
@@ -537,18 +537,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = radioA11yNative);
     stringResult = undefined;
     if (id !== id1) {
-      const intl2 = tmp2(1128).intl;
-      stringResult = intl2.string(tmp2(1128).t.wY4y0R);
+      const intl2 = tmp2(1125).intl;
+      stringResult = intl2.string(tmp2(1125).t.wY4y0R);
     }
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "y" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };
     const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
-    const Text2 = tmp2(5234).Text;
+    const Text2 = tmp2(5235).Text;
     let str = "always";
     getUserTag = UserUtilsDefault.getUserTag;
     UserUtilsDefault;
@@ -561,7 +561,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (tmp18Result) {
       const _HermesInternal = HermesInternal;
       const obj14 = { variant: "text-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
-      const Text3 = tmp2(5234).Text;
+      const Text3 = tmp2(5235).Text;
       tmp18Result = tmp18(Text3, obj14);
     }
     items4[1] = tmp18Result;
@@ -578,8 +578,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
   tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
     const obj16 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
-    const Text4 = tmp2(5234).Text;
-    intl3 = tmp2(1128).intl;
+    const Text4 = tmp2(5235).Text;
+    intl3 = tmp2(1125).intl;
     tmp8 = React4(Text4, obj16);
   }
 });

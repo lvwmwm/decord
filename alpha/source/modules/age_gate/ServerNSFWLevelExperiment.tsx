@@ -1,11 +1,11 @@
-// Module ID: 4842
-// Function ID: 4843
+// Module ID: 4843
+// Function ID: 4844
 // Name: ServerNSFWLevelExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1452, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 4842 (ServerNSFWLevelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 4843 (ServerNSFWLevelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

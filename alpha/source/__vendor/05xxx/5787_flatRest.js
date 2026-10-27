@@ -1,16 +1,19 @@
 // Module ID: 5787
 // Function ID: 5788
 // Name: flatRest
-// Dependencies: [5788, 5792, 5794]
+// Dependencies: [5788, 5798]
 
 // Module 5787 (flatRest)
-import shortOut from "shortOut" /* 5788 */;
-import overRest from "overRest" /* 5792 */;
-import flatten from "flatten" /* 5794 */;
+import flatRest from "flatRest" /* 5788 */;
+import basePick from "basePick" /* 5798 */;
 
 
-export default function flatRest(arg0) {
-  const tmp = shortOut;
-  const tmp2 = overRest;
-  return tmp(tmp2(arg0, undefined, flatten), "" + arg0);
-};
+export default flatRest((arg0, arg1) => {
+  let obj;
+  if (null == arg0) {
+    obj = {};
+  } else {
+    obj = basePick(arg0, arg1);
+  }
+  return obj;
+});

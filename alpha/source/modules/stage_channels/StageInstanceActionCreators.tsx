@@ -1,12 +1,12 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 7882
+// Function ID: 7883
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1087, 1297, 2]
+// Dependencies: [5, 1084, 1294, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 7881 (StageInstanceActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 7882 (StageInstanceActionCreators)
+import Constants from "Constants" /* 1084 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15113
+// Function ID: 15114
 // Name: MarkupHeadingRule
-// Dependencies: [1951, 2]
+// Dependencies: [1948, 2]
 
-// Module 15077 (MarkupHeadingRule)
-import _mod1951 from "module_1951" /* 1951 */;
+// Module 15113 (MarkupHeadingRule)
+import _mod1948 from "module_1948" /* 1948 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1951 = _mod1951;
+const _modDef1948 = _mod1948;
 
 const re2 = /\n$/;
 let obj = {
@@ -20,13 +20,13 @@ let obj = {
           tmp = null;
         }
       }
-      const obj = _mod1951;
+      const obj = _mod1948;
       tmp = obj.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
     }
     return tmp;
   }
 };
-const merged = Object.assign(_modDef1951.defaultRules.heading);
+const merged = Object.assign(_modDef1948.defaultRules.heading);
 const result = size.fileFinishedImporting("modules/markup/MarkupHeadingRule.tsx");
 
 export default obj;

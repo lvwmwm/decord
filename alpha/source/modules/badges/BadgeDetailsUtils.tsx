@@ -1,16 +1,16 @@
-// Module ID: 11134
-// Function ID: 11135
+// Module ID: 11137
+// Function ID: 11138
 // Name: BadgeDetailsUtils
-// Dependencies: [8681, 1394, 8673, 1128, 8682, 11126, 2033, 2]
+// Dependencies: [8681, 1391, 8673, 1125, 8682, 11129, 2030, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 11134 (BadgeDetailsUtils)
-import intl5 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import StringUtils from "StringUtils" /* 2033 */;
+// Module 11137 (BadgeDetailsUtils)
+import intl5 from "intl" /* 1125 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import StringUtils from "StringUtils" /* 2030 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
 import BadgeIdResolution from "BadgeIdResolution" /* 8682 */;
-import BadgeUtils from "BadgeUtils" /* 11126 */;
+import BadgeUtils from "BadgeUtils" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -77,8 +77,8 @@ export const getBadgeTitle = function getBadgeTitle(badge, displayTier) {
     name = displayTier.name;
   }
   if (tmp3) {
-    const intl = tmp(1128).intl;
-    name2 = intl.string(tmp(1128).t.Ipxkog);
+    const intl = tmp(1125).intl;
+    name2 = intl.string(tmp(1125).t.Ipxkog);
   } else {
     name2 = badge.name;
   }
@@ -116,8 +116,8 @@ export const getBadgeStatusText = function getBadgeStatusText(badge, arg1) {
   if (badge.owned) {
     let stringResult;
     if (badge.badge_id === BadgeId.BadgeId.APRIL_FOOLS_2026) {
-      const intl4 = tmp5(1128).intl;
-      stringResult = intl4.string(tmp5(1128).t["5LcHT0"]);
+      const intl4 = tmp5(1125).intl;
+      stringResult = intl4.string(tmp5(1125).t["5LcHT0"]);
     } else {
       const tmp5Result = BadgeIdResolution;
       const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(8673).BadgeId.STAFF;
@@ -125,20 +125,20 @@ export const getBadgeStatusText = function getBadgeStatusText(badge, arg1) {
         if (null != tmp) {
           let formatToPlainStringResult;
           if (badge.badge_id !== BadgeId.BadgeId.STAFF) {
-            const intl3 = tmp5(1128).intl;
+            const intl3 = tmp5(1125).intl;
             const formatToPlainString = intl3.formatToPlainString;
             const _Date = Date;
             const self = this;
             const self2 = this;
             const obj = { date };
-            const XmaiRQ = tmp5(1128).t.XmaiRQ;
+            const XmaiRQ = tmp5(1125).t.XmaiRQ;
             date = new Date(tmp);
             formatToPlainStringResult = formatToPlainString(XmaiRQ, obj);
           }
           stringResult = formatToPlainStringResult;
         }
-        const intl2 = tmp5(1128).intl;
-        formatToPlainStringResult = intl2.string(tmp5(1128).t.sTFApF);
+        const intl2 = tmp5(1125).intl;
+        formatToPlainStringResult = intl2.string(tmp5(1125).t.sTFApF);
       } else {
         stringResult = arg1;
       }
@@ -291,7 +291,7 @@ export const getBadgeProgressDisplay = function getBadgeProgressDisplay(badge, v
     simple_icon_url1 = prop1;
   }
   let progress_helper_text;
-  const isNullOrEmpty = tmp2(2033).isNullOrEmpty;
+  const isNullOrEmpty = tmp2(2030).isNullOrEmpty;
   StringUtils;
   if (first != null) {
     progress_helper_text = first.progress_helper_text;

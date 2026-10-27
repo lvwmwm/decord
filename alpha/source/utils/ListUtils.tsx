@@ -1,11 +1,11 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12511
+// Function ID: 12512
 // Name: ListUtils
-// Dependencies: [1128, 2]
+// Dependencies: [1125, 2]
 // Exports: getListSummaryLabel
 
-// Module 12503 (ListUtils)
-import intl5 from "intl" /* 1128 */;
+// Module 12511 (ListUtils)
+import intl5 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/ListUtils.tsx");

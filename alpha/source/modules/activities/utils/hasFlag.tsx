@@ -1,12 +1,12 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 7411
+// Function ID: 7412
 // Name: hasFlag
-// Dependencies: [1087, 1405, 2]
+// Dependencies: [1084, 1402, 2]
 // Exports: default
 
-// Module 7409 (hasFlag)
-import Constants from "Constants" /* 1087 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
+// Module 7411 (hasFlag)
+import Constants from "Constants" /* 1084 */;
+import FlagUtils from "FlagUtils" /* 1402 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;

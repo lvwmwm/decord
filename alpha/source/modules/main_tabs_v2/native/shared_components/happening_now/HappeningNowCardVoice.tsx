@@ -1,24 +1,24 @@
-// Module ID: 17513
-// Function ID: 17514
+// Module ID: 17554
+// Function ID: 17555
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7732, 1392, 5630, 16653, 1087, 21, 4971, 1267, 12711, 2002, 17496, 16654, 8572, 14325, 17506, 558, 576, 8443, 12, 1388, 504, 5989, 1128, 2]
+// Dependencies: [19, 17, 7733, 1389, 5631, 16695, 1084, 21, 4972, 1264, 12719, 1999, 17537, 16696, 8572, 14361, 17547, 558, 576, 8442, 12, 1385, 504, 5990, 1125, 2]
 
-// Module 17513 (HappeningNowCardVoice)
+// Module 17554 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16653 */;
+import Constants from "Constants" /* 1084 */;
+import intl3 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import GlobalUtils from "GlobalUtils" /* 1385 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16695 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
-import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7733 */;
+import UserStore from "UserStore" /* 1389 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

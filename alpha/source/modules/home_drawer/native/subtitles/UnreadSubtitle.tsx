@@ -1,12 +1,12 @@
-// Module ID: 17774
-// Function ID: 17775
+// Module ID: 17815
+// Function ID: 17816
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17772, 8502, 8551, 1128, 5234, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17813, 8502, 8551, 1125, 5235, 2]
 
-// Module 17774 (UnreadSubtitle)
+// Module 17815 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
   const obj = subtitleStyles(576);
   const cResult = obj.c(16);
   ({ guild, channel, channelName, count } = arg0);
-  const obj2 = subtitleStyles(17772);
+  const obj2 = subtitleStyles(17813);
   subtitleStyles = obj2.useSubtitleStyles();
   if (cResult[0] === channel) {
     let tmp5;
@@ -66,7 +66,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
           }
         }
       }
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj4 = {
         channelName,
         count: diff,
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
               return jsx(subtitleStyles(closure_1[9]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
             }
       };
-      const formatResult = intl2.format(subtitleStyles(1128).t.OqlmU6, obj4);
+      const formatResult = intl2.format(subtitleStyles(1125).t.OqlmU6, obj4);
       cResult[6] = tmp5;
       cResult[7] = channelName;
       cResult[8] = subtitleStyles.subtitleText;
@@ -92,9 +92,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
       cResult[11] = formatResult;
       tmp11 = formatResult;
     }
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj5 = { channelName, count: diff };
-    const formatToPlainStringResult = intl.formatToPlainString(subtitleStyles(1128).t.gxD5I6, obj5);
+    const formatToPlainStringResult = intl.formatToPlainString(subtitleStyles(1125).t.gxD5I6, obj5);
     cResult[3] = channelName;
     cResult[4] = diff;
     cResult[5] = formatToPlainStringResult;

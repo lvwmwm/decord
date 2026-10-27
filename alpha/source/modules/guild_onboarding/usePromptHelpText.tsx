@@ -1,15 +1,15 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7224
+// Function ID: 7225
 // Name: usePromptHelpText
-// Dependencies: [4823, 4877, 4903, 4913, 1392, 1087, 1128, 558, 576, 504, 5604, 2]
+// Dependencies: [4824, 4878, 4904, 4914, 1389, 1084, 1125, 558, 576, 504, 5605, 2]
 
-// Module 7222 (usePromptHelpText)
-import Constants from "Constants" /* 1087 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 7224 (usePromptHelpText)
+import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildRoleStore from "GuildRoleStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -276,18 +276,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1128).intl;
-    str = intl.string(tmp2(1128).t.JshhEl);
+    const intl = tmp2(1125).intl;
+    str = intl.string(tmp2(1125).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
       let str6 = "";
       if (0 !== mapped.length) {
-        const intl4 = tmp2(1128).intl;
+        const intl4 = tmp2(1125).intl;
         const format3 = intl4.format;
         const _Math3 = Math;
         const obj3 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const Kj5GIT = tmp2(1128).t.Kj5GIT;
+        const Kj5GIT = tmp2(1125).t.Kj5GIT;
         [obj6.role1, obj6.role2] = mapped;
         str6 = format3(Kj5GIT, obj3);
       }
@@ -300,11 +300,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
   if (stateFromStoresArray1.length > 0) {
     let str3 = "";
     if (0 !== stateFromStoresArray1.length) {
-      const intl2 = tmp2(1128).intl;
+      const intl2 = tmp2(1125).intl;
       const format = intl2.format;
       const _Math = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const Rj841R = tmp2(1128).t.Rj841R;
+      const Rj841R = tmp2(1125).t.Rj841R;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str3 = format(Rj841R, obj11);
     }
@@ -312,11 +312,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
     if (mapped.length > 0) {
       let str5 = "";
       if (0 !== mapped.length) {
-        const intl3 = tmp2(1128).intl;
+        const intl3 = tmp2(1125).intl;
         const format2 = intl3.format;
         const _Math2 = Math;
         const obj12 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const cJZxWf = tmp2(1128).t.cJZxWf;
+        const cJZxWf = tmp2(1125).t.cJZxWf;
         [obj5.role1, obj5.role2] = mapped;
         str5 = format2(cJZxWf, obj12);
       }
@@ -592,16 +592,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomi
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1128).intl;
-    str = intl.string(tmp2(1128).t.JshhEl);
+    const intl = tmp2(1125).intl;
+    str = intl.string(tmp2(1125).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
-      const intl4 = tmp2(1128).intl;
+      const intl4 = tmp2(1125).intl;
       const format3 = intl4.format;
       const _Math4 = Math;
       const obj6 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-      const vdtNYa = tmp2(1128).t.vdtNYa;
+      const vdtNYa = tmp2(1125).t.vdtNYa;
       [obj5.role1, obj5.role2] = mapped;
       str = format3(vdtNYa, obj6);
     }
@@ -609,22 +609,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomi
   }
   if (stateFromStoresArray1.length > 0) {
     if (0 === mapped.length) {
-      const intl3 = tmp2(1128).intl;
+      const intl3 = tmp2(1125).intl;
       const format2 = intl3.format;
       const _Math3 = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const ZKywGU = tmp2(1128).t.ZKywGU;
+      const ZKywGU = tmp2(1125).t.ZKywGU;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str = format2(ZKywGU, obj11);
     }
   }
   const tmp5 = stateFromStoresArray1.length > 0 && mapped.length > 0;
   if (tmp5) {
-    const intl2 = tmp2(1128).intl;
+    const intl2 = tmp2(1125).intl;
     const format = intl2.format;
     const _Math = Math;
     const obj12 = { channelCount: stateFromStoresArray1.length, extraChannelCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook, roleCount: mapped.length, extraRoleCount: Math.max(mapped.length - 2, 0), role1: null, role2: null };
-    const WewRHM = tmp2(1128).t.WewRHM;
+    const WewRHM = tmp2(1125).t.WewRHM;
     [obj3.channel1, obj3.channel2] = stateFromStoresArray1;
     const _Math2 = Math;
     [obj3.role1, obj3.role2] = mapped;

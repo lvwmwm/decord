@@ -1,15 +1,15 @@
-// Module ID: 17554
-// Function ID: 17555
+// Module ID: 17595
+// Function ID: 17596
 // Name: VoiceUserSummary
-// Dependencies: [19, 17, 21, 1202, 4971, 558, 576, 9709, 9708, 8568, 8572, 2]
+// Dependencies: [19, 17, 21, 1199, 4972, 558, 576, 9711, 9710, 8568, 8572, 2]
 
-// Module 17554 (VoiceUserSummary)
+// Module 17595 (VoiceUserSummary)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1202 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9709 */;
+import native from "native" /* 1199 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9711 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp4.transparentBorder;
   }
-  const tmpResult = tmp(9708);
+  const tmpResult = tmp(9710);
   const clientThemesOverride = tmpResult.useClientThemesOverride();
   const tmp7 = noPadding ? tmp4.containerNoPadding : tmp4.container;
   if (cResult[0] === tmp7) {
@@ -107,8 +107,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
             }
           }
-          const obj3 = { offsetAmount: -6, style: tmp4.iconContainer, overflowStyle: tmp12, overflowComponent: tmp(1202).OverflowTextSmall, items: users, max, renderItem: tmp13 };
-          const SummarizedIconRow = tmp(1202).SummarizedIconRow;
+          const obj3 = { offsetAmount: -6, style: tmp4.iconContainer, overflowStyle: tmp12, overflowComponent: tmp(1199).OverflowTextSmall, items: users, max, renderItem: tmp13 };
+          const SummarizedIconRow = tmp(1199).SummarizedIconRow;
           const tmp16 = closure_4(SummarizedIconRow, obj3);
           cResult[12] = max;
           cResult[13] = tmp4.iconContainer;
@@ -161,7 +161,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(9708);
+  let obj = guildId(9710);
   const obj2 = { style: items, children: null };
   items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   if (renderIcon) {
@@ -175,7 +175,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       offsetAmount: -6,
       style: tmp.iconContainer,
       overflowStyle: items2,
-      overflowComponent: guildId(1202).OverflowTextSmall,
+      overflowComponent: guildId(1199).OverflowTextSmall,
       items: users,
       max,
       renderItem(user, arg1) {
@@ -191,7 +191,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
     };
     items2 = [tmp.overflow, transparentBorder];
-    const SummarizedIconRow = tmp4(1202).SummarizedIconRow;
+    const SummarizedIconRow = tmp4(1199).SummarizedIconRow;
     items1[1] = closure_4(SummarizedIconRow, obj4);
     obj2.children = items1;
     return tmp5(tmp6, obj2);

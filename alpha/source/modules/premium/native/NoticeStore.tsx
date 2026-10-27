@@ -1,16 +1,16 @@
-// Module ID: 15034
-// Function ID: 15035
+// Module ID: 15070
+// Function ID: 15071
 // Name: NoticeStore
-// Dependencies: [7560, 1394, 1087, 510, 2049, 504, 584, 2]
+// Dependencies: [7561, 1391, 1084, 510, 2046, 504, 584, 2]
 
-// Module 15034 (NoticeStore)
+// Module 15070 (NoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import UserOfferStore from "UserOfferStore" /* 7560 */;
+import Constants from "Constants" /* 1084 */;
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import _modDef2046 from "module_2046" /* 2046 */;
+import UserOfferStore from "UserOfferStore" /* 7561 */;
 import size from "module_2" /* 2 */;
 
 function clearDismissUntil(arg0) {
@@ -26,10 +26,10 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       const value = Storage.get(`${tmp10[PREMIUM_TIER_0_TRIAL_ENDING]}-untilAtLeast`);
       let tmp4 = null;
       if (null != value) {
-        tmp4 = _modDef2049(value);
+        tmp4 = _modDef2046(value);
       }
       if (null != tmp4) {
-        return tmp4.isAfter(_modDef2049());
+        return tmp4.isAfter(_modDef2046());
       }
     }
     let tmp6 = null != tmp11 && "" !== tmp11;

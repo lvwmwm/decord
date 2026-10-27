@@ -1,8 +1,8 @@
-// Module ID: 18417
-// Function ID: 18418
+// Module ID: 18451
+// Function ID: 18452
 // Dependencies: [2]
 
-// Module 18417
+// Module 18451
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/collectibles/frames/ea/announcement_key_1.png.js");

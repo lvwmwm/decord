@@ -1,15 +1,15 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11936
+// Function ID: 11937
 // Name: BotsBanner
-// Dependencies: [19, 21, 558, 576, 11936, 11921, 1128, 11932, 2]
+// Dependencies: [19, 21, 558, 576, 11937, 11922, 1125, 11933, 2]
 
-// Module 11935 (BotsBanner)
+// Module 11936 (BotsBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11921 */;
-import BannerBaseDefault from "BannerBase" /* 11932 */;
-import useBannerBots from "useBannerBots" /* 11936 */;
+import intl2 from "intl" /* 1125 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11922 */;
+import BannerBaseDefault from "BannerBase" /* 11933 */;
+import useBannerBots from "useBannerBots" /* 11937 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotsBanner
           cResult[10] = tmp15;
           tmp12 = tmp15;
         }
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         const obj4 = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
         const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9SN0xw"], obj4);
         cResult[5] = firstBotApplication.name;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotsBanner
     if (null != secondBotApplication) {
       const obj2 = { image: tmp6, text: intl.formatToPlainString(intl2.t["9SN0xw"], obj3) };
       const tmp5Result = BannerBaseDefault;
-      intl = tmp(1128).intl;
+      intl = tmp(1125).intl;
       obj3 = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
       tmp4Result = tmp4(tmp5Result, obj2);
     }

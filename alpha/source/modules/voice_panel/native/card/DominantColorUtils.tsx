@@ -1,13 +1,13 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9418
+// Function ID: 9419
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1459, 558, 576, 4968, 587, 568, 1901, 2]
+// Dependencies: [32, 19, 17, 1456, 558, 576, 4969, 587, 568, 1898, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 9419 (DominantColorUtils)
+// Module 9418 (DominantColorUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LRUCacheDefault from "LRUCache" /* 1459 */;
+import LRUCacheDefault from "LRUCache" /* 1456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantR
       hexToRgbResult = closure_6.get(uri);
     }
     if (hexToRgbResult == null) {
-      const tmpResult = tmp(4968);
+      const tmpResult = tmp(4969);
       hexToRgbResult = tmpResult.hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
     }
     cResult[2] = uri;
@@ -230,25 +230,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantC
   const tmp = closure_8(arg0);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 });
-function getCachedSourceFromURI(avatarURI) {
-  let value = closure_7.get(avatarURI);
+function getCachedSourceFromURI(avatarURL) {
+  let value = closure_7.get(avatarURL);
   const obj = closure_7;
   if (value == null) {
-    let tmp2 = avatarURI;
-    if (typeof avatarURI !== "number") {
+    let tmp2 = avatarURL;
+    if (typeof avatarURL !== "number") {
       let tmp3 = null;
-      if (null != avatarURI) {
+      if (null != avatarURL) {
         tmp3 = null;
-        if ("" !== avatarURI.trim()) {
-          tmp3 = { uri: avatarURI };
-          const obj2 = { uri: avatarURI };
+        if ("" !== avatarURL.trim()) {
+          tmp3 = { uri: avatarURL };
+          const obj2 = { uri: avatarURL };
         }
       }
       tmp2 = tmp3;
     }
     value = tmp2;
   }
-  const result = obj.set(avatarURI, value);
+  const result = obj.set(avatarURL, value);
   return value;
 }
 let result = size.fileFinishedImporting("modules/voice_panel/native/card/DominantColorUtils.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7235
+// Function ID: 7236
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1128, 587, 4971, 558, 576, 5252, 5258, 7234, 5038, 5234, 2]
+// Dependencies: [17, 21, 1125, 587, 4972, 558, 576, 5253, 5259, 7236, 5039, 5235, 2]
 
-// Module 7233 (Badge/Badge)
+// Module 7235 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5038 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useToken from "useToken" /* 5252 */;
-import BadgeShared from "BadgeShared" /* 7234 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5039 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import useToken from "useToken" /* 5253 */;
+import BadgeShared from "BadgeShared" /* 7236 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp3;
-const LinearGradientDefault = tmp3(5258);
+const LinearGradientDefault = tmp3(5259);
 function getBadgeColors(variant) {
   switch (variant) {
     case "secondary":
@@ -194,7 +194,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   const cResult = obj.c(17);
   ({ type, variant, icon } = arg0);
   if (undefined === variant) {
-    variant = tmp(7234).DEFAULT_BADGE_VARIANT;
+    variant = tmp(7236).DEFAULT_BADGE_VARIANT;
   }
   const tmp4 = closure_7(variant);
   const tmpResult = useBadgeTextVariant;
@@ -202,17 +202,17 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   if (cResult[0] !== type) {
     let text;
     if ("new" === type) {
-      const intl4 = tmp(1128).intl;
-      text = intl4.string(tmp(1128).t.y2b7CA);
+      const intl4 = tmp(1125).intl;
+      text = intl4.string(tmp(1125).t.y2b7CA);
     } else if ("beta" === type) {
-      const intl3 = tmp(1128).intl;
-      text = intl3.string(tmp(1128).t.oW0eUd);
+      const intl3 = tmp(1125).intl;
+      text = intl3.string(tmp(1125).t.oW0eUd);
     } else if ("early_access" === type) {
-      const intl2 = tmp(1128).intl;
-      text = intl2.string(tmp(1128).t.EYxi0o);
+      const intl2 = tmp(1125).intl;
+      text = intl2.string(tmp(1125).t.EYxi0o);
     } else if ("free_trial" === type) {
-      const intl = tmp(1128).intl;
-      text = intl.string(tmp(1128).t.IBYG5U);
+      const intl = tmp(1125).intl;
+      text = intl.string(tmp(1125).t.IBYG5U);
     } else {
       text = type.text;
     }
@@ -301,17 +301,17 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   const obj = useBadgeTextVariant;
   const badgeTextVariant = obj.useBadgeTextVariant();
   if ("new" === type) {
-    const intl4 = tmp4(1128).intl;
-    text = intl4.string(tmp4(1128).t.y2b7CA);
+    const intl4 = tmp4(1125).intl;
+    text = intl4.string(tmp4(1125).t.y2b7CA);
   } else if ("beta" === type) {
-    const intl3 = tmp4(1128).intl;
-    text = intl3.string(tmp4(1128).t.oW0eUd);
+    const intl3 = tmp4(1125).intl;
+    text = intl3.string(tmp4(1125).t.oW0eUd);
   } else if ("early_access" === type) {
-    const intl2 = tmp4(1128).intl;
-    text = intl2.string(tmp4(1128).t.EYxi0o);
+    const intl2 = tmp4(1125).intl;
+    text = intl2.string(tmp4(1125).t.EYxi0o);
   } else if ("free_trial" === type) {
-    const intl = tmp4(1128).intl;
-    text = intl.string(tmp4(1128).t.IBYG5U);
+    const intl = tmp4(1125).intl;
+    text = intl.string(tmp4(1125).t.IBYG5U);
   } else {
     text = type.text;
   }

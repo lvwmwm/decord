@@ -1,9 +1,9 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19144
+// Function ID: 19145
 // Name: IntegrationExpireBehaviorTypes
 // Dependencies: [2]
 
-// Module 19106 (IntegrationExpireBehaviorTypes)
+// Module 19144 (IntegrationExpireBehaviorTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireBehaviorTypes.tsx");

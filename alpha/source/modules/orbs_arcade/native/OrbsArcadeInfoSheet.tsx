@@ -1,14 +1,14 @@
-// Module ID: 16426
-// Function ID: 16427
+// Module ID: 16465
+// Function ID: 16466
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 16395, 21, 558, 576, 504, 16413, 1128, 16414, 10856, 2]
+// Dependencies: [19, 16434, 21, 558, 576, 504, 16452, 1125, 16453, 10859, 2]
 
-// Module 16426 (OrbsArcadeInfoSheet)
+// Module 16465 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 16413 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16414 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 16452 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16453 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,10 +65,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1128).intl;
-      const stringResult = intl.string(gameId(1128).t["3AT3DL"]);
-      const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(gameId(1128).t.GSj8gp);
+      const intl = tmp(1125).intl;
+      const stringResult = intl.string(gameId(1125).t["3AT3DL"]);
+      const intl2 = tmp(1125).intl;
+      const stringResult1 = intl2.string(gameId(1125).t.GSj8gp);
       cResult[6] = stringResult;
       cResult[7] = stringResult1;
       tmp14 = stringResult1;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
     if (cResult[8] !== stateFromStores) {
       OrbsArcadeSheetActionsDefault;
-      const tmp22 = <tmp20 game={stateFromStores} sheetKey={OrbsArcadeInfoSheet_str} secondaryAction={gameId(16414).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY} direction="vertical" />;
+      const tmp22 = <tmp20 game={stateFromStores} sheetKey={OrbsArcadeInfoSheet_str} secondaryAction={gameId(16453).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY} direction="vertical" />;
       cResult[8] = stateFromStores;
       cResult[9] = tmp22;
       tmp17 = tmp22;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       return tmp23;
     }
-    const tmp25 = jsx(gameId(10856).PromoSheet, { illustration: tmp9, title: tmp13, description: tmp14, actions: tmp17 });
+    const tmp25 = jsx(gameId(10859).PromoSheet, { illustration: tmp9, title: tmp13, description: tmp14, actions: tmp17 });
     cResult[10] = tmp9;
     cResult[11] = tmp17;
     cResult[12] = tmp25;
@@ -110,16 +110,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   } else {
     const asset = stateFromStores.asset;
     let tmp9Result;
-    const PromoSheet = tmp(10856).PromoSheet;
+    const PromoSheet = tmp(10859).PromoSheet;
     if (null != asset) {
       const obj2 = { asset };
       tmp9Result = tmp9(OrbsArcadeGameGraphicDefault, obj2);
     }
-    const intl = tmp(1128).intl;
-    const intl2 = tmp(1128).intl;
-    ({ game: stateFromStores, sheetKey: OrbsArcadeInfoSheet_str, secondaryAction: gameId(16414).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
+    const intl = tmp(1125).intl;
+    const intl2 = tmp(1125).intl;
+    ({ game: stateFromStores, sheetKey: OrbsArcadeInfoSheet_str, secondaryAction: gameId(16453).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
-    return <PromoSheet illustration={tmp9Result} title={intl.string(gameId(1128).t["3AT3DL"])} description={intl2.string(gameId(1128).t.GSj8gp)} actions={null} />;
+    return <PromoSheet illustration={tmp9Result} title={intl.string(gameId(1125).t["3AT3DL"])} description={intl2.string(gameId(1125).t.GSj8gp)} actions={null} />;
   }
 });
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeInfoSheet.tsx");

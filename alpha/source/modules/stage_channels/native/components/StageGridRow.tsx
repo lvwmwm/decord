@@ -1,17 +1,17 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11711
+// Function ID: 11712
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4971, 11702, 6688, 558, 576, 8691, 11710, 11701, 2]
+// Dependencies: [19, 17, 21, 4972, 11704, 6689, 558, 576, 8691, 11712, 11703, 2]
 
-// Module 11709 (StageGridRow)
+// Module 11711 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6688 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6689 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8691 */;
-import SpeakerTileDefault from "SpeakerTile" /* 11701 */;
-import MediaTileDefault from "MediaTile" /* 11710 */;
+import SpeakerTileDefault from "SpeakerTile" /* 11703 */;
+import MediaTileDefault from "MediaTile" /* 11712 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,11 +37,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[0] !== num) {
     let THIRD;
     if (1 === num) {
-      THIRD = tmp(11702).StageTileSize.FULL;
+      THIRD = tmp(11704).StageTileSize.FULL;
     } else if (2 === num) {
-      THIRD = tmp(11702).StageTileSize.HALF;
+      THIRD = tmp(11704).StageTileSize.HALF;
     } else {
-      THIRD = tmp(11702).StageTileSize.THIRD;
+      THIRD = tmp(11704).StageTileSize.THIRD;
     }
     cResult[0] = num;
     cResult[1] = THIRD;
@@ -139,11 +139,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(11702).StageTileSize.FULL;
+    THIRD = tmp2(11704).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(11702).StageTileSize.HALF;
+    THIRD = tmp2(11704).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(11702).StageTileSize.THIRD;
+    THIRD = tmp2(11704).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

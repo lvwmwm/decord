@@ -1,20 +1,20 @@
-// Module ID: 12150
-// Function ID: 12151
+// Module ID: 12178
+// Function ID: 12179
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10698, 10712, 6773, 21, 3830, 4971, 587, 558, 576, 5593, 504, 12151, 12169, 12191, 1128, 7293, 7248, 5977, 12193, 12196, 12198, 5234, 6880, 5244, 7298, 8901, 12204, 9146, 2]
+// Dependencies: [5, 32, 19, 17, 10701, 10715, 6774, 21, 3831, 4972, 587, 558, 576, 5594, 504, 12179, 12189, 12209, 1125, 7295, 7250, 5978, 12211, 12214, 12216, 5235, 6882, 5245, 7300, 8901, 12222, 9146, 2]
 
-// Module 12150 (ConjureSettingsSheet)
+// Module 12178 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3830 from "module_3830" /* 3830 */;
+import _modDef3831 from "module_3831" /* 3831 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10698 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10712 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6773 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10701 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10715 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6774 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ({ canPublishProject: c9, isProjectOwner: c10 } = ConjureProjectStore);
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { project: _modDef3830.W0eQfN, app: _modDef3830.lFaJYF, secrets: _modDef3830.vDpCPU, model: _modDef3830.Rs3qc9, linked: _modDef3830.fBEHdq, experimental: _modDef3830["0Pe9uw"] };
+let obj = { project: _modDef3831.W0eQfN, app: _modDef3831.lFaJYF, secrets: _modDef3831.vDpCPU, model: _modDef3831.Rs3qc9, linked: _modDef3831.fBEHdq, experimental: _modDef3831["0Pe9uw"] };
 let closure_15 = createStyles.createStyles((paddingBottom) => {
   obj = { container: { gap: nativeDefault.space.PX_16, paddingBottom } };
   ({ gap: nativeDefault.space.PX_16, paddingBottom });
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   } else {
     first = cResult[0];
   }
-  closure_15(ref(5593)(first).insets.bottom);
+  closure_15(ref(5594)(first).insets.bottom);
   const tmp5 = ref;
   ref = react.useRef(null);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
     }
   }
-  const tmp5Result = tmp5(12151);
+  const tmp5Result = tmp5(12179);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -798,7 +798,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(12204).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(12222).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
     tmp11Result = tmp11(tmp5(9146).SegmentedControl, obj4);

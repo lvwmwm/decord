@@ -1,15 +1,15 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10657
+// Function ID: 10658
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [109, 19, 4903, 1098, 21, 558, 576, 504, 9720, 7202, 8567, 8568, 8570, 8569, 8572, 2]
+// Dependencies: [109, 19, 4904, 1095, 21, 558, 576, 504, 9722, 7204, 8567, 8568, 8570, 8569, 8572, 2]
 
-// Module 10654 (UserProfileVoiceActivityIcon)
+// Module 10657 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1098 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7202 */;
+import Constants from "Constants" /* 1095 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7204 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
   }
   if (cResult[6] !== tmp4) {
-    const PhoneCallIcon = tmp(9720).PhoneCallIcon;
+    const PhoneCallIcon = tmp(9722).PhoneCallIcon;
     const merged5 = Object.assign(tmp4);
     const tmp50 = <PhoneCallIcon />;
     cResult[6] = tmp4;
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       }
     }
   }
-  const PhoneCallIcon = tmp2(9720).PhoneCallIcon;
+  const PhoneCallIcon = tmp2(9722).PhoneCallIcon;
   const merged5 = Object.assign(merged);
   return <PhoneCallIcon />;
 });

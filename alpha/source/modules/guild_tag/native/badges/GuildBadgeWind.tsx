@@ -1,12 +1,12 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15223
+// Function ID: 15224
 // Name: GuildBadgeWind
-// Dependencies: [109, 19, 21, 558, 576, 15166, 7962, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15202, 7960, 2]
 
-// Module 15187 (GuildBadgeWind)
+// Module 15223 (GuildBadgeWind)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15166 */;
+import inlineStyles from "inlineStyles" /* 7960 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15202 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWi
       }
     }
     const obj18 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(7962).Svg;
+    const Svg = tmp(7960).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp18, tmp22, tmp25, tmp29, tmp32, tmp35, tmp36, tmp40, tmp43, tmp46, tmp49, tmp52, tmp55, tmp58, tmp61, tmp64, tmp67, tmp70, tmp73, tmp76];
     const tmp84 = hasOwnProperty(Svg, obj18);

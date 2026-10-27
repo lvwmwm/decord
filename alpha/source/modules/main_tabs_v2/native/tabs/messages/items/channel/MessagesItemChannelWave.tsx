@@ -1,14 +1,14 @@
-// Module ID: 17466
-// Function ID: 17467
+// Module ID: 17507
+// Function ID: 17508
 // Name: MessagesItemChannelWave
-// Dependencies: [19, 21, 558, 576, 1128, 5234, 5244, 2]
+// Dependencies: [19, 21, 558, 576, 1125, 5235, 5245, 2]
 
-// Module 17466 (MessagesItemChannelWave)
+// Module 17507 (MessagesItemChannelWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
+import intl2 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ wavePressed, hasNameplate } = arg0);
   const tmp4 = undefined !== hasNameplate && hasNameplate;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const stringResult = intl.string(intl2.t.n8nU4W);
     cResult[0] = stringResult;
     first = stringResult;

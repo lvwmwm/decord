@@ -1,18 +1,18 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8332
+// Function ID: 8333
 // Name: canReplyToMessage
-// Dependencies: [32, 4903, 1392, 1087, 1098, 1103, 558, 576, 7369, 8334, 504, 2]
+// Dependencies: [32, 4904, 1389, 1084, 1095, 1100, 558, 576, 7371, 8333, 504, 2]
 // Exports: canReplyToMessage
 
-// Module 8333 (canReplyToMessage)
-import Constants2 from "Constants" /* 1098 */;
-import MessageTypes from "MessageTypes" /* 1103 */;
-import ThreadHooks from "ThreadHooks" /* 7369 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8334 */;
+// Module 8332 (canReplyToMessage)
+import Constants2 from "Constants" /* 1095 */;
+import MessageTypes from "MessageTypes" /* 1100 */;
+import ThreadHooks from "ThreadHooks" /* 7371 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8333 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyT
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = tmp(8334);
+  const tmpResult = tmp(8333);
   const tmp8 = _slicedToArray(tmpResult.useCurrentUserCommunicationDisabled(tmp5), 2)[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];
@@ -188,7 +188,7 @@ export const canReplyToMessage = function canReplyToMessage(isPrivate, type) {
     hasItem = obj2.can(Permissions.SEND_MESSAGES, isPrivate) && obj2.can(Permissions.READ_MESSAGE_HISTORY, isPrivate);
   }
   if (hasItem) {
-    const REPLYABLE = tmp(1103).MessageTypesSets.REPLYABLE;
+    const REPLYABLE = tmp(1100).MessageTypesSets.REPLYABLE;
     hasItem = REPLYABLE.has(type.type);
   }
   const currentUser = UserStore.getCurrentUser();

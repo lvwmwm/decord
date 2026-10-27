@@ -1,142 +1,226 @@
 // Module ID: 15663
 // Function ID: 15664
-// Dependencies: [473, 15664, 190, 875]
-// Exports: default
+// Dependencies: [41, 42, 15661]
 
 // Module 15663
-import ArgType from "ArgType" /* 15664 */;
-import react_mod from "react" /* 473 */;
+import _createClass from "_createClass" /* 42 */;
+import _mod15661 from "module_15661" /* 15661 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let _default2, logger;
-
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
-}
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
-}
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
-          }
+class URLSearchParamsImpl {
+  constructor(arg0, arg1, doNotStripQMark) {
+    let flag = doNotStripQMark.doNotStripQMark;
+    if (flag === undefined) {
+      flag = false;
+    }
+    const self = this;
+    _classCallCheck(this, URLSearchParamsImpl);
+    const first = arg1[0];
+    this._list = [];
+    this._url = null;
+    if (!flag) {
+      flag = typeof first !== "string";
+    }
+    if (!flag) {
+      flag = "?" !== first[0];
+    }
+    let substr = first;
+    if (!flag) {
+      substr = first.slice(1);
+    }
+    if (Array.isArray(substr)) {
+      const iter = substr[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp12 = nextResult;
+        if (2 !== nextResult.length) {
+          let _TypeError = TypeError;
+          let self2 = this;
+          let str2 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.";
+          let self3 = this;
+          let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.");
+          throw typeError;
+        } else {
+          let _list = self._list;
+          let items = [, ];
+          [arr6[0], arr6[1]] = tmp12;
+          let arr = _list.push(items);
+          continue;
         }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
-              }
-            }
-          }
-        }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
       }
-    }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
+    } else {
+      if (typeof substr === "object") {
+        const _Object2 = Object;
+        if (null === Object.getPrototypeOf(substr)) {
+          const _Object = Object;
+          const keys = Object.keys(substr);
+          for (const item10033 of keys) {
+            let _list1 = self._list;
+            let items1 = [item10033, substr[item10033]];
+            let arr2 = _list1.push(items1);
+            continue;
           }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
-  };
+        }
+      }
+      const obj = _mod15661;
+      self._list = obj.parseUrlencoded(substr);
+    }
+  }
+}
+const entry = {
+  key: "_updateSteps",
+  value: function _updateSteps() {
+    const self = this;
+    if (null !== this._url) {
+      const obj = _mod15661;
+      let serializeUrlencodedResult = obj.serializeUrlencoded(self._list);
+      if ("" === serializeUrlencodedResult) {
+        serializeUrlencodedResult = null;
+      }
+      self._url._url.query = serializeUrlencodedResult;
+    }
+  }
 };
+let items = [
+  entry,
+  {
+    key: "append",
+    value: function append(arg0, arg1) {
+      const _list = this._list;
+      const items = [arg0, arg1];
+      _list.push(items);
+      this._updateSteps();
+    }
+  },
+  {
+    key: "delete",
+    value: function _delete(arg0) {
+      let sum;
+      const self = this;
+      let num = 0;
+      if (0 < this._list.length) {
+        do {
+          if (self._list[num][0] === arg0) {
+            let _list = self._list;
+            let spliceResult = _list.splice(num, 1);
+            sum = num;
+          } else {
+            sum = num + 1;
+          }
+          num = sum;
+        } while (sum < self._list.length);
+      }
+      self._updateSteps();
+    }
+  },
+  {
+    key: "get",
+    value: function get(arg0) {
+      const _list = this._list;
+      for (const item10008 of _list) {
+        if (item10008[0] === arg0) {
+          let tmp2 = item10008[1];
+          obj.return();
+          return tmp2;
+        }
+      }
+      return null;
+    }
+  },
+  {
+    key: "getAll",
+    value: function getAll(arg0) {
+      const items = [];
+      const _list = this._list;
+      for (const item10009 of _list) {
+        if (item10009[0] === arg0) {
+          let arr = items.push(tmp[1]);
+        }
+        continue;
+      }
+      return items;
+    }
+  },
+  {
+    key: "has",
+    value: function has(arg0) {
+      const _list = this._list;
+      for (const item10007 of _list) {
+        if (item10007[0] === arg0) {
+          obj.return();
+          let flag = true;
+          return true;
+        }
+      }
+      return false;
+    }
+  },
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      let sum;
+      const self = this;
+      let num = 0;
+      let flag = false;
+      let flag2 = false;
+      if (0 < this._list.length) {
+        do {
+          let flag3;
+          if (self._list[num][0] === arg0) {
+            let _list = self._list;
+            if (flag) {
+              let spliceResult = _list.splice(num, 1);
+              sum = num;
+              flag3 = flag;
+            } else {
+              _list[num][1] = arg1;
+              sum = num + 1;
+              flag3 = true;
+            }
+          } else {
+            sum = num + 1;
+            flag3 = flag;
+          }
+          num = sum;
+          flag = flag3;
+          flag2 = flag3;
+        } while (sum < self._list.length);
+      }
+      if (!flag2) {
+        const _list1 = self._list;
+        const items = [arg0, arg1];
+        _list1.push(items);
+      }
+      self._updateSteps();
+    }
+  },
+  {
+    key: "sort",
+    value: function sort() {
+      const _list = this._list;
+      const mapped = _list.map((item, index) => ({ item, index }));
+      const sorted = mapped.sort((index, index2) => index.item[0] > index2.item[0] || index.index - index2.index);
+      this._list = sorted.map((item) => item.item);
+      this._updateSteps();
+    }
+  },
+,
+
+];
+const entry1 = {
+  key: Symbol.iterator,
+  value() {
+    const _list = this._list;
+    return _list[Symbol.iterator]();
+  }
+};
+items[8] = entry1;
+items[9] = {
+  key: "toString",
+  value: function toString() {
+    const obj = _mod15661;
+    return obj.serializeUrlencoded(this._list);
+  }
+};
+
+export const implementation = _createClass(URLSearchParamsImpl, items);

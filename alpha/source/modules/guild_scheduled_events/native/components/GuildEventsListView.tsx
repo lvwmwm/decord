@@ -1,7 +1,7 @@
 // Module ID: 9025
 // Function ID: 9026
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 587, 558, 576, 1633, 5269, 9026, 9027, 11, 7220, 2]
+// Dependencies: [19, 17, 21, 587, 558, 576, 1630, 5270, 9026, 9027, 11, 7222, 2]
 
 // Module 9025 (GuildEventsListView)
 import react_native from "react-native" /* 17 */;

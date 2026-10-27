@@ -1,12 +1,12 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12291
+// Function ID: 12292
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 4845, 558, 576, 11765, 504, 1128, 3830, 2]
+// Dependencies: [32, 19, 4846, 558, 576, 11767, 504, 1125, 3831, 2]
 
-// Module 12285 (useConjureIncompleteAppNotice)
+// Module 12291 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   let tmp2 = dependencyMap;
   const obj = require("react");
   const cResult = obj.c(11);
-  const tmp4 = guildId(11765)(arg0);
+  const tmp4 = guildId(11767)(arg0);
   guildId = undefined;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -111,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
         cResult[10] = obj2;
         tmp19 = obj2;
       }
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const format = intl.format;
       if ("channel" === missingSurface) {
         class I {
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(11765)(arg0);
+  const tmp3 = guildId(11767)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -191,12 +191,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
     tmp10 = null;
     if (first !== arg0) {
       let Lm7IRC;
-      const intl = tmp5(1128).intl;
+      const intl = tmp5(1125).intl;
       const format = intl.format;
       if ("channel" === missingSurface) {
-        Lm7IRC = tmp(3830)["1cm4fj"];
+        Lm7IRC = tmp(3831)["1cm4fj"];
       } else {
-        Lm7IRC = tmp(3830).Lm7IRC;
+        Lm7IRC = tmp(3831).Lm7IRC;
       }
       let str2 = stateFromStores;
       if (stateFromStores == null) {

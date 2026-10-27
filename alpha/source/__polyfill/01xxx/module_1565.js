@@ -4,22 +4,15 @@
 
 // Module 1565
 
-export default (arg0, arr) => {
-  let num;
-  const obj = {};
-  const keys = Object.keys(arg0);
-  for (let num = 0; num < keys.length; num = num + 1) {
-    let tmp5;
-    let tmp2 = keys[num];
-    let tmp3 = arg0[tmp2];
-    if (tmp) {
-      tmp5 = -1 !== arr.indexOf(tmp2);
-    } else {
-      tmp5 = arr(tmp2, tmp3, arg0);
-    }
-    if (tmp5) {
-      obj[tmp2] = tmp3;
-    }
+export default function(str) {
+  if (typeof str !== "string") {
+    const _TypeError = TypeError;
+    const self = this;
+    const self2 = this;
+    const typeError = new TypeError("Expected a string");
+    throw typeError;
+  } else {
+    const str3 = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
+    return str3.replace(/-/g, "\\x2d");
   }
-  return obj;
 };

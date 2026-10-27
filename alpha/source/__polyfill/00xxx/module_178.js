@@ -128,19 +128,20 @@ Promise.all = (arg0) => {
   let tmp = new require("module_177")((fn, arg1) => {
     closure_0 = fn;
     let closure_1 = arg1;
-    function res(arg0, _y) {
+    function res(arg0, _z) {
+      let _y;
       closure_0 = arg0;
-      const tmp = _y;
+      const tmp = _z;
       if (tmp) {
-        if (typeof _y === "object") {
-          if (_y instanceof closure_0(dependencyMap[0])) {
-            if (_y.then === closure_0(dependencyMap[0]).prototype.then) {
+        if (typeof _z === "object") {
+          if (_z instanceof closure_0(dependencyMap[0])) {
+            if (_z.then === closure_0(dependencyMap[0]).prototype.then) {
               let tmp17;
-              let tmp12 = _y;
-              let promise2 = _y;
-              if (3 === _y._y) {
+              let tmp12 = _z;
+              let promise2 = _z;
+              if (3 === _z._y) {
                 do {
-                  let _z = tmp12._z;
+                  _z = tmp12._z;
                   tmp12 = _z;
                   promise2 = _z;
                   _y = _z._y;
@@ -159,19 +160,19 @@ Promise.all = (arg0) => {
               return tmp17;
             }
           }
-          const then = _y.then;
+          const then = _z.then;
           if (typeof then === "function") {
             const self = this;
             const self2 = this;
             const tmp2Result = closure_0(dependencyMap[0]);
-            const tmp2Result1 = new tmp2Result(then.bind(_y));
+            const tmp2Result1 = new tmp2Result(then.bind(_z));
             tmp2Result1.then((result) => {
               res(closure_0, result);
             }, closure_1);
           }
         }
       }
-      closure_0[arg0] = _y;
+      closure_0[arg0] = _z;
       const diff = length - 1;
       length = diff;
       if (0 == diff) {

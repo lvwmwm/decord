@@ -1,13 +1,13 @@
-// Module ID: 6367
-// Function ID: 6368
+// Module ID: 6368
+// Function ID: 6369
 // Name: useDisplayNameStyles
-// Dependencies: [19, 4883, 1392, 6368, 504, 6370, 2]
+// Dependencies: [19, 4884, 1389, 6369, 504, 6371, 2]
 // Exports: default
 
-// Module 6367 (useDisplayNameStyles)
+// Module 6368 (useDisplayNameStyles)
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import UserStore from "UserStore" /* 1392 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
+import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

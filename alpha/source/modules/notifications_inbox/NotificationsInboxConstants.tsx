@@ -1,13 +1,13 @@
 // Module ID: 8650
 // Function ID: 8651
 // Name: NotificationsInboxConstants
-// Dependencies: [1087, 1104, 1128, 4837, 2]
+// Dependencies: [1084, 1101, 1125, 4838, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
 // Module 8650 (NotificationsInboxConstants)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl4 from "intl" /* 1128 */;
+import Constants from "Constants" /* 1084 */;
+import DurationsDefault from "Durations" /* 1101 */;
+import intl4 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const NOTIFICATIONS_INBOX = Constants.NOTIFICATIONS_INBOX;
@@ -45,7 +45,7 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     stringResult = intl.string(intl4.t.HcoRu0);
   }
   const obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: [] };
-  const tmp2Result = tmp2(4837);
+  const tmp2Result = tmp2(4838);
   return tmp2Result.fromGuildBasic(obj);
 };
 export const MessageCategory = obj;

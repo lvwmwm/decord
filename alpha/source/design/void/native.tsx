@@ -1,64 +1,62 @@
-// Module ID: 1202
-// Function ID: 1203
+// Module ID: 1199
+// Function ID: 1200
 // Name: native
-// Dependencies: [1203, 1204, 2, 1205, 15387, 14051, 15388, 15391, 15392, 15393, 7954, 15394, 15395, 5915, 15396, 15398, 8995, 15399, 15400, 15402, 15403, 15404, 15405, 15406, 5246, 14314, 15415, 15417, 15397, 15240, 15238, 15419, 15420, 15421, 15239, 15422, 15423, 8966, 15424, 15425, 15426, 15427, 15428, 15429, 8965, 8951, 6908, 14620, 9041, 10121]
+// Dependencies: [1200, 1201, 2, 1202, 15423, 14065, 15424, 15427, 15428, 15429, 15430, 15431, 5916, 15432, 15434, 8995, 15435, 15436, 15438, 15439, 15440, 15441, 15442, 5247, 14350, 15451, 15453, 15433, 15276, 15274, 15455, 15456, 15457, 15275, 15458, 15459, 8966, 15460, 15461, 15462, 15463, 15464, 15465, 8965, 8951, 6910, 14656, 9041, 10123]
 
-// Module 1202 (native)
-import StatusConstants from "StatusConstants" /* 1203 */;
-import BadgeConstants from "BadgeConstants" /* 1204 */;
-import Button_Button from "Button/Button" /* 1205 */;
-import Icon from "Icon" /* 5246 */;
-import OverlayView from "OverlayView" /* 5915 */;
-import Pressables from "Pressables" /* 6908 */;
-import HelpMessage from "HelpMessage" /* 7954 */;
+// Module 1199 (native)
+import StatusConstants from "StatusConstants" /* 1200 */;
+import BadgeConstants from "BadgeConstants" /* 1201 */;
+import Button_Button from "Button/Button" /* 1202 */;
+import Icon from "Icon" /* 5247 */;
+import OverlayView from "OverlayView" /* 5916 */;
+import Pressables from "Pressables" /* 6910 */;
 import Form from "Form" /* 8951 */;
 import CardSectionDefault from "CardSection" /* 8965 */;
 import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8966 */;
 import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 8995 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import RoleLabel from "RoleLabel" /* 10121 */;
-import BetaTag from "BetaTag" /* 14051 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14314 */;
-import IconButton_IconButton from "IconButton/IconButton" /* 14620 */;
-import Easing from "Easing" /* 15238 */;
-import Shadows from "Shadows" /* 15239 */;
-import PassthroughTouchViewDefault from "PassthroughTouchView" /* 15240 */;
-import ShinyButton_ShinyButtonDefault from "ShinyButton/ShinyButton" /* 15387 */;
-import Checkbox_CheckboxDefault from "Checkbox/Checkbox" /* 15388 */;
-import CloseIconDefault from "CloseIcon" /* 15391 */;
-import EllipsisDefault from "Ellipsis" /* 15392 */;
-import GradientBorderDefault from "GradientBorder" /* 15393 */;
-import IconPillDefault from "IconPill" /* 15394 */;
-import NewTagDefault from "NewTag" /* 15395 */;
-import RadioGroup from "RadioGroup" /* 15396 */;
-import CollapsibleDefault from "Collapsible" /* 15397 */;
-import SummarizedIconRow from "SummarizedIconRow" /* 15398 */;
-import ThemedIconDefault from "ThemedIcon" /* 15399 */;
-import ThumbnailImageDefault from "ThumbnailImage" /* 15400 */;
-import Tooltip_Tooltip from "Tooltip/Tooltip" /* 15402 */;
-import WarningCircleDefault from "WarningCircle" /* 15403 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15404 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15405 */;
-import Status from "Status" /* 15406 */;
-import Avatar from "Avatar" /* 15415 */;
-import AccessibilityFocusViewDefault from "AccessibilityFocusView" /* 15417 */;
-import SpacerDefault from "Spacer" /* 15419 */;
-import LiveTagDefault from "LiveTag" /* 15420 */;
-import RoleDot from "RoleDot" /* 15421 */;
-import NitroWheelDefault from "NitroWheel" /* 15422 */;
-import EmptyStateDefault from "EmptyState" /* 15423 */;
-import Atoms from "Atoms" /* 15424 */;
-import void_Badge_Badge from "void/Badge/Badge" /* 15425 */;
-import CarouselPaginationDefault from "CarouselPagination" /* 15426 */;
-import InputView from "InputView" /* 15427 */;
-import Badges_Badges from "Badges/Badges" /* 15428 */;
-import RefreshEmptyState from "RefreshEmptyState" /* 15429 */;
+import RoleLabel from "RoleLabel" /* 10123 */;
+import BetaTag from "BetaTag" /* 14065 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14350 */;
+import IconButton_IconButton from "IconButton/IconButton" /* 14656 */;
+import Easing from "Easing" /* 15274 */;
+import Shadows from "Shadows" /* 15275 */;
+import PassthroughTouchViewDefault from "PassthroughTouchView" /* 15276 */;
+import ShinyButton_ShinyButtonDefault from "ShinyButton/ShinyButton" /* 15423 */;
+import Checkbox_CheckboxDefault from "Checkbox/Checkbox" /* 15424 */;
+import CloseIconDefault from "CloseIcon" /* 15427 */;
+import EllipsisDefault from "Ellipsis" /* 15428 */;
+import GradientBorderDefault from "GradientBorder" /* 15429 */;
+import IconPillDefault from "IconPill" /* 15430 */;
+import NewTagDefault from "NewTag" /* 15431 */;
+import RadioGroup from "RadioGroup" /* 15432 */;
+import CollapsibleDefault from "Collapsible" /* 15433 */;
+import SummarizedIconRow from "SummarizedIconRow" /* 15434 */;
+import ThemedIconDefault from "ThemedIcon" /* 15435 */;
+import ThumbnailImageDefault from "ThumbnailImage" /* 15436 */;
+import Tooltip_Tooltip from "Tooltip/Tooltip" /* 15438 */;
+import WarningCircleDefault from "WarningCircle" /* 15439 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15440 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15441 */;
+import Status from "Status" /* 15442 */;
+import Avatar from "Avatar" /* 15451 */;
+import AccessibilityFocusViewDefault from "AccessibilityFocusView" /* 15453 */;
+import SpacerDefault from "Spacer" /* 15455 */;
+import LiveTagDefault from "LiveTag" /* 15456 */;
+import RoleDot from "RoleDot" /* 15457 */;
+import NitroWheelDefault from "NitroWheel" /* 15458 */;
+import EmptyStateDefault from "EmptyState" /* 15459 */;
+import Atoms from "Atoms" /* 15460 */;
+import void_Badge_Badge from "void/Badge/Badge" /* 15461 */;
+import CarouselPaginationDefault from "CarouselPagination" /* 15462 */;
+import InputView from "InputView" /* 15463 */;
+import Badges_Badges from "Badges/Badges" /* 15464 */;
+import RefreshEmptyState from "RefreshEmptyState" /* 15465 */;
 import size from "module_2" /* 2 */;
 
 const Button_ButtonDefault = Button_Button;
 const IconDefault = Icon;
 const OverlayViewDefault = OverlayView;
-const HelpMessageDefault = HelpMessage;
 const BetaTagDefault = BetaTag;
 const CutoutableAvatarImageDefault = CutoutableAvatarImage;
 const RadioGroupDefault = RadioGroup;
@@ -79,7 +77,6 @@ const BADGE_MASK_SIZE = BadgeConstants.BADGE_MASK_SIZE;
 const BADGE_MASK_UNREAD_SIZE = BadgeConstants.BADGE_MASK_UNREAD_SIZE;
 const result = size.fileFinishedImporting("design/void/native.tsx");
 const BetaTag_export = BetaTagDefault;
-const HelpMessage_export = HelpMessageDefault;
 const OverlayView_export = OverlayViewDefault;
 const RadioGroup_export = RadioGroupDefault;
 const SummarizedIconRow_export = SummarizedIconRowDefault;
@@ -110,8 +107,6 @@ export const Checkbox = Checkbox_CheckboxDefault;
 export const CloseIcon = CloseIconDefault;
 export const Ellipsis = EllipsisDefault;
 export const GradientBorder = GradientBorderDefault;
-export { HelpMessage_export as HelpMessage };
-export const HelpMessageTypes = HelpMessage.HelpMessageTypes;
 export const IconPill = IconPillDefault;
 export const NewTag = NewTagDefault;
 export { OverlayView_export as OverlayView };

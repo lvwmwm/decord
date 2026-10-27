@@ -1,81 +1,80 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12337
+// Function ID: 12338
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 558, 576, 11765, 1128, 3830, 12239, 12326, 9804, 12317, 2]
+// Dependencies: [19, 21, 558, 576, 12152, 1125, 3831, 12332, 9806, 12323, 2]
 
-// Module 12331 (ConjureLiveBehindTip)
+// Module 12337 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishSheetDefault from "ConjurePublishSheet" /* 12239 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12317 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12326 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import UploadIcon from "UploadIcon" /* 9806 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12152 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12323 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12332 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
-
 const jsx = Fragment.jsx;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBehindHint(projectId) {
-  const tmp = projectId;
-  const obj = projectId(576);
-  const cResult = obj.c(6);
-  projectId = projectId.projectId;
-  const onDismiss = projectId.onDismiss;
-  const context = react.useContext(projectId(11765).ConjurePublishActionContext);
-  if (cResult[0] === context) {
-    let tmp5;
-    if (cResult[1] === projectId) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === onDismiss) {
-      let tmp7;
-      if (cResult[4] === tmp5) {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
-    }
-    context(12326);
-    const tmp11 = <tmp10 icon={tmp(9804).UploadIcon} onDismiss={onDismiss}>{tmp5}</tmp10>;
-    cResult[3] = onDismiss;
-    cResult[4] = tmp5;
-    cResult[5] = tmp11;
-    tmp7 = tmp11;
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBehindHint(onDismiss) {
+  let projectId;
+  let publish;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(5);
+  onDismiss = onDismiss.onDismiss;
+  ({ projectId, publish } = onDismiss);
+  const tmp5 = useConjureStartPublishDefault(projectId, publish);
+  let closure_0 = tmp5;
+  if (cResult[0] !== tmp5) {
+    const intl = tmp(1125).intl;
+    const obj2 = {
+      onPublish() {
+          return closure_0("outdated_notice");
+        }
+    };
+    const formatResult = intl.format(_modDef3831.fWfeZ8, obj2);
+    cResult[0] = tmp5;
+    cResult[1] = formatResult;
+    tmp6 = formatResult;
+  } else {
+    tmp6 = cResult[1];
   }
-  const intl = tmp(1128).intl;
-  const obj3 = {
-    onPublish() {
-      if (null != context) {
-        ConjurePublishSheetDefault(projectId, tmp.guildId, "outdated_notice");
-      }
+  if (cResult[2] === onDismiss) {
+    let tmp8;
+    if (cResult[3] === tmp6) {
+      tmp8 = cResult[4];
     }
-  };
-  const formatResult = intl.format(context(3830).fWfeZ8, obj3);
-  cResult[0] = context;
-  cResult[1] = projectId;
-  cResult[2] = formatResult;
-  tmp5 = formatResult;
-}) : (function LiveBehindHint(projectId) {
-  let closure_1;
-  projectId = projectId.projectId;
-  const onDismiss = projectId.onDismiss;
-  importDefault = react.useContext(projectId(11765).ConjurePublishActionContext);
-  const tmp = ConjureTipHintDefault;
-  const intl = projectId(1128).intl;
+    return tmp8;
+  }
+  ConjureTipHintDefault;
+  const tmp10 = <tmp4Result icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{tmp6}</tmp4Result>;
+  cResult[2] = onDismiss;
+  cResult[3] = tmp6;
+  cResult[4] = tmp10;
+  tmp8 = tmp10;
+}) : (function LiveBehindHint(arg0) {
+  let onDismiss;
+  let projectId;
+  let publish;
+  ({ projectId, publish, onDismiss } = arg0);
+  let closure_0 = useConjureStartPublishDefault(projectId, publish);
+  ConjureTipHintDefault;
+  const intl = intl2.intl;
   const obj2 = {
     onPublish() {
-      if (null != closure_1) {
-        ConjurePublishSheetDefault(projectId, tmp.guildId, "outdated_notice");
-      }
+      return closure_0("outdated_notice");
     }
   };
-  return <tmp icon={projectId(9804).UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3830.fWfeZ8, obj2)}</tmp>;
+  return <tmp icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3831.fWfeZ8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {
+    const publish = context.context.publish;
     let tmp3 = null;
-    if (null != context.context.publish) {
-      tmp3 = <closure_5 projectId={tmp} onDismiss={tmp2} />;
+    if (null != publish) {
+      tmp3 = <closure_4 projectId={tmp} publish={publish} onDismiss={tmp2} />;
     }
     return tmp3;
   }

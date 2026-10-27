@@ -1,9 +1,9 @@
 // Module ID: 1789
 // Function ID: 1790
-// Dependencies: [41, 42, 93, 95, 98, 1730, 1728]
+// Dependencies: [41, 42, 93, 95, 98, 1727, 1725]
 
 // Module 1789
-import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1728 */;
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1725 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,18 +27,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = { code: "function pnpm_FadingTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,halfDuration,withDelay,callback}=this.__closure;return{initialValues:{opacity:1,originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{opacity:delayFunction(delay,withSequence(withTiming(0,{duration:halfDuration}),withTiming(1,{duration:halfDuration}))),originX:withDelay(delay+halfDuration,withTiming(values.targetOriginX,{duration:0})),originY:withDelay(delay+halfDuration,withTiming(values.targetOriginY,{duration:0})),width:withDelay(delay+halfDuration,withTiming(values.targetWidth,{duration:0})),height:withDelay(delay+halfDuration,withTiming(values.targetHeight,{duration:0}))},callback:callback};}" };
-class FadingTransition {
+let closure_6 = { code: "function pnpm_SequencedTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,reverse,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withSequence(withTiming(reverse?values.currentOriginX:values.targetOriginX,config),withTiming(values.targetOriginX,config))),originY:delayFunction(delay,withSequence(withTiming(reverse?values.targetOriginY:values.currentOriginY,config),withTiming(values.targetOriginY,config))),width:delayFunction(delay,withSequence(withTiming(reverse?values.currentWidth:values.targetWidth,config),withTiming(values.targetWidth,config))),height:delayFunction(delay,withSequence(withTiming(reverse?values.targetHeight:values.currentHeight,config),withTiming(values.targetHeight,config)))},callback:callback};}" };
+class SequencedTransition {
   constructor() {
     let constructResult;
     const self = this;
     const items = [...arguments];
     let closure_0;
-    const tmp = _classCallCheck(this, FadingTransition);
+    let tmp = _classCallCheck(this, SequencedTransition);
     const items1 = [...items];
-    let obj = _getPrototypeOf(FadingTransition);
-    const tmp3 = c3;
+    let obj = _getPrototypeOf(SequencedTransition);
     const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const tmp5 = globalThis;
       const _Reflect = Reflect;
@@ -46,81 +46,93 @@ class FadingTransition {
     } else {
       constructResult = obj.apply(self, items1);
     }
-    const tmp3Result = tmp3(self, constructResult);
+    let tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
+    tmp3Result.reversed = false;
     tmp3Result.build = () => {
       const delayFunction = closure_0.getDelayFunction();
       const callbackV = closure_0.callbackV;
       const delay = closure_0.getDelay();
       let num = closure_0.durationV;
+      const tmp = closure_0;
       if (num == null) {
         num = 500;
       }
-      const result = num / 2;
-      const fn = function t(originX) {
-        let obj10;
-        let obj4;
-        let obj5;
-        let obj7;
-        let obj8;
-        let obj9;
-        let sum;
-        let sum1;
-        let sum2;
-        let sum3;
-        let withDelay;
-        let withDelay2;
-        let withDelay3;
-        let withDelay4;
-        let withSequence;
+      let obj = { duration: num / 2 };
+      const reversed = tmp.reversed;
+      const fn = function e(originX) {
+        let tmp3Result;
+        let tmp3Result12;
+        let tmp3Result15;
+        let tmp3Result18;
+        let withSequence2;
+        let withSequence3;
+        let withSequence4;
         let withTimingResult;
-        const obj = { initialValues: { opacity: 1, originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
-        size = { opacity: delayFunction(delay, withSequence(withTimingResult, obj5.withTiming(1, obj4))), originX: withDelay(sum, obj7.withTiming(originX.targetOriginX, { duration: 0 })), originY: withDelay2(sum1, obj8.withTiming(originX.targetOriginY, { duration: 0 })), width: withDelay3(sum2, obj9.withTiming(originX.targetWidth, { duration: 0 })), height: withDelay4(sum3, obj10.withTiming(originX.targetHeight, { duration: 0 })) };
-        withSequence = closure_2_0(closure_2_1[5]).withSequence;
+        let withTimingResult1;
+        let withTimingResult2;
+        let withTimingResult3;
+        obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
+        const withSequence = closure_2_0(closure_2_1[5]).withSequence;
         closure_2_0(closure_2_1[5]);
-        const obj2 = { duration: result };
-        const obj3 = closure_2_0(closure_2_1[5]);
-        obj4 = { duration: result };
-        withTimingResult = obj3.withTiming(0, obj2);
-        obj5 = closure_2_0(closure_2_1[5]);
-        withDelay = closure_2_0(closure_2_1[5]).withDelay;
-        sum = delay + result;
+        size = { originX: delayFunction(delay, withSequence(withTimingResult, tmp3Result.withTiming(originX.targetOriginX, obj))), originY: delayFunction(delay, withSequence2(withTimingResult1, tmp3Result12.withTiming(originX.targetOriginY, obj))), width: delayFunction(delay, withSequence3(withTimingResult2, tmp3Result15.withTiming(originX.targetWidth, obj))), height: delayFunction(delay, withSequence4(withTimingResult3, tmp3Result18.withTiming(originX.targetHeight, obj))) };
+        const obj2 = closure_2_0(closure_2_1[5]);
+        withTimingResult = obj2.withTiming(reversed ? originX.currentOriginX : originX.targetOriginX, obj);
+        tmp3Result = closure_2_0(closure_2_1[5]);
+        withSequence2 = closure_2_0(closure_2_1[5]).withSequence;
         closure_2_0(closure_2_1[5]);
-        obj7 = closure_2_0(closure_2_1[5]);
-        withDelay2 = closure_2_0(closure_2_1[5]).withDelay;
-        sum1 = delay + result;
+        const tmp3Result11 = closure_2_0(closure_2_1[5]);
+        withTimingResult1 = tmp3Result11.withTiming(reversed ? originX.targetOriginY : originX.currentOriginY, obj);
+        tmp3Result12 = closure_2_0(closure_2_1[5]);
+        withSequence3 = closure_2_0(closure_2_1[5]).withSequence;
         closure_2_0(closure_2_1[5]);
-        obj8 = closure_2_0(closure_2_1[5]);
-        withDelay3 = closure_2_0(closure_2_1[5]).withDelay;
-        sum2 = delay + result;
+        const tmp3Result14 = closure_2_0(closure_2_1[5]);
+        withTimingResult2 = tmp3Result14.withTiming(reversed ? originX.currentWidth : originX.targetWidth, obj);
+        tmp3Result15 = closure_2_0(closure_2_1[5]);
+        withSequence4 = closure_2_0(closure_2_1[5]).withSequence;
         closure_2_0(closure_2_1[5]);
-        obj9 = closure_2_0(closure_2_1[5]);
-        withDelay4 = closure_2_0(closure_2_1[5]).withDelay;
-        sum3 = delay + result;
-        closure_2_0(closure_2_1[5]);
-        obj10 = closure_2_0(closure_2_1[5]);
+        const tmp3Result17 = closure_2_0(closure_2_1[5]);
+        withTimingResult3 = tmp3Result17.withTiming(reversed ? originX.targetHeight : originX.currentHeight, obj);
+        tmp3Result18 = closure_2_0(closure_2_1[5]);
         return obj;
       };
-      let obj = { delayFunction, delay, withSequence: FadingTransition(closure_2_1[5]).withSequence, withTiming: FadingTransition(closure_2_1[5]).withTiming, halfDuration: result, withDelay: FadingTransition(closure_2_1[5]).withDelay, callback: callbackV };
-      fn.__closure = obj;
-      fn.__workletHash = 3440645628303;
+      let obj2 = { delayFunction, delay, withSequence: SequencedTransition(closure_2_1[5]).withSequence, withTiming: SequencedTransition(closure_2_1[5]).withTiming, reverse: reversed, config: obj, callback: callbackV };
+      fn.__closure = obj2;
+      fn.__workletHash = 255577740024;
       fn.__initData = __initData;
       return fn;
     };
     return tmp3Result;
   }
 }
-_inherits(FadingTransition, BaseAnimationBuilder.BaseAnimationBuilder);
+_inherits(SequencedTransition, BaseAnimationBuilder.BaseAnimationBuilder);
 const entry = {
-  key: "createInstance",
-  value: function createInstance() {
-    const tmp = FadingTransition();
-    return tmp;
+  key: "reverse",
+  value: function reverse() {
+    this.reversed = !this.reversed;
+    return this;
   }
 };
 let items = [entry];
-const importDefaultResultResult = _createClass(FadingTransition, null, items);
-importDefaultResultResult.presetName = "FadingTransition";
-const FadingTransition_export = importDefaultResultResult;
+const entry1 = {
+  key: "createInstance",
+  value: function createInstance() {
+    const tmp = SequencedTransition();
+    return tmp;
+  }
+};
+let items1 = [
+  entry1,
+  {
+    key: "reverse",
+    value: function reverse() {
+      const instance = SequencedTransition.createInstance();
+      return instance.reverse();
+    }
+  }
+];
+const importDefaultResultResult = _createClass(SequencedTransition, items, items1);
+importDefaultResultResult.presetName = "SequencedTransition";
+const SequencedTransition_export = importDefaultResultResult;
 
-export { FadingTransition_export as FadingTransition };
+export { SequencedTransition_export as SequencedTransition };

@@ -1,18 +1,18 @@
-// Module ID: 13180
-// Function ID: 13181
+// Module ID: 13194
+// Function ID: 13195
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4903, 5630, 1087, 21, 4971, 587, 1384, 558, 576, 9709, 5205, 4978, 10887, 573, 6694, 6688, 6640, 13181, 8568, 8572, 1128, 5234, 5244, 2]
+// Dependencies: [19, 17, 4904, 5631, 1084, 21, 4972, 587, 1381, 558, 576, 9711, 5206, 4979, 10890, 573, 6695, 6689, 6641, 13195, 8568, 8572, 1125, 5235, 5245, 2]
 
-// Module 13180 (VocalChannelJoinButton)
+// Module 13194 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 4971 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import Constants from "Constants" /* 1084 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -242,19 +242,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (small === undefined) {
     small = false;
   }
-  const tmp2 = voiceStates(9709)();
-  const tmp3 = voiceStates(5205)();
-  const obj = channel(4978);
+  const tmp2 = voiceStates(9711)();
+  const tmp3 = voiceStates(5206)();
+  const obj = channel(4979);
   const tmp5 = closure_11(tmp2, obj.isThemeLight(tmp3));
-  const obj2 = channel(10887);
+  const obj2 = channel(10890);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const items = [PermissionStore];
   const obj3 = channel(573);
   const stateFromStores = obj3.useStateFromStores(items, () => !PermissionStore.can(constants.CONNECT, channel));
-  const obj4 = channel(6694);
-  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6688).StageChannelParticipantNamedIndex.AUDIENCE);
+  const obj4 = channel(6695);
+  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6689).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const obj5 = channel(6640);
+  const obj5 = channel(6641);
   obj5.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   const items1 = [VoiceStateStore];
   const tmp4Result = channel(573);
@@ -269,9 +269,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return null != found;
   }, items2);
-  const tmp4Result3 = channel(13181);
+  const tmp4Result3 = channel(13195);
   const connectedUserLimit = tmp4Result3.useConnectedUserLimit({ channel, video: tmp14 });
-  const tmp4Result4 = channel(13181);
+  const tmp4Result4 = channel(13195);
   let connectedUserLimitFormatted = tmp4Result4.useConnectedUserLimitFormatted({ channel, video: tmp14, userCount: sum });
   let tmp19 = null;
   const tmp17 = !stateFromStores && !isConnectedToVoiceChannel && null != connectedUserLimitFormatted && sum > 0 && sum >= connectedUserLimit / 2 + 1;
@@ -279,21 +279,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp20Result;
     if (small) {
       const obj6 = { accessibilityRole: "none", pointerEvents: "none", onPress, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: tmp5.joinButton, children: null };
-      const Text = tmp4(5234).Text;
+      const Text = tmp4(5235).Text;
       const tmp27 = closure_5;
       if (connectedUserLimitFormatted == null) {
-        const intl2 = tmp4(1128).intl;
-        connectedUserLimitFormatted = intl2.string(tmp4(1128).t.VJlc0S);
+        const intl2 = tmp4(1125).intl;
+        connectedUserLimitFormatted = intl2.string(tmp4(1125).t.VJlc0S);
       }
       tmp20Result = tmp20(tmp27, obj6);
     } else {
       let tmp21 = connectedUserLimitFormatted;
-      const Button = tmp4(5244).Button;
+      const Button = tmp4(5245).Button;
       if (!tmp17) {
         let formatted;
-        const intl = tmp4(1128).intl;
+        const intl = tmp4(1125).intl;
         const string = intl.string;
-        const t = tmp4(1128).t;
+        const t = tmp4(1125).t;
         if (memo) {
           const str = string(t.dI3q4h);
           formatted = str.toUpperCase();

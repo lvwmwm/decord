@@ -1,13 +1,13 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15029
+// Function ID: 15030
 // Name: settings/NotifSettingsUtils
-// Dependencies: [14994, 1248, 14995, 558, 576, 504, 2]
+// Dependencies: [15030, 1245, 15031, 558, 576, 504, 2]
 // Exports: b64ToDeclarativeSettingsProto
 
-// Module 14993 (settings/NotifSettingsUtils)
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
-import notification_settings from "notification_settings" /* 14995 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14994 */;
+// Module 15029 (settings/NotifSettingsUtils)
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
+import notification_settings from "notification_settings" /* 15031 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15030 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

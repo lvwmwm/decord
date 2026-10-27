@@ -1,24 +1,24 @@
-// Module ID: 8465
-// Function ID: 8466
+// Module ID: 8464
+// Function ID: 8465
 // Name: ChangeLogStandardTemplate
-// Dependencies: [19, 17, 2068, 1087, 21, 4971, 587, 558, 576, 1202, 573, 8466, 1267, 5660, 1951, 8468, 5705, 7959, 8476, 1128, 4786, 8478, 8480, 7221, 2]
+// Dependencies: [19, 17, 2065, 1084, 21, 4972, 587, 558, 576, 1199, 573, 8465, 1264, 5661, 1948, 8467, 5706, 7957, 8475, 1125, 4787, 8477, 8479, 7223, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 8465 (ChangeLogStandardTemplate)
+// Module 8464 (ChangeLogStandardTemplate)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import _mod1951 from "module_1951" /* 1951 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4786 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8468 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import _mod1948 from "module_1948" /* 1948 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4787 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5706 */;
+import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8467 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import Constants from "Constants" /* 1087 */;
+import LocaleStore from "LocaleStore" /* 2065 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const native = tmp(1202);
+const native = tmp(1199);
 const Link = (arg0) => {
   const obj = { changelogId };
   const merged = Object.assign(arg0);
@@ -164,7 +164,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   tmp6 = getStyles;
 }) : (function LHeading(className) {
   let items;
-  const f145717 = (item) => {
+  const f146049 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -189,7 +189,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f145717);
+    const mapped = parts.map(f146049);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -197,7 +197,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function LHeadi
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f145717);
+    const mapped1 = parts1.map(f146049);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });
@@ -313,7 +313,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = tmp(8466);
+  const tmpResult2 = tmp(8465);
   const changelog = tmpResult2.useChangelog(changelogId, stateFromStores).changelog;
   let date;
   const tmp8 = cResult[2];
@@ -341,7 +341,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
         }
       }
       let obj2 = { accessibilityRole: "link", style: className, onPress: tmp12, children };
-      const tmp17 = closure_10(tmp(1202).LegacyText, obj2);
+      const tmp17 = closure_10(tmp(1199).LegacyText, obj2);
       cResult[6] = children;
       cResult[7] = className;
       cResult[8] = tmp12;
@@ -383,9 +383,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
       }
       const obj = { change_log_id: "" + date + ":" + num, cta_type: "inline_link", target };
       track(CHANGE_LOG_CTA_CLICKED, obj);
-      const openURL = tmp(5660).openURL;
+      const openURL = tmp(5661).openURL;
       LinkingDefault;
-      const obj2 = _mod1951;
+      const obj2 = _mod1948;
       openURL(obj2.sanitizeUrl(target));
     }
   }
@@ -403,7 +403,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
   let obj = target(573);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = target(8466);
+  let obj2 = target(8465);
   const changelog = obj2.useChangelog(changelogId, stateFromStores).changelog;
   const obj3 = {
     accessibilityRole: "link",
@@ -432,14 +432,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkIn
       }
       const obj = { change_log_id: "" + date + ":" + num, cta_type: "inline_link", target };
       track(CHANGE_LOG_CTA_CLICKED, obj);
-      const openURL = tmp(5660).openURL;
+      const openURL = tmp(5661).openURL;
       LinkingDefault;
-      const obj2 = _mod1951;
+      const obj2 = _mod1948;
       openURL(obj2.sanitizeUrl(target));
     },
     children
   };
-  return closure_10(target(1202).LegacyText, obj3);
+  return closure_10(target(1199).LegacyText, obj3);
 });
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -552,15 +552,15 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8476).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-              accessibilityLabel: intl.string(onScroll(1128).t["/lXfom"]),
+              icon: closure_10(onScroll(8475).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              accessibilityLabel: intl.string(onScroll(1125).t["/lXfom"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(getLocalizedLinkDefault(constants.TWITTER));
                         }
             };
-            const IconButton = tmp(7959).IconButton;
-            intl = tmp(1128).intl;
+            const IconButton = tmp(7957).IconButton;
+            intl = tmp(1125).intl;
             const tmp20 = closure_10(IconButton, obj7);
             cResult[10] = tmp20;
             tmp18 = tmp20;
@@ -573,15 +573,15 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8478).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-              accessibilityLabel: intl2.string(onScroll(1128).t["h0or/l"]),
+              icon: closure_10(onScroll(8477).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              accessibilityLabel: intl2.string(onScroll(1125).t["h0or/l"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(constants2.FACEBOOK_URL);
                         }
             };
-            const IconButton2 = tmp(7959).IconButton;
-            intl2 = tmp(1128).intl;
+            const IconButton2 = tmp(7957).IconButton;
+            intl2 = tmp(1125).intl;
             const tmp23 = closure_10(IconButton2, obj8);
             cResult[11] = tmp23;
             tmp21 = tmp23;
@@ -594,15 +594,15 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
               size: "sm",
               variant: "tertiary",
               accessibilityRole: "link",
-              icon: closure_10(onScroll(8480).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-              accessibilityLabel: intl3.string(onScroll(1128).t["5uVPyf"]),
+              icon: closure_10(onScroll(8479).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+              accessibilityLabel: intl3.string(onScroll(1125).t["5uVPyf"]),
               onPress() {
                           const obj = LinkingDefault;
                           obj.openURL(constants2.INSTAGRAM_URL);
                         }
             };
-            const IconButton3 = tmp(7959).IconButton;
-            intl3 = tmp(1128).intl;
+            const IconButton3 = tmp(7957).IconButton;
+            intl3 = tmp(1125).intl;
             const tmp26 = closure_10(IconButton3, obj9);
             cResult[12] = tmp26;
             tmp24 = tmp26;
@@ -612,7 +612,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
           if (cResult[13] !== tmp4.footer) {
             const obj10 = { bottom: true, style: tmp4.footer, children: items };
             items = [tmp18, tmp21, tmp24];
-            const tmp29 = closure_11(onScroll(7221).SafeAreaPaddingView, obj10);
+            const tmp29 = closure_11(onScroll(7223).SafeAreaPaddingView, obj10);
             cResult[13] = tmp4.footer;
             cResult[14] = tmp29;
             tmp27 = tmp29;
@@ -691,48 +691,48 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   items1[1] = reactParserFor(defaultRules)(changeLog.body, false);
   items2 = [closure_11(tmp4, obj2), ];
   const obj6 = { bottom: true, style: tmp.footer, children: items3 };
-  const SafeAreaPaddingView = onScroll(7221).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onScroll(7223).SafeAreaPaddingView;
   const obj7 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8476).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-    accessibilityLabel: intl.string(onScroll(1128).t["/lXfom"]),
+    icon: closure_10(onScroll(8475).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    accessibilityLabel: intl.string(onScroll(1125).t["/lXfom"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(getLocalizedLinkDefault(constants.TWITTER));
     }
   };
-  const IconButton = onScroll(7959).IconButton;
-  intl = onScroll(1128).intl;
+  const IconButton = onScroll(7957).IconButton;
+  intl = onScroll(1125).intl;
   items3 = [closure_10(IconButton, obj7), , ];
   const obj8 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8478).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-    accessibilityLabel: intl2.string(onScroll(1128).t["h0or/l"]),
+    icon: closure_10(onScroll(8477).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    accessibilityLabel: intl2.string(onScroll(1125).t["h0or/l"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.FACEBOOK_URL);
     }
   };
-  const IconButton2 = onScroll(7959).IconButton;
-  intl2 = onScroll(1128).intl;
+  const IconButton2 = onScroll(7957).IconButton;
+  intl2 = onScroll(1125).intl;
   items3[1] = closure_10(IconButton2, obj8);
   const obj9 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8480).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
-    accessibilityLabel: intl3.string(onScroll(1128).t["5uVPyf"]),
+    icon: closure_10(onScroll(8479).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    accessibilityLabel: intl3.string(onScroll(1125).t["5uVPyf"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.INSTAGRAM_URL);
     }
   };
-  const IconButton3 = onScroll(7959).IconButton;
-  intl3 = onScroll(1128).intl;
+  const IconButton3 = onScroll(7957).IconButton;
+  intl3 = onScroll(1125).intl;
   items3[2] = closure_10(IconButton3, obj9);
   items2[1] = closure_11(SafeAreaPaddingView, obj6);
   return closure_11(tmp3, obj);

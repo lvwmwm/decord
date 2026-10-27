@@ -1,18 +1,18 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16733
+// Function ID: 16734
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4972, 8332, 558, 576, 504, 15687, 1128, 11209, 2]
+// Dependencies: [19, 4973, 8331, 558, 576, 504, 15723, 1125, 11212, 2]
 // Exports: onOfficialMessageStyleSettingValueChange
 
-// Module 16691 (OfficialMessageStyleSetting)
+// Module 16733 (OfficialMessageStyleSetting)
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15687 */;
+import intl5 from "intl" /* 1125 */;
+import SettingsConstants from "SettingsConstants" /* 8331 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15723 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11209 */;
+import SettingBuilders from "SettingBuilders" /* 11212 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -56,16 +56,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficia
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl5.t.ERaS6f), value: "default" };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
     const items = [obj2, , , ];
     const obj3 = { label: intl2.string(intl5.t.JKfipk), value: "no_text_color" };
-    intl2 = tmp(1128).intl;
+    intl2 = tmp(1125).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl5.t.O2vBoY), value: "no_gradient" };
-    intl3 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
     items[2] = obj4;
     const obj5 = { label: intl4.string(intl5.t["+loyQl"]), value: "hidden" };
-    intl4 = tmp(1128).intl;
+    intl4 = tmp(1125).intl;
     items[3] = obj5;
     cResult[0] = items;
     first = items;

@@ -1,20 +1,20 @@
-// Module ID: 9476
-// Function ID: 9477
+// Module ID: 9475
+// Function ID: 9476
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9477, 8709, 7651, 7652, 558, 576, 9478, 504, 7649, 8708, 9479, 2]
+// Dependencies: [32, 19, 9476, 8709, 7652, 7653, 558, 576, 9477, 504, 7650, 8708, 9478, 2]
 // Exports: useCollectiblesShopProducts
 
-// Module 9476 (useCollectiblesShopProducts)
+// Module 9475 (useCollectiblesShopProducts)
 import react2 from "react" /* 576 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
 import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8708 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9478 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9477 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9477 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9476 */;
 import StorefrontProductStore from "StorefrontProductStore" /* 8709 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7651 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7652 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7652 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7653 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9479);
+const StorefrontCollectionActionCreators = tmp(9478);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -724,10 +724,10 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f146558 = (item) => "" !== item;
+    const f146892 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f146558))];
-    new Set(values.filter(f146558));
+    const items = [...new Set(values.filter(f146892))];
+    new Set(values.filter(f146892));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

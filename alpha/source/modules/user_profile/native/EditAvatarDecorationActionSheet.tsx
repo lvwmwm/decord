@@ -1,25 +1,25 @@
 // Module ID: 8647
 // Function ID: 8648
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7665, 7655, 4883, 1087, 21, 4971, 558, 576, 8648, 8658, 8659, 7253, 7278, 1267, 8660, 7248, 1128, 8661, 5265, 5037, 10490, 504, 14488, 14493, 8655, 14494, 14499, 14500, 8662, 8747, 1202, 14501, 2]
+// Dependencies: [32, 19, 17, 7666, 7656, 4884, 1084, 21, 4972, 558, 576, 8648, 8658, 8659, 7255, 7280, 1264, 8660, 7250, 1125, 8661, 5266, 5038, 10493, 504, 14524, 14529, 8655, 14530, 14535, 14536, 8662, 8747, 1199, 14537, 2]
 
 // Module 8647 (EditAvatarDecorationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7655 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7656 */;
 import useShopProductItems from "useShopProductItems" /* 8660 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8662 */;
 import HeaderAvatarDefault from "HeaderAvatar" /* 8747 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14494 */;
-import AvatarGridDefault from "AvatarGrid" /* 14501 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14530 */;
+import AvatarGridDefault from "AvatarGrid" /* 14537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7665 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7666 */;
+import GuildMemberStore from "GuildMemberStore" /* 4884 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,8 +82,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
         } else {
           tmp15 = cResult[8];
         }
-        const tmp6Result = selectedAvatarDecoration(7253);
-        const analyticsLocations2 = tmp6Result(tmp15, tmp6(7278).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+        const tmp6Result = selectedAvatarDecoration(7255);
+        const analyticsLocations2 = tmp6Result(tmp15, tmp6(7280).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
           const fn = function x() {
@@ -104,9 +104,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
           }
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            let obj2 = { title: intl.string(tmp(1128).t.HykynS) };
-            const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
-            intl = tmp(1128).intl;
+            let obj2 = { title: intl.string(tmp(1125).t.HykynS) };
+            const BottomSheetTitleHeader = tmp(7250).BottomSheetTitleHeader;
+            intl = tmp(1125).intl;
             const tmp23 = closure_10(BottomSheetTitleHeader, obj2);
             cResult[13] = tmp23;
             tmp21 = tmp23;
@@ -156,8 +156,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
                                     }
                                     return tmp42;
                                   }
-                                  const obj3 = { children: closure_10(tmp(7253).AnalyticsLocationProvider, obj4) };
-                                  const ThemeContextProvider = tmp(5037).ThemeContextProvider;
+                                  const obj3 = { children: closure_10(tmp(7255).AnalyticsLocationProvider, obj4) };
+                                  const ThemeContextProvider = tmp(5038).ThemeContextProvider;
                                   obj4 = { value: analyticsLocations2, children: tmp39 };
                                   const tmp44 = closure_10(ThemeContextProvider, obj3);
                                   cResult[34] = analyticsLocations2;
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
                               cResult[30] = bottomSheetRef;
                               cResult[31] = tmp35;
                               cResult[32] = tmp28;
-                              const tmp41 = closure_11(tmp(5265).BottomSheet, obj5);
+                              const tmp41 = closure_11(tmp(5266).BottomSheet, obj5);
                               class H {
                                 constructor(arg0) {
                                   const obj = useShopProductItems;
@@ -192,7 +192,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
                         }
                       }
                     }
-                    const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: tmp20, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7278).EDIT_AVATAR_DECORATION_SHEET };
+                    const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: tmp20, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7280).EDIT_AVATAR_DECORATION_SHEET };
                     const tmp6Result2 = selectedAvatarDecoration(8661);
                     const tmp38 = closure_10(tmp6Result2, obj6);
                     class H {
@@ -313,11 +313,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   [selectedAvatarDecoration, tmp9] = react.useState(currentAvatarDecoration);
   const obj4 = setPendingAvatarDecoration(8659);
   const bottomSheetRef = obj4.useBottomSheetRef().bottomSheetRef;
-  const tmp10 = selectedAvatarDecoration(7253);
+  const tmp10 = selectedAvatarDecoration(7255);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7278).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7280).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
   const items = [selectedAvatarDecoration, setPendingAvatarDecoration];
   const callback = obj3.useCallback(() => {
     const obj = first(dependencyMap[16]);
@@ -336,18 +336,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
     }
     tmp(purchasedItem);
   }, items);
-  const ThemeContextProvider = tmp5(5037).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(5038).ThemeContextProvider;
   const obj5 = { value: analyticsLocations2, children: tmp14(BottomSheet, obj6) };
-  const AnalyticsLocationProvider = tmp5(7253).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp5(7255).AnalyticsLocationProvider;
   obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj7), children: items1 };
-  BottomSheet = tmp5(5265).BottomSheet;
-  obj7 = { title: intl.string(setPendingAvatarDecoration(1128).t.HykynS) };
-  BottomSheetTitleHeader = tmp5(7248).BottomSheetTitleHeader;
-  intl = tmp5(1128).intl;
+  BottomSheet = tmp5(5266).BottomSheet;
+  obj7 = { title: intl.string(setPendingAvatarDecoration(1125).t.HykynS) };
+  BottomSheetTitleHeader = tmp5(7250).BottomSheetTitleHeader;
+  intl = tmp5(1125).intl;
   items1 = [, ];
   const obj8 = { style: tmp.container, children: closure_10(closure_14, { user, guildId, pendingAvatarSrc, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp9, isTryItOut }) };
   items1[0] = closure_10(View, obj8);
-  const obj9 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7278).EDIT_AVATAR_DECORATION_SHEET };
+  const obj9 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7280).EDIT_AVATAR_DECORATION_SHEET };
   skuId = undefined;
   tmp14 = closure_11;
   const tmp2Result = selectedAvatarDecoration(8661);
@@ -756,12 +756,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   if (cResult[0] !== tmp9) {
     let formatToPlainStringResult;
     if (null != tmp9) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj2 = { a11y_text: tmp9.label };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.Do2lxE, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.Do2lxE, obj2);
     } else {
-      const intl = tmp(1128).intl;
-      formatToPlainStringResult = intl.string(tmp(1128).t["7hRBmC"]);
+      const intl = tmp(1125).intl;
+      formatToPlainStringResult = intl.string(tmp(1125).t["7hRBmC"]);
     }
     cResult[0] = tmp9;
     cResult[1] = formatToPlainStringResult;
@@ -862,9 +862,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     formatToPlainStringResult = intl.string(require("intl").t["7hRBmC"]);
     tmp10 = _require;
   }
-  const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1202).AvatarSizes.EDIT_AVATAR_DECORATION };
+  const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1199).AvatarSizes.EDIT_AVATAR_DECORATION };
   const tmp2Result = purchase(8747);
-  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14501), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14537), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/EditAvatarDecorationActionSheet.tsx");

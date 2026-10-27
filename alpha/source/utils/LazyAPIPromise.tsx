@@ -1,7 +1,7 @@
 // Module ID: 8900
 // Function ID: 8901
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 558, 576, 6374, 2]
+// Dependencies: [5, 32, 19, 558, 576, 6375, 2]
 
 // Module 8900 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

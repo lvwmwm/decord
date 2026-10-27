@@ -1,24 +1,24 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 15902
+// Function ID: 15903
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1087, 4820, 4996, 21, 4971, 587, 558, 576, 1505, 15865, 4807, 7496, 8655, 6367, 10664, 1411, 4999, 15857, 6713, 15866, 1267, 1128, 15869, 1202, 14497, 10661, 15870, 2928, 15872, 15873, 2]
+// Dependencies: [32, 19, 17, 1084, 4821, 4997, 21, 4972, 587, 558, 576, 1502, 15903, 4808, 7497, 8655, 6368, 10667, 1408, 5000, 15895, 6714, 15904, 1264, 1125, 15907, 1199, 14533, 10664, 15908, 2929, 15910, 15911, 2]
 
-// Module 15864 (UserProfileDisplayNameStylesEditButton)
+// Module 15902 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14497 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15869 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15870 */;
+import intl3 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14533 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15907 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15908 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import Constants from "Constants" /* 1084 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16444
+// Function ID: 16445
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 4971, 587, 16396, 1128, 558, 576, 5234, 8566, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 16435, 1125, 558, 576, 5235, 8566, 2]
 
-// Module 16405 (OrbsArcadeRewardStatusLabel)
+// Module 16444 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
+import intl4 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,17 +25,17 @@ function getStatusLabel(type, arg1) {
   type = type.type;
   const FRACTIONAL_PREMIUM = OrbsArcadeTypes.OrbsArcadeRewardType.FRACTIONAL_PREMIUM;
   if (OrbsArcadeTypes.OrbsArcadeRewardStatus.CLAIMED === arg1) {
-    const intl3 = tmp(1128).intl;
+    const intl3 = tmp(1125).intl;
     return intl3.string(intl4.t.R6Ksr9);
   } else if (OrbsArcadeTypes.OrbsArcadeRewardStatus.CLAIMABLE === arg1) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const string2 = intl2.string;
-    const t2 = tmp(1128).t;
+    const t2 = tmp(1125).t;
     return string2(type === FRACTIONAL_PREMIUM ? t2.pxxI1f : t2["A7+nP8"]);
   } else if (OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED === arg1) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const string = intl.string;
-    const t = tmp(1128).t;
+    const t = tmp(1125).t;
     return string(type === FRACTIONAL_PREMIUM ? t.vJFuxl : t["++O7TA"]);
   }
 }

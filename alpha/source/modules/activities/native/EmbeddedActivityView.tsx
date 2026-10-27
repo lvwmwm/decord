@@ -1,25 +1,25 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11463
+// Function ID: 11464
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 4822, 2026, 1375, 21, 4971, 558, 576, 11458, 1499, 584, 11461, 11462, 11464, 11489, 11454, 504, 11503, 10771, 11504, 5710, 11506, 2]
+// Dependencies: [109, 32, 19, 17, 4823, 2023, 1372, 21, 4972, 558, 576, 11461, 1496, 584, 11464, 11465, 11467, 11490, 11457, 504, 11505, 10774, 11506, 5711, 11508, 2]
 
-// Module 11460 (EmbeddedActivityView)
+// Module 11463 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10771 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11461 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 11462 */;
-import activityWebViewController from "activityWebViewController" /* 11464 */;
+import ApplicationConstants from "ApplicationConstants" /* 1372 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10774 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11464 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 11465 */;
+import activityWebViewController from "activityWebViewController" /* 11467 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import Constants from "Constants" /* 2026 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import Constants from "Constants" /* 2023 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -467,7 +467,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     }
   }
   const obj2 = { iframeId, shellBridgeSecret, deepLinkQueryParams: tmp5, applicationId: tmp4 };
-  const BaseEmbeddedAppWebView = tmp(11489).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = tmp(11490).BaseEmbeddedAppWebView;
   const merged = Object.assign(tmp6);
   const tmp13 = closure_14(BaseEmbeddedAppWebView, obj2);
   cResult[6] = tmp4;
@@ -488,7 +488,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     return obj.getOrCreateActivityWebViewController(applicationId);
   }), 1)[0]);
   let obj = { iframeId, shellBridgeSecret, deepLinkQueryParams, applicationId };
-  const BaseEmbeddedAppWebView = applicationId(11489).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(11490).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_14(BaseEmbeddedAppWebView, obj);
 });

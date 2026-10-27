@@ -1,19 +1,19 @@
 // Module ID: 9152
 // Function ID: 9153
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 4829, 1087, 21, 4971, 587, 558, 576, 9022, 5210, 9153, 8888, 1128, 1202, 5234, 5244, 14183, 2]
+// Dependencies: [19, 17, 4830, 1084, 21, 4972, 587, 558, 576, 9022, 5211, 9153, 8888, 1125, 1199, 5235, 5245, 14210, 2]
 
 // Module 9152 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
+import Constants from "Constants" /* 1084 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8888 */;
 import CallsUtils from "CallsUtils" /* 9153 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,8 +73,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       const _Symbol = Symbol;
       ({ container, title } = tmp4);
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(channel(1128).t["4Ao8LC"]);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(channel(1125).t["4Ao8LC"]);
         cResult[5] = stringResult;
         tmp9 = stringResult;
       } else {
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       }
       if (cResult[6] !== tmp4.title) {
         const obj3 = { style: title, accessibilityRole: "header", children: tmp9 };
-        const tmp13 = closure_5(channel(1202).LegacyText, obj3);
+        const tmp13 = closure_5(channel(1199).LegacyText, obj3);
         cResult[6] = tmp4.title;
         cResult[7] = tmp13;
         tmp11 = tmp13;
@@ -92,8 +92,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       const _Symbol2 = Symbol;
       const subtitle = tmp4.subtitle;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult1 = intl2.string(channel(1128).t["0I0B8f"]);
+        const intl2 = tmp(1125).intl;
+        const stringResult1 = intl2.string(channel(1125).t["0I0B8f"]);
         cResult[8] = stringResult1;
         tmp14 = stringResult1;
       } else {
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       }
       if (cResult[9] !== tmp4.subtitle) {
         const obj4 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp14 };
-        const tmp18 = closure_5(channel(5234).Text, obj4);
+        const tmp18 = closure_5(channel(5235).Text, obj4);
         cResult[9] = tmp4.subtitle;
         cResult[10] = tmp18;
         tmp16 = tmp18;
@@ -111,8 +111,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       const _Symbol3 = Symbol;
       const cancelButtonContainer = tmp4.cancelButtonContainer;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1128).intl;
-        const stringResult2 = intl3.string(channel(1128).t.P60OAX);
+        const intl3 = tmp(1125).intl;
+        const stringResult2 = intl3.string(channel(1125).t.P60OAX);
         cResult[11] = stringResult2;
         tmp19 = stringResult2;
       } else {
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
       }
       if (cResult[12] !== tmp6) {
         const obj5 = { text: tmp19, grow: true, onPress: tmp6 };
-        const tmp23 = closure_5(channel(5244).Button, obj5);
+        const tmp23 = closure_5(channel(5245).Button, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp23;
         tmp21 = tmp23;
@@ -137,8 +137,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
         const _Symbol4 = Symbol;
         const confirmButtonContainer = tmp4.confirmButtonContainer;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl4 = tmp(1128).intl;
-          const stringResult3 = intl4.string(channel(1128).t.mjB9pd);
+          const intl4 = tmp(1125).intl;
+          const stringResult3 = intl4.string(channel(1125).t.mjB9pd);
           cResult[17] = stringResult3;
           tmp28 = stringResult3;
         } else {
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
         }
         if (cResult[18] !== tmp7) {
           const obj6 = { text: tmp28, variant: "destructive", grow: true, onPress: tmp7 };
-          const tmp32 = closure_5(channel(5244).Button, obj6);
+          const tmp32 = closure_5(channel(5245).Button, obj6);
           cResult[18] = tmp7;
           cResult[19] = tmp32;
           tmp30 = tmp32;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
           const obj7 = { children: closure_6(View, obj8) };
           obj8 = { style: container, children: items };
           items = [tmp11, tmp16, tmp24, tmp33];
-          const tmp40 = activeEvent(14183);
+          const tmp40 = activeEvent(14210);
           const tmp43 = closure_5(tmp40, obj7);
           cResult[23] = tmp4.container;
           cResult[24] = tmp24;
@@ -236,23 +236,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(14183);
-    const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1128).t["4Ao8LC"]) };
-    const LegacyText = tmp2(1202).LegacyText;
-    intl = tmp2(1128).intl;
+    const tmp7 = activeEvent(14210);
+    const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1125).t["4Ao8LC"]) };
+    const LegacyText = tmp2(1199).LegacyText;
+    intl = tmp2(1125).intl;
     items = [closure_5(LegacyText, obj4), , , ];
-    const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1128).t["0I0B8f"]) };
-    const Text = tmp2(5234).Text;
-    intl2 = tmp2(1128).intl;
+    const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1125).t["0I0B8f"]) };
+    const Text = tmp2(5235).Text;
+    intl2 = tmp2(1125).intl;
     items[1] = closure_5(Text, obj5);
     const obj6 = { style: tmp.cancelButtonContainer, children: closure_5(Button, obj7) };
-    obj7 = { text: intl3.string(channel(1128).t.P60OAX), grow: true, onPress: handleClose };
-    Button = tmp2(5244).Button;
-    intl3 = tmp2(1128).intl;
+    obj7 = { text: intl3.string(channel(1125).t.P60OAX), grow: true, onPress: handleClose };
+    Button = tmp2(5245).Button;
+    intl3 = tmp2(1125).intl;
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: closure_5(Button2, obj9) };
     obj9 = {
-      text: intl4.string(channel(1128).t.mjB9pd),
+      text: intl4.string(channel(1125).t.mjB9pd),
       variant: "destructive",
       grow: true,
       onPress: function handleConfirmClick() {
@@ -266,8 +266,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndEventActi
           }
         }
     };
-    Button2 = tmp2(5244).Button;
-    intl4 = tmp2(1128).intl;
+    Button2 = tmp2(5245).Button;
+    intl4 = tmp2(1125).intl;
     items[3] = closure_5(View, obj8);
     return closure_5(tmp7, obj2);
   }

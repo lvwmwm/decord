@@ -1,20 +1,20 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12340
+// Function ID: 12341
 // Name: ConjureTipCallout
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 7959, 6931, 1128, 12168, 12327, 5234, 2]
+// Dependencies: [19, 17, 21, 587, 4972, 558, 576, 7957, 6933, 1125, 12188, 12333, 5235, 2]
 
-// Module 12334 (ConjureTipCallout)
+// Module 12340 (ConjureTipCallout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import XSmallIcon from "XSmallIcon" /* 6931 */;
-import IconButton2 from "IconButton" /* 7959 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12168 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12327 */;
+import intl2 from "intl" /* 1125 */;
+import XSmallIcon from "XSmallIcon" /* 6933 */;
+import IconButton2 from "IconButton" /* 7957 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12188 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12333 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj3;
 let obj4;
 let rect;
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5235);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const firstLineInset = nativeDefault.space.PX_12 + 1;
@@ -89,8 +89,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipCa
   if (null != onDismiss) {
     const obj4 = { style: tmp4.dismiss, children: React3(IconButton, obj5) };
     obj5 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp(7959).IconButton;
-    intl = tmp(1128).intl;
+    IconButton = tmp(7957).IconButton;
+    intl = tmp(1125).intl;
     tmp6 = React3(View, obj4);
   }
   cResult[0] = onDismiss;

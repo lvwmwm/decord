@@ -1,11 +1,11 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 7712
+// Function ID: 7713
 // Name: UserProfileClipsGalleryWidgetTypes
-// Dependencies: [7704, 1357, 2]
+// Dependencies: [7705, 1354, 2]
 
-// Module 7711 (UserProfileClipsGalleryWidgetTypes)
-import _modDef1357 from "module_1357" /* 1357 */;
-import WidgetType from "WidgetType" /* 7704 */;
+// Module 7712 (UserProfileClipsGalleryWidgetTypes)
+import _modDef1354 from "module_1354" /* 1354 */;
+import WidgetType from "WidgetType" /* 7705 */;
 import size from "module_2" /* 2 */;
 
 function isUploadedWidgetClip(status) {
@@ -68,7 +68,7 @@ class ClipsGalleryWidget {
     let tmp = getUploadedClips instanceof ClipsGalleryWidget;
     if (tmp) {
       const self = this;
-      const tmp4 = _modDef1357;
+      const tmp4 = _modDef1354;
       const uploadedClips = this.getUploadedClips();
       tmp = tmp4(uploadedClips, getUploadedClips.getUploadedClips());
     }

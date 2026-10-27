@@ -1,46 +1,46 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14354
+// Function ID: 14355
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 4822, 4823, 6500, 5194, 4845, 11195, 4903, 4913, 4874, 6498, 5630, 1087, 8828, 21, 4971, 587, 558, 576, 7253, 4892, 14319, 573, 6662, 14320, 7812, 1128, 8577, 5210, 6672, 11361, 5244, 10651, 1202, 8623, 11342, 5660, 14322, 8749, 5151, 7878, 7867, 6502, 1417, 9609, 7490, 8832, 11346, 1386, 8860, 2]
+// Dependencies: [5, 19, 4823, 4824, 6501, 5195, 4846, 11198, 4904, 4914, 4875, 6499, 5631, 1084, 8828, 21, 4972, 587, 558, 576, 7255, 4893, 14355, 573, 6663, 14356, 7813, 1125, 8577, 5211, 6673, 11364, 5245, 10654, 1199, 8623, 11345, 5661, 14358, 8749, 5152, 7879, 7868, 6503, 1414, 9611, 7491, 8832, 11349, 1383, 8860, 2]
 // Exports: CustomActivityButton
 
-// Module 14318 (UserProfileActivityButtons)
+// Module 14354 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
-import RootNavigationRef from "RootNavigationRef" /* 5151 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7867 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7878 */;
+import intl5 from "intl" /* 1125 */;
+import native from "native" /* 1199 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4893 */;
+import RootNavigationRef from "RootNavigationRef" /* 5152 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7868 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7879 */;
 import isStreamingDefault from "isStreaming" /* 8749 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9609 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11361 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14319 */;
-import getActivityJoinability from "getActivityJoinability" /* 14320 */;
-import getStreamURLDefault from "getStreamURL" /* 14322 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9611 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11364 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14355 */;
+import getActivityJoinability from "getActivityJoinability" /* 14356 */;
+import getStreamURLDefault from "getStreamURL" /* 14358 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6500 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import LocalActivityStore from "LocalActivityStore" /* 11195 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6498 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
-import Constants from "Constants" /* 1087 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5195 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import LocalActivityStore from "LocalActivityStore" /* 11198 */;
+import PermissionStore from "PermissionStore" /* 4904 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
+import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import Constants from "Constants" /* 1084 */;
 import SpotifyConstants from "SpotifyConstants" /* 8828 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -505,14 +505,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinGameActi
     tmp6Result = null;
     if (stateFromStores !== getActivityJoinability.ActivityJoinability.CANNOT_JOIN) {
       let stringResult;
-      const Button = tmp2(5244).Button;
+      const Button = tmp2(5245).Button;
       const tmp6 = jsx;
       if (stateFromStores === getActivityJoinability.ActivityJoinability.JOINED) {
-        const intl2 = tmp2(1128).intl;
-        stringResult = intl2.string(tmp2(1128).t.DPfdsq);
+        const intl2 = tmp2(1125).intl;
+        stringResult = intl2.string(tmp2(1125).t.DPfdsq);
       } else {
-        const intl = tmp2(1128).intl;
-        stringResult = intl.string(tmp2(1128).t.VJlc0S);
+        const intl = tmp2(1125).intl;
+        stringResult = intl.string(tmp2(1125).t.VJlc0S);
       }
       let obj2 = {
         text: stringResult,
@@ -546,15 +546,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const sync_id = activity.sync_id;
   let tmp6 = null;
   const tmp5 = sync_id;
-  if (sync_id(10651)(activity)) {
+  if (sync_id(10654)(activity)) {
     tmp6 = null;
     if (null != sync_id) {
       let tmp7;
       let tmp9;
       if (cResult[0] !== activity.name) {
-        const intl = tmp(1128).intl;
+        const intl = tmp(1125).intl;
         let obj2 = { platform: activity.name };
-        const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.LEgD7t, obj2);
+        const formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.LEgD7t, obj2);
         cResult[0] = activity.name;
         cResult[1] = formatToPlainStringResult;
         tmp7 = formatToPlainStringResult;
@@ -562,8 +562,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
         tmp7 = cResult[1];
       }
       if (cResult[2] !== tmp4.icon) {
-        const Icon = tmp(1202).Icon;
-        const tmp11 = <Icon size={tmp(1202).Icon.Sizes.SMALL} source={tmp5(8623)} disableColor style={tmp4.icon} />;
+        const Icon = tmp(1199).Icon;
+        const tmp11 = <Icon size={tmp(1199).Icon.Sizes.SMALL} source={tmp5(8623)} disableColor style={tmp4.icon} />;
         cResult[2] = tmp4.icon;
         cResult[3] = tmp11;
         tmp9 = tmp11;
@@ -584,7 +584,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             tmp6 = tmp14;
           }
         }
-        const tmp16 = jsx(tmp(5244).Button, { text: tmp7, icon: tmp9, variant: "secondary", onPress: tmp12 });
+        const tmp16 = jsx(tmp(5245).Button, { text: tmp7, icon: tmp9, variant: "secondary", onPress: tmp12 });
         cResult[7] = tmp7;
         cResult[8] = tmp9;
         cResult[9] = tmp12;
@@ -687,7 +687,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10651)(activity)) {
+  if (sync_id(10654)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;
@@ -802,8 +802,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WatchActivit
       let tmp9;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(onAction(1128).t.I6JG46);
+        const intl = tmp(1125).intl;
+        const stringResult = intl.string(onAction(1125).t.I6JG46);
         cResult[2] = stringResult;
         tmp9 = stringResult;
       } else {
@@ -816,7 +816,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WatchActivit
         }
         tmp7 = tmp11;
       }
-      const tmp13 = jsx(onAction(5244).Button, {
+      const tmp13 = jsx(onAction(5245).Button, {
         text: tmp9,
         variant: "secondary",
         onPress() {

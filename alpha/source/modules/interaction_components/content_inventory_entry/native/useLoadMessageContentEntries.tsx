@@ -1,18 +1,18 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 11230
+// Function ID: 11231
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2045, 2026, 10789, 8670, 6809, 8614, 38, 8620, 2000, 8612, 558, 576, 5602, 2]
+// Dependencies: [32, 5, 19, 2042, 2023, 10792, 8670, 6811, 8614, 38, 8620, 1997, 8612, 558, 576, 5603, 2]
 
-// Module 11227 (useLoadMessageContentEntries)
+// Module 11230 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 2000 */;
-import Constants from "Constants" /* 2026 */;
+import Server from "Server" /* 1997 */;
+import Constants from "Constants" /* 2023 */;
 import useAvatarColor from "useAvatarColor" /* 8614 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 10789 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 10792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ApplicationStore from "ApplicationStore" /* 2042 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

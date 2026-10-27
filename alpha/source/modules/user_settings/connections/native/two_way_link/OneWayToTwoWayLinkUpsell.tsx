@@ -1,18 +1,18 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16299
+// Function ID: 16300
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1087, 4820, 21, 4971, 587, 6651, 558, 576, 1202, 10408, 5234, 1128, 5244, 2]
+// Dependencies: [19, 17, 1084, 4821, 21, 4972, 587, 6652, 558, 576, 1199, 10410, 5235, 1125, 5245, 2]
 
-// Module 16261 (OneWayToTwoWayLinkUpsell)
+// Module 16299 (OneWayToTwoWayLinkUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10408 */;
+import Constants from "Constants" /* 1084 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles_mod from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 4972 */;
+import TextStyles_mod from "TextStyles" /* 6652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayT
   const effect = react.useEffect(tmp5, tmp6);
   if (cResult[3] !== tmp4.newContainer) {
     const obj2 = { containerStyle: tmp4.newContainer, variant: "text-xs/bold" };
-    const tmp10 = closure_6(tmp(1202).NewTag, obj2);
+    const tmp10 = closure_6(tmp(1199).NewTag, obj2);
     cResult[3] = tmp4.newContainer;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -77,7 +77,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayT
   const tmp = closure_8();
   const effect = react.useEffect(() => markAsDismissed(ContentDismissActionType.UNKNOWN), items);
   const obj = { containerStyle: tmp.newContainer, variant: "text-xs/bold" };
-  return closure_6(markAsDismissed(1202).NewTag, obj);
+  return closure_6(markAsDismissed(1199).NewTag, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoWayLinkUpsell(onPress) {
@@ -145,8 +145,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoW
               const _Symbol = Symbol;
               const reconnectButton = tmp4.reconnectButton;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(1128).intl;
-                const stringResult = intl.string(tmp(1128).t.vD60Pv);
+                const intl = tmp(1125).intl;
+                const stringResult = intl.string(tmp(1125).t.vD60Pv);
                 cResult[16] = stringResult;
                 tmp23 = stringResult;
               } else {
@@ -154,7 +154,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoW
               }
               if (cResult[17] !== onPress) {
                 const obj3 = { text: tmp23, onPress };
-                const tmp27 = closure_6(tmp(5244).Button, obj3);
+                const tmp27 = closure_6(tmp(5245).Button, obj3);
                 cResult[17] = onPress;
                 cResult[18] = tmp27;
                 tmp25 = tmp27;
@@ -195,7 +195,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoW
               tmp28 = tmp31;
             }
             const obj6 = { style: tmp4.body, variant: "text-sm/medium", children: body };
-            const tmp21 = closure_6(tmp(5234).Text, obj6);
+            const tmp21 = closure_6(tmp(5235).Text, obj6);
             cResult[13] = body;
             cResult[14] = tmp4.body;
             cResult[15] = tmp21;
@@ -222,7 +222,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoW
     tmp11 = tmp14;
   }
   const obj9 = { style: tmp4.title, variant: "text-md/semibold", children: title };
-  const tmp10 = closure_6(tmp(5234).Text, obj9);
+  const tmp10 = closure_6(tmp(5235).Text, obj9);
   cResult[2] = tmp4.title;
   cResult[3] = title;
   cResult[4] = tmp10;
@@ -259,15 +259,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneWayToTwoW
   const obj3 = { style: tmp.titleContainer, children: items1 };
   items1 = [closure_6(SelectedDismissibleContentDefault, obj4), ];
   const obj5 = { style: tmp.title, variant: "text-md/semibold", children: title };
-  items1[1] = closure_6(newIndicatorDismissibleContent(5234).Text, obj5);
+  items1[1] = closure_6(newIndicatorDismissibleContent(5235).Text, obj5);
   items2 = [closure_7(View, obj3), img];
   items3 = [closure_7(View, obj2), , ];
   const obj6 = { style: tmp.body, variant: "text-sm/medium", children: body };
-  items3[1] = closure_6(newIndicatorDismissibleContent(5234).Text, obj6);
+  items3[1] = closure_6(newIndicatorDismissibleContent(5235).Text, obj6);
   const obj7 = { style: tmp.reconnectButton, children: closure_6(Button, obj8) };
-  obj8 = { text: intl.string(newIndicatorDismissibleContent(1128).t.vD60Pv), onPress };
-  Button = newIndicatorDismissibleContent(5244).Button;
-  intl = newIndicatorDismissibleContent(1128).intl;
+  obj8 = { text: intl.string(newIndicatorDismissibleContent(1125).t.vD60Pv), onPress };
+  Button = newIndicatorDismissibleContent(5245).Button;
+  intl = newIndicatorDismissibleContent(1125).intl;
   items3[2] = closure_6(View, obj7);
   return closure_7(View, obj);
 });

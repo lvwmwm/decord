@@ -1,22 +1,22 @@
-// Module ID: 18746
-// Function ID: 18747
+// Module ID: 18782
+// Function ID: 18783
 // Name: ExistingUserAgeGateModal
-// Dependencies: [19, 4823, 5002, 1112, 18747, 1087, 21, 1384, 5663, 1128, 6667, 6830, 6672, 1267, 1275, 6924, 18748, 18750, 18751, 17404, 7314, 10896, 558, 576, 6653, 504, 5604, 6654, 7095, 2]
+// Dependencies: [19, 4824, 5003, 1109, 18783, 1084, 21, 1381, 5664, 1125, 6668, 6832, 6673, 1264, 1272, 6926, 18784, 18786, 18787, 17443, 7316, 10899, 558, 576, 6654, 504, 5605, 6655, 7097, 2]
 
-// Module 18746 (ExistingUserAgeGateModal)
+// Module 18782 (ExistingUserAgeGateModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6667 */;
-import GuildNSFWDefault from "GuildNSFW" /* 10896 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18747 */;
-import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 18748 */;
-import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 18750 */;
-import AgeGateVerifyDefault from "AgeGateVerify" /* 18751 */;
+import Constants from "Constants" /* 1084 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6668 */;
+import GuildNSFWDefault from "GuildNSFW" /* 10899 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18783 */;
+import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 18784 */;
+import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 18786 */;
+import AgeGateVerifyDefault from "AgeGateVerify" /* 18787 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import AgeGateConstants from "AgeGateConstants" /* 1112 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import AgeGateConstants from "AgeGateConstants" /* 1109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
   const cResult = obj.c(20);
   source = source.source;
   const channelId = source.channelId;
-  const obj2 = source(6653);
+  const obj2 = source(6654);
   const shouldAgeVerifyForAgeGate = obj2.useShouldAgeVerifyForAgeGate();
   dependencyMap = react.useRef(shouldAgeVerifyForAgeGate);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -259,7 +259,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
     if (cResult[5] === source) {
       tmp10 = cResult[6];
     }
-    const tmp14 = channelId(5604)(tmp10);
+    const tmp14 = channelId(5605)(tmp10);
     if (cResult[7] !== source) {
       class I {
         constructor() {
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
         }
       }
     }
-    const tmpResult2 = source(6654);
+    const tmpResult2 = source(6655);
     const watchAgeVerificationStatusChange = tmpResult2.useWatchAgeVerificationStatusChange(tmp15);
     if (cResult[9] === source) {
       class I {
@@ -345,7 +345,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
   const channelId = source.channelId;
   let stateFromStores;
   let closure_4;
-  let obj = source(6653);
+  let obj = source(6654);
   const shouldAgeVerifyForAgeGate = obj.useShouldAgeVerifyForAgeGate();
   dependencyMap = stateFromStores.useRef(shouldAgeVerifyForAgeGate);
   const items = [closure_4];
@@ -364,19 +364,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
     }
   }
   stateFromStores = tmp5;
-  const tmp7 = channelId(5604)(tmp5);
+  const tmp7 = channelId(5605)(tmp5);
   closure_4 = tmp7;
   const items2 = [source];
-  const tmpResult = source(6654);
+  const tmpResult = source(6655);
   const watchAgeVerificationStatusChange = tmpResult.useWatchAgeVerificationStatusChange(obj2.useCallback(() => {
     if (ref.current) {
       const obj = AgeGateModalActionCreators;
       obj.closeAgeGateModal(source);
     }
   }, items2));
-  const obj4 = { screens: stateFromStores.useMemo(() => getScreens(source, stateFromStores, closure_4), items3), initialRouteName: AgeGate, headerBackTitle: intl.string(source(1128).t["13/7kX"]) };
+  const obj4 = { screens: stateFromStores.useMemo(() => getScreens(source, stateFromStores, closure_4), items3), initialRouteName: AgeGate, headerBackTitle: intl.string(source(1125).t["13/7kX"]) };
   items3 = [source, tmp5, tmp7];
-  const Navigator = tmp(7095).Navigator;
+  const Navigator = tmp(7097).Navigator;
   const tmp9 = jsx;
   if (shouldAgeVerifyForAgeGate) {
     let Pawtect;
@@ -389,7 +389,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
   } else {
     AgeGate = closure_8.AgeGate;
   }
-  intl = tmp(1128).intl;
+  intl = tmp(1125).intl;
   return tmp9(Navigator, obj4);
 });
 const result = size.fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGateModal.tsx");

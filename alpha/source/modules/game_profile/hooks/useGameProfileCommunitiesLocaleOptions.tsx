@@ -1,11 +1,11 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9512
+// Function ID: 9513
 // Name: useGameProfileCommunitiesLocaleOptions
-// Dependencies: [19, 9511, 1128, 558, 576, 2]
+// Dependencies: [19, 9510, 1125, 558, 576, 2]
 
-// Module 9513 (useGameProfileCommunitiesLocaleOptions)
-import intl3 from "intl" /* 1128 */;
-import GameProfileCommunitiesLocaleFilterStore2 from "GameProfileCommunitiesLocaleFilterStore" /* 9511 */;
+// Module 9512 (useGameProfileCommunitiesLocaleOptions)
+import intl3 from "intl" /* 1125 */;
+import GameProfileCommunitiesLocaleFilterStore2 from "GameProfileCommunitiesLocaleFilterStore" /* 9510 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const GameProfileCommunitiesLocaleFilterStore_mod = GameProfileCommunitiesLocaleFilterStore2;
 let _require;
 
-const f103729 = (locale) => {
+const f103943 = (locale) => {
   let intl2;
   let stringResult;
   closure_0 = locale;
@@ -33,7 +33,7 @@ const f103729 = (locale) => {
     return obj;
   }
 };
-const f103730 = (label, label2) => {
+const f103944 = (label, label2) => {
   label = label.label;
   return label.localeCompare(label2.label);
 };
@@ -63,10 +63,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   const tmp6 = GameProfileCommunitiesLocaleFilterStore(first);
   let closure_2 = tmp6;
   if (cResult[1] !== arr) {
-    const tmpResult = tmp(1128);
+    const tmpResult = tmp(1125);
     _require = tmpResult.getAvailableLocales();
-    const mapped = arr.map(f103729);
-    const sorted = mapped.sort(f103730);
+    const mapped = arr.map(f103943);
+    const sorted = mapped.sort(f103944);
     cResult[1] = arr;
     cResult[2] = sorted;
     arr = sorted;
@@ -171,8 +171,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   memo = react.useMemo(() => {
     let obj = intl3;
     const availableLocales = obj.getAvailableLocales();
-    const mapped = closure_1.map(f103729);
-    return mapped.sort(f103730);
+    const mapped = closure_1.map(f103943);
+    return mapped.sort(f103944);
   }, items);
   let obj = {
     options: react.useMemo(() => {

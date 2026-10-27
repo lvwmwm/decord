@@ -1,20 +1,20 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17557
+// Function ID: 17558
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 5712, 1392, 16653, 1087, 21, 1202, 4971, 7253, 504, 1267, 8668, 2002, 5025, 9018, 16654, 8749, 2]
+// Dependencies: [19, 17, 5713, 1389, 16695, 1084, 21, 1199, 4972, 7255, 504, 1264, 8668, 1999, 5026, 9018, 16696, 8749, 2]
 
-// Module 17516 (HappeningNowCardUser)
+// Module 17557 (HappeningNowCardUser)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import native from "native" /* 1202 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16653 */;
+import Constants from "Constants" /* 1084 */;
+import native from "native" /* 1199 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import asyncRequire from "asyncRequire" /* 1999 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16695 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import PresenceStore from "PresenceStore" /* 5713 */;
+import UserStore from "UserStore" /* 1389 */;
+import createStyles from "createStyles" /* 4972 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

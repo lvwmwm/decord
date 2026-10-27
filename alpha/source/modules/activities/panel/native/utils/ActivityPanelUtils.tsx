@@ -1,17 +1,17 @@
-// Module ID: 18458
-// Function ID: 18459
+// Module ID: 18492
+// Function ID: 18493
 // Name: ActivityPanelUtils
-// Dependencies: [4823, 4874, 4822, 5609, 4892, 5629, 1108, 558, 576, 504, 2]
+// Dependencies: [4824, 4875, 4823, 5610, 4893, 5630, 1105, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 18458 (ActivityPanelUtils)
+// Module 18492 (ActivityPanelUtils)
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5629 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4893 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5610 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5630 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -163,7 +163,7 @@ function isConnectedToActivityInText() {
       if (channel != null) {
         type = channel.type;
       }
-      let tmp4 = type === tmp8(1108).ChannelTypes.GUILD_TEXT;
+      let tmp4 = type === tmp8(1105).ChannelTypes.GUILD_TEXT;
       if (!tmp4) {
         let isPrivateResult;
         if (channel != null) {

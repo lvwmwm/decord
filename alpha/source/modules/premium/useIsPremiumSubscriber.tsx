@@ -1,12 +1,12 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11086
+// Function ID: 11087
 // Name: useIsPremiumSubscriber
-// Dependencies: [1392, 1394, 558, 576, 1991, 504, 2]
+// Dependencies: [1389, 1391, 558, 576, 1988, 504, 2]
 
-// Module 11083 (useIsPremiumSubscriber)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 11086 (useIsPremiumSubscriber)
+import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 13602
+// Function ID: 13603
 // Name: NewUserAnalyticsUtils
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1084, 1264, 2]
 // Exports: trackNUFStep
 
-// Module 13588 (NewUserAnalyticsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 13602 (NewUserAnalyticsUtils)
+import Constants from "Constants" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

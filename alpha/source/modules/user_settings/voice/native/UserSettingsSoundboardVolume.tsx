@@ -1,18 +1,18 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11628
+// Function ID: 11629
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1087, 21, 4971, 558, 576, 7452, 7253, 1128, 7444, 11623, 2067, 5234, 11614, 6903, 2]
+// Dependencies: [19, 17, 1084, 21, 4972, 558, 576, 7453, 7255, 1125, 7445, 11625, 2064, 5235, 11616, 6905, 2]
 
-// Module 11626 (UserSettingsSoundboardVolume)
+// Module 11628 (UserSettingsSoundboardVolume)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7444 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11623 */;
+import Constants from "Constants" /* 1084 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7445 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11625 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   const cResult = obj.c(17);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = analyticsLocations(7452);
+    const tmpResult = analyticsLocations(7453);
     const amplitudinalSoundboardVolume = tmpResult.getAmplitudinalSoundboardVolume();
     cResult[0] = amplitudinalSoundboardVolume;
     first = amplitudinalSoundboardVolume;
@@ -49,16 +49,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   }
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(analyticsLocations(1128).t.xbMc8r);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(analyticsLocations(1125).t.xbMc8r);
     cResult[1] = stringResult;
     tmp8 = stringResult;
   } else {
     tmp8 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(analyticsLocations(1128).t.kbFsAD);
+    const intl2 = tmp(1125).intl;
+    const stringResult1 = intl2.string(analyticsLocations(1125).t.kbFsAD);
     cResult[2] = stringResult1;
     tmp10 = stringResult1;
   } else {
@@ -77,8 +77,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
     tmp12 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(analyticsLocations(1128).t.kbFsAD);
+    const intl3 = tmp(1125).intl;
+    const stringResult2 = intl3.string(analyticsLocations(1125).t.kbFsAD);
     cResult[5] = stringResult2;
     tmp13 = stringResult2;
   } else {
@@ -103,10 +103,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
     const _Symbol = Symbol;
     const text = tmp4.text;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1128).intl;
+      const intl4 = tmp(1125).intl;
       const format = intl4.format;
       const obj3 = { helpCenterArticle: tmp7Result.getArticleURL(HelpdeskArticles.SOUNDBOARD) };
-      const BPbGq7 = tmp(1128).t.BPbGq7;
+      const BPbGq7 = tmp(1125).t.BPbGq7;
       tmp7Result = HelpdeskUtilsDefault;
       const formatResult = format(BPbGq7, obj3);
       cResult[11] = formatResult;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
     }
     if (cResult[12] !== tmp4.text) {
       const obj4 = { style: text, variant: "text-sm/medium", children: tmp20 };
-      const tmp25 = closure_5(analyticsLocations(5234).Text, obj4);
+      const tmp25 = closure_5(analyticsLocations(5235).Text, obj4);
       cResult[12] = tmp4.text;
       cResult[13] = tmp25;
       tmp23 = tmp25;
@@ -131,11 +131,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
       return tmp26;
     }
     const obj5 = { title: tmp8, hasIcons: false, children: closure_5(TableRow, obj6) };
-    const UserSettingsTableRowGroup = tmp(11614).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11616).UserSettingsTableRowGroup;
     obj6 = { label: tmp10, subLabel: closure_7(closure_6, obj7) };
     obj7 = { children: items };
     items = [tmp18, tmp23];
-    TableRow = tmp(6903).TableRow;
+    TableRow = tmp(6905).TableRow;
     const tmp30 = closure_5(UserSettingsTableRowGroup, obj5);
     cResult[14] = tmp23;
     cResult[15] = tmp18;
@@ -163,15 +163,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   let obj9;
   let tmp3;
   const tmp = closure_8();
-  let obj = analyticsLocations(7452);
+  let obj = analyticsLocations(7453);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  const obj2 = { title: intl.string(analyticsLocations(1128).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
-  const UserSettingsTableRowGroup = analyticsLocations(11614).UserSettingsTableRowGroup;
-  intl = analyticsLocations(1128).intl;
-  obj3 = { label: intl2.string(analyticsLocations(1128).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
-  TableRow = analyticsLocations(6903).TableRow;
-  intl2 = analyticsLocations(1128).intl;
+  const obj2 = { title: intl.string(analyticsLocations(1125).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
+  const UserSettingsTableRowGroup = analyticsLocations(11616).UserSettingsTableRowGroup;
+  intl = analyticsLocations(1125).intl;
+  obj3 = { label: intl2.string(analyticsLocations(1125).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
+  TableRow = analyticsLocations(6905).TableRow;
+  intl2 = analyticsLocations(1125).intl;
   obj4 = { children: items };
   const obj5 = { style: tmp.slider, children: closure_5(tmp3, obj6) };
   obj6 = {
@@ -181,17 +181,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
       const obj = SoundboardActionCreators;
       return obj.updateUserSoundboardVolume(volume, analyticsLocations);
     },
-    accessibilityLabel: intl3.string(analyticsLocations(1128).t.kbFsAD)
+    accessibilityLabel: intl3.string(analyticsLocations(1125).t.kbFsAD)
   };
   tmp3 = VolumeSliderDefault;
-  intl3 = analyticsLocations(1128).intl;
+  intl3 = analyticsLocations(1125).intl;
   items = [closure_5(View, obj5), ];
   const obj7 = { style: tmp.text, variant: "text-sm/medium", children: format(BPbGq7, obj8) };
-  const Text = analyticsLocations(5234).Text;
-  const intl4 = analyticsLocations(1128).intl;
+  const Text = analyticsLocations(5235).Text;
+  const intl4 = analyticsLocations(1125).intl;
   format = intl4.format;
   obj8 = { helpCenterArticle: obj9.getArticleURL(HelpdeskArticles.SOUNDBOARD) };
-  BPbGq7 = analyticsLocations(1128).t.BPbGq7;
+  BPbGq7 = analyticsLocations(1125).t.BPbGq7;
   obj9 = HelpdeskUtilsDefault;
   items[1] = closure_5(Text, obj7);
   return closure_5(UserSettingsTableRowGroup, obj2);

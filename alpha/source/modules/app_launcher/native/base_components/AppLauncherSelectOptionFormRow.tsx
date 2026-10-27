@@ -1,63 +1,55 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12082
+// Function ID: 12083
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 4971, 587, 558, 576, 12053, 5234, 1202, 7242, 8951, 2]
+// Dependencies: [109, 19, 21, 4972, 587, 558, 576, 12054, 5235, 6914, 8951, 2]
 
-// Module 12081 (AppLauncherSelectOptionFormRow)
+// Module 12082 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7242 */;
-import Form from "Form" /* 8951 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12053 */;
+import Text_Text from "Text/Text" /* 5235 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require, dependencyMap;
 
 let obj2;
-let closure_3 = ["style", "option", "selected", "selectedItemName", "unselectedSubLabel", "autoFocus"];
+let closure_2 = ["option", "selected", "selectedItemName", "unselectedSubLabel", "autoFocus"];
 const jsx = Fragment.jsx;
 let obj = { formRow: obj2 };
-obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 };
-let closure_6 = createStyles.createStyles(obj);
+obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 };
+let closure_5 = createStyles.createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherSelectOptionFormRow(unselectedSubLabel) {
   let children;
   let children2;
   let option;
   let selected;
   let selectedItemName;
-  let style;
   let tmp4;
   let tmp5;
   let tmp6;
   let tmp7;
-  let tmp9;
   const obj = require("react");
-  const cResult = obj.c(25);
+  const cResult = obj.c(21);
   if (cResult[0] !== unselectedSubLabel) {
-    ({ style, option, selected, selectedItemName } = unselectedSubLabel);
+    ({ option, selected, selectedItemName } = unselectedSubLabel);
     _require = selectedItemName;
     unselectedSubLabel = unselectedSubLabel.unselectedSubLabel;
-    importDefault = unselectedSubLabel;
+    dependencyMap = unselectedSubLabel;
     const autoFocus = unselectedSubLabel.autoFocus;
-    const tmp13 = _objectWithoutProperties(unselectedSubLabel, closure_3);
+    const tmp12 = _objectWithoutProperties(unselectedSubLabel, closure_2);
     cResult[0] = unselectedSubLabel;
     cResult[1] = autoFocus;
     cResult[2] = option;
-    cResult[3] = tmp13;
+    cResult[3] = tmp12;
     cResult[4] = selected;
     cResult[5] = selectedItemName;
-    cResult[6] = style;
-    cResult[7] = unselectedSubLabel;
-    tmp9 = style;
+    cResult[6] = unselectedSubLabel;
     tmp7 = selected;
-    tmp6 = tmp13;
+    tmp6 = tmp12;
     tmp5 = option;
     tmp4 = autoFocus;
   } else {
@@ -66,98 +58,85 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     tmp6 = cResult[3];
     tmp7 = cResult[4];
     _require = cResult[5];
-    tmp9 = cResult[6];
-    importDefault = cResult[7];
+    dependencyMap = cResult[6];
   }
-  const tmp14 = closure_6();
+  const tmp13 = closure_5();
   const onPress = tmp6.onPress;
   const tmpResult = require("useAnimationDelayedAutoFocus");
   const animationDelayedAutoFocus = tmpResult.useAnimationDelayedAutoFocus(tmp4, onPress);
-  if (cResult[8] === tmp9) {
-    let tmp16;
-    if (cResult[9] === tmp14.formRow) {
-      tmp16 = cResult[10];
-    }
-    let str = "text-md/medium";
-    if (tmp7) {
-      str = "text-sm/medium";
-    }
-    let str2 = "text-default";
-    if (tmp7) {
-      str2 = "interactive-text-default";
-    }
-    if (cResult[11] === tmp5.displayName) {
-      if (cResult[12] === str) {
-        let tmp17;
-        let fn;
-        if (cResult[13] === str2) {
-          tmp17 = cResult[14];
-        }
-        if (cResult[15] === tmp7) {
-          if (cResult[16] === tmp8) {
-            let tmp20;
-            let tmp22;
-            if (cResult[17] === tmp10) {
-              tmp20 = cResult[18];
-            }
-            const _Symbol = Symbol;
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const Icon = tmp(1202).Icon;
-              const tmp25 = <Icon source={AssetRegistryDefault} size={require("native").IconSizes.SMALL_20} />;
-              cResult[19] = tmp25;
-              tmp22 = tmp25;
-            } else {
-              tmp22 = cResult[19];
-            }
-            if (cResult[20] === tmp6) {
-              if (cResult[21] === tmp16) {
-                if (cResult[22] === tmp17) {
-                  let tmp26;
-                  if (cResult[23] === tmp20) {
-                    tmp26 = cResult[24];
-                  }
-                  return tmp26;
+  let str = "text-md/medium";
+  if (tmp7) {
+    str = "text-sm/medium";
+  }
+  let str2 = "text-default";
+  if (tmp7) {
+    str2 = "interactive-text-default";
+  }
+  if (cResult[7] === tmp5.displayName) {
+    if (cResult[8] === str) {
+      let tmp15;
+      let fn;
+      if (cResult[9] === str2) {
+        tmp15 = cResult[10];
+      }
+      if (cResult[11] === tmp7) {
+        if (cResult[12] === tmp8) {
+          let tmp17;
+          let tmp19;
+          if (cResult[13] === tmp9) {
+            tmp17 = cResult[14];
+          }
+          const _Symbol = Symbol;
+          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp21 = jsx(require("TableRowArrow").TableRowArrow, {});
+            cResult[15] = tmp21;
+            tmp19 = tmp21;
+          } else {
+            tmp19 = cResult[15];
+          }
+          if (cResult[16] === tmp6) {
+            if (cResult[17] === tmp13.formRow) {
+              if (cResult[18] === tmp15) {
+                let tmp22;
+                if (cResult[19] === tmp17) {
+                  tmp22 = cResult[20];
                 }
+                return tmp22;
               }
             }
-            const FormRow = tmp(8951).FormRow;
-            const merged = Object.assign(tmp6);
-            const tmp31 = <FormRow start end style={tmp16} label={tmp17} subLabel={tmp20} trailing={tmp22} />;
-            cResult[20] = tmp6;
-            cResult[21] = tmp16;
-            cResult[22] = tmp17;
-            cResult[23] = tmp20;
-            cResult[24] = tmp31;
-            tmp26 = tmp31;
           }
+          const FormRow = tmp(8951).FormRow;
+          const merged = Object.assign(tmp6);
+          const tmp27 = <FormRow start end style={tmp13.formRow} label={tmp15} subLabel={tmp17} trailing={tmp19} />;
+          cResult[16] = tmp6;
+          cResult[17] = tmp13.formRow;
+          cResult[18] = tmp15;
+          cResult[19] = tmp17;
+          cResult[20] = tmp27;
+          tmp22 = tmp27;
         }
-        if (tmp7) {
-          fn = () => jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children });
-        } else {
-          fn = null;
-          if (null != tmp10) {
-            fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: children2 });
-          }
-        }
-        cResult[15] = tmp7;
-        cResult[16] = tmp8;
-        cResult[17] = tmp10;
-        cResult[18] = fn;
-        tmp20 = fn;
       }
+      if (tmp7) {
+        fn = () => jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children });
+      } else {
+        fn = null;
+        if (null != tmp9) {
+          fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: children2 });
+        }
+      }
+      cResult[11] = tmp7;
+      cResult[12] = tmp8;
+      cResult[13] = tmp9;
+      cResult[14] = fn;
+      tmp17 = fn;
     }
-    const tmp19 = jsx(require("Text/Text").Text, { variant: str, color: str2, lineClamp: 1, children: tmp5.displayName });
-    cResult[11] = tmp5.displayName;
-    cResult[12] = str;
-    cResult[13] = str2;
-    cResult[14] = tmp19;
-    tmp17 = tmp19;
   }
-  const items = [tmp14.formRow, tmp9];
-  cResult[8] = tmp9;
-  cResult[9] = tmp14.formRow;
-  cResult[10] = items;
-  tmp16 = items;
+  const tmp16 = jsx(require("Text/Text").Text, { variant: str, color: str2, lineClamp: 1, children: tmp5.displayName });
+  cResult[7] = tmp5.displayName;
+  cResult[8] = str;
+  cResult[9] = str2;
+  cResult[10] = tmp16;
+  tmp15 = tmp16;
 }) : (function AppLauncherSelectOptionFormRow(arg0) {
   let autoFocus;
   let children;
@@ -165,19 +144,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let option;
   let require;
   let selected;
-  let style;
   let unselectedSubLabel;
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
-  ({ style, option, autoFocus } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ style: 0, option: 0, selected: 0, selectedItemName: 0, unselectedSubLabel: 0, autoFocus: 0 }));
+  ({ option, autoFocus } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ option: 0, selected: 0, selectedItemName: 0, unselectedSubLabel: 0, autoFocus: 0 }));
   const onPress = merged.onPress;
-  const tmp2 = closure_6();
-  const obj = useAnimationDelayedAutoFocus;
+  const tmp2 = closure_5();
+  const obj = require("useAnimationDelayedAutoFocus");
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
-  const items = [tmp2.formRow, style];
-  const FormRow = Form.FormRow;
+  const FormRow = require("Form").FormRow;
   let str = "text-md/medium";
-  const Text = Text_Text.Text;
+  const Text = require("Text/Text").Text;
   if (selected) {
     str = "text-sm/medium";
   }
@@ -193,10 +170,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  ({ source: unselectedSubLabel(7242), size: native.IconSizes.SMALL_20 });
-  const Icon = tmp3(1202).Icon;
   const merged1 = Object.assign(merged);
-  return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;
+  return <FormRow start end style={tmp2.formRow} label={null} subLabel={fn} trailing={null} />;
 });
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
 

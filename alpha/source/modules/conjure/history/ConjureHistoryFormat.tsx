@@ -1,14 +1,14 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 12232
+// Function ID: 12233
 // Name: ConjureHistoryFormat
-// Dependencies: [6025, 4796, 1128, 3830, 2]
+// Dependencies: [6026, 4797, 1125, 3831, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 11768 (ConjureHistoryFormat)
-import intl8 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import DateUtils from "DateUtils" /* 4796 */;
-import getTimestampString from "getTimestampString" /* 6025 */;
+// Module 12232 (ConjureHistoryFormat)
+import intl8 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import DateUtils from "DateUtils" /* 4797 */;
+import getTimestampString from "getTimestampString" /* 6026 */;
 import size from "module_2" /* 2 */;
 
 function startOfDayMs(arg0) {
@@ -25,7 +25,7 @@ function formatHistoryDay(arg0, nowMs) {
   const time1 = date1.getTime();
   if (time === time1) {
     const intl2 = intl8.intl;
-    return intl2.string(_modDef3830.CADyoV);
+    return intl2.string(_modDef3831.CADyoV);
   } else {
     const _Date = Date;
     const self = this;
@@ -34,7 +34,7 @@ function formatHistoryDay(arg0, nowMs) {
     date2.setDate(date2.getDate() - 1);
     if (time === date2.getTime()) {
       const intl = intl8.intl;
-      return intl.string(_modDef3830.mghe4b);
+      return intl.string(_modDef3831.mghe4b);
     } else {
       const _Date2 = Date;
       const self3 = this;
@@ -63,18 +63,18 @@ function backupTitle(origin) {
     let stringResult;
     if ("stable" === origin.deployEnvironment) {
       const intl6 = intl8.intl;
-      stringResult = intl6.string(_modDef3830["4TpI2y"]);
+      stringResult = intl6.string(_modDef3831["4TpI2y"]);
     } else if ("preview" === origin.deployEnvironment) {
       const intl5 = intl8.intl;
-      stringResult = intl5.string(_modDef3830.NdyxPu);
+      stringResult = intl5.string(_modDef3831.NdyxPu);
     } else {
       const intl4 = intl8.intl;
-      stringResult = intl4.string(_modDef3830["4JCH6A"]);
+      stringResult = intl4.string(_modDef3831["4JCH6A"]);
     }
     return stringResult;
   } else if ("undo" === origin) {
     const intl3 = intl8.intl;
-    return intl3.string(_modDef3830.VjJT5R);
+    return intl3.string(_modDef3831.VjJT5R);
   } else {
     const str4 = origin.label;
     const trimmed = str4.trim();
@@ -83,12 +83,12 @@ function backupTitle(origin) {
       if ("Manual restore point" !== trimmed) {
         const intl = intl8.intl;
         const obj = { label: trimmed };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3830["UKyQ+E"], obj);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3831["UKyQ+E"], obj);
       }
       return formatToPlainStringResult;
     }
     const intl2 = intl8.intl;
-    formatToPlainStringResult = intl2.string(_modDef3830.ObcM6b);
+    formatToPlainStringResult = intl2.string(_modDef3831.ObcM6b);
   }
 }
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureHistoryFormat.tsx");
@@ -137,10 +137,10 @@ export const formatHistoryTime = function formatHistoryTime(parseTimestampMsResu
   const date = new Date(parseTimestampMsResult);
   return dateFormat(date, "LT");
 };
-export const formatHistoryDateTime = function formatHistoryDateTime(parseTimestampMsResult) {
+export const formatHistoryDateTime = function formatHistoryDateTime(arg0) {
   const dateFormat = DateUtils.dateFormat;
   DateUtils;
-  const date = new Date(parseTimestampMsResult);
+  const date = new Date(arg0);
   return dateFormat(date, "LLL");
 };
 export { formatHistoryDay };
@@ -208,13 +208,13 @@ export const versionTitle = function versionTitle(subject, arg1) {
         }
       }
       const intl = intl8.intl;
-      const stringResult = intl.string(_modDef3830.Vk8vB1);
+      const stringResult = intl.string(_modDef3831.Vk8vB1);
       obj = { short: stringResult, full: stringResult };
       const obj2 = { short: stringResult, full: stringResult };
     }
     let tmp8 = obj;
     if (flag) {
-      const obj3 = { short: intl3.formatToPlainString(_modDef3830.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3830.Z4n6LX, obj5) };
+      const obj3 = { short: intl3.formatToPlainString(_modDef3831.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3831.Z4n6LX, obj5) };
       intl3 = intl8.intl;
       obj4 = { title: obj.short };
       intl4 = intl8.intl;
@@ -224,7 +224,7 @@ export const versionTitle = function versionTitle(subject, arg1) {
     return tmp8;
   }
   const intl2 = intl8.intl;
-  const stringResult1 = intl2.string(_modDef3830.sFC5fT);
+  const stringResult1 = intl2.string(_modDef3831.sFC5fT);
   obj = { short: stringResult1, full: stringResult1 };
 };
 export const historyEnvironmentLabel = function historyEnvironmentLabel(environment) {
@@ -232,9 +232,9 @@ export const historyEnvironmentLabel = function historyEnvironmentLabel(environm
   const intl = intl8.intl;
   const string = intl.string;
   if ("preview" === environment) {
-    S65Rv3 = _modDef3830.Ebk40C;
+    S65Rv3 = _modDef3831.Ebk40C;
   } else {
-    S65Rv3 = _modDef3830.S65Rv3;
+    S65Rv3 = _modDef3831.S65Rv3;
   }
   return string(S65Rv3);
 };
@@ -244,13 +244,13 @@ export const historyDatabaseTitle = function historyDatabaseTitle(environment, s
   const string = intl.string;
   const tmp2 = sharedDatabase;
   if (tmp2) {
-    stringResult = string(_modDef3830.h3WBgO);
+    stringResult = string(_modDef3831.h3WBgO);
   } else {
     let yLsAhA;
     if ("preview" === environment) {
-      yLsAhA = _modDef3830.cjJdqL;
+      yLsAhA = _modDef3831.cjJdqL;
     } else {
-      yLsAhA = _modDef3830.yLsAhA;
+      yLsAhA = _modDef3831.yLsAhA;
     }
     stringResult = string(yLsAhA);
   }
@@ -310,7 +310,7 @@ export const backupRow = function backupRow(createdAt, restoreToMs) {
   if (null != value) {
     const intl = intl8.intl;
     const obj2 = { title: value };
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3830.V7YNvf, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3831.V7YNvf, obj2);
   }
   items[1] = formatToPlainStringResult;
   found = items.filter((item) => null != item);
@@ -332,28 +332,28 @@ export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
   const date = new Date(arg1);
   const dateFormatResult = dateFormat(date, "LLL");
   if ("stable" === arg0) {
-    const obj2 = { title: intl2.string(_modDef3830.G9wD92), body: intl3.formatToPlainString(_modDef3830.vyxJO8, obj3), confirmText: intl4.string(_modDef3830.kap49k), critical: true };
-    intl2 = tmp(1128).intl;
-    intl3 = tmp(1128).intl;
+    const obj2 = { title: intl2.string(_modDef3831.G9wD92), body: intl3.formatToPlainString(_modDef3831.vyxJO8, obj3), confirmText: intl4.string(_modDef3831.kap49k), critical: true };
+    intl2 = tmp(1125).intl;
+    intl3 = tmp(1125).intl;
     obj3 = { time: dateFormatResult };
-    intl4 = tmp(1128).intl;
+    intl4 = tmp(1125).intl;
     obj4 = obj2;
   } else {
     let S65Rv3;
-    obj4 = { title: intl5.string(_modDef3830.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3830.XfeFw5), critical: false };
-    intl5 = tmp(1128).intl;
-    const intl6 = tmp(1128).intl;
+    obj4 = { title: intl5.string(_modDef3831.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3831.XfeFw5), critical: false };
+    intl5 = tmp(1125).intl;
+    const intl6 = tmp(1125).intl;
     formatToPlainString = intl6.formatToPlainString;
-    KfgzUO = _modDef3830.KfgzUO;
-    const intl7 = tmp(1128).intl;
+    KfgzUO = _modDef3831.KfgzUO;
+    const intl7 = tmp(1125).intl;
     const string = intl7.string;
     if ("preview" === arg0) {
-      S65Rv3 = tmp7(3830).Ebk40C;
+      S65Rv3 = tmp7(3831).Ebk40C;
     } else {
-      S65Rv3 = tmp7(3830).S65Rv3;
+      S65Rv3 = tmp7(3831).S65Rv3;
     }
     obj = { environment: string(S65Rv3), time: dateFormatResult };
-    intl = tmp(1128).intl;
+    intl = tmp(1125).intl;
   }
   return obj4;
 };

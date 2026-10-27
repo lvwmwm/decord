@@ -1,15 +1,15 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8454
+// Function ID: 8455
 // Name: ApplicationCommandUserAppUtils
-// Dependencies: [8456, 1128, 2]
+// Dependencies: [8455, 1125, 2]
 // Exports: getEphemeralReasonMessage
 
-// Module 8455 (ApplicationCommandUserAppUtils)
-import EphemeralMessageReason from "EphemeralMessageReason" /* 8456 */;
+// Module 8454 (ApplicationCommandUserAppUtils)
+import EphemeralMessageReason from "EphemeralMessageReason" /* 8455 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl20 = tmp(1128);
+const intl20 = tmp(1125);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandUserAppUtils.tsx");
 
 export const getEphemeralReasonMessage = function getEphemeralReasonMessage(ephemerality_reason1) {

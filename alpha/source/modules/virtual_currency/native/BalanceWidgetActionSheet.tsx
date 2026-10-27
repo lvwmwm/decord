@@ -1,25 +1,25 @@
-// Module ID: 13961
-// Function ID: 13962
+// Module ID: 13975
+// Function ID: 13976
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1087, 4820, 21, 13962, 13963, 13964, 1128, 5656, 2067, 4985, 5252, 587, 1267, 5001, 4807, 5037, 5265, 5669, 8790, 5582, 13965, 9429, 5234, 5244, 4971, 1384, 2]
+// Dependencies: [19, 17, 1084, 4821, 21, 13976, 13977, 13978, 1125, 5657, 2064, 4986, 5253, 587, 1264, 5002, 4808, 5038, 5266, 5670, 8790, 5583, 13979, 9428, 5235, 5245, 4972, 1381, 2]
 // Exports: default
 
-// Module 13961 (BalanceWidgetActionSheet)
+// Module 13975 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5001 */;
-import _mod13962 from "module_13962" /* 13962 */;
-import _mod13963 from "module_13963" /* 13963 */;
-import _mod13964 from "module_13964" /* 13964 */;
+import intl3 from "intl" /* 1125 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import PlatformUtils from "PlatformUtils" /* 1381 */;
+import dismissible_content from "dismissible_content" /* 4808 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
+import _mod13976 from "module_13976" /* 13976 */;
+import _mod13977 from "module_13977" /* 13977 */;
+import _mod13978 from "module_13978" /* 13978 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod13962.default, backgroundImage: _mod13963.default, bannerImage: _mod13964.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod13976.default, backgroundImage: _mod13977.default, bannerImage: _mod13978.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }
@@ -124,7 +124,7 @@ export default function _default(balance) {
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
       const tmp3Result = DismissibleContentUnsafeUtils;
-      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(4807).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(4808).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: closure_11(BottomSheet, obj3) };

@@ -1,19 +1,19 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12510
+// Function ID: 12511
 // Name: useConjureProjectCreator
-// Dependencies: [19, 1392, 10699, 1128, 3830, 12503, 558, 576, 504, 12339, 5025, 2]
+// Dependencies: [19, 1389, 10702, 1125, 3831, 12511, 558, 576, 504, 12345, 5026, 2]
 // Exports: getConjureProjectCreatorLabel
 
-// Module 12502 (useConjureProjectCreator)
+// Module 12510 (useConjureProjectCreator)
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import UserUtils from "UserUtils" /* 5025 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12339 */;
-import ListUtils from "ListUtils" /* 12503 */;
+import intl3 from "intl" /* 1125 */;
+import _modDef3831 from "module_3831" /* 3831 */;
+import UserUtils from "UserUtils" /* 5026 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12345 */;
+import ListUtils from "ListUtils" /* 12511 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
-import ConjureChatStore from "ConjureChatStore" /* 10699 */;
+import UserStore from "UserStore" /* 1389 */;
+import ConjureChatStore from "ConjureChatStore" /* 10702 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -341,12 +341,12 @@ function getConjureProjectCreatorLabel(creator, names) {
   if (0 === names.length) {
     const intl2 = intl3.intl;
     const obj3 = { creator };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef3830.t5RWBS, obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef3831.t5RWBS, obj3);
   } else {
     const intl = intl3.intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { creator, collaborators: obj2.getListSummaryLabel(names) };
-    const prop = _modDef3830["b5uCe/"];
+    const prop = _modDef3831["b5uCe/"];
     obj2 = ListUtils;
     formatToPlainStringResult = formatToPlainString(prop, obj);
   }
@@ -378,14 +378,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       return obj.getName(item);
     });
     if (0 === mapped.length) {
-      const intl2 = tmp(1128).intl;
+      const intl2 = tmp(1125).intl;
       const obj3 = { creator: name };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3830.t5RWBS, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3831.t5RWBS, obj3);
     } else {
-      const intl = tmp(1128).intl;
+      const intl = tmp(1125).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj4 = { creator: name, collaborators: tmpResult2.getListSummaryLabel(mapped) };
-      const prop = _modDef3830["b5uCe/"];
+      const prop = _modDef3831["b5uCe/"];
       tmpResult2 = ListUtils;
       formatToPlainStringResult = formatToPlainString(prop, obj4);
     }
@@ -413,14 +413,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         return obj.getName(item);
       });
       if (0 === mapped.length) {
-        const intl2 = tmp4(1128).intl;
+        const intl2 = tmp4(1125).intl;
         const obj3 = { creator: name };
-        formatToPlainStringResult = intl2.formatToPlainString(_modDef3830.t5RWBS, obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(_modDef3831.t5RWBS, obj3);
       } else {
-        const intl = tmp4(1128).intl;
+        const intl = tmp4(1125).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj4 = { creator: name, collaborators: tmp4Result.getListSummaryLabel(mapped) };
-        const prop = _modDef3830["b5uCe/"];
+        const prop = _modDef3831["b5uCe/"];
         tmp4Result = ListUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj4);
       }

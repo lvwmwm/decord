@@ -1,23 +1,23 @@
 // Module ID: 9296
 // Function ID: 9297
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9254, 5660, 1633, 1128, 5234, 5244, 5210, 7298, 5269, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 9254, 5661, 1630, 1125, 5235, 5245, 5211, 7300, 5270, 2]
 
 // Module 9296 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1128 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import BottomSheetModal from "BottomSheetModal" /* 5269 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import ActionSheet2 from "ActionSheet" /* 7298 */;
+import intl3 from "intl" /* 1125 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import components_Button_Button from "components/Button/Button" /* 5245 */;
+import BottomSheetModal from "BottomSheetModal" /* 5270 */;
+import LinkingDefault from "Linking" /* 5661 */;
+import ActionSheet2 from "ActionSheet" /* 7300 */;
 import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,8 +68,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
   }
   ({ header, headerText } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(trackAction(1128).t["/4gj6r"]);
+    const intl = tmp(1125).intl;
+    const stringResult = intl.string(trackAction(1125).t["/4gj6r"]);
     cResult[2] = stringResult;
     tmp9 = stringResult;
   } else {
@@ -77,7 +77,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
   }
   if (cResult[3] !== tmp4.headerText) {
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp9 };
-    const tmp13 = closure_4(trackAction(5234).Text, obj3);
+    const tmp13 = closure_4(trackAction(5235).Text, obj3);
     cResult[3] = tmp4.headerText;
     cResult[4] = tmp13;
     tmp11 = tmp13;
@@ -86,9 +86,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
   }
   const headerText2 = tmp4.headerText;
   if (cResult[5] !== gameName) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1125).intl;
     const obj4 = { gameName };
-    const formatResult = intl2.format(trackAction(1128).t["0acM2Y"], obj4);
+    const formatResult = intl2.format(trackAction(1125).t["0acM2Y"], obj4);
     cResult[5] = gameName;
     cResult[6] = formatResult;
     tmp14 = formatResult;
@@ -126,8 +126,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
                   return tmp30;
                 }
               }
-              const obj5 = { children: closure_5(trackAction(5269).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(7298).ActionSheet;
+              const obj5 = { children: closure_5(trackAction(5270).BottomSheetScrollView, obj6) };
+              const ActionSheet = tmp(7300).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
     cResult[13] = tmp21;
     tmp18 = tmp21;
   }
-  const tmp17 = closure_4(trackAction(5234).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
+  const tmp17 = closure_4(trackAction(5235).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
   cResult[7] = tmp4.headerText;
   cResult[8] = tmp14;
   cResult[9] = tmp17;

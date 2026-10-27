@@ -1,29 +1,29 @@
 // Module ID: 686
 // Function ID: 687
-// Dependencies: [687, 693, 1012, 901, 990, 1053, 1057, 1072, 1064, 1085, 1078, 1083, 1075, 878]
+// Dependencies: [687, 693, 1009, 898, 987, 1050, 1054, 1069, 1061, 1082, 1075, 1080, 1072, 878]
 
 // Module 686
 import debugSymbolicatorIntegration from "debugSymbolicatorIntegration" /* 687 */;
 import _mod693 from "module_693" /* 693 */;
 import _mod878 from "module_878" /* 878 */;
-import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 901 */;
-import SDK_PACKAGE_NAME from "SDK_PACKAGE_NAME" /* 990 */;
-import init from "init" /* 1012 */;
-import ReactNativeClient from "ReactNativeClient" /* 1053 */;
-import _mod1057 from "module_1057" /* 1057 */;
-import reactNativeTracingIntegration from "reactNativeTracingIntegration" /* 1064 */;
-import TouchEventBoundary from "TouchEventBoundary" /* 1072 */;
-import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1075 */;
-import FeedbackButton from "FeedbackButton" /* 1078 */;
-import FeedbackWidget from "FeedbackWidget" /* 1083 */;
-import _mod1085 from "module_1085" /* 1085 */;
+import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 898 */;
+import SDK_PACKAGE_NAME from "SDK_PACKAGE_NAME" /* 987 */;
+import init from "init" /* 1009 */;
+import ReactNativeClient from "ReactNativeClient" /* 1050 */;
+import _mod1054 from "module_1054" /* 1054 */;
+import reactNativeTracingIntegration from "reactNativeTracingIntegration" /* 1061 */;
+import TouchEventBoundary from "TouchEventBoundary" /* 1069 */;
+import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1072 */;
+import FeedbackButton from "FeedbackButton" /* 1075 */;
+import FeedbackWidget from "FeedbackWidget" /* 1080 */;
+import _mod1082 from "module_1082" /* 1082 */;
 
 for (const key10013 in debugSymbolicatorIntegration) {
   exports[key10013] = debugSymbolicatorIntegration[key10013];
   continue;
 }
 const ReactNativeClient_export = ReactNativeClient.ReactNativeClient;
-const init_export = _mod1057.init;
+const init_export = _mod1054.init;
 const TouchEventBoundary_export = TouchEventBoundary.TouchEventBoundary;
 const reactNativeTracingIntegration_export = reactNativeTracingIntegration.reactNativeTracingIntegration;
 const FeedbackButton_export = FeedbackButton.FeedbackButton;
@@ -73,12 +73,12 @@ export const SDK_NAME = SDK_PACKAGE_NAME.SDK_NAME;
 export const SDK_VERSION = SDK_PACKAGE_NAME.SDK_VERSION;
 export { ReactNativeClient_export as ReactNativeClient };
 export { init_export as init };
-export const wrap = _mod1057.wrap;
-export const nativeCrash = _mod1057.nativeCrash;
-export const flush = _mod1057.flush;
-export const close = _mod1057.close;
-export const withScope = _mod1057.withScope;
-export const crashedLastRun = _mod1057.crashedLastRun;
+export const wrap = _mod1054.wrap;
+export const nativeCrash = _mod1054.nativeCrash;
+export const flush = _mod1054.flush;
+export const close = _mod1054.close;
+export const withScope = _mod1054.withScope;
+export const crashedLastRun = _mod1054.crashedLastRun;
 export { TouchEventBoundary_export as TouchEventBoundary };
 export const withTouchEventBoundary = TouchEventBoundary.withTouchEventBoundary;
 export { reactNativeTracingIntegration_export as reactNativeTracingIntegration };
@@ -97,8 +97,8 @@ export const getDefaultIdleNavigationSpanOptions = reactNativeTracingIntegration
 export const createTimeToFullDisplay = reactNativeTracingIntegration.createTimeToFullDisplay;
 export const createTimeToInitialDisplay = reactNativeTracingIntegration.createTimeToInitialDisplay;
 export const wrapExpoRouter = reactNativeTracingIntegration.wrapExpoRouter;
-export const Mask = _mod1085.Mask;
-export const Unmask = _mod1085.Unmask;
+export const Mask = _mod1082.Mask;
+export const Unmask = _mod1082.Unmask;
 export { FeedbackButton_export as FeedbackButton };
 export { FeedbackWidget_export as FeedbackWidget };
 export const showFeedbackWidget = PULL_DOWN_CLOSE_THRESHOLD.showFeedbackWidget;

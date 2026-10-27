@@ -1,9 +1,16 @@
 // Module ID: 15629
 // Function ID: 15630
-// Dependencies: [15617]
+// Dependencies: [15630]
 
 // Module 15629
-import _mod15617 from "module_15617" /* 15617 */;
+import _mod15630 from "module_15630" /* 15630 */;
 
 
-export const URLSearchParams = _mod15617.URLSearchParams;
+export default (arg0) => {
+  const tmp = _mod15630(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
+};

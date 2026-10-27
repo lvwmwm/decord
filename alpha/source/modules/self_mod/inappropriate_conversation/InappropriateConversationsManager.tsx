@@ -1,12 +1,12 @@
-// Module ID: 19374
-// Function ID: 19375
+// Module ID: 19412
+// Function ID: 19413
 // Name: InappropriateConversationsManager
-// Dependencies: [11526, 5809, 7214, 2]
+// Dependencies: [11528, 5810, 7216, 2]
 
-// Module 19374 (InappropriateConversationsManager)
-import clampDefault from "clamp" /* 5809 */;
-import SoundUtils from "SoundUtils" /* 11526 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+// Module 19412 (InappropriateConversationsManager)
+import clampDefault from "clamp" /* 5810 */;
+import SoundUtils from "SoundUtils" /* 11528 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
 import size from "module_2" /* 2 */;
 
 function fadeIn() {

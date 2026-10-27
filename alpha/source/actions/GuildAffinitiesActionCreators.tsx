@@ -1,13 +1,13 @@
 // Module ID: 8834
 // Function ID: 8835
 // Name: GuildAffinitiesActionCreators
-// Dependencies: [1087, 1297, 584, 2]
+// Dependencies: [1084, 1294, 584, 2]
 // Exports: fetchGuildAffinities
 
 // Module 8834 (GuildAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+import Constants from "Constants" /* 1084 */;
+import HTTPUtils from "HTTPUtils" /* 1294 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

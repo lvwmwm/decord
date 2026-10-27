@@ -1,10 +1,10 @@
-// Module ID: 7771
-// Function ID: 7772
+// Module ID: 7772
+// Function ID: 7773
 // Name: InteractionObserverUtils
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 7771 (InteractionObserverUtils)
+// Module 7772 (InteractionObserverUtils)
 import size from "module_2" /* 2 */;
 
 let set;

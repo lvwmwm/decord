@@ -1,26 +1,26 @@
 // Module ID: 15617
 // Function ID: 15618
-// Dependencies: [15618, 15622, 15625]
+// Dependencies: [15606, 15581]
 
 // Module 15617
-import _mod15618 from "module_15618" /* 15618 */;
-import _mod15622 from "module_15622" /* 15622 */;
-import _mod15625 from "module_15625" /* 15625 */;
+import _mod15581 from "module_15581" /* 15581 */;
+import module_15606 from "module_15606" /* 15606 */;
 
-const obj = {};
-const _URL = _mod15618.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod15618.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+let _moduleResult = module_15606(_mod15581.document);
+if (_moduleResult) {
+  const _module1 = module_15606;
+  _moduleResult = _module1(_mod15581.document.createElement);
+}
+let c2 = _moduleResult;
 
-export const parseURL = _mod15622.parseURL;
-export const basicURLParse = _mod15622.basicURLParse;
-export const serializeURL = _mod15622.serializeURL;
-export const serializeHost = _mod15622.serializeHost;
-export const serializeInteger = _mod15622.serializeInteger;
-export const serializeURLOrigin = _mod15622.serializeURLOrigin;
-export const setTheUsername = _mod15622.setTheUsername;
-export const setThePassword = _mod15622.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod15622.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod15625.percentDecode;
+export default (arg0) => {
+  let element;
+  const tmp = c2;
+  if (tmp) {
+    const _document = _mod15581.document;
+    element = _document.createElement(arg0);
+  } else {
+    element = {};
+  }
+  return element;
+};

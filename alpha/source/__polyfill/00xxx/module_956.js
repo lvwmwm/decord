@@ -1,26 +1,51 @@
 // Module ID: 956
 // Function ID: 957
-// Dependencies: [693, 908]
+// Dependencies: [946, 693, 902]
+// Exports: checkAndWarnIfIsEmbeddedBrowserExtension
 
 // Module 956
-import eventFromException from "eventFromException" /* 908 */;
-import registerSpanErrorInstrumentation from "module_693" /* 693 */;
+import _mod693 from "module_693" /* 693 */;
+import _mod902 from "module_902" /* 902 */;
+import _mod946 from "module_946" /* 946 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const linkedErrorsIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = registerSpanErrorInstrumentation;
-      const result = obj.applyAggregateErrorsToEvent(eventFromException.exceptionFromError, options.stackParser, closure_1, closure_0, arg0, arg1);
+export const checkAndWarnIfIsEmbeddedBrowserExtension = function checkAndWarnIfIsEmbeddedBrowserExtension() {
+  let flag = false;
+  if (undefined !== _mod902.WINDOW.window) {
+    const WINDOW = tmp(902).WINDOW;
+    flag = false;
+    if (!WINDOW.nw) {
+      let id;
+      if ((WINDOW.chrome || WINDOW.browser) != null) {
+        const runtime = tmp3.runtime;
+        if (runtime != null) {
+          id = runtime.id;
+        }
+      }
+      flag = false;
+      if (id) {
+        const tmpResult = _mod693;
+        const locationHref = tmpResult.getLocationHref();
+        let someResult = tmp(902).WINDOW === tmp(902).WINDOW.top;
+        if (someResult) {
+          const items = ["chrome-extension", "moz-extension", "ms-browser-extension", "safari-web-extension"];
+          someResult = items.some((item) => closure_0.startsWith("" + item + "://"));
+        }
+        flag = !someResult;
+      }
     }
-  };
-});
+  }
+  let flag2 = flag;
+  if (flag2) {
+    flag2 = true;
+    if (_mod946.DEBUG_BUILD) {
+      const tmpResult2 = _mod693;
+      tmpResult2.consoleSandbox(() => {
+        console.error("[Sentry] You cannot use Sentry.init() in a browser extension, see: https://docs.sentry.io/platforms/javascript/best-practices/browser-extensions/");
+      });
+      flag2 = true;
+    }
+  }
+  return flag2;
+};

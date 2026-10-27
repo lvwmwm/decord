@@ -1,26 +1,26 @@
-// Module ID: 12047
-// Function ID: 12048
+// Module ID: 12048
+// Function ID: 12049
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1504, 21, 4971, 587, 558, 576, 2000, 12048, 12055, 12057, 12061, 12082, 12083, 6826, 12086, 12088, 12089, 12095, 7018, 6908, 2]
+// Dependencies: [19, 17, 1501, 21, 4972, 587, 558, 576, 1997, 12049, 12056, 12058, 12062, 12083, 12084, 6828, 12087, 12089, 12090, 12096, 7020, 6910, 2]
 
-// Module 12047 (AppLauncherCommandOption)
+// Module 12048 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6826 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12048 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 12055 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 12057 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 12061 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12082 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12083 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 12086 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12088 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12089 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12095 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6828 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12049 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 12056 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 12058 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 12062 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12083 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12084 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 12087 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12089 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12090 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12096 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 const View = react_native.View;
 let closure_4 = AppLauncherNativeConstants.AppLauncherOptionAutoFocusType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let obj = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: obj2, option: { flex: 1 } };
+let obj = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: obj2 };
 obj2 = { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round };
 let closure_7 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandOption(option) {
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let tmp = option;
   let tmp2 = onEndEditing;
   let obj = option(onEndEditing[7]);
-  const cResult = obj.c(162);
+  const cResult = obj.c(154);
   option = option.option;
   const onStartEditing = option.onStartEditing;
   onEndEditing = option.onEndEditing;
@@ -60,46 +60,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let type = option.type;
   if (option(onEndEditing[8]).ApplicationCommandOptionType.STRING !== type) {
     if (tmp(tmp2[8]).ApplicationCommandOptionType.INTEGER !== type) {
-      let tmp89;
+      let tmp79;
       if (tmp(tmp2[8]).ApplicationCommandOptionType.NUMBER !== type) {
         if (tmp(tmp2[8]).ApplicationCommandOptionType.ATTACHMENT === type) {
-          if (cResult[62] === onEndEditing) {
-            if (cResult[63] === onOptionValueChange) {
+          if (cResult[59] === onEndEditing) {
+            if (cResult[60] === onOptionValueChange) {
               let tmp56;
-              if (cResult[64] === option) {
-                tmp56 = cResult[65];
+              if (cResult[61] === option) {
+                tmp56 = cResult[62];
               }
-              if (cResult[66] === channel) {
-                if (cResult[67] === hasError) {
-                  if (cResult[68] === onPressAttachmentOption) {
-                    if (cResult[69] === option) {
-                      if (cResult[70] === tmp4.option) {
-                        if (cResult[71] === tmp56) {
-                          let tmp59;
-                          if (cResult[72] === autoFocusType === onPress.OPTIONAL_OPTION_ADDED) {
-                            tmp59 = cResult[73];
-                          }
-                          tmp13 = tmp59;
+              if (cResult[63] === channel) {
+                if (cResult[64] === hasError) {
+                  if (cResult[65] === onPressAttachmentOption) {
+                    if (cResult[66] === option) {
+                      if (cResult[67] === tmp56) {
+                        let tmp59;
+                        if (cResult[68] === autoFocusType === onPress.OPTIONAL_OPTION_ADDED) {
+                          tmp59 = cResult[69];
                         }
+                        tmp13 = tmp59;
                       }
                     }
                   }
                 }
               }
-              let obj2 = { style: tmp4.option, option, onSelectAttachment: tmp56, channel, autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED, hasError, onPress: onPressAttachmentOption };
+              let obj2 = { option, onSelectAttachment: tmp56, channel, autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED, hasError, onPress: onPressAttachmentOption };
               const tmp62 = onDismiss(onStartEditing(tmp2[12]), obj2, option.name);
-              cResult[66] = channel;
-              cResult[67] = hasError;
-              cResult[68] = onPressAttachmentOption;
-              cResult[69] = option;
-              cResult[70] = tmp4.option;
-              cResult[71] = tmp56;
-              cResult[72] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-              cResult[73] = tmp62;
+              cResult[63] = channel;
+              cResult[64] = hasError;
+              cResult[65] = onPressAttachmentOption;
+              cResult[66] = option;
+              cResult[67] = tmp56;
+              cResult[68] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
+              cResult[69] = tmp62;
               tmp59 = tmp62;
             }
           }
-          function ne(text) {
+          function ee(text) {
             let items1;
             onEndEditing(option);
             const tmp = option;
@@ -113,86 +110,83 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
             }
             tmp3(tmp, items1);
           }
-          cResult[62] = onEndEditing;
-          cResult[63] = onOptionValueChange;
-          cResult[64] = option;
-          cResult[65] = ne;
-          tmp56 = ne;
+          cResult[59] = onEndEditing;
+          cResult[60] = onOptionValueChange;
+          cResult[61] = option;
+          cResult[62] = ee;
+          tmp56 = ee;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.BOOLEAN === type) {
           let first;
           if (optionValues.current[option.name] != null) {
             first = tmp48[0];
           }
-          if (cResult[74] === onPress) {
-            if (cResult[75] === onEndEditing) {
-              if (cResult[76] === onOptionValueChange) {
+          if (cResult[70] === onPress) {
+            if (cResult[71] === onEndEditing) {
+              if (cResult[72] === onOptionValueChange) {
                 let tmp51;
-                if (cResult[77] === option) {
-                  tmp51 = cResult[78];
+                if (cResult[73] === option) {
+                  tmp51 = cResult[74];
                 }
-                if (cResult[79] === hasError) {
-                  if (cResult[80] === option) {
-                    if (cResult[81] === tmp4.option) {
-                      if (cResult[82] === first) {
-                        let tmp52;
-                        if (cResult[83] === tmp51) {
-                          tmp52 = cResult[84];
-                        }
-                        tmp13 = tmp52;
+                if (cResult[75] === hasError) {
+                  if (cResult[76] === option) {
+                    if (cResult[77] === first) {
+                      let tmp52;
+                      if (cResult[78] === tmp51) {
+                        tmp52 = cResult[79];
                       }
+                      tmp13 = tmp52;
                     }
                   }
                 }
-                let obj3 = { style: tmp4.option, option, initialValue: first, onPress: tmp51, hasError };
+                let obj3 = { option, initialValue: first, onPress: tmp51, hasError };
                 const tmp55 = onDismiss(onStartEditing(tmp2[13]), obj3, option.name);
-                cResult[79] = hasError;
-                cResult[80] = option;
-                cResult[81] = tmp4.option;
-                cResult[82] = first;
-                cResult[83] = tmp51;
-                cResult[84] = tmp55;
+                cResult[75] = hasError;
+                cResult[76] = option;
+                cResult[77] = first;
+                cResult[78] = tmp51;
+                cResult[79] = tmp55;
                 tmp52 = tmp55;
               }
             }
           }
-          function ie(arg0) {
+          function oe(arg0) {
             onPress();
             onEndEditing(option);
             const items = [{ type: "text", text: arg0.toString() }];
             ({ type: "text", text: arg0.toString() });
             onOptionValueChange(option, items);
           }
-          cResult[74] = onPress;
-          cResult[75] = onEndEditing;
-          cResult[76] = onOptionValueChange;
-          cResult[77] = option;
-          cResult[78] = ie;
-          tmp51 = ie;
+          cResult[70] = onPress;
+          cResult[71] = onEndEditing;
+          cResult[72] = onOptionValueChange;
+          cResult[73] = option;
+          cResult[74] = oe;
+          tmp51 = oe;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.MENTIONABLE === type) {
           let first1;
           if (optionValues.current[option.name] != null) {
             first1 = tmp37[0];
           }
-          if (cResult[85] === onOptionValueChange) {
+          if (cResult[80] === onOptionValueChange) {
             let tmp40;
-            if (cResult[86] === option) {
-              tmp40 = cResult[87];
+            if (cResult[81] === option) {
+              tmp40 = cResult[82];
             }
-            if (cResult[88] === onEndEditing) {
+            if (cResult[83] === onEndEditing) {
               let tmp41;
-              if (cResult[89] === option) {
-                tmp41 = cResult[90];
+              if (cResult[84] === option) {
+                tmp41 = cResult[85];
               }
-              if (cResult[91] === channel) {
-                if (cResult[92] === onPress) {
-                  if (cResult[93] === hasError) {
-                    if (cResult[94] === option) {
-                      if (cResult[95] === first1) {
-                        if (cResult[96] === tmp40) {
-                          if (cResult[97] === tmp41) {
+              if (cResult[86] === channel) {
+                if (cResult[87] === onPress) {
+                  if (cResult[88] === hasError) {
+                    if (cResult[89] === option) {
+                      if (cResult[90] === first1) {
+                        if (cResult[91] === tmp40) {
+                          if (cResult[92] === tmp41) {
                             let tmp44;
-                            if (cResult[98] === autoFocusType === onPress.OPTIONAL_OPTION_ADDED) {
-                              tmp44 = cResult[99];
+                            if (cResult[93] === autoFocusType === onPress.OPTIONAL_OPTION_ADDED) {
+                              tmp44 = cResult[94];
                             }
                             tmp13 = tmp44;
                           }
@@ -204,26 +198,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               }
               let obj4 = { option, initialValue: first1, onMentionablePress: tmp40, onActionSheetDismiss: tmp41, channel, autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED, hasError, onPress };
               const tmp47 = onDismiss(onStartEditing(tmp2[16]), obj4);
-              cResult[91] = channel;
-              cResult[92] = onPress;
-              cResult[93] = hasError;
-              cResult[94] = option;
-              cResult[95] = first1;
-              cResult[96] = tmp40;
-              cResult[97] = tmp41;
-              cResult[98] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
-              cResult[99] = tmp47;
+              cResult[86] = channel;
+              cResult[87] = onPress;
+              cResult[88] = hasError;
+              cResult[89] = option;
+              cResult[90] = first1;
+              cResult[91] = tmp40;
+              cResult[92] = tmp41;
+              cResult[93] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
+              cResult[94] = tmp47;
               tmp44 = tmp47;
             }
-            function pe() {
+            function re() {
               return onEndEditing(option);
             }
-            cResult[88] = onEndEditing;
-            cResult[89] = option;
-            cResult[90] = pe;
-            tmp41 = pe;
+            cResult[83] = onEndEditing;
+            cResult[84] = option;
+            cResult[85] = re;
+            tmp41 = re;
           }
-          function re(mentionable) {
+          function se(mentionable) {
             mentionable = mentionable.mentionable;
             if (null != mentionable) {
               const type = mentionable.type;
@@ -252,44 +246,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               onOptionValueChange(option, []);
             }
           }
-          cResult[85] = onOptionValueChange;
-          cResult[86] = option;
-          cResult[87] = re;
-          tmp40 = re;
+          cResult[80] = onOptionValueChange;
+          cResult[81] = option;
+          cResult[82] = se;
+          tmp40 = se;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.ROLE === type) {
           let first2;
           if (optionValues.current[option.name] != null) {
             first2 = tmp26[0];
           }
-          if (cResult[100] === onOptionValueChange) {
+          if (cResult[95] === onOptionValueChange) {
             let tmp29;
-            if (cResult[101] === option) {
-              tmp29 = cResult[102];
+            if (cResult[96] === option) {
+              tmp29 = cResult[97];
             }
-            if (cResult[103] === onEndEditing) {
+            if (cResult[98] === onEndEditing) {
               let tmp30;
-              if (cResult[104] === option) {
-                tmp30 = cResult[105];
+              if (cResult[99] === option) {
+                tmp30 = cResult[100];
               }
-              class Oe {
-                constructor() {
-                  onEndEditing(option);
-                }
-              }
-              if (cResult[106] === channel) {
-                if (cResult[107] === onPress) {
-                  if (cResult[108] === hasError) {
-                    if (cResult[109] === option) {
-                      if (cResult[110] === tmp4.option) {
-                        if (cResult[111] === first2) {
-                          if (cResult[112] === tmp29) {
-                            if (cResult[113] === tmp30) {
-                              let tmp33;
-                              if (cResult[114] === tmp32) {
-                                tmp33 = cResult[115];
-                              }
-                              tmp13 = tmp33;
+              if (cResult[101] === channel) {
+                if (cResult[102] === onPress) {
+                  if (cResult[103] === hasError) {
+                    if (cResult[104] === option) {
+                      if (cResult[105] === first2) {
+                        if (cResult[106] === tmp29) {
+                          if (cResult[107] === tmp30) {
+                            let tmp33;
+                            if (cResult[108] === autoFocusType === onPress.OPTIONAL_OPTION_ADDED) {
+                              tmp33 = cResult[109];
                             }
+                            tmp13 = tmp33;
                           }
                         }
                       }
@@ -297,31 +284,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   }
                 }
               }
-              const obj5 = { style: tmp4.option, option, initialValue: first2, onRolePress: tmp29, onActionSheetDismiss: tmp30, channel, autoFocus: tmp32, hasError, onPress };
+              const obj5 = { option, initialValue: first2, onRolePress: tmp29, onActionSheetDismiss: tmp30, channel, autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED, hasError, onPress };
               const tmp36 = onDismiss(onStartEditing(tmp2[17]), obj5, option.name);
-              cResult[106] = channel;
-              cResult[107] = onPress;
-              cResult[108] = hasError;
-              cResult[109] = option;
-              cResult[110] = tmp4.option;
-              cResult[111] = first2;
-              cResult[112] = tmp29;
-              cResult[113] = tmp30;
-              cResult[114] = tmp32;
-              cResult[115] = tmp36;
+              cResult[101] = channel;
+              cResult[102] = onPress;
+              cResult[103] = hasError;
+              cResult[104] = option;
+              cResult[105] = first2;
+              cResult[106] = tmp29;
+              cResult[107] = tmp30;
+              cResult[108] = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
+              cResult[109] = tmp36;
               tmp33 = tmp36;
             }
-            class Oe {
-              constructor() {
-                onEndEditing(option);
-              }
+            function me() {
+              onEndEditing(option);
             }
-            cResult[103] = onEndEditing;
-            cResult[104] = option;
-            cResult[105] = Oe;
-            tmp30 = Oe;
+            cResult[98] = onEndEditing;
+            cResult[99] = option;
+            cResult[100] = me;
+            tmp30 = me;
           }
-          function me(role) {
+          function ue(role) {
             let items;
             role = role.role;
             const tmp = onOptionValueChange;
@@ -334,49 +318,42 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
             }
             tmp(tmp2, items);
           }
-          cResult[100] = onOptionValueChange;
-          cResult[101] = option;
-          cResult[102] = me;
-          tmp29 = me;
+          cResult[95] = onOptionValueChange;
+          cResult[96] = option;
+          cResult[97] = ue;
+          tmp29 = ue;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.USER === type) {
           let first3;
-          class Oe {
-            constructor() {
-              onEndEditing(option);
-            }
-          }
           if (optionValues.current[option.name] != null) {
             first3 = tmp16[0];
           }
-          if (cResult[116] === onOptionValueChange) {
+          if (cResult[110] === onOptionValueChange) {
             let tmp19;
-            if (cResult[117] === option) {
-              tmp19 = cResult[118];
+            if (cResult[111] === option) {
+              tmp19 = cResult[112];
             }
-            if (cResult[119] === onEndEditing) {
+            if (cResult[113] === onEndEditing) {
               let tmp20;
-              if (cResult[120] === option) {
-                tmp20 = cResult[121];
+              if (cResult[114] === option) {
+                tmp20 = cResult[115];
               }
-              class Oe {
+              class Ee {
                 constructor() {
-                  onEndEditing(option);
+                  return onEndEditing(option);
                 }
               }
-              if (cResult[122] === channel) {
-                if (cResult[123] === onPress) {
-                  if (cResult[124] === hasError) {
-                    if (cResult[125] === option) {
-                      if (cResult[126] === tmp4.option) {
-                        if (cResult[127] === first3) {
-                          if (cResult[128] === tmp19) {
-                            if (cResult[129] === tmp20) {
-                              let tmp23;
-                              if (cResult[130] === tmp22) {
-                                tmp23 = cResult[131];
-                              }
-                              tmp13 = tmp23;
+              if (cResult[116] === channel) {
+                if (cResult[117] === onPress) {
+                  if (cResult[118] === hasError) {
+                    if (cResult[119] === option) {
+                      if (cResult[120] === first3) {
+                        if (cResult[121] === tmp19) {
+                          if (cResult[122] === tmp20) {
+                            let tmp23;
+                            if (cResult[123] === tmp22) {
+                              tmp23 = cResult[124];
                             }
+                            tmp13 = tmp23;
                           }
                         }
                       }
@@ -403,26 +380,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   tmp(tmp2, items);
                 }
               }
-              const obj6 = { style: tmp4.option, option, initialValue: first3, onUserPress: tmp19, onActionSheetDismiss: tmp20, channel, autoFocus: tmp22, hasError, onPress };
+              const obj6 = { option, initialValue: first3, onUserPress: tmp19, onActionSheetDismiss: tmp20, channel, autoFocus: tmp22, hasError, onPress };
               const tmp25 = onDismiss(onStartEditing(tmp2[18]), obj6, option.name);
-              cResult[122] = channel;
-              cResult[123] = onPress;
-              cResult[124] = hasError;
-              cResult[125] = option;
-              cResult[126] = tmp4.option;
-              cResult[127] = first3;
-              cResult[128] = tmp19;
-              cResult[129] = tmp20;
-              cResult[130] = tmp22;
-              cResult[131] = tmp25;
+              cResult[116] = channel;
+              cResult[117] = onPress;
+              cResult[118] = hasError;
+              cResult[119] = option;
+              cResult[120] = first3;
+              cResult[121] = tmp19;
+              cResult[122] = tmp20;
+              cResult[123] = tmp22;
+              cResult[124] = tmp25;
               tmp23 = tmp25;
             }
-            class Oe {
+            class Ee {
               constructor() {
-                onEndEditing(option);
+                return onEndEditing(option);
               }
             }
-            cResult[119] = onEndEditing;
+            cResult[113] = onEndEditing;
             class Ae {
               constructor(user) {
                 let items;
@@ -442,8 +418,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                 tmp(tmp2, items);
               }
             }
-            cResult[120] = option;
-            cResult[121] = Ee;
+            cResult[114] = option;
+            cResult[115] = Ee;
             tmp20 = Ee;
           }
           class Ae {
@@ -465,46 +441,44 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               tmp(tmp2, items);
             }
           }
-          cResult[116] = onOptionValueChange;
-          cResult[117] = option;
-          cResult[118] = Ae;
+          cResult[110] = onOptionValueChange;
+          cResult[111] = option;
+          cResult[112] = Ae;
           tmp19 = Ae;
         } else if (tmp(tmp2[8]).ApplicationCommandOptionType.CHANNEL === type) {
           let first4;
-          class Oe {
+          class Ee {
             constructor() {
-              onEndEditing(option);
+              return onEndEditing(option);
             }
           }
           if (optionValues.current[option.name] != null) {
             first4 = tmp6[0];
           }
-          if (cResult[132] === onOptionValueChange) {
+          if (cResult[125] === onOptionValueChange) {
             let tmp9;
-            if (cResult[133] === option) {
-              tmp9 = cResult[134];
+            if (cResult[126] === option) {
+              tmp9 = cResult[127];
             }
-            if (cResult[135] === onEndEditing) {
+            if (cResult[128] === onEndEditing) {
               let tmp10;
-              if (cResult[136] === option) {
-                tmp10 = cResult[137];
+              if (cResult[129] === option) {
+                tmp10 = cResult[130];
               }
-              class Oe {
+              class Ee {
                 constructor() {
-                  onEndEditing(option);
+                  return onEndEditing(option);
                 }
               }
-              if (cResult[138] === channel) {
-                if (cResult[139] === onPress) {
-                  if (cResult[140] === hasError) {
-                    if (cResult[141] === option) {
-                      if (cResult[142] === tmp4.option) {
-                        if (cResult[143] === first4) {
-                          if (cResult[144] === tmp9) {
-                            if (cResult[145] === tmp10) {
-                              if (cResult[146] === tmp12) {
-                                tmp13 = cResult[147];
-                              }
+              if (cResult[131] === channel) {
+                if (cResult[132] === onPress) {
+                  if (cResult[133] === hasError) {
+                    if (cResult[134] === option) {
+                      if (cResult[135] === first4) {
+                        if (cResult[136] === tmp9) {
+                          if (cResult[137] === tmp10) {
+                            if (cResult[138] === tmp12) {
+                              tmp13 = cResult[139];
                             }
                           }
                         }
@@ -532,26 +506,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   tmp(tmp2, items);
                 }
               }
-              const obj7 = { style: tmp4.option, option, initialValue: first4, onChannelPress: tmp9, onActionSheetDismiss: tmp10, channel, autoFocus: tmp12, hasError, onPress };
+              const obj7 = { option, initialValue: first4, onChannelPress: tmp9, onActionSheetDismiss: tmp10, channel, autoFocus: tmp12, hasError, onPress };
               const tmp15 = onDismiss(onStartEditing(tmp2[19]), obj7, option.name);
-              cResult[138] = channel;
-              cResult[139] = onPress;
-              cResult[140] = hasError;
-              cResult[141] = option;
-              cResult[142] = tmp4.option;
-              cResult[143] = first4;
-              cResult[144] = tmp9;
-              cResult[145] = tmp10;
-              cResult[146] = tmp12;
-              cResult[147] = tmp15;
+              cResult[131] = channel;
+              cResult[132] = onPress;
+              cResult[133] = hasError;
+              cResult[134] = option;
+              cResult[135] = first4;
+              cResult[136] = tmp9;
+              cResult[137] = tmp10;
+              cResult[138] = tmp12;
+              cResult[139] = tmp15;
               tmp13 = tmp15;
             }
-            class Oe {
+            class Ee {
               constructor() {
-                onEndEditing(option);
+                return onEndEditing(option);
               }
             }
-            cResult[135] = onEndEditing;
+            cResult[128] = onEndEditing;
             class Ae {
               constructor(user) {
                 let items;
@@ -571,9 +544,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                 tmp(tmp2, items);
               }
             }
-            cResult[136] = option;
-            cResult[137] = Ne;
-            tmp10 = Ne;
+            cResult[129] = option;
+            cResult[130] = Pe;
+            tmp10 = Pe;
           }
           class Ae {
             constructor(user) {
@@ -594,30 +567,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               tmp(tmp2, items);
             }
           }
-          cResult[132] = onOptionValueChange;
-          cResult[133] = option;
-          cResult[134] = Pe;
-          tmp9 = Pe;
+          cResult[125] = onOptionValueChange;
+          cResult[126] = option;
+          cResult[127] = De;
+          tmp9 = De;
         } else {
           return null;
         }
       }
       if (null != onDismiss) {
-        if (cResult[148] === tmp13) {
-          let tmp90;
-          if (cResult[149] === tmp4.optionViewContainer) {
-            tmp90 = cResult[150];
+        if (cResult[140] === tmp13) {
+          let tmp80;
+          if (cResult[141] === tmp4.optionViewContainer) {
+            tmp80 = cResult[142];
           }
-          if (cResult[151] === onDismiss) {
-            let tmp93;
-            if (cResult[152] === option) {
-              tmp93 = cResult[153];
+          if (cResult[143] === onDismiss) {
+            let tmp83;
+            if (cResult[144] === option) {
+              tmp83 = cResult[145];
             }
             class O {
               constructor() {
                 return onDismiss(option);
               }
             }
+            let str = "react.memo_cache_sentinel";
             class Ae {
               constructor(user) {
                 let items;
@@ -637,18 +611,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                 tmp(tmp2, items);
               }
             }
-            if (cResult[155] === tmp4.dismissButton) {
-              let tmp97;
-              if (cResult[156] === tmp93) {
-                tmp97 = cResult[157];
+            if (cResult[147] === tmp4.dismissButton) {
+              let tmp87;
+              if (cResult[148] === tmp83) {
+                tmp87 = cResult[149];
               }
-              if (cResult[158] === tmp4.dismissableOptionWrapper) {
-                if (cResult[159] === tmp90) {
-                  let tmp100;
-                  if (cResult[160] === tmp97) {
-                    tmp100 = cResult[161];
+              if (cResult[150] === tmp4.dismissableOptionWrapper) {
+                if (cResult[151] === tmp80) {
+                  let tmp90;
+                  if (cResult[152] === tmp87) {
+                    tmp90 = cResult[153];
                   }
-                  tmp89 = tmp100;
+                  tmp79 = tmp90;
                 }
               }
               class O {
@@ -656,7 +630,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   return onDismiss(option);
                 }
               }
-              const obj9 = { style: null, children: items };
+              const obj8 = { style: null, children: items };
               class Ae {
                 constructor(user) {
                   let items;
@@ -676,27 +650,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   tmp(tmp2, items);
                 }
               }
-              items = [tmp90, tmp97];
-              const tmp102 = closure_6(onOptionValueChange, obj9);
-              cResult[158] = tmp4.dismissableOptionWrapper;
-              cResult[159] = tmp90;
-              cResult[160] = tmp97;
-              cResult[161] = tmp102;
-              tmp100 = tmp102;
+              items = [tmp80, tmp87];
+              const tmp92 = closure_6(onOptionValueChange, obj8);
+              cResult[150] = tmp4.dismissableOptionWrapper;
+              cResult[151] = tmp80;
+              cResult[152] = tmp87;
+              cResult[153] = tmp92;
+              tmp90 = tmp92;
             }
-            const obj10 = { style: tmp4.dismissButton, onPress: tmp93, children: tmp96 };
-            const tmp99 = onDismiss(tmp(tmp2[21]).PressableOpacity, obj10);
-            cResult[155] = tmp4.dismissButton;
-            cResult[156] = tmp93;
-            cResult[157] = tmp99;
-            tmp97 = tmp99;
+            const obj9 = { style: tmp4.dismissButton, onPress: tmp83, children: tmp86 };
+            const tmp89 = onDismiss(tmp(tmp2[21]).PressableOpacity, obj9);
+            cResult[147] = tmp4.dismissButton;
+            cResult[148] = tmp83;
+            cResult[149] = tmp89;
+            tmp87 = tmp89;
           }
           class O {
             constructor() {
               return onDismiss(option);
             }
           }
-          cResult[151] = onDismiss;
+          cResult[143] = onDismiss;
           class Ae {
             constructor(user) {
               let items;
@@ -716,16 +690,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               tmp(tmp2, items);
             }
           }
-          cResult[152] = option;
-          cResult[153] = O;
-          tmp93 = O;
+          cResult[144] = option;
+          cResult[145] = O;
+          tmp83 = O;
         }
-        class Oe {
+        class Ee {
           constructor() {
-            onEndEditing(option);
+            return onEndEditing(option);
           }
         }
-        const obj11 = { style: tmp4.optionViewContainer, children: null };
+        const obj10 = { style: tmp4.optionViewContainer, children: null };
         class Ae {
           constructor(user) {
             let items;
@@ -745,13 +719,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
             tmp(tmp2, items);
           }
         }
-        const tmp92 = onDismiss(onOptionValueChange, obj11);
-        cResult[148] = tmp13;
-        cResult[149] = tmp4.optionViewContainer;
-        cResult[150] = tmp92;
-        tmp90 = tmp92;
+        const tmp82 = onDismiss(onOptionValueChange, obj10);
+        cResult[140] = tmp13;
+        cResult[141] = tmp4.optionViewContainer;
+        cResult[142] = tmp82;
+        tmp80 = tmp82;
       }
-      return tmp89;
+      return tmp79;
     }
   }
   if (null != option.choices) {
@@ -762,20 +736,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     }
     if (cResult[0] === onEndEditing) {
       if (cResult[1] === onOptionValueChange) {
-        let tmp80;
+        let tmp70;
         if (cResult[2] === option) {
-          tmp80 = cResult[3];
+          tmp70 = cResult[3];
         }
         if (cResult[4] === onPress) {
           if (cResult[5] === onStartEditing) {
-            let tmp81;
+            let tmp71;
             if (cResult[6] === option) {
-              tmp81 = cResult[7];
+              tmp71 = cResult[7];
             }
             if (cResult[8] === onEndEditing) {
-              let tmp82;
+              let tmp72;
               if (cResult[9] === option) {
-                tmp82 = cResult[10];
+                tmp72 = cResult[10];
               }
               class O {
                 constructor() {
@@ -784,17 +758,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               }
               if (cResult[11] === hasError) {
                 if (cResult[12] === option) {
-                  if (cResult[13] === tmp4.option) {
-                    if (cResult[14] === tmp79) {
-                      if (cResult[15] === tmp80) {
-                        if (cResult[16] === tmp81) {
-                          if (cResult[17] === tmp82) {
-                            let tmp86;
-                            if (cResult[18] === tmp85) {
-                              tmp86 = cResult[19];
-                            }
-                            tmp13 = tmp86;
+                  if (cResult[13] === tmp69) {
+                    if (cResult[14] === tmp70) {
+                      if (cResult[15] === tmp71) {
+                        if (cResult[16] === tmp72) {
+                          let tmp76;
+                          if (cResult[17] === tmp75) {
+                            tmp76 = cResult[18];
                           }
+                          tmp13 = tmp76;
                         }
                       }
                     }
@@ -836,18 +808,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
                   tmp(tmp2, items);
                 }
               }
-              const obj12 = { style: tmp4.option, option, initialValue: tmp79, onSelect: tmp80, onOpenChoicesSheet: tmp81, onDismissChoicesSheet: tmp82, autoFocus: tmp85, hasError };
-              const tmp87 = onDismiss(onStartEditing(tmp2[9]), obj12, option.name);
+              const obj11 = { option, initialValue: tmp69, onSelect: tmp70, onOpenChoicesSheet: tmp71, onDismissChoicesSheet: tmp72, autoFocus: tmp75, hasError };
+              const tmp77 = onDismiss(onStartEditing(tmp2[9]), obj11, option.name);
               cResult[11] = hasError;
               cResult[12] = option;
-              cResult[13] = tmp4.option;
-              cResult[14] = tmp79;
-              cResult[15] = tmp80;
-              cResult[16] = tmp81;
-              cResult[17] = tmp82;
-              cResult[18] = tmp85;
-              cResult[19] = tmp87;
-              tmp86 = tmp87;
+              cResult[13] = tmp69;
+              cResult[14] = tmp70;
+              cResult[15] = tmp71;
+              cResult[16] = tmp72;
+              cResult[17] = tmp75;
+              cResult[18] = tmp77;
+              tmp76 = tmp77;
             }
             class O {
               constructor() {
@@ -890,8 +861,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
               }
             }
             cResult[9] = option;
-            cResult[10] = tmp83;
-            tmp82 = tmp83;
+            cResult[10] = tmp73;
+            tmp72 = tmp73;
           }
         }
         class O {
@@ -937,7 +908,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         cResult[5] = onStartEditing;
         cResult[6] = option;
         cResult[7] = F;
-        tmp81 = F;
+        tmp71 = F;
       }
     }
     class R {
@@ -979,7 +950,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     cResult[1] = onOptionValueChange;
     cResult[2] = option;
     cResult[3] = R;
-    tmp80 = R;
+    tmp70 = R;
   } else if (option.autocomplete) {
     class O {
       constructor() {
@@ -1018,17 +989,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         tmp3(tmp, items);
       }
     }
-    cResult[20] = onEndEditing;
-    cResult[21] = onOptionValueChange;
-    cResult[22] = option;
-    cResult[23] = U;
+    cResult[19] = onEndEditing;
+    cResult[20] = onOptionValueChange;
+    cResult[21] = option;
+    cResult[22] = U;
   } else {
     class O {
       constructor() {
         return onDismiss(option);
       }
     }
-    const name = option.name;
+    const guild_id = channel.guild_id;
     class R {
       constructor(displayName) {
         onEndEditing(option);
@@ -1061,132 +1032,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         tmp3(tmp, items);
       }
     }
-    if (cResult[43] === onEndEditing) {
-      let tmp67;
-      if (cResult[44] === option) {
-        tmp67 = cResult[45];
-      }
-      if (cResult[46] === onOptionValueChange) {
-        if (cResult[47] === onStartEditing) {
-          let tmp68;
-          if (cResult[48] === option) {
-            tmp68 = cResult[49];
-          }
-          class O {
-            constructor() {
-              return onDismiss(option);
-            }
-          }
-          let str = "react.memo_cache_sentinel";
-          class R {
-            constructor(displayName) {
-              onEndEditing(option);
-              let str;
-              const tmp = option;
-              const tmp3 = onOptionValueChange;
-              if (displayName != null) {
-                str = displayName.displayName;
-              }
-              if (str == null) {
-                str = "";
-              }
-              const items = [{ type: "text", text: str }];
-              tmp3(tmp, items);
-            }
-          }
-          class U {
-            constructor(displayName) {
-              onEndEditing(option);
-              let str;
-              const tmp = option;
-              const tmp3 = onOptionValueChange;
-              if (displayName != null) {
-                str = displayName.displayName;
-              }
-              if (str == null) {
-                str = "";
-              }
-              const items = [{ type: "text", text: str }];
-              tmp3(tmp, items);
-            }
-          }
-          const hasItem = obj8.includes(autoFocusType);
-          class Q {
-            constructor() {
-              return onEndEditing(option);
-            }
-          }
-          const obj13 = { style: tmp63, option, guildId: tmp64, initialValue: tmp66, onEndEditing: tmp67, onChangeText: tmp68, onFocus, autoFocus: hasItem, hasError, onPressIn: onPress };
-          cResult[51] = channel.guild_id;
-          cResult[52] = onPress;
-          cResult[53] = hasError;
-          cResult[54] = onFocus;
-          cResult[55] = option;
-          cResult[56] = tmp4.option;
-          cResult[57] = tmp66;
-          cResult[58] = tmp67;
-          cResult[59] = tmp68;
-          cResult[60] = hasItem;
-          cResult[61] = onDismiss(onStartEditing(tmp2[11]), obj13, name);
-          const tmp74 = onDismiss(onStartEditing(tmp2[11]), obj13, name);
-        }
-      }
-      class O {
-        constructor() {
-          return onDismiss(option);
-        }
-      }
-      class R {
-        constructor(displayName) {
-          onEndEditing(option);
-          let str;
-          const tmp = option;
-          const tmp3 = onOptionValueChange;
-          if (displayName != null) {
-            str = displayName.displayName;
-          }
-          if (str == null) {
-            str = "";
-          }
-          const items = [{ type: "text", text: str }];
-          tmp3(tmp, items);
-        }
-      }
-      class U {
-        constructor(displayName) {
-          onEndEditing(option);
-          let str;
-          const tmp = option;
-          const tmp3 = onOptionValueChange;
-          if (displayName != null) {
-            str = displayName.displayName;
-          }
-          if (str == null) {
-            str = "";
-          }
-          const items = [{ type: "text", text: str }];
-          tmp3(tmp, items);
-        }
-      }
-      cResult[47] = onStartEditing;
-      class Q {
-        constructor() {
-          return onEndEditing(option);
-        }
-      }
-      cResult[48] = option;
-      cResult[49] = X;
-      tmp68 = X;
-    }
     class Q {
       constructor() {
         return onEndEditing(option);
       }
     }
-    cResult[43] = onEndEditing;
-    cResult[44] = option;
-    cResult[45] = Q;
-    tmp67 = Q;
+    cResult[41] = onEndEditing;
+    cResult[42] = option;
+    cResult[43] = Q;
   }
 }) : (function AppLauncherCommandOption(option) {
   let autoFocusType;
@@ -1218,14 +1071,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let type = option.type;
   let tmp2 = option;
   let tmp3 = dependencyMap;
-  if (option(2000).ApplicationCommandOptionType.STRING !== type) {
-    if (tmp2(2000).ApplicationCommandOptionType.INTEGER !== type) {
+  if (option(1997).ApplicationCommandOptionType.STRING !== type) {
+    if (tmp2(1997).ApplicationCommandOptionType.INTEGER !== type) {
       let tmp28Result;
       let tmp13;
-      if (tmp2(2000).ApplicationCommandOptionType.NUMBER !== type) {
-        if (tmp2(2000).ApplicationCommandOptionType.ATTACHMENT === type) {
+      if (tmp2(1997).ApplicationCommandOptionType.NUMBER !== type) {
+        if (tmp2(1997).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj2 = {
-            style: tmp.option,
             option,
             onSelectAttachment(text) {
                       let items1;
@@ -1248,9 +1100,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           };
           tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, option.name);
           tmp13 = onDismiss;
-        } else if (tmp2(2000).ApplicationCommandOptionType.BOOLEAN === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.BOOLEAN === type) {
           let obj3 = {
-            style: tmp.option,
             option,
             initialValue: first,
             onPress(arg0) {
@@ -1269,7 +1120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp35(tmp37, obj3, option.name);
           tmp13 = tmp35;
-        } else if (tmp2(2000).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.MENTIONABLE === type) {
           let obj4 = {
             option,
             initialValue: first1,
@@ -1317,9 +1168,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp28(tmp30, obj4);
           tmp13 = tmp28;
-        } else if (tmp2(2000).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.ROLE === type) {
           const obj5 = {
-            style: tmp.option,
             option,
             initialValue: first2,
             onRolePress(role) {
@@ -1350,9 +1200,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp21(tmp23, obj5, option.name);
           tmp13 = tmp21;
-        } else if (tmp2(2000).ApplicationCommandOptionType.USER === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.USER === type) {
           const obj6 = {
-            style: tmp.option,
             option,
             initialValue: first3,
             onUserPress(user) {
@@ -1387,9 +1236,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           }
           tmp28Result = tmp14(tmp16, obj6, option.name);
           tmp13 = tmp14;
-        } else if (tmp2(2000).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp2(1997).ApplicationCommandOptionType.CHANNEL === type) {
           let obj = {
-            style: tmp.option,
             option,
             initialValue: first4,
             onChannelPress(channel) {
@@ -1435,9 +1283,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
           onPress() {
                   return onDismiss(option);
                 },
-          children: tmp13(tmp2(7018).CircleXIcon, { size: "md" })
+          children: tmp13(tmp2(7020).CircleXIcon, { size: "md" })
         };
-        const PressableOpacity = tmp2(6908).PressableOpacity;
+        const PressableOpacity = tmp2(6910).PressableOpacity;
         items[1] = tmp13(PressableOpacity, obj9);
         tmp61 = closure_6(View, obj7);
       }
@@ -1446,7 +1294,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   }
   if (null != option.choices) {
     const obj10 = {
-      style: tmp.option,
       option,
       initialValue: first5,
       onSelect(displayName) {
@@ -1482,7 +1329,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     tmp49 = tmp54;
   } else if (option.autocomplete) {
     const obj11 = {
-      style: tmp.option,
       channel,
       option,
       activeCommand: command,
@@ -1521,7 +1367,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     tmp49 = tmp62;
   } else {
     const obj12 = {
-      style: tmp.option,
       option,
       guildId: channel.guild_id,
       initialValue: first7,

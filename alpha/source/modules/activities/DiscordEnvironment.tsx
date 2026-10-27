@@ -1,14 +1,14 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11465
+// Function ID: 11466
 // Name: DiscordEnvironment
-// Dependencies: [4972, 1207, 11463, 4799, 2]
+// Dependencies: [4973, 1204, 11466, 4800, 2]
 // Exports: getDiscordBaseTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
-// Module 11462 (DiscordEnvironment)
-import UserSettings from "UserSettings" /* 4799 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import UIDensityConstants from "UIDensityConstants" /* 11463 */;
+// Module 11465 (DiscordEnvironment)
+import UserSettings from "UserSettings" /* 4800 */;
+import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import ThemeStore from "ThemeStore" /* 1204 */;
+import UIDensityConstants from "UIDensityConstants" /* 11466 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

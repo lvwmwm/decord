@@ -1,20 +1,20 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15948
+// Function ID: 15949
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7253, 15911, 9792, 9793, 1128, 8566, 15933, 15942, 2]
+// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 7255, 15949, 9794, 9795, 1125, 8566, 15971, 15980, 2]
 
-// Module 15910 (UserProfilePremiumTryItOutSection)
+// Module 15948 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15911 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15933 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 15942 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9794 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9795 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15949 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15971 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 15980 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,9 +71,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   }
   ({ container, cardInner } = tmp4);
   if (cResult[2] !== tmp7) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1125).intl;
     const obj2 = { onClick: tmp7 };
-    const formatResult = intl.format(tmp(1128).t.TmfgI2, obj2);
+    const formatResult = intl.format(tmp(1125).t.TmfgI2, obj2);
     cResult[2] = tmp7;
     cResult[3] = formatResult;
     tmp8 = formatResult;
@@ -81,8 +81,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult = intl2.string(tmp(1128).t.PxUx8e);
+    const intl2 = tmp(1125).intl;
+    const stringResult = intl2.string(tmp(1125).t.PxUx8e);
     cResult[4] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -194,10 +194,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj = { style: tmp.container, innerStyle: tmp.cardInner, text: intl.format(analyticsLocations(1128).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1128).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: items2 };
+  let obj = { style: tmp.container, innerStyle: tmp.cardInner, text: intl.format(analyticsLocations(1125).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1125).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: items2 };
   const tmp4 = UserProfileUpsellCardV2Default;
-  intl = analyticsLocations(1128).intl;
-  intl2 = analyticsLocations(1128).intl;
+  intl = analyticsLocations(1125).intl;
+  intl2 = analyticsLocations(1125).intl;
   const obj2 = { style: tmp.divider, children: items1 };
   items1 = [, ];
   const obj3 = { style: tmp.dividerLine };

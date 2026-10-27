@@ -1,9 +1,9 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 11035
+// Function ID: 11036
 // Name: MediaPostEmbedStore
 // Dependencies: [504, 584, 2]
 
-// Module 11032 (MediaPostEmbedStore)
+// Module 11035 (MediaPostEmbedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 9628
+// Function ID: 9629
 // Name: GameConsoleConstants
-// Dependencies: [1087, 8827, 2]
+// Dependencies: [1084, 8827, 2]
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 9626 (GameConsoleConstants)
-import Constants from "Constants" /* 1087 */;
+// Module 9628 (GameConsoleConstants)
+import Constants from "Constants" /* 1084 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
 import size from "module_2" /* 2 */;
 

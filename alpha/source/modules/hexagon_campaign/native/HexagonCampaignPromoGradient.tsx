@@ -1,18 +1,18 @@
-// Module ID: 15875
-// Function ID: 15876
+// Module ID: 15913
+// Function ID: 15914
 // Name: HexagonCampaignPromoGradient
-// Dependencies: [32, 19, 17, 21, 15876, 4971, 587, 558, 576, 5252, 5258, 2]
+// Dependencies: [32, 19, 17, 21, 15914, 4972, 587, 558, 576, 5253, 5259, 2]
 
-// Module 15875 (HexagonCampaignPromoGradient)
+// Module 15913 (HexagonCampaignPromoGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5252 */;
-import hexagon_campaign_HexagonCampaignPromoGradient from "hexagon_campaign/HexagonCampaignPromoGradient" /* 15876 */;
+import useToken from "useToken" /* 5253 */;
+import hexagon_campaign_HexagonCampaignPromoGradient from "hexagon_campaign/HexagonCampaignPromoGradient" /* 15914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let tmp4;
 let unpackModuleId;
-const LinearGradientDefault = tmp4(5258);
+const LinearGradientDefault = tmp4(5259);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const angleCenter = { x: 0.5, y: 0.5 };

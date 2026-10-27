@@ -1,11 +1,11 @@
-// Module ID: 11265
-// Function ID: 11266
+// Module ID: 11268
+// Function ID: 11269
 // Name: GuildRoleConnectionsModal
-// Dependencies: [19, 21, 1128, 7485, 8115, 11266, 558, 576, 7095, 2]
+// Dependencies: [19, 21, 1125, 7486, 8113, 11269, 558, 576, 7097, 2]
 
-// Module 11265 (GuildRoleConnectionsModal)
+// Module 11268 (GuildRoleConnectionsModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
+import intl2 from "intl" /* 1125 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       tmp4 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp8 = jsx(guildId(7095).Navigator, { screens: tmp4, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
+      const tmp8 = jsx(guildId(7097).Navigator, { screens: tmp4, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -41,7 +41,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const obj3 = {};
   const obj4 = {
-    title: intl.string(guildId(1128).t.ghtnss),
+    title: intl.string(guildId(1125).t.ghtnss),
     headerLeft,
     headerRight() {
       let intl;
@@ -55,7 +55,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return closure_2_4(onClose(closure_2_2[5]), obj);
     }
   };
-  intl = tmp(1128).intl;
+  intl = tmp(1125).intl;
   obj3[GUILD_ROLE_CONNECTIONS_SCREEN] = obj4;
   cResult[0] = guildId;
   cResult[1] = onClose;
@@ -87,7 +87,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj[GUILD_ROLE_CONNECTIONS_SCREEN] = obj2;
     return obj;
   }, items);
-  return jsx(guildId(7095).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
+  return jsx(guildId(7097).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
 }));
 const result = size.fileFinishedImporting("modules/connections/native/GuildRoleConnectionsModal.tsx");
 

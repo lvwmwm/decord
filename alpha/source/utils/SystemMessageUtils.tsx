@@ -1,33 +1,33 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8342
+// Function ID: 8343
 // Name: SystemMessageUtils
-// Dependencies: [32, 4914, 502, 4823, 4845, 4913, 1392, 1087, 1128, 11, 8344, 8348, 5989, 5604, 8349, 8351, 6366, 6012, 8352, 8353, 7625, 8354, 8355, 4891, 8356, 2]
+// Dependencies: [32, 4915, 502, 4824, 4846, 4914, 1389, 1084, 1125, 11, 8343, 8347, 5990, 5605, 8348, 8350, 6367, 6013, 8351, 8352, 7626, 8353, 8354, 4892, 8355, 2]
 
-// Module 8343 (SystemMessageUtils)
+// Module 8342 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl23 from "intl" /* 1128 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4891 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5989 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
-import useMessageAuthor from "useMessageAuthor" /* 6366 */;
-import MarkupParser from "MarkupParser" /* 8344 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8348 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8349 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8351 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8352 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8353 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8354 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8355 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8356 */;
+import intl23 from "intl" /* 1125 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4892 */;
+import useChannelName from "useChannelName" /* 5605 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6013 */;
+import useMessageAuthor from "useMessageAuthor" /* 6367 */;
+import MarkupParser from "MarkupParser" /* 8343 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8347 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8348 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8350 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8351 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8352 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8353 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8354 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4914 */;
+import MessageRecord from "MessageRecord" /* 4915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4824 */;
+import GuildStore from "GuildStore" /* 4846 */;
+import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserStore from "UserStore" /* 1389 */;
+import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -317,21 +317,21 @@ let obj = {
                     if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
                       const astToString5 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl7 = tmp58(1128).intl;
+                      const intl7 = tmp58(1125).intl;
                       const obj25 = { guildName: guild.name };
-                      astToString5Result = astToString5(intl7.formatToParts(tmp58(1128).t.wt3ZUM, obj25));
+                      astToString5Result = astToString5(intl7.formatToParts(tmp58(1125).t.wt3ZUM, obj25));
                     } else if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
                       const astToString4 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl6 = tmp58(1128).intl;
+                      const intl6 = tmp58(1125).intl;
                       const obj26 = { guildName: guild.name };
-                      astToString5Result = astToString4(intl6.formatToParts(tmp58(1128).t.AkqI0g, obj26));
+                      astToString5Result = astToString4(intl6.formatToParts(tmp58(1125).t.AkqI0g, obj26));
                     } else {
                       const astToString3 = MarkupParser.astToString;
                       MarkupParser;
-                      const intl5 = tmp58(1128).intl;
+                      const intl5 = tmp58(1125).intl;
                       const obj28 = { guildName: guild.name };
-                      astToString5Result = astToString3(intl5.formatToParts(tmp58(1128).t["a+lJKl"], obj28));
+                      astToString5Result = astToString3(intl5.formatToParts(tmp58(1125).t["a+lJKl"], obj28));
                     }
                   }
                 }
@@ -360,7 +360,7 @@ let obj = {
                     const self = this;
                     const self2 = this;
                     const date = new Date(content3);
-                    str2 = date.toLocaleString(tmp46(1128).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+                    str2 = date.toLocaleString(tmp46(1125).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
                   }
                   astToString2Result = astToString2(formatToParts(iOuWPk, obj29));
                 }
@@ -416,7 +416,7 @@ let obj = {
                 if (null == musicSystemMessage) {
                   content2 = mentions.content;
                 } else {
-                  const intl2 = tmp11(1128).intl;
+                  const intl2 = tmp11(1125).intl;
                   const formatToPlainString2 = intl2.formatToPlainString;
                   const message2 = musicSystemMessage.message;
                   const obj31 = {
@@ -480,7 +480,7 @@ let obj = {
                   if (null == leaderboardSystemMessage) {
                     content = mentions.content;
                   } else {
-                    const intl = tmp11(1128).intl;
+                    const intl = tmp11(1125).intl;
                     const formatToPlainString = intl.formatToPlainString;
                     const message = leaderboardSystemMessage.message;
                     const obj33 = {

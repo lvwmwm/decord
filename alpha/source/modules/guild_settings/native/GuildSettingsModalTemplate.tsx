@@ -1,32 +1,32 @@
-// Module ID: 19158
-// Function ID: 19159
+// Module ID: 19196
+// Function ID: 19197
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4971, 587, 558, 576, 19159, 5234, 1128, 8951, 7134, 1505, 5914, 12740, 6374, 6924, 7485, 7008, 7180, 5244, 5977, 5592, 6905, 7267, 7018, 19160, 7285, 5662, 5682, 7009, 8913, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4972, 587, 558, 576, 19197, 5235, 1125, 8951, 7136, 1502, 5915, 12749, 6375, 6926, 7486, 7010, 7182, 5245, 5978, 5593, 6907, 7269, 7020, 19198, 7287, 5663, 5683, 7011, 8913, 2]
 
-// Module 19158 (GuildSettingsModalTemplate)
+// Module 19196 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl9 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import CopyIcon2 from "CopyIcon" /* 5682 */;
-import AlertModal from "AlertModal" /* 5914 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import Card_Card from "Card/Card" /* 6905 */;
-import Input2 from "Input" /* 7009 */;
-import SceneLoadingIndicator from "SceneLoadingIndicator" /* 7134 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
+import intl9 from "intl" /* 1125 */;
+import Text_Text from "Text/Text" /* 5235 */;
+import ToastUtils from "ToastUtils" /* 5663 */;
+import CopyIcon2 from "CopyIcon" /* 5683 */;
+import AlertModal from "AlertModal" /* 5915 */;
+import Stack_Stack from "Stack/Stack" /* 5978 */;
+import Card_Card from "Card/Card" /* 6907 */;
+import Input2 from "Input" /* 7011 */;
+import SceneLoadingIndicator from "SceneLoadingIndicator" /* 7136 */;
+import ClipboardUtils from "ClipboardUtils" /* 7287 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7486 */;
 import native from "native" /* 8913 */;
 import Form3 from "Form" /* 8951 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12740 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19159 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12749 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19197 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 4972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,8 +150,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(intl9.t.f0IPAG) };
-        const Text = tmp(5234).Text;
-        intl = tmp(1128).intl;
+        const Text = tmp(5235).Text;
+        intl = tmp(1125).intl;
         const tmp14 = metroImportDefault(Text, obj6);
         cResult[3] = tmp14;
         tmp12 = tmp14;
@@ -208,7 +208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: loadError.message };
       tmp12Result = metroImportDefault(Form2, obj2);
     } else if (tmp8) {
-      tmp12Result = tmp12(tmp2(7134).SceneLoadingIndicator, {});
+      tmp12Result = tmp12(tmp2(7136).SceneLoadingIndicator, {});
     } else {
       const obj4 = { guildId, guildTemplate: tmp9, contentContainerStyle };
       tmp12Result = tmp12(closure_13, obj4);
@@ -219,8 +219,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     items1 = [tmp.containerContent, contentContainerStyle];
     const Form = tmp2(8951).Form;
     obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(intl9.t.f0IPAG) };
-    Text = tmp2(5234).Text;
-    intl = tmp2(1128).intl;
+    Text = tmp2(5235).Text;
+    intl = tmp2(1125).intl;
     tmp11 = metroImportDefault(Form, obj5);
   }
   return tmp11;
@@ -1347,8 +1347,8 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", children: intl.string(intl9.t["f8u+VO"]) };
-    const Heading = tmp(5234).Heading;
-    intl = tmp(1128).intl;
+    const Heading = tmp(5235).Heading;
+    intl = tmp(1125).intl;
     const tmp6 = metroImportDefault(Heading, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -1357,7 +1357,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { copies: true, label: intl2.string(intl9.t.K2tn16) };
-    intl2 = tmp(1128).intl;
+    intl2 = tmp(1125).intl;
     const tmp10 = metroImportDefault(closure_15, obj3);
     cResult[1] = tmp10;
     tmp7 = tmp10;
@@ -1366,7 +1366,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { copies: true, label: intl3.string(intl9.t.om5gNq) };
-    intl3 = tmp(1128).intl;
+    intl3 = tmp(1125).intl;
     const tmp14 = metroImportDefault(closure_15, obj4);
     cResult[2] = tmp14;
     tmp11 = tmp14;
@@ -1375,10 +1375,10 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { spacing: nativeDefault.space.PX_12, children: items };
-    const Stack = tmp(5977).Stack;
+    const Stack = tmp(5978).Stack;
     items = [first, tmp7, tmp11, ];
     const obj6 = { copies: true, label: intl4.string(intl9.t["/VNqdD"]) };
-    intl4 = tmp(1128).intl;
+    intl4 = tmp(1125).intl;
     items[3] = metroImportDefault(closure_15, obj6);
     const tmp20 = metroImportAll(Stack, obj5);
     cResult[3] = tmp20;
@@ -1388,8 +1388,8 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { variant: "eyebrow", children: intl5.string(intl9.t["8zhJEr"]) };
-    const Heading2 = tmp(5234).Heading;
-    intl5 = tmp(1128).intl;
+    const Heading2 = tmp(5235).Heading;
+    intl5 = tmp(1125).intl;
     const tmp23 = metroImportDefault(Heading2, obj7);
     cResult[4] = tmp23;
     tmp21 = tmp23;
@@ -1398,7 +1398,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { copies: false, label: intl6.string(intl9.t.WOKI6t) };
-    intl6 = tmp(1128).intl;
+    intl6 = tmp(1125).intl;
     const tmp27 = metroImportDefault(closure_15, obj8);
     cResult[5] = tmp27;
     tmp24 = tmp27;
@@ -1407,7 +1407,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj9 = { copies: false, label: intl7.string(intl9.t.ddhDJH) };
-    intl7 = tmp(1128).intl;
+    intl7 = tmp(1125).intl;
     const tmp31 = metroImportDefault(closure_15, obj9);
     cResult[6] = tmp31;
     tmp28 = tmp31;
@@ -1416,15 +1416,15 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function D
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj10 = { children: metroImportAll(Stack2, obj11) };
-    const Card = tmp(6905).Card;
+    const Card = tmp(6907).Card;
     obj11 = { spacing: nativeDefault.space.PX_16, children: items1 };
-    Stack2 = tmp(5977).Stack;
+    Stack2 = tmp(5978).Stack;
     items1 = [tmp15, ];
     const obj12 = { spacing: nativeDefault.space.PX_12, children: items2 };
-    const Stack3 = tmp(5977).Stack;
+    const Stack3 = tmp(5978).Stack;
     items2 = [tmp21, tmp24, tmp28, ];
     const obj13 = { copies: false, label: intl8.string(intl9.t["6Q/DHk"]) };
-    intl8 = tmp(1128).intl;
+    intl8 = tmp(1125).intl;
     items2[3] = metroImportDefault(closure_15, obj13);
     items1[1] = metroImportAll(Stack3, obj12);
     const tmp37 = metroImportDefault(Card, obj10);
@@ -1499,9 +1499,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CopyRo
   ({ copies, label } = arg0);
   const tmp4 = closure_12();
   if (copies) {
-    CircleXIcon = tmp(7267).CircleCheckIcon;
+    CircleXIcon = tmp(7269).CircleCheckIcon;
   } else {
-    CircleXIcon = tmp(7018).CircleXIcon;
+    CircleXIcon = tmp(7020).CircleXIcon;
   }
   const colors = nativeDefault.colors;
   if (copies) {
@@ -1560,10 +1560,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CopyRo
   const label = copies.label;
   const tmp = closure_12();
   if (copies) {
-    CircleXIcon = tmp2(7267).CircleCheckIcon;
+    CircleXIcon = tmp2(7269).CircleCheckIcon;
     tmp4 = tmp2;
   } else {
-    CircleXIcon = tmp2(7018).CircleXIcon;
+    CircleXIcon = tmp2(7020).CircleXIcon;
     tmp4 = tmp2;
   }
   const obj = { style: tmp.copyRow, children: items };
@@ -1580,7 +1580,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CopyRo
   items = [, ];
   const obj2 = { size: "sm", color: ICON_FEEDBACK_CRITICAL, secondaryColor: tmp10(587).colors.WHITE };
   items[0] = metroImportDefault(CircleXIcon, obj2);
-  items[1] = metroImportDefault(tmp4(5234).Text, { variant: "text-sm/normal", children: label });
+  items[1] = metroImportDefault(tmp4(5235).Text, { variant: "text-sm/normal", children: label });
   return tmp6(tmp7, obj);
 });
 const memo2 = react.memo;
@@ -2178,7 +2178,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(19160)(guildTemplate.code);
+  const tmp4 = guildTemplate(19198)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(587).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
@@ -2206,9 +2206,9 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let isDirty = guildTemplate.isDirty;
   if (isDirty) {
     let obj4 = { children: items1 };
-    let obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl4.string(tmp6(1128).t.aWsjtD) };
-    const Text = tmp6(5234).Text;
-    intl4 = tmp6(1128).intl;
+    let obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl4.string(tmp6(1125).t.aWsjtD) };
+    const Text = tmp6(5235).Text;
+    intl4 = tmp6(1125).intl;
     items1 = [tmp7(Text, obj5), ];
     const obj6 = {
       variant: "primary",
@@ -2218,8 +2218,8 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           return obj(...arguments);
         }
     };
-    const Button = tmp6(5244).Button;
-    intl5 = tmp6(1128).intl;
+    const Button = tmp6(5245).Button;
+    intl5 = tmp6(1125).intl;
     items1[1] = handleDelete(Button, obj6);
     isDirty = tmp5(closure_9, obj4);
   }
@@ -2240,8 +2240,8 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       showConfirmModal(obj);
     }
   };
-  const Button2 = tmp6(5244).Button;
-  intl6 = tmp6(1128).intl;
+  const Button2 = tmp6(5245).Button;
+  intl6 = tmp6(1125).intl;
   items[2] = handleDelete(Button2, obj7);
   const obj8 = {
     variant: "secondary",
@@ -2251,20 +2251,20 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       return obj.showModal(guildTemplate.code, false);
     }
   };
-  const Button3 = tmp6(5244).Button;
-  intl7 = tmp6(1128).intl;
+  const Button3 = tmp6(5245).Button;
+  intl7 = tmp6(1125).intl;
   items[3] = handleDelete(Button3, obj8);
   let isDirty2 = guildTemplate.isDirty;
   if (isDirty2) {
     const obj9 = { variant: "text-sm/normal", color: "text-muted", children: format(v0AVum, obj10) };
-    const Text2 = tmp6(5234).Text;
-    const intl8 = tmp6(1128).intl;
+    const Text2 = tmp6(5235).Text;
+    const intl8 = tmp6(1125).intl;
     format = intl8.format;
     const _Date = Date;
     let self = this;
     let self2 = this;
     obj10 = { timestamp: date };
-    v0AVum = tmp6(1128).t.v0AVum;
+    v0AVum = tmp6(1125).t.v0AVum;
     date = new Date(guildTemplate.updatedAt);
     isDirty2 = tmp7(Text2, obj9);
   }
